@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Firehose\PutRecordBatch;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $FailedPutCount
+ * @property int<0, max> $FailedPutCount
  * @property bool $Encrypted
  * @property list<Shapes\PutRecordBatchResponseEntry> $RequestResponses
  */

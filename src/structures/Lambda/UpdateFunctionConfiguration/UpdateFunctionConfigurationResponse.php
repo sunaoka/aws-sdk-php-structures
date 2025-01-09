@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $Handler
  * @property int $CodeSize
  * @property string $Description
- * @property int $Timeout
- * @property int $MemorySize
+ * @property int<1, max> $Timeout
+ * @property int<128, 10240> $MemorySize
  * @property string $LastModified
  * @property string $CodeSha256
  * @property string $Version

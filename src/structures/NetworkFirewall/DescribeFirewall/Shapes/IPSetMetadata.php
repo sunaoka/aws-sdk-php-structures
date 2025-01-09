@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\DescribeFirewall\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ResolvedCIDRCount
+ * @property int<0, 1000000> $ResolvedCIDRCount
  */
 class IPSetMetadata extends Shape
 {
     /**
-     * @param array{ResolvedCIDRCount?: int} $args
+     * @param array{ResolvedCIDRCount?: int<0, 1000000>} $args
      */
     public function __construct(array $args = [])
     {

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $CustomerSpeakerId
  * @property 'ACCEPT'|'REJECT'|'NOT_ENOUGH_SPEECH'|'SPEAKER_NOT_ENROLLED'|'SPEAKER_OPTED_OUT'|'SPEAKER_ID_NOT_PROVIDED'|'SPEAKER_EXPIRED' $Decision
  * @property string $GeneratedSpeakerId
- * @property int $Score
+ * @property int<0, 100> $Score
  */
 class AuthenticationResult extends Shape
 {
@@ -25,7 +25,7 @@ class AuthenticationResult extends Shape
      *     CustomerSpeakerId?: string,
      *     Decision?: 'ACCEPT'|'REJECT'|'NOT_ENOUGH_SPEECH'|'SPEAKER_NOT_ENROLLED'|'SPEAKER_OPTED_OUT'|'SPEAKER_ID_NOT_PROVIDED'|'SPEAKER_EXPIRED',
      *     GeneratedSpeakerId?: string,
-     *     Score?: int
+     *     Score?: int<0, 100>
      * } $args
      */
     public function __construct(array $args = [])

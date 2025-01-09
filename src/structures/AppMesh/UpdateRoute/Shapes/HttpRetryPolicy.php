@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $httpRetryEvents
- * @property int $maxRetries
+ * @property int<0, max> $maxRetries
  * @property Duration $perRetryTimeout
  * @property list<'connection-error'> $tcpRetryEvents
  */
@@ -15,7 +15,7 @@ class HttpRetryPolicy extends Shape
     /**
      * @param array{
      *     httpRetryEvents?: list<string>,
-     *     maxRetries: int,
+     *     maxRetries: int<0, max>,
      *     perRetryTimeout: Duration,
      *     tcpRetryEvents?: list<'connection-error'>
      * } $args

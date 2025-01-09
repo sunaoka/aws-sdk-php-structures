@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $dataSourceId
  * @property string $knowledgeBaseId
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListKnowledgeBaseDocumentsRequest extends Request
@@ -16,7 +16,7 @@ class ListKnowledgeBaseDocumentsRequest extends Request
      * @param array{
      *     dataSourceId: string,
      *     knowledgeBaseId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

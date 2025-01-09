@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $JobId
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $NextToken
  */
 class GetLendingAnalysisRequest extends Request
@@ -14,7 +14,7 @@ class GetLendingAnalysisRequest extends Request
     /**
      * @param array{
      *     JobId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\FlowTemplateFilter> $filters
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class SearchFlowTemplatesRequest extends Request
 {
@@ -15,7 +15,7 @@ class SearchFlowTemplatesRequest extends Request
      * @param array{
      *     filters?: list<Shapes\FlowTemplateFilter>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args = [])

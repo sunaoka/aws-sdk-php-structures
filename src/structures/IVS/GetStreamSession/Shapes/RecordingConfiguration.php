@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property DestinationConfiguration $destinationConfiguration
  * @property string $name
- * @property int $recordingReconnectWindowSeconds
+ * @property int<0, 300> $recordingReconnectWindowSeconds
  * @property RenditionConfiguration $renditionConfiguration
  * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE' $state
  * @property array<string, string> $tags
@@ -21,7 +21,7 @@ class RecordingConfiguration extends Shape
      *     arn: string,
      *     destinationConfiguration: DestinationConfiguration,
      *     name?: string,
-     *     recordingReconnectWindowSeconds?: int,
+     *     recordingReconnectWindowSeconds?: int<0, 300>,
      *     renditionConfiguration?: RenditionConfiguration,
      *     state: 'CREATING'|'CREATE_FAILED'|'ACTIVE',
      *     tags?: array<string, string>,

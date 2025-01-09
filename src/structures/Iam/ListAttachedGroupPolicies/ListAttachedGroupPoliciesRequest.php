@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GroupName
  * @property string $PathPrefix
  * @property string $Marker
- * @property int $MaxItems
+ * @property int<1, 1000> $MaxItems
  */
 class ListAttachedGroupPoliciesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListAttachedGroupPoliciesRequest extends Request
      *     GroupName: string,
      *     PathPrefix?: string,
      *     Marker?: string,
-     *     MaxItems?: int
+     *     MaxItems?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

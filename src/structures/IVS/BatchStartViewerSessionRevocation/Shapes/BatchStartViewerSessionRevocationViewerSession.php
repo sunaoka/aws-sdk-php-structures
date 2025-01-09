@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $channelArn
  * @property string $viewerId
- * @property int $viewerSessionVersionsLessThanOrEqualTo
+ * @property int<0, max> $viewerSessionVersionsLessThanOrEqualTo
  */
 class BatchStartViewerSessionRevocationViewerSession extends Shape
 {
@@ -15,7 +15,7 @@ class BatchStartViewerSessionRevocationViewerSession extends Shape
      * @param array{
      *     channelArn: string,
      *     viewerId: string,
-     *     viewerSessionVersionsLessThanOrEqualTo?: int
+     *     viewerSessionVersionsLessThanOrEqualTo?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

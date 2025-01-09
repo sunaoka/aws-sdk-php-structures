@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property list<'STANDARD'|'AGENT'> $QueueTypes
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class ListQueuesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListQueuesRequest extends Request
      *     InstanceId: string,
      *     QueueTypes?: list<'STANDARD'|'AGENT'>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

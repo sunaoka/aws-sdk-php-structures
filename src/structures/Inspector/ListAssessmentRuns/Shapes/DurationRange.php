@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector\ListAssessmentRuns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $minSeconds
- * @property int $maxSeconds
+ * @property int<180, 86400> $minSeconds
+ * @property int<180, 86400> $maxSeconds
  */
 class DurationRange extends Shape
 {
     /**
      * @param array{
-     *     minSeconds?: int,
-     *     maxSeconds?: int
+     *     minSeconds?: int<180, 86400>,
+     *     maxSeconds?: int<180, 86400>
      * } $args
      */
     public function __construct(array $args = [])

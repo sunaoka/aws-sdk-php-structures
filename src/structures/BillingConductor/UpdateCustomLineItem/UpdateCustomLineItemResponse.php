@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $Description
  * @property Shapes\ListCustomLineItemChargeDetails $ChargeDetails
  * @property int $LastModifiedTime
- * @property int $AssociationSize
+ * @property int<0, max> $AssociationSize
  */
 class UpdateCustomLineItemResponse extends Response
 {

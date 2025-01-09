@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'VOICE'|'CHAT'|'TASK'|'EMAIL' $Channel
- * @property int $Concurrency
+ * @property int<1, 10> $Concurrency
  * @property CrossChannelBehavior $CrossChannelBehavior
  */
 class MediaConcurrency extends Shape
@@ -14,7 +14,7 @@ class MediaConcurrency extends Shape
     /**
      * @param array{
      *     Channel: 'VOICE'|'CHAT'|'TASK'|'EMAIL',
-     *     Concurrency: int,
+     *     Concurrency: int<1, 10>,
      *     CrossChannelBehavior?: CrossChannelBehavior
      * } $args
      */

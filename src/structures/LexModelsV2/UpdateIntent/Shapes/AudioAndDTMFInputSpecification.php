@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\UpdateIntent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $startTimeoutMs
+ * @property int<1, max> $startTimeoutMs
  * @property AudioSpecification $audioSpecification
  * @property DTMFSpecification $dtmfSpecification
  */
@@ -13,7 +13,7 @@ class AudioAndDTMFInputSpecification extends Shape
 {
     /**
      * @param array{
-     *     startTimeoutMs: int,
+     *     startTimeoutMs: int<1, max>,
      *     audioSpecification?: AudioSpecification,
      *     dtmfSpecification?: DTMFSpecification
      * } $args

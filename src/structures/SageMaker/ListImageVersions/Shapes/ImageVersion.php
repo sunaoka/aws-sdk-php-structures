@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ImageVersionArn
  * @property 'CREATING'|'CREATED'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED' $ImageVersionStatus
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property int $Version
+ * @property int<0, max> $Version
  */
 class ImageVersion extends Shape
 {
@@ -23,7 +23,7 @@ class ImageVersion extends Shape
      *     ImageVersionArn: string,
      *     ImageVersionStatus: 'CREATING'|'CREATED'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED',
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
-     *     Version: int
+     *     Version: int<0, max>
      * } $args
      */
     public function __construct(array $args)

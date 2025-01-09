@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $WorkloadId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  */
 class ListMilestonesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListMilestonesRequest extends Request
      * @param array{
      *     WorkloadId: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

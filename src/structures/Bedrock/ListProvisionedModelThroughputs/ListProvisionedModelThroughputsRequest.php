@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Creating'|'InService'|'Updating'|'Failed' $statusEquals
  * @property string $modelArnEquals
  * @property string $nameContains
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property 'CreationTime' $sortBy
  * @property 'Ascending'|'Descending' $sortOrder
@@ -24,7 +24,7 @@ class ListProvisionedModelThroughputsRequest extends Request
      *     statusEquals?: 'Creating'|'InService'|'Updating'|'Failed',
      *     modelArnEquals?: string,
      *     nameContains?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     sortBy?: 'CreationTime',
      *     sortOrder?: 'Ascending'|'Descending'

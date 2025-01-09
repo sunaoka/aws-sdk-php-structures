@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'CREATED'|'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|'PROGRESS_STOPPED'|'PENDING_RESUME' $TaskStatus
  */
 class ListBatchLoadTasksRequest extends Request
@@ -14,7 +14,7 @@ class ListBatchLoadTasksRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     TaskStatus?: 'CREATED'|'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|'PROGRESS_STOPPED'|'PENDING_RESUME'
      * } $args
      */

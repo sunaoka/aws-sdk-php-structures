@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'ARN'|'MODIFIED_TIME' $sortBy
  * @property 'ASCENDING'|'DESCENDING' $sortOrder
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListSharedProjectsRequest extends Request
@@ -16,7 +16,7 @@ class ListSharedProjectsRequest extends Request
      * @param array{
      *     sortBy?: 'ARN'|'MODIFIED_TIME',
      *     sortOrder?: 'ASCENDING'|'DESCENDING',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<min, 100> $MaxResults
  * @property \Aws\Api\DateTimeResult $CreationTimeAfter
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
  * @property \Aws\Api\DateTimeResult $LastModifiedTimeAfter
@@ -20,7 +20,7 @@ class ListDeviceFleetsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<min, 100>,
      *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
      *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult,

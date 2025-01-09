@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'JSON'|'CSV' $ResultFormat
  * @property string $SecretArn
  * @property string $SessionId
- * @property int $SessionKeepAliveSeconds
+ * @property int<0, 86400> $SessionKeepAliveSeconds
  * @property list<string> $Sqls
  * @property string $StatementName
  * @property bool $WithEvent
@@ -29,7 +29,7 @@ class BatchExecuteStatementRequest extends Request
      *     ResultFormat?: 'JSON'|'CSV',
      *     SecretArn?: string,
      *     SessionId?: string,
-     *     SessionKeepAliveSeconds?: int,
+     *     SessionKeepAliveSeconds?: int<0, 86400>,
      *     Sqls: list<string>,
      *     StatementName?: string,
      *     WithEvent?: bool,

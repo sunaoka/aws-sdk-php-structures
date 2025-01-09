@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $VocabularyName
  * @property bool $ShowSpeakerLabels
- * @property int $MaxSpeakerLabels
+ * @property int<2, 30> $MaxSpeakerLabels
  * @property bool $ChannelIdentification
  * @property bool $ShowAlternatives
- * @property int $MaxAlternatives
+ * @property int<2, 10> $MaxAlternatives
  * @property string $VocabularyFilterName
  * @property 'remove'|'mask'|'tag' $VocabularyFilterMethod
  */
@@ -20,10 +20,10 @@ class Settings extends Shape
      * @param array{
      *     VocabularyName?: string,
      *     ShowSpeakerLabels?: bool,
-     *     MaxSpeakerLabels?: int,
+     *     MaxSpeakerLabels?: int<2, 30>,
      *     ChannelIdentification?: bool,
      *     ShowAlternatives?: bool,
-     *     MaxAlternatives?: int,
+     *     MaxAlternatives?: int<2, 10>,
      *     VocabularyFilterName?: string,
      *     VocabularyFilterMethod?: 'remove'|'mask'|'tag'
      * } $args

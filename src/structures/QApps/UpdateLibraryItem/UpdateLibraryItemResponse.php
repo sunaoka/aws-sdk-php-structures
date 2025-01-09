@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $libraryItemId
  * @property string $appId
- * @property int $appVersion
+ * @property int<0, 2147483647> $appVersion
  * @property list<Shapes\Category> $categories
  * @property string $status
  * @property \Aws\Api\DateTimeResult $createdAt

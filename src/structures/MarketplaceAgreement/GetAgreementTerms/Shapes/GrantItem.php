@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $dimensionKey
- * @property int $maxQuantity
+ * @property int<1, max> $maxQuantity
  */
 class GrantItem extends Shape
 {
     /**
      * @param array{
      *     dimensionKey?: string,
-     *     maxQuantity?: int
+     *     maxQuantity?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

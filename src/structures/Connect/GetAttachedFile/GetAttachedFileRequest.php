@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $FileId
- * @property int $UrlExpiryInSeconds
+ * @property int<5, 300> $UrlExpiryInSeconds
  * @property string $AssociatedResourceArn
  */
 class GetAttachedFileRequest extends Request
@@ -16,7 +16,7 @@ class GetAttachedFileRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     FileId: string,
-     *     UrlExpiryInSeconds?: int,
+     *     UrlExpiryInSeconds?: int<5, 300>,
      *     AssociatedResourceArn: string
      * } $args
      */

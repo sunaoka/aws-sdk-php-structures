@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\TaskList $taskList
  * @property string $identity
  * @property string $nextPageToken
- * @property int $maximumPageSize
+ * @property int<0, 1000> $maximumPageSize
  * @property bool $reverseOrder
  * @property bool $startAtPreviousStartedEvent
  */
@@ -21,7 +21,7 @@ class PollForDecisionTaskRequest extends Request
      *     taskList: Shapes\TaskList,
      *     identity?: string,
      *     nextPageToken?: string,
-     *     maximumPageSize?: int,
+     *     maximumPageSize?: int<0, 1000>,
      *     reverseOrder?: bool,
      *     startAtPreviousStartedEvent?: bool
      * } $args

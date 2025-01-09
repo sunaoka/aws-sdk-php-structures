@@ -14,10 +14,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ConfigurationLocationUri
  * @property string $ConfigurationVersion
  * @property string $Description
- * @property int $DeploymentDurationInMinutes
+ * @property int<0, 1440> $DeploymentDurationInMinutes
  * @property 'LINEAR'|'EXPONENTIAL' $GrowthType
  * @property float $GrowthFactor
- * @property int $FinalBakeTimeInMinutes
+ * @property int<0, 1440> $FinalBakeTimeInMinutes
  * @property 'BAKING'|'VALIDATING'|'DEPLOYING'|'COMPLETE'|'ROLLING_BACK'|'ROLLED_BACK'|'REVERTED' $State
  * @property list<Shapes\DeploymentEvent> $EventLog
  * @property float $PercentageComplete

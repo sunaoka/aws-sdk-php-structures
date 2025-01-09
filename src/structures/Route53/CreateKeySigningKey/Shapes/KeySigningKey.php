@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $SigningAlgorithmType
  * @property string $DigestAlgorithmMnemonic
  * @property int $DigestAlgorithmType
- * @property int $KeyTag
+ * @property int<0, 65536> $KeyTag
  * @property string $DigestValue
  * @property string $PublicKey
  * @property string $DSRecord
@@ -33,7 +33,7 @@ class KeySigningKey extends Shape
      *     SigningAlgorithmType?: int,
      *     DigestAlgorithmMnemonic?: string,
      *     DigestAlgorithmType?: int,
-     *     KeyTag?: int,
+     *     KeyTag?: int<0, 65536>,
      *     DigestValue?: string,
      *     PublicKey?: string,
      *     DSRecord?: string,

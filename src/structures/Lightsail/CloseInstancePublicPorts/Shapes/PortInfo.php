@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Lightsail\CloseInstancePublicPorts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $fromPort
- * @property int $toPort
+ * @property int<-1, 65535> $fromPort
+ * @property int<-1, 65535> $toPort
  * @property 'tcp'|'all'|'udp'|'icmp'|'icmpv6' $protocol
  * @property list<string> $cidrs
  * @property list<string> $ipv6Cidrs
@@ -16,8 +16,8 @@ class PortInfo extends Shape
 {
     /**
      * @param array{
-     *     fromPort?: int,
-     *     toPort?: int,
+     *     fromPort?: int<-1, 65535>,
+     *     toPort?: int<-1, 65535>,
      *     protocol?: 'tcp'|'all'|'udp'|'icmp'|'icmpv6',
      *     cidrs?: list<string>,
      *     ipv6Cidrs?: list<string>,

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $groupAttribute
  * @property string $metadata
- * @property int $sessionTimeout
+ * @property int<5, 720> $sessionTimeout
  * @property string $userAttribute
  */
 class SamlConfigOptions extends Shape
@@ -16,7 +16,7 @@ class SamlConfigOptions extends Shape
      * @param array{
      *     groupAttribute?: string,
      *     metadata: string,
-     *     sessionTimeout?: int,
+     *     sessionTimeout?: int<5, 720>,
      *     userAttribute?: string
      * } $args
      */

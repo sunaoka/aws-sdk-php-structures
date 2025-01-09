@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $OwnerDirectoryId
  * @property list<string> $SharedDirectoryIds
  * @property string $NextToken
- * @property int $Limit
+ * @property int<0, max> $Limit
  */
 class DescribeSharedDirectoriesRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeSharedDirectoriesRequest extends Request
      *     OwnerDirectoryId: string,
      *     SharedDirectoryIds?: list<string>,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

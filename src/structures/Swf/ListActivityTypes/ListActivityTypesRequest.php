@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property 'REGISTERED'|'DEPRECATED' $registrationStatus
  * @property string $nextPageToken
- * @property int $maximumPageSize
+ * @property int<0, 1000> $maximumPageSize
  * @property bool $reverseOrder
  */
 class ListActivityTypesRequest extends Request
@@ -20,7 +20,7 @@ class ListActivityTypesRequest extends Request
      *     name?: string,
      *     registrationStatus: 'REGISTERED'|'DEPRECATED',
      *     nextPageToken?: string,
-     *     maximumPageSize?: int,
+     *     maximumPageSize?: int<0, 1000>,
      *     reverseOrder?: bool
      * } $args
      */

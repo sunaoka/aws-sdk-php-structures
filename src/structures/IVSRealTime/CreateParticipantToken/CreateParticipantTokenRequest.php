@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $stageArn
- * @property int $duration
+ * @property int<1, 20160> $duration
  * @property string $userId
  * @property array<string, string> $attributes
  * @property list<'PUBLISH'|'SUBSCRIBE'> $capabilities
@@ -16,7 +16,7 @@ class CreateParticipantTokenRequest extends Request
     /**
      * @param array{
      *     stageArn: string,
-     *     duration?: int,
+     *     duration?: int<1, 20160>,
      *     userId?: string,
      *     attributes?: array<string, string>,
      *     capabilities?: list<'PUBLISH'|'SUBSCRIBE'>

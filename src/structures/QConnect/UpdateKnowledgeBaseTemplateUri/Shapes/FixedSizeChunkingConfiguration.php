@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateKnowledgeBaseTemplateUri\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maxTokens
- * @property int $overlapPercentage
+ * @property int<1, max> $maxTokens
+ * @property int<1, 99> $overlapPercentage
  */
 class FixedSizeChunkingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     maxTokens: int,
-     *     overlapPercentage: int
+     *     maxTokens: int<1, max>,
+     *     overlapPercentage: int<1, 99>
      * } $args
      */
     public function __construct(array $args)

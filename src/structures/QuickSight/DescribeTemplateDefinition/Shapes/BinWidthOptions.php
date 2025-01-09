@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property double $Value
- * @property int $BinCountLimit
+ * @property int<0, 1000> $BinCountLimit
  */
 class BinWidthOptions extends Shape
 {
     /**
      * @param array{
      *     Value?: double,
-     *     BinCountLimit?: int
+     *     BinCountLimit?: int<0, 1000>
      * } $args
      */
     public function __construct(array $args = [])

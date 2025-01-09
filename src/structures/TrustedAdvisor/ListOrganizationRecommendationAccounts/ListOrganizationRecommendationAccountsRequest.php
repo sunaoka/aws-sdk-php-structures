@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $affectedAccountId
- * @property int $maxResults
+ * @property int<1, 200> $maxResults
  * @property string $nextToken
  * @property string $organizationRecommendationIdentifier
  */
@@ -15,7 +15,7 @@ class ListOrganizationRecommendationAccountsRequest extends Request
     /**
      * @param array{
      *     affectedAccountId?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 200>,
      *     nextToken?: string,
      *     organizationRecommendationIdentifier: string
      * } $args

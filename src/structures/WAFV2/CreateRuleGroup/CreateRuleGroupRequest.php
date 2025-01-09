@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
- * @property int $Capacity
+ * @property int<1, max> $Capacity
  * @property string $Description
  * @property list<Shapes\Rule> $Rules
  * @property Shapes\VisibilityConfig $VisibilityConfig
@@ -20,7 +20,7 @@ class CreateRuleGroupRequest extends Request
      * @param array{
      *     Name: string,
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
-     *     Capacity: int,
+     *     Capacity: int<1, max>,
      *     Description?: string,
      *     Rules?: list<Shapes\Rule>,
      *     VisibilityConfig: Shapes\VisibilityConfig,

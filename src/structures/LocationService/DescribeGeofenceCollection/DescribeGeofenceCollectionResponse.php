@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, string> $Tags
  * @property \Aws\Api\DateTimeResult $CreateTime
  * @property \Aws\Api\DateTimeResult $UpdateTime
- * @property int $GeofenceCount
+ * @property int<0, max> $GeofenceCount
  */
 class DescribeGeofenceCollectionResponse extends Response
 {

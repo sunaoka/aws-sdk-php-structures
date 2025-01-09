@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property int $SessionLifetimeInMinutes
+ * @property int<15, 600> $SessionLifetimeInMinutes
  * @property string $UserArn
  * @property Shapes\RegisteredUserEmbeddingExperienceConfiguration $ExperienceConfiguration
  * @property list<string> $AllowedDomains
@@ -16,7 +16,7 @@ class GenerateEmbedUrlForRegisteredUserRequest extends Request
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     SessionLifetimeInMinutes?: int,
+     *     SessionLifetimeInMinutes?: int<15, 600>,
      *     UserArn: string,
      *     ExperienceConfiguration: Shapes\RegisteredUserEmbeddingExperienceConfiguration,
      *     AllowedDomains?: list<string>

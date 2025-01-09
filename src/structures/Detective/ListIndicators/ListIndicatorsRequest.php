@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InvestigationId
  * @property 'TTP_OBSERVED'|'IMPOSSIBLE_TRAVEL'|'FLAGGED_IP_ADDRESS'|'NEW_GEOLOCATION'|'NEW_ASO'|'NEW_USER_AGENT'|'RELATED_FINDING'|'RELATED_FINDING_GROUP' $IndicatorType
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListIndicatorsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListIndicatorsRequest extends Request
      *     InvestigationId: string,
      *     IndicatorType?: 'TTP_OBSERVED'|'IMPOSSIBLE_TRAVEL'|'FLAGGED_IP_ADDRESS'|'NEW_GEOLOCATION'|'NEW_ASO'|'NEW_USER_AGENT'|'RELATED_FINDING'|'RELATED_FINDING_GROUP',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

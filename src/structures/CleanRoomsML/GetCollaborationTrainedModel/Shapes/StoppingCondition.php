@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\GetCollaborationTrainedModel\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maxRuntimeInSeconds
+ * @property int<1, 2419200> $maxRuntimeInSeconds
  */
 class StoppingCondition extends Shape
 {
     /**
-     * @param array{maxRuntimeInSeconds?: int} $args
+     * @param array{maxRuntimeInSeconds?: int<1, 2419200>} $args
      */
     public function __construct(array $args = [])
     {

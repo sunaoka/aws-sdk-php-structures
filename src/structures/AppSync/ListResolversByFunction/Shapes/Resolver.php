@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PipelineConfig $pipelineConfig
  * @property SyncConfig $syncConfig
  * @property CachingConfig $cachingConfig
- * @property int $maxBatchSize
+ * @property int<0, 2000> $maxBatchSize
  * @property AppSyncRuntime $runtime
  * @property string $code
  * @property 'ENABLED'|'DISABLED' $metricsConfig
@@ -34,7 +34,7 @@ class Resolver extends Shape
      *     pipelineConfig?: PipelineConfig,
      *     syncConfig?: SyncConfig,
      *     cachingConfig?: CachingConfig,
-     *     maxBatchSize?: int,
+     *     maxBatchSize?: int<0, 2000>,
      *     runtime?: AppSyncRuntime,
      *     code?: string,
      *     metricsConfig?: 'ENABLED'|'DISABLED'

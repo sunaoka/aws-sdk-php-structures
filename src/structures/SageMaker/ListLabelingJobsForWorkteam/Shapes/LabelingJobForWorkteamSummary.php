@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $WorkRequesterAccountId
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property LabelCountersForWorkteam $LabelCounters
- * @property int $NumberOfHumanWorkersPerDataObject
+ * @property int<1, 9> $NumberOfHumanWorkersPerDataObject
  */
 class LabelingJobForWorkteamSummary extends Shape
 {
@@ -21,7 +21,7 @@ class LabelingJobForWorkteamSummary extends Shape
      *     WorkRequesterAccountId: string,
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     LabelCounters?: LabelCountersForWorkteam,
-     *     NumberOfHumanWorkersPerDataObject?: int
+     *     NumberOfHumanWorkersPerDataObject?: int<1, 9>
      * } $args
      */
     public function __construct(array $args)

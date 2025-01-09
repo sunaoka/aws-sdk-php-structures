@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ServiceRole
  * @property 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA' $Type
  * @property list<array<string, Shapes\MaintenanceWindowTaskParameterValueExpression>> $TaskParameters
- * @property int $Priority
+ * @property int<0, max> $Priority
  * @property string $MaxConcurrency
  * @property string $MaxErrors
  * @property 'PENDING'|'IN_PROGRESS'|'SUCCESS'|'FAILED'|'TIMED_OUT'|'CANCELLING'|'CANCELLED'|'SKIPPED_OVERLAPPING' $Status

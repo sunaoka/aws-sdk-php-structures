@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $expirationTime
  * @property string $kmsKeyArn
  * @property string $name
- * @property int $priority
+ * @property int<1, 99999> $priority
  * @property string $satelliteId
  * @property array<string, string> $tags
  */
@@ -23,7 +23,7 @@ class CreateEphemerisRequest extends Request
      *     expirationTime?: \Aws\Api\DateTimeResult,
      *     kmsKeyArn?: string,
      *     name: string,
-     *     priority?: int,
+     *     priority?: int<1, 99999>,
      *     satelliteId: string,
      *     tags?: array<string, string>
      * } $args

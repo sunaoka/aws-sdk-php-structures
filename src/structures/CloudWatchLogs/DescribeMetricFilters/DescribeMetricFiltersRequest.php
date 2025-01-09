@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $logGroupName
  * @property string $filterNamePrefix
  * @property string $nextToken
- * @property int $limit
+ * @property int<1, 50> $limit
  * @property string $metricName
  * @property string $metricNamespace
  */
@@ -19,7 +19,7 @@ class DescribeMetricFiltersRequest extends Request
      *     logGroupName?: string,
      *     filterNamePrefix?: string,
      *     nextToken?: string,
-     *     limit?: int,
+     *     limit?: int<1, 50>,
      *     metricName?: string,
      *     metricNamespace?: string
      * } $args

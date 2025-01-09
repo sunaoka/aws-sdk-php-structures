@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'PENDING'|'READY'|'FAILED' $StateEquals
  * @property string $NameContains
  */
@@ -15,7 +15,7 @@ class ListMedicalVocabulariesRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     StateEquals?: 'PENDING'|'READY'|'FAILED',
      *     NameContains?: string
      * } $args

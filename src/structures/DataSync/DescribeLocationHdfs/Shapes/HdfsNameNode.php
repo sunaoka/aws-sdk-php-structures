@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Hostname
- * @property int $Port
+ * @property int<1, 65536> $Port
  */
 class HdfsNameNode extends Shape
 {
     /**
      * @param array{
      *     Hostname: string,
-     *     Port: int
+     *     Port: int<1, 65536>
      * } $args
      */
     public function __construct(array $args)

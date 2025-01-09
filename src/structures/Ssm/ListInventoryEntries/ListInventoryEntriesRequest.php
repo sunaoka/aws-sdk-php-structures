@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TypeName
  * @property list<Shapes\InventoryFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  */
 class ListInventoryEntriesRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListInventoryEntriesRequest extends Request
      *     TypeName: string,
      *     Filters?: list<Shapes\InventoryFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

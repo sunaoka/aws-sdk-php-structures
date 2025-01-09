@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EngineModel
  * @property string $EngineVersion
  * @property list<Shapes\EngineAttribute> $EngineAttributes
- * @property int $BackupRetentionCount
+ * @property int<1, max> $BackupRetentionCount
  * @property string $ServerName
  * @property string $InstanceProfileArn
  * @property string $InstanceType
@@ -40,7 +40,7 @@ class CreateServerRequest extends Request
      *     EngineModel?: string,
      *     EngineVersion?: string,
      *     EngineAttributes?: list<Shapes\EngineAttribute>,
-     *     BackupRetentionCount?: int,
+     *     BackupRetentionCount?: int<1, max>,
      *     ServerName: string,
      *     InstanceProfileArn: string,
      *     InstanceType: string,

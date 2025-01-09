@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\KinesisAnalytics\ListApplications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $Limit
+ * @property int<1, 50> $Limit
  * @property string $ExclusiveStartApplicationName
  */
 class ListApplicationsRequest extends Request
 {
     /**
      * @param array{
-     *     Limit?: int,
+     *     Limit?: int<1, 50>,
      *     ExclusiveStartApplicationName?: string
      * } $args
      */

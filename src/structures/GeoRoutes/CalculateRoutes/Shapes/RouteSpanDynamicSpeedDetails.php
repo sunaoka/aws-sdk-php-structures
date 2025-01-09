@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property double $BestCaseSpeed
- * @property int $TurnDuration
+ * @property int<0, 4294967295> $TurnDuration
  * @property double $TypicalSpeed
  */
 class RouteSpanDynamicSpeedDetails extends Shape
@@ -14,7 +14,7 @@ class RouteSpanDynamicSpeedDetails extends Shape
     /**
      * @param array{
      *     BestCaseSpeed?: double,
-     *     TurnDuration?: int,
+     *     TurnDuration?: int<0, 4294967295>,
      *     TypicalSpeed?: double
      * } $args
      */

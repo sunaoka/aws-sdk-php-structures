@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $OrganizationConfigRuleName
  * @property Shapes\StatusDetailFilters $Filters
- * @property int $Limit
+ * @property int<0, 100> $Limit
  * @property string $NextToken
  */
 class GetOrganizationConfigRuleDetailedStatusRequest extends Request
@@ -16,7 +16,7 @@ class GetOrganizationConfigRuleDetailedStatusRequest extends Request
      * @param array{
      *     OrganizationConfigRuleName: string,
      *     Filters?: Shapes\StatusDetailFilters,
-     *     Limit?: int,
+     *     Limit?: int<0, 100>,
      *     NextToken?: string
      * } $args
      */

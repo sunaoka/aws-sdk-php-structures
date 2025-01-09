@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $WeeklyMaintenanceStartTime
  * @property DataRepositoryConfiguration $DataRepositoryConfiguration
  * @property 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2' $DeploymentType
- * @property int $PerUnitStorageThroughput
+ * @property int<12, 1000> $PerUnitStorageThroughput
  * @property string $MountName
  * @property string $DailyAutomaticBackupStartTime
- * @property int $AutomaticBackupRetentionDays
+ * @property int<0, 90> $AutomaticBackupRetentionDays
  * @property bool $CopyTagsToBackups
  * @property 'NONE'|'READ' $DriveCacheType
  * @property 'NONE'|'LZ4' $DataCompressionType
@@ -27,10 +27,10 @@ class LustreFileSystemConfiguration extends Shape
      *     WeeklyMaintenanceStartTime?: string,
      *     DataRepositoryConfiguration?: DataRepositoryConfiguration,
      *     DeploymentType?: 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2',
-     *     PerUnitStorageThroughput?: int,
+     *     PerUnitStorageThroughput?: int<12, 1000>,
      *     MountName?: string,
      *     DailyAutomaticBackupStartTime?: string,
-     *     AutomaticBackupRetentionDays?: int,
+     *     AutomaticBackupRetentionDays?: int<0, 90>,
      *     CopyTagsToBackups?: bool,
      *     DriveCacheType?: 'NONE'|'READ',
      *     DataCompressionType?: 'NONE'|'LZ4',

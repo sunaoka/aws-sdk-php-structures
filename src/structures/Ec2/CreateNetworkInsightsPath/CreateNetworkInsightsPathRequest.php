@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Source
  * @property string $Destination
  * @property 'tcp'|'udp' $Protocol
- * @property int $DestinationPort
+ * @property int<0, 65535> $DestinationPort
  * @property list<Shapes\TagSpecification> $TagSpecifications
  * @property bool $DryRun
  * @property string $ClientToken
@@ -26,7 +26,7 @@ class CreateNetworkInsightsPathRequest extends Request
      *     Source: string,
      *     Destination?: string,
      *     Protocol: 'tcp'|'udp',
-     *     DestinationPort?: int,
+     *     DestinationPort?: int<0, 65535>,
      *     TagSpecifications?: list<Shapes\TagSpecification>,
      *     DryRun?: bool,
      *     ClientToken: string,

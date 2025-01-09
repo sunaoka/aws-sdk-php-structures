@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $LatestVersion
- * @property int $VersionNumber
+ * @property int<1, 100000> $VersionNumber
  */
 class SchemaVersionNumber extends Shape
 {
     /**
      * @param array{
      *     LatestVersion?: bool,
-     *     VersionNumber?: int
+     *     VersionNumber?: int<1, 100000>
      * } $args
      */
     public function __construct(array $args = [])

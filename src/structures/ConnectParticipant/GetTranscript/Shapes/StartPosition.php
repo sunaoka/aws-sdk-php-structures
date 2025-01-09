@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Id
  * @property string $AbsoluteTime
- * @property int $MostRecent
+ * @property int<0, 100> $MostRecent
  */
 class StartPosition extends Shape
 {
@@ -15,7 +15,7 @@ class StartPosition extends Shape
      * @param array{
      *     Id?: string,
      *     AbsoluteTime?: string,
-     *     MostRecent?: int
+     *     MostRecent?: int<0, 100>
      * } $args
      */
     public function __construct(array $args = [])

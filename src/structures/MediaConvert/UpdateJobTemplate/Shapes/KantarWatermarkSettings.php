@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ContentReference
  * @property string $CredentialsSecretName
  * @property double $FileOffset
- * @property int $KantarLicenseId
+ * @property int<0, 2147483647> $KantarLicenseId
  * @property string $KantarServerUrl
  * @property string $LogDestination
  * @property string $Metadata3
@@ -27,7 +27,7 @@ class KantarWatermarkSettings extends Shape
      *     ContentReference?: string,
      *     CredentialsSecretName?: string,
      *     FileOffset?: double,
-     *     KantarLicenseId?: int,
+     *     KantarLicenseId?: int<0, 2147483647>,
      *     KantarServerUrl?: string,
      *     LogDestination?: string,
      *     Metadata3?: string,

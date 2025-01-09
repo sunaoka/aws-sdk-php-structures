@@ -15,12 +15,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $vpcSecurityGroupIds
  * @property bool $publiclyAccessible
  * @property 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3' $dbStorageType
- * @property int $allocatedStorage
+ * @property int<20, 16384> $allocatedStorage
  * @property string $dbParameterGroupIdentifier
  * @property 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY' $deploymentType
  * @property Shapes\LogDeliveryConfiguration $logDeliveryConfiguration
  * @property array<string, string> $tags
- * @property int $port
+ * @property int<1024, 65535> $port
  * @property 'IPV4'|'DUAL' $networkType
  */
 class CreateDbInstanceRequest extends Request
@@ -37,12 +37,12 @@ class CreateDbInstanceRequest extends Request
      *     vpcSecurityGroupIds: list<string>,
      *     publiclyAccessible?: bool,
      *     dbStorageType?: 'InfluxIOIncludedT1'|'InfluxIOIncludedT2'|'InfluxIOIncludedT3',
-     *     allocatedStorage: int,
+     *     allocatedStorage: int<20, 16384>,
      *     dbParameterGroupIdentifier?: string,
      *     deploymentType?: 'SINGLE_AZ'|'WITH_MULTIAZ_STANDBY',
      *     logDeliveryConfiguration?: Shapes\LogDeliveryConfiguration,
      *     tags?: array<string, string>,
-     *     port?: int,
+     *     port?: int<1024, 65535>,
      *     networkType?: 'IPV4'|'DUAL'
      * } $args
      */

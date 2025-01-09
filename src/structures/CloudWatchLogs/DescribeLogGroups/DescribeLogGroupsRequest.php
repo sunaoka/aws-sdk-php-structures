@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $logGroupNamePrefix
  * @property string $logGroupNamePattern
  * @property string $nextToken
- * @property int $limit
+ * @property int<1, 50> $limit
  * @property bool $includeLinkedAccounts
  * @property 'STANDARD'|'INFREQUENT_ACCESS' $logGroupClass
  */
@@ -21,7 +21,7 @@ class DescribeLogGroupsRequest extends Request
      *     logGroupNamePrefix?: string,
      *     logGroupNamePattern?: string,
      *     nextToken?: string,
-     *     limit?: int,
+     *     limit?: int<1, 50>,
      *     includeLinkedAccounts?: bool,
      *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'
      * } $args

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $source
  * @property bool $includeChildEvents
  * @property string $aggregateNotificationEventArn
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListNotificationEventsRequest extends Request
@@ -24,7 +24,7 @@ class ListNotificationEventsRequest extends Request
      *     source?: string,
      *     includeChildEvents?: bool,
      *     aggregateNotificationEventArn?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

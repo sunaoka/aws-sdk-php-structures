@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property 'region'|'availability-zone'|'availability-zone-id'|'outpost' $LocationType
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property string $NextToken
  */
 class DescribeInstanceTypeOfferingsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeInstanceTypeOfferingsRequest extends Request
      *     DryRun?: bool,
      *     LocationType?: 'region'|'availability-zone'|'availability-zone-id'|'outpost',
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     NextToken?: string
      * } $args
      */

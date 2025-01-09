@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceType
  * @property string $ResourceId
  * @property list<'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA'> $ComplianceTypes
- * @property int $Limit
+ * @property int<0, 100> $Limit
  * @property string $NextToken
  */
 class DescribeComplianceByResourceRequest extends Request
@@ -18,7 +18,7 @@ class DescribeComplianceByResourceRequest extends Request
      *     ResourceType?: string,
      *     ResourceId?: string,
      *     ComplianceTypes?: list<'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA'>,
-     *     Limit?: int,
+     *     Limit?: int<0, 100>,
      *     NextToken?: string
      * } $args
      */

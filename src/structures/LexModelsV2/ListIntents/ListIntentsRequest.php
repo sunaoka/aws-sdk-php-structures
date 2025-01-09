@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $localeId
  * @property Shapes\IntentSortBy $sortBy
  * @property list<Shapes\IntentFilter> $filters
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListIntentsRequest extends Request
@@ -22,7 +22,7 @@ class ListIntentsRequest extends Request
      *     localeId: string,
      *     sortBy?: Shapes\IntentSortBy,
      *     filters?: list<Shapes\IntentFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

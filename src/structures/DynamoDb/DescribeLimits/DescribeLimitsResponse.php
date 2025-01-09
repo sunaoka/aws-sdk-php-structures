@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DescribeLimits;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $AccountMaxReadCapacityUnits
- * @property int $AccountMaxWriteCapacityUnits
- * @property int $TableMaxReadCapacityUnits
- * @property int $TableMaxWriteCapacityUnits
+ * @property int<1, max> $AccountMaxReadCapacityUnits
+ * @property int<1, max> $AccountMaxWriteCapacityUnits
+ * @property int<1, max> $TableMaxReadCapacityUnits
+ * @property int<1, max> $TableMaxWriteCapacityUnits
  */
 class DescribeLimitsResponse extends Response
 {

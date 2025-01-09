@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TrafficMirrorFilterId
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property string $NextToken
  */
 class DescribeTrafficMirrorFilterRulesRequest extends Request
@@ -20,7 +20,7 @@ class DescribeTrafficMirrorFilterRulesRequest extends Request
      *     TrafficMirrorFilterId?: string,
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     NextToken?: string
      * } $args
      */

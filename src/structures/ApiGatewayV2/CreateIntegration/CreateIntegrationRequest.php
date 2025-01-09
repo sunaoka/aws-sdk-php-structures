@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, array<string, string>> $ResponseParameters
  * @property array<string, string> $RequestTemplates
  * @property string $TemplateSelectionExpression
- * @property int $TimeoutInMillis
+ * @property int<50, 30000> $TimeoutInMillis
  * @property Shapes\TlsConfigInput $TlsConfig
  */
 class CreateIntegrationRequest extends Request
@@ -44,7 +44,7 @@ class CreateIntegrationRequest extends Request
      *     ResponseParameters?: array<string, array<string, string>>,
      *     RequestTemplates?: array<string, string>,
      *     TemplateSelectionExpression?: string,
-     *     TimeoutInMillis?: int,
+     *     TimeoutInMillis?: int<50, 30000>,
      *     TlsConfig?: Shapes\TlsConfigInput
      * } $args
      */

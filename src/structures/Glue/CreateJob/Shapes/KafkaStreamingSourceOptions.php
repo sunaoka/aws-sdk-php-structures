@@ -15,11 +15,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Delimiter
  * @property string $StartingOffsets
  * @property string $EndingOffsets
- * @property int $PollTimeoutMs
- * @property int $NumRetries
- * @property int $RetryIntervalMs
- * @property int $MaxOffsetsPerTrigger
- * @property int $MinPartitions
+ * @property int<0, max> $PollTimeoutMs
+ * @property int<0, max> $NumRetries
+ * @property int<0, max> $RetryIntervalMs
+ * @property int<0, max> $MaxOffsetsPerTrigger
+ * @property int<0, max> $MinPartitions
  * @property bool $IncludeHeaders
  * @property string $AddRecordTimestamp
  * @property string $EmitConsumerLagMetrics
@@ -39,11 +39,11 @@ class KafkaStreamingSourceOptions extends Shape
      *     Delimiter?: string,
      *     StartingOffsets?: string,
      *     EndingOffsets?: string,
-     *     PollTimeoutMs?: int,
-     *     NumRetries?: int,
-     *     RetryIntervalMs?: int,
-     *     MaxOffsetsPerTrigger?: int,
-     *     MinPartitions?: int,
+     *     PollTimeoutMs?: int<0, max>,
+     *     NumRetries?: int<0, max>,
+     *     RetryIntervalMs?: int<0, max>,
+     *     MaxOffsetsPerTrigger?: int<0, max>,
+     *     MinPartitions?: int<0, max>,
      *     IncludeHeaders?: bool,
      *     AddRecordTimestamp?: string,
      *     EmitConsumerLagMetrics?: string,

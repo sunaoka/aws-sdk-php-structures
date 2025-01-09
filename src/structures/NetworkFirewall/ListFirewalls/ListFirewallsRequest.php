@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $NextToken
  * @property list<string> $VpcIds
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListFirewallsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListFirewallsRequest extends Request
      * @param array{
      *     NextToken?: string,
      *     VpcIds?: list<string>,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

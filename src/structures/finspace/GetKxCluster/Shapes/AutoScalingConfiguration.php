@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\finspace\GetKxCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $minNodeCount
- * @property int $maxNodeCount
+ * @property int<1, max> $minNodeCount
+ * @property int<1, max> $maxNodeCount
  * @property 'CPU_UTILIZATION_PERCENTAGE' $autoScalingMetric
  * @property double $metricTarget
  * @property double $scaleInCooldownSeconds
@@ -16,8 +16,8 @@ class AutoScalingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     minNodeCount?: int,
-     *     maxNodeCount?: int,
+     *     minNodeCount?: int<1, max>,
+     *     maxNodeCount?: int<1, max>,
      *     autoScalingMetric?: 'CPU_UTILIZATION_PERCENTAGE',
      *     metricTarget?: double,
      *     scaleInCooldownSeconds?: double,

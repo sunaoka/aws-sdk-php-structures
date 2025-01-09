@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DBShardGroupIdentifier
  * @property list<Shapes\Filter> $Filters
  * @property string $Marker
- * @property int $MaxRecords
+ * @property int<20, 100> $MaxRecords
  */
 class DescribeDBShardGroupsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeDBShardGroupsRequest extends Request
      *     DBShardGroupIdentifier?: string,
      *     Filters?: list<Shapes\Filter>,
      *     Marker?: string,
-     *     MaxRecords?: int
+     *     MaxRecords?: int<20, 100>
      * } $args
      */
     public function __construct(array $args = [])

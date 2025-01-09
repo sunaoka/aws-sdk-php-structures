@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'HEALTHY'|'LAGGING'|'ERROR' $healthStatus
  * @property string $lastUpdateDateTime
  * @property 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETED' $progressStatus
- * @property int $totalSourceServers
+ * @property int<0, max> $totalSourceServers
  */
 class ApplicationAggregatedStatus extends Shape
 {
@@ -17,7 +17,7 @@ class ApplicationAggregatedStatus extends Shape
      *     healthStatus?: 'HEALTHY'|'LAGGING'|'ERROR',
      *     lastUpdateDateTime?: string,
      *     progressStatus?: 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETED',
-     *     totalSourceServers?: int
+     *     totalSourceServers?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

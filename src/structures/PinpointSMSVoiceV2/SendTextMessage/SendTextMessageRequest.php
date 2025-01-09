@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Keyword
  * @property string $ConfigurationSetName
  * @property string $MaxPrice
- * @property int $TimeToLive
+ * @property int<5, 259200> $TimeToLive
  * @property array<string, string> $Context
  * @property array<'IN_TEMPLATE_ID'|'IN_ENTITY_ID', string> $DestinationCountryParameters
  * @property bool $DryRun
@@ -30,7 +30,7 @@ class SendTextMessageRequest extends Request
      *     Keyword?: string,
      *     ConfigurationSetName?: string,
      *     MaxPrice?: string,
-     *     TimeToLive?: int,
+     *     TimeToLive?: int<5, 259200>,
      *     Context?: array<string, string>,
      *     DestinationCountryParameters?: array<'IN_TEMPLATE_ID'|'IN_ENTITY_ID', string>,
      *     DryRun?: bool,

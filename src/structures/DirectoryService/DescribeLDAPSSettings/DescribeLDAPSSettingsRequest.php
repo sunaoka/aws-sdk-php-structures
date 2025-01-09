@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DirectoryId
  * @property 'Client' $Type
  * @property string $NextToken
- * @property int $Limit
+ * @property int<1, 50> $Limit
  */
 class DescribeLDAPSSettingsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeLDAPSSettingsRequest extends Request
      *     DirectoryId: string,
      *     Type?: 'Client',
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

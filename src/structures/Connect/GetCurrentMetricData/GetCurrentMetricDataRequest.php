@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'QUEUE'|'CHANNEL'|'ROUTING_PROFILE'|'ROUTING_STEP_EXPRESSION'> $Groupings
  * @property list<Shapes\CurrentMetric> $CurrentMetrics
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property list<Shapes\CurrentMetricSortCriteria> $SortCriteria
  */
 class GetCurrentMetricDataRequest extends Request
@@ -22,7 +22,7 @@ class GetCurrentMetricDataRequest extends Request
      *     Groupings?: list<'QUEUE'|'CHANNEL'|'ROUTING_PROFILE'|'ROUTING_STEP_EXPRESSION'>,
      *     CurrentMetrics: list<Shapes\CurrentMetric>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     SortCriteria?: list<Shapes\CurrentMetricSortCriteria>
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $end
- * @property int $start
+ * @property int<0, max> $end
+ * @property int<0, max> $start
  */
 class Span extends Shape
 {
     /**
      * @param array{
-     *     end?: int,
-     *     start?: int
+     *     end?: int<0, max>,
+     *     start?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\GetApplicationVersion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $applicationVersion
+ * @property int<1, max> $applicationVersion
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string $definitionContent
  * @property string $description

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ViolationTarget
  * @property string $ViolationTargetDescription
- * @property int $ConflictingPriority
+ * @property int<0, 10000> $ConflictingPriority
  * @property string $ConflictingPolicyId
- * @property list<int> $UnavailablePriorities
+ * @property list<int<0, 10000>> $UnavailablePriorities
  */
 class DnsRuleGroupPriorityConflictViolation extends Shape
 {
@@ -17,9 +17,9 @@ class DnsRuleGroupPriorityConflictViolation extends Shape
      * @param array{
      *     ViolationTarget?: string,
      *     ViolationTargetDescription?: string,
-     *     ConflictingPriority?: int,
+     *     ConflictingPriority?: int<0, 10000>,
      *     ConflictingPolicyId?: string,
-     *     UnavailablePriorities?: list<int>
+     *     UnavailablePriorities?: list<int<0, 10000>>
      * } $args
      */
     public function __construct(array $args = [])

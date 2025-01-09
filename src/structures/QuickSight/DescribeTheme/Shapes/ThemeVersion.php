@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTheme\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $VersionNumber
+ * @property int<1, max> $VersionNumber
  * @property string $Arn
  * @property string $Description
  * @property string $BaseThemeId
@@ -18,7 +18,7 @@ class ThemeVersion extends Shape
 {
     /**
      * @param array{
-     *     VersionNumber?: int,
+     *     VersionNumber?: int<1, max>,
      *     Arn?: string,
      *     Description?: string,
      *     BaseThemeId?: string,

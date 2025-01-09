@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<CaptionSelector> $CaptionSelectors
  * @property 'DISABLED'|'ENABLED' $DeblockFilter
  * @property 'DISABLED'|'ENABLED' $DenoiseFilter
- * @property int $FilterStrength
+ * @property int<1, 5> $FilterStrength
  * @property 'AUTO'|'DISABLED'|'FORCED' $InputFilter
  * @property NetworkInputSettings $NetworkInputSettings
- * @property int $Scte35Pid
+ * @property int<32, 8191> $Scte35Pid
  * @property 'IGNORE'|'PREFER' $Smpte2038DataPreference
  * @property 'CONTINUE'|'LOOP' $SourceEndBehavior
  * @property VideoSelector $VideoSelector
@@ -25,10 +25,10 @@ class InputSettings extends Shape
      *     CaptionSelectors?: list<CaptionSelector>,
      *     DeblockFilter?: 'DISABLED'|'ENABLED',
      *     DenoiseFilter?: 'DISABLED'|'ENABLED',
-     *     FilterStrength?: int,
+     *     FilterStrength?: int<1, 5>,
      *     InputFilter?: 'AUTO'|'DISABLED'|'FORCED',
      *     NetworkInputSettings?: NetworkInputSettings,
-     *     Scte35Pid?: int,
+     *     Scte35Pid?: int<32, 8191>,
      *     Smpte2038DataPreference?: 'IGNORE'|'PREFER',
      *     SourceEndBehavior?: 'CONTINUE'|'LOOP',
      *     VideoSelector?: VideoSelector

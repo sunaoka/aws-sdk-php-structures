@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TableArn
- * @property int $PageSize
+ * @property int<1, 25> $PageSize
  * @property string $NextToken
  */
 class ListImportsRequest extends Request
@@ -14,7 +14,7 @@ class ListImportsRequest extends Request
     /**
      * @param array{
      *     TableArn?: string,
-     *     PageSize?: int,
+     *     PageSize?: int<1, 25>,
      *     NextToken?: string
      * } $args
      */

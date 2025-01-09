@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $CreationTimeAfter
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
  * @property string $InstanceGroupNameContains
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property 'CREATION_TIME'|'NAME' $SortBy
  * @property 'Ascending'|'Descending' $SortOrder
@@ -22,7 +22,7 @@ class ListClusterNodesRequest extends Request
      *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
      *     InstanceGroupNameContains?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     SortBy?: 'CREATION_TIME'|'NAME',
      *     SortOrder?: 'Ascending'|'Descending'

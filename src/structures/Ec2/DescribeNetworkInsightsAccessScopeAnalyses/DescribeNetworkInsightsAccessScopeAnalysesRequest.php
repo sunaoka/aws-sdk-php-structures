@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $AnalysisStartTimeBegin
  * @property \Aws\Api\DateTimeResult $AnalysisStartTimeEnd
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property bool $DryRun
  * @property string $NextToken
  */
@@ -23,7 +23,7 @@ class DescribeNetworkInsightsAccessScopeAnalysesRequest extends Request
      *     AnalysisStartTimeBegin?: \Aws\Api\DateTimeResult,
      *     AnalysisStartTimeEnd?: \Aws\Api\DateTimeResult,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     DryRun?: bool,
      *     NextToken?: string
      * } $args

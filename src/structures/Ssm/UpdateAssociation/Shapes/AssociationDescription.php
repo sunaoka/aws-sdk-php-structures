@@ -29,8 +29,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $ApplyOnlyAtCronInterval
  * @property list<string> $CalendarNames
  * @property list<TargetLocation> $TargetLocations
- * @property int $ScheduleOffset
- * @property int $Duration
+ * @property int<1, 6> $ScheduleOffset
+ * @property int<1, 24> $Duration
  * @property list<array<string, list<string>>> $TargetMaps
  * @property AlarmConfiguration $AlarmConfiguration
  * @property list<AlarmStateInformation> $TriggeredAlarms
@@ -63,8 +63,8 @@ class AssociationDescription extends Shape
      *     ApplyOnlyAtCronInterval?: bool,
      *     CalendarNames?: list<string>,
      *     TargetLocations?: list<TargetLocation>,
-     *     ScheduleOffset?: int,
-     *     Duration?: int,
+     *     ScheduleOffset?: int<1, 6>,
+     *     Duration?: int<1, 24>,
      *     TargetMaps?: list<array<string, list<string>>>,
      *     AlarmConfiguration?: AlarmConfiguration,
      *     TriggeredAlarms?: list<AlarmStateInformation>

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Description
  * @property list<string> $AllowedIps
  * @property list<string> $BlockedIps
- * @property int $PeriodicSessionDuration
+ * @property int<10, 60> $PeriodicSessionDuration
  */
 class UpdateAuthenticationProfileRequest extends Request
 {
@@ -23,7 +23,7 @@ class UpdateAuthenticationProfileRequest extends Request
      *     Description?: string,
      *     AllowedIps?: list<string>,
      *     BlockedIps?: list<string>,
-     *     PeriodicSessionDuration?: int
+     *     PeriodicSessionDuration?: int<10, 60>
      * } $args
      */
     public function __construct(array $args)

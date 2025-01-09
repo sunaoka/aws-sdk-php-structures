@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $DashboardId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListDashboardVersionsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListDashboardVersionsRequest extends Request
      *     AwsAccountId: string,
      *     DashboardId: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

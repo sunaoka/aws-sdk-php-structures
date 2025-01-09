@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateEndpointConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MemorySizeInMB
- * @property int $MaxConcurrency
- * @property int $ProvisionedConcurrency
+ * @property int<1024, 6144> $MemorySizeInMB
+ * @property int<1, 200> $MaxConcurrency
+ * @property int<1, 200> $ProvisionedConcurrency
  */
 class ProductionVariantServerlessConfig extends Shape
 {
     /**
      * @param array{
-     *     MemorySizeInMB: int,
-     *     MaxConcurrency: int,
-     *     ProvisionedConcurrency?: int
+     *     MemorySizeInMB: int<1024, 6144>,
+     *     MaxConcurrency: int<1, 200>,
+     *     ProvisionedConcurrency?: int<1, 200>
      * } $args
      */
     public function __construct(array $args)

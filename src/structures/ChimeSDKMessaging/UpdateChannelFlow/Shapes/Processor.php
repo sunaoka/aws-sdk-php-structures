@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property ProcessorConfiguration $Configuration
- * @property int $ExecutionOrder
+ * @property int<1, 3> $ExecutionOrder
  * @property 'CONTINUE'|'ABORT' $FallbackAction
  */
 class Processor extends Shape
@@ -16,7 +16,7 @@ class Processor extends Shape
      * @param array{
      *     Name: string,
      *     Configuration: ProcessorConfiguration,
-     *     ExecutionOrder: int,
+     *     ExecutionOrder: int<1, 3>,
      *     FallbackAction: 'CONTINUE'|'ABORT'
      * } $args
      */

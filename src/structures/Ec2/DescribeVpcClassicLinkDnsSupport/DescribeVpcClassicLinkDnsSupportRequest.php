@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $VpcIds
- * @property int $MaxResults
+ * @property int<5, 255> $MaxResults
  * @property string $NextToken
  */
 class DescribeVpcClassicLinkDnsSupportRequest extends Request
@@ -14,7 +14,7 @@ class DescribeVpcClassicLinkDnsSupportRequest extends Request
     /**
      * @param array{
      *     VpcIds?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 255>,
      *     NextToken?: string
      * } $args
      */

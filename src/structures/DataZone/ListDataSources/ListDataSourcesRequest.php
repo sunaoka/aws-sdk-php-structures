@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $connectionIdentifier
  * @property string $domainIdentifier
  * @property string $environmentIdentifier
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $name
  * @property string $nextToken
  * @property string $projectIdentifier
@@ -22,7 +22,7 @@ class ListDataSourcesRequest extends Request
      *     connectionIdentifier?: string,
      *     domainIdentifier: string,
      *     environmentIdentifier?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     name?: string,
      *     nextToken?: string,
      *     projectIdentifier: string,

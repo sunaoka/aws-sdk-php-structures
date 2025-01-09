@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<double> $Center
- * @property int $Radius
+ * @property int<1, 21000000> $Radius
  */
 class FilterCircle extends Shape
 {
     /**
      * @param array{
      *     Center: list<double>,
-     *     Radius: int
+     *     Radius: int<1, 21000000>
      * } $args
      */
     public function __construct(array $args)

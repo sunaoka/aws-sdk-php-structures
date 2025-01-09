@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ChatChannel $chatChannel
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string $dedupeString
- * @property int $impact
+ * @property int<1, 5> $impact
  * @property IncidentRecordSource $incidentRecordSource
  * @property string $lastModifiedBy
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
@@ -29,7 +29,7 @@ class IncidentRecord extends Shape
      *     chatChannel?: ChatChannel,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     dedupeString: string,
-     *     impact: int,
+     *     impact: int<1, 5>,
      *     incidentRecordSource: IncidentRecordSource,
      *     lastModifiedBy: string,
      *     lastModifiedTime: \Aws\Api\DateTimeResult,

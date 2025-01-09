@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $InstanceIds
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<10, 100> $MaxResults
  */
 class DescribeInstancePatchStatesRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeInstancePatchStatesRequest extends Request
      * @param array{
      *     InstanceIds: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<10, 100>
      * } $args
      */
     public function __construct(array $args)

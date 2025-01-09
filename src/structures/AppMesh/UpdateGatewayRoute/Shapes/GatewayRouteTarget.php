@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateGatewayRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $port
+ * @property int<1, 65535> $port
  * @property GatewayRouteVirtualService $virtualService
  */
 class GatewayRouteTarget extends Shape
 {
     /**
      * @param array{
-     *     port?: int,
+     *     port?: int<1, 65535>,
      *     virtualService: GatewayRouteVirtualService
      * } $args
      */

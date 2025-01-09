@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Tag> $Tags
  * @property string $LifecycleConfigName
  * @property 'Enabled'|'Disabled' $DirectInternetAccess
- * @property int $VolumeSizeInGB
+ * @property int<5, 16384> $VolumeSizeInGB
  * @property list<'ml.eia1.medium'|'ml.eia1.large'|'ml.eia1.xlarge'|'ml.eia2.medium'|'ml.eia2.large'|'ml.eia2.xlarge'> $AcceleratorTypes
  * @property string $DefaultCodeRepository
  * @property list<string> $AdditionalCodeRepositories
@@ -35,7 +35,7 @@ class CreateNotebookInstanceRequest extends Request
      *     Tags?: list<Shapes\Tag>,
      *     LifecycleConfigName?: string,
      *     DirectInternetAccess?: 'Enabled'|'Disabled',
-     *     VolumeSizeInGB?: int,
+     *     VolumeSizeInGB?: int<5, 16384>,
      *     AcceleratorTypes?: list<'ml.eia1.medium'|'ml.eia1.large'|'ml.eia1.xlarge'|'ml.eia2.medium'|'ml.eia2.large'|'ml.eia2.xlarge'>,
      *     DefaultCodeRepository?: string,
      *     AdditionalCodeRepositories?: list<string>,

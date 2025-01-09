@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $TargetGroupArns
  * @property list<string> $Names
  * @property string $Marker
- * @property int $PageSize
+ * @property int<1, 400> $PageSize
  */
 class DescribeTargetGroupsRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeTargetGroupsRequest extends Request
      *     TargetGroupArns?: list<string>,
      *     Names?: list<string>,
      *     Marker?: string,
-     *     PageSize?: int
+     *     PageSize?: int<1, 400>
      * } $args
      */
     public function __construct(array $args = [])

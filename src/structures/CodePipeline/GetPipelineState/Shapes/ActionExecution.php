@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $lastUpdatedBy
  * @property string $externalExecutionId
  * @property string $externalExecutionUrl
- * @property int $percentComplete
+ * @property int<0, 100> $percentComplete
  * @property ErrorDetails $errorDetails
  * @property string $logStreamARN
  */
@@ -29,7 +29,7 @@ class ActionExecution extends Shape
      *     lastUpdatedBy?: string,
      *     externalExecutionId?: string,
      *     externalExecutionUrl?: string,
-     *     percentComplete?: int,
+     *     percentComplete?: int<0, 100>,
      *     errorDetails?: ErrorDetails,
      *     logStreamARN?: string
      * } $args

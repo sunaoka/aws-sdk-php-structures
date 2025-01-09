@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $imageVersionArn
  * @property list<Shapes\Filter> $filters
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  */
 class ListImageBuildVersionsRequest extends Request
@@ -16,7 +16,7 @@ class ListImageBuildVersionsRequest extends Request
      * @param array{
      *     imageVersionArn: string,
      *     filters?: list<Shapes\Filter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string
      * } $args
      */

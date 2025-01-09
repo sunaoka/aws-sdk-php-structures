@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CATALOG'|'DATABASE'|'TABLE'|'DATA_LOCATION'|'LF_TAG'|'LF_TAG_POLICY'|'LF_TAG_POLICY_DATABASE'|'LF_TAG_POLICY_TABLE'|'LF_NAMED_TAG_EXPRESSION' $ResourceType
  * @property Shapes\Resource $Resource
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $IncludeRelated
  */
 class ListPermissionsRequest extends Request
@@ -22,7 +22,7 @@ class ListPermissionsRequest extends Request
      *     ResourceType?: 'CATALOG'|'DATABASE'|'TABLE'|'DATA_LOCATION'|'LF_TAG'|'LF_TAG_POLICY'|'LF_TAG_POLICY_DATABASE'|'LF_TAG_POLICY_TABLE'|'LF_NAMED_TAG_EXPRESSION',
      *     Resource?: Shapes\Resource,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     IncludeRelated?: string
      * } $args
      */

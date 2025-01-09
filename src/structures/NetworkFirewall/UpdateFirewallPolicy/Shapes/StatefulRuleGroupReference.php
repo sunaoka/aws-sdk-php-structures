@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ResourceArn
- * @property int $Priority
+ * @property int<1, 65535> $Priority
  * @property StatefulRuleGroupOverride $Override
  */
 class StatefulRuleGroupReference extends Shape
@@ -14,7 +14,7 @@ class StatefulRuleGroupReference extends Shape
     /**
      * @param array{
      *     ResourceArn: string,
-     *     Priority?: int,
+     *     Priority?: int<1, 65535>,
      *     Override?: StatefulRuleGroupOverride
      * } $args
      */

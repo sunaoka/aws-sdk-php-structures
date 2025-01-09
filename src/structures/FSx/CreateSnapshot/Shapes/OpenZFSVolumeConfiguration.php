@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ParentVolumeId
  * @property string $VolumePath
- * @property int $StorageCapacityReservationGiB
- * @property int $StorageCapacityQuotaGiB
- * @property int $RecordSizeKiB
+ * @property int<0, 2147483647> $StorageCapacityReservationGiB
+ * @property int<0, 2147483647> $StorageCapacityQuotaGiB
+ * @property int<4, 4096> $RecordSizeKiB
  * @property 'NONE'|'ZSTD'|'LZ4' $DataCompressionType
  * @property bool $CopyTagsToSnapshots
  * @property OpenZFSOriginSnapshotConfiguration $OriginSnapshot
@@ -30,9 +30,9 @@ class OpenZFSVolumeConfiguration extends Shape
      * @param array{
      *     ParentVolumeId?: string,
      *     VolumePath?: string,
-     *     StorageCapacityReservationGiB?: int,
-     *     StorageCapacityQuotaGiB?: int,
-     *     RecordSizeKiB?: int,
+     *     StorageCapacityReservationGiB?: int<0, 2147483647>,
+     *     StorageCapacityQuotaGiB?: int<0, 2147483647>,
+     *     RecordSizeKiB?: int<4, 4096>,
      *     DataCompressionType?: 'NONE'|'ZSTD'|'LZ4',
      *     CopyTagsToSnapshots?: bool,
      *     OriginSnapshot?: OpenZFSOriginSnapshotConfiguration,

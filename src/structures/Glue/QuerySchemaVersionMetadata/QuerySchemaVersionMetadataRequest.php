@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SchemaVersionNumber $SchemaVersionNumber
  * @property string $SchemaVersionId
  * @property list<Shapes\MetadataKeyValuePair> $MetadataList
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class QuerySchemaVersionMetadataRequest extends Request
@@ -20,7 +20,7 @@ class QuerySchemaVersionMetadataRequest extends Request
      *     SchemaVersionNumber?: Shapes\SchemaVersionNumber,
      *     SchemaVersionId?: string,
      *     MetadataList?: list<Shapes\MetadataKeyValuePair>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

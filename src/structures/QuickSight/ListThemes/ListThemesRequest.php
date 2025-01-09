@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'QUICKSIGHT'|'CUSTOM'|'ALL' $Type
  */
 class ListThemesRequest extends Request
@@ -16,7 +16,7 @@ class ListThemesRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     Type?: 'QUICKSIGHT'|'CUSTOM'|'ALL'
      * } $args
      */

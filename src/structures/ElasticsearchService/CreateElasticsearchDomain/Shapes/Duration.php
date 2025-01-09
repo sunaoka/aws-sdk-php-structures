@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\CreateElasticsearchDomain\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Value
+ * @property int<1, 24> $Value
  * @property 'HOURS' $Unit
  */
 class Duration extends Shape
 {
     /**
      * @param array{
-     *     Value?: int,
+     *     Value?: int<1, 24>,
      *     Unit?: 'HOURS'
      * } $args
      */

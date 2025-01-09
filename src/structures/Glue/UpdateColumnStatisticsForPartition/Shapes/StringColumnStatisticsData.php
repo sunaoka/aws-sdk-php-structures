@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateColumnStatisticsForPartition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaximumLength
+ * @property int<0, max> $MaximumLength
  * @property double $AverageLength
- * @property int $NumberOfNulls
- * @property int $NumberOfDistinctValues
+ * @property int<0, max> $NumberOfNulls
+ * @property int<0, max> $NumberOfDistinctValues
  */
 class StringColumnStatisticsData extends Shape
 {
     /**
      * @param array{
-     *     MaximumLength: int,
+     *     MaximumLength: int<0, max>,
      *     AverageLength: double,
-     *     NumberOfNulls: int,
-     *     NumberOfDistinctValues: int
+     *     NumberOfNulls: int<0, max>,
+     *     NumberOfDistinctValues: int<0, max>
      * } $args
      */
     public function __construct(array $args)

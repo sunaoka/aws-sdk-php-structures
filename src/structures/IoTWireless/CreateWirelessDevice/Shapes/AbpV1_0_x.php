@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $DevAddr
  * @property SessionKeysAbpV1_0_x $SessionKeys
- * @property int $FCntStart
+ * @property int<0, 65535> $FCntStart
  */
 class AbpV1_0_x extends Shape
 {
@@ -15,7 +15,7 @@ class AbpV1_0_x extends Shape
      * @param array{
      *     DevAddr?: string,
      *     SessionKeys?: SessionKeysAbpV1_0_x,
-     *     FCntStart?: int
+     *     FCntStart?: int<0, 65535>
      * } $args
      */
     public function __construct(array $args = [])

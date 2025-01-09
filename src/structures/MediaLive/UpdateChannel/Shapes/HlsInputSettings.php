@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Bandwidth
- * @property int $BufferSegments
- * @property int $Retries
- * @property int $RetryInterval
+ * @property int<0, max> $Bandwidth
+ * @property int<0, max> $BufferSegments
+ * @property int<0, max> $Retries
+ * @property int<0, max> $RetryInterval
  * @property 'MANIFEST'|'SEGMENTS' $Scte35Source
  */
 class HlsInputSettings extends Shape
 {
     /**
      * @param array{
-     *     Bandwidth?: int,
-     *     BufferSegments?: int,
-     *     Retries?: int,
-     *     RetryInterval?: int,
+     *     Bandwidth?: int<0, max>,
+     *     BufferSegments?: int<0, max>,
+     *     Retries?: int<0, max>,
+     *     RetryInterval?: int<0, max>,
      *     Scte35Source?: 'MANIFEST'|'SEGMENTS'
      * } $args
      */

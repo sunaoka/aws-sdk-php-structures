@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $awsAccountRegion
  * @property string $domainIdentifier
  * @property string $environmentBlueprintIdentifier
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $name
  * @property string $nextToken
  * @property string $projectIdentifier
@@ -22,7 +22,7 @@ class ListEnvironmentProfilesRequest extends Request
      *     awsAccountRegion?: string,
      *     domainIdentifier: string,
      *     environmentBlueprintIdentifier?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     name?: string,
      *     nextToken?: string,
      *     projectIdentifier?: string

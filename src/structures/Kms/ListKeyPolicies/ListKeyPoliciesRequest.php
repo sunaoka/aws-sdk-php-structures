@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $KeyId
- * @property int $Limit
+ * @property int<1, 1000> $Limit
  * @property string $Marker
  */
 class ListKeyPoliciesRequest extends Request
@@ -14,7 +14,7 @@ class ListKeyPoliciesRequest extends Request
     /**
      * @param array{
      *     KeyId: string,
-     *     Limit?: int,
+     *     Limit?: int<1, 1000>,
      *     Marker?: string
      * } $args
      */

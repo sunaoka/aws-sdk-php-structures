@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $jobId
  * @property 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'REJECTED'|'REMOVED'|'CANCELED' $status
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property string $nextToken
  */
 class ListJobExecutionsForJobRequest extends Request
@@ -16,7 +16,7 @@ class ListJobExecutionsForJobRequest extends Request
      * @param array{
      *     jobId: string,
      *     status?: 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'REJECTED'|'REMOVED'|'CANCELED',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     nextToken?: string
      * } $args
      */

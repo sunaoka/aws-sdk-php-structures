@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $ByResourceArn
  * @property 'CREATED'|'PENDING'|'RUNNING'|'ABORTING'|'ABORTED'|'COMPLETED'|'FAILED'|'EXPIRED'|'PARTIAL' $ByState
  * @property string $ByBackupVaultName
@@ -24,7 +24,7 @@ class ListBackupJobsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     ByResourceArn?: string,
      *     ByState?: 'CREATED'|'PENDING'|'RUNNING'|'ABORTING'|'ABORTED'|'COMPLETED'|'FAILED'|'EXPIRED'|'PARTIAL',
      *     ByBackupVaultName?: string,

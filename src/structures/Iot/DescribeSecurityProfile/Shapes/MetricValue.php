@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeSecurityProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $count
+ * @property int<0, max> $count
  * @property list<string> $cidrs
- * @property list<int> $ports
+ * @property list<int<0, 65535>> $ports
  * @property double $number
  * @property list<double> $numbers
  * @property list<string> $strings
@@ -16,9 +16,9 @@ class MetricValue extends Shape
 {
     /**
      * @param array{
-     *     count?: int,
+     *     count?: int<0, max>,
      *     cidrs?: list<string>,
-     *     ports?: list<int>,
+     *     ports?: list<int<0, 65535>>,
      *     number?: double,
      *     numbers?: list<double>,
      *     strings?: list<string>

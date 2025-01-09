@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $BackupVaultName
  * @property string $BackupVaultAccountId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $ByResourceArn
  * @property string $ByResourceType
  * @property string $ByBackupPlanId
@@ -23,7 +23,7 @@ class ListRecoveryPointsByBackupVaultRequest extends Request
      *     BackupVaultName: string,
      *     BackupVaultAccountId?: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     ByResourceArn?: string,
      *     ByResourceType?: string,
      *     ByBackupPlanId?: string,

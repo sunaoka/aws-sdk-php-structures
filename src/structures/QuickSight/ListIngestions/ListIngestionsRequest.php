@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DataSetId
  * @property string $NextToken
  * @property string $AwsAccountId
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListIngestionsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListIngestionsRequest extends Request
      *     DataSetId: string,
      *     NextToken?: string,
      *     AwsAccountId: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Address $Address
  * @property bool $AddressNumberCorrected
  * @property list<double> $Position
- * @property int $Distance
+ * @property int<0, 4294967295> $Distance
  * @property list<double> $MapView
  * @property list<Category> $Categories
  * @property list<FoodType> $FoodTypes
@@ -34,7 +34,7 @@ class SearchNearbyResultItem extends Shape
      *     Address?: Address,
      *     AddressNumberCorrected?: bool,
      *     Position?: list<double>,
-     *     Distance?: int,
+     *     Distance?: int<0, 4294967295>,
      *     MapView?: list<double>,
      *     Categories?: list<Category>,
      *     FoodTypes?: list<FoodType>,

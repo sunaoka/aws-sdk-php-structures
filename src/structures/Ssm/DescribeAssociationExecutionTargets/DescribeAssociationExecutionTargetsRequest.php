@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AssociationId
  * @property string $ExecutionId
  * @property list<Shapes\AssociationExecutionTargetsFilter> $Filters
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class DescribeAssociationExecutionTargetsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeAssociationExecutionTargetsRequest extends Request
      *     AssociationId: string,
      *     ExecutionId: string,
      *     Filters?: list<Shapes\AssociationExecutionTargetsFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

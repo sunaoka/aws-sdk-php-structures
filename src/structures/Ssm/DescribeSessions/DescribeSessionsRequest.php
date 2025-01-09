@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'Active'|'History' $State
- * @property int $MaxResults
+ * @property int<1, 200> $MaxResults
  * @property string $NextToken
  * @property list<Shapes\SessionFilter> $Filters
  */
@@ -15,7 +15,7 @@ class DescribeSessionsRequest extends Request
     /**
      * @param array{
      *     State: 'Active'|'History',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 200>,
      *     NextToken?: string,
      *     Filters?: list<Shapes\SessionFilter>
      * } $args

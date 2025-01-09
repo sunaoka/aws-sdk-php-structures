@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $NextToken
  * @property \Aws\Api\DateTimeResult $StartTimeInclusive
  * @property \Aws\Api\DateTimeResult $EndTimeExclusive
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class GetDevicePositionHistoryRequest extends Request
 {
@@ -21,7 +21,7 @@ class GetDevicePositionHistoryRequest extends Request
      *     NextToken?: string,
      *     StartTimeInclusive?: \Aws\Api\DateTimeResult,
      *     EndTimeExclusive?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

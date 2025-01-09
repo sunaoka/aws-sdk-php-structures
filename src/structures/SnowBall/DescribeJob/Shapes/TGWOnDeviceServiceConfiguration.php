@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SnowBall\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $StorageLimit
+ * @property int<0, max> $StorageLimit
  * @property 'TB' $StorageUnit
  */
 class TGWOnDeviceServiceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     StorageLimit?: int,
+     *     StorageLimit?: int<0, max>,
      *     StorageUnit?: 'TB'
      * } $args
      */

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DEFAULT'|'CUSTOM' $ConfigurationTypeUpdate
- * @property int $ParallelismUpdate
- * @property int $ParallelismPerKPUUpdate
+ * @property int<1, max> $ParallelismUpdate
+ * @property int<1, max> $ParallelismPerKPUUpdate
  * @property bool $AutoScalingEnabledUpdate
  */
 class ParallelismConfigurationUpdate extends Shape
@@ -15,8 +15,8 @@ class ParallelismConfigurationUpdate extends Shape
     /**
      * @param array{
      *     ConfigurationTypeUpdate?: 'DEFAULT'|'CUSTOM',
-     *     ParallelismUpdate?: int,
-     *     ParallelismPerKPUUpdate?: int,
+     *     ParallelismUpdate?: int<1, max>,
+     *     ParallelismPerKPUUpdate?: int<1, max>,
      *     AutoScalingEnabledUpdate?: bool
      * } $args
      */

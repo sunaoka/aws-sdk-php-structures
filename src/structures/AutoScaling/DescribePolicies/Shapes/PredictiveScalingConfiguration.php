@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<PredictiveScalingMetricSpecification> $MetricSpecifications
  * @property 'ForecastAndScale'|'ForecastOnly' $Mode
- * @property int $SchedulingBufferTime
+ * @property int<0, max> $SchedulingBufferTime
  * @property 'HonorMaxCapacity'|'IncreaseMaxCapacity' $MaxCapacityBreachBehavior
- * @property int $MaxCapacityBuffer
+ * @property int<0, 100> $MaxCapacityBuffer
  */
 class PredictiveScalingConfiguration extends Shape
 {
@@ -17,9 +17,9 @@ class PredictiveScalingConfiguration extends Shape
      * @param array{
      *     MetricSpecifications: list<PredictiveScalingMetricSpecification>,
      *     Mode?: 'ForecastAndScale'|'ForecastOnly',
-     *     SchedulingBufferTime?: int,
+     *     SchedulingBufferTime?: int<0, max>,
      *     MaxCapacityBreachBehavior?: 'HonorMaxCapacity'|'IncreaseMaxCapacity',
-     *     MaxCapacityBuffer?: int
+     *     MaxCapacityBuffer?: int<0, 100>
      * } $args
      */
     public function __construct(array $args)

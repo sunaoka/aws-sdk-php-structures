@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property int $TimeoutInSeconds
+ * @property int<0, max> $TimeoutInSeconds
  * @property list<Shapes\PlayerLatencyPolicy> $PlayerLatencyPolicies
  * @property list<Shapes\GameSessionQueueDestination> $Destinations
  * @property Shapes\FilterConfiguration $FilterConfiguration
@@ -19,7 +19,7 @@ class UpdateGameSessionQueueRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     TimeoutInSeconds?: int,
+     *     TimeoutInSeconds?: int<0, max>,
      *     PlayerLatencyPolicies?: list<Shapes\PlayerLatencyPolicy>,
      *     Destinations?: list<Shapes\GameSessionQueueDestination>,
      *     FilterConfiguration?: Shapes\FilterConfiguration,

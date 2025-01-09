@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\DataQualitySummary $DataQualitySummary
  * @property Shapes\IngestedFilesSummary $IngestedFilesSummary
  * @property string $StatusDetail
- * @property int $IngestedDataSize
+ * @property int<0, max> $IngestedDataSize
  * @property \Aws\Api\DateTimeResult $DataStartTime
  * @property \Aws\Api\DateTimeResult $DataEndTime
  * @property string $SourceDatasetArn

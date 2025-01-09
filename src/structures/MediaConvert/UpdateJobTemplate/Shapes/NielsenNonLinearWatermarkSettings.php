@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $CbetSourceId
  * @property string $EpisodeId
  * @property string $MetadataDestination
- * @property int $SourceId
+ * @property int<0, 65534> $SourceId
  * @property 'CLEAN'|'WATERMARKED' $SourceWatermarkStatus
  * @property string $TicServerUrl
  * @property 'RESERVE_UNIQUE_TICS_PER_TRACK'|'SAME_TICS_PER_TRACK' $UniqueTicPerAudioTrack
@@ -28,7 +28,7 @@ class NielsenNonLinearWatermarkSettings extends Shape
      *     CbetSourceId?: string,
      *     EpisodeId?: string,
      *     MetadataDestination?: string,
-     *     SourceId?: int,
+     *     SourceId?: int<0, 65534>,
      *     SourceWatermarkStatus?: 'CLEAN'|'WATERMARKED',
      *     TicServerUrl?: string,
      *     UniqueTicPerAudioTrack?: 'RESERVE_UNIQUE_TICS_PER_TRACK'|'SAME_TICS_PER_TRACK'

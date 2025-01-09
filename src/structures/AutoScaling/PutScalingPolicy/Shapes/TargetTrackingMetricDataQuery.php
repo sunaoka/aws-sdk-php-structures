@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Expression
  * @property TargetTrackingMetricStat $MetricStat
  * @property string $Label
- * @property int $Period
+ * @property int<1, max> $Period
  * @property bool $ReturnData
  */
 class TargetTrackingMetricDataQuery extends Shape
@@ -20,7 +20,7 @@ class TargetTrackingMetricDataQuery extends Shape
      *     Expression?: string,
      *     MetricStat?: TargetTrackingMetricStat,
      *     Label?: string,
-     *     Period?: int,
+     *     Period?: int<1, max>,
      *     ReturnData?: bool
      * } $args
      */

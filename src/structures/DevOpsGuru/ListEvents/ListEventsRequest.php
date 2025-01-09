@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\ListEventsFilters $Filters
- * @property int $MaxResults
+ * @property int<1, 200> $MaxResults
  * @property string $NextToken
  * @property string $AccountId
  */
@@ -15,7 +15,7 @@ class ListEventsRequest extends Request
     /**
      * @param array{
      *     Filters: Shapes\ListEventsFilters,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 200>,
      *     NextToken?: string,
      *     AccountId?: string
      * } $args

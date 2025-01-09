@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int $CapacityBlockExtensionDurationHours
  * @property string $CapacityReservationId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class DescribeCapacityBlockExtensionOfferingsRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeCapacityBlockExtensionOfferingsRequest extends Request
      *     CapacityBlockExtensionDurationHours: int,
      *     CapacityReservationId: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

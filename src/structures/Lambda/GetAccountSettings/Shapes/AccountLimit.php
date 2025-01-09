@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $CodeSizeUnzipped
  * @property int $CodeSizeZipped
  * @property int $ConcurrentExecutions
- * @property int $UnreservedConcurrentExecutions
+ * @property int<0, max> $UnreservedConcurrentExecutions
  */
 class AccountLimit extends Shape
 {
@@ -19,7 +19,7 @@ class AccountLimit extends Shape
      *     CodeSizeUnzipped?: int,
      *     CodeSizeZipped?: int,
      *     ConcurrentExecutions?: int,
-     *     UnreservedConcurrentExecutions?: int
+     *     UnreservedConcurrentExecutions?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

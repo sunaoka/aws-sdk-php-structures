@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FilterArn
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListGatewayInstancesRequest extends Request
@@ -14,7 +14,7 @@ class ListGatewayInstancesRequest extends Request
     /**
      * @param array{
      *     FilterArn?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $target
  * @property bool $recursive
  * @property string $marker
- * @property int $pageSize
+ * @property int<1, 250> $pageSize
  */
 class ListAttachedPoliciesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListAttachedPoliciesRequest extends Request
      *     target: string,
      *     recursive?: bool,
      *     marker?: string,
-     *     pageSize?: int
+     *     pageSize?: int<1, 250>
      * } $args
      */
     public function __construct(array $args)

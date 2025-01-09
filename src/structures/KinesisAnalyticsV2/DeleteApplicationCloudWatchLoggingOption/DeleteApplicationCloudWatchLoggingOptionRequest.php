@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property int $CurrentApplicationVersionId
+ * @property int<1, 999999999> $CurrentApplicationVersionId
  * @property string $CloudWatchLoggingOptionId
  * @property string $ConditionalToken
  */
@@ -15,7 +15,7 @@ class DeleteApplicationCloudWatchLoggingOptionRequest extends Request
     /**
      * @param array{
      *     ApplicationName: string,
-     *     CurrentApplicationVersionId?: int,
+     *     CurrentApplicationVersionId?: int<1, 999999999>,
      *     CloudWatchLoggingOptionId: string,
      *     ConditionalToken?: string
      * } $args

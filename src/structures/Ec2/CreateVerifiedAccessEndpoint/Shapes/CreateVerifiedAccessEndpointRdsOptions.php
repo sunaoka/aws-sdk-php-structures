@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'http'|'https'|'tcp' $Protocol
- * @property int $Port
+ * @property int<1, 65535> $Port
  * @property string $RdsDbInstanceArn
  * @property string $RdsDbClusterArn
  * @property string $RdsDbProxyArn
@@ -18,7 +18,7 @@ class CreateVerifiedAccessEndpointRdsOptions extends Shape
     /**
      * @param array{
      *     Protocol?: 'http'|'https'|'tcp',
-     *     Port?: int,
+     *     Port?: int<1, 65535>,
      *     RdsDbInstanceArn?: string,
      *     RdsDbClusterArn?: string,
      *     RdsDbProxyArn?: string,

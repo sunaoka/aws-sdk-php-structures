@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $EvaluationFormId
- * @property int $EvaluationFormVersion
+ * @property int<1, max> $EvaluationFormVersion
  * @property bool $CreateNewVersion
  * @property string $Title
  * @property string $Description
@@ -21,7 +21,7 @@ class UpdateEvaluationFormRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     EvaluationFormId: string,
-     *     EvaluationFormVersion: int,
+     *     EvaluationFormVersion: int<1, max>,
      *     CreateNewVersion?: bool,
      *     Title: string,
      *     Description?: string,

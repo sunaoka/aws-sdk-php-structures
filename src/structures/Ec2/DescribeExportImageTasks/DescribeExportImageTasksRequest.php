@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
  * @property list<string> $ExportImageTaskIds
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class DescribeExportImageTasksRequest extends Request
@@ -18,7 +18,7 @@ class DescribeExportImageTasksRequest extends Request
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>,
      *     ExportImageTaskIds?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

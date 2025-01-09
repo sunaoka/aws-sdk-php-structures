@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $KeyIdentifier
  * @property string $MessageData
  * @property Shapes\MacAttributes $GenerationAttributes
- * @property int $MacLength
+ * @property int<4, 16> $MacLength
  */
 class GenerateMacRequest extends Request
 {
@@ -17,7 +17,7 @@ class GenerateMacRequest extends Request
      *     KeyIdentifier: string,
      *     MessageData: string,
      *     GenerationAttributes: Shapes\MacAttributes,
-     *     MacLength?: int
+     *     MacLength?: int<4, 16>
      * } $args
      */
     public function __construct(array $args)

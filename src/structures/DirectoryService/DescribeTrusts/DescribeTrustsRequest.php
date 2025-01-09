@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DirectoryId
  * @property list<string> $TrustIds
  * @property string $NextToken
- * @property int $Limit
+ * @property int<0, max> $Limit
  */
 class DescribeTrustsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeTrustsRequest extends Request
      *     DirectoryId?: string,
      *     TrustIds?: list<string>,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

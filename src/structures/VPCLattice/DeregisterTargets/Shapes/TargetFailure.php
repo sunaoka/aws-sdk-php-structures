@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $failureCode
  * @property string $failureMessage
  * @property string $id
- * @property int $port
+ * @property int<1, 65535> $port
  */
 class TargetFailure extends Shape
 {
@@ -17,7 +17,7 @@ class TargetFailure extends Shape
      *     failureCode?: string,
      *     failureMessage?: string,
      *     id?: string,
-     *     port?: int
+     *     port?: int<1, 65535>
      * } $args
      */
     public function __construct(array $args = [])

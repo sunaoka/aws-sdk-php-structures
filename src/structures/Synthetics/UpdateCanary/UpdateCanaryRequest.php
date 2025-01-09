@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RuntimeVersion
  * @property Shapes\CanaryScheduleInput $Schedule
  * @property Shapes\CanaryRunConfigInput $RunConfig
- * @property int $SuccessRetentionPeriodInDays
- * @property int $FailureRetentionPeriodInDays
+ * @property int<1, 1024> $SuccessRetentionPeriodInDays
+ * @property int<1, 1024> $FailureRetentionPeriodInDays
  * @property Shapes\VpcConfigInput $VpcConfig
  * @property Shapes\VisualReferenceInput $VisualReference
  * @property string $ArtifactS3Location
@@ -29,8 +29,8 @@ class UpdateCanaryRequest extends Request
      *     RuntimeVersion?: string,
      *     Schedule?: Shapes\CanaryScheduleInput,
      *     RunConfig?: Shapes\CanaryRunConfigInput,
-     *     SuccessRetentionPeriodInDays?: int,
-     *     FailureRetentionPeriodInDays?: int,
+     *     SuccessRetentionPeriodInDays?: int<1, 1024>,
+     *     FailureRetentionPeriodInDays?: int<1, 1024>,
      *     VpcConfig?: Shapes\VpcConfigInput,
      *     VisualReference?: Shapes\VisualReferenceInput,
      *     ArtifactS3Location?: string,

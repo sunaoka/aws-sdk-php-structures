@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ConnectionArn
  * @property string $InvocationEndpoint
  * @property 'POST'|'GET'|'HEAD'|'OPTIONS'|'PUT'|'PATCH'|'DELETE' $HttpMethod
- * @property int $InvocationRateLimitPerSecond
+ * @property int<1, max> $InvocationRateLimitPerSecond
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  */

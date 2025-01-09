@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress' $PlaceType
  * @property Address $Address
  * @property list<double> $Position
- * @property int $Distance
+ * @property int<0, 4294967295> $Distance
  * @property list<double> $MapView
  * @property list<Category> $Categories
  * @property list<FoodType> $FoodTypes
@@ -28,7 +28,7 @@ class SuggestPlaceResult extends Shape
      *     PlaceType?: 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress',
      *     Address?: Address,
      *     Position?: list<double>,
-     *     Distance?: int,
+     *     Distance?: int<0, 4294967295>,
      *     MapView?: list<double>,
      *     Categories?: list<Category>,
      *     FoodTypes?: list<FoodType>,

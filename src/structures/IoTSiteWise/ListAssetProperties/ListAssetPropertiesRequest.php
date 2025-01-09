@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $assetId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property 'ALL'|'BASE' $filter
  */
 class ListAssetPropertiesRequest extends Request
@@ -16,7 +16,7 @@ class ListAssetPropertiesRequest extends Request
      * @param array{
      *     assetId: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     filter?: 'ALL'|'BASE'
      * } $args
      */

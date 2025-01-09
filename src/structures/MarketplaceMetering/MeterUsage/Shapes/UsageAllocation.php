@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MarketplaceMetering\MeterUsage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AllocatedUsageQuantity
+ * @property int<0, 2147483647> $AllocatedUsageQuantity
  * @property list<Tag> $Tags
  */
 class UsageAllocation extends Shape
 {
     /**
      * @param array{
-     *     AllocatedUsageQuantity: int,
+     *     AllocatedUsageQuantity: int<0, 2147483647>,
      *     Tags?: list<Tag>
      * } $args
      */

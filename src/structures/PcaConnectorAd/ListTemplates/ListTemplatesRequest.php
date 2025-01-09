@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConnectorArn
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListTemplatesRequest extends Request
@@ -14,7 +14,7 @@ class ListTemplatesRequest extends Request
     /**
      * @param array{
      *     ConnectorArn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

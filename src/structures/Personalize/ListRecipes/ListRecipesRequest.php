@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'SERVICE' $recipeProvider
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property 'ECOMMERCE'|'VIDEO_ON_DEMAND' $domain
  */
 class ListRecipesRequest extends Request
@@ -16,7 +16,7 @@ class ListRecipesRequest extends Request
      * @param array{
      *     recipeProvider?: 'SERVICE',
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     domain?: 'ECOMMERCE'|'VIDEO_ON_DEMAND'
      * } $args
      */

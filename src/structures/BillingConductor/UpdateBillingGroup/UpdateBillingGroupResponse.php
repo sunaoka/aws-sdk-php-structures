@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $Description
  * @property string $PrimaryAccountId
  * @property string $PricingPlanArn
- * @property int $Size
+ * @property int<0, max> $Size
  * @property int $LastModifiedTime
  * @property 'ACTIVE'|'PRIMARY_ACCOUNT_MISSING' $Status
  * @property string $StatusReason

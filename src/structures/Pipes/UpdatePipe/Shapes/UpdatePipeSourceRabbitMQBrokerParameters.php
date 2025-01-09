@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property MQBrokerAccessCredentials $Credentials
- * @property int $BatchSize
- * @property int $MaximumBatchingWindowInSeconds
+ * @property int<1, 10000> $BatchSize
+ * @property int<0, 300> $MaximumBatchingWindowInSeconds
  */
 class UpdatePipeSourceRabbitMQBrokerParameters extends Shape
 {
     /**
      * @param array{
      *     Credentials: MQBrokerAccessCredentials,
-     *     BatchSize?: int,
-     *     MaximumBatchingWindowInSeconds?: int
+     *     BatchSize?: int<1, 10000>,
+     *     MaximumBatchingWindowInSeconds?: int<0, 300>
      * } $args
      */
     public function __construct(array $args)

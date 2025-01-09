@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\EntityResolution\ListIdMappingJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  * @property string $workflowName
  */
@@ -13,7 +13,7 @@ class ListIdMappingJobsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string,
      *     workflowName: string
      * } $args

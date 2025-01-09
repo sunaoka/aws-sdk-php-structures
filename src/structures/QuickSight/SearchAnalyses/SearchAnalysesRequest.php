@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property list<Shapes\AnalysisSearchFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class SearchAnalysesRequest extends Request
 {
@@ -17,7 +17,7 @@ class SearchAnalysesRequest extends Request
      *     AwsAccountId: string,
      *     Filters: list<Shapes\AnalysisSearchFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

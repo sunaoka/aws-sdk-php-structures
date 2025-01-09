@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $fileName
- * @property int $fileType
+ * @property int<0, 255> $fileType
  * @property string $fileVersion
  * @property FileLocation $fileLocation
  * @property CodeSigning $codeSigning
@@ -17,7 +17,7 @@ class OTAUpdateFile extends Shape
     /**
      * @param array{
      *     fileName?: string,
-     *     fileType?: int,
+     *     fileType?: int<0, 255>,
      *     fileVersion?: string,
      *     fileLocation?: FileLocation,
      *     codeSigning?: CodeSigning,

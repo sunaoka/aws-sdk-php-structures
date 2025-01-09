@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $LoadBalancerArn
  * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE' $Protocol
- * @property int $Port
+ * @property int<1, 65535> $Port
  * @property string $SslPolicy
  * @property list<Shapes\Certificate> $Certificates
  * @property list<Shapes\Action> $DefaultActions
@@ -21,7 +21,7 @@ class CreateListenerRequest extends Request
      * @param array{
      *     LoadBalancerArn: string,
      *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE',
-     *     Port?: int,
+     *     Port?: int<1, 65535>,
      *     SslPolicy?: string,
      *     Certificates?: list<Shapes\Certificate>,
      *     DefaultActions: list<Shapes\Action>,

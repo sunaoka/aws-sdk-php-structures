@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $WorkGroup
  * @property Shapes\EngineConfiguration $EngineConfiguration
  * @property string $NotebookVersion
- * @property int $SessionIdleTimeoutInMinutes
+ * @property int<1, 480> $SessionIdleTimeoutInMinutes
  * @property string $ClientRequestToken
  */
 class StartSessionRequest extends Request
@@ -20,7 +20,7 @@ class StartSessionRequest extends Request
      *     WorkGroup: string,
      *     EngineConfiguration: Shapes\EngineConfiguration,
      *     NotebookVersion?: string,
-     *     SessionIdleTimeoutInMinutes?: int,
+     *     SessionIdleTimeoutInMinutes?: int<1, 480>,
      *     ClientRequestToken?: string
      * } $args
      */

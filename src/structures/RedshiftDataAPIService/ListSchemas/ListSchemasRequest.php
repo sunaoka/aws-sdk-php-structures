@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ConnectedDatabase
  * @property string $Database
  * @property string $DbUser
- * @property int $MaxResults
+ * @property int<0, 1000> $MaxResults
  * @property string $NextToken
  * @property string $SchemaPattern
  * @property string $SecretArn
@@ -23,7 +23,7 @@ class ListSchemasRequest extends Request
      *     ConnectedDatabase?: string,
      *     Database: string,
      *     DbUser?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 1000>,
      *     NextToken?: string,
      *     SchemaPattern?: string,
      *     SecretArn?: string,

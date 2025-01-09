@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Hours'|'Days'|'Weeks' $timeDimension
- * @property int $timeValue
+ * @property int<1, 24> $timeValue
  */
 class RelativeAggregationDuration extends Shape
 {
     /**
      * @param array{
      *     timeDimension: 'Hours'|'Days'|'Weeks',
-     *     timeValue: int
+     *     timeValue: int<1, 24>
      * } $args
      */
     public function __construct(array $args)

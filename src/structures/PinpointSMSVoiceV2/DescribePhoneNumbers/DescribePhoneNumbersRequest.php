@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $PhoneNumberIds
  * @property list<Shapes\PhoneNumberFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'SELF'|'SHARED' $Owner
  */
 class DescribePhoneNumbersRequest extends Request
@@ -18,7 +18,7 @@ class DescribePhoneNumbersRequest extends Request
      *     PhoneNumberIds?: list<string>,
      *     Filters?: list<Shapes\PhoneNumberFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     Owner?: 'SELF'|'SHARED'
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $Start
  * @property \Aws\Api\DateTimeResult $End
  * @property string $Marker
- * @property int $MaxItems
+ * @property int<min, 100> $MaxItems
  */
 class ViewBillingRequest extends Request
 {
@@ -17,7 +17,7 @@ class ViewBillingRequest extends Request
      *     Start?: \Aws\Api\DateTimeResult,
      *     End?: \Aws\Api\DateTimeResult,
      *     Marker?: string,
-     *     MaxItems?: int
+     *     MaxItems?: int<min, 100>
      * } $args
      */
     public function __construct(array $args = [])

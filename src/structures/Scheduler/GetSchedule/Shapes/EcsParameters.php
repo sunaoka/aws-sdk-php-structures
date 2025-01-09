@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'TASK_DEFINITION' $PropagateTags
  * @property string $ReferenceId
  * @property list<array<string, string>> $Tags
- * @property int $TaskCount
+ * @property int<1, 10> $TaskCount
  * @property string $TaskDefinitionArn
  */
 class EcsParameters extends Shape
@@ -36,7 +36,7 @@ class EcsParameters extends Shape
      *     PropagateTags?: 'TASK_DEFINITION',
      *     ReferenceId?: string,
      *     Tags?: list<array<string, string>>,
-     *     TaskCount?: int,
+     *     TaskCount?: int<1, 10>,
      *     TaskDefinitionArn: string
      * } $args
      */

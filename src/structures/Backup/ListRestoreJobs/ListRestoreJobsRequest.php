@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $ByAccountId
  * @property string $ByResourceType
  * @property \Aws\Api\DateTimeResult $ByCreatedBefore
@@ -21,7 +21,7 @@ class ListRestoreJobsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     ByAccountId?: string,
      *     ByResourceType?: string,
      *     ByCreatedBefore?: \Aws\Api\DateTimeResult,

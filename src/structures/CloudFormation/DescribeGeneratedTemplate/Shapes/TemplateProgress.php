@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudFormation\DescribeGeneratedTemplate\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ResourcesSucceeded
- * @property int $ResourcesFailed
- * @property int $ResourcesProcessing
- * @property int $ResourcesPending
+ * @property int<0, max> $ResourcesSucceeded
+ * @property int<0, max> $ResourcesFailed
+ * @property int<0, max> $ResourcesProcessing
+ * @property int<0, max> $ResourcesPending
  */
 class TemplateProgress extends Shape
 {
     /**
      * @param array{
-     *     ResourcesSucceeded?: int,
-     *     ResourcesFailed?: int,
-     *     ResourcesProcessing?: int,
-     *     ResourcesPending?: int
+     *     ResourcesSucceeded?: int<0, max>,
+     *     ResourcesFailed?: int<0, max>,
+     *     ResourcesProcessing?: int<0, max>,
+     *     ResourcesPending?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

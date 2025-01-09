@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Iot\GetBucketsAggregation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maxBuckets
+ * @property int<1, 10000> $maxBuckets
  */
 class TermsAggregation extends Shape
 {
     /**
-     * @param array{maxBuckets?: int} $args
+     * @param array{maxBuckets?: int<1, 10000>} $args
      */
     public function __construct(array $args = [])
     {

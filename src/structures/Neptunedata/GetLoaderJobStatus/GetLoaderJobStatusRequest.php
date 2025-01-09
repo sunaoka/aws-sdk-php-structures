@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $loadId
  * @property bool $details
  * @property bool $errors
- * @property int $page
- * @property int $errorsPerPage
+ * @property int<1, max> $page
+ * @property int<1, max> $errorsPerPage
  */
 class GetLoaderJobStatusRequest extends Request
 {
@@ -18,8 +18,8 @@ class GetLoaderJobStatusRequest extends Request
      *     loadId: string,
      *     details?: bool,
      *     errors?: bool,
-     *     page?: int,
-     *     errorsPerPage?: int
+     *     page?: int<1, max>,
+     *     errorsPerPage?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

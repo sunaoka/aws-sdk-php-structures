@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\ListSessions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, max> $maxResults
  * @property string $nextToken
  * @property string $portalId
  * @property string $sessionId
@@ -17,7 +17,7 @@ class ListSessionsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, max>,
      *     nextToken?: string,
      *     portalId: string,
      *     sessionId?: string,

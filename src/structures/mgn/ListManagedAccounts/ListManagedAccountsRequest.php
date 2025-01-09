@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\mgn\ListManagedAccounts;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListManagedAccountsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

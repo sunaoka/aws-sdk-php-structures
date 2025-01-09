@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Bedrock\GetEvaluationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $numberOfResults
+ * @property int<1, 100> $numberOfResults
  * @property 'HYBRID'|'SEMANTIC' $overrideSearchType
  * @property RetrievalFilter $filter
  */
@@ -13,7 +13,7 @@ class KnowledgeBaseVectorSearchConfiguration extends Shape
 {
     /**
      * @param array{
-     *     numberOfResults?: int,
+     *     numberOfResults?: int<1, 100>,
      *     overrideSearchType?: 'HYBRID'|'SEMANTIC',
      *     filter?: RetrievalFilter
      * } $args

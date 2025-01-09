@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Arn
  * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property int $VersionNumber
+ * @property int<1, max> $VersionNumber
  * @property 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED' $Status
  * @property string $SourceEntityArn
  * @property string $Description
@@ -18,7 +18,7 @@ class DashboardVersionSummary extends Shape
      * @param array{
      *     Arn?: string,
      *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     VersionNumber?: int,
+     *     VersionNumber?: int<1, max>,
      *     Status?: 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED',
      *     SourceEntityArn?: string,
      *     Description?: string

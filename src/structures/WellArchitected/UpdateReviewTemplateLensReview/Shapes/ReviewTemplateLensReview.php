@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ReviewTemplatePillarReviewSummary> $PillarReviewSummaries
  * @property \Aws\Api\DateTimeResult $UpdatedAt
  * @property string $Notes
- * @property array<'UNANSWERED'|'ANSWERED', int> $QuestionCounts
+ * @property array<'UNANSWERED'|'ANSWERED', int<0, max>> $QuestionCounts
  * @property string $NextToken
  */
 class ReviewTemplateLensReview extends Shape
@@ -28,7 +28,7 @@ class ReviewTemplateLensReview extends Shape
      *     PillarReviewSummaries?: list<ReviewTemplatePillarReviewSummary>,
      *     UpdatedAt?: \Aws\Api\DateTimeResult,
      *     Notes?: string,
-     *     QuestionCounts?: array<'UNANSWERED'|'ANSWERED', int>,
+     *     QuestionCounts?: array<'UNANSWERED'|'ANSWERED', int<0, max>>,
      *     NextToken?: string
      * } $args
      */

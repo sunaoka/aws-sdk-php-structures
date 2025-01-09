@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListStudioLifecycleConfigs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property string $NameContains
  * @property 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab' $AppTypeEquals
@@ -20,7 +20,7 @@ class ListStudioLifecycleConfigsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     NameContains?: string,
      *     AppTypeEquals?: 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab',

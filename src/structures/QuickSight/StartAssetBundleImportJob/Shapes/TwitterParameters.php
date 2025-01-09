@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Query
- * @property int $MaxRows
+ * @property int<1, max> $MaxRows
  */
 class TwitterParameters extends Shape
 {
     /**
      * @param array{
      *     Query: string,
-     *     MaxRows: int
+     *     MaxRows: int<1, max>
      * } $args
      */
     public function __construct(array $args)

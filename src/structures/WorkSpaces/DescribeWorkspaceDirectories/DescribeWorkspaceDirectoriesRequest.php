@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $DirectoryIds
  * @property list<string> $WorkspaceDirectoryNames
- * @property int $Limit
+ * @property int<1, 25> $Limit
  * @property string $NextToken
  * @property list<Shapes\DescribeWorkspaceDirectoriesFilter> $Filters
  */
@@ -17,7 +17,7 @@ class DescribeWorkspaceDirectoriesRequest extends Request
      * @param array{
      *     DirectoryIds?: list<string>,
      *     WorkspaceDirectoryNames?: list<string>,
-     *     Limit?: int,
+     *     Limit?: int<1, 25>,
      *     NextToken?: string,
      *     Filters?: list<Shapes\DescribeWorkspaceDirectoriesFilter>
      * } $args

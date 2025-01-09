@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $SinkArn
  * @property 'KinesisVideoStreamPool' $SinkType
- * @property int $ReservedStreamCapacity
+ * @property int<1, 10> $ReservedStreamCapacity
  * @property 'MixedAudio'|'IndividualAudio' $MediaStreamType
  */
 class MediaStreamSink extends Shape
@@ -16,7 +16,7 @@ class MediaStreamSink extends Shape
      * @param array{
      *     SinkArn: string,
      *     SinkType: 'KinesisVideoStreamPool',
-     *     ReservedStreamCapacity: int,
+     *     ReservedStreamCapacity: int<1, 10>,
      *     MediaStreamType: 'MixedAudio'|'IndividualAudio'
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\DeleteChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Gain
- * @property int $InputChannel
+ * @property int<-60, 6> $Gain
+ * @property int<0, 15> $InputChannel
  */
 class InputChannelLevel extends Shape
 {
     /**
      * @param array{
-     *     Gain: int,
-     *     InputChannel: int
+     *     Gain: int<-60, 6>,
+     *     InputChannel: int<0, 15>
      * } $args
      */
     public function __construct(array $args)

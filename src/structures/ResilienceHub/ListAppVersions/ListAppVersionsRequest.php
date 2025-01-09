@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $appArn
  * @property \Aws\Api\DateTimeResult $endTime
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property \Aws\Api\DateTimeResult $startTime
  */
@@ -17,7 +17,7 @@ class ListAppVersionsRequest extends Request
      * @param array{
      *     appArn: string,
      *     endTime?: \Aws\Api\DateTimeResult,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     startTime?: \Aws\Api\DateTimeResult
      * } $args

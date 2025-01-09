@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'OnDemand'|'Provisioned' $ThroughputMode
- * @property int $ProvisionedReadCapacityUnits
- * @property int $ProvisionedWriteCapacityUnits
+ * @property int<0, 10000000> $ProvisionedReadCapacityUnits
+ * @property int<0, 10000000> $ProvisionedWriteCapacityUnits
  */
 class ThroughputConfigDescription extends Shape
 {
     /**
      * @param array{
      *     ThroughputMode: 'OnDemand'|'Provisioned',
-     *     ProvisionedReadCapacityUnits?: int,
-     *     ProvisionedWriteCapacityUnits?: int
+     *     ProvisionedReadCapacityUnits?: int<0, 10000000>,
+     *     ProvisionedWriteCapacityUnits?: int<0, 10000000>
      * } $args
      */
     public function __construct(array $args)

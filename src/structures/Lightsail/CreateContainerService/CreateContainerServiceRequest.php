@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $serviceName
  * @property 'nano'|'micro'|'small'|'medium'|'large'|'xlarge' $power
- * @property int $scale
+ * @property int<1, 20> $scale
  * @property list<Shapes\Tag> $tags
  * @property array<string, list<string>> $publicDomainNames
  * @property Shapes\ContainerServiceDeploymentRequest $deployment
@@ -19,7 +19,7 @@ class CreateContainerServiceRequest extends Request
      * @param array{
      *     serviceName: string,
      *     power: 'nano'|'micro'|'small'|'medium'|'large'|'xlarge',
-     *     scale: int,
+     *     scale: int<1, 20>,
      *     tags?: list<Shapes\Tag>,
      *     publicDomainNames?: array<string, list<string>>,
      *     deployment?: Shapes\ContainerServiceDeploymentRequest,

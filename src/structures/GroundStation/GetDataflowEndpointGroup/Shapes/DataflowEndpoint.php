@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property SocketAddress $address
- * @property int $mtu
+ * @property int<1400, 1500> $mtu
  * @property string $name
  * @property 'created'|'creating'|'deleted'|'deleting'|'failed' $status
  */
@@ -15,7 +15,7 @@ class DataflowEndpoint extends Shape
     /**
      * @param array{
      *     address?: SocketAddress,
-     *     mtu?: int,
+     *     mtu?: int<1400, 1500>,
      *     name?: string,
      *     status?: 'created'|'creating'|'deleted'|'deleting'|'failed'
      * } $args

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $QueryStartDate
  * @property \Aws\Api\DateTimeResult $QueryEndDate
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListWorkflowsRequest extends Request
 {
@@ -23,7 +23,7 @@ class ListWorkflowsRequest extends Request
      *     QueryStartDate?: \Aws\Api\DateTimeResult,
      *     QueryEndDate?: \Aws\Api\DateTimeResult,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

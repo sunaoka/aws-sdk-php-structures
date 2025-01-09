@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $TopicName
  * @property 'TRIM_HORIZON'|'LATEST' $StartingPosition
- * @property int $BatchSize
- * @property int $MaximumBatchingWindowInSeconds
+ * @property int<1, 10000> $BatchSize
+ * @property int<0, 300> $MaximumBatchingWindowInSeconds
  * @property string $ConsumerGroupID
  * @property MSKAccessCredentials $Credentials
  */
@@ -18,8 +18,8 @@ class PipeSourceManagedStreamingKafkaParameters extends Shape
      * @param array{
      *     TopicName: string,
      *     StartingPosition?: 'TRIM_HORIZON'|'LATEST',
-     *     BatchSize?: int,
-     *     MaximumBatchingWindowInSeconds?: int,
+     *     BatchSize?: int<1, 10000>,
+     *     MaximumBatchingWindowInSeconds?: int<0, 300>,
      *     ConsumerGroupID?: string,
      *     Credentials?: MSKAccessCredentials
      * } $args

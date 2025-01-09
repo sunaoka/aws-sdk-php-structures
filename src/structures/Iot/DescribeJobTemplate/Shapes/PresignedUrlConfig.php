@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $roleArn
- * @property int $expiresInSec
+ * @property int<60, 3600> $expiresInSec
  */
 class PresignedUrlConfig extends Shape
 {
     /**
      * @param array{
      *     roleArn?: string,
-     *     expiresInSec?: int
+     *     expiresInSec?: int<60, 3600>
      * } $args
      */
     public function __construct(array $args = [])

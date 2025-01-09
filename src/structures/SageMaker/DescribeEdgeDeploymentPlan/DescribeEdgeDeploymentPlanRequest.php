@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $EdgeDeploymentPlanName
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<min, 10> $MaxResults
  */
 class DescribeEdgeDeploymentPlanRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeEdgeDeploymentPlanRequest extends Request
      * @param array{
      *     EdgeDeploymentPlanName: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<min, 10>
      * } $args
      */
     public function __construct(array $args)

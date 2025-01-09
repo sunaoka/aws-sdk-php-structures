@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AcceleratorArn
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListCustomRoutingListenersRequest extends Request
@@ -14,7 +14,7 @@ class ListCustomRoutingListenersRequest extends Request
     /**
      * @param array{
      *     AcceleratorArn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

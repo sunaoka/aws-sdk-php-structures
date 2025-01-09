@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'RESOURCE'|'MODULE'|'HOOK' $Type
  * @property string $TypeName
  * @property string $Arn
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property 'LIVE'|'DEPRECATED' $DeprecatedStatus
  * @property string $PublisherId
@@ -20,7 +20,7 @@ class ListTypeVersionsRequest extends Request
      *     Type?: 'RESOURCE'|'MODULE'|'HOOK',
      *     TypeName?: string,
      *     Arn?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     DeprecatedStatus?: 'LIVE'|'DEPRECATED',
      *     PublisherId?: string

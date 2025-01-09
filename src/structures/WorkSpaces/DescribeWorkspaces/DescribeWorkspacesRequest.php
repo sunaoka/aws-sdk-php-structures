@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DirectoryId
  * @property string $UserName
  * @property string $BundleId
- * @property int $Limit
+ * @property int<1, 25> $Limit
  * @property string $NextToken
  * @property string $WorkspaceName
  */
@@ -21,7 +21,7 @@ class DescribeWorkspacesRequest extends Request
      *     DirectoryId?: string,
      *     UserName?: string,
      *     BundleId?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, 25>,
      *     NextToken?: string,
      *     WorkspaceName?: string
      * } $args

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'optional'|'required' $HttpTokens
- * @property int $HttpPutResponseHopLimit
+ * @property int<1, 64> $HttpPutResponseHopLimit
  * @property 'disabled'|'enabled' $HttpEndpoint
  */
 class InstanceMetadataOptions extends Shape
@@ -14,7 +14,7 @@ class InstanceMetadataOptions extends Shape
     /**
      * @param array{
      *     HttpTokens?: 'optional'|'required',
-     *     HttpPutResponseHopLimit?: int,
+     *     HttpPutResponseHopLimit?: int<1, 64>,
      *     HttpEndpoint?: 'disabled'|'enabled'
      * } $args
      */

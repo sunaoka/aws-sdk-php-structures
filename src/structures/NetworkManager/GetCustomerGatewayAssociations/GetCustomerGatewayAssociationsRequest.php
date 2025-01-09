@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GlobalNetworkId
  * @property list<string> $CustomerGatewayArns
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class GetCustomerGatewayAssociationsRequest extends Request
@@ -16,7 +16,7 @@ class GetCustomerGatewayAssociationsRequest extends Request
      * @param array{
      *     GlobalNetworkId: string,
      *     CustomerGatewayArns?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

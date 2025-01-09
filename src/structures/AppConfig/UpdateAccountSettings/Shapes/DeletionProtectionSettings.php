@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property int $ProtectionPeriodInMinutes
+ * @property int<15, 1440> $ProtectionPeriodInMinutes
  */
 class DeletionProtectionSettings extends Shape
 {
     /**
      * @param array{
      *     Enabled?: bool,
-     *     ProtectionPeriodInMinutes?: int
+     *     ProtectionPeriodInMinutes?: int<15, 1440>
      * } $args
      */
     public function __construct(array $args = [])

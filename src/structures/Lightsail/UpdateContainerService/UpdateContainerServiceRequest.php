@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $serviceName
  * @property 'nano'|'micro'|'small'|'medium'|'large'|'xlarge' $power
- * @property int $scale
+ * @property int<1, 20> $scale
  * @property bool $isDisabled
  * @property array<string, list<string>> $publicDomainNames
  * @property Shapes\PrivateRegistryAccessRequest $privateRegistryAccess
@@ -18,7 +18,7 @@ class UpdateContainerServiceRequest extends Request
      * @param array{
      *     serviceName: string,
      *     power?: 'nano'|'micro'|'small'|'medium'|'large'|'xlarge',
-     *     scale?: int,
+     *     scale?: int<1, 20>,
      *     isDisabled?: bool,
      *     publicDomainNames?: array<string, list<string>>,
      *     privateRegistryAccess?: Shapes\PrivateRegistryAccessRequest

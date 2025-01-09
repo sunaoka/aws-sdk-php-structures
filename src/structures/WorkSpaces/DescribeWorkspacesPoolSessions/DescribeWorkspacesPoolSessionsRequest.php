@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $PoolId
  * @property string $UserId
- * @property int $Limit
+ * @property int<1, 50> $Limit
  * @property string $NextToken
  */
 class DescribeWorkspacesPoolSessionsRequest extends Request
@@ -16,7 +16,7 @@ class DescribeWorkspacesPoolSessionsRequest extends Request
      * @param array{
      *     PoolId: string,
      *     UserId?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

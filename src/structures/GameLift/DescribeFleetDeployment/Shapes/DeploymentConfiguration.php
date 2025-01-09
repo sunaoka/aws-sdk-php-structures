@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'WITH_PROTECTION'|'IGNORE_PROTECTION' $ProtectionStrategy
- * @property int $MinimumHealthyPercentage
+ * @property int<30, 75> $MinimumHealthyPercentage
  * @property 'MAINTAIN'|'ROLLBACK' $ImpairmentStrategy
  */
 class DeploymentConfiguration extends Shape
@@ -14,7 +14,7 @@ class DeploymentConfiguration extends Shape
     /**
      * @param array{
      *     ProtectionStrategy?: 'WITH_PROTECTION'|'IGNORE_PROTECTION',
-     *     MinimumHealthyPercentage?: int,
+     *     MinimumHealthyPercentage?: int<30, 75>,
      *     ImpairmentStrategy?: 'MAINTAIN'|'ROLLBACK'
      * } $args
      */

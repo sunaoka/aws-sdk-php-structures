@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\LandingZoneOperationFilter $filter
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListLandingZoneOperationsRequest extends Request
@@ -14,7 +14,7 @@ class ListLandingZoneOperationsRequest extends Request
     /**
      * @param array{
      *     filter?: Shapes\LandingZoneOperationFilter,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

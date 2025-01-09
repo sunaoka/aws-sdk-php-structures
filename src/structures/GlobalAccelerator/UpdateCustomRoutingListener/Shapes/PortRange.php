@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\UpdateCustomRoutingListener\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $FromPort
- * @property int $ToPort
+ * @property int<1, 65535> $FromPort
+ * @property int<1, 65535> $ToPort
  */
 class PortRange extends Shape
 {
     /**
      * @param array{
-     *     FromPort?: int,
-     *     ToPort?: int
+     *     FromPort?: int<1, 65535>,
+     *     ToPort?: int<1, 65535>
      * } $args
      */
     public function __construct(array $args = [])

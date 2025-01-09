@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $offeringId
  * @property 'All Upfront'|'Partial Upfront'|'No Upfront' $paymentOption
  * @property 'Compute'|'EC2Instance'|'SageMaker' $planType
- * @property int $durationSeconds
+ * @property int<0, max> $durationSeconds
  * @property 'CNY'|'USD' $currency
  * @property string $planDescription
  */
@@ -19,7 +19,7 @@ class ParentSavingsPlanOffering extends Shape
      *     offeringId?: string,
      *     paymentOption?: 'All Upfront'|'Partial Upfront'|'No Upfront',
      *     planType?: 'Compute'|'EC2Instance'|'SageMaker',
-     *     durationSeconds?: int,
+     *     durationSeconds?: int<0, max>,
      *     currency?: 'CNY'|'USD',
      *     planDescription?: string
      * } $args

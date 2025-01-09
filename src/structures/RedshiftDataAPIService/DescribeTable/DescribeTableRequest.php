@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ConnectedDatabase
  * @property string $Database
  * @property string $DbUser
- * @property int $MaxResults
+ * @property int<0, 1000> $MaxResults
  * @property string $NextToken
  * @property string $Schema
  * @property string $SecretArn
@@ -24,7 +24,7 @@ class DescribeTableRequest extends Request
      *     ConnectedDatabase?: string,
      *     Database: string,
      *     DbUser?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 1000>,
      *     NextToken?: string,
      *     Schema?: string,
      *     SecretArn?: string,

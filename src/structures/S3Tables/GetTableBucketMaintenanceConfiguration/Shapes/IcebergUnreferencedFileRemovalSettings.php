@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Tables\GetTableBucketMaintenanceConfiguration
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $unreferencedDays
- * @property int $nonCurrentDays
+ * @property int<1, 2147483647> $unreferencedDays
+ * @property int<1, 2147483647> $nonCurrentDays
  */
 class IcebergUnreferencedFileRemovalSettings extends Shape
 {
     /**
      * @param array{
-     *     unreferencedDays?: int,
-     *     nonCurrentDays?: int
+     *     unreferencedDays?: int<1, 2147483647>,
+     *     nonCurrentDays?: int<1, 2147483647>
      * } $args
      */
     public function __construct(array $args = [])

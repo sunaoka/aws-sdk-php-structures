@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property array<'STATUS', list<string>> $filters
- * @property int $maxResults
+ * @property int<1, 20> $maxResults
  * @property string $startToken
  */
 class ListNetworksRequest extends Request
@@ -14,7 +14,7 @@ class ListNetworksRequest extends Request
     /**
      * @param array{
      *     filters?: array<'STATUS', list<string>>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 20>,
      *     startToken?: string
      * } $args
      */

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ConnectionArn
  * @property string $InvocationEndpoint
  * @property 'POST'|'GET'|'HEAD'|'OPTIONS'|'PUT'|'PATCH'|'DELETE' $HttpMethod
- * @property int $InvocationRateLimitPerSecond
+ * @property int<1, max> $InvocationRateLimitPerSecond
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  */
@@ -25,7 +25,7 @@ class ApiDestination extends Shape
      *     ConnectionArn?: string,
      *     InvocationEndpoint?: string,
      *     HttpMethod?: 'POST'|'GET'|'HEAD'|'OPTIONS'|'PUT'|'PATCH'|'DELETE',
-     *     InvocationRateLimitPerSecond?: int,
+     *     InvocationRateLimitPerSecond?: int<1, max>,
      *     CreationTime?: \Aws\Api\DateTimeResult,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult
      * } $args

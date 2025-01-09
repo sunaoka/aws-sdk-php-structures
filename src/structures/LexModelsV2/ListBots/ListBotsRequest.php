@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\BotSortBy $sortBy
  * @property list<Shapes\BotFilter> $filters
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListBotsRequest extends Request
@@ -16,7 +16,7 @@ class ListBotsRequest extends Request
      * @param array{
      *     sortBy?: Shapes\BotSortBy,
      *     filters?: list<Shapes\BotFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

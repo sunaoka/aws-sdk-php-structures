@@ -15,8 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property string $LastModifiedRegion
- * @property int $PeriodicSessionDuration
- * @property int $MaxSessionDuration
+ * @property int<10, 60> $PeriodicSessionDuration
+ * @property int<360, 720> $MaxSessionDuration
  */
 class AuthenticationProfile extends Shape
 {
@@ -32,8 +32,8 @@ class AuthenticationProfile extends Shape
      *     CreatedTime?: \Aws\Api\DateTimeResult,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult,
      *     LastModifiedRegion?: string,
-     *     PeriodicSessionDuration?: int,
-     *     MaxSessionDuration?: int
+     *     PeriodicSessionDuration?: int<10, 60>,
+     *     MaxSessionDuration?: int<360, 720>
      * } $args
      */
     public function __construct(array $args = [])

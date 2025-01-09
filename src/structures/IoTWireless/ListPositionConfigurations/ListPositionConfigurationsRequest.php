@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'WirelessDevice'|'WirelessGateway' $ResourceType
- * @property int $MaxResults
+ * @property int<0, 250> $MaxResults
  * @property string $NextToken
  */
 class ListPositionConfigurationsRequest extends Request
@@ -14,7 +14,7 @@ class ListPositionConfigurationsRequest extends Request
     /**
      * @param array{
      *     ResourceType?: 'WirelessDevice'|'WirelessGateway',
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 250>,
      *     NextToken?: string
      * } $args
      */

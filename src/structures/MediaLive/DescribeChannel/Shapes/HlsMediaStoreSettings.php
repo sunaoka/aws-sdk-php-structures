@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ConnectionRetryInterval
- * @property int $FilecacheDuration
+ * @property int<0, max> $ConnectionRetryInterval
+ * @property int<0, 600> $FilecacheDuration
  * @property 'TEMPORAL' $MediaStoreStorageClass
- * @property int $NumRetries
- * @property int $RestartDelay
+ * @property int<0, max> $NumRetries
+ * @property int<0, 15> $RestartDelay
  */
 class HlsMediaStoreSettings extends Shape
 {
     /**
      * @param array{
-     *     ConnectionRetryInterval?: int,
-     *     FilecacheDuration?: int,
+     *     ConnectionRetryInterval?: int<0, max>,
+     *     FilecacheDuration?: int<0, 600>,
      *     MediaStoreStorageClass?: 'TEMPORAL',
-     *     NumRetries?: int,
-     *     RestartDelay?: int
+     *     NumRetries?: int<0, max>,
+     *     RestartDelay?: int<0, 15>
      * } $args
      */
     public function __construct(array $args = [])

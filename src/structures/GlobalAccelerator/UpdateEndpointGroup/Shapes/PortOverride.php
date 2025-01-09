@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\UpdateEndpointGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ListenerPort
- * @property int $EndpointPort
+ * @property int<1, 65535> $ListenerPort
+ * @property int<1, 65535> $EndpointPort
  */
 class PortOverride extends Shape
 {
     /**
      * @param array{
-     *     ListenerPort?: int,
-     *     EndpointPort?: int
+     *     ListenerPort?: int<1, 65535>,
+     *     EndpointPort?: int<1, 65535>
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property int $RetentionPeriodInDays
+ * @property int<30, 2557> $RetentionPeriodInDays
  */
 class RetentionConfiguration extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     RetentionPeriodInDays: int
+     *     RetentionPeriodInDays: int<30, 2557>
      * } $args
      */
     public function __construct(array $args)

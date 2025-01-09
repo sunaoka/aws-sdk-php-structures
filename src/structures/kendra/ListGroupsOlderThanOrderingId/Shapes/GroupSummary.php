@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $GroupId
- * @property int $OrderingId
+ * @property int<0, 32535158400000> $OrderingId
  */
 class GroupSummary extends Shape
 {
     /**
      * @param array{
      *     GroupId?: string,
-     *     OrderingId?: int
+     *     OrderingId?: int<0, 32535158400000>
      * } $args
      */
     public function __construct(array $args = [])

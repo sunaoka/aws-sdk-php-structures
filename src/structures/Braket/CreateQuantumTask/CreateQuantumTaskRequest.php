@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $jobToken
  * @property string $outputS3Bucket
  * @property string $outputS3KeyPrefix
- * @property int $shots
+ * @property int<0, max> $shots
  * @property array<string, string> $tags
  */
 class CreateQuantumTaskRequest extends Request
@@ -28,7 +28,7 @@ class CreateQuantumTaskRequest extends Request
      *     jobToken?: string,
      *     outputS3Bucket: string,
      *     outputS3KeyPrefix: string,
-     *     shots: int,
+     *     shots: int<0, max>,
      *     tags?: array<string, string>
      * } $args
      */

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ContentBlockStart $start
- * @property int $contentBlockIndex
+ * @property int<0, max> $contentBlockIndex
  */
 class ContentBlockStartEvent extends Shape
 {
     /**
      * @param array{
      *     start: ContentBlockStart,
-     *     contentBlockIndex: int
+     *     contentBlockIndex: int<0, max>
      * } $args
      */
     public function __construct(array $args)

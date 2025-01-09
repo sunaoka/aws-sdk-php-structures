@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $alias
  * @property list<Shapes\IdeConfiguration> $ides
  * @property 'dev.standard1.small'|'dev.standard1.medium'|'dev.standard1.large'|'dev.standard1.xlarge' $instanceType
- * @property int $inactivityTimeoutMinutes
+ * @property int<0, 1200> $inactivityTimeoutMinutes
  * @property string $clientToken
  */
 class UpdateDevEnvironmentRequest extends Request
@@ -24,7 +24,7 @@ class UpdateDevEnvironmentRequest extends Request
      *     alias?: string,
      *     ides?: list<Shapes\IdeConfiguration>,
      *     instanceType?: 'dev.standard1.small'|'dev.standard1.medium'|'dev.standard1.large'|'dev.standard1.xlarge',
-     *     inactivityTimeoutMinutes?: int,
+     *     inactivityTimeoutMinutes?: int<0, 1200>,
      *     clientToken?: string
      * } $args
      */

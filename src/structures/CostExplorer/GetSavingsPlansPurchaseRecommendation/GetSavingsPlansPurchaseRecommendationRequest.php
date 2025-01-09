@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION' $PaymentOption
  * @property 'PAYER'|'LINKED' $AccountScope
  * @property string $NextPageToken
- * @property int $PageSize
+ * @property int<0, max> $PageSize
  * @property 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS' $LookbackPeriodInDays
  * @property Shapes\Expression $Filter
  */
@@ -23,7 +23,7 @@ class GetSavingsPlansPurchaseRecommendationRequest extends Request
      *     PaymentOption: 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION',
      *     AccountScope?: 'PAYER'|'LINKED',
      *     NextPageToken?: string,
-     *     PageSize?: int,
+     *     PageSize?: int<0, max>,
      *     LookbackPeriodInDays: 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS',
      *     Filter?: Shapes\Expression
      * } $args

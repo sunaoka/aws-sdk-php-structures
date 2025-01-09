@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $InstanceCount
- * @property int $ThresholdsWaitTime
- * @property int $IgnoreMetricsTime
+ * @property int<1, 100> $ThresholdsWaitTime
+ * @property int<1, 100> $IgnoreMetricsTime
  * @property double $CpuThreshold
  * @property double $MemoryThreshold
  * @property double $LoadThreshold
@@ -18,8 +18,8 @@ class AutoScalingThresholds extends Shape
     /**
      * @param array{
      *     InstanceCount?: int,
-     *     ThresholdsWaitTime?: int,
-     *     IgnoreMetricsTime?: int,
+     *     ThresholdsWaitTime?: int<1, 100>,
+     *     IgnoreMetricsTime?: int<1, 100>,
      *     CpuThreshold?: double,
      *     MemoryThreshold?: double,
      *     LoadThreshold?: double,

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClientRequestToken
  * @property 'WINDOWS'|'LUSTRE'|'ONTAP'|'OPENZFS' $FileSystemType
- * @property int $StorageCapacity
+ * @property int<0, 2147483647> $StorageCapacity
  * @property 'SSD'|'HDD'|'INTELLIGENT_TIERING' $StorageType
  * @property list<string> $SubnetIds
  * @property list<string> $SecurityGroupIds
@@ -25,7 +25,7 @@ class CreateFileSystemRequest extends Request
      * @param array{
      *     ClientRequestToken?: string,
      *     FileSystemType: 'WINDOWS'|'LUSTRE'|'ONTAP'|'OPENZFS',
-     *     StorageCapacity?: int,
+     *     StorageCapacity?: int<0, 2147483647>,
      *     StorageType?: 'SSD'|'HDD'|'INTELLIGENT_TIERING',
      *     SubnetIds: list<string>,
      *     SecurityGroupIds?: list<string>,

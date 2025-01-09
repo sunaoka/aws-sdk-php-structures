@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DeviceId
  * @property \Aws\Api\DateTimeResult $FromTimeStamp
- * @property int $MaxResults
+ * @property int<1, 250> $MaxResults
  * @property string $NextToken
  * @property \Aws\Api\DateTimeResult $ToTimeStamp
  */
@@ -17,7 +17,7 @@ class ListDeviceEventsRequest extends Request
      * @param array{
      *     DeviceId: string,
      *     FromTimeStamp: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 250>,
      *     NextToken?: string,
      *     ToTimeStamp: \Aws\Api\DateTimeResult
      * } $args

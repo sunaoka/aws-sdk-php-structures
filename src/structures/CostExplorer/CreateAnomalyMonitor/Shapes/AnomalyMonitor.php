@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DIMENSIONAL'|'CUSTOM' $MonitorType
  * @property 'SERVICE' $MonitorDimension
  * @property Expression $MonitorSpecification
- * @property int $DimensionalValueCount
+ * @property int<0, max> $DimensionalValueCount
  */
 class AnomalyMonitor extends Shape
 {
@@ -27,7 +27,7 @@ class AnomalyMonitor extends Shape
      *     MonitorType: 'DIMENSIONAL'|'CUSTOM',
      *     MonitorDimension?: 'SERVICE',
      *     MonitorSpecification?: Expression,
-     *     DimensionalValueCount?: int
+     *     DimensionalValueCount?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

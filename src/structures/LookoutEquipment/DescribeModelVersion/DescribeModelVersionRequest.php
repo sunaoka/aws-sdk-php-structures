@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ModelName
- * @property int $ModelVersion
+ * @property int<1, max> $ModelVersion
  */
 class DescribeModelVersionRequest extends Request
 {
     /**
      * @param array{
      *     ModelName: string,
-     *     ModelVersion: int
+     *     ModelVersion: int<1, max>
      * } $args
      */
     public function __construct(array $args)

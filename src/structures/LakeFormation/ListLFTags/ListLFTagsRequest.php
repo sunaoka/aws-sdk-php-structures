@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CatalogId
  * @property 'FOREIGN'|'ALL' $ResourceShareType
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListLFTagsRequest extends Request
@@ -16,7 +16,7 @@ class ListLFTagsRequest extends Request
      * @param array{
      *     CatalogId?: string,
      *     ResourceShareType?: 'FOREIGN'|'ALL',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

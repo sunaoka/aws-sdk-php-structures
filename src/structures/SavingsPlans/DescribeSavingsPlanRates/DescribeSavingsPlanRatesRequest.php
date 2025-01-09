@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $savingsPlanId
  * @property list<Shapes\SavingsPlanRateFilter> $filters
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  */
 class DescribeSavingsPlanRatesRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeSavingsPlanRatesRequest extends Request
      *     savingsPlanId: string,
      *     filters?: list<Shapes\SavingsPlanRateFilter>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

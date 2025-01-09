@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $solutionVersionArn
- * @property int $minProvisionedTPS
+ * @property int<1, max> $minProvisionedTPS
  * @property CampaignConfig $campaignConfig
  * @property string $status
  * @property string $failureReason
@@ -18,7 +18,7 @@ class CampaignUpdateSummary extends Shape
     /**
      * @param array{
      *     solutionVersionArn?: string,
-     *     minProvisionedTPS?: int,
+     *     minProvisionedTPS?: int<1, max>,
      *     campaignConfig?: CampaignConfig,
      *     status?: string,
      *     failureReason?: string,

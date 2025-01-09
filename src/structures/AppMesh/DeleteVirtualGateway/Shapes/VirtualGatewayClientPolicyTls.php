@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property VirtualGatewayClientTlsCertificate $certificate
  * @property bool $enforce
- * @property list<int> $ports
+ * @property list<int<1, 65535>> $ports
  * @property VirtualGatewayTlsValidationContext $validation
  */
 class VirtualGatewayClientPolicyTls extends Shape
@@ -16,7 +16,7 @@ class VirtualGatewayClientPolicyTls extends Shape
      * @param array{
      *     certificate?: VirtualGatewayClientTlsCertificate,
      *     enforce?: bool,
-     *     ports?: list<int>,
+     *     ports?: list<int<1, 65535>>,
      *     validation: VirtualGatewayTlsValidationContext
      * } $args
      */

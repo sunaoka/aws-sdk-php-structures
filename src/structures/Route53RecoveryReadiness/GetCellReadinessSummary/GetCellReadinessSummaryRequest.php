@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CellName
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class GetCellReadinessSummaryRequest extends Request
@@ -14,7 +14,7 @@ class GetCellReadinessSummaryRequest extends Request
     /**
      * @param array{
      *     CellName: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $loadBalancerName
- * @property int $instancePort
+ * @property int<-1, 65535> $instancePort
  * @property string $healthCheckPath
  * @property string $certificateName
  * @property string $certificateDomainName
@@ -20,7 +20,7 @@ class CreateLoadBalancerRequest extends Request
     /**
      * @param array{
      *     loadBalancerName: string,
-     *     instancePort: int,
+     *     instancePort: int<-1, 65535>,
      *     healthCheckPath?: string,
      *     certificateName?: string,
      *     certificateDomainName?: string,

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $instanceId
  * @property string $namespace
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<0, 20> $maxResults
  */
 class ListDataLakeDatasetsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListDataLakeDatasetsRequest extends Request
      *     instanceId: string,
      *     namespace: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<0, 20>
      * } $args
      */
     public function __construct(array $args)

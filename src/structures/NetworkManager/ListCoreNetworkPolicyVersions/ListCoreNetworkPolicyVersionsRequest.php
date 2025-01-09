@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CoreNetworkId
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class ListCoreNetworkPolicyVersionsRequest extends Request
@@ -14,7 +14,7 @@ class ListCoreNetworkPolicyVersionsRequest extends Request
     /**
      * @param array{
      *     CoreNetworkId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

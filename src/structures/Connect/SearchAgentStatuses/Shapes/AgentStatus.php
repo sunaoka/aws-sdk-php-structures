@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Description
  * @property 'ROUTABLE'|'CUSTOM'|'OFFLINE' $Type
- * @property int $DisplayOrder
+ * @property int<1, 50> $DisplayOrder
  * @property 'ENABLED'|'DISABLED' $State
  * @property array<string, string> $Tags
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
@@ -25,7 +25,7 @@ class AgentStatus extends Shape
      *     Name?: string,
      *     Description?: string,
      *     Type?: 'ROUTABLE'|'CUSTOM'|'OFFLINE',
-     *     DisplayOrder?: int,
+     *     DisplayOrder?: int<1, 50>,
      *     State?: 'ENABLED'|'DISABLED',
      *     Tags?: array<string, string>,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult,

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property Shapes\EphemerisMetaData $currentEphemeris
  * @property list<string> $groundStations
- * @property int $noradSatelliteID
+ * @property int<0, 99999> $noradSatelliteID
  * @property string $satelliteArn
  * @property string $satelliteId
  */

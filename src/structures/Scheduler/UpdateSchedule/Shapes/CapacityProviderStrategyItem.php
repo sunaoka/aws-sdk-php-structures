@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Scheduler\UpdateSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $base
+ * @property int<0, 100000> $base
  * @property string $capacityProvider
- * @property int $weight
+ * @property int<0, 1000> $weight
  */
 class CapacityProviderStrategyItem extends Shape
 {
     /**
      * @param array{
-     *     base?: int,
+     *     base?: int<0, 100000>,
      *     capacityProvider: string,
-     *     weight?: int
+     *     weight?: int<0, 1000>
      * } $args
      */
     public function __construct(array $args)

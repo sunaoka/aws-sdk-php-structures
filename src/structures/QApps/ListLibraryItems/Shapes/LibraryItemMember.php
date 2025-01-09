@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $libraryItemId
  * @property string $appId
- * @property int $appVersion
+ * @property int<0, 2147483647> $appVersion
  * @property list<Category> $categories
  * @property string $status
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -25,7 +25,7 @@ class LibraryItemMember extends Shape
      * @param array{
      *     libraryItemId: string,
      *     appId: string,
-     *     appVersion: int,
+     *     appVersion: int<0, 2147483647>,
      *     categories: list<Category>,
      *     status: string,
      *     createdAt: \Aws\Api\DateTimeResult,

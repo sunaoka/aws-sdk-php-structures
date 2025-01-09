@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $id
  * @property string $hostAddress
- * @property int $portNumber
+ * @property int<0, 65535> $portNumber
  * @property string $metadata
  */
 class ConnectivityInfo extends Shape
@@ -16,7 +16,7 @@ class ConnectivityInfo extends Shape
      * @param array{
      *     id?: string,
      *     hostAddress?: string,
-     *     portNumber?: int,
+     *     portNumber?: int<0, 65535>,
      *     metadata?: string
      * } $args
      */

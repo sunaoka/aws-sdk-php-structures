@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $MessageId
- * @property int $TransmitMode
+ * @property int<0, 1> $TransmitMode
  * @property string $ReceivedAt
  * @property LoRaWANSendDataToDevice $LoRaWAN
  */
@@ -15,7 +15,7 @@ class DownlinkQueueMessage extends Shape
     /**
      * @param array{
      *     MessageId?: string,
-     *     TransmitMode?: int,
+     *     TransmitMode?: int<0, 1>,
      *     ReceivedAt?: string,
      *     LoRaWAN?: LoRaWANSendDataToDevice
      * } $args

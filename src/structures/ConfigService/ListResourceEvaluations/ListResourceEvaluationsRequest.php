@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\ResourceEvaluationFilters $Filters
- * @property int $Limit
+ * @property int<0, 100> $Limit
  * @property string $NextToken
  */
 class ListResourceEvaluationsRequest extends Request
@@ -14,7 +14,7 @@ class ListResourceEvaluationsRequest extends Request
     /**
      * @param array{
      *     Filters?: Shapes\ResourceEvaluationFilters,
-     *     Limit?: int,
+     *     Limit?: int<0, 100>,
      *     NextToken?: string
      * } $args
      */

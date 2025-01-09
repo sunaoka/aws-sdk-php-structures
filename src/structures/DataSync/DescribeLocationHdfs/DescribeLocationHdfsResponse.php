@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $LocationArn
  * @property string $LocationUri
  * @property list<Shapes\HdfsNameNode> $NameNodes
- * @property int $BlockSize
- * @property int $ReplicationFactor
+ * @property int<1048576, 1073741824> $BlockSize
+ * @property int<1, 512> $ReplicationFactor
  * @property string $KmsKeyProviderUri
  * @property Shapes\QopConfiguration $QopConfiguration
  * @property 'SIMPLE'|'KERBEROS' $AuthenticationType

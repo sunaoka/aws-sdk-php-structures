@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $mapAutoTaggingMpeID
  * @property PostLaunchActions $postLaunchActions
  * @property LaunchTemplateDiskConf $smallVolumeConf
- * @property int $smallVolumeMaxSize
+ * @property int<0, max> $smallVolumeMaxSize
  * @property array<string, string> $tags
  * @property 'NONE'|'BASIC' $targetInstanceTypeRightSizingMethod
  */
@@ -41,7 +41,7 @@ class LaunchConfigurationTemplate extends Shape
      *     mapAutoTaggingMpeID?: string,
      *     postLaunchActions?: PostLaunchActions,
      *     smallVolumeConf?: LaunchTemplateDiskConf,
-     *     smallVolumeMaxSize?: int,
+     *     smallVolumeMaxSize?: int<0, max>,
      *     tags?: array<string, string>,
      *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'
      * } $args

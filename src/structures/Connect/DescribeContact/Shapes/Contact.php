@@ -21,8 +21,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $LastUpdateTimestamp
  * @property \Aws\Api\DateTimeResult $LastPausedTimestamp
  * @property \Aws\Api\DateTimeResult $LastResumedTimestamp
- * @property int $TotalPauseCount
- * @property int $TotalPauseDurationInSeconds
+ * @property int<0, 10> $TotalPauseCount
+ * @property int<0, max> $TotalPauseDurationInSeconds
  * @property \Aws\Api\DateTimeResult $ScheduledTimestamp
  * @property string $RelatedContactId
  * @property WisdomInfo $WisdomInfo
@@ -30,7 +30,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EndpointInfo $CustomerEndpoint
  * @property EndpointInfo $SystemEndpoint
  * @property int $QueueTimeAdjustmentSeconds
- * @property int $QueuePriority
+ * @property int<1, 9223372036854775807> $QueuePriority
  * @property array<string, string> $Tags
  * @property \Aws\Api\DateTimeResult $ConnectedToSystemTimestamp
  * @property RoutingCriteria $RoutingCriteria
@@ -63,8 +63,8 @@ class Contact extends Shape
      *     LastUpdateTimestamp?: \Aws\Api\DateTimeResult,
      *     LastPausedTimestamp?: \Aws\Api\DateTimeResult,
      *     LastResumedTimestamp?: \Aws\Api\DateTimeResult,
-     *     TotalPauseCount?: int,
-     *     TotalPauseDurationInSeconds?: int,
+     *     TotalPauseCount?: int<0, 10>,
+     *     TotalPauseDurationInSeconds?: int<0, max>,
      *     ScheduledTimestamp?: \Aws\Api\DateTimeResult,
      *     RelatedContactId?: string,
      *     WisdomInfo?: WisdomInfo,
@@ -72,7 +72,7 @@ class Contact extends Shape
      *     CustomerEndpoint?: EndpointInfo,
      *     SystemEndpoint?: EndpointInfo,
      *     QueueTimeAdjustmentSeconds?: int,
-     *     QueuePriority?: int,
+     *     QueuePriority?: int<1, 9223372036854775807>,
      *     Tags?: array<string, string>,
      *     ConnectedToSystemTimestamp?: \Aws\Api\DateTimeResult,
      *     RoutingCriteria?: RoutingCriteria,

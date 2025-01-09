@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FileSystemPath
  * @property string $DataRepositoryPath
  * @property bool $BatchImportMetaDataOnCreate
- * @property int $ImportedFileChunkSize
+ * @property int<1, 512000> $ImportedFileChunkSize
  * @property S3DataRepositoryConfiguration $S3
  * @property list<Tag> $Tags
  * @property \Aws\Api\DateTimeResult $CreationTime
@@ -34,7 +34,7 @@ class DataRepositoryAssociation extends Shape
      *     FileSystemPath?: string,
      *     DataRepositoryPath?: string,
      *     BatchImportMetaDataOnCreate?: bool,
-     *     ImportedFileChunkSize?: int,
+     *     ImportedFileChunkSize?: int<1, 512000>,
      *     S3?: S3DataRepositoryConfiguration,
      *     Tags?: list<Tag>,
      *     CreationTime?: \Aws\Api\DateTimeResult,

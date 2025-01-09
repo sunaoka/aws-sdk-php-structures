@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PrivateNetworks\CreateNetworkSite\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $count
+ * @property int<0, max> $count
  * @property list<NameValuePair> $options
  * @property 'RADIO_UNIT'|'DEVICE_IDENTIFIER' $type
  */
@@ -13,7 +13,7 @@ class NetworkResourceDefinition extends Shape
 {
     /**
      * @param array{
-     *     count: int,
+     *     count: int<0, max>,
      *     options?: list<NameValuePair>,
      *     type: 'RADIO_UNIT'|'DEVICE_IDENTIFIER'
      * } $args

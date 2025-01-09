@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $EvaluationFormId
- * @property int $EvaluationFormVersion
+ * @property int<1, max> $EvaluationFormVersion
  * @property bool $Locked
  * @property string $EvaluationFormArn
  * @property string $Title
@@ -25,7 +25,7 @@ class EvaluationForm extends Shape
     /**
      * @param array{
      *     EvaluationFormId: string,
-     *     EvaluationFormVersion: int,
+     *     EvaluationFormVersion: int<1, max>,
      *     Locked: bool,
      *     EvaluationFormArn: string,
      *     Title: string,

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $StackSetName
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property list<Shapes\StackInstanceFilter> $Filters
  * @property string $StackInstanceAccount
  * @property string $StackInstanceRegion
@@ -19,7 +19,7 @@ class ListStackInstancesRequest extends Request
      * @param array{
      *     StackSetName: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     Filters?: list<Shapes\StackInstanceFilter>,
      *     StackInstanceAccount?: string,
      *     StackInstanceRegion?: string,

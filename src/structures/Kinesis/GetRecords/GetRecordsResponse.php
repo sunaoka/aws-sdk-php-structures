@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property list<Shapes\Record> $Records
  * @property string $NextShardIterator
- * @property int $MillisBehindLatest
+ * @property int<0, max> $MillisBehindLatest
  * @property list<Shapes\ChildShard> $ChildShards
  */
 class GetRecordsResponse extends Response

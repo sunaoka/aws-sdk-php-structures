@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED' $status
  * @property string $workflowId
  * @property string $name
- * @property int $priority
- * @property int $storageCapacity
+ * @property int<0, 100000> $priority
+ * @property int<0, 100000> $storageCapacity
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $stopTime
@@ -26,8 +26,8 @@ class RunListItem extends Shape
      *     status?: 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED',
      *     workflowId?: string,
      *     name?: string,
-     *     priority?: int,
-     *     storageCapacity?: int,
+     *     priority?: int<0, 100000>,
+     *     storageCapacity?: int<0, 100000>,
      *     creationTime?: \Aws\Api\DateTimeResult,
      *     startTime?: \Aws\Api\DateTimeResult,
      *     stopTime?: \Aws\Api\DateTimeResult,

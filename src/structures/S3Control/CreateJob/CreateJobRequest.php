@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClientRequestToken
  * @property Shapes\JobManifest $Manifest
  * @property string $Description
- * @property int $Priority
+ * @property int<0, 2147483647> $Priority
  * @property string $RoleArn
  * @property list<Shapes\S3Tag> $Tags
  * @property Shapes\JobManifestGenerator $ManifestGenerator
@@ -28,7 +28,7 @@ class CreateJobRequest extends Request
      *     ClientRequestToken: string,
      *     Manifest?: Shapes\JobManifest,
      *     Description?: string,
-     *     Priority: int,
+     *     Priority: int<0, 2147483647>,
      *     RoleArn: string,
      *     Tags?: list<Shapes\S3Tag>,
      *     ManifestGenerator?: Shapes\JobManifestGenerator

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'TRANSIT_GATEWAY' $PeeringType
  * @property string $EdgeLocation
  * @property 'CREATING'|'FAILED'|'AVAILABLE'|'DELETING' $State
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class ListPeeringsRequest extends Request
@@ -20,7 +20,7 @@ class ListPeeringsRequest extends Request
      *     PeeringType?: 'TRANSIT_GATEWAY',
      *     EdgeLocation?: string,
      *     State?: 'CREATING'|'FAILED'|'AVAILABLE'|'DELETING',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

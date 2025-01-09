@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $CrawlBotMessage
  * @property bool $ExcludeArchived
  * @property string $SinceCrawlDate
- * @property int $LookBackPeriod
+ * @property int<0, 168> $LookBackPeriod
  * @property list<string> $PrivateChannelFilter
  * @property list<string> $PublicChannelFilter
  * @property list<string> $InclusionPatterns
@@ -32,7 +32,7 @@ class SlackConfiguration extends Shape
      *     CrawlBotMessage?: bool,
      *     ExcludeArchived?: bool,
      *     SinceCrawlDate: string,
-     *     LookBackPeriod?: int,
+     *     LookBackPeriod?: int<0, 168>,
      *     PrivateChannelFilter?: list<string>,
      *     PublicChannelFilter?: list<string>,
      *     InclusionPatterns?: list<string>,

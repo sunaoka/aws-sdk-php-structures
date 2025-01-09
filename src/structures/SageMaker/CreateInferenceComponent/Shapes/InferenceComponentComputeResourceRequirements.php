@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property float $NumberOfCpuCoresRequired
  * @property float $NumberOfAcceleratorDevicesRequired
- * @property int $MinMemoryRequiredInMb
- * @property int $MaxMemoryRequiredInMb
+ * @property int<128, max> $MinMemoryRequiredInMb
+ * @property int<128, max> $MaxMemoryRequiredInMb
  */
 class InferenceComponentComputeResourceRequirements extends Shape
 {
@@ -16,8 +16,8 @@ class InferenceComponentComputeResourceRequirements extends Shape
      * @param array{
      *     NumberOfCpuCoresRequired?: float,
      *     NumberOfAcceleratorDevicesRequired?: float,
-     *     MinMemoryRequiredInMb: int,
-     *     MaxMemoryRequiredInMb?: int
+     *     MinMemoryRequiredInMb: int<128, max>,
+     *     MaxMemoryRequiredInMb?: int<128, max>
      * } $args
      */
     public function __construct(array $args)

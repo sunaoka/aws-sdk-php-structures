@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  * @property string $parentDomainUnitIdentifier
  */
@@ -15,7 +15,7 @@ class ListDomainUnitsForParentRequest extends Request
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string,
      *     parentDomainUnitIdentifier: string
      * } $args

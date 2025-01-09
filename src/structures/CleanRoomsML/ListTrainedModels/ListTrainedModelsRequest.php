@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $membershipIdentifier
  */
 class ListTrainedModelsRequest extends Request
@@ -14,7 +14,7 @@ class ListTrainedModelsRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     membershipIdentifier: string
      * } $args
      */

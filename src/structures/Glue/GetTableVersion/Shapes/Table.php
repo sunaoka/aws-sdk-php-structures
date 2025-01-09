@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $UpdateTime
  * @property \Aws\Api\DateTimeResult $LastAccessTime
  * @property \Aws\Api\DateTimeResult $LastAnalyzedTime
- * @property int $Retention
+ * @property int<0, max> $Retention
  * @property StorageDescriptor $StorageDescriptor
  * @property list<Column> $PartitionKeys
  * @property string $ViewOriginalText
@@ -42,7 +42,7 @@ class Table extends Shape
      *     UpdateTime?: \Aws\Api\DateTimeResult,
      *     LastAccessTime?: \Aws\Api\DateTimeResult,
      *     LastAnalyzedTime?: \Aws\Api\DateTimeResult,
-     *     Retention?: int,
+     *     Retention?: int<0, max>,
      *     StorageDescriptor?: StorageDescriptor,
      *     PartitionKeys?: list<Column>,
      *     ViewOriginalText?: string,

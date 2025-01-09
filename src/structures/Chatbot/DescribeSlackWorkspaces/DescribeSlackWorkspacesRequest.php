@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Chatbot\DescribeSlackWorkspaces;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeSlackWorkspacesRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

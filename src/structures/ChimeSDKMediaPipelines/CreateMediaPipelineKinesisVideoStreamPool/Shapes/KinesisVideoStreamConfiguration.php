@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Region
- * @property int $DataRetentionInHours
+ * @property int<0, max> $DataRetentionInHours
  */
 class KinesisVideoStreamConfiguration extends Shape
 {
     /**
      * @param array{
      *     Region: string,
-     *     DataRetentionInHours?: int
+     *     DataRetentionInHours?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

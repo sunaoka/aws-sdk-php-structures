@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Id
  * @property \Aws\Api\DateTimeResult $ConnectedToAgentTimestamp
- * @property int $AgentPauseDurationInSeconds
+ * @property int<0, max> $AgentPauseDurationInSeconds
  * @property HierarchyGroups $HierarchyGroups
  * @property DeviceInfo $DeviceInfo
  * @property ParticipantCapabilities $Capabilities
@@ -18,7 +18,7 @@ class AgentInfo extends Shape
      * @param array{
      *     Id?: string,
      *     ConnectedToAgentTimestamp?: \Aws\Api\DateTimeResult,
-     *     AgentPauseDurationInSeconds?: int,
+     *     AgentPauseDurationInSeconds?: int<0, max>,
      *     HierarchyGroups?: HierarchyGroups,
      *     DeviceInfo?: DeviceInfo,
      *     Capabilities?: ParticipantCapabilities

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $detectorId
  * @property string $ruleVersion
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<50, 100> $maxResults
  */
 class GetRulesRequest extends Request
 {
@@ -19,7 +19,7 @@ class GetRulesRequest extends Request
      *     detectorId: string,
      *     ruleVersion?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<50, 100>
      * } $args
      */
     public function __construct(array $args)

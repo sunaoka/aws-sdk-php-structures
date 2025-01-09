@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'de-DE'|'en-AU'|'en-GB'|'en-IN'|'en-US'|'es-419'|'es-ES'|'es-US'|'fr-FR'|'fr-CA'|'it-IT'|'ja-JP'|'ko-KR' $locale
  * @property string $signatureContains
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  */
 class GetBuiltinSlotTypesRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetBuiltinSlotTypesRequest extends Request
      *     locale?: 'de-DE'|'en-AU'|'en-GB'|'en-IN'|'en-US'|'es-419'|'es-ES'|'es-US'|'fr-FR'|'fr-CA'|'it-IT'|'ja-JP'|'ko-KR',
      *     signatureContains?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property int $WindowSize
+ * @property int<0, max> $WindowSize
  * @property bool $DetectSchema
  * @property string $Table
  * @property string $Database
@@ -18,7 +18,7 @@ class CatalogKinesisSource extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     WindowSize?: int,
+     *     WindowSize?: int<0, max>,
      *     DetectSchema?: bool,
      *     Table: string,
      *     Database: string,

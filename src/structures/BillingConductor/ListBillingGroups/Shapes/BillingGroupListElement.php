@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Description
  * @property string $PrimaryAccountId
  * @property ComputationPreference $ComputationPreference
- * @property int $Size
+ * @property int<0, max> $Size
  * @property int $CreationTime
  * @property int $LastModifiedTime
  * @property 'ACTIVE'|'PRIMARY_ACCOUNT_MISSING' $Status
@@ -26,7 +26,7 @@ class BillingGroupListElement extends Shape
      *     Description?: string,
      *     PrimaryAccountId?: string,
      *     ComputationPreference?: ComputationPreference,
-     *     Size?: int,
+     *     Size?: int<0, max>,
      *     CreationTime?: int,
      *     LastModifiedTime?: int,
      *     Status?: 'ACTIVE'|'PRIMARY_ACCOUNT_MISSING',

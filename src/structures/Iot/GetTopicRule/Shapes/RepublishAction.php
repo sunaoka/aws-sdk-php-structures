@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $roleArn
  * @property string $topic
- * @property int $qos
+ * @property int<0, 1> $qos
  * @property MqttHeaders $headers
  */
 class RepublishAction extends Shape
@@ -16,7 +16,7 @@ class RepublishAction extends Shape
      * @param array{
      *     roleArn: string,
      *     topic: string,
-     *     qos?: int,
+     *     qos?: int<0, 1>,
      *     headers?: MqttHeaders
      * } $args
      */

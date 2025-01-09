@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ElasticsearchVersion
  * @property string $DomainName
- * @property int $MaxResults
+ * @property int<min, 100> $MaxResults
  * @property string $NextToken
  */
 class ListElasticsearchInstanceTypesRequest extends Request
@@ -16,7 +16,7 @@ class ListElasticsearchInstanceTypesRequest extends Request
      * @param array{
      *     ElasticsearchVersion: string,
      *     DomainName?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<min, 100>,
      *     NextToken?: string
      * } $args
      */

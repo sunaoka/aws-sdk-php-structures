@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $VerifiedAccessEndpointIds
  * @property string $VerifiedAccessInstanceId
  * @property string $VerifiedAccessGroupId
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property string $NextToken
  * @property list<Shapes\Filter> $Filters
  * @property bool $DryRun
@@ -20,7 +20,7 @@ class DescribeVerifiedAccessEndpointsRequest extends Request
      *     VerifiedAccessEndpointIds?: list<string>,
      *     VerifiedAccessInstanceId?: string,
      *     VerifiedAccessGroupId?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     NextToken?: string,
      *     Filters?: list<Shapes\Filter>,
      *     DryRun?: bool

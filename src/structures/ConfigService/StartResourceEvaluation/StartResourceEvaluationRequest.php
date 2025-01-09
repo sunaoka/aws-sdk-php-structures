@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ResourceDetails $ResourceDetails
  * @property Shapes\EvaluationContext $EvaluationContext
  * @property 'DETECTIVE'|'PROACTIVE' $EvaluationMode
- * @property int $EvaluationTimeout
+ * @property int<0, 3600> $EvaluationTimeout
  * @property string $ClientToken
  */
 class StartResourceEvaluationRequest extends Request
@@ -18,7 +18,7 @@ class StartResourceEvaluationRequest extends Request
      *     ResourceDetails: Shapes\ResourceDetails,
      *     EvaluationContext?: Shapes\EvaluationContext,
      *     EvaluationMode: 'DETECTIVE'|'PROACTIVE',
-     *     EvaluationTimeout?: int,
+     *     EvaluationTimeout?: int<0, 3600>,
      *     ClientToken?: string
      * } $args
      */

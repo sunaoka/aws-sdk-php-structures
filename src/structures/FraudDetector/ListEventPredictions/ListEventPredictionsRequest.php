@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\FilterCondition $detectorVersionId
  * @property Shapes\PredictionTimeRange $predictionTimeRange
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<50, 100> $maxResults
  */
 class ListEventPredictionsRequest extends Request
 {
@@ -23,7 +23,7 @@ class ListEventPredictionsRequest extends Request
      *     detectorVersionId?: Shapes\FilterCondition,
      *     predictionTimeRange?: Shapes\PredictionTimeRange,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<50, 100>
      * } $args
      */
     public function __construct(array $args = [])

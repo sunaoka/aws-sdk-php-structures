@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property string $Description
- * @property int $DeploymentDurationInMinutes
- * @property int $FinalBakeTimeInMinutes
+ * @property int<0, 1440> $DeploymentDurationInMinutes
+ * @property int<0, 1440> $FinalBakeTimeInMinutes
  * @property float $GrowthFactor
  * @property 'LINEAR'|'EXPONENTIAL' $GrowthType
  * @property 'NONE'|'SSM_DOCUMENT' $ReplicateTo
@@ -20,8 +20,8 @@ class CreateDeploymentStrategyRequest extends Request
      * @param array{
      *     Name: string,
      *     Description?: string,
-     *     DeploymentDurationInMinutes: int,
-     *     FinalBakeTimeInMinutes?: int,
+     *     DeploymentDurationInMinutes: int<0, 1440>,
+     *     FinalBakeTimeInMinutes?: int<0, 1440>,
      *     GrowthFactor: float,
      *     GrowthType?: 'LINEAR'|'EXPONENTIAL',
      *     ReplicateTo?: 'NONE'|'SSM_DOCUMENT',

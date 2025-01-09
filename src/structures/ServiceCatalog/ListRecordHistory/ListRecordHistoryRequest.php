@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AcceptLanguage
  * @property Shapes\AccessLevelFilter $AccessLevelFilter
  * @property Shapes\ListRecordHistorySearchFilter $SearchFilter
- * @property int $PageSize
+ * @property int<0, 20> $PageSize
  * @property string $PageToken
  */
 class ListRecordHistoryRequest extends Request
@@ -18,7 +18,7 @@ class ListRecordHistoryRequest extends Request
      *     AcceptLanguage?: string,
      *     AccessLevelFilter?: Shapes\AccessLevelFilter,
      *     SearchFilter?: Shapes\ListRecordHistorySearchFilter,
-     *     PageSize?: int,
+     *     PageSize?: int<0, 20>,
      *     PageToken?: string
      * } $args
      */

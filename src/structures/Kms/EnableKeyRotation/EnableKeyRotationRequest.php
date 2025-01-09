@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $KeyId
- * @property int $RotationPeriodInDays
+ * @property int<90, 2560> $RotationPeriodInDays
  */
 class EnableKeyRotationRequest extends Request
 {
     /**
      * @param array{
      *     KeyId: string,
-     *     RotationPeriodInDays?: int
+     *     RotationPeriodInDays?: int<90, 2560>
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\GameLift\UpdateContainerFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $FromPort
- * @property int $ToPort
+ * @property int<1, 60000> $FromPort
+ * @property int<1, 60000> $ToPort
  * @property string $IpRange
  * @property 'TCP'|'UDP' $Protocol
  */
@@ -14,8 +14,8 @@ class IpPermission extends Shape
 {
     /**
      * @param array{
-     *     FromPort: int,
-     *     ToPort: int,
+     *     FromPort: int<1, 60000>,
+     *     ToPort: int<1, 60000>,
      *     IpRange: string,
      *     Protocol: 'TCP'|'UDP'
      * } $args

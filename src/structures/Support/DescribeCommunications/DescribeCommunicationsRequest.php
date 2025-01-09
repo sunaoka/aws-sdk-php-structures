@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $beforeTime
  * @property string $afterTime
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<10, 100> $maxResults
  */
 class DescribeCommunicationsRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeCommunicationsRequest extends Request
      *     beforeTime?: string,
      *     afterTime?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<10, 100>
      * } $args
      */
     public function __construct(array $args)

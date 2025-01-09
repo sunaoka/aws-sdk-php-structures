@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListWorkflowStepExecutions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  * @property string $workflowExecutionId
  */
@@ -13,7 +13,7 @@ class ListWorkflowStepExecutionsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string,
      *     workflowExecutionId: string
      * } $args

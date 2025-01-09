@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DatabaseName
  * @property string $Expression
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $WorkGroup
  */
 class ListTableMetadataRequest extends Request
@@ -20,7 +20,7 @@ class ListTableMetadataRequest extends Request
      *     DatabaseName: string,
      *     Expression?: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     WorkGroup?: string
      * } $args
      */

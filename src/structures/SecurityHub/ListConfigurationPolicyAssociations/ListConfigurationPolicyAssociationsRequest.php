@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property Shapes\AssociationFilters $Filters
  */
 class ListConfigurationPolicyAssociationsRequest extends Request
@@ -14,7 +14,7 @@ class ListConfigurationPolicyAssociationsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     Filters?: Shapes\AssociationFilters
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReservedInstanceId
- * @property int $MaxResults
+ * @property int<min, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeReservedInstancesRequest extends Request
@@ -14,7 +14,7 @@ class DescribeReservedInstancesRequest extends Request
     /**
      * @param array{
      *     ReservedInstanceId?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<min, 100>,
      *     NextToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AcceptLanguage
- * @property int $PageSize
+ * @property int<0, 20> $PageSize
  * @property string $PageToken
  */
 class ListServiceActionsRequest extends Request
@@ -14,7 +14,7 @@ class ListServiceActionsRequest extends Request
     /**
      * @param array{
      *     AcceptLanguage?: string,
-     *     PageSize?: int,
+     *     PageSize?: int<0, 20>,
      *     PageToken?: string
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListResiliencyPolicies\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $rpoInSecs
- * @property int $rtoInSecs
+ * @property int<0, max> $rpoInSecs
+ * @property int<0, max> $rtoInSecs
  */
 class FailurePolicy extends Shape
 {
     /**
      * @param array{
-     *     rpoInSecs: int,
-     *     rtoInSecs: int
+     *     rpoInSecs: int<0, max>,
+     *     rtoInSecs: int<0, max>
      * } $args
      */
     public function __construct(array $args)

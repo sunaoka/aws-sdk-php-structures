@@ -5,26 +5,26 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\UpdateDecoderManifest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $messageId
+ * @property int<0, max> $messageId
  * @property bool $isBigEndian
  * @property bool $isSigned
- * @property int $startBit
+ * @property int<0, max> $startBit
  * @property double $offset
  * @property double $factor
- * @property int $length
+ * @property int<0, max> $length
  * @property string $name
  */
 class CanSignal extends Shape
 {
     /**
      * @param array{
-     *     messageId: int,
+     *     messageId: int<0, max>,
      *     isBigEndian: bool,
      *     isSigned: bool,
-     *     startBit: int,
+     *     startBit: int<0, max>,
      *     offset: double,
      *     factor: double,
-     *     length: int,
+     *     length: int<0, max>,
      *     name?: string
      * } $args
      */

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Confidence
- * @property int $Criticality
+ * @property int<0, 100> $Confidence
+ * @property int<0, 100> $Criticality
  * @property list<RelatedFinding> $RelatedFindings
  * @property FindingProviderSeverity $Severity
  * @property list<string> $Types
@@ -15,8 +15,8 @@ class FindingProviderFields extends Shape
 {
     /**
      * @param array{
-     *     Confidence?: int,
-     *     Criticality?: int,
+     *     Confidence?: int<0, 100>,
+     *     Criticality?: int<0, 100>,
      *     RelatedFindings?: list<RelatedFinding>,
      *     Severity?: FindingProviderSeverity,
      *     Types?: list<string>

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ACMPCA\ListCertificateAuthorities;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  * @property 'SELF'|'OTHER_ACCOUNTS' $ResourceOwner
  */
@@ -13,7 +13,7 @@ class ListCertificateAuthoritiesRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string,
      *     ResourceOwner?: 'SELF'|'OTHER_ACCOUNTS'
      * } $args

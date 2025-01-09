@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FunctionArn
- * @property int $RequestedProvisionedConcurrentExecutions
- * @property int $AvailableProvisionedConcurrentExecutions
- * @property int $AllocatedProvisionedConcurrentExecutions
+ * @property int<1, max> $RequestedProvisionedConcurrentExecutions
+ * @property int<0, max> $AvailableProvisionedConcurrentExecutions
+ * @property int<0, max> $AllocatedProvisionedConcurrentExecutions
  * @property 'IN_PROGRESS'|'READY'|'FAILED' $Status
  * @property string $StatusReason
  * @property string $LastModified
@@ -18,9 +18,9 @@ class ProvisionedConcurrencyConfigListItem extends Shape
     /**
      * @param array{
      *     FunctionArn?: string,
-     *     RequestedProvisionedConcurrentExecutions?: int,
-     *     AvailableProvisionedConcurrentExecutions?: int,
-     *     AllocatedProvisionedConcurrentExecutions?: int,
+     *     RequestedProvisionedConcurrentExecutions?: int<1, max>,
+     *     AvailableProvisionedConcurrentExecutions?: int<0, max>,
+     *     AllocatedProvisionedConcurrentExecutions?: int<0, max>,
      *     Status?: 'IN_PROGRESS'|'READY'|'FAILED',
      *     StatusReason?: string,
      *     LastModified?: string

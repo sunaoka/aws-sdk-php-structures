@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property DimensionField $Time
  * @property MeasureField $Value
- * @property int $PeriodsForward
- * @property int $PeriodsBackward
+ * @property int<1, 1000> $PeriodsForward
+ * @property int<0, 1000> $PeriodsBackward
  * @property double $UpperBoundary
  * @property double $LowerBoundary
- * @property int $PredictionInterval
+ * @property int<50, 95> $PredictionInterval
  * @property 'AUTOMATIC'|'CUSTOM' $Seasonality
- * @property int $CustomSeasonalityValue
+ * @property int<1, 180> $CustomSeasonalityValue
  */
 class ForecastComputation extends Shape
 {
@@ -25,13 +25,13 @@ class ForecastComputation extends Shape
      *     Name?: string,
      *     Time?: DimensionField,
      *     Value?: MeasureField,
-     *     PeriodsForward?: int,
-     *     PeriodsBackward?: int,
+     *     PeriodsForward?: int<1, 1000>,
+     *     PeriodsBackward?: int<0, 1000>,
      *     UpperBoundary?: double,
      *     LowerBoundary?: double,
-     *     PredictionInterval?: int,
+     *     PredictionInterval?: int<50, 95>,
      *     Seasonality?: 'AUTOMATIC'|'CUSTOM',
-     *     CustomSeasonalityValue?: int
+     *     CustomSeasonalityValue?: int<1, 180>
      * } $args
      */
     public function __construct(array $args)

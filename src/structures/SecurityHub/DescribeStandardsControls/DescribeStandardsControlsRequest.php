@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $StandardsSubscriptionArn
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class DescribeStandardsControlsRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeStandardsControlsRequest extends Request
      * @param array{
      *     StandardsSubscriptionArn: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

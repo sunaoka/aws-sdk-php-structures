@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LivePreRollConfiguration $LivePreRollConfiguration
  * @property Shapes\ManifestProcessingRules $ManifestProcessingRules
  * @property string $Name
- * @property int $PersonalizationThresholdSeconds
+ * @property int<1, max> $PersonalizationThresholdSeconds
  * @property string $SlateAdUrl
  * @property array<string, string> $Tags
  * @property string $TranscodeProfileName
@@ -35,7 +35,7 @@ class PutPlaybackConfigurationRequest extends Request
      *     LivePreRollConfiguration?: Shapes\LivePreRollConfiguration,
      *     ManifestProcessingRules?: Shapes\ManifestProcessingRules,
      *     Name: string,
-     *     PersonalizationThresholdSeconds?: int,
+     *     PersonalizationThresholdSeconds?: int<1, max>,
      *     SlateAdUrl?: string,
      *     Tags?: array<string, string>,
      *     TranscodeProfileName?: string,

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TypeName
  * @property string $TypeArn
  * @property 'COMPLETE'|'IN_PROGRESS'|'FAILED' $RegistrationStatusFilter
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListTypeRegistrationsRequest extends Request
@@ -20,7 +20,7 @@ class ListTypeRegistrationsRequest extends Request
      *     TypeName?: string,
      *     TypeArn?: string,
      *     RegistrationStatusFilter?: 'COMPLETE'|'IN_PROGRESS'|'FAILED',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

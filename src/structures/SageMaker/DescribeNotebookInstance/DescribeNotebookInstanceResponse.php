@@ -20,7 +20,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property string $NotebookInstanceLifecycleConfigName
  * @property 'Enabled'|'Disabled' $DirectInternetAccess
- * @property int $VolumeSizeInGB
+ * @property int<5, 16384> $VolumeSizeInGB
  * @property list<'ml.eia1.medium'|'ml.eia1.large'|'ml.eia1.xlarge'|'ml.eia2.medium'|'ml.eia2.large'|'ml.eia2.xlarge'> $AcceleratorTypes
  * @property string $DefaultCodeRepository
  * @property list<string> $AdditionalCodeRepositories

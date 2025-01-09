@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Electric'|'InternalCombustion'|'PluginHybrid' $EngineType
  * @property RouteVehicleLicensePlate $LicensePlate
  * @property double $MaxSpeed
- * @property int $Occupancy
+ * @property int<1, max> $Occupancy
  */
 class RouteScooterOptions extends Shape
 {
@@ -17,7 +17,7 @@ class RouteScooterOptions extends Shape
      *     EngineType?: 'Electric'|'InternalCombustion'|'PluginHybrid',
      *     LicensePlate?: RouteVehicleLicensePlate,
      *     MaxSpeed?: double,
-     *     Occupancy?: int
+     *     Occupancy?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

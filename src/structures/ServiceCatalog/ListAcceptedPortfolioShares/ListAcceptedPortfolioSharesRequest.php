@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AcceptLanguage
  * @property string $PageToken
- * @property int $PageSize
+ * @property int<0, 100> $PageSize
  * @property 'IMPORTED'|'AWS_SERVICECATALOG'|'AWS_ORGANIZATIONS' $PortfolioShareType
  */
 class ListAcceptedPortfolioSharesRequest extends Request
@@ -16,7 +16,7 @@ class ListAcceptedPortfolioSharesRequest extends Request
      * @param array{
      *     AcceptLanguage?: string,
      *     PageToken?: string,
-     *     PageSize?: int,
+     *     PageSize?: int<0, 100>,
      *     PortfolioShareType?: 'IMPORTED'|'AWS_SERVICECATALOG'|'AWS_ORGANIZATIONS'
      * } $args
      */

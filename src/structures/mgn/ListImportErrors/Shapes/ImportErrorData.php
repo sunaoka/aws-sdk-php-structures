@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $applicationID
  * @property string $ec2LaunchTemplateID
  * @property string $rawError
- * @property int $rowNumber
+ * @property int<0, max> $rowNumber
  * @property string $sourceServerID
  * @property string $waveID
  */
@@ -21,7 +21,7 @@ class ImportErrorData extends Shape
      *     applicationID?: string,
      *     ec2LaunchTemplateID?: string,
      *     rawError?: string,
-     *     rowNumber?: int,
+     *     rowNumber?: int<0, max>,
      *     sourceServerID?: string,
      *     waveID?: string
      * } $args

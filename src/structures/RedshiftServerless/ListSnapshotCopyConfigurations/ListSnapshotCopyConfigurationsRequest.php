@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\ListSnapshotCopyConfiguratio
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $namespaceName
  * @property string $nextToken
  */
@@ -13,7 +13,7 @@ class ListSnapshotCopyConfigurationsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     namespaceName?: string,
      *     nextToken?: string
      * } $args

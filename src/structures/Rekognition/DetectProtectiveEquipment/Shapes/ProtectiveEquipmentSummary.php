@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Rekognition\DetectProtectiveEquipment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<int> $PersonsWithRequiredEquipment
- * @property list<int> $PersonsWithoutRequiredEquipment
- * @property list<int> $PersonsIndeterminate
+ * @property list<int<0, max>> $PersonsWithRequiredEquipment
+ * @property list<int<0, max>> $PersonsWithoutRequiredEquipment
+ * @property list<int<0, max>> $PersonsIndeterminate
  */
 class ProtectiveEquipmentSummary extends Shape
 {
     /**
      * @param array{
-     *     PersonsWithRequiredEquipment?: list<int>,
-     *     PersonsWithoutRequiredEquipment?: list<int>,
-     *     PersonsIndeterminate?: list<int>
+     *     PersonsWithRequiredEquipment?: list<int<0, max>>,
+     *     PersonsWithoutRequiredEquipment?: list<int<0, max>>,
+     *     PersonsIndeterminate?: list<int<0, max>>
      * } $args
      */
     public function __construct(array $args = [])

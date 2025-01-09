@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $kubernetesVersion
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property string $addonName
  * @property list<string> $types
@@ -18,7 +18,7 @@ class DescribeAddonVersionsRequest extends Request
     /**
      * @param array{
      *     kubernetesVersion?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     addonName?: string,
      *     types?: list<string>,

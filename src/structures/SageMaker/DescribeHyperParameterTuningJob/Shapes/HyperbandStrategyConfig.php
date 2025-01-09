@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHyperParameterTuningJob\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MinResource
- * @property int $MaxResource
+ * @property int<1, max> $MinResource
+ * @property int<1, max> $MaxResource
  */
 class HyperbandStrategyConfig extends Shape
 {
     /**
      * @param array{
-     *     MinResource?: int,
-     *     MaxResource?: int
+     *     MinResource?: int<1, max>,
+     *     MaxResource?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

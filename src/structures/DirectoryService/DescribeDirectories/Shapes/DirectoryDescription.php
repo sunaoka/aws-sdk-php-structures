@@ -27,7 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Creating'|'Completed'|'Failed' $RadiusStatus
  * @property string $StageReason
  * @property bool $SsoEnabled
- * @property int $DesiredNumberOfDomainControllers
+ * @property int<2, max> $DesiredNumberOfDomainControllers
  * @property OwnerDirectoryDescription $OwnerDirectoryDescription
  * @property RegionsInfo $RegionsInfo
  * @property 'SERVER_2012'|'SERVER_2019' $OsVersion
@@ -58,7 +58,7 @@ class DirectoryDescription extends Shape
      *     RadiusStatus?: 'Creating'|'Completed'|'Failed',
      *     StageReason?: string,
      *     SsoEnabled?: bool,
-     *     DesiredNumberOfDomainControllers?: int,
+     *     DesiredNumberOfDomainControllers?: int<2, max>,
      *     OwnerDirectoryDescription?: OwnerDirectoryDescription,
      *     RegionsInfo?: RegionsInfo,
      *     OsVersion?: 'SERVER_2012'|'SERVER_2019'

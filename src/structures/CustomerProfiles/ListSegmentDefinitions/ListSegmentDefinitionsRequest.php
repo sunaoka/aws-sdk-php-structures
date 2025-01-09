@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class ListSegmentDefinitionsRequest extends Request
@@ -14,7 +14,7 @@ class ListSegmentDefinitionsRequest extends Request
     /**
      * @param array{
      *     DomainName: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

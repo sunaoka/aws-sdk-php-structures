@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property string $name
  * @property string $assessmentTargetArn
- * @property int $durationInSeconds
+ * @property int<180, 86400> $durationInSeconds
  * @property list<string> $rulesPackageArns
  * @property list<Attribute> $userAttributesForFindings
  * @property string $lastAssessmentRunArn
@@ -22,7 +22,7 @@ class AssessmentTemplate extends Shape
      *     arn: string,
      *     name: string,
      *     assessmentTargetArn: string,
-     *     durationInSeconds: int,
+     *     durationInSeconds: int<180, 86400>,
      *     rulesPackageArns: list<string>,
      *     userAttributesForFindings: list<Attribute>,
      *     lastAssessmentRunArn?: string,

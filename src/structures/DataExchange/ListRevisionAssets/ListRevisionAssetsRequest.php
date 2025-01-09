@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DataSetId
- * @property int $MaxResults
+ * @property int<1, 200> $MaxResults
  * @property string $NextToken
  * @property string $RevisionId
  */
@@ -15,7 +15,7 @@ class ListRevisionAssetsRequest extends Request
     /**
      * @param array{
      *     DataSetId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 200>,
      *     NextToken?: string,
      *     RevisionId: string
      * } $args

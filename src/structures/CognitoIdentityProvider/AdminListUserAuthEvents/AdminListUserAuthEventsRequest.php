@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $UserPoolId
  * @property string $Username
- * @property int $MaxResults
+ * @property int<0, 60> $MaxResults
  * @property string $NextToken
  */
 class AdminListUserAuthEventsRequest extends Request
@@ -16,7 +16,7 @@ class AdminListUserAuthEventsRequest extends Request
      * @param array{
      *     UserPoolId: string,
      *     Username: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 60>,
      *     NextToken?: string
      * } $args
      */

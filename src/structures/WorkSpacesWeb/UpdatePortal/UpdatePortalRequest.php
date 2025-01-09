@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Standard'|'IAM_Identity_Center' $authenticationType
  * @property string $displayName
  * @property 'standard.regular'|'standard.large'|'standard.xlarge' $instanceType
- * @property int $maxConcurrentSessions
+ * @property int<1, 5000> $maxConcurrentSessions
  * @property string $portalArn
  */
 class UpdatePortalRequest extends Request
@@ -18,7 +18,7 @@ class UpdatePortalRequest extends Request
      *     authenticationType?: 'Standard'|'IAM_Identity_Center',
      *     displayName?: string,
      *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge',
-     *     maxConcurrentSessions?: int,
+     *     maxConcurrentSessions?: int<1, 5000>,
      *     portalArn: string
      * } $args
      */

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'MAX_ZONES_BY_REUSABLE_DELEGATION_SET' $Type
- * @property int $Value
+ * @property int<1, max> $Value
  */
 class ReusableDelegationSetLimit extends Shape
 {
     /**
      * @param array{
      *     Type: 'MAX_ZONES_BY_REUSABLE_DELEGATION_SET',
-     *     Value: int
+     *     Value: int<1, max>
      * } $args
      */
     public function __construct(array $args)

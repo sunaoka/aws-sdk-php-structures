@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataSync\DescribeStorageSystemResourceMetrics\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Used
- * @property int $Provisioned
- * @property int $LogicalUsed
- * @property int $ClusterCloudStorageUsed
+ * @property int<0, max> $Used
+ * @property int<0, max> $Provisioned
+ * @property int<0, max> $LogicalUsed
+ * @property int<0, max> $ClusterCloudStorageUsed
  */
 class Capacity extends Shape
 {
     /**
      * @param array{
-     *     Used?: int,
-     *     Provisioned?: int,
-     *     LogicalUsed?: int,
-     *     ClusterCloudStorageUsed?: int
+     *     Used?: int<0, max>,
+     *     Provisioned?: int<0, max>,
+     *     LogicalUsed?: int<0, max>,
+     *     ClusterCloudStorageUsed?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

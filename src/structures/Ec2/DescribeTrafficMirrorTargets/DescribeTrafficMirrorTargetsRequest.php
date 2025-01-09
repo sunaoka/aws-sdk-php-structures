@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $TrafficMirrorTargetIds
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property string $NextToken
  */
 class DescribeTrafficMirrorTargetsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeTrafficMirrorTargetsRequest extends Request
      *     TrafficMirrorTargetIds?: list<string>,
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     NextToken?: string
      * } $args
      */

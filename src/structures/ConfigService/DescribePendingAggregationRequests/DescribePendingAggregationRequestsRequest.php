@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribePendingAggregationRequest
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $Limit
+ * @property int<0, 20> $Limit
  * @property string $NextToken
  */
 class DescribePendingAggregationRequestsRequest extends Request
 {
     /**
      * @param array{
-     *     Limit?: int,
+     *     Limit?: int<0, 20>,
      *     NextToken?: string
      * } $args
      */

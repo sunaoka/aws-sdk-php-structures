@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $CallerReference
  * @property LinkedService $LinkedService
  * @property HealthCheckConfig $HealthCheckConfig
- * @property int $HealthCheckVersion
+ * @property int<1, max> $HealthCheckVersion
  * @property CloudWatchAlarmConfiguration $CloudWatchAlarmConfiguration
  */
 class HealthCheck extends Shape
@@ -20,7 +20,7 @@ class HealthCheck extends Shape
      *     CallerReference: string,
      *     LinkedService?: LinkedService,
      *     HealthCheckConfig: HealthCheckConfig,
-     *     HealthCheckVersion: int,
+     *     HealthCheckVersion: int<1, max>,
      *     CloudWatchAlarmConfiguration?: CloudWatchAlarmConfiguration
      * } $args
      */

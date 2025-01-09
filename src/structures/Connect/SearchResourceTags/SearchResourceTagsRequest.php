@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property list<string> $ResourceTypes
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property Shapes\ResourceTagsSearchCriteria $SearchCriteria
  */
 class SearchResourceTagsRequest extends Request
@@ -18,7 +18,7 @@ class SearchResourceTagsRequest extends Request
      *     InstanceId: string,
      *     ResourceTypes?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     SearchCriteria?: Shapes\ResourceTagsSearchCriteria
      * } $args
      */

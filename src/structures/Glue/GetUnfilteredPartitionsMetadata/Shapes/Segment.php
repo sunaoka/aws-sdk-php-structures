@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetUnfilteredPartitionsMetadata\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $SegmentNumber
- * @property int $TotalSegments
+ * @property int<0, max> $SegmentNumber
+ * @property int<1, 10> $TotalSegments
  */
 class Segment extends Shape
 {
     /**
      * @param array{
-     *     SegmentNumber: int,
-     *     TotalSegments: int
+     *     SegmentNumber: int<0, max>,
+     *     TotalSegments: int<1, 10>
      * } $args
      */
     public function __construct(array $args)

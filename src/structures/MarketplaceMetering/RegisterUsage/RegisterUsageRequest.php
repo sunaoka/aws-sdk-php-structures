@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProductCode
- * @property int $PublicKeyVersion
+ * @property int<1, max> $PublicKeyVersion
  * @property string $Nonce
  */
 class RegisterUsageRequest extends Request
@@ -14,7 +14,7 @@ class RegisterUsageRequest extends Request
     /**
      * @param array{
      *     ProductCode: string,
-     *     PublicKeyVersion: int,
+     *     PublicKeyVersion: int<1, max>,
      *     Nonce?: string
      * } $args
      */

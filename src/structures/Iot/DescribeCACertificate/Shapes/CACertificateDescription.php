@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $creationDate
  * @property 'ENABLE'|'DISABLE' $autoRegistrationStatus
  * @property \Aws\Api\DateTimeResult $lastModifiedDate
- * @property int $customerVersion
+ * @property int<1, max> $customerVersion
  * @property string $generationId
  * @property CertificateValidity $validity
  * @property 'DEFAULT'|'SNI_ONLY' $certificateMode
@@ -30,7 +30,7 @@ class CACertificateDescription extends Shape
      *     creationDate?: \Aws\Api\DateTimeResult,
      *     autoRegistrationStatus?: 'ENABLE'|'DISABLE',
      *     lastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     customerVersion?: int,
+     *     customerVersion?: int<1, max>,
      *     generationId?: string,
      *     validity?: CertificateValidity,
      *     certificateMode?: 'DEFAULT'|'SNI_ONLY'

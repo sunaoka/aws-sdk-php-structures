@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $spaceName
  * @property string $projectName
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property list<Shapes\WorkflowSortCriteria> $sortBy
  */
 class ListWorkflowsRequest extends Request
@@ -18,7 +18,7 @@ class ListWorkflowsRequest extends Request
      *     spaceName: string,
      *     projectName: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     sortBy?: list<Shapes\WorkflowSortCriteria>
      * } $args
      */

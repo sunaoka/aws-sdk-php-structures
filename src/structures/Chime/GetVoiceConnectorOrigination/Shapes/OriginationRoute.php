@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Host
- * @property int $Port
+ * @property int<0, 65535> $Port
  * @property 'TCP'|'UDP' $Protocol
- * @property int $Priority
- * @property int $Weight
+ * @property int<1, 100> $Priority
+ * @property int<1, 100> $Weight
  */
 class OriginationRoute extends Shape
 {
     /**
      * @param array{
      *     Host?: string,
-     *     Port?: int,
+     *     Port?: int<0, 65535>,
      *     Protocol?: 'TCP'|'UDP',
-     *     Priority?: int,
-     *     Weight?: int
+     *     Priority?: int<1, 100>,
+     *     Weight?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

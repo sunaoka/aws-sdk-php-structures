@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $thingName
  * @property string $nextToken
- * @property int $pageSize
+ * @property int<1, 100> $pageSize
  */
 class ListNamedShadowsForThingRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListNamedShadowsForThingRequest extends Request
      * @param array{
      *     thingName: string,
      *     nextToken?: string,
-     *     pageSize?: int
+     *     pageSize?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

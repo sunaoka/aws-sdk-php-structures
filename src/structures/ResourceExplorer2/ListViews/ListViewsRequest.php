@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ResourceExplorer2\ListViews;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListViewsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

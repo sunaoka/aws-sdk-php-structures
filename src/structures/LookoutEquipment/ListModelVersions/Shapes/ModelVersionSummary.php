@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ModelName
  * @property string $ModelArn
- * @property int $ModelVersion
+ * @property int<1, max> $ModelVersion
  * @property string $ModelVersionArn
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property 'IN_PROGRESS'|'SUCCESS'|'FAILED'|'IMPORT_IN_PROGRESS'|'CANCELED' $Status
@@ -20,7 +20,7 @@ class ModelVersionSummary extends Shape
      * @param array{
      *     ModelName?: string,
      *     ModelArn?: string,
-     *     ModelVersion?: int,
+     *     ModelVersion?: int<1, max>,
      *     ModelVersionArn?: string,
      *     CreatedAt?: \Aws\Api\DateTimeResult,
      *     Status?: 'IN_PROGRESS'|'SUCCESS'|'FAILED'|'IMPORT_IN_PROGRESS'|'CANCELED',

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool $acceptRoleSessionName
- * @property int $durationSeconds
+ * @property int<900, 43200> $durationSeconds
  * @property bool $enabled
  * @property list<string> $managedPolicyArns
  * @property string $name
@@ -20,7 +20,7 @@ class CreateProfileRequest extends Request
     /**
      * @param array{
      *     acceptRoleSessionName?: bool,
-     *     durationSeconds?: int,
+     *     durationSeconds?: int<900, 43200>,
      *     enabled?: bool,
      *     managedPolicyArns?: list<string>,
      *     name: string,

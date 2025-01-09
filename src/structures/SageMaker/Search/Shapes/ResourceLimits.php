@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxNumberOfTrainingJobs
- * @property int $MaxParallelTrainingJobs
- * @property int $MaxRuntimeInSeconds
+ * @property int<1, max> $MaxNumberOfTrainingJobs
+ * @property int<1, max> $MaxParallelTrainingJobs
+ * @property int<120, 15768000> $MaxRuntimeInSeconds
  */
 class ResourceLimits extends Shape
 {
     /**
      * @param array{
-     *     MaxNumberOfTrainingJobs?: int,
-     *     MaxParallelTrainingJobs: int,
-     *     MaxRuntimeInSeconds?: int
+     *     MaxNumberOfTrainingJobs?: int<1, max>,
+     *     MaxParallelTrainingJobs: int<1, max>,
+     *     MaxRuntimeInSeconds?: int<120, 15768000>
      * } $args
      */
     public function __construct(array $args)

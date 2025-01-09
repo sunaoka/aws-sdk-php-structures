@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Delimiter
- * @property int $MaxDepth
+ * @property int<1, 10> $MaxDepth
  * @property double $MinStorageBytesPercentage
  */
 class SelectionCriteria extends Shape
@@ -14,7 +14,7 @@ class SelectionCriteria extends Shape
     /**
      * @param array{
      *     Delimiter?: string,
-     *     MaxDepth?: int,
+     *     MaxDepth?: int<1, 10>,
      *     MinStorageBytesPercentage?: double
      * } $args
      */

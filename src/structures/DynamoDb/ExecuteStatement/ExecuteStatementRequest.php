@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $ConsistentRead
  * @property string $NextToken
  * @property 'INDEXES'|'TOTAL'|'NONE' $ReturnConsumedCapacity
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property 'ALL_OLD'|'NONE' $ReturnValuesOnConditionCheckFailure
  */
 class ExecuteStatementRequest extends Request
@@ -22,7 +22,7 @@ class ExecuteStatementRequest extends Request
      *     ConsistentRead?: bool,
      *     NextToken?: string,
      *     ReturnConsumedCapacity?: 'INDEXES'|'TOTAL'|'NONE',
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     ReturnValuesOnConditionCheckFailure?: 'ALL_OLD'|'NONE'
      * } $args
      */

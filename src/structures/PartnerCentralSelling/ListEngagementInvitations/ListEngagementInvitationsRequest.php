@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Catalog
  * @property list<string> $EngagementIdentifier
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property 'SENDER'|'RECEIVER' $ParticipantType
  * @property list<'OpportunityInvitation'> $PayloadType
@@ -21,7 +21,7 @@ class ListEngagementInvitationsRequest extends Request
      * @param array{
      *     Catalog: string,
      *     EngagementIdentifier?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     ParticipantType: 'SENDER'|'RECEIVER',
      *     PayloadType?: list<'OpportunityInvitation'>,

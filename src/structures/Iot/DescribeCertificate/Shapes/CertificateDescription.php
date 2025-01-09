@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $previousOwnedBy
  * @property \Aws\Api\DateTimeResult $creationDate
  * @property \Aws\Api\DateTimeResult $lastModifiedDate
- * @property int $customerVersion
+ * @property int<1, max> $customerVersion
  * @property TransferData $transferData
  * @property string $generationId
  * @property CertificateValidity $validity
@@ -33,7 +33,7 @@ class CertificateDescription extends Shape
      *     previousOwnedBy?: string,
      *     creationDate?: \Aws\Api\DateTimeResult,
      *     lastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     customerVersion?: int,
+     *     customerVersion?: int<1, max>,
      *     transferData?: TransferData,
      *     generationId?: string,
      *     validity?: CertificateValidity,

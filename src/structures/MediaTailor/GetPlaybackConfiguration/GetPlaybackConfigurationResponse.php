@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\LogConfiguration $LogConfiguration
  * @property Shapes\ManifestProcessingRules $ManifestProcessingRules
  * @property string $Name
- * @property int $PersonalizationThresholdSeconds
+ * @property int<1, max> $PersonalizationThresholdSeconds
  * @property string $PlaybackConfigurationArn
  * @property string $PlaybackEndpointPrefix
  * @property string $SessionInitializationEndpointPrefix

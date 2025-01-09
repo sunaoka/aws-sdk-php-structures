@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TableName
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $ExclusiveStartStreamArn
  */
 class ListStreamsRequest extends Request
@@ -14,7 +14,7 @@ class ListStreamsRequest extends Request
     /**
      * @param array{
      *     TableName?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     ExclusiveStartStreamArn?: string
      * } $args
      */

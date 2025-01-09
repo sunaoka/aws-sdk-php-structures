@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<'SearchQuery', list<string>> $Filters
  * @property string $SortBy
  * @property 'ASCENDING'|'DESCENDING' $SortOrder
- * @property int $PageSize
+ * @property int<0, 100> $PageSize
  * @property string $PageToken
  */
 class SearchProvisionedProductsRequest extends Request
@@ -22,7 +22,7 @@ class SearchProvisionedProductsRequest extends Request
      *     Filters?: array<'SearchQuery', list<string>>,
      *     SortBy?: string,
      *     SortOrder?: 'ASCENDING'|'DESCENDING',
-     *     PageSize?: int,
+     *     PageSize?: int<0, 100>,
      *     PageToken?: string
      * } $args
      */

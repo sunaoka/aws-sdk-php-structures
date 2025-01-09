@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $ResourceTypeFilters
  * @property list<string> $TagKeyFilters
  * @property list<'TARGET_ID'|'REGION'|'RESOURCE_TYPE'> $GroupBy
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $PaginationToken
  */
 class GetComplianceSummaryRequest extends Request
@@ -22,7 +22,7 @@ class GetComplianceSummaryRequest extends Request
      *     ResourceTypeFilters?: list<string>,
      *     TagKeyFilters?: list<string>,
      *     GroupBy?: list<'TARGET_ID'|'REGION'|'RESOURCE_TYPE'>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     PaginationToken?: string
      * } $args
      */

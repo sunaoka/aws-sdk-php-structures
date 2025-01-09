@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $configuredBy
  * @property bool $enabled
  * @property 'CA_CERTIFICATE_EXPIRY'|'END_ENTITY_CERTIFICATE_EXPIRY' $event
- * @property int $threshold
+ * @property int<1, 360> $threshold
  */
 class NotificationSettingDetail extends Shape
 {
@@ -19,7 +19,7 @@ class NotificationSettingDetail extends Shape
      *     configuredBy?: string,
      *     enabled: bool,
      *     event: 'CA_CERTIFICATE_EXPIRY'|'END_ENTITY_CERTIFICATE_EXPIRY',
-     *     threshold?: int
+     *     threshold?: int<1, 360>
      * } $args
      */
     public function __construct(array $args)

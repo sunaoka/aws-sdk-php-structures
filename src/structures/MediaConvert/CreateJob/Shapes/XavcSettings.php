@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AUTO'|'CABAC'|'CAVLC' $EntropyEncoding
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
  * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int $FramerateDenominator
- * @property int $FramerateNumerator
+ * @property int<1, 1001> $FramerateDenominator
+ * @property int<24, 60000> $FramerateNumerator
  * @property 'XAVC_HD_INTRA_CBG'|'XAVC_4K_INTRA_CBG'|'XAVC_4K_INTRA_VBR'|'XAVC_HD'|'XAVC_4K' $Profile
  * @property 'DISABLED'|'ENABLED' $SlowPal
- * @property int $Softness
+ * @property int<0, 128> $Softness
  * @property 'DISABLED'|'ENABLED' $SpatialAdaptiveQuantization
  * @property 'DISABLED'|'ENABLED' $TemporalAdaptiveQuantization
  * @property Xavc4kIntraCbgProfileSettings $Xavc4kIntraCbgProfileSettings
@@ -30,11 +30,11 @@ class XavcSettings extends Shape
      *     EntropyEncoding?: 'AUTO'|'CABAC'|'CAVLC',
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
      *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int,
-     *     FramerateNumerator?: int,
+     *     FramerateDenominator?: int<1, 1001>,
+     *     FramerateNumerator?: int<24, 60000>,
      *     Profile?: 'XAVC_HD_INTRA_CBG'|'XAVC_4K_INTRA_CBG'|'XAVC_4K_INTRA_VBR'|'XAVC_HD'|'XAVC_4K',
      *     SlowPal?: 'DISABLED'|'ENABLED',
-     *     Softness?: int,
+     *     Softness?: int<0, 128>,
      *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED',
      *     TemporalAdaptiveQuantization?: 'DISABLED'|'ENABLED',
      *     Xavc4kIntraCbgProfileSettings?: Xavc4kIntraCbgProfileSettings,

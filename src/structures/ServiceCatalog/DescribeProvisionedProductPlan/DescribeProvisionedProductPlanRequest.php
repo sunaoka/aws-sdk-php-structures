@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AcceptLanguage
  * @property string $PlanId
- * @property int $PageSize
+ * @property int<0, 20> $PageSize
  * @property string $PageToken
  */
 class DescribeProvisionedProductPlanRequest extends Request
@@ -16,7 +16,7 @@ class DescribeProvisionedProductPlanRequest extends Request
      * @param array{
      *     AcceptLanguage?: string,
      *     PlanId: string,
-     *     PageSize?: int,
+     *     PageSize?: int<0, 20>,
      *     PageToken?: string
      * } $args
      */

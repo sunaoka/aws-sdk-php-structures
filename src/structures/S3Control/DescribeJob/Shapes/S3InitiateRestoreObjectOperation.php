@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\S3Control\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ExpirationInDays
+ * @property int<0, max> $ExpirationInDays
  * @property 'BULK'|'STANDARD' $GlacierJobTier
  */
 class S3InitiateRestoreObjectOperation extends Shape
 {
     /**
      * @param array{
-     *     ExpirationInDays?: int,
+     *     ExpirationInDays?: int<0, max>,
      *     GlacierJobTier?: 'BULK'|'STANDARD'
      * } $args
      */

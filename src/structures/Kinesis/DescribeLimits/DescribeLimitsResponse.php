@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Kinesis\DescribeLimits;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $ShardLimit
- * @property int $OpenShardCount
- * @property int $OnDemandStreamCount
- * @property int $OnDemandStreamCountLimit
+ * @property int<0, 1000000> $ShardLimit
+ * @property int<0, 1000000> $OpenShardCount
+ * @property int<0, 1000000> $OnDemandStreamCount
+ * @property int<0, 1000000> $OnDemandStreamCountLimit
  */
 class DescribeLimitsResponse extends Response
 {

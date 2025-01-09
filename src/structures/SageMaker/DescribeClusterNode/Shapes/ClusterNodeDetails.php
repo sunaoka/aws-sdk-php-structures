@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $LaunchTime
  * @property ClusterLifeCycleConfig $LifeCycleConfig
  * @property VpcConfig $OverrideVpcConfig
- * @property int $ThreadsPerCore
+ * @property int<1, 2> $ThreadsPerCore
  * @property list<ClusterInstanceStorageConfig> $InstanceStorageConfigs
  * @property string $PrivatePrimaryIp
  * @property string $PrivatePrimaryIpv6
@@ -30,7 +30,7 @@ class ClusterNodeDetails extends Shape
      *     LaunchTime?: \Aws\Api\DateTimeResult,
      *     LifeCycleConfig?: ClusterLifeCycleConfig,
      *     OverrideVpcConfig?: VpcConfig,
-     *     ThreadsPerCore?: int,
+     *     ThreadsPerCore?: int<1, 2>,
      *     InstanceStorageConfigs?: list<ClusterInstanceStorageConfig>,
      *     PrivatePrimaryIp?: string,
      *     PrivatePrimaryIpv6?: string,

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GlobalNetworkId
  * @property string $ResourceType
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class GetNetworkResourceCountsRequest extends Request
@@ -16,7 +16,7 @@ class GetNetworkResourceCountsRequest extends Request
      * @param array{
      *     GlobalNetworkId: string,
      *     ResourceType?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

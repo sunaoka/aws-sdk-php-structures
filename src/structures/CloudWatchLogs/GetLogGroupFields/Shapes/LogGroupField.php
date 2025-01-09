@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property int $percent
+ * @property int<0, 100> $percent
  */
 class LogGroupField extends Shape
 {
     /**
      * @param array{
      *     name?: string,
-     *     percent?: int
+     *     percent?: int<0, 100>
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomation\ListDataAutomationProject
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property 'DEVELOPMENT'|'LIVE'|'ALL' $projectStageFilter
  * @property Shapes\BlueprintFilter $blueprintFilter
@@ -15,7 +15,7 @@ class ListDataAutomationProjectsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     projectStageFilter?: 'DEVELOPMENT'|'LIVE'|'ALL',
      *     blueprintFilter?: Shapes\BlueprintFilter,

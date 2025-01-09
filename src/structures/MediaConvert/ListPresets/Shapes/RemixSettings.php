@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListPresets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AudioDescriptionAudioChannel
- * @property int $AudioDescriptionDataChannel
+ * @property int<1, 64> $AudioDescriptionAudioChannel
+ * @property int<1, 64> $AudioDescriptionDataChannel
  * @property ChannelMapping $ChannelMapping
- * @property int $ChannelsIn
- * @property int $ChannelsOut
+ * @property int<1, 64> $ChannelsIn
+ * @property int<1, 64> $ChannelsOut
  */
 class RemixSettings extends Shape
 {
     /**
      * @param array{
-     *     AudioDescriptionAudioChannel?: int,
-     *     AudioDescriptionDataChannel?: int,
+     *     AudioDescriptionAudioChannel?: int<1, 64>,
+     *     AudioDescriptionDataChannel?: int<1, 64>,
      *     ChannelMapping?: ChannelMapping,
-     *     ChannelsIn?: int,
-     *     ChannelsOut?: int
+     *     ChannelsIn?: int<1, 64>,
+     *     ChannelsOut?: int<1, 64>
      * } $args
      */
     public function __construct(array $args = [])

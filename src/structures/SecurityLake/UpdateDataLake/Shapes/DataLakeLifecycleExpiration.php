@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityLake\UpdateDataLake\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $days
+ * @property int<1, max> $days
  */
 class DataLakeLifecycleExpiration extends Shape
 {
     /**
-     * @param array{days?: int} $args
+     * @param array{days?: int<1, max>} $args
      */
     public function __construct(array $args = [])
     {

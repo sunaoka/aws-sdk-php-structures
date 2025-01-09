@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\GetDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $numberOfNotifiedThings
- * @property int $numberOfSucceededThings
+ * @property int<1, max> $numberOfNotifiedThings
+ * @property int<1, max> $numberOfSucceededThings
  */
 class IoTJobRateIncreaseCriteria extends Shape
 {
     /**
      * @param array{
-     *     numberOfNotifiedThings?: int,
-     *     numberOfSucceededThings?: int
+     *     numberOfNotifiedThings?: int<1, max>,
+     *     numberOfSucceededThings?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

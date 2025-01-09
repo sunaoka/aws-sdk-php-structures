@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $entityId
  * @property list<string> $selectedProperties
  * @property string $workspaceId
- * @property int $maxResults
+ * @property int<0, 200> $maxResults
  * @property string $nextToken
  * @property string $propertyGroupName
  * @property Shapes\TabularConditions $tabularConditions
@@ -26,7 +26,7 @@ class GetPropertyValueRequest extends Request
      *     entityId?: string,
      *     selectedProperties: list<string>,
      *     workspaceId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<0, 200>,
      *     nextToken?: string,
      *     propertyGroupName?: string,
      *     tabularConditions?: Shapes\TabularConditions

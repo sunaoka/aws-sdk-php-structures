@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property IoTJobExponentialRolloutRate $exponentialRate
- * @property int $maximumPerMinute
+ * @property int<1, 1000> $maximumPerMinute
  */
 class IoTJobExecutionsRolloutConfig extends Shape
 {
     /**
      * @param array{
      *     exponentialRate?: IoTJobExponentialRolloutRate,
-     *     maximumPerMinute?: int
+     *     maximumPerMinute?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args = [])

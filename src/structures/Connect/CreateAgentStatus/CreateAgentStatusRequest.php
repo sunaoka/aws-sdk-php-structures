@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $Description
  * @property 'ENABLED'|'DISABLED' $State
- * @property int $DisplayOrder
+ * @property int<1, 50> $DisplayOrder
  * @property array<string, string> $Tags
  */
 class CreateAgentStatusRequest extends Request
@@ -20,7 +20,7 @@ class CreateAgentStatusRequest extends Request
      *     Name: string,
      *     Description?: string,
      *     State: 'ENABLED'|'DISABLED',
-     *     DisplayOrder?: int,
+     *     DisplayOrder?: int<1, 50>,
      *     Tags?: array<string, string>
      * } $args
      */

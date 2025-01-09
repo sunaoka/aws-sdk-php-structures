@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Description
  * @property list<string> $Lenses
  * @property string $Notes
- * @property array<'UNANSWERED'|'ANSWERED', int> $QuestionCounts
+ * @property array<'UNANSWERED'|'ANSWERED', int<0, max>> $QuestionCounts
  * @property string $Owner
  * @property \Aws\Api\DateTimeResult $UpdatedAt
  * @property string $TemplateArn
@@ -24,7 +24,7 @@ class ReviewTemplate extends Shape
      *     Description?: string,
      *     Lenses?: list<string>,
      *     Notes?: string,
-     *     QuestionCounts?: array<'UNANSWERED'|'ANSWERED', int>,
+     *     QuestionCounts?: array<'UNANSWERED'|'ANSWERED', int<0, max>>,
      *     Owner?: string,
      *     UpdatedAt?: \Aws\Api\DateTimeResult,
      *     TemplateArn?: string,

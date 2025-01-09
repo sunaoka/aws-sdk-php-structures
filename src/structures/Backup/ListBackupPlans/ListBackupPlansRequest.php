@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property bool $IncludeDeleted
  */
 class ListBackupPlansRequest extends Request
@@ -14,7 +14,7 @@ class ListBackupPlansRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     IncludeDeleted?: bool
      * } $args
      */

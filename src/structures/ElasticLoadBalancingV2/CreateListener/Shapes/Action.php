@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TargetGroupArn
  * @property AuthenticateOidcActionConfig $AuthenticateOidcConfig
  * @property AuthenticateCognitoActionConfig $AuthenticateCognitoConfig
- * @property int $Order
+ * @property int<1, 50000> $Order
  * @property RedirectActionConfig $RedirectConfig
  * @property FixedResponseActionConfig $FixedResponseConfig
  * @property ForwardActionConfig $ForwardConfig
@@ -22,7 +22,7 @@ class Action extends Shape
      *     TargetGroupArn?: string,
      *     AuthenticateOidcConfig?: AuthenticateOidcActionConfig,
      *     AuthenticateCognitoConfig?: AuthenticateCognitoActionConfig,
-     *     Order?: int,
+     *     Order?: int<1, 50000>,
      *     RedirectConfig?: RedirectActionConfig,
      *     FixedResponseConfig?: FixedResponseActionConfig,
      *     ForwardConfig?: ForwardActionConfig

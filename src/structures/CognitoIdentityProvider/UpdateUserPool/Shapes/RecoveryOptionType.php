@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\UpdateUserPool\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Priority
+ * @property int<1, 2> $Priority
  * @property 'verified_email'|'verified_phone_number'|'admin_only' $Name
  */
 class RecoveryOptionType extends Shape
 {
     /**
      * @param array{
-     *     Priority: int,
+     *     Priority: int<1, 2>,
      *     Name: 'verified_email'|'verified_phone_number'|'admin_only'
      * } $args
      */

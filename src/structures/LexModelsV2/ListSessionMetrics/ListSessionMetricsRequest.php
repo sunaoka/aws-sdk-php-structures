@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AnalyticsBinBySpecification> $binBy
  * @property list<Shapes\AnalyticsSessionGroupBySpecification> $groupBy
  * @property list<Shapes\AnalyticsSessionFilter> $filters
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListSessionMetricsRequest extends Request
@@ -26,7 +26,7 @@ class ListSessionMetricsRequest extends Request
      *     binBy?: list<Shapes\AnalyticsBinBySpecification>,
      *     groupBy?: list<Shapes\AnalyticsSessionGroupBySpecification>,
      *     filters?: list<Shapes\AnalyticsSessionFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

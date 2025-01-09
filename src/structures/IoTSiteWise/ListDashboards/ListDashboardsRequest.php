@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $projectId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class ListDashboardsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListDashboardsRequest extends Request
      * @param array{
      *     projectId: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args)

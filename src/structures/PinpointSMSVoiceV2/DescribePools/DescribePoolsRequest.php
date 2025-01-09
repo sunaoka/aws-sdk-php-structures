@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $PoolIds
  * @property list<Shapes\PoolFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'SELF'|'SHARED' $Owner
  */
 class DescribePoolsRequest extends Request
@@ -18,7 +18,7 @@ class DescribePoolsRequest extends Request
      *     PoolIds?: list<string>,
      *     Filters?: list<Shapes\PoolFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     Owner?: 'SELF'|'SHARED'
      * } $args
      */

@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AudioFramesPerPes
+ * @property int<0, max> $AudioFramesPerPes
  * @property string $AudioPids
  * @property string $EcmPid
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH' $NielsenId3Behavior
- * @property int $PatInterval
+ * @property int<0, 1000> $PatInterval
  * @property 'CONFIGURED_PCR_PERIOD'|'PCR_EVERY_PES_PACKET' $PcrControl
- * @property int $PcrPeriod
+ * @property int<0, 500> $PcrPeriod
  * @property string $PcrPid
- * @property int $PmtInterval
+ * @property int<0, 1000> $PmtInterval
  * @property string $PmtPid
- * @property int $ProgramNum
+ * @property int<0, 65535> $ProgramNum
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH' $Scte35Behavior
  * @property string $Scte35Pid
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH' $TimedMetadataBehavior
  * @property string $TimedMetadataPid
- * @property int $TransportStreamId
+ * @property int<0, 65535> $TransportStreamId
  * @property string $VideoPid
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH' $KlvBehavior
  * @property string $KlvDataPids
@@ -29,22 +29,22 @@ class M3u8Settings extends Shape
 {
     /**
      * @param array{
-     *     AudioFramesPerPes?: int,
+     *     AudioFramesPerPes?: int<0, max>,
      *     AudioPids?: string,
      *     EcmPid?: string,
      *     NielsenId3Behavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH',
-     *     PatInterval?: int,
+     *     PatInterval?: int<0, 1000>,
      *     PcrControl?: 'CONFIGURED_PCR_PERIOD'|'PCR_EVERY_PES_PACKET',
-     *     PcrPeriod?: int,
+     *     PcrPeriod?: int<0, 500>,
      *     PcrPid?: string,
-     *     PmtInterval?: int,
+     *     PmtInterval?: int<0, 1000>,
      *     PmtPid?: string,
-     *     ProgramNum?: int,
+     *     ProgramNum?: int<0, 65535>,
      *     Scte35Behavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH',
      *     Scte35Pid?: string,
      *     TimedMetadataBehavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH',
      *     TimedMetadataPid?: string,
-     *     TransportStreamId?: int,
+     *     TransportStreamId?: int<0, 65535>,
      *     VideoPid?: string,
      *     KlvBehavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH',
      *     KlvDataPids?: string

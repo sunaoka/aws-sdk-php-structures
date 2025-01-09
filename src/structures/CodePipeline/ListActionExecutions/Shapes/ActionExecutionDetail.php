@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $pipelineExecutionId
  * @property string $actionExecutionId
- * @property int $pipelineVersion
+ * @property int<1, max> $pipelineVersion
  * @property string $stageName
  * @property string $actionName
  * @property \Aws\Api\DateTimeResult $startTime
@@ -23,7 +23,7 @@ class ActionExecutionDetail extends Shape
      * @param array{
      *     pipelineExecutionId?: string,
      *     actionExecutionId?: string,
-     *     pipelineVersion?: int,
+     *     pipelineVersion?: int<1, max>,
      *     stageName?: string,
      *     actionName?: string,
      *     startTime?: \Aws\Api\DateTimeResult,

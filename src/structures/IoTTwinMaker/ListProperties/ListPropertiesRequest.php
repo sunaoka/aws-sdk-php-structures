@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $componentName
  * @property string $componentPath
  * @property string $entityId
- * @property int $maxResults
+ * @property int<0, 200> $maxResults
  * @property string $nextToken
  */
 class ListPropertiesRequest extends Request
@@ -20,7 +20,7 @@ class ListPropertiesRequest extends Request
      *     componentName?: string,
      *     componentPath?: string,
      *     entityId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<0, 200>,
      *     nextToken?: string
      * } $args
      */

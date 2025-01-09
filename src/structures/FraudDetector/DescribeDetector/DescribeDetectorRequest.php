@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $detectorId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1000, 2500> $maxResults
  */
 class DescribeDetectorRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeDetectorRequest extends Request
      * @param array{
      *     detectorId: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1000, 2500>
      * } $args
      */
     public function __construct(array $args)

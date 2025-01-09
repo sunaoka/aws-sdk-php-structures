@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $definition
  * @property 'STANDARD'|'EXPRESS' $type
  * @property 'ERROR'|'WARNING' $severity
- * @property int $maxResults
+ * @property int<0, 100> $maxResults
  */
 class ValidateStateMachineDefinitionRequest extends Request
 {
@@ -17,7 +17,7 @@ class ValidateStateMachineDefinitionRequest extends Request
      *     definition: string,
      *     type?: 'STANDARD'|'EXPRESS',
      *     severity?: 'ERROR'|'WARNING',
-     *     maxResults?: int
+     *     maxResults?: int<0, 100>
      * } $args
      */
     public function __construct(array $args)

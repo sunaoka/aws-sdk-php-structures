@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $OrganizationId
  * @property string $Marker
- * @property int $Limit
+ * @property int<1, 999> $Limit
  */
 class DescribeNotificationSubscriptionsRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeNotificationSubscriptionsRequest extends Request
      * @param array{
      *     OrganizationId: string,
      *     Marker?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 999>
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Id
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 250> $MaxResults
  */
 class ListMulticastGroupsByFuotaTaskRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListMulticastGroupsByFuotaTaskRequest extends Request
      * @param array{
      *     Id: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<0, 250>
      * } $args
      */
     public function __construct(array $args)

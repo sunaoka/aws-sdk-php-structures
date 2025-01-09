@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $logGroupName
  * @property list<string> $logGroupNames
  * @property list<string> $logGroupIdentifiers
- * @property int $startTime
- * @property int $endTime
+ * @property int<0, max> $startTime
+ * @property int<0, max> $endTime
  * @property string $queryString
- * @property int $limit
+ * @property int<1, 10000> $limit
  */
 class StartQueryRequest extends Request
 {
@@ -22,10 +22,10 @@ class StartQueryRequest extends Request
      *     logGroupName?: string,
      *     logGroupNames?: list<string>,
      *     logGroupIdentifiers?: list<string>,
-     *     startTime: int,
-     *     endTime: int,
+     *     startTime: int<0, max>,
+     *     endTime: int<0, max>,
      *     queryString: string,
-     *     limit?: int
+     *     limit?: int<1, 10000>
      * } $args
      */
     public function __construct(array $args)

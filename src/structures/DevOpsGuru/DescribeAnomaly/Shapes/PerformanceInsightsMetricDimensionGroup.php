@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Group
  * @property list<string> $Dimensions
- * @property int $Limit
+ * @property int<1, 10> $Limit
  */
 class PerformanceInsightsMetricDimensionGroup extends Shape
 {
@@ -15,7 +15,7 @@ class PerformanceInsightsMetricDimensionGroup extends Shape
      * @param array{
      *     Group?: string,
      *     Dimensions?: list<string>,
-     *     Limit?: int
+     *     Limit?: int<1, 10>
      * } $args
      */
     public function __construct(array $args = [])

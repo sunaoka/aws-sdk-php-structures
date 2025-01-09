@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\DestinationConfiguration $destinationConfiguration
  * @property string $name
- * @property int $recordingReconnectWindowSeconds
+ * @property int<0, 300> $recordingReconnectWindowSeconds
  * @property Shapes\RenditionConfiguration $renditionConfiguration
  * @property array<string, string> $tags
  * @property Shapes\ThumbnailConfiguration $thumbnailConfiguration
@@ -18,7 +18,7 @@ class CreateRecordingConfigurationRequest extends Request
      * @param array{
      *     destinationConfiguration: Shapes\DestinationConfiguration,
      *     name?: string,
-     *     recordingReconnectWindowSeconds?: int,
+     *     recordingReconnectWindowSeconds?: int<0, 300>,
      *     renditionConfiguration?: Shapes\RenditionConfiguration,
      *     tags?: array<string, string>,
      *     thumbnailConfiguration?: Shapes\ThumbnailConfiguration

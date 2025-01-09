@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property LogConfiguration $LogConfiguration
  * @property ManifestProcessingRules $ManifestProcessingRules
  * @property string $Name
- * @property int $PersonalizationThresholdSeconds
+ * @property int<1, max> $PersonalizationThresholdSeconds
  * @property string $PlaybackConfigurationArn
  * @property string $PlaybackEndpointPrefix
  * @property string $SessionInitializationEndpointPrefix
@@ -42,7 +42,7 @@ class PlaybackConfiguration extends Shape
      *     LogConfiguration?: LogConfiguration,
      *     ManifestProcessingRules?: ManifestProcessingRules,
      *     Name?: string,
-     *     PersonalizationThresholdSeconds?: int,
+     *     PersonalizationThresholdSeconds?: int<1, max>,
      *     PlaybackConfigurationArn?: string,
      *     PlaybackEndpointPrefix?: string,
      *     SessionInitializationEndpointPrefix?: string,

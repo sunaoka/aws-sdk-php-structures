@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TransactionId
  * @property \Aws\Api\DateTimeResult $QueryAsOfTime
  * @property string $PartitionPredicate
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class GetTableObjectsRequest extends Request
@@ -24,7 +24,7 @@ class GetTableObjectsRequest extends Request
      *     TransactionId?: string,
      *     QueryAsOfTime?: \Aws\Api\DateTimeResult,
      *     PartitionPredicate?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

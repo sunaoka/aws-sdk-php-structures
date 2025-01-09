@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppMesh\ListVirtualGateways;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $limit
+ * @property int<1, 100> $limit
  * @property string $meshName
  * @property string $meshOwner
  * @property string $nextToken
@@ -14,7 +14,7 @@ class ListVirtualGatewaysRequest extends Request
 {
     /**
      * @param array{
-     *     limit?: int,
+     *     limit?: int<1, 100>,
      *     meshName: string,
      *     meshOwner?: string,
      *     nextToken?: string

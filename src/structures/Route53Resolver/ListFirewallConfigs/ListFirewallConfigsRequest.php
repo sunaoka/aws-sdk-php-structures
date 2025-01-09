@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\ListFirewallConfigs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<5, 10> $MaxResults
  * @property string $NextToken
  */
 class ListFirewallConfigsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 10>,
      *     NextToken?: string
      * } $args
      */

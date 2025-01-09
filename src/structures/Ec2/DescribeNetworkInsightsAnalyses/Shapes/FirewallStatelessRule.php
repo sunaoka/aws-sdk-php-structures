@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $Destinations
  * @property list<PortRange> $SourcePorts
  * @property list<PortRange> $DestinationPorts
- * @property list<int> $Protocols
+ * @property list<int<0, 255>> $Protocols
  * @property string $RuleAction
- * @property int $Priority
+ * @property int<-1, 65535> $Priority
  */
 class FirewallStatelessRule extends Shape
 {
@@ -23,9 +23,9 @@ class FirewallStatelessRule extends Shape
      *     Destinations?: list<string>,
      *     SourcePorts?: list<PortRange>,
      *     DestinationPorts?: list<PortRange>,
-     *     Protocols?: list<int>,
+     *     Protocols?: list<int<0, 255>>,
      *     RuleAction?: string,
-     *     Priority?: int
+     *     Priority?: int<-1, 65535>
      * } $args
      */
     public function __construct(array $args = [])

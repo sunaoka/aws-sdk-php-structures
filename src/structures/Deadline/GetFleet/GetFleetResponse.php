@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'GROWING'|'STEADY'|'SHRINKING' $autoScalingStatus
  * @property int $targetWorkerCount
  * @property int $workerCount
- * @property int $minWorkerCount
- * @property int $maxWorkerCount
+ * @property int<0, 2147483647> $minWorkerCount
+ * @property int<0, 2147483647> $maxWorkerCount
  * @property Shapes\FleetConfiguration $configuration
  * @property Shapes\FleetCapabilities $capabilities
  * @property string $roleArn

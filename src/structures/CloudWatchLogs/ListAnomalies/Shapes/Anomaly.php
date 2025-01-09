@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $patternString
  * @property string $patternRegex
  * @property string $priority
- * @property int $firstSeen
- * @property int $lastSeen
+ * @property int<0, max> $firstSeen
+ * @property int<0, max> $lastSeen
  * @property string $description
  * @property bool $active
  * @property 'Active'|'Suppressed'|'Baseline' $state
@@ -21,8 +21,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<PatternToken> $patternTokens
  * @property list<string> $logGroupArnList
  * @property bool $suppressed
- * @property int $suppressedDate
- * @property int $suppressedUntil
+ * @property int<0, max> $suppressedDate
+ * @property int<0, max> $suppressedUntil
  * @property bool $isPatternLevelSuppression
  */
 class Anomaly extends Shape
@@ -35,8 +35,8 @@ class Anomaly extends Shape
      *     patternString: string,
      *     patternRegex?: string,
      *     priority?: string,
-     *     firstSeen: int,
-     *     lastSeen: int,
+     *     firstSeen: int<0, max>,
+     *     lastSeen: int<0, max>,
      *     description: string,
      *     active: bool,
      *     state: 'Active'|'Suppressed'|'Baseline',
@@ -45,8 +45,8 @@ class Anomaly extends Shape
      *     patternTokens: list<PatternToken>,
      *     logGroupArnList: list<string>,
      *     suppressed?: bool,
-     *     suppressedDate?: int,
-     *     suppressedUntil?: int,
+     *     suppressedDate?: int<0, max>,
+     *     suppressedUntil?: int<0, max>,
      *     isPatternLevelSuppression?: bool
      * } $args
      */

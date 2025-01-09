@@ -12,9 +12,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $EndDate
  * @property string $Schedule
  * @property string $ScheduleTimezone
- * @property int $ScheduleOffset
- * @property int $Duration
- * @property int $Cutoff
+ * @property int<1, 6> $ScheduleOffset
+ * @property int<1, 24> $Duration
+ * @property int<0, 23> $Cutoff
  * @property bool $AllowUnassociatedTargets
  * @property bool $Enabled
  */

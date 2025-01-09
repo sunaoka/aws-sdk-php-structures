@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $topic
  * @property string $payload
- * @property int $qos
+ * @property int<0, 1> $qos
  * @property int $lastModifiedTime
  * @property string $userProperties
  */

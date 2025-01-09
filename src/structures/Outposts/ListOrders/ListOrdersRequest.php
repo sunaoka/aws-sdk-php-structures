@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $OutpostIdentifierFilter
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class ListOrdersRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListOrdersRequest extends Request
      * @param array{
      *     OutpostIdentifierFilter?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args = [])

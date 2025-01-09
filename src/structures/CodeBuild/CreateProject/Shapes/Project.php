@@ -17,8 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ProjectCache $cache
  * @property ProjectEnvironment $environment
  * @property string $serviceRole
- * @property int $timeoutInMinutes
- * @property int $queuedTimeoutInMinutes
+ * @property int<5, 2160> $timeoutInMinutes
+ * @property int<5, 480> $queuedTimeoutInMinutes
  * @property string $encryptionKey
  * @property list<Tag> $tags
  * @property \Aws\Api\DateTimeResult $created
@@ -51,8 +51,8 @@ class Project extends Shape
      *     cache?: ProjectCache,
      *     environment?: ProjectEnvironment,
      *     serviceRole?: string,
-     *     timeoutInMinutes?: int,
-     *     queuedTimeoutInMinutes?: int,
+     *     timeoutInMinutes?: int<5, 2160>,
+     *     queuedTimeoutInMinutes?: int<5, 480>,
      *     encryptionKey?: string,
      *     tags?: list<Tag>,
      *     created?: \Aws\Api\DateTimeResult,

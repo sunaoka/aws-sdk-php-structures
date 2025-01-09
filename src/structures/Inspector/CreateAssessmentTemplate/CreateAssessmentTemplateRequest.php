@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $assessmentTargetArn
  * @property string $assessmentTemplateName
- * @property int $durationInSeconds
+ * @property int<180, 86400> $durationInSeconds
  * @property list<string> $rulesPackageArns
  * @property list<Shapes\Attribute> $userAttributesForFindings
  */
@@ -17,7 +17,7 @@ class CreateAssessmentTemplateRequest extends Request
      * @param array{
      *     assessmentTargetArn: string,
      *     assessmentTemplateName: string,
-     *     durationInSeconds: int,
+     *     durationInSeconds: int<180, 86400>,
      *     rulesPackageArns: list<string>,
      *     userAttributesForFindings?: list<Shapes\Attribute>
      * } $args

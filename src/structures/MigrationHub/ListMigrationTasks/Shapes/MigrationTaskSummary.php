@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ProgressUpdateStream
  * @property string $MigrationTaskName
  * @property 'NOT_STARTED'|'IN_PROGRESS'|'FAILED'|'COMPLETED' $Status
- * @property int $ProgressPercent
+ * @property int<0, 100> $ProgressPercent
  * @property string $StatusDetail
  * @property \Aws\Api\DateTimeResult $UpdateDateTime
  */
@@ -19,7 +19,7 @@ class MigrationTaskSummary extends Shape
      *     ProgressUpdateStream?: string,
      *     MigrationTaskName?: string,
      *     Status?: 'NOT_STARTED'|'IN_PROGRESS'|'FAILED'|'COMPLETED',
-     *     ProgressPercent?: int,
+     *     ProgressPercent?: int<0, 100>,
      *     StatusDetail?: string,
      *     UpdateDateTime?: \Aws\Api\DateTimeResult
      * } $args

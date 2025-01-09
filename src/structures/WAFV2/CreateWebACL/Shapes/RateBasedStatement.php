@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WAFV2\CreateWebACL\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Limit
+ * @property int<10, 2000000000> $Limit
  * @property int $EvaluationWindowSec
  * @property 'IP'|'FORWARDED_IP'|'CUSTOM_KEYS'|'CONSTANT' $AggregateKeyType
  * @property Statement $ScopeDownStatement
@@ -16,7 +16,7 @@ class RateBasedStatement extends Shape
 {
     /**
      * @param array{
-     *     Limit: int,
+     *     Limit: int<10, 2000000000>,
      *     EvaluationWindowSec?: int,
      *     AggregateKeyType: 'IP'|'FORWARDED_IP'|'CUSTOM_KEYS'|'CONSTANT',
      *     ScopeDownStatement?: Statement,

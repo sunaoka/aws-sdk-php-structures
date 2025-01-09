@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'Name'|'CreationTime'|'Status' $SortBy
  * @property 'Ascending'|'Descending' $SortOrder
  * @property string $NameContains
@@ -24,7 +24,7 @@ class ListNotebookInstancesRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     SortBy?: 'Name'|'CreationTime'|'Status',
      *     SortOrder?: 'Ascending'|'Descending',
      *     NameContains?: string,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $principalArn
- * @property int $maxResults
+ * @property int<1, max> $maxResults
  * @property string $nextToken
  */
 class ListPolicyGenerationsRequest extends Request
@@ -14,7 +14,7 @@ class ListPolicyGenerationsRequest extends Request
     /**
      * @param array{
      *     principalArn?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, max>,
      *     nextToken?: string
      * } $args
      */

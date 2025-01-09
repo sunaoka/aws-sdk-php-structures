@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\PurchaseOffering;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $Count
+ * @property int<1, max> $Count
  * @property string $Name
  * @property string $OfferingId
  * @property Shapes\RenewalSettings $RenewalSettings
@@ -17,7 +17,7 @@ class PurchaseOfferingRequest extends Request
 {
     /**
      * @param array{
-     *     Count: int,
+     *     Count: int<1, max>,
      *     Name?: string,
      *     OfferingId: string,
      *     RenewalSettings?: Shapes\RenewalSettings,

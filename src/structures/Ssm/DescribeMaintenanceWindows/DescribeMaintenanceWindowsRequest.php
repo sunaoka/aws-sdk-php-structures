@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\MaintenanceWindowFilter> $Filters
- * @property int $MaxResults
+ * @property int<10, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeMaintenanceWindowsRequest extends Request
@@ -14,7 +14,7 @@ class DescribeMaintenanceWindowsRequest extends Request
     /**
      * @param array{
      *     Filters?: list<Shapes\MaintenanceWindowFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<10, 100>,
      *     NextToken?: string
      * } $args
      */

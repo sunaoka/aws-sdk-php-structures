@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property bool $associateDefaultSecurityGroup
- * @property int $bandwidthThrottling
+ * @property int<0, 10000> $bandwidthThrottling
  * @property bool $createPublicIP
  * @property 'PRIVATE_IP'|'PUBLIC_IP' $dataPlaneRouting
  * @property 'GP2'|'ST1'|'GP3' $defaultLargeStagingDiskType

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
  * @property list<string> $InstanceIds
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property string $NextToken
  */
 class DescribeInstanceCreditSpecificationsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeInstanceCreditSpecificationsRequest extends Request
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>,
      *     InstanceIds?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     NextToken?: string
      * } $args
      */

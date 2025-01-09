@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexRuntimeService\PostText\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $timeToLiveInSeconds
- * @property int $turnsToLive
+ * @property int<5, 86400> $timeToLiveInSeconds
+ * @property int<1, 20> $turnsToLive
  */
 class ActiveContextTimeToLive extends Shape
 {
     /**
      * @param array{
-     *     timeToLiveInSeconds?: int,
-     *     turnsToLive?: int
+     *     timeToLiveInSeconds?: int<5, 86400>,
+     *     turnsToLive?: int<1, 20>
      * } $args
      */
     public function __construct(array $args = [])

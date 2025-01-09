@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property int $healthCheckIntervalSeconds
- * @property int $healthCheckTimeoutSeconds
- * @property int $healthyThresholdCount
+ * @property int<0, 300> $healthCheckIntervalSeconds
+ * @property int<0, 120> $healthCheckTimeoutSeconds
+ * @property int<0, 10> $healthyThresholdCount
  * @property Matcher $matcher
  * @property string $path
- * @property int $port
+ * @property int<0, 65535> $port
  * @property 'HTTP'|'HTTPS'|'TCP' $protocol
  * @property 'HTTP1'|'HTTP2' $protocolVersion
- * @property int $unhealthyThresholdCount
+ * @property int<0, 10> $unhealthyThresholdCount
  */
 class HealthCheckConfig extends Shape
 {
     /**
      * @param array{
      *     enabled?: bool,
-     *     healthCheckIntervalSeconds?: int,
-     *     healthCheckTimeoutSeconds?: int,
-     *     healthyThresholdCount?: int,
+     *     healthCheckIntervalSeconds?: int<0, 300>,
+     *     healthCheckTimeoutSeconds?: int<0, 120>,
+     *     healthyThresholdCount?: int<0, 10>,
      *     matcher?: Matcher,
      *     path?: string,
-     *     port?: int,
+     *     port?: int<0, 65535>,
      *     protocol?: 'HTTP'|'HTTPS'|'TCP',
      *     protocolVersion?: 'HTTP1'|'HTTP2',
-     *     unhealthyThresholdCount?: int
+     *     unhealthyThresholdCount?: int<0, 10>
      * } $args
      */
     public function __construct(array $args = [])

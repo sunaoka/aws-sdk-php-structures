@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Filter $filter
  * @property Shapes\OrderBy $orderBy
  * @property bool $includeAllRecommendations
- * @property int $maxResults
+ * @property int<0, 1000> $maxResults
  * @property string $nextToken
  */
 class ListRecommendationsRequest extends Request
@@ -18,7 +18,7 @@ class ListRecommendationsRequest extends Request
      *     filter?: Shapes\Filter,
      *     orderBy?: Shapes\OrderBy,
      *     includeAllRecommendations?: bool,
-     *     maxResults?: int,
+     *     maxResults?: int<0, 1000>,
      *     nextToken?: string
      * } $args
      */

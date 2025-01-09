@@ -14,9 +14,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $FirmwareUpdateImage
  * @property string $FirmwareUpdateRole
  * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property int $RedundancyPercent
- * @property int $FragmentSizeBytes
- * @property int $FragmentIntervalMS
+ * @property int<0, 100> $RedundancyPercent
+ * @property int<1, max> $FragmentSizeBytes
+ * @property int<1, max> $FragmentIntervalMS
  * @property string $Descriptor
  */
 class GetFuotaTaskResponse extends Response

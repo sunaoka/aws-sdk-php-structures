@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property 'InProgress'|'Completed'|'Failed'|'Cancelled'|'Cancelling' $status
  */
 class ListThingRegistrationTasksRequest extends Request
@@ -14,7 +14,7 @@ class ListThingRegistrationTasksRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     status?: 'InProgress'|'Completed'|'Failed'|'Cancelled'|'Cancelling'
      * } $args
      */

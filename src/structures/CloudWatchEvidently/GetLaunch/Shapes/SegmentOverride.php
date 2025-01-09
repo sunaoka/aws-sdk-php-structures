@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int $evaluationOrder
  * @property string $segment
- * @property array<string, int> $weights
+ * @property array<string, int<0, 100000>> $weights
  */
 class SegmentOverride extends Shape
 {
@@ -15,7 +15,7 @@ class SegmentOverride extends Shape
      * @param array{
      *     evaluationOrder: int,
      *     segment: string,
-     *     weights: array<string, int>
+     *     weights: array<string, int<0, 100000>>
      * } $args
      */
     public function __construct(array $args)

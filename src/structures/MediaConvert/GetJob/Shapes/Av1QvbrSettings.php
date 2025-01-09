@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $QvbrQualityLevel
+ * @property int<1, 10> $QvbrQualityLevel
  * @property double $QvbrQualityLevelFineTune
  */
 class Av1QvbrSettings extends Shape
 {
     /**
      * @param array{
-     *     QvbrQualityLevel?: int,
+     *     QvbrQualityLevel?: int<1, 10>,
      *     QvbrQualityLevelFineTune?: double
      * } $args
      */

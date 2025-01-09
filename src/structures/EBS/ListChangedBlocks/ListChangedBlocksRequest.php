@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FirstSnapshotId
  * @property string $SecondSnapshotId
  * @property string $NextToken
- * @property int $MaxResults
- * @property int $StartingBlockIndex
+ * @property int<100, 10000> $MaxResults
+ * @property int<0, max> $StartingBlockIndex
  */
 class ListChangedBlocksRequest extends Request
 {
@@ -18,8 +18,8 @@ class ListChangedBlocksRequest extends Request
      *     FirstSnapshotId?: string,
      *     SecondSnapshotId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
-     *     StartingBlockIndex?: int
+     *     MaxResults?: int<100, 10000>,
+     *     StartingBlockIndex?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

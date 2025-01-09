@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StreamName
  * @property string $NextToken
  * @property string $ExclusiveStartShardId
- * @property int $MaxResults
+ * @property int<1, 10000> $MaxResults
  * @property \Aws\Api\DateTimeResult $StreamCreationTimestamp
  * @property Shapes\ShardFilter $ShardFilter
  * @property string $StreamARN
@@ -20,7 +20,7 @@ class ListShardsRequest extends Request
      *     StreamName?: string,
      *     NextToken?: string,
      *     ExclusiveStartShardId?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 10000>,
      *     StreamCreationTimestamp?: \Aws\Api\DateTimeResult,
      *     ShardFilter?: Shapes\ShardFilter,
      *     StreamARN?: string

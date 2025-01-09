@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AppInstanceArn
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListAppInstanceUsersRequest extends Request
@@ -14,7 +14,7 @@ class ListAppInstanceUsersRequest extends Request
     /**
      * @param array{
      *     AppInstanceArn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

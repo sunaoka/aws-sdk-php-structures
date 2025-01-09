@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConfigurationId
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListConfigurationRevisionsRequest extends Request
@@ -14,7 +14,7 @@ class ListConfigurationRevisionsRequest extends Request
     /**
      * @param array{
      *     ConfigurationId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

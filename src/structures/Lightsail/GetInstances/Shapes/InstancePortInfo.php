@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $fromPort
- * @property int $toPort
+ * @property int<-1, 65535> $fromPort
+ * @property int<-1, 65535> $toPort
  * @property 'tcp'|'all'|'udp'|'icmp'|'icmpv6' $protocol
  * @property string $accessFrom
  * @property 'Public'|'Private' $accessType
@@ -20,8 +20,8 @@ class InstancePortInfo extends Shape
 {
     /**
      * @param array{
-     *     fromPort?: int,
-     *     toPort?: int,
+     *     fromPort?: int<-1, 65535>,
+     *     toPort?: int<-1, 65535>,
      *     protocol?: 'tcp'|'all'|'udp'|'icmp'|'icmpv6',
      *     accessFrom?: string,
      *     accessType?: 'Public'|'Private',

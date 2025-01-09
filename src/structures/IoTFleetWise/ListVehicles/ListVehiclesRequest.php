@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $attributeNames
  * @property list<string> $attributeValues
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class ListVehiclesRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListVehiclesRequest extends Request
      *     attributeNames?: list<string>,
      *     attributeValues?: list<string>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $JobRunId
  * @property array<string, string> $Arguments
  * @property int $AllocatedCapacity
- * @property int $Timeout
+ * @property int<1, max> $Timeout
  * @property double $MaxCapacity
  * @property string $SecurityConfiguration
  * @property Shapes\NotificationProperty $NotificationProperty
@@ -27,7 +27,7 @@ class StartJobRunRequest extends Request
      *     JobRunId?: string,
      *     Arguments?: array<string, string>,
      *     AllocatedCapacity?: int,
-     *     Timeout?: int,
+     *     Timeout?: int<1, max>,
      *     MaxCapacity?: double,
      *     SecurityConfiguration?: string,
      *     NotificationProperty?: Shapes\NotificationProperty,

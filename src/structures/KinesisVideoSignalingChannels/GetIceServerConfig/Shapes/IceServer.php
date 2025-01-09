@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $Uris
  * @property string $Username
  * @property string $Password
- * @property int $Ttl
+ * @property int<30, 86400> $Ttl
  */
 class IceServer extends Shape
 {
@@ -17,7 +17,7 @@ class IceServer extends Shape
      *     Uris?: list<string>,
      *     Username?: string,
      *     Password?: string,
-     *     Ttl?: int
+     *     Ttl?: int<30, 86400>
      * } $args
      */
     public function __construct(array $args = [])

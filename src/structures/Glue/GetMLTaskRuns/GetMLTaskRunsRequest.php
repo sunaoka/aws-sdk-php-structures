@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TransformId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property Shapes\TaskRunFilterCriteria $Filter
  * @property Shapes\TaskRunSortCriteria $Sort
  */
@@ -17,7 +17,7 @@ class GetMLTaskRunsRequest extends Request
      * @param array{
      *     TransformId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     Filter?: Shapes\TaskRunFilterCriteria,
      *     Sort?: Shapes\TaskRunSortCriteria
      * } $args

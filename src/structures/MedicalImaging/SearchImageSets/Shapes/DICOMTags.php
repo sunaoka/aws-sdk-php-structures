@@ -12,13 +12,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DICOMStudyInstanceUID
  * @property string $DICOMStudyId
  * @property string $DICOMStudyDescription
- * @property int $DICOMNumberOfStudyRelatedSeries
- * @property int $DICOMNumberOfStudyRelatedInstances
+ * @property int<0, 1000000> $DICOMNumberOfStudyRelatedSeries
+ * @property int<0, 10000> $DICOMNumberOfStudyRelatedInstances
  * @property string $DICOMAccessionNumber
  * @property string $DICOMSeriesInstanceUID
  * @property string $DICOMSeriesModality
  * @property string $DICOMSeriesBodyPart
- * @property int $DICOMSeriesNumber
+ * @property int<-2147483648, 2147483647> $DICOMSeriesNumber
  * @property string $DICOMStudyDate
  * @property string $DICOMStudyTime
  */
@@ -33,13 +33,13 @@ class DICOMTags extends Shape
      *     DICOMStudyInstanceUID?: string,
      *     DICOMStudyId?: string,
      *     DICOMStudyDescription?: string,
-     *     DICOMNumberOfStudyRelatedSeries?: int,
-     *     DICOMNumberOfStudyRelatedInstances?: int,
+     *     DICOMNumberOfStudyRelatedSeries?: int<0, 1000000>,
+     *     DICOMNumberOfStudyRelatedInstances?: int<0, 10000>,
      *     DICOMAccessionNumber?: string,
      *     DICOMSeriesInstanceUID?: string,
      *     DICOMSeriesModality?: string,
      *     DICOMSeriesBodyPart?: string,
-     *     DICOMSeriesNumber?: int,
+     *     DICOMSeriesNumber?: int<-2147483648, 2147483647>,
      *     DICOMStudyDate?: string,
      *     DICOMStudyTime?: string
      * } $args

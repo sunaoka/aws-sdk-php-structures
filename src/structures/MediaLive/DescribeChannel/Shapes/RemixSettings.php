@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<AudioChannelMapping> $ChannelMappings
- * @property int $ChannelsIn
- * @property int $ChannelsOut
+ * @property int<1, 16> $ChannelsIn
+ * @property int<1, 8> $ChannelsOut
  */
 class RemixSettings extends Shape
 {
     /**
      * @param array{
      *     ChannelMappings: list<AudioChannelMapping>,
-     *     ChannelsIn?: int,
-     *     ChannelsOut?: int
+     *     ChannelsIn?: int<1, 16>,
+     *     ChannelsOut?: int<1, 8>
      * } $args
      */
     public function __construct(array $args)

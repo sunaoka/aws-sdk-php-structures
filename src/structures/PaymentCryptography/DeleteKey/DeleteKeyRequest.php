@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $KeyIdentifier
- * @property int $DeleteKeyInDays
+ * @property int<3, 180> $DeleteKeyInDays
  */
 class DeleteKeyRequest extends Request
 {
     /**
      * @param array{
      *     KeyIdentifier: string,
-     *     DeleteKeyInDays?: int
+     *     DeleteKeyInDays?: int<3, 180>
      * } $args
      */
     public function __construct(array $args)

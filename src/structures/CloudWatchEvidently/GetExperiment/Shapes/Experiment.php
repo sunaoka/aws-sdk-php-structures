@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OnlineAbDefinition $onlineAbDefinition
  * @property string $project
  * @property string $randomizationSalt
- * @property int $samplingRate
+ * @property int<0, 100000> $samplingRate
  * @property ExperimentSchedule $schedule
  * @property string $segment
  * @property 'CREATED'|'UPDATING'|'RUNNING'|'COMPLETED'|'CANCELLED' $status
@@ -38,7 +38,7 @@ class Experiment extends Shape
      *     onlineAbDefinition?: OnlineAbDefinition,
      *     project?: string,
      *     randomizationSalt?: string,
-     *     samplingRate?: int,
+     *     samplingRate?: int<0, 100000>,
      *     schedule?: ExperimentSchedule,
      *     segment?: string,
      *     status: 'CREATED'|'UPDATING'|'RUNNING'|'COMPLETED'|'CANCELLED',

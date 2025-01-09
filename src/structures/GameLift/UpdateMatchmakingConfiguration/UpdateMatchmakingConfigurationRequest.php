@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $Description
  * @property list<string> $GameSessionQueueArns
- * @property int $RequestTimeoutSeconds
- * @property int $AcceptanceTimeoutSeconds
+ * @property int<1, 43200> $RequestTimeoutSeconds
+ * @property int<1, 600> $AcceptanceTimeoutSeconds
  * @property bool $AcceptanceRequired
  * @property string $RuleSetName
  * @property string $NotificationTarget
- * @property int $AdditionalPlayerCount
+ * @property int<0, max> $AdditionalPlayerCount
  * @property string $CustomEventData
  * @property list<Shapes\GameProperty> $GameProperties
  * @property string $GameSessionData
@@ -27,12 +27,12 @@ class UpdateMatchmakingConfigurationRequest extends Request
      *     Name: string,
      *     Description?: string,
      *     GameSessionQueueArns?: list<string>,
-     *     RequestTimeoutSeconds?: int,
-     *     AcceptanceTimeoutSeconds?: int,
+     *     RequestTimeoutSeconds?: int<1, 43200>,
+     *     AcceptanceTimeoutSeconds?: int<1, 600>,
      *     AcceptanceRequired?: bool,
      *     RuleSetName?: string,
      *     NotificationTarget?: string,
-     *     AdditionalPlayerCount?: int,
+     *     AdditionalPlayerCount?: int<0, max>,
      *     CustomEventData?: string,
      *     GameProperties?: list<Shapes\GameProperty>,
      *     GameSessionData?: string,

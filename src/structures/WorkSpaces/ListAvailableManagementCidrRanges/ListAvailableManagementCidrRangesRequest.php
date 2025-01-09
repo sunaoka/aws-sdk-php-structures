@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ManagementCidrRangeConstraint
- * @property int $MaxResults
+ * @property int<1, 5> $MaxResults
  * @property string $NextToken
  */
 class ListAvailableManagementCidrRangesRequest extends Request
@@ -14,7 +14,7 @@ class ListAvailableManagementCidrRangesRequest extends Request
     /**
      * @param array{
      *     ManagementCidrRangeConstraint: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 5>,
      *     NextToken?: string
      * } $args
      */

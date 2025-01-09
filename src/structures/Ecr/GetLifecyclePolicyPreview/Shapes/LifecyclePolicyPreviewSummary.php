@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ecr\GetLifecyclePolicyPreview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $expiringImageTotalCount
+ * @property int<0, max> $expiringImageTotalCount
  */
 class LifecyclePolicyPreviewSummary extends Shape
 {
     /**
-     * @param array{expiringImageTotalCount?: int} $args
+     * @param array{expiringImageTotalCount?: int<0, max>} $args
      */
     public function __construct(array $args = [])
     {

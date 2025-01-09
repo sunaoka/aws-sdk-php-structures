@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Description
  * @property string $DefaultInstanceName
  * @property string $IamRole
- * @property int $RegistrationLimit
- * @property int $RegistrationsCount
+ * @property int<1, 1000> $RegistrationLimit
+ * @property int<1, 1000> $RegistrationsCount
  * @property \Aws\Api\DateTimeResult $ExpirationDate
  * @property bool $Expired
  * @property \Aws\Api\DateTimeResult $CreatedDate
@@ -24,8 +24,8 @@ class Activation extends Shape
      *     Description?: string,
      *     DefaultInstanceName?: string,
      *     IamRole?: string,
-     *     RegistrationLimit?: int,
-     *     RegistrationsCount?: int,
+     *     RegistrationLimit?: int<1, 1000>,
+     *     RegistrationsCount?: int<1, 1000>,
      *     ExpirationDate?: \Aws\Api\DateTimeResult,
      *     Expired?: bool,
      *     CreatedDate?: \Aws\Api\DateTimeResult,

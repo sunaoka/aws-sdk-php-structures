@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\DataExchange\ListDataGrants;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 200> $MaxResults
  * @property string $NextToken
  */
 class ListDataGrantsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 200>,
      *     NextToken?: string
      * } $args
      */

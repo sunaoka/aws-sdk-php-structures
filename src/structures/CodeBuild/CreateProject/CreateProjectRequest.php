@@ -16,8 +16,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ProjectCache $cache
  * @property Shapes\ProjectEnvironment $environment
  * @property string $serviceRole
- * @property int $timeoutInMinutes
- * @property int $queuedTimeoutInMinutes
+ * @property int<5, 2160> $timeoutInMinutes
+ * @property int<5, 480> $queuedTimeoutInMinutes
  * @property string $encryptionKey
  * @property list<Shapes\Tag> $tags
  * @property Shapes\VpcConfig $vpcConfig
@@ -43,8 +43,8 @@ class CreateProjectRequest extends Request
      *     cache?: Shapes\ProjectCache,
      *     environment: Shapes\ProjectEnvironment,
      *     serviceRole: string,
-     *     timeoutInMinutes?: int,
-     *     queuedTimeoutInMinutes?: int,
+     *     timeoutInMinutes?: int<5, 2160>,
+     *     queuedTimeoutInMinutes?: int<5, 480>,
      *     encryptionKey?: string,
      *     tags?: list<Shapes\Tag>,
      *     vpcConfig?: Shapes\VpcConfig,

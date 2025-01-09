@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $spaceName
  * @property string $projectName
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 200> $maxResults
  */
 class ListSourceRepositoriesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListSourceRepositoriesRequest extends Request
      *     spaceName: string,
      *     projectName: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 200>
      * } $args
      */
     public function __construct(array $args)

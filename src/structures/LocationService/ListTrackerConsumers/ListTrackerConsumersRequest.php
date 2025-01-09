@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TrackerName
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListTrackerConsumersRequest extends Request
@@ -14,7 +14,7 @@ class ListTrackerConsumersRequest extends Request
     /**
      * @param array{
      *     TrackerName: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

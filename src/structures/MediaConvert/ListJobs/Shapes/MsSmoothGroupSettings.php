@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Destination
  * @property DestinationSettings $DestinationSettings
  * @property MsSmoothEncryptionSettings $Encryption
- * @property int $FragmentLength
+ * @property int<1, 2147483647> $FragmentLength
  * @property 'EXACT'|'GOP_MULTIPLE' $FragmentLengthControl
  * @property 'UTF8'|'UTF16' $ManifestEncoding
  */
@@ -23,7 +23,7 @@ class MsSmoothGroupSettings extends Shape
      *     Destination?: string,
      *     DestinationSettings?: DestinationSettings,
      *     Encryption?: MsSmoothEncryptionSettings,
-     *     FragmentLength?: int,
+     *     FragmentLength?: int<1, 2147483647>,
      *     FragmentLengthControl?: 'EXACT'|'GOP_MULTIPLE',
      *     ManifestEncoding?: 'UTF8'|'UTF16'
      * } $args

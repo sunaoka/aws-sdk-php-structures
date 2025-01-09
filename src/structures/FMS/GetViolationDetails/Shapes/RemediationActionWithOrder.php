@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property RemediationAction $RemediationAction
- * @property int $Order
+ * @property int<-2147483648, 2147483647> $Order
  */
 class RemediationActionWithOrder extends Shape
 {
     /**
      * @param array{
      *     RemediationAction?: RemediationAction,
-     *     Order?: int
+     *     Order?: int<-2147483648, 2147483647>
      * } $args
      */
     public function __construct(array $args = [])

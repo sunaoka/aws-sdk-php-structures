@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $endSession
  * @property string $foundationModel
  * @property Shapes\GuardrailConfigurationWithArn $guardrailConfiguration
- * @property int $idleSessionTTLInSeconds
+ * @property int<60, 3600> $idleSessionTTLInSeconds
  * @property Shapes\InlineSessionState $inlineSessionState
  * @property string $inputText
  * @property string $instruction
@@ -31,7 +31,7 @@ class InvokeInlineAgentRequest extends Request
      *     endSession?: bool,
      *     foundationModel: string,
      *     guardrailConfiguration?: Shapes\GuardrailConfigurationWithArn,
-     *     idleSessionTTLInSeconds?: int,
+     *     idleSessionTTLInSeconds?: int<60, 3600>,
      *     inlineSessionState?: Shapes\InlineSessionState,
      *     inputText?: string,
      *     instruction: string,

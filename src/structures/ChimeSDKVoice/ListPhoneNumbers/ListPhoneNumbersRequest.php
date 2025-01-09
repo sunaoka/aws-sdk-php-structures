@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'VoiceConnector'|'SipMediaApplicationDialIn' $ProductType
  * @property 'VoiceConnectorId'|'VoiceConnectorGroupId'|'SipRuleId' $FilterName
  * @property string $FilterValue
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListPhoneNumbersRequest extends Request
@@ -20,7 +20,7 @@ class ListPhoneNumbersRequest extends Request
      *     ProductType?: 'VoiceConnector'|'SipMediaApplicationDialIn',
      *     FilterName?: 'VoiceConnectorId'|'VoiceConnectorGroupId'|'SipRuleId',
      *     FilterValue?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

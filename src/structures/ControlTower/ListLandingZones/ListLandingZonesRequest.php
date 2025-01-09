@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ControlTower\ListLandingZones;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 1> $maxResults
  * @property string $nextToken
  */
 class ListLandingZonesRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1>,
      *     nextToken?: string
      * } $args
      */

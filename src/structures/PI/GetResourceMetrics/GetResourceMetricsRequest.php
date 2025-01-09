@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property int $PeriodInSeconds
- * @property int $MaxResults
+ * @property int<0, 25> $MaxResults
  * @property string $NextToken
  * @property 'END_TIME'|'START_TIME' $PeriodAlignment
  */
@@ -25,7 +25,7 @@ class GetResourceMetricsRequest extends Request
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
      *     PeriodInSeconds?: int,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 25>,
      *     NextToken?: string,
      *     PeriodAlignment?: 'END_TIME'|'START_TIME'
      * } $args

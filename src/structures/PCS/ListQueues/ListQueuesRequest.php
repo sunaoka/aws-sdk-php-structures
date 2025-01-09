@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $clusterIdentifier
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class ListQueuesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListQueuesRequest extends Request
      * @param array{
      *     clusterIdentifier: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

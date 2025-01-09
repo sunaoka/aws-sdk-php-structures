@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetPreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Bitrate
+ * @property int<1000, 1152000000> $Bitrate
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
  * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int $FramerateDenominator
- * @property int $FramerateNumerator
+ * @property int<1, 2147483647> $FramerateDenominator
+ * @property int<1, 2147483647> $FramerateNumerator
  * @property double $GopSize
- * @property int $HrdBufferSize
- * @property int $MaxBitrate
+ * @property int<0, 47185920> $HrdBufferSize
+ * @property int<1000, 1152000000> $MaxBitrate
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $ParControl
- * @property int $ParDenominator
- * @property int $ParNumerator
+ * @property int<1, 2147483647> $ParDenominator
+ * @property int<1, 2147483647> $ParNumerator
  * @property 'MULTI_PASS'|'MULTI_PASS_HQ' $QualityTuningLevel
  * @property 'VBR' $RateControlMode
  */
@@ -23,17 +23,17 @@ class Vp8Settings extends Shape
 {
     /**
      * @param array{
-     *     Bitrate?: int,
+     *     Bitrate?: int<1000, 1152000000>,
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
      *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int,
-     *     FramerateNumerator?: int,
+     *     FramerateDenominator?: int<1, 2147483647>,
+     *     FramerateNumerator?: int<1, 2147483647>,
      *     GopSize?: double,
-     *     HrdBufferSize?: int,
-     *     MaxBitrate?: int,
+     *     HrdBufferSize?: int<0, 47185920>,
+     *     MaxBitrate?: int<1000, 1152000000>,
      *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
-     *     ParDenominator?: int,
-     *     ParNumerator?: int,
+     *     ParDenominator?: int<1, 2147483647>,
+     *     ParNumerator?: int<1, 2147483647>,
      *     QualityTuningLevel?: 'MULTI_PASS'|'MULTI_PASS_HQ',
      *     RateControlMode?: 'VBR'
      * } $args

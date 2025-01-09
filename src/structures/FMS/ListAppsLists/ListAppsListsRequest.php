@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool $DefaultLists
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListAppsListsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListAppsListsRequest extends Request
      * @param array{
      *     DefaultLists?: bool,
      *     NextToken?: string,
-     *     MaxResults: int
+     *     MaxResults: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

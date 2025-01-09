@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'QUEUE'|'CHANNEL'|'ROUTING_PROFILE'|'ROUTING_STEP_EXPRESSION'> $Groupings
  * @property list<Shapes\HistoricalMetric> $HistoricalMetrics
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class GetMetricDataRequest extends Request
 {
@@ -25,7 +25,7 @@ class GetMetricDataRequest extends Request
      *     Groupings?: list<'QUEUE'|'CHANNEL'|'ROUTING_PROFILE'|'ROUTING_STEP_EXPRESSION'>,
      *     HistoricalMetrics: list<Shapes\HistoricalMetric>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

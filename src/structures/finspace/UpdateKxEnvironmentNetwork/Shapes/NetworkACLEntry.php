@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\finspace\UpdateKxEnvironmentNetwork\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ruleNumber
+ * @property int<1, 32766> $ruleNumber
  * @property string $protocol
  * @property 'allow'|'deny' $ruleAction
  * @property PortRange $portRange
@@ -16,7 +16,7 @@ class NetworkACLEntry extends Shape
 {
     /**
      * @param array{
-     *     ruleNumber: int,
+     *     ruleNumber: int<1, 32766>,
      *     protocol: string,
      *     ruleAction: 'allow'|'deny',
      *     portRange?: PortRange,

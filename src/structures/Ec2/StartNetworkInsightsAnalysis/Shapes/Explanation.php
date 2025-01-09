@@ -22,18 +22,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AnalysisComponent $InternetGateway
  * @property string $LoadBalancerArn
  * @property AnalysisLoadBalancerListener $ClassicLoadBalancerListener
- * @property int $LoadBalancerListenerPort
+ * @property int<0, 65535> $LoadBalancerListenerPort
  * @property AnalysisLoadBalancerTarget $LoadBalancerTarget
  * @property AnalysisComponent $LoadBalancerTargetGroup
  * @property list<AnalysisComponent> $LoadBalancerTargetGroups
- * @property int $LoadBalancerTargetPort
+ * @property int<0, 65535> $LoadBalancerTargetPort
  * @property AnalysisComponent $ElasticLoadBalancerListener
  * @property string $MissingComponent
  * @property AnalysisComponent $NatGateway
  * @property AnalysisComponent $NetworkInterface
  * @property string $PacketField
  * @property AnalysisComponent $VpcPeeringConnection
- * @property int $Port
+ * @property int<0, 65535> $Port
  * @property list<PortRange> $PortRanges
  * @property AnalysisComponent $PrefixList
  * @property list<string> $Protocols
@@ -80,18 +80,18 @@ class Explanation extends Shape
      *     InternetGateway?: AnalysisComponent,
      *     LoadBalancerArn?: string,
      *     ClassicLoadBalancerListener?: AnalysisLoadBalancerListener,
-     *     LoadBalancerListenerPort?: int,
+     *     LoadBalancerListenerPort?: int<0, 65535>,
      *     LoadBalancerTarget?: AnalysisLoadBalancerTarget,
      *     LoadBalancerTargetGroup?: AnalysisComponent,
      *     LoadBalancerTargetGroups?: list<AnalysisComponent>,
-     *     LoadBalancerTargetPort?: int,
+     *     LoadBalancerTargetPort?: int<0, 65535>,
      *     ElasticLoadBalancerListener?: AnalysisComponent,
      *     MissingComponent?: string,
      *     NatGateway?: AnalysisComponent,
      *     NetworkInterface?: AnalysisComponent,
      *     PacketField?: string,
      *     VpcPeeringConnection?: AnalysisComponent,
-     *     Port?: int,
+     *     Port?: int<0, 65535>,
      *     PortRanges?: list<PortRange>,
      *     PrefixList?: AnalysisComponent,
      *     Protocols?: list<string>,

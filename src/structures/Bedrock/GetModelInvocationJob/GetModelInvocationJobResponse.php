@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ModelInvocationJobInputDataConfig $inputDataConfig
  * @property Shapes\ModelInvocationJobOutputDataConfig $outputDataConfig
  * @property Shapes\VpcConfig $vpcConfig
- * @property int $timeoutDurationInHours
+ * @property int<24, 168> $timeoutDurationInHours
  * @property \Aws\Api\DateTimeResult $jobExpirationTime
  */
 class GetModelInvocationJobResponse extends Response

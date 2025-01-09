@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Filter> $Filters
  * @property list<string> $ExclusionIds
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  */
 class DescribeVpcBlockPublicAccessExclusionsRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeVpcBlockPublicAccessExclusionsRequest extends Request
      *     Filters?: list<Shapes\Filter>,
      *     ExclusionIds?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<5, 1000>
      * } $args
      */
     public function __construct(array $args = [])

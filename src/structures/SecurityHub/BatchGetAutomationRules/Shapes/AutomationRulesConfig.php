@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $RuleArn
  * @property 'ENABLED'|'DISABLED' $RuleStatus
- * @property int $RuleOrder
+ * @property int<1, 1000> $RuleOrder
  * @property string $RuleName
  * @property string $Description
  * @property bool $IsTerminal
@@ -23,7 +23,7 @@ class AutomationRulesConfig extends Shape
      * @param array{
      *     RuleArn?: string,
      *     RuleStatus?: 'ENABLED'|'DISABLED',
-     *     RuleOrder?: int,
+     *     RuleOrder?: int<1, 1000>,
      *     RuleName?: string,
      *     Description?: string,
      *     IsTerminal?: bool,

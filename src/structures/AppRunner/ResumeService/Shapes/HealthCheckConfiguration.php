@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'TCP'|'HTTP' $Protocol
  * @property string $Path
- * @property int $Interval
- * @property int $Timeout
- * @property int $HealthyThreshold
- * @property int $UnhealthyThreshold
+ * @property int<1, 20> $Interval
+ * @property int<1, 20> $Timeout
+ * @property int<1, 20> $HealthyThreshold
+ * @property int<1, 20> $UnhealthyThreshold
  */
 class HealthCheckConfiguration extends Shape
 {
@@ -18,10 +18,10 @@ class HealthCheckConfiguration extends Shape
      * @param array{
      *     Protocol?: 'TCP'|'HTTP',
      *     Path?: string,
-     *     Interval?: int,
-     *     Timeout?: int,
-     *     HealthyThreshold?: int,
-     *     UnhealthyThreshold?: int
+     *     Interval?: int<1, 20>,
+     *     Timeout?: int<1, 20>,
+     *     HealthyThreshold?: int<1, 20>,
+     *     UnhealthyThreshold?: int<1, 20>
      * } $args
      */
     public function __construct(array $args = [])

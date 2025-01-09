@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\EKS\DescribeNodegroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $minSize
- * @property int $maxSize
- * @property int $desiredSize
+ * @property int<0, max> $minSize
+ * @property int<1, max> $maxSize
+ * @property int<0, max> $desiredSize
  */
 class NodegroupScalingConfig extends Shape
 {
     /**
      * @param array{
-     *     minSize?: int,
-     *     maxSize?: int,
-     *     desiredSize?: int
+     *     minSize?: int<0, max>,
+     *     maxSize?: int<1, max>,
+     *     desiredSize?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

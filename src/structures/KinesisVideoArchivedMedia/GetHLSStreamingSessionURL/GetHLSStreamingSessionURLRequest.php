@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'FRAGMENTED_MP4'|'MPEG_TS' $ContainerFormat
  * @property 'ALWAYS'|'NEVER'|'ON_DISCONTINUITY' $DiscontinuityMode
  * @property 'ALWAYS'|'NEVER' $DisplayFragmentTimestamp
- * @property int $Expires
- * @property int $MaxMediaPlaylistFragmentResults
+ * @property int<300, 43200> $Expires
+ * @property int<1, 5000> $MaxMediaPlaylistFragmentResults
  */
 class GetHLSStreamingSessionURLRequest extends Request
 {
@@ -26,8 +26,8 @@ class GetHLSStreamingSessionURLRequest extends Request
      *     ContainerFormat?: 'FRAGMENTED_MP4'|'MPEG_TS',
      *     DiscontinuityMode?: 'ALWAYS'|'NEVER'|'ON_DISCONTINUITY',
      *     DisplayFragmentTimestamp?: 'ALWAYS'|'NEVER',
-     *     Expires?: int,
-     *     MaxMediaPlaylistFragmentResults?: int
+     *     Expires?: int<300, 43200>,
+     *     MaxMediaPlaylistFragmentResults?: int<1, 5000>
      * } $args
      */
     public function __construct(array $args = [])

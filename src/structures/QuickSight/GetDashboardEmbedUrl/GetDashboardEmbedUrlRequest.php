@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $DashboardId
  * @property 'IAM'|'QUICKSIGHT'|'ANONYMOUS' $IdentityType
- * @property int $SessionLifetimeInMinutes
+ * @property int<15, 600> $SessionLifetimeInMinutes
  * @property bool $UndoRedoDisabled
  * @property bool $ResetDisabled
  * @property bool $StatePersistenceEnabled
@@ -23,7 +23,7 @@ class GetDashboardEmbedUrlRequest extends Request
      *     AwsAccountId: string,
      *     DashboardId: string,
      *     IdentityType: 'IAM'|'QUICKSIGHT'|'ANONYMOUS',
-     *     SessionLifetimeInMinutes?: int,
+     *     SessionLifetimeInMinutes?: int<15, 600>,
      *     UndoRedoDisabled?: bool,
      *     ResetDisabled?: bool,
      *     StatePersistenceEnabled?: bool,

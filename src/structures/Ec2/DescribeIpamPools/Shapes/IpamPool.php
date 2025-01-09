@@ -21,9 +21,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $AutoImport
  * @property bool $PubliclyAdvertisable
  * @property 'ipv4'|'ipv6' $AddressFamily
- * @property int $AllocationMinNetmaskLength
- * @property int $AllocationMaxNetmaskLength
- * @property int $AllocationDefaultNetmaskLength
+ * @property int<0, 128> $AllocationMinNetmaskLength
+ * @property int<0, 128> $AllocationMaxNetmaskLength
+ * @property int<0, 128> $AllocationDefaultNetmaskLength
  * @property list<IpamResourceTag> $AllocationResourceTags
  * @property list<Tag> $Tags
  * @property 'ec2' $AwsService
@@ -50,9 +50,9 @@ class IpamPool extends Shape
      *     AutoImport?: bool,
      *     PubliclyAdvertisable?: bool,
      *     AddressFamily?: 'ipv4'|'ipv6',
-     *     AllocationMinNetmaskLength?: int,
-     *     AllocationMaxNetmaskLength?: int,
-     *     AllocationDefaultNetmaskLength?: int,
+     *     AllocationMinNetmaskLength?: int<0, 128>,
+     *     AllocationMaxNetmaskLength?: int<0, 128>,
+     *     AllocationDefaultNetmaskLength?: int<0, 128>,
      *     AllocationResourceTags?: list<IpamResourceTag>,
      *     Tags?: list<Tag>,
      *     AwsService?: 'ec2',

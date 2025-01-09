@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $EndDateRange
  * @property int $CapacityDurationHours
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class DescribeCapacityBlockOfferingsRequest extends Request
 {
@@ -25,7 +25,7 @@ class DescribeCapacityBlockOfferingsRequest extends Request
      *     EndDateRange?: \Aws\Api\DateTimeResult,
      *     CapacityDurationHours: int,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

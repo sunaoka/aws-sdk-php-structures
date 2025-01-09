@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $taskId
  * @property 'CANCELLED'|'COMPLETED'|'FAILED'|'PENDING'|'PENDING_CANCEL'|'RUNNING' $statusCode
  * @property string $nextToken
- * @property int $limit
+ * @property int<1, 50> $limit
  */
 class DescribeExportTasksRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeExportTasksRequest extends Request
      *     taskId?: string,
      *     statusCode?: 'CANCELLED'|'COMPLETED'|'FAILED'|'PENDING'|'PENDING_CANCEL'|'RUNNING',
      *     nextToken?: string,
-     *     limit?: int
+     *     limit?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

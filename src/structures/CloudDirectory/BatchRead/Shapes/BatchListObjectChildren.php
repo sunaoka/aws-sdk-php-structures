@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ObjectReference $ObjectReference
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  */
 class BatchListObjectChildren extends Shape
 {
@@ -15,7 +15,7 @@ class BatchListObjectChildren extends Shape
      * @param array{
      *     ObjectReference: ObjectReference,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

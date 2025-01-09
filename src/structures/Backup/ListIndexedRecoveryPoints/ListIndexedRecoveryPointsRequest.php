@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $SourceResourceArn
  * @property \Aws\Api\DateTimeResult $CreatedBefore
  * @property \Aws\Api\DateTimeResult $CreatedAfter
@@ -18,7 +18,7 @@ class ListIndexedRecoveryPointsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     SourceResourceArn?: string,
      *     CreatedBefore?: \Aws\Api\DateTimeResult,
      *     CreatedAfter?: \Aws\Api\DateTimeResult,

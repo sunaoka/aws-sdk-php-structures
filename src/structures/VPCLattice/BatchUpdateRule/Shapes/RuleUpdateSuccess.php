@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $isDefault
  * @property RuleMatch $match
  * @property string $name
- * @property int $priority
+ * @property int<1, 100> $priority
  */
 class RuleUpdateSuccess extends Shape
 {
@@ -23,7 +23,7 @@ class RuleUpdateSuccess extends Shape
      *     isDefault?: bool,
      *     match?: RuleMatch,
      *     name?: string,
-     *     priority?: int
+     *     priority?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

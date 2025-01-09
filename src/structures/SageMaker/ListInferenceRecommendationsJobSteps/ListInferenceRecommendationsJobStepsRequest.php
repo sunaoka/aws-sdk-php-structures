@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $JobName
  * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'DELETED' $Status
  * @property 'BENCHMARK' $StepType
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListInferenceRecommendationsJobStepsRequest extends Request
@@ -18,7 +18,7 @@ class ListInferenceRecommendationsJobStepsRequest extends Request
      *     JobName: string,
      *     Status?: 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'DELETED',
      *     StepType?: 'BENCHMARK',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

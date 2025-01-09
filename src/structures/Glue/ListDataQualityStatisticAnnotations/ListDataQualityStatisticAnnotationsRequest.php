@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StatisticId
  * @property string $ProfileId
  * @property Shapes\TimestampFilter $TimestampFilter
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListDataQualityStatisticAnnotationsRequest extends Request
@@ -18,7 +18,7 @@ class ListDataQualityStatisticAnnotationsRequest extends Request
      *     StatisticId?: string,
      *     ProfileId?: string,
      *     TimestampFilter?: Shapes\TimestampFilter,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

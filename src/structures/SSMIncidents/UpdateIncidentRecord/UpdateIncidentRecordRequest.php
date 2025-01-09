@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $arn
  * @property Shapes\ChatChannel $chatChannel
  * @property string $clientToken
- * @property int $impact
+ * @property int<1, 5> $impact
  * @property list<Shapes\NotificationTargetItem> $notificationTargets
  * @property 'OPEN'|'RESOLVED' $status
  * @property string $summary
@@ -21,7 +21,7 @@ class UpdateIncidentRecordRequest extends Request
      *     arn: string,
      *     chatChannel?: Shapes\ChatChannel,
      *     clientToken?: string,
-     *     impact?: int,
+     *     impact?: int<1, 5>,
      *     notificationTargets?: list<Shapes\NotificationTargetItem>,
      *     status?: 'OPEN'|'RESOLVED',
      *     summary?: string,

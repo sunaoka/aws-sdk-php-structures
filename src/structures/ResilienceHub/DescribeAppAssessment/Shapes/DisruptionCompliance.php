@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\DescribeAppAssessment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $achievableRpoInSecs
- * @property int $achievableRtoInSecs
+ * @property int<0, max> $achievableRpoInSecs
+ * @property int<0, max> $achievableRtoInSecs
  * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy' $complianceStatus
- * @property int $currentRpoInSecs
- * @property int $currentRtoInSecs
+ * @property int<0, max> $currentRpoInSecs
+ * @property int<0, max> $currentRtoInSecs
  * @property string $message
  * @property string $rpoDescription
  * @property string $rpoReferenceId
@@ -20,11 +20,11 @@ class DisruptionCompliance extends Shape
 {
     /**
      * @param array{
-     *     achievableRpoInSecs?: int,
-     *     achievableRtoInSecs?: int,
+     *     achievableRpoInSecs?: int<0, max>,
+     *     achievableRtoInSecs?: int<0, max>,
      *     complianceStatus: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy',
-     *     currentRpoInSecs?: int,
-     *     currentRtoInSecs?: int,
+     *     currentRpoInSecs?: int<0, max>,
+     *     currentRtoInSecs?: int<0, max>,
      *     message?: string,
      *     rpoDescription?: string,
      *     rpoReferenceId?: string,

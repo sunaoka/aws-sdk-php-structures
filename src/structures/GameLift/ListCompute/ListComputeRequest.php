@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Location
  * @property string $ContainerGroupDefinitionName
  * @property 'ACTIVE'|'IMPAIRED' $ComputeStatus
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $NextToken
  */
 class ListComputeRequest extends Request
@@ -20,7 +20,7 @@ class ListComputeRequest extends Request
      *     Location?: string,
      *     ContainerGroupDefinitionName?: string,
      *     ComputeStatus?: 'ACTIVE'|'IMPAIRED',
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

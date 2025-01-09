@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ConnectionArn
  * @property string $InvocationEndpoint
  * @property 'POST'|'GET'|'HEAD'|'OPTIONS'|'PUT'|'PATCH'|'DELETE' $HttpMethod
- * @property int $InvocationRateLimitPerSecond
+ * @property int<1, max> $InvocationRateLimitPerSecond
  */
 class UpdateApiDestinationRequest extends Request
 {
@@ -21,7 +21,7 @@ class UpdateApiDestinationRequest extends Request
      *     ConnectionArn?: string,
      *     InvocationEndpoint?: string,
      *     HttpMethod?: 'POST'|'GET'|'HEAD'|'OPTIONS'|'PUT'|'PATCH'|'DELETE',
-     *     InvocationRateLimitPerSecond?: int
+     *     InvocationRateLimitPerSecond?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

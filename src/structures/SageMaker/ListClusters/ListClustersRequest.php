@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property \Aws\Api\DateTimeResult $CreationTimeAfter
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NameContains
  * @property string $NextToken
  * @property 'CREATION_TIME'|'NAME' $SortBy
@@ -20,7 +20,7 @@ class ListClustersRequest extends Request
      * @param array{
      *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NameContains?: string,
      *     NextToken?: string,
      *     SortBy?: 'CREATION_TIME'|'NAME',

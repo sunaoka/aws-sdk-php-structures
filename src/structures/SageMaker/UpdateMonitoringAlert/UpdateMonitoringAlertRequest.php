@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $MonitoringScheduleName
  * @property string $MonitoringAlertName
- * @property int $DatapointsToAlert
- * @property int $EvaluationPeriod
+ * @property int<1, 100> $DatapointsToAlert
+ * @property int<1, 100> $EvaluationPeriod
  */
 class UpdateMonitoringAlertRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateMonitoringAlertRequest extends Request
      * @param array{
      *     MonitoringScheduleName: string,
      *     MonitoringAlertName: string,
-     *     DatapointsToAlert: int,
-     *     EvaluationPeriod: int
+     *     DatapointsToAlert: int<1, 100>,
+     *     EvaluationPeriod: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

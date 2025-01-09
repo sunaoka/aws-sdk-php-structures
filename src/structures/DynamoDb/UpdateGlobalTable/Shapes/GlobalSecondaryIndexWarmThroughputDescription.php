@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\DynamoDb\UpdateGlobalTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ReadUnitsPerSecond
- * @property int $WriteUnitsPerSecond
+ * @property int<1, max> $ReadUnitsPerSecond
+ * @property int<1, max> $WriteUnitsPerSecond
  * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE' $Status
  */
 class GlobalSecondaryIndexWarmThroughputDescription extends Shape
 {
     /**
      * @param array{
-     *     ReadUnitsPerSecond?: int,
-     *     WriteUnitsPerSecond?: int,
+     *     ReadUnitsPerSecond?: int<1, max>,
+     *     WriteUnitsPerSecond?: int<1, max>,
      *     Status?: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'
      * } $args
      */

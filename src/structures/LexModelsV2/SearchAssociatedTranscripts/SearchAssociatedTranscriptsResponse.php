@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $botVersion
  * @property string $localeId
  * @property string $botRecommendationId
- * @property int $nextIndex
+ * @property int<0, 10000000> $nextIndex
  * @property list<Shapes\AssociatedTranscript> $associatedTranscripts
- * @property int $totalResults
+ * @property int<1, 1000> $totalResults
  */
 class SearchAssociatedTranscriptsResponse extends Response
 {

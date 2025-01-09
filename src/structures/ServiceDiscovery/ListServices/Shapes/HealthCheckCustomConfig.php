@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\ListServices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $FailureThreshold
+ * @property int<1, 10> $FailureThreshold
  */
 class HealthCheckCustomConfig extends Shape
 {
     /**
-     * @param array{FailureThreshold?: int} $args
+     * @param array{FailureThreshold?: int<1, 10>} $args
      */
     public function __construct(array $args = [])
     {

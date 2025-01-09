@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\ListConnectorsRequestFilters $filters
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListConnectorsRequest extends Request
@@ -14,7 +14,7 @@ class ListConnectorsRequest extends Request
     /**
      * @param array{
      *     filters?: Shapes\ListConnectorsRequestFilters,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

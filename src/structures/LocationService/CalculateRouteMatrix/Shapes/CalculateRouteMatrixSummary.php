@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DataSource
- * @property int $RouteCount
- * @property int $ErrorCount
+ * @property int<1, 160000> $RouteCount
+ * @property int<1, 160000> $ErrorCount
  * @property 'Kilometers'|'Miles' $DistanceUnit
  */
 class CalculateRouteMatrixSummary extends Shape
@@ -15,8 +15,8 @@ class CalculateRouteMatrixSummary extends Shape
     /**
      * @param array{
      *     DataSource: string,
-     *     RouteCount: int,
-     *     ErrorCount: int,
+     *     RouteCount: int<1, 160000>,
+     *     ErrorCount: int<1, 160000>,
      *     DistanceUnit: 'Kilometers'|'Miles'
      * } $args
      */

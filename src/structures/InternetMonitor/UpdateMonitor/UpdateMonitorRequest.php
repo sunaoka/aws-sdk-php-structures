@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $ResourcesToRemove
  * @property 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR' $Status
  * @property string $ClientToken
- * @property int $MaxCityNetworksToMonitor
+ * @property int<1, 500000> $MaxCityNetworksToMonitor
  * @property Shapes\InternetMeasurementsLogDelivery $InternetMeasurementsLogDelivery
- * @property int $TrafficPercentageToMonitor
+ * @property int<1, 100> $TrafficPercentageToMonitor
  * @property Shapes\HealthEventsConfig $HealthEventsConfig
  */
 class UpdateMonitorRequest extends Request
@@ -24,9 +24,9 @@ class UpdateMonitorRequest extends Request
      *     ResourcesToRemove?: list<string>,
      *     Status?: 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR',
      *     ClientToken?: string,
-     *     MaxCityNetworksToMonitor?: int,
+     *     MaxCityNetworksToMonitor?: int<1, 500000>,
      *     InternetMeasurementsLogDelivery?: Shapes\InternetMeasurementsLogDelivery,
-     *     TrafficPercentageToMonitor?: int,
+     *     TrafficPercentageToMonitor?: int<1, 100>,
      *     HealthEventsConfig?: Shapes\HealthEventsConfig
      * } $args
      */

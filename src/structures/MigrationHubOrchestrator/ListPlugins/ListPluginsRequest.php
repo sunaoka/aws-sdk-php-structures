@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MigrationHubOrchestrator\ListPlugins;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<0, 100> $maxResults
  * @property string $nextToken
  */
 class ListPluginsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<0, 100>,
      *     nextToken?: string
      * } $args
      */

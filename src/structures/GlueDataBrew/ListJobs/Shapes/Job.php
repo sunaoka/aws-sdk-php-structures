@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $LastModifiedDate
  * @property 'ENABLE'|'DISABLE' $LogSubscription
  * @property int $MaxCapacity
- * @property int $MaxRetries
+ * @property int<0, max> $MaxRetries
  * @property list<Output> $Outputs
  * @property list<DataCatalogOutput> $DataCatalogOutputs
  * @property list<DatabaseOutput> $DatabaseOutputs
@@ -25,7 +25,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RecipeReference $RecipeReference
  * @property string $ResourceArn
  * @property string $RoleArn
- * @property int $Timeout
+ * @property int<0, max> $Timeout
  * @property array<string, string> $Tags
  * @property JobSample $JobSample
  * @property list<ValidationConfiguration> $ValidationConfigurations
@@ -46,7 +46,7 @@ class Job extends Shape
      *     LastModifiedDate?: \Aws\Api\DateTimeResult,
      *     LogSubscription?: 'ENABLE'|'DISABLE',
      *     MaxCapacity?: int,
-     *     MaxRetries?: int,
+     *     MaxRetries?: int<0, max>,
      *     Outputs?: list<Output>,
      *     DataCatalogOutputs?: list<DataCatalogOutput>,
      *     DatabaseOutputs?: list<DatabaseOutput>,
@@ -54,7 +54,7 @@ class Job extends Shape
      *     RecipeReference?: RecipeReference,
      *     ResourceArn?: string,
      *     RoleArn?: string,
-     *     Timeout?: int,
+     *     Timeout?: int<0, max>,
      *     Tags?: array<string, string>,
      *     JobSample?: JobSample,
      *     ValidationConfigurations?: list<ValidationConfiguration>

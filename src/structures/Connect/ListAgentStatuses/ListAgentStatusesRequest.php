@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property list<'ROUTABLE'|'CUSTOM'|'OFFLINE'> $AgentStatusTypes
  */
 class ListAgentStatusesRequest extends Request
@@ -16,7 +16,7 @@ class ListAgentStatusesRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     AgentStatusTypes?: list<'ROUTABLE'|'CUSTOM'|'OFFLINE'>
      * } $args
      */

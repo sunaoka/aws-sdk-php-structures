@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Route53Profiles\ListProfileResourceAssociations
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property string $ProfileId
  * @property string $ResourceType
@@ -14,7 +14,7 @@ class ListProfileResourceAssociationsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     ProfileId: string,
      *     ResourceType?: string

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListAppImageConfigs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property string $NameContains
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
@@ -19,7 +19,7 @@ class ListAppImageConfigsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     NameContains?: string,
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,

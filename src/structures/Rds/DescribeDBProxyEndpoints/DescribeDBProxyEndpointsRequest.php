@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DBProxyEndpointName
  * @property list<Shapes\Filter> $Filters
  * @property string $Marker
- * @property int $MaxRecords
+ * @property int<20, 100> $MaxRecords
  */
 class DescribeDBProxyEndpointsRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeDBProxyEndpointsRequest extends Request
      *     DBProxyEndpointName?: string,
      *     Filters?: list<Shapes\Filter>,
      *     Marker?: string,
-     *     MaxRecords?: int
+     *     MaxRecords?: int<20, 100>
      * } $args
      */
     public function __construct(array $args = [])

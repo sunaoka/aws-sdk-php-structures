@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationInstanceId
- * @property int $MaxResults
+ * @property int<0, 25> $MaxResults
  * @property string $NextToken
  */
 class ListApplicationInstanceDependenciesRequest extends Request
@@ -14,7 +14,7 @@ class ListApplicationInstanceDependenciesRequest extends Request
     /**
      * @param array{
      *     ApplicationInstanceId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 25>,
      *     NextToken?: string
      * } $args
      */

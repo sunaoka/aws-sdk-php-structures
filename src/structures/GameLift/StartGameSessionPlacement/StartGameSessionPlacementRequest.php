@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $PlacementId
  * @property string $GameSessionQueueName
  * @property list<Shapes\GameProperty> $GameProperties
- * @property int $MaximumPlayerSessionCount
+ * @property int<0, max> $MaximumPlayerSessionCount
  * @property string $GameSessionName
  * @property list<Shapes\PlayerLatency> $PlayerLatencies
  * @property list<Shapes\DesiredPlayerSession> $DesiredPlayerSessions
@@ -21,7 +21,7 @@ class StartGameSessionPlacementRequest extends Request
      *     PlacementId: string,
      *     GameSessionQueueName: string,
      *     GameProperties?: list<Shapes\GameProperty>,
-     *     MaximumPlayerSessionCount: int,
+     *     MaximumPlayerSessionCount: int<0, max>,
      *     GameSessionName?: string,
      *     PlayerLatencies?: list<Shapes\PlayerLatency>,
      *     DesiredPlayerSessions?: list<Shapes\DesiredPlayerSession>,

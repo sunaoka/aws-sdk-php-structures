@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClientToken
  * @property string $RelayName
  * @property string $ServerName
- * @property int $ServerPort
+ * @property int<1, 65535> $ServerPort
  * @property list<Shapes\Tag> $Tags
  */
 class CreateRelayRequest extends Request
@@ -20,7 +20,7 @@ class CreateRelayRequest extends Request
      *     ClientToken?: string,
      *     RelayName: string,
      *     ServerName: string,
-     *     ServerPort: int,
+     *     ServerPort: int<1, 65535>,
      *     Tags?: list<Shapes\Tag>
      * } $args
      */

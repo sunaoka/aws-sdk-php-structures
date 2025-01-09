@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property int $interval
- * @property int $retentionDuration
- * @property int $ruleID
+ * @property int<1, max> $interval
+ * @property int<1, max> $retentionDuration
+ * @property int<0, max> $ruleID
  * @property 'MINUTE'|'HOUR'|'DAY' $units
  */
 class PITPolicyRule extends Shape
@@ -16,9 +16,9 @@ class PITPolicyRule extends Shape
     /**
      * @param array{
      *     enabled?: bool,
-     *     interval: int,
-     *     retentionDuration: int,
-     *     ruleID?: int,
+     *     interval: int<1, max>,
+     *     retentionDuration: int<1, max>,
+     *     ruleID?: int<0, max>,
      *     units: 'MINUTE'|'HOUR'|'DAY'
      * } $args
      */

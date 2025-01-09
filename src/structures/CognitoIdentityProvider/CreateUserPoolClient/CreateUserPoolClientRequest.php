@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserPoolId
  * @property string $ClientName
  * @property bool $GenerateSecret
- * @property int $RefreshTokenValidity
- * @property int $AccessTokenValidity
- * @property int $IdTokenValidity
+ * @property int<0, 315360000> $RefreshTokenValidity
+ * @property int<1, 86400> $AccessTokenValidity
+ * @property int<1, 86400> $IdTokenValidity
  * @property Shapes\TokenValidityUnitsType $TokenValidityUnits
  * @property list<string> $ReadAttributes
  * @property list<string> $WriteAttributes
@@ -26,7 +26,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'LEGACY'|'ENABLED' $PreventUserExistenceErrors
  * @property bool $EnableTokenRevocation
  * @property bool $EnablePropagateAdditionalUserContextData
- * @property int $AuthSessionValidity
+ * @property int<3, 15> $AuthSessionValidity
  */
 class CreateUserPoolClientRequest extends Request
 {
@@ -35,9 +35,9 @@ class CreateUserPoolClientRequest extends Request
      *     UserPoolId: string,
      *     ClientName: string,
      *     GenerateSecret?: bool,
-     *     RefreshTokenValidity?: int,
-     *     AccessTokenValidity?: int,
-     *     IdTokenValidity?: int,
+     *     RefreshTokenValidity?: int<0, 315360000>,
+     *     AccessTokenValidity?: int<1, 86400>,
+     *     IdTokenValidity?: int<1, 86400>,
      *     TokenValidityUnits?: Shapes\TokenValidityUnitsType,
      *     ReadAttributes?: list<string>,
      *     WriteAttributes?: list<string>,
@@ -53,7 +53,7 @@ class CreateUserPoolClientRequest extends Request
      *     PreventUserExistenceErrors?: 'LEGACY'|'ENABLED',
      *     EnableTokenRevocation?: bool,
      *     EnablePropagateAdditionalUserContextData?: bool,
-     *     AuthSessionValidity?: int
+     *     AuthSessionValidity?: int<3, 15>
      * } $args
      */
     public function __construct(array $args)

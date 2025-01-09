@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AliasId
  * @property string $Location
  * @property string $StatusFilter
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $NextToken
  */
 class DescribeGameSessionDetailsRequest extends Request
@@ -22,7 +22,7 @@ class DescribeGameSessionDetailsRequest extends Request
      *     AliasId?: string,
      *     Location?: string,
      *     StatusFilter?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\ListTagOptionsFilters $Filters
- * @property int $PageSize
+ * @property int<0, 20> $PageSize
  * @property string $PageToken
  */
 class ListTagOptionsRequest extends Request
@@ -14,7 +14,7 @@ class ListTagOptionsRequest extends Request
     /**
      * @param array{
      *     Filters?: Shapes\ListTagOptionsFilters,
-     *     PageSize?: int,
+     *     PageSize?: int<0, 20>,
      *     PageToken?: string
      * } $args
      */

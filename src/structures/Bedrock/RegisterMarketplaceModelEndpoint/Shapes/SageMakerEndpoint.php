@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Bedrock\RegisterMarketplaceModelEndpoint\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $initialInstanceCount
+ * @property int<1, max> $initialInstanceCount
  * @property string $instanceType
  * @property string $executionRole
  * @property string $kmsEncryptionKey
@@ -15,7 +15,7 @@ class SageMakerEndpoint extends Shape
 {
     /**
      * @param array{
-     *     initialInstanceCount: int,
+     *     initialInstanceCount: int<1, max>,
      *     instanceType: string,
      *     executionRole: string,
      *     kmsEncryptionKey?: string,

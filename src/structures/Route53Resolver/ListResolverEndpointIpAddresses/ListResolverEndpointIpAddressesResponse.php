@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property list<Shapes\IpAddressResponse> $IpAddresses
  */
 class ListResolverEndpointIpAddressesResponse extends Response

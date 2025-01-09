@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourcePrefix
  * @property string $TargetPrefix
  * @property string $NextToken
- * @property int $Limit
+ * @property int<1, 100> $Limit
  */
 class ListPipesRequest extends Request
 {
@@ -23,7 +23,7 @@ class ListPipesRequest extends Request
      *     SourcePrefix?: string,
      *     TargetPrefix?: string,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool $DryRun
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property list<string> $InstanceIds
  * @property list<string> $GroupNames
  * @property list<Shapes\Filter> $Filters
@@ -18,7 +18,7 @@ class DescribeInstanceTopologyRequest extends Request
      * @param array{
      *     DryRun?: bool,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     InstanceIds?: list<string>,
      *     GroupNames?: list<string>,
      *     Filters?: list<Shapes\Filter>

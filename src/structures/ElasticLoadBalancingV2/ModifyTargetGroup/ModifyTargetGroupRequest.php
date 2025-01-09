@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $HealthCheckPort
  * @property string $HealthCheckPath
  * @property bool $HealthCheckEnabled
- * @property int $HealthCheckIntervalSeconds
- * @property int $HealthCheckTimeoutSeconds
- * @property int $HealthyThresholdCount
- * @property int $UnhealthyThresholdCount
+ * @property int<5, 300> $HealthCheckIntervalSeconds
+ * @property int<2, 120> $HealthCheckTimeoutSeconds
+ * @property int<2, 10> $HealthyThresholdCount
+ * @property int<2, 10> $UnhealthyThresholdCount
  * @property Shapes\Matcher $Matcher
  */
 class ModifyTargetGroupRequest extends Request
@@ -25,10 +25,10 @@ class ModifyTargetGroupRequest extends Request
      *     HealthCheckPort?: string,
      *     HealthCheckPath?: string,
      *     HealthCheckEnabled?: bool,
-     *     HealthCheckIntervalSeconds?: int,
-     *     HealthCheckTimeoutSeconds?: int,
-     *     HealthyThresholdCount?: int,
-     *     UnhealthyThresholdCount?: int,
+     *     HealthCheckIntervalSeconds?: int<5, 300>,
+     *     HealthCheckTimeoutSeconds?: int<2, 120>,
+     *     HealthyThresholdCount?: int<2, 10>,
+     *     UnhealthyThresholdCount?: int<2, 10>,
      *     Matcher?: Shapes\Matcher
      * } $args
      */

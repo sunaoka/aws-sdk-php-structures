@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $aiPromptId
  * @property string $assistantId
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property 'SYSTEM'|'CUSTOMER' $origin
  */
@@ -17,7 +17,7 @@ class ListAIPromptVersionsRequest extends Request
      * @param array{
      *     aiPromptId: string,
      *     assistantId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     origin?: 'SYSTEM'|'CUSTOMER'
      * } $args

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $active
  * @property FulfillmentStartResponseSpecification $startResponse
  * @property FulfillmentUpdateResponseSpecification $updateResponse
- * @property int $timeoutInSeconds
+ * @property int<1, 900> $timeoutInSeconds
  */
 class FulfillmentUpdatesSpecification extends Shape
 {
@@ -17,7 +17,7 @@ class FulfillmentUpdatesSpecification extends Shape
      *     active: bool,
      *     startResponse?: FulfillmentStartResponseSpecification,
      *     updateResponse?: FulfillmentUpdateResponseSpecification,
-     *     timeoutInSeconds?: int
+     *     timeoutInSeconds?: int<1, 900>
      * } $args
      */
     public function __construct(array $args)

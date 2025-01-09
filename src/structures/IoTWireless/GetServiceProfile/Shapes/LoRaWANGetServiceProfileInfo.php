@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetServiceProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $UlRate
- * @property int $UlBucketSize
+ * @property int<0, 2147483647> $UlRate
+ * @property int<0, 2147483647> $UlBucketSize
  * @property string $UlRatePolicy
- * @property int $DlRate
- * @property int $DlBucketSize
+ * @property int<0, 2147483647> $DlRate
+ * @property int<0, 2147483647> $DlBucketSize
  * @property string $DlRatePolicy
  * @property bool $AddGwMetadata
- * @property int $DevStatusReqFreq
+ * @property int<0, 2147483647> $DevStatusReqFreq
  * @property bool $ReportDevStatusBattery
  * @property bool $ReportDevStatusMargin
- * @property int $DrMin
- * @property int $DrMax
+ * @property int<0, 15> $DrMin
+ * @property int<0, 15> $DrMax
  * @property string $ChannelMask
  * @property bool $PrAllowed
  * @property bool $HrAllowed
  * @property bool $RaAllowed
  * @property bool $NwkGeoLoc
- * @property int $TargetPer
- * @property int $MinGwDiversity
+ * @property int<0, 100> $TargetPer
+ * @property int<1, 100> $MinGwDiversity
  */
 class LoRaWANGetServiceProfileInfo extends Shape
 {
     /**
      * @param array{
-     *     UlRate?: int,
-     *     UlBucketSize?: int,
+     *     UlRate?: int<0, 2147483647>,
+     *     UlBucketSize?: int<0, 2147483647>,
      *     UlRatePolicy?: string,
-     *     DlRate?: int,
-     *     DlBucketSize?: int,
+     *     DlRate?: int<0, 2147483647>,
+     *     DlBucketSize?: int<0, 2147483647>,
      *     DlRatePolicy?: string,
      *     AddGwMetadata?: bool,
-     *     DevStatusReqFreq?: int,
+     *     DevStatusReqFreq?: int<0, 2147483647>,
      *     ReportDevStatusBattery?: bool,
      *     ReportDevStatusMargin?: bool,
-     *     DrMin?: int,
-     *     DrMax?: int,
+     *     DrMin?: int<0, 15>,
+     *     DrMax?: int<0, 15>,
      *     ChannelMask?: string,
      *     PrAllowed?: bool,
      *     HrAllowed?: bool,
      *     RaAllowed?: bool,
      *     NwkGeoLoc?: bool,
-     *     TargetPer?: int,
-     *     MinGwDiversity?: int
+     *     TargetPer?: int<0, 100>,
+     *     MinGwDiversity?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

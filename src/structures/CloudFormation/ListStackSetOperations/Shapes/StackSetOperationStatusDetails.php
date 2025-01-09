@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ListStackSetOperations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $FailedStackInstancesCount
+ * @property int<0, max> $FailedStackInstancesCount
  */
 class StackSetOperationStatusDetails extends Shape
 {
     /**
-     * @param array{FailedStackInstancesCount?: int} $args
+     * @param array{FailedStackInstancesCount?: int<0, max>} $args
      */
     public function __construct(array $args = [])
     {

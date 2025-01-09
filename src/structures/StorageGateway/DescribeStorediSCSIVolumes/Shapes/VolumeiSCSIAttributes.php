@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TargetARN
  * @property string $NetworkInterfaceId
  * @property int $NetworkInterfacePort
- * @property int $LunNumber
+ * @property int<1, max> $LunNumber
  * @property bool $ChapEnabled
  */
 class VolumeiSCSIAttributes extends Shape
@@ -18,7 +18,7 @@ class VolumeiSCSIAttributes extends Shape
      *     TargetARN?: string,
      *     NetworkInterfaceId?: string,
      *     NetworkInterfacePort?: int,
-     *     LunNumber?: int,
+     *     LunNumber?: int<1, max>,
      *     ChapEnabled?: bool
      * } $args
      */

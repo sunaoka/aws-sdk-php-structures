@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property int $Port
+ * @property int<1, 65535> $Port
  * @property string $AvailabilityZone
  */
 class TargetDescription extends Shape
@@ -14,7 +14,7 @@ class TargetDescription extends Shape
     /**
      * @param array{
      *     Id: string,
-     *     Port?: int,
+     *     Port?: int<1, 65535>,
      *     AvailabilityZone?: string
      * } $args
      */

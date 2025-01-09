@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetSegmentDetection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Index
+ * @property int<0, max> $Index
  * @property float $Confidence
  */
 class ShotSegment extends Shape
 {
     /**
      * @param array{
-     *     Index?: int,
+     *     Index?: int<0, max>,
      *     Confidence?: float
      * } $args
      */

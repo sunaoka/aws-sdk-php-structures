@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $description
  * @property string $name
  * @property bool $optional
- * @property int $order
+ * @property int<2, 10000> $order
  * @property array<string, Shapes\LaunchActionParameter> $parameters
  * @property string $resourceId
  * @property 'SSM_AUTOMATION'|'SSM_COMMAND' $type

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeInstanceRefreshes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MinHealthyPercentage
- * @property int $InstanceWarmup
- * @property list<int> $CheckpointPercentages
- * @property int $CheckpointDelay
+ * @property int<0, 100> $MinHealthyPercentage
+ * @property int<0, max> $InstanceWarmup
+ * @property list<int<1, 100>> $CheckpointPercentages
+ * @property int<0, 172800> $CheckpointDelay
  * @property bool $SkipMatching
  * @property bool $AutoRollback
  * @property 'Refresh'|'Ignore'|'Wait' $ScaleInProtectedInstances
  * @property 'Terminate'|'Ignore'|'Wait' $StandbyInstances
  * @property AlarmSpecification $AlarmSpecification
- * @property int $MaxHealthyPercentage
- * @property int $BakeTime
+ * @property int<100, 200> $MaxHealthyPercentage
+ * @property int<0, 172800> $BakeTime
  */
 class RefreshPreferences extends Shape
 {
     /**
      * @param array{
-     *     MinHealthyPercentage?: int,
-     *     InstanceWarmup?: int,
-     *     CheckpointPercentages?: list<int>,
-     *     CheckpointDelay?: int,
+     *     MinHealthyPercentage?: int<0, 100>,
+     *     InstanceWarmup?: int<0, max>,
+     *     CheckpointPercentages?: list<int<1, 100>>,
+     *     CheckpointDelay?: int<0, 172800>,
      *     SkipMatching?: bool,
      *     AutoRollback?: bool,
      *     ScaleInProtectedInstances?: 'Refresh'|'Ignore'|'Wait',
      *     StandbyInstances?: 'Terminate'|'Ignore'|'Wait',
      *     AlarmSpecification?: AlarmSpecification,
-     *     MaxHealthyPercentage?: int,
-     *     BakeTime?: int
+     *     MaxHealthyPercentage?: int<100, 200>,
+     *     BakeTime?: int<0, 172800>
      * } $args
      */
     public function __construct(array $args = [])

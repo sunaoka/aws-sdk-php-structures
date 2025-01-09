@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecurityLake\ListDataLakeExceptions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property list<string> $regions
  */
@@ -13,7 +13,7 @@ class ListDataLakeExceptionsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     regions?: list<string>
      * } $args

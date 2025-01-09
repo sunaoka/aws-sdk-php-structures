@@ -25,8 +25,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $owner
  * @property string $ownerContact
  * @property 'ENABLED'|'DISABLED' $introspectionConfig
- * @property int $queryDepthLimit
- * @property int $resolverCountLimit
+ * @property int<0, 75> $queryDepthLimit
+ * @property int<0, 10000> $resolverCountLimit
  * @property EnhancedMetricsConfig $enhancedMetricsConfig
  */
 class GraphqlApi extends Shape
@@ -53,8 +53,8 @@ class GraphqlApi extends Shape
      *     owner?: string,
      *     ownerContact?: string,
      *     introspectionConfig?: 'ENABLED'|'DISABLED',
-     *     queryDepthLimit?: int,
-     *     resolverCountLimit?: int,
+     *     queryDepthLimit?: int<0, 75>,
+     *     resolverCountLimit?: int<0, 10000>,
      *     enhancedMetricsConfig?: EnhancedMetricsConfig
      * } $args
      */

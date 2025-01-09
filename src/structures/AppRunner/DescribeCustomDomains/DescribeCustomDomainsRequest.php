@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ServiceArn
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 5> $MaxResults
  */
 class DescribeCustomDomainsRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeCustomDomainsRequest extends Request
      * @param array{
      *     ServiceArn: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 5>
      * } $args
      */
     public function __construct(array $args)

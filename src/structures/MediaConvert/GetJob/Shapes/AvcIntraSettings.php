@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AvcIntraUhdSettings $AvcIntraUhdSettings
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
  * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int $FramerateDenominator
- * @property int $FramerateNumerator
+ * @property int<1, 1001> $FramerateDenominator
+ * @property int<24, 60000> $FramerateNumerator
  * @property 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD' $InterlaceMode
  * @property 'INTERLACED'|'INTERLACED_OPTIMIZE' $ScanTypeConversionMode
  * @property 'DISABLED'|'ENABLED' $SlowPal
@@ -24,8 +24,8 @@ class AvcIntraSettings extends Shape
      *     AvcIntraUhdSettings?: AvcIntraUhdSettings,
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
      *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int,
-     *     FramerateNumerator?: int,
+     *     FramerateDenominator?: int<1, 1001>,
+     *     FramerateNumerator?: int<24, 60000>,
      *     InterlaceMode?: 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD',
      *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE',
      *     SlowPal?: 'DISABLED'|'ENABLED',

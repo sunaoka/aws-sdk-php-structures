@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $applicationArn
  * @property string $applicationId
- * @property int $applicationVersion
+ * @property int<1, max> $applicationVersion
  */
 class CreateApplicationResponse extends Response
 {

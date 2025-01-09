@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $alarmModelVersion
  * @property string $keyValue
  * @property AlarmState $alarmState
- * @property int $severity
+ * @property int<0, 2147483647> $severity
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastUpdateTime
  */
@@ -21,7 +21,7 @@ class Alarm extends Shape
      *     alarmModelVersion?: string,
      *     keyValue?: string,
      *     alarmState?: AlarmState,
-     *     severity?: int,
+     *     severity?: int<0, 2147483647>,
      *     creationTime?: \Aws\Api\DateTimeResult,
      *     lastUpdateTime?: \Aws\Api\DateTimeResult
      * } $args

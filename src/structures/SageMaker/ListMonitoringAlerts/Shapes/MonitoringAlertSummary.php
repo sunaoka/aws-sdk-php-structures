@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property 'InAlert'|'OK' $AlertStatus
- * @property int $DatapointsToAlert
- * @property int $EvaluationPeriod
+ * @property int<1, 100> $DatapointsToAlert
+ * @property int<1, 100> $EvaluationPeriod
  * @property MonitoringAlertActions $Actions
  */
 class MonitoringAlertSummary extends Shape
@@ -21,8 +21,8 @@ class MonitoringAlertSummary extends Shape
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
      *     AlertStatus: 'InAlert'|'OK',
-     *     DatapointsToAlert: int,
-     *     EvaluationPeriod: int,
+     *     DatapointsToAlert: int<1, 100>,
+     *     EvaluationPeriod: int<1, 100>,
      *     Actions: MonitoringAlertActions
      * } $args
      */

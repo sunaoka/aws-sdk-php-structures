@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $listSuppressedAlerts
  * @property 'FALSE_POSITIVE'|'BENIGN_POSITIVE'|'TRUE_POSITIVE'|'UNKNOWN' $verificationState
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class ListActiveViolationsRequest extends Request
 {
@@ -23,7 +23,7 @@ class ListActiveViolationsRequest extends Request
      *     listSuppressedAlerts?: bool,
      *     verificationState?: 'FALSE_POSITIVE'|'BENIGN_POSITIVE'|'TRUE_POSITIVE'|'UNKNOWN',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args = [])

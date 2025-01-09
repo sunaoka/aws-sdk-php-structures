@@ -22,8 +22,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FailureCode
  * @property string $FailureMessage
  * @property 'DYNAMODB_JSON'|'ION' $ExportFormat
- * @property int $BilledSizeBytes
- * @property int $ItemCount
+ * @property int<0, max> $BilledSizeBytes
+ * @property int<0, max> $ItemCount
  * @property 'FULL_EXPORT'|'INCREMENTAL_EXPORT' $ExportType
  * @property IncrementalExportSpecification $IncrementalExportSpecification
  */
@@ -48,8 +48,8 @@ class ExportDescription extends Shape
      *     FailureCode?: string,
      *     FailureMessage?: string,
      *     ExportFormat?: 'DYNAMODB_JSON'|'ION',
-     *     BilledSizeBytes?: int,
-     *     ItemCount?: int,
+     *     BilledSizeBytes?: int<0, max>,
+     *     ItemCount?: int<0, max>,
      *     ExportType?: 'FULL_EXPORT'|'INCREMENTAL_EXPORT',
      *     IncrementalExportSpecification?: IncrementalExportSpecification
      * } $args

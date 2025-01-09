@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Scte35DeliveryRestrictions $DeliveryRestrictions
- * @property int $SegmentNum
+ * @property int<0, 255> $SegmentNum
  * @property 'SEGMENTATION_EVENT_NOT_CANCELED'|'SEGMENTATION_EVENT_CANCELED' $SegmentationCancelIndicator
- * @property int $SegmentationDuration
- * @property int $SegmentationEventId
- * @property int $SegmentationTypeId
+ * @property int<0, 1099511627775> $SegmentationDuration
+ * @property int<0, 4294967295> $SegmentationEventId
+ * @property int<0, 255> $SegmentationTypeId
  * @property string $SegmentationUpid
- * @property int $SegmentationUpidType
- * @property int $SegmentsExpected
- * @property int $SubSegmentNum
- * @property int $SubSegmentsExpected
+ * @property int<0, 255> $SegmentationUpidType
+ * @property int<0, 255> $SegmentsExpected
+ * @property int<0, 255> $SubSegmentNum
+ * @property int<0, 255> $SubSegmentsExpected
  */
 class Scte35SegmentationDescriptor extends Shape
 {
     /**
      * @param array{
      *     DeliveryRestrictions?: Scte35DeliveryRestrictions,
-     *     SegmentNum?: int,
+     *     SegmentNum?: int<0, 255>,
      *     SegmentationCancelIndicator: 'SEGMENTATION_EVENT_NOT_CANCELED'|'SEGMENTATION_EVENT_CANCELED',
-     *     SegmentationDuration?: int,
-     *     SegmentationEventId: int,
-     *     SegmentationTypeId?: int,
+     *     SegmentationDuration?: int<0, 1099511627775>,
+     *     SegmentationEventId: int<0, 4294967295>,
+     *     SegmentationTypeId?: int<0, 255>,
      *     SegmentationUpid?: string,
-     *     SegmentationUpidType?: int,
-     *     SegmentsExpected?: int,
-     *     SubSegmentNum?: int,
-     *     SubSegmentsExpected?: int
+     *     SegmentationUpidType?: int<0, 255>,
+     *     SegmentsExpected?: int<0, 255>,
+     *     SubSegmentNum?: int<0, 255>,
+     *     SubSegmentsExpected?: int<0, 255>
      * } $args
      */
     public function __construct(array $args)

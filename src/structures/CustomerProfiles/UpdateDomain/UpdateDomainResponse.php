@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $DomainName
- * @property int $DefaultExpirationDays
+ * @property int<1, 1098> $DefaultExpirationDays
  * @property string $DefaultEncryptionKey
  * @property string $DeadLetterQueueUrl
  * @property Shapes\MatchingResponse $Matching

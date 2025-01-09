@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\DocumentClassifierFilter $Filter
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  */
 class ListDocumentClassifiersRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListDocumentClassifiersRequest extends Request
      * @param array{
      *     Filter?: Shapes\DocumentClassifierFilter,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 500>
      * } $args
      */
     public function __construct(array $args = [])

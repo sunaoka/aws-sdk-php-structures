@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListTestSetRecords\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $recordNumber
+ * @property int<1, 200000> $recordNumber
  * @property string $conversationId
- * @property int $turnNumber
+ * @property int<0, 30> $turnNumber
  * @property TurnSpecification $turnSpecification
  */
 class TestSetTurnRecord extends Shape
 {
     /**
      * @param array{
-     *     recordNumber: int,
+     *     recordNumber: int<1, 200000>,
      *     conversationId?: string,
-     *     turnNumber?: int,
+     *     turnNumber?: int<0, 30>,
      *     turnSpecification: TurnSpecification
      * } $args
      */

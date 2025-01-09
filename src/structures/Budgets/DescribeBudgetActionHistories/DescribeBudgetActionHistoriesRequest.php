@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $BudgetName
  * @property string $ActionId
  * @property Shapes\TimePeriod $TimePeriod
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeBudgetActionHistoriesRequest extends Request
@@ -20,7 +20,7 @@ class DescribeBudgetActionHistoriesRequest extends Request
      *     BudgetName: string,
      *     ActionId: string,
      *     TimePeriod?: Shapes\TimePeriod,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

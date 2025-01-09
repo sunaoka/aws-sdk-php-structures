@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\TranscribeService\StartCallAnalyticsJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ChannelId
+ * @property int<0, 1> $ChannelId
  * @property 'AGENT'|'CUSTOMER' $ParticipantRole
  */
 class ChannelDefinition extends Shape
 {
     /**
      * @param array{
-     *     ChannelId?: int,
+     *     ChannelId?: int<0, 1>,
      *     ParticipantRole?: 'AGENT'|'CUSTOMER'
      * } $args
      */

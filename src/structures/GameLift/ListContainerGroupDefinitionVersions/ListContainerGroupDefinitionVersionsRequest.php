@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property int $Limit
+ * @property int<1, 100> $Limit
  * @property string $NextToken
  */
 class ListContainerGroupDefinitionVersionsRequest extends Request
@@ -14,7 +14,7 @@ class ListContainerGroupDefinitionVersionsRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     Limit?: int,
+     *     Limit?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkteamArn
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property \Aws\Api\DateTimeResult $CreationTimeAfter
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
@@ -19,7 +19,7 @@ class ListLabelingJobsForWorkteamRequest extends Request
     /**
      * @param array{
      *     WorkteamArn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,

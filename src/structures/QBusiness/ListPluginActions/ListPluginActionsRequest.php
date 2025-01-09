@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $pluginId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  */
 class ListPluginActionsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListPluginActionsRequest extends Request
      *     applicationId: string,
      *     pluginId: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

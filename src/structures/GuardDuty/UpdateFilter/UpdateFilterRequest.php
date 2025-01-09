@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FilterName
  * @property string $Description
  * @property 'NOOP'|'ARCHIVE' $Action
- * @property int $Rank
+ * @property int<1, 100> $Rank
  * @property Shapes\FindingCriteria $FindingCriteria
  */
 class UpdateFilterRequest extends Request
@@ -20,7 +20,7 @@ class UpdateFilterRequest extends Request
      *     FilterName: string,
      *     Description?: string,
      *     Action?: 'NOOP'|'ARCHIVE',
-     *     Rank?: int,
+     *     Rank?: int<1, 100>,
      *     FindingCriteria?: Shapes\FindingCriteria
      * } $args
      */

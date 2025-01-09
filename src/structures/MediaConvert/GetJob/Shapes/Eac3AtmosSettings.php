@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Bitrate
+ * @property int<384000, 1024000> $Bitrate
  * @property 'COMPLETE_MAIN' $BitstreamMode
  * @property 'CODING_MODE_AUTO'|'CODING_MODE_5_1_4'|'CODING_MODE_7_1_4'|'CODING_MODE_9_1_6' $CodingMode
  * @property 'ENABLED'|'DISABLED' $DialogueIntelligence
@@ -18,8 +18,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double $LtRtCenterMixLevel
  * @property double $LtRtSurroundMixLevel
  * @property 'LEQ_A'|'ITU_BS_1770_1'|'ITU_BS_1770_2'|'ITU_BS_1770_3'|'ITU_BS_1770_4' $MeteringMode
- * @property int $SampleRate
- * @property int $SpeechThreshold
+ * @property int<48000, 48000> $SampleRate
+ * @property int<0, 100> $SpeechThreshold
  * @property 'NOT_INDICATED'|'STEREO'|'SURROUND'|'DPL2' $StereoDownmix
  * @property 'NOT_INDICATED'|'ENABLED'|'DISABLED' $SurroundExMode
  */
@@ -27,7 +27,7 @@ class Eac3AtmosSettings extends Shape
 {
     /**
      * @param array{
-     *     Bitrate?: int,
+     *     Bitrate?: int<384000, 1024000>,
      *     BitstreamMode?: 'COMPLETE_MAIN',
      *     CodingMode?: 'CODING_MODE_AUTO'|'CODING_MODE_5_1_4'|'CODING_MODE_7_1_4'|'CODING_MODE_9_1_6',
      *     DialogueIntelligence?: 'ENABLED'|'DISABLED',
@@ -40,8 +40,8 @@ class Eac3AtmosSettings extends Shape
      *     LtRtCenterMixLevel?: double,
      *     LtRtSurroundMixLevel?: double,
      *     MeteringMode?: 'LEQ_A'|'ITU_BS_1770_1'|'ITU_BS_1770_2'|'ITU_BS_1770_3'|'ITU_BS_1770_4',
-     *     SampleRate?: int,
-     *     SpeechThreshold?: int,
+     *     SampleRate?: int<48000, 48000>,
+     *     SpeechThreshold?: int<0, 100>,
      *     StereoDownmix?: 'NOT_INDICATED'|'STEREO'|'SURROUND'|'DPL2',
      *     SurroundExMode?: 'NOT_INDICATED'|'ENABLED'|'DISABLED'
      * } $args

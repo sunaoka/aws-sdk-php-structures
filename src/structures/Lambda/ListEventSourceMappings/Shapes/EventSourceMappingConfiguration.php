@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $UUID
  * @property 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP' $StartingPosition
  * @property \Aws\Api\DateTimeResult $StartingPositionTimestamp
- * @property int $BatchSize
- * @property int $MaximumBatchingWindowInSeconds
- * @property int $ParallelizationFactor
+ * @property int<1, 10000> $BatchSize
+ * @property int<0, 300> $MaximumBatchingWindowInSeconds
+ * @property int<1, 10> $ParallelizationFactor
  * @property string $EventSourceArn
  * @property FilterCriteria $FilterCriteria
  * @property string $FunctionArn
@@ -23,10 +23,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $Queues
  * @property list<SourceAccessConfiguration> $SourceAccessConfigurations
  * @property SelfManagedEventSource $SelfManagedEventSource
- * @property int $MaximumRecordAgeInSeconds
+ * @property int<-1, 604800> $MaximumRecordAgeInSeconds
  * @property bool $BisectBatchOnFunctionError
- * @property int $MaximumRetryAttempts
- * @property int $TumblingWindowInSeconds
+ * @property int<-1, 10000> $MaximumRetryAttempts
+ * @property int<0, 900> $TumblingWindowInSeconds
  * @property list<'ReportBatchItemFailures'> $FunctionResponseTypes
  * @property AmazonManagedKafkaEventSourceConfig $AmazonManagedKafkaEventSourceConfig
  * @property SelfManagedKafkaEventSourceConfig $SelfManagedKafkaEventSourceConfig
@@ -45,9 +45,9 @@ class EventSourceMappingConfiguration extends Shape
      *     UUID?: string,
      *     StartingPosition?: 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP',
      *     StartingPositionTimestamp?: \Aws\Api\DateTimeResult,
-     *     BatchSize?: int,
-     *     MaximumBatchingWindowInSeconds?: int,
-     *     ParallelizationFactor?: int,
+     *     BatchSize?: int<1, 10000>,
+     *     MaximumBatchingWindowInSeconds?: int<0, 300>,
+     *     ParallelizationFactor?: int<1, 10>,
      *     EventSourceArn?: string,
      *     FilterCriteria?: FilterCriteria,
      *     FunctionArn?: string,
@@ -60,10 +60,10 @@ class EventSourceMappingConfiguration extends Shape
      *     Queues?: list<string>,
      *     SourceAccessConfigurations?: list<SourceAccessConfiguration>,
      *     SelfManagedEventSource?: SelfManagedEventSource,
-     *     MaximumRecordAgeInSeconds?: int,
+     *     MaximumRecordAgeInSeconds?: int<-1, 604800>,
      *     BisectBatchOnFunctionError?: bool,
-     *     MaximumRetryAttempts?: int,
-     *     TumblingWindowInSeconds?: int,
+     *     MaximumRetryAttempts?: int<-1, 10000>,
+     *     TumblingWindowInSeconds?: int<0, 900>,
      *     FunctionResponseTypes?: list<'ReportBatchItemFailures'>,
      *     AmazonManagedKafkaEventSourceConfig?: AmazonManagedKafkaEventSourceConfig,
      *     SelfManagedKafkaEventSourceConfig?: SelfManagedKafkaEventSourceConfig,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $sessionArn
- * @property int $maxResult
+ * @property int<1, 1000> $maxResult
  * @property string $nextToken
  */
 class ListTestGridSessionActionsRequest extends Request
@@ -14,7 +14,7 @@ class ListTestGridSessionActionsRequest extends Request
     /**
      * @param array{
      *     sessionArn: string,
-     *     maxResult?: int,
+     *     maxResult?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'SEQUENTIAL'|'PARALLEL' $RegionConcurrencyType
  * @property list<string> $RegionOrder
- * @property int $FailureToleranceCount
- * @property int $FailureTolerancePercentage
- * @property int $MaxConcurrentCount
- * @property int $MaxConcurrentPercentage
+ * @property int<0, max> $FailureToleranceCount
+ * @property int<0, 100> $FailureTolerancePercentage
+ * @property int<1, max> $MaxConcurrentCount
+ * @property int<1, 100> $MaxConcurrentPercentage
  * @property 'STRICT_FAILURE_TOLERANCE'|'SOFT_FAILURE_TOLERANCE' $ConcurrencyMode
  */
 class StackSetOperationPreferences extends Shape
@@ -19,10 +19,10 @@ class StackSetOperationPreferences extends Shape
      * @param array{
      *     RegionConcurrencyType?: 'SEQUENTIAL'|'PARALLEL',
      *     RegionOrder?: list<string>,
-     *     FailureToleranceCount?: int,
-     *     FailureTolerancePercentage?: int,
-     *     MaxConcurrentCount?: int,
-     *     MaxConcurrentPercentage?: int,
+     *     FailureToleranceCount?: int<0, max>,
+     *     FailureTolerancePercentage?: int<0, 100>,
+     *     MaxConcurrentCount?: int<1, max>,
+     *     MaxConcurrentPercentage?: int<1, 100>,
      *     ConcurrencyMode?: 'STRICT_FAILURE_TOLERANCE'|'SOFT_FAILURE_TOLERANCE'
      * } $args
      */

@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  * @property Shapes\RuleMatch $match
  * @property string $name
- * @property int $priority
+ * @property int<1, 100> $priority
  */
 class GetRuleResponse extends Response
 {

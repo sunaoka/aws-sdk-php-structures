@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $AppointmentTime
  * @property double $Heading
  * @property string $Id
- * @property int $ServiceDuration
+ * @property int<0, 4294967295> $ServiceDuration
  * @property WaypointOptimizationSideOfStreetOptions $SideOfStreet
  */
 class WaypointOptimizationDestinationOptions extends Shape
@@ -20,7 +20,7 @@ class WaypointOptimizationDestinationOptions extends Shape
      *     AppointmentTime?: string,
      *     Heading?: double,
      *     Id?: string,
-     *     ServiceDuration?: int,
+     *     ServiceDuration?: int<0, 4294967295>,
      *     SideOfStreet?: WaypointOptimizationSideOfStreetOptions
      * } $args
      */

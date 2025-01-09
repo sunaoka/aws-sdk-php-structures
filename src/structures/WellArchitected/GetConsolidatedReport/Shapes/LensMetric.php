@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $LensArn
  * @property list<PillarMetric> $Pillars
- * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int> $RiskCounts
+ * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>> $RiskCounts
  */
 class LensMetric extends Shape
 {
@@ -15,7 +15,7 @@ class LensMetric extends Shape
      * @param array{
      *     LensArn?: string,
      *     Pillars?: list<PillarMetric>,
-     *     RiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int>
+     *     RiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>
      * } $args
      */
     public function __construct(array $args = [])

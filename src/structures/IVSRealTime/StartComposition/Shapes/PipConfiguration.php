@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $featuredParticipantAttribute
  * @property bool $omitStoppedVideo
  * @property 'FILL'|'COVER'|'CONTAIN' $videoFillMode
- * @property int $gridGap
+ * @property int<0, max> $gridGap
  * @property string $pipParticipantAttribute
  * @property 'STATIC'|'DYNAMIC' $pipBehavior
- * @property int $pipOffset
+ * @property int<0, max> $pipOffset
  * @property 'TOP_LEFT'|'TOP_RIGHT'|'BOTTOM_LEFT'|'BOTTOM_RIGHT' $pipPosition
- * @property int $pipWidth
- * @property int $pipHeight
+ * @property int<1, max> $pipWidth
+ * @property int<1, max> $pipHeight
  */
 class PipConfiguration extends Shape
 {
@@ -23,13 +23,13 @@ class PipConfiguration extends Shape
      *     featuredParticipantAttribute?: string,
      *     omitStoppedVideo?: bool,
      *     videoFillMode?: 'FILL'|'COVER'|'CONTAIN',
-     *     gridGap?: int,
+     *     gridGap?: int<0, max>,
      *     pipParticipantAttribute?: string,
      *     pipBehavior?: 'STATIC'|'DYNAMIC',
-     *     pipOffset?: int,
+     *     pipOffset?: int<0, max>,
      *     pipPosition?: 'TOP_LEFT'|'TOP_RIGHT'|'BOTTOM_LEFT'|'BOTTOM_RIGHT',
-     *     pipWidth?: int,
-     *     pipHeight?: int
+     *     pipWidth?: int<1, max>,
+     *     pipHeight?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PCS\GetCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $scaleDownIdleTimeInSeconds
+ * @property int<1, max> $scaleDownIdleTimeInSeconds
  * @property list<SlurmCustomSetting> $slurmCustomSettings
  * @property SlurmAuthKey $authKey
  */
@@ -13,7 +13,7 @@ class ClusterSlurmConfiguration extends Shape
 {
     /**
      * @param array{
-     *     scaleDownIdleTimeInSeconds?: int,
+     *     scaleDownIdleTimeInSeconds?: int<1, max>,
      *     slurmCustomSettings?: list<SlurmCustomSetting>,
      *     authKey?: SlurmAuthKey
      * } $args

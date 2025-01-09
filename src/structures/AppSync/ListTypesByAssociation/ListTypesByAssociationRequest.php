@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $associationId
  * @property 'SDL'|'JSON' $format
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<0, 25> $maxResults
  */
 class ListTypesByAssociationRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListTypesByAssociationRequest extends Request
      *     associationId: string,
      *     format: 'SDL'|'JSON',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<0, 25>
      * } $args
      */
     public function __construct(array $args)

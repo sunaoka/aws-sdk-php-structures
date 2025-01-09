@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\OpsMetadataFilter> $Filters
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListOpsMetadataRequest extends Request
@@ -14,7 +14,7 @@ class ListOpsMetadataRequest extends Request
     /**
      * @param array{
      *     Filters?: list<Shapes\OpsMetadataFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

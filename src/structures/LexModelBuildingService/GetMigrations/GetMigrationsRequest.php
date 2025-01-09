@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ASCENDING'|'DESCENDING' $sortByOrder
  * @property string $v1BotNameContains
  * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED' $migrationStatusEquals
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nextToken
  */
 class GetMigrationsRequest extends Request
@@ -20,7 +20,7 @@ class GetMigrationsRequest extends Request
      *     sortByOrder?: 'ASCENDING'|'DESCENDING',
      *     v1BotNameContains?: string,
      *     migrationStatusEquals?: 'IN_PROGRESS'|'COMPLETED'|'FAILED',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nextToken?: string
      * } $args
      */

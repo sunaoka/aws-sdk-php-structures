@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property int $PublishedVersionNumber
+ * @property int<1, max> $PublishedVersionNumber
  * @property \Aws\Api\DateTimeResult $LastPublishedTime
  */
 class DashboardSummary extends Shape
@@ -22,7 +22,7 @@ class DashboardSummary extends Shape
      *     Name?: string,
      *     CreatedTime?: \Aws\Api\DateTimeResult,
      *     LastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     PublishedVersionNumber?: int,
+     *     PublishedVersionNumber?: int<1, max>,
      *     LastPublishedTime?: \Aws\Api\DateTimeResult
      * } $args
      */

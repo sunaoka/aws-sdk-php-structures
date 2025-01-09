@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property 'WHATSAPP_MESSAGING_PHONE_NUMBER'|'VOICE_PHONE_NUMBER'|'INBOUND_EMAIL'|'OUTBOUND_EMAIL'|'ANALYTICS_CONNECTOR' $ResourceType
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class ListFlowAssociationsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListFlowAssociationsRequest extends Request
      *     InstanceId: string,
      *     ResourceType?: 'WHATSAPP_MESSAGING_PHONE_NUMBER'|'VOICE_PHONE_NUMBER'|'INBOUND_EMAIL'|'OUTBOUND_EMAIL'|'ANALYTICS_CONNECTOR',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

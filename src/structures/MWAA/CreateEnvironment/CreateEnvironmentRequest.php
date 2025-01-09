@@ -18,18 +18,18 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StartupScriptS3ObjectVersion
  * @property array<string, string> $AirflowConfigurationOptions
  * @property string $EnvironmentClass
- * @property int $MaxWorkers
+ * @property int<1, max> $MaxWorkers
  * @property string $KmsKey
  * @property string $AirflowVersion
  * @property Shapes\LoggingConfigurationInput $LoggingConfiguration
  * @property string $WeeklyMaintenanceWindowStart
  * @property array<string, string> $Tags
  * @property 'PRIVATE_ONLY'|'PUBLIC_ONLY' $WebserverAccessMode
- * @property int $MinWorkers
- * @property int $Schedulers
+ * @property int<1, max> $MinWorkers
+ * @property int<min, 5> $Schedulers
  * @property 'CUSTOMER'|'SERVICE' $EndpointManagement
- * @property int $MinWebservers
- * @property int $MaxWebservers
+ * @property int<1, max> $MinWebservers
+ * @property int<1, max> $MaxWebservers
  */
 class CreateEnvironmentRequest extends Request
 {
@@ -48,18 +48,18 @@ class CreateEnvironmentRequest extends Request
      *     StartupScriptS3ObjectVersion?: string,
      *     AirflowConfigurationOptions?: array<string, string>,
      *     EnvironmentClass?: string,
-     *     MaxWorkers?: int,
+     *     MaxWorkers?: int<1, max>,
      *     KmsKey?: string,
      *     AirflowVersion?: string,
      *     LoggingConfiguration?: Shapes\LoggingConfigurationInput,
      *     WeeklyMaintenanceWindowStart?: string,
      *     Tags?: array<string, string>,
      *     WebserverAccessMode?: 'PRIVATE_ONLY'|'PUBLIC_ONLY',
-     *     MinWorkers?: int,
-     *     Schedulers?: int,
+     *     MinWorkers?: int<1, max>,
+     *     Schedulers?: int<min, 5>,
      *     EndpointManagement?: 'CUSTOMER'|'SERVICE',
-     *     MinWebservers?: int,
-     *     MaxWebservers?: int
+     *     MinWebservers?: int<1, max>,
+     *     MaxWebservers?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

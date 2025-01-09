@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $caCertificateId
- * @property int $pageSize
+ * @property int<1, 250> $pageSize
  * @property string $marker
  * @property bool $ascendingOrder
  */
@@ -15,7 +15,7 @@ class ListCertificatesByCARequest extends Request
     /**
      * @param array{
      *     caCertificateId: string,
-     *     pageSize?: int,
+     *     pageSize?: int<1, 250>,
      *     marker?: string,
      *     ascendingOrder?: bool
      * } $args

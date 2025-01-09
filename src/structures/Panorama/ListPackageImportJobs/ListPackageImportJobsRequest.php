@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Panorama\ListPackageImportJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<0, 25> $MaxResults
  * @property string $NextToken
  */
 class ListPackageImportJobsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 25>,
      *     NextToken?: string
      * } $args
      */

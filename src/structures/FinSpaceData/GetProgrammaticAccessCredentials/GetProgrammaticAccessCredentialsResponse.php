@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\Credentials $credentials
- * @property int $durationInMinutes
+ * @property int<1, 60> $durationInMinutes
  */
 class GetProgrammaticAccessCredentialsResponse extends Response
 {

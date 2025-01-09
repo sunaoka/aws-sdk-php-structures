@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $Namespace
  * @property string $MetricName
  * @property list<Shapes\Dimension> $Dimensions
@@ -17,7 +17,7 @@ class DescribeAnomalyDetectorsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     Namespace?: string,
      *     MetricName?: string,
      *     Dimensions?: list<Shapes\Dimension>,

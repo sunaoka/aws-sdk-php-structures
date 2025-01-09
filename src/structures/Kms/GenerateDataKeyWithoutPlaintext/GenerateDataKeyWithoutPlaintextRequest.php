@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $KeyId
  * @property array<string, string> $EncryptionContext
  * @property 'AES_256'|'AES_128' $KeySpec
- * @property int $NumberOfBytes
+ * @property int<1, 1024> $NumberOfBytes
  * @property list<string> $GrantTokens
  * @property bool $DryRun
  */
@@ -19,7 +19,7 @@ class GenerateDataKeyWithoutPlaintextRequest extends Request
      *     KeyId: string,
      *     EncryptionContext?: array<string, string>,
      *     KeySpec?: 'AES_256'|'AES_128',
-     *     NumberOfBytes?: int,
+     *     NumberOfBytes?: int<1, 1024>,
      *     GrantTokens?: list<string>,
      *     DryRun?: bool
      * } $args

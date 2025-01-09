@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ConfiguredAudienceModelOutputConfig $outputConfig
  * @property string $description
  * @property list<'ALL'|'NONE'> $sharedAudienceMetrics
- * @property int $minMatchingSeedSize
+ * @property int<25, 500000> $minMatchingSeedSize
  * @property Shapes\AudienceSizeConfig $audienceSizeConfig
  * @property array<string, string> $tags
  * @property 'FROM_PARENT_RESOURCE'|'NONE' $childResourceTagOnCreatePolicy
@@ -24,7 +24,7 @@ class CreateConfiguredAudienceModelRequest extends Request
      *     outputConfig: Shapes\ConfiguredAudienceModelOutputConfig,
      *     description?: string,
      *     sharedAudienceMetrics: list<'ALL'|'NONE'>,
-     *     minMatchingSeedSize?: int,
+     *     minMatchingSeedSize?: int<25, 500000>,
      *     audienceSizeConfig?: Shapes\AudienceSizeConfig,
      *     tags?: array<string, string>,
      *     childResourceTagOnCreatePolicy?: 'FROM_PARENT_RESOURCE'|'NONE'

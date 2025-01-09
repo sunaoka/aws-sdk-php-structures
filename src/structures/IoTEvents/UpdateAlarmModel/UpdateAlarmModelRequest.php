@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $alarmModelName
  * @property string $alarmModelDescription
  * @property string $roleArn
- * @property int $severity
+ * @property int<0, 2147483647> $severity
  * @property Shapes\AlarmRule $alarmRule
  * @property Shapes\AlarmNotification $alarmNotification
  * @property Shapes\AlarmEventActions $alarmEventActions
@@ -21,7 +21,7 @@ class UpdateAlarmModelRequest extends Request
      *     alarmModelName: string,
      *     alarmModelDescription?: string,
      *     roleArn: string,
-     *     severity?: int,
+     *     severity?: int<0, 2147483647>,
      *     alarmRule: Shapes\AlarmRule,
      *     alarmNotification?: Shapes\AlarmNotification,
      *     alarmEventActions?: Shapes\AlarmEventActions,

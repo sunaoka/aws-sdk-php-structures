@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'MARKUP'|'DISCOUNT'|'TIERING' $Type
  * @property double $ModifierPercentage
  * @property string $Service
- * @property int $AssociatedPricingPlanCount
+ * @property int<0, max> $AssociatedPricingPlanCount
  * @property int $CreationTime
  * @property int $LastModifiedTime
  * @property string $BillingEntity
@@ -31,7 +31,7 @@ class PricingRuleListElement extends Shape
      *     Type?: 'MARKUP'|'DISCOUNT'|'TIERING',
      *     ModifierPercentage?: double,
      *     Service?: string,
-     *     AssociatedPricingPlanCount?: int,
+     *     AssociatedPricingPlanCount?: int<0, max>,
      *     CreationTime?: int,
      *     LastModifiedTime?: int,
      *     BillingEntity?: string,

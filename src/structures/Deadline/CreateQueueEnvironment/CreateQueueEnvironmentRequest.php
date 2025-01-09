@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $clientToken
  * @property string $farmId
  * @property string $queueId
- * @property int $priority
+ * @property int<0, 10000> $priority
  * @property 'JSON'|'YAML' $templateType
  * @property string $template
  */
@@ -19,7 +19,7 @@ class CreateQueueEnvironmentRequest extends Request
      *     clientToken?: string,
      *     farmId: string,
      *     queueId: string,
-     *     priority: int,
+     *     priority: int<0, 10000>,
      *     templateType: 'JSON'|'YAML',
      *     template: string
      * } $args

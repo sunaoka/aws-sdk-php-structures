@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $EvaluationFormId
  * @property string $EvaluationFormArn
- * @property int $EvaluationFormVersion
+ * @property int<1, max> $EvaluationFormVersion
  */
 class UpdateEvaluationFormResponse extends Response
 {

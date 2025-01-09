@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $appArn
  * @property string $awsApplicationArn
  * @property \Aws\Api\DateTimeResult $fromLastAssessmentTime
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $name
  * @property string $nextToken
  * @property bool $reverseOrder
@@ -21,7 +21,7 @@ class ListAppsRequest extends Request
      *     appArn?: string,
      *     awsApplicationArn?: string,
      *     fromLastAssessmentTime?: \Aws\Api\DateTimeResult,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     name?: string,
      *     nextToken?: string,
      *     reverseOrder?: bool,

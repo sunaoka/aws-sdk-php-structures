@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DynamoDb\RestoreTableToPointInTime\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ReadCapacityUnits
+ * @property int<1, max> $ReadCapacityUnits
  */
 class ProvisionedThroughputOverride extends Shape
 {
     /**
-     * @param array{ReadCapacityUnits?: int} $args
+     * @param array{ReadCapacityUnits?: int<1, max>} $args
      */
     public function __construct(array $args = [])
     {

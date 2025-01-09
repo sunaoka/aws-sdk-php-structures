@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ExecutionRoleArn
  * @property CanaryScheduleOutput $Schedule
  * @property CanaryRunConfigOutput $RunConfig
- * @property int $SuccessRetentionPeriodInDays
- * @property int $FailureRetentionPeriodInDays
+ * @property int<1, 1024> $SuccessRetentionPeriodInDays
+ * @property int<1, 1024> $FailureRetentionPeriodInDays
  * @property CanaryStatus $Status
  * @property CanaryTimeline $Timeline
  * @property string $ArtifactS3Location
@@ -34,8 +34,8 @@ class Canary extends Shape
      *     ExecutionRoleArn?: string,
      *     Schedule?: CanaryScheduleOutput,
      *     RunConfig?: CanaryRunConfigOutput,
-     *     SuccessRetentionPeriodInDays?: int,
-     *     FailureRetentionPeriodInDays?: int,
+     *     SuccessRetentionPeriodInDays?: int<1, 1024>,
+     *     FailureRetentionPeriodInDays?: int<1, 1024>,
      *     Status?: CanaryStatus,
      *     Timeline?: CanaryTimeline,
      *     ArtifactS3Location?: string,

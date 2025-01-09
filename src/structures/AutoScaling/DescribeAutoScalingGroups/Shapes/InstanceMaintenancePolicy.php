@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeAutoScalingGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MinHealthyPercentage
- * @property int $MaxHealthyPercentage
+ * @property int<-1, 100> $MinHealthyPercentage
+ * @property int<-1, 200> $MaxHealthyPercentage
  */
 class InstanceMaintenancePolicy extends Shape
 {
     /**
      * @param array{
-     *     MinHealthyPercentage?: int,
-     *     MaxHealthyPercentage?: int
+     *     MinHealthyPercentage?: int<-1, 100>,
+     *     MaxHealthyPercentage?: int<-1, 200>
      * } $args
      */
     public function __construct(array $args = [])

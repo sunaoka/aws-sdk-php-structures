@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListWirelessGatewayTaskDefinitions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<0, 250> $MaxResults
  * @property string $NextToken
  * @property 'UPDATE' $TaskDefinitionType
  */
@@ -13,7 +13,7 @@ class ListWirelessGatewayTaskDefinitionsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 250>,
      *     NextToken?: string,
      *     TaskDefinitionType?: 'UPDATE'
      * } $args

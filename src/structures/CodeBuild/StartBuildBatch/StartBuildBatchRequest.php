@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CODECOMMIT'|'CODEPIPELINE'|'GITHUB'|'GITLAB'|'GITLAB_SELF_MANAGED'|'S3'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'NO_SOURCE' $sourceTypeOverride
  * @property string $sourceLocationOverride
  * @property Shapes\SourceAuth $sourceAuthOverride
- * @property int $gitCloneDepthOverride
+ * @property int<0, max> $gitCloneDepthOverride
  * @property Shapes\GitSubmodulesConfig $gitSubmodulesConfigOverride
  * @property string $buildspecOverride
  * @property bool $insecureSslOverride
@@ -27,8 +27,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ProjectCache $cacheOverride
  * @property string $serviceRoleOverride
  * @property bool $privilegedModeOverride
- * @property int $buildTimeoutInMinutesOverride
- * @property int $queuedTimeoutInMinutesOverride
+ * @property int<5, 2160> $buildTimeoutInMinutesOverride
+ * @property int<5, 480> $queuedTimeoutInMinutesOverride
  * @property string $encryptionKeyOverride
  * @property string $idempotencyToken
  * @property Shapes\LogsConfig $logsConfigOverride
@@ -51,7 +51,7 @@ class StartBuildBatchRequest extends Request
      *     sourceTypeOverride?: 'CODECOMMIT'|'CODEPIPELINE'|'GITHUB'|'GITLAB'|'GITLAB_SELF_MANAGED'|'S3'|'BITBUCKET'|'GITHUB_ENTERPRISE'|'NO_SOURCE',
      *     sourceLocationOverride?: string,
      *     sourceAuthOverride?: Shapes\SourceAuth,
-     *     gitCloneDepthOverride?: int,
+     *     gitCloneDepthOverride?: int<0, max>,
      *     gitSubmodulesConfigOverride?: Shapes\GitSubmodulesConfig,
      *     buildspecOverride?: string,
      *     insecureSslOverride?: bool,
@@ -63,8 +63,8 @@ class StartBuildBatchRequest extends Request
      *     cacheOverride?: Shapes\ProjectCache,
      *     serviceRoleOverride?: string,
      *     privilegedModeOverride?: bool,
-     *     buildTimeoutInMinutesOverride?: int,
-     *     queuedTimeoutInMinutesOverride?: int,
+     *     buildTimeoutInMinutesOverride?: int<5, 2160>,
+     *     queuedTimeoutInMinutesOverride?: int<5, 480>,
      *     encryptionKeyOverride?: string,
      *     idempotencyToken?: string,
      *     logsConfigOverride?: Shapes\LogsConfig,

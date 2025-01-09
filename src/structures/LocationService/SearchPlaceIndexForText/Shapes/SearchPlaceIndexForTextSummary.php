@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<double> $BiasPosition
  * @property list<double> $FilterBBox
  * @property list<string> $FilterCountries
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property list<double> $ResultBBox
  * @property string $DataSource
  * @property string $Language
@@ -23,7 +23,7 @@ class SearchPlaceIndexForTextSummary extends Shape
      *     BiasPosition?: list<double>,
      *     FilterBBox?: list<double>,
      *     FilterCountries?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     ResultBBox?: list<double>,
      *     DataSource: string,
      *     Language?: string,

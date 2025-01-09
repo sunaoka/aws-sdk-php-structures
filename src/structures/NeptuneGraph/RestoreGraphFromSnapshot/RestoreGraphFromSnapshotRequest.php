@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $snapshotIdentifier
  * @property string $graphName
- * @property int $provisionedMemory
+ * @property int<16, 24576> $provisionedMemory
  * @property bool $deletionProtection
  * @property array<string, string> $tags
- * @property int $replicaCount
+ * @property int<0, 2> $replicaCount
  * @property bool $publicConnectivity
  */
 class RestoreGraphFromSnapshotRequest extends Request
@@ -19,10 +19,10 @@ class RestoreGraphFromSnapshotRequest extends Request
      * @param array{
      *     snapshotIdentifier: string,
      *     graphName: string,
-     *     provisionedMemory?: int,
+     *     provisionedMemory?: int<16, 24576>,
      *     deletionProtection?: bool,
      *     tags?: array<string, string>,
-     *     replicaCount?: int,
+     *     replicaCount?: int<0, 2>,
      *     publicConnectivity?: bool
      * } $args
      */

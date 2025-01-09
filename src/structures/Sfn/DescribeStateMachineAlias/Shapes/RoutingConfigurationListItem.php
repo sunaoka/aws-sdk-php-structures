@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $stateMachineVersionArn
- * @property int $weight
+ * @property int<0, 100> $weight
  */
 class RoutingConfigurationListItem extends Shape
 {
     /**
      * @param array{
      *     stateMachineVersionArn: string,
-     *     weight: int
+     *     weight: int<0, 100>
      * } $args
      */
     public function __construct(array $args)

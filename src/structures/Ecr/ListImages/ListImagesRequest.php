@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $registryId
  * @property string $repositoryName
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property Shapes\ListImagesFilter $filter
  */
 class ListImagesRequest extends Request
@@ -18,7 +18,7 @@ class ListImagesRequest extends Request
      *     registryId?: string,
      *     repositoryName: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     filter?: Shapes\ListImagesFilter
      * } $args
      */

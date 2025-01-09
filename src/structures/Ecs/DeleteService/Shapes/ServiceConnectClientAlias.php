@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ecs\DeleteService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $port
+ * @property int<0, 65535> $port
  * @property string $dnsName
  */
 class ServiceConnectClientAlias extends Shape
 {
     /**
      * @param array{
-     *     port: int,
+     *     port: int<0, 65535>,
      *     dnsName?: string
      * } $args
      */

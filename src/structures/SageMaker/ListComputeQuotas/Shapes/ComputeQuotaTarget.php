@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $TeamName
- * @property int $FairShareWeight
+ * @property int<0, 100> $FairShareWeight
  */
 class ComputeQuotaTarget extends Shape
 {
     /**
      * @param array{
      *     TeamName: string,
-     *     FairShareWeight?: int
+     *     FairShareWeight?: int<0, 100>
      * } $args
      */
     public function __construct(array $args)

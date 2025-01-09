@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListAuthenticationProfilesRequest extends Request
@@ -14,7 +14,7 @@ class ListAuthenticationProfilesRequest extends Request
     /**
      * @param array{
      *     InstanceId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

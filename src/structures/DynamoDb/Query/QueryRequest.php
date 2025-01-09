@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IndexName
  * @property 'ALL_ATTRIBUTES'|'ALL_PROJECTED_ATTRIBUTES'|'SPECIFIC_ATTRIBUTES'|'COUNT' $Select
  * @property list<string> $AttributesToGet
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property bool $ConsistentRead
  * @property array<string, Shapes\Condition> $KeyConditions
  * @property array<string, Shapes\Condition> $QueryFilter
@@ -31,7 +31,7 @@ class QueryRequest extends Request
      *     IndexName?: string,
      *     Select?: 'ALL_ATTRIBUTES'|'ALL_PROJECTED_ATTRIBUTES'|'SPECIFIC_ATTRIBUTES'|'COUNT',
      *     AttributesToGet?: list<string>,
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     ConsistentRead?: bool,
      *     KeyConditions?: array<string, Shapes\Condition>,
      *     QueryFilter?: array<string, Shapes\Condition>,

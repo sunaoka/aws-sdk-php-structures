@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $endDateTime
  * @property Shapes\SessionDataSortBy $sortBy
  * @property list<Shapes\AnalyticsSessionFilter> $filters
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListSessionAnalyticsDataRequest extends Request
@@ -22,7 +22,7 @@ class ListSessionAnalyticsDataRequest extends Request
      *     endDateTime: \Aws\Api\DateTimeResult,
      *     sortBy?: Shapes\SessionDataSortBy,
      *     filters?: list<Shapes\AnalyticsSessionFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

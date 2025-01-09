@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\DescribeStorageConfiguration\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $numberOfDays
+ * @property int<30, max> $numberOfDays
  * @property bool $unlimited
  */
 class RetentionPeriod extends Shape
 {
     /**
      * @param array{
-     *     numberOfDays?: int,
+     *     numberOfDays?: int<30, max>,
      *     unlimited?: bool
      * } $args
      */

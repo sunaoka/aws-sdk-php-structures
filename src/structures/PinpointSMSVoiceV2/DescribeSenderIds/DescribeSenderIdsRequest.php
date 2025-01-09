@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\SenderIdAndCountry> $SenderIds
  * @property list<Shapes\SenderIdFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'SELF'|'SHARED' $Owner
  */
 class DescribeSenderIdsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeSenderIdsRequest extends Request
      *     SenderIds?: list<Shapes\SenderIdAndCountry>,
      *     Filters?: list<Shapes\SenderIdFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     Owner?: 'SELF'|'SHARED'
      * } $args
      */

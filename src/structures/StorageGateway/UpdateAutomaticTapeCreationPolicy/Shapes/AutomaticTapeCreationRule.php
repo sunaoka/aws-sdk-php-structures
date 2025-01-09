@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TapeBarcodePrefix
  * @property string $PoolId
  * @property int $TapeSizeInBytes
- * @property int $MinimumNumTapes
+ * @property int<1, 10> $MinimumNumTapes
  * @property bool $Worm
  */
 class AutomaticTapeCreationRule extends Shape
@@ -18,7 +18,7 @@ class AutomaticTapeCreationRule extends Shape
      *     TapeBarcodePrefix: string,
      *     PoolId: string,
      *     TapeSizeInBytes: int,
-     *     MinimumNumTapes: int,
+     *     MinimumNumTapes: int<1, 10>,
      *     Worm?: bool
      * } $args
      */

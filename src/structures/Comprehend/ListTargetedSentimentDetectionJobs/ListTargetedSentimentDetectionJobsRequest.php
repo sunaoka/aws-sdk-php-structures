@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\TargetedSentimentDetectionJobFilter $Filter
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  */
 class ListTargetedSentimentDetectionJobsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListTargetedSentimentDetectionJobsRequest extends Request
      * @param array{
      *     Filter?: Shapes\TargetedSentimentDetectionJobFilter,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 500>
      * } $args
      */
     public function __construct(array $args = [])

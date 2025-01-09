@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property 'Share' $PermissionType
- * @property int $MaxResults
+ * @property int<1, 200> $MaxResults
  * @property string $NextToken
  */
 class DescribeDocumentPermissionRequest extends Request
@@ -16,7 +16,7 @@ class DescribeDocumentPermissionRequest extends Request
      * @param array{
      *     Name: string,
      *     PermissionType: 'Share',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 200>,
      *     NextToken?: string
      * } $args
      */

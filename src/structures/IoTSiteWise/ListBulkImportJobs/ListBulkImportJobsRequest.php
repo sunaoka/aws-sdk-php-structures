@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property 'ALL'|'PENDING'|'RUNNING'|'CANCELLED'|'FAILED'|'COMPLETED_WITH_FAILURES'|'COMPLETED' $filter
  */
 class ListBulkImportJobsRequest extends Request
@@ -14,7 +14,7 @@ class ListBulkImportJobsRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     filter?: 'ALL'|'PENDING'|'RUNNING'|'CANCELLED'|'FAILED'|'COMPLETED_WITH_FAILURES'|'COMPLETED'
      * } $args
      */

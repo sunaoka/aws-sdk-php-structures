@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $taskId
  * @property string $checkName
  * @property Shapes\ResourceIdentifier $resourceIdentifier
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property string $nextToken
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $endTime
@@ -21,7 +21,7 @@ class ListAuditFindingsRequest extends Request
      *     taskId?: string,
      *     checkName?: string,
      *     resourceIdentifier?: Shapes\ResourceIdentifier,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     nextToken?: string,
      *     startTime?: \Aws\Api\DateTimeResult,
      *     endTime?: \Aws\Api\DateTimeResult,

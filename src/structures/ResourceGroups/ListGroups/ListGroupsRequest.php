@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\GroupFilter> $Filters
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListGroupsRequest extends Request
@@ -14,7 +14,7 @@ class ListGroupsRequest extends Request
     /**
      * @param array{
      *     Filters?: list<Shapes\GroupFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

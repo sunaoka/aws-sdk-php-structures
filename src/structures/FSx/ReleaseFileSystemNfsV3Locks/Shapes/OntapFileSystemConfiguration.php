@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\FSx\ReleaseFileSystemNfsV3Locks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AutomaticBackupRetentionDays
+ * @property int<0, 90> $AutomaticBackupRetentionDays
  * @property string $DailyAutomaticBackupStartTime
  * @property 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_2' $DeploymentType
  * @property string $EndpointIpAddressRange
@@ -13,17 +13,17 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DiskIopsConfiguration $DiskIopsConfiguration
  * @property string $PreferredSubnetId
  * @property list<string> $RouteTableIds
- * @property int $ThroughputCapacity
+ * @property int<8, 100000> $ThroughputCapacity
  * @property string $WeeklyMaintenanceStartTime
  * @property string $FsxAdminPassword
- * @property int $HAPairs
- * @property int $ThroughputCapacityPerHAPair
+ * @property int<1, 12> $HAPairs
+ * @property int<128, 6144> $ThroughputCapacityPerHAPair
  */
 class OntapFileSystemConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AutomaticBackupRetentionDays?: int,
+     *     AutomaticBackupRetentionDays?: int<0, 90>,
      *     DailyAutomaticBackupStartTime?: string,
      *     DeploymentType?: 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_2',
      *     EndpointIpAddressRange?: string,
@@ -31,11 +31,11 @@ class OntapFileSystemConfiguration extends Shape
      *     DiskIopsConfiguration?: DiskIopsConfiguration,
      *     PreferredSubnetId?: string,
      *     RouteTableIds?: list<string>,
-     *     ThroughputCapacity?: int,
+     *     ThroughputCapacity?: int<8, 100000>,
      *     WeeklyMaintenanceStartTime?: string,
      *     FsxAdminPassword?: string,
-     *     HAPairs?: int,
-     *     ThroughputCapacityPerHAPair?: int
+     *     HAPairs?: int<1, 12>,
+     *     ThroughputCapacityPerHAPair?: int<128, 6144>
      * } $args
      */
     public function __construct(array $args = [])

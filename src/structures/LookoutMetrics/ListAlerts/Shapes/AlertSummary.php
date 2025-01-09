@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $AlertArn
  * @property string $AnomalyDetectorArn
  * @property string $AlertName
- * @property int $AlertSensitivityThreshold
+ * @property int<0, 100> $AlertSensitivityThreshold
  * @property 'SNS'|'LAMBDA' $AlertType
  * @property 'ACTIVE'|'INACTIVE' $AlertStatus
  * @property \Aws\Api\DateTimeResult $LastModificationTime
@@ -22,7 +22,7 @@ class AlertSummary extends Shape
      *     AlertArn?: string,
      *     AnomalyDetectorArn?: string,
      *     AlertName?: string,
-     *     AlertSensitivityThreshold?: int,
+     *     AlertSensitivityThreshold?: int<0, 100>,
      *     AlertType?: 'SNS'|'LAMBDA',
      *     AlertStatus?: 'ACTIVE'|'INACTIVE',
      *     LastModificationTime?: \Aws\Api\DateTimeResult,

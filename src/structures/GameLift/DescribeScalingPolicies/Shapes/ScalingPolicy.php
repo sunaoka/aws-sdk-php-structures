@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ChangeInCapacity'|'ExactCapacity'|'PercentChangeInCapacity' $ScalingAdjustmentType
  * @property 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold' $ComparisonOperator
  * @property double $Threshold
- * @property int $EvaluationPeriods
+ * @property int<1, max> $EvaluationPeriods
  * @property 'ActivatingGameSessions'|'ActiveGameSessions'|'ActiveInstances'|'AvailableGameSessions'|'AvailablePlayerSessions'|'CurrentPlayerSessions'|'IdleInstances'|'PercentAvailableGameSessions'|'PercentIdleInstances'|'QueueDepth'|'WaitTime'|'ConcurrentActivatableGameSessions' $MetricName
  * @property 'RuleBased'|'TargetBased' $PolicyType
  * @property TargetConfiguration $TargetConfiguration
@@ -32,7 +32,7 @@ class ScalingPolicy extends Shape
      *     ScalingAdjustmentType?: 'ChangeInCapacity'|'ExactCapacity'|'PercentChangeInCapacity',
      *     ComparisonOperator?: 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold',
      *     Threshold?: double,
-     *     EvaluationPeriods?: int,
+     *     EvaluationPeriods?: int<1, max>,
      *     MetricName?: 'ActivatingGameSessions'|'ActiveGameSessions'|'ActiveInstances'|'AvailableGameSessions'|'AvailablePlayerSessions'|'CurrentPlayerSessions'|'IdleInstances'|'PercentAvailableGameSessions'|'PercentIdleInstances'|'QueueDepth'|'WaitTime'|'ConcurrentActivatableGameSessions',
      *     PolicyType?: 'RuleBased'|'TargetBased',
      *     TargetConfiguration?: TargetConfiguration,

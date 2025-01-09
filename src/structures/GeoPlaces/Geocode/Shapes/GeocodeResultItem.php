@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $AddressNumberCorrected
  * @property list<PostalCodeDetails> $PostalCodeDetails
  * @property list<double> $Position
- * @property int $Distance
+ * @property int<0, 4294967295> $Distance
  * @property list<double> $MapView
  * @property list<Category> $Categories
  * @property list<FoodType> $FoodTypes
@@ -32,7 +32,7 @@ class GeocodeResultItem extends Shape
      *     AddressNumberCorrected?: bool,
      *     PostalCodeDetails?: list<PostalCodeDetails>,
      *     Position?: list<double>,
-     *     Distance?: int,
+     *     Distance?: int<0, 4294967295>,
      *     MapView?: list<double>,
      *     Categories?: list<Category>,
      *     FoodTypes?: list<FoodType>,

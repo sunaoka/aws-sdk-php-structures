@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ImageName
  * @property string $Alias
- * @property int $Version
+ * @property int<0, max> $Version
  * @property list<string> $AliasesToAdd
  * @property list<string> $AliasesToDelete
  * @property 'NOT_PROVIDED'|'STABLE'|'TO_BE_ARCHIVED'|'ARCHIVED' $VendorGuidance
@@ -24,7 +24,7 @@ class UpdateImageVersionRequest extends Request
      * @param array{
      *     ImageName: string,
      *     Alias?: string,
-     *     Version?: int,
+     *     Version?: int<0, max>,
      *     AliasesToAdd?: list<string>,
      *     AliasesToDelete?: list<string>,
      *     VendorGuidance?: 'NOT_PROVIDED'|'STABLE'|'TO_BE_ARCHIVED'|'ARCHIVED',

@@ -7,21 +7,21 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'CENTERED'|'LEFT'|'SMART' $Alignment
  * @property 'BLACK'|'NONE'|'WHITE' $BackgroundColor
- * @property int $BackgroundOpacity
+ * @property int<0, 255> $BackgroundOpacity
  * @property InputLocation $Font
  * @property 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW' $FontColor
- * @property int $FontOpacity
- * @property int $FontResolution
+ * @property int<0, 255> $FontOpacity
+ * @property int<96, 600> $FontResolution
  * @property string $FontSize
  * @property 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW' $OutlineColor
- * @property int $OutlineSize
+ * @property int<0, 10> $OutlineSize
  * @property 'BLACK'|'NONE'|'WHITE' $ShadowColor
- * @property int $ShadowOpacity
+ * @property int<0, 255> $ShadowOpacity
  * @property int $ShadowXOffset
  * @property int $ShadowYOffset
  * @property 'FIXED'|'SCALED' $TeletextGridControl
- * @property int $XPosition
- * @property int $YPosition
+ * @property int<0, max> $XPosition
+ * @property int<0, max> $YPosition
  */
 class BurnInDestinationSettings extends Shape
 {
@@ -29,21 +29,21 @@ class BurnInDestinationSettings extends Shape
      * @param array{
      *     Alignment?: 'CENTERED'|'LEFT'|'SMART',
      *     BackgroundColor?: 'BLACK'|'NONE'|'WHITE',
-     *     BackgroundOpacity?: int,
+     *     BackgroundOpacity?: int<0, 255>,
      *     Font?: InputLocation,
      *     FontColor?: 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW',
-     *     FontOpacity?: int,
-     *     FontResolution?: int,
+     *     FontOpacity?: int<0, 255>,
+     *     FontResolution?: int<96, 600>,
      *     FontSize?: string,
      *     OutlineColor?: 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW',
-     *     OutlineSize?: int,
+     *     OutlineSize?: int<0, 10>,
      *     ShadowColor?: 'BLACK'|'NONE'|'WHITE',
-     *     ShadowOpacity?: int,
+     *     ShadowOpacity?: int<0, 255>,
      *     ShadowXOffset?: int,
      *     ShadowYOffset?: int,
      *     TeletextGridControl?: 'FIXED'|'SCALED',
-     *     XPosition?: int,
-     *     YPosition?: int
+     *     XPosition?: int<0, max>,
+     *     YPosition?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

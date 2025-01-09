@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaTailor\ListVodSources;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property string $SourceLocationName
  */
@@ -13,7 +13,7 @@ class ListVodSourcesRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     SourceLocationName: string
      * } $args

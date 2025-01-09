@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ENABLED'|'DISABLED' $State
  * @property string $Description
  * @property Shapes\PolicyDetails $PolicyDetails
- * @property int $CreateInterval
- * @property int $RetainInterval
+ * @property int<1, max> $CreateInterval
+ * @property int<1, max> $RetainInterval
  * @property bool $CopyTags
  * @property bool $ExtendDeletion
  * @property list<Shapes\CrossRegionCopyTarget> $CrossRegionCopyTargets
@@ -26,8 +26,8 @@ class UpdateLifecyclePolicyRequest extends Request
      *     State?: 'ENABLED'|'DISABLED',
      *     Description?: string,
      *     PolicyDetails?: Shapes\PolicyDetails,
-     *     CreateInterval?: int,
-     *     RetainInterval?: int,
+     *     CreateInterval?: int<1, max>,
+     *     RetainInterval?: int<1, max>,
      *     CopyTags?: bool,
      *     ExtendDeletion?: bool,
      *     CrossRegionCopyTargets?: list<Shapes\CrossRegionCopyTarget>,

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OutboundCallerConfig $OutboundCallerConfig
  * @property OutboundEmailConfig $OutboundEmailConfig
  * @property string $HoursOfOperationId
- * @property int $MaxContacts
+ * @property int<0, max> $MaxContacts
  * @property 'ENABLED'|'DISABLED' $Status
  * @property array<string, string> $Tags
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
@@ -29,7 +29,7 @@ class Queue extends Shape
      *     OutboundCallerConfig?: OutboundCallerConfig,
      *     OutboundEmailConfig?: OutboundEmailConfig,
      *     HoursOfOperationId?: string,
-     *     MaxContacts?: int,
+     *     MaxContacts?: int<0, max>,
      *     Status?: 'ENABLED'|'DISABLED',
      *     Tags?: array<string, string>,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult,

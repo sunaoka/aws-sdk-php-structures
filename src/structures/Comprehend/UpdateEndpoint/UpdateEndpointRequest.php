@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $EndpointArn
  * @property string $DesiredModelArn
- * @property int $DesiredInferenceUnits
+ * @property int<1, max> $DesiredInferenceUnits
  * @property string $DesiredDataAccessRoleArn
  * @property string $FlywheelArn
  */
@@ -17,7 +17,7 @@ class UpdateEndpointRequest extends Request
      * @param array{
      *     EndpointArn: string,
      *     DesiredModelArn?: string,
-     *     DesiredInferenceUnits?: int,
+     *     DesiredInferenceUnits?: int<1, max>,
      *     DesiredDataAccessRoleArn?: string,
      *     FlywheelArn?: string
      * } $args

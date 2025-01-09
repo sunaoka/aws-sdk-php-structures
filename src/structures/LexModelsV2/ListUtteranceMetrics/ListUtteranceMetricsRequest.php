@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AnalyticsUtteranceGroupBySpecification> $groupBy
  * @property list<Shapes\AnalyticsUtteranceAttribute> $attributes
  * @property list<Shapes\AnalyticsUtteranceFilter> $filters
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListUtteranceMetricsRequest extends Request
@@ -28,7 +28,7 @@ class ListUtteranceMetricsRequest extends Request
      *     groupBy?: list<Shapes\AnalyticsUtteranceGroupBySpecification>,
      *     attributes?: list<Shapes\AnalyticsUtteranceAttribute>,
      *     filters?: list<Shapes\AnalyticsUtteranceFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecurityLake\UpdateDataLakeExceptionSubscriptio
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $exceptionTimeToLive
+ * @property int<1, max> $exceptionTimeToLive
  * @property string $notificationEndpoint
  * @property string $subscriptionProtocol
  */
@@ -13,7 +13,7 @@ class UpdateDataLakeExceptionSubscriptionRequest extends Request
 {
     /**
      * @param array{
-     *     exceptionTimeToLive?: int,
+     *     exceptionTimeToLive?: int<1, max>,
      *     notificationEndpoint: string,
      *     subscriptionProtocol: string
      * } $args

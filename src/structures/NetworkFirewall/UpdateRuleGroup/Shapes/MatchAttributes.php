@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Address> $Destinations
  * @property list<PortRange> $SourcePorts
  * @property list<PortRange> $DestinationPorts
- * @property list<int> $Protocols
+ * @property list<int<0, 255>> $Protocols
  * @property list<TCPFlagField> $TCPFlags
  */
 class MatchAttributes extends Shape
@@ -20,7 +20,7 @@ class MatchAttributes extends Shape
      *     Destinations?: list<Address>,
      *     SourcePorts?: list<PortRange>,
      *     DestinationPorts?: list<PortRange>,
-     *     Protocols?: list<int>,
+     *     Protocols?: list<int<0, 255>>,
      *     TCPFlags?: list<TCPFlagField>
      * } $args
      */

@@ -18,15 +18,15 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StartupScriptS3ObjectVersion
  * @property array<string, string> $AirflowConfigurationOptions
  * @property string $EnvironmentClass
- * @property int $MaxWorkers
+ * @property int<1, max> $MaxWorkers
  * @property Shapes\UpdateNetworkConfigurationInput $NetworkConfiguration
  * @property Shapes\LoggingConfigurationInput $LoggingConfiguration
  * @property string $WeeklyMaintenanceWindowStart
  * @property 'PRIVATE_ONLY'|'PUBLIC_ONLY' $WebserverAccessMode
- * @property int $MinWorkers
- * @property int $Schedulers
- * @property int $MinWebservers
- * @property int $MaxWebservers
+ * @property int<1, max> $MinWorkers
+ * @property int<min, 5> $Schedulers
+ * @property int<1, max> $MinWebservers
+ * @property int<1, max> $MaxWebservers
  */
 class UpdateEnvironmentRequest extends Request
 {
@@ -45,15 +45,15 @@ class UpdateEnvironmentRequest extends Request
      *     StartupScriptS3ObjectVersion?: string,
      *     AirflowConfigurationOptions?: array<string, string>,
      *     EnvironmentClass?: string,
-     *     MaxWorkers?: int,
+     *     MaxWorkers?: int<1, max>,
      *     NetworkConfiguration?: Shapes\UpdateNetworkConfigurationInput,
      *     LoggingConfiguration?: Shapes\LoggingConfigurationInput,
      *     WeeklyMaintenanceWindowStart?: string,
      *     WebserverAccessMode?: 'PRIVATE_ONLY'|'PUBLIC_ONLY',
-     *     MinWorkers?: int,
-     *     Schedulers?: int,
-     *     MinWebservers?: int,
-     *     MaxWebservers?: int
+     *     MinWorkers?: int<1, max>,
+     *     Schedulers?: int<min, 5>,
+     *     MinWebservers?: int<1, max>,
+     *     MaxWebservers?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

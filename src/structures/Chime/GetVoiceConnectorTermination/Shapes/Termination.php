@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Chime\GetVoiceConnectorTermination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CpsLimit
+ * @property int<1, max> $CpsLimit
  * @property string $DefaultPhoneNumber
  * @property list<string> $CallingRegions
  * @property list<string> $CidrAllowedList
@@ -15,7 +15,7 @@ class Termination extends Shape
 {
     /**
      * @param array{
-     *     CpsLimit?: int,
+     *     CpsLimit?: int<1, max>,
      *     DefaultPhoneNumber?: string,
      *     CallingRegions?: list<string>,
      *     CidrAllowedList?: list<string>,

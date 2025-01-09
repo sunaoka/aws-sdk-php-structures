@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<HopDestination> $HopDestinations
  * @property \Aws\Api\DateTimeResult $LastUpdated
  * @property string $Name
- * @property int $Priority
+ * @property int<-50, 50> $Priority
  * @property string $Queue
  * @property JobTemplateSettings $Settings
  * @property 'SECONDS_10'|'SECONDS_12'|'SECONDS_15'|'SECONDS_20'|'SECONDS_30'|'SECONDS_60'|'SECONDS_120'|'SECONDS_180'|'SECONDS_240'|'SECONDS_300'|'SECONDS_360'|'SECONDS_420'|'SECONDS_480'|'SECONDS_540'|'SECONDS_600' $StatusUpdateInterval
@@ -31,7 +31,7 @@ class JobTemplate extends Shape
      *     HopDestinations?: list<HopDestination>,
      *     LastUpdated?: \Aws\Api\DateTimeResult,
      *     Name: string,
-     *     Priority?: int,
+     *     Priority?: int<-50, 50>,
      *     Queue?: string,
      *     Settings: JobTemplateSettings,
      *     StatusUpdateInterval?: 'SECONDS_10'|'SECONDS_12'|'SECONDS_15'|'SECONDS_20'|'SECONDS_30'|'SECONDS_60'|'SECONDS_120'|'SECONDS_180'|'SECONDS_240'|'SECONDS_300'|'SECONDS_360'|'SECONDS_420'|'SECONDS_480'|'SECONDS_540'|'SECONDS_600',

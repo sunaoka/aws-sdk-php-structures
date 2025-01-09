@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT' $ByVaultType
  * @property bool $ByShared
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class ListBackupVaultsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListBackupVaultsRequest extends Request
      *     ByVaultType?: 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT',
      *     ByShared?: bool,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args = [])

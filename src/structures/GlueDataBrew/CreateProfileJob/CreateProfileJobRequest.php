@@ -11,13 +11,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'ENABLE'|'DISABLE' $LogSubscription
  * @property int $MaxCapacity
- * @property int $MaxRetries
+ * @property int<0, max> $MaxRetries
  * @property Shapes\S3Location $OutputLocation
  * @property Shapes\ProfileConfiguration $Configuration
  * @property list<Shapes\ValidationConfiguration> $ValidationConfigurations
  * @property string $RoleArn
  * @property array<string, string> $Tags
- * @property int $Timeout
+ * @property int<0, max> $Timeout
  * @property Shapes\JobSample $JobSample
  */
 class CreateProfileJobRequest extends Request
@@ -30,13 +30,13 @@ class CreateProfileJobRequest extends Request
      *     Name: string,
      *     LogSubscription?: 'ENABLE'|'DISABLE',
      *     MaxCapacity?: int,
-     *     MaxRetries?: int,
+     *     MaxRetries?: int<0, max>,
      *     OutputLocation: Shapes\S3Location,
      *     Configuration?: Shapes\ProfileConfiguration,
      *     ValidationConfigurations?: list<Shapes\ValidationConfiguration>,
      *     RoleArn: string,
      *     Tags?: array<string, string>,
-     *     Timeout?: int,
+     *     Timeout?: int<0, max>,
      *     JobSample?: Shapes\JobSample
      * } $args
      */

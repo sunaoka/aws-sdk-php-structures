@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $beforeTime
  * @property bool $includeResolvedCases
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<10, 100> $maxResults
  * @property string $language
  * @property bool $includeCommunications
  */
@@ -25,7 +25,7 @@ class DescribeCasesRequest extends Request
      *     beforeTime?: string,
      *     includeResolvedCases?: bool,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<10, 100>,
      *     language?: string,
      *     includeCommunications?: bool
      * } $args

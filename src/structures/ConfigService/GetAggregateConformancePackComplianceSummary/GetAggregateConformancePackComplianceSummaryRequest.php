@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ConfigurationAggregatorName
  * @property Shapes\AggregateConformancePackComplianceSummaryFilters $Filters
  * @property 'ACCOUNT_ID'|'AWS_REGION' $GroupByKey
- * @property int $Limit
+ * @property int<0, 100> $Limit
  * @property string $NextToken
  */
 class GetAggregateConformancePackComplianceSummaryRequest extends Request
@@ -18,7 +18,7 @@ class GetAggregateConformancePackComplianceSummaryRequest extends Request
      *     ConfigurationAggregatorName: string,
      *     Filters?: Shapes\AggregateConformancePackComplianceSummaryFilters,
      *     GroupByKey?: 'ACCOUNT_ID'|'AWS_REGION',
-     *     Limit?: int,
+     *     Limit?: int<0, 100>,
      *     NextToken?: string
      * } $args
      */

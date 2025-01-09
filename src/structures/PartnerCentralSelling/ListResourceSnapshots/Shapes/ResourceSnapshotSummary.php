@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ResourceId
  * @property string $ResourceSnapshotTemplateName
  * @property 'Opportunity' $ResourceType
- * @property int $Revision
+ * @property int<1, max> $Revision
  */
 class ResourceSnapshotSummary extends Shape
 {
@@ -21,7 +21,7 @@ class ResourceSnapshotSummary extends Shape
      *     ResourceId?: string,
      *     ResourceSnapshotTemplateName?: string,
      *     ResourceType?: 'Opportunity',
-     *     Revision?: int
+     *     Revision?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RegistrationId
- * @property int $VersionNumber
+ * @property int<1, 100000> $VersionNumber
  * @property string $SectionPath
  * @property list<string> $FieldPaths
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class DescribeRegistrationFieldValuesRequest extends Request
 {
     /**
      * @param array{
      *     RegistrationId: string,
-     *     VersionNumber?: int,
+     *     VersionNumber?: int<1, 100000>,
      *     SectionPath?: string,
      *     FieldPaths?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

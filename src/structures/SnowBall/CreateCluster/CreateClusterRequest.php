@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ForwardingAddressId
  * @property Shapes\TaxDocuments $TaxDocuments
  * @property 'INSTALLED_ONLY'|'INSTALLED_AUTOSTART'|'NOT_INSTALLED' $RemoteManagement
- * @property int $InitialClusterSize
+ * @property int<0, 16> $InitialClusterSize
  * @property bool $ForceCreateJobs
  * @property list<string> $LongTermPricingIds
  * @property 'T50'|'T80'|'T100'|'T42'|'T98'|'T8'|'T14'|'T32'|'NoPreference'|'T240'|'T13' $SnowballCapacityPreference
@@ -40,7 +40,7 @@ class CreateClusterRequest extends Request
      *     ForwardingAddressId?: string,
      *     TaxDocuments?: Shapes\TaxDocuments,
      *     RemoteManagement?: 'INSTALLED_ONLY'|'INSTALLED_AUTOSTART'|'NOT_INSTALLED',
-     *     InitialClusterSize?: int,
+     *     InitialClusterSize?: int<0, 16>,
      *     ForceCreateJobs?: bool,
      *     LongTermPricingIds?: list<string>,
      *     SnowballCapacityPreference?: 'T50'|'T80'|'T100'|'T42'|'T98'|'T8'|'T14'|'T32'|'NoPreference'|'T240'|'T13'

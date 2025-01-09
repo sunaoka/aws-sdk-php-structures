@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\GameLift\ListContainerGroupDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $FromPort
- * @property int $ToPort
+ * @property int<1, 60000> $FromPort
+ * @property int<1, 60000> $ToPort
  * @property 'TCP'|'UDP' $Protocol
  */
 class ContainerPortRange extends Shape
 {
     /**
      * @param array{
-     *     FromPort: int,
-     *     ToPort: int,
+     *     FromPort: int<1, 60000>,
+     *     ToPort: int<1, 60000>,
      *     Protocol: 'TCP'|'UDP'
      * } $args
      */

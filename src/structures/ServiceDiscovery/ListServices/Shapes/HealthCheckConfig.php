@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'HTTP'|'HTTPS'|'TCP' $Type
  * @property string $ResourcePath
- * @property int $FailureThreshold
+ * @property int<1, 10> $FailureThreshold
  */
 class HealthCheckConfig extends Shape
 {
@@ -15,7 +15,7 @@ class HealthCheckConfig extends Shape
      * @param array{
      *     Type: 'HTTP'|'HTTPS'|'TCP',
      *     ResourcePath?: string,
-     *     FailureThreshold?: int
+     *     FailureThreshold?: int<1, 10>
      * } $args
      */
     public function __construct(array $args)

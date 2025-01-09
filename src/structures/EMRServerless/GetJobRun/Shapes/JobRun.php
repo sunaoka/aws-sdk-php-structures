@@ -22,11 +22,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property TotalResourceUtilization $totalResourceUtilization
  * @property NetworkConfiguration $networkConfiguration
  * @property int $totalExecutionDurationSeconds
- * @property int $executionTimeoutMinutes
+ * @property int<0, 1000000> $executionTimeoutMinutes
  * @property ResourceUtilization $billedResourceUtilization
  * @property 'BATCH'|'STREAMING' $mode
  * @property RetryPolicy $retryPolicy
- * @property int $attempt
+ * @property int<1, max> $attempt
  * @property \Aws\Api\DateTimeResult $attemptCreatedAt
  * @property \Aws\Api\DateTimeResult $attemptUpdatedAt
  * @property \Aws\Api\DateTimeResult $startedAt
@@ -54,11 +54,11 @@ class JobRun extends Shape
      *     totalResourceUtilization?: TotalResourceUtilization,
      *     networkConfiguration?: NetworkConfiguration,
      *     totalExecutionDurationSeconds?: int,
-     *     executionTimeoutMinutes?: int,
+     *     executionTimeoutMinutes?: int<0, 1000000>,
      *     billedResourceUtilization?: ResourceUtilization,
      *     mode?: 'BATCH'|'STREAMING',
      *     retryPolicy?: RetryPolicy,
-     *     attempt?: int,
+     *     attempt?: int<1, max>,
      *     attemptCreatedAt?: \Aws\Api\DateTimeResult,
      *     attemptUpdatedAt?: \Aws\Api\DateTimeResult,
      *     startedAt?: \Aws\Api\DateTimeResult,

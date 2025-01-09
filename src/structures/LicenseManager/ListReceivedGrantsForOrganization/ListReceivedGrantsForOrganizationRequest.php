@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LicenseArn
  * @property list<Shapes\Filter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListReceivedGrantsForOrganizationRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListReceivedGrantsForOrganizationRequest extends Request
      *     LicenseArn: string,
      *     Filters?: list<Shapes\Filter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $AwsRegion
  * @property 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA' $ComplianceType
- * @property int $Limit
+ * @property int<0, 100> $Limit
  * @property string $NextToken
  */
 class GetAggregateComplianceDetailsByConfigRuleRequest extends Request
@@ -22,7 +22,7 @@ class GetAggregateComplianceDetailsByConfigRuleRequest extends Request
      *     AccountId: string,
      *     AwsRegion: string,
      *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA',
-     *     Limit?: int,
+     *     Limit?: int<0, 100>,
      *     NextToken?: string
      * } $args
      */

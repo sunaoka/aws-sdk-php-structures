@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Bucket
  * @property string $Region
- * @property int $TrafficDialPercentage
+ * @property int<0, 100> $TrafficDialPercentage
  */
 class MultiRegionAccessPointRoute extends Shape
 {
@@ -15,7 +15,7 @@ class MultiRegionAccessPointRoute extends Shape
      * @param array{
      *     Bucket?: string,
      *     Region?: string,
-     *     TrafficDialPercentage: int
+     *     TrafficDialPercentage: int<0, 100>
      * } $args
      */
     public function __construct(array $args)

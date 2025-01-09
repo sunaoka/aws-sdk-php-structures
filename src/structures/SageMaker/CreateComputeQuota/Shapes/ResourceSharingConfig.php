@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Lend'|'DontLend'|'LendAndBorrow' $Strategy
- * @property int $BorrowLimit
+ * @property int<1, 500> $BorrowLimit
  */
 class ResourceSharingConfig extends Shape
 {
     /**
      * @param array{
      *     Strategy: 'Lend'|'DontLend'|'LendAndBorrow',
-     *     BorrowLimit?: int
+     *     BorrowLimit?: int<1, 500>
      * } $args
      */
     public function __construct(array $args)

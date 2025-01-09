@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\CreateSlot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maxLengthMs
- * @property int $endTimeoutMs
+ * @property int<1, max> $maxLengthMs
+ * @property int<1, max> $endTimeoutMs
  */
 class AudioSpecification extends Shape
 {
     /**
      * @param array{
-     *     maxLengthMs: int,
-     *     endTimeoutMs: int
+     *     maxLengthMs: int<1, max>,
+     *     endTimeoutMs: int<1, max>
      * } $args
      */
     public function __construct(array $args)

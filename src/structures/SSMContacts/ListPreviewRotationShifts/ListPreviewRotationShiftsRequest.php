@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RecurrenceSettings $Recurrence
  * @property list<Shapes\PreviewOverride> $Overrides
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 1024> $MaxResults
  */
 class ListPreviewRotationShiftsRequest extends Request
 {
@@ -27,7 +27,7 @@ class ListPreviewRotationShiftsRequest extends Request
      *     Recurrence: Shapes\RecurrenceSettings,
      *     Overrides?: list<Shapes\PreviewOverride>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<0, 1024>
      * } $args
      */
     public function __construct(array $args)

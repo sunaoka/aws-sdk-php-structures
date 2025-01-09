@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Arn
  * @property string $Name
  * @property string $ThemeId
- * @property int $LatestVersionNumber
+ * @property int<1, max> $LatestVersionNumber
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastUpdatedTime
  */
@@ -19,7 +19,7 @@ class ThemeSummary extends Shape
      *     Arn?: string,
      *     Name?: string,
      *     ThemeId?: string,
-     *     LatestVersionNumber?: int,
+     *     LatestVersionNumber?: int<1, max>,
      *     CreatedTime?: \Aws\Api\DateTimeResult,
      *     LastUpdatedTime?: \Aws\Api\DateTimeResult
      * } $args

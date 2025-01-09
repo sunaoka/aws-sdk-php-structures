@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $agentId
  * @property string $agentVersion
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListAgentCollaboratorsRequest extends Request
@@ -16,7 +16,7 @@ class ListAgentCollaboratorsRequest extends Request
      * @param array{
      *     agentId: string,
      *     agentVersion: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

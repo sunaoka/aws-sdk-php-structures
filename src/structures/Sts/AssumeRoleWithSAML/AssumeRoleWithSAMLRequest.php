@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SAMLAssertion
  * @property list<Shapes\PolicyDescriptorType> $PolicyArns
  * @property string $Policy
- * @property int $DurationSeconds
+ * @property int<900, 43200> $DurationSeconds
  */
 class AssumeRoleWithSAMLRequest extends Request
 {
@@ -21,7 +21,7 @@ class AssumeRoleWithSAMLRequest extends Request
      *     SAMLAssertion: string,
      *     PolicyArns?: list<Shapes\PolicyDescriptorType>,
      *     Policy?: string,
-     *     DurationSeconds?: int
+     *     DurationSeconds?: int<900, 43200>
      * } $args
      */
     public function __construct(array $args)

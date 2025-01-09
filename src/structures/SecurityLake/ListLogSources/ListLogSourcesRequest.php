@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $accounts
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property list<string> $regions
  * @property list<Shapes\LogSourceResource> $sources
@@ -16,7 +16,7 @@ class ListLogSourcesRequest extends Request
     /**
      * @param array{
      *     accounts?: list<string>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     regions?: list<string>,
      *     sources?: list<Shapes\LogSourceResource>

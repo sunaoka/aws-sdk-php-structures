@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ApiId
  * @property string $AuthorizerCredentialsArn
  * @property string $AuthorizerId
- * @property int $AuthorizerResultTtlInSeconds
+ * @property int<0, 3600> $AuthorizerResultTtlInSeconds
  * @property 'REQUEST'|'JWT' $AuthorizerType
  * @property string $AuthorizerUri
  * @property list<string> $IdentitySource
@@ -25,7 +25,7 @@ class UpdateAuthorizerRequest extends Request
      *     ApiId: string,
      *     AuthorizerCredentialsArn?: string,
      *     AuthorizerId: string,
-     *     AuthorizerResultTtlInSeconds?: int,
+     *     AuthorizerResultTtlInSeconds?: int<0, 3600>,
      *     AuthorizerType?: 'REQUEST'|'JWT',
      *     AuthorizerUri?: string,
      *     IdentitySource?: list<string>,

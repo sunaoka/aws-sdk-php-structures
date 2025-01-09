@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ContentEncoding
  * @property string $ContentLanguage
  * @property array<string, string> $UserMetadata
- * @property int $ContentLength
+ * @property int<0, max> $ContentLength
  * @property string $ContentMD5
  * @property string $ContentType
  * @property \Aws\Api\DateTimeResult $HttpExpiresDate
@@ -26,7 +26,7 @@ class S3ObjectMetadata extends Shape
      *     ContentEncoding?: string,
      *     ContentLanguage?: string,
      *     UserMetadata?: array<string, string>,
-     *     ContentLength?: int,
+     *     ContentLength?: int<0, max>,
      *     ContentMD5?: string,
      *     ContentType?: string,
      *     HttpExpiresDate?: \Aws\Api\DateTimeResult,

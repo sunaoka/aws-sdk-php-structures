@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ProxySessionId
  * @property string $Name
  * @property 'Open'|'InProgress'|'Closed' $Status
- * @property int $ExpiryMinutes
+ * @property int<1, max> $ExpiryMinutes
  * @property list<'Voice'|'SMS'> $Capabilities
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
@@ -27,7 +27,7 @@ class ProxySession extends Shape
      *     ProxySessionId?: string,
      *     Name?: string,
      *     Status?: 'Open'|'InProgress'|'Closed',
-     *     ExpiryMinutes?: int,
+     *     ExpiryMinutes?: int<1, max>,
      *     Capabilities?: list<'Voice'|'SMS'>,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
      *     UpdatedTimestamp?: \Aws\Api\DateTimeResult,

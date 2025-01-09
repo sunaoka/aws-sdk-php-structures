@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ASCENDING'|'DESCENDING' $Order
  * @property 'USER_NAME'|'FULL_NAME'|'STORAGE_LIMIT'|'USER_STATUS'|'STORAGE_USED' $Sort
  * @property string $Marker
- * @property int $Limit
+ * @property int<1, 999> $Limit
  * @property string $Fields
  */
 class DescribeUsersRequest extends Request
@@ -28,7 +28,7 @@ class DescribeUsersRequest extends Request
      *     Order?: 'ASCENDING'|'DESCENDING',
      *     Sort?: 'USER_NAME'|'FULL_NAME'|'STORAGE_LIMIT'|'USER_STATUS'|'STORAGE_USED',
      *     Marker?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, 999>,
      *     Fields?: string
      * } $args
      */

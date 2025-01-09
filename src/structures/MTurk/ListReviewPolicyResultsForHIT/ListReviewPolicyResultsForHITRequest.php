@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $RetrieveActions
  * @property bool $RetrieveResults
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListReviewPolicyResultsForHITRequest extends Request
 {
@@ -21,7 +21,7 @@ class ListReviewPolicyResultsForHITRequest extends Request
      *     RetrieveActions?: bool,
      *     RetrieveResults?: bool,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

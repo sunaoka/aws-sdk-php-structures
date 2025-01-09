@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListDestinations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<0, 250> $MaxResults
  * @property string $NextToken
  */
 class ListDestinationsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 250>,
      *     NextToken?: string
      * } $args
      */

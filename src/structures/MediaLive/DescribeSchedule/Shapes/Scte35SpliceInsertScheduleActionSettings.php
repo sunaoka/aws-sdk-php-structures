@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Duration
- * @property int $SpliceEventId
+ * @property int<0, 8589934591> $Duration
+ * @property int<0, 4294967295> $SpliceEventId
  */
 class Scte35SpliceInsertScheduleActionSettings extends Shape
 {
     /**
      * @param array{
-     *     Duration?: int,
-     *     SpliceEventId: int
+     *     Duration?: int<0, 8589934591>,
+     *     SpliceEventId: int<0, 4294967295>
      * } $args
      */
     public function __construct(array $args)

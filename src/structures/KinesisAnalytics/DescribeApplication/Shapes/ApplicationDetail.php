@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ReferenceDataSourceDescription> $ReferenceDataSourceDescriptions
  * @property list<CloudWatchLoggingOptionDescription> $CloudWatchLoggingOptionDescriptions
  * @property string $ApplicationCode
- * @property int $ApplicationVersionId
+ * @property int<1, 999999999> $ApplicationVersionId
  */
 class ApplicationDetail extends Shape
 {
@@ -33,7 +33,7 @@ class ApplicationDetail extends Shape
      *     ReferenceDataSourceDescriptions?: list<ReferenceDataSourceDescription>,
      *     CloudWatchLoggingOptionDescriptions?: list<CloudWatchLoggingOptionDescription>,
      *     ApplicationCode?: string,
-     *     ApplicationVersionId: int
+     *     ApplicationVersionId: int<1, 999999999>
      * } $args
      */
     public function __construct(array $args)

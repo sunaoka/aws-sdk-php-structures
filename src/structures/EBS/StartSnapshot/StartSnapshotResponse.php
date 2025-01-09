@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $OwnerId
  * @property 'completed'|'pending'|'error' $Status
  * @property \Aws\Api\DateTimeResult $StartTime
- * @property int $VolumeSize
+ * @property int<1, max> $VolumeSize
  * @property int $BlockSize
  * @property list<Shapes\Tag> $Tags
  * @property string $ParentSnapshotId

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeNetworkInsightsAnalyses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $LoadBalancerPort
- * @property int $InstancePort
+ * @property int<0, 65535> $LoadBalancerPort
+ * @property int<0, 65535> $InstancePort
  */
 class AnalysisLoadBalancerListener extends Shape
 {
     /**
      * @param array{
-     *     LoadBalancerPort?: int,
-     *     InstancePort?: int
+     *     LoadBalancerPort?: int<0, 65535>,
+     *     InstancePort?: int<0, 65535>
      * } $args
      */
     public function __construct(array $args = [])

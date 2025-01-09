@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateUserProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DefaultEbsVolumeSizeInGb
- * @property int $MaximumEbsVolumeSizeInGb
+ * @property int<5, 16384> $DefaultEbsVolumeSizeInGb
+ * @property int<5, 16384> $MaximumEbsVolumeSizeInGb
  */
 class DefaultEbsStorageSettings extends Shape
 {
     /**
      * @param array{
-     *     DefaultEbsVolumeSizeInGb: int,
-     *     MaximumEbsVolumeSizeInGb: int
+     *     DefaultEbsVolumeSizeInGb: int<5, 16384>,
+     *     MaximumEbsVolumeSizeInGb: int<5, 16384>
      * } $args
      */
     public function __construct(array $args)

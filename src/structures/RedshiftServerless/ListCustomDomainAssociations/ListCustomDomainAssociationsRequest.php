@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $customDomainCertificateArn
  * @property string $customDomainName
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListCustomDomainAssociationsRequest extends Request
@@ -16,7 +16,7 @@ class ListCustomDomainAssociationsRequest extends Request
      * @param array{
      *     customDomainCertificateArn?: string,
      *     customDomainName?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

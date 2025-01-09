@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\SetTextMessageSpendLimitOver
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MonthlyLimit
+ * @property int<0, 1000000000> $MonthlyLimit
  */
 class SetTextMessageSpendLimitOverrideRequest extends Request
 {
     /**
-     * @param array{MonthlyLimit: int} $args
+     * @param array{MonthlyLimit: int<0, 1000000000>} $args
      */
     public function __construct(array $args)
     {

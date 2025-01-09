@@ -11,10 +11,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Owner
  * @property \Aws\Api\DateTimeResult $UpdatedAt
  * @property list<string> $Lenses
- * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int> $RiskCounts
+ * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>> $RiskCounts
  * @property 'NOT_APPLICABLE'|'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'RISK_ACKNOWLEDGED' $ImprovementStatus
  * @property list<WorkloadProfile> $Profiles
- * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int> $PrioritizedRiskCounts
+ * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>> $PrioritizedRiskCounts
  */
 class WorkloadSummary extends Shape
 {
@@ -26,10 +26,10 @@ class WorkloadSummary extends Shape
      *     Owner?: string,
      *     UpdatedAt?: \Aws\Api\DateTimeResult,
      *     Lenses?: list<string>,
-     *     RiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int>,
+     *     RiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>,
      *     ImprovementStatus?: 'NOT_APPLICABLE'|'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'RISK_ACKNOWLEDGED',
      *     Profiles?: list<WorkloadProfile>,
-     *     PrioritizedRiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int>
+     *     PrioritizedRiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>
      * } $args
      */
     public function __construct(array $args = [])

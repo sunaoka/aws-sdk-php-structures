@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property \Aws\Api\DateTimeResult $LastModified
  * @property string $FunctionArn
- * @property int $MaximumRetryAttempts
- * @property int $MaximumEventAgeInSeconds
+ * @property int<0, 2> $MaximumRetryAttempts
+ * @property int<60, 21600> $MaximumEventAgeInSeconds
  * @property DestinationConfig $DestinationConfig
  */
 class FunctionEventInvokeConfig extends Shape
@@ -17,8 +17,8 @@ class FunctionEventInvokeConfig extends Shape
      * @param array{
      *     LastModified?: \Aws\Api\DateTimeResult,
      *     FunctionArn?: string,
-     *     MaximumRetryAttempts?: int,
-     *     MaximumEventAgeInSeconds?: int,
+     *     MaximumRetryAttempts?: int<0, 2>,
+     *     MaximumEventAgeInSeconds?: int<60, 21600>,
      *     DestinationConfig?: DestinationConfig
      * } $args
      */

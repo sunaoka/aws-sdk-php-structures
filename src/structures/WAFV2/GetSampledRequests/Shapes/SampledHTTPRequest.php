@@ -6,12 +6,12 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property HTTPRequest $Request
- * @property int $Weight
+ * @property int<0, max> $Weight
  * @property \Aws\Api\DateTimeResult $Timestamp
  * @property string $Action
  * @property string $RuleNameWithinRuleGroup
  * @property list<HTTPHeader> $RequestHeadersInserted
- * @property int $ResponseCodeSent
+ * @property int<200, 599> $ResponseCodeSent
  * @property list<Label> $Labels
  * @property CaptchaResponse $CaptchaResponse
  * @property ChallengeResponse $ChallengeResponse
@@ -22,12 +22,12 @@ class SampledHTTPRequest extends Shape
     /**
      * @param array{
      *     Request: HTTPRequest,
-     *     Weight: int,
+     *     Weight: int<0, max>,
      *     Timestamp?: \Aws\Api\DateTimeResult,
      *     Action?: string,
      *     RuleNameWithinRuleGroup?: string,
      *     RequestHeadersInserted?: list<HTTPHeader>,
-     *     ResponseCodeSent?: int,
+     *     ResponseCodeSent?: int<200, 599>,
      *     Labels?: list<Label>,
      *     CaptchaResponse?: CaptchaResponse,
      *     ChallengeResponse?: ChallengeResponse,

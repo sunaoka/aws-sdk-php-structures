@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\TranscribeService\StartMedicalScribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ChannelId
+ * @property int<0, 1> $ChannelId
  * @property 'PATIENT'|'CLINICIAN' $ParticipantRole
  */
 class MedicalScribeChannelDefinition extends Shape
 {
     /**
      * @param array{
-     *     ChannelId: int,
+     *     ChannelId: int<0, 1>,
      *     ParticipantRole: 'PATIENT'|'CLINICIAN'
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $Names
  * @property string $RuleSetName
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $NextToken
  */
 class DescribeMatchmakingConfigurationsRequest extends Request
@@ -16,7 +16,7 @@ class DescribeMatchmakingConfigurationsRequest extends Request
      * @param array{
      *     Names?: list<string>,
      *     RuleSetName?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

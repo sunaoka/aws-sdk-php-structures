@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceArn
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListPermissionSetsRequest extends Request
@@ -14,7 +14,7 @@ class ListPermissionSetsRequest extends Request
     /**
      * @param array{
      *     InstanceArn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

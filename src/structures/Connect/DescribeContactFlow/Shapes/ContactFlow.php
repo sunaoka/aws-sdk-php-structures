@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Content
  * @property array<string, string> $Tags
  * @property string $FlowContentSha256
- * @property int $Version
+ * @property int<1, max> $Version
  * @property string $VersionDescription
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property string $LastModifiedRegion
@@ -34,7 +34,7 @@ class ContactFlow extends Shape
      *     Content?: string,
      *     Tags?: array<string, string>,
      *     FlowContentSha256?: string,
-     *     Version?: int,
+     *     Version?: int<1, max>,
      *     VersionDescription?: string,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult,
      *     LastModifiedRegion?: string

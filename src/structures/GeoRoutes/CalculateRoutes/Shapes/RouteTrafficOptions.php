@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $FlowEventThresholdOverride
+ * @property int<0, 4294967295> $FlowEventThresholdOverride
  * @property 'IgnoreTrafficData'|'UseTrafficData' $Usage
  */
 class RouteTrafficOptions extends Shape
 {
     /**
      * @param array{
-     *     FlowEventThresholdOverride?: int,
+     *     FlowEventThresholdOverride?: int<0, 4294967295>,
      *     Usage?: 'IgnoreTrafficData'|'UseTrafficData'
      * } $args
      */

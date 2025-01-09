@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FleetId
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $NextToken
  */
 class ListFleetDeploymentsRequest extends Request
@@ -14,7 +14,7 @@ class ListFleetDeploymentsRequest extends Request
     /**
      * @param array{
      *     FleetId?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

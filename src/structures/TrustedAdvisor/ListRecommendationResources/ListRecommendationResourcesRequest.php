@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'excluded'|'included' $exclusionStatus
- * @property int $maxResults
+ * @property int<1, 200> $maxResults
  * @property string $nextToken
  * @property string $recommendationIdentifier
  * @property string $regionCode
@@ -17,7 +17,7 @@ class ListRecommendationResourcesRequest extends Request
     /**
      * @param array{
      *     exclusionStatus?: 'excluded'|'included',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 200>,
      *     nextToken?: string,
      *     recommendationIdentifier: string,
      *     regionCode?: string,

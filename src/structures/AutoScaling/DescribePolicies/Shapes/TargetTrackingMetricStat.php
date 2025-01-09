@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Metric $Metric
  * @property string $Stat
  * @property string $Unit
- * @property int $Period
+ * @property int<1, max> $Period
  */
 class TargetTrackingMetricStat extends Shape
 {
@@ -17,7 +17,7 @@ class TargetTrackingMetricStat extends Shape
      *     Metric: Metric,
      *     Stat: string,
      *     Unit?: string,
-     *     Period?: int
+     *     Period?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

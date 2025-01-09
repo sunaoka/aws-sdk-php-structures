@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $logStreamName
- * @property int $timestamp
+ * @property int<0, max> $timestamp
  * @property string $message
- * @property int $ingestionTime
+ * @property int<0, max> $ingestionTime
  * @property string $eventId
  */
 class FilteredLogEvent extends Shape
@@ -16,9 +16,9 @@ class FilteredLogEvent extends Shape
     /**
      * @param array{
      *     logStreamName?: string,
-     *     timestamp?: int,
+     *     timestamp?: int<0, max>,
      *     message?: string,
-     *     ingestionTime?: int,
+     *     ingestionTime?: int<0, max>,
      *     eventId?: string
      * } $args
      */

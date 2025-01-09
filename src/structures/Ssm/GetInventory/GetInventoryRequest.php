@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\InventoryAggregator> $Aggregators
  * @property list<Shapes\ResultAttribute> $ResultAttributes
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  */
 class GetInventoryRequest extends Request
 {
@@ -19,7 +19,7 @@ class GetInventoryRequest extends Request
      *     Aggregators?: list<Shapes\InventoryAggregator>,
      *     ResultAttributes?: list<Shapes\ResultAttribute>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

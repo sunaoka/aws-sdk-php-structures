@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $imageBuildVersionArn
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  */
 class ListImagePackagesRequest extends Request
@@ -14,7 +14,7 @@ class ListImagePackagesRequest extends Request
     /**
      * @param array{
      *     imageBuildVersionArn: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string
      * } $args
      */

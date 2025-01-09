@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GatewayARN
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $Marker
  */
 class ListFileSharesRequest extends Request
@@ -14,7 +14,7 @@ class ListFileSharesRequest extends Request
     /**
      * @param array{
      *     GatewayARN?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     Marker?: string
      * } $args
      */

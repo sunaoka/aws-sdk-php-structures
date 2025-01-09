@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool $includeCanceled
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  * @property string $platformId
  * @property list<'Active'|'Canceled'|'Revoked'> $statuses
@@ -16,7 +16,7 @@ class ListSigningProfilesRequest extends Request
     /**
      * @param array{
      *     includeCanceled?: bool,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string,
      *     platformId?: string,
      *     statuses?: list<'Active'|'Canceled'|'Revoked'>

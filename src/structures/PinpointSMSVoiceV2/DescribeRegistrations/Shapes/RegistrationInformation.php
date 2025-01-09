@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RegistrationId
  * @property string $RegistrationType
  * @property 'CREATED'|'SUBMITTED'|'REVIEWING'|'REQUIRES_AUTHENTICATION'|'PROVISIONING'|'COMPLETE'|'REQUIRES_UPDATES'|'CLOSED'|'DELETED' $RegistrationStatus
- * @property int $CurrentVersionNumber
- * @property int $ApprovedVersionNumber
- * @property int $LatestDeniedVersionNumber
+ * @property int<1, 100000> $CurrentVersionNumber
+ * @property int<1, 100000> $ApprovedVersionNumber
+ * @property int<1, 100000> $LatestDeniedVersionNumber
  * @property array<string, string> $AdditionalAttributes
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  */
@@ -23,9 +23,9 @@ class RegistrationInformation extends Shape
      *     RegistrationId: string,
      *     RegistrationType: string,
      *     RegistrationStatus: 'CREATED'|'SUBMITTED'|'REVIEWING'|'REQUIRES_AUTHENTICATION'|'PROVISIONING'|'COMPLETE'|'REQUIRES_UPDATES'|'CLOSED'|'DELETED',
-     *     CurrentVersionNumber: int,
-     *     ApprovedVersionNumber?: int,
-     *     LatestDeniedVersionNumber?: int,
+     *     CurrentVersionNumber: int<1, 100000>,
+     *     ApprovedVersionNumber?: int<1, 100000>,
+     *     LatestDeniedVersionNumber?: int<1, 100000>,
      *     AdditionalAttributes?: array<string, string>,
      *     CreatedTimestamp: \Aws\Api\DateTimeResult
      * } $args

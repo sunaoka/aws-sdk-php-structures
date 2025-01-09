@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $endTime
  * @property 'TIMEOUTS'|'RETRANSMISSIONS'|'DATA_TRANSFERRED' $metricName
  * @property 'INTRA_AZ'|'INTER_AZ'|'INTER_VPC'|'UNCLASSIFIED'|'AMAZON_S3'|'AMAZON_DYNAMODB' $destinationCategory
- * @property int $limit
+ * @property int<1, 500> $limit
  */
 class StartQueryWorkloadInsightsTopContributorsRequest extends Request
 {
@@ -21,7 +21,7 @@ class StartQueryWorkloadInsightsTopContributorsRequest extends Request
      *     endTime: \Aws\Api\DateTimeResult,
      *     metricName: 'TIMEOUTS'|'RETRANSMISSIONS'|'DATA_TRANSFERRED',
      *     destinationCategory: 'INTRA_AZ'|'INTER_AZ'|'INTER_VPC'|'UNCLASSIFIED'|'AMAZON_S3'|'AMAZON_DYNAMODB',
-     *     limit?: int
+     *     limit?: int<1, 500>
      * } $args
      */
     public function __construct(array $args)

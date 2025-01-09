@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApplicationName
  * @property 'FLINK_DASHBOARD_URL'|'ZEPPELIN_UI_URL' $UrlType
- * @property int $SessionExpirationDurationInSeconds
+ * @property int<1800, 43200> $SessionExpirationDurationInSeconds
  */
 class CreateApplicationPresignedUrlRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateApplicationPresignedUrlRequest extends Request
      * @param array{
      *     ApplicationName: string,
      *     UrlType: 'FLINK_DASHBOARD_URL'|'ZEPPELIN_UI_URL',
-     *     SessionExpirationDurationInSeconds?: int
+     *     SessionExpirationDurationInSeconds?: int<1800, 43200>
      * } $args
      */
     public function __construct(array $args)

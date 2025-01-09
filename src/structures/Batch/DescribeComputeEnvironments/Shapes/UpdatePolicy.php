@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $terminateJobsOnUpdate
- * @property int $jobExecutionTimeoutMinutes
+ * @property int<1, 360> $jobExecutionTimeoutMinutes
  */
 class UpdatePolicy extends Shape
 {
     /**
      * @param array{
      *     terminateJobsOnUpdate?: bool,
-     *     jobExecutionTimeoutMinutes?: int
+     *     jobExecutionTimeoutMinutes?: int<1, 360>
      * } $args
      */
     public function __construct(array $args = [])

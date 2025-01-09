@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Iot\UpdateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maximumPerMinute
+ * @property int<1, max> $maximumPerMinute
  * @property ExponentialRolloutRate $exponentialRate
  */
 class JobExecutionsRolloutConfig extends Shape
 {
     /**
      * @param array{
-     *     maximumPerMinute?: int,
+     *     maximumPerMinute?: int<1, max>,
      *     exponentialRate?: ExponentialRolloutRate
      * } $args
      */

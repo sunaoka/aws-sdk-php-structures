@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CreationTime'|'ScheduledTime'|'Status' $SortBy
  * @property 'Ascending'|'Descending' $SortOrder
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property \Aws\Api\DateTimeResult $ScheduledTimeBefore
  * @property \Aws\Api\DateTimeResult $ScheduledTimeAfter
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
@@ -30,7 +30,7 @@ class ListMonitoringExecutionsRequest extends Request
      *     SortBy?: 'CreationTime'|'ScheduledTime'|'Status',
      *     SortOrder?: 'Ascending'|'Descending',
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     ScheduledTimeBefore?: \Aws\Api\DateTimeResult,
      *     ScheduledTimeAfter?: \Aws\Api\DateTimeResult,
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'InProgress'|'Failed'|'Succeeded' $status
  * @property string $platformId
  * @property string $requestedBy
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  * @property bool $isRevoked
  * @property \Aws\Api\DateTimeResult $signatureExpiresBefore
@@ -22,7 +22,7 @@ class ListSigningJobsRequest extends Request
      *     status?: 'InProgress'|'Failed'|'Succeeded',
      *     platformId?: string,
      *     requestedBy?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string,
      *     isRevoked?: bool,
      *     signatureExpiresBefore?: \Aws\Api\DateTimeResult,

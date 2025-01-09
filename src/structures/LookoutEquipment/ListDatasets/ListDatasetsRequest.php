@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $DatasetNameBeginsWith
  */
 class ListDatasetsRequest extends Request
@@ -14,7 +14,7 @@ class ListDatasetsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     DatasetNameBeginsWith?: string
      * } $args
      */

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\StartComposition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $targetIntervalSeconds
+ * @property int<1, 86400> $targetIntervalSeconds
  * @property list<'SEQUENTIAL'|'LATEST'> $storage
  */
 class CompositionThumbnailConfiguration extends Shape
 {
     /**
      * @param array{
-     *     targetIntervalSeconds?: int,
+     *     targetIntervalSeconds?: int<1, 86400>,
      *     storage?: list<'SEQUENTIAL'|'LATEST'>
      * } $args
      */

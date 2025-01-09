@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<string> $StackSetAccounts
  * @property list<string> $StackSetRegions
- * @property int $StackSetFailureToleranceCount
- * @property int $StackSetFailureTolerancePercentage
- * @property int $StackSetMaxConcurrencyCount
- * @property int $StackSetMaxConcurrencyPercentage
+ * @property int<0, max> $StackSetFailureToleranceCount
+ * @property int<0, 100> $StackSetFailureTolerancePercentage
+ * @property int<1, max> $StackSetMaxConcurrencyCount
+ * @property int<1, 100> $StackSetMaxConcurrencyPercentage
  * @property 'CREATE'|'UPDATE'|'DELETE' $StackSetOperationType
  */
 class UpdateProvisioningPreferences extends Shape
@@ -19,10 +19,10 @@ class UpdateProvisioningPreferences extends Shape
      * @param array{
      *     StackSetAccounts?: list<string>,
      *     StackSetRegions?: list<string>,
-     *     StackSetFailureToleranceCount?: int,
-     *     StackSetFailureTolerancePercentage?: int,
-     *     StackSetMaxConcurrencyCount?: int,
-     *     StackSetMaxConcurrencyPercentage?: int,
+     *     StackSetFailureToleranceCount?: int<0, max>,
+     *     StackSetFailureTolerancePercentage?: int<0, 100>,
+     *     StackSetMaxConcurrencyCount?: int<1, max>,
+     *     StackSetMaxConcurrencyPercentage?: int<1, 100>,
      *     StackSetOperationType?: 'CREATE'|'UPDATE'|'DELETE'
      * } $args
      */

@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $package
  * @property 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted' $status
  * @property 'PUBLISHED_TIME' $sortBy
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property 'INTERNAL'|'EXTERNAL'|'UNKNOWN' $originType
  */
@@ -29,7 +29,7 @@ class ListPackageVersionsRequest extends Request
      *     package: string,
      *     status?: 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted',
      *     sortBy?: 'PUBLISHED_TIME',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     originType?: 'INTERNAL'|'EXTERNAL'|'UNKNOWN'
      * } $args

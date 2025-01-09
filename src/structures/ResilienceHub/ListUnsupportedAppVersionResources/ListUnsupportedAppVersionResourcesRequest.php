@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $appArn
  * @property string $appVersion
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property string $resolutionId
  */
@@ -17,7 +17,7 @@ class ListUnsupportedAppVersionResourcesRequest extends Request
      * @param array{
      *     appArn: string,
      *     appVersion: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     resolutionId?: string
      * } $args

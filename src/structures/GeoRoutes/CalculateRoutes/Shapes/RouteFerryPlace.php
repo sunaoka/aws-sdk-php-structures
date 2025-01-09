@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property list<double> $OriginalPosition
  * @property list<double> $Position
- * @property int $WaypointIndex
+ * @property int<0, max> $WaypointIndex
  */
 class RouteFerryPlace extends Shape
 {
@@ -17,7 +17,7 @@ class RouteFerryPlace extends Shape
      *     Name?: string,
      *     OriginalPosition?: list<double>,
      *     Position: list<double>,
-     *     WaypointIndex?: int
+     *     WaypointIndex?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

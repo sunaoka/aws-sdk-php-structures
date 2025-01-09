@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $CapacityReservationIds
  * @property 'odcr-owner'|'unused-reservation-billing-owner' $Role
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property list<Shapes\Filter> $Filters
  * @property bool $DryRun
  */
@@ -19,7 +19,7 @@ class DescribeCapacityReservationBillingRequestsRequest extends Request
      *     CapacityReservationIds?: list<string>,
      *     Role: 'odcr-owner'|'unused-reservation-billing-owner',
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     Filters?: list<Shapes\Filter>,
      *     DryRun?: bool
      * } $args

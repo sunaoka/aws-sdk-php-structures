@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Title'|'VersionCount'|'CreationDate' $SortBy
  * @property 'ASCENDING'|'DESCENDING' $SortOrder
  * @property string $PageToken
- * @property int $PageSize
+ * @property int<0, 20> $PageSize
  * @property 'ACCOUNT' $ProductSource
  */
 class SearchProductsAsAdminRequest extends Request
@@ -24,7 +24,7 @@ class SearchProductsAsAdminRequest extends Request
      *     SortBy?: 'Title'|'VersionCount'|'CreationDate',
      *     SortOrder?: 'ASCENDING'|'DESCENDING',
      *     PageToken?: string,
-     *     PageSize?: int,
+     *     PageSize?: int<0, 20>,
      *     ProductSource?: 'ACCOUNT'
      * } $args
      */

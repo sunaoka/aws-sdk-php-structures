@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $componentVersionArn
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  */
 class ListComponentBuildVersionsRequest extends Request
@@ -14,7 +14,7 @@ class ListComponentBuildVersionsRequest extends Request
     /**
      * @param array{
      *     componentVersionArn: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string
      * } $args
      */

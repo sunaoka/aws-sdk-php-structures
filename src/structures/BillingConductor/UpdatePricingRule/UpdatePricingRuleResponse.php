@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'MARKUP'|'DISCOUNT'|'TIERING' $Type
  * @property double $ModifierPercentage
  * @property string $Service
- * @property int $AssociatedPricingPlanCount
+ * @property int<0, max> $AssociatedPricingPlanCount
  * @property int $LastModifiedTime
  * @property string $BillingEntity
  * @property Shapes\UpdateTieringInput $Tiering

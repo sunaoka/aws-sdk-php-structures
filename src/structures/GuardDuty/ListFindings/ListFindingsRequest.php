@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DetectorId
  * @property Shapes\FindingCriteria $FindingCriteria
  * @property Shapes\SortCriteria $SortCriteria
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListFindingsRequest extends Request
@@ -18,7 +18,7 @@ class ListFindingsRequest extends Request
      *     DetectorId: string,
      *     FindingCriteria?: Shapes\FindingCriteria,
      *     SortCriteria?: Shapes\SortCriteria,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

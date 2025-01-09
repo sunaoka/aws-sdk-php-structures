@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $Groupings
  * @property list<Shapes\MetricV2> $Metrics
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class GetMetricDataV2Request extends Request
 {
@@ -27,7 +27,7 @@ class GetMetricDataV2Request extends Request
      *     Groupings?: list<string>,
      *     Metrics: list<Shapes\MetricV2>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\GetMediaPipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NumberOfChannels
+ * @property int<1, 2> $NumberOfChannels
  * @property list<ChannelDefinition> $ChannelDefinitions
  */
 class StreamChannelDefinition extends Shape
 {
     /**
      * @param array{
-     *     NumberOfChannels: int,
+     *     NumberOfChannels: int<1, 2>,
      *     ChannelDefinitions?: list<ChannelDefinition>
      * } $args
      */

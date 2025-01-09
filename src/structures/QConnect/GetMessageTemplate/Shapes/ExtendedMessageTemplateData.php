@@ -24,7 +24,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $messageTemplateId
  * @property string $name
  * @property array<string, string> $tags
- * @property int $versionNumber
+ * @property int<1, max> $versionNumber
  */
 class ExtendedMessageTemplateData extends Shape
 {
@@ -49,7 +49,7 @@ class ExtendedMessageTemplateData extends Shape
      *     messageTemplateId: string,
      *     name: string,
      *     tags?: array<string, string>,
-     *     versionNumber?: int
+     *     versionNumber?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

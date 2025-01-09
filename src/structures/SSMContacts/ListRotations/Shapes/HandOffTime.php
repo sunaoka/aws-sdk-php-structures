@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SSMContacts\ListRotations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $HourOfDay
- * @property int $MinuteOfHour
+ * @property int<0, 23> $HourOfDay
+ * @property int<0, 59> $MinuteOfHour
  */
 class HandOffTime extends Shape
 {
     /**
      * @param array{
-     *     HourOfDay: int,
-     *     MinuteOfHour: int
+     *     HourOfDay: int<0, 23>,
+     *     MinuteOfHour: int<0, 59>
      * } $args
      */
     public function __construct(array $args)

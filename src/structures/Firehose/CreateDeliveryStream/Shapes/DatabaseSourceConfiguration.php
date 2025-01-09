@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'MySQL'|'PostgreSQL' $Type
  * @property string $Endpoint
- * @property int $Port
+ * @property int<0, 65535> $Port
  * @property 'Disabled'|'Enabled' $SSLMode
  * @property DatabaseList $Databases
  * @property DatabaseTableList $Tables
@@ -23,7 +23,7 @@ class DatabaseSourceConfiguration extends Shape
      * @param array{
      *     Type: 'MySQL'|'PostgreSQL',
      *     Endpoint: string,
-     *     Port: int,
+     *     Port: int<0, 65535>,
      *     SSLMode?: 'Disabled'|'Enabled',
      *     Databases: DatabaseList,
      *     Tables: DatabaseTableList,

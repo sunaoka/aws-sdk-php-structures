@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IndexId
  * @property string $DataSourceId
  * @property string $GroupId
- * @property int $OrderingId
+ * @property int<0, 32535158400000> $OrderingId
  */
 class DeletePrincipalMappingRequest extends Request
 {
@@ -17,7 +17,7 @@ class DeletePrincipalMappingRequest extends Request
      *     IndexId: string,
      *     DataSourceId?: string,
      *     GroupId: string,
-     *     OrderingId?: int
+     *     OrderingId?: int<0, 32535158400000>
      * } $args
      */
     public function __construct(array $args)

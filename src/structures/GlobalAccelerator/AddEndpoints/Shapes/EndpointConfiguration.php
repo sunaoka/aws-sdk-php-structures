@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $EndpointId
- * @property int $Weight
+ * @property int<0, 255> $Weight
  * @property bool $ClientIPPreservationEnabled
  * @property string $AttachmentArn
  */
@@ -15,7 +15,7 @@ class EndpointConfiguration extends Shape
     /**
      * @param array{
      *     EndpointId?: string,
-     *     Weight?: int,
+     *     Weight?: int<0, 255>,
      *     ClientIPPreservationEnabled?: bool,
      *     AttachmentArn?: string
      * } $args

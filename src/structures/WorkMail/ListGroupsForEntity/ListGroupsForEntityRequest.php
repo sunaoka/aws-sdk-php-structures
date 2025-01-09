@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EntityId
  * @property Shapes\ListGroupsForEntityFilters $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListGroupsForEntityRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListGroupsForEntityRequest extends Request
      *     EntityId: string,
      *     Filters?: Shapes\ListGroupsForEntityFilters,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

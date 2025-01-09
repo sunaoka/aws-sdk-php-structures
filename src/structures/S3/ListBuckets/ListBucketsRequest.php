@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\S3\ListBuckets;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxBuckets
+ * @property int<1, 10000> $MaxBuckets
  * @property string $ContinuationToken
  * @property string $Prefix
  * @property string $BucketRegion
@@ -14,7 +14,7 @@ class ListBucketsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxBuckets?: int,
+     *     MaxBuckets?: int<1, 10000>,
      *     ContinuationToken?: string,
      *     Prefix?: string,
      *     BucketRegion?: string

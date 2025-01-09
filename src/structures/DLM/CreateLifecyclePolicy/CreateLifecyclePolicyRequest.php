@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PolicyDetails $PolicyDetails
  * @property array<string, string> $Tags
  * @property 'VOLUME'|'INSTANCE' $DefaultPolicy
- * @property int $CreateInterval
- * @property int $RetainInterval
+ * @property int<1, max> $CreateInterval
+ * @property int<1, max> $RetainInterval
  * @property bool $CopyTags
  * @property bool $ExtendDeletion
  * @property list<Shapes\CrossRegionCopyTarget> $CrossRegionCopyTargets
@@ -28,8 +28,8 @@ class CreateLifecyclePolicyRequest extends Request
      *     PolicyDetails?: Shapes\PolicyDetails,
      *     Tags?: array<string, string>,
      *     DefaultPolicy?: 'VOLUME'|'INSTANCE',
-     *     CreateInterval?: int,
-     *     RetainInterval?: int,
+     *     CreateInterval?: int<1, max>,
+     *     RetainInterval?: int<1, max>,
      *     CopyTags?: bool,
      *     ExtendDeletion?: bool,
      *     CrossRegionCopyTargets?: list<Shapes\CrossRegionCopyTarget>,

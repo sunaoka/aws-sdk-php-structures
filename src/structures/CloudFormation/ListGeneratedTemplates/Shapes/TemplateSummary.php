@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $StatusReason
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property int $NumberOfResources
+ * @property int<0, max> $NumberOfResources
  */
 class TemplateSummary extends Shape
 {
@@ -23,7 +23,7 @@ class TemplateSummary extends Shape
      *     StatusReason?: string,
      *     CreationTime?: \Aws\Api\DateTimeResult,
      *     LastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     NumberOfResources?: int
+     *     NumberOfResources?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

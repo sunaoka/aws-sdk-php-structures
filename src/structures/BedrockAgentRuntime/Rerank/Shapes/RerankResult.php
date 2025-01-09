@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property RerankDocument $document
- * @property int $index
+ * @property int<0, 1000> $index
  * @property float $relevanceScore
  */
 class RerankResult extends Shape
@@ -14,7 +14,7 @@ class RerankResult extends Shape
     /**
      * @param array{
      *     document?: RerankDocument,
-     *     index: int,
+     *     index: int<0, 1000>,
      *     relevanceScore: float
      * } $args
      */

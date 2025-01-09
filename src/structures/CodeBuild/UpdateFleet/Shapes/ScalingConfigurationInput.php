@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'TARGET_TRACKING_SCALING' $scalingType
  * @property list<TargetTrackingScalingConfiguration> $targetTrackingScalingConfigs
- * @property int $maxCapacity
+ * @property int<1, max> $maxCapacity
  */
 class ScalingConfigurationInput extends Shape
 {
@@ -15,7 +15,7 @@ class ScalingConfigurationInput extends Shape
      * @param array{
      *     scalingType?: 'TARGET_TRACKING_SCALING',
      *     targetTrackingScalingConfigs?: list<TargetTrackingScalingConfiguration>,
-     *     maxCapacity?: int
+     *     maxCapacity?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

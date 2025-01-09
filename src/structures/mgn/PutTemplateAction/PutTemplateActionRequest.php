@@ -16,9 +16,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $launchConfigurationTemplateID
  * @property bool $mustSucceedForCutover
  * @property string $operatingSystem
- * @property int $order
+ * @property int<1001, 10000> $order
  * @property array<string, list<Shapes\SsmParameterStoreParameter>> $parameters
- * @property int $timeoutSeconds
+ * @property int<1, max> $timeoutSeconds
  */
 class PutTemplateActionRequest extends Request
 {
@@ -35,9 +35,9 @@ class PutTemplateActionRequest extends Request
      *     launchConfigurationTemplateID: string,
      *     mustSucceedForCutover?: bool,
      *     operatingSystem?: string,
-     *     order: int,
+     *     order: int<1001, 10000>,
      *     parameters?: array<string, list<Shapes\SsmParameterStoreParameter>>,
-     *     timeoutSeconds?: int
+     *     timeoutSeconds?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

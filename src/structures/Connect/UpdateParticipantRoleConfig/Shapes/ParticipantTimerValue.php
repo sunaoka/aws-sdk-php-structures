@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Unset' $ParticipantTimerAction
- * @property int $ParticipantTimerDurationInMinutes
+ * @property int<2, 480> $ParticipantTimerDurationInMinutes
  */
 class ParticipantTimerValue extends Shape
 {
     /**
      * @param array{
      *     ParticipantTimerAction?: 'Unset',
-     *     ParticipantTimerDurationInMinutes?: int
+     *     ParticipantTimerDurationInMinutes?: int<2, 480>
      * } $args
      */
     public function __construct(array $args = [])

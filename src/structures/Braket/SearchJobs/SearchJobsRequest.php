@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\SearchJobsFilter> $filters
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class SearchJobsRequest extends Request
@@ -14,7 +14,7 @@ class SearchJobsRequest extends Request
     /**
      * @param array{
      *     filters: list<Shapes\SearchJobsFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

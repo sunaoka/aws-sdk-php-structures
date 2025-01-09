@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\JobDriver $jobDriver
  * @property Shapes\ConfigurationOverrides $configurationOverrides
  * @property array<string, string> $tags
- * @property int $executionTimeoutMinutes
+ * @property int<0, 1000000> $executionTimeoutMinutes
  * @property string $name
  * @property 'BATCH'|'STREAMING' $mode
  * @property Shapes\RetryPolicy $retryPolicy
@@ -26,7 +26,7 @@ class StartJobRunRequest extends Request
      *     jobDriver?: Shapes\JobDriver,
      *     configurationOverrides?: Shapes\ConfigurationOverrides,
      *     tags?: array<string, string>,
-     *     executionTimeoutMinutes?: int,
+     *     executionTimeoutMinutes?: int<0, 1000000>,
      *     name?: string,
      *     mode?: 'BATCH'|'STREAMING',
      *     retryPolicy?: Shapes\RetryPolicy

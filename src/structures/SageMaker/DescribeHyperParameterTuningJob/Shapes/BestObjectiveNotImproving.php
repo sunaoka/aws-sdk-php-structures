@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHyperParameterTuningJob\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxNumberOfTrainingJobsNotImproving
+ * @property int<3, max> $MaxNumberOfTrainingJobsNotImproving
  */
 class BestObjectiveNotImproving extends Shape
 {
     /**
-     * @param array{MaxNumberOfTrainingJobsNotImproving?: int} $args
+     * @param array{MaxNumberOfTrainingJobsNotImproving?: int<3, max>} $args
      */
     public function __construct(array $args = [])
     {

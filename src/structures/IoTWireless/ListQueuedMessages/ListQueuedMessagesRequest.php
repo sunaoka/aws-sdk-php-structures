@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Id
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 250> $MaxResults
  * @property 'Sidewalk'|'LoRaWAN' $WirelessDeviceType
  */
 class ListQueuedMessagesRequest extends Request
@@ -16,7 +16,7 @@ class ListQueuedMessagesRequest extends Request
      * @param array{
      *     Id: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 250>,
      *     WirelessDeviceType?: 'Sidewalk'|'LoRaWAN'
      * } $args
      */

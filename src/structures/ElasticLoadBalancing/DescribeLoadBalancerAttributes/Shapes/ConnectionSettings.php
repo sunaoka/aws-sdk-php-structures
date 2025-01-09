@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DescribeLoadBalancerAttrib
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $IdleTimeout
+ * @property int<1, 3600> $IdleTimeout
  */
 class ConnectionSettings extends Shape
 {
     /**
-     * @param array{IdleTimeout: int} $args
+     * @param array{IdleTimeout: int<1, 3600>} $args
      */
     public function __construct(array $args)
     {

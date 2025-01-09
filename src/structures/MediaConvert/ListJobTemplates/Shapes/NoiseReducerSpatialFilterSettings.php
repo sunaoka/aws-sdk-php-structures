@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $PostFilterSharpenStrength
- * @property int $Speed
- * @property int $Strength
+ * @property int<0, 3> $PostFilterSharpenStrength
+ * @property int<-2, 3> $Speed
+ * @property int<0, 16> $Strength
  */
 class NoiseReducerSpatialFilterSettings extends Shape
 {
     /**
      * @param array{
-     *     PostFilterSharpenStrength?: int,
-     *     Speed?: int,
-     *     Strength?: int
+     *     PostFilterSharpenStrength?: int<0, 3>,
+     *     Speed?: int<-2, 3>,
+     *     Strength?: int<0, 16>
      * } $args
      */
     public function __construct(array $args = [])

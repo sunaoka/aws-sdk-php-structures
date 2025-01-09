@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ResourceQuery $ResourceQuery
  * @property array<string, string> $Tags
  * @property list<Shapes\GroupConfigurationItem> $Configuration
- * @property int $Criticality
+ * @property int<1, 10> $Criticality
  * @property string $Owner
  * @property string $DisplayName
  */
@@ -23,7 +23,7 @@ class CreateGroupRequest extends Request
      *     ResourceQuery?: Shapes\ResourceQuery,
      *     Tags?: array<string, string>,
      *     Configuration?: list<Shapes\GroupConfigurationItem>,
-     *     Criticality?: int,
+     *     Criticality?: int<1, 10>,
      *     Owner?: string,
      *     DisplayName?: string
      * } $args

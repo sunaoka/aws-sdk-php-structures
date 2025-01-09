@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Primary'|'Additional' $RegionType
  * @property 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating' $Status
  * @property DirectoryVpcSettings $VpcSettings
- * @property int $DesiredNumberOfDomainControllers
+ * @property int<2, max> $DesiredNumberOfDomainControllers
  * @property \Aws\Api\DateTimeResult $LaunchTime
  * @property \Aws\Api\DateTimeResult $StatusLastUpdatedDateTime
  * @property \Aws\Api\DateTimeResult $LastUpdatedDateTime
@@ -24,7 +24,7 @@ class RegionDescription extends Shape
      *     RegionType?: 'Primary'|'Additional',
      *     Status?: 'Requested'|'Creating'|'Created'|'Active'|'Inoperable'|'Impaired'|'Restoring'|'RestoreFailed'|'Deleting'|'Deleted'|'Failed'|'Updating',
      *     VpcSettings?: DirectoryVpcSettings,
-     *     DesiredNumberOfDomainControllers?: int,
+     *     DesiredNumberOfDomainControllers?: int<2, max>,
      *     LaunchTime?: \Aws\Api\DateTimeResult,
      *     StatusLastUpdatedDateTime?: \Aws\Api\DateTimeResult,
      *     LastUpdatedDateTime?: \Aws\Api\DateTimeResult

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property int $minValue
- * @property int $maxValue
+ * @property int<-1000000, max> $minValue
+ * @property int<min, 1000000> $maxValue
  */
 class IntegerHyperParameterRange extends Shape
 {
     /**
      * @param array{
      *     name?: string,
-     *     minValue?: int,
-     *     maxValue?: int
+     *     minValue?: int<-1000000, max>,
+     *     maxValue?: int<min, 1000000>
      * } $args
      */
     public function __construct(array $args = [])

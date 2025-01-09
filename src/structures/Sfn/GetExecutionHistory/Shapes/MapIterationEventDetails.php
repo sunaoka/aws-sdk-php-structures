@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property int $index
+ * @property int<0, max> $index
  */
 class MapIterationEventDetails extends Shape
 {
     /**
      * @param array{
      *     name?: string,
-     *     index?: int
+     *     index?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

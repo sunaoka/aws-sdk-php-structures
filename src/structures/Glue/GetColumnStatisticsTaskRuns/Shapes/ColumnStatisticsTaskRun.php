@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Role
  * @property double $SampleSize
  * @property string $SecurityConfiguration
- * @property int $NumberOfWorkers
+ * @property int<1, max> $NumberOfWorkers
  * @property string $WorkerType
  * @property 'FULL'|'INCREMENTAL' $ComputationType
  * @property 'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPED' $Status
@@ -38,7 +38,7 @@ class ColumnStatisticsTaskRun extends Shape
      *     Role?: string,
      *     SampleSize?: double,
      *     SecurityConfiguration?: string,
-     *     NumberOfWorkers?: int,
+     *     NumberOfWorkers?: int<1, max>,
      *     WorkerType?: string,
      *     ComputationType?: 'FULL'|'INCREMENTAL',
      *     Status?: 'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPED',

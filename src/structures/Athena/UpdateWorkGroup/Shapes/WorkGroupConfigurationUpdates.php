@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $EnforceWorkGroupConfiguration
  * @property ResultConfigurationUpdates $ResultConfigurationUpdates
  * @property bool $PublishCloudWatchMetricsEnabled
- * @property int $BytesScannedCutoffPerQuery
+ * @property int<10000000, max> $BytesScannedCutoffPerQuery
  * @property bool $RemoveBytesScannedCutoffPerQuery
  * @property bool $RequesterPaysEnabled
  * @property EngineVersion $EngineVersion
@@ -26,7 +26,7 @@ class WorkGroupConfigurationUpdates extends Shape
      *     EnforceWorkGroupConfiguration?: bool,
      *     ResultConfigurationUpdates?: ResultConfigurationUpdates,
      *     PublishCloudWatchMetricsEnabled?: bool,
-     *     BytesScannedCutoffPerQuery?: int,
+     *     BytesScannedCutoffPerQuery?: int<10000000, max>,
      *     RemoveBytesScannedCutoffPerQuery?: bool,
      *     RequesterPaysEnabled?: bool,
      *     EngineVersion?: EngineVersion,

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $PollingTime
- * @property int $RecordPollingLimit
+ * @property int<10, max> $PollingTime
+ * @property int<1, max> $RecordPollingLimit
  */
 class StreamingDataPreviewOptions extends Shape
 {
     /**
      * @param array{
-     *     PollingTime?: int,
-     *     RecordPollingLimit?: int
+     *     PollingTime?: int<10, max>,
+     *     RecordPollingLimit?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

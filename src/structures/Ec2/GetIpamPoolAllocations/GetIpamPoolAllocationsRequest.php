@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IpamPoolId
  * @property string $IpamPoolAllocationId
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<1000, 100000> $MaxResults
  * @property string $NextToken
  */
 class GetIpamPoolAllocationsRequest extends Request
@@ -20,7 +20,7 @@ class GetIpamPoolAllocationsRequest extends Request
      *     IpamPoolId: string,
      *     IpamPoolAllocationId?: string,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1000, 100000>,
      *     NextToken?: string
      * } $args
      */

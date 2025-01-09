@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ChannelArn
  * @property 'DEFAULT'|'HIDDEN' $Type
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  * @property string $ChimeBearer
  */
@@ -17,7 +17,7 @@ class ListChannelMembershipsRequest extends Request
      * @param array{
      *     ChannelArn: string,
      *     Type?: 'DEFAULT'|'HIDDEN',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string,
      *     ChimeBearer?: string
      * } $args

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SUCCEEDED'|'FAILED'|'INTERRUPTED'|'CANCELED'|'NEVER_ATTEMPTED' $completedStatus
- * @property int $processExitCode
+ * @property int<-2147483648, 2147483647> $processExitCode
  * @property string $progressMessage
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property \Aws\Api\DateTimeResult $endedAt
@@ -18,7 +18,7 @@ class UpdatedSessionActionInfo extends Shape
     /**
      * @param array{
      *     completedStatus?: 'SUCCEEDED'|'FAILED'|'INTERRUPTED'|'CANCELED'|'NEVER_ATTEMPTED',
-     *     processExitCode?: int,
+     *     processExitCode?: int<-2147483648, 2147483647>,
      *     progressMessage?: string,
      *     startedAt?: \Aws\Api\DateTimeResult,
      *     endedAt?: \Aws\Api\DateTimeResult,

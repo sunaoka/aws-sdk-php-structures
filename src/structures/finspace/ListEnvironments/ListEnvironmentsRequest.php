@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<0, 100> $maxResults
  */
 class ListEnvironmentsRequest extends Request
 {
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<0, 100>
      * } $args
      */
     public function __construct(array $args = [])

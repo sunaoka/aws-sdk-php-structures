@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\ListDecoderManifestSignals\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $pidResponseLength
- * @property int $serviceMode
- * @property int $pid
+ * @property int<1, max> $pidResponseLength
+ * @property int<0, max> $serviceMode
+ * @property int<0, max> $pid
  * @property double $scaling
  * @property double $offset
- * @property int $startByte
- * @property int $byteLength
- * @property int $bitRightShift
- * @property int $bitMaskLength
+ * @property int<0, max> $startByte
+ * @property int<1, 8> $byteLength
+ * @property int<0, max> $bitRightShift
+ * @property int<1, 8> $bitMaskLength
  */
 class ObdSignal extends Shape
 {
     /**
      * @param array{
-     *     pidResponseLength: int,
-     *     serviceMode: int,
-     *     pid: int,
+     *     pidResponseLength: int<1, max>,
+     *     serviceMode: int<0, max>,
+     *     pid: int<0, max>,
      *     scaling: double,
      *     offset: double,
-     *     startByte: int,
-     *     byteLength: int,
-     *     bitRightShift?: int,
-     *     bitMaskLength?: int
+     *     startByte: int<0, max>,
+     *     byteLength: int<1, 8>,
+     *     bitRightShift?: int<0, max>,
+     *     bitMaskLength?: int<1, 8>
      * } $args
      */
     public function __construct(array $args)

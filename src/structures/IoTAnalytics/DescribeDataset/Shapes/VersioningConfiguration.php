@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $unlimited
- * @property int $maxVersions
+ * @property int<1, 1000> $maxVersions
  */
 class VersioningConfiguration extends Shape
 {
     /**
      * @param array{
      *     unlimited?: bool,
-     *     maxVersions?: int
+     *     maxVersions?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args = [])

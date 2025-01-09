@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InstanceType
- * @property int $WeightedCapacity
+ * @property int<0, max> $WeightedCapacity
  * @property string $BidPrice
  * @property double $BidPriceAsPercentageOfOnDemandPrice
  * @property list<Configuration> $Configurations
@@ -20,7 +20,7 @@ class InstanceTypeSpecification extends Shape
     /**
      * @param array{
      *     InstanceType?: string,
-     *     WeightedCapacity?: int,
+     *     WeightedCapacity?: int<0, max>,
      *     BidPrice?: string,
      *     BidPriceAsPercentageOfOnDemandPrice?: double,
      *     Configurations?: list<Configuration>,

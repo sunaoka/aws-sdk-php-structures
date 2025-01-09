@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $GrantScope
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 1000> $MaxResults
  * @property bool $AllowedByApplication
  */
 class ListCallerAccessGrantsRequest extends Request
@@ -18,7 +18,7 @@ class ListCallerAccessGrantsRequest extends Request
      *     AccountId: string,
      *     GrantScope?: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 1000>,
      *     AllowedByApplication?: bool
      * } $args
      */

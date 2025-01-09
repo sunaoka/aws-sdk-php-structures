@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ObjectReference $PolicyReference
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  */
 class BatchListPolicyAttachments extends Shape
 {
@@ -15,7 +15,7 @@ class BatchListPolicyAttachments extends Shape
      * @param array{
      *     PolicyReference: ObjectReference,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

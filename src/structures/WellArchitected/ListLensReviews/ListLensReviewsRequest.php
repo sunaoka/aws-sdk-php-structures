@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkloadId
- * @property int $MilestoneNumber
+ * @property int<1, 100> $MilestoneNumber
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  */
 class ListLensReviewsRequest extends Request
 {
     /**
      * @param array{
      *     WorkloadId: string,
-     *     MilestoneNumber?: int,
+     *     MilestoneNumber?: int<1, 100>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

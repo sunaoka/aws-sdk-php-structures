@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $pipelineName
- * @property int $pipelineVersion
+ * @property int<1, max> $pipelineVersion
  * @property list<Shapes\StageState> $stageStates
  * @property \Aws\Api\DateTimeResult $created
  * @property \Aws\Api\DateTimeResult $updated

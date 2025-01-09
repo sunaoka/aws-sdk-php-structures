@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $GroupIds
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 25> $MaxResults
  */
 class DescribeIpGroupsRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeIpGroupsRequest extends Request
      * @param array{
      *     GroupIds?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 25>
      * } $args
      */
     public function __construct(array $args = [])

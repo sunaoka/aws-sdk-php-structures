@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, AttributeValue> $NewImage
  * @property array<string, AttributeValue> $OldImage
  * @property string $SequenceNumber
- * @property int $SizeBytes
+ * @property int<1, max> $SizeBytes
  * @property 'NEW_IMAGE'|'OLD_IMAGE'|'NEW_AND_OLD_IMAGES'|'KEYS_ONLY' $StreamViewType
  */
 class StreamRecord extends Shape
@@ -22,7 +22,7 @@ class StreamRecord extends Shape
      *     NewImage?: array<string, AttributeValue>,
      *     OldImage?: array<string, AttributeValue>,
      *     SequenceNumber?: string,
-     *     SizeBytes?: int,
+     *     SizeBytes?: int<1, max>,
      *     StreamViewType?: 'NEW_IMAGE'|'OLD_IMAGE'|'NEW_AND_OLD_IMAGES'|'KEYS_ONLY'
      * } $args
      */

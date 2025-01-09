@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'PAY_PER_REQUEST'|'PROVISIONED' $throughputMode
- * @property int $readCapacityUnits
- * @property int $writeCapacityUnits
+ * @property int<1, max> $readCapacityUnits
+ * @property int<1, max> $writeCapacityUnits
  */
 class CapacitySpecification extends Shape
 {
     /**
      * @param array{
      *     throughputMode: 'PAY_PER_REQUEST'|'PROVISIONED',
-     *     readCapacityUnits?: int,
-     *     writeCapacityUnits?: int
+     *     readCapacityUnits?: int<1, max>,
+     *     writeCapacityUnits?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property 'MASTER'|'CORE'|'TASK' $InstanceFleetType
- * @property int $TargetOnDemandCapacity
- * @property int $TargetSpotCapacity
+ * @property int<0, max> $TargetOnDemandCapacity
+ * @property int<0, max> $TargetSpotCapacity
  * @property list<InstanceTypeConfig> $InstanceTypeConfigs
  * @property InstanceFleetProvisioningSpecifications $LaunchSpecifications
  * @property InstanceFleetResizingSpecifications $ResizeSpecifications
@@ -20,8 +20,8 @@ class InstanceFleetConfig extends Shape
      * @param array{
      *     Name?: string,
      *     InstanceFleetType: 'MASTER'|'CORE'|'TASK',
-     *     TargetOnDemandCapacity?: int,
-     *     TargetSpotCapacity?: int,
+     *     TargetOnDemandCapacity?: int<0, max>,
+     *     TargetSpotCapacity?: int<0, max>,
      *     InstanceTypeConfigs?: list<InstanceTypeConfig>,
      *     LaunchSpecifications?: InstanceFleetProvisioningSpecifications,
      *     ResizeSpecifications?: InstanceFleetResizingSpecifications,

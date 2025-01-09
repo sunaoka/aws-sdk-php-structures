@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\KendraRanking\CreateRescoreExecutionPlan\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $RescoreCapacityUnits
+ * @property int<0, max> $RescoreCapacityUnits
  */
 class CapacityUnitsConfiguration extends Shape
 {
     /**
-     * @param array{RescoreCapacityUnits: int} $args
+     * @param array{RescoreCapacityUnits: int<0, max>} $args
      */
     public function __construct(array $args)
     {

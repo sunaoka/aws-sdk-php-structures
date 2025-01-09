@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property string $assetId
  * @property string $aliasPrefix
  * @property 'ASSOCIATED'|'DISASSOCIATED' $timeSeriesType
@@ -16,7 +16,7 @@ class ListTimeSeriesRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     assetId?: string,
      *     aliasPrefix?: string,
      *     timeSeriesType?: 'ASSOCIATED'|'DISASSOCIATED'

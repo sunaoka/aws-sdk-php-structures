@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $WorkloadNamePrefix
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  */
 class ListWorkloadsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListWorkloadsRequest extends Request
      * @param array{
      *     WorkloadNamePrefix?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

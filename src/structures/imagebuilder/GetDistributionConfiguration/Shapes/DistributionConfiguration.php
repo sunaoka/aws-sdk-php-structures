@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $description
  * @property list<Distribution> $distributions
- * @property int $timeoutMinutes
+ * @property int<30, 720> $timeoutMinutes
  * @property string $dateCreated
  * @property string $dateUpdated
  * @property array<string, string> $tags
@@ -22,7 +22,7 @@ class DistributionConfiguration extends Shape
      *     name?: string,
      *     description?: string,
      *     distributions?: list<Distribution>,
-     *     timeoutMinutes: int,
+     *     timeoutMinutes: int<30, 720>,
      *     dateCreated?: string,
      *     dateUpdated?: string,
      *     tags?: array<string, string>

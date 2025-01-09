@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FeaturesAttribute
  * @property string $ContentTemplate
- * @property int $MaxRecordCount
- * @property int $MaxPayloadInMB
- * @property int $ProbabilityIndex
- * @property int $LabelIndex
+ * @property int<1, max> $MaxRecordCount
+ * @property int<1, 25> $MaxPayloadInMB
+ * @property int<0, max> $ProbabilityIndex
+ * @property int<0, max> $LabelIndex
  * @property string $ProbabilityAttribute
  * @property string $LabelAttribute
  * @property list<string> $LabelHeaders
@@ -23,10 +23,10 @@ class ClarifyInferenceConfig extends Shape
      * @param array{
      *     FeaturesAttribute?: string,
      *     ContentTemplate?: string,
-     *     MaxRecordCount?: int,
-     *     MaxPayloadInMB?: int,
-     *     ProbabilityIndex?: int,
-     *     LabelIndex?: int,
+     *     MaxRecordCount?: int<1, max>,
+     *     MaxPayloadInMB?: int<1, 25>,
+     *     ProbabilityIndex?: int<0, max>,
+     *     LabelIndex?: int<0, max>,
      *     ProbabilityAttribute?: string,
      *     LabelAttribute?: string,
      *     LabelHeaders?: list<string>,

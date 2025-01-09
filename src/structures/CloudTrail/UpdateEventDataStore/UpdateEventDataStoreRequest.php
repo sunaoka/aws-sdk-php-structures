@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\AdvancedEventSelector> $AdvancedEventSelectors
  * @property bool $MultiRegionEnabled
  * @property bool $OrganizationEnabled
- * @property int $RetentionPeriod
+ * @property int<7, 3653> $RetentionPeriod
  * @property bool $TerminationProtectionEnabled
  * @property string $KmsKeyId
  * @property 'EXTENDABLE_RETENTION_PRICING'|'FIXED_RETENTION_PRICING' $BillingMode
@@ -24,7 +24,7 @@ class UpdateEventDataStoreRequest extends Request
      *     AdvancedEventSelectors?: list<Shapes\AdvancedEventSelector>,
      *     MultiRegionEnabled?: bool,
      *     OrganizationEnabled?: bool,
-     *     RetentionPeriod?: int,
+     *     RetentionPeriod?: int<7, 3653>,
      *     TerminationProtectionEnabled?: bool,
      *     KmsKeyId?: string,
      *     BillingMode?: 'EXTENDABLE_RETENTION_PRICING'|'FIXED_RETENTION_PRICING'

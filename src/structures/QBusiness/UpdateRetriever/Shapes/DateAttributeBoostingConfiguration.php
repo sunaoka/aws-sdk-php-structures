@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH' $boostingLevel
- * @property int $boostingDurationInSeconds
+ * @property int<0, 999999999> $boostingDurationInSeconds
  */
 class DateAttributeBoostingConfiguration extends Shape
 {
     /**
      * @param array{
      *     boostingLevel: 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH',
-     *     boostingDurationInSeconds?: int
+     *     boostingDurationInSeconds?: int<0, 999999999>
      * } $args
      */
     public function __construct(array $args)

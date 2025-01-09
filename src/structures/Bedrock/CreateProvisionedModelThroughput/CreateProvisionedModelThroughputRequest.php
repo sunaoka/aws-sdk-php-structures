@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $clientRequestToken
- * @property int $modelUnits
+ * @property int<1, max> $modelUnits
  * @property string $provisionedModelName
  * @property string $modelId
  * @property 'OneMonth'|'SixMonths' $commitmentDuration
@@ -17,7 +17,7 @@ class CreateProvisionedModelThroughputRequest extends Request
     /**
      * @param array{
      *     clientRequestToken?: string,
-     *     modelUnits: int,
+     *     modelUnits: int<1, max>,
      *     provisionedModelName: string,
      *     modelId: string,
      *     commitmentDuration?: 'OneMonth'|'SixMonths',

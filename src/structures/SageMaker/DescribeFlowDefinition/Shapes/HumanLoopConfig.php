@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $HumanTaskUiArn
  * @property string $TaskTitle
  * @property string $TaskDescription
- * @property int $TaskCount
- * @property int $TaskAvailabilityLifetimeInSeconds
- * @property int $TaskTimeLimitInSeconds
+ * @property int<1, 3> $TaskCount
+ * @property int<1, max> $TaskAvailabilityLifetimeInSeconds
+ * @property int<30, max> $TaskTimeLimitInSeconds
  * @property list<string> $TaskKeywords
  * @property PublicWorkforceTaskPrice $PublicWorkforceTaskPrice
  */
@@ -23,9 +23,9 @@ class HumanLoopConfig extends Shape
      *     HumanTaskUiArn: string,
      *     TaskTitle: string,
      *     TaskDescription: string,
-     *     TaskCount: int,
-     *     TaskAvailabilityLifetimeInSeconds?: int,
-     *     TaskTimeLimitInSeconds?: int,
+     *     TaskCount: int<1, 3>,
+     *     TaskAvailabilityLifetimeInSeconds?: int<1, max>,
+     *     TaskTimeLimitInSeconds?: int<30, max>,
      *     TaskKeywords?: list<string>,
      *     PublicWorkforceTaskPrice?: PublicWorkforceTaskPrice
      * } $args

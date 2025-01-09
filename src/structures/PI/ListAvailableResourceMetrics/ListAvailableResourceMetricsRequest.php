@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Identifier
  * @property list<string> $MetricTypes
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 25> $MaxResults
  */
 class ListAvailableResourceMetricsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListAvailableResourceMetricsRequest extends Request
      *     Identifier: string,
      *     MetricTypes: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<0, 25>
      * } $args
      */
     public function __construct(array $args)

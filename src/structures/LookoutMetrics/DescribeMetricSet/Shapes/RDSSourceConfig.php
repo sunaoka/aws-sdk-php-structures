@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $DBInstanceIdentifier
  * @property string $DatabaseHost
- * @property int $DatabasePort
+ * @property int<1, 65535> $DatabasePort
  * @property string $SecretManagerArn
  * @property string $DatabaseName
  * @property string $TableName
@@ -20,7 +20,7 @@ class RDSSourceConfig extends Shape
      * @param array{
      *     DBInstanceIdentifier?: string,
      *     DatabaseHost?: string,
-     *     DatabasePort?: int,
+     *     DatabasePort?: int<1, 65535>,
      *     SecretManagerArn?: string,
      *     DatabaseName?: string,
      *     TableName?: string,

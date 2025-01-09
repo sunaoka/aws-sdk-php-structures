@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $endDateTime
  * @property Shapes\InterpolationParameters $interpolation
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<0, 200> $maxResults
  * @property 'ASCENDING'|'DESCENDING' $orderByTime
  * @property string $startTime
  * @property string $endTime
@@ -36,7 +36,7 @@ class GetPropertyValueHistoryRequest extends Request
      *     endDateTime?: \Aws\Api\DateTimeResult,
      *     interpolation?: Shapes\InterpolationParameters,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<0, 200>,
      *     orderByTime?: 'ASCENDING'|'DESCENDING',
      *     startTime?: string,
      *     endTime?: string

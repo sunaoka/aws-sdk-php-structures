@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $aiAgentId
  * @property string $assistantId
- * @property int $versionNumber
+ * @property int<1, max> $versionNumber
  */
 class DeleteAIAgentVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteAIAgentVersionRequest extends Request
      * @param array{
      *     aiAgentId: string,
      *     assistantId: string,
-     *     versionNumber: int
+     *     versionNumber: int<1, max>
      * } $args
      */
     public function __construct(array $args)

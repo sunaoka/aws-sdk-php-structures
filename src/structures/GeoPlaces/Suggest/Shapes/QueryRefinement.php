@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $RefinedTerm
  * @property string $OriginalTerm
- * @property int $StartIndex
- * @property int $EndIndex
+ * @property int<0, max> $StartIndex
+ * @property int<0, max> $EndIndex
  */
 class QueryRefinement extends Shape
 {
@@ -16,8 +16,8 @@ class QueryRefinement extends Shape
      * @param array{
      *     RefinedTerm: string,
      *     OriginalTerm: string,
-     *     StartIndex: int,
-     *     EndIndex: int
+     *     StartIndex: int<0, max>,
+     *     EndIndex: int<0, max>
      * } $args
      */
     public function __construct(array $args)

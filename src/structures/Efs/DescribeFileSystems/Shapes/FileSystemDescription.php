@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property 'creating'|'available'|'updating'|'deleting'|'deleted'|'error' $LifeCycleState
  * @property string $Name
- * @property int $NumberOfMountTargets
+ * @property int<0, max> $NumberOfMountTargets
  * @property FileSystemSize $SizeInBytes
  * @property 'generalPurpose'|'maxIO' $PerformanceMode
  * @property bool $Encrypted
@@ -35,7 +35,7 @@ class FileSystemDescription extends Shape
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     LifeCycleState: 'creating'|'available'|'updating'|'deleting'|'deleted'|'error',
      *     Name?: string,
-     *     NumberOfMountTargets: int,
+     *     NumberOfMountTargets: int<0, max>,
      *     SizeInBytes: FileSystemSize,
      *     PerformanceMode: 'generalPurpose'|'maxIO',
      *     Encrypted?: bool,

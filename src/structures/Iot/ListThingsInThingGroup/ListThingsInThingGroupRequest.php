@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $thingGroupName
  * @property bool $recursive
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class ListThingsInThingGroupRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListThingsInThingGroupRequest extends Request
      *     thingGroupName: string,
      *     recursive?: bool,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args)

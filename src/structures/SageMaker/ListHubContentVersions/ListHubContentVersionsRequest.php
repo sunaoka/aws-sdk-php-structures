@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $CreationTimeAfter
  * @property 'HubContentName'|'CreationTime'|'HubContentStatus' $SortBy
  * @property 'Ascending'|'Descending' $SortOrder
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListHubContentVersionsRequest extends Request
@@ -30,7 +30,7 @@ class ListHubContentVersionsRequest extends Request
      *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
      *     SortBy?: 'HubContentName'|'CreationTime'|'HubContentStatus',
      *     SortOrder?: 'Ascending'|'Descending',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

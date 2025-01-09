@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $templateName
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property string $nextToken
  */
 class ListProvisioningTemplateVersionsRequest extends Request
@@ -14,7 +14,7 @@ class ListProvisioningTemplateVersionsRequest extends Request
     /**
      * @param array{
      *     templateName: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     nextToken?: string
      * } $args
      */

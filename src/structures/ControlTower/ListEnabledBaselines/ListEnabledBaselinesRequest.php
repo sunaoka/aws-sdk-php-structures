@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\EnabledBaselineFilter $filter
  * @property bool $includeChildren
- * @property int $maxResults
+ * @property int<5, 100> $maxResults
  * @property string $nextToken
  */
 class ListEnabledBaselinesRequest extends Request
@@ -16,7 +16,7 @@ class ListEnabledBaselinesRequest extends Request
      * @param array{
      *     filter?: Shapes\EnabledBaselineFilter,
      *     includeChildren?: bool,
-     *     maxResults?: int,
+     *     maxResults?: int<5, 100>,
      *     nextToken?: string
      * } $args
      */

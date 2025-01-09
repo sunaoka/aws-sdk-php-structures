@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainId
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property string $WatchlistId
  */
@@ -15,7 +15,7 @@ class ListFraudstersRequest extends Request
     /**
      * @param array{
      *     DomainId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     WatchlistId?: string
      * } $args

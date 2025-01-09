@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\FilterCriteria $filterCriteria
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property Shapes\SortCriteria $sortCriteria
  */
@@ -15,7 +15,7 @@ class ListFindingsRequest extends Request
     /**
      * @param array{
      *     filterCriteria?: Shapes\FilterCriteria,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     sortCriteria?: Shapes\SortCriteria
      * } $args

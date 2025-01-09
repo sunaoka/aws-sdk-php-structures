@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $jobId
  * @property string $stepId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  */
 class ListStepDependenciesRequest extends Request
 {
@@ -21,7 +21,7 @@ class ListStepDependenciesRequest extends Request
      *     jobId: string,
      *     stepId: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

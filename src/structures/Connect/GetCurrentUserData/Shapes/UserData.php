@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RoutingProfileReference $RoutingProfile
  * @property HierarchyPathReference $HierarchyPath
  * @property AgentStatusReference $Status
- * @property array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int> $AvailableSlotsByChannel
- * @property array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int> $MaxSlotsByChannel
- * @property array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int> $ActiveSlotsByChannel
+ * @property array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int<0, max>> $AvailableSlotsByChannel
+ * @property array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int<0, max>> $MaxSlotsByChannel
+ * @property array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int<0, max>> $ActiveSlotsByChannel
  * @property list<AgentContactReference> $Contacts
  * @property string $NextStatus
  */
@@ -23,9 +23,9 @@ class UserData extends Shape
      *     RoutingProfile?: RoutingProfileReference,
      *     HierarchyPath?: HierarchyPathReference,
      *     Status?: AgentStatusReference,
-     *     AvailableSlotsByChannel?: array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int>,
-     *     MaxSlotsByChannel?: array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int>,
-     *     ActiveSlotsByChannel?: array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int>,
+     *     AvailableSlotsByChannel?: array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int<0, max>>,
+     *     MaxSlotsByChannel?: array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int<0, max>>,
+     *     ActiveSlotsByChannel?: array<'VOICE'|'CHAT'|'TASK'|'EMAIL', int<0, max>>,
      *     Contacts?: list<AgentContactReference>,
      *     NextStatus?: string
      * } $args

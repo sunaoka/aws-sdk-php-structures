@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\SearchJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $BitDepth
- * @property int $Channels
- * @property int $SampleRate
+ * @property int<16, 24> $BitDepth
+ * @property int<1, 64> $Channels
+ * @property int<8000, 192000> $SampleRate
  */
 class AiffSettings extends Shape
 {
     /**
      * @param array{
-     *     BitDepth?: int,
-     *     Channels?: int,
-     *     SampleRate?: int
+     *     BitDepth?: int<16, 24>,
+     *     Channels?: int<1, 64>,
+     *     SampleRate?: int<8000, 192000>
      * } $args
      */
     public function __construct(array $args = [])

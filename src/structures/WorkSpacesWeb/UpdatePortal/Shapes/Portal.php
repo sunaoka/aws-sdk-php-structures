@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $displayName
  * @property 'standard.regular'|'standard.large'|'standard.xlarge' $instanceType
  * @property string $ipAccessSettingsArn
- * @property int $maxConcurrentSessions
+ * @property int<1, 5000> $maxConcurrentSessions
  * @property string $networkSettingsArn
  * @property string $portalArn
  * @property string $portalEndpoint
@@ -40,7 +40,7 @@ class Portal extends Shape
      *     displayName?: string,
      *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge',
      *     ipAccessSettingsArn?: string,
-     *     maxConcurrentSessions?: int,
+     *     maxConcurrentSessions?: int<1, 5000>,
      *     networkSettingsArn?: string,
      *     portalArn: string,
      *     portalEndpoint?: string,

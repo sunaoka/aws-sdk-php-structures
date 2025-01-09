@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $HECEndpoint
  * @property 'Raw'|'Event' $HECEndpointType
  * @property string $HECToken
- * @property int $HECAcknowledgmentTimeoutInSeconds
+ * @property int<180, 600> $HECAcknowledgmentTimeoutInSeconds
  * @property SplunkRetryOptions $RetryOptions
  * @property 'FailedEventsOnly'|'AllEvents' $S3BackupMode
  * @property S3DestinationConfiguration $S3Configuration
@@ -24,7 +24,7 @@ class SplunkDestinationConfiguration extends Shape
      *     HECEndpoint: string,
      *     HECEndpointType: 'Raw'|'Event',
      *     HECToken?: string,
-     *     HECAcknowledgmentTimeoutInSeconds?: int,
+     *     HECAcknowledgmentTimeoutInSeconds?: int<180, 600>,
      *     RetryOptions?: SplunkRetryOptions,
      *     S3BackupMode?: 'FailedEventsOnly'|'AllEvents',
      *     S3Configuration: S3DestinationConfiguration,

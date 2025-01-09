@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property int $MaxResults
+ * @property int<1, 5> $MaxResults
  * @property string $NextToken
  */
 class DescribeEffectiveInstanceAssociationsRequest extends Request
@@ -14,7 +14,7 @@ class DescribeEffectiveInstanceAssociationsRequest extends Request
     /**
      * @param array{
      *     InstanceId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 5>,
      *     NextToken?: string
      * } $args
      */

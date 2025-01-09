@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'LEFT'|'CENTER'|'RIGHT'|'AUTO' $HorizontalTextAlignment
  * @property 'TOP'|'MIDDLE'|'BOTTOM'|'AUTO' $VerticalTextAlignment
  * @property string $BackgroundColor
- * @property int $Height
+ * @property int<8, 500> $Height
  * @property GlobalTableBorderOptions $Border
  */
 class TableCellStyle extends Shape
@@ -24,7 +24,7 @@ class TableCellStyle extends Shape
      *     HorizontalTextAlignment?: 'LEFT'|'CENTER'|'RIGHT'|'AUTO',
      *     VerticalTextAlignment?: 'TOP'|'MIDDLE'|'BOTTOM'|'AUTO',
      *     BackgroundColor?: string,
-     *     Height?: int,
+     *     Height?: int<8, 500>,
      *     Border?: GlobalTableBorderOptions
      * } $args
      */

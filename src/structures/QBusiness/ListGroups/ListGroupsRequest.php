@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $updatedEarlierThan
  * @property string $dataSourceId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 10> $maxResults
  */
 class ListGroupsRequest extends Request
 {
@@ -21,7 +21,7 @@ class ListGroupsRequest extends Request
      *     updatedEarlierThan: \Aws\Api\DateTimeResult,
      *     dataSourceId?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 10>
      * } $args
      */
     public function __construct(array $args)

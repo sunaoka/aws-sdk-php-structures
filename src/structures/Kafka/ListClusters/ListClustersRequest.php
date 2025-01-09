@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterNameFilter
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListClustersRequest extends Request
@@ -14,7 +14,7 @@ class ListClustersRequest extends Request
     /**
      * @param array{
      *     ClusterNameFilter?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

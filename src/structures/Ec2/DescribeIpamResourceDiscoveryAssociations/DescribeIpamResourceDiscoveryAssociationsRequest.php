@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property list<string> $IpamResourceDiscoveryAssociationIds
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property list<Shapes\Filter> $Filters
  */
 class DescribeIpamResourceDiscoveryAssociationsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeIpamResourceDiscoveryAssociationsRequest extends Request
      *     DryRun?: bool,
      *     IpamResourceDiscoveryAssociationIds?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     Filters?: list<Shapes\Filter>
      * } $args
      */

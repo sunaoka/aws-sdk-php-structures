@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\FSx\CreateFileSystem\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $RecordSizeKiB
+ * @property int<4, 4096> $RecordSizeKiB
  * @property 'NONE'|'ZSTD'|'LZ4' $DataCompressionType
  * @property list<OpenZFSNfsExport> $NfsExports
  * @property list<OpenZFSUserOrGroupQuota> $UserAndGroupQuotas
@@ -16,7 +16,7 @@ class OpenZFSCreateRootVolumeConfiguration extends Shape
 {
     /**
      * @param array{
-     *     RecordSizeKiB?: int,
+     *     RecordSizeKiB?: int<4, 4096>,
      *     DataCompressionType?: 'NONE'|'ZSTD'|'LZ4',
      *     NfsExports?: list<OpenZFSNfsExport>,
      *     UserAndGroupQuotas?: list<OpenZFSUserOrGroupQuota>,

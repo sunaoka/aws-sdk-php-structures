@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $ResourceIds
  * @property list<string> $ResourceTypes
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  */
 class ListComplianceItemsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListComplianceItemsRequest extends Request
      *     ResourceIds?: list<string>,
      *     ResourceTypes?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

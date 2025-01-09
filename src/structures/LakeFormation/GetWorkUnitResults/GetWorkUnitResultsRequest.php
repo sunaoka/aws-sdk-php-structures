@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $QueryId
- * @property int $WorkUnitId
+ * @property int<0, max> $WorkUnitId
  * @property string $WorkUnitToken
  */
 class GetWorkUnitResultsRequest extends Request
@@ -14,7 +14,7 @@ class GetWorkUnitResultsRequest extends Request
     /**
      * @param array{
      *     QueryId: string,
-     *     WorkUnitId: int,
+     *     WorkUnitId: int<0, max>,
      *     WorkUnitToken: string
      * } $args
      */

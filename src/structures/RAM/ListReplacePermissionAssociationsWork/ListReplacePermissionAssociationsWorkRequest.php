@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $workIds
  * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED' $status
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 500> $maxResults
  */
 class ListReplacePermissionAssociationsWorkRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListReplacePermissionAssociationsWorkRequest extends Request
      *     workIds?: list<string>,
      *     status?: 'IN_PROGRESS'|'COMPLETED'|'FAILED',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 500>
      * } $args
      */
     public function __construct(array $args = [])

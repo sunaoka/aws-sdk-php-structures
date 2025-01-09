@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FunctionName
  * @property string $FunctionVersion
  * @property string $Marker
- * @property int $MaxItems
+ * @property int<1, 10000> $MaxItems
  */
 class ListAliasesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListAliasesRequest extends Request
      *     FunctionName: string,
      *     FunctionVersion?: string,
      *     Marker?: string,
-     *     MaxItems?: int
+     *     MaxItems?: int<1, 10000>
      * } $args
      */
     public function __construct(array $args)

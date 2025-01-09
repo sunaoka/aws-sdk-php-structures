@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\AIAgentData $aiAgent
- * @property int $versionNumber
+ * @property int<1, max> $versionNumber
  */
 class CreateAIAgentVersionResponse extends Response
 {

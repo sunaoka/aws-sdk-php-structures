@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RedshiftDataAPIService\ListStatements;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<0, 100> $MaxResults
  * @property string $NextToken
  * @property bool $RoleLevel
  * @property string $StatementName
@@ -15,7 +15,7 @@ class ListStatementsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 100>,
      *     NextToken?: string,
      *     RoleLevel?: bool,
      *     StatementName?: string,

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetLifecyclePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $value
+ * @property int<1, 365> $value
  * @property 'DAYS'|'WEEKS'|'MONTHS'|'YEARS' $unit
  */
 class LifecyclePolicyDetailExclusionRulesAmisLastLaunched extends Shape
 {
     /**
      * @param array{
-     *     value: int,
+     *     value: int<1, 365>,
      *     unit: 'DAYS'|'WEEKS'|'MONTHS'|'YEARS'
      * } $args
      */

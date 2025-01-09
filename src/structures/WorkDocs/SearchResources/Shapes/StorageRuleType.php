@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\WorkDocs\SearchResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $StorageAllocatedInBytes
+ * @property int<0, max> $StorageAllocatedInBytes
  * @property 'UNLIMITED'|'QUOTA' $StorageType
  */
 class StorageRuleType extends Shape
 {
     /**
      * @param array{
-     *     StorageAllocatedInBytes?: int,
+     *     StorageAllocatedInBytes?: int<0, max>,
      *     StorageType?: 'UNLIMITED'|'QUOTA'
      * } $args
      */

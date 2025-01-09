@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreatePreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<int> $InputChannels
+ * @property list<int<-60, 6>> $InputChannels
  * @property list<double> $InputChannelsFineTune
  */
 class OutputChannelMapping extends Shape
 {
     /**
      * @param array{
-     *     InputChannels?: list<int>,
+     *     InputChannels?: list<int<-60, 6>>,
      *     InputChannelsFineTune?: list<double>
      * } $args
      */

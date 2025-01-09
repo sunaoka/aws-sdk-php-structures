@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $resourceType
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 500> $maxResults
  * @property 'ALL'|'AWS_MANAGED'|'CUSTOMER_MANAGED' $permissionType
  */
 class ListPermissionsRequest extends Request
@@ -16,7 +16,7 @@ class ListPermissionsRequest extends Request
      * @param array{
      *     resourceType?: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 500>,
      *     permissionType?: 'ALL'|'AWS_MANAGED'|'CUSTOMER_MANAGED'
      * } $args
      */

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $isDefault
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  * @property string $name
- * @property int $priority
+ * @property int<1, 100> $priority
  */
 class RuleSummary extends Shape
 {
@@ -23,7 +23,7 @@ class RuleSummary extends Shape
      *     isDefault?: bool,
      *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
      *     name?: string,
-     *     priority?: int
+     *     priority?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

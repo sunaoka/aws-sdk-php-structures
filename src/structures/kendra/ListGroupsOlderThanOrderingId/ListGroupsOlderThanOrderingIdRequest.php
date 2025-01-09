@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IndexId
  * @property string $DataSourceId
- * @property int $OrderingId
+ * @property int<0, 32535158400000> $OrderingId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 10> $MaxResults
  */
 class ListGroupsOlderThanOrderingIdRequest extends Request
 {
@@ -17,9 +17,9 @@ class ListGroupsOlderThanOrderingIdRequest extends Request
      * @param array{
      *     IndexId: string,
      *     DataSourceId?: string,
-     *     OrderingId: int,
+     *     OrderingId: int<0, 32535158400000>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 10>
      * } $args
      */
     public function __construct(array $args)

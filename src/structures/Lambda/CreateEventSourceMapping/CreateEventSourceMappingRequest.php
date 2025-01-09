@@ -8,18 +8,18 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EventSourceArn
  * @property string $FunctionName
  * @property bool $Enabled
- * @property int $BatchSize
+ * @property int<1, 10000> $BatchSize
  * @property Shapes\FilterCriteria $FilterCriteria
- * @property int $MaximumBatchingWindowInSeconds
- * @property int $ParallelizationFactor
+ * @property int<0, 300> $MaximumBatchingWindowInSeconds
+ * @property int<1, 10> $ParallelizationFactor
  * @property 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP' $StartingPosition
  * @property \Aws\Api\DateTimeResult $StartingPositionTimestamp
  * @property Shapes\DestinationConfig $DestinationConfig
- * @property int $MaximumRecordAgeInSeconds
+ * @property int<-1, 604800> $MaximumRecordAgeInSeconds
  * @property bool $BisectBatchOnFunctionError
- * @property int $MaximumRetryAttempts
+ * @property int<-1, 10000> $MaximumRetryAttempts
  * @property array<string, string> $Tags
- * @property int $TumblingWindowInSeconds
+ * @property int<0, 900> $TumblingWindowInSeconds
  * @property list<string> $Topics
  * @property list<string> $Queues
  * @property list<Shapes\SourceAccessConfiguration> $SourceAccessConfigurations
@@ -40,18 +40,18 @@ class CreateEventSourceMappingRequest extends Request
      *     EventSourceArn?: string,
      *     FunctionName: string,
      *     Enabled?: bool,
-     *     BatchSize?: int,
+     *     BatchSize?: int<1, 10000>,
      *     FilterCriteria?: Shapes\FilterCriteria,
-     *     MaximumBatchingWindowInSeconds?: int,
-     *     ParallelizationFactor?: int,
+     *     MaximumBatchingWindowInSeconds?: int<0, 300>,
+     *     ParallelizationFactor?: int<1, 10>,
      *     StartingPosition?: 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP',
      *     StartingPositionTimestamp?: \Aws\Api\DateTimeResult,
      *     DestinationConfig?: Shapes\DestinationConfig,
-     *     MaximumRecordAgeInSeconds?: int,
+     *     MaximumRecordAgeInSeconds?: int<-1, 604800>,
      *     BisectBatchOnFunctionError?: bool,
-     *     MaximumRetryAttempts?: int,
+     *     MaximumRetryAttempts?: int<-1, 10000>,
      *     Tags?: array<string, string>,
-     *     TumblingWindowInSeconds?: int,
+     *     TumblingWindowInSeconds?: int<0, 900>,
      *     Topics?: list<string>,
      *     Queues?: list<string>,
      *     SourceAccessConfigurations?: list<Shapes\SourceAccessConfiguration>,

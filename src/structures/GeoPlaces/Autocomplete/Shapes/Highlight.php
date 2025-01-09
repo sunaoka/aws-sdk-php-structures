@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\Autocomplete\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $StartIndex
- * @property int $EndIndex
+ * @property int<0, max> $StartIndex
+ * @property int<0, max> $EndIndex
  * @property string $Value
  */
 class Highlight extends Shape
 {
     /**
      * @param array{
-     *     StartIndex?: int,
-     *     EndIndex?: int,
+     *     StartIndex?: int<0, max>,
+     *     EndIndex?: int<0, max>,
      *     Value?: string
      * } $args
      */

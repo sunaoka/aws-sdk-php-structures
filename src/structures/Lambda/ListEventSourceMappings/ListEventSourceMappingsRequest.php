@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EventSourceArn
  * @property string $FunctionName
  * @property string $Marker
- * @property int $MaxItems
+ * @property int<1, 10000> $MaxItems
  */
 class ListEventSourceMappingsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListEventSourceMappingsRequest extends Request
      *     EventSourceArn?: string,
      *     FunctionName?: string,
      *     Marker?: string,
-     *     MaxItems?: int
+     *     MaxItems?: int<1, 10000>
      * } $args
      */
     public function __construct(array $args = [])

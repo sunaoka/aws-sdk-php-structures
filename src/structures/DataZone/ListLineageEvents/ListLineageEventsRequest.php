@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nextToken
  * @property 'REQUESTED'|'PROCESSING'|'SUCCESS'|'FAILED' $processingStatus
  * @property 'ASCENDING'|'DESCENDING' $sortOrder
@@ -18,7 +18,7 @@ class ListLineageEventsRequest extends Request
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nextToken?: string,
      *     processingStatus?: 'REQUESTED'|'PROCESSING'|'SUCCESS'|'FAILED',
      *     sortOrder?: 'ASCENDING'|'DESCENDING',

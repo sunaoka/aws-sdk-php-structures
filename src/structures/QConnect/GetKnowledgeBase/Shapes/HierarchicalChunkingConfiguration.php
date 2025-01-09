@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<HierarchicalChunkingLevelConfiguration> $levelConfigurations
- * @property int $overlapTokens
+ * @property int<1, max> $overlapTokens
  */
 class HierarchicalChunkingConfiguration extends Shape
 {
     /**
      * @param array{
      *     levelConfigurations: list<HierarchicalChunkingLevelConfiguration>,
-     *     overlapTokens: int
+     *     overlapTokens: int<1, max>
      * } $args
      */
     public function __construct(array $args)

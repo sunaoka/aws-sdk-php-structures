@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\OutboundCallerConfig $OutboundCallerConfig
  * @property Shapes\OutboundEmailConfig $OutboundEmailConfig
  * @property string $HoursOfOperationId
- * @property int $MaxContacts
+ * @property int<0, max> $MaxContacts
  * @property list<string> $QuickConnectIds
  * @property array<string, string> $Tags
  */
@@ -25,7 +25,7 @@ class CreateQueueRequest extends Request
      *     OutboundCallerConfig?: Shapes\OutboundCallerConfig,
      *     OutboundEmailConfig?: Shapes\OutboundEmailConfig,
      *     HoursOfOperationId: string,
-     *     MaxContacts?: int,
+     *     MaxContacts?: int<0, max>,
      *     QuickConnectIds?: list<string>,
      *     Tags?: array<string, string>
      * } $args

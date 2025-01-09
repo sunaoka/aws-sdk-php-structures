@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FileMode
  * @property string $DirectoryMode
- * @property int $GroupId
- * @property int $OwnerId
+ * @property int<0, 4294967294> $GroupId
+ * @property int<0, 4294967294> $OwnerId
  */
 class NFSFileShareDefaults extends Shape
 {
@@ -16,8 +16,8 @@ class NFSFileShareDefaults extends Shape
      * @param array{
      *     FileMode?: string,
      *     DirectoryMode?: string,
-     *     GroupId?: int,
-     *     OwnerId?: int
+     *     GroupId?: int<0, 4294967294>,
+     *     OwnerId?: int<0, 4294967294>
      * } $args
      */
     public function __construct(array $args = [])

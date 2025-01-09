@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateHyperParameterTuningJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaximumRetryAttempts
+ * @property int<1, 30> $MaximumRetryAttempts
  */
 class RetryStrategy extends Shape
 {
     /**
-     * @param array{MaximumRetryAttempts: int} $args
+     * @param array{MaximumRetryAttempts: int<1, 30>} $args
      */
     public function __construct(array $args)
     {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $NetworkInsightsPathIds
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property bool $DryRun
  * @property string $NextToken
  */
@@ -17,7 +17,7 @@ class DescribeNetworkInsightsPathsRequest extends Request
      * @param array{
      *     NetworkInsightsPathIds?: list<string>,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     DryRun?: bool,
      *     NextToken?: string
      * } $args

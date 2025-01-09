@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $dataProduct
  * @property string $domainIdentifier
  * @property bool $includeCascaded
- * @property int $maxResults
+ * @property int<25, 50> $maxResults
  * @property string $nextToken
  * @property list<string> $projectIds
  * @property 'METADATA_FORM_ENFORCEMENT' $ruleType
@@ -26,7 +26,7 @@ class ListRulesRequest extends Request
      *     dataProduct?: bool,
      *     domainIdentifier: string,
      *     includeCascaded?: bool,
-     *     maxResults?: int,
+     *     maxResults?: int<25, 50>,
      *     nextToken?: string,
      *     projectIds?: list<string>,
      *     ruleType?: 'METADATA_FORM_ENFORCEMENT',

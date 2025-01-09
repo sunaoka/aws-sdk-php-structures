@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'OFF'|'AUTO'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX' $AdaptiveQuantization
  * @property BandwidthReductionFilter $BandwidthReductionFilter
- * @property int $Bitrate
+ * @property int<1000, 1152000000> $Bitrate
  * @property 'AUTO'|'LEVEL_1'|'LEVEL_1_1'|'LEVEL_1_2'|'LEVEL_1_3'|'LEVEL_2'|'LEVEL_2_1'|'LEVEL_2_2'|'LEVEL_3'|'LEVEL_3_1'|'LEVEL_3_2'|'LEVEL_4'|'LEVEL_4_1'|'LEVEL_4_2'|'LEVEL_5'|'LEVEL_5_1'|'LEVEL_5_2' $CodecLevel
  * @property 'BASELINE'|'HIGH'|'HIGH_10BIT'|'HIGH_422'|'HIGH_422_10BIT'|'MAIN' $CodecProfile
  * @property 'ADAPTIVE'|'STATIC' $DynamicSubGop
@@ -17,23 +17,23 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'ENABLED' $FlickerAdaptiveQuantization
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
  * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int $FramerateDenominator
- * @property int $FramerateNumerator
+ * @property int<1, 2147483647> $FramerateDenominator
+ * @property int<1, 2147483647> $FramerateNumerator
  * @property 'DISABLED'|'ENABLED' $GopBReference
- * @property int $GopClosedCadence
+ * @property int<0, 2147483647> $GopClosedCadence
  * @property double $GopSize
  * @property 'FRAMES'|'SECONDS'|'AUTO' $GopSizeUnits
- * @property int $HrdBufferFinalFillPercentage
- * @property int $HrdBufferInitialFillPercentage
- * @property int $HrdBufferSize
+ * @property int<0, 100> $HrdBufferFinalFillPercentage
+ * @property int<0, 100> $HrdBufferInitialFillPercentage
+ * @property int<0, 1152000000> $HrdBufferSize
  * @property 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD' $InterlaceMode
- * @property int $MaxBitrate
- * @property int $MinIInterval
- * @property int $NumberBFramesBetweenReferenceFrames
- * @property int $NumberReferenceFrames
+ * @property int<1000, 1152000000> $MaxBitrate
+ * @property int<0, 30> $MinIInterval
+ * @property int<0, 7> $NumberBFramesBetweenReferenceFrames
+ * @property int<1, 6> $NumberReferenceFrames
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $ParControl
- * @property int $ParDenominator
- * @property int $ParNumerator
+ * @property int<1, 2147483647> $ParDenominator
+ * @property int<1, 2147483647> $ParNumerator
  * @property 'SINGLE_PASS'|'SINGLE_PASS_HQ'|'MULTI_PASS_HQ' $QualityTuningLevel
  * @property H264QvbrSettings $QvbrSettings
  * @property 'VBR'|'CBR'|'QVBR' $RateControlMode
@@ -41,9 +41,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'PREFERRED' $SaliencyAwareEncoding
  * @property 'INTERLACED'|'INTERLACED_OPTIMIZE' $ScanTypeConversionMode
  * @property 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION' $SceneChangeDetect
- * @property int $Slices
+ * @property int<1, 32> $Slices
  * @property 'DISABLED'|'ENABLED' $SlowPal
- * @property int $Softness
+ * @property int<0, 128> $Softness
  * @property 'DISABLED'|'ENABLED' $SpatialAdaptiveQuantization
  * @property 'DEFAULT'|'RP2027' $Syntax
  * @property 'NONE'|'SOFT'|'HARD' $Telecine
@@ -57,7 +57,7 @@ class H264Settings extends Shape
      * @param array{
      *     AdaptiveQuantization?: 'OFF'|'AUTO'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX',
      *     BandwidthReductionFilter?: BandwidthReductionFilter,
-     *     Bitrate?: int,
+     *     Bitrate?: int<1000, 1152000000>,
      *     CodecLevel?: 'AUTO'|'LEVEL_1'|'LEVEL_1_1'|'LEVEL_1_2'|'LEVEL_1_3'|'LEVEL_2'|'LEVEL_2_1'|'LEVEL_2_2'|'LEVEL_3'|'LEVEL_3_1'|'LEVEL_3_2'|'LEVEL_4'|'LEVEL_4_1'|'LEVEL_4_2'|'LEVEL_5'|'LEVEL_5_1'|'LEVEL_5_2',
      *     CodecProfile?: 'BASELINE'|'HIGH'|'HIGH_10BIT'|'HIGH_422'|'HIGH_422_10BIT'|'MAIN',
      *     DynamicSubGop?: 'ADAPTIVE'|'STATIC',
@@ -67,23 +67,23 @@ class H264Settings extends Shape
      *     FlickerAdaptiveQuantization?: 'DISABLED'|'ENABLED',
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
      *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int,
-     *     FramerateNumerator?: int,
+     *     FramerateDenominator?: int<1, 2147483647>,
+     *     FramerateNumerator?: int<1, 2147483647>,
      *     GopBReference?: 'DISABLED'|'ENABLED',
-     *     GopClosedCadence?: int,
+     *     GopClosedCadence?: int<0, 2147483647>,
      *     GopSize?: double,
      *     GopSizeUnits?: 'FRAMES'|'SECONDS'|'AUTO',
-     *     HrdBufferFinalFillPercentage?: int,
-     *     HrdBufferInitialFillPercentage?: int,
-     *     HrdBufferSize?: int,
+     *     HrdBufferFinalFillPercentage?: int<0, 100>,
+     *     HrdBufferInitialFillPercentage?: int<0, 100>,
+     *     HrdBufferSize?: int<0, 1152000000>,
      *     InterlaceMode?: 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD',
-     *     MaxBitrate?: int,
-     *     MinIInterval?: int,
-     *     NumberBFramesBetweenReferenceFrames?: int,
-     *     NumberReferenceFrames?: int,
+     *     MaxBitrate?: int<1000, 1152000000>,
+     *     MinIInterval?: int<0, 30>,
+     *     NumberBFramesBetweenReferenceFrames?: int<0, 7>,
+     *     NumberReferenceFrames?: int<1, 6>,
      *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
-     *     ParDenominator?: int,
-     *     ParNumerator?: int,
+     *     ParDenominator?: int<1, 2147483647>,
+     *     ParNumerator?: int<1, 2147483647>,
      *     QualityTuningLevel?: 'SINGLE_PASS'|'SINGLE_PASS_HQ'|'MULTI_PASS_HQ',
      *     QvbrSettings?: H264QvbrSettings,
      *     RateControlMode?: 'VBR'|'CBR'|'QVBR',
@@ -91,9 +91,9 @@ class H264Settings extends Shape
      *     SaliencyAwareEncoding?: 'DISABLED'|'PREFERRED',
      *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE',
      *     SceneChangeDetect?: 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION',
-     *     Slices?: int,
+     *     Slices?: int<1, 32>,
      *     SlowPal?: 'DISABLED'|'ENABLED',
-     *     Softness?: int,
+     *     Softness?: int<0, 128>,
      *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED',
      *     Syntax?: 'DEFAULT'|'RP2027',
      *     Telecine?: 'NONE'|'SOFT'|'HARD',

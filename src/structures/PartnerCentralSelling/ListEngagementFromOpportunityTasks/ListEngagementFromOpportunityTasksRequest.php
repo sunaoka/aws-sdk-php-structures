@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Catalog
  * @property list<string> $EngagementIdentifier
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  * @property list<string> $OpportunityIdentifier
  * @property Shapes\ListTasksSortBase $Sort
@@ -20,7 +20,7 @@ class ListEngagementFromOpportunityTasksRequest extends Request
      * @param array{
      *     Catalog: string,
      *     EngagementIdentifier?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string,
      *     OpportunityIdentifier?: list<string>,
      *     Sort?: Shapes\ListTasksSortBase,

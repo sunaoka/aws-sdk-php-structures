@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'TS'|'CMAF' $ContainerType
  * @property Shapes\Segment $Segment
  * @property string $Description
- * @property int $StartoverWindowSeconds
+ * @property int<60, 1209600> $StartoverWindowSeconds
  * @property list<Shapes\CreateHlsManifestConfiguration> $HlsManifests
  * @property list<Shapes\CreateLowLatencyHlsManifestConfiguration> $LowLatencyHlsManifests
  * @property list<Shapes\CreateDashManifestConfiguration> $DashManifests
@@ -28,7 +28,7 @@ class UpdateOriginEndpointRequest extends Request
      *     ContainerType: 'TS'|'CMAF',
      *     Segment?: Shapes\Segment,
      *     Description?: string,
-     *     StartoverWindowSeconds?: int,
+     *     StartoverWindowSeconds?: int<60, 1209600>,
      *     HlsManifests?: list<Shapes\CreateHlsManifestConfiguration>,
      *     LowLatencyHlsManifests?: list<Shapes\CreateLowLatencyHlsManifestConfiguration>,
      *     DashManifests?: list<Shapes\CreateDashManifestConfiguration>,

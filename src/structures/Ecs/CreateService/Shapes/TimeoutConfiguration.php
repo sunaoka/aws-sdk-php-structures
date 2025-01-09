@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ecs\CreateService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $idleTimeoutSeconds
- * @property int $perRequestTimeoutSeconds
+ * @property int<0, 2147483647> $idleTimeoutSeconds
+ * @property int<0, 2147483647> $perRequestTimeoutSeconds
  */
 class TimeoutConfiguration extends Shape
 {
     /**
      * @param array{
-     *     idleTimeoutSeconds?: int,
-     *     perRequestTimeoutSeconds?: int
+     *     idleTimeoutSeconds?: int<0, 2147483647>,
+     *     perRequestTimeoutSeconds?: int<0, 2147483647>
      * } $args
      */
     public function __construct(array $args = [])

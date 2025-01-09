@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property list<string> $Inputs
  * @property string $Path
- * @property int $Topk
+ * @property int<0, 100> $Topk
  * @property double $Prob
  */
 class Spigot extends Shape
@@ -18,7 +18,7 @@ class Spigot extends Shape
      *     Name: string,
      *     Inputs: list<string>,
      *     Path: string,
-     *     Topk?: int,
+     *     Topk?: int<0, 100>,
      *     Prob?: double
      * } $args
      */

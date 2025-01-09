@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $resourceArns
  * @property list<string> $resourceShareArns
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 500> $maxResults
  * @property 'ALL'|'REGIONAL'|'GLOBAL' $resourceRegionScope
  */
 class ListResourcesRequest extends Request
@@ -24,7 +24,7 @@ class ListResourcesRequest extends Request
      *     resourceArns?: list<string>,
      *     resourceShareArns?: list<string>,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 500>,
      *     resourceRegionScope?: 'ALL'|'REGIONAL'|'GLOBAL'
      * } $args
      */

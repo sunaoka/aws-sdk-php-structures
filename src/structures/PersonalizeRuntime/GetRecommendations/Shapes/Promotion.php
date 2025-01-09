@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property int $percentPromotedItems
+ * @property int<1, 100> $percentPromotedItems
  * @property string $filterArn
  * @property array<string, string> $filterValues
  */
@@ -15,7 +15,7 @@ class Promotion extends Shape
     /**
      * @param array{
      *     name?: string,
-     *     percentPromotedItems?: int,
+     *     percentPromotedItems?: int<1, 100>,
      *     filterArn?: string,
      *     filterValues?: array<string, string>
      * } $args

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ImageName
  * @property string $Alias
- * @property int $Version
- * @property int $MaxResults
+ * @property int<0, max> $Version
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListAliasesRequest extends Request
@@ -17,8 +17,8 @@ class ListAliasesRequest extends Request
      * @param array{
      *     ImageName: string,
      *     Alias?: string,
-     *     Version?: int,
-     *     MaxResults?: int,
+     *     Version?: int<0, max>,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

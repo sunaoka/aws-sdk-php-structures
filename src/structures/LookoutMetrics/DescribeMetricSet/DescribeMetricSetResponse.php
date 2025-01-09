@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $MetricSetDescription
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModificationTime
- * @property int $Offset
+ * @property int<0, 432000> $Offset
  * @property list<Shapes\Metric> $MetricList
  * @property Shapes\TimestampColumn $TimestampColumn
  * @property list<string> $DimensionList

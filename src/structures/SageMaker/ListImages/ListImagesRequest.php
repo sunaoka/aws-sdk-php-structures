@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
  * @property \Aws\Api\DateTimeResult $LastModifiedTimeAfter
  * @property \Aws\Api\DateTimeResult $LastModifiedTimeBefore
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NameContains
  * @property string $NextToken
  * @property 'CREATION_TIME'|'LAST_MODIFIED_TIME'|'IMAGE_NAME' $SortBy
@@ -23,7 +23,7 @@ class ListImagesRequest extends Request
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
      *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult,
      *     LastModifiedTimeBefore?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NameContains?: string,
      *     NextToken?: string,
      *     SortBy?: 'CREATION_TIME'|'LAST_MODIFIED_TIME'|'IMAGE_NAME',

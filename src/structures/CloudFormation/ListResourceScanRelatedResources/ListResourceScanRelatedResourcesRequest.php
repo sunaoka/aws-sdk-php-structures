@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceScanId
  * @property list<Shapes\ScannedResourceIdentifier> $Resources
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListResourceScanRelatedResourcesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListResourceScanRelatedResourcesRequest extends Request
      *     ResourceScanId: string,
      *     Resources: list<Shapes\ScannedResourceIdentifier>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

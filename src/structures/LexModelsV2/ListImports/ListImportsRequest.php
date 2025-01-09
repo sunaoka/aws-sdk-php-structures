@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botVersion
  * @property Shapes\ImportSortBy $sortBy
  * @property list<Shapes\ImportFilter> $filters
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property string $localeId
  */
@@ -21,7 +21,7 @@ class ListImportsRequest extends Request
      *     botVersion?: string,
      *     sortBy?: Shapes\ImportSortBy,
      *     filters?: list<Shapes\ImportFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     localeId?: string
      * } $args

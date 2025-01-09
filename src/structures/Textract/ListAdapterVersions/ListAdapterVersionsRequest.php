@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AdapterId
  * @property \Aws\Api\DateTimeResult $AfterCreationTime
  * @property \Aws\Api\DateTimeResult $BeforeCreationTime
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $NextToken
  */
 class ListAdapterVersionsRequest extends Request
@@ -18,7 +18,7 @@ class ListAdapterVersionsRequest extends Request
      *     AdapterId?: string,
      *     AfterCreationTime?: \Aws\Api\DateTimeResult,
      *     BeforeCreationTime?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

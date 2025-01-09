@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $TransformJobStatus
  * @property string $FailureReason
  * @property string $ModelName
- * @property int $MaxConcurrentTransforms
+ * @property int<0, max> $MaxConcurrentTransforms
  * @property ModelClientConfig $ModelClientConfig
- * @property int $MaxPayloadInMB
+ * @property int<0, max> $MaxPayloadInMB
  * @property 'MultiRecord'|'SingleRecord' $BatchStrategy
  * @property array<string, string> $Environment
  * @property TransformInput $TransformInput
@@ -37,9 +37,9 @@ class TransformJob extends Shape
      *     TransformJobStatus?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped',
      *     FailureReason?: string,
      *     ModelName?: string,
-     *     MaxConcurrentTransforms?: int,
+     *     MaxConcurrentTransforms?: int<0, max>,
      *     ModelClientConfig?: ModelClientConfig,
-     *     MaxPayloadInMB?: int,
+     *     MaxPayloadInMB?: int<0, max>,
      *     BatchStrategy?: 'MultiRecord'|'SingleRecord',
      *     Environment?: array<string, string>,
      *     TransformInput?: TransformInput,

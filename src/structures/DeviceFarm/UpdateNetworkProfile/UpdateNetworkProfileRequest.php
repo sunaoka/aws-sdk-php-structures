@@ -15,8 +15,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property int $downlinkDelayMs
  * @property int $uplinkJitterMs
  * @property int $downlinkJitterMs
- * @property int $uplinkLossPercent
- * @property int $downlinkLossPercent
+ * @property int<0, 100> $uplinkLossPercent
+ * @property int<0, 100> $downlinkLossPercent
  */
 class UpdateNetworkProfileRequest extends Request
 {
@@ -32,8 +32,8 @@ class UpdateNetworkProfileRequest extends Request
      *     downlinkDelayMs?: int,
      *     uplinkJitterMs?: int,
      *     downlinkJitterMs?: int,
-     *     uplinkLossPercent?: int,
-     *     downlinkLossPercent?: int
+     *     uplinkLossPercent?: int<0, 100>,
+     *     downlinkLossPercent?: int<0, 100>
      * } $args
      */
     public function __construct(array $args)

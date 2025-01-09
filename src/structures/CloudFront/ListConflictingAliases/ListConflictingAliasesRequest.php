@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DistributionId
  * @property string $Alias
  * @property string $Marker
- * @property int $MaxItems
+ * @property int<min, 100> $MaxItems
  */
 class ListConflictingAliasesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListConflictingAliasesRequest extends Request
      *     DistributionId: string,
      *     Alias: string,
      *     Marker?: string,
-     *     MaxItems?: int
+     *     MaxItems?: int<min, 100>
      * } $args
      */
     public function __construct(array $args)

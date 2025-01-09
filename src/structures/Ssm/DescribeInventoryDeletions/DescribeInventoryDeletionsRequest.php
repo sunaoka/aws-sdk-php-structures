@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DeletionId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  */
 class DescribeInventoryDeletionsRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeInventoryDeletionsRequest extends Request
      * @param array{
      *     DeletionId?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

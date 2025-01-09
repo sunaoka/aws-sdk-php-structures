@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $campaignArn
  * @property string $itemId
  * @property string $userId
- * @property int $numResults
+ * @property int<0, max> $numResults
  * @property array<string, string> $context
  * @property string $filterArn
  * @property array<string, string> $filterValues
@@ -23,7 +23,7 @@ class GetRecommendationsRequest extends Request
      *     campaignArn?: string,
      *     itemId?: string,
      *     userId?: string,
-     *     numResults?: int,
+     *     numResults?: int<0, max>,
      *     context?: array<string, string>,
      *     filterArn?: string,
      *     filterValues?: array<string, string>,

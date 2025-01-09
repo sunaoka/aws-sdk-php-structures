@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property list<string> $executionIds
  * @property string $jobName
- * @property int $maxResults
+ * @property int<1, 2000> $maxResults
  * @property string $nextToken
  * @property \Aws\Api\DateTimeResult $startedAfter
  * @property \Aws\Api\DateTimeResult $startedBefore
@@ -21,7 +21,7 @@ class ListBatchJobExecutionsRequest extends Request
      *     applicationId: string,
      *     executionIds?: list<string>,
      *     jobName?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 2000>,
      *     nextToken?: string,
      *     startedAfter?: \Aws\Api\DateTimeResult,
      *     startedBefore?: \Aws\Api\DateTimeResult,

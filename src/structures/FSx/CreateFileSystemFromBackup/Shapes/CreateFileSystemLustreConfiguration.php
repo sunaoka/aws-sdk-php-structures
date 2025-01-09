@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $WeeklyMaintenanceStartTime
  * @property string $ImportPath
  * @property string $ExportPath
- * @property int $ImportedFileChunkSize
+ * @property int<1, 512000> $ImportedFileChunkSize
  * @property 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2' $DeploymentType
  * @property 'NONE'|'NEW'|'NEW_CHANGED'|'NEW_CHANGED_DELETED' $AutoImportPolicy
- * @property int $PerUnitStorageThroughput
+ * @property int<12, 1000> $PerUnitStorageThroughput
  * @property string $DailyAutomaticBackupStartTime
- * @property int $AutomaticBackupRetentionDays
+ * @property int<0, 90> $AutomaticBackupRetentionDays
  * @property bool $CopyTagsToBackups
  * @property 'NONE'|'READ' $DriveCacheType
  * @property 'NONE'|'LZ4' $DataCompressionType
@@ -29,12 +29,12 @@ class CreateFileSystemLustreConfiguration extends Shape
      *     WeeklyMaintenanceStartTime?: string,
      *     ImportPath?: string,
      *     ExportPath?: string,
-     *     ImportedFileChunkSize?: int,
+     *     ImportedFileChunkSize?: int<1, 512000>,
      *     DeploymentType?: 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2',
      *     AutoImportPolicy?: 'NONE'|'NEW'|'NEW_CHANGED'|'NEW_CHANGED_DELETED',
-     *     PerUnitStorageThroughput?: int,
+     *     PerUnitStorageThroughput?: int<12, 1000>,
      *     DailyAutomaticBackupStartTime?: string,
-     *     AutomaticBackupRetentionDays?: int,
+     *     AutomaticBackupRetentionDays?: int<0, 90>,
      *     CopyTagsToBackups?: bool,
      *     DriveCacheType?: 'NONE'|'READ',
      *     DataCompressionType?: 'NONE'|'LZ4',

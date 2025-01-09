@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeContactEvaluation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $EvaluationFormVersion
+ * @property int<1, max> $EvaluationFormVersion
  * @property string $EvaluationFormId
  * @property string $EvaluationFormArn
  * @property string $Title
@@ -17,7 +17,7 @@ class EvaluationFormContent extends Shape
 {
     /**
      * @param array{
-     *     EvaluationFormVersion: int,
+     *     EvaluationFormVersion: int<1, max>,
      *     EvaluationFormId: string,
      *     EvaluationFormArn: string,
      *     Title: string,

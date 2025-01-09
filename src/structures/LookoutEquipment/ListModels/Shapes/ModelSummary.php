@@ -11,10 +11,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DatasetArn
  * @property 'IN_PROGRESS'|'SUCCESS'|'FAILED'|'IMPORT_IN_PROGRESS' $Status
  * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property int $ActiveModelVersion
+ * @property int<1, max> $ActiveModelVersion
  * @property string $ActiveModelVersionArn
  * @property 'IN_PROGRESS'|'SUCCESS'|'FAILED'|'IMPORT_IN_PROGRESS'|'CANCELED' $LatestScheduledRetrainingStatus
- * @property int $LatestScheduledRetrainingModelVersion
+ * @property int<1, max> $LatestScheduledRetrainingModelVersion
  * @property \Aws\Api\DateTimeResult $LatestScheduledRetrainingStartTime
  * @property \Aws\Api\DateTimeResult $NextScheduledRetrainingStartDate
  * @property 'PENDING'|'RUNNING'|'STOPPING'|'STOPPED' $RetrainingSchedulerStatus
@@ -31,10 +31,10 @@ class ModelSummary extends Shape
      *     DatasetArn?: string,
      *     Status?: 'IN_PROGRESS'|'SUCCESS'|'FAILED'|'IMPORT_IN_PROGRESS',
      *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     ActiveModelVersion?: int,
+     *     ActiveModelVersion?: int<1, max>,
      *     ActiveModelVersionArn?: string,
      *     LatestScheduledRetrainingStatus?: 'IN_PROGRESS'|'SUCCESS'|'FAILED'|'IMPORT_IN_PROGRESS'|'CANCELED',
-     *     LatestScheduledRetrainingModelVersion?: int,
+     *     LatestScheduledRetrainingModelVersion?: int<1, max>,
      *     LatestScheduledRetrainingStartTime?: \Aws\Api\DateTimeResult,
      *     NextScheduledRetrainingStartDate?: \Aws\Api\DateTimeResult,
      *     RetrainingSchedulerStatus?: 'PENDING'|'RUNNING'|'STOPPING'|'STOPPED',

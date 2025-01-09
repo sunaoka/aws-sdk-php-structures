@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AvoidActionsForDistance
+ * @property int<min, 2000> $AvoidActionsForDistance
  * @property bool $AvoidUTurns
  * @property double $Heading
  * @property RouteMatchingOptions $Matching
@@ -15,7 +15,7 @@ class RouteOriginOptions extends Shape
 {
     /**
      * @param array{
-     *     AvoidActionsForDistance?: int,
+     *     AvoidActionsForDistance?: int<min, 2000>,
      *     AvoidUTurns?: bool,
      *     Heading?: double,
      *     Matching?: RouteMatchingOptions,

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $QueueId
  * @property string $QueueArn
  * @property string $QueueName
- * @property int $Priority
- * @property int $Delay
+ * @property int<1, 99> $Priority
+ * @property int<0, 9999> $Delay
  * @property 'VOICE'|'CHAT'|'TASK'|'EMAIL' $Channel
  */
 class RoutingProfileQueueConfigSummary extends Shape
@@ -19,8 +19,8 @@ class RoutingProfileQueueConfigSummary extends Shape
      *     QueueId: string,
      *     QueueArn: string,
      *     QueueName: string,
-     *     Priority: int,
-     *     Delay: int,
+     *     Priority: int<1, 99>,
+     *     Delay: int<0, 9999>,
      *     Channel: 'VOICE'|'CHAT'|'TASK'|'EMAIL'
      * } $args
      */

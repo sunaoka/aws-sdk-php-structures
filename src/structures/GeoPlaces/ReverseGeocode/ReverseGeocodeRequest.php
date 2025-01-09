@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<double> $QueryPosition
- * @property int $QueryRadius
- * @property int $MaxResults
+ * @property int<1, 21000000> $QueryRadius
+ * @property int<1, 100> $MaxResults
  * @property Shapes\ReverseGeocodeFilter $Filter
  * @property list<'TimeZone'|'Access'> $AdditionalFeatures
  * @property string $Language
@@ -20,8 +20,8 @@ class ReverseGeocodeRequest extends Request
     /**
      * @param array{
      *     QueryPosition: list<double>,
-     *     QueryRadius?: int,
-     *     MaxResults?: int,
+     *     QueryRadius?: int<1, 21000000>,
+     *     MaxResults?: int<1, 100>,
      *     Filter?: Shapes\ReverseGeocodeFilter,
      *     AdditionalFeatures?: list<'TimeZone'|'Access'>,
      *     Language?: string,

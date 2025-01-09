@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateTrainingJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $KeepAlivePeriodInSeconds
+ * @property int<0, 3600> $KeepAlivePeriodInSeconds
  */
 class ResourceConfigForUpdate extends Shape
 {
     /**
-     * @param array{KeepAlivePeriodInSeconds: int} $args
+     * @param array{KeepAlivePeriodInSeconds: int<0, 3600>} $args
      */
     public function __construct(array $args)
     {

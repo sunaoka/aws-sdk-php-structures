@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\DataSource $DataSource
  * @property string $Role
  * @property int $NumberOfWorkers
- * @property int $Timeout
+ * @property int<1, max> $Timeout
  * @property Shapes\DataQualityEvaluationRunAdditionalRunOptions $AdditionalRunOptions
  * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT' $Status
  * @property string $ErrorString

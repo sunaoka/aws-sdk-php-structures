@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SUM_BY_ACCOUNT'|'SUM_BY_DATA_SOURCE'|'SUM_BY_RESOURCE'|'TOP_RESOURCES'|'SUM_BY_FEATURES'|'TOP_ACCOUNTS_BY_FEATURE' $UsageStatisticType
  * @property Shapes\UsageCriteria $UsageCriteria
  * @property string $Unit
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class GetUsageStatisticsRequest extends Request
@@ -20,7 +20,7 @@ class GetUsageStatisticsRequest extends Request
      *     UsageStatisticType: 'SUM_BY_ACCOUNT'|'SUM_BY_DATA_SOURCE'|'SUM_BY_RESOURCE'|'TOP_RESOURCES'|'SUM_BY_FEATURES'|'TOP_ACCOUNTS_BY_FEATURE',
      *     UsageCriteria: Shapes\UsageCriteria,
      *     Unit?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

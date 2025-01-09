@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CatalogId
  * @property 'ALL'|'COMPLETED'|'ACTIVE'|'COMMITTED'|'ABORTED' $StatusFilter
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListTransactionsRequest extends Request
@@ -16,7 +16,7 @@ class ListTransactionsRequest extends Request
      * @param array{
      *     CatalogId?: string,
      *     StatusFilter?: 'ALL'|'COMPLETED'|'ACTIVE'|'COMMITTED'|'ABORTED',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

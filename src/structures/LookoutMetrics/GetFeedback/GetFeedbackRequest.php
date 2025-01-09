@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AnomalyDetectorArn
  * @property Shapes\AnomalyGroupTimeSeries $AnomalyGroupTimeSeriesFeedback
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class GetFeedbackRequest extends Request
@@ -16,7 +16,7 @@ class GetFeedbackRequest extends Request
      * @param array{
      *     AnomalyDetectorArn: string,
      *     AnomalyGroupTimeSeriesFeedback: Shapes\AnomalyGroupTimeSeries,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $UUID
  * @property 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP' $StartingPosition
  * @property \Aws\Api\DateTimeResult $StartingPositionTimestamp
- * @property int $BatchSize
- * @property int $MaximumBatchingWindowInSeconds
- * @property int $ParallelizationFactor
+ * @property int<1, 10000> $BatchSize
+ * @property int<0, 300> $MaximumBatchingWindowInSeconds
+ * @property int<1, 10> $ParallelizationFactor
  * @property string $EventSourceArn
  * @property Shapes\FilterCriteria $FilterCriteria
  * @property string $FunctionArn
@@ -23,10 +23,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string> $Queues
  * @property list<Shapes\SourceAccessConfiguration> $SourceAccessConfigurations
  * @property Shapes\SelfManagedEventSource $SelfManagedEventSource
- * @property int $MaximumRecordAgeInSeconds
+ * @property int<-1, 604800> $MaximumRecordAgeInSeconds
  * @property bool $BisectBatchOnFunctionError
- * @property int $MaximumRetryAttempts
- * @property int $TumblingWindowInSeconds
+ * @property int<-1, 10000> $MaximumRetryAttempts
+ * @property int<0, 900> $TumblingWindowInSeconds
  * @property list<'ReportBatchItemFailures'> $FunctionResponseTypes
  * @property Shapes\AmazonManagedKafkaEventSourceConfig $AmazonManagedKafkaEventSourceConfig
  * @property Shapes\SelfManagedKafkaEventSourceConfig $SelfManagedKafkaEventSourceConfig

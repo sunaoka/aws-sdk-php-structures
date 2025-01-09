@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $farmId
  * @property string $aggregationId
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class GetSessionsStatisticsAggregationRequest extends Request
@@ -16,7 +16,7 @@ class GetSessionsStatisticsAggregationRequest extends Request
      * @param array{
      *     farmId: string,
      *     aggregationId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

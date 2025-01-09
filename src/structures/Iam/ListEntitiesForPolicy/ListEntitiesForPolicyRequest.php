@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $PathPrefix
  * @property 'PermissionsPolicy'|'PermissionsBoundary' $PolicyUsageFilter
  * @property string $Marker
- * @property int $MaxItems
+ * @property int<1, 1000> $MaxItems
  */
 class ListEntitiesForPolicyRequest extends Request
 {
@@ -21,7 +21,7 @@ class ListEntitiesForPolicyRequest extends Request
      *     PathPrefix?: string,
      *     PolicyUsageFilter?: 'PermissionsPolicy'|'PermissionsBoundary',
      *     Marker?: string,
-     *     MaxItems?: int
+     *     MaxItems?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

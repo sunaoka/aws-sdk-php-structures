@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'All Upfront'|'Partial Upfront'|'No Upfront'> $paymentOptions
  * @property 'EC2'|'Fargate'|'Lambda'|'SageMaker' $productType
  * @property list<'Compute'|'EC2Instance'|'SageMaker'> $planTypes
- * @property list<int> $durations
+ * @property list<int<0, max>> $durations
  * @property list<'CNY'|'USD'> $currencies
  * @property list<string> $descriptions
  * @property list<string> $serviceCodes
@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $operations
  * @property list<Shapes\SavingsPlanOfferingFilterElement> $filters
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<0, 1000> $maxResults
  */
 class DescribeSavingsPlansOfferingsRequest extends Request
 {
@@ -27,7 +27,7 @@ class DescribeSavingsPlansOfferingsRequest extends Request
      *     paymentOptions?: list<'All Upfront'|'Partial Upfront'|'No Upfront'>,
      *     productType?: 'EC2'|'Fargate'|'Lambda'|'SageMaker',
      *     planTypes?: list<'Compute'|'EC2Instance'|'SageMaker'>,
-     *     durations?: list<int>,
+     *     durations?: list<int<0, max>>,
      *     currencies?: list<'CNY'|'USD'>,
      *     descriptions?: list<string>,
      *     serviceCodes?: list<string>,
@@ -35,7 +35,7 @@ class DescribeSavingsPlansOfferingsRequest extends Request
      *     operations?: list<string>,
      *     filters?: list<Shapes\SavingsPlanOfferingFilterElement>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<0, 1000>
      * } $args
      */
     public function __construct(array $args = [])

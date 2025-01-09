@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\EventAccountFilter> $organizationEntityFilters
  * @property string $locale
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property list<Shapes\EntityAccountFilter> $organizationEntityAccountFilters
  */
 class DescribeAffectedEntitiesForOrganizationRequest extends Request
@@ -18,7 +18,7 @@ class DescribeAffectedEntitiesForOrganizationRequest extends Request
      *     organizationEntityFilters?: list<Shapes\EventAccountFilter>,
      *     locale?: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     organizationEntityAccountFilters?: list<Shapes\EntityAccountFilter>
      * } $args
      */

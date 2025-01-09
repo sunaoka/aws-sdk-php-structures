@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'ORGANIZATION'|'MEMBER' $detailLevel
  * @property Shapes\ListCisScansFilterCriteria $filterCriteria
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property 'STATUS'|'SCHEDULED_BY'|'SCAN_START_DATE'|'FAILED_CHECKS' $sortBy
  * @property 'ASC'|'DESC' $sortOrder
@@ -18,7 +18,7 @@ class ListCisScansRequest extends Request
      * @param array{
      *     detailLevel?: 'ORGANIZATION'|'MEMBER',
      *     filterCriteria?: Shapes\ListCisScansFilterCriteria,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     sortBy?: 'STATUS'|'SCHEDULED_BY'|'SCAN_START_DATE'|'FAILED_CHECKS',
      *     sortOrder?: 'ASC'|'DESC'

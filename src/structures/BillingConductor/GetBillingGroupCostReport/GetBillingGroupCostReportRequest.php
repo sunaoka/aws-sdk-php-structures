@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Arn
  * @property Shapes\BillingPeriodRange $BillingPeriodRange
  * @property list<'PRODUCT_NAME'|'BILLING_PERIOD'> $GroupBy
- * @property int $MaxResults
+ * @property int<200, 300> $MaxResults
  * @property string $NextToken
  */
 class GetBillingGroupCostReportRequest extends Request
@@ -18,7 +18,7 @@ class GetBillingGroupCostReportRequest extends Request
      *     Arn: string,
      *     BillingPeriodRange?: Shapes\BillingPeriodRange,
      *     GroupBy?: list<'PRODUCT_NAME'|'BILLING_PERIOD'>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<200, 300>,
      *     NextToken?: string
      * } $args
      */

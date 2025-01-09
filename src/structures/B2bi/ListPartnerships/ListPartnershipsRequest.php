@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $profileId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class ListPartnershipsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListPartnershipsRequest extends Request
      * @param array{
      *     profileId?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

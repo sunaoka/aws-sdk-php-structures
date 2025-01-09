@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Prefix
  * @property 'asc'|'dsc' $SortOrder
  * @property string $NextToken
- * @property int $Limit
+ * @property int<1, 100> $Limit
  */
 class DescribeDataSourcesRequest extends Request
 {
@@ -31,7 +31,7 @@ class DescribeDataSourcesRequest extends Request
      *     Prefix?: string,
      *     SortOrder?: 'asc'|'dsc',
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

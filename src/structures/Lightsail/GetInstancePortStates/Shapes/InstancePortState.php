@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetInstancePortStates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $fromPort
- * @property int $toPort
+ * @property int<-1, 65535> $fromPort
+ * @property int<-1, 65535> $toPort
  * @property 'tcp'|'all'|'udp'|'icmp'|'icmpv6' $protocol
  * @property 'open'|'closed' $state
  * @property list<string> $cidrs
@@ -17,8 +17,8 @@ class InstancePortState extends Shape
 {
     /**
      * @param array{
-     *     fromPort?: int,
-     *     toPort?: int,
+     *     fromPort?: int<-1, 65535>,
+     *     toPort?: int<-1, 65535>,
      *     protocol?: 'tcp'|'all'|'udp'|'icmp'|'icmpv6',
      *     state?: 'open'|'closed',
      *     cidrs?: list<string>,

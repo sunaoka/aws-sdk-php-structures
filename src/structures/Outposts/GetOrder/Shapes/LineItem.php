@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $CatalogItemId
  * @property string $LineItemId
- * @property int $Quantity
+ * @property int<1, max> $Quantity
  * @property 'PREPARING'|'BUILDING'|'SHIPPED'|'DELIVERED'|'INSTALLING'|'INSTALLED'|'ERROR'|'CANCELLED'|'REPLACED' $Status
  * @property ShipmentInformation $ShipmentInformation
  * @property list<LineItemAssetInformation> $AssetInformationList
@@ -20,7 +20,7 @@ class LineItem extends Shape
      * @param array{
      *     CatalogItemId?: string,
      *     LineItemId?: string,
-     *     Quantity?: int,
+     *     Quantity?: int<1, max>,
      *     Status?: 'PREPARING'|'BUILDING'|'SHIPPED'|'DELIVERED'|'INSTALLING'|'INSTALLED'|'ERROR'|'CANCELLED'|'REPLACED',
      *     ShipmentInformation?: ShipmentInformation,
      *     AssetInformationList?: list<LineItemAssetInformation>,

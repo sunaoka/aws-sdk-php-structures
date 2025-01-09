@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Firehose\CreateDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $StripeSizeBytes
- * @property int $BlockSizeBytes
- * @property int $RowIndexStride
+ * @property int<8388608, max> $StripeSizeBytes
+ * @property int<67108864, max> $BlockSizeBytes
+ * @property int<1000, max> $RowIndexStride
  * @property bool $EnablePadding
  * @property double $PaddingTolerance
  * @property 'NONE'|'ZLIB'|'SNAPPY' $Compression
@@ -20,9 +20,9 @@ class OrcSerDe extends Shape
 {
     /**
      * @param array{
-     *     StripeSizeBytes?: int,
-     *     BlockSizeBytes?: int,
-     *     RowIndexStride?: int,
+     *     StripeSizeBytes?: int<8388608, max>,
+     *     BlockSizeBytes?: int<67108864, max>,
+     *     RowIndexStride?: int<1000, max>,
      *     EnablePadding?: bool,
      *     PaddingTolerance?: double,
      *     Compression?: 'NONE'|'ZLIB'|'SNAPPY',

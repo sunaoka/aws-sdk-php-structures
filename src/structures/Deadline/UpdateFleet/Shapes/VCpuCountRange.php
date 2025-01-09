@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $min
- * @property int $max
+ * @property int<1, 10000> $min
+ * @property int<1, 10000> $max
  */
 class VCpuCountRange extends Shape
 {
     /**
      * @param array{
-     *     min: int,
-     *     max?: int
+     *     min: int<1, 10000>,
+     *     max?: int<1, 10000>
      * } $args
      */
     public function __construct(array $args)

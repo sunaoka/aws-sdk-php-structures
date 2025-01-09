@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GameServerGroupName
  * @property string $RoleArn
- * @property int $MinSize
- * @property int $MaxSize
+ * @property int<0, max> $MinSize
+ * @property int<1, max> $MaxSize
  * @property Shapes\LaunchTemplateSpecification $LaunchTemplate
  * @property list<Shapes\InstanceDefinition> $InstanceDefinitions
  * @property Shapes\GameServerGroupAutoScalingPolicy $AutoScalingPolicy
@@ -23,8 +23,8 @@ class CreateGameServerGroupRequest extends Request
      * @param array{
      *     GameServerGroupName: string,
      *     RoleArn: string,
-     *     MinSize: int,
-     *     MaxSize: int,
+     *     MinSize: int<0, max>,
+     *     MaxSize: int<1, max>,
      *     LaunchTemplate: Shapes\LaunchTemplateSpecification,
      *     InstanceDefinitions: list<Shapes\InstanceDefinition>,
      *     AutoScalingPolicy?: Shapes\GameServerGroupAutoScalingPolicy,

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataExchange\ListReceivedDataGrants;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 200> $MaxResults
  * @property string $NextToken
  * @property list<'PENDING_RECEIVER_ACCEPTANCE'|'ACCEPTED'> $AcceptanceState
  */
@@ -13,7 +13,7 @@ class ListReceivedDataGrantsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 200>,
      *     NextToken?: string,
      *     AcceptanceState?: list<'PENDING_RECEIVER_ACCEPTANCE'|'ACCEPTED'>
      * } $args

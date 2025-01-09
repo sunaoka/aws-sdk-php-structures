@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $intentName
  * @property string $intentPath
  * @property int $intentCount
- * @property int $intentLevel
+ * @property int<0, 100> $intentLevel
  * @property 'Inner'|'Exit' $nodeType
  */
 class AnalyticsIntentNodeSummary extends Shape
@@ -18,7 +18,7 @@ class AnalyticsIntentNodeSummary extends Shape
      *     intentName?: string,
      *     intentPath?: string,
      *     intentCount?: int,
-     *     intentLevel?: int,
+     *     intentLevel?: int<0, 100>,
      *     nodeType?: 'Inner'|'Exit'
      * } $args
      */

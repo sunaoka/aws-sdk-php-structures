@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $powerId
  * @property 'PENDING'|'READY'|'RUNNING'|'UPDATING'|'DELETING'|'DISABLED'|'DEPLOYING' $state
  * @property ContainerServiceStateDetail $stateDetail
- * @property int $scale
+ * @property int<1, 20> $scale
  * @property ContainerServiceDeployment $currentDeployment
  * @property ContainerServiceDeployment $nextDeployment
  * @property bool $isDisabled
@@ -39,7 +39,7 @@ class ContainerService extends Shape
      *     powerId?: string,
      *     state?: 'PENDING'|'READY'|'RUNNING'|'UPDATING'|'DELETING'|'DISABLED'|'DEPLOYING',
      *     stateDetail?: ContainerServiceStateDetail,
-     *     scale?: int,
+     *     scale?: int<1, 20>,
      *     currentDeployment?: ContainerServiceDeployment,
      *     nextDeployment?: ContainerServiceDeployment,
      *     isDisabled?: bool,

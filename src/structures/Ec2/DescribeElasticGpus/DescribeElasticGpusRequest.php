@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $ElasticGpuIds
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<10, 1000> $MaxResults
  * @property string $NextToken
  */
 class DescribeElasticGpusRequest extends Request
@@ -18,7 +18,7 @@ class DescribeElasticGpusRequest extends Request
      *     ElasticGpuIds?: list<string>,
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<10, 1000>,
      *     NextToken?: string
      * } $args
      */

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $Aggregates
- * @property int $TotalConstituents
+ * @property int<1, 200> $TotalConstituents
  */
 class AggregateConfiguration extends Shape
 {
     /**
      * @param array{
      *     Aggregates?: list<string>,
-     *     TotalConstituents?: int
+     *     TotalConstituents?: int<1, 200>
      * } $args
      */
     public function __construct(array $args = [])

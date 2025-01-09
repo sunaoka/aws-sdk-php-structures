@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $ByCreationBefore
  * @property \Aws\Api\DateTimeResult $ByCreationAfter
  * @property string $ByStatus
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListReportJobsRequest extends Request
@@ -20,7 +20,7 @@ class ListReportJobsRequest extends Request
      *     ByCreationBefore?: \Aws\Api\DateTimeResult,
      *     ByCreationAfter?: \Aws\Api\DateTimeResult,
      *     ByStatus?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

@@ -22,8 +22,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $ApplyOnlyAtCronInterval
  * @property list<string> $CalendarNames
  * @property list<Shapes\TargetLocation> $TargetLocations
- * @property int $ScheduleOffset
- * @property int $Duration
+ * @property int<1, 6> $ScheduleOffset
+ * @property int<1, 24> $Duration
  * @property list<array<string, list<string>>> $TargetMaps
  * @property Shapes\AlarmConfiguration $AlarmConfiguration
  */
@@ -48,8 +48,8 @@ class UpdateAssociationRequest extends Request
      *     ApplyOnlyAtCronInterval?: bool,
      *     CalendarNames?: list<string>,
      *     TargetLocations?: list<Shapes\TargetLocation>,
-     *     ScheduleOffset?: int,
-     *     Duration?: int,
+     *     ScheduleOffset?: int<1, 6>,
+     *     Duration?: int<1, 24>,
      *     TargetMaps?: list<array<string, list<string>>>,
      *     AlarmConfiguration?: Shapes\AlarmConfiguration
      * } $args

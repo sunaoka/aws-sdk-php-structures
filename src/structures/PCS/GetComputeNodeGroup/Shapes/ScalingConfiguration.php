@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PCS\GetComputeNodeGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $minInstanceCount
- * @property int $maxInstanceCount
+ * @property int<0, max> $minInstanceCount
+ * @property int<0, max> $maxInstanceCount
  */
 class ScalingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     minInstanceCount: int,
-     *     maxInstanceCount: int
+     *     minInstanceCount: int<0, max>,
+     *     maxInstanceCount: int<0, max>
      * } $args
      */
     public function __construct(array $args)

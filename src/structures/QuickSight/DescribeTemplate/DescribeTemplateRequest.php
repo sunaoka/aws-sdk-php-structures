@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $TemplateId
- * @property int $VersionNumber
+ * @property int<1, max> $VersionNumber
  * @property string $AliasName
  */
 class DescribeTemplateRequest extends Request
@@ -16,7 +16,7 @@ class DescribeTemplateRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     TemplateId: string,
-     *     VersionNumber?: int,
+     *     VersionNumber?: int<1, max>,
      *     AliasName?: string
      * } $args
      */

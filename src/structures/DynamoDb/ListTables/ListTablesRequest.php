@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ExclusiveStartTableName
- * @property int $Limit
+ * @property int<1, 100> $Limit
  */
 class ListTablesRequest extends Request
 {
     /**
      * @param array{
      *     ExclusiveStartTableName?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

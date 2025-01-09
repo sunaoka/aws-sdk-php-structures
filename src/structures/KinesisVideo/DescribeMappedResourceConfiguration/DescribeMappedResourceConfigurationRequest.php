@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $StreamName
  * @property string $StreamARN
- * @property int $MaxResults
+ * @property int<1, 1> $MaxResults
  * @property string $NextToken
  */
 class DescribeMappedResourceConfigurationRequest extends Request
@@ -16,7 +16,7 @@ class DescribeMappedResourceConfigurationRequest extends Request
      * @param array{
      *     StreamName?: string,
      *     StreamARN?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1>,
      *     NextToken?: string
      * } $args
      */

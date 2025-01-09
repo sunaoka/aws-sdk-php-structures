@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $StreamName
  * @property string $ExclusiveStartTagKey
- * @property int $Limit
+ * @property int<1, 50> $Limit
  * @property string $StreamARN
  */
 class ListTagsForStreamRequest extends Request
@@ -16,7 +16,7 @@ class ListTagsForStreamRequest extends Request
      * @param array{
      *     StreamName?: string,
      *     ExclusiveStartTagKey?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, 50>,
      *     StreamARN?: string
      * } $args
      */

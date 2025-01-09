@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property string $PrefixListId
  * @property int $TargetVersion
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class GetManagedPrefixListEntriesRequest extends Request
@@ -18,7 +18,7 @@ class GetManagedPrefixListEntriesRequest extends Request
      *     DryRun?: bool,
      *     PrefixListId: string,
      *     TargetVersion?: int,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

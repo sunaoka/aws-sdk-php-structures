@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $RuleGroupId
  * @property string $NextMarker
- * @property int $Limit
+ * @property int<0, 100> $Limit
  */
 class ListActivatedRulesInRuleGroupRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListActivatedRulesInRuleGroupRequest extends Request
      * @param array{
      *     RuleGroupId?: string,
      *     NextMarker?: string,
-     *     Limit?: int
+     *     Limit?: int<0, 100>
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserId
  * @property string $DeviceId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListMobileDeviceAccessOverridesRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListMobileDeviceAccessOverridesRequest extends Request
      *     UserId?: string,
      *     DeviceId?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

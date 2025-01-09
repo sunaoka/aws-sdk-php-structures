@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Value
+ * @property int<0, max> $Value
  */
 class BinCountOptions extends Shape
 {
     /**
-     * @param array{Value?: int} $args
+     * @param array{Value?: int<0, max>} $args
      */
     public function __construct(array $args = [])
     {

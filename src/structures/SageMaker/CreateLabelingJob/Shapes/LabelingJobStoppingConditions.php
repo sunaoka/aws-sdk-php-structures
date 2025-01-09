@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateLabelingJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxHumanLabeledObjectCount
- * @property int $MaxPercentageOfInputDatasetLabeled
+ * @property int<1, max> $MaxHumanLabeledObjectCount
+ * @property int<1, 100> $MaxPercentageOfInputDatasetLabeled
  */
 class LabelingJobStoppingConditions extends Shape
 {
     /**
      * @param array{
-     *     MaxHumanLabeledObjectCount?: int,
-     *     MaxPercentageOfInputDatasetLabeled?: int
+     *     MaxHumanLabeledObjectCount?: int<1, max>,
+     *     MaxPercentageOfInputDatasetLabeled?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

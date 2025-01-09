@@ -9,12 +9,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'APPLE_PRORES_422'|'APPLE_PRORES_422_HQ'|'APPLE_PRORES_422_LT'|'APPLE_PRORES_422_PROXY'|'APPLE_PRORES_4444'|'APPLE_PRORES_4444_XQ' $CodecProfile
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
  * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int $FramerateDenominator
- * @property int $FramerateNumerator
+ * @property int<1, 2147483647> $FramerateDenominator
+ * @property int<1, 2147483647> $FramerateNumerator
  * @property 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD' $InterlaceMode
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $ParControl
- * @property int $ParDenominator
- * @property int $ParNumerator
+ * @property int<1, 2147483647> $ParDenominator
+ * @property int<1, 2147483647> $ParNumerator
  * @property 'INTERLACED'|'INTERLACED_OPTIMIZE' $ScanTypeConversionMode
  * @property 'DISABLED'|'ENABLED' $SlowPal
  * @property 'NONE'|'HARD' $Telecine
@@ -27,12 +27,12 @@ class ProresSettings extends Shape
      *     CodecProfile?: 'APPLE_PRORES_422'|'APPLE_PRORES_422_HQ'|'APPLE_PRORES_422_LT'|'APPLE_PRORES_422_PROXY'|'APPLE_PRORES_4444'|'APPLE_PRORES_4444_XQ',
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
      *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int,
-     *     FramerateNumerator?: int,
+     *     FramerateDenominator?: int<1, 2147483647>,
+     *     FramerateNumerator?: int<1, 2147483647>,
      *     InterlaceMode?: 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD',
      *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
-     *     ParDenominator?: int,
-     *     ParNumerator?: int,
+     *     ParDenominator?: int<1, 2147483647>,
+     *     ParNumerator?: int<1, 2147483647>,
      *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE',
      *     SlowPal?: 'DISABLED'|'ENABLED',
      *     Telecine?: 'NONE'|'HARD'

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property 'NONE'|'PASSTHROUGH'|'RESPOND' $RespondToAfd
  * @property 'DEFAULT'|'STRETCH_TO_OUTPUT' $ScalingBehavior
- * @property int $Sharpness
+ * @property int<0, 100> $Sharpness
  * @property int $Width
  */
 class VideoDescription extends Shape
@@ -22,7 +22,7 @@ class VideoDescription extends Shape
      *     Name: string,
      *     RespondToAfd?: 'NONE'|'PASSTHROUGH'|'RESPOND',
      *     ScalingBehavior?: 'DEFAULT'|'STRETCH_TO_OUTPUT',
-     *     Sharpness?: int,
+     *     Sharpness?: int<0, 100>,
      *     Width?: int
      * } $args
      */

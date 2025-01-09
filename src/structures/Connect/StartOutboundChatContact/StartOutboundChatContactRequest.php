@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, Shapes\SegmentAttributeValue> $SegmentAttributes
  * @property array<string, string> $Attributes
  * @property string $ContactFlowId
- * @property int $ChatDurationInMinutes
+ * @property int<60, 10080> $ChatDurationInMinutes
  * @property Shapes\ParticipantDetails $ParticipantDetails
  * @property Shapes\ChatMessage $InitialSystemMessage
  * @property string $RelatedContactId
@@ -28,7 +28,7 @@ class StartOutboundChatContactRequest extends Request
      *     SegmentAttributes: array<string, Shapes\SegmentAttributeValue>,
      *     Attributes?: array<string, string>,
      *     ContactFlowId: string,
-     *     ChatDurationInMinutes?: int,
+     *     ChatDurationInMinutes?: int<60, 10080>,
      *     ParticipantDetails?: Shapes\ParticipantDetails,
      *     InitialSystemMessage?: Shapes\ChatMessage,
      *     RelatedContactId?: string,

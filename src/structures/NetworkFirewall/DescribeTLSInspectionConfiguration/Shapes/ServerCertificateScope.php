@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Address> $Destinations
  * @property list<PortRange> $SourcePorts
  * @property list<PortRange> $DestinationPorts
- * @property list<int> $Protocols
+ * @property list<int<0, 255>> $Protocols
  */
 class ServerCertificateScope extends Shape
 {
@@ -19,7 +19,7 @@ class ServerCertificateScope extends Shape
      *     Destinations?: list<Address>,
      *     SourcePorts?: list<PortRange>,
      *     DestinationPorts?: list<PortRange>,
-     *     Protocols?: list<int>
+     *     Protocols?: list<int<0, 255>>
      * } $args
      */
     public function __construct(array $args = [])

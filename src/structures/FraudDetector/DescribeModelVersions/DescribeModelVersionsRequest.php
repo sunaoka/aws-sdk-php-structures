@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $modelVersionNumber
  * @property 'ONLINE_FRAUD_INSIGHTS'|'TRANSACTION_FRAUD_INSIGHTS'|'ACCOUNT_TAKEOVER_INSIGHTS' $modelType
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 10> $maxResults
  */
 class DescribeModelVersionsRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeModelVersionsRequest extends Request
      *     modelVersionNumber?: string,
      *     modelType?: 'ONLINE_FRAUD_INSIGHTS'|'TRANSACTION_FRAUD_INSIGHTS'|'ACCOUNT_TAKEOVER_INSIGHTS',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 10>
      * } $args
      */
     public function __construct(array $args = [])

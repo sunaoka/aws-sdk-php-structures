@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ALWAYS'|'NEVER' $DisplayFragmentTimestamp
  * @property 'ALWAYS'|'NEVER' $DisplayFragmentNumber
  * @property Shapes\DASHFragmentSelector $DASHFragmentSelector
- * @property int $Expires
- * @property int $MaxManifestFragmentResults
+ * @property int<300, 43200> $Expires
+ * @property int<1, 5000> $MaxManifestFragmentResults
  */
 class GetDASHStreamingSessionURLRequest extends Request
 {
@@ -24,8 +24,8 @@ class GetDASHStreamingSessionURLRequest extends Request
      *     DisplayFragmentTimestamp?: 'ALWAYS'|'NEVER',
      *     DisplayFragmentNumber?: 'ALWAYS'|'NEVER',
      *     DASHFragmentSelector?: Shapes\DASHFragmentSelector,
-     *     Expires?: int,
-     *     MaxManifestFragmentResults?: int
+     *     Expires?: int<300, 43200>,
+     *     MaxManifestFragmentResults?: int<1, 5000>
      * } $args
      */
     public function __construct(array $args = [])

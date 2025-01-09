@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\DirectoryService\GetSnapshotLimits\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ManualSnapshotsLimit
- * @property int $ManualSnapshotsCurrentCount
+ * @property int<0, max> $ManualSnapshotsLimit
+ * @property int<0, max> $ManualSnapshotsCurrentCount
  * @property bool $ManualSnapshotsLimitReached
  */
 class SnapshotLimits extends Shape
 {
     /**
      * @param array{
-     *     ManualSnapshotsLimit?: int,
-     *     ManualSnapshotsCurrentCount?: int,
+     *     ManualSnapshotsLimit?: int<0, max>,
+     *     ManualSnapshotsCurrentCount?: int<0, max>,
      *     ManualSnapshotsLimitReached?: bool
      * } $args
      */

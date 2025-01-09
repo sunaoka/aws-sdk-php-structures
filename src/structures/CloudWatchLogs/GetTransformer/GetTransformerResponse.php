@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $logGroupIdentifier
- * @property int $creationTime
- * @property int $lastModifiedTime
+ * @property int<0, max> $creationTime
+ * @property int<0, max> $lastModifiedTime
  * @property list<Shapes\Processor> $transformerConfig
  */
 class GetTransformerResponse extends Response

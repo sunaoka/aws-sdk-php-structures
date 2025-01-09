@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nameContains
  */
 class GetSlotTypesRequest extends Request
@@ -14,7 +14,7 @@ class GetSlotTypesRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nameContains?: string
      * } $args
      */

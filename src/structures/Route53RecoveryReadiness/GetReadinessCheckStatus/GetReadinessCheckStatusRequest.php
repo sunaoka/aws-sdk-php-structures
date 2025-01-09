@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryReadiness\GetReadinessCheckStatu
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  * @property string $ReadinessCheckName
  */
@@ -13,7 +13,7 @@ class GetReadinessCheckStatusRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string,
      *     ReadinessCheckName: string
      * } $args

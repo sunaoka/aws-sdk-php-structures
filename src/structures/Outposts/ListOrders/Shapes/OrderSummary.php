@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $OrderId
  * @property 'OUTPOST'|'REPLACEMENT' $OrderType
  * @property 'RECEIVED'|'PENDING'|'PROCESSING'|'INSTALLING'|'FULFILLED'|'CANCELLED'|'PREPARING'|'IN_PROGRESS'|'DELIVERED'|'COMPLETED'|'ERROR' $Status
- * @property array<'PREPARING'|'BUILDING'|'SHIPPED'|'DELIVERED'|'INSTALLING'|'INSTALLED'|'ERROR'|'CANCELLED'|'REPLACED', int> $LineItemCountsByStatus
+ * @property array<'PREPARING'|'BUILDING'|'SHIPPED'|'DELIVERED'|'INSTALLING'|'INSTALLED'|'ERROR'|'CANCELLED'|'REPLACED', int<1, max>> $LineItemCountsByStatus
  * @property \Aws\Api\DateTimeResult $OrderSubmissionDate
  * @property \Aws\Api\DateTimeResult $OrderFulfilledDate
  */
@@ -21,7 +21,7 @@ class OrderSummary extends Shape
      *     OrderId?: string,
      *     OrderType?: 'OUTPOST'|'REPLACEMENT',
      *     Status?: 'RECEIVED'|'PENDING'|'PROCESSING'|'INSTALLING'|'FULFILLED'|'CANCELLED'|'PREPARING'|'IN_PROGRESS'|'DELIVERED'|'COMPLETED'|'ERROR',
-     *     LineItemCountsByStatus?: array<'PREPARING'|'BUILDING'|'SHIPPED'|'DELIVERED'|'INSTALLING'|'INSTALLED'|'ERROR'|'CANCELLED'|'REPLACED', int>,
+     *     LineItemCountsByStatus?: array<'PREPARING'|'BUILDING'|'SHIPPED'|'DELIVERED'|'INSTALLING'|'INSTALLED'|'ERROR'|'CANCELLED'|'REPLACED', int<1, max>>,
      *     OrderSubmissionDate?: \Aws\Api\DateTimeResult,
      *     OrderFulfilledDate?: \Aws\Api\DateTimeResult
      * } $args

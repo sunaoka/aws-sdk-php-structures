@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property list<Shapes\Block> $Blocks
  * @property \Aws\Api\DateTimeResult $ExpiryTime
- * @property int $VolumeSize
+ * @property int<1, max> $VolumeSize
  * @property int $BlockSize
  * @property string $NextToken
  */

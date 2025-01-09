@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property 'REBOOT_NODE'|'RESTART_SEARCH_PROCESS'|'RESTART_DASHBOARD' $Action
  * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'TIMED_OUT' $Status
- * @property int $MaxResults
+ * @property int<min, 100> $MaxResults
  * @property string $NextToken
  */
 class ListDomainMaintenancesRequest extends Request
@@ -18,7 +18,7 @@ class ListDomainMaintenancesRequest extends Request
      *     DomainName: string,
      *     Action?: 'REBOOT_NODE'|'RESTART_SEARCH_PROCESS'|'RESTART_DASHBOARD',
      *     Status?: 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'TIMED_OUT',
-     *     MaxResults?: int,
+     *     MaxResults?: int<min, 100>,
      *     NextToken?: string
      * } $args
      */

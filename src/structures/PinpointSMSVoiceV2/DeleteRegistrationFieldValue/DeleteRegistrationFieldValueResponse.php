@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $RegistrationArn
  * @property string $RegistrationId
- * @property int $VersionNumber
+ * @property int<1, 100000> $VersionNumber
  * @property string $FieldPath
  * @property list<string> $SelectChoices
  * @property string $TextValue

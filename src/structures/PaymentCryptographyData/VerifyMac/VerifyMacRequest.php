@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $MessageData
  * @property string $Mac
  * @property Shapes\MacAttributes $VerificationAttributes
- * @property int $MacLength
+ * @property int<4, 16> $MacLength
  */
 class VerifyMacRequest extends Request
 {
@@ -19,7 +19,7 @@ class VerifyMacRequest extends Request
      *     MessageData: string,
      *     Mac: string,
      *     VerificationAttributes: Shapes\MacAttributes,
-     *     MacLength?: int
+     *     MacLength?: int<4, 16>
      * } $args
      */
     public function __construct(array $args)

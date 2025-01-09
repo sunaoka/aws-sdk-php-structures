@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'Completed'|'Pending'|'Failed'|'Deleting'> $States
  * @property list<string> $RepositoryNames
  * @property 'PullRequest'|'RepositoryAnalysis' $Type
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListCodeReviewsRequest extends Request
@@ -20,7 +20,7 @@ class ListCodeReviewsRequest extends Request
      *     States?: list<'Completed'|'Pending'|'Failed'|'Deleting'>,
      *     RepositoryNames?: list<string>,
      *     Type: 'PullRequest'|'RepositoryAnalysis',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

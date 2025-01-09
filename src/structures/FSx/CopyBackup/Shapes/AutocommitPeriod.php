@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'MINUTES'|'HOURS'|'DAYS'|'MONTHS'|'YEARS'|'NONE' $Type
- * @property int $Value
+ * @property int<1, 65535> $Value
  */
 class AutocommitPeriod extends Shape
 {
     /**
      * @param array{
      *     Type: 'MINUTES'|'HOURS'|'DAYS'|'MONTHS'|'YEARS'|'NONE',
-     *     Value?: int
+     *     Value?: int<1, 65535>
      * } $args
      */
     public function __construct(array $args)

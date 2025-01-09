@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property int $Priority
+ * @property int<0, max> $Priority
  * @property Statement $Statement
  * @property RuleAction $Action
  * @property OverrideAction $OverrideAction
@@ -20,7 +20,7 @@ class Rule extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     Priority: int,
+     *     Priority: int<0, max>,
      *     Statement: Statement,
      *     Action?: RuleAction,
      *     OverrideAction?: OverrideAction,

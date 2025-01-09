@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $EffectiveStart
  * @property string $EffectiveEnd
- * @property int $NumberOfRules
+ * @property int<0, max> $NumberOfRules
  * @property list<CostCategoryProcessingStatus> $ProcessingStatus
  * @property list<string> $Values
  * @property string $DefaultValue
@@ -22,7 +22,7 @@ class CostCategoryReference extends Shape
      *     Name?: string,
      *     EffectiveStart?: string,
      *     EffectiveEnd?: string,
-     *     NumberOfRules?: int,
+     *     NumberOfRules?: int<0, max>,
      *     ProcessingStatus?: list<CostCategoryProcessingStatus>,
      *     Values?: list<string>,
      *     DefaultValue?: string

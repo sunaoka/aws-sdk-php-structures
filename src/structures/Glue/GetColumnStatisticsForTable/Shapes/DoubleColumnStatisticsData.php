@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property double $MinimumValue
  * @property double $MaximumValue
- * @property int $NumberOfNulls
- * @property int $NumberOfDistinctValues
+ * @property int<0, max> $NumberOfNulls
+ * @property int<0, max> $NumberOfDistinctValues
  */
 class DoubleColumnStatisticsData extends Shape
 {
@@ -16,8 +16,8 @@ class DoubleColumnStatisticsData extends Shape
      * @param array{
      *     MinimumValue?: double,
      *     MaximumValue?: double,
-     *     NumberOfNulls: int,
-     *     NumberOfDistinctValues: int
+     *     NumberOfNulls: int<0, max>,
+     *     NumberOfDistinctValues: int<0, max>
      * } $args
      */
     public function __construct(array $args)

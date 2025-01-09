@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\EntityResolution\ListSchemaMappings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<min, 25> $maxResults
  * @property string $nextToken
  */
 class ListSchemaMappingsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<min, 25>,
      *     nextToken?: string
      * } $args
      */

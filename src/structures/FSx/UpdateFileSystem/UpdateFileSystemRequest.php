@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FileSystemId
  * @property string $ClientRequestToken
- * @property int $StorageCapacity
+ * @property int<0, 2147483647> $StorageCapacity
  * @property Shapes\UpdateFileSystemWindowsConfiguration $WindowsConfiguration
  * @property Shapes\UpdateFileSystemLustreConfiguration $LustreConfiguration
  * @property Shapes\UpdateFileSystemOntapConfiguration $OntapConfiguration
@@ -20,7 +20,7 @@ class UpdateFileSystemRequest extends Request
      * @param array{
      *     FileSystemId: string,
      *     ClientRequestToken?: string,
-     *     StorageCapacity?: int,
+     *     StorageCapacity?: int<0, 2147483647>,
      *     WindowsConfiguration?: Shapes\UpdateFileSystemWindowsConfiguration,
      *     LustreConfiguration?: Shapes\UpdateFileSystemLustreConfiguration,
      *     OntapConfiguration?: Shapes\UpdateFileSystemOntapConfiguration,

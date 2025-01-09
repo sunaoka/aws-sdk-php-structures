@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $SecretIdList
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<1, 20> $MaxResults
  * @property string $NextToken
  */
 class BatchGetSecretValueRequest extends Request
@@ -16,7 +16,7 @@ class BatchGetSecretValueRequest extends Request
      * @param array{
      *     SecretIdList?: list<string>,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 20>,
      *     NextToken?: string
      * } $args
      */

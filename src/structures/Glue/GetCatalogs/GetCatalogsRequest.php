@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ParentCatalogId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property bool $Recursive
  * @property bool $IncludeRoot
  */
@@ -17,7 +17,7 @@ class GetCatalogsRequest extends Request
      * @param array{
      *     ParentCatalogId?: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     Recursive?: bool,
      *     IncludeRoot?: bool
      * } $args

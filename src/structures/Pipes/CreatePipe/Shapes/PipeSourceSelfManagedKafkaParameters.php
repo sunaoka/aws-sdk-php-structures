@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TopicName
  * @property 'TRIM_HORIZON'|'LATEST' $StartingPosition
  * @property list<string> $AdditionalBootstrapServers
- * @property int $BatchSize
- * @property int $MaximumBatchingWindowInSeconds
+ * @property int<1, 10000> $BatchSize
+ * @property int<0, 300> $MaximumBatchingWindowInSeconds
  * @property string $ConsumerGroupID
  * @property SelfManagedKafkaAccessConfigurationCredentials $Credentials
  * @property string $ServerRootCaCertificate
@@ -22,8 +22,8 @@ class PipeSourceSelfManagedKafkaParameters extends Shape
      *     TopicName: string,
      *     StartingPosition?: 'TRIM_HORIZON'|'LATEST',
      *     AdditionalBootstrapServers?: list<string>,
-     *     BatchSize?: int,
-     *     MaximumBatchingWindowInSeconds?: int,
+     *     BatchSize?: int<1, 10000>,
+     *     MaximumBatchingWindowInSeconds?: int<0, 300>,
      *     ConsumerGroupID?: string,
      *     Credentials?: SelfManagedKafkaAccessConfigurationCredentials,
      *     ServerRootCaCertificate?: string,

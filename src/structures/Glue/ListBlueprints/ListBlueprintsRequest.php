@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 25> $MaxResults
  * @property array<string, string> $Tags
  */
 class ListBlueprintsRequest extends Request
@@ -14,7 +14,7 @@ class ListBlueprintsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 25>,
      *     Tags?: array<string, string>
      * } $args
      */

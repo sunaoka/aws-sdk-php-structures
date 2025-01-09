@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maxRecentSessions
+ * @property int<1, max> $maxRecentSessions
  */
 class SessionSummaryConfiguration extends Shape
 {
     /**
-     * @param array{maxRecentSessions?: int} $args
+     * @param array{maxRecentSessions?: int<1, max>} $args
      */
     public function __construct(array $args = [])
     {

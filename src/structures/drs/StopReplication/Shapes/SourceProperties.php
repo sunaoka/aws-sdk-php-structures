@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $lastUpdatedDateTime
  * @property list<NetworkInterface> $networkInterfaces
  * @property OS $os
- * @property int $ramBytes
+ * @property int<0, max> $ramBytes
  * @property string $recommendedInstanceType
  * @property bool $supportsNitroInstances
  */
@@ -25,7 +25,7 @@ class SourceProperties extends Shape
      *     lastUpdatedDateTime?: string,
      *     networkInterfaces?: list<NetworkInterface>,
      *     os?: OS,
-     *     ramBytes?: int,
+     *     ramBytes?: int<0, max>,
      *     recommendedInstanceType?: string,
      *     supportsNitroInstances?: bool
      * } $args

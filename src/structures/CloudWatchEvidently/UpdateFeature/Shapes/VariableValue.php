@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property bool $boolValue
  * @property double $doubleValue
- * @property int $longValue
+ * @property int<-9007199254740991, 9007199254740991> $longValue
  * @property string $stringValue
  */
 class VariableValue extends Shape
@@ -16,7 +16,7 @@ class VariableValue extends Shape
      * @param array{
      *     boolValue?: bool,
      *     doubleValue?: double,
-     *     longValue?: int,
+     *     longValue?: int<-9007199254740991, 9007199254740991>,
      *     stringValue?: string
      * } $args
      */

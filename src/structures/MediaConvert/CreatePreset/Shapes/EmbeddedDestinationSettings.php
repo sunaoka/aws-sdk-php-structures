@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreatePreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Destination608ChannelNumber
- * @property int $Destination708ServiceNumber
+ * @property int<1, 4> $Destination608ChannelNumber
+ * @property int<1, 6> $Destination708ServiceNumber
  */
 class EmbeddedDestinationSettings extends Shape
 {
     /**
      * @param array{
-     *     Destination608ChannelNumber?: int,
-     *     Destination708ServiceNumber?: int
+     *     Destination608ChannelNumber?: int<1, 4>,
+     *     Destination708ServiceNumber?: int<1, 6>
      * } $args
      */
     public function __construct(array $args = [])

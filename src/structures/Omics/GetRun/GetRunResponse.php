@@ -17,11 +17,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $roleArn
  * @property string $name
  * @property string $runGroupId
- * @property int $priority
+ * @property int<0, 100000> $priority
  * @property string $definition
  * @property string $digest
  * @property Shapes\RunParameters $parameters
- * @property int $storageCapacity
+ * @property int<0, 100000> $storageCapacity
  * @property string $outputUri
  * @property 'OFF'|'FATAL'|'ERROR'|'ALL' $logLevel
  * @property array<string, string> $resourceDigests

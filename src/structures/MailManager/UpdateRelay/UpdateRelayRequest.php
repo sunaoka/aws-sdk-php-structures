@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RelayId
  * @property string $RelayName
  * @property string $ServerName
- * @property int $ServerPort
+ * @property int<1, 65535> $ServerPort
  */
 class UpdateRelayRequest extends Request
 {
@@ -19,7 +19,7 @@ class UpdateRelayRequest extends Request
      *     RelayId: string,
      *     RelayName?: string,
      *     ServerName?: string,
-     *     ServerPort?: int
+     *     ServerPort?: int<1, 65535>
      * } $args
      */
     public function __construct(array $args)

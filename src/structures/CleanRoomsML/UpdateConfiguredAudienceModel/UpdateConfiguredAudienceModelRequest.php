@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ConfiguredAudienceModelOutputConfig $outputConfig
  * @property string $audienceModelArn
  * @property list<'ALL'|'NONE'> $sharedAudienceMetrics
- * @property int $minMatchingSeedSize
+ * @property int<25, 500000> $minMatchingSeedSize
  * @property Shapes\AudienceSizeConfig $audienceSizeConfig
  * @property string $description
  */
@@ -21,7 +21,7 @@ class UpdateConfiguredAudienceModelRequest extends Request
      *     outputConfig?: Shapes\ConfiguredAudienceModelOutputConfig,
      *     audienceModelArn?: string,
      *     sharedAudienceMetrics?: list<'ALL'|'NONE'>,
-     *     minMatchingSeedSize?: int,
+     *     minMatchingSeedSize?: int<25, 500000>,
      *     audienceSizeConfig?: Shapes\AudienceSizeConfig,
      *     description?: string
      * } $args

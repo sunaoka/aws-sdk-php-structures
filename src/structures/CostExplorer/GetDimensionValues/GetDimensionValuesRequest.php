@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Expression $Filter
  * @property list<Shapes\SortDefinition> $SortBy
  * @property string $BillingViewArn
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $NextPageToken
  */
 class GetDimensionValuesRequest extends Request
@@ -26,7 +26,7 @@ class GetDimensionValuesRequest extends Request
      *     Filter?: Shapes\Expression,
      *     SortBy?: list<Shapes\SortDefinition>,
      *     BillingViewArn?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     NextPageToken?: string
      * } $args
      */

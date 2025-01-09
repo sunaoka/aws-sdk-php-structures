@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DataSourceId
  * @property string $GroupId
  * @property Shapes\GroupMembers $GroupMembers
- * @property int $OrderingId
+ * @property int<0, 32535158400000> $OrderingId
  * @property string $RoleArn
  */
 class PutPrincipalMappingRequest extends Request
@@ -20,7 +20,7 @@ class PutPrincipalMappingRequest extends Request
      *     DataSourceId?: string,
      *     GroupId: string,
      *     GroupMembers: Shapes\GroupMembers,
-     *     OrderingId?: int,
+     *     OrderingId?: int<0, 32535158400000>,
      *     RoleArn?: string
      * } $args
      */

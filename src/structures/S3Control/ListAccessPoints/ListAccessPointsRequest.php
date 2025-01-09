@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $Bucket
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 1000> $MaxResults
  */
 class ListAccessPointsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListAccessPointsRequest extends Request
      *     AccountId: string,
      *     Bucket?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<0, 1000>
      * } $args
      */
     public function __construct(array $args)

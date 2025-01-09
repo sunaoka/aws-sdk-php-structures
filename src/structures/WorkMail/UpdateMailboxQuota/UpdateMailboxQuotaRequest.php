@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $OrganizationId
  * @property string $UserId
- * @property int $MailboxQuota
+ * @property int<1, max> $MailboxQuota
  */
 class UpdateMailboxQuotaRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateMailboxQuotaRequest extends Request
      * @param array{
      *     OrganizationId: string,
      *     UserId: string,
-     *     MailboxQuota: int
+     *     MailboxQuota: int<1, max>
      * } $args
      */
     public function __construct(array $args)

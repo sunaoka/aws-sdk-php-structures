@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $GeneratedFraudsterId
- * @property int $RiskScore
+ * @property int<0, 100> $RiskScore
  */
 class KnownFraudsterRisk extends Shape
 {
     /**
      * @param array{
      *     GeneratedFraudsterId?: string,
-     *     RiskScore: int
+     *     RiskScore: int<0, 100>
      * } $args
      */
     public function __construct(array $args)

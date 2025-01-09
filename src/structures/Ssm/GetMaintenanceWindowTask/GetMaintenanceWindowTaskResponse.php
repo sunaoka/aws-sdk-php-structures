@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA' $TaskType
  * @property array<string, Shapes\MaintenanceWindowTaskParameterValueExpression> $TaskParameters
  * @property Shapes\MaintenanceWindowTaskInvocationParameters $TaskInvocationParameters
- * @property int $Priority
+ * @property int<0, max> $Priority
  * @property string $MaxConcurrency
  * @property string $MaxErrors
  * @property Shapes\LoggingInfo $LoggingInfo

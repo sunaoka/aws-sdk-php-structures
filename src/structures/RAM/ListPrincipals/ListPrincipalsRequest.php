@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $resourceType
  * @property list<string> $resourceShareArns
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 500> $maxResults
  */
 class ListPrincipalsRequest extends Request
 {
@@ -23,7 +23,7 @@ class ListPrincipalsRequest extends Request
      *     resourceType?: string,
      *     resourceShareArns?: list<string>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 500>
      * } $args
      */
     public function __construct(array $args)

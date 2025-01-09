@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Host
- * @property int $Port
+ * @property int<0, 65535> $Port
  * @property string $Database
  * @property string $ClusterId
  * @property RedshiftIAMParameters $IAMParameters
@@ -17,7 +17,7 @@ class RedshiftParameters extends Shape
     /**
      * @param array{
      *     Host?: string,
-     *     Port?: int,
+     *     Port?: int<0, 65535>,
      *     Database: string,
      *     ClusterId?: string,
      *     IAMParameters?: RedshiftIAMParameters,

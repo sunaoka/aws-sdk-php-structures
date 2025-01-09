@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $PrivateIpAddress
  * @property list<string> $SecondaryAllocationIds
  * @property list<string> $SecondaryPrivateIpAddresses
- * @property int $SecondaryPrivateIpAddressCount
+ * @property int<1, 31> $SecondaryPrivateIpAddressCount
  */
 class CreateNatGatewayRequest extends Request
 {
@@ -29,7 +29,7 @@ class CreateNatGatewayRequest extends Request
      *     PrivateIpAddress?: string,
      *     SecondaryAllocationIds?: list<string>,
      *     SecondaryPrivateIpAddresses?: list<string>,
-     *     SecondaryPrivateIpAddressCount?: int
+     *     SecondaryPrivateIpAddressCount?: int<1, 31>
      * } $args
      */
     public function __construct(array $args)

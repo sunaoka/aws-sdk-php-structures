@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PoolName
  * @property string $PoolId
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'FAILED' $PoolStatus
- * @property int $PoolSize
+ * @property int<0, max> $PoolSize
  * @property KinesisVideoStreamConfiguration $StreamConfiguration
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
@@ -22,7 +22,7 @@ class KinesisVideoStreamPoolConfiguration extends Shape
      *     PoolName?: string,
      *     PoolId?: string,
      *     PoolStatus?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'FAILED',
-     *     PoolSize?: int,
+     *     PoolSize?: int<0, max>,
      *     StreamConfiguration?: KinesisVideoStreamConfiguration,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
      *     UpdatedTimestamp?: \Aws\Api\DateTimeResult

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChatConfiguration
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListAssociationsRequest extends Request
@@ -14,7 +14,7 @@ class ListAssociationsRequest extends Request
     /**
      * @param array{
      *     ChatConfiguration: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ManifestFilter
  * @property \Aws\Api\DateTimeResult $Start
  * @property \Aws\Api\DateTimeResult $End
- * @property int $TimeDelaySeconds
+ * @property int<0, 1209600> $TimeDelaySeconds
  * @property \Aws\Api\DateTimeResult $ClipStartTime
  */
 class FilterConfiguration extends Shape
@@ -18,7 +18,7 @@ class FilterConfiguration extends Shape
      *     ManifestFilter?: string,
      *     Start?: \Aws\Api\DateTimeResult,
      *     End?: \Aws\Api\DateTimeResult,
-     *     TimeDelaySeconds?: int,
+     *     TimeDelaySeconds?: int<0, 1209600>,
      *     ClipStartTime?: \Aws\Api\DateTimeResult
      * } $args
      */

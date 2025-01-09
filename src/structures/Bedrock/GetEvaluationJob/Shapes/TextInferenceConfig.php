@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property float $temperature
  * @property float $topP
- * @property int $maxTokens
+ * @property int<0, 65536> $maxTokens
  * @property list<string> $stopSequences
  */
 class TextInferenceConfig extends Shape
@@ -16,7 +16,7 @@ class TextInferenceConfig extends Shape
      * @param array{
      *     temperature?: float,
      *     topP?: float,
-     *     maxTokens?: int,
+     *     maxTokens?: int<0, 65536>,
      *     stopSequences?: list<string>
      * } $args
      */

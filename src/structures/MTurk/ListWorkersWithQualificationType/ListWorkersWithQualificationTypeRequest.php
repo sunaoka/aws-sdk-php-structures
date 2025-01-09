@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $QualificationTypeId
  * @property 'Granted'|'Revoked' $Status
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListWorkersWithQualificationTypeRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListWorkersWithQualificationTypeRequest extends Request
      *     QualificationTypeId: string,
      *     Status?: 'Granted'|'Revoked',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

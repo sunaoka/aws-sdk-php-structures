@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $VolumeType
  * @property int $Iops
  * @property int $SizeInGB
- * @property int $Throughput
+ * @property int<0, max> $Throughput
  */
 class VolumeSpecification extends Shape
 {
@@ -17,7 +17,7 @@ class VolumeSpecification extends Shape
      *     VolumeType: string,
      *     Iops?: int,
      *     SizeInGB: int,
-     *     Throughput?: int
+     *     Throughput?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

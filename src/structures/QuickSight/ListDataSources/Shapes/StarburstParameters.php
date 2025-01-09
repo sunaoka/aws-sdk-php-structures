@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Host
- * @property int $Port
+ * @property int<1, 65535> $Port
  * @property string $Catalog
  * @property 'GALAXY'|'ENTERPRISE' $ProductType
  * @property string $DatabaseAccessControlRole
@@ -18,7 +18,7 @@ class StarburstParameters extends Shape
     /**
      * @param array{
      *     Host: string,
-     *     Port: int,
+     *     Port: int<1, 65535>,
      *     Catalog: string,
      *     ProductType?: 'GALAXY'|'ENTERPRISE',
      *     DatabaseAccessControlRole?: string,

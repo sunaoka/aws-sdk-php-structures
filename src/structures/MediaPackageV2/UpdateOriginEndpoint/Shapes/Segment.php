@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaPackageV2\UpdateOriginEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $SegmentDurationSeconds
+ * @property int<1, 30> $SegmentDurationSeconds
  * @property string $SegmentName
  * @property bool $TsUseAudioRenditionGroup
  * @property bool $IncludeIframeOnlyStreams
@@ -17,7 +17,7 @@ class Segment extends Shape
 {
     /**
      * @param array{
-     *     SegmentDurationSeconds?: int,
+     *     SegmentDurationSeconds?: int<1, 30>,
      *     SegmentName?: string,
      *     TsUseAudioRenditionGroup?: bool,
      *     IncludeIframeOnlyStreams?: bool,

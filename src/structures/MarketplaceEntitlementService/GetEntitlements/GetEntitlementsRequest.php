@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ProductCode
  * @property array<'CUSTOMER_IDENTIFIER'|'DIMENSION', list<string>> $Filter
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 25> $MaxResults
  */
 class GetEntitlementsRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetEntitlementsRequest extends Request
      *     ProductCode: string,
      *     Filter?: array<'CUSTOMER_IDENTIFIER'|'DIMENSION', list<string>>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 25>
      * } $args
      */
     public function __construct(array $args)

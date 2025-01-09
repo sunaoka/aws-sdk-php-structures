@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $stateDetails
  * @property string $releaseLabel
  * @property string $type
- * @property int $attempt
+ * @property int<1, max> $attempt
  */
 class JobRunAttemptSummary extends Shape
 {
@@ -39,7 +39,7 @@ class JobRunAttemptSummary extends Shape
      *     stateDetails: string,
      *     releaseLabel: string,
      *     type?: string,
-     *     attempt?: int
+     *     attempt?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Scheduler\UpdateSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaximumEventAgeInSeconds
- * @property int $MaximumRetryAttempts
+ * @property int<60, 86400> $MaximumEventAgeInSeconds
+ * @property int<0, 185> $MaximumRetryAttempts
  */
 class RetryPolicy extends Shape
 {
     /**
      * @param array{
-     *     MaximumEventAgeInSeconds?: int,
-     *     MaximumRetryAttempts?: int
+     *     MaximumEventAgeInSeconds?: int<60, 86400>,
+     *     MaximumRetryAttempts?: int<0, 185>
      * } $args
      */
     public function __construct(array $args = [])

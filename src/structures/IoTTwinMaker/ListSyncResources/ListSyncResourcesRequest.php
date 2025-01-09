@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $workspaceId
  * @property string $syncSource
  * @property list<Shapes\SyncResourceFilter> $filters
- * @property int $maxResults
+ * @property int<0, 200> $maxResults
  * @property string $nextToken
  */
 class ListSyncResourcesRequest extends Request
@@ -18,7 +18,7 @@ class ListSyncResourcesRequest extends Request
      *     workspaceId: string,
      *     syncSource: string,
      *     filters?: list<Shapes\SyncResourceFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<0, 200>,
      *     nextToken?: string
      * } $args
      */

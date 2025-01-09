@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EKS\DeleteNodegroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maxUnavailable
- * @property int $maxUnavailablePercentage
+ * @property int<1, max> $maxUnavailable
+ * @property int<1, 100> $maxUnavailablePercentage
  */
 class NodegroupUpdateConfig extends Shape
 {
     /**
      * @param array{
-     *     maxUnavailable?: int,
-     *     maxUnavailablePercentage?: int
+     *     maxUnavailable?: int<1, max>,
+     *     maxUnavailablePercentage?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

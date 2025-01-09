@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3Tables\GetTableMaintenanceConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $targetFileSizeMB
+ * @property int<1, 2147483647> $targetFileSizeMB
  */
 class IcebergCompactionSettings extends Shape
 {
     /**
-     * @param array{targetFileSizeMB?: int} $args
+     * @param array{targetFileSizeMB?: int<1, 2147483647>} $args
      */
     public function __construct(array $args = [])
     {

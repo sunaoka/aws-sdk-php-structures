@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ProjectName
  * @property string $ModelVersion
- * @property int $MinInferenceUnits
+ * @property int<1, max> $MinInferenceUnits
  * @property string $ClientToken
- * @property int $MaxInferenceUnits
+ * @property int<1, max> $MaxInferenceUnits
  */
 class StartModelRequest extends Request
 {
@@ -17,9 +17,9 @@ class StartModelRequest extends Request
      * @param array{
      *     ProjectName: string,
      *     ModelVersion: string,
-     *     MinInferenceUnits: int,
+     *     MinInferenceUnits: int<1, max>,
      *     ClientToken?: string,
-     *     MaxInferenceUnits?: int
+     *     MaxInferenceUnits?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

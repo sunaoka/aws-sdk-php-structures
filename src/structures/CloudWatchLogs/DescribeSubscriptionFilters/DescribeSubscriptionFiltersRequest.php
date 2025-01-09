@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $logGroupName
  * @property string $filterNamePrefix
  * @property string $nextToken
- * @property int $limit
+ * @property int<1, 50> $limit
  */
 class DescribeSubscriptionFiltersRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeSubscriptionFiltersRequest extends Request
      *     logGroupName: string,
      *     filterNamePrefix?: string,
      *     nextToken?: string,
-     *     limit?: int
+     *     limit?: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Pipes\DescribePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Attempts
+ * @property int<1, 10> $Attempts
  */
 class BatchRetryStrategy extends Shape
 {
     /**
-     * @param array{Attempts?: int} $args
+     * @param array{Attempts?: int<1, 10>} $args
      */
     public function __construct(array $args = [])
     {

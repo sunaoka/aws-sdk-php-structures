@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $IndexName
- * @property int $ProvisionedReadCapacityUnits
+ * @property int<1, max> $ProvisionedReadCapacityUnits
  * @property AutoScalingSettingsUpdate $ProvisionedReadCapacityAutoScalingSettingsUpdate
  */
 class ReplicaGlobalSecondaryIndexSettingsUpdate extends Shape
@@ -14,7 +14,7 @@ class ReplicaGlobalSecondaryIndexSettingsUpdate extends Shape
     /**
      * @param array{
      *     IndexName: string,
-     *     ProvisionedReadCapacityUnits?: int,
+     *     ProvisionedReadCapacityUnits?: int<1, max>,
      *     ProvisionedReadCapacityAutoScalingSettingsUpdate?: AutoScalingSettingsUpdate
      * } $args
      */

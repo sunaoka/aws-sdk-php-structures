@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\ListAssets;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  * @property string $PackagingGroupId
  */
@@ -13,7 +13,7 @@ class ListAssetsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string,
      *     PackagingGroupId?: string
      * } $args

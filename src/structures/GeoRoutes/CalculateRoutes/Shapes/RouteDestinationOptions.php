@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AvoidActionsForDistance
+ * @property int<min, 2000> $AvoidActionsForDistance
  * @property bool $AvoidUTurns
  * @property double $Heading
  * @property RouteMatchingOptions $Matching
  * @property RouteSideOfStreetOptions $SideOfStreet
- * @property int $StopDuration
+ * @property int<0, 4294967295> $StopDuration
  */
 class RouteDestinationOptions extends Shape
 {
     /**
      * @param array{
-     *     AvoidActionsForDistance?: int,
+     *     AvoidActionsForDistance?: int<min, 2000>,
      *     AvoidUTurns?: bool,
      *     Heading?: double,
      *     Matching?: RouteMatchingOptions,
      *     SideOfStreet?: RouteSideOfStreetOptions,
-     *     StopDuration?: int
+     *     StopDuration?: int<0, 4294967295>
      * } $args
      */
     public function __construct(array $args = [])

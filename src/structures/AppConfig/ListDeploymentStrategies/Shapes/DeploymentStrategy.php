@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $Name
  * @property string $Description
- * @property int $DeploymentDurationInMinutes
+ * @property int<0, 1440> $DeploymentDurationInMinutes
  * @property 'LINEAR'|'EXPONENTIAL' $GrowthType
  * @property float $GrowthFactor
- * @property int $FinalBakeTimeInMinutes
+ * @property int<0, 1440> $FinalBakeTimeInMinutes
  * @property 'NONE'|'SSM_DOCUMENT' $ReplicateTo
  */
 class DeploymentStrategy extends Shape
@@ -21,10 +21,10 @@ class DeploymentStrategy extends Shape
      *     Id?: string,
      *     Name?: string,
      *     Description?: string,
-     *     DeploymentDurationInMinutes?: int,
+     *     DeploymentDurationInMinutes?: int<0, 1440>,
      *     GrowthType?: 'LINEAR'|'EXPONENTIAL',
      *     GrowthFactor?: float,
-     *     FinalBakeTimeInMinutes?: int,
+     *     FinalBakeTimeInMinutes?: int<0, 1440>,
      *     ReplicateTo?: 'NONE'|'SSM_DOCUMENT'
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $TransitGatewayAttachmentIds
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property string $NextToken
  * @property bool $DryRun
  */
@@ -17,7 +17,7 @@ class DescribeTransitGatewayAttachmentsRequest extends Request
      * @param array{
      *     TransitGatewayAttachmentIds?: list<string>,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     NextToken?: string,
      *     DryRun?: bool
      * } $args

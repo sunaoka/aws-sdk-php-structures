@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ConfigRuleName
  * @property list<Shapes\ResourceKey> $ResourceKeys
- * @property int $Limit
+ * @property int<0, 100> $Limit
  * @property string $NextToken
  */
 class DescribeRemediationExecutionStatusRequest extends Request
@@ -16,7 +16,7 @@ class DescribeRemediationExecutionStatusRequest extends Request
      * @param array{
      *     ConfigRuleName: string,
      *     ResourceKeys?: list<Shapes\ResourceKey>,
-     *     Limit?: int,
+     *     Limit?: int<0, 100>,
      *     NextToken?: string
      * } $args
      */

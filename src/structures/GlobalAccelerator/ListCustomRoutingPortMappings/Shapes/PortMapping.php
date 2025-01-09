@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\ListCustomRoutingPortMappings
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AcceleratorPort
+ * @property int<1, 65535> $AcceleratorPort
  * @property string $EndpointGroupArn
  * @property string $EndpointId
  * @property SocketAddress $DestinationSocketAddress
@@ -16,7 +16,7 @@ class PortMapping extends Shape
 {
     /**
      * @param array{
-     *     AcceleratorPort?: int,
+     *     AcceleratorPort?: int<1, 65535>,
      *     EndpointGroupArn?: string,
      *     EndpointId?: string,
      *     DestinationSocketAddress?: SocketAddress,

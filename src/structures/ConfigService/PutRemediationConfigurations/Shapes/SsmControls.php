@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\PutRemediationConfigurations\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ConcurrentExecutionRatePercentage
- * @property int $ErrorPercentage
+ * @property int<1, 100> $ConcurrentExecutionRatePercentage
+ * @property int<1, 100> $ErrorPercentage
  */
 class SsmControls extends Shape
 {
     /**
      * @param array{
-     *     ConcurrentExecutionRatePercentage?: int,
-     *     ErrorPercentage?: int
+     *     ConcurrentExecutionRatePercentage?: int<1, 100>,
+     *     ErrorPercentage?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

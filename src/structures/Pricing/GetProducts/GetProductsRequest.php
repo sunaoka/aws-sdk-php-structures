@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Filter> $Filters
  * @property string $FormatVersion
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class GetProductsRequest extends Request
 {
@@ -19,7 +19,7 @@ class GetProductsRequest extends Request
      *     Filters?: list<Shapes\Filter>,
      *     FormatVersion?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

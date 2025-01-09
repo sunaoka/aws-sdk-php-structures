@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $OperationName
  * @property 'LATENCY'|'AVAILABILITY' $MetricType
  * @property string $Statistic
- * @property int $PeriodSeconds
+ * @property int<60, 900> $PeriodSeconds
  * @property list<MetricDataQuery> $MetricDataQueries
  */
 class ServiceLevelIndicatorMetricConfig extends Shape
@@ -20,7 +20,7 @@ class ServiceLevelIndicatorMetricConfig extends Shape
      *     OperationName?: string,
      *     MetricType?: 'LATENCY'|'AVAILABILITY',
      *     Statistic?: string,
-     *     PeriodSeconds?: int,
+     *     PeriodSeconds?: int<60, 900>,
      *     MetricDataQueries?: list<MetricDataQuery>
      * } $args
      */

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $port
+ * @property int<1, 65535> $port
  * @property 'http'|'tcp'|'http2'|'grpc' $protocol
  */
 class PortMapping extends Shape
 {
     /**
      * @param array{
-     *     port: int,
+     *     port: int<1, 65535>,
      *     protocol: 'http'|'tcp'|'http2'|'grpc'
      * } $args
      */

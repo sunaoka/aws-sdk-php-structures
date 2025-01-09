@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $laterTime
  * @property \Aws\Api\DateTimeResult $earlierTime
  * @property 'Reverse'|'Forward' $chronologicalOrder
- * @property int $limit
+ * @property int<0, 100> $limit
  * @property string $nextToken
  */
 class GetResourceConfigHistoryRequest extends Request
@@ -22,7 +22,7 @@ class GetResourceConfigHistoryRequest extends Request
      *     laterTime?: \Aws\Api\DateTimeResult,
      *     earlierTime?: \Aws\Api\DateTimeResult,
      *     chronologicalOrder?: 'Reverse'|'Forward',
-     *     limit?: int,
+     *     limit?: int<0, 100>,
      *     nextToken?: string
      * } $args
      */

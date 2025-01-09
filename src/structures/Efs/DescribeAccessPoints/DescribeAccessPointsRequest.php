@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Efs\DescribeAccessPoints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $NextToken
  * @property string $AccessPointId
  * @property string $FileSystemId
@@ -14,7 +14,7 @@ class DescribeAccessPointsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     NextToken?: string,
      *     AccessPointId?: string,
      *     FileSystemId?: string

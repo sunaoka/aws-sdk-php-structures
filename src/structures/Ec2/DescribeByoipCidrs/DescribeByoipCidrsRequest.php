@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool $DryRun
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeByoipCidrsRequest extends Request
@@ -14,7 +14,7 @@ class DescribeByoipCidrsRequest extends Request
     /**
      * @param array{
      *     DryRun?: bool,
-     *     MaxResults: int,
+     *     MaxResults: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

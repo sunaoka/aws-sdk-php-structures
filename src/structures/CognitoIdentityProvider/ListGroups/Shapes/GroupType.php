@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $UserPoolId
  * @property string $Description
  * @property string $RoleArn
- * @property int $Precedence
+ * @property int<0, max> $Precedence
  * @property \Aws\Api\DateTimeResult $LastModifiedDate
  * @property \Aws\Api\DateTimeResult $CreationDate
  */
@@ -21,7 +21,7 @@ class GroupType extends Shape
      *     UserPoolId?: string,
      *     Description?: string,
      *     RoleArn?: string,
-     *     Precedence?: int,
+     *     Precedence?: int<0, max>,
      *     LastModifiedDate?: \Aws\Api\DateTimeResult,
      *     CreationDate?: \Aws\Api\DateTimeResult
      * } $args

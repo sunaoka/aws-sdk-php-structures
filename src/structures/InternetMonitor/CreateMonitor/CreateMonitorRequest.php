@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $Resources
  * @property string $ClientToken
  * @property array<string, string> $Tags
- * @property int $MaxCityNetworksToMonitor
+ * @property int<1, 500000> $MaxCityNetworksToMonitor
  * @property Shapes\InternetMeasurementsLogDelivery $InternetMeasurementsLogDelivery
- * @property int $TrafficPercentageToMonitor
+ * @property int<1, 100> $TrafficPercentageToMonitor
  * @property Shapes\HealthEventsConfig $HealthEventsConfig
  */
 class CreateMonitorRequest extends Request
@@ -22,9 +22,9 @@ class CreateMonitorRequest extends Request
      *     Resources?: list<string>,
      *     ClientToken?: string,
      *     Tags?: array<string, string>,
-     *     MaxCityNetworksToMonitor?: int,
+     *     MaxCityNetworksToMonitor?: int<1, 500000>,
      *     InternetMeasurementsLogDelivery?: Shapes\InternetMeasurementsLogDelivery,
-     *     TrafficPercentageToMonitor?: int,
+     *     TrafficPercentageToMonitor?: int<1, 100>,
      *     HealthEventsConfig?: Shapes\HealthEventsConfig
      * } $args
      */

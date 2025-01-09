@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TransformJobName
  * @property string $ModelName
- * @property int $MaxConcurrentTransforms
+ * @property int<0, max> $MaxConcurrentTransforms
  * @property Shapes\ModelClientConfig $ModelClientConfig
- * @property int $MaxPayloadInMB
+ * @property int<0, max> $MaxPayloadInMB
  * @property 'MultiRecord'|'SingleRecord' $BatchStrategy
  * @property array<string, string> $Environment
  * @property Shapes\TransformInput $TransformInput
@@ -26,9 +26,9 @@ class CreateTransformJobRequest extends Request
      * @param array{
      *     TransformJobName: string,
      *     ModelName: string,
-     *     MaxConcurrentTransforms?: int,
+     *     MaxConcurrentTransforms?: int<0, max>,
      *     ModelClientConfig?: Shapes\ModelClientConfig,
-     *     MaxPayloadInMB?: int,
+     *     MaxPayloadInMB?: int<0, max>,
      *     BatchStrategy?: 'MultiRecord'|'SingleRecord',
      *     Environment?: array<string, string>,
      *     TransformInput: Shapes\TransformInput,

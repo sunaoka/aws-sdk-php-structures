@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $QueryText
- * @property int $MaxResults
- * @property int $MaxQueryRefinements
+ * @property int<1, 100> $MaxResults
+ * @property int<1, 10> $MaxQueryRefinements
  * @property list<double> $BiasPosition
  * @property Shapes\SuggestFilter $Filter
  * @property list<'Core'|'TimeZone'|'Phonemes'|'Access'> $AdditionalFeatures
@@ -21,8 +21,8 @@ class SuggestRequest extends Request
     /**
      * @param array{
      *     QueryText: string,
-     *     MaxResults?: int,
-     *     MaxQueryRefinements?: int,
+     *     MaxResults?: int<1, 100>,
+     *     MaxQueryRefinements?: int<1, 10>,
      *     BiasPosition?: list<double>,
      *     Filter?: Shapes\SuggestFilter,
      *     AdditionalFeatures?: list<'Core'|'TimeZone'|'Phonemes'|'Access'>,

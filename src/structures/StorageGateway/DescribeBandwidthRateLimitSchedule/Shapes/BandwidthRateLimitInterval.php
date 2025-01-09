@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DescribeBandwidthRateLimitSchedu
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $StartHourOfDay
- * @property int $StartMinuteOfHour
- * @property int $EndHourOfDay
- * @property int $EndMinuteOfHour
- * @property list<int> $DaysOfWeek
- * @property int $AverageUploadRateLimitInBitsPerSec
- * @property int $AverageDownloadRateLimitInBitsPerSec
+ * @property int<0, 23> $StartHourOfDay
+ * @property int<0, 59> $StartMinuteOfHour
+ * @property int<0, 23> $EndHourOfDay
+ * @property int<0, 59> $EndMinuteOfHour
+ * @property list<int<0, 6>> $DaysOfWeek
+ * @property int<51200, max> $AverageUploadRateLimitInBitsPerSec
+ * @property int<102400, max> $AverageDownloadRateLimitInBitsPerSec
  */
 class BandwidthRateLimitInterval extends Shape
 {
     /**
      * @param array{
-     *     StartHourOfDay: int,
-     *     StartMinuteOfHour: int,
-     *     EndHourOfDay: int,
-     *     EndMinuteOfHour: int,
-     *     DaysOfWeek: list<int>,
-     *     AverageUploadRateLimitInBitsPerSec?: int,
-     *     AverageDownloadRateLimitInBitsPerSec?: int
+     *     StartHourOfDay: int<0, 23>,
+     *     StartMinuteOfHour: int<0, 59>,
+     *     EndHourOfDay: int<0, 23>,
+     *     EndMinuteOfHour: int<0, 59>,
+     *     DaysOfWeek: list<int<0, 6>>,
+     *     AverageUploadRateLimitInBitsPerSec?: int<51200, max>,
+     *     AverageDownloadRateLimitInBitsPerSec?: int<102400, max>
      * } $args
      */
     public function __construct(array $args)

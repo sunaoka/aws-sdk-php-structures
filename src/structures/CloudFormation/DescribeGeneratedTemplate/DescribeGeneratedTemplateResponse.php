@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\TemplateProgress $Progress
  * @property string $StackId
  * @property Shapes\TemplateConfiguration $TemplateConfiguration
- * @property int $TotalWarnings
+ * @property int<0, max> $TotalWarnings
  */
 class DescribeGeneratedTemplateResponse extends Response
 {

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botVersion
  * @property string $localeId
  * @property Shapes\GenerationSortBy $sortBy
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListBotResourceGenerationsRequest extends Request
@@ -20,7 +20,7 @@ class ListBotResourceGenerationsRequest extends Request
      *     botVersion: string,
      *     localeId: string,
      *     sortBy?: Shapes\GenerationSortBy,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

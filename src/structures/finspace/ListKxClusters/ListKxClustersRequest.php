@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $environmentId
  * @property 'HDB'|'RDB'|'GATEWAY'|'GP'|'TICKERPLANT' $clusterType
- * @property int $maxResults
+ * @property int<0, 100> $maxResults
  * @property string $nextToken
  */
 class ListKxClustersRequest extends Request
@@ -16,7 +16,7 @@ class ListKxClustersRequest extends Request
      * @param array{
      *     environmentId: string,
      *     clusterType?: 'HDB'|'RDB'|'GATEWAY'|'GP'|'TICKERPLANT',
-     *     maxResults?: int,
+     *     maxResults?: int<0, 100>,
      *     nextToken?: string
      * } $args
      */

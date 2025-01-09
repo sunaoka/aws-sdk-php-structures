@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StreamARN
  * @property string $CurrentVersion
  * @property 'INCREASE_DATA_RETENTION'|'DECREASE_DATA_RETENTION' $Operation
- * @property int $DataRetentionChangeInHours
+ * @property int<1, max> $DataRetentionChangeInHours
  */
 class UpdateDataRetentionRequest extends Request
 {
@@ -19,7 +19,7 @@ class UpdateDataRetentionRequest extends Request
      *     StreamARN?: string,
      *     CurrentVersion: string,
      *     Operation: 'INCREASE_DATA_RETENTION'|'DECREASE_DATA_RETENTION',
-     *     DataRetentionChangeInHours: int
+     *     DataRetentionChangeInHours: int<1, max>
      * } $args
      */
     public function __construct(array $args)

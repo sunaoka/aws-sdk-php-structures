@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LensAlias
  * @property string $PillarId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  */
 class ListReviewTemplateAnswersRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListReviewTemplateAnswersRequest extends Request
      *     LensAlias: string,
      *     PillarId?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

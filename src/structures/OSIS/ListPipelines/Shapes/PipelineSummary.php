@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property PipelineStatusReason $StatusReason
  * @property string $PipelineName
  * @property string $PipelineArn
- * @property int $MinUnits
- * @property int $MaxUnits
+ * @property int<1, max> $MinUnits
+ * @property int<1, max> $MaxUnits
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $LastUpdatedAt
  * @property list<PipelineDestination> $Destinations
@@ -24,8 +24,8 @@ class PipelineSummary extends Shape
      *     StatusReason?: PipelineStatusReason,
      *     PipelineName?: string,
      *     PipelineArn?: string,
-     *     MinUnits?: int,
-     *     MaxUnits?: int,
+     *     MinUnits?: int<1, max>,
+     *     MaxUnits?: int<1, max>,
      *     CreatedAt?: \Aws\Api\DateTimeResult,
      *     LastUpdatedAt?: \Aws\Api\DateTimeResult,
      *     Destinations?: list<PipelineDestination>,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $clusterType
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property bool $defaultOnly
  * @property bool $includeAll
@@ -18,7 +18,7 @@ class DescribeClusterVersionsRequest extends Request
     /**
      * @param array{
      *     clusterType?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     defaultOnly?: bool,
      *     includeAll?: bool,

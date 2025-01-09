@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $omitStoppedVideo
  * @property 'AUTO'|'VIDEO'|'SQUARE'|'PORTRAIT' $videoAspectRatio
  * @property 'FILL'|'COVER'|'CONTAIN' $videoFillMode
- * @property int $gridGap
+ * @property int<0, max> $gridGap
  */
 class GridConfiguration extends Shape
 {
@@ -19,7 +19,7 @@ class GridConfiguration extends Shape
      *     omitStoppedVideo?: bool,
      *     videoAspectRatio?: 'AUTO'|'VIDEO'|'SQUARE'|'PORTRAIT',
      *     videoFillMode?: 'FILL'|'COVER'|'CONTAIN',
-     *     gridGap?: int
+     *     gridGap?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

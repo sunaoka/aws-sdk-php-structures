@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<InputArtifact> $inputArtifacts
  * @property string $roleArn
  * @property string $region
- * @property int $timeoutInMinutes
+ * @property int<5, 86400> $timeoutInMinutes
  */
 class RuleDeclaration extends Shape
 {
@@ -25,7 +25,7 @@ class RuleDeclaration extends Shape
      *     inputArtifacts?: list<InputArtifact>,
      *     roleArn?: string,
      *     region?: string,
-     *     timeoutInMinutes?: int
+     *     timeoutInMinutes?: int<5, 86400>
      * } $args
      */
     public function __construct(array $args)

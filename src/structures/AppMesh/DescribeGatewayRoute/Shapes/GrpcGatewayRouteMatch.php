@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property GatewayRouteHostnameMatch $hostname
  * @property list<GrpcGatewayRouteMetadata> $metadata
- * @property int $port
+ * @property int<1, 65535> $port
  * @property string $serviceName
  */
 class GrpcGatewayRouteMatch extends Shape
@@ -16,7 +16,7 @@ class GrpcGatewayRouteMatch extends Shape
      * @param array{
      *     hostname?: GatewayRouteHostnameMatch,
      *     metadata?: list<GrpcGatewayRouteMetadata>,
-     *     port?: int,
+     *     port?: int<1, 65535>,
      *     serviceName?: string
      * } $args
      */

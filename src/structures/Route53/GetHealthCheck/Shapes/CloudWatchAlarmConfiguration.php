@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Route53\GetHealthCheck\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $EvaluationPeriods
+ * @property int<1, max> $EvaluationPeriods
  * @property double $Threshold
  * @property 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold' $ComparisonOperator
- * @property int $Period
+ * @property int<60, max> $Period
  * @property string $MetricName
  * @property string $Namespace
  * @property 'Average'|'Sum'|'SampleCount'|'Maximum'|'Minimum' $Statistic
@@ -18,10 +18,10 @@ class CloudWatchAlarmConfiguration extends Shape
 {
     /**
      * @param array{
-     *     EvaluationPeriods: int,
+     *     EvaluationPeriods: int<1, max>,
      *     Threshold: double,
      *     ComparisonOperator: 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold',
-     *     Period: int,
+     *     Period: int<60, max>,
      *     MetricName: string,
      *     Namespace: string,
      *     Statistic: 'Average'|'Sum'|'SampleCount'|'Maximum'|'Minimum',

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $pipelineName
  * @property Shapes\RuleExecutionFilter $filter
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListRuleExecutionsRequest extends Request
@@ -16,7 +16,7 @@ class ListRuleExecutionsRequest extends Request
      * @param array{
      *     pipelineName: string,
      *     filter?: Shapes\RuleExecutionFilter,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

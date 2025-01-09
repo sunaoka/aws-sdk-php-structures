@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $token
  * @property string $userId
  * @property array<string, string> $attributes
- * @property int $duration
+ * @property int<1, 20160> $duration
  * @property list<'PUBLISH'|'SUBSCRIBE'> $capabilities
  * @property \Aws\Api\DateTimeResult $expirationTime
  */
@@ -21,7 +21,7 @@ class ParticipantToken extends Shape
      *     token?: string,
      *     userId?: string,
      *     attributes?: array<string, string>,
-     *     duration?: int,
+     *     duration?: int<1, 20160>,
      *     capabilities?: list<'PUBLISH'|'SUBSCRIBE'>,
      *     expirationTime?: \Aws\Api\DateTimeResult
      * } $args

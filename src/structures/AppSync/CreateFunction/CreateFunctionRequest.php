@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $responseMappingTemplate
  * @property string $functionVersion
  * @property Shapes\SyncConfig $syncConfig
- * @property int $maxBatchSize
+ * @property int<0, 2000> $maxBatchSize
  * @property Shapes\AppSyncRuntime $runtime
  * @property string $code
  */
@@ -29,7 +29,7 @@ class CreateFunctionRequest extends Request
      *     responseMappingTemplate?: string,
      *     functionVersion?: string,
      *     syncConfig?: Shapes\SyncConfig,
-     *     maxBatchSize?: int,
+     *     maxBatchSize?: int<0, 2000>,
      *     runtime?: Shapes\AppSyncRuntime,
      *     code?: string
      * } $args

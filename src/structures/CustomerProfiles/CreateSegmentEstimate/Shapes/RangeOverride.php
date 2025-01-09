@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\CreateSegmentEstimate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Start
- * @property int $End
+ * @property int<1, 366> $Start
+ * @property int<0, 366> $End
  * @property 'DAYS' $Unit
  */
 class RangeOverride extends Shape
 {
     /**
      * @param array{
-     *     Start: int,
-     *     End?: int,
+     *     Start: int<1, 366>,
+     *     End?: int<0, 366>,
      *     Unit: 'DAYS'
      * } $args
      */

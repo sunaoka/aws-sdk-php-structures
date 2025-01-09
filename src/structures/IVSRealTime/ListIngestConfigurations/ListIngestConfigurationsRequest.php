@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $filterByStageArn
  * @property 'ACTIVE'|'INACTIVE' $filterByState
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class ListIngestConfigurationsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListIngestConfigurationsRequest extends Request
      *     filterByStageArn?: string,
      *     filterByState?: 'ACTIVE'|'INACTIVE',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

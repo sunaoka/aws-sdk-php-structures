@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 1000> $MaxResults
  */
 class ListAccessPointsForObjectLambdaRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListAccessPointsForObjectLambdaRequest extends Request
      * @param array{
      *     AccountId: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<0, 1000>
      * } $args
      */
     public function __construct(array $args)

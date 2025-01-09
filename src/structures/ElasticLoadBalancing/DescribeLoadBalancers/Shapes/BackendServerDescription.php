@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DescribeLoadBalancers\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $InstancePort
+ * @property int<1, 65535> $InstancePort
  * @property list<string> $PolicyNames
  */
 class BackendServerDescription extends Shape
 {
     /**
      * @param array{
-     *     InstancePort?: int,
+     *     InstancePort?: int<1, 65535>,
      *     PolicyNames?: list<string>
      * } $args
      */

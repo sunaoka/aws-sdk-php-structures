@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $GatewayId
- * @property int $DownlinkFrequency
+ * @property int<100000000, 1000000000> $DownlinkFrequency
  */
 class GatewayListItem extends Shape
 {
     /**
      * @param array{
      *     GatewayId: string,
-     *     DownlinkFrequency: int
+     *     DownlinkFrequency: int<100000000, 1000000000>
      * } $args
      */
     public function __construct(array $args)

@@ -11,11 +11,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $targetArn
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $expiryTime
- * @property int $postTriggerCollectionDuration
+ * @property int<0, 4294967295> $postTriggerCollectionDuration
  * @property 'OFF'|'SEND_ACTIVE_DTCS' $diagnosticsMode
  * @property 'OFF'|'TO_DISK' $spoolingMode
  * @property 'OFF'|'SNAPPY' $compression
- * @property int $priority
+ * @property int<0, max> $priority
  * @property list<Shapes\SignalInformation> $signalsToCollect
  * @property Shapes\CollectionScheme $collectionScheme
  * @property list<string> $dataExtraDimensions
@@ -34,11 +34,11 @@ class CreateCampaignRequest extends Request
      *     targetArn: string,
      *     startTime?: \Aws\Api\DateTimeResult,
      *     expiryTime?: \Aws\Api\DateTimeResult,
-     *     postTriggerCollectionDuration?: int,
+     *     postTriggerCollectionDuration?: int<0, 4294967295>,
      *     diagnosticsMode?: 'OFF'|'SEND_ACTIVE_DTCS',
      *     spoolingMode?: 'OFF'|'TO_DISK',
      *     compression?: 'OFF'|'SNAPPY',
-     *     priority?: int,
+     *     priority?: int<0, max>,
      *     signalsToCollect?: list<Shapes\SignalInformation>,
      *     collectionScheme: Shapes\CollectionScheme,
      *     dataExtraDimensions?: list<string>,

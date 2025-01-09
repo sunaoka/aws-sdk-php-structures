@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property InstanceFleetStatus $Status
  * @property 'MASTER'|'CORE'|'TASK' $InstanceFleetType
- * @property int $TargetOnDemandCapacity
- * @property int $TargetSpotCapacity
- * @property int $ProvisionedOnDemandCapacity
- * @property int $ProvisionedSpotCapacity
+ * @property int<0, max> $TargetOnDemandCapacity
+ * @property int<0, max> $TargetSpotCapacity
+ * @property int<0, max> $ProvisionedOnDemandCapacity
+ * @property int<0, max> $ProvisionedSpotCapacity
  * @property list<InstanceTypeSpecification> $InstanceTypeSpecifications
  * @property InstanceFleetProvisioningSpecifications $LaunchSpecifications
  * @property InstanceFleetResizingSpecifications $ResizeSpecifications
@@ -26,10 +26,10 @@ class InstanceFleet extends Shape
      *     Name?: string,
      *     Status?: InstanceFleetStatus,
      *     InstanceFleetType?: 'MASTER'|'CORE'|'TASK',
-     *     TargetOnDemandCapacity?: int,
-     *     TargetSpotCapacity?: int,
-     *     ProvisionedOnDemandCapacity?: int,
-     *     ProvisionedSpotCapacity?: int,
+     *     TargetOnDemandCapacity?: int<0, max>,
+     *     TargetSpotCapacity?: int<0, max>,
+     *     ProvisionedOnDemandCapacity?: int<0, max>,
+     *     ProvisionedSpotCapacity?: int<0, max>,
      *     InstanceTypeSpecifications?: list<InstanceTypeSpecification>,
      *     LaunchSpecifications?: InstanceFleetProvisioningSpecifications,
      *     ResizeSpecifications?: InstanceFleetResizingSpecifications,

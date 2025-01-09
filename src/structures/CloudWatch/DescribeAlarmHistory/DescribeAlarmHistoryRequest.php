@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ConfigurationUpdate'|'StateUpdate'|'Action' $HistoryItemType
  * @property \Aws\Api\DateTimeResult $StartDate
  * @property \Aws\Api\DateTimeResult $EndDate
- * @property int $MaxRecords
+ * @property int<1, 100> $MaxRecords
  * @property string $NextToken
  * @property 'TimestampDescending'|'TimestampAscending' $ScanBy
  */
@@ -23,7 +23,7 @@ class DescribeAlarmHistoryRequest extends Request
      *     HistoryItemType?: 'ConfigurationUpdate'|'StateUpdate'|'Action',
      *     StartDate?: \Aws\Api\DateTimeResult,
      *     EndDate?: \Aws\Api\DateTimeResult,
-     *     MaxRecords?: int,
+     *     MaxRecords?: int<1, 100>,
      *     NextToken?: string,
      *     ScanBy?: 'TimestampDescending'|'TimestampAscending'
      * } $args

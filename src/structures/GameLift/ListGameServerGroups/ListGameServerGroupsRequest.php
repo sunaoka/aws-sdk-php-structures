@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\GameLift\ListGameServerGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $NextToken
  */
 class ListGameServerGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceIdentifier
  * @property string $ExtensionIdentifier
  * @property int $ExtensionVersionNumber
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListExtensionAssociationsRequest extends Request
@@ -18,7 +18,7 @@ class ListExtensionAssociationsRequest extends Request
      *     ResourceIdentifier?: string,
      *     ExtensionIdentifier?: string,
      *     ExtensionVersionNumber?: int,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

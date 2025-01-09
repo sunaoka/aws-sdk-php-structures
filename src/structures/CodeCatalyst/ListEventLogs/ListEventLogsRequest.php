@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $endTime
  * @property string $eventName
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class ListEventLogsRequest extends Request
 {
@@ -21,7 +21,7 @@ class ListEventLogsRequest extends Request
      *     endTime: \Aws\Api\DateTimeResult,
      *     eventName?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args)

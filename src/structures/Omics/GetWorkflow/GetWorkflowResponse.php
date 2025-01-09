@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $main
  * @property string $digest
  * @property array<string, Shapes\WorkflowParameter> $parameterTemplate
- * @property int $storageCapacity
+ * @property int<0, 100000> $storageCapacity
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string $statusMessage
  * @property array<string, string> $tags

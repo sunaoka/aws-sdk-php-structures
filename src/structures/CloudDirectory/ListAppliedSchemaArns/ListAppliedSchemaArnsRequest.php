@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DirectoryArn
  * @property string $SchemaArn
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  */
 class ListAppliedSchemaArnsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListAppliedSchemaArnsRequest extends Request
      *     DirectoryArn: string,
      *     SchemaArn?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

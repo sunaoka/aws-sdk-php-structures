@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ExpenseType $Type
  * @property ExpenseDetection $LabelDetection
  * @property ExpenseDetection $ValueDetection
- * @property int $PageNumber
+ * @property int<0, max> $PageNumber
  * @property ExpenseCurrency $Currency
  * @property list<ExpenseGroupProperty> $GroupProperties
  */
@@ -19,7 +19,7 @@ class ExpenseField extends Shape
      *     Type?: ExpenseType,
      *     LabelDetection?: ExpenseDetection,
      *     ValueDetection?: ExpenseDetection,
-     *     PageNumber?: int,
+     *     PageNumber?: int<0, max>,
      *     Currency?: ExpenseCurrency,
      *     GroupProperties?: list<ExpenseGroupProperty>
      * } $args

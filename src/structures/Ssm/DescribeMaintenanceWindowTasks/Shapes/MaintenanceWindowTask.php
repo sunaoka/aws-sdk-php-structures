@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA' $Type
  * @property list<Target> $Targets
  * @property array<string, MaintenanceWindowTaskParameterValueExpression> $TaskParameters
- * @property int $Priority
+ * @property int<0, max> $Priority
  * @property LoggingInfo $LoggingInfo
  * @property string $ServiceRoleArn
  * @property string $MaxConcurrency
@@ -31,7 +31,7 @@ class MaintenanceWindowTask extends Shape
      *     Type?: 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA',
      *     Targets?: list<Target>,
      *     TaskParameters?: array<string, MaintenanceWindowTaskParameterValueExpression>,
-     *     Priority?: int,
+     *     Priority?: int<0, max>,
      *     LoggingInfo?: LoggingInfo,
      *     ServiceRoleArn?: string,
      *     MaxConcurrency?: string,

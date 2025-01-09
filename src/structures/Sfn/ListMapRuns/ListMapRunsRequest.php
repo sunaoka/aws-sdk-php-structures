@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $executionArn
- * @property int $maxResults
+ * @property int<0, 1000> $maxResults
  * @property string $nextToken
  */
 class ListMapRunsRequest extends Request
@@ -14,7 +14,7 @@ class ListMapRunsRequest extends Request
     /**
      * @param array{
      *     executionArn: string,
-     *     maxResults?: int,
+     *     maxResults?: int<0, 1000>,
      *     nextToken?: string
      * } $args
      */

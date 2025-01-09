@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property list<Player> $Players
  * @property GameSessionConnectionInfo $GameSessionConnectionInfo
- * @property int $EstimatedWaitTime
+ * @property int<0, max> $EstimatedWaitTime
  */
 class MatchmakingTicket extends Shape
 {
@@ -31,7 +31,7 @@ class MatchmakingTicket extends Shape
      *     EndTime?: \Aws\Api\DateTimeResult,
      *     Players?: list<Player>,
      *     GameSessionConnectionInfo?: GameSessionConnectionInfo,
-     *     EstimatedWaitTime?: int
+     *     EstimatedWaitTime?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

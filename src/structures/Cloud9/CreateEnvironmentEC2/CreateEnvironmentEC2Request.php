@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $instanceType
  * @property string $subnetId
  * @property string $imageId
- * @property int $automaticStopTimeMinutes
+ * @property int<0, 20160> $automaticStopTimeMinutes
  * @property string $ownerArn
  * @property list<Shapes\Tag> $tags
  * @property 'CONNECT_SSH'|'CONNECT_SSM' $connectionType
@@ -27,7 +27,7 @@ class CreateEnvironmentEC2Request extends Request
      *     instanceType: string,
      *     subnetId?: string,
      *     imageId: string,
-     *     automaticStopTimeMinutes?: int,
+     *     automaticStopTimeMinutes?: int<0, 20160>,
      *     ownerArn?: string,
      *     tags?: list<Shapes\Tag>,
      *     connectionType?: 'CONNECT_SSH'|'CONNECT_SSM',

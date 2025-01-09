@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $TaskIds
  * @property list<Shapes\DataRepositoryTaskFilter> $Filters
- * @property int $MaxResults
+ * @property int<1, 2147483647> $MaxResults
  * @property string $NextToken
  */
 class DescribeDataRepositoryTasksRequest extends Request
@@ -16,7 +16,7 @@ class DescribeDataRepositoryTasksRequest extends Request
      * @param array{
      *     TaskIds?: list<string>,
      *     Filters?: list<Shapes\DataRepositoryTaskFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 2147483647>,
      *     NextToken?: string
      * } $args
      */

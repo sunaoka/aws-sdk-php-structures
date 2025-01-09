@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $botName
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nameContains
  */
 class GetBotAliasesRequest extends Request
@@ -16,7 +16,7 @@ class GetBotAliasesRequest extends Request
      * @param array{
      *     botName: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nameContains?: string
      * } $args
      */

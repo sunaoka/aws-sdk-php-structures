@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $id
  * @property string $referenceStoreId
  * @property string $range
- * @property int $partNumber
+ * @property int<1, 10000> $partNumber
  * @property 'SOURCE'|'INDEX' $file
  */
 class GetReferenceRequest extends Request
@@ -18,7 +18,7 @@ class GetReferenceRequest extends Request
      *     id: string,
      *     referenceStoreId: string,
      *     range?: string,
-     *     partNumber: int,
+     *     partNumber: int<1, 10000>,
      *     file?: 'SOURCE'|'INDEX'
      * } $args
      */

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<'vtt'|'srt'> $Formats
- * @property int $OutputStartIndex
+ * @property int<0, 1> $OutputStartIndex
  */
 class Subtitles extends Shape
 {
     /**
      * @param array{
      *     Formats?: list<'vtt'|'srt'>,
-     *     OutputStartIndex?: int
+     *     OutputStartIndex?: int<0, 1>
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Transfer\DescribeUser\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Uid
- * @property int $Gid
- * @property list<int> $SecondaryGids
+ * @property int<0, 4294967295> $Uid
+ * @property int<0, 4294967295> $Gid
+ * @property list<int<0, 4294967295>> $SecondaryGids
  */
 class PosixProfile extends Shape
 {
     /**
      * @param array{
-     *     Uid: int,
-     *     Gid: int,
-     *     SecondaryGids?: list<int>
+     *     Uid: int<0, 4294967295>,
+     *     Gid: int<0, 4294967295>,
+     *     SecondaryGids?: list<int<0, 4294967295>>
      * } $args
      */
     public function __construct(array $args)

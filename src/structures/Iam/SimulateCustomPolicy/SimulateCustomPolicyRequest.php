@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CallerArn
  * @property list<Shapes\ContextEntry> $ContextEntries
  * @property string $ResourceHandlingOption
- * @property int $MaxItems
+ * @property int<1, 1000> $MaxItems
  * @property string $Marker
  */
 class SimulateCustomPolicyRequest extends Request
@@ -30,7 +30,7 @@ class SimulateCustomPolicyRequest extends Request
      *     CallerArn?: string,
      *     ContextEntries?: list<Shapes\ContextEntry>,
      *     ResourceHandlingOption?: string,
-     *     MaxItems?: int,
+     *     MaxItems?: int<1, 1000>,
      *     Marker?: string
      * } $args
      */

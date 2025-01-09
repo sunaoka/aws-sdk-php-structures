@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceGroupName
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property int $MaxResults
+ * @property int<1, 40> $MaxResults
  * @property string $NextToken
  * @property string $ComponentName
  * @property 'IGNORED'|'VISIBLE' $Visibility
@@ -22,7 +22,7 @@ class ListProblemsRequest extends Request
      *     ResourceGroupName?: string,
      *     StartTime?: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 40>,
      *     NextToken?: string,
      *     ComponentName?: string,
      *     Visibility?: 'IGNORED'|'VISIBLE'

@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'TRACE'|'DEBUG'|'INFO'|'WARN'|'ERROR'|'FATAL' $Severity
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property int $MaxRecords
+ * @property int<1, 1000> $MaxRecords
  * @property string $NextToken
  */
 class DescribeEventsRequest extends Request
@@ -32,7 +32,7 @@ class DescribeEventsRequest extends Request
      *     Severity?: 'TRACE'|'DEBUG'|'INFO'|'WARN'|'ERROR'|'FATAL',
      *     StartTime?: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult,
-     *     MaxRecords?: int,
+     *     MaxRecords?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

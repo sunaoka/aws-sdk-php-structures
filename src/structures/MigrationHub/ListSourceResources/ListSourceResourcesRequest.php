@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ProgressUpdateStream
  * @property string $MigrationTaskName
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 10> $MaxResults
  */
 class ListSourceResourcesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListSourceResourcesRequest extends Request
      *     ProgressUpdateStream: string,
      *     MigrationTaskName: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 10>
      * } $args
      */
     public function __construct(array $args)

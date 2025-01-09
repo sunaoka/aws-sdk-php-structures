@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iot\ListCommands;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property 'AWS-IoT'|'AWS-IoT-FleetWise' $namespace
  * @property string $commandParameterName
@@ -15,7 +15,7 @@ class ListCommandsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     namespace?: 'AWS-IoT'|'AWS-IoT-FleetWise',
      *     commandParameterName?: string,

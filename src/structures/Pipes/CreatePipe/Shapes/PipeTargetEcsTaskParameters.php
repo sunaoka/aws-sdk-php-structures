@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $TaskDefinitionArn
- * @property int $TaskCount
+ * @property int<1, max> $TaskCount
  * @property 'EC2'|'FARGATE'|'EXTERNAL' $LaunchType
  * @property NetworkConfiguration $NetworkConfiguration
  * @property string $PlatformVersion
@@ -26,7 +26,7 @@ class PipeTargetEcsTaskParameters extends Shape
     /**
      * @param array{
      *     TaskDefinitionArn: string,
-     *     TaskCount?: int,
+     *     TaskCount?: int<1, max>,
      *     LaunchType?: 'EC2'|'FARGATE'|'EXTERNAL',
      *     NetworkConfiguration?: NetworkConfiguration,
      *     PlatformVersion?: string,

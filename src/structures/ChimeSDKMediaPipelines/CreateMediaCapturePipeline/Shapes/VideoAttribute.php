@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\CreateMediaCapturePipeli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CornerRadius
+ * @property int<1, 20> $CornerRadius
  * @property 'Black'|'Blue'|'Red'|'Green'|'White'|'Yellow' $BorderColor
  * @property 'Black'|'Blue'|'Red'|'Green'|'White'|'Yellow' $HighlightColor
- * @property int $BorderThickness
+ * @property int<1, 20> $BorderThickness
  */
 class VideoAttribute extends Shape
 {
     /**
      * @param array{
-     *     CornerRadius?: int,
+     *     CornerRadius?: int<1, 20>,
      *     BorderColor?: 'Black'|'Blue'|'Red'|'Green'|'White'|'Yellow',
      *     HighlightColor?: 'Black'|'Blue'|'Red'|'Green'|'White'|'Yellow',
-     *     BorderThickness?: int
+     *     BorderThickness?: int<1, 20>
      * } $args
      */
     public function __construct(array $args = [])

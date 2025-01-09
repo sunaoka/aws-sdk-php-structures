@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DeleteVoiceMessageSpendLimit
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $MonthlyLimit
+ * @property int<0, 1000000000> $MonthlyLimit
  */
 class DeleteVoiceMessageSpendLimitOverrideResponse extends Response
 {

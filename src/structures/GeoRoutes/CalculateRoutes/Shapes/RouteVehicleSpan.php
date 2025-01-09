@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $BestCaseDuration
+ * @property int<0, 4294967295> $BestCaseDuration
  * @property list<'Allowed'|'NoThroughTraffic'|'TollRoad'> $CarAccess
  * @property string $Country
- * @property int $Distance
- * @property int $Duration
+ * @property int<0, 4294967295> $Distance
+ * @property int<0, 4294967295> $Duration
  * @property RouteSpanDynamicSpeedDetails $DynamicSpeed
- * @property int $FunctionalClassification
+ * @property int<1, 5> $FunctionalClassification
  * @property 'Emergency'|'KeyAccess'|'PermissionRequired' $Gate
- * @property int $GeometryOffset
+ * @property int<0, max> $GeometryOffset
  * @property list<int> $Incidents
  * @property list<LocalizedString> $Names
  * @property list<int> $Notices
@@ -26,22 +26,22 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<int> $TollSystems
  * @property list<'Allowed'|'NoThroughTraffic'|'TollRoad'> $TruckAccess
  * @property list<int> $TruckRoadTypes
- * @property int $TypicalDuration
+ * @property int<0, 4294967295> $TypicalDuration
  * @property list<int> $Zones
  */
 class RouteVehicleSpan extends Shape
 {
     /**
      * @param array{
-     *     BestCaseDuration?: int,
+     *     BestCaseDuration?: int<0, 4294967295>,
      *     CarAccess?: list<'Allowed'|'NoThroughTraffic'|'TollRoad'>,
      *     Country?: string,
-     *     Distance?: int,
-     *     Duration?: int,
+     *     Distance?: int<0, 4294967295>,
+     *     Duration?: int<0, 4294967295>,
      *     DynamicSpeed?: RouteSpanDynamicSpeedDetails,
-     *     FunctionalClassification?: int,
+     *     FunctionalClassification?: int<1, 5>,
      *     Gate?: 'Emergency'|'KeyAccess'|'PermissionRequired',
-     *     GeometryOffset?: int,
+     *     GeometryOffset?: int<0, max>,
      *     Incidents?: list<int>,
      *     Names?: list<LocalizedString>,
      *     Notices?: list<int>,
@@ -54,7 +54,7 @@ class RouteVehicleSpan extends Shape
      *     TollSystems?: list<int>,
      *     TruckAccess?: list<'Allowed'|'NoThroughTraffic'|'TollRoad'>,
      *     TruckRoadTypes?: list<int>,
-     *     TypicalDuration?: int,
+     *     TypicalDuration?: int<0, 4294967295>,
      *     Zones?: list<int>
      * } $args
      */

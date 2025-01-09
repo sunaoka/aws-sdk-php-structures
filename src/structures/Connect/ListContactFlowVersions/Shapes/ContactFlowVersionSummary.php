@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Arn
  * @property string $VersionDescription
- * @property int $Version
+ * @property int<1, max> $Version
  */
 class ContactFlowVersionSummary extends Shape
 {
@@ -15,7 +15,7 @@ class ContactFlowVersionSummary extends Shape
      * @param array{
      *     Arn?: string,
      *     VersionDescription?: string,
-     *     Version?: int
+     *     Version?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

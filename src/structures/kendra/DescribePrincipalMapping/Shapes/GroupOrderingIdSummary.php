@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FAILED'|'SUCCEEDED'|'PROCESSING'|'DELETING'|'DELETED' $Status
  * @property \Aws\Api\DateTimeResult $LastUpdatedAt
  * @property \Aws\Api\DateTimeResult $ReceivedAt
- * @property int $OrderingId
+ * @property int<0, 32535158400000> $OrderingId
  * @property string $FailureReason
  */
 class GroupOrderingIdSummary extends Shape
@@ -18,7 +18,7 @@ class GroupOrderingIdSummary extends Shape
      *     Status?: 'FAILED'|'SUCCEEDED'|'PROCESSING'|'DELETING'|'DELETED',
      *     LastUpdatedAt?: \Aws\Api\DateTimeResult,
      *     ReceivedAt?: \Aws\Api\DateTimeResult,
-     *     OrderingId?: int,
+     *     OrderingId?: int<0, 32535158400000>,
      *     FailureReason?: string
      * } $args
      */

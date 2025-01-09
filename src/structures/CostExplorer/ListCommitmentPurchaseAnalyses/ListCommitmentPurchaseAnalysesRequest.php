@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'SUCCEEDED'|'PROCESSING'|'FAILED' $AnalysisStatus
  * @property string $NextPageToken
- * @property int $PageSize
+ * @property int<0, max> $PageSize
  * @property list<string> $AnalysisIds
  */
 class ListCommitmentPurchaseAnalysesRequest extends Request
@@ -16,7 +16,7 @@ class ListCommitmentPurchaseAnalysesRequest extends Request
      * @param array{
      *     AnalysisStatus?: 'SUCCEEDED'|'PROCESSING'|'FAILED',
      *     NextPageToken?: string,
-     *     PageSize?: int,
+     *     PageSize?: int<0, max>,
      *     AnalysisIds?: list<string>
      * } $args
      */

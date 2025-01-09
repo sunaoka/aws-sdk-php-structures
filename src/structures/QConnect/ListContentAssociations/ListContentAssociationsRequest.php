@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $contentId
  * @property string $knowledgeBaseId
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListContentAssociationsRequest extends Request
@@ -16,7 +16,7 @@ class ListContentAssociationsRequest extends Request
      * @param array{
      *     contentId: string,
      *     knowledgeBaseId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

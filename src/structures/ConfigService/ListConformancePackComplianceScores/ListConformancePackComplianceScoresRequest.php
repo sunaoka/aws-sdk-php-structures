@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ConformancePackComplianceScoresFilters $Filters
  * @property 'ASCENDING'|'DESCENDING' $SortOrder
  * @property 'SCORE' $SortBy
- * @property int $Limit
+ * @property int<0, 20> $Limit
  * @property string $NextToken
  */
 class ListConformancePackComplianceScoresRequest extends Request
@@ -18,7 +18,7 @@ class ListConformancePackComplianceScoresRequest extends Request
      *     Filters?: Shapes\ConformancePackComplianceScoresFilters,
      *     SortOrder?: 'ASCENDING'|'DESCENDING',
      *     SortBy?: 'SCORE',
-     *     Limit?: int,
+     *     Limit?: int<0, 20>,
      *     NextToken?: string
      * } $args
      */

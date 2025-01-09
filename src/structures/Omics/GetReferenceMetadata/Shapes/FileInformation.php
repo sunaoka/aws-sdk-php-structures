@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Omics\GetReferenceMetadata\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $totalParts
- * @property int $partSize
- * @property int $contentLength
+ * @property int<1, 10000> $totalParts
+ * @property int<1, 5368709120> $partSize
+ * @property int<1, 5497558138880> $contentLength
  * @property ReadSetS3Access $s3Access
  */
 class FileInformation extends Shape
 {
     /**
      * @param array{
-     *     totalParts?: int,
-     *     partSize?: int,
-     *     contentLength?: int,
+     *     totalParts?: int<1, 10000>,
+     *     partSize?: int<1, 5368709120>,
+     *     contentLength?: int<1, 5497558138880>,
      *     s3Access?: ReadSetS3Access
      * } $args
      */

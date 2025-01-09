@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AxleCount
+ * @property int<2, 255> $AxleCount
  * @property 'Electric'|'InternalCombustion'|'PluginHybrid' $EngineType
- * @property int $GrossWeight
+ * @property int<0, 4294967295> $GrossWeight
  * @property list<'Combustible'|'Corrosive'|'Explosive'|'Flammable'|'Gas'|'HarmfulToWater'|'Organic'|'Other'|'Poison'|'PoisonousInhalation'|'Radioactive'> $HazardousCargos
- * @property int $Height
- * @property int $HeightAboveFirstAxle
- * @property int $KpraLength
- * @property int $Length
+ * @property int<0, 5000> $Height
+ * @property int<0, 5000> $HeightAboveFirstAxle
+ * @property int<0, 4294967295> $KpraLength
+ * @property int<0, 30000> $Length
  * @property RouteVehicleLicensePlate $LicensePlate
  * @property double $MaxSpeed
- * @property int $Occupancy
- * @property int $PayloadCapacity
- * @property int $TireCount
+ * @property int<1, max> $Occupancy
+ * @property int<0, 4294967295> $PayloadCapacity
+ * @property int<1, 255> $TireCount
  * @property RouteTrailerOptions $Trailer
  * @property 'LightTruck'|'StraightTruck'|'Tractor' $TruckType
  * @property string $TunnelRestrictionCode
- * @property int $WeightPerAxle
+ * @property int<0, 4294967295> $WeightPerAxle
  * @property WeightPerAxleGroup $WeightPerAxleGroup
- * @property int $Width
+ * @property int<0, 5000> $Width
  */
 class RouteTruckOptions extends Shape
 {
     /**
      * @param array{
-     *     AxleCount?: int,
+     *     AxleCount?: int<2, 255>,
      *     EngineType?: 'Electric'|'InternalCombustion'|'PluginHybrid',
-     *     GrossWeight?: int,
+     *     GrossWeight?: int<0, 4294967295>,
      *     HazardousCargos?: list<'Combustible'|'Corrosive'|'Explosive'|'Flammable'|'Gas'|'HarmfulToWater'|'Organic'|'Other'|'Poison'|'PoisonousInhalation'|'Radioactive'>,
-     *     Height?: int,
-     *     HeightAboveFirstAxle?: int,
-     *     KpraLength?: int,
-     *     Length?: int,
+     *     Height?: int<0, 5000>,
+     *     HeightAboveFirstAxle?: int<0, 5000>,
+     *     KpraLength?: int<0, 4294967295>,
+     *     Length?: int<0, 30000>,
      *     LicensePlate?: RouteVehicleLicensePlate,
      *     MaxSpeed?: double,
-     *     Occupancy?: int,
-     *     PayloadCapacity?: int,
-     *     TireCount?: int,
+     *     Occupancy?: int<1, max>,
+     *     PayloadCapacity?: int<0, 4294967295>,
+     *     TireCount?: int<1, 255>,
      *     Trailer?: RouteTrailerOptions,
      *     TruckType?: 'LightTruck'|'StraightTruck'|'Tractor',
      *     TunnelRestrictionCode?: string,
-     *     WeightPerAxle?: int,
+     *     WeightPerAxle?: int<0, 4294967295>,
      *     WeightPerAxleGroup?: WeightPerAxleGroup,
-     *     Width?: int
+     *     Width?: int<0, 5000>
      * } $args
      */
     public function __construct(array $args = [])

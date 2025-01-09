@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $CreateDate
  * @property string $AssumeRolePolicyDocument
  * @property string $Description
- * @property int $MaxSessionDuration
+ * @property int<3600, 43200> $MaxSessionDuration
  * @property AttachedPermissionsBoundary $PermissionsBoundary
  * @property list<Tag> $Tags
  * @property RoleLastUsed $RoleLastUsed
@@ -28,7 +28,7 @@ class Role extends Shape
      *     CreateDate: \Aws\Api\DateTimeResult,
      *     AssumeRolePolicyDocument?: string,
      *     Description?: string,
-     *     MaxSessionDuration?: int,
+     *     MaxSessionDuration?: int<3600, 43200>,
      *     PermissionsBoundary?: AttachedPermissionsBoundary,
      *     Tags?: list<Tag>,
      *     RoleLastUsed?: RoleLastUsed

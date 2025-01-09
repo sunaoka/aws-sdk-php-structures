@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $resourceId
  * @property string $iamArn
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class ListAccessPoliciesRequest extends Request
 {
@@ -23,7 +23,7 @@ class ListAccessPoliciesRequest extends Request
      *     resourceId?: string,
      *     iamArn?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args = [])

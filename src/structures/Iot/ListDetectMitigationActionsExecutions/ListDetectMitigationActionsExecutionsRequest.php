@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $thingName
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $endTime
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property string $nextToken
  */
 class ListDetectMitigationActionsExecutionsRequest extends Request
@@ -22,7 +22,7 @@ class ListDetectMitigationActionsExecutionsRequest extends Request
      *     thingName?: string,
      *     startTime?: \Aws\Api\DateTimeResult,
      *     endTime?: \Aws\Api\DateTimeResult,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     nextToken?: string
      * } $args
      */

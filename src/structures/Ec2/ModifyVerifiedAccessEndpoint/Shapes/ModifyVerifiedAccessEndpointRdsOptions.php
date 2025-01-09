@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $SubnetIds
- * @property int $Port
+ * @property int<1, 65535> $Port
  * @property string $RdsEndpoint
  */
 class ModifyVerifiedAccessEndpointRdsOptions extends Shape
@@ -14,7 +14,7 @@ class ModifyVerifiedAccessEndpointRdsOptions extends Shape
     /**
      * @param array{
      *     SubnetIds?: list<string>,
-     *     Port?: int,
+     *     Port?: int<1, 65535>,
      *     RdsEndpoint?: string
      * } $args
      */

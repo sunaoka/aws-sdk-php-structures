@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
  * @property 'Ascending'|'Descending' $SortOrder
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListFlowDefinitionsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListFlowDefinitionsRequest extends Request
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
      *     SortOrder?: 'Ascending'|'Descending',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

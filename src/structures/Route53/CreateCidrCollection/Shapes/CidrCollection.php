@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Arn
  * @property string $Id
  * @property string $Name
- * @property int $Version
+ * @property int<1, max> $Version
  */
 class CidrCollection extends Shape
 {
@@ -17,7 +17,7 @@ class CidrCollection extends Shape
      *     Arn?: string,
      *     Id?: string,
      *     Name?: string,
-     *     Version?: int
+     *     Version?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

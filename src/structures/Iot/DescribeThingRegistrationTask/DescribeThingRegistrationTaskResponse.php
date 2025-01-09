@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $message
  * @property int $successCount
  * @property int $failureCount
- * @property int $percentageProgress
+ * @property int<0, 100> $percentageProgress
  */
 class DescribeThingRegistrationTaskResponse extends Response
 {

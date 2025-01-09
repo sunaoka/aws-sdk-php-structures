@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting' $statusEquals
  * @property 'ModelEvaluation'|'RagEvaluation' $applicationTypeEquals
  * @property string $nameContains
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property 'CreationTime' $sortBy
  * @property 'Ascending'|'Descending' $sortOrder
@@ -24,7 +24,7 @@ class ListEvaluationJobsRequest extends Request
      *     statusEquals?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting',
      *     applicationTypeEquals?: 'ModelEvaluation'|'RagEvaluation',
      *     nameContains?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     sortBy?: 'CreationTime',
      *     sortOrder?: 'Ascending'|'Descending'

@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ChoiceId
  * @property 'OKAY'|'WARNING'|'ERROR'|'NOT_AVAILABLE'|'FETCH_FAILED' $Status
  * @property string $AccountId
- * @property int $FlaggedResources
+ * @property int<1, 9999> $FlaggedResources
  * @property 'ASSUME_ROLE_ERROR'|'ACCESS_DENIED'|'UNKNOWN_ERROR'|'PREMIUM_SUPPORT_REQUIRED' $Reason
  * @property \Aws\Api\DateTimeResult $UpdatedAt
  */
@@ -33,7 +33,7 @@ class CheckDetail extends Shape
      *     ChoiceId?: string,
      *     Status?: 'OKAY'|'WARNING'|'ERROR'|'NOT_AVAILABLE'|'FETCH_FAILED',
      *     AccountId?: string,
-     *     FlaggedResources?: int,
+     *     FlaggedResources?: int<1, 9999>,
      *     Reason?: 'ASSUME_ROLE_ERROR'|'ACCESS_DENIED'|'UNKNOWN_ERROR'|'PREMIUM_SUPPORT_REQUIRED',
      *     UpdatedAt?: \Aws\Api\DateTimeResult
      * } $args

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $channelArn
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListStreamSessionsRequest extends Request
@@ -14,7 +14,7 @@ class ListStreamSessionsRequest extends Request
     /**
      * @param array{
      *     channelArn: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

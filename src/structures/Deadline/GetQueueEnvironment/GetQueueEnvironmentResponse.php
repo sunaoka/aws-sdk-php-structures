@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $queueEnvironmentId
  * @property string $name
- * @property int $priority
+ * @property int<0, 10000> $priority
  * @property 'JSON'|'YAML' $templateType
  * @property string $template
  * @property \Aws\Api\DateTimeResult $createdAt

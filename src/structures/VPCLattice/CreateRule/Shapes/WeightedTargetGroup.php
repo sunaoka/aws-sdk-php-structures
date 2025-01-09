@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $targetGroupIdentifier
- * @property int $weight
+ * @property int<0, 999> $weight
  */
 class WeightedTargetGroup extends Shape
 {
     /**
      * @param array{
      *     targetGroupIdentifier: string,
-     *     weight?: int
+     *     weight?: int<0, 999>
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ContactId
- * @property int $MaxResults
+ * @property int<0, 100> $MaxResults
  * @property string $NextToken
  * @property 'FORWARD'|'BACKWARD' $ScanDirection
  * @property 'DESCENDING'|'ASCENDING' $SortOrder
@@ -18,7 +18,7 @@ class GetTranscriptRequest extends Request
     /**
      * @param array{
      *     ContactId?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 100>,
      *     NextToken?: string,
      *     ScanDirection?: 'FORWARD'|'BACKWARD',
      *     SortOrder?: 'DESCENDING'|'ASCENDING',

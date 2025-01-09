@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $CryptoProviders
  * @property 'KEY_EXCHANGE'|'SIGNATURE' $KeySpec
  * @property KeyUsageProperty $KeyUsageProperty
- * @property int $MinimalKeyLength
+ * @property int<1, max> $MinimalKeyLength
  */
 class PrivateKeyAttributesV3 extends Shape
 {
@@ -19,7 +19,7 @@ class PrivateKeyAttributesV3 extends Shape
      *     CryptoProviders?: list<string>,
      *     KeySpec: 'KEY_EXCHANGE'|'SIGNATURE',
      *     KeyUsageProperty: KeyUsageProperty,
-     *     MinimalKeyLength: int
+     *     MinimalKeyLength: int<1, max>
      * } $args
      */
     public function __construct(array $args)

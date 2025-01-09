@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<double> $OriginalPosition
  * @property list<double> $Position
  * @property 'Left'|'Right' $SideOfStreet
- * @property int $WaypointIndex
+ * @property int<0, max> $WaypointIndex
  */
 class RoutePedestrianPlace extends Shape
 {
@@ -19,7 +19,7 @@ class RoutePedestrianPlace extends Shape
      *     OriginalPosition?: list<double>,
      *     Position: list<double>,
      *     SideOfStreet?: 'Left'|'Right',
-     *     WaypointIndex?: int
+     *     WaypointIndex?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

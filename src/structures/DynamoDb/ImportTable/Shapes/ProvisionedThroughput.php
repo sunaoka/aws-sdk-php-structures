@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DynamoDb\ImportTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ReadCapacityUnits
- * @property int $WriteCapacityUnits
+ * @property int<1, max> $ReadCapacityUnits
+ * @property int<1, max> $WriteCapacityUnits
  */
 class ProvisionedThroughput extends Shape
 {
     /**
      * @param array{
-     *     ReadCapacityUnits: int,
-     *     WriteCapacityUnits: int
+     *     ReadCapacityUnits: int<1, max>,
+     *     WriteCapacityUnits: int<1, max>
      * } $args
      */
     public function __construct(array $args)

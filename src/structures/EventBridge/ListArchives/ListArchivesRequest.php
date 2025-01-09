@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EventSourceArn
  * @property 'ENABLED'|'DISABLED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED' $State
  * @property string $NextToken
- * @property int $Limit
+ * @property int<1, 100> $Limit
  */
 class ListArchivesRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListArchivesRequest extends Request
      *     EventSourceArn?: string,
      *     State?: 'ENABLED'|'DISABLED'|'CREATING'|'UPDATING'|'CREATE_FAILED'|'UPDATE_FAILED',
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

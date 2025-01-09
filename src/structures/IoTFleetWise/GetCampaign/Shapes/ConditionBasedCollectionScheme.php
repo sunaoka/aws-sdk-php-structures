@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $expression
- * @property int $minimumTriggerIntervalMs
+ * @property int<0, 4294967295> $minimumTriggerIntervalMs
  * @property 'ALWAYS'|'RISING_EDGE' $triggerMode
- * @property int $conditionLanguageVersion
+ * @property int<1, 1> $conditionLanguageVersion
  */
 class ConditionBasedCollectionScheme extends Shape
 {
     /**
      * @param array{
      *     expression: string,
-     *     minimumTriggerIntervalMs?: int,
+     *     minimumTriggerIntervalMs?: int<0, 4294967295>,
      *     triggerMode?: 'ALWAYS'|'RISING_EDGE',
-     *     conditionLanguageVersion?: int
+     *     conditionLanguageVersion?: int<1, 1>
      * } $args
      */
     public function __construct(array $args)

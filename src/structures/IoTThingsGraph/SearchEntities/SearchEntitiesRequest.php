@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'DEVICE'|'SERVICE'|'DEVICE_MODEL'|'CAPABILITY'|'STATE'|'ACTION'|'EVENT'|'PROPERTY'|'MAPPING'|'ENUM'> $entityTypes
  * @property list<Shapes\EntityFilter> $filters
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property int $namespaceVersion
  */
 class SearchEntitiesRequest extends Request
@@ -18,7 +18,7 @@ class SearchEntitiesRequest extends Request
      *     entityTypes: list<'DEVICE'|'SERVICE'|'DEVICE_MODEL'|'CAPABILITY'|'STATE'|'ACTION'|'EVENT'|'PROPERTY'|'MAPPING'|'ENUM'>,
      *     filters?: list<Shapes\EntityFilter>,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     namespaceVersion?: int
      * } $args
      */

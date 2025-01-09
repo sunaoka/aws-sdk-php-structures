@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $Description
  * @property 'ENABLED'|'DISABLED' $State
- * @property int $DisplayOrder
+ * @property int<1, 50> $DisplayOrder
  * @property bool $ResetOrderNumber
  */
 class UpdateAgentStatusRequest extends Request
@@ -22,7 +22,7 @@ class UpdateAgentStatusRequest extends Request
      *     Name?: string,
      *     Description?: string,
      *     State?: 'ENABLED'|'DISABLED',
-     *     DisplayOrder?: int,
+     *     DisplayOrder?: int<1, 50>,
      *     ResetOrderNumber?: bool
      * } $args
      */

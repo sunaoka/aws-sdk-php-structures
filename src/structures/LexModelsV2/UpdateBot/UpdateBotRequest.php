@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $description
  * @property string $roleArn
  * @property Shapes\DataPrivacy $dataPrivacy
- * @property int $idleSessionTTLInSeconds
+ * @property int<60, 86400> $idleSessionTTLInSeconds
  * @property 'Bot'|'BotNetwork' $botType
  * @property list<Shapes\BotMember> $botMembers
  */
@@ -23,7 +23,7 @@ class UpdateBotRequest extends Request
      *     description?: string,
      *     roleArn: string,
      *     dataPrivacy: Shapes\DataPrivacy,
-     *     idleSessionTTLInSeconds: int,
+     *     idleSessionTTLInSeconds: int<60, 86400>,
      *     botType?: 'Bot'|'BotNetwork',
      *     botMembers?: list<Shapes\BotMember>
      * } $args

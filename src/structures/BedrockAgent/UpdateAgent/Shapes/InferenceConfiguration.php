@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maximumLength
+ * @property int<0, 4096> $maximumLength
  * @property list<string> $stopSequences
  * @property float $temperature
- * @property int $topK
+ * @property int<0, 500> $topK
  * @property float $topP
  */
 class InferenceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     maximumLength?: int,
+     *     maximumLength?: int<0, 4096>,
      *     stopSequences?: list<string>,
      *     temperature?: float,
-     *     topK?: int,
+     *     topK?: int<0, 500>,
      *     topP?: float
      * } $args
      */

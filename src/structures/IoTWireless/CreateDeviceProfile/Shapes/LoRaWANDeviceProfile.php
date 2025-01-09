@@ -6,21 +6,21 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $SupportsClassB
- * @property int $ClassBTimeout
- * @property int $PingSlotPeriod
- * @property int $PingSlotDr
- * @property int $PingSlotFreq
+ * @property int<0, 1000> $ClassBTimeout
+ * @property int<32, 4096> $PingSlotPeriod
+ * @property int<0, 15> $PingSlotDr
+ * @property int<1000000, 16700000> $PingSlotFreq
  * @property bool $SupportsClassC
- * @property int $ClassCTimeout
+ * @property int<0, 1000> $ClassCTimeout
  * @property string $MacVersion
  * @property string $RegParamsRevision
- * @property int $RxDelay1
- * @property int $RxDrOffset1
- * @property int $RxDataRate2
- * @property int $RxFreq2
- * @property list<int> $FactoryPresetFreqsList
- * @property int $MaxEirp
- * @property int $MaxDutyCycle
+ * @property int<0, 15> $RxDelay1
+ * @property int<0, 7> $RxDrOffset1
+ * @property int<0, 15> $RxDataRate2
+ * @property int<1000000, 16700000> $RxFreq2
+ * @property list<int<1000000, 16700000>> $FactoryPresetFreqsList
+ * @property int<0, 15> $MaxEirp
+ * @property int<0, 100> $MaxDutyCycle
  * @property string $RfRegion
  * @property bool $SupportsJoin
  * @property bool $Supports32BitFCnt
@@ -30,21 +30,21 @@ class LoRaWANDeviceProfile extends Shape
     /**
      * @param array{
      *     SupportsClassB?: bool,
-     *     ClassBTimeout?: int,
-     *     PingSlotPeriod?: int,
-     *     PingSlotDr?: int,
-     *     PingSlotFreq?: int,
+     *     ClassBTimeout?: int<0, 1000>,
+     *     PingSlotPeriod?: int<32, 4096>,
+     *     PingSlotDr?: int<0, 15>,
+     *     PingSlotFreq?: int<1000000, 16700000>,
      *     SupportsClassC?: bool,
-     *     ClassCTimeout?: int,
+     *     ClassCTimeout?: int<0, 1000>,
      *     MacVersion?: string,
      *     RegParamsRevision?: string,
-     *     RxDelay1?: int,
-     *     RxDrOffset1?: int,
-     *     RxDataRate2?: int,
-     *     RxFreq2?: int,
-     *     FactoryPresetFreqsList?: list<int>,
-     *     MaxEirp?: int,
-     *     MaxDutyCycle?: int,
+     *     RxDelay1?: int<0, 15>,
+     *     RxDrOffset1?: int<0, 7>,
+     *     RxDataRate2?: int<0, 15>,
+     *     RxFreq2?: int<1000000, 16700000>,
+     *     FactoryPresetFreqsList?: list<int<1000000, 16700000>>,
+     *     MaxEirp?: int<0, 15>,
+     *     MaxDutyCycle?: int<0, 100>,
      *     RfRegion?: string,
      *     SupportsJoin?: bool,
      *     Supports32BitFCnt?: bool

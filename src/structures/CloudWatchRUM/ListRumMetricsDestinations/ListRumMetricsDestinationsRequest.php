@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AppMonitorName
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListRumMetricsDestinationsRequest extends Request
@@ -14,7 +14,7 @@ class ListRumMetricsDestinationsRequest extends Request
     /**
      * @param array{
      *     AppMonitorName: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

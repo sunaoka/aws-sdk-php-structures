@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Ascending'|'Descending' $SortOrder
  * @property string $NameContains
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListWorkforcesRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListWorkforcesRequest extends Request
      *     SortOrder?: 'Ascending'|'Descending',
      *     NameContains?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $AnalysisId
- * @property int $RecoveryWindowInDays
+ * @property int<7, 30> $RecoveryWindowInDays
  * @property bool $ForceDeleteWithoutRecovery
  */
 class DeleteAnalysisRequest extends Request
@@ -16,7 +16,7 @@ class DeleteAnalysisRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     AnalysisId: string,
-     *     RecoveryWindowInDays?: int,
+     *     RecoveryWindowInDays?: int<7, 30>,
      *     ForceDeleteWithoutRecovery?: bool
      * } $args
      */

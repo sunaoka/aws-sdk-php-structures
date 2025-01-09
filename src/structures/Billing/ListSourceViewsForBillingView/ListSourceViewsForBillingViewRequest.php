@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListSourceViewsForBillingViewRequest extends Request
@@ -14,7 +14,7 @@ class ListSourceViewsForBillingViewRequest extends Request
     /**
      * @param array{
      *     arn: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $notificationConfigurationArn
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListChannelsRequest extends Request
@@ -14,7 +14,7 @@ class ListChannelsRequest extends Request
     /**
      * @param array{
      *     notificationConfigurationArn: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $applicationId
- * @property int $applicationVersion
+ * @property int<1, max> $applicationVersion
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string $deploymentId
  * @property string $environmentId

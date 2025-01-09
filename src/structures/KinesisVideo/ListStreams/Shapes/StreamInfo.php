@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Version
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING' $Status
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property int $DataRetentionInHours
+ * @property int<0, max> $DataRetentionInHours
  */
 class StreamInfo extends Shape
 {
@@ -27,7 +27,7 @@ class StreamInfo extends Shape
      *     Version?: string,
      *     Status?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING',
      *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     DataRetentionInHours?: int
+     *     DataRetentionInHours?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

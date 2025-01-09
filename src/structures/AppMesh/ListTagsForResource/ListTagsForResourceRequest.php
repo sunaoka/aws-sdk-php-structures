@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppMesh\ListTagsForResource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $limit
+ * @property int<1, 50> $limit
  * @property string $nextToken
  * @property string $resourceArn
  */
@@ -13,7 +13,7 @@ class ListTagsForResourceRequest extends Request
 {
     /**
      * @param array{
-     *     limit?: int,
+     *     limit?: int<1, 50>,
      *     nextToken?: string,
      *     resourceArn: string
      * } $args

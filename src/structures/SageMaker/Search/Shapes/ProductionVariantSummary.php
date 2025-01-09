@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<DeployedImage> $DeployedImages
  * @property float $CurrentWeight
  * @property float $DesiredWeight
- * @property int $CurrentInstanceCount
- * @property int $DesiredInstanceCount
+ * @property int<0, max> $CurrentInstanceCount
+ * @property int<0, max> $DesiredInstanceCount
  * @property list<ProductionVariantStatus> $VariantStatus
  * @property ProductionVariantServerlessConfig $CurrentServerlessConfig
  * @property ProductionVariantServerlessConfig $DesiredServerlessConfig
@@ -25,8 +25,8 @@ class ProductionVariantSummary extends Shape
      *     DeployedImages?: list<DeployedImage>,
      *     CurrentWeight?: float,
      *     DesiredWeight?: float,
-     *     CurrentInstanceCount?: int,
-     *     DesiredInstanceCount?: int,
+     *     CurrentInstanceCount?: int<0, max>,
+     *     DesiredInstanceCount?: int<0, max>,
      *     VariantStatus?: list<ProductionVariantStatus>,
      *     CurrentServerlessConfig?: ProductionVariantServerlessConfig,
      *     DesiredServerlessConfig?: ProductionVariantServerlessConfig,

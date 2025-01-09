@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $roleArn
  * @property list<Shapes\Tag> $tags
  * @property string $key
- * @property int $severity
+ * @property int<0, 2147483647> $severity
  * @property Shapes\AlarmRule $alarmRule
  * @property Shapes\AlarmNotification $alarmNotification
  * @property Shapes\AlarmEventActions $alarmEventActions
@@ -25,7 +25,7 @@ class CreateAlarmModelRequest extends Request
      *     roleArn: string,
      *     tags?: list<Shapes\Tag>,
      *     key?: string,
-     *     severity?: int,
+     *     severity?: int<0, 2147483647>,
      *     alarmRule: Shapes\AlarmRule,
      *     alarmNotification?: Shapes\AlarmNotification,
      *     alarmEventActions?: Shapes\AlarmEventActions,

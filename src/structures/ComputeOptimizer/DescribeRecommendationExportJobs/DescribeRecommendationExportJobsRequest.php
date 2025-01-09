@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $jobIds
  * @property list<Shapes\JobFilter> $filters
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<0, 1000> $maxResults
  */
 class DescribeRecommendationExportJobsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeRecommendationExportJobsRequest extends Request
      *     jobIds?: list<string>,
      *     filters?: list<Shapes\JobFilter>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<0, 1000>
      * } $args
      */
     public function __construct(array $args = [])

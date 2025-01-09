@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AcceptLanguage
  * @property string $PortfolioId
- * @property int $PageSize
+ * @property int<0, 20> $PageSize
  * @property string $PageToken
  */
 class ListPrincipalsForPortfolioRequest extends Request
@@ -16,7 +16,7 @@ class ListPrincipalsForPortfolioRequest extends Request
      * @param array{
      *     AcceptLanguage?: string,
      *     PortfolioId: string,
-     *     PageSize?: int,
+     *     PageSize?: int<0, 20>,
      *     PageToken?: string
      * } $args
      */

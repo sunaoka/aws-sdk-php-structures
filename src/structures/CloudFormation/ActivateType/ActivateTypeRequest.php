@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LoggingConfig $LoggingConfig
  * @property string $ExecutionRoleArn
  * @property 'MAJOR'|'MINOR' $VersionBump
- * @property int $MajorVersion
+ * @property int<1, 100000> $MajorVersion
  */
 class ActivateTypeRequest extends Request
 {
@@ -29,7 +29,7 @@ class ActivateTypeRequest extends Request
      *     LoggingConfig?: Shapes\LoggingConfig,
      *     ExecutionRoleArn?: string,
      *     VersionBump?: 'MAJOR'|'MINOR',
-     *     MajorVersion?: int
+     *     MajorVersion?: int<1, 100000>
      * } $args
      */
     public function __construct(array $args = [])

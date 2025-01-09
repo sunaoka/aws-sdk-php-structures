@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WAFV2\DescribeManagedRuleGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ResponseCode
+ * @property int<200, 599> $ResponseCode
  * @property string $CustomResponseBodyKey
  * @property list<CustomHTTPHeader> $ResponseHeaders
  */
@@ -13,7 +13,7 @@ class CustomResponse extends Shape
 {
     /**
      * @param array{
-     *     ResponseCode: int,
+     *     ResponseCode: int<200, 599>,
      *     CustomResponseBodyKey?: string,
      *     ResponseHeaders?: list<CustomHTTPHeader>
      * } $args

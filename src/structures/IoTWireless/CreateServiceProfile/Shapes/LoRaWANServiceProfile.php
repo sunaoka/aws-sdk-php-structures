@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $AddGwMetadata
- * @property int $DrMin
- * @property int $DrMax
+ * @property int<0, 15> $DrMin
+ * @property int<0, 15> $DrMax
  * @property bool $PrAllowed
  * @property bool $RaAllowed
  */
@@ -16,8 +16,8 @@ class LoRaWANServiceProfile extends Shape
     /**
      * @param array{
      *     AddGwMetadata?: bool,
-     *     DrMin?: int,
-     *     DrMax?: int,
+     *     DrMin?: int<0, 15>,
+     *     DrMax?: int<0, 15>,
      *     PrAllowed?: bool,
      *     RaAllowed?: bool
      * } $args

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $UserEmail
  * @property 'PrivateUser'|'SharedDevice' $UserType
- * @property int $MaxResults
+ * @property int<1, 200> $MaxResults
  * @property string $NextToken
  */
 class ListUsersRequest extends Request
@@ -18,7 +18,7 @@ class ListUsersRequest extends Request
      *     AccountId: string,
      *     UserEmail?: string,
      *     UserType?: 'PrivateUser'|'SharedDevice',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 200>,
      *     NextToken?: string
      * } $args
      */

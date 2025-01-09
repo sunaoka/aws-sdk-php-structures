@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Location
  * @property string $FilterExpression
  * @property string $SortExpression
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $NextToken
  */
 class SearchGameSessionsRequest extends Request
@@ -22,7 +22,7 @@ class SearchGameSessionsRequest extends Request
      *     Location?: string,
      *     FilterExpression?: string,
      *     SortExpression?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

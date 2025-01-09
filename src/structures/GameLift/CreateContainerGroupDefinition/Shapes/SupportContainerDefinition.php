@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $Essential
  * @property ContainerHealthCheck $HealthCheck
  * @property string $ImageUri
- * @property int $MemoryHardLimitMebibytes
+ * @property int<4, 1024000> $MemoryHardLimitMebibytes
  * @property ContainerPortConfiguration $PortConfiguration
  * @property string $ResolvedImageDigest
  * @property double $Vcpu
@@ -28,7 +28,7 @@ class SupportContainerDefinition extends Shape
      *     Essential?: bool,
      *     HealthCheck?: ContainerHealthCheck,
      *     ImageUri?: string,
-     *     MemoryHardLimitMebibytes?: int,
+     *     MemoryHardLimitMebibytes?: int<4, 1024000>,
      *     PortConfiguration?: ContainerPortConfiguration,
      *     ResolvedImageDigest?: string,
      *     Vcpu?: double

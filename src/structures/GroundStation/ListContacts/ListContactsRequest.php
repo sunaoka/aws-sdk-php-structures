@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property \Aws\Api\DateTimeResult $endTime
  * @property string $groundStation
- * @property int $maxResults
+ * @property int<0, 100> $maxResults
  * @property string $missionProfileArn
  * @property string $nextToken
  * @property string $satelliteArn
@@ -20,7 +20,7 @@ class ListContactsRequest extends Request
      * @param array{
      *     endTime: \Aws\Api\DateTimeResult,
      *     groundStation?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<0, 100>,
      *     missionProfileArn?: string,
      *     nextToken?: string,
      *     satelliteArn?: string,

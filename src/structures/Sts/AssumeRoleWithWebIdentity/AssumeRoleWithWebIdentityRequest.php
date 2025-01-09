@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ProviderId
  * @property list<Shapes\PolicyDescriptorType> $PolicyArns
  * @property string $Policy
- * @property int $DurationSeconds
+ * @property int<900, 43200> $DurationSeconds
  */
 class AssumeRoleWithWebIdentityRequest extends Request
 {
@@ -23,7 +23,7 @@ class AssumeRoleWithWebIdentityRequest extends Request
      *     ProviderId?: string,
      *     PolicyArns?: list<Shapes\PolicyDescriptorType>,
      *     Policy?: string,
-     *     DurationSeconds?: int
+     *     DurationSeconds?: int<900, 43200>
      * } $args
      */
     public function __construct(array $args)

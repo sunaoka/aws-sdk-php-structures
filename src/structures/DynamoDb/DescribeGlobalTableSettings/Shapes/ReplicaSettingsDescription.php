@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RegionName
  * @property 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS' $ReplicaStatus
  * @property BillingModeSummary $ReplicaBillingModeSummary
- * @property int $ReplicaProvisionedReadCapacityUnits
+ * @property int<0, max> $ReplicaProvisionedReadCapacityUnits
  * @property AutoScalingSettingsDescription $ReplicaProvisionedReadCapacityAutoScalingSettings
- * @property int $ReplicaProvisionedWriteCapacityUnits
+ * @property int<0, max> $ReplicaProvisionedWriteCapacityUnits
  * @property AutoScalingSettingsDescription $ReplicaProvisionedWriteCapacityAutoScalingSettings
  * @property list<ReplicaGlobalSecondaryIndexSettingsDescription> $ReplicaGlobalSecondaryIndexSettings
  * @property TableClassSummary $ReplicaTableClassSummary
@@ -22,9 +22,9 @@ class ReplicaSettingsDescription extends Shape
      *     RegionName: string,
      *     ReplicaStatus?: 'CREATING'|'CREATION_FAILED'|'UPDATING'|'DELETING'|'ACTIVE'|'REGION_DISABLED'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS',
      *     ReplicaBillingModeSummary?: BillingModeSummary,
-     *     ReplicaProvisionedReadCapacityUnits?: int,
+     *     ReplicaProvisionedReadCapacityUnits?: int<0, max>,
      *     ReplicaProvisionedReadCapacityAutoScalingSettings?: AutoScalingSettingsDescription,
-     *     ReplicaProvisionedWriteCapacityUnits?: int,
+     *     ReplicaProvisionedWriteCapacityUnits?: int<0, max>,
      *     ReplicaProvisionedWriteCapacityAutoScalingSettings?: AutoScalingSettingsDescription,
      *     ReplicaGlobalSecondaryIndexSettings?: list<ReplicaGlobalSecondaryIndexSettingsDescription>,
      *     ReplicaTableClassSummary?: TableClassSummary

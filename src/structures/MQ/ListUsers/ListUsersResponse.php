@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $BrokerId
- * @property int $MaxResults
+ * @property int<5, 100> $MaxResults
  * @property string $NextToken
  * @property list<Shapes\UserSummary> $Users
  */

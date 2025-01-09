@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'http'|'https'|'tcp' $Protocol
- * @property int $Port
+ * @property int<1, 65535> $Port
  * @property string $LoadBalancerArn
  * @property list<string> $SubnetIds
  * @property list<VerifiedAccessEndpointPortRange> $PortRanges
@@ -16,7 +16,7 @@ class VerifiedAccessEndpointLoadBalancerOptions extends Shape
     /**
      * @param array{
      *     Protocol?: 'http'|'https'|'tcp',
-     *     Port?: int,
+     *     Port?: int<1, 65535>,
      *     LoadBalancerArn?: string,
      *     SubnetIds?: list<string>,
      *     PortRanges?: list<VerifiedAccessEndpointPortRange>

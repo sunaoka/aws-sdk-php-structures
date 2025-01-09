@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $ModelPackageName
  * @property string $ModelPackageGroupName
- * @property int $ModelPackageVersion
+ * @property int<1, max> $ModelPackageVersion
  * @property string $ModelPackageArn
  * @property string $ModelPackageDescription
  * @property \Aws\Api\DateTimeResult $CreationTime

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CoreNetworkId
  * @property string $ConnectAttachmentId
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class ListConnectPeersRequest extends Request
@@ -16,7 +16,7 @@ class ListConnectPeersRequest extends Request
      * @param array{
      *     CoreNetworkId?: string,
      *     ConnectAttachmentId?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

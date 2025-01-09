@@ -17,8 +17,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $mergedApiExecutionRoleArn
  * @property string $ownerContact
  * @property 'ENABLED'|'DISABLED' $introspectionConfig
- * @property int $queryDepthLimit
- * @property int $resolverCountLimit
+ * @property int<0, 75> $queryDepthLimit
+ * @property int<0, 10000> $resolverCountLimit
  * @property Shapes\EnhancedMetricsConfig $enhancedMetricsConfig
  */
 class UpdateGraphqlApiRequest extends Request
@@ -37,8 +37,8 @@ class UpdateGraphqlApiRequest extends Request
      *     mergedApiExecutionRoleArn?: string,
      *     ownerContact?: string,
      *     introspectionConfig?: 'ENABLED'|'DISABLED',
-     *     queryDepthLimit?: int,
-     *     resolverCountLimit?: int,
+     *     queryDepthLimit?: int<0, 75>,
+     *     resolverCountLimit?: int<0, 10000>,
      *     enhancedMetricsConfig?: Shapes\EnhancedMetricsConfig
      * } $args
      */

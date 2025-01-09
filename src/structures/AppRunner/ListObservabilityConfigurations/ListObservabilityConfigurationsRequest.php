@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ObservabilityConfigurationName
  * @property bool $LatestOnly
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListObservabilityConfigurationsRequest extends Request
@@ -16,7 +16,7 @@ class ListObservabilityConfigurationsRequest extends Request
      * @param array{
      *     ObservabilityConfigurationName?: string,
      *     LatestOnly?: bool,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

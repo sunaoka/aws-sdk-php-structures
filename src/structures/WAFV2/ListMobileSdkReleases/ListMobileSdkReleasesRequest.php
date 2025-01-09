@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'IOS'|'ANDROID' $Platform
  * @property string $NextMarker
- * @property int $Limit
+ * @property int<1, 100> $Limit
  */
 class ListMobileSdkReleasesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListMobileSdkReleasesRequest extends Request
      * @param array{
      *     Platform: 'IOS'|'ANDROID',
      *     NextMarker?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

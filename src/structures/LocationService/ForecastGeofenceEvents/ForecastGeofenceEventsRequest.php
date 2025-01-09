@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Kilometers'|'Miles' $DistanceUnit
  * @property 'KilometersPerHour'|'MilesPerHour' $SpeedUnit
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 20> $MaxResults
  */
 class ForecastGeofenceEventsRequest extends Request
 {
@@ -23,7 +23,7 @@ class ForecastGeofenceEventsRequest extends Request
      *     DistanceUnit?: 'Kilometers'|'Miles',
      *     SpeedUnit?: 'KilometersPerHour'|'MilesPerHour',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 20>
      * } $args
      */
     public function __construct(array $args)

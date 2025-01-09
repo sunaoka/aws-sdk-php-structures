@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $roomIdentifier
  * @property string $userId
  * @property list<'SEND_MESSAGE'|'DISCONNECT_USER'|'DELETE_MESSAGE'> $capabilities
- * @property int $sessionDurationInMinutes
+ * @property int<1, 180> $sessionDurationInMinutes
  * @property array<string, string> $attributes
  */
 class CreateChatTokenRequest extends Request
@@ -18,7 +18,7 @@ class CreateChatTokenRequest extends Request
      *     roomIdentifier: string,
      *     userId: string,
      *     capabilities?: list<'SEND_MESSAGE'|'DISCONNECT_USER'|'DELETE_MESSAGE'>,
-     *     sessionDurationInMinutes?: int,
+     *     sessionDurationInMinutes?: int<1, 180>,
      *     attributes?: array<string, string>
      * } $args
      */

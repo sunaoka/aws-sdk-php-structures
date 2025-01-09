@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property list<TemplateError> $Errors
- * @property int $VersionNumber
+ * @property int<1, max> $VersionNumber
  * @property 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED' $Status
  * @property list<DataSetConfiguration> $DataSetConfigurations
  * @property string $Description
@@ -21,7 +21,7 @@ class TemplateVersion extends Shape
      * @param array{
      *     CreatedTime?: \Aws\Api\DateTimeResult,
      *     Errors?: list<TemplateError>,
-     *     VersionNumber?: int,
+     *     VersionNumber?: int<1, max>,
      *     Status?: 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED',
      *     DataSetConfigurations?: list<DataSetConfiguration>,
      *     Description?: string,

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $BackupId
  * @property string $ServerName
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  */
 class DescribeBackupsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeBackupsRequest extends Request
      *     BackupId?: string,
      *     ServerName?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

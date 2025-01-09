@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Target> $Targets
  * @property 'INSTANCE'|'RESOURCE_GROUP' $ResourceType
  * @property list<Shapes\PatchOrchestratorFilter> $Filters
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $NextToken
  */
 class DescribeMaintenanceWindowScheduleRequest extends Request
@@ -20,7 +20,7 @@ class DescribeMaintenanceWindowScheduleRequest extends Request
      *     Targets?: list<Shapes\Target>,
      *     ResourceType?: 'INSTANCE'|'RESOURCE_GROUP',
      *     Filters?: list<Shapes\PatchOrchestratorFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

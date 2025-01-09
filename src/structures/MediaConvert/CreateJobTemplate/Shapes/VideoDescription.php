@@ -11,16 +11,16 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'IGNORE'|'INSERT' $ColorMetadata
  * @property Rectangle $Crop
  * @property 'DISABLED'|'ENABLED' $DropFrameTimecode
- * @property int $FixedAfd
- * @property int $Height
+ * @property int<0, 15> $FixedAfd
+ * @property int<32, 8192> $Height
  * @property Rectangle $Position
  * @property 'NONE'|'RESPOND'|'PASSTHROUGH' $RespondToAfd
  * @property 'DEFAULT'|'STRETCH_TO_OUTPUT'|'FIT'|'FIT_NO_UPSCALE'|'FILL' $ScalingBehavior
- * @property int $Sharpness
+ * @property int<0, 100> $Sharpness
  * @property 'DISABLED'|'PIC_TIMING_SEI' $TimecodeInsertion
  * @property 'DISABLED'|'ENABLED' $TimecodeTrack
  * @property VideoPreprocessor $VideoPreprocessors
- * @property int $Width
+ * @property int<32, 8192> $Width
  */
 class VideoDescription extends Shape
 {
@@ -32,16 +32,16 @@ class VideoDescription extends Shape
      *     ColorMetadata?: 'IGNORE'|'INSERT',
      *     Crop?: Rectangle,
      *     DropFrameTimecode?: 'DISABLED'|'ENABLED',
-     *     FixedAfd?: int,
-     *     Height?: int,
+     *     FixedAfd?: int<0, 15>,
+     *     Height?: int<32, 8192>,
      *     Position?: Rectangle,
      *     RespondToAfd?: 'NONE'|'RESPOND'|'PASSTHROUGH',
      *     ScalingBehavior?: 'DEFAULT'|'STRETCH_TO_OUTPUT'|'FIT'|'FIT_NO_UPSCALE'|'FILL',
-     *     Sharpness?: int,
+     *     Sharpness?: int<0, 100>,
      *     TimecodeInsertion?: 'DISABLED'|'PIC_TIMING_SEI',
      *     TimecodeTrack?: 'DISABLED'|'ENABLED',
      *     VideoPreprocessors?: VideoPreprocessor,
-     *     Width?: int
+     *     Width?: int<32, 8192>
      * } $args
      */
     public function __construct(array $args = [])

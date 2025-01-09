@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $StatusReason
  * @property \Aws\Api\DateTimeResult $LastConnectionValidationTime
  * @property AuthenticationConfiguration $AuthenticationConfiguration
- * @property int $ConnectionSchemaVersion
+ * @property int<1, 2> $ConnectionSchemaVersion
  * @property list<'SPARK'|'ATHENA'|'PYTHON'> $CompatibleComputeEnvironments
  */
 class Connection extends Shape
@@ -44,7 +44,7 @@ class Connection extends Shape
      *     StatusReason?: string,
      *     LastConnectionValidationTime?: \Aws\Api\DateTimeResult,
      *     AuthenticationConfiguration?: AuthenticationConfiguration,
-     *     ConnectionSchemaVersion?: int,
+     *     ConnectionSchemaVersion?: int<1, 2>,
      *     CompatibleComputeEnvironments?: list<'SPARK'|'ATHENA'|'PYTHON'>
      * } $args
      */

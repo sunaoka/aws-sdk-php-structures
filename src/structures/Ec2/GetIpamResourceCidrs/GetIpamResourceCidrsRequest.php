@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property string $NextToken
  * @property string $IpamScopeId
  * @property string $IpamPoolId
@@ -22,7 +22,7 @@ class GetIpamResourceCidrsRequest extends Request
      * @param array{
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     NextToken?: string,
      *     IpamScopeId: string,
      *     IpamPoolId?: string,

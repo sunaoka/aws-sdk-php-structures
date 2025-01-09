@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $ConfigRuleNames
  * @property string $NextToken
- * @property int $Limit
+ * @property int<0, 50> $Limit
  */
 class DescribeConfigRuleEvaluationStatusRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeConfigRuleEvaluationStatusRequest extends Request
      * @param array{
      *     ConfigRuleNames?: list<string>,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<0, 50>
      * } $args
      */
     public function __construct(array $args = [])

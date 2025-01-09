@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $logGroupIdentifier
  * @property string $policyDocument
- * @property int $lastUpdatedTime
+ * @property int<0, max> $lastUpdatedTime
  */
 class PutDataProtectionPolicyResponse extends Response
 {

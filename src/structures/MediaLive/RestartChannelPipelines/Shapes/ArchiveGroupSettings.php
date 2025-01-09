@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ArchiveCdnSettings $ArchiveCdnSettings
  * @property OutputLocationRef $Destination
- * @property int $RolloverInterval
+ * @property int<1, max> $RolloverInterval
  */
 class ArchiveGroupSettings extends Shape
 {
@@ -15,7 +15,7 @@ class ArchiveGroupSettings extends Shape
      * @param array{
      *     ArchiveCdnSettings?: ArchiveCdnSettings,
      *     Destination: OutputLocationRef,
-     *     RolloverInterval?: int
+     *     RolloverInterval?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

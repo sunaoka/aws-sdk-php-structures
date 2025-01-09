@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ProfileNamePrefix
  * @property 'SELF'|'SHARED' $ProfileOwnerType
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  */
 class ListProfilesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListProfilesRequest extends Request
      *     ProfileNamePrefix?: string,
      *     ProfileOwnerType?: 'SELF'|'SHARED',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

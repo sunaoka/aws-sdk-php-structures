@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxAbrBitrate
- * @property int $MaxRenditions
- * @property int $MinAbrBitrate
+ * @property int<100000, 100000000> $MaxAbrBitrate
+ * @property int<3, 15> $MaxRenditions
+ * @property int<100000, 100000000> $MinAbrBitrate
  * @property list<AutomatedAbrRule> $Rules
  */
 class AutomatedAbrSettings extends Shape
 {
     /**
      * @param array{
-     *     MaxAbrBitrate?: int,
-     *     MaxRenditions?: int,
-     *     MinAbrBitrate?: int,
+     *     MaxAbrBitrate?: int<100000, 100000000>,
+     *     MaxRenditions?: int<3, 15>,
+     *     MinAbrBitrate?: int<100000, 100000000>,
      *     Rules?: list<AutomatedAbrRule>
      * } $args
      */

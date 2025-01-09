@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property list<string> $Inputs
- * @property int $Index
+ * @property int<0, max> $Index
  */
 class SelectFromCollection extends Shape
 {
@@ -15,7 +15,7 @@ class SelectFromCollection extends Shape
      * @param array{
      *     Name: string,
      *     Inputs: list<string>,
-     *     Index: int
+     *     Index: int<0, max>
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $WorkloadId
- * @property int $MilestoneNumber
+ * @property int<1, 100> $MilestoneNumber
  * @property string $LensAlias
  * @property string $LensArn
  * @property list<Shapes\ImprovementSummary> $ImprovementSummaries

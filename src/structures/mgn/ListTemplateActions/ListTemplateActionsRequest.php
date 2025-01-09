@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\TemplateActionsRequestFilters $filters
  * @property string $launchConfigurationTemplateID
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListTemplateActionsRequest extends Request
@@ -16,7 +16,7 @@ class ListTemplateActionsRequest extends Request
      * @param array{
      *     filters?: Shapes\TemplateActionsRequestFilters,
      *     launchConfigurationTemplateID: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

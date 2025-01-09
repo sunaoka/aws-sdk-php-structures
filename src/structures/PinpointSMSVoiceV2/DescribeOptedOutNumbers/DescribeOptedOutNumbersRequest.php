@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $OptedOutNumbers
  * @property list<Shapes\OptedOutFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class DescribeOptedOutNumbersRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeOptedOutNumbersRequest extends Request
      *     OptedOutNumbers?: list<string>,
      *     Filters?: list<Shapes\OptedOutFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

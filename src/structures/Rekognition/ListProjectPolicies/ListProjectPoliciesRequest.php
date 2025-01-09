@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ProjectArn
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 5> $MaxResults
  */
 class ListProjectPoliciesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListProjectPoliciesRequest extends Request
      * @param array{
      *     ProjectArn: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 5>
      * } $args
      */
     public function __construct(array $args)

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $OpsItemType
  * @property array<string, Shapes\OpsItemDataValue> $OperationalData
  * @property list<Shapes\OpsItemNotification> $Notifications
- * @property int $Priority
+ * @property int<1, 5> $Priority
  * @property list<Shapes\RelatedOpsItem> $RelatedOpsItems
  * @property string $Source
  * @property string $Title
@@ -30,7 +30,7 @@ class CreateOpsItemRequest extends Request
      *     OpsItemType?: string,
      *     OperationalData?: array<string, Shapes\OpsItemDataValue>,
      *     Notifications?: list<Shapes\OpsItemNotification>,
-     *     Priority?: int,
+     *     Priority?: int<1, 5>,
      *     RelatedOpsItems?: list<Shapes\RelatedOpsItem>,
      *     Source: string,
      *     Title: string,

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $targetArn
  * @property 'ALL'|'LATEST_ONLY' $historyFilter
  * @property string $parentTargetArn
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListDeploymentsRequest extends Request
@@ -18,7 +18,7 @@ class ListDeploymentsRequest extends Request
      *     targetArn?: string,
      *     historyFilter?: 'ALL'|'LATEST_ONLY',
      *     parentTargetArn?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

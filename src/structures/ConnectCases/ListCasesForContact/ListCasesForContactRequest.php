@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $contactArn
  * @property string $domainId
- * @property int $maxResults
+ * @property int<1, 10> $maxResults
  * @property string $nextToken
  */
 class ListCasesForContactRequest extends Request
@@ -16,7 +16,7 @@ class ListCasesForContactRequest extends Request
      * @param array{
      *     contactArn: string,
      *     domainId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 10>,
      *     nextToken?: string
      * } $args
      */

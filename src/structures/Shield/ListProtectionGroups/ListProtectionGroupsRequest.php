@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 10000> $MaxResults
  * @property Shapes\InclusionProtectionGroupFilters $InclusionFilters
  */
 class ListProtectionGroupsRequest extends Request
@@ -14,7 +14,7 @@ class ListProtectionGroupsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 10000>,
      *     InclusionFilters?: Shapes\InclusionProtectionGroupFilters
      * } $args
      */

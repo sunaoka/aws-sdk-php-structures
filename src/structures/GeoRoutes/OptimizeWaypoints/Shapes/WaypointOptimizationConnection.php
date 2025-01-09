@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\OptimizeWaypoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Distance
+ * @property int<0, 4294967295> $Distance
  * @property string $From
- * @property int $RestDuration
+ * @property int<0, 4294967295> $RestDuration
  * @property string $To
- * @property int $TravelDuration
- * @property int $WaitDuration
+ * @property int<0, 4294967295> $TravelDuration
+ * @property int<0, 4294967295> $WaitDuration
  */
 class WaypointOptimizationConnection extends Shape
 {
     /**
      * @param array{
-     *     Distance: int,
+     *     Distance: int<0, 4294967295>,
      *     From: string,
-     *     RestDuration: int,
+     *     RestDuration: int<0, 4294967295>,
      *     To: string,
-     *     TravelDuration: int,
-     *     WaitDuration: int
+     *     TravelDuration: int<0, 4294967295>,
+     *     WaitDuration: int<0, 4294967295>
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $PageSize
- * @property int $PageNumber
+ * @property int<0, max> $PageNumber
  */
 class PaginationConfiguration extends Shape
 {
     /**
      * @param array{
      *     PageSize: int,
-     *     PageNumber: int
+     *     PageNumber: int<0, max>
      * } $args
      */
     public function __construct(array $args)

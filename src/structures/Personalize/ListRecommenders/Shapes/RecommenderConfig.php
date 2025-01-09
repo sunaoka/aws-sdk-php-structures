@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property array<string, string> $itemExplorationConfig
- * @property int $minRecommendationRequestsPerSecond
+ * @property int<1, max> $minRecommendationRequestsPerSecond
  * @property TrainingDataConfig $trainingDataConfig
  * @property bool $enableMetadataWithRecommendations
  */
@@ -15,7 +15,7 @@ class RecommenderConfig extends Shape
     /**
      * @param array{
      *     itemExplorationConfig?: array<string, string>,
-     *     minRecommendationRequestsPerSecond?: int,
+     *     minRecommendationRequestsPerSecond?: int<1, max>,
      *     trainingDataConfig?: TrainingDataConfig,
      *     enableMetadataWithRecommendations?: bool
      * } $args

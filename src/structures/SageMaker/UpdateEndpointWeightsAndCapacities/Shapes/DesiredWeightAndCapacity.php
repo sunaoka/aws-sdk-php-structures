@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $VariantName
  * @property float $DesiredWeight
- * @property int $DesiredInstanceCount
+ * @property int<0, max> $DesiredInstanceCount
  * @property ProductionVariantServerlessUpdateConfig $ServerlessUpdateConfig
  */
 class DesiredWeightAndCapacity extends Shape
@@ -16,7 +16,7 @@ class DesiredWeightAndCapacity extends Shape
      * @param array{
      *     VariantName: string,
      *     DesiredWeight?: float,
-     *     DesiredInstanceCount?: int,
+     *     DesiredInstanceCount?: int<0, max>,
      *     ServerlessUpdateConfig?: ProductionVariantServerlessUpdateConfig
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property int $DefaultExpirationDays
+ * @property int<1, 1098> $DefaultExpirationDays
  * @property string $DefaultEncryptionKey
  * @property string $DeadLetterQueueUrl
  * @property Shapes\MatchingRequest $Matching
@@ -18,7 +18,7 @@ class UpdateDomainRequest extends Request
     /**
      * @param array{
      *     DomainName: string,
-     *     DefaultExpirationDays?: int,
+     *     DefaultExpirationDays?: int<1, 1098>,
      *     DefaultEncryptionKey?: string,
      *     DeadLetterQueueUrl?: string,
      *     Matching?: Shapes\MatchingRequest,

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DomainName
  * @property string $IdnLangCode
- * @property int $DurationInYears
+ * @property int<1, 10> $DurationInYears
  * @property bool $AutoRenew
  * @property Shapes\ContactDetail $AdminContact
  * @property Shapes\ContactDetail $RegistrantContact
@@ -24,7 +24,7 @@ class RegisterDomainRequest extends Request
      * @param array{
      *     DomainName: string,
      *     IdnLangCode?: string,
-     *     DurationInYears: int,
+     *     DurationInYears: int<1, 10>,
      *     AutoRenew?: bool,
      *     AdminContact: Shapes\ContactDetail,
      *     RegistrantContact: Shapes\ContactDetail,

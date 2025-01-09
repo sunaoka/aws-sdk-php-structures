@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property string $attributeName
  * @property string $attributeValue
  * @property string $thingTypeName
@@ -17,7 +17,7 @@ class ListThingsRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     attributeName?: string,
      *     attributeValue?: string,
      *     thingTypeName?: string,

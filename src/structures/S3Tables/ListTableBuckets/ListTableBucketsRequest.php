@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $prefix
  * @property string $continuationToken
- * @property int $maxBuckets
+ * @property int<1, 1000> $maxBuckets
  */
 class ListTableBucketsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListTableBucketsRequest extends Request
      * @param array{
      *     prefix?: string,
      *     continuationToken?: string,
-     *     maxBuckets?: int
+     *     maxBuckets?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args = [])

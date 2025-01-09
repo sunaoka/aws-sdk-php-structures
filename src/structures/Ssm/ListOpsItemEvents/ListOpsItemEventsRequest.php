@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\OpsItemEventFilter> $Filters
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListOpsItemEventsRequest extends Request
@@ -14,7 +14,7 @@ class ListOpsItemEventsRequest extends Request
     /**
      * @param array{
      *     Filters?: list<Shapes\OpsItemEventFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

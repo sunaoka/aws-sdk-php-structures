@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $Policy
  * @property list<Shapes\PolicyDescriptorType> $PolicyArns
- * @property int $DurationSeconds
+ * @property int<900, 129600> $DurationSeconds
  * @property list<Shapes\Tag> $Tags
  */
 class GetFederationTokenRequest extends Request
@@ -18,7 +18,7 @@ class GetFederationTokenRequest extends Request
      *     Name: string,
      *     Policy?: string,
      *     PolicyArns?: list<Shapes\PolicyDescriptorType>,
-     *     DurationSeconds?: int,
+     *     DurationSeconds?: int<900, 129600>,
      *     Tags?: list<Shapes\Tag>
      * } $args
      */

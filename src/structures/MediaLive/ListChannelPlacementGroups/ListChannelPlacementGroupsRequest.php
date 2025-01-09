@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterId
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListChannelPlacementGroupsRequest extends Request
@@ -14,7 +14,7 @@ class ListChannelPlacementGroupsRequest extends Request
     /**
      * @param array{
      *     ClusterId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

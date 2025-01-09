@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\SearchQuantumTasksFilter> $filters
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class SearchQuantumTasksRequest extends Request
@@ -14,7 +14,7 @@ class SearchQuantumTasksRequest extends Request
     /**
      * @param array{
      *     filters: list<Shapes\SearchQuantumTasksFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

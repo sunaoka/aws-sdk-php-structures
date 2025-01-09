@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Expression $Filter
  * @property list<'ATTRIBUTES'|'UTILIZATION'|'AMORTIZED_COMMITMENT'|'SAVINGS'> $DataType
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property Shapes\SortDefinition $SortBy
  */
 class GetSavingsPlansUtilizationDetailsRequest extends Request
@@ -20,7 +20,7 @@ class GetSavingsPlansUtilizationDetailsRequest extends Request
      *     Filter?: Shapes\Expression,
      *     DataType?: list<'ATTRIBUTES'|'UTILIZATION'|'AMORTIZED_COMMITMENT'|'SAVINGS'>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     SortBy?: Shapes\SortDefinition
      * } $args
      */

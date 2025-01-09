@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MigrationHubOrchestrator\ListTemplateStepGroups
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<0, 100> $maxResults
  * @property string $nextToken
  * @property string $templateId
  */
@@ -13,7 +13,7 @@ class ListTemplateStepGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<0, 100>,
      *     nextToken?: string,
      *     templateId: string
      * } $args

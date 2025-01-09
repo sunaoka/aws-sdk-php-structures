@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $InstanceArn
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property string $PermissionSetArn
  */
@@ -17,7 +17,7 @@ class ListAccountAssignmentsRequest extends Request
      * @param array{
      *     AccountId: string,
      *     InstanceArn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     PermissionSetArn: string
      * } $args

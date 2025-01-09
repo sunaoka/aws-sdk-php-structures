@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribeGameSessionQueues\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaximumIndividualPlayerLatencyMilliseconds
- * @property int $PolicyDurationSeconds
+ * @property int<0, max> $MaximumIndividualPlayerLatencyMilliseconds
+ * @property int<0, max> $PolicyDurationSeconds
  */
 class PlayerLatencyPolicy extends Shape
 {
     /**
      * @param array{
-     *     MaximumIndividualPlayerLatencyMilliseconds?: int,
-     *     PolicyDurationSeconds?: int
+     *     MaximumIndividualPlayerLatencyMilliseconds?: int<0, max>,
+     *     PolicyDurationSeconds?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

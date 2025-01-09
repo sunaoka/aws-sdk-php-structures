@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\ConfigurationRecorderFilter> $Filters
- * @property int $MaxResults
+ * @property int<0, 20> $MaxResults
  * @property string $NextToken
  */
 class ListConfigurationRecordersRequest extends Request
@@ -14,7 +14,7 @@ class ListConfigurationRecordersRequest extends Request
     /**
      * @param array{
      *     Filters?: list<Shapes\ConfigurationRecorderFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 20>,
      *     NextToken?: string
      * } $args
      */

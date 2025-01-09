@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
  * @property \Aws\Api\DateTimeResult $LastModifiedTimeAfter
  * @property \Aws\Api\DateTimeResult $LastModifiedTimeBefore
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property string $NameContains
  * @property 'Name'|'CreationTime'|'Status' $SortBy
@@ -24,7 +24,7 @@ class ListLabelingJobsRequest extends Request
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
      *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult,
      *     LastModifiedTimeBefore?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     NameContains?: string,
      *     SortBy?: 'Name'|'CreationTime'|'Status',

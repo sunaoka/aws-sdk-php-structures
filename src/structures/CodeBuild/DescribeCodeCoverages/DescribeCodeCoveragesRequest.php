@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $reportArn
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property 'ASCENDING'|'DESCENDING' $sortOrder
  * @property 'LINE_COVERAGE_PERCENTAGE'|'FILE_PATH' $sortBy
  * @property double $minLineCoveragePercentage
@@ -19,7 +19,7 @@ class DescribeCodeCoveragesRequest extends Request
      * @param array{
      *     reportArn: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     sortOrder?: 'ASCENDING'|'DESCENDING',
      *     sortBy?: 'LINE_COVERAGE_PERCENTAGE'|'FILE_PATH',
      *     minLineCoveragePercentage?: double,

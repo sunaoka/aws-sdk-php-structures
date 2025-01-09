@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $UserPoolId
  * @property string $GroupName
- * @property int $Limit
+ * @property int<0, 60> $Limit
  * @property string $NextToken
  */
 class ListUsersInGroupRequest extends Request
@@ -16,7 +16,7 @@ class ListUsersInGroupRequest extends Request
      * @param array{
      *     UserPoolId: string,
      *     GroupName: string,
-     *     Limit?: int,
+     *     Limit?: int<0, 60>,
      *     NextToken?: string
      * } $args
      */

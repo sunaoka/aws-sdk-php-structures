@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Height
+ * @property int<32, 8192> $Height
  * @property 'ENABLED'|'DISABLED' $Required
- * @property int $Width
+ * @property int<32, 8192> $Width
  */
 class AllowedRenditionSize extends Shape
 {
     /**
      * @param array{
-     *     Height?: int,
+     *     Height?: int<32, 8192>,
      *     Required?: 'ENABLED'|'DISABLED',
-     *     Width?: int
+     *     Width?: int<32, 8192>
      * } $args
      */
     public function __construct(array $args = [])

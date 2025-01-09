@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE' $runStatus
  * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING' $targetRunStatus
  * @property array<string, TaskParameterValue> $parameters
- * @property int $failureRetryCount
+ * @property int<0, 2147483647> $failureRetryCount
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property \Aws\Api\DateTimeResult $endedAt
  */
@@ -27,7 +27,7 @@ class TaskSearchSummary extends Shape
      *     runStatus?: 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE',
      *     targetRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING',
      *     parameters?: array<string, TaskParameterValue>,
-     *     failureRetryCount?: int,
+     *     failureRetryCount?: int<0, 2147483647>,
      *     startedAt?: \Aws\Api\DateTimeResult,
      *     endedAt?: \Aws\Api\DateTimeResult
      * } $args

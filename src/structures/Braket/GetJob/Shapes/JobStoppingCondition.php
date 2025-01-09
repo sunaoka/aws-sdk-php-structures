@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Braket\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maxRuntimeInSeconds
+ * @property int<1, 432000> $maxRuntimeInSeconds
  */
 class JobStoppingCondition extends Shape
 {
     /**
-     * @param array{maxRuntimeInSeconds?: int} $args
+     * @param array{maxRuntimeInSeconds?: int<1, 432000>} $args
      */
     public function __construct(array $args = [])
     {

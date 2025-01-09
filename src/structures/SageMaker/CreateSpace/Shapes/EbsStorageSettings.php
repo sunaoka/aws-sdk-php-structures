@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateSpace\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $EbsVolumeSizeInGb
+ * @property int<5, 16384> $EbsVolumeSizeInGb
  */
 class EbsStorageSettings extends Shape
 {
     /**
-     * @param array{EbsVolumeSizeInGb: int} $args
+     * @param array{EbsVolumeSizeInGb: int<5, 16384>} $args
      */
     public function __construct(array $args)
     {

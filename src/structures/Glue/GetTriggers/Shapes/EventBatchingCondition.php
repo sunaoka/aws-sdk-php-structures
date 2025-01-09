@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetTriggers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $BatchSize
- * @property int $BatchWindow
+ * @property int<1, 100> $BatchSize
+ * @property int<1, 900> $BatchWindow
  */
 class EventBatchingCondition extends Shape
 {
     /**
      * @param array{
-     *     BatchSize: int,
-     *     BatchWindow?: int
+     *     BatchSize: int<1, 100>,
+     *     BatchWindow?: int<1, 900>
      * } $args
      */
     public function __construct(array $args)

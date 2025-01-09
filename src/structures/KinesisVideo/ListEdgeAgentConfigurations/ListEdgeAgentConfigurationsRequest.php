@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HubDeviceArn
- * @property int $MaxResults
+ * @property int<1, 10> $MaxResults
  * @property string $NextToken
  */
 class ListEdgeAgentConfigurationsRequest extends Request
@@ -14,7 +14,7 @@ class ListEdgeAgentConfigurationsRequest extends Request
     /**
      * @param array{
      *     HubDeviceArn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 10>,
      *     NextToken?: string
      * } $args
      */

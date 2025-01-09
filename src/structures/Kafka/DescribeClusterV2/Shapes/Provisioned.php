@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION' $EnhancedMonitoring
  * @property OpenMonitoringInfo $OpenMonitoring
  * @property LoggingInfo $LoggingInfo
- * @property int $NumberOfBrokerNodes
+ * @property int<1, 15> $NumberOfBrokerNodes
  * @property string $ZookeeperConnectString
  * @property string $ZookeeperConnectStringTls
  * @property 'LOCAL'|'TIERED' $StorageMode
@@ -29,7 +29,7 @@ class Provisioned extends Shape
      *     EnhancedMonitoring?: 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION',
      *     OpenMonitoring?: OpenMonitoringInfo,
      *     LoggingInfo?: LoggingInfo,
-     *     NumberOfBrokerNodes: int,
+     *     NumberOfBrokerNodes: int<1, 15>,
      *     ZookeeperConnectString?: string,
      *     ZookeeperConnectStringTls?: string,
      *     StorageMode?: 'LOCAL'|'TIERED',

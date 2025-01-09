@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $Arns
  * @property 'PUBLIC'|'PRIVATE'|'SHARED' $Type
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 25> $MaxResults
  */
 class DescribeImagesRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeImagesRequest extends Request
      *     Arns?: list<string>,
      *     Type?: 'PUBLIC'|'PRIVATE'|'SHARED',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<0, 25>
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $billScenarioId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<min, 25> $maxResults
  */
 class ListBillScenarioCommitmentModificationsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListBillScenarioCommitmentModificationsRequest extends Request
      * @param array{
      *     billScenarioId: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<min, 25>
      * } $args
      */
     public function __construct(array $args)

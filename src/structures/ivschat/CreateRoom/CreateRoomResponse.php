@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
- * @property int $maximumMessageRatePerSecond
- * @property int $maximumMessageLength
+ * @property int<1, 100> $maximumMessageRatePerSecond
+ * @property int<1, 500> $maximumMessageLength
  * @property Shapes\MessageReviewHandler $messageReviewHandler
  * @property array<string, string> $tags
  * @property list<string> $loggingConfigurationIdentifiers
