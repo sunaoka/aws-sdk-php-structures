@@ -3,7 +3,7 @@ name: Update Structures from Generator
 on:
   workflow_dispatch:
   schedule:
-    - cron: '5 0 * * *'
+    - cron: '20 30 * * *'
 
 jobs:
   run:
@@ -13,17 +13,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        uses: nick-fields/retry@v3
-        with:
-          timeout_seconds: 30
-          max_attempts: 3
-          command: composer install --quiet --no-plugins --no-ansi --prefer-dist --no-progress --no-interaction
-
       - name: Update Structures
         uses: nick-fields/retry@v3
         with:
-          timeout_seconds: 30
+          timeout_seconds: 120
           max_attempts: 3
           command: bash tools/update/update.sh
 
