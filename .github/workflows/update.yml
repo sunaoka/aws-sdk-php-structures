@@ -20,13 +20,6 @@ jobs:
           max_attempts: 3
           command: bash tools/update/update.sh
 
-      - name: Count changes
-        id: changes
-        run: |
-          git add -N .
-          git diff --name-only --exit-code
-        continue-on-error: true
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
@@ -35,4 +28,3 @@ jobs:
           title: Update Structures
           body: |
             Structures have been updated.
-        if: steps.changes.outcome == 'failure'
