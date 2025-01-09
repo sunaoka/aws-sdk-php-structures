@@ -1,0 +1,37 @@
+{
+    "name": "sunaoka/aws-sdk-php-structures",
+    "description": "",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "sunaoka",
+            "email": "sunaoka@pocari.org"
+        }
+    ],
+    "require": {
+        "php": "^5.5 || ^7.0 || ^8.0",
+        "aws/aws-sdk-php": "^3.278.3"
+    },
+    "require-dev": {
+        "nette/php-generator": "^2.3",
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sunaoka\\Aws\\Structures\\": ["src/classes/", "src/structures/"]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "./tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

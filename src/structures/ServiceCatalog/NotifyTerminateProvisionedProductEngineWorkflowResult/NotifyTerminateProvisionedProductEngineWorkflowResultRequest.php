@@ -1,0 +1,29 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ServiceCatalog\NotifyTerminateProvisionedProductEngineWorkflowResult;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $WorkflowToken
+ * @property string $RecordId
+ * @property 'SUCCEEDED'|'FAILED' $Status
+ * @property string $FailureReason
+ * @property string $IdempotencyToken
+ */
+class NotifyTerminateProvisionedProductEngineWorkflowResultRequest extends Request
+{
+    /**
+     * @param array{
+     *     WorkflowToken: string,
+     *     RecordId: string,
+     *     Status: 'SUCCEEDED'|'FAILED',
+     *     FailureReason?: string,
+     *     IdempotencyToken: string
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

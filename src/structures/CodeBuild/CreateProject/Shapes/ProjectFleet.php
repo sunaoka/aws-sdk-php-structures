@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\CodeBuild\CreateProject\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $fleetArn
+ */
+class ProjectFleet extends Shape
+{
+    /**
+     * @param array{fleetArn?: string} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

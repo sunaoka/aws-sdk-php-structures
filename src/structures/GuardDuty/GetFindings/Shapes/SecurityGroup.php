@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $GroupId
+ * @property string $GroupName
+ */
+class SecurityGroup extends Shape
+{
+    /**
+     * @param array{
+     *     GroupId?: string,
+     *     GroupName?: string
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

@@ -1,0 +1,29 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Ec2\DescribeScheduledInstanceAvailability\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $Frequency
+ * @property int $Interval
+ * @property list<int> $OccurrenceDays
+ * @property bool $OccurrenceRelativeToEnd
+ * @property string $OccurrenceUnit
+ */
+class ScheduledInstanceRecurrenceRequest extends Shape
+{
+    /**
+     * @param array{
+     *     Frequency?: string,
+     *     Interval?: int,
+     *     OccurrenceDays?: list<int>,
+     *     OccurrenceRelativeToEnd?: bool,
+     *     OccurrenceUnit?: string
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

@@ -1,0 +1,12 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Chime\RegenerateSecurityToken;
+
+use Sunaoka\Aws\Structures\Response;
+
+/**
+ * @property Shapes\Bot $Bot
+ */
+class RegenerateSecurityTokenResponse extends Response
+{
+}

@@ -1,0 +1,29 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Efs\DescribeMountTargets;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property int $MaxItems
+ * @property string $Marker
+ * @property string $FileSystemId
+ * @property string $MountTargetId
+ * @property string $AccessPointId
+ */
+class DescribeMountTargetsRequest extends Request
+{
+    /**
+     * @param array{
+     *     MaxItems?: int,
+     *     Marker?: string,
+     *     FileSystemId?: string,
+     *     MountTargetId?: string,
+     *     AccessPointId?: string
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

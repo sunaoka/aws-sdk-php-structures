@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\DescribeRiskConfiguration\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property list<'SIGN_IN'|'PASSWORD_CHANGE'|'SIGN_UP'> $EventFilter
+ * @property CompromisedCredentialsActionsType $Actions
+ */
+class CompromisedCredentialsRiskConfigurationType extends Shape
+{
+    /**
+     * @param array{
+     *     EventFilter?: list<'SIGN_IN'|'PASSWORD_CHANGE'|'SIGN_UP'>,
+     *     Actions: CompromisedCredentialsActionsType
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

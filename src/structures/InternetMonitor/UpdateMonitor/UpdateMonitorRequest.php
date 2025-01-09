@@ -1,0 +1,37 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\InternetMonitor\UpdateMonitor;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $MonitorName
+ * @property list<string> $ResourcesToAdd
+ * @property list<string> $ResourcesToRemove
+ * @property 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR' $Status
+ * @property string $ClientToken
+ * @property int $MaxCityNetworksToMonitor
+ * @property Shapes\InternetMeasurementsLogDelivery $InternetMeasurementsLogDelivery
+ * @property int $TrafficPercentageToMonitor
+ * @property Shapes\HealthEventsConfig $HealthEventsConfig
+ */
+class UpdateMonitorRequest extends Request
+{
+    /**
+     * @param array{
+     *     MonitorName: string,
+     *     ResourcesToAdd?: list<string>,
+     *     ResourcesToRemove?: list<string>,
+     *     Status?: 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR',
+     *     ClientToken?: string,
+     *     MaxCityNetworksToMonitor?: int,
+     *     InternetMeasurementsLogDelivery?: Shapes\InternetMeasurementsLogDelivery,
+     *     TrafficPercentageToMonitor?: int,
+     *     HealthEventsConfig?: Shapes\HealthEventsConfig
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

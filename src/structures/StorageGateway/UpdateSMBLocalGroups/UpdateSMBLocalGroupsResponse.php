@@ -1,0 +1,12 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\StorageGateway\UpdateSMBLocalGroups;
+
+use Sunaoka\Aws\Structures\Response;
+
+/**
+ * @property string $GatewayARN
+ */
+class UpdateSMBLocalGroupsResponse extends Response
+{
+}

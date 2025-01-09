@@ -1,0 +1,27 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\SSOAdmin\ListAccountAssignmentCreationStatus;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property Shapes\OperationStatusFilter $Filter
+ * @property string $InstanceArn
+ * @property int $MaxResults
+ * @property string $NextToken
+ */
+class ListAccountAssignmentCreationStatusRequest extends Request
+{
+    /**
+     * @param array{
+     *     Filter?: Shapes\OperationStatusFilter,
+     *     InstanceArn: string,
+     *     MaxResults?: int,
+     *     NextToken?: string
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

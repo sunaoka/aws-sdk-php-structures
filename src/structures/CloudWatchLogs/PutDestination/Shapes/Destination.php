@@ -1,0 +1,31 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\CloudWatchLogs\PutDestination\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $destinationName
+ * @property string $targetArn
+ * @property string $roleArn
+ * @property string $accessPolicy
+ * @property string $arn
+ * @property int $creationTime
+ */
+class Destination extends Shape
+{
+    /**
+     * @param array{
+     *     destinationName?: string,
+     *     targetArn?: string,
+     *     roleArn?: string,
+     *     accessPolicy?: string,
+     *     arn?: string,
+     *     creationTime?: int
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

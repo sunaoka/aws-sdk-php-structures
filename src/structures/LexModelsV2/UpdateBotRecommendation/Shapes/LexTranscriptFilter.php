@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\LexModelsV2\UpdateBotRecommendation\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property DateRangeFilter $dateRangeFilter
+ */
+class LexTranscriptFilter extends Shape
+{
+    /**
+     * @param array{dateRangeFilter?: DateRangeFilter} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

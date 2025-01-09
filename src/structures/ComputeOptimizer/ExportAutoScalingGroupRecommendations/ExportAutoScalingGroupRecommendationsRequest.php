@@ -1,0 +1,33 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ComputeOptimizer\ExportAutoScalingGroupRecommendations;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property list<string> $accountIds
+ * @property list<Shapes\Filter> $filters
+ * @property list<'AccountId'|'AutoScalingGroupArn'|'AutoScalingGroupName'|'Finding'|'UtilizationMetricsCpuMaximum'|'UtilizationMetricsMemoryMaximum'|'UtilizationMetricsEbsReadOpsPerSecondMaximum'|'UtilizationMetricsEbsWriteOpsPerSecondMaximum'|'UtilizationMetricsEbsReadBytesPerSecondMaximum'|'UtilizationMetricsEbsWriteBytesPerSecondMaximum'|'UtilizationMetricsDiskReadOpsPerSecondMaximum'|'UtilizationMetricsDiskWriteOpsPerSecondMaximum'|'UtilizationMetricsDiskReadBytesPerSecondMaximum'|'UtilizationMetricsDiskWriteBytesPerSecondMaximum'|'UtilizationMetricsNetworkInBytesPerSecondMaximum'|'UtilizationMetricsNetworkOutBytesPerSecondMaximum'|'UtilizationMetricsNetworkPacketsInPerSecondMaximum'|'UtilizationMetricsNetworkPacketsOutPerSecondMaximum'|'LookbackPeriodInDays'|'CurrentConfigurationInstanceType'|'CurrentConfigurationDesiredCapacity'|'CurrentConfigurationMinSize'|'CurrentConfigurationMaxSize'|'CurrentOnDemandPrice'|'CurrentStandardOneYearNoUpfrontReservedPrice'|'CurrentStandardThreeYearNoUpfrontReservedPrice'|'CurrentVCpus'|'CurrentMemory'|'CurrentStorage'|'CurrentNetwork'|'RecommendationOptionsConfigurationInstanceType'|'RecommendationOptionsConfigurationDesiredCapacity'|'RecommendationOptionsConfigurationMinSize'|'RecommendationOptionsConfigurationMaxSize'|'RecommendationOptionsProjectedUtilizationMetricsCpuMaximum'|'RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum'|'RecommendationOptionsPerformanceRisk'|'RecommendationOptionsOnDemandPrice'|'RecommendationOptionsStandardOneYearNoUpfrontReservedPrice'|'RecommendationOptionsStandardThreeYearNoUpfrontReservedPrice'|'RecommendationOptionsVcpus'|'RecommendationOptionsMemory'|'RecommendationOptionsStorage'|'RecommendationOptionsNetwork'|'LastRefreshTimestamp'|'CurrentPerformanceRisk'|'RecommendationOptionsSavingsOpportunityPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrency'|'RecommendationOptionsEstimatedMonthlySavingsValue'|'EffectiveRecommendationPreferencesCpuVendorArchitectures'|'EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics'|'EffectiveRecommendationPreferencesInferredWorkloadTypes'|'EffectiveRecommendationPreferencesPreferredResources'|'EffectiveRecommendationPreferencesLookBackPeriod'|'InferredWorkloadTypes'|'RecommendationOptionsMigrationEffort'|'CurrentInstanceGpuInfo'|'RecommendationOptionsInstanceGpuInfo'|'UtilizationMetricsGpuPercentageMaximum'|'UtilizationMetricsGpuMemoryPercentageMaximum'|'RecommendationOptionsProjectedUtilizationMetricsGpuPercentageMaximum'|'RecommendationOptionsProjectedUtilizationMetricsGpuMemoryPercentageMaximum'|'EffectiveRecommendationPreferencesSavingsEstimationMode'|'RecommendationOptionsSavingsOpportunityAfterDiscountsPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrencyAfterDiscounts'|'RecommendationOptionsEstimatedMonthlySavingsValueAfterDiscounts'> $fieldsToExport
+ * @property Shapes\S3DestinationConfig $s3DestinationConfig
+ * @property 'Csv' $fileFormat
+ * @property bool $includeMemberAccounts
+ * @property Shapes\RecommendationPreferences $recommendationPreferences
+ */
+class ExportAutoScalingGroupRecommendationsRequest extends Request
+{
+    /**
+     * @param array{
+     *     accountIds?: list<string>,
+     *     filters?: list<Shapes\Filter>,
+     *     fieldsToExport?: list<'AccountId'|'AutoScalingGroupArn'|'AutoScalingGroupName'|'Finding'|'UtilizationMetricsCpuMaximum'|'UtilizationMetricsMemoryMaximum'|'UtilizationMetricsEbsReadOpsPerSecondMaximum'|'UtilizationMetricsEbsWriteOpsPerSecondMaximum'|'UtilizationMetricsEbsReadBytesPerSecondMaximum'|'UtilizationMetricsEbsWriteBytesPerSecondMaximum'|'UtilizationMetricsDiskReadOpsPerSecondMaximum'|'UtilizationMetricsDiskWriteOpsPerSecondMaximum'|'UtilizationMetricsDiskReadBytesPerSecondMaximum'|'UtilizationMetricsDiskWriteBytesPerSecondMaximum'|'UtilizationMetricsNetworkInBytesPerSecondMaximum'|'UtilizationMetricsNetworkOutBytesPerSecondMaximum'|'UtilizationMetricsNetworkPacketsInPerSecondMaximum'|'UtilizationMetricsNetworkPacketsOutPerSecondMaximum'|'LookbackPeriodInDays'|'CurrentConfigurationInstanceType'|'CurrentConfigurationDesiredCapacity'|'CurrentConfigurationMinSize'|'CurrentConfigurationMaxSize'|'CurrentOnDemandPrice'|'CurrentStandardOneYearNoUpfrontReservedPrice'|'CurrentStandardThreeYearNoUpfrontReservedPrice'|'CurrentVCpus'|'CurrentMemory'|'CurrentStorage'|'CurrentNetwork'|'RecommendationOptionsConfigurationInstanceType'|'RecommendationOptionsConfigurationDesiredCapacity'|'RecommendationOptionsConfigurationMinSize'|'RecommendationOptionsConfigurationMaxSize'|'RecommendationOptionsProjectedUtilizationMetricsCpuMaximum'|'RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum'|'RecommendationOptionsPerformanceRisk'|'RecommendationOptionsOnDemandPrice'|'RecommendationOptionsStandardOneYearNoUpfrontReservedPrice'|'RecommendationOptionsStandardThreeYearNoUpfrontReservedPrice'|'RecommendationOptionsVcpus'|'RecommendationOptionsMemory'|'RecommendationOptionsStorage'|'RecommendationOptionsNetwork'|'LastRefreshTimestamp'|'CurrentPerformanceRisk'|'RecommendationOptionsSavingsOpportunityPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrency'|'RecommendationOptionsEstimatedMonthlySavingsValue'|'EffectiveRecommendationPreferencesCpuVendorArchitectures'|'EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics'|'EffectiveRecommendationPreferencesInferredWorkloadTypes'|'EffectiveRecommendationPreferencesPreferredResources'|'EffectiveRecommendationPreferencesLookBackPeriod'|'InferredWorkloadTypes'|'RecommendationOptionsMigrationEffort'|'CurrentInstanceGpuInfo'|'RecommendationOptionsInstanceGpuInfo'|'UtilizationMetricsGpuPercentageMaximum'|'UtilizationMetricsGpuMemoryPercentageMaximum'|'RecommendationOptionsProjectedUtilizationMetricsGpuPercentageMaximum'|'RecommendationOptionsProjectedUtilizationMetricsGpuMemoryPercentageMaximum'|'EffectiveRecommendationPreferencesSavingsEstimationMode'|'RecommendationOptionsSavingsOpportunityAfterDiscountsPercentage'|'RecommendationOptionsEstimatedMonthlySavingsCurrencyAfterDiscounts'|'RecommendationOptionsEstimatedMonthlySavingsValueAfterDiscounts'>,
+     *     s3DestinationConfig: Shapes\S3DestinationConfig,
+     *     fileFormat?: 'Csv',
+     *     includeMemberAccounts?: bool,
+     *     recommendationPreferences?: Shapes\RecommendationPreferences
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

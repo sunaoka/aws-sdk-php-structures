@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Personalize\DeleteSchema;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $schemaArn
+ */
+class DeleteSchemaRequest extends Request
+{
+    /**
+     * @param array{schemaArn: string} $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ApplicationAutoScaling\PutScalingPolicy\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property PredictiveScalingMetric $Metric
+ * @property string $Stat
+ * @property string $Unit
+ */
+class PredictiveScalingMetricStat extends Shape
+{
+    /**
+     * @param array{
+     *     Metric: PredictiveScalingMetric,
+     *     Stat: string,
+     *     Unit?: string
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

@@ -1,0 +1,27 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Greengrass\CreateDeviceDefinition\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $CertificateArn
+ * @property string $Id
+ * @property bool $SyncShadow
+ * @property string $ThingArn
+ */
+class Device extends Shape
+{
+    /**
+     * @param array{
+     *     CertificateArn: string,
+     *     Id: string,
+     *     SyncShadow?: bool,
+     *     ThingArn: string
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

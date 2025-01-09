@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Glue\ListDataQualityRuleRecommendationRuns;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property Shapes\DataQualityRuleRecommendationRunFilter $Filter
+ * @property string $NextToken
+ * @property int $MaxResults
+ */
+class ListDataQualityRuleRecommendationRunsRequest extends Request
+{
+    /**
+     * @param array{
+     *     Filter?: Shapes\DataQualityRuleRecommendationRunFilter,
+     *     NextToken?: string,
+     *     MaxResults?: int
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

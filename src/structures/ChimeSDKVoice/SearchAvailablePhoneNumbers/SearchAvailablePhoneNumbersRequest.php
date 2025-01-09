@@ -1,0 +1,35 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ChimeSDKVoice\SearchAvailablePhoneNumbers;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $AreaCode
+ * @property string $City
+ * @property string $Country
+ * @property string $State
+ * @property string $TollFreePrefix
+ * @property 'Local'|'TollFree' $PhoneNumberType
+ * @property int $MaxResults
+ * @property string $NextToken
+ */
+class SearchAvailablePhoneNumbersRequest extends Request
+{
+    /**
+     * @param array{
+     *     AreaCode?: string,
+     *     City?: string,
+     *     Country?: string,
+     *     State?: string,
+     *     TollFreePrefix?: string,
+     *     PhoneNumberType?: 'Local'|'TollFree',
+     *     MaxResults?: int,
+     *     NextToken?: string
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

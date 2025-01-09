@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\CreateCampaign\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $connectSourcePhoneNumberArn
+ * @property string $wisdomTemplateArn
+ */
+class SmsOutboundConfig extends Shape
+{
+    /**
+     * @param array{
+     *     connectSourcePhoneNumberArn: string,
+     *     wisdomTemplateArn: string
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

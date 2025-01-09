@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Kafka\ListReplicators;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property int $MaxResults
+ * @property string $NextToken
+ * @property string $ReplicatorNameFilter
+ */
+class ListReplicatorsRequest extends Request
+{
+    /**
+     * @param array{
+     *     MaxResults?: int,
+     *     NextToken?: string,
+     *     ReplicatorNameFilter?: string
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

@@ -1,0 +1,39 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\DynamoDb\DescribeBackup\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $TableName
+ * @property string $TableId
+ * @property string $TableArn
+ * @property int $TableSizeBytes
+ * @property list<KeySchemaElement> $KeySchema
+ * @property \Aws\Api\DateTimeResult $TableCreationDateTime
+ * @property ProvisionedThroughput $ProvisionedThroughput
+ * @property OnDemandThroughput $OnDemandThroughput
+ * @property int $ItemCount
+ * @property 'PROVISIONED'|'PAY_PER_REQUEST' $BillingMode
+ */
+class SourceTableDetails extends Shape
+{
+    /**
+     * @param array{
+     *     TableName: string,
+     *     TableId: string,
+     *     TableArn?: string,
+     *     TableSizeBytes?: int,
+     *     KeySchema: list<KeySchemaElement>,
+     *     TableCreationDateTime: \Aws\Api\DateTimeResult,
+     *     ProvisionedThroughput: ProvisionedThroughput,
+     *     OnDemandThroughput?: OnDemandThroughput,
+     *     ItemCount?: int,
+     *     BillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST'
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

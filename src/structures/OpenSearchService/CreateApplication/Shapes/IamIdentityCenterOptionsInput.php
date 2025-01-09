@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\OpenSearchService\CreateApplication\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property bool $enabled
+ * @property string $iamIdentityCenterInstanceArn
+ * @property string $iamRoleForIdentityCenterApplicationArn
+ */
+class IamIdentityCenterOptionsInput extends Shape
+{
+    /**
+     * @param array{
+     *     enabled?: bool,
+     *     iamIdentityCenterInstanceArn?: string,
+     *     iamRoleForIdentityCenterApplicationArn?: string
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

@@ -1,0 +1,29 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\SageMaker\CreateUserProfile\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property ResourceSpec $DefaultResourceSpec
+ * @property list<CustomImage> $CustomImages
+ * @property list<string> $LifecycleConfigArns
+ * @property AppLifecycleManagement $AppLifecycleManagement
+ * @property string $BuiltInLifecycleConfigArn
+ */
+class CodeEditorAppSettings extends Shape
+{
+    /**
+     * @param array{
+     *     DefaultResourceSpec?: ResourceSpec,
+     *     CustomImages?: list<CustomImage>,
+     *     LifecycleConfigArns?: list<string>,
+     *     AppLifecycleManagement?: AppLifecycleManagement,
+     *     BuiltInLifecycleConfigArn?: string
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

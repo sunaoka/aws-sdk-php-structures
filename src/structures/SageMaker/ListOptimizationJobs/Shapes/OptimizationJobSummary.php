@@ -1,0 +1,37 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\SageMaker\ListOptimizationJobs\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $OptimizationJobName
+ * @property string $OptimizationJobArn
+ * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property 'INPROGRESS'|'COMPLETED'|'FAILED'|'STARTING'|'STOPPING'|'STOPPED' $OptimizationJobStatus
+ * @property \Aws\Api\DateTimeResult $OptimizationStartTime
+ * @property \Aws\Api\DateTimeResult $OptimizationEndTime
+ * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property 'ml.p4d.24xlarge'|'ml.p4de.24xlarge'|'ml.p5.48xlarge'|'ml.g5.xlarge'|'ml.g5.2xlarge'|'ml.g5.4xlarge'|'ml.g5.8xlarge'|'ml.g5.12xlarge'|'ml.g5.16xlarge'|'ml.g5.24xlarge'|'ml.g5.48xlarge'|'ml.g6.xlarge'|'ml.g6.2xlarge'|'ml.g6.4xlarge'|'ml.g6.8xlarge'|'ml.g6.12xlarge'|'ml.g6.16xlarge'|'ml.g6.24xlarge'|'ml.g6.48xlarge'|'ml.inf2.xlarge'|'ml.inf2.8xlarge'|'ml.inf2.24xlarge'|'ml.inf2.48xlarge'|'ml.trn1.2xlarge'|'ml.trn1.32xlarge'|'ml.trn1n.32xlarge' $DeploymentInstanceType
+ * @property list<string> $OptimizationTypes
+ */
+class OptimizationJobSummary extends Shape
+{
+    /**
+     * @param array{
+     *     OptimizationJobName: string,
+     *     OptimizationJobArn: string,
+     *     CreationTime: \Aws\Api\DateTimeResult,
+     *     OptimizationJobStatus: 'INPROGRESS'|'COMPLETED'|'FAILED'|'STARTING'|'STOPPING'|'STOPPED',
+     *     OptimizationStartTime?: \Aws\Api\DateTimeResult,
+     *     OptimizationEndTime?: \Aws\Api\DateTimeResult,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
+     *     DeploymentInstanceType: 'ml.p4d.24xlarge'|'ml.p4de.24xlarge'|'ml.p5.48xlarge'|'ml.g5.xlarge'|'ml.g5.2xlarge'|'ml.g5.4xlarge'|'ml.g5.8xlarge'|'ml.g5.12xlarge'|'ml.g5.16xlarge'|'ml.g5.24xlarge'|'ml.g5.48xlarge'|'ml.g6.xlarge'|'ml.g6.2xlarge'|'ml.g6.4xlarge'|'ml.g6.8xlarge'|'ml.g6.12xlarge'|'ml.g6.16xlarge'|'ml.g6.24xlarge'|'ml.g6.48xlarge'|'ml.inf2.xlarge'|'ml.inf2.8xlarge'|'ml.inf2.24xlarge'|'ml.inf2.48xlarge'|'ml.trn1.2xlarge'|'ml.trn1.32xlarge'|'ml.trn1n.32xlarge',
+     *     OptimizationTypes: list<string>
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

@@ -1,0 +1,31 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\AutoScaling\DescribePolicies\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $Id
+ * @property string $Expression
+ * @property TargetTrackingMetricStat $MetricStat
+ * @property string $Label
+ * @property int $Period
+ * @property bool $ReturnData
+ */
+class TargetTrackingMetricDataQuery extends Shape
+{
+    /**
+     * @param array{
+     *     Id: string,
+     *     Expression?: string,
+     *     MetricStat?: TargetTrackingMetricStat,
+     *     Label?: string,
+     *     Period?: int,
+     *     ReturnData?: bool
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

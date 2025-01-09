@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\PaymentCryptographyData\DecryptData\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property 'PKCS1'|'OAEP_SHA1'|'OAEP_SHA256'|'OAEP_SHA512' $PaddingType
+ */
+class AsymmetricEncryptionAttributes extends Shape
+{
+    /**
+     * @param array{PaddingType?: 'PKCS1'|'OAEP_SHA1'|'OAEP_SHA256'|'OAEP_SHA512'} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

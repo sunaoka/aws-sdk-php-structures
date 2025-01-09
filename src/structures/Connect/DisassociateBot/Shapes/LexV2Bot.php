@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Connect\DisassociateBot\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $AliasArn
+ */
+class LexV2Bot extends Shape
+{
+    /**
+     * @param array{AliasArn?: string} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

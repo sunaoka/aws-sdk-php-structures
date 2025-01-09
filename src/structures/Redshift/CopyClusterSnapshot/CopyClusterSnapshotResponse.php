@@ -1,0 +1,12 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Redshift\CopyClusterSnapshot;
+
+use Sunaoka\Aws\Structures\Response;
+
+/**
+ * @property Shapes\Snapshot $Snapshot
+ */
+class CopyClusterSnapshotResponse extends Response
+{
+}

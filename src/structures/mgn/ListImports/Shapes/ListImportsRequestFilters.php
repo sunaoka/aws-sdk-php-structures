@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\mgn\ListImports\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property list<string> $importIDs
+ */
+class ListImportsRequestFilters extends Shape
+{
+    /**
+     * @param array{importIDs?: list<string>} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

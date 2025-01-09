@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\MediaConnect\ListEntitlements;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property int $MaxResults
+ * @property string $NextToken
+ */
+class ListEntitlementsRequest extends Request
+{
+    /**
+     * @param array{
+     *     MaxResults?: int,
+     *     NextToken?: string
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

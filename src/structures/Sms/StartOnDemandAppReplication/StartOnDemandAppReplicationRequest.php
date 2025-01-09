@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Sms\StartOnDemandAppReplication;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $appId
+ * @property string $description
+ */
+class StartOnDemandAppReplicationRequest extends Request
+{
+    /**
+     * @param array{
+     *     appId: string,
+     *     description?: string
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

@@ -1,0 +1,29 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\ElasticTranscoder\CreateJob\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $Name
+ * @property string $Format
+ * @property list<string> $OutputKeys
+ * @property HlsContentProtection $HlsContentProtection
+ * @property PlayReadyDrm $PlayReadyDrm
+ */
+class CreateJobPlaylist extends Shape
+{
+    /**
+     * @param array{
+     *     Name?: string,
+     *     Format?: string,
+     *     OutputKeys?: list<string>,
+     *     HlsContentProtection?: HlsContentProtection,
+     *     PlayReadyDrm?: PlayReadyDrm
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

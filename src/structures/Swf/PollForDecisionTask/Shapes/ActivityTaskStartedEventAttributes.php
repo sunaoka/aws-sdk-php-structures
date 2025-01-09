@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Swf\PollForDecisionTask\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $identity
+ * @property int $scheduledEventId
+ */
+class ActivityTaskStartedEventAttributes extends Shape
+{
+    /**
+     * @param array{
+     *     identity?: string,
+     *     scheduledEventId: int
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

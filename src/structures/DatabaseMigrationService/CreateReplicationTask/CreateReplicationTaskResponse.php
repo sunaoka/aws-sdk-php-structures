@@ -1,0 +1,12 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateReplicationTask;
+
+use Sunaoka\Aws\Structures\Response;
+
+/**
+ * @property Shapes\ReplicationTask $ReplicationTask
+ */
+class CreateReplicationTaskResponse extends Response
+{
+}

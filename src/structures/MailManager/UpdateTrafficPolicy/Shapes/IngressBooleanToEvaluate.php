@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\MailManager\UpdateTrafficPolicy\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property IngressAnalysis $Analysis
+ */
+class IngressBooleanToEvaluate extends Shape
+{
+    /**
+     * @param array{Analysis?: IngressAnalysis} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

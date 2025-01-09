@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\FMS\PutPolicy\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property 'CENTRALIZED'|'DISTRIBUTED' $FirewallDeploymentModel
+ */
+class NetworkFirewallPolicy extends Shape
+{
+    /**
+     * @param array{FirewallDeploymentModel?: 'CENTRALIZED'|'DISTRIBUTED'} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

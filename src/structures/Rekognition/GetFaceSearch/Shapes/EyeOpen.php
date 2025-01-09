@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Rekognition\GetFaceSearch\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property bool $Value
+ * @property float $Confidence
+ */
+class EyeOpen extends Shape
+{
+    /**
+     * @param array{
+     *     Value?: bool,
+     *     Confidence?: float
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

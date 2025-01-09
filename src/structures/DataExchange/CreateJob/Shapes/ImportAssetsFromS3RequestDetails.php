@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\DataExchange\CreateJob\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property list<AssetSourceEntry> $AssetSources
+ * @property string $DataSetId
+ * @property string $RevisionId
+ */
+class ImportAssetsFromS3RequestDetails extends Shape
+{
+    /**
+     * @param array{
+     *     AssetSources: list<AssetSourceEntry>,
+     *     DataSetId: string,
+     *     RevisionId: string
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

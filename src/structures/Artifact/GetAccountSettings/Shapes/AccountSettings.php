@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Artifact\GetAccountSettings\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property 'SUBSCRIBED'|'NOT_SUBSCRIBED' $notificationSubscriptionStatus
+ */
+class AccountSettings extends Shape
+{
+    /**
+     * @param array{notificationSubscriptionStatus?: 'SUBSCRIBED'|'NOT_SUBSCRIBED'} $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

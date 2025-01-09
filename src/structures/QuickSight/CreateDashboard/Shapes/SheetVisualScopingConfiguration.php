@@ -1,0 +1,25 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $SheetId
+ * @property 'ALL_VISUALS'|'SELECTED_VISUALS' $Scope
+ * @property list<string> $VisualIds
+ */
+class SheetVisualScopingConfiguration extends Shape
+{
+    /**
+     * @param array{
+     *     SheetId: string,
+     *     Scope: 'ALL_VISUALS'|'SELECTED_VISUALS',
+     *     VisualIds?: list<string>
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

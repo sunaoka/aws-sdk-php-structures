@@ -1,0 +1,31 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\AppSync\CreateChannelNamespace;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $apiId
+ * @property string $name
+ * @property list<Shapes\AuthMode> $subscribeAuthModes
+ * @property list<Shapes\AuthMode> $publishAuthModes
+ * @property string $codeHandlers
+ * @property array<string, string> $tags
+ */
+class CreateChannelNamespaceRequest extends Request
+{
+    /**
+     * @param array{
+     *     apiId: string,
+     *     name: string,
+     *     subscribeAuthModes?: list<Shapes\AuthMode>,
+     *     publishAuthModes?: list<Shapes\AuthMode>,
+     *     codeHandlers?: string,
+     *     tags?: array<string, string>
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

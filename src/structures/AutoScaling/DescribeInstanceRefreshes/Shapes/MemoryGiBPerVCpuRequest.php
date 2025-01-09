@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\AutoScaling\DescribeInstanceRefreshes\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property double $Min
+ * @property double $Max
+ */
+class MemoryGiBPerVCpuRequest extends Shape
+{
+    /**
+     * @param array{
+     *     Min?: double,
+     *     Max?: double
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

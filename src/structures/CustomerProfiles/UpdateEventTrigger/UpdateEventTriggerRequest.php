@@ -1,0 +1,33 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\CustomerProfiles\UpdateEventTrigger;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $DomainName
+ * @property string $EventTriggerName
+ * @property string $ObjectTypeName
+ * @property string $Description
+ * @property list<Shapes\EventTriggerCondition> $EventTriggerConditions
+ * @property string $SegmentFilter
+ * @property Shapes\EventTriggerLimits $EventTriggerLimits
+ */
+class UpdateEventTriggerRequest extends Request
+{
+    /**
+     * @param array{
+     *     DomainName: string,
+     *     EventTriggerName: string,
+     *     ObjectTypeName?: string,
+     *     Description?: string,
+     *     EventTriggerConditions?: list<Shapes\EventTriggerCondition>,
+     *     SegmentFilter?: string,
+     *     EventTriggerLimits?: Shapes\EventTriggerLimits
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

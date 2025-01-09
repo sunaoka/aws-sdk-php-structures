@@ -1,0 +1,27 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Ssm\DescribeAssociation\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property \Aws\Api\DateTimeResult $Date
+ * @property 'Pending'|'Success'|'Failed' $Name
+ * @property string $Message
+ * @property string $AdditionalInfo
+ */
+class AssociationStatus extends Shape
+{
+    /**
+     * @param array{
+     *     Date: \Aws\Api\DateTimeResult,
+     *     Name: 'Pending'|'Success'|'Failed',
+     *     Message: string,
+     *     AdditionalInfo?: string
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

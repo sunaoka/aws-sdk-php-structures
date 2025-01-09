@@ -1,0 +1,12 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\Chime\CreateMeetingDialOut;
+
+use Sunaoka\Aws\Structures\Response;
+
+/**
+ * @property string $TransactionId
+ */
+class CreateMeetingDialOutResponse extends Response
+{
+}

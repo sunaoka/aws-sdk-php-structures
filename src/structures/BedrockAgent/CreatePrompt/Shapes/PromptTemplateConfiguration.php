@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\BedrockAgent\CreatePrompt\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property ChatPromptTemplateConfiguration $chat
+ * @property TextPromptTemplateConfiguration $text
+ */
+class PromptTemplateConfiguration extends Shape
+{
+    /**
+     * @param array{
+     *     chat?: ChatPromptTemplateConfiguration,
+     *     text?: TextPromptTemplateConfiguration
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

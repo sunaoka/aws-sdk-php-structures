@@ -1,0 +1,19 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\SageMaker\DescribeNotebookInstance;
+
+use Sunaoka\Aws\Structures\Request;
+
+/**
+ * @property string $NotebookInstanceName
+ */
+class DescribeNotebookInstanceRequest extends Request
+{
+    /**
+     * @param array{NotebookInstanceName: string} $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

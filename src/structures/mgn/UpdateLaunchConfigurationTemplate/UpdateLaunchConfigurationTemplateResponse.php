@@ -1,0 +1,28 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\mgn\UpdateLaunchConfigurationTemplate;
+
+use Sunaoka\Aws\Structures\Response;
+
+/**
+ * @property string $arn
+ * @property bool $associatePublicIpAddress
+ * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE' $bootMode
+ * @property bool $copyPrivateIp
+ * @property bool $copyTags
+ * @property string $ec2LaunchTemplateID
+ * @property bool $enableMapAutoTagging
+ * @property Shapes\LaunchTemplateDiskConf $largeVolumeConf
+ * @property string $launchConfigurationTemplateID
+ * @property 'STOPPED'|'STARTED' $launchDisposition
+ * @property Shapes\Licensing $licensing
+ * @property string $mapAutoTaggingMpeID
+ * @property Shapes\PostLaunchActions $postLaunchActions
+ * @property Shapes\LaunchTemplateDiskConf $smallVolumeConf
+ * @property int $smallVolumeMaxSize
+ * @property array<string, string> $tags
+ * @property 'NONE'|'BASIC' $targetInstanceTypeRightSizingMethod
+ */
+class UpdateLaunchConfigurationTemplateResponse extends Response
+{
+}

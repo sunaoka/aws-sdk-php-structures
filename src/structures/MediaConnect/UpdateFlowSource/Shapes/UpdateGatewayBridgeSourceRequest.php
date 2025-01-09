@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\MediaConnect\UpdateFlowSource\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $BridgeArn
+ * @property VpcInterfaceAttachment $VpcInterfaceAttachment
+ */
+class UpdateGatewayBridgeSourceRequest extends Shape
+{
+    /**
+     * @param array{
+     *     BridgeArn?: string,
+     *     VpcInterfaceAttachment?: VpcInterfaceAttachment
+     * } $args
+     */
+    public function __construct(array $args = [])
+    {
+        $this->__data = $args;
+    }
+}

@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\CodeGuruReviewer\ListCodeReviews\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $Name
+ * @property S3RepositoryDetails $Details
+ */
+class S3BucketRepository extends Shape
+{
+    /**
+     * @param array{
+     *     Name: string,
+     *     Details?: S3RepositoryDetails
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}

@@ -1,0 +1,23 @@
+<?php
+
+namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetEngagementInvitation\Shapes;
+
+use Sunaoka\Aws\Structures\Shape;
+
+/**
+ * @property string $Alias
+ * @property string $AwsAccountId
+ */
+class AccountReceiver extends Shape
+{
+    /**
+     * @param array{
+     *     Alias?: string,
+     *     AwsAccountId: string
+     * } $args
+     */
+    public function __construct(array $args)
+    {
+        $this->__data = $args;
+    }
+}
