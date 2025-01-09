@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $queryDefinitionId
  * @property string $name
  * @property string $queryString
- * @property int $lastModified
+ * @property int<0, max> $lastModified
  * @property list<string> $logGroupNames
  */
 class QueryDefinition extends Shape
@@ -20,7 +20,7 @@ class QueryDefinition extends Shape
      *     queryDefinitionId?: string,
      *     name?: string,
      *     queryString?: string,
-     *     lastModified?: int,
+     *     lastModified?: int<0, max>,
      *     logGroupNames?: list<string>
      * } $args
      */

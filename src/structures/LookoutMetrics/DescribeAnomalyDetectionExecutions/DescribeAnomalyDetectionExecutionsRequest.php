@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AnomalyDetectorArn
  * @property string $Timestamp
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeAnomalyDetectionExecutionsRequest extends Request
@@ -16,7 +16,7 @@ class DescribeAnomalyDetectionExecutionsRequest extends Request
      * @param array{
      *     AnomalyDetectorArn: string,
      *     Timestamp?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

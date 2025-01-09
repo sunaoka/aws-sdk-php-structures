@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property S3Location $Location
  * @property bool $Overwrite
  * @property OutputFormatOptions $FormatOptions
- * @property int $MaxOutputFiles
+ * @property int<1, 999> $MaxOutputFiles
  */
 class Output extends Shape
 {
@@ -23,7 +23,7 @@ class Output extends Shape
      *     Location: S3Location,
      *     Overwrite?: bool,
      *     FormatOptions?: OutputFormatOptions,
-     *     MaxOutputFiles?: int
+     *     MaxOutputFiles?: int<1, 999>
      * } $args
      */
     public function __construct(array $args)

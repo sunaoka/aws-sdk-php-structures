@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $AppName
  * @property string $Protocol
- * @property int $Port
+ * @property int<0, 65535> $Port
  */
 class App extends Shape
 {
@@ -15,7 +15,7 @@ class App extends Shape
      * @param array{
      *     AppName: string,
      *     Protocol: string,
-     *     Port: int
+     *     Port: int<0, 65535>
      * } $args
      */
     public function __construct(array $args)

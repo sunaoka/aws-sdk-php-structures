@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<LocalizedString> $Intersection
- * @property int $RelativeExit
+ * @property int<1, 12> $RelativeExit
  * @property double $RoundaboutAngle
  * @property 'Left'|'Right'|'Straight' $SteeringDirection
  */
@@ -15,7 +15,7 @@ class RouteRoundaboutExitStepDetails extends Shape
     /**
      * @param array{
      *     Intersection: list<LocalizedString>,
-     *     RelativeExit?: int,
+     *     RelativeExit?: int<1, 12>,
      *     RoundaboutAngle?: double,
      *     SteeringDirection?: 'Left'|'Right'|'Straight'
      * } $args

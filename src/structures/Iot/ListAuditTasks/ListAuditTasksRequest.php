@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ON_DEMAND_AUDIT_TASK'|'SCHEDULED_AUDIT_TASK' $taskType
  * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED'|'CANCELED' $taskStatus
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class ListAuditTasksRequest extends Request
 {
@@ -21,7 +21,7 @@ class ListAuditTasksRequest extends Request
      *     taskType?: 'ON_DEMAND_AUDIT_TASK'|'SCHEDULED_AUDIT_TASK',
      *     taskStatus?: 'IN_PROGRESS'|'COMPLETED'|'FAILED'|'CANCELED',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args)

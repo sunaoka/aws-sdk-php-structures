@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\ListInsightsStatusFilter $StatusFilter
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property list<string> $AccountIds
  * @property list<string> $OrganizationalUnitIds
  * @property string $NextToken
@@ -16,7 +16,7 @@ class ListOrganizationInsightsRequest extends Request
     /**
      * @param array{
      *     StatusFilter: Shapes\ListInsightsStatusFilter,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     AccountIds?: list<string>,
      *     OrganizationalUnitIds?: list<string>,
      *     NextToken?: string

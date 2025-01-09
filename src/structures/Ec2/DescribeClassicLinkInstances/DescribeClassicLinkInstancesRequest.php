@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $InstanceIds
  * @property list<Shapes\Filter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  */
 class DescribeClassicLinkInstancesRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeClassicLinkInstancesRequest extends Request
      *     InstanceIds?: list<string>,
      *     Filters?: list<Shapes\Filter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<5, 1000>
      * } $args
      */
     public function __construct(array $args = [])

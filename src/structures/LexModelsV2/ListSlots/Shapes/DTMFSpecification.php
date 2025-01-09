@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListSlots\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maxLength
- * @property int $endTimeoutMs
+ * @property int<1, 1024> $maxLength
+ * @property int<1, max> $endTimeoutMs
  * @property string $deletionCharacter
  * @property string $endCharacter
  */
@@ -14,8 +14,8 @@ class DTMFSpecification extends Shape
 {
     /**
      * @param array{
-     *     maxLength: int,
-     *     endTimeoutMs: int,
+     *     maxLength: int<1, 1024>,
+     *     endTimeoutMs: int<1, max>,
      *     deletionCharacter: string,
      *     endCharacter: string
      * } $args

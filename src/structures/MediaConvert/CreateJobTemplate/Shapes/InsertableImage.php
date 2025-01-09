@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Duration
- * @property int $FadeIn
- * @property int $FadeOut
- * @property int $Height
+ * @property int<0, 2147483647> $Duration
+ * @property int<0, 2147483647> $FadeIn
+ * @property int<0, 2147483647> $FadeOut
+ * @property int<0, 2147483647> $Height
  * @property string $ImageInserterInput
- * @property int $ImageX
- * @property int $ImageY
- * @property int $Layer
- * @property int $Opacity
+ * @property int<0, 2147483647> $ImageX
+ * @property int<0, 2147483647> $ImageY
+ * @property int<0, 99> $Layer
+ * @property int<0, 100> $Opacity
  * @property string $StartTime
- * @property int $Width
+ * @property int<0, 2147483647> $Width
  */
 class InsertableImage extends Shape
 {
     /**
      * @param array{
-     *     Duration?: int,
-     *     FadeIn?: int,
-     *     FadeOut?: int,
-     *     Height?: int,
+     *     Duration?: int<0, 2147483647>,
+     *     FadeIn?: int<0, 2147483647>,
+     *     FadeOut?: int<0, 2147483647>,
+     *     Height?: int<0, 2147483647>,
      *     ImageInserterInput?: string,
-     *     ImageX?: int,
-     *     ImageY?: int,
-     *     Layer?: int,
-     *     Opacity?: int,
+     *     ImageX?: int<0, 2147483647>,
+     *     ImageY?: int<0, 2147483647>,
+     *     Layer?: int<0, 99>,
+     *     Opacity?: int<0, 100>,
      *     StartTime?: string,
-     *     Width?: int
+     *     Width?: int<0, 2147483647>
      * } $args
      */
     public function __construct(array $args = [])

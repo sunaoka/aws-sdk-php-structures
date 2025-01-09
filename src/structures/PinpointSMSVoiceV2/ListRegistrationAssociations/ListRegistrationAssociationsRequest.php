@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RegistrationId
  * @property list<Shapes\RegistrationAssociationFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListRegistrationAssociationsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListRegistrationAssociationsRequest extends Request
      *     RegistrationId: string,
      *     Filters?: list<Shapes\RegistrationAssociationFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

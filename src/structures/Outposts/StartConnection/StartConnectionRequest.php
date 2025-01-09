@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DeviceSerialNumber
  * @property string $AssetId
  * @property string $ClientPublicKey
- * @property int $NetworkInterfaceDeviceIndex
+ * @property int<0, 1> $NetworkInterfaceDeviceIndex
  */
 class StartConnectionRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartConnectionRequest extends Request
      *     DeviceSerialNumber?: string,
      *     AssetId: string,
      *     ClientPublicKey: string,
-     *     NetworkInterfaceDeviceIndex: int
+     *     NetworkInterfaceDeviceIndex: int<0, 1>
      * } $args
      */
     public function __construct(array $args)

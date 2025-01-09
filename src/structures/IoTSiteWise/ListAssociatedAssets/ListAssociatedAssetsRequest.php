@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $hierarchyId
  * @property 'PARENT'|'CHILD' $traversalDirection
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class ListAssociatedAssetsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListAssociatedAssetsRequest extends Request
      *     hierarchyId?: string,
      *     traversalDirection?: 'PARENT'|'CHILD',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args)

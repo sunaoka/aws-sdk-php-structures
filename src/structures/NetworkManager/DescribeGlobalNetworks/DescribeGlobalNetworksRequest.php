@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $GlobalNetworkIds
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class DescribeGlobalNetworksRequest extends Request
@@ -14,7 +14,7 @@ class DescribeGlobalNetworksRequest extends Request
     /**
      * @param array{
      *     GlobalNetworkIds?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

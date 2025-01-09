@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $blueprintArn
  * @property 'SERVICE'|'ACCOUNT' $resourceOwner
  * @property 'DEVELOPMENT'|'LIVE'|'ALL' $blueprintStageFilter
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property Shapes\DataAutomationProjectFilter $projectFilter
  */
@@ -19,7 +19,7 @@ class ListBlueprintsRequest extends Request
      *     blueprintArn?: string,
      *     resourceOwner?: 'SERVICE'|'ACCOUNT',
      *     blueprintStageFilter?: 'DEVELOPMENT'|'LIVE'|'ALL',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     projectFilter?: Shapes\DataAutomationProjectFilter
      * } $args

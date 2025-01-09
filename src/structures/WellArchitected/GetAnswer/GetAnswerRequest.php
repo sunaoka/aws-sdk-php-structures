@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $WorkloadId
  * @property string $LensAlias
  * @property string $QuestionId
- * @property int $MilestoneNumber
+ * @property int<1, 100> $MilestoneNumber
  */
 class GetAnswerRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetAnswerRequest extends Request
      *     WorkloadId: string,
      *     LensAlias: string,
      *     QuestionId: string,
-     *     MilestoneNumber?: int
+     *     MilestoneNumber?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DirectoryId
  * @property string $NextToken
- * @property int $Limit
+ * @property int<1, 50> $Limit
  */
 class ListCertificatesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListCertificatesRequest extends Request
      * @param array{
      *     DirectoryId: string,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

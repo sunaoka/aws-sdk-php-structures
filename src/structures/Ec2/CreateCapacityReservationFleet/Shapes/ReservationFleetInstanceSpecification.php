@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $AvailabilityZone
  * @property string $AvailabilityZoneId
  * @property bool $EbsOptimized
- * @property int $Priority
+ * @property int<0, max> $Priority
  */
 class ReservationFleetInstanceSpecification extends Shape
 {
@@ -23,7 +23,7 @@ class ReservationFleetInstanceSpecification extends Shape
      *     AvailabilityZone?: string,
      *     AvailabilityZoneId?: string,
      *     EbsOptimized?: bool,
-     *     Priority?: int
+     *     Priority?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Resource' $Type
- * @property int $HookInvocationCount
+ * @property int<1, 100> $HookInvocationCount
  * @property ResourceChange $ResourceChange
  */
 class Change extends Shape
@@ -14,7 +14,7 @@ class Change extends Shape
     /**
      * @param array{
      *     Type?: 'Resource',
-     *     HookInvocationCount?: int,
+     *     HookInvocationCount?: int<1, 100>,
      *     ResourceChange?: ResourceChange
      * } $args
      */

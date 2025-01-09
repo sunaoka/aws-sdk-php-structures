@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property int $Version
+ * @property int<1, 1000> $Version
  * @property string $Name
  * @property 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS' $Type
  * @property string $Document
@@ -17,7 +17,7 @@ class TrafficPolicy extends Shape
     /**
      * @param array{
      *     Id: string,
-     *     Version: int,
+     *     Version: int<1, 1000>,
      *     Name: string,
      *     Type: 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS',
      *     Document: string,

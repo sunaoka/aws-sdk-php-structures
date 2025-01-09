@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $includeOrganizationInfo
  * @property string $accountId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<0, 100> $maxResults
  */
 class ListEnrollmentStatusesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListEnrollmentStatusesRequest extends Request
      *     includeOrganizationInfo?: bool,
      *     accountId?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<0, 100>
      * } $args
      */
     public function __construct(array $args = [])

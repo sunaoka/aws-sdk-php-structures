@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\Filter> $Filter
  * @property int $MaxDuration
- * @property int $MaxResults
+ * @property int<5, 500> $MaxResults
  * @property int $MinDuration
  * @property string $NextToken
  * @property string $OfferingId
@@ -18,7 +18,7 @@ class DescribeHostReservationOfferingsRequest extends Request
      * @param array{
      *     Filter?: list<Shapes\Filter>,
      *     MaxDuration?: int,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 500>,
      *     MinDuration?: int,
      *     NextToken?: string,
      *     OfferingId?: string

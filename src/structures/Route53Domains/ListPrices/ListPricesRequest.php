@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Tld
  * @property string $Marker
- * @property int $MaxItems
+ * @property int<min, 1000> $MaxItems
  */
 class ListPricesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListPricesRequest extends Request
      * @param array{
      *     Tld?: string,
      *     Marker?: string,
-     *     MaxItems?: int
+     *     MaxItems?: int<min, 1000>
      * } $args
      */
     public function __construct(array $args = [])

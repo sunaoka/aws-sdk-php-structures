@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DISABLED'|'ENABLED'|'UNAVAILABLE' $AutomaticRenewal
- * @property int $RenewalCount
+ * @property int<1, max> $RenewalCount
  */
 class RenewalSettings extends Shape
 {
     /**
      * @param array{
      *     AutomaticRenewal?: 'DISABLED'|'ENABLED'|'UNAVAILABLE',
-     *     RenewalCount?: int
+     *     RenewalCount?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

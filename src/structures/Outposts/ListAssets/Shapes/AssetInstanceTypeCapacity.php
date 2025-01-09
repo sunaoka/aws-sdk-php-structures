@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InstanceType
- * @property int $Count
+ * @property int<0, 9999> $Count
  */
 class AssetInstanceTypeCapacity extends Shape
 {
     /**
      * @param array{
      *     InstanceType: string,
-     *     Count: int
+     *     Count: int<0, 9999>
      * } $args
      */
     public function __construct(array $args)

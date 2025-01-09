@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $logGroupIdentifier
  * @property string $fieldIndexName
- * @property int $lastScanTime
- * @property int $firstEventTime
- * @property int $lastEventTime
+ * @property int<0, max> $lastScanTime
+ * @property int<0, max> $firstEventTime
+ * @property int<0, max> $lastEventTime
  */
 class FieldIndex extends Shape
 {
@@ -17,9 +17,9 @@ class FieldIndex extends Shape
      * @param array{
      *     logGroupIdentifier?: string,
      *     fieldIndexName?: string,
-     *     lastScanTime?: int,
-     *     firstEventTime?: int,
-     *     lastEventTime?: int
+     *     lastScanTime?: int<0, max>,
+     *     firstEventTime?: int<0, max>,
+     *     lastEventTime?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

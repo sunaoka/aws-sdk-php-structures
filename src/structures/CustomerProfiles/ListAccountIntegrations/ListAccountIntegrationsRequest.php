@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Uri
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property bool $IncludeHidden
  */
 class ListAccountIntegrationsRequest extends Request
@@ -16,7 +16,7 @@ class ListAccountIntegrationsRequest extends Request
      * @param array{
      *     Uri: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     IncludeHidden?: bool
      * } $args
      */

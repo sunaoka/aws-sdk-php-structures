@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FLUID'|'NORMAL' $CloudLayout
  * @property 'LOWER_CASE'|'EXISTING_CASE' $WordCasing
  * @property 'NONE'|'SMALL'|'MEDIUM'|'LARGE' $WordPadding
- * @property int $MaximumStringLength
+ * @property int<1, 100> $MaximumStringLength
  */
 class WordCloudOptions extends Shape
 {
@@ -21,7 +21,7 @@ class WordCloudOptions extends Shape
      *     CloudLayout?: 'FLUID'|'NORMAL',
      *     WordCasing?: 'LOWER_CASE'|'EXISTING_CASE',
      *     WordPadding?: 'NONE'|'SMALL'|'MEDIUM'|'LARGE',
-     *     MaximumStringLength?: int
+     *     MaximumStringLength?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $executionTimeoutSeconds
+ * @property int<1, 200> $executionTimeoutSeconds
  * @property QueryGenerationContext $generationContext
  */
 class QueryGenerationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     executionTimeoutSeconds?: int,
+     *     executionTimeoutSeconds?: int<1, 200>,
      *     generationContext?: QueryGenerationContext
      * } $args
      */

@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $reportARN
  * @property string $filePath
  * @property double $lineCoveragePercentage
- * @property int $linesCovered
- * @property int $linesMissed
+ * @property int<0, max> $linesCovered
+ * @property int<0, max> $linesMissed
  * @property double $branchCoveragePercentage
- * @property int $branchesCovered
- * @property int $branchesMissed
+ * @property int<0, max> $branchesCovered
+ * @property int<0, max> $branchesMissed
  * @property \Aws\Api\DateTimeResult $expired
  */
 class CodeCoverage extends Shape
@@ -24,11 +24,11 @@ class CodeCoverage extends Shape
      *     reportARN?: string,
      *     filePath?: string,
      *     lineCoveragePercentage?: double,
-     *     linesCovered?: int,
-     *     linesMissed?: int,
+     *     linesCovered?: int<0, max>,
+     *     linesMissed?: int<0, max>,
      *     branchCoveragePercentage?: double,
-     *     branchesCovered?: int,
-     *     branchesMissed?: int,
+     *     branchesCovered?: int<0, max>,
+     *     branchesMissed?: int<0, max>,
      *     expired?: \Aws\Api\DateTimeResult
      * } $args
      */

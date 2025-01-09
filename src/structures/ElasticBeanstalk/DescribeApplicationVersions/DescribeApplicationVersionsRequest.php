@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApplicationName
  * @property list<string> $VersionLabels
- * @property int $MaxRecords
+ * @property int<1, 1000> $MaxRecords
  * @property string $NextToken
  */
 class DescribeApplicationVersionsRequest extends Request
@@ -16,7 +16,7 @@ class DescribeApplicationVersionsRequest extends Request
      * @param array{
      *     ApplicationName?: string,
      *     VersionLabels?: list<string>,
-     *     MaxRecords?: int,
+     *     MaxRecords?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

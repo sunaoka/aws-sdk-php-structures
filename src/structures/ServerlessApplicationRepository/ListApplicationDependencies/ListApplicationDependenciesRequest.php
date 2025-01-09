@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationId
- * @property int $MaxItems
+ * @property int<1, 100> $MaxItems
  * @property string $NextToken
  * @property string $SemanticVersion
  */
@@ -15,7 +15,7 @@ class ListApplicationDependenciesRequest extends Request
     /**
      * @param array{
      *     ApplicationId: string,
-     *     MaxItems?: int,
+     *     MaxItems?: int<1, 100>,
      *     NextToken?: string,
      *     SemanticVersion?: string
      * } $args

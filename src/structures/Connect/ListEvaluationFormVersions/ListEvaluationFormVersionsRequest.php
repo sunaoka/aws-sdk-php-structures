@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $EvaluationFormId
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListEvaluationFormVersionsRequest extends Request
@@ -16,7 +16,7 @@ class ListEvaluationFormVersionsRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     EvaluationFormId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

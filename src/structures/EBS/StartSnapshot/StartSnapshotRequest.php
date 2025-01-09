@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\EBS\StartSnapshot;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $VolumeSize
+ * @property int<1, max> $VolumeSize
  * @property string $ParentSnapshotId
  * @property list<Shapes\Tag> $Tags
  * @property string $Description
  * @property string $ClientToken
  * @property bool $Encrypted
  * @property string $KmsKeyArn
- * @property int $Timeout
+ * @property int<10, 4320> $Timeout
  */
 class StartSnapshotRequest extends Request
 {
     /**
      * @param array{
-     *     VolumeSize: int,
+     *     VolumeSize: int<1, max>,
      *     ParentSnapshotId?: string,
      *     Tags?: list<Shapes\Tag>,
      *     Description?: string,
      *     ClientToken?: string,
      *     Encrypted?: bool,
      *     KmsKeyArn?: string,
-     *     Timeout?: int
+     *     Timeout?: int<10, 4320>
      * } $args
      */
     public function __construct(array $args)

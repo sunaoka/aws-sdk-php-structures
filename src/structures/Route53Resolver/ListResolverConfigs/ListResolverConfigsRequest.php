@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\ListResolverConfigs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<5, 100> $MaxResults
  * @property string $NextToken
  */
 class ListResolverConfigsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 100>,
      *     NextToken?: string
      * } $args
      */

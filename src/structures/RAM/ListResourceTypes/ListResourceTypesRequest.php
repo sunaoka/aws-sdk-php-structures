@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 500> $maxResults
  * @property 'ALL'|'REGIONAL'|'GLOBAL' $resourceRegionScope
  */
 class ListResourceTypesRequest extends Request
@@ -14,7 +14,7 @@ class ListResourceTypesRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 500>,
      *     resourceRegionScope?: 'ALL'|'REGIONAL'|'GLOBAL'
      * } $args
      */

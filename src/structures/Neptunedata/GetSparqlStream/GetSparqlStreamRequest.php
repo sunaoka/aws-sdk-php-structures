@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Neptunedata\GetSparqlStream;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $limit
+ * @property int<1, 100000> $limit
  * @property 'AT_SEQUENCE_NUMBER'|'AFTER_SEQUENCE_NUMBER'|'TRIM_HORIZON'|'LATEST' $iteratorType
  * @property int $commitNum
  * @property int $opNum
@@ -15,7 +15,7 @@ class GetSparqlStreamRequest extends Request
 {
     /**
      * @param array{
-     *     limit?: int,
+     *     limit?: int<1, 100000>,
      *     iteratorType?: 'AT_SEQUENCE_NUMBER'|'AFTER_SEQUENCE_NUMBER'|'TRIM_HORIZON'|'LATEST',
      *     commitNum?: int,
      *     opNum?: int,

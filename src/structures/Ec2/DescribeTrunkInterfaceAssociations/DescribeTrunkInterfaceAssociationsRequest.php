@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<5, 255> $MaxResults
  */
 class DescribeTrunkInterfaceAssociationsRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeTrunkInterfaceAssociationsRequest extends Request
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<5, 255>
      * } $args
      */
     public function __construct(array $args = [])

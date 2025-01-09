@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool $DryRun
  * @property list<string> $Resources
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class DescribePrincipalIdFormatRequest extends Request
@@ -16,7 +16,7 @@ class DescribePrincipalIdFormatRequest extends Request
      * @param array{
      *     DryRun?: bool,
      *     Resources?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

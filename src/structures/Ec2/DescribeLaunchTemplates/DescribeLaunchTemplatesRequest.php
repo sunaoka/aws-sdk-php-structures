@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $LaunchTemplateNames
  * @property list<Shapes\Filter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 200> $MaxResults
  */
 class DescribeLaunchTemplatesRequest extends Request
 {
@@ -21,7 +21,7 @@ class DescribeLaunchTemplatesRequest extends Request
      *     LaunchTemplateNames?: list<string>,
      *     Filters?: list<Shapes\Filter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 200>
      * } $args
      */
     public function __construct(array $args = [])

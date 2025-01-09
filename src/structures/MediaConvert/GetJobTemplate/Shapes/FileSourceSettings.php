@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED' $ConvertPaintToPop
  * @property CaptionSourceFramerate $Framerate
  * @property string $SourceFile
- * @property int $TimeDelta
+ * @property int<-2147483648, 2147483647> $TimeDelta
  * @property 'SECONDS'|'MILLISECONDS' $TimeDeltaUnits
  */
 class FileSourceSettings extends Shape
@@ -22,7 +22,7 @@ class FileSourceSettings extends Shape
      *     ConvertPaintToPop?: 'ENABLED'|'DISABLED',
      *     Framerate?: CaptionSourceFramerate,
      *     SourceFile?: string,
-     *     TimeDelta?: int,
+     *     TimeDelta?: int<-2147483648, 2147483647>,
      *     TimeDeltaUnits?: 'SECONDS'|'MILLISECONDS'
      * } $args
      */

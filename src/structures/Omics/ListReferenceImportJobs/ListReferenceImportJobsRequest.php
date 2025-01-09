@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Omics\ListReferenceImportJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property string $referenceStoreId
  * @property Shapes\ImportReferenceFilter $filter
@@ -14,7 +14,7 @@ class ListReferenceImportJobsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     referenceStoreId: string,
      *     filter?: Shapes\ImportReferenceFilter

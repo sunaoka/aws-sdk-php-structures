@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Rekognition\DeleteCollection;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $StatusCode
+ * @property int<0, max> $StatusCode
  */
 class DeleteCollectionResponse extends Response
 {

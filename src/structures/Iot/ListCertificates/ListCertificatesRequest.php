@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iot\ListCertificates;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $pageSize
+ * @property int<1, 250> $pageSize
  * @property string $marker
  * @property bool $ascendingOrder
  */
@@ -13,7 +13,7 @@ class ListCertificatesRequest extends Request
 {
     /**
      * @param array{
-     *     pageSize?: int,
+     *     pageSize?: int<1, 250>,
      *     marker?: string,
      *     ascendingOrder?: bool
      * } $args

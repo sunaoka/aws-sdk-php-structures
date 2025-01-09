@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BCMDataExports\ListExports;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $NextToken
  */
 class ListExportsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

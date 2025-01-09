@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\GroundStation\GetMissionProfile;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $contactPostPassDurationSeconds
- * @property int $contactPrePassDurationSeconds
+ * @property int<0, 21600> $contactPostPassDurationSeconds
+ * @property int<0, 21600> $contactPrePassDurationSeconds
  * @property list<list<string>> $dataflowEdges
- * @property int $minimumViableContactDurationSeconds
+ * @property int<1, 21600> $minimumViableContactDurationSeconds
  * @property string $missionProfileArn
  * @property string $missionProfileId
  * @property string $name

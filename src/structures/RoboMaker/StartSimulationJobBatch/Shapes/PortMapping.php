@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\RoboMaker\StartSimulationJobBatch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $jobPort
- * @property int $applicationPort
+ * @property int<1, 65535> $jobPort
+ * @property int<1024, 65535> $applicationPort
  * @property bool $enableOnPublicIp
  */
 class PortMapping extends Shape
 {
     /**
      * @param array{
-     *     jobPort: int,
-     *     applicationPort: int,
+     *     jobPort: int<1, 65535>,
+     *     applicationPort: int<1024, 65535>,
      *     enableOnPublicIp?: bool
      * } $args
      */

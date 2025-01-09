@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $AWSRegion
  * @property string $LocalZoneGroup
  * @property Coordinates $Coordinates
- * @property int $Bias
+ * @property int<-99, 99> $Bias
  */
 class GeoProximityLocation extends Shape
 {
@@ -17,7 +17,7 @@ class GeoProximityLocation extends Shape
      *     AWSRegion?: string,
      *     LocalZoneGroup?: string,
      *     Coordinates?: Coordinates,
-     *     Bias?: int
+     *     Bias?: int<-99, 99>
      * } $args
      */
     public function __construct(array $args = [])

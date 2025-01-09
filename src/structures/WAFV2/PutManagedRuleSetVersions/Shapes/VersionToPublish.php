@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AssociatedRuleGroupArn
- * @property int $ForecastedLifetime
+ * @property int<1, max> $ForecastedLifetime
  */
 class VersionToPublish extends Shape
 {
     /**
      * @param array{
      *     AssociatedRuleGroupArn?: string,
-     *     ForecastedLifetime?: int
+     *     ForecastedLifetime?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

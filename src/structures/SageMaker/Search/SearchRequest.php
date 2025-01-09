@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SortBy
  * @property 'Ascending'|'Descending' $SortOrder
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'SameAccount'|'CrossAccount' $CrossAccountFilterOption
  * @property list<Shapes\VisibilityConditions> $VisibilityConditions
  */
@@ -23,7 +23,7 @@ class SearchRequest extends Request
      *     SortBy?: string,
      *     SortOrder?: 'Ascending'|'Descending',
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     CrossAccountFilterOption?: 'SameAccount'|'CrossAccount',
      *     VisibilityConditions?: list<Shapes\VisibilityConditions>
      * } $args

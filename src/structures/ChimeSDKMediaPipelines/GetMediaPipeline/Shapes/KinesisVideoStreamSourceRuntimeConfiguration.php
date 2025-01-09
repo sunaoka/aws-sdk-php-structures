@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<StreamConfiguration> $Streams
  * @property 'pcm' $MediaEncoding
- * @property int $MediaSampleRate
+ * @property int<8000, 48000> $MediaSampleRate
  */
 class KinesisVideoStreamSourceRuntimeConfiguration extends Shape
 {
@@ -15,7 +15,7 @@ class KinesisVideoStreamSourceRuntimeConfiguration extends Shape
      * @param array{
      *     Streams: list<StreamConfiguration>,
      *     MediaEncoding: 'pcm',
-     *     MediaSampleRate: int
+     *     MediaSampleRate: int<8000, 48000>
      * } $args
      */
     public function __construct(array $args)

@@ -11,11 +11,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RemoteAdministrationEndpoint
  * @property string $PreferredSubnetId
  * @property string $PreferredFileServerIp
- * @property int $ThroughputCapacity
+ * @property int<8, 100000> $ThroughputCapacity
  * @property list<'PATCHING'|'BACKING_UP'> $MaintenanceOperationsInProgress
  * @property string $WeeklyMaintenanceStartTime
  * @property string $DailyAutomaticBackupStartTime
- * @property int $AutomaticBackupRetentionDays
+ * @property int<0, 90> $AutomaticBackupRetentionDays
  * @property bool $CopyTagsToBackups
  * @property list<Alias> $Aliases
  * @property WindowsAuditLogConfiguration $AuditLogConfiguration
@@ -31,11 +31,11 @@ class WindowsFileSystemConfiguration extends Shape
      *     RemoteAdministrationEndpoint?: string,
      *     PreferredSubnetId?: string,
      *     PreferredFileServerIp?: string,
-     *     ThroughputCapacity?: int,
+     *     ThroughputCapacity?: int<8, 100000>,
      *     MaintenanceOperationsInProgress?: list<'PATCHING'|'BACKING_UP'>,
      *     WeeklyMaintenanceStartTime?: string,
      *     DailyAutomaticBackupStartTime?: string,
-     *     AutomaticBackupRetentionDays?: int,
+     *     AutomaticBackupRetentionDays?: int<0, 90>,
      *     CopyTagsToBackups?: bool,
      *     Aliases?: list<Alias>,
      *     AuditLogConfiguration?: WindowsAuditLogConfiguration,

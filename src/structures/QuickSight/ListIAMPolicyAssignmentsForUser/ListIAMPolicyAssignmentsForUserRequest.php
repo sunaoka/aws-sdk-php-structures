@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $UserName
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $Namespace
  */
 class ListIAMPolicyAssignmentsForUserRequest extends Request
@@ -18,7 +18,7 @@ class ListIAMPolicyAssignmentsForUserRequest extends Request
      *     AwsAccountId: string,
      *     UserName: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     Namespace: string
      * } $args
      */

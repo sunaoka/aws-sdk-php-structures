@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\mgn\RetryDataReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $cores
+ * @property int<0, max> $cores
  * @property string $modelName
  */
 class CPU extends Shape
 {
     /**
      * @param array{
-     *     cores?: int,
+     *     cores?: int<0, max>,
      *     modelName?: string
      * } $args
      */

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateInferenceRecommendationsJob\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $InitialNumberOfUsers
- * @property int $SpawnRate
- * @property int $DurationInSeconds
+ * @property int<1, max> $InitialNumberOfUsers
+ * @property int<0, max> $SpawnRate
+ * @property int<1, max> $DurationInSeconds
  */
 class Phase extends Shape
 {
     /**
      * @param array{
-     *     InitialNumberOfUsers?: int,
-     *     SpawnRate?: int,
-     *     DurationInSeconds?: int
+     *     InitialNumberOfUsers?: int<1, max>,
+     *     SpawnRate?: int<0, max>,
+     *     DurationInSeconds?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

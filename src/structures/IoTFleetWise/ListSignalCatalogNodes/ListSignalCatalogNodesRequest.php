@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property 'SENSOR'|'ACTUATOR'|'ATTRIBUTE'|'BRANCH'|'CUSTOM_STRUCT'|'CUSTOM_PROPERTY' $signalNodeType
  */
 class ListSignalCatalogNodesRequest extends Request
@@ -16,7 +16,7 @@ class ListSignalCatalogNodesRequest extends Request
      * @param array{
      *     name: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     signalNodeType?: 'SENSOR'|'ACTUATOR'|'ATTRIBUTE'|'BRANCH'|'CUSTOM_STRUCT'|'CUSTOM_PROPERTY'
      * } $args
      */

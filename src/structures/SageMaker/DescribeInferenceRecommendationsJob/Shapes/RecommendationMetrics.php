@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $ModelLatency
  * @property float $CpuUtilization
  * @property float $MemoryUtilization
- * @property int $ModelSetupTime
+ * @property int<0, max> $ModelSetupTime
  */
 class RecommendationMetrics extends Shape
 {
@@ -23,7 +23,7 @@ class RecommendationMetrics extends Shape
      *     ModelLatency?: int,
      *     CpuUtilization?: float,
      *     MemoryUtilization?: float,
-     *     ModelSetupTime?: int
+     *     ModelSetupTime?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

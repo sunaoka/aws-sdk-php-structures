@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CapacityReservationId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property bool $DryRun
  */
 class GetCapacityReservationUsageRequest extends Request
@@ -16,7 +16,7 @@ class GetCapacityReservationUsageRequest extends Request
      * @param array{
      *     CapacityReservationId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     DryRun?: bool
      * } $args
      */

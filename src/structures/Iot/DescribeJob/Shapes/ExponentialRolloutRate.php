@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $baseRatePerMinute
+ * @property int<1, 1000> $baseRatePerMinute
  * @property double $incrementFactor
  * @property RateIncreaseCriteria $rateIncreaseCriteria
  */
@@ -13,7 +13,7 @@ class ExponentialRolloutRate extends Shape
 {
     /**
      * @param array{
-     *     baseRatePerMinute: int,
+     *     baseRatePerMinute: int<1, 1000>,
      *     incrementFactor: double,
      *     rateIncreaseCriteria: RateIncreaseCriteria
      * } $args

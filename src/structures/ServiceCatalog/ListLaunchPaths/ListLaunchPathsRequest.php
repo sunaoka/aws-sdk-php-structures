@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AcceptLanguage
  * @property string $ProductId
- * @property int $PageSize
+ * @property int<0, 20> $PageSize
  * @property string $PageToken
  */
 class ListLaunchPathsRequest extends Request
@@ -16,7 +16,7 @@ class ListLaunchPathsRequest extends Request
      * @param array{
      *     AcceptLanguage?: string,
      *     ProductId: string,
-     *     PageSize?: int,
+     *     PageSize?: int<0, 20>,
      *     PageToken?: string
      * } $args
      */

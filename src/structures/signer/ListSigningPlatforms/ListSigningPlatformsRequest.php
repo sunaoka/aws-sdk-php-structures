@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $category
  * @property string $partner
  * @property string $target
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  */
 class ListSigningPlatformsRequest extends Request
@@ -18,7 +18,7 @@ class ListSigningPlatformsRequest extends Request
      *     category?: string,
      *     partner?: string,
      *     target?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string
      * } $args
      */

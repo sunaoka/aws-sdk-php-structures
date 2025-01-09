@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppConfig\ListExtensions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  * @property string $Name
  */
@@ -13,7 +13,7 @@ class ListExtensionsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string,
      *     Name?: string
      * } $args

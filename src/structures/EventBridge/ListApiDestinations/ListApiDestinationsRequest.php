@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $NamePrefix
  * @property string $ConnectionArn
  * @property string $NextToken
- * @property int $Limit
+ * @property int<1, 100> $Limit
  */
 class ListApiDestinationsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListApiDestinationsRequest extends Request
      *     NamePrefix?: string,
      *     ConnectionArn?: string,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

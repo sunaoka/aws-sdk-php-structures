@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Parameter> $Parameters
  * @property bool $DisableRollback
  * @property Shapes\RollbackConfiguration $RollbackConfiguration
- * @property int $TimeoutInMinutes
+ * @property int<1, max> $TimeoutInMinutes
  * @property list<string> $NotificationARNs
  * @property list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'> $Capabilities
  * @property list<string> $ResourceTypes
@@ -34,7 +34,7 @@ class CreateStackRequest extends Request
      *     Parameters?: list<Shapes\Parameter>,
      *     DisableRollback?: bool,
      *     RollbackConfiguration?: Shapes\RollbackConfiguration,
-     *     TimeoutInMinutes?: int,
+     *     TimeoutInMinutes?: int<1, max>,
      *     NotificationARNs?: list<string>,
      *     Capabilities?: list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'>,
      *     ResourceTypes?: list<string>,

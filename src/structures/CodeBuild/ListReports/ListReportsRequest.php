@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'ASCENDING'|'DESCENDING' $sortOrder
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property Shapes\ReportFilter $filter
  */
 class ListReportsRequest extends Request
@@ -16,7 +16,7 @@ class ListReportsRequest extends Request
      * @param array{
      *     sortOrder?: 'ASCENDING'|'DESCENDING',
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     filter?: Shapes\ReportFilter
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DirectoryId
- * @property int $MaxResults
+ * @property int<1, 250> $MaxResults
  * @property string $MemberRealm
  * @property string $NextToken
  * @property string $Realm
@@ -17,7 +17,7 @@ class ListGroupMembersRequest extends Request
     /**
      * @param array{
      *     DirectoryId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 250>,
      *     MemberRealm?: string,
      *     NextToken?: string,
      *     Realm?: string,

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Filter> $FilterList
  * @property Shapes\Sort $Sort
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property 'SELF'|'SHARED' $OwnershipType
  * @property Shapes\EntityTypeFilters $EntityTypeFilters
  * @property Shapes\EntityTypeSort $EntityTypeSort
@@ -24,7 +24,7 @@ class ListEntitiesRequest extends Request
      *     FilterList?: list<Shapes\Filter>,
      *     Sort?: Shapes\Sort,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     OwnershipType?: 'SELF'|'SHARED',
      *     EntityTypeFilters?: Shapes\EntityTypeFilters,
      *     EntityTypeSort?: Shapes\EntityTypeSort

@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ResourceType
  * @property bool $Automatic
  * @property ExecutionControls $ExecutionControls
- * @property int $MaximumAutomaticAttempts
- * @property int $RetryAttemptSeconds
+ * @property int<1, 25> $MaximumAutomaticAttempts
+ * @property int<1, 2678000> $RetryAttemptSeconds
  * @property string $Arn
  * @property string $CreatedByService
  */
@@ -30,8 +30,8 @@ class RemediationConfiguration extends Shape
      *     ResourceType?: string,
      *     Automatic?: bool,
      *     ExecutionControls?: ExecutionControls,
-     *     MaximumAutomaticAttempts?: int,
-     *     RetryAttemptSeconds?: int,
+     *     MaximumAutomaticAttempts?: int<1, 25>,
+     *     RetryAttemptSeconds?: int<1, 2678000>,
      *     Arn?: string,
      *     CreatedByService?: string
      * } $args

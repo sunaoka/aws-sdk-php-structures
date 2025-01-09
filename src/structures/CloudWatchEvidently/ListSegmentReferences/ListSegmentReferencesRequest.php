@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\ListSegmentReferences;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property string $segment
  * @property 'EXPERIMENT'|'LAUNCH' $type
@@ -14,7 +14,7 @@ class ListSegmentReferencesRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     segment: string,
      *     type: 'EXPERIMENT'|'LAUNCH'

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListVersions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 20> $MaxResults
  * @property string $NextToken
  */
 class ListVersionsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 20>,
      *     NextToken?: string
      * } $args
      */

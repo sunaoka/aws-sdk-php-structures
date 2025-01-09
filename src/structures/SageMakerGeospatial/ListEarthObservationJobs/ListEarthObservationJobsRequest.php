@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\ListEarthObservationJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 20> $MaxResults
  * @property string $NextToken
  * @property string $SortBy
  * @property 'ASCENDING'|'DESCENDING' $SortOrder
@@ -15,7 +15,7 @@ class ListEarthObservationJobsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 20>,
      *     NextToken?: string,
      *     SortBy?: string,
      *     SortOrder?: 'ASCENDING'|'DESCENDING',

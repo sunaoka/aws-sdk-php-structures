@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IdentityPoolId
  * @property string $IdentityId
  * @property string $DeveloperUserIdentifier
- * @property int $MaxResults
+ * @property int<1, 60> $MaxResults
  * @property string $NextToken
  */
 class LookupDeveloperIdentityRequest extends Request
@@ -18,7 +18,7 @@ class LookupDeveloperIdentityRequest extends Request
      *     IdentityPoolId: string,
      *     IdentityId?: string,
      *     DeveloperUserIdentifier?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 60>,
      *     NextToken?: string
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\Credentials $Credentials
  * @property string $SubjectFromWebIdentityToken
  * @property Shapes\AssumedRoleUser $AssumedRoleUser
- * @property int $PackedPolicySize
+ * @property int<0, max> $PackedPolicySize
  * @property string $Provider
  * @property string $Audience
  * @property string $SourceIdentity

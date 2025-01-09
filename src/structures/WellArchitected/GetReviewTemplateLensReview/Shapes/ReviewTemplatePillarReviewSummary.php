@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PillarId
  * @property string $PillarName
  * @property string $Notes
- * @property array<'UNANSWERED'|'ANSWERED', int> $QuestionCounts
+ * @property array<'UNANSWERED'|'ANSWERED', int<0, max>> $QuestionCounts
  */
 class ReviewTemplatePillarReviewSummary extends Shape
 {
@@ -17,7 +17,7 @@ class ReviewTemplatePillarReviewSummary extends Shape
      *     PillarId?: string,
      *     PillarName?: string,
      *     Notes?: string,
-     *     QuestionCounts?: array<'UNANSWERED'|'ANSWERED', int>
+     *     QuestionCounts?: array<'UNANSWERED'|'ANSWERED', int<0, max>>
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\RegistryId $RegistryId
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListSchemasRequest extends Request
@@ -14,7 +14,7 @@ class ListSchemasRequest extends Request
     /**
      * @param array{
      *     RegistryId?: Shapes\RegistryId,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AdAvailOffset
+ * @property int<-1000, 1000> $AdAvailOffset
  * @property AvailBlanking $AvailBlanking
  * @property list<ColorConversion3DLUTSetting> $ColorConversion3DLUTSettings
  * @property EsamSettings $Esam
  * @property ExtendedDataServices $ExtendedDataServices
- * @property int $FollowSource
+ * @property int<1, 150> $FollowSource
  * @property list<InputTemplate> $Inputs
  * @property KantarWatermarkSettings $KantarWatermark
  * @property MotionImageInserter $MotionImageInserter
@@ -24,12 +24,12 @@ class JobTemplateSettings extends Shape
 {
     /**
      * @param array{
-     *     AdAvailOffset?: int,
+     *     AdAvailOffset?: int<-1000, 1000>,
      *     AvailBlanking?: AvailBlanking,
      *     ColorConversion3DLUTSettings?: list<ColorConversion3DLUTSetting>,
      *     Esam?: EsamSettings,
      *     ExtendedDataServices?: ExtendedDataServices,
-     *     FollowSource?: int,
+     *     FollowSource?: int<1, 150>,
      *     Inputs?: list<InputTemplate>,
      *     KantarWatermark?: KantarWatermarkSettings,
      *     MotionImageInserter?: MotionImageInserter,

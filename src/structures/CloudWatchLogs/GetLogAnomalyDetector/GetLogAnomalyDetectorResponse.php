@@ -11,9 +11,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $filterPattern
  * @property 'INITIALIZING'|'TRAINING'|'ANALYZING'|'FAILED'|'DELETED'|'PAUSED' $anomalyDetectorStatus
  * @property string $kmsKeyId
- * @property int $creationTimeStamp
- * @property int $lastModifiedTimeStamp
- * @property int $anomalyVisibilityTime
+ * @property int<0, max> $creationTimeStamp
+ * @property int<0, max> $lastModifiedTimeStamp
+ * @property int<7, 90> $anomalyVisibilityTime
  */
 class GetLogAnomalyDetectorResponse extends Response
 {

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $EndpointId
- * @property int $Weight
+ * @property int<0, 255> $Weight
  * @property 'INITIAL'|'HEALTHY'|'UNHEALTHY' $HealthState
  * @property string $HealthReason
  * @property bool $ClientIPPreservationEnabled
@@ -16,7 +16,7 @@ class EndpointDescription extends Shape
     /**
      * @param array{
      *     EndpointId?: string,
-     *     Weight?: int,
+     *     Weight?: int<0, 255>,
      *     HealthState?: 'INITIAL'|'HEALTHY'|'UNHEALTHY',
      *     HealthReason?: string,
      *     ClientIPPreservationEnabled?: bool

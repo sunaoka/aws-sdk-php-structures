@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $ImageIds
  * @property 'OWNED'|'SHARED' $ImageType
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 25> $MaxResults
  */
 class DescribeWorkspaceImagesRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeWorkspaceImagesRequest extends Request
      *     ImageIds?: list<string>,
      *     ImageType?: 'OWNED'|'SHARED',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 25>
      * } $args
      */
     public function __construct(array $args = [])

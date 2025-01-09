@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FleetId
- * @property int $DesiredInstances
- * @property int $MinSize
- * @property int $MaxSize
+ * @property int<0, max> $DesiredInstances
+ * @property int<0, max> $MinSize
+ * @property int<0, max> $MaxSize
  * @property string $Location
  */
 class UpdateFleetCapacityRequest extends Request
@@ -16,9 +16,9 @@ class UpdateFleetCapacityRequest extends Request
     /**
      * @param array{
      *     FleetId: string,
-     *     DesiredInstances?: int,
-     *     MinSize?: int,
-     *     MaxSize?: int,
+     *     DesiredInstances?: int<0, max>,
+     *     MinSize?: int<0, max>,
+     *     MaxSize?: int<0, max>,
      *     Location?: string
      * } $args
      */

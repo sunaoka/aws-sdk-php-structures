@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $endDateTime
  * @property Shapes\UtteranceDataSortBy $sortBy
  * @property list<Shapes\AnalyticsUtteranceFilter> $filters
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListUtteranceAnalyticsDataRequest extends Request
@@ -22,7 +22,7 @@ class ListUtteranceAnalyticsDataRequest extends Request
      *     endDateTime: \Aws\Api\DateTimeResult,
      *     sortBy?: Shapes\UtteranceDataSortBy,
      *     filters?: list<Shapes\AnalyticsUtteranceFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

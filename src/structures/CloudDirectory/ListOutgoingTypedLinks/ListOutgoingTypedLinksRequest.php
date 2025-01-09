@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TypedLinkAttributeRange> $FilterAttributeRanges
  * @property Shapes\TypedLinkSchemaAndFacetName $FilterTypedLink
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property 'SERIALIZABLE'|'EVENTUAL' $ConsistencyLevel
  */
 class ListOutgoingTypedLinksRequest extends Request
@@ -22,7 +22,7 @@ class ListOutgoingTypedLinksRequest extends Request
      *     FilterAttributeRanges?: list<Shapes\TypedLinkAttributeRange>,
      *     FilterTypedLink?: Shapes\TypedLinkSchemaAndFacetName,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'
      * } $args
      */

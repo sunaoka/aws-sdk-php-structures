@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $GroupArn
  * @property string $Name
  * @property string $Description
- * @property int $Criticality
+ * @property int<1, 10> $Criticality
  * @property string $Owner
  * @property string $DisplayName
  * @property array<string, string> $ApplicationTag
@@ -20,7 +20,7 @@ class Group extends Shape
      *     GroupArn: string,
      *     Name: string,
      *     Description?: string,
-     *     Criticality?: int,
+     *     Criticality?: int<1, 10>,
      *     Owner?: string,
      *     DisplayName?: string,
      *     ApplicationTag?: array<string, string>

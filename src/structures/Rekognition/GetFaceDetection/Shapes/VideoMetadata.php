@@ -6,11 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Codec
- * @property int $DurationMillis
+ * @property int<0, max> $DurationMillis
  * @property string $Format
  * @property float $FrameRate
- * @property int $FrameHeight
- * @property int $FrameWidth
+ * @property int<0, max> $FrameHeight
+ * @property int<0, max> $FrameWidth
  * @property 'FULL'|'LIMITED' $ColorRange
  */
 class VideoMetadata extends Shape
@@ -18,11 +18,11 @@ class VideoMetadata extends Shape
     /**
      * @param array{
      *     Codec?: string,
-     *     DurationMillis?: int,
+     *     DurationMillis?: int<0, max>,
      *     Format?: string,
      *     FrameRate?: float,
-     *     FrameHeight?: int,
-     *     FrameWidth?: int,
+     *     FrameHeight?: int<0, max>,
+     *     FrameWidth?: int<0, max>,
      *     ColorRange?: 'FULL'|'LIMITED'
      * } $args
      */

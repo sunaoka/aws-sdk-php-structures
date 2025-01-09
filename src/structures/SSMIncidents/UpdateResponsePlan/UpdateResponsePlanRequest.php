@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $displayName
  * @property list<string> $engagements
  * @property string $incidentTemplateDedupeString
- * @property int $incidentTemplateImpact
+ * @property int<1, 5> $incidentTemplateImpact
  * @property list<Shapes\NotificationTargetItem> $incidentTemplateNotificationTargets
  * @property string $incidentTemplateSummary
  * @property array<string, string> $incidentTemplateTags
@@ -30,7 +30,7 @@ class UpdateResponsePlanRequest extends Request
      *     displayName?: string,
      *     engagements?: list<string>,
      *     incidentTemplateDedupeString?: string,
-     *     incidentTemplateImpact?: int,
+     *     incidentTemplateImpact?: int<1, 5>,
      *     incidentTemplateNotificationTargets?: list<Shapes\NotificationTargetItem>,
      *     incidentTemplateSummary?: string,
      *     incidentTemplateTags?: array<string, string>,

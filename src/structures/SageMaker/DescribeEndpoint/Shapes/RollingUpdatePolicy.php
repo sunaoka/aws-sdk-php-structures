@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CapacitySize $MaximumBatchSize
- * @property int $WaitIntervalInSeconds
- * @property int $MaximumExecutionTimeoutInSeconds
+ * @property int<0, 3600> $WaitIntervalInSeconds
+ * @property int<600, 28800> $MaximumExecutionTimeoutInSeconds
  * @property CapacitySize $RollbackMaximumBatchSize
  */
 class RollingUpdatePolicy extends Shape
@@ -15,8 +15,8 @@ class RollingUpdatePolicy extends Shape
     /**
      * @param array{
      *     MaximumBatchSize: CapacitySize,
-     *     WaitIntervalInSeconds: int,
-     *     MaximumExecutionTimeoutInSeconds?: int,
+     *     WaitIntervalInSeconds: int<0, 3600>,
+     *     MaximumExecutionTimeoutInSeconds?: int<600, 28800>,
      *     RollbackMaximumBatchSize?: CapacitySize
      * } $args
      */

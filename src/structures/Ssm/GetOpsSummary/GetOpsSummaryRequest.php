@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\OpsAggregator> $Aggregators
  * @property list<Shapes\OpsResultAttribute> $ResultAttributes
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  */
 class GetOpsSummaryRequest extends Request
 {
@@ -21,7 +21,7 @@ class GetOpsSummaryRequest extends Request
      *     Aggregators?: list<Shapes\OpsAggregator>,
      *     ResultAttributes?: list<Shapes\OpsResultAttribute>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

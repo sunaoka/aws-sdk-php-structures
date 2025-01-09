@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $workflowId
  * @property string $projectName
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property list<Shapes\WorkflowRunSortCriteria> $sortBy
  */
 class ListWorkflowRunsRequest extends Request
@@ -20,7 +20,7 @@ class ListWorkflowRunsRequest extends Request
      *     workflowId?: string,
      *     projectName: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     sortBy?: list<Shapes\WorkflowRunSortCriteria>
      * } $args
      */

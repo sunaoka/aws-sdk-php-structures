@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\TimeRange $StartTime
  * @property Shapes\TimeRange $EndTime
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 10000> $MaxResults
  */
 class ListAttacksRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListAttacksRequest extends Request
      *     StartTime?: Shapes\TimeRange,
      *     EndTime?: Shapes\TimeRange,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<0, 10000>
      * } $args
      */
     public function __construct(array $args = [])

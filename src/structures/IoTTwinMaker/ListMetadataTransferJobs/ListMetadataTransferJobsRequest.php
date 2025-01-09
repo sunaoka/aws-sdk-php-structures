@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 's3'|'iotsitewise'|'iottwinmaker' $destinationType
  * @property list<Shapes\ListMetadataTransferJobsFilter> $filters
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<0, 200> $maxResults
  */
 class ListMetadataTransferJobsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListMetadataTransferJobsRequest extends Request
      *     destinationType: 's3'|'iotsitewise'|'iottwinmaker',
      *     filters?: list<Shapes\ListMetadataTransferJobsFilter>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<0, 200>
      * } $args
      */
     public function __construct(array $args)

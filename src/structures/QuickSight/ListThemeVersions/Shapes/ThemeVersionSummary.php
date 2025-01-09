@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListThemeVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $VersionNumber
+ * @property int<1, max> $VersionNumber
  * @property string $Arn
  * @property string $Description
  * @property \Aws\Api\DateTimeResult $CreatedTime
@@ -15,7 +15,7 @@ class ThemeVersionSummary extends Shape
 {
     /**
      * @param array{
-     *     VersionNumber?: int,
+     *     VersionNumber?: int<1, max>,
      *     Arn?: string,
      *     Description?: string,
      *     CreatedTime?: \Aws\Api\DateTimeResult,

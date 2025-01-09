@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $accessToken
  * @property string $accountId
  */
@@ -15,7 +15,7 @@ class ListAccountRolesRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     accessToken: string,
      *     accountId: string
      * } $args

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $logStreamName
  * @property string $logGroupIdentifier
  * @property string $message
- * @property int $timestamp
- * @property int $ingestionTime
+ * @property int<0, max> $timestamp
+ * @property int<0, max> $ingestionTime
  */
 class LiveTailSessionLogEvent extends Shape
 {
@@ -18,8 +18,8 @@ class LiveTailSessionLogEvent extends Shape
      *     logStreamName?: string,
      *     logGroupIdentifier?: string,
      *     message?: string,
-     *     timestamp?: int,
-     *     ingestionTime?: int
+     *     timestamp?: int<0, max>,
+     *     ingestionTime?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

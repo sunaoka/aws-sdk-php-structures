@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property 'CUSTOMER_MANAGED'|'AWS_MANAGED' $Type
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListViewsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListViewsRequest extends Request
      *     InstanceId: string,
      *     Type?: 'CUSTOMER_MANAGED'|'AWS_MANAGED',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

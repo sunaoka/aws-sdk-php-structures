@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SSMContacts\UpdateContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DurationInMinutes
+ * @property int<0, 30> $DurationInMinutes
  * @property list<Target> $Targets
  */
 class Stage extends Shape
 {
     /**
      * @param array{
-     *     DurationInMinutes: int,
+     *     DurationInMinutes: int<0, 30>,
      *     Targets: list<Target>
      * } $args
      */

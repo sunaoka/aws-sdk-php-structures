@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $IPV6Range
  * @property string $PrefixListId
  * @property string $Protocol
- * @property int $FromPort
- * @property int $ToPort
+ * @property int<0, 65535> $FromPort
+ * @property int<0, 65535> $ToPort
  */
 class SecurityGroupRuleDescription extends Shape
 {
@@ -20,8 +20,8 @@ class SecurityGroupRuleDescription extends Shape
      *     IPV6Range?: string,
      *     PrefixListId?: string,
      *     Protocol?: string,
-     *     FromPort?: int,
-     *     ToPort?: int
+     *     FromPort?: int<0, 65535>,
+     *     ToPort?: int<0, 65535>
      * } $args
      */
     public function __construct(array $args = [])

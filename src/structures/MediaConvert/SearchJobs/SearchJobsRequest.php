@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InputFile
- * @property int $MaxResults
+ * @property int<1, 20> $MaxResults
  * @property string $NextToken
  * @property 'ASCENDING'|'DESCENDING' $Order
  * @property string $Queue
@@ -17,7 +17,7 @@ class SearchJobsRequest extends Request
     /**
      * @param array{
      *     InputFile?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 20>,
      *     NextToken?: string,
      *     Order?: 'ASCENDING'|'DESCENDING',
      *     Queue?: string,

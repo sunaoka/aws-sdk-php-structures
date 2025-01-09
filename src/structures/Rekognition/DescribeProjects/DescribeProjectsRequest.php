@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property list<string> $ProjectNames
  * @property list<'CONTENT_MODERATION'|'CUSTOM_LABELS'> $Features
  */
@@ -15,7 +15,7 @@ class DescribeProjectsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     ProjectNames?: list<string>,
      *     Features?: list<'CONTENT_MODERATION'|'CUSTOM_LABELS'>
      * } $args

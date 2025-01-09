@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Salesforce'|'Singular'|'Slack'|'Redshift'|'S3'|'Marketo'|'Googleanalytics'|'Zendesk'|'Servicenow'|'Datadog'|'Trendmicro'|'Snowflake'|'Dynatrace'|'Infornexus'|'Amplitude'|'Veeva'|'EventBridge'|'LookoutMetrics'|'Upsolver'|'Honeycode'|'CustomerProfiles'|'SAPOData'|'CustomConnector'|'Pardot' $connectorType
  * @property string $entitiesPath
  * @property string $apiVersion
- * @property int $maxResults
+ * @property int<1, 10000> $maxResults
  * @property string $nextToken
  */
 class ListConnectorEntitiesRequest extends Request
@@ -20,7 +20,7 @@ class ListConnectorEntitiesRequest extends Request
      *     connectorType?: 'Salesforce'|'Singular'|'Slack'|'Redshift'|'S3'|'Marketo'|'Googleanalytics'|'Zendesk'|'Servicenow'|'Datadog'|'Trendmicro'|'Snowflake'|'Dynatrace'|'Infornexus'|'Amplitude'|'Veeva'|'EventBridge'|'LookoutMetrics'|'Upsolver'|'Honeycode'|'CustomerProfiles'|'SAPOData'|'CustomConnector'|'Pardot',
      *     entitiesPath?: string,
      *     apiVersion?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 10000>,
      *     nextToken?: string
      * } $args
      */

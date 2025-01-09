@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $responseMappingTemplate
  * @property string $functionVersion
  * @property SyncConfig $syncConfig
- * @property int $maxBatchSize
+ * @property int<0, 2000> $maxBatchSize
  * @property AppSyncRuntime $runtime
  * @property string $code
  */
@@ -31,7 +31,7 @@ class FunctionConfiguration extends Shape
      *     responseMappingTemplate?: string,
      *     functionVersion?: string,
      *     syncConfig?: SyncConfig,
-     *     maxBatchSize?: int,
+     *     maxBatchSize?: int<0, 2000>,
      *     runtime?: AppSyncRuntime,
      *     code?: string
      * } $args

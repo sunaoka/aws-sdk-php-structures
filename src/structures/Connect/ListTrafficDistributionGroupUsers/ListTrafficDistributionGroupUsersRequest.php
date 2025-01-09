@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TrafficDistributionGroupId
- * @property int $MaxResults
+ * @property int<1, 10> $MaxResults
  * @property string $NextToken
  */
 class ListTrafficDistributionGroupUsersRequest extends Request
@@ -14,7 +14,7 @@ class ListTrafficDistributionGroupUsersRequest extends Request
     /**
      * @param array{
      *     TrafficDistributionGroupId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 10>,
      *     NextToken?: string
      * } $args
      */

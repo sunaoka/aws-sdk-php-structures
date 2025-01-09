@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $modelEndpoint
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<5, 10> $maxResults
  */
 class GetExternalModelsRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetExternalModelsRequest extends Request
      * @param array{
      *     modelEndpoint?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<5, 10>
      * } $args
      */
     public function __construct(array $args = [])

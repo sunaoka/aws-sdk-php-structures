@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'Name'|'Status'|'CreationTime' $SortBy
  * @property 'Ascending'|'Descending' $SortOrder
  * @property string $NameContains
@@ -21,7 +21,7 @@ class ListHyperParameterTuningJobsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     SortBy?: 'Name'|'Status'|'CreationTime',
      *     SortOrder?: 'Ascending'|'Descending',
      *     NameContains?: string,

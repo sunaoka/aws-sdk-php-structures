@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property int $CurrentApplicationVersionId
+ * @property int<1, 999999999> $CurrentApplicationVersionId
  * @property Shapes\CloudWatchLoggingOption $CloudWatchLoggingOption
  */
 class AddApplicationCloudWatchLoggingOptionRequest extends Request
@@ -14,7 +14,7 @@ class AddApplicationCloudWatchLoggingOptionRequest extends Request
     /**
      * @param array{
      *     ApplicationName: string,
-     *     CurrentApplicationVersionId: int,
+     *     CurrentApplicationVersionId: int<1, 999999999>,
      *     CloudWatchLoggingOption: Shapes\CloudWatchLoggingOption
      * } $args
      */

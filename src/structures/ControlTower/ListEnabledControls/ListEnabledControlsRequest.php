@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\EnabledControlFilter $filter
- * @property int $maxResults
+ * @property int<1, 200> $maxResults
  * @property string $nextToken
  * @property string $targetIdentifier
  */
@@ -15,7 +15,7 @@ class ListEnabledControlsRequest extends Request
     /**
      * @param array{
      *     filter?: Shapes\EnabledControlFilter,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 200>,
      *     nextToken?: string,
      *     targetIdentifier?: string
      * } $args

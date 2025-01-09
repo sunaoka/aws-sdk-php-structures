@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domainOwner
  * @property string $packageGroup
  * @property 'EXTERNAL_UPSTREAM'|'INTERNAL_UPSTREAM'|'PUBLISH' $originRestrictionType
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListAllowedRepositoriesForGroupRequest extends Request
@@ -20,7 +20,7 @@ class ListAllowedRepositoriesForGroupRequest extends Request
      *     domainOwner?: string,
      *     packageGroup: string,
      *     originRestrictionType: 'EXTERNAL_UPSTREAM'|'INTERNAL_UPSTREAM'|'PUBLISH',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

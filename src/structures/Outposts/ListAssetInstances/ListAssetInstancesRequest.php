@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $InstanceTypeFilter
  * @property list<string> $AccountIdFilter
  * @property list<'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'> $AwsServiceFilter
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListAssetInstancesRequest extends Request
@@ -22,7 +22,7 @@ class ListAssetInstancesRequest extends Request
      *     InstanceTypeFilter?: list<string>,
      *     AccountIdFilter?: list<string>,
      *     AwsServiceFilter?: list<'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

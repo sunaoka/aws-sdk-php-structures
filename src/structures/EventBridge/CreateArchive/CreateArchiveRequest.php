@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EventSourceArn
  * @property string $Description
  * @property string $EventPattern
- * @property int $RetentionDays
+ * @property int<0, max> $RetentionDays
  */
 class CreateArchiveRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreateArchiveRequest extends Request
      *     EventSourceArn: string,
      *     Description?: string,
      *     EventPattern?: string,
-     *     RetentionDays?: int
+     *     RetentionDays?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

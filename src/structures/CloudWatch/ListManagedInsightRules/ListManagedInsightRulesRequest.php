@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ResourceARN
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  */
 class ListManagedInsightRulesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListManagedInsightRulesRequest extends Request
      * @param array{
      *     ResourceARN: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 500>
      * } $args
      */
     public function __construct(array $args)

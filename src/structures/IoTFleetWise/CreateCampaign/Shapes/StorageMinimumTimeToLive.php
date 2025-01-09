@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'HOURS'|'DAYS'|'WEEKS' $unit
- * @property int $value
+ * @property int<1, 876600> $value
  */
 class StorageMinimumTimeToLive extends Shape
 {
     /**
      * @param array{
      *     unit: 'HOURS'|'DAYS'|'WEEKS',
-     *     value: int
+     *     value: int<1, 876600>
      * } $args
      */
     public function __construct(array $args)

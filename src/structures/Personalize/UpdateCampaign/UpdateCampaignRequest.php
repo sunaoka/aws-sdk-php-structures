@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $campaignArn
  * @property string $solutionVersionArn
- * @property int $minProvisionedTPS
+ * @property int<1, max> $minProvisionedTPS
  * @property Shapes\CampaignConfig $campaignConfig
  */
 class UpdateCampaignRequest extends Request
@@ -16,7 +16,7 @@ class UpdateCampaignRequest extends Request
      * @param array{
      *     campaignArn: string,
      *     solutionVersionArn?: string,
-     *     minProvisionedTPS?: int,
+     *     minProvisionedTPS?: int<1, max>,
      *     campaignConfig?: Shapes\CampaignConfig
      * } $args
      */

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $SchemaDefinition
  * @property 'AVRO'|'JSON'|'PROTOBUF' $DataFormat
  * @property string $SchemaArn
- * @property int $VersionNumber
+ * @property int<1, 100000> $VersionNumber
  * @property 'AVAILABLE'|'PENDING'|'FAILURE'|'DELETING' $Status
  * @property string $CreatedTime
  */

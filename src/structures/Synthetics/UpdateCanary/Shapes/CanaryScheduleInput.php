@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Expression
- * @property int $DurationInSeconds
+ * @property int<0, 31622400> $DurationInSeconds
  */
 class CanaryScheduleInput extends Shape
 {
     /**
      * @param array{
      *     Expression: string,
-     *     DurationInSeconds?: int
+     *     DurationInSeconds?: int<0, 31622400>
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property float $Confidence
  * @property string $Name
  * @property string $ParentName
- * @property int $TaxonomyLevel
+ * @property int<0, max> $TaxonomyLevel
  */
 class ModerationLabel extends Shape
 {
@@ -17,7 +17,7 @@ class ModerationLabel extends Shape
      *     Confidence?: float,
      *     Name?: string,
      *     ParentName?: string,
-     *     TaxonomyLevel?: int
+     *     TaxonomyLevel?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

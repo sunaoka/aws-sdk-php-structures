@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property array<string, list<string>> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 25> $MaxResults
  */
 class DescribeClustersRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeClustersRequest extends Request
      * @param array{
      *     Filters?: array<string, list<string>>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 25>
      * } $args
      */
     public function __construct(array $args = [])

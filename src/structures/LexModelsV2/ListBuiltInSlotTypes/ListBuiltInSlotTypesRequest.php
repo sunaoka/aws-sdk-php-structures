@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $localeId
  * @property Shapes\BuiltInSlotTypeSortBy $sortBy
- * @property int $maxResults
+ * @property int<20, 20> $maxResults
  * @property string $nextToken
  */
 class ListBuiltInSlotTypesRequest extends Request
@@ -16,7 +16,7 @@ class ListBuiltInSlotTypesRequest extends Request
      * @param array{
      *     localeId: string,
      *     sortBy?: Shapes\BuiltInSlotTypeSortBy,
-     *     maxResults?: int,
+     *     maxResults?: int<20, 20>,
      *     nextToken?: string
      * } $args
      */

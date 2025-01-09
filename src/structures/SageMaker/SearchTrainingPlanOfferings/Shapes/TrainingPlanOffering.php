@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'training-job'|'hyperpod-cluster'> $TargetResources
  * @property \Aws\Api\DateTimeResult $RequestedStartTimeAfter
  * @property \Aws\Api\DateTimeResult $RequestedEndTimeBefore
- * @property int $DurationHours
- * @property int $DurationMinutes
+ * @property int<0, 87600> $DurationHours
+ * @property int<0, 59> $DurationMinutes
  * @property string $UpfrontFee
  * @property string $CurrencyCode
  * @property list<ReservedCapacityOffering> $ReservedCapacityOfferings
@@ -23,8 +23,8 @@ class TrainingPlanOffering extends Shape
      *     TargetResources: list<'training-job'|'hyperpod-cluster'>,
      *     RequestedStartTimeAfter?: \Aws\Api\DateTimeResult,
      *     RequestedEndTimeBefore?: \Aws\Api\DateTimeResult,
-     *     DurationHours?: int,
-     *     DurationMinutes?: int,
+     *     DurationHours?: int<0, 87600>,
+     *     DurationMinutes?: int<0, 59>,
      *     UpfrontFee?: string,
      *     CurrencyCode?: string,
      *     ReservedCapacityOfferings?: list<ReservedCapacityOffering>

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property UpdateInstruction $causedBy
- * @property int $code
+ * @property int<100, 999> $code
  * @property string $message
  */
 class UpdateError extends Shape
@@ -14,7 +14,7 @@ class UpdateError extends Shape
     /**
      * @param array{
      *     causedBy: UpdateInstruction,
-     *     code: int,
+     *     code: int<100, 999>,
      *     message: string
      * } $args
      */

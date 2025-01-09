@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DatasetName
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property string $ProjectName
  */
@@ -15,7 +15,7 @@ class ListJobsRequest extends Request
     /**
      * @param array{
      *     DatasetName?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     ProjectName?: string
      * } $args

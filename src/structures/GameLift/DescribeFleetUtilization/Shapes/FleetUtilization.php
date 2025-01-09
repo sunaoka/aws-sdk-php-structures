@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FleetId
  * @property string $FleetArn
- * @property int $ActiveServerProcessCount
- * @property int $ActiveGameSessionCount
- * @property int $CurrentPlayerSessionCount
- * @property int $MaximumPlayerSessionCount
+ * @property int<0, max> $ActiveServerProcessCount
+ * @property int<0, max> $ActiveGameSessionCount
+ * @property int<0, max> $CurrentPlayerSessionCount
+ * @property int<0, max> $MaximumPlayerSessionCount
  * @property string $Location
  */
 class FleetUtilization extends Shape
@@ -19,10 +19,10 @@ class FleetUtilization extends Shape
      * @param array{
      *     FleetId?: string,
      *     FleetArn?: string,
-     *     ActiveServerProcessCount?: int,
-     *     ActiveGameSessionCount?: int,
-     *     CurrentPlayerSessionCount?: int,
-     *     MaximumPlayerSessionCount?: int,
+     *     ActiveServerProcessCount?: int<0, max>,
+     *     ActiveGameSessionCount?: int<0, max>,
+     *     CurrentPlayerSessionCount?: int<0, max>,
+     *     MaximumPlayerSessionCount?: int<0, max>,
      *     Location?: string
      * } $args
      */

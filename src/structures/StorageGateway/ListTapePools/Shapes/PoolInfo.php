@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PoolName
  * @property 'DEEP_ARCHIVE'|'GLACIER' $StorageClass
  * @property 'COMPLIANCE'|'GOVERNANCE'|'NONE' $RetentionLockType
- * @property int $RetentionLockTimeInDays
+ * @property int<0, 36500> $RetentionLockTimeInDays
  * @property 'ACTIVE'|'DELETED' $PoolStatus
  */
 class PoolInfo extends Shape
@@ -20,7 +20,7 @@ class PoolInfo extends Shape
      *     PoolName?: string,
      *     StorageClass?: 'DEEP_ARCHIVE'|'GLACIER',
      *     RetentionLockType?: 'COMPLIANCE'|'GOVERNANCE'|'NONE',
-     *     RetentionLockTimeInDays?: int,
+     *     RetentionLockTimeInDays?: int<0, 36500>,
      *     PoolStatus?: 'ACTIVE'|'DELETED'
      * } $args
      */

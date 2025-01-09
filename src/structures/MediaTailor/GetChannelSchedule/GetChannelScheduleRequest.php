@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Audience
  * @property string $ChannelName
  * @property string $DurationMinutes
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class GetChannelScheduleRequest extends Request
@@ -18,7 +18,7 @@ class GetChannelScheduleRequest extends Request
      *     Audience?: string,
      *     ChannelName: string,
      *     DurationMinutes?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

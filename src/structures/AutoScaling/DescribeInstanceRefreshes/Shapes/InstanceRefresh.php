@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $StatusReason
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property int $PercentageComplete
- * @property int $InstancesToUpdate
+ * @property int<0, 100> $PercentageComplete
+ * @property int<0, max> $InstancesToUpdate
  * @property InstanceRefreshProgressDetails $ProgressDetails
  * @property RefreshPreferences $Preferences
  * @property DesiredConfiguration $DesiredConfiguration
@@ -28,8 +28,8 @@ class InstanceRefresh extends Shape
      *     StatusReason?: string,
      *     StartTime?: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult,
-     *     PercentageComplete?: int,
-     *     InstancesToUpdate?: int,
+     *     PercentageComplete?: int<0, 100>,
+     *     InstancesToUpdate?: int<0, max>,
      *     ProgressDetails?: InstanceRefreshProgressDetails,
      *     Preferences?: RefreshPreferences,
      *     DesiredConfiguration?: DesiredConfiguration,

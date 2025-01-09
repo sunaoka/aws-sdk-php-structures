@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GroundStation\ListGroundStations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<0, 100> $maxResults
  * @property string $nextToken
  * @property string $satelliteId
  */
@@ -13,7 +13,7 @@ class ListGroundStationsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<0, 100>,
      *     nextToken?: string,
      *     satelliteId?: string
      * } $args

@@ -16,10 +16,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SampleCount'|'Average'|'Sum'|'Minimum'|'Maximum' $Statistic
  * @property string $ExtendedStatistic
  * @property list<Shapes\Dimension> $Dimensions
- * @property int $Period
+ * @property int<1, max> $Period
  * @property 'Seconds'|'Microseconds'|'Milliseconds'|'Bytes'|'Kilobytes'|'Megabytes'|'Gigabytes'|'Terabytes'|'Bits'|'Kilobits'|'Megabits'|'Gigabits'|'Terabits'|'Percent'|'Count'|'Bytes/Second'|'Kilobytes/Second'|'Megabytes/Second'|'Gigabytes/Second'|'Terabytes/Second'|'Bits/Second'|'Kilobits/Second'|'Megabits/Second'|'Gigabits/Second'|'Terabits/Second'|'Count/Second'|'None' $Unit
- * @property int $EvaluationPeriods
- * @property int $DatapointsToAlarm
+ * @property int<1, max> $EvaluationPeriods
+ * @property int<1, max> $DatapointsToAlarm
  * @property double $Threshold
  * @property 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold'|'LessThanLowerOrGreaterThanUpperThreshold'|'LessThanLowerThreshold'|'GreaterThanUpperThreshold' $ComparisonOperator
  * @property string $TreatMissingData
@@ -43,10 +43,10 @@ class PutMetricAlarmRequest extends Request
      *     Statistic?: 'SampleCount'|'Average'|'Sum'|'Minimum'|'Maximum',
      *     ExtendedStatistic?: string,
      *     Dimensions?: list<Shapes\Dimension>,
-     *     Period?: int,
+     *     Period?: int<1, max>,
      *     Unit?: 'Seconds'|'Microseconds'|'Milliseconds'|'Bytes'|'Kilobytes'|'Megabytes'|'Gigabytes'|'Terabytes'|'Bits'|'Kilobits'|'Megabits'|'Gigabits'|'Terabits'|'Percent'|'Count'|'Bytes/Second'|'Kilobytes/Second'|'Megabytes/Second'|'Gigabytes/Second'|'Terabytes/Second'|'Bits/Second'|'Kilobits/Second'|'Megabits/Second'|'Gigabits/Second'|'Terabits/Second'|'Count/Second'|'None',
-     *     EvaluationPeriods: int,
-     *     DatapointsToAlarm?: int,
+     *     EvaluationPeriods: int<1, max>,
+     *     DatapointsToAlarm?: int<1, max>,
      *     Threshold?: double,
      *     ComparisonOperator: 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold'|'LessThanLowerOrGreaterThanUpperThreshold'|'LessThanLowerThreshold'|'GreaterThanUpperThreshold',
      *     TreatMissingData?: string,

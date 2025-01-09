@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ACTIVE'|'UPDATING' $Status
  * @property int $QueryLogLookBackWindowInDays
  * @property bool $IncludeQueriesWithoutUserInformation
- * @property int $MinimumNumberOfQueryingUsers
- * @property int $MinimumQueryCount
+ * @property int<1, 10000> $MinimumNumberOfQueryingUsers
+ * @property int<1, 10000> $MinimumQueryCount
  * @property \Aws\Api\DateTimeResult $LastSuggestionsBuildTime
  * @property \Aws\Api\DateTimeResult $LastClearTime
  * @property int $TotalSuggestionsCount

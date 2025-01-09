@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SubnetId
  * @property bool $DryRun
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  */
 class GetSubnetCidrReservationsRequest extends Request
 {
@@ -19,7 +19,7 @@ class GetSubnetCidrReservationsRequest extends Request
      *     SubnetId: string,
      *     DryRun?: bool,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<5, 1000>
      * } $args
      */
     public function __construct(array $args)

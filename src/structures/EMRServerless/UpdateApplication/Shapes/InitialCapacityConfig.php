@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\EMRServerless\UpdateApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $workerCount
+ * @property int<1, 1000000> $workerCount
  * @property WorkerResourceConfig $workerConfiguration
  */
 class InitialCapacityConfig extends Shape
 {
     /**
      * @param array{
-     *     workerCount: int,
+     *     workerCount: int<1, 1000000>,
      *     workerConfiguration?: WorkerResourceConfig
      * } $args
      */

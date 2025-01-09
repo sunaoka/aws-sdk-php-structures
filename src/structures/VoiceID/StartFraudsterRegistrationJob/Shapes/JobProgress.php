@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\VoiceID\StartFraudsterRegistrationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $PercentComplete
+ * @property int<0, 100> $PercentComplete
  */
 class JobProgress extends Shape
 {
     /**
-     * @param array{PercentComplete?: int} $args
+     * @param array{PercentComplete?: int<0, 100>} $args
      */
     public function __construct(array $args = [])
     {

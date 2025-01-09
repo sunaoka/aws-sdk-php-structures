@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property GatewayRouteHostnameMatch $hostname
  * @property 'GET'|'HEAD'|'POST'|'PUT'|'DELETE'|'CONNECT'|'OPTIONS'|'TRACE'|'PATCH' $method
  * @property HttpPathMatch $path
- * @property int $port
+ * @property int<1, 65535> $port
  * @property string $prefix
  * @property list<HttpQueryParameter> $queryParameters
  */
@@ -21,7 +21,7 @@ class HttpGatewayRouteMatch extends Shape
      *     hostname?: GatewayRouteHostnameMatch,
      *     method?: 'GET'|'HEAD'|'POST'|'PUT'|'DELETE'|'CONNECT'|'OPTIONS'|'TRACE'|'PATCH',
      *     path?: HttpPathMatch,
-     *     port?: int,
+     *     port?: int<1, 65535>,
      *     prefix?: string,
      *     queryParameters?: list<HttpQueryParameter>
      * } $args

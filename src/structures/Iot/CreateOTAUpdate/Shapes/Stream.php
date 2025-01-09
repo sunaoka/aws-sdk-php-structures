@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $streamId
- * @property int $fileId
+ * @property int<0, 255> $fileId
  */
 class Stream extends Shape
 {
     /**
      * @param array{
      *     streamId?: string,
-     *     fileId?: int
+     *     fileId?: int<0, 255>
      * } $args
      */
     public function __construct(array $args = [])

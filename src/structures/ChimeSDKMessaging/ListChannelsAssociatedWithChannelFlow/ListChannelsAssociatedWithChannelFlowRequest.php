@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelFlowArn
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListChannelsAssociatedWithChannelFlowRequest extends Request
@@ -14,7 +14,7 @@ class ListChannelsAssociatedWithChannelFlowRequest extends Request
     /**
      * @param array{
      *     ChannelFlowArn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

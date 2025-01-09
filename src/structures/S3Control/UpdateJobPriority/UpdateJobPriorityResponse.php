@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $JobId
- * @property int $Priority
+ * @property int<0, 2147483647> $Priority
  */
 class UpdateJobPriorityResponse extends Response
 {

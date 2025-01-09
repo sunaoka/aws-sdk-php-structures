@@ -11,9 +11,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MemoryGiBPerVCpuRequest $MemoryGiBPerVCpu
  * @property list<string> $ExcludedInstanceTypes
  * @property list<'current'|'previous'> $InstanceGenerations
- * @property int $SpotMaxPricePercentageOverLowestPrice
- * @property int $MaxSpotPriceAsPercentageOfOptimalOnDemandPrice
- * @property int $OnDemandMaxPricePercentageOverLowestPrice
+ * @property int<0, max> $SpotMaxPricePercentageOverLowestPrice
+ * @property int<0, max> $MaxSpotPriceAsPercentageOfOptimalOnDemandPrice
+ * @property int<0, max> $OnDemandMaxPricePercentageOverLowestPrice
  * @property 'included'|'excluded'|'required' $BareMetal
  * @property 'included'|'excluded'|'required' $BurstablePerformance
  * @property bool $RequireHibernateSupport
@@ -41,9 +41,9 @@ class InstanceRequirements extends Shape
      *     MemoryGiBPerVCpu?: MemoryGiBPerVCpuRequest,
      *     ExcludedInstanceTypes?: list<string>,
      *     InstanceGenerations?: list<'current'|'previous'>,
-     *     SpotMaxPricePercentageOverLowestPrice?: int,
-     *     MaxSpotPriceAsPercentageOfOptimalOnDemandPrice?: int,
-     *     OnDemandMaxPricePercentageOverLowestPrice?: int,
+     *     SpotMaxPricePercentageOverLowestPrice?: int<0, max>,
+     *     MaxSpotPriceAsPercentageOfOptimalOnDemandPrice?: int<0, max>,
+     *     OnDemandMaxPricePercentageOverLowestPrice?: int<0, max>,
      *     BareMetal?: 'included'|'excluded'|'required',
      *     BurstablePerformance?: 'included'|'excluded'|'required',
      *     RequireHibernateSupport?: bool,

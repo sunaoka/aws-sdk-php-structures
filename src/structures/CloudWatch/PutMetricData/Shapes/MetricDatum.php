@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<double> $Values
  * @property list<double> $Counts
  * @property 'Seconds'|'Microseconds'|'Milliseconds'|'Bytes'|'Kilobytes'|'Megabytes'|'Gigabytes'|'Terabytes'|'Bits'|'Kilobits'|'Megabits'|'Gigabits'|'Terabits'|'Percent'|'Count'|'Bytes/Second'|'Kilobytes/Second'|'Megabytes/Second'|'Gigabytes/Second'|'Terabytes/Second'|'Bits/Second'|'Kilobits/Second'|'Megabits/Second'|'Gigabits/Second'|'Terabits/Second'|'Count/Second'|'None' $Unit
- * @property int $StorageResolution
+ * @property int<1, max> $StorageResolution
  */
 class MetricDatum extends Shape
 {
@@ -27,7 +27,7 @@ class MetricDatum extends Shape
      *     Values?: list<double>,
      *     Counts?: list<double>,
      *     Unit?: 'Seconds'|'Microseconds'|'Milliseconds'|'Bytes'|'Kilobytes'|'Megabytes'|'Gigabytes'|'Terabytes'|'Bits'|'Kilobits'|'Megabits'|'Gigabits'|'Terabits'|'Percent'|'Count'|'Bytes/Second'|'Kilobytes/Second'|'Megabytes/Second'|'Gigabytes/Second'|'Terabytes/Second'|'Bits/Second'|'Kilobits/Second'|'Megabits/Second'|'Gigabits/Second'|'Terabits/Second'|'Count/Second'|'None',
-     *     StorageResolution?: int
+     *     StorageResolution?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

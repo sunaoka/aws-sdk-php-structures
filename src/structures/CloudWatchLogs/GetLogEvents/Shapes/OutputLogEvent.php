@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\GetLogEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $timestamp
+ * @property int<0, max> $timestamp
  * @property string $message
- * @property int $ingestionTime
+ * @property int<0, max> $ingestionTime
  */
 class OutputLogEvent extends Shape
 {
     /**
      * @param array{
-     *     timestamp?: int,
+     *     timestamp?: int<0, max>,
      *     message?: string,
-     *     ingestionTime?: int
+     *     ingestionTime?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

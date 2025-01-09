@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domainIdentifier
  * @property string $environmentIdentifier
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $name
  * @property string $nextToken
  * @property string $projectIdentifier
@@ -21,7 +21,7 @@ class ListConnectionsRequest extends Request
      * @param array{
      *     domainIdentifier: string,
      *     environmentIdentifier?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     name?: string,
      *     nextToken?: string,
      *     projectIdentifier: string,

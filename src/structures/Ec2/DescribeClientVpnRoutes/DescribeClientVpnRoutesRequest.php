@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClientVpnEndpointId
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property string $NextToken
  * @property bool $DryRun
  */
@@ -17,7 +17,7 @@ class DescribeClientVpnRoutesRequest extends Request
      * @param array{
      *     ClientVpnEndpointId: string,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     NextToken?: string,
      *     DryRun?: bool
      * } $args

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $topic
- * @property int $qos
+ * @property int<0, 1> $qos
  * @property bool $retain
  * @property string $payload
  * @property string $userProperties
@@ -21,7 +21,7 @@ class PublishRequest extends Request
     /**
      * @param array{
      *     topic: string,
-     *     qos?: int,
+     *     qos?: int<0, 1>,
      *     retain?: bool,
      *     payload?: string,
      *     userProperties?: string,

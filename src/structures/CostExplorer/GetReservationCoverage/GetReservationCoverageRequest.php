@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $Metrics
  * @property string $NextPageToken
  * @property Shapes\SortDefinition $SortBy
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  */
 class GetReservationCoverageRequest extends Request
 {
@@ -25,7 +25,7 @@ class GetReservationCoverageRequest extends Request
      *     Metrics?: list<string>,
      *     NextPageToken?: string,
      *     SortBy?: Shapes\SortDefinition,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

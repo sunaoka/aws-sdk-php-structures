@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $taskId
  * @property string $taskName
  * @property string $logGroupName
- * @property int $from
- * @property int $to
+ * @property int<0, max> $from
+ * @property int<0, max> $to
  * @property string $destination
  * @property string $destinationPrefix
  * @property ExportTaskStatus $status
@@ -22,8 +22,8 @@ class ExportTask extends Shape
      *     taskId?: string,
      *     taskName?: string,
      *     logGroupName?: string,
-     *     from?: int,
-     *     to?: int,
+     *     from?: int<0, max>,
+     *     to?: int<0, max>,
      *     destination?: string,
      *     destinationPrefix?: string,
      *     status?: ExportTaskStatus,

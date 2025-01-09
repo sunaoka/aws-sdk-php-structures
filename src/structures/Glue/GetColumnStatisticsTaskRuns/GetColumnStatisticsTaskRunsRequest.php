@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DatabaseName
  * @property string $TableName
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class GetColumnStatisticsTaskRunsRequest extends Request
@@ -16,7 +16,7 @@ class GetColumnStatisticsTaskRunsRequest extends Request
      * @param array{
      *     DatabaseName: string,
      *     TableName: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

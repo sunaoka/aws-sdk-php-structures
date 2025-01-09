@@ -33,8 +33,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool $EnableInterContainerTrafficEncryption
  * @property bool $EnableManagedSpotTraining
  * @property Shapes\CheckpointConfig $CheckpointConfig
- * @property int $TrainingTimeInSeconds
- * @property int $BillableTimeInSeconds
+ * @property int<1, max> $TrainingTimeInSeconds
+ * @property int<1, max> $BillableTimeInSeconds
  * @property Shapes\DebugHookConfig $DebugHookConfig
  * @property Shapes\ExperimentConfig $ExperimentConfig
  * @property list<Shapes\DebugRuleConfiguration> $DebugRuleConfigurations

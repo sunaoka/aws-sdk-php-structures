@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AnomalyDetectorArn
- * @property int $SensitivityThreshold
- * @property int $MaxResults
+ * @property int<0, 100> $SensitivityThreshold
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListAnomalyGroupSummariesRequest extends Request
@@ -15,8 +15,8 @@ class ListAnomalyGroupSummariesRequest extends Request
     /**
      * @param array{
      *     AnomalyDetectorArn: string,
-     *     SensitivityThreshold: int,
-     *     MaxResults?: int,
+     *     SensitivityThreshold: int<0, 100>,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

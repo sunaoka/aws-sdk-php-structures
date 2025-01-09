@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $ModelName
  * @property string $ModelArn
- * @property int $CurrentActiveVersion
- * @property int $PreviousActiveVersion
+ * @property int<1, max> $CurrentActiveVersion
+ * @property int<1, max> $PreviousActiveVersion
  * @property string $CurrentActiveVersionArn
  * @property string $PreviousActiveVersionArn
  */

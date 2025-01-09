@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $QueryText
  * @property 'INCLUDE'|'EXCLUDE' $IncludeQuickSightQIndex
  * @property 'INCLUDE'|'EXCLUDE' $IncludeGeneratedAnswer
- * @property int $MaxTopicsToConsider
+ * @property int<1, 4> $MaxTopicsToConsider
  */
 class PredictQAResultsRequest extends Request
 {
@@ -19,7 +19,7 @@ class PredictQAResultsRequest extends Request
      *     QueryText: string,
      *     IncludeQuickSightQIndex?: 'INCLUDE'|'EXCLUDE',
      *     IncludeGeneratedAnswer?: 'INCLUDE'|'EXCLUDE',
-     *     MaxTopicsToConsider?: int
+     *     MaxTopicsToConsider?: int<1, 4>
      * } $args
      */
     public function __construct(array $args)

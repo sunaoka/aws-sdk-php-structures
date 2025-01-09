@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GatewayARN
  * @property list<string> $TapeARNs
  * @property string $Marker
- * @property int $Limit
+ * @property int<1, max> $Limit
  */
 class DescribeTapesRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeTapesRequest extends Request
      *     GatewayARN: string,
      *     TapeARNs?: list<string>,
      *     Marker?: string,
-     *     Limit?: int
+     *     Limit?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

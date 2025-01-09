@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $breakpointPercentileThreshold
- * @property int $bufferSize
- * @property int $maxTokens
+ * @property int<50, 99> $breakpointPercentileThreshold
+ * @property int<0, 1> $bufferSize
+ * @property int<1, max> $maxTokens
  */
 class SemanticChunkingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     breakpointPercentileThreshold: int,
-     *     bufferSize: int,
-     *     maxTokens: int
+     *     breakpointPercentileThreshold: int<50, 99>,
+     *     bufferSize: int<0, 1>,
+     *     maxTokens: int<1, max>
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $SheetNames
- * @property list<int> $SheetIndexes
+ * @property list<int<0, 200>> $SheetIndexes
  * @property bool $HeaderRow
  */
 class ExcelOptions extends Shape
@@ -14,7 +14,7 @@ class ExcelOptions extends Shape
     /**
      * @param array{
      *     SheetNames?: list<string>,
-     *     SheetIndexes?: list<int>,
+     *     SheetIndexes?: list<int<0, 200>>,
      *     HeaderRow?: bool
      * } $args
      */

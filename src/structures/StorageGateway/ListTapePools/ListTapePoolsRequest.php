@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $PoolARNs
  * @property string $Marker
- * @property int $Limit
+ * @property int<1, max> $Limit
  */
 class ListTapePoolsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListTapePoolsRequest extends Request
      * @param array{
      *     PoolARNs?: list<string>,
      *     Marker?: string,
-     *     Limit?: int
+     *     Limit?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

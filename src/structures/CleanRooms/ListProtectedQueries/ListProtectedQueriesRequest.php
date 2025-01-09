@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $membershipIdentifier
  * @property 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'TIMED_OUT' $status
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class ListProtectedQueriesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListProtectedQueriesRequest extends Request
      *     membershipIdentifier: string,
      *     status?: 'SUBMITTED'|'STARTED'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'TIMED_OUT',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

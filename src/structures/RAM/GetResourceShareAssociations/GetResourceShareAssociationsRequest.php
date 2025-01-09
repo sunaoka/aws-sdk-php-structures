@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $principal
  * @property 'ASSOCIATING'|'ASSOCIATED'|'FAILED'|'DISASSOCIATING'|'DISASSOCIATED' $associationStatus
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 500> $maxResults
  */
 class GetResourceShareAssociationsRequest extends Request
 {
@@ -23,7 +23,7 @@ class GetResourceShareAssociationsRequest extends Request
      *     principal?: string,
      *     associationStatus?: 'ASSOCIATING'|'ASSOCIATED'|'FAILED'|'DISASSOCIATING'|'DISASSOCIATED',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 500>
      * } $args
      */
     public function __construct(array $args)

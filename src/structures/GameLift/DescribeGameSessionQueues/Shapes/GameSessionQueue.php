@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property string $GameSessionQueueArn
- * @property int $TimeoutInSeconds
+ * @property int<0, max> $TimeoutInSeconds
  * @property list<PlayerLatencyPolicy> $PlayerLatencyPolicies
  * @property list<GameSessionQueueDestination> $Destinations
  * @property FilterConfiguration $FilterConfiguration
@@ -21,7 +21,7 @@ class GameSessionQueue extends Shape
      * @param array{
      *     Name?: string,
      *     GameSessionQueueArn?: string,
-     *     TimeoutInSeconds?: int,
+     *     TimeoutInSeconds?: int<0, max>,
      *     PlayerLatencyPolicies?: list<PlayerLatencyPolicy>,
      *     Destinations?: list<GameSessionQueueDestination>,
      *     FilterConfiguration?: FilterConfiguration,

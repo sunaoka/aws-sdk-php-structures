@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AWS_SYSTEMS_MANAGER' $ExecutionHandlerService
  * @property string $ExecutionHandler
  * @property bool $ExecuteOperationOnScriptFailure
- * @property int $ExecutionTimeout
- * @property int $MaximumRetryCount
+ * @property int<10, 120> $ExecutionTimeout
+ * @property int<0, 3> $MaximumRetryCount
  */
 class Script extends Shape
 {
@@ -20,8 +20,8 @@ class Script extends Shape
      *     ExecutionHandlerService?: 'AWS_SYSTEMS_MANAGER',
      *     ExecutionHandler: string,
      *     ExecuteOperationOnScriptFailure?: bool,
-     *     ExecutionTimeout?: int,
-     *     MaximumRetryCount?: int
+     *     ExecutionTimeout?: int<10, 120>,
+     *     MaximumRetryCount?: int<0, 3>
      * } $args
      */
     public function __construct(array $args)

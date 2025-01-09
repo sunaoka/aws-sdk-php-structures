@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Athena\StartSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CoordinatorDpuSize
- * @property int $MaxConcurrentDpus
- * @property int $DefaultExecutorDpuSize
+ * @property int<1, 1> $CoordinatorDpuSize
+ * @property int<2, 5000> $MaxConcurrentDpus
+ * @property int<1, 1> $DefaultExecutorDpuSize
  * @property array<string, string> $AdditionalConfigs
  * @property array<string, string> $SparkProperties
  */
@@ -15,9 +15,9 @@ class EngineConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CoordinatorDpuSize?: int,
-     *     MaxConcurrentDpus: int,
-     *     DefaultExecutorDpuSize?: int,
+     *     CoordinatorDpuSize?: int<1, 1>,
+     *     MaxConcurrentDpus: int<2, 5000>,
+     *     DefaultExecutorDpuSize?: int<1, 1>,
      *     AdditionalConfigs?: array<string, string>,
      *     SparkProperties?: array<string, string>
      * } $args

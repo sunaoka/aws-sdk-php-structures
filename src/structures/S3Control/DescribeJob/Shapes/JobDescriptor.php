@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Active'|'Cancelled'|'Cancelling'|'Complete'|'Completing'|'Failed'|'Failing'|'New'|'Paused'|'Pausing'|'Preparing'|'Ready'|'Suspended' $Status
  * @property JobManifest $Manifest
  * @property JobOperation $Operation
- * @property int $Priority
+ * @property int<0, 2147483647> $Priority
  * @property JobProgressSummary $ProgressSummary
  * @property string $StatusUpdateReason
  * @property list<JobFailure> $FailureReasons
@@ -36,7 +36,7 @@ class JobDescriptor extends Shape
      *     Status?: 'Active'|'Cancelled'|'Cancelling'|'Complete'|'Completing'|'Failed'|'Failing'|'New'|'Paused'|'Pausing'|'Preparing'|'Ready'|'Suspended',
      *     Manifest?: JobManifest,
      *     Operation?: JobOperation,
-     *     Priority?: int,
+     *     Priority?: int<0, 2147483647>,
      *     ProgressSummary?: JobProgressSummary,
      *     StatusUpdateReason?: string,
      *     FailureReasons?: list<JobFailure>,

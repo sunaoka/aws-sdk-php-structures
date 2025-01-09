@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Bedrock\GetProvisionedModelThroughput;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $modelUnits
- * @property int $desiredModelUnits
+ * @property int<1, max> $modelUnits
+ * @property int<1, max> $desiredModelUnits
  * @property string $provisionedModelName
  * @property string $provisionedModelArn
  * @property string $modelArn

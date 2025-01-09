@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'AUTOMATIC'|'USER_PROVISIONED' $Mode
- * @property int $Iops
+ * @property int<0, 2400000> $Iops
  */
 class DiskIopsConfiguration extends Shape
 {
     /**
      * @param array{
      *     Mode?: 'AUTOMATIC'|'USER_PROVISIONED',
-     *     Iops?: int
+     *     Iops?: int<0, 2400000>
      * } $args
      */
     public function __construct(array $args = [])

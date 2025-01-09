@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GameServerGroupName
  * @property 'ASCENDING'|'DESCENDING' $SortOrder
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $NextToken
  */
 class ListGameServersRequest extends Request
@@ -16,7 +16,7 @@ class ListGameServersRequest extends Request
      * @param array{
      *     GameServerGroupName: string,
      *     SortOrder?: 'ASCENDING'|'DESCENDING',
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

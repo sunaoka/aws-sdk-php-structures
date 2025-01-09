@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Description
  * @property string $Role
  * @property Shapes\SessionCommand $Command
- * @property int $Timeout
- * @property int $IdleTimeout
+ * @property int<1, max> $Timeout
+ * @property int<1, max> $IdleTimeout
  * @property array<string, string> $DefaultArguments
  * @property Shapes\ConnectionsList $Connections
  * @property double $MaxCapacity
@@ -29,8 +29,8 @@ class CreateSessionRequest extends Request
      *     Description?: string,
      *     Role: string,
      *     Command: Shapes\SessionCommand,
-     *     Timeout?: int,
-     *     IdleTimeout?: int,
+     *     Timeout?: int<1, max>,
+     *     IdleTimeout?: int<1, max>,
      *     DefaultArguments?: array<string, string>,
      *     Connections?: Shapes\ConnectionsList,
      *     MaxCapacity?: double,

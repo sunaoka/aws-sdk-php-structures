@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $StackStatusReason
  * @property bool $DisableRollback
  * @property list<string> $NotificationARNs
- * @property int $TimeoutInMinutes
+ * @property int<1, max> $TimeoutInMinutes
  * @property list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'> $Capabilities
  * @property list<Output> $Outputs
  * @property string $RoleARN
@@ -48,7 +48,7 @@ class Stack extends Shape
      *     StackStatusReason?: string,
      *     DisableRollback?: bool,
      *     NotificationARNs?: list<string>,
-     *     TimeoutInMinutes?: int,
+     *     TimeoutInMinutes?: int<1, max>,
      *     Capabilities?: list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'>,
      *     Outputs?: list<Output>,
      *     RoleARN?: string,

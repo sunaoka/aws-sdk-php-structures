@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $tableBucketARN
  * @property string $prefix
  * @property string $continuationToken
- * @property int $maxNamespaces
+ * @property int<1, 1000> $maxNamespaces
  */
 class ListNamespacesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListNamespacesRequest extends Request
      *     tableBucketARN: string,
      *     prefix?: string,
      *     continuationToken?: string,
-     *     maxNamespaces?: int
+     *     maxNamespaces?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

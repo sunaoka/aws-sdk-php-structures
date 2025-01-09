@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TagOptionId
  * @property string $ResourceType
- * @property int $PageSize
+ * @property int<0, 20> $PageSize
  * @property string $PageToken
  */
 class ListResourcesForTagOptionRequest extends Request
@@ -16,7 +16,7 @@ class ListResourcesForTagOptionRequest extends Request
      * @param array{
      *     TagOptionId: string,
      *     ResourceType?: string,
-     *     PageSize?: int,
+     *     PageSize?: int<0, 20>,
      *     PageToken?: string
      * } $args
      */

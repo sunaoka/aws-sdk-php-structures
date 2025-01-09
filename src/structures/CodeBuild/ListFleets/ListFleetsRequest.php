@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property 'ASCENDING'|'DESCENDING' $sortOrder
  * @property 'NAME'|'CREATED_TIME'|'LAST_MODIFIED_TIME' $sortBy
  */
@@ -15,7 +15,7 @@ class ListFleetsRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     sortOrder?: 'ASCENDING'|'DESCENDING',
      *     sortBy?: 'NAME'|'CREATED_TIME'|'LAST_MODIFIED_TIME'
      * } $args

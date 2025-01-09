@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 20> $MaxResults
  * @property string $ResourceArn
  */
 class ListAssociatedGroupsRequest extends Request
@@ -14,7 +14,7 @@ class ListAssociatedGroupsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 20>,
      *     ResourceArn: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $incidentRecordArn
- * @property int $maxResults
+ * @property int<1, 20> $maxResults
  * @property string $nextToken
  */
 class ListIncidentFindingsRequest extends Request
@@ -14,7 +14,7 @@ class ListIncidentFindingsRequest extends Request
     /**
      * @param array{
      *     incidentRecordArn: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 20>,
      *     nextToken?: string
      * } $args
      */

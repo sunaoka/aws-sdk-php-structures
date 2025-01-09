@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\VoiceID\EvaluateSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $RiskThreshold
+ * @property int<0, 100> $RiskThreshold
  * @property string $WatchlistId
  */
 class FraudDetectionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     RiskThreshold?: int,
+     *     RiskThreshold?: int<0, 100>,
      *     WatchlistId?: string
      * } $args
      */

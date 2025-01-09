@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $StillEstimating
  * @property double $LastRuntimeSeconds
  * @property double $MedianRuntimeSeconds
- * @property int $TablesCreated
- * @property int $TablesUpdated
- * @property int $TablesDeleted
+ * @property int<0, max> $TablesCreated
+ * @property int<0, max> $TablesUpdated
+ * @property int<0, max> $TablesDeleted
  */
 class CrawlerMetrics extends Shape
 {
@@ -23,9 +23,9 @@ class CrawlerMetrics extends Shape
      *     StillEstimating?: bool,
      *     LastRuntimeSeconds?: double,
      *     MedianRuntimeSeconds?: double,
-     *     TablesCreated?: int,
-     *     TablesUpdated?: int,
-     *     TablesDeleted?: int
+     *     TablesCreated?: int<0, max>,
+     *     TablesUpdated?: int<0, max>,
+     *     TablesDeleted?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

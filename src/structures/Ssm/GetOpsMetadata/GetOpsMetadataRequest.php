@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OpsMetadataArn
- * @property int $MaxResults
+ * @property int<1, 10> $MaxResults
  * @property string $NextToken
  */
 class GetOpsMetadataRequest extends Request
@@ -14,7 +14,7 @@ class GetOpsMetadataRequest extends Request
     /**
      * @param array{
      *     OpsMetadataArn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 10>,
      *     NextToken?: string
      * } $args
      */

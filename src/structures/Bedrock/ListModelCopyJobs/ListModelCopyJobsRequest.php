@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $sourceAccountEquals
  * @property string $sourceModelArnEquals
  * @property string $targetModelNameContains
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property 'CreationTime' $sortBy
  * @property 'Ascending'|'Descending' $sortOrder
@@ -26,7 +26,7 @@ class ListModelCopyJobsRequest extends Request
      *     sourceAccountEquals?: string,
      *     sourceModelArnEquals?: string,
      *     targetModelNameContains?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     sortBy?: 'CreationTime',
      *     sortOrder?: 'Ascending'|'Descending'

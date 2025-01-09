@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $filterByPublished
  * @property 'CONNECTED'|'DISCONNECTED' $filterByState
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED' $filterByRecordingState
  */
 class ListParticipantsRequest extends Request
@@ -24,7 +24,7 @@ class ListParticipantsRequest extends Request
      *     filterByPublished?: bool,
      *     filterByState?: 'CONNECTED'|'DISCONNECTED',
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     filterByRecordingState?: 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'
      * } $args
      */

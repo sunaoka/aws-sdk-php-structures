@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ShardIterator
- * @property int $Limit
+ * @property int<1, max> $Limit
  */
 class GetRecordsRequest extends Request
 {
     /**
      * @param array{
      *     ShardIterator: string,
-     *     Limit?: int
+     *     Limit?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

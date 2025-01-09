@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'INACCESSIBLE_ENCRYPTION_KEY' $Status
  * @property bool $IsOwned
- * @property int $MaxResults
+ * @property int<1, 20> $MaxResults
  * @property string $NextToken
  */
 class ListMembersRequest extends Request
@@ -20,7 +20,7 @@ class ListMembersRequest extends Request
      *     Name?: string,
      *     Status?: 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'INACCESSIBLE_ENCRYPTION_KEY',
      *     IsOwned?: bool,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 20>,
      *     NextToken?: string
      * } $args
      */

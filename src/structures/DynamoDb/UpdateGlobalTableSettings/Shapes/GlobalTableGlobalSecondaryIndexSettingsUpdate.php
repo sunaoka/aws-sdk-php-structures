@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $IndexName
- * @property int $ProvisionedWriteCapacityUnits
+ * @property int<1, max> $ProvisionedWriteCapacityUnits
  * @property AutoScalingSettingsUpdate $ProvisionedWriteCapacityAutoScalingSettingsUpdate
  */
 class GlobalTableGlobalSecondaryIndexSettingsUpdate extends Shape
@@ -14,7 +14,7 @@ class GlobalTableGlobalSecondaryIndexSettingsUpdate extends Shape
     /**
      * @param array{
      *     IndexName: string,
-     *     ProvisionedWriteCapacityUnits?: int,
+     *     ProvisionedWriteCapacityUnits?: int<1, max>,
      *     ProvisionedWriteCapacityAutoScalingSettingsUpdate?: AutoScalingSettingsUpdate
      * } $args
      */

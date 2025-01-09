@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domainIdentifier
  * @property string $environmentId
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nextToken
  * @property string $owningProjectId
  * @property 'CREATED_AT'|'UPDATED_AT' $sortBy
@@ -22,7 +22,7 @@ class ListSubscriptionGrantsRequest extends Request
      * @param array{
      *     domainIdentifier: string,
      *     environmentId?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nextToken?: string,
      *     owningProjectId?: string,
      *     sortBy?: 'CREATED_AT'|'UPDATED_AT',

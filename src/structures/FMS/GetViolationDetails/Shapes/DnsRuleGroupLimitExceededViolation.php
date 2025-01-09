@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ViolationTarget
  * @property string $ViolationTargetDescription
- * @property int $NumberOfRuleGroupsAlreadyAssociated
+ * @property int<-2147483648, 2147483647> $NumberOfRuleGroupsAlreadyAssociated
  */
 class DnsRuleGroupLimitExceededViolation extends Shape
 {
@@ -15,7 +15,7 @@ class DnsRuleGroupLimitExceededViolation extends Shape
      * @param array{
      *     ViolationTarget?: string,
      *     ViolationTargetDescription?: string,
-     *     NumberOfRuleGroupsAlreadyAssociated?: int
+     *     NumberOfRuleGroupsAlreadyAssociated?: int<-2147483648, 2147483647>
      * } $args
      */
     public function __construct(array $args = [])

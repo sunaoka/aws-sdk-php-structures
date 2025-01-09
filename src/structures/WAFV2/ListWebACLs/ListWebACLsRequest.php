@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
  * @property string $NextMarker
- * @property int $Limit
+ * @property int<1, 100> $Limit
  */
 class ListWebACLsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListWebACLsRequest extends Request
      * @param array{
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
      *     NextMarker?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $resourceTypes
- * @property int $limit
+ * @property int<0, 100> $limit
  * @property string $nextToken
  */
 class GetDiscoveredResourceCountsRequest extends Request
@@ -14,7 +14,7 @@ class GetDiscoveredResourceCountsRequest extends Request
     /**
      * @param array{
      *     resourceTypes?: list<string>,
-     *     limit?: int,
+     *     limit?: int<0, 100>,
      *     nextToken?: string
      * } $args
      */

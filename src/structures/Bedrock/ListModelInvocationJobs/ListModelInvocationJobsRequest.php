@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $submitTimeBefore
  * @property 'Submitted'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'PartiallyCompleted'|'Expired'|'Validating'|'Scheduled' $statusEquals
  * @property string $nameContains
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property 'CreationTime' $sortBy
  * @property 'Ascending'|'Descending' $sortOrder
@@ -22,7 +22,7 @@ class ListModelInvocationJobsRequest extends Request
      *     submitTimeBefore?: \Aws\Api\DateTimeResult,
      *     statusEquals?: 'Submitted'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'PartiallyCompleted'|'Expired'|'Validating'|'Scheduled',
      *     nameContains?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     sortBy?: 'CreationTime',
      *     sortOrder?: 'Ascending'|'Descending'

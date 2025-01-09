@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GatewayARN
- * @property int $AverageUploadRateLimitInBitsPerSec
- * @property int $AverageDownloadRateLimitInBitsPerSec
+ * @property int<51200, max> $AverageUploadRateLimitInBitsPerSec
+ * @property int<102400, max> $AverageDownloadRateLimitInBitsPerSec
  */
 class UpdateBandwidthRateLimitRequest extends Request
 {
     /**
      * @param array{
      *     GatewayARN: string,
-     *     AverageUploadRateLimitInBitsPerSec?: int,
-     *     AverageDownloadRateLimitInBitsPerSec?: int
+     *     AverageUploadRateLimitInBitsPerSec?: int<51200, max>,
+     *     AverageDownloadRateLimitInBitsPerSec?: int<102400, max>
      * } $args
      */
     public function __construct(array $args)

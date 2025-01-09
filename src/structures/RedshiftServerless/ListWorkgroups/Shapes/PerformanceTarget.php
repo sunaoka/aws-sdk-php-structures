@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\ListWorkgroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $level
+ * @property int<1, 100> $level
  * @property 'ENABLED'|'DISABLED' $status
  */
 class PerformanceTarget extends Shape
 {
     /**
      * @param array{
-     *     level?: int,
+     *     level?: int<1, 100>,
      *     status?: 'ENABLED'|'DISABLED'
      * } $args
      */

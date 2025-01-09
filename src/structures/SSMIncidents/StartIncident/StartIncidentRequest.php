@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $clientToken
- * @property int $impact
+ * @property int<1, 5> $impact
  * @property list<Shapes\RelatedItem> $relatedItems
  * @property string $responsePlanArn
  * @property string $title
@@ -17,7 +17,7 @@ class StartIncidentRequest extends Request
     /**
      * @param array{
      *     clientToken?: string,
-     *     impact?: int,
+     *     impact?: int<1, 5>,
      *     relatedItems?: list<Shapes\RelatedItem>,
      *     responsePlanArn: string,
      *     title?: string,

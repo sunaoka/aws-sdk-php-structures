@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $AllocationIds
  * @property 'domain-name' $Attribute
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property bool $DryRun
  */
 class DescribeAddressesAttributeRequest extends Request
@@ -18,7 +18,7 @@ class DescribeAddressesAttributeRequest extends Request
      *     AllocationIds?: list<string>,
      *     Attribute?: 'domain-name',
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     DryRun?: bool
      * } $args
      */

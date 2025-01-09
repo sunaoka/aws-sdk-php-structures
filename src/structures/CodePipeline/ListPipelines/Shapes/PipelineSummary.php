@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property int $version
+ * @property int<1, max> $version
  * @property 'V1'|'V2' $pipelineType
  * @property 'QUEUED'|'SUPERSEDED'|'PARALLEL' $executionMode
  * @property \Aws\Api\DateTimeResult $created
@@ -17,7 +17,7 @@ class PipelineSummary extends Shape
     /**
      * @param array{
      *     name?: string,
-     *     version?: int,
+     *     version?: int<1, max>,
      *     pipelineType?: 'V1'|'V2',
      *     executionMode?: 'QUEUED'|'SUPERSEDED'|'PARALLEL',
      *     created?: \Aws\Api\DateTimeResult,

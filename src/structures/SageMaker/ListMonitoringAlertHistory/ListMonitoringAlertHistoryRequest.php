@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CreationTime'|'Status' $SortBy
  * @property 'Ascending'|'Descending' $SortOrder
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
  * @property \Aws\Api\DateTimeResult $CreationTimeAfter
  * @property 'InAlert'|'OK' $StatusEquals
@@ -24,7 +24,7 @@ class ListMonitoringAlertHistoryRequest extends Request
      *     SortBy?: 'CreationTime'|'Status',
      *     SortOrder?: 'Ascending'|'Descending',
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
      *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
      *     StatusEquals?: 'InAlert'|'OK'

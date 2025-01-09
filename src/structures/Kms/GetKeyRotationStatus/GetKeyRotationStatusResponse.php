@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property bool $KeyRotationEnabled
  * @property string $KeyId
- * @property int $RotationPeriodInDays
+ * @property int<90, 2560> $RotationPeriodInDays
  * @property \Aws\Api\DateTimeResult $NextRotationDate
  * @property \Aws\Api\DateTimeResult $OnDemandRotationStartDate
  */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $lifecycleExecutionId
  * @property string $parentResourceId
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  */
 class ListLifecycleExecutionResourcesRequest extends Request
@@ -16,7 +16,7 @@ class ListLifecycleExecutionResourcesRequest extends Request
      * @param array{
      *     lifecycleExecutionId: string,
      *     parentResourceId?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string
      * } $args
      */

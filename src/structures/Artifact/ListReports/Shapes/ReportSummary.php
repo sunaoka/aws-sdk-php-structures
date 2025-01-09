@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property 'PUBLISHED'|'UNPUBLISHED' $state
  * @property string $arn
- * @property int $version
+ * @property int<1, max> $version
  * @property 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT' $uploadState
  * @property string $description
  * @property \Aws\Api\DateTimeResult $periodStart
@@ -29,7 +29,7 @@ class ReportSummary extends Shape
      *     name?: string,
      *     state?: 'PUBLISHED'|'UNPUBLISHED',
      *     arn?: string,
-     *     version?: int,
+     *     version?: int<1, max>,
      *     uploadState?: 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT',
      *     description?: string,
      *     periodStart?: \Aws\Api\DateTimeResult,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OrganizationId
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListAvailabilityConfigurationsRequest extends Request
@@ -14,7 +14,7 @@ class ListAvailabilityConfigurationsRequest extends Request
     /**
      * @param array{
      *     OrganizationId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\CreateConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $revision
+ * @property int<1, 9223372036854775807> $revision
  * @property string $workerConfigurationArn
  */
 class WorkerConfiguration extends Shape
 {
     /**
      * @param array{
-     *     revision: int,
+     *     revision: int<1, 9223372036854775807>,
      *     workerConfigurationArn: string
      * } $args
      */

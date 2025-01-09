@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $repositoryName
  * @property Shapes\ImageIdentifier $imageId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  */
 class DescribeImageScanFindingsRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeImageScanFindingsRequest extends Request
      *     repositoryName: string,
      *     imageId: Shapes\ImageIdentifier,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

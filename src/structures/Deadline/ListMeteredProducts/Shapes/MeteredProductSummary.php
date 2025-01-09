@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $productId
  * @property string $family
  * @property string $vendor
- * @property int $port
+ * @property int<1024, 65535> $port
  */
 class MeteredProductSummary extends Shape
 {
@@ -17,7 +17,7 @@ class MeteredProductSummary extends Shape
      *     productId: string,
      *     family: string,
      *     vendor: string,
-     *     port: int
+     *     port: int<1024, 65535>
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Host
- * @property int $Port
+ * @property int<1, 65535> $Port
  * @property string $Catalog
  */
 class PrestoParameters extends Shape
@@ -14,7 +14,7 @@ class PrestoParameters extends Shape
     /**
      * @param array{
      *     Host: string,
-     *     Port: int,
+     *     Port: int<1, 65535>,
      *     Catalog: string
      * } $args
      */

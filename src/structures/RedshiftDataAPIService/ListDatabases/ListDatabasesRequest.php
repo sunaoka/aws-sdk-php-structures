@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClusterIdentifier
  * @property string $Database
  * @property string $DbUser
- * @property int $MaxResults
+ * @property int<0, 1000> $MaxResults
  * @property string $NextToken
  * @property string $SecretArn
  * @property string $WorkgroupName
@@ -20,7 +20,7 @@ class ListDatabasesRequest extends Request
      *     ClusterIdentifier?: string,
      *     Database: string,
      *     DbUser?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 1000>,
      *     NextToken?: string,
      *     SecretArn?: string,
      *     WorkgroupName?: string

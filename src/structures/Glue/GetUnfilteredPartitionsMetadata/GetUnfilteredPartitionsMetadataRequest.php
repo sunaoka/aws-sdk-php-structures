@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'COLUMN_PERMISSION'|'CELL_FILTER_PERMISSION'|'NESTED_PERMISSION'|'NESTED_CELL_PERMISSION'> $SupportedPermissionTypes
  * @property string $NextToken
  * @property Shapes\Segment $Segment
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property Shapes\QuerySessionContext $QuerySessionContext
  */
 class GetUnfilteredPartitionsMetadataRequest extends Request
@@ -30,7 +30,7 @@ class GetUnfilteredPartitionsMetadataRequest extends Request
      *     SupportedPermissionTypes: list<'COLUMN_PERMISSION'|'CELL_FILTER_PERMISSION'|'NESTED_PERMISSION'|'NESTED_CELL_PERMISSION'>,
      *     NextToken?: string,
      *     Segment?: Shapes\Segment,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     QuerySessionContext?: Shapes\QuerySessionContext
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\Filters $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property \Aws\Api\DateTimeResult $AsOf
  */
 class ListInvoiceUnitsRequest extends Request
@@ -16,7 +16,7 @@ class ListInvoiceUnitsRequest extends Request
      * @param array{
      *     Filters?: Shapes\Filters,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     AsOf?: \Aws\Api\DateTimeResult
      * } $args
      */

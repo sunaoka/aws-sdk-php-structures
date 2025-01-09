@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TypeNameAlias
  * @property string $OriginalTypeName
  * @property string $PublisherId
- * @property list<int> $SupportedMajorVersions
+ * @property list<int<1, 65535>> $SupportedMajorVersions
  */
 class RequiredActivatedType extends Shape
 {
@@ -17,7 +17,7 @@ class RequiredActivatedType extends Shape
      *     TypeNameAlias?: string,
      *     OriginalTypeName?: string,
      *     PublisherId?: string,
-     *     SupportedMajorVersions?: list<int>
+     *     SupportedMajorVersions?: list<int<1, 65535>>
      * } $args
      */
     public function __construct(array $args = [])

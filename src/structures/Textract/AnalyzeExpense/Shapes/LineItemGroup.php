@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Textract\AnalyzeExpense\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $LineItemGroupIndex
+ * @property int<0, max> $LineItemGroupIndex
  * @property list<LineItemFields> $LineItems
  */
 class LineItemGroup extends Shape
 {
     /**
      * @param array{
-     *     LineItemGroupIndex?: int,
+     *     LineItemGroupIndex?: int<0, max>,
      *     LineItems?: list<LineItemFields>
      * } $args
      */

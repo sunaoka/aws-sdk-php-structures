@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $startDate
  * @property \Aws\Api\DateTimeResult $stopDate
  * @property string $mapRunArn
- * @property int $itemCount
+ * @property int<0, max> $itemCount
  * @property string $stateMachineVersionArn
  * @property string $stateMachineAliasArn
  * @property int $redriveCount
@@ -29,7 +29,7 @@ class ExecutionListItem extends Shape
      *     startDate: \Aws\Api\DateTimeResult,
      *     stopDate?: \Aws\Api\DateTimeResult,
      *     mapRunArn?: string,
-     *     itemCount?: int,
+     *     itemCount?: int<0, max>,
      *     stateMachineVersionArn?: string,
      *     stateMachineAliasArn?: string,
      *     redriveCount?: int,

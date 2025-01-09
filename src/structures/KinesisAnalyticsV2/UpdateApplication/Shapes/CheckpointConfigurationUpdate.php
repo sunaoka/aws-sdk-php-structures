@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'DEFAULT'|'CUSTOM' $ConfigurationTypeUpdate
  * @property bool $CheckpointingEnabledUpdate
- * @property int $CheckpointIntervalUpdate
- * @property int $MinPauseBetweenCheckpointsUpdate
+ * @property int<1, max> $CheckpointIntervalUpdate
+ * @property int<0, max> $MinPauseBetweenCheckpointsUpdate
  */
 class CheckpointConfigurationUpdate extends Shape
 {
@@ -16,8 +16,8 @@ class CheckpointConfigurationUpdate extends Shape
      * @param array{
      *     ConfigurationTypeUpdate?: 'DEFAULT'|'CUSTOM',
      *     CheckpointingEnabledUpdate?: bool,
-     *     CheckpointIntervalUpdate?: int,
-     *     MinPauseBetweenCheckpointsUpdate?: int
+     *     CheckpointIntervalUpdate?: int<1, max>,
+     *     MinPauseBetweenCheckpointsUpdate?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

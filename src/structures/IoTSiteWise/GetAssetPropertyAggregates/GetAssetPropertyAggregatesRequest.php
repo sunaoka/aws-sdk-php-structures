@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $endDate
  * @property 'ASCENDING'|'DESCENDING' $timeOrdering
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, max> $maxResults
  */
 class GetAssetPropertyAggregatesRequest extends Request
 {
@@ -31,7 +31,7 @@ class GetAssetPropertyAggregatesRequest extends Request
      *     endDate: \Aws\Api\DateTimeResult,
      *     timeOrdering?: 'ASCENDING'|'DESCENDING',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

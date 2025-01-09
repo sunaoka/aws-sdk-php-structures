@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ENABLED'|'DRAFT'|'DISABLED' $AssignmentStatus
  * @property string $Namespace
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListIAMPolicyAssignmentsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListIAMPolicyAssignmentsRequest extends Request
      *     AssignmentStatus?: 'ENABLED'|'DRAFT'|'DISABLED',
      *     Namespace: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

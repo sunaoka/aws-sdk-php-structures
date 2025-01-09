@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PlayerId
  * @property array<string, AttributeValue> $PlayerAttributes
  * @property string $Team
- * @property array<string, int> $LatencyInMs
+ * @property array<string, int<1, max>> $LatencyInMs
  */
 class Player extends Shape
 {
@@ -17,7 +17,7 @@ class Player extends Shape
      *     PlayerId?: string,
      *     PlayerAttributes?: array<string, AttributeValue>,
      *     Team?: string,
-     *     LatencyInMs?: array<string, int>
+     *     LatencyInMs?: array<string, int<1, max>>
      * } $args
      */
     public function __construct(array $args = [])

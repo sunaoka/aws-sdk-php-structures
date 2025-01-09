@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $pipelineName
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property Shapes\PipelineExecutionFilter $filter
  * @property string $nextToken
  */
@@ -15,7 +15,7 @@ class ListPipelineExecutionsRequest extends Request
     /**
      * @param array{
      *     pipelineName: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     filter?: Shapes\PipelineExecutionFilter,
      *     nextToken?: string
      * } $args

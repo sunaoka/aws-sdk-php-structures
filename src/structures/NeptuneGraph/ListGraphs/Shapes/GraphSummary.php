@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $arn
  * @property 'CREATING'|'AVAILABLE'|'DELETING'|'RESETTING'|'UPDATING'|'SNAPSHOTTING'|'FAILED'|'IMPORTING' $status
- * @property int $provisionedMemory
+ * @property int<16, 24576> $provisionedMemory
  * @property bool $publicConnectivity
  * @property string $endpoint
- * @property int $replicaCount
+ * @property int<0, 2> $replicaCount
  * @property string $kmsKeyIdentifier
  * @property bool $deletionProtection
  */
@@ -24,10 +24,10 @@ class GraphSummary extends Shape
      *     name: string,
      *     arn: string,
      *     status?: 'CREATING'|'AVAILABLE'|'DELETING'|'RESETTING'|'UPDATING'|'SNAPSHOTTING'|'FAILED'|'IMPORTING',
-     *     provisionedMemory?: int,
+     *     provisionedMemory?: int<16, 24576>,
      *     publicConnectivity?: bool,
      *     endpoint?: string,
-     *     replicaCount?: int,
+     *     replicaCount?: int<0, 2>,
      *     kmsKeyIdentifier?: string,
      *     deletionProtection?: bool
      * } $args

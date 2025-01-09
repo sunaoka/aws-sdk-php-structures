@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property int $Priority
+ * @property int<0, max> $Priority
  * @property FirewallManagerStatement $FirewallManagerStatement
  * @property OverrideAction $OverrideAction
  * @property VisibilityConfig $VisibilityConfig
@@ -16,7 +16,7 @@ class FirewallManagerRuleGroup extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     Priority: int,
+     *     Priority: int<0, max>,
      *     FirewallManagerStatement: FirewallManagerStatement,
      *     OverrideAction: OverrideAction,
      *     VisibilityConfig: VisibilityConfig

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'PlainText'|'SSML'|'CustomPayload' $contentType
  * @property string $content
- * @property int $groupNumber
+ * @property int<1, 5> $groupNumber
  */
 class Message extends Shape
 {
@@ -15,7 +15,7 @@ class Message extends Shape
      * @param array{
      *     contentType: 'PlainText'|'SSML'|'CustomPayload',
      *     content: string,
-     *     groupNumber?: int
+     *     groupNumber?: int<1, 5>
      * } $args
      */
     public function __construct(array $args)

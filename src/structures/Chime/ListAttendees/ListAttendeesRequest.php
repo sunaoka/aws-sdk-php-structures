@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $MeetingId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 99> $MaxResults
  */
 class ListAttendeesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListAttendeesRequest extends Request
      * @param array{
      *     MeetingId: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 99>
      * } $args
      */
     public function __construct(array $args)

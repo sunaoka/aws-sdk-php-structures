@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<TypedLinkAttributeRange> $FilterAttributeRanges
  * @property TypedLinkSchemaAndFacetName $FilterTypedLink
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  */
 class BatchListOutgoingTypedLinks extends Shape
 {
@@ -19,7 +19,7 @@ class BatchListOutgoingTypedLinks extends Shape
      *     FilterAttributeRanges?: list<TypedLinkAttributeRange>,
      *     FilterTypedLink?: TypedLinkSchemaAndFacetName,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

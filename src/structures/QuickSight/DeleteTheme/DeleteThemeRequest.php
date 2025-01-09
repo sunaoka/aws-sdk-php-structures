@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $ThemeId
- * @property int $VersionNumber
+ * @property int<1, max> $VersionNumber
  */
 class DeleteThemeRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteThemeRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     ThemeId: string,
-     *     VersionNumber?: int
+     *     VersionNumber?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

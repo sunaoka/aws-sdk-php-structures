@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool $DryRun
  * @property string $PrefixListId
- * @property int $MaxResults
+ * @property int<5, 255> $MaxResults
  * @property string $NextToken
  */
 class GetManagedPrefixListAssociationsRequest extends Request
@@ -16,7 +16,7 @@ class GetManagedPrefixListAssociationsRequest extends Request
      * @param array{
      *     DryRun?: bool,
      *     PrefixListId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 255>,
      *     NextToken?: string
      * } $args
      */

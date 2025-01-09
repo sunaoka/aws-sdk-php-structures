@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iot\ListStreams;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property string $nextToken
  * @property bool $ascendingOrder
  */
@@ -13,7 +13,7 @@ class ListStreamsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     nextToken?: string,
      *     ascendingOrder?: bool
      * } $args

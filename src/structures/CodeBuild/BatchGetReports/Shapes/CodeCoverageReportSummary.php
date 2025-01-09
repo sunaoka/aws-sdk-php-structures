@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property double $lineCoveragePercentage
- * @property int $linesCovered
- * @property int $linesMissed
+ * @property int<0, max> $linesCovered
+ * @property int<0, max> $linesMissed
  * @property double $branchCoveragePercentage
- * @property int $branchesCovered
- * @property int $branchesMissed
+ * @property int<0, max> $branchesCovered
+ * @property int<0, max> $branchesMissed
  */
 class CodeCoverageReportSummary extends Shape
 {
     /**
      * @param array{
      *     lineCoveragePercentage?: double,
-     *     linesCovered?: int,
-     *     linesMissed?: int,
+     *     linesCovered?: int<0, max>,
+     *     linesMissed?: int<0, max>,
      *     branchCoveragePercentage?: double,
-     *     branchesCovered?: int,
-     *     branchesMissed?: int
+     *     branchesCovered?: int<0, max>,
+     *     branchesMissed?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

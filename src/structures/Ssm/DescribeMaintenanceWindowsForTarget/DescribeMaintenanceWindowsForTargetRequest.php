@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\Target> $Targets
  * @property 'INSTANCE'|'RESOURCE_GROUP' $ResourceType
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $NextToken
  */
 class DescribeMaintenanceWindowsForTargetRequest extends Request
@@ -16,7 +16,7 @@ class DescribeMaintenanceWindowsForTargetRequest extends Request
      * @param array{
      *     Targets: list<Shapes\Target>,
      *     ResourceType: 'INSTANCE'|'RESOURCE_GROUP',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

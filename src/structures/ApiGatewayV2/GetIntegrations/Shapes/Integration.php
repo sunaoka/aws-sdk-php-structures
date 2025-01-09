@@ -23,7 +23,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, array<string, string>> $ResponseParameters
  * @property array<string, string> $RequestTemplates
  * @property string $TemplateSelectionExpression
- * @property int $TimeoutInMillis
+ * @property int<50, 30000> $TimeoutInMillis
  * @property TlsConfig $TlsConfig
  */
 class Integration extends Shape
@@ -48,7 +48,7 @@ class Integration extends Shape
      *     ResponseParameters?: array<string, array<string, string>>,
      *     RequestTemplates?: array<string, string>,
      *     TemplateSelectionExpression?: string,
-     *     TimeoutInMillis?: int,
+     *     TimeoutInMillis?: int<50, 30000>,
      *     TlsConfig?: TlsConfig
      * } $args
      */

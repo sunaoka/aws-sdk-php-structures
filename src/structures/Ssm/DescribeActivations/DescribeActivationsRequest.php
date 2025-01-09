@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\DescribeActivationsFilter> $Filters
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class DescribeActivationsRequest extends Request
@@ -14,7 +14,7 @@ class DescribeActivationsRequest extends Request
     /**
      * @param array{
      *     Filters?: list<Shapes\DescribeActivationsFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

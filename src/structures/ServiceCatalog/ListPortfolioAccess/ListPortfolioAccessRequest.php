@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $PortfolioId
  * @property string $OrganizationParentId
  * @property string $PageToken
- * @property int $PageSize
+ * @property int<0, 100> $PageSize
  */
 class ListPortfolioAccessRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListPortfolioAccessRequest extends Request
      *     PortfolioId: string,
      *     OrganizationParentId?: string,
      *     PageToken?: string,
-     *     PageSize?: int
+     *     PageSize?: int<0, 100>
      * } $args
      */
     public function __construct(array $args)

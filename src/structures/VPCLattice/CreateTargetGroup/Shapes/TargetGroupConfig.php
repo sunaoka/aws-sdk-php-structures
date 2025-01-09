@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property HealthCheckConfig $healthCheck
  * @property 'IPV4'|'IPV6' $ipAddressType
  * @property 'V1'|'V2' $lambdaEventStructureVersion
- * @property int $port
+ * @property int<1, 65535> $port
  * @property 'HTTP'|'HTTPS'|'TCP' $protocol
  * @property 'HTTP1'|'HTTP2'|'GRPC' $protocolVersion
  * @property string $vpcIdentifier
@@ -20,7 +20,7 @@ class TargetGroupConfig extends Shape
      *     healthCheck?: HealthCheckConfig,
      *     ipAddressType?: 'IPV4'|'IPV6',
      *     lambdaEventStructureVersion?: 'V1'|'V2',
-     *     port?: int,
+     *     port?: int<1, 65535>,
      *     protocol?: 'HTTP'|'HTTPS'|'TCP',
      *     protocolVersion?: 'HTTP1'|'HTTP2'|'GRPC',
      *     vpcIdentifier?: string

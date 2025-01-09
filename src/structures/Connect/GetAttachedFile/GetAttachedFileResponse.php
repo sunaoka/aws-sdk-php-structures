@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $CreationTime
  * @property 'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED' $FileStatus
  * @property string $FileName
- * @property int $FileSizeInBytes
+ * @property int<1, max> $FileSizeInBytes
  * @property string $AssociatedResourceArn
  * @property 'EMAIL_MESSAGE'|'ATTACHMENT' $FileUseCaseType
  * @property Shapes\CreatedByInfo $CreatedBy

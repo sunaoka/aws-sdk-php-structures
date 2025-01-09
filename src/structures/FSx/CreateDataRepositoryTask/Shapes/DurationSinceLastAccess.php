@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DAYS' $Unit
- * @property int $Value
+ * @property int<0, max> $Value
  */
 class DurationSinceLastAccess extends Shape
 {
     /**
      * @param array{
      *     Unit?: 'DAYS',
-     *     Value?: int
+     *     Value?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

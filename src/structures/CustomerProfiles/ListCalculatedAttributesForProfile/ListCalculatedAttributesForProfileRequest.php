@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $DomainName
  * @property string $ProfileId
  */
@@ -15,7 +15,7 @@ class ListCalculatedAttributesForProfileRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     DomainName: string,
      *     ProfileId: string
      * } $args

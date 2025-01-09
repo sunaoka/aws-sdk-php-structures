@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\RecycleBin\CreateRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $UnlockDelayValue
+ * @property int<7, 30> $UnlockDelayValue
  * @property 'DAYS' $UnlockDelayUnit
  */
 class UnlockDelay extends Shape
 {
     /**
      * @param array{
-     *     UnlockDelayValue: int,
+     *     UnlockDelayValue: int<7, 30>,
      *     UnlockDelayUnit: 'DAYS'
      * } $args
      */

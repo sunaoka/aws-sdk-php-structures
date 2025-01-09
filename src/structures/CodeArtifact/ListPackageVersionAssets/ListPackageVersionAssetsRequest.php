@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $namespace
  * @property string $package
  * @property string $packageVersion
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListPackageVersionAssetsRequest extends Request
@@ -26,7 +26,7 @@ class ListPackageVersionAssetsRequest extends Request
      *     namespace?: string,
      *     package: string,
      *     packageVersion: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

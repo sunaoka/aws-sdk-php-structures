@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TableName
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<min, 100> $MaxResults
  */
 class ListContributorInsightsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListContributorInsightsRequest extends Request
      * @param array{
      *     TableName?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<min, 100>
      * } $args
      */
     public function __construct(array $args = [])

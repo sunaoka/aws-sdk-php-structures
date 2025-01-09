@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $kmsKeyId
- * @property int $kmsDataKeyReusePeriodSeconds
+ * @property int<60, 900> $kmsDataKeyReusePeriodSeconds
  * @property 'AWS_OWNED_KEY'|'CUSTOMER_MANAGED_KMS_KEY' $type
  */
 class EncryptionConfiguration extends Shape
@@ -14,7 +14,7 @@ class EncryptionConfiguration extends Shape
     /**
      * @param array{
      *     kmsKeyId?: string,
-     *     kmsDataKeyReusePeriodSeconds?: int,
+     *     kmsDataKeyReusePeriodSeconds?: int<60, 900>,
      *     type: 'AWS_OWNED_KEY'|'CUSTOMER_MANAGED_KMS_KEY'
      * } $args
      */

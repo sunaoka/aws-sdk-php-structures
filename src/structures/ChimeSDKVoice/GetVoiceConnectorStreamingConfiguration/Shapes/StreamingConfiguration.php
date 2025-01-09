@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\GetVoiceConnectorStreamingConfigu
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DataRetentionInHours
+ * @property int<0, max> $DataRetentionInHours
  * @property bool $Disabled
  * @property list<StreamingNotificationTarget> $StreamingNotificationTargets
  * @property MediaInsightsConfiguration $MediaInsightsConfiguration
@@ -14,7 +14,7 @@ class StreamingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     DataRetentionInHours: int,
+     *     DataRetentionInHours: int<0, max>,
      *     Disabled: bool,
      *     StreamingNotificationTargets?: list<StreamingNotificationTarget>,
      *     MediaInsightsConfiguration?: MediaInsightsConfiguration

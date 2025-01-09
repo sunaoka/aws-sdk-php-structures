@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ColumnName
- * @property int $Size
+ * @property int<1, max> $Size
  * @property 'HOUR'|'DAY'|'WEEK' $SizeUnit
  */
 class LookbackWindow extends Shape
@@ -14,7 +14,7 @@ class LookbackWindow extends Shape
     /**
      * @param array{
      *     ColumnName: string,
-     *     Size: int,
+     *     Size: int<1, max>,
      *     SizeUnit: 'HOUR'|'DAY'|'WEEK'
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListDocumentVersionsRequest extends Request
@@ -14,7 +14,7 @@ class ListDocumentVersionsRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

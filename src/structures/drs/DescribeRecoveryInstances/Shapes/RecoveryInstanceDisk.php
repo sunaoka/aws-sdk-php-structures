@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\drs\DescribeRecoveryInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $bytes
+ * @property int<0, max> $bytes
  * @property string $ebsVolumeID
  * @property string $internalDeviceName
  */
@@ -13,7 +13,7 @@ class RecoveryInstanceDisk extends Shape
 {
     /**
      * @param array{
-     *     bytes?: int,
+     *     bytes?: int<0, max>,
      *     ebsVolumeID?: string,
      *     internalDeviceName?: string
      * } $args

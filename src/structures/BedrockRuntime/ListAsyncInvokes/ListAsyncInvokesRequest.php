@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $submitTimeAfter
  * @property \Aws\Api\DateTimeResult $submitTimeBefore
  * @property 'InProgress'|'Completed'|'Failed' $statusEquals
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property 'SubmissionTime' $sortBy
  * @property 'Ascending'|'Descending' $sortOrder
@@ -20,7 +20,7 @@ class ListAsyncInvokesRequest extends Request
      *     submitTimeAfter?: \Aws\Api\DateTimeResult,
      *     submitTimeBefore?: \Aws\Api\DateTimeResult,
      *     statusEquals?: 'InProgress'|'Completed'|'Failed',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     sortBy?: 'SubmissionTime',
      *     sortOrder?: 'Ascending'|'Descending'

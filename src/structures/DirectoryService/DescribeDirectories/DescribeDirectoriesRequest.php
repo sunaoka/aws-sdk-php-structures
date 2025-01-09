@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $DirectoryIds
  * @property string $NextToken
- * @property int $Limit
+ * @property int<0, max> $Limit
  */
 class DescribeDirectoriesRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeDirectoriesRequest extends Request
      * @param array{
      *     DirectoryIds?: list<string>,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

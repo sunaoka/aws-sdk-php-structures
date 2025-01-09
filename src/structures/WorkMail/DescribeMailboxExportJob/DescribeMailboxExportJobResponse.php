@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $S3BucketName
  * @property string $S3Prefix
  * @property string $S3Path
- * @property int $EstimatedProgress
+ * @property int<0, 100> $EstimatedProgress
  * @property 'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLED' $State
  * @property string $ErrorInfo
  * @property \Aws\Api\DateTimeResult $StartTime

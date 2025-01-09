@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $taskId
  * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'CANCELLED'|'FAILED' $status
  * @property string $name
- * @property int $cpus
+ * @property int<1, max> $cpus
  * @property bool $cacheHit
  * @property string $cacheS3Uri
- * @property int $memory
+ * @property int<1, max> $memory
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $stopTime
- * @property int $gpus
+ * @property int<0, max> $gpus
  * @property string $instanceType
  */
 class TaskListItem extends Shape
@@ -25,14 +25,14 @@ class TaskListItem extends Shape
      *     taskId?: string,
      *     status?: 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'CANCELLED'|'FAILED',
      *     name?: string,
-     *     cpus?: int,
+     *     cpus?: int<1, max>,
      *     cacheHit?: bool,
      *     cacheS3Uri?: string,
-     *     memory?: int,
+     *     memory?: int<1, max>,
      *     creationTime?: \Aws\Api\DateTimeResult,
      *     startTime?: \Aws\Api\DateTimeResult,
      *     stopTime?: \Aws\Api\DateTimeResult,
-     *     gpus?: int,
+     *     gpus?: int<0, max>,
      *     instanceType?: string
      * } $args
      */

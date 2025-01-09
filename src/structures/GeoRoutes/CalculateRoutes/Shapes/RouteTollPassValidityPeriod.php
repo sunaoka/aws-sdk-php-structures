@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Annual'|'Days'|'ExtendedAnnual'|'Minutes'|'Months' $Period
- * @property int $PeriodCount
+ * @property int<0, max> $PeriodCount
  */
 class RouteTollPassValidityPeriod extends Shape
 {
     /**
      * @param array{
      *     Period: 'Annual'|'Days'|'ExtendedAnnual'|'Minutes'|'Months',
-     *     PeriodCount?: int
+     *     PeriodCount?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

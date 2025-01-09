@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 25> $MaxResults
  * @property string $MonitorStatus
  * @property bool $IncludeLinkedAccounts
  */
@@ -15,7 +15,7 @@ class ListMonitorsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 25>,
      *     MonitorStatus?: string,
      *     IncludeLinkedAccounts?: bool
      * } $args

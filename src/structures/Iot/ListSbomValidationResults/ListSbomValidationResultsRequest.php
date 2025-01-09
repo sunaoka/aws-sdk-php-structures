@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $packageName
  * @property string $versionName
  * @property 'FAILED'|'SUCCEEDED' $validationResult
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListSbomValidationResultsRequest extends Request
@@ -18,7 +18,7 @@ class ListSbomValidationResultsRequest extends Request
      *     packageName: string,
      *     versionName: string,
      *     validationResult?: 'FAILED'|'SUCCEEDED',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

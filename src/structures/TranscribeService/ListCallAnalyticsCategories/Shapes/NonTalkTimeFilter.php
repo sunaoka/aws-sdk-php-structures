@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\TranscribeService\ListCallAnalyticsCategories\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Threshold
+ * @property int<0, 14400000> $Threshold
  * @property AbsoluteTimeRange $AbsoluteTimeRange
  * @property RelativeTimeRange $RelativeTimeRange
  * @property bool $Negate
@@ -14,7 +14,7 @@ class NonTalkTimeFilter extends Shape
 {
     /**
      * @param array{
-     *     Threshold?: int,
+     *     Threshold?: int<0, 14400000>,
      *     AbsoluteTimeRange?: AbsoluteTimeRange,
      *     RelativeTimeRange?: RelativeTimeRange,
      *     Negate?: bool

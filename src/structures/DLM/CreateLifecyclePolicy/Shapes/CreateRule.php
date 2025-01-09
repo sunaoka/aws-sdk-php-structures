@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CLOUD'|'OUTPOST_LOCAL'|'LOCAL_ZONE' $Location
- * @property int $Interval
+ * @property int<1, max> $Interval
  * @property 'HOURS' $IntervalUnit
  * @property list<string> $Times
  * @property string $CronExpression
@@ -17,7 +17,7 @@ class CreateRule extends Shape
     /**
      * @param array{
      *     Location?: 'CLOUD'|'OUTPOST_LOCAL'|'LOCAL_ZONE',
-     *     Interval?: int,
+     *     Interval?: int<1, max>,
      *     IntervalUnit?: 'HOURS',
      *     Times?: list<string>,
      *     CronExpression?: string,

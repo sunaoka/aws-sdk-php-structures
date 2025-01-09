@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $GroupSize
  * @property string $GroupFiles
  * @property bool $Recurse
- * @property int $MaxBand
- * @property int $MaxFilesInBand
+ * @property int<0, max> $MaxBand
+ * @property int<0, max> $MaxFilesInBand
  * @property S3DirectSourceAdditionalOptions $AdditionalOptions
  * @property string $JsonPath
  * @property bool $Multiline
@@ -30,8 +30,8 @@ class S3JsonSource extends Shape
      *     GroupSize?: string,
      *     GroupFiles?: string,
      *     Recurse?: bool,
-     *     MaxBand?: int,
-     *     MaxFilesInBand?: int,
+     *     MaxBand?: int<0, max>,
+     *     MaxFilesInBand?: int<0, max>,
      *     AdditionalOptions?: S3DirectSourceAdditionalOptions,
      *     JsonPath?: string,
      *     Multiline?: bool,

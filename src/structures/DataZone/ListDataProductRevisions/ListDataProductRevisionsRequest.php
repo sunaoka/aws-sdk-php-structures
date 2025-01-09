@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domainIdentifier
  * @property string $identifier
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nextToken
  */
 class ListDataProductRevisionsRequest extends Request
@@ -16,7 +16,7 @@ class ListDataProductRevisionsRequest extends Request
      * @param array{
      *     domainIdentifier: string,
      *     identifier: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nextToken?: string
      * } $args
      */

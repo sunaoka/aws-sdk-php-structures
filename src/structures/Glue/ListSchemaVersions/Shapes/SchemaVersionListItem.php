@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $SchemaArn
  * @property string $SchemaVersionId
- * @property int $VersionNumber
+ * @property int<1, 100000> $VersionNumber
  * @property 'AVAILABLE'|'PENDING'|'FAILURE'|'DELETING' $Status
  * @property string $CreatedTime
  */
@@ -17,7 +17,7 @@ class SchemaVersionListItem extends Shape
      * @param array{
      *     SchemaArn?: string,
      *     SchemaVersionId?: string,
-     *     VersionNumber?: int,
+     *     VersionNumber?: int<1, 100000>,
      *     Status?: 'AVAILABLE'|'PENDING'|'FAILURE'|'DELETING',
      *     CreatedTime?: string
      * } $args

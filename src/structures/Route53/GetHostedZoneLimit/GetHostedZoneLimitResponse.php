@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\HostedZoneLimit $Limit
- * @property int $Count
+ * @property int<0, max> $Count
  */
 class GetHostedZoneLimitResponse extends Response
 {

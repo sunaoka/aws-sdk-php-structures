@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $name
  * @property ActionTypeId $actionTypeId
- * @property int $runOrder
+ * @property int<1, 999> $runOrder
  * @property array<string, string> $configuration
  * @property list<string> $commands
  * @property list<OutputArtifact> $outputArtifacts
@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $roleArn
  * @property string $region
  * @property string $namespace
- * @property int $timeoutInMinutes
+ * @property int<5, 86400> $timeoutInMinutes
  */
 class ActionDeclaration extends Shape
 {
@@ -24,7 +24,7 @@ class ActionDeclaration extends Shape
      * @param array{
      *     name: string,
      *     actionTypeId: ActionTypeId,
-     *     runOrder?: int,
+     *     runOrder?: int<1, 999>,
      *     configuration?: array<string, string>,
      *     commands?: list<string>,
      *     outputArtifacts?: list<OutputArtifact>,
@@ -33,7 +33,7 @@ class ActionDeclaration extends Shape
      *     roleArn?: string,
      *     region?: string,
      *     namespace?: string,
-     *     timeoutInMinutes?: int
+     *     timeoutInMinutes?: int<5, 86400>
      * } $args
      */
     public function __construct(array $args)

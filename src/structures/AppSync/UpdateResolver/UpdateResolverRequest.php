@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\PipelineConfig $pipelineConfig
  * @property Shapes\SyncConfig $syncConfig
  * @property Shapes\CachingConfig $cachingConfig
- * @property int $maxBatchSize
+ * @property int<0, 2000> $maxBatchSize
  * @property Shapes\AppSyncRuntime $runtime
  * @property string $code
  * @property 'ENABLED'|'DISABLED' $metricsConfig
@@ -34,7 +34,7 @@ class UpdateResolverRequest extends Request
      *     pipelineConfig?: Shapes\PipelineConfig,
      *     syncConfig?: Shapes\SyncConfig,
      *     cachingConfig?: Shapes\CachingConfig,
-     *     maxBatchSize?: int,
+     *     maxBatchSize?: int<0, 2000>,
      *     runtime?: Shapes\AppSyncRuntime,
      *     code?: string,
      *     metricsConfig?: 'ENABLED'|'DISABLED'

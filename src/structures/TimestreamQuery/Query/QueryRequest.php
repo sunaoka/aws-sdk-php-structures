@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $QueryString
  * @property string $ClientToken
  * @property string $NextToken
- * @property int $MaxRows
+ * @property int<1, 1000> $MaxRows
  * @property Shapes\QueryInsights $QueryInsights
  */
 class QueryRequest extends Request
@@ -18,7 +18,7 @@ class QueryRequest extends Request
      *     QueryString: string,
      *     ClientToken?: string,
      *     NextToken?: string,
-     *     MaxRows?: int,
+     *     MaxRows?: int<1, 1000>,
      *     QueryInsights?: Shapes\QueryInsights
      * } $args
      */

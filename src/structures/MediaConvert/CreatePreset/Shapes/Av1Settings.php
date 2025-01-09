@@ -10,14 +10,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'ENABLED' $FilmGrainSynthesis
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
  * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int $FramerateDenominator
- * @property int $FramerateNumerator
+ * @property int<1, 2147483647> $FramerateDenominator
+ * @property int<1, 2147483647> $FramerateNumerator
  * @property double $GopSize
- * @property int $MaxBitrate
- * @property int $NumberBFramesBetweenReferenceFrames
+ * @property int<1000, 1152000000> $MaxBitrate
+ * @property int<0, 15> $NumberBFramesBetweenReferenceFrames
  * @property Av1QvbrSettings $QvbrSettings
  * @property 'QVBR' $RateControlMode
- * @property int $Slices
+ * @property int<1, 32> $Slices
  * @property 'DISABLED'|'ENABLED' $SpatialAdaptiveQuantization
  */
 class Av1Settings extends Shape
@@ -29,14 +29,14 @@ class Av1Settings extends Shape
      *     FilmGrainSynthesis?: 'DISABLED'|'ENABLED',
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
      *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int,
-     *     FramerateNumerator?: int,
+     *     FramerateDenominator?: int<1, 2147483647>,
+     *     FramerateNumerator?: int<1, 2147483647>,
      *     GopSize?: double,
-     *     MaxBitrate?: int,
-     *     NumberBFramesBetweenReferenceFrames?: int,
+     *     MaxBitrate?: int<1000, 1152000000>,
+     *     NumberBFramesBetweenReferenceFrames?: int<0, 15>,
      *     QvbrSettings?: Av1QvbrSettings,
      *     RateControlMode?: 'QVBR',
-     *     Slices?: int,
+     *     Slices?: int<1, 32>,
      *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED'
      * } $args
      */

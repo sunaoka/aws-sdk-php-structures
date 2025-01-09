@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FunctionName
  * @property string $Qualifier
- * @property int $ProvisionedConcurrentExecutions
+ * @property int<1, max> $ProvisionedConcurrentExecutions
  */
 class PutProvisionedConcurrencyConfigRequest extends Request
 {
@@ -15,7 +15,7 @@ class PutProvisionedConcurrencyConfigRequest extends Request
      * @param array{
      *     FunctionName: string,
      *     Qualifier: string,
-     *     ProvisionedConcurrentExecutions: int
+     *     ProvisionedConcurrentExecutions: int<1, max>
      * } $args
      */
     public function __construct(array $args)

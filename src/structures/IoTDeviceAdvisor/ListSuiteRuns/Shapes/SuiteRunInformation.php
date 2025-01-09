@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property \Aws\Api\DateTimeResult $endAt
  * @property 'PASS'|'FAIL'|'CANCELED'|'PENDING'|'RUNNING'|'STOPPING'|'STOPPED'|'PASS_WITH_WARNINGS'|'ERROR' $status
- * @property int $passed
- * @property int $failed
+ * @property int<0, 500> $passed
+ * @property int<0, 500> $failed
  */
 class SuiteRunInformation extends Shape
 {
@@ -28,8 +28,8 @@ class SuiteRunInformation extends Shape
      *     startedAt?: \Aws\Api\DateTimeResult,
      *     endAt?: \Aws\Api\DateTimeResult,
      *     status?: 'PASS'|'FAIL'|'CANCELED'|'PENDING'|'RUNNING'|'STOPPING'|'STOPPED'|'PASS_WITH_WARNINGS'|'ERROR',
-     *     passed?: int,
-     *     failed?: int
+     *     passed?: int<0, 500>,
+     *     failed?: int<0, 500>
      * } $args
      */
     public function __construct(array $args = [])

@@ -14,9 +14,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'OK'|'INACTIVE'|'COLLECTING_DATA'|'INSUFFICIENT_DATA'|'FAULT_SERVICE'|'FAULT_ACCESS_CLOUDWATCH' $ProcessingStatus
  * @property string $ProcessingStatusInfo
  * @property array<string, string> $Tags
- * @property int $MaxCityNetworksToMonitor
+ * @property int<1, 500000> $MaxCityNetworksToMonitor
  * @property Shapes\InternetMeasurementsLogDelivery $InternetMeasurementsLogDelivery
- * @property int $TrafficPercentageToMonitor
+ * @property int<1, 100> $TrafficPercentageToMonitor
  * @property Shapes\HealthEventsConfig $HealthEventsConfig
  */
 class GetMonitorResponse extends Response

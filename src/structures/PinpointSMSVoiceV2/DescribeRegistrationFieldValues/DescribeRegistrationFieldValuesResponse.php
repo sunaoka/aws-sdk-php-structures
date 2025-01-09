@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $RegistrationArn
  * @property string $RegistrationId
- * @property int $VersionNumber
+ * @property int<1, 100000> $VersionNumber
  * @property list<Shapes\RegistrationFieldValueInformation> $RegistrationFieldValues
  * @property string $NextToken
  */

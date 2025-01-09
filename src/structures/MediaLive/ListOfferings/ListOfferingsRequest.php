@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ChannelConfiguration
  * @property string $Codec
  * @property string $Duration
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $MaximumBitrate
  * @property string $MaximumFramerate
  * @property string $NextToken
@@ -26,7 +26,7 @@ class ListOfferingsRequest extends Request
      *     ChannelConfiguration?: string,
      *     Codec?: string,
      *     Duration?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     MaximumBitrate?: string,
      *     MaximumFramerate?: string,
      *     NextToken?: string,

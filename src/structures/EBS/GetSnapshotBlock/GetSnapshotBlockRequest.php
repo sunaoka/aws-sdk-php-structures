@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SnapshotId
- * @property int $BlockIndex
+ * @property int<0, max> $BlockIndex
  * @property string $BlockToken
  */
 class GetSnapshotBlockRequest extends Request
@@ -14,7 +14,7 @@ class GetSnapshotBlockRequest extends Request
     /**
      * @param array{
      *     SnapshotId: string,
-     *     BlockIndex: int,
+     *     BlockIndex: int<0, max>,
      *     BlockToken: string
      * } $args
      */

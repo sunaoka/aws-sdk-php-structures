@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property HTTPRequest $Request
- * @property int $Weight
+ * @property int<0, max> $Weight
  * @property \Aws\Api\DateTimeResult $Timestamp
  * @property string $Action
  * @property string $RuleWithinRuleGroup
@@ -16,7 +16,7 @@ class SampledHTTPRequest extends Shape
     /**
      * @param array{
      *     Request: HTTPRequest,
-     *     Weight: int,
+     *     Weight: int<0, max>,
      *     Timestamp?: \Aws\Api\DateTimeResult,
      *     Action?: string,
      *     RuleWithinRuleGroup?: string

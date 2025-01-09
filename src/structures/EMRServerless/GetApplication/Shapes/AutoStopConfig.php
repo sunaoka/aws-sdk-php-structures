@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property int $idleTimeoutMinutes
+ * @property int<1, 10080> $idleTimeoutMinutes
  */
 class AutoStopConfig extends Shape
 {
     /**
      * @param array{
      *     enabled?: bool,
-     *     idleTimeoutMinutes?: int
+     *     idleTimeoutMinutes?: int<1, 10080>
      * } $args
      */
     public function __construct(array $args = [])

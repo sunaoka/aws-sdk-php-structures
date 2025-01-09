@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\OutputDataConfig $OutputDataConfig
  * @property string $DataAccessRoleArn
  * @property string $JobName
- * @property int $NumberOfTopics
+ * @property int<1, 100> $NumberOfTopics
  * @property string $ClientRequestToken
  * @property string $VolumeKmsKeyId
  * @property Shapes\VpcConfig $VpcConfig
@@ -23,7 +23,7 @@ class StartTopicsDetectionJobRequest extends Request
      *     OutputDataConfig: Shapes\OutputDataConfig,
      *     DataAccessRoleArn: string,
      *     JobName?: string,
-     *     NumberOfTopics?: int,
+     *     NumberOfTopics?: int<1, 100>,
      *     ClientRequestToken?: string,
      *     VolumeKmsKeyId?: string,
      *     VpcConfig?: Shapes\VpcConfig,

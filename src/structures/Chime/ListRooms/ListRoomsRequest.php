@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $MemberId
- * @property int $MaxResults
+ * @property int<1, 99> $MaxResults
  * @property string $NextToken
  */
 class ListRoomsRequest extends Request
@@ -16,7 +16,7 @@ class ListRoomsRequest extends Request
      * @param array{
      *     AccountId: string,
      *     MemberId?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 99>,
      *     NextToken?: string
      * } $args
      */

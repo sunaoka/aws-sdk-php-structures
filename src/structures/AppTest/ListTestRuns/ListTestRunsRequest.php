@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $testSuiteId
  * @property list<string> $testRunIds
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class ListTestRunsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListTestRunsRequest extends Request
      *     testSuiteId?: string,
      *     testRunIds?: list<string>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

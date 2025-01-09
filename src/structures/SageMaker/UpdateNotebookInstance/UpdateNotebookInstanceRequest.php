@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RoleArn
  * @property string $LifecycleConfigName
  * @property bool $DisassociateLifecycleConfig
- * @property int $VolumeSizeInGB
+ * @property int<5, 16384> $VolumeSizeInGB
  * @property string $DefaultCodeRepository
  * @property list<string> $AdditionalCodeRepositories
  * @property list<'ml.eia1.medium'|'ml.eia1.large'|'ml.eia1.xlarge'|'ml.eia2.medium'|'ml.eia2.large'|'ml.eia2.xlarge'> $AcceleratorTypes
@@ -29,7 +29,7 @@ class UpdateNotebookInstanceRequest extends Request
      *     RoleArn?: string,
      *     LifecycleConfigName?: string,
      *     DisassociateLifecycleConfig?: bool,
-     *     VolumeSizeInGB?: int,
+     *     VolumeSizeInGB?: int<5, 16384>,
      *     DefaultCodeRepository?: string,
      *     AdditionalCodeRepositories?: list<string>,
      *     AcceleratorTypes?: list<'ml.eia1.medium'|'ml.eia1.large'|'ml.eia1.xlarge'|'ml.eia2.medium'|'ml.eia2.large'|'ml.eia2.xlarge'>,

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $HITId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property list<'Submitted'|'Approved'|'Rejected'> $AssignmentStatuses
  */
 class ListAssignmentsForHITRequest extends Request
@@ -16,7 +16,7 @@ class ListAssignmentsForHITRequest extends Request
      * @param array{
      *     HITId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     AssignmentStatuses?: list<'Submitted'|'Approved'|'Rejected'>
      * } $args
      */

@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SourceArn'|'DestinationArn'|'SourceType'|'DestinationType'|'CreationTime' $SortBy
  * @property 'Ascending'|'Descending' $SortOrder
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListAssociationsRequest extends Request
 {
@@ -31,7 +31,7 @@ class ListAssociationsRequest extends Request
      *     SortBy?: 'SourceArn'|'DestinationArn'|'SourceType'|'DestinationType'|'CreationTime',
      *     SortOrder?: 'Ascending'|'Descending',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

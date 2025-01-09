@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WAFV2\CheckCapacity;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $Capacity
+ * @property int<0, max> $Capacity
  */
 class CheckCapacityResponse extends Response
 {

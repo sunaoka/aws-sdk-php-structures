@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $createdBy
  * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE' $runStatus
  * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING' $targetRunStatus
- * @property int $failureRetryCount
+ * @property int<0, 2147483647> $failureRetryCount
  * @property array<string, Shapes\TaskParameterValue> $parameters
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property \Aws\Api\DateTimeResult $endedAt

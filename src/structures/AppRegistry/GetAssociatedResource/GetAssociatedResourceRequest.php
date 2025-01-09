@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $resource
  * @property string $nextToken
  * @property list<'SUCCESS'|'FAILED'|'IN_PROGRESS'|'SKIPPED'> $resourceTagStatus
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class GetAssociatedResourceRequest extends Request
 {
@@ -21,7 +21,7 @@ class GetAssociatedResourceRequest extends Request
      *     resource: string,
      *     nextToken?: string,
      *     resourceTagStatus?: list<'SUCCESS'|'FAILED'|'IN_PROGRESS'|'SKIPPED'>,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

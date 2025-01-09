@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $OptOutListNames
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'SELF'|'SHARED' $Owner
  */
 class DescribeOptOutListsRequest extends Request
@@ -16,7 +16,7 @@ class DescribeOptOutListsRequest extends Request
      * @param array{
      *     OptOutListNames?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     Owner?: 'SELF'|'SHARED'
      * } $args
      */

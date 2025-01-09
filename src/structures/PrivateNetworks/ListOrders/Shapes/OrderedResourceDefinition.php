@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CommitmentConfiguration $commitmentConfiguration
- * @property int $count
+ * @property int<0, max> $count
  * @property 'RADIO_UNIT'|'DEVICE_IDENTIFIER' $type
  */
 class OrderedResourceDefinition extends Shape
@@ -14,7 +14,7 @@ class OrderedResourceDefinition extends Shape
     /**
      * @param array{
      *     commitmentConfiguration?: CommitmentConfiguration,
-     *     count: int,
+     *     count: int<0, max>,
      *     type: 'RADIO_UNIT'|'DEVICE_IDENTIFIER'
      * } $args
      */

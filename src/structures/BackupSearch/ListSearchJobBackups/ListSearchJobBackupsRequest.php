@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SearchJobIdentifier
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class ListSearchJobBackupsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListSearchJobBackupsRequest extends Request
      * @param array{
      *     SearchJobIdentifier: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

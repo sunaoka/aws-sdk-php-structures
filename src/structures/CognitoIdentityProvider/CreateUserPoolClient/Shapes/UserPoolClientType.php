@@ -11,9 +11,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ClientSecret
  * @property \Aws\Api\DateTimeResult $LastModifiedDate
  * @property \Aws\Api\DateTimeResult $CreationDate
- * @property int $RefreshTokenValidity
- * @property int $AccessTokenValidity
- * @property int $IdTokenValidity
+ * @property int<0, 315360000> $RefreshTokenValidity
+ * @property int<1, 86400> $AccessTokenValidity
+ * @property int<1, 86400> $IdTokenValidity
  * @property TokenValidityUnitsType $TokenValidityUnits
  * @property list<string> $ReadAttributes
  * @property list<string> $WriteAttributes
@@ -29,7 +29,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'LEGACY'|'ENABLED' $PreventUserExistenceErrors
  * @property bool $EnableTokenRevocation
  * @property bool $EnablePropagateAdditionalUserContextData
- * @property int $AuthSessionValidity
+ * @property int<3, 15> $AuthSessionValidity
  */
 class UserPoolClientType extends Shape
 {
@@ -41,9 +41,9 @@ class UserPoolClientType extends Shape
      *     ClientSecret?: string,
      *     LastModifiedDate?: \Aws\Api\DateTimeResult,
      *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     RefreshTokenValidity?: int,
-     *     AccessTokenValidity?: int,
-     *     IdTokenValidity?: int,
+     *     RefreshTokenValidity?: int<0, 315360000>,
+     *     AccessTokenValidity?: int<1, 86400>,
+     *     IdTokenValidity?: int<1, 86400>,
      *     TokenValidityUnits?: TokenValidityUnitsType,
      *     ReadAttributes?: list<string>,
      *     WriteAttributes?: list<string>,
@@ -59,7 +59,7 @@ class UserPoolClientType extends Shape
      *     PreventUserExistenceErrors?: 'LEGACY'|'ENABLED',
      *     EnableTokenRevocation?: bool,
      *     EnablePropagateAdditionalUserContextData?: bool,
-     *     AuthSessionValidity?: int
+     *     AuthSessionValidity?: int<3, 15>
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\FindingCriteria $FindingCriteria
  * @property 'ACCOUNT'|'DATE'|'FINDING_TYPE'|'RESOURCE'|'SEVERITY' $GroupBy
  * @property 'ASC'|'DESC' $OrderBy
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class GetFindingsStatisticsRequest extends Request
 {
@@ -21,7 +21,7 @@ class GetFindingsStatisticsRequest extends Request
      *     FindingCriteria?: Shapes\FindingCriteria,
      *     GroupBy?: 'ACCOUNT'|'DATE'|'FINDING_TYPE'|'RESOURCE'|'SEVERITY',
      *     OrderBy?: 'ASC'|'DESC',
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

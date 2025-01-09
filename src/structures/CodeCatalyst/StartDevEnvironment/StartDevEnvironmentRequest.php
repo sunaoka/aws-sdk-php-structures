@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $id
  * @property list<Shapes\IdeConfiguration> $ides
  * @property 'dev.standard1.small'|'dev.standard1.medium'|'dev.standard1.large'|'dev.standard1.xlarge' $instanceType
- * @property int $inactivityTimeoutMinutes
+ * @property int<0, 1200> $inactivityTimeoutMinutes
  */
 class StartDevEnvironmentRequest extends Request
 {
@@ -21,7 +21,7 @@ class StartDevEnvironmentRequest extends Request
      *     id: string,
      *     ides?: list<Shapes\IdeConfiguration>,
      *     instanceType?: 'dev.standard1.small'|'dev.standard1.medium'|'dev.standard1.large'|'dev.standard1.xlarge',
-     *     inactivityTimeoutMinutes?: int
+     *     inactivityTimeoutMinutes?: int<0, 1200>
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property array<string, string> $Tags
  * @property 'ENABLED'|'DISABLED' $RuleStatus
- * @property int $RuleOrder
+ * @property int<1, 1000> $RuleOrder
  * @property string $RuleName
  * @property string $Description
  * @property bool $IsTerminal
@@ -20,7 +20,7 @@ class CreateAutomationRuleRequest extends Request
      * @param array{
      *     Tags?: array<string, string>,
      *     RuleStatus?: 'ENABLED'|'DISABLED',
-     *     RuleOrder: int,
+     *     RuleOrder: int<1, 1000>,
      *     RuleName: string,
      *     Description: string,
      *     IsTerminal?: bool,

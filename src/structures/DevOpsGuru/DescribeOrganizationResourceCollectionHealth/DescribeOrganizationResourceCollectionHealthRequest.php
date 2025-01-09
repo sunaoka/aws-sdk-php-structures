@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $AccountIds
  * @property list<string> $OrganizationalUnitIds
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  */
 class DescribeOrganizationResourceCollectionHealthRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeOrganizationResourceCollectionHealthRequest extends Request
      *     AccountIds?: list<string>,
      *     OrganizationalUnitIds?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 500>
      * } $args
      */
     public function __construct(array $args)

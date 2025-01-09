@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DecimalPlaces
+ * @property int<0, 20> $DecimalPlaces
  */
 class DecimalPlacesConfiguration extends Shape
 {
     /**
-     * @param array{DecimalPlaces: int} $args
+     * @param array{DecimalPlaces: int<0, 20>} $args
      */
     public function __construct(array $args)
     {

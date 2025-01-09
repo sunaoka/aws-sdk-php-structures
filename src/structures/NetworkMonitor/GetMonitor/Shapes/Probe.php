@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $probeArn
  * @property string $sourceArn
  * @property string $destination
- * @property int $destinationPort
+ * @property int<0, 65536> $destinationPort
  * @property 'TCP'|'ICMP' $protocol
- * @property int $packetSize
+ * @property int<56, 8500> $packetSize
  * @property 'IPV4'|'IPV6' $addressFamily
  * @property string $vpcId
  * @property 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR'|'DELETING'|'DELETED' $state
@@ -27,9 +27,9 @@ class Probe extends Shape
      *     probeArn?: string,
      *     sourceArn: string,
      *     destination: string,
-     *     destinationPort?: int,
+     *     destinationPort?: int<0, 65536>,
      *     protocol: 'TCP'|'ICMP',
-     *     packetSize?: int,
+     *     packetSize?: int<56, 8500>,
      *     addressFamily?: 'IPV4'|'IPV6',
      *     vpcId?: string,
      *     state?: 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR'|'DELETING'|'DELETED',

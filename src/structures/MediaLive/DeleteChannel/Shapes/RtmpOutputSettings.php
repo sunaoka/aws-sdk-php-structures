@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SELF_SIGNED'|'VERIFY_AUTHENTICITY' $CertificateMode
- * @property int $ConnectionRetryInterval
+ * @property int<1, max> $ConnectionRetryInterval
  * @property OutputLocationRef $Destination
- * @property int $NumRetries
+ * @property int<0, max> $NumRetries
  */
 class RtmpOutputSettings extends Shape
 {
     /**
      * @param array{
      *     CertificateMode?: 'SELF_SIGNED'|'VERIFY_AUTHENTICITY',
-     *     ConnectionRetryInterval?: int,
+     *     ConnectionRetryInterval?: int<1, max>,
      *     Destination: OutputLocationRef,
-     *     NumRetries?: int
+     *     NumRetries?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

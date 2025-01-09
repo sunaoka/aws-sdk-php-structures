@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property int $WindowSize
+ * @property int<0, max> $WindowSize
  * @property bool $DetectSchema
  * @property KinesisStreamingSourceOptions $StreamingOptions
  * @property StreamingDataPreviewOptions $DataPreviewOptions
@@ -16,7 +16,7 @@ class DirectKinesisSource extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     WindowSize?: int,
+     *     WindowSize?: int<0, max>,
      *     DetectSchema?: bool,
      *     StreamingOptions?: KinesisStreamingSourceOptions,
      *     DataPreviewOptions?: StreamingDataPreviewOptions

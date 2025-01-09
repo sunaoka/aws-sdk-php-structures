@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $WorkloadId
  * @property string $SharedWithPrefix
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property 'ACCEPTED'|'REJECTED'|'PENDING'|'REVOKED'|'EXPIRED'|'ASSOCIATING'|'ASSOCIATED'|'FAILED' $Status
  */
 class ListWorkloadSharesRequest extends Request
@@ -18,7 +18,7 @@ class ListWorkloadSharesRequest extends Request
      *     WorkloadId: string,
      *     SharedWithPrefix?: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     Status?: 'ACCEPTED'|'REJECTED'|'PENDING'|'REVOKED'|'EXPIRED'|'ASSOCIATING'|'ASSOCIATED'|'FAILED'
      * } $args
      */

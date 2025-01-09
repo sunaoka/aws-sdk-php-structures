@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TableId
  * @property string $ClientToken
  * @property S3BucketSource $S3BucketSource
- * @property int $ErrorCount
+ * @property int<0, max> $ErrorCount
  * @property string $CloudWatchLogGroupArn
  * @property 'DYNAMODB_JSON'|'ION'|'CSV' $InputFormat
  * @property InputFormatOptions $InputFormatOptions
@@ -20,8 +20,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property int $ProcessedSizeBytes
- * @property int $ProcessedItemCount
- * @property int $ImportedItemCount
+ * @property int<0, max> $ProcessedItemCount
+ * @property int<0, max> $ImportedItemCount
  * @property string $FailureCode
  * @property string $FailureMessage
  */
@@ -35,7 +35,7 @@ class ImportTableDescription extends Shape
      *     TableId?: string,
      *     ClientToken?: string,
      *     S3BucketSource?: S3BucketSource,
-     *     ErrorCount?: int,
+     *     ErrorCount?: int<0, max>,
      *     CloudWatchLogGroupArn?: string,
      *     InputFormat?: 'DYNAMODB_JSON'|'ION'|'CSV',
      *     InputFormatOptions?: InputFormatOptions,
@@ -44,8 +44,8 @@ class ImportTableDescription extends Shape
      *     StartTime?: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult,
      *     ProcessedSizeBytes?: int,
-     *     ProcessedItemCount?: int,
-     *     ImportedItemCount?: int,
+     *     ProcessedItemCount?: int<0, max>,
+     *     ImportedItemCount?: int<0, max>,
      *     FailureCode?: string,
      *     FailureMessage?: string
      * } $args

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $detectorModelName
  * @property string $stateName
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class ListDetectorsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListDetectorsRequest extends Request
      *     detectorModelName: string,
      *     stateName?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args)

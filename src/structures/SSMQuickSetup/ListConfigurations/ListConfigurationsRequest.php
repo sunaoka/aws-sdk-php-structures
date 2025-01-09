@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ConfigurationDefinitionId
  * @property list<Shapes\Filter> $Filters
  * @property string $ManagerArn
- * @property int $MaxItems
+ * @property int<1, 100> $MaxItems
  * @property string $StartingToken
  */
 class ListConfigurationsRequest extends Request
@@ -18,7 +18,7 @@ class ListConfigurationsRequest extends Request
      *     ConfigurationDefinitionId?: string,
      *     Filters?: list<Shapes\Filter>,
      *     ManagerArn?: string,
-     *     MaxItems?: int,
+     *     MaxItems?: int<1, 100>,
      *     StartingToken?: string
      * } $args
      */

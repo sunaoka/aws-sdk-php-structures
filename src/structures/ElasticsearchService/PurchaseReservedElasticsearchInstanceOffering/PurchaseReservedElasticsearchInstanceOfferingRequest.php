@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ReservedElasticsearchInstanceOfferingId
  * @property string $ReservationName
- * @property int $InstanceCount
+ * @property int<1, max> $InstanceCount
  */
 class PurchaseReservedElasticsearchInstanceOfferingRequest extends Request
 {
@@ -15,7 +15,7 @@ class PurchaseReservedElasticsearchInstanceOfferingRequest extends Request
      * @param array{
      *     ReservedElasticsearchInstanceOfferingId: string,
      *     ReservationName: string,
-     *     InstanceCount?: int
+     *     InstanceCount?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

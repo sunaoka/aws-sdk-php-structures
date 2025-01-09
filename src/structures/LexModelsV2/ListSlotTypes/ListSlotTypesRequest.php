@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $localeId
  * @property Shapes\SlotTypeSortBy $sortBy
  * @property list<Shapes\SlotTypeFilter> $filters
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListSlotTypesRequest extends Request
@@ -22,7 +22,7 @@ class ListSlotTypesRequest extends Request
      *     localeId: string,
      *     sortBy?: Shapes\SlotTypeSortBy,
      *     filters?: list<Shapes\SlotTypeFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

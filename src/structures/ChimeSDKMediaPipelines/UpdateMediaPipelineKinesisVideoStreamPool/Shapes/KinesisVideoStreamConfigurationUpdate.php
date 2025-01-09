@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\UpdateMediaPipelineKines
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DataRetentionInHours
+ * @property int<1, max> $DataRetentionInHours
  */
 class KinesisVideoStreamConfigurationUpdate extends Shape
 {
     /**
-     * @param array{DataRetentionInHours?: int} $args
+     * @param array{DataRetentionInHours?: int<1, max>} $args
      */
     public function __construct(array $args = [])
     {

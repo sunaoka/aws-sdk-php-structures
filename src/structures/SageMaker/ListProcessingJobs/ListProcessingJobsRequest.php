@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Name'|'CreationTime'|'Status' $SortBy
  * @property 'Ascending'|'Descending' $SortOrder
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListProcessingJobsRequest extends Request
 {
@@ -29,7 +29,7 @@ class ListProcessingJobsRequest extends Request
      *     SortBy?: 'Name'|'CreationTime'|'Status',
      *     SortOrder?: 'Ascending'|'Descending',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

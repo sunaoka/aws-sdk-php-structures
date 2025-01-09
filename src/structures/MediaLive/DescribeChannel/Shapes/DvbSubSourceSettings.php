@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DEU'|'ENG'|'FRA'|'NLD'|'POR'|'SPA' $OcrLanguage
- * @property int $Pid
+ * @property int<1, max> $Pid
  */
 class DvbSubSourceSettings extends Shape
 {
     /**
      * @param array{
      *     OcrLanguage?: 'DEU'|'ENG'|'FRA'|'NLD'|'POR'|'SPA',
-     *     Pid?: int
+     *     Pid?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

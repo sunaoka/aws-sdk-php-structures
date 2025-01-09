@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'ORIGIN'|'CACHE' $FlexCacheEndpointType
  * @property string $JunctionPath
  * @property 'UNIX'|'NTFS'|'MIXED' $SecurityStyle
- * @property int $SizeInMegabytes
+ * @property int<0, 2147483647> $SizeInMegabytes
  * @property bool $StorageEfficiencyEnabled
  * @property string $StorageVirtualMachineId
  * @property bool $StorageVirtualMachineRoot
@@ -20,7 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SnaplockConfiguration $SnaplockConfiguration
  * @property 'FLEXVOL'|'FLEXGROUP' $VolumeStyle
  * @property AggregateConfiguration $AggregateConfiguration
- * @property int $SizeInBytes
+ * @property int<0, 22517998000000000> $SizeInBytes
  */
 class OntapVolumeConfiguration extends Shape
 {
@@ -29,7 +29,7 @@ class OntapVolumeConfiguration extends Shape
      *     FlexCacheEndpointType?: 'NONE'|'ORIGIN'|'CACHE',
      *     JunctionPath?: string,
      *     SecurityStyle?: 'UNIX'|'NTFS'|'MIXED',
-     *     SizeInMegabytes?: int,
+     *     SizeInMegabytes?: int<0, 2147483647>,
      *     StorageEfficiencyEnabled?: bool,
      *     StorageVirtualMachineId?: string,
      *     StorageVirtualMachineRoot?: bool,
@@ -41,7 +41,7 @@ class OntapVolumeConfiguration extends Shape
      *     SnaplockConfiguration?: SnaplockConfiguration,
      *     VolumeStyle?: 'FLEXVOL'|'FLEXGROUP',
      *     AggregateConfiguration?: AggregateConfiguration,
-     *     SizeInBytes?: int
+     *     SizeInBytes?: int<0, 22517998000000000>
      * } $args
      */
     public function __construct(array $args = [])

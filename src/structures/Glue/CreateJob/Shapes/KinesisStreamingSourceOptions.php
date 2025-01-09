@@ -10,15 +10,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Classification
  * @property string $Delimiter
  * @property 'latest'|'trim_horizon'|'earliest'|'timestamp' $StartingPosition
- * @property int $MaxFetchTimeInMs
- * @property int $MaxFetchRecordsPerShard
- * @property int $MaxRecordPerRead
+ * @property int<0, max> $MaxFetchTimeInMs
+ * @property int<0, max> $MaxFetchRecordsPerShard
+ * @property int<0, max> $MaxRecordPerRead
  * @property bool $AddIdleTimeBetweenReads
- * @property int $IdleTimeBetweenReadsInMs
- * @property int $DescribeShardInterval
- * @property int $NumRetries
- * @property int $RetryIntervalMs
- * @property int $MaxRetryIntervalMs
+ * @property int<0, max> $IdleTimeBetweenReadsInMs
+ * @property int<0, max> $DescribeShardInterval
+ * @property int<0, max> $NumRetries
+ * @property int<0, max> $RetryIntervalMs
+ * @property int<0, max> $MaxRetryIntervalMs
  * @property bool $AvoidEmptyBatches
  * @property string $StreamArn
  * @property string $RoleArn
@@ -36,15 +36,15 @@ class KinesisStreamingSourceOptions extends Shape
      *     Classification?: string,
      *     Delimiter?: string,
      *     StartingPosition?: 'latest'|'trim_horizon'|'earliest'|'timestamp',
-     *     MaxFetchTimeInMs?: int,
-     *     MaxFetchRecordsPerShard?: int,
-     *     MaxRecordPerRead?: int,
+     *     MaxFetchTimeInMs?: int<0, max>,
+     *     MaxFetchRecordsPerShard?: int<0, max>,
+     *     MaxRecordPerRead?: int<0, max>,
      *     AddIdleTimeBetweenReads?: bool,
-     *     IdleTimeBetweenReadsInMs?: int,
-     *     DescribeShardInterval?: int,
-     *     NumRetries?: int,
-     *     RetryIntervalMs?: int,
-     *     MaxRetryIntervalMs?: int,
+     *     IdleTimeBetweenReadsInMs?: int<0, max>,
+     *     DescribeShardInterval?: int<0, max>,
+     *     NumRetries?: int<0, max>,
+     *     RetryIntervalMs?: int<0, max>,
+     *     MaxRetryIntervalMs?: int<0, max>,
      *     AvoidEmptyBatches?: bool,
      *     StreamArn?: string,
      *     RoleArn?: string,

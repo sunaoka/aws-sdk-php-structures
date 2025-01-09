@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $Namespace
  * @property list<Shapes\GroupSearchFilter> $Filters
  */
@@ -17,7 +17,7 @@ class SearchGroupsRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     Namespace: string,
      *     Filters: list<Shapes\GroupSearchFilter>
      * } $args

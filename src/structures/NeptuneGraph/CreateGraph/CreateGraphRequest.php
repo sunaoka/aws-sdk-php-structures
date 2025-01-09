@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $publicConnectivity
  * @property string $kmsKeyIdentifier
  * @property Shapes\VectorSearchConfiguration $vectorSearchConfiguration
- * @property int $replicaCount
+ * @property int<0, 2> $replicaCount
  * @property bool $deletionProtection
- * @property int $provisionedMemory
+ * @property int<16, 24576> $provisionedMemory
  */
 class CreateGraphRequest extends Request
 {
@@ -23,9 +23,9 @@ class CreateGraphRequest extends Request
      *     publicConnectivity?: bool,
      *     kmsKeyIdentifier?: string,
      *     vectorSearchConfiguration?: Shapes\VectorSearchConfiguration,
-     *     replicaCount?: int,
+     *     replicaCount?: int<0, 2>,
      *     deletionProtection?: bool,
-     *     provisionedMemory: int
+     *     provisionedMemory: int<16, 24576>
      * } $args
      */
     public function __construct(array $args)

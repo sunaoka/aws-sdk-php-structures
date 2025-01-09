@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $From
- * @property int $To
+ * @property int<0, 65535> $From
+ * @property int<0, 65535> $To
  */
 class NetworkAclPortRange extends Shape
 {
     /**
      * @param array{
-     *     From?: int,
-     *     To?: int
+     *     From?: int<0, 65535>,
+     *     To?: int<0, 65535>
      * } $args
      */
     public function __construct(array $args = [])

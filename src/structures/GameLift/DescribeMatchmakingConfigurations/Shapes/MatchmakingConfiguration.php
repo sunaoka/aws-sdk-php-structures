@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ConfigurationArn
  * @property string $Description
  * @property list<string> $GameSessionQueueArns
- * @property int $RequestTimeoutSeconds
- * @property int $AcceptanceTimeoutSeconds
+ * @property int<1, 43200> $RequestTimeoutSeconds
+ * @property int<1, 600> $AcceptanceTimeoutSeconds
  * @property bool $AcceptanceRequired
  * @property string $RuleSetName
  * @property string $RuleSetArn
  * @property string $NotificationTarget
- * @property int $AdditionalPlayerCount
+ * @property int<0, max> $AdditionalPlayerCount
  * @property string $CustomEventData
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property list<GameProperty> $GameProperties
@@ -31,13 +31,13 @@ class MatchmakingConfiguration extends Shape
      *     ConfigurationArn?: string,
      *     Description?: string,
      *     GameSessionQueueArns?: list<string>,
-     *     RequestTimeoutSeconds?: int,
-     *     AcceptanceTimeoutSeconds?: int,
+     *     RequestTimeoutSeconds?: int<1, 43200>,
+     *     AcceptanceTimeoutSeconds?: int<1, 600>,
      *     AcceptanceRequired?: bool,
      *     RuleSetName?: string,
      *     RuleSetArn?: string,
      *     NotificationTarget?: string,
-     *     AdditionalPlayerCount?: int,
+     *     AdditionalPlayerCount?: int<0, max>,
      *     CustomEventData?: string,
      *     CreationTime?: \Aws\Api\DateTimeResult,
      *     GameProperties?: list<GameProperty>,

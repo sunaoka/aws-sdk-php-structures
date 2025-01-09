@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SKIP'|'REGISTER_AS_NEW' $DuplicateRegistrationAction
- * @property int $FraudsterSimilarityThreshold
+ * @property int<0, 100> $FraudsterSimilarityThreshold
  * @property list<string> $WatchlistIds
  */
 class RegistrationConfig extends Shape
@@ -14,7 +14,7 @@ class RegistrationConfig extends Shape
     /**
      * @param array{
      *     DuplicateRegistrationAction?: 'SKIP'|'REGISTER_AS_NEW',
-     *     FraudsterSimilarityThreshold?: int,
+     *     FraudsterSimilarityThreshold?: int<0, 100>,
      *     WatchlistIds?: list<string>
      * } $args
      */

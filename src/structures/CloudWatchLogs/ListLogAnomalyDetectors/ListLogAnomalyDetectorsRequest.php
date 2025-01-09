@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $filterLogGroupArn
- * @property int $limit
+ * @property int<1, 50> $limit
  * @property string $nextToken
  */
 class ListLogAnomalyDetectorsRequest extends Request
@@ -14,7 +14,7 @@ class ListLogAnomalyDetectorsRequest extends Request
     /**
      * @param array{
      *     filterLogGroupArn?: string,
-     *     limit?: int,
+     *     limit?: int<1, 50>,
      *     nextToken?: string
      * } $args
      */

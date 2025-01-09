@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 25> $MaxResults
  * @property 'ACTIVE'|'RESOLVED' $EventStatus
  * @property string $LinkedAccountId
  */
@@ -21,7 +21,7 @@ class ListHealthEventsRequest extends Request
      *     StartTime?: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 25>,
      *     EventStatus?: 'ACTIVE'|'RESOLVED',
      *     LinkedAccountId?: string
      * } $args

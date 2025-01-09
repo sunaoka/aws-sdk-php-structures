@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $enabled
  * @property string $ephemerisId
  * @property string $name
- * @property int $priority
+ * @property int<0, 99999> $priority
  * @property S3Object $sourceS3Object
  * @property 'VALIDATING'|'INVALID'|'ERROR'|'ENABLED'|'DISABLED'|'EXPIRED' $status
  */
@@ -21,7 +21,7 @@ class EphemerisItem extends Shape
      *     enabled?: bool,
      *     ephemerisId?: string,
      *     name?: string,
-     *     priority?: int,
+     *     priority?: int<0, 99999>,
      *     sourceS3Object?: S3Object,
      *     status?: 'VALIDATING'|'INVALID'|'ERROR'|'ENABLED'|'DISABLED'|'EXPIRED'
      * } $args

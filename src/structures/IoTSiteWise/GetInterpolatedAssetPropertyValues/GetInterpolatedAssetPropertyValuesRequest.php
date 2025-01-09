@@ -8,16 +8,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $assetId
  * @property string $propertyId
  * @property string $propertyAlias
- * @property int $startTimeInSeconds
- * @property int $startTimeOffsetInNanos
- * @property int $endTimeInSeconds
- * @property int $endTimeOffsetInNanos
+ * @property int<1, 9223372036854774> $startTimeInSeconds
+ * @property int<0, 999999999> $startTimeOffsetInNanos
+ * @property int<1, 9223372036854774> $endTimeInSeconds
+ * @property int<0, 999999999> $endTimeOffsetInNanos
  * @property 'GOOD'|'BAD'|'UNCERTAIN' $quality
- * @property int $intervalInSeconds
+ * @property int<1, 320000000> $intervalInSeconds
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, max> $maxResults
  * @property string $type
- * @property int $intervalWindowInSeconds
+ * @property int<1, 320000000> $intervalWindowInSeconds
  */
 class GetInterpolatedAssetPropertyValuesRequest extends Request
 {
@@ -26,16 +26,16 @@ class GetInterpolatedAssetPropertyValuesRequest extends Request
      *     assetId?: string,
      *     propertyId?: string,
      *     propertyAlias?: string,
-     *     startTimeInSeconds: int,
-     *     startTimeOffsetInNanos?: int,
-     *     endTimeInSeconds: int,
-     *     endTimeOffsetInNanos?: int,
+     *     startTimeInSeconds: int<1, 9223372036854774>,
+     *     startTimeOffsetInNanos?: int<0, 999999999>,
+     *     endTimeInSeconds: int<1, 9223372036854774>,
+     *     endTimeOffsetInNanos?: int<0, 999999999>,
      *     quality: 'GOOD'|'BAD'|'UNCERTAIN',
-     *     intervalInSeconds: int,
+     *     intervalInSeconds: int<1, 320000000>,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, max>,
      *     type: string,
-     *     intervalWindowInSeconds?: int
+     *     intervalWindowInSeconds?: int<1, 320000000>
      * } $args
      */
     public function __construct(array $args)

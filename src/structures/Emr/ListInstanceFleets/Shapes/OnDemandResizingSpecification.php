@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Emr\ListInstanceFleets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TimeoutDurationMinutes
+ * @property int<0, max> $TimeoutDurationMinutes
  * @property 'lowest-price'|'prioritized' $AllocationStrategy
  * @property OnDemandCapacityReservationOptions $CapacityReservationOptions
  */
@@ -13,7 +13,7 @@ class OnDemandResizingSpecification extends Shape
 {
     /**
      * @param array{
-     *     TimeoutDurationMinutes?: int,
+     *     TimeoutDurationMinutes?: int<0, max>,
      *     AllocationStrategy?: 'lowest-price'|'prioritized',
      *     CapacityReservationOptions?: OnDemandCapacityReservationOptions
      * } $args

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property array<string, list<string>> $Filters
  * @property bool $Shared
  * @property bool $SortAscending
@@ -16,7 +16,7 @@ class DescribeBackupsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     Filters?: array<string, list<string>>,
      *     Shared?: bool,
      *     SortAscending?: bool

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $flowName
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class DescribeFlowExecutionRecordsRequest extends Request
@@ -14,7 +14,7 @@ class DescribeFlowExecutionRecordsRequest extends Request
     /**
      * @param array{
      *     flowName: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

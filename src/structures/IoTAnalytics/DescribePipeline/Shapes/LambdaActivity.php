@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $name
  * @property string $lambdaName
- * @property int $batchSize
+ * @property int<1, 1000> $batchSize
  * @property string $next
  */
 class LambdaActivity extends Shape
@@ -16,7 +16,7 @@ class LambdaActivity extends Shape
      * @param array{
      *     name: string,
      *     lambdaName: string,
-     *     batchSize: int,
+     *     batchSize: int<1, 1000>,
      *     next?: string
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property RetrievalFilter $filter
  * @property ImplicitFilterConfiguration $implicitFilterConfiguration
- * @property int $numberOfResults
+ * @property int<1, 100> $numberOfResults
  * @property 'HYBRID'|'SEMANTIC' $overrideSearchType
  * @property VectorSearchRerankingConfiguration $rerankingConfiguration
  */
@@ -17,7 +17,7 @@ class KnowledgeBaseVectorSearchConfiguration extends Shape
      * @param array{
      *     filter?: RetrievalFilter,
      *     implicitFilterConfiguration?: ImplicitFilterConfiguration,
-     *     numberOfResults?: int,
+     *     numberOfResults?: int<1, 100>,
      *     overrideSearchType?: 'HYBRID'|'SEMANTIC',
      *     rerankingConfiguration?: VectorSearchRerankingConfiguration
      * } $args

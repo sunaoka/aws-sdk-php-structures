@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\OAM\ListAttachedLinks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  * @property string $SinkIdentifier
  */
@@ -13,7 +13,7 @@ class ListAttachedLinksRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string,
      *     SinkIdentifier: string
      * } $args

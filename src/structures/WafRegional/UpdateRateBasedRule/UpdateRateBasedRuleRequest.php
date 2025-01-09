@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RuleId
  * @property string $ChangeToken
  * @property list<Shapes\RuleUpdate> $Updates
- * @property int $RateLimit
+ * @property int<100, 2000000000> $RateLimit
  */
 class UpdateRateBasedRuleRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateRateBasedRuleRequest extends Request
      *     RuleId: string,
      *     ChangeToken: string,
      *     Updates: list<Shapes\RuleUpdate>,
-     *     RateLimit: int
+     *     RateLimit: int<100, 2000000000>
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FirewallRuleGroupId
  * @property int $Priority
  * @property 'ALLOW'|'BLOCK'|'ALERT' $Action
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListFirewallRulesRequest extends Request
@@ -18,7 +18,7 @@ class ListFirewallRulesRequest extends Request
      *     FirewallRuleGroupId: string,
      *     Priority?: int,
      *     Action?: 'ALLOW'|'BLOCK'|'ALERT',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

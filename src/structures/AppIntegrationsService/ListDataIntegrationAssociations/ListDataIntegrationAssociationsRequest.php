@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DataIntegrationIdentifier
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  */
 class ListDataIntegrationAssociationsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListDataIntegrationAssociationsRequest extends Request
      * @param array{
      *     DataIntegrationIdentifier: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

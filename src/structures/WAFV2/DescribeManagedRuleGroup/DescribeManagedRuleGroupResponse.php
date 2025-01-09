@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $VersionName
  * @property string $SnsTopicArn
- * @property int $Capacity
+ * @property int<1, max> $Capacity
  * @property list<Shapes\RuleSummary> $Rules
  * @property string $LabelNamespace
  * @property list<Shapes\LabelSummary> $AvailableLabels

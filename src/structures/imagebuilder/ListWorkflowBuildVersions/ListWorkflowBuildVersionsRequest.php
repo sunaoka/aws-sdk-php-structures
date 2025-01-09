@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $workflowVersionArn
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  */
 class ListWorkflowBuildVersionsRequest extends Request
@@ -14,7 +14,7 @@ class ListWorkflowBuildVersionsRequest extends Request
     /**
      * @param array{
      *     workflowVersionArn: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string
      * } $args
      */

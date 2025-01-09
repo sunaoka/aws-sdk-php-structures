@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LensNamePrefix
  * @property 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE' $ShareResourceType
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $ProfileNamePrefix
  * @property string $TemplateNamePrefix
  */
@@ -21,7 +21,7 @@ class ListShareInvitationsRequest extends Request
      *     LensNamePrefix?: string,
      *     ShareResourceType?: 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE',
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     ProfileNamePrefix?: string,
      *     TemplateNamePrefix?: string
      * } $args

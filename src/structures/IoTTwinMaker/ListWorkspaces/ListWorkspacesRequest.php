@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\ListWorkspaces;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<0, 200> $maxResults
  * @property string $nextToken
  */
 class ListWorkspacesRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<0, 200>,
      *     nextToken?: string
      * } $args
      */

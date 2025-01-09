@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $PointInTimeRecoveryEnabled
- * @property int $RecoveryPeriodInDays
+ * @property int<1, 35> $RecoveryPeriodInDays
  */
 class PointInTimeRecoverySpecification extends Shape
 {
     /**
      * @param array{
      *     PointInTimeRecoveryEnabled: bool,
-     *     RecoveryPeriodInDays?: int
+     *     RecoveryPeriodInDays?: int<1, 35>
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $nodeType
- * @property int $nodeCount
+ * @property int<1, max> $nodeCount
  */
 class CapacityConfiguration extends Shape
 {
     /**
      * @param array{
      *     nodeType?: string,
-     *     nodeCount?: int
+     *     nodeCount?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

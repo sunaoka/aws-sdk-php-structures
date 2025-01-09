@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $workerUpdatedAt
  * @property float $progressPercent
  * @property string $sessionId
- * @property int $processExitCode
+ * @property int<-2147483648, 2147483647> $processExitCode
  * @property string $progressMessage
  * @property Shapes\SessionActionDefinition $definition
  */

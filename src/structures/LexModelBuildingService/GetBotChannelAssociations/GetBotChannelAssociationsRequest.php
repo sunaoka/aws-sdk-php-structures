@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botName
  * @property string $botAlias
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nameContains
  */
 class GetBotChannelAssociationsRequest extends Request
@@ -18,7 +18,7 @@ class GetBotChannelAssociationsRequest extends Request
      *     botName: string,
      *     botAlias: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nameContains?: string
      * } $args
      */

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $SchemaName
  * @property string $RegistryName
  * @property bool $LatestVersion
- * @property int $VersionNumber
+ * @property int<1, 100000> $VersionNumber
  * @property string $SchemaVersionId
  * @property string $MetadataKey
  * @property string $MetadataValue

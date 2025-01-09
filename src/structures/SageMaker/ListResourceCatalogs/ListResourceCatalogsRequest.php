@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
  * @property 'Ascending'|'Descending' $SortOrder
  * @property 'CreationTime' $SortBy
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListResourceCatalogsRequest extends Request
@@ -22,7 +22,7 @@ class ListResourceCatalogsRequest extends Request
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
      *     SortOrder?: 'Ascending'|'Descending',
      *     SortBy?: 'CreationTime',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

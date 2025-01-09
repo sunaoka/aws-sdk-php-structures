@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'KUBERNETES'|'EKS_ANYWHERE' $ServiceName
  * @property list<Shapes\DependentService> $DependentServices
- * @property int $MaxResults
+ * @property int<0, 100> $MaxResults
  * @property string $NextToken
  */
 class ListServiceVersionsRequest extends Request
@@ -16,7 +16,7 @@ class ListServiceVersionsRequest extends Request
      * @param array{
      *     ServiceName: 'KUBERNETES'|'EKS_ANYWHERE',
      *     DependentServices?: list<Shapes\DependentService>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 100>,
      *     NextToken?: string
      * } $args
      */

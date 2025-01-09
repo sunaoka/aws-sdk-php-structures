@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $taskId
  * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED'|'CANCELED'|'SKIPPED'|'PENDING' $actionStatus
  * @property string $findingId
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property string $nextToken
  */
 class ListAuditMitigationActionsExecutionsRequest extends Request
@@ -18,7 +18,7 @@ class ListAuditMitigationActionsExecutionsRequest extends Request
      *     taskId: string,
      *     actionStatus?: 'IN_PROGRESS'|'COMPLETED'|'FAILED'|'CANCELED'|'SKIPPED'|'PENDING',
      *     findingId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     nextToken?: string
      * } $args
      */

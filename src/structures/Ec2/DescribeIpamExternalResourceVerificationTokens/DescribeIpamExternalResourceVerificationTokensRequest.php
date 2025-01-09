@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property list<string> $IpamExternalResourceVerificationTokenIds
  */
 class DescribeIpamExternalResourceVerificationTokensRequest extends Request
@@ -18,7 +18,7 @@ class DescribeIpamExternalResourceVerificationTokensRequest extends Request
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     IpamExternalResourceVerificationTokenIds?: list<string>
      * } $args
      */

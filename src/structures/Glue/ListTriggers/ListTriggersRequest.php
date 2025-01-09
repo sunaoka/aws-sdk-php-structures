@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $NextToken
  * @property string $DependentJobName
- * @property int $MaxResults
+ * @property int<1, 200> $MaxResults
  * @property array<string, string> $Tags
  */
 class ListTriggersRequest extends Request
@@ -16,7 +16,7 @@ class ListTriggersRequest extends Request
      * @param array{
      *     NextToken?: string,
      *     DependentJobName?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 200>,
      *     Tags?: array<string, string>
      * } $args
      */

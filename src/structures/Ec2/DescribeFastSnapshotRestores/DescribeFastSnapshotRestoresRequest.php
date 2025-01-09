@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<0, 200> $MaxResults
  * @property string $NextToken
  * @property bool $DryRun
  */
@@ -15,7 +15,7 @@ class DescribeFastSnapshotRestoresRequest extends Request
     /**
      * @param array{
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 200>,
      *     NextToken?: string,
      *     DryRun?: bool
      * } $args

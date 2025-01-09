@@ -11,11 +11,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'CREATING'|'AVAILABLE'|'DELETING'|'RESETTING'|'UPDATING'|'SNAPSHOTTING'|'FAILED'|'IMPORTING' $status
  * @property string $statusReason
  * @property \Aws\Api\DateTimeResult $createTime
- * @property int $provisionedMemory
+ * @property int<16, 24576> $provisionedMemory
  * @property string $endpoint
  * @property bool $publicConnectivity
  * @property Shapes\VectorSearchConfiguration $vectorSearchConfiguration
- * @property int $replicaCount
+ * @property int<0, 2> $replicaCount
  * @property string $kmsKeyIdentifier
  * @property string $sourceSnapshotId
  * @property bool $deletionProtection

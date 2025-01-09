@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $VolumeARN
- * @property int $StartAt
- * @property int $RecurrenceInHours
+ * @property int<0, 23> $StartAt
+ * @property int<1, 24> $RecurrenceInHours
  * @property string $Description
  * @property string $Timezone
  * @property list<Shapes\Tag> $Tags

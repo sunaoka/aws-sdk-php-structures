@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $eventTimestampGTE
  * @property \Aws\Api\DateTimeResult $eventTimestampLTE
  * @property string $identifier
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nextToken
  * @property 'ASCENDING'|'DESCENDING' $sortOrder
  */
@@ -23,7 +23,7 @@ class ListLineageNodeHistoryRequest extends Request
      *     eventTimestampGTE?: \Aws\Api\DateTimeResult,
      *     eventTimestampLTE?: \Aws\Api\DateTimeResult,
      *     identifier: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nextToken?: string,
      *     sortOrder?: 'ASCENDING'|'DESCENDING'
      * } $args

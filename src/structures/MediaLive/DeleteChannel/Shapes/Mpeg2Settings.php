@@ -12,10 +12,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISPLAYRATIO16X9'|'DISPLAYRATIO4X3' $DisplayAspectRatio
  * @property Mpeg2FilterSettings $FilterSettings
  * @property 'AFD_0000'|'AFD_0010'|'AFD_0011'|'AFD_0100'|'AFD_1000'|'AFD_1001'|'AFD_1010'|'AFD_1011'|'AFD_1101'|'AFD_1110'|'AFD_1111' $FixedAfd
- * @property int $FramerateDenominator
- * @property int $FramerateNumerator
- * @property int $GopClosedCadence
- * @property int $GopNumBFrames
+ * @property int<1, max> $FramerateDenominator
+ * @property int<1, max> $FramerateNumerator
+ * @property int<0, max> $GopClosedCadence
+ * @property int<0, 7> $GopNumBFrames
  * @property double $GopSize
  * @property 'FRAMES'|'SECONDS' $GopSizeUnits
  * @property 'INTERLACED'|'PROGRESSIVE' $ScanType
@@ -34,10 +34,10 @@ class Mpeg2Settings extends Shape
      *     DisplayAspectRatio?: 'DISPLAYRATIO16X9'|'DISPLAYRATIO4X3',
      *     FilterSettings?: Mpeg2FilterSettings,
      *     FixedAfd?: 'AFD_0000'|'AFD_0010'|'AFD_0011'|'AFD_0100'|'AFD_1000'|'AFD_1001'|'AFD_1010'|'AFD_1011'|'AFD_1101'|'AFD_1110'|'AFD_1111',
-     *     FramerateDenominator: int,
-     *     FramerateNumerator: int,
-     *     GopClosedCadence?: int,
-     *     GopNumBFrames?: int,
+     *     FramerateDenominator: int<1, max>,
+     *     FramerateNumerator: int<1, max>,
+     *     GopClosedCadence?: int<0, max>,
+     *     GopNumBFrames?: int<0, 7>,
      *     GopSize?: double,
      *     GopSizeUnits?: 'FRAMES'|'SECONDS',
      *     ScanType?: 'INTERLACED'|'PROGRESSIVE',

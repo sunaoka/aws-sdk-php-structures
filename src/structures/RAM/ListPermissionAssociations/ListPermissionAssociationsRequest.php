@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD' $featureSet
  * @property bool $defaultVersion
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 500> $maxResults
  */
 class ListPermissionAssociationsRequest extends Request
 {
@@ -25,7 +25,7 @@ class ListPermissionAssociationsRequest extends Request
      *     featureSet?: 'CREATED_FROM_POLICY'|'PROMOTING_TO_STANDARD'|'STANDARD',
      *     defaultVersion?: bool,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 500>
      * } $args
      */
     public function __construct(array $args = [])

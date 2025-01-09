@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AxleCount
- * @property int $TrailerCount
+ * @property int<1, max> $AxleCount
+ * @property int<1, 255> $TrailerCount
  */
 class RouteTrailerOptions extends Shape
 {
     /**
      * @param array{
-     *     AxleCount?: int,
-     *     TrailerCount?: int
+     *     AxleCount?: int<1, max>,
+     *     TrailerCount?: int<1, 255>
      * } $args
      */
     public function __construct(array $args = [])

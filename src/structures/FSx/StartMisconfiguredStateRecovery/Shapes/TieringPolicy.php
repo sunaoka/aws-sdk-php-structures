@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FSx\StartMisconfiguredStateRecovery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CoolingPeriod
+ * @property int<2, 183> $CoolingPeriod
  * @property 'SNAPSHOT_ONLY'|'AUTO'|'ALL'|'NONE' $Name
  */
 class TieringPolicy extends Shape
 {
     /**
      * @param array{
-     *     CoolingPeriod?: int,
+     *     CoolingPeriod?: int<2, 183>,
      *     Name?: 'SNAPSHOT_ONLY'|'AUTO'|'ALL'|'NONE'
      * } $args
      */

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'Associated'|'Associating'|'Failed'|'Disassociating'|'Disassociated'> $States
  * @property list<string> $Names
  * @property list<string> $Owners
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListRepositoryAssociationsRequest extends Request
@@ -20,7 +20,7 @@ class ListRepositoryAssociationsRequest extends Request
      *     States?: list<'Associated'|'Associating'|'Failed'|'Disassociating'|'Disassociated'>,
      *     Names?: list<string>,
      *     Owners?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

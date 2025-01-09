@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTWireless\CreateWirelessDevice\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ClockSync
- * @property int $Stream
- * @property int $Gnss
+ * @property int<1, 223> $ClockSync
+ * @property int<1, 223> $Stream
+ * @property int<1, 223> $Gnss
  */
 class Positioning extends Shape
 {
     /**
      * @param array{
-     *     ClockSync?: int,
-     *     Stream?: int,
-     *     Gnss?: int
+     *     ClockSync?: int<1, 223>,
+     *     Stream?: int<1, 223>,
+     *     Gnss?: int<1, 223>
      * } $args
      */
     public function __construct(array $args = [])

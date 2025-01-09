@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProjectVersionArn
- * @property int $MinInferenceUnits
- * @property int $MaxInferenceUnits
+ * @property int<1, max> $MinInferenceUnits
+ * @property int<1, max> $MaxInferenceUnits
  */
 class StartProjectVersionRequest extends Request
 {
     /**
      * @param array{
      *     ProjectVersionArn: string,
-     *     MinInferenceUnits: int,
-     *     MaxInferenceUnits?: int
+     *     MinInferenceUnits: int<1, max>,
+     *     MaxInferenceUnits?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

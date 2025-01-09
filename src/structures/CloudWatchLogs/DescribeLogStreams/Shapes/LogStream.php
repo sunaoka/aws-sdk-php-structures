@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $logStreamName
- * @property int $creationTime
- * @property int $firstEventTimestamp
- * @property int $lastEventTimestamp
- * @property int $lastIngestionTime
+ * @property int<0, max> $creationTime
+ * @property int<0, max> $firstEventTimestamp
+ * @property int<0, max> $lastEventTimestamp
+ * @property int<0, max> $lastIngestionTime
  * @property string $uploadSequenceToken
  * @property string $arn
- * @property int $storedBytes
+ * @property int<0, max> $storedBytes
  */
 class LogStream extends Shape
 {
     /**
      * @param array{
      *     logStreamName?: string,
-     *     creationTime?: int,
-     *     firstEventTimestamp?: int,
-     *     lastEventTimestamp?: int,
-     *     lastIngestionTime?: int,
+     *     creationTime?: int<0, max>,
+     *     firstEventTimestamp?: int<0, max>,
+     *     lastEventTimestamp?: int<0, max>,
+     *     lastIngestionTime?: int<0, max>,
      *     uploadSequenceToken?: string,
      *     arn?: string,
-     *     storedBytes?: int
+     *     storedBytes?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

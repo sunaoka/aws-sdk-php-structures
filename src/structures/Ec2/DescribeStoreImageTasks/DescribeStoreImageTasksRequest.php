@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 200> $MaxResults
  */
 class DescribeStoreImageTasksRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeStoreImageTasksRequest extends Request
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 200>
      * } $args
      */
     public function __construct(array $args = [])

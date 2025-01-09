@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $OutputS3KeyPrefix
  * @property array<string, list<string>> $Parameters
  * @property string $ServiceRoleArn
- * @property int $TimeoutSeconds
+ * @property int<30, 2592000> $TimeoutSeconds
  */
 class MaintenanceWindowRunCommandParameters extends Shape
 {
@@ -31,7 +31,7 @@ class MaintenanceWindowRunCommandParameters extends Shape
      *     OutputS3KeyPrefix?: string,
      *     Parameters?: array<string, list<string>>,
      *     ServiceRoleArn?: string,
-     *     TimeoutSeconds?: int
+     *     TimeoutSeconds?: int<30, 2592000>
      * } $args
      */
     public function __construct(array $args = [])

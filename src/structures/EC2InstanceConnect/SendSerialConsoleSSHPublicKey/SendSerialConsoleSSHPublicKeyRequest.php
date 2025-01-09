@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property int $SerialPort
+ * @property int<0, 0> $SerialPort
  * @property string $SSHPublicKey
  */
 class SendSerialConsoleSSHPublicKeyRequest extends Request
@@ -14,7 +14,7 @@ class SendSerialConsoleSSHPublicKeyRequest extends Request
     /**
      * @param array{
      *     InstanceId: string,
-     *     SerialPort?: int,
+     *     SerialPort?: int<0, 0>,
      *     SSHPublicKey: string
      * } $args
      */

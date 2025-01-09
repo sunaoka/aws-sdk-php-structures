@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 1024> $MaxResults
  */
 class ListRotationShiftsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListRotationShiftsRequest extends Request
      *     StartTime?: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<0, 1024>
      * } $args
      */
     public function __construct(array $args)

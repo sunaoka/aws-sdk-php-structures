@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourceRefContains
  * @property bool $HasErrors
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListDatasetEntriesRequest extends Request
 {
@@ -23,7 +23,7 @@ class ListDatasetEntriesRequest extends Request
      *     SourceRefContains?: string,
      *     HasErrors?: bool,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

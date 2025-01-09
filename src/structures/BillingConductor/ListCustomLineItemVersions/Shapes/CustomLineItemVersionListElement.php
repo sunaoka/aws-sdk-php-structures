@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $BillingGroupArn
  * @property int $CreationTime
  * @property int $LastModifiedTime
- * @property int $AssociationSize
+ * @property int<0, max> $AssociationSize
  * @property string $StartBillingPeriod
  * @property string $EndBillingPeriod
  * @property string $Arn
@@ -32,7 +32,7 @@ class CustomLineItemVersionListElement extends Shape
      *     BillingGroupArn?: string,
      *     CreationTime?: int,
      *     LastModifiedTime?: int,
-     *     AssociationSize?: int,
+     *     AssociationSize?: int<0, max>,
      *     StartBillingPeriod?: string,
      *     EndBillingPeriod?: string,
      *     Arn?: string,

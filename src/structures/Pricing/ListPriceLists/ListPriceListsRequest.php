@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RegionCode
  * @property string $CurrencyCode
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListPriceListsRequest extends Request
 {
@@ -21,7 +21,7 @@ class ListPriceListsRequest extends Request
      *     RegionCode?: string,
      *     CurrencyCode: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

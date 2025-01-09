@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SecurityLake\UpdateDataLake\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $days
+ * @property int<1, max> $days
  * @property string $storageClass
  */
 class DataLakeLifecycleTransition extends Shape
 {
     /**
      * @param array{
-     *     days?: int,
+     *     days?: int<1, max>,
      *     storageClass?: string
      * } $args
      */

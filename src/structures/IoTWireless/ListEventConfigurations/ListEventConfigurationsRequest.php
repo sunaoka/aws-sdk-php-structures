@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'FuotaTask'|'SidewalkAccount'|'WirelessDevice'|'WirelessGateway' $ResourceType
- * @property int $MaxResults
+ * @property int<0, 250> $MaxResults
  * @property string $NextToken
  */
 class ListEventConfigurationsRequest extends Request
@@ -14,7 +14,7 @@ class ListEventConfigurationsRequest extends Request
     /**
      * @param array{
      *     ResourceType: 'FuotaTask'|'SidewalkAccount'|'WirelessDevice'|'WirelessGateway',
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 250>,
      *     NextToken?: string
      * } $args
      */

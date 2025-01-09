@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Target
- * @property int $Interval
- * @property int $Timeout
- * @property int $UnhealthyThreshold
- * @property int $HealthyThreshold
+ * @property int<5, 300> $Interval
+ * @property int<2, 60> $Timeout
+ * @property int<2, 10> $UnhealthyThreshold
+ * @property int<2, 10> $HealthyThreshold
  */
 class HealthCheck extends Shape
 {
     /**
      * @param array{
      *     Target: string,
-     *     Interval: int,
-     *     Timeout: int,
-     *     UnhealthyThreshold: int,
-     *     HealthyThreshold: int
+     *     Interval: int<5, 300>,
+     *     Timeout: int<2, 60>,
+     *     UnhealthyThreshold: int<2, 10>,
+     *     HealthyThreshold: int<2, 10>
      * } $args
      */
     public function __construct(array $args)

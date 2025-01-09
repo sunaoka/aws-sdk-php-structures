@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property EsamManifestConfirmConditionNotification $ManifestConfirmConditionNotification
- * @property int $ResponseSignalPreroll
+ * @property int<0, 30000> $ResponseSignalPreroll
  * @property EsamSignalProcessingNotification $SignalProcessingNotification
  */
 class EsamSettings extends Shape
@@ -14,7 +14,7 @@ class EsamSettings extends Shape
     /**
      * @param array{
      *     ManifestConfirmConditionNotification?: EsamManifestConfirmConditionNotification,
-     *     ResponseSignalPreroll?: int,
+     *     ResponseSignalPreroll?: int<0, 30000>,
      *     SignalProcessingNotification?: EsamSignalProcessingNotification
      * } $args
      */

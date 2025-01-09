@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Description
  * @property bool $Enabled
- * @property int $Duration
- * @property int $Cutoff
+ * @property int<1, 24> $Duration
+ * @property int<0, 23> $Cutoff
  * @property string $Schedule
  * @property string $ScheduleTimezone
- * @property int $ScheduleOffset
+ * @property int<1, 6> $ScheduleOffset
  * @property string $EndDate
  * @property string $StartDate
  * @property string $NextExecutionTime
@@ -26,11 +26,11 @@ class MaintenanceWindowIdentity extends Shape
      *     Name?: string,
      *     Description?: string,
      *     Enabled?: bool,
-     *     Duration?: int,
-     *     Cutoff?: int,
+     *     Duration?: int<1, 24>,
+     *     Cutoff?: int<0, 23>,
      *     Schedule?: string,
      *     ScheduleTimezone?: string,
-     *     ScheduleOffset?: int,
+     *     ScheduleOffset?: int<1, 6>,
      *     EndDate?: string,
      *     StartDate?: string,
      *     NextExecutionTime?: string

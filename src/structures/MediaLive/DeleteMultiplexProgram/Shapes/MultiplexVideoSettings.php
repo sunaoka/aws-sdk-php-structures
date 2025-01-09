@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaLive\DeleteMultiplexProgram\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ConstantBitrate
+ * @property int<100000, 100000000> $ConstantBitrate
  * @property MultiplexStatmuxVideoSettings $StatmuxSettings
  */
 class MultiplexVideoSettings extends Shape
 {
     /**
      * @param array{
-     *     ConstantBitrate?: int,
+     *     ConstantBitrate?: int<100000, 100000000>,
      *     StatmuxSettings?: MultiplexStatmuxVideoSettings
      * } $args
      */

@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $stateDetails
  * @property string $releaseLabel
  * @property string $type
- * @property int $attempt
+ * @property int<1, max> $attempt
  * @property \Aws\Api\DateTimeResult $attemptCreatedAt
  * @property \Aws\Api\DateTimeResult $attemptUpdatedAt
  */
@@ -39,7 +39,7 @@ class JobRunSummary extends Shape
      *     stateDetails: string,
      *     releaseLabel: string,
      *     type?: string,
-     *     attempt?: int,
+     *     attempt?: int<1, max>,
      *     attemptCreatedAt?: \Aws\Api\DateTimeResult,
      *     attemptUpdatedAt?: \Aws\Api\DateTimeResult
      * } $args

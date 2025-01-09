@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $clusterName
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListFargateProfilesRequest extends Request
@@ -14,7 +14,7 @@ class ListFargateProfilesRequest extends Request
     /**
      * @param array{
      *     clusterName: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Textract\GetLendingAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ExpenseIndex
+ * @property int<0, max> $ExpenseIndex
  * @property list<ExpenseField> $SummaryFields
  * @property list<LineItemGroup> $LineItemGroups
  * @property list<Block> $Blocks
@@ -14,7 +14,7 @@ class ExpenseDocument extends Shape
 {
     /**
      * @param array{
-     *     ExpenseIndex?: int,
+     *     ExpenseIndex?: int<0, max>,
      *     SummaryFields?: list<ExpenseField>,
      *     LineItemGroups?: list<LineItemGroup>,
      *     Blocks?: list<Block>

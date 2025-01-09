@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReservedElasticsearchInstanceOfferingId
- * @property int $MaxResults
+ * @property int<min, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeReservedElasticsearchInstanceOfferingsRequest extends Request
@@ -14,7 +14,7 @@ class DescribeReservedElasticsearchInstanceOfferingsRequest extends Request
     /**
      * @param array{
      *     ReservedElasticsearchInstanceOfferingId?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<min, 100>,
      *     NextToken?: string
      * } $args
      */

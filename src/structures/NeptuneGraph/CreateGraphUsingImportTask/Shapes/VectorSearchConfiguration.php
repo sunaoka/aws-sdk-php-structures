@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\NeptuneGraph\CreateGraphUsingImportTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $dimension
+ * @property int<1, 65536> $dimension
  */
 class VectorSearchConfiguration extends Shape
 {
     /**
-     * @param array{dimension: int} $args
+     * @param array{dimension: int<1, 65536>} $args
      */
     public function __construct(array $args)
     {

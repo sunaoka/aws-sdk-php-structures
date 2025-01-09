@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $EngineVersion
  * @property string $DomainName
- * @property int $MaxResults
+ * @property int<min, 100> $MaxResults
  * @property string $NextToken
  * @property bool $RetrieveAZs
  * @property string $InstanceType
@@ -18,7 +18,7 @@ class ListInstanceTypeDetailsRequest extends Request
      * @param array{
      *     EngineVersion: string,
      *     DomainName?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<min, 100>,
      *     NextToken?: string,
      *     RetrieveAZs?: bool,
      *     InstanceType?: string

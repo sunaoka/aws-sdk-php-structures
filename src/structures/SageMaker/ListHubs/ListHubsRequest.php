@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $LastModifiedTimeAfter
  * @property 'HubName'|'CreationTime'|'HubStatus'|'AccountIdOwner' $SortBy
  * @property 'Ascending'|'Descending' $SortOrder
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListHubsRequest extends Request
@@ -26,7 +26,7 @@ class ListHubsRequest extends Request
      *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult,
      *     SortBy?: 'HubName'|'CreationTime'|'HubStatus'|'AccountIdOwner',
      *     SortOrder?: 'Ascending'|'Descending',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'hours'|'minutes'|'seconds'|'milliseconds' $durationType
- * @property int $value
+ * @property int<0, max> $value
  */
 class Duration extends Shape
 {
     /**
      * @param array{
      *     durationType: 'hours'|'minutes'|'seconds'|'milliseconds',
-     *     value: int
+     *     value: int<0, max>
      * } $args
      */
     public function __construct(array $args)

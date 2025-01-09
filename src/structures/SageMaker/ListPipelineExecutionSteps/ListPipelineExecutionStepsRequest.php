@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $PipelineExecutionArn
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'Ascending'|'Descending' $SortOrder
  */
 class ListPipelineExecutionStepsRequest extends Request
@@ -16,7 +16,7 @@ class ListPipelineExecutionStepsRequest extends Request
      * @param array{
      *     PipelineExecutionArn?: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     SortOrder?: 'Ascending'|'Descending'
      * } $args
      */

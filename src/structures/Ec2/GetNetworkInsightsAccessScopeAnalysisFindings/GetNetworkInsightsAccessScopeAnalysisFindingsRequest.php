@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NetworkInsightsAccessScopeAnalysisId
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  * @property bool $DryRun
  */
@@ -15,7 +15,7 @@ class GetNetworkInsightsAccessScopeAnalysisFindingsRequest extends Request
     /**
      * @param array{
      *     NetworkInsightsAccessScopeAnalysisId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string,
      *     DryRun?: bool
      * } $args

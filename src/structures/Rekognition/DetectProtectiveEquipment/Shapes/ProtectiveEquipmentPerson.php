@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<ProtectiveEquipmentBodyPart> $BodyParts
  * @property BoundingBox $BoundingBox
  * @property float $Confidence
- * @property int $Id
+ * @property int<0, max> $Id
  */
 class ProtectiveEquipmentPerson extends Shape
 {
@@ -17,7 +17,7 @@ class ProtectiveEquipmentPerson extends Shape
      *     BodyParts?: list<ProtectiveEquipmentBodyPart>,
      *     BoundingBox?: BoundingBox,
      *     Confidence?: float,
-     *     Id?: int
+     *     Id?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $ShowSpeakerLabels
- * @property int $MaxSpeakerLabels
+ * @property int<2, 30> $MaxSpeakerLabels
  * @property bool $ChannelIdentification
  * @property string $VocabularyName
  * @property string $VocabularyFilterName
@@ -17,7 +17,7 @@ class MedicalScribeSettings extends Shape
     /**
      * @param array{
      *     ShowSpeakerLabels?: bool,
-     *     MaxSpeakerLabels?: int,
+     *     MaxSpeakerLabels?: int<2, 30>,
      *     ChannelIdentification?: bool,
      *     VocabularyName?: string,
      *     VocabularyFilterName?: string,

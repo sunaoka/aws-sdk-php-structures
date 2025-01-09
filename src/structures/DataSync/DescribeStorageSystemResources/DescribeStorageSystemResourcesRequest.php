@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SVM'|'VOLUME'|'CLUSTER' $ResourceType
  * @property list<string> $ResourceIds
  * @property array<'SVM', list<string>> $Filter
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeStorageSystemResourcesRequest extends Request
@@ -20,7 +20,7 @@ class DescribeStorageSystemResourcesRequest extends Request
      *     ResourceType: 'SVM'|'VOLUME'|'CLUSTER',
      *     ResourceIds?: list<string>,
      *     Filter?: array<'SVM', list<string>>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

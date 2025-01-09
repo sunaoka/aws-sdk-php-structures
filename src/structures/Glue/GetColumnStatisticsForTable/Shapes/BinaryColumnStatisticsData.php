@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\GetColumnStatisticsForTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaximumLength
+ * @property int<0, max> $MaximumLength
  * @property double $AverageLength
- * @property int $NumberOfNulls
+ * @property int<0, max> $NumberOfNulls
  */
 class BinaryColumnStatisticsData extends Shape
 {
     /**
      * @param array{
-     *     MaximumLength: int,
+     *     MaximumLength: int<0, max>,
      *     AverageLength: double,
-     *     NumberOfNulls: int
+     *     NumberOfNulls: int<0, max>
      * } $args
      */
     public function __construct(array $args)

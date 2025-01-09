@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ChimeBearer
  * @property list<Shapes\SearchField> $Fields
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class SearchChannelsRequest extends Request
@@ -16,7 +16,7 @@ class SearchChannelsRequest extends Request
      * @param array{
      *     ChimeBearer?: string,
      *     Fields: list<Shapes\SearchField>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

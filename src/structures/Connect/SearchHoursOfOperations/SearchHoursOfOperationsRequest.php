@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property Shapes\HoursOfOperationSearchFilter $SearchFilter
  * @property Shapes\HoursOfOperationSearchCriteria $SearchCriteria
  */
@@ -17,7 +17,7 @@ class SearchHoursOfOperationsRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     SearchFilter?: Shapes\HoursOfOperationSearchFilter,
      *     SearchCriteria?: Shapes\HoursOfOperationSearchCriteria
      * } $args

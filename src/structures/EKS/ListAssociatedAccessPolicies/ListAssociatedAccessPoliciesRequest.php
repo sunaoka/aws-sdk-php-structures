@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $clusterName
  * @property string $principalArn
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListAssociatedAccessPoliciesRequest extends Request
@@ -16,7 +16,7 @@ class ListAssociatedAccessPoliciesRequest extends Request
      * @param array{
      *     clusterName: string,
      *     principalArn: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

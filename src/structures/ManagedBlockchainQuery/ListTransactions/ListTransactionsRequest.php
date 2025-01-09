@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\BlockchainInstant $toBlockchainInstant
  * @property Shapes\ListTransactionsSort $sort
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property Shapes\ConfirmationStatusFilter $confirmationStatusFilter
  */
 class ListTransactionsRequest extends Request
@@ -24,7 +24,7 @@ class ListTransactionsRequest extends Request
      *     toBlockchainInstant?: Shapes\BlockchainInstant,
      *     sort?: Shapes\ListTransactionsSort,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     confirmationStatusFilter?: Shapes\ConfirmationStatusFilter
      * } $args
      */

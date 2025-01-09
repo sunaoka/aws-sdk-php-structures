@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TableArn
- * @property int $MaxResults
+ * @property int<1, 25> $MaxResults
  * @property string $NextToken
  */
 class ListExportsRequest extends Request
@@ -14,7 +14,7 @@ class ListExportsRequest extends Request
     /**
      * @param array{
      *     TableArn?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 25>,
      *     NextToken?: string
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domain
  * @property string $domainOwner
  * @property string $packageGroup
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property bool $preview
  */
@@ -19,7 +19,7 @@ class ListAssociatedPackagesRequest extends Request
      *     domain: string,
      *     domainOwner?: string,
      *     packageGroup: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     preview?: bool
      * } $args

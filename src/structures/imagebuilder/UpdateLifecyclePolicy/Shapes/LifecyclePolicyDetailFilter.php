@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'AGE'|'COUNT' $type
- * @property int $value
+ * @property int<1, 1000> $value
  * @property 'DAYS'|'WEEKS'|'MONTHS'|'YEARS' $unit
- * @property int $retainAtLeast
+ * @property int<1, 10> $retainAtLeast
  */
 class LifecyclePolicyDetailFilter extends Shape
 {
     /**
      * @param array{
      *     type: 'AGE'|'COUNT',
-     *     value: int,
+     *     value: int<1, 1000>,
      *     unit?: 'DAYS'|'WEEKS'|'MONTHS'|'YEARS',
-     *     retainAtLeast?: int
+     *     retainAtLeast?: int<1, 10>
      * } $args
      */
     public function __construct(array $args)

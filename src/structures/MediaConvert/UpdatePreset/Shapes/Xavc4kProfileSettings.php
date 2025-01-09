@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'HIGH'|'HIGH_422' $CodecProfile
  * @property 'DISABLED'|'ENABLED' $FlickerAdaptiveQuantization
  * @property 'DISABLED'|'ENABLED' $GopBReference
- * @property int $GopClosedCadence
- * @property int $HrdBufferSize
+ * @property int<0, 2147483647> $GopClosedCadence
+ * @property int<0, 1152000000> $HrdBufferSize
  * @property 'SINGLE_PASS'|'SINGLE_PASS_HQ'|'MULTI_PASS_HQ' $QualityTuningLevel
- * @property int $Slices
+ * @property int<8, 12> $Slices
  */
 class Xavc4kProfileSettings extends Shape
 {
@@ -22,10 +22,10 @@ class Xavc4kProfileSettings extends Shape
      *     CodecProfile?: 'HIGH'|'HIGH_422',
      *     FlickerAdaptiveQuantization?: 'DISABLED'|'ENABLED',
      *     GopBReference?: 'DISABLED'|'ENABLED',
-     *     GopClosedCadence?: int,
-     *     HrdBufferSize?: int,
+     *     GopClosedCadence?: int<0, 2147483647>,
+     *     HrdBufferSize?: int<0, 1152000000>,
      *     QualityTuningLevel?: 'SINGLE_PASS'|'SINGLE_PASS_HQ'|'MULTI_PASS_HQ',
-     *     Slices?: int
+     *     Slices?: int<8, 12>
      * } $args
      */
     public function __construct(array $args = [])

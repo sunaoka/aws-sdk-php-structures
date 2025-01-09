@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ParticipantId
  * @property string $ParticipantRole
  * @property string $Content
- * @property int $BeginOffsetMillis
- * @property int $EndOffsetMillis
+ * @property int<0, max> $BeginOffsetMillis
+ * @property int<0, max> $EndOffsetMillis
  * @property 'POSITIVE'|'NEUTRAL'|'NEGATIVE' $Sentiment
  * @property list<IssueDetected> $IssuesDetected
  */
@@ -22,8 +22,8 @@ class Transcript extends Shape
      *     ParticipantId: string,
      *     ParticipantRole: string,
      *     Content: string,
-     *     BeginOffsetMillis: int,
-     *     EndOffsetMillis: int,
+     *     BeginOffsetMillis: int<0, max>,
+     *     EndOffsetMillis: int<0, max>,
      *     Sentiment: 'POSITIVE'|'NEUTRAL'|'NEGATIVE',
      *     IssuesDetected?: list<IssueDetected>
      * } $args

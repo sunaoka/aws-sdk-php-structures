@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Catalog
  * @property list<Shapes\Filter> $FilterList
  * @property Shapes\Sort $Sort
- * @property int $MaxResults
+ * @property int<1, 20> $MaxResults
  * @property string $NextToken
  */
 class ListChangeSetsRequest extends Request
@@ -18,7 +18,7 @@ class ListChangeSetsRequest extends Request
      *     Catalog: string,
      *     FilterList?: list<Shapes\Filter>,
      *     Sort?: Shapes\Sort,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 20>,
      *     NextToken?: string
      * } $args
      */

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $title
  * @property string $description
  * @property string $initialPrompt
- * @property int $appVersion
+ * @property int<0, 2147483647> $appVersion
  * @property 'PUBLISHED'|'DRAFT'|'DELETED' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy

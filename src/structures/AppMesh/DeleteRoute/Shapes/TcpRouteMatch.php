@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $port
+ * @property int<1, 65535> $port
  */
 class TcpRouteMatch extends Shape
 {
     /**
-     * @param array{port?: int} $args
+     * @param array{port?: int<1, 65535>} $args
      */
     public function __construct(array $args = [])
     {

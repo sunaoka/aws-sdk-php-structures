@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AccountId
- * @property int $MaxResults
+ * @property int<1, 99> $MaxResults
  * @property string $NextToken
  */
 class ListBotsRequest extends Request
@@ -14,7 +14,7 @@ class ListBotsRequest extends Request
     /**
      * @param array{
      *     AccountId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 99>,
      *     NextToken?: string
      * } $args
      */

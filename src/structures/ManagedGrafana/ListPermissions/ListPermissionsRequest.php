@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $groupId
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property string $userId
  * @property 'SSO_USER'|'SSO_GROUP' $userType
@@ -17,7 +17,7 @@ class ListPermissionsRequest extends Request
     /**
      * @param array{
      *     groupId?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     userId?: string,
      *     userType?: 'SSO_USER'|'SSO_GROUP',

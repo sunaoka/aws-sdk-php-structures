@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property GrpcRoute $grpcRoute
  * @property HttpRoute $http2Route
  * @property HttpRoute $httpRoute
- * @property int $priority
+ * @property int<0, 1000> $priority
  * @property TcpRoute $tcpRoute
  */
 class RouteSpec extends Shape
@@ -18,7 +18,7 @@ class RouteSpec extends Shape
      *     grpcRoute?: GrpcRoute,
      *     http2Route?: HttpRoute,
      *     httpRoute?: HttpRoute,
-     *     priority?: int,
+     *     priority?: int<0, 1000>,
      *     tcpRoute?: TcpRoute
      * } $args
      */

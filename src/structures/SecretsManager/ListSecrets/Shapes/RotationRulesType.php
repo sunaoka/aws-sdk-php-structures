@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecretsManager\ListSecrets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AutomaticallyAfterDays
+ * @property int<1, 1000> $AutomaticallyAfterDays
  * @property string $Duration
  * @property string $ScheduleExpression
  */
@@ -13,7 +13,7 @@ class RotationRulesType extends Shape
 {
     /**
      * @param array{
-     *     AutomaticallyAfterDays?: int,
+     *     AutomaticallyAfterDays?: int<1, 1000>,
      *     Duration?: string,
      *     ScheduleExpression?: string
      * } $args

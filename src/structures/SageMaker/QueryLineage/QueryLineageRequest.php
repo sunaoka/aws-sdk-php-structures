@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Both'|'Ascendants'|'Descendants' $Direction
  * @property bool $IncludeEdges
  * @property Shapes\QueryFilters $Filters
- * @property int $MaxDepth
- * @property int $MaxResults
+ * @property int<min, 10> $MaxDepth
+ * @property int<min, 50> $MaxResults
  * @property string $NextToken
  */
 class QueryLineageRequest extends Request
@@ -21,8 +21,8 @@ class QueryLineageRequest extends Request
      *     Direction?: 'Both'|'Ascendants'|'Descendants',
      *     IncludeEdges?: bool,
      *     Filters?: Shapes\QueryFilters,
-     *     MaxDepth?: int,
-     *     MaxResults?: int,
+     *     MaxDepth?: int<min, 10>,
+     *     MaxResults?: int<min, 50>,
      *     NextToken?: string
      * } $args
      */

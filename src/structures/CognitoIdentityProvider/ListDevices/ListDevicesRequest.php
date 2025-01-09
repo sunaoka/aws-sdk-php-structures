@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AccessToken
- * @property int $Limit
+ * @property int<0, 60> $Limit
  * @property string $PaginationToken
  */
 class ListDevicesRequest extends Request
@@ -14,7 +14,7 @@ class ListDevicesRequest extends Request
     /**
      * @param array{
      *     AccessToken: string,
-     *     Limit?: int,
+     *     Limit?: int<0, 60>,
      *     PaginationToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ContentType
- * @property int $AttachmentSizeInBytes
+ * @property int<1, max> $AttachmentSizeInBytes
  * @property string $AttachmentName
  * @property string $ClientToken
  * @property string $ConnectionToken
@@ -16,7 +16,7 @@ class StartAttachmentUploadRequest extends Request
     /**
      * @param array{
      *     ContentType: string,
-     *     AttachmentSizeInBytes: int,
+     *     AttachmentSizeInBytes: int<1, max>,
      *     AttachmentName: string,
      *     ClientToken: string,
      *     ConnectionToken: string

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\PutAppInstanceUserExpirationSe
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ExpirationDays
+ * @property int<1, 5475> $ExpirationDays
  * @property 'CREATED_TIMESTAMP' $ExpirationCriterion
  */
 class ExpirationSettings extends Shape
 {
     /**
      * @param array{
-     *     ExpirationDays: int,
+     *     ExpirationDays: int<1, 5475>,
      *     ExpirationCriterion: 'CREATED_TIMESTAMP'
      * } $args
      */

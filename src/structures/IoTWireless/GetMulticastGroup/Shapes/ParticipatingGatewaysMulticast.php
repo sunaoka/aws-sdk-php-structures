@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $GatewayList
- * @property int $TransmissionInterval
+ * @property int<0, 60000> $TransmissionInterval
  */
 class ParticipatingGatewaysMulticast extends Shape
 {
     /**
      * @param array{
      *     GatewayList?: list<string>,
-     *     TransmissionInterval?: int
+     *     TransmissionInterval?: int<0, 60000>
      * } $args
      */
     public function __construct(array $args = [])

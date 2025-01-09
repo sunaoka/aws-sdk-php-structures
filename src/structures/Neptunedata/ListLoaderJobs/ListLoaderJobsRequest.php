@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Neptunedata\ListLoaderJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $limit
+ * @property int<1, 100> $limit
  * @property bool $includeQueuedLoads
  */
 class ListLoaderJobsRequest extends Request
 {
     /**
      * @param array{
-     *     limit?: int,
+     *     limit?: int<1, 100>,
      *     includeQueuedLoads?: bool
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TrustStoreArn
  * @property string $Marker
- * @property int $PageSize
+ * @property int<1, 400> $PageSize
  */
 class DescribeTrustStoreAssociationsRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeTrustStoreAssociationsRequest extends Request
      * @param array{
      *     TrustStoreArn: string,
      *     Marker?: string,
-     *     PageSize?: int
+     *     PageSize?: int<1, 400>
      * } $args
      */
     public function __construct(array $args)

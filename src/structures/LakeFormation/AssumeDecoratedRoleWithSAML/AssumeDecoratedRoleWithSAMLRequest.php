@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SAMLAssertion
  * @property string $RoleArn
  * @property string $PrincipalArn
- * @property int $DurationSeconds
+ * @property int<900, 43200> $DurationSeconds
  */
 class AssumeDecoratedRoleWithSAMLRequest extends Request
 {
@@ -17,7 +17,7 @@ class AssumeDecoratedRoleWithSAMLRequest extends Request
      *     SAMLAssertion: string,
      *     RoleArn: string,
      *     PrincipalArn: string,
-     *     DurationSeconds?: int
+     *     DurationSeconds?: int<900, 43200>
      * } $args
      */
     public function __construct(array $args)

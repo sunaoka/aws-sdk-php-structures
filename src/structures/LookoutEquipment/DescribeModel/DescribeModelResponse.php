@@ -29,16 +29,16 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $SourceModelVersionArn
  * @property \Aws\Api\DateTimeResult $ImportJobStartTime
  * @property \Aws\Api\DateTimeResult $ImportJobEndTime
- * @property int $ActiveModelVersion
+ * @property int<1, max> $ActiveModelVersion
  * @property string $ActiveModelVersionArn
  * @property \Aws\Api\DateTimeResult $ModelVersionActivatedAt
- * @property int $PreviousActiveModelVersion
+ * @property int<1, max> $PreviousActiveModelVersion
  * @property string $PreviousActiveModelVersionArn
  * @property \Aws\Api\DateTimeResult $PreviousModelVersionActivatedAt
  * @property string $PriorModelMetrics
  * @property string $LatestScheduledRetrainingFailedReason
  * @property 'IN_PROGRESS'|'SUCCESS'|'FAILED'|'IMPORT_IN_PROGRESS'|'CANCELED' $LatestScheduledRetrainingStatus
- * @property int $LatestScheduledRetrainingModelVersion
+ * @property int<1, max> $LatestScheduledRetrainingModelVersion
  * @property \Aws\Api\DateTimeResult $LatestScheduledRetrainingStartTime
  * @property int $LatestScheduledRetrainingAvailableDataInDays
  * @property \Aws\Api\DateTimeResult $NextScheduledRetrainingStartDate

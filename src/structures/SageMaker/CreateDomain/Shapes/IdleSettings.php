@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ENABLED'|'DISABLED' $LifecycleManagement
- * @property int $IdleTimeoutInMinutes
- * @property int $MinIdleTimeoutInMinutes
- * @property int $MaxIdleTimeoutInMinutes
+ * @property int<60, 525600> $IdleTimeoutInMinutes
+ * @property int<60, 525600> $MinIdleTimeoutInMinutes
+ * @property int<60, 525600> $MaxIdleTimeoutInMinutes
  */
 class IdleSettings extends Shape
 {
     /**
      * @param array{
      *     LifecycleManagement?: 'ENABLED'|'DISABLED',
-     *     IdleTimeoutInMinutes?: int,
-     *     MinIdleTimeoutInMinutes?: int,
-     *     MaxIdleTimeoutInMinutes?: int
+     *     IdleTimeoutInMinutes?: int<60, 525600>,
+     *     MinIdleTimeoutInMinutes?: int<60, 525600>,
+     *     MaxIdleTimeoutInMinutes?: int<60, 525600>
      * } $args
      */
     public function __construct(array $args = [])

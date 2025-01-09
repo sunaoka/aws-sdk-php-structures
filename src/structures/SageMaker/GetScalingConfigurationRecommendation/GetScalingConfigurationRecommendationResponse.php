@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $InferenceRecommendationsJobName
  * @property string $RecommendationId
  * @property string $EndpointName
- * @property int $TargetCpuUtilizationPerCore
+ * @property int<1, 100> $TargetCpuUtilizationPerCore
  * @property Shapes\ScalingPolicyObjective $ScalingPolicyObjective
  * @property Shapes\ScalingPolicyMetric $Metric
  * @property Shapes\DynamicScalingConfiguration $DynamicScalingConfiguration

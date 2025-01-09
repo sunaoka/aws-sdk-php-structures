@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property list<'USER'|'QUEUE'|'PHONE_NUMBER'> $QuickConnectTypes
  */
 class ListQuickConnectsRequest extends Request
@@ -16,7 +16,7 @@ class ListQuickConnectsRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     QuickConnectTypes?: list<'USER'|'QUEUE'|'PHONE_NUMBER'>
      * } $args
      */

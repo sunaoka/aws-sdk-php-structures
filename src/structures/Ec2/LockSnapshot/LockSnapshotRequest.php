@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SnapshotId
  * @property bool $DryRun
  * @property 'compliance'|'governance' $LockMode
- * @property int $CoolOffPeriod
- * @property int $LockDuration
+ * @property int<1, 72> $CoolOffPeriod
+ * @property int<1, 36500> $LockDuration
  * @property \Aws\Api\DateTimeResult $ExpirationDate
  */
 class LockSnapshotRequest extends Request
@@ -19,8 +19,8 @@ class LockSnapshotRequest extends Request
      *     SnapshotId: string,
      *     DryRun?: bool,
      *     LockMode: 'compliance'|'governance',
-     *     CoolOffPeriod?: int,
-     *     LockDuration?: int,
+     *     CoolOffPeriod?: int<1, 72>,
+     *     LockDuration?: int<1, 36500>,
      *     ExpirationDate?: \Aws\Api\DateTimeResult
      * } $args
      */

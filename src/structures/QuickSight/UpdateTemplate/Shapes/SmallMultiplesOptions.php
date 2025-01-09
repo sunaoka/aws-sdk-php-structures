@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxVisibleRows
- * @property int $MaxVisibleColumns
+ * @property int<1, 10> $MaxVisibleRows
+ * @property int<1, 10> $MaxVisibleColumns
  * @property PanelConfiguration $PanelConfiguration
  * @property SmallMultiplesAxisProperties $XAxis
  * @property SmallMultiplesAxisProperties $YAxis
@@ -15,8 +15,8 @@ class SmallMultiplesOptions extends Shape
 {
     /**
      * @param array{
-     *     MaxVisibleRows?: int,
-     *     MaxVisibleColumns?: int,
+     *     MaxVisibleRows?: int<1, 10>,
+     *     MaxVisibleColumns?: int<1, 10>,
      *     PanelConfiguration?: PanelConfiguration,
      *     XAxis?: SmallMultiplesAxisProperties,
      *     YAxis?: SmallMultiplesAxisProperties

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $MediaUrls
  * @property string $ConfigurationSetName
  * @property string $MaxPrice
- * @property int $TimeToLive
+ * @property int<5, 259200> $TimeToLive
  * @property array<string, string> $Context
  * @property bool $DryRun
  * @property string $ProtectConfigurationId
@@ -27,7 +27,7 @@ class SendMediaMessageRequest extends Request
      *     MediaUrls?: list<string>,
      *     ConfigurationSetName?: string,
      *     MaxPrice?: string,
-     *     TimeToLive?: int,
+     *     TimeToLive?: int<5, 259200>,
      *     Context?: array<string, string>,
      *     DryRun?: bool,
      *     ProtectConfigurationId?: string,

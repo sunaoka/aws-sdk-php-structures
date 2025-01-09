@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property \Aws\Api\DateTimeResult $imageScanCompletedAt
  * @property \Aws\Api\DateTimeResult $vulnerabilitySourceUpdatedAt
- * @property array<'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNDEFINED', int> $findingSeverityCounts
+ * @property array<'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNDEFINED', int<0, max>> $findingSeverityCounts
  * @property list<ImageScanFinding> $findings
  * @property list<EnhancedImageScanFinding> $enhancedFindings
  */
@@ -17,7 +17,7 @@ class ImageScanFindings extends Shape
      * @param array{
      *     imageScanCompletedAt?: \Aws\Api\DateTimeResult,
      *     vulnerabilitySourceUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     findingSeverityCounts?: array<'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNDEFINED', int>,
+     *     findingSeverityCounts?: array<'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNDEFINED', int<0, max>>,
      *     findings?: list<ImageScanFinding>,
      *     enhancedFindings?: list<EnhancedImageScanFinding>
      * } $args

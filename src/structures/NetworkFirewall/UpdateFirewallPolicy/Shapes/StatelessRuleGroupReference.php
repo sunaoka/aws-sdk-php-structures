@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ResourceArn
- * @property int $Priority
+ * @property int<1, 65535> $Priority
  */
 class StatelessRuleGroupReference extends Shape
 {
     /**
      * @param array{
      *     ResourceArn: string,
-     *     Priority: int
+     *     Priority: int<1, 65535>
      * } $args
      */
     public function __construct(array $args)

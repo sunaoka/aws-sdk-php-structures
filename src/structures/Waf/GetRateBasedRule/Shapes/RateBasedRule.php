@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $MetricName
  * @property list<Predicate> $MatchPredicates
  * @property 'IP' $RateKey
- * @property int $RateLimit
+ * @property int<100, 2000000000> $RateLimit
  */
 class RateBasedRule extends Shape
 {
@@ -21,7 +21,7 @@ class RateBasedRule extends Shape
      *     MetricName?: string,
      *     MatchPredicates: list<Predicate>,
      *     RateKey: 'IP',
-     *     RateLimit: int
+     *     RateLimit: int<100, 2000000000>
      * } $args
      */
     public function __construct(array $args)

@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Handler
  * @property int $CodeSize
  * @property string $Description
- * @property int $Timeout
- * @property int $MemorySize
+ * @property int<1, max> $Timeout
+ * @property int<128, 10240> $MemorySize
  * @property string $LastModified
  * @property string $CodeSha256
  * @property string $Version
@@ -53,8 +53,8 @@ class FunctionConfiguration extends Shape
      *     Handler?: string,
      *     CodeSize?: int,
      *     Description?: string,
-     *     Timeout?: int,
-     *     MemorySize?: int,
+     *     Timeout?: int<1, max>,
+     *     MemorySize?: int<128, 10240>,
      *     LastModified?: string,
      *     CodeSha256?: string,
      *     Version?: string,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\ActionTypeId $actionTypeId
- * @property int $maxBatchSize
+ * @property int<1, max> $maxBatchSize
  * @property array<string, string> $queryParam
  */
 class PollForJobsRequest extends Request
@@ -14,7 +14,7 @@ class PollForJobsRequest extends Request
     /**
      * @param array{
      *     actionTypeId: Shapes\ActionTypeId,
-     *     maxBatchSize?: int,
+     *     maxBatchSize?: int<1, max>,
      *     queryParam?: array<string, string>
      * } $args
      */

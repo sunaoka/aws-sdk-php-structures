@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OpenMonitoringInfo $OpenMonitoring
  * @property string $KafkaVersion
  * @property LoggingInfo $LoggingInfo
- * @property int $NumberOfBrokerNodes
+ * @property int<1, 15> $NumberOfBrokerNodes
  * @property 'LOCAL'|'TIERED' $StorageMode
  */
 class ProvisionedRequest extends Shape
@@ -28,7 +28,7 @@ class ProvisionedRequest extends Shape
      *     OpenMonitoring?: OpenMonitoringInfo,
      *     KafkaVersion: string,
      *     LoggingInfo?: LoggingInfo,
-     *     NumberOfBrokerNodes: int,
+     *     NumberOfBrokerNodes: int<1, 15>,
      *     StorageMode?: 'LOCAL'|'TIERED'
      * } $args
      */

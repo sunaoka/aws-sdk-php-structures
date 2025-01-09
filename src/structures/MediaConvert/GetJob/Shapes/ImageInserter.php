@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<InsertableImage> $InsertableImages
- * @property int $SdrReferenceWhiteLevel
+ * @property int<100, 1000> $SdrReferenceWhiteLevel
  */
 class ImageInserter extends Shape
 {
     /**
      * @param array{
      *     InsertableImages?: list<InsertableImage>,
-     *     SdrReferenceWhiteLevel?: int
+     *     SdrReferenceWhiteLevel?: int<100, 1000>
      * } $args
      */
     public function __construct(array $args = [])

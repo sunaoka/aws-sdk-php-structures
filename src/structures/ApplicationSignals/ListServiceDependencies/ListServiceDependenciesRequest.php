@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property array<string, string> $KeyAttributes
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListServiceDependenciesRequest extends Request
@@ -18,7 +18,7 @@ class ListServiceDependenciesRequest extends Request
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
      *     KeyAttributes: array<string, string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

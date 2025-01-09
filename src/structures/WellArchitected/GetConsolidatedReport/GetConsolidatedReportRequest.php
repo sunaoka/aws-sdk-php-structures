@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'PDF'|'JSON' $Format
  * @property bool $IncludeSharedResources
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 15> $MaxResults
  */
 class GetConsolidatedReportRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetConsolidatedReportRequest extends Request
      *     Format: 'PDF'|'JSON',
      *     IncludeSharedResources?: bool,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 15>
      * } $args
      */
     public function __construct(array $args)

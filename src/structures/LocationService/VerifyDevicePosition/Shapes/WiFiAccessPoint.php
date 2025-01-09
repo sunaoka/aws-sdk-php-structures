@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $MacAddress
- * @property int $Rss
+ * @property int<-128, 0> $Rss
  */
 class WiFiAccessPoint extends Shape
 {
     /**
      * @param array{
      *     MacAddress: string,
-     *     Rss: int
+     *     Rss: int<-128, 0>
      * } $args
      */
     public function __construct(array $args)

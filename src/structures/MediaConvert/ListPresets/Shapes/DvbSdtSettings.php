@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SDT_FOLLOW'|'SDT_FOLLOW_IF_PRESENT'|'SDT_MANUAL'|'SDT_NONE' $OutputSdt
- * @property int $SdtInterval
+ * @property int<25, 2000> $SdtInterval
  * @property string $ServiceName
  * @property string $ServiceProviderName
  */
@@ -15,7 +15,7 @@ class DvbSdtSettings extends Shape
     /**
      * @param array{
      *     OutputSdt?: 'SDT_FOLLOW'|'SDT_FOLLOW_IF_PRESENT'|'SDT_MANUAL'|'SDT_NONE',
-     *     SdtInterval?: int,
+     *     SdtInterval?: int<25, 2000>,
      *     ServiceName?: string,
      *     ServiceProviderName?: string
      * } $args

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $FileCacheIds
- * @property int $MaxResults
+ * @property int<1, 2147483647> $MaxResults
  * @property string $NextToken
  */
 class DescribeFileCachesRequest extends Request
@@ -14,7 +14,7 @@ class DescribeFileCachesRequest extends Request
     /**
      * @param array{
      *     FileCacheIds?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 2147483647>,
      *     NextToken?: string
      * } $args
      */

@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property int $requestMessageId
+ * @property int<0, max> $requestMessageId
  * @property string $obdStandard
- * @property int $pidRequestIntervalSeconds
- * @property int $dtcRequestIntervalSeconds
+ * @property int<0, max> $pidRequestIntervalSeconds
+ * @property int<0, max> $dtcRequestIntervalSeconds
  * @property bool $useExtendedIds
  * @property bool $hasTransmissionEcu
  */
@@ -18,10 +18,10 @@ class ObdInterface extends Shape
     /**
      * @param array{
      *     name: string,
-     *     requestMessageId: int,
+     *     requestMessageId: int<0, max>,
      *     obdStandard?: string,
-     *     pidRequestIntervalSeconds?: int,
-     *     dtcRequestIntervalSeconds?: int,
+     *     pidRequestIntervalSeconds?: int<0, max>,
+     *     dtcRequestIntervalSeconds?: int<0, max>,
      *     useExtendedIds?: bool,
      *     hasTransmissionEcu?: bool
      * } $args

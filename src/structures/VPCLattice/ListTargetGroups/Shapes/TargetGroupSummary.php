@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'V1'|'V2' $lambdaEventStructureVersion
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  * @property string $name
- * @property int $port
+ * @property int<1, 65535> $port
  * @property 'HTTP'|'HTTPS'|'TCP' $protocol
  * @property list<string> $serviceArns
  * @property 'CREATE_IN_PROGRESS'|'ACTIVE'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_FAILED' $status
@@ -30,7 +30,7 @@ class TargetGroupSummary extends Shape
      *     lambdaEventStructureVersion?: 'V1'|'V2',
      *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
      *     name?: string,
-     *     port?: int,
+     *     port?: int<1, 65535>,
      *     protocol?: 'HTTP'|'HTTPS'|'TCP',
      *     serviceArns?: list<string>,
      *     status?: 'CREATE_IN_PROGRESS'|'ACTIVE'|'DELETE_IN_PROGRESS'|'CREATE_FAILED'|'DELETE_FAILED',

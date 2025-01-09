@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Prefix
- * @property int $RetentionPeriodHours
+ * @property int<0, 87600> $RetentionPeriodHours
  * @property EncryptionConfig $EncryptionConfig
  */
 class KinesisVideoStreamConfig extends Shape
@@ -14,7 +14,7 @@ class KinesisVideoStreamConfig extends Shape
     /**
      * @param array{
      *     Prefix: string,
-     *     RetentionPeriodHours: int,
+     *     RetentionPeriodHours: int<0, 87600>,
      *     EncryptionConfig: EncryptionConfig
      * } $args
      */

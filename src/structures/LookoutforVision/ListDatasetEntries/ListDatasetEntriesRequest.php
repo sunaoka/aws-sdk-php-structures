@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $BeforeCreationDate
  * @property \Aws\Api\DateTimeResult $AfterCreationDate
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $SourceRefContains
  */
 class ListDatasetEntriesRequest extends Request
@@ -26,7 +26,7 @@ class ListDatasetEntriesRequest extends Request
      *     BeforeCreationDate?: \Aws\Api\DateTimeResult,
      *     AfterCreationDate?: \Aws\Api\DateTimeResult,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     SourceRefContains?: string
      * } $args
      */

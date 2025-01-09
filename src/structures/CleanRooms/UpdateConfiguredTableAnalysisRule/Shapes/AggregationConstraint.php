@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $columnName
- * @property int $minimum
+ * @property int<2, 100000> $minimum
  * @property 'COUNT_DISTINCT' $type
  */
 class AggregationConstraint extends Shape
@@ -14,7 +14,7 @@ class AggregationConstraint extends Shape
     /**
      * @param array{
      *     columnName: string,
-     *     minimum: int,
+     *     minimum: int<2, 100000>,
      *     type: 'COUNT_DISTINCT'
      * } $args
      */

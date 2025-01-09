@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $rotationSize
- * @property int $maxFilesToKeep
+ * @property int<1, 50> $maxFilesToKeep
  */
 class ContainerLogRotationConfiguration extends Shape
 {
     /**
      * @param array{
      *     rotationSize: string,
-     *     maxFilesToKeep: int
+     *     maxFilesToKeep: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

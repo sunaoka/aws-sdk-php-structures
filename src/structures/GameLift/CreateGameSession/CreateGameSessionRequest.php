@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FleetId
  * @property string $AliasId
- * @property int $MaximumPlayerSessionCount
+ * @property int<0, max> $MaximumPlayerSessionCount
  * @property string $Name
  * @property list<Shapes\GameProperty> $GameProperties
  * @property string $CreatorId
@@ -22,7 +22,7 @@ class CreateGameSessionRequest extends Request
      * @param array{
      *     FleetId?: string,
      *     AliasId?: string,
-     *     MaximumPlayerSessionCount: int,
+     *     MaximumPlayerSessionCount: int<0, max>,
      *     Name?: string,
      *     GameProperties?: list<Shapes\GameProperty>,
      *     CreatorId?: string,

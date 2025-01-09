@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<5, 10> $maxResults
  */
 class GetEntityTypesRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetEntityTypesRequest extends Request
      * @param array{
      *     name?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<5, 10>
      * } $args
      */
     public function __construct(array $args = [])

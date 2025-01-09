@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ComputeLimits $ComputeLimits
- * @property int $UtilizationPerformanceIndex
+ * @property int<1, 100> $UtilizationPerformanceIndex
  * @property 'DEFAULT'|'ADVANCED' $ScalingStrategy
  */
 class ManagedScalingPolicy extends Shape
@@ -14,7 +14,7 @@ class ManagedScalingPolicy extends Shape
     /**
      * @param array{
      *     ComputeLimits?: ComputeLimits,
-     *     UtilizationPerformanceIndex?: int,
+     *     UtilizationPerformanceIndex?: int<1, 100>,
      *     ScalingStrategy?: 'DEFAULT'|'ADVANCED'
      * } $args
      */

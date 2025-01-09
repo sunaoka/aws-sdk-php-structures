@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\UpdateDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $timeoutInMinutes
+ * @property int<1, 60> $timeoutInMinutes
  */
 class DeltaTimeSessionWindowConfiguration extends Shape
 {
     /**
-     * @param array{timeoutInMinutes: int} $args
+     * @param array{timeoutInMinutes: int<1, 60>} $args
      */
     public function __construct(array $args)
     {

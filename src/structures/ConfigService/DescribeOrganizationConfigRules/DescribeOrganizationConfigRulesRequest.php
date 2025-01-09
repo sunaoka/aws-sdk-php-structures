@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $OrganizationConfigRuleNames
- * @property int $Limit
+ * @property int<0, 100> $Limit
  * @property string $NextToken
  */
 class DescribeOrganizationConfigRulesRequest extends Request
@@ -14,7 +14,7 @@ class DescribeOrganizationConfigRulesRequest extends Request
     /**
      * @param array{
      *     OrganizationConfigRuleNames?: list<string>,
-     *     Limit?: int,
+     *     Limit?: int<0, 100>,
      *     NextToken?: string
      * } $args
      */

@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property double $MaxCapacity
  * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X' $WorkerType
  * @property int $NumberOfWorkers
- * @property int $Timeout
+ * @property int<1, max> $Timeout
  * @property int $MaxRetries
  * @property Shapes\TransformEncryption $TransformEncryption
  */

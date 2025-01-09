@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\StreamFilters $filterBy
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListStreamsRequest extends Request
@@ -14,7 +14,7 @@ class ListStreamsRequest extends Request
     /**
      * @param array{
      *     filterBy?: Shapes\StreamFilters,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

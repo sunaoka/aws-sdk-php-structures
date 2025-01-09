@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Duration
+ * @property int<0, 4294967295> $Duration
  * @property string $Instruction
  * @property 'Deboard' $Type
  */
@@ -13,7 +13,7 @@ class RouteFerryAfterTravelStep extends Shape
 {
     /**
      * @param array{
-     *     Duration: int,
+     *     Duration: int<0, 4294967295>,
      *     Instruction?: string,
      *     Type: 'Deboard'
      * } $args

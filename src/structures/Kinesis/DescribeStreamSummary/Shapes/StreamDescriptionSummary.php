@@ -14,8 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<EnhancedMetrics> $EnhancedMonitoring
  * @property 'NONE'|'KMS' $EncryptionType
  * @property string $KeyId
- * @property int $OpenShardCount
- * @property int $ConsumerCount
+ * @property int<0, 1000000> $OpenShardCount
+ * @property int<0, 1000000> $ConsumerCount
  */
 class StreamDescriptionSummary extends Shape
 {
@@ -30,8 +30,8 @@ class StreamDescriptionSummary extends Shape
      *     EnhancedMonitoring: list<EnhancedMetrics>,
      *     EncryptionType?: 'NONE'|'KMS',
      *     KeyId?: string,
-     *     OpenShardCount: int,
-     *     ConsumerCount?: int
+     *     OpenShardCount: int<0, 1000000>,
+     *     ConsumerCount?: int<0, 1000000>
      * } $args
      */
     public function __construct(array $args)

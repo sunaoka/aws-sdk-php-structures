@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\AccountLimit $Limit
- * @property int $Count
+ * @property int<0, max> $Count
  */
 class GetAccountLimitResponse extends Response
 {

@@ -13,9 +13,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $cacheId
  * @property 'CACHE_ON_FAILURE'|'CACHE_ALWAYS' $cacheBehavior
  * @property string $runGroupId
- * @property int $priority
+ * @property int<0, 100000> $priority
  * @property Shapes\RunParameters $parameters
- * @property int $storageCapacity
+ * @property int<0, 100000> $storageCapacity
  * @property string $outputUri
  * @property 'OFF'|'FATAL'|'ERROR'|'ALL' $logLevel
  * @property array<string, string> $tags
@@ -36,9 +36,9 @@ class StartRunRequest extends Request
      *     cacheId?: string,
      *     cacheBehavior?: 'CACHE_ON_FAILURE'|'CACHE_ALWAYS',
      *     runGroupId?: string,
-     *     priority?: int,
+     *     priority?: int<0, 100000>,
      *     parameters?: Shapes\RunParameters,
-     *     storageCapacity?: int,
+     *     storageCapacity?: int<0, 100000>,
      *     outputUri?: string,
      *     logLevel?: 'OFF'|'FATAL'|'ERROR'|'ALL',
      *     tags?: array<string, string>,

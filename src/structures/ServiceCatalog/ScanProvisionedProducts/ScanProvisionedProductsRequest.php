@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AcceptLanguage
  * @property Shapes\AccessLevelFilter $AccessLevelFilter
- * @property int $PageSize
+ * @property int<0, 20> $PageSize
  * @property string $PageToken
  */
 class ScanProvisionedProductsRequest extends Request
@@ -16,7 +16,7 @@ class ScanProvisionedProductsRequest extends Request
      * @param array{
      *     AcceptLanguage?: string,
      *     AccessLevelFilter?: Shapes\AccessLevelFilter,
-     *     PageSize?: int,
+     *     PageSize?: int<0, 20>,
      *     PageToken?: string
      * } $args
      */

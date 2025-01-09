@@ -22,7 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $JobTemplate
  * @property JobMessages $Messages
  * @property list<OutputGroupDetail> $OutputGroupDetails
- * @property int $Priority
+ * @property int<-50, 50> $Priority
  * @property string $Queue
  * @property list<QueueTransition> $QueueTransitions
  * @property int $RetryCount
@@ -56,7 +56,7 @@ class Job extends Shape
      *     JobTemplate?: string,
      *     Messages?: JobMessages,
      *     OutputGroupDetails?: list<OutputGroupDetail>,
-     *     Priority?: int,
+     *     Priority?: int<-50, 50>,
      *     Queue?: string,
      *     QueueTransitions?: list<QueueTransition>,
      *     RetryCount?: int,

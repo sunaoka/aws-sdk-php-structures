@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\ImportTaskFilter> $filters
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class DescribeImportTasksRequest extends Request
@@ -14,7 +14,7 @@ class DescribeImportTasksRequest extends Request
     /**
      * @param array{
      *     filters?: list<Shapes\ImportTaskFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

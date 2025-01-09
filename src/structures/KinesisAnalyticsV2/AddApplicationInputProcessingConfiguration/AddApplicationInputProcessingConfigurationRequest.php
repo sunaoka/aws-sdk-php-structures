@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property int $CurrentApplicationVersionId
+ * @property int<1, 999999999> $CurrentApplicationVersionId
  * @property string $InputId
  * @property Shapes\InputProcessingConfiguration $InputProcessingConfiguration
  */
@@ -15,7 +15,7 @@ class AddApplicationInputProcessingConfigurationRequest extends Request
     /**
      * @param array{
      *     ApplicationName: string,
-     *     CurrentApplicationVersionId: int,
+     *     CurrentApplicationVersionId: int<1, 999999999>,
      *     InputId: string,
      *     InputProcessingConfiguration: Shapes\InputProcessingConfiguration
      * } $args

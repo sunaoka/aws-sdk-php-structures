@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $knowledgeBaseId
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property Shapes\MessageTemplateSearchExpression $searchExpression
  */
@@ -15,7 +15,7 @@ class SearchMessageTemplatesRequest extends Request
     /**
      * @param array{
      *     knowledgeBaseId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     searchExpression: Shapes\MessageTemplateSearchExpression
      * } $args

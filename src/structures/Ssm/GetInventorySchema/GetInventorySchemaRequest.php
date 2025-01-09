@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TypeName
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<50, 200> $MaxResults
  * @property bool $Aggregator
  * @property bool $SubType
  */
@@ -17,7 +17,7 @@ class GetInventorySchemaRequest extends Request
      * @param array{
      *     TypeName?: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<50, 200>,
      *     Aggregator?: bool,
      *     SubType?: bool
      * } $args

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DatabaseName
  * @property string $TableName
  * @property 'COMPACTION'|'GARBAGE_COLLECTION'|'ALL' $StorageOptimizerType
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListTableStorageOptimizersRequest extends Request
@@ -20,7 +20,7 @@ class ListTableStorageOptimizersRequest extends Request
      *     DatabaseName: string,
      *     TableName: string,
      *     StorageOptimizerType?: 'COMPACTION'|'GARBAGE_COLLECTION'|'ALL',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

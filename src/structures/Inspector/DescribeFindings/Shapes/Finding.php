@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
- * @property int $schemaVersion
+ * @property int<0, max> $schemaVersion
  * @property string $service
  * @property InspectorServiceAttributes $serviceAttributes
  * @property 'ec2-instance' $assetType
@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $recommendation
  * @property 'Low'|'Medium'|'High'|'Informational'|'Undefined' $severity
  * @property double $numericSeverity
- * @property int $confidence
+ * @property int<0, 10> $confidence
  * @property bool $indicatorOfCompromise
  * @property list<Attribute> $attributes
  * @property list<Attribute> $userAttributes
@@ -29,7 +29,7 @@ class Finding extends Shape
     /**
      * @param array{
      *     arn: string,
-     *     schemaVersion?: int,
+     *     schemaVersion?: int<0, max>,
      *     service?: string,
      *     serviceAttributes?: InspectorServiceAttributes,
      *     assetType?: 'ec2-instance',
@@ -40,7 +40,7 @@ class Finding extends Shape
      *     recommendation?: string,
      *     severity?: 'Low'|'Medium'|'High'|'Informational'|'Undefined',
      *     numericSeverity?: double,
-     *     confidence?: int,
+     *     confidence?: int<0, 10>,
      *     indicatorOfCompromise?: bool,
      *     attributes: list<Attribute>,
      *     userAttributes: list<Attribute>,

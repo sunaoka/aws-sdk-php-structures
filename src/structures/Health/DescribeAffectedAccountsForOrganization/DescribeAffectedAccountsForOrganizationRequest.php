@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $eventArn
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<10, 100> $maxResults
  */
 class DescribeAffectedAccountsForOrganizationRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeAffectedAccountsForOrganizationRequest extends Request
      * @param array{
      *     eventArn: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<10, 100>
      * } $args
      */
     public function __construct(array $args)

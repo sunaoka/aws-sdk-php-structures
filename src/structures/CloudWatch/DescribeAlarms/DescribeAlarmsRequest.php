@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ParentsOfAlarmName
  * @property 'OK'|'ALARM'|'INSUFFICIENT_DATA' $StateValue
  * @property string $ActionPrefix
- * @property int $MaxRecords
+ * @property int<1, 100> $MaxRecords
  * @property string $NextToken
  */
 class DescribeAlarmsRequest extends Request
@@ -26,7 +26,7 @@ class DescribeAlarmsRequest extends Request
      *     ParentsOfAlarmName?: string,
      *     StateValue?: 'OK'|'ALARM'|'INSUFFICIENT_DATA',
      *     ActionPrefix?: string,
-     *     MaxRecords?: int,
+     *     MaxRecords?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

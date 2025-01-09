@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CONNECT'|'SITE_TO_SITE_VPN'|'VPC'|'DIRECT_CONNECT_GATEWAY'|'TRANSIT_GATEWAY_ROUTE_TABLE' $AttachmentType
  * @property string $EdgeLocation
  * @property 'REJECTED'|'PENDING_ATTACHMENT_ACCEPTANCE'|'CREATING'|'FAILED'|'AVAILABLE'|'UPDATING'|'PENDING_NETWORK_UPDATE'|'PENDING_TAG_ACCEPTANCE'|'DELETING' $State
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class ListAttachmentsRequest extends Request
@@ -20,7 +20,7 @@ class ListAttachmentsRequest extends Request
      *     AttachmentType?: 'CONNECT'|'SITE_TO_SITE_VPN'|'VPC'|'DIRECT_CONNECT_GATEWAY'|'TRANSIT_GATEWAY_ROUTE_TABLE',
      *     EdgeLocation?: string,
      *     State?: 'REJECTED'|'PENDING_ATTACHMENT_ACCEPTANCE'|'CREATING'|'FAILED'|'AVAILABLE'|'UPDATING'|'PENDING_NETWORK_UPDATE'|'PENDING_TAG_ACCEPTANCE'|'DELETING',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

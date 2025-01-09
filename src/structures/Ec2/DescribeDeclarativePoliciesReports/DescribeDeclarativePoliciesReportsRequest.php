@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool $DryRun
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property list<string> $ReportIds
  */
 class DescribeDeclarativePoliciesReportsRequest extends Request
@@ -16,7 +16,7 @@ class DescribeDeclarativePoliciesReportsRequest extends Request
      * @param array{
      *     DryRun?: bool,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     ReportIds?: list<string>
      * } $args
      */

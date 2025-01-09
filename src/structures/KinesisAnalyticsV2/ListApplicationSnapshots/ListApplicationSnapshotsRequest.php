@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property int $Limit
+ * @property int<1, 50> $Limit
  * @property string $NextToken
  */
 class ListApplicationSnapshotsRequest extends Request
@@ -14,7 +14,7 @@ class ListApplicationSnapshotsRequest extends Request
     /**
      * @param array{
      *     ApplicationName: string,
-     *     Limit?: int,
+     *     Limit?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

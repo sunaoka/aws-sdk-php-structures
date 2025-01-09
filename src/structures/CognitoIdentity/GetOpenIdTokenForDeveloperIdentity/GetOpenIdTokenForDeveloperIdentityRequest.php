@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $IdentityId
  * @property array<string, string> $Logins
  * @property array<string, string> $PrincipalTags
- * @property int $TokenDuration
+ * @property int<1, 86400> $TokenDuration
  */
 class GetOpenIdTokenForDeveloperIdentityRequest extends Request
 {
@@ -19,7 +19,7 @@ class GetOpenIdTokenForDeveloperIdentityRequest extends Request
      *     IdentityId?: string,
      *     Logins: array<string, string>,
      *     PrincipalTags?: array<string, string>,
-     *     TokenDuration?: int
+     *     TokenDuration?: int<1, 86400>
      * } $args
      */
     public function __construct(array $args)

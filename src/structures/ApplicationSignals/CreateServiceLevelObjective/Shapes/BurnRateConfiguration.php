@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ApplicationSignals\CreateServiceLevelObjective\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $LookBackWindowMinutes
+ * @property int<1, 10080> $LookBackWindowMinutes
  */
 class BurnRateConfiguration extends Shape
 {
     /**
-     * @param array{LookBackWindowMinutes: int} $args
+     * @param array{LookBackWindowMinutes: int<1, 10080>} $args
      */
     public function __construct(array $args)
     {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $messageReviewHandlerUri
  * @property string $loggingConfigurationIdentifier
  */
@@ -17,7 +17,7 @@ class ListRoomsRequest extends Request
      * @param array{
      *     name?: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     messageReviewHandlerUri?: string,
      *     loggingConfigurationIdentifier?: string
      * } $args

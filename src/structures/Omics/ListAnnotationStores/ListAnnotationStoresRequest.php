@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $ids
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property Shapes\ListAnnotationStoresFilter $filter
  */
@@ -15,7 +15,7 @@ class ListAnnotationStoresRequest extends Request
     /**
      * @param array{
      *     ids?: list<string>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     filter?: Shapes\ListAnnotationStoresFilter
      * } $args

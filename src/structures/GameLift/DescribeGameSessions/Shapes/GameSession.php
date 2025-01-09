@@ -11,14 +11,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FleetArn
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $TerminationTime
- * @property int $CurrentPlayerSessionCount
- * @property int $MaximumPlayerSessionCount
+ * @property int<0, max> $CurrentPlayerSessionCount
+ * @property int<0, max> $MaximumPlayerSessionCount
  * @property 'ACTIVE'|'ACTIVATING'|'TERMINATED'|'TERMINATING'|'ERROR' $Status
  * @property 'INTERRUPTED'|'TRIGGERED_ON_PROCESS_TERMINATE'|'FORCE_TERMINATED' $StatusReason
  * @property list<GameProperty> $GameProperties
  * @property string $IpAddress
  * @property string $DnsName
- * @property int $Port
+ * @property int<1, 60000> $Port
  * @property 'ACCEPT_ALL'|'DENY_ALL' $PlayerSessionCreationPolicy
  * @property string $CreatorId
  * @property string $GameSessionData
@@ -35,14 +35,14 @@ class GameSession extends Shape
      *     FleetArn?: string,
      *     CreationTime?: \Aws\Api\DateTimeResult,
      *     TerminationTime?: \Aws\Api\DateTimeResult,
-     *     CurrentPlayerSessionCount?: int,
-     *     MaximumPlayerSessionCount?: int,
+     *     CurrentPlayerSessionCount?: int<0, max>,
+     *     MaximumPlayerSessionCount?: int<0, max>,
      *     Status?: 'ACTIVE'|'ACTIVATING'|'TERMINATED'|'TERMINATING'|'ERROR',
      *     StatusReason?: 'INTERRUPTED'|'TRIGGERED_ON_PROCESS_TERMINATE'|'FORCE_TERMINATED',
      *     GameProperties?: list<GameProperty>,
      *     IpAddress?: string,
      *     DnsName?: string,
-     *     Port?: int,
+     *     Port?: int<1, 60000>,
      *     PlayerSessionCreationPolicy?: 'ACCEPT_ALL'|'DENY_ALL',
      *     CreatorId?: string,
      *     GameSessionData?: string,

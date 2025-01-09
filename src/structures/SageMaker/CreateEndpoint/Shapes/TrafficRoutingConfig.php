@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ALL_AT_ONCE'|'CANARY'|'LINEAR' $Type
- * @property int $WaitIntervalInSeconds
+ * @property int<0, 3600> $WaitIntervalInSeconds
  * @property CapacitySize $CanarySize
  * @property CapacitySize $LinearStepSize
  */
@@ -15,7 +15,7 @@ class TrafficRoutingConfig extends Shape
     /**
      * @param array{
      *     Type: 'ALL_AT_ONCE'|'CANARY'|'LINEAR',
-     *     WaitIntervalInSeconds: int,
+     *     WaitIntervalInSeconds: int<0, 3600>,
      *     CanarySize?: CapacitySize,
      *     LinearStepSize?: CapacitySize
      * } $args

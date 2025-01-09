@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $MountPath
- * @property int $DefaultUid
- * @property int $DefaultGid
+ * @property int<0, 65535> $DefaultUid
+ * @property int<0, 65535> $DefaultGid
  */
 class FileSystemConfig extends Shape
 {
     /**
      * @param array{
      *     MountPath?: string,
-     *     DefaultUid?: int,
-     *     DefaultGid?: int
+     *     DefaultUid?: int<0, 65535>,
+     *     DefaultGid?: int<0, 65535>
      * } $args
      */
     public function __construct(array $args = [])

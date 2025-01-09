@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Region $awsRegion
  * @property EnvironmentConfigurationParametersDetails $configurationParameters
  * @property 'ON_CREATE'|'ON_DEMAND' $deploymentMode
- * @property int $deploymentOrder
+ * @property int<0, 16> $deploymentOrder
  * @property string $description
  * @property string $environmentBlueprintId
  * @property string $id
@@ -23,7 +23,7 @@ class EnvironmentConfiguration extends Shape
      *     awsRegion: Region,
      *     configurationParameters?: EnvironmentConfigurationParametersDetails,
      *     deploymentMode?: 'ON_CREATE'|'ON_DEMAND',
-     *     deploymentOrder?: int,
+     *     deploymentOrder?: int<0, 16>,
      *     description?: string,
      *     environmentBlueprintId: string,
      *     id?: string,

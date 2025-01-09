@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $id
  * @property Shapes\RuleMatch $match
  * @property string $name
- * @property int $priority
+ * @property int<1, 100> $priority
  */
 class CreateRuleResponse extends Response
 {

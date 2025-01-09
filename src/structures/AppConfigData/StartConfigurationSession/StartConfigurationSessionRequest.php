@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ApplicationIdentifier
  * @property string $EnvironmentIdentifier
  * @property string $ConfigurationProfileIdentifier
- * @property int $RequiredMinimumPollIntervalInSeconds
+ * @property int<15, 86400> $RequiredMinimumPollIntervalInSeconds
  */
 class StartConfigurationSessionRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartConfigurationSessionRequest extends Request
      *     ApplicationIdentifier: string,
      *     EnvironmentIdentifier: string,
      *     ConfigurationProfileIdentifier: string,
-     *     RequiredMinimumPollIntervalInSeconds?: int
+     *     RequiredMinimumPollIntervalInSeconds?: int<15, 86400>
      * } $args
      */
     public function __construct(array $args)

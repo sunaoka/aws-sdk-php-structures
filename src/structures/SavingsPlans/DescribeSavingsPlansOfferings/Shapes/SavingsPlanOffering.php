@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Compute'|'EC2Instance'|'SageMaker' $planType
  * @property string $description
  * @property 'All Upfront'|'Partial Upfront'|'No Upfront' $paymentOption
- * @property int $durationSeconds
+ * @property int<0, max> $durationSeconds
  * @property 'CNY'|'USD' $currency
  * @property string $serviceCode
  * @property string $usageType
@@ -26,7 +26,7 @@ class SavingsPlanOffering extends Shape
      *     planType?: 'Compute'|'EC2Instance'|'SageMaker',
      *     description?: string,
      *     paymentOption?: 'All Upfront'|'Partial Upfront'|'No Upfront',
-     *     durationSeconds?: int,
+     *     durationSeconds?: int<0, max>,
      *     currency?: 'CNY'|'USD',
      *     serviceCode?: string,
      *     usageType?: string,

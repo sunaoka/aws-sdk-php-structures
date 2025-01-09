@@ -11,9 +11,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EndDate
  * @property string $Schedule
  * @property string $ScheduleTimezone
- * @property int $ScheduleOffset
- * @property int $Duration
- * @property int $Cutoff
+ * @property int<1, 6> $ScheduleOffset
+ * @property int<1, 24> $Duration
+ * @property int<0, 23> $Cutoff
  * @property bool $AllowUnassociatedTargets
  * @property string $ClientToken
  * @property list<Shapes\Tag> $Tags
@@ -28,9 +28,9 @@ class CreateMaintenanceWindowRequest extends Request
      *     EndDate?: string,
      *     Schedule: string,
      *     ScheduleTimezone?: string,
-     *     ScheduleOffset?: int,
-     *     Duration: int,
-     *     Cutoff: int,
+     *     ScheduleOffset?: int<1, 6>,
+     *     Duration: int<1, 24>,
+     *     Cutoff: int<0, 23>,
      *     AllowUnassociatedTargets: bool,
      *     ClientToken?: string,
      *     Tags?: list<Shapes\Tag>

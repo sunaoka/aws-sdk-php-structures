@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property string $Target
- * @property int $TimeoutSeconds
+ * @property int<1, 1800> $TimeoutSeconds
  * @property string $SourceFileLocation
  */
 class CustomStepDetails extends Shape
@@ -16,7 +16,7 @@ class CustomStepDetails extends Shape
      * @param array{
      *     Name?: string,
      *     Target?: string,
-     *     TimeoutSeconds?: int,
+     *     TimeoutSeconds?: int<1, 1800>,
      *     SourceFileLocation?: string
      * } $args
      */

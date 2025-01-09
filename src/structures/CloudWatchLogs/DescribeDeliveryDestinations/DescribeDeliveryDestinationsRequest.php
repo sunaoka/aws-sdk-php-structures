@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $limit
+ * @property int<1, 50> $limit
  */
 class DescribeDeliveryDestinationsRequest extends Request
 {
     /**
      * @param array{
      *     nextToken?: string,
-     *     limit?: int
+     *     limit?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DetectorId
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  * @property string $OnlyAssociated
  */
@@ -15,7 +15,7 @@ class ListMembersRequest extends Request
     /**
      * @param array{
      *     DetectorId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string,
      *     OnlyAssociated?: string
      * } $args

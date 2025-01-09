@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppMesh\ListMeshes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $limit
+ * @property int<1, 100> $limit
  * @property string $nextToken
  */
 class ListMeshesRequest extends Request
 {
     /**
      * @param array{
-     *     limit?: int,
+     *     limit?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $testSetId
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListTestSetRecordsRequest extends Request
@@ -14,7 +14,7 @@ class ListTestSetRecordsRequest extends Request
     /**
      * @param array{
      *     testSetId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

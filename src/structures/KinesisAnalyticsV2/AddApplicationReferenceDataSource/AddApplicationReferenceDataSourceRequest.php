@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property int $CurrentApplicationVersionId
+ * @property int<1, 999999999> $CurrentApplicationVersionId
  * @property Shapes\ReferenceDataSource $ReferenceDataSource
  */
 class AddApplicationReferenceDataSourceRequest extends Request
@@ -14,7 +14,7 @@ class AddApplicationReferenceDataSourceRequest extends Request
     /**
      * @param array{
      *     ApplicationName: string,
-     *     CurrentApplicationVersionId: int,
+     *     CurrentApplicationVersionId: int<1, 999999999>,
      *     ReferenceDataSource: Shapes\ReferenceDataSource
      * } $args
      */

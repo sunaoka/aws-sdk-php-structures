@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\FSx\DescribeVolumes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AutomaticBackupRetentionDays
+ * @property int<0, 90> $AutomaticBackupRetentionDays
  * @property bool $CopyTagsToBackups
  * @property bool $CopyTagsToVolumes
  * @property string $DailyAutomaticBackupStartTime
  * @property 'SINGLE_AZ_1'|'SINGLE_AZ_2'|'SINGLE_AZ_HA_1'|'SINGLE_AZ_HA_2'|'MULTI_AZ_1' $DeploymentType
- * @property int $ThroughputCapacity
+ * @property int<8, 100000> $ThroughputCapacity
  * @property string $WeeklyMaintenanceStartTime
  * @property DiskIopsConfiguration $DiskIopsConfiguration
  * @property string $RootVolumeId
@@ -24,12 +24,12 @@ class OpenZFSFileSystemConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AutomaticBackupRetentionDays?: int,
+     *     AutomaticBackupRetentionDays?: int<0, 90>,
      *     CopyTagsToBackups?: bool,
      *     CopyTagsToVolumes?: bool,
      *     DailyAutomaticBackupStartTime?: string,
      *     DeploymentType?: 'SINGLE_AZ_1'|'SINGLE_AZ_2'|'SINGLE_AZ_HA_1'|'SINGLE_AZ_HA_2'|'MULTI_AZ_1',
-     *     ThroughputCapacity?: int,
+     *     ThroughputCapacity?: int<8, 100000>,
      *     WeeklyMaintenanceStartTime?: string,
      *     DiskIopsConfiguration?: DiskIopsConfiguration,
      *     RootVolumeId?: string,

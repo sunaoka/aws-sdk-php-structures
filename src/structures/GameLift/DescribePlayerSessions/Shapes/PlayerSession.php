@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'RESERVED'|'ACTIVE'|'COMPLETED'|'TIMEDOUT' $Status
  * @property string $IpAddress
  * @property string $DnsName
- * @property int $Port
+ * @property int<1, 60000> $Port
  * @property string $PlayerData
  */
 class PlayerSession extends Shape
@@ -32,7 +32,7 @@ class PlayerSession extends Shape
      *     Status?: 'RESERVED'|'ACTIVE'|'COMPLETED'|'TIMEDOUT',
      *     IpAddress?: string,
      *     DnsName?: string,
-     *     Port?: int,
+     *     Port?: int<1, 60000>,
      *     PlayerData?: string
      * } $args
      */

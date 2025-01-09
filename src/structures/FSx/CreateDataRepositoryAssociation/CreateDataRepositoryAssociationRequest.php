@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FileSystemPath
  * @property string $DataRepositoryPath
  * @property bool $BatchImportMetaDataOnCreate
- * @property int $ImportedFileChunkSize
+ * @property int<1, 512000> $ImportedFileChunkSize
  * @property Shapes\S3DataRepositoryConfiguration $S3
  * @property string $ClientRequestToken
  * @property list<Shapes\Tag> $Tags
@@ -22,7 +22,7 @@ class CreateDataRepositoryAssociationRequest extends Request
      *     FileSystemPath?: string,
      *     DataRepositoryPath: string,
      *     BatchImportMetaDataOnCreate?: bool,
-     *     ImportedFileChunkSize?: int,
+     *     ImportedFileChunkSize?: int<1, 512000>,
      *     S3?: Shapes\S3DataRepositoryConfiguration,
      *     ClientRequestToken?: string,
      *     Tags?: list<Shapes\Tag>

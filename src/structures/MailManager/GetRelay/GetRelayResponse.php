@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $RelayId
  * @property string $RelayName
  * @property string $ServerName
- * @property int $ServerPort
+ * @property int<1, 65535> $ServerPort
  */
 class GetRelayResponse extends Response
 {

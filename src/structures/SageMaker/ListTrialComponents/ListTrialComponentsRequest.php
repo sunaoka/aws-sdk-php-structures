@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $CreatedBefore
  * @property 'Name'|'CreationTime' $SortBy
  * @property 'Ascending'|'Descending' $SortOrder
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListTrialComponentsRequest extends Request
@@ -26,7 +26,7 @@ class ListTrialComponentsRequest extends Request
      *     CreatedBefore?: \Aws\Api\DateTimeResult,
      *     SortBy?: 'Name'|'CreationTime',
      *     SortOrder?: 'Ascending'|'Descending',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

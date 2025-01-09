@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CR.1X'|'CR.4X' $type
- * @property int $number
+ * @property int<2, 400> $number
  */
 class WorkerComputeConfiguration extends Shape
 {
     /**
      * @param array{
      *     type?: 'CR.1X'|'CR.4X',
-     *     number?: int
+     *     number?: int<2, 400>
      * } $args
      */
     public function __construct(array $args = [])

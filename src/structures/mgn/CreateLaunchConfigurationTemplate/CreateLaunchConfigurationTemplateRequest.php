@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $mapAutoTaggingMpeID
  * @property Shapes\PostLaunchActions $postLaunchActions
  * @property Shapes\LaunchTemplateDiskConf $smallVolumeConf
- * @property int $smallVolumeMaxSize
+ * @property int<0, max> $smallVolumeMaxSize
  * @property array<string, string> $tags
  * @property 'NONE'|'BASIC' $targetInstanceTypeRightSizingMethod
  */
@@ -35,7 +35,7 @@ class CreateLaunchConfigurationTemplateRequest extends Request
      *     mapAutoTaggingMpeID?: string,
      *     postLaunchActions?: Shapes\PostLaunchActions,
      *     smallVolumeConf?: Shapes\LaunchTemplateDiskConf,
-     *     smallVolumeMaxSize?: int,
+     *     smallVolumeMaxSize?: int<0, max>,
      *     tags?: array<string, string>,
      *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'
      * } $args

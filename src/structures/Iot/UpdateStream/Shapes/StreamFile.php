@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Iot\UpdateStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $fileId
+ * @property int<0, 255> $fileId
  * @property S3Location $s3Location
  */
 class StreamFile extends Shape
 {
     /**
      * @param array{
-     *     fileId?: int,
+     *     fileId?: int<0, 255>,
      *     s3Location?: S3Location
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Height
- * @property int $Width
+ * @property int<32, 8192> $Height
+ * @property int<32, 8192> $Width
  */
 class MinTopRenditionSize extends Shape
 {
     /**
      * @param array{
-     *     Height?: int,
-     *     Width?: int
+     *     Height?: int<32, 8192>,
+     *     Width?: int<32, 8192>
      * } $args
      */
     public function __construct(array $args = [])

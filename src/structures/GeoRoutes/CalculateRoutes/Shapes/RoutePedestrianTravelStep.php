@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property RouteContinueStepDetails $ContinueStepDetails
  * @property RouteRoad $CurrentRoad
- * @property int $Distance
- * @property int $Duration
+ * @property int<0, 4294967295> $Distance
+ * @property int<0, 4294967295> $Duration
  * @property list<LocalizedString> $ExitNumber
- * @property int $GeometryOffset
+ * @property int<0, max> $GeometryOffset
  * @property string $Instruction
  * @property RouteKeepStepDetails $KeepStepDetails
  * @property RouteRoad $NextRoad
@@ -27,10 +27,10 @@ class RoutePedestrianTravelStep extends Shape
      * @param array{
      *     ContinueStepDetails?: RouteContinueStepDetails,
      *     CurrentRoad?: RouteRoad,
-     *     Distance?: int,
-     *     Duration: int,
+     *     Distance?: int<0, 4294967295>,
+     *     Duration: int<0, 4294967295>,
      *     ExitNumber?: list<LocalizedString>,
-     *     GeometryOffset?: int,
+     *     GeometryOffset?: int<0, max>,
      *     Instruction?: string,
      *     KeepStepDetails?: RouteKeepStepDetails,
      *     NextRoad?: RouteRoad,

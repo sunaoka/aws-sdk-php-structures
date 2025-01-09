@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Strength
+ * @property int<0, 3> $Strength
  */
 class NoiseReducerFilterSettings extends Shape
 {
     /**
-     * @param array{Strength?: int} $args
+     * @param array{Strength?: int<0, 3>} $args
      */
     public function __construct(array $args = [])
     {

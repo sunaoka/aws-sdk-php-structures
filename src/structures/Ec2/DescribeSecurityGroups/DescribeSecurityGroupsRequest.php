@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $GroupIds
  * @property list<string> $GroupNames
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
  */
@@ -19,7 +19,7 @@ class DescribeSecurityGroupsRequest extends Request
      *     GroupIds?: list<string>,
      *     GroupNames?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>
      * } $args

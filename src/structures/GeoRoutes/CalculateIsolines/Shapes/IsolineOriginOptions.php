@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateIsolines\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AvoidActionsForDistance
+ * @property int<0, 4294967295> $AvoidActionsForDistance
  * @property double $Heading
  * @property IsolineMatchingOptions $Matching
  * @property IsolineSideOfStreetOptions $SideOfStreet
@@ -14,7 +14,7 @@ class IsolineOriginOptions extends Shape
 {
     /**
      * @param array{
-     *     AvoidActionsForDistance?: int,
+     *     AvoidActionsForDistance?: int<0, 4294967295>,
      *     Heading?: double,
      *     Matching?: IsolineMatchingOptions,
      *     SideOfStreet?: IsolineSideOfStreetOptions

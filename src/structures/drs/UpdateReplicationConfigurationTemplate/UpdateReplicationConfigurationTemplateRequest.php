@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $arn
  * @property bool $associateDefaultSecurityGroup
  * @property bool $autoReplicateNewDisks
- * @property int $bandwidthThrottling
+ * @property int<0, max> $bandwidthThrottling
  * @property bool $createPublicIP
  * @property 'PRIVATE_IP'|'PUBLIC_IP' $dataPlaneRouting
  * @property 'GP2'|'GP3'|'ST1'|'AUTO' $defaultLargeStagingDiskType
@@ -29,7 +29,7 @@ class UpdateReplicationConfigurationTemplateRequest extends Request
      *     arn?: string,
      *     associateDefaultSecurityGroup?: bool,
      *     autoReplicateNewDisks?: bool,
-     *     bandwidthThrottling?: int,
+     *     bandwidthThrottling?: int<0, max>,
      *     createPublicIP?: bool,
      *     dataPlaneRouting?: 'PRIVATE_IP'|'PUBLIC_IP',
      *     defaultLargeStagingDiskType?: 'GP2'|'GP3'|'ST1'|'AUTO',

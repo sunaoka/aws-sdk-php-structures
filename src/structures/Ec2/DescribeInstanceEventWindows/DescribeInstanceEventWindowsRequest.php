@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property list<string> $InstanceEventWindowIds
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<20, 500> $MaxResults
  * @property string $NextToken
  */
 class DescribeInstanceEventWindowsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeInstanceEventWindowsRequest extends Request
      *     DryRun?: bool,
      *     InstanceEventWindowIds?: list<string>,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<20, 500>,
      *     NextToken?: string
      * } $args
      */

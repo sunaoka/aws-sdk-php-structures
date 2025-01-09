@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $BackupExpiryDateTime
  * @property 'CREATING'|'DELETED'|'AVAILABLE' $BackupStatus
  * @property 'USER'|'SYSTEM'|'AWS_BACKUP' $BackupType
- * @property int $BackupSizeBytes
+ * @property int<0, max> $BackupSizeBytes
  */
 class BackupSummary extends Shape
 {
@@ -29,7 +29,7 @@ class BackupSummary extends Shape
      *     BackupExpiryDateTime?: \Aws\Api\DateTimeResult,
      *     BackupStatus?: 'CREATING'|'DELETED'|'AVAILABLE',
      *     BackupType?: 'USER'|'SYSTEM'|'AWS_BACKUP',
-     *     BackupSizeBytes?: int
+     *     BackupSizeBytes?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

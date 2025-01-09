@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 250> $MaxResults
  * @property 'Sidewalk'|'LoRaWAN' $DeviceProfileType
  */
 class ListDeviceProfilesRequest extends Request
@@ -14,7 +14,7 @@ class ListDeviceProfilesRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 250>,
      *     DeviceProfileType?: 'Sidewalk'|'LoRaWAN'
      * } $args
      */

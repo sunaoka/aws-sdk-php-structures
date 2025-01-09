@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property bool $isDefault
  * @property Shapes\RuleMatch $match
  * @property string $name
- * @property int $priority
+ * @property int<1, 100> $priority
  */
 class UpdateRuleResponse extends Response
 {

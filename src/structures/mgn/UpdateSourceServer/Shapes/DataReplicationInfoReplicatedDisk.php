@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\mgn\UpdateSourceServer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $backloggedStorageBytes
+ * @property int<0, max> $backloggedStorageBytes
  * @property string $deviceName
- * @property int $replicatedStorageBytes
- * @property int $rescannedStorageBytes
- * @property int $totalStorageBytes
+ * @property int<0, max> $replicatedStorageBytes
+ * @property int<0, max> $rescannedStorageBytes
+ * @property int<0, max> $totalStorageBytes
  */
 class DataReplicationInfoReplicatedDisk extends Shape
 {
     /**
      * @param array{
-     *     backloggedStorageBytes?: int,
+     *     backloggedStorageBytes?: int<0, max>,
      *     deviceName?: string,
-     *     replicatedStorageBytes?: int,
-     *     rescannedStorageBytes?: int,
-     *     totalStorageBytes?: int
+     *     replicatedStorageBytes?: int<0, max>,
+     *     rescannedStorageBytes?: int<0, max>,
+     *     totalStorageBytes?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

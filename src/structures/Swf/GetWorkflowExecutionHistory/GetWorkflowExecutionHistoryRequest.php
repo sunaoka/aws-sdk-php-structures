@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domain
  * @property Shapes\WorkflowExecution $execution
  * @property string $nextPageToken
- * @property int $maximumPageSize
+ * @property int<0, 1000> $maximumPageSize
  * @property bool $reverseOrder
  */
 class GetWorkflowExecutionHistoryRequest extends Request
@@ -18,7 +18,7 @@ class GetWorkflowExecutionHistoryRequest extends Request
      *     domain: string,
      *     execution: Shapes\WorkflowExecution,
      *     nextPageToken?: string,
-     *     maximumPageSize?: int,
+     *     maximumPageSize?: int<0, 1000>,
      *     reverseOrder?: bool
      * } $args
      */

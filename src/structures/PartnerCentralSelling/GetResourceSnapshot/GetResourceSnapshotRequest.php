@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceIdentifier
  * @property string $ResourceSnapshotTemplateIdentifier
  * @property 'Opportunity' $ResourceType
- * @property int $Revision
+ * @property int<1, max> $Revision
  */
 class GetResourceSnapshotRequest extends Request
 {
@@ -21,7 +21,7 @@ class GetResourceSnapshotRequest extends Request
      *     ResourceIdentifier: string,
      *     ResourceSnapshotTemplateIdentifier: string,
      *     ResourceType: 'Opportunity',
-     *     Revision?: int
+     *     Revision?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

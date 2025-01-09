@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property string $NextToken
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  */
 class DescribeClientVpnAuthorizationRulesRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeClientVpnAuthorizationRulesRequest extends Request
      *     DryRun?: bool,
      *     NextToken?: string,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int
+     *     MaxResults?: int<5, 1000>
      * } $args
      */
     public function __construct(array $args)

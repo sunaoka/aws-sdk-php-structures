@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $slotType
  * @property string $slotTypeVersion
  * @property Prompt $valueElicitationPrompt
- * @property int $priority
+ * @property int<0, 100> $priority
  * @property list<string> $sampleUtterances
  * @property string $responseCard
  * @property 'NONE'|'DEFAULT_OBFUSCATION' $obfuscationSetting
@@ -27,7 +27,7 @@ class Slot extends Shape
      *     slotType?: string,
      *     slotTypeVersion?: string,
      *     valueElicitationPrompt?: Prompt,
-     *     priority?: int,
+     *     priority?: int<0, 100>,
      *     sampleUtterances?: list<string>,
      *     responseCard?: string,
      *     obfuscationSetting?: 'NONE'|'DEFAULT_OBFUSCATION',

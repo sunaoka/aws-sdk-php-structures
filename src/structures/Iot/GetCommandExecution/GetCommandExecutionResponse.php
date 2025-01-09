@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\StatusReason $statusReason
  * @property array<string, Shapes\CommandExecutionResult> $result
  * @property array<string, Shapes\CommandParameterValue> $parameters
- * @property int $executionTimeoutSeconds
+ * @property int<1, max> $executionTimeoutSeconds
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  * @property \Aws\Api\DateTimeResult $startedAt

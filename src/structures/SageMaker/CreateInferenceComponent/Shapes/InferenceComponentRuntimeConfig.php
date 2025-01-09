@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateInferenceComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CopyCount
+ * @property int<0, max> $CopyCount
  */
 class InferenceComponentRuntimeConfig extends Shape
 {
     /**
-     * @param array{CopyCount: int} $args
+     * @param array{CopyCount: int<0, max>} $args
      */
     public function __construct(array $args)
     {

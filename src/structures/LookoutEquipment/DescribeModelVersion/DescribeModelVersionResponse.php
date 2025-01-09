@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $ModelName
  * @property string $ModelArn
- * @property int $ModelVersion
+ * @property int<1, max> $ModelVersion
  * @property string $ModelVersionArn
  * @property 'IN_PROGRESS'|'SUCCESS'|'FAILED'|'IMPORT_IN_PROGRESS'|'CANCELED' $Status
  * @property 'TRAINING'|'RETRAINING'|'IMPORT' $SourceType
@@ -32,7 +32,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $SourceModelVersionArn
  * @property \Aws\Api\DateTimeResult $ImportJobStartTime
  * @property \Aws\Api\DateTimeResult $ImportJobEndTime
- * @property int $ImportedDataSizeInBytes
+ * @property int<0, max> $ImportedDataSizeInBytes
  * @property string $PriorModelMetrics
  * @property int $RetrainingAvailableDataInDays
  * @property 'MODEL_PROMOTED'|'MODEL_NOT_PROMOTED'|'RETRAINING_INTERNAL_ERROR'|'RETRAINING_CUSTOMER_ERROR'|'RETRAINING_CANCELLED' $AutoPromotionResult

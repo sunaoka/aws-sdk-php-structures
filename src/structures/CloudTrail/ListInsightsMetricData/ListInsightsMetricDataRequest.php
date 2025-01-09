@@ -11,9 +11,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ErrorCode
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property int $Period
+ * @property int<60, 3600> $Period
  * @property 'FillWithZeros'|'NonZeroData' $DataType
- * @property int $MaxResults
+ * @property int<1, 21600> $MaxResults
  * @property string $NextToken
  */
 class ListInsightsMetricDataRequest extends Request
@@ -26,9 +26,9 @@ class ListInsightsMetricDataRequest extends Request
      *     ErrorCode?: string,
      *     StartTime?: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Period?: int,
+     *     Period?: int<60, 3600>,
      *     DataType?: 'FillWithZeros'|'NonZeroData',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 21600>,
      *     NextToken?: string
      * } $args
      */

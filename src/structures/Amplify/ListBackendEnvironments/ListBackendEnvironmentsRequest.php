@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $appId
  * @property string $environmentName
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<0, 50> $maxResults
  */
 class ListBackendEnvironmentsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListBackendEnvironmentsRequest extends Request
      *     appId: string,
      *     environmentName?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<0, 50>
      * } $args
      */
     public function __construct(array $args)

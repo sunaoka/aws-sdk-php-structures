@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<ServerProcess> $ServerProcesses
- * @property int $MaxConcurrentGameSessionActivations
- * @property int $GameSessionActivationTimeoutSeconds
+ * @property int<1, 2147483647> $MaxConcurrentGameSessionActivations
+ * @property int<1, 600> $GameSessionActivationTimeoutSeconds
  */
 class RuntimeConfiguration extends Shape
 {
     /**
      * @param array{
      *     ServerProcesses?: list<ServerProcess>,
-     *     MaxConcurrentGameSessionActivations?: int,
-     *     GameSessionActivationTimeoutSeconds?: int
+     *     MaxConcurrentGameSessionActivations?: int<1, 2147483647>,
+     *     GameSessionActivationTimeoutSeconds?: int<1, 600>
      * } $args
      */
     public function __construct(array $args = [])

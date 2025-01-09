@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $resourceTypes
  * @property list<'S3'|'CWL'|'FH'> $deliveryDestinationTypes
  * @property string $nextToken
- * @property int $limit
+ * @property int<1, 50> $limit
  */
 class DescribeConfigurationTemplatesRequest extends Request
 {
@@ -21,7 +21,7 @@ class DescribeConfigurationTemplatesRequest extends Request
      *     resourceTypes?: list<string>,
      *     deliveryDestinationTypes?: list<'S3'|'CWL'|'FH'>,
      *     nextToken?: string,
-     *     limit?: int
+     *     limit?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

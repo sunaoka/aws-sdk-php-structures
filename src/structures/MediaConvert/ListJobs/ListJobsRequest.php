@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 20> $MaxResults
  * @property string $NextToken
  * @property 'ASCENDING'|'DESCENDING' $Order
  * @property string $Queue
@@ -15,7 +15,7 @@ class ListJobsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 20>,
      *     NextToken?: string,
      *     Order?: 'ASCENDING'|'DESCENDING',
      *     Queue?: string,

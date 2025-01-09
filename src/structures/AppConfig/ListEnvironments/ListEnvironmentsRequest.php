@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationId
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListEnvironmentsRequest extends Request
@@ -14,7 +14,7 @@ class ListEnvironmentsRequest extends Request
     /**
      * @param array{
      *     ApplicationId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

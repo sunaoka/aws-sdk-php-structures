@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $description
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property int $associatedResourceCount
+ * @property int<0, max> $associatedResourceCount
  * @property array<string, string> $tags
  * @property Shapes\Integrations $integrations
  * @property array<string, string> $applicationTag

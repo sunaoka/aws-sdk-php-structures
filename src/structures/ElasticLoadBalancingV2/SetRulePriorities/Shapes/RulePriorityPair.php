@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $RuleArn
- * @property int $Priority
+ * @property int<1, 50000> $Priority
  */
 class RulePriorityPair extends Shape
 {
     /**
      * @param array{
      *     RuleArn?: string,
-     *     Priority?: int
+     *     Priority?: int<1, 50000>
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $QueryText
  * @property string $QueryId
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property list<double> $BiasPosition
  * @property Shapes\SearchTextFilter $Filter
  * @property list<'TimeZone'|'Phonemes'|'Access'|'Contact'> $AdditionalFeatures
@@ -23,7 +23,7 @@ class SearchTextRequest extends Request
      * @param array{
      *     QueryText?: string,
      *     QueryId?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     BiasPosition?: list<double>,
      *     Filter?: Shapes\SearchTextFilter,
      *     AdditionalFeatures?: list<'TimeZone'|'Phonemes'|'Access'|'Contact'>,

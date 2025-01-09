@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property int $maxSampleCount
- * @property int $minimumSamplingIntervalMs
+ * @property int<1, 4294967295> $maxSampleCount
+ * @property int<0, 4294967295> $minimumSamplingIntervalMs
  * @property string $dataPartitionId
  */
 class SignalInformation extends Shape
@@ -15,8 +15,8 @@ class SignalInformation extends Shape
     /**
      * @param array{
      *     name: string,
-     *     maxSampleCount?: int,
-     *     minimumSamplingIntervalMs?: int,
+     *     maxSampleCount?: int<1, 4294967295>,
+     *     minimumSamplingIntervalMs?: int<0, 4294967295>,
      *     dataPartitionId?: string
      * } $args
      */

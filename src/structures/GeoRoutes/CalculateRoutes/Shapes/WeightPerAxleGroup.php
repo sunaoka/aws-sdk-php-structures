@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Single
- * @property int $Tandem
- * @property int $Triple
- * @property int $Quad
- * @property int $Quint
+ * @property int<0, 4294967295> $Single
+ * @property int<0, 4294967295> $Tandem
+ * @property int<0, 4294967295> $Triple
+ * @property int<0, 4294967295> $Quad
+ * @property int<0, 4294967295> $Quint
  */
 class WeightPerAxleGroup extends Shape
 {
     /**
      * @param array{
-     *     Single?: int,
-     *     Tandem?: int,
-     *     Triple?: int,
-     *     Quad?: int,
-     *     Quint?: int
+     *     Single?: int<0, 4294967295>,
+     *     Tandem?: int<0, 4294967295>,
+     *     Triple?: int<0, 4294967295>,
+     *     Quad?: int<0, 4294967295>,
+     *     Quint?: int<0, 4294967295>
      * } $args
      */
     public function __construct(array $args = [])

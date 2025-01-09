@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PcaConnectorScep\ListChallengeMetadata;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  * @property string $ConnectorArn
  */
@@ -13,7 +13,7 @@ class ListChallengeMetadataRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string,
      *     ConnectorArn: string
      * } $args

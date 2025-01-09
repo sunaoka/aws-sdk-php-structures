@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ModelPackageVersionArn
  * @property string $ModelName
- * @property int $JobDurationInSeconds
+ * @property int<1, max> $JobDurationInSeconds
  * @property TrafficPattern $TrafficPattern
  * @property RecommendationJobResourceLimit $ResourceLimit
  * @property list<EndpointInputConfiguration> $EndpointConfigurations
@@ -22,7 +22,7 @@ class RecommendationJobInputConfig extends Shape
      * @param array{
      *     ModelPackageVersionArn?: string,
      *     ModelName?: string,
-     *     JobDurationInSeconds?: int,
+     *     JobDurationInSeconds?: int<1, max>,
      *     TrafficPattern?: TrafficPattern,
      *     ResourceLimit?: RecommendationJobResourceLimit,
      *     EndpointConfigurations?: list<EndpointInputConfiguration>,

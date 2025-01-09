@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AppId
  * @property string $BackendEnvironmentName
  * @property string $JobId
- * @property int $MaxResults
+ * @property int<1, 25> $MaxResults
  * @property string $NextToken
  * @property string $Operation
  * @property string $Status
@@ -20,7 +20,7 @@ class ListBackendJobsRequest extends Request
      *     AppId: string,
      *     BackendEnvironmentName: string,
      *     JobId?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 25>,
      *     NextToken?: string,
      *     Operation?: string,
      *     Status?: string

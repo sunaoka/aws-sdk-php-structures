@@ -9,16 +9,16 @@ use Sunaoka\Aws\Structures\Shape;
  * @property float $Confidence
  * @property string $Text
  * @property 'HANDWRITING'|'PRINTED' $TextType
- * @property int $RowIndex
- * @property int $ColumnIndex
- * @property int $RowSpan
- * @property int $ColumnSpan
+ * @property int<0, max> $RowIndex
+ * @property int<0, max> $ColumnIndex
+ * @property int<0, max> $RowSpan
+ * @property int<0, max> $ColumnSpan
  * @property Geometry $Geometry
  * @property string $Id
  * @property list<Relationship> $Relationships
  * @property list<'KEY'|'VALUE'|'COLUMN_HEADER'|'TABLE_TITLE'|'TABLE_FOOTER'|'TABLE_SECTION_TITLE'|'TABLE_SUMMARY'|'STRUCTURED_TABLE'|'SEMI_STRUCTURED_TABLE'> $EntityTypes
  * @property 'SELECTED'|'NOT_SELECTED' $SelectionStatus
- * @property int $Page
+ * @property int<0, max> $Page
  * @property Query $Query
  */
 class Block extends Shape
@@ -29,16 +29,16 @@ class Block extends Shape
      *     Confidence?: float,
      *     Text?: string,
      *     TextType?: 'HANDWRITING'|'PRINTED',
-     *     RowIndex?: int,
-     *     ColumnIndex?: int,
-     *     RowSpan?: int,
-     *     ColumnSpan?: int,
+     *     RowIndex?: int<0, max>,
+     *     ColumnIndex?: int<0, max>,
+     *     RowSpan?: int<0, max>,
+     *     ColumnSpan?: int<0, max>,
      *     Geometry?: Geometry,
      *     Id?: string,
      *     Relationships?: list<Relationship>,
      *     EntityTypes?: list<'KEY'|'VALUE'|'COLUMN_HEADER'|'TABLE_TITLE'|'TABLE_FOOTER'|'TABLE_SECTION_TITLE'|'TABLE_SUMMARY'|'STRUCTURED_TABLE'|'SEMI_STRUCTURED_TABLE'>,
      *     SelectionStatus?: 'SELECTED'|'NOT_SELECTED',
-     *     Page?: int,
+     *     Page?: int<0, max>,
      *     Query?: Query
      * } $args
      */

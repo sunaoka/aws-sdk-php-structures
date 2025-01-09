@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'UPCONVERT'|'DISABLED' $Convert608To708
- * @property int $SourceAncillaryChannelNumber
+ * @property int<1, 4> $SourceAncillaryChannelNumber
  * @property 'END_OF_INPUT'|'DISABLED' $TerminateCaptions
  */
 class AncillarySourceSettings extends Shape
@@ -14,7 +14,7 @@ class AncillarySourceSettings extends Shape
     /**
      * @param array{
      *     Convert608To708?: 'UPCONVERT'|'DISABLED',
-     *     SourceAncillaryChannelNumber?: int,
+     *     SourceAncillaryChannelNumber?: int<1, 4>,
      *     TerminateCaptions?: 'END_OF_INPUT'|'DISABLED'
      * } $args
      */

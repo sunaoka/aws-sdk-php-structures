@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
  * @property Shapes\SlotDateTimeRangeRequest $FirstSlotStartTimeRange
- * @property int $MaxResults
+ * @property int<5, 300> $MaxResults
  * @property int $MaxSlotDurationInHours
  * @property int $MinSlotDurationInHours
  * @property string $NextToken
@@ -21,7 +21,7 @@ class DescribeScheduledInstanceAvailabilityRequest extends Request
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>,
      *     FirstSlotStartTimeRange: Shapes\SlotDateTimeRangeRequest,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 300>,
      *     MaxSlotDurationInHours?: int,
      *     MinSlotDurationInHours?: int,
      *     NextToken?: string,

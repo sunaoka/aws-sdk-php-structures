@@ -27,7 +27,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'ECDH'> $KeyAgreementAlgorithms
  * @property bool $MultiRegion
  * @property MultiRegionConfiguration $MultiRegionConfiguration
- * @property int $PendingDeletionWindowInDays
+ * @property int<1, 365> $PendingDeletionWindowInDays
  * @property list<'HMAC_SHA_224'|'HMAC_SHA_256'|'HMAC_SHA_384'|'HMAC_SHA_512'> $MacAlgorithms
  * @property XksKeyConfigurationType $XksKeyConfiguration
  */
@@ -57,7 +57,7 @@ class KeyMetadata extends Shape
      *     KeyAgreementAlgorithms?: list<'ECDH'>,
      *     MultiRegion?: bool,
      *     MultiRegionConfiguration?: MultiRegionConfiguration,
-     *     PendingDeletionWindowInDays?: int,
+     *     PendingDeletionWindowInDays?: int<1, 365>,
      *     MacAlgorithms?: list<'HMAC_SHA_224'|'HMAC_SHA_256'|'HMAC_SHA_384'|'HMAC_SHA_512'>,
      *     XksKeyConfiguration?: XksKeyConfigurationType
      * } $args

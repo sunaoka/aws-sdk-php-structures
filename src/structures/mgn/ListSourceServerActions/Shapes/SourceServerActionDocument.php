@@ -14,9 +14,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $documentVersion
  * @property array<string, SsmExternalParameter> $externalParameters
  * @property bool $mustSucceedForCutover
- * @property int $order
+ * @property int<1001, 10000> $order
  * @property array<string, list<SsmParameterStoreParameter>> $parameters
- * @property int $timeoutSeconds
+ * @property int<1, max> $timeoutSeconds
  */
 class SourceServerActionDocument extends Shape
 {
@@ -31,9 +31,9 @@ class SourceServerActionDocument extends Shape
      *     documentVersion?: string,
      *     externalParameters?: array<string, SsmExternalParameter>,
      *     mustSucceedForCutover?: bool,
-     *     order?: int,
+     *     order?: int<1001, 10000>,
      *     parameters?: array<string, list<SsmParameterStoreParameter>>,
-     *     timeoutSeconds?: int
+     *     timeoutSeconds?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

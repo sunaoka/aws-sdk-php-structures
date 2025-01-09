@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ColumnIdentifier $Column
- * @property int $Limit
+ * @property int<1, 1000> $Limit
  * @property list<ColumnSort> $SortByMetrics
  */
 class BodySectionDynamicCategoryDimensionConfiguration extends Shape
@@ -14,7 +14,7 @@ class BodySectionDynamicCategoryDimensionConfiguration extends Shape
     /**
      * @param array{
      *     Column: ColumnIdentifier,
-     *     Limit?: int,
+     *     Limit?: int<1, 1000>,
      *     SortByMetrics?: list<ColumnSort>
      * } $args
      */

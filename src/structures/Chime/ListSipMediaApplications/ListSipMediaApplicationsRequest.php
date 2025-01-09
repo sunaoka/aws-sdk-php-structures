@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Chime\ListSipMediaApplications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 99> $MaxResults
  * @property string $NextToken
  */
 class ListSipMediaApplicationsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 99>,
      *     NextToken?: string
      * } $args
      */

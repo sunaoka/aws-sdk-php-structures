@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $eventRuleSource
  * @property string $channelArn
  * @property 'ACTIVE'|'PARTIALLY_ACTIVE'|'INACTIVE'|'DELETING' $status
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListNotificationConfigurationsRequest extends Request
@@ -18,7 +18,7 @@ class ListNotificationConfigurationsRequest extends Request
      *     eventRuleSource?: string,
      *     channelArn?: string,
      *     status?: 'ACTIVE'|'PARTIALLY_ACTIVE'|'INACTIVE'|'DELETING',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $MetricName
  * @property \Aws\Api\DateTimeResult $Timestamp
- * @property int $Step
+ * @property int<0, max> $Step
  * @property double $Value
  */
 class RawMetricData extends Shape
@@ -16,7 +16,7 @@ class RawMetricData extends Shape
      * @param array{
      *     MetricName: string,
      *     Timestamp: \Aws\Api\DateTimeResult,
-     *     Step?: int,
+     *     Step?: int<0, max>,
      *     Value: double
      * } $args
      */

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double $Heading
  * @property string $Id
  * @property list<double> $Position
- * @property int $ServiceDuration
+ * @property int<0, 4294967295> $ServiceDuration
  * @property WaypointOptimizationSideOfStreetOptions $SideOfStreet
  */
 class WaypointOptimizationWaypoint extends Shape
@@ -24,7 +24,7 @@ class WaypointOptimizationWaypoint extends Shape
      *     Heading?: double,
      *     Id?: string,
      *     Position: list<double>,
-     *     ServiceDuration?: int,
+     *     ServiceDuration?: int<0, 4294967295>,
      *     SideOfStreet?: WaypointOptimizationSideOfStreetOptions
      * } $args
      */

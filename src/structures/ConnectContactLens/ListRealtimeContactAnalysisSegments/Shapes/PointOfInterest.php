@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectContactLens\ListRealtimeContactAnalysisS
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $BeginOffsetMillis
- * @property int $EndOffsetMillis
+ * @property int<0, max> $BeginOffsetMillis
+ * @property int<0, max> $EndOffsetMillis
  */
 class PointOfInterest extends Shape
 {
     /**
      * @param array{
-     *     BeginOffsetMillis: int,
-     *     EndOffsetMillis: int
+     *     BeginOffsetMillis: int<0, max>,
+     *     EndOffsetMillis: int<0, max>
      * } $args
      */
     public function __construct(array $args)

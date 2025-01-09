@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TrafficPolicyId
- * @property int $TrafficPolicyVersion
+ * @property int<1, 1000> $TrafficPolicyVersion
  * @property string $HostedZoneIdMarker
  * @property string $TrafficPolicyInstanceNameMarker
  * @property 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS' $TrafficPolicyInstanceTypeMarker
@@ -17,7 +17,7 @@ class ListTrafficPolicyInstancesByPolicyRequest extends Request
     /**
      * @param array{
      *     TrafficPolicyId: string,
-     *     TrafficPolicyVersion: int,
+     *     TrafficPolicyVersion: int<1, 1000>,
      *     HostedZoneIdMarker?: string,
      *     TrafficPolicyInstanceNameMarker?: string,
      *     TrafficPolicyInstanceTypeMarker?: 'SOA'|'A'|'TXT'|'NS'|'CNAME'|'MX'|'NAPTR'|'PTR'|'SRV'|'SPF'|'AAAA'|'CAA'|'DS'|'TLSA'|'SSHFP'|'SVCB'|'HTTPS',

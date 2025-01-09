@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MQBrokerAccessCredentials $Credentials
  * @property string $QueueName
  * @property string $VirtualHost
- * @property int $BatchSize
- * @property int $MaximumBatchingWindowInSeconds
+ * @property int<1, 10000> $BatchSize
+ * @property int<0, 300> $MaximumBatchingWindowInSeconds
  */
 class PipeSourceRabbitMQBrokerParameters extends Shape
 {
@@ -18,8 +18,8 @@ class PipeSourceRabbitMQBrokerParameters extends Shape
      *     Credentials: MQBrokerAccessCredentials,
      *     QueueName: string,
      *     VirtualHost?: string,
-     *     BatchSize?: int,
-     *     MaximumBatchingWindowInSeconds?: int
+     *     BatchSize?: int<1, 10000>,
+     *     MaximumBatchingWindowInSeconds?: int<0, 300>
      * } $args
      */
     public function __construct(array $args)

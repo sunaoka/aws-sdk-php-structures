@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'ABORTED' $status
  * @property \Aws\Api\DateTimeResult $startDate
  * @property \Aws\Api\DateTimeResult $stopDate
- * @property int $maxConcurrency
+ * @property int<0, max> $maxConcurrency
  * @property float $toleratedFailurePercentage
- * @property int $toleratedFailureCount
+ * @property int<0, max> $toleratedFailureCount
  * @property Shapes\MapRunItemCounts $itemCounts
  * @property Shapes\MapRunExecutionCounts $executionCounts
  * @property int $redriveCount

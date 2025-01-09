@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\ListTagSyncTasksFilter> $Filters
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListTagSyncTasksRequest extends Request
@@ -14,7 +14,7 @@ class ListTagSyncTasksRequest extends Request
     /**
      * @param array{
      *     Filters?: list<Shapes\ListTagSyncTasksFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StackName
  * @property list<'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'> $StackResourceDriftStatusFilters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class DescribeStackResourceDriftsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeStackResourceDriftsRequest extends Request
      *     StackName: string,
      *     StackResourceDriftStatusFilters?: list<'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

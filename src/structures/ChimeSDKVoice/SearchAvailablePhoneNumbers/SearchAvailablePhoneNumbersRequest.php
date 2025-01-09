@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $State
  * @property string $TollFreePrefix
  * @property 'Local'|'TollFree' $PhoneNumberType
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class SearchAvailablePhoneNumbersRequest extends Request
@@ -24,7 +24,7 @@ class SearchAvailablePhoneNumbersRequest extends Request
      *     State?: string,
      *     TollFreePrefix?: string,
      *     PhoneNumberType?: 'Local'|'TollFree',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

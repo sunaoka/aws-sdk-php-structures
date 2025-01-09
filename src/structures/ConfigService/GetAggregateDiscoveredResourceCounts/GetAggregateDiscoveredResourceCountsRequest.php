@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ConfigurationAggregatorName
  * @property Shapes\ResourceCountFilters $Filters
  * @property 'RESOURCE_TYPE'|'ACCOUNT_ID'|'AWS_REGION' $GroupByKey
- * @property int $Limit
+ * @property int<0, 1000> $Limit
  * @property string $NextToken
  */
 class GetAggregateDiscoveredResourceCountsRequest extends Request
@@ -18,7 +18,7 @@ class GetAggregateDiscoveredResourceCountsRequest extends Request
      *     ConfigurationAggregatorName: string,
      *     Filters?: Shapes\ResourceCountFilters,
      *     GroupByKey?: 'RESOURCE_TYPE'|'ACCOUNT_ID'|'AWS_REGION',
-     *     Limit?: int,
+     *     Limit?: int<0, 1000>,
      *     NextToken?: string
      * } $args
      */

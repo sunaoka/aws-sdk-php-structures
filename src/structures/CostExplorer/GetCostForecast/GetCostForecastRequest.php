@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'DAILY'|'MONTHLY'|'HOURLY' $Granularity
  * @property Shapes\Expression $Filter
  * @property string $BillingViewArn
- * @property int $PredictionIntervalLevel
+ * @property int<51, 99> $PredictionIntervalLevel
  */
 class GetCostForecastRequest extends Request
 {
@@ -21,7 +21,7 @@ class GetCostForecastRequest extends Request
      *     Granularity: 'DAILY'|'MONTHLY'|'HOURLY',
      *     Filter?: Shapes\Expression,
      *     BillingViewArn?: string,
-     *     PredictionIntervalLevel?: int
+     *     PredictionIntervalLevel?: int<51, 99>
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LoadBalancerArn
  * @property list<string> $ListenerArns
  * @property string $Marker
- * @property int $PageSize
+ * @property int<1, 400> $PageSize
  */
 class DescribeListenersRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeListenersRequest extends Request
      *     LoadBalancerArn?: string,
      *     ListenerArns?: list<string>,
      *     Marker?: string,
-     *     PageSize?: int
+     *     PageSize?: int<1, 400>
      * } $args
      */
     public function __construct(array $args = [])

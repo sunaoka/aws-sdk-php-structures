@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Scheduler\GetSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaximumWindowInMinutes
+ * @property int<1, 1440> $MaximumWindowInMinutes
  * @property 'OFF'|'FLEXIBLE' $Mode
  */
 class FlexibleTimeWindow extends Shape
 {
     /**
      * @param array{
-     *     MaximumWindowInMinutes?: int,
+     *     MaximumWindowInMinutes?: int<1, 1440>,
      *     Mode: 'OFF'|'FLEXIBLE'
      * } $args
      */

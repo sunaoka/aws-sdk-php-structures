@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'LogStreamName'|'LastEventTime' $orderBy
  * @property bool $descending
  * @property string $nextToken
- * @property int $limit
+ * @property int<1, 50> $limit
  */
 class DescribeLogStreamsRequest extends Request
 {
@@ -23,7 +23,7 @@ class DescribeLogStreamsRequest extends Request
      *     orderBy?: 'LogStreamName'|'LastEventTime',
      *     descending?: bool,
      *     nextToken?: string,
-     *     limit?: int
+     *     limit?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

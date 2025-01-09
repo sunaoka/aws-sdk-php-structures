@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $applicationId
- * @property int $currentApplicationVersion
+ * @property int<1, max> $currentApplicationVersion
  * @property Shapes\Definition $definition
  * @property string $description
  */
@@ -15,7 +15,7 @@ class UpdateApplicationRequest extends Request
     /**
      * @param array{
      *     applicationId: string,
-     *     currentApplicationVersion: int,
+     *     currentApplicationVersion: int<1, max>,
      *     definition?: Shapes\Definition,
      *     description?: string
      * } $args

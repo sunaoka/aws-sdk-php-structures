@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'FAILED'|'TIMED_OUT'|'ALL' $failureType
- * @property int $numberOfRetries
+ * @property int<0, 10> $numberOfRetries
  */
 class RetryCriteria extends Shape
 {
     /**
      * @param array{
      *     failureType: 'FAILED'|'TIMED_OUT'|'ALL',
-     *     numberOfRetries: int
+     *     numberOfRetries: int<0, 10>
      * } $args
      */
     public function __construct(array $args)

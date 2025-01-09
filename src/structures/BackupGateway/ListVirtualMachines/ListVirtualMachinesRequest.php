@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HypervisorArn
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $NextToken
  */
 class ListVirtualMachinesRequest extends Request
@@ -14,7 +14,7 @@ class ListVirtualMachinesRequest extends Request
     /**
      * @param array{
      *     HypervisorArn?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

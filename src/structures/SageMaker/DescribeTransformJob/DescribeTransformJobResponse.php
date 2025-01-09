@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $TransformJobStatus
  * @property string $FailureReason
  * @property string $ModelName
- * @property int $MaxConcurrentTransforms
+ * @property int<0, max> $MaxConcurrentTransforms
  * @property Shapes\ModelClientConfig $ModelClientConfig
- * @property int $MaxPayloadInMB
+ * @property int<0, max> $MaxPayloadInMB
  * @property 'MultiRecord'|'SingleRecord' $BatchStrategy
  * @property array<string, string> $Environment
  * @property Shapes\TransformInput $TransformInput

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $region
- * @property int $readCapacityUnits
+ * @property int<1, max> $readCapacityUnits
  * @property AutoScalingSettings $readCapacityAutoScaling
  */
 class ReplicaSpecification extends Shape
@@ -14,7 +14,7 @@ class ReplicaSpecification extends Shape
     /**
      * @param array{
      *     region: string,
-     *     readCapacityUnits?: int,
+     *     readCapacityUnits?: int<1, max>,
      *     readCapacityAutoScaling?: AutoScalingSettings
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $principal
  * @property string $marker
- * @property int $pageSize
+ * @property int<1, 250> $pageSize
  * @property bool $ascendingOrder
  */
 class ListPrincipalPoliciesRequest extends Request
@@ -16,7 +16,7 @@ class ListPrincipalPoliciesRequest extends Request
      * @param array{
      *     principal: string,
      *     marker?: string,
-     *     pageSize?: int,
+     *     pageSize?: int<1, 250>,
      *     ascendingOrder?: bool
      * } $args
      */

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $endTime
  * @property string $experiment
  * @property list<string> $metricNames
- * @property int $period
+ * @property int<300, 90000> $period
  * @property string $project
  * @property list<'BayesianInference'> $reportNames
  * @property list<'BaseStat'|'TreatmentEffect'|'ConfidenceInterval'|'PValue'> $resultStats
@@ -24,7 +24,7 @@ class GetExperimentResultsRequest extends Request
      *     endTime?: \Aws\Api\DateTimeResult,
      *     experiment: string,
      *     metricNames: list<string>,
-     *     period?: int,
+     *     period?: int<300, 90000>,
      *     project: string,
      *     reportNames?: list<'BayesianInference'>,
      *     resultStats?: list<'BaseStat'|'TreatmentEffect'|'ConfidenceInterval'|'PValue'>,

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\WorkflowTypeFilter $typeFilter
  * @property Shapes\TagFilter $tagFilter
  * @property string $nextPageToken
- * @property int $maximumPageSize
+ * @property int<0, 1000> $maximumPageSize
  * @property bool $reverseOrder
  * @property Shapes\WorkflowExecutionFilter $executionFilter
  */
@@ -23,7 +23,7 @@ class ListOpenWorkflowExecutionsRequest extends Request
      *     typeFilter?: Shapes\WorkflowTypeFilter,
      *     tagFilter?: Shapes\TagFilter,
      *     nextPageToken?: string,
-     *     maximumPageSize?: int,
+     *     maximumPageSize?: int<0, 1000>,
      *     reverseOrder?: bool,
      *     executionFilter?: Shapes\WorkflowExecutionFilter
      * } $args

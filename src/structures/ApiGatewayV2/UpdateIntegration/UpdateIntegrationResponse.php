@@ -23,7 +23,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property array<string, array<string, string>> $ResponseParameters
  * @property array<string, string> $RequestTemplates
  * @property string $TemplateSelectionExpression
- * @property int $TimeoutInMillis
+ * @property int<50, 30000> $TimeoutInMillis
  * @property Shapes\TlsConfig $TlsConfig
  */
 class UpdateIntegrationResponse extends Response

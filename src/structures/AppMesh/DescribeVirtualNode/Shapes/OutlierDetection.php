@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property Duration $baseEjectionDuration
  * @property Duration $interval
- * @property int $maxEjectionPercent
- * @property int $maxServerErrors
+ * @property int<0, 100> $maxEjectionPercent
+ * @property int<1, max> $maxServerErrors
  */
 class OutlierDetection extends Shape
 {
@@ -16,8 +16,8 @@ class OutlierDetection extends Shape
      * @param array{
      *     baseEjectionDuration: Duration,
      *     interval: Duration,
-     *     maxEjectionPercent: int,
-     *     maxServerErrors: int
+     *     maxEjectionPercent: int<0, 100>,
+     *     maxServerErrors: int<1, max>
      * } $args
      */
     public function __construct(array $args)

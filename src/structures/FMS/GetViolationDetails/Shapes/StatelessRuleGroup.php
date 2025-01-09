@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $RuleGroupName
  * @property string $ResourceId
- * @property int $Priority
+ * @property int<1, 65535> $Priority
  */
 class StatelessRuleGroup extends Shape
 {
@@ -15,7 +15,7 @@ class StatelessRuleGroup extends Shape
      * @param array{
      *     RuleGroupName?: string,
      *     ResourceId?: string,
-     *     Priority?: int
+     *     Priority?: int<1, 65535>
      * } $args
      */
     public function __construct(array $args = [])

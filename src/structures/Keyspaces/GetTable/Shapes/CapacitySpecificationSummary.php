@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'PAY_PER_REQUEST'|'PROVISIONED' $throughputMode
- * @property int $readCapacityUnits
- * @property int $writeCapacityUnits
+ * @property int<1, max> $readCapacityUnits
+ * @property int<1, max> $writeCapacityUnits
  * @property \Aws\Api\DateTimeResult $lastUpdateToPayPerRequestTimestamp
  */
 class CapacitySpecificationSummary extends Shape
@@ -15,8 +15,8 @@ class CapacitySpecificationSummary extends Shape
     /**
      * @param array{
      *     throughputMode: 'PAY_PER_REQUEST'|'PROVISIONED',
-     *     readCapacityUnits?: int,
-     *     writeCapacityUnits?: int,
+     *     readCapacityUnits?: int<1, max>,
+     *     writeCapacityUnits?: int<1, max>,
      *     lastUpdateToPayPerRequestTimestamp?: \Aws\Api\DateTimeResult
      * } $args
      */

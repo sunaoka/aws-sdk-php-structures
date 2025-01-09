@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $NamePrefix
  * @property string $EventBusName
  * @property string $NextToken
- * @property int $Limit
+ * @property int<1, 100> $Limit
  */
 class ListRulesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListRulesRequest extends Request
      *     NamePrefix?: string,
      *     EventBusName?: string,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

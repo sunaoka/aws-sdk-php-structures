@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ConfigurationAggregatorName
  * @property list<'FAILED'|'SUCCEEDED'|'OUTDATED'> $UpdateStatus
  * @property string $NextToken
- * @property int $Limit
+ * @property int<0, 100> $Limit
  */
 class DescribeConfigurationAggregatorSourcesStatusRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeConfigurationAggregatorSourcesStatusRequest extends Request
      *     ConfigurationAggregatorName: string,
      *     UpdateStatus?: list<'FAILED'|'SUCCEEDED'|'OUTDATED'>,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<0, 100>
      * } $args
      */
     public function __construct(array $args)

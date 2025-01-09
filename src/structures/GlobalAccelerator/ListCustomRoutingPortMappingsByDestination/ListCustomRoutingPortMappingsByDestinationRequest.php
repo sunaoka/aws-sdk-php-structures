@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $EndpointId
  * @property string $DestinationAddress
- * @property int $MaxResults
+ * @property int<1, 20000> $MaxResults
  * @property string $NextToken
  */
 class ListCustomRoutingPortMappingsByDestinationRequest extends Request
@@ -16,7 +16,7 @@ class ListCustomRoutingPortMappingsByDestinationRequest extends Request
      * @param array{
      *     EndpointId: string,
      *     DestinationAddress: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 20000>,
      *     NextToken?: string
      * } $args
      */

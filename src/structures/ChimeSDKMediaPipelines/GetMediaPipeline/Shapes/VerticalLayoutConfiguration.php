@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'JoinSequence'|'SpeakerSequence' $TileOrder
  * @property 'Left'|'Right' $TilePosition
- * @property int $TileCount
+ * @property int<1, 10> $TileCount
  * @property string $TileAspectRatio
  */
 class VerticalLayoutConfiguration extends Shape
@@ -16,7 +16,7 @@ class VerticalLayoutConfiguration extends Shape
      * @param array{
      *     TileOrder?: 'JoinSequence'|'SpeakerSequence',
      *     TilePosition?: 'Left'|'Right',
-     *     TileCount?: int,
+     *     TileCount?: int<1, 10>,
      *     TileAspectRatio?: string
      * } $args
      */

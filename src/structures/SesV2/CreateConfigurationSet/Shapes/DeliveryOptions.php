@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'REQUIRE'|'OPTIONAL' $TlsPolicy
  * @property string $SendingPoolName
- * @property int $MaxDeliverySeconds
+ * @property int<300, 50400> $MaxDeliverySeconds
  */
 class DeliveryOptions extends Shape
 {
@@ -15,7 +15,7 @@ class DeliveryOptions extends Shape
      * @param array{
      *     TlsPolicy?: 'REQUIRE'|'OPTIONAL',
      *     SendingPoolName?: string,
-     *     MaxDeliverySeconds?: int
+     *     MaxDeliverySeconds?: int<300, 50400>
      * } $args
      */
     public function __construct(array $args = [])

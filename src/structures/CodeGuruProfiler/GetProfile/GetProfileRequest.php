@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $accept
  * @property \Aws\Api\DateTimeResult $endTime
- * @property int $maxDepth
+ * @property int<1, 10000> $maxDepth
  * @property string $period
  * @property string $profilingGroupName
  * @property \Aws\Api\DateTimeResult $startTime
@@ -18,7 +18,7 @@ class GetProfileRequest extends Request
      * @param array{
      *     accept?: string,
      *     endTime?: \Aws\Api\DateTimeResult,
-     *     maxDepth?: int,
+     *     maxDepth?: int<1, 10000>,
      *     period?: string,
      *     profilingGroupName: string,
      *     startTime?: \Aws\Api\DateTimeResult

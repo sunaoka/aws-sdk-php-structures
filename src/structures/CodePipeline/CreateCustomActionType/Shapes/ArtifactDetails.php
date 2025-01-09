@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodePipeline\CreateCustomActionType\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $minimumCount
- * @property int $maximumCount
+ * @property int<0, 5> $minimumCount
+ * @property int<0, 5> $maximumCount
  */
 class ArtifactDetails extends Shape
 {
     /**
      * @param array{
-     *     minimumCount: int,
-     *     maximumCount: int
+     *     minimumCount: int<0, 5>,
+     *     maximumCount: int<0, 5>
      * } $args
      */
     public function __construct(array $args)

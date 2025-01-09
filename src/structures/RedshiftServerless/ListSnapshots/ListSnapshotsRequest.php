@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property \Aws\Api\DateTimeResult $endTime
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $namespaceArn
  * @property string $namespaceName
  * @property string $nextToken
@@ -18,7 +18,7 @@ class ListSnapshotsRequest extends Request
     /**
      * @param array{
      *     endTime?: \Aws\Api\DateTimeResult,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     namespaceArn?: string,
      *     namespaceName?: string,
      *     nextToken?: string,

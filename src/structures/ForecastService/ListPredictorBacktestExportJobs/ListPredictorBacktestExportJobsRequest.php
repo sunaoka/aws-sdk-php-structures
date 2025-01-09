@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property list<Shapes\Filter> $Filters
  */
 class ListPredictorBacktestExportJobsRequest extends Request
@@ -14,7 +14,7 @@ class ListPredictorBacktestExportJobsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     Filters?: list<Shapes\Filter>
      * } $args
      */

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListQueuedMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $FPort
+ * @property int<1, 223> $FPort
  * @property ParticipatingGateways $ParticipatingGateways
  */
 class LoRaWANSendDataToDevice extends Shape
 {
     /**
      * @param array{
-     *     FPort?: int,
+     *     FPort?: int<1, 223>,
      *     ParticipatingGateways?: ParticipatingGateways
      * } $args
      */

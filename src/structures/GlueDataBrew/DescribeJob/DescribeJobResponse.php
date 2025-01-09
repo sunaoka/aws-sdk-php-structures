@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $LastModifiedDate
  * @property 'ENABLE'|'DISABLE' $LogSubscription
  * @property int $MaxCapacity
- * @property int $MaxRetries
+ * @property int<0, max> $MaxRetries
  * @property list<Shapes\Output> $Outputs
  * @property list<Shapes\DataCatalogOutput> $DataCatalogOutputs
  * @property list<Shapes\DatabaseOutput> $DatabaseOutputs
@@ -27,7 +27,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ResourceArn
  * @property string $RoleArn
  * @property array<string, string> $Tags
- * @property int $Timeout
+ * @property int<0, max> $Timeout
  * @property Shapes\JobSample $JobSample
  */
 class DescribeJobResponse extends Response

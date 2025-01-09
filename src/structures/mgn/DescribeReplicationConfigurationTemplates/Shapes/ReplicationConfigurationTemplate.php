@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property bool $associateDefaultSecurityGroup
- * @property int $bandwidthThrottling
+ * @property int<0, 10000> $bandwidthThrottling
  * @property bool $createPublicIP
  * @property 'PRIVATE_IP'|'PUBLIC_IP' $dataPlaneRouting
  * @property 'GP2'|'ST1'|'GP3' $defaultLargeStagingDiskType
@@ -28,7 +28,7 @@ class ReplicationConfigurationTemplate extends Shape
      * @param array{
      *     arn?: string,
      *     associateDefaultSecurityGroup?: bool,
-     *     bandwidthThrottling?: int,
+     *     bandwidthThrottling?: int<0, 10000>,
      *     createPublicIP?: bool,
      *     dataPlaneRouting?: 'PRIVATE_IP'|'PUBLIC_IP',
      *     defaultLargeStagingDiskType?: 'GP2'|'ST1'|'GP3',

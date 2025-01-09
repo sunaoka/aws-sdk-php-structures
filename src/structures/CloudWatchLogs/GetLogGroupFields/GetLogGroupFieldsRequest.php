@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $logGroupName
- * @property int $time
+ * @property int<0, max> $time
  * @property string $logGroupIdentifier
  */
 class GetLogGroupFieldsRequest extends Request
@@ -14,7 +14,7 @@ class GetLogGroupFieldsRequest extends Request
     /**
      * @param array{
      *     logGroupName?: string,
-     *     time?: int,
+     *     time?: int<0, max>,
      *     logGroupIdentifier?: string
      * } $args
      */

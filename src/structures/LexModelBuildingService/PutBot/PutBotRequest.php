@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property double $nluIntentConfidenceThreshold
  * @property Shapes\Prompt $clarificationPrompt
  * @property Shapes\Statement $abortStatement
- * @property int $idleSessionTTLInSeconds
+ * @property int<60, 86400> $idleSessionTTLInSeconds
  * @property string $voiceId
  * @property string $checksum
  * @property 'SAVE'|'BUILD' $processBehavior
@@ -33,7 +33,7 @@ class PutBotRequest extends Request
      *     nluIntentConfidenceThreshold?: double,
      *     clarificationPrompt?: Shapes\Prompt,
      *     abortStatement?: Shapes\Statement,
-     *     idleSessionTTLInSeconds?: int,
+     *     idleSessionTTLInSeconds?: int<60, 86400>,
      *     voiceId?: string,
      *     checksum?: string,
      *     processBehavior?: 'SAVE'|'BUILD',

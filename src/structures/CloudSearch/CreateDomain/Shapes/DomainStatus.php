@@ -15,8 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $RequiresIndexDocuments
  * @property bool $Processing
  * @property string $SearchInstanceType
- * @property int $SearchPartitionCount
- * @property int $SearchInstanceCount
+ * @property int<1, max> $SearchPartitionCount
+ * @property int<1, max> $SearchInstanceCount
  * @property Limits $Limits
  */
 class DomainStatus extends Shape
@@ -33,8 +33,8 @@ class DomainStatus extends Shape
      *     RequiresIndexDocuments: bool,
      *     Processing?: bool,
      *     SearchInstanceType?: string,
-     *     SearchPartitionCount?: int,
-     *     SearchInstanceCount?: int,
+     *     SearchPartitionCount?: int<1, max>,
+     *     SearchInstanceCount?: int<1, max>,
      *     Limits?: Limits
      * } $args
      */

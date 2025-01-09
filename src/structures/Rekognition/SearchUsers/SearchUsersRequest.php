@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserId
  * @property string $FaceId
  * @property float $UserMatchThreshold
- * @property int $MaxUsers
+ * @property int<1, 500> $MaxUsers
  */
 class SearchUsersRequest extends Request
 {
@@ -19,7 +19,7 @@ class SearchUsersRequest extends Request
      *     UserId?: string,
      *     FaceId?: string,
      *     UserMatchThreshold?: float,
-     *     MaxUsers?: int
+     *     MaxUsers?: int<1, 500>
      * } $args
      */
     public function __construct(array $args)

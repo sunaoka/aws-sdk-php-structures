@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $botId
  * @property Shapes\BotVersionSortBy $sortBy
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListBotVersionsRequest extends Request
@@ -16,7 +16,7 @@ class ListBotVersionsRequest extends Request
      * @param array{
      *     botId: string,
      *     sortBy?: Shapes\BotVersionSortBy,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

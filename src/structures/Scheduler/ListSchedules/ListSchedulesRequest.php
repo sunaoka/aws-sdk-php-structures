@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GroupName
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NamePrefix
  * @property string $NextToken
  * @property 'ENABLED'|'DISABLED' $State
@@ -16,7 +16,7 @@ class ListSchedulesRequest extends Request
     /**
      * @param array{
      *     GroupName?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NamePrefix?: string,
      *     NextToken?: string,
      *     State?: 'ENABLED'|'DISABLED'

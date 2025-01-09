@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $OrganizationConformancePackNames
- * @property int $Limit
+ * @property int<0, 100> $Limit
  * @property string $NextToken
  */
 class DescribeOrganizationConformancePackStatusesRequest extends Request
@@ -14,7 +14,7 @@ class DescribeOrganizationConformancePackStatusesRequest extends Request
     /**
      * @param array{
      *     OrganizationConformancePackNames?: list<string>,
-     *     Limit?: int,
+     *     Limit?: int<0, 100>,
      *     NextToken?: string
      * } $args
      */

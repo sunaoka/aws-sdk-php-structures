@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ProvisionedProductId
  * @property string $ProvisionedProductName
  * @property list<string> $OutputKeys
- * @property int $PageSize
+ * @property int<0, 20> $PageSize
  * @property string $PageToken
  */
 class GetProvisionedProductOutputsRequest extends Request
@@ -20,7 +20,7 @@ class GetProvisionedProductOutputsRequest extends Request
      *     ProvisionedProductId?: string,
      *     ProvisionedProductName?: string,
      *     OutputKeys?: list<string>,
-     *     PageSize?: int,
+     *     PageSize?: int<0, 20>,
      *     PageToken?: string
      * } $args
      */

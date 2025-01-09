@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccessToken
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 20> $MaxResults
  */
 class ListWebAuthnCredentialsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListWebAuthnCredentialsRequest extends Request
      * @param array{
      *     AccessToken: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<0, 20>
      * } $args
      */
     public function __construct(array $args)

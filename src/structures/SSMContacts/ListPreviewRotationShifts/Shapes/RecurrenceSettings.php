@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<MonthlySetting> $MonthlySettings
  * @property list<WeeklySetting> $WeeklySettings
  * @property list<HandOffTime> $DailySettings
- * @property int $NumberOfOnCalls
+ * @property int<1, max> $NumberOfOnCalls
  * @property array<'MON'|'TUE'|'WED'|'THU'|'FRI'|'SAT'|'SUN', list<CoverageTime>> $ShiftCoverages
- * @property int $RecurrenceMultiplier
+ * @property int<1, 100> $RecurrenceMultiplier
  */
 class RecurrenceSettings extends Shape
 {
@@ -19,9 +19,9 @@ class RecurrenceSettings extends Shape
      *     MonthlySettings?: list<MonthlySetting>,
      *     WeeklySettings?: list<WeeklySetting>,
      *     DailySettings?: list<HandOffTime>,
-     *     NumberOfOnCalls: int,
+     *     NumberOfOnCalls: int<1, max>,
      *     ShiftCoverages?: array<'MON'|'TUE'|'WED'|'THU'|'FRI'|'SAT'|'SUN', list<CoverageTime>>,
-     *     RecurrenceMultiplier: int
+     *     RecurrenceMultiplier: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $aiGuardrailId
  * @property string $assistantId
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListAIGuardrailVersionsRequest extends Request
@@ -16,7 +16,7 @@ class ListAIGuardrailVersionsRequest extends Request
      * @param array{
      *     aiGuardrailId: string,
      *     assistantId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

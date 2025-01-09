@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ServerlessApplicationRepository\ListApplication
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxItems
+ * @property int<1, 100> $MaxItems
  * @property string $NextToken
  */
 class ListApplicationsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxItems?: int,
+     *     MaxItems?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

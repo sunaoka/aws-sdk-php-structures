@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $graphIdentifier
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class ListPrivateGraphEndpointsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListPrivateGraphEndpointsRequest extends Request
      * @param array{
      *     graphIdentifier: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

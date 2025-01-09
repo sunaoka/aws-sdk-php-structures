@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property Shapes\UserSearchFilter $SearchFilter
  * @property Shapes\UserSearchCriteria $SearchCriteria
  */
@@ -17,7 +17,7 @@ class SearchUsersRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     SearchFilter?: Shapes\UserSearchFilter,
      *     SearchCriteria?: Shapes\UserSearchCriteria
      * } $args

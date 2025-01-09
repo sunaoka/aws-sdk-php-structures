@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GroupName
  * @property string $Group
  * @property list<Shapes\ResourceFilter> $Filters
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListGroupResourcesRequest extends Request
@@ -18,7 +18,7 @@ class ListGroupResourcesRequest extends Request
      *     GroupName?: string,
      *     Group?: string,
      *     Filters?: list<Shapes\ResourceFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

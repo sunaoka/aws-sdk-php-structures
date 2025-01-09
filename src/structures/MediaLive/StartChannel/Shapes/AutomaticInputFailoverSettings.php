@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\StartChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ErrorClearTimeMsec
+ * @property int<1, max> $ErrorClearTimeMsec
  * @property list<FailoverCondition> $FailoverConditions
  * @property 'EQUAL_INPUT_PREFERENCE'|'PRIMARY_INPUT_PREFERRED' $InputPreference
  * @property string $SecondaryInputId
@@ -14,7 +14,7 @@ class AutomaticInputFailoverSettings extends Shape
 {
     /**
      * @param array{
-     *     ErrorClearTimeMsec?: int,
+     *     ErrorClearTimeMsec?: int<1, max>,
      *     FailoverConditions?: list<FailoverCondition>,
      *     InputPreference?: 'EQUAL_INPUT_PREFERENCE'|'PRIMARY_INPUT_PREFERRED',
      *     SecondaryInputId: string

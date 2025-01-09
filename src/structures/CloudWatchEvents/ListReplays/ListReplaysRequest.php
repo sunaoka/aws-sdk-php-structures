@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'STARTING'|'RUNNING'|'CANCELLING'|'COMPLETED'|'CANCELLED'|'FAILED' $State
  * @property string $EventSourceArn
  * @property string $NextToken
- * @property int $Limit
+ * @property int<1, 100> $Limit
  */
 class ListReplaysRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListReplaysRequest extends Request
      *     State?: 'STARTING'|'RUNNING'|'CANCELLING'|'COMPLETED'|'CANCELLED'|'FAILED',
      *     EventSourceArn?: string,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $description
  * @property string $foundationModel
  * @property Shapes\GuardrailConfiguration $guardrailConfiguration
- * @property int $idleSessionTTLInSeconds
+ * @property int<60, 3600> $idleSessionTTLInSeconds
  * @property string $instruction
  * @property Shapes\MemoryConfiguration $memoryConfiguration
  * @property 'DEFAULT'|'CUSTOM_ORCHESTRATION' $orchestrationType
@@ -34,7 +34,7 @@ class CreateAgentRequest extends Request
      *     description?: string,
      *     foundationModel?: string,
      *     guardrailConfiguration?: Shapes\GuardrailConfiguration,
-     *     idleSessionTTLInSeconds?: int,
+     *     idleSessionTTLInSeconds?: int<60, 3600>,
      *     instruction?: string,
      *     memoryConfiguration?: Shapes\MemoryConfiguration,
      *     orchestrationType?: 'DEFAULT'|'CUSTOM_ORCHESTRATION',

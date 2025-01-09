@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<IsolineConnection> $Connections
- * @property int $DistanceThreshold
+ * @property int<0, 4294967295> $DistanceThreshold
  * @property list<IsolineShapeGeometry> $Geometries
- * @property int $TimeThreshold
+ * @property int<0, 4294967295> $TimeThreshold
  */
 class Isoline extends Shape
 {
     /**
      * @param array{
      *     Connections: list<IsolineConnection>,
-     *     DistanceThreshold?: int,
+     *     DistanceThreshold?: int<0, 4294967295>,
      *     Geometries: list<IsolineShapeGeometry>,
-     *     TimeThreshold?: int
+     *     TimeThreshold?: int<0, 4294967295>
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AlertName
- * @property int $AlertSensitivityThreshold
+ * @property int<0, 100> $AlertSensitivityThreshold
  * @property string $AlertDescription
  * @property string $AnomalyDetectorArn
  * @property Shapes\Action $Action
@@ -18,7 +18,7 @@ class CreateAlertRequest extends Request
     /**
      * @param array{
      *     AlertName: string,
-     *     AlertSensitivityThreshold?: int,
+     *     AlertSensitivityThreshold?: int<0, 100>,
      *     AlertDescription?: string,
      *     AnomalyDetectorArn: string,
      *     Action: Shapes\Action,

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ParameterRanges $ParameterRanges
  * @property 'Off'|'Auto' $TrainingJobEarlyStoppingType
  * @property TuningJobCompletionCriteria $TuningJobCompletionCriteria
- * @property int $RandomSeed
+ * @property int<0, max> $RandomSeed
  */
 class HyperParameterTuningJobConfig extends Shape
 {
@@ -25,7 +25,7 @@ class HyperParameterTuningJobConfig extends Shape
      *     ParameterRanges?: ParameterRanges,
      *     TrainingJobEarlyStoppingType?: 'Off'|'Auto',
      *     TuningJobCompletionCriteria?: TuningJobCompletionCriteria,
-     *     RandomSeed?: int
+     *     RandomSeed?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

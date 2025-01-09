@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GlobalNetworkId
  * @property list<string> $ConnectionIds
  * @property string $DeviceId
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class GetConnectionsRequest extends Request
@@ -18,7 +18,7 @@ class GetConnectionsRequest extends Request
      *     GlobalNetworkId: string,
      *     ConnectionIds?: list<string>,
      *     DeviceId?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SnapshotId
- * @property int $BlockIndex
+ * @property int<0, max> $BlockIndex
  * @property string $BlockData
  * @property int $DataLength
- * @property int $Progress
+ * @property int<0, 100> $Progress
  * @property string $Checksum
  * @property 'SHA256' $ChecksumAlgorithm
  */
@@ -18,10 +18,10 @@ class PutSnapshotBlockRequest extends Request
     /**
      * @param array{
      *     SnapshotId: string,
-     *     BlockIndex: int,
+     *     BlockIndex: int<0, max>,
      *     BlockData: string,
      *     DataLength: int,
-     *     Progress?: int,
+     *     Progress?: int<0, 100>,
      *     Checksum: string,
      *     ChecksumAlgorithm: 'SHA256'
      * } $args

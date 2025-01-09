@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $failureReason
  * @property \Aws\Api\DateTimeResult $lastUpdatedDate
  * @property \Aws\Api\DateTimeResult $createdDate
- * @property int $idleSessionTTLInSeconds
+ * @property int<60, 86400> $idleSessionTTLInSeconds
  * @property string $voiceId
  * @property string $checksum
  * @property string $version

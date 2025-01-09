@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxConcurrentTransforms
- * @property int $MaxPayloadInMB
+ * @property int<0, max> $MaxConcurrentTransforms
+ * @property int<0, max> $MaxPayloadInMB
  * @property 'MultiRecord'|'SingleRecord' $BatchStrategy
  * @property array<string, string> $Environment
  * @property TransformInput $TransformInput
@@ -17,8 +17,8 @@ class TransformJobDefinition extends Shape
 {
     /**
      * @param array{
-     *     MaxConcurrentTransforms?: int,
-     *     MaxPayloadInMB?: int,
+     *     MaxConcurrentTransforms?: int<0, max>,
+     *     MaxPayloadInMB?: int<0, max>,
      *     BatchStrategy?: 'MultiRecord'|'SingleRecord',
      *     Environment?: array<string, string>,
      *     TransformInput: TransformInput,

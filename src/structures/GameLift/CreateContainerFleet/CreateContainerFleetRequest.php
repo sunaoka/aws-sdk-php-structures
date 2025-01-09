@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $PerInstanceContainerGroupDefinitionName
  * @property Shapes\ConnectionPortRange $InstanceConnectionPortRange
  * @property list<Shapes\IpPermission> $InstanceInboundPermissions
- * @property int $GameServerContainerGroupsPerInstance
+ * @property int<1, 5000> $GameServerContainerGroupsPerInstance
  * @property string $InstanceType
  * @property 'ON_DEMAND'|'SPOT' $BillingType
  * @property list<Shapes\LocationConfiguration> $Locations
@@ -31,7 +31,7 @@ class CreateContainerFleetRequest extends Request
      *     PerInstanceContainerGroupDefinitionName?: string,
      *     InstanceConnectionPortRange?: Shapes\ConnectionPortRange,
      *     InstanceInboundPermissions?: list<Shapes\IpPermission>,
-     *     GameServerContainerGroupsPerInstance?: int,
+     *     GameServerContainerGroupsPerInstance?: int<1, 5000>,
      *     InstanceType?: string,
      *     BillingType?: 'ON_DEMAND'|'SPOT',
      *     Locations?: list<Shapes\LocationConfiguration>,

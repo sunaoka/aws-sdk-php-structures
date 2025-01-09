@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ENABLED'|'DISABLED' $Status
- * @property int $MinInstanceCount
- * @property int $MaxInstanceCount
+ * @property int<0, max> $MinInstanceCount
+ * @property int<1, max> $MaxInstanceCount
  */
 class ProductionVariantManagedInstanceScaling extends Shape
 {
     /**
      * @param array{
      *     Status?: 'ENABLED'|'DISABLED',
-     *     MinInstanceCount?: int,
-     *     MaxInstanceCount?: int
+     *     MinInstanceCount?: int<0, max>,
+     *     MaxInstanceCount?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

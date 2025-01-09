@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $NetworkInterfaceId
  * @property 'http'|'https'|'tcp' $Protocol
- * @property int $Port
+ * @property int<1, 65535> $Port
  * @property list<VerifiedAccessEndpointPortRange> $PortRanges
  */
 class VerifiedAccessEndpointEniOptions extends Shape
@@ -16,7 +16,7 @@ class VerifiedAccessEndpointEniOptions extends Shape
      * @param array{
      *     NetworkInterfaceId?: string,
      *     Protocol?: 'http'|'https'|'tcp',
-     *     Port?: int,
+     *     Port?: int<1, 65535>,
      *     PortRanges?: list<VerifiedAccessEndpointPortRange>
      * } $args
      */

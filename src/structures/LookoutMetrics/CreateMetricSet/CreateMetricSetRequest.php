@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $MetricSetName
  * @property string $MetricSetDescription
  * @property list<Shapes\Metric> $MetricList
- * @property int $Offset
+ * @property int<0, 432000> $Offset
  * @property Shapes\TimestampColumn $TimestampColumn
  * @property list<string> $DimensionList
  * @property 'P1D'|'PT1H'|'PT10M'|'PT5M' $MetricSetFrequency
@@ -26,7 +26,7 @@ class CreateMetricSetRequest extends Request
      *     MetricSetName: string,
      *     MetricSetDescription?: string,
      *     MetricList: list<Shapes\Metric>,
-     *     Offset?: int,
+     *     Offset?: int<0, 432000>,
      *     TimestampColumn?: Shapes\TimestampColumn,
      *     DimensionList?: list<string>,
      *     MetricSetFrequency?: 'P1D'|'PT1H'|'PT10M'|'PT5M',

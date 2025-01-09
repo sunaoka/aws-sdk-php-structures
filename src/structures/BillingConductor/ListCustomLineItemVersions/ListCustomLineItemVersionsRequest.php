@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Arn
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property Shapes\ListCustomLineItemVersionsFilter $Filters
  */
@@ -15,7 +15,7 @@ class ListCustomLineItemVersionsRequest extends Request
     /**
      * @param array{
      *     Arn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     Filters?: Shapes\ListCustomLineItemVersionsFilter
      * } $args

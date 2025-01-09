@@ -14,8 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PerInstanceContainerGroupDefinitionArn
  * @property ConnectionPortRange $InstanceConnectionPortRange
  * @property list<IpPermission> $InstanceInboundPermissions
- * @property int $GameServerContainerGroupsPerInstance
- * @property int $MaximumGameServerContainerGroupsPerInstance
+ * @property int<1, 5000> $GameServerContainerGroupsPerInstance
+ * @property int<1, 5000> $MaximumGameServerContainerGroupsPerInstance
  * @property string $InstanceType
  * @property 'ON_DEMAND'|'SPOT' $BillingType
  * @property string $Description
@@ -41,8 +41,8 @@ class ContainerFleet extends Shape
      *     PerInstanceContainerGroupDefinitionArn?: string,
      *     InstanceConnectionPortRange?: ConnectionPortRange,
      *     InstanceInboundPermissions?: list<IpPermission>,
-     *     GameServerContainerGroupsPerInstance?: int,
-     *     MaximumGameServerContainerGroupsPerInstance?: int,
+     *     GameServerContainerGroupsPerInstance?: int<1, 5000>,
+     *     MaximumGameServerContainerGroupsPerInstance?: int<1, 5000>,
      *     InstanceType?: string,
      *     BillingType?: 'ON_DEMAND'|'SPOT',
      *     Description?: string,

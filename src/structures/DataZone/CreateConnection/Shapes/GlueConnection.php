@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AuthenticationConfiguration $authenticationConfiguration
  * @property list<'SPARK'|'ATHENA'|'PYTHON'> $compatibleComputeEnvironments
  * @property array<string, string> $connectionProperties
- * @property int $connectionSchemaVersion
+ * @property int<1, 2> $connectionSchemaVersion
  * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA' $connectionType
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property string $description
@@ -32,7 +32,7 @@ class GlueConnection extends Shape
      *     authenticationConfiguration?: AuthenticationConfiguration,
      *     compatibleComputeEnvironments?: list<'SPARK'|'ATHENA'|'PYTHON'>,
      *     connectionProperties?: array<string, string>,
-     *     connectionSchemaVersion?: int,
+     *     connectionSchemaVersion?: int<1, 2>,
      *     connectionType?: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA',
      *     creationTime?: \Aws\Api\DateTimeResult,
      *     description?: string,

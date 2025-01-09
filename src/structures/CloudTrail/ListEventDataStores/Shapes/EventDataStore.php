@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<AdvancedEventSelector> $AdvancedEventSelectors
  * @property bool $MultiRegionEnabled
  * @property bool $OrganizationEnabled
- * @property int $RetentionPeriod
+ * @property int<7, 3653> $RetentionPeriod
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
  */
@@ -27,7 +27,7 @@ class EventDataStore extends Shape
      *     AdvancedEventSelectors?: list<AdvancedEventSelector>,
      *     MultiRegionEnabled?: bool,
      *     OrganizationEnabled?: bool,
-     *     RetentionPeriod?: int,
+     *     RetentionPeriod?: int<7, 3653>,
      *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
      *     UpdatedTimestamp?: \Aws\Api\DateTimeResult
      * } $args

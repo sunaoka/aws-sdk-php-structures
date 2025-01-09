@@ -15,12 +15,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'DISABLED' $DenoiseFilter
  * @property string $DolbyVisionMetadataXml
  * @property 'AUTO'|'DISABLE'|'FORCE' $FilterEnable
- * @property int $FilterStrength
+ * @property int<0, 5> $FilterStrength
  * @property ImageInserter $ImageInserter
  * @property list<InputClipping> $InputClippings
  * @property 'AUTO'|'PSF' $InputScanType
  * @property Rectangle $Position
- * @property int $ProgramNumber
+ * @property int<1, 2147483647> $ProgramNumber
  * @property 'IGNORE_PSI'|'USE_PSI' $PsiControl
  * @property 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART' $TimecodeSource
  * @property string $TimecodeStart
@@ -41,12 +41,12 @@ class InputTemplate extends Shape
      *     DenoiseFilter?: 'ENABLED'|'DISABLED',
      *     DolbyVisionMetadataXml?: string,
      *     FilterEnable?: 'AUTO'|'DISABLE'|'FORCE',
-     *     FilterStrength?: int,
+     *     FilterStrength?: int<0, 5>,
      *     ImageInserter?: ImageInserter,
      *     InputClippings?: list<InputClipping>,
      *     InputScanType?: 'AUTO'|'PSF',
      *     Position?: Rectangle,
-     *     ProgramNumber?: int,
+     *     ProgramNumber?: int<1, 2147483647>,
      *     PsiControl?: 'IGNORE_PSI'|'USE_PSI',
      *     TimecodeSource?: 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART',
      *     TimecodeStart?: string,

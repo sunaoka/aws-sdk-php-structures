@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\UpdateCalculatedAttributeDefin
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Value
+ * @property int<1, 366> $Value
  * @property 'DAYS' $Unit
  */
 class Range extends Shape
 {
     /**
      * @param array{
-     *     Value: int,
+     *     Value: int<1, 366>,
      *     Unit: 'DAYS'
      * } $args
      */

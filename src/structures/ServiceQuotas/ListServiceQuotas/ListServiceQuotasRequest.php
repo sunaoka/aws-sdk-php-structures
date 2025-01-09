@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ServiceCode
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $QuotaCode
  * @property 'ACCOUNT'|'RESOURCE'|'ALL' $QuotaAppliedAtLevel
  */
@@ -17,7 +17,7 @@ class ListServiceQuotasRequest extends Request
      * @param array{
      *     ServiceCode: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     QuotaCode?: string,
      *     QuotaAppliedAtLevel?: 'ACCOUNT'|'RESOURCE'|'ALL'
      * } $args

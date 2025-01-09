@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property \Aws\Api\DateTimeResult $CreationTimeAfter
  * @property \Aws\Api\DateTimeResult $CreationTimeBefore
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NameContains
  * @property string $NextToken
  * @property 'Name'|'CreationTime' $SortBy
@@ -19,7 +19,7 @@ class ListAlgorithmsRequest extends Request
      * @param array{
      *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
      *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NameContains?: string,
      *     NextToken?: string,
      *     SortBy?: 'Name'|'CreationTime',

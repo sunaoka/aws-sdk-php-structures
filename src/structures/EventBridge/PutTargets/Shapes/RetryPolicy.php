@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EventBridge\PutTargets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaximumRetryAttempts
- * @property int $MaximumEventAgeInSeconds
+ * @property int<0, 185> $MaximumRetryAttempts
+ * @property int<60, 86400> $MaximumEventAgeInSeconds
  */
 class RetryPolicy extends Shape
 {
     /**
      * @param array{
-     *     MaximumRetryAttempts?: int,
-     *     MaximumEventAgeInSeconds?: int
+     *     MaximumRetryAttempts?: int<0, 185>,
+     *     MaximumEventAgeInSeconds?: int<60, 86400>
      * } $args
      */
     public function __construct(array $args = [])

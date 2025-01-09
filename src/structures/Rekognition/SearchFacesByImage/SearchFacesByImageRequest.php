@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CollectionId
  * @property Shapes\Image $Image
- * @property int $MaxFaces
+ * @property int<1, 4096> $MaxFaces
  * @property float $FaceMatchThreshold
  * @property 'NONE'|'AUTO'|'LOW'|'MEDIUM'|'HIGH' $QualityFilter
  */
@@ -17,7 +17,7 @@ class SearchFacesByImageRequest extends Request
      * @param array{
      *     CollectionId: string,
      *     Image: Shapes\Image,
-     *     MaxFaces?: int,
+     *     MaxFaces?: int<1, 4096>,
      *     FaceMatchThreshold?: float,
      *     QualityFilter?: 'NONE'|'AUTO'|'LOW'|'MEDIUM'|'HIGH'
      * } $args

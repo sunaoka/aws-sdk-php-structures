@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StackSetName
  * @property string $OperationId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'SELF'|'DELEGATED_ADMIN' $CallAs
  * @property list<Shapes\OperationResultFilter> $Filters
  */
@@ -19,7 +19,7 @@ class ListStackSetOperationResultsRequest extends Request
      *     StackSetName: string,
      *     OperationId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     CallAs?: 'SELF'|'DELEGATED_ADMIN',
      *     Filters?: list<Shapes\OperationResultFilter>
      * } $args

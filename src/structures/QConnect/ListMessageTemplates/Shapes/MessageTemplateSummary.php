@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\QConnect\ListMessageTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $activeVersionNumber
+ * @property int<1, max> $activeVersionNumber
  * @property 'EMAIL'|'SMS' $channelSubtype
  * @property \Aws\Api\DateTimeResult $createdTime
  * @property string $description
@@ -22,7 +22,7 @@ class MessageTemplateSummary extends Shape
 {
     /**
      * @param array{
-     *     activeVersionNumber?: int,
+     *     activeVersionNumber?: int<1, max>,
      *     channelSubtype: 'EMAIL'|'SMS',
      *     createdTime: \Aws\Api\DateTimeResult,
      *     description?: string,

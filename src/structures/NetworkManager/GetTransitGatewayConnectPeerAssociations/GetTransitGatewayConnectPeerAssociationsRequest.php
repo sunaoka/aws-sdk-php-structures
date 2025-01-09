@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GlobalNetworkId
  * @property list<string> $TransitGatewayConnectPeerArns
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class GetTransitGatewayConnectPeerAssociationsRequest extends Request
@@ -16,7 +16,7 @@ class GetTransitGatewayConnectPeerAssociationsRequest extends Request
      * @param array{
      *     GlobalNetworkId: string,
      *     TransitGatewayConnectPeerArns?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property string $Id
- * @property int $Capacity
+ * @property int<1, max> $Capacity
  * @property string $ARN
  * @property string $Description
  * @property list<Rule> $Rules
@@ -23,7 +23,7 @@ class RuleGroup extends Shape
      * @param array{
      *     Name: string,
      *     Id: string,
-     *     Capacity: int,
+     *     Capacity: int<1, max>,
      *     ARN: string,
      *     Description?: string,
      *     Rules?: list<Rule>,

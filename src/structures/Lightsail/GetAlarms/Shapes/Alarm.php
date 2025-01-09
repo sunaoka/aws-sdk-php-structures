@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property MonitoredResourceInfo $monitoredResourceInfo
  * @property 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold' $comparisonOperator
  * @property int $evaluationPeriods
- * @property int $period
+ * @property int<60, 86400> $period
  * @property double $threshold
  * @property int $datapointsToAlarm
  * @property 'breaching'|'notBreaching'|'ignore'|'missing' $treatMissingData
@@ -39,7 +39,7 @@ class Alarm extends Shape
      *     monitoredResourceInfo?: MonitoredResourceInfo,
      *     comparisonOperator?: 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold',
      *     evaluationPeriods?: int,
-     *     period?: int,
+     *     period?: int<60, 86400>,
      *     threshold?: double,
      *     datapointsToAlarm?: int,
      *     treatMissingData?: 'breaching'|'notBreaching'|'ignore'|'missing',

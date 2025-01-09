@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ServiceRoleArn
  * @property array<string, Shapes\MaintenanceWindowTaskParameterValueExpression> $TaskParameters
  * @property Shapes\MaintenanceWindowTaskInvocationParameters $TaskInvocationParameters
- * @property int $Priority
+ * @property int<0, max> $Priority
  * @property string $MaxConcurrency
  * @property string $MaxErrors
  * @property Shapes\LoggingInfo $LoggingInfo
@@ -33,7 +33,7 @@ class UpdateMaintenanceWindowTaskRequest extends Request
      *     ServiceRoleArn?: string,
      *     TaskParameters?: array<string, Shapes\MaintenanceWindowTaskParameterValueExpression>,
      *     TaskInvocationParameters?: Shapes\MaintenanceWindowTaskInvocationParameters,
-     *     Priority?: int,
+     *     Priority?: int<0, max>,
      *     MaxConcurrency?: string,
      *     MaxErrors?: string,
      *     LoggingInfo?: Shapes\LoggingInfo,

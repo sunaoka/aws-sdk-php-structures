@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $LastModifiedDate
  * @property string $Name
  * @property string $ResourceArn
- * @property int $RuleCount
+ * @property int<0, max> $RuleCount
  * @property array<string, string> $Tags
  * @property string $TargetArn
  */
@@ -29,7 +29,7 @@ class RulesetItem extends Shape
      *     LastModifiedDate?: \Aws\Api\DateTimeResult,
      *     Name: string,
      *     ResourceArn?: string,
-     *     RuleCount?: int,
+     *     RuleCount?: int<0, max>,
      *     Tags?: array<string, string>,
      *     TargetArn: string
      * } $args

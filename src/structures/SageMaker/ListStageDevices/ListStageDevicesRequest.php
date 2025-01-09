@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<min, 100> $MaxResults
  * @property string $EdgeDeploymentPlanName
  * @property bool $ExcludeDevicesDeployedInOtherStage
  * @property string $StageName
@@ -16,7 +16,7 @@ class ListStageDevicesRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<min, 100>,
      *     EdgeDeploymentPlanName: string,
      *     ExcludeDevicesDeployedInOtherStage?: bool,
      *     StageName: string

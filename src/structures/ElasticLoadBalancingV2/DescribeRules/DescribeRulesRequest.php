@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ListenerArn
  * @property list<string> $RuleArns
  * @property string $Marker
- * @property int $PageSize
+ * @property int<1, 400> $PageSize
  */
 class DescribeRulesRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeRulesRequest extends Request
      *     ListenerArn?: string,
      *     RuleArns?: list<string>,
      *     Marker?: string,
-     *     PageSize?: int
+     *     PageSize?: int<1, 400>
      * } $args
      */
     public function __construct(array $args = [])

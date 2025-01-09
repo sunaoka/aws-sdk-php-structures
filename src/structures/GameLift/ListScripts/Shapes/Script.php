@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ScriptArn
  * @property string $Name
  * @property string $Version
- * @property int $SizeOnDisk
+ * @property int<1, max> $SizeOnDisk
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property S3Location $StorageLocation
  */
@@ -21,7 +21,7 @@ class Script extends Shape
      *     ScriptArn?: string,
      *     Name?: string,
      *     Version?: string,
-     *     SizeOnDisk?: int,
+     *     SizeOnDisk?: int<1, max>,
      *     CreationTime?: \Aws\Api\DateTimeResult,
      *     StorageLocation?: S3Location
      * } $args

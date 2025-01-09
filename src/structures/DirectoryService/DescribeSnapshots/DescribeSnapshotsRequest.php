@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DirectoryId
  * @property list<string> $SnapshotIds
  * @property string $NextToken
- * @property int $Limit
+ * @property int<0, max> $Limit
  */
 class DescribeSnapshotsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeSnapshotsRequest extends Request
      *     DirectoryId?: string,
      *     SnapshotIds?: list<string>,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

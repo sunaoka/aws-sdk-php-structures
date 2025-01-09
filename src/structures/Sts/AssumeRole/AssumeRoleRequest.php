@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RoleSessionName
  * @property list<Shapes\PolicyDescriptorType> $PolicyArns
  * @property string $Policy
- * @property int $DurationSeconds
+ * @property int<900, 43200> $DurationSeconds
  * @property list<Shapes\Tag> $Tags
  * @property list<string> $TransitiveTagKeys
  * @property string $ExternalId
@@ -26,7 +26,7 @@ class AssumeRoleRequest extends Request
      *     RoleSessionName: string,
      *     PolicyArns?: list<Shapes\PolicyDescriptorType>,
      *     Policy?: string,
-     *     DurationSeconds?: int,
+     *     DurationSeconds?: int<900, 43200>,
      *     Tags?: list<Shapes\Tag>,
      *     TransitiveTagKeys?: list<string>,
      *     ExternalId?: string,

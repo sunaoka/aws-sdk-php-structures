@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property string $namePrefixFilter
  */
 class ListBillingGroupsRequest extends Request
@@ -14,7 +14,7 @@ class ListBillingGroupsRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     namePrefixFilter?: string
      * } $args
      */

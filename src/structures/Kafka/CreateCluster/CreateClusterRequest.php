@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION' $EnhancedMonitoring
  * @property string $KafkaVersion
  * @property Shapes\LoggingInfo $LoggingInfo
- * @property int $NumberOfBrokerNodes
+ * @property int<1, 15> $NumberOfBrokerNodes
  * @property Shapes\OpenMonitoringInfo $OpenMonitoring
  * @property array<string, string> $Tags
  * @property 'LOCAL'|'TIERED' $StorageMode
@@ -30,7 +30,7 @@ class CreateClusterRequest extends Request
      *     EnhancedMonitoring?: 'DEFAULT'|'PER_BROKER'|'PER_TOPIC_PER_BROKER'|'PER_TOPIC_PER_PARTITION',
      *     KafkaVersion: string,
      *     LoggingInfo?: Shapes\LoggingInfo,
-     *     NumberOfBrokerNodes: int,
+     *     NumberOfBrokerNodes: int<1, 15>,
      *     OpenMonitoring?: Shapes\OpenMonitoringInfo,
      *     Tags?: array<string, string>,
      *     StorageMode?: 'LOCAL'|'TIERED'

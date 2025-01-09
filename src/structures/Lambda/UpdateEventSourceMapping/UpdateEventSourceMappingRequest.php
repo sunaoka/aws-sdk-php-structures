@@ -8,16 +8,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UUID
  * @property string $FunctionName
  * @property bool $Enabled
- * @property int $BatchSize
+ * @property int<1, 10000> $BatchSize
  * @property Shapes\FilterCriteria $FilterCriteria
- * @property int $MaximumBatchingWindowInSeconds
+ * @property int<0, 300> $MaximumBatchingWindowInSeconds
  * @property Shapes\DestinationConfig $DestinationConfig
- * @property int $MaximumRecordAgeInSeconds
+ * @property int<-1, 604800> $MaximumRecordAgeInSeconds
  * @property bool $BisectBatchOnFunctionError
- * @property int $MaximumRetryAttempts
- * @property int $ParallelizationFactor
+ * @property int<-1, 10000> $MaximumRetryAttempts
+ * @property int<1, 10> $ParallelizationFactor
  * @property list<Shapes\SourceAccessConfiguration> $SourceAccessConfigurations
- * @property int $TumblingWindowInSeconds
+ * @property int<0, 900> $TumblingWindowInSeconds
  * @property list<'ReportBatchItemFailures'> $FunctionResponseTypes
  * @property Shapes\ScalingConfig $ScalingConfig
  * @property Shapes\DocumentDBEventSourceConfig $DocumentDBEventSourceConfig
@@ -32,16 +32,16 @@ class UpdateEventSourceMappingRequest extends Request
      *     UUID: string,
      *     FunctionName?: string,
      *     Enabled?: bool,
-     *     BatchSize?: int,
+     *     BatchSize?: int<1, 10000>,
      *     FilterCriteria?: Shapes\FilterCriteria,
-     *     MaximumBatchingWindowInSeconds?: int,
+     *     MaximumBatchingWindowInSeconds?: int<0, 300>,
      *     DestinationConfig?: Shapes\DestinationConfig,
-     *     MaximumRecordAgeInSeconds?: int,
+     *     MaximumRecordAgeInSeconds?: int<-1, 604800>,
      *     BisectBatchOnFunctionError?: bool,
-     *     MaximumRetryAttempts?: int,
-     *     ParallelizationFactor?: int,
+     *     MaximumRetryAttempts?: int<-1, 10000>,
+     *     ParallelizationFactor?: int<1, 10>,
      *     SourceAccessConfigurations?: list<Shapes\SourceAccessConfiguration>,
-     *     TumblingWindowInSeconds?: int,
+     *     TumblingWindowInSeconds?: int<0, 900>,
      *     FunctionResponseTypes?: list<'ReportBatchItemFailures'>,
      *     ScalingConfig?: Shapes\ScalingConfig,
      *     DocumentDBEventSourceConfig?: Shapes\DocumentDBEventSourceConfig,

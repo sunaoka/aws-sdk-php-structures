@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $VoiceConnectorId
- * @property int $Priority
+ * @property int<1, 99> $Priority
  */
 class VoiceConnectorItem extends Shape
 {
     /**
      * @param array{
      *     VoiceConnectorId: string,
-     *     Priority: int
+     *     Priority: int<1, 99>
      * } $args
      */
     public function __construct(array $args)

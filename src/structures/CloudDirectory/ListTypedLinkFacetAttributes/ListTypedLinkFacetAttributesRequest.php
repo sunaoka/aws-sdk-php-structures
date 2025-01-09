@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SchemaArn
  * @property string $Name
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  */
 class ListTypedLinkFacetAttributesRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListTypedLinkFacetAttributesRequest extends Request
      *     SchemaArn: string,
      *     Name: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

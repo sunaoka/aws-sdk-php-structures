@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\EncryptionSpecification $encryptionSpecification
  * @property Shapes\PointInTimeRecovery $pointInTimeRecovery
  * @property Shapes\TimeToLive $ttl
- * @property int $defaultTimeToLive
+ * @property int<0, 630720000> $defaultTimeToLive
  * @property list<Shapes\Tag> $tags
  * @property Shapes\ClientSideTimestamps $clientSideTimestamps
  * @property Shapes\AutoScalingSpecification $autoScalingSpecification
@@ -31,7 +31,7 @@ class CreateTableRequest extends Request
      *     encryptionSpecification?: Shapes\EncryptionSpecification,
      *     pointInTimeRecovery?: Shapes\PointInTimeRecovery,
      *     ttl?: Shapes\TimeToLive,
-     *     defaultTimeToLive?: int,
+     *     defaultTimeToLive?: int<0, 630720000>,
      *     tags?: list<Shapes\Tag>,
      *     clientSideTimestamps?: Shapes\ClientSideTimestamps,
      *     autoScalingSpecification?: Shapes\AutoScalingSpecification,

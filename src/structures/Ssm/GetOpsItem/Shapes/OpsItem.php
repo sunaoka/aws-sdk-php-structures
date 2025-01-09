@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $LastModifiedBy
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property list<OpsItemNotification> $Notifications
- * @property int $Priority
+ * @property int<1, 5> $Priority
  * @property list<RelatedOpsItem> $RelatedOpsItems
  * @property 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed' $Status
  * @property string $OpsItemId
@@ -39,7 +39,7 @@ class OpsItem extends Shape
      *     LastModifiedBy?: string,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult,
      *     Notifications?: list<OpsItemNotification>,
-     *     Priority?: int,
+     *     Priority?: int<1, 5>,
      *     RelatedOpsItems?: list<RelatedOpsItem>,
      *     Status?: 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed',
      *     OpsItemId?: string,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $CrawlerNameList
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class GetCrawlerMetricsRequest extends Request
@@ -14,7 +14,7 @@ class GetCrawlerMetricsRequest extends Request
     /**
      * @param array{
      *     CrawlerNameList?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

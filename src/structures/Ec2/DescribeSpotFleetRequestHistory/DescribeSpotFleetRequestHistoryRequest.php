@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'instanceChange'|'fleetRequestChange'|'error'|'information' $EventType
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class DescribeSpotFleetRequestHistoryRequest extends Request
 {
@@ -21,7 +21,7 @@ class DescribeSpotFleetRequestHistoryRequest extends Request
      *     EventType?: 'instanceChange'|'fleetRequestChange'|'error'|'information',
      *     StartTime: \Aws\Api\DateTimeResult,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

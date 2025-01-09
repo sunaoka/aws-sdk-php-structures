@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\Expression $filter
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class GetFreeTierUsageRequest extends Request
@@ -14,7 +14,7 @@ class GetFreeTierUsageRequest extends Request
     /**
      * @param array{
      *     filter?: Shapes\Expression,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

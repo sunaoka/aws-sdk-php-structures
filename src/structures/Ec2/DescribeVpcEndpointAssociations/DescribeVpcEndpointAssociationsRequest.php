@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $DryRun
  * @property list<string> $VpcEndpointIds
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeVpcEndpointAssociationsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeVpcEndpointAssociationsRequest extends Request
      *     DryRun?: bool,
      *     VpcEndpointIds?: list<string>,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

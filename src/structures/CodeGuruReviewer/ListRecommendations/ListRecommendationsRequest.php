@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 300> $MaxResults
  * @property string $CodeReviewArn
  */
 class ListRecommendationsRequest extends Request
@@ -14,7 +14,7 @@ class ListRecommendationsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 300>,
      *     CodeReviewArn: string
      * } $args
      */

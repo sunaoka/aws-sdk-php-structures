@@ -19,8 +19,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'GLOBAL'|'PRIVATE' $visibility
  * @property string $ownerContact
  * @property 'ENABLED'|'DISABLED' $introspectionConfig
- * @property int $queryDepthLimit
- * @property int $resolverCountLimit
+ * @property int<0, 75> $queryDepthLimit
+ * @property int<0, 10000> $resolverCountLimit
  * @property Shapes\EnhancedMetricsConfig $enhancedMetricsConfig
  */
 class CreateGraphqlApiRequest extends Request
@@ -41,8 +41,8 @@ class CreateGraphqlApiRequest extends Request
      *     visibility?: 'GLOBAL'|'PRIVATE',
      *     ownerContact?: string,
      *     introspectionConfig?: 'ENABLED'|'DISABLED',
-     *     queryDepthLimit?: int,
-     *     resolverCountLimit?: int,
+     *     queryDepthLimit?: int<0, 75>,
+     *     resolverCountLimit?: int<0, 10000>,
      *     enhancedMetricsConfig?: Shapes\EnhancedMetricsConfig
      * } $args
      */

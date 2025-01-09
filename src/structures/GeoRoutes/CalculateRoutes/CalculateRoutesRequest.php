@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $Languages
  * @property list<'Elevation'|'Incidents'|'PassThroughWaypoints'|'Summary'|'Tolls'|'TravelStepInstructions'|'TruckRoadTypes'|'TypicalDuration'|'Zones'> $LegAdditionalFeatures
  * @property 'FlexiblePolyline'|'Simple' $LegGeometryFormat
- * @property int $MaxAlternatives
+ * @property int<0, 5> $MaxAlternatives
  * @property 'FastestRoute'|'ShortestRoute' $OptimizeRoutingFor
  * @property list<double> $Origin
  * @property Shapes\RouteOriginOptions $OriginOptions
@@ -49,7 +49,7 @@ class CalculateRoutesRequest extends Request
      *     Languages?: list<string>,
      *     LegAdditionalFeatures?: list<'Elevation'|'Incidents'|'PassThroughWaypoints'|'Summary'|'Tolls'|'TravelStepInstructions'|'TruckRoadTypes'|'TypicalDuration'|'Zones'>,
      *     LegGeometryFormat?: 'FlexiblePolyline'|'Simple',
-     *     MaxAlternatives?: int,
+     *     MaxAlternatives?: int<0, 5>,
      *     OptimizeRoutingFor?: 'FastestRoute'|'ShortestRoute',
      *     Origin: list<double>,
      *     OriginOptions?: Shapes\RouteOriginOptions,

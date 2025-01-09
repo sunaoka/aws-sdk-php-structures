@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceType
  * @property string $MessageCategory
  * @property 'ONE_DAY'|'SEVEN_DAYS'|'FOURTEEN_DAYS' $AggregationPeriod
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListCopyJobSummariesRequest extends Request
@@ -22,7 +22,7 @@ class ListCopyJobSummariesRequest extends Request
      *     ResourceType?: string,
      *     MessageCategory?: string,
      *     AggregationPeriod?: 'ONE_DAY'|'SEVEN_DAYS'|'FOURTEEN_DAYS',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $EngagementId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 1024> $MaxResults
  */
 class ListPagesByEngagementRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListPagesByEngagementRequest extends Request
      * @param array{
      *     EngagementId: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<0, 1024>
      * } $args
      */
     public function __construct(array $args)

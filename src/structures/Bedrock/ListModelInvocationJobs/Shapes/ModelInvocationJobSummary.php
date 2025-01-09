@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ModelInvocationJobInputDataConfig $inputDataConfig
  * @property ModelInvocationJobOutputDataConfig $outputDataConfig
  * @property VpcConfig $vpcConfig
- * @property int $timeoutDurationInHours
+ * @property int<24, 168> $timeoutDurationInHours
  * @property \Aws\Api\DateTimeResult $jobExpirationTime
  */
 class ModelInvocationJobSummary extends Shape
@@ -38,7 +38,7 @@ class ModelInvocationJobSummary extends Shape
      *     inputDataConfig: ModelInvocationJobInputDataConfig,
      *     outputDataConfig: ModelInvocationJobOutputDataConfig,
      *     vpcConfig?: VpcConfig,
-     *     timeoutDurationInHours?: int,
+     *     timeoutDurationInHours?: int<24, 168>,
      *     jobExpirationTime?: \Aws\Api\DateTimeResult
      * } $args
      */

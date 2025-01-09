@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $monitorName
  * @property list<Shapes\CreateMonitorProbeInput> $probes
- * @property int $aggregationPeriod
+ * @property int<30, max> $aggregationPeriod
  * @property string $clientToken
  * @property array<string, string> $tags
  */
@@ -17,7 +17,7 @@ class CreateMonitorRequest extends Request
      * @param array{
      *     monitorName: string,
      *     probes?: list<Shapes\CreateMonitorProbeInput>,
-     *     aggregationPeriod?: int,
+     *     aggregationPeriod?: int<30, max>,
      *     clientToken?: string,
      *     tags?: array<string, string>
      * } $args

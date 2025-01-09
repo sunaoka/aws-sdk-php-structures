@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VpcId
  * @property int $Priority
  * @property 'COMPLETE'|'DELETING'|'UPDATING' $Status
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListFirewallRuleGroupAssociationsRequest extends Request
@@ -20,7 +20,7 @@ class ListFirewallRuleGroupAssociationsRequest extends Request
      *     VpcId?: string,
      *     Priority?: int,
      *     Status?: 'COMPLETE'|'DELETING'|'UPDATING',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

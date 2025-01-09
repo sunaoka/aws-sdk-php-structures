@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property list<Shapes\FolderSearchFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class SearchFoldersRequest extends Request
 {
@@ -17,7 +17,7 @@ class SearchFoldersRequest extends Request
      *     AwsAccountId: string,
      *     Filters: list<Shapes\FolderSearchFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

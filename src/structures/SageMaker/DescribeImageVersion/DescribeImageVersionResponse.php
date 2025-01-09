@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ImageVersionArn
  * @property 'CREATING'|'CREATED'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED' $ImageVersionStatus
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property int $Version
+ * @property int<0, max> $Version
  * @property 'NOT_PROVIDED'|'STABLE'|'TO_BE_ARCHIVED'|'ARCHIVED' $VendorGuidance
  * @property 'TRAINING'|'INFERENCE'|'NOTEBOOK_KERNEL' $JobType
  * @property string $MLFramework

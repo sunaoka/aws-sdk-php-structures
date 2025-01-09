@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetPositionEstimate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Pci
- * @property int $Earfcn
- * @property int $EutranCid
- * @property int $Rsrp
+ * @property int<0, 503> $Pci
+ * @property int<0, 262143> $Earfcn
+ * @property int<0, 268435455> $EutranCid
+ * @property int<-140, -44> $Rsrp
  * @property float $Rsrq
  */
 class LteNmrObj extends Shape
 {
     /**
      * @param array{
-     *     Pci: int,
-     *     Earfcn: int,
-     *     EutranCid: int,
-     *     Rsrp?: int,
+     *     Pci: int<0, 503>,
+     *     Earfcn: int<0, 262143>,
+     *     EutranCid: int<0, 268435455>,
+     *     Rsrp?: int<-140, -44>,
      *     Rsrq?: float
      * } $args
      */

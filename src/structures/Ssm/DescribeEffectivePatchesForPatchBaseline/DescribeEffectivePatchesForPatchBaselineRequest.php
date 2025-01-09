@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BaselineId
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeEffectivePatchesForPatchBaselineRequest extends Request
@@ -14,7 +14,7 @@ class DescribeEffectivePatchesForPatchBaselineRequest extends Request
     /**
      * @param array{
      *     BaselineId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

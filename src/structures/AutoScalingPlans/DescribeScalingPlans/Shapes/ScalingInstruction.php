@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<TargetTrackingConfiguration> $TargetTrackingConfigurations
  * @property PredefinedLoadMetricSpecification $PredefinedLoadMetricSpecification
  * @property CustomizedLoadMetricSpecification $CustomizedLoadMetricSpecification
- * @property int $ScheduledActionBufferTime
+ * @property int<0, max> $ScheduledActionBufferTime
  * @property 'SetForecastCapacityToMaxCapacity'|'SetMaxCapacityToForecastCapacity'|'SetMaxCapacityAboveForecastCapacity' $PredictiveScalingMaxCapacityBehavior
  * @property int $PredictiveScalingMaxCapacityBuffer
  * @property 'ForecastAndScale'|'ForecastOnly' $PredictiveScalingMode
@@ -32,7 +32,7 @@ class ScalingInstruction extends Shape
      *     TargetTrackingConfigurations: list<TargetTrackingConfiguration>,
      *     PredefinedLoadMetricSpecification?: PredefinedLoadMetricSpecification,
      *     CustomizedLoadMetricSpecification?: CustomizedLoadMetricSpecification,
-     *     ScheduledActionBufferTime?: int,
+     *     ScheduledActionBufferTime?: int<0, max>,
      *     PredictiveScalingMaxCapacityBehavior?: 'SetForecastCapacityToMaxCapacity'|'SetMaxCapacityToForecastCapacity'|'SetMaxCapacityAboveForecastCapacity',
      *     PredictiveScalingMaxCapacityBuffer?: int,
      *     PredictiveScalingMode?: 'ForecastAndScale'|'ForecastOnly',

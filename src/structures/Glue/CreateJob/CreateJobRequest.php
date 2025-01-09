@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ConnectionsList $Connections
  * @property int $MaxRetries
  * @property int $AllocatedCapacity
- * @property int $Timeout
+ * @property int<1, max> $Timeout
  * @property double $MaxCapacity
  * @property string $SecurityConfiguration
  * @property array<string, string> $Tags
@@ -48,7 +48,7 @@ class CreateJobRequest extends Request
      *     Connections?: Shapes\ConnectionsList,
      *     MaxRetries?: int,
      *     AllocatedCapacity?: int,
-     *     Timeout?: int,
+     *     Timeout?: int<1, max>,
      *     MaxCapacity?: double,
      *     SecurityConfiguration?: string,
      *     Tags?: array<string, string>,

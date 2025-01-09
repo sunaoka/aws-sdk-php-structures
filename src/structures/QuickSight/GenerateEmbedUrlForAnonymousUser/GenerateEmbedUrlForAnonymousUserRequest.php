@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property int $SessionLifetimeInMinutes
+ * @property int<15, 600> $SessionLifetimeInMinutes
  * @property string $Namespace
  * @property list<Shapes\SessionTag> $SessionTags
  * @property list<string> $AuthorizedResourceArns
@@ -18,7 +18,7 @@ class GenerateEmbedUrlForAnonymousUserRequest extends Request
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     SessionLifetimeInMinutes?: int,
+     *     SessionLifetimeInMinutes?: int<15, 600>,
      *     Namespace: string,
      *     SessionTags?: list<Shapes\SessionTag>,
      *     AuthorizedResourceArns: list<string>,

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Inspector\DescribeFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $schemaVersion
+ * @property int<0, max> $schemaVersion
  * @property string $agentId
  * @property string $autoScalingGroup
  * @property string $amiId
@@ -18,7 +18,7 @@ class AssetAttributes extends Shape
 {
     /**
      * @param array{
-     *     schemaVersion: int,
+     *     schemaVersion: int<0, max>,
      *     agentId?: string,
      *     autoScalingGroup?: string,
      *     amiId?: string,

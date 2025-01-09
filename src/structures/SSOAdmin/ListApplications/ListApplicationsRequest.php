@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\ListApplicationsFilter $Filter
  * @property string $InstanceArn
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListApplicationsRequest extends Request
@@ -16,7 +16,7 @@ class ListApplicationsRequest extends Request
      * @param array{
      *     Filter?: Shapes\ListApplicationsFilter,
      *     InstanceArn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

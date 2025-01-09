@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $MetricName
  * @property 'IP' $RateKey
- * @property int $RateLimit
+ * @property int<100, 2000000000> $RateLimit
  * @property string $ChangeToken
  * @property list<Shapes\Tag> $Tags
  */
@@ -19,7 +19,7 @@ class CreateRateBasedRuleRequest extends Request
      *     Name: string,
      *     MetricName: string,
      *     RateKey: 'IP',
-     *     RateLimit: int,
+     *     RateLimit: int<100, 2000000000>,
      *     ChangeToken: string,
      *     Tags?: list<Shapes\Tag>
      * } $args

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateInferenceComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ModelDataDownloadTimeoutInSeconds
- * @property int $ContainerStartupHealthCheckTimeoutInSeconds
+ * @property int<60, 3600> $ModelDataDownloadTimeoutInSeconds
+ * @property int<60, 3600> $ContainerStartupHealthCheckTimeoutInSeconds
  */
 class InferenceComponentStartupParameters extends Shape
 {
     /**
      * @param array{
-     *     ModelDataDownloadTimeoutInSeconds?: int,
-     *     ContainerStartupHealthCheckTimeoutInSeconds?: int
+     *     ModelDataDownloadTimeoutInSeconds?: int<60, 3600>,
+     *     ContainerStartupHealthCheckTimeoutInSeconds?: int<60, 3600>
      * } $args
      */
     public function __construct(array $args = [])

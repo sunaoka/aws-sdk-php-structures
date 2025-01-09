@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property array<string, Shapes\OpsItemDataValue> $OperationalData
  * @property list<string> $OperationalDataToDelete
  * @property list<Shapes\OpsItemNotification> $Notifications
- * @property int $Priority
+ * @property int<1, 5> $Priority
  * @property list<Shapes\RelatedOpsItem> $RelatedOpsItems
  * @property 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed' $Status
  * @property string $OpsItemId
@@ -30,7 +30,7 @@ class UpdateOpsItemRequest extends Request
      *     OperationalData?: array<string, Shapes\OpsItemDataValue>,
      *     OperationalDataToDelete?: list<string>,
      *     Notifications?: list<Shapes\OpsItemNotification>,
-     *     Priority?: int,
+     *     Priority?: int<1, 5>,
      *     RelatedOpsItems?: list<Shapes\RelatedOpsItem>,
      *     Status?: 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed',
      *     OpsItemId: string,

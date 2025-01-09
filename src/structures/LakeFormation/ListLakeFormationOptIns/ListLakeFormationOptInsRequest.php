@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\DataLakePrincipal $Principal
  * @property Shapes\Resource $Resource
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListLakeFormationOptInsRequest extends Request
@@ -16,7 +16,7 @@ class ListLakeFormationOptInsRequest extends Request
      * @param array{
      *     Principal?: Shapes\DataLakePrincipal,
      *     Resource?: Shapes\Resource,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

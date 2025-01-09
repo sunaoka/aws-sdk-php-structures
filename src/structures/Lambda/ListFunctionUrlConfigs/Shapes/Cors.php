@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $AllowMethods
  * @property list<string> $AllowOrigins
  * @property list<string> $ExposeHeaders
- * @property int $MaxAge
+ * @property int<0, 86400> $MaxAge
  */
 class Cors extends Shape
 {
@@ -21,7 +21,7 @@ class Cors extends Shape
      *     AllowMethods?: list<string>,
      *     AllowOrigins?: list<string>,
      *     ExposeHeaders?: list<string>,
-     *     MaxAge?: int
+     *     MaxAge?: int<0, 86400>
      * } $args
      */
     public function __construct(array $args = [])

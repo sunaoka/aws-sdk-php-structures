@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ETag
  * @property \Aws\Api\DateTimeResult $LastModified
  * @property string $ContentType
- * @property int $ContentLength
+ * @property int<0, max> $ContentLength
  */
 class Item extends Shape
 {
@@ -21,7 +21,7 @@ class Item extends Shape
      *     ETag?: string,
      *     LastModified?: \Aws\Api\DateTimeResult,
      *     ContentType?: string,
-     *     ContentLength?: int
+     *     ContentLength?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

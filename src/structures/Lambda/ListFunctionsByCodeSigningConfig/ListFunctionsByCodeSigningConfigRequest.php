@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CodeSigningConfigArn
  * @property string $Marker
- * @property int $MaxItems
+ * @property int<1, 10000> $MaxItems
  */
 class ListFunctionsByCodeSigningConfigRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListFunctionsByCodeSigningConfigRequest extends Request
      * @param array{
      *     CodeSigningConfigArn: string,
      *     Marker?: string,
-     *     MaxItems?: int
+     *     MaxItems?: int<1, 10000>
      * } $args
      */
     public function __construct(array $args)

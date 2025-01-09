@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\ListApplications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 40> $MaxResults
  * @property string $NextToken
  * @property string $AccountId
  */
@@ -13,7 +13,7 @@ class ListApplicationsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 40>,
      *     NextToken?: string,
      *     AccountId?: string
      * } $args

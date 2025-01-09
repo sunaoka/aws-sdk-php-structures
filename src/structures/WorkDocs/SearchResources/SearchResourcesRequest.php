@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'WEBURL'> $AdditionalResponseFields
  * @property Shapes\Filters $Filters
  * @property list<Shapes\SearchSortResult> $OrderBy
- * @property int $Limit
+ * @property int<1, 100> $Limit
  * @property string $Marker
  */
 class SearchResourcesRequest extends Request
@@ -26,7 +26,7 @@ class SearchResourcesRequest extends Request
      *     AdditionalResponseFields?: list<'WEBURL'>,
      *     Filters?: Shapes\Filters,
      *     OrderBy?: list<Shapes\SearchSortResult>,
-     *     Limit?: int,
+     *     Limit?: int<1, 100>,
      *     Marker?: string
      * } $args
      */

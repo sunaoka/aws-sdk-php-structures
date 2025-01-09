@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $UpdateSignature
- * @property int $SigKeyCrc
+ * @property int<1, 4294967295> $SigKeyCrc
  * @property LoRaWANGatewayVersion $CurrentVersion
  * @property LoRaWANGatewayVersion $UpdateVersion
  */
@@ -15,7 +15,7 @@ class LoRaWANUpdateGatewayTaskCreate extends Shape
     /**
      * @param array{
      *     UpdateSignature?: string,
-     *     SigKeyCrc?: int,
+     *     SigKeyCrc?: int<1, 4294967295>,
      *     CurrentVersion?: LoRaWANGatewayVersion,
      *     UpdateVersion?: LoRaWANGatewayVersion
      * } $args

@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $ShowSpeakerLabels
- * @property int $MaxSpeakerLabels
+ * @property int<2, 30> $MaxSpeakerLabels
  * @property bool $ChannelIdentification
  * @property bool $ShowAlternatives
- * @property int $MaxAlternatives
+ * @property int<2, 10> $MaxAlternatives
  * @property string $VocabularyName
  */
 class MedicalTranscriptionSetting extends Shape
@@ -17,10 +17,10 @@ class MedicalTranscriptionSetting extends Shape
     /**
      * @param array{
      *     ShowSpeakerLabels?: bool,
-     *     MaxSpeakerLabels?: int,
+     *     MaxSpeakerLabels?: int<2, 30>,
      *     ChannelIdentification?: bool,
      *     ShowAlternatives?: bool,
-     *     MaxAlternatives?: int,
+     *     MaxAlternatives?: int<2, 10>,
      *     VocabularyName?: string
      * } $args
      */

@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $WorkloadId
  * @property string $LensAlias
  * @property string $PillarId
- * @property int $MilestoneNumber
+ * @property int<1, 100> $MilestoneNumber
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'PRIORITIZED'|'NONE' $QuestionPriority
  */
 class ListLensReviewImprovementsRequest extends Request
@@ -20,9 +20,9 @@ class ListLensReviewImprovementsRequest extends Request
      *     WorkloadId: string,
      *     LensAlias: string,
      *     PillarId?: string,
-     *     MilestoneNumber?: int,
+     *     MilestoneNumber?: int<1, 100>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     QuestionPriority?: 'PRIORITIZED'|'NONE'
      * } $args
      */

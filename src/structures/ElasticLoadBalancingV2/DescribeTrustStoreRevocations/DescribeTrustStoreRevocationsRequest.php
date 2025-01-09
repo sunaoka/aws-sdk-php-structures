@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TrustStoreArn
  * @property list<int> $RevocationIds
  * @property string $Marker
- * @property int $PageSize
+ * @property int<1, 400> $PageSize
  */
 class DescribeTrustStoreRevocationsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeTrustStoreRevocationsRequest extends Request
      *     TrustStoreArn: string,
      *     RevocationIds?: list<int>,
      *     Marker?: string,
-     *     PageSize?: int
+     *     PageSize?: int<1, 400>
      * } $args
      */
     public function __construct(array $args)

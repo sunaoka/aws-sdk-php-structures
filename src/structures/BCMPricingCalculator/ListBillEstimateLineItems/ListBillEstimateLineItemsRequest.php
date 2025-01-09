@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $billEstimateId
  * @property list<Shapes\ListBillEstimateLineItemsFilter> $filters
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<min, 25> $maxResults
  */
 class ListBillEstimateLineItemsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListBillEstimateLineItemsRequest extends Request
      *     billEstimateId: string,
      *     filters?: list<Shapes\ListBillEstimateLineItemsFilter>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<min, 25>
      * } $args
      */
     public function __construct(array $args)

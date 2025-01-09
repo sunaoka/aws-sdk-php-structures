@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ONE_MIN'|'FIVE_MIN'|'TEN_MIN'|'FIFTEEN_MIN'|'THIRTY_MIN'|'ONE_HOUR' $evaluationFrequency
  * @property string $filterPattern
  * @property string $kmsKeyId
- * @property int $anomalyVisibilityTime
+ * @property int<7, 90> $anomalyVisibilityTime
  * @property array<string, string> $tags
  */
 class CreateLogAnomalyDetectorRequest extends Request
@@ -22,7 +22,7 @@ class CreateLogAnomalyDetectorRequest extends Request
      *     evaluationFrequency?: 'ONE_MIN'|'FIVE_MIN'|'TEN_MIN'|'FIFTEEN_MIN'|'THIRTY_MIN'|'ONE_HOUR',
      *     filterPattern?: string,
      *     kmsKeyId?: string,
-     *     anomalyVisibilityTime?: int,
+     *     anomalyVisibilityTime?: int<7, 90>,
      *     tags?: array<string, string>
      * } $args
      */

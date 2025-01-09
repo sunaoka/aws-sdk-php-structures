@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FirewallDomainListId
- * @property int $MaxResults
+ * @property int<1, 5000> $MaxResults
  * @property string $NextToken
  */
 class ListFirewallDomainsRequest extends Request
@@ -14,7 +14,7 @@ class ListFirewallDomainsRequest extends Request
     /**
      * @param array{
      *     FirewallDomainListId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 5000>,
      *     NextToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\ListVpcIngressConnectionsFilter $Filter
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListVpcIngressConnectionsRequest extends Request
@@ -14,7 +14,7 @@ class ListVpcIngressConnectionsRequest extends Request
     /**
      * @param array{
      *     Filter?: Shapes\ListVpcIngressConnectionsFilter,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

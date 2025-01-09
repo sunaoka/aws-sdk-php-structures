@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DROP'|'ENCODE_SILENCE' $AbsentInputAudioBehavior
  * @property 'DISABLED'|'ENABLED' $Arib
  * @property 'ATSC'|'DVB' $AudioBufferModel
- * @property int $AudioFramesPerPes
+ * @property int<0, max> $AudioFramesPerPes
  * @property 'ATSC'|'DVB' $AudioStreamType
  * @property 'DISABLED'|'ENABLED' $CcDescriptor
  * @property 'NONE'|'PASSTHROUGH' $Ebif
@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'NONE'|'PASSTHROUGH' $Klv
  * @property 'NO_PASSTHROUGH'|'PASSTHROUGH' $NielsenId3Behavior
  * @property 'CONFIGURED_PCR_PERIOD'|'PCR_EVERY_PES_PACKET' $PcrControl
- * @property int $PcrPeriod
+ * @property int<0, 500> $PcrPeriod
  * @property 'NONE'|'PASSTHROUGH' $Scte35Control
  * @property double $Scte35PrerollPullupMilliseconds
  */
@@ -27,7 +27,7 @@ class MultiplexM2tsSettings extends Shape
      *     AbsentInputAudioBehavior?: 'DROP'|'ENCODE_SILENCE',
      *     Arib?: 'DISABLED'|'ENABLED',
      *     AudioBufferModel?: 'ATSC'|'DVB',
-     *     AudioFramesPerPes?: int,
+     *     AudioFramesPerPes?: int<0, max>,
      *     AudioStreamType?: 'ATSC'|'DVB',
      *     CcDescriptor?: 'DISABLED'|'ENABLED',
      *     Ebif?: 'NONE'|'PASSTHROUGH',
@@ -35,7 +35,7 @@ class MultiplexM2tsSettings extends Shape
      *     Klv?: 'NONE'|'PASSTHROUGH',
      *     NielsenId3Behavior?: 'NO_PASSTHROUGH'|'PASSTHROUGH',
      *     PcrControl?: 'CONFIGURED_PCR_PERIOD'|'PCR_EVERY_PES_PACKET',
-     *     PcrPeriod?: int,
+     *     PcrPeriod?: int<0, 500>,
      *     Scte35Control?: 'NONE'|'PASSTHROUGH',
      *     Scte35PrerollPullupMilliseconds?: double
      * } $args

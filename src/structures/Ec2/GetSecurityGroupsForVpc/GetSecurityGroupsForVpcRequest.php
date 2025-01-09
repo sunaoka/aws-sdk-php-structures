@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $VpcId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property list<Shapes\Filter> $Filters
  * @property bool $DryRun
  */
@@ -17,7 +17,7 @@ class GetSecurityGroupsForVpcRequest extends Request
      * @param array{
      *     VpcId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     Filters?: list<Shapes\Filter>,
      *     DryRun?: bool
      * } $args

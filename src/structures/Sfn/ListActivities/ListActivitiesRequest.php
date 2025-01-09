@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Sfn\ListActivities;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<0, 1000> $maxResults
  * @property string $nextToken
  */
 class ListActivitiesRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<0, 1000>,
      *     nextToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $QueryText
- * @property int $MaxResults
+ * @property int<1, 20> $MaxResults
  * @property list<double> $BiasPosition
  * @property Shapes\AutocompleteFilter $Filter
  * @property 'MergeAllSpannedLocalities'|'EnumerateSpannedLocalities' $PostalCodeMode
@@ -21,7 +21,7 @@ class AutocompleteRequest extends Request
     /**
      * @param array{
      *     QueryText: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 20>,
      *     BiasPosition?: list<double>,
      *     Filter?: Shapes\AutocompleteFilter,
      *     PostalCodeMode?: 'MergeAllSpannedLocalities'|'EnumerateSpannedLocalities',

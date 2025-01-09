@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CoreNetworkId
  * @property int $PolicyVersionId
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class GetCoreNetworkChangeEventsRequest extends Request
@@ -16,7 +16,7 @@ class GetCoreNetworkChangeEventsRequest extends Request
      * @param array{
      *     CoreNetworkId: string,
      *     PolicyVersionId: int,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\BatchGetAssetPropertyValueHistoryEntry> $entries
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, max> $maxResults
  */
 class BatchGetAssetPropertyValueHistoryRequest extends Request
 {
@@ -15,7 +15,7 @@ class BatchGetAssetPropertyValueHistoryRequest extends Request
      * @param array{
      *     entries: list<Shapes\BatchGetAssetPropertyValueHistoryEntry>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $MonitorArn
  * @property list<Shapes\Filter> $Filters
  */
@@ -15,7 +15,7 @@ class ListMonitorEvaluationsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     MonitorArn: string,
      *     Filters?: list<Shapes\Filter>
      * } $args

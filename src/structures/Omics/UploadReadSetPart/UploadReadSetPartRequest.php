@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $sequenceStoreId
  * @property string $uploadId
  * @property 'SOURCE1'|'SOURCE2' $partSource
- * @property int $partNumber
+ * @property int<1, 10000> $partNumber
  * @property string $payload
  */
 class UploadReadSetPartRequest extends Request
@@ -18,7 +18,7 @@ class UploadReadSetPartRequest extends Request
      *     sequenceStoreId: string,
      *     uploadId: string,
      *     partSource: 'SOURCE1'|'SOURCE2',
-     *     partNumber: int,
+     *     partNumber: int<1, 10000>,
      *     payload: string
      * } $args
      */

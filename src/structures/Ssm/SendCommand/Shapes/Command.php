@@ -28,7 +28,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ServiceRole
  * @property NotificationConfig $NotificationConfig
  * @property CloudWatchOutputConfig $CloudWatchOutputConfig
- * @property int $TimeoutSeconds
+ * @property int<30, 2592000> $TimeoutSeconds
  * @property AlarmConfiguration $AlarmConfiguration
  * @property list<AlarmStateInformation> $TriggeredAlarms
  */
@@ -59,7 +59,7 @@ class Command extends Shape
      *     ServiceRole?: string,
      *     NotificationConfig?: NotificationConfig,
      *     CloudWatchOutputConfig?: CloudWatchOutputConfig,
-     *     TimeoutSeconds?: int,
+     *     TimeoutSeconds?: int<30, 2592000>,
      *     AlarmConfiguration?: AlarmConfiguration,
      *     TriggeredAlarms?: list<AlarmStateInformation>
      * } $args

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $accountID
  * @property string $jobID
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class DescribeJobLogItemsRequest extends Request
@@ -16,7 +16,7 @@ class DescribeJobLogItemsRequest extends Request
      * @param array{
      *     accountID?: string,
      *     jobID: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

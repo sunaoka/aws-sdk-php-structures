@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $dnsName
  * @property 'active'|'provisioning'|'active_impaired'|'failed'|'unknown' $state
  * @property 'HTTP_HTTPS'|'HTTP' $protocol
- * @property list<int> $publicPorts
+ * @property list<int<-1, 65535>> $publicPorts
  * @property string $healthCheckPath
  * @property int $instancePort
  * @property list<InstanceHealthSummary> $instanceHealthSummary
@@ -39,7 +39,7 @@ class LoadBalancer extends Shape
      *     dnsName?: string,
      *     state?: 'active'|'provisioning'|'active_impaired'|'failed'|'unknown',
      *     protocol?: 'HTTP_HTTPS'|'HTTP',
-     *     publicPorts?: list<int>,
+     *     publicPorts?: list<int<-1, 65535>>,
      *     healthCheckPath?: string,
      *     instancePort?: int,
      *     instanceHealthSummary?: list<InstanceHealthSummary>,

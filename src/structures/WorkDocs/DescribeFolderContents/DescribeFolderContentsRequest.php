@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FolderId
  * @property 'DATE'|'NAME' $Sort
  * @property 'ASCENDING'|'DESCENDING' $Order
- * @property int $Limit
+ * @property int<1, 999> $Limit
  * @property string $Marker
  * @property 'ALL'|'DOCUMENT'|'FOLDER' $Type
  * @property string $Include
@@ -22,7 +22,7 @@ class DescribeFolderContentsRequest extends Request
      *     FolderId: string,
      *     Sort?: 'DATE'|'NAME',
      *     Order?: 'ASCENDING'|'DESCENDING',
-     *     Limit?: int,
+     *     Limit?: int<1, 999>,
      *     Marker?: string,
      *     Type?: 'ALL'|'DOCUMENT'|'FOLDER',
      *     Include?: string

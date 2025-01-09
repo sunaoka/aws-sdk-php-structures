@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $RadiusServers
- * @property int $RadiusPort
- * @property int $RadiusTimeout
- * @property int $RadiusRetries
+ * @property int<1025, 65535> $RadiusPort
+ * @property int<1, 50> $RadiusTimeout
+ * @property int<0, 10> $RadiusRetries
  * @property string $SharedSecret
  * @property 'PAP'|'CHAP'|'MS-CHAPv1'|'MS-CHAPv2' $AuthenticationProtocol
  * @property string $DisplayLabel
@@ -19,9 +19,9 @@ class RadiusSettings extends Shape
     /**
      * @param array{
      *     RadiusServers?: list<string>,
-     *     RadiusPort?: int,
-     *     RadiusTimeout?: int,
-     *     RadiusRetries?: int,
+     *     RadiusPort?: int<1025, 65535>,
+     *     RadiusTimeout?: int<1, 50>,
+     *     RadiusRetries?: int<0, 10>,
      *     SharedSecret?: string,
      *     AuthenticationProtocol?: 'PAP'|'CHAP'|'MS-CHAPv1'|'MS-CHAPv2',
      *     DisplayLabel?: string,

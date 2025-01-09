@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RuleName
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property int $Period
+ * @property int<1, max> $Period
  * @property int $MaxContributorCount
  * @property list<string> $Metrics
  * @property string $OrderBy
@@ -20,7 +20,7 @@ class GetInsightRuleReportRequest extends Request
      *     RuleName: string,
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
-     *     Period: int,
+     *     Period: int<1, max>,
      *     MaxContributorCount?: int,
      *     Metrics?: list<string>,
      *     OrderBy?: string

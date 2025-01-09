@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Appflow\UpdateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $maxParallelism
+ * @property int<1, 10> $maxParallelism
  */
 class SAPODataParallelismConfig extends Shape
 {
     /**
-     * @param array{maxParallelism: int} $args
+     * @param array{maxParallelism: int<1, 10>} $args
      */
     public function __construct(array $args)
     {

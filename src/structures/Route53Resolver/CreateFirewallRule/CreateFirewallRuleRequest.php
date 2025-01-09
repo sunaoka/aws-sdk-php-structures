@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'NODATA'|'NXDOMAIN'|'OVERRIDE' $BlockResponse
  * @property string $BlockOverrideDomain
  * @property 'CNAME' $BlockOverrideDnsType
- * @property int $BlockOverrideTtl
+ * @property int<0, 604800> $BlockOverrideTtl
  * @property string $Name
  * @property 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN' $FirewallDomainRedirectionAction
  * @property string $Qtype
@@ -32,7 +32,7 @@ class CreateFirewallRuleRequest extends Request
      *     BlockResponse?: 'NODATA'|'NXDOMAIN'|'OVERRIDE',
      *     BlockOverrideDomain?: string,
      *     BlockOverrideDnsType?: 'CNAME',
-     *     BlockOverrideTtl?: int,
+     *     BlockOverrideTtl?: int<0, 604800>,
      *     Name: string,
      *     FirewallDomainRedirectionAction?: 'INSPECT_REDIRECTION_DOMAIN'|'TRUST_REDIRECTION_DOMAIN',
      *     Qtype?: string,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<min, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeInboundCrossClusterSearchConnectionsRequest extends Request
@@ -14,7 +14,7 @@ class DescribeInboundCrossClusterSearchConnectionsRequest extends Request
     /**
      * @param array{
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<min, 100>,
      *     NextToken?: string
      * } $args
      */

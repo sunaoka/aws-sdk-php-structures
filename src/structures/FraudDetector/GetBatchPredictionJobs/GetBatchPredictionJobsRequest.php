@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $jobId
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nextToken
  */
 class GetBatchPredictionJobsRequest extends Request
@@ -14,7 +14,7 @@ class GetBatchPredictionJobsRequest extends Request
     /**
      * @param array{
      *     jobId?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nextToken?: string
      * } $args
      */

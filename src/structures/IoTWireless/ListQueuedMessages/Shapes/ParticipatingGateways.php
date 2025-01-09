@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'SEQUENTIAL'|'CONCURRENT'|'USING_UPLINK_GATEWAY' $DownlinkMode
  * @property list<GatewayListItem> $GatewayList
- * @property int $TransmissionInterval
+ * @property int<1, 604800> $TransmissionInterval
  */
 class ParticipatingGateways extends Shape
 {
@@ -15,7 +15,7 @@ class ParticipatingGateways extends Shape
      * @param array{
      *     DownlinkMode: 'SEQUENTIAL'|'CONCURRENT'|'USING_UPLINK_GATEWAY',
      *     GatewayList: list<GatewayListItem>,
-     *     TransmissionInterval: int
+     *     TransmissionInterval: int<1, 604800>
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $UserPoolId
  * @property string $Username
- * @property int $Limit
+ * @property int<0, 60> $Limit
  * @property string $PaginationToken
  */
 class AdminListDevicesRequest extends Request
@@ -16,7 +16,7 @@ class AdminListDevicesRequest extends Request
      * @param array{
      *     UserPoolId: string,
      *     Username: string,
-     *     Limit?: int,
+     *     Limit?: int<0, 60>,
      *     PaginationToken?: string
      * } $args
      */

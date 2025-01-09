@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Arn
  * @property string $Description
- * @property int $Size
+ * @property int<1, max> $Size
  * @property int $CreationTime
  * @property int $LastModifiedTime
  */
@@ -19,7 +19,7 @@ class PricingPlanListElement extends Shape
      *     Name?: string,
      *     Arn?: string,
      *     Description?: string,
-     *     Size?: int,
+     *     Size?: int<1, max>,
      *     CreationTime?: int,
      *     LastModifiedTime?: int
      * } $args

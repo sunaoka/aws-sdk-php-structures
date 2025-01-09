@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $builtInPatternId
- * @property int $confidenceLevel
+ * @property int<1, 3> $confidenceLevel
  * @property CustomPattern $customPattern
  * @property list<string> $enforcedUrls
  * @property list<string> $exemptUrls
@@ -17,7 +17,7 @@ class InlineRedactionPattern extends Shape
     /**
      * @param array{
      *     builtInPatternId?: string,
-     *     confidenceLevel?: int,
+     *     confidenceLevel?: int<1, 3>,
      *     customPattern?: CustomPattern,
      *     enforcedUrls?: list<string>,
      *     exemptUrls?: list<string>,

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $botId
  * @property string $replicaRegion
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListBotAliasReplicasRequest extends Request
@@ -16,7 +16,7 @@ class ListBotAliasReplicasRequest extends Request
      * @param array{
      *     botId: string,
      *     replicaRegion: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PRESERVE'|'REMOVE' $PreserveDeletedFiles
  * @property 'NONE'|'PRESERVE' $PreserveDevices
  * @property 'NONE'|'PRESERVE' $PosixPermissions
- * @property int $BytesPerSecond
+ * @property int<-1, max> $BytesPerSecond
  * @property 'ENABLED'|'DISABLED' $TaskQueueing
  * @property 'OFF'|'BASIC'|'TRANSFER' $LogLevel
  * @property 'CHANGED'|'ALL' $TransferMode
@@ -34,7 +34,7 @@ class Options extends Shape
      *     PreserveDeletedFiles?: 'PRESERVE'|'REMOVE',
      *     PreserveDevices?: 'NONE'|'PRESERVE',
      *     PosixPermissions?: 'NONE'|'PRESERVE',
-     *     BytesPerSecond?: int,
+     *     BytesPerSecond?: int<-1, max>,
      *     TaskQueueing?: 'ENABLED'|'DISABLED',
      *     LogLevel?: 'OFF'|'BASIC'|'TRANSFER',
      *     TransferMode?: 'CHANGED'|'ALL',

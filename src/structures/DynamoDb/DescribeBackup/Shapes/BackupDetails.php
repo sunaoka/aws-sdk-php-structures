@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $BackupArn
  * @property string $BackupName
- * @property int $BackupSizeBytes
+ * @property int<0, max> $BackupSizeBytes
  * @property 'CREATING'|'DELETED'|'AVAILABLE' $BackupStatus
  * @property 'USER'|'SYSTEM'|'AWS_BACKUP' $BackupType
  * @property \Aws\Api\DateTimeResult $BackupCreationDateTime
@@ -19,7 +19,7 @@ class BackupDetails extends Shape
      * @param array{
      *     BackupArn: string,
      *     BackupName: string,
-     *     BackupSizeBytes?: int,
+     *     BackupSizeBytes?: int<0, max>,
      *     BackupStatus: 'CREATING'|'DELETED'|'AVAILABLE',
      *     BackupType: 'USER'|'SYSTEM'|'AWS_BACKUP',
      *     BackupCreationDateTime: \Aws\Api\DateTimeResult,

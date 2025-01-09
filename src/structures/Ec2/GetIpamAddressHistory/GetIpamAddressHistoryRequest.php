@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VpcId
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class GetIpamAddressHistoryRequest extends Request
@@ -24,7 +24,7 @@ class GetIpamAddressHistoryRequest extends Request
      *     VpcId?: string,
      *     StartTime?: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

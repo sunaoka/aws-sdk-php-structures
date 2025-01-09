@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GatewayARN
  * @property int $TapeSizeInBytes
  * @property string $ClientToken
- * @property int $NumTapesToCreate
+ * @property int<1, 10> $NumTapesToCreate
  * @property string $TapeBarcodePrefix
  * @property bool $KMSEncrypted
  * @property string $KMSKey
@@ -23,7 +23,7 @@ class CreateTapesRequest extends Request
      *     GatewayARN: string,
      *     TapeSizeInBytes: int,
      *     ClientToken: string,
-     *     NumTapesToCreate: int,
+     *     NumTapesToCreate: int<1, 10>,
      *     TapeBarcodePrefix: string,
      *     KMSEncrypted?: bool,
      *     KMSKey?: string,

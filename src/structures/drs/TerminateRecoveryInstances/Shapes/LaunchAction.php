@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $description
  * @property string $name
  * @property bool $optional
- * @property int $order
+ * @property int<2, 10000> $order
  * @property array<string, LaunchActionParameter> $parameters
  * @property 'SSM_AUTOMATION'|'SSM_COMMAND' $type
  */
@@ -29,7 +29,7 @@ class LaunchAction extends Shape
      *     description?: string,
      *     name?: string,
      *     optional?: bool,
-     *     order?: int,
+     *     order?: int<2, 10000>,
      *     parameters?: array<string, LaunchActionParameter>,
      *     type?: 'SSM_AUTOMATION'|'SSM_COMMAND'
      * } $args

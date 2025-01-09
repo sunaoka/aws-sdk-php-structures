@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Priority
+ * @property int<-50, 50> $Priority
  * @property string $Queue
  * @property int $WaitMinutes
  */
@@ -13,7 +13,7 @@ class HopDestination extends Shape
 {
     /**
      * @param array{
-     *     Priority?: int,
+     *     Priority?: int<-50, 50>,
      *     Queue?: string,
      *     WaitMinutes?: int
      * } $args

@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TargetGroupArn
  * @property string $TargetGroupName
  * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE' $Protocol
- * @property int $Port
+ * @property int<1, 65535> $Port
  * @property string $VpcId
  * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE' $HealthCheckProtocol
  * @property string $HealthCheckPort
  * @property bool $HealthCheckEnabled
- * @property int $HealthCheckIntervalSeconds
- * @property int $HealthCheckTimeoutSeconds
- * @property int $HealthyThresholdCount
- * @property int $UnhealthyThresholdCount
+ * @property int<5, 300> $HealthCheckIntervalSeconds
+ * @property int<2, 120> $HealthCheckTimeoutSeconds
+ * @property int<2, 10> $HealthyThresholdCount
+ * @property int<2, 10> $UnhealthyThresholdCount
  * @property string $HealthCheckPath
  * @property Matcher $Matcher
  * @property list<string> $LoadBalancerArns
@@ -31,15 +31,15 @@ class TargetGroup extends Shape
      *     TargetGroupArn?: string,
      *     TargetGroupName?: string,
      *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE',
-     *     Port?: int,
+     *     Port?: int<1, 65535>,
      *     VpcId?: string,
      *     HealthCheckProtocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE',
      *     HealthCheckPort?: string,
      *     HealthCheckEnabled?: bool,
-     *     HealthCheckIntervalSeconds?: int,
-     *     HealthCheckTimeoutSeconds?: int,
-     *     HealthyThresholdCount?: int,
-     *     UnhealthyThresholdCount?: int,
+     *     HealthCheckIntervalSeconds?: int<5, 300>,
+     *     HealthCheckTimeoutSeconds?: int<2, 120>,
+     *     HealthyThresholdCount?: int<2, 10>,
+     *     UnhealthyThresholdCount?: int<2, 10>,
      *     HealthCheckPath?: string,
      *     Matcher?: Matcher,
      *     LoadBalancerArns?: list<string>,

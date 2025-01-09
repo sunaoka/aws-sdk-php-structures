@@ -13,9 +13,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ipv4'|'ipv6' $AddressFamily
  * @property bool $AutoImport
  * @property bool $PubliclyAdvertisable
- * @property int $AllocationMinNetmaskLength
- * @property int $AllocationMaxNetmaskLength
- * @property int $AllocationDefaultNetmaskLength
+ * @property int<0, 128> $AllocationMinNetmaskLength
+ * @property int<0, 128> $AllocationMaxNetmaskLength
+ * @property int<0, 128> $AllocationDefaultNetmaskLength
  * @property list<Shapes\RequestIpamResourceTag> $AllocationResourceTags
  * @property list<Shapes\TagSpecification> $TagSpecifications
  * @property string $ClientToken
@@ -35,9 +35,9 @@ class CreateIpamPoolRequest extends Request
      *     AddressFamily: 'ipv4'|'ipv6',
      *     AutoImport?: bool,
      *     PubliclyAdvertisable?: bool,
-     *     AllocationMinNetmaskLength?: int,
-     *     AllocationMaxNetmaskLength?: int,
-     *     AllocationDefaultNetmaskLength?: int,
+     *     AllocationMinNetmaskLength?: int<0, 128>,
+     *     AllocationMaxNetmaskLength?: int<0, 128>,
+     *     AllocationDefaultNetmaskLength?: int<0, 128>,
      *     AllocationResourceTags?: list<Shapes\RequestIpamResourceTag>,
      *     TagSpecifications?: list<Shapes\TagSpecification>,
      *     ClientToken?: string,

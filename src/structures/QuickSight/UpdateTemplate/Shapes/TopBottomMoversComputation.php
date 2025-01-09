@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DimensionField $Time
  * @property DimensionField $Category
  * @property MeasureField $Value
- * @property int $MoverSize
+ * @property int<1, 20> $MoverSize
  * @property 'PERCENT_DIFFERENCE'|'ABSOLUTE_DIFFERENCE' $SortOrder
  * @property 'TOP'|'BOTTOM' $Type
  */
@@ -23,7 +23,7 @@ class TopBottomMoversComputation extends Shape
      *     Time?: DimensionField,
      *     Category?: DimensionField,
      *     Value?: MeasureField,
-     *     MoverSize?: int,
+     *     MoverSize?: int<1, 20>,
      *     SortOrder?: 'PERCENT_DIFFERENCE'|'ABSOLUTE_DIFFERENCE',
      *     Type: 'TOP'|'BOTTOM'
      * } $args

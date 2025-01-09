@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $GroupName
  * @property string $GroupArn
  * @property string $Description
- * @property int $Criticality
+ * @property int<1, 10> $Criticality
  * @property string $Owner
  * @property string $DisplayName
  */
@@ -19,7 +19,7 @@ class GroupIdentifier extends Shape
      *     GroupName?: string,
      *     GroupArn?: string,
      *     Description?: string,
-     *     Criticality?: int,
+     *     Criticality?: int<1, 10>,
      *     Owner?: string,
      *     DisplayName?: string
      * } $args

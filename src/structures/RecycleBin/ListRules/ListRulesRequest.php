@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RecycleBin\ListRules;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  * @property 'EBS_SNAPSHOT'|'EC2_IMAGE' $ResourceType
  * @property list<Shapes\ResourceTag> $ResourceTags
@@ -16,7 +16,7 @@ class ListRulesRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string,
      *     ResourceType: 'EBS_SNAPSHOT'|'EC2_IMAGE',
      *     ResourceTags?: list<Shapes\ResourceTag>,

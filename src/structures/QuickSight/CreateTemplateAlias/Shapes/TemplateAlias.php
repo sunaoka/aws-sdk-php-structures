@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $AliasName
  * @property string $Arn
- * @property int $TemplateVersionNumber
+ * @property int<1, max> $TemplateVersionNumber
  */
 class TemplateAlias extends Shape
 {
@@ -15,7 +15,7 @@ class TemplateAlias extends Shape
      * @param array{
      *     AliasName?: string,
      *     Arn?: string,
-     *     TemplateVersionNumber?: int
+     *     TemplateVersionNumber?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

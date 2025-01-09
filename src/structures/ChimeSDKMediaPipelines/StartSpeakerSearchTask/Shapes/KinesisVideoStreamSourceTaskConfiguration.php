@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $StreamArn
- * @property int $ChannelId
+ * @property int<0, 1> $ChannelId
  * @property string $FragmentNumber
  */
 class KinesisVideoStreamSourceTaskConfiguration extends Shape
@@ -14,7 +14,7 @@ class KinesisVideoStreamSourceTaskConfiguration extends Shape
     /**
      * @param array{
      *     StreamArn: string,
-     *     ChannelId: int,
+     *     ChannelId: int<0, 1>,
      *     FragmentNumber?: string
      * } $args
      */

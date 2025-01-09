@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\GroundStation\CreateDataflowEndpointGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $contactPostPassDurationSeconds
- * @property int $contactPrePassDurationSeconds
+ * @property int<120, 480> $contactPostPassDurationSeconds
+ * @property int<120, 480> $contactPrePassDurationSeconds
  * @property list<Shapes\EndpointDetails> $endpointDetails
  * @property array<string, string> $tags
  */
@@ -14,8 +14,8 @@ class CreateDataflowEndpointGroupRequest extends Request
 {
     /**
      * @param array{
-     *     contactPostPassDurationSeconds?: int,
-     *     contactPrePassDurationSeconds?: int,
+     *     contactPostPassDurationSeconds?: int<120, 480>,
+     *     contactPrePassDurationSeconds?: int<120, 480>,
      *     endpointDetails: list<Shapes\EndpointDetails>,
      *     tags?: array<string, string>
      * } $args

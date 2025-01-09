@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'INITIALIZED'|'READY'|'FAILED' $Status
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $NextToken
  */
 class ListBuildsRequest extends Request
@@ -14,7 +14,7 @@ class ListBuildsRequest extends Request
     /**
      * @param array{
      *     Status?: 'INITIALIZED'|'READY'|'FAILED',
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $contentType
  * @property string $knowledgeBaseId
- * @property int $presignedUrlTimeToLive
+ * @property int<1, 60> $presignedUrlTimeToLive
  */
 class StartContentUploadRequest extends Request
 {
@@ -15,7 +15,7 @@ class StartContentUploadRequest extends Request
      * @param array{
      *     contentType: string,
      *     knowledgeBaseId: string,
-     *     presignedUrlTimeToLive?: int
+     *     presignedUrlTimeToLive?: int<1, 60>
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ChannelArn
  * @property string $ChimeBearer
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListSubChannelsRequest extends Request
@@ -16,7 +16,7 @@ class ListSubChannelsRequest extends Request
      * @param array{
      *     ChannelArn: string,
      *     ChimeBearer: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $mapRunArn
- * @property int $maxConcurrency
+ * @property int<0, max> $maxConcurrency
  * @property float $toleratedFailurePercentage
- * @property int $toleratedFailureCount
+ * @property int<0, max> $toleratedFailureCount
  */
 class UpdateMapRunRequest extends Request
 {
     /**
      * @param array{
      *     mapRunArn: string,
-     *     maxConcurrency?: int,
+     *     maxConcurrency?: int<0, max>,
      *     toleratedFailurePercentage?: float,
-     *     toleratedFailureCount?: int
+     *     toleratedFailureCount?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

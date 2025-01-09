@@ -13,9 +13,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property int $SamplingInterval
  * @property 'JPEG'|'PNG' $Format
  * @property array<'JPEGQuality', string> $FormatConfig
- * @property int $WidthPixels
- * @property int $HeightPixels
- * @property int $MaxResults
+ * @property int<1, 3840> $WidthPixels
+ * @property int<1, 2160> $HeightPixels
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class GetImagesRequest extends Request
@@ -30,9 +30,9 @@ class GetImagesRequest extends Request
      *     SamplingInterval?: int,
      *     Format: 'JPEG'|'PNG',
      *     FormatConfig?: array<'JPEGQuality', string>,
-     *     WidthPixels?: int,
-     *     HeightPixels?: int,
-     *     MaxResults?: int,
+     *     WidthPixels?: int<1, 3840>,
+     *     HeightPixels?: int<1, 2160>,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

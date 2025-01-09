@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $NamePrefix
  * @property string $NextToken
- * @property int $Limit
+ * @property int<1, 100> $Limit
  */
 class ListEventBusesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListEventBusesRequest extends Request
      * @param array{
      *     NamePrefix?: string,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

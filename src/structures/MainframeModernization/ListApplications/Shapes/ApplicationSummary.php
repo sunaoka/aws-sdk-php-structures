@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $applicationArn
  * @property string $applicationId
- * @property int $applicationVersion
+ * @property int<1, max> $applicationVersion
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property 'Deploying'|'Deployed' $deploymentStatus
  * @property string $description
@@ -25,7 +25,7 @@ class ApplicationSummary extends Shape
      * @param array{
      *     applicationArn: string,
      *     applicationId: string,
-     *     applicationVersion: int,
+     *     applicationVersion: int<1, max>,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     deploymentStatus?: 'Deploying'|'Deployed',
      *     description?: string,

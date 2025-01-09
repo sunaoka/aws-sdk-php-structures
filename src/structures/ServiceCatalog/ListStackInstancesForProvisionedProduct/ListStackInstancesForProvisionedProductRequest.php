@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AcceptLanguage
  * @property string $ProvisionedProductId
  * @property string $PageToken
- * @property int $PageSize
+ * @property int<0, 20> $PageSize
  */
 class ListStackInstancesForProvisionedProductRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListStackInstancesForProvisionedProductRequest extends Request
      *     AcceptLanguage?: string,
      *     ProvisionedProductId: string,
      *     PageToken?: string,
-     *     PageSize?: int
+     *     PageSize?: int<0, 20>
      * } $args
      */
     public function __construct(array $args)

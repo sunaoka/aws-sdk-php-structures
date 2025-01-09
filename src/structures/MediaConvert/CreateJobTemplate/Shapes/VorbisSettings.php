@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Channels
- * @property int $SampleRate
- * @property int $VbrQuality
+ * @property int<1, 2> $Channels
+ * @property int<22050, 48000> $SampleRate
+ * @property int<-1, 10> $VbrQuality
  */
 class VorbisSettings extends Shape
 {
     /**
      * @param array{
-     *     Channels?: int,
-     *     SampleRate?: int,
-     *     VbrQuality?: int
+     *     Channels?: int<1, 2>,
+     *     SampleRate?: int<22050, 48000>,
+     *     VbrQuality?: int<-1, 10>
      * } $args
      */
     public function __construct(array $args = [])

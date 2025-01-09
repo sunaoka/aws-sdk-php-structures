@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'IN'|'NOT_IN' $dimensionValueOperator
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $endTime
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property string $nextToken
  */
 class ListMetricValuesRequest extends Request
@@ -24,7 +24,7 @@ class ListMetricValuesRequest extends Request
      *     dimensionValueOperator?: 'IN'|'NOT_IN',
      *     startTime: \Aws\Api\DateTimeResult,
      *     endTime: \Aws\Api\DateTimeResult,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     nextToken?: string
      * } $args
      */

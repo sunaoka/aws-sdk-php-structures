@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $streamId
  * @property string $streamArn
- * @property int $streamVersion
+ * @property int<0, 65535> $streamVersion
  * @property string $description
  * @property list<StreamFile> $files
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -20,7 +20,7 @@ class StreamInfo extends Shape
      * @param array{
      *     streamId?: string,
      *     streamArn?: string,
-     *     streamVersion?: int,
+     *     streamVersion?: int<0, 65535>,
      *     description?: string,
      *     files?: list<StreamFile>,
      *     createdAt?: \Aws\Api\DateTimeResult,

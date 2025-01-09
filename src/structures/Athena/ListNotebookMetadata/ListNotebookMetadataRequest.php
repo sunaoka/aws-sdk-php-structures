@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\FilterDefinition $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $WorkGroup
  */
 class ListNotebookMetadataRequest extends Request
@@ -16,7 +16,7 @@ class ListNotebookMetadataRequest extends Request
      * @param array{
      *     Filters?: Shapes\FilterDefinition,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     WorkGroup: string
      * } $args
      */

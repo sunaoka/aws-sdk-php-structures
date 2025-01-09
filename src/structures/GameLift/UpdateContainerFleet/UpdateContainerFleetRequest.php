@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FleetId
  * @property string $GameServerContainerGroupDefinitionName
  * @property string $PerInstanceContainerGroupDefinitionName
- * @property int $GameServerContainerGroupsPerInstance
+ * @property int<1, 5000> $GameServerContainerGroupsPerInstance
  * @property Shapes\ConnectionPortRange $InstanceConnectionPortRange
  * @property list<Shapes\IpPermission> $InstanceInboundPermissionAuthorizations
  * @property list<Shapes\IpPermission> $InstanceInboundPermissionRevocations
@@ -27,7 +27,7 @@ class UpdateContainerFleetRequest extends Request
      *     FleetId: string,
      *     GameServerContainerGroupDefinitionName?: string,
      *     PerInstanceContainerGroupDefinitionName?: string,
-     *     GameServerContainerGroupsPerInstance?: int,
+     *     GameServerContainerGroupsPerInstance?: int<1, 5000>,
      *     InstanceConnectionPortRange?: Shapes\ConnectionPortRange,
      *     InstanceInboundPermissionAuthorizations?: list<Shapes\IpPermission>,
      *     InstanceInboundPermissionRevocations?: list<Shapes\IpPermission>,

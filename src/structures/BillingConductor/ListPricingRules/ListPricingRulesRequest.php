@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $BillingPeriod
  * @property Shapes\ListPricingRulesFilter $Filters
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListPricingRulesRequest extends Request
@@ -16,7 +16,7 @@ class ListPricingRulesRequest extends Request
      * @param array{
      *     BillingPeriod?: string,
      *     Filters?: Shapes\ListPricingRulesFilter,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

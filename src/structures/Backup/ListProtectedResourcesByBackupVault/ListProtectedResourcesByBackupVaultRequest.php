@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $BackupVaultName
  * @property string $BackupVaultAccountId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class ListProtectedResourcesByBackupVaultRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListProtectedResourcesByBackupVaultRequest extends Request
      *     BackupVaultName: string,
      *     BackupVaultAccountId?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

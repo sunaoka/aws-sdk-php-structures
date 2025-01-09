@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property bool $associateDefaultSecurityGroup
  * @property bool $autoReplicateNewDisks
- * @property int $bandwidthThrottling
+ * @property int<0, max> $bandwidthThrottling
  * @property bool $createPublicIP
  * @property 'PRIVATE_IP'|'PUBLIC_IP' $dataPlaneRouting
  * @property 'GP2'|'GP3'|'ST1'|'AUTO' $defaultLargeStagingDiskType

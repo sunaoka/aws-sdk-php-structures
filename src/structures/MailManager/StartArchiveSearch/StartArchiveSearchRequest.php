@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ArchiveId
  * @property Shapes\ArchiveFilters $Filters
  * @property \Aws\Api\DateTimeResult $FromTimestamp
- * @property int $MaxResults
+ * @property int<0, 1000> $MaxResults
  * @property \Aws\Api\DateTimeResult $ToTimestamp
  */
 class StartArchiveSearchRequest extends Request
@@ -18,7 +18,7 @@ class StartArchiveSearchRequest extends Request
      *     ArchiveId: string,
      *     Filters?: Shapes\ArchiveFilters,
      *     FromTimestamp: \Aws\Api\DateTimeResult,
-     *     MaxResults: int,
+     *     MaxResults: int<0, 1000>,
      *     ToTimestamp: \Aws\Api\DateTimeResult
      * } $args
      */

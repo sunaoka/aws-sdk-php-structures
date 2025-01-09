@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $transactionId
  * @property 'ETHEREUM_MAINNET'|'ETHEREUM_SEPOLIA_TESTNET'|'BITCOIN_MAINNET'|'BITCOIN_TESTNET' $network
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class ListTransactionEventsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListTransactionEventsRequest extends Request
      *     transactionId?: string,
      *     network: 'ETHEREUM_MAINNET'|'ETHEREUM_SEPOLIA_TESTNET'|'BITCOIN_MAINNET'|'BITCOIN_TESTNET',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args)

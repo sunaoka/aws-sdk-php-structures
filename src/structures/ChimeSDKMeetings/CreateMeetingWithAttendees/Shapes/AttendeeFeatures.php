@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMeetings\CreateMeetingWithAttendees\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxCount
+ * @property int<1, 250> $MaxCount
  */
 class AttendeeFeatures extends Shape
 {
     /**
-     * @param array{MaxCount?: int} $args
+     * @param array{MaxCount?: int<1, 250>} $args
      */
     public function __construct(array $args = [])
     {

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $OrganizationId
  * @property string $EntityId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListMailboxPermissionsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListMailboxPermissionsRequest extends Request
      *     OrganizationId: string,
      *     EntityId: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

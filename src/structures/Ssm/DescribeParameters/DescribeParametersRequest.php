@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\ParametersFilter> $Filters
  * @property list<Shapes\ParameterStringFilter> $ParameterFilters
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  * @property bool $Shared
  */
@@ -17,7 +17,7 @@ class DescribeParametersRequest extends Request
      * @param array{
      *     Filters?: list<Shapes\ParametersFilter>,
      *     ParameterFilters?: list<Shapes\ParameterStringFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string,
      *     Shared?: bool
      * } $args

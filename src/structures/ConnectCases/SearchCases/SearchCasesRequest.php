@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domainId
  * @property list<Shapes\FieldIdentifier> $fields
  * @property Shapes\CaseFilter $filter
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  * @property string $searchTerm
  * @property list<Shapes\Sort> $sorts
@@ -20,7 +20,7 @@ class SearchCasesRequest extends Request
      *     domainId: string,
      *     fields?: list<Shapes\FieldIdentifier>,
      *     filter?: Shapes\CaseFilter,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string,
      *     searchTerm?: string,
      *     sorts?: list<Shapes\Sort>

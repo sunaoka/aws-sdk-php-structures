@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $JobId
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $NextToken
  * @property 'INDEX'|'TIMESTAMP' $SortBy
  */
@@ -15,7 +15,7 @@ class GetFaceSearchRequest extends Request
     /**
      * @param array{
      *     JobId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     NextToken?: string,
      *     SortBy?: 'INDEX'|'TIMESTAMP'
      * } $args

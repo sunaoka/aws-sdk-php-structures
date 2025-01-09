@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $accountIds
- * @property int $maxResults
+ * @property int<1, 500> $maxResults
  * @property string $nextToken
  */
 class ListUsageTotalsRequest extends Request
@@ -14,7 +14,7 @@ class ListUsageTotalsRequest extends Request
     /**
      * @param array{
      *     accountIds?: list<string>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 500>,
      *     nextToken?: string
      * } $args
      */

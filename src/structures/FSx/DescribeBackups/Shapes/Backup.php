@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'AVAILABLE'|'CREATING'|'TRANSFERRING'|'DELETED'|'FAILED'|'PENDING'|'COPYING' $Lifecycle
  * @property BackupFailureDetails $FailureDetails
  * @property 'AUTOMATIC'|'USER_INITIATED'|'AWS_BACKUP' $Type
- * @property int $ProgressPercent
+ * @property int<0, 100> $ProgressPercent
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property string $KmsKeyId
  * @property string $ResourceARN
@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SourceBackupRegion
  * @property 'FILE_SYSTEM'|'VOLUME' $ResourceType
  * @property Volume $Volume
- * @property int $SizeInBytes
+ * @property int<0, max> $SizeInBytes
  */
 class Backup extends Shape
 {
@@ -31,7 +31,7 @@ class Backup extends Shape
      *     Lifecycle: 'AVAILABLE'|'CREATING'|'TRANSFERRING'|'DELETED'|'FAILED'|'PENDING'|'COPYING',
      *     FailureDetails?: BackupFailureDetails,
      *     Type: 'AUTOMATIC'|'USER_INITIATED'|'AWS_BACKUP',
-     *     ProgressPercent?: int,
+     *     ProgressPercent?: int<0, 100>,
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     KmsKeyId?: string,
      *     ResourceARN?: string,
@@ -43,7 +43,7 @@ class Backup extends Shape
      *     SourceBackupRegion?: string,
      *     ResourceType?: 'FILE_SYSTEM'|'VOLUME',
      *     Volume?: Volume,
-     *     SizeInBytes?: int
+     *     SizeInBytes?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\StartLaunch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, int> $groupWeights
+ * @property array<string, int<0, 100000>> $groupWeights
  * @property list<SegmentOverride> $segmentOverrides
  * @property \Aws\Api\DateTimeResult $startTime
  */
@@ -13,7 +13,7 @@ class ScheduledSplit extends Shape
 {
     /**
      * @param array{
-     *     groupWeights?: array<string, int>,
+     *     groupWeights?: array<string, int<0, 100000>>,
      *     segmentOverrides?: list<SegmentOverride>,
      *     startTime: \Aws\Api\DateTimeResult
      * } $args

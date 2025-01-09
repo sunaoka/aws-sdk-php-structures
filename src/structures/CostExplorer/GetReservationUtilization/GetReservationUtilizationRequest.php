@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Expression $Filter
  * @property Shapes\SortDefinition $SortBy
  * @property string $NextPageToken
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  */
 class GetReservationUtilizationRequest extends Request
 {
@@ -23,7 +23,7 @@ class GetReservationUtilizationRequest extends Request
      *     Filter?: Shapes\Expression,
      *     SortBy?: Shapes\SortDefinition,
      *     NextPageToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

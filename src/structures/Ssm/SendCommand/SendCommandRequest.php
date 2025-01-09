@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DocumentVersion
  * @property string $DocumentHash
  * @property 'Sha256'|'Sha1' $DocumentHashType
- * @property int $TimeoutSeconds
+ * @property int<30, 2592000> $TimeoutSeconds
  * @property string $Comment
  * @property array<string, list<string>> $Parameters
  * @property string $OutputS3Region
@@ -34,7 +34,7 @@ class SendCommandRequest extends Request
      *     DocumentVersion?: string,
      *     DocumentHash?: string,
      *     DocumentHashType?: 'Sha256'|'Sha1',
-     *     TimeoutSeconds?: int,
+     *     TimeoutSeconds?: int<30, 2592000>,
      *     Comment?: string,
      *     Parameters?: array<string, list<string>>,
      *     OutputS3Region?: string,

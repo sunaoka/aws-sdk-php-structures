@@ -13,9 +13,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE' $taskRunStatus
  * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING' $targetTaskRunStatus
  * @property array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int> $taskRunStatusCounts
- * @property int $priority
- * @property int $maxFailedTasksCount
- * @property int $maxRetriesPerTask
+ * @property int<0, 100> $priority
+ * @property int<0, 2147483647> $maxFailedTasksCount
+ * @property int<0, 2147483647> $maxRetriesPerTask
  * @property string $createdBy
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $endedAt
@@ -35,9 +35,9 @@ class JobSearchSummary extends Shape
      *     taskRunStatus?: 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE',
      *     targetTaskRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING',
      *     taskRunStatusCounts?: array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>,
-     *     priority?: int,
-     *     maxFailedTasksCount?: int,
-     *     maxRetriesPerTask?: int,
+     *     priority?: int<0, 100>,
+     *     maxFailedTasksCount?: int<0, 2147483647>,
+     *     maxRetriesPerTask?: int<0, 2147483647>,
      *     createdBy?: string,
      *     createdAt?: \Aws\Api\DateTimeResult,
      *     endedAt?: \Aws\Api\DateTimeResult,

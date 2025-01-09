@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FeatureSpecificationS3Uri
  * @property AutoMLJobCompletionCriteria $CompletionCriteria
  * @property string $ForecastFrequency
- * @property int $ForecastHorizon
+ * @property int<1, max> $ForecastHorizon
  * @property list<string> $ForecastQuantiles
  * @property TimeSeriesTransformations $Transformations
  * @property TimeSeriesConfig $TimeSeriesConfig
@@ -22,7 +22,7 @@ class TimeSeriesForecastingJobConfig extends Shape
      *     FeatureSpecificationS3Uri?: string,
      *     CompletionCriteria?: AutoMLJobCompletionCriteria,
      *     ForecastFrequency: string,
-     *     ForecastHorizon: int,
+     *     ForecastHorizon: int<1, max>,
      *     ForecastQuantiles?: list<string>,
      *     Transformations?: TimeSeriesTransformations,
      *     TimeSeriesConfig: TimeSeriesConfig,

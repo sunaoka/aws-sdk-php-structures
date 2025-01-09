@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $MustBeRequestable
  * @property bool $MustBeOwnedByCaller
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListQualificationTypesRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListQualificationTypesRequest extends Request
      *     MustBeRequestable: bool,
      *     MustBeOwnedByCaller?: bool,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

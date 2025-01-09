@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $ContactId
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property 'Raw'|'Redacted' $OutputType
  * @property list<'Transcript'|'Categories'|'Issues'|'Event'|'Attachments'|'PostContactSummary'> $SegmentTypes
@@ -18,7 +18,7 @@ class ListRealtimeContactAnalysisSegmentsV2Request extends Request
      * @param array{
      *     InstanceId: string,
      *     ContactId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     OutputType: 'Raw'|'Redacted',
      *     SegmentTypes: list<'Transcript'|'Categories'|'Issues'|'Event'|'Attachments'|'PostContactSummary'>

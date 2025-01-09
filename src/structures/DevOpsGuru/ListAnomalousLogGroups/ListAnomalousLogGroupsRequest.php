@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InsightId
- * @property int $MaxResults
+ * @property int<1, 200> $MaxResults
  * @property string $NextToken
  */
 class ListAnomalousLogGroupsRequest extends Request
@@ -14,7 +14,7 @@ class ListAnomalousLogGroupsRequest extends Request
     /**
      * @param array{
      *     InsightId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 200>,
      *     NextToken?: string
      * } $args
      */

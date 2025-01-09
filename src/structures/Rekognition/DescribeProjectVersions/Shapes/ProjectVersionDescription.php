@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ProjectVersionArn
  * @property \Aws\Api\DateTimeResult $CreationTimestamp
- * @property int $MinInferenceUnits
+ * @property int<1, max> $MinInferenceUnits
  * @property 'TRAINING_IN_PROGRESS'|'TRAINING_COMPLETED'|'TRAINING_FAILED'|'STARTING'|'RUNNING'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'COPYING_IN_PROGRESS'|'COPYING_COMPLETED'|'COPYING_FAILED'|'DEPRECATED'|'EXPIRED' $Status
  * @property string $StatusMessage
- * @property int $BillableTrainingTimeInSeconds
+ * @property int<0, max> $BillableTrainingTimeInSeconds
  * @property \Aws\Api\DateTimeResult $TrainingEndTimestamp
  * @property OutputConfig $OutputConfig
  * @property TrainingDataResult $TrainingDataResult
@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EvaluationResult $EvaluationResult
  * @property GroundTruthManifest $ManifestSummary
  * @property string $KmsKeyId
- * @property int $MaxInferenceUnits
+ * @property int<1, max> $MaxInferenceUnits
  * @property string $SourceProjectVersionArn
  * @property string $VersionDescription
  * @property 'CONTENT_MODERATION'|'CUSTOM_LABELS' $Feature
@@ -31,10 +31,10 @@ class ProjectVersionDescription extends Shape
      * @param array{
      *     ProjectVersionArn?: string,
      *     CreationTimestamp?: \Aws\Api\DateTimeResult,
-     *     MinInferenceUnits?: int,
+     *     MinInferenceUnits?: int<1, max>,
      *     Status?: 'TRAINING_IN_PROGRESS'|'TRAINING_COMPLETED'|'TRAINING_FAILED'|'STARTING'|'RUNNING'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'COPYING_IN_PROGRESS'|'COPYING_COMPLETED'|'COPYING_FAILED'|'DEPRECATED'|'EXPIRED',
      *     StatusMessage?: string,
-     *     BillableTrainingTimeInSeconds?: int,
+     *     BillableTrainingTimeInSeconds?: int<0, max>,
      *     TrainingEndTimestamp?: \Aws\Api\DateTimeResult,
      *     OutputConfig?: OutputConfig,
      *     TrainingDataResult?: TrainingDataResult,
@@ -42,7 +42,7 @@ class ProjectVersionDescription extends Shape
      *     EvaluationResult?: EvaluationResult,
      *     ManifestSummary?: GroundTruthManifest,
      *     KmsKeyId?: string,
-     *     MaxInferenceUnits?: int,
+     *     MaxInferenceUnits?: int<1, max>,
      *     SourceProjectVersionArn?: string,
      *     VersionDescription?: string,
      *     Feature?: 'CONTENT_MODERATION'|'CUSTOM_LABELS',

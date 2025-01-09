@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DirectoryId
  * @property 'SmartCard'|'SmartCardOrPassword' $Type
  * @property string $NextToken
- * @property int $Limit
+ * @property int<1, 50> $Limit
  */
 class DescribeClientAuthenticationSettingsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeClientAuthenticationSettingsRequest extends Request
      *     DirectoryId: string,
      *     Type?: 'SmartCard'|'SmartCardOrPassword',
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

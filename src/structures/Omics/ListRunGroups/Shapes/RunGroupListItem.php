@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property string $id
  * @property string $name
- * @property int $maxCpus
- * @property int $maxRuns
- * @property int $maxDuration
+ * @property int<1, 100000> $maxCpus
+ * @property int<1, 100000> $maxRuns
+ * @property int<1, 100000> $maxDuration
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property int $maxGpus
+ * @property int<1, 100000> $maxGpus
  */
 class RunGroupListItem extends Shape
 {
@@ -21,11 +21,11 @@ class RunGroupListItem extends Shape
      *     arn?: string,
      *     id?: string,
      *     name?: string,
-     *     maxCpus?: int,
-     *     maxRuns?: int,
-     *     maxDuration?: int,
+     *     maxCpus?: int<1, 100000>,
+     *     maxRuns?: int<1, 100000>,
+     *     maxDuration?: int<1, 100000>,
      *     creationTime?: \Aws\Api\DateTimeResult,
-     *     maxGpus?: int
+     *     maxGpus?: int<1, 100000>
      * } $args
      */
     public function __construct(array $args = [])

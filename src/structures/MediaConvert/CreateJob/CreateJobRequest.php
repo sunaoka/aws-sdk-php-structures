@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\HopDestination> $HopDestinations
  * @property string $JobEngineVersion
  * @property string $JobTemplate
- * @property int $Priority
+ * @property int<-50, 50> $Priority
  * @property string $Queue
  * @property string $Role
  * @property Shapes\JobSettings $Settings
@@ -30,7 +30,7 @@ class CreateJobRequest extends Request
      *     HopDestinations?: list<Shapes\HopDestination>,
      *     JobEngineVersion?: string,
      *     JobTemplate?: string,
-     *     Priority?: int,
+     *     Priority?: int<-50, 50>,
      *     Queue?: string,
      *     Role: string,
      *     Settings: Shapes\JobSettings,

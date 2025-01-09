@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property int $Version
+ * @property int<1, 1000> $Version
  * @property string $Comment
  */
 class UpdateTrafficPolicyCommentRequest extends Request
@@ -14,7 +14,7 @@ class UpdateTrafficPolicyCommentRequest extends Request
     /**
      * @param array{
      *     Id: string,
-     *     Version: int,
+     *     Version: int<1, 1000>,
      *     Comment: string
      * } $args
      */

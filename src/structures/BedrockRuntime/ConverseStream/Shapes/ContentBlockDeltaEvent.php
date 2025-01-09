@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ContentBlockDelta $delta
- * @property int $contentBlockIndex
+ * @property int<0, max> $contentBlockIndex
  */
 class ContentBlockDeltaEvent extends Shape
 {
     /**
      * @param array{
      *     delta: ContentBlockDelta,
-     *     contentBlockIndex: int
+     *     contentBlockIndex: int<0, max>
      * } $args
      */
     public function __construct(array $args)

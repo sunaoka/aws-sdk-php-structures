@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ClarifyShapBaselineConfig $ShapBaselineConfig
- * @property int $NumberOfSamples
+ * @property int<1, max> $NumberOfSamples
  * @property bool $UseLogit
  * @property int $Seed
  * @property ClarifyTextConfig $TextConfig
@@ -16,7 +16,7 @@ class ClarifyShapConfig extends Shape
     /**
      * @param array{
      *     ShapBaselineConfig: ClarifyShapBaselineConfig,
-     *     NumberOfSamples?: int,
+     *     NumberOfSamples?: int<1, max>,
      *     UseLogit?: bool,
      *     Seed?: int,
      *     TextConfig?: ClarifyTextConfig

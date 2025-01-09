@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\mgn\ResumeReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $bytes
+ * @property int<0, max> $bytes
  * @property string $deviceName
  */
 class Disk extends Shape
 {
     /**
      * @param array{
-     *     bytes?: int,
+     *     bytes?: int<0, max>,
      *     deviceName?: string
      * } $args
      */

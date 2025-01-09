@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $probeId
  * @property 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR'|'DELETING'|'DELETED' $state
  * @property string $destination
- * @property int $destinationPort
+ * @property int<0, 65536> $destinationPort
  * @property 'TCP'|'ICMP' $protocol
- * @property int $packetSize
+ * @property int<56, 8500> $packetSize
  */
 class UpdateProbeRequest extends Request
 {
@@ -21,9 +21,9 @@ class UpdateProbeRequest extends Request
      *     probeId: string,
      *     state?: 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR'|'DELETING'|'DELETED',
      *     destination?: string,
-     *     destinationPort?: int,
+     *     destinationPort?: int<0, 65536>,
      *     protocol?: 'TCP'|'ICMP',
-     *     packetSize?: int
+     *     packetSize?: int<56, 8500>
      * } $args
      */
     public function __construct(array $args)

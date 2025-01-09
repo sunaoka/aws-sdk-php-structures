@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\SearchFilter> $Filters
- * @property int $MaxRecords
+ * @property int<1, max> $MaxRecords
  * @property string $NextToken
  */
 class ListPlatformBranchesRequest extends Request
@@ -14,7 +14,7 @@ class ListPlatformBranchesRequest extends Request
     /**
      * @param array{
      *     Filters?: list<Shapes\SearchFilter>,
-     *     MaxRecords?: int,
+     *     MaxRecords?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

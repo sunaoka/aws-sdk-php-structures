@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ProtectionGroupId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 10000> $MaxResults
  */
 class ListResourcesInProtectionGroupRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListResourcesInProtectionGroupRequest extends Request
      * @param array{
      *     ProtectionGroupId: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<0, 10000>
      * } $args
      */
     public function __construct(array $args)

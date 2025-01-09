@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\CreateApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Count
+ * @property int<1, 64> $Count
  */
 class InputParallelism extends Shape
 {
     /**
-     * @param array{Count?: int} $args
+     * @param array{Count?: int<1, 64>} $args
      */
     public function __construct(array $args = [])
     {

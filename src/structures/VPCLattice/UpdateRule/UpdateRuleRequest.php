@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RuleAction $action
  * @property string $listenerIdentifier
  * @property Shapes\RuleMatch $match
- * @property int $priority
+ * @property int<1, 100> $priority
  * @property string $ruleIdentifier
  * @property string $serviceIdentifier
  */
@@ -19,7 +19,7 @@ class UpdateRuleRequest extends Request
      *     action?: Shapes\RuleAction,
      *     listenerIdentifier: string,
      *     match?: Shapes\RuleMatch,
-     *     priority?: int,
+     *     priority?: int<1, 100>,
      *     ruleIdentifier: string,
      *     serviceIdentifier: string
      * } $args

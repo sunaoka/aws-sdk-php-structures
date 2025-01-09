@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $InitialAudioGain
+ * @property int<-60, 60> $InitialAudioGain
  * @property 'NONE'|'SWITCH_AND_LOOP_INPUTS' $InputEndAction
  * @property InputLossBehavior $InputLossBehavior
  * @property 'EPOCH_LOCKING'|'PIPELINE_LOCKING' $OutputLockingMode
@@ -17,7 +17,7 @@ class GlobalConfiguration extends Shape
 {
     /**
      * @param array{
-     *     InitialAudioGain?: int,
+     *     InitialAudioGain?: int<-60, 60>,
      *     InputEndAction?: 'NONE'|'SWITCH_AND_LOOP_INPUTS',
      *     InputLossBehavior?: InputLossBehavior,
      *     OutputLockingMode?: 'EPOCH_LOCKING'|'PIPELINE_LOCKING',

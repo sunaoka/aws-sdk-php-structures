@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $BudgetName
  * @property Shapes\Notification $Notification
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeSubscribersForNotificationRequest extends Request
@@ -18,7 +18,7 @@ class DescribeSubscribersForNotificationRequest extends Request
      *     AccountId: string,
      *     BudgetName: string,
      *     Notification: Shapes\Notification,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

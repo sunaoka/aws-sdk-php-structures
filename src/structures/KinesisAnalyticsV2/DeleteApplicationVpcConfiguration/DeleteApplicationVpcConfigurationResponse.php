@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $ApplicationARN
- * @property int $ApplicationVersionId
+ * @property int<1, 999999999> $ApplicationVersionId
  * @property string $OperationId
  */
 class DeleteApplicationVpcConfigurationResponse extends Response

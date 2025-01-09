@@ -12,9 +12,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $filterPattern
  * @property 'INITIALIZING'|'TRAINING'|'ANALYZING'|'FAILED'|'DELETED'|'PAUSED' $anomalyDetectorStatus
  * @property string $kmsKeyId
- * @property int $creationTimeStamp
- * @property int $lastModifiedTimeStamp
- * @property int $anomalyVisibilityTime
+ * @property int<0, max> $creationTimeStamp
+ * @property int<0, max> $lastModifiedTimeStamp
+ * @property int<7, 90> $anomalyVisibilityTime
  */
 class AnomalyDetector extends Shape
 {
@@ -27,9 +27,9 @@ class AnomalyDetector extends Shape
      *     filterPattern?: string,
      *     anomalyDetectorStatus?: 'INITIALIZING'|'TRAINING'|'ANALYZING'|'FAILED'|'DELETED'|'PAUSED',
      *     kmsKeyId?: string,
-     *     creationTimeStamp?: int,
-     *     lastModifiedTimeStamp?: int,
-     *     anomalyVisibilityTime?: int
+     *     creationTimeStamp?: int<0, max>,
+     *     lastModifiedTimeStamp?: int<0, max>,
+     *     anomalyVisibilityTime?: int<7, 90>
      * } $args
      */
     public function __construct(array $args = [])

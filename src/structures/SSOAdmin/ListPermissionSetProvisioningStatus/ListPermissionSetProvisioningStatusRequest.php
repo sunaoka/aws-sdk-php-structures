@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\OperationStatusFilter $Filter
  * @property string $InstanceArn
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListPermissionSetProvisioningStatusRequest extends Request
@@ -16,7 +16,7 @@ class ListPermissionSetProvisioningStatusRequest extends Request
      * @param array{
      *     Filter?: Shapes\OperationStatusFilter,
      *     InstanceArn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

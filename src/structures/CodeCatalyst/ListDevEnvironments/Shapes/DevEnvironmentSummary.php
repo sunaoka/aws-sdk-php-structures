@@ -16,7 +16,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $alias
  * @property list<Ide> $ides
  * @property 'dev.standard1.small'|'dev.standard1.medium'|'dev.standard1.large'|'dev.standard1.xlarge' $instanceType
- * @property int $inactivityTimeoutMinutes
+ * @property int<0, 1200> $inactivityTimeoutMinutes
  * @property PersistentStorage $persistentStorage
  * @property string $vpcConnectionName
  */
@@ -35,7 +35,7 @@ class DevEnvironmentSummary extends Shape
      *     alias?: string,
      *     ides?: list<Ide>,
      *     instanceType: 'dev.standard1.small'|'dev.standard1.medium'|'dev.standard1.large'|'dev.standard1.xlarge',
-     *     inactivityTimeoutMinutes: int,
+     *     inactivityTimeoutMinutes: int<0, 1200>,
      *     persistentStorage: PersistentStorage,
      *     vpcConnectionName?: string
      * } $args

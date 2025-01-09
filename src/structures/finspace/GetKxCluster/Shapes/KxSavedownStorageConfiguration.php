@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SDS01' $type
- * @property int $size
+ * @property int<10, 16000> $size
  * @property string $volumeName
  */
 class KxSavedownStorageConfiguration extends Shape
@@ -14,7 +14,7 @@ class KxSavedownStorageConfiguration extends Shape
     /**
      * @param array{
      *     type?: 'SDS01',
-     *     size?: int,
+     *     size?: int<10, 16000>,
      *     volumeName?: string
      * } $args
      */

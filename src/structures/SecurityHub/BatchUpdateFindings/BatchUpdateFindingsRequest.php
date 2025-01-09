@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\NoteUpdate $Note
  * @property Shapes\SeverityUpdate $Severity
  * @property 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE' $VerificationState
- * @property int $Confidence
- * @property int $Criticality
+ * @property int<0, 100> $Confidence
+ * @property int<0, 100> $Criticality
  * @property list<string> $Types
  * @property array<string, string> $UserDefinedFields
  * @property Shapes\WorkflowUpdate $Workflow
@@ -24,8 +24,8 @@ class BatchUpdateFindingsRequest extends Request
      *     Note?: Shapes\NoteUpdate,
      *     Severity?: Shapes\SeverityUpdate,
      *     VerificationState?: 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE',
-     *     Confidence?: int,
-     *     Criticality?: int,
+     *     Confidence?: int<0, 100>,
+     *     Criticality?: int<0, 100>,
      *     Types?: list<string>,
      *     UserDefinedFields?: array<string, string>,
      *     Workflow?: Shapes\WorkflowUpdate,

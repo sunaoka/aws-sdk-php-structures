@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaximumSubChannels
- * @property int $TargetMembershipsPerSubChannel
- * @property int $MinimumMembershipPercentage
+ * @property int<2, max> $MaximumSubChannels
+ * @property int<2, max> $TargetMembershipsPerSubChannel
+ * @property int<1, 40> $MinimumMembershipPercentage
  */
 class ElasticChannelConfiguration extends Shape
 {
     /**
      * @param array{
-     *     MaximumSubChannels: int,
-     *     TargetMembershipsPerSubChannel: int,
-     *     MinimumMembershipPercentage: int
+     *     MaximumSubChannels: int<2, max>,
+     *     TargetMembershipsPerSubChannel: int<2, max>,
+     *     MinimumMembershipPercentage: int<1, 40>
      * } $args
      */
     public function __construct(array $args)

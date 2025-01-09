@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $EventStartTime
  * @property \Aws\Api\DateTimeResult $EventEndTime
  * @property string $Diagnostics
- * @property int $EventDurationInSeconds
+ * @property int<0, max> $EventDurationInSeconds
  */
 class InferenceEventSummary extends Shape
 {
@@ -21,7 +21,7 @@ class InferenceEventSummary extends Shape
      *     EventStartTime?: \Aws\Api\DateTimeResult,
      *     EventEndTime?: \Aws\Api\DateTimeResult,
      *     Diagnostics?: string,
-     *     EventDurationInSeconds?: int
+     *     EventDurationInSeconds?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

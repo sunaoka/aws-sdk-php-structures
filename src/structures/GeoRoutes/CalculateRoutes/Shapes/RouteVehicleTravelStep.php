@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RouteContinueHighwayStepDetails $ContinueHighwayStepDetails
  * @property RouteContinueStepDetails $ContinueStepDetails
  * @property RouteRoad $CurrentRoad
- * @property int $Distance
- * @property int $Duration
+ * @property int<0, 4294967295> $Distance
+ * @property int<0, 4294967295> $Duration
  * @property RouteEnterHighwayStepDetails $EnterHighwayStepDetails
  * @property list<LocalizedString> $ExitNumber
  * @property RouteExitStepDetails $ExitStepDetails
- * @property int $GeometryOffset
+ * @property int<0, max> $GeometryOffset
  * @property string $Instruction
  * @property RouteKeepStepDetails $KeepStepDetails
  * @property RouteRoad $NextRoad
@@ -33,12 +33,12 @@ class RouteVehicleTravelStep extends Shape
      *     ContinueHighwayStepDetails?: RouteContinueHighwayStepDetails,
      *     ContinueStepDetails?: RouteContinueStepDetails,
      *     CurrentRoad?: RouteRoad,
-     *     Distance?: int,
-     *     Duration: int,
+     *     Distance?: int<0, 4294967295>,
+     *     Duration: int<0, 4294967295>,
      *     EnterHighwayStepDetails?: RouteEnterHighwayStepDetails,
      *     ExitNumber?: list<LocalizedString>,
      *     ExitStepDetails?: RouteExitStepDetails,
-     *     GeometryOffset?: int,
+     *     GeometryOffset?: int<0, max>,
      *     Instruction?: string,
      *     KeepStepDetails?: RouteKeepStepDetails,
      *     NextRoad?: RouteRoad,

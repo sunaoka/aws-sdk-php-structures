@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CatalogName
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $WorkGroup
  */
 class ListDatabasesRequest extends Request
@@ -16,7 +16,7 @@ class ListDatabasesRequest extends Request
      * @param array{
      *     CatalogName: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     WorkGroup?: string
      * } $args
      */

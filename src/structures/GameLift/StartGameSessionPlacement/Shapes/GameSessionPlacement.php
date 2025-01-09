@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $GameSessionQueueName
  * @property 'PENDING'|'FULFILLED'|'CANCELLED'|'TIMED_OUT'|'FAILED' $Status
  * @property list<GameProperty> $GameProperties
- * @property int $MaximumPlayerSessionCount
+ * @property int<0, max> $MaximumPlayerSessionCount
  * @property string $GameSessionName
  * @property string $GameSessionId
  * @property string $GameSessionArn
@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property string $IpAddress
  * @property string $DnsName
- * @property int $Port
+ * @property int<1, 60000> $Port
  * @property list<PlacedPlayerSession> $PlacedPlayerSessions
  * @property string $GameSessionData
  * @property string $MatchmakerData
@@ -32,7 +32,7 @@ class GameSessionPlacement extends Shape
      *     GameSessionQueueName?: string,
      *     Status?: 'PENDING'|'FULFILLED'|'CANCELLED'|'TIMED_OUT'|'FAILED',
      *     GameProperties?: list<GameProperty>,
-     *     MaximumPlayerSessionCount?: int,
+     *     MaximumPlayerSessionCount?: int<0, max>,
      *     GameSessionName?: string,
      *     GameSessionId?: string,
      *     GameSessionArn?: string,
@@ -42,7 +42,7 @@ class GameSessionPlacement extends Shape
      *     EndTime?: \Aws\Api\DateTimeResult,
      *     IpAddress?: string,
      *     DnsName?: string,
-     *     Port?: int,
+     *     Port?: int<1, 60000>,
      *     PlacedPlayerSessions?: list<PlacedPlayerSession>,
      *     GameSessionData?: string,
      *     MatchmakerData?: string

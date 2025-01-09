@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<double> $BiasPosition
  * @property list<double> $FilterBBox
  * @property list<string> $FilterCountries
- * @property int $MaxResults
+ * @property int<1, 15> $MaxResults
  * @property string $Language
  * @property list<string> $FilterCategories
  * @property string $Key
@@ -24,7 +24,7 @@ class SearchPlaceIndexForSuggestionsRequest extends Request
      *     BiasPosition?: list<double>,
      *     FilterBBox?: list<double>,
      *     FilterCountries?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 15>,
      *     Language?: string,
      *     FilterCategories?: list<string>,
      *     Key?: string

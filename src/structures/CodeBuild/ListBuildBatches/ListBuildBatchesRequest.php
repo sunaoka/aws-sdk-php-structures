@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\BuildBatchFilter $filter
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property 'ASCENDING'|'DESCENDING' $sortOrder
  * @property string $nextToken
  */
@@ -15,7 +15,7 @@ class ListBuildBatchesRequest extends Request
     /**
      * @param array{
      *     filter?: Shapes\BuildBatchFilter,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     sortOrder?: 'ASCENDING'|'DESCENDING',
      *     nextToken?: string
      * } $args

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'Pending'|'InProgress'|'Failed'|'Success'> $assessmentStatus
  * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy' $complianceStatus
  * @property 'User'|'System' $invoker
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property bool $reverseOrder
  */
@@ -23,7 +23,7 @@ class ListAppAssessmentsRequest extends Request
      *     assessmentStatus?: list<'Pending'|'InProgress'|'Failed'|'Success'>,
      *     complianceStatus?: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy',
      *     invoker?: 'User'|'System',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     reverseOrder?: bool
      * } $args

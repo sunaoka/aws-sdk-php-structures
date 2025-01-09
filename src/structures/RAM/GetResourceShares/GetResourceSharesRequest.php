@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property list<Shapes\TagFilter> $tagFilters
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 500> $maxResults
  * @property string $permissionArn
  * @property int $permissionVersion
  */
@@ -25,7 +25,7 @@ class GetResourceSharesRequest extends Request
      *     name?: string,
      *     tagFilters?: list<Shapes\TagFilter>,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 500>,
      *     permissionArn?: string,
      *     permissionVersion?: int
      * } $args

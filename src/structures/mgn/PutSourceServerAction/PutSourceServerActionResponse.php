@@ -14,9 +14,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $documentVersion
  * @property array<string, Shapes\SsmExternalParameter> $externalParameters
  * @property bool $mustSucceedForCutover
- * @property int $order
+ * @property int<1001, 10000> $order
  * @property array<string, list<Shapes\SsmParameterStoreParameter>> $parameters
- * @property int $timeoutSeconds
+ * @property int<1, max> $timeoutSeconds
  */
 class PutSourceServerActionResponse extends Response
 {

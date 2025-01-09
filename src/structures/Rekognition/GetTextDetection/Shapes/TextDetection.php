@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $DetectedText
  * @property 'LINE'|'WORD' $Type
- * @property int $Id
- * @property int $ParentId
+ * @property int<0, max> $Id
+ * @property int<0, max> $ParentId
  * @property float $Confidence
  * @property Geometry $Geometry
  */
@@ -18,8 +18,8 @@ class TextDetection extends Shape
      * @param array{
      *     DetectedText?: string,
      *     Type?: 'LINE'|'WORD',
-     *     Id?: int,
-     *     ParentId?: int,
+     *     Id?: int<0, max>,
+     *     ParentId?: int<0, max>,
      *     Confidence?: float,
      *     Geometry?: Geometry
      * } $args

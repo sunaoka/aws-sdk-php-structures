@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ASCENDING'|'DESCENDING' $sortOrder
  * @property 'NAME'|'CREATED_TIME'|'LAST_MODIFIED_TIME' $sortBy
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class ListReportGroupsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListReportGroupsRequest extends Request
      *     sortOrder?: 'ASCENDING'|'DESCENDING',
      *     sortBy?: 'NAME'|'CREATED_TIME'|'LAST_MODIFIED_TIME',
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

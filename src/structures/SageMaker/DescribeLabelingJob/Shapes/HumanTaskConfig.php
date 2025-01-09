@@ -11,10 +11,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $TaskKeywords
  * @property string $TaskTitle
  * @property string $TaskDescription
- * @property int $NumberOfHumanWorkersPerDataObject
- * @property int $TaskTimeLimitInSeconds
- * @property int $TaskAvailabilityLifetimeInSeconds
- * @property int $MaxConcurrentTaskCount
+ * @property int<1, 9> $NumberOfHumanWorkersPerDataObject
+ * @property int<30, max> $TaskTimeLimitInSeconds
+ * @property int<60, max> $TaskAvailabilityLifetimeInSeconds
+ * @property int<1, 5000> $MaxConcurrentTaskCount
  * @property AnnotationConsolidationConfig $AnnotationConsolidationConfig
  * @property PublicWorkforceTaskPrice $PublicWorkforceTaskPrice
  */
@@ -28,10 +28,10 @@ class HumanTaskConfig extends Shape
      *     TaskKeywords?: list<string>,
      *     TaskTitle: string,
      *     TaskDescription: string,
-     *     NumberOfHumanWorkersPerDataObject: int,
-     *     TaskTimeLimitInSeconds: int,
-     *     TaskAvailabilityLifetimeInSeconds?: int,
-     *     MaxConcurrentTaskCount?: int,
+     *     NumberOfHumanWorkersPerDataObject: int<1, 9>,
+     *     TaskTimeLimitInSeconds: int<30, max>,
+     *     TaskAvailabilityLifetimeInSeconds?: int<60, max>,
+     *     MaxConcurrentTaskCount?: int<1, 5000>,
      *     AnnotationConsolidationConfig?: AnnotationConsolidationConfig,
      *     PublicWorkforceTaskPrice?: PublicWorkforceTaskPrice
      * } $args

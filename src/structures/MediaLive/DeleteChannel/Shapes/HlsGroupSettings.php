@@ -23,30 +23,30 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DISABLED'|'ENABLED' $HlsId3SegmentTagging
  * @property 'DISABLED'|'STANDARD' $IFrameOnlyPlaylists
  * @property 'AUTO'|'SUPPRESS' $IncompleteSegmentBehavior
- * @property int $IndexNSegments
+ * @property int<3, max> $IndexNSegments
  * @property 'EMIT_OUTPUT'|'PAUSE_OUTPUT' $InputLossAction
  * @property 'EXCLUDE'|'INCLUDE' $IvInManifest
  * @property 'EXPLICIT'|'FOLLOWS_SEGMENT_NUMBER' $IvSource
- * @property int $KeepSegments
+ * @property int<1, max> $KeepSegments
  * @property string $KeyFormat
  * @property string $KeyFormatVersions
  * @property KeyProviderSettings $KeyProviderSettings
  * @property 'GZIP'|'NONE' $ManifestCompression
  * @property 'FLOATING_POINT'|'INTEGER' $ManifestDurationFormat
- * @property int $MinSegmentLength
+ * @property int<0, max> $MinSegmentLength
  * @property 'LIVE'|'VOD' $Mode
  * @property 'MANIFESTS_AND_SEGMENTS'|'SEGMENTS_ONLY'|'VARIANT_MANIFESTS_AND_SEGMENTS' $OutputSelection
  * @property 'EXCLUDE'|'INCLUDE' $ProgramDateTime
  * @property 'INITIALIZE_FROM_OUTPUT_TIMECODE'|'SYSTEM_CLOCK' $ProgramDateTimeClock
- * @property int $ProgramDateTimePeriod
+ * @property int<0, 3600> $ProgramDateTimePeriod
  * @property 'DISABLED'|'ENABLED' $RedundantManifest
- * @property int $SegmentLength
+ * @property int<1, max> $SegmentLength
  * @property 'USE_INPUT_SEGMENTATION'|'USE_SEGMENT_DURATION' $SegmentationMode
- * @property int $SegmentsPerSubdirectory
+ * @property int<1, max> $SegmentsPerSubdirectory
  * @property 'EXCLUDE'|'INCLUDE' $StreamInfResolution
  * @property 'NONE'|'PRIV'|'TDRL' $TimedMetadataId3Frame
- * @property int $TimedMetadataId3Period
- * @property int $TimestampDeltaMilliseconds
+ * @property int<0, max> $TimedMetadataId3Period
+ * @property int<0, max> $TimestampDeltaMilliseconds
  * @property 'SEGMENTED_FILES'|'SINGLE_FILE' $TsFileMode
  */
 class HlsGroupSettings extends Shape
@@ -71,30 +71,30 @@ class HlsGroupSettings extends Shape
      *     HlsId3SegmentTagging?: 'DISABLED'|'ENABLED',
      *     IFrameOnlyPlaylists?: 'DISABLED'|'STANDARD',
      *     IncompleteSegmentBehavior?: 'AUTO'|'SUPPRESS',
-     *     IndexNSegments?: int,
+     *     IndexNSegments?: int<3, max>,
      *     InputLossAction?: 'EMIT_OUTPUT'|'PAUSE_OUTPUT',
      *     IvInManifest?: 'EXCLUDE'|'INCLUDE',
      *     IvSource?: 'EXPLICIT'|'FOLLOWS_SEGMENT_NUMBER',
-     *     KeepSegments?: int,
+     *     KeepSegments?: int<1, max>,
      *     KeyFormat?: string,
      *     KeyFormatVersions?: string,
      *     KeyProviderSettings?: KeyProviderSettings,
      *     ManifestCompression?: 'GZIP'|'NONE',
      *     ManifestDurationFormat?: 'FLOATING_POINT'|'INTEGER',
-     *     MinSegmentLength?: int,
+     *     MinSegmentLength?: int<0, max>,
      *     Mode?: 'LIVE'|'VOD',
      *     OutputSelection?: 'MANIFESTS_AND_SEGMENTS'|'SEGMENTS_ONLY'|'VARIANT_MANIFESTS_AND_SEGMENTS',
      *     ProgramDateTime?: 'EXCLUDE'|'INCLUDE',
      *     ProgramDateTimeClock?: 'INITIALIZE_FROM_OUTPUT_TIMECODE'|'SYSTEM_CLOCK',
-     *     ProgramDateTimePeriod?: int,
+     *     ProgramDateTimePeriod?: int<0, 3600>,
      *     RedundantManifest?: 'DISABLED'|'ENABLED',
-     *     SegmentLength?: int,
+     *     SegmentLength?: int<1, max>,
      *     SegmentationMode?: 'USE_INPUT_SEGMENTATION'|'USE_SEGMENT_DURATION',
-     *     SegmentsPerSubdirectory?: int,
+     *     SegmentsPerSubdirectory?: int<1, max>,
      *     StreamInfResolution?: 'EXCLUDE'|'INCLUDE',
      *     TimedMetadataId3Frame?: 'NONE'|'PRIV'|'TDRL',
-     *     TimedMetadataId3Period?: int,
-     *     TimestampDeltaMilliseconds?: int,
+     *     TimedMetadataId3Period?: int<0, max>,
+     *     TimestampDeltaMilliseconds?: int<0, max>,
      *     TsFileMode?: 'SEGMENTED_FILES'|'SINGLE_FILE'
      * } $args
      */

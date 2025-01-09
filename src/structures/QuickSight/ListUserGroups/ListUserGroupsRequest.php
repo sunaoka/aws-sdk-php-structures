@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $Namespace
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListUserGroupsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListUserGroupsRequest extends Request
      *     AwsAccountId: string,
      *     Namespace: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

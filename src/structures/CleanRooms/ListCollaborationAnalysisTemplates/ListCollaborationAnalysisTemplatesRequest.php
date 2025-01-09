@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $collaborationIdentifier
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class ListCollaborationAnalysisTemplatesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListCollaborationAnalysisTemplatesRequest extends Request
      * @param array{
      *     collaborationIdentifier: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

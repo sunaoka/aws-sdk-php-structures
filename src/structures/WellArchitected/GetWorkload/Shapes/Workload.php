@@ -22,7 +22,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Industry
  * @property string $Notes
  * @property 'NOT_APPLICABLE'|'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'RISK_ACKNOWLEDGED' $ImprovementStatus
- * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int> $RiskCounts
+ * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>> $RiskCounts
  * @property list<string> $PillarPriorities
  * @property list<string> $Lenses
  * @property string $Owner
@@ -31,7 +31,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property WorkloadDiscoveryConfig $DiscoveryConfig
  * @property list<string> $Applications
  * @property list<WorkloadProfile> $Profiles
- * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int> $PrioritizedRiskCounts
+ * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>> $PrioritizedRiskCounts
  * @property WorkloadJiraConfigurationOutput $JiraConfiguration
  */
 class Workload extends Shape
@@ -55,7 +55,7 @@ class Workload extends Shape
      *     Industry?: string,
      *     Notes?: string,
      *     ImprovementStatus?: 'NOT_APPLICABLE'|'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'RISK_ACKNOWLEDGED',
-     *     RiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int>,
+     *     RiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>,
      *     PillarPriorities?: list<string>,
      *     Lenses?: list<string>,
      *     Owner?: string,
@@ -64,7 +64,7 @@ class Workload extends Shape
      *     DiscoveryConfig?: WorkloadDiscoveryConfig,
      *     Applications?: list<string>,
      *     Profiles?: list<WorkloadProfile>,
-     *     PrioritizedRiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int>,
+     *     PrioritizedRiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>,
      *     JiraConfiguration?: WorkloadJiraConfigurationOutput
      * } $args
      */

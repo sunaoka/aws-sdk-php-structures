@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EndpointGroupArn
  * @property string $EndpointId
  * @property list<string> $DestinationAddresses
- * @property list<int> $DestinationPorts
+ * @property list<int<1, 65535>> $DestinationPorts
  * @property bool $DenyAllTrafficToEndpoint
  */
 class DenyCustomRoutingTrafficRequest extends Request
@@ -18,7 +18,7 @@ class DenyCustomRoutingTrafficRequest extends Request
      *     EndpointGroupArn: string,
      *     EndpointId: string,
      *     DestinationAddresses?: list<string>,
-     *     DestinationPorts?: list<int>,
+     *     DestinationPorts?: list<int<1, 65535>>,
      *     DenyAllTrafficToEndpoint?: bool
      * } $args
      */

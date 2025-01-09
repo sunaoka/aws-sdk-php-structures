@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceProfileName
  * @property string $Marker
- * @property int $MaxItems
+ * @property int<1, 1000> $MaxItems
  */
 class ListInstanceProfileTagsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListInstanceProfileTagsRequest extends Request
      * @param array{
      *     InstanceProfileName: string,
      *     Marker?: string,
-     *     MaxItems?: int
+     *     MaxItems?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

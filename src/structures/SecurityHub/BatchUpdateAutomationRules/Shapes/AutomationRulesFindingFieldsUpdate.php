@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property NoteUpdate $Note
  * @property SeverityUpdate $Severity
  * @property 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE' $VerificationState
- * @property int $Confidence
- * @property int $Criticality
+ * @property int<0, 100> $Confidence
+ * @property int<0, 100> $Criticality
  * @property list<string> $Types
  * @property array<string, string> $UserDefinedFields
  * @property WorkflowUpdate $Workflow
@@ -22,8 +22,8 @@ class AutomationRulesFindingFieldsUpdate extends Shape
      *     Note?: NoteUpdate,
      *     Severity?: SeverityUpdate,
      *     VerificationState?: 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE',
-     *     Confidence?: int,
-     *     Criticality?: int,
+     *     Confidence?: int<0, 100>,
+     *     Criticality?: int<0, 100>,
      *     Types?: list<string>,
      *     UserDefinedFields?: array<string, string>,
      *     Workflow?: WorkflowUpdate,

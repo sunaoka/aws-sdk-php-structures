@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string $runGroupId
  * @property string $startingToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED' $status
  */
 class ListRunsRequest extends Request
@@ -18,7 +18,7 @@ class ListRunsRequest extends Request
      *     name?: string,
      *     runGroupId?: string,
      *     startingToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     status?: 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'DELETED'|'CANCELLED'|'FAILED'
      * } $args
      */

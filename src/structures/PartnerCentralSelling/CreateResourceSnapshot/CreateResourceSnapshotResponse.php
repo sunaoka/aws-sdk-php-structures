@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $Arn
- * @property int $Revision
+ * @property int<1, max> $Revision
  */
 class CreateResourceSnapshotResponse extends Response
 {

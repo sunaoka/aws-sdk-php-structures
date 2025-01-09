@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\DeleteChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ProgramId
+ * @property int<0, 65536> $ProgramId
  */
 class VideoSelectorProgramId extends Shape
 {
     /**
-     * @param array{ProgramId?: int} $args
+     * @param array{ProgramId?: int<0, 65536>} $args
      */
     public function __construct(array $args = [])
     {

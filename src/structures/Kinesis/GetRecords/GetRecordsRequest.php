@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ShardIterator
- * @property int $Limit
+ * @property int<1, 10000> $Limit
  * @property string $StreamARN
  */
 class GetRecordsRequest extends Request
@@ -14,7 +14,7 @@ class GetRecordsRequest extends Request
     /**
      * @param array{
      *     ShardIterator: string,
-     *     Limit?: int,
+     *     Limit?: int<1, 10000>,
      *     StreamARN?: string
      * } $args
      */

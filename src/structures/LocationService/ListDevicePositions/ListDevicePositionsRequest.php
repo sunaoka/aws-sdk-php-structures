@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TrackerName
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property Shapes\TrackingFilterGeometry $FilterGeometry
  */
@@ -15,7 +15,7 @@ class ListDevicePositionsRequest extends Request
     /**
      * @param array{
      *     TrackerName: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     FilterGeometry?: Shapes\TrackingFilterGeometry
      * } $args

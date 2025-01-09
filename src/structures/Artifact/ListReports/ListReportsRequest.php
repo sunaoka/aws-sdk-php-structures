@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Artifact\ListReports;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 300> $maxResults
  * @property string $nextToken
  */
 class ListReportsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 300>,
      *     nextToken?: string
      * } $args
      */

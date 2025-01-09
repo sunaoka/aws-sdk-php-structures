@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Arn
- * @property int $ExpiresInSeconds
- * @property int $SessionExpirationDurationInSeconds
+ * @property int<5, 300> $ExpiresInSeconds
+ * @property int<1800, 43200> $SessionExpirationDurationInSeconds
  */
 class CreatePartnerAppPresignedUrlRequest extends Request
 {
     /**
      * @param array{
      *     Arn: string,
-     *     ExpiresInSeconds?: int,
-     *     SessionExpirationDurationInSeconds?: int
+     *     ExpiresInSeconds?: int<5, 300>,
+     *     SessionExpirationDurationInSeconds?: int<1800, 43200>
      * } $args
      */
     public function __construct(array $args)

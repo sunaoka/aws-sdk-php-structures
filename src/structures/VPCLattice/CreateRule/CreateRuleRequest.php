@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $listenerIdentifier
  * @property Shapes\RuleMatch $match
  * @property string $name
- * @property int $priority
+ * @property int<1, 100> $priority
  * @property string $serviceIdentifier
  * @property array<string, string> $tags
  */
@@ -23,7 +23,7 @@ class CreateRuleRequest extends Request
      *     listenerIdentifier: string,
      *     match: Shapes\RuleMatch,
      *     name: string,
-     *     priority: int,
+     *     priority: int<1, 100>,
      *     serviceIdentifier: string,
      *     tags?: array<string, string>
      * } $args

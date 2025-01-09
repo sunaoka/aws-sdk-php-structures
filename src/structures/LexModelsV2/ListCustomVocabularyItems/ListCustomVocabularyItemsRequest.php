@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botId
  * @property string $botVersion
  * @property string $localeId
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListCustomVocabularyItemsRequest extends Request
@@ -18,7 +18,7 @@ class ListCustomVocabularyItemsRequest extends Request
      *     botId: string,
      *     botVersion: string,
      *     localeId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

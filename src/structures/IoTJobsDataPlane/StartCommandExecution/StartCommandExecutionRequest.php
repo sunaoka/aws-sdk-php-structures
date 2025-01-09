@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $targetArn
  * @property string $commandArn
  * @property array<string, Shapes\CommandParameterValue> $parameters
- * @property int $executionTimeoutSeconds
+ * @property int<1, max> $executionTimeoutSeconds
  * @property string $clientToken
  */
 class StartCommandExecutionRequest extends Request
@@ -18,7 +18,7 @@ class StartCommandExecutionRequest extends Request
      *     targetArn: string,
      *     commandArn: string,
      *     parameters?: array<string, Shapes\CommandParameterValue>,
-     *     executionTimeoutSeconds?: int,
+     *     executionTimeoutSeconds?: int<1, max>,
      *     clientToken?: string
      * } $args
      */

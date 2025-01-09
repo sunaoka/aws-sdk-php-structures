@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $TextContent
  * @property string $CodeMD5
- * @property int $CodeSize
+ * @property int<0, 52428800> $CodeSize
  * @property S3ApplicationCodeLocationDescription $S3ApplicationCodeLocationDescription
  */
 class CodeContentDescription extends Shape
@@ -16,7 +16,7 @@ class CodeContentDescription extends Shape
      * @param array{
      *     TextContent?: string,
      *     CodeMD5?: string,
-     *     CodeSize?: int,
+     *     CodeSize?: int<0, 52428800>,
      *     S3ApplicationCodeLocationDescription?: S3ApplicationCodeLocationDescription
      * } $args
      */

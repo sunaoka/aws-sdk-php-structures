@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $instanceId
  * @property 'SHELL_SCRIPT'|'POWERSHELL_SCRIPT' $scriptType
  * @property string $command
- * @property int $executionTimeoutSeconds
+ * @property int<60, 28800> $executionTimeoutSeconds
  * @property string $outputS3BucketName
  */
 class SSMValidationParameters extends Shape
@@ -20,7 +20,7 @@ class SSMValidationParameters extends Shape
      *     instanceId?: string,
      *     scriptType?: 'SHELL_SCRIPT'|'POWERSHELL_SCRIPT',
      *     command?: string,
-     *     executionTimeoutSeconds?: int,
+     *     executionTimeoutSeconds?: int<60, 28800>,
      *     outputS3BucketName?: string
      * } $args
      */

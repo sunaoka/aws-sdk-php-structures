@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OutpostArn
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListOutpostResolversRequest extends Request
@@ -14,7 +14,7 @@ class ListOutpostResolversRequest extends Request
     /**
      * @param array{
      *     OutpostArn?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

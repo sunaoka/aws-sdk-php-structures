@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $roleArn
  * @property 'Random'|'ByLogStream' $distribution
  * @property bool $applyOnTransformedLogs
- * @property int $creationTime
+ * @property int<0, max> $creationTime
  */
 class SubscriptionFilter extends Shape
 {
@@ -25,7 +25,7 @@ class SubscriptionFilter extends Shape
      *     roleArn?: string,
      *     distribution?: 'Random'|'ByLogStream',
      *     applyOnTransformedLogs?: bool,
-     *     creationTime?: int
+     *     creationTime?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

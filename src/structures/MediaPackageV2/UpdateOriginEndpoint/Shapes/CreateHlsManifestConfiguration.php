@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ChildManifestName
  * @property ScteHls $ScteHls
  * @property StartTag $StartTag
- * @property int $ManifestWindowSeconds
- * @property int $ProgramDateTimeIntervalSeconds
+ * @property int<30, max> $ManifestWindowSeconds
+ * @property int<1, 1209600> $ProgramDateTimeIntervalSeconds
  * @property FilterConfiguration $FilterConfiguration
  */
 class CreateHlsManifestConfiguration extends Shape
@@ -21,8 +21,8 @@ class CreateHlsManifestConfiguration extends Shape
      *     ChildManifestName?: string,
      *     ScteHls?: ScteHls,
      *     StartTag?: StartTag,
-     *     ManifestWindowSeconds?: int,
-     *     ProgramDateTimeIntervalSeconds?: int,
+     *     ManifestWindowSeconds?: int<30, max>,
+     *     ProgramDateTimeIntervalSeconds?: int<1, 1209600>,
      *     FilterConfiguration?: FilterConfiguration
      * } $args
      */

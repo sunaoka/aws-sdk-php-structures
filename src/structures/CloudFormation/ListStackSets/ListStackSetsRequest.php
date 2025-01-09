@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'ACTIVE'|'DELETED' $Status
  * @property 'SELF'|'DELEGATED_ADMIN' $CallAs
  */
@@ -15,7 +15,7 @@ class ListStackSetsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     Status?: 'ACTIVE'|'DELETED',
      *     CallAs?: 'SELF'|'DELEGATED_ADMIN'
      * } $args

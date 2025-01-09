@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $accountIds
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  */
 class ListAutomatedDiscoveryAccountsRequest extends Request
@@ -14,7 +14,7 @@ class ListAutomatedDiscoveryAccountsRequest extends Request
     /**
      * @param array{
      *     accountIds?: list<string>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string
      * } $args
      */

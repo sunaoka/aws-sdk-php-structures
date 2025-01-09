@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $failureReasons
  * @property string $foundationModel
  * @property GuardrailConfiguration $guardrailConfiguration
- * @property int $idleSessionTTLInSeconds
+ * @property int<60, 3600> $idleSessionTTLInSeconds
  * @property string $instruction
  * @property MemoryConfiguration $memoryConfiguration
  * @property PromptOverrideConfiguration $promptOverrideConfiguration
@@ -41,7 +41,7 @@ class AgentVersion extends Shape
      *     failureReasons?: list<string>,
      *     foundationModel?: string,
      *     guardrailConfiguration?: GuardrailConfiguration,
-     *     idleSessionTTLInSeconds: int,
+     *     idleSessionTTLInSeconds: int<60, 3600>,
      *     instruction?: string,
      *     memoryConfiguration?: MemoryConfiguration,
      *     promptOverrideConfiguration?: PromptOverrideConfiguration,

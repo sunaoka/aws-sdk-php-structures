@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $logGroupIdentifier
  * @property list<string> $logStreamNames
  * @property string $logStreamNamePrefix
- * @property int $startTime
- * @property int $endTime
+ * @property int<0, max> $startTime
+ * @property int<0, max> $endTime
  * @property string $filterPattern
  * @property string $nextToken
- * @property int $limit
+ * @property int<1, 10000> $limit
  * @property bool $interleaved
  * @property bool $unmask
  */
@@ -25,11 +25,11 @@ class FilterLogEventsRequest extends Request
      *     logGroupIdentifier?: string,
      *     logStreamNames?: list<string>,
      *     logStreamNamePrefix?: string,
-     *     startTime?: int,
-     *     endTime?: int,
+     *     startTime?: int<0, max>,
+     *     endTime?: int<0, max>,
      *     filterPattern?: string,
      *     nextToken?: string,
-     *     limit?: int,
+     *     limit?: int<1, 10000>,
      *     interleaved?: bool,
      *     unmask?: bool
      * } $args

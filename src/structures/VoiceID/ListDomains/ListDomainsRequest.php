@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\VoiceID\ListDomains;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 10> $MaxResults
  * @property string $NextToken
  */
 class ListDomainsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 10>,
      *     NextToken?: string
      * } $args
      */

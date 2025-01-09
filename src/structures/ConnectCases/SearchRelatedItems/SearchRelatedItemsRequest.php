@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $caseId
  * @property string $domainId
  * @property list<Shapes\RelatedItemTypeFilter> $filters
- * @property int $maxResults
+ * @property int<1, 25> $maxResults
  * @property string $nextToken
  */
 class SearchRelatedItemsRequest extends Request
@@ -18,7 +18,7 @@ class SearchRelatedItemsRequest extends Request
      *     caseId: string,
      *     domainId: string,
      *     filters?: list<Shapes\RelatedItemTypeFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 25>,
      *     nextToken?: string
      * } $args
      */

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Notifications\ListNotificationHubs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<3, 3> $maxResults
  * @property string $nextToken
  */
 class ListNotificationHubsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<3, 3>,
      *     nextToken?: string
      * } $args
      */

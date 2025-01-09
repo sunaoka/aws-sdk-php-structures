@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ResourceId
  * @property string $ResourceSnapshotTemplateName
  * @property 'Opportunity' $ResourceType
- * @property int $Revision
+ * @property int<1, max> $Revision
  */
 class GetResourceSnapshotResponse extends Response
 {

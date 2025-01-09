@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $suiteDefinitionId
  * @property string $suiteDefinitionVersion
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nextToken
  */
 class ListSuiteRunsRequest extends Request
@@ -16,7 +16,7 @@ class ListSuiteRunsRequest extends Request
      * @param array{
      *     suiteDefinitionId?: string,
      *     suiteDefinitionVersion?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nextToken?: string
      * } $args
      */

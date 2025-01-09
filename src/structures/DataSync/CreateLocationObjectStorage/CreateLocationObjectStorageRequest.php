@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ServerHostname
- * @property int $ServerPort
+ * @property int<1, 65536> $ServerPort
  * @property 'HTTPS'|'HTTP' $ServerProtocol
  * @property string $Subdirectory
  * @property string $BucketName
@@ -21,7 +21,7 @@ class CreateLocationObjectStorageRequest extends Request
     /**
      * @param array{
      *     ServerHostname: string,
-     *     ServerPort?: int,
+     *     ServerPort?: int<1, 65536>,
      *     ServerProtocol?: 'HTTPS'|'HTTP',
      *     Subdirectory?: string,
      *     BucketName: string,

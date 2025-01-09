@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Transfer\DescribeWebApp\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Provisioned
+ * @property int<1, max> $Provisioned
  */
 class WebAppUnits extends Shape
 {
     /**
-     * @param array{Provisioned?: int} $args
+     * @param array{Provisioned?: int<1, max>} $args
      */
     public function __construct(array $args = [])
     {

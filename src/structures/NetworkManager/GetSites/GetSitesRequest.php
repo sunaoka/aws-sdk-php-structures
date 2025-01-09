@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GlobalNetworkId
  * @property list<string> $SiteIds
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class GetSitesRequest extends Request
@@ -16,7 +16,7 @@ class GetSitesRequest extends Request
      * @param array{
      *     GlobalNetworkId: string,
      *     SiteIds?: list<string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

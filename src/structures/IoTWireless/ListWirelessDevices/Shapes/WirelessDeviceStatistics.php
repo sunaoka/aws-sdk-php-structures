@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SidewalkListDevice $Sidewalk
  * @property 'Initial'|'Package_Not_Supported'|'FragAlgo_unsupported'|'Not_enough_memory'|'FragIndex_unsupported'|'Wrong_descriptor'|'SessionCnt_replay'|'MissingFrag'|'MemoryError'|'MICError'|'Successful'|'Device_exist_in_conflict_fuota_task' $FuotaDeviceStatus
  * @property string $MulticastDeviceStatus
- * @property int $McGroupId
+ * @property int<1, 256> $McGroupId
  */
 class WirelessDeviceStatistics extends Shape
 {
@@ -31,7 +31,7 @@ class WirelessDeviceStatistics extends Shape
      *     Sidewalk?: SidewalkListDevice,
      *     FuotaDeviceStatus?: 'Initial'|'Package_Not_Supported'|'FragAlgo_unsupported'|'Not_enough_memory'|'FragIndex_unsupported'|'Wrong_descriptor'|'SessionCnt_replay'|'MissingFrag'|'MemoryError'|'MICError'|'Successful'|'Device_exist_in_conflict_fuota_task',
      *     MulticastDeviceStatus?: string,
-     *     McGroupId?: int
+     *     McGroupId?: int<1, 256>
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $PoolIds
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property bool $DryRun
  * @property list<Shapes\Filter> $Filters
  */
@@ -17,7 +17,7 @@ class DescribeIpv6PoolsRequest extends Request
      * @param array{
      *     PoolIds?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     DryRun?: bool,
      *     Filters?: list<Shapes\Filter>
      * } $args

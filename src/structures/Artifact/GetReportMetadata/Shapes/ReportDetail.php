@@ -20,9 +20,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $companyName
  * @property string $productName
  * @property string $termArn
- * @property int $version
+ * @property int<1, max> $version
  * @property 'PASSTHROUGH'|'EXPLICIT' $acceptanceType
- * @property int $sequenceNumber
+ * @property int<1, max> $sequenceNumber
  * @property 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT' $uploadState
  * @property string $statusMessage
  */
@@ -45,9 +45,9 @@ class ReportDetail extends Shape
      *     companyName?: string,
      *     productName?: string,
      *     termArn?: string,
-     *     version?: int,
+     *     version?: int<1, max>,
      *     acceptanceType?: 'PASSTHROUGH'|'EXPLICIT',
-     *     sequenceNumber?: int,
+     *     sequenceNumber?: int<1, max>,
      *     uploadState?: 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT',
      *     statusMessage?: string
      * } $args

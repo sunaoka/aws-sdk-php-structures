@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $knowledgeBaseId
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $messageTemplateId
  * @property string $nextToken
  */
@@ -15,7 +15,7 @@ class ListMessageTemplateVersionsRequest extends Request
     /**
      * @param array{
      *     knowledgeBaseId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     messageTemplateId: string,
      *     nextToken?: string
      * } $args

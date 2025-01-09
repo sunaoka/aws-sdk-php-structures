@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Host
- * @property int $Port
+ * @property int<1, 65535> $Port
  */
 class SparkParameters extends Shape
 {
     /**
      * @param array{
      *     Host: string,
-     *     Port: int
+     *     Port: int<1, 65535>
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DeliveryStreamName
  * @property string $ExclusiveStartTagKey
- * @property int $Limit
+ * @property int<1, 50> $Limit
  */
 class ListTagsForDeliveryStreamRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListTagsForDeliveryStreamRequest extends Request
      * @param array{
      *     DeliveryStreamName: string,
      *     ExclusiveStartTagKey?: string,
-     *     Limit?: int
+     *     Limit?: int<1, 50>
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $accountId
  * @property Shapes\CisScanResultDetailsFilterCriteria $filterCriteria
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property string $scanArn
  * @property 'CHECK_ID'|'STATUS' $sortBy
@@ -20,7 +20,7 @@ class GetCisScanResultDetailsRequest extends Request
      * @param array{
      *     accountId: string,
      *     filterCriteria?: Shapes\CisScanResultDetailsFilterCriteria,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     scanArn: string,
      *     sortBy?: 'CHECK_ID'|'STATUS',

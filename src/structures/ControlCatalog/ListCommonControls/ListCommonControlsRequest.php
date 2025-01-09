@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ControlCatalog\ListCommonControls;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property Shapes\CommonControlFilter $CommonControlFilter
  */
@@ -13,7 +13,7 @@ class ListCommonControlsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     CommonControlFilter?: Shapes\CommonControlFilter
      * } $args

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $TagKeys
  * @property 'AWSGenerated'|'UserDefined' $Type
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class ListCostAllocationTagsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListCostAllocationTagsRequest extends Request
      *     TagKeys?: list<string>,
      *     Type?: 'AWSGenerated'|'UserDefined',
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args = [])

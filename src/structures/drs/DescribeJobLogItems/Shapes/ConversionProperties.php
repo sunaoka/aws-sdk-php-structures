@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $rootVolumeName
  * @property array<string, array<string, string>> $volumeToConversionMap
  * @property array<string, list<ProductCode>> $volumeToProductCodes
- * @property array<string, int> $volumeToVolumeSize
+ * @property array<string, int<0, max>> $volumeToVolumeSize
  */
 class ConversionProperties extends Shape
 {
@@ -21,7 +21,7 @@ class ConversionProperties extends Shape
      *     rootVolumeName?: string,
      *     volumeToConversionMap?: array<string, array<string, string>>,
      *     volumeToProductCodes?: array<string, list<ProductCode>>,
-     *     volumeToVolumeSize?: array<string, int>
+     *     volumeToVolumeSize?: array<string, int<0, max>>
      * } $args
      */
     public function __construct(array $args = [])

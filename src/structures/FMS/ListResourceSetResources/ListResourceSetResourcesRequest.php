@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Identifier
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListResourceSetResourcesRequest extends Request
@@ -14,7 +14,7 @@ class ListResourceSetResourcesRequest extends Request
     /**
      * @param array{
      *     Identifier: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

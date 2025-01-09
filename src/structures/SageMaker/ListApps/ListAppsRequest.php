@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'Ascending'|'Descending' $SortOrder
  * @property 'CreationTime' $SortBy
  * @property string $DomainIdEquals
@@ -18,7 +18,7 @@ class ListAppsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     SortOrder?: 'Ascending'|'Descending',
      *     SortBy?: 'CreationTime',
      *     DomainIdEquals?: string,

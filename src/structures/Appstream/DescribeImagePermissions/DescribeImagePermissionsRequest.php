@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property int $MaxResults
+ * @property int<0, 500> $MaxResults
  * @property list<string> $SharedAwsAccountIds
  * @property string $NextToken
  */
@@ -15,7 +15,7 @@ class DescribeImagePermissionsRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 500>,
      *     SharedAwsAccountIds?: list<string>,
      *     NextToken?: string
      * } $args

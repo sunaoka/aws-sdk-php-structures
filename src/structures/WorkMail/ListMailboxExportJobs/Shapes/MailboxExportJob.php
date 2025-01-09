@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Description
  * @property string $S3BucketName
  * @property string $S3Path
- * @property int $EstimatedProgress
+ * @property int<0, 100> $EstimatedProgress
  * @property 'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLED' $State
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
@@ -24,7 +24,7 @@ class MailboxExportJob extends Shape
      *     Description?: string,
      *     S3BucketName?: string,
      *     S3Path?: string,
-     *     EstimatedProgress?: int,
+     *     EstimatedProgress?: int<0, 100>,
      *     State?: 'RUNNING'|'COMPLETED'|'FAILED'|'CANCELLED',
      *     StartTime?: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ScheduleExpression
- * @property int $DurationInSeconds
+ * @property int<60, 3600> $DurationInSeconds
  */
 class ScheduleConfig extends Shape
 {
     /**
      * @param array{
      *     ScheduleExpression: string,
-     *     DurationInSeconds: int
+     *     DurationInSeconds: int<60, 3600>
      * } $args
      */
     public function __construct(array $args)

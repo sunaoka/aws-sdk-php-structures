@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $QuotaCode
  * @property 'PENDING'|'CASE_OPENED'|'APPROVED'|'DENIED'|'CASE_CLOSED'|'NOT_APPROVED'|'INVALID_REQUEST' $Status
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'ACCOUNT'|'RESOURCE'|'ALL' $QuotaRequestedAtLevel
  */
 class ListRequestedServiceQuotaChangeHistoryByQuotaRequest extends Request
@@ -20,7 +20,7 @@ class ListRequestedServiceQuotaChangeHistoryByQuotaRequest extends Request
      *     QuotaCode: string,
      *     Status?: 'PENDING'|'CASE_OPENED'|'APPROVED'|'DENIED'|'CASE_CLOSED'|'NOT_APPROVED'|'INVALID_REQUEST',
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     QuotaRequestedAtLevel?: 'ACCOUNT'|'RESOURCE'|'ALL'
      * } $args
      */

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Expression $Filter
  * @property list<string> $Metrics
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property Shapes\SortDefinition $SortBy
  */
 class GetSavingsPlansCoverageRequest extends Request
@@ -24,7 +24,7 @@ class GetSavingsPlansCoverageRequest extends Request
      *     Filter?: Shapes\Expression,
      *     Metrics?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     SortBy?: Shapes\SortDefinition
      * } $args
      */

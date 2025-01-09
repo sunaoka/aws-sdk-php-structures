@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $ByRecoveryPointCreationDateAfter
  * @property \Aws\Api\DateTimeResult $ByRecoveryPointCreationDateBefore
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class ListRestoreJobsByProtectedResourceRequest extends Request
 {
@@ -21,7 +21,7 @@ class ListRestoreJobsByProtectedResourceRequest extends Request
      *     ByRecoveryPointCreationDateAfter?: \Aws\Api\DateTimeResult,
      *     ByRecoveryPointCreationDateBefore?: \Aws\Api\DateTimeResult,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

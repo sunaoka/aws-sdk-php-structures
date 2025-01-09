@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Arn
  * @property string $AliasName
- * @property int $ThemeVersionNumber
+ * @property int<1, max> $ThemeVersionNumber
  */
 class ThemeAlias extends Shape
 {
@@ -15,7 +15,7 @@ class ThemeAlias extends Shape
      * @param array{
      *     Arn?: string,
      *     AliasName?: string,
-     *     ThemeVersionNumber?: int
+     *     ThemeVersionNumber?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DataStoreApiVersion
  * @property array<string, string> $ConnectionOptions
  * @property string $FilterPredicate
- * @property int $Limit
+ * @property int<1, 1000> $Limit
  * @property string $OrderBy
  * @property list<string> $SelectedFields
  */
@@ -27,7 +27,7 @@ class GetEntityRecordsRequest extends Request
      *     DataStoreApiVersion?: string,
      *     ConnectionOptions?: array<string, string>,
      *     FilterPredicate?: string,
-     *     Limit: int,
+     *     Limit: int<1, 1000>,
      *     OrderBy?: string,
      *     SelectedFields?: list<string>
      * } $args

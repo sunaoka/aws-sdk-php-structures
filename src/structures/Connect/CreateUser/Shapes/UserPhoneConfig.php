@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'SOFT_PHONE'|'DESK_PHONE' $PhoneType
  * @property bool $AutoAccept
- * @property int $AfterContactWorkTimeLimit
+ * @property int<0, max> $AfterContactWorkTimeLimit
  * @property string $DeskPhoneNumber
  */
 class UserPhoneConfig extends Shape
@@ -16,7 +16,7 @@ class UserPhoneConfig extends Shape
      * @param array{
      *     PhoneType: 'SOFT_PHONE'|'DESK_PHONE',
      *     AutoAccept?: bool,
-     *     AfterContactWorkTimeLimit?: int,
+     *     AfterContactWorkTimeLimit?: int<0, max>,
      *     DeskPhoneNumber?: string
      * } $args
      */

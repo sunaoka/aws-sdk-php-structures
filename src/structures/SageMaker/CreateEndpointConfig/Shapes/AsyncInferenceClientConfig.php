@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateEndpointConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxConcurrentInvocationsPerInstance
+ * @property int<1, 1000> $MaxConcurrentInvocationsPerInstance
  */
 class AsyncInferenceClientConfig extends Shape
 {
     /**
-     * @param array{MaxConcurrentInvocationsPerInstance?: int} $args
+     * @param array{MaxConcurrentInvocationsPerInstance?: int<1, 1000>} $args
      */
     public function __construct(array $args = [])
     {

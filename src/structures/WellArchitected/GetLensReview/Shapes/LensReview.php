@@ -14,10 +14,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property JiraSelectedQuestionConfiguration $JiraConfiguration
  * @property \Aws\Api\DateTimeResult $UpdatedAt
  * @property string $Notes
- * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int> $RiskCounts
+ * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>> $RiskCounts
  * @property string $NextToken
  * @property list<WorkloadProfile> $Profiles
- * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int> $PrioritizedRiskCounts
+ * @property array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>> $PrioritizedRiskCounts
  */
 class LensReview extends Shape
 {
@@ -32,10 +32,10 @@ class LensReview extends Shape
      *     JiraConfiguration?: JiraSelectedQuestionConfiguration,
      *     UpdatedAt?: \Aws\Api\DateTimeResult,
      *     Notes?: string,
-     *     RiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int>,
+     *     RiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>,
      *     NextToken?: string,
      *     Profiles?: list<WorkloadProfile>,
-     *     PrioritizedRiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int>
+     *     PrioritizedRiskCounts?: array<'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE', int<0, max>>
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domainIdentifier
  * @property Shapes\FilterClause $filters
  * @property bool $managed
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nextToken
  * @property list<Shapes\SearchInItem> $searchIn
  * @property 'ASSET_TYPE'|'FORM_TYPE'|'LINEAGE_NODE_TYPE' $searchScope
@@ -22,7 +22,7 @@ class SearchTypesRequest extends Request
      *     domainIdentifier: string,
      *     filters?: Shapes\FilterClause,
      *     managed: bool,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nextToken?: string,
      *     searchIn?: list<Shapes\SearchInItem>,
      *     searchScope: 'ASSET_TYPE'|'FORM_TYPE'|'LINEAGE_NODE_TYPE',

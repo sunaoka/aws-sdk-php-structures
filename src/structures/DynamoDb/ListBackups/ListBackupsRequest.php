@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TableName
- * @property int $Limit
+ * @property int<1, 100> $Limit
  * @property \Aws\Api\DateTimeResult $TimeRangeLowerBound
  * @property \Aws\Api\DateTimeResult $TimeRangeUpperBound
  * @property string $ExclusiveStartBackupArn
@@ -17,7 +17,7 @@ class ListBackupsRequest extends Request
     /**
      * @param array{
      *     TableName?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, 100>,
      *     TimeRangeLowerBound?: \Aws\Api\DateTimeResult,
      *     TimeRangeUpperBound?: \Aws\Api\DateTimeResult,
      *     ExclusiveStartBackupArn?: string,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\DescribeRecoveryInstancesRequestFilters $filters
- * @property int $maxResults
+ * @property int<1, max> $maxResults
  * @property string $nextToken
  */
 class DescribeRecoveryInstancesRequest extends Request
@@ -14,7 +14,7 @@ class DescribeRecoveryInstancesRequest extends Request
     /**
      * @param array{
      *     filters?: Shapes\DescribeRecoveryInstancesRequestFilters,
-     *     maxResults?: int,
+     *     maxResults?: int<1, max>,
      *     nextToken?: string
      * } $args
      */

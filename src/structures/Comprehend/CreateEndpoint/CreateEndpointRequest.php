@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $EndpointName
  * @property string $ModelArn
- * @property int $DesiredInferenceUnits
+ * @property int<1, max> $DesiredInferenceUnits
  * @property string $ClientRequestToken
  * @property list<Shapes\Tag> $Tags
  * @property string $DataAccessRoleArn
@@ -19,7 +19,7 @@ class CreateEndpointRequest extends Request
      * @param array{
      *     EndpointName: string,
      *     ModelArn?: string,
-     *     DesiredInferenceUnits: int,
+     *     DesiredInferenceUnits: int<1, max>,
      *     ClientRequestToken?: string,
      *     Tags?: list<Shapes\Tag>,
      *     DataAccessRoleArn?: string,

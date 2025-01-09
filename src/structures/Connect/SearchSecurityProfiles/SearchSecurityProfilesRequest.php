@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property Shapes\SecurityProfileSearchCriteria $SearchCriteria
  * @property Shapes\SecurityProfilesSearchFilter $SearchFilter
  */
@@ -17,7 +17,7 @@ class SearchSecurityProfilesRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     SearchCriteria?: Shapes\SecurityProfileSearchCriteria,
      *     SearchFilter?: Shapes\SecurityProfilesSearchFilter
      * } $args

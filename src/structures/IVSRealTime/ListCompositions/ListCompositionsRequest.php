@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $filterByStageArn
  * @property string $filterByEncoderConfigurationArn
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class ListCompositionsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListCompositionsRequest extends Request
      *     filterByStageArn?: string,
      *     filterByEncoderConfigurationArn?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $AllowAdminCreateUserOnly
- * @property int $UnusedAccountValidityDays
+ * @property int<0, 365> $UnusedAccountValidityDays
  * @property MessageTemplateType $InviteMessageTemplate
  */
 class AdminCreateUserConfigType extends Shape
@@ -14,7 +14,7 @@ class AdminCreateUserConfigType extends Shape
     /**
      * @param array{
      *     AllowAdminCreateUserOnly?: bool,
-     *     UnusedAccountValidityDays?: int,
+     *     UnusedAccountValidityDays?: int<0, 365>,
      *     InviteMessageTemplate?: MessageTemplateType
      * } $args
      */

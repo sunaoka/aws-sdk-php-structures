@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'RDS'|'DOCDB' $ServiceType
  * @property string $Identifier
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 25> $MaxResults
  * @property bool $ListTags
  */
 class ListPerformanceAnalysisReportsRequest extends Request
@@ -18,7 +18,7 @@ class ListPerformanceAnalysisReportsRequest extends Request
      *     ServiceType: 'RDS'|'DOCDB',
      *     Identifier: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 25>,
      *     ListTags?: bool
      * } $args
      */

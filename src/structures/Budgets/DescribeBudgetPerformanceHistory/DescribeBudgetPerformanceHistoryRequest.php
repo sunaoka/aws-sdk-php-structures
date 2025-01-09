@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $BudgetName
  * @property Shapes\TimePeriod $TimePeriod
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeBudgetPerformanceHistoryRequest extends Request
@@ -18,7 +18,7 @@ class DescribeBudgetPerformanceHistoryRequest extends Request
      *     AccountId: string,
      *     BudgetName: string,
      *     TimePeriod?: Shapes\TimePeriod,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

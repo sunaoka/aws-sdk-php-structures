@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $AdditionalMetrics
  * @property Shapes\DimensionGroup $PartitionBy
  * @property array<string, string> $Filter
- * @property int $MaxResults
+ * @property int<0, 25> $MaxResults
  * @property string $NextToken
  */
 class DescribeDimensionKeysRequest extends Request
@@ -32,7 +32,7 @@ class DescribeDimensionKeysRequest extends Request
      *     AdditionalMetrics?: list<string>,
      *     PartitionBy?: Shapes\DimensionGroup,
      *     Filter?: array<string, string>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 25>,
      *     NextToken?: string
      * } $args
      */

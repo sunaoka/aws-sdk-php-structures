@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdateDataProtectionSettings\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $globalConfidenceLevel
+ * @property int<1, 3> $globalConfidenceLevel
  * @property list<string> $globalEnforcedUrls
  * @property list<string> $globalExemptUrls
  * @property list<InlineRedactionPattern> $inlineRedactionPatterns
@@ -14,7 +14,7 @@ class InlineRedactionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     globalConfidenceLevel?: int,
+     *     globalConfidenceLevel?: int<1, 3>,
      *     globalEnforcedUrls?: list<string>,
      *     globalExemptUrls?: list<string>,
      *     inlineRedactionPatterns: list<InlineRedactionPattern>

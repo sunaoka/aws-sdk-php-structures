@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $description
  * @property string $name
  * @property bool $optional
- * @property int $order
+ * @property int<2, 10000> $order
  * @property array<string, Shapes\LaunchActionParameter> $parameters
  * @property string $resourceId
  */
@@ -29,7 +29,7 @@ class PutLaunchActionRequest extends Request
      *     description: string,
      *     name: string,
      *     optional: bool,
-     *     order: int,
+     *     order: int<2, 10000>,
      *     parameters?: array<string, Shapes\LaunchActionParameter>,
      *     resourceId: string
      * } $args

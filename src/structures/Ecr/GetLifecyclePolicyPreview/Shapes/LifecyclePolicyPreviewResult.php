@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $imageDigest
  * @property \Aws\Api\DateTimeResult $imagePushedAt
  * @property LifecyclePolicyRuleAction $action
- * @property int $appliedRulePriority
+ * @property int<1, max> $appliedRulePriority
  */
 class LifecyclePolicyPreviewResult extends Shape
 {
@@ -19,7 +19,7 @@ class LifecyclePolicyPreviewResult extends Shape
      *     imageDigest?: string,
      *     imagePushedAt?: \Aws\Api\DateTimeResult,
      *     action?: LifecyclePolicyRuleAction,
-     *     appliedRulePriority?: int
+     *     appliedRulePriority?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

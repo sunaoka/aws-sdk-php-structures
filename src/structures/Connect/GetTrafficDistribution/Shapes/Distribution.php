@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Region
- * @property int $Percentage
+ * @property int<0, 100> $Percentage
  */
 class Distribution extends Shape
 {
     /**
      * @param array{
      *     Region: string,
-     *     Percentage: int
+     *     Percentage: int<0, 100>
      * } $args
      */
     public function __construct(array $args)

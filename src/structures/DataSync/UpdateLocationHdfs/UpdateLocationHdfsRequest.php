@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LocationArn
  * @property string $Subdirectory
  * @property list<Shapes\HdfsNameNode> $NameNodes
- * @property int $BlockSize
- * @property int $ReplicationFactor
+ * @property int<1048576, 1073741824> $BlockSize
+ * @property int<1, 512> $ReplicationFactor
  * @property string $KmsKeyProviderUri
  * @property Shapes\QopConfiguration $QopConfiguration
  * @property 'SIMPLE'|'KERBEROS' $AuthenticationType
@@ -26,8 +26,8 @@ class UpdateLocationHdfsRequest extends Request
      *     LocationArn: string,
      *     Subdirectory?: string,
      *     NameNodes?: list<Shapes\HdfsNameNode>,
-     *     BlockSize?: int,
-     *     ReplicationFactor?: int,
+     *     BlockSize?: int<1048576, 1073741824>,
+     *     ReplicationFactor?: int<1, 512>,
      *     KmsKeyProviderUri?: string,
      *     QopConfiguration?: Shapes\QopConfiguration,
      *     AuthenticationType?: 'SIMPLE'|'KERBEROS',

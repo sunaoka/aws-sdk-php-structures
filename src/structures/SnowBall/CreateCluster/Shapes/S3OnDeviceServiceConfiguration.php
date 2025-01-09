@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property double $StorageLimit
  * @property 'TB' $StorageUnit
- * @property int $ServiceSize
- * @property int $FaultTolerance
+ * @property int<3, 16> $ServiceSize
+ * @property int<1, 4> $FaultTolerance
  */
 class S3OnDeviceServiceConfiguration extends Shape
 {
@@ -16,8 +16,8 @@ class S3OnDeviceServiceConfiguration extends Shape
      * @param array{
      *     StorageLimit?: double,
      *     StorageUnit?: 'TB',
-     *     ServiceSize?: int,
-     *     FaultTolerance?: int
+     *     ServiceSize?: int<3, 16>,
+     *     FaultTolerance?: int<1, 4>
      * } $args
      */
     public function __construct(array $args = [])

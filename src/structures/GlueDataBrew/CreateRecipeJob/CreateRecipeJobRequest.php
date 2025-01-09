@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'ENABLE'|'DISABLE' $LogSubscription
  * @property int $MaxCapacity
- * @property int $MaxRetries
+ * @property int<0, max> $MaxRetries
  * @property list<Shapes\Output> $Outputs
  * @property list<Shapes\DataCatalogOutput> $DataCatalogOutputs
  * @property list<Shapes\DatabaseOutput> $DatabaseOutputs
@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\RecipeReference $RecipeReference
  * @property string $RoleArn
  * @property array<string, string> $Tags
- * @property int $Timeout
+ * @property int<0, max> $Timeout
  */
 class CreateRecipeJobRequest extends Request
 {
@@ -31,7 +31,7 @@ class CreateRecipeJobRequest extends Request
      *     Name: string,
      *     LogSubscription?: 'ENABLE'|'DISABLE',
      *     MaxCapacity?: int,
-     *     MaxRetries?: int,
+     *     MaxRetries?: int<0, max>,
      *     Outputs?: list<Shapes\Output>,
      *     DataCatalogOutputs?: list<Shapes\DataCatalogOutput>,
      *     DatabaseOutputs?: list<Shapes\DatabaseOutput>,
@@ -39,7 +39,7 @@ class CreateRecipeJobRequest extends Request
      *     RecipeReference?: Shapes\RecipeReference,
      *     RoleArn: string,
      *     Tags?: array<string, string>,
-     *     Timeout?: int
+     *     Timeout?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

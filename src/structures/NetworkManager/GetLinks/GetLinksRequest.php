@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SiteId
  * @property string $Type
  * @property string $Provider
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class GetLinksRequest extends Request
@@ -22,7 +22,7 @@ class GetLinksRequest extends Request
      *     SiteId?: string,
      *     Type?: string,
      *     Provider?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

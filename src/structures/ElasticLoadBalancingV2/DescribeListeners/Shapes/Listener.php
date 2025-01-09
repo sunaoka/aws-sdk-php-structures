@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ListenerArn
  * @property string $LoadBalancerArn
- * @property int $Port
+ * @property int<1, 65535> $Port
  * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE' $Protocol
  * @property list<Certificate> $Certificates
  * @property string $SslPolicy
@@ -21,7 +21,7 @@ class Listener extends Shape
      * @param array{
      *     ListenerArn?: string,
      *     LoadBalancerArn?: string,
-     *     Port?: int,
+     *     Port?: int<1, 65535>,
      *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE',
      *     Certificates?: list<Certificate>,
      *     SslPolicy?: string,

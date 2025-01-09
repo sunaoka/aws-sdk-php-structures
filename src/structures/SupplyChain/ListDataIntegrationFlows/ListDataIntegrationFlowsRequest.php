@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $instanceId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<0, 20> $maxResults
  */
 class ListDataIntegrationFlowsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListDataIntegrationFlowsRequest extends Request
      * @param array{
      *     instanceId: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<0, 20>
      * } $args
      */
     public function __construct(array $args)

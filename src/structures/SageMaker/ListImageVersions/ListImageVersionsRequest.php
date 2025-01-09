@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ImageName
  * @property \Aws\Api\DateTimeResult $LastModifiedTimeAfter
  * @property \Aws\Api\DateTimeResult $LastModifiedTimeBefore
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property 'CREATION_TIME'|'LAST_MODIFIED_TIME'|'VERSION' $SortBy
  * @property 'ASCENDING'|'DESCENDING' $SortOrder
@@ -24,7 +24,7 @@ class ListImageVersionsRequest extends Request
      *     ImageName: string,
      *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult,
      *     LastModifiedTimeBefore?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     SortBy?: 'CREATION_TIME'|'LAST_MODIFIED_TIME'|'VERSION',
      *     SortOrder?: 'ASCENDING'|'DESCENDING'

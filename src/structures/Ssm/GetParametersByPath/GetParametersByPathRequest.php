@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property bool $Recursive
  * @property list<Shapes\ParameterStringFilter> $ParameterFilters
  * @property bool $WithDecryption
- * @property int $MaxResults
+ * @property int<1, 10> $MaxResults
  * @property string $NextToken
  */
 class GetParametersByPathRequest extends Request
@@ -20,7 +20,7 @@ class GetParametersByPathRequest extends Request
      *     Recursive?: bool,
      *     ParameterFilters?: list<Shapes\ParameterStringFilter>,
      *     WithDecryption?: bool,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 10>,
      *     NextToken?: string
      * } $args
      */

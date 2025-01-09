@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IncludeChannelId
  * @property string $IncludeStatus
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  */
 class ListHarvestJobsRequest extends Request
@@ -16,7 +16,7 @@ class ListHarvestJobsRequest extends Request
      * @param array{
      *     IncludeChannelId?: string,
      *     IncludeStatus?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string
      * } $args
      */

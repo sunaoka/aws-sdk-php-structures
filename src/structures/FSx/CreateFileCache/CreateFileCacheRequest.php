@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClientRequestToken
  * @property 'LUSTRE' $FileCacheType
  * @property string $FileCacheTypeVersion
- * @property int $StorageCapacity
+ * @property int<0, 2147483647> $StorageCapacity
  * @property list<string> $SubnetIds
  * @property list<string> $SecurityGroupIds
  * @property list<Shapes\Tag> $Tags
@@ -24,7 +24,7 @@ class CreateFileCacheRequest extends Request
      *     ClientRequestToken?: string,
      *     FileCacheType: 'LUSTRE',
      *     FileCacheTypeVersion: string,
-     *     StorageCapacity: int,
+     *     StorageCapacity: int<0, 2147483647>,
      *     SubnetIds: list<string>,
      *     SecurityGroupIds?: list<string>,
      *     Tags?: list<Shapes\Tag>,

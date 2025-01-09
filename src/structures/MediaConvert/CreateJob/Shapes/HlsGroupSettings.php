@@ -23,20 +23,20 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'GZIP'|'NONE' $ManifestCompression
  * @property 'FLOATING_POINT'|'INTEGER' $ManifestDurationFormat
  * @property double $MinFinalSegmentLength
- * @property int $MinSegmentLength
+ * @property int<0, 2147483647> $MinSegmentLength
  * @property 'MANIFESTS_AND_SEGMENTS'|'SEGMENTS_ONLY' $OutputSelection
  * @property 'INCLUDE'|'EXCLUDE' $ProgramDateTime
- * @property int $ProgramDateTimePeriod
+ * @property int<0, 3600> $ProgramDateTimePeriod
  * @property 'ENABLED'|'DISABLED' $ProgressiveWriteHlsManifest
  * @property 'SINGLE_FILE'|'SEGMENTED_FILES' $SegmentControl
- * @property int $SegmentLength
+ * @property int<1, 2147483647> $SegmentLength
  * @property 'EXACT'|'GOP_MULTIPLE' $SegmentLengthControl
- * @property int $SegmentsPerSubdirectory
+ * @property int<1, 2147483647> $SegmentsPerSubdirectory
  * @property 'INCLUDE'|'EXCLUDE' $StreamInfResolution
  * @property 'LEGACY'|'SPEC_COMPLIANT' $TargetDurationCompatibilityMode
  * @property 'NONE'|'PRIV'|'TDRL' $TimedMetadataId3Frame
- * @property int $TimedMetadataId3Period
- * @property int $TimestampDeltaMilliseconds
+ * @property int<-2147483648, 2147483647> $TimedMetadataId3Period
+ * @property int<-2147483648, 2147483647> $TimestampDeltaMilliseconds
  */
 class HlsGroupSettings extends Shape
 {
@@ -60,20 +60,20 @@ class HlsGroupSettings extends Shape
      *     ManifestCompression?: 'GZIP'|'NONE',
      *     ManifestDurationFormat?: 'FLOATING_POINT'|'INTEGER',
      *     MinFinalSegmentLength?: double,
-     *     MinSegmentLength?: int,
+     *     MinSegmentLength?: int<0, 2147483647>,
      *     OutputSelection?: 'MANIFESTS_AND_SEGMENTS'|'SEGMENTS_ONLY',
      *     ProgramDateTime?: 'INCLUDE'|'EXCLUDE',
-     *     ProgramDateTimePeriod?: int,
+     *     ProgramDateTimePeriod?: int<0, 3600>,
      *     ProgressiveWriteHlsManifest?: 'ENABLED'|'DISABLED',
      *     SegmentControl?: 'SINGLE_FILE'|'SEGMENTED_FILES',
-     *     SegmentLength?: int,
+     *     SegmentLength?: int<1, 2147483647>,
      *     SegmentLengthControl?: 'EXACT'|'GOP_MULTIPLE',
-     *     SegmentsPerSubdirectory?: int,
+     *     SegmentsPerSubdirectory?: int<1, 2147483647>,
      *     StreamInfResolution?: 'INCLUDE'|'EXCLUDE',
      *     TargetDurationCompatibilityMode?: 'LEGACY'|'SPEC_COMPLIANT',
      *     TimedMetadataId3Frame?: 'NONE'|'PRIV'|'TDRL',
-     *     TimedMetadataId3Period?: int,
-     *     TimestampDeltaMilliseconds?: int
+     *     TimedMetadataId3Period?: int<-2147483648, 2147483647>,
+     *     TimestampDeltaMilliseconds?: int<-2147483648, 2147483647>
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $Body
  * @property string $CacheControl
  * @property string $ContentRange
- * @property int $ContentLength
+ * @property int<0, max> $ContentLength
  * @property string $ContentType
  * @property string $ETag
  * @property \Aws\Api\DateTimeResult $LastModified

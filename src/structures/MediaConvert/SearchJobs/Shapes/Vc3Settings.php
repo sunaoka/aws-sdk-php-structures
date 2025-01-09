@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
  * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int $FramerateDenominator
- * @property int $FramerateNumerator
+ * @property int<1, 1001> $FramerateDenominator
+ * @property int<24, 60000> $FramerateNumerator
  * @property 'INTERLACED'|'PROGRESSIVE' $InterlaceMode
  * @property 'INTERLACED'|'INTERLACED_OPTIMIZE' $ScanTypeConversionMode
  * @property 'DISABLED'|'ENABLED' $SlowPal
@@ -21,8 +21,8 @@ class Vc3Settings extends Shape
      * @param array{
      *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
      *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int,
-     *     FramerateNumerator?: int,
+     *     FramerateDenominator?: int<1, 1001>,
+     *     FramerateNumerator?: int<24, 60000>,
      *     InterlaceMode?: 'INTERLACED'|'PROGRESSIVE',
      *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE',
      *     SlowPal?: 'DISABLED'|'ENABLED',

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DatabaseName
  * @property string $Expression
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $TransactionId
  * @property \Aws\Api\DateTimeResult $QueryAsOfTime
  * @property bool $IncludeStatusDetails
@@ -23,7 +23,7 @@ class GetTablesRequest extends Request
      *     DatabaseName: string,
      *     Expression?: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     TransactionId?: string,
      *     QueryAsOfTime?: \Aws\Api\DateTimeResult,
      *     IncludeStatusDetails?: bool,

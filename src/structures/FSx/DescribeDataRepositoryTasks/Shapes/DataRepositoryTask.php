@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DataRepositoryTaskFailureDetails $FailureDetails
  * @property DataRepositoryTaskStatus $Status
  * @property CompletionReport $Report
- * @property int $CapacityToRelease
+ * @property int<1, 2147483647> $CapacityToRelease
  * @property string $FileCacheId
  * @property ReleaseConfiguration $ReleaseConfiguration
  */
@@ -39,7 +39,7 @@ class DataRepositoryTask extends Shape
      *     FailureDetails?: DataRepositoryTaskFailureDetails,
      *     Status?: DataRepositoryTaskStatus,
      *     Report?: CompletionReport,
-     *     CapacityToRelease?: int,
+     *     CapacityToRelease?: int<1, 2147483647>,
      *     FileCacheId?: string,
      *     ReleaseConfiguration?: ReleaseConfiguration
      * } $args

@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $BluePrimaryX
- * @property int $BluePrimaryY
- * @property int $GreenPrimaryX
- * @property int $GreenPrimaryY
- * @property int $MaxContentLightLevel
- * @property int $MaxFrameAverageLightLevel
- * @property int $MaxLuminance
- * @property int $MinLuminance
- * @property int $RedPrimaryX
- * @property int $RedPrimaryY
- * @property int $WhitePointX
- * @property int $WhitePointY
+ * @property int<0, 50000> $BluePrimaryX
+ * @property int<0, 50000> $BluePrimaryY
+ * @property int<0, 50000> $GreenPrimaryX
+ * @property int<0, 50000> $GreenPrimaryY
+ * @property int<0, 65535> $MaxContentLightLevel
+ * @property int<0, 65535> $MaxFrameAverageLightLevel
+ * @property int<0, 2147483647> $MaxLuminance
+ * @property int<0, 2147483647> $MinLuminance
+ * @property int<0, 50000> $RedPrimaryX
+ * @property int<0, 50000> $RedPrimaryY
+ * @property int<0, 50000> $WhitePointX
+ * @property int<0, 50000> $WhitePointY
  */
 class Hdr10Metadata extends Shape
 {
     /**
      * @param array{
-     *     BluePrimaryX?: int,
-     *     BluePrimaryY?: int,
-     *     GreenPrimaryX?: int,
-     *     GreenPrimaryY?: int,
-     *     MaxContentLightLevel?: int,
-     *     MaxFrameAverageLightLevel?: int,
-     *     MaxLuminance?: int,
-     *     MinLuminance?: int,
-     *     RedPrimaryX?: int,
-     *     RedPrimaryY?: int,
-     *     WhitePointX?: int,
-     *     WhitePointY?: int
+     *     BluePrimaryX?: int<0, 50000>,
+     *     BluePrimaryY?: int<0, 50000>,
+     *     GreenPrimaryX?: int<0, 50000>,
+     *     GreenPrimaryY?: int<0, 50000>,
+     *     MaxContentLightLevel?: int<0, 65535>,
+     *     MaxFrameAverageLightLevel?: int<0, 65535>,
+     *     MaxLuminance?: int<0, 2147483647>,
+     *     MinLuminance?: int<0, 2147483647>,
+     *     RedPrimaryX?: int<0, 50000>,
+     *     RedPrimaryY?: int<0, 50000>,
+     *     WhitePointX?: int<0, 50000>,
+     *     WhitePointY?: int<0, 50000>
      * } $args
      */
     public function __construct(array $args = [])

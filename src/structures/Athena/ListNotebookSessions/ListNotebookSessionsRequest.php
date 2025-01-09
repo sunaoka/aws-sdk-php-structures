@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NotebookId
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListNotebookSessionsRequest extends Request
@@ -14,7 +14,7 @@ class ListNotebookSessionsRequest extends Request
     /**
      * @param array{
      *     NotebookId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

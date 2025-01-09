@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Sfn\DescribeMapRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $pending
- * @property int $running
- * @property int $succeeded
- * @property int $failed
- * @property int $timedOut
- * @property int $aborted
- * @property int $total
- * @property int $resultsWritten
+ * @property int<0, max> $pending
+ * @property int<0, max> $running
+ * @property int<0, max> $succeeded
+ * @property int<0, max> $failed
+ * @property int<0, max> $timedOut
+ * @property int<0, max> $aborted
+ * @property int<0, max> $total
+ * @property int<0, max> $resultsWritten
  * @property int $failuresNotRedrivable
  * @property int $pendingRedrive
  */
@@ -20,14 +20,14 @@ class MapRunItemCounts extends Shape
 {
     /**
      * @param array{
-     *     pending: int,
-     *     running: int,
-     *     succeeded: int,
-     *     failed: int,
-     *     timedOut: int,
-     *     aborted: int,
-     *     total: int,
-     *     resultsWritten: int,
+     *     pending: int<0, max>,
+     *     running: int<0, max>,
+     *     succeeded: int<0, max>,
+     *     failed: int<0, max>,
+     *     timedOut: int<0, max>,
+     *     aborted: int<0, max>,
+     *     total: int<0, max>,
+     *     resultsWritten: int<0, max>,
      *     failuresNotRedrivable?: int,
      *     pendingRedrive?: int
      * } $args

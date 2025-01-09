@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $ImageIds
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property bool $DryRun
  */
 class ListImagesInRecycleBinRequest extends Request
@@ -16,7 +16,7 @@ class ListImagesInRecycleBinRequest extends Request
      * @param array{
      *     ImageIds?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     DryRun?: bool
      * } $args
      */

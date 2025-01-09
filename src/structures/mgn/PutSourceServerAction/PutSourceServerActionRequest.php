@@ -15,10 +15,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $documentVersion
  * @property array<string, Shapes\SsmExternalParameter> $externalParameters
  * @property bool $mustSucceedForCutover
- * @property int $order
+ * @property int<1001, 10000> $order
  * @property array<string, list<Shapes\SsmParameterStoreParameter>> $parameters
  * @property string $sourceServerID
- * @property int $timeoutSeconds
+ * @property int<1, max> $timeoutSeconds
  */
 class PutSourceServerActionRequest extends Request
 {
@@ -34,10 +34,10 @@ class PutSourceServerActionRequest extends Request
      *     documentVersion?: string,
      *     externalParameters?: array<string, Shapes\SsmExternalParameter>,
      *     mustSucceedForCutover?: bool,
-     *     order: int,
+     *     order: int<1001, 10000>,
      *     parameters?: array<string, list<Shapes\SsmParameterStoreParameter>>,
      *     sourceServerID: string,
-     *     timeoutSeconds?: int
+     *     timeoutSeconds?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\CompletionReport $Report
  * @property string $ClientRequestToken
  * @property list<Shapes\Tag> $Tags
- * @property int $CapacityToRelease
+ * @property int<1, 2147483647> $CapacityToRelease
  * @property Shapes\ReleaseConfiguration $ReleaseConfiguration
  */
 class CreateDataRepositoryTaskRequest extends Request
@@ -24,7 +24,7 @@ class CreateDataRepositoryTaskRequest extends Request
      *     Report: Shapes\CompletionReport,
      *     ClientRequestToken?: string,
      *     Tags?: list<Shapes\Tag>,
-     *     CapacityToRelease?: int,
+     *     CapacityToRelease?: int<1, 2147483647>,
      *     ReleaseConfiguration?: Shapes\ReleaseConfiguration
      * } $args
      */

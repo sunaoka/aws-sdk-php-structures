@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\ListNotificationRulesFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class ListNotificationRulesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListNotificationRulesRequest extends Request
      * @param array{
      *     Filters?: list<Shapes\ListNotificationRulesFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

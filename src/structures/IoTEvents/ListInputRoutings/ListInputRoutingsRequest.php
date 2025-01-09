@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\InputIdentifier $inputIdentifier
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  * @property string $nextToken
  */
 class ListInputRoutingsRequest extends Request
@@ -14,7 +14,7 @@ class ListInputRoutingsRequest extends Request
     /**
      * @param array{
      *     inputIdentifier: Shapes\InputIdentifier,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 250>,
      *     nextToken?: string
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ConstantInitializationVector
  * @property EncryptionMethod $EncryptionMethod
- * @property int $KeyRotationIntervalSeconds
+ * @property int<300, 31536000> $KeyRotationIntervalSeconds
  * @property SpekeKeyProvider $SpekeKeyProvider
  */
 class Encryption extends Shape
@@ -16,7 +16,7 @@ class Encryption extends Shape
      * @param array{
      *     ConstantInitializationVector?: string,
      *     EncryptionMethod: EncryptionMethod,
-     *     KeyRotationIntervalSeconds?: int,
+     *     KeyRotationIntervalSeconds?: int<300, 31536000>,
      *     SpekeKeyProvider: SpekeKeyProvider
      * } $args
      */

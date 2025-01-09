@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $QuestionTitle
  * @property string $QuestionDescription
  * @property list<ProfileTemplateChoice> $QuestionChoices
- * @property int $MinSelectedChoices
- * @property int $MaxSelectedChoices
+ * @property int<0, max> $MinSelectedChoices
+ * @property int<0, max> $MaxSelectedChoices
  */
 class ProfileTemplateQuestion extends Shape
 {
@@ -20,8 +20,8 @@ class ProfileTemplateQuestion extends Shape
      *     QuestionTitle?: string,
      *     QuestionDescription?: string,
      *     QuestionChoices?: list<ProfileTemplateChoice>,
-     *     MinSelectedChoices?: int,
-     *     MaxSelectedChoices?: int
+     *     MinSelectedChoices?: int<0, max>,
+     *     MaxSelectedChoices?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

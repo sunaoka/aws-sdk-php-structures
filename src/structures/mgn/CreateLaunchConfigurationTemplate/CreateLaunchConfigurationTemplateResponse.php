@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $mapAutoTaggingMpeID
  * @property Shapes\PostLaunchActions $postLaunchActions
  * @property Shapes\LaunchTemplateDiskConf $smallVolumeConf
- * @property int $smallVolumeMaxSize
+ * @property int<0, max> $smallVolumeMaxSize
  * @property array<string, string> $tags
  * @property 'NONE'|'BASIC' $targetInstanceTypeRightSizingMethod
  */

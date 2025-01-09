@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ArtifactStore $artifactStore
  * @property array<string, ArtifactStore> $artifactStores
  * @property list<StageDeclaration> $stages
- * @property int $version
+ * @property int<1, max> $version
  * @property 'QUEUED'|'SUPERSEDED'|'PARALLEL' $executionMode
  * @property 'V1'|'V2' $pipelineType
  * @property list<PipelineVariableDeclaration> $variables
@@ -25,7 +25,7 @@ class PipelineDeclaration extends Shape
      *     artifactStore?: ArtifactStore,
      *     artifactStores?: array<string, ArtifactStore>,
      *     stages: list<StageDeclaration>,
-     *     version?: int,
+     *     version?: int<1, max>,
      *     executionMode?: 'QUEUED'|'SUPERSEDED'|'PARALLEL',
      *     pipelineType?: 'V1'|'V2',
      *     variables?: list<PipelineVariableDeclaration>,

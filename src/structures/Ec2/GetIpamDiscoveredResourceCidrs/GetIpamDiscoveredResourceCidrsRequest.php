@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceRegion
  * @property list<Shapes\Filter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  */
 class GetIpamDiscoveredResourceCidrsRequest extends Request
 {
@@ -21,7 +21,7 @@ class GetIpamDiscoveredResourceCidrsRequest extends Request
      *     ResourceRegion: string,
      *     Filters?: list<Shapes\Filter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<5, 1000>
      * } $args
      */
     public function __construct(array $args)

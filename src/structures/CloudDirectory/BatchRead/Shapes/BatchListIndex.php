@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<ObjectAttributeRange> $RangesOnIndexedValues
  * @property ObjectReference $IndexReference
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $NextToken
  */
 class BatchListIndex extends Shape
@@ -16,7 +16,7 @@ class BatchListIndex extends Shape
      * @param array{
      *     RangesOnIndexedValues?: list<ObjectAttributeRange>,
      *     IndexReference: ObjectReference,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

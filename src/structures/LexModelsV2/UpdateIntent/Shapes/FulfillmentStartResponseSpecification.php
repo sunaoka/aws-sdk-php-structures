@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\UpdateIntent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $delayInSeconds
+ * @property int<1, 900> $delayInSeconds
  * @property list<MessageGroup> $messageGroups
  * @property bool $allowInterrupt
  */
@@ -13,7 +13,7 @@ class FulfillmentStartResponseSpecification extends Shape
 {
     /**
      * @param array{
-     *     delayInSeconds: int,
+     *     delayInSeconds: int<1, 900>,
      *     messageGroups: list<MessageGroup>,
      *     allowInterrupt?: bool
      * } $args

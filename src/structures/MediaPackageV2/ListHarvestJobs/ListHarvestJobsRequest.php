@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ChannelName
  * @property string $OriginEndpointName
  * @property 'QUEUED'|'IN_PROGRESS'|'CANCELLED'|'COMPLETED'|'FAILED' $Status
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListHarvestJobsRequest extends Request
@@ -20,7 +20,7 @@ class ListHarvestJobsRequest extends Request
      *     ChannelName?: string,
      *     OriginEndpointName?: string,
      *     Status?: 'QUEUED'|'IN_PROGRESS'|'CANCELLED'|'COMPLETED'|'FAILED',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AccountId
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  * @property list<'ENABLED'|'ENABLING'|'DISABLING'|'DISABLED'|'ENABLED_BY_DEFAULT'> $RegionOptStatusContains
  */
@@ -15,7 +15,7 @@ class ListRegionsRequest extends Request
     /**
      * @param array{
      *     AccountId?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string,
      *     RegionOptStatusContains?: list<'ENABLED'|'ENABLING'|'DISABLING'|'DISABLED'|'ENABLED_BY_DEFAULT'>
      * } $args

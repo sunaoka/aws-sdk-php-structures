@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FaultCode
  * @property string $Equipment
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  */
 class ListLabelsRequest extends Request
 {
@@ -23,7 +23,7 @@ class ListLabelsRequest extends Request
      *     FaultCode?: string,
      *     Equipment?: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 500>
      * } $args
      */
     public function __construct(array $args)

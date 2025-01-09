@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DynamoDb\UpdateGlobalTableSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MinimumUnits
- * @property int $MaximumUnits
+ * @property int<1, max> $MinimumUnits
+ * @property int<1, max> $MaximumUnits
  * @property bool $AutoScalingDisabled
  * @property string $AutoScalingRoleArn
  * @property AutoScalingPolicyUpdate $ScalingPolicyUpdate
@@ -15,8 +15,8 @@ class AutoScalingSettingsUpdate extends Shape
 {
     /**
      * @param array{
-     *     MinimumUnits?: int,
-     *     MaximumUnits?: int,
+     *     MinimumUnits?: int<1, max>,
+     *     MaximumUnits?: int<1, max>,
      *     AutoScalingDisabled?: bool,
      *     AutoScalingRoleArn?: string,
      *     ScalingPolicyUpdate?: AutoScalingPolicyUpdate

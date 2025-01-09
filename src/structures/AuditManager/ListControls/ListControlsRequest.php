@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'Standard'|'Custom'|'Core' $controlType
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $controlCatalogId
  */
 class ListControlsRequest extends Request
@@ -16,7 +16,7 @@ class ListControlsRequest extends Request
      * @param array{
      *     controlType: 'Standard'|'Custom'|'Core',
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     controlCatalogId?: string
      * } $args
      */

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\WorkerSearchSummary> $workers
- * @property int $nextItemOffset
- * @property int $totalResults
+ * @property int<0, 10000> $nextItemOffset
+ * @property int<0, 10000> $totalResults
  */
 class SearchWorkersResponse extends Response
 {

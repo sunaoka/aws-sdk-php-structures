@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property string $ContactId
  * @property int $QueueTimeAdjustmentSeconds
- * @property int $QueuePriority
+ * @property int<1, 9223372036854775807> $QueuePriority
  * @property Shapes\RoutingCriteriaInput $RoutingCriteria
  */
 class UpdateContactRoutingDataRequest extends Request
@@ -18,7 +18,7 @@ class UpdateContactRoutingDataRequest extends Request
      *     InstanceId: string,
      *     ContactId: string,
      *     QueueTimeAdjustmentSeconds?: int,
-     *     QueuePriority?: int,
+     *     QueuePriority?: int<1, 9223372036854775807>,
      *     RoutingCriteria?: Shapes\RoutingCriteriaInput
      * } $args
      */

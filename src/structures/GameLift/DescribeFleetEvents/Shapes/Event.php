@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Message
  * @property \Aws\Api\DateTimeResult $EventTime
  * @property string $PreSignedLogUrl
- * @property int $Count
+ * @property int<1, 101> $Count
  */
 class Event extends Shape
 {
@@ -23,7 +23,7 @@ class Event extends Shape
      *     Message?: string,
      *     EventTime?: \Aws\Api\DateTimeResult,
      *     PreSignedLogUrl?: string,
-     *     Count?: int
+     *     Count?: int<1, 101>
      * } $args
      */
     public function __construct(array $args = [])

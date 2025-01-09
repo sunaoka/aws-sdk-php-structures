@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $lastUpdatedDateTime
  * @property list<NetworkInterface> $networkInterfaces
  * @property OS $os
- * @property int $ramBytes
+ * @property int<0, max> $ramBytes
  */
 class RecoveryInstanceProperties extends Shape
 {
@@ -23,7 +23,7 @@ class RecoveryInstanceProperties extends Shape
      *     lastUpdatedDateTime?: string,
      *     networkInterfaces?: list<NetworkInterface>,
      *     os?: OS,
-     *     ramBytes?: int
+     *     ramBytes?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

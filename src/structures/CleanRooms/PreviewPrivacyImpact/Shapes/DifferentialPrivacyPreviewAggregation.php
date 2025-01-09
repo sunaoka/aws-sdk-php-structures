@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'AVG'|'COUNT'|'COUNT_DISTINCT'|'SUM'|'STDDEV' $type
- * @property int $maxCount
+ * @property int<0, max> $maxCount
  */
 class DifferentialPrivacyPreviewAggregation extends Shape
 {
     /**
      * @param array{
      *     type: 'AVG'|'COUNT'|'COUNT_DISTINCT'|'SUM'|'STDDEV',
-     *     maxCount: int
+     *     maxCount: int<0, max>
      * } $args
      */
     public function __construct(array $args)

@@ -17,8 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property OutputS3Object $EvaluationResult
  * @property \Aws\Api\DateTimeResult $EvaluationEndTimestamp
  * @property string $KmsKeyId
- * @property int $MinInferenceUnits
- * @property int $MaxInferenceUnits
+ * @property int<1, max> $MinInferenceUnits
+ * @property int<1, max> $MaxInferenceUnits
  */
 class ModelDescription extends Shape
 {
@@ -36,8 +36,8 @@ class ModelDescription extends Shape
      *     EvaluationResult?: OutputS3Object,
      *     EvaluationEndTimestamp?: \Aws\Api\DateTimeResult,
      *     KmsKeyId?: string,
-     *     MinInferenceUnits?: int,
-     *     MaxInferenceUnits?: int
+     *     MinInferenceUnits?: int<1, max>,
+     *     MaxInferenceUnits?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

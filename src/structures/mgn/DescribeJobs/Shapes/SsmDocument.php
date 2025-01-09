@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $mustSucceedForCutover
  * @property array<string, list<SsmParameterStoreParameter>> $parameters
  * @property string $ssmDocumentName
- * @property int $timeoutSeconds
+ * @property int<1, max> $timeoutSeconds
  */
 class SsmDocument extends Shape
 {
@@ -21,7 +21,7 @@ class SsmDocument extends Shape
      *     mustSucceedForCutover?: bool,
      *     parameters?: array<string, list<SsmParameterStoreParameter>>,
      *     ssmDocumentName: string,
-     *     timeoutSeconds?: int
+     *     timeoutSeconds?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

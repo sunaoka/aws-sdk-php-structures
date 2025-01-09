@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $QuestionId
  * @property string $ChoiceId
  * @property 'OKAY'|'WARNING'|'ERROR'|'NOT_AVAILABLE'|'FETCH_FAILED' $Status
- * @property array<'OKAY'|'WARNING'|'ERROR'|'NOT_AVAILABLE'|'FETCH_FAILED', int> $AccountSummary
+ * @property array<'OKAY'|'WARNING'|'ERROR'|'NOT_AVAILABLE'|'FETCH_FAILED', int<1, 101>> $AccountSummary
  */
 class CheckSummary extends Shape
 {
@@ -31,7 +31,7 @@ class CheckSummary extends Shape
      *     QuestionId?: string,
      *     ChoiceId?: string,
      *     Status?: 'OKAY'|'WARNING'|'ERROR'|'NOT_AVAILABLE'|'FETCH_FAILED',
-     *     AccountSummary?: array<'OKAY'|'WARNING'|'ERROR'|'NOT_AVAILABLE'|'FETCH_FAILED', int>
+     *     AccountSummary?: array<'OKAY'|'WARNING'|'ERROR'|'NOT_AVAILABLE'|'FETCH_FAILED', int<1, 101>>
      * } $args
      */
     public function __construct(array $args = [])

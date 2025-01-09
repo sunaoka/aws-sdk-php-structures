@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\DescribeApplicationOperation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ApplicationVersionUpdatedFrom
- * @property int $ApplicationVersionUpdatedTo
+ * @property int<1, 999999999> $ApplicationVersionUpdatedFrom
+ * @property int<1, 999999999> $ApplicationVersionUpdatedTo
  */
 class ApplicationVersionChangeDetails extends Shape
 {
     /**
      * @param array{
-     *     ApplicationVersionUpdatedFrom: int,
-     *     ApplicationVersionUpdatedTo: int
+     *     ApplicationVersionUpdatedFrom: int<1, 999999999>,
+     *     ApplicationVersionUpdatedTo: int<1, 999999999>
      * } $args
      */
     public function __construct(array $args)

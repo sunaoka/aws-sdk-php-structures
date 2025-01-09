@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateVolume\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Iops
+ * @property int<1500, 192000> $Iops
  * @property 'AUTOMATIC'|'USER_PROVISIONED' $Mode
  */
 class FileSystemLustreMetadataConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Iops?: int,
+     *     Iops?: int<1500, 192000>,
      *     Mode: 'AUTOMATIC'|'USER_PROVISIONED'
      * } $args
      */

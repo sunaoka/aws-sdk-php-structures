@@ -22,7 +22,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $OutpostArn
  * @property string $PlacementGroupArn
  * @property \Aws\Api\DateTimeResult $StartDate
- * @property int $CommitmentDuration
+ * @property int<1, 200000000> $CommitmentDuration
  * @property 'fixed'|'incremental' $DeliveryPreference
  */
 class CreateCapacityReservationRequest extends Request
@@ -46,7 +46,7 @@ class CreateCapacityReservationRequest extends Request
      *     OutpostArn?: string,
      *     PlacementGroupArn?: string,
      *     StartDate?: \Aws\Api\DateTimeResult,
-     *     CommitmentDuration?: int,
+     *     CommitmentDuration?: int<1, 200000000>,
      *     DeliveryPreference?: 'fixed'|'incremental'
      * } $args
      */

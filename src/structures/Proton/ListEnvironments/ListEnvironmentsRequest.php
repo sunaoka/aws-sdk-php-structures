@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\EnvironmentTemplateFilter> $environmentTemplates
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListEnvironmentsRequest extends Request
@@ -14,7 +14,7 @@ class ListEnvironmentsRequest extends Request
     /**
      * @param array{
      *     environmentTemplates?: list<Shapes\EnvironmentTemplateFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

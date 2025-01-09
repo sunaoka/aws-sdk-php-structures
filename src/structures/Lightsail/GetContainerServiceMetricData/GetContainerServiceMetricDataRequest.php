@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CPUUtilization'|'MemoryUtilization' $metricName
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $endTime
- * @property int $period
+ * @property int<60, 86400> $period
  * @property list<'Minimum'|'Maximum'|'Sum'|'Average'|'SampleCount'> $statistics
  */
 class GetContainerServiceMetricDataRequest extends Request
@@ -20,7 +20,7 @@ class GetContainerServiceMetricDataRequest extends Request
      *     metricName: 'CPUUtilization'|'MemoryUtilization',
      *     startTime: \Aws\Api\DateTimeResult,
      *     endTime: \Aws\Api\DateTimeResult,
-     *     period: int,
+     *     period: int<60, 86400>,
      *     statistics: list<'Minimum'|'Maximum'|'Sum'|'Average'|'SampleCount'>
      * } $args
      */

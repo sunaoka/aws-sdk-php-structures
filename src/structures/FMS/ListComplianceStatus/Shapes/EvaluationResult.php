@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'COMPLIANT'|'NON_COMPLIANT' $ComplianceStatus
- * @property int $ViolatorCount
+ * @property int<0, max> $ViolatorCount
  * @property bool $EvaluationLimitExceeded
  */
 class EvaluationResult extends Shape
@@ -14,7 +14,7 @@ class EvaluationResult extends Shape
     /**
      * @param array{
      *     ComplianceStatus?: 'COMPLIANT'|'NON_COMPLIANT',
-     *     ViolatorCount?: int,
+     *     ViolatorCount?: int<0, max>,
      *     EvaluationLimitExceeded?: bool
      * } $args
      */

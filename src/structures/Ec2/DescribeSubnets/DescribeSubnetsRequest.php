@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Filter> $Filters
  * @property list<string> $SubnetIds
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property bool $DryRun
  */
 class DescribeSubnetsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeSubnetsRequest extends Request
      *     Filters?: list<Shapes\Filter>,
      *     SubnetIds?: list<string>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     DryRun?: bool
      * } $args
      */

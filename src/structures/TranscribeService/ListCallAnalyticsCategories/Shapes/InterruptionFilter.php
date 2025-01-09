@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\TranscribeService\ListCallAnalyticsCategories\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Threshold
+ * @property int<0, 14400000> $Threshold
  * @property 'AGENT'|'CUSTOMER' $ParticipantRole
  * @property AbsoluteTimeRange $AbsoluteTimeRange
  * @property RelativeTimeRange $RelativeTimeRange
@@ -15,7 +15,7 @@ class InterruptionFilter extends Shape
 {
     /**
      * @param array{
-     *     Threshold?: int,
+     *     Threshold?: int<0, 14400000>,
      *     ParticipantRole?: 'AGENT'|'CUSTOMER',
      *     AbsoluteTimeRange?: AbsoluteTimeRange,
      *     RelativeTimeRange?: RelativeTimeRange,

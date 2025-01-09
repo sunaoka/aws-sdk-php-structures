@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $description
  * @property 'ACTIVE' $status
  * @property list<'ALL'|'NONE'> $sharedAudienceMetrics
- * @property int $minMatchingSeedSize
+ * @property int<25, 500000> $minMatchingSeedSize
  * @property Shapes\AudienceSizeConfig $audienceSizeConfig
  * @property array<string, string> $tags
  * @property 'FROM_PARENT_RESOURCE'|'NONE' $childResourceTagOnCreatePolicy

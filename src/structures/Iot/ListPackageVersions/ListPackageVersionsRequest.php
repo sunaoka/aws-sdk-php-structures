@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $packageName
  * @property 'DRAFT'|'PUBLISHED'|'DEPRECATED' $status
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class ListPackageVersionsRequest extends Request
@@ -16,7 +16,7 @@ class ListPackageVersionsRequest extends Request
      * @param array{
      *     packageName: string,
      *     status?: 'DRAFT'|'PUBLISHED'|'DEPRECATED',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

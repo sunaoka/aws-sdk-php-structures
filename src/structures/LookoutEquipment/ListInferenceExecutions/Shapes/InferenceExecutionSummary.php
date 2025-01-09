@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property S3Object $CustomerResultObject
  * @property 'IN_PROGRESS'|'SUCCESS'|'FAILED' $Status
  * @property string $FailedReason
- * @property int $ModelVersion
+ * @property int<1, max> $ModelVersion
  * @property string $ModelVersionArn
  */
 class InferenceExecutionSummary extends Shape
@@ -36,7 +36,7 @@ class InferenceExecutionSummary extends Shape
      *     CustomerResultObject?: S3Object,
      *     Status?: 'IN_PROGRESS'|'SUCCESS'|'FAILED',
      *     FailedReason?: string,
-     *     ModelVersion?: int,
+     *     ModelVersion?: int<1, max>,
      *     ModelVersionArn?: string
      * } $args
      */

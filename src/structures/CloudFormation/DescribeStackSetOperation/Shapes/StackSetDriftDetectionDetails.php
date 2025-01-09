@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DRIFTED'|'IN_SYNC'|'NOT_CHECKED' $DriftStatus
  * @property 'COMPLETED'|'FAILED'|'PARTIAL_SUCCESS'|'IN_PROGRESS'|'STOPPED' $DriftDetectionStatus
  * @property \Aws\Api\DateTimeResult $LastDriftCheckTimestamp
- * @property int $TotalStackInstancesCount
- * @property int $DriftedStackInstancesCount
- * @property int $InSyncStackInstancesCount
- * @property int $InProgressStackInstancesCount
- * @property int $FailedStackInstancesCount
+ * @property int<0, max> $TotalStackInstancesCount
+ * @property int<0, max> $DriftedStackInstancesCount
+ * @property int<0, max> $InSyncStackInstancesCount
+ * @property int<0, max> $InProgressStackInstancesCount
+ * @property int<0, max> $FailedStackInstancesCount
  */
 class StackSetDriftDetectionDetails extends Shape
 {
@@ -21,11 +21,11 @@ class StackSetDriftDetectionDetails extends Shape
      *     DriftStatus?: 'DRIFTED'|'IN_SYNC'|'NOT_CHECKED',
      *     DriftDetectionStatus?: 'COMPLETED'|'FAILED'|'PARTIAL_SUCCESS'|'IN_PROGRESS'|'STOPPED',
      *     LastDriftCheckTimestamp?: \Aws\Api\DateTimeResult,
-     *     TotalStackInstancesCount?: int,
-     *     DriftedStackInstancesCount?: int,
-     *     InSyncStackInstancesCount?: int,
-     *     InProgressStackInstancesCount?: int,
-     *     FailedStackInstancesCount?: int
+     *     TotalStackInstancesCount?: int<0, max>,
+     *     DriftedStackInstancesCount?: int<0, max>,
+     *     InSyncStackInstancesCount?: int<0, max>,
+     *     InProgressStackInstancesCount?: int<0, max>,
+     *     FailedStackInstancesCount?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

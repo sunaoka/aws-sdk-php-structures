@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $keyspaceName
  */
 class ListTablesRequest extends Request
@@ -14,7 +14,7 @@ class ListTablesRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     keyspaceName: string
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ASSET' $targetResourceType
  * @property string $targetResourceId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class ListActionsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListActionsRequest extends Request
      *     targetResourceType: 'ASSET',
      *     targetResourceId: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args)

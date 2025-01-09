@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TargetPrincipal
  * @property Shapes\PolicyDescriptorType $TaskPolicyArn
- * @property int $DurationSeconds
+ * @property int<0, 900> $DurationSeconds
  */
 class AssumeRootRequest extends Request
 {
@@ -15,7 +15,7 @@ class AssumeRootRequest extends Request
      * @param array{
      *     TargetPrincipal: string,
      *     TaskPolicyArn: Shapes\PolicyDescriptorType,
-     *     DurationSeconds?: int
+     *     DurationSeconds?: int<0, 900>
      * } $args
      */
     public function __construct(array $args)

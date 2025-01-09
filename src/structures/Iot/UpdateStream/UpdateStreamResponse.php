@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $streamId
  * @property string $streamArn
  * @property string $description
- * @property int $streamVersion
+ * @property int<0, 65535> $streamVersion
  */
 class UpdateStreamResponse extends Response
 {

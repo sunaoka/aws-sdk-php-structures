@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $intentId
  * @property Shapes\SlotSortBy $sortBy
  * @property list<Shapes\SlotFilter> $filters
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListSlotsRequest extends Request
@@ -24,7 +24,7 @@ class ListSlotsRequest extends Request
      *     intentId: string,
      *     sortBy?: Shapes\SlotSortBy,
      *     filters?: list<Shapes\SlotFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ModelName
  * @property string $InferenceSchedulerName
- * @property int $DataDelayOffsetInMinutes
+ * @property int<0, 60> $DataDelayOffsetInMinutes
  * @property 'PT5M'|'PT10M'|'PT15M'|'PT30M'|'PT1H' $DataUploadFrequency
  * @property Shapes\InferenceInputConfiguration $DataInputConfiguration
  * @property Shapes\InferenceOutputConfiguration $DataOutputConfiguration
@@ -22,7 +22,7 @@ class CreateInferenceSchedulerRequest extends Request
      * @param array{
      *     ModelName: string,
      *     InferenceSchedulerName: string,
-     *     DataDelayOffsetInMinutes?: int,
+     *     DataDelayOffsetInMinutes?: int<0, 60>,
      *     DataUploadFrequency: 'PT5M'|'PT10M'|'PT15M'|'PT30M'|'PT1H',
      *     DataInputConfiguration: Shapes\InferenceInputConfiguration,
      *     DataOutputConfiguration: Shapes\InferenceOutputConfiguration,

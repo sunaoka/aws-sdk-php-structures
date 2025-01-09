@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $RegistrationTypes
  * @property list<Shapes\RegistrationTypeFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class DescribeRegistrationTypeDefinitionsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeRegistrationTypeDefinitionsRequest extends Request
      *     RegistrationTypes?: list<string>,
      *     Filters?: list<Shapes\RegistrationTypeFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

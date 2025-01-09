@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\TestExecutionSortBy $sortBy
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  */
 class ListTestExecutionsRequest extends Request
@@ -14,7 +14,7 @@ class ListTestExecutionsRequest extends Request
     /**
      * @param array{
      *     sortBy?: Shapes\TestExecutionSortBy,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

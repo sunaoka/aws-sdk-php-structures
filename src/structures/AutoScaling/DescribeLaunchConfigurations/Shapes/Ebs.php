@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SnapshotId
- * @property int $VolumeSize
+ * @property int<1, 16384> $VolumeSize
  * @property string $VolumeType
  * @property bool $DeleteOnTermination
- * @property int $Iops
+ * @property int<100, 20000> $Iops
  * @property bool $Encrypted
- * @property int $Throughput
+ * @property int<125, 1000> $Throughput
  */
 class Ebs extends Shape
 {
     /**
      * @param array{
      *     SnapshotId?: string,
-     *     VolumeSize?: int,
+     *     VolumeSize?: int<1, 16384>,
      *     VolumeType?: string,
      *     DeleteOnTermination?: bool,
-     *     Iops?: int,
+     *     Iops?: int<100, 20000>,
      *     Encrypted?: bool,
-     *     Throughput?: int
+     *     Throughput?: int<125, 1000>
      * } $args
      */
     public function __construct(array $args = [])

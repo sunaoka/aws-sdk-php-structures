@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'FOLLOW_IFRAME'|'FOLLOW_CUSTOM' $IntervalCadence
- * @property int $ThumbnailHeight
+ * @property int<2, 4096> $ThumbnailHeight
  * @property double $ThumbnailInterval
- * @property int $ThumbnailWidth
- * @property int $TileHeight
- * @property int $TileWidth
+ * @property int<8, 4096> $ThumbnailWidth
+ * @property int<1, 2048> $TileHeight
+ * @property int<1, 512> $TileWidth
  */
 class CmafImageBasedTrickPlaySettings extends Shape
 {
     /**
      * @param array{
      *     IntervalCadence?: 'FOLLOW_IFRAME'|'FOLLOW_CUSTOM',
-     *     ThumbnailHeight?: int,
+     *     ThumbnailHeight?: int<2, 4096>,
      *     ThumbnailInterval?: double,
-     *     ThumbnailWidth?: int,
-     *     TileHeight?: int,
-     *     TileWidth?: int
+     *     ThumbnailWidth?: int<8, 4096>,
+     *     TileHeight?: int<1, 2048>,
+     *     TileWidth?: int<1, 512>
      * } $args
      */
     public function __construct(array $args = [])

@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $project
  * @property string $randomizationSalt
  * @property bool $removeSegment
- * @property int $samplingRate
+ * @property int<0, 100000> $samplingRate
  * @property string $segment
  * @property list<Shapes\TreatmentConfig> $treatments
  */
@@ -27,7 +27,7 @@ class UpdateExperimentRequest extends Request
      *     project: string,
      *     randomizationSalt?: string,
      *     removeSegment?: bool,
-     *     samplingRate?: int,
+     *     samplingRate?: int<0, 100000>,
      *     segment?: string,
      *     treatments?: list<Shapes\TreatmentConfig>
      * } $args

@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $fleetIds
  * @property Shapes\SearchGroupedFilterExpressions $filterExpressions
  * @property list<Shapes\SearchSortExpression> $sortExpressions
- * @property int $itemOffset
- * @property int $pageSize
+ * @property int<0, 10000> $itemOffset
+ * @property int<1, 100> $pageSize
  */
 class SearchWorkersRequest extends Request
 {
@@ -20,8 +20,8 @@ class SearchWorkersRequest extends Request
      *     fleetIds: list<string>,
      *     filterExpressions?: Shapes\SearchGroupedFilterExpressions,
      *     sortExpressions?: list<Shapes\SearchSortExpression>,
-     *     itemOffset: int,
-     *     pageSize?: int
+     *     itemOffset: int<0, 10000>,
+     *     pageSize?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

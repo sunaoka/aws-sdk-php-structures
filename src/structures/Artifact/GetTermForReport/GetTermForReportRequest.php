@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $reportId
- * @property int $reportVersion
+ * @property int<1, max> $reportVersion
  */
 class GetTermForReportRequest extends Request
 {
     /**
      * @param array{
      *     reportId: string,
-     *     reportVersion?: int
+     *     reportVersion?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

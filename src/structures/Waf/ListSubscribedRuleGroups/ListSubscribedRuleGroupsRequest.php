@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextMarker
- * @property int $Limit
+ * @property int<0, 100> $Limit
  */
 class ListSubscribedRuleGroupsRequest extends Request
 {
     /**
      * @param array{
      *     NextMarker?: string,
-     *     Limit?: int
+     *     Limit?: int<0, 100>
      * } $args
      */
     public function __construct(array $args = [])

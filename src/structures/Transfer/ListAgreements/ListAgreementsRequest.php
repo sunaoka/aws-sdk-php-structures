@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Transfer\ListAgreements;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  * @property string $ServerId
  */
@@ -13,7 +13,7 @@ class ListAgreementsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string,
      *     ServerId: string
      * } $args

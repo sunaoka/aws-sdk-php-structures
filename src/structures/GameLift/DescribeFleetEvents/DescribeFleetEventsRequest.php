@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FleetId
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $NextToken
  */
 class DescribeFleetEventsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeFleetEventsRequest extends Request
      *     FleetId: string,
      *     StartTime?: \Aws\Api\DateTimeResult,
      *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

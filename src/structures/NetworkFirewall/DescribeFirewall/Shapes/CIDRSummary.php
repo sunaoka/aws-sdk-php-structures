@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\DescribeFirewall\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AvailableCIDRCount
- * @property int $UtilizedCIDRCount
+ * @property int<0, 1000000> $AvailableCIDRCount
+ * @property int<0, 1000000> $UtilizedCIDRCount
  * @property array<string, IPSetMetadata> $IPSetReferences
  */
 class CIDRSummary extends Shape
 {
     /**
      * @param array{
-     *     AvailableCIDRCount?: int,
-     *     UtilizedCIDRCount?: int,
+     *     AvailableCIDRCount?: int<0, 1000000>,
+     *     UtilizedCIDRCount?: int<0, 1000000>,
      *     IPSetReferences?: array<string, IPSetMetadata>
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $topic
  * @property int $payloadSize
- * @property int $qos
+ * @property int<0, 1> $qos
  * @property int $lastModifiedTime
  */
 class RetainedMessageSummary extends Shape
@@ -16,7 +16,7 @@ class RetainedMessageSummary extends Shape
      * @param array{
      *     topic?: string,
      *     payloadSize?: int,
-     *     qos?: int,
+     *     qos?: int<0, 1>,
      *     lastModifiedTime?: int
      * } $args
      */

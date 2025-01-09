@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StackName
  * @property string $UserName
  * @property 'API'|'SAML'|'USERPOOL'|'AWS_AD' $AuthenticationType
- * @property int $MaxResults
+ * @property int<0, 500> $MaxResults
  * @property string $NextToken
  */
 class DescribeUserStackAssociationsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeUserStackAssociationsRequest extends Request
      *     StackName?: string,
      *     UserName?: string,
      *     AuthenticationType?: 'API'|'SAML'|'USERPOOL'|'AWS_AD',
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 500>,
      *     NextToken?: string
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $metricName
  * @property string $queryString
  * @property Shapes\AggregationType $aggregationType
- * @property int $period
+ * @property int<60, 86400> $period
  * @property string $aggregationField
  * @property string $description
  * @property string $queryVersion

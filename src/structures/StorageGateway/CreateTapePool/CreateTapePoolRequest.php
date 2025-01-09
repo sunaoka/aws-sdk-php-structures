@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $PoolName
  * @property 'DEEP_ARCHIVE'|'GLACIER' $StorageClass
  * @property 'COMPLIANCE'|'GOVERNANCE'|'NONE' $RetentionLockType
- * @property int $RetentionLockTimeInDays
+ * @property int<0, 36500> $RetentionLockTimeInDays
  * @property list<Shapes\Tag> $Tags
  */
 class CreateTapePoolRequest extends Request
@@ -18,7 +18,7 @@ class CreateTapePoolRequest extends Request
      *     PoolName: string,
      *     StorageClass: 'DEEP_ARCHIVE'|'GLACIER',
      *     RetentionLockType?: 'COMPLIANCE'|'GOVERNANCE'|'NONE',
-     *     RetentionLockTimeInDays?: int,
+     *     RetentionLockTimeInDays?: int<0, 36500>,
      *     Tags?: list<Shapes\Tag>
      * } $args
      */

@@ -21,7 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double $MaxCapacity
  * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X' $WorkerType
  * @property int $NumberOfWorkers
- * @property int $Timeout
+ * @property int<1, max> $Timeout
  * @property int $MaxRetries
  * @property TransformEncryption $TransformEncryption
  */
@@ -45,7 +45,7 @@ class MLTransform extends Shape
      *     MaxCapacity?: double,
      *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X',
      *     NumberOfWorkers?: int,
-     *     Timeout?: int,
+     *     Timeout?: int<1, max>,
      *     MaxRetries?: int,
      *     TransformEncryption?: TransformEncryption
      * } $args

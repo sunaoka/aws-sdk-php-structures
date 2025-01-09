@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $definitionUri
  * @property string $main
  * @property array<string, Shapes\WorkflowParameter> $parameterTemplate
- * @property int $storageCapacity
+ * @property int<0, 100000> $storageCapacity
  * @property array<string, string> $tags
  * @property string $requestId
  * @property 'GPU' $accelerators
@@ -28,7 +28,7 @@ class CreateWorkflowRequest extends Request
      *     definitionUri?: string,
      *     main?: string,
      *     parameterTemplate?: array<string, Shapes\WorkflowParameter>,
-     *     storageCapacity?: int,
+     *     storageCapacity?: int<0, 100000>,
      *     tags?: array<string, string>,
      *     requestId: string,
      *     accelerators?: 'GPU'

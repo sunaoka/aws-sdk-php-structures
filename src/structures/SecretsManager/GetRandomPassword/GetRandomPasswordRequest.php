@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecretsManager\GetRandomPassword;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $PasswordLength
+ * @property int<1, 4096> $PasswordLength
  * @property string $ExcludeCharacters
  * @property bool $ExcludeNumbers
  * @property bool $ExcludePunctuation
@@ -18,7 +18,7 @@ class GetRandomPasswordRequest extends Request
 {
     /**
      * @param array{
-     *     PasswordLength?: int,
+     *     PasswordLength?: int<1, 4096>,
      *     ExcludeCharacters?: string,
      *     ExcludeNumbers?: bool,
      *     ExcludePunctuation?: bool,

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\ListSnapshotsInRecycleBin;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  * @property string $NextToken
  * @property list<string> $SnapshotIds
  * @property bool $DryRun
@@ -14,7 +14,7 @@ class ListSnapshotsInRecycleBinRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<5, 1000>,
      *     NextToken?: string,
      *     SnapshotIds?: list<string>,
      *     DryRun?: bool

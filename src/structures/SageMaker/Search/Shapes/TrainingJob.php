@@ -32,8 +32,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $EnableInterContainerTrafficEncryption
  * @property bool $EnableManagedSpotTraining
  * @property CheckpointConfig $CheckpointConfig
- * @property int $TrainingTimeInSeconds
- * @property int $BillableTimeInSeconds
+ * @property int<1, max> $TrainingTimeInSeconds
+ * @property int<1, max> $BillableTimeInSeconds
  * @property DebugHookConfig $DebugHookConfig
  * @property ExperimentConfig $ExperimentConfig
  * @property list<DebugRuleConfiguration> $DebugRuleConfigurations
@@ -75,8 +75,8 @@ class TrainingJob extends Shape
      *     EnableInterContainerTrafficEncryption?: bool,
      *     EnableManagedSpotTraining?: bool,
      *     CheckpointConfig?: CheckpointConfig,
-     *     TrainingTimeInSeconds?: int,
-     *     BillableTimeInSeconds?: int,
+     *     TrainingTimeInSeconds?: int<1, max>,
+     *     BillableTimeInSeconds?: int<1, max>,
      *     DebugHookConfig?: DebugHookConfig,
      *     ExperimentConfig?: ExperimentConfig,
      *     DebugRuleConfigurations?: list<DebugRuleConfiguration>,

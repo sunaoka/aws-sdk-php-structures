@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property Shapes\QuickConnectSearchFilter $SearchFilter
  * @property Shapes\QuickConnectSearchCriteria $SearchCriteria
  */
@@ -17,7 +17,7 @@ class SearchQuickConnectsRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     SearchFilter?: Shapes\QuickConnectSearchFilter,
      *     SearchCriteria?: Shapes\QuickConnectSearchCriteria
      * } $args

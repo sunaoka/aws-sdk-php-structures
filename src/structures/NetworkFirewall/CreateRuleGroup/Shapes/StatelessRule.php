@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property RuleDefinition $RuleDefinition
- * @property int $Priority
+ * @property int<1, 65535> $Priority
  */
 class StatelessRule extends Shape
 {
     /**
      * @param array{
      *     RuleDefinition: RuleDefinition,
-     *     Priority: int
+     *     Priority: int<1, 65535>
      * } $args
      */
     public function __construct(array $args)

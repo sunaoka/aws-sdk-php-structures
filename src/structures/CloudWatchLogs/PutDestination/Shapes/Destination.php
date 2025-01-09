@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $roleArn
  * @property string $accessPolicy
  * @property string $arn
- * @property int $creationTime
+ * @property int<0, max> $creationTime
  */
 class Destination extends Shape
 {
@@ -21,7 +21,7 @@ class Destination extends Shape
      *     roleArn?: string,
      *     accessPolicy?: string,
      *     arn?: string,
-     *     creationTime?: int
+     *     creationTime?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

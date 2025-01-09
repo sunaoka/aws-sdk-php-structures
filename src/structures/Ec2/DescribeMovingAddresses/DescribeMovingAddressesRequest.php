@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $PublicIps
  * @property string $NextToken
  * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
+ * @property int<5, 1000> $MaxResults
  */
 class DescribeMovingAddressesRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeMovingAddressesRequest extends Request
      *     PublicIps?: list<string>,
      *     NextToken?: string,
      *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int
+     *     MaxResults?: int<5, 1000>
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Rekognition\StartStreamProcessor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ProducerTimestamp
+ * @property int<0, max> $ProducerTimestamp
  * @property string $FragmentNumber
  */
 class KinesisVideoStreamStartSelector extends Shape
 {
     /**
      * @param array{
-     *     ProducerTimestamp?: int,
+     *     ProducerTimestamp?: int<0, max>,
      *     FragmentNumber?: string
      * } $args
      */

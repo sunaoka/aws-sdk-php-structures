@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $EndDate
  * @property MessageInsightsFilters $Include
  * @property MessageInsightsFilters $Exclude
- * @property int $MaxResults
+ * @property int<1, 10000> $MaxResults
  */
 class MessageInsightsDataSource extends Shape
 {
@@ -19,7 +19,7 @@ class MessageInsightsDataSource extends Shape
      *     EndDate: \Aws\Api\DateTimeResult,
      *     Include?: MessageInsightsFilters,
      *     Exclude?: MessageInsightsFilters,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 10000>
      * } $args
      */
     public function __construct(array $args)

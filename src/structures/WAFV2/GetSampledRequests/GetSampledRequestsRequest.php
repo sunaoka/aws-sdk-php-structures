@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RuleMetricName
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
  * @property Shapes\TimeWindow $TimeWindow
- * @property int $MaxItems
+ * @property int<1, 500> $MaxItems
  */
 class GetSampledRequestsRequest extends Request
 {
@@ -19,7 +19,7 @@ class GetSampledRequestsRequest extends Request
      *     RuleMetricName: string,
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
      *     TimeWindow: Shapes\TimeWindow,
-     *     MaxItems: int
+     *     MaxItems: int<1, 500>
      * } $args
      */
     public function __construct(array $args)

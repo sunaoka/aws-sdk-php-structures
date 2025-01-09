@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $afterTimestamp
  * @property \Aws\Api\DateTimeResult $beforeTimestamp
  * @property string $domainIdentifier
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nextToken
  * @property list<string> $subjects
  * @property 'ACTIVE'|'INACTIVE' $taskStatus
@@ -21,7 +21,7 @@ class ListNotificationsRequest extends Request
      *     afterTimestamp?: \Aws\Api\DateTimeResult,
      *     beforeTimestamp?: \Aws\Api\DateTimeResult,
      *     domainIdentifier: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nextToken?: string,
      *     subjects?: list<string>,
      *     taskStatus?: 'ACTIVE'|'INACTIVE',

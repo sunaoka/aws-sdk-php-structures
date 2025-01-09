@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InsightId
  * @property Shapes\StartTimeRange $StartTimeRange
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  * @property string $AccountId
  * @property Shapes\ListAnomaliesForInsightFilters $Filters
@@ -18,7 +18,7 @@ class ListAnomaliesForInsightRequest extends Request
      * @param array{
      *     InsightId: string,
      *     StartTimeRange?: Shapes\StartTimeRange,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string,
      *     AccountId?: string,
      *     Filters?: Shapes\ListAnomaliesForInsightFilters

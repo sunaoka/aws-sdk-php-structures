@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $NetworkId
  * @property string $MemberId
  * @property 'CREATING'|'AVAILABLE'|'UNHEALTHY'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'FAILED'|'INACCESSIBLE_ENCRYPTION_KEY' $Status
- * @property int $MaxResults
+ * @property int<1, 20> $MaxResults
  * @property string $NextToken
  */
 class ListNodesRequest extends Request
@@ -18,7 +18,7 @@ class ListNodesRequest extends Request
      *     NetworkId: string,
      *     MemberId?: string,
      *     Status?: 'CREATING'|'AVAILABLE'|'UNHEALTHY'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'FAILED'|'INACCESSIBLE_ENCRYPTION_KEY',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 20>,
      *     NextToken?: string
      * } $args
      */

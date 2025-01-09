@@ -14,8 +14,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $LastModifiedBy
  * @property \Aws\Api\DateTimeResult $LastActivatedTime
  * @property string $LastActivatedBy
- * @property int $LatestVersion
- * @property int $ActiveVersion
+ * @property int<1, max> $LatestVersion
+ * @property int<1, max> $ActiveVersion
  */
 class EvaluationFormSummary extends Shape
 {
@@ -30,8 +30,8 @@ class EvaluationFormSummary extends Shape
      *     LastModifiedBy: string,
      *     LastActivatedTime?: \Aws\Api\DateTimeResult,
      *     LastActivatedBy?: string,
-     *     LatestVersion: int,
-     *     ActiveVersion?: int
+     *     LatestVersion: int<1, max>,
+     *     ActiveVersion?: int<1, max>
      * } $args
      */
     public function __construct(array $args)

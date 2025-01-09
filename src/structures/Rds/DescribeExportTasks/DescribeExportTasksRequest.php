@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourceArn
  * @property list<Shapes\Filter> $Filters
  * @property string $Marker
- * @property int $MaxRecords
+ * @property int<20, 100> $MaxRecords
  * @property 'SNAPSHOT'|'CLUSTER' $SourceType
  */
 class DescribeExportTasksRequest extends Request
@@ -20,7 +20,7 @@ class DescribeExportTasksRequest extends Request
      *     SourceArn?: string,
      *     Filters?: list<Shapes\Filter>,
      *     Marker?: string,
-     *     MaxRecords?: int,
+     *     MaxRecords?: int<20, 100>,
      *     SourceType?: 'SNAPSHOT'|'CLUSTER'
      * } $args
      */

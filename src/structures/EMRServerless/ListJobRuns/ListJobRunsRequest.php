@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $applicationId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property \Aws\Api\DateTimeResult $createdAtAfter
  * @property \Aws\Api\DateTimeResult $createdAtBefore
  * @property list<'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED'|'QUEUED'> $states
@@ -19,7 +19,7 @@ class ListJobRunsRequest extends Request
      * @param array{
      *     applicationId: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     createdAtAfter?: \Aws\Api\DateTimeResult,
      *     createdAtBefore?: \Aws\Api\DateTimeResult,
      *     states?: list<'SUBMITTED'|'PENDING'|'SCHEDULED'|'RUNNING'|'SUCCESS'|'FAILED'|'CANCELLING'|'CANCELLED'|'QUEUED'>,

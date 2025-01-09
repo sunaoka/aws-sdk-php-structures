@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ConfirmationStatusFilter $confirmationStatusFilter
  * @property Shapes\ListFilteredTransactionEventsSort $sort
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 250> $maxResults
  */
 class ListFilteredTransactionEventsRequest extends Request
 {
@@ -25,7 +25,7 @@ class ListFilteredTransactionEventsRequest extends Request
      *     confirmationStatusFilter?: Shapes\ConfirmationStatusFilter,
      *     sort?: Shapes\ListFilteredTransactionEventsSort,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 250>
      * } $args
      */
     public function __construct(array $args)

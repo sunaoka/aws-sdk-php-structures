@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $metricName
  * @property string $queryString
  * @property Shapes\AggregationType $aggregationType
- * @property int $period
+ * @property int<60, 86400> $period
  * @property string $aggregationField
  * @property string $description
  * @property string $queryVersion
@@ -23,7 +23,7 @@ class UpdateFleetMetricRequest extends Request
      *     metricName: string,
      *     queryString?: string,
      *     aggregationType?: Shapes\AggregationType,
-     *     period?: int,
+     *     period?: int<60, 86400>,
      *     aggregationField?: string,
      *     description?: string,
      *     queryVersion?: string,

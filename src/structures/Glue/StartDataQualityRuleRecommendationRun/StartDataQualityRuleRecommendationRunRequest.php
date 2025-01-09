@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\DataSource $DataSource
  * @property string $Role
  * @property int $NumberOfWorkers
- * @property int $Timeout
+ * @property int<1, max> $Timeout
  * @property string $CreatedRulesetName
  * @property string $DataQualitySecurityConfiguration
  * @property string $ClientToken
@@ -20,7 +20,7 @@ class StartDataQualityRuleRecommendationRunRequest extends Request
      *     DataSource: Shapes\DataSource,
      *     Role: string,
      *     NumberOfWorkers?: int,
-     *     Timeout?: int,
+     *     Timeout?: int<1, max>,
      *     CreatedRulesetName?: string,
      *     DataQualitySecurityConfiguration?: string,
      *     ClientToken?: string

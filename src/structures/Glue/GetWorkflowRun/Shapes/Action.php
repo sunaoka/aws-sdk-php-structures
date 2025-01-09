@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $JobName
  * @property array<string, string> $Arguments
- * @property int $Timeout
+ * @property int<1, max> $Timeout
  * @property string $SecurityConfiguration
  * @property NotificationProperty $NotificationProperty
  * @property string $CrawlerName
@@ -18,7 +18,7 @@ class Action extends Shape
      * @param array{
      *     JobName?: string,
      *     Arguments?: array<string, string>,
-     *     Timeout?: int,
+     *     Timeout?: int<1, max>,
      *     SecurityConfiguration?: string,
      *     NotificationProperty?: NotificationProperty,
      *     CrawlerName?: string

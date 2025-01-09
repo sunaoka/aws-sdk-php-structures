@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool $dailyReportsOnly
  * @property \Aws\Api\DateTimeResult $endTime
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property string $profilingGroupName
  * @property \Aws\Api\DateTimeResult $startTime
@@ -18,7 +18,7 @@ class ListFindingsReportsRequest extends Request
      * @param array{
      *     dailyReportsOnly?: bool,
      *     endTime: \Aws\Api\DateTimeResult,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     profilingGroupName: string,
      *     startTime: \Aws\Api\DateTimeResult

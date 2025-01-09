@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\EventsDetectionJobFilter $Filter
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  */
 class ListEventsDetectionJobsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListEventsDetectionJobsRequest extends Request
      * @param array{
      *     Filter?: Shapes\EventsDetectionJobFilter,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 500>
      * } $args
      */
     public function __construct(array $args = [])

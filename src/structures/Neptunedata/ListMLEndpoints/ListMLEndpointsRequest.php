@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Neptunedata\ListMLEndpoints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxItems
+ * @property int<1, 1024> $maxItems
  * @property string $neptuneIamRoleArn
  */
 class ListMLEndpointsRequest extends Request
 {
     /**
      * @param array{
-     *     maxItems?: int,
+     *     maxItems?: int<1, 1024>,
      *     neptuneIamRoleArn?: string
      * } $args
      */

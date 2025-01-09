@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\GetConnectionsFilter $Filter
  * @property bool $HidePassword
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  */
 class GetConnectionsRequest extends Request
 {
@@ -19,7 +19,7 @@ class GetConnectionsRequest extends Request
      *     Filter?: Shapes\GetConnectionsFilter,
      *     HidePassword?: bool,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceId
  * @property string $UserId
  * @property bool $IncludeIndirectActivities
- * @property int $Limit
+ * @property int<1, 999> $Limit
  * @property string $Marker
  */
 class DescribeActivitiesRequest extends Request
@@ -28,7 +28,7 @@ class DescribeActivitiesRequest extends Request
      *     ResourceId?: string,
      *     UserId?: string,
      *     IncludeIndirectActivities?: bool,
-     *     Limit?: int,
+     *     Limit?: int<1, 999>,
      *     Marker?: string
      * } $args
      */

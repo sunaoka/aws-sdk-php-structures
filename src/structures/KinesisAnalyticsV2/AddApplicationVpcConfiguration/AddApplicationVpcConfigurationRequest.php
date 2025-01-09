@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property int $CurrentApplicationVersionId
+ * @property int<1, 999999999> $CurrentApplicationVersionId
  * @property Shapes\VpcConfiguration $VpcConfiguration
  * @property string $ConditionalToken
  */
@@ -15,7 +15,7 @@ class AddApplicationVpcConfigurationRequest extends Request
     /**
      * @param array{
      *     ApplicationName: string,
-     *     CurrentApplicationVersionId?: int,
+     *     CurrentApplicationVersionId?: int<1, 999999999>,
      *     VpcConfiguration: Shapes\VpcConfiguration,
      *     ConditionalToken?: string
      * } $args

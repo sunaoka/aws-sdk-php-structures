@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Color
- * @property int $Thickness
+ * @property int<1, 4> $Thickness
  * @property 'NONE'|'SOLID' $Style
  */
 class TableBorderOptions extends Shape
@@ -14,7 +14,7 @@ class TableBorderOptions extends Shape
     /**
      * @param array{
      *     Color?: string,
-     *     Thickness?: int,
+     *     Thickness?: int<1, 4>,
      *     Style?: 'NONE'|'SOLID'
      * } $args
      */

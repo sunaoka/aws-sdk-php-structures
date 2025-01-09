@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'ALLOW'|'DENY' $DefaultAction
- * @property int $MaxMessageSizeBytes
+ * @property int<1, max> $MaxMessageSizeBytes
  * @property list<Shapes\PolicyStatement> $PolicyStatements
  * @property string $TrafficPolicyId
  * @property string $TrafficPolicyName
@@ -16,7 +16,7 @@ class UpdateTrafficPolicyRequest extends Request
     /**
      * @param array{
      *     DefaultAction?: 'ALLOW'|'DENY',
-     *     MaxMessageSizeBytes?: int,
+     *     MaxMessageSizeBytes?: int<1, max>,
      *     PolicyStatements?: list<Shapes\PolicyStatement>,
      *     TrafficPolicyId: string,
      *     TrafficPolicyName?: string

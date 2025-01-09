@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetPortfoli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $licenseCostReduction
- * @property int $modernizeInfrastructureWithCloudNativeTechnologies
- * @property int $reduceOperationalOverheadWithManagedServices
- * @property int $speedOfMigration
+ * @property int<1, 5> $licenseCostReduction
+ * @property int<1, 5> $modernizeInfrastructureWithCloudNativeTechnologies
+ * @property int<1, 5> $reduceOperationalOverheadWithManagedServices
+ * @property int<1, 5> $speedOfMigration
  */
 class BusinessGoals extends Shape
 {
     /**
      * @param array{
-     *     licenseCostReduction?: int,
-     *     modernizeInfrastructureWithCloudNativeTechnologies?: int,
-     *     reduceOperationalOverheadWithManagedServices?: int,
-     *     speedOfMigration?: int
+     *     licenseCostReduction?: int<1, 5>,
+     *     modernizeInfrastructureWithCloudNativeTechnologies?: int<1, 5>,
+     *     reduceOperationalOverheadWithManagedServices?: int<1, 5>,
+     *     speedOfMigration?: int<1, 5>
      * } $args
      */
     public function __construct(array $args = [])

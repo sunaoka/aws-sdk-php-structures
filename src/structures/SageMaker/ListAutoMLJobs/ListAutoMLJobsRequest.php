@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping' $StatusEquals
  * @property 'Ascending'|'Descending' $SortOrder
  * @property 'Name'|'CreationTime'|'Status' $SortBy
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class ListAutoMLJobsRequest extends Request
@@ -28,7 +28,7 @@ class ListAutoMLJobsRequest extends Request
      *     StatusEquals?: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping',
      *     SortOrder?: 'Ascending'|'Descending',
      *     SortBy?: 'Name'|'CreationTime'|'Status',
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

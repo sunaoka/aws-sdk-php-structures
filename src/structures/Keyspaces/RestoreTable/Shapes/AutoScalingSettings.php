@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $autoScalingDisabled
- * @property int $minimumUnits
- * @property int $maximumUnits
+ * @property int<1, max> $minimumUnits
+ * @property int<1, max> $maximumUnits
  * @property AutoScalingPolicy $scalingPolicy
  */
 class AutoScalingSettings extends Shape
@@ -15,8 +15,8 @@ class AutoScalingSettings extends Shape
     /**
      * @param array{
      *     autoScalingDisabled?: bool,
-     *     minimumUnits?: int,
-     *     maximumUnits?: int,
+     *     minimumUnits?: int<1, max>,
+     *     maximumUnits?: int<1, max>,
      *     scalingPolicy?: AutoScalingPolicy
      * } $args
      */

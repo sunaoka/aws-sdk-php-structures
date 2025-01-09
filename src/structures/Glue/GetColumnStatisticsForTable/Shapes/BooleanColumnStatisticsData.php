@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\GetColumnStatisticsForTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NumberOfTrues
- * @property int $NumberOfFalses
- * @property int $NumberOfNulls
+ * @property int<0, max> $NumberOfTrues
+ * @property int<0, max> $NumberOfFalses
+ * @property int<0, max> $NumberOfNulls
  */
 class BooleanColumnStatisticsData extends Shape
 {
     /**
      * @param array{
-     *     NumberOfTrues: int,
-     *     NumberOfFalses: int,
-     *     NumberOfNulls: int
+     *     NumberOfTrues: int<0, max>,
+     *     NumberOfFalses: int<0, max>,
+     *     NumberOfNulls: int<0, max>
      * } $args
      */
     public function __construct(array $args)

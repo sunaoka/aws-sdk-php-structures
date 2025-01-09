@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $httpTokens
- * @property int $httpPutResponseHopLimit
+ * @property int<1, 64> $httpPutResponseHopLimit
  */
 class InstanceMetadataOptions extends Shape
 {
     /**
      * @param array{
      *     httpTokens?: string,
-     *     httpPutResponseHopLimit?: int
+     *     httpPutResponseHopLimit?: int<1, 64>
      * } $args
      */
     public function __construct(array $args = [])

@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\EncryptionSpecification $encryptionSpecification
  * @property Shapes\PointInTimeRecoverySummary $pointInTimeRecovery
  * @property Shapes\TimeToLive $ttl
- * @property int $defaultTimeToLive
+ * @property int<0, 630720000> $defaultTimeToLive
  * @property Shapes\Comment $comment
  * @property Shapes\ClientSideTimestamps $clientSideTimestamps
  * @property list<Shapes\ReplicaSpecificationSummary> $replicaSpecifications

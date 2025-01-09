@@ -10,12 +10,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'ENABLE'|'DISABLE' $LogSubscription
  * @property int $MaxCapacity
- * @property int $MaxRetries
+ * @property int<0, max> $MaxRetries
  * @property list<Shapes\Output> $Outputs
  * @property list<Shapes\DataCatalogOutput> $DataCatalogOutputs
  * @property list<Shapes\DatabaseOutput> $DatabaseOutputs
  * @property string $RoleArn
- * @property int $Timeout
+ * @property int<0, max> $Timeout
  */
 class UpdateRecipeJobRequest extends Request
 {
@@ -26,12 +26,12 @@ class UpdateRecipeJobRequest extends Request
      *     Name: string,
      *     LogSubscription?: 'ENABLE'|'DISABLE',
      *     MaxCapacity?: int,
-     *     MaxRetries?: int,
+     *     MaxRetries?: int<0, max>,
      *     Outputs?: list<Shapes\Output>,
      *     DataCatalogOutputs?: list<Shapes\DataCatalogOutput>,
      *     DatabaseOutputs?: list<Shapes\DatabaseOutput>,
      *     RoleArn: string,
-     *     Timeout?: int
+     *     Timeout?: int<0, max>
      * } $args
      */
     public function __construct(array $args)

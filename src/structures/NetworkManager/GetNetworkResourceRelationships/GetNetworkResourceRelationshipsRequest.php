@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $ResourceType
  * @property string $ResourceArn
- * @property int $MaxResults
+ * @property int<1, 500> $MaxResults
  * @property string $NextToken
  */
 class GetNetworkResourceRelationshipsRequest extends Request
@@ -26,7 +26,7 @@ class GetNetworkResourceRelationshipsRequest extends Request
      *     AccountId?: string,
      *     ResourceType?: string,
      *     ResourceArn?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 500>,
      *     NextToken?: string
      * } $args
      */

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $nameContains
  * @property string $baseModelArnEquals
  * @property string $foundationModelArnEquals
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property 'CreationTime' $sortBy
  * @property 'Ascending'|'Descending' $sortOrder
@@ -25,7 +25,7 @@ class ListCustomModelsRequest extends Request
      *     nameContains?: string,
      *     baseModelArnEquals?: string,
      *     foundationModelArnEquals?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     sortBy?: 'CreationTime',
      *     sortOrder?: 'Ascending'|'Descending',

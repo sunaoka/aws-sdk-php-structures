@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\PatchOrchestratorFilter> $Filters
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeAvailablePatchesRequest extends Request
@@ -14,7 +14,7 @@ class DescribeAvailablePatchesRequest extends Request
     /**
      * @param array{
      *     Filters?: list<Shapes\PatchOrchestratorFilter>,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

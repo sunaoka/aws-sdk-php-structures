@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property \Aws\Api\DateTimeResult $endTime
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property 'TimestampDescending'|'TimestampAscending' $orderBy
  * @property 'PT5M'|'PT1H'|'P1D' $period
@@ -18,7 +18,7 @@ class ListProfileTimesRequest extends Request
     /**
      * @param array{
      *     endTime: \Aws\Api\DateTimeResult,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     orderBy?: 'TimestampDescending'|'TimestampAscending',
      *     period: 'PT5M'|'PT1H'|'P1D',

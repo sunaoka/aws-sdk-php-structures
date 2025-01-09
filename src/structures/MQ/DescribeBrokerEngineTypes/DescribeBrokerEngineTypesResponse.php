@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\BrokerEngineType> $BrokerEngineTypes
- * @property int $MaxResults
+ * @property int<5, 100> $MaxResults
  * @property string $NextToken
  */
 class DescribeBrokerEngineTypesResponse extends Response

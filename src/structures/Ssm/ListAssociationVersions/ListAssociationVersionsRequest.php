@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AssociationId
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class ListAssociationVersionsRequest extends Request
@@ -14,7 +14,7 @@ class ListAssociationVersionsRequest extends Request
     /**
      * @param array{
      *     AssociationId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

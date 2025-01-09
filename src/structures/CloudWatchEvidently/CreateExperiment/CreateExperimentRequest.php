@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\OnlineAbConfig $onlineAbConfig
  * @property string $project
  * @property string $randomizationSalt
- * @property int $samplingRate
+ * @property int<0, 100000> $samplingRate
  * @property string $segment
  * @property array<string, string> $tags
  * @property list<Shapes\TreatmentConfig> $treatments
@@ -26,7 +26,7 @@ class CreateExperimentRequest extends Request
      *     onlineAbConfig?: Shapes\OnlineAbConfig,
      *     project: string,
      *     randomizationSalt?: string,
-     *     samplingRate?: int,
+     *     samplingRate?: int<0, 100000>,
      *     segment?: string,
      *     tags?: array<string, string>,
      *     treatments: list<Shapes\TreatmentConfig>

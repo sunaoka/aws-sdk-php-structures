@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<'FORMS'|'TIME_SERIES_DATA_POINT_FORMS'> $additionalAttributes
  * @property string $domainIdentifier
  * @property Shapes\FilterClause $filters
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $nextToken
  * @property string $owningProjectIdentifier
  * @property list<Shapes\SearchInItem> $searchIn
@@ -23,7 +23,7 @@ class SearchRequest extends Request
      *     additionalAttributes?: list<'FORMS'|'TIME_SERIES_DATA_POINT_FORMS'>,
      *     domainIdentifier: string,
      *     filters?: Shapes\FilterClause,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     nextToken?: string,
      *     owningProjectIdentifier?: string,
      *     searchIn?: list<Shapes\SearchInItem>,

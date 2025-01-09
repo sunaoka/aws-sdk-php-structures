@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $EbsOptimized
  * @property \Aws\Api\DateTimeResult $CreateDate
  * @property double $Weight
- * @property int $Priority
+ * @property int<0, max> $Priority
  */
 class FleetCapacityReservation extends Shape
 {
@@ -31,7 +31,7 @@ class FleetCapacityReservation extends Shape
      *     EbsOptimized?: bool,
      *     CreateDate?: \Aws\Api\DateTimeResult,
      *     Weight?: double,
-     *     Priority?: int
+     *     Priority?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

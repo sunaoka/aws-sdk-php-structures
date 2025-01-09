@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $InferenceSchedulerName
  * @property string $InferenceSchedulerArn
  * @property 'PENDING'|'RUNNING'|'STOPPING'|'STOPPED' $Status
- * @property int $DataDelayOffsetInMinutes
+ * @property int<0, 60> $DataDelayOffsetInMinutes
  * @property 'PT5M'|'PT10M'|'PT15M'|'PT30M'|'PT1H' $DataUploadFrequency
  * @property 'ANOMALOUS'|'NORMAL' $LatestInferenceResult
  */
@@ -23,7 +23,7 @@ class InferenceSchedulerSummary extends Shape
      *     InferenceSchedulerName?: string,
      *     InferenceSchedulerArn?: string,
      *     Status?: 'PENDING'|'RUNNING'|'STOPPING'|'STOPPED',
-     *     DataDelayOffsetInMinutes?: int,
+     *     DataDelayOffsetInMinutes?: int<0, 60>,
      *     DataUploadFrequency?: 'PT5M'|'PT10M'|'PT15M'|'PT30M'|'PT1H',
      *     LatestInferenceResult?: 'ANOMALOUS'|'NORMAL'
      * } $args

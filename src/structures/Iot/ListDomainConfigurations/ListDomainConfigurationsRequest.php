@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $marker
- * @property int $pageSize
+ * @property int<1, 250> $pageSize
  * @property 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS' $serviceType
  */
 class ListDomainConfigurationsRequest extends Request
@@ -14,7 +14,7 @@ class ListDomainConfigurationsRequest extends Request
     /**
      * @param array{
      *     marker?: string,
-     *     pageSize?: int,
+     *     pageSize?: int<1, 250>,
      *     serviceType?: 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS'
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DomainName
  * @property string $IdnLangCode
- * @property int $DurationInYears
+ * @property int<1, 10> $DurationInYears
  * @property list<Shapes\Nameserver> $Nameservers
  * @property string $AuthCode
  * @property bool $AutoRenew
@@ -26,7 +26,7 @@ class TransferDomainRequest extends Request
      * @param array{
      *     DomainName: string,
      *     IdnLangCode?: string,
-     *     DurationInYears: int,
+     *     DurationInYears: int<1, 10>,
      *     Nameservers?: list<Shapes\Nameserver>,
      *     AuthCode?: string,
      *     AutoRenew?: bool,

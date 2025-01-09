@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $ContactFlowArn
- * @property int $Version
+ * @property int<1, max> $Version
  */
 class CreateContactFlowVersionResponse extends Response
 {

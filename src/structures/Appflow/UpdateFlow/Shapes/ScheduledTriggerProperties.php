@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $scheduleStartTime
  * @property \Aws\Api\DateTimeResult $scheduleEndTime
  * @property string $timezone
- * @property int $scheduleOffset
+ * @property int<0, 36000> $scheduleOffset
  * @property \Aws\Api\DateTimeResult $firstExecutionFrom
- * @property int $flowErrorDeactivationThreshold
+ * @property int<1, 100> $flowErrorDeactivationThreshold
  */
 class ScheduledTriggerProperties extends Shape
 {
@@ -23,9 +23,9 @@ class ScheduledTriggerProperties extends Shape
      *     scheduleStartTime?: \Aws\Api\DateTimeResult,
      *     scheduleEndTime?: \Aws\Api\DateTimeResult,
      *     timezone?: string,
-     *     scheduleOffset?: int,
+     *     scheduleOffset?: int<0, 36000>,
      *     firstExecutionFrom?: \Aws\Api\DateTimeResult,
-     *     flowErrorDeactivationThreshold?: int
+     *     flowErrorDeactivationThreshold?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

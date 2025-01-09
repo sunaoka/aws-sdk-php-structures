@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Description
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $LastUpdatedAt
- * @property int $MaxProfileObjectCount
- * @property int $MaxAvailableProfileObjectCount
+ * @property int<1, max> $MaxProfileObjectCount
+ * @property int<0, max> $MaxAvailableProfileObjectCount
  * @property array<string, string> $Tags
  */
 class ListProfileObjectTypeItem extends Shape
@@ -21,8 +21,8 @@ class ListProfileObjectTypeItem extends Shape
      *     Description: string,
      *     CreatedAt?: \Aws\Api\DateTimeResult,
      *     LastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     MaxProfileObjectCount?: int,
-     *     MaxAvailableProfileObjectCount?: int,
+     *     MaxProfileObjectCount?: int<1, max>,
+     *     MaxAvailableProfileObjectCount?: int<0, max>,
      *     Tags?: array<string, string>
      * } $args
      */

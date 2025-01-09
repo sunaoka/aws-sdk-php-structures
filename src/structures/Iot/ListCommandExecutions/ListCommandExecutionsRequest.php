@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iot\ListCommandExecutions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property 'AWS-IoT'|'AWS-IoT-FleetWise' $namespace
  * @property 'CREATED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'REJECTED'|'TIMED_OUT' $status
@@ -19,7 +19,7 @@ class ListCommandExecutionsRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     namespace?: 'AWS-IoT'|'AWS-IoT-FleetWise',
      *     status?: 'CREATED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'REJECTED'|'TIMED_OUT',

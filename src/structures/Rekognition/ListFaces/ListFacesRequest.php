@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CollectionId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<0, 4096> $MaxResults
  * @property string $UserId
  * @property list<string> $FaceIds
  */
@@ -17,7 +17,7 @@ class ListFacesRequest extends Request
      * @param array{
      *     CollectionId: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<0, 4096>,
      *     UserId?: string,
      *     FaceIds?: list<string>
      * } $args

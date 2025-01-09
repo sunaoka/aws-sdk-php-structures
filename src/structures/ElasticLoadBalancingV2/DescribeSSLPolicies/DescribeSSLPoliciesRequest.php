@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $Names
  * @property string $Marker
- * @property int $PageSize
+ * @property int<1, 400> $PageSize
  * @property 'application'|'network'|'gateway' $LoadBalancerType
  */
 class DescribeSSLPoliciesRequest extends Request
@@ -16,7 +16,7 @@ class DescribeSSLPoliciesRequest extends Request
      * @param array{
      *     Names?: list<string>,
      *     Marker?: string,
-     *     PageSize?: int,
+     *     PageSize?: int<1, 400>,
      *     LoadBalancerType?: 'application'|'network'|'gateway'
      * } $args
      */

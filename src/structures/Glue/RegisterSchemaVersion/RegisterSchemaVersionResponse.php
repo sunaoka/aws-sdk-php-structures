@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $SchemaVersionId
- * @property int $VersionNumber
+ * @property int<1, 100000> $VersionNumber
  * @property 'AVAILABLE'|'PENDING'|'FAILURE'|'DELETING' $Status
  */
 class RegisterSchemaVersionResponse extends Response

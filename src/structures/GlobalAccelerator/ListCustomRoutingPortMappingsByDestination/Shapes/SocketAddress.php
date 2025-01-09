@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $IpAddress
- * @property int $Port
+ * @property int<1, 65535> $Port
  */
 class SocketAddress extends Shape
 {
     /**
      * @param array{
      *     IpAddress?: string,
-     *     Port?: int
+     *     Port?: int<1, 65535>
      * } $args
      */
     public function __construct(array $args = [])

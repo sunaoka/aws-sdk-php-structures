@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $BillingPeriod
  * @property string $Arn
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  * @property Shapes\ListResourcesAssociatedToCustomLineItemFilter $Filters
  */
@@ -17,7 +17,7 @@ class ListResourcesAssociatedToCustomLineItemRequest extends Request
      * @param array{
      *     BillingPeriod?: string,
      *     Arn: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string,
      *     Filters?: Shapes\ListResourcesAssociatedToCustomLineItemFilter
      * } $args

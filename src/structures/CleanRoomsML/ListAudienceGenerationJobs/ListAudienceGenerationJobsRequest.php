@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $configuredAudienceModelArn
  * @property string $collaborationId
  */
@@ -15,7 +15,7 @@ class ListAudienceGenerationJobsRequest extends Request
     /**
      * @param array{
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     configuredAudienceModelArn?: string,
      *     collaborationId?: string
      * } $args

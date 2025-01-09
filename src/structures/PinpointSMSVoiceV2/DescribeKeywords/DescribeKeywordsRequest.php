@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $Keywords
  * @property list<Shapes\KeywordFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class DescribeKeywordsRequest extends Request
 {
@@ -19,7 +19,7 @@ class DescribeKeywordsRequest extends Request
      *     Keywords?: list<string>,
      *     Filters?: list<Shapes\KeywordFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

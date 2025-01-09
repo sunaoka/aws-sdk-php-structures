@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\AIGuardrailData $aiGuardrail
- * @property int $versionNumber
+ * @property int<1, max> $versionNumber
  */
 class CreateAIGuardrailVersionResponse extends Response
 {

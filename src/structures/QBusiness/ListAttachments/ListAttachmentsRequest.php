@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $conversationId
  * @property string $userId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  */
 class ListAttachmentsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListAttachmentsRequest extends Request
      *     conversationId?: string,
      *     userId?: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args)

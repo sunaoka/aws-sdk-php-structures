@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo' $format
  * @property string $namespace
  * @property string $packagePrefix
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  * @property string $nextToken
  * @property 'ALLOW'|'BLOCK' $publish
  * @property 'ALLOW'|'BLOCK' $upstream
@@ -26,7 +26,7 @@ class ListPackagesRequest extends Request
      *     format?: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo',
      *     namespace?: string,
      *     packagePrefix?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 1000>,
      *     nextToken?: string,
      *     publish?: 'ALLOW'|'BLOCK',
      *     upstream?: 'ALLOW'|'BLOCK'

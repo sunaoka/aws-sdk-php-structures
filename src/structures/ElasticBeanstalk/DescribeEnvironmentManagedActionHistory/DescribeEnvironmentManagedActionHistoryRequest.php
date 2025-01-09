@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EnvironmentId
  * @property string $EnvironmentName
  * @property string $NextToken
- * @property int $MaxItems
+ * @property int<1, 100> $MaxItems
  */
 class DescribeEnvironmentManagedActionHistoryRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeEnvironmentManagedActionHistoryRequest extends Request
      *     EnvironmentId?: string,
      *     EnvironmentName?: string,
      *     NextToken?: string,
-     *     MaxItems?: int
+     *     MaxItems?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

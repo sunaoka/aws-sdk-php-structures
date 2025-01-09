@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ListenerArn
  * @property string $Marker
- * @property int $PageSize
+ * @property int<1, 400> $PageSize
  */
 class DescribeListenerCertificatesRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeListenerCertificatesRequest extends Request
      * @param array{
      *     ListenerArn: string,
      *     Marker?: string,
-     *     PageSize?: int
+     *     PageSize?: int<1, 400>
      * } $args
      */
     public function __construct(array $args)

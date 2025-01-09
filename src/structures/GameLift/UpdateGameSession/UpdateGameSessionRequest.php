@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GameSessionId
- * @property int $MaximumPlayerSessionCount
+ * @property int<0, max> $MaximumPlayerSessionCount
  * @property string $Name
  * @property 'ACCEPT_ALL'|'DENY_ALL' $PlayerSessionCreationPolicy
  * @property 'NoProtection'|'FullProtection' $ProtectionPolicy
@@ -17,7 +17,7 @@ class UpdateGameSessionRequest extends Request
     /**
      * @param array{
      *     GameSessionId: string,
-     *     MaximumPlayerSessionCount?: int,
+     *     MaximumPlayerSessionCount?: int<0, max>,
      *     Name?: string,
      *     PlayerSessionCreationPolicy?: 'ACCEPT_ALL'|'DENY_ALL',
      *     ProtectionPolicy?: 'NoProtection'|'FullProtection',

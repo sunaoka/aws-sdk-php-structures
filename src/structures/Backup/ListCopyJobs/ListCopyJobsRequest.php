@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $ByResourceArn
  * @property 'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL' $ByState
  * @property \Aws\Api\DateTimeResult $ByCreatedBefore
@@ -24,7 +24,7 @@ class ListCopyJobsRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     ByResourceArn?: string,
      *     ByState?: 'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL',
      *     ByCreatedBefore?: \Aws\Api\DateTimeResult,

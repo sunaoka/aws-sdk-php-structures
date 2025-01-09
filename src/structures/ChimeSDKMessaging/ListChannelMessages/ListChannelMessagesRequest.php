@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'ASCENDING'|'DESCENDING' $SortOrder
  * @property \Aws\Api\DateTimeResult $NotBefore
  * @property \Aws\Api\DateTimeResult $NotAfter
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  * @property string $ChimeBearer
  * @property string $SubChannelId
@@ -22,7 +22,7 @@ class ListChannelMessagesRequest extends Request
      *     SortOrder?: 'ASCENDING'|'DESCENDING',
      *     NotBefore?: \Aws\Api\DateTimeResult,
      *     NotAfter?: \Aws\Api\DateTimeResult,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string,
      *     ChimeBearer: string,
      *     SubChannelId?: string

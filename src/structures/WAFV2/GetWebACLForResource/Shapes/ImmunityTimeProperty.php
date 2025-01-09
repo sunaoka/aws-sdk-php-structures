@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\WAFV2\GetWebACLForResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ImmunityTime
+ * @property int<60, 259200> $ImmunityTime
  */
 class ImmunityTimeProperty extends Shape
 {
     /**
-     * @param array{ImmunityTime: int} $args
+     * @param array{ImmunityTime: int<60, 259200>} $args
      */
     public function __construct(array $args)
     {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<'SESSION_SUMMARY'> $enabledMemoryTypes
  * @property SessionSummaryConfiguration $sessionSummaryConfiguration
- * @property int $storageDays
+ * @property int<0, 365> $storageDays
  */
 class MemoryConfiguration extends Shape
 {
@@ -15,7 +15,7 @@ class MemoryConfiguration extends Shape
      * @param array{
      *     enabledMemoryTypes: list<'SESSION_SUMMARY'>,
      *     sessionSummaryConfiguration?: SessionSummaryConfiguration,
-     *     storageDays?: int
+     *     storageDays?: int<0, 365>
      * } $args
      */
     public function __construct(array $args)

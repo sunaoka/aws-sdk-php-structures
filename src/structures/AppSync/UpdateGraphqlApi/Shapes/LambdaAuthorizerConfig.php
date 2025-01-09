@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppSync\UpdateGraphqlApi\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $authorizerResultTtlInSeconds
+ * @property int<0, 3600> $authorizerResultTtlInSeconds
  * @property string $authorizerUri
  * @property string $identityValidationExpression
  */
@@ -13,7 +13,7 @@ class LambdaAuthorizerConfig extends Shape
 {
     /**
      * @param array{
-     *     authorizerResultTtlInSeconds?: int,
+     *     authorizerResultTtlInSeconds?: int<0, 3600>,
      *     authorizerUri: string,
      *     identityValidationExpression?: string
      * } $args

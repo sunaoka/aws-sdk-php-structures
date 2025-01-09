@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CustomAttributes
  * @property string $InferenceId
  * @property string $InputLocation
- * @property int $RequestTTLSeconds
- * @property int $InvocationTimeoutSeconds
+ * @property int<60, 21600> $RequestTTLSeconds
+ * @property int<1, 3600> $InvocationTimeoutSeconds
  */
 class InvokeEndpointAsyncRequest extends Request
 {
@@ -24,8 +24,8 @@ class InvokeEndpointAsyncRequest extends Request
      *     CustomAttributes?: string,
      *     InferenceId?: string,
      *     InputLocation: string,
-     *     RequestTTLSeconds?: int,
-     *     InvocationTimeoutSeconds?: int
+     *     RequestTTLSeconds?: int<60, 21600>,
+     *     InvocationTimeoutSeconds?: int<1, 3600>
      * } $args
      */
     public function __construct(array $args)

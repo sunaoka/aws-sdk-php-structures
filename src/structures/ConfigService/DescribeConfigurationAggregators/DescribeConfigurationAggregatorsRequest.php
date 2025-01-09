@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $ConfigurationAggregatorNames
  * @property string $NextToken
- * @property int $Limit
+ * @property int<0, 100> $Limit
  */
 class DescribeConfigurationAggregatorsRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeConfigurationAggregatorsRequest extends Request
      * @param array{
      *     ConfigurationAggregatorNames?: list<string>,
      *     NextToken?: string,
-     *     Limit?: int
+     *     Limit?: int<0, 100>
      * } $args
      */
     public function __construct(array $args = [])

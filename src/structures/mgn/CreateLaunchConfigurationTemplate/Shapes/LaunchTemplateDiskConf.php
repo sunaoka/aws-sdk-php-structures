@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\mgn\CreateLaunchConfigurationTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $iops
- * @property int $throughput
+ * @property int<100, 64000> $iops
+ * @property int<125, 1000> $throughput
  * @property 'io1'|'io2'|'gp3'|'gp2'|'st1'|'sc1'|'standard' $volumeType
  */
 class LaunchTemplateDiskConf extends Shape
 {
     /**
      * @param array{
-     *     iops?: int,
-     *     throughput?: int,
+     *     iops?: int<100, 64000>,
+     *     throughput?: int<125, 1000>,
      *     volumeType?: 'io1'|'io2'|'gp3'|'gp2'|'st1'|'sc1'|'standard'
      * } $args
      */

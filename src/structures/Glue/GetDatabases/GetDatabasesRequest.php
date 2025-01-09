@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CatalogId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property 'FOREIGN'|'ALL'|'FEDERATED' $ResourceShareType
  * @property list<'NAME'> $AttributesToGet
  */
@@ -17,7 +17,7 @@ class GetDatabasesRequest extends Request
      * @param array{
      *     CatalogId?: string,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     ResourceShareType?: 'FOREIGN'|'ALL'|'FEDERATED',
      *     AttributesToGet?: list<'NAME'>
      * } $args

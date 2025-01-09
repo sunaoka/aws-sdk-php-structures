@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property BedrockRerankingModelConfiguration $modelConfiguration
- * @property int $numberOfResults
+ * @property int<1, 1000> $numberOfResults
  */
 class BedrockRerankingConfiguration extends Shape
 {
     /**
      * @param array{
      *     modelConfiguration: BedrockRerankingModelConfiguration,
-     *     numberOfResults?: int
+     *     numberOfResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

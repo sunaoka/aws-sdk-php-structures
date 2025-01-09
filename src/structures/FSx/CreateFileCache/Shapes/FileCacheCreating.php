@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FileCacheTypeVersion
  * @property 'AVAILABLE'|'CREATING'|'DELETING'|'UPDATING'|'FAILED' $Lifecycle
  * @property FileCacheFailureDetails $FailureDetails
- * @property int $StorageCapacity
+ * @property int<0, 2147483647> $StorageCapacity
  * @property string $VpcId
  * @property list<string> $SubnetIds
  * @property list<string> $NetworkInterfaceIds
@@ -35,7 +35,7 @@ class FileCacheCreating extends Shape
      *     FileCacheTypeVersion?: string,
      *     Lifecycle?: 'AVAILABLE'|'CREATING'|'DELETING'|'UPDATING'|'FAILED',
      *     FailureDetails?: FileCacheFailureDetails,
-     *     StorageCapacity?: int,
+     *     StorageCapacity?: int<0, 2147483647>,
      *     VpcId?: string,
      *     SubnetIds?: list<string>,
      *     NetworkInterfaceIds?: list<string>,

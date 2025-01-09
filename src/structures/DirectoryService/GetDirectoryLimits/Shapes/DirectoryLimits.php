@@ -5,28 +5,28 @@ namespace Sunaoka\Aws\Structures\DirectoryService\GetDirectoryLimits\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CloudOnlyDirectoriesLimit
- * @property int $CloudOnlyDirectoriesCurrentCount
+ * @property int<0, max> $CloudOnlyDirectoriesLimit
+ * @property int<0, max> $CloudOnlyDirectoriesCurrentCount
  * @property bool $CloudOnlyDirectoriesLimitReached
- * @property int $CloudOnlyMicrosoftADLimit
- * @property int $CloudOnlyMicrosoftADCurrentCount
+ * @property int<0, max> $CloudOnlyMicrosoftADLimit
+ * @property int<0, max> $CloudOnlyMicrosoftADCurrentCount
  * @property bool $CloudOnlyMicrosoftADLimitReached
- * @property int $ConnectedDirectoriesLimit
- * @property int $ConnectedDirectoriesCurrentCount
+ * @property int<0, max> $ConnectedDirectoriesLimit
+ * @property int<0, max> $ConnectedDirectoriesCurrentCount
  * @property bool $ConnectedDirectoriesLimitReached
  */
 class DirectoryLimits extends Shape
 {
     /**
      * @param array{
-     *     CloudOnlyDirectoriesLimit?: int,
-     *     CloudOnlyDirectoriesCurrentCount?: int,
+     *     CloudOnlyDirectoriesLimit?: int<0, max>,
+     *     CloudOnlyDirectoriesCurrentCount?: int<0, max>,
      *     CloudOnlyDirectoriesLimitReached?: bool,
-     *     CloudOnlyMicrosoftADLimit?: int,
-     *     CloudOnlyMicrosoftADCurrentCount?: int,
+     *     CloudOnlyMicrosoftADLimit?: int<0, max>,
+     *     CloudOnlyMicrosoftADCurrentCount?: int<0, max>,
      *     CloudOnlyMicrosoftADLimitReached?: bool,
-     *     ConnectedDirectoriesLimit?: int,
-     *     ConnectedDirectoriesCurrentCount?: int,
+     *     ConnectedDirectoriesLimit?: int<0, max>,
+     *     ConnectedDirectoriesCurrentCount?: int<0, max>,
      *     ConnectedDirectoriesLimitReached?: bool
      * } $args
      */

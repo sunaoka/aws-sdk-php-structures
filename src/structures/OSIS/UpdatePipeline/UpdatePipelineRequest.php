@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PipelineName
- * @property int $MinUnits
- * @property int $MaxUnits
+ * @property int<1, max> $MinUnits
+ * @property int<1, max> $MaxUnits
  * @property string $PipelineConfigurationBody
  * @property Shapes\LogPublishingOptions $LogPublishingOptions
  * @property Shapes\BufferOptions $BufferOptions
@@ -18,8 +18,8 @@ class UpdatePipelineRequest extends Request
     /**
      * @param array{
      *     PipelineName: string,
-     *     MinUnits?: int,
-     *     MaxUnits?: int,
+     *     MinUnits?: int<1, max>,
+     *     MaxUnits?: int<1, max>,
      *     PipelineConfigurationBody?: string,
      *     LogPublishingOptions?: Shapes\LogPublishingOptions,
      *     BufferOptions?: Shapes\BufferOptions,

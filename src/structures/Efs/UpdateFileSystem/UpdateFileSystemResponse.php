@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property 'creating'|'available'|'updating'|'deleting'|'deleted'|'error' $LifeCycleState
  * @property string $Name
- * @property int $NumberOfMountTargets
+ * @property int<0, max> $NumberOfMountTargets
  * @property Shapes\FileSystemSize $SizeInBytes
  * @property 'generalPurpose'|'maxIO' $PerformanceMode
  * @property bool $Encrypted

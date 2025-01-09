@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property Shapes\GameServerContainerDefinitionInput $GameServerContainerDefinition
  * @property list<Shapes\SupportContainerDefinitionInput> $SupportContainerDefinitions
- * @property int $TotalMemoryLimitMebibytes
+ * @property int<4, 1024000> $TotalMemoryLimitMebibytes
  * @property double $TotalVcpuLimit
  * @property string $VersionDescription
- * @property int $SourceVersionNumber
+ * @property int<1, max> $SourceVersionNumber
  * @property 'AMAZON_LINUX_2023' $OperatingSystem
  */
 class UpdateContainerGroupDefinitionRequest extends Request
@@ -21,10 +21,10 @@ class UpdateContainerGroupDefinitionRequest extends Request
      *     Name: string,
      *     GameServerContainerDefinition?: Shapes\GameServerContainerDefinitionInput,
      *     SupportContainerDefinitions?: list<Shapes\SupportContainerDefinitionInput>,
-     *     TotalMemoryLimitMebibytes?: int,
+     *     TotalMemoryLimitMebibytes?: int<4, 1024000>,
      *     TotalVcpuLimit?: double,
      *     VersionDescription?: string,
-     *     SourceVersionNumber?: int,
+     *     SourceVersionNumber?: int<1, max>,
      *     OperatingSystem?: 'AMAZON_LINUX_2023'
      * } $args
      */

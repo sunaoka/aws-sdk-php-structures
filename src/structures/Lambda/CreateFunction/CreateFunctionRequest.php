@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Handler
  * @property Shapes\FunctionCode $Code
  * @property string $Description
- * @property int $Timeout
- * @property int $MemorySize
+ * @property int<1, max> $Timeout
+ * @property int<128, 10240> $MemorySize
  * @property bool $Publish
  * @property Shapes\VpcConfig $VpcConfig
  * @property 'Zip'|'Image' $PackageType
@@ -40,8 +40,8 @@ class CreateFunctionRequest extends Request
      *     Handler?: string,
      *     Code: Shapes\FunctionCode,
      *     Description?: string,
-     *     Timeout?: int,
-     *     MemorySize?: int,
+     *     Timeout?: int<1, max>,
+     *     MemorySize?: int<128, 10240>,
      *     Publish?: bool,
      *     VpcConfig?: Shapes\VpcConfig,
      *     PackageType?: 'Zip'|'Image',

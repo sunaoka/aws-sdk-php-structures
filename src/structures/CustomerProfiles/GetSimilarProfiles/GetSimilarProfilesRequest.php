@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $DomainName
  * @property 'RULE_BASED_MATCHING'|'ML_BASED_MATCHING' $MatchType
  * @property string $SearchKey
@@ -17,7 +17,7 @@ class GetSimilarProfilesRequest extends Request
     /**
      * @param array{
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     DomainName: string,
      *     MatchType: 'RULE_BASED_MATCHING'|'ML_BASED_MATCHING',
      *     SearchKey: string,

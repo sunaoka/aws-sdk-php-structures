@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AppMonitorName
  * @property 'CloudWatch'|'Evidently' $Destination
  * @property string $DestinationArn
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  * @property string $NextToken
  */
 class BatchGetRumMetricDefinitionsRequest extends Request
@@ -18,7 +18,7 @@ class BatchGetRumMetricDefinitionsRequest extends Request
      *     AppMonitorName: string,
      *     Destination: 'CloudWatch'|'Evidently',
      *     DestinationArn?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 100>,
      *     NextToken?: string
      * } $args
      */

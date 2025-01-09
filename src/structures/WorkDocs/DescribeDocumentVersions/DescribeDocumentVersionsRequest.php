@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AuthenticationToken
  * @property string $DocumentId
  * @property string $Marker
- * @property int $Limit
+ * @property int<1, 999> $Limit
  * @property string $Include
  * @property string $Fields
  */
@@ -19,7 +19,7 @@ class DescribeDocumentVersionsRequest extends Request
      *     AuthenticationToken?: string,
      *     DocumentId: string,
      *     Marker?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, 999>,
      *     Include?: string,
      *     Fields?: string
      * } $args

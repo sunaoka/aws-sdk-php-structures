@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'FAILED'|'REJECTED'|'TIMED_OUT'|'ALL' $failureType
  * @property 'CANCEL' $action
  * @property double $thresholdPercentage
- * @property int $minNumberOfExecutedThings
+ * @property int<1, max> $minNumberOfExecutedThings
  */
 class IoTJobAbortCriteria extends Shape
 {
@@ -17,7 +17,7 @@ class IoTJobAbortCriteria extends Shape
      *     failureType: 'FAILED'|'REJECTED'|'TIMED_OUT'|'ALL',
      *     action: 'CANCEL',
      *     thresholdPercentage: double,
-     *     minNumberOfExecutedThings: int
+     *     minNumberOfExecutedThings: int<1, max>
      * } $args
      */
     public function __construct(array $args)

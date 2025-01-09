@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int $Timestamp
  * @property Label $Label
- * @property int $StartTimestampMillis
- * @property int $EndTimestampMillis
- * @property int $DurationMillis
+ * @property int<0, max> $StartTimestampMillis
+ * @property int<0, max> $EndTimestampMillis
+ * @property int<0, max> $DurationMillis
  */
 class LabelDetection extends Shape
 {
@@ -17,9 +17,9 @@ class LabelDetection extends Shape
      * @param array{
      *     Timestamp?: int,
      *     Label?: Label,
-     *     StartTimestampMillis?: int,
-     *     EndTimestampMillis?: int,
-     *     DurationMillis?: int
+     *     StartTimestampMillis?: int<0, max>,
+     *     EndTimestampMillis?: int<0, max>,
+     *     DurationMillis?: int<0, max>
      * } $args
      */
     public function __construct(array $args = [])

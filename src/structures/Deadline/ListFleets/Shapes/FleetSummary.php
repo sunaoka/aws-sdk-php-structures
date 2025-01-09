@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'GROWING'|'STEADY'|'SHRINKING' $autoScalingStatus
  * @property int $targetWorkerCount
  * @property int $workerCount
- * @property int $minWorkerCount
- * @property int $maxWorkerCount
+ * @property int<0, 2147483647> $minWorkerCount
+ * @property int<0, 2147483647> $maxWorkerCount
  * @property FleetConfiguration $configuration
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
@@ -31,8 +31,8 @@ class FleetSummary extends Shape
      *     autoScalingStatus?: 'GROWING'|'STEADY'|'SHRINKING',
      *     targetWorkerCount?: int,
      *     workerCount: int,
-     *     minWorkerCount: int,
-     *     maxWorkerCount: int,
+     *     minWorkerCount: int<0, 2147483647>,
+     *     maxWorkerCount: int<0, 2147483647>,
      *     configuration: FleetConfiguration,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     createdBy: string,

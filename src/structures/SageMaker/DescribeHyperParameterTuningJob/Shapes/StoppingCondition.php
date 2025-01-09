@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHyperParameterTuningJob\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxRuntimeInSeconds
- * @property int $MaxWaitTimeInSeconds
- * @property int $MaxPendingTimeInSeconds
+ * @property int<1, max> $MaxRuntimeInSeconds
+ * @property int<1, max> $MaxWaitTimeInSeconds
+ * @property int<7200, 2419200> $MaxPendingTimeInSeconds
  */
 class StoppingCondition extends Shape
 {
     /**
      * @param array{
-     *     MaxRuntimeInSeconds?: int,
-     *     MaxWaitTimeInSeconds?: int,
-     *     MaxPendingTimeInSeconds?: int
+     *     MaxRuntimeInSeconds?: int<1, max>,
+     *     MaxWaitTimeInSeconds?: int<1, max>,
+     *     MaxPendingTimeInSeconds?: int<7200, 2419200>
      * } $args
      */
     public function __construct(array $args = [])

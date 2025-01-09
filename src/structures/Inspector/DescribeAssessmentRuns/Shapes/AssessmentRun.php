@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $assessmentTemplateArn
  * @property 'CREATED'|'START_DATA_COLLECTION_PENDING'|'START_DATA_COLLECTION_IN_PROGRESS'|'COLLECTING_DATA'|'STOP_DATA_COLLECTION_PENDING'|'DATA_COLLECTED'|'START_EVALUATING_RULES_PENDING'|'EVALUATING_RULES'|'FAILED'|'ERROR'|'COMPLETED'|'COMPLETED_WITH_ERRORS'|'CANCELED' $state
- * @property int $durationInSeconds
+ * @property int<180, 86400> $durationInSeconds
  * @property list<string> $rulesPackageArns
  * @property list<Attribute> $userAttributesForFindings
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -29,7 +29,7 @@ class AssessmentRun extends Shape
      *     name: string,
      *     assessmentTemplateArn: string,
      *     state: 'CREATED'|'START_DATA_COLLECTION_PENDING'|'START_DATA_COLLECTION_IN_PROGRESS'|'COLLECTING_DATA'|'STOP_DATA_COLLECTION_PENDING'|'DATA_COLLECTED'|'START_EVALUATING_RULES_PENDING'|'EVALUATING_RULES'|'FAILED'|'ERROR'|'COMPLETED'|'COMPLETED_WITH_ERRORS'|'CANCELED',
-     *     durationInSeconds: int,
+     *     durationInSeconds: int<180, 86400>,
      *     rulesPackageArns: list<string>,
      *     userAttributesForFindings: list<Attribute>,
      *     createdAt: \Aws\Api\DateTimeResult,

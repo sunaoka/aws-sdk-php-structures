@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property int $MaxAgeInMinutes
+ * @property int<0, 10080> $MaxAgeInMinutes
  */
 class ResultReuseByAgeConfiguration extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     MaxAgeInMinutes?: int
+     *     MaxAgeInMinutes?: int<0, 10080>
      * } $args
      */
     public function __construct(array $args)

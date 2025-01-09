@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ContinuationToken
- * @property int $MaxDirectoryBuckets
+ * @property int<0, 1000> $MaxDirectoryBuckets
  */
 class ListDirectoryBucketsRequest extends Request
 {
     /**
      * @param array{
      *     ContinuationToken?: string,
-     *     MaxDirectoryBuckets?: int
+     *     MaxDirectoryBuckets?: int<0, 1000>
      * } $args
      */
     public function __construct(array $args = [])

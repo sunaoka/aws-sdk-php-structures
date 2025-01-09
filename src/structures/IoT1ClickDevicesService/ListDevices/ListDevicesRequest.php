@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DeviceType
- * @property int $MaxResults
+ * @property int<1, 250> $MaxResults
  * @property string $NextToken
  */
 class ListDevicesRequest extends Request
@@ -14,7 +14,7 @@ class ListDevicesRequest extends Request
     /**
      * @param array{
      *     DeviceType?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 250>,
      *     NextToken?: string
      * } $args
      */

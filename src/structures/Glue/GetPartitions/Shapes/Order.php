@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Column
- * @property int $SortOrder
+ * @property int<0, 1> $SortOrder
  */
 class Order extends Shape
 {
     /**
      * @param array{
      *     Column: string,
-     *     SortOrder: int
+     *     SortOrder: int<0, 1>
      * } $args
      */
     public function __construct(array $args)

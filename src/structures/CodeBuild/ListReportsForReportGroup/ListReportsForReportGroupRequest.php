@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $reportGroupArn
  * @property string $nextToken
  * @property 'ASCENDING'|'DESCENDING' $sortOrder
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property Shapes\ReportFilter $filter
  */
 class ListReportsForReportGroupRequest extends Request
@@ -18,7 +18,7 @@ class ListReportsForReportGroupRequest extends Request
      *     reportGroupArn: string,
      *     nextToken?: string,
      *     sortOrder?: 'ASCENDING'|'DESCENDING',
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     filter?: Shapes\ReportFilter
      * } $args
      */

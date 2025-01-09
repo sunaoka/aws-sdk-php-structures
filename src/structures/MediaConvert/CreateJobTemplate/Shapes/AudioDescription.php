@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AudioChannelTaggingSettings $AudioChannelTaggingSettings
  * @property AudioNormalizationSettings $AudioNormalizationSettings
  * @property string $AudioSourceName
- * @property int $AudioType
+ * @property int<0, 255> $AudioType
  * @property 'FOLLOW_INPUT'|'USE_CONFIGURED' $AudioTypeControl
  * @property AudioCodecSettings $CodecSettings
  * @property string $CustomLanguageCode
@@ -24,7 +24,7 @@ class AudioDescription extends Shape
      *     AudioChannelTaggingSettings?: AudioChannelTaggingSettings,
      *     AudioNormalizationSettings?: AudioNormalizationSettings,
      *     AudioSourceName?: string,
-     *     AudioType?: int,
+     *     AudioType?: int<0, 255>,
      *     AudioTypeControl?: 'FOLLOW_INPUT'|'USE_CONFIGURED',
      *     CodecSettings?: AudioCodecSettings,
      *     CustomLanguageCode?: string,

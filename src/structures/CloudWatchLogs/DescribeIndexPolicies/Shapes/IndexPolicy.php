@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $logGroupIdentifier
- * @property int $lastUpdateTime
+ * @property int<0, max> $lastUpdateTime
  * @property string $policyDocument
  * @property string $policyName
  * @property 'ACCOUNT'|'LOG_GROUP' $source
@@ -16,7 +16,7 @@ class IndexPolicy extends Shape
     /**
      * @param array{
      *     logGroupIdentifier?: string,
-     *     lastUpdateTime?: int,
+     *     lastUpdateTime?: int<0, max>,
      *     policyDocument?: string,
      *     policyName?: string,
      *     source?: 'ACCOUNT'|'LOG_GROUP'

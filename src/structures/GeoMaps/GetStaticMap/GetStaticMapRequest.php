@@ -10,14 +10,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Center
  * @property string $CompactOverlay
  * @property string $GeoJsonOverlay
- * @property int $Height
+ * @property int<64, 1400> $Height
  * @property string $Key
  * @property int $Padding
- * @property int $Radius
+ * @property int<0, 4294967295> $Radius
  * @property string $FileName
  * @property 'Kilometers'|'KilometersMiles'|'Miles'|'MilesKilometers' $ScaleBarUnit
  * @property 'Satellite' $Style
- * @property int $Width
+ * @property int<64, 1400> $Width
  * @property float $Zoom
  */
 class GetStaticMapRequest extends Request
@@ -29,14 +29,14 @@ class GetStaticMapRequest extends Request
      *     Center?: string,
      *     CompactOverlay?: string,
      *     GeoJsonOverlay?: string,
-     *     Height: int,
+     *     Height: int<64, 1400>,
      *     Key?: string,
      *     Padding?: int,
-     *     Radius?: int,
+     *     Radius?: int<0, 4294967295>,
      *     FileName: string,
      *     ScaleBarUnit?: 'Kilometers'|'KilometersMiles'|'Miles'|'MilesKilometers',
      *     Style?: 'Satellite',
-     *     Width: int,
+     *     Width: int<64, 1400>,
      *     Zoom?: float
      * } $args
      */

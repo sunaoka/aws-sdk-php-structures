@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\AdvancedEventSelector> $AdvancedEventSelectors
  * @property bool $MultiRegionEnabled
  * @property bool $OrganizationEnabled
- * @property int $RetentionPeriod
+ * @property int<7, 3653> $RetentionPeriod
  * @property bool $TerminationProtectionEnabled
  * @property list<Shapes\Tag> $TagsList
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp

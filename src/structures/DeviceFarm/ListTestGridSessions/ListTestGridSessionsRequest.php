@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $creationTimeBefore
  * @property \Aws\Api\DateTimeResult $endTimeAfter
  * @property \Aws\Api\DateTimeResult $endTimeBefore
- * @property int $maxResult
+ * @property int<1, 1000> $maxResult
  * @property string $nextToken
  */
 class ListTestGridSessionsRequest extends Request
@@ -24,7 +24,7 @@ class ListTestGridSessionsRequest extends Request
      *     creationTimeBefore?: \Aws\Api\DateTimeResult,
      *     endTimeAfter?: \Aws\Api\DateTimeResult,
      *     endTimeBefore?: \Aws\Api\DateTimeResult,
-     *     maxResult?: int,
+     *     maxResult?: int<1, 1000>,
      *     nextToken?: string
      * } $args
      */

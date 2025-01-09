@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property DimensionField $Category
  * @property MeasureField $Value
- * @property int $ResultSize
+ * @property int<1, 20> $ResultSize
  * @property 'TOP'|'BOTTOM' $Type
  */
 class TopBottomRankedComputation extends Shape
@@ -20,7 +20,7 @@ class TopBottomRankedComputation extends Shape
      *     Name?: string,
      *     Category?: DimensionField,
      *     Value?: MeasureField,
-     *     ResultSize?: int,
+     *     ResultSize?: int<1, 20>,
      *     Type: 'TOP'|'BOTTOM'
      * } $args
      */

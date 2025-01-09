@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EventDataStore
  * @property string $QueryId
  * @property string $NextToken
- * @property int $MaxQueryResults
+ * @property int<1, 1000> $MaxQueryResults
  * @property string $EventDataStoreOwnerAccountId
  */
 class GetQueryResultsRequest extends Request
@@ -18,7 +18,7 @@ class GetQueryResultsRequest extends Request
      *     EventDataStore?: string,
      *     QueryId: string,
      *     NextToken?: string,
-     *     MaxQueryResults?: int,
+     *     MaxQueryResults?: int<1, 1000>,
      *     EventDataStoreOwnerAccountId?: string
      * } $args
      */

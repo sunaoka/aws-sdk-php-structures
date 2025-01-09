@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Glue\DeleteSchemaVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $VersionNumber
+ * @property int<1, 100000> $VersionNumber
  * @property ErrorDetails $ErrorDetails
  */
 class SchemaVersionErrorItem extends Shape
 {
     /**
      * @param array{
-     *     VersionNumber?: int,
+     *     VersionNumber?: int<1, 100000>,
      *     ErrorDetails?: ErrorDetails
      * } $args
      */

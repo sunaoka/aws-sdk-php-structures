@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AutomationExecutionId
  * @property list<Shapes\StepExecutionFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property bool $ReverseOrder
  */
 class DescribeAutomationStepExecutionsRequest extends Request
@@ -18,7 +18,7 @@ class DescribeAutomationStepExecutionsRequest extends Request
      *     AutomationExecutionId: string,
      *     Filters?: list<Shapes\StepExecutionFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     ReverseOrder?: bool
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Host
- * @property int $Port
+ * @property int<1, 65535> $Port
  * @property string $Database
  */
 class TeradataParameters extends Shape
@@ -14,7 +14,7 @@ class TeradataParameters extends Shape
     /**
      * @param array{
      *     Host: string,
-     *     Port: int,
+     *     Port: int<1, 65535>,
      *     Database: string
      * } $args
      */

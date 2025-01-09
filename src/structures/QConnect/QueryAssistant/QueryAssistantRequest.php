@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assistantId
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property 'HYBRID'|'SEMANTIC' $overrideKnowledgeBaseSearchType
  * @property list<Shapes\QueryCondition> $queryCondition
@@ -19,7 +19,7 @@ class QueryAssistantRequest extends Request
     /**
      * @param array{
      *     assistantId: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     overrideKnowledgeBaseSearchType?: 'HYBRID'|'SEMANTIC',
      *     queryCondition?: list<Shapes\QueryCondition>,

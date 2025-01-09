@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $JunctionPath
  * @property 'UNIX'|'NTFS'|'MIXED' $SecurityStyle
- * @property int $SizeInMegabytes
+ * @property int<0, 2147483647> $SizeInMegabytes
  * @property bool $StorageEfficiencyEnabled
  * @property string $StorageVirtualMachineId
  * @property TieringPolicy $TieringPolicy
@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CreateSnaplockConfiguration $SnaplockConfiguration
  * @property 'FLEXVOL'|'FLEXGROUP' $VolumeStyle
  * @property CreateAggregateConfiguration $AggregateConfiguration
- * @property int $SizeInBytes
+ * @property int<0, 22517998000000000> $SizeInBytes
  */
 class CreateOntapVolumeConfiguration extends Shape
 {
@@ -25,7 +25,7 @@ class CreateOntapVolumeConfiguration extends Shape
      * @param array{
      *     JunctionPath?: string,
      *     SecurityStyle?: 'UNIX'|'NTFS'|'MIXED',
-     *     SizeInMegabytes?: int,
+     *     SizeInMegabytes?: int<0, 2147483647>,
      *     StorageEfficiencyEnabled?: bool,
      *     StorageVirtualMachineId: string,
      *     TieringPolicy?: TieringPolicy,
@@ -35,7 +35,7 @@ class CreateOntapVolumeConfiguration extends Shape
      *     SnaplockConfiguration?: CreateSnaplockConfiguration,
      *     VolumeStyle?: 'FLEXVOL'|'FLEXGROUP',
      *     AggregateConfiguration?: CreateAggregateConfiguration,
-     *     SizeInBytes?: int
+     *     SizeInBytes?: int<0, 22517998000000000>
      * } $args
      */
     public function __construct(array $args)

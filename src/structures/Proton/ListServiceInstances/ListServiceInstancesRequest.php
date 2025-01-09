@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\ListServiceInstancesFilter> $filters
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  * @property string $serviceName
  * @property 'name'|'deploymentStatus'|'templateName'|'serviceName'|'environmentName'|'lastDeploymentAttemptedAt'|'createdAt' $sortBy
@@ -17,7 +17,7 @@ class ListServiceInstancesRequest extends Request
     /**
      * @param array{
      *     filters?: list<Shapes\ListServiceInstancesFilter>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string,
      *     serviceName?: string,
      *     sortBy?: 'name'|'deploymentStatus'|'templateName'|'serviceName'|'environmentName'|'lastDeploymentAttemptedAt'|'createdAt',

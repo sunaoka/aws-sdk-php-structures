@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $configuredModelAlgorithmAssociations
  * @property Shapes\InputChannel $inputChannel
  * @property string $name
- * @property int $retentionInDays
+ * @property int<1, 30> $retentionInDays
  * @property string $description
  * @property string $kmsKeyArn
  * @property array<string, string> $tags
@@ -22,7 +22,7 @@ class CreateMLInputChannelRequest extends Request
      *     configuredModelAlgorithmAssociations: list<string>,
      *     inputChannel: Shapes\InputChannel,
      *     name: string,
-     *     retentionInDays: int,
+     *     retentionInDays: int<1, 30>,
      *     description?: string,
      *     kmsKeyArn?: string,
      *     tags?: array<string, string>

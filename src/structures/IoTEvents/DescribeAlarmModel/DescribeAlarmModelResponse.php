@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $alarmModelDescription
  * @property string $roleArn
  * @property string $key
- * @property int $severity
+ * @property int<0, 2147483647> $severity
  * @property Shapes\AlarmRule $alarmRule
  * @property Shapes\AlarmNotification $alarmNotification
  * @property Shapes\AlarmEventActions $alarmEventActions

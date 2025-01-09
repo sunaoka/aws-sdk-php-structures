@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Efs\CreateAccessPoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $OwnerUid
- * @property int $OwnerGid
+ * @property int<0, 4294967295> $OwnerUid
+ * @property int<0, 4294967295> $OwnerGid
  * @property string $Permissions
  */
 class CreationInfo extends Shape
 {
     /**
      * @param array{
-     *     OwnerUid: int,
-     *     OwnerGid: int,
+     *     OwnerUid: int<0, 4294967295>,
+     *     OwnerGid: int<0, 4294967295>,
      *     Permissions: string
      * } $args
      */

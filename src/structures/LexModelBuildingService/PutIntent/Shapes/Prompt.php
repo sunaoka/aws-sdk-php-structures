@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<Message> $messages
- * @property int $maxAttempts
+ * @property int<1, 5> $maxAttempts
  * @property string $responseCard
  */
 class Prompt extends Shape
@@ -14,7 +14,7 @@ class Prompt extends Shape
     /**
      * @param array{
      *     messages: list<Message>,
-     *     maxAttempts: int,
+     *     maxAttempts: int<1, 5>,
      *     responseCard?: string
      * } $args
      */

@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Message
  * @property string $ModelArn
  * @property string $DesiredModelArn
- * @property int $DesiredInferenceUnits
- * @property int $CurrentInferenceUnits
+ * @property int<1, max> $DesiredInferenceUnits
+ * @property int<1, max> $CurrentInferenceUnits
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property string $DataAccessRoleArn
@@ -27,8 +27,8 @@ class EndpointProperties extends Shape
      *     Message?: string,
      *     ModelArn?: string,
      *     DesiredModelArn?: string,
-     *     DesiredInferenceUnits?: int,
-     *     CurrentInferenceUnits?: int,
+     *     DesiredInferenceUnits?: int<1, max>,
+     *     CurrentInferenceUnits?: int<1, max>,
      *     CreationTime?: \Aws\Api\DateTimeResult,
      *     LastModifiedTime?: \Aws\Api\DateTimeResult,
      *     DataAccessRoleArn?: string,

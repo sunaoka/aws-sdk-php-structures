@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $namespace
  * @property string $prefix
  * @property string $continuationToken
- * @property int $maxTables
+ * @property int<1, 1000> $maxTables
  */
 class ListTablesRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListTablesRequest extends Request
      *     namespace?: string,
      *     prefix?: string,
      *     continuationToken?: string,
-     *     maxTables?: int
+     *     maxTables?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

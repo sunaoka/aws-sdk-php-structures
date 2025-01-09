@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $Description
  * @property 'NOOP'|'ARCHIVE' $Action
- * @property int $Rank
+ * @property int<1, 100> $Rank
  * @property Shapes\FindingCriteria $FindingCriteria
  * @property string $ClientToken
  * @property array<string, string> $Tags
@@ -22,7 +22,7 @@ class CreateFilterRequest extends Request
      *     Name: string,
      *     Description?: string,
      *     Action?: 'NOOP'|'ARCHIVE',
-     *     Rank?: int,
+     *     Rank?: int<1, 100>,
      *     FindingCriteria: Shapes\FindingCriteria,
      *     ClientToken?: string,
      *     Tags?: array<string, string>

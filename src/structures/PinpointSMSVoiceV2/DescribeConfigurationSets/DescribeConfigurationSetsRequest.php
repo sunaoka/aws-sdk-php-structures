@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $ConfigurationSetNames
  * @property list<Shapes\ConfigurationSetFilter> $Filters
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 100> $MaxResults
  */
 class DescribeConfigurationSetsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeConfigurationSetsRequest extends Request
      *     ConfigurationSetNames?: list<string>,
      *     Filters?: list<Shapes\ConfigurationSetFilter>,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 100>
      * } $args
      */
     public function __construct(array $args = [])

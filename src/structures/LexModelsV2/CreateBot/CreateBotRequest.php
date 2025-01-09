@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $description
  * @property string $roleArn
  * @property Shapes\DataPrivacy $dataPrivacy
- * @property int $idleSessionTTLInSeconds
+ * @property int<60, 86400> $idleSessionTTLInSeconds
  * @property array<string, string> $botTags
  * @property array<string, string> $testBotAliasTags
  * @property 'Bot'|'BotNetwork' $botType
@@ -23,7 +23,7 @@ class CreateBotRequest extends Request
      *     description?: string,
      *     roleArn: string,
      *     dataPrivacy: Shapes\DataPrivacy,
-     *     idleSessionTTLInSeconds: int,
+     *     idleSessionTTLInSeconds: int<60, 86400>,
      *     botTags?: array<string, string>,
      *     testBotAliasTags?: array<string, string>,
      *     botType?: 'Bot'|'BotNetwork',

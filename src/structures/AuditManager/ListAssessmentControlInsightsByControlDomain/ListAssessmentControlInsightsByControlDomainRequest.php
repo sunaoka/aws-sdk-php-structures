@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $controlDomainId
  * @property string $assessmentId
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, 1000> $maxResults
  */
 class ListAssessmentControlInsightsByControlDomainRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListAssessmentControlInsightsByControlDomainRequest extends Request
      *     controlDomainId: string,
      *     assessmentId: string,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<1, 1000>
      * } $args
      */
     public function __construct(array $args)

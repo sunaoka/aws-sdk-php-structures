@@ -15,8 +15,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Action> $Actions
  * @property 'SIMPLIFIED'|'STANDARD' $PolicyLanguage
  * @property 'VOLUME'|'INSTANCE' $ResourceType
- * @property int $CreateInterval
- * @property int $RetainInterval
+ * @property int<1, max> $CreateInterval
+ * @property int<1, max> $RetainInterval
  * @property bool $CopyTags
  * @property list<CrossRegionCopyTarget> $CrossRegionCopyTargets
  * @property bool $ExtendDeletion
@@ -36,8 +36,8 @@ class PolicyDetails extends Shape
      *     Actions?: list<Action>,
      *     PolicyLanguage?: 'SIMPLIFIED'|'STANDARD',
      *     ResourceType?: 'VOLUME'|'INSTANCE',
-     *     CreateInterval?: int,
-     *     RetainInterval?: int,
+     *     CreateInterval?: int<1, max>,
+     *     RetainInterval?: int<1, max>,
      *     CopyTags?: bool,
      *     CrossRegionCopyTargets?: list<CrossRegionCopyTarget>,
      *     ExtendDeletion?: bool,

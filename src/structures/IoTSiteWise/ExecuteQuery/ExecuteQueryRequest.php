@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $queryStatement
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<1, max> $maxResults
  * @property string $clientToken
  */
 class ExecuteQueryRequest extends Request
@@ -16,7 +16,7 @@ class ExecuteQueryRequest extends Request
      * @param array{
      *     queryStatement: string,
      *     nextToken?: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, max>,
      *     clientToken?: string
      * } $args
      */

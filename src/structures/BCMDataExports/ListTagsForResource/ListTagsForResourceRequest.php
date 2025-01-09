@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BCMDataExports\ListTagsForResource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
+ * @property int<1, max> $MaxResults
  * @property string $NextToken
  * @property string $ResourceArn
  */
@@ -13,7 +13,7 @@ class ListTagsForResourceRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, max>,
      *     NextToken?: string,
      *     ResourceArn: string
      * } $args

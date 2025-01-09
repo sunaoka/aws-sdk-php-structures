@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $DashboardId
- * @property int $VersionNumber
+ * @property int<1, max> $VersionNumber
  * @property string $AliasName
  */
 class DescribeDashboardRequest extends Request
@@ -16,7 +16,7 @@ class DescribeDashboardRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     DashboardId: string,
-     *     VersionNumber?: int,
+     *     VersionNumber?: int<1, max>,
      *     AliasName?: string
      * } $args
      */

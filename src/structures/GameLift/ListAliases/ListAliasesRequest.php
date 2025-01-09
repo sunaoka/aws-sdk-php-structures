@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'SIMPLE'|'TERMINAL' $RoutingStrategyType
  * @property string $Name
- * @property int $Limit
+ * @property int<1, max> $Limit
  * @property string $NextToken
  */
 class ListAliasesRequest extends Request
@@ -16,7 +16,7 @@ class ListAliasesRequest extends Request
      * @param array{
      *     RoutingStrategyType?: 'SIMPLE'|'TERMINAL',
      *     Name?: string,
-     *     Limit?: int,
+     *     Limit?: int<1, max>,
      *     NextToken?: string
      * } $args
      */

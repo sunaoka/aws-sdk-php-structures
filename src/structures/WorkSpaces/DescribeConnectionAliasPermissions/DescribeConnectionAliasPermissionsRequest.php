@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AliasId
  * @property string $NextToken
- * @property int $MaxResults
+ * @property int<1, 25> $MaxResults
  */
 class DescribeConnectionAliasPermissionsRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeConnectionAliasPermissionsRequest extends Request
      * @param array{
      *     AliasId: string,
      *     NextToken?: string,
-     *     MaxResults?: int
+     *     MaxResults?: int<1, 25>
      * } $args
      */
     public function __construct(array $args)

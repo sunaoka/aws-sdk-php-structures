@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Freshness
- * @property int $Importance
+ * @property int<1, 10> $Importance
  * @property string $Duration
  * @property 'ASCENDING'|'DESCENDING' $RankOrder
- * @property array<string, int> $ValueImportanceMap
+ * @property array<string, int<1, 10>> $ValueImportanceMap
  */
 class Relevance extends Shape
 {
     /**
      * @param array{
      *     Freshness?: bool,
-     *     Importance?: int,
+     *     Importance?: int<1, 10>,
      *     Duration?: string,
      *     RankOrder?: 'ASCENDING'|'DESCENDING',
-     *     ValueImportanceMap?: array<string, int>
+     *     ValueImportanceMap?: array<string, int<1, 10>>
      * } $args
      */
     public function __construct(array $args = [])

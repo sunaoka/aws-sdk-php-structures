@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DestinationNamePrefix
  * @property string $nextToken
- * @property int $limit
+ * @property int<1, 50> $limit
  */
 class DescribeDestinationsRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeDestinationsRequest extends Request
      * @param array{
      *     DestinationNamePrefix?: string,
      *     nextToken?: string,
-     *     limit?: int
+     *     limit?: int<1, 50>
      * } $args
      */
     public function __construct(array $args = [])

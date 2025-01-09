@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $accounts
- * @property int $maxResults
+ * @property int<1, 100> $maxResults
  * @property string $nextToken
  */
 class GetDataLakeSourcesRequest extends Request
@@ -14,7 +14,7 @@ class GetDataLakeSourcesRequest extends Request
     /**
      * @param array{
      *     accounts?: list<string>,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 100>,
      *     nextToken?: string
      * } $args
      */

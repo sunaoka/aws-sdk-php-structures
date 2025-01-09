@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<string> $operations
  * @property list<Shapes\SavingsPlanOfferingRateFilterElement> $filters
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<0, 1000> $maxResults
  */
 class DescribeSavingsPlansOfferingRatesRequest extends Request
 {
@@ -29,7 +29,7 @@ class DescribeSavingsPlansOfferingRatesRequest extends Request
      *     operations?: list<string>,
      *     filters?: list<Shapes\SavingsPlanOfferingRateFilterElement>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<0, 1000>
      * } $args
      */
     public function __construct(array $args = [])

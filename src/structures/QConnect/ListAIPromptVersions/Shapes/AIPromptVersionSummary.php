@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property AIPromptSummary $aiPromptSummary
- * @property int $versionNumber
+ * @property int<1, max> $versionNumber
  */
 class AIPromptVersionSummary extends Shape
 {
     /**
      * @param array{
      *     aiPromptSummary?: AIPromptSummary,
-     *     versionNumber?: int
+     *     versionNumber?: int<1, max>
      * } $args
      */
     public function __construct(array $args = [])

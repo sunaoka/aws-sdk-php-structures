@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Catalog
  * @property string $CreatedBy
  * @property string $EngagementIdentifier
- * @property int $MaxResults
+ * @property int<1, 1000> $MaxResults
  * @property string $NextToken
  * @property string $ResourceIdentifier
  * @property string $ResourceSnapshotTemplateIdentifier
@@ -21,7 +21,7 @@ class ListResourceSnapshotsRequest extends Request
      *     Catalog: string,
      *     CreatedBy?: string,
      *     EngagementIdentifier: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 1000>,
      *     NextToken?: string,
      *     ResourceIdentifier?: string,
      *     ResourceSnapshotTemplateIdentifier?: string,

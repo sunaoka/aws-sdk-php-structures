@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DetectorId
- * @property int $MaxResults
+ * @property int<1, 50> $MaxResults
  * @property string $NextToken
  */
 class DescribeOrganizationConfigurationRequest extends Request
@@ -14,7 +14,7 @@ class DescribeOrganizationConfigurationRequest extends Request
     /**
      * @param array{
      *     DetectorId: string,
-     *     MaxResults?: int,
+     *     MaxResults?: int<1, 50>,
      *     NextToken?: string
      * } $args
      */

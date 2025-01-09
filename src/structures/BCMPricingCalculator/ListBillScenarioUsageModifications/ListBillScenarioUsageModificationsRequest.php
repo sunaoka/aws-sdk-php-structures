@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $billScenarioId
  * @property list<Shapes\ListUsageFilter> $filters
  * @property string $nextToken
- * @property int $maxResults
+ * @property int<min, 25> $maxResults
  */
 class ListBillScenarioUsageModificationsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ListBillScenarioUsageModificationsRequest extends Request
      *     billScenarioId: string,
      *     filters?: list<Shapes\ListUsageFilter>,
      *     nextToken?: string,
-     *     maxResults?: int
+     *     maxResults?: int<min, 25>
      * } $args
      */
     public function __construct(array $args)

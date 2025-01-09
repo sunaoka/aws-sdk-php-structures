@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property int $maxResults
+ * @property int<1, 50> $maxResults
  * @property string $name
  * @property string $nextToken
  * @property 'NAME' $sortBy
@@ -17,7 +17,7 @@ class ListProjectProfilesRequest extends Request
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     maxResults?: int,
+     *     maxResults?: int<1, 50>,
      *     name?: string,
      *     nextToken?: string,
      *     sortBy?: 'NAME',

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'IGNORE'|'FAIL' $FraudDetectionAction
- * @property int $RiskThreshold
+ * @property int<0, 100> $RiskThreshold
  * @property list<string> $WatchlistIds
  */
 class EnrollmentJobFraudDetectionConfig extends Shape
@@ -14,7 +14,7 @@ class EnrollmentJobFraudDetectionConfig extends Shape
     /**
      * @param array{
      *     FraudDetectionAction?: 'IGNORE'|'FAIL',
-     *     RiskThreshold?: int,
+     *     RiskThreshold?: int<0, 100>,
      *     WatchlistIds?: list<string>
      * } $args
      */

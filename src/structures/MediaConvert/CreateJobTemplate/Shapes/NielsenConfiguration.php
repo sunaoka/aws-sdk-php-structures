@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $BreakoutCode
+ * @property int<0, 0> $BreakoutCode
  * @property string $DistributorId
  */
 class NielsenConfiguration extends Shape
 {
     /**
      * @param array{
-     *     BreakoutCode?: int,
+     *     BreakoutCode?: int<0, 0>,
      *     DistributorId?: string
      * } $args
      */

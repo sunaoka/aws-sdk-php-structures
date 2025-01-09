@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RfRegion
  * @property list<list<string>> $JoinEuiFilters
  * @property list<string> $NetIdFilters
- * @property list<int> $SubBands
+ * @property list<int<1, 8>> $SubBands
  * @property Beaconing $Beaconing
  * @property float $MaxEirp
  */
@@ -21,7 +21,7 @@ class LoRaWANGateway extends Shape
      *     RfRegion?: string,
      *     JoinEuiFilters?: list<list<string>>,
      *     NetIdFilters?: list<string>,
-     *     SubBands?: list<int>,
+     *     SubBands?: list<int<1, 8>>,
      *     Beaconing?: Beaconing,
      *     MaxEirp?: float
      * } $args

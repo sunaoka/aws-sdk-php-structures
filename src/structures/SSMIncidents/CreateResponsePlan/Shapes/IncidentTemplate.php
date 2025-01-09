@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $dedupeString
- * @property int $impact
+ * @property int<1, 5> $impact
  * @property array<string, string> $incidentTags
  * @property list<NotificationTargetItem> $notificationTargets
  * @property string $summary
@@ -17,7 +17,7 @@ class IncidentTemplate extends Shape
     /**
      * @param array{
      *     dedupeString?: string,
-     *     impact: int,
+     *     impact: int<1, 5>,
      *     incidentTags?: array<string, string>,
      *     notificationTargets?: list<NotificationTargetItem>,
      *     summary?: string,

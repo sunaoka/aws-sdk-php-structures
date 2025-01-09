@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $dataSourceRoleArn
  * @property list<string> $dashboardViewerPrincipals
  * @property string $applicationArn
- * @property int $retentionDays
+ * @property int<1, 30> $retentionDays
  */
 class OpenSearchResourceConfig extends Shape
 {
@@ -19,7 +19,7 @@ class OpenSearchResourceConfig extends Shape
      *     dataSourceRoleArn: string,
      *     dashboardViewerPrincipals: list<string>,
      *     applicationArn?: string,
-     *     retentionDays: int
+     *     retentionDays: int<1, 30>
      * } $args
      */
     public function __construct(array $args)

@@ -17,12 +17,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DolbyVisionMetadataXml
  * @property string $FileInput
  * @property 'AUTO'|'DISABLE'|'FORCE' $FilterEnable
- * @property int $FilterStrength
+ * @property int<0, 5> $FilterStrength
  * @property ImageInserter $ImageInserter
  * @property list<InputClipping> $InputClippings
  * @property 'AUTO'|'PSF' $InputScanType
  * @property Rectangle $Position
- * @property int $ProgramNumber
+ * @property int<1, 2147483647> $ProgramNumber
  * @property 'IGNORE_PSI'|'USE_PSI' $PsiControl
  * @property list<string> $SupplementalImps
  * @property 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART' $TimecodeSource
@@ -47,12 +47,12 @@ class Input extends Shape
      *     DolbyVisionMetadataXml?: string,
      *     FileInput?: string,
      *     FilterEnable?: 'AUTO'|'DISABLE'|'FORCE',
-     *     FilterStrength?: int,
+     *     FilterStrength?: int<0, 5>,
      *     ImageInserter?: ImageInserter,
      *     InputClippings?: list<InputClipping>,
      *     InputScanType?: 'AUTO'|'PSF',
      *     Position?: Rectangle,
-     *     ProgramNumber?: int,
+     *     ProgramNumber?: int<1, 2147483647>,
      *     PsiControl?: 'IGNORE_PSI'|'USE_PSI',
      *     SupplementalImps?: list<string>,
      *     TimecodeSource?: 'EMBEDDED'|'ZEROBASED'|'SPECIFIEDSTART',
