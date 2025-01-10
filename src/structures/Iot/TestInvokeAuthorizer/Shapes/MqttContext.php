@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $username
- * @property string $password
+ * @property string|resource|\Psr\Http\Message\StreamInterface $password
  * @property string $clientId
  */
 class MqttContext extends Shape
@@ -14,7 +14,7 @@ class MqttContext extends Shape
     /**
      * @param array{
      *     username?: string,
-     *     password?: string,
+     *     password?: string|resource|\Psr\Http\Message\StreamInterface,
      *     clientId?: string
      * } $args
      */

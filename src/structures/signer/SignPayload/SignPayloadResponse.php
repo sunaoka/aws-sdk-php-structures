@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $jobId
  * @property string $jobOwner
  * @property array<string, string> $metadata
- * @property string $signature
+ * @property \Psr\Http\Message\StreamInterface $signature
  */
 class SignPayloadResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\GetTrustStoreCertificate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $body
+ * @property \Psr\Http\Message\StreamInterface $body
  * @property string $issuer
  * @property \Aws\Api\DateTimeResult $notValidAfter
  * @property \Aws\Api\DateTimeResult $notValidBefore
@@ -16,7 +16,7 @@ class Certificate extends Shape
 {
     /**
      * @param array{
-     *     body?: string,
+     *     body?: \Psr\Http\Message\StreamInterface,
      *     issuer?: string,
      *     notValidAfter?: \Aws\Api\DateTimeResult,
      *     notValidBefore?: \Aws\Api\DateTimeResult,

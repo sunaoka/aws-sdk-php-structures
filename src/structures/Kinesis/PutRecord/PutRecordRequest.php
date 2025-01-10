@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StreamName
- * @property string $Data
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Data
  * @property string $PartitionKey
  * @property string $ExplicitHashKey
  * @property string $SequenceNumberForOrdering
@@ -17,7 +17,7 @@ class PutRecordRequest extends Request
     /**
      * @param array{
      *     StreamName?: string,
-     *     Data: string,
+     *     Data: string|resource|\Psr\Http\Message\StreamInterface,
      *     PartitionKey: string,
      *     ExplicitHashKey?: string,
      *     SequenceNumberForOrdering?: string,

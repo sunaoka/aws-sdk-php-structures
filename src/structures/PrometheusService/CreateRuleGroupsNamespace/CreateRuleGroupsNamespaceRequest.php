@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $clientToken
- * @property string $data
+ * @property string|resource|\Psr\Http\Message\StreamInterface $data
  * @property string $name
  * @property array<string, string> $tags
  * @property string $workspaceId
@@ -16,7 +16,7 @@ class CreateRuleGroupsNamespaceRequest extends Request
     /**
      * @param array{
      *     clientToken?: string,
-     *     data: string,
+     *     data: string|resource|\Psr\Http\Message\StreamInterface,
      *     name: string,
      *     tags?: array<string, string>,
      *     workspaceId: string

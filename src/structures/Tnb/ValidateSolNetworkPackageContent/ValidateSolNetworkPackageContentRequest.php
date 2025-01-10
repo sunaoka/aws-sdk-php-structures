@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'application/zip' $contentType
- * @property string $file
+ * @property string|resource|\Psr\Http\Message\StreamInterface $file
  * @property string $nsdInfoId
  */
 class ValidateSolNetworkPackageContentRequest extends Request
@@ -14,7 +14,7 @@ class ValidateSolNetworkPackageContentRequest extends Request
     /**
      * @param array{
      *     contentType?: 'application/zip',
-     *     file: string,
+     *     file: string|resource|\Psr\Http\Message\StreamInterface,
      *     nsdInfoId: string
      * } $args
      */

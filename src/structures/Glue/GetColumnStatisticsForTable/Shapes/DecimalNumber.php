@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Glue\GetColumnStatisticsForTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UnscaledValue
+ * @property \Psr\Http\Message\StreamInterface $UnscaledValue
  * @property int $Scale
  */
 class DecimalNumber extends Shape
 {
     /**
      * @param array{
-     *     UnscaledValue: string,
+     *     UnscaledValue: \Psr\Http\Message\StreamInterface,
      *     Scale: int
      * } $args
      */

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LocationService\GetMapStyleDescriptor;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Blob
+ * @property \Psr\Http\Message\StreamInterface $Blob
  * @property string $ContentType
  * @property string $CacheControl
  */

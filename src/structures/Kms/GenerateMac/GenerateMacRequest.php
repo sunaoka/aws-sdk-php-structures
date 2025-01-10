@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Kms\GenerateMac;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Message
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Message
  * @property string $KeyId
  * @property 'HMAC_SHA_224'|'HMAC_SHA_256'|'HMAC_SHA_384'|'HMAC_SHA_512' $MacAlgorithm
  * @property list<string> $GrantTokens
@@ -15,7 +15,7 @@ class GenerateMacRequest extends Request
 {
     /**
      * @param array{
-     *     Message: string,
+     *     Message: string|resource|\Psr\Http\Message\StreamInterface,
      *     KeyId: string,
      *     MacAlgorithm: 'HMAC_SHA_224'|'HMAC_SHA_256'|'HMAC_SHA_384'|'HMAC_SHA_512',
      *     GrantTokens?: list<string>,

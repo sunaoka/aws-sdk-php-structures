@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DescribeInterconnectLoa\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $loaContent
+ * @property \Psr\Http\Message\StreamInterface $loaContent
  * @property 'application/pdf' $loaContentType
  */
 class Loa extends Shape
 {
     /**
      * @param array{
-     *     loaContent?: string,
+     *     loaContent?: \Psr\Http\Message\StreamInterface,
      *     loaContentType?: 'application/pdf'
      * } $args
      */

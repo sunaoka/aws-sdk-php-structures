@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property 'text/plain' $contentType
- * @property string $nsd
+ * @property \Psr\Http\Message\StreamInterface $nsd
  */
 class GetSolNetworkPackageDescriptorResponse extends Response
 {

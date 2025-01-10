@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $contentEncoding
  * @property string $contentType
- * @property string $profile
+ * @property \Psr\Http\Message\StreamInterface $profile
  */
 class GetProfileResponse extends Response
 {

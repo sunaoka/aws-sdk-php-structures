@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\TaxSettings\PutTaxExemption\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $documentFile
+ * @property string|resource|\Psr\Http\Message\StreamInterface $documentFile
  * @property string $documentName
  */
 class ExemptionCertificate extends Shape
 {
     /**
      * @param array{
-     *     documentFile: string,
+     *     documentFile: string|resource|\Psr\Http\Message\StreamInterface,
      *     documentName: string
      * } $args
      */

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RedshiftDataAPIService\GetStatementResult\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $blobValue
+ * @property \Psr\Http\Message\StreamInterface $blobValue
  * @property bool $booleanValue
  * @property double $doubleValue
  * @property bool $isNull
@@ -16,7 +16,7 @@ class Field extends Shape
 {
     /**
      * @param array{
-     *     blobValue?: string,
+     *     blobValue?: \Psr\Http\Message\StreamInterface,
      *     booleanValue?: bool,
      *     doubleValue?: double,
      *     isNull?: bool,

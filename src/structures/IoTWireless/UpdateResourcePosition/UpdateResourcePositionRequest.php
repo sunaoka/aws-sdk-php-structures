@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ResourceIdentifier
  * @property 'WirelessDevice'|'WirelessGateway' $ResourceType
- * @property string $GeoJsonPayload
+ * @property string|resource|\Psr\Http\Message\StreamInterface $GeoJsonPayload
  */
 class UpdateResourcePositionRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateResourcePositionRequest extends Request
      * @param array{
      *     ResourceIdentifier: string,
      *     ResourceType: 'WirelessDevice'|'WirelessGateway',
-     *     GeoJsonPayload?: string
+     *     GeoJsonPayload?: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $S3Bucket
  * @property string $S3Key
  * @property string $S3Version
- * @property string $ZipFile
+ * @property string|resource|\Psr\Http\Message\StreamInterface $ZipFile
  * @property string $Handler
  */
 class CanaryCodeInput extends Shape
@@ -18,7 +18,7 @@ class CanaryCodeInput extends Shape
      *     S3Bucket?: string,
      *     S3Key?: string,
      *     S3Version?: string,
-     *     ZipFile?: string,
+     *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface,
      *     Handler: string
      * } $args
      */

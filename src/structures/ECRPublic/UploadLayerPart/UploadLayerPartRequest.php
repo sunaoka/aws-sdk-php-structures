@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $uploadId
  * @property int<0, max> $partFirstByte
  * @property int<0, max> $partLastByte
- * @property string $layerPartBlob
+ * @property string|resource|\Psr\Http\Message\StreamInterface $layerPartBlob
  */
 class UploadLayerPartRequest extends Request
 {
@@ -21,7 +21,7 @@ class UploadLayerPartRequest extends Request
      *     uploadId: string,
      *     partFirstByte: int<0, max>,
      *     partLastByte: int<0, max>,
-     *     layerPartBlob: string
+     *     layerPartBlob: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

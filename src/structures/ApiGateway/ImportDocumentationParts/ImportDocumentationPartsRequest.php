@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $restApiId
  * @property 'merge'|'overwrite' $mode
  * @property bool $failOnWarnings
- * @property string $body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $body
  */
 class ImportDocumentationPartsRequest extends Request
 {
@@ -17,7 +17,7 @@ class ImportDocumentationPartsRequest extends Request
      *     restApiId: string,
      *     mode?: 'merge'|'overwrite',
      *     failOnWarnings?: bool,
-     *     body: string
+     *     body: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

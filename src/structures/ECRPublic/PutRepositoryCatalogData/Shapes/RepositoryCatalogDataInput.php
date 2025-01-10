@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $description
  * @property list<string> $architectures
  * @property list<string> $operatingSystems
- * @property string $logoImageBlob
+ * @property string|resource|\Psr\Http\Message\StreamInterface $logoImageBlob
  * @property string $aboutText
  * @property string $usageText
  */
@@ -19,7 +19,7 @@ class RepositoryCatalogDataInput extends Shape
      *     description?: string,
      *     architectures?: list<string>,
      *     operatingSystems?: list<string>,
-     *     logoImageBlob?: string,
+     *     logoImageBlob?: string|resource|\Psr\Http\Message\StreamInterface,
      *     aboutText?: string,
      *     usageText?: string
      * } $args

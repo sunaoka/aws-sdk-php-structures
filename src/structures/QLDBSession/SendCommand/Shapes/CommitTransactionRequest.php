@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $TransactionId
- * @property string $CommitDigest
+ * @property string|resource|\Psr\Http\Message\StreamInterface $CommitDigest
  */
 class CommitTransactionRequest extends Shape
 {
     /**
      * @param array{
      *     TransactionId: string,
-     *     CommitDigest: string
+     *     CommitDigest: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

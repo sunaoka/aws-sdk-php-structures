@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $TextContent
- * @property string $ZipFileContent
+ * @property string|resource|\Psr\Http\Message\StreamInterface $ZipFileContent
  * @property S3ContentLocation $S3ContentLocation
  */
 class CodeContent extends Shape
@@ -14,7 +14,7 @@ class CodeContent extends Shape
     /**
      * @param array{
      *     TextContent?: string,
-     *     ZipFileContent?: string,
+     *     ZipFileContent?: string|resource|\Psr\Http\Message\StreamInterface,
      *     S3ContentLocation?: S3ContentLocation
      * } $args
      */

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\S3\GetObject;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Body
+ * @property \Psr\Http\Message\StreamInterface $Body
  * @property bool $DeleteMarker
  * @property string $AcceptRanges
  * @property string $Expiration

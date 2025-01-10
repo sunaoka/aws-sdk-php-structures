@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\TaxSettings\PutTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $fileContent
+ * @property string|resource|\Psr\Http\Message\StreamInterface $fileContent
  * @property string $fileName
  */
 class TaxRegistrationDocFile extends Shape
 {
     /**
      * @param array{
-     *     fileContent: string,
+     *     fileContent: string|resource|\Psr\Http\Message\StreamInterface,
      *     fileName: string
      * } $args
      */

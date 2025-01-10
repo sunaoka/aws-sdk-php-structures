@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $KeyId
- * @property string $SharedSecret
- * @property string $CiphertextForRecipient
+ * @property \Psr\Http\Message\StreamInterface $SharedSecret
+ * @property \Psr\Http\Message\StreamInterface $CiphertextForRecipient
  * @property 'ECDH' $KeyAgreementAlgorithm
  * @property 'AWS_KMS'|'EXTERNAL'|'AWS_CLOUDHSM'|'EXTERNAL_KEY_STORE' $KeyOrigin
  */

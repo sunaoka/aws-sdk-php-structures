@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $data
+ * @property \Psr\Http\Message\StreamInterface $data
  * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property string $name
  * @property RuleGroupsNamespaceStatus $status
@@ -19,7 +19,7 @@ class RuleGroupsNamespaceDescription extends Shape
      * @param array{
      *     arn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     data: string,
+     *     data: \Psr\Http\Message\StreamInterface,
      *     modifiedAt: \Aws\Api\DateTimeResult,
      *     name: string,
      *     status: RuleGroupsNamespaceStatus,

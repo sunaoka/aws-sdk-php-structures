@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Translate\TranslateDocument\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Content
+ * @property \Psr\Http\Message\StreamInterface $Content
  */
 class TranslatedDocument extends Shape
 {
     /**
-     * @param array{Content: string} $args
+     * @param array{Content: \Psr\Http\Message\StreamInterface} $args
      */
     public function __construct(array $args)
     {

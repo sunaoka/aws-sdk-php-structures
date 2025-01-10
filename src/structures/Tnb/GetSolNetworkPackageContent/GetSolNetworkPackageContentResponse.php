@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property 'application/zip' $contentType
- * @property string $nsdContent
+ * @property \Psr\Http\Message\StreamInterface $nsdContent
  */
 class GetSolNetworkPackageContentResponse extends Response
 {

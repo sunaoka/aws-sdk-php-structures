@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClientRequestToken
  * @property string $Description
  * @property string $KmsKeyId
- * @property string $SecretBinary
+ * @property string|resource|\Psr\Http\Message\StreamInterface $SecretBinary
  * @property string $SecretString
  */
 class UpdateSecretRequest extends Request
@@ -20,7 +20,7 @@ class UpdateSecretRequest extends Request
      *     ClientRequestToken?: string,
      *     Description?: string,
      *     KmsKeyId?: string,
-     *     SecretBinary?: string,
+     *     SecretBinary?: string|resource|\Psr\Http\Message\StreamInterface,
      *     SecretString?: string
      * } $args
      */

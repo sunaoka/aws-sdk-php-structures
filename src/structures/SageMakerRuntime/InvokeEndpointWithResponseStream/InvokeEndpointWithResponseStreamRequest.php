@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EndpointName
- * @property string $Body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Body
  * @property string $ContentType
  * @property string $Accept
  * @property string $CustomAttributes
@@ -21,7 +21,7 @@ class InvokeEndpointWithResponseStreamRequest extends Request
     /**
      * @param array{
      *     EndpointName: string,
-     *     Body: string,
+     *     Body: string|resource|\Psr\Http\Message\StreamInterface,
      *     ContentType?: string,
      *     Accept?: string,
      *     CustomAttributes?: string,

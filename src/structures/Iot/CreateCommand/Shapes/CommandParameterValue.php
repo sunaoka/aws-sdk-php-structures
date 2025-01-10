@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $I
  * @property int $L
  * @property double $D
- * @property string $BIN
+ * @property string|resource|\Psr\Http\Message\StreamInterface $BIN
  * @property string $UL
  */
 class CommandParameterValue extends Shape
@@ -22,7 +22,7 @@ class CommandParameterValue extends Shape
      *     I?: int,
      *     L?: int,
      *     D?: double,
-     *     BIN?: string,
+     *     BIN?: string|resource|\Psr\Http\Message\StreamInterface,
      *     UL?: string
      * } $args
      */

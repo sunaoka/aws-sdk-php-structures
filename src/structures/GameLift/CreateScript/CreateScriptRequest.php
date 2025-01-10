@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $Version
  * @property Shapes\S3Location $StorageLocation
- * @property string $ZipFile
+ * @property string|resource|\Psr\Http\Message\StreamInterface $ZipFile
  * @property list<Shapes\Tag> $Tags
  */
 class CreateScriptRequest extends Request
@@ -18,7 +18,7 @@ class CreateScriptRequest extends Request
      *     Name?: string,
      *     Version?: string,
      *     StorageLocation?: Shapes\S3Location,
-     *     ZipFile?: string,
+     *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface,
      *     Tags?: list<Shapes\Tag>
      * } $args
      */

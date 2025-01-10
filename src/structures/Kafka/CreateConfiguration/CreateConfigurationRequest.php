@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Description
  * @property list<string> $KafkaVersions
  * @property string $Name
- * @property string $ServerProperties
+ * @property string|resource|\Psr\Http\Message\StreamInterface $ServerProperties
  */
 class CreateConfigurationRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateConfigurationRequest extends Request
      *     Description?: string,
      *     KafkaVersions?: list<string>,
      *     Name: string,
-     *     ServerProperties: string
+     *     ServerProperties: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

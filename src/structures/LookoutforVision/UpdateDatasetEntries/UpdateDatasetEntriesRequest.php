@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ProjectName
  * @property string $DatasetType
- * @property string $Changes
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Changes
  * @property string $ClientToken
  */
 class UpdateDatasetEntriesRequest extends Request
@@ -16,7 +16,7 @@ class UpdateDatasetEntriesRequest extends Request
      * @param array{
      *     ProjectName: string,
      *     DatasetType: string,
-     *     Changes: string,
+     *     Changes: string|resource|\Psr\Http\Message\StreamInterface,
      *     ClientToken?: string
      * } $args
      */

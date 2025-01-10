@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\S3\UploadPart;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Body
  * @property string $Bucket
  * @property int $ContentLength
  * @property string $ContentMD5
@@ -27,7 +27,7 @@ class UploadPartRequest extends Request
 {
     /**
      * @param array{
-     *     Body?: string,
+     *     Body?: string|resource|\Psr\Http\Message\StreamInterface,
      *     Bucket: string,
      *     ContentLength?: int,
      *     ContentMD5?: string,

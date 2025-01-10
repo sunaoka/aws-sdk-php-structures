@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClientRequestToken
  * @property string $Description
  * @property string $KmsKeyId
- * @property string $SecretBinary
+ * @property string|resource|\Psr\Http\Message\StreamInterface $SecretBinary
  * @property string $SecretString
  * @property list<Shapes\Tag> $Tags
  * @property list<Shapes\ReplicaRegionType> $AddReplicaRegions
@@ -23,7 +23,7 @@ class CreateSecretRequest extends Request
      *     ClientRequestToken?: string,
      *     Description?: string,
      *     KmsKeyId?: string,
-     *     SecretBinary?: string,
+     *     SecretBinary?: string|resource|\Psr\Http\Message\StreamInterface,
      *     SecretString?: string,
      *     Tags?: list<Shapes\Tag>,
      *     AddReplicaRegions?: list<Shapes\ReplicaRegionType>,
