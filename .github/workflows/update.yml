@@ -3,7 +3,7 @@ name: Update Structures from Generator
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 20 * * *'
+    - cron: '0 21 * * *'
 
 jobs:
   run:
@@ -20,11 +20,19 @@ jobs:
           max_attempts: 3
           command: bash tools/update/update.sh
 
+      - name: Get AWS SDK for PHP Version
+        id: version
+        run: |
+          version=$(curl -sL -o - https://raw.githubusercontent.com/sunaoka/aws-sdk-php-structures-generator/refs/heads/main/composer.json | jq -r .require.'"aws/aws-sdk-php"')
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: Update Structures
+          commit-message: Update Structures from AWS SDK for PHP ${{ steps.version.outputs.version }}
           delete-branch: true
-          title: Update Structures
+          title: Update Structures from AWS SDK for PHP ${{ steps.version.outputs.version }}
           body: |
             Structures have been updated.
+            
+            https://github.com/aws/aws-sdk-php/releases/tag/${{ steps.version.outputs.version }}
