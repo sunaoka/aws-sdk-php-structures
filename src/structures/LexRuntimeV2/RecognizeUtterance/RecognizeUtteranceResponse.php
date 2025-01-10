@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $requestAttributes
  * @property string $sessionId
  * @property string $inputTranscript
- * @property string $audioStream
+ * @property string|resource|\Psr\Http\Message\StreamInterface $audioStream
  * @property string $recognizedBotMember
  */
 class RecognizeUtteranceResponse extends Response

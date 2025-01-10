@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SecretKey
  * @property list<string> $AgentArns
  * @property list<Shapes\TagListEntry> $Tags
- * @property string $ServerCertificate
+ * @property string|resource|\Psr\Http\Message\StreamInterface $ServerCertificate
  */
 class CreateLocationObjectStorageRequest extends Request
 {
@@ -29,7 +29,7 @@ class CreateLocationObjectStorageRequest extends Request
      *     SecretKey?: string,
      *     AgentArns: list<string>,
      *     Tags?: list<Shapes\TagListEntry>,
-     *     ServerCertificate?: string
+     *     ServerCertificate?: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

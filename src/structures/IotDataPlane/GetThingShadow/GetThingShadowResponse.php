@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\IotDataPlane\GetThingShadow;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $payload
+ * @property \Psr\Http\Message\StreamInterface $payload
  */
 class GetThingShadowResponse extends Response
 {

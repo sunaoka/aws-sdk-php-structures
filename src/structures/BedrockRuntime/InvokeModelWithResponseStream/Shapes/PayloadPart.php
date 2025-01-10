@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\InvokeModelWithResponseStream\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bytes
+ * @property \Psr\Http\Message\StreamInterface $bytes
  */
 class PayloadPart extends Shape
 {
     /**
-     * @param array{bytes?: string} $args
+     * @param array{bytes?: \Psr\Http\Message\StreamInterface} $args
      */
     public function __construct(array $args = [])
     {

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $clientToken
- * @property string $data
+ * @property string|resource|\Psr\Http\Message\StreamInterface $data
  * @property string $workspaceId
  */
 class CreateAlertManagerDefinitionRequest extends Request
@@ -14,7 +14,7 @@ class CreateAlertManagerDefinitionRequest extends Request
     /**
      * @param array{
      *     clientToken?: string,
-     *     data: string,
+     *     data: string|resource|\Psr\Http\Message\StreamInterface,
      *     workspaceId: string
      * } $args
      */

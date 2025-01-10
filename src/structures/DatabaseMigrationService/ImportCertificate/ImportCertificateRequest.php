@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CertificateIdentifier
  * @property string $CertificatePem
- * @property string $CertificateWallet
+ * @property string|resource|\Psr\Http\Message\StreamInterface $CertificateWallet
  * @property list<Shapes\Tag> $Tags
  */
 class ImportCertificateRequest extends Request
@@ -16,7 +16,7 @@ class ImportCertificateRequest extends Request
      * @param array{
      *     CertificateIdentifier: string,
      *     CertificatePem?: string,
-     *     CertificateWallet?: string,
+     *     CertificateWallet?: string|resource|\Psr\Http\Message\StreamInterface,
      *     Tags?: list<Shapes\Tag>
      * } $args
      */

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMakerRuntime\InvokeEndpoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Body
  * @property string $ContentType
  * @property string $InvokedProductionVariant
  * @property string $CustomAttributes

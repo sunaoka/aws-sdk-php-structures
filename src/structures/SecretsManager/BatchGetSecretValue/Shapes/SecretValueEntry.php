@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ARN
  * @property string $Name
  * @property string $VersionId
- * @property string $SecretBinary
+ * @property \Psr\Http\Message\StreamInterface $SecretBinary
  * @property string $SecretString
  * @property list<string> $VersionStages
  * @property \Aws\Api\DateTimeResult $CreatedDate
@@ -20,7 +20,7 @@ class SecretValueEntry extends Shape
      *     ARN?: string,
      *     Name?: string,
      *     VersionId?: string,
-     *     SecretBinary?: string,
+     *     SecretBinary?: \Psr\Http\Message\StreamInterface,
      *     SecretString?: string,
      *     VersionStages?: list<string>,
      *     CreatedDate?: \Aws\Api\DateTimeResult

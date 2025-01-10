@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $crlArn
- * @property string $crlData
+ * @property \Psr\Http\Message\StreamInterface $crlData
  * @property string $crlId
  * @property bool $enabled
  * @property string $name
@@ -20,7 +20,7 @@ class CrlDetail extends Shape
      * @param array{
      *     createdAt?: \Aws\Api\DateTimeResult,
      *     crlArn?: string,
-     *     crlData?: string,
+     *     crlData?: \Psr\Http\Message\StreamInterface,
      *     crlId?: string,
      *     enabled?: bool,
      *     name?: string,

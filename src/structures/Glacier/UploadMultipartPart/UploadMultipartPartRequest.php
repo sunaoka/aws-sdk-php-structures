@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $uploadId
  * @property string $checksum
  * @property string $range
- * @property string $body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $body
  */
 class UploadMultipartPartRequest extends Request
 {
@@ -21,7 +21,7 @@ class UploadMultipartPartRequest extends Request
      *     uploadId: string,
      *     checksum?: string,
      *     range?: string,
-     *     body?: string
+     *     body?: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

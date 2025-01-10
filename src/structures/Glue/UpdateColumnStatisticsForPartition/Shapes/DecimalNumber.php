@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateColumnStatisticsForPartition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UnscaledValue
+ * @property string|resource|\Psr\Http\Message\StreamInterface $UnscaledValue
  * @property int $Scale
  */
 class DecimalNumber extends Shape
 {
     /**
      * @param array{
-     *     UnscaledValue: string,
+     *     UnscaledValue: string|resource|\Psr\Http\Message\StreamInterface,
      *     Scale: int
      * } $args
      */

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WAFV2\CheckCapacity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SearchString
+ * @property string|resource|\Psr\Http\Message\StreamInterface $SearchString
  * @property FieldToMatch $FieldToMatch
  * @property list<TextTransformation> $TextTransformations
  * @property 'EXACTLY'|'STARTS_WITH'|'ENDS_WITH'|'CONTAINS'|'CONTAINS_WORD' $PositionalConstraint
@@ -14,7 +14,7 @@ class ByteMatchStatement extends Shape
 {
     /**
      * @param array{
-     *     SearchString: string,
+     *     SearchString: string|resource|\Psr\Http\Message\StreamInterface,
      *     FieldToMatch: FieldToMatch,
      *     TextTransformations: list<TextTransformation>,
      *     PositionalConstraint: 'EXACTLY'|'STARTS_WITH'|'ENDS_WITH'|'CONTAINS'|'CONTAINS_WORD'

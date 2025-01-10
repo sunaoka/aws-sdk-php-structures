@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PlainText'|'CustomPayload'|'SSML'|'Composite' $messageFormat
  * @property 'ElicitIntent'|'ConfirmIntent'|'ElicitSlot'|'Fulfilled'|'ReadyForFulfillment'|'Failed' $dialogState
  * @property string $slotToElicit
- * @property string $audioStream
+ * @property \Psr\Http\Message\StreamInterface $audioStream
  * @property string $sessionId
  * @property string $activeContexts
  */

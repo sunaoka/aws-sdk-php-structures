@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'Event'|'RequestResponse'|'DryRun' $InvocationType
  * @property 'None'|'Tail' $LogType
  * @property string $ClientContext
- * @property string $Payload
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Payload
  * @property string $Qualifier
  */
 class InvokeRequest extends Request
@@ -20,7 +20,7 @@ class InvokeRequest extends Request
      *     InvocationType?: 'Event'|'RequestResponse'|'DryRun',
      *     LogType?: 'None'|'Tail',
      *     ClientContext?: string,
-     *     Payload?: string,
+     *     Payload?: string|resource|\Psr\Http\Message\StreamInterface,
      *     Qualifier?: string
      * } $args
      */

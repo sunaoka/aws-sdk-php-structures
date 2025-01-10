@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Kms\ReEncrypt;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CiphertextBlob
+ * @property string|resource|\Psr\Http\Message\StreamInterface $CiphertextBlob
  * @property array<string, string> $SourceEncryptionContext
  * @property string $SourceKeyId
  * @property string $DestinationKeyId
@@ -19,7 +19,7 @@ class ReEncryptRequest extends Request
 {
     /**
      * @param array{
-     *     CiphertextBlob: string,
+     *     CiphertextBlob: string|resource|\Psr\Http\Message\StreamInterface,
      *     SourceEncryptionContext?: array<string, string>,
      *     SourceKeyId?: string,
      *     DestinationKeyId: string,

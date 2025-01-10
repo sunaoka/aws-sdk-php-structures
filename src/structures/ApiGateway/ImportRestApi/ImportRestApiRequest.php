@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool $failOnWarnings
  * @property array<string, string> $parameters
- * @property string $body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $body
  */
 class ImportRestApiRequest extends Request
 {
@@ -15,7 +15,7 @@ class ImportRestApiRequest extends Request
      * @param array{
      *     failOnWarnings?: bool,
      *     parameters?: array<string, string>,
-     *     body: string
+     *     body: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

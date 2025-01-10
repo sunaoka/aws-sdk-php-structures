@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'HTTPS'|'HTTP' $ServerProtocol
  * @property list<string> $AgentArns
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $ServerCertificate
+ * @property \Psr\Http\Message\StreamInterface $ServerCertificate
  */
 class DescribeLocationObjectStorageResponse extends Response
 {

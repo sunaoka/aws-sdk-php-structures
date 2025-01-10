@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $CertificateIdentifier
  * @property \Aws\Api\DateTimeResult $CertificateCreationDate
  * @property string $CertificatePem
- * @property string $CertificateWallet
+ * @property \Psr\Http\Message\StreamInterface $CertificateWallet
  * @property string $CertificateArn
  * @property string $CertificateOwner
  * @property \Aws\Api\DateTimeResult $ValidFromDate
@@ -23,7 +23,7 @@ class Certificate extends Shape
      *     CertificateIdentifier?: string,
      *     CertificateCreationDate?: \Aws\Api\DateTimeResult,
      *     CertificatePem?: string,
-     *     CertificateWallet?: string,
+     *     CertificateWallet?: \Psr\Http\Message\StreamInterface,
      *     CertificateArn?: string,
      *     CertificateOwner?: string,
      *     ValidFromDate?: \Aws\Api\DateTimeResult,

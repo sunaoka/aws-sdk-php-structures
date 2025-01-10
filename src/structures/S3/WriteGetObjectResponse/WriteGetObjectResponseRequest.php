@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $RequestRoute
  * @property string $RequestToken
- * @property string $Body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Body
  * @property int $StatusCode
  * @property string $ErrorCode
  * @property string $ErrorMessage
@@ -52,7 +52,7 @@ class WriteGetObjectResponseRequest extends Request
      * @param array{
      *     RequestRoute: string,
      *     RequestToken: string,
-     *     Body?: string,
+     *     Body?: string|resource|\Psr\Http\Message\StreamInterface,
      *     StatusCode?: int,
      *     ErrorCode?: string,
      *     ErrorMessage?: string,

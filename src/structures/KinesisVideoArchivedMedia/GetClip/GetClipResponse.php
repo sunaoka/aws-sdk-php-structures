@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $ContentType
- * @property string $Payload
+ * @property \Psr\Http\Message\StreamInterface $Payload
  */
 class GetClipResponse extends Response
 {

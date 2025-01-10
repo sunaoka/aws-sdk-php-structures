@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudTrail\ListPublicKeys\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
+ * @property \Psr\Http\Message\StreamInterface $Value
  * @property \Aws\Api\DateTimeResult $ValidityStartTime
  * @property \Aws\Api\DateTimeResult $ValidityEndTime
  * @property string $Fingerprint
@@ -14,7 +14,7 @@ class PublicKey extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
+     *     Value?: \Psr\Http\Message\StreamInterface,
      *     ValidityStartTime?: \Aws\Api\DateTimeResult,
      *     ValidityEndTime?: \Aws\Api\DateTimeResult,
      *     Fingerprint?: string

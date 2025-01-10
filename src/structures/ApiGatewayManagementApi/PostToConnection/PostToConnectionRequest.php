@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ApiGatewayManagementApi\PostToConnection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Data
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Data
  * @property string $ConnectionId
  */
 class PostToConnectionRequest extends Request
 {
     /**
      * @param array{
-     *     Data: string,
+     *     Data: string|resource|\Psr\Http\Message\StreamInterface,
      *     ConnectionId: string
      * } $args
      */

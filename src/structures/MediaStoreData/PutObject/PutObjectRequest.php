@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaStoreData\PutObject;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Body
  * @property string $Path
  * @property string $ContentType
  * @property string $CacheControl
@@ -16,7 +16,7 @@ class PutObjectRequest extends Request
 {
     /**
      * @param array{
-     *     Body: string,
+     *     Body: string|resource|\Psr\Http\Message\StreamInterface,
      *     Path: string,
      *     ContentType?: string,
      *     CacheControl?: string,

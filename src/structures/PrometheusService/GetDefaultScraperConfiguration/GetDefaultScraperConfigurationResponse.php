@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PrometheusService\GetDefaultScraperConfiguratio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $configuration
+ * @property \Psr\Http\Message\StreamInterface $configuration
  */
 class GetDefaultScraperConfigurationResponse extends Response
 {

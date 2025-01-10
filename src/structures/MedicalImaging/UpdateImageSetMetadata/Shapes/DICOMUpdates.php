@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MedicalImaging\UpdateImageSetMetadata\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $removableAttributes
- * @property string $updatableAttributes
+ * @property string|resource|\Psr\Http\Message\StreamInterface $removableAttributes
+ * @property string|resource|\Psr\Http\Message\StreamInterface $updatableAttributes
  */
 class DICOMUpdates extends Shape
 {
     /**
      * @param array{
-     *     removableAttributes?: string,
-     *     updatableAttributes?: string
+     *     removableAttributes?: string|resource|\Psr\Http\Message\StreamInterface,
+     *     updatableAttributes?: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property string $componentName
  * @property string $componentVersion
- * @property string $recipe
+ * @property \Psr\Http\Message\StreamInterface $recipe
  * @property 'ACTIVE'|'DISCONTINUED'|'DELETED' $vendorGuidance
  * @property string $message
  */
@@ -19,7 +19,7 @@ class ResolvedComponentVersion extends Shape
      *     arn?: string,
      *     componentName?: string,
      *     componentVersion?: string,
-     *     recipe?: string,
+     *     recipe?: \Psr\Http\Message\StreamInterface,
      *     vendorGuidance?: 'ACTIVE'|'DISCONTINUED'|'DELETED',
      *     message?: string
      * } $args

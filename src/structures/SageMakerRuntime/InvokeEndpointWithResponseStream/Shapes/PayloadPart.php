@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMakerRuntime\InvokeEndpointWithResponseStre
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Bytes
+ * @property \Psr\Http\Message\StreamInterface $Bytes
  */
 class PayloadPart extends Shape
 {
     /**
-     * @param array{Bytes?: string} $args
+     * @param array{Bytes?: \Psr\Http\Message\StreamInterface} $args
      */
     public function __construct(array $args = [])
     {

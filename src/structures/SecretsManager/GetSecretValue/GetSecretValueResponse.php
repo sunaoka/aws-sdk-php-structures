@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ARN
  * @property string $Name
  * @property string $VersionId
- * @property string $SecretBinary
+ * @property \Psr\Http\Message\StreamInterface $SecretBinary
  * @property string $SecretString
  * @property list<string> $VersionStages
  * @property \Aws\Api\DateTimeResult $CreatedDate

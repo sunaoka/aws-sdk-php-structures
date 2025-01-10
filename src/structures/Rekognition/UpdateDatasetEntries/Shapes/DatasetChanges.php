@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Rekognition\UpdateDatasetEntries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GroundTruth
+ * @property string|resource|\Psr\Http\Message\StreamInterface $GroundTruth
  */
 class DatasetChanges extends Shape
 {
     /**
-     * @param array{GroundTruth: string} $args
+     * @param array{GroundTruth: string|resource|\Psr\Http\Message\StreamInterface} $args
      */
     public function __construct(array $args)
     {

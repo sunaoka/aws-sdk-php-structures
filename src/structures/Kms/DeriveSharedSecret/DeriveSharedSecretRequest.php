@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $KeyId
  * @property 'ECDH' $KeyAgreementAlgorithm
- * @property string $PublicKey
+ * @property string|resource|\Psr\Http\Message\StreamInterface $PublicKey
  * @property list<string> $GrantTokens
  * @property bool $DryRun
  * @property Shapes\RecipientInfo $Recipient
@@ -18,7 +18,7 @@ class DeriveSharedSecretRequest extends Request
      * @param array{
      *     KeyId: string,
      *     KeyAgreementAlgorithm: 'ECDH',
-     *     PublicKey: string,
+     *     PublicKey: string|resource|\Psr\Http\Message\StreamInterface,
      *     GrantTokens?: list<string>,
      *     DryRun?: bool,
      *     Recipient?: Shapes\RecipientInfo

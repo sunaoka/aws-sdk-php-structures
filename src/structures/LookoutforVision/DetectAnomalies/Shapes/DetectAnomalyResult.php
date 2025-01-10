@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $IsAnomalous
  * @property float $Confidence
  * @property list<Anomaly> $Anomalies
- * @property string $AnomalyMask
+ * @property \Psr\Http\Message\StreamInterface $AnomalyMask
  */
 class DetectAnomalyResult extends Shape
 {
@@ -19,7 +19,7 @@ class DetectAnomalyResult extends Shape
      *     IsAnomalous?: bool,
      *     Confidence?: float,
      *     Anomalies?: list<Anomaly>,
-     *     AnomalyMask?: string
+     *     AnomalyMask?: \Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'merge'|'overwrite' $mode
  * @property bool $failOnWarnings
  * @property array<string, string> $parameters
- * @property string $body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $body
  */
 class PutRestApiRequest extends Request
 {
@@ -19,7 +19,7 @@ class PutRestApiRequest extends Request
      *     mode?: 'merge'|'overwrite',
      *     failOnWarnings?: bool,
      *     parameters?: array<string, string>,
-     *     body: string
+     *     body: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Text
  * @property 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW' $LanguageCode
  * @property string $EndpointArn
- * @property string $Bytes
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Bytes
  * @property Shapes\DocumentReaderConfig $DocumentReaderConfig
  */
 class DetectEntitiesRequest extends Request
@@ -18,7 +18,7 @@ class DetectEntitiesRequest extends Request
      *     Text?: string,
      *     LanguageCode?: 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW',
      *     EndpointArn?: string,
-     *     Bytes?: string,
+     *     Bytes?: string|resource|\Psr\Http\Message\StreamInterface,
      *     DocumentReaderConfig?: Shapes\DocumentReaderConfig
      * } $args
      */

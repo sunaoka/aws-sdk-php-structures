@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Attribution $attribution
- * @property string $bytes
+ * @property \Psr\Http\Message\StreamInterface $bytes
  */
 class InlineAgentPayloadPart extends Shape
 {
     /**
      * @param array{
      *     attribution?: Attribution,
-     *     bytes?: string
+     *     bytes?: \Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args = [])

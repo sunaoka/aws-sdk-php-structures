@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Translate\ImportTerminology\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $File
+ * @property string|resource|\Psr\Http\Message\StreamInterface $File
  * @property 'CSV'|'TMX'|'TSV' $Format
  * @property 'UNI'|'MULTI' $Directionality
  */
@@ -13,7 +13,7 @@ class TerminologyData extends Shape
 {
     /**
      * @param array{
-     *     File: string,
+     *     File: string|resource|\Psr\Http\Message\StreamInterface,
      *     Format: 'CSV'|'TMX'|'TSV',
      *     Directionality?: 'UNI'|'MULTI'
      * } $args

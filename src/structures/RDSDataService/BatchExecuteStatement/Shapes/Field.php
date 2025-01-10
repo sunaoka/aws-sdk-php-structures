@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $longValue
  * @property double $doubleValue
  * @property string $stringValue
- * @property string $blobValue
+ * @property string|resource|\Psr\Http\Message\StreamInterface $blobValue
  * @property ArrayValue $arrayValue
  */
 class Field extends Shape
@@ -22,7 +22,7 @@ class Field extends Shape
      *     longValue?: int,
      *     doubleValue?: double,
      *     stringValue?: string,
-     *     blobValue?: string,
+     *     blobValue?: string|resource|\Psr\Http\Message\StreamInterface,
      *     arrayValue?: ArrayValue
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $AWSAccessKeyId
  * @property string $Bucket
  * @property string $Prefix
- * @property string $UploadPolicy
+ * @property \Psr\Http\Message\StreamInterface $UploadPolicy
  * @property string $UploadPolicySignature
  */
 class S3Storage extends Shape
@@ -18,7 +18,7 @@ class S3Storage extends Shape
      *     AWSAccessKeyId?: string,
      *     Bucket?: string,
      *     Prefix?: string,
-     *     UploadPolicy?: string,
+     *     UploadPolicy?: \Psr\Http\Message\StreamInterface,
      *     UploadPolicySignature?: string
      * } $args
      */
