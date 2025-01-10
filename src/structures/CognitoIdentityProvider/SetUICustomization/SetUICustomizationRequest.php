@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserPoolId
  * @property string $ClientId
  * @property string $CSS
- * @property string $ImageFile
+ * @property string|resource|\Psr\Http\Message\StreamInterface $ImageFile
  */
 class SetUICustomizationRequest extends Request
 {
@@ -17,7 +17,7 @@ class SetUICustomizationRequest extends Request
      *     UserPoolId: string,
      *     ClientId?: string,
      *     CSS?: string,
-     *     ImageFile?: string
+     *     ImageFile?: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

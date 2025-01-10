@@ -15,8 +15,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'SIMPLE'|'KERBEROS' $AuthenticationType
  * @property string $SimpleUser
  * @property string $KerberosPrincipal
- * @property string $KerberosKeytab
- * @property string $KerberosKrb5Conf
+ * @property string|resource|\Psr\Http\Message\StreamInterface $KerberosKeytab
+ * @property string|resource|\Psr\Http\Message\StreamInterface $KerberosKrb5Conf
  * @property list<string> $AgentArns
  */
 class UpdateLocationHdfsRequest extends Request
@@ -33,8 +33,8 @@ class UpdateLocationHdfsRequest extends Request
      *     AuthenticationType?: 'SIMPLE'|'KERBEROS',
      *     SimpleUser?: string,
      *     KerberosPrincipal?: string,
-     *     KerberosKeytab?: string,
-     *     KerberosKrb5Conf?: string,
+     *     KerberosKeytab?: string|resource|\Psr\Http\Message\StreamInterface,
+     *     KerberosKrb5Conf?: string|resource|\Psr\Http\Message\StreamInterface,
      *     AgentArns?: list<string>
      * } $args
      */

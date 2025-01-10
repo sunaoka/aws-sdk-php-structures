@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PrometheusService\DescribeScraper\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $configurationBlob
+ * @property \Psr\Http\Message\StreamInterface $configurationBlob
  */
 class ScrapeConfiguration extends Shape
 {
     /**
-     * @param array{configurationBlob?: string} $args
+     * @param array{configurationBlob?: \Psr\Http\Message\StreamInterface} $args
      */
     public function __construct(array $args = [])
     {

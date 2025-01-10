@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glacier\GetJobOutput;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $body
+ * @property \Psr\Http\Message\StreamInterface $body
  * @property string $checksum
  * @property int $status
  * @property string $contentRange

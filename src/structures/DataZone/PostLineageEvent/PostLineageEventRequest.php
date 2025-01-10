@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $clientToken
  * @property string $domainIdentifier
- * @property string $event
+ * @property string|resource|\Psr\Http\Message\StreamInterface $event
  */
 class PostLineageEventRequest extends Request
 {
@@ -15,7 +15,7 @@ class PostLineageEventRequest extends Request
      * @param array{
      *     clientToken?: string,
      *     domainIdentifier: string,
-     *     event: string
+     *     event: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

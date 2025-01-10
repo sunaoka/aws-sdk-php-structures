@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $S
  * @property string $N
- * @property string $B
+ * @property \Psr\Http\Message\StreamInterface $B
  * @property list<string> $SS
  * @property list<string> $NS
- * @property list<string> $BS
+ * @property list<\Psr\Http\Message\StreamInterface> $BS
  * @property array<string, AttributeValue> $M
  * @property list<AttributeValue> $L
  * @property bool $NULL
@@ -22,10 +22,10 @@ class AttributeValue extends Shape
      * @param array{
      *     S?: string,
      *     N?: string,
-     *     B?: string,
+     *     B?: \Psr\Http\Message\StreamInterface,
      *     SS?: list<string>,
      *     NS?: list<string>,
-     *     BS?: list<string>,
+     *     BS?: list<\Psr\Http\Message\StreamInterface>,
      *     M?: array<string, AttributeValue>,
      *     L?: list<AttributeValue>,
      *     NULL?: bool,

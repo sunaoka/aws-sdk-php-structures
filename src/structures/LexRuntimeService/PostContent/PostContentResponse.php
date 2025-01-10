@@ -19,7 +19,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $slotToElicit
  * @property string $inputTranscript
  * @property string $encodedInputTranscript
- * @property string $audioStream
+ * @property string|resource|\Psr\Http\Message\StreamInterface $audioStream
  * @property string $botVersion
  * @property string $sessionId
  * @property string $activeContexts

@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Kms\GenerateDataKey;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $CiphertextBlob
- * @property string $Plaintext
+ * @property \Psr\Http\Message\StreamInterface $CiphertextBlob
+ * @property \Psr\Http\Message\StreamInterface $Plaintext
  * @property string $KeyId
- * @property string $CiphertextForRecipient
+ * @property \Psr\Http\Message\StreamInterface $CiphertextForRecipient
  */
 class GenerateDataKeyResponse extends Response
 {

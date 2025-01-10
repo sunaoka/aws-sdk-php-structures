@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Lambda\CreateFunction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ZipFile
+ * @property string|resource|\Psr\Http\Message\StreamInterface $ZipFile
  * @property string $S3Bucket
  * @property string $S3Key
  * @property string $S3ObjectVersion
@@ -16,7 +16,7 @@ class FunctionCode extends Shape
 {
     /**
      * @param array{
-     *     ZipFile?: string,
+     *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface,
      *     S3Bucket?: string,
      *     S3Key?: string,
      *     S3ObjectVersion?: string,

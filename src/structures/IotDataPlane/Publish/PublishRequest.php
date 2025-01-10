@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $topic
  * @property int<0, 1> $qos
  * @property bool $retain
- * @property string $payload
+ * @property string|resource|\Psr\Http\Message\StreamInterface $payload
  * @property string $userProperties
  * @property 'UNSPECIFIED_BYTES'|'UTF8_DATA' $payloadFormatIndicator
  * @property string $contentType
@@ -23,7 +23,7 @@ class PublishRequest extends Request
      *     topic: string,
      *     qos?: int<0, 1>,
      *     retain?: bool,
-     *     payload?: string,
+     *     payload?: string|resource|\Psr\Http\Message\StreamInterface,
      *     userProperties?: string,
      *     payloadFormatIndicator?: 'UNSPECIFIED_BYTES'|'UTF8_DATA',
      *     contentType?: string,

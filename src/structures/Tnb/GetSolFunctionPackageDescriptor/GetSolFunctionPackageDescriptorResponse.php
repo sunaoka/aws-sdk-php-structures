@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property 'text/plain' $contentType
- * @property string $vnfd
+ * @property \Psr\Http\Message\StreamInterface $vnfd
  */
 class GetSolFunctionPackageDescriptorResponse extends Response
 {

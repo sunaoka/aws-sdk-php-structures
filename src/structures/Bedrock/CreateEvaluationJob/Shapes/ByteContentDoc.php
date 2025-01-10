@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $identifier
  * @property string $contentType
- * @property string $data
+ * @property string|resource|\Psr\Http\Message\StreamInterface $data
  */
 class ByteContentDoc extends Shape
 {
@@ -15,7 +15,7 @@ class ByteContentDoc extends Shape
      * @param array{
      *     identifier: string,
      *     contentType: string,
-     *     data: string
+     *     data: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

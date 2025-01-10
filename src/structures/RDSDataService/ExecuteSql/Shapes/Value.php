@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double $doubleValue
  * @property float $realValue
  * @property string $stringValue
- * @property string $blobValue
+ * @property \Psr\Http\Message\StreamInterface $blobValue
  * @property list<Value> $arrayValues
  * @property StructValue $structValue
  */
@@ -27,7 +27,7 @@ class Value extends Shape
      *     doubleValue?: double,
      *     realValue?: float,
      *     stringValue?: string,
-     *     blobValue?: string,
+     *     blobValue?: \Psr\Http\Message\StreamInterface,
      *     arrayValues?: list<Value>,
      *     structValue?: StructValue
      * } $args

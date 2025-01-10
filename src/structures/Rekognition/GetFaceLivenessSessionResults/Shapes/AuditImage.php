@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetFaceLivenessSessionResults\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Bytes
+ * @property \Psr\Http\Message\StreamInterface $Bytes
  * @property S3Object $S3Object
  * @property BoundingBox $BoundingBox
  */
@@ -13,7 +13,7 @@ class AuditImage extends Shape
 {
     /**
      * @param array{
-     *     Bytes?: string,
+     *     Bytes?: \Psr\Http\Message\StreamInterface,
      *     S3Object?: S3Object,
      *     BoundingBox?: BoundingBox
      * } $args

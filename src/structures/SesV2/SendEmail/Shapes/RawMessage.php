@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SesV2\SendEmail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Data
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Data
  */
 class RawMessage extends Shape
 {
     /**
-     * @param array{Data: string} $args
+     * @param array{Data: string|resource|\Psr\Http\Message\StreamInterface} $args
      */
     public function __construct(array $args)
     {

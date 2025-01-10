@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeInputDeviceThumbnail;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Body
+ * @property \Psr\Http\Message\StreamInterface $Body
  * @property 'image/jpeg' $ContentType
  * @property int $ContentLength
  * @property string $ETag

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\InvokeModelWithResponseStream;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $body
  * @property string $contentType
  * @property string $accept
  * @property string $modelId
@@ -18,7 +18,7 @@ class InvokeModelWithResponseStreamRequest extends Request
 {
     /**
      * @param array{
-     *     body?: string,
+     *     body?: string|resource|\Psr\Http\Message\StreamInterface,
      *     contentType?: string,
      *     accept?: string,
      *     modelId: string,

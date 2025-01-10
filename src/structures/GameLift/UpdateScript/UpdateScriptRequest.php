@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $Version
  * @property Shapes\S3Location $StorageLocation
- * @property string $ZipFile
+ * @property string|resource|\Psr\Http\Message\StreamInterface $ZipFile
  */
 class UpdateScriptRequest extends Request
 {
@@ -19,7 +19,7 @@ class UpdateScriptRequest extends Request
      *     Name?: string,
      *     Version?: string,
      *     StorageLocation?: Shapes\S3Location,
-     *     ZipFile?: string
+     *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

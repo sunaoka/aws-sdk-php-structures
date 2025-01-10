@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $uploadId
  * @property 'SOURCE1'|'SOURCE2' $partSource
  * @property int<1, 10000> $partNumber
- * @property string $payload
+ * @property string|resource|\Psr\Http\Message\StreamInterface $payload
  */
 class UploadReadSetPartRequest extends Request
 {
@@ -19,7 +19,7 @@ class UploadReadSetPartRequest extends Request
      *     uploadId: string,
      *     partSource: 'SOURCE1'|'SOURCE2',
      *     partNumber: int<1, 10000>,
-     *     payload: string
+     *     payload: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

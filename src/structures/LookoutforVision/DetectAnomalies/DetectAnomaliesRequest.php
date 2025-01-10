@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ProjectName
  * @property string $ModelVersion
- * @property string $Body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Body
  * @property string $ContentType
  */
 class DetectAnomaliesRequest extends Request
@@ -16,7 +16,7 @@ class DetectAnomaliesRequest extends Request
      * @param array{
      *     ProjectName: string,
      *     ModelVersion: string,
-     *     Body: string,
+     *     Body: string|resource|\Psr\Http\Message\StreamInterface,
      *     ContentType: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $networkInterface
- * @property list<string> $canDbcFiles
+ * @property list<string|resource|\Psr\Http\Message\StreamInterface> $canDbcFiles
  * @property array<string, string> $signalsMap
  */
 class CanDbcDefinition extends Shape
@@ -14,7 +14,7 @@ class CanDbcDefinition extends Shape
     /**
      * @param array{
      *     networkInterface: string,
-     *     canDbcFiles: list<string>,
+     *     canDbcFiles: list<string|resource|\Psr\Http\Message\StreamInterface>,
      *     signalsMap?: array<string, string>
      * } $args
      */

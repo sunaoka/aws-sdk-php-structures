@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $fileName
- * @property string $data
+ * @property \Psr\Http\Message\StreamInterface $data
  */
 class Attachment extends Shape
 {
     /**
      * @param array{
      *     fileName?: string,
-     *     data?: string
+     *     data?: \Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args = [])

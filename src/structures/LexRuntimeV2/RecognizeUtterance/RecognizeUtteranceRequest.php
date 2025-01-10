@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $requestAttributes
  * @property string $requestContentType
  * @property string $responseContentType
- * @property string $inputStream
+ * @property string|resource|\Psr\Http\Message\StreamInterface $inputStream
  */
 class RecognizeUtteranceRequest extends Request
 {
@@ -27,7 +27,7 @@ class RecognizeUtteranceRequest extends Request
      *     requestAttributes?: string,
      *     requestContentType: string,
      *     responseContentType?: string,
-     *     inputStream?: string
+     *     inputStream?: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

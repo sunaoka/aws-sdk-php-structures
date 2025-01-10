@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ClientContext
  * @property string $Qualifier
- * @property string $Payload
+ * @property \Psr\Http\Message\StreamInterface $Payload
  */
 class MaintenanceWindowLambdaParameters extends Shape
 {
@@ -15,7 +15,7 @@ class MaintenanceWindowLambdaParameters extends Shape
      * @param array{
      *     ClientContext?: string,
      *     Qualifier?: string,
-     *     Payload?: string
+     *     Payload?: \Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args = [])

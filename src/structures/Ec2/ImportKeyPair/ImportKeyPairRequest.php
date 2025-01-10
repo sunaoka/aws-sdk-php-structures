@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\TagSpecification> $TagSpecifications
  * @property bool $DryRun
  * @property string $KeyName
- * @property string $PublicKeyMaterial
+ * @property string|resource|\Psr\Http\Message\StreamInterface $PublicKeyMaterial
  */
 class ImportKeyPairRequest extends Request
 {
@@ -17,7 +17,7 @@ class ImportKeyPairRequest extends Request
      *     TagSpecifications?: list<Shapes\TagSpecification>,
      *     DryRun?: bool,
      *     KeyName: string,
-     *     PublicKeyMaterial: string
+     *     PublicKeyMaterial: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

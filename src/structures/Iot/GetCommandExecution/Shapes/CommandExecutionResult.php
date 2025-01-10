@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $S
  * @property bool $B
- * @property string $BIN
+ * @property \Psr\Http\Message\StreamInterface $BIN
  */
 class CommandExecutionResult extends Shape
 {
@@ -15,7 +15,7 @@ class CommandExecutionResult extends Shape
      * @param array{
      *     S?: string,
      *     B?: bool,
-     *     BIN?: string
+     *     BIN?: \Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ConfigurationProfileId
  * @property int $VersionNumber
  * @property string $Description
- * @property string $Content
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Content
  * @property string $ContentType
  * @property string $VersionLabel
  * @property string $KmsKeyArn

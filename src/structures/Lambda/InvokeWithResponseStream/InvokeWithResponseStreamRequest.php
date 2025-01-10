@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'None'|'Tail' $LogType
  * @property string $ClientContext
  * @property string $Qualifier
- * @property string $Payload
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Payload
  */
 class InvokeWithResponseStreamRequest extends Request
 {
@@ -21,7 +21,7 @@ class InvokeWithResponseStreamRequest extends Request
      *     LogType?: 'None'|'Tail',
      *     ClientContext?: string,
      *     Qualifier?: string,
-     *     Payload?: string
+     *     Payload?: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

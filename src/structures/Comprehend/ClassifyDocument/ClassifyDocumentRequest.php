@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Text
  * @property string $EndpointArn
- * @property string $Bytes
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Bytes
  * @property Shapes\DocumentReaderConfig $DocumentReaderConfig
  */
 class ClassifyDocumentRequest extends Request
@@ -16,7 +16,7 @@ class ClassifyDocumentRequest extends Request
      * @param array{
      *     Text?: string,
      *     EndpointArn: string,
-     *     Bytes?: string,
+     *     Bytes?: string|resource|\Psr\Http\Message\StreamInterface,
      *     DocumentReaderConfig?: Shapes\DocumentReaderConfig
      * } $args
      */

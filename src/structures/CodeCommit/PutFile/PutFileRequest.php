@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $repositoryName
  * @property string $branchName
- * @property string $fileContent
+ * @property string|resource|\Psr\Http\Message\StreamInterface $fileContent
  * @property string $filePath
  * @property 'EXECUTABLE'|'NORMAL'|'SYMLINK' $fileMode
  * @property string $parentCommitId
@@ -21,7 +21,7 @@ class PutFileRequest extends Request
      * @param array{
      *     repositoryName: string,
      *     branchName: string,
-     *     fileContent: string,
+     *     fileContent: string|resource|\Psr\Http\Message\StreamInterface,
      *     filePath: string,
      *     fileMode?: 'EXECUTABLE'|'NORMAL'|'SYMLINK',
      *     parentCommitId?: string,

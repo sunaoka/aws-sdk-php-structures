@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bytes
+ * @property \Psr\Http\Message\StreamInterface $bytes
  * @property string $name
  * @property string $type
  */
@@ -13,7 +13,7 @@ class OutputFile extends Shape
 {
     /**
      * @param array{
-     *     bytes?: string,
+     *     bytes?: \Psr\Http\Message\StreamInterface,
      *     name?: string,
      *     type?: string
      * } $args

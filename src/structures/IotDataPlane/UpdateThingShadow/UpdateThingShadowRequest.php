@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $thingName
  * @property string $shadowName
- * @property string $payload
+ * @property string|resource|\Psr\Http\Message\StreamInterface $payload
  */
 class UpdateThingShadowRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateThingShadowRequest extends Request
      * @param array{
      *     thingName: string,
      *     shadowName?: string,
-     *     payload: string
+     *     payload: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)

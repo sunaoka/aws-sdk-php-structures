@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Id
  * @property string $Title
- * @property string $Blob
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Blob
  * @property S3Path $S3Path
  * @property list<DocumentAttribute> $Attributes
  * @property list<Principal> $AccessControlList
@@ -21,7 +21,7 @@ class Document extends Shape
      * @param array{
      *     Id: string,
      *     Title?: string,
-     *     Blob?: string,
+     *     Blob?: string|resource|\Psr\Http\Message\StreamInterface,
      *     S3Path?: S3Path,
      *     Attributes?: list<DocumentAttribute>,
      *     AccessControlList?: list<Principal>,

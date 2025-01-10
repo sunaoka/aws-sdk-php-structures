@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $StringValue
- * @property string $BinaryValue
+ * @property \Psr\Http\Message\StreamInterface $BinaryValue
  * @property list<string> $StringListValues
- * @property list<string> $BinaryListValues
+ * @property list<\Psr\Http\Message\StreamInterface> $BinaryListValues
  * @property string $DataType
  */
 class MessageAttributeValue extends Shape
@@ -16,9 +16,9 @@ class MessageAttributeValue extends Shape
     /**
      * @param array{
      *     StringValue?: string,
-     *     BinaryValue?: string,
+     *     BinaryValue?: \Psr\Http\Message\StreamInterface,
      *     StringListValues?: list<string>,
-     *     BinaryListValues?: list<string>,
+     *     BinaryListValues?: list<\Psr\Http\Message\StreamInterface>,
      *     DataType: string
      * } $args
      */

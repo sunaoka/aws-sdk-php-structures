@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Kms\Decrypt;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CiphertextBlob
+ * @property string|resource|\Psr\Http\Message\StreamInterface $CiphertextBlob
  * @property array<string, string> $EncryptionContext
  * @property list<string> $GrantTokens
  * @property string $KeyId
@@ -17,7 +17,7 @@ class DecryptRequest extends Request
 {
     /**
      * @param array{
-     *     CiphertextBlob: string,
+     *     CiphertextBlob: string|resource|\Psr\Http\Message\StreamInterface,
      *     EncryptionContext?: array<string, string>,
      *     GrantTokens?: list<string>,
      *     KeyId?: string,

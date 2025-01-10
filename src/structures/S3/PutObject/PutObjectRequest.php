@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control' $ACL
- * @property string $Body
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Body
  * @property string $Bucket
  * @property string $CacheControl
  * @property string $ContentDisposition
@@ -51,7 +51,7 @@ class PutObjectRequest extends Request
     /**
      * @param array{
      *     ACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'aws-exec-read'|'bucket-owner-read'|'bucket-owner-full-control',
-     *     Body?: string,
+     *     Body?: string|resource|\Psr\Http\Message\StreamInterface,
      *     Bucket: string,
      *     CacheControl?: string,
      *     ContentDisposition?: string,

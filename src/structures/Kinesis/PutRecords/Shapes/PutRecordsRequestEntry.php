@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Kinesis\PutRecords\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Data
+ * @property string|resource|\Psr\Http\Message\StreamInterface $Data
  * @property string $ExplicitHashKey
  * @property string $PartitionKey
  */
@@ -13,7 +13,7 @@ class PutRecordsRequestEntry extends Shape
 {
     /**
      * @param array{
-     *     Data: string,
+     *     Data: string|resource|\Psr\Http\Message\StreamInterface,
      *     ExplicitHashKey?: string,
      *     PartitionKey: string
      * } $args

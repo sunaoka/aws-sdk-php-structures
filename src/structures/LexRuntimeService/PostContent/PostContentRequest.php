@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $requestAttributes
  * @property string $contentType
  * @property string $accept
- * @property string $inputStream
+ * @property string|resource|\Psr\Http\Message\StreamInterface $inputStream
  * @property string $activeContexts
  */
 class PostContentRequest extends Request
@@ -26,7 +26,7 @@ class PostContentRequest extends Request
      *     requestAttributes?: string,
      *     contentType: string,
      *     accept?: string,
-     *     inputStream: string,
+     *     inputStream: string|resource|\Psr\Http\Message\StreamInterface,
      *     activeContexts?: string
      * } $args
      */

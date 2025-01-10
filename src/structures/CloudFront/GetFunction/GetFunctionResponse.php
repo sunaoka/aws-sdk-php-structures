@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudFront\GetFunction;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FunctionCode
+ * @property \Psr\Http\Message\StreamInterface $FunctionCode
  * @property string $ETag
  * @property string $ContentType
  */

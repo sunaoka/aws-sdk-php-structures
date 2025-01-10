@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppSync\GetIntrospectionSchema;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $schema
+ * @property \Psr\Http\Message\StreamInterface $schema
  */
 class GetIntrospectionSchemaResponse extends Response
 {

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $IfMatch
  * @property 'DEVELOPMENT'|'LIVE' $Stage
- * @property string $EventObject
+ * @property string|resource|\Psr\Http\Message\StreamInterface $EventObject
  */
 class TestFunctionRequest extends Request
 {
@@ -17,7 +17,7 @@ class TestFunctionRequest extends Request
      *     Name: string,
      *     IfMatch: string,
      *     Stage?: 'DEVELOPMENT'|'LIVE',
-     *     EventObject: string
+     *     EventObject: string|resource|\Psr\Http\Message\StreamInterface
      * } $args
      */
     public function __construct(array $args)
