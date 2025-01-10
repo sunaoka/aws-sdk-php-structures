@@ -14,7 +14,6 @@
         "aws/aws-sdk-php": "^3.278.3"
     },
     "require-dev": {
-        "nette/php-generator": "^2.3",
         "phpunit/phpunit": "^4.8"
     },
     "autoload": {
