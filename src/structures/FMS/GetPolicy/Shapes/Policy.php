@@ -20,6 +20,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $ResourceSetIds
  * @property string $PolicyDescription
  * @property 'ACTIVE'|'OUT_OF_ADMIN_SCOPE' $PolicyStatus
+ * @property 'AND'|'OR' $ResourceTagLogicalOperator
  */
 class Policy extends Shape
 {
@@ -39,7 +40,8 @@ class Policy extends Shape
      *     ExcludeMap?: array<'ACCOUNT'|'ORG_UNIT', list<string>>,
      *     ResourceSetIds?: list<string>,
      *     PolicyDescription?: string,
-     *     PolicyStatus?: 'ACTIVE'|'OUT_OF_ADMIN_SCOPE'
+     *     PolicyStatus?: 'ACTIVE'|'OUT_OF_ADMIN_SCOPE',
+     *     ResourceTagLogicalOperator?: 'AND'|'OR'
      * } $args
      */
     public function __construct(array $args)
