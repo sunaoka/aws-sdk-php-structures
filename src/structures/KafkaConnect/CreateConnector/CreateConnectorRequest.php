@@ -16,8 +16,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LogDelivery $logDelivery
  * @property list<Shapes\Plugin> $plugins
  * @property string $serviceExecutionRoleArn
- * @property array<string, string> $tags
  * @property Shapes\WorkerConfiguration $workerConfiguration
+ * @property array<string, string> $tags
  */
 class CreateConnectorRequest extends Request
 {
@@ -34,8 +34,8 @@ class CreateConnectorRequest extends Request
      *     logDelivery?: Shapes\LogDelivery,
      *     plugins: list<Shapes\Plugin>,
      *     serviceExecutionRoleArn: string,
-     *     tags?: array<string, string>,
-     *     workerConfiguration?: Shapes\WorkerConfiguration
+     *     workerConfiguration?: Shapes\WorkerConfiguration,
+     *     tags?: array<string, string>
      * } $args
      */
     public function __construct(array $args)

@@ -11,6 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $OutputEncryptionKMSKeyId
  * @property string $DataAccessRoleArn
  * @property Shapes\CallAnalyticsJobSettings $Settings
+ * @property list<Shapes\Tag> $Tags
  * @property list<Shapes\ChannelDefinition> $ChannelDefinitions
  */
 class StartCallAnalyticsJobRequest extends Request
@@ -23,6 +24,7 @@ class StartCallAnalyticsJobRequest extends Request
      *     OutputEncryptionKMSKeyId?: string,
      *     DataAccessRoleArn?: string,
      *     Settings?: Shapes\CallAnalyticsJobSettings,
+     *     Tags?: list<Shapes\Tag>,
      *     ChannelDefinitions?: list<Shapes\ChannelDefinition>
      * } $args
      */

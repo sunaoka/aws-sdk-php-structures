@@ -21,6 +21,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property float $IdentifiedLanguageScore
  * @property CallAnalyticsJobSettings $Settings
  * @property list<ChannelDefinition> $ChannelDefinitions
+ * @property list<Tag> $Tags
  */
 class CallAnalyticsJob extends Shape
 {
@@ -41,7 +42,8 @@ class CallAnalyticsJob extends Shape
      *     DataAccessRoleArn?: string,
      *     IdentifiedLanguageScore?: float,
      *     Settings?: CallAnalyticsJobSettings,
-     *     ChannelDefinitions?: list<ChannelDefinition>
+     *     ChannelDefinitions?: list<ChannelDefinition>,
+     *     Tags?: list<Tag>
      * } $args
      */
     public function __construct(array $args = [])
