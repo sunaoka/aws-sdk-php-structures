@@ -13,6 +13,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\PlayerLatency> $PlayerLatencies
  * @property list<Shapes\DesiredPlayerSession> $DesiredPlayerSessions
  * @property string $GameSessionData
+ * @property Shapes\PriorityConfigurationOverride $PriorityConfigurationOverride
  */
 class StartGameSessionPlacementRequest extends Request
 {
@@ -25,7 +26,8 @@ class StartGameSessionPlacementRequest extends Request
      *     GameSessionName?: string,
      *     PlayerLatencies?: list<Shapes\PlayerLatency>,
      *     DesiredPlayerSessions?: list<Shapes\DesiredPlayerSession>,
-     *     GameSessionData?: string
+     *     GameSessionData?: string,
+     *     PriorityConfigurationOverride?: Shapes\PriorityConfigurationOverride
      * } $args
      */
     public function __construct(array $args)
