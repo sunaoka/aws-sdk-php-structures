@@ -6,7 +6,7 @@ parameters and results into typed classes.
 
 ## Installation
 
-### Remove unused country holidays
+### Remove unused services and actions
 
 This library contains a very large number of class files.
 
@@ -29,6 +29,8 @@ So, you can run the `Sunaoka\Aws\Structures\Task\Composer::removeUnusedServices`
     }
 }
 ```
+
+### Install
 
 ```bash
 composer require sunaoka/aws-sdk-php-structures
