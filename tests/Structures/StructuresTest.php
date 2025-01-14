@@ -13,8 +13,6 @@ use Tests\TestCase;
 
 /**
  * @internal
- *
- * @coversNothing
  */
 class StructuresTest extends TestCase
 {

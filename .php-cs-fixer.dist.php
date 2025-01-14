@@ -39,9 +39,10 @@ $rules = [
             'phpstan-import-type',
         ],
     ],
-    'phpdoc_no_empty_return' => false,
-    'phpdoc_to_comment'      => false,
-    'yoda_style'             => false,
+    'phpdoc_no_empty_return'              => false,
+    'phpdoc_to_comment'                   => false,
+    'php_unit_test_class_requires_covers' => false,
+    'yoda_style'                          => false,
 ];
 
 return (new PhpCsFixer\Config())

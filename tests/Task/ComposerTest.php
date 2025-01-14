@@ -12,8 +12,6 @@ use Tests\TestCase;
 
 /**
  * @internal
- *
- * @coversNothing
  */
 class ComposerTest extends TestCase
 {
@@ -141,6 +139,7 @@ class ComposerTest extends TestCase
         return \Mockery::mock(Event::class)
             ->shouldReceive('getComposer')
             ->andReturn($composer)
-            ->getMock();
+            ->getMock()
+        ;
     }
 }

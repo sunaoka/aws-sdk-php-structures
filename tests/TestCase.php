@@ -8,8 +8,6 @@ use Aws\Result;
 
 /**
  * @internal
- *
- * @coversNothing
  */
 class TestCase extends \PHPUnit\Framework\TestCase
 {
