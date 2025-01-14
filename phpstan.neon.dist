@@ -1,0 +1,16 @@
+includes:
+    - /composer/vendor/phpstan/phpstan-mockery/extension.neon
+
+parameters:
+
+    level: max
+
+    paths:
+        - task
+        - tests
+
+    ignoreErrors:
+        - identifier: missingType.iterableValue
+
+        - identifier: function.alreadyNarrowedType
+          path: tests/Assert.php
