@@ -6,6 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\CapacityUpdate $capacity
+ * @property array<string, string> $connectorConfiguration
  * @property string $connectorArn
  * @property string $currentVersion
  */
@@ -13,7 +14,8 @@ class UpdateConnectorRequest extends Request
 {
     /**
      * @param array{
-     *     capacity: Shapes\CapacityUpdate,
+     *     capacity?: Shapes\CapacityUpdate,
+     *     connectorConfiguration?: array<string, string>,
      *     connectorArn: string,
      *     currentVersion: string
      * } $args

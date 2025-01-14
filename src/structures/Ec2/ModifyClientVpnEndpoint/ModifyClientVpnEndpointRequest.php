@@ -19,6 +19,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ClientConnectOptions $ClientConnectOptions
  * @property int $SessionTimeoutHours
  * @property Shapes\ClientLoginBannerOptions $ClientLoginBannerOptions
+ * @property bool $DisconnectOnSessionTimeout
  */
 class ModifyClientVpnEndpointRequest extends Request
 {
@@ -37,7 +38,8 @@ class ModifyClientVpnEndpointRequest extends Request
      *     SelfServicePortal?: 'enabled'|'disabled',
      *     ClientConnectOptions?: Shapes\ClientConnectOptions,
      *     SessionTimeoutHours?: int,
-     *     ClientLoginBannerOptions?: Shapes\ClientLoginBannerOptions
+     *     ClientLoginBannerOptions?: Shapes\ClientLoginBannerOptions,
+     *     DisconnectOnSessionTimeout?: bool
      * } $args
      */
     public function __construct(array $args)
