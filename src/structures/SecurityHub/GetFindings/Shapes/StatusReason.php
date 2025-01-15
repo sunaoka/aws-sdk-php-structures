@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ReasonCode
- * @property string $Description
+ * @property string|null $Description
  */
 class StatusReason extends Shape
 {
     /**
      * @param array{
      *     ReasonCode: string,
-     *     Description?: string
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

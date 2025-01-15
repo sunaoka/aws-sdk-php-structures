@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<string> $Inputs
  * @property 'RowAudit'|'RowMasking'|'ColumnAudit'|'ColumnMasking' $PiiType
  * @property list<string> $EntityTypesToDetect
- * @property string $OutputColumnName
- * @property double $SampleFraction
- * @property double $ThresholdFraction
- * @property string $MaskValue
+ * @property string|null $OutputColumnName
+ * @property double|null $SampleFraction
+ * @property double|null $ThresholdFraction
+ * @property string|null $MaskValue
  */
 class PIIDetection extends Shape
 {
@@ -22,10 +22,10 @@ class PIIDetection extends Shape
      *     Inputs: list<string>,
      *     PiiType: 'RowAudit'|'RowMasking'|'ColumnAudit'|'ColumnMasking',
      *     EntityTypesToDetect: list<string>,
-     *     OutputColumnName?: string,
-     *     SampleFraction?: double,
-     *     ThresholdFraction?: double,
-     *     MaskValue?: string
+     *     OutputColumnName?: string|null,
+     *     SampleFraction?: double|null,
+     *     ThresholdFraction?: double|null,
+     *     MaskValue?: string|null
      * } $args
      */
     public function __construct(array $args)

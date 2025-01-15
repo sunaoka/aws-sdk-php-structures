@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CollectionId
  * @property string $UserId
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property list<string> $FaceIds
  */
 class DisassociateFacesRequest extends Request
@@ -16,7 +16,7 @@ class DisassociateFacesRequest extends Request
      * @param array{
      *     CollectionId: string,
      *     UserId: string,
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     FaceIds: list<string>
      * } $args
      */

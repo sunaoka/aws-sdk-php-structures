@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $collaborationArn
  * @property string $name
  * @property bool $manageResourcePolicies
- * @property string $description
+ * @property string|null $description
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  */
@@ -31,7 +31,7 @@ class ConfiguredAudienceModelAssociation extends Shape
      *     collaborationArn: string,
      *     name: string,
      *     manageResourcePolicies: bool,
-     *     description?: string,
+     *     description?: string|null,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult
      * } $args

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CodePipeline\GetActionType\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property ActionTypeExecutor $executor
  * @property ActionTypeIdentifier $id
  * @property ActionTypeArtifactDetails $inputArtifactDetails
  * @property ActionTypeArtifactDetails $outputArtifactDetails
- * @property ActionTypePermissions $permissions
- * @property list<ActionTypeProperty> $properties
- * @property ActionTypeUrls $urls
+ * @property ActionTypePermissions|null $permissions
+ * @property list<ActionTypeProperty>|null $properties
+ * @property ActionTypeUrls|null $urls
  */
 class ActionTypeDeclaration extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     executor: ActionTypeExecutor,
      *     id: ActionTypeIdentifier,
      *     inputArtifactDetails: ActionTypeArtifactDetails,
      *     outputArtifactDetails: ActionTypeArtifactDetails,
-     *     permissions?: ActionTypePermissions,
-     *     properties?: list<ActionTypeProperty>,
-     *     urls?: ActionTypeUrls
+     *     permissions?: ActionTypePermissions|null,
+     *     properties?: list<ActionTypeProperty>|null,
+     *     urls?: ActionTypeUrls|null
      * } $args
      */
     public function __construct(array $args)

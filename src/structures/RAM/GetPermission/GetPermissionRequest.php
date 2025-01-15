@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $permissionArn
- * @property int $permissionVersion
+ * @property int|null $permissionVersion
  */
 class GetPermissionRequest extends Request
 {
     /**
      * @param array{
      *     permissionArn: string,
-     *     permissionVersion?: int
+     *     permissionVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

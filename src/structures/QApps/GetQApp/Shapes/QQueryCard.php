@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'text-input'|'q-query'|'file-upload'|'q-plugin'|'form-input' $type
  * @property string $prompt
  * @property 'approved-sources'|'llm' $outputSource
- * @property AttributeFilter $attributeFilter
- * @property list<string> $memoryReferences
+ * @property AttributeFilter|null $attributeFilter
+ * @property list<string>|null $memoryReferences
  */
 class QQueryCard extends Shape
 {
@@ -24,8 +24,8 @@ class QQueryCard extends Shape
      *     type: 'text-input'|'q-query'|'file-upload'|'q-plugin'|'form-input',
      *     prompt: string,
      *     outputSource: 'approved-sources'|'llm',
-     *     attributeFilter?: AttributeFilter,
-     *     memoryReferences?: list<string>
+     *     attributeFilter?: AttributeFilter|null,
+     *     memoryReferences?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

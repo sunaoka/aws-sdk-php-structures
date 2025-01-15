@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Count
- * @property string $Arn
- * @property string $Name
- * @property Occurrences $Occurrences
+ * @property int|null $Count
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property Occurrences|null $Occurrences
  */
 class CustomDataIdentifiersDetections extends Shape
 {
     /**
      * @param array{
-     *     Count?: int,
-     *     Arn?: string,
-     *     Name?: string,
-     *     Occurrences?: Occurrences
+     *     Count?: int|null,
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     Occurrences?: Occurrences|null
      * } $args
      */
     public function __construct(array $args = [])

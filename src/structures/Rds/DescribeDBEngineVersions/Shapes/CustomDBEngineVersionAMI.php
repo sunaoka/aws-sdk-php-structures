@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBEngineVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ImageId
- * @property string $Status
+ * @property string|null $ImageId
+ * @property string|null $Status
  */
 class CustomDBEngineVersionAMI extends Shape
 {
     /**
      * @param array{
-     *     ImageId?: string,
-     *     Status?: string
+     *     ImageId?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

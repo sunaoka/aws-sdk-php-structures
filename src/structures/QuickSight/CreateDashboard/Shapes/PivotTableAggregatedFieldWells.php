@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $Rows
- * @property list<DimensionField> $Columns
- * @property list<MeasureField> $Values
+ * @property list<DimensionField>|null $Rows
+ * @property list<DimensionField>|null $Columns
+ * @property list<MeasureField>|null $Values
  */
 class PivotTableAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     Rows?: list<DimensionField>,
-     *     Columns?: list<DimensionField>,
-     *     Values?: list<MeasureField>
+     *     Rows?: list<DimensionField>|null,
+     *     Columns?: list<DimensionField>|null,
+     *     Values?: list<MeasureField>|null
      * } $args
      */
     public function __construct(array $args = [])

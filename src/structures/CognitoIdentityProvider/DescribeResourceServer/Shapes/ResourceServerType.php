@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\DescribeResourceServer\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserPoolId
- * @property string $Identifier
- * @property string $Name
- * @property list<ResourceServerScopeType> $Scopes
+ * @property string|null $UserPoolId
+ * @property string|null $Identifier
+ * @property string|null $Name
+ * @property list<ResourceServerScopeType>|null $Scopes
  */
 class ResourceServerType extends Shape
 {
     /**
      * @param array{
-     *     UserPoolId?: string,
-     *     Identifier?: string,
-     *     Name?: string,
-     *     Scopes?: list<ResourceServerScopeType>
+     *     UserPoolId?: string|null,
+     *     Identifier?: string|null,
+     *     Name?: string|null,
+     *     Scopes?: list<ResourceServerScopeType>|null
      * } $args
      */
     public function __construct(array $args = [])

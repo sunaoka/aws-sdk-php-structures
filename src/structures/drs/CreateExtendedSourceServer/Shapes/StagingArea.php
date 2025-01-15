@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\drs\CreateExtendedSourceServer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $errorMessage
- * @property string $stagingAccountID
- * @property string $stagingSourceServerArn
- * @property 'EXTENDED'|'EXTENSION_ERROR'|'NOT_EXTENDED' $status
+ * @property string|null $errorMessage
+ * @property string|null $stagingAccountID
+ * @property string|null $stagingSourceServerArn
+ * @property 'EXTENDED'|'EXTENSION_ERROR'|'NOT_EXTENDED'|null $status
  */
 class StagingArea extends Shape
 {
     /**
      * @param array{
-     *     errorMessage?: string,
-     *     stagingAccountID?: string,
-     *     stagingSourceServerArn?: string,
-     *     status?: 'EXTENDED'|'EXTENSION_ERROR'|'NOT_EXTENDED'
+     *     errorMessage?: string|null,
+     *     stagingAccountID?: string|null,
+     *     stagingSourceServerArn?: string|null,
+     *     status?: 'EXTENDED'|'EXTENSION_ERROR'|'NOT_EXTENDED'|null
      * } $args
      */
     public function __construct(array $args = [])

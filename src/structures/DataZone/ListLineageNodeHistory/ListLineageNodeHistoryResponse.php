@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DataZone\ListLineageNodeHistory;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\LineageNodeSummary> $nodes
+ * @property string|null $nextToken
+ * @property list<Shapes\LineageNodeSummary>|null $nodes
  */
 class ListLineageNodeHistoryResponse extends Response
 {

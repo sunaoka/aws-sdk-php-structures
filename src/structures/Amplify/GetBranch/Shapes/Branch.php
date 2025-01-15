@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $branchArn
  * @property string $branchName
  * @property string $description
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property 'PRODUCTION'|'BETA'|'DEVELOPMENT'|'EXPERIMENTAL'|'PULL_REQUEST' $stage
  * @property string $displayName
  * @property bool $enableNotification
@@ -21,18 +21,18 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $activeJobId
  * @property string $totalNumberOfJobs
  * @property bool $enableBasicAuth
- * @property bool $enablePerformanceMode
- * @property string $thumbnailUrl
- * @property string $basicAuthCredentials
- * @property string $buildSpec
+ * @property bool|null $enablePerformanceMode
+ * @property string|null $thumbnailUrl
+ * @property string|null $basicAuthCredentials
+ * @property string|null $buildSpec
  * @property string $ttl
- * @property list<string> $associatedResources
+ * @property list<string>|null $associatedResources
  * @property bool $enablePullRequestPreview
- * @property string $pullRequestEnvironmentName
- * @property string $destinationBranch
- * @property string $sourceBranch
- * @property string $backendEnvironmentArn
- * @property Backend $backend
+ * @property string|null $pullRequestEnvironmentName
+ * @property string|null $destinationBranch
+ * @property string|null $sourceBranch
+ * @property string|null $backendEnvironmentArn
+ * @property Backend|null $backend
  */
 class Branch extends Shape
 {
@@ -41,7 +41,7 @@ class Branch extends Shape
      *     branchArn: string,
      *     branchName: string,
      *     description: string,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     stage: 'PRODUCTION'|'BETA'|'DEVELOPMENT'|'EXPERIMENTAL'|'PULL_REQUEST',
      *     displayName: string,
      *     enableNotification: bool,
@@ -54,18 +54,18 @@ class Branch extends Shape
      *     activeJobId: string,
      *     totalNumberOfJobs: string,
      *     enableBasicAuth: bool,
-     *     enablePerformanceMode?: bool,
-     *     thumbnailUrl?: string,
-     *     basicAuthCredentials?: string,
-     *     buildSpec?: string,
+     *     enablePerformanceMode?: bool|null,
+     *     thumbnailUrl?: string|null,
+     *     basicAuthCredentials?: string|null,
+     *     buildSpec?: string|null,
      *     ttl: string,
-     *     associatedResources?: list<string>,
+     *     associatedResources?: list<string>|null,
      *     enablePullRequestPreview: bool,
-     *     pullRequestEnvironmentName?: string,
-     *     destinationBranch?: string,
-     *     sourceBranch?: string,
-     *     backendEnvironmentArn?: string,
-     *     backend?: Backend
+     *     pullRequestEnvironmentName?: string|null,
+     *     destinationBranch?: string|null,
+     *     sourceBranch?: string|null,
+     *     backendEnvironmentArn?: string|null,
+     *     backend?: Backend|null
      * } $args
      */
     public function __construct(array $args)

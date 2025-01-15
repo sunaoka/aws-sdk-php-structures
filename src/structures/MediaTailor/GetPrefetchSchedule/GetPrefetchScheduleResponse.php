@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaTailor\GetPrefetchSchedule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property Shapes\PrefetchConsumption $Consumption
- * @property string $Name
- * @property string $PlaybackConfigurationName
- * @property Shapes\PrefetchRetrieval $Retrieval
- * @property string $StreamId
+ * @property string|null $Arn
+ * @property Shapes\PrefetchConsumption|null $Consumption
+ * @property string|null $Name
+ * @property string|null $PlaybackConfigurationName
+ * @property Shapes\PrefetchRetrieval|null $Retrieval
+ * @property string|null $StreamId
  */
 class GetPrefetchScheduleResponse extends Response
 {

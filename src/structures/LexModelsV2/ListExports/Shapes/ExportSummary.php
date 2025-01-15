@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListExports\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $exportId
- * @property ExportResourceSpecification $resourceSpecification
- * @property 'LexJson'|'TSV'|'CSV' $fileFormat
- * @property 'InProgress'|'Completed'|'Failed'|'Deleting' $exportStatus
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
+ * @property string|null $exportId
+ * @property ExportResourceSpecification|null $resourceSpecification
+ * @property 'LexJson'|'TSV'|'CSV'|null $fileFormat
+ * @property 'InProgress'|'Completed'|'Failed'|'Deleting'|null $exportStatus
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  */
 class ExportSummary extends Shape
 {
     /**
      * @param array{
-     *     exportId?: string,
-     *     resourceSpecification?: ExportResourceSpecification,
-     *     fileFormat?: 'LexJson'|'TSV'|'CSV',
-     *     exportStatus?: 'InProgress'|'Completed'|'Failed'|'Deleting',
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult
+     *     exportId?: string|null,
+     *     resourceSpecification?: ExportResourceSpecification|null,
+     *     fileFormat?: 'LexJson'|'TSV'|'CSV'|null,
+     *     exportStatus?: 'InProgress'|'Completed'|'Failed'|'Deleting'|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

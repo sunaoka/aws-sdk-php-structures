@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\GetVPCEConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $vpceConfigurationName
- * @property string $vpceServiceName
- * @property string $serviceDnsName
- * @property string $vpceConfigurationDescription
+ * @property string|null $arn
+ * @property string|null $vpceConfigurationName
+ * @property string|null $vpceServiceName
+ * @property string|null $serviceDnsName
+ * @property string|null $vpceConfigurationDescription
  */
 class VPCEConfiguration extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     vpceConfigurationName?: string,
-     *     vpceServiceName?: string,
-     *     serviceDnsName?: string,
-     *     vpceConfigurationDescription?: string
+     *     arn?: string|null,
+     *     vpceConfigurationName?: string|null,
+     *     vpceServiceName?: string|null,
+     *     serviceDnsName?: string|null,
+     *     vpceConfigurationDescription?: string|null
      * } $args
      */
     public function __construct(array $args = [])

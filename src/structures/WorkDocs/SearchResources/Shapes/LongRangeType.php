@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkDocs\SearchResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $StartValue
- * @property int $EndValue
+ * @property int|null $StartValue
+ * @property int|null $EndValue
  */
 class LongRangeType extends Shape
 {
     /**
      * @param array{
-     *     StartValue?: int,
-     *     EndValue?: int
+     *     StartValue?: int|null,
+     *     EndValue?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,11 +10,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\LabelingJobInputConfig $InputConfig
  * @property Shapes\LabelingJobOutputConfig $OutputConfig
  * @property string $RoleArn
- * @property string $LabelCategoryConfigS3Uri
- * @property Shapes\LabelingJobStoppingConditions $StoppingConditions
- * @property Shapes\LabelingJobAlgorithmsConfig $LabelingJobAlgorithmsConfig
+ * @property string|null $LabelCategoryConfigS3Uri
+ * @property Shapes\LabelingJobStoppingConditions|null $StoppingConditions
+ * @property Shapes\LabelingJobAlgorithmsConfig|null $LabelingJobAlgorithmsConfig
  * @property Shapes\HumanTaskConfig $HumanTaskConfig
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateLabelingJobRequest extends Request
 {
@@ -25,11 +25,11 @@ class CreateLabelingJobRequest extends Request
      *     InputConfig: Shapes\LabelingJobInputConfig,
      *     OutputConfig: Shapes\LabelingJobOutputConfig,
      *     RoleArn: string,
-     *     LabelCategoryConfigS3Uri?: string,
-     *     StoppingConditions?: Shapes\LabelingJobStoppingConditions,
-     *     LabelingJobAlgorithmsConfig?: Shapes\LabelingJobAlgorithmsConfig,
+     *     LabelCategoryConfigS3Uri?: string|null,
+     *     StoppingConditions?: Shapes\LabelingJobStoppingConditions|null,
+     *     LabelingJobAlgorithmsConfig?: Shapes\LabelingJobAlgorithmsConfig|null,
      *     HumanTaskConfig: Shapes\HumanTaskConfig,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

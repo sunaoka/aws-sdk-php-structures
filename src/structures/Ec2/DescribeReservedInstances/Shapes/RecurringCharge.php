@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeReservedInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Amount
- * @property 'Hourly' $Frequency
+ * @property double|null $Amount
+ * @property 'Hourly'|null $Frequency
  */
 class RecurringCharge extends Shape
 {
     /**
      * @param array{
-     *     Amount?: double,
-     *     Frequency?: 'Hourly'
+     *     Amount?: double|null,
+     *     Frequency?: 'Hourly'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImageScanFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $metric
- * @property string $reason
+ * @property string|null $metric
+ * @property string|null $reason
  */
 class CvssScoreAdjustment extends Shape
 {
     /**
      * @param array{
-     *     metric?: string,
-     *     reason?: string
+     *     metric?: string|null,
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

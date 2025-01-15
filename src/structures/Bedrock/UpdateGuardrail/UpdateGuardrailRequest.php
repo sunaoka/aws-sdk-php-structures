@@ -7,15 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $guardrailIdentifier
  * @property string $name
- * @property string $description
- * @property Shapes\GuardrailTopicPolicyConfig $topicPolicyConfig
- * @property Shapes\GuardrailContentPolicyConfig $contentPolicyConfig
- * @property Shapes\GuardrailWordPolicyConfig $wordPolicyConfig
- * @property Shapes\GuardrailSensitiveInformationPolicyConfig $sensitiveInformationPolicyConfig
- * @property Shapes\GuardrailContextualGroundingPolicyConfig $contextualGroundingPolicyConfig
+ * @property string|null $description
+ * @property Shapes\GuardrailTopicPolicyConfig|null $topicPolicyConfig
+ * @property Shapes\GuardrailContentPolicyConfig|null $contentPolicyConfig
+ * @property Shapes\GuardrailWordPolicyConfig|null $wordPolicyConfig
+ * @property Shapes\GuardrailSensitiveInformationPolicyConfig|null $sensitiveInformationPolicyConfig
+ * @property Shapes\GuardrailContextualGroundingPolicyConfig|null $contextualGroundingPolicyConfig
  * @property string $blockedInputMessaging
  * @property string $blockedOutputsMessaging
- * @property string $kmsKeyId
+ * @property string|null $kmsKeyId
  */
 class UpdateGuardrailRequest extends Request
 {
@@ -23,15 +23,15 @@ class UpdateGuardrailRequest extends Request
      * @param array{
      *     guardrailIdentifier: string,
      *     name: string,
-     *     description?: string,
-     *     topicPolicyConfig?: Shapes\GuardrailTopicPolicyConfig,
-     *     contentPolicyConfig?: Shapes\GuardrailContentPolicyConfig,
-     *     wordPolicyConfig?: Shapes\GuardrailWordPolicyConfig,
-     *     sensitiveInformationPolicyConfig?: Shapes\GuardrailSensitiveInformationPolicyConfig,
-     *     contextualGroundingPolicyConfig?: Shapes\GuardrailContextualGroundingPolicyConfig,
+     *     description?: string|null,
+     *     topicPolicyConfig?: Shapes\GuardrailTopicPolicyConfig|null,
+     *     contentPolicyConfig?: Shapes\GuardrailContentPolicyConfig|null,
+     *     wordPolicyConfig?: Shapes\GuardrailWordPolicyConfig|null,
+     *     sensitiveInformationPolicyConfig?: Shapes\GuardrailSensitiveInformationPolicyConfig|null,
+     *     contextualGroundingPolicyConfig?: Shapes\GuardrailContextualGroundingPolicyConfig|null,
      *     blockedInputMessaging: string,
      *     blockedOutputsMessaging: string,
-     *     kmsKeyId?: string
+     *     kmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

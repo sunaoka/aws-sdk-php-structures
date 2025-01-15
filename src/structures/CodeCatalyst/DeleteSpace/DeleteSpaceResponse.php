@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $name
- * @property string $displayName
+ * @property string|null $displayName
  */
 class DeleteSpaceResponse extends Response
 {

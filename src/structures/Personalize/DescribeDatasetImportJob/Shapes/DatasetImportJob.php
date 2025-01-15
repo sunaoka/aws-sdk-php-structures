@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeDatasetImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $jobName
- * @property string $datasetImportJobArn
- * @property string $datasetArn
- * @property DataSource $dataSource
- * @property string $roleArn
- * @property string $status
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
- * @property string $failureReason
- * @property 'FULL'|'INCREMENTAL' $importMode
- * @property bool $publishAttributionMetricsToS3
+ * @property string|null $jobName
+ * @property string|null $datasetImportJobArn
+ * @property string|null $datasetArn
+ * @property DataSource|null $dataSource
+ * @property string|null $roleArn
+ * @property string|null $status
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
+ * @property string|null $failureReason
+ * @property 'FULL'|'INCREMENTAL'|null $importMode
+ * @property bool|null $publishAttributionMetricsToS3
  */
 class DatasetImportJob extends Shape
 {
     /**
      * @param array{
-     *     jobName?: string,
-     *     datasetImportJobArn?: string,
-     *     datasetArn?: string,
-     *     dataSource?: DataSource,
-     *     roleArn?: string,
-     *     status?: string,
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult,
-     *     failureReason?: string,
-     *     importMode?: 'FULL'|'INCREMENTAL',
-     *     publishAttributionMetricsToS3?: bool
+     *     jobName?: string|null,
+     *     datasetImportJobArn?: string|null,
+     *     datasetArn?: string|null,
+     *     dataSource?: DataSource|null,
+     *     roleArn?: string|null,
+     *     status?: string|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
+     *     failureReason?: string|null,
+     *     importMode?: 'FULL'|'INCREMENTAL'|null,
+     *     publishAttributionMetricsToS3?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

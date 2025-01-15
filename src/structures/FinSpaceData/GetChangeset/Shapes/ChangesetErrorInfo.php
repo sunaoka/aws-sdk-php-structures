@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\GetChangeset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $errorMessage
- * @property 'VALIDATION'|'SERVICE_QUOTA_EXCEEDED'|'ACCESS_DENIED'|'RESOURCE_NOT_FOUND'|'THROTTLING'|'INTERNAL_SERVICE_EXCEPTION'|'CANCELLED'|'USER_RECOVERABLE' $errorCategory
+ * @property string|null $errorMessage
+ * @property 'VALIDATION'|'SERVICE_QUOTA_EXCEEDED'|'ACCESS_DENIED'|'RESOURCE_NOT_FOUND'|'THROTTLING'|'INTERNAL_SERVICE_EXCEPTION'|'CANCELLED'|'USER_RECOVERABLE'|null $errorCategory
  */
 class ChangesetErrorInfo extends Shape
 {
     /**
      * @param array{
-     *     errorMessage?: string,
-     *     errorCategory?: 'VALIDATION'|'SERVICE_QUOTA_EXCEEDED'|'ACCESS_DENIED'|'RESOURCE_NOT_FOUND'|'THROTTLING'|'INTERNAL_SERVICE_EXCEPTION'|'CANCELLED'|'USER_RECOVERABLE'
+     *     errorMessage?: string|null,
+     *     errorCategory?: 'VALIDATION'|'SERVICE_QUOTA_EXCEEDED'|'ACCESS_DENIED'|'RESOURCE_NOT_FOUND'|'THROTTLING'|'INTERNAL_SERVICE_EXCEPTION'|'CANCELLED'|'USER_RECOVERABLE'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeThingRegistrationTask;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $taskId
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property \Aws\Api\DateTimeResult $lastModifiedDate
- * @property string $templateBody
- * @property string $inputFileBucket
- * @property string $inputFileKey
- * @property string $roleArn
- * @property 'InProgress'|'Completed'|'Failed'|'Cancelled'|'Cancelling' $status
- * @property string $message
- * @property int $successCount
- * @property int $failureCount
- * @property int<0, 100> $percentageProgress
+ * @property string|null $taskId
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedDate
+ * @property string|null $templateBody
+ * @property string|null $inputFileBucket
+ * @property string|null $inputFileKey
+ * @property string|null $roleArn
+ * @property 'InProgress'|'Completed'|'Failed'|'Cancelled'|'Cancelling'|null $status
+ * @property string|null $message
+ * @property int|null $successCount
+ * @property int|null $failureCount
+ * @property int<0, 100>|null $percentageProgress
  */
 class DescribeThingRegistrationTaskResponse extends Response
 {

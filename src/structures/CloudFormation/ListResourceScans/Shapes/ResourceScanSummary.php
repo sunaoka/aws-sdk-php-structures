@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ListResourceScans\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceScanId
- * @property 'IN_PROGRESS'|'FAILED'|'COMPLETE'|'EXPIRED' $Status
- * @property string $StatusReason
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property double $PercentageCompleted
+ * @property string|null $ResourceScanId
+ * @property 'IN_PROGRESS'|'FAILED'|'COMPLETE'|'EXPIRED'|null $Status
+ * @property string|null $StatusReason
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property double|null $PercentageCompleted
  */
 class ResourceScanSummary extends Shape
 {
     /**
      * @param array{
-     *     ResourceScanId?: string,
-     *     Status?: 'IN_PROGRESS'|'FAILED'|'COMPLETE'|'EXPIRED',
-     *     StatusReason?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     PercentageCompleted?: double
+     *     ResourceScanId?: string|null,
+     *     Status?: 'IN_PROGRESS'|'FAILED'|'COMPLETE'|'EXPIRED'|null,
+     *     StatusReason?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     PercentageCompleted?: double|null
      * } $args
      */
     public function __construct(array $args = [])

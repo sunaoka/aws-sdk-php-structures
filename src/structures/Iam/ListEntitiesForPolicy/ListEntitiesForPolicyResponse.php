@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Iam\ListEntitiesForPolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\PolicyGroup> $PolicyGroups
- * @property list<Shapes\PolicyUser> $PolicyUsers
- * @property list<Shapes\PolicyRole> $PolicyRoles
- * @property bool $IsTruncated
- * @property string $Marker
+ * @property list<Shapes\PolicyGroup>|null $PolicyGroups
+ * @property list<Shapes\PolicyUser>|null $PolicyUsers
+ * @property list<Shapes\PolicyRole>|null $PolicyRoles
+ * @property bool|null $IsTruncated
+ * @property string|null $Marker
  */
 class ListEntitiesForPolicyResponse extends Response
 {

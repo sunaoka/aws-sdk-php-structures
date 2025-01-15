@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $projectArn
- * @property 'DEVELOPMENT'|'LIVE' $projectStage
- * @property 'COMPLETED'|'IN_PROGRESS'|'FAILED' $status
+ * @property 'DEVELOPMENT'|'LIVE'|null $projectStage
+ * @property 'COMPLETED'|'IN_PROGRESS'|'FAILED'|null $status
  */
 class CreateDataAutomationProjectResponse extends Response
 {

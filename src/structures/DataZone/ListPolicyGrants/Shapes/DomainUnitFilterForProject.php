@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $domainUnit
- * @property bool $includeChildDomainUnits
+ * @property bool|null $includeChildDomainUnits
  */
 class DomainUnitFilterForProject extends Shape
 {
     /**
      * @param array{
      *     domainUnit: string,
-     *     includeChildDomainUnits?: bool
+     *     includeChildDomainUnits?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTWireless\UpdateResourceEventConfiguration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Enabled'|'Disabled' $AmazonIdEventTopic
+ * @property 'Enabled'|'Disabled'|null $AmazonIdEventTopic
  */
 class SidewalkEventNotificationConfigurations extends Shape
 {
     /**
-     * @param array{AmazonIdEventTopic?: 'Enabled'|'Disabled'} $args
+     * @param array{AmazonIdEventTopic?: 'Enabled'|'Disabled'|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OrganizationConfigRuleName
- * @property Shapes\OrganizationManagedRuleMetadata $OrganizationManagedRuleMetadata
- * @property Shapes\OrganizationCustomRuleMetadata $OrganizationCustomRuleMetadata
- * @property list<string> $ExcludedAccounts
- * @property Shapes\OrganizationCustomPolicyRuleMetadata $OrganizationCustomPolicyRuleMetadata
+ * @property Shapes\OrganizationManagedRuleMetadata|null $OrganizationManagedRuleMetadata
+ * @property Shapes\OrganizationCustomRuleMetadata|null $OrganizationCustomRuleMetadata
+ * @property list<string>|null $ExcludedAccounts
+ * @property Shapes\OrganizationCustomPolicyRuleMetadata|null $OrganizationCustomPolicyRuleMetadata
  */
 class PutOrganizationConfigRuleRequest extends Request
 {
     /**
      * @param array{
      *     OrganizationConfigRuleName: string,
-     *     OrganizationManagedRuleMetadata?: Shapes\OrganizationManagedRuleMetadata,
-     *     OrganizationCustomRuleMetadata?: Shapes\OrganizationCustomRuleMetadata,
-     *     ExcludedAccounts?: list<string>,
-     *     OrganizationCustomPolicyRuleMetadata?: Shapes\OrganizationCustomPolicyRuleMetadata
+     *     OrganizationManagedRuleMetadata?: Shapes\OrganizationManagedRuleMetadata|null,
+     *     OrganizationCustomRuleMetadata?: Shapes\OrganizationCustomRuleMetadata|null,
+     *     ExcludedAccounts?: list<string>|null,
+     *     OrganizationCustomPolicyRuleMetadata?: Shapes\OrganizationCustomPolicyRuleMetadata|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DatasetGroupArn
- * @property list<AttributeConfig> $AttributeConfigs
- * @property list<AdditionalDataset> $AdditionalDatasets
+ * @property list<AttributeConfig>|null $AttributeConfigs
+ * @property list<AdditionalDataset>|null $AdditionalDatasets
  */
 class DataConfig extends Shape
 {
     /**
      * @param array{
      *     DatasetGroupArn: string,
-     *     AttributeConfigs?: list<AttributeConfig>,
-     *     AdditionalDatasets?: list<AdditionalDataset>
+     *     AttributeConfigs?: list<AttributeConfig>|null,
+     *     AdditionalDatasets?: list<AdditionalDataset>|null
      * } $args
      */
     public function __construct(array $args)

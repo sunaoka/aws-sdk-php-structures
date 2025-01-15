@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Connect\CreateInstance;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property 'SAML'|'CONNECT_MANAGED'|'EXISTING_DIRECTORY' $IdentityManagementType
- * @property string $InstanceAlias
- * @property string $DirectoryId
+ * @property string|null $InstanceAlias
+ * @property string|null $DirectoryId
  * @property bool $InboundCallsEnabled
  * @property bool $OutboundCallsEnabled
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateInstanceRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     IdentityManagementType: 'SAML'|'CONNECT_MANAGED'|'EXISTING_DIRECTORY',
-     *     InstanceAlias?: string,
-     *     DirectoryId?: string,
+     *     InstanceAlias?: string|null,
+     *     DirectoryId?: string|null,
      *     InboundCallsEnabled: bool,
      *     OutboundCallsEnabled: bool,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

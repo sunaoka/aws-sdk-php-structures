@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\GetAudienceGenerationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3ConfigMap $dataSource
+ * @property S3ConfigMap|null $dataSource
  * @property string $roleArn
- * @property ProtectedQuerySQLParameters $sqlParameters
- * @property ComputeConfiguration $sqlComputeConfiguration
+ * @property ProtectedQuerySQLParameters|null $sqlParameters
+ * @property ComputeConfiguration|null $sqlComputeConfiguration
  */
 class AudienceGenerationJobDataSource extends Shape
 {
     /**
      * @param array{
-     *     dataSource?: S3ConfigMap,
+     *     dataSource?: S3ConfigMap|null,
      *     roleArn: string,
-     *     sqlParameters?: ProtectedQuerySQLParameters,
-     *     sqlComputeConfiguration?: ComputeConfiguration
+     *     sqlParameters?: ProtectedQuerySQLParameters|null,
+     *     sqlComputeConfiguration?: ComputeConfiguration|null
      * } $args
      */
     public function __construct(array $args)

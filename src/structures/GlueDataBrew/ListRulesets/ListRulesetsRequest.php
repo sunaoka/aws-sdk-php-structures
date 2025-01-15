@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\ListRulesets;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TargetArn
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $TargetArn
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListRulesetsRequest extends Request
 {
     /**
      * @param array{
-     *     TargetArn?: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     TargetArn?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

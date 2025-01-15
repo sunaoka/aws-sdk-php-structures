@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\ListApplications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property list<'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED'> $statuses
- * @property int<min, 100> $maxResults
+ * @property string|null $nextToken
+ * @property list<'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED'>|null $statuses
+ * @property int<min, 100>|null $maxResults
  */
 class ListApplicationsRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     statuses?: list<'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED'>,
-     *     maxResults?: int<min, 100>
+     *     nextToken?: string|null,
+     *     statuses?: list<'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED'>|null,
+     *     maxResults?: int<min, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

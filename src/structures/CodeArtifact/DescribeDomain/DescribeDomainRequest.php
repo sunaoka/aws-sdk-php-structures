@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
+ * @property string|null $domainOwner
  */
 class DescribeDomainRequest extends Request
 {
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string
+     *     domainOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

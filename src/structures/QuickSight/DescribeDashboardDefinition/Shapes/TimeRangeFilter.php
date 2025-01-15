@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FilterId
  * @property ColumnIdentifier $Column
- * @property bool $IncludeMinimum
- * @property bool $IncludeMaximum
- * @property TimeRangeFilterValue $RangeMinimumValue
- * @property TimeRangeFilterValue $RangeMaximumValue
+ * @property bool|null $IncludeMinimum
+ * @property bool|null $IncludeMaximum
+ * @property TimeRangeFilterValue|null $RangeMinimumValue
+ * @property TimeRangeFilterValue|null $RangeMaximumValue
  * @property 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY' $NullOption
- * @property ExcludePeriodConfiguration $ExcludePeriodConfiguration
- * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND' $TimeGranularity
- * @property DefaultFilterControlConfiguration $DefaultFilterControlConfiguration
+ * @property ExcludePeriodConfiguration|null $ExcludePeriodConfiguration
+ * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null $TimeGranularity
+ * @property DefaultFilterControlConfiguration|null $DefaultFilterControlConfiguration
  */
 class TimeRangeFilter extends Shape
 {
@@ -22,14 +22,14 @@ class TimeRangeFilter extends Shape
      * @param array{
      *     FilterId: string,
      *     Column: ColumnIdentifier,
-     *     IncludeMinimum?: bool,
-     *     IncludeMaximum?: bool,
-     *     RangeMinimumValue?: TimeRangeFilterValue,
-     *     RangeMaximumValue?: TimeRangeFilterValue,
+     *     IncludeMinimum?: bool|null,
+     *     IncludeMaximum?: bool|null,
+     *     RangeMinimumValue?: TimeRangeFilterValue|null,
+     *     RangeMaximumValue?: TimeRangeFilterValue|null,
      *     NullOption: 'ALL_VALUES'|'NULLS_ONLY'|'NON_NULLS_ONLY',
-     *     ExcludePeriodConfiguration?: ExcludePeriodConfiguration,
-     *     TimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND',
-     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration
+     *     ExcludePeriodConfiguration?: ExcludePeriodConfiguration|null,
+     *     TimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null,
+     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration|null
      * } $args
      */
     public function __construct(array $args)

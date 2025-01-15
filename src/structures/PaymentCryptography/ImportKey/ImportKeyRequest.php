@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\ImportKeyMaterial $KeyMaterial
- * @property 'CMAC'|'ANSI_X9_24' $KeyCheckValueAlgorithm
- * @property bool $Enabled
- * @property list<Shapes\Tag> $Tags
+ * @property 'CMAC'|'ANSI_X9_24'|null $KeyCheckValueAlgorithm
+ * @property bool|null $Enabled
+ * @property list<Shapes\Tag>|null $Tags
  */
 class ImportKeyRequest extends Request
 {
     /**
      * @param array{
      *     KeyMaterial: Shapes\ImportKeyMaterial,
-     *     KeyCheckValueAlgorithm?: 'CMAC'|'ANSI_X9_24',
-     *     Enabled?: bool,
-     *     Tags?: list<Shapes\Tag>
+     *     KeyCheckValueAlgorithm?: 'CMAC'|'ANSI_X9_24'|null,
+     *     Enabled?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

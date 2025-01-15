@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property list<string> $ExpressionNames
- * @property bool $Deployed
+ * @property list<string>|null $ExpressionNames
+ * @property bool|null $Deployed
  */
 class DescribeExpressionsRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     ExpressionNames?: list<string>,
-     *     Deployed?: bool
+     *     ExpressionNames?: list<string>|null,
+     *     Deployed?: bool|null
      * } $args
      */
     public function __construct(array $args)

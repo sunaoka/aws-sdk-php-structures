@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Value
- * @property float $ProficiencyLevel
- * @property Range $Range
- * @property MatchCriteria $MatchCriteria
- * @property string $ComparisonOperator
+ * @property string|null $Name
+ * @property string|null $Value
+ * @property float|null $ProficiencyLevel
+ * @property Range|null $Range
+ * @property MatchCriteria|null $MatchCriteria
+ * @property string|null $ComparisonOperator
  */
 class AttributeCondition extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Value?: string,
-     *     ProficiencyLevel?: float,
-     *     Range?: Range,
-     *     MatchCriteria?: MatchCriteria,
-     *     ComparisonOperator?: string
+     *     Name?: string|null,
+     *     Value?: string|null,
+     *     ProficiencyLevel?: float|null,
+     *     Range?: Range|null,
+     *     MatchCriteria?: MatchCriteria|null,
+     *     ComparisonOperator?: string|null
      * } $args
      */
     public function __construct(array $args = [])

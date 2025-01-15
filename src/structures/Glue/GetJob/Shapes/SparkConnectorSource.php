@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ConnectionName
  * @property string $ConnectorName
  * @property string $ConnectionType
- * @property array<string, string> $AdditionalOptions
- * @property list<GlueSchema> $OutputSchemas
+ * @property array<string, string>|null $AdditionalOptions
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class SparkConnectorSource extends Shape
 {
@@ -20,8 +20,8 @@ class SparkConnectorSource extends Shape
      *     ConnectionName: string,
      *     ConnectorName: string,
      *     ConnectionType: string,
-     *     AdditionalOptions?: array<string, string>,
-     *     OutputSchemas?: list<GlueSchema>
+     *     AdditionalOptions?: array<string, string>|null,
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

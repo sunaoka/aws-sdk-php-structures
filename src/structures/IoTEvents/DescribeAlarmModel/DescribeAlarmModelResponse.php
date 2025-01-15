@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\IoTEvents\DescribeAlarmModel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property string $alarmModelArn
- * @property string $alarmModelVersion
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property 'ACTIVE'|'ACTIVATING'|'INACTIVE'|'FAILED' $status
- * @property string $statusMessage
- * @property string $alarmModelName
- * @property string $alarmModelDescription
- * @property string $roleArn
- * @property string $key
- * @property int<0, 2147483647> $severity
- * @property Shapes\AlarmRule $alarmRule
- * @property Shapes\AlarmNotification $alarmNotification
- * @property Shapes\AlarmEventActions $alarmEventActions
- * @property Shapes\AlarmCapabilities $alarmCapabilities
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property string|null $alarmModelArn
+ * @property string|null $alarmModelVersion
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property 'ACTIVE'|'ACTIVATING'|'INACTIVE'|'FAILED'|null $status
+ * @property string|null $statusMessage
+ * @property string|null $alarmModelName
+ * @property string|null $alarmModelDescription
+ * @property string|null $roleArn
+ * @property string|null $key
+ * @property int<0, 2147483647>|null $severity
+ * @property Shapes\AlarmRule|null $alarmRule
+ * @property Shapes\AlarmNotification|null $alarmNotification
+ * @property Shapes\AlarmEventActions|null $alarmEventActions
+ * @property Shapes\AlarmCapabilities|null $alarmCapabilities
  */
 class DescribeAlarmModelResponse extends Response
 {

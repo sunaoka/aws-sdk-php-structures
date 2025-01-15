@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ecs\ListServiceDeployments;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ServiceDeploymentBrief> $serviceDeployments
- * @property string $nextToken
+ * @property list<Shapes\ServiceDeploymentBrief>|null $serviceDeployments
+ * @property string|null $nextToken
  */
 class ListServiceDeploymentsResponse extends Response
 {

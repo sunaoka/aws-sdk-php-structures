@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property string $RegexString
- * @property list<string> $ContextWords
- * @property array<string, string> $Tags
+ * @property list<string>|null $ContextWords
+ * @property array<string, string>|null $Tags
  */
 class CreateCustomEntityTypeRequest extends Request
 {
@@ -16,8 +16,8 @@ class CreateCustomEntityTypeRequest extends Request
      * @param array{
      *     Name: string,
      *     RegexString: string,
-     *     ContextWords?: list<string>,
-     *     Tags?: array<string, string>
+     *     ContextWords?: list<string>|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

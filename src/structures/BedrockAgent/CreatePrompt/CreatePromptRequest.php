@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreatePrompt;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property string $customerEncryptionKeyArn
- * @property string $defaultVariant
- * @property string $description
+ * @property string|null $clientToken
+ * @property string|null $customerEncryptionKeyArn
+ * @property string|null $defaultVariant
+ * @property string|null $description
  * @property string $name
- * @property array<string, string> $tags
- * @property list<Shapes\PromptVariant> $variants
+ * @property array<string, string>|null $tags
+ * @property list<Shapes\PromptVariant>|null $variants
  */
 class CreatePromptRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     customerEncryptionKeyArn?: string,
-     *     defaultVariant?: string,
-     *     description?: string,
+     *     clientToken?: string|null,
+     *     customerEncryptionKeyArn?: string|null,
+     *     defaultVariant?: string|null,
+     *     description?: string|null,
      *     name: string,
-     *     tags?: array<string, string>,
-     *     variants?: list<Shapes\PromptVariant>
+     *     tags?: array<string, string>|null,
+     *     variants?: list<Shapes\PromptVariant>|null
      * } $args
      */
     public function __construct(array $args)

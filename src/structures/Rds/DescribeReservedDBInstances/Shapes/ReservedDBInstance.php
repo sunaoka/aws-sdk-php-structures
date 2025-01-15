@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeReservedDBInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReservedDBInstanceId
- * @property string $ReservedDBInstancesOfferingId
- * @property string $DBInstanceClass
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property int $Duration
- * @property double $FixedPrice
- * @property double $UsagePrice
- * @property string $CurrencyCode
- * @property int $DBInstanceCount
- * @property string $ProductDescription
- * @property string $OfferingType
- * @property bool $MultiAZ
- * @property string $State
- * @property list<RecurringCharge> $RecurringCharges
- * @property string $ReservedDBInstanceArn
- * @property string $LeaseId
+ * @property string|null $ReservedDBInstanceId
+ * @property string|null $ReservedDBInstancesOfferingId
+ * @property string|null $DBInstanceClass
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property int|null $Duration
+ * @property double|null $FixedPrice
+ * @property double|null $UsagePrice
+ * @property string|null $CurrencyCode
+ * @property int|null $DBInstanceCount
+ * @property string|null $ProductDescription
+ * @property string|null $OfferingType
+ * @property bool|null $MultiAZ
+ * @property string|null $State
+ * @property list<RecurringCharge>|null $RecurringCharges
+ * @property string|null $ReservedDBInstanceArn
+ * @property string|null $LeaseId
  */
 class ReservedDBInstance extends Shape
 {
     /**
      * @param array{
-     *     ReservedDBInstanceId?: string,
-     *     ReservedDBInstancesOfferingId?: string,
-     *     DBInstanceClass?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     Duration?: int,
-     *     FixedPrice?: double,
-     *     UsagePrice?: double,
-     *     CurrencyCode?: string,
-     *     DBInstanceCount?: int,
-     *     ProductDescription?: string,
-     *     OfferingType?: string,
-     *     MultiAZ?: bool,
-     *     State?: string,
-     *     RecurringCharges?: list<RecurringCharge>,
-     *     ReservedDBInstanceArn?: string,
-     *     LeaseId?: string
+     *     ReservedDBInstanceId?: string|null,
+     *     ReservedDBInstancesOfferingId?: string|null,
+     *     DBInstanceClass?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     Duration?: int|null,
+     *     FixedPrice?: double|null,
+     *     UsagePrice?: double|null,
+     *     CurrencyCode?: string|null,
+     *     DBInstanceCount?: int|null,
+     *     ProductDescription?: string|null,
+     *     OfferingType?: string|null,
+     *     MultiAZ?: bool|null,
+     *     State?: string|null,
+     *     RecurringCharges?: list<RecurringCharge>|null,
+     *     ReservedDBInstanceArn?: string|null,
+     *     LeaseId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
  * @property string $Id
- * @property string $Description
+ * @property string|null $Description
  * @property list<string> $Addresses
  * @property string $LockToken
  */
@@ -19,7 +19,7 @@ class UpdateIPSetRequest extends Request
      *     Name: string,
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
      *     Id: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Addresses: list<string>,
      *     LockToken: string
      * } $args

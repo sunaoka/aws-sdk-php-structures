@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'HAS_MANY'|'HAS_ONE'|'BELONGS_TO' $type
  * @property string $relatedModelName
- * @property list<string> $relatedModelFields
- * @property bool $canUnlinkAssociatedModel
- * @property string $relatedJoinFieldName
- * @property string $relatedJoinTableName
- * @property string $belongsToFieldOnRelatedModel
- * @property list<string> $associatedFields
- * @property bool $isHasManyIndex
+ * @property list<string>|null $relatedModelFields
+ * @property bool|null $canUnlinkAssociatedModel
+ * @property string|null $relatedJoinFieldName
+ * @property string|null $relatedJoinTableName
+ * @property string|null $belongsToFieldOnRelatedModel
+ * @property list<string>|null $associatedFields
+ * @property bool|null $isHasManyIndex
  */
 class CodegenGenericDataRelationshipType extends Shape
 {
@@ -21,13 +21,13 @@ class CodegenGenericDataRelationshipType extends Shape
      * @param array{
      *     type: 'HAS_MANY'|'HAS_ONE'|'BELONGS_TO',
      *     relatedModelName: string,
-     *     relatedModelFields?: list<string>,
-     *     canUnlinkAssociatedModel?: bool,
-     *     relatedJoinFieldName?: string,
-     *     relatedJoinTableName?: string,
-     *     belongsToFieldOnRelatedModel?: string,
-     *     associatedFields?: list<string>,
-     *     isHasManyIndex?: bool
+     *     relatedModelFields?: list<string>|null,
+     *     canUnlinkAssociatedModel?: bool|null,
+     *     relatedJoinFieldName?: string|null,
+     *     relatedJoinTableName?: string|null,
+     *     belongsToFieldOnRelatedModel?: string|null,
+     *     associatedFields?: list<string>|null,
+     *     isHasManyIndex?: bool|null
      * } $args
      */
     public function __construct(array $args)

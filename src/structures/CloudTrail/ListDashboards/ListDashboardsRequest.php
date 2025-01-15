@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudTrail\ListDashboards;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NamePrefix
- * @property 'MANAGED'|'CUSTOM' $Type
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
+ * @property string|null $NamePrefix
+ * @property 'MANAGED'|'CUSTOM'|null $Type
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
  */
 class ListDashboardsRequest extends Request
 {
     /**
      * @param array{
-     *     NamePrefix?: string,
-     *     Type?: 'MANAGED'|'CUSTOM',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>
+     *     NamePrefix?: string|null,
+     *     Type?: 'MANAGED'|'CUSTOM'|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args = [])

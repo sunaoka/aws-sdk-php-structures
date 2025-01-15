@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Scheduler\ListSchedules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property string $GroupName
- * @property \Aws\Api\DateTimeResult $LastModificationDate
- * @property string $Name
- * @property 'ENABLED'|'DISABLED' $State
- * @property TargetSummary $Target
+ * @property string|null $Arn
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property string|null $GroupName
+ * @property \Aws\Api\DateTimeResult|null $LastModificationDate
+ * @property string|null $Name
+ * @property 'ENABLED'|'DISABLED'|null $State
+ * @property TargetSummary|null $Target
  */
 class ScheduleSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     GroupName?: string,
-     *     LastModificationDate?: \Aws\Api\DateTimeResult,
-     *     Name?: string,
-     *     State?: 'ENABLED'|'DISABLED',
-     *     Target?: TargetSummary
+     *     Arn?: string|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     GroupName?: string|null,
+     *     LastModificationDate?: \Aws\Api\DateTimeResult|null,
+     *     Name?: string|null,
+     *     State?: 'ENABLED'|'DISABLED'|null,
+     *     Target?: TargetSummary|null
      * } $args
      */
     public function __construct(array $args = [])

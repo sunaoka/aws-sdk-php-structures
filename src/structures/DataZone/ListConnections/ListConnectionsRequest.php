@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property string $environmentIdentifier
- * @property int<1, 50> $maxResults
- * @property string $name
- * @property string $nextToken
+ * @property string|null $environmentIdentifier
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $name
+ * @property string|null $nextToken
  * @property string $projectIdentifier
- * @property 'NAME' $sortBy
- * @property 'ASCENDING'|'DESCENDING' $sortOrder
- * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA' $type
+ * @property 'NAME'|null $sortBy
+ * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
+ * @property 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|null $type
  */
 class ListConnectionsRequest extends Request
 {
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     environmentIdentifier?: string,
-     *     maxResults?: int<1, 50>,
-     *     name?: string,
-     *     nextToken?: string,
+     *     environmentIdentifier?: string|null,
+     *     maxResults?: int<1, 50>|null,
+     *     name?: string|null,
+     *     nextToken?: string|null,
      *     projectIdentifier: string,
-     *     sortBy?: 'NAME',
-     *     sortOrder?: 'ASCENDING'|'DESCENDING',
-     *     type?: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'
+     *     sortBy?: 'NAME'|null,
+     *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
+     *     type?: 'ATHENA'|'BIGQUERY'|'DATABRICKS'|'DOCUMENTDB'|'DYNAMODB'|'HYPERPOD'|'IAM'|'MYSQL'|'OPENSEARCH'|'ORACLE'|'POSTGRESQL'|'REDSHIFT'|'SAPHANA'|'SNOWFLAKE'|'SPARK'|'SQLSERVER'|'TERADATA'|'VERTICA'|'WORKFLOWS_MWAA'|null
      * } $args
      */
     public function __construct(array $args)

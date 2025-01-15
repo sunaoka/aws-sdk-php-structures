@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PrivateNetworks\DeleteNetworkSite;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\NetworkSite $networkSite
+ * @property Shapes\NetworkSite|null $networkSite
  */
 class DeleteNetworkSiteResponse extends Response
 {

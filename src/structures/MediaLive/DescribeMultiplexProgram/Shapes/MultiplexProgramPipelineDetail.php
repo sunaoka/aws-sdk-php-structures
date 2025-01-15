@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeMultiplexProgram\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ActiveChannelPipeline
- * @property string $PipelineId
+ * @property string|null $ActiveChannelPipeline
+ * @property string|null $PipelineId
  */
 class MultiplexProgramPipelineDetail extends Shape
 {
     /**
      * @param array{
-     *     ActiveChannelPipeline?: string,
-     *     PipelineId?: string
+     *     ActiveChannelPipeline?: string|null,
+     *     PipelineId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

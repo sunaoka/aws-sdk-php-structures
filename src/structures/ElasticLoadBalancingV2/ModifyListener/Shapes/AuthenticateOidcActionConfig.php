@@ -10,13 +10,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TokenEndpoint
  * @property string $UserInfoEndpoint
  * @property string $ClientId
- * @property string $ClientSecret
- * @property string $SessionCookieName
- * @property string $Scope
- * @property int $SessionTimeout
- * @property array<string, string> $AuthenticationRequestExtraParams
- * @property 'deny'|'allow'|'authenticate' $OnUnauthenticatedRequest
- * @property bool $UseExistingClientSecret
+ * @property string|null $ClientSecret
+ * @property string|null $SessionCookieName
+ * @property string|null $Scope
+ * @property int|null $SessionTimeout
+ * @property array<string, string>|null $AuthenticationRequestExtraParams
+ * @property 'deny'|'allow'|'authenticate'|null $OnUnauthenticatedRequest
+ * @property bool|null $UseExistingClientSecret
  */
 class AuthenticateOidcActionConfig extends Shape
 {
@@ -27,13 +27,13 @@ class AuthenticateOidcActionConfig extends Shape
      *     TokenEndpoint: string,
      *     UserInfoEndpoint: string,
      *     ClientId: string,
-     *     ClientSecret?: string,
-     *     SessionCookieName?: string,
-     *     Scope?: string,
-     *     SessionTimeout?: int,
-     *     AuthenticationRequestExtraParams?: array<string, string>,
-     *     OnUnauthenticatedRequest?: 'deny'|'allow'|'authenticate',
-     *     UseExistingClientSecret?: bool
+     *     ClientSecret?: string|null,
+     *     SessionCookieName?: string|null,
+     *     Scope?: string|null,
+     *     SessionTimeout?: int|null,
+     *     AuthenticationRequestExtraParams?: array<string, string>|null,
+     *     OnUnauthenticatedRequest?: 'deny'|'allow'|'authenticate'|null,
+     *     UseExistingClientSecret?: bool|null
      * } $args
      */
     public function __construct(array $args)

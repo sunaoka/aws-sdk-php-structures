@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\QueueFleetAssociationSummary> $queueFleetAssociations
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListQueueFleetAssociationsResponse extends Response
 {

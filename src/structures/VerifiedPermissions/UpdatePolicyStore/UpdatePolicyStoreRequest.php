@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $policyStoreId
  * @property Shapes\ValidationSettings $validationSettings
- * @property string $description
+ * @property string|null $description
  */
 class UpdatePolicyStoreRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdatePolicyStoreRequest extends Request
      * @param array{
      *     policyStoreId: string,
      *     validationSettings: Shapes\ValidationSettings,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

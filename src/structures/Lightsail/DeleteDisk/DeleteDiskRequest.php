@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $diskName
- * @property bool $forceDeleteAddOns
+ * @property bool|null $forceDeleteAddOns
  */
 class DeleteDiskRequest extends Request
 {
     /**
      * @param array{
      *     diskName: string,
-     *     forceDeleteAddOns?: bool
+     *     forceDeleteAddOns?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Glue\GetMLTaskRun;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TransformId
- * @property string $TaskRunId
- * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT' $Status
- * @property string $LogGroupName
- * @property Shapes\TaskRunProperties $Properties
- * @property string $ErrorString
- * @property \Aws\Api\DateTimeResult $StartedOn
- * @property \Aws\Api\DateTimeResult $LastModifiedOn
- * @property \Aws\Api\DateTimeResult $CompletedOn
- * @property int $ExecutionTime
+ * @property string|null $TransformId
+ * @property string|null $TaskRunId
+ * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|null $Status
+ * @property string|null $LogGroupName
+ * @property Shapes\TaskRunProperties|null $Properties
+ * @property string|null $ErrorString
+ * @property \Aws\Api\DateTimeResult|null $StartedOn
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedOn
+ * @property \Aws\Api\DateTimeResult|null $CompletedOn
+ * @property int|null $ExecutionTime
  */
 class GetMLTaskRunResponse extends Response
 {

@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\ConfigureLogs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property Shapes\Authorization $Authorization
- * @property string $CreatedAt
- * @property string $DomainName
- * @property Shapes\EgressAccessLogs $EgressAccessLogs
- * @property string $Id
- * @property array<string, string> $Tags
+ * @property string|null $Arn
+ * @property Shapes\Authorization|null $Authorization
+ * @property string|null $CreatedAt
+ * @property string|null $DomainName
+ * @property Shapes\EgressAccessLogs|null $EgressAccessLogs
+ * @property string|null $Id
+ * @property array<string, string>|null $Tags
  */
 class ConfigureLogsResponse extends Response
 {

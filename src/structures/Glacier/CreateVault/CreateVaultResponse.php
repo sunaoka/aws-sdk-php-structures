@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glacier\CreateVault;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $location
+ * @property string|null $location
  */
 class CreateVaultResponse extends Response
 {

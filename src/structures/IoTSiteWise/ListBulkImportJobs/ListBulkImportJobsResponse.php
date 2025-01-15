@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\JobSummary> $jobSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListBulkImportJobsResponse extends Response
 {

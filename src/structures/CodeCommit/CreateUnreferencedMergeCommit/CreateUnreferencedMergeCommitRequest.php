@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $sourceCommitSpecifier
  * @property string $destinationCommitSpecifier
  * @property 'FAST_FORWARD_MERGE'|'SQUASH_MERGE'|'THREE_WAY_MERGE' $mergeOption
- * @property 'FILE_LEVEL'|'LINE_LEVEL' $conflictDetailLevel
- * @property 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE' $conflictResolutionStrategy
- * @property string $authorName
- * @property string $email
- * @property string $commitMessage
- * @property bool $keepEmptyFolders
- * @property Shapes\ConflictResolution $conflictResolution
+ * @property 'FILE_LEVEL'|'LINE_LEVEL'|null $conflictDetailLevel
+ * @property 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE'|null $conflictResolutionStrategy
+ * @property string|null $authorName
+ * @property string|null $email
+ * @property string|null $commitMessage
+ * @property bool|null $keepEmptyFolders
+ * @property Shapes\ConflictResolution|null $conflictResolution
  */
 class CreateUnreferencedMergeCommitRequest extends Request
 {
@@ -25,13 +25,13 @@ class CreateUnreferencedMergeCommitRequest extends Request
      *     sourceCommitSpecifier: string,
      *     destinationCommitSpecifier: string,
      *     mergeOption: 'FAST_FORWARD_MERGE'|'SQUASH_MERGE'|'THREE_WAY_MERGE',
-     *     conflictDetailLevel?: 'FILE_LEVEL'|'LINE_LEVEL',
-     *     conflictResolutionStrategy?: 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE',
-     *     authorName?: string,
-     *     email?: string,
-     *     commitMessage?: string,
-     *     keepEmptyFolders?: bool,
-     *     conflictResolution?: Shapes\ConflictResolution
+     *     conflictDetailLevel?: 'FILE_LEVEL'|'LINE_LEVEL'|null,
+     *     conflictResolutionStrategy?: 'NONE'|'ACCEPT_SOURCE'|'ACCEPT_DESTINATION'|'AUTOMERGE'|null,
+     *     authorName?: string|null,
+     *     email?: string|null,
+     *     commitMessage?: string|null,
+     *     keepEmptyFolders?: bool|null,
+     *     conflictResolution?: Shapes\ConflictResolution|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\IoTWireless\CreateWirelessGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GatewayEui
- * @property string $RfRegion
- * @property list<list<string>> $JoinEuiFilters
- * @property list<string> $NetIdFilters
- * @property list<int<1, 8>> $SubBands
- * @property Beaconing $Beaconing
- * @property float $MaxEirp
+ * @property string|null $GatewayEui
+ * @property string|null $RfRegion
+ * @property list<list<string>>|null $JoinEuiFilters
+ * @property list<string>|null $NetIdFilters
+ * @property list<int<1, 8>>|null $SubBands
+ * @property Beaconing|null $Beaconing
+ * @property float|null $MaxEirp
  */
 class LoRaWANGateway extends Shape
 {
     /**
      * @param array{
-     *     GatewayEui?: string,
-     *     RfRegion?: string,
-     *     JoinEuiFilters?: list<list<string>>,
-     *     NetIdFilters?: list<string>,
-     *     SubBands?: list<int<1, 8>>,
-     *     Beaconing?: Beaconing,
-     *     MaxEirp?: float
+     *     GatewayEui?: string|null,
+     *     RfRegion?: string|null,
+     *     JoinEuiFilters?: list<list<string>>|null,
+     *     NetIdFilters?: list<string>|null,
+     *     SubBands?: list<int<1, 8>>|null,
+     *     Beaconing?: Beaconing|null,
+     *     MaxEirp?: float|null
      * } $args
      */
     public function __construct(array $args = [])

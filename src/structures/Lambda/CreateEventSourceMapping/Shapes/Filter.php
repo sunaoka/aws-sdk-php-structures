@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lambda\CreateEventSourceMapping\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Pattern
+ * @property string|null $Pattern
  */
 class Filter extends Shape
 {
     /**
-     * @param array{Pattern?: string} $args
+     * @param array{Pattern?: string|null} $args
      */
     public function __construct(array $args = [])
     {

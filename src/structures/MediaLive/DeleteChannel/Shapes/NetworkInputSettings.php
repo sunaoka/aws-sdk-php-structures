@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\DeleteChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HlsInputSettings $HlsInputSettings
- * @property 'CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME'|'CHECK_CRYPTOGRAPHY_ONLY' $ServerValidation
- * @property MulticastInputSettings $MulticastInputSettings
+ * @property HlsInputSettings|null $HlsInputSettings
+ * @property 'CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME'|'CHECK_CRYPTOGRAPHY_ONLY'|null $ServerValidation
+ * @property MulticastInputSettings|null $MulticastInputSettings
  */
 class NetworkInputSettings extends Shape
 {
     /**
      * @param array{
-     *     HlsInputSettings?: HlsInputSettings,
-     *     ServerValidation?: 'CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME'|'CHECK_CRYPTOGRAPHY_ONLY',
-     *     MulticastInputSettings?: MulticastInputSettings
+     *     HlsInputSettings?: HlsInputSettings|null,
+     *     ServerValidation?: 'CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME'|'CHECK_CRYPTOGRAPHY_ONLY'|null,
+     *     MulticastInputSettings?: MulticastInputSettings|null
      * } $args
      */
     public function __construct(array $args = [])

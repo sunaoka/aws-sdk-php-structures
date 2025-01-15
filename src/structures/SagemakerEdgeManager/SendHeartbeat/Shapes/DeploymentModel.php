@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SagemakerEdgeManager\SendHeartbeat\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ModelHandle
- * @property string $ModelName
- * @property string $ModelVersion
- * @property 'DEPLOY'|'UNDEPLOY' $DesiredState
- * @property 'DEPLOY'|'UNDEPLOY' $State
- * @property 'SUCCESS'|'FAIL' $Status
- * @property string $StatusReason
- * @property string $RollbackFailureReason
+ * @property string|null $ModelHandle
+ * @property string|null $ModelName
+ * @property string|null $ModelVersion
+ * @property 'DEPLOY'|'UNDEPLOY'|null $DesiredState
+ * @property 'DEPLOY'|'UNDEPLOY'|null $State
+ * @property 'SUCCESS'|'FAIL'|null $Status
+ * @property string|null $StatusReason
+ * @property string|null $RollbackFailureReason
  */
 class DeploymentModel extends Shape
 {
     /**
      * @param array{
-     *     ModelHandle?: string,
-     *     ModelName?: string,
-     *     ModelVersion?: string,
-     *     DesiredState?: 'DEPLOY'|'UNDEPLOY',
-     *     State?: 'DEPLOY'|'UNDEPLOY',
-     *     Status?: 'SUCCESS'|'FAIL',
-     *     StatusReason?: string,
-     *     RollbackFailureReason?: string
+     *     ModelHandle?: string|null,
+     *     ModelName?: string|null,
+     *     ModelVersion?: string|null,
+     *     DesiredState?: 'DEPLOY'|'UNDEPLOY'|null,
+     *     State?: 'DEPLOY'|'UNDEPLOY'|null,
+     *     Status?: 'SUCCESS'|'FAIL'|null,
+     *     StatusReason?: string|null,
+     *     RollbackFailureReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\drs\StartSourceNetworkRecovery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED' $launchStatus
- * @property ParticipatingResourceID $participatingResourceID
+ * @property 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null $launchStatus
+ * @property ParticipatingResourceID|null $participatingResourceID
  */
 class ParticipatingResource extends Shape
 {
     /**
      * @param array{
-     *     launchStatus?: 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED',
-     *     participatingResourceID?: ParticipatingResourceID
+     *     launchStatus?: 'PENDING'|'IN_PROGRESS'|'LAUNCHED'|'FAILED'|'TERMINATED'|null,
+     *     participatingResourceID?: ParticipatingResourceID|null
      * } $args
      */
     public function __construct(array $args = [])

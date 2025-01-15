@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\MemoryDB\CopySnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Description
- * @property string $NodeType
- * @property string $Engine
- * @property string $EngineVersion
- * @property string $MaintenanceWindow
- * @property string $TopicArn
- * @property int $Port
- * @property string $ParameterGroupName
- * @property string $SubnetGroupName
- * @property string $VpcId
- * @property int $SnapshotRetentionLimit
- * @property string $SnapshotWindow
- * @property int $NumShards
- * @property list<ShardDetail> $Shards
- * @property string $MultiRegionParameterGroupName
- * @property string $MultiRegionClusterName
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $NodeType
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property string|null $MaintenanceWindow
+ * @property string|null $TopicArn
+ * @property int|null $Port
+ * @property string|null $ParameterGroupName
+ * @property string|null $SubnetGroupName
+ * @property string|null $VpcId
+ * @property int|null $SnapshotRetentionLimit
+ * @property string|null $SnapshotWindow
+ * @property int|null $NumShards
+ * @property list<ShardDetail>|null $Shards
+ * @property string|null $MultiRegionParameterGroupName
+ * @property string|null $MultiRegionClusterName
  */
 class ClusterConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Description?: string,
-     *     NodeType?: string,
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     MaintenanceWindow?: string,
-     *     TopicArn?: string,
-     *     Port?: int,
-     *     ParameterGroupName?: string,
-     *     SubnetGroupName?: string,
-     *     VpcId?: string,
-     *     SnapshotRetentionLimit?: int,
-     *     SnapshotWindow?: string,
-     *     NumShards?: int,
-     *     Shards?: list<ShardDetail>,
-     *     MultiRegionParameterGroupName?: string,
-     *     MultiRegionClusterName?: string
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     NodeType?: string|null,
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     MaintenanceWindow?: string|null,
+     *     TopicArn?: string|null,
+     *     Port?: int|null,
+     *     ParameterGroupName?: string|null,
+     *     SubnetGroupName?: string|null,
+     *     VpcId?: string|null,
+     *     SnapshotRetentionLimit?: int|null,
+     *     SnapshotWindow?: string|null,
+     *     NumShards?: int|null,
+     *     Shards?: list<ShardDetail>|null,
+     *     MultiRegionParameterGroupName?: string|null,
+     *     MultiRegionClusterName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CellName
- * @property list<string> $Cells
- * @property array<string, string> $Tags
+ * @property list<string>|null $Cells
+ * @property array<string, string>|null $Tags
  */
 class CreateCellRequest extends Request
 {
     /**
      * @param array{
      *     CellName: string,
-     *     Cells?: list<string>,
-     *     Tags?: array<string, string>
+     *     Cells?: list<string>|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

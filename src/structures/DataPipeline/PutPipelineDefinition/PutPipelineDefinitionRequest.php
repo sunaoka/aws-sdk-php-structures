@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $pipelineId
  * @property list<Shapes\PipelineObject> $pipelineObjects
- * @property list<Shapes\ParameterObject> $parameterObjects
- * @property list<Shapes\ParameterValue> $parameterValues
+ * @property list<Shapes\ParameterObject>|null $parameterObjects
+ * @property list<Shapes\ParameterValue>|null $parameterValues
  */
 class PutPipelineDefinitionRequest extends Request
 {
@@ -16,8 +16,8 @@ class PutPipelineDefinitionRequest extends Request
      * @param array{
      *     pipelineId: string,
      *     pipelineObjects: list<Shapes\PipelineObject>,
-     *     parameterObjects?: list<Shapes\ParameterObject>,
-     *     parameterValues?: list<Shapes\ParameterValue>
+     *     parameterObjects?: list<Shapes\ParameterObject>|null,
+     *     parameterValues?: list<Shapes\ParameterValue>|null
      * } $args
      */
     public function __construct(array $args)

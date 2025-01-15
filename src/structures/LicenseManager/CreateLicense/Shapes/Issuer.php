@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $SignKey
+ * @property string|null $SignKey
  */
 class Issuer extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     SignKey?: string
+     *     SignKey?: string|null
      * } $args
      */
     public function __construct(array $args)

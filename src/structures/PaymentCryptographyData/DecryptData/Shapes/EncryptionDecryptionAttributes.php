@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\DecryptData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SymmetricEncryptionAttributes $Symmetric
- * @property AsymmetricEncryptionAttributes $Asymmetric
- * @property DukptEncryptionAttributes $Dukpt
- * @property EmvEncryptionAttributes $Emv
+ * @property SymmetricEncryptionAttributes|null $Symmetric
+ * @property AsymmetricEncryptionAttributes|null $Asymmetric
+ * @property DukptEncryptionAttributes|null $Dukpt
+ * @property EmvEncryptionAttributes|null $Emv
  */
 class EncryptionDecryptionAttributes extends Shape
 {
     /**
      * @param array{
-     *     Symmetric?: SymmetricEncryptionAttributes,
-     *     Asymmetric?: AsymmetricEncryptionAttributes,
-     *     Dukpt?: DukptEncryptionAttributes,
-     *     Emv?: EmvEncryptionAttributes
+     *     Symmetric?: SymmetricEncryptionAttributes|null,
+     *     Asymmetric?: AsymmetricEncryptionAttributes|null,
+     *     Dukpt?: DukptEncryptionAttributes|null,
+     *     Emv?: EmvEncryptionAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

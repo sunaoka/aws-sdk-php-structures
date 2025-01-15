@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Comprehend\DetectEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property 'LINE'|'WORD' $BlockType
- * @property string $Text
- * @property int $Page
- * @property Geometry $Geometry
- * @property list<RelationshipsListItem> $Relationships
+ * @property string|null $Id
+ * @property 'LINE'|'WORD'|null $BlockType
+ * @property string|null $Text
+ * @property int|null $Page
+ * @property Geometry|null $Geometry
+ * @property list<RelationshipsListItem>|null $Relationships
  */
 class Block extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     BlockType?: 'LINE'|'WORD',
-     *     Text?: string,
-     *     Page?: int,
-     *     Geometry?: Geometry,
-     *     Relationships?: list<RelationshipsListItem>
+     *     Id?: string|null,
+     *     BlockType?: 'LINE'|'WORD'|null,
+     *     Text?: string|null,
+     *     Page?: int|null,
+     *     Geometry?: Geometry|null,
+     *     Relationships?: list<RelationshipsListItem>|null
      * } $args
      */
     public function __construct(array $args = [])

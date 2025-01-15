@@ -5,51 +5,51 @@ namespace Sunaoka\Aws\Structures\WorkSpacesThinClient\GetEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
- * @property string $desktopArn
- * @property string $desktopEndpoint
- * @property 'workspaces'|'appstream'|'workspaces-web' $desktopType
- * @property string $activationCode
- * @property int $registeredDevicesCount
- * @property 'USE_MAINTENANCE_WINDOW'|'APPLY_IMMEDIATELY' $softwareSetUpdateSchedule
- * @property MaintenanceWindow $maintenanceWindow
- * @property 'USE_LATEST'|'USE_DESIRED' $softwareSetUpdateMode
- * @property string $desiredSoftwareSetId
- * @property string $pendingSoftwareSetId
- * @property string $pendingSoftwareSetVersion
- * @property 'NO_REGISTERED_DEVICES'|'COMPLIANT'|'NOT_COMPLIANT' $softwareSetComplianceStatus
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $arn
- * @property string $kmsKeyArn
- * @property array<string, string> $tags
- * @property array<string, string> $deviceCreationTags
+ * @property string|null $id
+ * @property string|null $name
+ * @property string|null $desktopArn
+ * @property string|null $desktopEndpoint
+ * @property 'workspaces'|'appstream'|'workspaces-web'|null $desktopType
+ * @property string|null $activationCode
+ * @property int|null $registeredDevicesCount
+ * @property 'USE_MAINTENANCE_WINDOW'|'APPLY_IMMEDIATELY'|null $softwareSetUpdateSchedule
+ * @property MaintenanceWindow|null $maintenanceWindow
+ * @property 'USE_LATEST'|'USE_DESIRED'|null $softwareSetUpdateMode
+ * @property string|null $desiredSoftwareSetId
+ * @property string|null $pendingSoftwareSetId
+ * @property string|null $pendingSoftwareSetVersion
+ * @property 'NO_REGISTERED_DEVICES'|'COMPLIANT'|'NOT_COMPLIANT'|null $softwareSetComplianceStatus
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $arn
+ * @property string|null $kmsKeyArn
+ * @property array<string, string>|null $tags
+ * @property array<string, string>|null $deviceCreationTags
  */
 class Environment extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string,
-     *     desktopArn?: string,
-     *     desktopEndpoint?: string,
-     *     desktopType?: 'workspaces'|'appstream'|'workspaces-web',
-     *     activationCode?: string,
-     *     registeredDevicesCount?: int,
-     *     softwareSetUpdateSchedule?: 'USE_MAINTENANCE_WINDOW'|'APPLY_IMMEDIATELY',
-     *     maintenanceWindow?: MaintenanceWindow,
-     *     softwareSetUpdateMode?: 'USE_LATEST'|'USE_DESIRED',
-     *     desiredSoftwareSetId?: string,
-     *     pendingSoftwareSetId?: string,
-     *     pendingSoftwareSetVersion?: string,
-     *     softwareSetComplianceStatus?: 'NO_REGISTERED_DEVICES'|'COMPLIANT'|'NOT_COMPLIANT',
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     arn?: string,
-     *     kmsKeyArn?: string,
-     *     tags?: array<string, string>,
-     *     deviceCreationTags?: array<string, string>
+     *     id?: string|null,
+     *     name?: string|null,
+     *     desktopArn?: string|null,
+     *     desktopEndpoint?: string|null,
+     *     desktopType?: 'workspaces'|'appstream'|'workspaces-web'|null,
+     *     activationCode?: string|null,
+     *     registeredDevicesCount?: int|null,
+     *     softwareSetUpdateSchedule?: 'USE_MAINTENANCE_WINDOW'|'APPLY_IMMEDIATELY'|null,
+     *     maintenanceWindow?: MaintenanceWindow|null,
+     *     softwareSetUpdateMode?: 'USE_LATEST'|'USE_DESIRED'|null,
+     *     desiredSoftwareSetId?: string|null,
+     *     pendingSoftwareSetId?: string|null,
+     *     pendingSoftwareSetVersion?: string|null,
+     *     softwareSetComplianceStatus?: 'NO_REGISTERED_DEVICES'|'COMPLIANT'|'NOT_COMPLIANT'|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     arn?: string|null,
+     *     kmsKeyArn?: string|null,
+     *     tags?: array<string, string>|null,
+     *     deviceCreationTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

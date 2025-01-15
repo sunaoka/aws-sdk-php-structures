@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\GetPackageVersionHistory\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PackageVersion
- * @property string $CommitMessage
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property PluginProperties $PluginProperties
- * @property PackageConfiguration $PackageConfiguration
+ * @property string|null $PackageVersion
+ * @property string|null $CommitMessage
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property PluginProperties|null $PluginProperties
+ * @property PackageConfiguration|null $PackageConfiguration
  */
 class PackageVersionHistory extends Shape
 {
     /**
      * @param array{
-     *     PackageVersion?: string,
-     *     CommitMessage?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     PluginProperties?: PluginProperties,
-     *     PackageConfiguration?: PackageConfiguration
+     *     PackageVersion?: string|null,
+     *     CommitMessage?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     PluginProperties?: PluginProperties|null,
+     *     PackageConfiguration?: PackageConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

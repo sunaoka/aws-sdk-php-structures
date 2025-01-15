@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $ARN
  * @property string $Status
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property string $DomainName
  * @property ActiveTrustedSigners $ActiveTrustedSigners
  * @property StreamingDistributionConfig $StreamingDistributionConfig
@@ -20,7 +20,7 @@ class StreamingDistribution extends Shape
      *     Id: string,
      *     ARN: string,
      *     Status: string,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     DomainName: string,
      *     ActiveTrustedSigners: ActiveTrustedSigners,
      *     StreamingDistributionConfig: StreamingDistributionConfig

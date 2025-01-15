@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Backup\GetLegalHold;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Title
- * @property 'CREATING'|'ACTIVE'|'CANCELING'|'CANCELED' $Status
- * @property string $Description
- * @property string $CancelDescription
- * @property string $LegalHoldId
- * @property string $LegalHoldArn
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $CancellationDate
- * @property \Aws\Api\DateTimeResult $RetainRecordUntil
- * @property Shapes\RecoveryPointSelection $RecoveryPointSelection
+ * @property string|null $Title
+ * @property 'CREATING'|'ACTIVE'|'CANCELING'|'CANCELED'|null $Status
+ * @property string|null $Description
+ * @property string|null $CancelDescription
+ * @property string|null $LegalHoldId
+ * @property string|null $LegalHoldArn
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $CancellationDate
+ * @property \Aws\Api\DateTimeResult|null $RetainRecordUntil
+ * @property Shapes\RecoveryPointSelection|null $RecoveryPointSelection
  */
 class GetLegalHoldResponse extends Response
 {

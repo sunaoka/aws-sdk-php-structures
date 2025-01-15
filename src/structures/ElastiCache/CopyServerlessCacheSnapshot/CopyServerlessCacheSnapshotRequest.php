@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SourceServerlessCacheSnapshotName
  * @property string $TargetServerlessCacheSnapshotName
- * @property string $KmsKeyId
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $KmsKeyId
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CopyServerlessCacheSnapshotRequest extends Request
 {
@@ -16,8 +16,8 @@ class CopyServerlessCacheSnapshotRequest extends Request
      * @param array{
      *     SourceServerlessCacheSnapshotName: string,
      *     TargetServerlessCacheSnapshotName: string,
-     *     KmsKeyId?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     KmsKeyId?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

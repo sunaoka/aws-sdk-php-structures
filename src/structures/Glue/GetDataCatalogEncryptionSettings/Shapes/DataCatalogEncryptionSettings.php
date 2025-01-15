@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetDataCatalogEncryptionSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EncryptionAtRest $EncryptionAtRest
- * @property ConnectionPasswordEncryption $ConnectionPasswordEncryption
+ * @property EncryptionAtRest|null $EncryptionAtRest
+ * @property ConnectionPasswordEncryption|null $ConnectionPasswordEncryption
  */
 class DataCatalogEncryptionSettings extends Shape
 {
     /**
      * @param array{
-     *     EncryptionAtRest?: EncryptionAtRest,
-     *     ConnectionPasswordEncryption?: ConnectionPasswordEncryption
+     *     EncryptionAtRest?: EncryptionAtRest|null,
+     *     ConnectionPasswordEncryption?: ConnectionPasswordEncryption|null
      * } $args
      */
     public function __construct(array $args = [])

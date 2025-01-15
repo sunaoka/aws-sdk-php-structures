@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $title
- * @property string $subtitle
- * @property string $imageUrl
- * @property list<Button> $buttons
+ * @property string|null $subtitle
+ * @property string|null $imageUrl
+ * @property list<Button>|null $buttons
  */
 class ImageResponseCard extends Shape
 {
     /**
      * @param array{
      *     title: string,
-     *     subtitle?: string,
-     *     imageUrl?: string,
-     *     buttons?: list<Button>
+     *     subtitle?: string|null,
+     *     imageUrl?: string|null,
+     *     buttons?: list<Button>|null
      * } $args
      */
     public function __construct(array $args)

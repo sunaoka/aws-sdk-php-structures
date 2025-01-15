@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 503> $Pci
  * @property int<0, 262143> $Earfcn
  * @property int<0, 268435455> $EutranCid
- * @property int<-140, -44> $Rsrp
- * @property float $Rsrq
+ * @property int<-140, -44>|null $Rsrp
+ * @property float|null $Rsrq
  */
 class LteNmrObj extends Shape
 {
@@ -18,8 +18,8 @@ class LteNmrObj extends Shape
      *     Pci: int<0, 503>,
      *     Earfcn: int<0, 262143>,
      *     EutranCid: int<0, 268435455>,
-     *     Rsrp?: int<-140, -44>,
-     *     Rsrq?: float
+     *     Rsrp?: int<-140, -44>|null,
+     *     Rsrq?: float|null
      * } $args
      */
     public function __construct(array $args)

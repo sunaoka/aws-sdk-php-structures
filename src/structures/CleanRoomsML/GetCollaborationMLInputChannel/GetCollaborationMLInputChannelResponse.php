@@ -14,10 +14,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property list<string> $configuredModelAlgorithmAssociations
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'INACTIVE' $status
- * @property Shapes\StatusDetails $statusDetails
+ * @property Shapes\StatusDetails|null $statusDetails
  * @property int<1, 30> $retentionInDays
- * @property int<0, 100000000000> $numberOfRecords
- * @property string $description
+ * @property int<0, 100000000000>|null $numberOfRecords
+ * @property string|null $description
  */
 class GetCollaborationMLInputChannelResponse extends Response
 {

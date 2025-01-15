@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RDSDataService\ExecuteSql\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResultSetMetadata $resultSetMetadata
- * @property list<Record> $records
+ * @property ResultSetMetadata|null $resultSetMetadata
+ * @property list<Record>|null $records
  */
 class ResultFrame extends Shape
 {
     /**
      * @param array{
-     *     resultSetMetadata?: ResultSetMetadata,
-     *     records?: list<Record>
+     *     resultSetMetadata?: ResultSetMetadata|null,
+     *     records?: list<Record>|null
      * } $args
      */
     public function __construct(array $args = [])

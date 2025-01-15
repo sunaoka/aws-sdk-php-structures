@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $dataSourceId
- * @property string $description
+ * @property string|null $description
  * @property string $knowledgeBaseId
  * @property string $name
  * @property 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL' $status
@@ -17,7 +17,7 @@ class DataSourceSummary extends Shape
     /**
      * @param array{
      *     dataSourceId: string,
-     *     description?: string,
+     *     description?: string|null,
      *     knowledgeBaseId: string,
      *     name: string,
      *     status: 'AVAILABLE'|'DELETING'|'DELETE_UNSUCCESSFUL',

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $BackupVaultName
  * @property string $RecoveryPointArn
- * @property Shapes\Lifecycle $Lifecycle
+ * @property Shapes\Lifecycle|null $Lifecycle
  */
 class UpdateRecoveryPointLifecycleRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateRecoveryPointLifecycleRequest extends Request
      * @param array{
      *     BackupVaultName: string,
      *     RecoveryPointArn: string,
-     *     Lifecycle?: Shapes\Lifecycle
+     *     Lifecycle?: Shapes\Lifecycle|null
      * } $args
      */
     public function __construct(array $args)

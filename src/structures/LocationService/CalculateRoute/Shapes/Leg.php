@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<double> $EndPosition
  * @property double $Distance
  * @property double $DurationSeconds
- * @property LegGeometry $Geometry
+ * @property LegGeometry|null $Geometry
  * @property list<Step> $Steps
  */
 class Leg extends Shape
@@ -20,7 +20,7 @@ class Leg extends Shape
      *     EndPosition: list<double>,
      *     Distance: double,
      *     DurationSeconds: double,
-     *     Geometry?: LegGeometry,
+     *     Geometry?: LegGeometry|null,
      *     Steps: list<Step>
      * } $args
      */

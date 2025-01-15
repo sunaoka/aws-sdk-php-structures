@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DirectConnect\CreateDirectConnectGatewayAssocia
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $proposalId
- * @property string $directConnectGatewayId
- * @property string $directConnectGatewayOwnerAccount
- * @property 'requested'|'accepted'|'deleted' $proposalState
- * @property AssociatedGateway $associatedGateway
- * @property list<RouteFilterPrefix> $existingAllowedPrefixesToDirectConnectGateway
- * @property list<RouteFilterPrefix> $requestedAllowedPrefixesToDirectConnectGateway
+ * @property string|null $proposalId
+ * @property string|null $directConnectGatewayId
+ * @property string|null $directConnectGatewayOwnerAccount
+ * @property 'requested'|'accepted'|'deleted'|null $proposalState
+ * @property AssociatedGateway|null $associatedGateway
+ * @property list<RouteFilterPrefix>|null $existingAllowedPrefixesToDirectConnectGateway
+ * @property list<RouteFilterPrefix>|null $requestedAllowedPrefixesToDirectConnectGateway
  */
 class DirectConnectGatewayAssociationProposal extends Shape
 {
     /**
      * @param array{
-     *     proposalId?: string,
-     *     directConnectGatewayId?: string,
-     *     directConnectGatewayOwnerAccount?: string,
-     *     proposalState?: 'requested'|'accepted'|'deleted',
-     *     associatedGateway?: AssociatedGateway,
-     *     existingAllowedPrefixesToDirectConnectGateway?: list<RouteFilterPrefix>,
-     *     requestedAllowedPrefixesToDirectConnectGateway?: list<RouteFilterPrefix>
+     *     proposalId?: string|null,
+     *     directConnectGatewayId?: string|null,
+     *     directConnectGatewayOwnerAccount?: string|null,
+     *     proposalState?: 'requested'|'accepted'|'deleted'|null,
+     *     associatedGateway?: AssociatedGateway|null,
+     *     existingAllowedPrefixesToDirectConnectGateway?: list<RouteFilterPrefix>|null,
+     *     requestedAllowedPrefixesToDirectConnectGateway?: list<RouteFilterPrefix>|null
      * } $args
      */
     public function __construct(array $args = [])

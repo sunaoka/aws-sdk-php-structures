@@ -6,40 +6,40 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AvailabilityZone
- * @property string $Description
- * @property string $EgressIp
+ * @property string|null $Description
+ * @property string|null $EgressIp
  * @property list<Entitlement> $Entitlements
  * @property string $FlowArn
- * @property list<MediaStream> $MediaStreams
+ * @property list<MediaStream>|null $MediaStreams
  * @property string $Name
  * @property list<Output> $Outputs
  * @property Source $Source
- * @property FailoverConfig $SourceFailoverConfig
- * @property list<Source> $Sources
+ * @property FailoverConfig|null $SourceFailoverConfig
+ * @property list<Source>|null $Sources
  * @property 'STANDBY'|'ACTIVE'|'UPDATING'|'DELETING'|'STARTING'|'STOPPING'|'ERROR' $Status
- * @property list<VpcInterface> $VpcInterfaces
- * @property Maintenance $Maintenance
- * @property MonitoringConfig $SourceMonitoringConfig
+ * @property list<VpcInterface>|null $VpcInterfaces
+ * @property Maintenance|null $Maintenance
+ * @property MonitoringConfig|null $SourceMonitoringConfig
  */
 class Flow extends Shape
 {
     /**
      * @param array{
      *     AvailabilityZone: string,
-     *     Description?: string,
-     *     EgressIp?: string,
+     *     Description?: string|null,
+     *     EgressIp?: string|null,
      *     Entitlements: list<Entitlement>,
      *     FlowArn: string,
-     *     MediaStreams?: list<MediaStream>,
+     *     MediaStreams?: list<MediaStream>|null,
      *     Name: string,
      *     Outputs: list<Output>,
      *     Source: Source,
-     *     SourceFailoverConfig?: FailoverConfig,
-     *     Sources?: list<Source>,
+     *     SourceFailoverConfig?: FailoverConfig|null,
+     *     Sources?: list<Source>|null,
      *     Status: 'STANDBY'|'ACTIVE'|'UPDATING'|'DELETING'|'STARTING'|'STOPPING'|'ERROR',
-     *     VpcInterfaces?: list<VpcInterface>,
-     *     Maintenance?: Maintenance,
-     *     SourceMonitoringConfig?: MonitoringConfig
+     *     VpcInterfaces?: list<VpcInterface>|null,
+     *     Maintenance?: Maintenance|null,
+     *     SourceMonitoringConfig?: MonitoringConfig|null
      * } $args
      */
     public function __construct(array $args)

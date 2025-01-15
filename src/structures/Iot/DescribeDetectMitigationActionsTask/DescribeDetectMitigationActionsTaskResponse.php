@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeDetectMitigationActionsTask;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DetectMitigationActionsTaskSummary $taskSummary
+ * @property Shapes\DetectMitigationActionsTaskSummary|null $taskSummary
  */
 class DescribeDetectMitigationActionsTaskResponse extends Response
 {

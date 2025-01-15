@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetWirelessGatewayFirmwareInformati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PackageVersion
- * @property string $Model
- * @property string $Station
+ * @property string|null $PackageVersion
+ * @property string|null $Model
+ * @property string|null $Station
  */
 class LoRaWANGatewayVersion extends Shape
 {
     /**
      * @param array{
-     *     PackageVersion?: string,
-     *     Model?: string,
-     *     Station?: string
+     *     PackageVersion?: string|null,
+     *     Model?: string|null,
+     *     Station?: string|null
      * } $args
      */
     public function __construct(array $args = [])

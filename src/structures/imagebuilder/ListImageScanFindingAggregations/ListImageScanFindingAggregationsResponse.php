@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImageScanFindingAggregations;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $requestId
- * @property string $aggregationType
- * @property list<Shapes\ImageScanFindingAggregation> $responses
- * @property string $nextToken
+ * @property string|null $requestId
+ * @property string|null $aggregationType
+ * @property list<Shapes\ImageScanFindingAggregation>|null $responses
+ * @property string|null $nextToken
  */
 class ListImageScanFindingAggregationsResponse extends Response
 {

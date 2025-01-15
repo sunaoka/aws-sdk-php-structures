@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $VpcId
  * @property string $VpnGatewayId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DetachVpnGatewayRequest extends Request
 {
@@ -15,7 +15,7 @@ class DetachVpnGatewayRequest extends Request
      * @param array{
      *     VpcId: string,
      *     VpnGatewayId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

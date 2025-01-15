@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateReservation;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
- * @property Shapes\RenewalSettings $RenewalSettings
+ * @property string|null $Name
+ * @property Shapes\RenewalSettings|null $RenewalSettings
  * @property string $ReservationId
  */
 class UpdateReservationRequest extends Request
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     RenewalSettings?: Shapes\RenewalSettings,
+     *     Name?: string|null,
+     *     RenewalSettings?: Shapes\RenewalSettings|null,
      *     ReservationId: string
      * } $args
      */

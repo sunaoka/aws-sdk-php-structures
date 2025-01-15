@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $ClientRequestToken
- * @property string $Description
- * @property string $KmsKeyId
- * @property string|resource|\Psr\Http\Message\StreamInterface $SecretBinary
- * @property string $SecretString
- * @property list<Shapes\Tag> $Tags
- * @property list<Shapes\ReplicaRegionType> $AddReplicaRegions
- * @property bool $ForceOverwriteReplicaSecret
+ * @property string|null $ClientRequestToken
+ * @property string|null $Description
+ * @property string|null $KmsKeyId
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $SecretBinary
+ * @property string|null $SecretString
+ * @property list<Shapes\Tag>|null $Tags
+ * @property list<Shapes\ReplicaRegionType>|null $AddReplicaRegions
+ * @property bool|null $ForceOverwriteReplicaSecret
  */
 class CreateSecretRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     ClientRequestToken?: string,
-     *     Description?: string,
-     *     KmsKeyId?: string,
-     *     SecretBinary?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     SecretString?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     AddReplicaRegions?: list<Shapes\ReplicaRegionType>,
-     *     ForceOverwriteReplicaSecret?: bool
+     *     ClientRequestToken?: string|null,
+     *     Description?: string|null,
+     *     KmsKeyId?: string|null,
+     *     SecretBinary?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     SecretString?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     AddReplicaRegions?: list<Shapes\ReplicaRegionType>|null,
+     *     ForceOverwriteReplicaSecret?: bool|null
      * } $args
      */
     public function __construct(array $args)

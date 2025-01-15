@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeAction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserProfileArn
- * @property string $UserProfileName
- * @property string $DomainId
- * @property IamIdentity $IamIdentity
+ * @property string|null $UserProfileArn
+ * @property string|null $UserProfileName
+ * @property string|null $DomainId
+ * @property IamIdentity|null $IamIdentity
  */
 class UserContext extends Shape
 {
     /**
      * @param array{
-     *     UserProfileArn?: string,
-     *     UserProfileName?: string,
-     *     DomainId?: string,
-     *     IamIdentity?: IamIdentity
+     *     UserProfileArn?: string|null,
+     *     UserProfileName?: string|null,
+     *     DomainId?: string|null,
+     *     IamIdentity?: IamIdentity|null
      * } $args
      */
     public function __construct(array $args = [])

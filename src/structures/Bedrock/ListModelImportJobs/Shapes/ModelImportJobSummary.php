@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $jobArn
  * @property string $jobName
  * @property 'InProgress'|'Completed'|'Failed' $status
- * @property \Aws\Api\DateTimeResult $lastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $endTime
- * @property string $importedModelArn
- * @property string $importedModelName
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property string|null $importedModelArn
+ * @property string|null $importedModelName
  */
 class ModelImportJobSummary extends Shape
 {
@@ -21,11 +21,11 @@ class ModelImportJobSummary extends Shape
      *     jobArn: string,
      *     jobName: string,
      *     status: 'InProgress'|'Completed'|'Failed',
-     *     lastModifiedTime?: \Aws\Api\DateTimeResult,
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     importedModelArn?: string,
-     *     importedModelName?: string
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     importedModelArn?: string|null,
+     *     importedModelName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppIntegrationsService\ListApplicationAssociati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationAssociationArn
- * @property string $ApplicationArn
- * @property string $ClientId
+ * @property string|null $ApplicationAssociationArn
+ * @property string|null $ApplicationArn
+ * @property string|null $ClientId
  */
 class ApplicationAssociationSummary extends Shape
 {
     /**
      * @param array{
-     *     ApplicationAssociationArn?: string,
-     *     ApplicationArn?: string,
-     *     ClientId?: string
+     *     ApplicationAssociationArn?: string|null,
+     *     ApplicationArn?: string|null,
+     *     ClientId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

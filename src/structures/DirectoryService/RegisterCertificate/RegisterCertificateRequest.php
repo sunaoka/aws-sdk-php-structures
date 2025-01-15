@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DirectoryId
  * @property string $CertificateData
- * @property 'ClientCertAuth'|'ClientLDAPS' $Type
- * @property Shapes\ClientCertAuthSettings $ClientCertAuthSettings
+ * @property 'ClientCertAuth'|'ClientLDAPS'|null $Type
+ * @property Shapes\ClientCertAuthSettings|null $ClientCertAuthSettings
  */
 class RegisterCertificateRequest extends Request
 {
@@ -16,8 +16,8 @@ class RegisterCertificateRequest extends Request
      * @param array{
      *     DirectoryId: string,
      *     CertificateData: string,
-     *     Type?: 'ClientCertAuth'|'ClientLDAPS',
-     *     ClientCertAuthSettings?: Shapes\ClientCertAuthSettings
+     *     Type?: 'ClientCertAuth'|'ClientLDAPS'|null,
+     *     ClientCertAuthSettings?: Shapes\ClientCertAuthSettings|null
      * } $args
      */
     public function __construct(array $args)

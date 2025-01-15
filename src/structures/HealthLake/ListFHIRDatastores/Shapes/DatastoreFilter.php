@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\HealthLake\ListFHIRDatastores\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DatastoreName
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'DELETED'|'CREATE_FAILED' $DatastoreStatus
- * @property \Aws\Api\DateTimeResult $CreatedBefore
- * @property \Aws\Api\DateTimeResult $CreatedAfter
+ * @property string|null $DatastoreName
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'DELETED'|'CREATE_FAILED'|null $DatastoreStatus
+ * @property \Aws\Api\DateTimeResult|null $CreatedBefore
+ * @property \Aws\Api\DateTimeResult|null $CreatedAfter
  */
 class DatastoreFilter extends Shape
 {
     /**
      * @param array{
-     *     DatastoreName?: string,
-     *     DatastoreStatus?: 'CREATING'|'ACTIVE'|'DELETING'|'DELETED'|'CREATE_FAILED',
-     *     CreatedBefore?: \Aws\Api\DateTimeResult,
-     *     CreatedAfter?: \Aws\Api\DateTimeResult
+     *     DatastoreName?: string|null,
+     *     DatastoreStatus?: 'CREATING'|'ACTIVE'|'DELETING'|'DELETED'|'CREATE_FAILED'|null,
+     *     CreatedBefore?: \Aws\Api\DateTimeResult|null,
+     *     CreatedAfter?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

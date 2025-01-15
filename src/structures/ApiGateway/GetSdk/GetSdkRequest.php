@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $restApiId
  * @property string $stageName
  * @property string $sdkType
- * @property array<string, string> $parameters
+ * @property array<string, string>|null $parameters
  */
 class GetSdkRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetSdkRequest extends Request
      *     restApiId: string,
      *     stageName: string,
      *     sdkType: string,
-     *     parameters?: array<string, string>
+     *     parameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

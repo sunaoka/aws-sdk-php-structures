@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $ClusterArn
- * @property string $ClusterName
+ * @property string|null $ClusterName
  * @property 'Creating'|'Deleting'|'Failed'|'InService'|'RollingBack'|'SystemUpdating'|'Updating' $ClusterStatus
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $FailureMessage
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $FailureMessage
  * @property list<Shapes\ClusterInstanceGroupDetails> $InstanceGroups
- * @property Shapes\VpcConfig $VpcConfig
- * @property Shapes\ClusterOrchestrator $Orchestrator
- * @property 'Automatic'|'None' $NodeRecovery
+ * @property Shapes\VpcConfig|null $VpcConfig
+ * @property Shapes\ClusterOrchestrator|null $Orchestrator
+ * @property 'Automatic'|'None'|null $NodeRecovery
  */
 class DescribeClusterResponse extends Response
 {

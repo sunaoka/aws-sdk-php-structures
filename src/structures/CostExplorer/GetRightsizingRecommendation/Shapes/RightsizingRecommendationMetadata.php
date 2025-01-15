@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetRightsizingRecommendation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RecommendationId
- * @property string $GenerationTimestamp
- * @property 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS' $LookbackPeriodInDays
- * @property string $AdditionalMetadata
+ * @property string|null $RecommendationId
+ * @property string|null $GenerationTimestamp
+ * @property 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS'|null $LookbackPeriodInDays
+ * @property string|null $AdditionalMetadata
  */
 class RightsizingRecommendationMetadata extends Shape
 {
     /**
      * @param array{
-     *     RecommendationId?: string,
-     *     GenerationTimestamp?: string,
-     *     LookbackPeriodInDays?: 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS',
-     *     AdditionalMetadata?: string
+     *     RecommendationId?: string|null,
+     *     GenerationTimestamp?: string|null,
+     *     LookbackPeriodInDays?: 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS'|null,
+     *     AdditionalMetadata?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $topic
- * @property int<0, 1> $qos
- * @property bool $retain
- * @property string|resource|\Psr\Http\Message\StreamInterface $payload
- * @property string $userProperties
- * @property 'UNSPECIFIED_BYTES'|'UTF8_DATA' $payloadFormatIndicator
- * @property string $contentType
- * @property string $responseTopic
- * @property string $correlationData
- * @property int $messageExpiry
+ * @property int<0, 1>|null $qos
+ * @property bool|null $retain
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $payload
+ * @property string|null $userProperties
+ * @property 'UNSPECIFIED_BYTES'|'UTF8_DATA'|null $payloadFormatIndicator
+ * @property string|null $contentType
+ * @property string|null $responseTopic
+ * @property string|null $correlationData
+ * @property int|null $messageExpiry
  */
 class PublishRequest extends Request
 {
     /**
      * @param array{
      *     topic: string,
-     *     qos?: int<0, 1>,
-     *     retain?: bool,
-     *     payload?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     userProperties?: string,
-     *     payloadFormatIndicator?: 'UNSPECIFIED_BYTES'|'UTF8_DATA',
-     *     contentType?: string,
-     *     responseTopic?: string,
-     *     correlationData?: string,
-     *     messageExpiry?: int
+     *     qos?: int<0, 1>|null,
+     *     retain?: bool|null,
+     *     payload?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     userProperties?: string|null,
+     *     payloadFormatIndicator?: 'UNSPECIFIED_BYTES'|'UTF8_DATA'|null,
+     *     contentType?: string|null,
+     *     responseTopic?: string|null,
+     *     correlationData?: string|null,
+     *     messageExpiry?: int|null
      * } $args
      */
     public function __construct(array $args)

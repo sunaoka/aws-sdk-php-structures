@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupVaultName
- * @property int $MinRetentionDays
- * @property int $MaxRetentionDays
- * @property int $ChangeableForDays
+ * @property int|null $MinRetentionDays
+ * @property int|null $MaxRetentionDays
+ * @property int|null $ChangeableForDays
  */
 class PutBackupVaultLockConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     BackupVaultName: string,
-     *     MinRetentionDays?: int,
-     *     MaxRetentionDays?: int,
-     *     ChangeableForDays?: int
+     *     MinRetentionDays?: int|null,
+     *     MaxRetentionDays?: int|null,
+     *     ChangeableForDays?: int|null
      * } $args
      */
     public function __construct(array $args)

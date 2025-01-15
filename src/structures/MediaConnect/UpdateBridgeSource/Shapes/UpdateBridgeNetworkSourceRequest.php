@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaConnect\UpdateBridgeSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MulticastIp
- * @property MulticastSourceSettings $MulticastSourceSettings
- * @property string $NetworkName
- * @property int $Port
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp' $Protocol
+ * @property string|null $MulticastIp
+ * @property MulticastSourceSettings|null $MulticastSourceSettings
+ * @property string|null $NetworkName
+ * @property int|null $Port
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null $Protocol
  */
 class UpdateBridgeNetworkSourceRequest extends Shape
 {
     /**
      * @param array{
-     *     MulticastIp?: string,
-     *     MulticastSourceSettings?: MulticastSourceSettings,
-     *     NetworkName?: string,
-     *     Port?: int,
-     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'
+     *     MulticastIp?: string|null,
+     *     MulticastSourceSettings?: MulticastSourceSettings|null,
+     *     NetworkName?: string|null,
+     *     Port?: int|null,
+     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null
      * } $args
      */
     public function __construct(array $args = [])

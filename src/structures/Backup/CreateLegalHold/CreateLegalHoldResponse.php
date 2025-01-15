@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\Backup\CreateLegalHold;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Title
- * @property 'CREATING'|'ACTIVE'|'CANCELING'|'CANCELED' $Status
- * @property string $Description
- * @property string $LegalHoldId
- * @property string $LegalHoldArn
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property Shapes\RecoveryPointSelection $RecoveryPointSelection
+ * @property string|null $Title
+ * @property 'CREATING'|'ACTIVE'|'CANCELING'|'CANCELED'|null $Status
+ * @property string|null $Description
+ * @property string|null $LegalHoldId
+ * @property string|null $LegalHoldArn
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property Shapes\RecoveryPointSelection|null $RecoveryPointSelection
  */
 class CreateLegalHoldResponse extends Response
 {

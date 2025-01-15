@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GraphArn
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property Shapes\FilterCriteria $FilterCriteria
- * @property Shapes\SortCriteria $SortCriteria
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property Shapes\FilterCriteria|null $FilterCriteria
+ * @property Shapes\SortCriteria|null $SortCriteria
  */
 class ListInvestigationsRequest extends Request
 {
     /**
      * @param array{
      *     GraphArn: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     FilterCriteria?: Shapes\FilterCriteria,
-     *     SortCriteria?: Shapes\SortCriteria
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     FilterCriteria?: Shapes\FilterCriteria|null,
+     *     SortCriteria?: Shapes\SortCriteria|null
      * } $args
      */
     public function __construct(array $args)

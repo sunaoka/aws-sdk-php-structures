@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\Pinpoint\DeleteUserEndpoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Address
- * @property string $ApplicationId
- * @property array<string, list<string>> $Attributes
- * @property 'PUSH'|'GCM'|'APNS'|'APNS_SANDBOX'|'APNS_VOIP'|'APNS_VOIP_SANDBOX'|'ADM'|'SMS'|'VOICE'|'EMAIL'|'BAIDU'|'CUSTOM'|'IN_APP' $ChannelType
- * @property string $CohortId
- * @property string $CreationDate
- * @property EndpointDemographic $Demographic
- * @property string $EffectiveDate
- * @property string $EndpointStatus
- * @property string $Id
- * @property EndpointLocation $Location
- * @property array<string, double> $Metrics
- * @property string $OptOut
- * @property string $RequestId
- * @property EndpointUser $User
+ * @property string|null $Address
+ * @property string|null $ApplicationId
+ * @property array<string, list<string>>|null $Attributes
+ * @property 'PUSH'|'GCM'|'APNS'|'APNS_SANDBOX'|'APNS_VOIP'|'APNS_VOIP_SANDBOX'|'ADM'|'SMS'|'VOICE'|'EMAIL'|'BAIDU'|'CUSTOM'|'IN_APP'|null $ChannelType
+ * @property string|null $CohortId
+ * @property string|null $CreationDate
+ * @property EndpointDemographic|null $Demographic
+ * @property string|null $EffectiveDate
+ * @property string|null $EndpointStatus
+ * @property string|null $Id
+ * @property EndpointLocation|null $Location
+ * @property array<string, double>|null $Metrics
+ * @property string|null $OptOut
+ * @property string|null $RequestId
+ * @property EndpointUser|null $User
  */
 class EndpointResponse extends Shape
 {
     /**
      * @param array{
-     *     Address?: string,
-     *     ApplicationId?: string,
-     *     Attributes?: array<string, list<string>>,
-     *     ChannelType?: 'PUSH'|'GCM'|'APNS'|'APNS_SANDBOX'|'APNS_VOIP'|'APNS_VOIP_SANDBOX'|'ADM'|'SMS'|'VOICE'|'EMAIL'|'BAIDU'|'CUSTOM'|'IN_APP',
-     *     CohortId?: string,
-     *     CreationDate?: string,
-     *     Demographic?: EndpointDemographic,
-     *     EffectiveDate?: string,
-     *     EndpointStatus?: string,
-     *     Id?: string,
-     *     Location?: EndpointLocation,
-     *     Metrics?: array<string, double>,
-     *     OptOut?: string,
-     *     RequestId?: string,
-     *     User?: EndpointUser
+     *     Address?: string|null,
+     *     ApplicationId?: string|null,
+     *     Attributes?: array<string, list<string>>|null,
+     *     ChannelType?: 'PUSH'|'GCM'|'APNS'|'APNS_SANDBOX'|'APNS_VOIP'|'APNS_VOIP_SANDBOX'|'ADM'|'SMS'|'VOICE'|'EMAIL'|'BAIDU'|'CUSTOM'|'IN_APP'|null,
+     *     CohortId?: string|null,
+     *     CreationDate?: string|null,
+     *     Demographic?: EndpointDemographic|null,
+     *     EffectiveDate?: string|null,
+     *     EndpointStatus?: string|null,
+     *     Id?: string|null,
+     *     Location?: EndpointLocation|null,
+     *     Metrics?: array<string, double>|null,
+     *     OptOut?: string|null,
+     *     RequestId?: string|null,
+     *     User?: EndpointUser|null
      * } $args
      */
     public function __construct(array $args = [])

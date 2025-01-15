@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SelectSqlQuery
  * @property RedshiftDatabaseCredentials $DatabaseCredentials
  * @property string $S3StagingLocation
- * @property string $DataRearrangement
- * @property string $DataSchema
- * @property string $DataSchemaUri
+ * @property string|null $DataRearrangement
+ * @property string|null $DataSchema
+ * @property string|null $DataSchemaUri
  */
 class RedshiftDataSpec extends Shape
 {
@@ -21,9 +21,9 @@ class RedshiftDataSpec extends Shape
      *     SelectSqlQuery: string,
      *     DatabaseCredentials: RedshiftDatabaseCredentials,
      *     S3StagingLocation: string,
-     *     DataRearrangement?: string,
-     *     DataSchema?: string,
-     *     DataSchemaUri?: string
+     *     DataRearrangement?: string|null,
+     *     DataSchema?: string|null,
+     *     DataSchemaUri?: string|null
      * } $args
      */
     public function __construct(array $args)

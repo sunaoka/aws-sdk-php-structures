@@ -9,15 +9,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $applicationId
  * @property int<1, max> $applicationVersion
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property 'Deploying'|'Deployed' $deploymentStatus
- * @property string $description
+ * @property 'Deploying'|'Deployed'|null $deploymentStatus
+ * @property string|null $description
  * @property 'microfocus'|'bluage' $engineType
- * @property string $environmentId
- * @property \Aws\Api\DateTimeResult $lastStartTime
+ * @property string|null $environmentId
+ * @property \Aws\Api\DateTimeResult|null $lastStartTime
  * @property string $name
- * @property string $roleArn
+ * @property string|null $roleArn
  * @property 'Creating'|'Created'|'Available'|'Ready'|'Starting'|'Running'|'Stopping'|'Stopped'|'Failed'|'Deleting'|'Deleting From Environment' $status
- * @property 'Creating'|'Available'|'Failed' $versionStatus
+ * @property 'Creating'|'Available'|'Failed'|null $versionStatus
  */
 class ApplicationSummary extends Shape
 {
@@ -27,15 +27,15 @@ class ApplicationSummary extends Shape
      *     applicationId: string,
      *     applicationVersion: int<1, max>,
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     deploymentStatus?: 'Deploying'|'Deployed',
-     *     description?: string,
+     *     deploymentStatus?: 'Deploying'|'Deployed'|null,
+     *     description?: string|null,
      *     engineType: 'microfocus'|'bluage',
-     *     environmentId?: string,
-     *     lastStartTime?: \Aws\Api\DateTimeResult,
+     *     environmentId?: string|null,
+     *     lastStartTime?: \Aws\Api\DateTimeResult|null,
      *     name: string,
-     *     roleArn?: string,
+     *     roleArn?: string|null,
      *     status: 'Creating'|'Created'|'Available'|'Ready'|'Starting'|'Running'|'Stopping'|'Stopped'|'Failed'|'Deleting'|'Deleting From Environment',
-     *     versionStatus?: 'Creating'|'Available'|'Failed'
+     *     versionStatus?: 'Creating'|'Available'|'Failed'|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,11 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $dataSourceId
- * @property string $description
+ * @property string|null $description
  * @property string $ingestionJobId
  * @property string $knowledgeBaseId
  * @property \Aws\Api\DateTimeResult $startedAt
- * @property IngestionJobStatistics $statistics
+ * @property IngestionJobStatistics|null $statistics
  * @property 'STARTING'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'STOPPING'|'STOPPED' $status
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
@@ -19,11 +19,11 @@ class IngestionJobSummary extends Shape
     /**
      * @param array{
      *     dataSourceId: string,
-     *     description?: string,
+     *     description?: string|null,
      *     ingestionJobId: string,
      *     knowledgeBaseId: string,
      *     startedAt: \Aws\Api\DateTimeResult,
-     *     statistics?: IngestionJobStatistics,
+     *     statistics?: IngestionJobStatistics|null,
      *     status: 'STARTING'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'STOPPING'|'STOPPED',
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args

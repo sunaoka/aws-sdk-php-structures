@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QConnect\ListAIAgentVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TagFilter $contentTagFilter
- * @property int<1, 100> $maxResults
- * @property 'HYBRID'|'SEMANTIC' $overrideKnowledgeBaseSearchType
+ * @property TagFilter|null $contentTagFilter
+ * @property int<1, 100>|null $maxResults
+ * @property 'HYBRID'|'SEMANTIC'|null $overrideKnowledgeBaseSearchType
  */
 class KnowledgeBaseAssociationConfigurationData extends Shape
 {
     /**
      * @param array{
-     *     contentTagFilter?: TagFilter,
-     *     maxResults?: int<1, 100>,
-     *     overrideKnowledgeBaseSearchType?: 'HYBRID'|'SEMANTIC'
+     *     contentTagFilter?: TagFilter|null,
+     *     maxResults?: int<1, 100>|null,
+     *     overrideKnowledgeBaseSearchType?: 'HYBRID'|'SEMANTIC'|null
      * } $args
      */
     public function __construct(array $args = [])

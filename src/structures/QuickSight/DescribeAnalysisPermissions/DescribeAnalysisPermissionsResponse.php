@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisPermissions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AnalysisId
- * @property string $AnalysisArn
- * @property list<Shapes\ResourcePermission> $Permissions
- * @property int $Status
- * @property string $RequestId
+ * @property string|null $AnalysisId
+ * @property string|null $AnalysisArn
+ * @property list<Shapes\ResourcePermission>|null $Permissions
+ * @property int|null $Status
+ * @property string|null $RequestId
  */
 class DescribeAnalysisPermissionsResponse extends Response
 {

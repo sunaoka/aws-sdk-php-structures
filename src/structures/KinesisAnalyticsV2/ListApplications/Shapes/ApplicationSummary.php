@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'DELETING'|'STARTING'|'STOPPING'|'READY'|'RUNNING'|'UPDATING'|'AUTOSCALING'|'FORCE_STOPPING'|'ROLLING_BACK'|'MAINTENANCE'|'ROLLED_BACK' $ApplicationStatus
  * @property int<1, 999999999> $ApplicationVersionId
  * @property 'SQL-1_0'|'FLINK-1_6'|'FLINK-1_8'|'ZEPPELIN-FLINK-1_0'|'FLINK-1_11'|'FLINK-1_13'|'ZEPPELIN-FLINK-2_0'|'FLINK-1_15'|'ZEPPELIN-FLINK-3_0'|'FLINK-1_18'|'FLINK-1_19'|'FLINK-1_20' $RuntimeEnvironment
- * @property 'STREAMING'|'INTERACTIVE' $ApplicationMode
+ * @property 'STREAMING'|'INTERACTIVE'|null $ApplicationMode
  */
 class ApplicationSummary extends Shape
 {
@@ -21,7 +21,7 @@ class ApplicationSummary extends Shape
      *     ApplicationStatus: 'DELETING'|'STARTING'|'STOPPING'|'READY'|'RUNNING'|'UPDATING'|'AUTOSCALING'|'FORCE_STOPPING'|'ROLLING_BACK'|'MAINTENANCE'|'ROLLED_BACK',
      *     ApplicationVersionId: int<1, 999999999>,
      *     RuntimeEnvironment: 'SQL-1_0'|'FLINK-1_6'|'FLINK-1_8'|'ZEPPELIN-FLINK-1_0'|'FLINK-1_11'|'FLINK-1_13'|'ZEPPELIN-FLINK-2_0'|'FLINK-1_15'|'ZEPPELIN-FLINK-3_0'|'FLINK-1_18'|'FLINK-1_19'|'FLINK-1_20',
-     *     ApplicationMode?: 'STREAMING'|'INTERACTIVE'
+     *     ApplicationMode?: 'STREAMING'|'INTERACTIVE'|null
      * } $args
      */
     public function __construct(array $args)

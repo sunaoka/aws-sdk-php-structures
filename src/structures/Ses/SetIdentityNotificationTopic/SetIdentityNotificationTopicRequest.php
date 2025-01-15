@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Identity
  * @property 'Bounce'|'Complaint'|'Delivery' $NotificationType
- * @property string $SnsTopic
+ * @property string|null $SnsTopic
  */
 class SetIdentityNotificationTopicRequest extends Request
 {
@@ -15,7 +15,7 @@ class SetIdentityNotificationTopicRequest extends Request
      * @param array{
      *     Identity: string,
      *     NotificationType: 'Bounce'|'Complaint'|'Delivery',
-     *     SnsTopic?: string
+     *     SnsTopic?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SheetTextBoxId
- * @property string $Content
+ * @property string|null $Content
  */
 class SheetTextBox extends Shape
 {
     /**
      * @param array{
      *     SheetTextBoxId: string,
-     *     Content?: string
+     *     Content?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\GetRasterDataCollection\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $Maximum
- * @property float $Minimum
+ * @property float|null $Maximum
+ * @property float|null $Minimum
  * @property string $Name
  * @property string $Type
  */
@@ -14,8 +14,8 @@ class Filter extends Shape
 {
     /**
      * @param array{
-     *     Maximum?: float,
-     *     Minimum?: float,
+     *     Maximum?: float|null,
+     *     Minimum?: float|null,
      *     Name: string,
      *     Type: string
      * } $args

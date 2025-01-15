@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeApplicableIndi
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ReplicationTaskArn
- * @property string $ReplicationInstanceArn
- * @property string $SourceEngineName
- * @property string $TargetEngineName
- * @property 'full-load'|'cdc'|'full-load-and-cdc' $MigrationType
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $ReplicationTaskArn
+ * @property string|null $ReplicationInstanceArn
+ * @property string|null $SourceEngineName
+ * @property string|null $TargetEngineName
+ * @property 'full-load'|'cdc'|'full-load-and-cdc'|null $MigrationType
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeApplicableIndividualAssessmentsRequest extends Request
 {
     /**
      * @param array{
-     *     ReplicationTaskArn?: string,
-     *     ReplicationInstanceArn?: string,
-     *     SourceEngineName?: string,
-     *     TargetEngineName?: string,
-     *     MigrationType?: 'full-load'|'cdc'|'full-load-and-cdc',
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     ReplicationTaskArn?: string|null,
+     *     ReplicationInstanceArn?: string|null,
+     *     SourceEngineName?: string|null,
+     *     TargetEngineName?: string|null,
+     *     MigrationType?: 'full-load'|'cdc'|'full-load-and-cdc'|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

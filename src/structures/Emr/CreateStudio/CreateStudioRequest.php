@@ -6,44 +6,44 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property 'SSO'|'IAM' $AuthMode
  * @property string $VpcId
  * @property list<string> $SubnetIds
  * @property string $ServiceRole
- * @property string $UserRole
+ * @property string|null $UserRole
  * @property string $WorkspaceSecurityGroupId
  * @property string $EngineSecurityGroupId
  * @property string $DefaultS3Location
- * @property string $IdpAuthUrl
- * @property string $IdpRelayStateParameterName
- * @property list<Shapes\Tag> $Tags
- * @property bool $TrustedIdentityPropagationEnabled
- * @property 'REQUIRED'|'OPTIONAL' $IdcUserAssignment
- * @property string $IdcInstanceArn
- * @property string $EncryptionKeyArn
+ * @property string|null $IdpAuthUrl
+ * @property string|null $IdpRelayStateParameterName
+ * @property list<Shapes\Tag>|null $Tags
+ * @property bool|null $TrustedIdentityPropagationEnabled
+ * @property 'REQUIRED'|'OPTIONAL'|null $IdcUserAssignment
+ * @property string|null $IdcInstanceArn
+ * @property string|null $EncryptionKeyArn
  */
 class CreateStudioRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     AuthMode: 'SSO'|'IAM',
      *     VpcId: string,
      *     SubnetIds: list<string>,
      *     ServiceRole: string,
-     *     UserRole?: string,
+     *     UserRole?: string|null,
      *     WorkspaceSecurityGroupId: string,
      *     EngineSecurityGroupId: string,
      *     DefaultS3Location: string,
-     *     IdpAuthUrl?: string,
-     *     IdpRelayStateParameterName?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     TrustedIdentityPropagationEnabled?: bool,
-     *     IdcUserAssignment?: 'REQUIRED'|'OPTIONAL',
-     *     IdcInstanceArn?: string,
-     *     EncryptionKeyArn?: string
+     *     IdpAuthUrl?: string|null,
+     *     IdpRelayStateParameterName?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     TrustedIdentityPropagationEnabled?: bool|null,
+     *     IdcUserAssignment?: 'REQUIRED'|'OPTIONAL'|null,
+     *     IdcInstanceArn?: string|null,
+     *     EncryptionKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

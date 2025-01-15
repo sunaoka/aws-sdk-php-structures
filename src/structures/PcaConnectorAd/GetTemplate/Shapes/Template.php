@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\GetTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $ConnectorArn
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property TemplateDefinition $Definition
- * @property string $Name
- * @property string $ObjectIdentifier
- * @property int $PolicySchema
- * @property TemplateRevision $Revision
- * @property 'ACTIVE'|'DELETING' $Status
- * @property \Aws\Api\DateTimeResult $UpdatedAt
+ * @property string|null $Arn
+ * @property string|null $ConnectorArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property TemplateDefinition|null $Definition
+ * @property string|null $Name
+ * @property string|null $ObjectIdentifier
+ * @property int|null $PolicySchema
+ * @property TemplateRevision|null $Revision
+ * @property 'ACTIVE'|'DELETING'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  */
 class Template extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     ConnectorArn?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     Definition?: TemplateDefinition,
-     *     Name?: string,
-     *     ObjectIdentifier?: string,
-     *     PolicySchema?: int,
-     *     Revision?: TemplateRevision,
-     *     Status?: 'ACTIVE'|'DELETING',
-     *     UpdatedAt?: \Aws\Api\DateTimeResult
+     *     Arn?: string|null,
+     *     ConnectorArn?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     Definition?: TemplateDefinition|null,
+     *     Name?: string|null,
+     *     ObjectIdentifier?: string|null,
+     *     PolicySchema?: int|null,
+     *     Revision?: TemplateRevision|null,
+     *     Status?: 'ACTIVE'|'DELETING'|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

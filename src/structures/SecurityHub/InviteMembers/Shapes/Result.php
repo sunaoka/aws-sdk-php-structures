@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\InviteMembers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $ProcessingResult
+ * @property string|null $AccountId
+ * @property string|null $ProcessingResult
  */
 class Result extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     ProcessingResult?: string
+     *     AccountId?: string|null,
+     *     ProcessingResult?: string|null
      * } $args
      */
     public function __construct(array $args = [])

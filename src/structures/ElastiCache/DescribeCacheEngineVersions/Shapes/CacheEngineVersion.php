@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeCacheEngineVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Engine
- * @property string $EngineVersion
- * @property string $CacheParameterGroupFamily
- * @property string $CacheEngineDescription
- * @property string $CacheEngineVersionDescription
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property string|null $CacheParameterGroupFamily
+ * @property string|null $CacheEngineDescription
+ * @property string|null $CacheEngineVersionDescription
  */
 class CacheEngineVersion extends Shape
 {
     /**
      * @param array{
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     CacheParameterGroupFamily?: string,
-     *     CacheEngineDescription?: string,
-     *     CacheEngineVersionDescription?: string
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     CacheParameterGroupFamily?: string|null,
+     *     CacheEngineDescription?: string|null,
+     *     CacheEngineVersionDescription?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudFormation\GetTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StackName
- * @property string $ChangeSetName
- * @property 'Original'|'Processed' $TemplateStage
+ * @property string|null $StackName
+ * @property string|null $ChangeSetName
+ * @property 'Original'|'Processed'|null $TemplateStage
  */
 class GetTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     StackName?: string,
-     *     ChangeSetName?: string,
-     *     TemplateStage?: 'Original'|'Processed'
+     *     StackName?: string|null,
+     *     ChangeSetName?: string|null,
+     *     TemplateStage?: 'Original'|'Processed'|null
      * } $args
      */
     public function __construct(array $args = [])

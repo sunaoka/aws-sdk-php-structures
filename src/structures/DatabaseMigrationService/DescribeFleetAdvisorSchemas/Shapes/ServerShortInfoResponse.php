@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeFleetAdvisorSc
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServerId
- * @property string $IpAddress
- * @property string $ServerName
+ * @property string|null $ServerId
+ * @property string|null $IpAddress
+ * @property string|null $ServerName
  */
 class ServerShortInfoResponse extends Shape
 {
     /**
      * @param array{
-     *     ServerId?: string,
-     *     IpAddress?: string,
-     *     ServerName?: string
+     *     ServerId?: string|null,
+     *     IpAddress?: string|null,
+     *     ServerName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

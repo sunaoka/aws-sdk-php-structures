@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeNetworkInsightsAnalyses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Address
- * @property string $AvailabilityZone
- * @property AnalysisComponent $Instance
- * @property int<0, 65535> $Port
+ * @property string|null $Address
+ * @property string|null $AvailabilityZone
+ * @property AnalysisComponent|null $Instance
+ * @property int<0, 65535>|null $Port
  */
 class AnalysisLoadBalancerTarget extends Shape
 {
     /**
      * @param array{
-     *     Address?: string,
-     *     AvailabilityZone?: string,
-     *     Instance?: AnalysisComponent,
-     *     Port?: int<0, 65535>
+     *     Address?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     Instance?: AnalysisComponent|null,
+     *     Port?: int<0, 65535>|null
      * } $args
      */
     public function __construct(array $args = [])

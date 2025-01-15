@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\ListPackagesForDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KeyAccessRoleArn
+ * @property string|null $KeyAccessRoleArn
  * @property bool $KeyStoreAccessEnabled
  */
 class KeyStoreAccessOption extends Shape
 {
     /**
      * @param array{
-     *     KeyAccessRoleArn?: string,
+     *     KeyAccessRoleArn?: string|null,
      *     KeyStoreAccessEnabled: bool
      * } $args
      */

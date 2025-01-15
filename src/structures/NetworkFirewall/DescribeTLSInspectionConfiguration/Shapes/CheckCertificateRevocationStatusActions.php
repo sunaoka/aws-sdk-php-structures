@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\DescribeTLSInspectionConfigurat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PASS'|'DROP'|'REJECT' $RevokedStatusAction
- * @property 'PASS'|'DROP'|'REJECT' $UnknownStatusAction
+ * @property 'PASS'|'DROP'|'REJECT'|null $RevokedStatusAction
+ * @property 'PASS'|'DROP'|'REJECT'|null $UnknownStatusAction
  */
 class CheckCertificateRevocationStatusActions extends Shape
 {
     /**
      * @param array{
-     *     RevokedStatusAction?: 'PASS'|'DROP'|'REJECT',
-     *     UnknownStatusAction?: 'PASS'|'DROP'|'REJECT'
+     *     RevokedStatusAction?: 'PASS'|'DROP'|'REJECT'|null,
+     *     UnknownStatusAction?: 'PASS'|'DROP'|'REJECT'|null
      * } $args
      */
     public function __construct(array $args = [])

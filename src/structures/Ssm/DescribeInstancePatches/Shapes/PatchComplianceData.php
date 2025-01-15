@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Severity
  * @property 'INSTALLED'|'INSTALLED_OTHER'|'INSTALLED_PENDING_REBOOT'|'INSTALLED_REJECTED'|'MISSING'|'NOT_APPLICABLE'|'FAILED' $State
  * @property \Aws\Api\DateTimeResult $InstalledTime
- * @property string $CVEIds
+ * @property string|null $CVEIds
  */
 class PatchComplianceData extends Shape
 {
@@ -23,7 +23,7 @@ class PatchComplianceData extends Shape
      *     Severity: string,
      *     State: 'INSTALLED'|'INSTALLED_OTHER'|'INSTALLED_PENDING_REBOOT'|'INSTALLED_REJECTED'|'MISSING'|'NOT_APPLICABLE'|'FAILED',
      *     InstalledTime: \Aws\Api\DateTimeResult,
-     *     CVEIds?: string
+     *     CVEIds?: string|null
      * } $args
      */
     public function __construct(array $args)

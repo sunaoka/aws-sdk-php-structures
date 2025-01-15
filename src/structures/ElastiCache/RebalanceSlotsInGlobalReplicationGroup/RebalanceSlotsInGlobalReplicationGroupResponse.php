@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElastiCache\RebalanceSlotsInGlobalReplicationGr
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\GlobalReplicationGroup $GlobalReplicationGroup
+ * @property Shapes\GlobalReplicationGroup|null $GlobalReplicationGroup
  */
 class RebalanceSlotsInGlobalReplicationGroupResponse extends Response
 {

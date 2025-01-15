@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\DimensionValuesWithAttributes> $DimensionValues
  * @property int $ReturnSize
  * @property int $TotalSize
- * @property string $NextPageToken
+ * @property string|null $NextPageToken
  */
 class GetDimensionValuesResponse extends Response
 {

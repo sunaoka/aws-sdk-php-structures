@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DISCONNECT'|'MESSAGE'|'EVENT' $Type
- * @property string $ContentType
- * @property string $Content
+ * @property string|null $ContentType
+ * @property string|null $Content
  */
 class ChatEvent extends Shape
 {
     /**
      * @param array{
      *     Type: 'DISCONNECT'|'MESSAGE'|'EVENT',
-     *     ContentType?: string,
-     *     Content?: string
+     *     ContentType?: string|null,
+     *     Content?: string|null
      * } $args
      */
     public function __construct(array $args)

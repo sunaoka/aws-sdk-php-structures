@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PolicyId
- * @property string $NextToken
- * @property int<1, 20> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 20>|null $MaxResults
  */
 class ListTargetsForPolicyRequest extends Request
 {
     /**
      * @param array{
      *     PolicyId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 20>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 20>|null
      * } $args
      */
     public function __construct(array $args)

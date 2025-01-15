@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetMasterAccount;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Invitation $Master
+ * @property Shapes\Invitation|null $Master
  */
 class GetMasterAccountResponse extends Response
 {

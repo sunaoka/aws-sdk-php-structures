@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $id
  * @property string $arn
- * @property string $description
+ * @property string|null $description
  * @property string $signalCatalogArn
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModificationTime

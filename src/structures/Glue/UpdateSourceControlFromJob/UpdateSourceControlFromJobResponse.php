@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateSourceControlFromJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $JobName
+ * @property string|null $JobName
  */
 class UpdateSourceControlFromJobResponse extends Response
 {

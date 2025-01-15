@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\RemoveListenerCertificat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CertificateArn
- * @property bool $IsDefault
+ * @property string|null $CertificateArn
+ * @property bool|null $IsDefault
  */
 class Certificate extends Shape
 {
     /**
      * @param array{
-     *     CertificateArn?: string,
-     *     IsDefault?: bool
+     *     CertificateArn?: string|null,
+     *     IsDefault?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

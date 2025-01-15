@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribePolicies\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PredefinedMetricSpecification $PredefinedMetricSpecification
- * @property CustomizedMetricSpecification $CustomizedMetricSpecification
+ * @property PredefinedMetricSpecification|null $PredefinedMetricSpecification
+ * @property CustomizedMetricSpecification|null $CustomizedMetricSpecification
  * @property double $TargetValue
- * @property bool $DisableScaleIn
+ * @property bool|null $DisableScaleIn
  */
 class TargetTrackingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     PredefinedMetricSpecification?: PredefinedMetricSpecification,
-     *     CustomizedMetricSpecification?: CustomizedMetricSpecification,
+     *     PredefinedMetricSpecification?: PredefinedMetricSpecification|null,
+     *     CustomizedMetricSpecification?: CustomizedMetricSpecification|null,
      *     TargetValue: double,
-     *     DisableScaleIn?: bool
+     *     DisableScaleIn?: bool|null
      * } $args
      */
     public function __construct(array $args)

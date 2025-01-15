@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assetModelName
- * @property 'ASSET_MODEL'|'COMPONENT_MODEL' $assetModelType
- * @property string $assetModelId
- * @property string $assetModelExternalId
- * @property string $assetModelDescription
- * @property list<Shapes\AssetModelPropertyDefinition> $assetModelProperties
- * @property list<Shapes\AssetModelHierarchyDefinition> $assetModelHierarchies
- * @property list<Shapes\AssetModelCompositeModelDefinition> $assetModelCompositeModels
- * @property string $clientToken
- * @property array<string, string> $tags
+ * @property 'ASSET_MODEL'|'COMPONENT_MODEL'|null $assetModelType
+ * @property string|null $assetModelId
+ * @property string|null $assetModelExternalId
+ * @property string|null $assetModelDescription
+ * @property list<Shapes\AssetModelPropertyDefinition>|null $assetModelProperties
+ * @property list<Shapes\AssetModelHierarchyDefinition>|null $assetModelHierarchies
+ * @property list<Shapes\AssetModelCompositeModelDefinition>|null $assetModelCompositeModels
+ * @property string|null $clientToken
+ * @property array<string, string>|null $tags
  */
 class CreateAssetModelRequest extends Request
 {
     /**
      * @param array{
      *     assetModelName: string,
-     *     assetModelType?: 'ASSET_MODEL'|'COMPONENT_MODEL',
-     *     assetModelId?: string,
-     *     assetModelExternalId?: string,
-     *     assetModelDescription?: string,
-     *     assetModelProperties?: list<Shapes\AssetModelPropertyDefinition>,
-     *     assetModelHierarchies?: list<Shapes\AssetModelHierarchyDefinition>,
-     *     assetModelCompositeModels?: list<Shapes\AssetModelCompositeModelDefinition>,
-     *     clientToken?: string,
-     *     tags?: array<string, string>
+     *     assetModelType?: 'ASSET_MODEL'|'COMPONENT_MODEL'|null,
+     *     assetModelId?: string|null,
+     *     assetModelExternalId?: string|null,
+     *     assetModelDescription?: string|null,
+     *     assetModelProperties?: list<Shapes\AssetModelPropertyDefinition>|null,
+     *     assetModelHierarchies?: list<Shapes\AssetModelHierarchyDefinition>|null,
+     *     assetModelCompositeModels?: list<Shapes\AssetModelCompositeModelDefinition>|null,
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

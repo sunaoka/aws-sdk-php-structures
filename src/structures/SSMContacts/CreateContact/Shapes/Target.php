@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SSMContacts\CreateContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ChannelTargetInfo $ChannelTargetInfo
- * @property ContactTargetInfo $ContactTargetInfo
+ * @property ChannelTargetInfo|null $ChannelTargetInfo
+ * @property ContactTargetInfo|null $ContactTargetInfo
  */
 class Target extends Shape
 {
     /**
      * @param array{
-     *     ChannelTargetInfo?: ChannelTargetInfo,
-     *     ContactTargetInfo?: ContactTargetInfo
+     *     ChannelTargetInfo?: ChannelTargetInfo|null,
+     *     ContactTargetInfo?: ContactTargetInfo|null
      * } $args
      */
     public function __construct(array $args = [])

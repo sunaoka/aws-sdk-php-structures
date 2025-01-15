@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\GetSchemaAsJson;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Name
- * @property string $Document
+ * @property string|null $Name
+ * @property string|null $Document
  */
 class GetSchemaAsJsonResponse extends Response
 {

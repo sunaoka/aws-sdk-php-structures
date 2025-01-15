@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Iam\DeleteAccessKey;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $UserName
+ * @property string|null $UserName
  * @property string $AccessKeyId
  */
 class DeleteAccessKeyRequest extends Request
 {
     /**
      * @param array{
-     *     UserName?: string,
+     *     UserName?: string|null,
      *     AccessKeyId: string
      * } $args
      */

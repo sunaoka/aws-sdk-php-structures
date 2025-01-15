@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Bucket
  * @property string $Id
  * @property Shapes\MetricsConfiguration $MetricsConfiguration
- * @property string $ExpectedBucketOwner
+ * @property string|null $ExpectedBucketOwner
  */
 class PutBucketMetricsConfigurationRequest extends Request
 {
@@ -17,7 +17,7 @@ class PutBucketMetricsConfigurationRequest extends Request
      *     Bucket: string,
      *     Id: string,
      *     MetricsConfiguration: Shapes\MetricsConfiguration,
-     *     ExpectedBucketOwner?: string
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

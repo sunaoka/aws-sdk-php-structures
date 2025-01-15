@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClusterSchedulerConfigId
  * @property int $TargetVersion
- * @property Shapes\SchedulerConfig $SchedulerConfig
- * @property string $Description
+ * @property Shapes\SchedulerConfig|null $SchedulerConfig
+ * @property string|null $Description
  */
 class UpdateClusterSchedulerConfigRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateClusterSchedulerConfigRequest extends Request
      * @param array{
      *     ClusterSchedulerConfigId: string,
      *     TargetVersion: int,
-     *     SchedulerConfig?: Shapes\SchedulerConfig,
-     *     Description?: string
+     *     SchedulerConfig?: Shapes\SchedulerConfig|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

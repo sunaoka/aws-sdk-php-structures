@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\WAFV2\CreateRuleGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LoginPath
- * @property 'JSON'|'FORM_ENCODED' $PayloadType
- * @property UsernameField $UsernameField
- * @property PasswordField $PasswordField
- * @property AWSManagedRulesBotControlRuleSet $AWSManagedRulesBotControlRuleSet
- * @property AWSManagedRulesATPRuleSet $AWSManagedRulesATPRuleSet
- * @property AWSManagedRulesACFPRuleSet $AWSManagedRulesACFPRuleSet
+ * @property string|null $LoginPath
+ * @property 'JSON'|'FORM_ENCODED'|null $PayloadType
+ * @property UsernameField|null $UsernameField
+ * @property PasswordField|null $PasswordField
+ * @property AWSManagedRulesBotControlRuleSet|null $AWSManagedRulesBotControlRuleSet
+ * @property AWSManagedRulesATPRuleSet|null $AWSManagedRulesATPRuleSet
+ * @property AWSManagedRulesACFPRuleSet|null $AWSManagedRulesACFPRuleSet
  */
 class ManagedRuleGroupConfig extends Shape
 {
     /**
      * @param array{
-     *     LoginPath?: string,
-     *     PayloadType?: 'JSON'|'FORM_ENCODED',
-     *     UsernameField?: UsernameField,
-     *     PasswordField?: PasswordField,
-     *     AWSManagedRulesBotControlRuleSet?: AWSManagedRulesBotControlRuleSet,
-     *     AWSManagedRulesATPRuleSet?: AWSManagedRulesATPRuleSet,
-     *     AWSManagedRulesACFPRuleSet?: AWSManagedRulesACFPRuleSet
+     *     LoginPath?: string|null,
+     *     PayloadType?: 'JSON'|'FORM_ENCODED'|null,
+     *     UsernameField?: UsernameField|null,
+     *     PasswordField?: PasswordField|null,
+     *     AWSManagedRulesBotControlRuleSet?: AWSManagedRulesBotControlRuleSet|null,
+     *     AWSManagedRulesATPRuleSet?: AWSManagedRulesATPRuleSet|null,
+     *     AWSManagedRulesACFPRuleSet?: AWSManagedRulesACFPRuleSet|null
      * } $args
      */
     public function __construct(array $args = [])

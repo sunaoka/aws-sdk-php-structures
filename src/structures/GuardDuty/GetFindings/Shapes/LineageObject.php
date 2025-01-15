@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property int $NamespacePid
- * @property int $UserId
- * @property string $Name
- * @property int $Pid
- * @property string $Uuid
- * @property string $ExecutablePath
- * @property int $Euid
- * @property string $ParentUuid
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property int|null $NamespacePid
+ * @property int|null $UserId
+ * @property string|null $Name
+ * @property int|null $Pid
+ * @property string|null $Uuid
+ * @property string|null $ExecutablePath
+ * @property int|null $Euid
+ * @property string|null $ParentUuid
  */
 class LineageObject extends Shape
 {
     /**
      * @param array{
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     NamespacePid?: int,
-     *     UserId?: int,
-     *     Name?: string,
-     *     Pid?: int,
-     *     Uuid?: string,
-     *     ExecutablePath?: string,
-     *     Euid?: int,
-     *     ParentUuid?: string
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     NamespacePid?: int|null,
+     *     UserId?: int|null,
+     *     Name?: string|null,
+     *     Pid?: int|null,
+     *     Uuid?: string|null,
+     *     ExecutablePath?: string|null,
+     *     Euid?: int|null,
+     *     ParentUuid?: string|null
      * } $args
      */
     public function __construct(array $args = [])

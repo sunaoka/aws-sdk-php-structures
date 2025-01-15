@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $templateName
- * @property string $description
+ * @property string|null $description
  * @property string $templateBody
- * @property bool $enabled
+ * @property bool|null $enabled
  * @property string $provisioningRoleArn
- * @property Shapes\ProvisioningHook $preProvisioningHook
- * @property list<Shapes\Tag> $tags
- * @property 'FLEET_PROVISIONING'|'JITP' $type
+ * @property Shapes\ProvisioningHook|null $preProvisioningHook
+ * @property list<Shapes\Tag>|null $tags
+ * @property 'FLEET_PROVISIONING'|'JITP'|null $type
  */
 class CreateProvisioningTemplateRequest extends Request
 {
     /**
      * @param array{
      *     templateName: string,
-     *     description?: string,
+     *     description?: string|null,
      *     templateBody: string,
-     *     enabled?: bool,
+     *     enabled?: bool|null,
      *     provisioningRoleArn: string,
-     *     preProvisioningHook?: Shapes\ProvisioningHook,
-     *     tags?: list<Shapes\Tag>,
-     *     type?: 'FLEET_PROVISIONING'|'JITP'
+     *     preProvisioningHook?: Shapes\ProvisioningHook|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     type?: 'FLEET_PROVISIONING'|'JITP'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AuthorizerResultTtlInSeconds
- * @property string $AuthorizerUri
- * @property string $IdentityValidationExpression
+ * @property int|null $AuthorizerResultTtlInSeconds
+ * @property string|null $AuthorizerUri
+ * @property string|null $IdentityValidationExpression
  */
 class AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails extends Shape
 {
     /**
      * @param array{
-     *     AuthorizerResultTtlInSeconds?: int,
-     *     AuthorizerUri?: string,
-     *     IdentityValidationExpression?: string
+     *     AuthorizerResultTtlInSeconds?: int|null,
+     *     AuthorizerUri?: string|null,
+     *     IdentityValidationExpression?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceArn
  * @property string $PermissionSetArn
- * @property string $TargetId
+ * @property string|null $TargetId
  * @property 'AWS_ACCOUNT'|'ALL_PROVISIONED_ACCOUNTS' $TargetType
  */
 class ProvisionPermissionSetRequest extends Request
@@ -16,7 +16,7 @@ class ProvisionPermissionSetRequest extends Request
      * @param array{
      *     InstanceArn: string,
      *     PermissionSetArn: string,
-     *     TargetId?: string,
+     *     TargetId?: string|null,
      *     TargetType: 'AWS_ACCOUNT'|'ALL_PROVISIONED_ACCOUNTS'
      * } $args
      */

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Tnb\GetSolFunctionInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $cluster
- * @property string $helmChart
- * @property string $nodeGroup
+ * @property string|null $cluster
+ * @property string|null $helmChart
+ * @property string|null $nodeGroup
  */
 class GetSolVnfcResourceInfoMetadata extends Shape
 {
     /**
      * @param array{
-     *     cluster?: string,
-     *     helmChart?: string,
-     *     nodeGroup?: string
+     *     cluster?: string|null,
+     *     helmChart?: string|null,
+     *     nodeGroup?: string|null
      * } $args
      */
     public function __construct(array $args = [])

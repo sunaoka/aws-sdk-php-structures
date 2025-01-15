@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\ListBillEstimateInputCommi
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AddReservedInstanceAction $addReservedInstanceAction
- * @property AddSavingsPlanAction $addSavingsPlanAction
- * @property NegateReservedInstanceAction $negateReservedInstanceAction
- * @property NegateSavingsPlanAction $negateSavingsPlanAction
+ * @property AddReservedInstanceAction|null $addReservedInstanceAction
+ * @property AddSavingsPlanAction|null $addSavingsPlanAction
+ * @property NegateReservedInstanceAction|null $negateReservedInstanceAction
+ * @property NegateSavingsPlanAction|null $negateSavingsPlanAction
  */
 class BillScenarioCommitmentModificationAction extends Shape
 {
     /**
      * @param array{
-     *     addReservedInstanceAction?: AddReservedInstanceAction,
-     *     addSavingsPlanAction?: AddSavingsPlanAction,
-     *     negateReservedInstanceAction?: NegateReservedInstanceAction,
-     *     negateSavingsPlanAction?: NegateSavingsPlanAction
+     *     addReservedInstanceAction?: AddReservedInstanceAction|null,
+     *     addSavingsPlanAction?: AddSavingsPlanAction|null,
+     *     negateReservedInstanceAction?: NegateReservedInstanceAction|null,
+     *     negateSavingsPlanAction?: NegateSavingsPlanAction|null
      * } $args
      */
     public function __construct(array $args = [])

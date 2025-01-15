@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Kafka\CreateClusterV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TLS'|'TLS_PLAINTEXT'|'PLAINTEXT' $ClientBroker
- * @property bool $InCluster
+ * @property 'TLS'|'TLS_PLAINTEXT'|'PLAINTEXT'|null $ClientBroker
+ * @property bool|null $InCluster
  */
 class EncryptionInTransit extends Shape
 {
     /**
      * @param array{
-     *     ClientBroker?: 'TLS'|'TLS_PLAINTEXT'|'PLAINTEXT',
-     *     InCluster?: bool
+     *     ClientBroker?: 'TLS'|'TLS_PLAINTEXT'|'PLAINTEXT'|null,
+     *     InCluster?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

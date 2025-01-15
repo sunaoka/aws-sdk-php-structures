@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\ListConnectInstanceIntegrati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\IntegrationSummary> $integrationSummaryList
+ * @property string|null $nextToken
+ * @property list<Shapes\IntegrationSummary>|null $integrationSummaryList
  */
 class ListConnectInstanceIntegrationsResponse extends Response
 {

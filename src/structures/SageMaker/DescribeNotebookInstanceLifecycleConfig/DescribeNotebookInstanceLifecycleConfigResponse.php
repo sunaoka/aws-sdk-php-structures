@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeNotebookInstanceLifecycleConf
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NotebookInstanceLifecycleConfigArn
- * @property string $NotebookInstanceLifecycleConfigName
- * @property list<Shapes\NotebookInstanceLifecycleHook> $OnCreate
- * @property list<Shapes\NotebookInstanceLifecycleHook> $OnStart
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property string|null $NotebookInstanceLifecycleConfigArn
+ * @property string|null $NotebookInstanceLifecycleConfigName
+ * @property list<Shapes\NotebookInstanceLifecycleHook>|null $OnCreate
+ * @property list<Shapes\NotebookInstanceLifecycleHook>|null $OnStart
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
  */
 class DescribeNotebookInstanceLifecycleConfigResponse extends Response
 {

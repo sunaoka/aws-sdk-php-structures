@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ApplicationSignals\BatchGetServiceLevelObjectiv
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<MetricDataQuery> $GoodCountMetric
- * @property list<MetricDataQuery> $BadCountMetric
+ * @property list<MetricDataQuery>|null $GoodCountMetric
+ * @property list<MetricDataQuery>|null $BadCountMetric
  */
 class MonitoredRequestCountMetricDataQueries extends Shape
 {
     /**
      * @param array{
-     *     GoodCountMetric?: list<MetricDataQuery>,
-     *     BadCountMetric?: list<MetricDataQuery>
+     *     GoodCountMetric?: list<MetricDataQuery>|null,
+     *     BadCountMetric?: list<MetricDataQuery>|null
      * } $args
      */
     public function __construct(array $args = [])

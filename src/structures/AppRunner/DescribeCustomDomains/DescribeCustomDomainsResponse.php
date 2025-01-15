@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ServiceArn
  * @property list<Shapes\CustomDomain> $CustomDomains
  * @property list<Shapes\VpcDNSTarget> $VpcDNSTargets
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class DescribeCustomDomainsResponse extends Response
 {

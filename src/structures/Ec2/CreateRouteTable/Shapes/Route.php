@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateRouteTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DestinationCidrBlock
- * @property string $DestinationIpv6CidrBlock
- * @property string $DestinationPrefixListId
- * @property string $EgressOnlyInternetGatewayId
- * @property string $GatewayId
- * @property string $InstanceId
- * @property string $InstanceOwnerId
- * @property string $NatGatewayId
- * @property string $TransitGatewayId
- * @property string $LocalGatewayId
- * @property string $CarrierGatewayId
- * @property string $NetworkInterfaceId
- * @property 'CreateRouteTable'|'CreateRoute'|'EnableVgwRoutePropagation' $Origin
- * @property 'active'|'blackhole' $State
- * @property string $VpcPeeringConnectionId
- * @property string $CoreNetworkArn
+ * @property string|null $DestinationCidrBlock
+ * @property string|null $DestinationIpv6CidrBlock
+ * @property string|null $DestinationPrefixListId
+ * @property string|null $EgressOnlyInternetGatewayId
+ * @property string|null $GatewayId
+ * @property string|null $InstanceId
+ * @property string|null $InstanceOwnerId
+ * @property string|null $NatGatewayId
+ * @property string|null $TransitGatewayId
+ * @property string|null $LocalGatewayId
+ * @property string|null $CarrierGatewayId
+ * @property string|null $NetworkInterfaceId
+ * @property 'CreateRouteTable'|'CreateRoute'|'EnableVgwRoutePropagation'|null $Origin
+ * @property 'active'|'blackhole'|null $State
+ * @property string|null $VpcPeeringConnectionId
+ * @property string|null $CoreNetworkArn
  */
 class Route extends Shape
 {
     /**
      * @param array{
-     *     DestinationCidrBlock?: string,
-     *     DestinationIpv6CidrBlock?: string,
-     *     DestinationPrefixListId?: string,
-     *     EgressOnlyInternetGatewayId?: string,
-     *     GatewayId?: string,
-     *     InstanceId?: string,
-     *     InstanceOwnerId?: string,
-     *     NatGatewayId?: string,
-     *     TransitGatewayId?: string,
-     *     LocalGatewayId?: string,
-     *     CarrierGatewayId?: string,
-     *     NetworkInterfaceId?: string,
-     *     Origin?: 'CreateRouteTable'|'CreateRoute'|'EnableVgwRoutePropagation',
-     *     State?: 'active'|'blackhole',
-     *     VpcPeeringConnectionId?: string,
-     *     CoreNetworkArn?: string
+     *     DestinationCidrBlock?: string|null,
+     *     DestinationIpv6CidrBlock?: string|null,
+     *     DestinationPrefixListId?: string|null,
+     *     EgressOnlyInternetGatewayId?: string|null,
+     *     GatewayId?: string|null,
+     *     InstanceId?: string|null,
+     *     InstanceOwnerId?: string|null,
+     *     NatGatewayId?: string|null,
+     *     TransitGatewayId?: string|null,
+     *     LocalGatewayId?: string|null,
+     *     CarrierGatewayId?: string|null,
+     *     NetworkInterfaceId?: string|null,
+     *     Origin?: 'CreateRouteTable'|'CreateRoute'|'EnableVgwRoutePropagation'|null,
+     *     State?: 'active'|'blackhole'|null,
+     *     VpcPeeringConnectionId?: string|null,
+     *     CoreNetworkArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

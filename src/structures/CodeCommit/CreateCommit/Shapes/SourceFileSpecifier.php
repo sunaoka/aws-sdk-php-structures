@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $filePath
- * @property bool $isMove
+ * @property bool|null $isMove
  */
 class SourceFileSpecifier extends Shape
 {
     /**
      * @param array{
      *     filePath: string,
-     *     isMove?: bool
+     *     isMove?: bool|null
      * } $args
      */
     public function __construct(array $args)

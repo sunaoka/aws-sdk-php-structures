@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\DataZone\GetJobRun;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property Shapes\JobRunDetails $details
- * @property string $domainId
- * @property \Aws\Api\DateTimeResult $endTime
- * @property Shapes\JobRunError $error
- * @property string $id
- * @property string $jobId
- * @property 'LINEAGE' $jobType
- * @property 'SCHEDULED'|'ON_DEMAND' $runMode
- * @property \Aws\Api\DateTimeResult $startTime
- * @property 'SCHEDULED'|'IN_PROGRESS'|'SUCCESS'|'PARTIALLY_SUCCEEDED'|'FAILED'|'ABORTED'|'TIMED_OUT'|'CANCELED' $status
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property Shapes\JobRunDetails|null $details
+ * @property string|null $domainId
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property Shapes\JobRunError|null $error
+ * @property string|null $id
+ * @property string|null $jobId
+ * @property 'LINEAGE'|null $jobType
+ * @property 'SCHEDULED'|'ON_DEMAND'|null $runMode
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property 'SCHEDULED'|'IN_PROGRESS'|'SUCCESS'|'PARTIALLY_SUCCEEDED'|'FAILED'|'ABORTED'|'TIMED_OUT'|'CANCELED'|null $status
  */
 class GetJobRunResponse extends Response
 {

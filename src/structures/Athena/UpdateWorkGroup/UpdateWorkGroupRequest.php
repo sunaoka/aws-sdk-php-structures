@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkGroup
- * @property string $Description
- * @property Shapes\WorkGroupConfigurationUpdates $ConfigurationUpdates
- * @property 'ENABLED'|'DISABLED' $State
+ * @property string|null $Description
+ * @property Shapes\WorkGroupConfigurationUpdates|null $ConfigurationUpdates
+ * @property 'ENABLED'|'DISABLED'|null $State
  */
 class UpdateWorkGroupRequest extends Request
 {
     /**
      * @param array{
      *     WorkGroup: string,
-     *     Description?: string,
-     *     ConfigurationUpdates?: Shapes\WorkGroupConfigurationUpdates,
-     *     State?: 'ENABLED'|'DISABLED'
+     *     Description?: string|null,
+     *     ConfigurationUpdates?: Shapes\WorkGroupConfigurationUpdates|null,
+     *     State?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DLM\UpdateLifecyclePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TargetRegion
- * @property string $Target
+ * @property string|null $TargetRegion
+ * @property string|null $Target
  * @property bool $Encrypted
- * @property string $CmkArn
- * @property bool $CopyTags
- * @property CrossRegionCopyRetainRule $RetainRule
- * @property CrossRegionCopyDeprecateRule $DeprecateRule
+ * @property string|null $CmkArn
+ * @property bool|null $CopyTags
+ * @property CrossRegionCopyRetainRule|null $RetainRule
+ * @property CrossRegionCopyDeprecateRule|null $DeprecateRule
  */
 class CrossRegionCopyRule extends Shape
 {
     /**
      * @param array{
-     *     TargetRegion?: string,
-     *     Target?: string,
+     *     TargetRegion?: string|null,
+     *     Target?: string|null,
      *     Encrypted: bool,
-     *     CmkArn?: string,
-     *     CopyTags?: bool,
-     *     RetainRule?: CrossRegionCopyRetainRule,
-     *     DeprecateRule?: CrossRegionCopyDeprecateRule
+     *     CmkArn?: string|null,
+     *     CopyTags?: bool|null,
+     *     RetainRule?: CrossRegionCopyRetainRule|null,
+     *     DeprecateRule?: CrossRegionCopyDeprecateRule|null
      * } $args
      */
     public function __construct(array $args)

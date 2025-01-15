@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $appArn
- * @property string $groupingId
+ * @property string|null $groupingId
  */
 class DescribeResourceGroupingRecommendationTaskRequest extends Request
 {
     /**
      * @param array{
      *     appArn: string,
-     *     groupingId?: string
+     *     groupingId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Chime\UpdateSipMediaApplicationCall;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\SipMediaApplicationCall $SipMediaApplicationCall
+ * @property Shapes\SipMediaApplicationCall|null $SipMediaApplicationCall
  */
 class UpdateSipMediaApplicationCallResponse extends Response
 {

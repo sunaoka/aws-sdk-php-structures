@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property UserTurnInputSpecification $input
  * @property UserTurnOutputSpecification $expectedOutput
- * @property UserTurnOutputSpecification $actualOutput
- * @property ExecutionErrorDetails $errorDetails
- * @property 'Matched'|'Mismatched'|'ExecutionError' $endToEndResult
- * @property 'Matched'|'Mismatched'|'ExecutionError' $intentMatchResult
- * @property 'Matched'|'Mismatched'|'ExecutionError' $slotMatchResult
- * @property 'Matched'|'Mismatched'|'ExecutionError' $speechTranscriptionResult
- * @property ConversationLevelResultDetail $conversationLevelResult
+ * @property UserTurnOutputSpecification|null $actualOutput
+ * @property ExecutionErrorDetails|null $errorDetails
+ * @property 'Matched'|'Mismatched'|'ExecutionError'|null $endToEndResult
+ * @property 'Matched'|'Mismatched'|'ExecutionError'|null $intentMatchResult
+ * @property 'Matched'|'Mismatched'|'ExecutionError'|null $slotMatchResult
+ * @property 'Matched'|'Mismatched'|'ExecutionError'|null $speechTranscriptionResult
+ * @property ConversationLevelResultDetail|null $conversationLevelResult
  */
 class UserTurnResult extends Shape
 {
@@ -21,13 +21,13 @@ class UserTurnResult extends Shape
      * @param array{
      *     input: UserTurnInputSpecification,
      *     expectedOutput: UserTurnOutputSpecification,
-     *     actualOutput?: UserTurnOutputSpecification,
-     *     errorDetails?: ExecutionErrorDetails,
-     *     endToEndResult?: 'Matched'|'Mismatched'|'ExecutionError',
-     *     intentMatchResult?: 'Matched'|'Mismatched'|'ExecutionError',
-     *     slotMatchResult?: 'Matched'|'Mismatched'|'ExecutionError',
-     *     speechTranscriptionResult?: 'Matched'|'Mismatched'|'ExecutionError',
-     *     conversationLevelResult?: ConversationLevelResultDetail
+     *     actualOutput?: UserTurnOutputSpecification|null,
+     *     errorDetails?: ExecutionErrorDetails|null,
+     *     endToEndResult?: 'Matched'|'Mismatched'|'ExecutionError'|null,
+     *     intentMatchResult?: 'Matched'|'Mismatched'|'ExecutionError'|null,
+     *     slotMatchResult?: 'Matched'|'Mismatched'|'ExecutionError'|null,
+     *     speechTranscriptionResult?: 'Matched'|'Mismatched'|'ExecutionError'|null,
+     *     conversationLevelResult?: ConversationLevelResultDetail|null
      * } $args
      */
     public function __construct(array $args)

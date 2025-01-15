@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Personalize\CreateEventTracker;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $eventTrackerArn
- * @property string $trackingId
+ * @property string|null $eventTrackerArn
+ * @property string|null $trackingId
  */
 class CreateEventTrackerResponse extends Response
 {

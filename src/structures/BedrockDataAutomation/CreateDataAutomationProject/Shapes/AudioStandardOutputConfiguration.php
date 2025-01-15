@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomation\CreateDataAutomationProje
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AudioStandardExtraction $extraction
- * @property AudioStandardGenerativeField $generativeField
+ * @property AudioStandardExtraction|null $extraction
+ * @property AudioStandardGenerativeField|null $generativeField
  */
 class AudioStandardOutputConfiguration extends Shape
 {
     /**
      * @param array{
-     *     extraction?: AudioStandardExtraction,
-     *     generativeField?: AudioStandardGenerativeField
+     *     extraction?: AudioStandardExtraction|null,
+     *     generativeField?: AudioStandardGenerativeField|null
      * } $args
      */
     public function __construct(array $args = [])

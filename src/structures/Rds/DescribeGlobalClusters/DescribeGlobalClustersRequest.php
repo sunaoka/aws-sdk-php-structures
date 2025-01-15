@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeGlobalClusters;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $GlobalClusterIdentifier
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $GlobalClusterIdentifier
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeGlobalClustersRequest extends Request
 {
     /**
      * @param array{
-     *     GlobalClusterIdentifier?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     GlobalClusterIdentifier?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

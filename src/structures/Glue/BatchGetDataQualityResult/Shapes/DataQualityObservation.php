@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetDataQualityResult\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property MetricBasedObservation $MetricBasedObservation
+ * @property string|null $Description
+ * @property MetricBasedObservation|null $MetricBasedObservation
  */
 class DataQualityObservation extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     MetricBasedObservation?: MetricBasedObservation
+     *     Description?: string|null,
+     *     MetricBasedObservation?: MetricBasedObservation|null
      * } $args
      */
     public function __construct(array $args = [])

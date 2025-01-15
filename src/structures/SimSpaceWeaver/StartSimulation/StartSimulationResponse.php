@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\SimSpaceWeaver\StartSimulation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $ExecutionId
+ * @property string|null $Arn
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $ExecutionId
  */
 class StartSimulationResponse extends Response
 {

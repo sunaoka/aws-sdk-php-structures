@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Bucket
- * @property string $Account
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE' $StorageClass
- * @property AccessControlTranslation $AccessControlTranslation
- * @property EncryptionConfiguration $EncryptionConfiguration
- * @property ReplicationTime $ReplicationTime
- * @property Metrics $Metrics
+ * @property string|null $Account
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
+ * @property AccessControlTranslation|null $AccessControlTranslation
+ * @property EncryptionConfiguration|null $EncryptionConfiguration
+ * @property ReplicationTime|null $ReplicationTime
+ * @property Metrics|null $Metrics
  */
 class Destination extends Shape
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     Account?: string,
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE',
-     *     AccessControlTranslation?: AccessControlTranslation,
-     *     EncryptionConfiguration?: EncryptionConfiguration,
-     *     ReplicationTime?: ReplicationTime,
-     *     Metrics?: Metrics
+     *     Account?: string|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null,
+     *     AccessControlTranslation?: AccessControlTranslation|null,
+     *     EncryptionConfiguration?: EncryptionConfiguration|null,
+     *     ReplicationTime?: ReplicationTime|null,
+     *     Metrics?: Metrics|null
      * } $args
      */
     public function __construct(array $args)

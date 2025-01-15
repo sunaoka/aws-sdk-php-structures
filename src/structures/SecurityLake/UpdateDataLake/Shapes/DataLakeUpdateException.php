@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityLake\UpdateDataLake\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $code
- * @property string $reason
+ * @property string|null $code
+ * @property string|null $reason
  */
 class DataLakeUpdateException extends Shape
 {
     /**
      * @param array{
-     *     code?: string,
-     *     reason?: string
+     *     code?: string|null,
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

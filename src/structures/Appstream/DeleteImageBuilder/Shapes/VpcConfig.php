@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Appstream\DeleteImageBuilder\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $SubnetIds
- * @property list<string> $SecurityGroupIds
+ * @property list<string>|null $SubnetIds
+ * @property list<string>|null $SecurityGroupIds
  */
 class VpcConfig extends Shape
 {
     /**
      * @param array{
-     *     SubnetIds?: list<string>,
-     *     SecurityGroupIds?: list<string>
+     *     SubnetIds?: list<string>|null,
+     *     SecurityGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

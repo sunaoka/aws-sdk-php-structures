@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\SearchProvisionedProducts\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Arn
- * @property string $Type
- * @property string $Id
- * @property 'AVAILABLE'|'UNDER_CHANGE'|'TAINTED'|'ERROR'|'PLAN_IN_PROGRESS' $Status
- * @property string $StatusMessage
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property string $IdempotencyToken
- * @property string $LastRecordId
- * @property string $LastProvisioningRecordId
- * @property string $LastSuccessfulProvisioningRecordId
- * @property list<Tag> $Tags
- * @property string $PhysicalId
- * @property string $ProductId
- * @property string $ProductName
- * @property string $ProvisioningArtifactId
- * @property string $ProvisioningArtifactName
- * @property string $UserArn
- * @property string $UserArnSession
+ * @property string|null $Name
+ * @property string|null $Arn
+ * @property string|null $Type
+ * @property string|null $Id
+ * @property 'AVAILABLE'|'UNDER_CHANGE'|'TAINTED'|'ERROR'|'PLAN_IN_PROGRESS'|null $Status
+ * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property string|null $IdempotencyToken
+ * @property string|null $LastRecordId
+ * @property string|null $LastProvisioningRecordId
+ * @property string|null $LastSuccessfulProvisioningRecordId
+ * @property list<Tag>|null $Tags
+ * @property string|null $PhysicalId
+ * @property string|null $ProductId
+ * @property string|null $ProductName
+ * @property string|null $ProvisioningArtifactId
+ * @property string|null $ProvisioningArtifactName
+ * @property string|null $UserArn
+ * @property string|null $UserArnSession
  */
 class ProvisionedProductAttribute extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Arn?: string,
-     *     Type?: string,
-     *     Id?: string,
-     *     Status?: 'AVAILABLE'|'UNDER_CHANGE'|'TAINTED'|'ERROR'|'PLAN_IN_PROGRESS',
-     *     StatusMessage?: string,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     IdempotencyToken?: string,
-     *     LastRecordId?: string,
-     *     LastProvisioningRecordId?: string,
-     *     LastSuccessfulProvisioningRecordId?: string,
-     *     Tags?: list<Tag>,
-     *     PhysicalId?: string,
-     *     ProductId?: string,
-     *     ProductName?: string,
-     *     ProvisioningArtifactId?: string,
-     *     ProvisioningArtifactName?: string,
-     *     UserArn?: string,
-     *     UserArnSession?: string
+     *     Name?: string|null,
+     *     Arn?: string|null,
+     *     Type?: string|null,
+     *     Id?: string|null,
+     *     Status?: 'AVAILABLE'|'UNDER_CHANGE'|'TAINTED'|'ERROR'|'PLAN_IN_PROGRESS'|null,
+     *     StatusMessage?: string|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     IdempotencyToken?: string|null,
+     *     LastRecordId?: string|null,
+     *     LastProvisioningRecordId?: string|null,
+     *     LastSuccessfulProvisioningRecordId?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     PhysicalId?: string|null,
+     *     ProductId?: string|null,
+     *     ProductName?: string|null,
+     *     ProvisioningArtifactId?: string|null,
+     *     ProvisioningArtifactName?: string|null,
+     *     UserArn?: string|null,
+     *     UserArnSession?: string|null
      * } $args
      */
     public function __construct(array $args = [])

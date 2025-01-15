@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Omics\StartAnnotationImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ReadOptions $readOptions
+ * @property ReadOptions|null $readOptions
  */
 class TsvOptions extends Shape
 {
     /**
-     * @param array{readOptions?: ReadOptions} $args
+     * @param array{readOptions?: ReadOptions|null} $args
      */
     public function __construct(array $args = [])
     {

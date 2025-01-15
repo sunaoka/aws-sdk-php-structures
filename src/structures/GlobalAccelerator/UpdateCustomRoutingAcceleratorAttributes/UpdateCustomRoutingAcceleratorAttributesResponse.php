@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\UpdateCustomRoutingAccelerato
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\CustomRoutingAcceleratorAttributes $AcceleratorAttributes
+ * @property Shapes\CustomRoutingAcceleratorAttributes|null $AcceleratorAttributes
  */
 class UpdateCustomRoutingAcceleratorAttributesResponse extends Response
 {

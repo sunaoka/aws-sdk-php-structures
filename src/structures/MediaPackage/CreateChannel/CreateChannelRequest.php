@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaPackage\CreateChannel;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $Id
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateChannelRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     Id: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

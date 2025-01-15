@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GlobalNetworkId
  * @property string $ConnectPeerId
  * @property string $DeviceId
- * @property string $LinkId
+ * @property string|null $LinkId
  */
 class AssociateConnectPeerRequest extends Request
 {
@@ -17,7 +17,7 @@ class AssociateConnectPeerRequest extends Request
      *     GlobalNetworkId: string,
      *     ConnectPeerId: string,
      *     DeviceId: string,
-     *     LinkId?: string
+     *     LinkId?: string|null
      * } $args
      */
     public function __construct(array $args)

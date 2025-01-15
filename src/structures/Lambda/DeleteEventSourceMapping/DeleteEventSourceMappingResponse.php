@@ -5,38 +5,38 @@ namespace Sunaoka\Aws\Structures\Lambda\DeleteEventSourceMapping;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $UUID
- * @property 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP' $StartingPosition
- * @property \Aws\Api\DateTimeResult $StartingPositionTimestamp
- * @property int<1, 10000> $BatchSize
- * @property int<0, 300> $MaximumBatchingWindowInSeconds
- * @property int<1, 10> $ParallelizationFactor
- * @property string $EventSourceArn
- * @property Shapes\FilterCriteria $FilterCriteria
- * @property string $FunctionArn
- * @property \Aws\Api\DateTimeResult $LastModified
- * @property string $LastProcessingResult
- * @property string $State
- * @property string $StateTransitionReason
- * @property Shapes\DestinationConfig $DestinationConfig
- * @property list<string> $Topics
- * @property list<string> $Queues
- * @property list<Shapes\SourceAccessConfiguration> $SourceAccessConfigurations
- * @property Shapes\SelfManagedEventSource $SelfManagedEventSource
- * @property int<-1, 604800> $MaximumRecordAgeInSeconds
- * @property bool $BisectBatchOnFunctionError
- * @property int<-1, 10000> $MaximumRetryAttempts
- * @property int<0, 900> $TumblingWindowInSeconds
- * @property list<'ReportBatchItemFailures'> $FunctionResponseTypes
- * @property Shapes\AmazonManagedKafkaEventSourceConfig $AmazonManagedKafkaEventSourceConfig
- * @property Shapes\SelfManagedKafkaEventSourceConfig $SelfManagedKafkaEventSourceConfig
- * @property Shapes\ScalingConfig $ScalingConfig
- * @property Shapes\DocumentDBEventSourceConfig $DocumentDBEventSourceConfig
- * @property string $KMSKeyArn
- * @property Shapes\FilterCriteriaError $FilterCriteriaError
- * @property string $EventSourceMappingArn
- * @property Shapes\EventSourceMappingMetricsConfig $MetricsConfig
- * @property Shapes\ProvisionedPollerConfig $ProvisionedPollerConfig
+ * @property string|null $UUID
+ * @property 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP'|null $StartingPosition
+ * @property \Aws\Api\DateTimeResult|null $StartingPositionTimestamp
+ * @property int<1, 10000>|null $BatchSize
+ * @property int<0, 300>|null $MaximumBatchingWindowInSeconds
+ * @property int<1, 10>|null $ParallelizationFactor
+ * @property string|null $EventSourceArn
+ * @property Shapes\FilterCriteria|null $FilterCriteria
+ * @property string|null $FunctionArn
+ * @property \Aws\Api\DateTimeResult|null $LastModified
+ * @property string|null $LastProcessingResult
+ * @property string|null $State
+ * @property string|null $StateTransitionReason
+ * @property Shapes\DestinationConfig|null $DestinationConfig
+ * @property list<string>|null $Topics
+ * @property list<string>|null $Queues
+ * @property list<Shapes\SourceAccessConfiguration>|null $SourceAccessConfigurations
+ * @property Shapes\SelfManagedEventSource|null $SelfManagedEventSource
+ * @property int<-1, 604800>|null $MaximumRecordAgeInSeconds
+ * @property bool|null $BisectBatchOnFunctionError
+ * @property int<-1, 10000>|null $MaximumRetryAttempts
+ * @property int<0, 900>|null $TumblingWindowInSeconds
+ * @property list<'ReportBatchItemFailures'>|null $FunctionResponseTypes
+ * @property Shapes\AmazonManagedKafkaEventSourceConfig|null $AmazonManagedKafkaEventSourceConfig
+ * @property Shapes\SelfManagedKafkaEventSourceConfig|null $SelfManagedKafkaEventSourceConfig
+ * @property Shapes\ScalingConfig|null $ScalingConfig
+ * @property Shapes\DocumentDBEventSourceConfig|null $DocumentDBEventSourceConfig
+ * @property string|null $KMSKeyArn
+ * @property Shapes\FilterCriteriaError|null $FilterCriteriaError
+ * @property string|null $EventSourceMappingArn
+ * @property Shapes\EventSourceMappingMetricsConfig|null $MetricsConfig
+ * @property Shapes\ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class DeleteEventSourceMappingResponse extends Response
 {

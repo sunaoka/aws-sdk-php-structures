@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\CloudFront\GetContinuousDeploymentPolicy\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ContinuousDeploymentSingleWeightConfig $SingleWeightConfig
- * @property ContinuousDeploymentSingleHeaderConfig $SingleHeaderConfig
+ * @property ContinuousDeploymentSingleWeightConfig|null $SingleWeightConfig
+ * @property ContinuousDeploymentSingleHeaderConfig|null $SingleHeaderConfig
  * @property 'SingleWeight'|'SingleHeader' $Type
  */
 class TrafficConfig extends Shape
 {
     /**
      * @param array{
-     *     SingleWeightConfig?: ContinuousDeploymentSingleWeightConfig,
-     *     SingleHeaderConfig?: ContinuousDeploymentSingleHeaderConfig,
+     *     SingleWeightConfig?: ContinuousDeploymentSingleWeightConfig|null,
+     *     SingleHeaderConfig?: ContinuousDeploymentSingleHeaderConfig|null,
      *     Type: 'SingleWeight'|'SingleHeader'
      * } $args
      */

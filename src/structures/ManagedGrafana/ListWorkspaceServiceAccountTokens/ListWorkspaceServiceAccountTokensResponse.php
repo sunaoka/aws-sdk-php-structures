@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\ListWorkspaceServiceAccountToken
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
+ * @property string|null $nextToken
  * @property string $serviceAccountId
  * @property list<Shapes\ServiceAccountTokenSummary> $serviceAccountTokens
  * @property string $workspaceId

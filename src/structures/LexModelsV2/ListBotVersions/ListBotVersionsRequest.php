@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $botId
- * @property Shapes\BotVersionSortBy $sortBy
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property Shapes\BotVersionSortBy|null $sortBy
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListBotVersionsRequest extends Request
 {
     /**
      * @param array{
      *     botId: string,
-     *     sortBy?: Shapes\BotVersionSortBy,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     sortBy?: Shapes\BotVersionSortBy|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

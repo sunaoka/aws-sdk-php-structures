@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\AcceptTransitGatewayMulticastDomainAssociat
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TransitGatewayMulticastDomainId
- * @property string $TransitGatewayAttachmentId
- * @property list<string> $SubnetIds
- * @property bool $DryRun
+ * @property string|null $TransitGatewayMulticastDomainId
+ * @property string|null $TransitGatewayAttachmentId
+ * @property list<string>|null $SubnetIds
+ * @property bool|null $DryRun
  */
 class AcceptTransitGatewayMulticastDomainAssociationsRequest extends Request
 {
     /**
      * @param array{
-     *     TransitGatewayMulticastDomainId?: string,
-     *     TransitGatewayAttachmentId?: string,
-     *     SubnetIds?: list<string>,
-     *     DryRun?: bool
+     *     TransitGatewayMulticastDomainId?: string|null,
+     *     TransitGatewayAttachmentId?: string|null,
+     *     SubnetIds?: list<string>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $VoiceConnectorGroupId
  * @property list<string> $E164PhoneNumbers
- * @property bool $ForceAssociate
+ * @property bool|null $ForceAssociate
  */
 class AssociatePhoneNumbersWithVoiceConnectorGroupRequest extends Request
 {
@@ -15,7 +15,7 @@ class AssociatePhoneNumbersWithVoiceConnectorGroupRequest extends Request
      * @param array{
      *     VoiceConnectorGroupId: string,
      *     E164PhoneNumbers: list<string>,
-     *     ForceAssociate?: bool
+     *     ForceAssociate?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\BatchGetVpcEndpoint\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $createdDate
- * @property string $failureCode
- * @property string $failureMessage
- * @property string $id
- * @property string $name
- * @property list<string> $securityGroupIds
- * @property 'PENDING'|'DELETING'|'ACTIVE'|'FAILED' $status
- * @property list<string> $subnetIds
- * @property string $vpcId
+ * @property int|null $createdDate
+ * @property string|null $failureCode
+ * @property string|null $failureMessage
+ * @property string|null $id
+ * @property string|null $name
+ * @property list<string>|null $securityGroupIds
+ * @property 'PENDING'|'DELETING'|'ACTIVE'|'FAILED'|null $status
+ * @property list<string>|null $subnetIds
+ * @property string|null $vpcId
  */
 class VpcEndpointDetail extends Shape
 {
     /**
      * @param array{
-     *     createdDate?: int,
-     *     failureCode?: string,
-     *     failureMessage?: string,
-     *     id?: string,
-     *     name?: string,
-     *     securityGroupIds?: list<string>,
-     *     status?: 'PENDING'|'DELETING'|'ACTIVE'|'FAILED',
-     *     subnetIds?: list<string>,
-     *     vpcId?: string
+     *     createdDate?: int|null,
+     *     failureCode?: string|null,
+     *     failureMessage?: string|null,
+     *     id?: string|null,
+     *     name?: string|null,
+     *     securityGroupIds?: list<string>|null,
+     *     status?: 'PENDING'|'DELETING'|'ACTIVE'|'FAILED'|null,
+     *     subnetIds?: list<string>|null,
+     *     vpcId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

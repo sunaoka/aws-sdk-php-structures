@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ecs\UpdateClusterSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $cloudWatchLogGroupName
- * @property bool $cloudWatchEncryptionEnabled
- * @property string $s3BucketName
- * @property bool $s3EncryptionEnabled
- * @property string $s3KeyPrefix
+ * @property string|null $cloudWatchLogGroupName
+ * @property bool|null $cloudWatchEncryptionEnabled
+ * @property string|null $s3BucketName
+ * @property bool|null $s3EncryptionEnabled
+ * @property string|null $s3KeyPrefix
  */
 class ExecuteCommandLogConfiguration extends Shape
 {
     /**
      * @param array{
-     *     cloudWatchLogGroupName?: string,
-     *     cloudWatchEncryptionEnabled?: bool,
-     *     s3BucketName?: string,
-     *     s3EncryptionEnabled?: bool,
-     *     s3KeyPrefix?: string
+     *     cloudWatchLogGroupName?: string|null,
+     *     cloudWatchEncryptionEnabled?: bool|null,
+     *     s3BucketName?: string|null,
+     *     s3EncryptionEnabled?: bool|null,
+     *     s3KeyPrefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

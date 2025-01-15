@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EncryptionOption
- * @property string $KmsKey
+ * @property string|null $EncryptionOption
+ * @property string|null $KmsKey
  */
 class AwsAthenaWorkGroupConfigurationResultConfigurationEncryptionConfigurationDetails extends Shape
 {
     /**
      * @param array{
-     *     EncryptionOption?: string,
-     *     KmsKey?: string
+     *     EncryptionOption?: string|null,
+     *     KmsKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

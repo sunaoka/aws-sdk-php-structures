@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\RejectTransitGatewayMulticastDomainAssociat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayMulticastDomainId
- * @property string $TransitGatewayAttachmentId
- * @property string $ResourceId
- * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering' $ResourceType
- * @property string $ResourceOwnerId
- * @property list<SubnetAssociation> $Subnets
+ * @property string|null $TransitGatewayMulticastDomainId
+ * @property string|null $TransitGatewayAttachmentId
+ * @property string|null $ResourceId
+ * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null $ResourceType
+ * @property string|null $ResourceOwnerId
+ * @property list<SubnetAssociation>|null $Subnets
  */
 class TransitGatewayMulticastDomainAssociations extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayMulticastDomainId?: string,
-     *     TransitGatewayAttachmentId?: string,
-     *     ResourceId?: string,
-     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering',
-     *     ResourceOwnerId?: string,
-     *     Subnets?: list<SubnetAssociation>
+     *     TransitGatewayMulticastDomainId?: string|null,
+     *     TransitGatewayAttachmentId?: string|null,
+     *     ResourceId?: string|null,
+     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null,
+     *     ResourceOwnerId?: string|null,
+     *     Subnets?: list<SubnetAssociation>|null
      * } $args
      */
     public function __construct(array $args = [])

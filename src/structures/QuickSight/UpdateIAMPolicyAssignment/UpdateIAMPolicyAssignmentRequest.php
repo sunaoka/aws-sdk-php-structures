@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $AssignmentName
  * @property string $Namespace
- * @property 'ENABLED'|'DRAFT'|'DISABLED' $AssignmentStatus
- * @property string $PolicyArn
- * @property array<string, list<string>> $Identities
+ * @property 'ENABLED'|'DRAFT'|'DISABLED'|null $AssignmentStatus
+ * @property string|null $PolicyArn
+ * @property array<string, list<string>>|null $Identities
  */
 class UpdateIAMPolicyAssignmentRequest extends Request
 {
@@ -19,9 +19,9 @@ class UpdateIAMPolicyAssignmentRequest extends Request
      *     AwsAccountId: string,
      *     AssignmentName: string,
      *     Namespace: string,
-     *     AssignmentStatus?: 'ENABLED'|'DRAFT'|'DISABLED',
-     *     PolicyArn?: string,
-     *     Identities?: array<string, list<string>>
+     *     AssignmentStatus?: 'ENABLED'|'DRAFT'|'DISABLED'|null,
+     *     PolicyArn?: string|null,
+     *     Identities?: array<string, list<string>>|null
      * } $args
      */
     public function __construct(array $args)

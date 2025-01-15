@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CognitoIdentity\UpdateIdentityPool\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProviderName
- * @property string $ClientId
- * @property bool $ServerSideTokenCheck
+ * @property string|null $ProviderName
+ * @property string|null $ClientId
+ * @property bool|null $ServerSideTokenCheck
  */
 class CognitoIdentityProvider extends Shape
 {
     /**
      * @param array{
-     *     ProviderName?: string,
-     *     ClientId?: string,
-     *     ServerSideTokenCheck?: bool
+     *     ProviderName?: string|null,
+     *     ClientId?: string|null,
+     *     ServerSideTokenCheck?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

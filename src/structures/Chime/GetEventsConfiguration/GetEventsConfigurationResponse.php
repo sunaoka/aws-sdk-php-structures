@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Chime\GetEventsConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\EventsConfiguration $EventsConfiguration
+ * @property Shapes\EventsConfiguration|null $EventsConfiguration
  */
 class GetEventsConfigurationResponse extends Response
 {

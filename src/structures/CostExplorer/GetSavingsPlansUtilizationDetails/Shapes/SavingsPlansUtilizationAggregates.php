@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property SavingsPlansUtilization $Utilization
- * @property SavingsPlansSavings $Savings
- * @property SavingsPlansAmortizedCommitment $AmortizedCommitment
+ * @property SavingsPlansSavings|null $Savings
+ * @property SavingsPlansAmortizedCommitment|null $AmortizedCommitment
  */
 class SavingsPlansUtilizationAggregates extends Shape
 {
     /**
      * @param array{
      *     Utilization: SavingsPlansUtilization,
-     *     Savings?: SavingsPlansSavings,
-     *     AmortizedCommitment?: SavingsPlansAmortizedCommitment
+     *     Savings?: SavingsPlansSavings|null,
+     *     AmortizedCommitment?: SavingsPlansAmortizedCommitment|null
      * } $args
      */
     public function __construct(array $args)

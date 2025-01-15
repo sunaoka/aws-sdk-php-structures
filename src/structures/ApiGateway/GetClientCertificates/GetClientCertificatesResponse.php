@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetClientCertificates;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $position
- * @property list<Shapes\ClientCertificate> $items
+ * @property string|null $position
+ * @property list<Shapes\ClientCertificate>|null $items
  */
 class GetClientCertificatesResponse extends Response
 {

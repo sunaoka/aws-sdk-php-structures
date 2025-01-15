@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceScanId
- * @property string $ResourceIdentifier
- * @property string $ResourceTypePrefix
- * @property string $TagKey
- * @property string $TagValue
- * @property string $NextToken
- * @property int $MaxResults
+ * @property string|null $ResourceIdentifier
+ * @property string|null $ResourceTypePrefix
+ * @property string|null $TagKey
+ * @property string|null $TagValue
+ * @property string|null $NextToken
+ * @property int|null $MaxResults
  */
 class ListResourceScanResourcesRequest extends Request
 {
     /**
      * @param array{
      *     ResourceScanId: string,
-     *     ResourceIdentifier?: string,
-     *     ResourceTypePrefix?: string,
-     *     TagKey?: string,
-     *     TagValue?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int
+     *     ResourceIdentifier?: string|null,
+     *     ResourceTypePrefix?: string|null,
+     *     TagKey?: string|null,
+     *     TagValue?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int|null
      * } $args
      */
     public function __construct(array $args)

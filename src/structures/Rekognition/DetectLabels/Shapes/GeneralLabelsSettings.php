@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Rekognition\DetectLabels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $LabelInclusionFilters
- * @property list<string> $LabelExclusionFilters
- * @property list<string> $LabelCategoryInclusionFilters
- * @property list<string> $LabelCategoryExclusionFilters
+ * @property list<string>|null $LabelInclusionFilters
+ * @property list<string>|null $LabelExclusionFilters
+ * @property list<string>|null $LabelCategoryInclusionFilters
+ * @property list<string>|null $LabelCategoryExclusionFilters
  */
 class GeneralLabelsSettings extends Shape
 {
     /**
      * @param array{
-     *     LabelInclusionFilters?: list<string>,
-     *     LabelExclusionFilters?: list<string>,
-     *     LabelCategoryInclusionFilters?: list<string>,
-     *     LabelCategoryExclusionFilters?: list<string>
+     *     LabelInclusionFilters?: list<string>|null,
+     *     LabelExclusionFilters?: list<string>|null,
+     *     LabelCategoryInclusionFilters?: list<string>|null,
+     *     LabelCategoryExclusionFilters?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

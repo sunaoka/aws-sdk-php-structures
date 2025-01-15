@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\MediaTailor\CreateProgram\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DurationMillis
+ * @property int|null $DurationMillis
  * @property 'BEFORE_PROGRAM'|'AFTER_PROGRAM' $RelativePosition
- * @property string $RelativeProgram
- * @property int $ScheduledStartTimeMillis
+ * @property string|null $RelativeProgram
+ * @property int|null $ScheduledStartTimeMillis
  * @property string $Type
  */
 class Transition extends Shape
 {
     /**
      * @param array{
-     *     DurationMillis?: int,
+     *     DurationMillis?: int|null,
      *     RelativePosition: 'BEFORE_PROGRAM'|'AFTER_PROGRAM',
-     *     RelativeProgram?: string,
-     *     ScheduledStartTimeMillis?: int,
+     *     RelativeProgram?: string|null,
+     *     ScheduledStartTimeMillis?: int|null,
      *     Type: string
      * } $args
      */

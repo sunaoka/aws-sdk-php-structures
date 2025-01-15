@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\ListClassificationScopes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $name
- * @property string $nextToken
+ * @property string|null $name
+ * @property string|null $nextToken
  */
 class ListClassificationScopesRequest extends Request
 {
     /**
      * @param array{
-     *     name?: string,
-     *     nextToken?: string
+     *     name?: string|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

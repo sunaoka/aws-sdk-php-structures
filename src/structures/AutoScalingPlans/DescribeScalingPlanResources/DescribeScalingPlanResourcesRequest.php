@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ScalingPlanName
  * @property int $ScalingPlanVersion
- * @property int $MaxResults
- * @property string $NextToken
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeScalingPlanResourcesRequest extends Request
 {
@@ -16,8 +16,8 @@ class DescribeScalingPlanResourcesRequest extends Request
      * @param array{
      *     ScalingPlanName: string,
      *     ScalingPlanVersion: int,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

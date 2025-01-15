@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Emr\ModifyInstanceGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClusterId
- * @property list<Shapes\InstanceGroupModifyConfig> $InstanceGroups
+ * @property string|null $ClusterId
+ * @property list<Shapes\InstanceGroupModifyConfig>|null $InstanceGroups
  */
 class ModifyInstanceGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterId?: string,
-     *     InstanceGroups?: list<Shapes\InstanceGroupModifyConfig>
+     *     ClusterId?: string|null,
+     *     InstanceGroups?: list<Shapes\InstanceGroupModifyConfig>|null
      * } $args
      */
     public function __construct(array $args = [])

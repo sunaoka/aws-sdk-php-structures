@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\ListDatasets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FilterExpression $LastModifiedDateCondition
- * @property FilesLimit $FilesLimit
- * @property array<string, DatasetParameter> $Parameters
+ * @property FilterExpression|null $LastModifiedDateCondition
+ * @property FilesLimit|null $FilesLimit
+ * @property array<string, DatasetParameter>|null $Parameters
  */
 class PathOptions extends Shape
 {
     /**
      * @param array{
-     *     LastModifiedDateCondition?: FilterExpression,
-     *     FilesLimit?: FilesLimit,
-     *     Parameters?: array<string, DatasetParameter>
+     *     LastModifiedDateCondition?: FilterExpression|null,
+     *     FilesLimit?: FilesLimit|null,
+     *     Parameters?: array<string, DatasetParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

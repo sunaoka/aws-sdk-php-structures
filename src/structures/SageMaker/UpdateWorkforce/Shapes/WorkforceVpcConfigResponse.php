@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $VpcId
  * @property list<string> $SecurityGroupIds
  * @property list<string> $Subnets
- * @property string $VpcEndpointId
+ * @property string|null $VpcEndpointId
  */
 class WorkforceVpcConfigResponse extends Shape
 {
@@ -17,7 +17,7 @@ class WorkforceVpcConfigResponse extends Shape
      *     VpcId: string,
      *     SecurityGroupIds: list<string>,
      *     Subnets: list<string>,
-     *     VpcEndpointId?: string
+     *     VpcEndpointId?: string|null
      * } $args
      */
     public function __construct(array $args)

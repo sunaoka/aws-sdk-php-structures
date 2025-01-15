@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $exportId
- * @property string $filePassword
+ * @property string|null $filePassword
  */
 class UpdateExportRequest extends Request
 {
     /**
      * @param array{
      *     exportId: string,
-     *     filePassword?: string
+     *     filePassword?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MailManager\ListAddonSubscriptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AddonName
- * @property string $AddonSubscriptionArn
- * @property string $AddonSubscriptionId
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
+ * @property string|null $AddonName
+ * @property string|null $AddonSubscriptionArn
+ * @property string|null $AddonSubscriptionId
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  */
 class AddonSubscription extends Shape
 {
     /**
      * @param array{
-     *     AddonName?: string,
-     *     AddonSubscriptionArn?: string,
-     *     AddonSubscriptionId?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult
+     *     AddonName?: string|null,
+     *     AddonSubscriptionArn?: string|null,
+     *     AddonSubscriptionId?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

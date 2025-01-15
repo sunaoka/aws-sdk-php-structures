@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property KPIVisualStandardLayout $StandardLayout
+ * @property KPIVisualStandardLayout|null $StandardLayout
  */
 class KPIVisualLayoutOptions extends Shape
 {
     /**
-     * @param array{StandardLayout?: KPIVisualStandardLayout} $args
+     * @param array{StandardLayout?: KPIVisualStandardLayout|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HeatMapFieldWells $FieldWells
- * @property HeatMapSortConfiguration $SortConfiguration
- * @property ChartAxisLabelOptions $RowLabelOptions
- * @property ChartAxisLabelOptions $ColumnLabelOptions
- * @property ColorScale $ColorScale
- * @property LegendOptions $Legend
- * @property DataLabelOptions $DataLabels
- * @property TooltipOptions $Tooltip
- * @property VisualInteractionOptions $Interactions
+ * @property HeatMapFieldWells|null $FieldWells
+ * @property HeatMapSortConfiguration|null $SortConfiguration
+ * @property ChartAxisLabelOptions|null $RowLabelOptions
+ * @property ChartAxisLabelOptions|null $ColumnLabelOptions
+ * @property ColorScale|null $ColorScale
+ * @property LegendOptions|null $Legend
+ * @property DataLabelOptions|null $DataLabels
+ * @property TooltipOptions|null $Tooltip
+ * @property VisualInteractionOptions|null $Interactions
  */
 class HeatMapConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FieldWells?: HeatMapFieldWells,
-     *     SortConfiguration?: HeatMapSortConfiguration,
-     *     RowLabelOptions?: ChartAxisLabelOptions,
-     *     ColumnLabelOptions?: ChartAxisLabelOptions,
-     *     ColorScale?: ColorScale,
-     *     Legend?: LegendOptions,
-     *     DataLabels?: DataLabelOptions,
-     *     Tooltip?: TooltipOptions,
-     *     Interactions?: VisualInteractionOptions
+     *     FieldWells?: HeatMapFieldWells|null,
+     *     SortConfiguration?: HeatMapSortConfiguration|null,
+     *     RowLabelOptions?: ChartAxisLabelOptions|null,
+     *     ColumnLabelOptions?: ChartAxisLabelOptions|null,
+     *     ColorScale?: ColorScale|null,
+     *     Legend?: LegendOptions|null,
+     *     DataLabels?: DataLabelOptions|null,
+     *     Tooltip?: TooltipOptions|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

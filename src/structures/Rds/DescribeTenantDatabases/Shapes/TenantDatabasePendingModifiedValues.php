@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeTenantDatabases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MasterUserPassword
- * @property string $TenantDBName
+ * @property string|null $MasterUserPassword
+ * @property string|null $TenantDBName
  */
 class TenantDatabasePendingModifiedValues extends Shape
 {
     /**
      * @param array{
-     *     MasterUserPassword?: string,
-     *     TenantDBName?: string
+     *     MasterUserPassword?: string|null,
+     *     TenantDBName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

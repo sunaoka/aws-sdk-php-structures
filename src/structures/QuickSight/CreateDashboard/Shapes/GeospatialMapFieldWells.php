@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeospatialMapAggregatedFieldWells $GeospatialMapAggregatedFieldWells
+ * @property GeospatialMapAggregatedFieldWells|null $GeospatialMapAggregatedFieldWells
  */
 class GeospatialMapFieldWells extends Shape
 {
     /**
-     * @param array{GeospatialMapAggregatedFieldWells?: GeospatialMapAggregatedFieldWells} $args
+     * @param array{GeospatialMapAggregatedFieldWells?: GeospatialMapAggregatedFieldWells|null} $args
      */
     public function __construct(array $args = [])
     {

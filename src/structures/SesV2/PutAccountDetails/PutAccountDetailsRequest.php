@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'MARKETING'|'TRANSACTIONAL' $MailType
  * @property string $WebsiteURL
- * @property 'EN'|'JA' $ContactLanguage
- * @property string $UseCaseDescription
- * @property list<string> $AdditionalContactEmailAddresses
- * @property bool $ProductionAccessEnabled
+ * @property 'EN'|'JA'|null $ContactLanguage
+ * @property string|null $UseCaseDescription
+ * @property list<string>|null $AdditionalContactEmailAddresses
+ * @property bool|null $ProductionAccessEnabled
  */
 class PutAccountDetailsRequest extends Request
 {
@@ -18,10 +18,10 @@ class PutAccountDetailsRequest extends Request
      * @param array{
      *     MailType: 'MARKETING'|'TRANSACTIONAL',
      *     WebsiteURL: string,
-     *     ContactLanguage?: 'EN'|'JA',
-     *     UseCaseDescription?: string,
-     *     AdditionalContactEmailAddresses?: list<string>,
-     *     ProductionAccessEnabled?: bool
+     *     ContactLanguage?: 'EN'|'JA'|null,
+     *     UseCaseDescription?: string|null,
+     *     AdditionalContactEmailAddresses?: list<string>|null,
+     *     ProductionAccessEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

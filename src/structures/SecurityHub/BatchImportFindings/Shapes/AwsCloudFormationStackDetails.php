@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Capabilities
- * @property string $CreationTime
- * @property string $Description
- * @property bool $DisableRollback
- * @property AwsCloudFormationStackDriftInformationDetails $DriftInformation
- * @property bool $EnableTerminationProtection
- * @property string $LastUpdatedTime
- * @property list<string> $NotificationArns
- * @property list<AwsCloudFormationStackOutputsDetails> $Outputs
- * @property string $RoleArn
- * @property string $StackId
- * @property string $StackName
- * @property string $StackStatus
- * @property string $StackStatusReason
- * @property int $TimeoutInMinutes
+ * @property list<string>|null $Capabilities
+ * @property string|null $CreationTime
+ * @property string|null $Description
+ * @property bool|null $DisableRollback
+ * @property AwsCloudFormationStackDriftInformationDetails|null $DriftInformation
+ * @property bool|null $EnableTerminationProtection
+ * @property string|null $LastUpdatedTime
+ * @property list<string>|null $NotificationArns
+ * @property list<AwsCloudFormationStackOutputsDetails>|null $Outputs
+ * @property string|null $RoleArn
+ * @property string|null $StackId
+ * @property string|null $StackName
+ * @property string|null $StackStatus
+ * @property string|null $StackStatusReason
+ * @property int|null $TimeoutInMinutes
  */
 class AwsCloudFormationStackDetails extends Shape
 {
     /**
      * @param array{
-     *     Capabilities?: list<string>,
-     *     CreationTime?: string,
-     *     Description?: string,
-     *     DisableRollback?: bool,
-     *     DriftInformation?: AwsCloudFormationStackDriftInformationDetails,
-     *     EnableTerminationProtection?: bool,
-     *     LastUpdatedTime?: string,
-     *     NotificationArns?: list<string>,
-     *     Outputs?: list<AwsCloudFormationStackOutputsDetails>,
-     *     RoleArn?: string,
-     *     StackId?: string,
-     *     StackName?: string,
-     *     StackStatus?: string,
-     *     StackStatusReason?: string,
-     *     TimeoutInMinutes?: int
+     *     Capabilities?: list<string>|null,
+     *     CreationTime?: string|null,
+     *     Description?: string|null,
+     *     DisableRollback?: bool|null,
+     *     DriftInformation?: AwsCloudFormationStackDriftInformationDetails|null,
+     *     EnableTerminationProtection?: bool|null,
+     *     LastUpdatedTime?: string|null,
+     *     NotificationArns?: list<string>|null,
+     *     Outputs?: list<AwsCloudFormationStackOutputsDetails>|null,
+     *     RoleArn?: string|null,
+     *     StackId?: string|null,
+     *     StackName?: string|null,
+     *     StackStatus?: string|null,
+     *     StackStatusReason?: string|null,
+     *     TimeoutInMinutes?: int|null
      * } $args
      */
     public function __construct(array $args = [])

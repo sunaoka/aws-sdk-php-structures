@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SourceLocationArn
  * @property string $DestinationLocationArn
- * @property string $CloudWatchLogGroupArn
- * @property string $Name
- * @property Shapes\Options $Options
- * @property list<Shapes\FilterRule> $Excludes
- * @property Shapes\TaskSchedule $Schedule
- * @property list<Shapes\TagListEntry> $Tags
- * @property list<Shapes\FilterRule> $Includes
- * @property Shapes\ManifestConfig $ManifestConfig
- * @property Shapes\TaskReportConfig $TaskReportConfig
- * @property 'BASIC'|'ENHANCED' $TaskMode
+ * @property string|null $CloudWatchLogGroupArn
+ * @property string|null $Name
+ * @property Shapes\Options|null $Options
+ * @property list<Shapes\FilterRule>|null $Excludes
+ * @property Shapes\TaskSchedule|null $Schedule
+ * @property list<Shapes\TagListEntry>|null $Tags
+ * @property list<Shapes\FilterRule>|null $Includes
+ * @property Shapes\ManifestConfig|null $ManifestConfig
+ * @property Shapes\TaskReportConfig|null $TaskReportConfig
+ * @property 'BASIC'|'ENHANCED'|null $TaskMode
  */
 class CreateTaskRequest extends Request
 {
@@ -24,16 +24,16 @@ class CreateTaskRequest extends Request
      * @param array{
      *     SourceLocationArn: string,
      *     DestinationLocationArn: string,
-     *     CloudWatchLogGroupArn?: string,
-     *     Name?: string,
-     *     Options?: Shapes\Options,
-     *     Excludes?: list<Shapes\FilterRule>,
-     *     Schedule?: Shapes\TaskSchedule,
-     *     Tags?: list<Shapes\TagListEntry>,
-     *     Includes?: list<Shapes\FilterRule>,
-     *     ManifestConfig?: Shapes\ManifestConfig,
-     *     TaskReportConfig?: Shapes\TaskReportConfig,
-     *     TaskMode?: 'BASIC'|'ENHANCED'
+     *     CloudWatchLogGroupArn?: string|null,
+     *     Name?: string|null,
+     *     Options?: Shapes\Options|null,
+     *     Excludes?: list<Shapes\FilterRule>|null,
+     *     Schedule?: Shapes\TaskSchedule|null,
+     *     Tags?: list<Shapes\TagListEntry>|null,
+     *     Includes?: list<Shapes\FilterRule>|null,
+     *     ManifestConfig?: Shapes\ManifestConfig|null,
+     *     TaskReportConfig?: Shapes\TaskReportConfig|null,
+     *     TaskMode?: 'BASIC'|'ENHANCED'|null
      * } $args
      */
     public function __construct(array $args)

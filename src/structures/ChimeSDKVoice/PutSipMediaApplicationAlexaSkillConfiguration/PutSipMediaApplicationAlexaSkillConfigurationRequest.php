@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SipMediaApplicationId
- * @property Shapes\SipMediaApplicationAlexaSkillConfiguration $SipMediaApplicationAlexaSkillConfiguration
+ * @property Shapes\SipMediaApplicationAlexaSkillConfiguration|null $SipMediaApplicationAlexaSkillConfiguration
  */
 class PutSipMediaApplicationAlexaSkillConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     SipMediaApplicationId: string,
-     *     SipMediaApplicationAlexaSkillConfiguration?: Shapes\SipMediaApplicationAlexaSkillConfiguration
+     *     SipMediaApplicationAlexaSkillConfiguration?: Shapes\SipMediaApplicationAlexaSkillConfiguration|null
      * } $args
      */
     public function __construct(array $args)

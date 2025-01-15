@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyInstanceEventStartTime;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $InstanceId
  * @property string $InstanceEventId
  * @property \Aws\Api\DateTimeResult $NotBefore
@@ -14,7 +14,7 @@ class ModifyInstanceEventStartTimeRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     InstanceId: string,
      *     InstanceEventId: string,
      *     NotBefore: \Aws\Api\DateTimeResult

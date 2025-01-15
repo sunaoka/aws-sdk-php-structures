@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateTrigger\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Description
- * @property string $Schedule
- * @property list<Action> $Actions
- * @property Predicate $Predicate
- * @property EventBatchingCondition $EventBatchingCondition
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $Schedule
+ * @property list<Action>|null $Actions
+ * @property Predicate|null $Predicate
+ * @property EventBatchingCondition|null $EventBatchingCondition
  */
 class TriggerUpdate extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Description?: string,
-     *     Schedule?: string,
-     *     Actions?: list<Action>,
-     *     Predicate?: Predicate,
-     *     EventBatchingCondition?: EventBatchingCondition
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Schedule?: string|null,
+     *     Actions?: list<Action>|null,
+     *     Predicate?: Predicate|null,
+     *     EventBatchingCondition?: EventBatchingCondition|null
      * } $args
      */
     public function __construct(array $args = [])

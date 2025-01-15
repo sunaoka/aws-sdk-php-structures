@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ExportJobIdentifier
- * @property string $ExportJobArn
- * @property 'RUNNING'|'FAILED'|'COMPLETED' $Status
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $CompletionTime
- * @property string $StatusMessage
- * @property string $SearchJobArn
+ * @property string|null $ExportJobArn
+ * @property 'RUNNING'|'FAILED'|'COMPLETED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $CompletionTime
+ * @property string|null $StatusMessage
+ * @property string|null $SearchJobArn
  */
 class ExportJobSummary extends Shape
 {
     /**
      * @param array{
      *     ExportJobIdentifier: string,
-     *     ExportJobArn?: string,
-     *     Status?: 'RUNNING'|'FAILED'|'COMPLETED',
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     CompletionTime?: \Aws\Api\DateTimeResult,
-     *     StatusMessage?: string,
-     *     SearchJobArn?: string
+     *     ExportJobArn?: string|null,
+     *     Status?: 'RUNNING'|'FAILED'|'COMPLETED'|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     CompletionTime?: \Aws\Api\DateTimeResult|null,
+     *     StatusMessage?: string|null,
+     *     SearchJobArn?: string|null
      * } $args
      */
     public function __construct(array $args)

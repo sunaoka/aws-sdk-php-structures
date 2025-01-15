@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DeleteDirectConnectGatewayAssocia
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $associationId
- * @property string $directConnectGatewayId
- * @property string $virtualGatewayId
+ * @property string|null $associationId
+ * @property string|null $directConnectGatewayId
+ * @property string|null $virtualGatewayId
  */
 class DeleteDirectConnectGatewayAssociationRequest extends Request
 {
     /**
      * @param array{
-     *     associationId?: string,
-     *     directConnectGatewayId?: string,
-     *     virtualGatewayId?: string
+     *     associationId?: string|null,
+     *     directConnectGatewayId?: string|null,
+     *     virtualGatewayId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Ec2\AuthorizeSecurityGroupIngress\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecurityGroupRuleId
- * @property string $GroupId
- * @property string $GroupOwnerId
- * @property bool $IsEgress
- * @property string $IpProtocol
- * @property int $FromPort
- * @property int $ToPort
- * @property string $CidrIpv4
- * @property string $CidrIpv6
- * @property string $PrefixListId
- * @property ReferencedSecurityGroup $ReferencedGroupInfo
- * @property string $Description
- * @property list<Tag> $Tags
- * @property string $SecurityGroupRuleArn
+ * @property string|null $SecurityGroupRuleId
+ * @property string|null $GroupId
+ * @property string|null $GroupOwnerId
+ * @property bool|null $IsEgress
+ * @property string|null $IpProtocol
+ * @property int|null $FromPort
+ * @property int|null $ToPort
+ * @property string|null $CidrIpv4
+ * @property string|null $CidrIpv6
+ * @property string|null $PrefixListId
+ * @property ReferencedSecurityGroup|null $ReferencedGroupInfo
+ * @property string|null $Description
+ * @property list<Tag>|null $Tags
+ * @property string|null $SecurityGroupRuleArn
  */
 class SecurityGroupRule extends Shape
 {
     /**
      * @param array{
-     *     SecurityGroupRuleId?: string,
-     *     GroupId?: string,
-     *     GroupOwnerId?: string,
-     *     IsEgress?: bool,
-     *     IpProtocol?: string,
-     *     FromPort?: int,
-     *     ToPort?: int,
-     *     CidrIpv4?: string,
-     *     CidrIpv6?: string,
-     *     PrefixListId?: string,
-     *     ReferencedGroupInfo?: ReferencedSecurityGroup,
-     *     Description?: string,
-     *     Tags?: list<Tag>,
-     *     SecurityGroupRuleArn?: string
+     *     SecurityGroupRuleId?: string|null,
+     *     GroupId?: string|null,
+     *     GroupOwnerId?: string|null,
+     *     IsEgress?: bool|null,
+     *     IpProtocol?: string|null,
+     *     FromPort?: int|null,
+     *     ToPort?: int|null,
+     *     CidrIpv4?: string|null,
+     *     CidrIpv6?: string|null,
+     *     PrefixListId?: string|null,
+     *     ReferencedGroupInfo?: ReferencedSecurityGroup|null,
+     *     Description?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     SecurityGroupRuleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

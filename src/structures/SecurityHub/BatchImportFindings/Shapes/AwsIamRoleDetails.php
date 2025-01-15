@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AssumeRolePolicyDocument
- * @property list<AwsIamAttachedManagedPolicy> $AttachedManagedPolicies
- * @property string $CreateDate
- * @property list<AwsIamInstanceProfile> $InstanceProfileList
- * @property AwsIamPermissionsBoundary $PermissionsBoundary
- * @property string $RoleId
- * @property string $RoleName
- * @property list<AwsIamRolePolicy> $RolePolicyList
- * @property int $MaxSessionDuration
- * @property string $Path
+ * @property string|null $AssumeRolePolicyDocument
+ * @property list<AwsIamAttachedManagedPolicy>|null $AttachedManagedPolicies
+ * @property string|null $CreateDate
+ * @property list<AwsIamInstanceProfile>|null $InstanceProfileList
+ * @property AwsIamPermissionsBoundary|null $PermissionsBoundary
+ * @property string|null $RoleId
+ * @property string|null $RoleName
+ * @property list<AwsIamRolePolicy>|null $RolePolicyList
+ * @property int|null $MaxSessionDuration
+ * @property string|null $Path
  */
 class AwsIamRoleDetails extends Shape
 {
     /**
      * @param array{
-     *     AssumeRolePolicyDocument?: string,
-     *     AttachedManagedPolicies?: list<AwsIamAttachedManagedPolicy>,
-     *     CreateDate?: string,
-     *     InstanceProfileList?: list<AwsIamInstanceProfile>,
-     *     PermissionsBoundary?: AwsIamPermissionsBoundary,
-     *     RoleId?: string,
-     *     RoleName?: string,
-     *     RolePolicyList?: list<AwsIamRolePolicy>,
-     *     MaxSessionDuration?: int,
-     *     Path?: string
+     *     AssumeRolePolicyDocument?: string|null,
+     *     AttachedManagedPolicies?: list<AwsIamAttachedManagedPolicy>|null,
+     *     CreateDate?: string|null,
+     *     InstanceProfileList?: list<AwsIamInstanceProfile>|null,
+     *     PermissionsBoundary?: AwsIamPermissionsBoundary|null,
+     *     RoleId?: string|null,
+     *     RoleName?: string|null,
+     *     RolePolicyList?: list<AwsIamRolePolicy>|null,
+     *     MaxSessionDuration?: int|null,
+     *     Path?: string|null
      * } $args
      */
     public function __construct(array $args = [])

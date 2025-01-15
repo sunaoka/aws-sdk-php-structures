@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CallerReference
- * @property string $HostedZoneId
+ * @property string|null $HostedZoneId
  */
 class CreateReusableDelegationSetRequest extends Request
 {
     /**
      * @param array{
      *     CallerReference: string,
-     *     HostedZoneId?: string
+     *     HostedZoneId?: string|null
      * } $args
      */
     public function __construct(array $args)

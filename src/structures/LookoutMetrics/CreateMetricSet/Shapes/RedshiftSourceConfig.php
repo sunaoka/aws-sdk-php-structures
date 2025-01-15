@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\CreateMetricSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterIdentifier
- * @property string $DatabaseHost
- * @property int<1, 65535> $DatabasePort
- * @property string $SecretManagerArn
- * @property string $DatabaseName
- * @property string $TableName
- * @property string $RoleArn
- * @property VpcConfiguration $VpcConfiguration
+ * @property string|null $ClusterIdentifier
+ * @property string|null $DatabaseHost
+ * @property int<1, 65535>|null $DatabasePort
+ * @property string|null $SecretManagerArn
+ * @property string|null $DatabaseName
+ * @property string|null $TableName
+ * @property string|null $RoleArn
+ * @property VpcConfiguration|null $VpcConfiguration
  */
 class RedshiftSourceConfig extends Shape
 {
     /**
      * @param array{
-     *     ClusterIdentifier?: string,
-     *     DatabaseHost?: string,
-     *     DatabasePort?: int<1, 65535>,
-     *     SecretManagerArn?: string,
-     *     DatabaseName?: string,
-     *     TableName?: string,
-     *     RoleArn?: string,
-     *     VpcConfiguration?: VpcConfiguration
+     *     ClusterIdentifier?: string|null,
+     *     DatabaseHost?: string|null,
+     *     DatabasePort?: int<1, 65535>|null,
+     *     SecretManagerArn?: string|null,
+     *     DatabaseName?: string|null,
+     *     TableName?: string|null,
+     *     RoleArn?: string|null,
+     *     VpcConfiguration?: VpcConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

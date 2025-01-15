@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeServiceRevisions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $containerName
- * @property string $imageDigest
- * @property string $image
+ * @property string|null $containerName
+ * @property string|null $imageDigest
+ * @property string|null $image
  */
 class ContainerImage extends Shape
 {
     /**
      * @param array{
-     *     containerName?: string,
-     *     imageDigest?: string,
-     *     image?: string
+     *     containerName?: string|null,
+     *     imageDigest?: string|null,
+     *     image?: string|null
      * } $args
      */
     public function __construct(array $args = [])

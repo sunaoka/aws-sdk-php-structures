@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeAutoScalingNotificationType
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $AutoScalingNotificationTypes
+ * @property list<string>|null $AutoScalingNotificationTypes
  */
 class DescribeAutoScalingNotificationTypesResponse extends Response
 {

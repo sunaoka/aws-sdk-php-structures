@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppMesh\CreateRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 65535> $port
+ * @property int<1, 65535>|null $port
  * @property string $virtualNode
  * @property int<0, 100> $weight
  */
@@ -13,7 +13,7 @@ class WeightedTarget extends Shape
 {
     /**
      * @param array{
-     *     port?: int<1, 65535>,
+     *     port?: int<1, 65535>|null,
      *     virtualNode: string,
      *     weight: int<0, 100>
      * } $args

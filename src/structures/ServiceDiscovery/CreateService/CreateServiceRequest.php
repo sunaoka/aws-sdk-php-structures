@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $NamespaceId
- * @property string $CreatorRequestId
- * @property string $Description
- * @property Shapes\DnsConfig $DnsConfig
- * @property Shapes\HealthCheckConfig $HealthCheckConfig
- * @property Shapes\HealthCheckCustomConfig $HealthCheckCustomConfig
- * @property list<Shapes\Tag> $Tags
- * @property 'HTTP' $Type
+ * @property string|null $NamespaceId
+ * @property string|null $CreatorRequestId
+ * @property string|null $Description
+ * @property Shapes\DnsConfig|null $DnsConfig
+ * @property Shapes\HealthCheckConfig|null $HealthCheckConfig
+ * @property Shapes\HealthCheckCustomConfig|null $HealthCheckCustomConfig
+ * @property list<Shapes\Tag>|null $Tags
+ * @property 'HTTP'|null $Type
  */
 class CreateServiceRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     NamespaceId?: string,
-     *     CreatorRequestId?: string,
-     *     Description?: string,
-     *     DnsConfig?: Shapes\DnsConfig,
-     *     HealthCheckConfig?: Shapes\HealthCheckConfig,
-     *     HealthCheckCustomConfig?: Shapes\HealthCheckCustomConfig,
-     *     Tags?: list<Shapes\Tag>,
-     *     Type?: 'HTTP'
+     *     NamespaceId?: string|null,
+     *     CreatorRequestId?: string|null,
+     *     Description?: string|null,
+     *     DnsConfig?: Shapes\DnsConfig|null,
+     *     HealthCheckConfig?: Shapes\HealthCheckConfig|null,
+     *     HealthCheckCustomConfig?: Shapes\HealthCheckCustomConfig|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Type?: 'HTTP'|null
      * } $args
      */
     public function __construct(array $args)

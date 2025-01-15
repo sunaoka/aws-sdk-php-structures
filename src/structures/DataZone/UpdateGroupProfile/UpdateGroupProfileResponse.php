@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateGroupProfile;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $domainId
- * @property string $groupName
- * @property string $id
- * @property 'ASSIGNED'|'NOT_ASSIGNED' $status
+ * @property string|null $domainId
+ * @property string|null $groupName
+ * @property string|null $id
+ * @property 'ASSIGNED'|'NOT_ASSIGNED'|null $status
  */
 class UpdateGroupProfileResponse extends Response
 {

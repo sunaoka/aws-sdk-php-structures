@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TemplateArn
  * @property string $LensAlias
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  */
 class UpgradeReviewTemplateLensReviewRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpgradeReviewTemplateLensReviewRequest extends Request
      * @param array{
      *     TemplateArn: string,
      *     LensAlias: string,
-     *     ClientRequestToken?: string
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

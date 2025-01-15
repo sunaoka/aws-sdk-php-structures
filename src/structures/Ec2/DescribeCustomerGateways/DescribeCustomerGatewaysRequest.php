@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeCustomerGateways;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $CustomerGatewayIds
- * @property list<Shapes\Filter> $Filters
- * @property bool $DryRun
+ * @property list<string>|null $CustomerGatewayIds
+ * @property list<Shapes\Filter>|null $Filters
+ * @property bool|null $DryRun
  */
 class DescribeCustomerGatewaysRequest extends Request
 {
     /**
      * @param array{
-     *     CustomerGatewayIds?: list<string>,
-     *     Filters?: list<Shapes\Filter>,
-     *     DryRun?: bool
+     *     CustomerGatewayIds?: list<string>|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

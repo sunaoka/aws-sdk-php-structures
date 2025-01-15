@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\StartVoiceToneAnalysisTa
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\VoiceToneAnalysisTask $VoiceToneAnalysisTask
+ * @property Shapes\VoiceToneAnalysisTask|null $VoiceToneAnalysisTask
  */
 class StartVoiceToneAnalysisTaskResponse extends Response
 {

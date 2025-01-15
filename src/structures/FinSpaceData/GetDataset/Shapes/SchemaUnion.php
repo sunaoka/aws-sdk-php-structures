@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\GetDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SchemaDefinition $tabularSchemaConfig
+ * @property SchemaDefinition|null $tabularSchemaConfig
  */
 class SchemaUnion extends Shape
 {
     /**
-     * @param array{tabularSchemaConfig?: SchemaDefinition} $args
+     * @param array{tabularSchemaConfig?: SchemaDefinition|null} $args
      */
     public function __construct(array $args = [])
     {

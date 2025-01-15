@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RedshiftProvisionedConfiguration $provisionedConfiguration
- * @property RedshiftServerlessConfiguration $serverlessConfiguration
+ * @property RedshiftProvisionedConfiguration|null $provisionedConfiguration
+ * @property RedshiftServerlessConfiguration|null $serverlessConfiguration
  * @property 'SERVERLESS'|'PROVISIONED' $type
  */
 class RedshiftQueryEngineConfiguration extends Shape
 {
     /**
      * @param array{
-     *     provisionedConfiguration?: RedshiftProvisionedConfiguration,
-     *     serverlessConfiguration?: RedshiftServerlessConfiguration,
+     *     provisionedConfiguration?: RedshiftProvisionedConfiguration|null,
+     *     serverlessConfiguration?: RedshiftServerlessConfiguration|null,
      *     type: 'SERVERLESS'|'PROVISIONED'
      * } $args
      */

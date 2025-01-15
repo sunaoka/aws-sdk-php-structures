@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTheme\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FontFamily
+ * @property string|null $FontFamily
  */
 class Font extends Shape
 {
     /**
-     * @param array{FontFamily?: string} $args
+     * @param array{FontFamily?: string|null} $args
      */
     public function __construct(array $args = [])
     {

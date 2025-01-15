@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $Quantity
- * @property list<LambdaFunctionAssociation> $Items
+ * @property list<LambdaFunctionAssociation>|null $Items
  */
 class LambdaFunctionAssociations extends Shape
 {
     /**
      * @param array{
      *     Quantity: int,
-     *     Items?: list<LambdaFunctionAssociation>
+     *     Items?: list<LambdaFunctionAssociation>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Reason
  * @property string $ShortDescription
- * @property string $LongDescription
- * @property string $DocumentationTitle
- * @property string $DocumentationLink
+ * @property string|null $LongDescription
+ * @property string|null $DocumentationTitle
+ * @property string|null $DocumentationLink
  */
 class RegistrationDeniedReasonInformation extends Shape
 {
@@ -17,9 +17,9 @@ class RegistrationDeniedReasonInformation extends Shape
      * @param array{
      *     Reason: string,
      *     ShortDescription: string,
-     *     LongDescription?: string,
-     *     DocumentationTitle?: string,
-     *     DocumentationLink?: string
+     *     LongDescription?: string|null,
+     *     DocumentationTitle?: string|null,
+     *     DocumentationLink?: string|null
      * } $args
      */
     public function __construct(array $args)

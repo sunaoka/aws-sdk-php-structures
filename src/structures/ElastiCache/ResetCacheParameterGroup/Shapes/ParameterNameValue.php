@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElastiCache\ResetCacheParameterGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterName
- * @property string $ParameterValue
+ * @property string|null $ParameterName
+ * @property string|null $ParameterValue
  */
 class ParameterNameValue extends Shape
 {
     /**
      * @param array{
-     *     ParameterName?: string,
-     *     ParameterValue?: string
+     *     ParameterName?: string|null,
+     *     ParameterValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

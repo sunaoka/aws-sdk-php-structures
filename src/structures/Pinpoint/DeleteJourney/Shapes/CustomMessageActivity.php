@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Pinpoint\DeleteJourney\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeliveryUri
- * @property list<'PUSH'|'GCM'|'APNS'|'APNS_SANDBOX'|'APNS_VOIP'|'APNS_VOIP_SANDBOX'|'ADM'|'SMS'|'VOICE'|'EMAIL'|'BAIDU'|'CUSTOM'|'IN_APP'> $EndpointTypes
- * @property JourneyCustomMessage $MessageConfig
- * @property string $NextActivity
- * @property string $TemplateName
- * @property string $TemplateVersion
+ * @property string|null $DeliveryUri
+ * @property list<'PUSH'|'GCM'|'APNS'|'APNS_SANDBOX'|'APNS_VOIP'|'APNS_VOIP_SANDBOX'|'ADM'|'SMS'|'VOICE'|'EMAIL'|'BAIDU'|'CUSTOM'|'IN_APP'>|null $EndpointTypes
+ * @property JourneyCustomMessage|null $MessageConfig
+ * @property string|null $NextActivity
+ * @property string|null $TemplateName
+ * @property string|null $TemplateVersion
  */
 class CustomMessageActivity extends Shape
 {
     /**
      * @param array{
-     *     DeliveryUri?: string,
-     *     EndpointTypes?: list<'PUSH'|'GCM'|'APNS'|'APNS_SANDBOX'|'APNS_VOIP'|'APNS_VOIP_SANDBOX'|'ADM'|'SMS'|'VOICE'|'EMAIL'|'BAIDU'|'CUSTOM'|'IN_APP'>,
-     *     MessageConfig?: JourneyCustomMessage,
-     *     NextActivity?: string,
-     *     TemplateName?: string,
-     *     TemplateVersion?: string
+     *     DeliveryUri?: string|null,
+     *     EndpointTypes?: list<'PUSH'|'GCM'|'APNS'|'APNS_SANDBOX'|'APNS_VOIP'|'APNS_VOIP_SANDBOX'|'ADM'|'SMS'|'VOICE'|'EMAIL'|'BAIDU'|'CUSTOM'|'IN_APP'>|null,
+     *     MessageConfig?: JourneyCustomMessage|null,
+     *     NextActivity?: string|null,
+     *     TemplateName?: string|null,
+     *     TemplateVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

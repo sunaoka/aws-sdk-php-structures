@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\GetEarthObservationJob\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Message
- * @property 'CLIENT_ERROR'|'SERVER_ERROR' $Type
+ * @property string|null $Message
+ * @property 'CLIENT_ERROR'|'SERVER_ERROR'|null $Type
  */
 class EarthObservationJobErrorDetails extends Shape
 {
     /**
      * @param array{
-     *     Message?: string,
-     *     Type?: 'CLIENT_ERROR'|'SERVER_ERROR'
+     *     Message?: string|null,
+     *     Type?: 'CLIENT_ERROR'|'SERVER_ERROR'|null
      * } $args
      */
     public function __construct(array $args = [])

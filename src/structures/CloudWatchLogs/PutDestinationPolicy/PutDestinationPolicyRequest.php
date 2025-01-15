@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $destinationName
  * @property string $accessPolicy
- * @property bool $forceUpdate
+ * @property bool|null $forceUpdate
  */
 class PutDestinationPolicyRequest extends Request
 {
@@ -15,7 +15,7 @@ class PutDestinationPolicyRequest extends Request
      * @param array{
      *     destinationName: string,
      *     accessPolicy: string,
-     *     forceUpdate?: bool
+     *     forceUpdate?: bool|null
      * } $args
      */
     public function __construct(array $args)

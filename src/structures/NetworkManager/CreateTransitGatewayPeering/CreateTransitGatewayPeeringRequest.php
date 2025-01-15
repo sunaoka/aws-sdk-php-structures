@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CoreNetworkId
  * @property string $TransitGatewayArn
- * @property list<Shapes\Tag> $Tags
- * @property string $ClientToken
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $ClientToken
  */
 class CreateTransitGatewayPeeringRequest extends Request
 {
@@ -16,8 +16,8 @@ class CreateTransitGatewayPeeringRequest extends Request
      * @param array{
      *     CoreNetworkId: string,
      *     TransitGatewayArn: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     ClientToken?: string
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

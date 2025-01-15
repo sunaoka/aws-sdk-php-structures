@@ -12,11 +12,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Description
  * @property string $Cause
  * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
  * @property 'Pending'|'InProgress'|'Successful'|'Overridden'|'Unfulfilled'|'Failed' $StatusCode
- * @property string $StatusMessage
- * @property string $Details
- * @property list<NotScaledReason> $NotScaledReasons
+ * @property string|null $StatusMessage
+ * @property string|null $Details
+ * @property list<NotScaledReason>|null $NotScaledReasons
  */
 class ScalingActivity extends Shape
 {
@@ -29,11 +29,11 @@ class ScalingActivity extends Shape
      *     Description: string,
      *     Cause: string,
      *     StartTime: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
      *     StatusCode: 'Pending'|'InProgress'|'Successful'|'Overridden'|'Unfulfilled'|'Failed',
-     *     StatusMessage?: string,
-     *     Details?: string,
-     *     NotScaledReasons?: list<NotScaledReason>
+     *     StatusMessage?: string|null,
+     *     Details?: string|null,
+     *     NotScaledReasons?: list<NotScaledReason>|null
      * } $args
      */
     public function __construct(array $args)

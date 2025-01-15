@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GenerateClientCertificate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
- * @property array<string, string> $tags
+ * @property string|null $description
+ * @property array<string, string>|null $tags
  */
 class GenerateClientCertificateRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
-     *     tags?: array<string, string>
+     *     description?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

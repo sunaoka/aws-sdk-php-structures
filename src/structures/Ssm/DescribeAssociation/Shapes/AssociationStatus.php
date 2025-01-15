@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $Date
  * @property 'Pending'|'Success'|'Failed' $Name
  * @property string $Message
- * @property string $AdditionalInfo
+ * @property string|null $AdditionalInfo
  */
 class AssociationStatus extends Shape
 {
@@ -17,7 +17,7 @@ class AssociationStatus extends Shape
      *     Date: \Aws\Api\DateTimeResult,
      *     Name: 'Pending'|'Success'|'Failed',
      *     Message: string,
-     *     AdditionalInfo?: string
+     *     AdditionalInfo?: string|null
      * } $args
      */
     public function __construct(array $args)

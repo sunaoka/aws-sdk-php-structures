@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetColumnStatisticsForTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ColumnName
- * @property ErrorDetail $Error
+ * @property string|null $ColumnName
+ * @property ErrorDetail|null $Error
  */
 class ColumnError extends Shape
 {
     /**
      * @param array{
-     *     ColumnName?: string,
-     *     Error?: ErrorDetail
+     *     ColumnName?: string|null,
+     *     Error?: ErrorDetail|null
      * } $args
      */
     public function __construct(array $args = [])

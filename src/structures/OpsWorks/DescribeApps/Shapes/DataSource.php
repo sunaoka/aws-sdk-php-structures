@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeApps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Type
- * @property string $Arn
- * @property string $DatabaseName
+ * @property string|null $Type
+ * @property string|null $Arn
+ * @property string|null $DatabaseName
  */
 class DataSource extends Shape
 {
     /**
      * @param array{
-     *     Type?: string,
-     *     Arn?: string,
-     *     DatabaseName?: string
+     *     Type?: string|null,
+     *     Arn?: string|null,
+     *     DatabaseName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

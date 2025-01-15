@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\GetLogEvents;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\OutputLogEvent> $events
- * @property string $nextForwardToken
- * @property string $nextBackwardToken
+ * @property list<Shapes\OutputLogEvent>|null $events
+ * @property string|null $nextForwardToken
+ * @property string|null $nextBackwardToken
  */
 class GetLogEventsResponse extends Response
 {

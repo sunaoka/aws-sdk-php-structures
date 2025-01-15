@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DocumentName
- * @property string $DocumentVersion
+ * @property string|null $DocumentVersion
  */
 class TemplateSSMDocumentDetails extends Shape
 {
     /**
      * @param array{
      *     DocumentName: string,
-     *     DocumentVersion?: string
+     *     DocumentVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

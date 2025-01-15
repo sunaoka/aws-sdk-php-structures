@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\CreateCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TimeBasedSignalFetchConfig $timeBased
- * @property ConditionBasedSignalFetchConfig $conditionBased
+ * @property TimeBasedSignalFetchConfig|null $timeBased
+ * @property ConditionBasedSignalFetchConfig|null $conditionBased
  */
 class SignalFetchConfig extends Shape
 {
     /**
      * @param array{
-     *     timeBased?: TimeBasedSignalFetchConfig,
-     *     conditionBased?: ConditionBasedSignalFetchConfig
+     *     timeBased?: TimeBasedSignalFetchConfig|null,
+     *     conditionBased?: ConditionBasedSignalFetchConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\AssociateSubnets;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FirewallArn
- * @property string $FirewallName
- * @property list<Shapes\SubnetMapping> $SubnetMappings
- * @property string $UpdateToken
+ * @property string|null $FirewallArn
+ * @property string|null $FirewallName
+ * @property list<Shapes\SubnetMapping>|null $SubnetMappings
+ * @property string|null $UpdateToken
  */
 class AssociateSubnetsResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\ConverseStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AutoToolChoice $auto
- * @property AnyToolChoice $any
- * @property SpecificToolChoice $tool
+ * @property AutoToolChoice|null $auto
+ * @property AnyToolChoice|null $any
+ * @property SpecificToolChoice|null $tool
  */
 class ToolChoice extends Shape
 {
     /**
      * @param array{
-     *     auto?: AutoToolChoice,
-     *     any?: AnyToolChoice,
-     *     tool?: SpecificToolChoice
+     *     auto?: AutoToolChoice|null,
+     *     any?: AnyToolChoice|null,
+     *     tool?: SpecificToolChoice|null
      * } $args
      */
     public function __construct(array $args = [])

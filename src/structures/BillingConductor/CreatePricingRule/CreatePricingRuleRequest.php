@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\BillingConductor\CreatePricingRule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property 'GLOBAL'|'SERVICE'|'BILLING_ENTITY'|'SKU' $Scope
  * @property 'MARKUP'|'DISCOUNT'|'TIERING' $Type
- * @property double $ModifierPercentage
- * @property string $Service
- * @property array<string, string> $Tags
- * @property string $BillingEntity
- * @property Shapes\CreateTieringInput $Tiering
- * @property string $UsageType
- * @property string $Operation
+ * @property double|null $ModifierPercentage
+ * @property string|null $Service
+ * @property array<string, string>|null $Tags
+ * @property string|null $BillingEntity
+ * @property Shapes\CreateTieringInput|null $Tiering
+ * @property string|null $UsageType
+ * @property string|null $Operation
  */
 class CreatePricingRuleRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Scope: 'GLOBAL'|'SERVICE'|'BILLING_ENTITY'|'SKU',
      *     Type: 'MARKUP'|'DISCOUNT'|'TIERING',
-     *     ModifierPercentage?: double,
-     *     Service?: string,
-     *     Tags?: array<string, string>,
-     *     BillingEntity?: string,
-     *     Tiering?: Shapes\CreateTieringInput,
-     *     UsageType?: string,
-     *     Operation?: string
+     *     ModifierPercentage?: double|null,
+     *     Service?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     BillingEntity?: string|null,
+     *     Tiering?: Shapes\CreateTieringInput|null,
+     *     UsageType?: string|null,
+     *     Operation?: string|null
      * } $args
      */
     public function __construct(array $args)

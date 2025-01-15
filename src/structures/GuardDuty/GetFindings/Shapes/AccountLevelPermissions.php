@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BlockPublicAccess $BlockPublicAccess
+ * @property BlockPublicAccess|null $BlockPublicAccess
  */
 class AccountLevelPermissions extends Shape
 {
     /**
-     * @param array{BlockPublicAccess?: BlockPublicAccess} $args
+     * @param array{BlockPublicAccess?: BlockPublicAccess|null} $args
      */
     public function __construct(array $args = [])
     {

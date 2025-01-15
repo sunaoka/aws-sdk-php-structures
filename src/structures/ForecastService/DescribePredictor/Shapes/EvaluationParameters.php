@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ForecastService\DescribePredictor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NumberOfBacktestWindows
- * @property int $BackTestWindowOffset
+ * @property int|null $NumberOfBacktestWindows
+ * @property int|null $BackTestWindowOffset
  */
 class EvaluationParameters extends Shape
 {
     /**
      * @param array{
-     *     NumberOfBacktestWindows?: int,
-     *     BackTestWindowOffset?: int
+     *     NumberOfBacktestWindows?: int|null,
+     *     BackTestWindowOffset?: int|null
      * } $args
      */
     public function __construct(array $args = [])

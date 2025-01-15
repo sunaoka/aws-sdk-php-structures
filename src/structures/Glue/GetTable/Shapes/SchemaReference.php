@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\GetTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SchemaId $SchemaId
- * @property string $SchemaVersionId
- * @property int<1, 100000> $SchemaVersionNumber
+ * @property SchemaId|null $SchemaId
+ * @property string|null $SchemaVersionId
+ * @property int<1, 100000>|null $SchemaVersionNumber
  */
 class SchemaReference extends Shape
 {
     /**
      * @param array{
-     *     SchemaId?: SchemaId,
-     *     SchemaVersionId?: string,
-     *     SchemaVersionNumber?: int<1, 100000>
+     *     SchemaId?: SchemaId|null,
+     *     SchemaVersionId?: string|null,
+     *     SchemaVersionNumber?: int<1, 100000>|null
      * } $args
      */
     public function __construct(array $args = [])

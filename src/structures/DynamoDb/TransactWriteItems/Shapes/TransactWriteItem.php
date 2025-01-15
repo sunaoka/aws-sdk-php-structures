@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DynamoDb\TransactWriteItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConditionCheck $ConditionCheck
- * @property Put $Put
- * @property Delete $Delete
- * @property Update $Update
+ * @property ConditionCheck|null $ConditionCheck
+ * @property Put|null $Put
+ * @property Delete|null $Delete
+ * @property Update|null $Update
  */
 class TransactWriteItem extends Shape
 {
     /**
      * @param array{
-     *     ConditionCheck?: ConditionCheck,
-     *     Put?: Put,
-     *     Delete?: Delete,
-     *     Update?: Update
+     *     ConditionCheck?: ConditionCheck|null,
+     *     Put?: Put|null,
+     *     Delete?: Delete|null,
+     *     Update?: Update|null
      * } $args
      */
     public function __construct(array $args = [])

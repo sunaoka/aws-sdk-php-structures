@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SecretsManager\ValidateResourcePolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SecretId
+ * @property string|null $SecretId
  * @property string $ResourcePolicy
  */
 class ValidateResourcePolicyRequest extends Request
 {
     /**
      * @param array{
-     *     SecretId?: string,
+     *     SecretId?: string|null,
      *     ResourcePolicy: string
      * } $args
      */

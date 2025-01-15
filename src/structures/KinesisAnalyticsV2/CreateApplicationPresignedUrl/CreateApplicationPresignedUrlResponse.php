@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\CreateApplicationPresignedUr
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AuthorizedUrl
+ * @property string|null $AuthorizedUrl
  */
 class CreateApplicationPresignedUrlResponse extends Response
 {

@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $stepName
  * @property string $testRunId
- * @property string $testCaseId
- * @property int $testCaseVersion
- * @property string $testSuiteId
- * @property int $testSuiteVersion
- * @property bool $beforeStep
- * @property bool $afterStep
+ * @property string|null $testCaseId
+ * @property int|null $testCaseVersion
+ * @property string|null $testSuiteId
+ * @property int|null $testSuiteVersion
+ * @property bool|null $beforeStep
+ * @property bool|null $afterStep
  * @property 'Success'|'Failed'|'Running' $status
- * @property string $statusReason
+ * @property string|null $statusReason
  * @property \Aws\Api\DateTimeResult $runStartTime
- * @property \Aws\Api\DateTimeResult $runEndTime
+ * @property \Aws\Api\DateTimeResult|null $runEndTime
  */
 class TestRunStepSummary extends Shape
 {
@@ -24,16 +24,16 @@ class TestRunStepSummary extends Shape
      * @param array{
      *     stepName: string,
      *     testRunId: string,
-     *     testCaseId?: string,
-     *     testCaseVersion?: int,
-     *     testSuiteId?: string,
-     *     testSuiteVersion?: int,
-     *     beforeStep?: bool,
-     *     afterStep?: bool,
+     *     testCaseId?: string|null,
+     *     testCaseVersion?: int|null,
+     *     testSuiteId?: string|null,
+     *     testSuiteVersion?: int|null,
+     *     beforeStep?: bool|null,
+     *     afterStep?: bool|null,
      *     status: 'Success'|'Failed'|'Running',
-     *     statusReason?: string,
+     *     statusReason?: string|null,
      *     runStartTime: \Aws\Api\DateTimeResult,
-     *     runEndTime?: \Aws\Api\DateTimeResult
+     *     runEndTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

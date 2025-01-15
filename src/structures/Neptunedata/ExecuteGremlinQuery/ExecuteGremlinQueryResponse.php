@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Neptunedata\ExecuteGremlinQuery;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $requestId
- * @property Shapes\GremlinQueryStatusAttributes $status
- * @property Shapes\Document $result
- * @property Shapes\Document $meta
+ * @property string|null $requestId
+ * @property Shapes\GremlinQueryStatusAttributes|null $status
+ * @property Shapes\Document|null $result
+ * @property Shapes\Document|null $meta
  */
 class ExecuteGremlinQueryResponse extends Response
 {

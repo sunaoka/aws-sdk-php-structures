@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SupportingAccessPoint
- * @property bool $CloudWatchMetricsEnabled
- * @property list<'GetObject-Range'|'GetObject-PartNumber'|'HeadObject-Range'|'HeadObject-PartNumber'> $AllowedFeatures
+ * @property bool|null $CloudWatchMetricsEnabled
+ * @property list<'GetObject-Range'|'GetObject-PartNumber'|'HeadObject-Range'|'HeadObject-PartNumber'>|null $AllowedFeatures
  * @property list<ObjectLambdaTransformationConfiguration> $TransformationConfigurations
  */
 class ObjectLambdaConfiguration extends Shape
@@ -15,8 +15,8 @@ class ObjectLambdaConfiguration extends Shape
     /**
      * @param array{
      *     SupportingAccessPoint: string,
-     *     CloudWatchMetricsEnabled?: bool,
-     *     AllowedFeatures?: list<'GetObject-Range'|'GetObject-PartNumber'|'HeadObject-Range'|'HeadObject-PartNumber'>,
+     *     CloudWatchMetricsEnabled?: bool|null,
+     *     AllowedFeatures?: list<'GetObject-Range'|'GetObject-PartNumber'|'HeadObject-Range'|'HeadObject-PartNumber'>|null,
      *     TransformationConfigurations: list<ObjectLambdaTransformationConfiguration>
      * } $args
      */

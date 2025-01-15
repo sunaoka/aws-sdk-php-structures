@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $VpnConnectionId
- * @property string $LocalIpv4NetworkCidr
- * @property string $RemoteIpv4NetworkCidr
- * @property string $LocalIpv6NetworkCidr
- * @property string $RemoteIpv6NetworkCidr
- * @property bool $DryRun
+ * @property string|null $LocalIpv4NetworkCidr
+ * @property string|null $RemoteIpv4NetworkCidr
+ * @property string|null $LocalIpv6NetworkCidr
+ * @property string|null $RemoteIpv6NetworkCidr
+ * @property bool|null $DryRun
  */
 class ModifyVpnConnectionOptionsRequest extends Request
 {
     /**
      * @param array{
      *     VpnConnectionId: string,
-     *     LocalIpv4NetworkCidr?: string,
-     *     RemoteIpv4NetworkCidr?: string,
-     *     LocalIpv6NetworkCidr?: string,
-     *     RemoteIpv6NetworkCidr?: string,
-     *     DryRun?: bool
+     *     LocalIpv4NetworkCidr?: string|null,
+     *     RemoteIpv4NetworkCidr?: string|null,
+     *     LocalIpv6NetworkCidr?: string|null,
+     *     RemoteIpv6NetworkCidr?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

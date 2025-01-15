@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\RestoreFromClusterSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NodeRole
- * @property string $PrivateIPAddress
- * @property string $PublicIPAddress
+ * @property string|null $NodeRole
+ * @property string|null $PrivateIPAddress
+ * @property string|null $PublicIPAddress
  */
 class ClusterNode extends Shape
 {
     /**
      * @param array{
-     *     NodeRole?: string,
-     *     PrivateIPAddress?: string,
-     *     PublicIPAddress?: string
+     *     NodeRole?: string|null,
+     *     PrivateIPAddress?: string|null,
+     *     PublicIPAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

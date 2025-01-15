@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEC2InstanceRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'AWS_ARM64'|'CURRENT'> $cpuVendorArchitectures
- * @property 'Active'|'Inactive' $enhancedInfrastructureMetrics
- * @property 'Active'|'Inactive' $inferredWorkloadTypes
- * @property ExternalMetricsPreference $externalMetricsPreference
- * @property 'DAYS_14'|'DAYS_32'|'DAYS_93' $lookBackPeriod
- * @property list<UtilizationPreference> $utilizationPreferences
- * @property list<EffectivePreferredResource> $preferredResources
- * @property InstanceSavingsEstimationMode $savingsEstimationMode
+ * @property list<'AWS_ARM64'|'CURRENT'>|null $cpuVendorArchitectures
+ * @property 'Active'|'Inactive'|null $enhancedInfrastructureMetrics
+ * @property 'Active'|'Inactive'|null $inferredWorkloadTypes
+ * @property ExternalMetricsPreference|null $externalMetricsPreference
+ * @property 'DAYS_14'|'DAYS_32'|'DAYS_93'|null $lookBackPeriod
+ * @property list<UtilizationPreference>|null $utilizationPreferences
+ * @property list<EffectivePreferredResource>|null $preferredResources
+ * @property InstanceSavingsEstimationMode|null $savingsEstimationMode
  */
 class EffectiveRecommendationPreferences extends Shape
 {
     /**
      * @param array{
-     *     cpuVendorArchitectures?: list<'AWS_ARM64'|'CURRENT'>,
-     *     enhancedInfrastructureMetrics?: 'Active'|'Inactive',
-     *     inferredWorkloadTypes?: 'Active'|'Inactive',
-     *     externalMetricsPreference?: ExternalMetricsPreference,
-     *     lookBackPeriod?: 'DAYS_14'|'DAYS_32'|'DAYS_93',
-     *     utilizationPreferences?: list<UtilizationPreference>,
-     *     preferredResources?: list<EffectivePreferredResource>,
-     *     savingsEstimationMode?: InstanceSavingsEstimationMode
+     *     cpuVendorArchitectures?: list<'AWS_ARM64'|'CURRENT'>|null,
+     *     enhancedInfrastructureMetrics?: 'Active'|'Inactive'|null,
+     *     inferredWorkloadTypes?: 'Active'|'Inactive'|null,
+     *     externalMetricsPreference?: ExternalMetricsPreference|null,
+     *     lookBackPeriod?: 'DAYS_14'|'DAYS_32'|'DAYS_93'|null,
+     *     utilizationPreferences?: list<UtilizationPreference>|null,
+     *     preferredResources?: list<EffectivePreferredResource>|null,
+     *     savingsEstimationMode?: InstanceSavingsEstimationMode|null
      * } $args
      */
     public function __construct(array $args = [])

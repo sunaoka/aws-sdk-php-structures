@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeCapacityBlockExtensionOfferings\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CapacityBlockExtensionOfferingId
- * @property string $InstanceType
- * @property int $InstanceCount
- * @property string $AvailabilityZone
- * @property string $AvailabilityZoneId
- * @property \Aws\Api\DateTimeResult $StartDate
- * @property \Aws\Api\DateTimeResult $CapacityBlockExtensionStartDate
- * @property \Aws\Api\DateTimeResult $CapacityBlockExtensionEndDate
- * @property int $CapacityBlockExtensionDurationHours
- * @property string $UpfrontFee
- * @property string $CurrencyCode
- * @property 'default'|'dedicated' $Tenancy
+ * @property string|null $CapacityBlockExtensionOfferingId
+ * @property string|null $InstanceType
+ * @property int|null $InstanceCount
+ * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
+ * @property \Aws\Api\DateTimeResult|null $StartDate
+ * @property \Aws\Api\DateTimeResult|null $CapacityBlockExtensionStartDate
+ * @property \Aws\Api\DateTimeResult|null $CapacityBlockExtensionEndDate
+ * @property int|null $CapacityBlockExtensionDurationHours
+ * @property string|null $UpfrontFee
+ * @property string|null $CurrencyCode
+ * @property 'default'|'dedicated'|null $Tenancy
  */
 class CapacityBlockExtensionOffering extends Shape
 {
     /**
      * @param array{
-     *     CapacityBlockExtensionOfferingId?: string,
-     *     InstanceType?: string,
-     *     InstanceCount?: int,
-     *     AvailabilityZone?: string,
-     *     AvailabilityZoneId?: string,
-     *     StartDate?: \Aws\Api\DateTimeResult,
-     *     CapacityBlockExtensionStartDate?: \Aws\Api\DateTimeResult,
-     *     CapacityBlockExtensionEndDate?: \Aws\Api\DateTimeResult,
-     *     CapacityBlockExtensionDurationHours?: int,
-     *     UpfrontFee?: string,
-     *     CurrencyCode?: string,
-     *     Tenancy?: 'default'|'dedicated'
+     *     CapacityBlockExtensionOfferingId?: string|null,
+     *     InstanceType?: string|null,
+     *     InstanceCount?: int|null,
+     *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
+     *     StartDate?: \Aws\Api\DateTimeResult|null,
+     *     CapacityBlockExtensionStartDate?: \Aws\Api\DateTimeResult|null,
+     *     CapacityBlockExtensionEndDate?: \Aws\Api\DateTimeResult|null,
+     *     CapacityBlockExtensionDurationHours?: int|null,
+     *     UpfrontFee?: string|null,
+     *     CurrencyCode?: string|null,
+     *     Tenancy?: 'default'|'dedicated'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TrustStoreArn
- * @property list<int> $RevocationIds
- * @property string $Marker
- * @property int<1, 400> $PageSize
+ * @property list<int>|null $RevocationIds
+ * @property string|null $Marker
+ * @property int<1, 400>|null $PageSize
  */
 class DescribeTrustStoreRevocationsRequest extends Request
 {
     /**
      * @param array{
      *     TrustStoreArn: string,
-     *     RevocationIds?: list<int>,
-     *     Marker?: string,
-     *     PageSize?: int<1, 400>
+     *     RevocationIds?: list<int>|null,
+     *     Marker?: string|null,
+     *     PageSize?: int<1, 400>|null
      * } $args
      */
     public function __construct(array $args)

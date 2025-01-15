@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\MemoryDB\PurchaseReservedNodesOffering\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReservationId
- * @property string $ReservedNodesOfferingId
- * @property string $NodeType
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property int $Duration
- * @property double $FixedPrice
- * @property int $NodeCount
- * @property string $OfferingType
- * @property string $State
- * @property list<RecurringCharge> $RecurringCharges
- * @property string $ARN
+ * @property string|null $ReservationId
+ * @property string|null $ReservedNodesOfferingId
+ * @property string|null $NodeType
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property int|null $Duration
+ * @property double|null $FixedPrice
+ * @property int|null $NodeCount
+ * @property string|null $OfferingType
+ * @property string|null $State
+ * @property list<RecurringCharge>|null $RecurringCharges
+ * @property string|null $ARN
  */
 class ReservedNode extends Shape
 {
     /**
      * @param array{
-     *     ReservationId?: string,
-     *     ReservedNodesOfferingId?: string,
-     *     NodeType?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     Duration?: int,
-     *     FixedPrice?: double,
-     *     NodeCount?: int,
-     *     OfferingType?: string,
-     *     State?: string,
-     *     RecurringCharges?: list<RecurringCharge>,
-     *     ARN?: string
+     *     ReservationId?: string|null,
+     *     ReservedNodesOfferingId?: string|null,
+     *     NodeType?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     Duration?: int|null,
+     *     FixedPrice?: double|null,
+     *     NodeCount?: int|null,
+     *     OfferingType?: string|null,
+     *     State?: string|null,
+     *     RecurringCharges?: list<RecurringCharge>|null,
+     *     ARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationIdentifier
- * @property string $ClientToken
- * @property string $Description
+ * @property string|null $ClientToken
+ * @property string|null $Description
  * @property 'LAMBDA'|'URL' $EndpointType
  * @property string $EnvironmentIdentifier
- * @property Shapes\LambdaEndpointInput $LambdaEndpoint
+ * @property Shapes\LambdaEndpointInput|null $LambdaEndpoint
  * @property string $Name
- * @property array<string, string> $Tags
- * @property Shapes\UrlEndpointInput $UrlEndpoint
- * @property string $VpcId
+ * @property array<string, string>|null $Tags
+ * @property Shapes\UrlEndpointInput|null $UrlEndpoint
+ * @property string|null $VpcId
  */
 class CreateServiceRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationIdentifier: string,
-     *     ClientToken?: string,
-     *     Description?: string,
+     *     ClientToken?: string|null,
+     *     Description?: string|null,
      *     EndpointType: 'LAMBDA'|'URL',
      *     EnvironmentIdentifier: string,
-     *     LambdaEndpoint?: Shapes\LambdaEndpointInput,
+     *     LambdaEndpoint?: Shapes\LambdaEndpointInput|null,
      *     Name: string,
-     *     Tags?: array<string, string>,
-     *     UrlEndpoint?: Shapes\UrlEndpointInput,
-     *     VpcId?: string
+     *     Tags?: array<string, string>|null,
+     *     UrlEndpoint?: Shapes\UrlEndpointInput|null,
+     *     VpcId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $relationalDatabaseName
- * @property string $masterUserPassword
- * @property bool $rotateMasterUserPassword
- * @property string $preferredBackupWindow
- * @property string $preferredMaintenanceWindow
- * @property bool $enableBackupRetention
- * @property bool $disableBackupRetention
- * @property bool $publiclyAccessible
- * @property bool $applyImmediately
- * @property string $caCertificateIdentifier
- * @property string $relationalDatabaseBlueprintId
+ * @property string|null $masterUserPassword
+ * @property bool|null $rotateMasterUserPassword
+ * @property string|null $preferredBackupWindow
+ * @property string|null $preferredMaintenanceWindow
+ * @property bool|null $enableBackupRetention
+ * @property bool|null $disableBackupRetention
+ * @property bool|null $publiclyAccessible
+ * @property bool|null $applyImmediately
+ * @property string|null $caCertificateIdentifier
+ * @property string|null $relationalDatabaseBlueprintId
  */
 class UpdateRelationalDatabaseRequest extends Request
 {
     /**
      * @param array{
      *     relationalDatabaseName: string,
-     *     masterUserPassword?: string,
-     *     rotateMasterUserPassword?: bool,
-     *     preferredBackupWindow?: string,
-     *     preferredMaintenanceWindow?: string,
-     *     enableBackupRetention?: bool,
-     *     disableBackupRetention?: bool,
-     *     publiclyAccessible?: bool,
-     *     applyImmediately?: bool,
-     *     caCertificateIdentifier?: string,
-     *     relationalDatabaseBlueprintId?: string
+     *     masterUserPassword?: string|null,
+     *     rotateMasterUserPassword?: bool|null,
+     *     preferredBackupWindow?: string|null,
+     *     preferredMaintenanceWindow?: string|null,
+     *     enableBackupRetention?: bool|null,
+     *     disableBackupRetention?: bool|null,
+     *     publiclyAccessible?: bool|null,
+     *     applyImmediately?: bool|null,
+     *     caCertificateIdentifier?: string|null,
+     *     relationalDatabaseBlueprintId?: string|null
      * } $args
      */
     public function __construct(array $args)

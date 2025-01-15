@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NetworkId
- * @property string $MemberId
+ * @property string|null $MemberId
  * @property string $NodeId
  */
 class DeleteNodeRequest extends Request
@@ -14,7 +14,7 @@ class DeleteNodeRequest extends Request
     /**
      * @param array{
      *     NetworkId: string,
-     *     MemberId?: string,
+     *     MemberId?: string|null,
      *     NodeId: string
      * } $args
      */

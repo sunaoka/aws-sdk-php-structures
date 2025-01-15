@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $componentName
- * @property string $deploymentId
- * @property string $nextToken
+ * @property string|null $deploymentId
+ * @property string|null $nextToken
  */
 class ListComponentOutputsRequest extends Request
 {
     /**
      * @param array{
      *     componentName: string,
-     *     deploymentId?: string,
-     *     nextToken?: string
+     *     deploymentId?: string|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

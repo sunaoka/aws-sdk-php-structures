@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\QConnect\ListMessageTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, max> $activeVersionNumber
+ * @property int<1, max>|null $activeVersionNumber
  * @property 'EMAIL'|'SMS' $channelSubtype
  * @property \Aws\Api\DateTimeResult $createdTime
- * @property string $description
+ * @property string|null $description
  * @property string $knowledgeBaseArn
  * @property string $knowledgeBaseId
  * @property string $lastModifiedBy
@@ -16,16 +16,16 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $messageTemplateArn
  * @property string $messageTemplateId
  * @property string $name
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class MessageTemplateSummary extends Shape
 {
     /**
      * @param array{
-     *     activeVersionNumber?: int<1, max>,
+     *     activeVersionNumber?: int<1, max>|null,
      *     channelSubtype: 'EMAIL'|'SMS',
      *     createdTime: \Aws\Api\DateTimeResult,
-     *     description?: string,
+     *     description?: string|null,
      *     knowledgeBaseArn: string,
      *     knowledgeBaseId: string,
      *     lastModifiedBy: string,
@@ -33,7 +33,7 @@ class MessageTemplateSummary extends Shape
      *     messageTemplateArn: string,
      *     messageTemplateId: string,
      *     name: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

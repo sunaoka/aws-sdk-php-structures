@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\ListCrossAccountResourceAccou
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $ResourceOwnerAwsAccountIds
+ * @property list<string>|null $ResourceOwnerAwsAccountIds
  */
 class ListCrossAccountResourceAccountsResponse extends Response
 {

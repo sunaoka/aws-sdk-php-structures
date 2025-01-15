@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Neptunedata\GetEngineStatus;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $status
- * @property string $startTime
- * @property string $dbEngineVersion
- * @property string $role
- * @property string $dfeQueryEngine
- * @property Shapes\QueryLanguageVersion $gremlin
- * @property Shapes\QueryLanguageVersion $sparql
- * @property Shapes\QueryLanguageVersion $opencypher
- * @property array<string, string> $labMode
- * @property int $rollingBackTrxCount
- * @property string $rollingBackTrxEarliestStartTime
- * @property array<string, Shapes\Document> $features
- * @property array<string, string> $settings
+ * @property string|null $status
+ * @property string|null $startTime
+ * @property string|null $dbEngineVersion
+ * @property string|null $role
+ * @property string|null $dfeQueryEngine
+ * @property Shapes\QueryLanguageVersion|null $gremlin
+ * @property Shapes\QueryLanguageVersion|null $sparql
+ * @property Shapes\QueryLanguageVersion|null $opencypher
+ * @property array<string, string>|null $labMode
+ * @property int|null $rollingBackTrxCount
+ * @property string|null $rollingBackTrxEarliestStartTime
+ * @property array<string, Shapes\Document>|null $features
+ * @property array<string, string>|null $settings
  */
 class GetEngineStatusResponse extends Response
 {

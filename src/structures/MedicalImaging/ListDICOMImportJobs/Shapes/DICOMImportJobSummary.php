@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $jobName
  * @property 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'FAILED' $jobStatus
  * @property string $datastoreId
- * @property string $dataAccessRoleArn
- * @property \Aws\Api\DateTimeResult $endedAt
- * @property \Aws\Api\DateTimeResult $submittedAt
- * @property string $message
+ * @property string|null $dataAccessRoleArn
+ * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property \Aws\Api\DateTimeResult|null $submittedAt
+ * @property string|null $message
  */
 class DICOMImportJobSummary extends Shape
 {
@@ -22,10 +22,10 @@ class DICOMImportJobSummary extends Shape
      *     jobName: string,
      *     jobStatus: 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'FAILED',
      *     datastoreId: string,
-     *     dataAccessRoleArn?: string,
-     *     endedAt?: \Aws\Api\DateTimeResult,
-     *     submittedAt?: \Aws\Api\DateTimeResult,
-     *     message?: string
+     *     dataAccessRoleArn?: string|null,
+     *     endedAt?: \Aws\Api\DateTimeResult|null,
+     *     submittedAt?: \Aws\Api\DateTimeResult|null,
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args)

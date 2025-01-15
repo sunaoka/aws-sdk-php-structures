@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FixedModeScheduleActionStartSettings $FixedModeScheduleActionStartSettings
- * @property FollowModeScheduleActionStartSettings $FollowModeScheduleActionStartSettings
- * @property ImmediateModeScheduleActionStartSettings $ImmediateModeScheduleActionStartSettings
+ * @property FixedModeScheduleActionStartSettings|null $FixedModeScheduleActionStartSettings
+ * @property FollowModeScheduleActionStartSettings|null $FollowModeScheduleActionStartSettings
+ * @property ImmediateModeScheduleActionStartSettings|null $ImmediateModeScheduleActionStartSettings
  */
 class ScheduleActionStartSettings extends Shape
 {
     /**
      * @param array{
-     *     FixedModeScheduleActionStartSettings?: FixedModeScheduleActionStartSettings,
-     *     FollowModeScheduleActionStartSettings?: FollowModeScheduleActionStartSettings,
-     *     ImmediateModeScheduleActionStartSettings?: ImmediateModeScheduleActionStartSettings
+     *     FixedModeScheduleActionStartSettings?: FixedModeScheduleActionStartSettings|null,
+     *     FollowModeScheduleActionStartSettings?: FollowModeScheduleActionStartSettings|null,
+     *     ImmediateModeScheduleActionStartSettings?: ImmediateModeScheduleActionStartSettings|null
      * } $args
      */
     public function __construct(array $args = [])

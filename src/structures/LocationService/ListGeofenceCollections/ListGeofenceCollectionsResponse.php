@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ListGeofenceCollectionsResponseEntry> $Entries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListGeofenceCollectionsResponse extends Response
 {

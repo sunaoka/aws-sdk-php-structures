@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $findingArns
- * @property 'EN_US' $locale
+ * @property 'EN_US'|null $locale
  */
 class DescribeFindingsRequest extends Request
 {
     /**
      * @param array{
      *     findingArns: list<string>,
-     *     locale?: 'EN_US'
+     *     locale?: 'EN_US'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ssm\GetParameterHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PolicyText
- * @property string $PolicyType
- * @property string $PolicyStatus
+ * @property string|null $PolicyText
+ * @property string|null $PolicyType
+ * @property string|null $PolicyStatus
  */
 class ParameterInlinePolicy extends Shape
 {
     /**
      * @param array{
-     *     PolicyText?: string,
-     *     PolicyType?: string,
-     *     PolicyStatus?: string
+     *     PolicyText?: string|null,
+     *     PolicyType?: string|null,
+     *     PolicyStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

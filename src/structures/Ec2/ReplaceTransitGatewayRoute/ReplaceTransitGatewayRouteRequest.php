@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DestinationCidrBlock
  * @property string $TransitGatewayRouteTableId
- * @property string $TransitGatewayAttachmentId
- * @property bool $Blackhole
- * @property bool $DryRun
+ * @property string|null $TransitGatewayAttachmentId
+ * @property bool|null $Blackhole
+ * @property bool|null $DryRun
  */
 class ReplaceTransitGatewayRouteRequest extends Request
 {
@@ -17,9 +17,9 @@ class ReplaceTransitGatewayRouteRequest extends Request
      * @param array{
      *     DestinationCidrBlock: string,
      *     TransitGatewayRouteTableId: string,
-     *     TransitGatewayAttachmentId?: string,
-     *     Blackhole?: bool,
-     *     DryRun?: bool
+     *     TransitGatewayAttachmentId?: string|null,
+     *     Blackhole?: bool|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

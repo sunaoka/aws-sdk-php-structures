@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\DataExchange\GetRevision;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property string $Comment
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $DataSetId
- * @property bool $Finalized
- * @property string $Id
- * @property string $SourceId
- * @property array<string, string> $Tags
- * @property \Aws\Api\DateTimeResult $UpdatedAt
- * @property string $RevocationComment
- * @property bool $Revoked
- * @property \Aws\Api\DateTimeResult $RevokedAt
+ * @property string|null $Arn
+ * @property string|null $Comment
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $DataSetId
+ * @property bool|null $Finalized
+ * @property string|null $Id
+ * @property string|null $SourceId
+ * @property array<string, string>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property string|null $RevocationComment
+ * @property bool|null $Revoked
+ * @property \Aws\Api\DateTimeResult|null $RevokedAt
  */
 class GetRevisionResponse extends Response
 {

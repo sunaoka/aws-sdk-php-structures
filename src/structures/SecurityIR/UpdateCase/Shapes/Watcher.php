@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $email
- * @property string $name
- * @property string $jobTitle
+ * @property string|null $name
+ * @property string|null $jobTitle
  */
 class Watcher extends Shape
 {
     /**
      * @param array{
      *     email: string,
-     *     name?: string,
-     *     jobTitle?: string
+     *     name?: string|null,
+     *     jobTitle?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\CreateEntity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
- * @property string $componentTypeId
- * @property array<string, PropertyRequest> $properties
- * @property array<string, ComponentPropertyGroupRequest> $propertyGroups
+ * @property string|null $description
+ * @property string|null $componentTypeId
+ * @property array<string, PropertyRequest>|null $properties
+ * @property array<string, ComponentPropertyGroupRequest>|null $propertyGroups
  */
 class ComponentRequest extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
-     *     componentTypeId?: string,
-     *     properties?: array<string, PropertyRequest>,
-     *     propertyGroups?: array<string, ComponentPropertyGroupRequest>
+     *     description?: string|null,
+     *     componentTypeId?: string|null,
+     *     properties?: array<string, PropertyRequest>|null,
+     *     propertyGroups?: array<string, ComponentPropertyGroupRequest>|null
      * } $args
      */
     public function __construct(array $args = [])

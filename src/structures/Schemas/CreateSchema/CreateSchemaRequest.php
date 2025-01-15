@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Content
- * @property string $Description
+ * @property string|null $Description
  * @property string $RegistryName
  * @property string $SchemaName
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  * @property 'OpenApi3' $Type
  */
 class CreateSchemaRequest extends Request
@@ -17,10 +17,10 @@ class CreateSchemaRequest extends Request
     /**
      * @param array{
      *     Content: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     RegistryName: string,
      *     SchemaName: string,
-     *     Tags?: array<string, string>,
+     *     Tags?: array<string, string>|null,
      *     Type: 'OpenApi3'
      * } $args
      */

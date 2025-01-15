@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $gbPerMonthAllocated
+ * @property int|null $gbPerMonthAllocated
  */
 class MonthlyTransfer extends Shape
 {
     /**
-     * @param array{gbPerMonthAllocated?: int} $args
+     * @param array{gbPerMonthAllocated?: int|null} $args
      */
     public function __construct(array $args = [])
     {

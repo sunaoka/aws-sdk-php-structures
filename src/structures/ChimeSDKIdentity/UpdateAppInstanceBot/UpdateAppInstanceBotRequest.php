@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AppInstanceBotArn
  * @property string $Name
  * @property string $Metadata
- * @property Shapes\Configuration $Configuration
+ * @property Shapes\Configuration|null $Configuration
  */
 class UpdateAppInstanceBotRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateAppInstanceBotRequest extends Request
      *     AppInstanceBotArn: string,
      *     Name: string,
      *     Metadata: string,
-     *     Configuration?: Shapes\Configuration
+     *     Configuration?: Shapes\Configuration|null
      * } $args
      */
     public function __construct(array $args)

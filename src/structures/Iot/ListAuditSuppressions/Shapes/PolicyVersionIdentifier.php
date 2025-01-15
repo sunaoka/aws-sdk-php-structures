@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\ListAuditSuppressions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $policyName
- * @property string $policyVersionId
+ * @property string|null $policyName
+ * @property string|null $policyVersionId
  */
 class PolicyVersionIdentifier extends Shape
 {
     /**
      * @param array{
-     *     policyName?: string,
-     *     policyVersionId?: string
+     *     policyName?: string|null,
+     *     policyVersionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

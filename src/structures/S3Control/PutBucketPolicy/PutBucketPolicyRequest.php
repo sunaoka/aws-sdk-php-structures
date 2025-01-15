@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $Bucket
- * @property bool $ConfirmRemoveSelfBucketAccess
+ * @property bool|null $ConfirmRemoveSelfBucketAccess
  * @property string $Policy
  */
 class PutBucketPolicyRequest extends Request
@@ -16,7 +16,7 @@ class PutBucketPolicyRequest extends Request
      * @param array{
      *     AccountId: string,
      *     Bucket: string,
-     *     ConfirmRemoveSelfBucketAccess?: bool,
+     *     ConfirmRemoveSelfBucketAccess?: bool|null,
      *     Policy: string
      * } $args
      */

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SheetId
- * @property string $Name
- * @property list<SheetImage> $Images
+ * @property string|null $SheetId
+ * @property string|null $Name
+ * @property list<SheetImage>|null $Images
  */
 class Sheet extends Shape
 {
     /**
      * @param array{
-     *     SheetId?: string,
-     *     Name?: string,
-     *     Images?: list<SheetImage>
+     *     SheetId?: string|null,
+     *     Name?: string|null,
+     *     Images?: list<SheetImage>|null
      * } $args
      */
     public function __construct(array $args = [])

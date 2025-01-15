@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\CreateProxySession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VoiceConnectorId
- * @property string $ProxySessionId
- * @property string $Name
- * @property 'Open'|'InProgress'|'Closed' $Status
- * @property int<1, max> $ExpiryMinutes
- * @property list<'Voice'|'SMS'> $Capabilities
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
- * @property \Aws\Api\DateTimeResult $EndedTimestamp
- * @property list<Participant> $Participants
- * @property 'PreferSticky'|'AvoidSticky' $NumberSelectionBehavior
- * @property 'Country'|'AreaCode' $GeoMatchLevel
- * @property GeoMatchParams $GeoMatchParams
+ * @property string|null $VoiceConnectorId
+ * @property string|null $ProxySessionId
+ * @property string|null $Name
+ * @property 'Open'|'InProgress'|'Closed'|null $Status
+ * @property int<1, max>|null $ExpiryMinutes
+ * @property list<'Voice'|'SMS'>|null $Capabilities
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $EndedTimestamp
+ * @property list<Participant>|null $Participants
+ * @property 'PreferSticky'|'AvoidSticky'|null $NumberSelectionBehavior
+ * @property 'Country'|'AreaCode'|null $GeoMatchLevel
+ * @property GeoMatchParams|null $GeoMatchParams
  */
 class ProxySession extends Shape
 {
     /**
      * @param array{
-     *     VoiceConnectorId?: string,
-     *     ProxySessionId?: string,
-     *     Name?: string,
-     *     Status?: 'Open'|'InProgress'|'Closed',
-     *     ExpiryMinutes?: int<1, max>,
-     *     Capabilities?: list<'Voice'|'SMS'>,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     EndedTimestamp?: \Aws\Api\DateTimeResult,
-     *     Participants?: list<Participant>,
-     *     NumberSelectionBehavior?: 'PreferSticky'|'AvoidSticky',
-     *     GeoMatchLevel?: 'Country'|'AreaCode',
-     *     GeoMatchParams?: GeoMatchParams
+     *     VoiceConnectorId?: string|null,
+     *     ProxySessionId?: string|null,
+     *     Name?: string|null,
+     *     Status?: 'Open'|'InProgress'|'Closed'|null,
+     *     ExpiryMinutes?: int<1, max>|null,
+     *     Capabilities?: list<'Voice'|'SMS'>|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     EndedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     Participants?: list<Participant>|null,
+     *     NumberSelectionBehavior?: 'PreferSticky'|'AvoidSticky'|null,
+     *     GeoMatchLevel?: 'Country'|'AreaCode'|null,
+     *     GeoMatchParams?: GeoMatchParams|null
      * } $args
      */
     public function __construct(array $args = [])

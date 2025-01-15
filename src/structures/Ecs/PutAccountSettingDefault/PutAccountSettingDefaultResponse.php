@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ecs\PutAccountSettingDefault;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Setting $setting
+ * @property Shapes\Setting|null $setting
  */
 class PutAccountSettingDefaultResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $datetimeTypeFieldName
+ * @property string|null $datetimeTypeFieldName
  */
 class IncrementalPullConfig extends Shape
 {
     /**
-     * @param array{datetimeTypeFieldName?: string} $args
+     * @param array{datetimeTypeFieldName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

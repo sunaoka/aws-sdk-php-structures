@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $resourceArn
  * @property string $principalSubscriber
- * @property string $shareName
+ * @property string|null $shareName
  */
 class CreateShareRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateShareRequest extends Request
      * @param array{
      *     resourceArn: string,
      *     principalSubscriber: string,
-     *     shareName?: string
+     *     shareName?: string|null
      * } $args
      */
     public function __construct(array $args)

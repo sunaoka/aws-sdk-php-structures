@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\HealthLake\StartFHIRImportJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $JobName
+ * @property string|null $JobName
  * @property Shapes\InputDataConfig $InputDataConfig
  * @property Shapes\OutputDataConfig $JobOutputDataConfig
  * @property string $DatastoreId
@@ -16,7 +16,7 @@ class StartFHIRImportJobRequest extends Request
 {
     /**
      * @param array{
-     *     JobName?: string,
+     *     JobName?: string|null,
      *     InputDataConfig: Shapes\InputDataConfig,
      *     JobOutputDataConfig: Shapes\OutputDataConfig,
      *     DatastoreId: string,

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iot\TransferCertificate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $transferredCertificateArn
+ * @property string|null $transferredCertificateArn
  */
 class TransferCertificateResponse extends Response
 {

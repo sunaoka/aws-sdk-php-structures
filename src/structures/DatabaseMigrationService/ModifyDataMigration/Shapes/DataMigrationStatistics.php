@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ModifyDataMigration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TablesLoaded
- * @property int $ElapsedTimeMillis
- * @property int $TablesLoading
- * @property int $FullLoadPercentage
- * @property int $CDCLatency
- * @property int $TablesQueued
- * @property int $TablesErrored
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $StopTime
+ * @property int|null $TablesLoaded
+ * @property int|null $ElapsedTimeMillis
+ * @property int|null $TablesLoading
+ * @property int|null $FullLoadPercentage
+ * @property int|null $CDCLatency
+ * @property int|null $TablesQueued
+ * @property int|null $TablesErrored
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $StopTime
  */
 class DataMigrationStatistics extends Shape
 {
     /**
      * @param array{
-     *     TablesLoaded?: int,
-     *     ElapsedTimeMillis?: int,
-     *     TablesLoading?: int,
-     *     FullLoadPercentage?: int,
-     *     CDCLatency?: int,
-     *     TablesQueued?: int,
-     *     TablesErrored?: int,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     StopTime?: \Aws\Api\DateTimeResult
+     *     TablesLoaded?: int|null,
+     *     ElapsedTimeMillis?: int|null,
+     *     TablesLoading?: int|null,
+     *     FullLoadPercentage?: int|null,
+     *     CDCLatency?: int|null,
+     *     TablesQueued?: int|null,
+     *     TablesErrored?: int|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     StopTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

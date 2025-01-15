@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Speed
+ * @property double|null $Speed
  */
 class RoutePedestrianOptions extends Shape
 {
     /**
-     * @param array{Speed?: double} $args
+     * @param array{Speed?: double|null} $args
      */
     public function __construct(array $args = [])
     {

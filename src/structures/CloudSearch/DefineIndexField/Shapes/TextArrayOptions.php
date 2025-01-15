@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudSearch\DefineIndexField\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DefaultValue
- * @property string $SourceFields
- * @property bool $ReturnEnabled
- * @property bool $HighlightEnabled
- * @property string $AnalysisScheme
+ * @property string|null $DefaultValue
+ * @property string|null $SourceFields
+ * @property bool|null $ReturnEnabled
+ * @property bool|null $HighlightEnabled
+ * @property string|null $AnalysisScheme
  */
 class TextArrayOptions extends Shape
 {
     /**
      * @param array{
-     *     DefaultValue?: string,
-     *     SourceFields?: string,
-     *     ReturnEnabled?: bool,
-     *     HighlightEnabled?: bool,
-     *     AnalysisScheme?: string
+     *     DefaultValue?: string|null,
+     *     SourceFields?: string|null,
+     *     ReturnEnabled?: bool|null,
+     *     HighlightEnabled?: bool|null,
+     *     AnalysisScheme?: string|null
      * } $args
      */
     public function __construct(array $args = [])

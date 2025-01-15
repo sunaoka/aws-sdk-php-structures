@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInternetGateways\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<InternetGatewayAttachment> $Attachments
- * @property string $InternetGatewayId
- * @property string $OwnerId
- * @property list<Tag> $Tags
+ * @property list<InternetGatewayAttachment>|null $Attachments
+ * @property string|null $InternetGatewayId
+ * @property string|null $OwnerId
+ * @property list<Tag>|null $Tags
  */
 class InternetGateway extends Shape
 {
     /**
      * @param array{
-     *     Attachments?: list<InternetGatewayAttachment>,
-     *     InternetGatewayId?: string,
-     *     OwnerId?: string,
-     *     Tags?: list<Tag>
+     *     Attachments?: list<InternetGatewayAttachment>|null,
+     *     InternetGatewayId?: string|null,
+     *     OwnerId?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

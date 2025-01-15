@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\OpsWorksCM\CreateServer;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $AssociatePublicIpAddress
- * @property string $CustomDomain
- * @property string $CustomCertificate
- * @property string $CustomPrivateKey
- * @property bool $DisableAutomatedBackup
+ * @property bool|null $AssociatePublicIpAddress
+ * @property string|null $CustomDomain
+ * @property string|null $CustomCertificate
+ * @property string|null $CustomPrivateKey
+ * @property bool|null $DisableAutomatedBackup
  * @property string $Engine
- * @property string $EngineModel
- * @property string $EngineVersion
- * @property list<Shapes\EngineAttribute> $EngineAttributes
- * @property int<1, max> $BackupRetentionCount
+ * @property string|null $EngineModel
+ * @property string|null $EngineVersion
+ * @property list<Shapes\EngineAttribute>|null $EngineAttributes
+ * @property int<1, max>|null $BackupRetentionCount
  * @property string $ServerName
  * @property string $InstanceProfileArn
  * @property string $InstanceType
- * @property string $KeyPair
- * @property string $PreferredMaintenanceWindow
- * @property string $PreferredBackupWindow
- * @property list<string> $SecurityGroupIds
+ * @property string|null $KeyPair
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $PreferredBackupWindow
+ * @property list<string>|null $SecurityGroupIds
  * @property string $ServiceRoleArn
- * @property list<string> $SubnetIds
- * @property list<Shapes\Tag> $Tags
- * @property string $BackupId
+ * @property list<string>|null $SubnetIds
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $BackupId
  */
 class CreateServerRequest extends Request
 {
     /**
      * @param array{
-     *     AssociatePublicIpAddress?: bool,
-     *     CustomDomain?: string,
-     *     CustomCertificate?: string,
-     *     CustomPrivateKey?: string,
-     *     DisableAutomatedBackup?: bool,
+     *     AssociatePublicIpAddress?: bool|null,
+     *     CustomDomain?: string|null,
+     *     CustomCertificate?: string|null,
+     *     CustomPrivateKey?: string|null,
+     *     DisableAutomatedBackup?: bool|null,
      *     Engine: string,
-     *     EngineModel?: string,
-     *     EngineVersion?: string,
-     *     EngineAttributes?: list<Shapes\EngineAttribute>,
-     *     BackupRetentionCount?: int<1, max>,
+     *     EngineModel?: string|null,
+     *     EngineVersion?: string|null,
+     *     EngineAttributes?: list<Shapes\EngineAttribute>|null,
+     *     BackupRetentionCount?: int<1, max>|null,
      *     ServerName: string,
      *     InstanceProfileArn: string,
      *     InstanceType: string,
-     *     KeyPair?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     PreferredBackupWindow?: string,
-     *     SecurityGroupIds?: list<string>,
+     *     KeyPair?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     PreferredBackupWindow?: string|null,
+     *     SecurityGroupIds?: list<string>|null,
      *     ServiceRoleArn: string,
-     *     SubnetIds?: list<string>,
-     *     Tags?: list<Shapes\Tag>,
-     *     BackupId?: string
+     *     SubnetIds?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     BackupId?: string|null
      * } $args
      */
     public function __construct(array $args)

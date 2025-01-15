@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeLaunchTemplateVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'default'|'vpc-1'|'ebs-1' $BandwidthWeighting
+ * @property 'default'|'vpc-1'|'ebs-1'|null $BandwidthWeighting
  */
 class LaunchTemplateNetworkPerformanceOptions extends Shape
 {
     /**
-     * @param array{BandwidthWeighting?: 'default'|'vpc-1'|'ebs-1'} $args
+     * @param array{BandwidthWeighting?: 'default'|'vpc-1'|'ebs-1'|null} $args
      */
     public function __construct(array $args = [])
     {

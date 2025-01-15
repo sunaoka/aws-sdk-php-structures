@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceIdentifier
- * @property 'replication-instance' $SourceType
- * @property string $Message
- * @property list<string> $EventCategories
- * @property \Aws\Api\DateTimeResult $Date
+ * @property string|null $SourceIdentifier
+ * @property 'replication-instance'|null $SourceType
+ * @property string|null $Message
+ * @property list<string>|null $EventCategories
+ * @property \Aws\Api\DateTimeResult|null $Date
  */
 class Event extends Shape
 {
     /**
      * @param array{
-     *     SourceIdentifier?: string,
-     *     SourceType?: 'replication-instance',
-     *     Message?: string,
-     *     EventCategories?: list<string>,
-     *     Date?: \Aws\Api\DateTimeResult
+     *     SourceIdentifier?: string|null,
+     *     SourceType?: 'replication-instance'|null,
+     *     Message?: string|null,
+     *     EventCategories?: list<string>|null,
+     *     Date?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\mgn\ListImportErrors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountID
- * @property string $applicationID
- * @property string $ec2LaunchTemplateID
- * @property string $rawError
- * @property int<0, max> $rowNumber
- * @property string $sourceServerID
- * @property string $waveID
+ * @property string|null $accountID
+ * @property string|null $applicationID
+ * @property string|null $ec2LaunchTemplateID
+ * @property string|null $rawError
+ * @property int<0, max>|null $rowNumber
+ * @property string|null $sourceServerID
+ * @property string|null $waveID
  */
 class ImportErrorData extends Shape
 {
     /**
      * @param array{
-     *     accountID?: string,
-     *     applicationID?: string,
-     *     ec2LaunchTemplateID?: string,
-     *     rawError?: string,
-     *     rowNumber?: int<0, max>,
-     *     sourceServerID?: string,
-     *     waveID?: string
+     *     accountID?: string|null,
+     *     applicationID?: string|null,
+     *     ec2LaunchTemplateID?: string|null,
+     *     rawError?: string|null,
+     *     rowNumber?: int<0, max>|null,
+     *     sourceServerID?: string|null,
+     *     waveID?: string|null
      * } $args
      */
     public function __construct(array $args = [])

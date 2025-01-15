@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\StartElasticsearchServiceS
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ServiceSoftwareOptions $ServiceSoftwareOptions
+ * @property Shapes\ServiceSoftwareOptions|null $ServiceSoftwareOptions
  */
 class StartElasticsearchServiceSoftwareUpdateResponse extends Response
 {

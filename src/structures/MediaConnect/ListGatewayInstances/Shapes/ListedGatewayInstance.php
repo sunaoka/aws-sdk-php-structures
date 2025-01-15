@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $GatewayArn
  * @property string $GatewayInstanceArn
  * @property string $InstanceId
- * @property 'REGISTERING'|'ACTIVE'|'DEREGISTERING'|'DEREGISTERED'|'REGISTRATION_ERROR'|'DEREGISTRATION_ERROR' $InstanceState
+ * @property 'REGISTERING'|'ACTIVE'|'DEREGISTERING'|'DEREGISTERED'|'REGISTRATION_ERROR'|'DEREGISTRATION_ERROR'|null $InstanceState
  */
 class ListedGatewayInstance extends Shape
 {
@@ -17,7 +17,7 @@ class ListedGatewayInstance extends Shape
      *     GatewayArn: string,
      *     GatewayInstanceArn: string,
      *     InstanceId: string,
-     *     InstanceState?: 'REGISTERING'|'ACTIVE'|'DEREGISTERING'|'DEREGISTERED'|'REGISTRATION_ERROR'|'DEREGISTRATION_ERROR'
+     *     InstanceState?: 'REGISTERING'|'ACTIVE'|'DEREGISTERING'|'DEREGISTERED'|'REGISTRATION_ERROR'|'DEREGISTRATION_ERROR'|null
      * } $args
      */
     public function __construct(array $args)

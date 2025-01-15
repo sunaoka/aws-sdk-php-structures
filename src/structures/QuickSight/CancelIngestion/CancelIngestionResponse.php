@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\QuickSight\CancelIngestion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property string $IngestionId
- * @property string $RequestId
- * @property int $Status
+ * @property string|null $Arn
+ * @property string|null $IngestionId
+ * @property string|null $RequestId
+ * @property int|null $Status
  */
 class CancelIngestionResponse extends Response
 {

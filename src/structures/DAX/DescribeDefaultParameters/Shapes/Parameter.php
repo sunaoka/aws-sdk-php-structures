@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DAX\DescribeDefaultParameters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterName
- * @property 'DEFAULT'|'NODE_TYPE_SPECIFIC' $ParameterType
- * @property string $ParameterValue
- * @property list<NodeTypeSpecificValue> $NodeTypeSpecificValues
- * @property string $Description
- * @property string $Source
- * @property string $DataType
- * @property string $AllowedValues
- * @property 'TRUE'|'FALSE'|'CONDITIONAL' $IsModifiable
- * @property 'IMMEDIATE'|'REQUIRES_REBOOT' $ChangeType
+ * @property string|null $ParameterName
+ * @property 'DEFAULT'|'NODE_TYPE_SPECIFIC'|null $ParameterType
+ * @property string|null $ParameterValue
+ * @property list<NodeTypeSpecificValue>|null $NodeTypeSpecificValues
+ * @property string|null $Description
+ * @property string|null $Source
+ * @property string|null $DataType
+ * @property string|null $AllowedValues
+ * @property 'TRUE'|'FALSE'|'CONDITIONAL'|null $IsModifiable
+ * @property 'IMMEDIATE'|'REQUIRES_REBOOT'|null $ChangeType
  */
 class Parameter extends Shape
 {
     /**
      * @param array{
-     *     ParameterName?: string,
-     *     ParameterType?: 'DEFAULT'|'NODE_TYPE_SPECIFIC',
-     *     ParameterValue?: string,
-     *     NodeTypeSpecificValues?: list<NodeTypeSpecificValue>,
-     *     Description?: string,
-     *     Source?: string,
-     *     DataType?: string,
-     *     AllowedValues?: string,
-     *     IsModifiable?: 'TRUE'|'FALSE'|'CONDITIONAL',
-     *     ChangeType?: 'IMMEDIATE'|'REQUIRES_REBOOT'
+     *     ParameterName?: string|null,
+     *     ParameterType?: 'DEFAULT'|'NODE_TYPE_SPECIFIC'|null,
+     *     ParameterValue?: string|null,
+     *     NodeTypeSpecificValues?: list<NodeTypeSpecificValue>|null,
+     *     Description?: string|null,
+     *     Source?: string|null,
+     *     DataType?: string|null,
+     *     AllowedValues?: string|null,
+     *     IsModifiable?: 'TRUE'|'FALSE'|'CONDITIONAL'|null,
+     *     ChangeType?: 'IMMEDIATE'|'REQUIRES_REBOOT'|null
      * } $args
      */
     public function __construct(array $args = [])

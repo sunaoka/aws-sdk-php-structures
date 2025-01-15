@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListCustomLineItemVersions\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property ListCustomLineItemChargeDetails $ChargeDetails
- * @property 'USD'|'CNY' $CurrencyCode
- * @property string $Description
- * @property string $ProductCode
- * @property string $BillingGroupArn
- * @property int $CreationTime
- * @property int $LastModifiedTime
- * @property int<0, max> $AssociationSize
- * @property string $StartBillingPeriod
- * @property string $EndBillingPeriod
- * @property string $Arn
- * @property int $StartTime
- * @property string $AccountId
+ * @property string|null $Name
+ * @property ListCustomLineItemChargeDetails|null $ChargeDetails
+ * @property 'USD'|'CNY'|null $CurrencyCode
+ * @property string|null $Description
+ * @property string|null $ProductCode
+ * @property string|null $BillingGroupArn
+ * @property int|null $CreationTime
+ * @property int|null $LastModifiedTime
+ * @property int<0, max>|null $AssociationSize
+ * @property string|null $StartBillingPeriod
+ * @property string|null $EndBillingPeriod
+ * @property string|null $Arn
+ * @property int|null $StartTime
+ * @property string|null $AccountId
  */
 class CustomLineItemVersionListElement extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     ChargeDetails?: ListCustomLineItemChargeDetails,
-     *     CurrencyCode?: 'USD'|'CNY',
-     *     Description?: string,
-     *     ProductCode?: string,
-     *     BillingGroupArn?: string,
-     *     CreationTime?: int,
-     *     LastModifiedTime?: int,
-     *     AssociationSize?: int<0, max>,
-     *     StartBillingPeriod?: string,
-     *     EndBillingPeriod?: string,
-     *     Arn?: string,
-     *     StartTime?: int,
-     *     AccountId?: string
+     *     Name?: string|null,
+     *     ChargeDetails?: ListCustomLineItemChargeDetails|null,
+     *     CurrencyCode?: 'USD'|'CNY'|null,
+     *     Description?: string|null,
+     *     ProductCode?: string|null,
+     *     BillingGroupArn?: string|null,
+     *     CreationTime?: int|null,
+     *     LastModifiedTime?: int|null,
+     *     AssociationSize?: int<0, max>|null,
+     *     StartBillingPeriod?: string|null,
+     *     EndBillingPeriod?: string|null,
+     *     Arn?: string|null,
+     *     StartTime?: int|null,
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

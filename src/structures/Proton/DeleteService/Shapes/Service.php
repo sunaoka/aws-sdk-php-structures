@@ -6,17 +6,17 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
- * @property string $branchName
+ * @property string|null $branchName
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
+ * @property string|null $description
  * @property \Aws\Api\DateTimeResult $lastModifiedAt
  * @property string $name
- * @property ServicePipeline $pipeline
- * @property string $repositoryConnectionArn
- * @property string $repositoryId
+ * @property ServicePipeline|null $pipeline
+ * @property string|null $repositoryConnectionArn
+ * @property string|null $repositoryId
  * @property string $spec
  * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED_CLEANUP_IN_PROGRESS'|'CREATE_FAILED_CLEANUP_COMPLETE'|'CREATE_FAILED_CLEANUP_FAILED'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED_CLEANUP_IN_PROGRESS'|'UPDATE_FAILED_CLEANUP_COMPLETE'|'UPDATE_FAILED_CLEANUP_FAILED'|'UPDATE_FAILED'|'UPDATE_COMPLETE_CLEANUP_FAILED' $status
- * @property string $statusMessage
+ * @property string|null $statusMessage
  * @property string $templateName
  */
 class Service extends Shape
@@ -24,17 +24,17 @@ class Service extends Shape
     /**
      * @param array{
      *     arn: string,
-     *     branchName?: string,
+     *     branchName?: string|null,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     description?: string,
+     *     description?: string|null,
      *     lastModifiedAt: \Aws\Api\DateTimeResult,
      *     name: string,
-     *     pipeline?: ServicePipeline,
-     *     repositoryConnectionArn?: string,
-     *     repositoryId?: string,
+     *     pipeline?: ServicePipeline|null,
+     *     repositoryConnectionArn?: string|null,
+     *     repositoryId?: string|null,
      *     spec: string,
      *     status: 'CREATE_IN_PROGRESS'|'CREATE_FAILED_CLEANUP_IN_PROGRESS'|'CREATE_FAILED_CLEANUP_COMPLETE'|'CREATE_FAILED_CLEANUP_FAILED'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED_CLEANUP_IN_PROGRESS'|'UPDATE_FAILED_CLEANUP_COMPLETE'|'UPDATE_FAILED_CLEANUP_FAILED'|'UPDATE_FAILED'|'UPDATE_COMPLETE_CLEANUP_FAILED',
-     *     statusMessage?: string,
+     *     statusMessage?: string|null,
      *     templateName: string
      * } $args
      */

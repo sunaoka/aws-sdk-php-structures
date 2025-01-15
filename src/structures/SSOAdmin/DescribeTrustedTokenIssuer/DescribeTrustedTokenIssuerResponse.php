@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\DescribeTrustedTokenIssuer;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Name
- * @property string $TrustedTokenIssuerArn
- * @property Shapes\TrustedTokenIssuerConfiguration $TrustedTokenIssuerConfiguration
- * @property 'OIDC_JWT' $TrustedTokenIssuerType
+ * @property string|null $Name
+ * @property string|null $TrustedTokenIssuerArn
+ * @property Shapes\TrustedTokenIssuerConfiguration|null $TrustedTokenIssuerConfiguration
+ * @property 'OIDC_JWT'|null $TrustedTokenIssuerType
  */
 class DescribeTrustedTokenIssuerResponse extends Response
 {

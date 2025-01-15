@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $vpcId
  * @property list<string> $subnetIds
  * @property 'CREATING'|'AVAILABLE'|'DELETING'|'FAILED' $status
- * @property string $vpcEndpointId
+ * @property string|null $vpcEndpointId
  */
 class PrivateGraphEndpointSummary extends Shape
 {
@@ -17,7 +17,7 @@ class PrivateGraphEndpointSummary extends Shape
      *     vpcId: string,
      *     subnetIds: list<string>,
      *     status: 'CREATING'|'AVAILABLE'|'DELETING'|'FAILED',
-     *     vpcEndpointId?: string
+     *     vpcEndpointId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,84 +6,84 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterIdentifier
- * @property string $SnapshotIdentifier
- * @property string $SnapshotArn
- * @property string $SnapshotClusterIdentifier
- * @property int $Port
- * @property string $AvailabilityZone
- * @property bool $AllowVersionUpgrade
- * @property string $ClusterSubnetGroupName
- * @property bool $PubliclyAccessible
- * @property string $OwnerAccount
- * @property string $HsmClientCertificateIdentifier
- * @property string $HsmConfigurationIdentifier
- * @property string $ElasticIp
- * @property string $ClusterParameterGroupName
- * @property list<string> $ClusterSecurityGroups
- * @property list<string> $VpcSecurityGroupIds
- * @property string $PreferredMaintenanceWindow
- * @property int $AutomatedSnapshotRetentionPeriod
- * @property int $ManualSnapshotRetentionPeriod
- * @property string $KmsKeyId
- * @property string $NodeType
- * @property bool $EnhancedVpcRouting
- * @property string $AdditionalInfo
- * @property list<string> $IamRoles
- * @property string $MaintenanceTrackName
- * @property string $SnapshotScheduleIdentifier
- * @property int $NumberOfNodes
- * @property bool $AvailabilityZoneRelocation
- * @property 'enabled'|'disabled'|'auto' $AquaConfigurationStatus
- * @property string $DefaultIamRoleArn
- * @property string $ReservedNodeId
- * @property string $TargetReservedNodeOfferingId
- * @property bool $Encrypted
- * @property bool $ManageMasterPassword
- * @property string $MasterPasswordSecretKmsKeyId
- * @property string $IpAddressType
- * @property bool $MultiAZ
+ * @property string|null $SnapshotIdentifier
+ * @property string|null $SnapshotArn
+ * @property string|null $SnapshotClusterIdentifier
+ * @property int|null $Port
+ * @property string|null $AvailabilityZone
+ * @property bool|null $AllowVersionUpgrade
+ * @property string|null $ClusterSubnetGroupName
+ * @property bool|null $PubliclyAccessible
+ * @property string|null $OwnerAccount
+ * @property string|null $HsmClientCertificateIdentifier
+ * @property string|null $HsmConfigurationIdentifier
+ * @property string|null $ElasticIp
+ * @property string|null $ClusterParameterGroupName
+ * @property list<string>|null $ClusterSecurityGroups
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property string|null $PreferredMaintenanceWindow
+ * @property int|null $AutomatedSnapshotRetentionPeriod
+ * @property int|null $ManualSnapshotRetentionPeriod
+ * @property string|null $KmsKeyId
+ * @property string|null $NodeType
+ * @property bool|null $EnhancedVpcRouting
+ * @property string|null $AdditionalInfo
+ * @property list<string>|null $IamRoles
+ * @property string|null $MaintenanceTrackName
+ * @property string|null $SnapshotScheduleIdentifier
+ * @property int|null $NumberOfNodes
+ * @property bool|null $AvailabilityZoneRelocation
+ * @property 'enabled'|'disabled'|'auto'|null $AquaConfigurationStatus
+ * @property string|null $DefaultIamRoleArn
+ * @property string|null $ReservedNodeId
+ * @property string|null $TargetReservedNodeOfferingId
+ * @property bool|null $Encrypted
+ * @property bool|null $ManageMasterPassword
+ * @property string|null $MasterPasswordSecretKmsKeyId
+ * @property string|null $IpAddressType
+ * @property bool|null $MultiAZ
  */
 class RestoreFromClusterSnapshotRequest extends Request
 {
     /**
      * @param array{
      *     ClusterIdentifier: string,
-     *     SnapshotIdentifier?: string,
-     *     SnapshotArn?: string,
-     *     SnapshotClusterIdentifier?: string,
-     *     Port?: int,
-     *     AvailabilityZone?: string,
-     *     AllowVersionUpgrade?: bool,
-     *     ClusterSubnetGroupName?: string,
-     *     PubliclyAccessible?: bool,
-     *     OwnerAccount?: string,
-     *     HsmClientCertificateIdentifier?: string,
-     *     HsmConfigurationIdentifier?: string,
-     *     ElasticIp?: string,
-     *     ClusterParameterGroupName?: string,
-     *     ClusterSecurityGroups?: list<string>,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     PreferredMaintenanceWindow?: string,
-     *     AutomatedSnapshotRetentionPeriod?: int,
-     *     ManualSnapshotRetentionPeriod?: int,
-     *     KmsKeyId?: string,
-     *     NodeType?: string,
-     *     EnhancedVpcRouting?: bool,
-     *     AdditionalInfo?: string,
-     *     IamRoles?: list<string>,
-     *     MaintenanceTrackName?: string,
-     *     SnapshotScheduleIdentifier?: string,
-     *     NumberOfNodes?: int,
-     *     AvailabilityZoneRelocation?: bool,
-     *     AquaConfigurationStatus?: 'enabled'|'disabled'|'auto',
-     *     DefaultIamRoleArn?: string,
-     *     ReservedNodeId?: string,
-     *     TargetReservedNodeOfferingId?: string,
-     *     Encrypted?: bool,
-     *     ManageMasterPassword?: bool,
-     *     MasterPasswordSecretKmsKeyId?: string,
-     *     IpAddressType?: string,
-     *     MultiAZ?: bool
+     *     SnapshotIdentifier?: string|null,
+     *     SnapshotArn?: string|null,
+     *     SnapshotClusterIdentifier?: string|null,
+     *     Port?: int|null,
+     *     AvailabilityZone?: string|null,
+     *     AllowVersionUpgrade?: bool|null,
+     *     ClusterSubnetGroupName?: string|null,
+     *     PubliclyAccessible?: bool|null,
+     *     OwnerAccount?: string|null,
+     *     HsmClientCertificateIdentifier?: string|null,
+     *     HsmConfigurationIdentifier?: string|null,
+     *     ElasticIp?: string|null,
+     *     ClusterParameterGroupName?: string|null,
+     *     ClusterSecurityGroups?: list<string>|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     AutomatedSnapshotRetentionPeriod?: int|null,
+     *     ManualSnapshotRetentionPeriod?: int|null,
+     *     KmsKeyId?: string|null,
+     *     NodeType?: string|null,
+     *     EnhancedVpcRouting?: bool|null,
+     *     AdditionalInfo?: string|null,
+     *     IamRoles?: list<string>|null,
+     *     MaintenanceTrackName?: string|null,
+     *     SnapshotScheduleIdentifier?: string|null,
+     *     NumberOfNodes?: int|null,
+     *     AvailabilityZoneRelocation?: bool|null,
+     *     AquaConfigurationStatus?: 'enabled'|'disabled'|'auto'|null,
+     *     DefaultIamRoleArn?: string|null,
+     *     ReservedNodeId?: string|null,
+     *     TargetReservedNodeOfferingId?: string|null,
+     *     Encrypted?: bool|null,
+     *     ManageMasterPassword?: bool|null,
+     *     MasterPasswordSecretKmsKeyId?: string|null,
+     *     IpAddressType?: string|null,
+     *     MultiAZ?: bool|null
      * } $args
      */
     public function __construct(array $args)

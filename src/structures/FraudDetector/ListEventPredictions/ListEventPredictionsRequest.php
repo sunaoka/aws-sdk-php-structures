@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\FraudDetector\ListEventPredictions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\FilterCondition $eventId
- * @property Shapes\FilterCondition $eventType
- * @property Shapes\FilterCondition $detectorId
- * @property Shapes\FilterCondition $detectorVersionId
- * @property Shapes\PredictionTimeRange $predictionTimeRange
- * @property string $nextToken
- * @property int<50, 100> $maxResults
+ * @property Shapes\FilterCondition|null $eventId
+ * @property Shapes\FilterCondition|null $eventType
+ * @property Shapes\FilterCondition|null $detectorId
+ * @property Shapes\FilterCondition|null $detectorVersionId
+ * @property Shapes\PredictionTimeRange|null $predictionTimeRange
+ * @property string|null $nextToken
+ * @property int<50, 100>|null $maxResults
  */
 class ListEventPredictionsRequest extends Request
 {
     /**
      * @param array{
-     *     eventId?: Shapes\FilterCondition,
-     *     eventType?: Shapes\FilterCondition,
-     *     detectorId?: Shapes\FilterCondition,
-     *     detectorVersionId?: Shapes\FilterCondition,
-     *     predictionTimeRange?: Shapes\PredictionTimeRange,
-     *     nextToken?: string,
-     *     maxResults?: int<50, 100>
+     *     eventId?: Shapes\FilterCondition|null,
+     *     eventType?: Shapes\FilterCondition|null,
+     *     detectorId?: Shapes\FilterCondition|null,
+     *     detectorVersionId?: Shapes\FilterCondition|null,
+     *     predictionTimeRange?: Shapes\PredictionTimeRange|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<50, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

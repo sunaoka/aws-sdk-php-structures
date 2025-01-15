@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTEvents\ListDetectorModels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $detectorModelName
- * @property string $detectorModelDescription
- * @property \Aws\Api\DateTimeResult $creationTime
+ * @property string|null $detectorModelName
+ * @property string|null $detectorModelDescription
+ * @property \Aws\Api\DateTimeResult|null $creationTime
  */
 class DetectorModelSummary extends Shape
 {
     /**
      * @param array{
-     *     detectorModelName?: string,
-     *     detectorModelDescription?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult
+     *     detectorModelName?: string|null,
+     *     detectorModelDescription?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

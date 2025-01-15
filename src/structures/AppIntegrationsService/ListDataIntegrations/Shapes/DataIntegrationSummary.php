@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppIntegrationsService\ListDataIntegrations\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Name
- * @property string $SourceURI
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property string|null $SourceURI
  */
 class DataIntegrationSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Name?: string,
-     *     SourceURI?: string
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     SourceURI?: string|null
      * } $args
      */
     public function __construct(array $args = [])

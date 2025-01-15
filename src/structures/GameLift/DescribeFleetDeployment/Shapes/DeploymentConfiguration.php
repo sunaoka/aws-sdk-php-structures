@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribeFleetDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'WITH_PROTECTION'|'IGNORE_PROTECTION' $ProtectionStrategy
- * @property int<30, 75> $MinimumHealthyPercentage
- * @property 'MAINTAIN'|'ROLLBACK' $ImpairmentStrategy
+ * @property 'WITH_PROTECTION'|'IGNORE_PROTECTION'|null $ProtectionStrategy
+ * @property int<30, 75>|null $MinimumHealthyPercentage
+ * @property 'MAINTAIN'|'ROLLBACK'|null $ImpairmentStrategy
  */
 class DeploymentConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ProtectionStrategy?: 'WITH_PROTECTION'|'IGNORE_PROTECTION',
-     *     MinimumHealthyPercentage?: int<30, 75>,
-     *     ImpairmentStrategy?: 'MAINTAIN'|'ROLLBACK'
+     *     ProtectionStrategy?: 'WITH_PROTECTION'|'IGNORE_PROTECTION'|null,
+     *     MinimumHealthyPercentage?: int<30, 75>|null,
+     *     ImpairmentStrategy?: 'MAINTAIN'|'ROLLBACK'|null
      * } $args
      */
     public function __construct(array $args = [])

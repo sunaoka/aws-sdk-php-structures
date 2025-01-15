@@ -10,11 +10,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClientToken
  * @property int<1, 10> $NumTapesToCreate
  * @property string $TapeBarcodePrefix
- * @property bool $KMSEncrypted
- * @property string $KMSKey
- * @property string $PoolId
- * @property bool $Worm
- * @property list<Shapes\Tag> $Tags
+ * @property bool|null $KMSEncrypted
+ * @property string|null $KMSKey
+ * @property string|null $PoolId
+ * @property bool|null $Worm
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateTapesRequest extends Request
 {
@@ -25,11 +25,11 @@ class CreateTapesRequest extends Request
      *     ClientToken: string,
      *     NumTapesToCreate: int<1, 10>,
      *     TapeBarcodePrefix: string,
-     *     KMSEncrypted?: bool,
-     *     KMSKey?: string,
-     *     PoolId?: string,
-     *     Worm?: bool,
-     *     Tags?: list<Shapes\Tag>
+     *     KMSEncrypted?: bool|null,
+     *     KMSKey?: string|null,
+     *     PoolId?: string|null,
+     *     Worm?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

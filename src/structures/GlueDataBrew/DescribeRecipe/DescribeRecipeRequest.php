@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $RecipeVersion
+ * @property string|null $RecipeVersion
  */
 class DescribeRecipeRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     RecipeVersion?: string
+     *     RecipeVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

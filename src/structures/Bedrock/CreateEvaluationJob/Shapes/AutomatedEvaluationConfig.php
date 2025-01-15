@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<EvaluationDatasetMetricConfig> $datasetMetricConfigs
- * @property EvaluatorModelConfig $evaluatorModelConfig
+ * @property EvaluatorModelConfig|null $evaluatorModelConfig
  */
 class AutomatedEvaluationConfig extends Shape
 {
     /**
      * @param array{
      *     datasetMetricConfigs: list<EvaluationDatasetMetricConfig>,
-     *     evaluatorModelConfig?: EvaluatorModelConfig
+     *     evaluatorModelConfig?: EvaluatorModelConfig|null
      * } $args
      */
     public function __construct(array $args)

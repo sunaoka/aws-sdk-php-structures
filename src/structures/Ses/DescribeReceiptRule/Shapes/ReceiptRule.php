@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property bool $Enabled
- * @property 'Require'|'Optional' $TlsPolicy
- * @property list<string> $Recipients
- * @property list<ReceiptAction> $Actions
- * @property bool $ScanEnabled
+ * @property bool|null $Enabled
+ * @property 'Require'|'Optional'|null $TlsPolicy
+ * @property list<string>|null $Recipients
+ * @property list<ReceiptAction>|null $Actions
+ * @property bool|null $ScanEnabled
  */
 class ReceiptRule extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Enabled?: bool,
-     *     TlsPolicy?: 'Require'|'Optional',
-     *     Recipients?: list<string>,
-     *     Actions?: list<ReceiptAction>,
-     *     ScanEnabled?: bool
+     *     Enabled?: bool|null,
+     *     TlsPolicy?: 'Require'|'Optional'|null,
+     *     Recipients?: list<string>|null,
+     *     Actions?: list<ReceiptAction>|null,
+     *     ScanEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $Created
- * @property string $Description
+ * @property string|null $Description
  * @property int $Revision
  */
 class ConfigurationRevision extends Shape
@@ -14,7 +14,7 @@ class ConfigurationRevision extends Shape
     /**
      * @param array{
      *     Created: \Aws\Api\DateTimeResult,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Revision: int
      * } $args
      */

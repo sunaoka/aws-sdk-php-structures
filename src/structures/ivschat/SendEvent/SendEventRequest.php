@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $roomIdentifier
  * @property string $eventName
- * @property array<string, string> $attributes
+ * @property array<string, string>|null $attributes
  */
 class SendEventRequest extends Request
 {
@@ -15,7 +15,7 @@ class SendEventRequest extends Request
      * @param array{
      *     roomIdentifier: string,
      *     eventName: string,
-     *     attributes?: array<string, string>
+     *     attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

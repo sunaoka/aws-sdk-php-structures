@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Pinpoint\ListJourneys\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>> $EMAIL
- * @property array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>> $SMS
- * @property array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>> $PUSH
- * @property array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>> $VOICE
- * @property array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>> $CUSTOM
+ * @property array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>|null $EMAIL
+ * @property array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>|null $SMS
+ * @property array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>|null $PUSH
+ * @property array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>|null $VOICE
+ * @property array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>|null $CUSTOM
  */
 class OpenHours extends Shape
 {
     /**
      * @param array{
-     *     EMAIL?: array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>,
-     *     SMS?: array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>,
-     *     PUSH?: array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>,
-     *     VOICE?: array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>,
-     *     CUSTOM?: array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>
+     *     EMAIL?: array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>|null,
+     *     SMS?: array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>|null,
+     *     PUSH?: array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>|null,
+     *     VOICE?: array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>|null,
+     *     CUSTOM?: array<'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY', list<OpenHoursRule>>|null
      * } $args
      */
     public function __construct(array $args = [])

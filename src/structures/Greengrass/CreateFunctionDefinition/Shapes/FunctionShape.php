@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateFunctionDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FunctionArn
- * @property FunctionConfiguration $FunctionConfiguration
+ * @property string|null $FunctionArn
+ * @property FunctionConfiguration|null $FunctionConfiguration
  * @property string $Id
  */
 class FunctionShape extends Shape
 {
     /**
      * @param array{
-     *     FunctionArn?: string,
-     *     FunctionConfiguration?: FunctionConfiguration,
+     *     FunctionArn?: string|null,
+     *     FunctionConfiguration?: FunctionConfiguration|null,
      *     Id: string
      * } $args
      */

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ProtectedQuerySQLParameters $sqlParameters
- * @property ComputeConfiguration $computeConfiguration
+ * @property ComputeConfiguration|null $computeConfiguration
  */
 class ProtectedQueryInputParameters extends Shape
 {
     /**
      * @param array{
      *     sqlParameters: ProtectedQuerySQLParameters,
-     *     computeConfiguration?: ComputeConfiguration
+     *     computeConfiguration?: ComputeConfiguration|null
      * } $args
      */
     public function __construct(array $args)

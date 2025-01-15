@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DeleteChapCredentials;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TargetARN
- * @property string $InitiatorName
+ * @property string|null $TargetARN
+ * @property string|null $InitiatorName
  */
 class DeleteChapCredentialsResponse extends Response
 {

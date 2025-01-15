@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $BridgeArn
- * @property list<MessageDetail> $BridgeMessages
+ * @property list<MessageDetail>|null $BridgeMessages
  * @property 'CREATING'|'STANDBY'|'STARTING'|'DEPLOYING'|'ACTIVE'|'STOPPING'|'DELETING'|'DELETED'|'START_FAILED'|'START_PENDING'|'STOP_FAILED'|'UPDATING' $BridgeState
- * @property EgressGatewayBridge $EgressGatewayBridge
- * @property IngressGatewayBridge $IngressGatewayBridge
+ * @property EgressGatewayBridge|null $EgressGatewayBridge
+ * @property IngressGatewayBridge|null $IngressGatewayBridge
  * @property string $Name
- * @property list<BridgeOutput> $Outputs
+ * @property list<BridgeOutput>|null $Outputs
  * @property string $PlacementArn
- * @property FailoverConfig $SourceFailoverConfig
- * @property list<BridgeSource> $Sources
+ * @property FailoverConfig|null $SourceFailoverConfig
+ * @property list<BridgeSource>|null $Sources
  */
 class Bridge extends Shape
 {
     /**
      * @param array{
      *     BridgeArn: string,
-     *     BridgeMessages?: list<MessageDetail>,
+     *     BridgeMessages?: list<MessageDetail>|null,
      *     BridgeState: 'CREATING'|'STANDBY'|'STARTING'|'DEPLOYING'|'ACTIVE'|'STOPPING'|'DELETING'|'DELETED'|'START_FAILED'|'START_PENDING'|'STOP_FAILED'|'UPDATING',
-     *     EgressGatewayBridge?: EgressGatewayBridge,
-     *     IngressGatewayBridge?: IngressGatewayBridge,
+     *     EgressGatewayBridge?: EgressGatewayBridge|null,
+     *     IngressGatewayBridge?: IngressGatewayBridge|null,
      *     Name: string,
-     *     Outputs?: list<BridgeOutput>,
+     *     Outputs?: list<BridgeOutput>|null,
      *     PlacementArn: string,
-     *     SourceFailoverConfig?: FailoverConfig,
-     *     Sources?: list<BridgeSource>
+     *     SourceFailoverConfig?: FailoverConfig|null,
+     *     Sources?: list<BridgeSource>|null
      * } $args
      */
     public function __construct(array $args)

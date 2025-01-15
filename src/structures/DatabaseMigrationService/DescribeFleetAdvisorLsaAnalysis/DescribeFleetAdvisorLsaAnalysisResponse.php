@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeFleetAdvisorLs
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\FleetAdvisorLsaAnalysisResponse> $Analysis
- * @property string $NextToken
+ * @property list<Shapes\FleetAdvisorLsaAnalysisResponse>|null $Analysis
+ * @property string|null $NextToken
  */
 class DescribeFleetAdvisorLsaAnalysisResponse extends Response
 {

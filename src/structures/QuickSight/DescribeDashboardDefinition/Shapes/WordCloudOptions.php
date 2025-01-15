@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HORIZONTAL'|'HORIZONTAL_AND_VERTICAL' $WordOrientation
- * @property 'EMPHASIZE'|'NORMAL' $WordScaling
- * @property 'FLUID'|'NORMAL' $CloudLayout
- * @property 'LOWER_CASE'|'EXISTING_CASE' $WordCasing
- * @property 'NONE'|'SMALL'|'MEDIUM'|'LARGE' $WordPadding
- * @property int<1, 100> $MaximumStringLength
+ * @property 'HORIZONTAL'|'HORIZONTAL_AND_VERTICAL'|null $WordOrientation
+ * @property 'EMPHASIZE'|'NORMAL'|null $WordScaling
+ * @property 'FLUID'|'NORMAL'|null $CloudLayout
+ * @property 'LOWER_CASE'|'EXISTING_CASE'|null $WordCasing
+ * @property 'NONE'|'SMALL'|'MEDIUM'|'LARGE'|null $WordPadding
+ * @property int<1, 100>|null $MaximumStringLength
  */
 class WordCloudOptions extends Shape
 {
     /**
      * @param array{
-     *     WordOrientation?: 'HORIZONTAL'|'HORIZONTAL_AND_VERTICAL',
-     *     WordScaling?: 'EMPHASIZE'|'NORMAL',
-     *     CloudLayout?: 'FLUID'|'NORMAL',
-     *     WordCasing?: 'LOWER_CASE'|'EXISTING_CASE',
-     *     WordPadding?: 'NONE'|'SMALL'|'MEDIUM'|'LARGE',
-     *     MaximumStringLength?: int<1, 100>
+     *     WordOrientation?: 'HORIZONTAL'|'HORIZONTAL_AND_VERTICAL'|null,
+     *     WordScaling?: 'EMPHASIZE'|'NORMAL'|null,
+     *     CloudLayout?: 'FLUID'|'NORMAL'|null,
+     *     WordCasing?: 'LOWER_CASE'|'EXISTING_CASE'|null,
+     *     WordPadding?: 'NONE'|'SMALL'|'MEDIUM'|'LARGE'|null,
+     *     MaximumStringLength?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

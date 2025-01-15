@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DescribeImport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ImportArn
- * @property 'IN_PROGRESS'|'COMPLETED'|'CANCELLING'|'CANCELLED'|'FAILED' $ImportStatus
- * @property string $TableArn
- * @property string $TableId
- * @property string $ClientToken
- * @property S3BucketSource $S3BucketSource
- * @property int<0, max> $ErrorCount
- * @property string $CloudWatchLogGroupArn
- * @property 'DYNAMODB_JSON'|'ION'|'CSV' $InputFormat
- * @property InputFormatOptions $InputFormatOptions
- * @property 'GZIP'|'ZSTD'|'NONE' $InputCompressionType
- * @property TableCreationParameters $TableCreationParameters
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property int $ProcessedSizeBytes
- * @property int<0, max> $ProcessedItemCount
- * @property int<0, max> $ImportedItemCount
- * @property string $FailureCode
- * @property string $FailureMessage
+ * @property string|null $ImportArn
+ * @property 'IN_PROGRESS'|'COMPLETED'|'CANCELLING'|'CANCELLED'|'FAILED'|null $ImportStatus
+ * @property string|null $TableArn
+ * @property string|null $TableId
+ * @property string|null $ClientToken
+ * @property S3BucketSource|null $S3BucketSource
+ * @property int<0, max>|null $ErrorCount
+ * @property string|null $CloudWatchLogGroupArn
+ * @property 'DYNAMODB_JSON'|'ION'|'CSV'|null $InputFormat
+ * @property InputFormatOptions|null $InputFormatOptions
+ * @property 'GZIP'|'ZSTD'|'NONE'|null $InputCompressionType
+ * @property TableCreationParameters|null $TableCreationParameters
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property int|null $ProcessedSizeBytes
+ * @property int<0, max>|null $ProcessedItemCount
+ * @property int<0, max>|null $ImportedItemCount
+ * @property string|null $FailureCode
+ * @property string|null $FailureMessage
  */
 class ImportTableDescription extends Shape
 {
     /**
      * @param array{
-     *     ImportArn?: string,
-     *     ImportStatus?: 'IN_PROGRESS'|'COMPLETED'|'CANCELLING'|'CANCELLED'|'FAILED',
-     *     TableArn?: string,
-     *     TableId?: string,
-     *     ClientToken?: string,
-     *     S3BucketSource?: S3BucketSource,
-     *     ErrorCount?: int<0, max>,
-     *     CloudWatchLogGroupArn?: string,
-     *     InputFormat?: 'DYNAMODB_JSON'|'ION'|'CSV',
-     *     InputFormatOptions?: InputFormatOptions,
-     *     InputCompressionType?: 'GZIP'|'ZSTD'|'NONE',
-     *     TableCreationParameters?: TableCreationParameters,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     ProcessedSizeBytes?: int,
-     *     ProcessedItemCount?: int<0, max>,
-     *     ImportedItemCount?: int<0, max>,
-     *     FailureCode?: string,
-     *     FailureMessage?: string
+     *     ImportArn?: string|null,
+     *     ImportStatus?: 'IN_PROGRESS'|'COMPLETED'|'CANCELLING'|'CANCELLED'|'FAILED'|null,
+     *     TableArn?: string|null,
+     *     TableId?: string|null,
+     *     ClientToken?: string|null,
+     *     S3BucketSource?: S3BucketSource|null,
+     *     ErrorCount?: int<0, max>|null,
+     *     CloudWatchLogGroupArn?: string|null,
+     *     InputFormat?: 'DYNAMODB_JSON'|'ION'|'CSV'|null,
+     *     InputFormatOptions?: InputFormatOptions|null,
+     *     InputCompressionType?: 'GZIP'|'ZSTD'|'NONE'|null,
+     *     TableCreationParameters?: TableCreationParameters|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     ProcessedSizeBytes?: int|null,
+     *     ProcessedItemCount?: int<0, max>|null,
+     *     ImportedItemCount?: int<0, max>|null,
+     *     FailureCode?: string|null,
+     *     FailureMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

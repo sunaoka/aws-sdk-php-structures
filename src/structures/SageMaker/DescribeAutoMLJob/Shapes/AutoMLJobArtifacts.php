@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeAutoMLJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CandidateDefinitionNotebookLocation
- * @property string $DataExplorationNotebookLocation
+ * @property string|null $CandidateDefinitionNotebookLocation
+ * @property string|null $DataExplorationNotebookLocation
  */
 class AutoMLJobArtifacts extends Shape
 {
     /**
      * @param array{
-     *     CandidateDefinitionNotebookLocation?: string,
-     *     DataExplorationNotebookLocation?: string
+     *     CandidateDefinitionNotebookLocation?: string|null,
+     *     DataExplorationNotebookLocation?: string|null
      * } $args
      */
     public function __construct(array $args = [])

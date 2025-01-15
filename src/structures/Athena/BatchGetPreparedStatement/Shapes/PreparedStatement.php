@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Athena\BatchGetPreparedStatement\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StatementName
- * @property string $QueryStatement
- * @property string $WorkGroupName
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $StatementName
+ * @property string|null $QueryStatement
+ * @property string|null $WorkGroupName
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class PreparedStatement extends Shape
 {
     /**
      * @param array{
-     *     StatementName?: string,
-     *     QueryStatement?: string,
-     *     WorkGroupName?: string,
-     *     Description?: string,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     StatementName?: string|null,
+     *     QueryStatement?: string|null,
+     *     WorkGroupName?: string|null,
+     *     Description?: string|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

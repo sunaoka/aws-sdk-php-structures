@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\CreateStream;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DeviceName
+ * @property string|null $DeviceName
  * @property string $StreamName
- * @property string $MediaType
- * @property string $KmsKeyId
- * @property int<0, max> $DataRetentionInHours
- * @property array<string, string> $Tags
+ * @property string|null $MediaType
+ * @property string|null $KmsKeyId
+ * @property int<0, max>|null $DataRetentionInHours
+ * @property array<string, string>|null $Tags
  */
 class CreateStreamRequest extends Request
 {
     /**
      * @param array{
-     *     DeviceName?: string,
+     *     DeviceName?: string|null,
      *     StreamName: string,
-     *     MediaType?: string,
-     *     KmsKeyId?: string,
-     *     DataRetentionInHours?: int<0, max>,
-     *     Tags?: array<string, string>
+     *     MediaType?: string|null,
+     *     KmsKeyId?: string|null,
+     *     DataRetentionInHours?: int<0, max>|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $CertificateAuthorityPublicKeyIdentifier
  * @property string $WrappingKeyCertificate
- * @property 'RSA_OAEP_SHA_256'|'RSA_OAEP_SHA_512' $WrappingSpec
+ * @property 'RSA_OAEP_SHA_256'|'RSA_OAEP_SHA_512'|null $WrappingSpec
  */
 class ExportKeyCryptogram extends Shape
 {
@@ -15,7 +15,7 @@ class ExportKeyCryptogram extends Shape
      * @param array{
      *     CertificateAuthorityPublicKeyIdentifier: string,
      *     WrappingKeyCertificate: string,
-     *     WrappingSpec?: 'RSA_OAEP_SHA_256'|'RSA_OAEP_SHA_512'
+     *     WrappingSpec?: 'RSA_OAEP_SHA_256'|'RSA_OAEP_SHA_512'|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property EntityPropertyReference $propertyReference
- * @property DataValue $propertyValue
+ * @property DataValue|null $propertyValue
  */
 class PropertyLatestValue extends Shape
 {
     /**
      * @param array{
      *     propertyReference: EntityPropertyReference,
-     *     propertyValue?: DataValue
+     *     propertyValue?: DataValue|null
      * } $args
      */
     public function __construct(array $args)

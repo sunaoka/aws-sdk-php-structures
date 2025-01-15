@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\drs\TerminateRecoveryInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $creationDateTime
- * @property string $endDateTime
- * @property 'START_RECOVERY'|'START_DRILL'|'FAILBACK'|'DIAGNOSTIC'|'TERMINATE_RECOVERY_INSTANCES'|'TARGET_ACCOUNT'|'CREATE_NETWORK_RECOVERY'|'UPDATE_NETWORK_RECOVERY'|'ASSOCIATE_NETWORK_RECOVERY' $initiatedBy
+ * @property string|null $arn
+ * @property string|null $creationDateTime
+ * @property string|null $endDateTime
+ * @property 'START_RECOVERY'|'START_DRILL'|'FAILBACK'|'DIAGNOSTIC'|'TERMINATE_RECOVERY_INSTANCES'|'TARGET_ACCOUNT'|'CREATE_NETWORK_RECOVERY'|'UPDATE_NETWORK_RECOVERY'|'ASSOCIATE_NETWORK_RECOVERY'|null $initiatedBy
  * @property string $jobID
- * @property list<ParticipatingResource> $participatingResources
- * @property list<ParticipatingServer> $participatingServers
- * @property 'PENDING'|'STARTED'|'COMPLETED' $status
- * @property array<string, string> $tags
- * @property 'LAUNCH'|'TERMINATE'|'CREATE_CONVERTED_SNAPSHOT' $type
+ * @property list<ParticipatingResource>|null $participatingResources
+ * @property list<ParticipatingServer>|null $participatingServers
+ * @property 'PENDING'|'STARTED'|'COMPLETED'|null $status
+ * @property array<string, string>|null $tags
+ * @property 'LAUNCH'|'TERMINATE'|'CREATE_CONVERTED_SNAPSHOT'|null $type
  */
 class Job extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     creationDateTime?: string,
-     *     endDateTime?: string,
-     *     initiatedBy?: 'START_RECOVERY'|'START_DRILL'|'FAILBACK'|'DIAGNOSTIC'|'TERMINATE_RECOVERY_INSTANCES'|'TARGET_ACCOUNT'|'CREATE_NETWORK_RECOVERY'|'UPDATE_NETWORK_RECOVERY'|'ASSOCIATE_NETWORK_RECOVERY',
+     *     arn?: string|null,
+     *     creationDateTime?: string|null,
+     *     endDateTime?: string|null,
+     *     initiatedBy?: 'START_RECOVERY'|'START_DRILL'|'FAILBACK'|'DIAGNOSTIC'|'TERMINATE_RECOVERY_INSTANCES'|'TARGET_ACCOUNT'|'CREATE_NETWORK_RECOVERY'|'UPDATE_NETWORK_RECOVERY'|'ASSOCIATE_NETWORK_RECOVERY'|null,
      *     jobID: string,
-     *     participatingResources?: list<ParticipatingResource>,
-     *     participatingServers?: list<ParticipatingServer>,
-     *     status?: 'PENDING'|'STARTED'|'COMPLETED',
-     *     tags?: array<string, string>,
-     *     type?: 'LAUNCH'|'TERMINATE'|'CREATE_CONVERTED_SNAPSHOT'
+     *     participatingResources?: list<ParticipatingResource>|null,
+     *     participatingServers?: list<ParticipatingServer>|null,
+     *     status?: 'PENDING'|'STARTED'|'COMPLETED'|null,
+     *     tags?: array<string, string>|null,
+     *     type?: 'LAUNCH'|'TERMINATE'|'CREATE_CONVERTED_SNAPSHOT'|null
      * } $args
      */
     public function __construct(array $args)

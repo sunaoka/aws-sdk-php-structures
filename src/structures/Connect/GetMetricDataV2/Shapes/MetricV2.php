@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Connect\GetMetricDataV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property list<ThresholdV2> $Threshold
- * @property list<MetricFilterV2> $MetricFilters
+ * @property string|null $Name
+ * @property list<ThresholdV2>|null $Threshold
+ * @property list<MetricFilterV2>|null $MetricFilters
  */
 class MetricV2 extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Threshold?: list<ThresholdV2>,
-     *     MetricFilters?: list<MetricFilterV2>
+     *     Name?: string|null,
+     *     Threshold?: list<ThresholdV2>|null,
+     *     MetricFilters?: list<MetricFilterV2>|null
      * } $args
      */
     public function __construct(array $args = [])

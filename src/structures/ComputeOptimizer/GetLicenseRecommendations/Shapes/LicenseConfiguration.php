@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetLicenseRecommendations\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $numberOfCores
- * @property string $instanceType
- * @property string $operatingSystem
- * @property 'Enterprise'|'Standard'|'Free'|'NoLicenseEditionFound' $licenseEdition
- * @property 'SQLServer' $licenseName
- * @property 'LicenseIncluded'|'BringYourOwnLicense' $licenseModel
- * @property string $licenseVersion
- * @property list<MetricSource> $metricsSource
+ * @property int|null $numberOfCores
+ * @property string|null $instanceType
+ * @property string|null $operatingSystem
+ * @property 'Enterprise'|'Standard'|'Free'|'NoLicenseEditionFound'|null $licenseEdition
+ * @property 'SQLServer'|null $licenseName
+ * @property 'LicenseIncluded'|'BringYourOwnLicense'|null $licenseModel
+ * @property string|null $licenseVersion
+ * @property list<MetricSource>|null $metricsSource
  */
 class LicenseConfiguration extends Shape
 {
     /**
      * @param array{
-     *     numberOfCores?: int,
-     *     instanceType?: string,
-     *     operatingSystem?: string,
-     *     licenseEdition?: 'Enterprise'|'Standard'|'Free'|'NoLicenseEditionFound',
-     *     licenseName?: 'SQLServer',
-     *     licenseModel?: 'LicenseIncluded'|'BringYourOwnLicense',
-     *     licenseVersion?: string,
-     *     metricsSource?: list<MetricSource>
+     *     numberOfCores?: int|null,
+     *     instanceType?: string|null,
+     *     operatingSystem?: string|null,
+     *     licenseEdition?: 'Enterprise'|'Standard'|'Free'|'NoLicenseEditionFound'|null,
+     *     licenseName?: 'SQLServer'|null,
+     *     licenseModel?: 'LicenseIncluded'|'BringYourOwnLicense'|null,
+     *     licenseVersion?: string|null,
+     *     metricsSource?: list<MetricSource>|null
      * } $args
      */
     public function __construct(array $args = [])

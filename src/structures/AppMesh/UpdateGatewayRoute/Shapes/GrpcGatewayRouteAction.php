@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateGatewayRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GrpcGatewayRouteRewrite $rewrite
+ * @property GrpcGatewayRouteRewrite|null $rewrite
  * @property GatewayRouteTarget $target
  */
 class GrpcGatewayRouteAction extends Shape
 {
     /**
      * @param array{
-     *     rewrite?: GrpcGatewayRouteRewrite,
+     *     rewrite?: GrpcGatewayRouteRewrite|null,
      *     target: GatewayRouteTarget
      * } $args
      */

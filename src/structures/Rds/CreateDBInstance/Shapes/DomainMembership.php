@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Rds\CreateDBInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Domain
- * @property string $Status
- * @property string $FQDN
- * @property string $IAMRoleName
- * @property string $OU
- * @property string $AuthSecretArn
- * @property list<string> $DnsIps
+ * @property string|null $Domain
+ * @property string|null $Status
+ * @property string|null $FQDN
+ * @property string|null $IAMRoleName
+ * @property string|null $OU
+ * @property string|null $AuthSecretArn
+ * @property list<string>|null $DnsIps
  */
 class DomainMembership extends Shape
 {
     /**
      * @param array{
-     *     Domain?: string,
-     *     Status?: string,
-     *     FQDN?: string,
-     *     IAMRoleName?: string,
-     *     OU?: string,
-     *     AuthSecretArn?: string,
-     *     DnsIps?: list<string>
+     *     Domain?: string|null,
+     *     Status?: string|null,
+     *     FQDN?: string|null,
+     *     IAMRoleName?: string|null,
+     *     OU?: string|null,
+     *     AuthSecretArn?: string|null,
+     *     DnsIps?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

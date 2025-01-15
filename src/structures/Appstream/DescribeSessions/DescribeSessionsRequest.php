@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $StackName
  * @property string $FleetName
- * @property string $UserId
- * @property string $NextToken
- * @property int $Limit
- * @property 'API'|'SAML'|'USERPOOL'|'AWS_AD' $AuthenticationType
- * @property string $InstanceId
+ * @property string|null $UserId
+ * @property string|null $NextToken
+ * @property int|null $Limit
+ * @property 'API'|'SAML'|'USERPOOL'|'AWS_AD'|null $AuthenticationType
+ * @property string|null $InstanceId
  */
 class DescribeSessionsRequest extends Request
 {
@@ -19,11 +19,11 @@ class DescribeSessionsRequest extends Request
      * @param array{
      *     StackName: string,
      *     FleetName: string,
-     *     UserId?: string,
-     *     NextToken?: string,
-     *     Limit?: int,
-     *     AuthenticationType?: 'API'|'SAML'|'USERPOOL'|'AWS_AD',
-     *     InstanceId?: string
+     *     UserId?: string|null,
+     *     NextToken?: string|null,
+     *     Limit?: int|null,
+     *     AuthenticationType?: 'API'|'SAML'|'USERPOOL'|'AWS_AD'|null,
+     *     InstanceId?: string|null
      * } $args
      */
     public function __construct(array $args)

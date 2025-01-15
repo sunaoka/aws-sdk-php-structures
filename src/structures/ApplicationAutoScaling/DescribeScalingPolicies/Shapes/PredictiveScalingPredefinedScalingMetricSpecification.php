@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $PredefinedMetricType
- * @property string $ResourceLabel
+ * @property string|null $ResourceLabel
  */
 class PredictiveScalingPredefinedScalingMetricSpecification extends Shape
 {
     /**
      * @param array{
      *     PredefinedMetricType: string,
-     *     ResourceLabel?: string
+     *     ResourceLabel?: string|null
      * } $args
      */
     public function __construct(array $args)

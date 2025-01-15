@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Macie2\BatchGetCustomDataIdentifiers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property bool $deleted
- * @property string $description
- * @property string $id
- * @property string $name
+ * @property string|null $arn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property bool|null $deleted
+ * @property string|null $description
+ * @property string|null $id
+ * @property string|null $name
  */
 class BatchGetCustomDataIdentifierSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     deleted?: bool,
-     *     description?: string,
-     *     id?: string,
-     *     name?: string
+     *     arn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     deleted?: bool|null,
+     *     description?: string|null,
+     *     id?: string|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

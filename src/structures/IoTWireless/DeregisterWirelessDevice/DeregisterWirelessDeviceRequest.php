@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Identifier
- * @property 'Sidewalk'|'LoRaWAN' $WirelessDeviceType
+ * @property 'Sidewalk'|'LoRaWAN'|null $WirelessDeviceType
  */
 class DeregisterWirelessDeviceRequest extends Request
 {
     /**
      * @param array{
      *     Identifier: string,
-     *     WirelessDeviceType?: 'Sidewalk'|'LoRaWAN'
+     *     WirelessDeviceType?: 'Sidewalk'|'LoRaWAN'|null
      * } $args
      */
     public function __construct(array $args)

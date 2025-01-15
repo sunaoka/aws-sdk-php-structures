@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property DocumentIdentifier $identifier
  * @property string $knowledgeBaseId
  * @property 'INDEXED'|'PARTIALLY_INDEXED'|'PENDING'|'FAILED'|'METADATA_PARTIALLY_INDEXED'|'METADATA_UPDATE_FAILED'|'IGNORED'|'NOT_FOUND'|'STARTING'|'IN_PROGRESS'|'DELETING'|'DELETE_IN_PROGRESS' $status
- * @property string $statusReason
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $statusReason
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class KnowledgeBaseDocumentDetail extends Shape
 {
@@ -20,8 +20,8 @@ class KnowledgeBaseDocumentDetail extends Shape
      *     identifier: DocumentIdentifier,
      *     knowledgeBaseId: string,
      *     status: 'INDEXED'|'PARTIALLY_INDEXED'|'PENDING'|'FAILED'|'METADATA_PARTIALLY_INDEXED'|'METADATA_UPDATE_FAILED'|'IGNORED'|'NOT_FOUND'|'STARTING'|'IN_PROGRESS'|'DELETING'|'DELETE_IN_PROGRESS',
-     *     statusReason?: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     statusReason?: string|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

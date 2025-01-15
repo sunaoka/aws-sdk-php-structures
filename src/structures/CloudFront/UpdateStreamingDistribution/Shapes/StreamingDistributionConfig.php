@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $CallerReference
  * @property S3Origin $S3Origin
- * @property Aliases $Aliases
+ * @property Aliases|null $Aliases
  * @property string $Comment
- * @property StreamingLoggingConfig $Logging
+ * @property StreamingLoggingConfig|null $Logging
  * @property TrustedSigners $TrustedSigners
- * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All' $PriceClass
+ * @property 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|null $PriceClass
  * @property bool $Enabled
  */
 class StreamingDistributionConfig extends Shape
@@ -20,11 +20,11 @@ class StreamingDistributionConfig extends Shape
      * @param array{
      *     CallerReference: string,
      *     S3Origin: S3Origin,
-     *     Aliases?: Aliases,
+     *     Aliases?: Aliases|null,
      *     Comment: string,
-     *     Logging?: StreamingLoggingConfig,
+     *     Logging?: StreamingLoggingConfig|null,
      *     TrustedSigners: TrustedSigners,
-     *     PriceClass?: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All',
+     *     PriceClass?: 'PriceClass_100'|'PriceClass_200'|'PriceClass_All'|null,
      *     Enabled: bool
      * } $args
      */

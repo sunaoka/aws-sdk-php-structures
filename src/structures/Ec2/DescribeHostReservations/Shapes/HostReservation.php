@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeHostReservations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Count
- * @property 'USD' $CurrencyCode
- * @property int $Duration
- * @property \Aws\Api\DateTimeResult $End
- * @property list<string> $HostIdSet
- * @property string $HostReservationId
- * @property string $HourlyPrice
- * @property string $InstanceFamily
- * @property string $OfferingId
- * @property 'AllUpfront'|'PartialUpfront'|'NoUpfront' $PaymentOption
- * @property \Aws\Api\DateTimeResult $Start
- * @property 'payment-pending'|'payment-failed'|'active'|'retired' $State
- * @property string $UpfrontPrice
- * @property list<Tag> $Tags
+ * @property int|null $Count
+ * @property 'USD'|null $CurrencyCode
+ * @property int|null $Duration
+ * @property \Aws\Api\DateTimeResult|null $End
+ * @property list<string>|null $HostIdSet
+ * @property string|null $HostReservationId
+ * @property string|null $HourlyPrice
+ * @property string|null $InstanceFamily
+ * @property string|null $OfferingId
+ * @property 'AllUpfront'|'PartialUpfront'|'NoUpfront'|null $PaymentOption
+ * @property \Aws\Api\DateTimeResult|null $Start
+ * @property 'payment-pending'|'payment-failed'|'active'|'retired'|null $State
+ * @property string|null $UpfrontPrice
+ * @property list<Tag>|null $Tags
  */
 class HostReservation extends Shape
 {
     /**
      * @param array{
-     *     Count?: int,
-     *     CurrencyCode?: 'USD',
-     *     Duration?: int,
-     *     End?: \Aws\Api\DateTimeResult,
-     *     HostIdSet?: list<string>,
-     *     HostReservationId?: string,
-     *     HourlyPrice?: string,
-     *     InstanceFamily?: string,
-     *     OfferingId?: string,
-     *     PaymentOption?: 'AllUpfront'|'PartialUpfront'|'NoUpfront',
-     *     Start?: \Aws\Api\DateTimeResult,
-     *     State?: 'payment-pending'|'payment-failed'|'active'|'retired',
-     *     UpfrontPrice?: string,
-     *     Tags?: list<Tag>
+     *     Count?: int|null,
+     *     CurrencyCode?: 'USD'|null,
+     *     Duration?: int|null,
+     *     End?: \Aws\Api\DateTimeResult|null,
+     *     HostIdSet?: list<string>|null,
+     *     HostReservationId?: string|null,
+     *     HourlyPrice?: string|null,
+     *     InstanceFamily?: string|null,
+     *     OfferingId?: string|null,
+     *     PaymentOption?: 'AllUpfront'|'PartialUpfront'|'NoUpfront'|null,
+     *     Start?: \Aws\Api\DateTimeResult|null,
+     *     State?: 'payment-pending'|'payment-failed'|'active'|'retired'|null,
+     *     UpfrontPrice?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

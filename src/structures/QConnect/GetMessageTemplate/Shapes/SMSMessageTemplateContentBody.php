@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\GetMessageTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MessageTemplateBodyContentProvider $plainText
+ * @property MessageTemplateBodyContentProvider|null $plainText
  */
 class SMSMessageTemplateContentBody extends Shape
 {
     /**
-     * @param array{plainText?: MessageTemplateBodyContentProvider} $args
+     * @param array{plainText?: MessageTemplateBodyContentProvider|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Synthetics\ListAssociatedGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property string $Arn
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $Arn
  */
 class GroupSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     Arn?: string
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

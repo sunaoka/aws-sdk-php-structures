@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCisScanResultsAggregatedByTarget
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property string $platform
+ * @property string|null $accountId
+ * @property string|null $platform
  * @property string $scanArn
- * @property StatusCounts $statusCounts
- * @property string $targetResourceId
- * @property array<string, list<string>> $targetResourceTags
- * @property 'TIMED_OUT'|'CANCELLED'|'COMPLETED' $targetStatus
- * @property 'SCAN_IN_PROGRESS'|'UNSUPPORTED_OS'|'SSM_UNMANAGED' $targetStatusReason
+ * @property StatusCounts|null $statusCounts
+ * @property string|null $targetResourceId
+ * @property array<string, list<string>>|null $targetResourceTags
+ * @property 'TIMED_OUT'|'CANCELLED'|'COMPLETED'|null $targetStatus
+ * @property 'SCAN_IN_PROGRESS'|'UNSUPPORTED_OS'|'SSM_UNMANAGED'|null $targetStatusReason
  */
 class CisTargetResourceAggregation extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     platform?: string,
+     *     accountId?: string|null,
+     *     platform?: string|null,
      *     scanArn: string,
-     *     statusCounts?: StatusCounts,
-     *     targetResourceId?: string,
-     *     targetResourceTags?: array<string, list<string>>,
-     *     targetStatus?: 'TIMED_OUT'|'CANCELLED'|'COMPLETED',
-     *     targetStatusReason?: 'SCAN_IN_PROGRESS'|'UNSUPPORTED_OS'|'SSM_UNMANAGED'
+     *     statusCounts?: StatusCounts|null,
+     *     targetResourceId?: string|null,
+     *     targetResourceTags?: array<string, list<string>>|null,
+     *     targetStatus?: 'TIMED_OUT'|'CANCELLED'|'COMPLETED'|null,
+     *     targetStatusReason?: 'SCAN_IN_PROGRESS'|'UNSUPPORTED_OS'|'SSM_UNMANAGED'|null
      * } $args
      */
     public function __construct(array $args)

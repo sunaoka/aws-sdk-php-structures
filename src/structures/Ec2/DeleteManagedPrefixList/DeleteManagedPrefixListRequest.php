@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteManagedPrefixList;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $PrefixListId
  */
 class DeleteManagedPrefixListRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     PrefixListId: string
      * } $args
      */

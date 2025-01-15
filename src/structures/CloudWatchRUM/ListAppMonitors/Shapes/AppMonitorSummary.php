@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\ListAppMonitors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Created
- * @property string $Id
- * @property string $LastModified
- * @property string $Name
- * @property 'CREATED'|'DELETING'|'ACTIVE' $State
+ * @property string|null $Created
+ * @property string|null $Id
+ * @property string|null $LastModified
+ * @property string|null $Name
+ * @property 'CREATED'|'DELETING'|'ACTIVE'|null $State
  */
 class AppMonitorSummary extends Shape
 {
     /**
      * @param array{
-     *     Created?: string,
-     *     Id?: string,
-     *     LastModified?: string,
-     *     Name?: string,
-     *     State?: 'CREATED'|'DELETING'|'ACTIVE'
+     *     Created?: string|null,
+     *     Id?: string|null,
+     *     LastModified?: string|null,
+     *     Name?: string|null,
+     *     State?: 'CREATED'|'DELETING'|'ACTIVE'|null
      * } $args
      */
     public function __construct(array $args = [])

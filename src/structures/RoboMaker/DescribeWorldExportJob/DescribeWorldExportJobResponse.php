@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\RoboMaker\DescribeWorldExportJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $arn
- * @property 'Pending'|'Running'|'Completed'|'Failed'|'Canceling'|'Canceled' $status
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property 'InternalServiceError'|'LimitExceeded'|'ResourceNotFound'|'RequestThrottled'|'InvalidInput'|'AccessDenied' $failureCode
- * @property string $failureReason
- * @property string $clientRequestToken
- * @property list<string> $worlds
- * @property Shapes\OutputLocation $outputLocation
- * @property string $iamRole
- * @property array<string, string> $tags
+ * @property string|null $arn
+ * @property 'Pending'|'Running'|'Completed'|'Failed'|'Canceling'|'Canceled'|null $status
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property 'InternalServiceError'|'LimitExceeded'|'ResourceNotFound'|'RequestThrottled'|'InvalidInput'|'AccessDenied'|null $failureCode
+ * @property string|null $failureReason
+ * @property string|null $clientRequestToken
+ * @property list<string>|null $worlds
+ * @property Shapes\OutputLocation|null $outputLocation
+ * @property string|null $iamRole
+ * @property array<string, string>|null $tags
  */
 class DescribeWorldExportJobResponse extends Response
 {

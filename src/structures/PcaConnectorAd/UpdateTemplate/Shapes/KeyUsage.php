@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Critical
+ * @property bool|null $Critical
  * @property KeyUsageFlags $UsageFlags
  */
 class KeyUsage extends Shape
 {
     /**
      * @param array{
-     *     Critical?: bool,
+     *     Critical?: bool|null,
      *     UsageFlags: KeyUsageFlags
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\GetDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IoTJobExponentialRolloutRate $exponentialRate
- * @property int<1, 1000> $maximumPerMinute
+ * @property IoTJobExponentialRolloutRate|null $exponentialRate
+ * @property int<1, 1000>|null $maximumPerMinute
  */
 class IoTJobExecutionsRolloutConfig extends Shape
 {
     /**
      * @param array{
-     *     exponentialRate?: IoTJobExponentialRolloutRate,
-     *     maximumPerMinute?: int<1, 1000>
+     *     exponentialRate?: IoTJobExponentialRolloutRate|null,
+     *     maximumPerMinute?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args = [])

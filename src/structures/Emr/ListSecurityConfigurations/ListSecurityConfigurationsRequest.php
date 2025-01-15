@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Emr\ListSecurityConfigurations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Marker
+ * @property string|null $Marker
  */
 class ListSecurityConfigurationsRequest extends Request
 {
     /**
-     * @param array{Marker?: string} $args
+     * @param array{Marker?: string|null} $args
      */
     public function __construct(array $args = [])
     {

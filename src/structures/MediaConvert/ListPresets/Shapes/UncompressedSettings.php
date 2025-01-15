@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListPresets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'I420'|'I422'|'I444' $Fourcc
- * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
- * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int<1, 2147483647> $FramerateDenominator
- * @property int<1, 2147483647> $FramerateNumerator
- * @property 'INTERLACED'|'PROGRESSIVE' $InterlaceMode
- * @property 'INTERLACED'|'INTERLACED_OPTIMIZE' $ScanTypeConversionMode
- * @property 'DISABLED'|'ENABLED' $SlowPal
- * @property 'NONE'|'HARD' $Telecine
+ * @property 'I420'|'I422'|'I444'|null $Fourcc
+ * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
+ * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
+ * @property int<1, 2147483647>|null $FramerateDenominator
+ * @property int<1, 2147483647>|null $FramerateNumerator
+ * @property 'INTERLACED'|'PROGRESSIVE'|null $InterlaceMode
+ * @property 'INTERLACED'|'INTERLACED_OPTIMIZE'|null $ScanTypeConversionMode
+ * @property 'DISABLED'|'ENABLED'|null $SlowPal
+ * @property 'NONE'|'HARD'|null $Telecine
  */
 class UncompressedSettings extends Shape
 {
     /**
      * @param array{
-     *     Fourcc?: 'I420'|'I422'|'I444',
-     *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
-     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int<1, 2147483647>,
-     *     FramerateNumerator?: int<1, 2147483647>,
-     *     InterlaceMode?: 'INTERLACED'|'PROGRESSIVE',
-     *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE',
-     *     SlowPal?: 'DISABLED'|'ENABLED',
-     *     Telecine?: 'NONE'|'HARD'
+     *     Fourcc?: 'I420'|'I422'|'I444'|null,
+     *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
+     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
+     *     FramerateDenominator?: int<1, 2147483647>|null,
+     *     FramerateNumerator?: int<1, 2147483647>|null,
+     *     InterlaceMode?: 'INTERLACED'|'PROGRESSIVE'|null,
+     *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE'|null,
+     *     SlowPal?: 'DISABLED'|'ENABLED'|null,
+     *     Telecine?: 'NONE'|'HARD'|null
      * } $args
      */
     public function __construct(array $args = [])

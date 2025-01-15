@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateFunctionDefinition;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property string $CreationTimestamp
- * @property string $Id
- * @property string $LastUpdatedTimestamp
- * @property string $LatestVersion
- * @property string $LatestVersionArn
- * @property string $Name
+ * @property string|null $Arn
+ * @property string|null $CreationTimestamp
+ * @property string|null $Id
+ * @property string|null $LastUpdatedTimestamp
+ * @property string|null $LatestVersion
+ * @property string|null $LatestVersionArn
+ * @property string|null $Name
  */
 class CreateFunctionDefinitionResponse extends Response
 {

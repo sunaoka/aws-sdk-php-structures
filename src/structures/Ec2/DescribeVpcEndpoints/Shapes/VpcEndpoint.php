@@ -5,61 +5,61 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcEndpoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VpcEndpointId
- * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork' $VpcEndpointType
- * @property string $VpcId
- * @property string $ServiceName
- * @property 'PendingAcceptance'|'Pending'|'Available'|'Deleting'|'Deleted'|'Rejected'|'Failed'|'Expired'|'Partial' $State
- * @property string $PolicyDocument
- * @property list<string> $RouteTableIds
- * @property list<string> $SubnetIds
- * @property list<SecurityGroupIdentifier> $Groups
- * @property 'ipv4'|'dualstack'|'ipv6' $IpAddressType
- * @property DnsOptions $DnsOptions
- * @property bool $PrivateDnsEnabled
- * @property bool $RequesterManaged
- * @property list<string> $NetworkInterfaceIds
- * @property list<DnsEntry> $DnsEntries
- * @property \Aws\Api\DateTimeResult $CreationTimestamp
- * @property list<Tag> $Tags
- * @property string $OwnerId
- * @property LastError $LastError
- * @property list<SubnetIpPrefixes> $Ipv4Prefixes
- * @property list<SubnetIpPrefixes> $Ipv6Prefixes
- * @property string $FailureReason
- * @property string $ServiceNetworkArn
- * @property string $ResourceConfigurationArn
- * @property string $ServiceRegion
+ * @property string|null $VpcEndpointId
+ * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null $VpcEndpointType
+ * @property string|null $VpcId
+ * @property string|null $ServiceName
+ * @property 'PendingAcceptance'|'Pending'|'Available'|'Deleting'|'Deleted'|'Rejected'|'Failed'|'Expired'|'Partial'|null $State
+ * @property string|null $PolicyDocument
+ * @property list<string>|null $RouteTableIds
+ * @property list<string>|null $SubnetIds
+ * @property list<SecurityGroupIdentifier>|null $Groups
+ * @property 'ipv4'|'dualstack'|'ipv6'|null $IpAddressType
+ * @property DnsOptions|null $DnsOptions
+ * @property bool|null $PrivateDnsEnabled
+ * @property bool|null $RequesterManaged
+ * @property list<string>|null $NetworkInterfaceIds
+ * @property list<DnsEntry>|null $DnsEntries
+ * @property \Aws\Api\DateTimeResult|null $CreationTimestamp
+ * @property list<Tag>|null $Tags
+ * @property string|null $OwnerId
+ * @property LastError|null $LastError
+ * @property list<SubnetIpPrefixes>|null $Ipv4Prefixes
+ * @property list<SubnetIpPrefixes>|null $Ipv6Prefixes
+ * @property string|null $FailureReason
+ * @property string|null $ServiceNetworkArn
+ * @property string|null $ResourceConfigurationArn
+ * @property string|null $ServiceRegion
  */
 class VpcEndpoint extends Shape
 {
     /**
      * @param array{
-     *     VpcEndpointId?: string,
-     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork',
-     *     VpcId?: string,
-     *     ServiceName?: string,
-     *     State?: 'PendingAcceptance'|'Pending'|'Available'|'Deleting'|'Deleted'|'Rejected'|'Failed'|'Expired'|'Partial',
-     *     PolicyDocument?: string,
-     *     RouteTableIds?: list<string>,
-     *     SubnetIds?: list<string>,
-     *     Groups?: list<SecurityGroupIdentifier>,
-     *     IpAddressType?: 'ipv4'|'dualstack'|'ipv6',
-     *     DnsOptions?: DnsOptions,
-     *     PrivateDnsEnabled?: bool,
-     *     RequesterManaged?: bool,
-     *     NetworkInterfaceIds?: list<string>,
-     *     DnsEntries?: list<DnsEntry>,
-     *     CreationTimestamp?: \Aws\Api\DateTimeResult,
-     *     Tags?: list<Tag>,
-     *     OwnerId?: string,
-     *     LastError?: LastError,
-     *     Ipv4Prefixes?: list<SubnetIpPrefixes>,
-     *     Ipv6Prefixes?: list<SubnetIpPrefixes>,
-     *     FailureReason?: string,
-     *     ServiceNetworkArn?: string,
-     *     ResourceConfigurationArn?: string,
-     *     ServiceRegion?: string
+     *     VpcEndpointId?: string|null,
+     *     VpcEndpointType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|'Resource'|'ServiceNetwork'|null,
+     *     VpcId?: string|null,
+     *     ServiceName?: string|null,
+     *     State?: 'PendingAcceptance'|'Pending'|'Available'|'Deleting'|'Deleted'|'Rejected'|'Failed'|'Expired'|'Partial'|null,
+     *     PolicyDocument?: string|null,
+     *     RouteTableIds?: list<string>|null,
+     *     SubnetIds?: list<string>|null,
+     *     Groups?: list<SecurityGroupIdentifier>|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|'ipv6'|null,
+     *     DnsOptions?: DnsOptions|null,
+     *     PrivateDnsEnabled?: bool|null,
+     *     RequesterManaged?: bool|null,
+     *     NetworkInterfaceIds?: list<string>|null,
+     *     DnsEntries?: list<DnsEntry>|null,
+     *     CreationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     Tags?: list<Tag>|null,
+     *     OwnerId?: string|null,
+     *     LastError?: LastError|null,
+     *     Ipv4Prefixes?: list<SubnetIpPrefixes>|null,
+     *     Ipv6Prefixes?: list<SubnetIpPrefixes>|null,
+     *     FailureReason?: string|null,
+     *     ServiceNetworkArn?: string|null,
+     *     ResourceConfigurationArn?: string|null,
+     *     ServiceRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

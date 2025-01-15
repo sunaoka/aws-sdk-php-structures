@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
  */
 class InsightTimeRange extends Shape
 {
     /**
      * @param array{
      *     StartTime: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult
+     *     EndTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

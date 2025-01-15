@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeReservedInstancesListings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClientToken
- * @property \Aws\Api\DateTimeResult $CreateDate
- * @property list<InstanceCount> $InstanceCounts
- * @property list<PriceSchedule> $PriceSchedules
- * @property string $ReservedInstancesId
- * @property string $ReservedInstancesListingId
- * @property 'active'|'pending'|'cancelled'|'closed' $Status
- * @property string $StatusMessage
- * @property list<Tag> $Tags
- * @property \Aws\Api\DateTimeResult $UpdateDate
+ * @property string|null $ClientToken
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
+ * @property list<InstanceCount>|null $InstanceCounts
+ * @property list<PriceSchedule>|null $PriceSchedules
+ * @property string|null $ReservedInstancesId
+ * @property string|null $ReservedInstancesListingId
+ * @property 'active'|'pending'|'cancelled'|'closed'|null $Status
+ * @property string|null $StatusMessage
+ * @property list<Tag>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $UpdateDate
  */
 class ReservedInstancesListing extends Shape
 {
     /**
      * @param array{
-     *     ClientToken?: string,
-     *     CreateDate?: \Aws\Api\DateTimeResult,
-     *     InstanceCounts?: list<InstanceCount>,
-     *     PriceSchedules?: list<PriceSchedule>,
-     *     ReservedInstancesId?: string,
-     *     ReservedInstancesListingId?: string,
-     *     Status?: 'active'|'pending'|'cancelled'|'closed',
-     *     StatusMessage?: string,
-     *     Tags?: list<Tag>,
-     *     UpdateDate?: \Aws\Api\DateTimeResult
+     *     ClientToken?: string|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null,
+     *     InstanceCounts?: list<InstanceCount>|null,
+     *     PriceSchedules?: list<PriceSchedule>|null,
+     *     ReservedInstancesId?: string|null,
+     *     ReservedInstancesListingId?: string|null,
+     *     Status?: 'active'|'pending'|'cancelled'|'closed'|null,
+     *     StatusMessage?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     UpdateDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

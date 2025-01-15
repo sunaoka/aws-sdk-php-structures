@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PolicyName
+ * @property string|null $PolicyName
  */
 class AwsIamUserPolicy extends Shape
 {
     /**
-     * @param array{PolicyName?: string} $args
+     * @param array{PolicyName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

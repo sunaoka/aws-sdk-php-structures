@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enableCodeHookInvocation
- * @property string $invocationLabel
+ * @property string|null $invocationLabel
  */
 class ElicitationCodeHookInvocationSetting extends Shape
 {
     /**
      * @param array{
      *     enableCodeHookInvocation: bool,
-     *     invocationLabel?: string
+     *     invocationLabel?: string|null
      * } $args
      */
     public function __construct(array $args)

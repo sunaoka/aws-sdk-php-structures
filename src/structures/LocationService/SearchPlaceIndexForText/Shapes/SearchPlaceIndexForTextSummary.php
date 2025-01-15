@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Text
- * @property list<double> $BiasPosition
- * @property list<double> $FilterBBox
- * @property list<string> $FilterCountries
- * @property int<1, 50> $MaxResults
- * @property list<double> $ResultBBox
+ * @property list<double>|null $BiasPosition
+ * @property list<double>|null $FilterBBox
+ * @property list<string>|null $FilterCountries
+ * @property int<1, 50>|null $MaxResults
+ * @property list<double>|null $ResultBBox
  * @property string $DataSource
- * @property string $Language
- * @property list<string> $FilterCategories
+ * @property string|null $Language
+ * @property list<string>|null $FilterCategories
  */
 class SearchPlaceIndexForTextSummary extends Shape
 {
     /**
      * @param array{
      *     Text: string,
-     *     BiasPosition?: list<double>,
-     *     FilterBBox?: list<double>,
-     *     FilterCountries?: list<string>,
-     *     MaxResults?: int<1, 50>,
-     *     ResultBBox?: list<double>,
+     *     BiasPosition?: list<double>|null,
+     *     FilterBBox?: list<double>|null,
+     *     FilterCountries?: list<string>|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     ResultBBox?: list<double>|null,
      *     DataSource: string,
-     *     Language?: string,
-     *     FilterCategories?: list<string>
+     *     Language?: string|null,
+     *     FilterCategories?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

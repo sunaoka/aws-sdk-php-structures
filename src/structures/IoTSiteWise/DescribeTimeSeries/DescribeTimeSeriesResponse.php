@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\DescribeTimeSeries;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $assetId
- * @property string $propertyId
- * @property string $alias
+ * @property string|null $assetId
+ * @property string|null $propertyId
+ * @property string|null $alias
  * @property string $timeSeriesId
  * @property 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT' $dataType
- * @property string $dataTypeSpec
+ * @property string|null $dataTypeSpec
  * @property \Aws\Api\DateTimeResult $timeSeriesCreationDate
  * @property \Aws\Api\DateTimeResult $timeSeriesLastUpdateDate
  * @property string $timeSeriesArn

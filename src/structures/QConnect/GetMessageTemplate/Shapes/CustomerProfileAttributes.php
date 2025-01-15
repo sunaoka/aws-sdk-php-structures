@@ -5,127 +5,127 @@ namespace Sunaoka\Aws\Structures\QConnect\GetMessageTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountNumber
- * @property string $additionalInformation
- * @property string $address1
- * @property string $address2
- * @property string $address3
- * @property string $address4
- * @property string $billingAddress1
- * @property string $billingAddress2
- * @property string $billingAddress3
- * @property string $billingAddress4
- * @property string $billingCity
- * @property string $billingCountry
- * @property string $billingCounty
- * @property string $billingPostalCode
- * @property string $billingProvince
- * @property string $billingState
- * @property string $birthDate
- * @property string $businessEmailAddress
- * @property string $businessName
- * @property string $businessPhoneNumber
- * @property string $city
- * @property string $country
- * @property string $county
- * @property array<string, string> $custom
- * @property string $emailAddress
- * @property string $firstName
- * @property string $gender
- * @property string $homePhoneNumber
- * @property string $lastName
- * @property string $mailingAddress1
- * @property string $mailingAddress2
- * @property string $mailingAddress3
- * @property string $mailingAddress4
- * @property string $mailingCity
- * @property string $mailingCountry
- * @property string $mailingCounty
- * @property string $mailingPostalCode
- * @property string $mailingProvince
- * @property string $mailingState
- * @property string $middleName
- * @property string $mobilePhoneNumber
- * @property string $partyType
- * @property string $phoneNumber
- * @property string $postalCode
- * @property string $profileARN
- * @property string $profileId
- * @property string $province
- * @property string $shippingAddress1
- * @property string $shippingAddress2
- * @property string $shippingAddress3
- * @property string $shippingAddress4
- * @property string $shippingCity
- * @property string $shippingCountry
- * @property string $shippingCounty
- * @property string $shippingPostalCode
- * @property string $shippingProvince
- * @property string $shippingState
- * @property string $state
+ * @property string|null $accountNumber
+ * @property string|null $additionalInformation
+ * @property string|null $address1
+ * @property string|null $address2
+ * @property string|null $address3
+ * @property string|null $address4
+ * @property string|null $billingAddress1
+ * @property string|null $billingAddress2
+ * @property string|null $billingAddress3
+ * @property string|null $billingAddress4
+ * @property string|null $billingCity
+ * @property string|null $billingCountry
+ * @property string|null $billingCounty
+ * @property string|null $billingPostalCode
+ * @property string|null $billingProvince
+ * @property string|null $billingState
+ * @property string|null $birthDate
+ * @property string|null $businessEmailAddress
+ * @property string|null $businessName
+ * @property string|null $businessPhoneNumber
+ * @property string|null $city
+ * @property string|null $country
+ * @property string|null $county
+ * @property array<string, string>|null $custom
+ * @property string|null $emailAddress
+ * @property string|null $firstName
+ * @property string|null $gender
+ * @property string|null $homePhoneNumber
+ * @property string|null $lastName
+ * @property string|null $mailingAddress1
+ * @property string|null $mailingAddress2
+ * @property string|null $mailingAddress3
+ * @property string|null $mailingAddress4
+ * @property string|null $mailingCity
+ * @property string|null $mailingCountry
+ * @property string|null $mailingCounty
+ * @property string|null $mailingPostalCode
+ * @property string|null $mailingProvince
+ * @property string|null $mailingState
+ * @property string|null $middleName
+ * @property string|null $mobilePhoneNumber
+ * @property string|null $partyType
+ * @property string|null $phoneNumber
+ * @property string|null $postalCode
+ * @property string|null $profileARN
+ * @property string|null $profileId
+ * @property string|null $province
+ * @property string|null $shippingAddress1
+ * @property string|null $shippingAddress2
+ * @property string|null $shippingAddress3
+ * @property string|null $shippingAddress4
+ * @property string|null $shippingCity
+ * @property string|null $shippingCountry
+ * @property string|null $shippingCounty
+ * @property string|null $shippingPostalCode
+ * @property string|null $shippingProvince
+ * @property string|null $shippingState
+ * @property string|null $state
  */
 class CustomerProfileAttributes extends Shape
 {
     /**
      * @param array{
-     *     accountNumber?: string,
-     *     additionalInformation?: string,
-     *     address1?: string,
-     *     address2?: string,
-     *     address3?: string,
-     *     address4?: string,
-     *     billingAddress1?: string,
-     *     billingAddress2?: string,
-     *     billingAddress3?: string,
-     *     billingAddress4?: string,
-     *     billingCity?: string,
-     *     billingCountry?: string,
-     *     billingCounty?: string,
-     *     billingPostalCode?: string,
-     *     billingProvince?: string,
-     *     billingState?: string,
-     *     birthDate?: string,
-     *     businessEmailAddress?: string,
-     *     businessName?: string,
-     *     businessPhoneNumber?: string,
-     *     city?: string,
-     *     country?: string,
-     *     county?: string,
-     *     custom?: array<string, string>,
-     *     emailAddress?: string,
-     *     firstName?: string,
-     *     gender?: string,
-     *     homePhoneNumber?: string,
-     *     lastName?: string,
-     *     mailingAddress1?: string,
-     *     mailingAddress2?: string,
-     *     mailingAddress3?: string,
-     *     mailingAddress4?: string,
-     *     mailingCity?: string,
-     *     mailingCountry?: string,
-     *     mailingCounty?: string,
-     *     mailingPostalCode?: string,
-     *     mailingProvince?: string,
-     *     mailingState?: string,
-     *     middleName?: string,
-     *     mobilePhoneNumber?: string,
-     *     partyType?: string,
-     *     phoneNumber?: string,
-     *     postalCode?: string,
-     *     profileARN?: string,
-     *     profileId?: string,
-     *     province?: string,
-     *     shippingAddress1?: string,
-     *     shippingAddress2?: string,
-     *     shippingAddress3?: string,
-     *     shippingAddress4?: string,
-     *     shippingCity?: string,
-     *     shippingCountry?: string,
-     *     shippingCounty?: string,
-     *     shippingPostalCode?: string,
-     *     shippingProvince?: string,
-     *     shippingState?: string,
-     *     state?: string
+     *     accountNumber?: string|null,
+     *     additionalInformation?: string|null,
+     *     address1?: string|null,
+     *     address2?: string|null,
+     *     address3?: string|null,
+     *     address4?: string|null,
+     *     billingAddress1?: string|null,
+     *     billingAddress2?: string|null,
+     *     billingAddress3?: string|null,
+     *     billingAddress4?: string|null,
+     *     billingCity?: string|null,
+     *     billingCountry?: string|null,
+     *     billingCounty?: string|null,
+     *     billingPostalCode?: string|null,
+     *     billingProvince?: string|null,
+     *     billingState?: string|null,
+     *     birthDate?: string|null,
+     *     businessEmailAddress?: string|null,
+     *     businessName?: string|null,
+     *     businessPhoneNumber?: string|null,
+     *     city?: string|null,
+     *     country?: string|null,
+     *     county?: string|null,
+     *     custom?: array<string, string>|null,
+     *     emailAddress?: string|null,
+     *     firstName?: string|null,
+     *     gender?: string|null,
+     *     homePhoneNumber?: string|null,
+     *     lastName?: string|null,
+     *     mailingAddress1?: string|null,
+     *     mailingAddress2?: string|null,
+     *     mailingAddress3?: string|null,
+     *     mailingAddress4?: string|null,
+     *     mailingCity?: string|null,
+     *     mailingCountry?: string|null,
+     *     mailingCounty?: string|null,
+     *     mailingPostalCode?: string|null,
+     *     mailingProvince?: string|null,
+     *     mailingState?: string|null,
+     *     middleName?: string|null,
+     *     mobilePhoneNumber?: string|null,
+     *     partyType?: string|null,
+     *     phoneNumber?: string|null,
+     *     postalCode?: string|null,
+     *     profileARN?: string|null,
+     *     profileId?: string|null,
+     *     province?: string|null,
+     *     shippingAddress1?: string|null,
+     *     shippingAddress2?: string|null,
+     *     shippingAddress3?: string|null,
+     *     shippingAddress4?: string|null,
+     *     shippingCity?: string|null,
+     *     shippingCountry?: string|null,
+     *     shippingCounty?: string|null,
+     *     shippingPostalCode?: string|null,
+     *     shippingProvince?: string|null,
+     *     shippingState?: string|null,
+     *     state?: string|null
      * } $args
      */
     public function __construct(array $args = [])

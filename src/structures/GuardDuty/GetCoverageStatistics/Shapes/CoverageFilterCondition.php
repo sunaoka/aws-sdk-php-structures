@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetCoverageStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Equals
- * @property list<string> $NotEquals
+ * @property list<string>|null $Equals
+ * @property list<string>|null $NotEquals
  */
 class CoverageFilterCondition extends Shape
 {
     /**
      * @param array{
-     *     Equals?: list<string>,
-     *     NotEquals?: list<string>
+     *     Equals?: list<string>|null,
+     *     NotEquals?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

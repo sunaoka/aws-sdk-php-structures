@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\GetDatabases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogId
- * @property string $DatabaseName
- * @property string $Region
+ * @property string|null $CatalogId
+ * @property string|null $DatabaseName
+ * @property string|null $Region
  */
 class DatabaseIdentifier extends Shape
 {
     /**
      * @param array{
-     *     CatalogId?: string,
-     *     DatabaseName?: string,
-     *     Region?: string
+     *     CatalogId?: string|null,
+     *     DatabaseName?: string|null,
+     *     Region?: string|null
      * } $args
      */
     public function __construct(array $args = [])

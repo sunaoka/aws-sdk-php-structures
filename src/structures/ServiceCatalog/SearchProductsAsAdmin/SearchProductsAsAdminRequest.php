@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\SearchProductsAsAdmin;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
- * @property string $PortfolioId
- * @property array<'FullTextSearch'|'Owner'|'ProductType'|'SourceProductId', list<string>> $Filters
- * @property 'Title'|'VersionCount'|'CreationDate' $SortBy
- * @property 'ASCENDING'|'DESCENDING' $SortOrder
- * @property string $PageToken
- * @property int<0, 20> $PageSize
- * @property 'ACCOUNT' $ProductSource
+ * @property string|null $AcceptLanguage
+ * @property string|null $PortfolioId
+ * @property array<'FullTextSearch'|'Owner'|'ProductType'|'SourceProductId', list<string>>|null $Filters
+ * @property 'Title'|'VersionCount'|'CreationDate'|null $SortBy
+ * @property 'ASCENDING'|'DESCENDING'|null $SortOrder
+ * @property string|null $PageToken
+ * @property int<0, 20>|null $PageSize
+ * @property 'ACCOUNT'|null $ProductSource
  */
 class SearchProductsAsAdminRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
-     *     PortfolioId?: string,
-     *     Filters?: array<'FullTextSearch'|'Owner'|'ProductType'|'SourceProductId', list<string>>,
-     *     SortBy?: 'Title'|'VersionCount'|'CreationDate',
-     *     SortOrder?: 'ASCENDING'|'DESCENDING',
-     *     PageToken?: string,
-     *     PageSize?: int<0, 20>,
-     *     ProductSource?: 'ACCOUNT'
+     *     AcceptLanguage?: string|null,
+     *     PortfolioId?: string|null,
+     *     Filters?: array<'FullTextSearch'|'Owner'|'ProductType'|'SourceProductId', list<string>>|null,
+     *     SortBy?: 'Title'|'VersionCount'|'CreationDate'|null,
+     *     SortOrder?: 'ASCENDING'|'DESCENDING'|null,
+     *     PageToken?: string|null,
+     *     PageSize?: int<0, 20>|null,
+     *     ProductSource?: 'ACCOUNT'|null
      * } $args
      */
     public function __construct(array $args = [])

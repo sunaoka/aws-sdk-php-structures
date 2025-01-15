@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $gremlinQuery
- * @property bool $results
- * @property int $chop
- * @property string $serializer
- * @property bool $indexOps
+ * @property bool|null $results
+ * @property int|null $chop
+ * @property string|null $serializer
+ * @property bool|null $indexOps
  */
 class ExecuteGremlinProfileQueryRequest extends Request
 {
     /**
      * @param array{
      *     gremlinQuery: string,
-     *     results?: bool,
-     *     chop?: int,
-     *     serializer?: string,
-     *     indexOps?: bool
+     *     results?: bool|null,
+     *     chop?: int|null,
+     *     serializer?: string|null,
+     *     indexOps?: bool|null
      * } $args
      */
     public function __construct(array $args)

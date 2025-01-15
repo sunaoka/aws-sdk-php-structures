@@ -10,11 +10,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed' $HyperParameterTuningJobStatus
  * @property 'Bayesian'|'Random'|'Hyperband'|'Grid' $Strategy
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $HyperParameterTuningEndTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $HyperParameterTuningEndTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  * @property TrainingJobStatusCounters $TrainingJobStatusCounters
  * @property ObjectiveStatusCounters $ObjectiveStatusCounters
- * @property ResourceLimits $ResourceLimits
+ * @property ResourceLimits|null $ResourceLimits
  */
 class HyperParameterTuningJobSummary extends Shape
 {
@@ -25,11 +25,11 @@ class HyperParameterTuningJobSummary extends Shape
      *     HyperParameterTuningJobStatus: 'Completed'|'InProgress'|'Failed'|'Stopped'|'Stopping'|'Deleting'|'DeleteFailed',
      *     Strategy: 'Bayesian'|'Random'|'Hyperband'|'Grid',
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     HyperParameterTuningEndTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
+     *     HyperParameterTuningEndTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
      *     TrainingJobStatusCounters: TrainingJobStatusCounters,
      *     ObjectiveStatusCounters: ObjectiveStatusCounters,
-     *     ResourceLimits?: ResourceLimits
+     *     ResourceLimits?: ResourceLimits|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Route53\ListHostedZones;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Marker
- * @property string $MaxItems
- * @property string $DelegationSetId
- * @property 'PrivateHostedZone' $HostedZoneType
+ * @property string|null $Marker
+ * @property string|null $MaxItems
+ * @property string|null $DelegationSetId
+ * @property 'PrivateHostedZone'|null $HostedZoneType
  */
 class ListHostedZonesRequest extends Request
 {
     /**
      * @param array{
-     *     Marker?: string,
-     *     MaxItems?: string,
-     *     DelegationSetId?: string,
-     *     HostedZoneType?: 'PrivateHostedZone'
+     *     Marker?: string|null,
+     *     MaxItems?: string|null,
+     *     DelegationSetId?: string|null,
+     *     HostedZoneType?: 'PrivateHostedZone'|null
      * } $args
      */
     public function __construct(array $args = [])

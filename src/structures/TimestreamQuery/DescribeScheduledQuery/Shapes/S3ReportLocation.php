@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\DescribeScheduledQuery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BucketName
- * @property string $ObjectKey
+ * @property string|null $BucketName
+ * @property string|null $ObjectKey
  */
 class S3ReportLocation extends Shape
 {
     /**
      * @param array{
-     *     BucketName?: string,
-     *     ObjectKey?: string
+     *     BucketName?: string|null,
+     *     ObjectKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

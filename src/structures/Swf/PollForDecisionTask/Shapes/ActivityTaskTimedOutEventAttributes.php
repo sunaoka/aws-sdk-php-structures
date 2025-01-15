@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'START_TO_CLOSE'|'SCHEDULE_TO_START'|'SCHEDULE_TO_CLOSE'|'HEARTBEAT' $timeoutType
  * @property int $scheduledEventId
  * @property int $startedEventId
- * @property string $details
+ * @property string|null $details
  */
 class ActivityTaskTimedOutEventAttributes extends Shape
 {
@@ -17,7 +17,7 @@ class ActivityTaskTimedOutEventAttributes extends Shape
      *     timeoutType: 'START_TO_CLOSE'|'SCHEDULE_TO_START'|'SCHEDULE_TO_CLOSE'|'HEARTBEAT',
      *     scheduledEventId: int,
      *     startedEventId: int,
-     *     details?: string
+     *     details?: string|null
      * } $args
      */
     public function __construct(array $args)

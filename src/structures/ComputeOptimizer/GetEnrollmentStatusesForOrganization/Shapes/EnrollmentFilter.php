@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEnrollmentStatusesForOrgani
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Status' $name
- * @property list<string> $values
+ * @property 'Status'|null $name
+ * @property list<string>|null $values
  */
 class EnrollmentFilter extends Shape
 {
     /**
      * @param array{
-     *     name?: 'Status',
-     *     values?: list<string>
+     *     name?: 'Status'|null,
+     *     values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

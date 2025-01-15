@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property string $Notes
- * @property array<string, string> $Tags
- * @property Shapes\Address $OperatingAddress
- * @property Shapes\Address $ShippingAddress
- * @property Shapes\RackPhysicalProperties $RackPhysicalProperties
+ * @property string|null $Description
+ * @property string|null $Notes
+ * @property array<string, string>|null $Tags
+ * @property Shapes\Address|null $OperatingAddress
+ * @property Shapes\Address|null $ShippingAddress
+ * @property Shapes\RackPhysicalProperties|null $RackPhysicalProperties
  */
 class CreateSiteRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     Notes?: string,
-     *     Tags?: array<string, string>,
-     *     OperatingAddress?: Shapes\Address,
-     *     ShippingAddress?: Shapes\Address,
-     *     RackPhysicalProperties?: Shapes\RackPhysicalProperties
+     *     Description?: string|null,
+     *     Notes?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     OperatingAddress?: Shapes\Address|null,
+     *     ShippingAddress?: Shapes\Address|null,
+     *     RackPhysicalProperties?: Shapes\RackPhysicalProperties|null
      * } $args
      */
     public function __construct(array $args)

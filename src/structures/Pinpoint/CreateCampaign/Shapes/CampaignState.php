@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Pinpoint\CreateCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SCHEDULED'|'EXECUTING'|'PENDING_NEXT_RUN'|'COMPLETED'|'PAUSED'|'DELETED'|'INVALID' $CampaignStatus
+ * @property 'SCHEDULED'|'EXECUTING'|'PENDING_NEXT_RUN'|'COMPLETED'|'PAUSED'|'DELETED'|'INVALID'|null $CampaignStatus
  */
 class CampaignState extends Shape
 {
     /**
-     * @param array{CampaignStatus?: 'SCHEDULED'|'EXECUTING'|'PENDING_NEXT_RUN'|'COMPLETED'|'PAUSED'|'DELETED'|'INVALID'} $args
+     * @param array{CampaignStatus?: 'SCHEDULED'|'EXECUTING'|'PENDING_NEXT_RUN'|'COMPLETED'|'PAUSED'|'DELETED'|'INVALID'|null} $args
      */
     public function __construct(array $args = [])
     {

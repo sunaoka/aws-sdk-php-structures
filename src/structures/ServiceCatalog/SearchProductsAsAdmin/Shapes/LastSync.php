@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\SearchProductsAsAdmin\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $LastSyncTime
- * @property 'SUCCEEDED'|'FAILED' $LastSyncStatus
- * @property string $LastSyncStatusMessage
- * @property \Aws\Api\DateTimeResult $LastSuccessfulSyncTime
- * @property string $LastSuccessfulSyncProvisioningArtifactId
+ * @property \Aws\Api\DateTimeResult|null $LastSyncTime
+ * @property 'SUCCEEDED'|'FAILED'|null $LastSyncStatus
+ * @property string|null $LastSyncStatusMessage
+ * @property \Aws\Api\DateTimeResult|null $LastSuccessfulSyncTime
+ * @property string|null $LastSuccessfulSyncProvisioningArtifactId
  */
 class LastSync extends Shape
 {
     /**
      * @param array{
-     *     LastSyncTime?: \Aws\Api\DateTimeResult,
-     *     LastSyncStatus?: 'SUCCEEDED'|'FAILED',
-     *     LastSyncStatusMessage?: string,
-     *     LastSuccessfulSyncTime?: \Aws\Api\DateTimeResult,
-     *     LastSuccessfulSyncProvisioningArtifactId?: string
+     *     LastSyncTime?: \Aws\Api\DateTimeResult|null,
+     *     LastSyncStatus?: 'SUCCEEDED'|'FAILED'|null,
+     *     LastSyncStatusMessage?: string|null,
+     *     LastSuccessfulSyncTime?: \Aws\Api\DateTimeResult|null,
+     *     LastSuccessfulSyncProvisioningArtifactId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

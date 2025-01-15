@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElastiCache\ModifyCacheCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'slow-log'|'engine-log' $LogType
- * @property 'cloudwatch-logs'|'kinesis-firehose' $DestinationType
- * @property DestinationDetails $DestinationDetails
- * @property 'text'|'json' $LogFormat
- * @property bool $Enabled
+ * @property 'slow-log'|'engine-log'|null $LogType
+ * @property 'cloudwatch-logs'|'kinesis-firehose'|null $DestinationType
+ * @property DestinationDetails|null $DestinationDetails
+ * @property 'text'|'json'|null $LogFormat
+ * @property bool|null $Enabled
  */
 class LogDeliveryConfigurationRequest extends Shape
 {
     /**
      * @param array{
-     *     LogType?: 'slow-log'|'engine-log',
-     *     DestinationType?: 'cloudwatch-logs'|'kinesis-firehose',
-     *     DestinationDetails?: DestinationDetails,
-     *     LogFormat?: 'text'|'json',
-     *     Enabled?: bool
+     *     LogType?: 'slow-log'|'engine-log'|null,
+     *     DestinationType?: 'cloudwatch-logs'|'kinesis-firehose'|null,
+     *     DestinationDetails?: DestinationDetails|null,
+     *     LogFormat?: 'text'|'json'|null,
+     *     Enabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

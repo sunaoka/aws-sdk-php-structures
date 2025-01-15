@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Glue\GetWorkflowRuns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Trigger $Trigger
+ * @property Trigger|null $Trigger
  */
 class TriggerNodeDetails extends Shape
 {
     /**
-     * @param array{Trigger?: Trigger} $args
+     * @param array{Trigger?: Trigger|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Rds\DisableHttpEndpoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ResourceArn
- * @property bool $HttpEndpointEnabled
+ * @property string|null $ResourceArn
+ * @property bool|null $HttpEndpointEnabled
  */
 class DisableHttpEndpointResponse extends Response
 {

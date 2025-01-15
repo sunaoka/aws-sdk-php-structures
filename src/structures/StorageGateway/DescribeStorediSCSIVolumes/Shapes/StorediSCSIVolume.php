@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DescribeStorediSCSIVolumes\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VolumeARN
- * @property string $VolumeId
- * @property string $VolumeType
- * @property string $VolumeStatus
- * @property string $VolumeAttachmentStatus
- * @property int $VolumeSizeInBytes
- * @property double $VolumeProgress
- * @property string $VolumeDiskId
- * @property string $SourceSnapshotId
- * @property bool $PreservedExistingData
- * @property VolumeiSCSIAttributes $VolumeiSCSIAttributes
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property int $VolumeUsedInBytes
- * @property string $KMSKey
- * @property string $TargetName
+ * @property string|null $VolumeARN
+ * @property string|null $VolumeId
+ * @property string|null $VolumeType
+ * @property string|null $VolumeStatus
+ * @property string|null $VolumeAttachmentStatus
+ * @property int|null $VolumeSizeInBytes
+ * @property double|null $VolumeProgress
+ * @property string|null $VolumeDiskId
+ * @property string|null $SourceSnapshotId
+ * @property bool|null $PreservedExistingData
+ * @property VolumeiSCSIAttributes|null $VolumeiSCSIAttributes
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property int|null $VolumeUsedInBytes
+ * @property string|null $KMSKey
+ * @property string|null $TargetName
  */
 class StorediSCSIVolume extends Shape
 {
     /**
      * @param array{
-     *     VolumeARN?: string,
-     *     VolumeId?: string,
-     *     VolumeType?: string,
-     *     VolumeStatus?: string,
-     *     VolumeAttachmentStatus?: string,
-     *     VolumeSizeInBytes?: int,
-     *     VolumeProgress?: double,
-     *     VolumeDiskId?: string,
-     *     SourceSnapshotId?: string,
-     *     PreservedExistingData?: bool,
-     *     VolumeiSCSIAttributes?: VolumeiSCSIAttributes,
-     *     CreatedDate?: \Aws\Api\DateTimeResult,
-     *     VolumeUsedInBytes?: int,
-     *     KMSKey?: string,
-     *     TargetName?: string
+     *     VolumeARN?: string|null,
+     *     VolumeId?: string|null,
+     *     VolumeType?: string|null,
+     *     VolumeStatus?: string|null,
+     *     VolumeAttachmentStatus?: string|null,
+     *     VolumeSizeInBytes?: int|null,
+     *     VolumeProgress?: double|null,
+     *     VolumeDiskId?: string|null,
+     *     SourceSnapshotId?: string|null,
+     *     PreservedExistingData?: bool|null,
+     *     VolumeiSCSIAttributes?: VolumeiSCSIAttributes|null,
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     VolumeUsedInBytes?: int|null,
+     *     KMSKey?: string|null,
+     *     TargetName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

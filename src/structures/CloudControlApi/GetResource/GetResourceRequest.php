@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TypeName
- * @property string $TypeVersionId
- * @property string $RoleArn
+ * @property string|null $TypeVersionId
+ * @property string|null $RoleArn
  * @property string $Identifier
  */
 class GetResourceRequest extends Request
@@ -15,8 +15,8 @@ class GetResourceRequest extends Request
     /**
      * @param array{
      *     TypeName: string,
-     *     TypeVersionId?: string,
-     *     RoleArn?: string,
+     *     TypeVersionId?: string|null,
+     *     RoleArn?: string|null,
      *     Identifier: string
      * } $args
      */

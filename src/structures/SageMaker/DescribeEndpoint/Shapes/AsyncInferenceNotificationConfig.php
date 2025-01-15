@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SuccessTopic
- * @property string $ErrorTopic
- * @property list<'SUCCESS_NOTIFICATION_TOPIC'|'ERROR_NOTIFICATION_TOPIC'> $IncludeInferenceResponseIn
+ * @property string|null $SuccessTopic
+ * @property string|null $ErrorTopic
+ * @property list<'SUCCESS_NOTIFICATION_TOPIC'|'ERROR_NOTIFICATION_TOPIC'>|null $IncludeInferenceResponseIn
  */
 class AsyncInferenceNotificationConfig extends Shape
 {
     /**
      * @param array{
-     *     SuccessTopic?: string,
-     *     ErrorTopic?: string,
-     *     IncludeInferenceResponseIn?: list<'SUCCESS_NOTIFICATION_TOPIC'|'ERROR_NOTIFICATION_TOPIC'>
+     *     SuccessTopic?: string|null,
+     *     ErrorTopic?: string|null,
+     *     IncludeInferenceResponseIn?: list<'SUCCESS_NOTIFICATION_TOPIC'|'ERROR_NOTIFICATION_TOPIC'>|null
      * } $args
      */
     public function __construct(array $args = [])

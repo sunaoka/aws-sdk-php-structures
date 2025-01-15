@@ -5,36 +5,36 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ProvisionProduct;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
- * @property string $ProductId
- * @property string $ProductName
- * @property string $ProvisioningArtifactId
- * @property string $ProvisioningArtifactName
- * @property string $PathId
- * @property string $PathName
+ * @property string|null $AcceptLanguage
+ * @property string|null $ProductId
+ * @property string|null $ProductName
+ * @property string|null $ProvisioningArtifactId
+ * @property string|null $ProvisioningArtifactName
+ * @property string|null $PathId
+ * @property string|null $PathName
  * @property string $ProvisionedProductName
- * @property list<Shapes\ProvisioningParameter> $ProvisioningParameters
- * @property Shapes\ProvisioningPreferences $ProvisioningPreferences
- * @property list<Shapes\Tag> $Tags
- * @property list<string> $NotificationArns
+ * @property list<Shapes\ProvisioningParameter>|null $ProvisioningParameters
+ * @property Shapes\ProvisioningPreferences|null $ProvisioningPreferences
+ * @property list<Shapes\Tag>|null $Tags
+ * @property list<string>|null $NotificationArns
  * @property string $ProvisionToken
  */
 class ProvisionProductRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
-     *     ProductId?: string,
-     *     ProductName?: string,
-     *     ProvisioningArtifactId?: string,
-     *     ProvisioningArtifactName?: string,
-     *     PathId?: string,
-     *     PathName?: string,
+     *     AcceptLanguage?: string|null,
+     *     ProductId?: string|null,
+     *     ProductName?: string|null,
+     *     ProvisioningArtifactId?: string|null,
+     *     ProvisioningArtifactName?: string|null,
+     *     PathId?: string|null,
+     *     PathName?: string|null,
      *     ProvisionedProductName: string,
-     *     ProvisioningParameters?: list<Shapes\ProvisioningParameter>,
-     *     ProvisioningPreferences?: Shapes\ProvisioningPreferences,
-     *     Tags?: list<Shapes\Tag>,
-     *     NotificationArns?: list<string>,
+     *     ProvisioningParameters?: list<Shapes\ProvisioningParameter>|null,
+     *     ProvisioningPreferences?: Shapes\ProvisioningPreferences|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     NotificationArns?: list<string>|null,
      *     ProvisionToken: string
      * } $args
      */

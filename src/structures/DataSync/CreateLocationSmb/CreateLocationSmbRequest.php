@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Subdirectory
  * @property string $ServerHostname
  * @property string $User
- * @property string $Domain
+ * @property string|null $Domain
  * @property string $Password
  * @property list<string> $AgentArns
- * @property Shapes\SmbMountOptions $MountOptions
- * @property list<Shapes\TagListEntry> $Tags
+ * @property Shapes\SmbMountOptions|null $MountOptions
+ * @property list<Shapes\TagListEntry>|null $Tags
  */
 class CreateLocationSmbRequest extends Request
 {
@@ -21,11 +21,11 @@ class CreateLocationSmbRequest extends Request
      *     Subdirectory: string,
      *     ServerHostname: string,
      *     User: string,
-     *     Domain?: string,
+     *     Domain?: string|null,
      *     Password: string,
      *     AgentArns: list<string>,
-     *     MountOptions?: Shapes\SmbMountOptions,
-     *     Tags?: list<Shapes\TagListEntry>
+     *     MountOptions?: Shapes\SmbMountOptions|null,
+     *     Tags?: list<Shapes\TagListEntry>|null
      * } $args
      */
     public function __construct(array $args)

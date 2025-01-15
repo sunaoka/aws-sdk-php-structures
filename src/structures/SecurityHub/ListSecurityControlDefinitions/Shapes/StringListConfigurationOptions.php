@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\ListSecurityControlDefinitions\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $DefaultValue
- * @property string $Re2Expression
- * @property int $MaxItems
- * @property string $ExpressionDescription
+ * @property list<string>|null $DefaultValue
+ * @property string|null $Re2Expression
+ * @property int|null $MaxItems
+ * @property string|null $ExpressionDescription
  */
 class StringListConfigurationOptions extends Shape
 {
     /**
      * @param array{
-     *     DefaultValue?: list<string>,
-     *     Re2Expression?: string,
-     *     MaxItems?: int,
-     *     ExpressionDescription?: string
+     *     DefaultValue?: list<string>|null,
+     *     Re2Expression?: string|null,
+     *     MaxItems?: int|null,
+     *     ExpressionDescription?: string|null
      * } $args
      */
     public function __construct(array $args = [])

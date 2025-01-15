@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $portalId
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeletePortalRequest extends Request
 {
     /**
      * @param array{
      *     portalId: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ecr\BatchGetRepositoryScanningConfiguration\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $repositoryName
- * @property 'REPOSITORY_NOT_FOUND' $failureCode
- * @property string $failureReason
+ * @property string|null $repositoryName
+ * @property 'REPOSITORY_NOT_FOUND'|null $failureCode
+ * @property string|null $failureReason
  */
 class RepositoryScanningConfigurationFailure extends Shape
 {
     /**
      * @param array{
-     *     repositoryName?: string,
-     *     failureCode?: 'REPOSITORY_NOT_FOUND',
-     *     failureReason?: string
+     *     repositoryName?: string|null,
+     *     failureCode?: 'REPOSITORY_NOT_FOUND'|null,
+     *     failureReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

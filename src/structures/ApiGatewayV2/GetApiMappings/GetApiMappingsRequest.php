@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $MaxResults
- * @property string $NextToken
+ * @property string|null $MaxResults
+ * @property string|null $NextToken
  */
 class GetApiMappingsRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     MaxResults?: string,
-     *     NextToken?: string
+     *     MaxResults?: string|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

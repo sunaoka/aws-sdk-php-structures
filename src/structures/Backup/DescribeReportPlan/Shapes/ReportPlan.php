@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Backup\DescribeReportPlan\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReportPlanArn
- * @property string $ReportPlanName
- * @property string $ReportPlanDescription
- * @property ReportSetting $ReportSetting
- * @property ReportDeliveryChannel $ReportDeliveryChannel
- * @property string $DeploymentStatus
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastAttemptedExecutionTime
- * @property \Aws\Api\DateTimeResult $LastSuccessfulExecutionTime
+ * @property string|null $ReportPlanArn
+ * @property string|null $ReportPlanName
+ * @property string|null $ReportPlanDescription
+ * @property ReportSetting|null $ReportSetting
+ * @property ReportDeliveryChannel|null $ReportDeliveryChannel
+ * @property string|null $DeploymentStatus
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastAttemptedExecutionTime
+ * @property \Aws\Api\DateTimeResult|null $LastSuccessfulExecutionTime
  */
 class ReportPlan extends Shape
 {
     /**
      * @param array{
-     *     ReportPlanArn?: string,
-     *     ReportPlanName?: string,
-     *     ReportPlanDescription?: string,
-     *     ReportSetting?: ReportSetting,
-     *     ReportDeliveryChannel?: ReportDeliveryChannel,
-     *     DeploymentStatus?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastAttemptedExecutionTime?: \Aws\Api\DateTimeResult,
-     *     LastSuccessfulExecutionTime?: \Aws\Api\DateTimeResult
+     *     ReportPlanArn?: string|null,
+     *     ReportPlanName?: string|null,
+     *     ReportPlanDescription?: string|null,
+     *     ReportSetting?: ReportSetting|null,
+     *     ReportDeliveryChannel?: ReportDeliveryChannel|null,
+     *     DeploymentStatus?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastAttemptedExecutionTime?: \Aws\Api\DateTimeResult|null,
+     *     LastSuccessfulExecutionTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

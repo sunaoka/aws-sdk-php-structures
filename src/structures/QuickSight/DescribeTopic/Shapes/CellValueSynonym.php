@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTopic\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CellValue
- * @property list<string> $Synonyms
+ * @property string|null $CellValue
+ * @property list<string>|null $Synonyms
  */
 class CellValueSynonym extends Shape
 {
     /**
      * @param array{
-     *     CellValue?: string,
-     *     Synonyms?: list<string>
+     *     CellValue?: string|null,
+     *     Synonyms?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\kendra\StartDataSourceSyncJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ExecutionId
+ * @property string|null $ExecutionId
  */
 class StartDataSourceSyncJobResponse extends Response
 {

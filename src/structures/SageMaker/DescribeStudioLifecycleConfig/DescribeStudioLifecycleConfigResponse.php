@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeStudioLifecycleConfig;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $StudioLifecycleConfigArn
- * @property string $StudioLifecycleConfigName
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $StudioLifecycleConfigContent
- * @property 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab' $StudioLifecycleConfigAppType
+ * @property string|null $StudioLifecycleConfigArn
+ * @property string|null $StudioLifecycleConfigName
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $StudioLifecycleConfigContent
+ * @property 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab'|null $StudioLifecycleConfigAppType
  */
 class DescribeStudioLifecycleConfigResponse extends Response
 {

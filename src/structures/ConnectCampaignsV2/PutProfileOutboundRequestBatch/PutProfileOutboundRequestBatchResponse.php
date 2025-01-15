@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\PutProfileOutboundRequestBat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\SuccessfulProfileOutboundRequest> $successfulRequests
- * @property list<Shapes\FailedProfileOutboundRequest> $failedRequests
+ * @property list<Shapes\SuccessfulProfileOutboundRequest>|null $successfulRequests
+ * @property list<Shapes\FailedProfileOutboundRequest>|null $failedRequests
  */
 class PutProfileOutboundRequestBatchResponse extends Response
 {

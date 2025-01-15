@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateNetworkInterfacePermission;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\NetworkInterfacePermission $InterfacePermission
+ * @property Shapes\NetworkInterfacePermission|null $InterfacePermission
  */
 class CreateNetworkInterfacePermissionResponse extends Response
 {

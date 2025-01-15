@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FleetId
- * @property string $Name
- * @property string $Description
- * @property 'NoProtection'|'FullProtection' $NewGameSessionProtectionPolicy
- * @property Shapes\ResourceCreationLimitPolicy $ResourceCreationLimitPolicy
- * @property list<string> $MetricGroups
- * @property Shapes\AnywhereConfiguration $AnywhereConfiguration
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property 'NoProtection'|'FullProtection'|null $NewGameSessionProtectionPolicy
+ * @property Shapes\ResourceCreationLimitPolicy|null $ResourceCreationLimitPolicy
+ * @property list<string>|null $MetricGroups
+ * @property Shapes\AnywhereConfiguration|null $AnywhereConfiguration
  */
 class UpdateFleetAttributesRequest extends Request
 {
     /**
      * @param array{
      *     FleetId: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     NewGameSessionProtectionPolicy?: 'NoProtection'|'FullProtection',
-     *     ResourceCreationLimitPolicy?: Shapes\ResourceCreationLimitPolicy,
-     *     MetricGroups?: list<string>,
-     *     AnywhereConfiguration?: Shapes\AnywhereConfiguration
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     NewGameSessionProtectionPolicy?: 'NoProtection'|'FullProtection'|null,
+     *     ResourceCreationLimitPolicy?: Shapes\ResourceCreationLimitPolicy|null,
+     *     MetricGroups?: list<string>|null,
+     *     AnywhereConfiguration?: Shapes\AnywhereConfiguration|null
      * } $args
      */
     public function __construct(array $args)

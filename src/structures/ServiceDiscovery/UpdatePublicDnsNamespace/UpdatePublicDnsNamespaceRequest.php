@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $UpdaterRequestId
+ * @property string|null $UpdaterRequestId
  * @property Shapes\PublicDnsNamespaceChange $Namespace
  */
 class UpdatePublicDnsNamespaceRequest extends Request
@@ -14,7 +14,7 @@ class UpdatePublicDnsNamespaceRequest extends Request
     /**
      * @param array{
      *     Id: string,
-     *     UpdaterRequestId?: string,
+     *     UpdaterRequestId?: string|null,
      *     Namespace: Shapes\PublicDnsNamespaceChange
      * } $args
      */

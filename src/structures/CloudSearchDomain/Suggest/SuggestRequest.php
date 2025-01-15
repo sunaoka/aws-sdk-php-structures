@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $query
  * @property string $suggester
- * @property int $size
+ * @property int|null $size
  */
 class SuggestRequest extends Request
 {
@@ -15,7 +15,7 @@ class SuggestRequest extends Request
      * @param array{
      *     query: string,
      *     suggester: string,
-     *     size?: int
+     *     size?: int|null
      * } $args
      */
     public function __construct(array $args)

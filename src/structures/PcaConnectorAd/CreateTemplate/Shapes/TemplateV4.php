@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property EnrollmentFlagsV4 $EnrollmentFlags
  * @property ExtensionsV4 $Extensions
  * @property GeneralFlagsV4 $GeneralFlags
- * @property 'SHA256'|'SHA384'|'SHA512' $HashAlgorithm
+ * @property 'SHA256'|'SHA384'|'SHA512'|null $HashAlgorithm
  * @property PrivateKeyAttributesV4 $PrivateKeyAttributes
  * @property PrivateKeyFlagsV4 $PrivateKeyFlags
  * @property SubjectNameFlagsV4 $SubjectNameFlags
- * @property list<string> $SupersededTemplates
+ * @property list<string>|null $SupersededTemplates
  */
 class TemplateV4 extends Shape
 {
@@ -23,11 +23,11 @@ class TemplateV4 extends Shape
      *     EnrollmentFlags: EnrollmentFlagsV4,
      *     Extensions: ExtensionsV4,
      *     GeneralFlags: GeneralFlagsV4,
-     *     HashAlgorithm?: 'SHA256'|'SHA384'|'SHA512',
+     *     HashAlgorithm?: 'SHA256'|'SHA384'|'SHA512'|null,
      *     PrivateKeyAttributes: PrivateKeyAttributesV4,
      *     PrivateKeyFlags: PrivateKeyFlagsV4,
      *     SubjectNameFlags: SubjectNameFlagsV4,
-     *     SupersededTemplates?: list<string>
+     *     SupersededTemplates?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

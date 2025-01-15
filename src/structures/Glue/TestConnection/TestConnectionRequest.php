@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\TestConnection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ConnectionName
- * @property string $CatalogId
- * @property Shapes\TestConnectionInput $TestConnectionInput
+ * @property string|null $ConnectionName
+ * @property string|null $CatalogId
+ * @property Shapes\TestConnectionInput|null $TestConnectionInput
  */
 class TestConnectionRequest extends Request
 {
     /**
      * @param array{
-     *     ConnectionName?: string,
-     *     CatalogId?: string,
-     *     TestConnectionInput?: Shapes\TestConnectionInput
+     *     ConnectionName?: string|null,
+     *     CatalogId?: string|null,
+     *     TestConnectionInput?: Shapes\TestConnectionInput|null
      * } $args
      */
     public function __construct(array $args = [])

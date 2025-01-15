@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppConfig\GetAccountSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property int<15, 1440> $ProtectionPeriodInMinutes
+ * @property bool|null $Enabled
+ * @property int<15, 1440>|null $ProtectionPeriodInMinutes
  */
 class DeletionProtectionSettings extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     ProtectionPeriodInMinutes?: int<15, 1440>
+     *     Enabled?: bool|null,
+     *     ProtectionPeriodInMinutes?: int<15, 1440>|null
      * } $args
      */
     public function __construct(array $args = [])

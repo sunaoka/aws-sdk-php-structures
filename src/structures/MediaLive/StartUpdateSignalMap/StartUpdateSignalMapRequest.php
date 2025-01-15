@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\MediaLive\StartUpdateSignalMap;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $CloudWatchAlarmTemplateGroupIdentifiers
- * @property string $Description
- * @property string $DiscoveryEntryPointArn
- * @property list<string> $EventBridgeRuleTemplateGroupIdentifiers
- * @property bool $ForceRediscovery
+ * @property list<string>|null $CloudWatchAlarmTemplateGroupIdentifiers
+ * @property string|null $Description
+ * @property string|null $DiscoveryEntryPointArn
+ * @property list<string>|null $EventBridgeRuleTemplateGroupIdentifiers
+ * @property bool|null $ForceRediscovery
  * @property string $Identifier
- * @property string $Name
+ * @property string|null $Name
  */
 class StartUpdateSignalMapRequest extends Request
 {
     /**
      * @param array{
-     *     CloudWatchAlarmTemplateGroupIdentifiers?: list<string>,
-     *     Description?: string,
-     *     DiscoveryEntryPointArn?: string,
-     *     EventBridgeRuleTemplateGroupIdentifiers?: list<string>,
-     *     ForceRediscovery?: bool,
+     *     CloudWatchAlarmTemplateGroupIdentifiers?: list<string>|null,
+     *     Description?: string|null,
+     *     DiscoveryEntryPointArn?: string|null,
+     *     EventBridgeRuleTemplateGroupIdentifiers?: list<string>|null,
+     *     ForceRediscovery?: bool|null,
      *     Identifier: string,
-     *     Name?: string
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

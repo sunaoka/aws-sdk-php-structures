@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\GetMediaCapturePipeline\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'GridView' $Layout
- * @property 'HD'|'FHD' $Resolution
+ * @property 'GridView'|null $Layout
+ * @property 'HD'|'FHD'|null $Resolution
  * @property GridViewConfiguration $GridViewConfiguration
  */
 class CompositedVideoArtifactsConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Layout?: 'GridView',
-     *     Resolution?: 'HD'|'FHD',
+     *     Layout?: 'GridView'|null,
+     *     Resolution?: 'HD'|'FHD'|null,
      *     GridViewConfiguration: GridViewConfiguration
      * } $args
      */

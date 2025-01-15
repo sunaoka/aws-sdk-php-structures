@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetEngagementInvitation\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OpportunityInvitationPayload $OpportunityInvitation
+ * @property OpportunityInvitationPayload|null $OpportunityInvitation
  */
 class Payload extends Shape
 {
     /**
-     * @param array{OpportunityInvitation?: OpportunityInvitationPayload} $args
+     * @param array{OpportunityInvitation?: OpportunityInvitationPayload|null} $args
      */
     public function __construct(array $args = [])
     {

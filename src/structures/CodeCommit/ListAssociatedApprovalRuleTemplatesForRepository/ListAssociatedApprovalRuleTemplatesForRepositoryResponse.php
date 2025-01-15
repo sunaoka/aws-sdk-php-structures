@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CodeCommit\ListAssociatedApprovalRuleTemplatesF
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $approvalRuleTemplateNames
- * @property string $nextToken
+ * @property list<string>|null $approvalRuleTemplateNames
+ * @property string|null $nextToken
  */
 class ListAssociatedApprovalRuleTemplatesForRepositoryResponse extends Response
 {

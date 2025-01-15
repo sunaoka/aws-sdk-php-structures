@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $MetricsEnabled
- * @property string $LoggingLevel
- * @property bool $DataTraceEnabled
- * @property int $ThrottlingBurstLimit
- * @property double $ThrottlingRateLimit
- * @property bool $CachingEnabled
- * @property int $CacheTtlInSeconds
- * @property bool $CacheDataEncrypted
- * @property bool $RequireAuthorizationForCacheControl
- * @property string $UnauthorizedCacheControlHeaderStrategy
- * @property string $HttpMethod
- * @property string $ResourcePath
+ * @property bool|null $MetricsEnabled
+ * @property string|null $LoggingLevel
+ * @property bool|null $DataTraceEnabled
+ * @property int|null $ThrottlingBurstLimit
+ * @property double|null $ThrottlingRateLimit
+ * @property bool|null $CachingEnabled
+ * @property int|null $CacheTtlInSeconds
+ * @property bool|null $CacheDataEncrypted
+ * @property bool|null $RequireAuthorizationForCacheControl
+ * @property string|null $UnauthorizedCacheControlHeaderStrategy
+ * @property string|null $HttpMethod
+ * @property string|null $ResourcePath
  */
 class AwsApiGatewayMethodSettings extends Shape
 {
     /**
      * @param array{
-     *     MetricsEnabled?: bool,
-     *     LoggingLevel?: string,
-     *     DataTraceEnabled?: bool,
-     *     ThrottlingBurstLimit?: int,
-     *     ThrottlingRateLimit?: double,
-     *     CachingEnabled?: bool,
-     *     CacheTtlInSeconds?: int,
-     *     CacheDataEncrypted?: bool,
-     *     RequireAuthorizationForCacheControl?: bool,
-     *     UnauthorizedCacheControlHeaderStrategy?: string,
-     *     HttpMethod?: string,
-     *     ResourcePath?: string
+     *     MetricsEnabled?: bool|null,
+     *     LoggingLevel?: string|null,
+     *     DataTraceEnabled?: bool|null,
+     *     ThrottlingBurstLimit?: int|null,
+     *     ThrottlingRateLimit?: double|null,
+     *     CachingEnabled?: bool|null,
+     *     CacheTtlInSeconds?: int|null,
+     *     CacheDataEncrypted?: bool|null,
+     *     RequireAuthorizationForCacheControl?: bool|null,
+     *     UnauthorizedCacheControlHeaderStrategy?: string|null,
+     *     HttpMethod?: string|null,
+     *     ResourcePath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

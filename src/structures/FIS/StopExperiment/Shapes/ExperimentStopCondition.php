@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FIS\StopExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $source
- * @property string $value
+ * @property string|null $source
+ * @property string|null $value
  */
 class ExperimentStopCondition extends Shape
 {
     /**
      * @param array{
-     *     source?: string,
-     *     value?: string
+     *     source?: string|null,
+     *     value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

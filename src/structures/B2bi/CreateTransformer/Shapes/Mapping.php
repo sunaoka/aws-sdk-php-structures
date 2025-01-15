@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'XSLT'|'JSONATA' $templateLanguage
- * @property string $template
+ * @property string|null $template
  */
 class Mapping extends Shape
 {
     /**
      * @param array{
      *     templateLanguage: 'XSLT'|'JSONATA',
-     *     template?: string
+     *     template?: string|null
      * } $args
      */
     public function __construct(array $args)

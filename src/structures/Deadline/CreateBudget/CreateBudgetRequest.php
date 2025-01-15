@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateBudget;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $farmId
  * @property Shapes\UsageTrackingResource $usageTrackingResource
  * @property string $displayName
- * @property string $description
+ * @property string|null $description
  * @property float $approximateDollarLimit
  * @property list<Shapes\BudgetActionToAdd> $actions
  * @property Shapes\BudgetSchedule $schedule
@@ -18,11 +18,11 @@ class CreateBudgetRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     farmId: string,
      *     usageTrackingResource: Shapes\UsageTrackingResource,
      *     displayName: string,
-     *     description?: string,
+     *     description?: string|null,
      *     approximateDollarLimit: float,
      *     actions: list<Shapes\BudgetActionToAdd>,
      *     schedule: Shapes\BudgetSchedule

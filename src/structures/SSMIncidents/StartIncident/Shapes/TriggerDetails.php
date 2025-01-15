@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\StartIncident\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $rawData
+ * @property string|null $rawData
  * @property string $source
  * @property \Aws\Api\DateTimeResult $timestamp
- * @property string $triggerArn
+ * @property string|null $triggerArn
  */
 class TriggerDetails extends Shape
 {
     /**
      * @param array{
-     *     rawData?: string,
+     *     rawData?: string|null,
      *     source: string,
      *     timestamp: \Aws\Api\DateTimeResult,
-     *     triggerArn?: string
+     *     triggerArn?: string|null
      * } $args
      */
     public function __construct(array $args)

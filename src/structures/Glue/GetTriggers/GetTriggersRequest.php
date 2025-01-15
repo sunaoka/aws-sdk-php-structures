@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\GetTriggers;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property string $DependentJobName
- * @property int<1, 200> $MaxResults
+ * @property string|null $NextToken
+ * @property string|null $DependentJobName
+ * @property int<1, 200>|null $MaxResults
  */
 class GetTriggersRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     DependentJobName?: string,
-     *     MaxResults?: int<1, 200>
+     *     NextToken?: string|null,
+     *     DependentJobName?: string|null,
+     *     MaxResults?: int<1, 200>|null
      * } $args
      */
     public function __construct(array $args = [])

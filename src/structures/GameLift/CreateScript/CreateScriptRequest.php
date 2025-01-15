@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GameLift\CreateScript;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
- * @property string $Version
- * @property Shapes\S3Location $StorageLocation
- * @property string|resource|\Psr\Http\Message\StreamInterface $ZipFile
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $Name
+ * @property string|null $Version
+ * @property Shapes\S3Location|null $StorageLocation
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $ZipFile
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateScriptRequest extends Request
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Version?: string,
-     *     StorageLocation?: Shapes\S3Location,
-     *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     Tags?: list<Shapes\Tag>
+     *     Name?: string|null,
+     *     Version?: string|null,
+     *     StorageLocation?: Shapes\S3Location|null,
+     *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

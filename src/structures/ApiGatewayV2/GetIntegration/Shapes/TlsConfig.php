@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ApiGatewayV2\GetIntegration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServerNameToVerify
+ * @property string|null $ServerNameToVerify
  */
 class TlsConfig extends Shape
 {
     /**
-     * @param array{ServerNameToVerify?: string} $args
+     * @param array{ServerNameToVerify?: string|null} $args
      */
     public function __construct(array $args = [])
     {

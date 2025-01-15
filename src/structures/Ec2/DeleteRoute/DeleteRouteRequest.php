@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteRoute;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DestinationPrefixListId
- * @property bool $DryRun
+ * @property string|null $DestinationPrefixListId
+ * @property bool|null $DryRun
  * @property string $RouteTableId
- * @property string $DestinationCidrBlock
- * @property string $DestinationIpv6CidrBlock
+ * @property string|null $DestinationCidrBlock
+ * @property string|null $DestinationIpv6CidrBlock
  */
 class DeleteRouteRequest extends Request
 {
     /**
      * @param array{
-     *     DestinationPrefixListId?: string,
-     *     DryRun?: bool,
+     *     DestinationPrefixListId?: string|null,
+     *     DryRun?: bool|null,
      *     RouteTableId: string,
-     *     DestinationCidrBlock?: string,
-     *     DestinationIpv6CidrBlock?: string
+     *     DestinationCidrBlock?: string|null,
+     *     DestinationIpv6CidrBlock?: string|null
      * } $args
      */
     public function __construct(array $args)

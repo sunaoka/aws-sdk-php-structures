@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Keyword
- * @property list<string> $Settings
+ * @property list<string>|null $Settings
  */
 class RuleOption extends Shape
 {
     /**
      * @param array{
      *     Keyword: string,
-     *     Settings?: list<string>
+     *     Settings?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

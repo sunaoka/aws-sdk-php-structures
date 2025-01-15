@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DataZone\ListProjectProfiles;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ProjectProfileSummary> $items
- * @property string $nextToken
+ * @property list<Shapes\ProjectProfileSummary>|null $items
+ * @property string|null $nextToken
  */
 class ListProjectProfilesResponse extends Response
 {

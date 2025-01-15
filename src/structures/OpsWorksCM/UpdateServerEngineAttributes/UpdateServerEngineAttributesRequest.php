@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ServerName
  * @property string $AttributeName
- * @property string $AttributeValue
+ * @property string|null $AttributeValue
  */
 class UpdateServerEngineAttributesRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateServerEngineAttributesRequest extends Request
      * @param array{
      *     ServerName: string,
      *     AttributeName: string,
-     *     AttributeValue?: string
+     *     AttributeValue?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SnowBall\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KubernetesVersion
- * @property string $EKSAnywhereVersion
+ * @property string|null $KubernetesVersion
+ * @property string|null $EKSAnywhereVersion
  */
 class EKSOnDeviceServiceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     KubernetesVersion?: string,
-     *     EKSAnywhereVersion?: string
+     *     KubernetesVersion?: string|null,
+     *     EKSAnywhereVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

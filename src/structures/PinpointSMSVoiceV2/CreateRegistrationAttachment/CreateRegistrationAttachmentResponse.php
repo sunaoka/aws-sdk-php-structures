@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $RegistrationAttachmentArn
  * @property string $RegistrationAttachmentId
  * @property 'UPLOAD_IN_PROGRESS'|'UPLOAD_COMPLETE'|'UPLOAD_FAILED'|'DELETED' $AttachmentStatus
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  */
 class CreateRegistrationAttachmentResponse extends Response

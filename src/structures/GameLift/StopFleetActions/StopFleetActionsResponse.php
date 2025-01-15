@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\GameLift\StopFleetActions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FleetId
- * @property string $FleetArn
+ * @property string|null $FleetId
+ * @property string|null $FleetArn
  */
 class StopFleetActionsResponse extends Response
 {

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<string> $ImageSourceBands
  * @property string $Name
  * @property list<Shapes\Filter> $SupportedFilters
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  * @property 'PUBLIC'|'PREMIUM'|'USER' $Type
  */
 class GetRasterDataCollectionResponse extends Response

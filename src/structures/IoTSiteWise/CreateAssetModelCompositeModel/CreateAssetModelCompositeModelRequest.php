@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assetModelId
- * @property string $assetModelCompositeModelExternalId
- * @property string $parentAssetModelCompositeModelId
- * @property string $assetModelCompositeModelId
- * @property string $assetModelCompositeModelDescription
+ * @property string|null $assetModelCompositeModelExternalId
+ * @property string|null $parentAssetModelCompositeModelId
+ * @property string|null $assetModelCompositeModelId
+ * @property string|null $assetModelCompositeModelDescription
  * @property string $assetModelCompositeModelName
  * @property string $assetModelCompositeModelType
- * @property string $clientToken
- * @property string $composedAssetModelId
- * @property list<Shapes\AssetModelPropertyDefinition> $assetModelCompositeModelProperties
- * @property string $ifMatch
- * @property string $ifNoneMatch
- * @property 'LATEST'|'ACTIVE' $matchForVersionType
+ * @property string|null $clientToken
+ * @property string|null $composedAssetModelId
+ * @property list<Shapes\AssetModelPropertyDefinition>|null $assetModelCompositeModelProperties
+ * @property string|null $ifMatch
+ * @property string|null $ifNoneMatch
+ * @property 'LATEST'|'ACTIVE'|null $matchForVersionType
  */
 class CreateAssetModelCompositeModelRequest extends Request
 {
     /**
      * @param array{
      *     assetModelId: string,
-     *     assetModelCompositeModelExternalId?: string,
-     *     parentAssetModelCompositeModelId?: string,
-     *     assetModelCompositeModelId?: string,
-     *     assetModelCompositeModelDescription?: string,
+     *     assetModelCompositeModelExternalId?: string|null,
+     *     parentAssetModelCompositeModelId?: string|null,
+     *     assetModelCompositeModelId?: string|null,
+     *     assetModelCompositeModelDescription?: string|null,
      *     assetModelCompositeModelName: string,
      *     assetModelCompositeModelType: string,
-     *     clientToken?: string,
-     *     composedAssetModelId?: string,
-     *     assetModelCompositeModelProperties?: list<Shapes\AssetModelPropertyDefinition>,
-     *     ifMatch?: string,
-     *     ifNoneMatch?: string,
-     *     matchForVersionType?: 'LATEST'|'ACTIVE'
+     *     clientToken?: string|null,
+     *     composedAssetModelId?: string|null,
+     *     assetModelCompositeModelProperties?: list<Shapes\AssetModelPropertyDefinition>|null,
+     *     ifMatch?: string|null,
+     *     ifNoneMatch?: string|null,
+     *     matchForVersionType?: 'LATEST'|'ACTIVE'|null
      * } $args
      */
     public function __construct(array $args)

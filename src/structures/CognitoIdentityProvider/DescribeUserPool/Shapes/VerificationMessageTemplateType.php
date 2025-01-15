@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\DescribeUserPool\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SmsMessage
- * @property string $EmailMessage
- * @property string $EmailSubject
- * @property string $EmailMessageByLink
- * @property string $EmailSubjectByLink
- * @property 'CONFIRM_WITH_LINK'|'CONFIRM_WITH_CODE' $DefaultEmailOption
+ * @property string|null $SmsMessage
+ * @property string|null $EmailMessage
+ * @property string|null $EmailSubject
+ * @property string|null $EmailMessageByLink
+ * @property string|null $EmailSubjectByLink
+ * @property 'CONFIRM_WITH_LINK'|'CONFIRM_WITH_CODE'|null $DefaultEmailOption
  */
 class VerificationMessageTemplateType extends Shape
 {
     /**
      * @param array{
-     *     SmsMessage?: string,
-     *     EmailMessage?: string,
-     *     EmailSubject?: string,
-     *     EmailMessageByLink?: string,
-     *     EmailSubjectByLink?: string,
-     *     DefaultEmailOption?: 'CONFIRM_WITH_LINK'|'CONFIRM_WITH_CODE'
+     *     SmsMessage?: string|null,
+     *     EmailMessage?: string|null,
+     *     EmailSubject?: string|null,
+     *     EmailMessageByLink?: string|null,
+     *     EmailSubjectByLink?: string|null,
+     *     DefaultEmailOption?: 'CONFIRM_WITH_LINK'|'CONFIRM_WITH_CODE'|null
      * } $args
      */
     public function __construct(array $args = [])

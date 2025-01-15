@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $policyStoreId
  * @property string $identitySourceId
  * @property Shapes\UpdateConfiguration $updateConfiguration
- * @property string $principalEntityType
+ * @property string|null $principalEntityType
  */
 class UpdateIdentitySourceRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateIdentitySourceRequest extends Request
      *     policyStoreId: string,
      *     identitySourceId: string,
      *     updateConfiguration: Shapes\UpdateConfiguration,
-     *     principalEntityType?: string
+     *     principalEntityType?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $applicationId
  * @property string $pluginId
- * @property string $displayName
- * @property 'ENABLED'|'DISABLED' $state
- * @property string $serverUrl
- * @property Shapes\CustomPluginConfiguration $customPluginConfiguration
- * @property Shapes\PluginAuthConfiguration $authConfiguration
+ * @property string|null $displayName
+ * @property 'ENABLED'|'DISABLED'|null $state
+ * @property string|null $serverUrl
+ * @property Shapes\CustomPluginConfiguration|null $customPluginConfiguration
+ * @property Shapes\PluginAuthConfiguration|null $authConfiguration
  */
 class UpdatePluginRequest extends Request
 {
@@ -19,11 +19,11 @@ class UpdatePluginRequest extends Request
      * @param array{
      *     applicationId: string,
      *     pluginId: string,
-     *     displayName?: string,
-     *     state?: 'ENABLED'|'DISABLED',
-     *     serverUrl?: string,
-     *     customPluginConfiguration?: Shapes\CustomPluginConfiguration,
-     *     authConfiguration?: Shapes\PluginAuthConfiguration
+     *     displayName?: string|null,
+     *     state?: 'ENABLED'|'DISABLED'|null,
+     *     serverUrl?: string|null,
+     *     customPluginConfiguration?: Shapes\CustomPluginConfiguration|null,
+     *     authConfiguration?: Shapes\PluginAuthConfiguration|null
      * } $args
      */
     public function __construct(array $args)

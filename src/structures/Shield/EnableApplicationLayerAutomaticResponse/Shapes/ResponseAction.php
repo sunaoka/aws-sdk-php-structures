@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Shield\EnableApplicationLayerAutomaticResponse\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BlockAction $Block
- * @property CountAction $Count
+ * @property BlockAction|null $Block
+ * @property CountAction|null $Count
  */
 class ResponseAction extends Shape
 {
     /**
      * @param array{
-     *     Block?: BlockAction,
-     *     Count?: CountAction
+     *     Block?: BlockAction|null,
+     *     Count?: CountAction|null
      * } $args
      */
     public function __construct(array $args = [])

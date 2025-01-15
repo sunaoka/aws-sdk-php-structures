@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\StartOutboundVoiceContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableAnswerMachineDetection
- * @property bool $AwaitAnswerMachinePrompt
+ * @property bool|null $EnableAnswerMachineDetection
+ * @property bool|null $AwaitAnswerMachinePrompt
  */
 class AnswerMachineDetectionConfig extends Shape
 {
     /**
      * @param array{
-     *     EnableAnswerMachineDetection?: bool,
-     *     AwaitAnswerMachinePrompt?: bool
+     *     EnableAnswerMachineDetection?: bool|null,
+     *     AwaitAnswerMachinePrompt?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

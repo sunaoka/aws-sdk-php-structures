@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectWisdomService\QueryAssistant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Highlight> $highlights
- * @property string $text
+ * @property list<Highlight>|null $highlights
+ * @property string|null $text
  */
 class DocumentText extends Shape
 {
     /**
      * @param array{
-     *     highlights?: list<Highlight>,
-     *     text?: string
+     *     highlights?: list<Highlight>|null,
+     *     text?: string|null
      * } $args
      */
     public function __construct(array $args = [])

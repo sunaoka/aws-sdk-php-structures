@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $entityId
- * @property string $evaluationContext
+ * @property string|null $evaluationContext
  * @property string $feature
  */
 class EvaluationRequest extends Shape
@@ -14,7 +14,7 @@ class EvaluationRequest extends Shape
     /**
      * @param array{
      *     entityId: string,
-     *     evaluationContext?: string,
+     *     evaluationContext?: string|null,
      *     feature: string
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\TaxSettings\BatchPutTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $individualRegistrationNumber
- * @property bool $isGroupVatEnabled
+ * @property string|null $individualRegistrationNumber
+ * @property bool|null $isGroupVatEnabled
  */
 class PolandAdditionalInfo extends Shape
 {
     /**
      * @param array{
-     *     individualRegistrationNumber?: string,
-     *     isGroupVatEnabled?: bool
+     *     individualRegistrationNumber?: string|null,
+     *     isGroupVatEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

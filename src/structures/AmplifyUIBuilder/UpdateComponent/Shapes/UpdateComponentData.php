@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\UpdateComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
- * @property string $sourceId
- * @property string $componentType
- * @property array<string, ComponentProperty> $properties
- * @property list<ComponentChild> $children
- * @property list<ComponentVariant> $variants
- * @property array<string, array<string, string>> $overrides
- * @property array<string, ComponentBindingPropertiesValue> $bindingProperties
- * @property array<string, ComponentDataConfiguration> $collectionProperties
- * @property array<string, ComponentEvent> $events
- * @property string $schemaVersion
+ * @property string|null $id
+ * @property string|null $name
+ * @property string|null $sourceId
+ * @property string|null $componentType
+ * @property array<string, ComponentProperty>|null $properties
+ * @property list<ComponentChild>|null $children
+ * @property list<ComponentVariant>|null $variants
+ * @property array<string, array<string, string>>|null $overrides
+ * @property array<string, ComponentBindingPropertiesValue>|null $bindingProperties
+ * @property array<string, ComponentDataConfiguration>|null $collectionProperties
+ * @property array<string, ComponentEvent>|null $events
+ * @property string|null $schemaVersion
  */
 class UpdateComponentData extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string,
-     *     sourceId?: string,
-     *     componentType?: string,
-     *     properties?: array<string, ComponentProperty>,
-     *     children?: list<ComponentChild>,
-     *     variants?: list<ComponentVariant>,
-     *     overrides?: array<string, array<string, string>>,
-     *     bindingProperties?: array<string, ComponentBindingPropertiesValue>,
-     *     collectionProperties?: array<string, ComponentDataConfiguration>,
-     *     events?: array<string, ComponentEvent>,
-     *     schemaVersion?: string
+     *     id?: string|null,
+     *     name?: string|null,
+     *     sourceId?: string|null,
+     *     componentType?: string|null,
+     *     properties?: array<string, ComponentProperty>|null,
+     *     children?: list<ComponentChild>|null,
+     *     variants?: list<ComponentVariant>|null,
+     *     overrides?: array<string, array<string, string>>|null,
+     *     bindingProperties?: array<string, ComponentBindingPropertiesValue>|null,
+     *     collectionProperties?: array<string, ComponentDataConfiguration>|null,
+     *     events?: array<string, ComponentEvent>|null,
+     *     schemaVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

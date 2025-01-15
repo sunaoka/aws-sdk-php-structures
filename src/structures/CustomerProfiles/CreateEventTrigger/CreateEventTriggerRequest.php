@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property string $EventTriggerName
  * @property string $ObjectTypeName
- * @property string $Description
+ * @property string|null $Description
  * @property list<Shapes\EventTriggerCondition> $EventTriggerConditions
- * @property string $SegmentFilter
- * @property Shapes\EventTriggerLimits $EventTriggerLimits
- * @property array<string, string> $Tags
+ * @property string|null $SegmentFilter
+ * @property Shapes\EventTriggerLimits|null $EventTriggerLimits
+ * @property array<string, string>|null $Tags
  */
 class CreateEventTriggerRequest extends Request
 {
@@ -21,11 +21,11 @@ class CreateEventTriggerRequest extends Request
      *     DomainName: string,
      *     EventTriggerName: string,
      *     ObjectTypeName: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     EventTriggerConditions: list<Shapes\EventTriggerCondition>,
-     *     SegmentFilter?: string,
-     *     EventTriggerLimits?: Shapes\EventTriggerLimits,
-     *     Tags?: array<string, string>
+     *     SegmentFilter?: string|null,
+     *     EventTriggerLimits?: Shapes\EventTriggerLimits|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

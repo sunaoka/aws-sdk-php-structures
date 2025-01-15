@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateFunctionDefinitionVersion\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FunctionDefaultExecutionConfig $Execution
+ * @property FunctionDefaultExecutionConfig|null $Execution
  */
 class FunctionDefaultConfig extends Shape
 {
     /**
-     * @param array{Execution?: FunctionDefaultExecutionConfig} $args
+     * @param array{Execution?: FunctionDefaultExecutionConfig|null} $args
      */
     public function __construct(array $args = [])
     {

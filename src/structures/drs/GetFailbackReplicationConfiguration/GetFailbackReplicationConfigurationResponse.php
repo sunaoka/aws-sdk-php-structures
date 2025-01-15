@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\drs\GetFailbackReplicationConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int<0, max> $bandwidthThrottling
- * @property string $name
+ * @property int<0, max>|null $bandwidthThrottling
+ * @property string|null $name
  * @property string $recoveryInstanceID
- * @property bool $usePrivateIP
+ * @property bool|null $usePrivateIP
  */
 class GetFailbackReplicationConfigurationResponse extends Response
 {

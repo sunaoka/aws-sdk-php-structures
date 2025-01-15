@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LicenseArn
- * @property list<string> $RoleArns
- * @property int $ExpirationInDays
- * @property list<string> $TokenProperties
+ * @property list<string>|null $RoleArns
+ * @property int|null $ExpirationInDays
+ * @property list<string>|null $TokenProperties
  * @property string $ClientToken
  */
 class CreateTokenRequest extends Request
@@ -16,9 +16,9 @@ class CreateTokenRequest extends Request
     /**
      * @param array{
      *     LicenseArn: string,
-     *     RoleArns?: list<string>,
-     *     ExpirationInDays?: int,
-     *     TokenProperties?: list<string>,
+     *     RoleArns?: list<string>|null,
+     *     ExpirationInDays?: int|null,
+     *     TokenProperties?: list<string>|null,
      *     ClientToken: string
      * } $args
      */

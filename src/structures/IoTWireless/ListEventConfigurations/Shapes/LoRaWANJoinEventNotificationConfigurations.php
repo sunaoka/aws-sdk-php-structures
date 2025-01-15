@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListEventConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Enabled'|'Disabled' $DevEuiEventTopic
+ * @property 'Enabled'|'Disabled'|null $DevEuiEventTopic
  */
 class LoRaWANJoinEventNotificationConfigurations extends Shape
 {
     /**
-     * @param array{DevEuiEventTopic?: 'Enabled'|'Disabled'} $args
+     * @param array{DevEuiEventTopic?: 'Enabled'|'Disabled'|null} $args
      */
     public function __construct(array $args = [])
     {

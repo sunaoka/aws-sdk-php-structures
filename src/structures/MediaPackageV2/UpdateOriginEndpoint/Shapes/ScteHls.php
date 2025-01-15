@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaPackageV2\UpdateOriginEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DATERANGE' $AdMarkerHls
+ * @property 'DATERANGE'|null $AdMarkerHls
  */
 class ScteHls extends Shape
 {
     /**
-     * @param array{AdMarkerHls?: 'DATERANGE'} $args
+     * @param array{AdMarkerHls?: 'DATERANGE'|null} $args
      */
     public function __construct(array $args = [])
     {

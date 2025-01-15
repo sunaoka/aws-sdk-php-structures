@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Emr\GetClusterSessionCredentials\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property UsernamePassword $UsernamePassword
+ * @property UsernamePassword|null $UsernamePassword
  */
 class Credentials extends Shape
 {
     /**
-     * @param array{UsernamePassword?: UsernamePassword} $args
+     * @param array{UsernamePassword?: UsernamePassword|null} $args
      */
     public function __construct(array $args = [])
     {

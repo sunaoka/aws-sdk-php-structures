@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\UpdateTrustAnchor;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $name
- * @property Shapes\Source $source
+ * @property string|null $name
+ * @property Shapes\Source|null $source
  * @property string $trustAnchorId
  */
 class UpdateTrustAnchorRequest extends Request
 {
     /**
      * @param array{
-     *     name?: string,
-     *     source?: Shapes\Source,
+     *     name?: string|null,
+     *     source?: Shapes\Source|null,
      *     trustAnchorId: string
      * } $args
      */

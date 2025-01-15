@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\StopChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AudioSilenceFailoverSettings $AudioSilenceSettings
- * @property InputLossFailoverSettings $InputLossSettings
- * @property VideoBlackFailoverSettings $VideoBlackSettings
+ * @property AudioSilenceFailoverSettings|null $AudioSilenceSettings
+ * @property InputLossFailoverSettings|null $InputLossSettings
+ * @property VideoBlackFailoverSettings|null $VideoBlackSettings
  */
 class FailoverConditionSettings extends Shape
 {
     /**
      * @param array{
-     *     AudioSilenceSettings?: AudioSilenceFailoverSettings,
-     *     InputLossSettings?: InputLossFailoverSettings,
-     *     VideoBlackSettings?: VideoBlackFailoverSettings
+     *     AudioSilenceSettings?: AudioSilenceFailoverSettings|null,
+     *     InputLossSettings?: InputLossFailoverSettings|null,
+     *     VideoBlackSettings?: VideoBlackFailoverSettings|null
      * } $args
      */
     public function __construct(array $args = [])

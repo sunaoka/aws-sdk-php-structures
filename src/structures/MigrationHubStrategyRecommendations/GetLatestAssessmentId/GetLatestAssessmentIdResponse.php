@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetLatestAs
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $id
+ * @property string|null $id
  */
 class GetLatestAssessmentIdResponse extends Response
 {

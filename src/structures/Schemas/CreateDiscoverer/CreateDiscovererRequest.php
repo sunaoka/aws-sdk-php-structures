@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Schemas\CreateDiscoverer;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $SourceArn
- * @property bool $CrossAccount
- * @property array<string, string> $Tags
+ * @property bool|null $CrossAccount
+ * @property array<string, string>|null $Tags
  */
 class CreateDiscovererRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     SourceArn: string,
-     *     CrossAccount?: bool,
-     *     Tags?: array<string, string>
+     *     CrossAccount?: bool|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

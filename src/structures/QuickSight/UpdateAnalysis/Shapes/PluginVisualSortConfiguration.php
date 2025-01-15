@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PluginVisualTableQuerySort $PluginVisualTableQuerySort
+ * @property PluginVisualTableQuerySort|null $PluginVisualTableQuerySort
  */
 class PluginVisualSortConfiguration extends Shape
 {
     /**
-     * @param array{PluginVisualTableQuerySort?: PluginVisualTableQuerySort} $args
+     * @param array{PluginVisualTableQuerySort?: PluginVisualTableQuerySort|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\IoTSecureTunneling\RotateTunnelAccessToken\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $thingName
+ * @property string|null $thingName
  * @property list<string> $services
  */
 class DestinationConfig extends Shape
 {
     /**
      * @param array{
-     *     thingName?: string,
+     *     thingName?: string|null,
      *     services: list<string>
      * } $args
      */

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Emr\AddInstanceFleet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ClusterId
- * @property string $InstanceFleetId
- * @property string $ClusterArn
+ * @property string|null $ClusterId
+ * @property string|null $InstanceFleetId
+ * @property string|null $ClusterArn
  */
 class AddInstanceFleetResponse extends Response
 {

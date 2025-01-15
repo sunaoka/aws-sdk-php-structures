@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\CancelImportTask;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CancelReason
- * @property bool $DryRun
- * @property string $ImportTaskId
+ * @property string|null $CancelReason
+ * @property bool|null $DryRun
+ * @property string|null $ImportTaskId
  */
 class CancelImportTaskRequest extends Request
 {
     /**
      * @param array{
-     *     CancelReason?: string,
-     *     DryRun?: bool,
-     *     ImportTaskId?: string
+     *     CancelReason?: string|null,
+     *     DryRun?: bool|null,
+     *     ImportTaskId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeInferenceRecommendationsJob\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PHASES'|'STAIRS' $TrafficType
- * @property list<Phase> $Phases
- * @property Stairs $Stairs
+ * @property 'PHASES'|'STAIRS'|null $TrafficType
+ * @property list<Phase>|null $Phases
+ * @property Stairs|null $Stairs
  */
 class TrafficPattern extends Shape
 {
     /**
      * @param array{
-     *     TrafficType?: 'PHASES'|'STAIRS',
-     *     Phases?: list<Phase>,
-     *     Stairs?: Stairs
+     *     TrafficType?: 'PHASES'|'STAIRS'|null,
+     *     Phases?: list<Phase>|null,
+     *     Stairs?: Stairs|null
      * } $args
      */
     public function __construct(array $args = [])

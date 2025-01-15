@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StringFormatConfiguration $StringFormatConfiguration
- * @property NumberFormatConfiguration $NumberFormatConfiguration
- * @property DateTimeFormatConfiguration $DateTimeFormatConfiguration
+ * @property StringFormatConfiguration|null $StringFormatConfiguration
+ * @property NumberFormatConfiguration|null $NumberFormatConfiguration
+ * @property DateTimeFormatConfiguration|null $DateTimeFormatConfiguration
  */
 class FormatConfiguration extends Shape
 {
     /**
      * @param array{
-     *     StringFormatConfiguration?: StringFormatConfiguration,
-     *     NumberFormatConfiguration?: NumberFormatConfiguration,
-     *     DateTimeFormatConfiguration?: DateTimeFormatConfiguration
+     *     StringFormatConfiguration?: StringFormatConfiguration|null,
+     *     NumberFormatConfiguration?: NumberFormatConfiguration|null,
+     *     DateTimeFormatConfiguration?: DateTimeFormatConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

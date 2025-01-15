@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ConnectWisdomService\GetRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $contentArn
- * @property string $contentId
- * @property string $knowledgeBaseArn
- * @property string $knowledgeBaseId
+ * @property string|null $contentArn
+ * @property string|null $contentId
+ * @property string|null $knowledgeBaseArn
+ * @property string|null $knowledgeBaseId
  */
 class ContentReference extends Shape
 {
     /**
      * @param array{
-     *     contentArn?: string,
-     *     contentId?: string,
-     *     knowledgeBaseArn?: string,
-     *     knowledgeBaseId?: string
+     *     contentArn?: string|null,
+     *     contentId?: string|null,
+     *     knowledgeBaseArn?: string|null,
+     *     knowledgeBaseId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

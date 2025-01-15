@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\ListUsageLimits\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $amount
- * @property 'log'|'emit-metric'|'deactivate' $breachAction
- * @property 'daily'|'weekly'|'monthly' $period
- * @property string $resourceArn
- * @property string $usageLimitArn
- * @property string $usageLimitId
- * @property 'serverless-compute'|'cross-region-datasharing' $usageType
+ * @property int|null $amount
+ * @property 'log'|'emit-metric'|'deactivate'|null $breachAction
+ * @property 'daily'|'weekly'|'monthly'|null $period
+ * @property string|null $resourceArn
+ * @property string|null $usageLimitArn
+ * @property string|null $usageLimitId
+ * @property 'serverless-compute'|'cross-region-datasharing'|null $usageType
  */
 class UsageLimit extends Shape
 {
     /**
      * @param array{
-     *     amount?: int,
-     *     breachAction?: 'log'|'emit-metric'|'deactivate',
-     *     period?: 'daily'|'weekly'|'monthly',
-     *     resourceArn?: string,
-     *     usageLimitArn?: string,
-     *     usageLimitId?: string,
-     *     usageType?: 'serverless-compute'|'cross-region-datasharing'
+     *     amount?: int|null,
+     *     breachAction?: 'log'|'emit-metric'|'deactivate'|null,
+     *     period?: 'daily'|'weekly'|'monthly'|null,
+     *     resourceArn?: string|null,
+     *     usageLimitArn?: string|null,
+     *     usageLimitId?: string|null,
+     *     usageType?: 'serverless-compute'|'cross-region-datasharing'|null
      * } $args
      */
     public function __construct(array $args = [])

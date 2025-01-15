@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\S3\RestoreObject;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'requester' $RequestCharged
- * @property string $RestoreOutputPath
+ * @property 'requester'|null $RequestCharged
+ * @property string|null $RestoreOutputPath
  */
 class RestoreObjectResponse extends Response
 {

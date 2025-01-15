@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTEventsData\BatchSnoozeAlarm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $requestId
- * @property 'ResourceNotFoundException'|'InvalidRequestException'|'InternalFailureException'|'ServiceUnavailableException'|'ThrottlingException' $errorCode
- * @property string $errorMessage
+ * @property string|null $requestId
+ * @property 'ResourceNotFoundException'|'InvalidRequestException'|'InternalFailureException'|'ServiceUnavailableException'|'ThrottlingException'|null $errorCode
+ * @property string|null $errorMessage
  */
 class BatchAlarmActionErrorEntry extends Shape
 {
     /**
      * @param array{
-     *     requestId?: string,
-     *     errorCode?: 'ResourceNotFoundException'|'InvalidRequestException'|'InternalFailureException'|'ServiceUnavailableException'|'ThrottlingException',
-     *     errorMessage?: string
+     *     requestId?: string|null,
+     *     errorCode?: 'ResourceNotFoundException'|'InvalidRequestException'|'InternalFailureException'|'ServiceUnavailableException'|'ThrottlingException'|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

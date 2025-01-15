@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Iot\ListJobTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $jobTemplateArn
- * @property string $jobTemplateId
- * @property string $description
- * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string|null $jobTemplateArn
+ * @property string|null $jobTemplateId
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  */
 class JobTemplateSummary extends Shape
 {
     /**
      * @param array{
-     *     jobTemplateArn?: string,
-     *     jobTemplateId?: string,
-     *     description?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult
+     *     jobTemplateArn?: string|null,
+     *     jobTemplateId?: string|null,
+     *     description?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

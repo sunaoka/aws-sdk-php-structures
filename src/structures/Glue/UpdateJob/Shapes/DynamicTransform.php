@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $TransformName
  * @property list<string> $Inputs
- * @property list<TransformConfigParameter> $Parameters
+ * @property list<TransformConfigParameter>|null $Parameters
  * @property string $FunctionName
  * @property string $Path
- * @property string $Version
- * @property list<GlueSchema> $OutputSchemas
+ * @property string|null $Version
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class DynamicTransform extends Shape
 {
@@ -21,11 +21,11 @@ class DynamicTransform extends Shape
      *     Name: string,
      *     TransformName: string,
      *     Inputs: list<string>,
-     *     Parameters?: list<TransformConfigParameter>,
+     *     Parameters?: list<TransformConfigParameter>|null,
      *     FunctionName: string,
      *     Path: string,
-     *     Version?: string,
-     *     OutputSchemas?: list<GlueSchema>
+     *     Version?: string|null,
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

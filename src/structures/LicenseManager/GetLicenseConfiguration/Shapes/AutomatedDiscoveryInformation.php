@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LicenseManager\GetLicenseConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $LastRunTime
+ * @property \Aws\Api\DateTimeResult|null $LastRunTime
  */
 class AutomatedDiscoveryInformation extends Shape
 {
     /**
-     * @param array{LastRunTime?: \Aws\Api\DateTimeResult} $args
+     * @param array{LastRunTime?: \Aws\Api\DateTimeResult|null} $args
      */
     public function __construct(array $args = [])
     {

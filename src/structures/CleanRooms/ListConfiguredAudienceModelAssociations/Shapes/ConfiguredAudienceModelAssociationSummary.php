@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property string $name
  * @property string $configuredAudienceModelArn
- * @property string $description
+ * @property string|null $description
  */
 class ConfiguredAudienceModelAssociationSummary extends Shape
 {
@@ -31,7 +31,7 @@ class ConfiguredAudienceModelAssociationSummary extends Shape
      *     arn: string,
      *     name: string,
      *     configuredAudienceModelArn: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

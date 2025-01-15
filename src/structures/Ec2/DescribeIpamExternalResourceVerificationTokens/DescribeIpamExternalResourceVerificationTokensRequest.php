@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeIpamExternalResourceVerificationTok
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property list<Shapes\Filter> $Filters
- * @property string $NextToken
- * @property int<5, 1000> $MaxResults
- * @property list<string> $IpamExternalResourceVerificationTokenIds
+ * @property bool|null $DryRun
+ * @property list<Shapes\Filter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<5, 1000>|null $MaxResults
+ * @property list<string>|null $IpamExternalResourceVerificationTokenIds
  */
 class DescribeIpamExternalResourceVerificationTokensRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     Filters?: list<Shapes\Filter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<5, 1000>,
-     *     IpamExternalResourceVerificationTokenIds?: list<string>
+     *     DryRun?: bool|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<5, 1000>|null,
+     *     IpamExternalResourceVerificationTokenIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

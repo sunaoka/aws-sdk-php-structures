@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DataZone\RevokeSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AssetInDataProductListingItem> $assetListings
- * @property string $description
- * @property string $entityId
- * @property string $entityRevision
- * @property list<DetailedGlossaryTerm> $glossaryTerms
- * @property string $name
+ * @property list<AssetInDataProductListingItem>|null $assetListings
+ * @property string|null $description
+ * @property string|null $entityId
+ * @property string|null $entityRevision
+ * @property list<DetailedGlossaryTerm>|null $glossaryTerms
+ * @property string|null $name
  */
 class SubscribedProductListing extends Shape
 {
     /**
      * @param array{
-     *     assetListings?: list<AssetInDataProductListingItem>,
-     *     description?: string,
-     *     entityId?: string,
-     *     entityRevision?: string,
-     *     glossaryTerms?: list<DetailedGlossaryTerm>,
-     *     name?: string
+     *     assetListings?: list<AssetInDataProductListingItem>|null,
+     *     description?: string|null,
+     *     entityId?: string|null,
+     *     entityRevision?: string|null,
+     *     glossaryTerms?: list<DetailedGlossaryTerm>|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

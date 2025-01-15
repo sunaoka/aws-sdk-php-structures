@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $userPoolArn
  * @property list<string> $clientIds
  * @property string $issuer
- * @property CognitoGroupConfigurationItem $groupConfiguration
+ * @property CognitoGroupConfigurationItem|null $groupConfiguration
  */
 class CognitoUserPoolConfigurationItem extends Shape
 {
@@ -17,7 +17,7 @@ class CognitoUserPoolConfigurationItem extends Shape
      *     userPoolArn: string,
      *     clientIds: list<string>,
      *     issuer: string,
-     *     groupConfiguration?: CognitoGroupConfigurationItem
+     *     groupConfiguration?: CognitoGroupConfigurationItem|null
      * } $args
      */
     public function __construct(array $args)

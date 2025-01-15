@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $resourceId
  * @property string $httpMethod
  * @property string $authorizationType
- * @property string $authorizerId
- * @property bool $apiKeyRequired
- * @property string $operationName
- * @property array<string, bool> $requestParameters
- * @property array<string, string> $requestModels
- * @property string $requestValidatorId
- * @property list<string> $authorizationScopes
+ * @property string|null $authorizerId
+ * @property bool|null $apiKeyRequired
+ * @property string|null $operationName
+ * @property array<string, bool>|null $requestParameters
+ * @property array<string, string>|null $requestModels
+ * @property string|null $requestValidatorId
+ * @property list<string>|null $authorizationScopes
  */
 class PutMethodRequest extends Request
 {
@@ -25,13 +25,13 @@ class PutMethodRequest extends Request
      *     resourceId: string,
      *     httpMethod: string,
      *     authorizationType: string,
-     *     authorizerId?: string,
-     *     apiKeyRequired?: bool,
-     *     operationName?: string,
-     *     requestParameters?: array<string, bool>,
-     *     requestModels?: array<string, string>,
-     *     requestValidatorId?: string,
-     *     authorizationScopes?: list<string>
+     *     authorizerId?: string|null,
+     *     apiKeyRequired?: bool|null,
+     *     operationName?: string|null,
+     *     requestParameters?: array<string, bool>|null,
+     *     requestModels?: array<string, string>|null,
+     *     requestValidatorId?: string|null,
+     *     authorizationScopes?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

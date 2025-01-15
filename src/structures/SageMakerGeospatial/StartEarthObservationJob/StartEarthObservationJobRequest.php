@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\StartEarthObservationJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $ExecutionRoleArn
  * @property Shapes\InputConfigInput $InputConfig
  * @property Shapes\JobConfigInput $JobConfig
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  * @property string $Name
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class StartEarthObservationJobRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     ExecutionRoleArn: string,
      *     InputConfig: Shapes\InputConfigInput,
      *     JobConfig: Shapes\JobConfigInput,
-     *     KmsKeyId?: string,
+     *     KmsKeyId?: string|null,
      *     Name: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

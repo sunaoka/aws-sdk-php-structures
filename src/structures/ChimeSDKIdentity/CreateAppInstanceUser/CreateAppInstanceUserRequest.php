@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AppInstanceArn
  * @property string $AppInstanceUserId
  * @property string $Name
- * @property string $Metadata
+ * @property string|null $Metadata
  * @property string $ClientRequestToken
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\ExpirationSettings $ExpirationSettings
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\ExpirationSettings|null $ExpirationSettings
  */
 class CreateAppInstanceUserRequest extends Request
 {
@@ -20,10 +20,10 @@ class CreateAppInstanceUserRequest extends Request
      *     AppInstanceArn: string,
      *     AppInstanceUserId: string,
      *     Name: string,
-     *     Metadata?: string,
+     *     Metadata?: string|null,
      *     ClientRequestToken: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     ExpirationSettings?: Shapes\ExpirationSettings
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ExpirationSettings?: Shapes\ExpirationSettings|null
      * } $args
      */
     public function __construct(array $args)

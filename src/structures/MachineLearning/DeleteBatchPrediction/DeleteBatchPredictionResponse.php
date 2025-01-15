@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MachineLearning\DeleteBatchPrediction;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $BatchPredictionId
+ * @property string|null $BatchPredictionId
  */
 class DeleteBatchPredictionResponse extends Response
 {

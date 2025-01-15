@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DescribeParameterGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ParameterGroupName
- * @property int $MaxResults
- * @property string $NextToken
+ * @property string|null $ParameterGroupName
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeParameterGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     ParameterGroupName?: string,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     ParameterGroupName?: string|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

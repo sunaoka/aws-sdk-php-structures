@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeOptionGroupOptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Version
- * @property bool $IsDefault
+ * @property string|null $Version
+ * @property bool|null $IsDefault
  */
 class OptionVersion extends Shape
 {
     /**
      * @param array{
-     *     Version?: string,
-     *     IsDefault?: bool
+     *     Version?: string|null,
+     *     IsDefault?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

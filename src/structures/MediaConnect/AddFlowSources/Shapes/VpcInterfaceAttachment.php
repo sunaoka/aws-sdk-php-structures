@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConnect\AddFlowSources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VpcInterfaceName
+ * @property string|null $VpcInterfaceName
  */
 class VpcInterfaceAttachment extends Shape
 {
     /**
-     * @param array{VpcInterfaceName?: string} $args
+     * @param array{VpcInterfaceName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FraudDetector\DescribeModelVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $auc
- * @property UncertaintyRange $uncertaintyRange
+ * @property float|null $auc
+ * @property UncertaintyRange|null $uncertaintyRange
  */
 class TFIModelPerformance extends Shape
 {
     /**
      * @param array{
-     *     auc?: float,
-     *     uncertaintyRange?: UncertaintyRange
+     *     auc?: float|null,
+     *     uncertaintyRange?: UncertaintyRange|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ActionTypeId $id
- * @property ActionTypeSettings $settings
- * @property list<ActionConfigurationProperty> $actionConfigurationProperties
+ * @property ActionTypeSettings|null $settings
+ * @property list<ActionConfigurationProperty>|null $actionConfigurationProperties
  * @property ArtifactDetails $inputArtifactDetails
  * @property ArtifactDetails $outputArtifactDetails
  */
@@ -16,8 +16,8 @@ class ActionType extends Shape
     /**
      * @param array{
      *     id: ActionTypeId,
-     *     settings?: ActionTypeSettings,
-     *     actionConfigurationProperties?: list<ActionConfigurationProperty>,
+     *     settings?: ActionTypeSettings|null,
+     *     actionConfigurationProperties?: list<ActionConfigurationProperty>|null,
      *     inputArtifactDetails: ArtifactDetails,
      *     outputArtifactDetails: ArtifactDetails
      * } $args

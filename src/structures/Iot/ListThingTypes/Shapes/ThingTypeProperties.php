@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\ListThingTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $thingTypeDescription
- * @property list<string> $searchableAttributes
- * @property Mqtt5Configuration $mqtt5Configuration
+ * @property string|null $thingTypeDescription
+ * @property list<string>|null $searchableAttributes
+ * @property Mqtt5Configuration|null $mqtt5Configuration
  */
 class ThingTypeProperties extends Shape
 {
     /**
      * @param array{
-     *     thingTypeDescription?: string,
-     *     searchableAttributes?: list<string>,
-     *     mqtt5Configuration?: Mqtt5Configuration
+     *     thingTypeDescription?: string|null,
+     *     searchableAttributes?: list<string>|null,
+     *     mqtt5Configuration?: Mqtt5Configuration|null
      * } $args
      */
     public function __construct(array $args = [])

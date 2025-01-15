@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ModifyDataMigration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CDCStartPosition
- * @property \Aws\Api\DateTimeResult $CDCStartTime
- * @property \Aws\Api\DateTimeResult $CDCStopTime
- * @property string $SlotName
+ * @property string|null $CDCStartPosition
+ * @property \Aws\Api\DateTimeResult|null $CDCStartTime
+ * @property \Aws\Api\DateTimeResult|null $CDCStopTime
+ * @property string|null $SlotName
  */
 class SourceDataSetting extends Shape
 {
     /**
      * @param array{
-     *     CDCStartPosition?: string,
-     *     CDCStartTime?: \Aws\Api\DateTimeResult,
-     *     CDCStopTime?: \Aws\Api\DateTimeResult,
-     *     SlotName?: string
+     *     CDCStartPosition?: string|null,
+     *     CDCStartTime?: \Aws\Api\DateTimeResult|null,
+     *     CDCStopTime?: \Aws\Api\DateTimeResult|null,
+     *     SlotName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

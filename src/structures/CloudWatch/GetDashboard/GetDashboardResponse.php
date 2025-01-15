@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CloudWatch\GetDashboard;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DashboardArn
- * @property string $DashboardBody
- * @property string $DashboardName
+ * @property string|null $DashboardArn
+ * @property string|null $DashboardBody
+ * @property string|null $DashboardName
  */
 class GetDashboardResponse extends Response
 {

@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\CreateProject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $activeExperimentCount
- * @property int $activeLaunchCount
- * @property ProjectAppConfigResource $appConfigResource
+ * @property int|null $activeExperimentCount
+ * @property int|null $activeLaunchCount
+ * @property ProjectAppConfigResource|null $appConfigResource
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdTime
- * @property ProjectDataDelivery $dataDelivery
- * @property string $description
- * @property int $experimentCount
- * @property int $featureCount
+ * @property ProjectDataDelivery|null $dataDelivery
+ * @property string|null $description
+ * @property int|null $experimentCount
+ * @property int|null $featureCount
  * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property int $launchCount
+ * @property int|null $launchCount
  * @property string $name
  * @property 'AVAILABLE'|'UPDATING' $status
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class Project extends Shape
 {
     /**
      * @param array{
-     *     activeExperimentCount?: int,
-     *     activeLaunchCount?: int,
-     *     appConfigResource?: ProjectAppConfigResource,
+     *     activeExperimentCount?: int|null,
+     *     activeLaunchCount?: int|null,
+     *     appConfigResource?: ProjectAppConfigResource|null,
      *     arn: string,
      *     createdTime: \Aws\Api\DateTimeResult,
-     *     dataDelivery?: ProjectDataDelivery,
-     *     description?: string,
-     *     experimentCount?: int,
-     *     featureCount?: int,
+     *     dataDelivery?: ProjectDataDelivery|null,
+     *     description?: string|null,
+     *     experimentCount?: int|null,
+     *     featureCount?: int|null,
      *     lastUpdatedTime: \Aws\Api\DateTimeResult,
-     *     launchCount?: int,
+     *     launchCount?: int|null,
      *     name: string,
      *     status: 'AVAILABLE'|'UPDATING',
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\DataIntegrationFlowSource> $sources
  * @property Shapes\DataIntegrationFlowTransformation $transformation
  * @property Shapes\DataIntegrationFlowTarget $target
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateDataIntegrationFlowRequest extends Request
 {
@@ -21,7 +21,7 @@ class CreateDataIntegrationFlowRequest extends Request
      *     sources: list<Shapes\DataIntegrationFlowSource>,
      *     transformation: Shapes\DataIntegrationFlowTransformation,
      *     target: Shapes\DataIntegrationFlowTarget,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

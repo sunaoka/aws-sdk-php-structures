@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property string $group
- * @property double $amount
+ * @property string|null $group
+ * @property double|null $amount
  */
 class BatchUpdateWorkloadEstimateUsageEntry extends Shape
 {
     /**
      * @param array{
      *     id: string,
-     *     group?: string,
-     *     amount?: double
+     *     group?: string|null,
+     *     amount?: double|null
      * } $args
      */
     public function __construct(array $args)

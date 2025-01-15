@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Panorama\CreatePackageImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PackageVersionInputConfig $PackageVersionInputConfig
+ * @property PackageVersionInputConfig|null $PackageVersionInputConfig
  */
 class PackageImportJobInputConfig extends Shape
 {
     /**
-     * @param array{PackageVersionInputConfig?: PackageVersionInputConfig} $args
+     * @param array{PackageVersionInputConfig?: PackageVersionInputConfig|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Firehose\DescribeDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ConvertDotsInJsonKeysToUnderscores
- * @property bool $CaseInsensitive
- * @property array<string, string> $ColumnToJsonKeyMappings
+ * @property bool|null $ConvertDotsInJsonKeysToUnderscores
+ * @property bool|null $CaseInsensitive
+ * @property array<string, string>|null $ColumnToJsonKeyMappings
  */
 class OpenXJsonSerDe extends Shape
 {
     /**
      * @param array{
-     *     ConvertDotsInJsonKeysToUnderscores?: bool,
-     *     CaseInsensitive?: bool,
-     *     ColumnToJsonKeyMappings?: array<string, string>
+     *     ConvertDotsInJsonKeysToUnderscores?: bool|null,
+     *     CaseInsensitive?: bool|null,
+     *     ColumnToJsonKeyMappings?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

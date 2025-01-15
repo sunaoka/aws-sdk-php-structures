@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppSync\ListFunctions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $lambdaConflictHandlerArn
+ * @property string|null $lambdaConflictHandlerArn
  */
 class LambdaConflictHandlerConfig extends Shape
 {
     /**
-     * @param array{lambdaConflictHandlerArn?: string} $args
+     * @param array{lambdaConflictHandlerArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

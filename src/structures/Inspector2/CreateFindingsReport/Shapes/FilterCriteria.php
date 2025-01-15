@@ -5,95 +5,95 @@ namespace Sunaoka\Aws\Structures\Inspector2\CreateFindingsReport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<StringFilter> $awsAccountId
- * @property list<StringFilter> $codeVulnerabilityDetectorName
- * @property list<StringFilter> $codeVulnerabilityDetectorTags
- * @property list<StringFilter> $codeVulnerabilityFilePath
- * @property list<StringFilter> $componentId
- * @property list<StringFilter> $componentType
- * @property list<StringFilter> $ec2InstanceImageId
- * @property list<StringFilter> $ec2InstanceSubnetId
- * @property list<StringFilter> $ec2InstanceVpcId
- * @property list<StringFilter> $ecrImageArchitecture
- * @property list<StringFilter> $ecrImageHash
- * @property list<DateFilter> $ecrImagePushedAt
- * @property list<StringFilter> $ecrImageRegistry
- * @property list<StringFilter> $ecrImageRepositoryName
- * @property list<StringFilter> $ecrImageTags
- * @property list<NumberFilter> $epssScore
- * @property list<StringFilter> $exploitAvailable
- * @property list<StringFilter> $findingArn
- * @property list<StringFilter> $findingStatus
- * @property list<StringFilter> $findingType
- * @property list<DateFilter> $firstObservedAt
- * @property list<StringFilter> $fixAvailable
- * @property list<NumberFilter> $inspectorScore
- * @property list<StringFilter> $lambdaFunctionExecutionRoleArn
- * @property list<DateFilter> $lambdaFunctionLastModifiedAt
- * @property list<StringFilter> $lambdaFunctionLayers
- * @property list<StringFilter> $lambdaFunctionName
- * @property list<StringFilter> $lambdaFunctionRuntime
- * @property list<DateFilter> $lastObservedAt
- * @property list<StringFilter> $networkProtocol
- * @property list<PortRangeFilter> $portRange
- * @property list<StringFilter> $relatedVulnerabilities
- * @property list<StringFilter> $resourceId
- * @property list<MapFilter> $resourceTags
- * @property list<StringFilter> $resourceType
- * @property list<StringFilter> $severity
- * @property list<StringFilter> $title
- * @property list<DateFilter> $updatedAt
- * @property list<StringFilter> $vendorSeverity
- * @property list<StringFilter> $vulnerabilityId
- * @property list<StringFilter> $vulnerabilitySource
- * @property list<PackageFilter> $vulnerablePackages
+ * @property list<StringFilter>|null $awsAccountId
+ * @property list<StringFilter>|null $codeVulnerabilityDetectorName
+ * @property list<StringFilter>|null $codeVulnerabilityDetectorTags
+ * @property list<StringFilter>|null $codeVulnerabilityFilePath
+ * @property list<StringFilter>|null $componentId
+ * @property list<StringFilter>|null $componentType
+ * @property list<StringFilter>|null $ec2InstanceImageId
+ * @property list<StringFilter>|null $ec2InstanceSubnetId
+ * @property list<StringFilter>|null $ec2InstanceVpcId
+ * @property list<StringFilter>|null $ecrImageArchitecture
+ * @property list<StringFilter>|null $ecrImageHash
+ * @property list<DateFilter>|null $ecrImagePushedAt
+ * @property list<StringFilter>|null $ecrImageRegistry
+ * @property list<StringFilter>|null $ecrImageRepositoryName
+ * @property list<StringFilter>|null $ecrImageTags
+ * @property list<NumberFilter>|null $epssScore
+ * @property list<StringFilter>|null $exploitAvailable
+ * @property list<StringFilter>|null $findingArn
+ * @property list<StringFilter>|null $findingStatus
+ * @property list<StringFilter>|null $findingType
+ * @property list<DateFilter>|null $firstObservedAt
+ * @property list<StringFilter>|null $fixAvailable
+ * @property list<NumberFilter>|null $inspectorScore
+ * @property list<StringFilter>|null $lambdaFunctionExecutionRoleArn
+ * @property list<DateFilter>|null $lambdaFunctionLastModifiedAt
+ * @property list<StringFilter>|null $lambdaFunctionLayers
+ * @property list<StringFilter>|null $lambdaFunctionName
+ * @property list<StringFilter>|null $lambdaFunctionRuntime
+ * @property list<DateFilter>|null $lastObservedAt
+ * @property list<StringFilter>|null $networkProtocol
+ * @property list<PortRangeFilter>|null $portRange
+ * @property list<StringFilter>|null $relatedVulnerabilities
+ * @property list<StringFilter>|null $resourceId
+ * @property list<MapFilter>|null $resourceTags
+ * @property list<StringFilter>|null $resourceType
+ * @property list<StringFilter>|null $severity
+ * @property list<StringFilter>|null $title
+ * @property list<DateFilter>|null $updatedAt
+ * @property list<StringFilter>|null $vendorSeverity
+ * @property list<StringFilter>|null $vulnerabilityId
+ * @property list<StringFilter>|null $vulnerabilitySource
+ * @property list<PackageFilter>|null $vulnerablePackages
  */
 class FilterCriteria extends Shape
 {
     /**
      * @param array{
-     *     awsAccountId?: list<StringFilter>,
-     *     codeVulnerabilityDetectorName?: list<StringFilter>,
-     *     codeVulnerabilityDetectorTags?: list<StringFilter>,
-     *     codeVulnerabilityFilePath?: list<StringFilter>,
-     *     componentId?: list<StringFilter>,
-     *     componentType?: list<StringFilter>,
-     *     ec2InstanceImageId?: list<StringFilter>,
-     *     ec2InstanceSubnetId?: list<StringFilter>,
-     *     ec2InstanceVpcId?: list<StringFilter>,
-     *     ecrImageArchitecture?: list<StringFilter>,
-     *     ecrImageHash?: list<StringFilter>,
-     *     ecrImagePushedAt?: list<DateFilter>,
-     *     ecrImageRegistry?: list<StringFilter>,
-     *     ecrImageRepositoryName?: list<StringFilter>,
-     *     ecrImageTags?: list<StringFilter>,
-     *     epssScore?: list<NumberFilter>,
-     *     exploitAvailable?: list<StringFilter>,
-     *     findingArn?: list<StringFilter>,
-     *     findingStatus?: list<StringFilter>,
-     *     findingType?: list<StringFilter>,
-     *     firstObservedAt?: list<DateFilter>,
-     *     fixAvailable?: list<StringFilter>,
-     *     inspectorScore?: list<NumberFilter>,
-     *     lambdaFunctionExecutionRoleArn?: list<StringFilter>,
-     *     lambdaFunctionLastModifiedAt?: list<DateFilter>,
-     *     lambdaFunctionLayers?: list<StringFilter>,
-     *     lambdaFunctionName?: list<StringFilter>,
-     *     lambdaFunctionRuntime?: list<StringFilter>,
-     *     lastObservedAt?: list<DateFilter>,
-     *     networkProtocol?: list<StringFilter>,
-     *     portRange?: list<PortRangeFilter>,
-     *     relatedVulnerabilities?: list<StringFilter>,
-     *     resourceId?: list<StringFilter>,
-     *     resourceTags?: list<MapFilter>,
-     *     resourceType?: list<StringFilter>,
-     *     severity?: list<StringFilter>,
-     *     title?: list<StringFilter>,
-     *     updatedAt?: list<DateFilter>,
-     *     vendorSeverity?: list<StringFilter>,
-     *     vulnerabilityId?: list<StringFilter>,
-     *     vulnerabilitySource?: list<StringFilter>,
-     *     vulnerablePackages?: list<PackageFilter>
+     *     awsAccountId?: list<StringFilter>|null,
+     *     codeVulnerabilityDetectorName?: list<StringFilter>|null,
+     *     codeVulnerabilityDetectorTags?: list<StringFilter>|null,
+     *     codeVulnerabilityFilePath?: list<StringFilter>|null,
+     *     componentId?: list<StringFilter>|null,
+     *     componentType?: list<StringFilter>|null,
+     *     ec2InstanceImageId?: list<StringFilter>|null,
+     *     ec2InstanceSubnetId?: list<StringFilter>|null,
+     *     ec2InstanceVpcId?: list<StringFilter>|null,
+     *     ecrImageArchitecture?: list<StringFilter>|null,
+     *     ecrImageHash?: list<StringFilter>|null,
+     *     ecrImagePushedAt?: list<DateFilter>|null,
+     *     ecrImageRegistry?: list<StringFilter>|null,
+     *     ecrImageRepositoryName?: list<StringFilter>|null,
+     *     ecrImageTags?: list<StringFilter>|null,
+     *     epssScore?: list<NumberFilter>|null,
+     *     exploitAvailable?: list<StringFilter>|null,
+     *     findingArn?: list<StringFilter>|null,
+     *     findingStatus?: list<StringFilter>|null,
+     *     findingType?: list<StringFilter>|null,
+     *     firstObservedAt?: list<DateFilter>|null,
+     *     fixAvailable?: list<StringFilter>|null,
+     *     inspectorScore?: list<NumberFilter>|null,
+     *     lambdaFunctionExecutionRoleArn?: list<StringFilter>|null,
+     *     lambdaFunctionLastModifiedAt?: list<DateFilter>|null,
+     *     lambdaFunctionLayers?: list<StringFilter>|null,
+     *     lambdaFunctionName?: list<StringFilter>|null,
+     *     lambdaFunctionRuntime?: list<StringFilter>|null,
+     *     lastObservedAt?: list<DateFilter>|null,
+     *     networkProtocol?: list<StringFilter>|null,
+     *     portRange?: list<PortRangeFilter>|null,
+     *     relatedVulnerabilities?: list<StringFilter>|null,
+     *     resourceId?: list<StringFilter>|null,
+     *     resourceTags?: list<MapFilter>|null,
+     *     resourceType?: list<StringFilter>|null,
+     *     severity?: list<StringFilter>|null,
+     *     title?: list<StringFilter>|null,
+     *     updatedAt?: list<DateFilter>|null,
+     *     vendorSeverity?: list<StringFilter>|null,
+     *     vulnerabilityId?: list<StringFilter>|null,
+     *     vulnerabilitySource?: list<StringFilter>|null,
+     *     vulnerablePackages?: list<PackageFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

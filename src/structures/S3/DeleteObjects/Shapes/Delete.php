@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<ObjectIdentifier> $Objects
- * @property bool $Quiet
+ * @property bool|null $Quiet
  */
 class Delete extends Shape
 {
     /**
      * @param array{
      *     Objects: list<ObjectIdentifier>,
-     *     Quiet?: bool
+     *     Quiet?: bool|null
      * } $args
      */
     public function __construct(array $args)

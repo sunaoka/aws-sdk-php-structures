@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DocumentClassifierName
- * @property string $VersionName
+ * @property string|null $VersionName
  * @property string $DataAccessRoleArn
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\DocumentClassifierInputDataConfig $InputDataConfig
- * @property Shapes\DocumentClassifierOutputDataConfig $OutputDataConfig
- * @property string $ClientRequestToken
+ * @property Shapes\DocumentClassifierOutputDataConfig|null $OutputDataConfig
+ * @property string|null $ClientRequestToken
  * @property 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW' $LanguageCode
- * @property string $VolumeKmsKeyId
- * @property Shapes\VpcConfig $VpcConfig
- * @property 'MULTI_CLASS'|'MULTI_LABEL' $Mode
- * @property string $ModelKmsKeyId
- * @property string $ModelPolicy
+ * @property string|null $VolumeKmsKeyId
+ * @property Shapes\VpcConfig|null $VpcConfig
+ * @property 'MULTI_CLASS'|'MULTI_LABEL'|null $Mode
+ * @property string|null $ModelKmsKeyId
+ * @property string|null $ModelPolicy
  */
 class CreateDocumentClassifierRequest extends Request
 {
     /**
      * @param array{
      *     DocumentClassifierName: string,
-     *     VersionName?: string,
+     *     VersionName?: string|null,
      *     DataAccessRoleArn: string,
-     *     Tags?: list<Shapes\Tag>,
+     *     Tags?: list<Shapes\Tag>|null,
      *     InputDataConfig: Shapes\DocumentClassifierInputDataConfig,
-     *     OutputDataConfig?: Shapes\DocumentClassifierOutputDataConfig,
-     *     ClientRequestToken?: string,
+     *     OutputDataConfig?: Shapes\DocumentClassifierOutputDataConfig|null,
+     *     ClientRequestToken?: string|null,
      *     LanguageCode: 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW',
-     *     VolumeKmsKeyId?: string,
-     *     VpcConfig?: Shapes\VpcConfig,
-     *     Mode?: 'MULTI_CLASS'|'MULTI_LABEL',
-     *     ModelKmsKeyId?: string,
-     *     ModelPolicy?: string
+     *     VolumeKmsKeyId?: string|null,
+     *     VpcConfig?: Shapes\VpcConfig|null,
+     *     Mode?: 'MULTI_CLASS'|'MULTI_LABEL'|null,
+     *     ModelKmsKeyId?: string|null,
+     *     ModelPolicy?: string|null
      * } $args
      */
     public function __construct(array $args)

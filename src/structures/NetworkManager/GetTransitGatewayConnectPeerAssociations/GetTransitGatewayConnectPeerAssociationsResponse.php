@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetTransitGatewayConnectPeerAsso
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\TransitGatewayConnectPeerAssociation> $TransitGatewayConnectPeerAssociations
- * @property string $NextToken
+ * @property list<Shapes\TransitGatewayConnectPeerAssociation>|null $TransitGatewayConnectPeerAssociations
+ * @property string|null $NextToken
  */
 class GetTransitGatewayConnectPeerAssociationsResponse extends Response
 {

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\DeleteNamespace;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $finalSnapshotName
- * @property int $finalSnapshotRetentionPeriod
+ * @property string|null $finalSnapshotName
+ * @property int|null $finalSnapshotRetentionPeriod
  * @property string $namespaceName
  */
 class DeleteNamespaceRequest extends Request
 {
     /**
      * @param array{
-     *     finalSnapshotName?: string,
-     *     finalSnapshotRetentionPeriod?: int,
+     *     finalSnapshotName?: string|null,
+     *     finalSnapshotRetentionPeriod?: int|null,
      *     namespaceName: string
      * } $args
      */

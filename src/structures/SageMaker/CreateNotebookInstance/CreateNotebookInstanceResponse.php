@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateNotebookInstance;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NotebookInstanceArn
+ * @property string|null $NotebookInstanceArn
  */
 class CreateNotebookInstanceResponse extends Response
 {

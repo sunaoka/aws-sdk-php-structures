@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $repositoryName
- * @property string $nextToken
- * @property int $maxResults
+ * @property string|null $nextToken
+ * @property int|null $maxResults
  */
 class ListAssociatedApprovalRuleTemplatesForRepositoryRequest extends Request
 {
     /**
      * @param array{
      *     repositoryName: string,
-     *     nextToken?: string,
-     *     maxResults?: int
+     *     nextToken?: string|null,
+     *     maxResults?: int|null
      * } $args
      */
     public function __construct(array $args)

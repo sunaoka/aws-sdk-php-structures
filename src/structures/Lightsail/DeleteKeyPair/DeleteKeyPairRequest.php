@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $keyPairName
- * @property string $expectedFingerprint
+ * @property string|null $expectedFingerprint
  */
 class DeleteKeyPairRequest extends Request
 {
     /**
      * @param array{
      *     keyPairName: string,
-     *     expectedFingerprint?: string
+     *     expectedFingerprint?: string|null
      * } $args
      */
     public function __construct(array $args)

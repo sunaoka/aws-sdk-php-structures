@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\GetUICustomization\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserPoolId
- * @property string $ClientId
- * @property string $ImageUrl
- * @property string $CSS
- * @property string $CSSVersion
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
- * @property \Aws\Api\DateTimeResult $CreationDate
+ * @property string|null $UserPoolId
+ * @property string|null $ClientId
+ * @property string|null $ImageUrl
+ * @property string|null $CSS
+ * @property string|null $CSSVersion
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
  */
 class UICustomizationType extends Shape
 {
     /**
      * @param array{
-     *     UserPoolId?: string,
-     *     ClientId?: string,
-     *     ImageUrl?: string,
-     *     CSS?: string,
-     *     CSSVersion?: string,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     CreationDate?: \Aws\Api\DateTimeResult
+     *     UserPoolId?: string|null,
+     *     ClientId?: string|null,
+     *     ImageUrl?: string|null,
+     *     CSS?: string|null,
+     *     CSSVersion?: string|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

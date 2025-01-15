@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $type
- * @property FieldPosition $position
- * @property string $text
- * @property int $level
- * @property string $orientation
- * @property bool $excluded
+ * @property FieldPosition|null $position
+ * @property string|null $text
+ * @property int|null $level
+ * @property string|null $orientation
+ * @property bool|null $excluded
  */
 class SectionalElement extends Shape
 {
     /**
      * @param array{
      *     type: string,
-     *     position?: FieldPosition,
-     *     text?: string,
-     *     level?: int,
-     *     orientation?: string,
-     *     excluded?: bool
+     *     position?: FieldPosition|null,
+     *     text?: string|null,
+     *     level?: int|null,
+     *     orientation?: string|null,
+     *     excluded?: bool|null
      * } $args
      */
     public function __construct(array $args)

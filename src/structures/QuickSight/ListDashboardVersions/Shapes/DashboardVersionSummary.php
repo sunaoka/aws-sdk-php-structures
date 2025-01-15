@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListDashboardVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property int<1, max> $VersionNumber
- * @property 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED' $Status
- * @property string $SourceEntityArn
- * @property string $Description
+ * @property string|null $Arn
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property int<1, max>|null $VersionNumber
+ * @property 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null $Status
+ * @property string|null $SourceEntityArn
+ * @property string|null $Description
  */
 class DashboardVersionSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     VersionNumber?: int<1, max>,
-     *     Status?: 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED',
-     *     SourceEntityArn?: string,
-     *     Description?: string
+     *     Arn?: string|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     VersionNumber?: int<1, max>|null,
+     *     Status?: 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null,
+     *     SourceEntityArn?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

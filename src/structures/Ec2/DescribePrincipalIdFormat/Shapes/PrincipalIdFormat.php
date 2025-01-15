@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribePrincipalIdFormat\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property list<IdFormat> $Statuses
+ * @property string|null $Arn
+ * @property list<IdFormat>|null $Statuses
  */
 class PrincipalIdFormat extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Statuses?: list<IdFormat>
+     *     Arn?: string|null,
+     *     Statuses?: list<IdFormat>|null
      * } $args
      */
     public function __construct(array $args = [])

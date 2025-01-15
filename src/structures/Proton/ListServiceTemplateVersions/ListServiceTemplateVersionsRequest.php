@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Proton\ListServiceTemplateVersions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $majorVersion
- * @property int<1, 100> $maxResults
- * @property string $nextToken
+ * @property string|null $majorVersion
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
  * @property string $templateName
  */
 class ListServiceTemplateVersionsRequest extends Request
 {
     /**
      * @param array{
-     *     majorVersion?: string,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
+     *     majorVersion?: string|null,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
      *     templateName: string
      * } $args
      */

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\GetCoipPoolUsage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AllocationId
- * @property string $AwsAccountId
- * @property string $AwsService
- * @property string $CoIp
+ * @property string|null $AllocationId
+ * @property string|null $AwsAccountId
+ * @property string|null $AwsService
+ * @property string|null $CoIp
  */
 class CoipAddressUsage extends Shape
 {
     /**
      * @param array{
-     *     AllocationId?: string,
-     *     AwsAccountId?: string,
-     *     AwsService?: string,
-     *     CoIp?: string
+     *     AllocationId?: string|null,
+     *     AwsAccountId?: string|null,
+     *     AwsService?: string|null,
+     *     CoIp?: string|null
      * } $args
      */
     public function __construct(array $args = [])

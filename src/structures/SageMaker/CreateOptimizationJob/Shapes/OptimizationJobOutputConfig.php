@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateOptimizationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  * @property string $S3OutputLocation
  */
 class OptimizationJobOutputConfig extends Shape
 {
     /**
      * @param array{
-     *     KmsKeyId?: string,
+     *     KmsKeyId?: string|null,
      *     S3OutputLocation: string
      * } $args
      */

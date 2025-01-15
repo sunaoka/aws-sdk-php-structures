@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetApplicationRevision;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $applicationName
- * @property Shapes\RevisionLocation $revision
- * @property Shapes\GenericRevisionInfo $revisionInfo
+ * @property string|null $applicationName
+ * @property Shapes\RevisionLocation|null $revision
+ * @property Shapes\GenericRevisionInfo|null $revisionInfo
  */
 class GetApplicationRevisionResponse extends Response
 {

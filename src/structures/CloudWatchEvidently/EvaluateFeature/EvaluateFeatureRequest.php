@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $entityId
- * @property string $evaluationContext
+ * @property string|null $evaluationContext
  * @property string $feature
  * @property string $project
  */
@@ -15,7 +15,7 @@ class EvaluateFeatureRequest extends Request
     /**
      * @param array{
      *     entityId: string,
-     *     evaluationContext?: string,
+     *     evaluationContext?: string|null,
      *     feature: string,
      *     project: string
      * } $args

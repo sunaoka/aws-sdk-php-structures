@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\ListAttachedIndices;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\IndexAttachment> $IndexAttachments
- * @property string $NextToken
+ * @property list<Shapes\IndexAttachment>|null $IndexAttachments
+ * @property string|null $NextToken
  */
 class ListAttachedIndicesResponse extends Response
 {

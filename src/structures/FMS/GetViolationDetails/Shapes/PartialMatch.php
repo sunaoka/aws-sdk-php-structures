@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Reference
- * @property list<string> $TargetViolationReasons
+ * @property string|null $Reference
+ * @property list<string>|null $TargetViolationReasons
  */
 class PartialMatch extends Shape
 {
     /**
      * @param array{
-     *     Reference?: string,
-     *     TargetViolationReasons?: list<string>
+     *     Reference?: string|null,
+     *     TargetViolationReasons?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

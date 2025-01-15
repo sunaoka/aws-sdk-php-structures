@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdateNetworkSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $associatedPortalArns
+ * @property list<string>|null $associatedPortalArns
  * @property string $networkSettingsArn
- * @property list<string> $securityGroupIds
- * @property list<string> $subnetIds
- * @property string $vpcId
+ * @property list<string>|null $securityGroupIds
+ * @property list<string>|null $subnetIds
+ * @property string|null $vpcId
  */
 class NetworkSettings extends Shape
 {
     /**
      * @param array{
-     *     associatedPortalArns?: list<string>,
+     *     associatedPortalArns?: list<string>|null,
      *     networkSettingsArn: string,
-     *     securityGroupIds?: list<string>,
-     *     subnetIds?: list<string>,
-     *     vpcId?: string
+     *     securityGroupIds?: list<string>|null,
+     *     subnetIds?: list<string>|null,
+     *     vpcId?: string|null
      * } $args
      */
     public function __construct(array $args)

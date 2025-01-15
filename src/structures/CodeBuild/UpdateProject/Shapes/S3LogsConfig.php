@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ENABLED'|'DISABLED' $status
- * @property string $location
- * @property bool $encryptionDisabled
- * @property 'NONE'|'READ_ONLY'|'FULL' $bucketOwnerAccess
+ * @property string|null $location
+ * @property bool|null $encryptionDisabled
+ * @property 'NONE'|'READ_ONLY'|'FULL'|null $bucketOwnerAccess
  */
 class S3LogsConfig extends Shape
 {
     /**
      * @param array{
      *     status: 'ENABLED'|'DISABLED',
-     *     location?: string,
-     *     encryptionDisabled?: bool,
-     *     bucketOwnerAccess?: 'NONE'|'READ_ONLY'|'FULL'
+     *     location?: string|null,
+     *     encryptionDisabled?: bool|null,
+     *     bucketOwnerAccess?: 'NONE'|'READ_ONLY'|'FULL'|null
      * } $args
      */
     public function __construct(array $args)

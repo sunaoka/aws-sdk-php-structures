@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeMigrationProje
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecretsManagerSecretId
- * @property string $SecretsManagerAccessRoleArn
- * @property string $DataProviderName
- * @property string $DataProviderArn
+ * @property string|null $SecretsManagerSecretId
+ * @property string|null $SecretsManagerAccessRoleArn
+ * @property string|null $DataProviderName
+ * @property string|null $DataProviderArn
  */
 class DataProviderDescriptor extends Shape
 {
     /**
      * @param array{
-     *     SecretsManagerSecretId?: string,
-     *     SecretsManagerAccessRoleArn?: string,
-     *     DataProviderName?: string,
-     *     DataProviderArn?: string
+     *     SecretsManagerSecretId?: string|null,
+     *     SecretsManagerAccessRoleArn?: string|null,
+     *     DataProviderName?: string|null,
+     *     DataProviderArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

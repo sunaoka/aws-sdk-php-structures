@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FieldSeriesItem $FieldSeriesItem
- * @property DataFieldSeriesItem $DataFieldSeriesItem
+ * @property FieldSeriesItem|null $FieldSeriesItem
+ * @property DataFieldSeriesItem|null $DataFieldSeriesItem
  */
 class SeriesItem extends Shape
 {
     /**
      * @param array{
-     *     FieldSeriesItem?: FieldSeriesItem,
-     *     DataFieldSeriesItem?: DataFieldSeriesItem
+     *     FieldSeriesItem?: FieldSeriesItem|null,
+     *     DataFieldSeriesItem?: DataFieldSeriesItem|null
      * } $args
      */
     public function __construct(array $args = [])

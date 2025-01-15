@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MemoryDB\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ACLToApply
+ * @property string|null $ACLToApply
  */
 class ACLsUpdateStatus extends Shape
 {
     /**
-     * @param array{ACLToApply?: string} $args
+     * @param array{ACLToApply?: string|null} $args
      */
     public function __construct(array $args = [])
     {

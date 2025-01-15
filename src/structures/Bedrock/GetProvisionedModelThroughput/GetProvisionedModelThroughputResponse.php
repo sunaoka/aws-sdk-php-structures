@@ -15,9 +15,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'Creating'|'InService'|'Updating'|'Failed' $status
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
- * @property string $failureMessage
- * @property 'OneMonth'|'SixMonths' $commitmentDuration
- * @property \Aws\Api\DateTimeResult $commitmentExpirationTime
+ * @property string|null $failureMessage
+ * @property 'OneMonth'|'SixMonths'|null $commitmentDuration
+ * @property \Aws\Api\DateTimeResult|null $commitmentExpirationTime
  */
 class GetProvisionedModelThroughputResponse extends Response
 {

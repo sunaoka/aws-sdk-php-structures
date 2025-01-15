@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DescribeSubnetGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Description
- * @property string $VpcId
- * @property list<Subnet> $Subnets
- * @property string $ARN
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $VpcId
+ * @property list<Subnet>|null $Subnets
+ * @property string|null $ARN
  */
 class SubnetGroup extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Description?: string,
-     *     VpcId?: string,
-     *     Subnets?: list<Subnet>,
-     *     ARN?: string
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     VpcId?: string|null,
+     *     Subnets?: list<Subnet>|null,
+     *     ARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

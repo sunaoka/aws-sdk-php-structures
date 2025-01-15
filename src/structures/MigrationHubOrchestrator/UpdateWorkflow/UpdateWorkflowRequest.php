@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $id
- * @property string $name
- * @property string $description
- * @property array<string, Shapes\StepInput> $inputParameters
- * @property list<string> $stepTargets
+ * @property string|null $name
+ * @property string|null $description
+ * @property array<string, Shapes\StepInput>|null $inputParameters
+ * @property list<string>|null $stepTargets
  */
 class UpdateWorkflowRequest extends Request
 {
     /**
      * @param array{
      *     id: string,
-     *     name?: string,
-     *     description?: string,
-     *     inputParameters?: array<string, Shapes\StepInput>,
-     *     stepTargets?: list<string>
+     *     name?: string|null,
+     *     description?: string|null,
+     *     inputParameters?: array<string, Shapes\StepInput>|null,
+     *     stepTargets?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

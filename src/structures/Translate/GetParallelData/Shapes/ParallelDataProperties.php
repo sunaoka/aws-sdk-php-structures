@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\Translate\GetParallelData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Arn
- * @property string $Description
- * @property 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED' $Status
- * @property string $SourceLanguageCode
- * @property list<string> $TargetLanguageCodes
- * @property ParallelDataConfig $ParallelDataConfig
- * @property string $Message
- * @property int $ImportedDataSize
- * @property int $ImportedRecordCount
- * @property int $FailedRecordCount
- * @property int $SkippedRecordCount
- * @property EncryptionKey $EncryptionKey
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $LastUpdatedAt
- * @property 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED' $LatestUpdateAttemptStatus
- * @property \Aws\Api\DateTimeResult $LatestUpdateAttemptAt
+ * @property string|null $Name
+ * @property string|null $Arn
+ * @property string|null $Description
+ * @property 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED'|null $Status
+ * @property string|null $SourceLanguageCode
+ * @property list<string>|null $TargetLanguageCodes
+ * @property ParallelDataConfig|null $ParallelDataConfig
+ * @property string|null $Message
+ * @property int|null $ImportedDataSize
+ * @property int|null $ImportedRecordCount
+ * @property int|null $FailedRecordCount
+ * @property int|null $SkippedRecordCount
+ * @property EncryptionKey|null $EncryptionKey
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED'|null $LatestUpdateAttemptStatus
+ * @property \Aws\Api\DateTimeResult|null $LatestUpdateAttemptAt
  */
 class ParallelDataProperties extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Arn?: string,
-     *     Description?: string,
-     *     Status?: 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED',
-     *     SourceLanguageCode?: string,
-     *     TargetLanguageCodes?: list<string>,
-     *     ParallelDataConfig?: ParallelDataConfig,
-     *     Message?: string,
-     *     ImportedDataSize?: int,
-     *     ImportedRecordCount?: int,
-     *     FailedRecordCount?: int,
-     *     SkippedRecordCount?: int,
-     *     EncryptionKey?: EncryptionKey,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     LatestUpdateAttemptStatus?: 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED',
-     *     LatestUpdateAttemptAt?: \Aws\Api\DateTimeResult
+     *     Name?: string|null,
+     *     Arn?: string|null,
+     *     Description?: string|null,
+     *     Status?: 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED'|null,
+     *     SourceLanguageCode?: string|null,
+     *     TargetLanguageCodes?: list<string>|null,
+     *     ParallelDataConfig?: ParallelDataConfig|null,
+     *     Message?: string|null,
+     *     ImportedDataSize?: int|null,
+     *     ImportedRecordCount?: int|null,
+     *     FailedRecordCount?: int|null,
+     *     SkippedRecordCount?: int|null,
+     *     EncryptionKey?: EncryptionKey|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     LatestUpdateAttemptStatus?: 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|'FAILED'|null,
+     *     LatestUpdateAttemptAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

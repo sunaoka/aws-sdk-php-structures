@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\BatchDeleteTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TableName
- * @property ErrorDetail $ErrorDetail
+ * @property string|null $TableName
+ * @property ErrorDetail|null $ErrorDetail
  */
 class TableError extends Shape
 {
     /**
      * @param array{
-     *     TableName?: string,
-     *     ErrorDetail?: ErrorDetail
+     *     TableName?: string|null,
+     *     ErrorDetail?: ErrorDetail|null
      * } $args
      */
     public function __construct(array $args = [])

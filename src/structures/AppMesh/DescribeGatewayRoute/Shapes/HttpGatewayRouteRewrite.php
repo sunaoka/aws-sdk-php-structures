@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppMesh\DescribeGatewayRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GatewayRouteHostnameRewrite $hostname
- * @property HttpGatewayRoutePathRewrite $path
- * @property HttpGatewayRoutePrefixRewrite $prefix
+ * @property GatewayRouteHostnameRewrite|null $hostname
+ * @property HttpGatewayRoutePathRewrite|null $path
+ * @property HttpGatewayRoutePrefixRewrite|null $prefix
  */
 class HttpGatewayRouteRewrite extends Shape
 {
     /**
      * @param array{
-     *     hostname?: GatewayRouteHostnameRewrite,
-     *     path?: HttpGatewayRoutePathRewrite,
-     *     prefix?: HttpGatewayRoutePrefixRewrite
+     *     hostname?: GatewayRouteHostnameRewrite|null,
+     *     path?: HttpGatewayRoutePathRewrite|null,
+     *     prefix?: HttpGatewayRoutePrefixRewrite|null
      * } $args
      */
     public function __construct(array $args = [])

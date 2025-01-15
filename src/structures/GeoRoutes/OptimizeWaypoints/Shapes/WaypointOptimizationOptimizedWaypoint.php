@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\OptimizeWaypoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ArrivalTime
+ * @property string|null $ArrivalTime
  * @property string $DepartureTime
  * @property string $Id
  * @property list<double> $Position
@@ -14,7 +14,7 @@ class WaypointOptimizationOptimizedWaypoint extends Shape
 {
     /**
      * @param array{
-     *     ArrivalTime?: string,
+     *     ArrivalTime?: string|null,
      *     DepartureTime: string,
      *     Id: string,
      *     Position: list<double>

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DISABLED'|'WARN_ONLY'|'ERROR_ONLY'|'WARN_ERROR' $Level
- * @property string $Destination
+ * @property string|null $Destination
  */
 class LustreLogCreateConfiguration extends Shape
 {
     /**
      * @param array{
      *     Level: 'DISABLED'|'WARN_ONLY'|'ERROR_ONLY'|'WARN_ERROR',
-     *     Destination?: string
+     *     Destination?: string|null
      * } $args
      */
     public function __construct(array $args)

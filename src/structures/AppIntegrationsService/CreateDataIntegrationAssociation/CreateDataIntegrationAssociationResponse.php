@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\AppIntegrationsService\CreateDataIntegrationAss
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DataIntegrationAssociationId
- * @property string $DataIntegrationArn
+ * @property string|null $DataIntegrationAssociationId
+ * @property string|null $DataIntegrationArn
  */
 class CreateDataIntegrationAssociationResponse extends Response
 {

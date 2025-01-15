@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeEnvironmentHealth\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NoData
- * @property int $Unknown
- * @property int $Pending
- * @property int $Ok
- * @property int $Info
- * @property int $Warning
- * @property int $Degraded
- * @property int $Severe
+ * @property int|null $NoData
+ * @property int|null $Unknown
+ * @property int|null $Pending
+ * @property int|null $Ok
+ * @property int|null $Info
+ * @property int|null $Warning
+ * @property int|null $Degraded
+ * @property int|null $Severe
  */
 class InstanceHealthSummary extends Shape
 {
     /**
      * @param array{
-     *     NoData?: int,
-     *     Unknown?: int,
-     *     Pending?: int,
-     *     Ok?: int,
-     *     Info?: int,
-     *     Warning?: int,
-     *     Degraded?: int,
-     *     Severe?: int
+     *     NoData?: int|null,
+     *     Unknown?: int|null,
+     *     Pending?: int|null,
+     *     Ok?: int|null,
+     *     Info?: int|null,
+     *     Warning?: int|null,
+     *     Degraded?: int|null,
+     *     Severe?: int|null
      * } $args
      */
     public function __construct(array $args = [])

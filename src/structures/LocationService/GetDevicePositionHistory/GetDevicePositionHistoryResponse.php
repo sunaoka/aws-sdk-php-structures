@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DevicePosition> $DevicePositions
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class GetDevicePositionHistoryResponse extends Response
 {

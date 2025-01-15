@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\GetColumnStatisticsForPartition;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $DatabaseName
  * @property string $TableName
  * @property list<string> $PartitionValues
@@ -15,7 +15,7 @@ class GetColumnStatisticsForPartitionRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DatabaseName: string,
      *     TableName: string,
      *     PartitionValues: list<string>,

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribePlayerSessions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $GameSessionId
- * @property string $PlayerId
- * @property string $PlayerSessionId
- * @property string $PlayerSessionStatusFilter
- * @property int<1, max> $Limit
- * @property string $NextToken
+ * @property string|null $GameSessionId
+ * @property string|null $PlayerId
+ * @property string|null $PlayerSessionId
+ * @property string|null $PlayerSessionStatusFilter
+ * @property int<1, max>|null $Limit
+ * @property string|null $NextToken
  */
 class DescribePlayerSessionsRequest extends Request
 {
     /**
      * @param array{
-     *     GameSessionId?: string,
-     *     PlayerId?: string,
-     *     PlayerSessionId?: string,
-     *     PlayerSessionStatusFilter?: string,
-     *     Limit?: int<1, max>,
-     *     NextToken?: string
+     *     GameSessionId?: string|null,
+     *     PlayerId?: string|null,
+     *     PlayerSessionId?: string|null,
+     *     PlayerSessionStatusFilter?: string|null,
+     *     Limit?: int<1, max>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

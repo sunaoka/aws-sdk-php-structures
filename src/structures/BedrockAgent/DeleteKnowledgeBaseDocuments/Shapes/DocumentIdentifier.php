@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\DeleteKnowledgeBaseDocuments\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomDocumentIdentifier $custom
+ * @property CustomDocumentIdentifier|null $custom
  * @property 'CUSTOM'|'S3' $dataSourceType
- * @property S3Location $s3
+ * @property S3Location|null $s3
  */
 class DocumentIdentifier extends Shape
 {
     /**
      * @param array{
-     *     custom?: CustomDocumentIdentifier,
+     *     custom?: CustomDocumentIdentifier|null,
      *     dataSourceType: 'CUSTOM'|'S3',
-     *     s3?: S3Location
+     *     s3?: S3Location|null
      * } $args
      */
     public function __construct(array $args)

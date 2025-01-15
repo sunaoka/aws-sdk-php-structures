@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\EMRContainers\DescribeJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $persistentAppUI
- * @property ParametricCloudWatchMonitoringConfiguration $cloudWatchMonitoringConfiguration
- * @property ParametricS3MonitoringConfiguration $s3MonitoringConfiguration
+ * @property string|null $persistentAppUI
+ * @property ParametricCloudWatchMonitoringConfiguration|null $cloudWatchMonitoringConfiguration
+ * @property ParametricS3MonitoringConfiguration|null $s3MonitoringConfiguration
  */
 class ParametricMonitoringConfiguration extends Shape
 {
     /**
      * @param array{
-     *     persistentAppUI?: string,
-     *     cloudWatchMonitoringConfiguration?: ParametricCloudWatchMonitoringConfiguration,
-     *     s3MonitoringConfiguration?: ParametricS3MonitoringConfiguration
+     *     persistentAppUI?: string|null,
+     *     cloudWatchMonitoringConfiguration?: ParametricCloudWatchMonitoringConfiguration|null,
+     *     s3MonitoringConfiguration?: ParametricS3MonitoringConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

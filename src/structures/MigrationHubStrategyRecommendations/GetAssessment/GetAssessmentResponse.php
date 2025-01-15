@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetAssessme
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AssessmentTarget> $assessmentTargets
- * @property Shapes\DataCollectionDetails $dataCollectionDetails
- * @property string $id
+ * @property list<Shapes\AssessmentTarget>|null $assessmentTargets
+ * @property Shapes\DataCollectionDetails|null $dataCollectionDetails
+ * @property string|null $id
  */
 class GetAssessmentResponse extends Response
 {

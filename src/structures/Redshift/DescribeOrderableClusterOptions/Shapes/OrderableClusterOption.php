@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeOrderableClusterOptions\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterVersion
- * @property string $ClusterType
- * @property string $NodeType
- * @property list<AvailabilityZone> $AvailabilityZones
+ * @property string|null $ClusterVersion
+ * @property string|null $ClusterType
+ * @property string|null $NodeType
+ * @property list<AvailabilityZone>|null $AvailabilityZones
  */
 class OrderableClusterOption extends Shape
 {
     /**
      * @param array{
-     *     ClusterVersion?: string,
-     *     ClusterType?: string,
-     *     NodeType?: string,
-     *     AvailabilityZones?: list<AvailabilityZone>
+     *     ClusterVersion?: string|null,
+     *     ClusterType?: string|null,
+     *     NodeType?: string|null,
+     *     AvailabilityZones?: list<AvailabilityZone>|null
      * } $args
      */
     public function __construct(array $args = [])

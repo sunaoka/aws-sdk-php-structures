@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeLaunchTemplateVersions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property string $LaunchTemplateId
- * @property string $LaunchTemplateName
- * @property list<string> $Versions
- * @property string $MinVersion
- * @property string $MaxVersion
- * @property string $NextToken
- * @property int $MaxResults
- * @property list<Shapes\Filter> $Filters
- * @property bool $ResolveAlias
+ * @property bool|null $DryRun
+ * @property string|null $LaunchTemplateId
+ * @property string|null $LaunchTemplateName
+ * @property list<string>|null $Versions
+ * @property string|null $MinVersion
+ * @property string|null $MaxVersion
+ * @property string|null $NextToken
+ * @property int|null $MaxResults
+ * @property list<Shapes\Filter>|null $Filters
+ * @property bool|null $ResolveAlias
  */
 class DescribeLaunchTemplateVersionsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     LaunchTemplateId?: string,
-     *     LaunchTemplateName?: string,
-     *     Versions?: list<string>,
-     *     MinVersion?: string,
-     *     MaxVersion?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int,
-     *     Filters?: list<Shapes\Filter>,
-     *     ResolveAlias?: bool
+     *     DryRun?: bool|null,
+     *     LaunchTemplateId?: string|null,
+     *     LaunchTemplateName?: string|null,
+     *     Versions?: list<string>|null,
+     *     MinVersion?: string|null,
+     *     MaxVersion?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     ResolveAlias?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

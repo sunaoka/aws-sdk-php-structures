@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property int $period
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $endTime
- * @property Shapes\RecommendationPreferences $recommendationPreferences
+ * @property Shapes\RecommendationPreferences|null $recommendationPreferences
  */
 class GetRDSDatabaseRecommendationProjectedMetricsRequest extends Request
 {
@@ -21,7 +21,7 @@ class GetRDSDatabaseRecommendationProjectedMetricsRequest extends Request
      *     period: int,
      *     startTime: \Aws\Api\DateTimeResult,
      *     endTime: \Aws\Api\DateTimeResult,
-     *     recommendationPreferences?: Shapes\RecommendationPreferences
+     *     recommendationPreferences?: Shapes\RecommendationPreferences|null
      * } $args
      */
     public function __construct(array $args)

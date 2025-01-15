@@ -8,17 +8,17 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $Arn
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property int $DurationInSeconds
- * @property Shapes\EarthObservationJobErrorDetails $ErrorDetails
- * @property string $ExecutionRoleArn
- * @property Shapes\ExportErrorDetails $ExportErrorDetails
- * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED' $ExportStatus
+ * @property Shapes\EarthObservationJobErrorDetails|null $ErrorDetails
+ * @property string|null $ExecutionRoleArn
+ * @property Shapes\ExportErrorDetails|null $ExportErrorDetails
+ * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null $ExportStatus
  * @property Shapes\InputConfigOutput $InputConfig
  * @property Shapes\JobConfigInput $JobConfig
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  * @property string $Name
- * @property list<Shapes\OutputBand> $OutputBands
+ * @property list<Shapes\OutputBand>|null $OutputBands
  * @property 'INITIALIZING'|'IN_PROGRESS'|'STOPPING'|'COMPLETED'|'STOPPED'|'FAILED'|'DELETING'|'DELETED' $Status
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class GetEarthObservationJobResponse extends Response
 {

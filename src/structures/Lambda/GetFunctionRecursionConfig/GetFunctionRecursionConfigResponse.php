@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Lambda\GetFunctionRecursionConfig;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'Allow'|'Terminate' $RecursiveLoop
+ * @property 'Allow'|'Terminate'|null $RecursiveLoop
  */
 class GetFunctionRecursionConfigResponse extends Response
 {

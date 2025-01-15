@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeComplianceByResource\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceType
- * @property string $ResourceId
- * @property Compliance $Compliance
+ * @property string|null $ResourceType
+ * @property string|null $ResourceId
+ * @property Compliance|null $Compliance
  */
 class ComplianceByResource extends Shape
 {
     /**
      * @param array{
-     *     ResourceType?: string,
-     *     ResourceId?: string,
-     *     Compliance?: Compliance
+     *     ResourceType?: string|null,
+     *     ResourceId?: string|null,
+     *     Compliance?: Compliance|null
      * } $args
      */
     public function __construct(array $args = [])

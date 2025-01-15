@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $configuration
- * @property string $grafanaVersion
+ * @property string|null $grafanaVersion
  */
 class DescribeWorkspaceConfigurationResponse extends Response
 {

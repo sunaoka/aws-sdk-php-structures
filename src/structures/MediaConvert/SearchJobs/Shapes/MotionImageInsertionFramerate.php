@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\SearchJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 17895697> $FramerateDenominator
- * @property int<1, 2147483640> $FramerateNumerator
+ * @property int<1, 17895697>|null $FramerateDenominator
+ * @property int<1, 2147483640>|null $FramerateNumerator
  */
 class MotionImageInsertionFramerate extends Shape
 {
     /**
      * @param array{
-     *     FramerateDenominator?: int<1, 17895697>,
-     *     FramerateNumerator?: int<1, 2147483640>
+     *     FramerateDenominator?: int<1, 17895697>|null,
+     *     FramerateNumerator?: int<1, 2147483640>|null
      * } $args
      */
     public function __construct(array $args = [])

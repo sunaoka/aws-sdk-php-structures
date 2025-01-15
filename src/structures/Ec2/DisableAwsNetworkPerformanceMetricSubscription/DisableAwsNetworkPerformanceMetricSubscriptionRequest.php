@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DisableAwsNetworkPerformanceMetricSubscript
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Source
- * @property string $Destination
- * @property 'aggregate-latency' $Metric
- * @property 'p50' $Statistic
- * @property bool $DryRun
+ * @property string|null $Source
+ * @property string|null $Destination
+ * @property 'aggregate-latency'|null $Metric
+ * @property 'p50'|null $Statistic
+ * @property bool|null $DryRun
  */
 class DisableAwsNetworkPerformanceMetricSubscriptionRequest extends Request
 {
     /**
      * @param array{
-     *     Source?: string,
-     *     Destination?: string,
-     *     Metric?: 'aggregate-latency',
-     *     Statistic?: 'p50',
-     *     DryRun?: bool
+     *     Source?: string|null,
+     *     Destination?: string|null,
+     *     Metric?: 'aggregate-latency'|null,
+     *     Statistic?: 'p50'|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

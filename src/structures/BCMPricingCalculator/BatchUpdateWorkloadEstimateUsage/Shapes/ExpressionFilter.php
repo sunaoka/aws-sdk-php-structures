@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchUpdateWorkloadEstimat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $key
- * @property list<string> $matchOptions
- * @property list<string> $values
+ * @property string|null $key
+ * @property list<string>|null $matchOptions
+ * @property list<string>|null $values
  */
 class ExpressionFilter extends Shape
 {
     /**
      * @param array{
-     *     key?: string,
-     *     matchOptions?: list<string>,
-     *     values?: list<string>
+     *     key?: string|null,
+     *     matchOptions?: list<string>|null,
+     *     values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

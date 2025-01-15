@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeClusterOperationV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Bucket
+ * @property string|null $Bucket
  * @property bool $Enabled
- * @property string $Prefix
+ * @property string|null $Prefix
  */
 class S3 extends Shape
 {
     /**
      * @param array{
-     *     Bucket?: string,
+     *     Bucket?: string|null,
      *     Enabled: bool,
-     *     Prefix?: string
+     *     Prefix?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DISABLED'|'SSE-KMS' $MlUserDataEncryptionMode
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  */
 class MLUserDataEncryption extends Shape
 {
     /**
      * @param array{
      *     MlUserDataEncryptionMode: 'DISABLED'|'SSE-KMS',
-     *     KmsKeyId?: string
+     *     KmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

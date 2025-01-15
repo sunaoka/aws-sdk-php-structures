@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\QueryLineage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceArn
- * @property string $DestinationArn
- * @property 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs' $AssociationType
+ * @property string|null $SourceArn
+ * @property string|null $DestinationArn
+ * @property 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs'|null $AssociationType
  */
 class Edge extends Shape
 {
     /**
      * @param array{
-     *     SourceArn?: string,
-     *     DestinationArn?: string,
-     *     AssociationType?: 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs'
+     *     SourceArn?: string|null,
+     *     DestinationArn?: string|null,
+     *     AssociationType?: 'ContributedTo'|'AssociatedWith'|'DerivedFrom'|'Produced'|'SameAs'|null
      * } $args
      */
     public function __construct(array $args = [])

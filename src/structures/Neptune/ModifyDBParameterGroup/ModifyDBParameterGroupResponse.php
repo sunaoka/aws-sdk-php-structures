@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Neptune\ModifyDBParameterGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DBParameterGroupName
+ * @property string|null $DBParameterGroupName
  */
 class ModifyDBParameterGroupResponse extends Response
 {

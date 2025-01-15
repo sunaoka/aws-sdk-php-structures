@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\UpdateConfigurationPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecurityControlId
- * @property array<string, ParameterConfiguration> $Parameters
+ * @property string|null $SecurityControlId
+ * @property array<string, ParameterConfiguration>|null $Parameters
  */
 class SecurityControlCustomParameter extends Shape
 {
     /**
      * @param array{
-     *     SecurityControlId?: string,
-     *     Parameters?: array<string, ParameterConfiguration>
+     *     SecurityControlId?: string|null,
+     *     Parameters?: array<string, ParameterConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Iot\CreateOTAUpdate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CodeSigningSignature $signature
- * @property CodeSigningCertificateChain $certificateChain
- * @property string $hashAlgorithm
- * @property string $signatureAlgorithm
+ * @property CodeSigningSignature|null $signature
+ * @property CodeSigningCertificateChain|null $certificateChain
+ * @property string|null $hashAlgorithm
+ * @property string|null $signatureAlgorithm
  */
 class CustomCodeSigning extends Shape
 {
     /**
      * @param array{
-     *     signature?: CodeSigningSignature,
-     *     certificateChain?: CodeSigningCertificateChain,
-     *     hashAlgorithm?: string,
-     *     signatureAlgorithm?: string
+     *     signature?: CodeSigningSignature|null,
+     *     certificateChain?: CodeSigningCertificateChain|null,
+     *     hashAlgorithm?: string|null,
+     *     signatureAlgorithm?: string|null
      * } $args
      */
     public function __construct(array $args = [])

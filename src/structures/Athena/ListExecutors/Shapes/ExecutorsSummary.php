@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ExecutorId
- * @property 'COORDINATOR'|'GATEWAY'|'WORKER' $ExecutorType
- * @property int $StartDateTime
- * @property int $TerminationDateTime
- * @property 'CREATING'|'CREATED'|'REGISTERED'|'TERMINATING'|'TERMINATED'|'FAILED' $ExecutorState
- * @property int $ExecutorSize
+ * @property 'COORDINATOR'|'GATEWAY'|'WORKER'|null $ExecutorType
+ * @property int|null $StartDateTime
+ * @property int|null $TerminationDateTime
+ * @property 'CREATING'|'CREATED'|'REGISTERED'|'TERMINATING'|'TERMINATED'|'FAILED'|null $ExecutorState
+ * @property int|null $ExecutorSize
  */
 class ExecutorsSummary extends Shape
 {
     /**
      * @param array{
      *     ExecutorId: string,
-     *     ExecutorType?: 'COORDINATOR'|'GATEWAY'|'WORKER',
-     *     StartDateTime?: int,
-     *     TerminationDateTime?: int,
-     *     ExecutorState?: 'CREATING'|'CREATED'|'REGISTERED'|'TERMINATING'|'TERMINATED'|'FAILED',
-     *     ExecutorSize?: int
+     *     ExecutorType?: 'COORDINATOR'|'GATEWAY'|'WORKER'|null,
+     *     StartDateTime?: int|null,
+     *     TerminationDateTime?: int|null,
+     *     ExecutorState?: 'CREATING'|'CREATED'|'REGISTERED'|'TERMINATING'|'TERMINATED'|'FAILED'|null,
+     *     ExecutorSize?: int|null
      * } $args
      */
     public function __construct(array $args)

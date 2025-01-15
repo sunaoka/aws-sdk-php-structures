@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TargetArn
  * @property list<string> $ResourceArns
- * @property Shapes\CustomLineItemBillingPeriodRange $BillingPeriodRange
+ * @property Shapes\CustomLineItemBillingPeriodRange|null $BillingPeriodRange
  */
 class BatchAssociateResourcesToCustomLineItemRequest extends Request
 {
@@ -15,7 +15,7 @@ class BatchAssociateResourcesToCustomLineItemRequest extends Request
      * @param array{
      *     TargetArn: string,
      *     ResourceArns: list<string>,
-     *     BillingPeriodRange?: Shapes\CustomLineItemBillingPeriodRange
+     *     BillingPeriodRange?: Shapes\CustomLineItemBillingPeriodRange|null
      * } $args
      */
     public function __construct(array $args)

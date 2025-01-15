@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $ContactFlowId
- * @property array<string, string> $Attributes
+ * @property array<string, string>|null $Attributes
  * @property Shapes\ParticipantDetails $ParticipantDetails
- * @property Shapes\ChatMessage $InitialMessage
- * @property string $ClientToken
- * @property int<60, 10080> $ChatDurationInMinutes
- * @property list<string> $SupportedMessagingContentTypes
- * @property Shapes\PersistentChat $PersistentChat
- * @property string $RelatedContactId
- * @property array<string, Shapes\SegmentAttributeValue> $SegmentAttributes
- * @property string $CustomerId
+ * @property Shapes\ChatMessage|null $InitialMessage
+ * @property string|null $ClientToken
+ * @property int<60, 10080>|null $ChatDurationInMinutes
+ * @property list<string>|null $SupportedMessagingContentTypes
+ * @property Shapes\PersistentChat|null $PersistentChat
+ * @property string|null $RelatedContactId
+ * @property array<string, Shapes\SegmentAttributeValue>|null $SegmentAttributes
+ * @property string|null $CustomerId
  */
 class StartChatContactRequest extends Request
 {
@@ -24,16 +24,16 @@ class StartChatContactRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     ContactFlowId: string,
-     *     Attributes?: array<string, string>,
+     *     Attributes?: array<string, string>|null,
      *     ParticipantDetails: Shapes\ParticipantDetails,
-     *     InitialMessage?: Shapes\ChatMessage,
-     *     ClientToken?: string,
-     *     ChatDurationInMinutes?: int<60, 10080>,
-     *     SupportedMessagingContentTypes?: list<string>,
-     *     PersistentChat?: Shapes\PersistentChat,
-     *     RelatedContactId?: string,
-     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>,
-     *     CustomerId?: string
+     *     InitialMessage?: Shapes\ChatMessage|null,
+     *     ClientToken?: string|null,
+     *     ChatDurationInMinutes?: int<60, 10080>|null,
+     *     SupportedMessagingContentTypes?: list<string>|null,
+     *     PersistentChat?: Shapes\PersistentChat|null,
+     *     RelatedContactId?: string|null,
+     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null,
+     *     CustomerId?: string|null
      * } $args
      */
     public function __construct(array $args)

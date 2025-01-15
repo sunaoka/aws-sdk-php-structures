@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LakeFormation\DeleteLakeFormationOptIn\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $ExcludedColumnNames
+ * @property list<string>|null $ExcludedColumnNames
  */
 class ColumnWildcard extends Shape
 {
     /**
-     * @param array{ExcludedColumnNames?: list<string>} $args
+     * @param array{ExcludedColumnNames?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

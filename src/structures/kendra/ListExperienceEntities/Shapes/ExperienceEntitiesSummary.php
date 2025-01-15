@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\kendra\ListExperienceEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EntityId
- * @property 'USER'|'GROUP' $EntityType
- * @property EntityDisplayData $DisplayData
+ * @property string|null $EntityId
+ * @property 'USER'|'GROUP'|null $EntityType
+ * @property EntityDisplayData|null $DisplayData
  */
 class ExperienceEntitiesSummary extends Shape
 {
     /**
      * @param array{
-     *     EntityId?: string,
-     *     EntityType?: 'USER'|'GROUP',
-     *     DisplayData?: EntityDisplayData
+     *     EntityId?: string|null,
+     *     EntityType?: 'USER'|'GROUP'|null,
+     *     DisplayData?: EntityDisplayData|null
      * } $args
      */
     public function __construct(array $args = [])

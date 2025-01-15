@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Route
+ * @property string|null $Route
  */
 class AwsEventsEndpointRoutingConfigFailoverConfigSecondaryDetails extends Shape
 {
     /**
-     * @param array{Route?: string} $args
+     * @param array{Route?: string|null} $args
      */
     public function __construct(array $args = [])
     {

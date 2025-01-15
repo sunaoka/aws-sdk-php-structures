@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Iot\GetBehaviorModelTrainingSummaries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $securityProfileName
- * @property string $behaviorName
- * @property \Aws\Api\DateTimeResult $trainingDataCollectionStartDate
- * @property 'PENDING_BUILD'|'ACTIVE'|'EXPIRED' $modelStatus
- * @property double $datapointsCollectionPercentage
- * @property \Aws\Api\DateTimeResult $lastModelRefreshDate
+ * @property string|null $securityProfileName
+ * @property string|null $behaviorName
+ * @property \Aws\Api\DateTimeResult|null $trainingDataCollectionStartDate
+ * @property 'PENDING_BUILD'|'ACTIVE'|'EXPIRED'|null $modelStatus
+ * @property double|null $datapointsCollectionPercentage
+ * @property \Aws\Api\DateTimeResult|null $lastModelRefreshDate
  */
 class BehaviorModelTrainingSummary extends Shape
 {
     /**
      * @param array{
-     *     securityProfileName?: string,
-     *     behaviorName?: string,
-     *     trainingDataCollectionStartDate?: \Aws\Api\DateTimeResult,
-     *     modelStatus?: 'PENDING_BUILD'|'ACTIVE'|'EXPIRED',
-     *     datapointsCollectionPercentage?: double,
-     *     lastModelRefreshDate?: \Aws\Api\DateTimeResult
+     *     securityProfileName?: string|null,
+     *     behaviorName?: string|null,
+     *     trainingDataCollectionStartDate?: \Aws\Api\DateTimeResult|null,
+     *     modelStatus?: 'PENDING_BUILD'|'ACTIVE'|'EXPIRED'|null,
+     *     datapointsCollectionPercentage?: double|null,
+     *     lastModelRefreshDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

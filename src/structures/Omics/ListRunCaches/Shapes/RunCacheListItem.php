@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Omics\ListRunCaches\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property 'CACHE_ON_FAILURE'|'CACHE_ALWAYS' $cacheBehavior
- * @property string $cacheS3Uri
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property string $id
- * @property string $name
- * @property 'ACTIVE'|'DELETED'|'FAILED' $status
+ * @property string|null $arn
+ * @property 'CACHE_ON_FAILURE'|'CACHE_ALWAYS'|null $cacheBehavior
+ * @property string|null $cacheS3Uri
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property string|null $id
+ * @property string|null $name
+ * @property 'ACTIVE'|'DELETED'|'FAILED'|null $status
  */
 class RunCacheListItem extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     cacheBehavior?: 'CACHE_ON_FAILURE'|'CACHE_ALWAYS',
-     *     cacheS3Uri?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     id?: string,
-     *     name?: string,
-     *     status?: 'ACTIVE'|'DELETED'|'FAILED'
+     *     arn?: string|null,
+     *     cacheBehavior?: 'CACHE_ON_FAILURE'|'CACHE_ALWAYS'|null,
+     *     cacheS3Uri?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     id?: string|null,
+     *     name?: string|null,
+     *     status?: 'ACTIVE'|'DELETED'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

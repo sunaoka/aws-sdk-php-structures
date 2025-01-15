@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FieldSort $FieldSort
- * @property ColumnSort $ColumnSort
+ * @property FieldSort|null $FieldSort
+ * @property ColumnSort|null $ColumnSort
  */
 class FieldSortOptions extends Shape
 {
     /**
      * @param array{
-     *     FieldSort?: FieldSort,
-     *     ColumnSort?: ColumnSort
+     *     FieldSort?: FieldSort|null,
+     *     ColumnSort?: ColumnSort|null
      * } $args
      */
     public function __construct(array $args = [])

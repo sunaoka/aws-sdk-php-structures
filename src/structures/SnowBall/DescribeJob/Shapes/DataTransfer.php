@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SnowBall\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $BytesTransferred
- * @property int $ObjectsTransferred
- * @property int $TotalBytes
- * @property int $TotalObjects
+ * @property int|null $BytesTransferred
+ * @property int|null $ObjectsTransferred
+ * @property int|null $TotalBytes
+ * @property int|null $TotalObjects
  */
 class DataTransfer extends Shape
 {
     /**
      * @param array{
-     *     BytesTransferred?: int,
-     *     ObjectsTransferred?: int,
-     *     TotalBytes?: int,
-     *     TotalObjects?: int
+     *     BytesTransferred?: int|null,
+     *     ObjectsTransferred?: int|null,
+     *     TotalBytes?: int|null,
+     *     TotalObjects?: int|null
      * } $args
      */
     public function __construct(array $args = [])

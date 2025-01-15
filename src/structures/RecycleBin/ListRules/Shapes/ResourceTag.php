@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ResourceTagKey
- * @property string $ResourceTagValue
+ * @property string|null $ResourceTagValue
  */
 class ResourceTag extends Shape
 {
     /**
      * @param array{
      *     ResourceTagKey: string,
-     *     ResourceTagValue?: string
+     *     ResourceTagValue?: string|null
      * } $args
      */
     public function __construct(array $args)

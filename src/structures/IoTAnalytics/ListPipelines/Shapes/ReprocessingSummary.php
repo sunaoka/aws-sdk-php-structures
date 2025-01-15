@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\ListPipelines\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property 'RUNNING'|'SUCCEEDED'|'CANCELLED'|'FAILED' $status
- * @property \Aws\Api\DateTimeResult $creationTime
+ * @property string|null $id
+ * @property 'RUNNING'|'SUCCEEDED'|'CANCELLED'|'FAILED'|null $status
+ * @property \Aws\Api\DateTimeResult|null $creationTime
  */
 class ReprocessingSummary extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     status?: 'RUNNING'|'SUCCEEDED'|'CANCELLED'|'FAILED',
-     *     creationTime?: \Aws\Api\DateTimeResult
+     *     id?: string|null,
+     *     status?: 'RUNNING'|'SUCCEEDED'|'CANCELLED'|'FAILED'|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

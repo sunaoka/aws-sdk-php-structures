@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $VolumeARN
- * @property bool $ForceDetach
+ * @property bool|null $ForceDetach
  */
 class DetachVolumeRequest extends Request
 {
     /**
      * @param array{
      *     VolumeARN: string,
-     *     ForceDetach?: bool
+     *     ForceDetach?: bool|null
      * } $args
      */
     public function __construct(array $args)

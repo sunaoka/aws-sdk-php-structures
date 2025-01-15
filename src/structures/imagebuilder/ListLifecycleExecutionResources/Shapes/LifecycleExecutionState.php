@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListLifecycleExecutionResources\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'IN_PROGRESS'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'PENDING' $status
- * @property string $reason
+ * @property 'IN_PROGRESS'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'PENDING'|null $status
+ * @property string|null $reason
  */
 class LifecycleExecutionState extends Shape
 {
     /**
      * @param array{
-     *     status?: 'IN_PROGRESS'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'PENDING',
-     *     reason?: string
+     *     status?: 'IN_PROGRESS'|'CANCELLED'|'CANCELLING'|'FAILED'|'SUCCESS'|'PENDING'|null,
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

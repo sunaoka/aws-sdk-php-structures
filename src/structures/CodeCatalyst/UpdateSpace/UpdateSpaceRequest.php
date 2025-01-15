@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  */
 class UpdateSpaceRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

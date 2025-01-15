@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Backup\GetRestoreTestingInferredMetadata;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $BackupVaultAccountId
+ * @property string|null $BackupVaultAccountId
  * @property string $BackupVaultName
  * @property string $RecoveryPointArn
  */
@@ -13,7 +13,7 @@ class GetRestoreTestingInferredMetadataRequest extends Request
 {
     /**
      * @param array{
-     *     BackupVaultAccountId?: string,
+     *     BackupVaultAccountId?: string|null,
      *     BackupVaultName: string,
      *     RecoveryPointArn: string
      * } $args

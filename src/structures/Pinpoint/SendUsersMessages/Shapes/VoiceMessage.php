@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Pinpoint\SendUsersMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Body
- * @property string $LanguageCode
- * @property string $OriginationNumber
- * @property array<string, list<string>> $Substitutions
- * @property string $VoiceId
+ * @property string|null $Body
+ * @property string|null $LanguageCode
+ * @property string|null $OriginationNumber
+ * @property array<string, list<string>>|null $Substitutions
+ * @property string|null $VoiceId
  */
 class VoiceMessage extends Shape
 {
     /**
      * @param array{
-     *     Body?: string,
-     *     LanguageCode?: string,
-     *     OriginationNumber?: string,
-     *     Substitutions?: array<string, list<string>>,
-     *     VoiceId?: string
+     *     Body?: string|null,
+     *     LanguageCode?: string|null,
+     *     OriginationNumber?: string|null,
+     *     Substitutions?: array<string, list<string>>|null,
+     *     VoiceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

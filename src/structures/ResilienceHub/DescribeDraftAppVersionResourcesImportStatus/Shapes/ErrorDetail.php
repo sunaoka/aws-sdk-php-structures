@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\DescribeDraftAppVersionResourcesI
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $errorMessage
+ * @property string|null $errorMessage
  */
 class ErrorDetail extends Shape
 {
     /**
-     * @param array{errorMessage?: string} $args
+     * @param array{errorMessage?: string|null} $args
      */
     public function __construct(array $args = [])
     {

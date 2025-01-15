@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\TaxSettings\BatchPutTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TaxRegistrationDocFile $file
- * @property SourceS3Location $s3Location
+ * @property TaxRegistrationDocFile|null $file
+ * @property SourceS3Location|null $s3Location
  */
 class TaxRegistrationDocument extends Shape
 {
     /**
      * @param array{
-     *     file?: TaxRegistrationDocFile,
-     *     s3Location?: SourceS3Location
+     *     file?: TaxRegistrationDocFile|null,
+     *     s3Location?: SourceS3Location|null
      * } $args
      */
     public function __construct(array $args = [])

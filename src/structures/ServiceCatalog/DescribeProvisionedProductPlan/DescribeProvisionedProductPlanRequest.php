@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProvisionedProductPlan;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $PlanId
- * @property int<0, 20> $PageSize
- * @property string $PageToken
+ * @property int<0, 20>|null $PageSize
+ * @property string|null $PageToken
  */
 class DescribeProvisionedProductPlanRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     PlanId: string,
-     *     PageSize?: int<0, 20>,
-     *     PageToken?: string
+     *     PageSize?: int<0, 20>|null,
+     *     PageToken?: string|null
      * } $args
      */
     public function __construct(array $args)

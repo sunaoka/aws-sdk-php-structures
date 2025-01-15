@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $RoutingControlArn
  * @property 'On'|'Off' $RoutingControlState
- * @property list<string> $SafetyRulesToOverride
+ * @property list<string>|null $SafetyRulesToOverride
  */
 class UpdateRoutingControlStateRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateRoutingControlStateRequest extends Request
      * @param array{
      *     RoutingControlArn: string,
      *     RoutingControlState: 'On'|'Off',
-     *     SafetyRulesToOverride?: list<string>
+     *     SafetyRulesToOverride?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

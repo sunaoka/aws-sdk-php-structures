@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FilePath
- * @property string $FileName
- * @property string $ResourceId
- * @property string $Hash
+ * @property string|null $FilePath
+ * @property string|null $FileName
+ * @property string|null $ResourceId
+ * @property string|null $Hash
  */
 class FilePaths extends Shape
 {
     /**
      * @param array{
-     *     FilePath?: string,
-     *     FileName?: string,
-     *     ResourceId?: string,
-     *     Hash?: string
+     *     FilePath?: string|null,
+     *     FileName?: string|null,
+     *     ResourceId?: string|null,
+     *     Hash?: string|null
      * } $args
      */
     public function __construct(array $args = [])

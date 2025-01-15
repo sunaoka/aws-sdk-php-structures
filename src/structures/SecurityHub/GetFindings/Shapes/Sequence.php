@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Uid
- * @property list<Actor> $Actors
- * @property list<NetworkEndpoint> $Endpoints
- * @property list<Signal> $Signals
- * @property list<Indicator> $SequenceIndicators
+ * @property string|null $Uid
+ * @property list<Actor>|null $Actors
+ * @property list<NetworkEndpoint>|null $Endpoints
+ * @property list<Signal>|null $Signals
+ * @property list<Indicator>|null $SequenceIndicators
  */
 class Sequence extends Shape
 {
     /**
      * @param array{
-     *     Uid?: string,
-     *     Actors?: list<Actor>,
-     *     Endpoints?: list<NetworkEndpoint>,
-     *     Signals?: list<Signal>,
-     *     SequenceIndicators?: list<Indicator>
+     *     Uid?: string|null,
+     *     Actors?: list<Actor>|null,
+     *     Endpoints?: list<NetworkEndpoint>|null,
+     *     Signals?: list<Signal>|null,
+     *     SequenceIndicators?: list<Indicator>|null
      * } $args
      */
     public function __construct(array $args = [])

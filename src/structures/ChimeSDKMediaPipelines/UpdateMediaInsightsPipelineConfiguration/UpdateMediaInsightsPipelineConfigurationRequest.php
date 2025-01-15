@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Identifier
  * @property string $ResourceAccessRoleArn
- * @property Shapes\RealTimeAlertConfiguration $RealTimeAlertConfiguration
+ * @property Shapes\RealTimeAlertConfiguration|null $RealTimeAlertConfiguration
  * @property list<Shapes\MediaInsightsPipelineConfigurationElement> $Elements
  */
 class UpdateMediaInsightsPipelineConfigurationRequest extends Request
@@ -16,7 +16,7 @@ class UpdateMediaInsightsPipelineConfigurationRequest extends Request
      * @param array{
      *     Identifier: string,
      *     ResourceAccessRoleArn: string,
-     *     RealTimeAlertConfiguration?: Shapes\RealTimeAlertConfiguration,
+     *     RealTimeAlertConfiguration?: Shapes\RealTimeAlertConfiguration|null,
      *     Elements: list<Shapes\MediaInsightsPipelineConfigurationElement>
      * } $args
      */

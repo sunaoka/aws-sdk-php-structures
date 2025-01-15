@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\kendra\CreateExperience\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IdentityAttributeName
+ * @property string|null $IdentityAttributeName
  */
 class UserIdentityConfiguration extends Shape
 {
     /**
-     * @param array{IdentityAttributeName?: string} $args
+     * @param array{IdentityAttributeName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

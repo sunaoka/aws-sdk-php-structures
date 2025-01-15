@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $applicationId
  * @property string $indexId
- * @property string $displayName
- * @property string $description
- * @property Shapes\IndexCapacityConfiguration $capacityConfiguration
- * @property list<Shapes\DocumentAttributeConfiguration> $documentAttributeConfigurations
+ * @property string|null $displayName
+ * @property string|null $description
+ * @property Shapes\IndexCapacityConfiguration|null $capacityConfiguration
+ * @property list<Shapes\DocumentAttributeConfiguration>|null $documentAttributeConfigurations
  */
 class UpdateIndexRequest extends Request
 {
@@ -18,10 +18,10 @@ class UpdateIndexRequest extends Request
      * @param array{
      *     applicationId: string,
      *     indexId: string,
-     *     displayName?: string,
-     *     description?: string,
-     *     capacityConfiguration?: Shapes\IndexCapacityConfiguration,
-     *     documentAttributeConfigurations?: list<Shapes\DocumentAttributeConfiguration>
+     *     displayName?: string|null,
+     *     description?: string|null,
+     *     capacityConfiguration?: Shapes\IndexCapacityConfiguration|null,
+     *     documentAttributeConfigurations?: list<Shapes\DocumentAttributeConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

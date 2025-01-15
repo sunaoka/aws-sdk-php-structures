@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\SNOMEDCTEntity> $Entities
- * @property string $PaginationToken
- * @property string $ModelVersion
- * @property Shapes\SNOMEDCTDetails $SNOMEDCTDetails
- * @property Shapes\Characters $Characters
+ * @property string|null $PaginationToken
+ * @property string|null $ModelVersion
+ * @property Shapes\SNOMEDCTDetails|null $SNOMEDCTDetails
+ * @property Shapes\Characters|null $Characters
  */
 class InferSNOMEDCTResponse extends Response
 {

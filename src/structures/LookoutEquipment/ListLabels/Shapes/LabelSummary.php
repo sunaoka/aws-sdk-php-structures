@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\LookoutEquipment\ListLabels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LabelGroupName
- * @property string $LabelId
- * @property string $LabelGroupArn
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property 'ANOMALY'|'NO_ANOMALY'|'NEUTRAL' $Rating
- * @property string $FaultCode
- * @property string $Equipment
- * @property \Aws\Api\DateTimeResult $CreatedAt
+ * @property string|null $LabelGroupName
+ * @property string|null $LabelId
+ * @property string|null $LabelGroupArn
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property 'ANOMALY'|'NO_ANOMALY'|'NEUTRAL'|null $Rating
+ * @property string|null $FaultCode
+ * @property string|null $Equipment
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
  */
 class LabelSummary extends Shape
 {
     /**
      * @param array{
-     *     LabelGroupName?: string,
-     *     LabelId?: string,
-     *     LabelGroupArn?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Rating?: 'ANOMALY'|'NO_ANOMALY'|'NEUTRAL',
-     *     FaultCode?: string,
-     *     Equipment?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult
+     *     LabelGroupName?: string|null,
+     *     LabelId?: string|null,
+     *     LabelGroupArn?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Rating?: 'ANOMALY'|'NO_ANOMALY'|'NEUTRAL'|null,
+     *     FaultCode?: string|null,
+     *     Equipment?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

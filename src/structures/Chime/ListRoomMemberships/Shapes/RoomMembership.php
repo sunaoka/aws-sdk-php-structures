@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Chime\ListRoomMemberships\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RoomId
- * @property Member $Member
- * @property 'Administrator'|'Member' $Role
- * @property string $InvitedBy
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
+ * @property string|null $RoomId
+ * @property Member|null $Member
+ * @property 'Administrator'|'Member'|null $Role
+ * @property string|null $InvitedBy
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
 class RoomMembership extends Shape
 {
     /**
      * @param array{
-     *     RoomId?: string,
-     *     Member?: Member,
-     *     Role?: 'Administrator'|'Member',
-     *     InvitedBy?: string,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     RoomId?: string|null,
+     *     Member?: Member|null,
+     *     Role?: 'Administrator'|'Member'|null,
+     *     InvitedBy?: string|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

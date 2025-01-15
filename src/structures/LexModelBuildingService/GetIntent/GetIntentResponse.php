@@ -5,24 +5,24 @@ namespace Sunaoka\Aws\Structures\LexModelBuildingService\GetIntent;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $name
- * @property string $description
- * @property list<Shapes\Slot> $slots
- * @property list<string> $sampleUtterances
- * @property Shapes\Prompt $confirmationPrompt
- * @property Shapes\Statement $rejectionStatement
- * @property Shapes\FollowUpPrompt $followUpPrompt
- * @property Shapes\Statement $conclusionStatement
- * @property Shapes\CodeHook $dialogCodeHook
- * @property Shapes\FulfillmentActivity $fulfillmentActivity
- * @property string $parentIntentSignature
- * @property \Aws\Api\DateTimeResult $lastUpdatedDate
- * @property \Aws\Api\DateTimeResult $createdDate
- * @property string $version
- * @property string $checksum
- * @property Shapes\KendraConfiguration $kendraConfiguration
- * @property list<Shapes\InputContext> $inputContexts
- * @property list<Shapes\OutputContext> $outputContexts
+ * @property string|null $name
+ * @property string|null $description
+ * @property list<Shapes\Slot>|null $slots
+ * @property list<string>|null $sampleUtterances
+ * @property Shapes\Prompt|null $confirmationPrompt
+ * @property Shapes\Statement|null $rejectionStatement
+ * @property Shapes\FollowUpPrompt|null $followUpPrompt
+ * @property Shapes\Statement|null $conclusionStatement
+ * @property Shapes\CodeHook|null $dialogCodeHook
+ * @property Shapes\FulfillmentActivity|null $fulfillmentActivity
+ * @property string|null $parentIntentSignature
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDate
+ * @property \Aws\Api\DateTimeResult|null $createdDate
+ * @property string|null $version
+ * @property string|null $checksum
+ * @property Shapes\KendraConfiguration|null $kendraConfiguration
+ * @property list<Shapes\InputContext>|null $inputContexts
+ * @property list<Shapes\OutputContext>|null $outputContexts
  */
 class GetIntentResponse extends Response
 {

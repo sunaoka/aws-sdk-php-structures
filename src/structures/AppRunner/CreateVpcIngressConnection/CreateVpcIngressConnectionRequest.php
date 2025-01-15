@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ServiceArn
  * @property string $VpcIngressConnectionName
  * @property Shapes\IngressVpcConfiguration $IngressVpcConfiguration
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateVpcIngressConnectionRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateVpcIngressConnectionRequest extends Request
      *     ServiceArn: string,
      *     VpcIngressConnectionName: string,
      *     IngressVpcConfiguration: Shapes\IngressVpcConfiguration,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

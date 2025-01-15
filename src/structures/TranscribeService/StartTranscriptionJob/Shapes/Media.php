@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\TranscribeService\StartTranscriptionJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MediaFileUri
- * @property string $RedactedMediaFileUri
+ * @property string|null $MediaFileUri
+ * @property string|null $RedactedMediaFileUri
  */
 class Media extends Shape
 {
     /**
      * @param array{
-     *     MediaFileUri?: string,
-     *     RedactedMediaFileUri?: string
+     *     MediaFileUri?: string|null,
+     *     RedactedMediaFileUri?: string|null
      * } $args
      */
     public function __construct(array $args = [])

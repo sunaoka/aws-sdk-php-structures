@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DescribeLoadBalancerPolici
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $LoadBalancerName
- * @property list<string> $PolicyNames
+ * @property string|null $LoadBalancerName
+ * @property list<string>|null $PolicyNames
  */
 class DescribeLoadBalancerPoliciesRequest extends Request
 {
     /**
      * @param array{
-     *     LoadBalancerName?: string,
-     *     PolicyNames?: list<string>
+     *     LoadBalancerName?: string|null,
+     *     PolicyNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoice\CreateConfigurationSetEventDes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeliveryStreamArn
- * @property string $IamRoleArn
+ * @property string|null $DeliveryStreamArn
+ * @property string|null $IamRoleArn
  */
 class KinesisFirehoseDestination extends Shape
 {
     /**
      * @param array{
-     *     DeliveryStreamArn?: string,
-     *     IamRoleArn?: string
+     *     DeliveryStreamArn?: string|null,
+     *     IamRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

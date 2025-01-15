@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\ListPermissionGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $permissionGroupId
- * @property string $name
- * @property string $description
- * @property list<'CreateDataset'|'ManageClusters'|'ManageUsersAndGroups'|'ManageAttributeSets'|'ViewAuditData'|'AccessNotebooks'|'GetTemporaryCredentials'> $applicationPermissions
- * @property int $createTime
- * @property int $lastModifiedTime
- * @property 'ADDITION_IN_PROGRESS'|'ADDITION_SUCCESS'|'REMOVAL_IN_PROGRESS' $membershipStatus
+ * @property string|null $permissionGroupId
+ * @property string|null $name
+ * @property string|null $description
+ * @property list<'CreateDataset'|'ManageClusters'|'ManageUsersAndGroups'|'ManageAttributeSets'|'ViewAuditData'|'AccessNotebooks'|'GetTemporaryCredentials'>|null $applicationPermissions
+ * @property int|null $createTime
+ * @property int|null $lastModifiedTime
+ * @property 'ADDITION_IN_PROGRESS'|'ADDITION_SUCCESS'|'REMOVAL_IN_PROGRESS'|null $membershipStatus
  */
 class PermissionGroup extends Shape
 {
     /**
      * @param array{
-     *     permissionGroupId?: string,
-     *     name?: string,
-     *     description?: string,
-     *     applicationPermissions?: list<'CreateDataset'|'ManageClusters'|'ManageUsersAndGroups'|'ManageAttributeSets'|'ViewAuditData'|'AccessNotebooks'|'GetTemporaryCredentials'>,
-     *     createTime?: int,
-     *     lastModifiedTime?: int,
-     *     membershipStatus?: 'ADDITION_IN_PROGRESS'|'ADDITION_SUCCESS'|'REMOVAL_IN_PROGRESS'
+     *     permissionGroupId?: string|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     applicationPermissions?: list<'CreateDataset'|'ManageClusters'|'ManageUsersAndGroups'|'ManageAttributeSets'|'ViewAuditData'|'AccessNotebooks'|'GetTemporaryCredentials'>|null,
+     *     createTime?: int|null,
+     *     lastModifiedTime?: int|null,
+     *     membershipStatus?: 'ADDITION_IN_PROGRESS'|'ADDITION_SUCCESS'|'REMOVAL_IN_PROGRESS'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property Shapes\ResponseStream $completion
  * @property string $contentType
- * @property string $memoryId
+ * @property string|null $memoryId
  * @property string $sessionId
  */
 class InvokeAgentResponse extends Response

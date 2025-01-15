@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\DescribeRecommendationExportJo
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ResourceType'|'JobStatus' $name
- * @property list<string> $values
+ * @property 'ResourceType'|'JobStatus'|null $name
+ * @property list<string>|null $values
  */
 class JobFilter extends Shape
 {
     /**
      * @param array{
-     *     name?: 'ResourceType'|'JobStatus',
-     *     values?: list<string>
+     *     name?: 'ResourceType'|'JobStatus'|null,
+     *     values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

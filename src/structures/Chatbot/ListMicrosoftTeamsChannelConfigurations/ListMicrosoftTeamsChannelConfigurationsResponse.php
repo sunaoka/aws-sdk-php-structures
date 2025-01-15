@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Chatbot\ListMicrosoftTeamsChannelConfigurations
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\TeamsChannelConfiguration> $TeamChannelConfigurations
+ * @property string|null $NextToken
+ * @property list<Shapes\TeamsChannelConfiguration>|null $TeamChannelConfigurations
  */
 class ListMicrosoftTeamsChannelConfigurationsResponse extends Response
 {

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DeleteConstraint;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $Id
  */
 class DeleteConstraintRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     Id: string
      * } $args
      */

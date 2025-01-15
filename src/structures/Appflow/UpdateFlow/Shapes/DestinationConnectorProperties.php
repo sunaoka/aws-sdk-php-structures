@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Appflow\UpdateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RedshiftDestinationProperties $Redshift
- * @property S3DestinationProperties $S3
- * @property SalesforceDestinationProperties $Salesforce
- * @property SnowflakeDestinationProperties $Snowflake
- * @property EventBridgeDestinationProperties $EventBridge
- * @property LookoutMetricsDestinationProperties $LookoutMetrics
- * @property UpsolverDestinationProperties $Upsolver
- * @property HoneycodeDestinationProperties $Honeycode
- * @property CustomerProfilesDestinationProperties $CustomerProfiles
- * @property ZendeskDestinationProperties $Zendesk
- * @property MarketoDestinationProperties $Marketo
- * @property CustomConnectorDestinationProperties $CustomConnector
- * @property SAPODataDestinationProperties $SAPOData
+ * @property RedshiftDestinationProperties|null $Redshift
+ * @property S3DestinationProperties|null $S3
+ * @property SalesforceDestinationProperties|null $Salesforce
+ * @property SnowflakeDestinationProperties|null $Snowflake
+ * @property EventBridgeDestinationProperties|null $EventBridge
+ * @property LookoutMetricsDestinationProperties|null $LookoutMetrics
+ * @property UpsolverDestinationProperties|null $Upsolver
+ * @property HoneycodeDestinationProperties|null $Honeycode
+ * @property CustomerProfilesDestinationProperties|null $CustomerProfiles
+ * @property ZendeskDestinationProperties|null $Zendesk
+ * @property MarketoDestinationProperties|null $Marketo
+ * @property CustomConnectorDestinationProperties|null $CustomConnector
+ * @property SAPODataDestinationProperties|null $SAPOData
  */
 class DestinationConnectorProperties extends Shape
 {
     /**
      * @param array{
-     *     Redshift?: RedshiftDestinationProperties,
-     *     S3?: S3DestinationProperties,
-     *     Salesforce?: SalesforceDestinationProperties,
-     *     Snowflake?: SnowflakeDestinationProperties,
-     *     EventBridge?: EventBridgeDestinationProperties,
-     *     LookoutMetrics?: LookoutMetricsDestinationProperties,
-     *     Upsolver?: UpsolverDestinationProperties,
-     *     Honeycode?: HoneycodeDestinationProperties,
-     *     CustomerProfiles?: CustomerProfilesDestinationProperties,
-     *     Zendesk?: ZendeskDestinationProperties,
-     *     Marketo?: MarketoDestinationProperties,
-     *     CustomConnector?: CustomConnectorDestinationProperties,
-     *     SAPOData?: SAPODataDestinationProperties
+     *     Redshift?: RedshiftDestinationProperties|null,
+     *     S3?: S3DestinationProperties|null,
+     *     Salesforce?: SalesforceDestinationProperties|null,
+     *     Snowflake?: SnowflakeDestinationProperties|null,
+     *     EventBridge?: EventBridgeDestinationProperties|null,
+     *     LookoutMetrics?: LookoutMetricsDestinationProperties|null,
+     *     Upsolver?: UpsolverDestinationProperties|null,
+     *     Honeycode?: HoneycodeDestinationProperties|null,
+     *     CustomerProfiles?: CustomerProfilesDestinationProperties|null,
+     *     Zendesk?: ZendeskDestinationProperties|null,
+     *     Marketo?: MarketoDestinationProperties|null,
+     *     CustomConnector?: CustomConnectorDestinationProperties|null,
+     *     SAPOData?: SAPODataDestinationProperties|null
      * } $args
      */
     public function __construct(array $args = [])

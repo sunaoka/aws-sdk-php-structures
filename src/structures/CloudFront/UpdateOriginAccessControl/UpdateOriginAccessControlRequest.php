@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\OriginAccessControlConfig $OriginAccessControlConfig
  * @property string $Id
- * @property string $IfMatch
+ * @property string|null $IfMatch
  */
 class UpdateOriginAccessControlRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateOriginAccessControlRequest extends Request
      * @param array{
      *     OriginAccessControlConfig: Shapes\OriginAccessControlConfig,
      *     Id: string,
-     *     IfMatch?: string
+     *     IfMatch?: string|null
      * } $args
      */
     public function __construct(array $args)

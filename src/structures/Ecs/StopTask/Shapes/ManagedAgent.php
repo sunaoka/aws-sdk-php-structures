@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ecs\StopTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $lastStartedAt
- * @property 'ExecuteCommandAgent' $name
- * @property string $reason
- * @property string $lastStatus
+ * @property \Aws\Api\DateTimeResult|null $lastStartedAt
+ * @property 'ExecuteCommandAgent'|null $name
+ * @property string|null $reason
+ * @property string|null $lastStatus
  */
 class ManagedAgent extends Shape
 {
     /**
      * @param array{
-     *     lastStartedAt?: \Aws\Api\DateTimeResult,
-     *     name?: 'ExecuteCommandAgent',
-     *     reason?: string,
-     *     lastStatus?: string
+     *     lastStartedAt?: \Aws\Api\DateTimeResult|null,
+     *     name?: 'ExecuteCommandAgent'|null,
+     *     reason?: string|null,
+     *     lastStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

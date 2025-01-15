@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceAttribute;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\InstanceBlockDeviceMapping> $BlockDeviceMappings
- * @property Shapes\AttributeBooleanValue $DisableApiTermination
- * @property Shapes\AttributeBooleanValue $EnaSupport
- * @property Shapes\EnclaveOptions $EnclaveOptions
- * @property Shapes\AttributeBooleanValue $EbsOptimized
- * @property string $InstanceId
- * @property Shapes\AttributeValue $InstanceInitiatedShutdownBehavior
- * @property Shapes\AttributeValue $InstanceType
- * @property Shapes\AttributeValue $KernelId
- * @property list<Shapes\ProductCode> $ProductCodes
- * @property Shapes\AttributeValue $RamdiskId
- * @property Shapes\AttributeValue $RootDeviceName
- * @property Shapes\AttributeBooleanValue $SourceDestCheck
- * @property Shapes\AttributeValue $SriovNetSupport
- * @property Shapes\AttributeValue $UserData
- * @property Shapes\AttributeBooleanValue $DisableApiStop
- * @property list<Shapes\GroupIdentifier> $Groups
+ * @property list<Shapes\InstanceBlockDeviceMapping>|null $BlockDeviceMappings
+ * @property Shapes\AttributeBooleanValue|null $DisableApiTermination
+ * @property Shapes\AttributeBooleanValue|null $EnaSupport
+ * @property Shapes\EnclaveOptions|null $EnclaveOptions
+ * @property Shapes\AttributeBooleanValue|null $EbsOptimized
+ * @property string|null $InstanceId
+ * @property Shapes\AttributeValue|null $InstanceInitiatedShutdownBehavior
+ * @property Shapes\AttributeValue|null $InstanceType
+ * @property Shapes\AttributeValue|null $KernelId
+ * @property list<Shapes\ProductCode>|null $ProductCodes
+ * @property Shapes\AttributeValue|null $RamdiskId
+ * @property Shapes\AttributeValue|null $RootDeviceName
+ * @property Shapes\AttributeBooleanValue|null $SourceDestCheck
+ * @property Shapes\AttributeValue|null $SriovNetSupport
+ * @property Shapes\AttributeValue|null $UserData
+ * @property Shapes\AttributeBooleanValue|null $DisableApiStop
+ * @property list<Shapes\GroupIdentifier>|null $Groups
  */
 class DescribeInstanceAttributeResponse extends Response
 {

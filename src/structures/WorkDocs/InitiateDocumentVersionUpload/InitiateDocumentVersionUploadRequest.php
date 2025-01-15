@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\WorkDocs\InitiateDocumentVersionUpload;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
- * @property string $Id
- * @property string $Name
- * @property \Aws\Api\DateTimeResult $ContentCreatedTimestamp
- * @property \Aws\Api\DateTimeResult $ContentModifiedTimestamp
- * @property string $ContentType
- * @property int $DocumentSizeInBytes
- * @property string $ParentFolderId
+ * @property string|null $AuthenticationToken
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property \Aws\Api\DateTimeResult|null $ContentCreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ContentModifiedTimestamp
+ * @property string|null $ContentType
+ * @property int|null $DocumentSizeInBytes
+ * @property string|null $ParentFolderId
  */
 class InitiateDocumentVersionUploadRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
-     *     Id?: string,
-     *     Name?: string,
-     *     ContentCreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ContentModifiedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ContentType?: string,
-     *     DocumentSizeInBytes?: int,
-     *     ParentFolderId?: string
+     *     AuthenticationToken?: string|null,
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     ContentCreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ContentModifiedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ContentType?: string|null,
+     *     DocumentSizeInBytes?: int|null,
+     *     ParentFolderId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

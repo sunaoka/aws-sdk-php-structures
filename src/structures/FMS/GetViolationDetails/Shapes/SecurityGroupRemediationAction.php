@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'REMOVE'|'MODIFY' $RemediationActionType
- * @property string $Description
- * @property SecurityGroupRuleDescription $RemediationResult
- * @property bool $IsDefaultAction
+ * @property 'REMOVE'|'MODIFY'|null $RemediationActionType
+ * @property string|null $Description
+ * @property SecurityGroupRuleDescription|null $RemediationResult
+ * @property bool|null $IsDefaultAction
  */
 class SecurityGroupRemediationAction extends Shape
 {
     /**
      * @param array{
-     *     RemediationActionType?: 'REMOVE'|'MODIFY',
-     *     Description?: string,
-     *     RemediationResult?: SecurityGroupRuleDescription,
-     *     IsDefaultAction?: bool
+     *     RemediationActionType?: 'REMOVE'|'MODIFY'|null,
+     *     Description?: string|null,
+     *     RemediationResult?: SecurityGroupRuleDescription|null,
+     *     IsDefaultAction?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

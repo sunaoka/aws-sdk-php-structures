@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DestinationProjectArn
  * @property string $VersionName
  * @property Shapes\OutputConfig $OutputConfig
- * @property array<string, string> $Tags
- * @property string $KmsKeyId
+ * @property array<string, string>|null $Tags
+ * @property string|null $KmsKeyId
  */
 class CopyProjectVersionRequest extends Request
 {
@@ -22,8 +22,8 @@ class CopyProjectVersionRequest extends Request
      *     DestinationProjectArn: string,
      *     VersionName: string,
      *     OutputConfig: Shapes\OutputConfig,
-     *     Tags?: array<string, string>,
-     *     KmsKeyId?: string
+     *     Tags?: array<string, string>|null,
+     *     KmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

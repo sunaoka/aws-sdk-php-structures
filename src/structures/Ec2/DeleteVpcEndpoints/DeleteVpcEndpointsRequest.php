@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteVpcEndpoints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property list<string> $VpcEndpointIds
  */
 class DeleteVpcEndpointsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     VpcEndpointIds: list<string>
      * } $args
      */

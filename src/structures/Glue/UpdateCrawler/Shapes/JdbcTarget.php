@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateCrawler\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConnectionName
- * @property string $Path
- * @property list<string> $Exclusions
- * @property list<'COMMENTS'|'RAWTYPES'> $EnableAdditionalMetadata
+ * @property string|null $ConnectionName
+ * @property string|null $Path
+ * @property list<string>|null $Exclusions
+ * @property list<'COMMENTS'|'RAWTYPES'>|null $EnableAdditionalMetadata
  */
 class JdbcTarget extends Shape
 {
     /**
      * @param array{
-     *     ConnectionName?: string,
-     *     Path?: string,
-     *     Exclusions?: list<string>,
-     *     EnableAdditionalMetadata?: list<'COMMENTS'|'RAWTYPES'>
+     *     ConnectionName?: string|null,
+     *     Path?: string|null,
+     *     Exclusions?: list<string>|null,
+     *     EnableAdditionalMetadata?: list<'COMMENTS'|'RAWTYPES'>|null
      * } $args
      */
     public function __construct(array $args = [])

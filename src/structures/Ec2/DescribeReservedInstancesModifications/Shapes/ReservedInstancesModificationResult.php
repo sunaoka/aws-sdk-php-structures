@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeReservedInstancesModifications\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReservedInstancesId
- * @property ReservedInstancesConfiguration $TargetConfiguration
+ * @property string|null $ReservedInstancesId
+ * @property ReservedInstancesConfiguration|null $TargetConfiguration
  */
 class ReservedInstancesModificationResult extends Shape
 {
     /**
      * @param array{
-     *     ReservedInstancesId?: string,
-     *     TargetConfiguration?: ReservedInstancesConfiguration
+     *     ReservedInstancesId?: string|null,
+     *     TargetConfiguration?: ReservedInstancesConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Connect\UpdateTaskTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $InstanceId
- * @property string $Id
- * @property string $Arn
- * @property string $Name
- * @property string $Description
- * @property string $ContactFlowId
- * @property string $SelfAssignFlowId
- * @property Shapes\TaskTemplateConstraints $Constraints
- * @property Shapes\TaskTemplateDefaults $Defaults
- * @property list<Shapes\TaskTemplateField> $Fields
- * @property 'ACTIVE'|'INACTIVE' $Status
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property \Aws\Api\DateTimeResult $CreatedTime
+ * @property string|null $InstanceId
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $ContactFlowId
+ * @property string|null $SelfAssignFlowId
+ * @property Shapes\TaskTemplateConstraints|null $Constraints
+ * @property Shapes\TaskTemplateDefaults|null $Defaults
+ * @property list<Shapes\TaskTemplateField>|null $Fields
+ * @property 'ACTIVE'|'INACTIVE'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
  */
 class UpdateTaskTemplateResponse extends Response
 {

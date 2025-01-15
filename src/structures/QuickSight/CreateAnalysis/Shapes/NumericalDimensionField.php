@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FieldId
  * @property ColumnIdentifier $Column
- * @property string $HierarchyId
- * @property NumberFormatConfiguration $FormatConfiguration
+ * @property string|null $HierarchyId
+ * @property NumberFormatConfiguration|null $FormatConfiguration
  */
 class NumericalDimensionField extends Shape
 {
@@ -16,8 +16,8 @@ class NumericalDimensionField extends Shape
      * @param array{
      *     FieldId: string,
      *     Column: ColumnIdentifier,
-     *     HierarchyId?: string,
-     *     FormatConfiguration?: NumberFormatConfiguration
+     *     HierarchyId?: string|null,
+     *     FormatConfiguration?: NumberFormatConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\DataExchange\UpdateEventAction;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\Action $Action
+ * @property Shapes\Action|null $Action
  * @property string $EventActionId
  */
 class UpdateEventActionRequest extends Request
 {
     /**
      * @param array{
-     *     Action?: Shapes\Action,
+     *     Action?: Shapes\Action|null,
      *     EventActionId: string
      * } $args
      */

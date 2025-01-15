@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'EDGE'|'CLOUD' $computeLocation
- * @property ForwardingConfig $forwardingConfig
+ * @property ForwardingConfig|null $forwardingConfig
  */
 class TransformProcessingConfig extends Shape
 {
     /**
      * @param array{
      *     computeLocation: 'EDGE'|'CLOUD',
-     *     forwardingConfig?: ForwardingConfig
+     *     forwardingConfig?: ForwardingConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTWireless\UpdateResourceEventConfiguration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SidewalkEventNotificationConfigurations $Sidewalk
- * @property 'Enabled'|'Disabled' $WirelessDeviceIdEventTopic
+ * @property SidewalkEventNotificationConfigurations|null $Sidewalk
+ * @property 'Enabled'|'Disabled'|null $WirelessDeviceIdEventTopic
  */
 class MessageDeliveryStatusEventConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Sidewalk?: SidewalkEventNotificationConfigurations,
-     *     WirelessDeviceIdEventTopic?: 'Enabled'|'Disabled'
+     *     Sidewalk?: SidewalkEventNotificationConfigurations|null,
+     *     WirelessDeviceIdEventTopic?: 'Enabled'|'Disabled'|null
      * } $args
      */
     public function __construct(array $args = [])

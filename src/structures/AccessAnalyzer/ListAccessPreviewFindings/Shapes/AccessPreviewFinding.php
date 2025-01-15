@@ -6,42 +6,42 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property string $existingFindingId
- * @property 'ACTIVE'|'ARCHIVED'|'RESOLVED' $existingFindingStatus
- * @property array<string, string> $principal
- * @property list<string> $action
- * @property array<string, string> $condition
- * @property string $resource
- * @property bool $isPublic
+ * @property string|null $existingFindingId
+ * @property 'ACTIVE'|'ARCHIVED'|'RESOLVED'|null $existingFindingStatus
+ * @property array<string, string>|null $principal
+ * @property list<string>|null $action
+ * @property array<string, string>|null $condition
+ * @property string|null $resource
+ * @property bool|null $isPublic
  * @property 'AWS::S3::Bucket'|'AWS::IAM::Role'|'AWS::SQS::Queue'|'AWS::Lambda::Function'|'AWS::Lambda::LayerVersion'|'AWS::KMS::Key'|'AWS::SecretsManager::Secret'|'AWS::EFS::FileSystem'|'AWS::EC2::Snapshot'|'AWS::ECR::Repository'|'AWS::RDS::DBSnapshot'|'AWS::RDS::DBClusterSnapshot'|'AWS::SNS::Topic'|'AWS::S3Express::DirectoryBucket'|'AWS::DynamoDB::Table'|'AWS::DynamoDB::Stream'|'AWS::IAM::User' $resourceType
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property 'CHANGED'|'NEW'|'UNCHANGED' $changeType
  * @property 'ACTIVE'|'ARCHIVED'|'RESOLVED' $status
  * @property string $resourceOwnerAccount
- * @property string $error
- * @property list<FindingSource> $sources
- * @property 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE' $resourceControlPolicyRestriction
+ * @property string|null $error
+ * @property list<FindingSource>|null $sources
+ * @property 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|null $resourceControlPolicyRestriction
  */
 class AccessPreviewFinding extends Shape
 {
     /**
      * @param array{
      *     id: string,
-     *     existingFindingId?: string,
-     *     existingFindingStatus?: 'ACTIVE'|'ARCHIVED'|'RESOLVED',
-     *     principal?: array<string, string>,
-     *     action?: list<string>,
-     *     condition?: array<string, string>,
-     *     resource?: string,
-     *     isPublic?: bool,
+     *     existingFindingId?: string|null,
+     *     existingFindingStatus?: 'ACTIVE'|'ARCHIVED'|'RESOLVED'|null,
+     *     principal?: array<string, string>|null,
+     *     action?: list<string>|null,
+     *     condition?: array<string, string>|null,
+     *     resource?: string|null,
+     *     isPublic?: bool|null,
      *     resourceType: 'AWS::S3::Bucket'|'AWS::IAM::Role'|'AWS::SQS::Queue'|'AWS::Lambda::Function'|'AWS::Lambda::LayerVersion'|'AWS::KMS::Key'|'AWS::SecretsManager::Secret'|'AWS::EFS::FileSystem'|'AWS::EC2::Snapshot'|'AWS::ECR::Repository'|'AWS::RDS::DBSnapshot'|'AWS::RDS::DBClusterSnapshot'|'AWS::SNS::Topic'|'AWS::S3Express::DirectoryBucket'|'AWS::DynamoDB::Table'|'AWS::DynamoDB::Stream'|'AWS::IAM::User',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     changeType: 'CHANGED'|'NEW'|'UNCHANGED',
      *     status: 'ACTIVE'|'ARCHIVED'|'RESOLVED',
      *     resourceOwnerAccount: string,
-     *     error?: string,
-     *     sources?: list<FindingSource>,
-     *     resourceControlPolicyRestriction?: 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'
+     *     error?: string|null,
+     *     sources?: list<FindingSource>|null,
+     *     resourceControlPolicyRestriction?: 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|null
      * } $args
      */
     public function __construct(array $args)

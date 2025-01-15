@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcClassicLink\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ClassicLinkEnabled
- * @property list<Tag> $Tags
- * @property string $VpcId
+ * @property bool|null $ClassicLinkEnabled
+ * @property list<Tag>|null $Tags
+ * @property string|null $VpcId
  */
 class VpcClassicLink extends Shape
 {
     /**
      * @param array{
-     *     ClassicLinkEnabled?: bool,
-     *     Tags?: list<Tag>,
-     *     VpcId?: string
+     *     ClassicLinkEnabled?: bool|null,
+     *     Tags?: list<Tag>|null,
+     *     VpcId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

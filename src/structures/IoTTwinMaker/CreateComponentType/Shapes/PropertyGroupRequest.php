@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\CreateComponentType\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TABULAR' $groupType
- * @property list<string> $propertyNames
+ * @property 'TABULAR'|null $groupType
+ * @property list<string>|null $propertyNames
  */
 class PropertyGroupRequest extends Shape
 {
     /**
      * @param array{
-     *     groupType?: 'TABULAR',
-     *     propertyNames?: list<string>
+     *     groupType?: 'TABULAR'|null,
+     *     propertyNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

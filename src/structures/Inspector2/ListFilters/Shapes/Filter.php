@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property FilterCriteria $criteria
- * @property string $description
+ * @property string|null $description
  * @property string $name
  * @property string $ownerId
- * @property string $reason
- * @property array<string, string> $tags
+ * @property string|null $reason
+ * @property array<string, string>|null $tags
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class Filter extends Shape
@@ -24,11 +24,11 @@ class Filter extends Shape
      *     arn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     criteria: FilterCriteria,
-     *     description?: string,
+     *     description?: string|null,
      *     name: string,
      *     ownerId: string,
-     *     reason?: string,
-     *     tags?: array<string, string>,
+     *     reason?: string|null,
+     *     tags?: array<string, string>|null,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

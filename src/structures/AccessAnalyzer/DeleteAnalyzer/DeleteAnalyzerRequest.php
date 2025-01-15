@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $analyzerName
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeleteAnalyzerRequest extends Request
 {
     /**
      * @param array{
      *     analyzerName: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

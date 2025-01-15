@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\StartBotRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LexTranscriptFilter $lexTranscriptFilter
+ * @property LexTranscriptFilter|null $lexTranscriptFilter
  */
 class TranscriptFilter extends Shape
 {
     /**
-     * @param array{lexTranscriptFilter?: LexTranscriptFilter} $args
+     * @param array{lexTranscriptFilter?: LexTranscriptFilter|null} $args
      */
     public function __construct(array $args = [])
     {

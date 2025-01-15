@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\CreateMediaCapturePipeli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SourceConfiguration $SourceConfiguration
- * @property ArtifactsConfiguration $ArtifactsConfiguration
+ * @property SourceConfiguration|null $SourceConfiguration
+ * @property ArtifactsConfiguration|null $ArtifactsConfiguration
  */
 class ChimeSdkMeetingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     SourceConfiguration?: SourceConfiguration,
-     *     ArtifactsConfiguration?: ArtifactsConfiguration
+     *     SourceConfiguration?: SourceConfiguration|null,
+     *     ArtifactsConfiguration?: ArtifactsConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

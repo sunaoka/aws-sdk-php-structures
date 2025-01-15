@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityLake\ListSubscribers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomLogSourceAttributes $attributes
- * @property CustomLogSourceProvider $provider
- * @property string $sourceName
- * @property string $sourceVersion
+ * @property CustomLogSourceAttributes|null $attributes
+ * @property CustomLogSourceProvider|null $provider
+ * @property string|null $sourceName
+ * @property string|null $sourceVersion
  */
 class CustomLogSourceResource extends Shape
 {
     /**
      * @param array{
-     *     attributes?: CustomLogSourceAttributes,
-     *     provider?: CustomLogSourceProvider,
-     *     sourceName?: string,
-     *     sourceVersion?: string
+     *     attributes?: CustomLogSourceAttributes|null,
+     *     provider?: CustomLogSourceProvider|null,
+     *     sourceName?: string|null,
+     *     sourceVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

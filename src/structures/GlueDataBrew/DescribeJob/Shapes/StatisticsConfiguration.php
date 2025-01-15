@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $IncludedStatistics
- * @property list<StatisticOverride> $Overrides
+ * @property list<string>|null $IncludedStatistics
+ * @property list<StatisticOverride>|null $Overrides
  */
 class StatisticsConfiguration extends Shape
 {
     /**
      * @param array{
-     *     IncludedStatistics?: list<string>,
-     *     Overrides?: list<StatisticOverride>
+     *     IncludedStatistics?: list<string>|null,
+     *     Overrides?: list<StatisticOverride>|null
      * } $args
      */
     public function __construct(array $args = [])

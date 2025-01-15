@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\GetOperation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property 'CREATE_NAMESPACE'|'DELETE_NAMESPACE'|'UPDATE_NAMESPACE'|'UPDATE_SERVICE'|'REGISTER_INSTANCE'|'DEREGISTER_INSTANCE' $Type
- * @property 'SUBMITTED'|'PENDING'|'SUCCESS'|'FAIL' $Status
- * @property string $ErrorMessage
- * @property string $ErrorCode
- * @property \Aws\Api\DateTimeResult $CreateDate
- * @property \Aws\Api\DateTimeResult $UpdateDate
- * @property array<'NAMESPACE'|'SERVICE'|'INSTANCE', string> $Targets
+ * @property string|null $Id
+ * @property 'CREATE_NAMESPACE'|'DELETE_NAMESPACE'|'UPDATE_NAMESPACE'|'UPDATE_SERVICE'|'REGISTER_INSTANCE'|'DEREGISTER_INSTANCE'|null $Type
+ * @property 'SUBMITTED'|'PENDING'|'SUCCESS'|'FAIL'|null $Status
+ * @property string|null $ErrorMessage
+ * @property string|null $ErrorCode
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
+ * @property \Aws\Api\DateTimeResult|null $UpdateDate
+ * @property array<'NAMESPACE'|'SERVICE'|'INSTANCE', string>|null $Targets
  */
 class Operation extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Type?: 'CREATE_NAMESPACE'|'DELETE_NAMESPACE'|'UPDATE_NAMESPACE'|'UPDATE_SERVICE'|'REGISTER_INSTANCE'|'DEREGISTER_INSTANCE',
-     *     Status?: 'SUBMITTED'|'PENDING'|'SUCCESS'|'FAIL',
-     *     ErrorMessage?: string,
-     *     ErrorCode?: string,
-     *     CreateDate?: \Aws\Api\DateTimeResult,
-     *     UpdateDate?: \Aws\Api\DateTimeResult,
-     *     Targets?: array<'NAMESPACE'|'SERVICE'|'INSTANCE', string>
+     *     Id?: string|null,
+     *     Type?: 'CREATE_NAMESPACE'|'DELETE_NAMESPACE'|'UPDATE_NAMESPACE'|'UPDATE_SERVICE'|'REGISTER_INSTANCE'|'DEREGISTER_INSTANCE'|null,
+     *     Status?: 'SUBMITTED'|'PENDING'|'SUCCESS'|'FAIL'|null,
+     *     ErrorMessage?: string|null,
+     *     ErrorCode?: string|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null,
+     *     UpdateDate?: \Aws\Api\DateTimeResult|null,
+     *     Targets?: array<'NAMESPACE'|'SERVICE'|'INSTANCE', string>|null
      * } $args
      */
     public function __construct(array $args = [])

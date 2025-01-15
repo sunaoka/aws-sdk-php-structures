@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $VpcId
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
- * @property string $ClientToken
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
+ * @property string|null $ClientToken
  */
 class CreateCarrierGatewayRequest extends Request
 {
     /**
      * @param array{
      *     VpcId: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool,
-     *     ClientToken?: string
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

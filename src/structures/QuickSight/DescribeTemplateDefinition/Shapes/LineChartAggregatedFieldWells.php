@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $Category
- * @property list<MeasureField> $Values
- * @property list<DimensionField> $Colors
- * @property list<DimensionField> $SmallMultiples
+ * @property list<DimensionField>|null $Category
+ * @property list<MeasureField>|null $Values
+ * @property list<DimensionField>|null $Colors
+ * @property list<DimensionField>|null $SmallMultiples
  */
 class LineChartAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     Category?: list<DimensionField>,
-     *     Values?: list<MeasureField>,
-     *     Colors?: list<DimensionField>,
-     *     SmallMultiples?: list<DimensionField>
+     *     Category?: list<DimensionField>|null,
+     *     Values?: list<MeasureField>|null,
+     *     Colors?: list<DimensionField>|null,
+     *     SmallMultiples?: list<DimensionField>|null
      * } $args
      */
     public function __construct(array $args = [])

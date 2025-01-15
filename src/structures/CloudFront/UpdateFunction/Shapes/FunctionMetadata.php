@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FunctionARN
- * @property 'DEVELOPMENT'|'LIVE' $Stage
- * @property \Aws\Api\DateTimeResult $CreatedTime
+ * @property 'DEVELOPMENT'|'LIVE'|null $Stage
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  */
 class FunctionMetadata extends Shape
@@ -15,8 +15,8 @@ class FunctionMetadata extends Shape
     /**
      * @param array{
      *     FunctionARN: string,
-     *     Stage?: 'DEVELOPMENT'|'LIVE',
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
+     *     Stage?: 'DEVELOPMENT'|'LIVE'|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTime: \Aws\Api\DateTimeResult
      * } $args
      */

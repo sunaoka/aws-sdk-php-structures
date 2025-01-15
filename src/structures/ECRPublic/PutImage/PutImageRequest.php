@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ECRPublic\PutImage;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $registryId
+ * @property string|null $registryId
  * @property string $repositoryName
  * @property string $imageManifest
- * @property string $imageManifestMediaType
- * @property string $imageTag
- * @property string $imageDigest
+ * @property string|null $imageManifestMediaType
+ * @property string|null $imageTag
+ * @property string|null $imageDigest
  */
 class PutImageRequest extends Request
 {
     /**
      * @param array{
-     *     registryId?: string,
+     *     registryId?: string|null,
      *     repositoryName: string,
      *     imageManifest: string,
-     *     imageManifestMediaType?: string,
-     *     imageTag?: string,
-     *     imageDigest?: string
+     *     imageManifestMediaType?: string|null,
+     *     imageTag?: string|null,
+     *     imageDigest?: string|null
      * } $args
      */
     public function __construct(array $args)

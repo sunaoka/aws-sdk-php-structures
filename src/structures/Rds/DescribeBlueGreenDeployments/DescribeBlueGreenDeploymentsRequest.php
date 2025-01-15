@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeBlueGreenDeployments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $BlueGreenDeploymentIdentifier
- * @property list<Shapes\Filter> $Filters
- * @property string $Marker
- * @property int<20, 100> $MaxRecords
+ * @property string|null $BlueGreenDeploymentIdentifier
+ * @property list<Shapes\Filter>|null $Filters
+ * @property string|null $Marker
+ * @property int<20, 100>|null $MaxRecords
  */
 class DescribeBlueGreenDeploymentsRequest extends Request
 {
     /**
      * @param array{
-     *     BlueGreenDeploymentIdentifier?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     Marker?: string,
-     *     MaxRecords?: int<20, 100>
+     *     BlueGreenDeploymentIdentifier?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     Marker?: string|null,
+     *     MaxRecords?: int<20, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

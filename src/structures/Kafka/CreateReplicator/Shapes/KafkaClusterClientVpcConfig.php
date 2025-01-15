@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Kafka\CreateReplicator\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $SecurityGroupIds
+ * @property list<string>|null $SecurityGroupIds
  * @property list<string> $SubnetIds
  */
 class KafkaClusterClientVpcConfig extends Shape
 {
     /**
      * @param array{
-     *     SecurityGroupIds?: list<string>,
+     *     SecurityGroupIds?: list<string>|null,
      *     SubnetIds: list<string>
      * } $args
      */

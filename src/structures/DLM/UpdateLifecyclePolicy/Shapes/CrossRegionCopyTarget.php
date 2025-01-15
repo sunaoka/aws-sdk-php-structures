@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DLM\UpdateLifecyclePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TargetRegion
+ * @property string|null $TargetRegion
  */
 class CrossRegionCopyTarget extends Shape
 {
     /**
-     * @param array{TargetRegion?: string} $args
+     * @param array{TargetRegion?: string|null} $args
      */
     public function __construct(array $args = [])
     {

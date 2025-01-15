@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<EvaluationFormSingleSelectQuestionAutomationOption> $Options
- * @property string $DefaultOptionRefId
+ * @property string|null $DefaultOptionRefId
  */
 class EvaluationFormSingleSelectQuestionAutomation extends Shape
 {
     /**
      * @param array{
      *     Options: list<EvaluationFormSingleSelectQuestionAutomationOption>,
-     *     DefaultOptionRefId?: string
+     *     DefaultOptionRefId?: string|null
      * } $args
      */
     public function __construct(array $args)

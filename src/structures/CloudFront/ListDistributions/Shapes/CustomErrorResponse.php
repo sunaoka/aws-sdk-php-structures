@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $ErrorCode
- * @property string $ResponsePagePath
- * @property string $ResponseCode
- * @property int $ErrorCachingMinTTL
+ * @property string|null $ResponsePagePath
+ * @property string|null $ResponseCode
+ * @property int|null $ErrorCachingMinTTL
  */
 class CustomErrorResponse extends Shape
 {
     /**
      * @param array{
      *     ErrorCode: int,
-     *     ResponsePagePath?: string,
-     *     ResponseCode?: string,
-     *     ErrorCachingMinTTL?: int
+     *     ResponsePagePath?: string|null,
+     *     ResponseCode?: string|null,
+     *     ErrorCachingMinTTL?: int|null
      * } $args
      */
     public function __construct(array $args)

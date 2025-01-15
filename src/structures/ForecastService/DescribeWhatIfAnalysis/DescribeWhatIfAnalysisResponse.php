@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ForecastService\DescribeWhatIfAnalysis;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $WhatIfAnalysisName
- * @property string $WhatIfAnalysisArn
- * @property string $ForecastArn
- * @property int $EstimatedTimeRemainingInMinutes
- * @property string $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
- * @property Shapes\TimeSeriesSelector $TimeSeriesSelector
+ * @property string|null $WhatIfAnalysisName
+ * @property string|null $WhatIfAnalysisArn
+ * @property string|null $ForecastArn
+ * @property int|null $EstimatedTimeRemainingInMinutes
+ * @property string|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
+ * @property Shapes\TimeSeriesSelector|null $TimeSeriesSelector
  */
 class DescribeWhatIfAnalysisResponse extends Response
 {

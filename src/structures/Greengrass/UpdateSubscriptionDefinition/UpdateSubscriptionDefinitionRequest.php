@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Greengrass\UpdateSubscriptionDefinition;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
+ * @property string|null $Name
  * @property string $SubscriptionDefinitionId
  */
 class UpdateSubscriptionDefinitionRequest extends Request
 {
     /**
      * @param array{
-     *     Name?: string,
+     *     Name?: string|null,
      *     SubscriptionDefinitionId: string
      * } $args
      */

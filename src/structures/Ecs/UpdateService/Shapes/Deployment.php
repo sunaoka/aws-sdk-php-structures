@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\Ecs\UpdateService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $status
- * @property string $taskDefinition
- * @property int $desiredCount
- * @property int $pendingCount
- * @property int $runningCount
- * @property int $failedTasks
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property list<CapacityProviderStrategyItem> $capacityProviderStrategy
- * @property 'EC2'|'FARGATE'|'EXTERNAL' $launchType
- * @property string $platformVersion
- * @property string $platformFamily
- * @property NetworkConfiguration $networkConfiguration
- * @property 'COMPLETED'|'FAILED'|'IN_PROGRESS' $rolloutState
- * @property string $rolloutStateReason
- * @property ServiceConnectConfiguration $serviceConnectConfiguration
- * @property list<ServiceConnectServiceResource> $serviceConnectResources
- * @property list<ServiceVolumeConfiguration> $volumeConfigurations
- * @property DeploymentEphemeralStorage $fargateEphemeralStorage
- * @property list<VpcLatticeConfiguration> $vpcLatticeConfigurations
+ * @property string|null $id
+ * @property string|null $status
+ * @property string|null $taskDefinition
+ * @property int|null $desiredCount
+ * @property int|null $pendingCount
+ * @property int|null $runningCount
+ * @property int|null $failedTasks
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property list<CapacityProviderStrategyItem>|null $capacityProviderStrategy
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
+ * @property string|null $platformVersion
+ * @property string|null $platformFamily
+ * @property NetworkConfiguration|null $networkConfiguration
+ * @property 'COMPLETED'|'FAILED'|'IN_PROGRESS'|null $rolloutState
+ * @property string|null $rolloutStateReason
+ * @property ServiceConnectConfiguration|null $serviceConnectConfiguration
+ * @property list<ServiceConnectServiceResource>|null $serviceConnectResources
+ * @property list<ServiceVolumeConfiguration>|null $volumeConfigurations
+ * @property DeploymentEphemeralStorage|null $fargateEphemeralStorage
+ * @property list<VpcLatticeConfiguration>|null $vpcLatticeConfigurations
  */
 class Deployment extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     status?: string,
-     *     taskDefinition?: string,
-     *     desiredCount?: int,
-     *     pendingCount?: int,
-     *     runningCount?: int,
-     *     failedTasks?: int,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     capacityProviderStrategy?: list<CapacityProviderStrategyItem>,
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL',
-     *     platformVersion?: string,
-     *     platformFamily?: string,
-     *     networkConfiguration?: NetworkConfiguration,
-     *     rolloutState?: 'COMPLETED'|'FAILED'|'IN_PROGRESS',
-     *     rolloutStateReason?: string,
-     *     serviceConnectConfiguration?: ServiceConnectConfiguration,
-     *     serviceConnectResources?: list<ServiceConnectServiceResource>,
-     *     volumeConfigurations?: list<ServiceVolumeConfiguration>,
-     *     fargateEphemeralStorage?: DeploymentEphemeralStorage,
-     *     vpcLatticeConfigurations?: list<VpcLatticeConfiguration>
+     *     id?: string|null,
+     *     status?: string|null,
+     *     taskDefinition?: string|null,
+     *     desiredCount?: int|null,
+     *     pendingCount?: int|null,
+     *     runningCount?: int|null,
+     *     failedTasks?: int|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     capacityProviderStrategy?: list<CapacityProviderStrategyItem>|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null,
+     *     platformVersion?: string|null,
+     *     platformFamily?: string|null,
+     *     networkConfiguration?: NetworkConfiguration|null,
+     *     rolloutState?: 'COMPLETED'|'FAILED'|'IN_PROGRESS'|null,
+     *     rolloutStateReason?: string|null,
+     *     serviceConnectConfiguration?: ServiceConnectConfiguration|null,
+     *     serviceConnectResources?: list<ServiceConnectServiceResource>|null,
+     *     volumeConfigurations?: list<ServiceVolumeConfiguration>|null,
+     *     fargateEphemeralStorage?: DeploymentEphemeralStorage|null,
+     *     vpcLatticeConfigurations?: list<VpcLatticeConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

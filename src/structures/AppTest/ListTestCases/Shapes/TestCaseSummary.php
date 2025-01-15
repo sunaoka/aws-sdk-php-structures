@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $testCaseId
  * @property string $testCaseArn
  * @property string $name
- * @property string $statusReason
+ * @property string|null $statusReason
  * @property int $latestVersion
  * @property 'Active'|'Deleting' $status
  * @property \Aws\Api\DateTimeResult $creationTime
@@ -21,7 +21,7 @@ class TestCaseSummary extends Shape
      *     testCaseId: string,
      *     testCaseArn: string,
      *     name: string,
-     *     statusReason?: string,
+     *     statusReason?: string|null,
      *     latestVersion: int,
      *     status: 'Active'|'Deleting',
      *     creationTime: \Aws\Api\DateTimeResult,

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApplicationAutoScaling\PutScalingPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<TargetTrackingMetricDimension> $Dimensions
- * @property string $MetricName
- * @property string $Namespace
+ * @property list<TargetTrackingMetricDimension>|null $Dimensions
+ * @property string|null $MetricName
+ * @property string|null $Namespace
  */
 class TargetTrackingMetric extends Shape
 {
     /**
      * @param array{
-     *     Dimensions?: list<TargetTrackingMetricDimension>,
-     *     MetricName?: string,
-     *     Namespace?: string
+     *     Dimensions?: list<TargetTrackingMetricDimension>|null,
+     *     MetricName?: string|null,
+     *     Namespace?: string|null
      * } $args
      */
     public function __construct(array $args = [])

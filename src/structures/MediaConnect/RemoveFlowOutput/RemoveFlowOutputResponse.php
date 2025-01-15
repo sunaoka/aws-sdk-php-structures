@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MediaConnect\RemoveFlowOutput;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FlowArn
- * @property string $OutputArn
+ * @property string|null $FlowArn
+ * @property string|null $OutputArn
  */
 class RemoveFlowOutputResponse extends Response
 {

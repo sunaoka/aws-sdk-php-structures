@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SsmSap\ListApplications\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property 'SUCCESS'|'REGISTRATION_FAILED'|'REFRESH_FAILED'|'REGISTERING'|'DELETING' $DiscoveryStatus
- * @property 'HANA'|'SAP_ABAP' $Type
- * @property string $Arn
- * @property array<string, string> $Tags
+ * @property string|null $Id
+ * @property 'SUCCESS'|'REGISTRATION_FAILED'|'REFRESH_FAILED'|'REGISTERING'|'DELETING'|null $DiscoveryStatus
+ * @property 'HANA'|'SAP_ABAP'|null $Type
+ * @property string|null $Arn
+ * @property array<string, string>|null $Tags
  */
 class ApplicationSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     DiscoveryStatus?: 'SUCCESS'|'REGISTRATION_FAILED'|'REFRESH_FAILED'|'REGISTERING'|'DELETING',
-     *     Type?: 'HANA'|'SAP_ABAP',
-     *     Arn?: string,
-     *     Tags?: array<string, string>
+     *     Id?: string|null,
+     *     DiscoveryStatus?: 'SUCCESS'|'REGISTRATION_FAILED'|'REFRESH_FAILED'|'REGISTERING'|'DELETING'|null,
+     *     Type?: 'HANA'|'SAP_ABAP'|null,
+     *     Arn?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

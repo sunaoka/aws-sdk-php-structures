@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property WorkflowExecution $workflowExecution
  * @property WorkflowType $workflowType
- * @property string $result
+ * @property string|null $result
  * @property int $initiatedEventId
  * @property int $startedEventId
  */
@@ -17,7 +17,7 @@ class ChildWorkflowExecutionCompletedEventAttributes extends Shape
      * @param array{
      *     workflowExecution: WorkflowExecution,
      *     workflowType: WorkflowType,
-     *     result?: string,
+     *     result?: string|null,
      *     initiatedEventId: int,
      *     startedEventId: int
      * } $args

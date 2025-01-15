@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVerifiedAccessEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NetworkInterfaceId
- * @property 'http'|'https'|'tcp' $Protocol
- * @property int<1, 65535> $Port
- * @property list<VerifiedAccessEndpointPortRange> $PortRanges
+ * @property string|null $NetworkInterfaceId
+ * @property 'http'|'https'|'tcp'|null $Protocol
+ * @property int<1, 65535>|null $Port
+ * @property list<VerifiedAccessEndpointPortRange>|null $PortRanges
  */
 class VerifiedAccessEndpointEniOptions extends Shape
 {
     /**
      * @param array{
-     *     NetworkInterfaceId?: string,
-     *     Protocol?: 'http'|'https'|'tcp',
-     *     Port?: int<1, 65535>,
-     *     PortRanges?: list<VerifiedAccessEndpointPortRange>
+     *     NetworkInterfaceId?: string|null,
+     *     Protocol?: 'http'|'https'|'tcp'|null,
+     *     Port?: int<1, 65535>|null,
+     *     PortRanges?: list<VerifiedAccessEndpointPortRange>|null
      * } $args
      */
     public function __construct(array $args = [])

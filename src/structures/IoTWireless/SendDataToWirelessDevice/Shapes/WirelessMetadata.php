@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTWireless\SendDataToWirelessDevice\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LoRaWANSendDataToDevice $LoRaWAN
- * @property SidewalkSendDataToDevice $Sidewalk
+ * @property LoRaWANSendDataToDevice|null $LoRaWAN
+ * @property SidewalkSendDataToDevice|null $Sidewalk
  */
 class WirelessMetadata extends Shape
 {
     /**
      * @param array{
-     *     LoRaWAN?: LoRaWANSendDataToDevice,
-     *     Sidewalk?: SidewalkSendDataToDevice
+     *     LoRaWAN?: LoRaWANSendDataToDevice|null,
+     *     Sidewalk?: SidewalkSendDataToDevice|null
      * } $args
      */
     public function __construct(array $args = [])

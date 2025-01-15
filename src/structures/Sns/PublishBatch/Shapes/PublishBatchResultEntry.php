@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Sns\PublishBatch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $MessageId
- * @property string $SequenceNumber
+ * @property string|null $Id
+ * @property string|null $MessageId
+ * @property string|null $SequenceNumber
  */
 class PublishBatchResultEntry extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     MessageId?: string,
-     *     SequenceNumber?: string
+     *     Id?: string|null,
+     *     MessageId?: string|null,
+     *     SequenceNumber?: string|null
      * } $args
      */
     public function __construct(array $args = [])

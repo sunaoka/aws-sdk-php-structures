@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'BENCHMARK' $StepType
  * @property string $JobName
  * @property 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'DELETED' $Status
- * @property RecommendationJobInferenceBenchmark $InferenceBenchmark
+ * @property RecommendationJobInferenceBenchmark|null $InferenceBenchmark
  */
 class InferenceRecommendationsJobStep extends Shape
 {
@@ -17,7 +17,7 @@ class InferenceRecommendationsJobStep extends Shape
      *     StepType: 'BENCHMARK',
      *     JobName: string,
      *     Status: 'PENDING'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED'|'DELETING'|'DELETED',
-     *     InferenceBenchmark?: RecommendationJobInferenceBenchmark
+     *     InferenceBenchmark?: RecommendationJobInferenceBenchmark|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Proton\CreateEnvironmentTemplateVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3ObjectSource $s3
+ * @property S3ObjectSource|null $s3
  */
 class TemplateVersionSourceInput extends Shape
 {
     /**
-     * @param array{s3?: S3ObjectSource} $args
+     * @param array{s3?: S3ObjectSource|null} $args
      */
     public function __construct(array $args = [])
     {

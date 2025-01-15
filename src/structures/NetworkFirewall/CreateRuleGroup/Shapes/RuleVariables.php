@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\CreateRuleGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, IPSet> $IPSets
- * @property array<string, PortSet> $PortSets
+ * @property array<string, IPSet>|null $IPSets
+ * @property array<string, PortSet>|null $PortSets
  */
 class RuleVariables extends Shape
 {
     /**
      * @param array{
-     *     IPSets?: array<string, IPSet>,
-     *     PortSets?: array<string, PortSet>
+     *     IPSets?: array<string, IPSet>|null,
+     *     PortSets?: array<string, PortSet>|null
      * } $args
      */
     public function __construct(array $args = [])

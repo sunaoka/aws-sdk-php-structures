@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $approvalRuleTemplateName
  * @property string $approvalRuleTemplateContent
- * @property string $approvalRuleTemplateDescription
+ * @property string|null $approvalRuleTemplateDescription
  */
 class CreateApprovalRuleTemplateRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateApprovalRuleTemplateRequest extends Request
      * @param array{
      *     approvalRuleTemplateName: string,
      *     approvalRuleTemplateContent: string,
-     *     approvalRuleTemplateDescription?: string
+     *     approvalRuleTemplateDescription?: string|null
      * } $args
      */
     public function __construct(array $args)

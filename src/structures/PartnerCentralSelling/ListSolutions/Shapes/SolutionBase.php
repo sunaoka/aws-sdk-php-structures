@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListSolutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  * @property string $Catalog
  * @property string $Category
  * @property \Aws\Api\DateTimeResult $CreatedDate
@@ -17,7 +17,7 @@ class SolutionBase extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
+     *     Arn?: string|null,
      *     Catalog: string,
      *     Category: string,
      *     CreatedDate: \Aws\Api\DateTimeResult,

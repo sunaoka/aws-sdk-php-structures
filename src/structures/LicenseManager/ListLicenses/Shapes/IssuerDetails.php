@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListLicenses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $SignKey
- * @property string $KeyFingerprint
+ * @property string|null $Name
+ * @property string|null $SignKey
+ * @property string|null $KeyFingerprint
  */
 class IssuerDetails extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     SignKey?: string,
-     *     KeyFingerprint?: string
+     *     Name?: string|null,
+     *     SignKey?: string|null,
+     *     KeyFingerprint?: string|null
      * } $args
      */
     public function __construct(array $args = [])

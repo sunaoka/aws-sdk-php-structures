@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\Rerank\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RerankDocument $document
+ * @property RerankDocument|null $document
  * @property int<0, 1000> $index
  * @property float $relevanceScore
  */
@@ -13,7 +13,7 @@ class RerankResult extends Shape
 {
     /**
      * @param array{
-     *     document?: RerankDocument,
+     *     document?: RerankDocument|null,
      *     index: int<0, 1000>,
      *     relevanceScore: float
      * } $args

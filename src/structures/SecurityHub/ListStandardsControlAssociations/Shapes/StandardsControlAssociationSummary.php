@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SecurityControlId
  * @property string $SecurityControlArn
  * @property 'ENABLED'|'DISABLED' $AssociationStatus
- * @property list<string> $RelatedRequirements
- * @property \Aws\Api\DateTimeResult $UpdatedAt
- * @property string $UpdatedReason
- * @property string $StandardsControlTitle
- * @property string $StandardsControlDescription
+ * @property list<string>|null $RelatedRequirements
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property string|null $UpdatedReason
+ * @property string|null $StandardsControlTitle
+ * @property string|null $StandardsControlDescription
  */
 class StandardsControlAssociationSummary extends Shape
 {
@@ -23,11 +23,11 @@ class StandardsControlAssociationSummary extends Shape
      *     SecurityControlId: string,
      *     SecurityControlArn: string,
      *     AssociationStatus: 'ENABLED'|'DISABLED',
-     *     RelatedRequirements?: list<string>,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult,
-     *     UpdatedReason?: string,
-     *     StandardsControlTitle?: string,
-     *     StandardsControlDescription?: string
+     *     RelatedRequirements?: list<string>|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedReason?: string|null,
+     *     StandardsControlTitle?: string|null,
+     *     StandardsControlDescription?: string|null
      * } $args
      */
     public function __construct(array $args)

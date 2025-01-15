@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkMail\AssumeImpersonationRole;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Token
- * @property int $ExpiresIn
+ * @property string|null $Token
+ * @property int|null $ExpiresIn
  */
 class AssumeImpersonationRoleResponse extends Response
 {

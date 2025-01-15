@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $S3BucketName
  * @property string $IamRoleArn
  * @property string $KmsKeyId
- * @property string $S3Prefix
- * @property list<string> $ExportOnly
+ * @property string|null $S3Prefix
+ * @property list<string>|null $ExportOnly
  */
 class StartExportTaskRequest extends Request
 {
@@ -22,8 +22,8 @@ class StartExportTaskRequest extends Request
      *     S3BucketName: string,
      *     IamRoleArn: string,
      *     KmsKeyId: string,
-     *     S3Prefix?: string,
-     *     ExportOnly?: list<string>
+     *     S3Prefix?: string|null,
+     *     ExportOnly?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

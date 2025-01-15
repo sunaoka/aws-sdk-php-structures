@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\NetworkManager\DisassociateTransitGatewayConnec
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TransitGatewayConnectPeerAssociation $TransitGatewayConnectPeerAssociation
+ * @property Shapes\TransitGatewayConnectPeerAssociation|null $TransitGatewayConnectPeerAssociation
  */
 class DisassociateTransitGatewayConnectPeerResponse extends Response
 {

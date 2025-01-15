@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListDistributions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CNAME
- * @property 'APPROVED'|'SUSPENDED'|'PENDING' $ICPRecordalStatus
+ * @property string|null $CNAME
+ * @property 'APPROVED'|'SUSPENDED'|'PENDING'|null $ICPRecordalStatus
  */
 class AliasICPRecordal extends Shape
 {
     /**
      * @param array{
-     *     CNAME?: string,
-     *     ICPRecordalStatus?: 'APPROVED'|'SUSPENDED'|'PENDING'
+     *     CNAME?: string|null,
+     *     ICPRecordalStatus?: 'APPROVED'|'SUSPENDED'|'PENDING'|null
      * } $args
      */
     public function __construct(array $args = [])

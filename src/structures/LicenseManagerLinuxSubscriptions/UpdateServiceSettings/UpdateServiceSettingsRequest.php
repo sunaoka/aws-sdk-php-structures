@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LicenseManagerLinuxSubscriptions\UpdateServiceS
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $AllowUpdate
+ * @property bool|null $AllowUpdate
  * @property 'Enabled'|'Disabled' $LinuxSubscriptionsDiscovery
  * @property Shapes\LinuxSubscriptionsDiscoverySettings $LinuxSubscriptionsDiscoverySettings
  */
@@ -13,7 +13,7 @@ class UpdateServiceSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     AllowUpdate?: bool,
+     *     AllowUpdate?: bool|null,
      *     LinuxSubscriptionsDiscovery: 'Enabled'|'Disabled',
      *     LinuxSubscriptionsDiscoverySettings: Shapes\LinuxSubscriptionsDiscoverySettings
      * } $args

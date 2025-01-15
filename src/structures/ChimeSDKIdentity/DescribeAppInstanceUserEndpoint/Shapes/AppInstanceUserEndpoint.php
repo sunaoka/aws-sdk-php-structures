@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\DescribeAppInstanceUserEndpoin
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AppInstanceUserArn
- * @property string $EndpointId
- * @property string $Name
- * @property 'APNS'|'APNS_SANDBOX'|'GCM' $Type
- * @property string $ResourceArn
- * @property EndpointAttributes $EndpointAttributes
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimestamp
- * @property 'ALL'|'NONE' $AllowMessages
- * @property EndpointState $EndpointState
+ * @property string|null $AppInstanceUserArn
+ * @property string|null $EndpointId
+ * @property string|null $Name
+ * @property 'APNS'|'APNS_SANDBOX'|'GCM'|null $Type
+ * @property string|null $ResourceArn
+ * @property EndpointAttributes|null $EndpointAttributes
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimestamp
+ * @property 'ALL'|'NONE'|null $AllowMessages
+ * @property EndpointState|null $EndpointState
  */
 class AppInstanceUserEndpoint extends Shape
 {
     /**
      * @param array{
-     *     AppInstanceUserArn?: string,
-     *     EndpointId?: string,
-     *     Name?: string,
-     *     Type?: 'APNS'|'APNS_SANDBOX'|'GCM',
-     *     ResourceArn?: string,
-     *     EndpointAttributes?: EndpointAttributes,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     AllowMessages?: 'ALL'|'NONE',
-     *     EndpointState?: EndpointState
+     *     AppInstanceUserArn?: string|null,
+     *     EndpointId?: string|null,
+     *     Name?: string|null,
+     *     Type?: 'APNS'|'APNS_SANDBOX'|'GCM'|null,
+     *     ResourceArn?: string|null,
+     *     EndpointAttributes?: EndpointAttributes|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     AllowMessages?: 'ALL'|'NONE'|null,
+     *     EndpointState?: EndpointState|null
      * } $args
      */
     public function __construct(array $args = [])

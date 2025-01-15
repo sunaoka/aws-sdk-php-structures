@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PinpointEmail\CreateEmailIdentity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $SigningEnabled
- * @property 'PENDING'|'SUCCESS'|'FAILED'|'TEMPORARY_FAILURE'|'NOT_STARTED' $Status
- * @property list<string> $Tokens
+ * @property bool|null $SigningEnabled
+ * @property 'PENDING'|'SUCCESS'|'FAILED'|'TEMPORARY_FAILURE'|'NOT_STARTED'|null $Status
+ * @property list<string>|null $Tokens
  */
 class DkimAttributes extends Shape
 {
     /**
      * @param array{
-     *     SigningEnabled?: bool,
-     *     Status?: 'PENDING'|'SUCCESS'|'FAILED'|'TEMPORARY_FAILURE'|'NOT_STARTED',
-     *     Tokens?: list<string>
+     *     SigningEnabled?: bool|null,
+     *     Status?: 'PENDING'|'SUCCESS'|'FAILED'|'TEMPORARY_FAILURE'|'NOT_STARTED'|null,
+     *     Tokens?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

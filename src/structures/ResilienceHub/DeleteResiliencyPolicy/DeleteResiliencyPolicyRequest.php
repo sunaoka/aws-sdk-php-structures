@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\DeleteResiliencyPolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $policyArn
  */
 class DeleteResiliencyPolicyRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     policyArn: string
      * } $args
      */

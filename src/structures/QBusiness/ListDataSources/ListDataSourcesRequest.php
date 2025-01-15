@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $applicationId
  * @property string $indexId
- * @property string $nextToken
- * @property int<1, 10> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 10>|null $maxResults
  */
 class ListDataSourcesRequest extends Request
 {
@@ -16,8 +16,8 @@ class ListDataSourcesRequest extends Request
      * @param array{
      *     applicationId: string,
      *     indexId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 10>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 10>|null
      * } $args
      */
     public function __construct(array $args)

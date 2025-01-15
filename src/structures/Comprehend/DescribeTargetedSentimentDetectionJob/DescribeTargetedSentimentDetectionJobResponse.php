@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Comprehend\DescribeTargetedSentimentDetectionJo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TargetedSentimentDetectionJobProperties $TargetedSentimentDetectionJobProperties
+ * @property Shapes\TargetedSentimentDetectionJobProperties|null $TargetedSentimentDetectionJobProperties
  */
 class DescribeTargetedSentimentDetectionJobResponse extends Response
 {

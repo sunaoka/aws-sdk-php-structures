@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\CreateDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $inProgressTimeoutInMinutes
+ * @property int|null $inProgressTimeoutInMinutes
  */
 class IoTJobTimeoutConfig extends Shape
 {
     /**
-     * @param array{inProgressTimeoutInMinutes?: int} $args
+     * @param array{inProgressTimeoutInMinutes?: int|null} $args
      */
     public function __construct(array $args = [])
     {

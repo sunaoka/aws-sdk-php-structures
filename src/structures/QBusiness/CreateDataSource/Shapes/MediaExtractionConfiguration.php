@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QBusiness\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ImageExtractionConfiguration $imageExtractionConfiguration
+ * @property ImageExtractionConfiguration|null $imageExtractionConfiguration
  */
 class MediaExtractionConfiguration extends Shape
 {
     /**
-     * @param array{imageExtractionConfiguration?: ImageExtractionConfiguration} $args
+     * @param array{imageExtractionConfiguration?: ImageExtractionConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

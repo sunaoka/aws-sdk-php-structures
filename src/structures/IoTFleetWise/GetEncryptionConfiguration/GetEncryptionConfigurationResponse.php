@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\GetEncryptionConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $kmsKeyId
+ * @property string|null $kmsKeyId
  * @property 'PENDING'|'SUCCESS'|'FAILURE' $encryptionStatus
  * @property 'KMS_BASED_ENCRYPTION'|'FLEETWISE_DEFAULT_ENCRYPTION' $encryptionType
- * @property string $errorMessage
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastModificationTime
+ * @property string|null $errorMessage
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastModificationTime
  */
 class GetEncryptionConfigurationResponse extends Response
 {

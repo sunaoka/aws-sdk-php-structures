@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property string $PreviousContactId
- * @property string $ContactFlowId
- * @property array<string, string> $Attributes
+ * @property string|null $PreviousContactId
+ * @property string|null $ContactFlowId
+ * @property array<string, string>|null $Attributes
  * @property string $Name
- * @property array<string, Shapes\Reference> $References
- * @property string $Description
- * @property string $ClientToken
- * @property \Aws\Api\DateTimeResult $ScheduledTime
- * @property string $TaskTemplateId
- * @property string $QuickConnectId
- * @property string $RelatedContactId
- * @property array<string, Shapes\SegmentAttributeValue> $SegmentAttributes
+ * @property array<string, Shapes\Reference>|null $References
+ * @property string|null $Description
+ * @property string|null $ClientToken
+ * @property \Aws\Api\DateTimeResult|null $ScheduledTime
+ * @property string|null $TaskTemplateId
+ * @property string|null $QuickConnectId
+ * @property string|null $RelatedContactId
+ * @property array<string, Shapes\SegmentAttributeValue>|null $SegmentAttributes
  */
 class StartTaskContactRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     PreviousContactId?: string,
-     *     ContactFlowId?: string,
-     *     Attributes?: array<string, string>,
+     *     PreviousContactId?: string|null,
+     *     ContactFlowId?: string|null,
+     *     Attributes?: array<string, string>|null,
      *     Name: string,
-     *     References?: array<string, Shapes\Reference>,
-     *     Description?: string,
-     *     ClientToken?: string,
-     *     ScheduledTime?: \Aws\Api\DateTimeResult,
-     *     TaskTemplateId?: string,
-     *     QuickConnectId?: string,
-     *     RelatedContactId?: string,
-     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>
+     *     References?: array<string, Shapes\Reference>|null,
+     *     Description?: string|null,
+     *     ClientToken?: string|null,
+     *     ScheduledTime?: \Aws\Api\DateTimeResult|null,
+     *     TaskTemplateId?: string|null,
+     *     QuickConnectId?: string|null,
+     *     RelatedContactId?: string|null,
+     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null
      * } $args
      */
     public function __construct(array $args)

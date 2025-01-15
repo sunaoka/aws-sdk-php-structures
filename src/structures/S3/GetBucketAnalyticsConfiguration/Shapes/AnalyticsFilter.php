@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\S3\GetBucketAnalyticsConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Prefix
- * @property Tag $Tag
- * @property AnalyticsAndOperator $And
+ * @property string|null $Prefix
+ * @property Tag|null $Tag
+ * @property AnalyticsAndOperator|null $And
  */
 class AnalyticsFilter extends Shape
 {
     /**
      * @param array{
-     *     Prefix?: string,
-     *     Tag?: Tag,
-     *     And?: AnalyticsAndOperator
+     *     Prefix?: string|null,
+     *     Tag?: Tag|null,
+     *     And?: AnalyticsAndOperator|null
      * } $args
      */
     public function __construct(array $args = [])

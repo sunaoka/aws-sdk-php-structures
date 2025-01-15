@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ForecastService\CreateForecast\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataSource $DataSource
- * @property Schema $Schema
- * @property string $Format
+ * @property DataSource|null $DataSource
+ * @property Schema|null $Schema
+ * @property string|null $Format
  */
 class TimeSeriesIdentifiers extends Shape
 {
     /**
      * @param array{
-     *     DataSource?: DataSource,
-     *     Schema?: Schema,
-     *     Format?: string
+     *     DataSource?: DataSource|null,
+     *     Schema?: Schema|null,
+     *     Format?: string|null
      * } $args
      */
     public function __construct(array $args = [])

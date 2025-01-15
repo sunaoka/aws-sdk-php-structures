@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Omics\CreateRunGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $name
- * @property int<1, 100000> $maxCpus
- * @property int<1, 100000> $maxRuns
- * @property int<1, 100000> $maxDuration
- * @property array<string, string> $tags
+ * @property string|null $name
+ * @property int<1, 100000>|null $maxCpus
+ * @property int<1, 100000>|null $maxRuns
+ * @property int<1, 100000>|null $maxDuration
+ * @property array<string, string>|null $tags
  * @property string $requestId
- * @property int<1, 100000> $maxGpus
+ * @property int<1, 100000>|null $maxGpus
  */
 class CreateRunGroupRequest extends Request
 {
     /**
      * @param array{
-     *     name?: string,
-     *     maxCpus?: int<1, 100000>,
-     *     maxRuns?: int<1, 100000>,
-     *     maxDuration?: int<1, 100000>,
-     *     tags?: array<string, string>,
+     *     name?: string|null,
+     *     maxCpus?: int<1, 100000>|null,
+     *     maxRuns?: int<1, 100000>|null,
+     *     maxDuration?: int<1, 100000>|null,
+     *     tags?: array<string, string>|null,
      *     requestId: string,
-     *     maxGpus?: int<1, 100000>
+     *     maxGpus?: int<1, 100000>|null
      * } $args
      */
     public function __construct(array $args)

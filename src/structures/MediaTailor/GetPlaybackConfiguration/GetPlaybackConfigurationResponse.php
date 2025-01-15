@@ -5,26 +5,26 @@ namespace Sunaoka\Aws\Structures\MediaTailor\GetPlaybackConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AdDecisionServerUrl
- * @property Shapes\AvailSuppression $AvailSuppression
- * @property Shapes\Bumper $Bumper
- * @property Shapes\CdnConfiguration $CdnConfiguration
- * @property array<string, array<string, string>> $ConfigurationAliases
- * @property Shapes\DashConfiguration $DashConfiguration
- * @property Shapes\HlsConfiguration $HlsConfiguration
- * @property 'STITCHED_ONLY'|'PLAYER_SELECT' $InsertionMode
- * @property Shapes\LivePreRollConfiguration $LivePreRollConfiguration
- * @property Shapes\LogConfiguration $LogConfiguration
- * @property Shapes\ManifestProcessingRules $ManifestProcessingRules
- * @property string $Name
- * @property int<1, max> $PersonalizationThresholdSeconds
- * @property string $PlaybackConfigurationArn
- * @property string $PlaybackEndpointPrefix
- * @property string $SessionInitializationEndpointPrefix
- * @property string $SlateAdUrl
- * @property array<string, string> $Tags
- * @property string $TranscodeProfileName
- * @property string $VideoContentSourceUrl
+ * @property string|null $AdDecisionServerUrl
+ * @property Shapes\AvailSuppression|null $AvailSuppression
+ * @property Shapes\Bumper|null $Bumper
+ * @property Shapes\CdnConfiguration|null $CdnConfiguration
+ * @property array<string, array<string, string>>|null $ConfigurationAliases
+ * @property Shapes\DashConfiguration|null $DashConfiguration
+ * @property Shapes\HlsConfiguration|null $HlsConfiguration
+ * @property 'STITCHED_ONLY'|'PLAYER_SELECT'|null $InsertionMode
+ * @property Shapes\LivePreRollConfiguration|null $LivePreRollConfiguration
+ * @property Shapes\LogConfiguration|null $LogConfiguration
+ * @property Shapes\ManifestProcessingRules|null $ManifestProcessingRules
+ * @property string|null $Name
+ * @property int<1, max>|null $PersonalizationThresholdSeconds
+ * @property string|null $PlaybackConfigurationArn
+ * @property string|null $PlaybackEndpointPrefix
+ * @property string|null $SessionInitializationEndpointPrefix
+ * @property string|null $SlateAdUrl
+ * @property array<string, string>|null $Tags
+ * @property string|null $TranscodeProfileName
+ * @property string|null $VideoContentSourceUrl
  */
 class GetPlaybackConfigurationResponse extends Response
 {

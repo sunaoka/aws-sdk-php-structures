@@ -6,52 +6,52 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AssociationId
- * @property array<string, list<string>> $Parameters
- * @property string $DocumentVersion
- * @property string $ScheduleExpression
- * @property Shapes\InstanceAssociationOutputLocation $OutputLocation
- * @property string $Name
- * @property list<Shapes\Target> $Targets
- * @property string $AssociationName
- * @property string $AssociationVersion
- * @property string $AutomationTargetParameterName
- * @property string $MaxErrors
- * @property string $MaxConcurrency
- * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED' $ComplianceSeverity
- * @property 'AUTO'|'MANUAL' $SyncCompliance
- * @property bool $ApplyOnlyAtCronInterval
- * @property list<string> $CalendarNames
- * @property list<Shapes\TargetLocation> $TargetLocations
- * @property int<1, 6> $ScheduleOffset
- * @property int<1, 24> $Duration
- * @property list<array<string, list<string>>> $TargetMaps
- * @property Shapes\AlarmConfiguration $AlarmConfiguration
+ * @property array<string, list<string>>|null $Parameters
+ * @property string|null $DocumentVersion
+ * @property string|null $ScheduleExpression
+ * @property Shapes\InstanceAssociationOutputLocation|null $OutputLocation
+ * @property string|null $Name
+ * @property list<Shapes\Target>|null $Targets
+ * @property string|null $AssociationName
+ * @property string|null $AssociationVersion
+ * @property string|null $AutomationTargetParameterName
+ * @property string|null $MaxErrors
+ * @property string|null $MaxConcurrency
+ * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED'|null $ComplianceSeverity
+ * @property 'AUTO'|'MANUAL'|null $SyncCompliance
+ * @property bool|null $ApplyOnlyAtCronInterval
+ * @property list<string>|null $CalendarNames
+ * @property list<Shapes\TargetLocation>|null $TargetLocations
+ * @property int<1, 6>|null $ScheduleOffset
+ * @property int<1, 24>|null $Duration
+ * @property list<array<string, list<string>>>|null $TargetMaps
+ * @property Shapes\AlarmConfiguration|null $AlarmConfiguration
  */
 class UpdateAssociationRequest extends Request
 {
     /**
      * @param array{
      *     AssociationId: string,
-     *     Parameters?: array<string, list<string>>,
-     *     DocumentVersion?: string,
-     *     ScheduleExpression?: string,
-     *     OutputLocation?: Shapes\InstanceAssociationOutputLocation,
-     *     Name?: string,
-     *     Targets?: list<Shapes\Target>,
-     *     AssociationName?: string,
-     *     AssociationVersion?: string,
-     *     AutomationTargetParameterName?: string,
-     *     MaxErrors?: string,
-     *     MaxConcurrency?: string,
-     *     ComplianceSeverity?: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED',
-     *     SyncCompliance?: 'AUTO'|'MANUAL',
-     *     ApplyOnlyAtCronInterval?: bool,
-     *     CalendarNames?: list<string>,
-     *     TargetLocations?: list<Shapes\TargetLocation>,
-     *     ScheduleOffset?: int<1, 6>,
-     *     Duration?: int<1, 24>,
-     *     TargetMaps?: list<array<string, list<string>>>,
-     *     AlarmConfiguration?: Shapes\AlarmConfiguration
+     *     Parameters?: array<string, list<string>>|null,
+     *     DocumentVersion?: string|null,
+     *     ScheduleExpression?: string|null,
+     *     OutputLocation?: Shapes\InstanceAssociationOutputLocation|null,
+     *     Name?: string|null,
+     *     Targets?: list<Shapes\Target>|null,
+     *     AssociationName?: string|null,
+     *     AssociationVersion?: string|null,
+     *     AutomationTargetParameterName?: string|null,
+     *     MaxErrors?: string|null,
+     *     MaxConcurrency?: string|null,
+     *     ComplianceSeverity?: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED'|null,
+     *     SyncCompliance?: 'AUTO'|'MANUAL'|null,
+     *     ApplyOnlyAtCronInterval?: bool|null,
+     *     CalendarNames?: list<string>|null,
+     *     TargetLocations?: list<Shapes\TargetLocation>|null,
+     *     ScheduleOffset?: int<1, 6>|null,
+     *     Duration?: int<1, 24>|null,
+     *     TargetMaps?: list<array<string, list<string>>>|null,
+     *     AlarmConfiguration?: Shapes\AlarmConfiguration|null
      * } $args
      */
     public function __construct(array $args)

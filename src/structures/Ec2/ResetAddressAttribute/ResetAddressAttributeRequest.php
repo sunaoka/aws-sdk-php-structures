@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AllocationId
  * @property 'domain-name' $Attribute
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class ResetAddressAttributeRequest extends Request
 {
@@ -15,7 +15,7 @@ class ResetAddressAttributeRequest extends Request
      * @param array{
      *     AllocationId: string,
      *     Attribute: 'domain-name',
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

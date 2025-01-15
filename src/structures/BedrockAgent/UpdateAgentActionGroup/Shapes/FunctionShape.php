@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateAgentActionGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $name
- * @property array<string, ParameterDetail> $parameters
- * @property 'ENABLED'|'DISABLED' $requireConfirmation
+ * @property array<string, ParameterDetail>|null $parameters
+ * @property 'ENABLED'|'DISABLED'|null $requireConfirmation
  */
 class FunctionShape extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     name: string,
-     *     parameters?: array<string, ParameterDetail>,
-     *     requireConfirmation?: 'ENABLED'|'DISABLED'
+     *     parameters?: array<string, ParameterDetail>|null,
+     *     requireConfirmation?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

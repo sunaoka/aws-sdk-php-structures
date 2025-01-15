@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NamePrefix
- * @property string $NextToken
- * @property int<1, 100> $Limit
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $Limit
  */
 class ListPartnerEventSourcesRequest extends Request
 {
     /**
      * @param array{
      *     NamePrefix: string,
-     *     NextToken?: string,
-     *     Limit?: int<1, 100>
+     *     NextToken?: string|null,
+     *     Limit?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

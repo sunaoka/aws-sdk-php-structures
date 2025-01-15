@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ServiceCode
- * @property list<string> $AttributeNames
+ * @property list<string>|null $AttributeNames
  */
 class Service extends Shape
 {
     /**
      * @param array{
      *     ServiceCode: string,
-     *     AttributeNames?: list<string>
+     *     AttributeNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

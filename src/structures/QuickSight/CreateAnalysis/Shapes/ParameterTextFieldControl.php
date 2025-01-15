@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ParameterControlId
  * @property string $Title
  * @property string $SourceParameterName
- * @property TextFieldControlDisplayOptions $DisplayOptions
+ * @property TextFieldControlDisplayOptions|null $DisplayOptions
  */
 class ParameterTextFieldControl extends Shape
 {
@@ -17,7 +17,7 @@ class ParameterTextFieldControl extends Shape
      *     ParameterControlId: string,
      *     Title: string,
      *     SourceParameterName: string,
-     *     DisplayOptions?: TextFieldControlDisplayOptions
+     *     DisplayOptions?: TextFieldControlDisplayOptions|null
      * } $args
      */
     public function __construct(array $args)

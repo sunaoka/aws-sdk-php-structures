@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryControlConfig\ListAssociatedRout
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $HealthCheckIds
- * @property string $NextToken
+ * @property list<string>|null $HealthCheckIds
+ * @property string|null $NextToken
  */
 class ListAssociatedRoute53HealthChecksResponse extends Response
 {

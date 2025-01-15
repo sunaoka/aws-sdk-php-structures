@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $containerName
  * @property 'ExecuteCommandAgent' $managedAgentName
  * @property string $status
- * @property string $reason
+ * @property string|null $reason
  */
 class ManagedAgentStateChange extends Shape
 {
@@ -17,7 +17,7 @@ class ManagedAgentStateChange extends Shape
      *     containerName: string,
      *     managedAgentName: 'ExecuteCommandAgent',
      *     status: string,
-     *     reason?: string
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args)

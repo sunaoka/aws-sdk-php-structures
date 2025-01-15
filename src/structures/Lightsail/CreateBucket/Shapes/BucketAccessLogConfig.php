@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property string $destination
- * @property string $prefix
+ * @property string|null $destination
+ * @property string|null $prefix
  */
 class BucketAccessLogConfig extends Shape
 {
     /**
      * @param array{
      *     enabled: bool,
-     *     destination?: string,
-     *     prefix?: string
+     *     destination?: string|null,
+     *     prefix?: string|null
      * } $args
      */
     public function __construct(array $args)

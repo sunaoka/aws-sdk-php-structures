@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\StorageGateway\ListTapes;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\TapeInfo> $TapeInfos
- * @property string $Marker
+ * @property list<Shapes\TapeInfo>|null $TapeInfos
+ * @property string|null $Marker
  */
 class ListTapesResponse extends Response
 {

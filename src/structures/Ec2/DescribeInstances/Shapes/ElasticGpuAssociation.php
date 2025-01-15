@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ElasticGpuId
- * @property string $ElasticGpuAssociationId
- * @property string $ElasticGpuAssociationState
- * @property string $ElasticGpuAssociationTime
+ * @property string|null $ElasticGpuId
+ * @property string|null $ElasticGpuAssociationId
+ * @property string|null $ElasticGpuAssociationState
+ * @property string|null $ElasticGpuAssociationTime
  */
 class ElasticGpuAssociation extends Shape
 {
     /**
      * @param array{
-     *     ElasticGpuId?: string,
-     *     ElasticGpuAssociationId?: string,
-     *     ElasticGpuAssociationState?: string,
-     *     ElasticGpuAssociationTime?: string
+     *     ElasticGpuId?: string|null,
+     *     ElasticGpuAssociationId?: string|null,
+     *     ElasticGpuAssociationState?: string|null,
+     *     ElasticGpuAssociationTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

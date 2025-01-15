@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\CreatePackage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3BucketName
- * @property string $S3Key
+ * @property string|null $S3BucketName
+ * @property string|null $S3Key
  */
 class PackageSource extends Shape
 {
     /**
      * @param array{
-     *     S3BucketName?: string,
-     *     S3Key?: string
+     *     S3BucketName?: string|null,
+     *     S3Key?: string|null
      * } $args
      */
     public function __construct(array $args = [])

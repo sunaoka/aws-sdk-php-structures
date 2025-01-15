@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppRegistry\GetAssociatedResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResourceGroup $resourceGroup
+ * @property ResourceGroup|null $resourceGroup
  */
 class ResourceIntegrations extends Shape
 {
     /**
-     * @param array{resourceGroup?: ResourceGroup} $args
+     * @param array{resourceGroup?: ResourceGroup|null} $args
      */
     public function __construct(array $args = [])
     {

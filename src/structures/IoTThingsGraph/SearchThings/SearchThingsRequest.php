@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $entityId
- * @property string $nextToken
- * @property int<1, 250> $maxResults
- * @property int $namespaceVersion
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
+ * @property int|null $namespaceVersion
  */
 class SearchThingsRequest extends Request
 {
     /**
      * @param array{
      *     entityId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>,
-     *     namespaceVersion?: int
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null,
+     *     namespaceVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

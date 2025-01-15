@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\LexRuntimeService\PutSession;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $contentType
- * @property string $intentName
- * @property string $slots
- * @property string $sessionAttributes
- * @property string $message
- * @property string $encodedMessage
- * @property 'PlainText'|'CustomPayload'|'SSML'|'Composite' $messageFormat
- * @property 'ElicitIntent'|'ConfirmIntent'|'ElicitSlot'|'Fulfilled'|'ReadyForFulfillment'|'Failed' $dialogState
- * @property string $slotToElicit
- * @property \Psr\Http\Message\StreamInterface $audioStream
- * @property string $sessionId
- * @property string $activeContexts
+ * @property string|null $contentType
+ * @property string|null $intentName
+ * @property string|null $slots
+ * @property string|null $sessionAttributes
+ * @property string|null $message
+ * @property string|null $encodedMessage
+ * @property 'PlainText'|'CustomPayload'|'SSML'|'Composite'|null $messageFormat
+ * @property 'ElicitIntent'|'ConfirmIntent'|'ElicitSlot'|'Fulfilled'|'ReadyForFulfillment'|'Failed'|null $dialogState
+ * @property string|null $slotToElicit
+ * @property \Psr\Http\Message\StreamInterface|null $audioStream
+ * @property string|null $sessionId
+ * @property string|null $activeContexts
  */
 class PutSessionResponse extends Response
 {

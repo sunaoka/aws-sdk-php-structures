@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeAccountModifications\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PENDING'|'COMPLETED'|'FAILED' $ModificationState
- * @property 'ENABLED'|'DISABLED' $DedicatedTenancySupport
- * @property string $DedicatedTenancyManagementCidrRange
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property string $ErrorCode
- * @property string $ErrorMessage
+ * @property 'PENDING'|'COMPLETED'|'FAILED'|null $ModificationState
+ * @property 'ENABLED'|'DISABLED'|null $DedicatedTenancySupport
+ * @property string|null $DedicatedTenancyManagementCidrRange
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property string|null $ErrorCode
+ * @property string|null $ErrorMessage
  */
 class AccountModification extends Shape
 {
     /**
      * @param array{
-     *     ModificationState?: 'PENDING'|'COMPLETED'|'FAILED',
-     *     DedicatedTenancySupport?: 'ENABLED'|'DISABLED',
-     *     DedicatedTenancyManagementCidrRange?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     ErrorCode?: string,
-     *     ErrorMessage?: string
+     *     ModificationState?: 'PENDING'|'COMPLETED'|'FAILED'|null,
+     *     DedicatedTenancySupport?: 'ENABLED'|'DISABLED'|null,
+     *     DedicatedTenancyManagementCidrRange?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     ErrorCode?: string|null,
+     *     ErrorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

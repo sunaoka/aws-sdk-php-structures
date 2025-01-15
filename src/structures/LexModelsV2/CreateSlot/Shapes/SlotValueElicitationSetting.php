@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\CreateSlot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SlotDefaultValueSpecification $defaultValueSpecification
+ * @property SlotDefaultValueSpecification|null $defaultValueSpecification
  * @property 'Required'|'Optional' $slotConstraint
- * @property PromptSpecification $promptSpecification
- * @property list<SampleUtterance> $sampleUtterances
- * @property WaitAndContinueSpecification $waitAndContinueSpecification
- * @property SlotCaptureSetting $slotCaptureSetting
- * @property SlotResolutionSetting $slotResolutionSetting
+ * @property PromptSpecification|null $promptSpecification
+ * @property list<SampleUtterance>|null $sampleUtterances
+ * @property WaitAndContinueSpecification|null $waitAndContinueSpecification
+ * @property SlotCaptureSetting|null $slotCaptureSetting
+ * @property SlotResolutionSetting|null $slotResolutionSetting
  */
 class SlotValueElicitationSetting extends Shape
 {
     /**
      * @param array{
-     *     defaultValueSpecification?: SlotDefaultValueSpecification,
+     *     defaultValueSpecification?: SlotDefaultValueSpecification|null,
      *     slotConstraint: 'Required'|'Optional',
-     *     promptSpecification?: PromptSpecification,
-     *     sampleUtterances?: list<SampleUtterance>,
-     *     waitAndContinueSpecification?: WaitAndContinueSpecification,
-     *     slotCaptureSetting?: SlotCaptureSetting,
-     *     slotResolutionSetting?: SlotResolutionSetting
+     *     promptSpecification?: PromptSpecification|null,
+     *     sampleUtterances?: list<SampleUtterance>|null,
+     *     waitAndContinueSpecification?: WaitAndContinueSpecification|null,
+     *     slotCaptureSetting?: SlotCaptureSetting|null,
+     *     slotResolutionSetting?: SlotResolutionSetting|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\IoTSecureTunneling\RotateTunnelAccessToken;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $tunnelArn
- * @property string $sourceAccessToken
- * @property string $destinationAccessToken
+ * @property string|null $tunnelArn
+ * @property string|null $sourceAccessToken
+ * @property string|null $destinationAccessToken
  */
 class RotateTunnelAccessTokenResponse extends Response
 {

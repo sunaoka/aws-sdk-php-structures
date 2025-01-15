@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $UpdateToken
- * @property Shapes\TLSInspectionConfiguration $TLSInspectionConfiguration
+ * @property Shapes\TLSInspectionConfiguration|null $TLSInspectionConfiguration
  * @property Shapes\TLSInspectionConfigurationResponse $TLSInspectionConfigurationResponse
  */
 class DescribeTLSInspectionConfigurationResponse extends Response

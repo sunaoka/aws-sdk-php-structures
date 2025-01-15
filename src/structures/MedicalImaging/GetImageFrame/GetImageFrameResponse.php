@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property \Psr\Http\Message\StreamInterface $imageFrameBlob
- * @property string $contentType
+ * @property string|null $contentType
  */
 class GetImageFrameResponse extends Response
 {

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\mgn\UnarchiveApplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ApplicationAggregatedStatus $applicationAggregatedStatus
- * @property string $applicationID
- * @property string $arn
- * @property string $creationDateTime
- * @property string $description
- * @property bool $isArchived
- * @property string $lastModifiedDateTime
- * @property string $name
- * @property array<string, string> $tags
- * @property string $waveID
+ * @property Shapes\ApplicationAggregatedStatus|null $applicationAggregatedStatus
+ * @property string|null $applicationID
+ * @property string|null $arn
+ * @property string|null $creationDateTime
+ * @property string|null $description
+ * @property bool|null $isArchived
+ * @property string|null $lastModifiedDateTime
+ * @property string|null $name
+ * @property array<string, string>|null $tags
+ * @property string|null $waveID
  */
 class UnarchiveApplicationResponse extends Response
 {

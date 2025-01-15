@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Iot\GetPolicyVersion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $policyArn
- * @property string $policyName
- * @property string $policyDocument
- * @property string $policyVersionId
- * @property bool $isDefaultVersion
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property \Aws\Api\DateTimeResult $lastModifiedDate
- * @property string $generationId
+ * @property string|null $policyArn
+ * @property string|null $policyName
+ * @property string|null $policyDocument
+ * @property string|null $policyVersionId
+ * @property bool|null $isDefaultVersion
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedDate
+ * @property string|null $generationId
  */
 class GetPolicyVersionResponse extends Response
 {

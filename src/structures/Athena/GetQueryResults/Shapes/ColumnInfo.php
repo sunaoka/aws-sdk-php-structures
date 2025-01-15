@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Athena\GetQueryResults\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogName
- * @property string $SchemaName
- * @property string $TableName
+ * @property string|null $CatalogName
+ * @property string|null $SchemaName
+ * @property string|null $TableName
  * @property string $Name
- * @property string $Label
+ * @property string|null $Label
  * @property string $Type
- * @property int $Precision
- * @property int $Scale
- * @property 'NOT_NULL'|'NULLABLE'|'UNKNOWN' $Nullable
- * @property bool $CaseSensitive
+ * @property int|null $Precision
+ * @property int|null $Scale
+ * @property 'NOT_NULL'|'NULLABLE'|'UNKNOWN'|null $Nullable
+ * @property bool|null $CaseSensitive
  */
 class ColumnInfo extends Shape
 {
     /**
      * @param array{
-     *     CatalogName?: string,
-     *     SchemaName?: string,
-     *     TableName?: string,
+     *     CatalogName?: string|null,
+     *     SchemaName?: string|null,
+     *     TableName?: string|null,
      *     Name: string,
-     *     Label?: string,
+     *     Label?: string|null,
      *     Type: string,
-     *     Precision?: int,
-     *     Scale?: int,
-     *     Nullable?: 'NOT_NULL'|'NULLABLE'|'UNKNOWN',
-     *     CaseSensitive?: bool
+     *     Precision?: int|null,
+     *     Scale?: int|null,
+     *     Nullable?: 'NOT_NULL'|'NULLABLE'|'UNKNOWN'|null,
+     *     CaseSensitive?: bool|null
      * } $args
      */
     public function __construct(array $args)

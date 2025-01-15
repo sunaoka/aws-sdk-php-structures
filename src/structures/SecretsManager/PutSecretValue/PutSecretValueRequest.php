@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SecretId
- * @property string $ClientRequestToken
- * @property string|resource|\Psr\Http\Message\StreamInterface $SecretBinary
- * @property string $SecretString
- * @property list<string> $VersionStages
- * @property string $RotationToken
+ * @property string|null $ClientRequestToken
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $SecretBinary
+ * @property string|null $SecretString
+ * @property list<string>|null $VersionStages
+ * @property string|null $RotationToken
  */
 class PutSecretValueRequest extends Request
 {
     /**
      * @param array{
      *     SecretId: string,
-     *     ClientRequestToken?: string,
-     *     SecretBinary?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     SecretString?: string,
-     *     VersionStages?: list<string>,
-     *     RotationToken?: string
+     *     ClientRequestToken?: string|null,
+     *     SecretBinary?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     SecretString?: string|null,
+     *     VersionStages?: list<string>|null,
+     *     RotationToken?: string|null
      * } $args
      */
     public function __construct(array $args)

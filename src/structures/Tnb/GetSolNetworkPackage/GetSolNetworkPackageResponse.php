@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'ENABLED'|'DISABLED' $nsdOperationalState
  * @property 'IN_USE'|'NOT_IN_USE' $nsdUsageState
  * @property string $nsdVersion
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property list<string> $vnfPkgIds
  */
 class GetSolNetworkPackageResponse extends Response

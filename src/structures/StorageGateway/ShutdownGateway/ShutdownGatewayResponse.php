@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\StorageGateway\ShutdownGateway;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $GatewayARN
+ * @property string|null $GatewayARN
  */
 class ShutdownGatewayResponse extends Response
 {

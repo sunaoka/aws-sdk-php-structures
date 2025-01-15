@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\S3\ListObjectsV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property \Aws\Api\DateTimeResult $LastModified
- * @property string $ETag
- * @property list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'> $ChecksumAlgorithm
- * @property int $Size
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'GLACIER'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE' $StorageClass
- * @property Owner $Owner
- * @property RestoreStatus $RestoreStatus
+ * @property string|null $Key
+ * @property \Aws\Api\DateTimeResult|null $LastModified
+ * @property string|null $ETag
+ * @property list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'>|null $ChecksumAlgorithm
+ * @property int|null $Size
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'GLACIER'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
+ * @property Owner|null $Owner
+ * @property RestoreStatus|null $RestoreStatus
  */
 class ObjectShape extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     LastModified?: \Aws\Api\DateTimeResult,
-     *     ETag?: string,
-     *     ChecksumAlgorithm?: list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'>,
-     *     Size?: int,
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'GLACIER'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE',
-     *     Owner?: Owner,
-     *     RestoreStatus?: RestoreStatus
+     *     Key?: string|null,
+     *     LastModified?: \Aws\Api\DateTimeResult|null,
+     *     ETag?: string|null,
+     *     ChecksumAlgorithm?: list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'>|null,
+     *     Size?: int|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'GLACIER'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null,
+     *     Owner?: Owner|null,
+     *     RestoreStatus?: RestoreStatus|null
      * } $args
      */
     public function __construct(array $args = [])

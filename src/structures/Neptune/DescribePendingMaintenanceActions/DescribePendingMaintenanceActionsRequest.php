@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Neptune\DescribePendingMaintenanceActions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ResourceIdentifier
- * @property list<Shapes\Filter> $Filters
- * @property string $Marker
- * @property int $MaxRecords
+ * @property string|null $ResourceIdentifier
+ * @property list<Shapes\Filter>|null $Filters
+ * @property string|null $Marker
+ * @property int|null $MaxRecords
  */
 class DescribePendingMaintenanceActionsRequest extends Request
 {
     /**
      * @param array{
-     *     ResourceIdentifier?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     Marker?: string,
-     *     MaxRecords?: int
+     *     ResourceIdentifier?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     Marker?: string|null,
+     *     MaxRecords?: int|null
      * } $args
      */
     public function __construct(array $args = [])

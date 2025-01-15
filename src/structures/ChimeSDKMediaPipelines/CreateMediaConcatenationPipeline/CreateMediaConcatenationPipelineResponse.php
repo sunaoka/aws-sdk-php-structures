@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\CreateMediaConcatenation
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\MediaConcatenationPipeline $MediaConcatenationPipeline
+ * @property Shapes\MediaConcatenationPipeline|null $MediaConcatenationPipeline
  */
 class CreateMediaConcatenationPipelineResponse extends Response
 {

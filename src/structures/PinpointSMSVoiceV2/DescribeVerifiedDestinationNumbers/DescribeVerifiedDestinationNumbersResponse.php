@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\VerifiedDestinationNumberInformation> $VerifiedDestinationNumbers
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class DescribeVerifiedDestinationNumbersResponse extends Response
 {

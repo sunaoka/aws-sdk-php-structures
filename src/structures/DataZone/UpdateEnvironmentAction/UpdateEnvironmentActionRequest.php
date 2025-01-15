@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateEnvironmentAction;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $domainIdentifier
  * @property string $environmentIdentifier
  * @property string $identifier
- * @property string $name
- * @property Shapes\ActionParameters $parameters
+ * @property string|null $name
+ * @property Shapes\ActionParameters|null $parameters
  */
 class UpdateEnvironmentActionRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     domainIdentifier: string,
      *     environmentIdentifier: string,
      *     identifier: string,
-     *     name?: string,
-     *     parameters?: Shapes\ActionParameters
+     *     name?: string|null,
+     *     parameters?: Shapes\ActionParameters|null
      * } $args
      */
     public function __construct(array $args)

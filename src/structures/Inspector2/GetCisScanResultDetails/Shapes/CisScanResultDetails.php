@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Inspector2\GetCisScanResultDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property string $checkDescription
- * @property string $checkId
- * @property string $findingArn
- * @property 'LEVEL_1'|'LEVEL_2' $level
- * @property string $platform
- * @property string $remediation
+ * @property string|null $accountId
+ * @property string|null $checkDescription
+ * @property string|null $checkId
+ * @property string|null $findingArn
+ * @property 'LEVEL_1'|'LEVEL_2'|null $level
+ * @property string|null $platform
+ * @property string|null $remediation
  * @property string $scanArn
- * @property 'PASSED'|'FAILED'|'SKIPPED' $status
- * @property string $statusReason
- * @property string $targetResourceId
- * @property string $title
+ * @property 'PASSED'|'FAILED'|'SKIPPED'|null $status
+ * @property string|null $statusReason
+ * @property string|null $targetResourceId
+ * @property string|null $title
  */
 class CisScanResultDetails extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     checkDescription?: string,
-     *     checkId?: string,
-     *     findingArn?: string,
-     *     level?: 'LEVEL_1'|'LEVEL_2',
-     *     platform?: string,
-     *     remediation?: string,
+     *     accountId?: string|null,
+     *     checkDescription?: string|null,
+     *     checkId?: string|null,
+     *     findingArn?: string|null,
+     *     level?: 'LEVEL_1'|'LEVEL_2'|null,
+     *     platform?: string|null,
+     *     remediation?: string|null,
      *     scanArn: string,
-     *     status?: 'PASSED'|'FAILED'|'SKIPPED',
-     *     statusReason?: string,
-     *     targetResourceId?: string,
-     *     title?: string
+     *     status?: 'PASSED'|'FAILED'|'SKIPPED'|null,
+     *     statusReason?: string|null,
+     *     targetResourceId?: string|null,
+     *     title?: string|null
      * } $args
      */
     public function __construct(array $args)

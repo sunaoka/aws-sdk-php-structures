@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\ExportRDSDatabaseRecommendatio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $jobId
- * @property Shapes\S3Destination $s3Destination
+ * @property string|null $jobId
+ * @property Shapes\S3Destination|null $s3Destination
  */
 class ExportRDSDatabaseRecommendationsResponse extends Response
 {

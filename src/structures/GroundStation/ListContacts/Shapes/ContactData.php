@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\GroundStation\ListContacts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $contactId
- * @property 'AVAILABLE'|'AWS_CANCELLED'|'AWS_FAILED'|'CANCELLED'|'CANCELLING'|'COMPLETED'|'FAILED'|'FAILED_TO_SCHEDULE'|'PASS'|'POSTPASS'|'PREPASS'|'SCHEDULED'|'SCHEDULING' $contactStatus
- * @property \Aws\Api\DateTimeResult $endTime
- * @property string $errorMessage
- * @property string $groundStation
- * @property Elevation $maximumElevation
- * @property string $missionProfileArn
- * @property \Aws\Api\DateTimeResult $postPassEndTime
- * @property \Aws\Api\DateTimeResult $prePassStartTime
- * @property string $region
- * @property string $satelliteArn
- * @property \Aws\Api\DateTimeResult $startTime
- * @property array<string, string> $tags
- * @property \Aws\Api\DateTimeResult $visibilityEndTime
- * @property \Aws\Api\DateTimeResult $visibilityStartTime
+ * @property string|null $contactId
+ * @property 'AVAILABLE'|'AWS_CANCELLED'|'AWS_FAILED'|'CANCELLED'|'CANCELLING'|'COMPLETED'|'FAILED'|'FAILED_TO_SCHEDULE'|'PASS'|'POSTPASS'|'PREPASS'|'SCHEDULED'|'SCHEDULING'|null $contactStatus
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property string|null $errorMessage
+ * @property string|null $groundStation
+ * @property Elevation|null $maximumElevation
+ * @property string|null $missionProfileArn
+ * @property \Aws\Api\DateTimeResult|null $postPassEndTime
+ * @property \Aws\Api\DateTimeResult|null $prePassStartTime
+ * @property string|null $region
+ * @property string|null $satelliteArn
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property array<string, string>|null $tags
+ * @property \Aws\Api\DateTimeResult|null $visibilityEndTime
+ * @property \Aws\Api\DateTimeResult|null $visibilityStartTime
  */
 class ContactData extends Shape
 {
     /**
      * @param array{
-     *     contactId?: string,
-     *     contactStatus?: 'AVAILABLE'|'AWS_CANCELLED'|'AWS_FAILED'|'CANCELLED'|'CANCELLING'|'COMPLETED'|'FAILED'|'FAILED_TO_SCHEDULE'|'PASS'|'POSTPASS'|'PREPASS'|'SCHEDULED'|'SCHEDULING',
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     errorMessage?: string,
-     *     groundStation?: string,
-     *     maximumElevation?: Elevation,
-     *     missionProfileArn?: string,
-     *     postPassEndTime?: \Aws\Api\DateTimeResult,
-     *     prePassStartTime?: \Aws\Api\DateTimeResult,
-     *     region?: string,
-     *     satelliteArn?: string,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     tags?: array<string, string>,
-     *     visibilityEndTime?: \Aws\Api\DateTimeResult,
-     *     visibilityStartTime?: \Aws\Api\DateTimeResult
+     *     contactId?: string|null,
+     *     contactStatus?: 'AVAILABLE'|'AWS_CANCELLED'|'AWS_FAILED'|'CANCELLED'|'CANCELLING'|'COMPLETED'|'FAILED'|'FAILED_TO_SCHEDULE'|'PASS'|'POSTPASS'|'PREPASS'|'SCHEDULED'|'SCHEDULING'|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     errorMessage?: string|null,
+     *     groundStation?: string|null,
+     *     maximumElevation?: Elevation|null,
+     *     missionProfileArn?: string|null,
+     *     postPassEndTime?: \Aws\Api\DateTimeResult|null,
+     *     prePassStartTime?: \Aws\Api\DateTimeResult|null,
+     *     region?: string|null,
+     *     satelliteArn?: string|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     tags?: array<string, string>|null,
+     *     visibilityEndTime?: \Aws\Api\DateTimeResult|null,
+     *     visibilityStartTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $Id
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
- * @property string $PartnerOpportunityIdentifier
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
+ * @property string|null $PartnerOpportunityIdentifier
  */
 class CreateOpportunityResponse extends Response
 {

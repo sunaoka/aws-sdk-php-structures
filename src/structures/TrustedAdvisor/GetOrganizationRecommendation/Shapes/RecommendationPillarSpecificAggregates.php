@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\TrustedAdvisor\GetOrganizationRecommendation\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RecommendationCostOptimizingAggregates $costOptimizing
+ * @property RecommendationCostOptimizingAggregates|null $costOptimizing
  */
 class RecommendationPillarSpecificAggregates extends Shape
 {
     /**
-     * @param array{costOptimizing?: RecommendationCostOptimizingAggregates} $args
+     * @param array{costOptimizing?: RecommendationCostOptimizingAggregates|null} $args
      */
     public function __construct(array $args = [])
     {

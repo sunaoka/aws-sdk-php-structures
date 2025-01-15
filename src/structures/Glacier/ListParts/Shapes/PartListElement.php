@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glacier\ListParts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RangeInBytes
- * @property string $SHA256TreeHash
+ * @property string|null $RangeInBytes
+ * @property string|null $SHA256TreeHash
  */
 class PartListElement extends Shape
 {
     /**
      * @param array{
-     *     RangeInBytes?: string,
-     *     SHA256TreeHash?: string
+     *     RangeInBytes?: string|null,
+     *     SHA256TreeHash?: string|null
      * } $args
      */
     public function __construct(array $args = [])

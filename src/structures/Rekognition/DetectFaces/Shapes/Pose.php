@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Rekognition\DetectFaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $Roll
- * @property float $Yaw
- * @property float $Pitch
+ * @property float|null $Roll
+ * @property float|null $Yaw
+ * @property float|null $Pitch
  */
 class Pose extends Shape
 {
     /**
      * @param array{
-     *     Roll?: float,
-     *     Yaw?: float,
-     *     Pitch?: float
+     *     Roll?: float|null,
+     *     Yaw?: float|null,
+     *     Pitch?: float|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $VisualId
- * @property VisualTitleLabelOptions $Title
- * @property VisualSubtitleLabelOptions $Subtitle
- * @property RadarChartConfiguration $ChartConfiguration
- * @property list<VisualCustomAction> $Actions
- * @property list<ColumnHierarchy> $ColumnHierarchies
- * @property string $VisualContentAltText
+ * @property VisualTitleLabelOptions|null $Title
+ * @property VisualSubtitleLabelOptions|null $Subtitle
+ * @property RadarChartConfiguration|null $ChartConfiguration
+ * @property list<VisualCustomAction>|null $Actions
+ * @property list<ColumnHierarchy>|null $ColumnHierarchies
+ * @property string|null $VisualContentAltText
  */
 class RadarChartVisual extends Shape
 {
     /**
      * @param array{
      *     VisualId: string,
-     *     Title?: VisualTitleLabelOptions,
-     *     Subtitle?: VisualSubtitleLabelOptions,
-     *     ChartConfiguration?: RadarChartConfiguration,
-     *     Actions?: list<VisualCustomAction>,
-     *     ColumnHierarchies?: list<ColumnHierarchy>,
-     *     VisualContentAltText?: string
+     *     Title?: VisualTitleLabelOptions|null,
+     *     Subtitle?: VisualSubtitleLabelOptions|null,
+     *     ChartConfiguration?: RadarChartConfiguration|null,
+     *     Actions?: list<VisualCustomAction>|null,
+     *     ColumnHierarchies?: list<ColumnHierarchy>|null,
+     *     VisualContentAltText?: string|null
      * } $args
      */
     public function __construct(array $args)

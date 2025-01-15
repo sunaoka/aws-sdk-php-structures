@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateInput\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $SecurityGroupIds
+ * @property list<string>|null $SecurityGroupIds
  * @property list<string> $SubnetIds
  */
 class InputVpcRequest extends Shape
 {
     /**
      * @param array{
-     *     SecurityGroupIds?: list<string>,
+     *     SecurityGroupIds?: list<string>|null,
      *     SubnetIds: list<string>
      * } $args
      */

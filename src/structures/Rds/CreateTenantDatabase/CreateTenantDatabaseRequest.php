@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TenantDBName
  * @property string $MasterUsername
  * @property string $MasterUserPassword
- * @property string $CharacterSetName
- * @property string $NcharCharacterSetName
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $CharacterSetName
+ * @property string|null $NcharCharacterSetName
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateTenantDatabaseRequest extends Request
 {
@@ -21,9 +21,9 @@ class CreateTenantDatabaseRequest extends Request
      *     TenantDBName: string,
      *     MasterUsername: string,
      *     MasterUserPassword: string,
-     *     CharacterSetName?: string,
-     *     NcharCharacterSetName?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     CharacterSetName?: string|null,
+     *     NcharCharacterSetName?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<CvssScoreAdjustment> $adjustments
- * @property string $cvssSource
+ * @property list<CvssScoreAdjustment>|null $adjustments
+ * @property string|null $cvssSource
  * @property double $score
  * @property string $scoreSource
  * @property string $scoringVector
@@ -16,8 +16,8 @@ class CvssScoreDetails extends Shape
 {
     /**
      * @param array{
-     *     adjustments?: list<CvssScoreAdjustment>,
-     *     cvssSource?: string,
+     *     adjustments?: list<CvssScoreAdjustment>|null,
+     *     cvssSource?: string|null,
      *     score: double,
      *     scoreSource: string,
      *     scoringVector: string,

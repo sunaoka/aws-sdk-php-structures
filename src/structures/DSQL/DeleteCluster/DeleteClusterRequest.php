@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $identifier
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeleteClusterRequest extends Request
 {
     /**
      * @param array{
      *     identifier: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

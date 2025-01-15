@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeScheduledInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property \Aws\Api\DateTimeResult $CreateDate
- * @property string $HourlyPrice
- * @property int $InstanceCount
- * @property string $InstanceType
- * @property string $NetworkPlatform
- * @property \Aws\Api\DateTimeResult $NextSlotStartTime
- * @property string $Platform
- * @property \Aws\Api\DateTimeResult $PreviousSlotEndTime
- * @property ScheduledInstanceRecurrence $Recurrence
- * @property string $ScheduledInstanceId
- * @property int $SlotDurationInHours
- * @property \Aws\Api\DateTimeResult $TermEndDate
- * @property \Aws\Api\DateTimeResult $TermStartDate
- * @property int $TotalScheduledInstanceHours
+ * @property string|null $AvailabilityZone
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
+ * @property string|null $HourlyPrice
+ * @property int|null $InstanceCount
+ * @property string|null $InstanceType
+ * @property string|null $NetworkPlatform
+ * @property \Aws\Api\DateTimeResult|null $NextSlotStartTime
+ * @property string|null $Platform
+ * @property \Aws\Api\DateTimeResult|null $PreviousSlotEndTime
+ * @property ScheduledInstanceRecurrence|null $Recurrence
+ * @property string|null $ScheduledInstanceId
+ * @property int|null $SlotDurationInHours
+ * @property \Aws\Api\DateTimeResult|null $TermEndDate
+ * @property \Aws\Api\DateTimeResult|null $TermStartDate
+ * @property int|null $TotalScheduledInstanceHours
  */
 class ScheduledInstance extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     CreateDate?: \Aws\Api\DateTimeResult,
-     *     HourlyPrice?: string,
-     *     InstanceCount?: int,
-     *     InstanceType?: string,
-     *     NetworkPlatform?: string,
-     *     NextSlotStartTime?: \Aws\Api\DateTimeResult,
-     *     Platform?: string,
-     *     PreviousSlotEndTime?: \Aws\Api\DateTimeResult,
-     *     Recurrence?: ScheduledInstanceRecurrence,
-     *     ScheduledInstanceId?: string,
-     *     SlotDurationInHours?: int,
-     *     TermEndDate?: \Aws\Api\DateTimeResult,
-     *     TermStartDate?: \Aws\Api\DateTimeResult,
-     *     TotalScheduledInstanceHours?: int
+     *     AvailabilityZone?: string|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null,
+     *     HourlyPrice?: string|null,
+     *     InstanceCount?: int|null,
+     *     InstanceType?: string|null,
+     *     NetworkPlatform?: string|null,
+     *     NextSlotStartTime?: \Aws\Api\DateTimeResult|null,
+     *     Platform?: string|null,
+     *     PreviousSlotEndTime?: \Aws\Api\DateTimeResult|null,
+     *     Recurrence?: ScheduledInstanceRecurrence|null,
+     *     ScheduledInstanceId?: string|null,
+     *     SlotDurationInHours?: int|null,
+     *     TermEndDate?: \Aws\Api\DateTimeResult|null,
+     *     TermStartDate?: \Aws\Api\DateTimeResult|null,
+     *     TotalScheduledInstanceHours?: int|null
      * } $args
      */
     public function __construct(array $args = [])

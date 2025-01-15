@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $scheduleExpression
- * @property 'Incremental'|'Complete' $dataPullMode
- * @property \Aws\Api\DateTimeResult $scheduleStartTime
- * @property \Aws\Api\DateTimeResult $scheduleEndTime
- * @property string $timezone
- * @property int<0, 36000> $scheduleOffset
- * @property \Aws\Api\DateTimeResult $firstExecutionFrom
- * @property int<1, 100> $flowErrorDeactivationThreshold
+ * @property 'Incremental'|'Complete'|null $dataPullMode
+ * @property \Aws\Api\DateTimeResult|null $scheduleStartTime
+ * @property \Aws\Api\DateTimeResult|null $scheduleEndTime
+ * @property string|null $timezone
+ * @property int<0, 36000>|null $scheduleOffset
+ * @property \Aws\Api\DateTimeResult|null $firstExecutionFrom
+ * @property int<1, 100>|null $flowErrorDeactivationThreshold
  */
 class ScheduledTriggerProperties extends Shape
 {
     /**
      * @param array{
      *     scheduleExpression: string,
-     *     dataPullMode?: 'Incremental'|'Complete',
-     *     scheduleStartTime?: \Aws\Api\DateTimeResult,
-     *     scheduleEndTime?: \Aws\Api\DateTimeResult,
-     *     timezone?: string,
-     *     scheduleOffset?: int<0, 36000>,
-     *     firstExecutionFrom?: \Aws\Api\DateTimeResult,
-     *     flowErrorDeactivationThreshold?: int<1, 100>
+     *     dataPullMode?: 'Incremental'|'Complete'|null,
+     *     scheduleStartTime?: \Aws\Api\DateTimeResult|null,
+     *     scheduleEndTime?: \Aws\Api\DateTimeResult|null,
+     *     timezone?: string|null,
+     *     scheduleOffset?: int<0, 36000>|null,
+     *     firstExecutionFrom?: \Aws\Api\DateTimeResult|null,
+     *     flowErrorDeactivationThreshold?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

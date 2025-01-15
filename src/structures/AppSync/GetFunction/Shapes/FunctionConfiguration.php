@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\AppSync\GetFunction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $functionId
- * @property string $functionArn
- * @property string $name
- * @property string $description
- * @property string $dataSourceName
- * @property string $requestMappingTemplate
- * @property string $responseMappingTemplate
- * @property string $functionVersion
- * @property SyncConfig $syncConfig
- * @property int<0, 2000> $maxBatchSize
- * @property AppSyncRuntime $runtime
- * @property string $code
+ * @property string|null $functionId
+ * @property string|null $functionArn
+ * @property string|null $name
+ * @property string|null $description
+ * @property string|null $dataSourceName
+ * @property string|null $requestMappingTemplate
+ * @property string|null $responseMappingTemplate
+ * @property string|null $functionVersion
+ * @property SyncConfig|null $syncConfig
+ * @property int<0, 2000>|null $maxBatchSize
+ * @property AppSyncRuntime|null $runtime
+ * @property string|null $code
  */
 class FunctionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     functionId?: string,
-     *     functionArn?: string,
-     *     name?: string,
-     *     description?: string,
-     *     dataSourceName?: string,
-     *     requestMappingTemplate?: string,
-     *     responseMappingTemplate?: string,
-     *     functionVersion?: string,
-     *     syncConfig?: SyncConfig,
-     *     maxBatchSize?: int<0, 2000>,
-     *     runtime?: AppSyncRuntime,
-     *     code?: string
+     *     functionId?: string|null,
+     *     functionArn?: string|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     dataSourceName?: string|null,
+     *     requestMappingTemplate?: string|null,
+     *     responseMappingTemplate?: string|null,
+     *     functionVersion?: string|null,
+     *     syncConfig?: SyncConfig|null,
+     *     maxBatchSize?: int<0, 2000>|null,
+     *     runtime?: AppSyncRuntime|null,
+     *     code?: string|null
      * } $args
      */
     public function __construct(array $args = [])

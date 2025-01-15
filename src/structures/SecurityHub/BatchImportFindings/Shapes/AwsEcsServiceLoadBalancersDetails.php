@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContainerName
- * @property int $ContainerPort
- * @property string $LoadBalancerName
- * @property string $TargetGroupArn
+ * @property string|null $ContainerName
+ * @property int|null $ContainerPort
+ * @property string|null $LoadBalancerName
+ * @property string|null $TargetGroupArn
  */
 class AwsEcsServiceLoadBalancersDetails extends Shape
 {
     /**
      * @param array{
-     *     ContainerName?: string,
-     *     ContainerPort?: int,
-     *     LoadBalancerName?: string,
-     *     TargetGroupArn?: string
+     *     ContainerName?: string|null,
+     *     ContainerPort?: int|null,
+     *     LoadBalancerName?: string|null,
+     *     TargetGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

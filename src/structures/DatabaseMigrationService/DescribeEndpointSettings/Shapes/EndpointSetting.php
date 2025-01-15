@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeEndpointSettin
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property 'string'|'boolean'|'integer'|'enum' $Type
- * @property list<string> $EnumValues
- * @property bool $Sensitive
- * @property string $Units
- * @property string $Applicability
- * @property int $IntValueMin
- * @property int $IntValueMax
- * @property string $DefaultValue
+ * @property string|null $Name
+ * @property 'string'|'boolean'|'integer'|'enum'|null $Type
+ * @property list<string>|null $EnumValues
+ * @property bool|null $Sensitive
+ * @property string|null $Units
+ * @property string|null $Applicability
+ * @property int|null $IntValueMin
+ * @property int|null $IntValueMax
+ * @property string|null $DefaultValue
  */
 class EndpointSetting extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Type?: 'string'|'boolean'|'integer'|'enum',
-     *     EnumValues?: list<string>,
-     *     Sensitive?: bool,
-     *     Units?: string,
-     *     Applicability?: string,
-     *     IntValueMin?: int,
-     *     IntValueMax?: int,
-     *     DefaultValue?: string
+     *     Name?: string|null,
+     *     Type?: 'string'|'boolean'|'integer'|'enum'|null,
+     *     EnumValues?: list<string>|null,
+     *     Sensitive?: bool|null,
+     *     Units?: string|null,
+     *     Applicability?: string|null,
+     *     IntValueMin?: int|null,
+     *     IntValueMax?: int|null,
+     *     DefaultValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CollectionId
  * @property Shapes\Image $Image
- * @property float $UserMatchThreshold
- * @property int<1, 500> $MaxUsers
- * @property 'NONE'|'AUTO'|'LOW'|'MEDIUM'|'HIGH' $QualityFilter
+ * @property float|null $UserMatchThreshold
+ * @property int<1, 500>|null $MaxUsers
+ * @property 'NONE'|'AUTO'|'LOW'|'MEDIUM'|'HIGH'|null $QualityFilter
  */
 class SearchUsersByImageRequest extends Request
 {
@@ -17,9 +17,9 @@ class SearchUsersByImageRequest extends Request
      * @param array{
      *     CollectionId: string,
      *     Image: Shapes\Image,
-     *     UserMatchThreshold?: float,
-     *     MaxUsers?: int<1, 500>,
-     *     QualityFilter?: 'NONE'|'AUTO'|'LOW'|'MEDIUM'|'HIGH'
+     *     UserMatchThreshold?: float|null,
+     *     MaxUsers?: int<1, 500>|null,
+     *     QualityFilter?: 'NONE'|'AUTO'|'LOW'|'MEDIUM'|'HIGH'|null
      * } $args
      */
     public function __construct(array $args)

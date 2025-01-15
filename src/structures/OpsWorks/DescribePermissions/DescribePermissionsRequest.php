@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribePermissions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $IamUserArn
- * @property string $StackId
+ * @property string|null $IamUserArn
+ * @property string|null $StackId
  */
 class DescribePermissionsRequest extends Request
 {
     /**
      * @param array{
-     *     IamUserArn?: string,
-     *     StackId?: string
+     *     IamUserArn?: string|null,
+     *     StackId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

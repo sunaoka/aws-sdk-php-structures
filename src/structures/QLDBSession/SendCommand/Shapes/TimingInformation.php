@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QLDBSession\SendCommand\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ProcessingTimeMilliseconds
+ * @property int|null $ProcessingTimeMilliseconds
  */
 class TimingInformation extends Shape
 {
     /**
-     * @param array{ProcessingTimeMilliseconds?: int} $args
+     * @param array{ProcessingTimeMilliseconds?: int|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListStackInstancesForProvisioned
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Account
- * @property string $Region
- * @property 'CURRENT'|'OUTDATED'|'INOPERABLE' $StackInstanceStatus
+ * @property string|null $Account
+ * @property string|null $Region
+ * @property 'CURRENT'|'OUTDATED'|'INOPERABLE'|null $StackInstanceStatus
  */
 class StackInstance extends Shape
 {
     /**
      * @param array{
-     *     Account?: string,
-     *     Region?: string,
-     *     StackInstanceStatus?: 'CURRENT'|'OUTDATED'|'INOPERABLE'
+     *     Account?: string|null,
+     *     Region?: string|null,
+     *     StackInstanceStatus?: 'CURRENT'|'OUTDATED'|'INOPERABLE'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property list<Shapes\HostedZoneSummary> $HostedZoneSummaries
  * @property string $MaxItems
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListHostedZonesByVPCResponse extends Response
 {

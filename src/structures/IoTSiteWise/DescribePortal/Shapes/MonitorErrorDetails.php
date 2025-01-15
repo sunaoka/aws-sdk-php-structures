@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\DescribePortal\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INTERNAL_FAILURE'|'VALIDATION_ERROR'|'LIMIT_EXCEEDED' $code
- * @property string $message
+ * @property 'INTERNAL_FAILURE'|'VALIDATION_ERROR'|'LIMIT_EXCEEDED'|null $code
+ * @property string|null $message
  */
 class MonitorErrorDetails extends Shape
 {
     /**
      * @param array{
-     *     code?: 'INTERNAL_FAILURE'|'VALIDATION_ERROR'|'LIMIT_EXCEEDED',
-     *     message?: string
+     *     code?: 'INTERNAL_FAILURE'|'VALIDATION_ERROR'|'LIMIT_EXCEEDED'|null,
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

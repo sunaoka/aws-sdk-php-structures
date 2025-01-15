@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\ListActions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $actionId
- * @property string $actionDefinitionId
- * @property TargetResource $targetResource
+ * @property string|null $actionId
+ * @property string|null $actionDefinitionId
+ * @property TargetResource|null $targetResource
  */
 class ActionSummary extends Shape
 {
     /**
      * @param array{
-     *     actionId?: string,
-     *     actionDefinitionId?: string,
-     *     targetResource?: TargetResource
+     *     actionId?: string|null,
+     *     actionDefinitionId?: string|null,
+     *     targetResource?: TargetResource|null
      * } $args
      */
     public function __construct(array $args = [])

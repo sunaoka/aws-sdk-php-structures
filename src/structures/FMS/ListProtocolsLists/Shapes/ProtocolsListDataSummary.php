@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FMS\ListProtocolsLists\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ListArn
- * @property string $ListId
- * @property string $ListName
- * @property list<string> $ProtocolsList
+ * @property string|null $ListArn
+ * @property string|null $ListId
+ * @property string|null $ListName
+ * @property list<string>|null $ProtocolsList
  */
 class ProtocolsListDataSummary extends Shape
 {
     /**
      * @param array{
-     *     ListArn?: string,
-     *     ListId?: string,
-     *     ListName?: string,
-     *     ProtocolsList?: list<string>
+     *     ListArn?: string|null,
+     *     ListId?: string|null,
+     *     ListName?: string|null,
+     *     ProtocolsList?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

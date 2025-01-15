@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $NotebookId
  * @property string $Payload
  * @property 'IPYNB' $Type
- * @property string $SessionId
- * @property string $ClientRequestToken
+ * @property string|null $SessionId
+ * @property string|null $ClientRequestToken
  */
 class UpdateNotebookRequest extends Request
 {
@@ -18,8 +18,8 @@ class UpdateNotebookRequest extends Request
      *     NotebookId: string,
      *     Payload: string,
      *     Type: 'IPYNB',
-     *     SessionId?: string,
-     *     ClientRequestToken?: string
+     *     SessionId?: string|null,
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

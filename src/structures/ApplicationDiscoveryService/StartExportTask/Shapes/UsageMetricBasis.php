@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\StartExportTask\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property double $percentageAdjust
+ * @property string|null $name
+ * @property double|null $percentageAdjust
  */
 class UsageMetricBasis extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     percentageAdjust?: double
+     *     name?: string|null,
+     *     percentageAdjust?: double|null
      * } $args
      */
     public function __construct(array $args = [])

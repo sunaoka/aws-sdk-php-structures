@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LocalPath
+ * @property string|null $LocalPath
  * @property string $S3OutputPath
  */
 class TensorBoardOutputConfig extends Shape
 {
     /**
      * @param array{
-     *     LocalPath?: string,
+     *     LocalPath?: string|null,
      *     S3OutputPath: string
      * } $args
      */

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Sqs\GetQueueUrl;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $QueueUrl
+ * @property string|null $QueueUrl
  */
 class GetQueueUrlResponse extends Response
 {

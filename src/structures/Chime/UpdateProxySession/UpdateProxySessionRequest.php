@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VoiceConnectorId
  * @property string $ProxySessionId
  * @property list<'Voice'|'SMS'> $Capabilities
- * @property int<1, max> $ExpiryMinutes
+ * @property int<1, max>|null $ExpiryMinutes
  */
 class UpdateProxySessionRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateProxySessionRequest extends Request
      *     VoiceConnectorId: string,
      *     ProxySessionId: string,
      *     Capabilities: list<'Voice'|'SMS'>,
-     *     ExpiryMinutes?: int<1, max>
+     *     ExpiryMinutes?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

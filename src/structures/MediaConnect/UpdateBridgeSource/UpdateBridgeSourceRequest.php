@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BridgeArn
- * @property Shapes\UpdateBridgeFlowSourceRequest $FlowSource
- * @property Shapes\UpdateBridgeNetworkSourceRequest $NetworkSource
+ * @property Shapes\UpdateBridgeFlowSourceRequest|null $FlowSource
+ * @property Shapes\UpdateBridgeNetworkSourceRequest|null $NetworkSource
  * @property string $SourceName
  */
 class UpdateBridgeSourceRequest extends Request
@@ -15,8 +15,8 @@ class UpdateBridgeSourceRequest extends Request
     /**
      * @param array{
      *     BridgeArn: string,
-     *     FlowSource?: Shapes\UpdateBridgeFlowSourceRequest,
-     *     NetworkSource?: Shapes\UpdateBridgeNetworkSourceRequest,
+     *     FlowSource?: Shapes\UpdateBridgeFlowSourceRequest|null,
+     *     NetworkSource?: Shapes\UpdateBridgeNetworkSourceRequest|null,
      *     SourceName: string
      * } $args
      */

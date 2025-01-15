@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListComponents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
- * @property string $version
- * @property string $description
- * @property 'Windows'|'Linux'|'macOS' $platform
- * @property list<string> $supportedOsVersions
- * @property 'BUILD'|'TEST' $type
- * @property string $owner
- * @property string $dateCreated
- * @property 'DEPRECATED'|'DISABLED'|'ACTIVE' $status
- * @property list<ProductCodeListItem> $productCodes
+ * @property string|null $arn
+ * @property string|null $name
+ * @property string|null $version
+ * @property string|null $description
+ * @property 'Windows'|'Linux'|'macOS'|null $platform
+ * @property list<string>|null $supportedOsVersions
+ * @property 'BUILD'|'TEST'|null $type
+ * @property string|null $owner
+ * @property string|null $dateCreated
+ * @property 'DEPRECATED'|'DISABLED'|'ACTIVE'|null $status
+ * @property list<ProductCodeListItem>|null $productCodes
  */
 class ComponentVersion extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string,
-     *     version?: string,
-     *     description?: string,
-     *     platform?: 'Windows'|'Linux'|'macOS',
-     *     supportedOsVersions?: list<string>,
-     *     type?: 'BUILD'|'TEST',
-     *     owner?: string,
-     *     dateCreated?: string,
-     *     status?: 'DEPRECATED'|'DISABLED'|'ACTIVE',
-     *     productCodes?: list<ProductCodeListItem>
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     version?: string|null,
+     *     description?: string|null,
+     *     platform?: 'Windows'|'Linux'|'macOS'|null,
+     *     supportedOsVersions?: list<string>|null,
+     *     type?: 'BUILD'|'TEST'|null,
+     *     owner?: string|null,
+     *     dateCreated?: string|null,
+     *     status?: 'DEPRECATED'|'DISABLED'|'ACTIVE'|null,
+     *     productCodes?: list<ProductCodeListItem>|null
      * } $args
      */
     public function __construct(array $args = [])

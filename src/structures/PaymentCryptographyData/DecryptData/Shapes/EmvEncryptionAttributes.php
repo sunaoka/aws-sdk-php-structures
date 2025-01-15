@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PrimaryAccountNumber
  * @property string $PanSequenceNumber
  * @property string $SessionDerivationData
- * @property 'ECB'|'CBC' $Mode
- * @property string $InitializationVector
+ * @property 'ECB'|'CBC'|null $Mode
+ * @property string|null $InitializationVector
  */
 class EmvEncryptionAttributes extends Shape
 {
@@ -20,8 +20,8 @@ class EmvEncryptionAttributes extends Shape
      *     PrimaryAccountNumber: string,
      *     PanSequenceNumber: string,
      *     SessionDerivationData: string,
-     *     Mode?: 'ECB'|'CBC',
-     *     InitializationVector?: string
+     *     Mode?: 'ECB'|'CBC'|null,
+     *     InitializationVector?: string|null
      * } $args
      */
     public function __construct(array $args)

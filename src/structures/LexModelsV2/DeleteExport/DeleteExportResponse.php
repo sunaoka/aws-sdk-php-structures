@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\DeleteExport;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $exportId
- * @property 'InProgress'|'Completed'|'Failed'|'Deleting' $exportStatus
+ * @property string|null $exportId
+ * @property 'InProgress'|'Completed'|'Failed'|'Deleting'|null $exportStatus
  */
 class DeleteExportResponse extends Response
 {

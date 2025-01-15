@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Route53\UpdateHostedZoneComment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Comment
- * @property bool $PrivateZone
+ * @property string|null $Comment
+ * @property bool|null $PrivateZone
  */
 class HostedZoneConfig extends Shape
 {
     /**
      * @param array{
-     *     Comment?: string,
-     *     PrivateZone?: bool
+     *     Comment?: string|null,
+     *     PrivateZone?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

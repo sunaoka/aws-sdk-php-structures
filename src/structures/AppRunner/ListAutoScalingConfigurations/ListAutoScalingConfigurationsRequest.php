@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AppRunner\ListAutoScalingConfigurations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AutoScalingConfigurationName
- * @property bool $LatestOnly
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $AutoScalingConfigurationName
+ * @property bool|null $LatestOnly
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListAutoScalingConfigurationsRequest extends Request
 {
     /**
      * @param array{
-     *     AutoScalingConfigurationName?: string,
-     *     LatestOnly?: bool,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     AutoScalingConfigurationName?: string|null,
+     *     LatestOnly?: bool|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $dashboardArn
  * @property string $dashboardName
  * @property string $projectId
- * @property string $dashboardDescription
+ * @property string|null $dashboardDescription
  * @property string $dashboardDefinition
  * @property \Aws\Api\DateTimeResult $dashboardCreationDate
  * @property \Aws\Api\DateTimeResult $dashboardLastUpdateDate

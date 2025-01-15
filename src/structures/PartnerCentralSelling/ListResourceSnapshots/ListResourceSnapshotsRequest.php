@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Catalog
- * @property string $CreatedBy
+ * @property string|null $CreatedBy
  * @property string $EngagementIdentifier
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
- * @property string $ResourceIdentifier
- * @property string $ResourceSnapshotTemplateIdentifier
- * @property 'Opportunity' $ResourceType
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
+ * @property string|null $ResourceIdentifier
+ * @property string|null $ResourceSnapshotTemplateIdentifier
+ * @property 'Opportunity'|null $ResourceType
  */
 class ListResourceSnapshotsRequest extends Request
 {
     /**
      * @param array{
      *     Catalog: string,
-     *     CreatedBy?: string,
+     *     CreatedBy?: string|null,
      *     EngagementIdentifier: string,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string,
-     *     ResourceIdentifier?: string,
-     *     ResourceSnapshotTemplateIdentifier?: string,
-     *     ResourceType?: 'Opportunity'
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null,
+     *     ResourceIdentifier?: string|null,
+     *     ResourceSnapshotTemplateIdentifier?: string|null,
+     *     ResourceType?: 'Opportunity'|null
      * } $args
      */
     public function __construct(array $args)

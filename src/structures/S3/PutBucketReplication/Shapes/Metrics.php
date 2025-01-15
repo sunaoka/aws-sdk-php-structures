@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Enabled'|'Disabled' $Status
- * @property ReplicationTimeValue $EventThreshold
+ * @property ReplicationTimeValue|null $EventThreshold
  */
 class Metrics extends Shape
 {
     /**
      * @param array{
      *     Status: 'Enabled'|'Disabled',
-     *     EventThreshold?: ReplicationTimeValue
+     *     EventThreshold?: ReplicationTimeValue|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Bucket
- * @property string $Delimiter
- * @property 'url' $EncodingType
- * @property string $KeyMarker
- * @property int $MaxKeys
- * @property string $Prefix
- * @property string $VersionIdMarker
- * @property string $ExpectedBucketOwner
- * @property 'requester' $RequestPayer
- * @property list<'RestoreStatus'> $OptionalObjectAttributes
+ * @property string|null $Delimiter
+ * @property 'url'|null $EncodingType
+ * @property string|null $KeyMarker
+ * @property int|null $MaxKeys
+ * @property string|null $Prefix
+ * @property string|null $VersionIdMarker
+ * @property string|null $ExpectedBucketOwner
+ * @property 'requester'|null $RequestPayer
+ * @property list<'RestoreStatus'>|null $OptionalObjectAttributes
  */
 class ListObjectVersionsRequest extends Request
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     Delimiter?: string,
-     *     EncodingType?: 'url',
-     *     KeyMarker?: string,
-     *     MaxKeys?: int,
-     *     Prefix?: string,
-     *     VersionIdMarker?: string,
-     *     ExpectedBucketOwner?: string,
-     *     RequestPayer?: 'requester',
-     *     OptionalObjectAttributes?: list<'RestoreStatus'>
+     *     Delimiter?: string|null,
+     *     EncodingType?: 'url'|null,
+     *     KeyMarker?: string|null,
+     *     MaxKeys?: int|null,
+     *     Prefix?: string|null,
+     *     VersionIdMarker?: string|null,
+     *     ExpectedBucketOwner?: string|null,
+     *     RequestPayer?: 'requester'|null,
+     *     OptionalObjectAttributes?: list<'RestoreStatus'>|null
      * } $args
      */
     public function __construct(array $args)

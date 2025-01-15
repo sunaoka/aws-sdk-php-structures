@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailBlankingImage
+ * @property string|null $AvailBlankingImage
  */
 class AvailBlanking extends Shape
 {
     /**
-     * @param array{AvailBlankingImage?: string} $args
+     * @param array{AvailBlankingImage?: string|null} $args
      */
     public function __construct(array $args = [])
     {

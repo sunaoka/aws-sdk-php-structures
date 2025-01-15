@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SecurityLake\UpdateDataLake\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INITIALIZED'|'PENDING'|'COMPLETED'|'FAILED' $createStatus
+ * @property 'INITIALIZED'|'PENDING'|'COMPLETED'|'FAILED'|null $createStatus
  * @property string $dataLakeArn
- * @property DataLakeEncryptionConfiguration $encryptionConfiguration
- * @property DataLakeLifecycleConfiguration $lifecycleConfiguration
+ * @property DataLakeEncryptionConfiguration|null $encryptionConfiguration
+ * @property DataLakeLifecycleConfiguration|null $lifecycleConfiguration
  * @property string $region
- * @property DataLakeReplicationConfiguration $replicationConfiguration
- * @property string $s3BucketArn
- * @property DataLakeUpdateStatus $updateStatus
+ * @property DataLakeReplicationConfiguration|null $replicationConfiguration
+ * @property string|null $s3BucketArn
+ * @property DataLakeUpdateStatus|null $updateStatus
  */
 class DataLakeResource extends Shape
 {
     /**
      * @param array{
-     *     createStatus?: 'INITIALIZED'|'PENDING'|'COMPLETED'|'FAILED',
+     *     createStatus?: 'INITIALIZED'|'PENDING'|'COMPLETED'|'FAILED'|null,
      *     dataLakeArn: string,
-     *     encryptionConfiguration?: DataLakeEncryptionConfiguration,
-     *     lifecycleConfiguration?: DataLakeLifecycleConfiguration,
+     *     encryptionConfiguration?: DataLakeEncryptionConfiguration|null,
+     *     lifecycleConfiguration?: DataLakeLifecycleConfiguration|null,
      *     region: string,
-     *     replicationConfiguration?: DataLakeReplicationConfiguration,
-     *     s3BucketArn?: string,
-     *     updateStatus?: DataLakeUpdateStatus
+     *     replicationConfiguration?: DataLakeReplicationConfiguration|null,
+     *     s3BucketArn?: string|null,
+     *     updateStatus?: DataLakeUpdateStatus|null
      * } $args
      */
     public function __construct(array $args)

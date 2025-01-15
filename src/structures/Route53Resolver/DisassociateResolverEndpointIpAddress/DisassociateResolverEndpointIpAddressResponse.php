@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\DisassociateResolverEndpointIpA
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ResolverEndpoint $ResolverEndpoint
+ * @property Shapes\ResolverEndpoint|null $ResolverEndpoint
  */
 class DisassociateResolverEndpointIpAddressResponse extends Response
 {

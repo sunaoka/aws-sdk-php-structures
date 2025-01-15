@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CacheSubnetGroupName
- * @property string $CacheSubnetGroupDescription
- * @property list<string> $SubnetIds
+ * @property string|null $CacheSubnetGroupDescription
+ * @property list<string>|null $SubnetIds
  */
 class ModifyCacheSubnetGroupRequest extends Request
 {
     /**
      * @param array{
      *     CacheSubnetGroupName: string,
-     *     CacheSubnetGroupDescription?: string,
-     *     SubnetIds?: list<string>
+     *     CacheSubnetGroupDescription?: string|null,
+     *     SubnetIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

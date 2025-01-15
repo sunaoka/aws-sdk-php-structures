@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateVpcEndpointServiceConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'pendingVerification'|'verified'|'failed' $State
- * @property string $Type
- * @property string $Value
- * @property string $Name
+ * @property 'pendingVerification'|'verified'|'failed'|null $State
+ * @property string|null $Type
+ * @property string|null $Value
+ * @property string|null $Name
  */
 class PrivateDnsNameConfiguration extends Shape
 {
     /**
      * @param array{
-     *     State?: 'pendingVerification'|'verified'|'failed',
-     *     Type?: string,
-     *     Value?: string,
-     *     Name?: string
+     *     State?: 'pendingVerification'|'verified'|'failed'|null,
+     *     Type?: string|null,
+     *     Value?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

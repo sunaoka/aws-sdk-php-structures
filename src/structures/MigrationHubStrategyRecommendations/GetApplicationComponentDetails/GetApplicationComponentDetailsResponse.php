@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetApplicat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ApplicationComponentDetail $applicationComponentDetail
- * @property list<Shapes\AssociatedApplication> $associatedApplications
- * @property list<string> $associatedServerIds
- * @property bool $moreApplicationResource
+ * @property Shapes\ApplicationComponentDetail|null $applicationComponentDetail
+ * @property list<Shapes\AssociatedApplication>|null $associatedApplications
+ * @property list<string>|null $associatedServerIds
+ * @property bool|null $moreApplicationResource
  */
 class GetApplicationComponentDetailsResponse extends Response
 {

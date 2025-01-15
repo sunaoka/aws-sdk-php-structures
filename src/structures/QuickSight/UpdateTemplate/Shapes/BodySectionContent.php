@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SectionLayoutConfiguration $Layout
+ * @property SectionLayoutConfiguration|null $Layout
  */
 class BodySectionContent extends Shape
 {
     /**
-     * @param array{Layout?: SectionLayoutConfiguration} $args
+     * @param array{Layout?: SectionLayoutConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\S3Control\GetStorageLensGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $MatchAnyPrefix
- * @property list<string> $MatchAnySuffix
- * @property list<S3Tag> $MatchAnyTag
- * @property MatchObjectAge $MatchObjectAge
- * @property MatchObjectSize $MatchObjectSize
- * @property StorageLensGroupAndOperator $And
- * @property StorageLensGroupOrOperator $Or
+ * @property list<string>|null $MatchAnyPrefix
+ * @property list<string>|null $MatchAnySuffix
+ * @property list<S3Tag>|null $MatchAnyTag
+ * @property MatchObjectAge|null $MatchObjectAge
+ * @property MatchObjectSize|null $MatchObjectSize
+ * @property StorageLensGroupAndOperator|null $And
+ * @property StorageLensGroupOrOperator|null $Or
  */
 class StorageLensGroupFilter extends Shape
 {
     /**
      * @param array{
-     *     MatchAnyPrefix?: list<string>,
-     *     MatchAnySuffix?: list<string>,
-     *     MatchAnyTag?: list<S3Tag>,
-     *     MatchObjectAge?: MatchObjectAge,
-     *     MatchObjectSize?: MatchObjectSize,
-     *     And?: StorageLensGroupAndOperator,
-     *     Or?: StorageLensGroupOrOperator
+     *     MatchAnyPrefix?: list<string>|null,
+     *     MatchAnySuffix?: list<string>|null,
+     *     MatchAnyTag?: list<S3Tag>|null,
+     *     MatchObjectAge?: MatchObjectAge|null,
+     *     MatchObjectSize?: MatchObjectSize|null,
+     *     And?: StorageLensGroupAndOperator|null,
+     *     Or?: StorageLensGroupOrOperator|null
      * } $args
      */
     public function __construct(array $args = [])

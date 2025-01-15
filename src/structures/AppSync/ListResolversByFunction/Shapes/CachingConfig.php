@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $ttl
- * @property list<string> $cachingKeys
+ * @property list<string>|null $cachingKeys
  */
 class CachingConfig extends Shape
 {
     /**
      * @param array{
      *     ttl: int,
-     *     cachingKeys?: list<string>
+     *     cachingKeys?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

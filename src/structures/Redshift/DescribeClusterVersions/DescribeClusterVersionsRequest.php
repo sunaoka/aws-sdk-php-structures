@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeClusterVersions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClusterVersion
- * @property string $ClusterParameterGroupFamily
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $ClusterVersion
+ * @property string|null $ClusterParameterGroupFamily
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeClusterVersionsRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterVersion?: string,
-     *     ClusterParameterGroupFamily?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     ClusterVersion?: string|null,
+     *     ClusterParameterGroupFamily?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

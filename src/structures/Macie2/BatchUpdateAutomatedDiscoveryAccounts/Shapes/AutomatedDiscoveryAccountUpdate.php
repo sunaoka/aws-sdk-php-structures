@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\BatchUpdateAutomatedDiscoveryAccounts\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property 'ENABLED'|'DISABLED' $status
+ * @property string|null $accountId
+ * @property 'ENABLED'|'DISABLED'|null $status
  */
 class AutomatedDiscoveryAccountUpdate extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     status?: 'ENABLED'|'DISABLED'
+     *     accountId?: string|null,
+     *     status?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\BatchCreateRumMetricDefinitionsError> $Errors
- * @property list<Shapes\MetricDefinition> $MetricDefinitions
+ * @property list<Shapes\MetricDefinition>|null $MetricDefinitions
  */
 class BatchCreateRumMetricDefinitionsResponse extends Response
 {

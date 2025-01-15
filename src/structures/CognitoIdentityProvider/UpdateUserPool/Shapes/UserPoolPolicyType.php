@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\UpdateUserPool\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PasswordPolicyType $PasswordPolicy
- * @property SignInPolicyType $SignInPolicy
+ * @property PasswordPolicyType|null $PasswordPolicy
+ * @property SignInPolicyType|null $SignInPolicy
  */
 class UserPoolPolicyType extends Shape
 {
     /**
      * @param array{
-     *     PasswordPolicy?: PasswordPolicyType,
-     *     SignInPolicy?: SignInPolicyType
+     *     PasswordPolicy?: PasswordPolicyType|null,
+     *     SignInPolicy?: SignInPolicyType|null
      * } $args
      */
     public function __construct(array $args = [])

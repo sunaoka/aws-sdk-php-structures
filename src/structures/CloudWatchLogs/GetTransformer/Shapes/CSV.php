@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\GetTransformer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $quoteCharacter
- * @property string $delimiter
- * @property list<string> $columns
- * @property string $source
+ * @property string|null $quoteCharacter
+ * @property string|null $delimiter
+ * @property list<string>|null $columns
+ * @property string|null $source
  */
 class CSV extends Shape
 {
     /**
      * @param array{
-     *     quoteCharacter?: string,
-     *     delimiter?: string,
-     *     columns?: list<string>,
-     *     source?: string
+     *     quoteCharacter?: string|null,
+     *     delimiter?: string|null,
+     *     columns?: list<string>|null,
+     *     source?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ComputationId
- * @property string $Name
- * @property DimensionField $Time
- * @property MeasureField $Value
- * @property int<2, 52> $PeriodSize
+ * @property string|null $Name
+ * @property DimensionField|null $Time
+ * @property MeasureField|null $Value
+ * @property int<2, 52>|null $PeriodSize
  */
 class GrowthRateComputation extends Shape
 {
     /**
      * @param array{
      *     ComputationId: string,
-     *     Name?: string,
-     *     Time?: DimensionField,
-     *     Value?: MeasureField,
-     *     PeriodSize?: int<2, 52>
+     *     Name?: string|null,
+     *     Time?: DimensionField|null,
+     *     Value?: MeasureField|null,
+     *     PeriodSize?: int<2, 52>|null
      * } $args
      */
     public function __construct(array $args)

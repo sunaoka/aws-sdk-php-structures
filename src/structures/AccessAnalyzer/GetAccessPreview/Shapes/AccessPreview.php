@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, Configuration> $configurations
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property 'COMPLETED'|'CREATING'|'FAILED' $status
- * @property AccessPreviewStatusReason $statusReason
+ * @property AccessPreviewStatusReason|null $statusReason
  */
 class AccessPreview extends Shape
 {
@@ -21,7 +21,7 @@ class AccessPreview extends Shape
      *     configurations: array<string, Configuration>,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     status: 'COMPLETED'|'CREATING'|'FAILED',
-     *     statusReason?: AccessPreviewStatusReason
+     *     statusReason?: AccessPreviewStatusReason|null
      * } $args
      */
     public function __construct(array $args)

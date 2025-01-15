@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\UpdateScheduledAction;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $enabled
- * @property \Aws\Api\DateTimeResult $endTime
- * @property string $roleArn
- * @property Shapes\Schedule $schedule
- * @property string $scheduledActionDescription
+ * @property bool|null $enabled
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property string|null $roleArn
+ * @property Shapes\Schedule|null $schedule
+ * @property string|null $scheduledActionDescription
  * @property string $scheduledActionName
- * @property \Aws\Api\DateTimeResult $startTime
- * @property Shapes\TargetAction $targetAction
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property Shapes\TargetAction|null $targetAction
  */
 class UpdateScheduledActionRequest extends Request
 {
     /**
      * @param array{
-     *     enabled?: bool,
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     roleArn?: string,
-     *     schedule?: Shapes\Schedule,
-     *     scheduledActionDescription?: string,
+     *     enabled?: bool|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     roleArn?: string|null,
+     *     schedule?: Shapes\Schedule|null,
+     *     scheduledActionDescription?: string|null,
      *     scheduledActionName: string,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     targetAction?: Shapes\TargetAction
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     targetAction?: Shapes\TargetAction|null
      * } $args
      */
     public function __construct(array $args)

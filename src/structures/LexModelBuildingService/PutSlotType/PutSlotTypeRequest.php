@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
- * @property list<Shapes\EnumerationValue> $enumerationValues
- * @property string $checksum
- * @property 'ORIGINAL_VALUE'|'TOP_RESOLUTION' $valueSelectionStrategy
- * @property bool $createVersion
- * @property string $parentSlotTypeSignature
- * @property list<Shapes\SlotTypeConfiguration> $slotTypeConfigurations
+ * @property string|null $description
+ * @property list<Shapes\EnumerationValue>|null $enumerationValues
+ * @property string|null $checksum
+ * @property 'ORIGINAL_VALUE'|'TOP_RESOLUTION'|null $valueSelectionStrategy
+ * @property bool|null $createVersion
+ * @property string|null $parentSlotTypeSignature
+ * @property list<Shapes\SlotTypeConfiguration>|null $slotTypeConfigurations
  */
 class PutSlotTypeRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     enumerationValues?: list<Shapes\EnumerationValue>,
-     *     checksum?: string,
-     *     valueSelectionStrategy?: 'ORIGINAL_VALUE'|'TOP_RESOLUTION',
-     *     createVersion?: bool,
-     *     parentSlotTypeSignature?: string,
-     *     slotTypeConfigurations?: list<Shapes\SlotTypeConfiguration>
+     *     description?: string|null,
+     *     enumerationValues?: list<Shapes\EnumerationValue>|null,
+     *     checksum?: string|null,
+     *     valueSelectionStrategy?: 'ORIGINAL_VALUE'|'TOP_RESOLUTION'|null,
+     *     createVersion?: bool|null,
+     *     parentSlotTypeSignature?: string|null,
+     *     slotTypeConfigurations?: list<Shapes\SlotTypeConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

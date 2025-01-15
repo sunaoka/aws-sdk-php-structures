@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\Pinpoint\SendUsersMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $APNSPushType
- * @property 'OPEN_APP'|'DEEP_LINK'|'URL' $Action
- * @property int $Badge
- * @property string $Body
- * @property string $Category
- * @property string $CollapseId
- * @property array<string, string> $Data
- * @property string $MediaUrl
- * @property string $PreferredAuthenticationMethod
- * @property string $Priority
- * @property string $RawContent
- * @property bool $SilentPush
- * @property string $Sound
- * @property array<string, list<string>> $Substitutions
- * @property string $ThreadId
- * @property int $TimeToLive
- * @property string $Title
- * @property string $Url
+ * @property string|null $APNSPushType
+ * @property 'OPEN_APP'|'DEEP_LINK'|'URL'|null $Action
+ * @property int|null $Badge
+ * @property string|null $Body
+ * @property string|null $Category
+ * @property string|null $CollapseId
+ * @property array<string, string>|null $Data
+ * @property string|null $MediaUrl
+ * @property string|null $PreferredAuthenticationMethod
+ * @property string|null $Priority
+ * @property string|null $RawContent
+ * @property bool|null $SilentPush
+ * @property string|null $Sound
+ * @property array<string, list<string>>|null $Substitutions
+ * @property string|null $ThreadId
+ * @property int|null $TimeToLive
+ * @property string|null $Title
+ * @property string|null $Url
  */
 class APNSMessage extends Shape
 {
     /**
      * @param array{
-     *     APNSPushType?: string,
-     *     Action?: 'OPEN_APP'|'DEEP_LINK'|'URL',
-     *     Badge?: int,
-     *     Body?: string,
-     *     Category?: string,
-     *     CollapseId?: string,
-     *     Data?: array<string, string>,
-     *     MediaUrl?: string,
-     *     PreferredAuthenticationMethod?: string,
-     *     Priority?: string,
-     *     RawContent?: string,
-     *     SilentPush?: bool,
-     *     Sound?: string,
-     *     Substitutions?: array<string, list<string>>,
-     *     ThreadId?: string,
-     *     TimeToLive?: int,
-     *     Title?: string,
-     *     Url?: string
+     *     APNSPushType?: string|null,
+     *     Action?: 'OPEN_APP'|'DEEP_LINK'|'URL'|null,
+     *     Badge?: int|null,
+     *     Body?: string|null,
+     *     Category?: string|null,
+     *     CollapseId?: string|null,
+     *     Data?: array<string, string>|null,
+     *     MediaUrl?: string|null,
+     *     PreferredAuthenticationMethod?: string|null,
+     *     Priority?: string|null,
+     *     RawContent?: string|null,
+     *     SilentPush?: bool|null,
+     *     Sound?: string|null,
+     *     Substitutions?: array<string, list<string>>|null,
+     *     ThreadId?: string|null,
+     *     TimeToLive?: int|null,
+     *     Title?: string|null,
+     *     Url?: string|null
      * } $args
      */
     public function __construct(array $args = [])

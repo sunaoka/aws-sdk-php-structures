@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudHsm\ModifyHapg;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $HapgArn
+ * @property string|null $HapgArn
  */
 class ModifyHapgResponse extends Response
 {

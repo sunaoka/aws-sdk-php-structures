@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConnect\UpdateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $State
- * @property int $ThresholdSeconds
+ * @property 'ENABLED'|'DISABLED'|null $State
+ * @property int|null $ThresholdSeconds
  */
 class FrozenFrames extends Shape
 {
     /**
      * @param array{
-     *     State?: 'ENABLED'|'DISABLED',
-     *     ThresholdSeconds?: int
+     *     State?: 'ENABLED'|'DISABLED'|null,
+     *     ThresholdSeconds?: int|null
      * } $args
      */
     public function __construct(array $args = [])

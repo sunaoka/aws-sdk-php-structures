@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CodeBuild\BatchGetProjects;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Project> $projects
- * @property list<string> $projectsNotFound
+ * @property list<Shapes\Project>|null $projects
+ * @property list<string>|null $projectsNotFound
  */
 class BatchGetProjectsResponse extends Response
 {

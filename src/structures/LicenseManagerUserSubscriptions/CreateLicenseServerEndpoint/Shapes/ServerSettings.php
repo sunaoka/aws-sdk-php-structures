@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\CreateLicenseSe
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RdsSalSettings $RdsSalSettings
+ * @property RdsSalSettings|null $RdsSalSettings
  */
 class ServerSettings extends Shape
 {
     /**
-     * @param array{RdsSalSettings?: RdsSalSettings} $args
+     * @param array{RdsSalSettings?: RdsSalSettings|null} $args
      */
     public function __construct(array $args = [])
     {

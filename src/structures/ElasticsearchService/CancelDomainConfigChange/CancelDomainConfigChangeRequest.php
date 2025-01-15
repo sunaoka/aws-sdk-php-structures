@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class CancelDomainConfigChangeRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

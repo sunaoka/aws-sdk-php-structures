@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $lambdaArn
- * @property string $componentName
- * @property string $componentVersion
- * @property list<ComponentPlatform> $componentPlatforms
- * @property array<string, ComponentDependencyRequirement> $componentDependencies
- * @property LambdaExecutionParameters $componentLambdaParameters
+ * @property string|null $componentName
+ * @property string|null $componentVersion
+ * @property list<ComponentPlatform>|null $componentPlatforms
+ * @property array<string, ComponentDependencyRequirement>|null $componentDependencies
+ * @property LambdaExecutionParameters|null $componentLambdaParameters
  */
 class LambdaFunctionRecipeSource extends Shape
 {
     /**
      * @param array{
      *     lambdaArn: string,
-     *     componentName?: string,
-     *     componentVersion?: string,
-     *     componentPlatforms?: list<ComponentPlatform>,
-     *     componentDependencies?: array<string, ComponentDependencyRequirement>,
-     *     componentLambdaParameters?: LambdaExecutionParameters
+     *     componentName?: string|null,
+     *     componentVersion?: string|null,
+     *     componentPlatforms?: list<ComponentPlatform>|null,
+     *     componentDependencies?: array<string, ComponentDependencyRequirement>|null,
+     *     componentLambdaParameters?: LambdaExecutionParameters|null
      * } $args
      */
     public function __construct(array $args)

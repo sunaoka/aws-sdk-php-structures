@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\DescribeRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Name
- * @property string $Arn
- * @property string $EventPattern
- * @property string $ScheduleExpression
- * @property 'ENABLED'|'DISABLED' $State
- * @property string $Description
- * @property string $RoleArn
- * @property string $ManagedBy
- * @property string $EventBusName
- * @property string $CreatedBy
+ * @property string|null $Name
+ * @property string|null $Arn
+ * @property string|null $EventPattern
+ * @property string|null $ScheduleExpression
+ * @property 'ENABLED'|'DISABLED'|null $State
+ * @property string|null $Description
+ * @property string|null $RoleArn
+ * @property string|null $ManagedBy
+ * @property string|null $EventBusName
+ * @property string|null $CreatedBy
  */
 class DescribeRuleResponse extends Response
 {

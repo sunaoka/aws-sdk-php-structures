@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $StorageLensArn
  * @property string $HomeRegion
- * @property bool $IsEnabled
+ * @property bool|null $IsEnabled
  */
 class ListStorageLensConfigurationEntry extends Shape
 {
@@ -17,7 +17,7 @@ class ListStorageLensConfigurationEntry extends Shape
      *     Id: string,
      *     StorageLensArn: string,
      *     HomeRegion: string,
-     *     IsEnabled?: bool
+     *     IsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

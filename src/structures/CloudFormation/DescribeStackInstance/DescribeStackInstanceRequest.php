@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StackSetName
  * @property string $StackInstanceAccount
  * @property string $StackInstanceRegion
- * @property 'SELF'|'DELEGATED_ADMIN' $CallAs
+ * @property 'SELF'|'DELEGATED_ADMIN'|null $CallAs
  */
 class DescribeStackInstanceRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeStackInstanceRequest extends Request
      *     StackSetName: string,
      *     StackInstanceAccount: string,
      *     StackInstanceRegion: string,
-     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'
+     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'|null
      * } $args
      */
     public function __construct(array $args)

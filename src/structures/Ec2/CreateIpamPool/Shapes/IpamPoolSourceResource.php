@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateIpamPool\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceId
- * @property 'vpc' $ResourceType
- * @property string $ResourceRegion
- * @property string $ResourceOwner
+ * @property string|null $ResourceId
+ * @property 'vpc'|null $ResourceType
+ * @property string|null $ResourceRegion
+ * @property string|null $ResourceOwner
  */
 class IpamPoolSourceResource extends Shape
 {
     /**
      * @param array{
-     *     ResourceId?: string,
-     *     ResourceType?: 'vpc',
-     *     ResourceRegion?: string,
-     *     ResourceOwner?: string
+     *     ResourceId?: string|null,
+     *     ResourceType?: 'vpc'|null,
+     *     ResourceRegion?: string|null,
+     *     ResourceOwner?: string|null
      * } $args
      */
     public function __construct(array $args = [])

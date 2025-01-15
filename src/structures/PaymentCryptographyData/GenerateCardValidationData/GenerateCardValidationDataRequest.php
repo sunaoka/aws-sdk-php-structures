@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $KeyIdentifier
  * @property string $PrimaryAccountNumber
  * @property Shapes\CardGenerationAttributes $GenerationAttributes
- * @property int<3, 5> $ValidationDataLength
+ * @property int<3, 5>|null $ValidationDataLength
  */
 class GenerateCardValidationDataRequest extends Request
 {
@@ -17,7 +17,7 @@ class GenerateCardValidationDataRequest extends Request
      *     KeyIdentifier: string,
      *     PrimaryAccountNumber: string,
      *     GenerationAttributes: Shapes\CardGenerationAttributes,
-     *     ValidationDataLength?: int<3, 5>
+     *     ValidationDataLength?: int<3, 5>|null
      * } $args
      */
     public function __construct(array $args)

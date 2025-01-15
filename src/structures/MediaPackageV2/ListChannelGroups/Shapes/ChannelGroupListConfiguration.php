@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Arn
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $ModifiedAt
- * @property string $Description
+ * @property string|null $Description
  */
 class ChannelGroupListConfiguration extends Shape
 {
@@ -19,7 +19,7 @@ class ChannelGroupListConfiguration extends Shape
      *     Arn: string,
      *     CreatedAt: \Aws\Api\DateTimeResult,
      *     ModifiedAt: \Aws\Api\DateTimeResult,
-     *     Description?: string
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

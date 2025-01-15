@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Deadline\SearchSteps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $stepId
- * @property string $jobId
- * @property string $queueId
- * @property string $name
- * @property 'CREATE_COMPLETE'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_SUCCEEDED' $lifecycleStatus
- * @property string $lifecycleStatusMessage
- * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE' $taskRunStatus
- * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING' $targetTaskRunStatus
- * @property array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int> $taskRunStatusCounts
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $startedAt
- * @property \Aws\Api\DateTimeResult $endedAt
- * @property ParameterSpace $parameterSpace
+ * @property string|null $stepId
+ * @property string|null $jobId
+ * @property string|null $queueId
+ * @property string|null $name
+ * @property 'CREATE_COMPLETE'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_SUCCEEDED'|null $lifecycleStatus
+ * @property string|null $lifecycleStatusMessage
+ * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE'|null $taskRunStatus
+ * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null $targetTaskRunStatus
+ * @property array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>|null $taskRunStatusCounts
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property ParameterSpace|null $parameterSpace
  */
 class StepSearchSummary extends Shape
 {
     /**
      * @param array{
-     *     stepId?: string,
-     *     jobId?: string,
-     *     queueId?: string,
-     *     name?: string,
-     *     lifecycleStatus?: 'CREATE_COMPLETE'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_SUCCEEDED',
-     *     lifecycleStatusMessage?: string,
-     *     taskRunStatus?: 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE',
-     *     targetTaskRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING',
-     *     taskRunStatusCounts?: array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     startedAt?: \Aws\Api\DateTimeResult,
-     *     endedAt?: \Aws\Api\DateTimeResult,
-     *     parameterSpace?: ParameterSpace
+     *     stepId?: string|null,
+     *     jobId?: string|null,
+     *     queueId?: string|null,
+     *     name?: string|null,
+     *     lifecycleStatus?: 'CREATE_COMPLETE'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_SUCCEEDED'|null,
+     *     lifecycleStatusMessage?: string|null,
+     *     taskRunStatus?: 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE'|null,
+     *     targetTaskRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null,
+     *     taskRunStatusCounts?: array<'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE', int>|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
+     *     endedAt?: \Aws\Api\DateTimeResult|null,
+     *     parameterSpace?: ParameterSpace|null
      * } $args
      */
     public function __construct(array $args = [])

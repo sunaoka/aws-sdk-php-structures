@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\drs\DescribeSourceServers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $nextAttemptDateTime
- * @property string $startDateTime
- * @property list<DataReplicationInitiationStep> $steps
+ * @property string|null $nextAttemptDateTime
+ * @property string|null $startDateTime
+ * @property list<DataReplicationInitiationStep>|null $steps
  */
 class DataReplicationInitiation extends Shape
 {
     /**
      * @param array{
-     *     nextAttemptDateTime?: string,
-     *     startDateTime?: string,
-     *     steps?: list<DataReplicationInitiationStep>
+     *     nextAttemptDateTime?: string|null,
+     *     startDateTime?: string|null,
+     *     steps?: list<DataReplicationInitiationStep>|null
      * } $args
      */
     public function __construct(array $args = [])

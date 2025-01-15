@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaStoreData\ListItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property 'OBJECT'|'FOLDER' $Type
- * @property string $ETag
- * @property \Aws\Api\DateTimeResult $LastModified
- * @property string $ContentType
- * @property int<0, max> $ContentLength
+ * @property string|null $Name
+ * @property 'OBJECT'|'FOLDER'|null $Type
+ * @property string|null $ETag
+ * @property \Aws\Api\DateTimeResult|null $LastModified
+ * @property string|null $ContentType
+ * @property int<0, max>|null $ContentLength
  */
 class Item extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Type?: 'OBJECT'|'FOLDER',
-     *     ETag?: string,
-     *     LastModified?: \Aws\Api\DateTimeResult,
-     *     ContentType?: string,
-     *     ContentLength?: int<0, max>
+     *     Name?: string|null,
+     *     Type?: 'OBJECT'|'FOLDER'|null,
+     *     ETag?: string|null,
+     *     LastModified?: \Aws\Api\DateTimeResult|null,
+     *     ContentType?: string|null,
+     *     ContentLength?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

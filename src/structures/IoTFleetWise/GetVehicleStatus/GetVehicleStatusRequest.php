@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\GetVehicleStatus;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  * @property string $vehicleName
  */
 class GetVehicleStatusRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null,
      *     vehicleName: string
      * } $args
      */

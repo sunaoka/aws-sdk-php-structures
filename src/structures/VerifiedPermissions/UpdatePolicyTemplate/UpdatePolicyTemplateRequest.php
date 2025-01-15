@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $policyStoreId
  * @property string $policyTemplateId
- * @property string $description
+ * @property string|null $description
  * @property string $statement
  */
 class UpdatePolicyTemplateRequest extends Request
@@ -16,7 +16,7 @@ class UpdatePolicyTemplateRequest extends Request
      * @param array{
      *     policyStoreId: string,
      *     policyTemplateId: string,
-     *     description?: string,
+     *     description?: string|null,
      *     statement: string
      * } $args
      */

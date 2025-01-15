@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MailManager\GetRuleSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $ReplaceWith
+ * @property list<string>|null $ReplaceWith
  */
 class ReplaceRecipientAction extends Shape
 {
     /**
-     * @param array{ReplaceWith?: list<string>} $args
+     * @param array{ReplaceWith?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

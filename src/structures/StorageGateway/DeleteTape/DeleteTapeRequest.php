@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GatewayARN
  * @property string $TapeARN
- * @property bool $BypassGovernanceRetention
+ * @property bool|null $BypassGovernanceRetention
  */
 class DeleteTapeRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteTapeRequest extends Request
      * @param array{
      *     GatewayARN: string,
      *     TapeARN: string,
-     *     BypassGovernanceRetention?: bool
+     *     BypassGovernanceRetention?: bool|null
      * } $args
      */
     public function __construct(array $args)

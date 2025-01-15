@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\CreateApplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApplicationArn
+ * @property string|null $ApplicationArn
  */
 class CreateApplicationResponse extends Response
 {

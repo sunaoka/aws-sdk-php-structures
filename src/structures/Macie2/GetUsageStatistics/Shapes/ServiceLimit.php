@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Macie2\GetUsageStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isServiceLimited
- * @property 'TERABYTES' $unit
- * @property int $value
+ * @property bool|null $isServiceLimited
+ * @property 'TERABYTES'|null $unit
+ * @property int|null $value
  */
 class ServiceLimit extends Shape
 {
     /**
      * @param array{
-     *     isServiceLimited?: bool,
-     *     unit?: 'TERABYTES',
-     *     value?: int
+     *     isServiceLimited?: bool|null,
+     *     unit?: 'TERABYTES'|null,
+     *     value?: int|null
      * } $args
      */
     public function __construct(array $args = [])

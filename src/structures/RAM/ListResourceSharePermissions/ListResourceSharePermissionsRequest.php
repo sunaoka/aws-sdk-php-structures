@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $resourceShareArn
- * @property string $nextToken
- * @property int<1, 500> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 500>|null $maxResults
  */
 class ListResourceSharePermissionsRequest extends Request
 {
     /**
      * @param array{
      *     resourceShareArn: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 500>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 500>|null
      * } $args
      */
     public function __construct(array $args)

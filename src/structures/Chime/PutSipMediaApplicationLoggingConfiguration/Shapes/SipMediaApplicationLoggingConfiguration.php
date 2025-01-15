@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Chime\PutSipMediaApplicationLoggingConfiguratio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableSipMediaApplicationMessageLogs
+ * @property bool|null $EnableSipMediaApplicationMessageLogs
  */
 class SipMediaApplicationLoggingConfiguration extends Shape
 {
     /**
-     * @param array{EnableSipMediaApplicationMessageLogs?: bool} $args
+     * @param array{EnableSipMediaApplicationMessageLogs?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

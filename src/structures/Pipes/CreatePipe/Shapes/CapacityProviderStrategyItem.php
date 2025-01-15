@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $capacityProvider
- * @property int<0, 1000> $weight
- * @property int<0, 100000> $base
+ * @property int<0, 1000>|null $weight
+ * @property int<0, 100000>|null $base
  */
 class CapacityProviderStrategyItem extends Shape
 {
     /**
      * @param array{
      *     capacityProvider: string,
-     *     weight?: int<0, 1000>,
-     *     base?: int<0, 100000>
+     *     weight?: int<0, 1000>|null,
+     *     base?: int<0, 100000>|null
      * } $args
      */
     public function __construct(array $args)

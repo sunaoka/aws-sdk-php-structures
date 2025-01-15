@@ -5,24 +5,24 @@ namespace Sunaoka\Aws\Structures\MediaLive\StartMonitorDeployment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property list<string> $CloudWatchAlarmTemplateGroupIds
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $Description
- * @property string $DiscoveryEntryPointArn
- * @property string $ErrorMessage
- * @property list<string> $EventBridgeRuleTemplateGroupIds
- * @property array<string, Shapes\MediaResource> $FailedMediaResourceMap
- * @property string $Id
- * @property \Aws\Api\DateTimeResult $LastDiscoveredAt
- * @property Shapes\SuccessfulMonitorDeployment $LastSuccessfulMonitorDeployment
- * @property array<string, Shapes\MediaResource> $MediaResourceMap
- * @property \Aws\Api\DateTimeResult $ModifiedAt
- * @property bool $MonitorChangesPendingDeployment
- * @property Shapes\MonitorDeployment $MonitorDeployment
- * @property string $Name
- * @property 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'CREATE_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_COMPLETE'|'UPDATE_REVERTED'|'UPDATE_FAILED'|'READY'|'NOT_READY' $Status
- * @property array<string, string> $Tags
+ * @property string|null $Arn
+ * @property list<string>|null $CloudWatchAlarmTemplateGroupIds
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $Description
+ * @property string|null $DiscoveryEntryPointArn
+ * @property string|null $ErrorMessage
+ * @property list<string>|null $EventBridgeRuleTemplateGroupIds
+ * @property array<string, Shapes\MediaResource>|null $FailedMediaResourceMap
+ * @property string|null $Id
+ * @property \Aws\Api\DateTimeResult|null $LastDiscoveredAt
+ * @property Shapes\SuccessfulMonitorDeployment|null $LastSuccessfulMonitorDeployment
+ * @property array<string, Shapes\MediaResource>|null $MediaResourceMap
+ * @property \Aws\Api\DateTimeResult|null $ModifiedAt
+ * @property bool|null $MonitorChangesPendingDeployment
+ * @property Shapes\MonitorDeployment|null $MonitorDeployment
+ * @property string|null $Name
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'CREATE_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_COMPLETE'|'UPDATE_REVERTED'|'UPDATE_FAILED'|'READY'|'NOT_READY'|null $Status
+ * @property array<string, string>|null $Tags
  */
 class StartMonitorDeploymentResponse extends Response
 {

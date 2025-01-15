@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\kendra\DescribeExperience\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ContentSourceConfiguration $ContentSourceConfiguration
- * @property UserIdentityConfiguration $UserIdentityConfiguration
+ * @property ContentSourceConfiguration|null $ContentSourceConfiguration
+ * @property UserIdentityConfiguration|null $UserIdentityConfiguration
  */
 class ExperienceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ContentSourceConfiguration?: ContentSourceConfiguration,
-     *     UserIdentityConfiguration?: UserIdentityConfiguration
+     *     ContentSourceConfiguration?: ContentSourceConfiguration|null,
+     *     UserIdentityConfiguration?: UserIdentityConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DestinationRegion
- * @property int $ManualSnapshotRetentionPeriod
- * @property int $RetentionPeriod
- * @property string $SnapshotCopyGrantName
+ * @property string|null $DestinationRegion
+ * @property int|null $ManualSnapshotRetentionPeriod
+ * @property int|null $RetentionPeriod
+ * @property string|null $SnapshotCopyGrantName
  */
 class AwsRedshiftClusterClusterSnapshotCopyStatus extends Shape
 {
     /**
      * @param array{
-     *     DestinationRegion?: string,
-     *     ManualSnapshotRetentionPeriod?: int,
-     *     RetentionPeriod?: int,
-     *     SnapshotCopyGrantName?: string
+     *     DestinationRegion?: string|null,
+     *     ManualSnapshotRetentionPeriod?: int|null,
+     *     RetentionPeriod?: int|null,
+     *     SnapshotCopyGrantName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

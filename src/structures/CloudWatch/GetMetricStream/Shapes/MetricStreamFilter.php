@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatch\GetMetricStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Namespace
- * @property list<string> $MetricNames
+ * @property string|null $Namespace
+ * @property list<string>|null $MetricNames
  */
 class MetricStreamFilter extends Shape
 {
     /**
      * @param array{
-     *     Namespace?: string,
-     *     MetricNames?: list<string>
+     *     Namespace?: string|null,
+     *     MetricNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

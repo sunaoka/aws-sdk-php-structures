@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AppId
  * @property string $AppName
  * @property string $BackendEnvironmentName
- * @property Shapes\ResourceConfig $ResourceConfig
- * @property string $ResourceName
+ * @property Shapes\ResourceConfig|null $ResourceConfig
+ * @property string|null $ResourceName
  */
 class CreateBackendRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateBackendRequest extends Request
      *     AppId: string,
      *     AppName: string,
      *     BackendEnvironmentName: string,
-     *     ResourceConfig?: Shapes\ResourceConfig,
-     *     ResourceName?: string
+     *     ResourceConfig?: Shapes\ResourceConfig|null,
+     *     ResourceName?: string|null
      * } $args
      */
     public function __construct(array $args)

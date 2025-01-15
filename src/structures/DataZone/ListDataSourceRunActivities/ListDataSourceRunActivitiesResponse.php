@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DataSourceRunActivity> $items
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListDataSourceRunActivitiesResponse extends Response
 {

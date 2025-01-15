@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CidrBlock
- * @property bool $Egress
- * @property IcmpTypeCode $IcmpTypeCode
- * @property string $Ipv6CidrBlock
- * @property PortRangeFromTo $PortRange
- * @property string $Protocol
- * @property string $RuleAction
- * @property int $RuleNumber
+ * @property string|null $CidrBlock
+ * @property bool|null $Egress
+ * @property IcmpTypeCode|null $IcmpTypeCode
+ * @property string|null $Ipv6CidrBlock
+ * @property PortRangeFromTo|null $PortRange
+ * @property string|null $Protocol
+ * @property string|null $RuleAction
+ * @property int|null $RuleNumber
  */
 class AwsEc2NetworkAclEntry extends Shape
 {
     /**
      * @param array{
-     *     CidrBlock?: string,
-     *     Egress?: bool,
-     *     IcmpTypeCode?: IcmpTypeCode,
-     *     Ipv6CidrBlock?: string,
-     *     PortRange?: PortRangeFromTo,
-     *     Protocol?: string,
-     *     RuleAction?: string,
-     *     RuleNumber?: int
+     *     CidrBlock?: string|null,
+     *     Egress?: bool|null,
+     *     IcmpTypeCode?: IcmpTypeCode|null,
+     *     Ipv6CidrBlock?: string|null,
+     *     PortRange?: PortRangeFromTo|null,
+     *     Protocol?: string|null,
+     *     RuleAction?: string|null,
+     *     RuleNumber?: int|null
      * } $args
      */
     public function __construct(array $args = [])

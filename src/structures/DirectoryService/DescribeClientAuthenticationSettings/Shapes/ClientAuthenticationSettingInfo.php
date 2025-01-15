@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DirectoryService\DescribeClientAuthenticationSe
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SmartCard'|'SmartCardOrPassword' $Type
- * @property 'Enabled'|'Disabled' $Status
- * @property \Aws\Api\DateTimeResult $LastUpdatedDateTime
+ * @property 'SmartCard'|'SmartCardOrPassword'|null $Type
+ * @property 'Enabled'|'Disabled'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedDateTime
  */
 class ClientAuthenticationSettingInfo extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'SmartCard'|'SmartCardOrPassword',
-     *     Status?: 'Enabled'|'Disabled',
-     *     LastUpdatedDateTime?: \Aws\Api\DateTimeResult
+     *     Type?: 'SmartCard'|'SmartCardOrPassword'|null,
+     *     Status?: 'Enabled'|'Disabled'|null,
+     *     LastUpdatedDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Metric
- * @property DimensionGroup $GroupBy
- * @property array<string, string> $Filter
+ * @property DimensionGroup|null $GroupBy
+ * @property array<string, string>|null $Filter
  */
 class MetricQuery extends Shape
 {
     /**
      * @param array{
      *     Metric: string,
-     *     GroupBy?: DimensionGroup,
-     *     Filter?: array<string, string>
+     *     GroupBy?: DimensionGroup|null,
+     *     Filter?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

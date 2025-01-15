@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $RoleARN
- * @property string $CollectionEndpoint
+ * @property string|null $CollectionEndpoint
  * @property string $IndexName
- * @property AmazonOpenSearchServerlessBufferingHints $BufferingHints
- * @property AmazonOpenSearchServerlessRetryOptions $RetryOptions
- * @property 'FailedDocumentsOnly'|'AllDocuments' $S3BackupMode
+ * @property AmazonOpenSearchServerlessBufferingHints|null $BufferingHints
+ * @property AmazonOpenSearchServerlessRetryOptions|null $RetryOptions
+ * @property 'FailedDocumentsOnly'|'AllDocuments'|null $S3BackupMode
  * @property S3DestinationConfiguration $S3Configuration
- * @property ProcessingConfiguration $ProcessingConfiguration
- * @property CloudWatchLoggingOptions $CloudWatchLoggingOptions
- * @property VpcConfiguration $VpcConfiguration
+ * @property ProcessingConfiguration|null $ProcessingConfiguration
+ * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
+ * @property VpcConfiguration|null $VpcConfiguration
  */
 class AmazonOpenSearchServerlessDestinationConfiguration extends Shape
 {
     /**
      * @param array{
      *     RoleARN: string,
-     *     CollectionEndpoint?: string,
+     *     CollectionEndpoint?: string|null,
      *     IndexName: string,
-     *     BufferingHints?: AmazonOpenSearchServerlessBufferingHints,
-     *     RetryOptions?: AmazonOpenSearchServerlessRetryOptions,
-     *     S3BackupMode?: 'FailedDocumentsOnly'|'AllDocuments',
+     *     BufferingHints?: AmazonOpenSearchServerlessBufferingHints|null,
+     *     RetryOptions?: AmazonOpenSearchServerlessRetryOptions|null,
+     *     S3BackupMode?: 'FailedDocumentsOnly'|'AllDocuments'|null,
      *     S3Configuration: S3DestinationConfiguration,
-     *     ProcessingConfiguration?: ProcessingConfiguration,
-     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions,
-     *     VpcConfiguration?: VpcConfiguration
+     *     ProcessingConfiguration?: ProcessingConfiguration|null,
+     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
+     *     VpcConfiguration?: VpcConfiguration|null
      * } $args
      */
     public function __construct(array $args)

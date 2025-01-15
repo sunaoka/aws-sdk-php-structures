@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\CreateStreamProcessor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FaceSearchSettings $FaceSearch
- * @property ConnectedHomeSettings $ConnectedHome
+ * @property FaceSearchSettings|null $FaceSearch
+ * @property ConnectedHomeSettings|null $ConnectedHome
  */
 class StreamProcessorSettings extends Shape
 {
     /**
      * @param array{
-     *     FaceSearch?: FaceSearchSettings,
-     *     ConnectedHome?: ConnectedHomeSettings
+     *     FaceSearch?: FaceSearchSettings|null,
+     *     ConnectedHome?: ConnectedHomeSettings|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'AWS_ORGANIZATION'|'NONE' $GrantDistributionScope
  * @property string $ReceiverPrincipal
  * @property string $SourceDataSetId
- * @property \Aws\Api\DateTimeResult $EndsAt
- * @property string $Description
- * @property array<string, string> $Tags
+ * @property \Aws\Api\DateTimeResult|null $EndsAt
+ * @property string|null $Description
+ * @property array<string, string>|null $Tags
  */
 class CreateDataGrantRequest extends Request
 {
@@ -21,9 +21,9 @@ class CreateDataGrantRequest extends Request
      *     GrantDistributionScope: 'AWS_ORGANIZATION'|'NONE',
      *     ReceiverPrincipal: string,
      *     SourceDataSetId: string,
-     *     EndsAt?: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     Tags?: array<string, string>
+     *     EndsAt?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

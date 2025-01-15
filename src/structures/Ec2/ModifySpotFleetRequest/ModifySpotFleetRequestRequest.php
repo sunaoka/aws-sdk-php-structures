@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifySpotFleetRequest;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\LaunchTemplateConfig> $LaunchTemplateConfigs
- * @property int $OnDemandTargetCapacity
- * @property string $Context
+ * @property list<Shapes\LaunchTemplateConfig>|null $LaunchTemplateConfigs
+ * @property int|null $OnDemandTargetCapacity
+ * @property string|null $Context
  * @property string $SpotFleetRequestId
- * @property int $TargetCapacity
- * @property 'noTermination'|'default' $ExcessCapacityTerminationPolicy
+ * @property int|null $TargetCapacity
+ * @property 'noTermination'|'default'|null $ExcessCapacityTerminationPolicy
  */
 class ModifySpotFleetRequestRequest extends Request
 {
     /**
      * @param array{
-     *     LaunchTemplateConfigs?: list<Shapes\LaunchTemplateConfig>,
-     *     OnDemandTargetCapacity?: int,
-     *     Context?: string,
+     *     LaunchTemplateConfigs?: list<Shapes\LaunchTemplateConfig>|null,
+     *     OnDemandTargetCapacity?: int|null,
+     *     Context?: string|null,
      *     SpotFleetRequestId: string,
-     *     TargetCapacity?: int,
-     *     ExcessCapacityTerminationPolicy?: 'noTermination'|'default'
+     *     TargetCapacity?: int|null,
+     *     ExcessCapacityTerminationPolicy?: 'noTermination'|'default'|null
      * } $args
      */
     public function __construct(array $args)

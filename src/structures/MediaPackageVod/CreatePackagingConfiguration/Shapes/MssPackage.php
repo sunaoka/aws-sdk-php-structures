@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\CreatePackagingConfiguration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MssEncryption $Encryption
+ * @property MssEncryption|null $Encryption
  * @property list<MssManifest> $MssManifests
- * @property int $SegmentDurationSeconds
+ * @property int|null $SegmentDurationSeconds
  */
 class MssPackage extends Shape
 {
     /**
      * @param array{
-     *     Encryption?: MssEncryption,
+     *     Encryption?: MssEncryption|null,
      *     MssManifests: list<MssManifest>,
-     *     SegmentDurationSeconds?: int
+     *     SegmentDurationSeconds?: int|null
      * } $args
      */
     public function __construct(array $args)

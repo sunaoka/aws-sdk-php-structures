@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudFormation\DeregisterType;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Arn
- * @property 'RESOURCE'|'MODULE'|'HOOK' $Type
- * @property string $TypeName
- * @property string $VersionId
+ * @property string|null $Arn
+ * @property 'RESOURCE'|'MODULE'|'HOOK'|null $Type
+ * @property string|null $TypeName
+ * @property string|null $VersionId
  */
 class DeregisterTypeRequest extends Request
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Type?: 'RESOURCE'|'MODULE'|'HOOK',
-     *     TypeName?: string,
-     *     VersionId?: string
+     *     Arn?: string|null,
+     *     Type?: 'RESOURCE'|'MODULE'|'HOOK'|null,
+     *     TypeName?: string|null,
+     *     VersionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

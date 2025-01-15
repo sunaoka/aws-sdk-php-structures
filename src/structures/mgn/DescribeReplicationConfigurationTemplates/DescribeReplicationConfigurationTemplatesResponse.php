@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\mgn\DescribeReplicationConfigurationTemplates;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ReplicationConfigurationTemplate> $items
- * @property string $nextToken
+ * @property list<Shapes\ReplicationConfigurationTemplate>|null $items
+ * @property string|null $nextToken
  */
 class DescribeReplicationConfigurationTemplatesResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LookoutforVision\DetectAnomalies\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Type
+ * @property string|null $Type
  */
 class ImageSource extends Shape
 {
     /**
-     * @param array{Type?: string} $args
+     * @param array{Type?: string|null} $args
      */
     public function __construct(array $args = [])
     {

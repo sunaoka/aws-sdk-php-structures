@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $eventId
- * @property list<EventReference> $eventReferences
+ * @property list<EventReference>|null $eventReferences
  * @property \Aws\Api\DateTimeResult $eventTime
  * @property string $eventType
  * @property \Aws\Api\DateTimeResult $eventUpdatedTime
@@ -17,7 +17,7 @@ class EventSummary extends Shape
     /**
      * @param array{
      *     eventId: string,
-     *     eventReferences?: list<EventReference>,
+     *     eventReferences?: list<EventReference>|null,
      *     eventTime: \Aws\Api\DateTimeResult,
      *     eventType: string,
      *     eventUpdatedTime: \Aws\Api\DateTimeResult,

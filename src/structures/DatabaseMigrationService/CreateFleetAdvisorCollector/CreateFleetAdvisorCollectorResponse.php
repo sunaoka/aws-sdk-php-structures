@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateFleetAdvisorColl
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $CollectorReferencedId
- * @property string $CollectorName
- * @property string $Description
- * @property string $ServiceAccessRoleArn
- * @property string $S3BucketName
+ * @property string|null $CollectorReferencedId
+ * @property string|null $CollectorName
+ * @property string|null $Description
+ * @property string|null $ServiceAccessRoleArn
+ * @property string|null $S3BucketName
  */
 class CreateFleetAdvisorCollectorResponse extends Response
 {

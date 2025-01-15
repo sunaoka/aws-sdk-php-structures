@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<GridLayoutElement> $Elements
- * @property GridLayoutCanvasSizeOptions $CanvasSizeOptions
+ * @property GridLayoutCanvasSizeOptions|null $CanvasSizeOptions
  */
 class GridLayoutConfiguration extends Shape
 {
     /**
      * @param array{
      *     Elements: list<GridLayoutElement>,
-     *     CanvasSizeOptions?: GridLayoutCanvasSizeOptions
+     *     CanvasSizeOptions?: GridLayoutCanvasSizeOptions|null
      * } $args
      */
     public function __construct(array $args)

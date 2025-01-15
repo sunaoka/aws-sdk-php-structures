@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Support\CreateCase;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $caseId
+ * @property string|null $caseId
  */
 class CreateCaseResponse extends Response
 {

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $blueprintArn
- * @property string $blueprintVersion
- * @property 'DEVELOPMENT'|'LIVE' $blueprintStage
- * @property string $blueprintName
+ * @property string|null $blueprintVersion
+ * @property 'DEVELOPMENT'|'LIVE'|null $blueprintStage
+ * @property string|null $blueprintName
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
  */
 class BlueprintSummary extends Shape
 {
     /**
      * @param array{
      *     blueprintArn: string,
-     *     blueprintVersion?: string,
-     *     blueprintStage?: 'DEVELOPMENT'|'LIVE',
-     *     blueprintName?: string,
+     *     blueprintVersion?: string|null,
+     *     blueprintStage?: 'DEVELOPMENT'|'LIVE'|null,
+     *     blueprintName?: string|null,
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     lastModifiedTime?: \Aws\Api\DateTimeResult
+     *     lastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

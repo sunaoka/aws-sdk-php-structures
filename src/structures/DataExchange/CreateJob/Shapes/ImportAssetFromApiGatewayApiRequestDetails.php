@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\DataExchange\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApiDescription
+ * @property string|null $ApiDescription
  * @property string $ApiId
- * @property string $ApiKey
+ * @property string|null $ApiKey
  * @property string $ApiName
  * @property string $ApiSpecificationMd5Hash
  * @property string $DataSetId
@@ -19,9 +19,9 @@ class ImportAssetFromApiGatewayApiRequestDetails extends Shape
 {
     /**
      * @param array{
-     *     ApiDescription?: string,
+     *     ApiDescription?: string|null,
      *     ApiId: string,
-     *     ApiKey?: string,
+     *     ApiKey?: string|null,
      *     ApiName: string,
      *     ApiSpecificationMd5Hash: string,
      *     DataSetId: string,

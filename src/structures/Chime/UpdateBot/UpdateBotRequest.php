@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $BotId
- * @property bool $Disabled
+ * @property bool|null $Disabled
  */
 class UpdateBotRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateBotRequest extends Request
      * @param array{
      *     AccountId: string,
      *     BotId: string,
-     *     Disabled?: bool
+     *     Disabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

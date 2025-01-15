@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\CheckAccessNotGranted\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
- * @property int $statementIndex
- * @property string $statementId
+ * @property string|null $description
+ * @property int|null $statementIndex
+ * @property string|null $statementId
  */
 class ReasonSummary extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
-     *     statementIndex?: int,
-     *     statementId?: string
+     *     description?: string|null,
+     *     statementIndex?: int|null,
+     *     statementId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Glue\BatchCreatePartition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Values
- * @property \Aws\Api\DateTimeResult $LastAccessTime
- * @property StorageDescriptor $StorageDescriptor
- * @property array<string, string> $Parameters
- * @property \Aws\Api\DateTimeResult $LastAnalyzedTime
+ * @property list<string>|null $Values
+ * @property \Aws\Api\DateTimeResult|null $LastAccessTime
+ * @property StorageDescriptor|null $StorageDescriptor
+ * @property array<string, string>|null $Parameters
+ * @property \Aws\Api\DateTimeResult|null $LastAnalyzedTime
  */
 class PartitionInput extends Shape
 {
     /**
      * @param array{
-     *     Values?: list<string>,
-     *     LastAccessTime?: \Aws\Api\DateTimeResult,
-     *     StorageDescriptor?: StorageDescriptor,
-     *     Parameters?: array<string, string>,
-     *     LastAnalyzedTime?: \Aws\Api\DateTimeResult
+     *     Values?: list<string>|null,
+     *     LastAccessTime?: \Aws\Api\DateTimeResult|null,
+     *     StorageDescriptor?: StorageDescriptor|null,
+     *     Parameters?: array<string, string>|null,
+     *     LastAnalyzedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

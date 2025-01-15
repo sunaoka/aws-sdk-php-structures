@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OrganizationId
- * @property string $Marker
- * @property int<1, 999> $Limit
+ * @property string|null $Marker
+ * @property int<1, 999>|null $Limit
  */
 class DescribeNotificationSubscriptionsRequest extends Request
 {
     /**
      * @param array{
      *     OrganizationId: string,
-     *     Marker?: string,
-     *     Limit?: int<1, 999>
+     *     Marker?: string|null,
+     *     Limit?: int<1, 999>|null
      * } $args
      */
     public function __construct(array $args)

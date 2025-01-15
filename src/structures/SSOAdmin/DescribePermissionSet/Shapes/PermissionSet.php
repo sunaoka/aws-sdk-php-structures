@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\DescribePermissionSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property string $Description
- * @property string $Name
- * @property string $PermissionSetArn
- * @property string $RelayState
- * @property string $SessionDuration
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property string|null $Description
+ * @property string|null $Name
+ * @property string|null $PermissionSetArn
+ * @property string|null $RelayState
+ * @property string|null $SessionDuration
  */
 class PermissionSet extends Shape
 {
     /**
      * @param array{
-     *     CreatedDate?: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     Name?: string,
-     *     PermissionSetArn?: string,
-     *     RelayState?: string,
-     *     SessionDuration?: string
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     Name?: string|null,
+     *     PermissionSetArn?: string|null,
+     *     RelayState?: string|null,
+     *     SessionDuration?: string|null
      * } $args
      */
     public function __construct(array $args = [])

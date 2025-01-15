@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ecr\DescribeImageScanFindings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $registryId
+ * @property string|null $registryId
  * @property string $repositoryName
  * @property Shapes\ImageIdentifier $imageId
- * @property string $nextToken
- * @property int<1, 1000> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 1000>|null $maxResults
  */
 class DescribeImageScanFindingsRequest extends Request
 {
     /**
      * @param array{
-     *     registryId?: string,
+     *     registryId?: string|null,
      *     repositoryName: string,
      *     imageId: Shapes\ImageIdentifier,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 1000>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

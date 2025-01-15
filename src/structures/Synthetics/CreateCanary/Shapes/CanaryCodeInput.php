@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\Synthetics\CreateCanary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3Bucket
- * @property string $S3Key
- * @property string $S3Version
- * @property string|resource|\Psr\Http\Message\StreamInterface $ZipFile
+ * @property string|null $S3Bucket
+ * @property string|null $S3Key
+ * @property string|null $S3Version
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $ZipFile
  * @property string $Handler
  */
 class CanaryCodeInput extends Shape
 {
     /**
      * @param array{
-     *     S3Bucket?: string,
-     *     S3Key?: string,
-     *     S3Version?: string,
-     *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface,
+     *     S3Bucket?: string|null,
+     *     S3Key?: string|null,
+     *     S3Version?: string|null,
+     *     ZipFile?: string|resource|\Psr\Http\Message\StreamInterface|null,
      *     Handler: string
      * } $args
      */

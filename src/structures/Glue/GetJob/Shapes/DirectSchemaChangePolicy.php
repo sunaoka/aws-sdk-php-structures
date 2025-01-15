@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableUpdateCatalog
- * @property 'UPDATE_IN_DATABASE'|'LOG' $UpdateBehavior
- * @property string $Table
- * @property string $Database
+ * @property bool|null $EnableUpdateCatalog
+ * @property 'UPDATE_IN_DATABASE'|'LOG'|null $UpdateBehavior
+ * @property string|null $Table
+ * @property string|null $Database
  */
 class DirectSchemaChangePolicy extends Shape
 {
     /**
      * @param array{
-     *     EnableUpdateCatalog?: bool,
-     *     UpdateBehavior?: 'UPDATE_IN_DATABASE'|'LOG',
-     *     Table?: string,
-     *     Database?: string
+     *     EnableUpdateCatalog?: bool|null,
+     *     UpdateBehavior?: 'UPDATE_IN_DATABASE'|'LOG'|null,
+     *     Table?: string|null,
+     *     Database?: string|null
      * } $args
      */
     public function __construct(array $args = [])

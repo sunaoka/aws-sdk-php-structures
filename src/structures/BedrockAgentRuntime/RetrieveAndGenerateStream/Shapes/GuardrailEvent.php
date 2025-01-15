@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INTERVENED'|'NONE' $action
+ * @property 'INTERVENED'|'NONE'|null $action
  */
 class GuardrailEvent extends Shape
 {
     /**
-     * @param array{action?: 'INTERVENED'|'NONE'} $args
+     * @param array{action?: 'INTERVENED'|'NONE'|null} $args
      */
     public function __construct(array $args = [])
     {

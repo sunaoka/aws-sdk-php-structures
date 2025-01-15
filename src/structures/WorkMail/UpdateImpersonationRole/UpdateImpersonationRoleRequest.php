@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ImpersonationRoleId
  * @property string $Name
  * @property 'FULL_ACCESS'|'READ_ONLY' $Type
- * @property string $Description
+ * @property string|null $Description
  * @property list<Shapes\ImpersonationRule> $Rules
  */
 class UpdateImpersonationRoleRequest extends Request
@@ -20,7 +20,7 @@ class UpdateImpersonationRoleRequest extends Request
      *     ImpersonationRoleId: string,
      *     Name: string,
      *     Type: 'FULL_ACCESS'|'READ_ONLY',
-     *     Description?: string,
+     *     Description?: string|null,
      *     Rules: list<Shapes\ImpersonationRule>
      * } $args
      */

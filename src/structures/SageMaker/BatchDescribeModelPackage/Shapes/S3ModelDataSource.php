@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $S3Uri
  * @property 'S3Prefix'|'S3Object' $S3DataType
  * @property 'None'|'Gzip' $CompressionType
- * @property ModelAccessConfig $ModelAccessConfig
- * @property InferenceHubAccessConfig $HubAccessConfig
- * @property string $ManifestS3Uri
- * @property string $ETag
- * @property string $ManifestEtag
+ * @property ModelAccessConfig|null $ModelAccessConfig
+ * @property InferenceHubAccessConfig|null $HubAccessConfig
+ * @property string|null $ManifestS3Uri
+ * @property string|null $ETag
+ * @property string|null $ManifestEtag
  */
 class S3ModelDataSource extends Shape
 {
@@ -21,11 +21,11 @@ class S3ModelDataSource extends Shape
      *     S3Uri: string,
      *     S3DataType: 'S3Prefix'|'S3Object',
      *     CompressionType: 'None'|'Gzip',
-     *     ModelAccessConfig?: ModelAccessConfig,
-     *     HubAccessConfig?: InferenceHubAccessConfig,
-     *     ManifestS3Uri?: string,
-     *     ETag?: string,
-     *     ManifestEtag?: string
+     *     ModelAccessConfig?: ModelAccessConfig|null,
+     *     HubAccessConfig?: InferenceHubAccessConfig|null,
+     *     ManifestS3Uri?: string|null,
+     *     ETag?: string|null,
+     *     ManifestEtag?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBSnapshots;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\DBSnapshot> $DBSnapshots
+ * @property string|null $Marker
+ * @property list<Shapes\DBSnapshot>|null $DBSnapshots
  */
 class DescribeDBSnapshotsResponse extends Response
 {

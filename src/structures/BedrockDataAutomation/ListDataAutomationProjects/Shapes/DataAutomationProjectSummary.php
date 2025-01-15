@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $projectArn
- * @property 'DEVELOPMENT'|'LIVE' $projectStage
- * @property string $projectName
+ * @property 'DEVELOPMENT'|'LIVE'|null $projectStage
+ * @property string|null $projectName
  * @property \Aws\Api\DateTimeResult $creationTime
  */
 class DataAutomationProjectSummary extends Shape
@@ -15,8 +15,8 @@ class DataAutomationProjectSummary extends Shape
     /**
      * @param array{
      *     projectArn: string,
-     *     projectStage?: 'DEVELOPMENT'|'LIVE',
-     *     projectName?: string,
+     *     projectStage?: 'DEVELOPMENT'|'LIVE'|null,
+     *     projectName?: string|null,
      *     creationTime: \Aws\Api\DateTimeResult
      * } $args
      */

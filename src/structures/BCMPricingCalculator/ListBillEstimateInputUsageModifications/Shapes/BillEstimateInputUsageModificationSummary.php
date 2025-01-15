@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $serviceCode
  * @property string $usageType
  * @property string $operation
- * @property string $location
- * @property string $availabilityZone
- * @property string $id
- * @property string $group
- * @property string $usageAccountId
- * @property list<UsageQuantity> $quantities
- * @property HistoricalUsageEntity $historicalUsage
+ * @property string|null $location
+ * @property string|null $availabilityZone
+ * @property string|null $id
+ * @property string|null $group
+ * @property string|null $usageAccountId
+ * @property list<UsageQuantity>|null $quantities
+ * @property HistoricalUsageEntity|null $historicalUsage
  */
 class BillEstimateInputUsageModificationSummary extends Shape
 {
@@ -23,13 +23,13 @@ class BillEstimateInputUsageModificationSummary extends Shape
      *     serviceCode: string,
      *     usageType: string,
      *     operation: string,
-     *     location?: string,
-     *     availabilityZone?: string,
-     *     id?: string,
-     *     group?: string,
-     *     usageAccountId?: string,
-     *     quantities?: list<UsageQuantity>,
-     *     historicalUsage?: HistoricalUsageEntity
+     *     location?: string|null,
+     *     availabilityZone?: string|null,
+     *     id?: string|null,
+     *     group?: string|null,
+     *     usageAccountId?: string|null,
+     *     quantities?: list<UsageQuantity>|null,
+     *     historicalUsage?: HistoricalUsageEntity|null
      * } $args
      */
     public function __construct(array $args)

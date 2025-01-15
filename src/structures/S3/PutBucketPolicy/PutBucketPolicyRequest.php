@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Bucket
- * @property string $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
- * @property bool $ConfirmRemoveSelfBucketAccess
+ * @property string|null $ContentMD5
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property bool|null $ConfirmRemoveSelfBucketAccess
  * @property string $Policy
- * @property string $ExpectedBucketOwner
+ * @property string|null $ExpectedBucketOwner
  */
 class PutBucketPolicyRequest extends Request
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     ContentMD5?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256',
-     *     ConfirmRemoveSelfBucketAccess?: bool,
+     *     ContentMD5?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     ConfirmRemoveSelfBucketAccess?: bool|null,
      *     Policy: string,
-     *     ExpectedBucketOwner?: string
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackName
- * @property list<'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'> $StackResourceDriftStatusFilters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property list<'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'>|null $StackResourceDriftStatusFilters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class DescribeStackResourceDriftsRequest extends Request
 {
     /**
      * @param array{
      *     StackName: string,
-     *     StackResourceDriftStatusFilters?: list<'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     StackResourceDriftStatusFilters?: list<'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\TranscribeService\GetCallAnalyticsJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VocabularyName
- * @property string $VocabularyFilterName
- * @property string $LanguageModelName
+ * @property string|null $VocabularyName
+ * @property string|null $VocabularyFilterName
+ * @property string|null $LanguageModelName
  */
 class LanguageIdSettings extends Shape
 {
     /**
      * @param array{
-     *     VocabularyName?: string,
-     *     VocabularyFilterName?: string,
-     *     LanguageModelName?: string
+     *     VocabularyName?: string|null,
+     *     VocabularyFilterName?: string|null,
+     *     LanguageModelName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

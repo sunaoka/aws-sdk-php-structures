@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Pipes\UpdatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Filter> $Filters
+ * @property list<Filter>|null $Filters
  */
 class FilterCriteria extends Shape
 {
     /**
-     * @param array{Filters?: list<Filter>} $args
+     * @param array{Filters?: list<Filter>|null} $args
      */
     public function __construct(array $args = [])
     {

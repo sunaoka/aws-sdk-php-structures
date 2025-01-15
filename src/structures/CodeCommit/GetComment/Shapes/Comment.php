@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\CodeCommit\GetComment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $commentId
- * @property string $content
- * @property string $inReplyTo
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property \Aws\Api\DateTimeResult $lastModifiedDate
- * @property string $authorArn
- * @property bool $deleted
- * @property string $clientRequestToken
- * @property list<string> $callerReactions
- * @property array<string, int> $reactionCounts
+ * @property string|null $commentId
+ * @property string|null $content
+ * @property string|null $inReplyTo
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedDate
+ * @property string|null $authorArn
+ * @property bool|null $deleted
+ * @property string|null $clientRequestToken
+ * @property list<string>|null $callerReactions
+ * @property array<string, int>|null $reactionCounts
  */
 class Comment extends Shape
 {
     /**
      * @param array{
-     *     commentId?: string,
-     *     content?: string,
-     *     inReplyTo?: string,
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     lastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     authorArn?: string,
-     *     deleted?: bool,
-     *     clientRequestToken?: string,
-     *     callerReactions?: list<string>,
-     *     reactionCounts?: array<string, int>
+     *     commentId?: string|null,
+     *     content?: string|null,
+     *     inReplyTo?: string|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     authorArn?: string|null,
+     *     deleted?: bool|null,
+     *     clientRequestToken?: string|null,
+     *     callerReactions?: list<string>|null,
+     *     reactionCounts?: array<string, int>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ec2\SearchTransitGatewayMulticastGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GroupIpAddress
- * @property string $TransitGatewayAttachmentId
- * @property string $SubnetId
- * @property string $ResourceId
- * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering' $ResourceType
- * @property string $ResourceOwnerId
- * @property string $NetworkInterfaceId
- * @property bool $GroupMember
- * @property bool $GroupSource
- * @property 'static'|'igmp' $MemberType
- * @property 'static'|'igmp' $SourceType
+ * @property string|null $GroupIpAddress
+ * @property string|null $TransitGatewayAttachmentId
+ * @property string|null $SubnetId
+ * @property string|null $ResourceId
+ * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null $ResourceType
+ * @property string|null $ResourceOwnerId
+ * @property string|null $NetworkInterfaceId
+ * @property bool|null $GroupMember
+ * @property bool|null $GroupSource
+ * @property 'static'|'igmp'|null $MemberType
+ * @property 'static'|'igmp'|null $SourceType
  */
 class TransitGatewayMulticastGroup extends Shape
 {
     /**
      * @param array{
-     *     GroupIpAddress?: string,
-     *     TransitGatewayAttachmentId?: string,
-     *     SubnetId?: string,
-     *     ResourceId?: string,
-     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering',
-     *     ResourceOwnerId?: string,
-     *     NetworkInterfaceId?: string,
-     *     GroupMember?: bool,
-     *     GroupSource?: bool,
-     *     MemberType?: 'static'|'igmp',
-     *     SourceType?: 'static'|'igmp'
+     *     GroupIpAddress?: string|null,
+     *     TransitGatewayAttachmentId?: string|null,
+     *     SubnetId?: string|null,
+     *     ResourceId?: string|null,
+     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null,
+     *     ResourceOwnerId?: string|null,
+     *     NetworkInterfaceId?: string|null,
+     *     GroupMember?: bool|null,
+     *     GroupSource?: bool|null,
+     *     MemberType?: 'static'|'igmp'|null,
+     *     SourceType?: 'static'|'igmp'|null
      * } $args
      */
     public function __construct(array $args = [])

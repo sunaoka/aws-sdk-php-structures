@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DBSubnetGroupName
  * @property string $DBSubnetGroupDescription
  * @property list<string> $SubnetIds
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateDBSubnetGroupRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateDBSubnetGroupRequest extends Request
      *     DBSubnetGroupName: string,
      *     DBSubnetGroupDescription: string,
      *     SubnetIds: list<string>,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

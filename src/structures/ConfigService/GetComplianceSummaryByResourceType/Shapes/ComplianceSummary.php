@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetComplianceSummaryByResourceTyp
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ComplianceContributorCount $CompliantResourceCount
- * @property ComplianceContributorCount $NonCompliantResourceCount
- * @property \Aws\Api\DateTimeResult $ComplianceSummaryTimestamp
+ * @property ComplianceContributorCount|null $CompliantResourceCount
+ * @property ComplianceContributorCount|null $NonCompliantResourceCount
+ * @property \Aws\Api\DateTimeResult|null $ComplianceSummaryTimestamp
  */
 class ComplianceSummary extends Shape
 {
     /**
      * @param array{
-     *     CompliantResourceCount?: ComplianceContributorCount,
-     *     NonCompliantResourceCount?: ComplianceContributorCount,
-     *     ComplianceSummaryTimestamp?: \Aws\Api\DateTimeResult
+     *     CompliantResourceCount?: ComplianceContributorCount|null,
+     *     NonCompliantResourceCount?: ComplianceContributorCount|null,
+     *     ComplianceSummaryTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeReservedNodeOfferings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ReservedNodeOfferingId
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $ReservedNodeOfferingId
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeReservedNodeOfferingsRequest extends Request
 {
     /**
      * @param array{
-     *     ReservedNodeOfferingId?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     ReservedNodeOfferingId?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

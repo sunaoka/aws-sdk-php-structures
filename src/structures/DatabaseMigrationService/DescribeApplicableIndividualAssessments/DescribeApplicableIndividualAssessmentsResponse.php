@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeApplicableIndi
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $IndividualAssessmentNames
- * @property string $Marker
+ * @property list<string>|null $IndividualAssessmentNames
+ * @property string|null $Marker
  */
 class DescribeApplicableIndividualAssessmentsResponse extends Response
 {

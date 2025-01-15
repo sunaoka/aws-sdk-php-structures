@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $HeightInPx
- * @property int $WidthInPx
+ * @property int|null $HeightInPx
+ * @property int|null $WidthInPx
  */
 class VideoDetail extends Shape
 {
     /**
      * @param array{
-     *     HeightInPx?: int,
-     *     WidthInPx?: int
+     *     HeightInPx?: int|null,
+     *     WidthInPx?: int|null
      * } $args
      */
     public function __construct(array $args = [])

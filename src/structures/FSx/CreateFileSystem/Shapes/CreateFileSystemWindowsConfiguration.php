@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\FSx\CreateFileSystem\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ActiveDirectoryId
- * @property SelfManagedActiveDirectoryConfiguration $SelfManagedActiveDirectoryConfiguration
- * @property 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2' $DeploymentType
- * @property string $PreferredSubnetId
+ * @property string|null $ActiveDirectoryId
+ * @property SelfManagedActiveDirectoryConfiguration|null $SelfManagedActiveDirectoryConfiguration
+ * @property 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|null $DeploymentType
+ * @property string|null $PreferredSubnetId
  * @property int<8, 100000> $ThroughputCapacity
- * @property string $WeeklyMaintenanceStartTime
- * @property string $DailyAutomaticBackupStartTime
- * @property int<0, 90> $AutomaticBackupRetentionDays
- * @property bool $CopyTagsToBackups
- * @property list<string> $Aliases
- * @property WindowsAuditLogCreateConfiguration $AuditLogConfiguration
- * @property DiskIopsConfiguration $DiskIopsConfiguration
+ * @property string|null $WeeklyMaintenanceStartTime
+ * @property string|null $DailyAutomaticBackupStartTime
+ * @property int<0, 90>|null $AutomaticBackupRetentionDays
+ * @property bool|null $CopyTagsToBackups
+ * @property list<string>|null $Aliases
+ * @property WindowsAuditLogCreateConfiguration|null $AuditLogConfiguration
+ * @property DiskIopsConfiguration|null $DiskIopsConfiguration
  */
 class CreateFileSystemWindowsConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ActiveDirectoryId?: string,
-     *     SelfManagedActiveDirectoryConfiguration?: SelfManagedActiveDirectoryConfiguration,
-     *     DeploymentType?: 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2',
-     *     PreferredSubnetId?: string,
+     *     ActiveDirectoryId?: string|null,
+     *     SelfManagedActiveDirectoryConfiguration?: SelfManagedActiveDirectoryConfiguration|null,
+     *     DeploymentType?: 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|null,
+     *     PreferredSubnetId?: string|null,
      *     ThroughputCapacity: int<8, 100000>,
-     *     WeeklyMaintenanceStartTime?: string,
-     *     DailyAutomaticBackupStartTime?: string,
-     *     AutomaticBackupRetentionDays?: int<0, 90>,
-     *     CopyTagsToBackups?: bool,
-     *     Aliases?: list<string>,
-     *     AuditLogConfiguration?: WindowsAuditLogCreateConfiguration,
-     *     DiskIopsConfiguration?: DiskIopsConfiguration
+     *     WeeklyMaintenanceStartTime?: string|null,
+     *     DailyAutomaticBackupStartTime?: string|null,
+     *     AutomaticBackupRetentionDays?: int<0, 90>|null,
+     *     CopyTagsToBackups?: bool|null,
+     *     Aliases?: list<string>|null,
+     *     AuditLogConfiguration?: WindowsAuditLogCreateConfiguration|null,
+     *     DiskIopsConfiguration?: DiskIopsConfiguration|null
      * } $args
      */
     public function __construct(array $args)

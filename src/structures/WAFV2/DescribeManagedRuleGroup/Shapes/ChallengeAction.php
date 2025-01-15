@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\WAFV2\DescribeManagedRuleGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomRequestHandling $CustomRequestHandling
+ * @property CustomRequestHandling|null $CustomRequestHandling
  */
 class ChallengeAction extends Shape
 {
     /**
-     * @param array{CustomRequestHandling?: CustomRequestHandling} $args
+     * @param array{CustomRequestHandling?: CustomRequestHandling|null} $args
      */
     public function __construct(array $args = [])
     {

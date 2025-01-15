@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LabelOptions $TitleOptions
- * @property string $DateTimeFormat
- * @property SheetControlInfoIconLabelOptions $InfoIconLabelOptions
+ * @property LabelOptions|null $TitleOptions
+ * @property string|null $DateTimeFormat
+ * @property SheetControlInfoIconLabelOptions|null $InfoIconLabelOptions
  */
 class RelativeDateTimeControlDisplayOptions extends Shape
 {
     /**
      * @param array{
-     *     TitleOptions?: LabelOptions,
-     *     DateTimeFormat?: string,
-     *     InfoIconLabelOptions?: SheetControlInfoIconLabelOptions
+     *     TitleOptions?: LabelOptions|null,
+     *     DateTimeFormat?: string|null,
+     *     InfoIconLabelOptions?: SheetControlInfoIconLabelOptions|null
      * } $args
      */
     public function __construct(array $args = [])

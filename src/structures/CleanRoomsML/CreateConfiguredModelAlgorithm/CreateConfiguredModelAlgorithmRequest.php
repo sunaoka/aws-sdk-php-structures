@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $roleArn
- * @property Shapes\ContainerConfig $trainingContainerConfig
- * @property Shapes\InferenceContainerConfig $inferenceContainerConfig
- * @property array<string, string> $tags
- * @property string $kmsKeyArn
+ * @property Shapes\ContainerConfig|null $trainingContainerConfig
+ * @property Shapes\InferenceContainerConfig|null $inferenceContainerConfig
+ * @property array<string, string>|null $tags
+ * @property string|null $kmsKeyArn
  */
 class CreateConfiguredModelAlgorithmRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     roleArn: string,
-     *     trainingContainerConfig?: Shapes\ContainerConfig,
-     *     inferenceContainerConfig?: Shapes\InferenceContainerConfig,
-     *     tags?: array<string, string>,
-     *     kmsKeyArn?: string
+     *     trainingContainerConfig?: Shapes\ContainerConfig|null,
+     *     inferenceContainerConfig?: Shapes\InferenceContainerConfig|null,
+     *     tags?: array<string, string>|null,
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

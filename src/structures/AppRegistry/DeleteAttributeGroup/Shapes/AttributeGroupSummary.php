@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\AppRegistry\DeleteAttributeGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $arn
- * @property string $name
- * @property string $description
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property string $createdBy
+ * @property string|null $id
+ * @property string|null $arn
+ * @property string|null $name
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property string|null $createdBy
  */
 class AttributeGroupSummary extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     arn?: string,
-     *     name?: string,
-     *     description?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     createdBy?: string
+     *     id?: string|null,
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     createdBy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

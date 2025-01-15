@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $title
- * @property string $description
+ * @property string|null $description
  * @property AppDefinitionInput $appDefinition
  */
 class PredictAppDefinition extends Shape
@@ -14,7 +14,7 @@ class PredictAppDefinition extends Shape
     /**
      * @param array{
      *     title: string,
-     *     description?: string,
+     *     description?: string|null,
      *     appDefinition: AppDefinitionInput
      * } $args
      */

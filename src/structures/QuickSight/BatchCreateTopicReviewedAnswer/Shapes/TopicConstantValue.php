@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QuickSight\BatchCreateTopicReviewedAnswer\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SINGULAR'|'RANGE'|'COLLECTIVE' $ConstantType
- * @property string $Value
- * @property string $Minimum
- * @property string $Maximum
- * @property list<CollectiveConstantEntry> $ValueList
+ * @property 'SINGULAR'|'RANGE'|'COLLECTIVE'|null $ConstantType
+ * @property string|null $Value
+ * @property string|null $Minimum
+ * @property string|null $Maximum
+ * @property list<CollectiveConstantEntry>|null $ValueList
  */
 class TopicConstantValue extends Shape
 {
     /**
      * @param array{
-     *     ConstantType?: 'SINGULAR'|'RANGE'|'COLLECTIVE',
-     *     Value?: string,
-     *     Minimum?: string,
-     *     Maximum?: string,
-     *     ValueList?: list<CollectiveConstantEntry>
+     *     ConstantType?: 'SINGULAR'|'RANGE'|'COLLECTIVE'|null,
+     *     Value?: string|null,
+     *     Minimum?: string|null,
+     *     Maximum?: string|null,
+     *     ValueList?: list<CollectiveConstantEntry>|null
      * } $args
      */
     public function __construct(array $args = [])

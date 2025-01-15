@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $LicenseArn
  * @property list<Shapes\EntitlementData> $Entitlements
  * @property 'JWT_PS384' $DigitalSignatureMethod
- * @property string $NodeId
- * @property list<Shapes\Metadata> $CheckoutMetadata
+ * @property string|null $NodeId
+ * @property list<Shapes\Metadata>|null $CheckoutMetadata
  * @property string $ClientToken
  */
 class CheckoutBorrowLicenseRequest extends Request
@@ -19,8 +19,8 @@ class CheckoutBorrowLicenseRequest extends Request
      *     LicenseArn: string,
      *     Entitlements: list<Shapes\EntitlementData>,
      *     DigitalSignatureMethod: 'JWT_PS384',
-     *     NodeId?: string,
-     *     CheckoutMetadata?: list<Shapes\Metadata>,
+     *     NodeId?: string|null,
+     *     CheckoutMetadata?: list<Shapes\Metadata>|null,
      *     ClientToken: string
      * } $args
      */

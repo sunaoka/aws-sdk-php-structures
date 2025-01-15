@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SavingsPlans\DescribeSavingsPlansOfferings\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'region'|'instanceFamily' $name
- * @property string $value
+ * @property 'region'|'instanceFamily'|null $name
+ * @property string|null $value
  */
 class SavingsPlanOfferingProperty extends Shape
 {
     /**
      * @param array{
-     *     name?: 'region'|'instanceFamily',
-     *     value?: string
+     *     name?: 'region'|'instanceFamily'|null,
+     *     value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

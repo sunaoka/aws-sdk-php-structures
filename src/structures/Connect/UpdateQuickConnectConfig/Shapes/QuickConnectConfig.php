@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'USER'|'QUEUE'|'PHONE_NUMBER' $QuickConnectType
- * @property UserQuickConnectConfig $UserConfig
- * @property QueueQuickConnectConfig $QueueConfig
- * @property PhoneNumberQuickConnectConfig $PhoneConfig
+ * @property UserQuickConnectConfig|null $UserConfig
+ * @property QueueQuickConnectConfig|null $QueueConfig
+ * @property PhoneNumberQuickConnectConfig|null $PhoneConfig
  */
 class QuickConnectConfig extends Shape
 {
     /**
      * @param array{
      *     QuickConnectType: 'USER'|'QUEUE'|'PHONE_NUMBER',
-     *     UserConfig?: UserQuickConnectConfig,
-     *     QueueConfig?: QueueQuickConnectConfig,
-     *     PhoneConfig?: PhoneNumberQuickConnectConfig
+     *     UserConfig?: UserQuickConnectConfig|null,
+     *     QueueConfig?: QueueQuickConnectConfig|null,
+     *     PhoneConfig?: PhoneNumberQuickConnectConfig|null
      * } $args
      */
     public function __construct(array $args)

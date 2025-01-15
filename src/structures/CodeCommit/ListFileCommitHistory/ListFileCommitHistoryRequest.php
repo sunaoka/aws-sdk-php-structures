@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $repositoryName
- * @property string $commitSpecifier
+ * @property string|null $commitSpecifier
  * @property string $filePath
- * @property int $maxResults
- * @property string $nextToken
+ * @property int|null $maxResults
+ * @property string|null $nextToken
  */
 class ListFileCommitHistoryRequest extends Request
 {
     /**
      * @param array{
      *     repositoryName: string,
-     *     commitSpecifier?: string,
+     *     commitSpecifier?: string|null,
      *     filePath: string,
-     *     maxResults?: int,
-     *     nextToken?: string
+     *     maxResults?: int|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

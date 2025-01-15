@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ACTIVE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|'STOPPED' $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  */
 class QueueFleetAssociationSummary extends Shape
 {
@@ -22,8 +22,8 @@ class QueueFleetAssociationSummary extends Shape
      *     status: 'ACTIVE'|'STOP_SCHEDULING_AND_COMPLETE_TASKS'|'STOP_SCHEDULING_AND_CANCEL_TASKS'|'STOPPED',
      *     createdAt: \Aws\Api\DateTimeResult,
      *     createdBy: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null
      * } $args
      */
     public function __construct(array $args)

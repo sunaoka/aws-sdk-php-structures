@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeRules;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ListenerArn
- * @property list<string> $RuleArns
- * @property string $Marker
- * @property int<1, 400> $PageSize
+ * @property string|null $ListenerArn
+ * @property list<string>|null $RuleArns
+ * @property string|null $Marker
+ * @property int<1, 400>|null $PageSize
  */
 class DescribeRulesRequest extends Request
 {
     /**
      * @param array{
-     *     ListenerArn?: string,
-     *     RuleArns?: list<string>,
-     *     Marker?: string,
-     *     PageSize?: int<1, 400>
+     *     ListenerArn?: string|null,
+     *     RuleArns?: list<string>|null,
+     *     Marker?: string|null,
+     *     PageSize?: int<1, 400>|null
      * } $args
      */
     public function __construct(array $args = [])

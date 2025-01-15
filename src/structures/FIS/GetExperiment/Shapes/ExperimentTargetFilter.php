@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FIS\GetExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $path
- * @property list<string> $values
+ * @property string|null $path
+ * @property list<string>|null $values
  */
 class ExperimentTargetFilter extends Shape
 {
     /**
      * @param array{
-     *     path?: string,
-     *     values?: list<string>
+     *     path?: string|null,
+     *     values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

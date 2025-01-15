@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConnect\DescribeBridge\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MulticastSourceIp
+ * @property string|null $MulticastSourceIp
  */
 class MulticastSourceSettings extends Shape
 {
     /**
-     * @param array{MulticastSourceIp?: string} $args
+     * @param array{MulticastSourceIp?: string|null} $args
      */
     public function __construct(array $args = [])
     {

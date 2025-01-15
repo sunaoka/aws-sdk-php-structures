@@ -9,14 +9,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
  * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE' $runStatus
- * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING' $targetRunStatus
- * @property int<0, 2147483647> $failureRetryCount
- * @property array<string, TaskParameterValue> $parameters
- * @property \Aws\Api\DateTimeResult $startedAt
- * @property \Aws\Api\DateTimeResult $endedAt
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
- * @property string $latestSessionActionId
+ * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null $targetRunStatus
+ * @property int<0, 2147483647>|null $failureRetryCount
+ * @property array<string, TaskParameterValue>|null $parameters
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
+ * @property string|null $latestSessionActionId
  */
 class TaskSummary extends Shape
 {
@@ -26,14 +26,14 @@ class TaskSummary extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     createdBy: string,
      *     runStatus: 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE',
-     *     targetRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING',
-     *     failureRetryCount?: int<0, 2147483647>,
-     *     parameters?: array<string, TaskParameterValue>,
-     *     startedAt?: \Aws\Api\DateTimeResult,
-     *     endedAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string,
-     *     latestSessionActionId?: string
+     *     targetRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null,
+     *     failureRetryCount?: int<0, 2147483647>|null,
+     *     parameters?: array<string, TaskParameterValue>|null,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
+     *     endedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null,
+     *     latestSessionActionId?: string|null
      * } $args
      */
     public function __construct(array $args)

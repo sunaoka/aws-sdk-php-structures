@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\StartImport
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ExternalId'|'ExternalSourceType' $name
- * @property string $value
+ * @property 'ExternalId'|'ExternalSourceType'|null $name
+ * @property string|null $value
  */
 class Group extends Shape
 {
     /**
      * @param array{
-     *     name?: 'ExternalId'|'ExternalSourceType',
-     *     value?: string
+     *     name?: 'ExternalId'|'ExternalSourceType'|null,
+     *     value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

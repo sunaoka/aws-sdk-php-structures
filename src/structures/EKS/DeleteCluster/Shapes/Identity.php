@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EKS\DeleteCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OIDC $oidc
+ * @property OIDC|null $oidc
  */
 class Identity extends Shape
 {
     /**
-     * @param array{oidc?: OIDC} $args
+     * @param array{oidc?: OIDC|null} $args
      */
     public function __construct(array $args = [])
     {

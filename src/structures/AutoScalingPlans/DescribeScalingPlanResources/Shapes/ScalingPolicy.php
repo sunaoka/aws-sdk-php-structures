@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $PolicyName
  * @property 'TargetTrackingScaling' $PolicyType
- * @property TargetTrackingConfiguration $TargetTrackingConfiguration
+ * @property TargetTrackingConfiguration|null $TargetTrackingConfiguration
  */
 class ScalingPolicy extends Shape
 {
@@ -15,7 +15,7 @@ class ScalingPolicy extends Shape
      * @param array{
      *     PolicyName: string,
      *     PolicyType: 'TargetTrackingScaling',
-     *     TargetTrackingConfiguration?: TargetTrackingConfiguration
+     *     TargetTrackingConfiguration?: TargetTrackingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $description
  * @property string $recommendation
  * @property list<Scope> $scopes
- * @property list<Attribute> $attributes
+ * @property list<Attribute>|null $attributes
  */
 class Exclusion extends Shape
 {
@@ -21,7 +21,7 @@ class Exclusion extends Shape
      *     description: string,
      *     recommendation: string,
      *     scopes: list<Scope>,
-     *     attributes?: list<Attribute>
+     *     attributes?: list<Attribute>|null
      * } $args
      */
     public function __construct(array $args)

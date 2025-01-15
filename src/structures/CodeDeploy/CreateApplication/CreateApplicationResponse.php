@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\CreateApplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $applicationId
+ * @property string|null $applicationId
  */
 class CreateApplicationResponse extends Response
 {

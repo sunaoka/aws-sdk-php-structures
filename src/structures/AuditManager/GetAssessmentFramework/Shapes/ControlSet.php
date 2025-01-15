@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AuditManager\GetAssessmentFramework\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
- * @property list<Control> $controls
+ * @property string|null $id
+ * @property string|null $name
+ * @property list<Control>|null $controls
  */
 class ControlSet extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string,
-     *     controls?: list<Control>
+     *     id?: string|null,
+     *     name?: string|null,
+     *     controls?: list<Control>|null
      * } $args
      */
     public function __construct(array $args = [])

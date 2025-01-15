@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\DescribeMappedResourceConfiguratio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Type
- * @property string $ARN
+ * @property string|null $Type
+ * @property string|null $ARN
  */
 class MappedResourceConfigurationListItem extends Shape
 {
     /**
      * @param array{
-     *     Type?: string,
-     *     ARN?: string
+     *     Type?: string|null,
+     *     ARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

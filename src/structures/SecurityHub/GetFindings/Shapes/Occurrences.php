@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Range> $LineRanges
- * @property list<Range> $OffsetRanges
- * @property list<Page> $Pages
- * @property list<Record> $Records
- * @property list<Cell> $Cells
+ * @property list<Range>|null $LineRanges
+ * @property list<Range>|null $OffsetRanges
+ * @property list<Page>|null $Pages
+ * @property list<Record>|null $Records
+ * @property list<Cell>|null $Cells
  */
 class Occurrences extends Shape
 {
     /**
      * @param array{
-     *     LineRanges?: list<Range>,
-     *     OffsetRanges?: list<Range>,
-     *     Pages?: list<Page>,
-     *     Records?: list<Record>,
-     *     Cells?: list<Cell>
+     *     LineRanges?: list<Range>|null,
+     *     OffsetRanges?: list<Range>|null,
+     *     Pages?: list<Page>|null,
+     *     Records?: list<Record>|null,
+     *     Cells?: list<Cell>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListResourcesAssociatedToCusto
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $BillingPeriod
+ * @property string|null $BillingPeriod
  * @property string $Arn
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
- * @property Shapes\ListResourcesAssociatedToCustomLineItemFilter $Filters
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property Shapes\ListResourcesAssociatedToCustomLineItemFilter|null $Filters
  */
 class ListResourcesAssociatedToCustomLineItemRequest extends Request
 {
     /**
      * @param array{
-     *     BillingPeriod?: string,
+     *     BillingPeriod?: string|null,
      *     Arn: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
-     *     Filters?: Shapes\ListResourcesAssociatedToCustomLineItemFilter
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     Filters?: Shapes\ListResourcesAssociatedToCustomLineItemFilter|null
      * } $args
      */
     public function __construct(array $args)

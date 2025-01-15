@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\RespondToAuthChallenge\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IpAddress
- * @property string $EncodedData
+ * @property string|null $IpAddress
+ * @property string|null $EncodedData
  */
 class UserContextDataType extends Shape
 {
     /**
      * @param array{
-     *     IpAddress?: string,
-     *     EncodedData?: string
+     *     IpAddress?: string|null,
+     *     EncodedData?: string|null
      * } $args
      */
     public function __construct(array $args = [])

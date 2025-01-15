@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\QuickSight\SearchDataSets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $DataSetId
- * @property string $Name
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property 'SPICE'|'DIRECT_QUERY' $ImportMode
- * @property RowLevelPermissionDataSet $RowLevelPermissionDataSet
- * @property bool $RowLevelPermissionTagConfigurationApplied
- * @property bool $ColumnLevelPermissionRulesApplied
+ * @property string|null $Arn
+ * @property string|null $DataSetId
+ * @property string|null $Name
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
+ * @property 'SPICE'|'DIRECT_QUERY'|null $ImportMode
+ * @property RowLevelPermissionDataSet|null $RowLevelPermissionDataSet
+ * @property bool|null $RowLevelPermissionTagConfigurationApplied
+ * @property bool|null $ColumnLevelPermissionRulesApplied
  */
 class DataSetSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     DataSetId?: string,
-     *     Name?: string,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     ImportMode?: 'SPICE'|'DIRECT_QUERY',
-     *     RowLevelPermissionDataSet?: RowLevelPermissionDataSet,
-     *     RowLevelPermissionTagConfigurationApplied?: bool,
-     *     ColumnLevelPermissionRulesApplied?: bool
+     *     Arn?: string|null,
+     *     DataSetId?: string|null,
+     *     Name?: string|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     ImportMode?: 'SPICE'|'DIRECT_QUERY'|null,
+     *     RowLevelPermissionDataSet?: RowLevelPermissionDataSet|null,
+     *     RowLevelPermissionTagConfigurationApplied?: bool|null,
+     *     ColumnLevelPermissionRulesApplied?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

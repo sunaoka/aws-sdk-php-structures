@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateSignalMap;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $CloudWatchAlarmTemplateGroupIdentifiers
- * @property string $Description
+ * @property list<string>|null $CloudWatchAlarmTemplateGroupIdentifiers
+ * @property string|null $Description
  * @property string $DiscoveryEntryPointArn
- * @property list<string> $EventBridgeRuleTemplateGroupIdentifiers
+ * @property list<string>|null $EventBridgeRuleTemplateGroupIdentifiers
  * @property string $Name
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateSignalMapRequest extends Request
 {
     /**
      * @param array{
-     *     CloudWatchAlarmTemplateGroupIdentifiers?: list<string>,
-     *     Description?: string,
+     *     CloudWatchAlarmTemplateGroupIdentifiers?: list<string>|null,
+     *     Description?: string|null,
      *     DiscoveryEntryPointArn: string,
-     *     EventBridgeRuleTemplateGroupIdentifiers?: list<string>,
+     *     EventBridgeRuleTemplateGroupIdentifiers?: list<string>|null,
      *     Name: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

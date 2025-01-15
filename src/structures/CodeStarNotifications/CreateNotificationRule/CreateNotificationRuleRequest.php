@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Resource
  * @property list<Shapes\Target> $Targets
  * @property 'BASIC'|'FULL' $DetailType
- * @property string $ClientRequestToken
- * @property array<string, string> $Tags
- * @property 'ENABLED'|'DISABLED' $Status
+ * @property string|null $ClientRequestToken
+ * @property array<string, string>|null $Tags
+ * @property 'ENABLED'|'DISABLED'|null $Status
  */
 class CreateNotificationRuleRequest extends Request
 {
@@ -23,9 +23,9 @@ class CreateNotificationRuleRequest extends Request
      *     Resource: string,
      *     Targets: list<Shapes\Target>,
      *     DetailType: 'BASIC'|'FULL',
-     *     ClientRequestToken?: string,
-     *     Tags?: array<string, string>,
-     *     Status?: 'ENABLED'|'DISABLED'
+     *     ClientRequestToken?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     Status?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

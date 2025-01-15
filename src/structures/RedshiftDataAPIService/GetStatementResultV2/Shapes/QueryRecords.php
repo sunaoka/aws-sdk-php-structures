@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\RedshiftDataAPIService\GetStatementResultV2\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CSVRecords
+ * @property string|null $CSVRecords
  */
 class QueryRecords extends Shape
 {
     /**
-     * @param array{CSVRecords?: string} $args
+     * @param array{CSVRecords?: string|null} $args
      */
     public function __construct(array $args = [])
     {

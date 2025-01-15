@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $QueryString
- * @property string $ClientRequestToken
- * @property Shapes\QueryExecutionContext $QueryExecutionContext
- * @property Shapes\ResultConfiguration $ResultConfiguration
- * @property string $WorkGroup
- * @property list<string> $ExecutionParameters
- * @property Shapes\ResultReuseConfiguration $ResultReuseConfiguration
+ * @property string|null $ClientRequestToken
+ * @property Shapes\QueryExecutionContext|null $QueryExecutionContext
+ * @property Shapes\ResultConfiguration|null $ResultConfiguration
+ * @property string|null $WorkGroup
+ * @property list<string>|null $ExecutionParameters
+ * @property Shapes\ResultReuseConfiguration|null $ResultReuseConfiguration
  */
 class StartQueryExecutionRequest extends Request
 {
     /**
      * @param array{
      *     QueryString: string,
-     *     ClientRequestToken?: string,
-     *     QueryExecutionContext?: Shapes\QueryExecutionContext,
-     *     ResultConfiguration?: Shapes\ResultConfiguration,
-     *     WorkGroup?: string,
-     *     ExecutionParameters?: list<string>,
-     *     ResultReuseConfiguration?: Shapes\ResultReuseConfiguration
+     *     ClientRequestToken?: string|null,
+     *     QueryExecutionContext?: Shapes\QueryExecutionContext|null,
+     *     ResultConfiguration?: Shapes\ResultConfiguration|null,
+     *     WorkGroup?: string|null,
+     *     ExecutionParameters?: list<string>|null,
+     *     ResultReuseConfiguration?: Shapes\ResultReuseConfiguration|null
      * } $args
      */
     public function __construct(array $args)

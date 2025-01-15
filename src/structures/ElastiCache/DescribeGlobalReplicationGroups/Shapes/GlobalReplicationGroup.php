@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeGlobalReplicationGroups\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GlobalReplicationGroupId
- * @property string $GlobalReplicationGroupDescription
- * @property string $Status
- * @property string $CacheNodeType
- * @property string $Engine
- * @property string $EngineVersion
- * @property list<GlobalReplicationGroupMember> $Members
- * @property bool $ClusterEnabled
- * @property list<GlobalNodeGroup> $GlobalNodeGroups
- * @property bool $AuthTokenEnabled
- * @property bool $TransitEncryptionEnabled
- * @property bool $AtRestEncryptionEnabled
- * @property string $ARN
+ * @property string|null $GlobalReplicationGroupId
+ * @property string|null $GlobalReplicationGroupDescription
+ * @property string|null $Status
+ * @property string|null $CacheNodeType
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property list<GlobalReplicationGroupMember>|null $Members
+ * @property bool|null $ClusterEnabled
+ * @property list<GlobalNodeGroup>|null $GlobalNodeGroups
+ * @property bool|null $AuthTokenEnabled
+ * @property bool|null $TransitEncryptionEnabled
+ * @property bool|null $AtRestEncryptionEnabled
+ * @property string|null $ARN
  */
 class GlobalReplicationGroup extends Shape
 {
     /**
      * @param array{
-     *     GlobalReplicationGroupId?: string,
-     *     GlobalReplicationGroupDescription?: string,
-     *     Status?: string,
-     *     CacheNodeType?: string,
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     Members?: list<GlobalReplicationGroupMember>,
-     *     ClusterEnabled?: bool,
-     *     GlobalNodeGroups?: list<GlobalNodeGroup>,
-     *     AuthTokenEnabled?: bool,
-     *     TransitEncryptionEnabled?: bool,
-     *     AtRestEncryptionEnabled?: bool,
-     *     ARN?: string
+     *     GlobalReplicationGroupId?: string|null,
+     *     GlobalReplicationGroupDescription?: string|null,
+     *     Status?: string|null,
+     *     CacheNodeType?: string|null,
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     Members?: list<GlobalReplicationGroupMember>|null,
+     *     ClusterEnabled?: bool|null,
+     *     GlobalNodeGroups?: list<GlobalNodeGroup>|null,
+     *     AuthTokenEnabled?: bool|null,
+     *     TransitEncryptionEnabled?: bool|null,
+     *     AtRestEncryptionEnabled?: bool|null,
+     *     ARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

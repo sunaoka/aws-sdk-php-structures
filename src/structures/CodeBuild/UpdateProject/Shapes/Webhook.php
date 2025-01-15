@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CodeBuild\UpdateProject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $url
- * @property string $payloadUrl
- * @property string $secret
- * @property string $branchFilter
- * @property list<list<WebhookFilter>> $filterGroups
- * @property 'BUILD'|'BUILD_BATCH' $buildType
- * @property bool $manualCreation
- * @property \Aws\Api\DateTimeResult $lastModifiedSecret
- * @property ScopeConfiguration $scopeConfiguration
+ * @property string|null $url
+ * @property string|null $payloadUrl
+ * @property string|null $secret
+ * @property string|null $branchFilter
+ * @property list<list<WebhookFilter>>|null $filterGroups
+ * @property 'BUILD'|'BUILD_BATCH'|null $buildType
+ * @property bool|null $manualCreation
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedSecret
+ * @property ScopeConfiguration|null $scopeConfiguration
  */
 class Webhook extends Shape
 {
     /**
      * @param array{
-     *     url?: string,
-     *     payloadUrl?: string,
-     *     secret?: string,
-     *     branchFilter?: string,
-     *     filterGroups?: list<list<WebhookFilter>>,
-     *     buildType?: 'BUILD'|'BUILD_BATCH',
-     *     manualCreation?: bool,
-     *     lastModifiedSecret?: \Aws\Api\DateTimeResult,
-     *     scopeConfiguration?: ScopeConfiguration
+     *     url?: string|null,
+     *     payloadUrl?: string|null,
+     *     secret?: string|null,
+     *     branchFilter?: string|null,
+     *     filterGroups?: list<list<WebhookFilter>>|null,
+     *     buildType?: 'BUILD'|'BUILD_BATCH'|null,
+     *     manualCreation?: bool|null,
+     *     lastModifiedSecret?: \Aws\Api\DateTimeResult|null,
+     *     scopeConfiguration?: ScopeConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

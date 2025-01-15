@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DescribeDomainChangeProgre
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ChangeId
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property 'PENDING'|'PROCESSING'|'COMPLETED'|'FAILED' $Status
- * @property list<string> $PendingProperties
- * @property list<string> $CompletedProperties
- * @property int $TotalNumberOfStages
- * @property list<ChangeProgressStage> $ChangeProgressStages
- * @property 'Pending'|'Initializing'|'Validating'|'ValidationFailed'|'ApplyingChanges'|'Completed'|'PendingUserInput'|'Cancelled' $ConfigChangeStatus
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property 'CUSTOMER'|'SERVICE' $InitiatedBy
+ * @property string|null $ChangeId
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property 'PENDING'|'PROCESSING'|'COMPLETED'|'FAILED'|null $Status
+ * @property list<string>|null $PendingProperties
+ * @property list<string>|null $CompletedProperties
+ * @property int|null $TotalNumberOfStages
+ * @property list<ChangeProgressStage>|null $ChangeProgressStages
+ * @property 'Pending'|'Initializing'|'Validating'|'ValidationFailed'|'ApplyingChanges'|'Completed'|'PendingUserInput'|'Cancelled'|null $ConfigChangeStatus
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
+ * @property 'CUSTOMER'|'SERVICE'|null $InitiatedBy
  */
 class ChangeProgressStatusDetails extends Shape
 {
     /**
      * @param array{
-     *     ChangeId?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     Status?: 'PENDING'|'PROCESSING'|'COMPLETED'|'FAILED',
-     *     PendingProperties?: list<string>,
-     *     CompletedProperties?: list<string>,
-     *     TotalNumberOfStages?: int,
-     *     ChangeProgressStages?: list<ChangeProgressStage>,
-     *     ConfigChangeStatus?: 'Pending'|'Initializing'|'Validating'|'ValidationFailed'|'ApplyingChanges'|'Completed'|'PendingUserInput'|'Cancelled',
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     InitiatedBy?: 'CUSTOMER'|'SERVICE'
+     *     ChangeId?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'PENDING'|'PROCESSING'|'COMPLETED'|'FAILED'|null,
+     *     PendingProperties?: list<string>|null,
+     *     CompletedProperties?: list<string>|null,
+     *     TotalNumberOfStages?: int|null,
+     *     ChangeProgressStages?: list<ChangeProgressStage>|null,
+     *     ConfigChangeStatus?: 'Pending'|'Initializing'|'Validating'|'ValidationFailed'|'ApplyingChanges'|'Completed'|'PendingUserInput'|'Cancelled'|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     InitiatedBy?: 'CUSTOMER'|'SERVICE'|null
      * } $args
      */
     public function __construct(array $args = [])

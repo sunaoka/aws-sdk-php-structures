@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TrafficMirrorFilterRuleId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DeleteTrafficMirrorFilterRuleRequest extends Request
 {
     /**
      * @param array{
      *     TrafficMirrorFilterRuleId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

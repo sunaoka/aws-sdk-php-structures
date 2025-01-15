@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeEcsClusters;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $EcsClusterArns
- * @property string $StackId
- * @property string $NextToken
- * @property int $MaxResults
+ * @property list<string>|null $EcsClusterArns
+ * @property string|null $StackId
+ * @property string|null $NextToken
+ * @property int|null $MaxResults
  */
 class DescribeEcsClustersRequest extends Request
 {
     /**
      * @param array{
-     *     EcsClusterArns?: list<string>,
-     *     StackId?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int
+     *     EcsClusterArns?: list<string>|null,
+     *     StackId?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\CreateAppInstanceUser;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AppInstanceUserArn
+ * @property string|null $AppInstanceUserArn
  */
 class CreateAppInstanceUserResponse extends Response
 {

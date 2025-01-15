@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'USAGE_ACCOUNT_ID'|'SERVICE_CODE'|'USAGE_TYPE'|'OPERATION'|'LOCATION'|'LINE_ITEM_TYPE' $name
  * @property list<string> $values
- * @property 'EQUALS'|'STARTS_WITH'|'CONTAINS' $matchOption
+ * @property 'EQUALS'|'STARTS_WITH'|'CONTAINS'|null $matchOption
  */
 class ListBillEstimateLineItemsFilter extends Shape
 {
@@ -15,7 +15,7 @@ class ListBillEstimateLineItemsFilter extends Shape
      * @param array{
      *     name: 'USAGE_ACCOUNT_ID'|'SERVICE_CODE'|'USAGE_TYPE'|'OPERATION'|'LOCATION'|'LINE_ITEM_TYPE',
      *     values: list<string>,
-     *     matchOption?: 'EQUALS'|'STARTS_WITH'|'CONTAINS'
+     *     matchOption?: 'EQUALS'|'STARTS_WITH'|'CONTAINS'|null
      * } $args
      */
     public function __construct(array $args)

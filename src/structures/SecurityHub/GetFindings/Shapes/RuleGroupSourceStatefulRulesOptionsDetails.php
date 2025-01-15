@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Keyword
- * @property list<string> $Settings
+ * @property string|null $Keyword
+ * @property list<string>|null $Settings
  */
 class RuleGroupSourceStatefulRulesOptionsDetails extends Shape
 {
     /**
      * @param array{
-     *     Keyword?: string,
-     *     Settings?: list<string>
+     *     Keyword?: string|null,
+     *     Settings?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

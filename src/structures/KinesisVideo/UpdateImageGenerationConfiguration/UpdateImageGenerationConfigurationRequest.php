@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\UpdateImageGenerationConfiguration
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
- * @property string $StreamARN
- * @property Shapes\ImageGenerationConfiguration $ImageGenerationConfiguration
+ * @property string|null $StreamName
+ * @property string|null $StreamARN
+ * @property Shapes\ImageGenerationConfiguration|null $ImageGenerationConfiguration
  */
 class UpdateImageGenerationConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
-     *     StreamARN?: string,
-     *     ImageGenerationConfiguration?: Shapes\ImageGenerationConfiguration
+     *     StreamName?: string|null,
+     *     StreamARN?: string|null,
+     *     ImageGenerationConfiguration?: Shapes\ImageGenerationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

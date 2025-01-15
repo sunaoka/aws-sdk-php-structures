@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataExchange\ListRevisionAssets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DatabaseLFTagPolicy $Database
- * @property TableLFTagPolicy $Table
+ * @property DatabaseLFTagPolicy|null $Database
+ * @property TableLFTagPolicy|null $Table
  */
 class LFResourceDetails extends Shape
 {
     /**
      * @param array{
-     *     Database?: DatabaseLFTagPolicy,
-     *     Table?: TableLFTagPolicy
+     *     Database?: DatabaseLFTagPolicy|null,
+     *     Table?: TableLFTagPolicy|null
      * } $args
      */
     public function __construct(array $args = [])

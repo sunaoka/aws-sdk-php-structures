@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetSegmentDetection;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED' $JobStatus
- * @property string $StatusMessage
- * @property list<Shapes\VideoMetadata> $VideoMetadata
- * @property list<Shapes\AudioMetadata> $AudioMetadata
- * @property string $NextToken
- * @property list<Shapes\SegmentDetection> $Segments
- * @property list<Shapes\SegmentTypeInfo> $SelectedSegmentTypes
- * @property string $JobId
- * @property Shapes\Video $Video
- * @property string $JobTag
+ * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null $JobStatus
+ * @property string|null $StatusMessage
+ * @property list<Shapes\VideoMetadata>|null $VideoMetadata
+ * @property list<Shapes\AudioMetadata>|null $AudioMetadata
+ * @property string|null $NextToken
+ * @property list<Shapes\SegmentDetection>|null $Segments
+ * @property list<Shapes\SegmentTypeInfo>|null $SelectedSegmentTypes
+ * @property string|null $JobId
+ * @property Shapes\Video|null $Video
+ * @property string|null $JobTag
  */
 class GetSegmentDetectionResponse extends Response
 {

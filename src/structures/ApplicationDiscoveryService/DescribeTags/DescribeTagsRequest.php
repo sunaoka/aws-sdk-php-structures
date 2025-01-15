@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\DescribeTags;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\TagFilter> $filters
- * @property int $maxResults
- * @property string $nextToken
+ * @property list<Shapes\TagFilter>|null $filters
+ * @property int|null $maxResults
+ * @property string|null $nextToken
  */
 class DescribeTagsRequest extends Request
 {
     /**
      * @param array{
-     *     filters?: list<Shapes\TagFilter>,
-     *     maxResults?: int,
-     *     nextToken?: string
+     *     filters?: list<Shapes\TagFilter>|null,
+     *     maxResults?: int|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

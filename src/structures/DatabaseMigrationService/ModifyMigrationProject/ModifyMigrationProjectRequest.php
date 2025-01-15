@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $MigrationProjectIdentifier
- * @property string $MigrationProjectName
- * @property list<Shapes\DataProviderDescriptorDefinition> $SourceDataProviderDescriptors
- * @property list<Shapes\DataProviderDescriptorDefinition> $TargetDataProviderDescriptors
- * @property string $InstanceProfileIdentifier
- * @property string $TransformationRules
- * @property string $Description
- * @property Shapes\SCApplicationAttributes $SchemaConversionApplicationAttributes
+ * @property string|null $MigrationProjectName
+ * @property list<Shapes\DataProviderDescriptorDefinition>|null $SourceDataProviderDescriptors
+ * @property list<Shapes\DataProviderDescriptorDefinition>|null $TargetDataProviderDescriptors
+ * @property string|null $InstanceProfileIdentifier
+ * @property string|null $TransformationRules
+ * @property string|null $Description
+ * @property Shapes\SCApplicationAttributes|null $SchemaConversionApplicationAttributes
  */
 class ModifyMigrationProjectRequest extends Request
 {
     /**
      * @param array{
      *     MigrationProjectIdentifier: string,
-     *     MigrationProjectName?: string,
-     *     SourceDataProviderDescriptors?: list<Shapes\DataProviderDescriptorDefinition>,
-     *     TargetDataProviderDescriptors?: list<Shapes\DataProviderDescriptorDefinition>,
-     *     InstanceProfileIdentifier?: string,
-     *     TransformationRules?: string,
-     *     Description?: string,
-     *     SchemaConversionApplicationAttributes?: Shapes\SCApplicationAttributes
+     *     MigrationProjectName?: string|null,
+     *     SourceDataProviderDescriptors?: list<Shapes\DataProviderDescriptorDefinition>|null,
+     *     TargetDataProviderDescriptors?: list<Shapes\DataProviderDescriptorDefinition>|null,
+     *     InstanceProfileIdentifier?: string|null,
+     *     TransformationRules?: string|null,
+     *     Description?: string|null,
+     *     SchemaConversionApplicationAttributes?: Shapes\SCApplicationAttributes|null
      * } $args
      */
     public function __construct(array $args)

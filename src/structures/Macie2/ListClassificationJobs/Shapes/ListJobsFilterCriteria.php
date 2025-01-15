@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\ListClassificationJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ListJobsFilterTerm> $excludes
- * @property list<ListJobsFilterTerm> $includes
+ * @property list<ListJobsFilterTerm>|null $excludes
+ * @property list<ListJobsFilterTerm>|null $includes
  */
 class ListJobsFilterCriteria extends Shape
 {
     /**
      * @param array{
-     *     excludes?: list<ListJobsFilterTerm>,
-     *     includes?: list<ListJobsFilterTerm>
+     *     excludes?: list<ListJobsFilterTerm>|null,
+     *     includes?: list<ListJobsFilterTerm>|null
      * } $args
      */
     public function __construct(array $args = [])

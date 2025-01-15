@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $accountId
  * @property string $vaultName
- * @property string $limit
- * @property string $marker
- * @property string $statuscode
- * @property string $completed
+ * @property string|null $limit
+ * @property string|null $marker
+ * @property string|null $statuscode
+ * @property string|null $completed
  */
 class ListJobsRequest extends Request
 {
@@ -18,10 +18,10 @@ class ListJobsRequest extends Request
      * @param array{
      *     accountId: string,
      *     vaultName: string,
-     *     limit?: string,
-     *     marker?: string,
-     *     statuscode?: string,
-     *     completed?: string
+     *     limit?: string|null,
+     *     marker?: string|null,
+     *     statuscode?: string|null,
+     *     completed?: string|null
      * } $args
      */
     public function __construct(array $args)

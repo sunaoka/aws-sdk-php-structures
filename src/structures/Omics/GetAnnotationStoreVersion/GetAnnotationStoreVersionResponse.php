@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property array<string, string> $tags
- * @property Shapes\VersionOptions $versionOptions
+ * @property Shapes\VersionOptions|null $versionOptions
  * @property string $statusMessage
  * @property int $versionSizeBytes
  */

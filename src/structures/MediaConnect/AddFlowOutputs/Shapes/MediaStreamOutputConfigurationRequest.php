@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\MediaConnect\AddFlowOutputs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DestinationConfigurationRequest> $DestinationConfigurations
+ * @property list<DestinationConfigurationRequest>|null $DestinationConfigurations
  * @property 'jxsv'|'raw'|'smpte291'|'pcm' $EncodingName
- * @property EncodingParametersRequest $EncodingParameters
+ * @property EncodingParametersRequest|null $EncodingParameters
  * @property string $MediaStreamName
  */
 class MediaStreamOutputConfigurationRequest extends Shape
 {
     /**
      * @param array{
-     *     DestinationConfigurations?: list<DestinationConfigurationRequest>,
+     *     DestinationConfigurations?: list<DestinationConfigurationRequest>|null,
      *     EncodingName: 'jxsv'|'raw'|'smpte291'|'pcm',
-     *     EncodingParameters?: EncodingParametersRequest,
+     *     EncodingParameters?: EncodingParametersRequest|null,
      *     MediaStreamName: string
      * } $args
      */

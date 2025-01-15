@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property string $ConnectionArn
- * @property string $InvocationEndpoint
- * @property 'POST'|'GET'|'HEAD'|'OPTIONS'|'PUT'|'PATCH'|'DELETE' $HttpMethod
- * @property int<1, max> $InvocationRateLimitPerSecond
+ * @property string|null $Description
+ * @property string|null $ConnectionArn
+ * @property string|null $InvocationEndpoint
+ * @property 'POST'|'GET'|'HEAD'|'OPTIONS'|'PUT'|'PATCH'|'DELETE'|null $HttpMethod
+ * @property int<1, max>|null $InvocationRateLimitPerSecond
  */
 class UpdateApiDestinationRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     ConnectionArn?: string,
-     *     InvocationEndpoint?: string,
-     *     HttpMethod?: 'POST'|'GET'|'HEAD'|'OPTIONS'|'PUT'|'PATCH'|'DELETE',
-     *     InvocationRateLimitPerSecond?: int<1, max>
+     *     Description?: string|null,
+     *     ConnectionArn?: string|null,
+     *     InvocationEndpoint?: string|null,
+     *     HttpMethod?: 'POST'|'GET'|'HEAD'|'OPTIONS'|'PUT'|'PATCH'|'DELETE'|null,
+     *     InvocationRateLimitPerSecond?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

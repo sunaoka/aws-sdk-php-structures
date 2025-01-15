@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FSx\CreateFileSystemFromBackup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Aggregates
- * @property int<1, 200> $TotalConstituents
+ * @property list<string>|null $Aggregates
+ * @property int<1, 200>|null $TotalConstituents
  */
 class AggregateConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Aggregates?: list<string>,
-     *     TotalConstituents?: int<1, 200>
+     *     Aggregates?: list<string>|null,
+     *     TotalConstituents?: int<1, 200>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $testSetId
  * @property string $testSetName
- * @property string $description
+ * @property string|null $description
  */
 class UpdateTestSetRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateTestSetRequest extends Request
      * @param array{
      *     testSetId: string,
      *     testSetName: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

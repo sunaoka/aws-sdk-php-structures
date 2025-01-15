@@ -9,14 +9,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $id
  * @property SourceEventMetadata $sourceEventMetadata
  * @property MessageComponents $messageComponents
- * @property string $sourceEventDetailUrl
- * @property string $sourceEventDetailUrlDisplayText
+ * @property string|null $sourceEventDetailUrl
+ * @property string|null $sourceEventDetailUrlDisplayText
  * @property 'ALERT'|'WARNING'|'ANNOUNCEMENT'|'INFORMATIONAL' $notificationType
- * @property 'HEALTHY'|'UNHEALTHY' $eventStatus
- * @property 'AGGREGATE'|'CHILD'|'NONE' $aggregationEventType
- * @property string $aggregateNotificationEventArn
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property 'HEALTHY'|'UNHEALTHY'|null $eventStatus
+ * @property 'AGGREGATE'|'CHILD'|'NONE'|null $aggregationEventType
+ * @property string|null $aggregateNotificationEventArn
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  * @property array<string, TextPartValue> $textParts
  * @property list<MediaElement> $media
  */
@@ -28,14 +28,14 @@ class NotificationEvent extends Shape
      *     id: string,
      *     sourceEventMetadata: SourceEventMetadata,
      *     messageComponents: MessageComponents,
-     *     sourceEventDetailUrl?: string,
-     *     sourceEventDetailUrlDisplayText?: string,
+     *     sourceEventDetailUrl?: string|null,
+     *     sourceEventDetailUrlDisplayText?: string|null,
      *     notificationType: 'ALERT'|'WARNING'|'ANNOUNCEMENT'|'INFORMATIONAL',
-     *     eventStatus?: 'HEALTHY'|'UNHEALTHY',
-     *     aggregationEventType?: 'AGGREGATE'|'CHILD'|'NONE',
-     *     aggregateNotificationEventArn?: string,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
+     *     eventStatus?: 'HEALTHY'|'UNHEALTHY'|null,
+     *     aggregationEventType?: 'AGGREGATE'|'CHILD'|'NONE'|null,
+     *     aggregateNotificationEventArn?: string|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
      *     textParts: array<string, TextPartValue>,
      *     media: list<MediaElement>
      * } $args

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\GetQueryResults\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $recordsMatched
- * @property double $recordsScanned
- * @property double $estimatedRecordsSkipped
- * @property double $bytesScanned
- * @property double $estimatedBytesSkipped
- * @property double $logGroupsScanned
+ * @property double|null $recordsMatched
+ * @property double|null $recordsScanned
+ * @property double|null $estimatedRecordsSkipped
+ * @property double|null $bytesScanned
+ * @property double|null $estimatedBytesSkipped
+ * @property double|null $logGroupsScanned
  */
 class QueryStatistics extends Shape
 {
     /**
      * @param array{
-     *     recordsMatched?: double,
-     *     recordsScanned?: double,
-     *     estimatedRecordsSkipped?: double,
-     *     bytesScanned?: double,
-     *     estimatedBytesSkipped?: double,
-     *     logGroupsScanned?: double
+     *     recordsMatched?: double|null,
+     *     recordsScanned?: double|null,
+     *     estimatedRecordsSkipped?: double|null,
+     *     bytesScanned?: double|null,
+     *     estimatedBytesSkipped?: double|null,
+     *     logGroupsScanned?: double|null
      * } $args
      */
     public function __construct(array $args = [])

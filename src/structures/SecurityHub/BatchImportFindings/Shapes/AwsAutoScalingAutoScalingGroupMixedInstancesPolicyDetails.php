@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetails $InstancesDistribution
- * @property AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetails $LaunchTemplate
+ * @property AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetails|null $InstancesDistribution
+ * @property AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetails|null $LaunchTemplate
  */
 class AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetails extends Shape
 {
     /**
      * @param array{
-     *     InstancesDistribution?: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetails,
-     *     LaunchTemplate?: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetails
+     *     InstancesDistribution?: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetails|null,
+     *     LaunchTemplate?: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetails|null
      * } $args
      */
     public function __construct(array $args = [])

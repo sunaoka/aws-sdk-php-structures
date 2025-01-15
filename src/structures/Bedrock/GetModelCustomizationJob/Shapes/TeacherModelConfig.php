@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $teacherModelIdentifier
- * @property int $maxResponseLengthForInference
+ * @property int|null $maxResponseLengthForInference
  */
 class TeacherModelConfig extends Shape
 {
     /**
      * @param array{
      *     teacherModelIdentifier: string,
-     *     maxResponseLengthForInference?: int
+     *     maxResponseLengthForInference?: int|null
      * } $args
      */
     public function __construct(array $args)

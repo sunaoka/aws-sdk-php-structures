@@ -5,59 +5,59 @@ namespace Sunaoka\Aws\Structures\Ssm\GetAutomationExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StepName
- * @property string $Action
- * @property int $TimeoutSeconds
- * @property string $OnFailure
- * @property int $MaxAttempts
- * @property \Aws\Api\DateTimeResult $ExecutionStartTime
- * @property \Aws\Api\DateTimeResult $ExecutionEndTime
- * @property 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|'Exited' $StepStatus
- * @property string $ResponseCode
- * @property array<string, string> $Inputs
- * @property array<string, list<string>> $Outputs
- * @property string $Response
- * @property string $FailureMessage
- * @property FailureDetails $FailureDetails
- * @property string $StepExecutionId
- * @property array<string, list<string>> $OverriddenParameters
- * @property bool $IsEnd
- * @property string $NextStep
- * @property bool $IsCritical
- * @property list<string> $ValidNextSteps
- * @property list<Target> $Targets
- * @property TargetLocation $TargetLocation
- * @property list<AlarmStateInformation> $TriggeredAlarms
- * @property ParentStepDetails $ParentStepDetails
+ * @property string|null $StepName
+ * @property string|null $Action
+ * @property int|null $TimeoutSeconds
+ * @property string|null $OnFailure
+ * @property int|null $MaxAttempts
+ * @property \Aws\Api\DateTimeResult|null $ExecutionStartTime
+ * @property \Aws\Api\DateTimeResult|null $ExecutionEndTime
+ * @property 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|'Exited'|null $StepStatus
+ * @property string|null $ResponseCode
+ * @property array<string, string>|null $Inputs
+ * @property array<string, list<string>>|null $Outputs
+ * @property string|null $Response
+ * @property string|null $FailureMessage
+ * @property FailureDetails|null $FailureDetails
+ * @property string|null $StepExecutionId
+ * @property array<string, list<string>>|null $OverriddenParameters
+ * @property bool|null $IsEnd
+ * @property string|null $NextStep
+ * @property bool|null $IsCritical
+ * @property list<string>|null $ValidNextSteps
+ * @property list<Target>|null $Targets
+ * @property TargetLocation|null $TargetLocation
+ * @property list<AlarmStateInformation>|null $TriggeredAlarms
+ * @property ParentStepDetails|null $ParentStepDetails
  */
 class StepExecution extends Shape
 {
     /**
      * @param array{
-     *     StepName?: string,
-     *     Action?: string,
-     *     TimeoutSeconds?: int,
-     *     OnFailure?: string,
-     *     MaxAttempts?: int,
-     *     ExecutionStartTime?: \Aws\Api\DateTimeResult,
-     *     ExecutionEndTime?: \Aws\Api\DateTimeResult,
-     *     StepStatus?: 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|'Exited',
-     *     ResponseCode?: string,
-     *     Inputs?: array<string, string>,
-     *     Outputs?: array<string, list<string>>,
-     *     Response?: string,
-     *     FailureMessage?: string,
-     *     FailureDetails?: FailureDetails,
-     *     StepExecutionId?: string,
-     *     OverriddenParameters?: array<string, list<string>>,
-     *     IsEnd?: bool,
-     *     NextStep?: string,
-     *     IsCritical?: bool,
-     *     ValidNextSteps?: list<string>,
-     *     Targets?: list<Target>,
-     *     TargetLocation?: TargetLocation,
-     *     TriggeredAlarms?: list<AlarmStateInformation>,
-     *     ParentStepDetails?: ParentStepDetails
+     *     StepName?: string|null,
+     *     Action?: string|null,
+     *     TimeoutSeconds?: int|null,
+     *     OnFailure?: string|null,
+     *     MaxAttempts?: int|null,
+     *     ExecutionStartTime?: \Aws\Api\DateTimeResult|null,
+     *     ExecutionEndTime?: \Aws\Api\DateTimeResult|null,
+     *     StepStatus?: 'Pending'|'InProgress'|'Waiting'|'Success'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'PendingApproval'|'Approved'|'Rejected'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'CompletedWithSuccess'|'CompletedWithFailure'|'Exited'|null,
+     *     ResponseCode?: string|null,
+     *     Inputs?: array<string, string>|null,
+     *     Outputs?: array<string, list<string>>|null,
+     *     Response?: string|null,
+     *     FailureMessage?: string|null,
+     *     FailureDetails?: FailureDetails|null,
+     *     StepExecutionId?: string|null,
+     *     OverriddenParameters?: array<string, list<string>>|null,
+     *     IsEnd?: bool|null,
+     *     NextStep?: string|null,
+     *     IsCritical?: bool|null,
+     *     ValidNextSteps?: list<string>|null,
+     *     Targets?: list<Target>|null,
+     *     TargetLocation?: TargetLocation|null,
+     *     TriggeredAlarms?: list<AlarmStateInformation>|null,
+     *     ParentStepDetails?: ParentStepDetails|null
      * } $args
      */
     public function __construct(array $args = [])

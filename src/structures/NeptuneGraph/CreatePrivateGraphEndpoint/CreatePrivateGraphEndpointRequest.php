@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $graphIdentifier
- * @property string $vpcId
- * @property list<string> $subnetIds
- * @property list<string> $vpcSecurityGroupIds
+ * @property string|null $vpcId
+ * @property list<string>|null $subnetIds
+ * @property list<string>|null $vpcSecurityGroupIds
  */
 class CreatePrivateGraphEndpointRequest extends Request
 {
     /**
      * @param array{
      *     graphIdentifier: string,
-     *     vpcId?: string,
-     *     subnetIds?: list<string>,
-     *     vpcSecurityGroupIds?: list<string>
+     *     vpcId?: string|null,
+     *     subnetIds?: list<string>|null,
+     *     vpcSecurityGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

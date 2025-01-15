@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\AuditManager\GetEvidenceFileUploadUrl;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $evidenceFileName
- * @property string $uploadUrl
+ * @property string|null $evidenceFileName
+ * @property string|null $uploadUrl
  */
 class GetEvidenceFileUploadUrlResponse extends Response
 {

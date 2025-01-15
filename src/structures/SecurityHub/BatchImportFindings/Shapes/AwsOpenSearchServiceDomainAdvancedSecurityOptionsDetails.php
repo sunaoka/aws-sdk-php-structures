@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property bool $InternalUserDatabaseEnabled
- * @property AwsOpenSearchServiceDomainMasterUserOptionsDetails $MasterUserOptions
+ * @property bool|null $Enabled
+ * @property bool|null $InternalUserDatabaseEnabled
+ * @property AwsOpenSearchServiceDomainMasterUserOptionsDetails|null $MasterUserOptions
  */
 class AwsOpenSearchServiceDomainAdvancedSecurityOptionsDetails extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     InternalUserDatabaseEnabled?: bool,
-     *     MasterUserOptions?: AwsOpenSearchServiceDomainMasterUserOptionsDetails
+     *     Enabled?: bool|null,
+     *     InternalUserDatabaseEnabled?: bool|null,
+     *     MasterUserOptions?: AwsOpenSearchServiceDomainMasterUserOptionsDetails|null
      * } $args
      */
     public function __construct(array $args = [])

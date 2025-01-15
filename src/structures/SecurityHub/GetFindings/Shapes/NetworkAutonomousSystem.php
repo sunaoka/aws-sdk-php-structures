@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property int $Number
+ * @property string|null $Name
+ * @property int|null $Number
  */
 class NetworkAutonomousSystem extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Number?: int
+     *     Name?: string|null,
+     *     Number?: int|null
      * } $args
      */
     public function __construct(array $args = [])

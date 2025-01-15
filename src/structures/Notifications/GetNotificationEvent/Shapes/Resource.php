@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Notifications\GetNotificationEvent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $arn
- * @property string $detailUrl
- * @property list<string> $tags
+ * @property string|null $id
+ * @property string|null $arn
+ * @property string|null $detailUrl
+ * @property list<string>|null $tags
  */
 class Resource extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     arn?: string,
-     *     detailUrl?: string,
-     *     tags?: list<string>
+     *     id?: string|null,
+     *     arn?: string|null,
+     *     detailUrl?: string|null,
+     *     tags?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

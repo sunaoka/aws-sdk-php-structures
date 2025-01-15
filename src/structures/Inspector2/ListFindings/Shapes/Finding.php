@@ -6,52 +6,52 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $awsAccountId
- * @property CodeVulnerabilityDetails $codeVulnerabilityDetails
+ * @property CodeVulnerabilityDetails|null $codeVulnerabilityDetails
  * @property string $description
- * @property EpssDetails $epss
- * @property 'YES'|'NO' $exploitAvailable
- * @property ExploitabilityDetails $exploitabilityDetails
+ * @property EpssDetails|null $epss
+ * @property 'YES'|'NO'|null $exploitAvailable
+ * @property ExploitabilityDetails|null $exploitabilityDetails
  * @property string $findingArn
  * @property \Aws\Api\DateTimeResult $firstObservedAt
- * @property 'YES'|'NO'|'PARTIAL' $fixAvailable
- * @property double $inspectorScore
- * @property InspectorScoreDetails $inspectorScoreDetails
+ * @property 'YES'|'NO'|'PARTIAL'|null $fixAvailable
+ * @property double|null $inspectorScore
+ * @property InspectorScoreDetails|null $inspectorScoreDetails
  * @property \Aws\Api\DateTimeResult $lastObservedAt
- * @property NetworkReachabilityDetails $networkReachabilityDetails
- * @property PackageVulnerabilityDetails $packageVulnerabilityDetails
+ * @property NetworkReachabilityDetails|null $networkReachabilityDetails
+ * @property PackageVulnerabilityDetails|null $packageVulnerabilityDetails
  * @property Remediation $remediation
  * @property list<Resource> $resources
  * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNTRIAGED' $severity
  * @property 'ACTIVE'|'SUPPRESSED'|'CLOSED' $status
- * @property string $title
+ * @property string|null $title
  * @property 'NETWORK_REACHABILITY'|'PACKAGE_VULNERABILITY'|'CODE_VULNERABILITY' $type
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class Finding extends Shape
 {
     /**
      * @param array{
      *     awsAccountId: string,
-     *     codeVulnerabilityDetails?: CodeVulnerabilityDetails,
+     *     codeVulnerabilityDetails?: CodeVulnerabilityDetails|null,
      *     description: string,
-     *     epss?: EpssDetails,
-     *     exploitAvailable?: 'YES'|'NO',
-     *     exploitabilityDetails?: ExploitabilityDetails,
+     *     epss?: EpssDetails|null,
+     *     exploitAvailable?: 'YES'|'NO'|null,
+     *     exploitabilityDetails?: ExploitabilityDetails|null,
      *     findingArn: string,
      *     firstObservedAt: \Aws\Api\DateTimeResult,
-     *     fixAvailable?: 'YES'|'NO'|'PARTIAL',
-     *     inspectorScore?: double,
-     *     inspectorScoreDetails?: InspectorScoreDetails,
+     *     fixAvailable?: 'YES'|'NO'|'PARTIAL'|null,
+     *     inspectorScore?: double|null,
+     *     inspectorScoreDetails?: InspectorScoreDetails|null,
      *     lastObservedAt: \Aws\Api\DateTimeResult,
-     *     networkReachabilityDetails?: NetworkReachabilityDetails,
-     *     packageVulnerabilityDetails?: PackageVulnerabilityDetails,
+     *     networkReachabilityDetails?: NetworkReachabilityDetails|null,
+     *     packageVulnerabilityDetails?: PackageVulnerabilityDetails|null,
      *     remediation: Remediation,
      *     resources: list<Resource>,
      *     severity: 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|'UNTRIAGED',
      *     status: 'ACTIVE'|'SUPPRESSED'|'CLOSED',
-     *     title?: string,
+     *     title?: string|null,
      *     type: 'NETWORK_REACHABILITY'|'PACKAGE_VULNERABILITY'|'CODE_VULNERABILITY',
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

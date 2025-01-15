@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\ConverseStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|resource|\Psr\Http\Message\StreamInterface $bytes
- * @property S3Location $s3Location
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $bytes
+ * @property S3Location|null $s3Location
  */
 class VideoSource extends Shape
 {
     /**
      * @param array{
-     *     bytes?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     s3Location?: S3Location
+     *     bytes?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     s3Location?: S3Location|null
      * } $args
      */
     public function __construct(array $args = [])

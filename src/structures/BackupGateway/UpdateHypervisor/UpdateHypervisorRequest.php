@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\BackupGateway\UpdateHypervisor;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Host
+ * @property string|null $Host
  * @property string $HypervisorArn
- * @property string $LogGroupArn
- * @property string $Name
- * @property string $Password
- * @property string $Username
+ * @property string|null $LogGroupArn
+ * @property string|null $Name
+ * @property string|null $Password
+ * @property string|null $Username
  */
 class UpdateHypervisorRequest extends Request
 {
     /**
      * @param array{
-     *     Host?: string,
+     *     Host?: string|null,
      *     HypervisorArn: string,
-     *     LogGroupArn?: string,
-     *     Name?: string,
-     *     Password?: string,
-     *     Username?: string
+     *     LogGroupArn?: string|null,
+     *     Name?: string|null,
+     *     Password?: string|null,
+     *     Username?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'NONE'|'CURRENT_VERSION'|'MINOR_VERSION'|'MAJOR_VERSION' $deploymentType
  * @property string $serviceName
  * @property string $spec
- * @property string $templateMajorVersion
- * @property string $templateMinorVersion
+ * @property string|null $templateMajorVersion
+ * @property string|null $templateMinorVersion
  */
 class UpdateServicePipelineRequest extends Request
 {
@@ -18,8 +18,8 @@ class UpdateServicePipelineRequest extends Request
      *     deploymentType: 'NONE'|'CURRENT_VERSION'|'MINOR_VERSION'|'MAJOR_VERSION',
      *     serviceName: string,
      *     spec: string,
-     *     templateMajorVersion?: string,
-     *     templateMinorVersion?: string
+     *     templateMajorVersion?: string|null,
+     *     templateMinorVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

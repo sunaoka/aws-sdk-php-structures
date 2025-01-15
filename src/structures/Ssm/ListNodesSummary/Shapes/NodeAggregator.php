@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Count' $AggregatorType
  * @property 'Instance' $TypeName
  * @property 'AgentVersion'|'PlatformName'|'PlatformType'|'PlatformVersion'|'Region'|'ResourceType' $AttributeName
- * @property list<NodeAggregator> $Aggregators
+ * @property list<NodeAggregator>|null $Aggregators
  */
 class NodeAggregator extends Shape
 {
@@ -17,7 +17,7 @@ class NodeAggregator extends Shape
      *     AggregatorType: 'Count',
      *     TypeName: 'Instance',
      *     AttributeName: 'AgentVersion'|'PlatformName'|'PlatformType'|'PlatformVersion'|'Region'|'ResourceType',
-     *     Aggregators?: list<NodeAggregator>
+     *     Aggregators?: list<NodeAggregator>|null
      * } $args
      */
     public function __construct(array $args)

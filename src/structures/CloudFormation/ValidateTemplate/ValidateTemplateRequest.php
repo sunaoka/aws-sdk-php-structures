@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ValidateTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TemplateBody
- * @property string $TemplateURL
+ * @property string|null $TemplateBody
+ * @property string|null $TemplateURL
  */
 class ValidateTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     TemplateBody?: string,
-     *     TemplateURL?: string
+     *     TemplateBody?: string|null,
+     *     TemplateURL?: string|null
      * } $args
      */
     public function __construct(array $args = [])

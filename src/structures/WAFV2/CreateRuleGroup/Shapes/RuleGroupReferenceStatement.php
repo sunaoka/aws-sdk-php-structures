@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ARN
- * @property list<ExcludedRule> $ExcludedRules
- * @property list<RuleActionOverride> $RuleActionOverrides
+ * @property list<ExcludedRule>|null $ExcludedRules
+ * @property list<RuleActionOverride>|null $RuleActionOverrides
  */
 class RuleGroupReferenceStatement extends Shape
 {
     /**
      * @param array{
      *     ARN: string,
-     *     ExcludedRules?: list<ExcludedRule>,
-     *     RuleActionOverrides?: list<RuleActionOverride>
+     *     ExcludedRules?: list<ExcludedRule>|null,
+     *     RuleActionOverrides?: list<RuleActionOverride>|null
      * } $args
      */
     public function __construct(array $args)

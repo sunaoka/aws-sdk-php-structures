@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListSamplesRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     nextToken?: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

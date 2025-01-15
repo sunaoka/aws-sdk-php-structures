@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\TimestreamWrite\ListTables\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PartitionKey> $CompositePartitionKey
+ * @property list<PartitionKey>|null $CompositePartitionKey
  */
 class Schema extends Shape
 {
     /**
-     * @param array{CompositePartitionKey?: list<PartitionKey>} $args
+     * @param array{CompositePartitionKey?: list<PartitionKey>|null} $args
      */
     public function __construct(array $args = [])
     {

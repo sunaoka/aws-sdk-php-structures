@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $containerPath
  * @property int $size
- * @property list<string> $mountOptions
+ * @property list<string>|null $mountOptions
  */
 class Tmpfs extends Shape
 {
@@ -15,7 +15,7 @@ class Tmpfs extends Shape
      * @param array{
      *     containerPath: string,
      *     size: int,
-     *     mountOptions?: list<string>
+     *     mountOptions?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

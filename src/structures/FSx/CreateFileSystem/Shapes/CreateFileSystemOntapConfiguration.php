@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\FSx\CreateFileSystem\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 90> $AutomaticBackupRetentionDays
- * @property string $DailyAutomaticBackupStartTime
+ * @property int<0, 90>|null $AutomaticBackupRetentionDays
+ * @property string|null $DailyAutomaticBackupStartTime
  * @property 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_2' $DeploymentType
- * @property string $EndpointIpAddressRange
- * @property string $FsxAdminPassword
- * @property DiskIopsConfiguration $DiskIopsConfiguration
- * @property string $PreferredSubnetId
- * @property list<string> $RouteTableIds
- * @property int<8, 100000> $ThroughputCapacity
- * @property string $WeeklyMaintenanceStartTime
- * @property int<1, 12> $HAPairs
- * @property int<128, 6144> $ThroughputCapacityPerHAPair
+ * @property string|null $EndpointIpAddressRange
+ * @property string|null $FsxAdminPassword
+ * @property DiskIopsConfiguration|null $DiskIopsConfiguration
+ * @property string|null $PreferredSubnetId
+ * @property list<string>|null $RouteTableIds
+ * @property int<8, 100000>|null $ThroughputCapacity
+ * @property string|null $WeeklyMaintenanceStartTime
+ * @property int<1, 12>|null $HAPairs
+ * @property int<128, 6144>|null $ThroughputCapacityPerHAPair
  */
 class CreateFileSystemOntapConfiguration extends Shape
 {
     /**
      * @param array{
-     *     AutomaticBackupRetentionDays?: int<0, 90>,
-     *     DailyAutomaticBackupStartTime?: string,
+     *     AutomaticBackupRetentionDays?: int<0, 90>|null,
+     *     DailyAutomaticBackupStartTime?: string|null,
      *     DeploymentType: 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|'MULTI_AZ_2',
-     *     EndpointIpAddressRange?: string,
-     *     FsxAdminPassword?: string,
-     *     DiskIopsConfiguration?: DiskIopsConfiguration,
-     *     PreferredSubnetId?: string,
-     *     RouteTableIds?: list<string>,
-     *     ThroughputCapacity?: int<8, 100000>,
-     *     WeeklyMaintenanceStartTime?: string,
-     *     HAPairs?: int<1, 12>,
-     *     ThroughputCapacityPerHAPair?: int<128, 6144>
+     *     EndpointIpAddressRange?: string|null,
+     *     FsxAdminPassword?: string|null,
+     *     DiskIopsConfiguration?: DiskIopsConfiguration|null,
+     *     PreferredSubnetId?: string|null,
+     *     RouteTableIds?: list<string>|null,
+     *     ThroughputCapacity?: int<8, 100000>|null,
+     *     WeeklyMaintenanceStartTime?: string|null,
+     *     HAPairs?: int<1, 12>|null,
+     *     ThroughputCapacityPerHAPair?: int<128, 6144>|null
      * } $args
      */
     public function __construct(array $args)

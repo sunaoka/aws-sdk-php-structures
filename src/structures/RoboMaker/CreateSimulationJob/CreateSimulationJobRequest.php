@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\RoboMaker\CreateSimulationJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientRequestToken
- * @property Shapes\OutputLocation $outputLocation
- * @property Shapes\LoggingConfig $loggingConfig
+ * @property string|null $clientRequestToken
+ * @property Shapes\OutputLocation|null $outputLocation
+ * @property Shapes\LoggingConfig|null $loggingConfig
  * @property int $maxJobDurationInSeconds
  * @property string $iamRole
- * @property 'Fail'|'Continue' $failureBehavior
- * @property list<Shapes\RobotApplicationConfig> $robotApplications
- * @property list<Shapes\SimulationApplicationConfig> $simulationApplications
- * @property list<Shapes\DataSourceConfig> $dataSources
- * @property array<string, string> $tags
- * @property Shapes\VPCConfig $vpcConfig
- * @property Shapes\Compute $compute
+ * @property 'Fail'|'Continue'|null $failureBehavior
+ * @property list<Shapes\RobotApplicationConfig>|null $robotApplications
+ * @property list<Shapes\SimulationApplicationConfig>|null $simulationApplications
+ * @property list<Shapes\DataSourceConfig>|null $dataSources
+ * @property array<string, string>|null $tags
+ * @property Shapes\VPCConfig|null $vpcConfig
+ * @property Shapes\Compute|null $compute
  */
 class CreateSimulationJobRequest extends Request
 {
     /**
      * @param array{
-     *     clientRequestToken?: string,
-     *     outputLocation?: Shapes\OutputLocation,
-     *     loggingConfig?: Shapes\LoggingConfig,
+     *     clientRequestToken?: string|null,
+     *     outputLocation?: Shapes\OutputLocation|null,
+     *     loggingConfig?: Shapes\LoggingConfig|null,
      *     maxJobDurationInSeconds: int,
      *     iamRole: string,
-     *     failureBehavior?: 'Fail'|'Continue',
-     *     robotApplications?: list<Shapes\RobotApplicationConfig>,
-     *     simulationApplications?: list<Shapes\SimulationApplicationConfig>,
-     *     dataSources?: list<Shapes\DataSourceConfig>,
-     *     tags?: array<string, string>,
-     *     vpcConfig?: Shapes\VPCConfig,
-     *     compute?: Shapes\Compute
+     *     failureBehavior?: 'Fail'|'Continue'|null,
+     *     robotApplications?: list<Shapes\RobotApplicationConfig>|null,
+     *     simulationApplications?: list<Shapes\SimulationApplicationConfig>|null,
+     *     dataSources?: list<Shapes\DataSourceConfig>|null,
+     *     tags?: array<string, string>|null,
+     *     vpcConfig?: Shapes\VPCConfig|null,
+     *     compute?: Shapes\Compute|null
      * } $args
      */
     public function __construct(array $args)

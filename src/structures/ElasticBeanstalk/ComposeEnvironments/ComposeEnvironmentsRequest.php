@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\ComposeEnvironments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ApplicationName
- * @property string $GroupName
- * @property list<string> $VersionLabels
+ * @property string|null $ApplicationName
+ * @property string|null $GroupName
+ * @property list<string>|null $VersionLabels
  */
 class ComposeEnvironmentsRequest extends Request
 {
     /**
      * @param array{
-     *     ApplicationName?: string,
-     *     GroupName?: string,
-     *     VersionLabels?: list<string>
+     *     ApplicationName?: string|null,
+     *     GroupName?: string|null,
+     *     VersionLabels?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\CreateAppVersionAppComponent\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, list<string>> $additionalInfo
- * @property string $id
+ * @property array<string, list<string>>|null $additionalInfo
+ * @property string|null $id
  * @property string $name
  * @property string $type
  */
@@ -14,8 +14,8 @@ class AppComponent extends Shape
 {
     /**
      * @param array{
-     *     additionalInfo?: array<string, list<string>>,
-     *     id?: string,
+     *     additionalInfo?: array<string, list<string>>|null,
+     *     id?: string|null,
      *     name: string,
      *     type: string
      * } $args

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsS3BucketObjectLockConfigurationRuleDefaultRetentionDetails $DefaultRetention
+ * @property AwsS3BucketObjectLockConfigurationRuleDefaultRetentionDetails|null $DefaultRetention
  */
 class AwsS3BucketObjectLockConfigurationRuleDetails extends Shape
 {
     /**
-     * @param array{DefaultRetention?: AwsS3BucketObjectLockConfigurationRuleDefaultRetentionDetails} $args
+     * @param array{DefaultRetention?: AwsS3BucketObjectLockConfigurationRuleDefaultRetentionDetails|null} $args
      */
     public function __construct(array $args = [])
     {

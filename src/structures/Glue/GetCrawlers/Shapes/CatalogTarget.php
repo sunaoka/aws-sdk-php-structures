@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $DatabaseName
  * @property list<string> $Tables
- * @property string $ConnectionName
- * @property string $EventQueueArn
- * @property string $DlqEventQueueArn
+ * @property string|null $ConnectionName
+ * @property string|null $EventQueueArn
+ * @property string|null $DlqEventQueueArn
  */
 class CatalogTarget extends Shape
 {
@@ -17,9 +17,9 @@ class CatalogTarget extends Shape
      * @param array{
      *     DatabaseName: string,
      *     Tables: list<string>,
-     *     ConnectionName?: string,
-     *     EventQueueArn?: string,
-     *     DlqEventQueueArn?: string
+     *     ConnectionName?: string|null,
+     *     EventQueueArn?: string|null,
+     *     DlqEventQueueArn?: string|null
      * } $args
      */
     public function __construct(array $args)

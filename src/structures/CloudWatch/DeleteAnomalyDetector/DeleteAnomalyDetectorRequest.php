@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudWatch\DeleteAnomalyDetector;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Namespace
- * @property string $MetricName
- * @property list<Shapes\Dimension> $Dimensions
- * @property string $Stat
- * @property Shapes\SingleMetricAnomalyDetector $SingleMetricAnomalyDetector
- * @property Shapes\MetricMathAnomalyDetector $MetricMathAnomalyDetector
+ * @property string|null $Namespace
+ * @property string|null $MetricName
+ * @property list<Shapes\Dimension>|null $Dimensions
+ * @property string|null $Stat
+ * @property Shapes\SingleMetricAnomalyDetector|null $SingleMetricAnomalyDetector
+ * @property Shapes\MetricMathAnomalyDetector|null $MetricMathAnomalyDetector
  */
 class DeleteAnomalyDetectorRequest extends Request
 {
     /**
      * @param array{
-     *     Namespace?: string,
-     *     MetricName?: string,
-     *     Dimensions?: list<Shapes\Dimension>,
-     *     Stat?: string,
-     *     SingleMetricAnomalyDetector?: Shapes\SingleMetricAnomalyDetector,
-     *     MetricMathAnomalyDetector?: Shapes\MetricMathAnomalyDetector
+     *     Namespace?: string|null,
+     *     MetricName?: string|null,
+     *     Dimensions?: list<Shapes\Dimension>|null,
+     *     Stat?: string|null,
+     *     SingleMetricAnomalyDetector?: Shapes\SingleMetricAnomalyDetector|null,
+     *     MetricMathAnomalyDetector?: Shapes\MetricMathAnomalyDetector|null
      * } $args
      */
     public function __construct(array $args = [])

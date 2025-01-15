@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\ListBillEstimateInputUsage
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $startHour
- * @property string $unit
- * @property double $amount
+ * @property \Aws\Api\DateTimeResult|null $startHour
+ * @property string|null $unit
+ * @property double|null $amount
  */
 class UsageQuantity extends Shape
 {
     /**
      * @param array{
-     *     startHour?: \Aws\Api\DateTimeResult,
-     *     unit?: string,
-     *     amount?: double
+     *     startHour?: \Aws\Api\DateTimeResult|null,
+     *     unit?: string|null,
+     *     amount?: double|null
      * } $args
      */
     public function __construct(array $args = [])

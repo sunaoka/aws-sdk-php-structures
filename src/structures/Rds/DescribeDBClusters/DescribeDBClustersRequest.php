@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBClusters;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DBClusterIdentifier
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxRecords
- * @property string $Marker
- * @property bool $IncludeShared
+ * @property string|null $DBClusterIdentifier
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
+ * @property bool|null $IncludeShared
  */
 class DescribeDBClustersRequest extends Request
 {
     /**
      * @param array{
-     *     DBClusterIdentifier?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxRecords?: int,
-     *     Marker?: string,
-     *     IncludeShared?: bool
+     *     DBClusterIdentifier?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null,
+     *     IncludeShared?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

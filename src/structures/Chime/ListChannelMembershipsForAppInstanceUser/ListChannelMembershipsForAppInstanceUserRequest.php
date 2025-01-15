@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Chime\ListChannelMembershipsForAppInstanceUser;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AppInstanceUserArn
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
- * @property string $ChimeBearer
+ * @property string|null $AppInstanceUserArn
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
+ * @property string|null $ChimeBearer
  */
 class ListChannelMembershipsForAppInstanceUserRequest extends Request
 {
     /**
      * @param array{
-     *     AppInstanceUserArn?: string,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string,
-     *     ChimeBearer?: string
+     *     AppInstanceUserArn?: string|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null,
+     *     ChimeBearer?: string|null
      * } $args
      */
     public function __construct(array $args = [])

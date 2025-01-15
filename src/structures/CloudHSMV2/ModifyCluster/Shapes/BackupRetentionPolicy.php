@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudHSMV2\ModifyCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DAYS' $Type
- * @property string $Value
+ * @property 'DAYS'|null $Type
+ * @property string|null $Value
  */
 class BackupRetentionPolicy extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'DAYS',
-     *     Value?: string
+     *     Type?: 'DAYS'|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

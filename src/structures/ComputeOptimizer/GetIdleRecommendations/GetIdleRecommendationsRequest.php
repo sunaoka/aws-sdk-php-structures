@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetIdleRecommendations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $resourceArns
- * @property string $nextToken
- * @property int<0, 100> $maxResults
- * @property list<Shapes\IdleRecommendationFilter> $filters
- * @property list<string> $accountIds
- * @property Shapes\OrderBy $orderBy
+ * @property list<string>|null $resourceArns
+ * @property string|null $nextToken
+ * @property int<0, 100>|null $maxResults
+ * @property list<Shapes\IdleRecommendationFilter>|null $filters
+ * @property list<string>|null $accountIds
+ * @property Shapes\OrderBy|null $orderBy
  */
 class GetIdleRecommendationsRequest extends Request
 {
     /**
      * @param array{
-     *     resourceArns?: list<string>,
-     *     nextToken?: string,
-     *     maxResults?: int<0, 100>,
-     *     filters?: list<Shapes\IdleRecommendationFilter>,
-     *     accountIds?: list<string>,
-     *     orderBy?: Shapes\OrderBy
+     *     resourceArns?: list<string>|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<0, 100>|null,
+     *     filters?: list<Shapes\IdleRecommendationFilter>|null,
+     *     accountIds?: list<string>|null,
+     *     orderBy?: Shapes\OrderBy|null
      * } $args
      */
     public function __construct(array $args = [])

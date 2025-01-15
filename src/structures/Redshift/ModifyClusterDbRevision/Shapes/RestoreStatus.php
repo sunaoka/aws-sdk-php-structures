@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Redshift\ModifyClusterDbRevision\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Status
- * @property double $CurrentRestoreRateInMegaBytesPerSecond
- * @property int $SnapshotSizeInMegaBytes
- * @property int $ProgressInMegaBytes
- * @property int $ElapsedTimeInSeconds
- * @property int $EstimatedTimeToCompletionInSeconds
+ * @property string|null $Status
+ * @property double|null $CurrentRestoreRateInMegaBytesPerSecond
+ * @property int|null $SnapshotSizeInMegaBytes
+ * @property int|null $ProgressInMegaBytes
+ * @property int|null $ElapsedTimeInSeconds
+ * @property int|null $EstimatedTimeToCompletionInSeconds
  */
 class RestoreStatus extends Shape
 {
     /**
      * @param array{
-     *     Status?: string,
-     *     CurrentRestoreRateInMegaBytesPerSecond?: double,
-     *     SnapshotSizeInMegaBytes?: int,
-     *     ProgressInMegaBytes?: int,
-     *     ElapsedTimeInSeconds?: int,
-     *     EstimatedTimeToCompletionInSeconds?: int
+     *     Status?: string|null,
+     *     CurrentRestoreRateInMegaBytesPerSecond?: double|null,
+     *     SnapshotSizeInMegaBytes?: int|null,
+     *     ProgressInMegaBytes?: int|null,
+     *     ElapsedTimeInSeconds?: int|null,
+     *     EstimatedTimeToCompletionInSeconds?: int|null
      * } $args
      */
     public function __construct(array $args = [])

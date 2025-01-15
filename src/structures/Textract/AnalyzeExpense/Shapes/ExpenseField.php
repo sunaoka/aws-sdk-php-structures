@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Textract\AnalyzeExpense\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ExpenseType $Type
- * @property ExpenseDetection $LabelDetection
- * @property ExpenseDetection $ValueDetection
- * @property int<0, max> $PageNumber
- * @property ExpenseCurrency $Currency
- * @property list<ExpenseGroupProperty> $GroupProperties
+ * @property ExpenseType|null $Type
+ * @property ExpenseDetection|null $LabelDetection
+ * @property ExpenseDetection|null $ValueDetection
+ * @property int<0, max>|null $PageNumber
+ * @property ExpenseCurrency|null $Currency
+ * @property list<ExpenseGroupProperty>|null $GroupProperties
  */
 class ExpenseField extends Shape
 {
     /**
      * @param array{
-     *     Type?: ExpenseType,
-     *     LabelDetection?: ExpenseDetection,
-     *     ValueDetection?: ExpenseDetection,
-     *     PageNumber?: int<0, max>,
-     *     Currency?: ExpenseCurrency,
-     *     GroupProperties?: list<ExpenseGroupProperty>
+     *     Type?: ExpenseType|null,
+     *     LabelDetection?: ExpenseDetection|null,
+     *     ValueDetection?: ExpenseDetection|null,
+     *     PageNumber?: int<0, max>|null,
+     *     Currency?: ExpenseCurrency|null,
+     *     GroupProperties?: list<ExpenseGroupProperty>|null
      * } $args
      */
     public function __construct(array $args = [])

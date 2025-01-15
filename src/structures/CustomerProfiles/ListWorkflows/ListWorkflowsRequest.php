@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property 'APPFLOW_INTEGRATION' $WorkflowType
- * @property 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'SPLIT'|'RETRY'|'CANCELLED' $Status
- * @property \Aws\Api\DateTimeResult $QueryStartDate
- * @property \Aws\Api\DateTimeResult $QueryEndDate
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property 'APPFLOW_INTEGRATION'|null $WorkflowType
+ * @property 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'SPLIT'|'RETRY'|'CANCELLED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $QueryStartDate
+ * @property \Aws\Api\DateTimeResult|null $QueryEndDate
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListWorkflowsRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     WorkflowType?: 'APPFLOW_INTEGRATION',
-     *     Status?: 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'SPLIT'|'RETRY'|'CANCELLED',
-     *     QueryStartDate?: \Aws\Api\DateTimeResult,
-     *     QueryEndDate?: \Aws\Api\DateTimeResult,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     WorkflowType?: 'APPFLOW_INTEGRATION'|null,
+     *     Status?: 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETE'|'FAILED'|'SPLIT'|'RETRY'|'CANCELLED'|null,
+     *     QueryStartDate?: \Aws\Api\DateTimeResult|null,
+     *     QueryEndDate?: \Aws\Api\DateTimeResult|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

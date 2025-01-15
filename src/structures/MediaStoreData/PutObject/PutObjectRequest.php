@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string|resource|\Psr\Http\Message\StreamInterface $Body
  * @property string $Path
- * @property string $ContentType
- * @property string $CacheControl
- * @property 'TEMPORAL' $StorageClass
- * @property 'STANDARD'|'STREAMING' $UploadAvailability
+ * @property string|null $ContentType
+ * @property string|null $CacheControl
+ * @property 'TEMPORAL'|null $StorageClass
+ * @property 'STANDARD'|'STREAMING'|null $UploadAvailability
  */
 class PutObjectRequest extends Request
 {
@@ -18,10 +18,10 @@ class PutObjectRequest extends Request
      * @param array{
      *     Body: string|resource|\Psr\Http\Message\StreamInterface,
      *     Path: string,
-     *     ContentType?: string,
-     *     CacheControl?: string,
-     *     StorageClass?: 'TEMPORAL',
-     *     UploadAvailability?: 'STANDARD'|'STREAMING'
+     *     ContentType?: string|null,
+     *     CacheControl?: string|null,
+     *     StorageClass?: 'TEMPORAL'|null,
+     *     UploadAvailability?: 'STANDARD'|'STREAMING'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServiceQuotas\ListServiceQuotas\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $PeriodValue
- * @property 'MICROSECOND'|'MILLISECOND'|'SECOND'|'MINUTE'|'HOUR'|'DAY'|'WEEK' $PeriodUnit
+ * @property int|null $PeriodValue
+ * @property 'MICROSECOND'|'MILLISECOND'|'SECOND'|'MINUTE'|'HOUR'|'DAY'|'WEEK'|null $PeriodUnit
  */
 class QuotaPeriod extends Shape
 {
     /**
      * @param array{
-     *     PeriodValue?: int,
-     *     PeriodUnit?: 'MICROSECOND'|'MILLISECOND'|'SECOND'|'MINUTE'|'HOUR'|'DAY'|'WEEK'
+     *     PeriodValue?: int|null,
+     *     PeriodUnit?: 'MICROSECOND'|'MILLISECOND'|'SECOND'|'MINUTE'|'HOUR'|'DAY'|'WEEK'|null
      * } $args
      */
     public function __construct(array $args = [])

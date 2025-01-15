@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SelectedSheetsFilterScopeConfiguration $SelectedSheets
- * @property AllSheetsFilterScopeConfiguration $AllSheets
+ * @property SelectedSheetsFilterScopeConfiguration|null $SelectedSheets
+ * @property AllSheetsFilterScopeConfiguration|null $AllSheets
  */
 class FilterScopeConfiguration extends Shape
 {
     /**
      * @param array{
-     *     SelectedSheets?: SelectedSheetsFilterScopeConfiguration,
-     *     AllSheets?: AllSheetsFilterScopeConfiguration
+     *     SelectedSheets?: SelectedSheetsFilterScopeConfiguration|null,
+     *     AllSheets?: AllSheetsFilterScopeConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

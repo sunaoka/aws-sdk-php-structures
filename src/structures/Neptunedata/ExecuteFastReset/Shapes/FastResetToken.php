@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Neptunedata\ExecuteFastReset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $token
+ * @property string|null $token
  */
 class FastResetToken extends Shape
 {
     /**
-     * @param array{token?: string} $args
+     * @param array{token?: string|null} $args
      */
     public function __construct(array $args = [])
     {

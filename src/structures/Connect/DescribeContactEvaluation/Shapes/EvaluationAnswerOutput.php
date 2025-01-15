@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeContactEvaluation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EvaluationAnswerData $Value
- * @property EvaluationAnswerData $SystemSuggestedValue
+ * @property EvaluationAnswerData|null $Value
+ * @property EvaluationAnswerData|null $SystemSuggestedValue
  */
 class EvaluationAnswerOutput extends Shape
 {
     /**
      * @param array{
-     *     Value?: EvaluationAnswerData,
-     *     SystemSuggestedValue?: EvaluationAnswerData
+     *     Value?: EvaluationAnswerData|null,
+     *     SystemSuggestedValue?: EvaluationAnswerData|null
      * } $args
      */
     public function __construct(array $args = [])

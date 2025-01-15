@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'EQUAL'|'GREATER_THAN_OR_EQUAL'|'LESS_THAN_OR_EQUAL'|'GREATER_THAN'|'LESS_THAN'|'BETWEEN' $NumericOperator
  * @property double $StartValue
- * @property double $EndValue
+ * @property double|null $EndValue
  */
 class TotalImpactFilter extends Shape
 {
@@ -15,7 +15,7 @@ class TotalImpactFilter extends Shape
      * @param array{
      *     NumericOperator: 'EQUAL'|'GREATER_THAN_OR_EQUAL'|'LESS_THAN_OR_EQUAL'|'GREATER_THAN'|'LESS_THAN'|'BETWEEN',
      *     StartValue: double,
-     *     EndValue?: double
+     *     EndValue?: double|null
      * } $args
      */
     public function __construct(array $args)

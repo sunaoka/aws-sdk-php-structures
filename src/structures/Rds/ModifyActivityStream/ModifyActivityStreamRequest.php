@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyActivityStream;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ResourceArn
- * @property 'locked'|'unlocked' $AuditPolicyState
+ * @property string|null $ResourceArn
+ * @property 'locked'|'unlocked'|null $AuditPolicyState
  */
 class ModifyActivityStreamRequest extends Request
 {
     /**
      * @param array{
-     *     ResourceArn?: string,
-     *     AuditPolicyState?: 'locked'|'unlocked'
+     *     ResourceArn?: string|null,
+     *     AuditPolicyState?: 'locked'|'unlocked'|null
      * } $args
      */
     public function __construct(array $args = [])

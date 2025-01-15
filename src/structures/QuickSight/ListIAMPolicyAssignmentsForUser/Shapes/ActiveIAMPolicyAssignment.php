@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListIAMPolicyAssignmentsForUser\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AssignmentName
- * @property string $PolicyArn
+ * @property string|null $AssignmentName
+ * @property string|null $PolicyArn
  */
 class ActiveIAMPolicyAssignment extends Shape
 {
     /**
      * @param array{
-     *     AssignmentName?: string,
-     *     PolicyArn?: string
+     *     AssignmentName?: string|null,
+     *     PolicyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

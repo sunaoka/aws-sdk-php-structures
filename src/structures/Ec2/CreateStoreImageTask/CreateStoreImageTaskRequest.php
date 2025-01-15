@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ImageId
  * @property string $Bucket
- * @property list<Shapes\S3ObjectTag> $S3ObjectTags
- * @property bool $DryRun
+ * @property list<Shapes\S3ObjectTag>|null $S3ObjectTags
+ * @property bool|null $DryRun
  */
 class CreateStoreImageTaskRequest extends Request
 {
@@ -16,8 +16,8 @@ class CreateStoreImageTaskRequest extends Request
      * @param array{
      *     ImageId: string,
      *     Bucket: string,
-     *     S3ObjectTags?: list<Shapes\S3ObjectTag>,
-     *     DryRun?: bool
+     *     S3ObjectTags?: list<Shapes\S3ObjectTag>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

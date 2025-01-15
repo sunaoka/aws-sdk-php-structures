@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConditionalFormattingIconSet $IconSet
- * @property ConditionalFormattingCustomIconCondition $CustomCondition
+ * @property ConditionalFormattingIconSet|null $IconSet
+ * @property ConditionalFormattingCustomIconCondition|null $CustomCondition
  */
 class ConditionalFormattingIcon extends Shape
 {
     /**
      * @param array{
-     *     IconSet?: ConditionalFormattingIconSet,
-     *     CustomCondition?: ConditionalFormattingCustomIconCondition
+     *     IconSet?: ConditionalFormattingIconSet|null,
+     *     CustomCondition?: ConditionalFormattingCustomIconCondition|null
      * } $args
      */
     public function __construct(array $args = [])

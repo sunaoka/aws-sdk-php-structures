@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Connect\SearchQueues\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $QueueArn
- * @property string $QueueId
- * @property string $Description
- * @property OutboundCallerConfig $OutboundCallerConfig
- * @property OutboundEmailConfig $OutboundEmailConfig
- * @property string $HoursOfOperationId
- * @property int<0, max> $MaxContacts
- * @property 'ENABLED'|'DISABLED' $Status
- * @property array<string, string> $Tags
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $LastModifiedRegion
+ * @property string|null $Name
+ * @property string|null $QueueArn
+ * @property string|null $QueueId
+ * @property string|null $Description
+ * @property OutboundCallerConfig|null $OutboundCallerConfig
+ * @property OutboundEmailConfig|null $OutboundEmailConfig
+ * @property string|null $HoursOfOperationId
+ * @property int<0, max>|null $MaxContacts
+ * @property 'ENABLED'|'DISABLED'|null $Status
+ * @property array<string, string>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  */
 class Queue extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     QueueArn?: string,
-     *     QueueId?: string,
-     *     Description?: string,
-     *     OutboundCallerConfig?: OutboundCallerConfig,
-     *     OutboundEmailConfig?: OutboundEmailConfig,
-     *     HoursOfOperationId?: string,
-     *     MaxContacts?: int<0, max>,
-     *     Status?: 'ENABLED'|'DISABLED',
-     *     Tags?: array<string, string>,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedRegion?: string
+     *     Name?: string|null,
+     *     QueueArn?: string|null,
+     *     QueueId?: string|null,
+     *     Description?: string|null,
+     *     OutboundCallerConfig?: OutboundCallerConfig|null,
+     *     OutboundEmailConfig?: OutboundEmailConfig|null,
+     *     HoursOfOperationId?: string|null,
+     *     MaxContacts?: int<0, max>|null,
+     *     Status?: 'ENABLED'|'DISABLED'|null,
+     *     Tags?: array<string, string>|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,61 +5,61 @@ namespace Sunaoka\Aws\Structures\Backup\ListBackupJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $BackupJobId
- * @property string $BackupVaultName
- * @property string $BackupVaultArn
- * @property string $RecoveryPointArn
- * @property string $ResourceArn
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $CompletionDate
- * @property 'CREATED'|'PENDING'|'RUNNING'|'ABORTING'|'ABORTED'|'COMPLETED'|'FAILED'|'EXPIRED'|'PARTIAL' $State
- * @property string $StatusMessage
- * @property string $PercentDone
- * @property int $BackupSizeInBytes
- * @property string $IamRoleArn
- * @property RecoveryPointCreator $CreatedBy
- * @property \Aws\Api\DateTimeResult $ExpectedCompletionDate
- * @property \Aws\Api\DateTimeResult $StartBy
- * @property string $ResourceType
- * @property int $BytesTransferred
- * @property array<string, string> $BackupOptions
- * @property string $BackupType
- * @property string $ParentJobId
- * @property bool $IsParent
- * @property string $ResourceName
- * @property \Aws\Api\DateTimeResult $InitiationDate
- * @property string $MessageCategory
+ * @property string|null $AccountId
+ * @property string|null $BackupJobId
+ * @property string|null $BackupVaultName
+ * @property string|null $BackupVaultArn
+ * @property string|null $RecoveryPointArn
+ * @property string|null $ResourceArn
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $CompletionDate
+ * @property 'CREATED'|'PENDING'|'RUNNING'|'ABORTING'|'ABORTED'|'COMPLETED'|'FAILED'|'EXPIRED'|'PARTIAL'|null $State
+ * @property string|null $StatusMessage
+ * @property string|null $PercentDone
+ * @property int|null $BackupSizeInBytes
+ * @property string|null $IamRoleArn
+ * @property RecoveryPointCreator|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $ExpectedCompletionDate
+ * @property \Aws\Api\DateTimeResult|null $StartBy
+ * @property string|null $ResourceType
+ * @property int|null $BytesTransferred
+ * @property array<string, string>|null $BackupOptions
+ * @property string|null $BackupType
+ * @property string|null $ParentJobId
+ * @property bool|null $IsParent
+ * @property string|null $ResourceName
+ * @property \Aws\Api\DateTimeResult|null $InitiationDate
+ * @property string|null $MessageCategory
  */
 class BackupJob extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     BackupJobId?: string,
-     *     BackupVaultName?: string,
-     *     BackupVaultArn?: string,
-     *     RecoveryPointArn?: string,
-     *     ResourceArn?: string,
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     CompletionDate?: \Aws\Api\DateTimeResult,
-     *     State?: 'CREATED'|'PENDING'|'RUNNING'|'ABORTING'|'ABORTED'|'COMPLETED'|'FAILED'|'EXPIRED'|'PARTIAL',
-     *     StatusMessage?: string,
-     *     PercentDone?: string,
-     *     BackupSizeInBytes?: int,
-     *     IamRoleArn?: string,
-     *     CreatedBy?: RecoveryPointCreator,
-     *     ExpectedCompletionDate?: \Aws\Api\DateTimeResult,
-     *     StartBy?: \Aws\Api\DateTimeResult,
-     *     ResourceType?: string,
-     *     BytesTransferred?: int,
-     *     BackupOptions?: array<string, string>,
-     *     BackupType?: string,
-     *     ParentJobId?: string,
-     *     IsParent?: bool,
-     *     ResourceName?: string,
-     *     InitiationDate?: \Aws\Api\DateTimeResult,
-     *     MessageCategory?: string
+     *     AccountId?: string|null,
+     *     BackupJobId?: string|null,
+     *     BackupVaultName?: string|null,
+     *     BackupVaultArn?: string|null,
+     *     RecoveryPointArn?: string|null,
+     *     ResourceArn?: string|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     CompletionDate?: \Aws\Api\DateTimeResult|null,
+     *     State?: 'CREATED'|'PENDING'|'RUNNING'|'ABORTING'|'ABORTED'|'COMPLETED'|'FAILED'|'EXPIRED'|'PARTIAL'|null,
+     *     StatusMessage?: string|null,
+     *     PercentDone?: string|null,
+     *     BackupSizeInBytes?: int|null,
+     *     IamRoleArn?: string|null,
+     *     CreatedBy?: RecoveryPointCreator|null,
+     *     ExpectedCompletionDate?: \Aws\Api\DateTimeResult|null,
+     *     StartBy?: \Aws\Api\DateTimeResult|null,
+     *     ResourceType?: string|null,
+     *     BytesTransferred?: int|null,
+     *     BackupOptions?: array<string, string>|null,
+     *     BackupType?: string|null,
+     *     ParentJobId?: string|null,
+     *     IsParent?: bool|null,
+     *     ResourceName?: string|null,
+     *     InitiationDate?: \Aws\Api\DateTimeResult|null,
+     *     MessageCategory?: string|null
      * } $args
      */
     public function __construct(array $args = [])

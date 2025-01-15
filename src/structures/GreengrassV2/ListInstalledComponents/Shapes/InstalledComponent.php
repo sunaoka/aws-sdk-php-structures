@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\ListInstalledComponents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $componentName
- * @property string $componentVersion
- * @property 'NEW'|'INSTALLED'|'STARTING'|'RUNNING'|'STOPPING'|'ERRORED'|'BROKEN'|'FINISHED' $lifecycleState
- * @property string $lifecycleStateDetails
- * @property bool $isRoot
- * @property \Aws\Api\DateTimeResult $lastStatusChangeTimestamp
- * @property \Aws\Api\DateTimeResult $lastReportedTimestamp
- * @property string $lastInstallationSource
- * @property list<string> $lifecycleStatusCodes
+ * @property string|null $componentName
+ * @property string|null $componentVersion
+ * @property 'NEW'|'INSTALLED'|'STARTING'|'RUNNING'|'STOPPING'|'ERRORED'|'BROKEN'|'FINISHED'|null $lifecycleState
+ * @property string|null $lifecycleStateDetails
+ * @property bool|null $isRoot
+ * @property \Aws\Api\DateTimeResult|null $lastStatusChangeTimestamp
+ * @property \Aws\Api\DateTimeResult|null $lastReportedTimestamp
+ * @property string|null $lastInstallationSource
+ * @property list<string>|null $lifecycleStatusCodes
  */
 class InstalledComponent extends Shape
 {
     /**
      * @param array{
-     *     componentName?: string,
-     *     componentVersion?: string,
-     *     lifecycleState?: 'NEW'|'INSTALLED'|'STARTING'|'RUNNING'|'STOPPING'|'ERRORED'|'BROKEN'|'FINISHED',
-     *     lifecycleStateDetails?: string,
-     *     isRoot?: bool,
-     *     lastStatusChangeTimestamp?: \Aws\Api\DateTimeResult,
-     *     lastReportedTimestamp?: \Aws\Api\DateTimeResult,
-     *     lastInstallationSource?: string,
-     *     lifecycleStatusCodes?: list<string>
+     *     componentName?: string|null,
+     *     componentVersion?: string|null,
+     *     lifecycleState?: 'NEW'|'INSTALLED'|'STARTING'|'RUNNING'|'STOPPING'|'ERRORED'|'BROKEN'|'FINISHED'|null,
+     *     lifecycleStateDetails?: string|null,
+     *     isRoot?: bool|null,
+     *     lastStatusChangeTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     lastReportedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     lastInstallationSource?: string|null,
+     *     lifecycleStatusCodes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

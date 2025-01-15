@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $usageType
  * @property string $operation
  * @property string $key
- * @property string $group
+ * @property string|null $group
  * @property string $usageAccountId
  * @property double $amount
- * @property HistoricalUsageEntity $historicalUsage
+ * @property HistoricalUsageEntity|null $historicalUsage
  */
 class BatchCreateWorkloadEstimateUsageEntry extends Shape
 {
@@ -22,10 +22,10 @@ class BatchCreateWorkloadEstimateUsageEntry extends Shape
      *     usageType: string,
      *     operation: string,
      *     key: string,
-     *     group?: string,
+     *     group?: string|null,
      *     usageAccountId: string,
      *     amount: double,
-     *     historicalUsage?: HistoricalUsageEntity
+     *     historicalUsage?: HistoricalUsageEntity|null
      * } $args
      */
     public function __construct(array $args)

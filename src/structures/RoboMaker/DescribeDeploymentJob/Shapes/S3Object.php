@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $bucket
  * @property string $key
- * @property string $etag
+ * @property string|null $etag
  */
 class S3Object extends Shape
 {
@@ -15,7 +15,7 @@ class S3Object extends Shape
      * @param array{
      *     bucket: string,
      *     key: string,
-     *     etag?: string
+     *     etag?: string|null
      * } $args
      */
     public function __construct(array $args)

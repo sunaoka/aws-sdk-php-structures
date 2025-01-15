@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $S3Uri
- * @property 'ONE_DOC_PER_FILE'|'ONE_DOC_PER_LINE' $InputFormat
+ * @property 'ONE_DOC_PER_FILE'|'ONE_DOC_PER_LINE'|null $InputFormat
  */
 class DatasetEntityRecognizerDocuments extends Shape
 {
     /**
      * @param array{
      *     S3Uri: string,
-     *     InputFormat?: 'ONE_DOC_PER_FILE'|'ONE_DOC_PER_LINE'
+     *     InputFormat?: 'ONE_DOC_PER_FILE'|'ONE_DOC_PER_LINE'|null
      * } $args
      */
     public function __construct(array $args)

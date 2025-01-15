@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetECSServiceRecommendations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $memory
- * @property int $cpu
- * @property SavingsOpportunity $savingsOpportunity
- * @property ECSSavingsOpportunityAfterDiscounts $savingsOpportunityAfterDiscounts
- * @property list<ECSServiceProjectedUtilizationMetric> $projectedUtilizationMetrics
- * @property list<ContainerRecommendation> $containerRecommendations
+ * @property int|null $memory
+ * @property int|null $cpu
+ * @property SavingsOpportunity|null $savingsOpportunity
+ * @property ECSSavingsOpportunityAfterDiscounts|null $savingsOpportunityAfterDiscounts
+ * @property list<ECSServiceProjectedUtilizationMetric>|null $projectedUtilizationMetrics
+ * @property list<ContainerRecommendation>|null $containerRecommendations
  */
 class ECSServiceRecommendationOption extends Shape
 {
     /**
      * @param array{
-     *     memory?: int,
-     *     cpu?: int,
-     *     savingsOpportunity?: SavingsOpportunity,
-     *     savingsOpportunityAfterDiscounts?: ECSSavingsOpportunityAfterDiscounts,
-     *     projectedUtilizationMetrics?: list<ECSServiceProjectedUtilizationMetric>,
-     *     containerRecommendations?: list<ContainerRecommendation>
+     *     memory?: int|null,
+     *     cpu?: int|null,
+     *     savingsOpportunity?: SavingsOpportunity|null,
+     *     savingsOpportunityAfterDiscounts?: ECSSavingsOpportunityAfterDiscounts|null,
+     *     projectedUtilizationMetrics?: list<ECSServiceProjectedUtilizationMetric>|null,
+     *     containerRecommendations?: list<ContainerRecommendation>|null
      * } $args
      */
     public function __construct(array $args = [])

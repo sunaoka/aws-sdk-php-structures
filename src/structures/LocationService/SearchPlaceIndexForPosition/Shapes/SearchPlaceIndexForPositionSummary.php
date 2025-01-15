@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<double> $Position
- * @property int<1, 50> $MaxResults
+ * @property int<1, 50>|null $MaxResults
  * @property string $DataSource
- * @property string $Language
+ * @property string|null $Language
  */
 class SearchPlaceIndexForPositionSummary extends Shape
 {
     /**
      * @param array{
      *     Position: list<double>,
-     *     MaxResults?: int<1, 50>,
+     *     MaxResults?: int<1, 50>|null,
      *     DataSource: string,
-     *     Language?: string
+     *     Language?: string|null
      * } $args
      */
     public function __construct(array $args)

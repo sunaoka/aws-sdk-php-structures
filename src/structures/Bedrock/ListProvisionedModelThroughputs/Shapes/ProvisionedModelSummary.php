@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<1, max> $modelUnits
  * @property int<1, max> $desiredModelUnits
  * @property 'Creating'|'InService'|'Updating'|'Failed' $status
- * @property 'OneMonth'|'SixMonths' $commitmentDuration
- * @property \Aws\Api\DateTimeResult $commitmentExpirationTime
+ * @property 'OneMonth'|'SixMonths'|null $commitmentDuration
+ * @property \Aws\Api\DateTimeResult|null $commitmentExpirationTime
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
  */
@@ -30,8 +30,8 @@ class ProvisionedModelSummary extends Shape
      *     modelUnits: int<1, max>,
      *     desiredModelUnits: int<1, max>,
      *     status: 'Creating'|'InService'|'Updating'|'Failed',
-     *     commitmentDuration?: 'OneMonth'|'SixMonths',
-     *     commitmentExpirationTime?: \Aws\Api\DateTimeResult,
+     *     commitmentDuration?: 'OneMonth'|'SixMonths'|null,
+     *     commitmentExpirationTime?: \Aws\Api\DateTimeResult|null,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     lastModifiedTime: \Aws\Api\DateTimeResult
      * } $args

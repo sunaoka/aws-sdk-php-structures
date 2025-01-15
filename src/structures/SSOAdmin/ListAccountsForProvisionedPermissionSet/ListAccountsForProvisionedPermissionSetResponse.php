@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListAccountsForProvisionedPermissionSe
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $AccountIds
- * @property string $NextToken
+ * @property list<string>|null $AccountIds
+ * @property string|null $NextToken
  */
 class ListAccountsForProvisionedPermissionSetResponse extends Response
 {

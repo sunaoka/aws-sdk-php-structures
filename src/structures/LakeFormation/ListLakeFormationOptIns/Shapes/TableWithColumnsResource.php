@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LakeFormation\ListLakeFormationOptIns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $DatabaseName
  * @property string $Name
- * @property list<string> $ColumnNames
- * @property ColumnWildcard $ColumnWildcard
+ * @property list<string>|null $ColumnNames
+ * @property ColumnWildcard|null $ColumnWildcard
  */
 class TableWithColumnsResource extends Shape
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DatabaseName: string,
      *     Name: string,
-     *     ColumnNames?: list<string>,
-     *     ColumnWildcard?: ColumnWildcard
+     *     ColumnNames?: list<string>|null,
+     *     ColumnWildcard?: ColumnWildcard|null
      * } $args
      */
     public function __construct(array $args)

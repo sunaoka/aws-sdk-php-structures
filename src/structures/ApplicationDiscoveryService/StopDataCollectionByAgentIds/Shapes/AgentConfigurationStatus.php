@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\StopDataCollectionB
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $agentId
- * @property bool $operationSucceeded
- * @property string $description
+ * @property string|null $agentId
+ * @property bool|null $operationSucceeded
+ * @property string|null $description
  */
 class AgentConfigurationStatus extends Shape
 {
     /**
      * @param array{
-     *     agentId?: string,
-     *     operationSucceeded?: bool,
-     *     description?: string
+     *     agentId?: string|null,
+     *     operationSucceeded?: bool|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

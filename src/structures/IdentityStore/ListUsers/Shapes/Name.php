@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\IdentityStore\ListUsers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Formatted
- * @property string $FamilyName
- * @property string $GivenName
- * @property string $MiddleName
- * @property string $HonorificPrefix
- * @property string $HonorificSuffix
+ * @property string|null $Formatted
+ * @property string|null $FamilyName
+ * @property string|null $GivenName
+ * @property string|null $MiddleName
+ * @property string|null $HonorificPrefix
+ * @property string|null $HonorificSuffix
  */
 class Name extends Shape
 {
     /**
      * @param array{
-     *     Formatted?: string,
-     *     FamilyName?: string,
-     *     GivenName?: string,
-     *     MiddleName?: string,
-     *     HonorificPrefix?: string,
-     *     HonorificSuffix?: string
+     *     Formatted?: string|null,
+     *     FamilyName?: string|null,
+     *     GivenName?: string|null,
+     *     MiddleName?: string|null,
+     *     HonorificPrefix?: string|null,
+     *     HonorificSuffix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

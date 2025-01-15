@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CloudWatchLogsRoleArn
- * @property bool $ExcludeVerboseContent
- * @property string $FieldLogLevel
+ * @property string|null $CloudWatchLogsRoleArn
+ * @property bool|null $ExcludeVerboseContent
+ * @property string|null $FieldLogLevel
  */
 class AwsAppSyncGraphQlApiLogConfigDetails extends Shape
 {
     /**
      * @param array{
-     *     CloudWatchLogsRoleArn?: string,
-     *     ExcludeVerboseContent?: bool,
-     *     FieldLogLevel?: string
+     *     CloudWatchLogsRoleArn?: string|null,
+     *     ExcludeVerboseContent?: bool|null,
+     *     FieldLogLevel?: string|null
      * } $args
      */
     public function __construct(array $args = [])

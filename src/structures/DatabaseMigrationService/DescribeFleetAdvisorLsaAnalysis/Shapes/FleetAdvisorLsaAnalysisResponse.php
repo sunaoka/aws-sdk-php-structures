@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeFleetAdvisorLs
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LsaAnalysisId
- * @property string $Status
+ * @property string|null $LsaAnalysisId
+ * @property string|null $Status
  */
 class FleetAdvisorLsaAnalysisResponse extends Shape
 {
     /**
      * @param array{
-     *     LsaAnalysisId?: string,
-     *     Status?: string
+     *     LsaAnalysisId?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

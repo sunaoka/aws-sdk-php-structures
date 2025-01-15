@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Key
- * @property string $Option
- * @property list<string> $Values
+ * @property string|null $Option
+ * @property list<string>|null $Values
  */
 class ParameterStringFilter extends Shape
 {
     /**
      * @param array{
      *     Key: string,
-     *     Option?: string,
-     *     Values?: list<string>
+     *     Option?: string|null,
+     *     Values?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

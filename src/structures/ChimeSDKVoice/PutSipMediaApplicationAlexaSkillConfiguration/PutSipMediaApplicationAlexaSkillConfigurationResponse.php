@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\PutSipMediaApplicationAlexaSkillC
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\SipMediaApplicationAlexaSkillConfiguration $SipMediaApplicationAlexaSkillConfiguration
+ * @property Shapes\SipMediaApplicationAlexaSkillConfiguration|null $SipMediaApplicationAlexaSkillConfiguration
  */
 class PutSipMediaApplicationAlexaSkillConfigurationResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ssm\DeleteAssociation;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Name
- * @property string $InstanceId
- * @property string $AssociationId
+ * @property string|null $Name
+ * @property string|null $InstanceId
+ * @property string|null $AssociationId
  */
 class DeleteAssociationRequest extends Request
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     InstanceId?: string,
-     *     AssociationId?: string
+     *     Name?: string|null,
+     *     InstanceId?: string|null,
+     *     AssociationId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

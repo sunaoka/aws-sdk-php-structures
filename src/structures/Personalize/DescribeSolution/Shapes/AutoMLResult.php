@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeSolution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bestRecipeArn
+ * @property string|null $bestRecipeArn
  */
 class AutoMLResult extends Shape
 {
     /**
-     * @param array{bestRecipeArn?: string} $args
+     * @param array{bestRecipeArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

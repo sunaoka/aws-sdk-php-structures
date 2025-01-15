@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\S3Control\GetBucketReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Prefix
- * @property S3Tag $Tag
- * @property ReplicationRuleAndOperator $And
+ * @property string|null $Prefix
+ * @property S3Tag|null $Tag
+ * @property ReplicationRuleAndOperator|null $And
  */
 class ReplicationRuleFilter extends Shape
 {
     /**
      * @param array{
-     *     Prefix?: string,
-     *     Tag?: S3Tag,
-     *     And?: ReplicationRuleAndOperator
+     *     Prefix?: string|null,
+     *     Tag?: S3Tag|null,
+     *     And?: ReplicationRuleAndOperator|null
      * } $args
      */
     public function __construct(array $args = [])

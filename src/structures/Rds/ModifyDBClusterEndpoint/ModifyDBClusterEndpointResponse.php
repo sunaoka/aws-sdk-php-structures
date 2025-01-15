@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyDBClusterEndpoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DBClusterEndpointIdentifier
- * @property string $DBClusterIdentifier
- * @property string $DBClusterEndpointResourceIdentifier
- * @property string $Endpoint
- * @property string $Status
- * @property string $EndpointType
- * @property string $CustomEndpointType
- * @property list<string> $StaticMembers
- * @property list<string> $ExcludedMembers
- * @property string $DBClusterEndpointArn
+ * @property string|null $DBClusterEndpointIdentifier
+ * @property string|null $DBClusterIdentifier
+ * @property string|null $DBClusterEndpointResourceIdentifier
+ * @property string|null $Endpoint
+ * @property string|null $Status
+ * @property string|null $EndpointType
+ * @property string|null $CustomEndpointType
+ * @property list<string>|null $StaticMembers
+ * @property list<string>|null $ExcludedMembers
+ * @property string|null $DBClusterEndpointArn
  */
 class ModifyDBClusterEndpointResponse extends Response
 {

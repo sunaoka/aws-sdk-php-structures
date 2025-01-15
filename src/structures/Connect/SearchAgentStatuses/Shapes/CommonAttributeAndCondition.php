@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Connect\SearchAgentStatuses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<TagCondition> $TagConditions
+ * @property list<TagCondition>|null $TagConditions
  */
 class CommonAttributeAndCondition extends Shape
 {
     /**
-     * @param array{TagConditions?: list<TagCondition>} $args
+     * @param array{TagConditions?: list<TagCondition>|null} $args
      */
     public function __construct(array $args = [])
     {

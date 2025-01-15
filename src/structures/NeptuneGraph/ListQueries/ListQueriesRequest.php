@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $graphIdentifier
  * @property int $maxResults
- * @property 'ALL'|'RUNNING'|'WAITING'|'CANCELLING' $state
+ * @property 'ALL'|'RUNNING'|'WAITING'|'CANCELLING'|null $state
  */
 class ListQueriesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListQueriesRequest extends Request
      * @param array{
      *     graphIdentifier: string,
      *     maxResults: int,
-     *     state?: 'ALL'|'RUNNING'|'WAITING'|'CANCELLING'
+     *     state?: 'ALL'|'RUNNING'|'WAITING'|'CANCELLING'|null
      * } $args
      */
     public function __construct(array $args)

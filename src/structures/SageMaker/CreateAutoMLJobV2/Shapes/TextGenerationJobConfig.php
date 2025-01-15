@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateAutoMLJobV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AutoMLJobCompletionCriteria $CompletionCriteria
- * @property string $BaseModelName
- * @property array<string, string> $TextGenerationHyperParameters
- * @property ModelAccessConfig $ModelAccessConfig
+ * @property AutoMLJobCompletionCriteria|null $CompletionCriteria
+ * @property string|null $BaseModelName
+ * @property array<string, string>|null $TextGenerationHyperParameters
+ * @property ModelAccessConfig|null $ModelAccessConfig
  */
 class TextGenerationJobConfig extends Shape
 {
     /**
      * @param array{
-     *     CompletionCriteria?: AutoMLJobCompletionCriteria,
-     *     BaseModelName?: string,
-     *     TextGenerationHyperParameters?: array<string, string>,
-     *     ModelAccessConfig?: ModelAccessConfig
+     *     CompletionCriteria?: AutoMLJobCompletionCriteria|null,
+     *     BaseModelName?: string|null,
+     *     TextGenerationHyperParameters?: array<string, string>|null,
+     *     ModelAccessConfig?: ModelAccessConfig|null
      * } $args
      */
     public function __construct(array $args = [])

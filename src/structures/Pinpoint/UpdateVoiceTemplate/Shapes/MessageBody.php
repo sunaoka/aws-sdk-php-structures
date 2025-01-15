@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pinpoint\UpdateVoiceTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Message
- * @property string $RequestID
+ * @property string|null $Message
+ * @property string|null $RequestID
  */
 class MessageBody extends Shape
 {
     /**
      * @param array{
-     *     Message?: string,
-     *     RequestID?: string
+     *     Message?: string|null,
+     *     RequestID?: string|null
      * } $args
      */
     public function __construct(array $args = [])

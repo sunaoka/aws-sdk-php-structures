@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\MonitorSummary> $monitors
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListMonitorsResponse extends Response
 {

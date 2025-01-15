@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ResourceArn
  * @property list<string> $LogDestinationConfigs
- * @property list<FieldToMatch> $RedactedFields
- * @property bool $ManagedByFirewallManager
- * @property LoggingFilter $LoggingFilter
- * @property 'WAF_LOGS' $LogType
- * @property 'CUSTOMER'|'SECURITY_LAKE' $LogScope
+ * @property list<FieldToMatch>|null $RedactedFields
+ * @property bool|null $ManagedByFirewallManager
+ * @property LoggingFilter|null $LoggingFilter
+ * @property 'WAF_LOGS'|null $LogType
+ * @property 'CUSTOMER'|'SECURITY_LAKE'|null $LogScope
  */
 class LoggingConfiguration extends Shape
 {
@@ -19,11 +19,11 @@ class LoggingConfiguration extends Shape
      * @param array{
      *     ResourceArn: string,
      *     LogDestinationConfigs: list<string>,
-     *     RedactedFields?: list<FieldToMatch>,
-     *     ManagedByFirewallManager?: bool,
-     *     LoggingFilter?: LoggingFilter,
-     *     LogType?: 'WAF_LOGS',
-     *     LogScope?: 'CUSTOMER'|'SECURITY_LAKE'
+     *     RedactedFields?: list<FieldToMatch>|null,
+     *     ManagedByFirewallManager?: bool|null,
+     *     LoggingFilter?: LoggingFilter|null,
+     *     LogType?: 'WAF_LOGS'|null,
+     *     LogScope?: 'CUSTOMER'|'SECURITY_LAKE'|null
      * } $args
      */
     public function __construct(array $args)

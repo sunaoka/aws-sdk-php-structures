@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FleetId
  * @property string $ComputeName
- * @property string $CertificatePath
- * @property string $DnsName
- * @property string $IpAddress
- * @property string $Location
+ * @property string|null $CertificatePath
+ * @property string|null $DnsName
+ * @property string|null $IpAddress
+ * @property string|null $Location
  */
 class RegisterComputeRequest extends Request
 {
@@ -18,10 +18,10 @@ class RegisterComputeRequest extends Request
      * @param array{
      *     FleetId: string,
      *     ComputeName: string,
-     *     CertificatePath?: string,
-     *     DnsName?: string,
-     *     IpAddress?: string,
-     *     Location?: string
+     *     CertificatePath?: string|null,
+     *     DnsName?: string|null,
+     *     IpAddress?: string|null,
+     *     Location?: string|null
      * } $args
      */
     public function __construct(array $args)

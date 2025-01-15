@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Deadline\DeleteFleet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $farmId
  * @property string $fleetId
  */
@@ -13,7 +13,7 @@ class DeleteFleetRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     farmId: string,
      *     fleetId: string
      * } $args

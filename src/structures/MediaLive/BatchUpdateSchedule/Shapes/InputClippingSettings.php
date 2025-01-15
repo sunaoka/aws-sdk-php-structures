@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ZEROBASED'|'EMBEDDED' $InputTimecodeSource
- * @property StartTimecode $StartTimecode
- * @property StopTimecode $StopTimecode
+ * @property StartTimecode|null $StartTimecode
+ * @property StopTimecode|null $StopTimecode
  */
 class InputClippingSettings extends Shape
 {
     /**
      * @param array{
      *     InputTimecodeSource: 'ZEROBASED'|'EMBEDDED',
-     *     StartTimecode?: StartTimecode,
-     *     StopTimecode?: StopTimecode
+     *     StartTimecode?: StartTimecode|null,
+     *     StopTimecode?: StopTimecode|null
      * } $args
      */
     public function __construct(array $args)

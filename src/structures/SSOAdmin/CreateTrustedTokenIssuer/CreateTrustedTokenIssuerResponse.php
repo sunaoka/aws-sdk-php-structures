@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\CreateTrustedTokenIssuer;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TrustedTokenIssuerArn
+ * @property string|null $TrustedTokenIssuerArn
  */
 class CreateTrustedTokenIssuerResponse extends Response
 {

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\RoutingControl> $RoutingControls
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListRoutingControlsResponse extends Response
 {

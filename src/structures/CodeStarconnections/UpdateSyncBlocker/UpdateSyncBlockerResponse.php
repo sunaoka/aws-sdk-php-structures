@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $ResourceName
- * @property string $ParentResourceName
+ * @property string|null $ParentResourceName
  * @property Shapes\SyncBlocker $SyncBlocker
  */
 class UpdateSyncBlockerResponse extends Response

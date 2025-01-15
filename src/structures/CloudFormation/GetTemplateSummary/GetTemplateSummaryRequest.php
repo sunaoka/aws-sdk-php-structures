@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudFormation\GetTemplateSummary;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TemplateBody
- * @property string $TemplateURL
- * @property string $StackName
- * @property string $StackSetName
- * @property 'SELF'|'DELEGATED_ADMIN' $CallAs
- * @property Shapes\TemplateSummaryConfig $TemplateSummaryConfig
+ * @property string|null $TemplateBody
+ * @property string|null $TemplateURL
+ * @property string|null $StackName
+ * @property string|null $StackSetName
+ * @property 'SELF'|'DELEGATED_ADMIN'|null $CallAs
+ * @property Shapes\TemplateSummaryConfig|null $TemplateSummaryConfig
  */
 class GetTemplateSummaryRequest extends Request
 {
     /**
      * @param array{
-     *     TemplateBody?: string,
-     *     TemplateURL?: string,
-     *     StackName?: string,
-     *     StackSetName?: string,
-     *     CallAs?: 'SELF'|'DELEGATED_ADMIN',
-     *     TemplateSummaryConfig?: Shapes\TemplateSummaryConfig
+     *     TemplateBody?: string|null,
+     *     TemplateURL?: string|null,
+     *     StackName?: string|null,
+     *     StackSetName?: string|null,
+     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'|null,
+     *     TemplateSummaryConfig?: Shapes\TemplateSummaryConfig|null
      * } $args
      */
     public function __construct(array $args = [])

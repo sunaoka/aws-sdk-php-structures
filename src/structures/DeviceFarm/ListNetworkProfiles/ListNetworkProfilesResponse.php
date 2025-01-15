@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListNetworkProfiles;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\NetworkProfile> $networkProfiles
- * @property string $nextToken
+ * @property list<Shapes\NetworkProfile>|null $networkProfiles
+ * @property string|null $nextToken
  */
 class ListNetworkProfilesResponse extends Response
 {

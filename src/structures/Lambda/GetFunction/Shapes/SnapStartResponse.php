@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lambda\GetFunction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PublishedVersions'|'None' $ApplyOn
- * @property 'On'|'Off' $OptimizationStatus
+ * @property 'PublishedVersions'|'None'|null $ApplyOn
+ * @property 'On'|'Off'|null $OptimizationStatus
  */
 class SnapStartResponse extends Shape
 {
     /**
      * @param array{
-     *     ApplyOn?: 'PublishedVersions'|'None',
-     *     OptimizationStatus?: 'On'|'Off'
+     *     ApplyOn?: 'PublishedVersions'|'None'|null,
+     *     OptimizationStatus?: 'On'|'Off'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeConfigurationOptions\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Namespace
- * @property string $Name
- * @property string $DefaultValue
- * @property string $ChangeSeverity
- * @property bool $UserDefined
- * @property 'Scalar'|'List' $ValueType
- * @property list<string> $ValueOptions
- * @property int $MinValue
- * @property int $MaxValue
- * @property int $MaxLength
- * @property OptionRestrictionRegex $Regex
+ * @property string|null $Namespace
+ * @property string|null $Name
+ * @property string|null $DefaultValue
+ * @property string|null $ChangeSeverity
+ * @property bool|null $UserDefined
+ * @property 'Scalar'|'List'|null $ValueType
+ * @property list<string>|null $ValueOptions
+ * @property int|null $MinValue
+ * @property int|null $MaxValue
+ * @property int|null $MaxLength
+ * @property OptionRestrictionRegex|null $Regex
  */
 class ConfigurationOptionDescription extends Shape
 {
     /**
      * @param array{
-     *     Namespace?: string,
-     *     Name?: string,
-     *     DefaultValue?: string,
-     *     ChangeSeverity?: string,
-     *     UserDefined?: bool,
-     *     ValueType?: 'Scalar'|'List',
-     *     ValueOptions?: list<string>,
-     *     MinValue?: int,
-     *     MaxValue?: int,
-     *     MaxLength?: int,
-     *     Regex?: OptionRestrictionRegex
+     *     Namespace?: string|null,
+     *     Name?: string|null,
+     *     DefaultValue?: string|null,
+     *     ChangeSeverity?: string|null,
+     *     UserDefined?: bool|null,
+     *     ValueType?: 'Scalar'|'List'|null,
+     *     ValueOptions?: list<string>|null,
+     *     MinValue?: int|null,
+     *     MaxValue?: int|null,
+     *     MaxLength?: int|null,
+     *     Regex?: OptionRestrictionRegex|null
      * } $args
      */
     public function __construct(array $args = [])

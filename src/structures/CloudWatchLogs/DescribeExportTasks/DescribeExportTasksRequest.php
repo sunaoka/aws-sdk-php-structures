@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\DescribeExportTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $taskId
- * @property 'CANCELLED'|'COMPLETED'|'FAILED'|'PENDING'|'PENDING_CANCEL'|'RUNNING' $statusCode
- * @property string $nextToken
- * @property int<1, 50> $limit
+ * @property string|null $taskId
+ * @property 'CANCELLED'|'COMPLETED'|'FAILED'|'PENDING'|'PENDING_CANCEL'|'RUNNING'|null $statusCode
+ * @property string|null $nextToken
+ * @property int<1, 50>|null $limit
  */
 class DescribeExportTasksRequest extends Request
 {
     /**
      * @param array{
-     *     taskId?: string,
-     *     statusCode?: 'CANCELLED'|'COMPLETED'|'FAILED'|'PENDING'|'PENDING_CANCEL'|'RUNNING',
-     *     nextToken?: string,
-     *     limit?: int<1, 50>
+     *     taskId?: string|null,
+     *     statusCode?: 'CANCELLED'|'COMPLETED'|'FAILED'|'PENDING'|'PENDING_CANCEL'|'RUNNING'|null,
+     *     nextToken?: string|null,
+     *     limit?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args = [])

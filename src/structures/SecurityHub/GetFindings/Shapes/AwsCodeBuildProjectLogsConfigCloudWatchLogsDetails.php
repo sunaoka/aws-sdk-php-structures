@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GroupName
- * @property string $Status
- * @property string $StreamName
+ * @property string|null $GroupName
+ * @property string|null $Status
+ * @property string|null $StreamName
  */
 class AwsCodeBuildProjectLogsConfigCloudWatchLogsDetails extends Shape
 {
     /**
      * @param array{
-     *     GroupName?: string,
-     *     Status?: string,
-     *     StreamName?: string
+     *     GroupName?: string|null,
+     *     Status?: string|null,
+     *     StreamName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

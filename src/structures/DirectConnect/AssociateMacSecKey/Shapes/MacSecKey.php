@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DirectConnect\AssociateMacSecKey\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $secretARN
- * @property string $ckn
- * @property string $state
- * @property string $startOn
+ * @property string|null $secretARN
+ * @property string|null $ckn
+ * @property string|null $state
+ * @property string|null $startOn
  */
 class MacSecKey extends Shape
 {
     /**
      * @param array{
-     *     secretARN?: string,
-     *     ckn?: string,
-     *     state?: string,
-     *     startOn?: string
+     *     secretARN?: string|null,
+     *     ckn?: string|null,
+     *     state?: string|null,
+     *     startOn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

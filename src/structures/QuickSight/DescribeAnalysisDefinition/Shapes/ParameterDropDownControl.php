@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ParameterControlId
  * @property string $Title
  * @property string $SourceParameterName
- * @property DropDownControlDisplayOptions $DisplayOptions
- * @property 'MULTI_SELECT'|'SINGLE_SELECT' $Type
- * @property ParameterSelectableValues $SelectableValues
- * @property CascadingControlConfiguration $CascadingControlConfiguration
- * @property 'AUTO'|'MANUAL' $CommitMode
+ * @property DropDownControlDisplayOptions|null $DisplayOptions
+ * @property 'MULTI_SELECT'|'SINGLE_SELECT'|null $Type
+ * @property ParameterSelectableValues|null $SelectableValues
+ * @property CascadingControlConfiguration|null $CascadingControlConfiguration
+ * @property 'AUTO'|'MANUAL'|null $CommitMode
  */
 class ParameterDropDownControl extends Shape
 {
@@ -21,11 +21,11 @@ class ParameterDropDownControl extends Shape
      *     ParameterControlId: string,
      *     Title: string,
      *     SourceParameterName: string,
-     *     DisplayOptions?: DropDownControlDisplayOptions,
-     *     Type?: 'MULTI_SELECT'|'SINGLE_SELECT',
-     *     SelectableValues?: ParameterSelectableValues,
-     *     CascadingControlConfiguration?: CascadingControlConfiguration,
-     *     CommitMode?: 'AUTO'|'MANUAL'
+     *     DisplayOptions?: DropDownControlDisplayOptions|null,
+     *     Type?: 'MULTI_SELECT'|'SINGLE_SELECT'|null,
+     *     SelectableValues?: ParameterSelectableValues|null,
+     *     CascadingControlConfiguration?: CascadingControlConfiguration|null,
+     *     CommitMode?: 'AUTO'|'MANUAL'|null
      * } $args
      */
     public function __construct(array $args)

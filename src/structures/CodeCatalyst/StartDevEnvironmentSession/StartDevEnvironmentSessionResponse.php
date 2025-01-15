@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\DevEnvironmentAccessDetails $accessDetails
- * @property string $sessionId
+ * @property string|null $sessionId
  * @property string $spaceName
  * @property string $projectName
  * @property string $id

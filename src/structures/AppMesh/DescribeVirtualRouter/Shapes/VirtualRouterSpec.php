@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppMesh\DescribeVirtualRouter\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<VirtualRouterListener> $listeners
+ * @property list<VirtualRouterListener>|null $listeners
  */
 class VirtualRouterSpec extends Shape
 {
     /**
-     * @param array{listeners?: list<VirtualRouterListener>} $args
+     * @param array{listeners?: list<VirtualRouterListener>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\ListCollections;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\CollectionSummary> $collectionSummaries
- * @property string $nextToken
+ * @property list<Shapes\CollectionSummary>|null $collectionSummaries
+ * @property string|null $nextToken
  */
 class ListCollectionsResponse extends Response
 {

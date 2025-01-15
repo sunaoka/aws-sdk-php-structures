@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Pinpoint\DeleteJourney\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FromAddress
+ * @property string|null $FromAddress
  */
 class JourneyEmailMessage extends Shape
 {
     /**
-     * @param array{FromAddress?: string} $args
+     * @param array{FromAddress?: string|null} $args
      */
     public function __construct(array $args = [])
     {

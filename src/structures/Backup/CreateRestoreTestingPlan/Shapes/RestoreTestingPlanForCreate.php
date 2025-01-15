@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RestoreTestingRecoveryPointSelection $RecoveryPointSelection
  * @property string $RestoreTestingPlanName
  * @property string $ScheduleExpression
- * @property string $ScheduleExpressionTimezone
- * @property int $StartWindowHours
+ * @property string|null $ScheduleExpressionTimezone
+ * @property int|null $StartWindowHours
  */
 class RestoreTestingPlanForCreate extends Shape
 {
@@ -18,8 +18,8 @@ class RestoreTestingPlanForCreate extends Shape
      *     RecoveryPointSelection: RestoreTestingRecoveryPointSelection,
      *     RestoreTestingPlanName: string,
      *     ScheduleExpression: string,
-     *     ScheduleExpressionTimezone?: string,
-     *     StartWindowHours?: int
+     *     ScheduleExpressionTimezone?: string|null,
+     *     StartWindowHours?: int|null
      * } $args
      */
     public function __construct(array $args)

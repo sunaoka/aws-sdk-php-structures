@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\DisassociateUserFromPermissionGrou
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $statusCode
+ * @property int|null $statusCode
  */
 class DisassociateUserFromPermissionGroupResponse extends Response
 {

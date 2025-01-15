@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MachineLearning\CreateMLModel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $MLModelId
+ * @property string|null $MLModelId
  */
 class CreateMLModelResponse extends Response
 {

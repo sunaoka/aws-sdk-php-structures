@@ -5,65 +5,65 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DbSnapshotIdentifier
- * @property string $DbInstanceIdentifier
- * @property string $SnapshotCreateTime
- * @property string $Engine
- * @property int $AllocatedStorage
- * @property string $Status
- * @property int $Port
- * @property string $AvailabilityZone
- * @property string $VpcId
- * @property string $InstanceCreateTime
- * @property string $MasterUsername
- * @property string $EngineVersion
- * @property string $LicenseModel
- * @property string $SnapshotType
- * @property int $Iops
- * @property string $OptionGroupName
- * @property int $PercentProgress
- * @property string $SourceRegion
- * @property string $SourceDbSnapshotIdentifier
- * @property string $StorageType
- * @property string $TdeCredentialArn
- * @property bool $Encrypted
- * @property string $KmsKeyId
- * @property string $Timezone
- * @property bool $IamDatabaseAuthenticationEnabled
- * @property list<AwsRdsDbProcessorFeature> $ProcessorFeatures
- * @property string $DbiResourceId
+ * @property string|null $DbSnapshotIdentifier
+ * @property string|null $DbInstanceIdentifier
+ * @property string|null $SnapshotCreateTime
+ * @property string|null $Engine
+ * @property int|null $AllocatedStorage
+ * @property string|null $Status
+ * @property int|null $Port
+ * @property string|null $AvailabilityZone
+ * @property string|null $VpcId
+ * @property string|null $InstanceCreateTime
+ * @property string|null $MasterUsername
+ * @property string|null $EngineVersion
+ * @property string|null $LicenseModel
+ * @property string|null $SnapshotType
+ * @property int|null $Iops
+ * @property string|null $OptionGroupName
+ * @property int|null $PercentProgress
+ * @property string|null $SourceRegion
+ * @property string|null $SourceDbSnapshotIdentifier
+ * @property string|null $StorageType
+ * @property string|null $TdeCredentialArn
+ * @property bool|null $Encrypted
+ * @property string|null $KmsKeyId
+ * @property string|null $Timezone
+ * @property bool|null $IamDatabaseAuthenticationEnabled
+ * @property list<AwsRdsDbProcessorFeature>|null $ProcessorFeatures
+ * @property string|null $DbiResourceId
  */
 class AwsRdsDbSnapshotDetails extends Shape
 {
     /**
      * @param array{
-     *     DbSnapshotIdentifier?: string,
-     *     DbInstanceIdentifier?: string,
-     *     SnapshotCreateTime?: string,
-     *     Engine?: string,
-     *     AllocatedStorage?: int,
-     *     Status?: string,
-     *     Port?: int,
-     *     AvailabilityZone?: string,
-     *     VpcId?: string,
-     *     InstanceCreateTime?: string,
-     *     MasterUsername?: string,
-     *     EngineVersion?: string,
-     *     LicenseModel?: string,
-     *     SnapshotType?: string,
-     *     Iops?: int,
-     *     OptionGroupName?: string,
-     *     PercentProgress?: int,
-     *     SourceRegion?: string,
-     *     SourceDbSnapshotIdentifier?: string,
-     *     StorageType?: string,
-     *     TdeCredentialArn?: string,
-     *     Encrypted?: bool,
-     *     KmsKeyId?: string,
-     *     Timezone?: string,
-     *     IamDatabaseAuthenticationEnabled?: bool,
-     *     ProcessorFeatures?: list<AwsRdsDbProcessorFeature>,
-     *     DbiResourceId?: string
+     *     DbSnapshotIdentifier?: string|null,
+     *     DbInstanceIdentifier?: string|null,
+     *     SnapshotCreateTime?: string|null,
+     *     Engine?: string|null,
+     *     AllocatedStorage?: int|null,
+     *     Status?: string|null,
+     *     Port?: int|null,
+     *     AvailabilityZone?: string|null,
+     *     VpcId?: string|null,
+     *     InstanceCreateTime?: string|null,
+     *     MasterUsername?: string|null,
+     *     EngineVersion?: string|null,
+     *     LicenseModel?: string|null,
+     *     SnapshotType?: string|null,
+     *     Iops?: int|null,
+     *     OptionGroupName?: string|null,
+     *     PercentProgress?: int|null,
+     *     SourceRegion?: string|null,
+     *     SourceDbSnapshotIdentifier?: string|null,
+     *     StorageType?: string|null,
+     *     TdeCredentialArn?: string|null,
+     *     Encrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     Timezone?: string|null,
+     *     IamDatabaseAuthenticationEnabled?: bool|null,
+     *     ProcessorFeatures?: list<AwsRdsDbProcessorFeature>|null,
+     *     DbiResourceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

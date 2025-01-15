@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'Valid'|'Invalid' $FeedbackValue
  * @property string $Provider
- * @property \Aws\Api\DateTimeResult $FeedbackDate
+ * @property \Aws\Api\DateTimeResult|null $FeedbackDate
  */
 class EventFeedbackType extends Shape
 {
@@ -15,7 +15,7 @@ class EventFeedbackType extends Shape
      * @param array{
      *     FeedbackValue: 'Valid'|'Invalid',
      *     Provider: string,
-     *     FeedbackDate?: \Aws\Api\DateTimeResult
+     *     FeedbackDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

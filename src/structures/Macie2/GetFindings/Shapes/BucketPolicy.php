@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $allowsPublicReadAccess
- * @property bool $allowsPublicWriteAccess
+ * @property bool|null $allowsPublicReadAccess
+ * @property bool|null $allowsPublicWriteAccess
  */
 class BucketPolicy extends Shape
 {
     /**
      * @param array{
-     *     allowsPublicReadAccess?: bool,
-     *     allowsPublicWriteAccess?: bool
+     *     allowsPublicReadAccess?: bool|null,
+     *     allowsPublicWriteAccess?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

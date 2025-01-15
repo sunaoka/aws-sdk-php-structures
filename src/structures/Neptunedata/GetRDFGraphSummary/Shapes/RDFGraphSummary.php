@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Neptunedata\GetRDFGraphSummary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $numDistinctSubjects
- * @property int $numDistinctPredicates
- * @property int $numQuads
- * @property int $numClasses
- * @property list<string> $classes
- * @property list<array<string, int>> $predicates
- * @property list<SubjectStructure> $subjectStructures
+ * @property int|null $numDistinctSubjects
+ * @property int|null $numDistinctPredicates
+ * @property int|null $numQuads
+ * @property int|null $numClasses
+ * @property list<string>|null $classes
+ * @property list<array<string, int>>|null $predicates
+ * @property list<SubjectStructure>|null $subjectStructures
  */
 class RDFGraphSummary extends Shape
 {
     /**
      * @param array{
-     *     numDistinctSubjects?: int,
-     *     numDistinctPredicates?: int,
-     *     numQuads?: int,
-     *     numClasses?: int,
-     *     classes?: list<string>,
-     *     predicates?: list<array<string, int>>,
-     *     subjectStructures?: list<SubjectStructure>
+     *     numDistinctSubjects?: int|null,
+     *     numDistinctPredicates?: int|null,
+     *     numQuads?: int|null,
+     *     numClasses?: int|null,
+     *     classes?: list<string>|null,
+     *     predicates?: list<array<string, int>>|null,
+     *     subjectStructures?: list<SubjectStructure>|null
      * } $args
      */
     public function __construct(array $args = [])

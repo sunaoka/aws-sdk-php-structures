@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\IoTEvents\DescribeDetectorModel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $entryId
- * @property string $assetId
- * @property string $propertyId
- * @property string $propertyAlias
- * @property AssetPropertyValue $propertyValue
+ * @property string|null $entryId
+ * @property string|null $assetId
+ * @property string|null $propertyId
+ * @property string|null $propertyAlias
+ * @property AssetPropertyValue|null $propertyValue
  */
 class IotSiteWiseAction extends Shape
 {
     /**
      * @param array{
-     *     entryId?: string,
-     *     assetId?: string,
-     *     propertyId?: string,
-     *     propertyAlias?: string,
-     *     propertyValue?: AssetPropertyValue
+     *     entryId?: string|null,
+     *     assetId?: string|null,
+     *     propertyId?: string|null,
+     *     propertyAlias?: string|null,
+     *     propertyValue?: AssetPropertyValue|null
      * } $args
      */
     public function __construct(array $args = [])

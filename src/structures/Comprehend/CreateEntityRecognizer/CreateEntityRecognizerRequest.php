@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RecognizerName
- * @property string $VersionName
+ * @property string|null $VersionName
  * @property string $DataAccessRoleArn
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  * @property Shapes\EntityRecognizerInputDataConfig $InputDataConfig
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW' $LanguageCode
- * @property string $VolumeKmsKeyId
- * @property Shapes\VpcConfig $VpcConfig
- * @property string $ModelKmsKeyId
- * @property string $ModelPolicy
+ * @property string|null $VolumeKmsKeyId
+ * @property Shapes\VpcConfig|null $VpcConfig
+ * @property string|null $ModelKmsKeyId
+ * @property string|null $ModelPolicy
  */
 class CreateEntityRecognizerRequest extends Request
 {
     /**
      * @param array{
      *     RecognizerName: string,
-     *     VersionName?: string,
+     *     VersionName?: string|null,
      *     DataAccessRoleArn: string,
-     *     Tags?: list<Shapes\Tag>,
+     *     Tags?: list<Shapes\Tag>|null,
      *     InputDataConfig: Shapes\EntityRecognizerInputDataConfig,
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     LanguageCode: 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW',
-     *     VolumeKmsKeyId?: string,
-     *     VpcConfig?: Shapes\VpcConfig,
-     *     ModelKmsKeyId?: string,
-     *     ModelPolicy?: string
+     *     VolumeKmsKeyId?: string|null,
+     *     VpcConfig?: Shapes\VpcConfig|null,
+     *     ModelKmsKeyId?: string|null,
+     *     ModelPolicy?: string|null
      * } $args
      */
     public function __construct(array $args)

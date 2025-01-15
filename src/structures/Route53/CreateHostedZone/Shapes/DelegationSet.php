@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Route53\CreateHostedZone\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $CallerReference
+ * @property string|null $Id
+ * @property string|null $CallerReference
  * @property list<string> $NameServers
  */
 class DelegationSet extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     CallerReference?: string,
+     *     Id?: string|null,
+     *     CallerReference?: string|null,
      *     NameServers: list<string>
      * } $args
      */

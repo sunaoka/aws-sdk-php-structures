@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $type
  * @property string $releaseLabel
  * @property string $executionRoleArn
- * @property string $certificateArn
- * @property Shapes\ConfigurationOverrides $configurationOverrides
+ * @property string|null $certificateArn
+ * @property Shapes\ConfigurationOverrides|null $configurationOverrides
  * @property string $clientToken
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateManagedEndpointRequest extends Request
 {
@@ -24,10 +24,10 @@ class CreateManagedEndpointRequest extends Request
      *     type: string,
      *     releaseLabel: string,
      *     executionRoleArn: string,
-     *     certificateArn?: string,
-     *     configurationOverrides?: Shapes\ConfigurationOverrides,
+     *     certificateArn?: string|null,
+     *     configurationOverrides?: Shapes\ConfigurationOverrides|null,
      *     clientToken: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

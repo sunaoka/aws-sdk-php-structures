@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\DescribeBotRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IntentStatistics $intents
- * @property SlotTypeStatistics $slotTypes
+ * @property IntentStatistics|null $intents
+ * @property SlotTypeStatistics|null $slotTypes
  */
 class BotRecommendationResultStatistics extends Shape
 {
     /**
      * @param array{
-     *     intents?: IntentStatistics,
-     *     slotTypes?: SlotTypeStatistics
+     *     intents?: IntentStatistics|null,
+     *     slotTypes?: SlotTypeStatistics|null
      * } $args
      */
     public function __construct(array $args = [])

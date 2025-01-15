@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ReportContext $ReportContext
  * @property Shapes\ReportFrequency $ReportFrequency
  * @property string $ClientToken
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateLicenseManagerReportGeneratorRequest extends Request
 {
@@ -22,8 +22,8 @@ class CreateLicenseManagerReportGeneratorRequest extends Request
      *     ReportContext: Shapes\ReportContext,
      *     ReportFrequency: Shapes\ReportFrequency,
      *     ClientToken: string,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

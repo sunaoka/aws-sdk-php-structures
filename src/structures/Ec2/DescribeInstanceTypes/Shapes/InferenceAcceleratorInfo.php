@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<InferenceDeviceInfo> $Accelerators
- * @property int $TotalInferenceMemoryInMiB
+ * @property list<InferenceDeviceInfo>|null $Accelerators
+ * @property int|null $TotalInferenceMemoryInMiB
  */
 class InferenceAcceleratorInfo extends Shape
 {
     /**
      * @param array{
-     *     Accelerators?: list<InferenceDeviceInfo>,
-     *     TotalInferenceMemoryInMiB?: int
+     *     Accelerators?: list<InferenceDeviceInfo>|null,
+     *     TotalInferenceMemoryInMiB?: int|null
      * } $args
      */
     public function __construct(array $args = [])

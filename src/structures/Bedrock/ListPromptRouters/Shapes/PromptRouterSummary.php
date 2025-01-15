@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $promptRouterName
  * @property RoutingCriteria $routingCriteria
- * @property string $description
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string $promptRouterArn
  * @property list<PromptRouterTargetModel> $models
  * @property PromptRouterTargetModel $fallbackModel
@@ -22,9 +22,9 @@ class PromptRouterSummary extends Shape
      * @param array{
      *     promptRouterName: string,
      *     routingCriteria: RoutingCriteria,
-     *     description?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
+     *     description?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
      *     promptRouterArn: string,
      *     models: list<PromptRouterTargetModel>,
      *     fallbackModel: PromptRouterTargetModel,

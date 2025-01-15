@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $activityArn
- * @property string $workerName
+ * @property string|null $workerName
  */
 class GetActivityTaskRequest extends Request
 {
     /**
      * @param array{
      *     activityArn: string,
-     *     workerName?: string
+     *     workerName?: string|null
      * } $args
      */
     public function __construct(array $args)

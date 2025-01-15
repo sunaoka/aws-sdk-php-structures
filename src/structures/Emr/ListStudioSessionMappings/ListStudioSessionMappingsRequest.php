@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Emr\ListStudioSessionMappings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StudioId
- * @property 'USER'|'GROUP' $IdentityType
- * @property string $Marker
+ * @property string|null $StudioId
+ * @property 'USER'|'GROUP'|null $IdentityType
+ * @property string|null $Marker
  */
 class ListStudioSessionMappingsRequest extends Request
 {
     /**
      * @param array{
-     *     StudioId?: string,
-     *     IdentityType?: 'USER'|'GROUP',
-     *     Marker?: string
+     *     StudioId?: string|null,
+     *     IdentityType?: 'USER'|'GROUP'|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Sns\ListSubscriptionsByTopic\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubscriptionArn
- * @property string $Owner
- * @property string $Protocol
- * @property string $Endpoint
- * @property string $TopicArn
+ * @property string|null $SubscriptionArn
+ * @property string|null $Owner
+ * @property string|null $Protocol
+ * @property string|null $Endpoint
+ * @property string|null $TopicArn
  */
 class Subscription extends Shape
 {
     /**
      * @param array{
-     *     SubscriptionArn?: string,
-     *     Owner?: string,
-     *     Protocol?: string,
-     *     Endpoint?: string,
-     *     TopicArn?: string
+     *     SubscriptionArn?: string|null,
+     *     Owner?: string|null,
+     *     Protocol?: string|null,
+     *     Endpoint?: string|null,
+     *     TopicArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CallbackId
  * @property string $ChannelArn
- * @property bool $DeleteResource
+ * @property bool|null $DeleteResource
  * @property Shapes\ChannelMessageCallback $ChannelMessage
  */
 class ChannelFlowCallbackRequest extends Request
@@ -16,7 +16,7 @@ class ChannelFlowCallbackRequest extends Request
      * @param array{
      *     CallbackId: string,
      *     ChannelArn: string,
-     *     DeleteResource?: bool,
+     *     DeleteResource?: bool|null,
      *     ChannelMessage: Shapes\ChannelMessageCallback
      * } $args
      */

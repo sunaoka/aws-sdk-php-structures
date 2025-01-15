@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateCollection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property int $createdDate
- * @property string $description
- * @property string $id
- * @property int $lastModifiedDate
- * @property string $name
- * @property 'CREATING'|'DELETING'|'ACTIVE'|'FAILED' $status
- * @property 'SEARCH'|'TIMESERIES'|'VECTORSEARCH' $type
+ * @property string|null $arn
+ * @property int|null $createdDate
+ * @property string|null $description
+ * @property string|null $id
+ * @property int|null $lastModifiedDate
+ * @property string|null $name
+ * @property 'CREATING'|'DELETING'|'ACTIVE'|'FAILED'|null $status
+ * @property 'SEARCH'|'TIMESERIES'|'VECTORSEARCH'|null $type
  */
 class UpdateCollectionDetail extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     createdDate?: int,
-     *     description?: string,
-     *     id?: string,
-     *     lastModifiedDate?: int,
-     *     name?: string,
-     *     status?: 'CREATING'|'DELETING'|'ACTIVE'|'FAILED',
-     *     type?: 'SEARCH'|'TIMESERIES'|'VECTORSEARCH'
+     *     arn?: string|null,
+     *     createdDate?: int|null,
+     *     description?: string|null,
+     *     id?: string|null,
+     *     lastModifiedDate?: int|null,
+     *     name?: string|null,
+     *     status?: 'CREATING'|'DELETING'|'ACTIVE'|'FAILED'|null,
+     *     type?: 'SEARCH'|'TIMESERIES'|'VECTORSEARCH'|null
      * } $args
      */
     public function __construct(array $args = [])

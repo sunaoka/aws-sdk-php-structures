@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'PROVIDER'|'RULE_BASED' $idMappingType
- * @property NamespaceProviderProperties $providerProperties
- * @property NamespaceRuleBasedProperties $ruleBasedProperties
+ * @property NamespaceProviderProperties|null $providerProperties
+ * @property NamespaceRuleBasedProperties|null $ruleBasedProperties
  */
 class IdNamespaceIdMappingWorkflowProperties extends Shape
 {
     /**
      * @param array{
      *     idMappingType: 'PROVIDER'|'RULE_BASED',
-     *     providerProperties?: NamespaceProviderProperties,
-     *     ruleBasedProperties?: NamespaceRuleBasedProperties
+     *     providerProperties?: NamespaceProviderProperties|null,
+     *     ruleBasedProperties?: NamespaceRuleBasedProperties|null
      * } $args
      */
     public function __construct(array $args)

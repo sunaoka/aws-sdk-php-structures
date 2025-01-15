@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AppInstanceArn
  * @property list<Shapes\Processor> $Processors
  * @property string $Name
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  * @property string $ClientRequestToken
  */
 class CreateChannelFlowRequest extends Request
@@ -18,7 +18,7 @@ class CreateChannelFlowRequest extends Request
      *     AppInstanceArn: string,
      *     Processors: list<Shapes\Processor>,
      *     Name: string,
-     *     Tags?: list<Shapes\Tag>,
+     *     Tags?: list<Shapes\Tag>|null,
      *     ClientRequestToken: string
      * } $args
      */

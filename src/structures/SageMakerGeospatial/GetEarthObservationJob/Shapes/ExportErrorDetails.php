@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\GetEarthObservationJob\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ExportErrorDetailsOutput $ExportResults
- * @property ExportErrorDetailsOutput $ExportSourceImages
+ * @property ExportErrorDetailsOutput|null $ExportResults
+ * @property ExportErrorDetailsOutput|null $ExportSourceImages
  */
 class ExportErrorDetails extends Shape
 {
     /**
      * @param array{
-     *     ExportResults?: ExportErrorDetailsOutput,
-     *     ExportSourceImages?: ExportErrorDetailsOutput
+     *     ExportResults?: ExportErrorDetailsOutput|null,
+     *     ExportSourceImages?: ExportErrorDetailsOutput|null
      * } $args
      */
     public function __construct(array $args = [])

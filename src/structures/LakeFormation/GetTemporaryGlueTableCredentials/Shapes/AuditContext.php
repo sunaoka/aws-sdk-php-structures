@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LakeFormation\GetTemporaryGlueTableCredentials\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AdditionalAuditContext
+ * @property string|null $AdditionalAuditContext
  */
 class AuditContext extends Shape
 {
     /**
-     * @param array{AdditionalAuditContext?: string} $args
+     * @param array{AdditionalAuditContext?: string|null} $args
      */
     public function __construct(array $args = [])
     {

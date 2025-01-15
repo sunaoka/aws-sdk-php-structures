@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\CreateSegmentEstimate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ProfileDimension $City
- * @property ProfileDimension $Country
- * @property ProfileDimension $County
- * @property ProfileDimension $PostalCode
- * @property ProfileDimension $Province
- * @property ProfileDimension $State
+ * @property ProfileDimension|null $City
+ * @property ProfileDimension|null $Country
+ * @property ProfileDimension|null $County
+ * @property ProfileDimension|null $PostalCode
+ * @property ProfileDimension|null $Province
+ * @property ProfileDimension|null $State
  */
 class AddressDimension extends Shape
 {
     /**
      * @param array{
-     *     City?: ProfileDimension,
-     *     Country?: ProfileDimension,
-     *     County?: ProfileDimension,
-     *     PostalCode?: ProfileDimension,
-     *     Province?: ProfileDimension,
-     *     State?: ProfileDimension
+     *     City?: ProfileDimension|null,
+     *     Country?: ProfileDimension|null,
+     *     County?: ProfileDimension|null,
+     *     PostalCode?: ProfileDimension|null,
+     *     Province?: ProfileDimension|null,
+     *     State?: ProfileDimension|null
      * } $args
      */
     public function __construct(array $args = [])

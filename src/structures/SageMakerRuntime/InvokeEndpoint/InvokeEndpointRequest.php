@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $EndpointName
  * @property string|resource|\Psr\Http\Message\StreamInterface $Body
- * @property string $ContentType
- * @property string $Accept
- * @property string $CustomAttributes
- * @property string $TargetModel
- * @property string $TargetVariant
- * @property string $TargetContainerHostname
- * @property string $InferenceId
- * @property string $EnableExplanations
- * @property string $InferenceComponentName
- * @property string $SessionId
+ * @property string|null $ContentType
+ * @property string|null $Accept
+ * @property string|null $CustomAttributes
+ * @property string|null $TargetModel
+ * @property string|null $TargetVariant
+ * @property string|null $TargetContainerHostname
+ * @property string|null $InferenceId
+ * @property string|null $EnableExplanations
+ * @property string|null $InferenceComponentName
+ * @property string|null $SessionId
  */
 class InvokeEndpointRequest extends Request
 {
@@ -24,16 +24,16 @@ class InvokeEndpointRequest extends Request
      * @param array{
      *     EndpointName: string,
      *     Body: string|resource|\Psr\Http\Message\StreamInterface,
-     *     ContentType?: string,
-     *     Accept?: string,
-     *     CustomAttributes?: string,
-     *     TargetModel?: string,
-     *     TargetVariant?: string,
-     *     TargetContainerHostname?: string,
-     *     InferenceId?: string,
-     *     EnableExplanations?: string,
-     *     InferenceComponentName?: string,
-     *     SessionId?: string
+     *     ContentType?: string|null,
+     *     Accept?: string|null,
+     *     CustomAttributes?: string|null,
+     *     TargetModel?: string|null,
+     *     TargetVariant?: string|null,
+     *     TargetContainerHostname?: string|null,
+     *     InferenceId?: string|null,
+     *     EnableExplanations?: string|null,
+     *     InferenceComponentName?: string|null,
+     *     SessionId?: string|null
      * } $args
      */
     public function __construct(array $args)

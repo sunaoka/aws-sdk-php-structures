@@ -6,62 +6,62 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingGroupName
- * @property string $LaunchConfigurationName
- * @property Shapes\LaunchTemplateSpecification $LaunchTemplate
- * @property Shapes\MixedInstancesPolicy $MixedInstancesPolicy
- * @property int $MinSize
- * @property int $MaxSize
- * @property int $DesiredCapacity
- * @property int $DefaultCooldown
- * @property list<string> $AvailabilityZones
- * @property string $HealthCheckType
- * @property int $HealthCheckGracePeriod
- * @property string $PlacementGroup
- * @property string $VPCZoneIdentifier
- * @property list<string> $TerminationPolicies
- * @property bool $NewInstancesProtectedFromScaleIn
- * @property string $ServiceLinkedRoleARN
- * @property int $MaxInstanceLifetime
- * @property bool $CapacityRebalance
- * @property string $Context
- * @property string $DesiredCapacityType
- * @property int $DefaultInstanceWarmup
- * @property Shapes\InstanceMaintenancePolicy $InstanceMaintenancePolicy
- * @property Shapes\AvailabilityZoneDistribution $AvailabilityZoneDistribution
- * @property Shapes\AvailabilityZoneImpairmentPolicy $AvailabilityZoneImpairmentPolicy
- * @property bool $SkipZonalShiftValidation
- * @property Shapes\CapacityReservationSpecification $CapacityReservationSpecification
+ * @property string|null $LaunchConfigurationName
+ * @property Shapes\LaunchTemplateSpecification|null $LaunchTemplate
+ * @property Shapes\MixedInstancesPolicy|null $MixedInstancesPolicy
+ * @property int|null $MinSize
+ * @property int|null $MaxSize
+ * @property int|null $DesiredCapacity
+ * @property int|null $DefaultCooldown
+ * @property list<string>|null $AvailabilityZones
+ * @property string|null $HealthCheckType
+ * @property int|null $HealthCheckGracePeriod
+ * @property string|null $PlacementGroup
+ * @property string|null $VPCZoneIdentifier
+ * @property list<string>|null $TerminationPolicies
+ * @property bool|null $NewInstancesProtectedFromScaleIn
+ * @property string|null $ServiceLinkedRoleARN
+ * @property int|null $MaxInstanceLifetime
+ * @property bool|null $CapacityRebalance
+ * @property string|null $Context
+ * @property string|null $DesiredCapacityType
+ * @property int|null $DefaultInstanceWarmup
+ * @property Shapes\InstanceMaintenancePolicy|null $InstanceMaintenancePolicy
+ * @property Shapes\AvailabilityZoneDistribution|null $AvailabilityZoneDistribution
+ * @property Shapes\AvailabilityZoneImpairmentPolicy|null $AvailabilityZoneImpairmentPolicy
+ * @property bool|null $SkipZonalShiftValidation
+ * @property Shapes\CapacityReservationSpecification|null $CapacityReservationSpecification
  */
 class UpdateAutoScalingGroupRequest extends Request
 {
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     LaunchConfigurationName?: string,
-     *     LaunchTemplate?: Shapes\LaunchTemplateSpecification,
-     *     MixedInstancesPolicy?: Shapes\MixedInstancesPolicy,
-     *     MinSize?: int,
-     *     MaxSize?: int,
-     *     DesiredCapacity?: int,
-     *     DefaultCooldown?: int,
-     *     AvailabilityZones?: list<string>,
-     *     HealthCheckType?: string,
-     *     HealthCheckGracePeriod?: int,
-     *     PlacementGroup?: string,
-     *     VPCZoneIdentifier?: string,
-     *     TerminationPolicies?: list<string>,
-     *     NewInstancesProtectedFromScaleIn?: bool,
-     *     ServiceLinkedRoleARN?: string,
-     *     MaxInstanceLifetime?: int,
-     *     CapacityRebalance?: bool,
-     *     Context?: string,
-     *     DesiredCapacityType?: string,
-     *     DefaultInstanceWarmup?: int,
-     *     InstanceMaintenancePolicy?: Shapes\InstanceMaintenancePolicy,
-     *     AvailabilityZoneDistribution?: Shapes\AvailabilityZoneDistribution,
-     *     AvailabilityZoneImpairmentPolicy?: Shapes\AvailabilityZoneImpairmentPolicy,
-     *     SkipZonalShiftValidation?: bool,
-     *     CapacityReservationSpecification?: Shapes\CapacityReservationSpecification
+     *     LaunchConfigurationName?: string|null,
+     *     LaunchTemplate?: Shapes\LaunchTemplateSpecification|null,
+     *     MixedInstancesPolicy?: Shapes\MixedInstancesPolicy|null,
+     *     MinSize?: int|null,
+     *     MaxSize?: int|null,
+     *     DesiredCapacity?: int|null,
+     *     DefaultCooldown?: int|null,
+     *     AvailabilityZones?: list<string>|null,
+     *     HealthCheckType?: string|null,
+     *     HealthCheckGracePeriod?: int|null,
+     *     PlacementGroup?: string|null,
+     *     VPCZoneIdentifier?: string|null,
+     *     TerminationPolicies?: list<string>|null,
+     *     NewInstancesProtectedFromScaleIn?: bool|null,
+     *     ServiceLinkedRoleARN?: string|null,
+     *     MaxInstanceLifetime?: int|null,
+     *     CapacityRebalance?: bool|null,
+     *     Context?: string|null,
+     *     DesiredCapacityType?: string|null,
+     *     DefaultInstanceWarmup?: int|null,
+     *     InstanceMaintenancePolicy?: Shapes\InstanceMaintenancePolicy|null,
+     *     AvailabilityZoneDistribution?: Shapes\AvailabilityZoneDistribution|null,
+     *     AvailabilityZoneImpairmentPolicy?: Shapes\AvailabilityZoneImpairmentPolicy|null,
+     *     SkipZonalShiftValidation?: bool|null,
+     *     CapacityReservationSpecification?: Shapes\CapacityReservationSpecification|null
      * } $args
      */
     public function __construct(array $args)

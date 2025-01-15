@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetUsagePlan\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $burstLimit
- * @property double $rateLimit
+ * @property int|null $burstLimit
+ * @property double|null $rateLimit
  */
 class ThrottleSettings extends Shape
 {
     /**
      * @param array{
-     *     burstLimit?: int,
-     *     rateLimit?: double
+     *     burstLimit?: int|null,
+     *     rateLimit?: double|null
      * } $args
      */
     public function __construct(array $args = [])

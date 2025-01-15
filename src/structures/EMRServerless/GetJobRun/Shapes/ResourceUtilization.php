@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\EMRServerless\GetJobRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $vCPUHour
- * @property double $memoryGBHour
- * @property double $storageGBHour
+ * @property double|null $vCPUHour
+ * @property double|null $memoryGBHour
+ * @property double|null $storageGBHour
  */
 class ResourceUtilization extends Shape
 {
     /**
      * @param array{
-     *     vCPUHour?: double,
-     *     memoryGBHour?: double,
-     *     storageGBHour?: double
+     *     vCPUHour?: double|null,
+     *     memoryGBHour?: double|null,
+     *     storageGBHour?: double|null
      * } $args
      */
     public function __construct(array $args = [])

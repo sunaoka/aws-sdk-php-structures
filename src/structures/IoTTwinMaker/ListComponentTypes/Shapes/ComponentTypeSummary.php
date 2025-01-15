@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $componentTypeId
  * @property \Aws\Api\DateTimeResult $creationDateTime
  * @property \Aws\Api\DateTimeResult $updateDateTime
- * @property string $description
- * @property Status $status
- * @property string $componentTypeName
+ * @property string|null $description
+ * @property Status|null $status
+ * @property string|null $componentTypeName
  */
 class ComponentTypeSummary extends Shape
 {
@@ -21,9 +21,9 @@ class ComponentTypeSummary extends Shape
      *     componentTypeId: string,
      *     creationDateTime: \Aws\Api\DateTimeResult,
      *     updateDateTime: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     status?: Status,
-     *     componentTypeName?: string
+     *     description?: string|null,
+     *     status?: Status|null,
+     *     componentTypeName?: string|null
      * } $args
      */
     public function __construct(array $args)

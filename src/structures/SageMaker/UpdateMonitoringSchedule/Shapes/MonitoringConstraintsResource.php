@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateMonitoringSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3Uri
+ * @property string|null $S3Uri
  */
 class MonitoringConstraintsResource extends Shape
 {
     /**
-     * @param array{S3Uri?: string} $args
+     * @param array{S3Uri?: string|null} $args
      */
     public function __construct(array $args = [])
     {

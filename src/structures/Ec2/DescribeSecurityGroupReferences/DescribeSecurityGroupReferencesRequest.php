@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSecurityGroupReferences;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property list<string> $GroupId
  */
 class DescribeSecurityGroupReferencesRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     GroupId: list<string>
      * } $args
      */

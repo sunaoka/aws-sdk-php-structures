@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $MapName
  * @property string $FontStack
  * @property string $FontUnicodeRange
- * @property string $Key
+ * @property string|null $Key
  */
 class GetMapGlyphsRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetMapGlyphsRequest extends Request
      *     MapName: string,
      *     FontStack: string,
      *     FontUnicodeRange: string,
-     *     Key?: string
+     *     Key?: string|null
      * } $args
      */
     public function __construct(array $args)

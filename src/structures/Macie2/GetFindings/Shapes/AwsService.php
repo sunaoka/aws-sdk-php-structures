@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Macie2\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $invokedBy
+ * @property string|null $invokedBy
  */
 class AwsService extends Shape
 {
     /**
-     * @param array{invokedBy?: string} $args
+     * @param array{invokedBy?: string|null} $args
      */
     public function __construct(array $args = [])
     {

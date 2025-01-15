@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HistogramAggregatedFieldWells $HistogramAggregatedFieldWells
+ * @property HistogramAggregatedFieldWells|null $HistogramAggregatedFieldWells
  */
 class HistogramFieldWells extends Shape
 {
     /**
-     * @param array{HistogramAggregatedFieldWells?: HistogramAggregatedFieldWells} $args
+     * @param array{HistogramAggregatedFieldWells?: HistogramAggregatedFieldWells|null} $args
      */
     public function __construct(array $args = [])
     {

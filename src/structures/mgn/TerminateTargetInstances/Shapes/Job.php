@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\mgn\TerminateTargetInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $creationDateTime
- * @property string $endDateTime
- * @property 'START_TEST'|'START_CUTOVER'|'DIAGNOSTIC'|'TERMINATE' $initiatedBy
+ * @property string|null $arn
+ * @property string|null $creationDateTime
+ * @property string|null $endDateTime
+ * @property 'START_TEST'|'START_CUTOVER'|'DIAGNOSTIC'|'TERMINATE'|null $initiatedBy
  * @property string $jobID
- * @property list<ParticipatingServer> $participatingServers
- * @property 'PENDING'|'STARTED'|'COMPLETED' $status
- * @property array<string, string> $tags
- * @property 'LAUNCH'|'TERMINATE' $type
+ * @property list<ParticipatingServer>|null $participatingServers
+ * @property 'PENDING'|'STARTED'|'COMPLETED'|null $status
+ * @property array<string, string>|null $tags
+ * @property 'LAUNCH'|'TERMINATE'|null $type
  */
 class Job extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     creationDateTime?: string,
-     *     endDateTime?: string,
-     *     initiatedBy?: 'START_TEST'|'START_CUTOVER'|'DIAGNOSTIC'|'TERMINATE',
+     *     arn?: string|null,
+     *     creationDateTime?: string|null,
+     *     endDateTime?: string|null,
+     *     initiatedBy?: 'START_TEST'|'START_CUTOVER'|'DIAGNOSTIC'|'TERMINATE'|null,
      *     jobID: string,
-     *     participatingServers?: list<ParticipatingServer>,
-     *     status?: 'PENDING'|'STARTED'|'COMPLETED',
-     *     tags?: array<string, string>,
-     *     type?: 'LAUNCH'|'TERMINATE'
+     *     participatingServers?: list<ParticipatingServer>|null,
+     *     status?: 'PENDING'|'STARTED'|'COMPLETED'|null,
+     *     tags?: array<string, string>|null,
+     *     type?: 'LAUNCH'|'TERMINATE'|null
      * } $args
      */
     public function __construct(array $args)

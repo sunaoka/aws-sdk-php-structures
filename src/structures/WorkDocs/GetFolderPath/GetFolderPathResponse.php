@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkDocs\GetFolderPath;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ResourcePath $Path
+ * @property Shapes\ResourcePath|null $Path
  */
 class GetFolderPathResponse extends Response
 {

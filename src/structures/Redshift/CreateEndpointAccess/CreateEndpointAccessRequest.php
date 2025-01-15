@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Redshift\CreateEndpointAccess;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClusterIdentifier
- * @property string $ResourceOwner
+ * @property string|null $ClusterIdentifier
+ * @property string|null $ResourceOwner
  * @property string $EndpointName
  * @property string $SubnetGroupName
- * @property list<string> $VpcSecurityGroupIds
+ * @property list<string>|null $VpcSecurityGroupIds
  */
 class CreateEndpointAccessRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterIdentifier?: string,
-     *     ResourceOwner?: string,
+     *     ClusterIdentifier?: string|null,
+     *     ResourceOwner?: string|null,
      *     EndpointName: string,
      *     SubnetGroupName: string,
-     *     VpcSecurityGroupIds?: list<string>
+     *     VpcSecurityGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

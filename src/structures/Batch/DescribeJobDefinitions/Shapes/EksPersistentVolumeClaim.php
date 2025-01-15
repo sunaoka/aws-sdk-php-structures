@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $claimName
- * @property bool $readOnly
+ * @property bool|null $readOnly
  */
 class EksPersistentVolumeClaim extends Shape
 {
     /**
      * @param array{
      *     claimName: string,
-     *     readOnly?: bool
+     *     readOnly?: bool|null
      * } $args
      */
     public function __construct(array $args)

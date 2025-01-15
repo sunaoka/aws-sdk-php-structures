@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\StartPipelineExecution;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PipelineExecutionArn
+ * @property string|null $PipelineExecutionArn
  */
 class StartPipelineExecutionResponse extends Response
 {

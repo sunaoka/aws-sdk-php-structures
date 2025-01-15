@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MQ\DescribeBroker\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConfigurationId $Current
- * @property list<ConfigurationId> $History
- * @property ConfigurationId $Pending
+ * @property ConfigurationId|null $Current
+ * @property list<ConfigurationId>|null $History
+ * @property ConfigurationId|null $Pending
  */
 class Configurations extends Shape
 {
     /**
      * @param array{
-     *     Current?: ConfigurationId,
-     *     History?: list<ConfigurationId>,
-     *     Pending?: ConfigurationId
+     *     Current?: ConfigurationId|null,
+     *     History?: list<ConfigurationId>|null,
+     *     Pending?: ConfigurationId|null
      * } $args
      */
     public function __construct(array $args = [])

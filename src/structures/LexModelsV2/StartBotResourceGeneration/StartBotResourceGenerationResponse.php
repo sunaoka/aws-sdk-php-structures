@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\StartBotResourceGeneration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $generationInputPrompt
- * @property string $generationId
- * @property string $botId
- * @property string $botVersion
- * @property string $localeId
- * @property 'Failed'|'Complete'|'InProgress' $generationStatus
- * @property \Aws\Api\DateTimeResult $creationDateTime
+ * @property string|null $generationInputPrompt
+ * @property string|null $generationId
+ * @property string|null $botId
+ * @property string|null $botVersion
+ * @property string|null $localeId
+ * @property 'Failed'|'Complete'|'InProgress'|null $generationStatus
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
  */
 class StartBotResourceGenerationResponse extends Response
 {

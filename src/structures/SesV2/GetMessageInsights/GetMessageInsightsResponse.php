@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\SesV2\GetMessageInsights;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $MessageId
- * @property string $FromEmailAddress
- * @property string $Subject
- * @property list<Shapes\MessageTag> $EmailTags
- * @property list<Shapes\EmailInsights> $Insights
+ * @property string|null $MessageId
+ * @property string|null $FromEmailAddress
+ * @property string|null $Subject
+ * @property list<Shapes\MessageTag>|null $EmailTags
+ * @property list<Shapes\EmailInsights>|null $Insights
  */
 class GetMessageInsightsResponse extends Response
 {

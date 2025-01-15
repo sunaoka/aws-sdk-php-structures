@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeAccountAttribu
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountQuotaName
- * @property int $Used
- * @property int $Max
+ * @property string|null $AccountQuotaName
+ * @property int|null $Used
+ * @property int|null $Max
  */
 class AccountQuota extends Shape
 {
     /**
      * @param array{
-     *     AccountQuotaName?: string,
-     *     Used?: int,
-     *     Max?: int
+     *     AccountQuotaName?: string|null,
+     *     Used?: int|null,
+     *     Max?: int|null
      * } $args
      */
     public function __construct(array $args = [])

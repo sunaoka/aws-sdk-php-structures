@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeEndpointTypes\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EngineName
- * @property bool $SupportsCDC
- * @property 'source'|'target' $EndpointType
- * @property string $ReplicationInstanceEngineMinimumVersion
- * @property string $EngineDisplayName
+ * @property string|null $EngineName
+ * @property bool|null $SupportsCDC
+ * @property 'source'|'target'|null $EndpointType
+ * @property string|null $ReplicationInstanceEngineMinimumVersion
+ * @property string|null $EngineDisplayName
  */
 class SupportedEndpointType extends Shape
 {
     /**
      * @param array{
-     *     EngineName?: string,
-     *     SupportsCDC?: bool,
-     *     EndpointType?: 'source'|'target',
-     *     ReplicationInstanceEngineMinimumVersion?: string,
-     *     EngineDisplayName?: string
+     *     EngineName?: string|null,
+     *     SupportsCDC?: bool|null,
+     *     EndpointType?: 'source'|'target'|null,
+     *     ReplicationInstanceEngineMinimumVersion?: string|null,
+     *     EngineDisplayName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

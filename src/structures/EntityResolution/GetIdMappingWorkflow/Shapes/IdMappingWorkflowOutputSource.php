@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\EntityResolution\GetIdMappingWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KMSArn
+ * @property string|null $KMSArn
  * @property string $outputS3Path
  */
 class IdMappingWorkflowOutputSource extends Shape
 {
     /**
      * @param array{
-     *     KMSArn?: string,
+     *     KMSArn?: string|null,
      *     outputS3Path: string
      * } $args
      */

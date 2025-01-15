@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeAuditMitigationActionsTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property UpdateDeviceCertificateParams $updateDeviceCertificateParams
- * @property UpdateCACertificateParams $updateCACertificateParams
- * @property AddThingsToThingGroupParams $addThingsToThingGroupParams
- * @property ReplaceDefaultPolicyVersionParams $replaceDefaultPolicyVersionParams
- * @property EnableIoTLoggingParams $enableIoTLoggingParams
- * @property PublishFindingToSnsParams $publishFindingToSnsParams
+ * @property UpdateDeviceCertificateParams|null $updateDeviceCertificateParams
+ * @property UpdateCACertificateParams|null $updateCACertificateParams
+ * @property AddThingsToThingGroupParams|null $addThingsToThingGroupParams
+ * @property ReplaceDefaultPolicyVersionParams|null $replaceDefaultPolicyVersionParams
+ * @property EnableIoTLoggingParams|null $enableIoTLoggingParams
+ * @property PublishFindingToSnsParams|null $publishFindingToSnsParams
  */
 class MitigationActionParams extends Shape
 {
     /**
      * @param array{
-     *     updateDeviceCertificateParams?: UpdateDeviceCertificateParams,
-     *     updateCACertificateParams?: UpdateCACertificateParams,
-     *     addThingsToThingGroupParams?: AddThingsToThingGroupParams,
-     *     replaceDefaultPolicyVersionParams?: ReplaceDefaultPolicyVersionParams,
-     *     enableIoTLoggingParams?: EnableIoTLoggingParams,
-     *     publishFindingToSnsParams?: PublishFindingToSnsParams
+     *     updateDeviceCertificateParams?: UpdateDeviceCertificateParams|null,
+     *     updateCACertificateParams?: UpdateCACertificateParams|null,
+     *     addThingsToThingGroupParams?: AddThingsToThingGroupParams|null,
+     *     replaceDefaultPolicyVersionParams?: ReplaceDefaultPolicyVersionParams|null,
+     *     enableIoTLoggingParams?: EnableIoTLoggingParams|null,
+     *     publishFindingToSnsParams?: PublishFindingToSnsParams|null
      * } $args
      */
     public function __construct(array $args = [])

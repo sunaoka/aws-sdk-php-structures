@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\Ec2\RegisterImage;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ImageLocation
- * @property list<string> $BillingProducts
- * @property 'legacy-bios'|'uefi'|'uefi-preferred' $BootMode
- * @property 'v2.0' $TpmSupport
- * @property string $UefiData
- * @property 'v2.0' $ImdsSupport
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
+ * @property string|null $ImageLocation
+ * @property list<string>|null $BillingProducts
+ * @property 'legacy-bios'|'uefi'|'uefi-preferred'|null $BootMode
+ * @property 'v2.0'|null $TpmSupport
+ * @property string|null $UefiData
+ * @property 'v2.0'|null $ImdsSupport
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
  * @property string $Name
- * @property string $Description
- * @property 'i386'|'x86_64'|'arm64'|'x86_64_mac'|'arm64_mac' $Architecture
- * @property string $KernelId
- * @property string $RamdiskId
- * @property string $RootDeviceName
- * @property list<Shapes\BlockDeviceMapping> $BlockDeviceMappings
- * @property string $VirtualizationType
- * @property string $SriovNetSupport
- * @property bool $EnaSupport
+ * @property string|null $Description
+ * @property 'i386'|'x86_64'|'arm64'|'x86_64_mac'|'arm64_mac'|null $Architecture
+ * @property string|null $KernelId
+ * @property string|null $RamdiskId
+ * @property string|null $RootDeviceName
+ * @property list<Shapes\BlockDeviceMapping>|null $BlockDeviceMappings
+ * @property string|null $VirtualizationType
+ * @property string|null $SriovNetSupport
+ * @property bool|null $EnaSupport
  */
 class RegisterImageRequest extends Request
 {
     /**
      * @param array{
-     *     ImageLocation?: string,
-     *     BillingProducts?: list<string>,
-     *     BootMode?: 'legacy-bios'|'uefi'|'uefi-preferred',
-     *     TpmSupport?: 'v2.0',
-     *     UefiData?: string,
-     *     ImdsSupport?: 'v2.0',
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool,
+     *     ImageLocation?: string|null,
+     *     BillingProducts?: list<string>|null,
+     *     BootMode?: 'legacy-bios'|'uefi'|'uefi-preferred'|null,
+     *     TpmSupport?: 'v2.0'|null,
+     *     UefiData?: string|null,
+     *     ImdsSupport?: 'v2.0'|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null,
      *     Name: string,
-     *     Description?: string,
-     *     Architecture?: 'i386'|'x86_64'|'arm64'|'x86_64_mac'|'arm64_mac',
-     *     KernelId?: string,
-     *     RamdiskId?: string,
-     *     RootDeviceName?: string,
-     *     BlockDeviceMappings?: list<Shapes\BlockDeviceMapping>,
-     *     VirtualizationType?: string,
-     *     SriovNetSupport?: string,
-     *     EnaSupport?: bool
+     *     Description?: string|null,
+     *     Architecture?: 'i386'|'x86_64'|'arm64'|'x86_64_mac'|'arm64_mac'|null,
+     *     KernelId?: string|null,
+     *     RamdiskId?: string|null,
+     *     RootDeviceName?: string|null,
+     *     BlockDeviceMappings?: list<Shapes\BlockDeviceMapping>|null,
+     *     VirtualizationType?: string|null,
+     *     SriovNetSupport?: string|null,
+     *     EnaSupport?: bool|null
      * } $args
      */
     public function __construct(array $args)

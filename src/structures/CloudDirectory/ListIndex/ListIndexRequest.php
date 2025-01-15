@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DirectoryArn
- * @property list<Shapes\ObjectAttributeRange> $RangesOnIndexedValues
+ * @property list<Shapes\ObjectAttributeRange>|null $RangesOnIndexedValues
  * @property Shapes\ObjectReference $IndexReference
- * @property int<1, max> $MaxResults
- * @property string $NextToken
- * @property 'SERIALIZABLE'|'EVENTUAL' $ConsistencyLevel
+ * @property int<1, max>|null $MaxResults
+ * @property string|null $NextToken
+ * @property 'SERIALIZABLE'|'EVENTUAL'|null $ConsistencyLevel
  */
 class ListIndexRequest extends Request
 {
     /**
      * @param array{
      *     DirectoryArn: string,
-     *     RangesOnIndexedValues?: list<Shapes\ObjectAttributeRange>,
+     *     RangesOnIndexedValues?: list<Shapes\ObjectAttributeRange>|null,
      *     IndexReference: Shapes\ObjectReference,
-     *     MaxResults?: int<1, max>,
-     *     NextToken?: string,
-     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'
+     *     MaxResults?: int<1, max>|null,
+     *     NextToken?: string|null,
+     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'|null
      * } $args
      */
     public function __construct(array $args)

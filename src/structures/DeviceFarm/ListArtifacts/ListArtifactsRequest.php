@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $arn
  * @property 'SCREENSHOT'|'FILE'|'LOG' $type
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListArtifactsRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListArtifactsRequest extends Request
      * @param array{
      *     arn: string,
      *     type: 'SCREENSHOT'|'FILE'|'LOG',
-     *     nextToken?: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

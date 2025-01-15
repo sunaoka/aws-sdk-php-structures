@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $pipelineId
- * @property Shapes\Query $query
+ * @property Shapes\Query|null $query
  * @property string $sphere
- * @property string $marker
- * @property int $limit
+ * @property string|null $marker
+ * @property int|null $limit
  */
 class QueryObjectsRequest extends Request
 {
     /**
      * @param array{
      *     pipelineId: string,
-     *     query?: Shapes\Query,
+     *     query?: Shapes\Query|null,
      *     sphere: string,
-     *     marker?: string,
-     *     limit?: int
+     *     marker?: string|null,
+     *     limit?: int|null
      * } $args
      */
     public function __construct(array $args)

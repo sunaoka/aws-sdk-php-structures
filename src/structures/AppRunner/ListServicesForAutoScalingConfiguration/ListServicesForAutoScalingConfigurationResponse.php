@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<string> $ServiceArnList
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListServicesForAutoScalingConfigurationResponse extends Response
 {

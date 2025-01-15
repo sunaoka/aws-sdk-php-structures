@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DetectorId
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListPublishingDestinationsRequest extends Request
 {
     /**
      * @param array{
      *     DetectorId: string,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

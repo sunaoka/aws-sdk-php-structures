@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property VolumeSpecification $VolumeSpecification
- * @property int $VolumesPerInstance
+ * @property int|null $VolumesPerInstance
  */
 class EbsBlockDeviceConfig extends Shape
 {
     /**
      * @param array{
      *     VolumeSpecification: VolumeSpecification,
-     *     VolumesPerInstance?: int
+     *     VolumesPerInstance?: int|null
      * } $args
      */
     public function __construct(array $args)

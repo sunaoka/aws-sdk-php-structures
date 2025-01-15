@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\RAM\GetResourceShareInvitations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $resourceShareInvitationArn
- * @property string $resourceShareName
- * @property string $resourceShareArn
- * @property string $senderAccountId
- * @property string $receiverAccountId
- * @property \Aws\Api\DateTimeResult $invitationTimestamp
- * @property 'PENDING'|'ACCEPTED'|'REJECTED'|'EXPIRED' $status
- * @property list<ResourceShareAssociation> $resourceShareAssociations
- * @property string $receiverArn
+ * @property string|null $resourceShareInvitationArn
+ * @property string|null $resourceShareName
+ * @property string|null $resourceShareArn
+ * @property string|null $senderAccountId
+ * @property string|null $receiverAccountId
+ * @property \Aws\Api\DateTimeResult|null $invitationTimestamp
+ * @property 'PENDING'|'ACCEPTED'|'REJECTED'|'EXPIRED'|null $status
+ * @property list<ResourceShareAssociation>|null $resourceShareAssociations
+ * @property string|null $receiverArn
  */
 class ResourceShareInvitation extends Shape
 {
     /**
      * @param array{
-     *     resourceShareInvitationArn?: string,
-     *     resourceShareName?: string,
-     *     resourceShareArn?: string,
-     *     senderAccountId?: string,
-     *     receiverAccountId?: string,
-     *     invitationTimestamp?: \Aws\Api\DateTimeResult,
-     *     status?: 'PENDING'|'ACCEPTED'|'REJECTED'|'EXPIRED',
-     *     resourceShareAssociations?: list<ResourceShareAssociation>,
-     *     receiverArn?: string
+     *     resourceShareInvitationArn?: string|null,
+     *     resourceShareName?: string|null,
+     *     resourceShareArn?: string|null,
+     *     senderAccountId?: string|null,
+     *     receiverAccountId?: string|null,
+     *     invitationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'PENDING'|'ACCEPTED'|'REJECTED'|'EXPIRED'|null,
+     *     resourceShareAssociations?: list<ResourceShareAssociation>|null,
+     *     receiverArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

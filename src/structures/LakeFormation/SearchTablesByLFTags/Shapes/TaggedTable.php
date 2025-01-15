@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LakeFormation\SearchTablesByLFTags\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TableResource $Table
- * @property list<LFTagPair> $LFTagOnDatabase
- * @property list<LFTagPair> $LFTagsOnTable
- * @property list<ColumnLFTag> $LFTagsOnColumns
+ * @property TableResource|null $Table
+ * @property list<LFTagPair>|null $LFTagOnDatabase
+ * @property list<LFTagPair>|null $LFTagsOnTable
+ * @property list<ColumnLFTag>|null $LFTagsOnColumns
  */
 class TaggedTable extends Shape
 {
     /**
      * @param array{
-     *     Table?: TableResource,
-     *     LFTagOnDatabase?: list<LFTagPair>,
-     *     LFTagsOnTable?: list<LFTagPair>,
-     *     LFTagsOnColumns?: list<ColumnLFTag>
+     *     Table?: TableResource|null,
+     *     LFTagOnDatabase?: list<LFTagPair>|null,
+     *     LFTagsOnTable?: list<LFTagPair>|null,
+     *     LFTagsOnColumns?: list<ColumnLFTag>|null
      * } $args
      */
     public function __construct(array $args = [])

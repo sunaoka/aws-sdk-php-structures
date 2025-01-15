@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterArn
- * @property Shapes\ConfigurationInfo $ConfigurationInfo
+ * @property Shapes\ConfigurationInfo|null $ConfigurationInfo
  * @property string $CurrentVersion
  * @property string $TargetKafkaVersion
  */
@@ -15,7 +15,7 @@ class UpdateClusterKafkaVersionRequest extends Request
     /**
      * @param array{
      *     ClusterArn: string,
-     *     ConfigurationInfo?: Shapes\ConfigurationInfo,
+     *     ConfigurationInfo?: Shapes\ConfigurationInfo|null,
      *     CurrentVersion: string,
      *     TargetKafkaVersion: string
      * } $args

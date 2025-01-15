@@ -5,97 +5,97 @@ namespace Sunaoka\Aws\Structures\Neptune\CreateDBInstance;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DBName
+ * @property string|null $DBName
  * @property string $DBInstanceIdentifier
- * @property int $AllocatedStorage
+ * @property int|null $AllocatedStorage
  * @property string $DBInstanceClass
  * @property string $Engine
- * @property string $MasterUsername
- * @property string $MasterUserPassword
- * @property list<string> $DBSecurityGroups
- * @property list<string> $VpcSecurityGroupIds
- * @property string $AvailabilityZone
- * @property string $DBSubnetGroupName
- * @property string $PreferredMaintenanceWindow
- * @property string $DBParameterGroupName
- * @property int $BackupRetentionPeriod
- * @property string $PreferredBackupWindow
- * @property int $Port
- * @property bool $MultiAZ
- * @property string $EngineVersion
- * @property bool $AutoMinorVersionUpgrade
- * @property string $LicenseModel
- * @property int $Iops
- * @property string $OptionGroupName
- * @property string $CharacterSetName
- * @property bool $PubliclyAccessible
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $MasterUsername
+ * @property string|null $MasterUserPassword
+ * @property list<string>|null $DBSecurityGroups
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property string|null $AvailabilityZone
+ * @property string|null $DBSubnetGroupName
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $DBParameterGroupName
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $PreferredBackupWindow
+ * @property int|null $Port
+ * @property bool|null $MultiAZ
+ * @property string|null $EngineVersion
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property string|null $LicenseModel
+ * @property int|null $Iops
+ * @property string|null $OptionGroupName
+ * @property string|null $CharacterSetName
+ * @property bool|null $PubliclyAccessible
+ * @property list<Shapes\Tag>|null $Tags
  * @property string $DBClusterIdentifier
- * @property string $StorageType
- * @property string $TdeCredentialArn
- * @property string $TdeCredentialPassword
- * @property bool $StorageEncrypted
- * @property string $KmsKeyId
- * @property string $Domain
- * @property bool $CopyTagsToSnapshot
- * @property int $MonitoringInterval
- * @property string $MonitoringRoleArn
- * @property string $DomainIAMRoleName
- * @property int $PromotionTier
- * @property string $Timezone
- * @property bool $EnableIAMDatabaseAuthentication
- * @property bool $EnablePerformanceInsights
- * @property string $PerformanceInsightsKMSKeyId
- * @property list<string> $EnableCloudwatchLogsExports
- * @property bool $DeletionProtection
+ * @property string|null $StorageType
+ * @property string|null $TdeCredentialArn
+ * @property string|null $TdeCredentialPassword
+ * @property bool|null $StorageEncrypted
+ * @property string|null $KmsKeyId
+ * @property string|null $Domain
+ * @property bool|null $CopyTagsToSnapshot
+ * @property int|null $MonitoringInterval
+ * @property string|null $MonitoringRoleArn
+ * @property string|null $DomainIAMRoleName
+ * @property int|null $PromotionTier
+ * @property string|null $Timezone
+ * @property bool|null $EnableIAMDatabaseAuthentication
+ * @property bool|null $EnablePerformanceInsights
+ * @property string|null $PerformanceInsightsKMSKeyId
+ * @property list<string>|null $EnableCloudwatchLogsExports
+ * @property bool|null $DeletionProtection
  */
 class CreateDBInstanceRequest extends Request
 {
     /**
      * @param array{
-     *     DBName?: string,
+     *     DBName?: string|null,
      *     DBInstanceIdentifier: string,
-     *     AllocatedStorage?: int,
+     *     AllocatedStorage?: int|null,
      *     DBInstanceClass: string,
      *     Engine: string,
-     *     MasterUsername?: string,
-     *     MasterUserPassword?: string,
-     *     DBSecurityGroups?: list<string>,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     AvailabilityZone?: string,
-     *     DBSubnetGroupName?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     DBParameterGroupName?: string,
-     *     BackupRetentionPeriod?: int,
-     *     PreferredBackupWindow?: string,
-     *     Port?: int,
-     *     MultiAZ?: bool,
-     *     EngineVersion?: string,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     LicenseModel?: string,
-     *     Iops?: int,
-     *     OptionGroupName?: string,
-     *     CharacterSetName?: string,
-     *     PubliclyAccessible?: bool,
-     *     Tags?: list<Shapes\Tag>,
+     *     MasterUsername?: string|null,
+     *     MasterUserPassword?: string|null,
+     *     DBSecurityGroups?: list<string>|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     AvailabilityZone?: string|null,
+     *     DBSubnetGroupName?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     DBParameterGroupName?: string|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     PreferredBackupWindow?: string|null,
+     *     Port?: int|null,
+     *     MultiAZ?: bool|null,
+     *     EngineVersion?: string|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     LicenseModel?: string|null,
+     *     Iops?: int|null,
+     *     OptionGroupName?: string|null,
+     *     CharacterSetName?: string|null,
+     *     PubliclyAccessible?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null,
      *     DBClusterIdentifier: string,
-     *     StorageType?: string,
-     *     TdeCredentialArn?: string,
-     *     TdeCredentialPassword?: string,
-     *     StorageEncrypted?: bool,
-     *     KmsKeyId?: string,
-     *     Domain?: string,
-     *     CopyTagsToSnapshot?: bool,
-     *     MonitoringInterval?: int,
-     *     MonitoringRoleArn?: string,
-     *     DomainIAMRoleName?: string,
-     *     PromotionTier?: int,
-     *     Timezone?: string,
-     *     EnableIAMDatabaseAuthentication?: bool,
-     *     EnablePerformanceInsights?: bool,
-     *     PerformanceInsightsKMSKeyId?: string,
-     *     EnableCloudwatchLogsExports?: list<string>,
-     *     DeletionProtection?: bool
+     *     StorageType?: string|null,
+     *     TdeCredentialArn?: string|null,
+     *     TdeCredentialPassword?: string|null,
+     *     StorageEncrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     Domain?: string|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     MonitoringInterval?: int|null,
+     *     MonitoringRoleArn?: string|null,
+     *     DomainIAMRoleName?: string|null,
+     *     PromotionTier?: int|null,
+     *     Timezone?: string|null,
+     *     EnableIAMDatabaseAuthentication?: bool|null,
+     *     EnablePerformanceInsights?: bool|null,
+     *     PerformanceInsightsKMSKeyId?: string|null,
+     *     EnableCloudwatchLogsExports?: list<string>|null,
+     *     DeletionProtection?: bool|null
      * } $args
      */
     public function __construct(array $args)

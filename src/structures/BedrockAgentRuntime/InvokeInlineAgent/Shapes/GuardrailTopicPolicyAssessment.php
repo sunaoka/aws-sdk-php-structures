@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<GuardrailTopic> $topics
+ * @property list<GuardrailTopic>|null $topics
  */
 class GuardrailTopicPolicyAssessment extends Shape
 {
     /**
-     * @param array{topics?: list<GuardrailTopic>} $args
+     * @param array{topics?: list<GuardrailTopic>|null} $args
      */
     public function __construct(array $args = [])
     {

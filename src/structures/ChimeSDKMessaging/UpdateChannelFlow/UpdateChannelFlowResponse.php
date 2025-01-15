@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\UpdateChannelFlow;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChannelFlowArn
+ * @property string|null $ChannelFlowArn
  */
 class UpdateChannelFlowResponse extends Response
 {

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $TenantId
  * @property string $TeamId
- * @property string $TeamName
- * @property string $State
- * @property string $StateReason
+ * @property string|null $TeamName
+ * @property string|null $State
+ * @property string|null $StateReason
  */
 class ConfiguredTeam extends Shape
 {
@@ -17,9 +17,9 @@ class ConfiguredTeam extends Shape
      * @param array{
      *     TenantId: string,
      *     TeamId: string,
-     *     TeamName?: string,
-     *     State?: string,
-     *     StateReason?: string
+     *     TeamName?: string|null,
+     *     State?: string|null,
+     *     StateReason?: string|null
      * } $args
      */
     public function __construct(array $args)

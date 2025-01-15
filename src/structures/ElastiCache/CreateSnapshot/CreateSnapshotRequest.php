@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElastiCache\CreateSnapshot;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ReplicationGroupId
- * @property string $CacheClusterId
+ * @property string|null $ReplicationGroupId
+ * @property string|null $CacheClusterId
  * @property string $SnapshotName
- * @property string $KmsKeyId
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $KmsKeyId
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateSnapshotRequest extends Request
 {
     /**
      * @param array{
-     *     ReplicationGroupId?: string,
-     *     CacheClusterId?: string,
+     *     ReplicationGroupId?: string|null,
+     *     CacheClusterId?: string|null,
      *     SnapshotName: string,
-     *     KmsKeyId?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     KmsKeyId?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

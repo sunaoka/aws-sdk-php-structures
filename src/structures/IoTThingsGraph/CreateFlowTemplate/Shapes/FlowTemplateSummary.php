@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTThingsGraph\CreateFlowTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $arn
- * @property int $revisionNumber
- * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string|null $id
+ * @property string|null $arn
+ * @property int|null $revisionNumber
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  */
 class FlowTemplateSummary extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     arn?: string,
-     *     revisionNumber?: int,
-     *     createdAt?: \Aws\Api\DateTimeResult
+     *     id?: string|null,
+     *     arn?: string|null,
+     *     revisionNumber?: int|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

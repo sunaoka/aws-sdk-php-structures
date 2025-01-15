@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $LicenseConfigurationArn
- * @property string $AmiAssociationScope
+ * @property string|null $AmiAssociationScope
  */
 class LicenseSpecification extends Shape
 {
     /**
      * @param array{
      *     LicenseConfigurationArn: string,
-     *     AmiAssociationScope?: string
+     *     AmiAssociationScope?: string|null
      * } $args
      */
     public function __construct(array $args)

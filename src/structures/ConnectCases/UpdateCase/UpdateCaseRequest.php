@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $caseId
  * @property string $domainId
  * @property list<Shapes\FieldValue> $fields
- * @property Shapes\UserUnion $performedBy
+ * @property Shapes\UserUnion|null $performedBy
  */
 class UpdateCaseRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateCaseRequest extends Request
      *     caseId: string,
      *     domainId: string,
      *     fields: list<Shapes\FieldValue>,
-     *     performedBy?: Shapes\UserUnion
+     *     performedBy?: Shapes\UserUnion|null
      * } $args
      */
     public function __construct(array $args)

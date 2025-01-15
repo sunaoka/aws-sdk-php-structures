@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ForecastService\DescribePredictor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<CategoricalParameterRange> $CategoricalParameterRanges
- * @property list<ContinuousParameterRange> $ContinuousParameterRanges
- * @property list<IntegerParameterRange> $IntegerParameterRanges
+ * @property list<CategoricalParameterRange>|null $CategoricalParameterRanges
+ * @property list<ContinuousParameterRange>|null $ContinuousParameterRanges
+ * @property list<IntegerParameterRange>|null $IntegerParameterRanges
  */
 class ParameterRanges extends Shape
 {
     /**
      * @param array{
-     *     CategoricalParameterRanges?: list<CategoricalParameterRange>,
-     *     ContinuousParameterRanges?: list<ContinuousParameterRange>,
-     *     IntegerParameterRanges?: list<IntegerParameterRange>
+     *     CategoricalParameterRanges?: list<CategoricalParameterRange>|null,
+     *     ContinuousParameterRanges?: list<ContinuousParameterRange>|null,
+     *     IntegerParameterRanges?: list<IntegerParameterRange>|null
      * } $args
      */
     public function __construct(array $args = [])

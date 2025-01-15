@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListPipelineExecutionSteps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterId
- * @property string $StepId
- * @property string $StepName
- * @property string $LogFilePath
+ * @property string|null $ClusterId
+ * @property string|null $StepId
+ * @property string|null $StepName
+ * @property string|null $LogFilePath
  */
 class EMRStepMetadata extends Shape
 {
     /**
      * @param array{
-     *     ClusterId?: string,
-     *     StepId?: string,
-     *     StepName?: string,
-     *     LogFilePath?: string
+     *     ClusterId?: string|null,
+     *     StepId?: string|null,
+     *     StepName?: string|null,
+     *     LogFilePath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

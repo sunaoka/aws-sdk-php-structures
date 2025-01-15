@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\IoTEvents\DescribeAlarmModel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SNSTopicPublishAction $sns
- * @property IotTopicPublishAction $iotTopicPublish
- * @property LambdaAction $lambda
- * @property IotEventsAction $iotEvents
- * @property SqsAction $sqs
- * @property FirehoseAction $firehose
- * @property DynamoDBAction $dynamoDB
- * @property DynamoDBv2Action $dynamoDBv2
- * @property IotSiteWiseAction $iotSiteWise
+ * @property SNSTopicPublishAction|null $sns
+ * @property IotTopicPublishAction|null $iotTopicPublish
+ * @property LambdaAction|null $lambda
+ * @property IotEventsAction|null $iotEvents
+ * @property SqsAction|null $sqs
+ * @property FirehoseAction|null $firehose
+ * @property DynamoDBAction|null $dynamoDB
+ * @property DynamoDBv2Action|null $dynamoDBv2
+ * @property IotSiteWiseAction|null $iotSiteWise
  */
 class AlarmAction extends Shape
 {
     /**
      * @param array{
-     *     sns?: SNSTopicPublishAction,
-     *     iotTopicPublish?: IotTopicPublishAction,
-     *     lambda?: LambdaAction,
-     *     iotEvents?: IotEventsAction,
-     *     sqs?: SqsAction,
-     *     firehose?: FirehoseAction,
-     *     dynamoDB?: DynamoDBAction,
-     *     dynamoDBv2?: DynamoDBv2Action,
-     *     iotSiteWise?: IotSiteWiseAction
+     *     sns?: SNSTopicPublishAction|null,
+     *     iotTopicPublish?: IotTopicPublishAction|null,
+     *     lambda?: LambdaAction|null,
+     *     iotEvents?: IotEventsAction|null,
+     *     sqs?: SqsAction|null,
+     *     firehose?: FirehoseAction|null,
+     *     dynamoDB?: DynamoDBAction|null,
+     *     dynamoDBv2?: DynamoDBv2Action|null,
+     *     iotSiteWise?: IotSiteWiseAction|null
      * } $args
      */
     public function __construct(array $args = [])

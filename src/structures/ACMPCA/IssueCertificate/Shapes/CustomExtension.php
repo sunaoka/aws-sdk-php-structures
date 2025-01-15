@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ObjectIdentifier
  * @property string $Value
- * @property bool $Critical
+ * @property bool|null $Critical
  */
 class CustomExtension extends Shape
 {
@@ -15,7 +15,7 @@ class CustomExtension extends Shape
      * @param array{
      *     ObjectIdentifier: string,
      *     Value: string,
-     *     Critical?: bool
+     *     Critical?: bool|null
      * } $args
      */
     public function __construct(array $args)

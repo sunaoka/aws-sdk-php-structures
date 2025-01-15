@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ConfiguredTableAssociationSummary> $configuredTableAssociationSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListConfiguredTableAssociationsResponse extends Response
 {

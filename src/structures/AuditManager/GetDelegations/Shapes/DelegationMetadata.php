@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\AuditManager\GetDelegations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $assessmentName
- * @property string $assessmentId
- * @property 'IN_PROGRESS'|'UNDER_REVIEW'|'COMPLETE' $status
- * @property string $roleArn
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property string $controlSetName
+ * @property string|null $id
+ * @property string|null $assessmentName
+ * @property string|null $assessmentId
+ * @property 'IN_PROGRESS'|'UNDER_REVIEW'|'COMPLETE'|null $status
+ * @property string|null $roleArn
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property string|null $controlSetName
  */
 class DelegationMetadata extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     assessmentName?: string,
-     *     assessmentId?: string,
-     *     status?: 'IN_PROGRESS'|'UNDER_REVIEW'|'COMPLETE',
-     *     roleArn?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     controlSetName?: string
+     *     id?: string|null,
+     *     assessmentName?: string|null,
+     *     assessmentId?: string|null,
+     *     status?: 'IN_PROGRESS'|'UNDER_REVIEW'|'COMPLETE'|null,
+     *     roleArn?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     controlSetName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

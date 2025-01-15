@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DeleteInstanceProfile;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\InstanceProfile $InstanceProfile
+ * @property Shapes\InstanceProfile|null $InstanceProfile
  */
 class DeleteInstanceProfileResponse extends Response
 {

@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\mgn\ListApplications\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ApplicationAggregatedStatus $applicationAggregatedStatus
- * @property string $applicationID
- * @property string $arn
- * @property string $creationDateTime
- * @property string $description
- * @property bool $isArchived
- * @property string $lastModifiedDateTime
- * @property string $name
- * @property array<string, string> $tags
- * @property string $waveID
+ * @property ApplicationAggregatedStatus|null $applicationAggregatedStatus
+ * @property string|null $applicationID
+ * @property string|null $arn
+ * @property string|null $creationDateTime
+ * @property string|null $description
+ * @property bool|null $isArchived
+ * @property string|null $lastModifiedDateTime
+ * @property string|null $name
+ * @property array<string, string>|null $tags
+ * @property string|null $waveID
  */
 class Application extends Shape
 {
     /**
      * @param array{
-     *     applicationAggregatedStatus?: ApplicationAggregatedStatus,
-     *     applicationID?: string,
-     *     arn?: string,
-     *     creationDateTime?: string,
-     *     description?: string,
-     *     isArchived?: bool,
-     *     lastModifiedDateTime?: string,
-     *     name?: string,
-     *     tags?: array<string, string>,
-     *     waveID?: string
+     *     applicationAggregatedStatus?: ApplicationAggregatedStatus|null,
+     *     applicationID?: string|null,
+     *     arn?: string|null,
+     *     creationDateTime?: string|null,
+     *     description?: string|null,
+     *     isArchived?: bool|null,
+     *     lastModifiedDateTime?: string|null,
+     *     name?: string|null,
+     *     tags?: array<string, string>|null,
+     *     waveID?: string|null
      * } $args
      */
     public function __construct(array $args = [])

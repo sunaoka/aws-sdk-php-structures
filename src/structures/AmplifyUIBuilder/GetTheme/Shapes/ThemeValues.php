@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\GetTheme\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $key
- * @property ThemeValue $value
+ * @property string|null $key
+ * @property ThemeValue|null $value
  */
 class ThemeValues extends Shape
 {
     /**
      * @param array{
-     *     key?: string,
-     *     value?: ThemeValue
+     *     key?: string|null,
+     *     value?: ThemeValue|null
      * } $args
      */
     public function __construct(array $args = [])

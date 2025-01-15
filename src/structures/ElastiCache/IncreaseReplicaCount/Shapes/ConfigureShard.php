@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $NodeGroupId
  * @property int $NewReplicaCount
- * @property list<string> $PreferredAvailabilityZones
- * @property list<string> $PreferredOutpostArns
+ * @property list<string>|null $PreferredAvailabilityZones
+ * @property list<string>|null $PreferredOutpostArns
  */
 class ConfigureShard extends Shape
 {
@@ -16,8 +16,8 @@ class ConfigureShard extends Shape
      * @param array{
      *     NodeGroupId: string,
      *     NewReplicaCount: int,
-     *     PreferredAvailabilityZones?: list<string>,
-     *     PreferredOutpostArns?: list<string>
+     *     PreferredAvailabilityZones?: list<string>|null,
+     *     PreferredOutpostArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

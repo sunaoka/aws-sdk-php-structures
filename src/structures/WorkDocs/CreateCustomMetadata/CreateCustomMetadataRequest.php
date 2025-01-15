@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\WorkDocs\CreateCustomMetadata;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $ResourceId
- * @property string $VersionId
+ * @property string|null $VersionId
  * @property array<string, string> $CustomMetadata
  */
 class CreateCustomMetadataRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     ResourceId: string,
-     *     VersionId?: string,
+     *     VersionId?: string|null,
      *     CustomMetadata: array<string, string>
      * } $args
      */

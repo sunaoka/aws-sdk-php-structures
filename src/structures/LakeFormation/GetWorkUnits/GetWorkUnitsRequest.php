@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\LakeFormation\GetWorkUnits;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int $PageSize
+ * @property string|null $NextToken
+ * @property int|null $PageSize
  * @property string $QueryId
  */
 class GetWorkUnitsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     PageSize?: int,
+     *     NextToken?: string|null,
+     *     PageSize?: int|null,
      *     QueryId: string
      * } $args
      */

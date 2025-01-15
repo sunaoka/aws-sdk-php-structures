@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property string $IdentityStoreId
- * @property string $InstanceArn
- * @property string $Name
- * @property string $OwnerAccountId
- * @property 'CREATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'ACTIVE' $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property string|null $IdentityStoreId
+ * @property string|null $InstanceArn
+ * @property string|null $Name
+ * @property string|null $OwnerAccountId
+ * @property 'CREATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'ACTIVE'|null $Status
  */
 class InstanceMetadata extends Shape
 {
     /**
      * @param array{
-     *     CreatedDate?: \Aws\Api\DateTimeResult,
-     *     IdentityStoreId?: string,
-     *     InstanceArn?: string,
-     *     Name?: string,
-     *     OwnerAccountId?: string,
-     *     Status?: 'CREATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'ACTIVE'
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     IdentityStoreId?: string|null,
+     *     InstanceArn?: string|null,
+     *     Name?: string|null,
+     *     OwnerAccountId?: string|null,
+     *     Status?: 'CREATE_IN_PROGRESS'|'DELETE_IN_PROGRESS'|'ACTIVE'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property int $OpenProactiveInsights
  * @property int $MetricsAnalyzed
  * @property int $ResourceHours
- * @property int $AnalyzedResourceCount
+ * @property int|null $AnalyzedResourceCount
  */
 class DescribeAccountHealthResponse extends Response
 {

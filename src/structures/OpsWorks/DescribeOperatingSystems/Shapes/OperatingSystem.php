@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeOperatingSystems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Id
- * @property string $Type
- * @property list<OperatingSystemConfigurationManager> $ConfigurationManagers
- * @property string $ReportedName
- * @property string $ReportedVersion
- * @property bool $Supported
+ * @property string|null $Name
+ * @property string|null $Id
+ * @property string|null $Type
+ * @property list<OperatingSystemConfigurationManager>|null $ConfigurationManagers
+ * @property string|null $ReportedName
+ * @property string|null $ReportedVersion
+ * @property bool|null $Supported
  */
 class OperatingSystem extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Id?: string,
-     *     Type?: string,
-     *     ConfigurationManagers?: list<OperatingSystemConfigurationManager>,
-     *     ReportedName?: string,
-     *     ReportedVersion?: string,
-     *     Supported?: bool
+     *     Name?: string|null,
+     *     Id?: string|null,
+     *     Type?: string|null,
+     *     ConfigurationManagers?: list<OperatingSystemConfigurationManager>|null,
+     *     ReportedName?: string|null,
+     *     ReportedVersion?: string|null,
+     *     Supported?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

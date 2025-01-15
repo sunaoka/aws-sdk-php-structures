@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DatabaseName
  * @property string $PartnerName
  * @property 'Active'|'Inactive'|'RuntimeFailure'|'ConnectionFailure' $Status
- * @property string $StatusMessage
+ * @property string|null $StatusMessage
  */
 class UpdatePartnerStatusRequest extends Request
 {
@@ -21,7 +21,7 @@ class UpdatePartnerStatusRequest extends Request
      *     DatabaseName: string,
      *     PartnerName: string,
      *     Status: 'Active'|'Inactive'|'RuntimeFailure'|'ConnectionFailure',
-     *     StatusMessage?: string
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

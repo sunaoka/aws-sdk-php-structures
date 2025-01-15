@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateAccessPolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property string $description
+ * @property string|null $clientToken
+ * @property string|null $description
  * @property string $name
- * @property string $policy
+ * @property string|null $policy
  * @property string $policyVersion
  * @property 'data' $type
  */
@@ -16,10 +16,10 @@ class UpdateAccessPolicyRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     description?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
      *     name: string,
-     *     policy?: string,
+     *     policy?: string|null,
      *     policyVersion: string,
      *     type: 'data'
      * } $args

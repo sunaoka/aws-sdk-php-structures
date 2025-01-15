@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\GenerateEmbedUrlForAnonymousUser\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SharedViewConfigurations $SharedView
+ * @property SharedViewConfigurations|null $SharedView
  */
 class AnonymousUserDashboardFeatureConfigurations extends Shape
 {
     /**
-     * @param array{SharedView?: SharedViewConfigurations} $args
+     * @param array{SharedView?: SharedViewConfigurations|null} $args
      */
     public function __construct(array $args = [])
     {

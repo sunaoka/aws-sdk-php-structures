@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EventBridge\DescribeConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApiKeyName
+ * @property string|null $ApiKeyName
  */
 class ConnectionApiKeyAuthResponseParameters extends Shape
 {
     /**
-     * @param array{ApiKeyName?: string} $args
+     * @param array{ApiKeyName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

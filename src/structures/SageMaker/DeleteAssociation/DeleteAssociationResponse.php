@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SageMaker\DeleteAssociation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $SourceArn
- * @property string $DestinationArn
+ * @property string|null $SourceArn
+ * @property string|null $DestinationArn
  */
 class DeleteAssociationResponse extends Response
 {

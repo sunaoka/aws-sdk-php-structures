@@ -5,57 +5,57 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeAvailablePatches\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property \Aws\Api\DateTimeResult $ReleaseDate
- * @property string $Title
- * @property string $Description
- * @property string $ContentUrl
- * @property string $Vendor
- * @property string $ProductFamily
- * @property string $Product
- * @property string $Classification
- * @property string $MsrcSeverity
- * @property string $KbNumber
- * @property string $MsrcNumber
- * @property string $Language
- * @property list<string> $AdvisoryIds
- * @property list<string> $BugzillaIds
- * @property list<string> $CVEIds
- * @property string $Name
- * @property int $Epoch
- * @property string $Version
- * @property string $Release
- * @property string $Arch
- * @property string $Severity
- * @property string $Repository
+ * @property string|null $Id
+ * @property \Aws\Api\DateTimeResult|null $ReleaseDate
+ * @property string|null $Title
+ * @property string|null $Description
+ * @property string|null $ContentUrl
+ * @property string|null $Vendor
+ * @property string|null $ProductFamily
+ * @property string|null $Product
+ * @property string|null $Classification
+ * @property string|null $MsrcSeverity
+ * @property string|null $KbNumber
+ * @property string|null $MsrcNumber
+ * @property string|null $Language
+ * @property list<string>|null $AdvisoryIds
+ * @property list<string>|null $BugzillaIds
+ * @property list<string>|null $CVEIds
+ * @property string|null $Name
+ * @property int|null $Epoch
+ * @property string|null $Version
+ * @property string|null $Release
+ * @property string|null $Arch
+ * @property string|null $Severity
+ * @property string|null $Repository
  */
 class Patch extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     ReleaseDate?: \Aws\Api\DateTimeResult,
-     *     Title?: string,
-     *     Description?: string,
-     *     ContentUrl?: string,
-     *     Vendor?: string,
-     *     ProductFamily?: string,
-     *     Product?: string,
-     *     Classification?: string,
-     *     MsrcSeverity?: string,
-     *     KbNumber?: string,
-     *     MsrcNumber?: string,
-     *     Language?: string,
-     *     AdvisoryIds?: list<string>,
-     *     BugzillaIds?: list<string>,
-     *     CVEIds?: list<string>,
-     *     Name?: string,
-     *     Epoch?: int,
-     *     Version?: string,
-     *     Release?: string,
-     *     Arch?: string,
-     *     Severity?: string,
-     *     Repository?: string
+     *     Id?: string|null,
+     *     ReleaseDate?: \Aws\Api\DateTimeResult|null,
+     *     Title?: string|null,
+     *     Description?: string|null,
+     *     ContentUrl?: string|null,
+     *     Vendor?: string|null,
+     *     ProductFamily?: string|null,
+     *     Product?: string|null,
+     *     Classification?: string|null,
+     *     MsrcSeverity?: string|null,
+     *     KbNumber?: string|null,
+     *     MsrcNumber?: string|null,
+     *     Language?: string|null,
+     *     AdvisoryIds?: list<string>|null,
+     *     BugzillaIds?: list<string>|null,
+     *     CVEIds?: list<string>|null,
+     *     Name?: string|null,
+     *     Epoch?: int|null,
+     *     Version?: string|null,
+     *     Release?: string|null,
+     *     Arch?: string|null,
+     *     Severity?: string|null,
+     *     Repository?: string|null
      * } $args
      */
     public function __construct(array $args = [])

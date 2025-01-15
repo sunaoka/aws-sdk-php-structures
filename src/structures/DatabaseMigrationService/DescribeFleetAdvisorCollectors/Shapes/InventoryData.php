@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeFleetAdvisorCo
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NumberOfDatabases
- * @property int $NumberOfSchemas
+ * @property int|null $NumberOfDatabases
+ * @property int|null $NumberOfSchemas
  */
 class InventoryData extends Shape
 {
     /**
      * @param array{
-     *     NumberOfDatabases?: int,
-     *     NumberOfSchemas?: int
+     *     NumberOfDatabases?: int|null,
+     *     NumberOfSchemas?: int|null
      * } $args
      */
     public function __construct(array $args = [])

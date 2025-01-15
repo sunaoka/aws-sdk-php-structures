@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CleanRooms\ListCollaborationPrivacyBudgets\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DifferentialPrivacyPrivacyBudget $differentialPrivacy
+ * @property DifferentialPrivacyPrivacyBudget|null $differentialPrivacy
  */
 class PrivacyBudget extends Shape
 {
     /**
-     * @param array{differentialPrivacy?: DifferentialPrivacyPrivacyBudget} $args
+     * @param array{differentialPrivacy?: DifferentialPrivacyPrivacyBudget|null} $args
      */
     public function __construct(array $args = [])
     {

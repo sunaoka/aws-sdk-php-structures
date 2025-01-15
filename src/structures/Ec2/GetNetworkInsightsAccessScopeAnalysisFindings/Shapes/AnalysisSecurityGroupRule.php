@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\GetNetworkInsightsAccessScopeAnalysisFindin
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Cidr
- * @property string $Direction
- * @property string $SecurityGroupId
- * @property PortRange $PortRange
- * @property string $PrefixListId
- * @property string $Protocol
+ * @property string|null $Cidr
+ * @property string|null $Direction
+ * @property string|null $SecurityGroupId
+ * @property PortRange|null $PortRange
+ * @property string|null $PrefixListId
+ * @property string|null $Protocol
  */
 class AnalysisSecurityGroupRule extends Shape
 {
     /**
      * @param array{
-     *     Cidr?: string,
-     *     Direction?: string,
-     *     SecurityGroupId?: string,
-     *     PortRange?: PortRange,
-     *     PrefixListId?: string,
-     *     Protocol?: string
+     *     Cidr?: string|null,
+     *     Direction?: string|null,
+     *     SecurityGroupId?: string|null,
+     *     PortRange?: PortRange|null,
+     *     PrefixListId?: string|null,
+     *     Protocol?: string|null
      * } $args
      */
     public function __construct(array $args = [])

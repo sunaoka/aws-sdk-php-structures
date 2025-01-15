@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $resourceType
- * @property list<string> $resourceArns
- * @property array<string, string> $resourceTags
- * @property list<ExperimentTemplateTargetInputFilter> $filters
+ * @property list<string>|null $resourceArns
+ * @property array<string, string>|null $resourceTags
+ * @property list<ExperimentTemplateTargetInputFilter>|null $filters
  * @property string $selectionMode
- * @property array<string, string> $parameters
+ * @property array<string, string>|null $parameters
  */
 class CreateExperimentTemplateTargetInput extends Shape
 {
     /**
      * @param array{
      *     resourceType: string,
-     *     resourceArns?: list<string>,
-     *     resourceTags?: array<string, string>,
-     *     filters?: list<ExperimentTemplateTargetInputFilter>,
+     *     resourceArns?: list<string>|null,
+     *     resourceTags?: array<string, string>|null,
+     *     filters?: list<ExperimentTemplateTargetInputFilter>|null,
      *     selectionMode: string,
-     *     parameters?: array<string, string>
+     *     parameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

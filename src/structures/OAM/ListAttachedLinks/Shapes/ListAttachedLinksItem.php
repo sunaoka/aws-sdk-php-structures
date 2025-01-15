@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OAM\ListAttachedLinks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Label
- * @property string $LinkArn
- * @property list<string> $ResourceTypes
+ * @property string|null $Label
+ * @property string|null $LinkArn
+ * @property list<string>|null $ResourceTypes
  */
 class ListAttachedLinksItem extends Shape
 {
     /**
      * @param array{
-     *     Label?: string,
-     *     LinkArn?: string,
-     *     ResourceTypes?: list<string>
+     *     Label?: string|null,
+     *     LinkArn?: string|null,
+     *     ResourceTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

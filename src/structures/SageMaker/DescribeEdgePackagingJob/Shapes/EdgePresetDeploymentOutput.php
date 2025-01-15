@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'GreengrassV2Component' $Type
- * @property string $Artifact
- * @property 'COMPLETED'|'FAILED' $Status
- * @property string $StatusMessage
+ * @property string|null $Artifact
+ * @property 'COMPLETED'|'FAILED'|null $Status
+ * @property string|null $StatusMessage
  */
 class EdgePresetDeploymentOutput extends Shape
 {
     /**
      * @param array{
      *     Type: 'GreengrassV2Component',
-     *     Artifact?: string,
-     *     Status?: 'COMPLETED'|'FAILED',
-     *     StatusMessage?: string
+     *     Artifact?: string|null,
+     *     Status?: 'COMPLETED'|'FAILED'|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

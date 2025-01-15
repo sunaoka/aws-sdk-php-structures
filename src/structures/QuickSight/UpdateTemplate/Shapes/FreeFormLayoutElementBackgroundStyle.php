@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $Visibility
- * @property string $Color
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
+ * @property string|null $Color
  */
 class FreeFormLayoutElementBackgroundStyle extends Shape
 {
     /**
      * @param array{
-     *     Visibility?: 'HIDDEN'|'VISIBLE',
-     *     Color?: string
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     Color?: string|null
      * } $args
      */
     public function __construct(array $args = [])

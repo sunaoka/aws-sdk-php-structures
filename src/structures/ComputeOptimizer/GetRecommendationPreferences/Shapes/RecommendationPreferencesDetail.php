@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRecommendationPreferences\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Scope $scope
- * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle' $resourceType
- * @property 'Active'|'Inactive' $enhancedInfrastructureMetrics
- * @property 'Active'|'Inactive' $inferredWorkloadTypes
- * @property ExternalMetricsPreference $externalMetricsPreference
- * @property 'DAYS_14'|'DAYS_32'|'DAYS_93' $lookBackPeriod
- * @property list<UtilizationPreference> $utilizationPreferences
- * @property list<EffectivePreferredResource> $preferredResources
- * @property 'AfterDiscounts'|'BeforeDiscounts' $savingsEstimationMode
+ * @property Scope|null $scope
+ * @property 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle'|null $resourceType
+ * @property 'Active'|'Inactive'|null $enhancedInfrastructureMetrics
+ * @property 'Active'|'Inactive'|null $inferredWorkloadTypes
+ * @property ExternalMetricsPreference|null $externalMetricsPreference
+ * @property 'DAYS_14'|'DAYS_32'|'DAYS_93'|null $lookBackPeriod
+ * @property list<UtilizationPreference>|null $utilizationPreferences
+ * @property list<EffectivePreferredResource>|null $preferredResources
+ * @property 'AfterDiscounts'|'BeforeDiscounts'|null $savingsEstimationMode
  */
 class RecommendationPreferencesDetail extends Shape
 {
     /**
      * @param array{
-     *     scope?: Scope,
-     *     resourceType?: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle',
-     *     enhancedInfrastructureMetrics?: 'Active'|'Inactive',
-     *     inferredWorkloadTypes?: 'Active'|'Inactive',
-     *     externalMetricsPreference?: ExternalMetricsPreference,
-     *     lookBackPeriod?: 'DAYS_14'|'DAYS_32'|'DAYS_93',
-     *     utilizationPreferences?: list<UtilizationPreference>,
-     *     preferredResources?: list<EffectivePreferredResource>,
-     *     savingsEstimationMode?: 'AfterDiscounts'|'BeforeDiscounts'
+     *     scope?: Scope|null,
+     *     resourceType?: 'Ec2Instance'|'AutoScalingGroup'|'EbsVolume'|'LambdaFunction'|'NotApplicable'|'EcsService'|'License'|'RdsDBInstance'|'Idle'|null,
+     *     enhancedInfrastructureMetrics?: 'Active'|'Inactive'|null,
+     *     inferredWorkloadTypes?: 'Active'|'Inactive'|null,
+     *     externalMetricsPreference?: ExternalMetricsPreference|null,
+     *     lookBackPeriod?: 'DAYS_14'|'DAYS_32'|'DAYS_93'|null,
+     *     utilizationPreferences?: list<UtilizationPreference>|null,
+     *     preferredResources?: list<EffectivePreferredResource>|null,
+     *     savingsEstimationMode?: 'AfterDiscounts'|'BeforeDiscounts'|null
      * } $args
      */
     public function __construct(array $args = [])

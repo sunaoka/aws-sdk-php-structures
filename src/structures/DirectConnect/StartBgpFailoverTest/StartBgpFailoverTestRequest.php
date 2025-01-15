@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $virtualInterfaceId
- * @property list<string> $bgpPeers
- * @property int $testDurationInMinutes
+ * @property list<string>|null $bgpPeers
+ * @property int|null $testDurationInMinutes
  */
 class StartBgpFailoverTestRequest extends Request
 {
     /**
      * @param array{
      *     virtualInterfaceId: string,
-     *     bgpPeers?: list<string>,
-     *     testDurationInMinutes?: int
+     *     bgpPeers?: list<string>|null,
+     *     testDurationInMinutes?: int|null
      * } $args
      */
     public function __construct(array $args)

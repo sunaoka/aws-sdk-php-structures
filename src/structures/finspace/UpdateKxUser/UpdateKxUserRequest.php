@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $environmentId
  * @property string $userName
  * @property string $iamRole
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class UpdateKxUserRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateKxUserRequest extends Request
      *     environmentId: string,
      *     userName: string,
      *     iamRole: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

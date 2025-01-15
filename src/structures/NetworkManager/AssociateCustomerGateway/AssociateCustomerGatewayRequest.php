@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CustomerGatewayArn
  * @property string $GlobalNetworkId
  * @property string $DeviceId
- * @property string $LinkId
+ * @property string|null $LinkId
  */
 class AssociateCustomerGatewayRequest extends Request
 {
@@ -17,7 +17,7 @@ class AssociateCustomerGatewayRequest extends Request
      *     CustomerGatewayArn: string,
      *     GlobalNetworkId: string,
      *     DeviceId: string,
-     *     LinkId?: string
+     *     LinkId?: string|null
      * } $args
      */
     public function __construct(array $args)

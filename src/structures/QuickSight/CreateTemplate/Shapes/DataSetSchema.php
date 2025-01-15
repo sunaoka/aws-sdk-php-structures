@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ColumnSchema> $ColumnSchemaList
+ * @property list<ColumnSchema>|null $ColumnSchemaList
  */
 class DataSetSchema extends Shape
 {
     /**
-     * @param array{ColumnSchemaList?: list<ColumnSchema>} $args
+     * @param array{ColumnSchemaList?: list<ColumnSchema>|null} $args
      */
     public function __construct(array $args = [])
     {

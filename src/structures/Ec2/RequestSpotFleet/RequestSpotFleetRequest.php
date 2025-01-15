@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\RequestSpotFleet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property Shapes\SpotFleetRequestConfigData $SpotFleetRequestConfig
  */
 class RequestSpotFleetRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     SpotFleetRequestConfig: Shapes\SpotFleetRequestConfigData
      * } $args
      */

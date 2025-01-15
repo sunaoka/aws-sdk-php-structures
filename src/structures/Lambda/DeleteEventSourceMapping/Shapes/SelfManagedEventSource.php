@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lambda\DeleteEventSourceMapping\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<'KAFKA_BOOTSTRAP_SERVERS', list<string>> $Endpoints
+ * @property array<'KAFKA_BOOTSTRAP_SERVERS', list<string>>|null $Endpoints
  */
 class SelfManagedEventSource extends Shape
 {
     /**
-     * @param array{Endpoints?: array<'KAFKA_BOOTSTRAP_SERVERS', list<string>>} $args
+     * @param array{Endpoints?: array<'KAFKA_BOOTSTRAP_SERVERS', list<string>>|null} $args
      */
     public function __construct(array $args = [])
     {

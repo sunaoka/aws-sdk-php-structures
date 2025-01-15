@@ -7,19 +7,19 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $RoleARN
  * @property string $BucketARN
- * @property string $Prefix
- * @property string $ErrorOutputPrefix
- * @property BufferingHints $BufferingHints
- * @property 'UNCOMPRESSED'|'GZIP'|'ZIP'|'Snappy'|'HADOOP_SNAPPY' $CompressionFormat
- * @property EncryptionConfiguration $EncryptionConfiguration
- * @property CloudWatchLoggingOptions $CloudWatchLoggingOptions
- * @property ProcessingConfiguration $ProcessingConfiguration
- * @property 'Disabled'|'Enabled' $S3BackupMode
- * @property S3DestinationConfiguration $S3BackupConfiguration
- * @property DataFormatConversionConfiguration $DataFormatConversionConfiguration
- * @property DynamicPartitioningConfiguration $DynamicPartitioningConfiguration
- * @property string $FileExtension
- * @property string $CustomTimeZone
+ * @property string|null $Prefix
+ * @property string|null $ErrorOutputPrefix
+ * @property BufferingHints|null $BufferingHints
+ * @property 'UNCOMPRESSED'|'GZIP'|'ZIP'|'Snappy'|'HADOOP_SNAPPY'|null $CompressionFormat
+ * @property EncryptionConfiguration|null $EncryptionConfiguration
+ * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
+ * @property ProcessingConfiguration|null $ProcessingConfiguration
+ * @property 'Disabled'|'Enabled'|null $S3BackupMode
+ * @property S3DestinationConfiguration|null $S3BackupConfiguration
+ * @property DataFormatConversionConfiguration|null $DataFormatConversionConfiguration
+ * @property DynamicPartitioningConfiguration|null $DynamicPartitioningConfiguration
+ * @property string|null $FileExtension
+ * @property string|null $CustomTimeZone
  */
 class ExtendedS3DestinationConfiguration extends Shape
 {
@@ -27,19 +27,19 @@ class ExtendedS3DestinationConfiguration extends Shape
      * @param array{
      *     RoleARN: string,
      *     BucketARN: string,
-     *     Prefix?: string,
-     *     ErrorOutputPrefix?: string,
-     *     BufferingHints?: BufferingHints,
-     *     CompressionFormat?: 'UNCOMPRESSED'|'GZIP'|'ZIP'|'Snappy'|'HADOOP_SNAPPY',
-     *     EncryptionConfiguration?: EncryptionConfiguration,
-     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions,
-     *     ProcessingConfiguration?: ProcessingConfiguration,
-     *     S3BackupMode?: 'Disabled'|'Enabled',
-     *     S3BackupConfiguration?: S3DestinationConfiguration,
-     *     DataFormatConversionConfiguration?: DataFormatConversionConfiguration,
-     *     DynamicPartitioningConfiguration?: DynamicPartitioningConfiguration,
-     *     FileExtension?: string,
-     *     CustomTimeZone?: string
+     *     Prefix?: string|null,
+     *     ErrorOutputPrefix?: string|null,
+     *     BufferingHints?: BufferingHints|null,
+     *     CompressionFormat?: 'UNCOMPRESSED'|'GZIP'|'ZIP'|'Snappy'|'HADOOP_SNAPPY'|null,
+     *     EncryptionConfiguration?: EncryptionConfiguration|null,
+     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null,
+     *     ProcessingConfiguration?: ProcessingConfiguration|null,
+     *     S3BackupMode?: 'Disabled'|'Enabled'|null,
+     *     S3BackupConfiguration?: S3DestinationConfiguration|null,
+     *     DataFormatConversionConfiguration?: DataFormatConversionConfiguration|null,
+     *     DynamicPartitioningConfiguration?: DynamicPartitioningConfiguration|null,
+     *     FileExtension?: string|null,
+     *     CustomTimeZone?: string|null
      * } $args
      */
     public function __construct(array $args)

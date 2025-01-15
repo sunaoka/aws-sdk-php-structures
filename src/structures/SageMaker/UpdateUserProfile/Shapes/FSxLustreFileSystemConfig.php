@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FileSystemId
- * @property string $FileSystemPath
+ * @property string|null $FileSystemPath
  */
 class FSxLustreFileSystemConfig extends Shape
 {
     /**
      * @param array{
      *     FileSystemId: string,
-     *     FileSystemPath?: string
+     *     FileSystemPath?: string|null
      * } $args
      */
     public function __construct(array $args)

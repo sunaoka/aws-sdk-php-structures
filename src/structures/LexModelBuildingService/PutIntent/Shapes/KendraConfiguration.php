@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $kendraIndex
- * @property string $queryFilterString
+ * @property string|null $queryFilterString
  * @property string $role
  */
 class KendraConfiguration extends Shape
@@ -14,7 +14,7 @@ class KendraConfiguration extends Shape
     /**
      * @param array{
      *     kendraIndex: string,
-     *     queryFilterString?: string,
+     *     queryFilterString?: string|null,
      *     role: string
      * } $args
      */

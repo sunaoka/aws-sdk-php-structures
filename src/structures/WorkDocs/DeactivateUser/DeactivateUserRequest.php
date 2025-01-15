@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $UserId
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  */
 class DeactivateUserRequest extends Request
 {
     /**
      * @param array{
      *     UserId: string,
-     *     AuthenticationToken?: string
+     *     AuthenticationToken?: string|null
      * } $args
      */
     public function __construct(array $args)

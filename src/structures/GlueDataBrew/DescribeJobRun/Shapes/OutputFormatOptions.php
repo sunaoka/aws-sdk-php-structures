@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\DescribeJobRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CsvOutputOptions $Csv
+ * @property CsvOutputOptions|null $Csv
  */
 class OutputFormatOptions extends Shape
 {
     /**
-     * @param array{Csv?: CsvOutputOptions} $args
+     * @param array{Csv?: CsvOutputOptions|null} $args
      */
     public function __construct(array $args = [])
     {

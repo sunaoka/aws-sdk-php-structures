@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\VpcOriginEndpointConfig $VpcOriginEndpointConfig
- * @property Shapes\Tags $Tags
+ * @property Shapes\Tags|null $Tags
  */
 class CreateVpcOriginRequest extends Request
 {
     /**
      * @param array{
      *     VpcOriginEndpointConfig: Shapes\VpcOriginEndpointConfig,
-     *     Tags?: Shapes\Tags
+     *     Tags?: Shapes\Tags|null
      * } $args
      */
     public function __construct(array $args)

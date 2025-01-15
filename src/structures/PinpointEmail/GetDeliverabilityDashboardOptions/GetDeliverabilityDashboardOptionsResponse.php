@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property bool $DashboardEnabled
- * @property \Aws\Api\DateTimeResult $SubscriptionExpiryDate
- * @property 'ACTIVE'|'PENDING_EXPIRATION'|'DISABLED' $AccountStatus
- * @property list<Shapes\DomainDeliverabilityTrackingOption> $ActiveSubscribedDomains
- * @property list<Shapes\DomainDeliverabilityTrackingOption> $PendingExpirationSubscribedDomains
+ * @property \Aws\Api\DateTimeResult|null $SubscriptionExpiryDate
+ * @property 'ACTIVE'|'PENDING_EXPIRATION'|'DISABLED'|null $AccountStatus
+ * @property list<Shapes\DomainDeliverabilityTrackingOption>|null $ActiveSubscribedDomains
+ * @property list<Shapes\DomainDeliverabilityTrackingOption>|null $PendingExpirationSubscribedDomains
  */
 class GetDeliverabilityDashboardOptionsResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\SnapToRoads\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RoadSnapTruckOptions $Truck
+ * @property RoadSnapTruckOptions|null $Truck
  */
 class RoadSnapTravelModeOptions extends Shape
 {
     /**
-     * @param array{Truck?: RoadSnapTruckOptions} $args
+     * @param array{Truck?: RoadSnapTruckOptions|null} $args
      */
     public function __construct(array $args = [])
     {

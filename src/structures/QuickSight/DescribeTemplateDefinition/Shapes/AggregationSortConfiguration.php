@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ColumnIdentifier $Column
  * @property 'ASC'|'DESC' $SortDirection
- * @property AggregationFunction $AggregationFunction
+ * @property AggregationFunction|null $AggregationFunction
  */
 class AggregationSortConfiguration extends Shape
 {
@@ -15,7 +15,7 @@ class AggregationSortConfiguration extends Shape
      * @param array{
      *     Column: ColumnIdentifier,
      *     SortDirection: 'ASC'|'DESC',
-     *     AggregationFunction?: AggregationFunction
+     *     AggregationFunction?: AggregationFunction|null
      * } $args
      */
     public function __construct(array $args)

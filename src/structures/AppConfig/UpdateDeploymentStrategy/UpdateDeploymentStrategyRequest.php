@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DeploymentStrategyId
- * @property string $Description
- * @property int<0, 1440> $DeploymentDurationInMinutes
- * @property int<0, 1440> $FinalBakeTimeInMinutes
- * @property float $GrowthFactor
- * @property 'LINEAR'|'EXPONENTIAL' $GrowthType
+ * @property string|null $Description
+ * @property int<0, 1440>|null $DeploymentDurationInMinutes
+ * @property int<0, 1440>|null $FinalBakeTimeInMinutes
+ * @property float|null $GrowthFactor
+ * @property 'LINEAR'|'EXPONENTIAL'|null $GrowthType
  */
 class UpdateDeploymentStrategyRequest extends Request
 {
     /**
      * @param array{
      *     DeploymentStrategyId: string,
-     *     Description?: string,
-     *     DeploymentDurationInMinutes?: int<0, 1440>,
-     *     FinalBakeTimeInMinutes?: int<0, 1440>,
-     *     GrowthFactor?: float,
-     *     GrowthType?: 'LINEAR'|'EXPONENTIAL'
+     *     Description?: string|null,
+     *     DeploymentDurationInMinutes?: int<0, 1440>|null,
+     *     FinalBakeTimeInMinutes?: int<0, 1440>|null,
+     *     GrowthFactor?: float|null,
+     *     GrowthType?: 'LINEAR'|'EXPONENTIAL'|null
      * } $args
      */
     public function __construct(array $args)

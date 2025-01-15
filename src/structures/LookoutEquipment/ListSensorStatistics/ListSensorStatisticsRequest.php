@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DatasetName
- * @property string $IngestionJobId
- * @property int<1, 500> $MaxResults
- * @property string $NextToken
+ * @property string|null $IngestionJobId
+ * @property int<1, 500>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListSensorStatisticsRequest extends Request
 {
     /**
      * @param array{
      *     DatasetName: string,
-     *     IngestionJobId?: string,
-     *     MaxResults?: int<1, 500>,
-     *     NextToken?: string
+     *     IngestionJobId?: string|null,
+     *     MaxResults?: int<1, 500>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

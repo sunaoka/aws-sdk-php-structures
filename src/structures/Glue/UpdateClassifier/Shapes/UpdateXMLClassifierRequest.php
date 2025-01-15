@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $Classification
- * @property string $RowTag
+ * @property string|null $Classification
+ * @property string|null $RowTag
  */
 class UpdateXMLClassifierRequest extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Classification?: string,
-     *     RowTag?: string
+     *     Classification?: string|null,
+     *     RowTag?: string|null
      * } $args
      */
     public function __construct(array $args)

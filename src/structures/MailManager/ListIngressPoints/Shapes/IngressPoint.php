@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MailManager\ListIngressPoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ARecord
+ * @property string|null $ARecord
  * @property string $IngressPointId
  * @property string $IngressPointName
  * @property 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED' $Status
@@ -15,7 +15,7 @@ class IngressPoint extends Shape
 {
     /**
      * @param array{
-     *     ARecord?: string,
+     *     ARecord?: string|null,
      *     IngressPointId: string,
      *     IngressPointName: string,
      *     Status: 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED',

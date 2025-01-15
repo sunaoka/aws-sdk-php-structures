@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $connectorProfileName
  * @property 'Public'|'Private' $connectionMode
  * @property Shapes\ConnectorProfileConfig $connectorProfileConfig
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class UpdateConnectorProfileRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateConnectorProfileRequest extends Request
      *     connectorProfileName: string,
      *     connectionMode: 'Public'|'Private',
      *     connectorProfileConfig: Shapes\ConnectorProfileConfig,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

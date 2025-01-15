@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ecr\DescribeImageReplicationStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $region
- * @property string $registryId
- * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED' $status
- * @property string $failureCode
+ * @property string|null $region
+ * @property string|null $registryId
+ * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED'|null $status
+ * @property string|null $failureCode
  */
 class ImageReplicationStatus extends Shape
 {
     /**
      * @param array{
-     *     region?: string,
-     *     registryId?: string,
-     *     status?: 'IN_PROGRESS'|'COMPLETE'|'FAILED',
-     *     failureCode?: string
+     *     region?: string|null,
+     *     registryId?: string|null,
+     *     status?: 'IN_PROGRESS'|'COMPLETE'|'FAILED'|null,
+     *     failureCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

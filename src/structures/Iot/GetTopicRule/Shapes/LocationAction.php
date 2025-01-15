@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $roleArn
  * @property string $trackerName
  * @property string $deviceId
- * @property LocationTimestamp $timestamp
+ * @property LocationTimestamp|null $timestamp
  * @property string $latitude
  * @property string $longitude
  */
@@ -19,7 +19,7 @@ class LocationAction extends Shape
      *     roleArn: string,
      *     trackerName: string,
      *     deviceId: string,
-     *     timestamp?: LocationTimestamp,
+     *     timestamp?: LocationTimestamp|null,
      *     latitude: string,
      *     longitude: string
      * } $args

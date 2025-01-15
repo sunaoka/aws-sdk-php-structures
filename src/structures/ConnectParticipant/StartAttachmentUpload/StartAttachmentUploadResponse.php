@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConnectParticipant\StartAttachmentUpload;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AttachmentId
- * @property Shapes\UploadMetadata $UploadMetadata
+ * @property string|null $AttachmentId
+ * @property Shapes\UploadMetadata|null $UploadMetadata
  */
 class StartAttachmentUploadResponse extends Response
 {

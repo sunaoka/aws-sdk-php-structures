@@ -6,15 +6,15 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
- * @property list<string> $failureReasons
+ * @property string|null $description
+ * @property list<string>|null $failureReasons
  * @property string $knowledgeBaseArn
  * @property KnowledgeBaseConfiguration $knowledgeBaseConfiguration
  * @property string $knowledgeBaseId
  * @property string $name
  * @property string $roleArn
  * @property 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL' $status
- * @property StorageConfiguration $storageConfiguration
+ * @property StorageConfiguration|null $storageConfiguration
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class KnowledgeBase extends Shape
@@ -22,15 +22,15 @@ class KnowledgeBase extends Shape
     /**
      * @param array{
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     failureReasons?: list<string>,
+     *     description?: string|null,
+     *     failureReasons?: list<string>|null,
      *     knowledgeBaseArn: string,
      *     knowledgeBaseConfiguration: KnowledgeBaseConfiguration,
      *     knowledgeBaseId: string,
      *     name: string,
      *     roleArn: string,
      *     status: 'CREATING'|'ACTIVE'|'DELETING'|'UPDATING'|'FAILED'|'DELETE_UNSUCCESSFUL',
-     *     storageConfiguration?: StorageConfiguration,
+     *     storageConfiguration?: StorageConfiguration|null,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

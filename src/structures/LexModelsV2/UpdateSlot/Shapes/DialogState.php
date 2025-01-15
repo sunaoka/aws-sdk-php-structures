@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\UpdateSlot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DialogAction $dialogAction
- * @property IntentOverride $intent
- * @property array<string, string> $sessionAttributes
+ * @property DialogAction|null $dialogAction
+ * @property IntentOverride|null $intent
+ * @property array<string, string>|null $sessionAttributes
  */
 class DialogState extends Shape
 {
     /**
      * @param array{
-     *     dialogAction?: DialogAction,
-     *     intent?: IntentOverride,
-     *     sessionAttributes?: array<string, string>
+     *     dialogAction?: DialogAction|null,
+     *     intent?: IntentOverride|null,
+     *     sessionAttributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

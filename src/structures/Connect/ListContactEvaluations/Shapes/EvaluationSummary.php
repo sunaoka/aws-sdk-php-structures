@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EvaluationFormId
  * @property 'DRAFT'|'SUBMITTED' $Status
  * @property string $EvaluatorArn
- * @property EvaluationScore $Score
+ * @property EvaluationScore|null $Score
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  */
@@ -25,7 +25,7 @@ class EvaluationSummary extends Shape
      *     EvaluationFormId: string,
      *     Status: 'DRAFT'|'SUBMITTED',
      *     EvaluatorArn: string,
-     *     Score?: EvaluationScore,
+     *     Score?: EvaluationScore|null,
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     LastModifiedTime: \Aws\Api\DateTimeResult
      * } $args

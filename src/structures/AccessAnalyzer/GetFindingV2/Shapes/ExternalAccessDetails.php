@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\GetFindingV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $action
+ * @property list<string>|null $action
  * @property array<string, string> $condition
- * @property bool $isPublic
- * @property array<string, string> $principal
- * @property list<FindingSource> $sources
- * @property 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE' $resourceControlPolicyRestriction
+ * @property bool|null $isPublic
+ * @property array<string, string>|null $principal
+ * @property list<FindingSource>|null $sources
+ * @property 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|null $resourceControlPolicyRestriction
  */
 class ExternalAccessDetails extends Shape
 {
     /**
      * @param array{
-     *     action?: list<string>,
+     *     action?: list<string>|null,
      *     condition: array<string, string>,
-     *     isPublic?: bool,
-     *     principal?: array<string, string>,
-     *     sources?: list<FindingSource>,
-     *     resourceControlPolicyRestriction?: 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'
+     *     isPublic?: bool|null,
+     *     principal?: array<string, string>|null,
+     *     sources?: list<FindingSource>|null,
+     *     resourceControlPolicyRestriction?: 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|null
      * } $args
      */
     public function __construct(array $args)

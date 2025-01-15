@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $datastoreName
- * @property Shapes\DatastoreStorage $datastoreStorage
- * @property Shapes\RetentionPeriod $retentionPeriod
- * @property list<Shapes\Tag> $tags
- * @property Shapes\FileFormatConfiguration $fileFormatConfiguration
- * @property Shapes\DatastorePartitions $datastorePartitions
+ * @property Shapes\DatastoreStorage|null $datastoreStorage
+ * @property Shapes\RetentionPeriod|null $retentionPeriod
+ * @property list<Shapes\Tag>|null $tags
+ * @property Shapes\FileFormatConfiguration|null $fileFormatConfiguration
+ * @property Shapes\DatastorePartitions|null $datastorePartitions
  */
 class CreateDatastoreRequest extends Request
 {
     /**
      * @param array{
      *     datastoreName: string,
-     *     datastoreStorage?: Shapes\DatastoreStorage,
-     *     retentionPeriod?: Shapes\RetentionPeriod,
-     *     tags?: list<Shapes\Tag>,
-     *     fileFormatConfiguration?: Shapes\FileFormatConfiguration,
-     *     datastorePartitions?: Shapes\DatastorePartitions
+     *     datastoreStorage?: Shapes\DatastoreStorage|null,
+     *     retentionPeriod?: Shapes\RetentionPeriod|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     fileFormatConfiguration?: Shapes\FileFormatConfiguration|null,
+     *     datastorePartitions?: Shapes\DatastorePartitions|null
      * } $args
      */
     public function __construct(array $args)

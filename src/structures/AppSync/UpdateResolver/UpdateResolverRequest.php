@@ -8,17 +8,17 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $apiId
  * @property string $typeName
  * @property string $fieldName
- * @property string $dataSourceName
- * @property string $requestMappingTemplate
- * @property string $responseMappingTemplate
- * @property 'UNIT'|'PIPELINE' $kind
- * @property Shapes\PipelineConfig $pipelineConfig
- * @property Shapes\SyncConfig $syncConfig
- * @property Shapes\CachingConfig $cachingConfig
- * @property int<0, 2000> $maxBatchSize
- * @property Shapes\AppSyncRuntime $runtime
- * @property string $code
- * @property 'ENABLED'|'DISABLED' $metricsConfig
+ * @property string|null $dataSourceName
+ * @property string|null $requestMappingTemplate
+ * @property string|null $responseMappingTemplate
+ * @property 'UNIT'|'PIPELINE'|null $kind
+ * @property Shapes\PipelineConfig|null $pipelineConfig
+ * @property Shapes\SyncConfig|null $syncConfig
+ * @property Shapes\CachingConfig|null $cachingConfig
+ * @property int<0, 2000>|null $maxBatchSize
+ * @property Shapes\AppSyncRuntime|null $runtime
+ * @property string|null $code
+ * @property 'ENABLED'|'DISABLED'|null $metricsConfig
  */
 class UpdateResolverRequest extends Request
 {
@@ -27,17 +27,17 @@ class UpdateResolverRequest extends Request
      *     apiId: string,
      *     typeName: string,
      *     fieldName: string,
-     *     dataSourceName?: string,
-     *     requestMappingTemplate?: string,
-     *     responseMappingTemplate?: string,
-     *     kind?: 'UNIT'|'PIPELINE',
-     *     pipelineConfig?: Shapes\PipelineConfig,
-     *     syncConfig?: Shapes\SyncConfig,
-     *     cachingConfig?: Shapes\CachingConfig,
-     *     maxBatchSize?: int<0, 2000>,
-     *     runtime?: Shapes\AppSyncRuntime,
-     *     code?: string,
-     *     metricsConfig?: 'ENABLED'|'DISABLED'
+     *     dataSourceName?: string|null,
+     *     requestMappingTemplate?: string|null,
+     *     responseMappingTemplate?: string|null,
+     *     kind?: 'UNIT'|'PIPELINE'|null,
+     *     pipelineConfig?: Shapes\PipelineConfig|null,
+     *     syncConfig?: Shapes\SyncConfig|null,
+     *     cachingConfig?: Shapes\CachingConfig|null,
+     *     maxBatchSize?: int<0, 2000>|null,
+     *     runtime?: Shapes\AppSyncRuntime|null,
+     *     code?: string|null,
+     *     metricsConfig?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

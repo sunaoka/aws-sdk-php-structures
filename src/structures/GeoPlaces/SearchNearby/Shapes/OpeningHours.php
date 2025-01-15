@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\SearchNearby\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Display
- * @property bool $OpenNow
- * @property list<OpeningHoursComponents> $Components
- * @property list<Category> $Categories
+ * @property list<string>|null $Display
+ * @property bool|null $OpenNow
+ * @property list<OpeningHoursComponents>|null $Components
+ * @property list<Category>|null $Categories
  */
 class OpeningHours extends Shape
 {
     /**
      * @param array{
-     *     Display?: list<string>,
-     *     OpenNow?: bool,
-     *     Components?: list<OpeningHoursComponents>,
-     *     Categories?: list<Category>
+     *     Display?: list<string>|null,
+     *     OpenNow?: bool|null,
+     *     Components?: list<OpeningHoursComponents>|null,
+     *     Categories?: list<Category>|null
      * } $args
      */
     public function __construct(array $args = [])

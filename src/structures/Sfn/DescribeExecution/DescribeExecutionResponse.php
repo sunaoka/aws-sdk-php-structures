@@ -7,24 +7,24 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $executionArn
  * @property string $stateMachineArn
- * @property string $name
+ * @property string|null $name
  * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'ABORTED'|'PENDING_REDRIVE' $status
  * @property \Aws\Api\DateTimeResult $startDate
- * @property \Aws\Api\DateTimeResult $stopDate
- * @property string $input
- * @property Shapes\CloudWatchEventsExecutionDataDetails $inputDetails
- * @property string $output
- * @property Shapes\CloudWatchEventsExecutionDataDetails $outputDetails
- * @property string $traceHeader
- * @property string $mapRunArn
- * @property string $error
- * @property string $cause
- * @property string $stateMachineVersionArn
- * @property string $stateMachineAliasArn
- * @property int $redriveCount
- * @property \Aws\Api\DateTimeResult $redriveDate
- * @property 'REDRIVABLE'|'NOT_REDRIVABLE'|'REDRIVABLE_BY_MAP_RUN' $redriveStatus
- * @property string $redriveStatusReason
+ * @property \Aws\Api\DateTimeResult|null $stopDate
+ * @property string|null $input
+ * @property Shapes\CloudWatchEventsExecutionDataDetails|null $inputDetails
+ * @property string|null $output
+ * @property Shapes\CloudWatchEventsExecutionDataDetails|null $outputDetails
+ * @property string|null $traceHeader
+ * @property string|null $mapRunArn
+ * @property string|null $error
+ * @property string|null $cause
+ * @property string|null $stateMachineVersionArn
+ * @property string|null $stateMachineAliasArn
+ * @property int|null $redriveCount
+ * @property \Aws\Api\DateTimeResult|null $redriveDate
+ * @property 'REDRIVABLE'|'NOT_REDRIVABLE'|'REDRIVABLE_BY_MAP_RUN'|null $redriveStatus
+ * @property string|null $redriveStatusReason
  */
 class DescribeExecutionResponse extends Response
 {

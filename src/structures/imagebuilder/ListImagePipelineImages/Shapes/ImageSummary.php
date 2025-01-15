@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImagePipelineImages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
- * @property 'AMI'|'DOCKER' $type
- * @property string $version
- * @property 'Windows'|'Linux'|'macOS' $platform
- * @property string $osVersion
- * @property ImageState $state
- * @property string $owner
- * @property string $dateCreated
- * @property OutputResources $outputResources
- * @property array<string, string> $tags
- * @property 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO' $buildType
- * @property 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM' $imageSource
- * @property \Aws\Api\DateTimeResult $deprecationTime
- * @property string $lifecycleExecutionId
+ * @property string|null $arn
+ * @property string|null $name
+ * @property 'AMI'|'DOCKER'|null $type
+ * @property string|null $version
+ * @property 'Windows'|'Linux'|'macOS'|null $platform
+ * @property string|null $osVersion
+ * @property ImageState|null $state
+ * @property string|null $owner
+ * @property string|null $dateCreated
+ * @property OutputResources|null $outputResources
+ * @property array<string, string>|null $tags
+ * @property 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO'|null $buildType
+ * @property 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null $imageSource
+ * @property \Aws\Api\DateTimeResult|null $deprecationTime
+ * @property string|null $lifecycleExecutionId
  */
 class ImageSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string,
-     *     type?: 'AMI'|'DOCKER',
-     *     version?: string,
-     *     platform?: 'Windows'|'Linux'|'macOS',
-     *     osVersion?: string,
-     *     state?: ImageState,
-     *     owner?: string,
-     *     dateCreated?: string,
-     *     outputResources?: OutputResources,
-     *     tags?: array<string, string>,
-     *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO',
-     *     imageSource?: 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM',
-     *     deprecationTime?: \Aws\Api\DateTimeResult,
-     *     lifecycleExecutionId?: string
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     type?: 'AMI'|'DOCKER'|null,
+     *     version?: string|null,
+     *     platform?: 'Windows'|'Linux'|'macOS'|null,
+     *     osVersion?: string|null,
+     *     state?: ImageState|null,
+     *     owner?: string|null,
+     *     dateCreated?: string|null,
+     *     outputResources?: OutputResources|null,
+     *     tags?: array<string, string>|null,
+     *     buildType?: 'USER_INITIATED'|'SCHEDULED'|'IMPORT'|'IMPORT_ISO'|null,
+     *     imageSource?: 'AMAZON_MANAGED'|'AWS_MARKETPLACE'|'IMPORTED'|'CUSTOM'|null,
+     *     deprecationTime?: \Aws\Api\DateTimeResult|null,
+     *     lifecycleExecutionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

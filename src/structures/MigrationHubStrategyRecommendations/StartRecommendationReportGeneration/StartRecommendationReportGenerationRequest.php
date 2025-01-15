@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\StartRecomm
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\Group> $groupIdFilter
- * @property 'Excel'|'Json' $outputFormat
+ * @property list<Shapes\Group>|null $groupIdFilter
+ * @property 'Excel'|'Json'|null $outputFormat
  */
 class StartRecommendationReportGenerationRequest extends Request
 {
     /**
      * @param array{
-     *     groupIdFilter?: list<Shapes\Group>,
-     *     outputFormat?: 'Excel'|'Json'
+     *     groupIdFilter?: list<Shapes\Group>|null,
+     *     outputFormat?: 'Excel'|'Json'|null
      * } $args
      */
     public function __construct(array $args = [])

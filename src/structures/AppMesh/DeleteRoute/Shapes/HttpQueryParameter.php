@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property QueryParameterMatch $match
+ * @property QueryParameterMatch|null $match
  * @property string $name
  */
 class HttpQueryParameter extends Shape
 {
     /**
      * @param array{
-     *     match?: QueryParameterMatch,
+     *     match?: QueryParameterMatch|null,
      *     name: string
      * } $args
      */

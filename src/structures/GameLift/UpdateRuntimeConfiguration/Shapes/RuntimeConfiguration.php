@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GameLift\UpdateRuntimeConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ServerProcess> $ServerProcesses
- * @property int<1, 2147483647> $MaxConcurrentGameSessionActivations
- * @property int<1, 600> $GameSessionActivationTimeoutSeconds
+ * @property list<ServerProcess>|null $ServerProcesses
+ * @property int<1, 2147483647>|null $MaxConcurrentGameSessionActivations
+ * @property int<1, 600>|null $GameSessionActivationTimeoutSeconds
  */
 class RuntimeConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ServerProcesses?: list<ServerProcess>,
-     *     MaxConcurrentGameSessionActivations?: int<1, 2147483647>,
-     *     GameSessionActivationTimeoutSeconds?: int<1, 600>
+     *     ServerProcesses?: list<ServerProcess>|null,
+     *     MaxConcurrentGameSessionActivations?: int<1, 2147483647>|null,
+     *     GameSessionActivationTimeoutSeconds?: int<1, 600>|null
      * } $args
      */
     public function __construct(array $args = [])

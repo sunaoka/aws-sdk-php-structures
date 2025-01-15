@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $principal
- * @property string $marker
- * @property int<1, 250> $pageSize
- * @property bool $ascendingOrder
+ * @property string|null $marker
+ * @property int<1, 250>|null $pageSize
+ * @property bool|null $ascendingOrder
  */
 class ListPrincipalPoliciesRequest extends Request
 {
     /**
      * @param array{
      *     principal: string,
-     *     marker?: string,
-     *     pageSize?: int<1, 250>,
-     *     ascendingOrder?: bool
+     *     marker?: string|null,
+     *     pageSize?: int<1, 250>|null,
+     *     ascendingOrder?: bool|null
      * } $args
      */
     public function __construct(array $args)

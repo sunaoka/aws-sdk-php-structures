@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property list<ColumnGroupColumnSchema> $ColumnGroupColumnSchemaList
+ * @property string|null $Name
+ * @property list<ColumnGroupColumnSchema>|null $ColumnGroupColumnSchemaList
  */
 class ColumnGroupSchema extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     ColumnGroupColumnSchemaList?: list<ColumnGroupColumnSchema>
+     *     Name?: string|null,
+     *     ColumnGroupColumnSchemaList?: list<ColumnGroupColumnSchema>|null
      * } $args
      */
     public function __construct(array $args = [])

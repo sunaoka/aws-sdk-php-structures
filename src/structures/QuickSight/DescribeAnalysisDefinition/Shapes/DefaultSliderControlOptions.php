@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SliderControlDisplayOptions $DisplayOptions
- * @property 'SINGLE_POINT'|'RANGE' $Type
+ * @property SliderControlDisplayOptions|null $DisplayOptions
+ * @property 'SINGLE_POINT'|'RANGE'|null $Type
  * @property double $MaximumValue
  * @property double $MinimumValue
  * @property double $StepSize
@@ -15,8 +15,8 @@ class DefaultSliderControlOptions extends Shape
 {
     /**
      * @param array{
-     *     DisplayOptions?: SliderControlDisplayOptions,
-     *     Type?: 'SINGLE_POINT'|'RANGE',
+     *     DisplayOptions?: SliderControlDisplayOptions|null,
+     *     Type?: 'SINGLE_POINT'|'RANGE'|null,
      *     MaximumValue: double,
      *     MinimumValue: double,
      *     StepSize: double

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property GPSCoordinates $Coordinates
- * @property double $RangeInKilometers
+ * @property double|null $RangeInKilometers
  */
 class GPSPointDimension extends Shape
 {
     /**
      * @param array{
      *     Coordinates: GPSCoordinates,
-     *     RangeInKilometers?: double
+     *     RangeInKilometers?: double|null
      * } $args
      */
     public function __construct(array $args)

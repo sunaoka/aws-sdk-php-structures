@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\ListRumMetricsDestinations\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CloudWatch'|'Evidently' $Destination
- * @property string $DestinationArn
- * @property string $IamRoleArn
+ * @property 'CloudWatch'|'Evidently'|null $Destination
+ * @property string|null $DestinationArn
+ * @property string|null $IamRoleArn
  */
 class MetricDestinationSummary extends Shape
 {
     /**
      * @param array{
-     *     Destination?: 'CloudWatch'|'Evidently',
-     *     DestinationArn?: string,
-     *     IamRoleArn?: string
+     *     Destination?: 'CloudWatch'|'Evidently'|null,
+     *     DestinationArn?: string|null,
+     *     IamRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

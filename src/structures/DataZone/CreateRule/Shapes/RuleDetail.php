@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MetadataFormEnforcementDetail $metadataFormEnforcementDetail
+ * @property MetadataFormEnforcementDetail|null $metadataFormEnforcementDetail
  */
 class RuleDetail extends Shape
 {
     /**
-     * @param array{metadataFormEnforcementDetail?: MetadataFormEnforcementDetail} $args
+     * @param array{metadataFormEnforcementDetail?: MetadataFormEnforcementDetail|null} $args
      */
     public function __construct(array $args = [])
     {

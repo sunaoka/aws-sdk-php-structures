@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'DELETED'|'FAILED' $status
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property bool $deletionProtectionEnabled
- * @property string $witnessRegion
- * @property list<string> $linkedClusterArns
+ * @property string|null $witnessRegion
+ * @property list<string>|null $linkedClusterArns
  */
 class GetClusterResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\ExportForms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $excluded
- * @property string $children
- * @property FieldPosition $position
+ * @property bool|null $excluded
+ * @property string|null $children
+ * @property FieldPosition|null $position
  */
 class FormButton extends Shape
 {
     /**
      * @param array{
-     *     excluded?: bool,
-     *     children?: string,
-     *     position?: FieldPosition
+     *     excluded?: bool|null,
+     *     children?: string|null,
+     *     position?: FieldPosition|null
      * } $args
      */
     public function __construct(array $args = [])

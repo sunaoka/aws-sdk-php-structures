@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetExternalModels;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $modelEndpoint
- * @property string $nextToken
- * @property int<5, 10> $maxResults
+ * @property string|null $modelEndpoint
+ * @property string|null $nextToken
+ * @property int<5, 10>|null $maxResults
  */
 class GetExternalModelsRequest extends Request
 {
     /**
      * @param array{
-     *     modelEndpoint?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<5, 10>
+     *     modelEndpoint?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<5, 10>|null
      * } $args
      */
     public function __construct(array $args = [])

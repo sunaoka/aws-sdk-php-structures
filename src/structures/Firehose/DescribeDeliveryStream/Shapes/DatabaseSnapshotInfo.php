@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $RequestTimestamp
  * @property 'USER'|'FIREHOSE' $RequestedBy
  * @property 'IN_PROGRESS'|'COMPLETE'|'SUSPENDED' $Status
- * @property FailureDescription $FailureDescription
+ * @property FailureDescription|null $FailureDescription
  */
 class DatabaseSnapshotInfo extends Shape
 {
@@ -21,7 +21,7 @@ class DatabaseSnapshotInfo extends Shape
      *     RequestTimestamp: \Aws\Api\DateTimeResult,
      *     RequestedBy: 'USER'|'FIREHOSE',
      *     Status: 'IN_PROGRESS'|'COMPLETE'|'SUSPENDED',
-     *     FailureDescription?: FailureDescription
+     *     FailureDescription?: FailureDescription|null
      * } $args
      */
     public function __construct(array $args)

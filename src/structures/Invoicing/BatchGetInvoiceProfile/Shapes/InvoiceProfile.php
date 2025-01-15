@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Invoicing\BatchGetInvoiceProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $ReceiverName
- * @property ReceiverAddress $ReceiverAddress
- * @property string $ReceiverEmail
- * @property string $Issuer
- * @property string $TaxRegistrationNumber
+ * @property string|null $AccountId
+ * @property string|null $ReceiverName
+ * @property ReceiverAddress|null $ReceiverAddress
+ * @property string|null $ReceiverEmail
+ * @property string|null $Issuer
+ * @property string|null $TaxRegistrationNumber
  */
 class InvoiceProfile extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     ReceiverName?: string,
-     *     ReceiverAddress?: ReceiverAddress,
-     *     ReceiverEmail?: string,
-     *     Issuer?: string,
-     *     TaxRegistrationNumber?: string
+     *     AccountId?: string|null,
+     *     ReceiverName?: string|null,
+     *     ReceiverAddress?: ReceiverAddress|null,
+     *     ReceiverEmail?: string|null,
+     *     Issuer?: string|null,
+     *     TaxRegistrationNumber?: string|null
      * } $args
      */
     public function __construct(array $args = [])

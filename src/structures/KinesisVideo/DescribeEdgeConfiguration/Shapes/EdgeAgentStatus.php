@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\DescribeEdgeConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LastRecorderStatus $LastRecorderStatus
- * @property LastUploaderStatus $LastUploaderStatus
+ * @property LastRecorderStatus|null $LastRecorderStatus
+ * @property LastUploaderStatus|null $LastUploaderStatus
  */
 class EdgeAgentStatus extends Shape
 {
     /**
      * @param array{
-     *     LastRecorderStatus?: LastRecorderStatus,
-     *     LastUploaderStatus?: LastUploaderStatus
+     *     LastRecorderStatus?: LastRecorderStatus|null,
+     *     LastUploaderStatus?: LastUploaderStatus|null
      * } $args
      */
     public function __construct(array $args = [])

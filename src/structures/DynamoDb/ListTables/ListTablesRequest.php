@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DynamoDb\ListTables;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ExclusiveStartTableName
- * @property int<1, 100> $Limit
+ * @property string|null $ExclusiveStartTableName
+ * @property int<1, 100>|null $Limit
  */
 class ListTablesRequest extends Request
 {
     /**
      * @param array{
-     *     ExclusiveStartTableName?: string,
-     *     Limit?: int<1, 100>
+     *     ExclusiveStartTableName?: string|null,
+     *     Limit?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

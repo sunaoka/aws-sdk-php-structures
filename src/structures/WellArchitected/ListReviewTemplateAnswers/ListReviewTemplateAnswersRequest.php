@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TemplateArn
  * @property string $LensAlias
- * @property string $PillarId
- * @property string $NextToken
- * @property int<1, 50> $MaxResults
+ * @property string|null $PillarId
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $MaxResults
  */
 class ListReviewTemplateAnswersRequest extends Request
 {
@@ -17,9 +17,9 @@ class ListReviewTemplateAnswersRequest extends Request
      * @param array{
      *     TemplateArn: string,
      *     LensAlias: string,
-     *     PillarId?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 50>
+     *     PillarId?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args)

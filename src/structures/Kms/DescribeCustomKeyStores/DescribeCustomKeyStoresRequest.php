@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Kms\DescribeCustomKeyStores;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CustomKeyStoreId
- * @property string $CustomKeyStoreName
- * @property int<1, 1000> $Limit
- * @property string $Marker
+ * @property string|null $CustomKeyStoreId
+ * @property string|null $CustomKeyStoreName
+ * @property int<1, 1000>|null $Limit
+ * @property string|null $Marker
  */
 class DescribeCustomKeyStoresRequest extends Request
 {
     /**
      * @param array{
-     *     CustomKeyStoreId?: string,
-     *     CustomKeyStoreName?: string,
-     *     Limit?: int<1, 1000>,
-     *     Marker?: string
+     *     CustomKeyStoreId?: string|null,
+     *     CustomKeyStoreName?: string|null,
+     *     Limit?: int<1, 1000>|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

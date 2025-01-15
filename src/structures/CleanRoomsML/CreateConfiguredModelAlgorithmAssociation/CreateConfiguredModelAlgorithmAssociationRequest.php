@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $membershipIdentifier
  * @property string $configuredModelAlgorithmArn
  * @property string $name
- * @property string $description
- * @property Shapes\PrivacyConfiguration $privacyConfiguration
- * @property array<string, string> $tags
+ * @property string|null $description
+ * @property Shapes\PrivacyConfiguration|null $privacyConfiguration
+ * @property array<string, string>|null $tags
  */
 class CreateConfiguredModelAlgorithmAssociationRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateConfiguredModelAlgorithmAssociationRequest extends Request
      *     membershipIdentifier: string,
      *     configuredModelAlgorithmArn: string,
      *     name: string,
-     *     description?: string,
-     *     privacyConfiguration?: Shapes\PrivacyConfiguration,
-     *     tags?: array<string, string>
+     *     description?: string|null,
+     *     privacyConfiguration?: Shapes\PrivacyConfiguration|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

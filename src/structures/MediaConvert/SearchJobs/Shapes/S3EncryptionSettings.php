@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\SearchJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SERVER_SIDE_ENCRYPTION_S3'|'SERVER_SIDE_ENCRYPTION_KMS' $EncryptionType
- * @property string $KmsEncryptionContext
- * @property string $KmsKeyArn
+ * @property 'SERVER_SIDE_ENCRYPTION_S3'|'SERVER_SIDE_ENCRYPTION_KMS'|null $EncryptionType
+ * @property string|null $KmsEncryptionContext
+ * @property string|null $KmsKeyArn
  */
 class S3EncryptionSettings extends Shape
 {
     /**
      * @param array{
-     *     EncryptionType?: 'SERVER_SIDE_ENCRYPTION_S3'|'SERVER_SIDE_ENCRYPTION_KMS',
-     *     KmsEncryptionContext?: string,
-     *     KmsKeyArn?: string
+     *     EncryptionType?: 'SERVER_SIDE_ENCRYPTION_S3'|'SERVER_SIDE_ENCRYPTION_KMS'|null,
+     *     KmsEncryptionContext?: string|null,
+     *     KmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

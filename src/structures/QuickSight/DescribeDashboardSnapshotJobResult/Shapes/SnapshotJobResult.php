@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardSnapshotJobResult\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AnonymousUserSnapshotJobResult> $AnonymousUsers
+ * @property list<AnonymousUserSnapshotJobResult>|null $AnonymousUsers
  */
 class SnapshotJobResult extends Shape
 {
     /**
-     * @param array{AnonymousUsers?: list<AnonymousUserSnapshotJobResult>} $args
+     * @param array{AnonymousUsers?: list<AnonymousUserSnapshotJobResult>|null} $args
      */
     public function __construct(array $args = [])
     {

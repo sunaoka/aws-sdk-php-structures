@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\DescribeConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PLAINTEXT'|'TLS' $encryptionType
+ * @property 'PLAINTEXT'|'TLS'|null $encryptionType
  */
 class KafkaClusterEncryptionInTransitDescription extends Shape
 {
     /**
-     * @param array{encryptionType?: 'PLAINTEXT'|'TLS'} $args
+     * @param array{encryptionType?: 'PLAINTEXT'|'TLS'|null} $args
      */
     public function __construct(array $args = [])
     {

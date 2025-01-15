@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceEventWindows\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceEventWindowId
- * @property list<InstanceEventWindowTimeRange> $TimeRanges
- * @property string $Name
- * @property string $CronExpression
- * @property InstanceEventWindowAssociationTarget $AssociationTarget
- * @property 'creating'|'deleting'|'active'|'deleted' $State
- * @property list<Tag> $Tags
+ * @property string|null $InstanceEventWindowId
+ * @property list<InstanceEventWindowTimeRange>|null $TimeRanges
+ * @property string|null $Name
+ * @property string|null $CronExpression
+ * @property InstanceEventWindowAssociationTarget|null $AssociationTarget
+ * @property 'creating'|'deleting'|'active'|'deleted'|null $State
+ * @property list<Tag>|null $Tags
  */
 class InstanceEventWindow extends Shape
 {
     /**
      * @param array{
-     *     InstanceEventWindowId?: string,
-     *     TimeRanges?: list<InstanceEventWindowTimeRange>,
-     *     Name?: string,
-     *     CronExpression?: string,
-     *     AssociationTarget?: InstanceEventWindowAssociationTarget,
-     *     State?: 'creating'|'deleting'|'active'|'deleted',
-     *     Tags?: list<Tag>
+     *     InstanceEventWindowId?: string|null,
+     *     TimeRanges?: list<InstanceEventWindowTimeRange>|null,
+     *     Name?: string|null,
+     *     CronExpression?: string|null,
+     *     AssociationTarget?: InstanceEventWindowAssociationTarget|null,
+     *     State?: 'creating'|'deleting'|'active'|'deleted'|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

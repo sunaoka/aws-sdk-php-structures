@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FilterListConfiguration $FilterListConfiguration
- * @property CustomFilterListConfiguration $CustomFilterListConfiguration
- * @property CustomFilterConfiguration $CustomFilterConfiguration
+ * @property FilterListConfiguration|null $FilterListConfiguration
+ * @property CustomFilterListConfiguration|null $CustomFilterListConfiguration
+ * @property CustomFilterConfiguration|null $CustomFilterConfiguration
  */
 class CategoryFilterConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FilterListConfiguration?: FilterListConfiguration,
-     *     CustomFilterListConfiguration?: CustomFilterListConfiguration,
-     *     CustomFilterConfiguration?: CustomFilterConfiguration
+     *     FilterListConfiguration?: FilterListConfiguration|null,
+     *     CustomFilterListConfiguration?: CustomFilterListConfiguration|null,
+     *     CustomFilterConfiguration?: CustomFilterConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

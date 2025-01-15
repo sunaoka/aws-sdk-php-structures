@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeTrustStores;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $TrustStoreArns
- * @property list<string> $Names
- * @property string $Marker
- * @property int<1, 400> $PageSize
+ * @property list<string>|null $TrustStoreArns
+ * @property list<string>|null $Names
+ * @property string|null $Marker
+ * @property int<1, 400>|null $PageSize
  */
 class DescribeTrustStoresRequest extends Request
 {
     /**
      * @param array{
-     *     TrustStoreArns?: list<string>,
-     *     Names?: list<string>,
-     *     Marker?: string,
-     *     PageSize?: int<1, 400>
+     *     TrustStoreArns?: list<string>|null,
+     *     Names?: list<string>|null,
+     *     Marker?: string|null,
+     *     PageSize?: int<1, 400>|null
      * } $args
      */
     public function __construct(array $args = [])

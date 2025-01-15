@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $suiteDefinitionId
- * @property string $suiteDefinitionVersion
+ * @property string|null $suiteDefinitionVersion
  */
 class GetSuiteDefinitionRequest extends Request
 {
     /**
      * @param array{
      *     suiteDefinitionId: string,
-     *     suiteDefinitionVersion?: string
+     *     suiteDefinitionVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

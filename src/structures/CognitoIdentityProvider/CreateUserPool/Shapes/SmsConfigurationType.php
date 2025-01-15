@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SnsCallerArn
- * @property string $ExternalId
- * @property string $SnsRegion
+ * @property string|null $ExternalId
+ * @property string|null $SnsRegion
  */
 class SmsConfigurationType extends Shape
 {
     /**
      * @param array{
      *     SnsCallerArn: string,
-     *     ExternalId?: string,
-     *     SnsRegion?: string
+     *     ExternalId?: string|null,
+     *     SnsRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

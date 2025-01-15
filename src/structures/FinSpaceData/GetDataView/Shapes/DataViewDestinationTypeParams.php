@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $destinationType
- * @property 'PARQUET'|'DELIMITED_TEXT' $s3DestinationExportFileFormat
- * @property array<string, string> $s3DestinationExportFileFormatOptions
+ * @property 'PARQUET'|'DELIMITED_TEXT'|null $s3DestinationExportFileFormat
+ * @property array<string, string>|null $s3DestinationExportFileFormatOptions
  */
 class DataViewDestinationTypeParams extends Shape
 {
     /**
      * @param array{
      *     destinationType: string,
-     *     s3DestinationExportFileFormat?: 'PARQUET'|'DELIMITED_TEXT',
-     *     s3DestinationExportFileFormatOptions?: array<string, string>
+     *     s3DestinationExportFileFormat?: 'PARQUET'|'DELIMITED_TEXT'|null,
+     *     s3DestinationExportFileFormatOptions?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

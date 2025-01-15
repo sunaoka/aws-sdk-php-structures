@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $botId
- * @property string $localeId
- * @property string $sessionId
+ * @property string|null $localeId
+ * @property string|null $sessionId
  */
 class DeleteUtterancesRequest extends Request
 {
     /**
      * @param array{
      *     botId: string,
-     *     localeId?: string,
-     *     sessionId?: string
+     *     localeId?: string|null,
+     *     sessionId?: string|null
      * } $args
      */
     public function __construct(array $args)

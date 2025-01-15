@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Personalize\CreateSolutionVersion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $name
+ * @property string|null $name
  * @property string $solutionArn
- * @property 'FULL'|'UPDATE'|'AUTOTRAIN' $trainingMode
- * @property list<Shapes\Tag> $tags
+ * @property 'FULL'|'UPDATE'|'AUTOTRAIN'|null $trainingMode
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateSolutionVersionRequest extends Request
 {
     /**
      * @param array{
-     *     name?: string,
+     *     name?: string|null,
      *     solutionArn: string,
-     *     trainingMode?: 'FULL'|'UPDATE'|'AUTOTRAIN',
-     *     tags?: list<Shapes\Tag>
+     *     trainingMode?: 'FULL'|'UPDATE'|'AUTOTRAIN'|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

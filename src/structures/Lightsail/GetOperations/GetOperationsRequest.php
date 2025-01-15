@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetOperations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $pageToken
+ * @property string|null $pageToken
  */
 class GetOperationsRequest extends Request
 {
     /**
-     * @param array{pageToken?: string} $args
+     * @param array{pageToken?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\DescribeDatastore\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DatastorePartition> $partitions
+ * @property list<DatastorePartition>|null $partitions
  */
 class DatastorePartitions extends Shape
 {
     /**
-     * @param array{partitions?: list<DatastorePartition>} $args
+     * @param array{partitions?: list<DatastorePartition>|null} $args
      */
     public function __construct(array $args = [])
     {

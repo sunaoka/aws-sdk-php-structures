@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\PinpointEmail\CreateConfigurationSetEventDestin
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property list<'SEND'|'REJECT'|'BOUNCE'|'COMPLAINT'|'DELIVERY'|'OPEN'|'CLICK'|'RENDERING_FAILURE'> $MatchingEventTypes
- * @property KinesisFirehoseDestination $KinesisFirehoseDestination
- * @property CloudWatchDestination $CloudWatchDestination
- * @property SnsDestination $SnsDestination
- * @property PinpointDestination $PinpointDestination
+ * @property bool|null $Enabled
+ * @property list<'SEND'|'REJECT'|'BOUNCE'|'COMPLAINT'|'DELIVERY'|'OPEN'|'CLICK'|'RENDERING_FAILURE'>|null $MatchingEventTypes
+ * @property KinesisFirehoseDestination|null $KinesisFirehoseDestination
+ * @property CloudWatchDestination|null $CloudWatchDestination
+ * @property SnsDestination|null $SnsDestination
+ * @property PinpointDestination|null $PinpointDestination
  */
 class EventDestinationDefinition extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     MatchingEventTypes?: list<'SEND'|'REJECT'|'BOUNCE'|'COMPLAINT'|'DELIVERY'|'OPEN'|'CLICK'|'RENDERING_FAILURE'>,
-     *     KinesisFirehoseDestination?: KinesisFirehoseDestination,
-     *     CloudWatchDestination?: CloudWatchDestination,
-     *     SnsDestination?: SnsDestination,
-     *     PinpointDestination?: PinpointDestination
+     *     Enabled?: bool|null,
+     *     MatchingEventTypes?: list<'SEND'|'REJECT'|'BOUNCE'|'COMPLAINT'|'DELIVERY'|'OPEN'|'CLICK'|'RENDERING_FAILURE'>|null,
+     *     KinesisFirehoseDestination?: KinesisFirehoseDestination|null,
+     *     CloudWatchDestination?: CloudWatchDestination|null,
+     *     SnsDestination?: SnsDestination|null,
+     *     PinpointDestination?: PinpointDestination|null
      * } $args
      */
     public function __construct(array $args = [])

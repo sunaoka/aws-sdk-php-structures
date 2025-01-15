@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LicenseManagerLinuxSubscriptions\ListLinuxSubsc
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $InstanceCount
- * @property string $Name
- * @property string $Type
+ * @property int|null $InstanceCount
+ * @property string|null $Name
+ * @property string|null $Type
  */
 class Subscription extends Shape
 {
     /**
      * @param array{
-     *     InstanceCount?: int,
-     *     Name?: string,
-     *     Type?: string
+     *     InstanceCount?: int|null,
+     *     Name?: string|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

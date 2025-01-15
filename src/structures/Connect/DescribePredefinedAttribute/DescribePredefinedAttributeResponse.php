@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Connect\DescribePredefinedAttribute;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\PredefinedAttribute $PredefinedAttribute
+ * @property Shapes\PredefinedAttribute|null $PredefinedAttribute
  */
 class DescribePredefinedAttributeResponse extends Response
 {

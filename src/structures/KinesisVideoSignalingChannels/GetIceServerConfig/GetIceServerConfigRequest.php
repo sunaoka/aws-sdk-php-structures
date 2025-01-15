@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelARN
- * @property string $ClientId
- * @property 'TURN' $Service
- * @property string $Username
+ * @property string|null $ClientId
+ * @property 'TURN'|null $Service
+ * @property string|null $Username
  */
 class GetIceServerConfigRequest extends Request
 {
     /**
      * @param array{
      *     ChannelARN: string,
-     *     ClientId?: string,
-     *     Service?: 'TURN',
-     *     Username?: string
+     *     ClientId?: string|null,
+     *     Service?: 'TURN'|null,
+     *     Username?: string|null
      * } $args
      */
     public function __construct(array $args)

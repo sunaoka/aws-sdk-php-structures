@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pinpoint\CreateJourney\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EventFilter $EventFilter
- * @property string $SegmentId
+ * @property EventFilter|null $EventFilter
+ * @property string|null $SegmentId
  */
 class EventStartCondition extends Shape
 {
     /**
      * @param array{
-     *     EventFilter?: EventFilter,
-     *     SegmentId?: string
+     *     EventFilter?: EventFilter|null,
+     *     SegmentId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

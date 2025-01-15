@@ -11,14 +11,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'PRIVATE_IP'|'PUBLIC_IP' $dataPlaneRouting
  * @property 'GP2'|'ST1'|'GP3' $defaultLargeStagingDiskType
  * @property 'DEFAULT'|'CUSTOM' $ebsEncryption
- * @property string $ebsEncryptionKeyArn
+ * @property string|null $ebsEncryptionKeyArn
  * @property string $replicationServerInstanceType
  * @property list<string> $replicationServersSecurityGroupsIDs
  * @property string $stagingAreaSubnetId
  * @property array<string, string> $stagingAreaTags
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property bool $useDedicatedReplicationServer
- * @property bool $useFipsEndpoint
+ * @property bool|null $useFipsEndpoint
  */
 class CreateReplicationConfigurationTemplateRequest extends Request
 {
@@ -30,14 +30,14 @@ class CreateReplicationConfigurationTemplateRequest extends Request
      *     dataPlaneRouting: 'PRIVATE_IP'|'PUBLIC_IP',
      *     defaultLargeStagingDiskType: 'GP2'|'ST1'|'GP3',
      *     ebsEncryption: 'DEFAULT'|'CUSTOM',
-     *     ebsEncryptionKeyArn?: string,
+     *     ebsEncryptionKeyArn?: string|null,
      *     replicationServerInstanceType: string,
      *     replicationServersSecurityGroupsIDs: list<string>,
      *     stagingAreaSubnetId: string,
      *     stagingAreaTags: array<string, string>,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     useDedicatedReplicationServer: bool,
-     *     useFipsEndpoint?: bool
+     *     useFipsEndpoint?: bool|null
      * } $args
      */
     public function __construct(array $args)

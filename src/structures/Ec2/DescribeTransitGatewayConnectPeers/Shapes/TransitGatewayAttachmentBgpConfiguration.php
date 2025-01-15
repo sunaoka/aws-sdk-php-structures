@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeTransitGatewayConnectPeers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TransitGatewayAsn
- * @property int $PeerAsn
- * @property string $TransitGatewayAddress
- * @property string $PeerAddress
- * @property 'up'|'down' $BgpStatus
+ * @property int|null $TransitGatewayAsn
+ * @property int|null $PeerAsn
+ * @property string|null $TransitGatewayAddress
+ * @property string|null $PeerAddress
+ * @property 'up'|'down'|null $BgpStatus
  */
 class TransitGatewayAttachmentBgpConfiguration extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayAsn?: int,
-     *     PeerAsn?: int,
-     *     TransitGatewayAddress?: string,
-     *     PeerAddress?: string,
-     *     BgpStatus?: 'up'|'down'
+     *     TransitGatewayAsn?: int|null,
+     *     PeerAsn?: int|null,
+     *     TransitGatewayAddress?: string|null,
+     *     PeerAddress?: string|null,
+     *     BgpStatus?: 'up'|'down'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property Shapes\ContactFlowSearchFilter $SearchFilter
- * @property Shapes\ContactFlowSearchCriteria $SearchCriteria
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property Shapes\ContactFlowSearchFilter|null $SearchFilter
+ * @property Shapes\ContactFlowSearchCriteria|null $SearchCriteria
  */
 class SearchContactFlowsRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     SearchFilter?: Shapes\ContactFlowSearchFilter,
-     *     SearchCriteria?: Shapes\ContactFlowSearchCriteria
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     SearchFilter?: Shapes\ContactFlowSearchFilter|null,
+     *     SearchCriteria?: Shapes\ContactFlowSearchCriteria|null
      * } $args
      */
     public function __construct(array $args)

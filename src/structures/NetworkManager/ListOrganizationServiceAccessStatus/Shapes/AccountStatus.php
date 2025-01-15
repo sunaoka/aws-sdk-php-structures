@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkManager\ListOrganizationServiceAccessSta
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $SLRDeploymentStatus
+ * @property string|null $AccountId
+ * @property string|null $SLRDeploymentStatus
  */
 class AccountStatus extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     SLRDeploymentStatus?: string
+     *     AccountId?: string|null,
+     *     SLRDeploymentStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

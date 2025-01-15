@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Greengrass\ListDeviceDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $CreationTimestamp
- * @property string $Id
- * @property string $LastUpdatedTimestamp
- * @property string $LatestVersion
- * @property string $LatestVersionArn
- * @property string $Name
- * @property array<string, string> $Tags
+ * @property string|null $Arn
+ * @property string|null $CreationTimestamp
+ * @property string|null $Id
+ * @property string|null $LastUpdatedTimestamp
+ * @property string|null $LatestVersion
+ * @property string|null $LatestVersionArn
+ * @property string|null $Name
+ * @property array<string, string>|null $Tags
  */
 class DefinitionInformation extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     CreationTimestamp?: string,
-     *     Id?: string,
-     *     LastUpdatedTimestamp?: string,
-     *     LatestVersion?: string,
-     *     LatestVersionArn?: string,
-     *     Name?: string,
-     *     Tags?: array<string, string>
+     *     Arn?: string|null,
+     *     CreationTimestamp?: string|null,
+     *     Id?: string|null,
+     *     LastUpdatedTimestamp?: string|null,
+     *     LatestVersion?: string|null,
+     *     LatestVersionArn?: string|null,
+     *     Name?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

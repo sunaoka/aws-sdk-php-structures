@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<FieldSortOptions> $CategorySort
- * @property ItemsLimitConfiguration $CategoryItemsLimit
- * @property list<FieldSortOptions> $SmallMultiplesSort
- * @property ItemsLimitConfiguration $SmallMultiplesLimitConfiguration
+ * @property list<FieldSortOptions>|null $CategorySort
+ * @property ItemsLimitConfiguration|null $CategoryItemsLimit
+ * @property list<FieldSortOptions>|null $SmallMultiplesSort
+ * @property ItemsLimitConfiguration|null $SmallMultiplesLimitConfiguration
  */
 class PieChartSortConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CategorySort?: list<FieldSortOptions>,
-     *     CategoryItemsLimit?: ItemsLimitConfiguration,
-     *     SmallMultiplesSort?: list<FieldSortOptions>,
-     *     SmallMultiplesLimitConfiguration?: ItemsLimitConfiguration
+     *     CategorySort?: list<FieldSortOptions>|null,
+     *     CategoryItemsLimit?: ItemsLimitConfiguration|null,
+     *     SmallMultiplesSort?: list<FieldSortOptions>|null,
+     *     SmallMultiplesLimitConfiguration?: ItemsLimitConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

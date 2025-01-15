@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property list<Shapes\RoadSnapNotice> $Notices
  * @property string $PricingBucket
- * @property Shapes\RoadSnapSnappedGeometry $SnappedGeometry
+ * @property Shapes\RoadSnapSnappedGeometry|null $SnappedGeometry
  * @property 'FlexiblePolyline'|'Simple' $SnappedGeometryFormat
  * @property list<Shapes\RoadSnapSnappedTracePoint> $SnappedTracePoints
  */

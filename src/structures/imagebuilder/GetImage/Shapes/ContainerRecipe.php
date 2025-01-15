@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property 'DOCKER' $containerType
- * @property string $name
- * @property string $description
- * @property 'Windows'|'Linux'|'macOS' $platform
- * @property string $owner
- * @property string $version
- * @property list<ComponentConfiguration> $components
- * @property InstanceConfiguration $instanceConfiguration
- * @property string $dockerfileTemplateData
- * @property string $kmsKeyId
- * @property bool $encrypted
- * @property string $parentImage
- * @property string $dateCreated
- * @property array<string, string> $tags
- * @property string $workingDirectory
- * @property TargetContainerRepository $targetRepository
+ * @property string|null $arn
+ * @property 'DOCKER'|null $containerType
+ * @property string|null $name
+ * @property string|null $description
+ * @property 'Windows'|'Linux'|'macOS'|null $platform
+ * @property string|null $owner
+ * @property string|null $version
+ * @property list<ComponentConfiguration>|null $components
+ * @property InstanceConfiguration|null $instanceConfiguration
+ * @property string|null $dockerfileTemplateData
+ * @property string|null $kmsKeyId
+ * @property bool|null $encrypted
+ * @property string|null $parentImage
+ * @property string|null $dateCreated
+ * @property array<string, string>|null $tags
+ * @property string|null $workingDirectory
+ * @property TargetContainerRepository|null $targetRepository
  */
 class ContainerRecipe extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     containerType?: 'DOCKER',
-     *     name?: string,
-     *     description?: string,
-     *     platform?: 'Windows'|'Linux'|'macOS',
-     *     owner?: string,
-     *     version?: string,
-     *     components?: list<ComponentConfiguration>,
-     *     instanceConfiguration?: InstanceConfiguration,
-     *     dockerfileTemplateData?: string,
-     *     kmsKeyId?: string,
-     *     encrypted?: bool,
-     *     parentImage?: string,
-     *     dateCreated?: string,
-     *     tags?: array<string, string>,
-     *     workingDirectory?: string,
-     *     targetRepository?: TargetContainerRepository
+     *     arn?: string|null,
+     *     containerType?: 'DOCKER'|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     platform?: 'Windows'|'Linux'|'macOS'|null,
+     *     owner?: string|null,
+     *     version?: string|null,
+     *     components?: list<ComponentConfiguration>|null,
+     *     instanceConfiguration?: InstanceConfiguration|null,
+     *     dockerfileTemplateData?: string|null,
+     *     kmsKeyId?: string|null,
+     *     encrypted?: bool|null,
+     *     parentImage?: string|null,
+     *     dateCreated?: string|null,
+     *     tags?: array<string, string>|null,
+     *     workingDirectory?: string|null,
+     *     targetRepository?: TargetContainerRepository|null
      * } $args
      */
     public function __construct(array $args = [])

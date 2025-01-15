@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\QuickSight\DeleteAnalysis;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $Status
- * @property string $Arn
- * @property string $AnalysisId
- * @property \Aws\Api\DateTimeResult $DeletionTime
- * @property string $RequestId
+ * @property int|null $Status
+ * @property string|null $Arn
+ * @property string|null $AnalysisId
+ * @property \Aws\Api\DateTimeResult|null $DeletionTime
+ * @property string|null $RequestId
  */
 class DeleteAnalysisResponse extends Response
 {

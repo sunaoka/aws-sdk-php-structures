@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $GlobalNetworkId
  * @property string $TransitGatewayConnectPeerArn
  * @property string $DeviceId
- * @property string $LinkId
+ * @property string|null $LinkId
  */
 class AssociateTransitGatewayConnectPeerRequest extends Request
 {
@@ -17,7 +17,7 @@ class AssociateTransitGatewayConnectPeerRequest extends Request
      *     GlobalNetworkId: string,
      *     TransitGatewayConnectPeerArn: string,
      *     DeviceId: string,
-     *     LinkId?: string
+     *     LinkId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,10 +11,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $collaborationIdentifier
  * @property string $name
  * @property list<string> $configuredModelAlgorithmAssociations
- * @property string $protectedQueryIdentifier
+ * @property string|null $protectedQueryIdentifier
  * @property string $mlInputChannelArn
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'INACTIVE' $status
- * @property string $description
+ * @property string|null $description
  */
 class MLInputChannelSummary extends Shape
 {
@@ -26,10 +26,10 @@ class MLInputChannelSummary extends Shape
      *     collaborationIdentifier: string,
      *     name: string,
      *     configuredModelAlgorithmAssociations: list<string>,
-     *     protectedQueryIdentifier?: string,
+     *     protectedQueryIdentifier?: string|null,
      *     mlInputChannelArn: string,
      *     status: 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'INACTIVE',
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

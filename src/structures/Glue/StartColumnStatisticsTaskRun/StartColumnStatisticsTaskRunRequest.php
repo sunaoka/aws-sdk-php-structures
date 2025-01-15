@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DatabaseName
  * @property string $TableName
- * @property list<string> $ColumnNameList
+ * @property list<string>|null $ColumnNameList
  * @property string $Role
- * @property double $SampleSize
- * @property string $CatalogID
- * @property string $SecurityConfiguration
+ * @property double|null $SampleSize
+ * @property string|null $CatalogID
+ * @property string|null $SecurityConfiguration
  */
 class StartColumnStatisticsTaskRunRequest extends Request
 {
@@ -19,11 +19,11 @@ class StartColumnStatisticsTaskRunRequest extends Request
      * @param array{
      *     DatabaseName: string,
      *     TableName: string,
-     *     ColumnNameList?: list<string>,
+     *     ColumnNameList?: list<string>|null,
      *     Role: string,
-     *     SampleSize?: double,
-     *     CatalogID?: string,
-     *     SecurityConfiguration?: string
+     *     SampleSize?: double|null,
+     *     CatalogID?: string|null,
+     *     SecurityConfiguration?: string|null
      * } $args
      */
     public function __construct(array $args)

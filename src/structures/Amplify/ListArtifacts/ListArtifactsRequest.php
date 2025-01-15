@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $appId
  * @property string $branchName
  * @property string $jobId
- * @property string $nextToken
- * @property int<0, 50> $maxResults
+ * @property string|null $nextToken
+ * @property int<0, 50>|null $maxResults
  */
 class ListArtifactsRequest extends Request
 {
@@ -18,8 +18,8 @@ class ListArtifactsRequest extends Request
      *     appId: string,
      *     branchName: string,
      *     jobId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<0, 50>
+     *     nextToken?: string|null,
+     *     maxResults?: int<0, 50>|null
      * } $args
      */
     public function __construct(array $args)

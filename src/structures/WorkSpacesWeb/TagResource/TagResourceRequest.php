@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\TagResource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $resourceArn
  * @property list<Shapes\Tag> $tags
  */
@@ -13,7 +13,7 @@ class TagResourceRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     resourceArn: string,
      *     tags: list<Shapes\Tag>
      * } $args

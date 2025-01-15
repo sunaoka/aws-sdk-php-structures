@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodePipeline\ListActionTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $thirdPartyConfigurationUrl
- * @property string $entityUrlTemplate
- * @property string $executionUrlTemplate
- * @property string $revisionUrlTemplate
+ * @property string|null $thirdPartyConfigurationUrl
+ * @property string|null $entityUrlTemplate
+ * @property string|null $executionUrlTemplate
+ * @property string|null $revisionUrlTemplate
  */
 class ActionTypeSettings extends Shape
 {
     /**
      * @param array{
-     *     thirdPartyConfigurationUrl?: string,
-     *     entityUrlTemplate?: string,
-     *     executionUrlTemplate?: string,
-     *     revisionUrlTemplate?: string
+     *     thirdPartyConfigurationUrl?: string|null,
+     *     entityUrlTemplate?: string|null,
+     *     executionUrlTemplate?: string|null,
+     *     revisionUrlTemplate?: string|null
      * } $args
      */
     public function __construct(array $args = [])

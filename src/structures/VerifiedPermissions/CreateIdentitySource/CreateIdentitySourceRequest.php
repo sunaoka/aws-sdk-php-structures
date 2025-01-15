@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\VerifiedPermissions\CreateIdentitySource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $policyStoreId
  * @property Shapes\Configuration $configuration
- * @property string $principalEntityType
+ * @property string|null $principalEntityType
  */
 class CreateIdentitySourceRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     policyStoreId: string,
      *     configuration: Shapes\Configuration,
-     *     principalEntityType?: string
+     *     principalEntityType?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<CardInput> $cards
- * @property string $initialPrompt
+ * @property string|null $initialPrompt
  */
 class AppDefinitionInput extends Shape
 {
     /**
      * @param array{
      *     cards: list<CardInput>,
-     *     initialPrompt?: string
+     *     initialPrompt?: string|null
      * } $args
      */
     public function __construct(array $args)

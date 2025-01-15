@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $deploymentConfigName
- * @property Shapes\MinimumHealthyHosts $minimumHealthyHosts
- * @property Shapes\TrafficRoutingConfig $trafficRoutingConfig
- * @property 'Server'|'Lambda'|'ECS' $computePlatform
- * @property Shapes\ZonalConfig $zonalConfig
+ * @property Shapes\MinimumHealthyHosts|null $minimumHealthyHosts
+ * @property Shapes\TrafficRoutingConfig|null $trafficRoutingConfig
+ * @property 'Server'|'Lambda'|'ECS'|null $computePlatform
+ * @property Shapes\ZonalConfig|null $zonalConfig
  */
 class CreateDeploymentConfigRequest extends Request
 {
     /**
      * @param array{
      *     deploymentConfigName: string,
-     *     minimumHealthyHosts?: Shapes\MinimumHealthyHosts,
-     *     trafficRoutingConfig?: Shapes\TrafficRoutingConfig,
-     *     computePlatform?: 'Server'|'Lambda'|'ECS',
-     *     zonalConfig?: Shapes\ZonalConfig
+     *     minimumHealthyHosts?: Shapes\MinimumHealthyHosts|null,
+     *     trafficRoutingConfig?: Shapes\TrafficRoutingConfig|null,
+     *     computePlatform?: 'Server'|'Lambda'|'ECS'|null,
+     *     zonalConfig?: Shapes\ZonalConfig|null
      * } $args
      */
     public function __construct(array $args)

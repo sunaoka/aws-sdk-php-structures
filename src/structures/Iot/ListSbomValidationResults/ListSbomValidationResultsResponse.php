@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Iot\ListSbomValidationResults;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\SbomValidationResultSummary> $validationResultSummaries
- * @property string $nextToken
+ * @property list<Shapes\SbomValidationResultSummary>|null $validationResultSummaries
+ * @property string|null $nextToken
  */
 class ListSbomValidationResultsResponse extends Response
 {

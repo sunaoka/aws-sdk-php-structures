@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property Shapes\ContactDetail $AdminContact
- * @property Shapes\ContactDetail $RegistrantContact
- * @property Shapes\ContactDetail $TechContact
- * @property Shapes\Consent $Consent
- * @property Shapes\ContactDetail $BillingContact
+ * @property Shapes\ContactDetail|null $AdminContact
+ * @property Shapes\ContactDetail|null $RegistrantContact
+ * @property Shapes\ContactDetail|null $TechContact
+ * @property Shapes\Consent|null $Consent
+ * @property Shapes\ContactDetail|null $BillingContact
  */
 class UpdateDomainContactRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     AdminContact?: Shapes\ContactDetail,
-     *     RegistrantContact?: Shapes\ContactDetail,
-     *     TechContact?: Shapes\ContactDetail,
-     *     Consent?: Shapes\Consent,
-     *     BillingContact?: Shapes\ContactDetail
+     *     AdminContact?: Shapes\ContactDetail|null,
+     *     RegistrantContact?: Shapes\ContactDetail|null,
+     *     TechContact?: Shapes\ContactDetail|null,
+     *     Consent?: Shapes\Consent|null,
+     *     BillingContact?: Shapes\ContactDetail|null
      * } $args
      */
     public function __construct(array $args)

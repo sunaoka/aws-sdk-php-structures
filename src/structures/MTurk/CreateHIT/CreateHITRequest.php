@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\MTurk\CreateHIT;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxAssignments
- * @property int $AutoApprovalDelayInSeconds
+ * @property int|null $MaxAssignments
+ * @property int|null $AutoApprovalDelayInSeconds
  * @property int $LifetimeInSeconds
  * @property int $AssignmentDurationInSeconds
  * @property string $Reward
  * @property string $Title
- * @property string $Keywords
+ * @property string|null $Keywords
  * @property string $Description
- * @property string $Question
- * @property string $RequesterAnnotation
- * @property list<Shapes\QualificationRequirement> $QualificationRequirements
- * @property string $UniqueRequestToken
- * @property Shapes\ReviewPolicy $AssignmentReviewPolicy
- * @property Shapes\ReviewPolicy $HITReviewPolicy
- * @property string $HITLayoutId
- * @property list<Shapes\HITLayoutParameter> $HITLayoutParameters
+ * @property string|null $Question
+ * @property string|null $RequesterAnnotation
+ * @property list<Shapes\QualificationRequirement>|null $QualificationRequirements
+ * @property string|null $UniqueRequestToken
+ * @property Shapes\ReviewPolicy|null $AssignmentReviewPolicy
+ * @property Shapes\ReviewPolicy|null $HITReviewPolicy
+ * @property string|null $HITLayoutId
+ * @property list<Shapes\HITLayoutParameter>|null $HITLayoutParameters
  */
 class CreateHITRequest extends Request
 {
     /**
      * @param array{
-     *     MaxAssignments?: int,
-     *     AutoApprovalDelayInSeconds?: int,
+     *     MaxAssignments?: int|null,
+     *     AutoApprovalDelayInSeconds?: int|null,
      *     LifetimeInSeconds: int,
      *     AssignmentDurationInSeconds: int,
      *     Reward: string,
      *     Title: string,
-     *     Keywords?: string,
+     *     Keywords?: string|null,
      *     Description: string,
-     *     Question?: string,
-     *     RequesterAnnotation?: string,
-     *     QualificationRequirements?: list<Shapes\QualificationRequirement>,
-     *     UniqueRequestToken?: string,
-     *     AssignmentReviewPolicy?: Shapes\ReviewPolicy,
-     *     HITReviewPolicy?: Shapes\ReviewPolicy,
-     *     HITLayoutId?: string,
-     *     HITLayoutParameters?: list<Shapes\HITLayoutParameter>
+     *     Question?: string|null,
+     *     RequesterAnnotation?: string|null,
+     *     QualificationRequirements?: list<Shapes\QualificationRequirement>|null,
+     *     UniqueRequestToken?: string|null,
+     *     AssignmentReviewPolicy?: Shapes\ReviewPolicy|null,
+     *     HITReviewPolicy?: Shapes\ReviewPolicy|null,
+     *     HITLayoutId?: string|null,
+     *     HITLayoutParameters?: list<Shapes\HITLayoutParameter>|null
      * } $args
      */
     public function __construct(array $args)

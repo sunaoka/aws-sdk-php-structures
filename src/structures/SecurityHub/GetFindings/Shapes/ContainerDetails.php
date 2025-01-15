@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContainerRuntime
- * @property string $Name
- * @property string $ImageId
- * @property string $ImageName
- * @property string $LaunchedAt
- * @property list<VolumeMount> $VolumeMounts
- * @property bool $Privileged
+ * @property string|null $ContainerRuntime
+ * @property string|null $Name
+ * @property string|null $ImageId
+ * @property string|null $ImageName
+ * @property string|null $LaunchedAt
+ * @property list<VolumeMount>|null $VolumeMounts
+ * @property bool|null $Privileged
  */
 class ContainerDetails extends Shape
 {
     /**
      * @param array{
-     *     ContainerRuntime?: string,
-     *     Name?: string,
-     *     ImageId?: string,
-     *     ImageName?: string,
-     *     LaunchedAt?: string,
-     *     VolumeMounts?: list<VolumeMount>,
-     *     Privileged?: bool
+     *     ContainerRuntime?: string|null,
+     *     Name?: string|null,
+     *     ImageId?: string|null,
+     *     ImageName?: string|null,
+     *     LaunchedAt?: string|null,
+     *     VolumeMounts?: list<VolumeMount>|null,
+     *     Privileged?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

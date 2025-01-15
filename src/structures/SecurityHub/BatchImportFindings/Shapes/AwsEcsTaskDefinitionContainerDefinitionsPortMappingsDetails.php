@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ContainerPort
- * @property int $HostPort
- * @property string $Protocol
+ * @property int|null $ContainerPort
+ * @property int|null $HostPort
+ * @property string|null $Protocol
  */
 class AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetails extends Shape
 {
     /**
      * @param array{
-     *     ContainerPort?: int,
-     *     HostPort?: int,
-     *     Protocol?: string
+     *     ContainerPort?: int|null,
+     *     HostPort?: int|null,
+     *     Protocol?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DescribePhoneNumbers;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $PhoneNumberIds
- * @property list<Shapes\PhoneNumberFilter> $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property 'SELF'|'SHARED' $Owner
+ * @property list<string>|null $PhoneNumberIds
+ * @property list<Shapes\PhoneNumberFilter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property 'SELF'|'SHARED'|null $Owner
  */
 class DescribePhoneNumbersRequest extends Request
 {
     /**
      * @param array{
-     *     PhoneNumberIds?: list<string>,
-     *     Filters?: list<Shapes\PhoneNumberFilter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     Owner?: 'SELF'|'SHARED'
+     *     PhoneNumberIds?: list<string>|null,
+     *     Filters?: list<Shapes\PhoneNumberFilter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     Owner?: 'SELF'|'SHARED'|null
      * } $args
      */
     public function __construct(array $args = [])

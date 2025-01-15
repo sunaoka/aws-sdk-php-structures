@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $datasetArn
  * @property Shapes\DataSource $dataSource
  * @property string $roleArn
- * @property list<Shapes\Tag> $tags
- * @property 'FULL'|'INCREMENTAL' $importMode
- * @property bool $publishAttributionMetricsToS3
+ * @property list<Shapes\Tag>|null $tags
+ * @property 'FULL'|'INCREMENTAL'|null $importMode
+ * @property bool|null $publishAttributionMetricsToS3
  */
 class CreateDatasetImportJobRequest extends Request
 {
@@ -21,9 +21,9 @@ class CreateDatasetImportJobRequest extends Request
      *     datasetArn: string,
      *     dataSource: Shapes\DataSource,
      *     roleArn: string,
-     *     tags?: list<Shapes\Tag>,
-     *     importMode?: 'FULL'|'INCREMENTAL',
-     *     publishAttributionMetricsToS3?: bool
+     *     tags?: list<Shapes\Tag>|null,
+     *     importMode?: 'FULL'|'INCREMENTAL'|null,
+     *     publishAttributionMetricsToS3?: bool|null
      * } $args
      */
     public function __construct(array $args)

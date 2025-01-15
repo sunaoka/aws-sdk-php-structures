@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeEngineDefaultParameters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBParameterGroupFamily
- * @property string $Marker
- * @property list<Parameter> $Parameters
+ * @property string|null $DBParameterGroupFamily
+ * @property string|null $Marker
+ * @property list<Parameter>|null $Parameters
  */
 class EngineDefaults extends Shape
 {
     /**
      * @param array{
-     *     DBParameterGroupFamily?: string,
-     *     Marker?: string,
-     *     Parameters?: list<Parameter>
+     *     DBParameterGroupFamily?: string|null,
+     *     Marker?: string|null,
+     *     Parameters?: list<Parameter>|null
      * } $args
      */
     public function __construct(array $args = [])

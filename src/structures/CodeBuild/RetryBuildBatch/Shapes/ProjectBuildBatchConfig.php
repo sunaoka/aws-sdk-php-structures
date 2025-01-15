@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CodeBuild\RetryBuildBatch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $serviceRole
- * @property bool $combineArtifacts
- * @property BatchRestrictions $restrictions
- * @property int $timeoutInMins
- * @property 'REPORT_INDIVIDUAL_BUILDS'|'REPORT_AGGREGATED_BATCH' $batchReportMode
+ * @property string|null $serviceRole
+ * @property bool|null $combineArtifacts
+ * @property BatchRestrictions|null $restrictions
+ * @property int|null $timeoutInMins
+ * @property 'REPORT_INDIVIDUAL_BUILDS'|'REPORT_AGGREGATED_BATCH'|null $batchReportMode
  */
 class ProjectBuildBatchConfig extends Shape
 {
     /**
      * @param array{
-     *     serviceRole?: string,
-     *     combineArtifacts?: bool,
-     *     restrictions?: BatchRestrictions,
-     *     timeoutInMins?: int,
-     *     batchReportMode?: 'REPORT_INDIVIDUAL_BUILDS'|'REPORT_AGGREGATED_BATCH'
+     *     serviceRole?: string|null,
+     *     combineArtifacts?: bool|null,
+     *     restrictions?: BatchRestrictions|null,
+     *     timeoutInMins?: int|null,
+     *     batchReportMode?: 'REPORT_INDIVIDUAL_BUILDS'|'REPORT_AGGREGATED_BATCH'|null
      * } $args
      */
     public function __construct(array $args = [])

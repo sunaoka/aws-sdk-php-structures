@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $membershipIdentifier
  * @property string $name
  * @property string $configuredModelAlgorithmAssociationArn
- * @property array<string, string> $hyperparameters
- * @property array<string, string> $environment
+ * @property array<string, string>|null $hyperparameters
+ * @property array<string, string>|null $environment
  * @property Shapes\ResourceConfig $resourceConfig
- * @property Shapes\StoppingCondition $stoppingCondition
+ * @property Shapes\StoppingCondition|null $stoppingCondition
  * @property list<Shapes\ModelTrainingDataChannel> $dataChannels
- * @property string $description
- * @property string $kmsKeyArn
- * @property array<string, string> $tags
+ * @property string|null $description
+ * @property string|null $kmsKeyArn
+ * @property array<string, string>|null $tags
  */
 class CreateTrainedModelRequest extends Request
 {
@@ -24,14 +24,14 @@ class CreateTrainedModelRequest extends Request
      *     membershipIdentifier: string,
      *     name: string,
      *     configuredModelAlgorithmAssociationArn: string,
-     *     hyperparameters?: array<string, string>,
-     *     environment?: array<string, string>,
+     *     hyperparameters?: array<string, string>|null,
+     *     environment?: array<string, string>|null,
      *     resourceConfig: Shapes\ResourceConfig,
-     *     stoppingCondition?: Shapes\StoppingCondition,
+     *     stoppingCondition?: Shapes\StoppingCondition|null,
      *     dataChannels: list<Shapes\ModelTrainingDataChannel>,
-     *     description?: string,
-     *     kmsKeyArn?: string,
-     *     tags?: array<string, string>
+     *     description?: string|null,
+     *     kmsKeyArn?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TextFieldControlDisplayOptions $DisplayOptions
+ * @property TextFieldControlDisplayOptions|null $DisplayOptions
  */
 class DefaultTextFieldControlOptions extends Shape
 {
     /**
-     * @param array{DisplayOptions?: TextFieldControlDisplayOptions} $args
+     * @param array{DisplayOptions?: TextFieldControlDisplayOptions|null} $args
      */
     public function __construct(array $args = [])
     {

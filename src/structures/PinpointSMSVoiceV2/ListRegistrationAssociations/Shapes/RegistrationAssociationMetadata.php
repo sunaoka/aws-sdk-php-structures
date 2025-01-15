@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ResourceArn
  * @property string $ResourceId
  * @property string $ResourceType
- * @property string $IsoCountryCode
- * @property string $PhoneNumber
+ * @property string|null $IsoCountryCode
+ * @property string|null $PhoneNumber
  */
 class RegistrationAssociationMetadata extends Shape
 {
@@ -18,8 +18,8 @@ class RegistrationAssociationMetadata extends Shape
      *     ResourceArn: string,
      *     ResourceId: string,
      *     ResourceType: string,
-     *     IsoCountryCode?: string,
-     *     PhoneNumber?: string
+     *     IsoCountryCode?: string|null,
+     *     PhoneNumber?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetResourceSnapshot\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OpportunitySummaryView $OpportunitySummary
+ * @property OpportunitySummaryView|null $OpportunitySummary
  */
 class ResourceSnapshotPayload extends Shape
 {
     /**
-     * @param array{OpportunitySummary?: OpportunitySummaryView} $args
+     * @param array{OpportunitySummary?: OpportunitySummaryView|null} $args
      */
     public function __construct(array $args = [])
     {

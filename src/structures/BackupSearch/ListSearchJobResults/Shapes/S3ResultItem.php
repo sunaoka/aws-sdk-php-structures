@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\BackupSearch\ListSearchJobResults\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BackupResourceArn
- * @property string $SourceResourceArn
- * @property string $BackupVaultName
- * @property string $ObjectKey
- * @property int $ObjectSize
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $ETag
- * @property string $VersionId
+ * @property string|null $BackupResourceArn
+ * @property string|null $SourceResourceArn
+ * @property string|null $BackupVaultName
+ * @property string|null $ObjectKey
+ * @property int|null $ObjectSize
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $ETag
+ * @property string|null $VersionId
  */
 class S3ResultItem extends Shape
 {
     /**
      * @param array{
-     *     BackupResourceArn?: string,
-     *     SourceResourceArn?: string,
-     *     BackupVaultName?: string,
-     *     ObjectKey?: string,
-     *     ObjectSize?: int,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     ETag?: string,
-     *     VersionId?: string
+     *     BackupResourceArn?: string|null,
+     *     SourceResourceArn?: string|null,
+     *     BackupVaultName?: string|null,
+     *     ObjectKey?: string|null,
+     *     ObjectSize?: int|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     ETag?: string|null,
+     *     VersionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

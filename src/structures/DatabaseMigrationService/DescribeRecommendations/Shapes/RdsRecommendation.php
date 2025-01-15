@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeRecommendation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RdsRequirements $RequirementsToTarget
- * @property RdsConfiguration $TargetConfiguration
+ * @property RdsRequirements|null $RequirementsToTarget
+ * @property RdsConfiguration|null $TargetConfiguration
  */
 class RdsRecommendation extends Shape
 {
     /**
      * @param array{
-     *     RequirementsToTarget?: RdsRequirements,
-     *     TargetConfiguration?: RdsConfiguration
+     *     RequirementsToTarget?: RdsRequirements|null,
+     *     TargetConfiguration?: RdsConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

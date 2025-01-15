@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $JobId
  * @property 'Cancelled'|'Ready' $RequestedJobStatus
- * @property string $StatusUpdateReason
+ * @property string|null $StatusUpdateReason
  */
 class UpdateJobStatusRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateJobStatusRequest extends Request
      *     AccountId: string,
      *     JobId: string,
      *     RequestedJobStatus: 'Cancelled'|'Ready',
-     *     StatusUpdateReason?: string
+     *     StatusUpdateReason?: string|null
      * } $args
      */
     public function __construct(array $args)

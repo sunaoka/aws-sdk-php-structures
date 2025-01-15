@@ -6,54 +6,54 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
- * @property string $Certificate
- * @property ProtocolDetails $ProtocolDetails
- * @property 'S3'|'EFS' $Domain
- * @property EndpointDetails $EndpointDetails
- * @property 'PUBLIC'|'VPC'|'VPC_ENDPOINT' $EndpointType
- * @property string $HostKeyFingerprint
- * @property IdentityProviderDetails $IdentityProviderDetails
- * @property 'SERVICE_MANAGED'|'API_GATEWAY'|'AWS_DIRECTORY_SERVICE'|'AWS_LAMBDA' $IdentityProviderType
- * @property string $LoggingRole
- * @property string $PostAuthenticationLoginBanner
- * @property string $PreAuthenticationLoginBanner
- * @property list<'SFTP'|'FTP'|'FTPS'|'AS2'> $Protocols
- * @property string $SecurityPolicyName
- * @property string $ServerId
- * @property 'OFFLINE'|'ONLINE'|'STARTING'|'STOPPING'|'START_FAILED'|'STOP_FAILED' $State
- * @property list<Tag> $Tags
- * @property int $UserCount
- * @property WorkflowDetails $WorkflowDetails
- * @property list<string> $StructuredLogDestinations
- * @property S3StorageOptions $S3StorageOptions
- * @property list<string> $As2ServiceManagedEgressIpAddresses
+ * @property string|null $Certificate
+ * @property ProtocolDetails|null $ProtocolDetails
+ * @property 'S3'|'EFS'|null $Domain
+ * @property EndpointDetails|null $EndpointDetails
+ * @property 'PUBLIC'|'VPC'|'VPC_ENDPOINT'|null $EndpointType
+ * @property string|null $HostKeyFingerprint
+ * @property IdentityProviderDetails|null $IdentityProviderDetails
+ * @property 'SERVICE_MANAGED'|'API_GATEWAY'|'AWS_DIRECTORY_SERVICE'|'AWS_LAMBDA'|null $IdentityProviderType
+ * @property string|null $LoggingRole
+ * @property string|null $PostAuthenticationLoginBanner
+ * @property string|null $PreAuthenticationLoginBanner
+ * @property list<'SFTP'|'FTP'|'FTPS'|'AS2'>|null $Protocols
+ * @property string|null $SecurityPolicyName
+ * @property string|null $ServerId
+ * @property 'OFFLINE'|'ONLINE'|'STARTING'|'STOPPING'|'START_FAILED'|'STOP_FAILED'|null $State
+ * @property list<Tag>|null $Tags
+ * @property int|null $UserCount
+ * @property WorkflowDetails|null $WorkflowDetails
+ * @property list<string>|null $StructuredLogDestinations
+ * @property S3StorageOptions|null $S3StorageOptions
+ * @property list<string>|null $As2ServiceManagedEgressIpAddresses
  */
 class DescribedServer extends Shape
 {
     /**
      * @param array{
      *     Arn: string,
-     *     Certificate?: string,
-     *     ProtocolDetails?: ProtocolDetails,
-     *     Domain?: 'S3'|'EFS',
-     *     EndpointDetails?: EndpointDetails,
-     *     EndpointType?: 'PUBLIC'|'VPC'|'VPC_ENDPOINT',
-     *     HostKeyFingerprint?: string,
-     *     IdentityProviderDetails?: IdentityProviderDetails,
-     *     IdentityProviderType?: 'SERVICE_MANAGED'|'API_GATEWAY'|'AWS_DIRECTORY_SERVICE'|'AWS_LAMBDA',
-     *     LoggingRole?: string,
-     *     PostAuthenticationLoginBanner?: string,
-     *     PreAuthenticationLoginBanner?: string,
-     *     Protocols?: list<'SFTP'|'FTP'|'FTPS'|'AS2'>,
-     *     SecurityPolicyName?: string,
-     *     ServerId?: string,
-     *     State?: 'OFFLINE'|'ONLINE'|'STARTING'|'STOPPING'|'START_FAILED'|'STOP_FAILED',
-     *     Tags?: list<Tag>,
-     *     UserCount?: int,
-     *     WorkflowDetails?: WorkflowDetails,
-     *     StructuredLogDestinations?: list<string>,
-     *     S3StorageOptions?: S3StorageOptions,
-     *     As2ServiceManagedEgressIpAddresses?: list<string>
+     *     Certificate?: string|null,
+     *     ProtocolDetails?: ProtocolDetails|null,
+     *     Domain?: 'S3'|'EFS'|null,
+     *     EndpointDetails?: EndpointDetails|null,
+     *     EndpointType?: 'PUBLIC'|'VPC'|'VPC_ENDPOINT'|null,
+     *     HostKeyFingerprint?: string|null,
+     *     IdentityProviderDetails?: IdentityProviderDetails|null,
+     *     IdentityProviderType?: 'SERVICE_MANAGED'|'API_GATEWAY'|'AWS_DIRECTORY_SERVICE'|'AWS_LAMBDA'|null,
+     *     LoggingRole?: string|null,
+     *     PostAuthenticationLoginBanner?: string|null,
+     *     PreAuthenticationLoginBanner?: string|null,
+     *     Protocols?: list<'SFTP'|'FTP'|'FTPS'|'AS2'>|null,
+     *     SecurityPolicyName?: string|null,
+     *     ServerId?: string|null,
+     *     State?: 'OFFLINE'|'ONLINE'|'STARTING'|'STOPPING'|'START_FAILED'|'STOP_FAILED'|null,
+     *     Tags?: list<Tag>|null,
+     *     UserCount?: int|null,
+     *     WorkflowDetails?: WorkflowDetails|null,
+     *     StructuredLogDestinations?: list<string>|null,
+     *     S3StorageOptions?: S3StorageOptions|null,
+     *     As2ServiceManagedEgressIpAddresses?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

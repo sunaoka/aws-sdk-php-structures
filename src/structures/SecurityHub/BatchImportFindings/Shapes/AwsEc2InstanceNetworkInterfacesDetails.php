@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NetworkInterfaceId
+ * @property string|null $NetworkInterfaceId
  */
 class AwsEc2InstanceNetworkInterfacesDetails extends Shape
 {
     /**
-     * @param array{NetworkInterfaceId?: string} $args
+     * @param array{NetworkInterfaceId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MemoryDB\UpdateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ReplicaCount
+ * @property int|null $ReplicaCount
  */
 class ReplicaConfigurationRequest extends Shape
 {
     /**
-     * @param array{ReplicaCount?: int} $args
+     * @param array{ReplicaCount?: int|null} $args
      */
     public function __construct(array $args = [])
     {

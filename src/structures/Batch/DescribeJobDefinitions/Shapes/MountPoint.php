@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $containerPath
- * @property bool $readOnly
- * @property string $sourceVolume
+ * @property string|null $containerPath
+ * @property bool|null $readOnly
+ * @property string|null $sourceVolume
  */
 class MountPoint extends Shape
 {
     /**
      * @param array{
-     *     containerPath?: string,
-     *     readOnly?: bool,
-     *     sourceVolume?: string
+     *     containerPath?: string|null,
+     *     readOnly?: bool|null,
+     *     sourceVolume?: string|null
      * } $args
      */
     public function __construct(array $args = [])

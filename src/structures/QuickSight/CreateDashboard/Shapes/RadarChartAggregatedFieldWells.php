@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $Category
- * @property list<DimensionField> $Color
- * @property list<MeasureField> $Values
+ * @property list<DimensionField>|null $Category
+ * @property list<DimensionField>|null $Color
+ * @property list<MeasureField>|null $Values
  */
 class RadarChartAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     Category?: list<DimensionField>,
-     *     Color?: list<DimensionField>,
-     *     Values?: list<MeasureField>
+     *     Category?: list<DimensionField>|null,
+     *     Color?: list<DimensionField>|null,
+     *     Values?: list<MeasureField>|null
      * } $args
      */
     public function __construct(array $args = [])

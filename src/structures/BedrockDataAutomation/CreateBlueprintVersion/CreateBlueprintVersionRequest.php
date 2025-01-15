@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $blueprintArn
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class CreateBlueprintVersionRequest extends Request
 {
     /**
      * @param array{
      *     blueprintArn: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

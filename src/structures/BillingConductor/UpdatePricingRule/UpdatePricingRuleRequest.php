@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Arn
- * @property string $Name
- * @property string $Description
- * @property 'MARKUP'|'DISCOUNT'|'TIERING' $Type
- * @property double $ModifierPercentage
- * @property Shapes\UpdateTieringInput $Tiering
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property 'MARKUP'|'DISCOUNT'|'TIERING'|null $Type
+ * @property double|null $ModifierPercentage
+ * @property Shapes\UpdateTieringInput|null $Tiering
  */
 class UpdatePricingRuleRequest extends Request
 {
     /**
      * @param array{
      *     Arn: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     Type?: 'MARKUP'|'DISCOUNT'|'TIERING',
-     *     ModifierPercentage?: double,
-     *     Tiering?: Shapes\UpdateTieringInput
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Type?: 'MARKUP'|'DISCOUNT'|'TIERING'|null,
+     *     ModifierPercentage?: double|null,
+     *     Tiering?: Shapes\UpdateTieringInput|null
      * } $args
      */
     public function __construct(array $args)

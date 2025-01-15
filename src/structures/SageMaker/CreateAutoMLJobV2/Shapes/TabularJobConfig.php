@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateAutoMLJobV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CandidateGenerationConfig $CandidateGenerationConfig
- * @property AutoMLJobCompletionCriteria $CompletionCriteria
- * @property string $FeatureSpecificationS3Uri
- * @property 'AUTO'|'ENSEMBLING'|'HYPERPARAMETER_TUNING' $Mode
- * @property bool $GenerateCandidateDefinitionsOnly
- * @property 'BinaryClassification'|'MulticlassClassification'|'Regression' $ProblemType
+ * @property CandidateGenerationConfig|null $CandidateGenerationConfig
+ * @property AutoMLJobCompletionCriteria|null $CompletionCriteria
+ * @property string|null $FeatureSpecificationS3Uri
+ * @property 'AUTO'|'ENSEMBLING'|'HYPERPARAMETER_TUNING'|null $Mode
+ * @property bool|null $GenerateCandidateDefinitionsOnly
+ * @property 'BinaryClassification'|'MulticlassClassification'|'Regression'|null $ProblemType
  * @property string $TargetAttributeName
- * @property string $SampleWeightAttributeName
+ * @property string|null $SampleWeightAttributeName
  */
 class TabularJobConfig extends Shape
 {
     /**
      * @param array{
-     *     CandidateGenerationConfig?: CandidateGenerationConfig,
-     *     CompletionCriteria?: AutoMLJobCompletionCriteria,
-     *     FeatureSpecificationS3Uri?: string,
-     *     Mode?: 'AUTO'|'ENSEMBLING'|'HYPERPARAMETER_TUNING',
-     *     GenerateCandidateDefinitionsOnly?: bool,
-     *     ProblemType?: 'BinaryClassification'|'MulticlassClassification'|'Regression',
+     *     CandidateGenerationConfig?: CandidateGenerationConfig|null,
+     *     CompletionCriteria?: AutoMLJobCompletionCriteria|null,
+     *     FeatureSpecificationS3Uri?: string|null,
+     *     Mode?: 'AUTO'|'ENSEMBLING'|'HYPERPARAMETER_TUNING'|null,
+     *     GenerateCandidateDefinitionsOnly?: bool|null,
+     *     ProblemType?: 'BinaryClassification'|'MulticlassClassification'|'Regression'|null,
      *     TargetAttributeName: string,
-     *     SampleWeightAttributeName?: string
+     *     SampleWeightAttributeName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $VpcConfigurationId
- * @property list<string> $SubnetIdUpdates
- * @property list<string> $SecurityGroupIdUpdates
+ * @property list<string>|null $SubnetIdUpdates
+ * @property list<string>|null $SecurityGroupIdUpdates
  */
 class VpcConfigurationUpdate extends Shape
 {
     /**
      * @param array{
      *     VpcConfigurationId: string,
-     *     SubnetIdUpdates?: list<string>,
-     *     SecurityGroupIdUpdates?: list<string>
+     *     SubnetIdUpdates?: list<string>|null,
+     *     SecurityGroupIdUpdates?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

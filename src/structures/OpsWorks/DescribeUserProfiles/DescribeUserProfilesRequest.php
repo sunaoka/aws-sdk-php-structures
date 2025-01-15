@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeUserProfiles;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $IamUserArns
+ * @property list<string>|null $IamUserArns
  */
 class DescribeUserProfilesRequest extends Request
 {
     /**
-     * @param array{IamUserArns?: list<string>} $args
+     * @param array{IamUserArns?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

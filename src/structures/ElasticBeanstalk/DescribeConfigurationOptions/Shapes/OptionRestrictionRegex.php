@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeConfigurationOptions\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Pattern
- * @property string $Label
+ * @property string|null $Pattern
+ * @property string|null $Label
  */
 class OptionRestrictionRegex extends Shape
 {
     /**
      * @param array{
-     *     Pattern?: string,
-     *     Label?: string
+     *     Pattern?: string|null,
+     *     Label?: string|null
      * } $args
      */
     public function __construct(array $args = [])

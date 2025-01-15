@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\DescribeMediaStorageConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ChannelName
- * @property string $ChannelARN
+ * @property string|null $ChannelName
+ * @property string|null $ChannelARN
  */
 class DescribeMediaStorageConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     ChannelName?: string,
-     *     ChannelARN?: string
+     *     ChannelName?: string|null,
+     *     ChannelARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

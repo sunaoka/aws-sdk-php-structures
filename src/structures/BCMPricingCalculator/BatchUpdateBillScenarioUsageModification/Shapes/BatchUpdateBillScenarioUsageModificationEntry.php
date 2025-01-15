@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property string $group
- * @property list<UsageAmount> $amounts
+ * @property string|null $group
+ * @property list<UsageAmount>|null $amounts
  */
 class BatchUpdateBillScenarioUsageModificationEntry extends Shape
 {
     /**
      * @param array{
      *     id: string,
-     *     group?: string,
-     *     amounts?: list<UsageAmount>
+     *     group?: string|null,
+     *     amounts?: list<UsageAmount>|null
      * } $args
      */
     public function __construct(array $args)

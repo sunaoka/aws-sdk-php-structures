@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Proton\GetDeployment;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $componentName
- * @property string $environmentName
+ * @property string|null $componentName
+ * @property string|null $environmentName
  * @property string $id
- * @property string $serviceInstanceName
- * @property string $serviceName
+ * @property string|null $serviceInstanceName
+ * @property string|null $serviceName
  */
 class GetDeploymentRequest extends Request
 {
     /**
      * @param array{
-     *     componentName?: string,
-     *     environmentName?: string,
+     *     componentName?: string|null,
+     *     environmentName?: string|null,
      *     id: string,
-     *     serviceInstanceName?: string,
-     *     serviceName?: string
+     *     serviceInstanceName?: string|null,
+     *     serviceName?: string|null
      * } $args
      */
     public function __construct(array $args)

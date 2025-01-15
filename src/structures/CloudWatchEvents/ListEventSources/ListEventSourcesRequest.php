@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\ListEventSources;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NamePrefix
- * @property string $NextToken
- * @property int<1, 100> $Limit
+ * @property string|null $NamePrefix
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $Limit
  */
 class ListEventSourcesRequest extends Request
 {
     /**
      * @param array{
-     *     NamePrefix?: string,
-     *     NextToken?: string,
-     *     Limit?: int<1, 100>
+     *     NamePrefix?: string|null,
+     *     NextToken?: string|null,
+     *     Limit?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

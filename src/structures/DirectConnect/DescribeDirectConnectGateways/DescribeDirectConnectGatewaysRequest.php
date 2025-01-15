@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DescribeDirectConnectGateways;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $directConnectGatewayId
- * @property int $maxResults
- * @property string $nextToken
+ * @property string|null $directConnectGatewayId
+ * @property int|null $maxResults
+ * @property string|null $nextToken
  */
 class DescribeDirectConnectGatewaysRequest extends Request
 {
     /**
      * @param array{
-     *     directConnectGatewayId?: string,
-     *     maxResults?: int,
-     *     nextToken?: string
+     *     directConnectGatewayId?: string|null,
+     *     maxResults?: int|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

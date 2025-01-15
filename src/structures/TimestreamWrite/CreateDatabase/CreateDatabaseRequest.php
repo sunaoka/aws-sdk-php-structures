@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DatabaseName
- * @property string $KmsKeyId
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $KmsKeyId
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateDatabaseRequest extends Request
 {
     /**
      * @param array{
      *     DatabaseName: string,
-     *     KmsKeyId?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     KmsKeyId?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

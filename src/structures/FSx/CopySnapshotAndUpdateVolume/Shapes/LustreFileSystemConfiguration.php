@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\FSx\CopySnapshotAndUpdateVolume\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WeeklyMaintenanceStartTime
- * @property DataRepositoryConfiguration $DataRepositoryConfiguration
- * @property 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2' $DeploymentType
- * @property int<12, 1000> $PerUnitStorageThroughput
- * @property string $MountName
- * @property string $DailyAutomaticBackupStartTime
- * @property int<0, 90> $AutomaticBackupRetentionDays
- * @property bool $CopyTagsToBackups
- * @property 'NONE'|'READ' $DriveCacheType
- * @property 'NONE'|'LZ4' $DataCompressionType
- * @property LustreLogConfiguration $LogConfiguration
- * @property LustreRootSquashConfiguration $RootSquashConfiguration
- * @property FileSystemLustreMetadataConfiguration $MetadataConfiguration
- * @property bool $EfaEnabled
+ * @property string|null $WeeklyMaintenanceStartTime
+ * @property DataRepositoryConfiguration|null $DataRepositoryConfiguration
+ * @property 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2'|null $DeploymentType
+ * @property int<12, 1000>|null $PerUnitStorageThroughput
+ * @property string|null $MountName
+ * @property string|null $DailyAutomaticBackupStartTime
+ * @property int<0, 90>|null $AutomaticBackupRetentionDays
+ * @property bool|null $CopyTagsToBackups
+ * @property 'NONE'|'READ'|null $DriveCacheType
+ * @property 'NONE'|'LZ4'|null $DataCompressionType
+ * @property LustreLogConfiguration|null $LogConfiguration
+ * @property LustreRootSquashConfiguration|null $RootSquashConfiguration
+ * @property FileSystemLustreMetadataConfiguration|null $MetadataConfiguration
+ * @property bool|null $EfaEnabled
  */
 class LustreFileSystemConfiguration extends Shape
 {
     /**
      * @param array{
-     *     WeeklyMaintenanceStartTime?: string,
-     *     DataRepositoryConfiguration?: DataRepositoryConfiguration,
-     *     DeploymentType?: 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2',
-     *     PerUnitStorageThroughput?: int<12, 1000>,
-     *     MountName?: string,
-     *     DailyAutomaticBackupStartTime?: string,
-     *     AutomaticBackupRetentionDays?: int<0, 90>,
-     *     CopyTagsToBackups?: bool,
-     *     DriveCacheType?: 'NONE'|'READ',
-     *     DataCompressionType?: 'NONE'|'LZ4',
-     *     LogConfiguration?: LustreLogConfiguration,
-     *     RootSquashConfiguration?: LustreRootSquashConfiguration,
-     *     MetadataConfiguration?: FileSystemLustreMetadataConfiguration,
-     *     EfaEnabled?: bool
+     *     WeeklyMaintenanceStartTime?: string|null,
+     *     DataRepositoryConfiguration?: DataRepositoryConfiguration|null,
+     *     DeploymentType?: 'SCRATCH_1'|'SCRATCH_2'|'PERSISTENT_1'|'PERSISTENT_2'|null,
+     *     PerUnitStorageThroughput?: int<12, 1000>|null,
+     *     MountName?: string|null,
+     *     DailyAutomaticBackupStartTime?: string|null,
+     *     AutomaticBackupRetentionDays?: int<0, 90>|null,
+     *     CopyTagsToBackups?: bool|null,
+     *     DriveCacheType?: 'NONE'|'READ'|null,
+     *     DataCompressionType?: 'NONE'|'LZ4'|null,
+     *     LogConfiguration?: LustreLogConfiguration|null,
+     *     RootSquashConfiguration?: LustreRootSquashConfiguration|null,
+     *     MetadataConfiguration?: FileSystemLustreMetadataConfiguration|null,
+     *     EfaEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

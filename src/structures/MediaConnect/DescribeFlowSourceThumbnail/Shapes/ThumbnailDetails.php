@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FlowArn
- * @property string $Thumbnail
+ * @property string|null $Thumbnail
  * @property list<MessageDetail> $ThumbnailMessages
- * @property string $Timecode
- * @property \Aws\Api\DateTimeResult $Timestamp
+ * @property string|null $Timecode
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
  */
 class ThumbnailDetails extends Shape
 {
     /**
      * @param array{
      *     FlowArn: string,
-     *     Thumbnail?: string,
+     *     Thumbnail?: string|null,
      *     ThumbnailMessages: list<MessageDetail>,
-     *     Timecode?: string,
-     *     Timestamp?: \Aws\Api\DateTimeResult
+     *     Timecode?: string|null,
+     *     Timestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

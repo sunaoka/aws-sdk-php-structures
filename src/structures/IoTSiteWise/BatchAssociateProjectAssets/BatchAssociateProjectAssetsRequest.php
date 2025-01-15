@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $projectId
  * @property list<string> $assetIds
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class BatchAssociateProjectAssetsRequest extends Request
 {
@@ -15,7 +15,7 @@ class BatchAssociateProjectAssetsRequest extends Request
      * @param array{
      *     projectId: string,
      *     assetIds: list<string>,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

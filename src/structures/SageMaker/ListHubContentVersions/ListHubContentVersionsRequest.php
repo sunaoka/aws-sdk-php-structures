@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $HubName
  * @property 'Model'|'Notebook'|'ModelReference' $HubContentType
  * @property string $HubContentName
- * @property string $MinVersion
- * @property string $MaxSchemaVersion
- * @property \Aws\Api\DateTimeResult $CreationTimeBefore
- * @property \Aws\Api\DateTimeResult $CreationTimeAfter
- * @property 'HubContentName'|'CreationTime'|'HubContentStatus' $SortBy
- * @property 'Ascending'|'Descending' $SortOrder
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $MinVersion
+ * @property string|null $MaxSchemaVersion
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
+ * @property 'HubContentName'|'CreationTime'|'HubContentStatus'|null $SortBy
+ * @property 'Ascending'|'Descending'|null $SortOrder
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListHubContentVersionsRequest extends Request
 {
@@ -24,14 +24,14 @@ class ListHubContentVersionsRequest extends Request
      *     HubName: string,
      *     HubContentType: 'Model'|'Notebook'|'ModelReference',
      *     HubContentName: string,
-     *     MinVersion?: string,
-     *     MaxSchemaVersion?: string,
-     *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
-     *     SortBy?: 'HubContentName'|'CreationTime'|'HubContentStatus',
-     *     SortOrder?: 'Ascending'|'Descending',
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     MinVersion?: string|null,
+     *     MaxSchemaVersion?: string|null,
+     *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     SortBy?: 'HubContentName'|'CreationTime'|'HubContentStatus'|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

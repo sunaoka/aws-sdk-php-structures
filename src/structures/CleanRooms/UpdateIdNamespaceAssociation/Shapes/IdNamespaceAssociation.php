@@ -12,12 +12,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $collaborationId
  * @property string $collaborationArn
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property \Aws\Api\DateTimeResult $createTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property IdNamespaceAssociationInputReferenceConfig $inputReferenceConfig
  * @property IdNamespaceAssociationInputReferenceProperties $inputReferenceProperties
- * @property IdMappingConfig $idMappingConfig
+ * @property IdMappingConfig|null $idMappingConfig
  */
 class IdNamespaceAssociation extends Shape
 {
@@ -30,12 +30,12 @@ class IdNamespaceAssociation extends Shape
      *     collaborationId: string,
      *     collaborationArn: string,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     createTime: \Aws\Api\DateTimeResult,
      *     updateTime: \Aws\Api\DateTimeResult,
      *     inputReferenceConfig: IdNamespaceAssociationInputReferenceConfig,
      *     inputReferenceProperties: IdNamespaceAssociationInputReferenceProperties,
-     *     idMappingConfig?: IdMappingConfig
+     *     idMappingConfig?: IdMappingConfig|null
      * } $args
      */
     public function __construct(array $args)

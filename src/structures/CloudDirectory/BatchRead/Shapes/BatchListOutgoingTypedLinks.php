@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ObjectReference $ObjectReference
- * @property list<TypedLinkAttributeRange> $FilterAttributeRanges
- * @property TypedLinkSchemaAndFacetName $FilterTypedLink
- * @property string $NextToken
- * @property int<1, max> $MaxResults
+ * @property list<TypedLinkAttributeRange>|null $FilterAttributeRanges
+ * @property TypedLinkSchemaAndFacetName|null $FilterTypedLink
+ * @property string|null $NextToken
+ * @property int<1, max>|null $MaxResults
  */
 class BatchListOutgoingTypedLinks extends Shape
 {
     /**
      * @param array{
      *     ObjectReference: ObjectReference,
-     *     FilterAttributeRanges?: list<TypedLinkAttributeRange>,
-     *     FilterTypedLink?: TypedLinkSchemaAndFacetName,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, max>
+     *     FilterAttributeRanges?: list<TypedLinkAttributeRange>|null,
+     *     FilterTypedLink?: TypedLinkSchemaAndFacetName|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

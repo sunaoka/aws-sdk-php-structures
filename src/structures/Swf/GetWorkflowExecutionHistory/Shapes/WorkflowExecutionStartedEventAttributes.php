@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Swf\GetWorkflowExecutionHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $input
- * @property string $executionStartToCloseTimeout
- * @property string $taskStartToCloseTimeout
+ * @property string|null $input
+ * @property string|null $executionStartToCloseTimeout
+ * @property string|null $taskStartToCloseTimeout
  * @property 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON' $childPolicy
  * @property TaskList $taskList
- * @property string $taskPriority
+ * @property string|null $taskPriority
  * @property WorkflowType $workflowType
- * @property list<string> $tagList
- * @property string $continuedExecutionRunId
- * @property WorkflowExecution $parentWorkflowExecution
- * @property int $parentInitiatedEventId
- * @property string $lambdaRole
+ * @property list<string>|null $tagList
+ * @property string|null $continuedExecutionRunId
+ * @property WorkflowExecution|null $parentWorkflowExecution
+ * @property int|null $parentInitiatedEventId
+ * @property string|null $lambdaRole
  */
 class WorkflowExecutionStartedEventAttributes extends Shape
 {
     /**
      * @param array{
-     *     input?: string,
-     *     executionStartToCloseTimeout?: string,
-     *     taskStartToCloseTimeout?: string,
+     *     input?: string|null,
+     *     executionStartToCloseTimeout?: string|null,
+     *     taskStartToCloseTimeout?: string|null,
      *     childPolicy: 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON',
      *     taskList: TaskList,
-     *     taskPriority?: string,
+     *     taskPriority?: string|null,
      *     workflowType: WorkflowType,
-     *     tagList?: list<string>,
-     *     continuedExecutionRunId?: string,
-     *     parentWorkflowExecution?: WorkflowExecution,
-     *     parentInitiatedEventId?: int,
-     *     lambdaRole?: string
+     *     tagList?: list<string>|null,
+     *     continuedExecutionRunId?: string|null,
+     *     parentWorkflowExecution?: WorkflowExecution|null,
+     *     parentInitiatedEventId?: int|null,
+     *     lambdaRole?: string|null
      * } $args
      */
     public function __construct(array $args)

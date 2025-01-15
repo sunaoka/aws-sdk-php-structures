@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationId
- * @property string $Author
- * @property string $Description
- * @property string $HomePageUrl
- * @property list<string> $Labels
- * @property string $ReadmeBody
- * @property string $ReadmeUrl
+ * @property string|null $Author
+ * @property string|null $Description
+ * @property string|null $HomePageUrl
+ * @property list<string>|null $Labels
+ * @property string|null $ReadmeBody
+ * @property string|null $ReadmeUrl
  */
 class UpdateApplicationRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationId: string,
-     *     Author?: string,
-     *     Description?: string,
-     *     HomePageUrl?: string,
-     *     Labels?: list<string>,
-     *     ReadmeBody?: string,
-     *     ReadmeUrl?: string
+     *     Author?: string|null,
+     *     Description?: string|null,
+     *     HomePageUrl?: string|null,
+     *     Labels?: list<string>|null,
+     *     ReadmeBody?: string|null,
+     *     ReadmeUrl?: string|null
      * } $args
      */
     public function __construct(array $args)

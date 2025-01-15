@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $blueprintArn
- * @property string $blueprintVersion
- * @property 'DEVELOPMENT'|'LIVE' $blueprintStage
+ * @property string|null $blueprintVersion
+ * @property 'DEVELOPMENT'|'LIVE'|null $blueprintStage
  */
 class BlueprintFilter extends Shape
 {
     /**
      * @param array{
      *     blueprintArn: string,
-     *     blueprintVersion?: string,
-     *     blueprintStage?: 'DEVELOPMENT'|'LIVE'
+     *     blueprintVersion?: string|null,
+     *     blueprintStage?: 'DEVELOPMENT'|'LIVE'|null
      * } $args
      */
     public function __construct(array $args)

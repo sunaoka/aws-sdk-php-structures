@@ -11,18 +11,18 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $EventTimeFeatureName
  * @property list<Shapes\FeatureDefinition> $FeatureDefinitions
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property Shapes\OnlineStoreConfig $OnlineStoreConfig
- * @property Shapes\OfflineStoreConfig $OfflineStoreConfig
- * @property Shapes\ThroughputConfigDescription $ThroughputConfig
- * @property string $RoleArn
- * @property 'Creating'|'Created'|'CreateFailed'|'Deleting'|'DeleteFailed' $FeatureGroupStatus
- * @property Shapes\OfflineStoreStatus $OfflineStoreStatus
- * @property Shapes\LastUpdateStatus $LastUpdateStatus
- * @property string $FailureReason
- * @property string $Description
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property Shapes\OnlineStoreConfig|null $OnlineStoreConfig
+ * @property Shapes\OfflineStoreConfig|null $OfflineStoreConfig
+ * @property Shapes\ThroughputConfigDescription|null $ThroughputConfig
+ * @property string|null $RoleArn
+ * @property 'Creating'|'Created'|'CreateFailed'|'Deleting'|'DeleteFailed'|null $FeatureGroupStatus
+ * @property Shapes\OfflineStoreStatus|null $OfflineStoreStatus
+ * @property Shapes\LastUpdateStatus|null $LastUpdateStatus
+ * @property string|null $FailureReason
+ * @property string|null $Description
  * @property string $NextToken
- * @property int $OnlineStoreTotalSizeBytes
+ * @property int|null $OnlineStoreTotalSizeBytes
  */
 class DescribeFeatureGroupResponse extends Response
 {

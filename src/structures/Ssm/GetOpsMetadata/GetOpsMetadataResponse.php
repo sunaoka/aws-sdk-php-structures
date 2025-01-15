@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ssm\GetOpsMetadata;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ResourceId
- * @property array<string, Shapes\MetadataValue> $Metadata
- * @property string $NextToken
+ * @property string|null $ResourceId
+ * @property array<string, Shapes\MetadataValue>|null $Metadata
+ * @property string|null $NextToken
  */
 class GetOpsMetadataResponse extends Response
 {

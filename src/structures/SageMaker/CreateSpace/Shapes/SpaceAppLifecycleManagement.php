@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateSpace\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SpaceIdleSettings $IdleSettings
+ * @property SpaceIdleSettings|null $IdleSettings
  */
 class SpaceAppLifecycleManagement extends Shape
 {
     /**
-     * @param array{IdleSettings?: SpaceIdleSettings} $args
+     * @param array{IdleSettings?: SpaceIdleSettings|null} $args
      */
     public function __construct(array $args = [])
     {

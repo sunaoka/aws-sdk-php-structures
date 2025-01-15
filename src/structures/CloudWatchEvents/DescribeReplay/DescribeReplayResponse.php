@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\DescribeReplay;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ReplayName
- * @property string $ReplayArn
- * @property string $Description
- * @property 'STARTING'|'RUNNING'|'CANCELLING'|'COMPLETED'|'CANCELLED'|'FAILED' $State
- * @property string $StateReason
- * @property string $EventSourceArn
- * @property Shapes\ReplayDestination $Destination
- * @property \Aws\Api\DateTimeResult $EventStartTime
- * @property \Aws\Api\DateTimeResult $EventEndTime
- * @property \Aws\Api\DateTimeResult $EventLastReplayedTime
- * @property \Aws\Api\DateTimeResult $ReplayStartTime
- * @property \Aws\Api\DateTimeResult $ReplayEndTime
+ * @property string|null $ReplayName
+ * @property string|null $ReplayArn
+ * @property string|null $Description
+ * @property 'STARTING'|'RUNNING'|'CANCELLING'|'COMPLETED'|'CANCELLED'|'FAILED'|null $State
+ * @property string|null $StateReason
+ * @property string|null $EventSourceArn
+ * @property Shapes\ReplayDestination|null $Destination
+ * @property \Aws\Api\DateTimeResult|null $EventStartTime
+ * @property \Aws\Api\DateTimeResult|null $EventEndTime
+ * @property \Aws\Api\DateTimeResult|null $EventLastReplayedTime
+ * @property \Aws\Api\DateTimeResult|null $ReplayStartTime
+ * @property \Aws\Api\DateTimeResult|null $ReplayEndTime
  */
 class DescribeReplayResponse extends Response
 {

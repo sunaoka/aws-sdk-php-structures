@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\ConverseStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Document $json
- * @property string $text
- * @property ImageBlock $image
- * @property DocumentBlock $document
- * @property VideoBlock $video
+ * @property Document|null $json
+ * @property string|null $text
+ * @property ImageBlock|null $image
+ * @property DocumentBlock|null $document
+ * @property VideoBlock|null $video
  */
 class ToolResultContentBlock extends Shape
 {
     /**
      * @param array{
-     *     json?: Document,
-     *     text?: string,
-     *     image?: ImageBlock,
-     *     document?: DocumentBlock,
-     *     video?: VideoBlock
+     *     json?: Document|null,
+     *     text?: string|null,
+     *     image?: ImageBlock|null,
+     *     document?: DocumentBlock|null,
+     *     video?: VideoBlock|null
      * } $args
      */
     public function __construct(array $args = [])

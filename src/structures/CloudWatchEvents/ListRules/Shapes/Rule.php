@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\ListRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Arn
- * @property string $EventPattern
- * @property 'ENABLED'|'DISABLED' $State
- * @property string $Description
- * @property string $ScheduleExpression
- * @property string $RoleArn
- * @property string $ManagedBy
- * @property string $EventBusName
+ * @property string|null $Name
+ * @property string|null $Arn
+ * @property string|null $EventPattern
+ * @property 'ENABLED'|'DISABLED'|null $State
+ * @property string|null $Description
+ * @property string|null $ScheduleExpression
+ * @property string|null $RoleArn
+ * @property string|null $ManagedBy
+ * @property string|null $EventBusName
  */
 class Rule extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Arn?: string,
-     *     EventPattern?: string,
-     *     State?: 'ENABLED'|'DISABLED',
-     *     Description?: string,
-     *     ScheduleExpression?: string,
-     *     RoleArn?: string,
-     *     ManagedBy?: string,
-     *     EventBusName?: string
+     *     Name?: string|null,
+     *     Arn?: string|null,
+     *     EventPattern?: string|null,
+     *     State?: 'ENABLED'|'DISABLED'|null,
+     *     Description?: string|null,
+     *     ScheduleExpression?: string|null,
+     *     RoleArn?: string|null,
+     *     ManagedBy?: string|null,
+     *     EventBusName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

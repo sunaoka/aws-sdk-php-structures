@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $id
  * @property string $stepGroupId
  * @property string $workflowId
- * @property string $name
- * @property string $description
- * @property 'MANUAL'|'AUTOMATED' $stepActionType
- * @property Shapes\WorkflowStepAutomationConfiguration $workflowStepAutomationConfiguration
- * @property list<string> $stepTarget
- * @property list<Shapes\WorkflowStepOutput> $outputs
- * @property list<string> $previous
- * @property list<string> $next
- * @property 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED' $status
+ * @property string|null $name
+ * @property string|null $description
+ * @property 'MANUAL'|'AUTOMATED'|null $stepActionType
+ * @property Shapes\WorkflowStepAutomationConfiguration|null $workflowStepAutomationConfiguration
+ * @property list<string>|null $stepTarget
+ * @property list<Shapes\WorkflowStepOutput>|null $outputs
+ * @property list<string>|null $previous
+ * @property list<string>|null $next
+ * @property 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null $status
  */
 class UpdateWorkflowStepRequest extends Request
 {
@@ -25,15 +25,15 @@ class UpdateWorkflowStepRequest extends Request
      *     id: string,
      *     stepGroupId: string,
      *     workflowId: string,
-     *     name?: string,
-     *     description?: string,
-     *     stepActionType?: 'MANUAL'|'AUTOMATED',
-     *     workflowStepAutomationConfiguration?: Shapes\WorkflowStepAutomationConfiguration,
-     *     stepTarget?: list<string>,
-     *     outputs?: list<Shapes\WorkflowStepOutput>,
-     *     previous?: list<string>,
-     *     next?: list<string>,
-     *     status?: 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'
+     *     name?: string|null,
+     *     description?: string|null,
+     *     stepActionType?: 'MANUAL'|'AUTOMATED'|null,
+     *     workflowStepAutomationConfiguration?: Shapes\WorkflowStepAutomationConfiguration|null,
+     *     stepTarget?: list<string>|null,
+     *     outputs?: list<Shapes\WorkflowStepOutput>|null,
+     *     previous?: list<string>|null,
+     *     next?: list<string>|null,
+     *     status?: 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null
      * } $args
      */
     public function __construct(array $args)

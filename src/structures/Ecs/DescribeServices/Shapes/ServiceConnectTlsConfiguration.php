@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ServiceConnectTlsCertificateAuthority $issuerCertificateAuthority
- * @property string $kmsKey
- * @property string $roleArn
+ * @property string|null $kmsKey
+ * @property string|null $roleArn
  */
 class ServiceConnectTlsConfiguration extends Shape
 {
     /**
      * @param array{
      *     issuerCertificateAuthority: ServiceConnectTlsCertificateAuthority,
-     *     kmsKey?: string,
-     *     roleArn?: string
+     *     kmsKey?: string|null,
+     *     roleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

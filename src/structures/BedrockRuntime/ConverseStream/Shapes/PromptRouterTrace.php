@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\ConverseStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $invokedModelId
+ * @property string|null $invokedModelId
  */
 class PromptRouterTrace extends Shape
 {
     /**
-     * @param array{invokedModelId?: string} $args
+     * @param array{invokedModelId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Translate\ImportTerminology;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TerminologyProperties $TerminologyProperties
- * @property Shapes\TerminologyDataLocation $AuxiliaryDataLocation
+ * @property Shapes\TerminologyProperties|null $TerminologyProperties
+ * @property Shapes\TerminologyDataLocation|null $AuxiliaryDataLocation
  */
 class ImportTerminologyResponse extends Response
 {

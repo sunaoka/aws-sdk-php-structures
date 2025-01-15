@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\DescribeAnomalyDetectionExecutio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ExecutionStatus> $ExecutionList
- * @property string $NextToken
+ * @property list<Shapes\ExecutionStatus>|null $ExecutionList
+ * @property string|null $NextToken
  */
 class DescribeAnomalyDetectionExecutionsResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $profileName
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListProfilePermissionsRequest extends Request
 {
     /**
      * @param array{
      *     profileName: string,
-     *     nextToken?: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

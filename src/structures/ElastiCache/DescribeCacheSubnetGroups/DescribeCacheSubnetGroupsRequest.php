@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeCacheSubnetGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CacheSubnetGroupName
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $CacheSubnetGroupName
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeCacheSubnetGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     CacheSubnetGroupName?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     CacheSubnetGroupName?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

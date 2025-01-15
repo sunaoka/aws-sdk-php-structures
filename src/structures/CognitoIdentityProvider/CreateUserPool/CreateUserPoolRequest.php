@@ -6,58 +6,58 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PoolName
- * @property Shapes\UserPoolPolicyType $Policies
- * @property 'ACTIVE'|'INACTIVE' $DeletionProtection
- * @property Shapes\LambdaConfigType $LambdaConfig
- * @property list<'phone_number'|'email'> $AutoVerifiedAttributes
- * @property list<'phone_number'|'email'|'preferred_username'> $AliasAttributes
- * @property list<'phone_number'|'email'> $UsernameAttributes
- * @property string $SmsVerificationMessage
- * @property string $EmailVerificationMessage
- * @property string $EmailVerificationSubject
- * @property Shapes\VerificationMessageTemplateType $VerificationMessageTemplate
- * @property string $SmsAuthenticationMessage
- * @property 'OFF'|'ON'|'OPTIONAL' $MfaConfiguration
- * @property Shapes\UserAttributeUpdateSettingsType $UserAttributeUpdateSettings
- * @property Shapes\DeviceConfigurationType $DeviceConfiguration
- * @property Shapes\EmailConfigurationType $EmailConfiguration
- * @property Shapes\SmsConfigurationType $SmsConfiguration
- * @property array<string, string> $UserPoolTags
- * @property Shapes\AdminCreateUserConfigType $AdminCreateUserConfig
- * @property list<Shapes\SchemaAttributeType> $Schema
- * @property Shapes\UserPoolAddOnsType $UserPoolAddOns
- * @property Shapes\UsernameConfigurationType $UsernameConfiguration
- * @property Shapes\AccountRecoverySettingType $AccountRecoverySetting
- * @property 'LITE'|'ESSENTIALS'|'PLUS' $UserPoolTier
+ * @property Shapes\UserPoolPolicyType|null $Policies
+ * @property 'ACTIVE'|'INACTIVE'|null $DeletionProtection
+ * @property Shapes\LambdaConfigType|null $LambdaConfig
+ * @property list<'phone_number'|'email'>|null $AutoVerifiedAttributes
+ * @property list<'phone_number'|'email'|'preferred_username'>|null $AliasAttributes
+ * @property list<'phone_number'|'email'>|null $UsernameAttributes
+ * @property string|null $SmsVerificationMessage
+ * @property string|null $EmailVerificationMessage
+ * @property string|null $EmailVerificationSubject
+ * @property Shapes\VerificationMessageTemplateType|null $VerificationMessageTemplate
+ * @property string|null $SmsAuthenticationMessage
+ * @property 'OFF'|'ON'|'OPTIONAL'|null $MfaConfiguration
+ * @property Shapes\UserAttributeUpdateSettingsType|null $UserAttributeUpdateSettings
+ * @property Shapes\DeviceConfigurationType|null $DeviceConfiguration
+ * @property Shapes\EmailConfigurationType|null $EmailConfiguration
+ * @property Shapes\SmsConfigurationType|null $SmsConfiguration
+ * @property array<string, string>|null $UserPoolTags
+ * @property Shapes\AdminCreateUserConfigType|null $AdminCreateUserConfig
+ * @property list<Shapes\SchemaAttributeType>|null $Schema
+ * @property Shapes\UserPoolAddOnsType|null $UserPoolAddOns
+ * @property Shapes\UsernameConfigurationType|null $UsernameConfiguration
+ * @property Shapes\AccountRecoverySettingType|null $AccountRecoverySetting
+ * @property 'LITE'|'ESSENTIALS'|'PLUS'|null $UserPoolTier
  */
 class CreateUserPoolRequest extends Request
 {
     /**
      * @param array{
      *     PoolName: string,
-     *     Policies?: Shapes\UserPoolPolicyType,
-     *     DeletionProtection?: 'ACTIVE'|'INACTIVE',
-     *     LambdaConfig?: Shapes\LambdaConfigType,
-     *     AutoVerifiedAttributes?: list<'phone_number'|'email'>,
-     *     AliasAttributes?: list<'phone_number'|'email'|'preferred_username'>,
-     *     UsernameAttributes?: list<'phone_number'|'email'>,
-     *     SmsVerificationMessage?: string,
-     *     EmailVerificationMessage?: string,
-     *     EmailVerificationSubject?: string,
-     *     VerificationMessageTemplate?: Shapes\VerificationMessageTemplateType,
-     *     SmsAuthenticationMessage?: string,
-     *     MfaConfiguration?: 'OFF'|'ON'|'OPTIONAL',
-     *     UserAttributeUpdateSettings?: Shapes\UserAttributeUpdateSettingsType,
-     *     DeviceConfiguration?: Shapes\DeviceConfigurationType,
-     *     EmailConfiguration?: Shapes\EmailConfigurationType,
-     *     SmsConfiguration?: Shapes\SmsConfigurationType,
-     *     UserPoolTags?: array<string, string>,
-     *     AdminCreateUserConfig?: Shapes\AdminCreateUserConfigType,
-     *     Schema?: list<Shapes\SchemaAttributeType>,
-     *     UserPoolAddOns?: Shapes\UserPoolAddOnsType,
-     *     UsernameConfiguration?: Shapes\UsernameConfigurationType,
-     *     AccountRecoverySetting?: Shapes\AccountRecoverySettingType,
-     *     UserPoolTier?: 'LITE'|'ESSENTIALS'|'PLUS'
+     *     Policies?: Shapes\UserPoolPolicyType|null,
+     *     DeletionProtection?: 'ACTIVE'|'INACTIVE'|null,
+     *     LambdaConfig?: Shapes\LambdaConfigType|null,
+     *     AutoVerifiedAttributes?: list<'phone_number'|'email'>|null,
+     *     AliasAttributes?: list<'phone_number'|'email'|'preferred_username'>|null,
+     *     UsernameAttributes?: list<'phone_number'|'email'>|null,
+     *     SmsVerificationMessage?: string|null,
+     *     EmailVerificationMessage?: string|null,
+     *     EmailVerificationSubject?: string|null,
+     *     VerificationMessageTemplate?: Shapes\VerificationMessageTemplateType|null,
+     *     SmsAuthenticationMessage?: string|null,
+     *     MfaConfiguration?: 'OFF'|'ON'|'OPTIONAL'|null,
+     *     UserAttributeUpdateSettings?: Shapes\UserAttributeUpdateSettingsType|null,
+     *     DeviceConfiguration?: Shapes\DeviceConfigurationType|null,
+     *     EmailConfiguration?: Shapes\EmailConfigurationType|null,
+     *     SmsConfiguration?: Shapes\SmsConfigurationType|null,
+     *     UserPoolTags?: array<string, string>|null,
+     *     AdminCreateUserConfig?: Shapes\AdminCreateUserConfigType|null,
+     *     Schema?: list<Shapes\SchemaAttributeType>|null,
+     *     UserPoolAddOns?: Shapes\UserPoolAddOnsType|null,
+     *     UsernameConfiguration?: Shapes\UsernameConfigurationType|null,
+     *     AccountRecoverySetting?: Shapes\AccountRecoverySettingType|null,
+     *     UserPoolTier?: 'LITE'|'ESSENTIALS'|'PLUS'|null
      * } $args
      */
     public function __construct(array $args)

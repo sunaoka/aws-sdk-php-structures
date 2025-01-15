@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property \Psr\Http\Message\StreamInterface $imageSetMetadataBlob
- * @property string $contentType
- * @property string $contentEncoding
+ * @property string|null $contentType
+ * @property string|null $contentEncoding
  */
 class GetImageSetMetadataResponse extends Response
 {

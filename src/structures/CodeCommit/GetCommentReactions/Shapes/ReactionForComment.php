@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeCommit\GetCommentReactions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ReactionValueFormats $reaction
- * @property list<string> $reactionUsers
- * @property int $reactionsFromDeletedUsersCount
+ * @property ReactionValueFormats|null $reaction
+ * @property list<string>|null $reactionUsers
+ * @property int|null $reactionsFromDeletedUsersCount
  */
 class ReactionForComment extends Shape
 {
     /**
      * @param array{
-     *     reaction?: ReactionValueFormats,
-     *     reactionUsers?: list<string>,
-     *     reactionsFromDeletedUsersCount?: int
+     *     reaction?: ReactionValueFormats|null,
+     *     reactionUsers?: list<string>|null,
+     *     reactionsFromDeletedUsersCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

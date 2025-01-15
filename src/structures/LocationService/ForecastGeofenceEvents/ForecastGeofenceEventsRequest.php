@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CollectionName
  * @property Shapes\ForecastGeofenceEventsDeviceState $DeviceState
- * @property double $TimeHorizonMinutes
- * @property 'Kilometers'|'Miles' $DistanceUnit
- * @property 'KilometersPerHour'|'MilesPerHour' $SpeedUnit
- * @property string $NextToken
- * @property int<1, 20> $MaxResults
+ * @property double|null $TimeHorizonMinutes
+ * @property 'Kilometers'|'Miles'|null $DistanceUnit
+ * @property 'KilometersPerHour'|'MilesPerHour'|null $SpeedUnit
+ * @property string|null $NextToken
+ * @property int<1, 20>|null $MaxResults
  */
 class ForecastGeofenceEventsRequest extends Request
 {
@@ -19,11 +19,11 @@ class ForecastGeofenceEventsRequest extends Request
      * @param array{
      *     CollectionName: string,
      *     DeviceState: Shapes\ForecastGeofenceEventsDeviceState,
-     *     TimeHorizonMinutes?: double,
-     *     DistanceUnit?: 'Kilometers'|'Miles',
-     *     SpeedUnit?: 'KilometersPerHour'|'MilesPerHour',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 20>
+     *     TimeHorizonMinutes?: double|null,
+     *     DistanceUnit?: 'Kilometers'|'Miles'|null,
+     *     SpeedUnit?: 'KilometersPerHour'|'MilesPerHour'|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 20>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $Min
- * @property int $Max
+ * @property int|null $Max
  */
 class VCpuCountRangeRequest extends Shape
 {
     /**
      * @param array{
      *     Min: int,
-     *     Max?: int
+     *     Max?: int|null
      * } $args
      */
     public function __construct(array $args)

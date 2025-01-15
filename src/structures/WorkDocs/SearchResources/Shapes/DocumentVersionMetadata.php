@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\WorkDocs\SearchResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property string $ContentType
- * @property int $Size
- * @property string $Signature
- * @property 'INITIALIZED'|'ACTIVE' $Status
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $ModifiedTimestamp
- * @property \Aws\Api\DateTimeResult $ContentCreatedTimestamp
- * @property \Aws\Api\DateTimeResult $ContentModifiedTimestamp
- * @property string $CreatorId
- * @property array<'SMALL'|'SMALL_HQ'|'LARGE', string> $Thumbnail
- * @property array<'ORIGINAL'|'WITH_COMMENTS', string> $Source
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $ContentType
+ * @property int|null $Size
+ * @property string|null $Signature
+ * @property 'INITIALIZED'|'ACTIVE'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ModifiedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ContentCreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ContentModifiedTimestamp
+ * @property string|null $CreatorId
+ * @property array<'SMALL'|'SMALL_HQ'|'LARGE', string>|null $Thumbnail
+ * @property array<'ORIGINAL'|'WITH_COMMENTS', string>|null $Source
  */
 class DocumentVersionMetadata extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     ContentType?: string,
-     *     Size?: int,
-     *     Signature?: string,
-     *     Status?: 'INITIALIZED'|'ACTIVE',
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ModifiedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ContentCreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ContentModifiedTimestamp?: \Aws\Api\DateTimeResult,
-     *     CreatorId?: string,
-     *     Thumbnail?: array<'SMALL'|'SMALL_HQ'|'LARGE', string>,
-     *     Source?: array<'ORIGINAL'|'WITH_COMMENTS', string>
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     ContentType?: string|null,
+     *     Size?: int|null,
+     *     Signature?: string|null,
+     *     Status?: 'INITIALIZED'|'ACTIVE'|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ModifiedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ContentCreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ContentModifiedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     CreatorId?: string|null,
+     *     Thumbnail?: array<'SMALL'|'SMALL_HQ'|'LARGE', string>|null,
+     *     Source?: array<'ORIGINAL'|'WITH_COMMENTS', string>|null
      * } $args
      */
     public function __construct(array $args = [])

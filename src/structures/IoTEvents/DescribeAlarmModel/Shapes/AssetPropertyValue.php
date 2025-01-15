@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTEvents\DescribeAlarmModel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AssetPropertyVariant $value
- * @property AssetPropertyTimestamp $timestamp
- * @property string $quality
+ * @property AssetPropertyVariant|null $value
+ * @property AssetPropertyTimestamp|null $timestamp
+ * @property string|null $quality
  */
 class AssetPropertyValue extends Shape
 {
     /**
      * @param array{
-     *     value?: AssetPropertyVariant,
-     *     timestamp?: AssetPropertyTimestamp,
-     *     quality?: string
+     *     value?: AssetPropertyVariant|null,
+     *     timestamp?: AssetPropertyTimestamp|null,
+     *     quality?: string|null
      * } $args
      */
     public function __construct(array $args = [])

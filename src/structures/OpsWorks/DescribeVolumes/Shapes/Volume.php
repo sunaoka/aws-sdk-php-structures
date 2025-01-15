@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeVolumes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VolumeId
- * @property string $Ec2VolumeId
- * @property string $Name
- * @property string $RaidArrayId
- * @property string $InstanceId
- * @property string $Status
- * @property int $Size
- * @property string $Device
- * @property string $MountPoint
- * @property string $Region
- * @property string $AvailabilityZone
- * @property string $VolumeType
- * @property int $Iops
- * @property bool $Encrypted
+ * @property string|null $VolumeId
+ * @property string|null $Ec2VolumeId
+ * @property string|null $Name
+ * @property string|null $RaidArrayId
+ * @property string|null $InstanceId
+ * @property string|null $Status
+ * @property int|null $Size
+ * @property string|null $Device
+ * @property string|null $MountPoint
+ * @property string|null $Region
+ * @property string|null $AvailabilityZone
+ * @property string|null $VolumeType
+ * @property int|null $Iops
+ * @property bool|null $Encrypted
  */
 class Volume extends Shape
 {
     /**
      * @param array{
-     *     VolumeId?: string,
-     *     Ec2VolumeId?: string,
-     *     Name?: string,
-     *     RaidArrayId?: string,
-     *     InstanceId?: string,
-     *     Status?: string,
-     *     Size?: int,
-     *     Device?: string,
-     *     MountPoint?: string,
-     *     Region?: string,
-     *     AvailabilityZone?: string,
-     *     VolumeType?: string,
-     *     Iops?: int,
-     *     Encrypted?: bool
+     *     VolumeId?: string|null,
+     *     Ec2VolumeId?: string|null,
+     *     Name?: string|null,
+     *     RaidArrayId?: string|null,
+     *     InstanceId?: string|null,
+     *     Status?: string|null,
+     *     Size?: int|null,
+     *     Device?: string|null,
+     *     MountPoint?: string|null,
+     *     Region?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     VolumeType?: string|null,
+     *     Iops?: int|null,
+     *     Encrypted?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

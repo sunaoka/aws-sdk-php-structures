@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateKnowledgeBaseTemplateUri\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ChunkingConfiguration $chunkingConfiguration
- * @property ParsingConfiguration $parsingConfiguration
+ * @property ChunkingConfiguration|null $chunkingConfiguration
+ * @property ParsingConfiguration|null $parsingConfiguration
  */
 class VectorIngestionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     chunkingConfiguration?: ChunkingConfiguration,
-     *     parsingConfiguration?: ParsingConfiguration
+     *     chunkingConfiguration?: ChunkingConfiguration|null,
+     *     parsingConfiguration?: ParsingConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

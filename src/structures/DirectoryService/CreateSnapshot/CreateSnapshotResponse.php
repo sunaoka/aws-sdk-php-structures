@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DirectoryService\CreateSnapshot;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $SnapshotId
+ * @property string|null $SnapshotId
  */
 class CreateSnapshotResponse extends Response
 {

@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $identifier
  * @property \Aws\Api\DateTimeResult $lastUpdatedTimestamp
  * @property string $message
- * @property array<string, string> $metadata
- * @property 'ACTIVE'|'INACTIVE' $status
+ * @property array<string, string>|null $metadata
+ * @property 'ACTIVE'|'INACTIVE'|null $status
  * @property string $title
  * @property Topic $topic
  * @property 'TASK'|'EVENT' $type
@@ -27,8 +27,8 @@ class NotificationOutput extends Shape
      *     identifier: string,
      *     lastUpdatedTimestamp: \Aws\Api\DateTimeResult,
      *     message: string,
-     *     metadata?: array<string, string>,
-     *     status?: 'ACTIVE'|'INACTIVE',
+     *     metadata?: array<string, string>|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|null,
      *     title: string,
      *     topic: Topic,
      *     type: 'TASK'|'EVENT'

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCisScanResultsAggregatedByTarget
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $lowerInclusive
- * @property int $upperInclusive
+ * @property int|null $lowerInclusive
+ * @property int|null $upperInclusive
  */
 class CisNumberFilter extends Shape
 {
     /**
      * @param array{
-     *     lowerInclusive?: int,
-     *     upperInclusive?: int
+     *     lowerInclusive?: int|null,
+     *     upperInclusive?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetAggregateComplianceDetailsByCo
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EvaluationResultIdentifier $EvaluationResultIdentifier
- * @property 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA' $ComplianceType
- * @property \Aws\Api\DateTimeResult $ResultRecordedTime
- * @property \Aws\Api\DateTimeResult $ConfigRuleInvokedTime
- * @property string $Annotation
- * @property string $AccountId
- * @property string $AwsRegion
+ * @property EvaluationResultIdentifier|null $EvaluationResultIdentifier
+ * @property 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA'|null $ComplianceType
+ * @property \Aws\Api\DateTimeResult|null $ResultRecordedTime
+ * @property \Aws\Api\DateTimeResult|null $ConfigRuleInvokedTime
+ * @property string|null $Annotation
+ * @property string|null $AccountId
+ * @property string|null $AwsRegion
  */
 class AggregateEvaluationResult extends Shape
 {
     /**
      * @param array{
-     *     EvaluationResultIdentifier?: EvaluationResultIdentifier,
-     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA',
-     *     ResultRecordedTime?: \Aws\Api\DateTimeResult,
-     *     ConfigRuleInvokedTime?: \Aws\Api\DateTimeResult,
-     *     Annotation?: string,
-     *     AccountId?: string,
-     *     AwsRegion?: string
+     *     EvaluationResultIdentifier?: EvaluationResultIdentifier|null,
+     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA'|null,
+     *     ResultRecordedTime?: \Aws\Api\DateTimeResult|null,
+     *     ConfigRuleInvokedTime?: \Aws\Api\DateTimeResult|null,
+     *     Annotation?: string|null,
+     *     AccountId?: string|null,
+     *     AwsRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MemoryDB\UpdateCluster;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Cluster $Cluster
+ * @property Shapes\Cluster|null $Cluster
  */
 class UpdateClusterResponse extends Response
 {

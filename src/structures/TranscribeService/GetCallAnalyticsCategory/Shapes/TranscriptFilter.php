@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'EXACT' $TranscriptFilterType
- * @property AbsoluteTimeRange $AbsoluteTimeRange
- * @property RelativeTimeRange $RelativeTimeRange
- * @property 'AGENT'|'CUSTOMER' $ParticipantRole
- * @property bool $Negate
+ * @property AbsoluteTimeRange|null $AbsoluteTimeRange
+ * @property RelativeTimeRange|null $RelativeTimeRange
+ * @property 'AGENT'|'CUSTOMER'|null $ParticipantRole
+ * @property bool|null $Negate
  * @property list<string> $Targets
  */
 class TranscriptFilter extends Shape
@@ -17,10 +17,10 @@ class TranscriptFilter extends Shape
     /**
      * @param array{
      *     TranscriptFilterType: 'EXACT',
-     *     AbsoluteTimeRange?: AbsoluteTimeRange,
-     *     RelativeTimeRange?: RelativeTimeRange,
-     *     ParticipantRole?: 'AGENT'|'CUSTOMER',
-     *     Negate?: bool,
+     *     AbsoluteTimeRange?: AbsoluteTimeRange|null,
+     *     RelativeTimeRange?: RelativeTimeRange|null,
+     *     ParticipantRole?: 'AGENT'|'CUSTOMER'|null,
+     *     Negate?: bool|null,
      *     Targets: list<string>
      * } $args
      */

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CacheSecurityGroupName
  * @property string $Description
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateCacheSecurityGroupRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateCacheSecurityGroupRequest extends Request
      * @param array{
      *     CacheSecurityGroupName: string,
      *     Description: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

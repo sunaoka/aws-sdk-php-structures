@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ForecastService\ListDatasetImportJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DatasetImportJobArn
- * @property string $DatasetImportJobName
- * @property DataSource $DataSource
- * @property string $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
- * @property 'FULL'|'INCREMENTAL' $ImportMode
+ * @property string|null $DatasetImportJobArn
+ * @property string|null $DatasetImportJobName
+ * @property DataSource|null $DataSource
+ * @property string|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
+ * @property 'FULL'|'INCREMENTAL'|null $ImportMode
  */
 class DatasetImportJobSummary extends Shape
 {
     /**
      * @param array{
-     *     DatasetImportJobArn?: string,
-     *     DatasetImportJobName?: string,
-     *     DataSource?: DataSource,
-     *     Status?: string,
-     *     Message?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModificationTime?: \Aws\Api\DateTimeResult,
-     *     ImportMode?: 'FULL'|'INCREMENTAL'
+     *     DatasetImportJobArn?: string|null,
+     *     DatasetImportJobName?: string|null,
+     *     DataSource?: DataSource|null,
+     *     Status?: string|null,
+     *     Message?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModificationTime?: \Aws\Api\DateTimeResult|null,
+     *     ImportMode?: 'FULL'|'INCREMENTAL'|null
      * } $args
      */
     public function __construct(array $args = [])

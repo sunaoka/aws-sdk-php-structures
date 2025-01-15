@@ -6,13 +6,13 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $ExportJobIdentifier
- * @property string $ExportJobArn
- * @property 'RUNNING'|'FAILED'|'COMPLETED' $Status
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $CompletionTime
- * @property string $StatusMessage
- * @property Shapes\ExportSpecification $ExportSpecification
- * @property string $SearchJobArn
+ * @property string|null $ExportJobArn
+ * @property 'RUNNING'|'FAILED'|'COMPLETED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $CompletionTime
+ * @property string|null $StatusMessage
+ * @property Shapes\ExportSpecification|null $ExportSpecification
+ * @property string|null $SearchJobArn
  */
 class GetSearchResultExportJobResponse extends Response
 {

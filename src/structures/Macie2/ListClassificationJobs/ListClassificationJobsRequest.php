@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Macie2\ListClassificationJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\ListJobsFilterCriteria $filterCriteria
- * @property int $maxResults
- * @property string $nextToken
- * @property Shapes\ListJobsSortCriteria $sortCriteria
+ * @property Shapes\ListJobsFilterCriteria|null $filterCriteria
+ * @property int|null $maxResults
+ * @property string|null $nextToken
+ * @property Shapes\ListJobsSortCriteria|null $sortCriteria
  */
 class ListClassificationJobsRequest extends Request
 {
     /**
      * @param array{
-     *     filterCriteria?: Shapes\ListJobsFilterCriteria,
-     *     maxResults?: int,
-     *     nextToken?: string,
-     *     sortCriteria?: Shapes\ListJobsSortCriteria
+     *     filterCriteria?: Shapes\ListJobsFilterCriteria|null,
+     *     maxResults?: int|null,
+     *     nextToken?: string|null,
+     *     sortCriteria?: Shapes\ListJobsSortCriteria|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\PrivateNetworks\ListDeviceIdentifiers;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DeviceIdentifier> $deviceIdentifiers
- * @property string $nextToken
+ * @property list<Shapes\DeviceIdentifier>|null $deviceIdentifiers
+ * @property string|null $nextToken
  */
 class ListDeviceIdentifiersResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\StorageGateway\ListAutomaticTapeCreationPolicie
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $GatewayARN
+ * @property string|null $GatewayARN
  */
 class ListAutomaticTapeCreationPoliciesRequest extends Request
 {
     /**
-     * @param array{GatewayARN?: string} $args
+     * @param array{GatewayARN?: string|null} $args
      */
     public function __construct(array $args = [])
     {

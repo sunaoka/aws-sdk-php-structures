@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\GetAgreementTerms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RenewalTermConfiguration $configuration
- * @property string $type
+ * @property RenewalTermConfiguration|null $configuration
+ * @property string|null $type
  */
 class RenewalTerm extends Shape
 {
     /**
      * @param array{
-     *     configuration?: RenewalTermConfiguration,
-     *     type?: string
+     *     configuration?: RenewalTermConfiguration|null,
+     *     type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

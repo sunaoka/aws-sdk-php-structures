@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CodeCommit\UpdateRepositoryEncryptionKey;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $repositoryId
- * @property string $kmsKeyId
- * @property string $originalKmsKeyId
+ * @property string|null $repositoryId
+ * @property string|null $kmsKeyId
+ * @property string|null $originalKmsKeyId
  */
 class UpdateRepositoryEncryptionKeyResponse extends Response
 {

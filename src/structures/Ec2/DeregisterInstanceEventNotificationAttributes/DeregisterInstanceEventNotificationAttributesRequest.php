@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeregisterInstanceEventNotificationAttribut
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property Shapes\DeregisterInstanceTagAttributeRequest $InstanceTagAttribute
  */
 class DeregisterInstanceEventNotificationAttributesRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     InstanceTagAttribute: Shapes\DeregisterInstanceTagAttributeRequest
      * } $args
      */

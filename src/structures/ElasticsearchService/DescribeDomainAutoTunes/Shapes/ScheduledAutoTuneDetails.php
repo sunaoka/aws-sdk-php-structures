@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DescribeDomainAutoTunes\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $Date
- * @property 'JVM_HEAP_SIZE_TUNING'|'JVM_YOUNG_GEN_TUNING' $ActionType
- * @property string $Action
- * @property 'LOW'|'MEDIUM'|'HIGH' $Severity
+ * @property \Aws\Api\DateTimeResult|null $Date
+ * @property 'JVM_HEAP_SIZE_TUNING'|'JVM_YOUNG_GEN_TUNING'|null $ActionType
+ * @property string|null $Action
+ * @property 'LOW'|'MEDIUM'|'HIGH'|null $Severity
  */
 class ScheduledAutoTuneDetails extends Shape
 {
     /**
      * @param array{
-     *     Date?: \Aws\Api\DateTimeResult,
-     *     ActionType?: 'JVM_HEAP_SIZE_TUNING'|'JVM_YOUNG_GEN_TUNING',
-     *     Action?: string,
-     *     Severity?: 'LOW'|'MEDIUM'|'HIGH'
+     *     Date?: \Aws\Api\DateTimeResult|null,
+     *     ActionType?: 'JVM_HEAP_SIZE_TUNING'|'JVM_YOUNG_GEN_TUNING'|null,
+     *     Action?: string|null,
+     *     Severity?: 'LOW'|'MEDIUM'|'HIGH'|null
      * } $args
      */
     public function __construct(array $args = [])

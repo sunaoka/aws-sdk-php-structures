@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudFormation\DescribePublisher;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $PublisherId
+ * @property string|null $PublisherId
  */
 class DescribePublisherRequest extends Request
 {
     /**
-     * @param array{PublisherId?: string} $args
+     * @param array{PublisherId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

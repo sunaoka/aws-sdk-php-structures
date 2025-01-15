@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\ListPoolOriginationIdentitie
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PoolArn
- * @property string $PoolId
- * @property list<Shapes\OriginationIdentityMetadata> $OriginationIdentities
- * @property string $NextToken
+ * @property string|null $PoolArn
+ * @property string|null $PoolId
+ * @property list<Shapes\OriginationIdentityMetadata>|null $OriginationIdentities
+ * @property string|null $NextToken
  */
 class ListPoolOriginationIdentitiesResponse extends Response
 {

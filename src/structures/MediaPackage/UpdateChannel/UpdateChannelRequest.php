@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaPackage\UpdateChannel;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $Id
  */
 class UpdateChannelRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     Id: string
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EKS\CreateEksAnywhereSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $duration
- * @property 'MONTHS' $unit
+ * @property int|null $duration
+ * @property 'MONTHS'|null $unit
  */
 class EksAnywhereSubscriptionTerm extends Shape
 {
     /**
      * @param array{
-     *     duration?: int,
-     *     unit?: 'MONTHS'
+     *     duration?: int|null,
+     *     unit?: 'MONTHS'|null
      * } $args
      */
     public function __construct(array $args = [])

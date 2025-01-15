@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property bool $AdminPrivacy
- * @property bool $RegistrantPrivacy
- * @property bool $TechPrivacy
- * @property bool $BillingPrivacy
+ * @property bool|null $AdminPrivacy
+ * @property bool|null $RegistrantPrivacy
+ * @property bool|null $TechPrivacy
+ * @property bool|null $BillingPrivacy
  */
 class UpdateDomainContactPrivacyRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     AdminPrivacy?: bool,
-     *     RegistrantPrivacy?: bool,
-     *     TechPrivacy?: bool,
-     *     BillingPrivacy?: bool
+     *     AdminPrivacy?: bool|null,
+     *     RegistrantPrivacy?: bool|null,
+     *     TechPrivacy?: bool|null,
+     *     BillingPrivacy?: bool|null
      * } $args
      */
     public function __construct(array $args)

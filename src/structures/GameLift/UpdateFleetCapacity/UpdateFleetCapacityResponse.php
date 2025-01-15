@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\GameLift\UpdateFleetCapacity;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FleetId
- * @property string $FleetArn
- * @property string $Location
+ * @property string|null $FleetId
+ * @property string|null $FleetArn
+ * @property string|null $Location
  */
 class UpdateFleetCapacityResponse extends Response
 {

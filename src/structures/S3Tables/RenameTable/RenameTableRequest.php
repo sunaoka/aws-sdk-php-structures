@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $tableBucketARN
  * @property string $namespace
  * @property string $name
- * @property string $newNamespaceName
- * @property string $newName
- * @property string $versionToken
+ * @property string|null $newNamespaceName
+ * @property string|null $newName
+ * @property string|null $versionToken
  */
 class RenameTableRequest extends Request
 {
@@ -19,9 +19,9 @@ class RenameTableRequest extends Request
      *     tableBucketARN: string,
      *     namespace: string,
      *     name: string,
-     *     newNamespaceName?: string,
-     *     newName?: string,
-     *     versionToken?: string
+     *     newNamespaceName?: string|null,
+     *     newName?: string|null,
+     *     versionToken?: string|null
      * } $args
      */
     public function __construct(array $args)

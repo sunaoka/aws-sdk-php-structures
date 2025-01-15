@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EngineName
  * @property string $MajorEngineVersion
  * @property string $OptionGroupDescription
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateOptionGroupRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreateOptionGroupRequest extends Request
      *     EngineName: string,
      *     MajorEngineVersion: string,
      *     OptionGroupDescription: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

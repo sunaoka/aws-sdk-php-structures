@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\PrometheusService\DeleteWorkspace;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $workspaceId
  */
 class DeleteWorkspaceRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     workspaceId: string
      * } $args
      */

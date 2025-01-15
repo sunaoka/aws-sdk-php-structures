@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetAutoScalingGroupRecommendat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\AutoScalingGroupRecommendation> $autoScalingGroupRecommendations
- * @property list<Shapes\GetRecommendationError> $errors
+ * @property string|null $nextToken
+ * @property list<Shapes\AutoScalingGroupRecommendation>|null $autoScalingGroupRecommendations
+ * @property list<Shapes\GetRecommendationError>|null $errors
  */
 class GetAutoScalingGroupRecommendationsResponse extends Response
 {

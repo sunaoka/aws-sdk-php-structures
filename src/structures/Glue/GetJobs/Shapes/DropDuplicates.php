@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property list<string> $Inputs
- * @property list<list<string>> $Columns
+ * @property list<list<string>>|null $Columns
  */
 class DropDuplicates extends Shape
 {
@@ -15,7 +15,7 @@ class DropDuplicates extends Shape
      * @param array{
      *     Name: string,
      *     Inputs: list<string>,
-     *     Columns?: list<list<string>>
+     *     Columns?: list<list<string>>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RDSDataService\ExecuteSql\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResultFrame $resultFrame
- * @property int $numberOfRecordsUpdated
+ * @property ResultFrame|null $resultFrame
+ * @property int|null $numberOfRecordsUpdated
  */
 class SqlStatementResult extends Shape
 {
     /**
      * @param array{
-     *     resultFrame?: ResultFrame,
-     *     numberOfRecordsUpdated?: int
+     *     resultFrame?: ResultFrame|null,
+     *     numberOfRecordsUpdated?: int|null
      * } $args
      */
     public function __construct(array $args = [])

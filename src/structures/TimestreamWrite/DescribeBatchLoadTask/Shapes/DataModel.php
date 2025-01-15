@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\TimestreamWrite\DescribeBatchLoadTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TimeColumn
- * @property 'MILLISECONDS'|'SECONDS'|'MICROSECONDS'|'NANOSECONDS' $TimeUnit
+ * @property string|null $TimeColumn
+ * @property 'MILLISECONDS'|'SECONDS'|'MICROSECONDS'|'NANOSECONDS'|null $TimeUnit
  * @property list<DimensionMapping> $DimensionMappings
- * @property MultiMeasureMappings $MultiMeasureMappings
- * @property list<MixedMeasureMapping> $MixedMeasureMappings
- * @property string $MeasureNameColumn
+ * @property MultiMeasureMappings|null $MultiMeasureMappings
+ * @property list<MixedMeasureMapping>|null $MixedMeasureMappings
+ * @property string|null $MeasureNameColumn
  */
 class DataModel extends Shape
 {
     /**
      * @param array{
-     *     TimeColumn?: string,
-     *     TimeUnit?: 'MILLISECONDS'|'SECONDS'|'MICROSECONDS'|'NANOSECONDS',
+     *     TimeColumn?: string|null,
+     *     TimeUnit?: 'MILLISECONDS'|'SECONDS'|'MICROSECONDS'|'NANOSECONDS'|null,
      *     DimensionMappings: list<DimensionMapping>,
-     *     MultiMeasureMappings?: MultiMeasureMappings,
-     *     MixedMeasureMappings?: list<MixedMeasureMapping>,
-     *     MeasureNameColumn?: string
+     *     MultiMeasureMappings?: MultiMeasureMappings|null,
+     *     MixedMeasureMappings?: list<MixedMeasureMapping>|null,
+     *     MeasureNameColumn?: string|null
      * } $args
      */
     public function __construct(array $args)

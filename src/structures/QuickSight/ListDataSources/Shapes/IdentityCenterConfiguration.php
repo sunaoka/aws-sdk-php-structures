@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListDataSources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableIdentityPropagation
+ * @property bool|null $EnableIdentityPropagation
  */
 class IdentityCenterConfiguration extends Shape
 {
     /**
-     * @param array{EnableIdentityPropagation?: bool} $args
+     * @param array{EnableIdentityPropagation?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

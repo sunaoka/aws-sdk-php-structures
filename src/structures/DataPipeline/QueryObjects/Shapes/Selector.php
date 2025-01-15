@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataPipeline\QueryObjects\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $fieldName
- * @property Operator $operator
+ * @property string|null $fieldName
+ * @property Operator|null $operator
  */
 class Selector extends Shape
 {
     /**
      * @param array{
-     *     fieldName?: string,
-     *     operator?: Operator
+     *     fieldName?: string|null,
+     *     operator?: Operator|null
      * } $args
      */
     public function __construct(array $args = [])

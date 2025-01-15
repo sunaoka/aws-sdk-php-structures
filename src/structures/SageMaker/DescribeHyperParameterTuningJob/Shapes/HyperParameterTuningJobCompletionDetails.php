@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHyperParameterTuningJob\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NumberOfTrainingJobsObjectiveNotImproving
- * @property \Aws\Api\DateTimeResult $ConvergenceDetectedTime
+ * @property int|null $NumberOfTrainingJobsObjectiveNotImproving
+ * @property \Aws\Api\DateTimeResult|null $ConvergenceDetectedTime
  */
 class HyperParameterTuningJobCompletionDetails extends Shape
 {
     /**
      * @param array{
-     *     NumberOfTrainingJobsObjectiveNotImproving?: int,
-     *     ConvergenceDetectedTime?: \Aws\Api\DateTimeResult
+     *     NumberOfTrainingJobsObjectiveNotImproving?: int|null,
+     *     ConvergenceDetectedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

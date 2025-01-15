@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ApplicationSource $ApplicationSource
  * @property list<ScalingInstruction> $ScalingInstructions
  * @property 'Active'|'ActiveWithProblems'|'CreationInProgress'|'CreationFailed'|'DeletionInProgress'|'DeletionFailed'|'UpdateInProgress'|'UpdateFailed' $StatusCode
- * @property string $StatusMessage
- * @property \Aws\Api\DateTimeResult $StatusStartTime
- * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $StatusStartTime
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
  */
 class ScalingPlan extends Shape
 {
@@ -23,9 +23,9 @@ class ScalingPlan extends Shape
      *     ApplicationSource: ApplicationSource,
      *     ScalingInstructions: list<ScalingInstruction>,
      *     StatusCode: 'Active'|'ActiveWithProblems'|'CreationInProgress'|'CreationFailed'|'DeletionInProgress'|'DeletionFailed'|'UpdateInProgress'|'UpdateFailed',
-     *     StatusMessage?: string,
-     *     StatusStartTime?: \Aws\Api\DateTimeResult,
-     *     CreationTime?: \Aws\Api\DateTimeResult
+     *     StatusMessage?: string|null,
+     *     StatusStartTime?: \Aws\Api\DateTimeResult|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

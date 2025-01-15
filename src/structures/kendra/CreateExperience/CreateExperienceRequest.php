@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property string $IndexId
- * @property string $RoleArn
- * @property Shapes\ExperienceConfiguration $Configuration
- * @property string $Description
- * @property string $ClientToken
+ * @property string|null $RoleArn
+ * @property Shapes\ExperienceConfiguration|null $Configuration
+ * @property string|null $Description
+ * @property string|null $ClientToken
  */
 class CreateExperienceRequest extends Request
 {
@@ -18,10 +18,10 @@ class CreateExperienceRequest extends Request
      * @param array{
      *     Name: string,
      *     IndexId: string,
-     *     RoleArn?: string,
-     *     Configuration?: Shapes\ExperienceConfiguration,
-     *     Description?: string,
-     *     ClientToken?: string
+     *     RoleArn?: string|null,
+     *     Configuration?: Shapes\ExperienceConfiguration|null,
+     *     Description?: string|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

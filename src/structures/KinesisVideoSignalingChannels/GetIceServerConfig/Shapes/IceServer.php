@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\KinesisVideoSignalingChannels\GetIceServerConfi
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Uris
- * @property string $Username
- * @property string $Password
- * @property int<30, 86400> $Ttl
+ * @property list<string>|null $Uris
+ * @property string|null $Username
+ * @property string|null $Password
+ * @property int<30, 86400>|null $Ttl
  */
 class IceServer extends Shape
 {
     /**
      * @param array{
-     *     Uris?: list<string>,
-     *     Username?: string,
-     *     Password?: string,
-     *     Ttl?: int<30, 86400>
+     *     Uris?: list<string>|null,
+     *     Username?: string|null,
+     *     Password?: string|null,
+     *     Ttl?: int<30, 86400>|null
      * } $args
      */
     public function __construct(array $args = [])

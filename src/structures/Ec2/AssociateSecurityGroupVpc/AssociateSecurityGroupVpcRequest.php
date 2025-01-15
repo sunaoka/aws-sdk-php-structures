@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GroupId
  * @property string $VpcId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class AssociateSecurityGroupVpcRequest extends Request
 {
@@ -15,7 +15,7 @@ class AssociateSecurityGroupVpcRequest extends Request
      * @param array{
      *     GroupId: string,
      *     VpcId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

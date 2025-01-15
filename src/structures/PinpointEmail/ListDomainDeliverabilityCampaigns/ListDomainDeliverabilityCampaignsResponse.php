@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DomainDeliverabilityCampaign> $DomainDeliverabilityCampaigns
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListDomainDeliverabilityCampaignsResponse extends Response
 {

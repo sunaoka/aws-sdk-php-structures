@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ComboChartFieldWells $FieldWells
- * @property ComboChartSortConfiguration $SortConfiguration
- * @property 'CLUSTERED'|'STACKED'|'STACKED_PERCENT' $BarsArrangement
- * @property AxisDisplayOptions $CategoryAxis
- * @property ChartAxisLabelOptions $CategoryLabelOptions
- * @property AxisDisplayOptions $PrimaryYAxisDisplayOptions
- * @property ChartAxisLabelOptions $PrimaryYAxisLabelOptions
- * @property AxisDisplayOptions $SecondaryYAxisDisplayOptions
- * @property ChartAxisLabelOptions $SecondaryYAxisLabelOptions
- * @property SingleAxisOptions $SingleAxisOptions
- * @property ChartAxisLabelOptions $ColorLabelOptions
- * @property LegendOptions $Legend
- * @property DataLabelOptions $BarDataLabels
- * @property DataLabelOptions $LineDataLabels
- * @property TooltipOptions $Tooltip
- * @property list<ReferenceLine> $ReferenceLines
- * @property VisualPalette $VisualPalette
- * @property VisualInteractionOptions $Interactions
+ * @property ComboChartFieldWells|null $FieldWells
+ * @property ComboChartSortConfiguration|null $SortConfiguration
+ * @property 'CLUSTERED'|'STACKED'|'STACKED_PERCENT'|null $BarsArrangement
+ * @property AxisDisplayOptions|null $CategoryAxis
+ * @property ChartAxisLabelOptions|null $CategoryLabelOptions
+ * @property AxisDisplayOptions|null $PrimaryYAxisDisplayOptions
+ * @property ChartAxisLabelOptions|null $PrimaryYAxisLabelOptions
+ * @property AxisDisplayOptions|null $SecondaryYAxisDisplayOptions
+ * @property ChartAxisLabelOptions|null $SecondaryYAxisLabelOptions
+ * @property SingleAxisOptions|null $SingleAxisOptions
+ * @property ChartAxisLabelOptions|null $ColorLabelOptions
+ * @property LegendOptions|null $Legend
+ * @property DataLabelOptions|null $BarDataLabels
+ * @property DataLabelOptions|null $LineDataLabels
+ * @property TooltipOptions|null $Tooltip
+ * @property list<ReferenceLine>|null $ReferenceLines
+ * @property VisualPalette|null $VisualPalette
+ * @property VisualInteractionOptions|null $Interactions
  */
 class ComboChartConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FieldWells?: ComboChartFieldWells,
-     *     SortConfiguration?: ComboChartSortConfiguration,
-     *     BarsArrangement?: 'CLUSTERED'|'STACKED'|'STACKED_PERCENT',
-     *     CategoryAxis?: AxisDisplayOptions,
-     *     CategoryLabelOptions?: ChartAxisLabelOptions,
-     *     PrimaryYAxisDisplayOptions?: AxisDisplayOptions,
-     *     PrimaryYAxisLabelOptions?: ChartAxisLabelOptions,
-     *     SecondaryYAxisDisplayOptions?: AxisDisplayOptions,
-     *     SecondaryYAxisLabelOptions?: ChartAxisLabelOptions,
-     *     SingleAxisOptions?: SingleAxisOptions,
-     *     ColorLabelOptions?: ChartAxisLabelOptions,
-     *     Legend?: LegendOptions,
-     *     BarDataLabels?: DataLabelOptions,
-     *     LineDataLabels?: DataLabelOptions,
-     *     Tooltip?: TooltipOptions,
-     *     ReferenceLines?: list<ReferenceLine>,
-     *     VisualPalette?: VisualPalette,
-     *     Interactions?: VisualInteractionOptions
+     *     FieldWells?: ComboChartFieldWells|null,
+     *     SortConfiguration?: ComboChartSortConfiguration|null,
+     *     BarsArrangement?: 'CLUSTERED'|'STACKED'|'STACKED_PERCENT'|null,
+     *     CategoryAxis?: AxisDisplayOptions|null,
+     *     CategoryLabelOptions?: ChartAxisLabelOptions|null,
+     *     PrimaryYAxisDisplayOptions?: AxisDisplayOptions|null,
+     *     PrimaryYAxisLabelOptions?: ChartAxisLabelOptions|null,
+     *     SecondaryYAxisDisplayOptions?: AxisDisplayOptions|null,
+     *     SecondaryYAxisLabelOptions?: ChartAxisLabelOptions|null,
+     *     SingleAxisOptions?: SingleAxisOptions|null,
+     *     ColorLabelOptions?: ChartAxisLabelOptions|null,
+     *     Legend?: LegendOptions|null,
+     *     BarDataLabels?: DataLabelOptions|null,
+     *     LineDataLabels?: DataLabelOptions|null,
+     *     Tooltip?: TooltipOptions|null,
+     *     ReferenceLines?: list<ReferenceLine>|null,
+     *     VisualPalette?: VisualPalette|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

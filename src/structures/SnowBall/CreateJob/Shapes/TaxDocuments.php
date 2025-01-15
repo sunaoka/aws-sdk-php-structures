@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SnowBall\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property INDTaxDocuments $IND
+ * @property INDTaxDocuments|null $IND
  */
 class TaxDocuments extends Shape
 {
     /**
-     * @param array{IND?: INDTaxDocuments} $args
+     * @param array{IND?: INDTaxDocuments|null} $args
      */
     public function __construct(array $args = [])
     {

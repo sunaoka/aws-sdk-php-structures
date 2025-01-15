@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClientToken
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  * @property string $FileSystemId
- * @property Shapes\PosixUser $PosixUser
- * @property Shapes\RootDirectory $RootDirectory
+ * @property Shapes\PosixUser|null $PosixUser
+ * @property Shapes\RootDirectory|null $RootDirectory
  */
 class CreateAccessPointRequest extends Request
 {
     /**
      * @param array{
      *     ClientToken: string,
-     *     Tags?: list<Shapes\Tag>,
+     *     Tags?: list<Shapes\Tag>|null,
      *     FileSystemId: string,
-     *     PosixUser?: Shapes\PosixUser,
-     *     RootDirectory?: Shapes\RootDirectory
+     *     PosixUser?: Shapes\PosixUser|null,
+     *     RootDirectory?: Shapes\RootDirectory|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,81 +5,81 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBEngineVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Engine
- * @property string $EngineVersion
- * @property string $DBParameterGroupFamily
- * @property string $DBEngineDescription
- * @property string $DBEngineVersionDescription
- * @property CharacterSet $DefaultCharacterSet
- * @property CustomDBEngineVersionAMI $Image
- * @property string $DBEngineMediaType
- * @property list<CharacterSet> $SupportedCharacterSets
- * @property list<CharacterSet> $SupportedNcharCharacterSets
- * @property list<UpgradeTarget> $ValidUpgradeTarget
- * @property list<Timezone> $SupportedTimezones
- * @property list<string> $ExportableLogTypes
- * @property bool $SupportsLogExportsToCloudwatchLogs
- * @property bool $SupportsReadReplica
- * @property list<string> $SupportedEngineModes
- * @property list<string> $SupportedFeatureNames
- * @property string $Status
- * @property bool $SupportsParallelQuery
- * @property bool $SupportsGlobalDatabases
- * @property string $MajorEngineVersion
- * @property string $DatabaseInstallationFilesS3BucketName
- * @property string $DatabaseInstallationFilesS3Prefix
- * @property string $DBEngineVersionArn
- * @property string $KMSKeyId
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property list<Tag> $TagList
- * @property bool $SupportsBabelfish
- * @property string $CustomDBEngineVersionManifest
- * @property bool $SupportsLimitlessDatabase
- * @property bool $SupportsCertificateRotationWithoutRestart
- * @property list<string> $SupportedCACertificateIdentifiers
- * @property bool $SupportsLocalWriteForwarding
- * @property bool $SupportsIntegrations
- * @property ServerlessV2FeaturesSupport $ServerlessV2FeaturesSupport
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property string|null $DBParameterGroupFamily
+ * @property string|null $DBEngineDescription
+ * @property string|null $DBEngineVersionDescription
+ * @property CharacterSet|null $DefaultCharacterSet
+ * @property CustomDBEngineVersionAMI|null $Image
+ * @property string|null $DBEngineMediaType
+ * @property list<CharacterSet>|null $SupportedCharacterSets
+ * @property list<CharacterSet>|null $SupportedNcharCharacterSets
+ * @property list<UpgradeTarget>|null $ValidUpgradeTarget
+ * @property list<Timezone>|null $SupportedTimezones
+ * @property list<string>|null $ExportableLogTypes
+ * @property bool|null $SupportsLogExportsToCloudwatchLogs
+ * @property bool|null $SupportsReadReplica
+ * @property list<string>|null $SupportedEngineModes
+ * @property list<string>|null $SupportedFeatureNames
+ * @property string|null $Status
+ * @property bool|null $SupportsParallelQuery
+ * @property bool|null $SupportsGlobalDatabases
+ * @property string|null $MajorEngineVersion
+ * @property string|null $DatabaseInstallationFilesS3BucketName
+ * @property string|null $DatabaseInstallationFilesS3Prefix
+ * @property string|null $DBEngineVersionArn
+ * @property string|null $KMSKeyId
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property list<Tag>|null $TagList
+ * @property bool|null $SupportsBabelfish
+ * @property string|null $CustomDBEngineVersionManifest
+ * @property bool|null $SupportsLimitlessDatabase
+ * @property bool|null $SupportsCertificateRotationWithoutRestart
+ * @property list<string>|null $SupportedCACertificateIdentifiers
+ * @property bool|null $SupportsLocalWriteForwarding
+ * @property bool|null $SupportsIntegrations
+ * @property ServerlessV2FeaturesSupport|null $ServerlessV2FeaturesSupport
  */
 class DBEngineVersion extends Shape
 {
     /**
      * @param array{
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     DBParameterGroupFamily?: string,
-     *     DBEngineDescription?: string,
-     *     DBEngineVersionDescription?: string,
-     *     DefaultCharacterSet?: CharacterSet,
-     *     Image?: CustomDBEngineVersionAMI,
-     *     DBEngineMediaType?: string,
-     *     SupportedCharacterSets?: list<CharacterSet>,
-     *     SupportedNcharCharacterSets?: list<CharacterSet>,
-     *     ValidUpgradeTarget?: list<UpgradeTarget>,
-     *     SupportedTimezones?: list<Timezone>,
-     *     ExportableLogTypes?: list<string>,
-     *     SupportsLogExportsToCloudwatchLogs?: bool,
-     *     SupportsReadReplica?: bool,
-     *     SupportedEngineModes?: list<string>,
-     *     SupportedFeatureNames?: list<string>,
-     *     Status?: string,
-     *     SupportsParallelQuery?: bool,
-     *     SupportsGlobalDatabases?: bool,
-     *     MajorEngineVersion?: string,
-     *     DatabaseInstallationFilesS3BucketName?: string,
-     *     DatabaseInstallationFilesS3Prefix?: string,
-     *     DBEngineVersionArn?: string,
-     *     KMSKeyId?: string,
-     *     CreateTime?: \Aws\Api\DateTimeResult,
-     *     TagList?: list<Tag>,
-     *     SupportsBabelfish?: bool,
-     *     CustomDBEngineVersionManifest?: string,
-     *     SupportsLimitlessDatabase?: bool,
-     *     SupportsCertificateRotationWithoutRestart?: bool,
-     *     SupportedCACertificateIdentifiers?: list<string>,
-     *     SupportsLocalWriteForwarding?: bool,
-     *     SupportsIntegrations?: bool,
-     *     ServerlessV2FeaturesSupport?: ServerlessV2FeaturesSupport
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     DBParameterGroupFamily?: string|null,
+     *     DBEngineDescription?: string|null,
+     *     DBEngineVersionDescription?: string|null,
+     *     DefaultCharacterSet?: CharacterSet|null,
+     *     Image?: CustomDBEngineVersionAMI|null,
+     *     DBEngineMediaType?: string|null,
+     *     SupportedCharacterSets?: list<CharacterSet>|null,
+     *     SupportedNcharCharacterSets?: list<CharacterSet>|null,
+     *     ValidUpgradeTarget?: list<UpgradeTarget>|null,
+     *     SupportedTimezones?: list<Timezone>|null,
+     *     ExportableLogTypes?: list<string>|null,
+     *     SupportsLogExportsToCloudwatchLogs?: bool|null,
+     *     SupportsReadReplica?: bool|null,
+     *     SupportedEngineModes?: list<string>|null,
+     *     SupportedFeatureNames?: list<string>|null,
+     *     Status?: string|null,
+     *     SupportsParallelQuery?: bool|null,
+     *     SupportsGlobalDatabases?: bool|null,
+     *     MajorEngineVersion?: string|null,
+     *     DatabaseInstallationFilesS3BucketName?: string|null,
+     *     DatabaseInstallationFilesS3Prefix?: string|null,
+     *     DBEngineVersionArn?: string|null,
+     *     KMSKeyId?: string|null,
+     *     CreateTime?: \Aws\Api\DateTimeResult|null,
+     *     TagList?: list<Tag>|null,
+     *     SupportsBabelfish?: bool|null,
+     *     CustomDBEngineVersionManifest?: string|null,
+     *     SupportsLimitlessDatabase?: bool|null,
+     *     SupportsCertificateRotationWithoutRestart?: bool|null,
+     *     SupportedCACertificateIdentifiers?: list<string>|null,
+     *     SupportsLocalWriteForwarding?: bool|null,
+     *     SupportsIntegrations?: bool|null,
+     *     ServerlessV2FeaturesSupport?: ServerlessV2FeaturesSupport|null
      * } $args
      */
     public function __construct(array $args = [])

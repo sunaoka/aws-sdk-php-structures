@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ACTIVE'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED' $state
- * @property ConfigurationErrorDetails $error
+ * @property ConfigurationErrorDetails|null $error
  */
 class ConfigurationStatus extends Shape
 {
     /**
      * @param array{
      *     state: 'ACTIVE'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED',
-     *     error?: ConfigurationErrorDetails
+     *     error?: ConfigurationErrorDetails|null
      * } $args
      */
     public function __construct(array $args)

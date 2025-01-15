@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Chime\PutVoiceConnectorLoggingConfiguration\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableSIPLogs
- * @property bool $EnableMediaMetricLogs
+ * @property bool|null $EnableSIPLogs
+ * @property bool|null $EnableMediaMetricLogs
  */
 class LoggingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     EnableSIPLogs?: bool,
-     *     EnableMediaMetricLogs?: bool
+     *     EnableSIPLogs?: bool|null,
+     *     EnableMediaMetricLogs?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

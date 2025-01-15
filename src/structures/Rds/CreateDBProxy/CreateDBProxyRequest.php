@@ -10,11 +10,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\UserAuthConfig> $Auth
  * @property string $RoleArn
  * @property list<string> $VpcSubnetIds
- * @property list<string> $VpcSecurityGroupIds
- * @property bool $RequireTLS
- * @property int $IdleClientTimeout
- * @property bool $DebugLogging
- * @property list<Shapes\Tag> $Tags
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property bool|null $RequireTLS
+ * @property int|null $IdleClientTimeout
+ * @property bool|null $DebugLogging
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateDBProxyRequest extends Request
 {
@@ -25,11 +25,11 @@ class CreateDBProxyRequest extends Request
      *     Auth: list<Shapes\UserAuthConfig>,
      *     RoleArn: string,
      *     VpcSubnetIds: list<string>,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     RequireTLS?: bool,
-     *     IdleClientTimeout?: int,
-     *     DebugLogging?: bool,
-     *     Tags?: list<Shapes\Tag>
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     RequireTLS?: bool|null,
+     *     IdleClientTimeout?: int|null,
+     *     DebugLogging?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $scanName
  * @property Shapes\Schedule $schedule
  * @property 'LEVEL_1'|'LEVEL_2' $securityLevel
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property Shapes\CreateCisTargets $targets
  */
 class CreateCisScanConfigurationRequest extends Request
@@ -18,7 +18,7 @@ class CreateCisScanConfigurationRequest extends Request
      *     scanName: string,
      *     schedule: Shapes\Schedule,
      *     securityLevel: 'LEVEL_1'|'LEVEL_2',
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     targets: Shapes\CreateCisTargets
      * } $args
      */

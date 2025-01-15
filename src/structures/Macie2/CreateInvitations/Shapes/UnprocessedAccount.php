@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Macie2\CreateInvitations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property 'ClientError'|'InternalError' $errorCode
- * @property string $errorMessage
+ * @property string|null $accountId
+ * @property 'ClientError'|'InternalError'|null $errorCode
+ * @property string|null $errorMessage
  */
 class UnprocessedAccount extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     errorCode?: 'ClientError'|'InternalError',
-     *     errorMessage?: string
+     *     accountId?: string|null,
+     *     errorCode?: 'ClientError'|'InternalError'|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

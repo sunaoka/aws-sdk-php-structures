@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AccountId
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListStorageLensGroupsRequest extends Request
 {
     /**
      * @param array{
      *     AccountId: string,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

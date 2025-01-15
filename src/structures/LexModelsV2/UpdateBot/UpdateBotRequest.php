@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $botId
  * @property string $botName
- * @property string $description
+ * @property string|null $description
  * @property string $roleArn
  * @property Shapes\DataPrivacy $dataPrivacy
  * @property int<60, 86400> $idleSessionTTLInSeconds
- * @property 'Bot'|'BotNetwork' $botType
- * @property list<Shapes\BotMember> $botMembers
+ * @property 'Bot'|'BotNetwork'|null $botType
+ * @property list<Shapes\BotMember>|null $botMembers
  */
 class UpdateBotRequest extends Request
 {
@@ -20,12 +20,12 @@ class UpdateBotRequest extends Request
      * @param array{
      *     botId: string,
      *     botName: string,
-     *     description?: string,
+     *     description?: string|null,
      *     roleArn: string,
      *     dataPrivacy: Shapes\DataPrivacy,
      *     idleSessionTTLInSeconds: int<60, 86400>,
-     *     botType?: 'Bot'|'BotNetwork',
-     *     botMembers?: list<Shapes\BotMember>
+     *     botType?: 'Bot'|'BotNetwork'|null,
+     *     botMembers?: list<Shapes\BotMember>|null
      * } $args
      */
     public function __construct(array $args)

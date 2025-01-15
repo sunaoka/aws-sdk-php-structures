@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CognitoIdentity\GetOpenIdTokenForDeveloperIdent
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $IdentityId
- * @property string $Token
+ * @property string|null $IdentityId
+ * @property string|null $Token
  */
 class GetOpenIdTokenForDeveloperIdentityResponse extends Response
 {

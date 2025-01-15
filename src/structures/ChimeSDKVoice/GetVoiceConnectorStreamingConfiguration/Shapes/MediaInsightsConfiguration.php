@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\GetVoiceConnectorStreamingConfigu
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Disabled
- * @property string $ConfigurationArn
+ * @property bool|null $Disabled
+ * @property string|null $ConfigurationArn
  */
 class MediaInsightsConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Disabled?: bool,
-     *     ConfigurationArn?: string
+     *     Disabled?: bool|null,
+     *     ConfigurationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

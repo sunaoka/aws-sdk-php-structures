@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListImports;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $botId
- * @property string $botVersion
- * @property Shapes\ImportSortBy $sortBy
- * @property list<Shapes\ImportFilter> $filters
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
- * @property string $localeId
+ * @property string|null $botId
+ * @property string|null $botVersion
+ * @property Shapes\ImportSortBy|null $sortBy
+ * @property list<Shapes\ImportFilter>|null $filters
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
+ * @property string|null $localeId
  */
 class ListImportsRequest extends Request
 {
     /**
      * @param array{
-     *     botId?: string,
-     *     botVersion?: string,
-     *     sortBy?: Shapes\ImportSortBy,
-     *     filters?: list<Shapes\ImportFilter>,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string,
-     *     localeId?: string
+     *     botId?: string|null,
+     *     botVersion?: string|null,
+     *     sortBy?: Shapes\ImportSortBy|null,
+     *     filters?: list<Shapes\ImportFilter>|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null,
+     *     localeId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

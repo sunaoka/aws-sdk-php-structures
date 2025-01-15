@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\SearchRasterDataCollection\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, AssetValue> $Assets
+ * @property array<string, AssetValue>|null $Assets
  * @property \Aws\Api\DateTimeResult $DateTime
  * @property Geometry $Geometry
  * @property string $Id
- * @property Properties $Properties
+ * @property Properties|null $Properties
  */
 class ItemSource extends Shape
 {
     /**
      * @param array{
-     *     Assets?: array<string, AssetValue>,
+     *     Assets?: array<string, AssetValue>|null,
      *     DateTime: \Aws\Api\DateTimeResult,
      *     Geometry: Geometry,
      *     Id: string,
-     *     Properties?: Properties
+     *     Properties?: Properties|null
      * } $args
      */
     public function __construct(array $args)

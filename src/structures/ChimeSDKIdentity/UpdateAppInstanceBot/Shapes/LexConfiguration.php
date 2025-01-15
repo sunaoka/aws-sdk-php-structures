@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\UpdateAppInstanceBot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'STANDARD_MESSAGES' $RespondsTo
- * @property InvokedBy $InvokedBy
+ * @property 'STANDARD_MESSAGES'|null $RespondsTo
+ * @property InvokedBy|null $InvokedBy
  * @property string $LexBotAliasArn
  * @property string $LocaleId
- * @property string $WelcomeIntent
+ * @property string|null $WelcomeIntent
  */
 class LexConfiguration extends Shape
 {
     /**
      * @param array{
-     *     RespondsTo?: 'STANDARD_MESSAGES',
-     *     InvokedBy?: InvokedBy,
+     *     RespondsTo?: 'STANDARD_MESSAGES'|null,
+     *     InvokedBy?: InvokedBy|null,
      *     LexBotAliasArn: string,
      *     LocaleId: string,
-     *     WelcomeIntent?: string
+     *     WelcomeIntent?: string|null
      * } $args
      */
     public function __construct(array $args)

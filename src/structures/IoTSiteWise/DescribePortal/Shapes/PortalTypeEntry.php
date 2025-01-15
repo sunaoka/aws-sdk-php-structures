@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\DescribePortal\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $portalTools
+ * @property list<string>|null $portalTools
  */
 class PortalTypeEntry extends Shape
 {
     /**
-     * @param array{portalTools?: list<string>} $args
+     * @param array{portalTools?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

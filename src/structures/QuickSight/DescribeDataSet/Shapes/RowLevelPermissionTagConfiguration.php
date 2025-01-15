@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $Status
+ * @property 'ENABLED'|'DISABLED'|null $Status
  * @property list<RowLevelPermissionTagRule> $TagRules
- * @property list<list<string>> $TagRuleConfigurations
+ * @property list<list<string>>|null $TagRuleConfigurations
  */
 class RowLevelPermissionTagConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Status?: 'ENABLED'|'DISABLED',
+     *     Status?: 'ENABLED'|'DISABLED'|null,
      *     TagRules: list<RowLevelPermissionTagRule>,
-     *     TagRuleConfigurations?: list<list<string>>
+     *     TagRuleConfigurations?: list<list<string>>|null
      * } $args
      */
     public function __construct(array $args)

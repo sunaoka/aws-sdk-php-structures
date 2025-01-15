@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Pinpoint\UpdateJourneyState\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property EventStartCondition $EventStartCondition
- * @property SegmentCondition $SegmentStartCondition
+ * @property string|null $Description
+ * @property EventStartCondition|null $EventStartCondition
+ * @property SegmentCondition|null $SegmentStartCondition
  */
 class StartCondition extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     EventStartCondition?: EventStartCondition,
-     *     SegmentStartCondition?: SegmentCondition
+     *     Description?: string|null,
+     *     EventStartCondition?: EventStartCondition|null,
+     *     SegmentStartCondition?: SegmentCondition|null
      * } $args
      */
     public function __construct(array $args = [])

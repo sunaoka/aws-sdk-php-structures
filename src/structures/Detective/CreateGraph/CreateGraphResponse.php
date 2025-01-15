@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Detective\CreateGraph;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $GraphArn
+ * @property string|null $GraphArn
  */
 class CreateGraphResponse extends Response
 {

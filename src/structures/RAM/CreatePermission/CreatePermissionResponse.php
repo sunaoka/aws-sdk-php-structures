@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\RAM\CreatePermission;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ResourceSharePermissionSummary $permission
- * @property string $clientToken
+ * @property Shapes\ResourceSharePermissionSummary|null $permission
+ * @property string|null $clientToken
  */
 class CreatePermissionResponse extends Response
 {

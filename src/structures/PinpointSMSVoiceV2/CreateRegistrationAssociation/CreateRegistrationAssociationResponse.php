@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ResourceArn
  * @property string $ResourceId
  * @property string $ResourceType
- * @property string $IsoCountryCode
- * @property string $PhoneNumber
+ * @property string|null $IsoCountryCode
+ * @property string|null $PhoneNumber
  */
 class CreateRegistrationAssociationResponse extends Response
 {

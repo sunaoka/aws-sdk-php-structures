@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DeleteEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DatabaseName
- * @property string $Password
- * @property int $Port
- * @property string $ServerName
- * @property bool $SetDataCaptureChanges
- * @property string $CurrentLsn
- * @property int $MaxKBytesPerRead
- * @property string $Username
- * @property string $SecretsManagerAccessRoleArn
- * @property string $SecretsManagerSecretId
- * @property int $LoadTimeout
- * @property int $WriteBufferSize
- * @property int $MaxFileSize
- * @property bool $KeepCsvFiles
+ * @property string|null $DatabaseName
+ * @property string|null $Password
+ * @property int|null $Port
+ * @property string|null $ServerName
+ * @property bool|null $SetDataCaptureChanges
+ * @property string|null $CurrentLsn
+ * @property int|null $MaxKBytesPerRead
+ * @property string|null $Username
+ * @property string|null $SecretsManagerAccessRoleArn
+ * @property string|null $SecretsManagerSecretId
+ * @property int|null $LoadTimeout
+ * @property int|null $WriteBufferSize
+ * @property int|null $MaxFileSize
+ * @property bool|null $KeepCsvFiles
  */
 class IBMDb2Settings extends Shape
 {
     /**
      * @param array{
-     *     DatabaseName?: string,
-     *     Password?: string,
-     *     Port?: int,
-     *     ServerName?: string,
-     *     SetDataCaptureChanges?: bool,
-     *     CurrentLsn?: string,
-     *     MaxKBytesPerRead?: int,
-     *     Username?: string,
-     *     SecretsManagerAccessRoleArn?: string,
-     *     SecretsManagerSecretId?: string,
-     *     LoadTimeout?: int,
-     *     WriteBufferSize?: int,
-     *     MaxFileSize?: int,
-     *     KeepCsvFiles?: bool
+     *     DatabaseName?: string|null,
+     *     Password?: string|null,
+     *     Port?: int|null,
+     *     ServerName?: string|null,
+     *     SetDataCaptureChanges?: bool|null,
+     *     CurrentLsn?: string|null,
+     *     MaxKBytesPerRead?: int|null,
+     *     Username?: string|null,
+     *     SecretsManagerAccessRoleArn?: string|null,
+     *     SecretsManagerSecretId?: string|null,
+     *     LoadTimeout?: int|null,
+     *     WriteBufferSize?: int|null,
+     *     MaxFileSize?: int|null,
+     *     KeepCsvFiles?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

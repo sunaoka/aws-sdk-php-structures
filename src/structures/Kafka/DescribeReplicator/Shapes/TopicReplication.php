@@ -5,24 +5,24 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeReplicator\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $CopyAccessControlListsForTopics
- * @property bool $CopyTopicConfigurations
- * @property bool $DetectAndCopyNewTopics
- * @property ReplicationStartingPosition $StartingPosition
- * @property ReplicationTopicNameConfiguration $TopicNameConfiguration
- * @property list<string> $TopicsToExclude
+ * @property bool|null $CopyAccessControlListsForTopics
+ * @property bool|null $CopyTopicConfigurations
+ * @property bool|null $DetectAndCopyNewTopics
+ * @property ReplicationStartingPosition|null $StartingPosition
+ * @property ReplicationTopicNameConfiguration|null $TopicNameConfiguration
+ * @property list<string>|null $TopicsToExclude
  * @property list<string> $TopicsToReplicate
  */
 class TopicReplication extends Shape
 {
     /**
      * @param array{
-     *     CopyAccessControlListsForTopics?: bool,
-     *     CopyTopicConfigurations?: bool,
-     *     DetectAndCopyNewTopics?: bool,
-     *     StartingPosition?: ReplicationStartingPosition,
-     *     TopicNameConfiguration?: ReplicationTopicNameConfiguration,
-     *     TopicsToExclude?: list<string>,
+     *     CopyAccessControlListsForTopics?: bool|null,
+     *     CopyTopicConfigurations?: bool|null,
+     *     DetectAndCopyNewTopics?: bool|null,
+     *     StartingPosition?: ReplicationStartingPosition|null,
+     *     TopicNameConfiguration?: ReplicationTopicNameConfiguration|null,
+     *     TopicsToExclude?: list<string>|null,
      *     TopicsToReplicate: list<string>
      * } $args
      */

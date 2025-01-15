@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\EventBridge\DescribeEventBus;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Name
- * @property string $Arn
- * @property string $Description
- * @property string $KmsKeyIdentifier
- * @property Shapes\DeadLetterConfig $DeadLetterConfig
- * @property string $Policy
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $Name
+ * @property string|null $Arn
+ * @property string|null $Description
+ * @property string|null $KmsKeyIdentifier
+ * @property Shapes\DeadLetterConfig|null $DeadLetterConfig
+ * @property string|null $Policy
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class DescribeEventBusResponse extends Response
 {

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DbParameterGroupSummary> $items
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListDbParameterGroupsResponse extends Response
 {

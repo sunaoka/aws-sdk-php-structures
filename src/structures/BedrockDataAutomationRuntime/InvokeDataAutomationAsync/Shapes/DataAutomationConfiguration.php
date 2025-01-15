@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $dataAutomationArn
- * @property 'LIVE'|'DEVELOPMENT' $stage
+ * @property 'LIVE'|'DEVELOPMENT'|null $stage
  */
 class DataAutomationConfiguration extends Shape
 {
     /**
      * @param array{
      *     dataAutomationArn: string,
-     *     stage?: 'LIVE'|'DEVELOPMENT'
+     *     stage?: 'LIVE'|'DEVELOPMENT'|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $MetricName
  * @property Shapes\WafAction $DefaultAction
  * @property string $ChangeToken
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateWebACLRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreateWebACLRequest extends Request
      *     MetricName: string,
      *     DefaultAction: Shapes\WafAction,
      *     ChangeToken: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

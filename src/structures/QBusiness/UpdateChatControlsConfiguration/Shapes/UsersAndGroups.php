@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QBusiness\UpdateChatControlsConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $userIds
- * @property list<string> $userGroups
+ * @property list<string>|null $userIds
+ * @property list<string>|null $userGroups
  */
 class UsersAndGroups extends Shape
 {
     /**
      * @param array{
-     *     userIds?: list<string>,
-     *     userGroups?: list<string>
+     *     userIds?: list<string>|null,
+     *     userGroups?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AppflowIntegrationWorkflowMetrics $AppflowIntegration
+ * @property AppflowIntegrationWorkflowMetrics|null $AppflowIntegration
  */
 class WorkflowMetrics extends Shape
 {
     /**
-     * @param array{AppflowIntegration?: AppflowIntegrationWorkflowMetrics} $args
+     * @param array{AppflowIntegration?: AppflowIntegrationWorkflowMetrics|null} $args
      */
     public function __construct(array $args = [])
     {

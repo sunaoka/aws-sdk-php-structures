@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationName
- * @property string $Cname
- * @property string $DateCreated
- * @property string $DateUpdated
- * @property string $Description
- * @property string $EndpointUrl
- * @property string $EnvironmentArn
- * @property string $EnvironmentId
- * @property list<AwsElasticBeanstalkEnvironmentEnvironmentLink> $EnvironmentLinks
- * @property string $EnvironmentName
- * @property list<AwsElasticBeanstalkEnvironmentOptionSetting> $OptionSettings
- * @property string $PlatformArn
- * @property string $SolutionStackName
- * @property string $Status
- * @property AwsElasticBeanstalkEnvironmentTier $Tier
- * @property string $VersionLabel
+ * @property string|null $ApplicationName
+ * @property string|null $Cname
+ * @property string|null $DateCreated
+ * @property string|null $DateUpdated
+ * @property string|null $Description
+ * @property string|null $EndpointUrl
+ * @property string|null $EnvironmentArn
+ * @property string|null $EnvironmentId
+ * @property list<AwsElasticBeanstalkEnvironmentEnvironmentLink>|null $EnvironmentLinks
+ * @property string|null $EnvironmentName
+ * @property list<AwsElasticBeanstalkEnvironmentOptionSetting>|null $OptionSettings
+ * @property string|null $PlatformArn
+ * @property string|null $SolutionStackName
+ * @property string|null $Status
+ * @property AwsElasticBeanstalkEnvironmentTier|null $Tier
+ * @property string|null $VersionLabel
  */
 class AwsElasticBeanstalkEnvironmentDetails extends Shape
 {
     /**
      * @param array{
-     *     ApplicationName?: string,
-     *     Cname?: string,
-     *     DateCreated?: string,
-     *     DateUpdated?: string,
-     *     Description?: string,
-     *     EndpointUrl?: string,
-     *     EnvironmentArn?: string,
-     *     EnvironmentId?: string,
-     *     EnvironmentLinks?: list<AwsElasticBeanstalkEnvironmentEnvironmentLink>,
-     *     EnvironmentName?: string,
-     *     OptionSettings?: list<AwsElasticBeanstalkEnvironmentOptionSetting>,
-     *     PlatformArn?: string,
-     *     SolutionStackName?: string,
-     *     Status?: string,
-     *     Tier?: AwsElasticBeanstalkEnvironmentTier,
-     *     VersionLabel?: string
+     *     ApplicationName?: string|null,
+     *     Cname?: string|null,
+     *     DateCreated?: string|null,
+     *     DateUpdated?: string|null,
+     *     Description?: string|null,
+     *     EndpointUrl?: string|null,
+     *     EnvironmentArn?: string|null,
+     *     EnvironmentId?: string|null,
+     *     EnvironmentLinks?: list<AwsElasticBeanstalkEnvironmentEnvironmentLink>|null,
+     *     EnvironmentName?: string|null,
+     *     OptionSettings?: list<AwsElasticBeanstalkEnvironmentOptionSetting>|null,
+     *     PlatformArn?: string|null,
+     *     SolutionStackName?: string|null,
+     *     Status?: string|null,
+     *     Tier?: AwsElasticBeanstalkEnvironmentTier|null,
+     *     VersionLabel?: string|null
      * } $args
      */
     public function __construct(array $args = [])

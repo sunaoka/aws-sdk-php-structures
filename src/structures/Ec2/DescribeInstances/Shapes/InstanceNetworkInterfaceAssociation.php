@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CarrierIp
- * @property string $CustomerOwnedIp
- * @property string $IpOwnerId
- * @property string $PublicDnsName
- * @property string $PublicIp
+ * @property string|null $CarrierIp
+ * @property string|null $CustomerOwnedIp
+ * @property string|null $IpOwnerId
+ * @property string|null $PublicDnsName
+ * @property string|null $PublicIp
  */
 class InstanceNetworkInterfaceAssociation extends Shape
 {
     /**
      * @param array{
-     *     CarrierIp?: string,
-     *     CustomerOwnedIp?: string,
-     *     IpOwnerId?: string,
-     *     PublicDnsName?: string,
-     *     PublicIp?: string
+     *     CarrierIp?: string|null,
+     *     CustomerOwnedIp?: string|null,
+     *     IpOwnerId?: string|null,
+     *     PublicDnsName?: string|null,
+     *     PublicIp?: string|null
      * } $args
      */
     public function __construct(array $args = [])

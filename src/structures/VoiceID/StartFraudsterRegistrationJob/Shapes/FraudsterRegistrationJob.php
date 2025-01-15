@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\VoiceID\StartFraudsterRegistrationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $DataAccessRoleArn
- * @property string $DomainId
- * @property \Aws\Api\DateTimeResult $EndedAt
- * @property FailureDetails $FailureDetails
- * @property InputDataConfig $InputDataConfig
- * @property string $JobId
- * @property string $JobName
- * @property JobProgress $JobProgress
- * @property 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'COMPLETED_WITH_ERRORS'|'FAILED' $JobStatus
- * @property OutputDataConfig $OutputDataConfig
- * @property RegistrationConfig $RegistrationConfig
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $DataAccessRoleArn
+ * @property string|null $DomainId
+ * @property \Aws\Api\DateTimeResult|null $EndedAt
+ * @property FailureDetails|null $FailureDetails
+ * @property InputDataConfig|null $InputDataConfig
+ * @property string|null $JobId
+ * @property string|null $JobName
+ * @property JobProgress|null $JobProgress
+ * @property 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'COMPLETED_WITH_ERRORS'|'FAILED'|null $JobStatus
+ * @property OutputDataConfig|null $OutputDataConfig
+ * @property RegistrationConfig|null $RegistrationConfig
  */
 class FraudsterRegistrationJob extends Shape
 {
     /**
      * @param array{
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     DataAccessRoleArn?: string,
-     *     DomainId?: string,
-     *     EndedAt?: \Aws\Api\DateTimeResult,
-     *     FailureDetails?: FailureDetails,
-     *     InputDataConfig?: InputDataConfig,
-     *     JobId?: string,
-     *     JobName?: string,
-     *     JobProgress?: JobProgress,
-     *     JobStatus?: 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'COMPLETED_WITH_ERRORS'|'FAILED',
-     *     OutputDataConfig?: OutputDataConfig,
-     *     RegistrationConfig?: RegistrationConfig
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     DataAccessRoleArn?: string|null,
+     *     DomainId?: string|null,
+     *     EndedAt?: \Aws\Api\DateTimeResult|null,
+     *     FailureDetails?: FailureDetails|null,
+     *     InputDataConfig?: InputDataConfig|null,
+     *     JobId?: string|null,
+     *     JobName?: string|null,
+     *     JobProgress?: JobProgress|null,
+     *     JobStatus?: 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'COMPLETED_WITH_ERRORS'|'FAILED'|null,
+     *     OutputDataConfig?: OutputDataConfig|null,
+     *     RegistrationConfig?: RegistrationConfig|null
      * } $args
      */
     public function __construct(array $args = [])

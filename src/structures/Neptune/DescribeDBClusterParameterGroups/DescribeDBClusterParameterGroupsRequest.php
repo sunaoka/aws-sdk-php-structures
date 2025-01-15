@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Neptune\DescribeDBClusterParameterGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DBClusterParameterGroupName
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $DBClusterParameterGroupName
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeDBClusterParameterGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     DBClusterParameterGroupName?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     DBClusterParameterGroupName?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

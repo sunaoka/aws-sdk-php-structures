@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WellArchitected\UpdateWorkloadShare;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $WorkloadId
- * @property Shapes\WorkloadShare $WorkloadShare
+ * @property string|null $WorkloadId
+ * @property Shapes\WorkloadShare|null $WorkloadShare
  */
 class UpdateWorkloadShareResponse extends Response
 {

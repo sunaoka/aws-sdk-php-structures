@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClusterIdentifier
  * @property string $DestinationRegion
- * @property int $RetentionPeriod
- * @property string $SnapshotCopyGrantName
- * @property int $ManualSnapshotRetentionPeriod
+ * @property int|null $RetentionPeriod
+ * @property string|null $SnapshotCopyGrantName
+ * @property int|null $ManualSnapshotRetentionPeriod
  */
 class EnableSnapshotCopyRequest extends Request
 {
@@ -17,9 +17,9 @@ class EnableSnapshotCopyRequest extends Request
      * @param array{
      *     ClusterIdentifier: string,
      *     DestinationRegion: string,
-     *     RetentionPeriod?: int,
-     *     SnapshotCopyGrantName?: string,
-     *     ManualSnapshotRetentionPeriod?: int
+     *     RetentionPeriod?: int|null,
+     *     SnapshotCopyGrantName?: string|null,
+     *     ManualSnapshotRetentionPeriod?: int|null
      * } $args
      */
     public function __construct(array $args)

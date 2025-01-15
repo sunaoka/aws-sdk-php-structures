@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Kafka\ListClusters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeliveryStream
+ * @property string|null $DeliveryStream
  * @property bool $Enabled
  */
 class Firehose extends Shape
 {
     /**
      * @param array{
-     *     DeliveryStream?: string,
+     *     DeliveryStream?: string|null,
      *     Enabled: bool
      * } $args
      */

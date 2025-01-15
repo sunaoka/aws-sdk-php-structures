@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $audienceGenerationJobArn
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED' $status
  * @property string $configuredAudienceModelArn
- * @property string $collaborationId
- * @property string $startedBy
+ * @property string|null $collaborationId
+ * @property string|null $startedBy
  */
 class AudienceGenerationJobSummary extends Shape
 {
@@ -23,11 +23,11 @@ class AudienceGenerationJobSummary extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     audienceGenerationJobArn: string,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     status: 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED',
      *     configuredAudienceModelArn: string,
-     *     collaborationId?: string,
-     *     startedBy?: string
+     *     collaborationId?: string|null,
+     *     startedBy?: string|null
      * } $args
      */
     public function __construct(array $args)

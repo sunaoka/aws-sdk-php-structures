@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetBundles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $price
- * @property int $cpuCount
- * @property int $diskSizeInGb
- * @property string $bundleId
- * @property string $instanceType
- * @property bool $isActive
- * @property string $name
- * @property int $power
- * @property float $ramSizeInGb
- * @property int $transferPerMonthInGb
- * @property list<'LINUX_UNIX'|'WINDOWS'> $supportedPlatforms
- * @property list<'LfR'> $supportedAppCategories
- * @property int $publicIpv4AddressCount
+ * @property float|null $price
+ * @property int|null $cpuCount
+ * @property int|null $diskSizeInGb
+ * @property string|null $bundleId
+ * @property string|null $instanceType
+ * @property bool|null $isActive
+ * @property string|null $name
+ * @property int|null $power
+ * @property float|null $ramSizeInGb
+ * @property int|null $transferPerMonthInGb
+ * @property list<'LINUX_UNIX'|'WINDOWS'>|null $supportedPlatforms
+ * @property list<'LfR'>|null $supportedAppCategories
+ * @property int|null $publicIpv4AddressCount
  */
 class Bundle extends Shape
 {
     /**
      * @param array{
-     *     price?: float,
-     *     cpuCount?: int,
-     *     diskSizeInGb?: int,
-     *     bundleId?: string,
-     *     instanceType?: string,
-     *     isActive?: bool,
-     *     name?: string,
-     *     power?: int,
-     *     ramSizeInGb?: float,
-     *     transferPerMonthInGb?: int,
-     *     supportedPlatforms?: list<'LINUX_UNIX'|'WINDOWS'>,
-     *     supportedAppCategories?: list<'LfR'>,
-     *     publicIpv4AddressCount?: int
+     *     price?: float|null,
+     *     cpuCount?: int|null,
+     *     diskSizeInGb?: int|null,
+     *     bundleId?: string|null,
+     *     instanceType?: string|null,
+     *     isActive?: bool|null,
+     *     name?: string|null,
+     *     power?: int|null,
+     *     ramSizeInGb?: float|null,
+     *     transferPerMonthInGb?: int|null,
+     *     supportedPlatforms?: list<'LINUX_UNIX'|'WINDOWS'>|null,
+     *     supportedAppCategories?: list<'LfR'>|null,
+     *     publicIpv4AddressCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

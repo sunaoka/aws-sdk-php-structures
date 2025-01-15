@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateFlowVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Document $json
+ * @property Document|null $json
  */
 class ToolInputSchema extends Shape
 {
     /**
-     * @param array{json?: Document} $args
+     * @param array{json?: Document|null} $args
      */
     public function __construct(array $args = [])
     {

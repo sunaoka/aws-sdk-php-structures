@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ScheduledActionType $TargetAction
  * @property string $Schedule
  * @property string $IamRole
- * @property string $ScheduledActionDescription
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property bool $Enable
+ * @property string|null $ScheduledActionDescription
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property bool|null $Enable
  */
 class CreateScheduledActionRequest extends Request
 {
@@ -22,10 +22,10 @@ class CreateScheduledActionRequest extends Request
      *     TargetAction: Shapes\ScheduledActionType,
      *     Schedule: string,
      *     IamRole: string,
-     *     ScheduledActionDescription?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Enable?: bool
+     *     ScheduledActionDescription?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Enable?: bool|null
      * } $args
      */
     public function __construct(array $args)

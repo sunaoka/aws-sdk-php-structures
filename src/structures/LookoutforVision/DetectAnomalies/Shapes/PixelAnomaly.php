@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LookoutforVision\DetectAnomalies\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $TotalPercentageArea
- * @property string $Color
+ * @property float|null $TotalPercentageArea
+ * @property string|null $Color
  */
 class PixelAnomaly extends Shape
 {
     /**
      * @param array{
-     *     TotalPercentageArea?: float,
-     *     Color?: string
+     *     TotalPercentageArea?: float|null,
+     *     Color?: string|null
      * } $args
      */
     public function __construct(array $args = [])

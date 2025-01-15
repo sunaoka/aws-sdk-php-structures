@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BoxPlotAggregatedFieldWells $BoxPlotAggregatedFieldWells
+ * @property BoxPlotAggregatedFieldWells|null $BoxPlotAggregatedFieldWells
  */
 class BoxPlotFieldWells extends Shape
 {
     /**
-     * @param array{BoxPlotAggregatedFieldWells?: BoxPlotAggregatedFieldWells} $args
+     * @param array{BoxPlotAggregatedFieldWells?: BoxPlotAggregatedFieldWells|null} $args
      */
     public function __construct(array $args = [])
     {

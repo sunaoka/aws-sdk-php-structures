@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\UpdateRumMetricDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $DimensionKeys
- * @property string $EventPattern
+ * @property array<string, string>|null $DimensionKeys
+ * @property string|null $EventPattern
  * @property string $Name
- * @property string $Namespace
- * @property string $UnitLabel
- * @property string $ValueKey
+ * @property string|null $Namespace
+ * @property string|null $UnitLabel
+ * @property string|null $ValueKey
  */
 class MetricDefinitionRequest extends Shape
 {
     /**
      * @param array{
-     *     DimensionKeys?: array<string, string>,
-     *     EventPattern?: string,
+     *     DimensionKeys?: array<string, string>|null,
+     *     EventPattern?: string|null,
      *     Name: string,
-     *     Namespace?: string,
-     *     UnitLabel?: string,
-     *     ValueKey?: string
+     *     Namespace?: string|null,
+     *     UnitLabel?: string|null,
+     *     ValueKey?: string|null
      * } $args
      */
     public function __construct(array $args)

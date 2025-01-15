@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RetrievalToken
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class GetRetrievedTracesGraphRequest extends Request
 {
     /**
      * @param array{
      *     RetrievalToken: string,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

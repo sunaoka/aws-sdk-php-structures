@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Scheduler\UpdateSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<SageMakerPipelineParameter> $PipelineParameterList
+ * @property list<SageMakerPipelineParameter>|null $PipelineParameterList
  */
 class SageMakerPipelineParameters extends Shape
 {
     /**
-     * @param array{PipelineParameterList?: list<SageMakerPipelineParameter>} $args
+     * @param array{PipelineParameterList?: list<SageMakerPipelineParameter>|null} $args
      */
     public function __construct(array $args = [])
     {

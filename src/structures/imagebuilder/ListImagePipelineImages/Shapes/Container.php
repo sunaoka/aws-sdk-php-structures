@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImagePipelineImages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $region
- * @property list<string> $imageUris
+ * @property string|null $region
+ * @property list<string>|null $imageUris
  */
 class Container extends Shape
 {
     /**
      * @param array{
-     *     region?: string,
-     *     imageUris?: list<string>
+     *     region?: string|null,
+     *     imageUris?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

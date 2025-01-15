@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\BatchGetAssetPropertyValueEntry> $entries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class BatchGetAssetPropertyValueRequest extends Request
 {
     /**
      * @param array{
      *     entries: list<Shapes\BatchGetAssetPropertyValueEntry>,
-     *     nextToken?: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

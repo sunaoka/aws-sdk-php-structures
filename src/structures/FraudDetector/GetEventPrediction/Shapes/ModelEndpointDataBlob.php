@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetEventPrediction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string|resource|\Psr\Http\Message\StreamInterface $byteBuffer
- * @property string $contentType
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $byteBuffer
+ * @property string|null $contentType
  */
 class ModelEndpointDataBlob extends Shape
 {
     /**
      * @param array{
-     *     byteBuffer?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     contentType?: string
+     *     byteBuffer?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     contentType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

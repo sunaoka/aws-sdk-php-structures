@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NumericalAggregationFunction $NumericalAggregationFunction
- * @property 'COUNT'|'DISTINCT_COUNT' $CategoricalAggregationFunction
- * @property 'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX' $DateAggregationFunction
- * @property AttributeAggregationFunction $AttributeAggregationFunction
+ * @property NumericalAggregationFunction|null $NumericalAggregationFunction
+ * @property 'COUNT'|'DISTINCT_COUNT'|null $CategoricalAggregationFunction
+ * @property 'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|null $DateAggregationFunction
+ * @property AttributeAggregationFunction|null $AttributeAggregationFunction
  */
 class AggregationFunction extends Shape
 {
     /**
      * @param array{
-     *     NumericalAggregationFunction?: NumericalAggregationFunction,
-     *     CategoricalAggregationFunction?: 'COUNT'|'DISTINCT_COUNT',
-     *     DateAggregationFunction?: 'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX',
-     *     AttributeAggregationFunction?: AttributeAggregationFunction
+     *     NumericalAggregationFunction?: NumericalAggregationFunction|null,
+     *     CategoricalAggregationFunction?: 'COUNT'|'DISTINCT_COUNT'|null,
+     *     DateAggregationFunction?: 'COUNT'|'DISTINCT_COUNT'|'MIN'|'MAX'|null,
+     *     AttributeAggregationFunction?: AttributeAggregationFunction|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'ERROR'|'INFO' $LogLevel
  * @property 'userNotification'|'userAuthEvents' $EventSource
- * @property CloudWatchLogsConfigurationType $CloudWatchLogsConfiguration
- * @property S3ConfigurationType $S3Configuration
- * @property FirehoseConfigurationType $FirehoseConfiguration
+ * @property CloudWatchLogsConfigurationType|null $CloudWatchLogsConfiguration
+ * @property S3ConfigurationType|null $S3Configuration
+ * @property FirehoseConfigurationType|null $FirehoseConfiguration
  */
 class LogConfigurationType extends Shape
 {
@@ -17,9 +17,9 @@ class LogConfigurationType extends Shape
      * @param array{
      *     LogLevel: 'ERROR'|'INFO',
      *     EventSource: 'userNotification'|'userAuthEvents',
-     *     CloudWatchLogsConfiguration?: CloudWatchLogsConfigurationType,
-     *     S3Configuration?: S3ConfigurationType,
-     *     FirehoseConfiguration?: FirehoseConfigurationType
+     *     CloudWatchLogsConfiguration?: CloudWatchLogsConfigurationType|null,
+     *     S3Configuration?: S3ConfigurationType|null,
+     *     FirehoseConfiguration?: FirehoseConfigurationType|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\ListPackagingGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ApproximateAssetCount
- * @property string $Arn
- * @property Authorization $Authorization
- * @property string $CreatedAt
- * @property string $DomainName
- * @property EgressAccessLogs $EgressAccessLogs
- * @property string $Id
- * @property array<string, string> $Tags
+ * @property int|null $ApproximateAssetCount
+ * @property string|null $Arn
+ * @property Authorization|null $Authorization
+ * @property string|null $CreatedAt
+ * @property string|null $DomainName
+ * @property EgressAccessLogs|null $EgressAccessLogs
+ * @property string|null $Id
+ * @property array<string, string>|null $Tags
  */
 class PackagingGroup extends Shape
 {
     /**
      * @param array{
-     *     ApproximateAssetCount?: int,
-     *     Arn?: string,
-     *     Authorization?: Authorization,
-     *     CreatedAt?: string,
-     *     DomainName?: string,
-     *     EgressAccessLogs?: EgressAccessLogs,
-     *     Id?: string,
-     *     Tags?: array<string, string>
+     *     ApproximateAssetCount?: int|null,
+     *     Arn?: string|null,
+     *     Authorization?: Authorization|null,
+     *     CreatedAt?: string|null,
+     *     DomainName?: string|null,
+     *     EgressAccessLogs?: EgressAccessLogs|null,
+     *     Id?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

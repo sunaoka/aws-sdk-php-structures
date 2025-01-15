@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\GenerateEmbedUrlForRegisteredUserWit
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StatePersistenceConfigurations $StatePersistence
- * @property SharedViewConfigurations $SharedView
- * @property BookmarksConfigurations $Bookmarks
+ * @property StatePersistenceConfigurations|null $StatePersistence
+ * @property SharedViewConfigurations|null $SharedView
+ * @property BookmarksConfigurations|null $Bookmarks
  */
 class RegisteredUserDashboardFeatureConfigurations extends Shape
 {
     /**
      * @param array{
-     *     StatePersistence?: StatePersistenceConfigurations,
-     *     SharedView?: SharedViewConfigurations,
-     *     Bookmarks?: BookmarksConfigurations
+     *     StatePersistence?: StatePersistenceConfigurations|null,
+     *     SharedView?: SharedViewConfigurations|null,
+     *     Bookmarks?: BookmarksConfigurations|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FeatureGroupName
  * @property string $RecordIdentifierValueAsString
  * @property string $EventTime
- * @property list<'OnlineStore'|'OfflineStore'> $TargetStores
- * @property 'SoftDelete'|'HardDelete' $DeletionMode
+ * @property list<'OnlineStore'|'OfflineStore'>|null $TargetStores
+ * @property 'SoftDelete'|'HardDelete'|null $DeletionMode
  */
 class DeleteRecordRequest extends Request
 {
@@ -18,8 +18,8 @@ class DeleteRecordRequest extends Request
      *     FeatureGroupName: string,
      *     RecordIdentifierValueAsString: string,
      *     EventTime: string,
-     *     TargetStores?: list<'OnlineStore'|'OfflineStore'>,
-     *     DeletionMode?: 'SoftDelete'|'HardDelete'
+     *     TargetStores?: list<'OnlineStore'|'OfflineStore'>|null,
+     *     DeletionMode?: 'SoftDelete'|'HardDelete'|null
      * } $args
      */
     public function __construct(array $args)

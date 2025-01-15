@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'Limited'|'Public'|'Restricted'|'Draft'> $ValueList
+ * @property list<'Limited'|'Public'|'Restricted'|'Draft'>|null $ValueList
  */
 class AmiProductVisibilityFilter extends Shape
 {
     /**
-     * @param array{ValueList?: list<'Limited'|'Public'|'Restricted'|'Draft'>} $args
+     * @param array{ValueList?: list<'Limited'|'Public'|'Restricted'|'Draft'>|null} $args
      */
     public function __construct(array $args = [])
     {

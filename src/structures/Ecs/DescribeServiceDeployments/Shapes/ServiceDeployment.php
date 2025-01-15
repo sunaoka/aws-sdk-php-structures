@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeServiceDeployments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $serviceDeploymentArn
- * @property string $serviceArn
- * @property string $clusterArn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $startedAt
- * @property \Aws\Api\DateTimeResult $finishedAt
- * @property \Aws\Api\DateTimeResult $stoppedAt
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property list<ServiceRevisionSummary> $sourceServiceRevisions
- * @property ServiceRevisionSummary $targetServiceRevision
- * @property 'PENDING'|'SUCCESSFUL'|'STOPPED'|'STOP_REQUESTED'|'IN_PROGRESS'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_SUCCESSFUL'|'ROLLBACK_FAILED' $status
- * @property string $statusReason
- * @property DeploymentConfiguration $deploymentConfiguration
- * @property Rollback $rollback
- * @property ServiceDeploymentCircuitBreaker $deploymentCircuitBreaker
- * @property ServiceDeploymentAlarms $alarms
+ * @property string|null $serviceDeploymentArn
+ * @property string|null $serviceArn
+ * @property string|null $clusterArn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $finishedAt
+ * @property \Aws\Api\DateTimeResult|null $stoppedAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property list<ServiceRevisionSummary>|null $sourceServiceRevisions
+ * @property ServiceRevisionSummary|null $targetServiceRevision
+ * @property 'PENDING'|'SUCCESSFUL'|'STOPPED'|'STOP_REQUESTED'|'IN_PROGRESS'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_SUCCESSFUL'|'ROLLBACK_FAILED'|null $status
+ * @property string|null $statusReason
+ * @property DeploymentConfiguration|null $deploymentConfiguration
+ * @property Rollback|null $rollback
+ * @property ServiceDeploymentCircuitBreaker|null $deploymentCircuitBreaker
+ * @property ServiceDeploymentAlarms|null $alarms
  */
 class ServiceDeployment extends Shape
 {
     /**
      * @param array{
-     *     serviceDeploymentArn?: string,
-     *     serviceArn?: string,
-     *     clusterArn?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     startedAt?: \Aws\Api\DateTimeResult,
-     *     finishedAt?: \Aws\Api\DateTimeResult,
-     *     stoppedAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     sourceServiceRevisions?: list<ServiceRevisionSummary>,
-     *     targetServiceRevision?: ServiceRevisionSummary,
-     *     status?: 'PENDING'|'SUCCESSFUL'|'STOPPED'|'STOP_REQUESTED'|'IN_PROGRESS'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_SUCCESSFUL'|'ROLLBACK_FAILED',
-     *     statusReason?: string,
-     *     deploymentConfiguration?: DeploymentConfiguration,
-     *     rollback?: Rollback,
-     *     deploymentCircuitBreaker?: ServiceDeploymentCircuitBreaker,
-     *     alarms?: ServiceDeploymentAlarms
+     *     serviceDeploymentArn?: string|null,
+     *     serviceArn?: string|null,
+     *     clusterArn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
+     *     finishedAt?: \Aws\Api\DateTimeResult|null,
+     *     stoppedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     sourceServiceRevisions?: list<ServiceRevisionSummary>|null,
+     *     targetServiceRevision?: ServiceRevisionSummary|null,
+     *     status?: 'PENDING'|'SUCCESSFUL'|'STOPPED'|'STOP_REQUESTED'|'IN_PROGRESS'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_SUCCESSFUL'|'ROLLBACK_FAILED'|null,
+     *     statusReason?: string|null,
+     *     deploymentConfiguration?: DeploymentConfiguration|null,
+     *     rollback?: Rollback|null,
+     *     deploymentCircuitBreaker?: ServiceDeploymentCircuitBreaker|null,
+     *     alarms?: ServiceDeploymentAlarms|null
      * } $args
      */
     public function __construct(array $args = [])

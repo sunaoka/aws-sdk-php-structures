@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\S3Control\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FunctionArn
- * @property string $InvocationSchemaVersion
- * @property array<string, string> $UserArguments
+ * @property string|null $FunctionArn
+ * @property string|null $InvocationSchemaVersion
+ * @property array<string, string>|null $UserArguments
  */
 class LambdaInvokeOperation extends Shape
 {
     /**
      * @param array{
-     *     FunctionArn?: string,
-     *     InvocationSchemaVersion?: string,
-     *     UserArguments?: array<string, string>
+     *     FunctionArn?: string|null,
+     *     InvocationSchemaVersion?: string|null,
+     *     UserArguments?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

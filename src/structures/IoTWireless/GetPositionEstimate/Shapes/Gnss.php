@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Payload
- * @property float $CaptureTime
- * @property float $CaptureTimeAccuracy
- * @property list<float> $AssistPosition
- * @property float $AssistAltitude
- * @property bool $Use2DSolver
+ * @property float|null $CaptureTime
+ * @property float|null $CaptureTimeAccuracy
+ * @property list<float>|null $AssistPosition
+ * @property float|null $AssistAltitude
+ * @property bool|null $Use2DSolver
  */
 class Gnss extends Shape
 {
     /**
      * @param array{
      *     Payload: string,
-     *     CaptureTime?: float,
-     *     CaptureTimeAccuracy?: float,
-     *     AssistPosition?: list<float>,
-     *     AssistAltitude?: float,
-     *     Use2DSolver?: bool
+     *     CaptureTime?: float|null,
+     *     CaptureTimeAccuracy?: float|null,
+     *     AssistPosition?: list<float>|null,
+     *     AssistAltitude?: float|null,
+     *     Use2DSolver?: bool|null
      * } $args
      */
     public function __construct(array $args)

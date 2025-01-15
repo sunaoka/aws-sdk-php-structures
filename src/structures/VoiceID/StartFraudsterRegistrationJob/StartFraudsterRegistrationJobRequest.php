@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\VoiceID\StartFraudsterRegistrationJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $DataAccessRoleArn
  * @property string $DomainId
  * @property Shapes\InputDataConfig $InputDataConfig
- * @property string $JobName
+ * @property string|null $JobName
  * @property Shapes\OutputDataConfig $OutputDataConfig
- * @property Shapes\RegistrationConfig $RegistrationConfig
+ * @property Shapes\RegistrationConfig|null $RegistrationConfig
  */
 class StartFraudsterRegistrationJobRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     DataAccessRoleArn: string,
      *     DomainId: string,
      *     InputDataConfig: Shapes\InputDataConfig,
-     *     JobName?: string,
+     *     JobName?: string|null,
      *     OutputDataConfig: Shapes\OutputDataConfig,
-     *     RegistrationConfig?: Shapes\RegistrationConfig
+     *     RegistrationConfig?: Shapes\RegistrationConfig|null
      * } $args
      */
     public function __construct(array $args)

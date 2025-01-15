@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $id
  * @property string $nsInstanceName
  * @property string $nsdInfoId
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateSolNetworkInstanceResponse extends Response
 {

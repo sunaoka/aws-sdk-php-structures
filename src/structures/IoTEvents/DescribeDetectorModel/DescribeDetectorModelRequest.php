@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $detectorModelName
- * @property string $detectorModelVersion
+ * @property string|null $detectorModelVersion
  */
 class DescribeDetectorModelRequest extends Request
 {
     /**
      * @param array{
      *     detectorModelName: string,
-     *     detectorModelVersion?: string
+     *     detectorModelVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

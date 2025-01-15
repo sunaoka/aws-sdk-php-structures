@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeComplianceByConfigRule\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConfigRuleName
- * @property Compliance $Compliance
+ * @property string|null $ConfigRuleName
+ * @property Compliance|null $Compliance
  */
 class ComplianceByConfigRule extends Shape
 {
     /**
      * @param array{
-     *     ConfigRuleName?: string,
-     *     Compliance?: Compliance
+     *     ConfigRuleName?: string|null,
+     *     Compliance?: Compliance|null
      * } $args
      */
     public function __construct(array $args = [])

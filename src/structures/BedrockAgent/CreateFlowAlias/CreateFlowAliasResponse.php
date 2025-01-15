@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
+ * @property string|null $description
  * @property string $flowId
  * @property string $id
  * @property string $name

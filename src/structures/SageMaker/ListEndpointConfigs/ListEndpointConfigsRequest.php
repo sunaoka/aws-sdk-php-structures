@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListEndpointConfigs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'Name'|'CreationTime' $SortBy
- * @property 'Ascending'|'Descending' $SortOrder
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property string $NameContains
- * @property \Aws\Api\DateTimeResult $CreationTimeBefore
- * @property \Aws\Api\DateTimeResult $CreationTimeAfter
+ * @property 'Name'|'CreationTime'|null $SortBy
+ * @property 'Ascending'|'Descending'|null $SortOrder
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NameContains
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
  */
 class ListEndpointConfigsRequest extends Request
 {
     /**
      * @param array{
-     *     SortBy?: 'Name'|'CreationTime',
-     *     SortOrder?: 'Ascending'|'Descending',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     NameContains?: string,
-     *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     CreationTimeAfter?: \Aws\Api\DateTimeResult
+     *     SortBy?: 'Name'|'CreationTime'|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NameContains?: string|null,
+     *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

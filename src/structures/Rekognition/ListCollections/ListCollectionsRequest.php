@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\ListCollections;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<0, 4096> $MaxResults
+ * @property string|null $NextToken
+ * @property int<0, 4096>|null $MaxResults
  */
 class ListCollectionsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 4096>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 4096>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $loadBalancerName
  * @property int<-1, 65535> $instancePort
- * @property string $healthCheckPath
- * @property string $certificateName
- * @property string $certificateDomainName
- * @property list<string> $certificateAlternativeNames
- * @property list<Shapes\Tag> $tags
- * @property 'dualstack'|'ipv4'|'ipv6' $ipAddressType
- * @property string $tlsPolicyName
+ * @property string|null $healthCheckPath
+ * @property string|null $certificateName
+ * @property string|null $certificateDomainName
+ * @property list<string>|null $certificateAlternativeNames
+ * @property list<Shapes\Tag>|null $tags
+ * @property 'dualstack'|'ipv4'|'ipv6'|null $ipAddressType
+ * @property string|null $tlsPolicyName
  */
 class CreateLoadBalancerRequest extends Request
 {
@@ -21,13 +21,13 @@ class CreateLoadBalancerRequest extends Request
      * @param array{
      *     loadBalancerName: string,
      *     instancePort: int<-1, 65535>,
-     *     healthCheckPath?: string,
-     *     certificateName?: string,
-     *     certificateDomainName?: string,
-     *     certificateAlternativeNames?: list<string>,
-     *     tags?: list<Shapes\Tag>,
-     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6',
-     *     tlsPolicyName?: string
+     *     healthCheckPath?: string|null,
+     *     certificateName?: string|null,
+     *     certificateDomainName?: string|null,
+     *     certificateAlternativeNames?: list<string>|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     ipAddressType?: 'dualstack'|'ipv4'|'ipv6'|null,
+     *     tlsPolicyName?: string|null
      * } $args
      */
     public function __construct(array $args)

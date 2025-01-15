@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListLicenseConversionTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int $MaxResults
- * @property list<Shapes\Filter> $Filters
+ * @property string|null $NextToken
+ * @property int|null $MaxResults
+ * @property list<Shapes\Filter>|null $Filters
  */
 class ListLicenseConversionTasksRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int,
-     *     Filters?: list<Shapes\Filter>
+     *     NextToken?: string|null,
+     *     MaxResults?: int|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\ListKnowledgeBases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AppIntegrationsConfiguration $appIntegrations
- * @property ManagedSourceConfiguration $managedSourceConfiguration
+ * @property AppIntegrationsConfiguration|null $appIntegrations
+ * @property ManagedSourceConfiguration|null $managedSourceConfiguration
  */
 class SourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     appIntegrations?: AppIntegrationsConfiguration,
-     *     managedSourceConfiguration?: ManagedSourceConfiguration
+     *     appIntegrations?: AppIntegrationsConfiguration|null,
+     *     managedSourceConfiguration?: ManagedSourceConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

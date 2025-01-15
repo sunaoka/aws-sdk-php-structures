@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainConfigurationName
- * @property Shapes\AuthorizerConfig $authorizerConfig
- * @property 'ENABLED'|'DISABLED' $domainConfigurationStatus
- * @property bool $removeAuthorizerConfig
- * @property Shapes\TlsConfig $tlsConfig
- * @property Shapes\ServerCertificateConfig $serverCertificateConfig
- * @property 'CUSTOM_AUTH_X509'|'CUSTOM_AUTH'|'AWS_X509'|'AWS_SIGV4'|'DEFAULT' $authenticationType
- * @property 'SECURE_MQTT'|'MQTT_WSS'|'HTTPS'|'DEFAULT' $applicationProtocol
- * @property Shapes\ClientCertificateConfig $clientCertificateConfig
+ * @property Shapes\AuthorizerConfig|null $authorizerConfig
+ * @property 'ENABLED'|'DISABLED'|null $domainConfigurationStatus
+ * @property bool|null $removeAuthorizerConfig
+ * @property Shapes\TlsConfig|null $tlsConfig
+ * @property Shapes\ServerCertificateConfig|null $serverCertificateConfig
+ * @property 'CUSTOM_AUTH_X509'|'CUSTOM_AUTH'|'AWS_X509'|'AWS_SIGV4'|'DEFAULT'|null $authenticationType
+ * @property 'SECURE_MQTT'|'MQTT_WSS'|'HTTPS'|'DEFAULT'|null $applicationProtocol
+ * @property Shapes\ClientCertificateConfig|null $clientCertificateConfig
  */
 class UpdateDomainConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     domainConfigurationName: string,
-     *     authorizerConfig?: Shapes\AuthorizerConfig,
-     *     domainConfigurationStatus?: 'ENABLED'|'DISABLED',
-     *     removeAuthorizerConfig?: bool,
-     *     tlsConfig?: Shapes\TlsConfig,
-     *     serverCertificateConfig?: Shapes\ServerCertificateConfig,
-     *     authenticationType?: 'CUSTOM_AUTH_X509'|'CUSTOM_AUTH'|'AWS_X509'|'AWS_SIGV4'|'DEFAULT',
-     *     applicationProtocol?: 'SECURE_MQTT'|'MQTT_WSS'|'HTTPS'|'DEFAULT',
-     *     clientCertificateConfig?: Shapes\ClientCertificateConfig
+     *     authorizerConfig?: Shapes\AuthorizerConfig|null,
+     *     domainConfigurationStatus?: 'ENABLED'|'DISABLED'|null,
+     *     removeAuthorizerConfig?: bool|null,
+     *     tlsConfig?: Shapes\TlsConfig|null,
+     *     serverCertificateConfig?: Shapes\ServerCertificateConfig|null,
+     *     authenticationType?: 'CUSTOM_AUTH_X509'|'CUSTOM_AUTH'|'AWS_X509'|'AWS_SIGV4'|'DEFAULT'|null,
+     *     applicationProtocol?: 'SECURE_MQTT'|'MQTT_WSS'|'HTTPS'|'DEFAULT'|null,
+     *     clientCertificateConfig?: Shapes\ClientCertificateConfig|null
      * } $args
      */
     public function __construct(array $args)

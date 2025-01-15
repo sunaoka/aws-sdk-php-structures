@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\XRay\GetTimeSeriesServiceStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Value
- * @property int $Count
+ * @property double|null $Value
+ * @property int|null $Count
  */
 class HistogramEntry extends Shape
 {
     /**
      * @param array{
-     *     Value?: double,
-     *     Count?: int
+     *     Value?: double|null,
+     *     Count?: int|null
      * } $args
      */
     public function __construct(array $args = [])

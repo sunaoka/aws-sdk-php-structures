@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackSetName
- * @property list<string> $Accounts
- * @property Shapes\DeploymentTargets $DeploymentTargets
+ * @property list<string>|null $Accounts
+ * @property Shapes\DeploymentTargets|null $DeploymentTargets
  * @property list<string> $Regions
- * @property list<Shapes\Parameter> $ParameterOverrides
- * @property Shapes\StackSetOperationPreferences $OperationPreferences
- * @property string $OperationId
- * @property 'SELF'|'DELEGATED_ADMIN' $CallAs
+ * @property list<Shapes\Parameter>|null $ParameterOverrides
+ * @property Shapes\StackSetOperationPreferences|null $OperationPreferences
+ * @property string|null $OperationId
+ * @property 'SELF'|'DELEGATED_ADMIN'|null $CallAs
  */
 class UpdateStackInstancesRequest extends Request
 {
     /**
      * @param array{
      *     StackSetName: string,
-     *     Accounts?: list<string>,
-     *     DeploymentTargets?: Shapes\DeploymentTargets,
+     *     Accounts?: list<string>|null,
+     *     DeploymentTargets?: Shapes\DeploymentTargets|null,
      *     Regions: list<string>,
-     *     ParameterOverrides?: list<Shapes\Parameter>,
-     *     OperationPreferences?: Shapes\StackSetOperationPreferences,
-     *     OperationId?: string,
-     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'
+     *     ParameterOverrides?: list<Shapes\Parameter>|null,
+     *     OperationPreferences?: Shapes\StackSetOperationPreferences|null,
+     *     OperationId?: string|null,
+     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'|null
      * } $args
      */
     public function __construct(array $args)

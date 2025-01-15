@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudSearch\DeleteIndexField\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $DefaultValue
- * @property string $SourceFields
- * @property bool $FacetEnabled
- * @property bool $SearchEnabled
- * @property bool $ReturnEnabled
+ * @property double|null $DefaultValue
+ * @property string|null $SourceFields
+ * @property bool|null $FacetEnabled
+ * @property bool|null $SearchEnabled
+ * @property bool|null $ReturnEnabled
  */
 class DoubleArrayOptions extends Shape
 {
     /**
      * @param array{
-     *     DefaultValue?: double,
-     *     SourceFields?: string,
-     *     FacetEnabled?: bool,
-     *     SearchEnabled?: bool,
-     *     ReturnEnabled?: bool
+     *     DefaultValue?: double|null,
+     *     SourceFields?: string|null,
+     *     FacetEnabled?: bool|null,
+     *     SearchEnabled?: bool|null,
+     *     ReturnEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

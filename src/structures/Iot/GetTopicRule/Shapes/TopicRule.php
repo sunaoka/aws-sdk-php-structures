@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Iot\GetTopicRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ruleName
- * @property string $sql
- * @property string $description
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property list<Action> $actions
- * @property bool $ruleDisabled
- * @property string $awsIotSqlVersion
- * @property Action $errorAction
+ * @property string|null $ruleName
+ * @property string|null $sql
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property list<Action>|null $actions
+ * @property bool|null $ruleDisabled
+ * @property string|null $awsIotSqlVersion
+ * @property Action|null $errorAction
  */
 class TopicRule extends Shape
 {
     /**
      * @param array{
-     *     ruleName?: string,
-     *     sql?: string,
-     *     description?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     actions?: list<Action>,
-     *     ruleDisabled?: bool,
-     *     awsIotSqlVersion?: string,
-     *     errorAction?: Action
+     *     ruleName?: string|null,
+     *     sql?: string|null,
+     *     description?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     actions?: list<Action>|null,
+     *     ruleDisabled?: bool|null,
+     *     awsIotSqlVersion?: string|null,
+     *     errorAction?: Action|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $id
- * @property string $neptuneIamRoleArn
- * @property bool $clean
+ * @property string|null $neptuneIamRoleArn
+ * @property bool|null $clean
  */
 class CancelMLModelTrainingJobRequest extends Request
 {
     /**
      * @param array{
      *     id: string,
-     *     neptuneIamRoleArn?: string,
-     *     clean?: bool
+     *     neptuneIamRoleArn?: string|null,
+     *     clean?: bool|null
      * } $args
      */
     public function __construct(array $args)

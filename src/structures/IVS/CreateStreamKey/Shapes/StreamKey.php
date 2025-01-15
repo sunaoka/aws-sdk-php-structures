@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IVS\CreateStreamKey\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $channelArn
- * @property array<string, string> $tags
- * @property string $value
+ * @property string|null $arn
+ * @property string|null $channelArn
+ * @property array<string, string>|null $tags
+ * @property string|null $value
  */
 class StreamKey extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     channelArn?: string,
-     *     tags?: array<string, string>,
-     *     value?: string
+     *     arn?: string|null,
+     *     channelArn?: string|null,
+     *     tags?: array<string, string>|null,
+     *     value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

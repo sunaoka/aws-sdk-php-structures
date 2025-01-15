@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetConfigurationPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Integer
- * @property list<int> $IntegerList
- * @property double $Double
- * @property string $String
- * @property list<string> $StringList
- * @property bool $Boolean
- * @property string $Enum
- * @property list<string> $EnumList
+ * @property int|null $Integer
+ * @property list<int>|null $IntegerList
+ * @property double|null $Double
+ * @property string|null $String
+ * @property list<string>|null $StringList
+ * @property bool|null $Boolean
+ * @property string|null $Enum
+ * @property list<string>|null $EnumList
  */
 class ParameterValue extends Shape
 {
     /**
      * @param array{
-     *     Integer?: int,
-     *     IntegerList?: list<int>,
-     *     Double?: double,
-     *     String?: string,
-     *     StringList?: list<string>,
-     *     Boolean?: bool,
-     *     Enum?: string,
-     *     EnumList?: list<string>
+     *     Integer?: int|null,
+     *     IntegerList?: list<int>|null,
+     *     Double?: double|null,
+     *     String?: string|null,
+     *     StringList?: list<string>|null,
+     *     Boolean?: bool|null,
+     *     Enum?: string|null,
+     *     EnumList?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcEndpointConnectionNotifications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property string $ConnectionNotificationId
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
- * @property string $NextToken
+ * @property bool|null $DryRun
+ * @property string|null $ConnectionNotificationId
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeVpcEndpointConnectionNotificationsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     ConnectionNotificationId?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     DryRun?: bool|null,
+     *     ConnectionNotificationId?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

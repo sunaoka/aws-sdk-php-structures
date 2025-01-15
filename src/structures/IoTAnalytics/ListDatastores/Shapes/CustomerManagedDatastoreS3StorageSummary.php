@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\ListDatastores\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bucket
- * @property string $keyPrefix
- * @property string $roleArn
+ * @property string|null $bucket
+ * @property string|null $keyPrefix
+ * @property string|null $roleArn
  */
 class CustomerManagedDatastoreS3StorageSummary extends Shape
 {
     /**
      * @param array{
-     *     bucket?: string,
-     *     keyPrefix?: string,
-     *     roleArn?: string
+     *     bucket?: string|null,
+     *     keyPrefix?: string|null,
+     *     roleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

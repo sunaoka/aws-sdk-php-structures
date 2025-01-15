@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeConfigurationSettings\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SolutionStackName
- * @property string $PlatformArn
- * @property string $ApplicationName
- * @property string $TemplateName
- * @property string $Description
- * @property string $EnvironmentName
- * @property 'deployed'|'pending'|'failed' $DeploymentStatus
- * @property \Aws\Api\DateTimeResult $DateCreated
- * @property \Aws\Api\DateTimeResult $DateUpdated
- * @property list<ConfigurationOptionSetting> $OptionSettings
+ * @property string|null $SolutionStackName
+ * @property string|null $PlatformArn
+ * @property string|null $ApplicationName
+ * @property string|null $TemplateName
+ * @property string|null $Description
+ * @property string|null $EnvironmentName
+ * @property 'deployed'|'pending'|'failed'|null $DeploymentStatus
+ * @property \Aws\Api\DateTimeResult|null $DateCreated
+ * @property \Aws\Api\DateTimeResult|null $DateUpdated
+ * @property list<ConfigurationOptionSetting>|null $OptionSettings
  */
 class ConfigurationSettingsDescription extends Shape
 {
     /**
      * @param array{
-     *     SolutionStackName?: string,
-     *     PlatformArn?: string,
-     *     ApplicationName?: string,
-     *     TemplateName?: string,
-     *     Description?: string,
-     *     EnvironmentName?: string,
-     *     DeploymentStatus?: 'deployed'|'pending'|'failed',
-     *     DateCreated?: \Aws\Api\DateTimeResult,
-     *     DateUpdated?: \Aws\Api\DateTimeResult,
-     *     OptionSettings?: list<ConfigurationOptionSetting>
+     *     SolutionStackName?: string|null,
+     *     PlatformArn?: string|null,
+     *     ApplicationName?: string|null,
+     *     TemplateName?: string|null,
+     *     Description?: string|null,
+     *     EnvironmentName?: string|null,
+     *     DeploymentStatus?: 'deployed'|'pending'|'failed'|null,
+     *     DateCreated?: \Aws\Api\DateTimeResult|null,
+     *     DateUpdated?: \Aws\Api\DateTimeResult|null,
+     *     OptionSettings?: list<ConfigurationOptionSetting>|null
      * } $args
      */
     public function __construct(array $args = [])

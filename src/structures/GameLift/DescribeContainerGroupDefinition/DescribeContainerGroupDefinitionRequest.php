@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property int<1, max> $VersionNumber
+ * @property int<1, max>|null $VersionNumber
  */
 class DescribeContainerGroupDefinitionRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     VersionNumber?: int<1, max>
+     *     VersionNumber?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

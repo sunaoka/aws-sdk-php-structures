@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeCommit\GetPullRequest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isMerged
- * @property string $mergedBy
- * @property string $mergeCommitId
- * @property 'FAST_FORWARD_MERGE'|'SQUASH_MERGE'|'THREE_WAY_MERGE' $mergeOption
+ * @property bool|null $isMerged
+ * @property string|null $mergedBy
+ * @property string|null $mergeCommitId
+ * @property 'FAST_FORWARD_MERGE'|'SQUASH_MERGE'|'THREE_WAY_MERGE'|null $mergeOption
  */
 class MergeMetadata extends Shape
 {
     /**
      * @param array{
-     *     isMerged?: bool,
-     *     mergedBy?: string,
-     *     mergeCommitId?: string,
-     *     mergeOption?: 'FAST_FORWARD_MERGE'|'SQUASH_MERGE'|'THREE_WAY_MERGE'
+     *     isMerged?: bool|null,
+     *     mergedBy?: string|null,
+     *     mergeCommitId?: string|null,
+     *     mergeOption?: 'FAST_FORWARD_MERGE'|'SQUASH_MERGE'|'THREE_WAY_MERGE'|null
      * } $args
      */
     public function __construct(array $args = [])

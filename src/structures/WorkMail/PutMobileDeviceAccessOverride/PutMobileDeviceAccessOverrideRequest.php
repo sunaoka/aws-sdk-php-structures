@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserId
  * @property string $DeviceId
  * @property 'ALLOW'|'DENY' $Effect
- * @property string $Description
+ * @property string|null $Description
  */
 class PutMobileDeviceAccessOverrideRequest extends Request
 {
@@ -19,7 +19,7 @@ class PutMobileDeviceAccessOverrideRequest extends Request
      *     UserId: string,
      *     DeviceId: string,
      *     Effect: 'ALLOW'|'DENY',
-     *     Description?: string
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

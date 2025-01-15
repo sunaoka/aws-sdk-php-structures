@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $VocabularyFilterName
- * @property list<string> $Words
- * @property string $VocabularyFilterFileUri
- * @property string $DataAccessRoleArn
+ * @property list<string>|null $Words
+ * @property string|null $VocabularyFilterFileUri
+ * @property string|null $DataAccessRoleArn
  */
 class UpdateVocabularyFilterRequest extends Request
 {
     /**
      * @param array{
      *     VocabularyFilterName: string,
-     *     Words?: list<string>,
-     *     VocabularyFilterFileUri?: string,
-     *     DataAccessRoleArn?: string
+     *     Words?: list<string>|null,
+     *     VocabularyFilterFileUri?: string|null,
+     *     DataAccessRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

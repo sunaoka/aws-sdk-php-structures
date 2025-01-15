@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $errorCode
  * @property string $id
- * @property string $message
+ * @property string|null $message
  */
 class FieldError extends Shape
 {
@@ -15,7 +15,7 @@ class FieldError extends Shape
      * @param array{
      *     errorCode: string,
      *     id: string,
-     *     message?: string
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args)

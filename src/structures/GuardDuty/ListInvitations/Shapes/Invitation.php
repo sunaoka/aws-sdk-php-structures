@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GuardDuty\ListInvitations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $InvitationId
- * @property string $RelationshipStatus
- * @property string $InvitedAt
+ * @property string|null $AccountId
+ * @property string|null $InvitationId
+ * @property string|null $RelationshipStatus
+ * @property string|null $InvitedAt
  */
 class Invitation extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     InvitationId?: string,
-     *     RelationshipStatus?: string,
-     *     InvitedAt?: string
+     *     AccountId?: string|null,
+     *     InvitationId?: string|null,
+     *     RelationshipStatus?: string|null,
+     *     InvitedAt?: string|null
      * } $args
      */
     public function __construct(array $args = [])

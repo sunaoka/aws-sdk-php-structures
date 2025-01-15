@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkMail\ListGroupsForEntity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GroupId
- * @property string $GroupName
+ * @property string|null $GroupId
+ * @property string|null $GroupName
  */
 class GroupIdentifier extends Shape
 {
     /**
      * @param array{
-     *     GroupId?: string,
-     *     GroupName?: string
+     *     GroupId?: string|null,
+     *     GroupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

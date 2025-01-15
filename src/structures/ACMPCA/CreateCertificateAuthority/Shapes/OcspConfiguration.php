@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property string $OcspCustomCname
+ * @property string|null $OcspCustomCname
  */
 class OcspConfiguration extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     OcspCustomCname?: string
+     *     OcspCustomCname?: string|null
      * } $args
      */
     public function __construct(array $args)

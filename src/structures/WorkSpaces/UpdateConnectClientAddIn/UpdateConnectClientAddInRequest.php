@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AddInId
  * @property string $ResourceId
- * @property string $Name
- * @property string $URL
+ * @property string|null $Name
+ * @property string|null $URL
  */
 class UpdateConnectClientAddInRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateConnectClientAddInRequest extends Request
      * @param array{
      *     AddInId: string,
      *     ResourceId: string,
-     *     Name?: string,
-     *     URL?: string
+     *     Name?: string|null,
+     *     URL?: string|null
      * } $args
      */
     public function __construct(array $args)

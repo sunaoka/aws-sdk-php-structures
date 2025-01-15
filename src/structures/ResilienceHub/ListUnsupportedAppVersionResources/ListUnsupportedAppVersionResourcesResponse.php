@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListUnsupportedAppVersionResource
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
+ * @property string|null $nextToken
  * @property string $resolutionId
  * @property list<Shapes\UnsupportedResource> $unsupportedResources
  */

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NumberDisplayFormatConfiguration $NumberDisplayFormatConfiguration
- * @property CurrencyDisplayFormatConfiguration $CurrencyDisplayFormatConfiguration
- * @property PercentageDisplayFormatConfiguration $PercentageDisplayFormatConfiguration
+ * @property NumberDisplayFormatConfiguration|null $NumberDisplayFormatConfiguration
+ * @property CurrencyDisplayFormatConfiguration|null $CurrencyDisplayFormatConfiguration
+ * @property PercentageDisplayFormatConfiguration|null $PercentageDisplayFormatConfiguration
  */
 class NumericFormatConfiguration extends Shape
 {
     /**
      * @param array{
-     *     NumberDisplayFormatConfiguration?: NumberDisplayFormatConfiguration,
-     *     CurrencyDisplayFormatConfiguration?: CurrencyDisplayFormatConfiguration,
-     *     PercentageDisplayFormatConfiguration?: PercentageDisplayFormatConfiguration
+     *     NumberDisplayFormatConfiguration?: NumberDisplayFormatConfiguration|null,
+     *     CurrencyDisplayFormatConfiguration?: CurrencyDisplayFormatConfiguration|null,
+     *     PercentageDisplayFormatConfiguration?: PercentageDisplayFormatConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LexModelBuildingService\CreateSlotTypeVersion\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SlotTypeRegexConfiguration $regexConfiguration
+ * @property SlotTypeRegexConfiguration|null $regexConfiguration
  */
 class SlotTypeConfiguration extends Shape
 {
     /**
-     * @param array{regexConfiguration?: SlotTypeRegexConfiguration} $args
+     * @param array{regexConfiguration?: SlotTypeRegexConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

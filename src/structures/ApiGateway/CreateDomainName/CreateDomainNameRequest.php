@@ -6,38 +6,38 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainName
- * @property string $certificateName
- * @property string $certificateBody
- * @property string $certificatePrivateKey
- * @property string $certificateChain
- * @property string $certificateArn
- * @property string $regionalCertificateName
- * @property string $regionalCertificateArn
- * @property Shapes\EndpointConfiguration $endpointConfiguration
- * @property array<string, string> $tags
- * @property 'TLS_1_0'|'TLS_1_2' $securityPolicy
- * @property Shapes\MutualTlsAuthenticationInput $mutualTlsAuthentication
- * @property string $ownershipVerificationCertificateArn
- * @property string $policy
+ * @property string|null $certificateName
+ * @property string|null $certificateBody
+ * @property string|null $certificatePrivateKey
+ * @property string|null $certificateChain
+ * @property string|null $certificateArn
+ * @property string|null $regionalCertificateName
+ * @property string|null $regionalCertificateArn
+ * @property Shapes\EndpointConfiguration|null $endpointConfiguration
+ * @property array<string, string>|null $tags
+ * @property 'TLS_1_0'|'TLS_1_2'|null $securityPolicy
+ * @property Shapes\MutualTlsAuthenticationInput|null $mutualTlsAuthentication
+ * @property string|null $ownershipVerificationCertificateArn
+ * @property string|null $policy
  */
 class CreateDomainNameRequest extends Request
 {
     /**
      * @param array{
      *     domainName: string,
-     *     certificateName?: string,
-     *     certificateBody?: string,
-     *     certificatePrivateKey?: string,
-     *     certificateChain?: string,
-     *     certificateArn?: string,
-     *     regionalCertificateName?: string,
-     *     regionalCertificateArn?: string,
-     *     endpointConfiguration?: Shapes\EndpointConfiguration,
-     *     tags?: array<string, string>,
-     *     securityPolicy?: 'TLS_1_0'|'TLS_1_2',
-     *     mutualTlsAuthentication?: Shapes\MutualTlsAuthenticationInput,
-     *     ownershipVerificationCertificateArn?: string,
-     *     policy?: string
+     *     certificateName?: string|null,
+     *     certificateBody?: string|null,
+     *     certificatePrivateKey?: string|null,
+     *     certificateChain?: string|null,
+     *     certificateArn?: string|null,
+     *     regionalCertificateName?: string|null,
+     *     regionalCertificateArn?: string|null,
+     *     endpointConfiguration?: Shapes\EndpointConfiguration|null,
+     *     tags?: array<string, string>|null,
+     *     securityPolicy?: 'TLS_1_0'|'TLS_1_2'|null,
+     *     mutualTlsAuthentication?: Shapes\MutualTlsAuthenticationInput|null,
+     *     ownershipVerificationCertificateArn?: string|null,
+     *     policy?: string|null
      * } $args
      */
     public function __construct(array $args)

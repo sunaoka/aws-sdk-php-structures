@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ImportExport\ListJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxJobs
- * @property string $Marker
- * @property string $APIVersion
+ * @property int|null $MaxJobs
+ * @property string|null $Marker
+ * @property string|null $APIVersion
  */
 class ListJobsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxJobs?: int,
-     *     Marker?: string,
-     *     APIVersion?: string
+     *     MaxJobs?: int|null,
+     *     Marker?: string|null,
+     *     APIVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3Control\GetAccessPointPolicyStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $IsPublic
+ * @property bool|null $IsPublic
  */
 class PolicyStatus extends Shape
 {
     /**
-     * @param array{IsPublic?: bool} $args
+     * @param array{IsPublic?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

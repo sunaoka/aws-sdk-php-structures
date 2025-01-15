@@ -5,67 +5,67 @@ namespace Sunaoka\Aws\Structures\Neptune\CreateDBCluster;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $AvailabilityZones
- * @property int $BackupRetentionPeriod
- * @property string $CharacterSetName
- * @property bool $CopyTagsToSnapshot
- * @property string $DatabaseName
+ * @property list<string>|null $AvailabilityZones
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $CharacterSetName
+ * @property bool|null $CopyTagsToSnapshot
+ * @property string|null $DatabaseName
  * @property string $DBClusterIdentifier
- * @property string $DBClusterParameterGroupName
- * @property list<string> $VpcSecurityGroupIds
- * @property string $DBSubnetGroupName
+ * @property string|null $DBClusterParameterGroupName
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property string|null $DBSubnetGroupName
  * @property string $Engine
- * @property string $EngineVersion
- * @property int $Port
- * @property string $MasterUsername
- * @property string $MasterUserPassword
- * @property string $OptionGroupName
- * @property string $PreferredBackupWindow
- * @property string $PreferredMaintenanceWindow
- * @property string $ReplicationSourceIdentifier
- * @property list<Shapes\Tag> $Tags
- * @property bool $StorageEncrypted
- * @property string $KmsKeyId
- * @property string $PreSignedUrl
- * @property bool $EnableIAMDatabaseAuthentication
- * @property list<string> $EnableCloudwatchLogsExports
- * @property bool $DeletionProtection
- * @property Shapes\ServerlessV2ScalingConfiguration $ServerlessV2ScalingConfiguration
- * @property string $GlobalClusterIdentifier
- * @property string $StorageType
+ * @property string|null $EngineVersion
+ * @property int|null $Port
+ * @property string|null $MasterUsername
+ * @property string|null $MasterUserPassword
+ * @property string|null $OptionGroupName
+ * @property string|null $PreferredBackupWindow
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $ReplicationSourceIdentifier
+ * @property list<Shapes\Tag>|null $Tags
+ * @property bool|null $StorageEncrypted
+ * @property string|null $KmsKeyId
+ * @property string|null $PreSignedUrl
+ * @property bool|null $EnableIAMDatabaseAuthentication
+ * @property list<string>|null $EnableCloudwatchLogsExports
+ * @property bool|null $DeletionProtection
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
+ * @property string|null $GlobalClusterIdentifier
+ * @property string|null $StorageType
  */
 class CreateDBClusterRequest extends Request
 {
     /**
      * @param array{
-     *     AvailabilityZones?: list<string>,
-     *     BackupRetentionPeriod?: int,
-     *     CharacterSetName?: string,
-     *     CopyTagsToSnapshot?: bool,
-     *     DatabaseName?: string,
+     *     AvailabilityZones?: list<string>|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     CharacterSetName?: string|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     DatabaseName?: string|null,
      *     DBClusterIdentifier: string,
-     *     DBClusterParameterGroupName?: string,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     DBSubnetGroupName?: string,
+     *     DBClusterParameterGroupName?: string|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     DBSubnetGroupName?: string|null,
      *     Engine: string,
-     *     EngineVersion?: string,
-     *     Port?: int,
-     *     MasterUsername?: string,
-     *     MasterUserPassword?: string,
-     *     OptionGroupName?: string,
-     *     PreferredBackupWindow?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     ReplicationSourceIdentifier?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     StorageEncrypted?: bool,
-     *     KmsKeyId?: string,
-     *     PreSignedUrl?: string,
-     *     EnableIAMDatabaseAuthentication?: bool,
-     *     EnableCloudwatchLogsExports?: list<string>,
-     *     DeletionProtection?: bool,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration,
-     *     GlobalClusterIdentifier?: string,
-     *     StorageType?: string
+     *     EngineVersion?: string|null,
+     *     Port?: int|null,
+     *     MasterUsername?: string|null,
+     *     MasterUserPassword?: string|null,
+     *     OptionGroupName?: string|null,
+     *     PreferredBackupWindow?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     ReplicationSourceIdentifier?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     StorageEncrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     PreSignedUrl?: string|null,
+     *     EnableIAMDatabaseAuthentication?: bool|null,
+     *     EnableCloudwatchLogsExports?: list<string>|null,
+     *     DeletionProtection?: bool|null,
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
+     *     GlobalClusterIdentifier?: string|null,
+     *     StorageType?: string|null
      * } $args
      */
     public function __construct(array $args)

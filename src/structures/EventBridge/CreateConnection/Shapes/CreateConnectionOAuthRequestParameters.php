@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property CreateConnectionOAuthClientRequestParameters $ClientParameters
  * @property string $AuthorizationEndpoint
  * @property 'GET'|'POST'|'PUT' $HttpMethod
- * @property ConnectionHttpParameters $OAuthHttpParameters
+ * @property ConnectionHttpParameters|null $OAuthHttpParameters
  */
 class CreateConnectionOAuthRequestParameters extends Shape
 {
@@ -17,7 +17,7 @@ class CreateConnectionOAuthRequestParameters extends Shape
      *     ClientParameters: CreateConnectionOAuthClientRequestParameters,
      *     AuthorizationEndpoint: string,
      *     HttpMethod: 'GET'|'POST'|'PUT',
-     *     OAuthHttpParameters?: ConnectionHttpParameters
+     *     OAuthHttpParameters?: ConnectionHttpParameters|null
      * } $args
      */
     public function __construct(array $args)

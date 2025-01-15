@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\GetCurrentMetricData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Dimensions $Dimensions
- * @property list<CurrentMetricData> $Collections
+ * @property Dimensions|null $Dimensions
+ * @property list<CurrentMetricData>|null $Collections
  */
 class CurrentMetricResult extends Shape
 {
     /**
      * @param array{
-     *     Dimensions?: Dimensions,
-     *     Collections?: list<CurrentMetricData>
+     *     Dimensions?: Dimensions|null,
+     *     Collections?: list<CurrentMetricData>|null
      * } $args
      */
     public function __construct(array $args = [])

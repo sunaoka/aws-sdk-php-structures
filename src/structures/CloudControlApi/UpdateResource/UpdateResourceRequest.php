@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TypeName
- * @property string $TypeVersionId
- * @property string $RoleArn
- * @property string $ClientToken
+ * @property string|null $TypeVersionId
+ * @property string|null $RoleArn
+ * @property string|null $ClientToken
  * @property string $Identifier
  * @property string $PatchDocument
  */
@@ -17,9 +17,9 @@ class UpdateResourceRequest extends Request
     /**
      * @param array{
      *     TypeName: string,
-     *     TypeVersionId?: string,
-     *     RoleArn?: string,
-     *     ClientToken?: string,
+     *     TypeVersionId?: string|null,
+     *     RoleArn?: string|null,
+     *     ClientToken?: string|null,
      *     Identifier: string,
      *     PatchDocument: string
      * } $args

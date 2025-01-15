@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\GetFacet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Facet $Facet
+ * @property Shapes\Facet|null $Facet
  */
 class GetFacetResponse extends Response
 {

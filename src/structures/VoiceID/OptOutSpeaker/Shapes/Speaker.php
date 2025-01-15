@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\VoiceID\OptOutSpeaker\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $CustomerSpeakerId
- * @property string $DomainId
- * @property string $GeneratedSpeakerId
- * @property \Aws\Api\DateTimeResult $LastAccessedAt
- * @property 'ENROLLED'|'EXPIRED'|'OPTED_OUT'|'PENDING' $Status
- * @property \Aws\Api\DateTimeResult $UpdatedAt
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $CustomerSpeakerId
+ * @property string|null $DomainId
+ * @property string|null $GeneratedSpeakerId
+ * @property \Aws\Api\DateTimeResult|null $LastAccessedAt
+ * @property 'ENROLLED'|'EXPIRED'|'OPTED_OUT'|'PENDING'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
  */
 class Speaker extends Shape
 {
     /**
      * @param array{
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     CustomerSpeakerId?: string,
-     *     DomainId?: string,
-     *     GeneratedSpeakerId?: string,
-     *     LastAccessedAt?: \Aws\Api\DateTimeResult,
-     *     Status?: 'ENROLLED'|'EXPIRED'|'OPTED_OUT'|'PENDING',
-     *     UpdatedAt?: \Aws\Api\DateTimeResult
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     CustomerSpeakerId?: string|null,
+     *     DomainId?: string|null,
+     *     GeneratedSpeakerId?: string|null,
+     *     LastAccessedAt?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'ENROLLED'|'EXPIRED'|'OPTED_OUT'|'PENDING'|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

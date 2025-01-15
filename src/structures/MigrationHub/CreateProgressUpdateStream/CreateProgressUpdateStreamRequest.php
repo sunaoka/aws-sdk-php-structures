@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProgressUpdateStreamName
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class CreateProgressUpdateStreamRequest extends Request
 {
     /**
      * @param array{
      *     ProgressUpdateStreamName: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

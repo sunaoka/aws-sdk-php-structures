@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\EKS\DescribeClusterVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $clusterVersion
- * @property string $clusterType
- * @property string $defaultPlatformVersion
- * @property bool $defaultVersion
- * @property \Aws\Api\DateTimeResult $releaseDate
- * @property \Aws\Api\DateTimeResult $endOfStandardSupportDate
- * @property \Aws\Api\DateTimeResult $endOfExtendedSupportDate
- * @property 'unsupported'|'standard-support'|'extended-support' $status
- * @property string $kubernetesPatchVersion
+ * @property string|null $clusterVersion
+ * @property string|null $clusterType
+ * @property string|null $defaultPlatformVersion
+ * @property bool|null $defaultVersion
+ * @property \Aws\Api\DateTimeResult|null $releaseDate
+ * @property \Aws\Api\DateTimeResult|null $endOfStandardSupportDate
+ * @property \Aws\Api\DateTimeResult|null $endOfExtendedSupportDate
+ * @property 'unsupported'|'standard-support'|'extended-support'|null $status
+ * @property string|null $kubernetesPatchVersion
  */
 class ClusterVersionInformation extends Shape
 {
     /**
      * @param array{
-     *     clusterVersion?: string,
-     *     clusterType?: string,
-     *     defaultPlatformVersion?: string,
-     *     defaultVersion?: bool,
-     *     releaseDate?: \Aws\Api\DateTimeResult,
-     *     endOfStandardSupportDate?: \Aws\Api\DateTimeResult,
-     *     endOfExtendedSupportDate?: \Aws\Api\DateTimeResult,
-     *     status?: 'unsupported'|'standard-support'|'extended-support',
-     *     kubernetesPatchVersion?: string
+     *     clusterVersion?: string|null,
+     *     clusterType?: string|null,
+     *     defaultPlatformVersion?: string|null,
+     *     defaultVersion?: bool|null,
+     *     releaseDate?: \Aws\Api\DateTimeResult|null,
+     *     endOfStandardSupportDate?: \Aws\Api\DateTimeResult|null,
+     *     endOfExtendedSupportDate?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'unsupported'|'standard-support'|'extended-support'|null,
+     *     kubernetesPatchVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

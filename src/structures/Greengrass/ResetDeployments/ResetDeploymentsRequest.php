@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Greengrass\ResetDeployments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AmznClientToken
- * @property bool $Force
+ * @property string|null $AmznClientToken
+ * @property bool|null $Force
  * @property string $GroupId
  */
 class ResetDeploymentsRequest extends Request
 {
     /**
      * @param array{
-     *     AmznClientToken?: string,
-     *     Force?: bool,
+     *     AmznClientToken?: string|null,
+     *     Force?: bool|null,
      *     GroupId: string
      * } $args
      */

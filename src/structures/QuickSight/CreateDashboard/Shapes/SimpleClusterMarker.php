@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Color
+ * @property string|null $Color
  */
 class SimpleClusterMarker extends Shape
 {
     /**
-     * @param array{Color?: string} $args
+     * @param array{Color?: string|null} $args
      */
     public function __construct(array $args = [])
     {

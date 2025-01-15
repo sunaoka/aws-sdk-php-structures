@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Proton\GetServiceSyncBlockerSummary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<SyncBlocker> $latestBlockers
- * @property string $serviceInstanceName
+ * @property list<SyncBlocker>|null $latestBlockers
+ * @property string|null $serviceInstanceName
  * @property string $serviceName
  */
 class ServiceSyncBlockerSummary extends Shape
 {
     /**
      * @param array{
-     *     latestBlockers?: list<SyncBlocker>,
-     *     serviceInstanceName?: string,
+     *     latestBlockers?: list<SyncBlocker>|null,
+     *     serviceInstanceName?: string|null,
      *     serviceName: string
      * } $args
      */

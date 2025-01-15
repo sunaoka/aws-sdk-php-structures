@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\FSx\DescribeDataRepositoryTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DurationSinceLastAccess $DurationSinceLastAccess
+ * @property DurationSinceLastAccess|null $DurationSinceLastAccess
  */
 class ReleaseConfiguration extends Shape
 {
     /**
-     * @param array{DurationSinceLastAccess?: DurationSinceLastAccess} $args
+     * @param array{DurationSinceLastAccess?: DurationSinceLastAccess|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $cluster
  * @property string $service
  * @property string $taskSet
- * @property bool $force
+ * @property bool|null $force
  */
 class DeleteTaskSetRequest extends Request
 {
@@ -17,7 +17,7 @@ class DeleteTaskSetRequest extends Request
      *     cluster: string,
      *     service: string,
      *     taskSet: string,
-     *     force?: bool
+     *     force?: bool|null
      * } $args
      */
     public function __construct(array $args)

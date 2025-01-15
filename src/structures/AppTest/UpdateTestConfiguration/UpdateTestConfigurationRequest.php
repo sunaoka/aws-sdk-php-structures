@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $testConfigurationId
- * @property string $description
- * @property list<Shapes\Resource> $resources
- * @property array<string, string> $properties
- * @property Shapes\ServiceSettings $serviceSettings
+ * @property string|null $description
+ * @property list<Shapes\Resource>|null $resources
+ * @property array<string, string>|null $properties
+ * @property Shapes\ServiceSettings|null $serviceSettings
  */
 class UpdateTestConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     testConfigurationId: string,
-     *     description?: string,
-     *     resources?: list<Shapes\Resource>,
-     *     properties?: array<string, string>,
-     *     serviceSettings?: Shapes\ServiceSettings
+     *     description?: string|null,
+     *     resources?: list<Shapes\Resource>|null,
+     *     properties?: array<string, string>|null,
+     *     serviceSettings?: Shapes\ServiceSettings|null
      * } $args
      */
     public function __construct(array $args)

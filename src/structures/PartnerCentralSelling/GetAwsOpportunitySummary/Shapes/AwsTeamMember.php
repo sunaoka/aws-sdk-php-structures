@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetAwsOpportunitySummary\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AWSSalesRep'|'AWSAccountOwner'|'WWPSPDM'|'PDM'|'PSM'|'ISVSM' $BusinessTitle
- * @property string $Email
- * @property string $FirstName
- * @property string $LastName
+ * @property 'AWSSalesRep'|'AWSAccountOwner'|'WWPSPDM'|'PDM'|'PSM'|'ISVSM'|null $BusinessTitle
+ * @property string|null $Email
+ * @property string|null $FirstName
+ * @property string|null $LastName
  */
 class AwsTeamMember extends Shape
 {
     /**
      * @param array{
-     *     BusinessTitle?: 'AWSSalesRep'|'AWSAccountOwner'|'WWPSPDM'|'PDM'|'PSM'|'ISVSM',
-     *     Email?: string,
-     *     FirstName?: string,
-     *     LastName?: string
+     *     BusinessTitle?: 'AWSSalesRep'|'AWSAccountOwner'|'WWPSPDM'|'PDM'|'PSM'|'ISVSM'|null,
+     *     Email?: string|null,
+     *     FirstName?: string|null,
+     *     LastName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

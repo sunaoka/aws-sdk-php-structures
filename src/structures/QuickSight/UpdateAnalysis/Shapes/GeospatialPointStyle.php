@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeospatialCircleSymbolStyle $CircleSymbolStyle
+ * @property GeospatialCircleSymbolStyle|null $CircleSymbolStyle
  */
 class GeospatialPointStyle extends Shape
 {
     /**
-     * @param array{CircleSymbolStyle?: GeospatialCircleSymbolStyle} $args
+     * @param array{CircleSymbolStyle?: GeospatialCircleSymbolStyle|null} $args
      */
     public function __construct(array $args = [])
     {

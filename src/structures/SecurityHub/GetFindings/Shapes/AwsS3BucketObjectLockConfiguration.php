@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ObjectLockEnabled
- * @property AwsS3BucketObjectLockConfigurationRuleDetails $Rule
+ * @property string|null $ObjectLockEnabled
+ * @property AwsS3BucketObjectLockConfigurationRuleDetails|null $Rule
  */
 class AwsS3BucketObjectLockConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ObjectLockEnabled?: string,
-     *     Rule?: AwsS3BucketObjectLockConfigurationRuleDetails
+     *     ObjectLockEnabled?: string|null,
+     *     Rule?: AwsS3BucketObjectLockConfigurationRuleDetails|null
      * } $args
      */
     public function __construct(array $args = [])

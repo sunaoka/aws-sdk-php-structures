@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListRefreshSchedules;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\RefreshSchedule> $RefreshSchedules
- * @property int $Status
- * @property string $RequestId
+ * @property list<Shapes\RefreshSchedule>|null $RefreshSchedules
+ * @property int|null $Status
+ * @property string|null $RequestId
  */
 class ListRefreshSchedulesResponse extends Response
 {

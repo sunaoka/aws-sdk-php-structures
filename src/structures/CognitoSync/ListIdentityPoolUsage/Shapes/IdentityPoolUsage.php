@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CognitoSync\ListIdentityPoolUsage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IdentityPoolId
- * @property int $SyncSessionsCount
- * @property int $DataStorage
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
+ * @property string|null $IdentityPoolId
+ * @property int|null $SyncSessionsCount
+ * @property int|null $DataStorage
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
  */
 class IdentityPoolUsage extends Shape
 {
     /**
      * @param array{
-     *     IdentityPoolId?: string,
-     *     SyncSessionsCount?: int,
-     *     DataStorage?: int,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult
+     *     IdentityPoolId?: string|null,
+     *     SyncSessionsCount?: int|null,
+     *     DataStorage?: int|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

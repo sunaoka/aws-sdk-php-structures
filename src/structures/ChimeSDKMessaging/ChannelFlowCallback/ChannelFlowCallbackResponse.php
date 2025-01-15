@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\ChannelFlowCallback;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChannelArn
- * @property string $CallbackId
+ * @property string|null $ChannelArn
+ * @property string|null $CallbackId
  */
 class ChannelFlowCallbackResponse extends Response
 {

@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $applicationId
- * @property string $clientToken
- * @property 'ENTERPRISE_CONTENT_ONLY'|'EXTENDED_KNOWLEDGE_ENABLED' $responseScope
- * @property Shapes\BlockedPhrasesConfigurationUpdate $blockedPhrasesConfigurationUpdate
- * @property list<Shapes\TopicConfiguration> $topicConfigurationsToCreateOrUpdate
- * @property list<Shapes\TopicConfiguration> $topicConfigurationsToDelete
- * @property Shapes\CreatorModeConfiguration $creatorModeConfiguration
+ * @property string|null $clientToken
+ * @property 'ENTERPRISE_CONTENT_ONLY'|'EXTENDED_KNOWLEDGE_ENABLED'|null $responseScope
+ * @property Shapes\BlockedPhrasesConfigurationUpdate|null $blockedPhrasesConfigurationUpdate
+ * @property list<Shapes\TopicConfiguration>|null $topicConfigurationsToCreateOrUpdate
+ * @property list<Shapes\TopicConfiguration>|null $topicConfigurationsToDelete
+ * @property Shapes\CreatorModeConfiguration|null $creatorModeConfiguration
  */
 class UpdateChatControlsConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     applicationId: string,
-     *     clientToken?: string,
-     *     responseScope?: 'ENTERPRISE_CONTENT_ONLY'|'EXTENDED_KNOWLEDGE_ENABLED',
-     *     blockedPhrasesConfigurationUpdate?: Shapes\BlockedPhrasesConfigurationUpdate,
-     *     topicConfigurationsToCreateOrUpdate?: list<Shapes\TopicConfiguration>,
-     *     topicConfigurationsToDelete?: list<Shapes\TopicConfiguration>,
-     *     creatorModeConfiguration?: Shapes\CreatorModeConfiguration
+     *     clientToken?: string|null,
+     *     responseScope?: 'ENTERPRISE_CONTENT_ONLY'|'EXTENDED_KNOWLEDGE_ENABLED'|null,
+     *     blockedPhrasesConfigurationUpdate?: Shapes\BlockedPhrasesConfigurationUpdate|null,
+     *     topicConfigurationsToCreateOrUpdate?: list<Shapes\TopicConfiguration>|null,
+     *     topicConfigurationsToDelete?: list<Shapes\TopicConfiguration>|null,
+     *     creatorModeConfiguration?: Shapes\CreatorModeConfiguration|null
      * } $args
      */
     public function __construct(array $args)

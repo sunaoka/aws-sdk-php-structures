@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Delimiter
- * @property TextAreaControlDisplayOptions $DisplayOptions
+ * @property string|null $Delimiter
+ * @property TextAreaControlDisplayOptions|null $DisplayOptions
  */
 class DefaultTextAreaControlOptions extends Shape
 {
     /**
      * @param array{
-     *     Delimiter?: string,
-     *     DisplayOptions?: TextAreaControlDisplayOptions
+     *     Delimiter?: string|null,
+     *     DisplayOptions?: TextAreaControlDisplayOptions|null
      * } $args
      */
     public function __construct(array $args = [])

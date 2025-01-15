@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Redshift\ModifyClusterMaintenance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Status
- * @property double $CurrentRateInMegaBytesPerSecond
- * @property int $TotalDataInMegaBytes
- * @property int $DataTransferredInMegaBytes
- * @property int $EstimatedTimeToCompletionInSeconds
- * @property int $ElapsedTimeInSeconds
+ * @property string|null $Status
+ * @property double|null $CurrentRateInMegaBytesPerSecond
+ * @property int|null $TotalDataInMegaBytes
+ * @property int|null $DataTransferredInMegaBytes
+ * @property int|null $EstimatedTimeToCompletionInSeconds
+ * @property int|null $ElapsedTimeInSeconds
  */
 class DataTransferProgress extends Shape
 {
     /**
      * @param array{
-     *     Status?: string,
-     *     CurrentRateInMegaBytesPerSecond?: double,
-     *     TotalDataInMegaBytes?: int,
-     *     DataTransferredInMegaBytes?: int,
-     *     EstimatedTimeToCompletionInSeconds?: int,
-     *     ElapsedTimeInSeconds?: int
+     *     Status?: string|null,
+     *     CurrentRateInMegaBytesPerSecond?: double|null,
+     *     TotalDataInMegaBytes?: int|null,
+     *     DataTransferredInMegaBytes?: int|null,
+     *     EstimatedTimeToCompletionInSeconds?: int|null,
+     *     ElapsedTimeInSeconds?: int|null
      * } $args
      */
     public function __construct(array $args = [])

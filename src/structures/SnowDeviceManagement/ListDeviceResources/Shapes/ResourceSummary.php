@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\SnowDeviceManagement\ListDeviceResources\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $id
+ * @property string|null $arn
+ * @property string|null $id
  * @property string $resourceType
  */
 class ResourceSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     id?: string,
+     *     arn?: string|null,
+     *     id?: string|null,
      *     resourceType: string
      * } $args
      */

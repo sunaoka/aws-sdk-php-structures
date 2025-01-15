@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GroundStation\ReserveContact;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $contactId
+ * @property string|null $contactId
  */
 class ReserveContactResponse extends Response
 {

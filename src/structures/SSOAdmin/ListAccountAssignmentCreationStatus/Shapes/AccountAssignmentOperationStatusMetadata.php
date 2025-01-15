@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListAccountAssignmentCreationStatus\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property string $RequestId
- * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED' $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property string|null $RequestId
+ * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null $Status
  */
 class AccountAssignmentOperationStatusMetadata extends Shape
 {
     /**
      * @param array{
-     *     CreatedDate?: \Aws\Api\DateTimeResult,
-     *     RequestId?: string,
-     *     Status?: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     RequestId?: string|null,
+     *     Status?: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|null
      * } $args
      */
     public function __construct(array $args = [])

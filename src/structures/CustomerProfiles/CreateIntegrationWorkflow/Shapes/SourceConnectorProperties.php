@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\CreateIntegrationWorkflow\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MarketoSourceProperties $Marketo
- * @property S3SourceProperties $S3
- * @property SalesforceSourceProperties $Salesforce
- * @property ServiceNowSourceProperties $ServiceNow
- * @property ZendeskSourceProperties $Zendesk
+ * @property MarketoSourceProperties|null $Marketo
+ * @property S3SourceProperties|null $S3
+ * @property SalesforceSourceProperties|null $Salesforce
+ * @property ServiceNowSourceProperties|null $ServiceNow
+ * @property ZendeskSourceProperties|null $Zendesk
  */
 class SourceConnectorProperties extends Shape
 {
     /**
      * @param array{
-     *     Marketo?: MarketoSourceProperties,
-     *     S3?: S3SourceProperties,
-     *     Salesforce?: SalesforceSourceProperties,
-     *     ServiceNow?: ServiceNowSourceProperties,
-     *     Zendesk?: ZendeskSourceProperties
+     *     Marketo?: MarketoSourceProperties|null,
+     *     S3?: S3SourceProperties|null,
+     *     Salesforce?: SalesforceSourceProperties|null,
+     *     ServiceNow?: ServiceNowSourceProperties|null,
+     *     Zendesk?: ZendeskSourceProperties|null
      * } $args
      */
     public function __construct(array $args = [])

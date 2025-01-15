@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PhoneNumberId
- * @property string $PhoneNumberDescription
- * @property string $ClientToken
+ * @property string|null $PhoneNumberDescription
+ * @property string|null $ClientToken
  */
 class UpdatePhoneNumberMetadataRequest extends Request
 {
     /**
      * @param array{
      *     PhoneNumberId: string,
-     *     PhoneNumberDescription?: string,
-     *     ClientToken?: string
+     *     PhoneNumberDescription?: string|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

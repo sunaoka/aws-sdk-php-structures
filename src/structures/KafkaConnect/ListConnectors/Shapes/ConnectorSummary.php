@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\ListConnectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CapacityDescription $capacity
- * @property string $connectorArn
- * @property string $connectorDescription
- * @property string $connectorName
- * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED' $connectorState
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property string $currentVersion
- * @property KafkaClusterDescription $kafkaCluster
- * @property KafkaClusterClientAuthenticationDescription $kafkaClusterClientAuthentication
- * @property KafkaClusterEncryptionInTransitDescription $kafkaClusterEncryptionInTransit
- * @property string $kafkaConnectVersion
- * @property LogDeliveryDescription $logDelivery
- * @property list<PluginDescription> $plugins
- * @property string $serviceExecutionRoleArn
- * @property WorkerConfigurationDescription $workerConfiguration
+ * @property CapacityDescription|null $capacity
+ * @property string|null $connectorArn
+ * @property string|null $connectorDescription
+ * @property string|null $connectorName
+ * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|null $connectorState
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property string|null $currentVersion
+ * @property KafkaClusterDescription|null $kafkaCluster
+ * @property KafkaClusterClientAuthenticationDescription|null $kafkaClusterClientAuthentication
+ * @property KafkaClusterEncryptionInTransitDescription|null $kafkaClusterEncryptionInTransit
+ * @property string|null $kafkaConnectVersion
+ * @property LogDeliveryDescription|null $logDelivery
+ * @property list<PluginDescription>|null $plugins
+ * @property string|null $serviceExecutionRoleArn
+ * @property WorkerConfigurationDescription|null $workerConfiguration
  */
 class ConnectorSummary extends Shape
 {
     /**
      * @param array{
-     *     capacity?: CapacityDescription,
-     *     connectorArn?: string,
-     *     connectorDescription?: string,
-     *     connectorName?: string,
-     *     connectorState?: 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED',
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     currentVersion?: string,
-     *     kafkaCluster?: KafkaClusterDescription,
-     *     kafkaClusterClientAuthentication?: KafkaClusterClientAuthenticationDescription,
-     *     kafkaClusterEncryptionInTransit?: KafkaClusterEncryptionInTransitDescription,
-     *     kafkaConnectVersion?: string,
-     *     logDelivery?: LogDeliveryDescription,
-     *     plugins?: list<PluginDescription>,
-     *     serviceExecutionRoleArn?: string,
-     *     workerConfiguration?: WorkerConfigurationDescription
+     *     capacity?: CapacityDescription|null,
+     *     connectorArn?: string|null,
+     *     connectorDescription?: string|null,
+     *     connectorName?: string|null,
+     *     connectorState?: 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     currentVersion?: string|null,
+     *     kafkaCluster?: KafkaClusterDescription|null,
+     *     kafkaClusterClientAuthentication?: KafkaClusterClientAuthenticationDescription|null,
+     *     kafkaClusterEncryptionInTransit?: KafkaClusterEncryptionInTransitDescription|null,
+     *     kafkaConnectVersion?: string|null,
+     *     logDelivery?: LogDeliveryDescription|null,
+     *     plugins?: list<PluginDescription>|null,
+     *     serviceExecutionRoleArn?: string|null,
+     *     workerConfiguration?: WorkerConfigurationDescription|null
      * } $args
      */
     public function __construct(array $args = [])

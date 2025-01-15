@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\ListPortals;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\PortalSummary> $portalSummaries
- * @property string $nextToken
+ * @property list<Shapes\PortalSummary>|null $portalSummaries
+ * @property string|null $nextToken
  */
 class ListPortalsResponse extends Response
 {

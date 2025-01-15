@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\CreateApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CheckpointConfigurationDescription $CheckpointConfigurationDescription
- * @property MonitoringConfigurationDescription $MonitoringConfigurationDescription
- * @property ParallelismConfigurationDescription $ParallelismConfigurationDescription
- * @property string $JobPlanDescription
+ * @property CheckpointConfigurationDescription|null $CheckpointConfigurationDescription
+ * @property MonitoringConfigurationDescription|null $MonitoringConfigurationDescription
+ * @property ParallelismConfigurationDescription|null $ParallelismConfigurationDescription
+ * @property string|null $JobPlanDescription
  */
 class FlinkApplicationConfigurationDescription extends Shape
 {
     /**
      * @param array{
-     *     CheckpointConfigurationDescription?: CheckpointConfigurationDescription,
-     *     MonitoringConfigurationDescription?: MonitoringConfigurationDescription,
-     *     ParallelismConfigurationDescription?: ParallelismConfigurationDescription,
-     *     JobPlanDescription?: string
+     *     CheckpointConfigurationDescription?: CheckpointConfigurationDescription|null,
+     *     MonitoringConfigurationDescription?: MonitoringConfigurationDescription|null,
+     *     ParallelismConfigurationDescription?: ParallelismConfigurationDescription|null,
+     *     JobPlanDescription?: string|null
      * } $args
      */
     public function __construct(array $args = [])

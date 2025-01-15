@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\UpdateDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Schedule $schedule
- * @property TriggeringDataset $dataset
+ * @property Schedule|null $schedule
+ * @property TriggeringDataset|null $dataset
  */
 class DatasetTrigger extends Shape
 {
     /**
      * @param array{
-     *     schedule?: Schedule,
-     *     dataset?: TriggeringDataset
+     *     schedule?: Schedule|null,
+     *     dataset?: TriggeringDataset|null
      * } $args
      */
     public function __construct(array $args = [])

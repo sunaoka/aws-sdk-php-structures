@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\UpdateParticipantRoleConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Unset' $ParticipantTimerAction
- * @property int<2, 480> $ParticipantTimerDurationInMinutes
+ * @property 'Unset'|null $ParticipantTimerAction
+ * @property int<2, 480>|null $ParticipantTimerDurationInMinutes
  */
 class ParticipantTimerValue extends Shape
 {
     /**
      * @param array{
-     *     ParticipantTimerAction?: 'Unset',
-     *     ParticipantTimerDurationInMinutes?: int<2, 480>
+     *     ParticipantTimerAction?: 'Unset'|null,
+     *     ParticipantTimerDurationInMinutes?: int<2, 480>|null
      * } $args
      */
     public function __construct(array $args = [])

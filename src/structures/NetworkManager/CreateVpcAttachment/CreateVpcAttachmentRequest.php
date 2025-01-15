@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CoreNetworkId
  * @property string $VpcArn
  * @property list<string> $SubnetArns
- * @property Shapes\VpcOptions $Options
- * @property list<Shapes\Tag> $Tags
- * @property string $ClientToken
+ * @property Shapes\VpcOptions|null $Options
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $ClientToken
  */
 class CreateVpcAttachmentRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateVpcAttachmentRequest extends Request
      *     CoreNetworkId: string,
      *     VpcArn: string,
      *     SubnetArns: list<string>,
-     *     Options?: Shapes\VpcOptions,
-     *     Tags?: list<Shapes\Tag>,
-     *     ClientToken?: string
+     *     Options?: Shapes\VpcOptions|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,20 +9,20 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $ARN
  * @property DefaultAction $DefaultAction
- * @property string $Description
- * @property list<Rule> $Rules
+ * @property string|null $Description
+ * @property list<Rule>|null $Rules
  * @property VisibilityConfig $VisibilityConfig
- * @property int<0, max> $Capacity
- * @property list<FirewallManagerRuleGroup> $PreProcessFirewallManagerRuleGroups
- * @property list<FirewallManagerRuleGroup> $PostProcessFirewallManagerRuleGroups
- * @property bool $ManagedByFirewallManager
- * @property string $LabelNamespace
- * @property array<string, CustomResponseBody> $CustomResponseBodies
- * @property CaptchaConfig $CaptchaConfig
- * @property ChallengeConfig $ChallengeConfig
- * @property list<string> $TokenDomains
- * @property AssociationConfig $AssociationConfig
- * @property bool $RetrofittedByFirewallManager
+ * @property int<0, max>|null $Capacity
+ * @property list<FirewallManagerRuleGroup>|null $PreProcessFirewallManagerRuleGroups
+ * @property list<FirewallManagerRuleGroup>|null $PostProcessFirewallManagerRuleGroups
+ * @property bool|null $ManagedByFirewallManager
+ * @property string|null $LabelNamespace
+ * @property array<string, CustomResponseBody>|null $CustomResponseBodies
+ * @property CaptchaConfig|null $CaptchaConfig
+ * @property ChallengeConfig|null $ChallengeConfig
+ * @property list<string>|null $TokenDomains
+ * @property AssociationConfig|null $AssociationConfig
+ * @property bool|null $RetrofittedByFirewallManager
  */
 class WebACL extends Shape
 {
@@ -32,20 +32,20 @@ class WebACL extends Shape
      *     Id: string,
      *     ARN: string,
      *     DefaultAction: DefaultAction,
-     *     Description?: string,
-     *     Rules?: list<Rule>,
+     *     Description?: string|null,
+     *     Rules?: list<Rule>|null,
      *     VisibilityConfig: VisibilityConfig,
-     *     Capacity?: int<0, max>,
-     *     PreProcessFirewallManagerRuleGroups?: list<FirewallManagerRuleGroup>,
-     *     PostProcessFirewallManagerRuleGroups?: list<FirewallManagerRuleGroup>,
-     *     ManagedByFirewallManager?: bool,
-     *     LabelNamespace?: string,
-     *     CustomResponseBodies?: array<string, CustomResponseBody>,
-     *     CaptchaConfig?: CaptchaConfig,
-     *     ChallengeConfig?: ChallengeConfig,
-     *     TokenDomains?: list<string>,
-     *     AssociationConfig?: AssociationConfig,
-     *     RetrofittedByFirewallManager?: bool
+     *     Capacity?: int<0, max>|null,
+     *     PreProcessFirewallManagerRuleGroups?: list<FirewallManagerRuleGroup>|null,
+     *     PostProcessFirewallManagerRuleGroups?: list<FirewallManagerRuleGroup>|null,
+     *     ManagedByFirewallManager?: bool|null,
+     *     LabelNamespace?: string|null,
+     *     CustomResponseBodies?: array<string, CustomResponseBody>|null,
+     *     CaptchaConfig?: CaptchaConfig|null,
+     *     ChallengeConfig?: ChallengeConfig|null,
+     *     TokenDomains?: list<string>|null,
+     *     AssociationConfig?: AssociationConfig|null,
+     *     RetrofittedByFirewallManager?: bool|null
      * } $args
      */
     public function __construct(array $args)

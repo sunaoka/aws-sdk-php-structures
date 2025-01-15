@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SocialMessaging\DeleteWhatsAppMessageMedia;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $success
+ * @property bool|null $success
  */
 class DeleteWhatsAppMessageMediaResponse extends Response
 {

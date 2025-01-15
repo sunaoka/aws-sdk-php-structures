@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GlobalReplicationGroupId
  * @property int $NodeGroupCount
- * @property list<Shapes\RegionalConfiguration> $RegionalConfigurations
+ * @property list<Shapes\RegionalConfiguration>|null $RegionalConfigurations
  * @property bool $ApplyImmediately
  */
 class IncreaseNodeGroupsInGlobalReplicationGroupRequest extends Request
@@ -16,7 +16,7 @@ class IncreaseNodeGroupsInGlobalReplicationGroupRequest extends Request
      * @param array{
      *     GlobalReplicationGroupId: string,
      *     NodeGroupCount: int,
-     *     RegionalConfigurations?: list<Shapes\RegionalConfiguration>,
+     *     RegionalConfigurations?: list<Shapes\RegionalConfiguration>|null,
      *     ApplyImmediately: bool
      * } $args
      */

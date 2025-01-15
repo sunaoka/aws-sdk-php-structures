@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Omics\ListReadSetExportJobs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\ExportReadSetJobDetail> $exportJobs
+ * @property string|null $nextToken
+ * @property list<Shapes\ExportReadSetJobDetail>|null $exportJobs
  */
 class ListReadSetExportJobsResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\BatchDeleteTable;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $DatabaseName
  * @property list<string> $TablesToDelete
- * @property string $TransactionId
+ * @property string|null $TransactionId
  */
 class BatchDeleteTableRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DatabaseName: string,
      *     TablesToDelete: list<string>,
-     *     TransactionId?: string
+     *     TransactionId?: string|null
      * } $args
      */
     public function __construct(array $args)

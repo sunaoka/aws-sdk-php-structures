@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $mappingTemplate
- * @property float $mappingAccuracy
+ * @property float|null $mappingAccuracy
  */
 class GenerateMappingResponse extends Response
 {

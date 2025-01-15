@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $SheetId
  * @property 'ALL_VISUALS'|'SELECTED_VISUALS' $SelectionScope
- * @property list<string> $VisualIds
+ * @property list<string>|null $VisualIds
  */
 class SnapshotFileSheetSelection extends Shape
 {
@@ -15,7 +15,7 @@ class SnapshotFileSheetSelection extends Shape
      * @param array{
      *     SheetId: string,
      *     SelectionScope: 'ALL_VISUALS'|'SELECTED_VISUALS',
-     *     VisualIds?: list<string>
+     *     VisualIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

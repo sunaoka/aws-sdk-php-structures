@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $projectArn
- * @property 'DEVELOPMENT'|'LIVE' $projectStage
- * @property string $projectDescription
+ * @property 'DEVELOPMENT'|'LIVE'|null $projectStage
+ * @property string|null $projectDescription
  * @property Shapes\StandardOutputConfiguration $standardOutputConfiguration
- * @property Shapes\CustomOutputConfiguration $customOutputConfiguration
- * @property Shapes\OverrideConfiguration $overrideConfiguration
+ * @property Shapes\CustomOutputConfiguration|null $customOutputConfiguration
+ * @property Shapes\OverrideConfiguration|null $overrideConfiguration
  */
 class UpdateDataAutomationProjectRequest extends Request
 {
     /**
      * @param array{
      *     projectArn: string,
-     *     projectStage?: 'DEVELOPMENT'|'LIVE',
-     *     projectDescription?: string,
+     *     projectStage?: 'DEVELOPMENT'|'LIVE'|null,
+     *     projectDescription?: string|null,
      *     standardOutputConfiguration: Shapes\StandardOutputConfiguration,
-     *     customOutputConfiguration?: Shapes\CustomOutputConfiguration,
-     *     overrideConfiguration?: Shapes\OverrideConfiguration
+     *     customOutputConfiguration?: Shapes\CustomOutputConfiguration|null,
+     *     overrideConfiguration?: Shapes\OverrideConfiguration|null
      * } $args
      */
     public function __construct(array $args)

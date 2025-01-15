@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaPackageV2\GetChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $PublishMQCS
+ * @property bool|null $PublishMQCS
  */
 class OutputHeaderConfiguration extends Shape
 {
     /**
-     * @param array{PublishMQCS?: bool} $args
+     * @param array{PublishMQCS?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

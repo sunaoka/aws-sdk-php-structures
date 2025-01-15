@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $queueUrl
- * @property bool $useBase64
- * @property Payload $payload
+ * @property bool|null $useBase64
+ * @property Payload|null $payload
  */
 class SqsAction extends Shape
 {
     /**
      * @param array{
      *     queueUrl: string,
-     *     useBase64?: bool,
-     *     payload?: Payload
+     *     useBase64?: bool|null,
+     *     payload?: Payload|null
      * } $args
      */
     public function __construct(array $args)

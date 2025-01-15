@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $trainingDatasetArn
  * @property string $name
  * @property 'ACTIVE' $status
- * @property string $description
+ * @property string|null $description
  */
 class TrainingDatasetSummary extends Shape
 {
@@ -21,7 +21,7 @@ class TrainingDatasetSummary extends Shape
      *     trainingDatasetArn: string,
      *     name: string,
      *     status: 'ACTIVE',
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

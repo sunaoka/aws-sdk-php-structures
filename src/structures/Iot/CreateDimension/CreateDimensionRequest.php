@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property 'TOPIC_FILTER' $type
  * @property list<string> $stringValues
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  * @property string $clientRequestToken
  */
 class CreateDimensionRequest extends Request
@@ -18,7 +18,7 @@ class CreateDimensionRequest extends Request
      *     name: string,
      *     type: 'TOPIC_FILTER',
      *     stringValues: list<string>,
-     *     tags?: list<Shapes\Tag>,
+     *     tags?: list<Shapes\Tag>|null,
      *     clientRequestToken: string
      * } $args
      */

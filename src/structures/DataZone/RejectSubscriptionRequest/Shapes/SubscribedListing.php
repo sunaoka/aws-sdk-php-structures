@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property SubscribedListingItem $item
  * @property string $name
  * @property string $ownerProjectId
- * @property string $ownerProjectName
- * @property string $revision
+ * @property string|null $ownerProjectName
+ * @property string|null $revision
  */
 class SubscribedListing extends Shape
 {
@@ -22,8 +22,8 @@ class SubscribedListing extends Shape
      *     item: SubscribedListingItem,
      *     name: string,
      *     ownerProjectId: string,
-     *     ownerProjectName?: string,
-     *     revision?: string
+     *     ownerProjectName?: string|null,
+     *     revision?: string|null
      * } $args
      */
     public function __construct(array $args)

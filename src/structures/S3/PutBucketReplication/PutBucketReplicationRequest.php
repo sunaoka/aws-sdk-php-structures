@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Bucket
- * @property string $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
+ * @property string|null $ContentMD5
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
  * @property Shapes\ReplicationConfiguration $ReplicationConfiguration
- * @property string $Token
- * @property string $ExpectedBucketOwner
+ * @property string|null $Token
+ * @property string|null $ExpectedBucketOwner
  */
 class PutBucketReplicationRequest extends Request
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     ContentMD5?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256',
+     *     ContentMD5?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
      *     ReplicationConfiguration: Shapes\ReplicationConfiguration,
-     *     Token?: string,
-     *     ExpectedBucketOwner?: string
+     *     Token?: string|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateModelQualityJobDefinition\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EndpointInput $EndpointInput
- * @property BatchTransformInput $BatchTransformInput
+ * @property EndpointInput|null $EndpointInput
+ * @property BatchTransformInput|null $BatchTransformInput
  * @property MonitoringGroundTruthS3Input $GroundTruthS3Input
  */
 class ModelQualityJobInput extends Shape
 {
     /**
      * @param array{
-     *     EndpointInput?: EndpointInput,
-     *     BatchTransformInput?: BatchTransformInput,
+     *     EndpointInput?: EndpointInput|null,
+     *     BatchTransformInput?: BatchTransformInput|null,
      *     GroundTruthS3Input: MonitoringGroundTruthS3Input
      * } $args
      */

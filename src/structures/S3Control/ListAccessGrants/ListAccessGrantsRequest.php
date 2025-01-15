@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AccountId
- * @property string $NextToken
- * @property int<0, 1000> $MaxResults
- * @property 'DIRECTORY_USER'|'DIRECTORY_GROUP'|'IAM' $GranteeType
- * @property string $GranteeIdentifier
- * @property 'READ'|'WRITE'|'READWRITE' $Permission
- * @property string $GrantScope
- * @property string $ApplicationArn
+ * @property string|null $NextToken
+ * @property int<0, 1000>|null $MaxResults
+ * @property 'DIRECTORY_USER'|'DIRECTORY_GROUP'|'IAM'|null $GranteeType
+ * @property string|null $GranteeIdentifier
+ * @property 'READ'|'WRITE'|'READWRITE'|null $Permission
+ * @property string|null $GrantScope
+ * @property string|null $ApplicationArn
  */
 class ListAccessGrantsRequest extends Request
 {
     /**
      * @param array{
      *     AccountId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 1000>,
-     *     GranteeType?: 'DIRECTORY_USER'|'DIRECTORY_GROUP'|'IAM',
-     *     GranteeIdentifier?: string,
-     *     Permission?: 'READ'|'WRITE'|'READWRITE',
-     *     GrantScope?: string,
-     *     ApplicationArn?: string
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 1000>|null,
+     *     GranteeType?: 'DIRECTORY_USER'|'DIRECTORY_GROUP'|'IAM'|null,
+     *     GranteeIdentifier?: string|null,
+     *     Permission?: 'READ'|'WRITE'|'READWRITE'|null,
+     *     GrantScope?: string|null,
+     *     ApplicationArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdatePrompt\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PromptInputVariable> $inputVariables
+ * @property list<PromptInputVariable>|null $inputVariables
  * @property string $text
  */
 class TextPromptTemplateConfiguration extends Shape
 {
     /**
      * @param array{
-     *     inputVariables?: list<PromptInputVariable>,
+     *     inputVariables?: list<PromptInputVariable>|null,
      *     text: string
      * } $args
      */

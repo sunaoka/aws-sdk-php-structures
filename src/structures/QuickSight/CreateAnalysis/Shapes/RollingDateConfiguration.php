@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DataSetIdentifier
+ * @property string|null $DataSetIdentifier
  * @property string $Expression
  */
 class RollingDateConfiguration extends Shape
 {
     /**
      * @param array{
-     *     DataSetIdentifier?: string,
+     *     DataSetIdentifier?: string|null,
      *     Expression: string
      * } $args
      */

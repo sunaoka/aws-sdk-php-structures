@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DeleteCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ReshardingStatus $Resharding
- * @property ACLsUpdateStatus $ACLs
- * @property list<PendingModifiedServiceUpdate> $ServiceUpdates
+ * @property ReshardingStatus|null $Resharding
+ * @property ACLsUpdateStatus|null $ACLs
+ * @property list<PendingModifiedServiceUpdate>|null $ServiceUpdates
  */
 class ClusterPendingUpdates extends Shape
 {
     /**
      * @param array{
-     *     Resharding?: ReshardingStatus,
-     *     ACLs?: ACLsUpdateStatus,
-     *     ServiceUpdates?: list<PendingModifiedServiceUpdate>
+     *     Resharding?: ReshardingStatus|null,
+     *     ACLs?: ACLsUpdateStatus|null,
+     *     ServiceUpdates?: list<PendingModifiedServiceUpdate>|null
      * } $args
      */
     public function __construct(array $args = [])

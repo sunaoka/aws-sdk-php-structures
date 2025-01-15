@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $FolderId
- * @property string $Namespace
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $Namespace
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeFolderPermissionsRequest extends Request
 {
@@ -17,9 +17,9 @@ class DescribeFolderPermissionsRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     FolderId: string,
-     *     Namespace?: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     Namespace?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

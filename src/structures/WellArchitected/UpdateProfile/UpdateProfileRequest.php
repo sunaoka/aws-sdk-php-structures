@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProfileArn
- * @property string $ProfileDescription
- * @property list<Shapes\ProfileQuestionUpdate> $ProfileQuestions
+ * @property string|null $ProfileDescription
+ * @property list<Shapes\ProfileQuestionUpdate>|null $ProfileQuestions
  */
 class UpdateProfileRequest extends Request
 {
     /**
      * @param array{
      *     ProfileArn: string,
-     *     ProfileDescription?: string,
-     *     ProfileQuestions?: list<Shapes\ProfileQuestionUpdate>
+     *     ProfileDescription?: string|null,
+     *     ProfileQuestions?: list<Shapes\ProfileQuestionUpdate>|null
      * } $args
      */
     public function __construct(array $args)

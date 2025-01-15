@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TrialComponentName
- * @property string $DisplayName
- * @property string $TrialComponentArn
- * @property TrialComponentSource $Source
- * @property TrialComponentStatus $Status
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property UserContext $CreatedBy
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property UserContext $LastModifiedBy
- * @property array<string, TrialComponentParameterValue> $Parameters
- * @property array<string, TrialComponentArtifact> $InputArtifacts
- * @property array<string, TrialComponentArtifact> $OutputArtifacts
- * @property list<TrialComponentMetricSummary> $Metrics
- * @property MetadataProperties $MetadataProperties
- * @property TrialComponentSourceDetail $SourceDetail
- * @property string $LineageGroupArn
- * @property list<Tag> $Tags
- * @property list<ParentShape> $Parents
- * @property string $RunName
+ * @property string|null $TrialComponentName
+ * @property string|null $DisplayName
+ * @property string|null $TrialComponentArn
+ * @property TrialComponentSource|null $Source
+ * @property TrialComponentStatus|null $Status
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property UserContext|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property UserContext|null $LastModifiedBy
+ * @property array<string, TrialComponentParameterValue>|null $Parameters
+ * @property array<string, TrialComponentArtifact>|null $InputArtifacts
+ * @property array<string, TrialComponentArtifact>|null $OutputArtifacts
+ * @property list<TrialComponentMetricSummary>|null $Metrics
+ * @property MetadataProperties|null $MetadataProperties
+ * @property TrialComponentSourceDetail|null $SourceDetail
+ * @property string|null $LineageGroupArn
+ * @property list<Tag>|null $Tags
+ * @property list<ParentShape>|null $Parents
+ * @property string|null $RunName
  */
 class TrialComponent extends Shape
 {
     /**
      * @param array{
-     *     TrialComponentName?: string,
-     *     DisplayName?: string,
-     *     TrialComponentArn?: string,
-     *     Source?: TrialComponentSource,
-     *     Status?: TrialComponentStatus,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     CreatedBy?: UserContext,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedBy?: UserContext,
-     *     Parameters?: array<string, TrialComponentParameterValue>,
-     *     InputArtifacts?: array<string, TrialComponentArtifact>,
-     *     OutputArtifacts?: array<string, TrialComponentArtifact>,
-     *     Metrics?: list<TrialComponentMetricSummary>,
-     *     MetadataProperties?: MetadataProperties,
-     *     SourceDetail?: TrialComponentSourceDetail,
-     *     LineageGroupArn?: string,
-     *     Tags?: list<Tag>,
-     *     Parents?: list<ParentShape>,
-     *     RunName?: string
+     *     TrialComponentName?: string|null,
+     *     DisplayName?: string|null,
+     *     TrialComponentArn?: string|null,
+     *     Source?: TrialComponentSource|null,
+     *     Status?: TrialComponentStatus|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBy?: UserContext|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedBy?: UserContext|null,
+     *     Parameters?: array<string, TrialComponentParameterValue>|null,
+     *     InputArtifacts?: array<string, TrialComponentArtifact>|null,
+     *     OutputArtifacts?: array<string, TrialComponentArtifact>|null,
+     *     Metrics?: list<TrialComponentMetricSummary>|null,
+     *     MetadataProperties?: MetadataProperties|null,
+     *     SourceDetail?: TrialComponentSourceDetail|null,
+     *     LineageGroupArn?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     Parents?: list<ParentShape>|null,
+     *     RunName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

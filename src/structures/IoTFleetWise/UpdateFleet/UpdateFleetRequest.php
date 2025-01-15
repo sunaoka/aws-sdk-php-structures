@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $fleetId
- * @property string $description
+ * @property string|null $description
  */
 class UpdateFleetRequest extends Request
 {
     /**
      * @param array{
      *     fleetId: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALLOWED'|'DISALLOWED' $HttpInputs
- * @property 'ALLOWED'|'DISALLOWED' $HttpsInputs
- * @property 'ALLOWED'|'DISALLOWED' $S3Inputs
+ * @property 'ALLOWED'|'DISALLOWED'|null $HttpInputs
+ * @property 'ALLOWED'|'DISALLOWED'|null $HttpsInputs
+ * @property 'ALLOWED'|'DISALLOWED'|null $S3Inputs
  */
 class Policy extends Shape
 {
     /**
      * @param array{
-     *     HttpInputs?: 'ALLOWED'|'DISALLOWED',
-     *     HttpsInputs?: 'ALLOWED'|'DISALLOWED',
-     *     S3Inputs?: 'ALLOWED'|'DISALLOWED'
+     *     HttpInputs?: 'ALLOWED'|'DISALLOWED'|null,
+     *     HttpsInputs?: 'ALLOWED'|'DISALLOWED'|null,
+     *     S3Inputs?: 'ALLOWED'|'DISALLOWED'|null
      * } $args
      */
     public function __construct(array $args = [])

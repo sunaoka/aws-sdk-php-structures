@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Sender
  * @property string $Subject
  * @property string $Content
- * @property string $PublicSubject
- * @property string $PublicContent
- * @property string $IncidentId
- * @property string $IdempotencyToken
+ * @property string|null $PublicSubject
+ * @property string|null $PublicContent
+ * @property string|null $IncidentId
+ * @property string|null $IdempotencyToken
  */
 class StartEngagementRequest extends Request
 {
@@ -22,10 +22,10 @@ class StartEngagementRequest extends Request
      *     Sender: string,
      *     Subject: string,
      *     Content: string,
-     *     PublicSubject?: string,
-     *     PublicContent?: string,
-     *     IncidentId?: string,
-     *     IdempotencyToken?: string
+     *     PublicSubject?: string|null,
+     *     PublicContent?: string|null,
+     *     IncidentId?: string|null,
+     *     IdempotencyToken?: string|null
      * } $args
      */
     public function __construct(array $args)

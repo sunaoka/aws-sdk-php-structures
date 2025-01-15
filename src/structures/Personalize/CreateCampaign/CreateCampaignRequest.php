@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property string $solutionVersionArn
- * @property int<1, max> $minProvisionedTPS
- * @property Shapes\CampaignConfig $campaignConfig
- * @property list<Shapes\Tag> $tags
+ * @property int<1, max>|null $minProvisionedTPS
+ * @property Shapes\CampaignConfig|null $campaignConfig
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateCampaignRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateCampaignRequest extends Request
      * @param array{
      *     name: string,
      *     solutionVersionArn: string,
-     *     minProvisionedTPS?: int<1, max>,
-     *     campaignConfig?: Shapes\CampaignConfig,
-     *     tags?: list<Shapes\Tag>
+     *     minProvisionedTPS?: int<1, max>|null,
+     *     campaignConfig?: Shapes\CampaignConfig|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

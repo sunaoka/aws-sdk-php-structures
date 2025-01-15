@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\imagebuilder\CreateDistributionConfiguration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $launchTemplateId
- * @property string $launchTemplateName
- * @property string $launchTemplateVersion
+ * @property string|null $launchTemplateId
+ * @property string|null $launchTemplateName
+ * @property string|null $launchTemplateVersion
  */
 class FastLaunchLaunchTemplateSpecification extends Shape
 {
     /**
      * @param array{
-     *     launchTemplateId?: string,
-     *     launchTemplateName?: string,
-     *     launchTemplateVersion?: string
+     *     launchTemplateId?: string|null,
+     *     launchTemplateName?: string|null,
+     *     launchTemplateVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

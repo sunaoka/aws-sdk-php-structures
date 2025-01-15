@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DataZone\SearchListings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<'FORMS'|'TIME_SERIES_DATA_POINT_FORMS'> $additionalAttributes
+ * @property list<'FORMS'|'TIME_SERIES_DATA_POINT_FORMS'>|null $additionalAttributes
  * @property string $domainIdentifier
- * @property Shapes\FilterClause $filters
- * @property int<1, 50> $maxResults
- * @property string $nextToken
- * @property list<Shapes\SearchInItem> $searchIn
- * @property string $searchText
- * @property Shapes\SearchSort $sort
+ * @property Shapes\FilterClause|null $filters
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $nextToken
+ * @property list<Shapes\SearchInItem>|null $searchIn
+ * @property string|null $searchText
+ * @property Shapes\SearchSort|null $sort
  */
 class SearchListingsRequest extends Request
 {
     /**
      * @param array{
-     *     additionalAttributes?: list<'FORMS'|'TIME_SERIES_DATA_POINT_FORMS'>,
+     *     additionalAttributes?: list<'FORMS'|'TIME_SERIES_DATA_POINT_FORMS'>|null,
      *     domainIdentifier: string,
-     *     filters?: Shapes\FilterClause,
-     *     maxResults?: int<1, 50>,
-     *     nextToken?: string,
-     *     searchIn?: list<Shapes\SearchInItem>,
-     *     searchText?: string,
-     *     sort?: Shapes\SearchSort
+     *     filters?: Shapes\FilterClause|null,
+     *     maxResults?: int<1, 50>|null,
+     *     nextToken?: string|null,
+     *     searchIn?: list<Shapes\SearchInItem>|null,
+     *     searchText?: string|null,
+     *     sort?: Shapes\SearchSort|null
      * } $args
      */
     public function __construct(array $args)

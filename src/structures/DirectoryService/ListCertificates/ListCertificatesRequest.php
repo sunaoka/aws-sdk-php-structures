@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DirectoryId
- * @property string $NextToken
- * @property int<1, 50> $Limit
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $Limit
  */
 class ListCertificatesRequest extends Request
 {
     /**
      * @param array{
      *     DirectoryId: string,
-     *     NextToken?: string,
-     *     Limit?: int<1, 50>
+     *     NextToken?: string|null,
+     *     Limit?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args)

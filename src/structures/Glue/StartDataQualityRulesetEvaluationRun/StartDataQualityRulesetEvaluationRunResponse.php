@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\StartDataQualityRulesetEvaluationRun;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RunId
+ * @property string|null $RunId
  */
 class StartDataQualityRulesetEvaluationRunResponse extends Response
 {

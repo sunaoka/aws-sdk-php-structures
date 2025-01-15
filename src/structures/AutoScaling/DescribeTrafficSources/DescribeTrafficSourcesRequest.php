@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingGroupName
- * @property string $TrafficSourceType
- * @property string $NextToken
- * @property int $MaxRecords
+ * @property string|null $TrafficSourceType
+ * @property string|null $NextToken
+ * @property int|null $MaxRecords
  */
 class DescribeTrafficSourcesRequest extends Request
 {
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     TrafficSourceType?: string,
-     *     NextToken?: string,
-     *     MaxRecords?: int
+     *     TrafficSourceType?: string|null,
+     *     NextToken?: string|null,
+     *     MaxRecords?: int|null
      * } $args
      */
     public function __construct(array $args)

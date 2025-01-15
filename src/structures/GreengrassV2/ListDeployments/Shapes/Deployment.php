@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\ListDeployments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $targetArn
- * @property string $revisionId
- * @property string $deploymentId
- * @property string $deploymentName
- * @property \Aws\Api\DateTimeResult $creationTimestamp
- * @property 'ACTIVE'|'COMPLETED'|'CANCELED'|'FAILED'|'INACTIVE' $deploymentStatus
- * @property bool $isLatestForTarget
- * @property string $parentTargetArn
+ * @property string|null $targetArn
+ * @property string|null $revisionId
+ * @property string|null $deploymentId
+ * @property string|null $deploymentName
+ * @property \Aws\Api\DateTimeResult|null $creationTimestamp
+ * @property 'ACTIVE'|'COMPLETED'|'CANCELED'|'FAILED'|'INACTIVE'|null $deploymentStatus
+ * @property bool|null $isLatestForTarget
+ * @property string|null $parentTargetArn
  */
 class Deployment extends Shape
 {
     /**
      * @param array{
-     *     targetArn?: string,
-     *     revisionId?: string,
-     *     deploymentId?: string,
-     *     deploymentName?: string,
-     *     creationTimestamp?: \Aws\Api\DateTimeResult,
-     *     deploymentStatus?: 'ACTIVE'|'COMPLETED'|'CANCELED'|'FAILED'|'INACTIVE',
-     *     isLatestForTarget?: bool,
-     *     parentTargetArn?: string
+     *     targetArn?: string|null,
+     *     revisionId?: string|null,
+     *     deploymentId?: string|null,
+     *     deploymentName?: string|null,
+     *     creationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     deploymentStatus?: 'ACTIVE'|'COMPLETED'|'CANCELED'|'FAILED'|'INACTIVE'|null,
+     *     isLatestForTarget?: bool|null,
+     *     parentTargetArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

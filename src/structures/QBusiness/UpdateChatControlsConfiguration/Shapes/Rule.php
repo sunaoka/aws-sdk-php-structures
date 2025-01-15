@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QBusiness\UpdateChatControlsConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property UsersAndGroups $includedUsersAndGroups
- * @property UsersAndGroups $excludedUsersAndGroups
+ * @property UsersAndGroups|null $includedUsersAndGroups
+ * @property UsersAndGroups|null $excludedUsersAndGroups
  * @property 'CONTENT_BLOCKER_RULE'|'CONTENT_RETRIEVAL_RULE' $ruleType
- * @property RuleConfiguration $ruleConfiguration
+ * @property RuleConfiguration|null $ruleConfiguration
  */
 class Rule extends Shape
 {
     /**
      * @param array{
-     *     includedUsersAndGroups?: UsersAndGroups,
-     *     excludedUsersAndGroups?: UsersAndGroups,
+     *     includedUsersAndGroups?: UsersAndGroups|null,
+     *     excludedUsersAndGroups?: UsersAndGroups|null,
      *     ruleType: 'CONTENT_BLOCKER_RULE'|'CONTENT_RETRIEVAL_RULE',
-     *     ruleConfiguration?: RuleConfiguration
+     *     ruleConfiguration?: RuleConfiguration|null
      * } $args
      */
     public function __construct(array $args)

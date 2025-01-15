@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\PurchaseReservedInstanceOffer
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ReservedInstanceId
- * @property string $ReservationName
+ * @property string|null $ReservedInstanceId
+ * @property string|null $ReservationName
  */
 class PurchaseReservedInstanceOfferingResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\CreateProjectVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Asset> $Assets
- * @property bool $AutoCreate
+ * @property list<Asset>|null $Assets
+ * @property bool|null $AutoCreate
  */
 class TestingData extends Shape
 {
     /**
      * @param array{
-     *     Assets?: list<Asset>,
-     *     AutoCreate?: bool
+     *     Assets?: list<Asset>|null,
+     *     AutoCreate?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DeviceDefinitionId
  * @property string $DeviceDefinitionVersionId
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class GetDeviceDefinitionVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetDeviceDefinitionVersionRequest extends Request
      * @param array{
      *     DeviceDefinitionId: string,
      *     DeviceDefinitionVersionId: string,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

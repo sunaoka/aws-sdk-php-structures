@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Transfer\UpdateWebApp\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Role
+ * @property string|null $Role
  */
 class UpdateWebAppIdentityCenterConfig extends Shape
 {
     /**
-     * @param array{Role?: string} $args
+     * @param array{Role?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NumericalDimensionField $NumericalDimensionField
- * @property CategoricalDimensionField $CategoricalDimensionField
- * @property DateDimensionField $DateDimensionField
+ * @property NumericalDimensionField|null $NumericalDimensionField
+ * @property CategoricalDimensionField|null $CategoricalDimensionField
+ * @property DateDimensionField|null $DateDimensionField
  */
 class DimensionField extends Shape
 {
     /**
      * @param array{
-     *     NumericalDimensionField?: NumericalDimensionField,
-     *     CategoricalDimensionField?: CategoricalDimensionField,
-     *     DateDimensionField?: DateDimensionField
+     *     NumericalDimensionField?: NumericalDimensionField|null,
+     *     CategoricalDimensionField?: CategoricalDimensionField|null,
+     *     DateDimensionField?: DateDimensionField|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FieldPath
- * @property list<string> $SelectChoices
- * @property string $TextValue
- * @property string $RegistrationAttachmentId
- * @property string $DeniedReason
+ * @property list<string>|null $SelectChoices
+ * @property string|null $TextValue
+ * @property string|null $RegistrationAttachmentId
+ * @property string|null $DeniedReason
  */
 class RegistrationFieldValueInformation extends Shape
 {
     /**
      * @param array{
      *     FieldPath: string,
-     *     SelectChoices?: list<string>,
-     *     TextValue?: string,
-     *     RegistrationAttachmentId?: string,
-     *     DeniedReason?: string
+     *     SelectChoices?: list<string>|null,
+     *     TextValue?: string|null,
+     *     RegistrationAttachmentId?: string|null,
+     *     DeniedReason?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,24 +5,24 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property string $DestinationCidrBlock
- * @property string $DestinationPrefixListId
- * @property string $DestinationIpv6CidrBlock
- * @property ActionTarget $VpcEndpointId
- * @property ActionTarget $GatewayId
+ * @property string|null $Description
+ * @property string|null $DestinationCidrBlock
+ * @property string|null $DestinationPrefixListId
+ * @property string|null $DestinationIpv6CidrBlock
+ * @property ActionTarget|null $VpcEndpointId
+ * @property ActionTarget|null $GatewayId
  * @property ActionTarget $RouteTableId
  */
 class EC2CreateRouteAction extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     DestinationCidrBlock?: string,
-     *     DestinationPrefixListId?: string,
-     *     DestinationIpv6CidrBlock?: string,
-     *     VpcEndpointId?: ActionTarget,
-     *     GatewayId?: ActionTarget,
+     *     Description?: string|null,
+     *     DestinationCidrBlock?: string|null,
+     *     DestinationPrefixListId?: string|null,
+     *     DestinationIpv6CidrBlock?: string|null,
+     *     VpcEndpointId?: ActionTarget|null,
+     *     GatewayId?: ActionTarget|null,
      *     RouteTableId: ActionTarget
      * } $args
      */

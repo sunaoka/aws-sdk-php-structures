@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PolicyName
- * @property string $Path
+ * @property string|null $Path
  * @property string $PolicyDocument
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreatePolicyRequest extends Request
 {
     /**
      * @param array{
      *     PolicyName: string,
-     *     Path?: string,
+     *     Path?: string|null,
      *     PolicyDocument: string,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

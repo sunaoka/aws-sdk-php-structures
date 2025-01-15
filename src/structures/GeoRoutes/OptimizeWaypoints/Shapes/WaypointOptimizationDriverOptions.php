@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\OptimizeWaypoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property WaypointOptimizationRestCycles $RestCycles
- * @property WaypointOptimizationRestProfile $RestProfile
- * @property 'Rest'|'Work' $TreatServiceTimeAs
+ * @property WaypointOptimizationRestCycles|null $RestCycles
+ * @property WaypointOptimizationRestProfile|null $RestProfile
+ * @property 'Rest'|'Work'|null $TreatServiceTimeAs
  */
 class WaypointOptimizationDriverOptions extends Shape
 {
     /**
      * @param array{
-     *     RestCycles?: WaypointOptimizationRestCycles,
-     *     RestProfile?: WaypointOptimizationRestProfile,
-     *     TreatServiceTimeAs?: 'Rest'|'Work'
+     *     RestCycles?: WaypointOptimizationRestCycles|null,
+     *     RestProfile?: WaypointOptimizationRestProfile|null,
+     *     TreatServiceTimeAs?: 'Rest'|'Work'|null
      * } $args
      */
     public function __construct(array $args = [])

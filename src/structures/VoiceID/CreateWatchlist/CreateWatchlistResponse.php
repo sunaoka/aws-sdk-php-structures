@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\VoiceID\CreateWatchlist;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Watchlist $Watchlist
+ * @property Shapes\Watchlist|null $Watchlist
  */
 class CreateWatchlistResponse extends Response
 {

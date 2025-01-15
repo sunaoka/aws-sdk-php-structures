@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\CreateDataSetImportTask\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $encoding
+ * @property string|null $encoding
  * @property string $format
  */
 class PsAttributes extends Shape
 {
     /**
      * @param array{
-     *     encoding?: string,
+     *     encoding?: string|null,
      *     format: string
      * } $args
      */

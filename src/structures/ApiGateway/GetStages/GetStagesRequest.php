@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $restApiId
- * @property string $deploymentId
+ * @property string|null $deploymentId
  */
 class GetStagesRequest extends Request
 {
     /**
      * @param array{
      *     restApiId: string,
-     *     deploymentId?: string
+     *     deploymentId?: string|null
      * } $args
      */
     public function __construct(array $args)

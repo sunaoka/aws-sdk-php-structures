@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Connect\CreateHoursOfOperation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $HoursOfOperationId
- * @property string $HoursOfOperationArn
+ * @property string|null $HoursOfOperationId
+ * @property string|null $HoursOfOperationArn
  */
 class CreateHoursOfOperationResponse extends Response
 {

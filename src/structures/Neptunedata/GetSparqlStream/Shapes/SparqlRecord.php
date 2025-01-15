@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string> $eventId
  * @property SparqlData $data
  * @property string $op
- * @property bool $isLastOp
+ * @property bool|null $isLastOp
  */
 class SparqlRecord extends Shape
 {
@@ -19,7 +19,7 @@ class SparqlRecord extends Shape
      *     eventId: array<string, string>,
      *     data: SparqlData,
      *     op: string,
-     *     isLastOp?: bool
+     *     isLastOp?: bool|null
      * } $args
      */
     public function __construct(array $args)

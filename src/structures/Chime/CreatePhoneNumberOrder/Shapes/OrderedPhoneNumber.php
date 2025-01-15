@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Chime\CreatePhoneNumberOrder\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $E164PhoneNumber
- * @property 'Processing'|'Acquired'|'Failed' $Status
+ * @property string|null $E164PhoneNumber
+ * @property 'Processing'|'Acquired'|'Failed'|null $Status
  */
 class OrderedPhoneNumber extends Shape
 {
     /**
      * @param array{
-     *     E164PhoneNumber?: string,
-     *     Status?: 'Processing'|'Acquired'|'Failed'
+     *     E164PhoneNumber?: string|null,
+     *     Status?: 'Processing'|'Acquired'|'Failed'|null
      * } $args
      */
     public function __construct(array $args = [])

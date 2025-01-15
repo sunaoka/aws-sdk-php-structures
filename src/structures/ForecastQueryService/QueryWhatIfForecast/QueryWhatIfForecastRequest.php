@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WhatIfForecastArn
- * @property string $StartDate
- * @property string $EndDate
+ * @property string|null $StartDate
+ * @property string|null $EndDate
  * @property array<string, string> $Filters
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class QueryWhatIfForecastRequest extends Request
 {
     /**
      * @param array{
      *     WhatIfForecastArn: string,
-     *     StartDate?: string,
-     *     EndDate?: string,
+     *     StartDate?: string|null,
+     *     EndDate?: string|null,
      *     Filters: array<string, string>,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReplicationGroupId
- * @property int $NewReplicaCount
- * @property list<Shapes\ConfigureShard> $ReplicaConfiguration
- * @property list<string> $ReplicasToRemove
+ * @property int|null $NewReplicaCount
+ * @property list<Shapes\ConfigureShard>|null $ReplicaConfiguration
+ * @property list<string>|null $ReplicasToRemove
  * @property bool $ApplyImmediately
  */
 class DecreaseReplicaCountRequest extends Request
@@ -16,9 +16,9 @@ class DecreaseReplicaCountRequest extends Request
     /**
      * @param array{
      *     ReplicationGroupId: string,
-     *     NewReplicaCount?: int,
-     *     ReplicaConfiguration?: list<Shapes\ConfigureShard>,
-     *     ReplicasToRemove?: list<string>,
+     *     NewReplicaCount?: int|null,
+     *     ReplicaConfiguration?: list<Shapes\ConfigureShard>|null,
+     *     ReplicasToRemove?: list<string>|null,
      *     ApplyImmediately: bool
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\GetTransitGatewayAttachmentPropagations\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayRouteTableId
- * @property 'enabling'|'enabled'|'disabling'|'disabled' $State
+ * @property string|null $TransitGatewayRouteTableId
+ * @property 'enabling'|'enabled'|'disabling'|'disabled'|null $State
  */
 class TransitGatewayAttachmentPropagation extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayRouteTableId?: string,
-     *     State?: 'enabling'|'enabled'|'disabling'|'disabled'
+     *     TransitGatewayRouteTableId?: string|null,
+     *     State?: 'enabling'|'enabled'|'disabling'|'disabled'|null
      * } $args
      */
     public function __construct(array $args = [])

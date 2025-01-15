@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Account\PutAlternateContact;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AccountId
+ * @property string|null $AccountId
  * @property 'BILLING'|'OPERATIONS'|'SECURITY' $AlternateContactType
  * @property string $EmailAddress
  * @property string $Name
@@ -16,7 +16,7 @@ class PutAlternateContactRequest extends Request
 {
     /**
      * @param array{
-     *     AccountId?: string,
+     *     AccountId?: string|null,
      *     AlternateContactType: 'BILLING'|'OPERATIONS'|'SECURITY',
      *     EmailAddress: string,
      *     Name: string,

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\ListInvitations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property string $Description
- * @property 'HYPERLEDGER_FABRIC'|'ETHEREUM' $Framework
- * @property string $FrameworkVersion
- * @property 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'DELETING'|'DELETED' $Status
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property string $Arn
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property 'HYPERLEDGER_FABRIC'|'ETHEREUM'|null $Framework
+ * @property string|null $FrameworkVersion
+ * @property 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'DELETING'|'DELETED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property string|null $Arn
  */
 class NetworkSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     Framework?: 'HYPERLEDGER_FABRIC'|'ETHEREUM',
-     *     FrameworkVersion?: string,
-     *     Status?: 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'DELETING'|'DELETED',
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     Arn?: string
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Framework?: 'HYPERLEDGER_FABRIC'|'ETHEREUM'|null,
+     *     FrameworkVersion?: string|null,
+     *     Status?: 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'DELETING'|'DELETED'|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

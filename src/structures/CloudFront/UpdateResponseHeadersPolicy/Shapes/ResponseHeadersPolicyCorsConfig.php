@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property ResponseHeadersPolicyAccessControlAllowHeaders $AccessControlAllowHeaders
  * @property ResponseHeadersPolicyAccessControlAllowMethods $AccessControlAllowMethods
  * @property bool $AccessControlAllowCredentials
- * @property ResponseHeadersPolicyAccessControlExposeHeaders $AccessControlExposeHeaders
- * @property int $AccessControlMaxAgeSec
+ * @property ResponseHeadersPolicyAccessControlExposeHeaders|null $AccessControlExposeHeaders
+ * @property int|null $AccessControlMaxAgeSec
  * @property bool $OriginOverride
  */
 class ResponseHeadersPolicyCorsConfig extends Shape
@@ -21,8 +21,8 @@ class ResponseHeadersPolicyCorsConfig extends Shape
      *     AccessControlAllowHeaders: ResponseHeadersPolicyAccessControlAllowHeaders,
      *     AccessControlAllowMethods: ResponseHeadersPolicyAccessControlAllowMethods,
      *     AccessControlAllowCredentials: bool,
-     *     AccessControlExposeHeaders?: ResponseHeadersPolicyAccessControlExposeHeaders,
-     *     AccessControlMaxAgeSec?: int,
+     *     AccessControlExposeHeaders?: ResponseHeadersPolicyAccessControlExposeHeaders|null,
+     *     AccessControlMaxAgeSec?: int|null,
      *     OriginOverride: bool
      * } $args
      */

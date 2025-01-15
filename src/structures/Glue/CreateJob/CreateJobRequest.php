@@ -6,60 +6,60 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property 'SCRIPT'|'VISUAL'|'NOTEBOOK' $JobMode
- * @property bool $JobRunQueuingEnabled
- * @property string $Description
- * @property string $LogUri
+ * @property 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null $JobMode
+ * @property bool|null $JobRunQueuingEnabled
+ * @property string|null $Description
+ * @property string|null $LogUri
  * @property string $Role
- * @property Shapes\ExecutionProperty $ExecutionProperty
+ * @property Shapes\ExecutionProperty|null $ExecutionProperty
  * @property Shapes\JobCommand $Command
- * @property array<string, string> $DefaultArguments
- * @property array<string, string> $NonOverridableArguments
- * @property Shapes\ConnectionsList $Connections
- * @property int $MaxRetries
- * @property int $AllocatedCapacity
- * @property int<1, max> $Timeout
- * @property double $MaxCapacity
- * @property string $SecurityConfiguration
- * @property array<string, string> $Tags
- * @property Shapes\NotificationProperty $NotificationProperty
- * @property string $GlueVersion
- * @property int $NumberOfWorkers
- * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X' $WorkerType
- * @property array<string, Shapes\CodeGenConfigurationNode> $CodeGenConfigurationNodes
- * @property 'FLEX'|'STANDARD' $ExecutionClass
- * @property Shapes\SourceControlDetails $SourceControlDetails
- * @property string $MaintenanceWindow
+ * @property array<string, string>|null $DefaultArguments
+ * @property array<string, string>|null $NonOverridableArguments
+ * @property Shapes\ConnectionsList|null $Connections
+ * @property int|null $MaxRetries
+ * @property int|null $AllocatedCapacity
+ * @property int<1, max>|null $Timeout
+ * @property double|null $MaxCapacity
+ * @property string|null $SecurityConfiguration
+ * @property array<string, string>|null $Tags
+ * @property Shapes\NotificationProperty|null $NotificationProperty
+ * @property string|null $GlueVersion
+ * @property int|null $NumberOfWorkers
+ * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
+ * @property array<string, Shapes\CodeGenConfigurationNode>|null $CodeGenConfigurationNodes
+ * @property 'FLEX'|'STANDARD'|null $ExecutionClass
+ * @property Shapes\SourceControlDetails|null $SourceControlDetails
+ * @property string|null $MaintenanceWindow
  */
 class CreateJobRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     JobMode?: 'SCRIPT'|'VISUAL'|'NOTEBOOK',
-     *     JobRunQueuingEnabled?: bool,
-     *     Description?: string,
-     *     LogUri?: string,
+     *     JobMode?: 'SCRIPT'|'VISUAL'|'NOTEBOOK'|null,
+     *     JobRunQueuingEnabled?: bool|null,
+     *     Description?: string|null,
+     *     LogUri?: string|null,
      *     Role: string,
-     *     ExecutionProperty?: Shapes\ExecutionProperty,
+     *     ExecutionProperty?: Shapes\ExecutionProperty|null,
      *     Command: Shapes\JobCommand,
-     *     DefaultArguments?: array<string, string>,
-     *     NonOverridableArguments?: array<string, string>,
-     *     Connections?: Shapes\ConnectionsList,
-     *     MaxRetries?: int,
-     *     AllocatedCapacity?: int,
-     *     Timeout?: int<1, max>,
-     *     MaxCapacity?: double,
-     *     SecurityConfiguration?: string,
-     *     Tags?: array<string, string>,
-     *     NotificationProperty?: Shapes\NotificationProperty,
-     *     GlueVersion?: string,
-     *     NumberOfWorkers?: int,
-     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X',
-     *     CodeGenConfigurationNodes?: array<string, Shapes\CodeGenConfigurationNode>,
-     *     ExecutionClass?: 'FLEX'|'STANDARD',
-     *     SourceControlDetails?: Shapes\SourceControlDetails,
-     *     MaintenanceWindow?: string
+     *     DefaultArguments?: array<string, string>|null,
+     *     NonOverridableArguments?: array<string, string>|null,
+     *     Connections?: Shapes\ConnectionsList|null,
+     *     MaxRetries?: int|null,
+     *     AllocatedCapacity?: int|null,
+     *     Timeout?: int<1, max>|null,
+     *     MaxCapacity?: double|null,
+     *     SecurityConfiguration?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     NotificationProperty?: Shapes\NotificationProperty|null,
+     *     GlueVersion?: string|null,
+     *     NumberOfWorkers?: int|null,
+     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
+     *     CodeGenConfigurationNodes?: array<string, Shapes\CodeGenConfigurationNode>|null,
+     *     ExecutionClass?: 'FLEX'|'STANDARD'|null,
+     *     SourceControlDetails?: Shapes\SourceControlDetails|null,
+     *     MaintenanceWindow?: string|null
      * } $args
      */
     public function __construct(array $args)

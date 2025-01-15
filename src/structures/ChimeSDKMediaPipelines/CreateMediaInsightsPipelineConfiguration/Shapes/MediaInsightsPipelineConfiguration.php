@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\CreateMediaInsightsPipel
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MediaInsightsPipelineConfigurationName
- * @property string $MediaInsightsPipelineConfigurationArn
- * @property string $ResourceAccessRoleArn
- * @property RealTimeAlertConfiguration $RealTimeAlertConfiguration
- * @property list<MediaInsightsPipelineConfigurationElement> $Elements
- * @property string $MediaInsightsPipelineConfigurationId
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
+ * @property string|null $MediaInsightsPipelineConfigurationName
+ * @property string|null $MediaInsightsPipelineConfigurationArn
+ * @property string|null $ResourceAccessRoleArn
+ * @property RealTimeAlertConfiguration|null $RealTimeAlertConfiguration
+ * @property list<MediaInsightsPipelineConfigurationElement>|null $Elements
+ * @property string|null $MediaInsightsPipelineConfigurationId
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
 class MediaInsightsPipelineConfiguration extends Shape
 {
     /**
      * @param array{
-     *     MediaInsightsPipelineConfigurationName?: string,
-     *     MediaInsightsPipelineConfigurationArn?: string,
-     *     ResourceAccessRoleArn?: string,
-     *     RealTimeAlertConfiguration?: RealTimeAlertConfiguration,
-     *     Elements?: list<MediaInsightsPipelineConfigurationElement>,
-     *     MediaInsightsPipelineConfigurationId?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     MediaInsightsPipelineConfigurationName?: string|null,
+     *     MediaInsightsPipelineConfigurationArn?: string|null,
+     *     ResourceAccessRoleArn?: string|null,
+     *     RealTimeAlertConfiguration?: RealTimeAlertConfiguration|null,
+     *     Elements?: list<MediaInsightsPipelineConfigurationElement>|null,
+     *     MediaInsightsPipelineConfigurationId?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

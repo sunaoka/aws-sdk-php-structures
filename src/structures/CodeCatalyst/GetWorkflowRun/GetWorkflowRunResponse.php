@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $id
  * @property string $workflowId
  * @property 'SUCCEEDED'|'FAILED'|'STOPPED'|'SUPERSEDED'|'CANCELLED'|'NOT_RUN'|'VALIDATING'|'PROVISIONING'|'IN_PROGRESS'|'STOPPING'|'ABANDONED' $status
- * @property list<Shapes\WorkflowRunStatusReason> $statusReasons
+ * @property list<Shapes\WorkflowRunStatusReason>|null $statusReasons
  * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  * @property \Aws\Api\DateTimeResult $lastUpdatedTime
  */
 class GetWorkflowRunResponse extends Response

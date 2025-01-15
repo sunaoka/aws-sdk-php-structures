@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'OFF'|'REGISTRY'|'REGISTRY_AND_SHADOW' $thingIndexingMode
- * @property 'OFF'|'STATUS' $thingConnectivityIndexingMode
- * @property 'OFF'|'VIOLATIONS' $deviceDefenderIndexingMode
- * @property 'OFF'|'ON' $namedShadowIndexingMode
- * @property list<Field> $managedFields
- * @property list<Field> $customFields
- * @property IndexingFilter $filter
+ * @property 'OFF'|'STATUS'|null $thingConnectivityIndexingMode
+ * @property 'OFF'|'VIOLATIONS'|null $deviceDefenderIndexingMode
+ * @property 'OFF'|'ON'|null $namedShadowIndexingMode
+ * @property list<Field>|null $managedFields
+ * @property list<Field>|null $customFields
+ * @property IndexingFilter|null $filter
  */
 class ThingIndexingConfiguration extends Shape
 {
     /**
      * @param array{
      *     thingIndexingMode: 'OFF'|'REGISTRY'|'REGISTRY_AND_SHADOW',
-     *     thingConnectivityIndexingMode?: 'OFF'|'STATUS',
-     *     deviceDefenderIndexingMode?: 'OFF'|'VIOLATIONS',
-     *     namedShadowIndexingMode?: 'OFF'|'ON',
-     *     managedFields?: list<Field>,
-     *     customFields?: list<Field>,
-     *     filter?: IndexingFilter
+     *     thingConnectivityIndexingMode?: 'OFF'|'STATUS'|null,
+     *     deviceDefenderIndexingMode?: 'OFF'|'VIOLATIONS'|null,
+     *     namedShadowIndexingMode?: 'OFF'|'ON'|null,
+     *     managedFields?: list<Field>|null,
+     *     customFields?: list<Field>|null,
+     *     filter?: IndexingFilter|null
      * } $args
      */
     public function __construct(array $args)

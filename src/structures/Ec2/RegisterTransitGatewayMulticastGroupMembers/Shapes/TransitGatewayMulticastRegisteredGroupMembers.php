@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\RegisterTransitGatewayMulticastGroupMembers
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayMulticastDomainId
- * @property list<string> $RegisteredNetworkInterfaceIds
- * @property string $GroupIpAddress
+ * @property string|null $TransitGatewayMulticastDomainId
+ * @property list<string>|null $RegisteredNetworkInterfaceIds
+ * @property string|null $GroupIpAddress
  */
 class TransitGatewayMulticastRegisteredGroupMembers extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayMulticastDomainId?: string,
-     *     RegisteredNetworkInterfaceIds?: list<string>,
-     *     GroupIpAddress?: string
+     *     TransitGatewayMulticastDomainId?: string|null,
+     *     RegisteredNetworkInterfaceIds?: list<string>|null,
+     *     GroupIpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

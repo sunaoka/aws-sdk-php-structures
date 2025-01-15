@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\DataZone\PostTimeSeriesDataPoints;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $domainId
- * @property string $entityId
- * @property 'ASSET'|'LISTING' $entityType
- * @property list<Shapes\TimeSeriesDataPointFormOutput> $forms
+ * @property string|null $domainId
+ * @property string|null $entityId
+ * @property 'ASSET'|'LISTING'|null $entityType
+ * @property list<Shapes\TimeSeriesDataPointFormOutput>|null $forms
  */
 class PostTimeSeriesDataPointsResponse extends Response
 {

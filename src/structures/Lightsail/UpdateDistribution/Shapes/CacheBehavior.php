@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lightsail\UpdateDistribution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'dont-cache'|'cache' $behavior
+ * @property 'dont-cache'|'cache'|null $behavior
  */
 class CacheBehavior extends Shape
 {
     /**
-     * @param array{behavior?: 'dont-cache'|'cache'} $args
+     * @param array{behavior?: 'dont-cache'|'cache'|null} $args
      */
     public function __construct(array $args = [])
     {

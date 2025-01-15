@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateDeployment;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AmznClientToken
- * @property string $DeploymentId
+ * @property string|null $AmznClientToken
+ * @property string|null $DeploymentId
  * @property 'NewDeployment'|'Redeployment'|'ResetDeployment'|'ForceResetDeployment' $DeploymentType
  * @property string $GroupId
- * @property string $GroupVersionId
+ * @property string|null $GroupVersionId
  */
 class CreateDeploymentRequest extends Request
 {
     /**
      * @param array{
-     *     AmznClientToken?: string,
-     *     DeploymentId?: string,
+     *     AmznClientToken?: string|null,
+     *     DeploymentId?: string|null,
      *     DeploymentType: 'NewDeployment'|'Redeployment'|'ResetDeployment'|'ForceResetDeployment',
      *     GroupId: string,
-     *     GroupVersionId?: string
+     *     GroupVersionId?: string|null
      * } $args
      */
     public function __construct(array $args)

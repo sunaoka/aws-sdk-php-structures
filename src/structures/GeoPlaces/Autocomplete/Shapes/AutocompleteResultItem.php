@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PlaceId
  * @property 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress' $PlaceType
  * @property string $Title
- * @property Address $Address
- * @property int<0, 4294967295> $Distance
- * @property string $Language
- * @property string $PoliticalView
- * @property AutocompleteHighlights $Highlights
+ * @property Address|null $Address
+ * @property int<0, 4294967295>|null $Distance
+ * @property string|null $Language
+ * @property string|null $PoliticalView
+ * @property AutocompleteHighlights|null $Highlights
  */
 class AutocompleteResultItem extends Shape
 {
@@ -21,11 +21,11 @@ class AutocompleteResultItem extends Shape
      *     PlaceId: string,
      *     PlaceType: 'Country'|'Region'|'SubRegion'|'Locality'|'District'|'SubDistrict'|'PostalCode'|'Block'|'SubBlock'|'Intersection'|'Street'|'PointOfInterest'|'PointAddress'|'InterpolatedAddress',
      *     Title: string,
-     *     Address?: Address,
-     *     Distance?: int<0, 4294967295>,
-     *     Language?: string,
-     *     PoliticalView?: string,
-     *     Highlights?: AutocompleteHighlights
+     *     Address?: Address|null,
+     *     Distance?: int<0, 4294967295>|null,
+     *     Language?: string|null,
+     *     PoliticalView?: string|null,
+     *     Highlights?: AutocompleteHighlights|null
      * } $args
      */
     public function __construct(array $args)

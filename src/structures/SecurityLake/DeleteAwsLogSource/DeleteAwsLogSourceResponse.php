@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecurityLake\DeleteAwsLogSource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $failed
+ * @property list<string>|null $failed
  */
 class DeleteAwsLogSourceResponse extends Response
 {

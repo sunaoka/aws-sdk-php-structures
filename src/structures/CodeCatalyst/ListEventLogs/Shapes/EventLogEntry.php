@@ -13,13 +13,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $eventTime
  * @property 'READONLY'|'MUTATION' $operationType
  * @property UserIdentity $userIdentity
- * @property ProjectInformation $projectInformation
- * @property string $requestId
- * @property EventPayload $requestPayload
- * @property EventPayload $responsePayload
- * @property string $errorCode
- * @property string $sourceIpAddress
- * @property string $userAgent
+ * @property ProjectInformation|null $projectInformation
+ * @property string|null $requestId
+ * @property EventPayload|null $requestPayload
+ * @property EventPayload|null $responsePayload
+ * @property string|null $errorCode
+ * @property string|null $sourceIpAddress
+ * @property string|null $userAgent
  */
 class EventLogEntry extends Shape
 {
@@ -33,13 +33,13 @@ class EventLogEntry extends Shape
      *     eventTime: \Aws\Api\DateTimeResult,
      *     operationType: 'READONLY'|'MUTATION',
      *     userIdentity: UserIdentity,
-     *     projectInformation?: ProjectInformation,
-     *     requestId?: string,
-     *     requestPayload?: EventPayload,
-     *     responsePayload?: EventPayload,
-     *     errorCode?: string,
-     *     sourceIpAddress?: string,
-     *     userAgent?: string
+     *     projectInformation?: ProjectInformation|null,
+     *     requestId?: string|null,
+     *     requestPayload?: EventPayload|null,
+     *     responsePayload?: EventPayload|null,
+     *     errorCode?: string|null,
+     *     sourceIpAddress?: string|null,
+     *     userAgent?: string|null
      * } $args
      */
     public function __construct(array $args)

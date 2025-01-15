@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\BatchDeleteTableVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TableName
- * @property string $VersionId
- * @property ErrorDetail $ErrorDetail
+ * @property string|null $TableName
+ * @property string|null $VersionId
+ * @property ErrorDetail|null $ErrorDetail
  */
 class TableVersionError extends Shape
 {
     /**
      * @param array{
-     *     TableName?: string,
-     *     VersionId?: string,
-     *     ErrorDetail?: ErrorDetail
+     *     TableName?: string|null,
+     *     VersionId?: string|null,
+     *     ErrorDetail?: ErrorDetail|null
      * } $args
      */
     public function __construct(array $args = [])

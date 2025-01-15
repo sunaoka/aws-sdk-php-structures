@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property Shapes\InferenceExperimentSchedule $Schedule
- * @property string $Description
- * @property list<Shapes\ModelVariantConfig> $ModelVariants
- * @property Shapes\InferenceExperimentDataStorageConfig $DataStorageConfig
- * @property Shapes\ShadowModeConfig $ShadowModeConfig
+ * @property Shapes\InferenceExperimentSchedule|null $Schedule
+ * @property string|null $Description
+ * @property list<Shapes\ModelVariantConfig>|null $ModelVariants
+ * @property Shapes\InferenceExperimentDataStorageConfig|null $DataStorageConfig
+ * @property Shapes\ShadowModeConfig|null $ShadowModeConfig
  */
 class UpdateInferenceExperimentRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Schedule?: Shapes\InferenceExperimentSchedule,
-     *     Description?: string,
-     *     ModelVariants?: list<Shapes\ModelVariantConfig>,
-     *     DataStorageConfig?: Shapes\InferenceExperimentDataStorageConfig,
-     *     ShadowModeConfig?: Shapes\ShadowModeConfig
+     *     Schedule?: Shapes\InferenceExperimentSchedule|null,
+     *     Description?: string|null,
+     *     ModelVariants?: list<Shapes\ModelVariantConfig>|null,
+     *     DataStorageConfig?: Shapes\InferenceExperimentDataStorageConfig|null,
+     *     ShadowModeConfig?: Shapes\ShadowModeConfig|null
      * } $args
      */
     public function __construct(array $args)

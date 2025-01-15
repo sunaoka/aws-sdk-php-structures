@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\AuditManager\ListAssessmentControlInsightsByCon
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ControlInsightsMetadataByAssessmentItem> $controlInsightsByAssessment
- * @property string $nextToken
+ * @property list<Shapes\ControlInsightsMetadataByAssessmentItem>|null $controlInsightsByAssessment
+ * @property string|null $nextToken
  */
 class ListAssessmentControlInsightsByControlDomainResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ssm\CreateAssociation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3OutputLocation $S3Location
+ * @property S3OutputLocation|null $S3Location
  */
 class InstanceAssociationOutputLocation extends Shape
 {
     /**
-     * @param array{S3Location?: S3OutputLocation} $args
+     * @param array{S3Location?: S3OutputLocation|null} $args
      */
     public function __construct(array $args = [])
     {

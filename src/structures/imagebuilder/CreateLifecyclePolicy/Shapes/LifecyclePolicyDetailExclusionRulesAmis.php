@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\imagebuilder\CreateLifecyclePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isPublic
- * @property list<string> $regions
- * @property list<string> $sharedAccounts
- * @property LifecyclePolicyDetailExclusionRulesAmisLastLaunched $lastLaunched
- * @property array<string, string> $tagMap
+ * @property bool|null $isPublic
+ * @property list<string>|null $regions
+ * @property list<string>|null $sharedAccounts
+ * @property LifecyclePolicyDetailExclusionRulesAmisLastLaunched|null $lastLaunched
+ * @property array<string, string>|null $tagMap
  */
 class LifecyclePolicyDetailExclusionRulesAmis extends Shape
 {
     /**
      * @param array{
-     *     isPublic?: bool,
-     *     regions?: list<string>,
-     *     sharedAccounts?: list<string>,
-     *     lastLaunched?: LifecyclePolicyDetailExclusionRulesAmisLastLaunched,
-     *     tagMap?: array<string, string>
+     *     isPublic?: bool|null,
+     *     regions?: list<string>|null,
+     *     sharedAccounts?: list<string>|null,
+     *     lastLaunched?: LifecyclePolicyDetailExclusionRulesAmisLastLaunched|null,
+     *     tagMap?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

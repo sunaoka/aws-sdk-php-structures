@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
- * @property string $Comment
+ * @property string|null $Comment
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property string $DataSetId
- * @property bool $Finalized
+ * @property bool|null $Finalized
  * @property string $Id
- * @property string $SourceId
+ * @property string|null $SourceId
  * @property \Aws\Api\DateTimeResult $UpdatedAt
- * @property string $RevocationComment
- * @property bool $Revoked
- * @property \Aws\Api\DateTimeResult $RevokedAt
+ * @property string|null $RevocationComment
+ * @property bool|null $Revoked
+ * @property \Aws\Api\DateTimeResult|null $RevokedAt
  */
 class RevisionEntry extends Shape
 {
     /**
      * @param array{
      *     Arn: string,
-     *     Comment?: string,
+     *     Comment?: string|null,
      *     CreatedAt: \Aws\Api\DateTimeResult,
      *     DataSetId: string,
-     *     Finalized?: bool,
+     *     Finalized?: bool|null,
      *     Id: string,
-     *     SourceId?: string,
+     *     SourceId?: string|null,
      *     UpdatedAt: \Aws\Api\DateTimeResult,
-     *     RevocationComment?: string,
-     *     Revoked?: bool,
-     *     RevokedAt?: \Aws\Api\DateTimeResult
+     *     RevocationComment?: string|null,
+     *     Revoked?: bool|null,
+     *     RevokedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\DescribeContinuousE
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ContinuousExportDescription> $descriptions
- * @property string $nextToken
+ * @property list<Shapes\ContinuousExportDescription>|null $descriptions
+ * @property string|null $nextToken
  */
 class DescribeContinuousExportsResponse extends Response
 {

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $CreationPath
  * @property string $RegistrationPagePath
  * @property RequestInspectionACFP $RequestInspection
- * @property ResponseInspection $ResponseInspection
- * @property bool $EnableRegexInPath
+ * @property ResponseInspection|null $ResponseInspection
+ * @property bool|null $EnableRegexInPath
  */
 class AWSManagedRulesACFPRuleSet extends Shape
 {
@@ -18,8 +18,8 @@ class AWSManagedRulesACFPRuleSet extends Shape
      *     CreationPath: string,
      *     RegistrationPagePath: string,
      *     RequestInspection: RequestInspectionACFP,
-     *     ResponseInspection?: ResponseInspection,
-     *     EnableRegexInPath?: bool
+     *     ResponseInspection?: ResponseInspection|null,
+     *     EnableRegexInPath?: bool|null
      * } $args
      */
     public function __construct(array $args)

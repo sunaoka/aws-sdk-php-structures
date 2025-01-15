@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\ListChannelsAssociatedWithCha
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ChannelAssociatedWithFlowSummary> $Channels
- * @property string $NextToken
+ * @property list<Shapes\ChannelAssociatedWithFlowSummary>|null $Channels
+ * @property string|null $NextToken
  */
 class ListChannelsAssociatedWithChannelFlowResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeMetricCollectionTypes\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Metric
+ * @property string|null $Metric
  */
 class MetricCollectionType extends Shape
 {
     /**
-     * @param array{Metric?: string} $args
+     * @param array{Metric?: string|null} $args
      */
     public function __construct(array $args = [])
     {

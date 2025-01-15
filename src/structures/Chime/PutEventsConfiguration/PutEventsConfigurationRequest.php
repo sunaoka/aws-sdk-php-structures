@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $BotId
- * @property string $OutboundEventsHTTPSEndpoint
- * @property string $LambdaFunctionArn
+ * @property string|null $OutboundEventsHTTPSEndpoint
+ * @property string|null $LambdaFunctionArn
  */
 class PutEventsConfigurationRequest extends Request
 {
@@ -16,8 +16,8 @@ class PutEventsConfigurationRequest extends Request
      * @param array{
      *     AccountId: string,
      *     BotId: string,
-     *     OutboundEventsHTTPSEndpoint?: string,
-     *     LambdaFunctionArn?: string
+     *     OutboundEventsHTTPSEndpoint?: string|null,
+     *     LambdaFunctionArn?: string|null
      * } $args
      */
     public function __construct(array $args)

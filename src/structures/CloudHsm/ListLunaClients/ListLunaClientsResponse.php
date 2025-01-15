@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<string> $ClientList
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListLunaClientsResponse extends Response
 {

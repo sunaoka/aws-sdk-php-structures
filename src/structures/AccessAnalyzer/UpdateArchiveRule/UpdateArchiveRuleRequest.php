@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $analyzerName
  * @property string $ruleName
  * @property array<string, Shapes\Criterion> $filter
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class UpdateArchiveRuleRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateArchiveRuleRequest extends Request
      *     analyzerName: string,
      *     ruleName: string,
      *     filter: array<string, Shapes\Criterion>,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

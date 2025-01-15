@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApiId
- * @property string $Id
- * @property AwsAppSyncGraphQlApiOpenIdConnectConfigDetails $OpenIdConnectConfig
- * @property string $Name
- * @property AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails $LambdaAuthorizerConfig
- * @property bool $XrayEnabled
- * @property string $Arn
- * @property AwsAppSyncGraphQlApiUserPoolConfigDetails $UserPoolConfig
- * @property string $AuthenticationType
- * @property AwsAppSyncGraphQlApiLogConfigDetails $LogConfig
- * @property list<AwsAppSyncGraphQlApiAdditionalAuthenticationProvidersDetails> $AdditionalAuthenticationProviders
- * @property string $WafWebAclArn
+ * @property string|null $ApiId
+ * @property string|null $Id
+ * @property AwsAppSyncGraphQlApiOpenIdConnectConfigDetails|null $OpenIdConnectConfig
+ * @property string|null $Name
+ * @property AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails|null $LambdaAuthorizerConfig
+ * @property bool|null $XrayEnabled
+ * @property string|null $Arn
+ * @property AwsAppSyncGraphQlApiUserPoolConfigDetails|null $UserPoolConfig
+ * @property string|null $AuthenticationType
+ * @property AwsAppSyncGraphQlApiLogConfigDetails|null $LogConfig
+ * @property list<AwsAppSyncGraphQlApiAdditionalAuthenticationProvidersDetails>|null $AdditionalAuthenticationProviders
+ * @property string|null $WafWebAclArn
  */
 class AwsAppSyncGraphQlApiDetails extends Shape
 {
     /**
      * @param array{
-     *     ApiId?: string,
-     *     Id?: string,
-     *     OpenIdConnectConfig?: AwsAppSyncGraphQlApiOpenIdConnectConfigDetails,
-     *     Name?: string,
-     *     LambdaAuthorizerConfig?: AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails,
-     *     XrayEnabled?: bool,
-     *     Arn?: string,
-     *     UserPoolConfig?: AwsAppSyncGraphQlApiUserPoolConfigDetails,
-     *     AuthenticationType?: string,
-     *     LogConfig?: AwsAppSyncGraphQlApiLogConfigDetails,
-     *     AdditionalAuthenticationProviders?: list<AwsAppSyncGraphQlApiAdditionalAuthenticationProvidersDetails>,
-     *     WafWebAclArn?: string
+     *     ApiId?: string|null,
+     *     Id?: string|null,
+     *     OpenIdConnectConfig?: AwsAppSyncGraphQlApiOpenIdConnectConfigDetails|null,
+     *     Name?: string|null,
+     *     LambdaAuthorizerConfig?: AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails|null,
+     *     XrayEnabled?: bool|null,
+     *     Arn?: string|null,
+     *     UserPoolConfig?: AwsAppSyncGraphQlApiUserPoolConfigDetails|null,
+     *     AuthenticationType?: string|null,
+     *     LogConfig?: AwsAppSyncGraphQlApiLogConfigDetails|null,
+     *     AdditionalAuthenticationProviders?: list<AwsAppSyncGraphQlApiAdditionalAuthenticationProvidersDetails>|null,
+     *     WafWebAclArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

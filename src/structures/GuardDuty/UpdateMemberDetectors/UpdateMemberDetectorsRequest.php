@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DetectorId
  * @property list<string> $AccountIds
- * @property Shapes\DataSourceConfigurations $DataSources
- * @property list<Shapes\MemberFeaturesConfiguration> $Features
+ * @property Shapes\DataSourceConfigurations|null $DataSources
+ * @property list<Shapes\MemberFeaturesConfiguration>|null $Features
  */
 class UpdateMemberDetectorsRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateMemberDetectorsRequest extends Request
      * @param array{
      *     DetectorId: string,
      *     AccountIds: list<string>,
-     *     DataSources?: Shapes\DataSourceConfigurations,
-     *     Features?: list<Shapes\MemberFeaturesConfiguration>
+     *     DataSources?: Shapes\DataSourceConfigurations|null,
+     *     Features?: list<Shapes\MemberFeaturesConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

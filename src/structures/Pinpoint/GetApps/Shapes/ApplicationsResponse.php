@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetApps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ApplicationResponse> $Item
- * @property string $NextToken
+ * @property list<ApplicationResponse>|null $Item
+ * @property string|null $NextToken
  */
 class ApplicationsResponse extends Shape
 {
     /**
      * @param array{
-     *     Item?: list<ApplicationResponse>,
-     *     NextToken?: string
+     *     Item?: list<ApplicationResponse>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

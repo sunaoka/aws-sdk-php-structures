@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\GetTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogId
- * @property string $DatabaseName
- * @property string $Name
- * @property string $Region
+ * @property string|null $CatalogId
+ * @property string|null $DatabaseName
+ * @property string|null $Name
+ * @property string|null $Region
  */
 class TableIdentifier extends Shape
 {
     /**
      * @param array{
-     *     CatalogId?: string,
-     *     DatabaseName?: string,
-     *     Name?: string,
-     *     Region?: string
+     *     CatalogId?: string|null,
+     *     DatabaseName?: string|null,
+     *     Name?: string|null,
+     *     Region?: string|null
      * } $args
      */
     public function __construct(array $args = [])

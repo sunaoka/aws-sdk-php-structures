@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TaskTitle
  * @property string $TaskDescription
  * @property int<1, 3> $TaskCount
- * @property int<1, max> $TaskAvailabilityLifetimeInSeconds
- * @property int<30, max> $TaskTimeLimitInSeconds
- * @property list<string> $TaskKeywords
- * @property PublicWorkforceTaskPrice $PublicWorkforceTaskPrice
+ * @property int<1, max>|null $TaskAvailabilityLifetimeInSeconds
+ * @property int<30, max>|null $TaskTimeLimitInSeconds
+ * @property list<string>|null $TaskKeywords
+ * @property PublicWorkforceTaskPrice|null $PublicWorkforceTaskPrice
  */
 class HumanLoopConfig extends Shape
 {
@@ -24,10 +24,10 @@ class HumanLoopConfig extends Shape
      *     TaskTitle: string,
      *     TaskDescription: string,
      *     TaskCount: int<1, 3>,
-     *     TaskAvailabilityLifetimeInSeconds?: int<1, max>,
-     *     TaskTimeLimitInSeconds?: int<30, max>,
-     *     TaskKeywords?: list<string>,
-     *     PublicWorkforceTaskPrice?: PublicWorkforceTaskPrice
+     *     TaskAvailabilityLifetimeInSeconds?: int<1, max>|null,
+     *     TaskTimeLimitInSeconds?: int<30, max>|null,
+     *     TaskKeywords?: list<string>|null,
+     *     PublicWorkforceTaskPrice?: PublicWorkforceTaskPrice|null
      * } $args
      */
     public function __construct(array $args)

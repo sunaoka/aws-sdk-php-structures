@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DirectoryService\DescribeConditionalForwarders\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RemoteDomainName
- * @property list<string> $DnsIpAddrs
- * @property 'Domain' $ReplicationScope
+ * @property string|null $RemoteDomainName
+ * @property list<string>|null $DnsIpAddrs
+ * @property 'Domain'|null $ReplicationScope
  */
 class ConditionalForwarder extends Shape
 {
     /**
      * @param array{
-     *     RemoteDomainName?: string,
-     *     DnsIpAddrs?: list<string>,
-     *     ReplicationScope?: 'Domain'
+     *     RemoteDomainName?: string|null,
+     *     DnsIpAddrs?: list<string>|null,
+     *     ReplicationScope?: 'Domain'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Detective\ListInvitations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $VolumeUsageInBytes
- * @property \Aws\Api\DateTimeResult $VolumeUsageUpdateTime
+ * @property int|null $VolumeUsageInBytes
+ * @property \Aws\Api\DateTimeResult|null $VolumeUsageUpdateTime
  */
 class DatasourcePackageUsageInfo extends Shape
 {
     /**
      * @param array{
-     *     VolumeUsageInBytes?: int,
-     *     VolumeUsageUpdateTime?: \Aws\Api\DateTimeResult
+     *     VolumeUsageInBytes?: int|null,
+     *     VolumeUsageUpdateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GameLift\GetInstanceAccess;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\InstanceAccess $InstanceAccess
+ * @property Shapes\InstanceAccess|null $InstanceAccess
  */
 class GetInstanceAccessResponse extends Response
 {

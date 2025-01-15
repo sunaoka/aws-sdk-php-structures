@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Appstream\UpdateFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DirectoryName
- * @property string $OrganizationalUnitDistinguishedName
+ * @property string|null $DirectoryName
+ * @property string|null $OrganizationalUnitDistinguishedName
  */
 class DomainJoinInfo extends Shape
 {
     /**
      * @param array{
-     *     DirectoryName?: string,
-     *     OrganizationalUnitDistinguishedName?: string
+     *     DirectoryName?: string|null,
+     *     OrganizationalUnitDistinguishedName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

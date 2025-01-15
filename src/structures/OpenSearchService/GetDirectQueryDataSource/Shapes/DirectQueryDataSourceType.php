@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\GetDirectQueryDataSource\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CloudWatchDirectQueryDataSource $CloudWatchLog
- * @property SecurityLakeDirectQueryDataSource $SecurityLake
+ * @property CloudWatchDirectQueryDataSource|null $CloudWatchLog
+ * @property SecurityLakeDirectQueryDataSource|null $SecurityLake
  */
 class DirectQueryDataSourceType extends Shape
 {
     /**
      * @param array{
-     *     CloudWatchLog?: CloudWatchDirectQueryDataSource,
-     *     SecurityLake?: SecurityLakeDirectQueryDataSource
+     *     CloudWatchLog?: CloudWatchDirectQueryDataSource|null,
+     *     SecurityLake?: SecurityLakeDirectQueryDataSource|null
      * } $args
      */
     public function __construct(array $args = [])

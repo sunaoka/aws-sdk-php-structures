@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\BatchPutContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RequestIdentifier
- * @property string $ContactId
+ * @property string|null $RequestIdentifier
+ * @property string|null $ContactId
  */
 class SuccessfulRequest extends Shape
 {
     /**
      * @param array{
-     *     RequestIdentifier?: string,
-     *     ContactId?: string
+     *     RequestIdentifier?: string|null,
+     *     ContactId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

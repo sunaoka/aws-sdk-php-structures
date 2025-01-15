@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Neptunedata\GetSparqlStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $signatureCount
- * @property int $instanceCount
- * @property int $predicateCount
+ * @property int|null $signatureCount
+ * @property int|null $instanceCount
+ * @property int|null $predicateCount
  */
 class StatisticsSummary extends Shape
 {
     /**
      * @param array{
-     *     signatureCount?: int,
-     *     instanceCount?: int,
-     *     predicateCount?: int
+     *     signatureCount?: int|null,
+     *     instanceCount?: int|null,
+     *     predicateCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\Video $Video
- * @property string $ClientRequestToken
- * @property Shapes\NotificationChannel $NotificationChannel
- * @property string $JobTag
+ * @property string|null $ClientRequestToken
+ * @property Shapes\NotificationChannel|null $NotificationChannel
+ * @property string|null $JobTag
  */
 class StartPersonTrackingRequest extends Request
 {
     /**
      * @param array{
      *     Video: Shapes\Video,
-     *     ClientRequestToken?: string,
-     *     NotificationChannel?: Shapes\NotificationChannel,
-     *     JobTag?: string
+     *     ClientRequestToken?: string|null,
+     *     NotificationChannel?: Shapes\NotificationChannel|null,
+     *     JobTag?: string|null
      * } $args
      */
     public function __construct(array $args)

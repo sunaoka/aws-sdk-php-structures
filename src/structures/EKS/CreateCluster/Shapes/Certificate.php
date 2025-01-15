@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EKS\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $data
+ * @property string|null $data
  */
 class Certificate extends Shape
 {
     /**
-     * @param array{data?: string} $args
+     * @param array{data?: string|null} $args
      */
     public function __construct(array $args = [])
     {

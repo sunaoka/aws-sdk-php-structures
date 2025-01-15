@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Transfer\DescribeConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserSecretId
- * @property list<string> $TrustedHostKeys
+ * @property string|null $UserSecretId
+ * @property list<string>|null $TrustedHostKeys
  */
 class SftpConnectorConfig extends Shape
 {
     /**
      * @param array{
-     *     UserSecretId?: string,
-     *     TrustedHostKeys?: list<string>
+     *     UserSecretId?: string|null,
+     *     TrustedHostKeys?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannelPlacementGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property list<string> $Channels
- * @property string $ClusterId
- * @property string $Id
- * @property string $Name
- * @property list<string> $Nodes
- * @property 'UNASSIGNED'|'ASSIGNING'|'ASSIGNED'|'DELETING'|'DELETE_FAILED'|'DELETED'|'UNASSIGNING' $State
+ * @property string|null $Arn
+ * @property list<string>|null $Channels
+ * @property string|null $ClusterId
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property list<string>|null $Nodes
+ * @property 'UNASSIGNED'|'ASSIGNING'|'ASSIGNED'|'DELETING'|'DELETE_FAILED'|'DELETED'|'UNASSIGNING'|null $State
  */
 class CreateChannelPlacementGroupResponse extends Response
 {

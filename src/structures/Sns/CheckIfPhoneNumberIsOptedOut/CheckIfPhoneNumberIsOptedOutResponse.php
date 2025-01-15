@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Sns\CheckIfPhoneNumberIsOptedOut;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $isOptedOut
+ * @property bool|null $isOptedOut
  */
 class CheckIfPhoneNumberIsOptedOutResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\OpsWorks\CreateInstance;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $InstanceId
+ * @property string|null $InstanceId
  */
 class CreateInstanceResponse extends Response
 {

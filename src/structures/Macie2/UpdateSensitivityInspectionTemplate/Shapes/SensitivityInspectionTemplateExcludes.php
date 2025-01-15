@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Macie2\UpdateSensitivityInspectionTemplate\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $managedDataIdentifierIds
+ * @property list<string>|null $managedDataIdentifierIds
  */
 class SensitivityInspectionTemplateExcludes extends Shape
 {
     /**
-     * @param array{managedDataIdentifierIds?: list<string>} $args
+     * @param array{managedDataIdentifierIds?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

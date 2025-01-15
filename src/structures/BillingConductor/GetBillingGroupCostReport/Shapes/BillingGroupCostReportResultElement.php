@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\BillingConductor\GetBillingGroupCostReport\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $AWSCost
- * @property string $ProformaCost
- * @property string $Margin
- * @property string $MarginPercentage
- * @property string $Currency
- * @property list<Attribute> $Attributes
+ * @property string|null $Arn
+ * @property string|null $AWSCost
+ * @property string|null $ProformaCost
+ * @property string|null $Margin
+ * @property string|null $MarginPercentage
+ * @property string|null $Currency
+ * @property list<Attribute>|null $Attributes
  */
 class BillingGroupCostReportResultElement extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     AWSCost?: string,
-     *     ProformaCost?: string,
-     *     Margin?: string,
-     *     MarginPercentage?: string,
-     *     Currency?: string,
-     *     Attributes?: list<Attribute>
+     *     Arn?: string|null,
+     *     AWSCost?: string|null,
+     *     ProformaCost?: string|null,
+     *     Margin?: string|null,
+     *     MarginPercentage?: string|null,
+     *     Currency?: string|null,
+     *     Attributes?: list<Attribute>|null
      * } $args
      */
     public function __construct(array $args = [])

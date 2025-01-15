@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Batch\RegisterJobDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $operatingSystemFamily
- * @property string $cpuArchitecture
+ * @property string|null $operatingSystemFamily
+ * @property string|null $cpuArchitecture
  */
 class RuntimePlatform extends Shape
 {
     /**
      * @param array{
-     *     operatingSystemFamily?: string,
-     *     cpuArchitecture?: string
+     *     operatingSystemFamily?: string|null,
+     *     cpuArchitecture?: string|null
      * } $args
      */
     public function __construct(array $args = [])

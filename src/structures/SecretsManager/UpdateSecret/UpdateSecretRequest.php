@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SecretId
- * @property string $ClientRequestToken
- * @property string $Description
- * @property string $KmsKeyId
- * @property string|resource|\Psr\Http\Message\StreamInterface $SecretBinary
- * @property string $SecretString
+ * @property string|null $ClientRequestToken
+ * @property string|null $Description
+ * @property string|null $KmsKeyId
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $SecretBinary
+ * @property string|null $SecretString
  */
 class UpdateSecretRequest extends Request
 {
     /**
      * @param array{
      *     SecretId: string,
-     *     ClientRequestToken?: string,
-     *     Description?: string,
-     *     KmsKeyId?: string,
-     *     SecretBinary?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     SecretString?: string
+     *     ClientRequestToken?: string|null,
+     *     Description?: string|null,
+     *     KmsKeyId?: string|null,
+     *     SecretBinary?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     SecretString?: string|null
      * } $args
      */
     public function __construct(array $args)

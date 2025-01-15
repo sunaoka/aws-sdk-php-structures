@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LakeFormation\ListLakeFormationOptIns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $TagKey
  * @property list<string> $TagValues
  */
@@ -13,7 +13,7 @@ class LFTagKeyResource extends Shape
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     TagKey: string,
      *     TagValues: list<string>
      * } $args

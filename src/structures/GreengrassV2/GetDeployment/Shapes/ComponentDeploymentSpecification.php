@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $componentVersion
- * @property ComponentConfigurationUpdate $configurationUpdate
- * @property ComponentRunWith $runWith
+ * @property ComponentConfigurationUpdate|null $configurationUpdate
+ * @property ComponentRunWith|null $runWith
  */
 class ComponentDeploymentSpecification extends Shape
 {
     /**
      * @param array{
      *     componentVersion: string,
-     *     configurationUpdate?: ComponentConfigurationUpdate,
-     *     runWith?: ComponentRunWith
+     *     configurationUpdate?: ComponentConfigurationUpdate|null,
+     *     runWith?: ComponentRunWith|null
      * } $args
      */
     public function __construct(array $args)

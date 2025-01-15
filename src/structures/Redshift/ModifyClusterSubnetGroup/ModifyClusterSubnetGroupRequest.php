@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterSubnetGroupName
- * @property string $Description
+ * @property string|null $Description
  * @property list<string> $SubnetIds
  */
 class ModifyClusterSubnetGroupRequest extends Request
@@ -14,7 +14,7 @@ class ModifyClusterSubnetGroupRequest extends Request
     /**
      * @param array{
      *     ClusterSubnetGroupName: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     SubnetIds: list<string>
      * } $args
      */

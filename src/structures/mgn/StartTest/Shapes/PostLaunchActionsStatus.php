@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\mgn\StartTest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<JobPostLaunchActionsLaunchStatus> $postLaunchActionsLaunchStatusList
- * @property string $ssmAgentDiscoveryDatetime
+ * @property list<JobPostLaunchActionsLaunchStatus>|null $postLaunchActionsLaunchStatusList
+ * @property string|null $ssmAgentDiscoveryDatetime
  */
 class PostLaunchActionsStatus extends Shape
 {
     /**
      * @param array{
-     *     postLaunchActionsLaunchStatusList?: list<JobPostLaunchActionsLaunchStatus>,
-     *     ssmAgentDiscoveryDatetime?: string
+     *     postLaunchActionsLaunchStatusList?: list<JobPostLaunchActionsLaunchStatus>|null,
+     *     ssmAgentDiscoveryDatetime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

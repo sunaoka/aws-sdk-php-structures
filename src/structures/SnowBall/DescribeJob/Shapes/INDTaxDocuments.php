@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SnowBall\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GSTIN
+ * @property string|null $GSTIN
  */
 class INDTaxDocuments extends Shape
 {
     /**
-     * @param array{GSTIN?: string} $args
+     * @param array{GSTIN?: string|null} $args
      */
     public function __construct(array $args = [])
     {

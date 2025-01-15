@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetApplicat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CREDENTIAL_ERROR'|'CONNECTIVITY_ERROR'|'PERMISSION_ERROR'|'UNSUPPORTED_ERROR'|'OTHER_ERROR' $appUnitErrorCategory
+ * @property 'CREDENTIAL_ERROR'|'CONNECTIVITY_ERROR'|'PERMISSION_ERROR'|'UNSUPPORTED_ERROR'|'OTHER_ERROR'|null $appUnitErrorCategory
  */
 class AppUnitError extends Shape
 {
     /**
-     * @param array{appUnitErrorCategory?: 'CREDENTIAL_ERROR'|'CONNECTIVITY_ERROR'|'PERMISSION_ERROR'|'UNSUPPORTED_ERROR'|'OTHER_ERROR'} $args
+     * @param array{appUnitErrorCategory?: 'CREDENTIAL_ERROR'|'CONNECTIVITY_ERROR'|'PERMISSION_ERROR'|'UNSUPPORTED_ERROR'|'OTHER_ERROR'|null} $args
      */
     public function __construct(array $args = [])
     {

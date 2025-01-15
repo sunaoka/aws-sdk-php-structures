@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DefaultRoute
- * @property list<InterfaceMapping> $InterfaceMappings
+ * @property string|null $DefaultRoute
+ * @property list<InterfaceMapping>|null $InterfaceMappings
  */
 class ClusterNetworkSettings extends Shape
 {
     /**
      * @param array{
-     *     DefaultRoute?: string,
-     *     InterfaceMappings?: list<InterfaceMapping>
+     *     DefaultRoute?: string|null,
+     *     InterfaceMappings?: list<InterfaceMapping>|null
      * } $args
      */
     public function __construct(array $args = [])

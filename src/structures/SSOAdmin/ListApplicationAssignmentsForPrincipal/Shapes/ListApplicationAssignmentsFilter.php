@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListApplicationAssignmentsForPrincipal
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationArn
+ * @property string|null $ApplicationArn
  */
 class ListApplicationAssignmentsFilter extends Shape
 {
     /**
-     * @param array{ApplicationArn?: string} $args
+     * @param array{ApplicationArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

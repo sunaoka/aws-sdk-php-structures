@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property 'RUNNING'|'STOPPED' $DesiredState
+ * @property string|null $Description
+ * @property 'RUNNING'|'STOPPED'|null $DesiredState
  * @property string $Source
- * @property Shapes\PipeSourceParameters $SourceParameters
- * @property string $Enrichment
- * @property Shapes\PipeEnrichmentParameters $EnrichmentParameters
+ * @property Shapes\PipeSourceParameters|null $SourceParameters
+ * @property string|null $Enrichment
+ * @property Shapes\PipeEnrichmentParameters|null $EnrichmentParameters
  * @property string $Target
- * @property Shapes\PipeTargetParameters $TargetParameters
+ * @property Shapes\PipeTargetParameters|null $TargetParameters
  * @property string $RoleArn
- * @property array<string, string> $Tags
- * @property Shapes\PipeLogConfigurationParameters $LogConfiguration
- * @property string $KmsKeyIdentifier
+ * @property array<string, string>|null $Tags
+ * @property Shapes\PipeLogConfigurationParameters|null $LogConfiguration
+ * @property string|null $KmsKeyIdentifier
  */
 class CreatePipeRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     DesiredState?: 'RUNNING'|'STOPPED',
+     *     Description?: string|null,
+     *     DesiredState?: 'RUNNING'|'STOPPED'|null,
      *     Source: string,
-     *     SourceParameters?: Shapes\PipeSourceParameters,
-     *     Enrichment?: string,
-     *     EnrichmentParameters?: Shapes\PipeEnrichmentParameters,
+     *     SourceParameters?: Shapes\PipeSourceParameters|null,
+     *     Enrichment?: string|null,
+     *     EnrichmentParameters?: Shapes\PipeEnrichmentParameters|null,
      *     Target: string,
-     *     TargetParameters?: Shapes\PipeTargetParameters,
+     *     TargetParameters?: Shapes\PipeTargetParameters|null,
      *     RoleArn: string,
-     *     Tags?: array<string, string>,
-     *     LogConfiguration?: Shapes\PipeLogConfigurationParameters,
-     *     KmsKeyIdentifier?: string
+     *     Tags?: array<string, string>|null,
+     *     LogConfiguration?: Shapes\PipeLogConfigurationParameters|null,
+     *     KmsKeyIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

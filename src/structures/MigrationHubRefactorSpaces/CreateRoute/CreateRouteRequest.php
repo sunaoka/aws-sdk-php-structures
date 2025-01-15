@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationIdentifier
- * @property string $ClientToken
- * @property Shapes\DefaultRouteInput $DefaultRoute
+ * @property string|null $ClientToken
+ * @property Shapes\DefaultRouteInput|null $DefaultRoute
  * @property string $EnvironmentIdentifier
  * @property 'DEFAULT'|'URI_PATH' $RouteType
  * @property string $ServiceIdentifier
- * @property array<string, string> $Tags
- * @property Shapes\UriPathRouteInput $UriPathRoute
+ * @property array<string, string>|null $Tags
+ * @property Shapes\UriPathRouteInput|null $UriPathRoute
  */
 class CreateRouteRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationIdentifier: string,
-     *     ClientToken?: string,
-     *     DefaultRoute?: Shapes\DefaultRouteInput,
+     *     ClientToken?: string|null,
+     *     DefaultRoute?: Shapes\DefaultRouteInput|null,
      *     EnvironmentIdentifier: string,
      *     RouteType: 'DEFAULT'|'URI_PATH',
      *     ServiceIdentifier: string,
-     *     Tags?: array<string, string>,
-     *     UriPathRoute?: Shapes\UriPathRouteInput
+     *     Tags?: array<string, string>|null,
+     *     UriPathRoute?: Shapes\UriPathRouteInput|null
      * } $args
      */
     public function __construct(array $args)

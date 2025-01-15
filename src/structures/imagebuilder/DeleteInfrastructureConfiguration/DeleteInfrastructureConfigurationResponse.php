@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\imagebuilder\DeleteInfrastructureConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $requestId
- * @property string $infrastructureConfigurationArn
+ * @property string|null $requestId
+ * @property string|null $infrastructureConfigurationArn
  */
 class DeleteInfrastructureConfigurationResponse extends Response
 {

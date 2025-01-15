@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetEmailTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  * @property string $CreationDate
- * @property string $DefaultSubstitutions
- * @property string $HtmlPart
+ * @property string|null $DefaultSubstitutions
+ * @property string|null $HtmlPart
  * @property string $LastModifiedDate
- * @property string $RecommenderId
- * @property string $Subject
- * @property list<MessageHeader> $Headers
- * @property array<string, string> $tags
- * @property string $TemplateDescription
+ * @property string|null $RecommenderId
+ * @property string|null $Subject
+ * @property list<MessageHeader>|null $Headers
+ * @property array<string, string>|null $tags
+ * @property string|null $TemplateDescription
  * @property string $TemplateName
  * @property 'EMAIL'|'SMS'|'VOICE'|'PUSH'|'INAPP' $TemplateType
- * @property string $TextPart
- * @property string $Version
+ * @property string|null $TextPart
+ * @property string|null $Version
  */
 class EmailTemplateResponse extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
+     *     Arn?: string|null,
      *     CreationDate: string,
-     *     DefaultSubstitutions?: string,
-     *     HtmlPart?: string,
+     *     DefaultSubstitutions?: string|null,
+     *     HtmlPart?: string|null,
      *     LastModifiedDate: string,
-     *     RecommenderId?: string,
-     *     Subject?: string,
-     *     Headers?: list<MessageHeader>,
-     *     tags?: array<string, string>,
-     *     TemplateDescription?: string,
+     *     RecommenderId?: string|null,
+     *     Subject?: string|null,
+     *     Headers?: list<MessageHeader>|null,
+     *     tags?: array<string, string>|null,
+     *     TemplateDescription?: string|null,
      *     TemplateName: string,
      *     TemplateType: 'EMAIL'|'SMS'|'VOICE'|'PUSH'|'INAPP',
-     *     TextPart?: string,
-     *     Version?: string
+     *     TextPart?: string|null,
+     *     Version?: string|null
      * } $args
      */
     public function __construct(array $args)

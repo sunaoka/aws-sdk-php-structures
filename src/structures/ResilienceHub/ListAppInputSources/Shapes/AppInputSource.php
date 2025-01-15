@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListAppInputSources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EksSourceClusterNamespace $eksSourceClusterNamespace
+ * @property EksSourceClusterNamespace|null $eksSourceClusterNamespace
  * @property 'CfnStack'|'Resource'|'AppRegistryApp'|'ResourceGroup'|'Terraform'|'EKS' $importType
- * @property int $resourceCount
- * @property string $sourceArn
- * @property string $sourceName
- * @property TerraformSource $terraformSource
+ * @property int|null $resourceCount
+ * @property string|null $sourceArn
+ * @property string|null $sourceName
+ * @property TerraformSource|null $terraformSource
  */
 class AppInputSource extends Shape
 {
     /**
      * @param array{
-     *     eksSourceClusterNamespace?: EksSourceClusterNamespace,
+     *     eksSourceClusterNamespace?: EksSourceClusterNamespace|null,
      *     importType: 'CfnStack'|'Resource'|'AppRegistryApp'|'ResourceGroup'|'Terraform'|'EKS',
-     *     resourceCount?: int,
-     *     sourceArn?: string,
-     *     sourceName?: string,
-     *     terraformSource?: TerraformSource
+     *     resourceCount?: int|null,
+     *     sourceArn?: string|null,
+     *     sourceName?: string|null,
+     *     terraformSource?: TerraformSource|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\WellArchitected\GetLensVersionDifference;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LensAlias
- * @property string $LensArn
- * @property string $BaseLensVersion
- * @property string $TargetLensVersion
- * @property string $LatestLensVersion
- * @property Shapes\VersionDifferences $VersionDifferences
+ * @property string|null $LensAlias
+ * @property string|null $LensArn
+ * @property string|null $BaseLensVersion
+ * @property string|null $TargetLensVersion
+ * @property string|null $LatestLensVersion
+ * @property Shapes\VersionDifferences|null $VersionDifferences
  */
 class GetLensVersionDifferenceResponse extends Response
 {

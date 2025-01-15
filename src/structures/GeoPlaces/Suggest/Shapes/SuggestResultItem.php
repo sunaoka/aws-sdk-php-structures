@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Title
  * @property 'Place'|'Query' $SuggestResultItemType
- * @property SuggestPlaceResult $Place
- * @property SuggestQueryResult $Query
- * @property SuggestHighlights $Highlights
+ * @property SuggestPlaceResult|null $Place
+ * @property SuggestQueryResult|null $Query
+ * @property SuggestHighlights|null $Highlights
  */
 class SuggestResultItem extends Shape
 {
@@ -17,9 +17,9 @@ class SuggestResultItem extends Shape
      * @param array{
      *     Title: string,
      *     SuggestResultItemType: 'Place'|'Query',
-     *     Place?: SuggestPlaceResult,
-     *     Query?: SuggestQueryResult,
-     *     Highlights?: SuggestHighlights
+     *     Place?: SuggestPlaceResult|null,
+     *     Query?: SuggestQueryResult|null,
+     *     Highlights?: SuggestHighlights|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetDeployment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DeploymentInfo $deploymentInfo
+ * @property Shapes\DeploymentInfo|null $deploymentInfo
  */
 class GetDeploymentResponse extends Response
 {

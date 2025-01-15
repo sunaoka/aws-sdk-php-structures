@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaTailor\UpdateProgram\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DurationMillis
- * @property int $ScheduledStartTimeMillis
+ * @property int|null $DurationMillis
+ * @property int|null $ScheduledStartTimeMillis
  */
 class UpdateProgramTransition extends Shape
 {
     /**
      * @param array{
-     *     DurationMillis?: int,
-     *     ScheduledStartTimeMillis?: int
+     *     DurationMillis?: int|null,
+     *     ScheduledStartTimeMillis?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'MainLanguageNotFound'|'Other'|'TravelTimeExceedsDriverWorkHours' $Code
- * @property 'High'|'Low' $Impact
+ * @property 'High'|'Low'|null $Impact
  */
 class RouteResponseNotice extends Shape
 {
     /**
      * @param array{
      *     Code: 'MainLanguageNotFound'|'Other'|'TravelTimeExceedsDriverWorkHours',
-     *     Impact?: 'High'|'Low'
+     *     Impact?: 'High'|'Low'|null
      * } $args
      */
     public function __construct(array $args)

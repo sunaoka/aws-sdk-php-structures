@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AthenaPropertiesOutput $athenaProperties
- * @property GluePropertiesOutput $glueProperties
- * @property HyperPodPropertiesOutput $hyperPodProperties
- * @property IamPropertiesOutput $iamProperties
- * @property RedshiftPropertiesOutput $redshiftProperties
- * @property SparkEmrPropertiesOutput $sparkEmrProperties
- * @property SparkGluePropertiesOutput $sparkGlueProperties
+ * @property AthenaPropertiesOutput|null $athenaProperties
+ * @property GluePropertiesOutput|null $glueProperties
+ * @property HyperPodPropertiesOutput|null $hyperPodProperties
+ * @property IamPropertiesOutput|null $iamProperties
+ * @property RedshiftPropertiesOutput|null $redshiftProperties
+ * @property SparkEmrPropertiesOutput|null $sparkEmrProperties
+ * @property SparkGluePropertiesOutput|null $sparkGlueProperties
  */
 class ConnectionPropertiesOutput extends Shape
 {
     /**
      * @param array{
-     *     athenaProperties?: AthenaPropertiesOutput,
-     *     glueProperties?: GluePropertiesOutput,
-     *     hyperPodProperties?: HyperPodPropertiesOutput,
-     *     iamProperties?: IamPropertiesOutput,
-     *     redshiftProperties?: RedshiftPropertiesOutput,
-     *     sparkEmrProperties?: SparkEmrPropertiesOutput,
-     *     sparkGlueProperties?: SparkGluePropertiesOutput
+     *     athenaProperties?: AthenaPropertiesOutput|null,
+     *     glueProperties?: GluePropertiesOutput|null,
+     *     hyperPodProperties?: HyperPodPropertiesOutput|null,
+     *     iamProperties?: IamPropertiesOutput|null,
+     *     redshiftProperties?: RedshiftPropertiesOutput|null,
+     *     sparkEmrProperties?: SparkEmrPropertiesOutput|null,
+     *     sparkGlueProperties?: SparkGluePropertiesOutput|null
      * } $args
      */
     public function __construct(array $args = [])

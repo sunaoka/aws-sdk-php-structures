@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Pinpoint\DeleteSegment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INCLUSIVE'|'EXCLUSIVE' $DimensionType
+ * @property 'INCLUSIVE'|'EXCLUSIVE'|null $DimensionType
  * @property list<string> $Values
  */
 class SetDimension extends Shape
 {
     /**
      * @param array{
-     *     DimensionType?: 'INCLUSIVE'|'EXCLUSIVE',
+     *     DimensionType?: 'INCLUSIVE'|'EXCLUSIVE'|null,
      *     Values: list<string>
      * } $args
      */

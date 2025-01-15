@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Chatbot\CreateCustomAction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NotificationType
- * @property string $ButtonText
- * @property list<CustomActionAttachmentCriteria> $Criteria
- * @property array<string, string> $Variables
+ * @property string|null $NotificationType
+ * @property string|null $ButtonText
+ * @property list<CustomActionAttachmentCriteria>|null $Criteria
+ * @property array<string, string>|null $Variables
  */
 class CustomActionAttachment extends Shape
 {
     /**
      * @param array{
-     *     NotificationType?: string,
-     *     ButtonText?: string,
-     *     Criteria?: list<CustomActionAttachmentCriteria>,
-     *     Variables?: array<string, string>
+     *     NotificationType?: string|null,
+     *     ButtonText?: string|null,
+     *     Criteria?: list<CustomActionAttachmentCriteria>|null,
+     *     Variables?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

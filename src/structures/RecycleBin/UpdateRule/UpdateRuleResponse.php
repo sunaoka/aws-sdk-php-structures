@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\RecycleBin\UpdateRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Identifier
- * @property Shapes\RetentionPeriod $RetentionPeriod
- * @property string $Description
- * @property 'EBS_SNAPSHOT'|'EC2_IMAGE' $ResourceType
- * @property list<Shapes\ResourceTag> $ResourceTags
- * @property 'pending'|'available' $Status
- * @property 'locked'|'pending_unlock'|'unlocked' $LockState
- * @property \Aws\Api\DateTimeResult $LockEndTime
- * @property string $RuleArn
- * @property list<Shapes\ResourceTag> $ExcludeResourceTags
+ * @property string|null $Identifier
+ * @property Shapes\RetentionPeriod|null $RetentionPeriod
+ * @property string|null $Description
+ * @property 'EBS_SNAPSHOT'|'EC2_IMAGE'|null $ResourceType
+ * @property list<Shapes\ResourceTag>|null $ResourceTags
+ * @property 'pending'|'available'|null $Status
+ * @property 'locked'|'pending_unlock'|'unlocked'|null $LockState
+ * @property \Aws\Api\DateTimeResult|null $LockEndTime
+ * @property string|null $RuleArn
+ * @property list<Shapes\ResourceTag>|null $ExcludeResourceTags
  */
 class UpdateRuleResponse extends Response
 {

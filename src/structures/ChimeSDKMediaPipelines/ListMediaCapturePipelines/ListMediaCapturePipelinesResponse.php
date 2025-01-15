@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\ListMediaCapturePipeline
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\MediaCapturePipelineSummary> $MediaCapturePipelines
- * @property string $NextToken
+ * @property list<Shapes\MediaCapturePipelineSummary>|null $MediaCapturePipelines
+ * @property string|null $NextToken
  */
 class ListMediaCapturePipelinesResponse extends Response
 {

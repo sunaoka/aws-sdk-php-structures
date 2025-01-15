@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBSnapshots;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DBInstanceIdentifier
- * @property string $DBSnapshotIdentifier
- * @property string $SnapshotType
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxRecords
- * @property string $Marker
- * @property bool $IncludeShared
- * @property bool $IncludePublic
- * @property string $DbiResourceId
+ * @property string|null $DBInstanceIdentifier
+ * @property string|null $DBSnapshotIdentifier
+ * @property string|null $SnapshotType
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
+ * @property bool|null $IncludeShared
+ * @property bool|null $IncludePublic
+ * @property string|null $DbiResourceId
  */
 class DescribeDBSnapshotsRequest extends Request
 {
     /**
      * @param array{
-     *     DBInstanceIdentifier?: string,
-     *     DBSnapshotIdentifier?: string,
-     *     SnapshotType?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxRecords?: int,
-     *     Marker?: string,
-     *     IncludeShared?: bool,
-     *     IncludePublic?: bool,
-     *     DbiResourceId?: string
+     *     DBInstanceIdentifier?: string|null,
+     *     DBSnapshotIdentifier?: string|null,
+     *     SnapshotType?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null,
+     *     IncludeShared?: bool|null,
+     *     IncludePublic?: bool|null,
+     *     DbiResourceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

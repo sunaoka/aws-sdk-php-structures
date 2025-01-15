@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $PageNumber
- * @property Range $LineRange
- * @property Range $OffsetRange
+ * @property int|null $PageNumber
+ * @property Range|null $LineRange
+ * @property Range|null $OffsetRange
  */
 class Page extends Shape
 {
     /**
      * @param array{
-     *     PageNumber?: int,
-     *     LineRange?: Range,
-     *     OffsetRange?: Range
+     *     PageNumber?: int|null,
+     *     LineRange?: Range|null,
+     *     OffsetRange?: Range|null
      * } $args
      */
     public function __construct(array $args = [])

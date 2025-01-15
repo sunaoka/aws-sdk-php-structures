@@ -8,18 +8,18 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $DashboardId
  * @property string $Name
- * @property Shapes\Parameters $Parameters
- * @property list<Shapes\ResourcePermission> $Permissions
- * @property Shapes\DashboardSourceEntity $SourceEntity
- * @property list<Shapes\Tag> $Tags
- * @property string $VersionDescription
- * @property Shapes\DashboardPublishOptions $DashboardPublishOptions
- * @property string $ThemeArn
- * @property Shapes\DashboardVersionDefinition $Definition
- * @property Shapes\ValidationStrategy $ValidationStrategy
- * @property list<string> $FolderArns
- * @property Shapes\LinkSharingConfiguration $LinkSharingConfiguration
- * @property list<string> $LinkEntities
+ * @property Shapes\Parameters|null $Parameters
+ * @property list<Shapes\ResourcePermission>|null $Permissions
+ * @property Shapes\DashboardSourceEntity|null $SourceEntity
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $VersionDescription
+ * @property Shapes\DashboardPublishOptions|null $DashboardPublishOptions
+ * @property string|null $ThemeArn
+ * @property Shapes\DashboardVersionDefinition|null $Definition
+ * @property Shapes\ValidationStrategy|null $ValidationStrategy
+ * @property list<string>|null $FolderArns
+ * @property Shapes\LinkSharingConfiguration|null $LinkSharingConfiguration
+ * @property list<string>|null $LinkEntities
  */
 class CreateDashboardRequest extends Request
 {
@@ -28,18 +28,18 @@ class CreateDashboardRequest extends Request
      *     AwsAccountId: string,
      *     DashboardId: string,
      *     Name: string,
-     *     Parameters?: Shapes\Parameters,
-     *     Permissions?: list<Shapes\ResourcePermission>,
-     *     SourceEntity?: Shapes\DashboardSourceEntity,
-     *     Tags?: list<Shapes\Tag>,
-     *     VersionDescription?: string,
-     *     DashboardPublishOptions?: Shapes\DashboardPublishOptions,
-     *     ThemeArn?: string,
-     *     Definition?: Shapes\DashboardVersionDefinition,
-     *     ValidationStrategy?: Shapes\ValidationStrategy,
-     *     FolderArns?: list<string>,
-     *     LinkSharingConfiguration?: Shapes\LinkSharingConfiguration,
-     *     LinkEntities?: list<string>
+     *     Parameters?: Shapes\Parameters|null,
+     *     Permissions?: list<Shapes\ResourcePermission>|null,
+     *     SourceEntity?: Shapes\DashboardSourceEntity|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     VersionDescription?: string|null,
+     *     DashboardPublishOptions?: Shapes\DashboardPublishOptions|null,
+     *     ThemeArn?: string|null,
+     *     Definition?: Shapes\DashboardVersionDefinition|null,
+     *     ValidationStrategy?: Shapes\ValidationStrategy|null,
+     *     FolderArns?: list<string>|null,
+     *     LinkSharingConfiguration?: Shapes\LinkSharingConfiguration|null,
+     *     LinkEntities?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

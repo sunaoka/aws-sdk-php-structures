@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ManifestName
- * @property string $Url
+ * @property string|null $Url
  */
 class ListDashManifestConfiguration extends Shape
 {
     /**
      * @param array{
      *     ManifestName: string,
-     *     Url?: string
+     *     Url?: string|null
      * } $args
      */
     public function __construct(array $args)

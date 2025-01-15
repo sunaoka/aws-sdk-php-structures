@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $RecordId
- * @property bool $Encrypted
+ * @property bool|null $Encrypted
  */
 class PutRecordResponse extends Response
 {

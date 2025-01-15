@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTheme\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BorderStyle $Border
+ * @property BorderStyle|null $Border
  */
 class TileStyle extends Shape
 {
     /**
-     * @param array{Border?: BorderStyle} $args
+     * @param array{Border?: BorderStyle|null} $args
      */
     public function __construct(array $args = [])
     {

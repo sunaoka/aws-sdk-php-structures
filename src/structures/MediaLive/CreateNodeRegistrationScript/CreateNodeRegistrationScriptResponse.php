@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateNodeRegistrationScript;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NodeRegistrationScript
+ * @property string|null $NodeRegistrationScript
  */
 class CreateNodeRegistrationScriptResponse extends Response
 {

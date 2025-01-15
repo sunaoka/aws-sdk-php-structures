@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\UpdateApplicationResourceLifec
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MaxCountRule $MaxCountRule
- * @property MaxAgeRule $MaxAgeRule
+ * @property MaxCountRule|null $MaxCountRule
+ * @property MaxAgeRule|null $MaxAgeRule
  */
 class ApplicationVersionLifecycleConfig extends Shape
 {
     /**
      * @param array{
-     *     MaxCountRule?: MaxCountRule,
-     *     MaxAgeRule?: MaxAgeRule
+     *     MaxCountRule?: MaxCountRule|null,
+     *     MaxAgeRule?: MaxAgeRule|null
      * } $args
      */
     public function __construct(array $args = [])

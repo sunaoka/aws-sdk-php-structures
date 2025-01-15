@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property string $Ruleset
- * @property array<string, string> $Tags
- * @property Shapes\DataQualityTargetTable $TargetTable
- * @property string $DataQualitySecurityConfiguration
- * @property string $ClientToken
+ * @property array<string, string>|null $Tags
+ * @property Shapes\DataQualityTargetTable|null $TargetTable
+ * @property string|null $DataQualitySecurityConfiguration
+ * @property string|null $ClientToken
  */
 class CreateDataQualityRulesetRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Ruleset: string,
-     *     Tags?: array<string, string>,
-     *     TargetTable?: Shapes\DataQualityTargetTable,
-     *     DataQualitySecurityConfiguration?: string,
-     *     ClientToken?: string
+     *     Tags?: array<string, string>|null,
+     *     TargetTable?: Shapes\DataQualityTargetTable|null,
+     *     DataQualitySecurityConfiguration?: string|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

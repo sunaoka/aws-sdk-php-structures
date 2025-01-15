@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Subject
  * @property string $Body
  * @property string $ContentType
- * @property array<'REFERENCES'|'MESSAGE_ID'|'IN_REPLY_TO'|'X_SES_SPAM_VERDICT'|'X_SES_VIRUS_VERDICT', string> $Headers
+ * @property array<'REFERENCES'|'MESSAGE_ID'|'IN_REPLY_TO'|'X_SES_SPAM_VERDICT'|'X_SES_VIRUS_VERDICT', string>|null $Headers
  */
 class InboundRawMessage extends Shape
 {
@@ -17,7 +17,7 @@ class InboundRawMessage extends Shape
      *     Subject: string,
      *     Body: string,
      *     ContentType: string,
-     *     Headers?: array<'REFERENCES'|'MESSAGE_ID'|'IN_REPLY_TO'|'X_SES_SPAM_VERDICT'|'X_SES_VIRUS_VERDICT', string>
+     *     Headers?: array<'REFERENCES'|'MESSAGE_ID'|'IN_REPLY_TO'|'X_SES_SPAM_VERDICT'|'X_SES_VIRUS_VERDICT', string>|null
      * } $args
      */
     public function __construct(array $args)

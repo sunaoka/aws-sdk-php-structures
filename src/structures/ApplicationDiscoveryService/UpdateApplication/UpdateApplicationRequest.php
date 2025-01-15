@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $configurationId
- * @property string $name
- * @property string $description
- * @property string $wave
+ * @property string|null $name
+ * @property string|null $description
+ * @property string|null $wave
  */
 class UpdateApplicationRequest extends Request
 {
     /**
      * @param array{
      *     configurationId: string,
-     *     name?: string,
-     *     description?: string,
-     *     wave?: string
+     *     name?: string|null,
+     *     description?: string|null,
+     *     wave?: string|null
      * } $args
      */
     public function __construct(array $args)

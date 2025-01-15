@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $Type
- * @property string $Comment
- * @property array<string, string> $Parameters
+ * @property string|null $Type
+ * @property string|null $Comment
+ * @property array<string, string>|null $Parameters
  */
 class Column extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Type?: string,
-     *     Comment?: string,
-     *     Parameters?: array<string, string>
+     *     Type?: string|null,
+     *     Comment?: string|null,
+     *     Parameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetMulticastGroupSession;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\LoRaWANMulticastSession $LoRaWAN
+ * @property Shapes\LoRaWANMulticastSession|null $LoRaWAN
  */
 class GetMulticastGroupSessionResponse extends Response
 {

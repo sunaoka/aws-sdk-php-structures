@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $meshName
- * @property string $meshOwner
+ * @property string|null $meshOwner
  * @property string $virtualGatewayName
  */
 class DeleteVirtualGatewayRequest extends Request
@@ -14,7 +14,7 @@ class DeleteVirtualGatewayRequest extends Request
     /**
      * @param array{
      *     meshName: string,
-     *     meshOwner?: string,
+     *     meshOwner?: string|null,
      *     virtualGatewayName: string
      * } $args
      */

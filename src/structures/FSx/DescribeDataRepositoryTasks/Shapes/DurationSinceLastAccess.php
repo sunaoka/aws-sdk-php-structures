@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FSx\DescribeDataRepositoryTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DAYS' $Unit
- * @property int<0, max> $Value
+ * @property 'DAYS'|null $Unit
+ * @property int<0, max>|null $Value
  */
 class DurationSinceLastAccess extends Shape
 {
     /**
      * @param array{
-     *     Unit?: 'DAYS',
-     *     Value?: int<0, max>
+     *     Unit?: 'DAYS'|null,
+     *     Value?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

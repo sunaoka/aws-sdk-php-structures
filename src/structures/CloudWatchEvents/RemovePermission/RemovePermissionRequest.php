@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\RemovePermission;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StatementId
- * @property bool $RemoveAllPermissions
- * @property string $EventBusName
+ * @property string|null $StatementId
+ * @property bool|null $RemoveAllPermissions
+ * @property string|null $EventBusName
  */
 class RemovePermissionRequest extends Request
 {
     /**
      * @param array{
-     *     StatementId?: string,
-     *     RemoveAllPermissions?: bool,
-     *     EventBusName?: string
+     *     StatementId?: string|null,
+     *     RemoveAllPermissions?: bool|null,
+     *     EventBusName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

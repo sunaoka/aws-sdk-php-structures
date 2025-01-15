@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $securityProfileName
- * @property int $expectedVersion
+ * @property int|null $expectedVersion
  */
 class DeleteSecurityProfileRequest extends Request
 {
     /**
      * @param array{
      *     securityProfileName: string,
-     *     expectedVersion?: int
+     *     expectedVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

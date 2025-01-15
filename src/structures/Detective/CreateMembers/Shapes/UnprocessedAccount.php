@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Detective\CreateMembers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $Reason
+ * @property string|null $AccountId
+ * @property string|null $Reason
  */
 class UnprocessedAccount extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     Reason?: string
+     *     AccountId?: string|null,
+     *     Reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

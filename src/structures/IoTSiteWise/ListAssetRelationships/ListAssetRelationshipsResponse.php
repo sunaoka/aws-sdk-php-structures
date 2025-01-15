@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AssetRelationshipSummary> $assetRelationshipSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListAssetRelationshipsResponse extends Response
 {

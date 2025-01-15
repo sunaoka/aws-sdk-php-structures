@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeOptimizationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Image
- * @property array<string, string> $OverrideEnvironment
+ * @property string|null $Image
+ * @property array<string, string>|null $OverrideEnvironment
  */
 class ModelShardingConfig extends Shape
 {
     /**
      * @param array{
-     *     Image?: string,
-     *     OverrideEnvironment?: array<string, string>
+     *     Image?: string|null,
+     *     OverrideEnvironment?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

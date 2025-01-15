@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Inspector2\BatchGetFindingDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CisaData $cisaData
- * @property list<string> $cwes
- * @property double $epssScore
- * @property list<Evidence> $evidences
- * @property ExploitObserved $exploitObserved
- * @property string $findingArn
- * @property list<string> $referenceUrls
- * @property int $riskScore
- * @property list<string> $tools
- * @property list<string> $ttps
+ * @property CisaData|null $cisaData
+ * @property list<string>|null $cwes
+ * @property double|null $epssScore
+ * @property list<Evidence>|null $evidences
+ * @property ExploitObserved|null $exploitObserved
+ * @property string|null $findingArn
+ * @property list<string>|null $referenceUrls
+ * @property int|null $riskScore
+ * @property list<string>|null $tools
+ * @property list<string>|null $ttps
  */
 class FindingDetail extends Shape
 {
     /**
      * @param array{
-     *     cisaData?: CisaData,
-     *     cwes?: list<string>,
-     *     epssScore?: double,
-     *     evidences?: list<Evidence>,
-     *     exploitObserved?: ExploitObserved,
-     *     findingArn?: string,
-     *     referenceUrls?: list<string>,
-     *     riskScore?: int,
-     *     tools?: list<string>,
-     *     ttps?: list<string>
+     *     cisaData?: CisaData|null,
+     *     cwes?: list<string>|null,
+     *     epssScore?: double|null,
+     *     evidences?: list<Evidence>|null,
+     *     exploitObserved?: ExploitObserved|null,
+     *     findingArn?: string|null,
+     *     referenceUrls?: list<string>|null,
+     *     riskScore?: int|null,
+     *     tools?: list<string>|null,
+     *     ttps?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\OSIS\ListPipelines\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'STARTING'|'START_FAILED'|'STOPPING'|'STOPPED' $Status
- * @property PipelineStatusReason $StatusReason
- * @property string $PipelineName
- * @property string $PipelineArn
- * @property int<1, max> $MinUnits
- * @property int<1, max> $MaxUnits
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $LastUpdatedAt
- * @property list<PipelineDestination> $Destinations
- * @property list<Tag> $Tags
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'STARTING'|'START_FAILED'|'STOPPING'|'STOPPED'|null $Status
+ * @property PipelineStatusReason|null $StatusReason
+ * @property string|null $PipelineName
+ * @property string|null $PipelineArn
+ * @property int<1, max>|null $MinUnits
+ * @property int<1, max>|null $MaxUnits
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property list<PipelineDestination>|null $Destinations
+ * @property list<Tag>|null $Tags
  */
 class PipelineSummary extends Shape
 {
     /**
      * @param array{
-     *     Status?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'STARTING'|'START_FAILED'|'STOPPING'|'STOPPED',
-     *     StatusReason?: PipelineStatusReason,
-     *     PipelineName?: string,
-     *     PipelineArn?: string,
-     *     MinUnits?: int<1, max>,
-     *     MaxUnits?: int<1, max>,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     Destinations?: list<PipelineDestination>,
-     *     Tags?: list<Tag>
+     *     Status?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'STARTING'|'START_FAILED'|'STOPPING'|'STOPPED'|null,
+     *     StatusReason?: PipelineStatusReason|null,
+     *     PipelineName?: string|null,
+     *     PipelineArn?: string|null,
+     *     MinUnits?: int<1, max>|null,
+     *     MaxUnits?: int<1, max>|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     Destinations?: list<PipelineDestination>|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

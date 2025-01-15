@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudFormation\DescribeGeneratedTemplate\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceType
- * @property string $LogicalResourceId
- * @property array<string, string> $ResourceIdentifier
- * @property 'PENDING'|'IN_PROGRESS'|'FAILED'|'COMPLETE' $ResourceStatus
- * @property string $ResourceStatusReason
- * @property list<WarningDetail> $Warnings
+ * @property string|null $ResourceType
+ * @property string|null $LogicalResourceId
+ * @property array<string, string>|null $ResourceIdentifier
+ * @property 'PENDING'|'IN_PROGRESS'|'FAILED'|'COMPLETE'|null $ResourceStatus
+ * @property string|null $ResourceStatusReason
+ * @property list<WarningDetail>|null $Warnings
  */
 class ResourceDetail extends Shape
 {
     /**
      * @param array{
-     *     ResourceType?: string,
-     *     LogicalResourceId?: string,
-     *     ResourceIdentifier?: array<string, string>,
-     *     ResourceStatus?: 'PENDING'|'IN_PROGRESS'|'FAILED'|'COMPLETE',
-     *     ResourceStatusReason?: string,
-     *     Warnings?: list<WarningDetail>
+     *     ResourceType?: string|null,
+     *     LogicalResourceId?: string|null,
+     *     ResourceIdentifier?: array<string, string>|null,
+     *     ResourceStatus?: 'PENDING'|'IN_PROGRESS'|'FAILED'|'COMPLETE'|null,
+     *     ResourceStatusReason?: string|null,
+     *     Warnings?: list<WarningDetail>|null
      * } $args
      */
     public function __construct(array $args = [])

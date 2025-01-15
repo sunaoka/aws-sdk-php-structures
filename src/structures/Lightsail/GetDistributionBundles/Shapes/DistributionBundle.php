@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetDistributionBundles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bundleId
- * @property string $name
- * @property float $price
- * @property int $transferPerMonthInGb
- * @property bool $isActive
+ * @property string|null $bundleId
+ * @property string|null $name
+ * @property float|null $price
+ * @property int|null $transferPerMonthInGb
+ * @property bool|null $isActive
  */
 class DistributionBundle extends Shape
 {
     /**
      * @param array{
-     *     bundleId?: string,
-     *     name?: string,
-     *     price?: float,
-     *     transferPerMonthInGb?: int,
-     *     isActive?: bool
+     *     bundleId?: string|null,
+     *     name?: string|null,
+     *     price?: float|null,
+     *     transferPerMonthInGb?: int|null,
+     *     isActive?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

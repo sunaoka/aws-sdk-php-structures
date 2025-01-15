@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $apiId
  * @property 'SDL'|'JSON' $format
- * @property bool $includeDirectives
+ * @property bool|null $includeDirectives
  */
 class GetIntrospectionSchemaRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetIntrospectionSchemaRequest extends Request
      * @param array{
      *     apiId: string,
      *     format: 'SDL'|'JSON',
-     *     includeDirectives?: bool
+     *     includeDirectives?: bool|null
      * } $args
      */
     public function __construct(array $args)

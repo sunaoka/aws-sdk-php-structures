@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\SetDefaultMessageFeedbackEna
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ConfigurationSetArn
- * @property string $ConfigurationSetName
- * @property bool $MessageFeedbackEnabled
+ * @property string|null $ConfigurationSetArn
+ * @property string|null $ConfigurationSetName
+ * @property bool|null $MessageFeedbackEnabled
  */
 class SetDefaultMessageFeedbackEnabledResponse extends Response
 {

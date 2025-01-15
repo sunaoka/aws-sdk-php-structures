@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $TopicId
  * @property string $DatasetArn
- * @property string $DatasetName
+ * @property string|null $DatasetName
  * @property Shapes\TopicRefreshSchedule $RefreshSchedule
  */
 class CreateTopicRefreshScheduleRequest extends Request
@@ -18,7 +18,7 @@ class CreateTopicRefreshScheduleRequest extends Request
      *     AwsAccountId: string,
      *     TopicId: string,
      *     DatasetArn: string,
-     *     DatasetName?: string,
+     *     DatasetName?: string|null,
      *     RefreshSchedule: Shapes\TopicRefreshSchedule
      * } $args
      */

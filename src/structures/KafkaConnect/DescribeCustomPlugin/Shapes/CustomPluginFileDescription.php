@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\DescribeCustomPlugin\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $fileMd5
- * @property int $fileSize
+ * @property string|null $fileMd5
+ * @property int|null $fileSize
  */
 class CustomPluginFileDescription extends Shape
 {
     /**
      * @param array{
-     *     fileMd5?: string,
-     *     fileSize?: int
+     *     fileMd5?: string|null,
+     *     fileSize?: int|null
      * } $args
      */
     public function __construct(array $args = [])

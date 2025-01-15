@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ForecastQueryService\QueryForecast\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, list<DataPoint>> $Predictions
+ * @property array<string, list<DataPoint>>|null $Predictions
  */
 class Forecast extends Shape
 {
     /**
-     * @param array{Predictions?: array<string, list<DataPoint>>} $args
+     * @param array{Predictions?: array<string, list<DataPoint>>|null} $args
      */
     public function __construct(array $args = [])
     {

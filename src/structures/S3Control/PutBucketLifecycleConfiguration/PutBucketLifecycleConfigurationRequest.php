@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $Bucket
- * @property Shapes\LifecycleConfiguration $LifecycleConfiguration
+ * @property Shapes\LifecycleConfiguration|null $LifecycleConfiguration
  */
 class PutBucketLifecycleConfigurationRequest extends Request
 {
@@ -15,7 +15,7 @@ class PutBucketLifecycleConfigurationRequest extends Request
      * @param array{
      *     AccountId: string,
      *     Bucket: string,
-     *     LifecycleConfiguration?: Shapes\LifecycleConfiguration
+     *     LifecycleConfiguration?: Shapes\LifecycleConfiguration|null
      * } $args
      */
     public function __construct(array $args)

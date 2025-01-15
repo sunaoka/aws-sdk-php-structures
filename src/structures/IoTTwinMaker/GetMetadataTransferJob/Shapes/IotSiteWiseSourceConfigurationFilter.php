@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\GetMetadataTransferJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FilterByAssetModel $filterByAssetModel
- * @property FilterByAsset $filterByAsset
+ * @property FilterByAssetModel|null $filterByAssetModel
+ * @property FilterByAsset|null $filterByAsset
  */
 class IotSiteWiseSourceConfigurationFilter extends Shape
 {
     /**
      * @param array{
-     *     filterByAssetModel?: FilterByAssetModel,
-     *     filterByAsset?: FilterByAsset
+     *     filterByAssetModel?: FilterByAssetModel|null,
+     *     filterByAsset?: FilterByAsset|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\DeleteDomain;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $identifier
- * @property bool $skipDeletionCheck
+ * @property bool|null $skipDeletionCheck
  */
 class DeleteDomainRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     identifier: string,
-     *     skipDeletionCheck?: bool
+     *     skipDeletionCheck?: bool|null
      * } $args
      */
     public function __construct(array $args)

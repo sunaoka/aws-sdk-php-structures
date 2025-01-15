@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property list<string> $GlueIps
+ * @property list<string>|null $GlueIps
  */
 class Nameserver extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     GlueIps?: list<string>
+     *     GlueIps?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

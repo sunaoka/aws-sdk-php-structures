@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $country
- * @property string $state
+ * @property string|null $state
  */
 class Authority extends Shape
 {
     /**
      * @param array{
      *     country: string,
-     *     state?: string
+     *     state?: string|null
      * } $args
      */
     public function __construct(array $args)

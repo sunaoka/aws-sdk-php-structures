@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ImageSet $Primary
- * @property ImageSet $Favicon
+ * @property ImageSet|null $Favicon
  */
 class LogoSet extends Shape
 {
     /**
      * @param array{
      *     Primary: ImageSet,
-     *     Favicon?: ImageSet
+     *     Favicon?: ImageSet|null
      * } $args
      */
     public function __construct(array $args)

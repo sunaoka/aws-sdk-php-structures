@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property YAxisOptions $YAxisOptions
+ * @property YAxisOptions|null $YAxisOptions
  */
 class SingleAxisOptions extends Shape
 {
     /**
-     * @param array{YAxisOptions?: YAxisOptions} $args
+     * @param array{YAxisOptions?: YAxisOptions|null} $args
      */
     public function __construct(array $args = [])
     {

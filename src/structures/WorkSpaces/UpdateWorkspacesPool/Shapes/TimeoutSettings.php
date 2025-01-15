@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\UpdateWorkspacesPool\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<60, 36000> $DisconnectTimeoutInSeconds
- * @property int<0, 36000> $IdleDisconnectTimeoutInSeconds
- * @property int<600, 432000> $MaxUserDurationInSeconds
+ * @property int<60, 36000>|null $DisconnectTimeoutInSeconds
+ * @property int<0, 36000>|null $IdleDisconnectTimeoutInSeconds
+ * @property int<600, 432000>|null $MaxUserDurationInSeconds
  */
 class TimeoutSettings extends Shape
 {
     /**
      * @param array{
-     *     DisconnectTimeoutInSeconds?: int<60, 36000>,
-     *     IdleDisconnectTimeoutInSeconds?: int<0, 36000>,
-     *     MaxUserDurationInSeconds?: int<600, 432000>
+     *     DisconnectTimeoutInSeconds?: int<60, 36000>|null,
+     *     IdleDisconnectTimeoutInSeconds?: int<0, 36000>|null,
+     *     MaxUserDurationInSeconds?: int<600, 432000>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CloudFormation\BatchDescribeTypeConfigurations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Alias
- * @property string $Configuration
- * @property \Aws\Api\DateTimeResult $LastUpdated
- * @property string $TypeArn
- * @property string $TypeName
- * @property bool $IsDefaultConfiguration
+ * @property string|null $Arn
+ * @property string|null $Alias
+ * @property string|null $Configuration
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property string|null $TypeArn
+ * @property string|null $TypeName
+ * @property bool|null $IsDefaultConfiguration
  */
 class TypeConfigurationDetails extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Alias?: string,
-     *     Configuration?: string,
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
-     *     TypeArn?: string,
-     *     TypeName?: string,
-     *     IsDefaultConfiguration?: bool
+     *     Arn?: string|null,
+     *     Alias?: string|null,
+     *     Configuration?: string|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     TypeArn?: string|null,
+     *     TypeName?: string|null,
+     *     IsDefaultConfiguration?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

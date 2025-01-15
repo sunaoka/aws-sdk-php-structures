@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property string $name
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $expiresAt
- * @property 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS' $rateType
- * @property \Aws\Api\DateTimeResult $rateTimestamp
- * @property 'UPDATING'|'VALID'|'INVALID'|'ACTION_NEEDED' $status
- * @property double $totalCost
- * @property 'USD' $costCurrency
- * @property string $failureMessage
+ * @property string|null $name
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $expiresAt
+ * @property 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS'|null $rateType
+ * @property \Aws\Api\DateTimeResult|null $rateTimestamp
+ * @property 'UPDATING'|'VALID'|'INVALID'|'ACTION_NEEDED'|null $status
+ * @property double|null $totalCost
+ * @property 'USD'|null $costCurrency
+ * @property string|null $failureMessage
  */
 class WorkloadEstimateSummary extends Shape
 {
     /**
      * @param array{
      *     id: string,
-     *     name?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     expiresAt?: \Aws\Api\DateTimeResult,
-     *     rateType?: 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS',
-     *     rateTimestamp?: \Aws\Api\DateTimeResult,
-     *     status?: 'UPDATING'|'VALID'|'INVALID'|'ACTION_NEEDED',
-     *     totalCost?: double,
-     *     costCurrency?: 'USD',
-     *     failureMessage?: string
+     *     name?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     expiresAt?: \Aws\Api\DateTimeResult|null,
+     *     rateType?: 'BEFORE_DISCOUNTS'|'AFTER_DISCOUNTS'|null,
+     *     rateTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'UPDATING'|'VALID'|'INVALID'|'ACTION_NEEDED'|null,
+     *     totalCost?: double|null,
+     *     costCurrency?: 'USD'|null,
+     *     failureMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

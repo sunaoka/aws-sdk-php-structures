@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetRemainingFreeTrialDays\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $FreeTrialDaysRemaining
+ * @property int|null $FreeTrialDaysRemaining
  */
 class DataSourceFreeTrial extends Shape
 {
     /**
-     * @param array{FreeTrialDaysRemaining?: int} $args
+     * @param array{FreeTrialDaysRemaining?: int|null} $args
      */
     public function __construct(array $args = [])
     {

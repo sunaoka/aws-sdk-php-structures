@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TransitGatewayAttachmentId
- * @property list<string> $AddSubnetIds
- * @property list<string> $RemoveSubnetIds
- * @property Shapes\ModifyTransitGatewayVpcAttachmentRequestOptions $Options
- * @property bool $DryRun
+ * @property list<string>|null $AddSubnetIds
+ * @property list<string>|null $RemoveSubnetIds
+ * @property Shapes\ModifyTransitGatewayVpcAttachmentRequestOptions|null $Options
+ * @property bool|null $DryRun
  */
 class ModifyTransitGatewayVpcAttachmentRequest extends Request
 {
     /**
      * @param array{
      *     TransitGatewayAttachmentId: string,
-     *     AddSubnetIds?: list<string>,
-     *     RemoveSubnetIds?: list<string>,
-     *     Options?: Shapes\ModifyTransitGatewayVpcAttachmentRequestOptions,
-     *     DryRun?: bool
+     *     AddSubnetIds?: list<string>|null,
+     *     RemoveSubnetIds?: list<string>|null,
+     *     Options?: Shapes\ModifyTransitGatewayVpcAttachmentRequestOptions|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

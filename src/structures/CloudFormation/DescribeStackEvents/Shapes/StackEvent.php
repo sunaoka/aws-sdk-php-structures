@@ -8,20 +8,20 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $StackId
  * @property string $EventId
  * @property string $StackName
- * @property string $LogicalResourceId
- * @property string $PhysicalResourceId
- * @property string $ResourceType
+ * @property string|null $LogicalResourceId
+ * @property string|null $PhysicalResourceId
+ * @property string|null $ResourceType
  * @property \Aws\Api\DateTimeResult $Timestamp
- * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATE_COMPLETE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'DELETE_SKIPPED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_COMPLETE'|'IMPORT_FAILED'|'IMPORT_COMPLETE'|'IMPORT_IN_PROGRESS'|'IMPORT_ROLLBACK_IN_PROGRESS'|'IMPORT_ROLLBACK_FAILED'|'IMPORT_ROLLBACK_COMPLETE'|'UPDATE_ROLLBACK_IN_PROGRESS'|'UPDATE_ROLLBACK_COMPLETE'|'UPDATE_ROLLBACK_FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETE'|'ROLLBACK_FAILED' $ResourceStatus
- * @property string $ResourceStatusReason
- * @property string $ResourceProperties
- * @property string $ClientRequestToken
- * @property string $HookType
- * @property 'HOOK_IN_PROGRESS'|'HOOK_COMPLETE_SUCCEEDED'|'HOOK_COMPLETE_FAILED'|'HOOK_FAILED' $HookStatus
- * @property string $HookStatusReason
- * @property 'PRE_PROVISION' $HookInvocationPoint
- * @property 'FAIL'|'WARN' $HookFailureMode
- * @property 'CONFIGURATION_COMPLETE'|'VALIDATION_FAILED' $DetailedStatus
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATE_COMPLETE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'DELETE_SKIPPED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_COMPLETE'|'IMPORT_FAILED'|'IMPORT_COMPLETE'|'IMPORT_IN_PROGRESS'|'IMPORT_ROLLBACK_IN_PROGRESS'|'IMPORT_ROLLBACK_FAILED'|'IMPORT_ROLLBACK_COMPLETE'|'UPDATE_ROLLBACK_IN_PROGRESS'|'UPDATE_ROLLBACK_COMPLETE'|'UPDATE_ROLLBACK_FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETE'|'ROLLBACK_FAILED'|null $ResourceStatus
+ * @property string|null $ResourceStatusReason
+ * @property string|null $ResourceProperties
+ * @property string|null $ClientRequestToken
+ * @property string|null $HookType
+ * @property 'HOOK_IN_PROGRESS'|'HOOK_COMPLETE_SUCCEEDED'|'HOOK_COMPLETE_FAILED'|'HOOK_FAILED'|null $HookStatus
+ * @property string|null $HookStatusReason
+ * @property 'PRE_PROVISION'|null $HookInvocationPoint
+ * @property 'FAIL'|'WARN'|null $HookFailureMode
+ * @property 'CONFIGURATION_COMPLETE'|'VALIDATION_FAILED'|null $DetailedStatus
  */
 class StackEvent extends Shape
 {
@@ -30,20 +30,20 @@ class StackEvent extends Shape
      *     StackId: string,
      *     EventId: string,
      *     StackName: string,
-     *     LogicalResourceId?: string,
-     *     PhysicalResourceId?: string,
-     *     ResourceType?: string,
+     *     LogicalResourceId?: string|null,
+     *     PhysicalResourceId?: string|null,
+     *     ResourceType?: string|null,
      *     Timestamp: \Aws\Api\DateTimeResult,
-     *     ResourceStatus?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATE_COMPLETE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'DELETE_SKIPPED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_COMPLETE'|'IMPORT_FAILED'|'IMPORT_COMPLETE'|'IMPORT_IN_PROGRESS'|'IMPORT_ROLLBACK_IN_PROGRESS'|'IMPORT_ROLLBACK_FAILED'|'IMPORT_ROLLBACK_COMPLETE'|'UPDATE_ROLLBACK_IN_PROGRESS'|'UPDATE_ROLLBACK_COMPLETE'|'UPDATE_ROLLBACK_FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETE'|'ROLLBACK_FAILED',
-     *     ResourceStatusReason?: string,
-     *     ResourceProperties?: string,
-     *     ClientRequestToken?: string,
-     *     HookType?: string,
-     *     HookStatus?: 'HOOK_IN_PROGRESS'|'HOOK_COMPLETE_SUCCEEDED'|'HOOK_COMPLETE_FAILED'|'HOOK_FAILED',
-     *     HookStatusReason?: string,
-     *     HookInvocationPoint?: 'PRE_PROVISION',
-     *     HookFailureMode?: 'FAIL'|'WARN',
-     *     DetailedStatus?: 'CONFIGURATION_COMPLETE'|'VALIDATION_FAILED'
+     *     ResourceStatus?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'CREATE_COMPLETE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'DELETE_SKIPPED'|'UPDATE_IN_PROGRESS'|'UPDATE_FAILED'|'UPDATE_COMPLETE'|'IMPORT_FAILED'|'IMPORT_COMPLETE'|'IMPORT_IN_PROGRESS'|'IMPORT_ROLLBACK_IN_PROGRESS'|'IMPORT_ROLLBACK_FAILED'|'IMPORT_ROLLBACK_COMPLETE'|'UPDATE_ROLLBACK_IN_PROGRESS'|'UPDATE_ROLLBACK_COMPLETE'|'UPDATE_ROLLBACK_FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETE'|'ROLLBACK_FAILED'|null,
+     *     ResourceStatusReason?: string|null,
+     *     ResourceProperties?: string|null,
+     *     ClientRequestToken?: string|null,
+     *     HookType?: string|null,
+     *     HookStatus?: 'HOOK_IN_PROGRESS'|'HOOK_COMPLETE_SUCCEEDED'|'HOOK_COMPLETE_FAILED'|'HOOK_FAILED'|null,
+     *     HookStatusReason?: string|null,
+     *     HookInvocationPoint?: 'PRE_PROVISION'|null,
+     *     HookFailureMode?: 'FAIL'|'WARN'|null,
+     *     DetailedStatus?: 'CONFIGURATION_COMPLETE'|'VALIDATION_FAILED'|null
      * } $args
      */
     public function __construct(array $args)

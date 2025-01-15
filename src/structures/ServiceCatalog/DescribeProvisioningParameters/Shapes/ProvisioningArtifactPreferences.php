@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProvisioningParameters\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $StackSetAccounts
- * @property list<string> $StackSetRegions
+ * @property list<string>|null $StackSetAccounts
+ * @property list<string>|null $StackSetRegions
  */
 class ProvisioningArtifactPreferences extends Shape
 {
     /**
      * @param array{
-     *     StackSetAccounts?: list<string>,
-     *     StackSetRegions?: list<string>
+     *     StackSetAccounts?: list<string>|null,
+     *     StackSetRegions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

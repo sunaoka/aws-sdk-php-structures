@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $KeyName
  * @property \Aws\Api\DateTimeResult $ExpireTime
- * @property string $Description
+ * @property string|null $Description
  * @property ApiKeyRestrictions $Restrictions
  * @property \Aws\Api\DateTimeResult $CreateTime
  * @property \Aws\Api\DateTimeResult $UpdateTime
@@ -18,7 +18,7 @@ class ListKeysResponseEntry extends Shape
      * @param array{
      *     KeyName: string,
      *     ExpireTime: \Aws\Api\DateTimeResult,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Restrictions: ApiKeyRestrictions,
      *     CreateTime: \Aws\Api\DateTimeResult,
      *     UpdateTime: \Aws\Api\DateTimeResult

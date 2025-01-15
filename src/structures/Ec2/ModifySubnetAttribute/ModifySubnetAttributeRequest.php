@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifySubnetAttribute;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\AttributeBooleanValue $AssignIpv6AddressOnCreation
- * @property Shapes\AttributeBooleanValue $MapPublicIpOnLaunch
+ * @property Shapes\AttributeBooleanValue|null $AssignIpv6AddressOnCreation
+ * @property Shapes\AttributeBooleanValue|null $MapPublicIpOnLaunch
  * @property string $SubnetId
- * @property Shapes\AttributeBooleanValue $MapCustomerOwnedIpOnLaunch
- * @property string $CustomerOwnedIpv4Pool
- * @property Shapes\AttributeBooleanValue $EnableDns64
- * @property 'ip-name'|'resource-name' $PrivateDnsHostnameTypeOnLaunch
- * @property Shapes\AttributeBooleanValue $EnableResourceNameDnsARecordOnLaunch
- * @property Shapes\AttributeBooleanValue $EnableResourceNameDnsAAAARecordOnLaunch
- * @property int $EnableLniAtDeviceIndex
- * @property Shapes\AttributeBooleanValue $DisableLniAtDeviceIndex
+ * @property Shapes\AttributeBooleanValue|null $MapCustomerOwnedIpOnLaunch
+ * @property string|null $CustomerOwnedIpv4Pool
+ * @property Shapes\AttributeBooleanValue|null $EnableDns64
+ * @property 'ip-name'|'resource-name'|null $PrivateDnsHostnameTypeOnLaunch
+ * @property Shapes\AttributeBooleanValue|null $EnableResourceNameDnsARecordOnLaunch
+ * @property Shapes\AttributeBooleanValue|null $EnableResourceNameDnsAAAARecordOnLaunch
+ * @property int|null $EnableLniAtDeviceIndex
+ * @property Shapes\AttributeBooleanValue|null $DisableLniAtDeviceIndex
  */
 class ModifySubnetAttributeRequest extends Request
 {
     /**
      * @param array{
-     *     AssignIpv6AddressOnCreation?: Shapes\AttributeBooleanValue,
-     *     MapPublicIpOnLaunch?: Shapes\AttributeBooleanValue,
+     *     AssignIpv6AddressOnCreation?: Shapes\AttributeBooleanValue|null,
+     *     MapPublicIpOnLaunch?: Shapes\AttributeBooleanValue|null,
      *     SubnetId: string,
-     *     MapCustomerOwnedIpOnLaunch?: Shapes\AttributeBooleanValue,
-     *     CustomerOwnedIpv4Pool?: string,
-     *     EnableDns64?: Shapes\AttributeBooleanValue,
-     *     PrivateDnsHostnameTypeOnLaunch?: 'ip-name'|'resource-name',
-     *     EnableResourceNameDnsARecordOnLaunch?: Shapes\AttributeBooleanValue,
-     *     EnableResourceNameDnsAAAARecordOnLaunch?: Shapes\AttributeBooleanValue,
-     *     EnableLniAtDeviceIndex?: int,
-     *     DisableLniAtDeviceIndex?: Shapes\AttributeBooleanValue
+     *     MapCustomerOwnedIpOnLaunch?: Shapes\AttributeBooleanValue|null,
+     *     CustomerOwnedIpv4Pool?: string|null,
+     *     EnableDns64?: Shapes\AttributeBooleanValue|null,
+     *     PrivateDnsHostnameTypeOnLaunch?: 'ip-name'|'resource-name'|null,
+     *     EnableResourceNameDnsARecordOnLaunch?: Shapes\AttributeBooleanValue|null,
+     *     EnableResourceNameDnsAAAARecordOnLaunch?: Shapes\AttributeBooleanValue|null,
+     *     EnableLniAtDeviceIndex?: int|null,
+     *     DisableLniAtDeviceIndex?: Shapes\AttributeBooleanValue|null
      * } $args
      */
     public function __construct(array $args)

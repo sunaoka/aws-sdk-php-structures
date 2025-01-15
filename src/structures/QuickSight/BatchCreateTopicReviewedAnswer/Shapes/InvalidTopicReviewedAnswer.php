@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\BatchCreateTopicReviewedAnswer\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AnswerId
- * @property 'INTERNAL_ERROR'|'MISSING_ANSWER'|'DATASET_DOES_NOT_EXIST'|'INVALID_DATASET_ARN'|'DUPLICATED_ANSWER'|'INVALID_DATA'|'MISSING_REQUIRED_FIELDS' $Error
+ * @property string|null $AnswerId
+ * @property 'INTERNAL_ERROR'|'MISSING_ANSWER'|'DATASET_DOES_NOT_EXIST'|'INVALID_DATASET_ARN'|'DUPLICATED_ANSWER'|'INVALID_DATA'|'MISSING_REQUIRED_FIELDS'|null $Error
  */
 class InvalidTopicReviewedAnswer extends Shape
 {
     /**
      * @param array{
-     *     AnswerId?: string,
-     *     Error?: 'INTERNAL_ERROR'|'MISSING_ANSWER'|'DATASET_DOES_NOT_EXIST'|'INVALID_DATASET_ARN'|'DUPLICATED_ANSWER'|'INVALID_DATA'|'MISSING_REQUIRED_FIELDS'
+     *     AnswerId?: string|null,
+     *     Error?: 'INTERNAL_ERROR'|'MISSING_ANSWER'|'DATASET_DOES_NOT_EXIST'|'INVALID_DATASET_ARN'|'DUPLICATED_ANSWER'|'INVALID_DATA'|'MISSING_REQUIRED_FIELDS'|null
      * } $args
      */
     public function __construct(array $args = [])

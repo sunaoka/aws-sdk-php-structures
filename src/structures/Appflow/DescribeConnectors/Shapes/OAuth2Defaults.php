@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeConnectors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $oauthScopes
- * @property list<string> $tokenUrls
- * @property list<string> $authCodeUrls
- * @property list<'CLIENT_CREDENTIALS'|'AUTHORIZATION_CODE'|'JWT_BEARER'> $oauth2GrantTypesSupported
- * @property list<OAuth2CustomParameter> $oauth2CustomProperties
+ * @property list<string>|null $oauthScopes
+ * @property list<string>|null $tokenUrls
+ * @property list<string>|null $authCodeUrls
+ * @property list<'CLIENT_CREDENTIALS'|'AUTHORIZATION_CODE'|'JWT_BEARER'>|null $oauth2GrantTypesSupported
+ * @property list<OAuth2CustomParameter>|null $oauth2CustomProperties
  */
 class OAuth2Defaults extends Shape
 {
     /**
      * @param array{
-     *     oauthScopes?: list<string>,
-     *     tokenUrls?: list<string>,
-     *     authCodeUrls?: list<string>,
-     *     oauth2GrantTypesSupported?: list<'CLIENT_CREDENTIALS'|'AUTHORIZATION_CODE'|'JWT_BEARER'>,
-     *     oauth2CustomProperties?: list<OAuth2CustomParameter>
+     *     oauthScopes?: list<string>|null,
+     *     tokenUrls?: list<string>|null,
+     *     authCodeUrls?: list<string>|null,
+     *     oauth2GrantTypesSupported?: list<'CLIENT_CREDENTIALS'|'AUTHORIZATION_CODE'|'JWT_BEARER'>|null,
+     *     oauth2CustomProperties?: list<OAuth2CustomParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

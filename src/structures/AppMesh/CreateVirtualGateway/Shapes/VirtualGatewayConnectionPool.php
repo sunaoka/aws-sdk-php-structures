@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppMesh\CreateVirtualGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualGatewayGrpcConnectionPool $grpc
- * @property VirtualGatewayHttpConnectionPool $http
- * @property VirtualGatewayHttp2ConnectionPool $http2
+ * @property VirtualGatewayGrpcConnectionPool|null $grpc
+ * @property VirtualGatewayHttpConnectionPool|null $http
+ * @property VirtualGatewayHttp2ConnectionPool|null $http2
  */
 class VirtualGatewayConnectionPool extends Shape
 {
     /**
      * @param array{
-     *     grpc?: VirtualGatewayGrpcConnectionPool,
-     *     http?: VirtualGatewayHttpConnectionPool,
-     *     http2?: VirtualGatewayHttp2ConnectionPool
+     *     grpc?: VirtualGatewayGrpcConnectionPool|null,
+     *     http?: VirtualGatewayHttpConnectionPool|null,
+     *     http2?: VirtualGatewayHttp2ConnectionPool|null
      * } $args
      */
     public function __construct(array $args = [])

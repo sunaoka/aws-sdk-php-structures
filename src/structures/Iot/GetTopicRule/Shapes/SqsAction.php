@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $roleArn
  * @property string $queueUrl
- * @property bool $useBase64
+ * @property bool|null $useBase64
  */
 class SqsAction extends Shape
 {
@@ -15,7 +15,7 @@ class SqsAction extends Shape
      * @param array{
      *     roleArn: string,
      *     queueUrl: string,
-     *     useBase64?: bool
+     *     useBase64?: bool|null
      * } $args
      */
     public function __construct(array $args)

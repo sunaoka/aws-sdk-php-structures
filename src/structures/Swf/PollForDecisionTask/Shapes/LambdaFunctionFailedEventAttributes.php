@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int $scheduledEventId
  * @property int $startedEventId
- * @property string $reason
- * @property string $details
+ * @property string|null $reason
+ * @property string|null $details
  */
 class LambdaFunctionFailedEventAttributes extends Shape
 {
@@ -16,8 +16,8 @@ class LambdaFunctionFailedEventAttributes extends Shape
      * @param array{
      *     scheduledEventId: int,
      *     startedEventId: int,
-     *     reason?: string,
-     *     details?: string
+     *     reason?: string|null,
+     *     details?: string|null
      * } $args
      */
     public function __construct(array $args)

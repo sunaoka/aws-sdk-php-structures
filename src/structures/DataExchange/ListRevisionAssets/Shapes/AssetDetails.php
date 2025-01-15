@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DataExchange\ListRevisionAssets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3SnapshotAsset $S3SnapshotAsset
- * @property RedshiftDataShareAsset $RedshiftDataShareAsset
- * @property ApiGatewayApiAsset $ApiGatewayApiAsset
- * @property S3DataAccessAsset $S3DataAccessAsset
- * @property LakeFormationDataPermissionAsset $LakeFormationDataPermissionAsset
+ * @property S3SnapshotAsset|null $S3SnapshotAsset
+ * @property RedshiftDataShareAsset|null $RedshiftDataShareAsset
+ * @property ApiGatewayApiAsset|null $ApiGatewayApiAsset
+ * @property S3DataAccessAsset|null $S3DataAccessAsset
+ * @property LakeFormationDataPermissionAsset|null $LakeFormationDataPermissionAsset
  */
 class AssetDetails extends Shape
 {
     /**
      * @param array{
-     *     S3SnapshotAsset?: S3SnapshotAsset,
-     *     RedshiftDataShareAsset?: RedshiftDataShareAsset,
-     *     ApiGatewayApiAsset?: ApiGatewayApiAsset,
-     *     S3DataAccessAsset?: S3DataAccessAsset,
-     *     LakeFormationDataPermissionAsset?: LakeFormationDataPermissionAsset
+     *     S3SnapshotAsset?: S3SnapshotAsset|null,
+     *     RedshiftDataShareAsset?: RedshiftDataShareAsset|null,
+     *     ApiGatewayApiAsset?: ApiGatewayApiAsset|null,
+     *     S3DataAccessAsset?: S3DataAccessAsset|null,
+     *     LakeFormationDataPermissionAsset?: LakeFormationDataPermissionAsset|null
      * } $args
      */
     public function __construct(array $args = [])

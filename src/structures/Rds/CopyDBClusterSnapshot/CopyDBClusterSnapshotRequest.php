@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SourceDBClusterSnapshotIdentifier
  * @property string $TargetDBClusterSnapshotIdentifier
- * @property string $KmsKeyId
- * @property string $PreSignedUrl
- * @property string $DestinationRegion
- * @property bool $CopyTags
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $KmsKeyId
+ * @property string|null $PreSignedUrl
+ * @property string|null $DestinationRegion
+ * @property bool|null $CopyTags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CopyDBClusterSnapshotRequest extends Request
 {
@@ -19,11 +19,11 @@ class CopyDBClusterSnapshotRequest extends Request
      * @param array{
      *     SourceDBClusterSnapshotIdentifier: string,
      *     TargetDBClusterSnapshotIdentifier: string,
-     *     KmsKeyId?: string,
-     *     PreSignedUrl?: string,
-     *     DestinationRegion?: string,
-     *     CopyTags?: bool,
-     *     Tags?: list<Shapes\Tag>
+     *     KmsKeyId?: string|null,
+     *     PreSignedUrl?: string|null,
+     *     DestinationRegion?: string|null,
+     *     CopyTags?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

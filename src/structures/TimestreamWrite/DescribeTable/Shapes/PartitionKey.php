@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DIMENSION'|'MEASURE' $Type
- * @property string $Name
- * @property 'REQUIRED'|'OPTIONAL' $EnforcementInRecord
+ * @property string|null $Name
+ * @property 'REQUIRED'|'OPTIONAL'|null $EnforcementInRecord
  */
 class PartitionKey extends Shape
 {
     /**
      * @param array{
      *     Type: 'DIMENSION'|'MEASURE',
-     *     Name?: string,
-     *     EnforcementInRecord?: 'REQUIRED'|'OPTIONAL'
+     *     Name?: string|null,
+     *     EnforcementInRecord?: 'REQUIRED'|'OPTIONAL'|null
      * } $args
      */
     public function __construct(array $args)

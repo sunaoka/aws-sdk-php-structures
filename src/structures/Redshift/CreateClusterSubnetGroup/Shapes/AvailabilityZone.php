@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Redshift\CreateClusterSubnetGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property list<SupportedPlatform> $SupportedPlatforms
+ * @property string|null $Name
+ * @property list<SupportedPlatform>|null $SupportedPlatforms
  */
 class AvailabilityZone extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     SupportedPlatforms?: list<SupportedPlatform>
+     *     Name?: string|null,
+     *     SupportedPlatforms?: list<SupportedPlatform>|null
      * } $args
      */
     public function __construct(array $args = [])

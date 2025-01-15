@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Glue\GetIntegrationResourceProperty\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RoleArn
+ * @property string|null $RoleArn
  */
 class SourceProcessingProperties extends Shape
 {
     /**
-     * @param array{RoleArn?: string} $args
+     * @param array{RoleArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

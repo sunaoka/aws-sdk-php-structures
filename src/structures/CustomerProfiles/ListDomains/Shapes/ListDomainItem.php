@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DomainName
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $LastUpdatedAt
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class ListDomainItem extends Shape
 {
@@ -17,7 +17,7 @@ class ListDomainItem extends Shape
      *     DomainName: string,
      *     CreatedAt: \Aws\Api\DateTimeResult,
      *     LastUpdatedAt: \Aws\Api\DateTimeResult,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

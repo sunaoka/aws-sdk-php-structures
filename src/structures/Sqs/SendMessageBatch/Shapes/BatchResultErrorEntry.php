@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property bool $SenderFault
  * @property string $Code
- * @property string $Message
+ * @property string|null $Message
  */
 class BatchResultErrorEntry extends Shape
 {
@@ -17,7 +17,7 @@ class BatchResultErrorEntry extends Shape
      *     Id: string,
      *     SenderFault: bool,
      *     Code: string,
-     *     Message?: string
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\InputDataConfig $InputDataConfig
  * @property Shapes\OutputDataConfig $OutputDataConfig
  * @property string $DataAccessRoleArn
- * @property string $JobName
- * @property string $EntityRecognizerArn
+ * @property string|null $JobName
+ * @property string|null $EntityRecognizerArn
  * @property 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW' $LanguageCode
- * @property string $ClientRequestToken
- * @property string $VolumeKmsKeyId
- * @property Shapes\VpcConfig $VpcConfig
- * @property list<Shapes\Tag> $Tags
- * @property string $FlywheelArn
+ * @property string|null $ClientRequestToken
+ * @property string|null $VolumeKmsKeyId
+ * @property Shapes\VpcConfig|null $VpcConfig
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $FlywheelArn
  */
 class StartEntitiesDetectionJobRequest extends Request
 {
@@ -24,14 +24,14 @@ class StartEntitiesDetectionJobRequest extends Request
      *     InputDataConfig: Shapes\InputDataConfig,
      *     OutputDataConfig: Shapes\OutputDataConfig,
      *     DataAccessRoleArn: string,
-     *     JobName?: string,
-     *     EntityRecognizerArn?: string,
+     *     JobName?: string|null,
+     *     EntityRecognizerArn?: string|null,
      *     LanguageCode: 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW',
-     *     ClientRequestToken?: string,
-     *     VolumeKmsKeyId?: string,
-     *     VpcConfig?: Shapes\VpcConfig,
-     *     Tags?: list<Shapes\Tag>,
-     *     FlywheelArn?: string
+     *     ClientRequestToken?: string|null,
+     *     VolumeKmsKeyId?: string|null,
+     *     VpcConfig?: Shapes\VpcConfig|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     FlywheelArn?: string|null
      * } $args
      */
     public function __construct(array $args)

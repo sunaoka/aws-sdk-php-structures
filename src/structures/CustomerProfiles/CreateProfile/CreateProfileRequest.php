@@ -6,58 +6,58 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $AccountNumber
- * @property string $AdditionalInformation
- * @property 'INDIVIDUAL'|'BUSINESS'|'OTHER' $PartyType
- * @property string $BusinessName
- * @property string $FirstName
- * @property string $MiddleName
- * @property string $LastName
- * @property string $BirthDate
- * @property 'MALE'|'FEMALE'|'UNSPECIFIED' $Gender
- * @property string $PhoneNumber
- * @property string $MobilePhoneNumber
- * @property string $HomePhoneNumber
- * @property string $BusinessPhoneNumber
- * @property string $EmailAddress
- * @property string $PersonalEmailAddress
- * @property string $BusinessEmailAddress
- * @property Shapes\Address $Address
- * @property Shapes\Address $ShippingAddress
- * @property Shapes\Address $MailingAddress
- * @property Shapes\Address $BillingAddress
- * @property array<string, string> $Attributes
- * @property string $PartyTypeString
- * @property string $GenderString
+ * @property string|null $AccountNumber
+ * @property string|null $AdditionalInformation
+ * @property 'INDIVIDUAL'|'BUSINESS'|'OTHER'|null $PartyType
+ * @property string|null $BusinessName
+ * @property string|null $FirstName
+ * @property string|null $MiddleName
+ * @property string|null $LastName
+ * @property string|null $BirthDate
+ * @property 'MALE'|'FEMALE'|'UNSPECIFIED'|null $Gender
+ * @property string|null $PhoneNumber
+ * @property string|null $MobilePhoneNumber
+ * @property string|null $HomePhoneNumber
+ * @property string|null $BusinessPhoneNumber
+ * @property string|null $EmailAddress
+ * @property string|null $PersonalEmailAddress
+ * @property string|null $BusinessEmailAddress
+ * @property Shapes\Address|null $Address
+ * @property Shapes\Address|null $ShippingAddress
+ * @property Shapes\Address|null $MailingAddress
+ * @property Shapes\Address|null $BillingAddress
+ * @property array<string, string>|null $Attributes
+ * @property string|null $PartyTypeString
+ * @property string|null $GenderString
  */
 class CreateProfileRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     AccountNumber?: string,
-     *     AdditionalInformation?: string,
-     *     PartyType?: 'INDIVIDUAL'|'BUSINESS'|'OTHER',
-     *     BusinessName?: string,
-     *     FirstName?: string,
-     *     MiddleName?: string,
-     *     LastName?: string,
-     *     BirthDate?: string,
-     *     Gender?: 'MALE'|'FEMALE'|'UNSPECIFIED',
-     *     PhoneNumber?: string,
-     *     MobilePhoneNumber?: string,
-     *     HomePhoneNumber?: string,
-     *     BusinessPhoneNumber?: string,
-     *     EmailAddress?: string,
-     *     PersonalEmailAddress?: string,
-     *     BusinessEmailAddress?: string,
-     *     Address?: Shapes\Address,
-     *     ShippingAddress?: Shapes\Address,
-     *     MailingAddress?: Shapes\Address,
-     *     BillingAddress?: Shapes\Address,
-     *     Attributes?: array<string, string>,
-     *     PartyTypeString?: string,
-     *     GenderString?: string
+     *     AccountNumber?: string|null,
+     *     AdditionalInformation?: string|null,
+     *     PartyType?: 'INDIVIDUAL'|'BUSINESS'|'OTHER'|null,
+     *     BusinessName?: string|null,
+     *     FirstName?: string|null,
+     *     MiddleName?: string|null,
+     *     LastName?: string|null,
+     *     BirthDate?: string|null,
+     *     Gender?: 'MALE'|'FEMALE'|'UNSPECIFIED'|null,
+     *     PhoneNumber?: string|null,
+     *     MobilePhoneNumber?: string|null,
+     *     HomePhoneNumber?: string|null,
+     *     BusinessPhoneNumber?: string|null,
+     *     EmailAddress?: string|null,
+     *     PersonalEmailAddress?: string|null,
+     *     BusinessEmailAddress?: string|null,
+     *     Address?: Shapes\Address|null,
+     *     ShippingAddress?: Shapes\Address|null,
+     *     MailingAddress?: Shapes\Address|null,
+     *     BillingAddress?: Shapes\Address|null,
+     *     Attributes?: array<string, string>|null,
+     *     PartyTypeString?: string|null,
+     *     GenderString?: string|null
      * } $args
      */
     public function __construct(array $args)

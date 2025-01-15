@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityLake\GetDataLakeSources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $account
- * @property list<string> $eventClasses
- * @property string $sourceName
- * @property list<DataLakeSourceStatus> $sourceStatuses
+ * @property string|null $account
+ * @property list<string>|null $eventClasses
+ * @property string|null $sourceName
+ * @property list<DataLakeSourceStatus>|null $sourceStatuses
  */
 class DataLakeSource extends Shape
 {
     /**
      * @param array{
-     *     account?: string,
-     *     eventClasses?: list<string>,
-     *     sourceName?: string,
-     *     sourceStatuses?: list<DataLakeSourceStatus>
+     *     account?: string|null,
+     *     eventClasses?: list<string>|null,
+     *     sourceName?: string|null,
+     *     sourceStatuses?: list<DataLakeSourceStatus>|null
      * } $args
      */
     public function __construct(array $args = [])

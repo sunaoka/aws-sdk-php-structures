@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'NFS3' $Version
- * @property list<string> $DnsIps
+ * @property list<string>|null $DnsIps
  */
 class FileCacheNFSConfiguration extends Shape
 {
     /**
      * @param array{
      *     Version: 'NFS3',
-     *     DnsIps?: list<string>
+     *     DnsIps?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

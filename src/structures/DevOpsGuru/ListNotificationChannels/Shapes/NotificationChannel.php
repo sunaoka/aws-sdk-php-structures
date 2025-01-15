@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\ListNotificationChannels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property NotificationChannelConfig $Config
+ * @property string|null $Id
+ * @property NotificationChannelConfig|null $Config
  */
 class NotificationChannel extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Config?: NotificationChannelConfig
+     *     Id?: string|null,
+     *     Config?: NotificationChannelConfig|null
      * } $args
      */
     public function __construct(array $args = [])

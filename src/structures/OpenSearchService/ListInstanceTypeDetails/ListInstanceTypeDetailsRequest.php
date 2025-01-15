@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EngineVersion
- * @property string $DomainName
- * @property int<min, 100> $MaxResults
- * @property string $NextToken
- * @property bool $RetrieveAZs
- * @property string $InstanceType
+ * @property string|null $DomainName
+ * @property int<min, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property bool|null $RetrieveAZs
+ * @property string|null $InstanceType
  */
 class ListInstanceTypeDetailsRequest extends Request
 {
     /**
      * @param array{
      *     EngineVersion: string,
-     *     DomainName?: string,
-     *     MaxResults?: int<min, 100>,
-     *     NextToken?: string,
-     *     RetrieveAZs?: bool,
-     *     InstanceType?: string
+     *     DomainName?: string|null,
+     *     MaxResults?: int<min, 100>|null,
+     *     NextToken?: string|null,
+     *     RetrieveAZs?: bool|null,
+     *     InstanceType?: string|null
      * } $args
      */
     public function __construct(array $args)

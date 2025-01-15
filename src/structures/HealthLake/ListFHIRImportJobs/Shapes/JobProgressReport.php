@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\HealthLake\ListFHIRImportJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TotalNumberOfScannedFiles
- * @property double $TotalSizeOfScannedFilesInMB
- * @property int $TotalNumberOfImportedFiles
- * @property int $TotalNumberOfResourcesScanned
- * @property int $TotalNumberOfResourcesImported
- * @property int $TotalNumberOfResourcesWithCustomerError
- * @property int $TotalNumberOfFilesReadWithCustomerError
- * @property double $Throughput
+ * @property int|null $TotalNumberOfScannedFiles
+ * @property double|null $TotalSizeOfScannedFilesInMB
+ * @property int|null $TotalNumberOfImportedFiles
+ * @property int|null $TotalNumberOfResourcesScanned
+ * @property int|null $TotalNumberOfResourcesImported
+ * @property int|null $TotalNumberOfResourcesWithCustomerError
+ * @property int|null $TotalNumberOfFilesReadWithCustomerError
+ * @property double|null $Throughput
  */
 class JobProgressReport extends Shape
 {
     /**
      * @param array{
-     *     TotalNumberOfScannedFiles?: int,
-     *     TotalSizeOfScannedFilesInMB?: double,
-     *     TotalNumberOfImportedFiles?: int,
-     *     TotalNumberOfResourcesScanned?: int,
-     *     TotalNumberOfResourcesImported?: int,
-     *     TotalNumberOfResourcesWithCustomerError?: int,
-     *     TotalNumberOfFilesReadWithCustomerError?: int,
-     *     Throughput?: double
+     *     TotalNumberOfScannedFiles?: int|null,
+     *     TotalSizeOfScannedFilesInMB?: double|null,
+     *     TotalNumberOfImportedFiles?: int|null,
+     *     TotalNumberOfResourcesScanned?: int|null,
+     *     TotalNumberOfResourcesImported?: int|null,
+     *     TotalNumberOfResourcesWithCustomerError?: int|null,
+     *     TotalNumberOfFilesReadWithCustomerError?: int|null,
+     *     Throughput?: double|null
      * } $args
      */
     public function __construct(array $args = [])

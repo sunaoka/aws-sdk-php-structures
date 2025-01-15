@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\GetLogDeliveryConfigura
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\LogDeliveryConfigurationType $LogDeliveryConfiguration
+ * @property Shapes\LogDeliveryConfigurationType|null $LogDeliveryConfiguration
  */
 class GetLogDeliveryConfigurationResponse extends Response
 {

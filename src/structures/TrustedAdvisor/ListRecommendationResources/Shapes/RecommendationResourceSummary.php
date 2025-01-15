@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property string $awsResourceId
- * @property 'excluded'|'included' $exclusionStatus
+ * @property 'excluded'|'included'|null $exclusionStatus
  * @property string $id
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  * @property array<string, string> $metadata
@@ -21,7 +21,7 @@ class RecommendationResourceSummary extends Shape
      * @param array{
      *     arn: string,
      *     awsResourceId: string,
-     *     exclusionStatus?: 'excluded'|'included',
+     *     exclusionStatus?: 'excluded'|'included'|null,
      *     id: string,
      *     lastUpdatedAt: \Aws\Api\DateTimeResult,
      *     metadata: array<string, string>,

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property Shapes\PredefinedAttributeSearchCriteria $SearchCriteria
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property Shapes\PredefinedAttributeSearchCriteria|null $SearchCriteria
  */
 class SearchPredefinedAttributesRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     SearchCriteria?: Shapes\PredefinedAttributeSearchCriteria
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     SearchCriteria?: Shapes\PredefinedAttributeSearchCriteria|null
      * } $args
      */
     public function __construct(array $args)

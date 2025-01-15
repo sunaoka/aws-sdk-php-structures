@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\Entitlement> $Entitlements
  * @property string $Beneficiary
  * @property Shapes\ConsumptionConfiguration $ConsumptionConfiguration
- * @property list<Shapes\Metadata> $LicenseMetadata
+ * @property list<Shapes\Metadata>|null $LicenseMetadata
  * @property string $ClientToken
  */
 class CreateLicenseRequest extends Request
@@ -30,7 +30,7 @@ class CreateLicenseRequest extends Request
      *     Entitlements: list<Shapes\Entitlement>,
      *     Beneficiary: string,
      *     ConsumptionConfiguration: Shapes\ConsumptionConfiguration,
-     *     LicenseMetadata?: list<Shapes\Metadata>,
+     *     LicenseMetadata?: list<Shapes\Metadata>|null,
      *     ClientToken: string
      * } $args
      */

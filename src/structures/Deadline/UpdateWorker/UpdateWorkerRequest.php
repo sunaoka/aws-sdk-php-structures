@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $farmId
  * @property string $fleetId
  * @property string $workerId
- * @property 'STARTED'|'STOPPING'|'STOPPED' $status
- * @property Shapes\WorkerCapabilities $capabilities
- * @property Shapes\HostPropertiesRequest $hostProperties
+ * @property 'STARTED'|'STOPPING'|'STOPPED'|null $status
+ * @property Shapes\WorkerCapabilities|null $capabilities
+ * @property Shapes\HostPropertiesRequest|null $hostProperties
  */
 class UpdateWorkerRequest extends Request
 {
@@ -19,9 +19,9 @@ class UpdateWorkerRequest extends Request
      *     farmId: string,
      *     fleetId: string,
      *     workerId: string,
-     *     status?: 'STARTED'|'STOPPING'|'STOPPED',
-     *     capabilities?: Shapes\WorkerCapabilities,
-     *     hostProperties?: Shapes\HostPropertiesRequest
+     *     status?: 'STARTED'|'STOPPING'|'STOPPED'|null,
+     *     capabilities?: Shapes\WorkerCapabilities|null,
+     *     hostProperties?: Shapes\HostPropertiesRequest|null
      * } $args
      */
     public function __construct(array $args)

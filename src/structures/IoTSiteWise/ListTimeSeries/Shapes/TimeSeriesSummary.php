@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\ListTimeSeries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $assetId
- * @property string $propertyId
- * @property string $alias
+ * @property string|null $assetId
+ * @property string|null $propertyId
+ * @property string|null $alias
  * @property string $timeSeriesId
  * @property 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT' $dataType
- * @property string $dataTypeSpec
+ * @property string|null $dataTypeSpec
  * @property \Aws\Api\DateTimeResult $timeSeriesCreationDate
  * @property \Aws\Api\DateTimeResult $timeSeriesLastUpdateDate
  * @property string $timeSeriesArn
@@ -19,12 +19,12 @@ class TimeSeriesSummary extends Shape
 {
     /**
      * @param array{
-     *     assetId?: string,
-     *     propertyId?: string,
-     *     alias?: string,
+     *     assetId?: string|null,
+     *     propertyId?: string|null,
+     *     alias?: string|null,
      *     timeSeriesId: string,
      *     dataType: 'STRING'|'INTEGER'|'DOUBLE'|'BOOLEAN'|'STRUCT',
-     *     dataTypeSpec?: string,
+     *     dataTypeSpec?: string|null,
      *     timeSeriesCreationDate: \Aws\Api\DateTimeResult,
      *     timeSeriesLastUpdateDate: \Aws\Api\DateTimeResult,
      *     timeSeriesArn: string

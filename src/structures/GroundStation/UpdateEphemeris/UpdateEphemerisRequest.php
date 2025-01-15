@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property bool $enabled
  * @property string $ephemerisId
- * @property string $name
- * @property int<0, 99999> $priority
+ * @property string|null $name
+ * @property int<0, 99999>|null $priority
  */
 class UpdateEphemerisRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateEphemerisRequest extends Request
      * @param array{
      *     enabled: bool,
      *     ephemerisId: string,
-     *     name?: string,
-     *     priority?: int<0, 99999>
+     *     name?: string|null,
+     *     priority?: int<0, 99999>|null
      * } $args
      */
     public function __construct(array $args)

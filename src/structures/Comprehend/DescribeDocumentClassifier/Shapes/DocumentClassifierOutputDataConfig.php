@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Comprehend\DescribeDocumentClassifier\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3Uri
- * @property string $KmsKeyId
- * @property string $FlywheelStatsS3Prefix
+ * @property string|null $S3Uri
+ * @property string|null $KmsKeyId
+ * @property string|null $FlywheelStatsS3Prefix
  */
 class DocumentClassifierOutputDataConfig extends Shape
 {
     /**
      * @param array{
-     *     S3Uri?: string,
-     *     KmsKeyId?: string,
-     *     FlywheelStatsS3Prefix?: string
+     *     S3Uri?: string|null,
+     *     KmsKeyId?: string|null,
+     *     FlywheelStatsS3Prefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

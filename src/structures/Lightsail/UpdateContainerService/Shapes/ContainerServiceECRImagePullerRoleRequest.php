@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lightsail\UpdateContainerService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isActive
+ * @property bool|null $isActive
  */
 class ContainerServiceECRImagePullerRoleRequest extends Shape
 {
     /**
-     * @param array{isActive?: bool} $args
+     * @param array{isActive?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

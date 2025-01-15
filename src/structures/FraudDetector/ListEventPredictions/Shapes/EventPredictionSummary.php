@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\FraudDetector\ListEventPredictions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $eventId
- * @property string $eventTypeName
- * @property string $eventTimestamp
- * @property string $predictionTimestamp
- * @property string $detectorId
- * @property string $detectorVersionId
+ * @property string|null $eventId
+ * @property string|null $eventTypeName
+ * @property string|null $eventTimestamp
+ * @property string|null $predictionTimestamp
+ * @property string|null $detectorId
+ * @property string|null $detectorVersionId
  */
 class EventPredictionSummary extends Shape
 {
     /**
      * @param array{
-     *     eventId?: string,
-     *     eventTypeName?: string,
-     *     eventTimestamp?: string,
-     *     predictionTimestamp?: string,
-     *     detectorId?: string,
-     *     detectorVersionId?: string
+     *     eventId?: string|null,
+     *     eventTypeName?: string|null,
+     *     eventTimestamp?: string|null,
+     *     predictionTimestamp?: string|null,
+     *     detectorId?: string|null,
+     *     detectorVersionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

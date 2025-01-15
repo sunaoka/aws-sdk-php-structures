@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $BackupVaultName
  * @property string $RecoveryPointArn
- * @property string $IamRoleArn
+ * @property string|null $IamRoleArn
  * @property 'ENABLED'|'DISABLED' $Index
  */
 class UpdateRecoveryPointIndexSettingsRequest extends Request
@@ -16,7 +16,7 @@ class UpdateRecoveryPointIndexSettingsRequest extends Request
      * @param array{
      *     BackupVaultName: string,
      *     RecoveryPointArn: string,
-     *     IamRoleArn?: string,
+     *     IamRoleArn?: string|null,
      *     Index: 'ENABLED'|'DISABLED'
      * } $args
      */

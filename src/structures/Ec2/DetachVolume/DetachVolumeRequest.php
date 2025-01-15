@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DetachVolume;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Device
- * @property bool $Force
- * @property string $InstanceId
+ * @property string|null $Device
+ * @property bool|null $Force
+ * @property string|null $InstanceId
  * @property string $VolumeId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DetachVolumeRequest extends Request
 {
     /**
      * @param array{
-     *     Device?: string,
-     *     Force?: bool,
-     *     InstanceId?: string,
+     *     Device?: string|null,
+     *     Force?: bool|null,
+     *     InstanceId?: string|null,
      *     VolumeId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

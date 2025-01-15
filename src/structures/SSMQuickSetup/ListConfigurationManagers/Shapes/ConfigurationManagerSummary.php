@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SSMQuickSetup\ListConfigurationManagers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ConfigurationDefinitionSummary> $ConfigurationDefinitionSummaries
- * @property string $Description
+ * @property list<ConfigurationDefinitionSummary>|null $ConfigurationDefinitionSummaries
+ * @property string|null $Description
  * @property string $ManagerArn
- * @property string $Name
- * @property list<StatusSummary> $StatusSummaries
+ * @property string|null $Name
+ * @property list<StatusSummary>|null $StatusSummaries
  */
 class ConfigurationManagerSummary extends Shape
 {
     /**
      * @param array{
-     *     ConfigurationDefinitionSummaries?: list<ConfigurationDefinitionSummary>,
-     *     Description?: string,
+     *     ConfigurationDefinitionSummaries?: list<ConfigurationDefinitionSummary>|null,
+     *     Description?: string|null,
      *     ManagerArn: string,
-     *     Name?: string,
-     *     StatusSummaries?: list<StatusSummary>
+     *     Name?: string|null,
+     *     StatusSummaries?: list<StatusSummary>|null
      * } $args
      */
     public function __construct(array $args)

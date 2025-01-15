@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $permissionGroupId
- * @property string $name
- * @property string $description
- * @property list<'CreateDataset'|'ManageClusters'|'ManageUsersAndGroups'|'ManageAttributeSets'|'ViewAuditData'|'AccessNotebooks'|'GetTemporaryCredentials'> $applicationPermissions
- * @property string $clientToken
+ * @property string|null $name
+ * @property string|null $description
+ * @property list<'CreateDataset'|'ManageClusters'|'ManageUsersAndGroups'|'ManageAttributeSets'|'ViewAuditData'|'AccessNotebooks'|'GetTemporaryCredentials'>|null $applicationPermissions
+ * @property string|null $clientToken
  */
 class UpdatePermissionGroupRequest extends Request
 {
     /**
      * @param array{
      *     permissionGroupId: string,
-     *     name?: string,
-     *     description?: string,
-     *     applicationPermissions?: list<'CreateDataset'|'ManageClusters'|'ManageUsersAndGroups'|'ManageAttributeSets'|'ViewAuditData'|'AccessNotebooks'|'GetTemporaryCredentials'>,
-     *     clientToken?: string
+     *     name?: string|null,
+     *     description?: string|null,
+     *     applicationPermissions?: list<'CreateDataset'|'ManageClusters'|'ManageUsersAndGroups'|'ManageAttributeSets'|'ViewAuditData'|'AccessNotebooks'|'GetTemporaryCredentials'>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

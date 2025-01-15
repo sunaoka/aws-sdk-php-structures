@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $farmId
  * @property string $queueId
  * @property string $jobId
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListStepsRequest extends Request
 {
@@ -18,8 +18,8 @@ class ListStepsRequest extends Request
      *     farmId: string,
      *     queueId: string,
      *     jobId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

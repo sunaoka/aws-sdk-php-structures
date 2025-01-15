@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DescribePools;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $PoolIds
- * @property list<Shapes\PoolFilter> $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property 'SELF'|'SHARED' $Owner
+ * @property list<string>|null $PoolIds
+ * @property list<Shapes\PoolFilter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property 'SELF'|'SHARED'|null $Owner
  */
 class DescribePoolsRequest extends Request
 {
     /**
      * @param array{
-     *     PoolIds?: list<string>,
-     *     Filters?: list<Shapes\PoolFilter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     Owner?: 'SELF'|'SHARED'
+     *     PoolIds?: list<string>|null,
+     *     Filters?: list<Shapes\PoolFilter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     Owner?: 'SELF'|'SHARED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\SearchVulnerabilitiesFilterCriteria $filterCriteria
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class SearchVulnerabilitiesRequest extends Request
 {
     /**
      * @param array{
      *     filterCriteria: Shapes\SearchVulnerabilitiesFilterCriteria,
-     *     nextToken?: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

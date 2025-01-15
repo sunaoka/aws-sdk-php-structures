@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FileSystemId
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  */
 class ReleaseFileSystemNfsV3LocksRequest extends Request
 {
     /**
      * @param array{
      *     FileSystemId: string,
-     *     ClientRequestToken?: string
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

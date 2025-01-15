@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AuditManager\ListAssessmentControlInsightsByCon
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $id
- * @property EvidenceInsights $evidenceInsights
- * @property string $controlSetName
- * @property \Aws\Api\DateTimeResult $lastUpdated
+ * @property string|null $name
+ * @property string|null $id
+ * @property EvidenceInsights|null $evidenceInsights
+ * @property string|null $controlSetName
+ * @property \Aws\Api\DateTimeResult|null $lastUpdated
  */
 class ControlInsightsMetadataByAssessmentItem extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     id?: string,
-     *     evidenceInsights?: EvidenceInsights,
-     *     controlSetName?: string,
-     *     lastUpdated?: \Aws\Api\DateTimeResult
+     *     name?: string|null,
+     *     id?: string|null,
+     *     evidenceInsights?: EvidenceInsights|null,
+     *     controlSetName?: string|null,
+     *     lastUpdated?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

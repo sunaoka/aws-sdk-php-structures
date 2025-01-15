@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Close'|'ConfirmIntent'|'Delegate'|'ElicitIntent'|'ElicitSlot'|'None' $type
- * @property string $slotToElicit
- * @property 'Default'|'SpellByLetter'|'SpellByWord' $slotElicitationStyle
- * @property ElicitSubSlot $subSlotToElicit
+ * @property string|null $slotToElicit
+ * @property 'Default'|'SpellByLetter'|'SpellByWord'|null $slotElicitationStyle
+ * @property ElicitSubSlot|null $subSlotToElicit
  */
 class DialogAction extends Shape
 {
     /**
      * @param array{
      *     type: 'Close'|'ConfirmIntent'|'Delegate'|'ElicitIntent'|'ElicitSlot'|'None',
-     *     slotToElicit?: string,
-     *     slotElicitationStyle?: 'Default'|'SpellByLetter'|'SpellByWord',
-     *     subSlotToElicit?: ElicitSubSlot
+     *     slotToElicit?: string|null,
+     *     slotElicitationStyle?: 'Default'|'SpellByLetter'|'SpellByWord'|null,
+     *     subSlotToElicit?: ElicitSubSlot|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\CreateDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $posixUser
- * @property SystemResourceLimits $systemResourceLimits
- * @property string $windowsUser
+ * @property string|null $posixUser
+ * @property SystemResourceLimits|null $systemResourceLimits
+ * @property string|null $windowsUser
  */
 class ComponentRunWith extends Shape
 {
     /**
      * @param array{
-     *     posixUser?: string,
-     *     systemResourceLimits?: SystemResourceLimits,
-     *     windowsUser?: string
+     *     posixUser?: string|null,
+     *     systemResourceLimits?: SystemResourceLimits|null,
+     *     windowsUser?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\GameLift\RequestUploadCredentials;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AwsCredentials $UploadCredentials
- * @property Shapes\S3Location $StorageLocation
+ * @property Shapes\AwsCredentials|null $UploadCredentials
+ * @property Shapes\S3Location|null $StorageLocation
  */
 class RequestUploadCredentialsResponse extends Response
 {

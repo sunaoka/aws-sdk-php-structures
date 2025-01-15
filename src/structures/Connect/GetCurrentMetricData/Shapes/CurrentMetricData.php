@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\GetCurrentMetricData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CurrentMetric $Metric
- * @property double $Value
+ * @property CurrentMetric|null $Metric
+ * @property double|null $Value
  */
 class CurrentMetricData extends Shape
 {
     /**
      * @param array{
-     *     Metric?: CurrentMetric,
-     *     Value?: double
+     *     Metric?: CurrentMetric|null,
+     *     Value?: double|null
      * } $args
      */
     public function __construct(array $args = [])

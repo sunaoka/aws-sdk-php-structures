@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $eventFieldId
  * @property AuditEventFieldValueUnion $newValue
- * @property AuditEventFieldValueUnion $oldValue
+ * @property AuditEventFieldValueUnion|null $oldValue
  */
 class AuditEventField extends Shape
 {
@@ -15,7 +15,7 @@ class AuditEventField extends Shape
      * @param array{
      *     eventFieldId: string,
      *     newValue: AuditEventFieldValueUnion,
-     *     oldValue?: AuditEventFieldValueUnion
+     *     oldValue?: AuditEventFieldValueUnion|null
      * } $args
      */
     public function __construct(array $args)

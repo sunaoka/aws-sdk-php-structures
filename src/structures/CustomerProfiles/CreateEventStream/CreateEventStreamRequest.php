@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property string $Uri
  * @property string $EventStreamName
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateEventStreamRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateEventStreamRequest extends Request
      *     DomainName: string,
      *     Uri: string,
      *     EventStreamName: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

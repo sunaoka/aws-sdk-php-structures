@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $logRecordPointer
- * @property bool $unmask
+ * @property bool|null $unmask
  */
 class GetLogRecordRequest extends Request
 {
     /**
      * @param array{
      *     logRecordPointer: string,
-     *     unmask?: bool
+     *     unmask?: bool|null
      * } $args
      */
     public function __construct(array $args)

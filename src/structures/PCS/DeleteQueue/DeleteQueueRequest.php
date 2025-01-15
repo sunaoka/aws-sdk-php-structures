@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $clusterIdentifier
  * @property string $queueIdentifier
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeleteQueueRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteQueueRequest extends Request
      * @param array{
      *     clusterIdentifier: string,
      *     queueIdentifier: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

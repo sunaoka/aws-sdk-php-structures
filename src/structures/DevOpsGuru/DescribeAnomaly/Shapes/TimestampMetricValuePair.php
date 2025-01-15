@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\DescribeAnomaly\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $Timestamp
- * @property double $MetricValue
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
+ * @property double|null $MetricValue
  */
 class TimestampMetricValuePair extends Shape
 {
     /**
      * @param array{
-     *     Timestamp?: \Aws\Api\DateTimeResult,
-     *     MetricValue?: double
+     *     Timestamp?: \Aws\Api\DateTimeResult|null,
+     *     MetricValue?: double|null
      * } $args
      */
     public function __construct(array $args = [])

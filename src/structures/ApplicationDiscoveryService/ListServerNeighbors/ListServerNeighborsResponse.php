@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\NeighborConnectionDetail> $neighbors
- * @property string $nextToken
- * @property int $knownDependencyCount
+ * @property string|null $nextToken
+ * @property int|null $knownDependencyCount
  */
 class ListServerNeighborsResponse extends Response
 {

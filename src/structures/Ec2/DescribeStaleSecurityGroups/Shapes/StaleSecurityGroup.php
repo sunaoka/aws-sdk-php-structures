@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeStaleSecurityGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property string $GroupId
- * @property string $GroupName
- * @property list<StaleIpPermission> $StaleIpPermissions
- * @property list<StaleIpPermission> $StaleIpPermissionsEgress
- * @property string $VpcId
+ * @property string|null $Description
+ * @property string|null $GroupId
+ * @property string|null $GroupName
+ * @property list<StaleIpPermission>|null $StaleIpPermissions
+ * @property list<StaleIpPermission>|null $StaleIpPermissionsEgress
+ * @property string|null $VpcId
  */
 class StaleSecurityGroup extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     GroupId?: string,
-     *     GroupName?: string,
-     *     StaleIpPermissions?: list<StaleIpPermission>,
-     *     StaleIpPermissionsEgress?: list<StaleIpPermission>,
-     *     VpcId?: string
+     *     Description?: string|null,
+     *     GroupId?: string|null,
+     *     GroupName?: string|null,
+     *     StaleIpPermissions?: list<StaleIpPermission>|null,
+     *     StaleIpPermissionsEgress?: list<StaleIpPermission>|null,
+     *     VpcId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

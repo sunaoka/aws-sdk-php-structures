@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $UserPoolId
  * @property string $ClientId
- * @property bool $UseCognitoProvidedValues
- * @property Shapes\Document $Settings
- * @property list<Shapes\AssetType> $Assets
+ * @property bool|null $UseCognitoProvidedValues
+ * @property Shapes\Document|null $Settings
+ * @property list<Shapes\AssetType>|null $Assets
  */
 class CreateManagedLoginBrandingRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateManagedLoginBrandingRequest extends Request
      * @param array{
      *     UserPoolId: string,
      *     ClientId: string,
-     *     UseCognitoProvidedValues?: bool,
-     *     Settings?: Shapes\Document,
-     *     Assets?: list<Shapes\AssetType>
+     *     UseCognitoProvidedValues?: bool|null,
+     *     Settings?: Shapes\Document|null,
+     *     Assets?: list<Shapes\AssetType>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,51 +5,51 @@ namespace Sunaoka\Aws\Structures\SsmSap\GetComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ComponentId
- * @property string $Sid
- * @property string $SystemNumber
- * @property string $ParentComponent
- * @property list<string> $ChildComponents
- * @property string $ApplicationId
- * @property 'HANA'|'HANA_NODE'|'ABAP'|'ASCS'|'DIALOG'|'WEBDISP'|'WD'|'ERS' $ComponentType
- * @property 'ACTIVATED'|'STARTING'|'STOPPED'|'STOPPING'|'RUNNING'|'RUNNING_WITH_ERROR'|'UNDEFINED' $Status
- * @property string $SapHostname
- * @property string $SapFeature
- * @property string $SapKernelVersion
- * @property string $HdbVersion
- * @property Resilience $Resilience
- * @property AssociatedHost $AssociatedHost
- * @property list<string> $Databases
- * @property list<Host> $Hosts
- * @property string $PrimaryHost
- * @property DatabaseConnection $DatabaseConnection
- * @property \Aws\Api\DateTimeResult $LastUpdated
- * @property string $Arn
+ * @property string|null $ComponentId
+ * @property string|null $Sid
+ * @property string|null $SystemNumber
+ * @property string|null $ParentComponent
+ * @property list<string>|null $ChildComponents
+ * @property string|null $ApplicationId
+ * @property 'HANA'|'HANA_NODE'|'ABAP'|'ASCS'|'DIALOG'|'WEBDISP'|'WD'|'ERS'|null $ComponentType
+ * @property 'ACTIVATED'|'STARTING'|'STOPPED'|'STOPPING'|'RUNNING'|'RUNNING_WITH_ERROR'|'UNDEFINED'|null $Status
+ * @property string|null $SapHostname
+ * @property string|null $SapFeature
+ * @property string|null $SapKernelVersion
+ * @property string|null $HdbVersion
+ * @property Resilience|null $Resilience
+ * @property AssociatedHost|null $AssociatedHost
+ * @property list<string>|null $Databases
+ * @property list<Host>|null $Hosts
+ * @property string|null $PrimaryHost
+ * @property DatabaseConnection|null $DatabaseConnection
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property string|null $Arn
  */
 class Component extends Shape
 {
     /**
      * @param array{
-     *     ComponentId?: string,
-     *     Sid?: string,
-     *     SystemNumber?: string,
-     *     ParentComponent?: string,
-     *     ChildComponents?: list<string>,
-     *     ApplicationId?: string,
-     *     ComponentType?: 'HANA'|'HANA_NODE'|'ABAP'|'ASCS'|'DIALOG'|'WEBDISP'|'WD'|'ERS',
-     *     Status?: 'ACTIVATED'|'STARTING'|'STOPPED'|'STOPPING'|'RUNNING'|'RUNNING_WITH_ERROR'|'UNDEFINED',
-     *     SapHostname?: string,
-     *     SapFeature?: string,
-     *     SapKernelVersion?: string,
-     *     HdbVersion?: string,
-     *     Resilience?: Resilience,
-     *     AssociatedHost?: AssociatedHost,
-     *     Databases?: list<string>,
-     *     Hosts?: list<Host>,
-     *     PrimaryHost?: string,
-     *     DatabaseConnection?: DatabaseConnection,
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
-     *     Arn?: string
+     *     ComponentId?: string|null,
+     *     Sid?: string|null,
+     *     SystemNumber?: string|null,
+     *     ParentComponent?: string|null,
+     *     ChildComponents?: list<string>|null,
+     *     ApplicationId?: string|null,
+     *     ComponentType?: 'HANA'|'HANA_NODE'|'ABAP'|'ASCS'|'DIALOG'|'WEBDISP'|'WD'|'ERS'|null,
+     *     Status?: 'ACTIVATED'|'STARTING'|'STOPPED'|'STOPPING'|'RUNNING'|'RUNNING_WITH_ERROR'|'UNDEFINED'|null,
+     *     SapHostname?: string|null,
+     *     SapFeature?: string|null,
+     *     SapKernelVersion?: string|null,
+     *     HdbVersion?: string|null,
+     *     Resilience?: Resilience|null,
+     *     AssociatedHost?: AssociatedHost|null,
+     *     Databases?: list<string>|null,
+     *     Hosts?: list<Host>|null,
+     *     PrimaryHost?: string|null,
+     *     DatabaseConnection?: DatabaseConnection|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

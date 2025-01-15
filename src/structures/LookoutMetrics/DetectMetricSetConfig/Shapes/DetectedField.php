@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\DetectMetricSetConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AttributeValue $Value
- * @property 'HIGH'|'LOW'|'NONE' $Confidence
- * @property string $Message
+ * @property AttributeValue|null $Value
+ * @property 'HIGH'|'LOW'|'NONE'|null $Confidence
+ * @property string|null $Message
  */
 class DetectedField extends Shape
 {
     /**
      * @param array{
-     *     Value?: AttributeValue,
-     *     Confidence?: 'HIGH'|'LOW'|'NONE',
-     *     Message?: string
+     *     Value?: AttributeValue|null,
+     *     Confidence?: 'HIGH'|'LOW'|'NONE'|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

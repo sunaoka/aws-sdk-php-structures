@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeClusterV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
+ * @property bool|null $Enabled
  */
 class VpcConnectivityTls extends Shape
 {
     /**
-     * @param array{Enabled?: bool} $args
+     * @param array{Enabled?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

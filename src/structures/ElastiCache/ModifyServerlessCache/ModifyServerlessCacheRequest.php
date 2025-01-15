@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ServerlessCacheName
- * @property string $Description
- * @property Shapes\CacheUsageLimits $CacheUsageLimits
- * @property bool $RemoveUserGroup
- * @property string $UserGroupId
- * @property list<string> $SecurityGroupIds
- * @property int $SnapshotRetentionLimit
- * @property string $DailySnapshotTime
- * @property string $Engine
- * @property string $MajorEngineVersion
+ * @property string|null $Description
+ * @property Shapes\CacheUsageLimits|null $CacheUsageLimits
+ * @property bool|null $RemoveUserGroup
+ * @property string|null $UserGroupId
+ * @property list<string>|null $SecurityGroupIds
+ * @property int|null $SnapshotRetentionLimit
+ * @property string|null $DailySnapshotTime
+ * @property string|null $Engine
+ * @property string|null $MajorEngineVersion
  */
 class ModifyServerlessCacheRequest extends Request
 {
     /**
      * @param array{
      *     ServerlessCacheName: string,
-     *     Description?: string,
-     *     CacheUsageLimits?: Shapes\CacheUsageLimits,
-     *     RemoveUserGroup?: bool,
-     *     UserGroupId?: string,
-     *     SecurityGroupIds?: list<string>,
-     *     SnapshotRetentionLimit?: int,
-     *     DailySnapshotTime?: string,
-     *     Engine?: string,
-     *     MajorEngineVersion?: string
+     *     Description?: string|null,
+     *     CacheUsageLimits?: Shapes\CacheUsageLimits|null,
+     *     RemoveUserGroup?: bool|null,
+     *     UserGroupId?: string|null,
+     *     SecurityGroupIds?: list<string>|null,
+     *     SnapshotRetentionLimit?: int|null,
+     *     DailySnapshotTime?: string|null,
+     *     Engine?: string|null,
+     *     MajorEngineVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Shield\DescribeAttackStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AttackVolume $AttackVolume
+ * @property AttackVolume|null $AttackVolume
  * @property int $AttackCount
  */
 class AttackStatisticsDataItem extends Shape
 {
     /**
      * @param array{
-     *     AttackVolume?: AttackVolume,
+     *     AttackVolume?: AttackVolume|null,
      *     AttackCount: int
      * } $args
      */

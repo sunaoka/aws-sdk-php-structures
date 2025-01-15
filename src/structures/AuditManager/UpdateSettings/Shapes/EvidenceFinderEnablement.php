@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AuditManager\UpdateSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $eventDataStoreArn
- * @property 'ENABLED'|'DISABLED'|'ENABLE_IN_PROGRESS'|'DISABLE_IN_PROGRESS' $enablementStatus
- * @property 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETED' $backfillStatus
- * @property string $error
+ * @property string|null $eventDataStoreArn
+ * @property 'ENABLED'|'DISABLED'|'ENABLE_IN_PROGRESS'|'DISABLE_IN_PROGRESS'|null $enablementStatus
+ * @property 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETED'|null $backfillStatus
+ * @property string|null $error
  */
 class EvidenceFinderEnablement extends Shape
 {
     /**
      * @param array{
-     *     eventDataStoreArn?: string,
-     *     enablementStatus?: 'ENABLED'|'DISABLED'|'ENABLE_IN_PROGRESS'|'DISABLE_IN_PROGRESS',
-     *     backfillStatus?: 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETED',
-     *     error?: string
+     *     eventDataStoreArn?: string|null,
+     *     enablementStatus?: 'ENABLED'|'DISABLED'|'ENABLE_IN_PROGRESS'|'DISABLE_IN_PROGRESS'|null,
+     *     backfillStatus?: 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETED'|null,
+     *     error?: string|null
      * } $args
      */
     public function __construct(array $args = [])

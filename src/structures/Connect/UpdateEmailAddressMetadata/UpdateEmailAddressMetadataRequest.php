@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $EmailAddressId
- * @property string $Description
- * @property string $DisplayName
- * @property string $ClientToken
+ * @property string|null $Description
+ * @property string|null $DisplayName
+ * @property string|null $ClientToken
  */
 class UpdateEmailAddressMetadataRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateEmailAddressMetadataRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     EmailAddressId: string,
-     *     Description?: string,
-     *     DisplayName?: string,
-     *     ClientToken?: string
+     *     Description?: string|null,
+     *     DisplayName?: string|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

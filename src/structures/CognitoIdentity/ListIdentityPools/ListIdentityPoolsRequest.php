@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property int<1, 60> $MaxResults
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListIdentityPoolsRequest extends Request
 {
     /**
      * @param array{
      *     MaxResults: int<1, 60>,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

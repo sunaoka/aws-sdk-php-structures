@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $channelArn
  * @property string $viewerId
- * @property int<0, max> $viewerSessionVersionsLessThanOrEqualTo
+ * @property int<0, max>|null $viewerSessionVersionsLessThanOrEqualTo
  */
 class StartViewerSessionRevocationRequest extends Request
 {
@@ -15,7 +15,7 @@ class StartViewerSessionRevocationRequest extends Request
      * @param array{
      *     channelArn: string,
      *     viewerId: string,
-     *     viewerSessionVersionsLessThanOrEqualTo?: int<0, max>
+     *     viewerSessionVersionsLessThanOrEqualTo?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

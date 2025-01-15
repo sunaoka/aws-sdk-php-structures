@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Rds\SwitchoverBlueGreenDeployment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\BlueGreenDeployment $BlueGreenDeployment
+ * @property Shapes\BlueGreenDeployment|null $BlueGreenDeployment
  */
 class SwitchoverBlueGreenDeploymentResponse extends Response
 {

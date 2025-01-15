@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $PercentileValue
+ * @property double|null $PercentileValue
  */
 class PercentileAggregation extends Shape
 {
     /**
-     * @param array{PercentileValue?: double} $args
+     * @param array{PercentileValue?: double|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetCampaigns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Body
- * @property list<InAppMessageContent> $Content
- * @property array<string, string> $CustomConfig
- * @property 'BOTTOM_BANNER'|'TOP_BANNER'|'OVERLAYS'|'MOBILE_FEED'|'MIDDLE_BANNER'|'CAROUSEL' $Layout
+ * @property string|null $Body
+ * @property list<InAppMessageContent>|null $Content
+ * @property array<string, string>|null $CustomConfig
+ * @property 'BOTTOM_BANNER'|'TOP_BANNER'|'OVERLAYS'|'MOBILE_FEED'|'MIDDLE_BANNER'|'CAROUSEL'|null $Layout
  */
 class CampaignInAppMessage extends Shape
 {
     /**
      * @param array{
-     *     Body?: string,
-     *     Content?: list<InAppMessageContent>,
-     *     CustomConfig?: array<string, string>,
-     *     Layout?: 'BOTTOM_BANNER'|'TOP_BANNER'|'OVERLAYS'|'MOBILE_FEED'|'MIDDLE_BANNER'|'CAROUSEL'
+     *     Body?: string|null,
+     *     Content?: list<InAppMessageContent>|null,
+     *     CustomConfig?: array<string, string>|null,
+     *     Layout?: 'BOTTOM_BANNER'|'TOP_BANNER'|'OVERLAYS'|'MOBILE_FEED'|'MIDDLE_BANNER'|'CAROUSEL'|null
      * } $args
      */
     public function __construct(array $args = [])

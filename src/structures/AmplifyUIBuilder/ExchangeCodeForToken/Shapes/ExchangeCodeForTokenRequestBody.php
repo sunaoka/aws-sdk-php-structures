@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $code
  * @property string $redirectUri
- * @property string $clientId
+ * @property string|null $clientId
  */
 class ExchangeCodeForTokenRequestBody extends Shape
 {
@@ -15,7 +15,7 @@ class ExchangeCodeForTokenRequestBody extends Shape
      * @param array{
      *     code: string,
      *     redirectUri: string,
-     *     clientId?: string
+     *     clientId?: string|null
      * } $args
      */
     public function __construct(array $args)

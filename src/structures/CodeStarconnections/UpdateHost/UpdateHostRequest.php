@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HostArn
- * @property string $ProviderEndpoint
- * @property Shapes\VpcConfiguration $VpcConfiguration
+ * @property string|null $ProviderEndpoint
+ * @property Shapes\VpcConfiguration|null $VpcConfiguration
  */
 class UpdateHostRequest extends Request
 {
     /**
      * @param array{
      *     HostArn: string,
-     *     ProviderEndpoint?: string,
-     *     VpcConfiguration?: Shapes\VpcConfiguration
+     *     ProviderEndpoint?: string|null,
+     *     VpcConfiguration?: Shapes\VpcConfiguration|null
      * } $args
      */
     public function __construct(array $args)

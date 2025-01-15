@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\EventBridge\ListTargetsByRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecretManagerArn
+ * @property string|null $SecretManagerArn
  * @property string $Database
- * @property string $DbUser
- * @property string $Sql
- * @property string $StatementName
- * @property bool $WithEvent
- * @property list<string> $Sqls
+ * @property string|null $DbUser
+ * @property string|null $Sql
+ * @property string|null $StatementName
+ * @property bool|null $WithEvent
+ * @property list<string>|null $Sqls
  */
 class RedshiftDataParameters extends Shape
 {
     /**
      * @param array{
-     *     SecretManagerArn?: string,
+     *     SecretManagerArn?: string|null,
      *     Database: string,
-     *     DbUser?: string,
-     *     Sql?: string,
-     *     StatementName?: string,
-     *     WithEvent?: bool,
-     *     Sqls?: list<string>
+     *     DbUser?: string|null,
+     *     Sql?: string|null,
+     *     StatementName?: string|null,
+     *     WithEvent?: bool|null,
+     *     Sqls?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $domain
+ * @property string|null $domain
  * @property 'GITHUB_ORGANIZATION'|'GITHUB_GLOBAL'|'GITLAB_GROUP' $scope
  */
 class ScopeConfiguration extends Shape
@@ -14,7 +14,7 @@ class ScopeConfiguration extends Shape
     /**
      * @param array{
      *     name: string,
-     *     domain?: string,
+     *     domain?: string|null,
      *     scope: 'GITHUB_ORGANIZATION'|'GITHUB_GLOBAL'|'GITLAB_GROUP'
      * } $args
      */

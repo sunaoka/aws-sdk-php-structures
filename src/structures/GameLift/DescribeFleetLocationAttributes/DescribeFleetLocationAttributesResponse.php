@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribeFleetLocationAttributes;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FleetId
- * @property string $FleetArn
- * @property list<Shapes\LocationAttributes> $LocationAttributes
- * @property string $NextToken
+ * @property string|null $FleetId
+ * @property string|null $FleetArn
+ * @property list<Shapes\LocationAttributes>|null $LocationAttributes
+ * @property string|null $NextToken
  */
 class DescribeFleetLocationAttributesResponse extends Response
 {

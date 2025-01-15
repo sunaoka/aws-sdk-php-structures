@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<string> $action
  * @property string $arn
- * @property string $condition
+ * @property string|null $condition
  * @property 'Allow'|'Deny' $effect
  * @property list<string> $principal
  * @property string $statementId
@@ -18,7 +18,7 @@ class AddPolicyStatementRequest extends Request
      * @param array{
      *     action: list<string>,
      *     arn: string,
-     *     condition?: string,
+     *     condition?: string|null,
      *     effect: 'Allow'|'Deny',
      *     principal: list<string>,
      *     statementId: string

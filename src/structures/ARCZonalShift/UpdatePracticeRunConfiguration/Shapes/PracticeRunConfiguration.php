@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\ARCZonalShift\UpdatePracticeRunConfiguration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $blockedDates
- * @property list<string> $blockedWindows
- * @property list<ControlCondition> $blockingAlarms
+ * @property list<string>|null $blockedDates
+ * @property list<string>|null $blockedWindows
+ * @property list<ControlCondition>|null $blockingAlarms
  * @property list<ControlCondition> $outcomeAlarms
  */
 class PracticeRunConfiguration extends Shape
 {
     /**
      * @param array{
-     *     blockedDates?: list<string>,
-     *     blockedWindows?: list<string>,
-     *     blockingAlarms?: list<ControlCondition>,
+     *     blockedDates?: list<string>|null,
+     *     blockedWindows?: list<string>|null,
+     *     blockingAlarms?: list<ControlCondition>|null,
      *     outcomeAlarms: list<ControlCondition>
      * } $args
      */

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $IncludeNullValue
+ * @property bool|null $IncludeNullValue
  * @property CustomParameterValues $CustomValues
  */
 class CustomValuesConfiguration extends Shape
 {
     /**
      * @param array{
-     *     IncludeNullValue?: bool,
+     *     IncludeNullValue?: bool|null,
      *     CustomValues: CustomParameterValues
      * } $args
      */

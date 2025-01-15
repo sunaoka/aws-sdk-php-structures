@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'public'|'protected'|'private' $accessLevel
  * @property list<string> $acceptedFileTypes
- * @property bool $showThumbnails
- * @property bool $isResumable
- * @property int $maxFileCount
- * @property int $maxSize
+ * @property bool|null $showThumbnails
+ * @property bool|null $isResumable
+ * @property int|null $maxFileCount
+ * @property int|null $maxSize
  */
 class FileUploaderFieldConfig extends Shape
 {
@@ -18,10 +18,10 @@ class FileUploaderFieldConfig extends Shape
      * @param array{
      *     accessLevel: 'public'|'protected'|'private',
      *     acceptedFileTypes: list<string>,
-     *     showThumbnails?: bool,
-     *     isResumable?: bool,
-     *     maxFileCount?: int,
-     *     maxSize?: int
+     *     showThumbnails?: bool|null,
+     *     isResumable?: bool|null,
+     *     maxFileCount?: int|null,
+     *     maxSize?: int|null
      * } $args
      */
     public function __construct(array $args)

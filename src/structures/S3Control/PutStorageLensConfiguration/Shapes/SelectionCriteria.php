@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\S3Control\PutStorageLensConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Delimiter
- * @property int<1, 10> $MaxDepth
- * @property double $MinStorageBytesPercentage
+ * @property string|null $Delimiter
+ * @property int<1, 10>|null $MaxDepth
+ * @property double|null $MinStorageBytesPercentage
  */
 class SelectionCriteria extends Shape
 {
     /**
      * @param array{
-     *     Delimiter?: string,
-     *     MaxDepth?: int<1, 10>,
-     *     MinStorageBytesPercentage?: double
+     *     Delimiter?: string|null,
+     *     MaxDepth?: int<1, 10>|null,
+     *     MinStorageBytesPercentage?: double|null
      * } $args
      */
     public function __construct(array $args = [])

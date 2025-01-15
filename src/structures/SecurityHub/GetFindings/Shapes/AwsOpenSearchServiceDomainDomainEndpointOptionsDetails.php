@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CustomEndpointCertificateArn
- * @property bool $CustomEndpointEnabled
- * @property bool $EnforceHTTPS
- * @property string $CustomEndpoint
- * @property string $TLSSecurityPolicy
+ * @property string|null $CustomEndpointCertificateArn
+ * @property bool|null $CustomEndpointEnabled
+ * @property bool|null $EnforceHTTPS
+ * @property string|null $CustomEndpoint
+ * @property string|null $TLSSecurityPolicy
  */
 class AwsOpenSearchServiceDomainDomainEndpointOptionsDetails extends Shape
 {
     /**
      * @param array{
-     *     CustomEndpointCertificateArn?: string,
-     *     CustomEndpointEnabled?: bool,
-     *     EnforceHTTPS?: bool,
-     *     CustomEndpoint?: string,
-     *     TLSSecurityPolicy?: string
+     *     CustomEndpointCertificateArn?: string|null,
+     *     CustomEndpointEnabled?: bool|null,
+     *     EnforceHTTPS?: bool|null,
+     *     CustomEndpoint?: string|null,
+     *     TLSSecurityPolicy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

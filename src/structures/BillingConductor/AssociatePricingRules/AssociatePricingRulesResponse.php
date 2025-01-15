@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BillingConductor\AssociatePricingRules;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  */
 class AssociatePricingRulesResponse extends Response
 {

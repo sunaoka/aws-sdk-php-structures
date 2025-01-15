@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Ssm\GetParametersByPath\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property 'String'|'StringList'|'SecureString' $Type
- * @property string $Value
- * @property int $Version
- * @property string $Selector
- * @property string $SourceResult
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
- * @property string $ARN
- * @property string $DataType
+ * @property string|null $Name
+ * @property 'String'|'StringList'|'SecureString'|null $Type
+ * @property string|null $Value
+ * @property int|null $Version
+ * @property string|null $Selector
+ * @property string|null $SourceResult
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
+ * @property string|null $ARN
+ * @property string|null $DataType
  */
 class Parameter extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Type?: 'String'|'StringList'|'SecureString',
-     *     Value?: string,
-     *     Version?: int,
-     *     Selector?: string,
-     *     SourceResult?: string,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     ARN?: string,
-     *     DataType?: string
+     *     Name?: string|null,
+     *     Type?: 'String'|'StringList'|'SecureString'|null,
+     *     Value?: string|null,
+     *     Version?: int|null,
+     *     Selector?: string|null,
+     *     SourceResult?: string|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     ARN?: string|null,
+     *     DataType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

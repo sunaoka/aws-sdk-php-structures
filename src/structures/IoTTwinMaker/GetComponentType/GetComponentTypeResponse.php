@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $workspaceId
- * @property bool $isSingleton
+ * @property bool|null $isSingleton
  * @property string $componentTypeId
- * @property string $description
- * @property array<string, Shapes\PropertyDefinitionResponse> $propertyDefinitions
- * @property list<string> $extendsFrom
- * @property array<string, Shapes\FunctionResponse> $functions
+ * @property string|null $description
+ * @property array<string, Shapes\PropertyDefinitionResponse>|null $propertyDefinitions
+ * @property list<string>|null $extendsFrom
+ * @property array<string, Shapes\FunctionResponse>|null $functions
  * @property \Aws\Api\DateTimeResult $creationDateTime
  * @property \Aws\Api\DateTimeResult $updateDateTime
  * @property string $arn
- * @property bool $isAbstract
- * @property bool $isSchemaInitialized
- * @property Shapes\Status $status
- * @property array<string, Shapes\PropertyGroupResponse> $propertyGroups
- * @property string $syncSource
- * @property string $componentTypeName
- * @property array<string, Shapes\CompositeComponentTypeResponse> $compositeComponentTypes
+ * @property bool|null $isAbstract
+ * @property bool|null $isSchemaInitialized
+ * @property Shapes\Status|null $status
+ * @property array<string, Shapes\PropertyGroupResponse>|null $propertyGroups
+ * @property string|null $syncSource
+ * @property string|null $componentTypeName
+ * @property array<string, Shapes\CompositeComponentTypeResponse>|null $compositeComponentTypes
  */
 class GetComponentTypeResponse extends Response
 {

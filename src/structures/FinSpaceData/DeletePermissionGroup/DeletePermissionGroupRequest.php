@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $permissionGroupId
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeletePermissionGroupRequest extends Request
 {
     /**
      * @param array{
      *     permissionGroupId: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

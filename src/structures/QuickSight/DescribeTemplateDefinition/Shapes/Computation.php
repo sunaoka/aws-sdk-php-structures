@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TopBottomRankedComputation $TopBottomRanked
- * @property TopBottomMoversComputation $TopBottomMovers
- * @property TotalAggregationComputation $TotalAggregation
- * @property MaximumMinimumComputation $MaximumMinimum
- * @property MetricComparisonComputation $MetricComparison
- * @property PeriodOverPeriodComputation $PeriodOverPeriod
- * @property PeriodToDateComputation $PeriodToDate
- * @property GrowthRateComputation $GrowthRate
- * @property UniqueValuesComputation $UniqueValues
- * @property ForecastComputation $Forecast
+ * @property TopBottomRankedComputation|null $TopBottomRanked
+ * @property TopBottomMoversComputation|null $TopBottomMovers
+ * @property TotalAggregationComputation|null $TotalAggregation
+ * @property MaximumMinimumComputation|null $MaximumMinimum
+ * @property MetricComparisonComputation|null $MetricComparison
+ * @property PeriodOverPeriodComputation|null $PeriodOverPeriod
+ * @property PeriodToDateComputation|null $PeriodToDate
+ * @property GrowthRateComputation|null $GrowthRate
+ * @property UniqueValuesComputation|null $UniqueValues
+ * @property ForecastComputation|null $Forecast
  */
 class Computation extends Shape
 {
     /**
      * @param array{
-     *     TopBottomRanked?: TopBottomRankedComputation,
-     *     TopBottomMovers?: TopBottomMoversComputation,
-     *     TotalAggregation?: TotalAggregationComputation,
-     *     MaximumMinimum?: MaximumMinimumComputation,
-     *     MetricComparison?: MetricComparisonComputation,
-     *     PeriodOverPeriod?: PeriodOverPeriodComputation,
-     *     PeriodToDate?: PeriodToDateComputation,
-     *     GrowthRate?: GrowthRateComputation,
-     *     UniqueValues?: UniqueValuesComputation,
-     *     Forecast?: ForecastComputation
+     *     TopBottomRanked?: TopBottomRankedComputation|null,
+     *     TopBottomMovers?: TopBottomMoversComputation|null,
+     *     TotalAggregation?: TotalAggregationComputation|null,
+     *     MaximumMinimum?: MaximumMinimumComputation|null,
+     *     MetricComparison?: MetricComparisonComputation|null,
+     *     PeriodOverPeriod?: PeriodOverPeriodComputation|null,
+     *     PeriodToDate?: PeriodToDateComputation|null,
+     *     GrowthRate?: GrowthRateComputation|null,
+     *     UniqueValues?: UniqueValuesComputation|null,
+     *     Forecast?: ForecastComputation|null
      * } $args
      */
     public function __construct(array $args = [])

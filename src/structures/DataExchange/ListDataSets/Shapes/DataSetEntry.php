@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $Name
  * @property 'OWNED'|'ENTITLED' $Origin
- * @property OriginDetails $OriginDetails
- * @property string $SourceId
+ * @property OriginDetails|null $OriginDetails
+ * @property string|null $SourceId
  * @property \Aws\Api\DateTimeResult $UpdatedAt
  */
 class DataSetEntry extends Shape
@@ -27,8 +27,8 @@ class DataSetEntry extends Shape
      *     Id: string,
      *     Name: string,
      *     Origin: 'OWNED'|'ENTITLED',
-     *     OriginDetails?: OriginDetails,
-     *     SourceId?: string,
+     *     OriginDetails?: OriginDetails|null,
+     *     SourceId?: string|null,
      *     UpdatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

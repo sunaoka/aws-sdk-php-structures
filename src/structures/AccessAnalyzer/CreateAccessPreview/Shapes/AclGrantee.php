@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\CreateAccessPreview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $uri
+ * @property string|null $id
+ * @property string|null $uri
  */
 class AclGrantee extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     uri?: string
+     *     id?: string|null,
+     *     uri?: string|null
      * } $args
      */
     public function __construct(array $args = [])

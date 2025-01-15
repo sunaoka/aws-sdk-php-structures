@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Dataset> $Datasets
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListDatasetsResponse extends Response
 {

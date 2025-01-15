@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\GetCrawlerMetrics;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $CrawlerNameList
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $CrawlerNameList
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class GetCrawlerMetricsRequest extends Request
 {
     /**
      * @param array{
-     *     CrawlerNameList?: list<string>,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     CrawlerNameList?: list<string>|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

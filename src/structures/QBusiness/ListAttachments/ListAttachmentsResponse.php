@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\QBusiness\ListAttachments;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Attachment> $attachments
- * @property string $nextToken
+ * @property list<Shapes\Attachment>|null $attachments
+ * @property string|null $nextToken
  */
 class ListAttachmentsResponse extends Response
 {

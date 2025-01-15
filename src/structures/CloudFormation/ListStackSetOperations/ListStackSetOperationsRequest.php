@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackSetName
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property 'SELF'|'DELEGATED_ADMIN' $CallAs
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property 'SELF'|'DELEGATED_ADMIN'|null $CallAs
  */
 class ListStackSetOperationsRequest extends Request
 {
     /**
      * @param array{
      *     StackSetName: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'|null
      * } $args
      */
     public function __construct(array $args)

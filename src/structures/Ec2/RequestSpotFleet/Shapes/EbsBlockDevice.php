@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Ec2\RequestSpotFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $DeleteOnTermination
- * @property int $Iops
- * @property string $SnapshotId
- * @property int $VolumeSize
- * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3' $VolumeType
- * @property string $KmsKeyId
- * @property int $Throughput
- * @property string $OutpostArn
- * @property bool $Encrypted
+ * @property bool|null $DeleteOnTermination
+ * @property int|null $Iops
+ * @property string|null $SnapshotId
+ * @property int|null $VolumeSize
+ * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null $VolumeType
+ * @property string|null $KmsKeyId
+ * @property int|null $Throughput
+ * @property string|null $OutpostArn
+ * @property bool|null $Encrypted
  */
 class EbsBlockDevice extends Shape
 {
     /**
      * @param array{
-     *     DeleteOnTermination?: bool,
-     *     Iops?: int,
-     *     SnapshotId?: string,
-     *     VolumeSize?: int,
-     *     VolumeType?: 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3',
-     *     KmsKeyId?: string,
-     *     Throughput?: int,
-     *     OutpostArn?: string,
-     *     Encrypted?: bool
+     *     DeleteOnTermination?: bool|null,
+     *     Iops?: int|null,
+     *     SnapshotId?: string|null,
+     *     VolumeSize?: int|null,
+     *     VolumeType?: 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null,
+     *     KmsKeyId?: string|null,
+     *     Throughput?: int|null,
+     *     OutpostArn?: string|null,
+     *     Encrypted?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

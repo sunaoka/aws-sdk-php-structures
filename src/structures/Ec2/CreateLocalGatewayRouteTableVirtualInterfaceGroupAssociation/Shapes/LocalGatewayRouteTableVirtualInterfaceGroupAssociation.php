@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateLocalGatewayRouteTableVirtualInterfac
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LocalGatewayRouteTableVirtualInterfaceGroupAssociationId
- * @property string $LocalGatewayVirtualInterfaceGroupId
- * @property string $LocalGatewayId
- * @property string $LocalGatewayRouteTableId
- * @property string $LocalGatewayRouteTableArn
- * @property string $OwnerId
- * @property string $State
- * @property list<Tag> $Tags
+ * @property string|null $LocalGatewayRouteTableVirtualInterfaceGroupAssociationId
+ * @property string|null $LocalGatewayVirtualInterfaceGroupId
+ * @property string|null $LocalGatewayId
+ * @property string|null $LocalGatewayRouteTableId
+ * @property string|null $LocalGatewayRouteTableArn
+ * @property string|null $OwnerId
+ * @property string|null $State
+ * @property list<Tag>|null $Tags
  */
 class LocalGatewayRouteTableVirtualInterfaceGroupAssociation extends Shape
 {
     /**
      * @param array{
-     *     LocalGatewayRouteTableVirtualInterfaceGroupAssociationId?: string,
-     *     LocalGatewayVirtualInterfaceGroupId?: string,
-     *     LocalGatewayId?: string,
-     *     LocalGatewayRouteTableId?: string,
-     *     LocalGatewayRouteTableArn?: string,
-     *     OwnerId?: string,
-     *     State?: string,
-     *     Tags?: list<Tag>
+     *     LocalGatewayRouteTableVirtualInterfaceGroupAssociationId?: string|null,
+     *     LocalGatewayVirtualInterfaceGroupId?: string|null,
+     *     LocalGatewayId?: string|null,
+     *     LocalGatewayRouteTableId?: string|null,
+     *     LocalGatewayRouteTableArn?: string|null,
+     *     OwnerId?: string|null,
+     *     State?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

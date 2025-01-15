@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\DescribeCustomRoutingEndpoint
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EndpointGroupArn
- * @property string $EndpointGroupRegion
- * @property list<CustomRoutingDestinationDescription> $DestinationDescriptions
- * @property list<CustomRoutingEndpointDescription> $EndpointDescriptions
+ * @property string|null $EndpointGroupArn
+ * @property string|null $EndpointGroupRegion
+ * @property list<CustomRoutingDestinationDescription>|null $DestinationDescriptions
+ * @property list<CustomRoutingEndpointDescription>|null $EndpointDescriptions
  */
 class CustomRoutingEndpointGroup extends Shape
 {
     /**
      * @param array{
-     *     EndpointGroupArn?: string,
-     *     EndpointGroupRegion?: string,
-     *     DestinationDescriptions?: list<CustomRoutingDestinationDescription>,
-     *     EndpointDescriptions?: list<CustomRoutingEndpointDescription>
+     *     EndpointGroupArn?: string|null,
+     *     EndpointGroupRegion?: string|null,
+     *     DestinationDescriptions?: list<CustomRoutingDestinationDescription>|null,
+     *     EndpointDescriptions?: list<CustomRoutingEndpointDescription>|null
      * } $args
      */
     public function __construct(array $args = [])

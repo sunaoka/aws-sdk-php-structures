@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $environmentId
  * @property string $databaseName
- * @property string $description
- * @property array<string, string> $tags
+ * @property string|null $description
+ * @property array<string, string>|null $tags
  * @property string $clientToken
  */
 class CreateKxDatabaseRequest extends Request
@@ -17,8 +17,8 @@ class CreateKxDatabaseRequest extends Request
      * @param array{
      *     environmentId: string,
      *     databaseName: string,
-     *     description?: string,
-     *     tags?: array<string, string>,
+     *     description?: string|null,
+     *     tags?: array<string, string>|null,
      *     clientToken: string
      * } $args
      */

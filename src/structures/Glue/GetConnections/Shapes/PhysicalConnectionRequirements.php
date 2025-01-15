@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\GetConnections\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubnetId
- * @property list<string> $SecurityGroupIdList
- * @property string $AvailabilityZone
+ * @property string|null $SubnetId
+ * @property list<string>|null $SecurityGroupIdList
+ * @property string|null $AvailabilityZone
  */
 class PhysicalConnectionRequirements extends Shape
 {
     /**
      * @param array{
-     *     SubnetId?: string,
-     *     SecurityGroupIdList?: list<string>,
-     *     AvailabilityZone?: string
+     *     SubnetId?: string|null,
+     *     SecurityGroupIdList?: list<string>|null,
+     *     AvailabilityZone?: string|null
      * } $args
      */
     public function __construct(array $args = [])

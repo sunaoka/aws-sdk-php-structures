@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyLocalGatewayRoute;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DestinationCidrBlock
+ * @property string|null $DestinationCidrBlock
  * @property string $LocalGatewayRouteTableId
- * @property string $LocalGatewayVirtualInterfaceGroupId
- * @property string $NetworkInterfaceId
- * @property bool $DryRun
- * @property string $DestinationPrefixListId
+ * @property string|null $LocalGatewayVirtualInterfaceGroupId
+ * @property string|null $NetworkInterfaceId
+ * @property bool|null $DryRun
+ * @property string|null $DestinationPrefixListId
  */
 class ModifyLocalGatewayRouteRequest extends Request
 {
     /**
      * @param array{
-     *     DestinationCidrBlock?: string,
+     *     DestinationCidrBlock?: string|null,
      *     LocalGatewayRouteTableId: string,
-     *     LocalGatewayVirtualInterfaceGroupId?: string,
-     *     NetworkInterfaceId?: string,
-     *     DryRun?: bool,
-     *     DestinationPrefixListId?: string
+     *     LocalGatewayVirtualInterfaceGroupId?: string|null,
+     *     NetworkInterfaceId?: string|null,
+     *     DryRun?: bool|null,
+     *     DestinationPrefixListId?: string|null
      * } $args
      */
     public function __construct(array $args)

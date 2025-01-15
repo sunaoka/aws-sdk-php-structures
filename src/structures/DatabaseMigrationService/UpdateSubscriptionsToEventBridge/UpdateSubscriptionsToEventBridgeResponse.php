@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\UpdateSubscriptionsToE
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Result
+ * @property string|null $Result
  */
 class UpdateSubscriptionsToEventBridgeResponse extends Response
 {

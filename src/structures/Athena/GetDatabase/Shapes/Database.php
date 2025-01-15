@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property array<string, string> $Parameters
+ * @property string|null $Description
+ * @property array<string, string>|null $Parameters
  */
 class Database extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     Parameters?: array<string, string>
+     *     Description?: string|null,
+     *     Parameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

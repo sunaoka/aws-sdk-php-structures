@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DynamoDb\ImportTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property 'AES256'|'KMS' $SSEType
- * @property string $KMSMasterKeyId
+ * @property bool|null $Enabled
+ * @property 'AES256'|'KMS'|null $SSEType
+ * @property string|null $KMSMasterKeyId
  */
 class SSESpecification extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     SSEType?: 'AES256'|'KMS',
-     *     KMSMasterKeyId?: string
+     *     Enabled?: bool|null,
+     *     SSEType?: 'AES256'|'KMS'|null,
+     *     KMSMasterKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Macie2\CreateClassificationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<JobScopeTerm> $and
+ * @property list<JobScopeTerm>|null $and
  */
 class JobScopingBlock extends Shape
 {
     /**
-     * @param array{and?: list<JobScopeTerm>} $args
+     * @param array{and?: list<JobScopeTerm>|null} $args
      */
     public function __construct(array $args = [])
     {

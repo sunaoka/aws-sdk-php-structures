@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\Comprehend\ListEntitiesDetectionJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $JobId
- * @property string $JobArn
- * @property string $JobName
- * @property 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOP_REQUESTED'|'STOPPED' $JobStatus
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $SubmitTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $EntityRecognizerArn
- * @property InputDataConfig $InputDataConfig
- * @property OutputDataConfig $OutputDataConfig
- * @property 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW' $LanguageCode
- * @property string $DataAccessRoleArn
- * @property string $VolumeKmsKeyId
- * @property VpcConfig $VpcConfig
- * @property string $FlywheelArn
+ * @property string|null $JobId
+ * @property string|null $JobArn
+ * @property string|null $JobName
+ * @property 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOP_REQUESTED'|'STOPPED'|null $JobStatus
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $SubmitTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $EntityRecognizerArn
+ * @property InputDataConfig|null $InputDataConfig
+ * @property OutputDataConfig|null $OutputDataConfig
+ * @property 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW'|null $LanguageCode
+ * @property string|null $DataAccessRoleArn
+ * @property string|null $VolumeKmsKeyId
+ * @property VpcConfig|null $VpcConfig
+ * @property string|null $FlywheelArn
  */
 class EntitiesDetectionJobProperties extends Shape
 {
     /**
      * @param array{
-     *     JobId?: string,
-     *     JobArn?: string,
-     *     JobName?: string,
-     *     JobStatus?: 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOP_REQUESTED'|'STOPPED',
-     *     Message?: string,
-     *     SubmitTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     EntityRecognizerArn?: string,
-     *     InputDataConfig?: InputDataConfig,
-     *     OutputDataConfig?: OutputDataConfig,
-     *     LanguageCode?: 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW',
-     *     DataAccessRoleArn?: string,
-     *     VolumeKmsKeyId?: string,
-     *     VpcConfig?: VpcConfig,
-     *     FlywheelArn?: string
+     *     JobId?: string|null,
+     *     JobArn?: string|null,
+     *     JobName?: string|null,
+     *     JobStatus?: 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'STOP_REQUESTED'|'STOPPED'|null,
+     *     Message?: string|null,
+     *     SubmitTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     EntityRecognizerArn?: string|null,
+     *     InputDataConfig?: InputDataConfig|null,
+     *     OutputDataConfig?: OutputDataConfig|null,
+     *     LanguageCode?: 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW'|null,
+     *     DataAccessRoleArn?: string|null,
+     *     VolumeKmsKeyId?: string|null,
+     *     VpcConfig?: VpcConfig|null,
+     *     FlywheelArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

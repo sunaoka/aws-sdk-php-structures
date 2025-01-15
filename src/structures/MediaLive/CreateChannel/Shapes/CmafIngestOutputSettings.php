@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NameModifier
+ * @property string|null $NameModifier
  */
 class CmafIngestOutputSettings extends Shape
 {
     /**
-     * @param array{NameModifier?: string} $args
+     * @param array{NameModifier?: string|null} $args
      */
     public function __construct(array $args = [])
     {

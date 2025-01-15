@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\DeleteIntegration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $IntegrationArn
- * @property string $IntegrationName
- * @property string $SourceArn
- * @property string $TargetArn
- * @property 'creating'|'active'|'modifying'|'failed'|'deleting'|'syncing'|'needs_attention' $Status
- * @property list<Shapes\IntegrationError> $Errors
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property string $Description
- * @property string $KMSKeyId
- * @property array<string, string> $AdditionalEncryptionContext
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $IntegrationArn
+ * @property string|null $IntegrationName
+ * @property string|null $SourceArn
+ * @property string|null $TargetArn
+ * @property 'creating'|'active'|'modifying'|'failed'|'deleting'|'syncing'|'needs_attention'|null $Status
+ * @property list<Shapes\IntegrationError>|null $Errors
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property string|null $Description
+ * @property string|null $KMSKeyId
+ * @property array<string, string>|null $AdditionalEncryptionContext
+ * @property list<Shapes\Tag>|null $Tags
  */
 class DeleteIntegrationResponse extends Response
 {

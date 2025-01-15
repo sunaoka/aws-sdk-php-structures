@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaTailor\DescribeSourceLocation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HeaderName
- * @property string $SecretArn
- * @property string $SecretStringKey
+ * @property string|null $HeaderName
+ * @property string|null $SecretArn
+ * @property string|null $SecretStringKey
  */
 class SecretsManagerAccessTokenConfiguration extends Shape
 {
     /**
      * @param array{
-     *     HeaderName?: string,
-     *     SecretArn?: string,
-     *     SecretStringKey?: string
+     *     HeaderName?: string|null,
+     *     SecretArn?: string|null,
+     *     SecretStringKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

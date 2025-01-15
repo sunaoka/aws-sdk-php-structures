@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateDataSource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\FormInput> $assetFormsInput
- * @property Shapes\DataSourceConfigurationInput $configuration
- * @property string $description
+ * @property list<Shapes\FormInput>|null $assetFormsInput
+ * @property Shapes\DataSourceConfigurationInput|null $configuration
+ * @property string|null $description
  * @property string $domainIdentifier
- * @property 'ENABLED'|'DISABLED' $enableSetting
+ * @property 'ENABLED'|'DISABLED'|null $enableSetting
  * @property string $identifier
- * @property string $name
- * @property bool $publishOnImport
- * @property Shapes\RecommendationConfiguration $recommendation
- * @property bool $retainPermissionsOnRevokeFailure
- * @property Shapes\ScheduleConfiguration $schedule
+ * @property string|null $name
+ * @property bool|null $publishOnImport
+ * @property Shapes\RecommendationConfiguration|null $recommendation
+ * @property bool|null $retainPermissionsOnRevokeFailure
+ * @property Shapes\ScheduleConfiguration|null $schedule
  */
 class UpdateDataSourceRequest extends Request
 {
     /**
      * @param array{
-     *     assetFormsInput?: list<Shapes\FormInput>,
-     *     configuration?: Shapes\DataSourceConfigurationInput,
-     *     description?: string,
+     *     assetFormsInput?: list<Shapes\FormInput>|null,
+     *     configuration?: Shapes\DataSourceConfigurationInput|null,
+     *     description?: string|null,
      *     domainIdentifier: string,
-     *     enableSetting?: 'ENABLED'|'DISABLED',
+     *     enableSetting?: 'ENABLED'|'DISABLED'|null,
      *     identifier: string,
-     *     name?: string,
-     *     publishOnImport?: bool,
-     *     recommendation?: Shapes\RecommendationConfiguration,
-     *     retainPermissionsOnRevokeFailure?: bool,
-     *     schedule?: Shapes\ScheduleConfiguration
+     *     name?: string|null,
+     *     publishOnImport?: bool|null,
+     *     recommendation?: Shapes\RecommendationConfiguration|null,
+     *     retainPermissionsOnRevokeFailure?: bool|null,
+     *     schedule?: Shapes\ScheduleConfiguration|null
      * } $args
      */
     public function __construct(array $args)

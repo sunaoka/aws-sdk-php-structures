@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Enabled'|'Disabled' $State
- * @property 'VideoOnly' $MuxType
+ * @property 'VideoOnly'|null $MuxType
  */
 class VideoArtifactsConfiguration extends Shape
 {
     /**
      * @param array{
      *     State: 'Enabled'|'Disabled',
-     *     MuxType?: 'VideoOnly'
+     *     MuxType?: 'VideoOnly'|null
      * } $args
      */
     public function __construct(array $args)

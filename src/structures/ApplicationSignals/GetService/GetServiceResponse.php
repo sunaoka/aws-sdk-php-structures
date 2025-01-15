@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\Service $Service
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property list<array<string, string>> $LogGroupReferences
+ * @property list<array<string, string>>|null $LogGroupReferences
  */
 class GetServiceResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property list<string> $Values
+ * @property list<string>|null $Values
  */
 class GroupConfigurationParameter extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Values?: list<string>
+     *     Values?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

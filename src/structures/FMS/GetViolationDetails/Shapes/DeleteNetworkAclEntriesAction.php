@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property ActionTarget $NetworkAclId
- * @property list<EntryDescription> $NetworkAclEntriesToBeDeleted
- * @property bool $FMSCanRemediate
+ * @property string|null $Description
+ * @property ActionTarget|null $NetworkAclId
+ * @property list<EntryDescription>|null $NetworkAclEntriesToBeDeleted
+ * @property bool|null $FMSCanRemediate
  */
 class DeleteNetworkAclEntriesAction extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     NetworkAclId?: ActionTarget,
-     *     NetworkAclEntriesToBeDeleted?: list<EntryDescription>,
-     *     FMSCanRemediate?: bool
+     *     Description?: string|null,
+     *     NetworkAclId?: ActionTarget|null,
+     *     NetworkAclEntriesToBeDeleted?: list<EntryDescription>|null,
+     *     FMSCanRemediate?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

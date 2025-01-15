@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectParticipant\GetTranscript\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $AbsoluteTime
- * @property int<0, 100> $MostRecent
+ * @property string|null $Id
+ * @property string|null $AbsoluteTime
+ * @property int<0, 100>|null $MostRecent
  */
 class StartPosition extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     AbsoluteTime?: string,
-     *     MostRecent?: int<0, 100>
+     *     Id?: string|null,
+     *     AbsoluteTime?: string|null,
+     *     MostRecent?: int<0, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

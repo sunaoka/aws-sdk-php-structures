@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\Suggest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<double> $BoundingBox
- * @property FilterCircle $Circle
- * @property list<string> $IncludeCountries
+ * @property list<double>|null $BoundingBox
+ * @property FilterCircle|null $Circle
+ * @property list<string>|null $IncludeCountries
  */
 class SuggestFilter extends Shape
 {
     /**
      * @param array{
-     *     BoundingBox?: list<double>,
-     *     Circle?: FilterCircle,
-     *     IncludeCountries?: list<string>
+     *     BoundingBox?: list<double>|null,
+     *     Circle?: FilterCircle|null,
+     *     IncludeCountries?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

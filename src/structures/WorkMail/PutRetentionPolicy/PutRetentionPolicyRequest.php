@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OrganizationId
- * @property string $Id
+ * @property string|null $Id
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property list<Shapes\FolderConfiguration> $FolderConfigurations
  */
 class PutRetentionPolicyRequest extends Request
@@ -16,9 +16,9 @@ class PutRetentionPolicyRequest extends Request
     /**
      * @param array{
      *     OrganizationId: string,
-     *     Id?: string,
+     *     Id?: string|null,
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     FolderConfigurations: list<Shapes\FolderConfiguration>
      * } $args
      */

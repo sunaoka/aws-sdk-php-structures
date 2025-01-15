@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\S3\GetObjectAttributes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ChecksumCRC32
- * @property string $ChecksumCRC32C
- * @property string $ChecksumSHA1
- * @property string $ChecksumSHA256
+ * @property string|null $ChecksumCRC32
+ * @property string|null $ChecksumCRC32C
+ * @property string|null $ChecksumSHA1
+ * @property string|null $ChecksumSHA256
  */
 class Checksum extends Shape
 {
     /**
      * @param array{
-     *     ChecksumCRC32?: string,
-     *     ChecksumCRC32C?: string,
-     *     ChecksumSHA1?: string,
-     *     ChecksumSHA256?: string
+     *     ChecksumCRC32?: string|null,
+     *     ChecksumCRC32C?: string|null,
+     *     ChecksumSHA1?: string|null,
+     *     ChecksumSHA256?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\S3Control\ListAccessGrantsInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccessGrantsInstanceId
- * @property string $AccessGrantsInstanceArn
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $IdentityCenterArn
- * @property string $IdentityCenterInstanceArn
- * @property string $IdentityCenterApplicationArn
+ * @property string|null $AccessGrantsInstanceId
+ * @property string|null $AccessGrantsInstanceArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $IdentityCenterArn
+ * @property string|null $IdentityCenterInstanceArn
+ * @property string|null $IdentityCenterApplicationArn
  */
 class ListAccessGrantsInstanceEntry extends Shape
 {
     /**
      * @param array{
-     *     AccessGrantsInstanceId?: string,
-     *     AccessGrantsInstanceArn?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     IdentityCenterArn?: string,
-     *     IdentityCenterInstanceArn?: string,
-     *     IdentityCenterApplicationArn?: string
+     *     AccessGrantsInstanceId?: string|null,
+     *     AccessGrantsInstanceArn?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     IdentityCenterArn?: string|null,
+     *     IdentityCenterInstanceArn?: string|null,
+     *     IdentityCenterApplicationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

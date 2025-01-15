@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityLake\CreateSubscriberNotification\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HttpsNotificationConfiguration $httpsNotificationConfiguration
- * @property SqsNotificationConfiguration $sqsNotificationConfiguration
+ * @property HttpsNotificationConfiguration|null $httpsNotificationConfiguration
+ * @property SqsNotificationConfiguration|null $sqsNotificationConfiguration
  */
 class NotificationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     httpsNotificationConfiguration?: HttpsNotificationConfiguration,
-     *     sqsNotificationConfiguration?: SqsNotificationConfiguration
+     *     httpsNotificationConfiguration?: HttpsNotificationConfiguration|null,
+     *     sqsNotificationConfiguration?: SqsNotificationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

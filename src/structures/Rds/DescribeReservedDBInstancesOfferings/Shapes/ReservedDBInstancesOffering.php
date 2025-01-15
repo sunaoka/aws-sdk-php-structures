@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeReservedDBInstancesOfferings\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReservedDBInstancesOfferingId
- * @property string $DBInstanceClass
- * @property int $Duration
- * @property double $FixedPrice
- * @property double $UsagePrice
- * @property string $CurrencyCode
- * @property string $ProductDescription
- * @property string $OfferingType
- * @property bool $MultiAZ
- * @property list<RecurringCharge> $RecurringCharges
+ * @property string|null $ReservedDBInstancesOfferingId
+ * @property string|null $DBInstanceClass
+ * @property int|null $Duration
+ * @property double|null $FixedPrice
+ * @property double|null $UsagePrice
+ * @property string|null $CurrencyCode
+ * @property string|null $ProductDescription
+ * @property string|null $OfferingType
+ * @property bool|null $MultiAZ
+ * @property list<RecurringCharge>|null $RecurringCharges
  */
 class ReservedDBInstancesOffering extends Shape
 {
     /**
      * @param array{
-     *     ReservedDBInstancesOfferingId?: string,
-     *     DBInstanceClass?: string,
-     *     Duration?: int,
-     *     FixedPrice?: double,
-     *     UsagePrice?: double,
-     *     CurrencyCode?: string,
-     *     ProductDescription?: string,
-     *     OfferingType?: string,
-     *     MultiAZ?: bool,
-     *     RecurringCharges?: list<RecurringCharge>
+     *     ReservedDBInstancesOfferingId?: string|null,
+     *     DBInstanceClass?: string|null,
+     *     Duration?: int|null,
+     *     FixedPrice?: double|null,
+     *     UsagePrice?: double|null,
+     *     CurrencyCode?: string|null,
+     *     ProductDescription?: string|null,
+     *     OfferingType?: string|null,
+     *     MultiAZ?: bool|null,
+     *     RecurringCharges?: list<RecurringCharge>|null
      * } $args
      */
     public function __construct(array $args = [])

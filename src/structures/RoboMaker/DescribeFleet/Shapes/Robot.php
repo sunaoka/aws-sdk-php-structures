@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\RoboMaker\DescribeFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
- * @property string $fleetArn
- * @property 'Available'|'Registered'|'PendingNewDeployment'|'Deploying'|'Failed'|'InSync'|'NoResponse' $status
- * @property string $greenGrassGroupId
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property 'X86_64'|'ARM64'|'ARMHF' $architecture
- * @property string $lastDeploymentJob
- * @property \Aws\Api\DateTimeResult $lastDeploymentTime
+ * @property string|null $arn
+ * @property string|null $name
+ * @property string|null $fleetArn
+ * @property 'Available'|'Registered'|'PendingNewDeployment'|'Deploying'|'Failed'|'InSync'|'NoResponse'|null $status
+ * @property string|null $greenGrassGroupId
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property 'X86_64'|'ARM64'|'ARMHF'|null $architecture
+ * @property string|null $lastDeploymentJob
+ * @property \Aws\Api\DateTimeResult|null $lastDeploymentTime
  */
 class Robot extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string,
-     *     fleetArn?: string,
-     *     status?: 'Available'|'Registered'|'PendingNewDeployment'|'Deploying'|'Failed'|'InSync'|'NoResponse',
-     *     greenGrassGroupId?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     architecture?: 'X86_64'|'ARM64'|'ARMHF',
-     *     lastDeploymentJob?: string,
-     *     lastDeploymentTime?: \Aws\Api\DateTimeResult
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     fleetArn?: string|null,
+     *     status?: 'Available'|'Registered'|'PendingNewDeployment'|'Deploying'|'Failed'|'InSync'|'NoResponse'|null,
+     *     greenGrassGroupId?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     architecture?: 'X86_64'|'ARM64'|'ARMHF'|null,
+     *     lastDeploymentJob?: string|null,
+     *     lastDeploymentTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

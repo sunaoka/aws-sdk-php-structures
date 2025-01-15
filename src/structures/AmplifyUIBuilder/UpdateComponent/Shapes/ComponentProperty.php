@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\UpdateComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $value
- * @property ComponentPropertyBindingProperties $bindingProperties
- * @property ComponentPropertyBindingProperties $collectionBindingProperties
- * @property string $defaultValue
- * @property string $model
- * @property array<string, FormBindingElement> $bindings
- * @property string $event
- * @property string $userAttribute
- * @property list<ComponentProperty> $concat
- * @property ComponentConditionProperty $condition
- * @property bool $configured
- * @property string $type
- * @property string $importedValue
- * @property string $componentName
- * @property string $property
+ * @property string|null $value
+ * @property ComponentPropertyBindingProperties|null $bindingProperties
+ * @property ComponentPropertyBindingProperties|null $collectionBindingProperties
+ * @property string|null $defaultValue
+ * @property string|null $model
+ * @property array<string, FormBindingElement>|null $bindings
+ * @property string|null $event
+ * @property string|null $userAttribute
+ * @property list<ComponentProperty>|null $concat
+ * @property ComponentConditionProperty|null $condition
+ * @property bool|null $configured
+ * @property string|null $type
+ * @property string|null $importedValue
+ * @property string|null $componentName
+ * @property string|null $property
  */
 class ComponentProperty extends Shape
 {
     /**
      * @param array{
-     *     value?: string,
-     *     bindingProperties?: ComponentPropertyBindingProperties,
-     *     collectionBindingProperties?: ComponentPropertyBindingProperties,
-     *     defaultValue?: string,
-     *     model?: string,
-     *     bindings?: array<string, FormBindingElement>,
-     *     event?: string,
-     *     userAttribute?: string,
-     *     concat?: list<ComponentProperty>,
-     *     condition?: ComponentConditionProperty,
-     *     configured?: bool,
-     *     type?: string,
-     *     importedValue?: string,
-     *     componentName?: string,
-     *     property?: string
+     *     value?: string|null,
+     *     bindingProperties?: ComponentPropertyBindingProperties|null,
+     *     collectionBindingProperties?: ComponentPropertyBindingProperties|null,
+     *     defaultValue?: string|null,
+     *     model?: string|null,
+     *     bindings?: array<string, FormBindingElement>|null,
+     *     event?: string|null,
+     *     userAttribute?: string|null,
+     *     concat?: list<ComponentProperty>|null,
+     *     condition?: ComponentConditionProperty|null,
+     *     configured?: bool|null,
+     *     type?: string|null,
+     *     importedValue?: string|null,
+     *     componentName?: string|null,
+     *     property?: string|null
      * } $args
      */
     public function __construct(array $args = [])

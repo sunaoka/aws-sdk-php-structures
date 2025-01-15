@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\UpdateStream;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
- * @property string $StreamARN
+ * @property string|null $StreamName
+ * @property string|null $StreamARN
  * @property string $CurrentVersion
- * @property string $DeviceName
- * @property string $MediaType
+ * @property string|null $DeviceName
+ * @property string|null $MediaType
  */
 class UpdateStreamRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
-     *     StreamARN?: string,
+     *     StreamName?: string|null,
+     *     StreamARN?: string|null,
      *     CurrentVersion: string,
-     *     DeviceName?: string,
-     *     MediaType?: string
+     *     DeviceName?: string|null,
+     *     MediaType?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DescribeLoadBalancers\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceId
+ * @property string|null $InstanceId
  */
 class Instance extends Shape
 {
     /**
-     * @param array{InstanceId?: string} $args
+     * @param array{InstanceId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteInternetGateway;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $InternetGatewayId
  */
 class DeleteInternetGatewayRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     InternetGatewayId: string
      * } $args
      */

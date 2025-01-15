@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $domain
- * @property string $name
- * @property string $path
+ * @property string|null $name
+ * @property string|null $path
  */
 class CookieSpecification extends Shape
 {
     /**
      * @param array{
      *     domain: string,
-     *     name?: string,
-     *     path?: string
+     *     name?: string|null,
+     *     path?: string|null
      * } $args
      */
     public function __construct(array $args)

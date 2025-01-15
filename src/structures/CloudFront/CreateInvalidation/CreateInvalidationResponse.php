@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudFront\CreateInvalidation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Location
- * @property Shapes\Invalidation $Invalidation
+ * @property string|null $Location
+ * @property Shapes\Invalidation|null $Invalidation
  */
 class CreateInvalidationResponse extends Response
 {

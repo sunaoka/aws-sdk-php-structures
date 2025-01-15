@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BillingMode
- * @property string $LastUpdateToPayPerRequestDateTime
+ * @property string|null $BillingMode
+ * @property string|null $LastUpdateToPayPerRequestDateTime
  */
 class AwsDynamoDbTableBillingModeSummary extends Shape
 {
     /**
      * @param array{
-     *     BillingMode?: string,
-     *     LastUpdateToPayPerRequestDateTime?: string
+     *     BillingMode?: string|null,
+     *     LastUpdateToPayPerRequestDateTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

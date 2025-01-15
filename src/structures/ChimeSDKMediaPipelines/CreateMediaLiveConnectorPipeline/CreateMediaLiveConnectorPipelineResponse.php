@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\CreateMediaLiveConnector
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\MediaLiveConnectorPipeline $MediaLiveConnectorPipeline
+ * @property Shapes\MediaLiveConnectorPipeline|null $MediaLiveConnectorPipeline
  */
 class CreateMediaLiveConnectorPipelineResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\CreateConfigurationPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $EnabledSecurityControlIdentifiers
- * @property list<string> $DisabledSecurityControlIdentifiers
- * @property list<SecurityControlCustomParameter> $SecurityControlCustomParameters
+ * @property list<string>|null $EnabledSecurityControlIdentifiers
+ * @property list<string>|null $DisabledSecurityControlIdentifiers
+ * @property list<SecurityControlCustomParameter>|null $SecurityControlCustomParameters
  */
 class SecurityControlsConfiguration extends Shape
 {
     /**
      * @param array{
-     *     EnabledSecurityControlIdentifiers?: list<string>,
-     *     DisabledSecurityControlIdentifiers?: list<string>,
-     *     SecurityControlCustomParameters?: list<SecurityControlCustomParameter>
+     *     EnabledSecurityControlIdentifiers?: list<string>|null,
+     *     DisabledSecurityControlIdentifiers?: list<string>|null,
+     *     SecurityControlCustomParameters?: list<SecurityControlCustomParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\CdiInputSpecification $CdiInputSpecification
- * @property 'STANDARD'|'SINGLE_PIPELINE' $ChannelClass
- * @property list<Shapes\OutputDestination> $Destinations
- * @property Shapes\EncoderSettings $EncoderSettings
- * @property list<Shapes\InputAttachment> $InputAttachments
- * @property Shapes\InputSpecification $InputSpecification
- * @property 'ERROR'|'WARNING'|'INFO'|'DEBUG'|'DISABLED' $LogLevel
- * @property Shapes\MaintenanceCreateSettings $Maintenance
- * @property string $Name
- * @property string $RequestId
- * @property string $Reserved
- * @property string $RoleArn
- * @property array<string, string> $Tags
- * @property Shapes\VpcOutputSettings $Vpc
- * @property Shapes\AnywhereSettings $AnywhereSettings
- * @property Shapes\ChannelEngineVersionRequest $ChannelEngineVersion
- * @property bool $DryRun
+ * @property Shapes\CdiInputSpecification|null $CdiInputSpecification
+ * @property 'STANDARD'|'SINGLE_PIPELINE'|null $ChannelClass
+ * @property list<Shapes\OutputDestination>|null $Destinations
+ * @property Shapes\EncoderSettings|null $EncoderSettings
+ * @property list<Shapes\InputAttachment>|null $InputAttachments
+ * @property Shapes\InputSpecification|null $InputSpecification
+ * @property 'ERROR'|'WARNING'|'INFO'|'DEBUG'|'DISABLED'|null $LogLevel
+ * @property Shapes\MaintenanceCreateSettings|null $Maintenance
+ * @property string|null $Name
+ * @property string|null $RequestId
+ * @property string|null $Reserved
+ * @property string|null $RoleArn
+ * @property array<string, string>|null $Tags
+ * @property Shapes\VpcOutputSettings|null $Vpc
+ * @property Shapes\AnywhereSettings|null $AnywhereSettings
+ * @property Shapes\ChannelEngineVersionRequest|null $ChannelEngineVersion
+ * @property bool|null $DryRun
  */
 class CreateChannelRequest extends Request
 {
     /**
      * @param array{
-     *     CdiInputSpecification?: Shapes\CdiInputSpecification,
-     *     ChannelClass?: 'STANDARD'|'SINGLE_PIPELINE',
-     *     Destinations?: list<Shapes\OutputDestination>,
-     *     EncoderSettings?: Shapes\EncoderSettings,
-     *     InputAttachments?: list<Shapes\InputAttachment>,
-     *     InputSpecification?: Shapes\InputSpecification,
-     *     LogLevel?: 'ERROR'|'WARNING'|'INFO'|'DEBUG'|'DISABLED',
-     *     Maintenance?: Shapes\MaintenanceCreateSettings,
-     *     Name?: string,
-     *     RequestId?: string,
-     *     Reserved?: string,
-     *     RoleArn?: string,
-     *     Tags?: array<string, string>,
-     *     Vpc?: Shapes\VpcOutputSettings,
-     *     AnywhereSettings?: Shapes\AnywhereSettings,
-     *     ChannelEngineVersion?: Shapes\ChannelEngineVersionRequest,
-     *     DryRun?: bool
+     *     CdiInputSpecification?: Shapes\CdiInputSpecification|null,
+     *     ChannelClass?: 'STANDARD'|'SINGLE_PIPELINE'|null,
+     *     Destinations?: list<Shapes\OutputDestination>|null,
+     *     EncoderSettings?: Shapes\EncoderSettings|null,
+     *     InputAttachments?: list<Shapes\InputAttachment>|null,
+     *     InputSpecification?: Shapes\InputSpecification|null,
+     *     LogLevel?: 'ERROR'|'WARNING'|'INFO'|'DEBUG'|'DISABLED'|null,
+     *     Maintenance?: Shapes\MaintenanceCreateSettings|null,
+     *     Name?: string|null,
+     *     RequestId?: string|null,
+     *     Reserved?: string|null,
+     *     RoleArn?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     Vpc?: Shapes\VpcOutputSettings|null,
+     *     AnywhereSettings?: Shapes\AnywhereSettings|null,
+     *     ChannelEngineVersion?: Shapes\ChannelEngineVersionRequest|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

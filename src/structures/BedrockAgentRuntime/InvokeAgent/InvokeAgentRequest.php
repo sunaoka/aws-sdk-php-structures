@@ -7,15 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $agentAliasId
  * @property string $agentId
- * @property Shapes\BedrockModelConfigurations $bedrockModelConfigurations
- * @property bool $enableTrace
- * @property bool $endSession
- * @property string $inputText
- * @property string $memoryId
+ * @property Shapes\BedrockModelConfigurations|null $bedrockModelConfigurations
+ * @property bool|null $enableTrace
+ * @property bool|null $endSession
+ * @property string|null $inputText
+ * @property string|null $memoryId
  * @property string $sessionId
- * @property Shapes\SessionState $sessionState
- * @property string $sourceArn
- * @property Shapes\StreamingConfigurations $streamingConfigurations
+ * @property Shapes\SessionState|null $sessionState
+ * @property string|null $sourceArn
+ * @property Shapes\StreamingConfigurations|null $streamingConfigurations
  */
 class InvokeAgentRequest extends Request
 {
@@ -23,15 +23,15 @@ class InvokeAgentRequest extends Request
      * @param array{
      *     agentAliasId: string,
      *     agentId: string,
-     *     bedrockModelConfigurations?: Shapes\BedrockModelConfigurations,
-     *     enableTrace?: bool,
-     *     endSession?: bool,
-     *     inputText?: string,
-     *     memoryId?: string,
+     *     bedrockModelConfigurations?: Shapes\BedrockModelConfigurations|null,
+     *     enableTrace?: bool|null,
+     *     endSession?: bool|null,
+     *     inputText?: string|null,
+     *     memoryId?: string|null,
      *     sessionId: string,
-     *     sessionState?: Shapes\SessionState,
-     *     sourceArn?: string,
-     *     streamingConfigurations?: Shapes\StreamingConfigurations
+     *     sessionState?: Shapes\SessionState|null,
+     *     sourceArn?: string|null,
+     *     streamingConfigurations?: Shapes\StreamingConfigurations|null
      * } $args
      */
     public function __construct(array $args)

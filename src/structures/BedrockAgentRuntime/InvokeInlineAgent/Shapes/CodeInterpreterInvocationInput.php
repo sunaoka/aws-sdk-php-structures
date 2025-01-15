@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $code
- * @property list<string> $files
+ * @property string|null $code
+ * @property list<string>|null $files
  */
 class CodeInterpreterInvocationInput extends Shape
 {
     /**
      * @param array{
-     *     code?: string,
-     *     files?: list<string>
+     *     code?: string|null,
+     *     files?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

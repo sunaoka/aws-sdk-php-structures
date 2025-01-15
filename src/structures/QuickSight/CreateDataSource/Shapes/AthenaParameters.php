@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WorkGroup
- * @property string $RoleArn
+ * @property string|null $WorkGroup
+ * @property string|null $RoleArn
  */
 class AthenaParameters extends Shape
 {
     /**
      * @param array{
-     *     WorkGroup?: string,
-     *     RoleArn?: string
+     *     WorkGroup?: string|null,
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

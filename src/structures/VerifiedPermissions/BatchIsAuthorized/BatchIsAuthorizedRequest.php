@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $policyStoreId
- * @property Shapes\EntitiesDefinition $entities
+ * @property Shapes\EntitiesDefinition|null $entities
  * @property list<Shapes\BatchIsAuthorizedInputItem> $requests
  */
 class BatchIsAuthorizedRequest extends Request
@@ -14,7 +14,7 @@ class BatchIsAuthorizedRequest extends Request
     /**
      * @param array{
      *     policyStoreId: string,
-     *     entities?: Shapes\EntitiesDefinition,
+     *     entities?: Shapes\EntitiesDefinition|null,
      *     requests: list<Shapes\BatchIsAuthorizedInputItem>
      * } $args
      */

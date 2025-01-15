@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApplicationId
  * @property string $JourneyId
- * @property string $NextToken
- * @property string $PageSize
+ * @property string|null $NextToken
+ * @property string|null $PageSize
  * @property string $RunId
  */
 class GetJourneyRunExecutionMetricsRequest extends Request
@@ -17,8 +17,8 @@ class GetJourneyRunExecutionMetricsRequest extends Request
      * @param array{
      *     ApplicationId: string,
      *     JourneyId: string,
-     *     NextToken?: string,
-     *     PageSize?: string,
+     *     NextToken?: string|null,
+     *     PageSize?: string|null,
      *     RunId: string
      * } $args
      */

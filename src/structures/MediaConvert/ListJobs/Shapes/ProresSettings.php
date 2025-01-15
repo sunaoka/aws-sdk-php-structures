@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PRESERVE_444_SAMPLING'|'SUBSAMPLE_TO_422' $ChromaSampling
- * @property 'APPLE_PRORES_422'|'APPLE_PRORES_422_HQ'|'APPLE_PRORES_422_LT'|'APPLE_PRORES_422_PROXY'|'APPLE_PRORES_4444'|'APPLE_PRORES_4444_XQ' $CodecProfile
- * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
- * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int<1, 2147483647> $FramerateDenominator
- * @property int<1, 2147483647> $FramerateNumerator
- * @property 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD' $InterlaceMode
- * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $ParControl
- * @property int<1, 2147483647> $ParDenominator
- * @property int<1, 2147483647> $ParNumerator
- * @property 'INTERLACED'|'INTERLACED_OPTIMIZE' $ScanTypeConversionMode
- * @property 'DISABLED'|'ENABLED' $SlowPal
- * @property 'NONE'|'HARD' $Telecine
+ * @property 'PRESERVE_444_SAMPLING'|'SUBSAMPLE_TO_422'|null $ChromaSampling
+ * @property 'APPLE_PRORES_422'|'APPLE_PRORES_422_HQ'|'APPLE_PRORES_422_LT'|'APPLE_PRORES_422_PROXY'|'APPLE_PRORES_4444'|'APPLE_PRORES_4444_XQ'|null $CodecProfile
+ * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
+ * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
+ * @property int<1, 2147483647>|null $FramerateDenominator
+ * @property int<1, 2147483647>|null $FramerateNumerator
+ * @property 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD'|null $InterlaceMode
+ * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $ParControl
+ * @property int<1, 2147483647>|null $ParDenominator
+ * @property int<1, 2147483647>|null $ParNumerator
+ * @property 'INTERLACED'|'INTERLACED_OPTIMIZE'|null $ScanTypeConversionMode
+ * @property 'DISABLED'|'ENABLED'|null $SlowPal
+ * @property 'NONE'|'HARD'|null $Telecine
  */
 class ProresSettings extends Shape
 {
     /**
      * @param array{
-     *     ChromaSampling?: 'PRESERVE_444_SAMPLING'|'SUBSAMPLE_TO_422',
-     *     CodecProfile?: 'APPLE_PRORES_422'|'APPLE_PRORES_422_HQ'|'APPLE_PRORES_422_LT'|'APPLE_PRORES_422_PROXY'|'APPLE_PRORES_4444'|'APPLE_PRORES_4444_XQ',
-     *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
-     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int<1, 2147483647>,
-     *     FramerateNumerator?: int<1, 2147483647>,
-     *     InterlaceMode?: 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD',
-     *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
-     *     ParDenominator?: int<1, 2147483647>,
-     *     ParNumerator?: int<1, 2147483647>,
-     *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE',
-     *     SlowPal?: 'DISABLED'|'ENABLED',
-     *     Telecine?: 'NONE'|'HARD'
+     *     ChromaSampling?: 'PRESERVE_444_SAMPLING'|'SUBSAMPLE_TO_422'|null,
+     *     CodecProfile?: 'APPLE_PRORES_422'|'APPLE_PRORES_422_HQ'|'APPLE_PRORES_422_LT'|'APPLE_PRORES_422_PROXY'|'APPLE_PRORES_4444'|'APPLE_PRORES_4444_XQ'|null,
+     *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
+     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
+     *     FramerateDenominator?: int<1, 2147483647>|null,
+     *     FramerateNumerator?: int<1, 2147483647>|null,
+     *     InterlaceMode?: 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD'|null,
+     *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
+     *     ParDenominator?: int<1, 2147483647>|null,
+     *     ParNumerator?: int<1, 2147483647>|null,
+     *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE'|null,
+     *     SlowPal?: 'DISABLED'|'ENABLED'|null,
+     *     Telecine?: 'NONE'|'HARD'|null
      * } $args
      */
     public function __construct(array $args = [])

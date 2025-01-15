@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\PutPortfoli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ManagementPreference $managementPreference
+ * @property ManagementPreference|null $managementPreference
  */
 class ApplicationPreferences extends Shape
 {
     /**
-     * @param array{managementPreference?: ManagementPreference} $args
+     * @param array{managementPreference?: ManagementPreference|null} $args
      */
     public function __construct(array $args = [])
     {

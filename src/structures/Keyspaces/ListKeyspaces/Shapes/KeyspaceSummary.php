@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $keyspaceName
  * @property string $resourceArn
  * @property 'SINGLE_REGION'|'MULTI_REGION' $replicationStrategy
- * @property list<string> $replicationRegions
+ * @property list<string>|null $replicationRegions
  */
 class KeyspaceSummary extends Shape
 {
@@ -17,7 +17,7 @@ class KeyspaceSummary extends Shape
      *     keyspaceName: string,
      *     resourceArn: string,
      *     replicationStrategy: 'SINGLE_REGION'|'MULTI_REGION',
-     *     replicationRegions?: list<string>
+     *     replicationRegions?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

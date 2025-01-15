@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DirectoryId
  * @property string $ComputerName
  * @property string $Password
- * @property string $OrganizationalUnitDistinguishedName
- * @property list<Shapes\Attribute> $ComputerAttributes
+ * @property string|null $OrganizationalUnitDistinguishedName
+ * @property list<Shapes\Attribute>|null $ComputerAttributes
  */
 class CreateComputerRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateComputerRequest extends Request
      *     DirectoryId: string,
      *     ComputerName: string,
      *     Password: string,
-     *     OrganizationalUnitDistinguishedName?: string,
-     *     ComputerAttributes?: list<Shapes\Attribute>
+     *     OrganizationalUnitDistinguishedName?: string|null,
+     *     ComputerAttributes?: list<Shapes\Attribute>|null
      * } $args
      */
     public function __construct(array $args)

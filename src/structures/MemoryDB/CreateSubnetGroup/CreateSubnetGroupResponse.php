@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MemoryDB\CreateSubnetGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\SubnetGroup $SubnetGroup
+ * @property Shapes\SubnetGroup|null $SubnetGroup
  */
 class CreateSubnetGroupResponse extends Response
 {

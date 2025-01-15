@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppTest\ListTestCases;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $testCaseIds
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property list<string>|null $testCaseIds
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListTestCasesRequest extends Request
 {
     /**
      * @param array{
-     *     testCaseIds?: list<string>,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     testCaseIds?: list<string>|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

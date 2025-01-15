@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ObservabilityAdmin\ListResourceTelemetryForOrga
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $AccountIdentifiers
- * @property string $ResourceIdentifierPrefix
- * @property list<'AWS::EC2::Instance'|'AWS::EC2::VPC'|'AWS::Lambda::Function'> $ResourceTypes
- * @property array<'Logs'|'Metrics'|'Traces', 'Enabled'|'Disabled'|'NotApplicable'> $TelemetryConfigurationState
- * @property array<string, string> $ResourceTags
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $AccountIdentifiers
+ * @property string|null $ResourceIdentifierPrefix
+ * @property list<'AWS::EC2::Instance'|'AWS::EC2::VPC'|'AWS::Lambda::Function'>|null $ResourceTypes
+ * @property array<'Logs'|'Metrics'|'Traces', 'Enabled'|'Disabled'|'NotApplicable'>|null $TelemetryConfigurationState
+ * @property array<string, string>|null $ResourceTags
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListResourceTelemetryForOrganizationRequest extends Request
 {
     /**
      * @param array{
-     *     AccountIdentifiers?: list<string>,
-     *     ResourceIdentifierPrefix?: string,
-     *     ResourceTypes?: list<'AWS::EC2::Instance'|'AWS::EC2::VPC'|'AWS::Lambda::Function'>,
-     *     TelemetryConfigurationState?: array<'Logs'|'Metrics'|'Traces', 'Enabled'|'Disabled'|'NotApplicable'>,
-     *     ResourceTags?: array<string, string>,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string
+     *     AccountIdentifiers?: list<string>|null,
+     *     ResourceIdentifierPrefix?: string|null,
+     *     ResourceTypes?: list<'AWS::EC2::Instance'|'AWS::EC2::VPC'|'AWS::Lambda::Function'>|null,
+     *     TelemetryConfigurationState?: array<'Logs'|'Metrics'|'Traces', 'Enabled'|'Disabled'|'NotApplicable'>|null,
+     *     ResourceTags?: array<string, string>|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SMALL'|'MEDIUM'|'LARGE'|'WHOLE' $ArcThickness
+ * @property 'SMALL'|'MEDIUM'|'LARGE'|'WHOLE'|null $ArcThickness
  */
 class ArcOptions extends Shape
 {
     /**
-     * @param array{ArcThickness?: 'SMALL'|'MEDIUM'|'LARGE'|'WHOLE'} $args
+     * @param array{ArcThickness?: 'SMALL'|'MEDIUM'|'LARGE'|'WHOLE'|null} $args
      */
     public function __construct(array $args = [])
     {

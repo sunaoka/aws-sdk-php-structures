@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Textract\GetLendingAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'VALUE'|'CHILD'|'COMPLEX_FEATURES'|'MERGED_CELL'|'TITLE'|'ANSWER'|'TABLE'|'TABLE_TITLE'|'TABLE_FOOTER' $Type
- * @property list<string> $Ids
+ * @property 'VALUE'|'CHILD'|'COMPLEX_FEATURES'|'MERGED_CELL'|'TITLE'|'ANSWER'|'TABLE'|'TABLE_TITLE'|'TABLE_FOOTER'|null $Type
+ * @property list<string>|null $Ids
  */
 class Relationship extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'VALUE'|'CHILD'|'COMPLEX_FEATURES'|'MERGED_CELL'|'TITLE'|'ANSWER'|'TABLE'|'TABLE_TITLE'|'TABLE_FOOTER',
-     *     Ids?: list<string>
+     *     Type?: 'VALUE'|'CHILD'|'COMPLEX_FEATURES'|'MERGED_CELL'|'TITLE'|'ANSWER'|'TABLE'|'TABLE_TITLE'|'TABLE_FOOTER'|null,
+     *     Ids?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

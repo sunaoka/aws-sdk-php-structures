@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\S3\DeleteObjects\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property string $VersionId
- * @property string $Code
- * @property string $Message
+ * @property string|null $Key
+ * @property string|null $VersionId
+ * @property string|null $Code
+ * @property string|null $Message
  */
 class Error extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     VersionId?: string,
-     *     Code?: string,
-     *     Message?: string
+     *     Key?: string|null,
+     *     VersionId?: string|null,
+     *     Code?: string|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

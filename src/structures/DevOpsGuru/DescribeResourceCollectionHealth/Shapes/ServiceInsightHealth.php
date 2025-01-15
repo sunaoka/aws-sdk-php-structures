@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\DescribeResourceCollectionHealth\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $OpenProactiveInsights
- * @property int $OpenReactiveInsights
+ * @property int|null $OpenProactiveInsights
+ * @property int|null $OpenReactiveInsights
  */
 class ServiceInsightHealth extends Shape
 {
     /**
      * @param array{
-     *     OpenProactiveInsights?: int,
-     *     OpenReactiveInsights?: int
+     *     OpenProactiveInsights?: int|null,
+     *     OpenReactiveInsights?: int|null
      * } $args
      */
     public function __construct(array $args = [])

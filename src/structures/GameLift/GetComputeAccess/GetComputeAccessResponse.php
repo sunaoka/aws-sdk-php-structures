@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\GameLift\GetComputeAccess;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FleetId
- * @property string $FleetArn
- * @property string $ComputeName
- * @property string $ComputeArn
- * @property Shapes\AwsCredentials $Credentials
- * @property string $Target
- * @property list<Shapes\ContainerIdentifier> $ContainerIdentifiers
+ * @property string|null $FleetId
+ * @property string|null $FleetArn
+ * @property string|null $ComputeName
+ * @property string|null $ComputeArn
+ * @property Shapes\AwsCredentials|null $Credentials
+ * @property string|null $Target
+ * @property list<Shapes\ContainerIdentifier>|null $ContainerIdentifiers
  */
 class GetComputeAccessResponse extends Response
 {

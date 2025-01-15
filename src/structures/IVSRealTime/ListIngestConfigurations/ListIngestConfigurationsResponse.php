@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\IngestConfigurationSummary> $ingestConfigurations
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListIngestConfigurationsResponse extends Response
 {

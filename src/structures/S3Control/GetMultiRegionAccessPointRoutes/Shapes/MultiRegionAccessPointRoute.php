@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\S3Control\GetMultiRegionAccessPointRoutes\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Bucket
- * @property string $Region
+ * @property string|null $Bucket
+ * @property string|null $Region
  * @property int<0, 100> $TrafficDialPercentage
  */
 class MultiRegionAccessPointRoute extends Shape
 {
     /**
      * @param array{
-     *     Bucket?: string,
-     *     Region?: string,
+     *     Bucket?: string|null,
+     *     Region?: string|null,
      *     TrafficDialPercentage: int<0, 100>
      * } $args
      */

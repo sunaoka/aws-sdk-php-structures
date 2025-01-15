@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SocialMessaging\AssociateWhatsAppBusinessAccoun
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $associateInProgressToken
- * @property array<string, LinkedWhatsAppBusinessAccountIdMetaData> $linkedAccountsWithIncompleteSetup
+ * @property string|null $associateInProgressToken
+ * @property array<string, LinkedWhatsAppBusinessAccountIdMetaData>|null $linkedAccountsWithIncompleteSetup
  */
 class WhatsAppSignupCallbackResult extends Shape
 {
     /**
      * @param array{
-     *     associateInProgressToken?: string,
-     *     linkedAccountsWithIncompleteSetup?: array<string, LinkedWhatsAppBusinessAccountIdMetaData>
+     *     associateInProgressToken?: string|null,
+     *     linkedAccountsWithIncompleteSetup?: array<string, LinkedWhatsAppBusinessAccountIdMetaData>|null
      * } $args
      */
     public function __construct(array $args = [])

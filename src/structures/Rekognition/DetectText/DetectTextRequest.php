@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\Image $Image
- * @property Shapes\DetectTextFilters $Filters
+ * @property Shapes\DetectTextFilters|null $Filters
  */
 class DetectTextRequest extends Request
 {
     /**
      * @param array{
      *     Image: Shapes\Image,
-     *     Filters?: Shapes\DetectTextFilters
+     *     Filters?: Shapes\DetectTextFilters|null
      * } $args
      */
     public function __construct(array $args)

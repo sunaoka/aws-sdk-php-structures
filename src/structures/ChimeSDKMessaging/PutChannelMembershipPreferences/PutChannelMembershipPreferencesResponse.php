@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\PutChannelMembershipPreferenc
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChannelArn
- * @property Shapes\Identity $Member
- * @property Shapes\ChannelMembershipPreferences $Preferences
+ * @property string|null $ChannelArn
+ * @property Shapes\Identity|null $Member
+ * @property Shapes\ChannelMembershipPreferences|null $Preferences
  */
 class PutChannelMembershipPreferencesResponse extends Response
 {

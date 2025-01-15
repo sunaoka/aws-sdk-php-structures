@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AppInstanceUserArn
  * @property string $Name
- * @property string $Metadata
+ * @property string|null $Metadata
  */
 class UpdateAppInstanceUserRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateAppInstanceUserRequest extends Request
      * @param array{
      *     AppInstanceUserArn: string,
      *     Name: string,
-     *     Metadata?: string
+     *     Metadata?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $StreamType
- * @property KinesisStreamConfig $KinesisStreamConfig
+ * @property KinesisStreamConfig|null $KinesisStreamConfig
  */
 class EndPoint extends Shape
 {
     /**
      * @param array{
      *     StreamType: string,
-     *     KinesisStreamConfig?: KinesisStreamConfig
+     *     KinesisStreamConfig?: KinesisStreamConfig|null
      * } $args
      */
     public function __construct(array $args)

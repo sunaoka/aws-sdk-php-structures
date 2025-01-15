@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAssetBundleExportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Message
+ * @property string|null $Arn
+ * @property string|null $Message
  */
 class AssetBundleExportJobWarning extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Message?: string
+     *     Arn?: string|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

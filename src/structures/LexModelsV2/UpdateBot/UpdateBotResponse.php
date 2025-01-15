@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\UpdateBot;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $botId
- * @property string $botName
- * @property string $description
- * @property string $roleArn
- * @property Shapes\DataPrivacy $dataPrivacy
- * @property int<60, 86400> $idleSessionTTLInSeconds
- * @property 'Creating'|'Available'|'Inactive'|'Deleting'|'Failed'|'Versioning'|'Importing'|'Updating' $botStatus
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
- * @property 'Bot'|'BotNetwork' $botType
- * @property list<Shapes\BotMember> $botMembers
+ * @property string|null $botId
+ * @property string|null $botName
+ * @property string|null $description
+ * @property string|null $roleArn
+ * @property Shapes\DataPrivacy|null $dataPrivacy
+ * @property int<60, 86400>|null $idleSessionTTLInSeconds
+ * @property 'Creating'|'Available'|'Inactive'|'Deleting'|'Failed'|'Versioning'|'Importing'|'Updating'|null $botStatus
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
+ * @property 'Bot'|'BotNetwork'|null $botType
+ * @property list<Shapes\BotMember>|null $botMembers
  */
 class UpdateBotResponse extends Response
 {

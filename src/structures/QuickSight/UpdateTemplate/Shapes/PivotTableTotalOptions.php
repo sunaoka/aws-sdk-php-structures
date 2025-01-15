@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SubtotalOptions $RowSubtotalOptions
- * @property SubtotalOptions $ColumnSubtotalOptions
- * @property PivotTotalOptions $RowTotalOptions
- * @property PivotTotalOptions $ColumnTotalOptions
+ * @property SubtotalOptions|null $RowSubtotalOptions
+ * @property SubtotalOptions|null $ColumnSubtotalOptions
+ * @property PivotTotalOptions|null $RowTotalOptions
+ * @property PivotTotalOptions|null $ColumnTotalOptions
  */
 class PivotTableTotalOptions extends Shape
 {
     /**
      * @param array{
-     *     RowSubtotalOptions?: SubtotalOptions,
-     *     ColumnSubtotalOptions?: SubtotalOptions,
-     *     RowTotalOptions?: PivotTotalOptions,
-     *     ColumnTotalOptions?: PivotTotalOptions
+     *     RowSubtotalOptions?: SubtotalOptions|null,
+     *     ColumnSubtotalOptions?: SubtotalOptions|null,
+     *     RowTotalOptions?: PivotTotalOptions|null,
+     *     ColumnTotalOptions?: PivotTotalOptions|null
      * } $args
      */
     public function __construct(array $args = [])

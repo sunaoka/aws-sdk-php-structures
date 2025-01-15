@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $target
- * @property bool $recursive
- * @property string $marker
- * @property int<1, 250> $pageSize
+ * @property bool|null $recursive
+ * @property string|null $marker
+ * @property int<1, 250>|null $pageSize
  */
 class ListAttachedPoliciesRequest extends Request
 {
     /**
      * @param array{
      *     target: string,
-     *     recursive?: bool,
-     *     marker?: string,
-     *     pageSize?: int<1, 250>
+     *     recursive?: bool|null,
+     *     marker?: string|null,
+     *     pageSize?: int<1, 250>|null
      * } $args
      */
     public function __construct(array $args)

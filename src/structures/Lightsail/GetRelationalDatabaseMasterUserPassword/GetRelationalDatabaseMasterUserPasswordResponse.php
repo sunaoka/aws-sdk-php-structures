@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetRelationalDatabaseMasterUserPasswo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $masterUserPassword
- * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string|null $masterUserPassword
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  */
 class GetRelationalDatabaseMasterUserPasswordResponse extends Response
 {

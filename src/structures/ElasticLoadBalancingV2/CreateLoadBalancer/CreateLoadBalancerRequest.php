@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property list<string> $Subnets
- * @property list<Shapes\SubnetMapping> $SubnetMappings
- * @property list<string> $SecurityGroups
- * @property 'internet-facing'|'internal' $Scheme
- * @property list<Shapes\Tag> $Tags
- * @property 'application'|'network'|'gateway' $Type
- * @property 'ipv4'|'dualstack'|'dualstack-without-public-ipv4' $IpAddressType
- * @property string $CustomerOwnedIpv4Pool
- * @property 'on'|'off' $EnablePrefixForIpv6SourceNat
+ * @property list<string>|null $Subnets
+ * @property list<Shapes\SubnetMapping>|null $SubnetMappings
+ * @property list<string>|null $SecurityGroups
+ * @property 'internet-facing'|'internal'|null $Scheme
+ * @property list<Shapes\Tag>|null $Tags
+ * @property 'application'|'network'|'gateway'|null $Type
+ * @property 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null $IpAddressType
+ * @property string|null $CustomerOwnedIpv4Pool
+ * @property 'on'|'off'|null $EnablePrefixForIpv6SourceNat
  */
 class CreateLoadBalancerRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Subnets?: list<string>,
-     *     SubnetMappings?: list<Shapes\SubnetMapping>,
-     *     SecurityGroups?: list<string>,
-     *     Scheme?: 'internet-facing'|'internal',
-     *     Tags?: list<Shapes\Tag>,
-     *     Type?: 'application'|'network'|'gateway',
-     *     IpAddressType?: 'ipv4'|'dualstack'|'dualstack-without-public-ipv4',
-     *     CustomerOwnedIpv4Pool?: string,
-     *     EnablePrefixForIpv6SourceNat?: 'on'|'off'
+     *     Subnets?: list<string>|null,
+     *     SubnetMappings?: list<Shapes\SubnetMapping>|null,
+     *     SecurityGroups?: list<string>|null,
+     *     Scheme?: 'internet-facing'|'internal'|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Type?: 'application'|'network'|'gateway'|null,
+     *     IpAddressType?: 'ipv4'|'dualstack'|'dualstack-without-public-ipv4'|null,
+     *     CustomerOwnedIpv4Pool?: string|null,
+     *     EnablePrefixForIpv6SourceNat?: 'on'|'off'|null
      * } $args
      */
     public function __construct(array $args)

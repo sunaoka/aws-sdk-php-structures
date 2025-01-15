@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\DescribeMappedResourceConfiguratio
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
- * @property string $StreamARN
- * @property int<1, 1> $MaxResults
- * @property string $NextToken
+ * @property string|null $StreamName
+ * @property string|null $StreamARN
+ * @property int<1, 1>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeMappedResourceConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
-     *     StreamARN?: string,
-     *     MaxResults?: int<1, 1>,
-     *     NextToken?: string
+     *     StreamName?: string|null,
+     *     StreamARN?: string|null,
+     *     MaxResults?: int<1, 1>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreatePartnerInput\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property string $NetworkInterfaceId
+ * @property string|null $AvailabilityZone
+ * @property string|null $NetworkInterfaceId
  */
 class InputDestinationVpc extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     NetworkInterfaceId?: string
+     *     AvailabilityZone?: string|null,
+     *     NetworkInterfaceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

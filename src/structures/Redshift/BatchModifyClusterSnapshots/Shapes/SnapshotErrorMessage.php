@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Redshift\BatchModifyClusterSnapshots\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SnapshotIdentifier
- * @property string $SnapshotClusterIdentifier
- * @property string $FailureCode
- * @property string $FailureReason
+ * @property string|null $SnapshotIdentifier
+ * @property string|null $SnapshotClusterIdentifier
+ * @property string|null $FailureCode
+ * @property string|null $FailureReason
  */
 class SnapshotErrorMessage extends Shape
 {
     /**
      * @param array{
-     *     SnapshotIdentifier?: string,
-     *     SnapshotClusterIdentifier?: string,
-     *     FailureCode?: string,
-     *     FailureReason?: string
+     *     SnapshotIdentifier?: string|null,
+     *     SnapshotClusterIdentifier?: string|null,
+     *     FailureCode?: string|null,
+     *     FailureReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

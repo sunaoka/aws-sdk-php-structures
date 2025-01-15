@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $EdgeDeploymentPlanName
  * @property list<Shapes\EdgeDeploymentModelConfig> $ModelConfigs
  * @property string $DeviceFleetName
- * @property list<Shapes\DeploymentStage> $Stages
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\DeploymentStage>|null $Stages
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateEdgeDeploymentPlanRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateEdgeDeploymentPlanRequest extends Request
      *     EdgeDeploymentPlanName: string,
      *     ModelConfigs: list<Shapes\EdgeDeploymentModelConfig>,
      *     DeviceFleetName: string,
-     *     Stages?: list<Shapes\DeploymentStage>,
-     *     Tags?: list<Shapes\Tag>
+     *     Stages?: list<Shapes\DeploymentStage>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

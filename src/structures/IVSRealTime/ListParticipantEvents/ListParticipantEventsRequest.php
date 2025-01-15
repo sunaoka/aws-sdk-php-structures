@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $stageArn
  * @property string $sessionId
  * @property string $participantId
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListParticipantEventsRequest extends Request
 {
@@ -18,8 +18,8 @@ class ListParticipantEventsRequest extends Request
      *     stageArn: string,
      *     sessionId: string,
      *     participantId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

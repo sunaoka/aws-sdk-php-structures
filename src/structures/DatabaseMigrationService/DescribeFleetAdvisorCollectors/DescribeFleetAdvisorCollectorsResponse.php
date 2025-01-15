@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeFleetAdvisorCo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\CollectorResponse> $Collectors
- * @property string $NextToken
+ * @property list<Shapes\CollectorResponse>|null $Collectors
+ * @property string|null $NextToken
  */
 class DescribeFleetAdvisorCollectorsResponse extends Response
 {

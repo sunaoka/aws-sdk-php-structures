@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\ListSegmentDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SegmentDefinitionName
- * @property string $DisplayName
- * @property string $Description
- * @property string $SegmentDefinitionArn
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property array<string, string> $Tags
+ * @property string|null $SegmentDefinitionName
+ * @property string|null $DisplayName
+ * @property string|null $Description
+ * @property string|null $SegmentDefinitionArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property array<string, string>|null $Tags
  */
 class SegmentDefinitionItem extends Shape
 {
     /**
      * @param array{
-     *     SegmentDefinitionName?: string,
-     *     DisplayName?: string,
-     *     Description?: string,
-     *     SegmentDefinitionArn?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     Tags?: array<string, string>
+     *     SegmentDefinitionName?: string|null,
+     *     DisplayName?: string|null,
+     *     Description?: string|null,
+     *     SegmentDefinitionArn?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

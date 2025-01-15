@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CompareDataSetsStepInput $stepInput
- * @property CompareDataSetsStepOutput $stepOutput
+ * @property CompareDataSetsStepOutput|null $stepOutput
  */
 class CompareDataSetsSummary extends Shape
 {
     /**
      * @param array{
      *     stepInput: CompareDataSetsStepInput,
-     *     stepOutput?: CompareDataSetsStepOutput
+     *     stepOutput?: CompareDataSetsStepOutput|null
      * } $args
      */
     public function __construct(array $args)

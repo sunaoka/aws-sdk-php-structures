@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MigrationHubOrchestrator\UpdateWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $integerValue
- * @property string $stringValue
- * @property list<string> $listOfStringsValue
- * @property array<string, string> $mapOfStringValue
+ * @property int|null $integerValue
+ * @property string|null $stringValue
+ * @property list<string>|null $listOfStringsValue
+ * @property array<string, string>|null $mapOfStringValue
  */
 class StepInput extends Shape
 {
     /**
      * @param array{
-     *     integerValue?: int,
-     *     stringValue?: string,
-     *     listOfStringsValue?: list<string>,
-     *     mapOfStringValue?: array<string, string>
+     *     integerValue?: int|null,
+     *     stringValue?: string|null,
+     *     listOfStringsValue?: list<string>|null,
+     *     mapOfStringValue?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

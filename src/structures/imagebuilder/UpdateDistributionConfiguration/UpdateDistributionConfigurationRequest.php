@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $distributionConfigurationArn
- * @property string $description
+ * @property string|null $description
  * @property list<Shapes\Distribution> $distributions
  * @property string $clientToken
  */
@@ -15,7 +15,7 @@ class UpdateDistributionConfigurationRequest extends Request
     /**
      * @param array{
      *     distributionConfigurationArn: string,
-     *     description?: string,
+     *     description?: string|null,
      *     distributions: list<Shapes\Distribution>,
      *     clientToken: string
      * } $args

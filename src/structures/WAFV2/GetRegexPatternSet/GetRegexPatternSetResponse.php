@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WAFV2\GetRegexPatternSet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\RegexPatternSet $RegexPatternSet
- * @property string $LockToken
+ * @property Shapes\RegexPatternSet|null $RegexPatternSet
+ * @property string|null $LockToken
  */
 class GetRegexPatternSetResponse extends Response
 {

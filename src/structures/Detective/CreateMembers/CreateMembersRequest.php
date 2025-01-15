@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GraphArn
- * @property string $Message
- * @property bool $DisableEmailNotification
+ * @property string|null $Message
+ * @property bool|null $DisableEmailNotification
  * @property list<Shapes\Account> $Accounts
  */
 class CreateMembersRequest extends Request
@@ -15,8 +15,8 @@ class CreateMembersRequest extends Request
     /**
      * @param array{
      *     GraphArn: string,
-     *     Message?: string,
-     *     DisableEmailNotification?: bool,
+     *     Message?: string|null,
+     *     DisableEmailNotification?: bool|null,
      *     Accounts: list<Shapes\Account>
      * } $args
      */

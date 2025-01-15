@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\StepConsumer> $consumers
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListStepConsumersResponse extends Response
 {

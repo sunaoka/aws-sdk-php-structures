@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $ObjectLambdaAccessPointArn
- * @property ObjectLambdaAccessPointAlias $Alias
+ * @property string|null $ObjectLambdaAccessPointArn
+ * @property ObjectLambdaAccessPointAlias|null $Alias
  */
 class ObjectLambdaAccessPoint extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     ObjectLambdaAccessPointArn?: string,
-     *     Alias?: ObjectLambdaAccessPointAlias
+     *     ObjectLambdaAccessPointArn?: string|null,
+     *     Alias?: ObjectLambdaAccessPointAlias|null
      * } $args
      */
     public function __construct(array $args)

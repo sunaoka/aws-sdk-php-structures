@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Catalog
- * @property string $ResourceSnapshotJobRoleIdentifier
+ * @property string|null $ResourceSnapshotJobRoleIdentifier
  */
 class PutSellingSystemSettingsRequest extends Request
 {
     /**
      * @param array{
      *     Catalog: string,
-     *     ResourceSnapshotJobRoleIdentifier?: string
+     *     ResourceSnapshotJobRoleIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

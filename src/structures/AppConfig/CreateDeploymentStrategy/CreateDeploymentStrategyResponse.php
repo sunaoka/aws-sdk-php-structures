@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppConfig\CreateDeploymentStrategy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property string $Description
- * @property int<0, 1440> $DeploymentDurationInMinutes
- * @property 'LINEAR'|'EXPONENTIAL' $GrowthType
- * @property float $GrowthFactor
- * @property int<0, 1440> $FinalBakeTimeInMinutes
- * @property 'NONE'|'SSM_DOCUMENT' $ReplicateTo
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property int<0, 1440>|null $DeploymentDurationInMinutes
+ * @property 'LINEAR'|'EXPONENTIAL'|null $GrowthType
+ * @property float|null $GrowthFactor
+ * @property int<0, 1440>|null $FinalBakeTimeInMinutes
+ * @property 'NONE'|'SSM_DOCUMENT'|null $ReplicateTo
  */
 class CreateDeploymentStrategyResponse extends Response
 {

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $branch
  * @property string $repositoryName
  * @property 'GITHUB'|'GITHUB_ENTERPRISE'|'BITBUCKET' $repositoryProvider
- * @property string $subdirectory
+ * @property string|null $subdirectory
  * @property string $templateName
  * @property 'ENVIRONMENT'|'SERVICE' $templateType
  */
@@ -19,7 +19,7 @@ class UpdateTemplateSyncConfigRequest extends Request
      *     branch: string,
      *     repositoryName: string,
      *     repositoryProvider: 'GITHUB'|'GITHUB_ENTERPRISE'|'BITBUCKET',
-     *     subdirectory?: string,
+     *     subdirectory?: string|null,
      *     templateName: string,
      *     templateType: 'ENVIRONMENT'|'SERVICE'
      * } $args

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\GetIndexingConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $namedShadowNames
- * @property list<GeoLocationTarget> $geoLocations
+ * @property list<string>|null $namedShadowNames
+ * @property list<GeoLocationTarget>|null $geoLocations
  */
 class IndexingFilter extends Shape
 {
     /**
      * @param array{
-     *     namedShadowNames?: list<string>,
-     *     geoLocations?: list<GeoLocationTarget>
+     *     namedShadowNames?: list<string>|null,
+     *     geoLocations?: list<GeoLocationTarget>|null
      * } $args
      */
     public function __construct(array $args = [])

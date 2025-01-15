@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $workspaceId
- * @property string $description
- * @property string $role
- * @property string $s3Location
+ * @property string|null $description
+ * @property string|null $role
+ * @property string|null $s3Location
  */
 class UpdateWorkspaceRequest extends Request
 {
     /**
      * @param array{
      *     workspaceId: string,
-     *     description?: string,
-     *     role?: string,
-     *     s3Location?: string
+     *     description?: string|null,
+     *     role?: string|null,
+     *     s3Location?: string|null
      * } $args
      */
     public function __construct(array $args)

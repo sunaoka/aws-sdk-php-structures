@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ssm\UpdateAssociationStatus;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AssociationDescription $AssociationDescription
+ * @property Shapes\AssociationDescription|null $AssociationDescription
  */
 class UpdateAssociationStatusResponse extends Response
 {

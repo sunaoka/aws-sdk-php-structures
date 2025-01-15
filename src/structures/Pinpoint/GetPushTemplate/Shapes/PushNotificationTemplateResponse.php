@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetPushTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AndroidPushNotificationTemplate $ADM
- * @property APNSPushNotificationTemplate $APNS
- * @property string $Arn
- * @property AndroidPushNotificationTemplate $Baidu
+ * @property AndroidPushNotificationTemplate|null $ADM
+ * @property APNSPushNotificationTemplate|null $APNS
+ * @property string|null $Arn
+ * @property AndroidPushNotificationTemplate|null $Baidu
  * @property string $CreationDate
- * @property DefaultPushNotificationTemplate $Default
- * @property string $DefaultSubstitutions
- * @property AndroidPushNotificationTemplate $GCM
+ * @property DefaultPushNotificationTemplate|null $Default
+ * @property string|null $DefaultSubstitutions
+ * @property AndroidPushNotificationTemplate|null $GCM
  * @property string $LastModifiedDate
- * @property string $RecommenderId
- * @property array<string, string> $tags
- * @property string $TemplateDescription
+ * @property string|null $RecommenderId
+ * @property array<string, string>|null $tags
+ * @property string|null $TemplateDescription
  * @property string $TemplateName
  * @property 'EMAIL'|'SMS'|'VOICE'|'PUSH'|'INAPP' $TemplateType
- * @property string $Version
+ * @property string|null $Version
  */
 class PushNotificationTemplateResponse extends Shape
 {
     /**
      * @param array{
-     *     ADM?: AndroidPushNotificationTemplate,
-     *     APNS?: APNSPushNotificationTemplate,
-     *     Arn?: string,
-     *     Baidu?: AndroidPushNotificationTemplate,
+     *     ADM?: AndroidPushNotificationTemplate|null,
+     *     APNS?: APNSPushNotificationTemplate|null,
+     *     Arn?: string|null,
+     *     Baidu?: AndroidPushNotificationTemplate|null,
      *     CreationDate: string,
-     *     Default?: DefaultPushNotificationTemplate,
-     *     DefaultSubstitutions?: string,
-     *     GCM?: AndroidPushNotificationTemplate,
+     *     Default?: DefaultPushNotificationTemplate|null,
+     *     DefaultSubstitutions?: string|null,
+     *     GCM?: AndroidPushNotificationTemplate|null,
      *     LastModifiedDate: string,
-     *     RecommenderId?: string,
-     *     tags?: array<string, string>,
-     *     TemplateDescription?: string,
+     *     RecommenderId?: string|null,
+     *     tags?: array<string, string>|null,
+     *     TemplateDescription?: string|null,
      *     TemplateName: string,
      *     TemplateType: 'EMAIL'|'SMS'|'VOICE'|'PUSH'|'INAPP',
-     *     Version?: string
+     *     Version?: string|null
      * } $args
      */
     public function __construct(array $args)

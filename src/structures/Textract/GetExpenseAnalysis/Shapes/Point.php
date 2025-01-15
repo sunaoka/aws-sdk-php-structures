@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Textract\GetExpenseAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $X
- * @property float $Y
+ * @property float|null $X
+ * @property float|null $Y
  */
 class Point extends Shape
 {
     /**
      * @param array{
-     *     X?: float,
-     *     Y?: float
+     *     X?: float|null,
+     *     Y?: float|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CoreNetworkId
- * @property int $PolicyVersionId
- * @property 'LIVE'|'LATEST' $Alias
+ * @property int|null $PolicyVersionId
+ * @property 'LIVE'|'LATEST'|null $Alias
  */
 class GetCoreNetworkPolicyRequest extends Request
 {
     /**
      * @param array{
      *     CoreNetworkId: string,
-     *     PolicyVersionId?: int,
-     *     Alias?: 'LIVE'|'LATEST'
+     *     PolicyVersionId?: int|null,
+     *     Alias?: 'LIVE'|'LATEST'|null
      * } $args
      */
     public function __construct(array $args)

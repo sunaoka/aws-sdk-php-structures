@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\PricingPlan $currentPricingPlan
- * @property Shapes\PricingPlan $pendingPricingPlan
+ * @property Shapes\PricingPlan|null $pendingPricingPlan
  */
 class GetPricingPlanResponse extends Response
 {

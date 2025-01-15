@@ -5,61 +5,61 @@ namespace Sunaoka\Aws\Structures\Backup\ListRecoveryPointsByBackupVault\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RecoveryPointArn
- * @property string $BackupVaultName
- * @property string $BackupVaultArn
- * @property string $SourceBackupVaultArn
- * @property string $ResourceArn
- * @property string $ResourceType
- * @property RecoveryPointCreator $CreatedBy
- * @property string $IamRoleArn
- * @property 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED' $Status
- * @property string $StatusMessage
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $CompletionDate
- * @property int $BackupSizeInBytes
- * @property CalculatedLifecycle $CalculatedLifecycle
- * @property Lifecycle $Lifecycle
- * @property string $EncryptionKeyArn
- * @property bool $IsEncrypted
- * @property \Aws\Api\DateTimeResult $LastRestoreTime
- * @property string $ParentRecoveryPointArn
- * @property string $CompositeMemberIdentifier
- * @property bool $IsParent
- * @property string $ResourceName
- * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT' $VaultType
- * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING' $IndexStatus
- * @property string $IndexStatusMessage
+ * @property string|null $RecoveryPointArn
+ * @property string|null $BackupVaultName
+ * @property string|null $BackupVaultArn
+ * @property string|null $SourceBackupVaultArn
+ * @property string|null $ResourceArn
+ * @property string|null $ResourceType
+ * @property RecoveryPointCreator|null $CreatedBy
+ * @property string|null $IamRoleArn
+ * @property 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|null $Status
+ * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $CompletionDate
+ * @property int|null $BackupSizeInBytes
+ * @property CalculatedLifecycle|null $CalculatedLifecycle
+ * @property Lifecycle|null $Lifecycle
+ * @property string|null $EncryptionKeyArn
+ * @property bool|null $IsEncrypted
+ * @property \Aws\Api\DateTimeResult|null $LastRestoreTime
+ * @property string|null $ParentRecoveryPointArn
+ * @property string|null $CompositeMemberIdentifier
+ * @property bool|null $IsParent
+ * @property string|null $ResourceName
+ * @property 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null $VaultType
+ * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null $IndexStatus
+ * @property string|null $IndexStatusMessage
  */
 class RecoveryPointByBackupVault extends Shape
 {
     /**
      * @param array{
-     *     RecoveryPointArn?: string,
-     *     BackupVaultName?: string,
-     *     BackupVaultArn?: string,
-     *     SourceBackupVaultArn?: string,
-     *     ResourceArn?: string,
-     *     ResourceType?: string,
-     *     CreatedBy?: RecoveryPointCreator,
-     *     IamRoleArn?: string,
-     *     Status?: 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED',
-     *     StatusMessage?: string,
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     CompletionDate?: \Aws\Api\DateTimeResult,
-     *     BackupSizeInBytes?: int,
-     *     CalculatedLifecycle?: CalculatedLifecycle,
-     *     Lifecycle?: Lifecycle,
-     *     EncryptionKeyArn?: string,
-     *     IsEncrypted?: bool,
-     *     LastRestoreTime?: \Aws\Api\DateTimeResult,
-     *     ParentRecoveryPointArn?: string,
-     *     CompositeMemberIdentifier?: string,
-     *     IsParent?: bool,
-     *     ResourceName?: string,
-     *     VaultType?: 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT',
-     *     IndexStatus?: 'PENDING'|'ACTIVE'|'FAILED'|'DELETING',
-     *     IndexStatusMessage?: string
+     *     RecoveryPointArn?: string|null,
+     *     BackupVaultName?: string|null,
+     *     BackupVaultArn?: string|null,
+     *     SourceBackupVaultArn?: string|null,
+     *     ResourceArn?: string|null,
+     *     ResourceType?: string|null,
+     *     CreatedBy?: RecoveryPointCreator|null,
+     *     IamRoleArn?: string|null,
+     *     Status?: 'COMPLETED'|'PARTIAL'|'DELETING'|'EXPIRED'|null,
+     *     StatusMessage?: string|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     CompletionDate?: \Aws\Api\DateTimeResult|null,
+     *     BackupSizeInBytes?: int|null,
+     *     CalculatedLifecycle?: CalculatedLifecycle|null,
+     *     Lifecycle?: Lifecycle|null,
+     *     EncryptionKeyArn?: string|null,
+     *     IsEncrypted?: bool|null,
+     *     LastRestoreTime?: \Aws\Api\DateTimeResult|null,
+     *     ParentRecoveryPointArn?: string|null,
+     *     CompositeMemberIdentifier?: string|null,
+     *     IsParent?: bool|null,
+     *     ResourceName?: string|null,
+     *     VaultType?: 'BACKUP_VAULT'|'LOGICALLY_AIR_GAPPED_BACKUP_VAULT'|null,
+     *     IndexStatus?: 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|null,
+     *     IndexStatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

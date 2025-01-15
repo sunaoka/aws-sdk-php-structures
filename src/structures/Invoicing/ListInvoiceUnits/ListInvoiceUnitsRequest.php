@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Invoicing\ListInvoiceUnits;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\Filters $Filters
- * @property string $NextToken
- * @property int<1, 500> $MaxResults
- * @property \Aws\Api\DateTimeResult $AsOf
+ * @property Shapes\Filters|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 500>|null $MaxResults
+ * @property \Aws\Api\DateTimeResult|null $AsOf
  */
 class ListInvoiceUnitsRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: Shapes\Filters,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 500>,
-     *     AsOf?: \Aws\Api\DateTimeResult
+     *     Filters?: Shapes\Filters|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 500>|null,
+     *     AsOf?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Neptunedata\GetPropertygraphStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $autoCompute
- * @property bool $active
- * @property string $statisticsId
- * @property \Aws\Api\DateTimeResult $date
- * @property string $note
- * @property StatisticsSummary $signatureInfo
+ * @property bool|null $autoCompute
+ * @property bool|null $active
+ * @property string|null $statisticsId
+ * @property \Aws\Api\DateTimeResult|null $date
+ * @property string|null $note
+ * @property StatisticsSummary|null $signatureInfo
  */
 class Statistics extends Shape
 {
     /**
      * @param array{
-     *     autoCompute?: bool,
-     *     active?: bool,
-     *     statisticsId?: string,
-     *     date?: \Aws\Api\DateTimeResult,
-     *     note?: string,
-     *     signatureInfo?: StatisticsSummary
+     *     autoCompute?: bool|null,
+     *     active?: bool|null,
+     *     statisticsId?: string|null,
+     *     date?: \Aws\Api\DateTimeResult|null,
+     *     note?: string|null,
+     *     signatureInfo?: StatisticsSummary|null
      * } $args
      */
     public function __construct(array $args = [])

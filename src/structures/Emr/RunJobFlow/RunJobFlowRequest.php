@@ -6,72 +6,72 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $LogUri
- * @property string $LogEncryptionKmsKeyId
- * @property string $AdditionalInfo
- * @property string $AmiVersion
- * @property string $ReleaseLabel
+ * @property string|null $LogUri
+ * @property string|null $LogEncryptionKmsKeyId
+ * @property string|null $AdditionalInfo
+ * @property string|null $AmiVersion
+ * @property string|null $ReleaseLabel
  * @property Shapes\JobFlowInstancesConfig $Instances
- * @property list<Shapes\StepConfig> $Steps
- * @property list<Shapes\BootstrapActionConfig> $BootstrapActions
- * @property list<string> $SupportedProducts
- * @property list<Shapes\SupportedProductConfig> $NewSupportedProducts
- * @property list<Shapes\Application> $Applications
- * @property list<Shapes\Configuration> $Configurations
- * @property bool $VisibleToAllUsers
- * @property string $JobFlowRole
- * @property string $ServiceRole
- * @property list<Shapes\Tag> $Tags
- * @property string $SecurityConfiguration
- * @property string $AutoScalingRole
- * @property 'TERMINATE_AT_INSTANCE_HOUR'|'TERMINATE_AT_TASK_COMPLETION' $ScaleDownBehavior
- * @property string $CustomAmiId
- * @property int $EbsRootVolumeSize
- * @property 'SECURITY'|'NONE' $RepoUpgradeOnBoot
- * @property Shapes\KerberosAttributes $KerberosAttributes
- * @property int $StepConcurrencyLevel
- * @property Shapes\ManagedScalingPolicy $ManagedScalingPolicy
- * @property list<Shapes\PlacementGroupConfig> $PlacementGroupConfigs
- * @property Shapes\AutoTerminationPolicy $AutoTerminationPolicy
- * @property string $OSReleaseLabel
- * @property int $EbsRootVolumeIops
- * @property int $EbsRootVolumeThroughput
+ * @property list<Shapes\StepConfig>|null $Steps
+ * @property list<Shapes\BootstrapActionConfig>|null $BootstrapActions
+ * @property list<string>|null $SupportedProducts
+ * @property list<Shapes\SupportedProductConfig>|null $NewSupportedProducts
+ * @property list<Shapes\Application>|null $Applications
+ * @property list<Shapes\Configuration>|null $Configurations
+ * @property bool|null $VisibleToAllUsers
+ * @property string|null $JobFlowRole
+ * @property string|null $ServiceRole
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $SecurityConfiguration
+ * @property string|null $AutoScalingRole
+ * @property 'TERMINATE_AT_INSTANCE_HOUR'|'TERMINATE_AT_TASK_COMPLETION'|null $ScaleDownBehavior
+ * @property string|null $CustomAmiId
+ * @property int|null $EbsRootVolumeSize
+ * @property 'SECURITY'|'NONE'|null $RepoUpgradeOnBoot
+ * @property Shapes\KerberosAttributes|null $KerberosAttributes
+ * @property int|null $StepConcurrencyLevel
+ * @property Shapes\ManagedScalingPolicy|null $ManagedScalingPolicy
+ * @property list<Shapes\PlacementGroupConfig>|null $PlacementGroupConfigs
+ * @property Shapes\AutoTerminationPolicy|null $AutoTerminationPolicy
+ * @property string|null $OSReleaseLabel
+ * @property int|null $EbsRootVolumeIops
+ * @property int|null $EbsRootVolumeThroughput
  */
 class RunJobFlowRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     LogUri?: string,
-     *     LogEncryptionKmsKeyId?: string,
-     *     AdditionalInfo?: string,
-     *     AmiVersion?: string,
-     *     ReleaseLabel?: string,
+     *     LogUri?: string|null,
+     *     LogEncryptionKmsKeyId?: string|null,
+     *     AdditionalInfo?: string|null,
+     *     AmiVersion?: string|null,
+     *     ReleaseLabel?: string|null,
      *     Instances: Shapes\JobFlowInstancesConfig,
-     *     Steps?: list<Shapes\StepConfig>,
-     *     BootstrapActions?: list<Shapes\BootstrapActionConfig>,
-     *     SupportedProducts?: list<string>,
-     *     NewSupportedProducts?: list<Shapes\SupportedProductConfig>,
-     *     Applications?: list<Shapes\Application>,
-     *     Configurations?: list<Shapes\Configuration>,
-     *     VisibleToAllUsers?: bool,
-     *     JobFlowRole?: string,
-     *     ServiceRole?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     SecurityConfiguration?: string,
-     *     AutoScalingRole?: string,
-     *     ScaleDownBehavior?: 'TERMINATE_AT_INSTANCE_HOUR'|'TERMINATE_AT_TASK_COMPLETION',
-     *     CustomAmiId?: string,
-     *     EbsRootVolumeSize?: int,
-     *     RepoUpgradeOnBoot?: 'SECURITY'|'NONE',
-     *     KerberosAttributes?: Shapes\KerberosAttributes,
-     *     StepConcurrencyLevel?: int,
-     *     ManagedScalingPolicy?: Shapes\ManagedScalingPolicy,
-     *     PlacementGroupConfigs?: list<Shapes\PlacementGroupConfig>,
-     *     AutoTerminationPolicy?: Shapes\AutoTerminationPolicy,
-     *     OSReleaseLabel?: string,
-     *     EbsRootVolumeIops?: int,
-     *     EbsRootVolumeThroughput?: int
+     *     Steps?: list<Shapes\StepConfig>|null,
+     *     BootstrapActions?: list<Shapes\BootstrapActionConfig>|null,
+     *     SupportedProducts?: list<string>|null,
+     *     NewSupportedProducts?: list<Shapes\SupportedProductConfig>|null,
+     *     Applications?: list<Shapes\Application>|null,
+     *     Configurations?: list<Shapes\Configuration>|null,
+     *     VisibleToAllUsers?: bool|null,
+     *     JobFlowRole?: string|null,
+     *     ServiceRole?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     SecurityConfiguration?: string|null,
+     *     AutoScalingRole?: string|null,
+     *     ScaleDownBehavior?: 'TERMINATE_AT_INSTANCE_HOUR'|'TERMINATE_AT_TASK_COMPLETION'|null,
+     *     CustomAmiId?: string|null,
+     *     EbsRootVolumeSize?: int|null,
+     *     RepoUpgradeOnBoot?: 'SECURITY'|'NONE'|null,
+     *     KerberosAttributes?: Shapes\KerberosAttributes|null,
+     *     StepConcurrencyLevel?: int|null,
+     *     ManagedScalingPolicy?: Shapes\ManagedScalingPolicy|null,
+     *     PlacementGroupConfigs?: list<Shapes\PlacementGroupConfig>|null,
+     *     AutoTerminationPolicy?: Shapes\AutoTerminationPolicy|null,
+     *     OSReleaseLabel?: string|null,
+     *     EbsRootVolumeIops?: int|null,
+     *     EbsRootVolumeThroughput?: int|null
      * } $args
      */
     public function __construct(array $args)

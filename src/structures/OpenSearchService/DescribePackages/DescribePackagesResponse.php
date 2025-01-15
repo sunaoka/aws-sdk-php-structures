@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribePackages;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\PackageDetails> $PackageDetailsList
- * @property string $NextToken
+ * @property list<Shapes\PackageDetails>|null $PackageDetailsList
+ * @property string|null $NextToken
  */
 class DescribePackagesResponse extends Response
 {

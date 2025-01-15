@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateInput;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Input $Input
+ * @property Shapes\Input|null $Input
  */
 class CreateInputResponse extends Response
 {

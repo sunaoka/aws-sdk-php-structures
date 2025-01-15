@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InputName
- * @property bool $AppManaged
- * @property ProcessingS3Input $S3Input
- * @property DatasetDefinition $DatasetDefinition
+ * @property bool|null $AppManaged
+ * @property ProcessingS3Input|null $S3Input
+ * @property DatasetDefinition|null $DatasetDefinition
  */
 class ProcessingInput extends Shape
 {
     /**
      * @param array{
      *     InputName: string,
-     *     AppManaged?: bool,
-     *     S3Input?: ProcessingS3Input,
-     *     DatasetDefinition?: DatasetDefinition
+     *     AppManaged?: bool|null,
+     *     S3Input?: ProcessingS3Input|null,
+     *     DatasetDefinition?: DatasetDefinition|null
      * } $args
      */
     public function __construct(array $args)

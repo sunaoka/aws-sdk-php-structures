@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EMRContainers\CreateVirtualCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EksInfo $eksInfo
+ * @property EksInfo|null $eksInfo
  */
 class ContainerInfo extends Shape
 {
     /**
-     * @param array{eksInfo?: EksInfo} $args
+     * @param array{eksInfo?: EksInfo|null} $args
      */
     public function __construct(array $args = [])
     {

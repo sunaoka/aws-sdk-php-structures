@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $savingsPlanId
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class ReturnSavingsPlanRequest extends Request
 {
     /**
      * @param array{
      *     savingsPlanId: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

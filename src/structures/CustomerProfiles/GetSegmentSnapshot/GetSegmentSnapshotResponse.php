@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $SnapshotId
  * @property 'COMPLETED'|'IN_PROGRESS'|'FAILED' $Status
- * @property string $StatusMessage
+ * @property string|null $StatusMessage
  * @property 'CSV'|'JSONL'|'ORC' $DataFormat
- * @property string $EncryptionKey
- * @property string $RoleArn
- * @property string $DestinationUri
+ * @property string|null $EncryptionKey
+ * @property string|null $RoleArn
+ * @property string|null $DestinationUri
  */
 class GetSegmentSnapshotResponse extends Response
 {

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DirectoryArn
  * @property Shapes\TypedLinkSpecifier $TypedLinkSpecifier
  * @property list<string> $AttributeNames
- * @property 'SERIALIZABLE'|'EVENTUAL' $ConsistencyLevel
+ * @property 'SERIALIZABLE'|'EVENTUAL'|null $ConsistencyLevel
  */
 class GetLinkAttributesRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetLinkAttributesRequest extends Request
      *     DirectoryArn: string,
      *     TypedLinkSpecifier: Shapes\TypedLinkSpecifier,
      *     AttributeNames: list<string>,
-     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'
+     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'|null
      * } $args
      */
     public function __construct(array $args)

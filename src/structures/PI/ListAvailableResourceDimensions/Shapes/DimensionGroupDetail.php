@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PI\ListAvailableResourceDimensions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Group
- * @property list<DimensionDetail> $Dimensions
+ * @property string|null $Group
+ * @property list<DimensionDetail>|null $Dimensions
  */
 class DimensionGroupDetail extends Shape
 {
     /**
      * @param array{
-     *     Group?: string,
-     *     Dimensions?: list<DimensionDetail>
+     *     Group?: string|null,
+     *     Dimensions?: list<DimensionDetail>|null
      * } $args
      */
     public function __construct(array $args = [])

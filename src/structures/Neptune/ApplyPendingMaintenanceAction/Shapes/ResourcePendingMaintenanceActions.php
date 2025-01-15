@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Neptune\ApplyPendingMaintenanceAction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceIdentifier
- * @property list<PendingMaintenanceAction> $PendingMaintenanceActionDetails
+ * @property string|null $ResourceIdentifier
+ * @property list<PendingMaintenanceAction>|null $PendingMaintenanceActionDetails
  */
 class ResourcePendingMaintenanceActions extends Shape
 {
     /**
      * @param array{
-     *     ResourceIdentifier?: string,
-     *     PendingMaintenanceActionDetails?: list<PendingMaintenanceAction>
+     *     ResourceIdentifier?: string|null,
+     *     PendingMaintenanceActionDetails?: list<PendingMaintenanceAction>|null
      * } $args
      */
     public function __construct(array $args = [])

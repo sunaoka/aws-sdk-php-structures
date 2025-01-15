@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyDBClusterParameterGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DBClusterParameterGroupName
+ * @property string|null $DBClusterParameterGroupName
  */
 class ModifyDBClusterParameterGroupResponse extends Response
 {

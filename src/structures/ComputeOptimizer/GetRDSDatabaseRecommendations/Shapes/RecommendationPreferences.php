@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRDSDatabaseRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'AWS_ARM64'|'CURRENT'> $cpuVendorArchitectures
+ * @property list<'AWS_ARM64'|'CURRENT'>|null $cpuVendorArchitectures
  */
 class RecommendationPreferences extends Shape
 {
     /**
-     * @param array{cpuVendorArchitectures?: list<'AWS_ARM64'|'CURRENT'>} $args
+     * @param array{cpuVendorArchitectures?: list<'AWS_ARM64'|'CURRENT'>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ForegroundColor
- * @property string $BackgroundColor
+ * @property string|null $ForegroundColor
+ * @property string|null $BackgroundColor
  */
 class GaugeChartColorConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ForegroundColor?: string,
-     *     BackgroundColor?: string
+     *     ForegroundColor?: string|null,
+     *     BackgroundColor?: string|null
      * } $args
      */
     public function __construct(array $args = [])

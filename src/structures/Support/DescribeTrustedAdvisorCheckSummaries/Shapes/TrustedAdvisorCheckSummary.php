@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $checkId
  * @property string $timestamp
  * @property string $status
- * @property bool $hasFlaggedResources
+ * @property bool|null $hasFlaggedResources
  * @property TrustedAdvisorResourcesSummary $resourcesSummary
  * @property TrustedAdvisorCategorySpecificSummary $categorySpecificSummary
  */
@@ -19,7 +19,7 @@ class TrustedAdvisorCheckSummary extends Shape
      *     checkId: string,
      *     timestamp: string,
      *     status: string,
-     *     hasFlaggedResources?: bool,
+     *     hasFlaggedResources?: bool|null,
      *     resourcesSummary: TrustedAdvisorResourcesSummary,
      *     categorySpecificSummary: TrustedAdvisorCategorySpecificSummary
      * } $args

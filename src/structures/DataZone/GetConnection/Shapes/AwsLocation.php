@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataZone\GetConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accessRole
- * @property string $awsAccountId
- * @property string $awsRegion
- * @property string $iamConnectionId
+ * @property string|null $accessRole
+ * @property string|null $awsAccountId
+ * @property string|null $awsRegion
+ * @property string|null $iamConnectionId
  */
 class AwsLocation extends Shape
 {
     /**
      * @param array{
-     *     accessRole?: string,
-     *     awsAccountId?: string,
-     *     awsRegion?: string,
-     *     iamConnectionId?: string
+     *     accessRole?: string|null,
+     *     awsAccountId?: string|null,
+     *     awsRegion?: string|null,
+     *     iamConnectionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

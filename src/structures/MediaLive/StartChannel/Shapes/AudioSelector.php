@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property AudioSelectorSettings $SelectorSettings
+ * @property AudioSelectorSettings|null $SelectorSettings
  */
 class AudioSelector extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     SelectorSettings?: AudioSelectorSettings
+     *     SelectorSettings?: AudioSelectorSettings|null
      * } $args
      */
     public function __construct(array $args)

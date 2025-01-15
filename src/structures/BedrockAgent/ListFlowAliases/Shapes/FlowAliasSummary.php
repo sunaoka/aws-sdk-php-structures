@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
+ * @property string|null $description
  * @property string $flowId
  * @property string $id
  * @property string $name
@@ -20,7 +20,7 @@ class FlowAliasSummary extends Shape
      * @param array{
      *     arn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     description?: string,
+     *     description?: string|null,
      *     flowId: string,
      *     id: string,
      *     name: string,

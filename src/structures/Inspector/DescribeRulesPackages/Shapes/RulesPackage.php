@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $version
  * @property string $provider
- * @property string $description
+ * @property string|null $description
  */
 class RulesPackage extends Shape
 {
@@ -19,7 +19,7 @@ class RulesPackage extends Shape
      *     name: string,
      *     version: string,
      *     provider: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

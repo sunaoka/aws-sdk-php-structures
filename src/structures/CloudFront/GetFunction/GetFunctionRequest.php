@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property 'DEVELOPMENT'|'LIVE' $Stage
+ * @property 'DEVELOPMENT'|'LIVE'|null $Stage
  */
 class GetFunctionRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Stage?: 'DEVELOPMENT'|'LIVE'
+     *     Stage?: 'DEVELOPMENT'|'LIVE'|null
      * } $args
      */
     public function __construct(array $args)

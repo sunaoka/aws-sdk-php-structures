@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ssm\GetCommandInvocation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CloudWatchLogGroupName
- * @property bool $CloudWatchOutputEnabled
+ * @property string|null $CloudWatchLogGroupName
+ * @property bool|null $CloudWatchOutputEnabled
  */
 class CloudWatchOutputConfig extends Shape
 {
     /**
      * @param array{
-     *     CloudWatchLogGroupName?: string,
-     *     CloudWatchOutputEnabled?: bool
+     *     CloudWatchLogGroupName?: string|null,
+     *     CloudWatchOutputEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

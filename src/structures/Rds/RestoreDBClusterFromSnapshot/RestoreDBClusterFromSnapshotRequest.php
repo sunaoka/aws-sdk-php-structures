@@ -5,81 +5,81 @@ namespace Sunaoka\Aws\Structures\Rds\RestoreDBClusterFromSnapshot;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $AvailabilityZones
+ * @property list<string>|null $AvailabilityZones
  * @property string $DBClusterIdentifier
  * @property string $SnapshotIdentifier
  * @property string $Engine
- * @property string $EngineVersion
- * @property int $Port
- * @property string $DBSubnetGroupName
- * @property string $DatabaseName
- * @property string $OptionGroupName
- * @property list<string> $VpcSecurityGroupIds
- * @property list<Shapes\Tag> $Tags
- * @property string $KmsKeyId
- * @property bool $EnableIAMDatabaseAuthentication
- * @property int $BacktrackWindow
- * @property list<string> $EnableCloudwatchLogsExports
- * @property string $EngineMode
- * @property Shapes\ScalingConfiguration $ScalingConfiguration
- * @property string $DBClusterParameterGroupName
- * @property bool $DeletionProtection
- * @property bool $CopyTagsToSnapshot
- * @property string $Domain
- * @property string $DomainIAMRoleName
- * @property string $DBClusterInstanceClass
- * @property string $StorageType
- * @property int $Iops
- * @property bool $PubliclyAccessible
- * @property Shapes\ServerlessV2ScalingConfiguration $ServerlessV2ScalingConfiguration
- * @property string $NetworkType
- * @property Shapes\RdsCustomClusterConfiguration $RdsCustomClusterConfiguration
- * @property int $MonitoringInterval
- * @property string $MonitoringRoleArn
- * @property bool $EnablePerformanceInsights
- * @property string $PerformanceInsightsKMSKeyId
- * @property int $PerformanceInsightsRetentionPeriod
- * @property string $EngineLifecycleSupport
+ * @property string|null $EngineVersion
+ * @property int|null $Port
+ * @property string|null $DBSubnetGroupName
+ * @property string|null $DatabaseName
+ * @property string|null $OptionGroupName
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $KmsKeyId
+ * @property bool|null $EnableIAMDatabaseAuthentication
+ * @property int|null $BacktrackWindow
+ * @property list<string>|null $EnableCloudwatchLogsExports
+ * @property string|null $EngineMode
+ * @property Shapes\ScalingConfiguration|null $ScalingConfiguration
+ * @property string|null $DBClusterParameterGroupName
+ * @property bool|null $DeletionProtection
+ * @property bool|null $CopyTagsToSnapshot
+ * @property string|null $Domain
+ * @property string|null $DomainIAMRoleName
+ * @property string|null $DBClusterInstanceClass
+ * @property string|null $StorageType
+ * @property int|null $Iops
+ * @property bool|null $PubliclyAccessible
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
+ * @property string|null $NetworkType
+ * @property Shapes\RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
+ * @property int|null $MonitoringInterval
+ * @property string|null $MonitoringRoleArn
+ * @property bool|null $EnablePerformanceInsights
+ * @property string|null $PerformanceInsightsKMSKeyId
+ * @property int|null $PerformanceInsightsRetentionPeriod
+ * @property string|null $EngineLifecycleSupport
  */
 class RestoreDBClusterFromSnapshotRequest extends Request
 {
     /**
      * @param array{
-     *     AvailabilityZones?: list<string>,
+     *     AvailabilityZones?: list<string>|null,
      *     DBClusterIdentifier: string,
      *     SnapshotIdentifier: string,
      *     Engine: string,
-     *     EngineVersion?: string,
-     *     Port?: int,
-     *     DBSubnetGroupName?: string,
-     *     DatabaseName?: string,
-     *     OptionGroupName?: string,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     Tags?: list<Shapes\Tag>,
-     *     KmsKeyId?: string,
-     *     EnableIAMDatabaseAuthentication?: bool,
-     *     BacktrackWindow?: int,
-     *     EnableCloudwatchLogsExports?: list<string>,
-     *     EngineMode?: string,
-     *     ScalingConfiguration?: Shapes\ScalingConfiguration,
-     *     DBClusterParameterGroupName?: string,
-     *     DeletionProtection?: bool,
-     *     CopyTagsToSnapshot?: bool,
-     *     Domain?: string,
-     *     DomainIAMRoleName?: string,
-     *     DBClusterInstanceClass?: string,
-     *     StorageType?: string,
-     *     Iops?: int,
-     *     PubliclyAccessible?: bool,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration,
-     *     NetworkType?: string,
-     *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration,
-     *     MonitoringInterval?: int,
-     *     MonitoringRoleArn?: string,
-     *     EnablePerformanceInsights?: bool,
-     *     PerformanceInsightsKMSKeyId?: string,
-     *     PerformanceInsightsRetentionPeriod?: int,
-     *     EngineLifecycleSupport?: string
+     *     EngineVersion?: string|null,
+     *     Port?: int|null,
+     *     DBSubnetGroupName?: string|null,
+     *     DatabaseName?: string|null,
+     *     OptionGroupName?: string|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     KmsKeyId?: string|null,
+     *     EnableIAMDatabaseAuthentication?: bool|null,
+     *     BacktrackWindow?: int|null,
+     *     EnableCloudwatchLogsExports?: list<string>|null,
+     *     EngineMode?: string|null,
+     *     ScalingConfiguration?: Shapes\ScalingConfiguration|null,
+     *     DBClusterParameterGroupName?: string|null,
+     *     DeletionProtection?: bool|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     Domain?: string|null,
+     *     DomainIAMRoleName?: string|null,
+     *     DBClusterInstanceClass?: string|null,
+     *     StorageType?: string|null,
+     *     Iops?: int|null,
+     *     PubliclyAccessible?: bool|null,
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
+     *     NetworkType?: string|null,
+     *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration|null,
+     *     MonitoringInterval?: int|null,
+     *     MonitoringRoleArn?: string|null,
+     *     EnablePerformanceInsights?: bool|null,
+     *     PerformanceInsightsKMSKeyId?: string|null,
+     *     PerformanceInsightsRetentionPeriod?: int|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

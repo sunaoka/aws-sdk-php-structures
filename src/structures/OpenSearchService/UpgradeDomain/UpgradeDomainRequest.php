@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DomainName
  * @property string $TargetVersion
- * @property bool $PerformCheckOnly
- * @property array<string, string> $AdvancedOptions
+ * @property bool|null $PerformCheckOnly
+ * @property array<string, string>|null $AdvancedOptions
  */
 class UpgradeDomainRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpgradeDomainRequest extends Request
      * @param array{
      *     DomainName: string,
      *     TargetVersion: string,
-     *     PerformCheckOnly?: bool,
-     *     AdvancedOptions?: array<string, string>
+     *     PerformCheckOnly?: bool|null,
+     *     AdvancedOptions?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

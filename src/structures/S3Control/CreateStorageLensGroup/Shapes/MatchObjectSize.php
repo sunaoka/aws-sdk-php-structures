@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Control\CreateStorageLensGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $BytesGreaterThan
- * @property int $BytesLessThan
+ * @property int|null $BytesGreaterThan
+ * @property int|null $BytesLessThan
  */
 class MatchObjectSize extends Shape
 {
     /**
      * @param array{
-     *     BytesGreaterThan?: int,
-     *     BytesLessThan?: int
+     *     BytesGreaterThan?: int|null,
+     *     BytesLessThan?: int|null
      * } $args
      */
     public function __construct(array $args = [])

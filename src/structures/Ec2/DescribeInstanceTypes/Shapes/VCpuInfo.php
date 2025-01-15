@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DefaultVCpus
- * @property int $DefaultCores
- * @property int $DefaultThreadsPerCore
- * @property list<int> $ValidCores
- * @property list<int> $ValidThreadsPerCore
+ * @property int|null $DefaultVCpus
+ * @property int|null $DefaultCores
+ * @property int|null $DefaultThreadsPerCore
+ * @property list<int>|null $ValidCores
+ * @property list<int>|null $ValidThreadsPerCore
  */
 class VCpuInfo extends Shape
 {
     /**
      * @param array{
-     *     DefaultVCpus?: int,
-     *     DefaultCores?: int,
-     *     DefaultThreadsPerCore?: int,
-     *     ValidCores?: list<int>,
-     *     ValidThreadsPerCore?: list<int>
+     *     DefaultVCpus?: int|null,
+     *     DefaultCores?: int|null,
+     *     DefaultThreadsPerCore?: int|null,
+     *     ValidCores?: list<int>|null,
+     *     ValidThreadsPerCore?: list<int>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $UpdateToken
- * @property string $FirewallPolicyArn
- * @property string $FirewallPolicyName
+ * @property string|null $FirewallPolicyArn
+ * @property string|null $FirewallPolicyName
  * @property Shapes\FirewallPolicy $FirewallPolicy
- * @property string $Description
- * @property bool $DryRun
- * @property Shapes\EncryptionConfiguration $EncryptionConfiguration
+ * @property string|null $Description
+ * @property bool|null $DryRun
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  */
 class UpdateFirewallPolicyRequest extends Request
 {
     /**
      * @param array{
      *     UpdateToken: string,
-     *     FirewallPolicyArn?: string,
-     *     FirewallPolicyName?: string,
+     *     FirewallPolicyArn?: string|null,
+     *     FirewallPolicyName?: string|null,
      *     FirewallPolicy: Shapes\FirewallPolicy,
-     *     Description?: string,
-     *     DryRun?: bool,
-     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration
+     *     Description?: string|null,
+     *     DryRun?: bool|null,
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

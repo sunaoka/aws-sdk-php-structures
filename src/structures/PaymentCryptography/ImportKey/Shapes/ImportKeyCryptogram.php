@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $Exportable
  * @property string $WrappedKeyCryptogram
  * @property string $ImportToken
- * @property 'RSA_OAEP_SHA_256'|'RSA_OAEP_SHA_512' $WrappingSpec
+ * @property 'RSA_OAEP_SHA_256'|'RSA_OAEP_SHA_512'|null $WrappingSpec
  */
 class ImportKeyCryptogram extends Shape
 {
@@ -19,7 +19,7 @@ class ImportKeyCryptogram extends Shape
      *     Exportable: bool,
      *     WrappedKeyCryptogram: string,
      *     ImportToken: string,
-     *     WrappingSpec?: 'RSA_OAEP_SHA_256'|'RSA_OAEP_SHA_512'
+     *     WrappingSpec?: 'RSA_OAEP_SHA_256'|'RSA_OAEP_SHA_512'|null
      * } $args
      */
     public function __construct(array $args)

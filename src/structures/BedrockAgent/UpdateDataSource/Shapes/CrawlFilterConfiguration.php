@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PatternObjectFilterConfiguration $patternObjectFilter
+ * @property PatternObjectFilterConfiguration|null $patternObjectFilter
  * @property 'PATTERN' $type
  */
 class CrawlFilterConfiguration extends Shape
 {
     /**
      * @param array{
-     *     patternObjectFilter?: PatternObjectFilterConfiguration,
+     *     patternObjectFilter?: PatternObjectFilterConfiguration|null,
      *     type: 'PATTERN'
      * } $args
      */

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\WAFV2\UpdateRegexPatternSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RegexString
+ * @property string|null $RegexString
  */
 class Regex extends Shape
 {
     /**
-     * @param array{RegexString?: string} $args
+     * @param array{RegexString?: string|null} $args
      */
     public function __construct(array $args = [])
     {

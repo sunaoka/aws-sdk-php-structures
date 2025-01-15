@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\CreateProduct\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CODESTAR' $Type
+ * @property 'CODESTAR'|null $Type
  * @property SourceConnectionParameters $ConnectionParameters
  */
 class SourceConnection extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'CODESTAR',
+     *     Type?: 'CODESTAR'|null,
      *     ConnectionParameters: SourceConnectionParameters
      * } $args
      */

@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $UserId
  * @property string $Arn
  * @property \Aws\Api\DateTimeResult $CreateDate
- * @property \Aws\Api\DateTimeResult $PasswordLastUsed
- * @property AttachedPermissionsBoundary $PermissionsBoundary
- * @property list<Tag> $Tags
+ * @property \Aws\Api\DateTimeResult|null $PasswordLastUsed
+ * @property AttachedPermissionsBoundary|null $PermissionsBoundary
+ * @property list<Tag>|null $Tags
  */
 class User extends Shape
 {
@@ -23,9 +23,9 @@ class User extends Shape
      *     UserId: string,
      *     Arn: string,
      *     CreateDate: \Aws\Api\DateTimeResult,
-     *     PasswordLastUsed?: \Aws\Api\DateTimeResult,
-     *     PermissionsBoundary?: AttachedPermissionsBoundary,
-     *     Tags?: list<Tag>
+     *     PasswordLastUsed?: \Aws\Api\DateTimeResult|null,
+     *     PermissionsBoundary?: AttachedPermissionsBoundary|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args)

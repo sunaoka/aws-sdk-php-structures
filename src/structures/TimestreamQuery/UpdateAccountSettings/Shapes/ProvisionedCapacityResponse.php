@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\UpdateAccountSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ActiveQueryTCU
- * @property AccountSettingsNotificationConfiguration $NotificationConfiguration
- * @property LastUpdate $LastUpdate
+ * @property int|null $ActiveQueryTCU
+ * @property AccountSettingsNotificationConfiguration|null $NotificationConfiguration
+ * @property LastUpdate|null $LastUpdate
  */
 class ProvisionedCapacityResponse extends Shape
 {
     /**
      * @param array{
-     *     ActiveQueryTCU?: int,
-     *     NotificationConfiguration?: AccountSettingsNotificationConfiguration,
-     *     LastUpdate?: LastUpdate
+     *     ActiveQueryTCU?: int|null,
+     *     NotificationConfiguration?: AccountSettingsNotificationConfiguration|null,
+     *     LastUpdate?: LastUpdate|null
      * } $args
      */
     public function __construct(array $args = [])

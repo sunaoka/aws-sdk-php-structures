@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property RedshiftQueryEngineConfiguration $queryEngineConfiguration
- * @property QueryGenerationConfiguration $queryGenerationConfiguration
+ * @property QueryGenerationConfiguration|null $queryGenerationConfiguration
  * @property list<RedshiftQueryEngineStorageConfiguration> $storageConfigurations
  */
 class RedshiftConfiguration extends Shape
@@ -14,7 +14,7 @@ class RedshiftConfiguration extends Shape
     /**
      * @param array{
      *     queryEngineConfiguration: RedshiftQueryEngineConfiguration,
-     *     queryGenerationConfiguration?: QueryGenerationConfiguration,
+     *     queryGenerationConfiguration?: QueryGenerationConfiguration|null,
      *     storageConfigurations: list<RedshiftQueryEngineStorageConfiguration>
      * } $args
      */

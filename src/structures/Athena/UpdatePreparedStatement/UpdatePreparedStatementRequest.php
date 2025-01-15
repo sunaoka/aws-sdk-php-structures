@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StatementName
  * @property string $WorkGroup
  * @property string $QueryStatement
- * @property string $Description
+ * @property string|null $Description
  */
 class UpdatePreparedStatementRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdatePreparedStatementRequest extends Request
      *     StatementName: string,
      *     WorkGroup: string,
      *     QueryStatement: string,
-     *     Description?: string
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

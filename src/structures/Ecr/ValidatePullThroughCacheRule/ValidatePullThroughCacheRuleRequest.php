@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ecrRepositoryPrefix
- * @property string $registryId
+ * @property string|null $registryId
  */
 class ValidatePullThroughCacheRuleRequest extends Request
 {
     /**
      * @param array{
      *     ecrRepositoryPrefix: string,
-     *     registryId?: string
+     *     registryId?: string|null
      * } $args
      */
     public function __construct(array $args)

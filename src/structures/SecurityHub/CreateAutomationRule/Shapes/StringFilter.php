@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\CreateAutomationRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
- * @property 'EQUALS'|'PREFIX'|'NOT_EQUALS'|'PREFIX_NOT_EQUALS'|'CONTAINS'|'NOT_CONTAINS' $Comparison
+ * @property string|null $Value
+ * @property 'EQUALS'|'PREFIX'|'NOT_EQUALS'|'PREFIX_NOT_EQUALS'|'CONTAINS'|'NOT_CONTAINS'|null $Comparison
  */
 class StringFilter extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
-     *     Comparison?: 'EQUALS'|'PREFIX'|'NOT_EQUALS'|'PREFIX_NOT_EQUALS'|'CONTAINS'|'NOT_CONTAINS'
+     *     Value?: string|null,
+     *     Comparison?: 'EQUALS'|'PREFIX'|'NOT_EQUALS'|'PREFIX_NOT_EQUALS'|'CONTAINS'|'NOT_CONTAINS'|null
      * } $args
      */
     public function __construct(array $args = [])

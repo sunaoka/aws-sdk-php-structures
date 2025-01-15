@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $DataSetId
  * @property string $ScheduleId
- * @property \Aws\Api\DateTimeResult $StartAfterDateTime
+ * @property \Aws\Api\DateTimeResult|null $StartAfterDateTime
  */
 class AssetBundleImportJobRefreshScheduleOverrideParameters extends Shape
 {
@@ -15,7 +15,7 @@ class AssetBundleImportJobRefreshScheduleOverrideParameters extends Shape
      * @param array{
      *     DataSetId: string,
      *     ScheduleId: string,
-     *     StartAfterDateTime?: \Aws\Api\DateTimeResult
+     *     StartAfterDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

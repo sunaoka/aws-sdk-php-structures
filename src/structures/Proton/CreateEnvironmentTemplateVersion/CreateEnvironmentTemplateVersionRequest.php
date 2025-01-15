@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\Proton\CreateEnvironmentTemplateVersion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property string $description
- * @property string $majorVersion
+ * @property string|null $clientToken
+ * @property string|null $description
+ * @property string|null $majorVersion
  * @property Shapes\TemplateVersionSourceInput $source
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  * @property string $templateName
  */
 class CreateEnvironmentTemplateVersionRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     description?: string,
-     *     majorVersion?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
+     *     majorVersion?: string|null,
      *     source: Shapes\TemplateVersionSourceInput,
-     *     tags?: list<Shapes\Tag>,
+     *     tags?: list<Shapes\Tag>|null,
      *     templateName: string
      * } $args
      */

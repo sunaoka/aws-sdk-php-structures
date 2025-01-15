@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Transfer\CreateAgreement;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $ServerId
  * @property string $LocalProfileId
  * @property string $PartnerProfileId
  * @property string $BaseDirectory
  * @property string $AccessRole
- * @property 'ACTIVE'|'INACTIVE' $Status
- * @property list<Shapes\Tag> $Tags
- * @property 'ENABLED'|'DISABLED' $PreserveFilename
- * @property 'ENABLED'|'DISABLED' $EnforceMessageSigning
+ * @property 'ACTIVE'|'INACTIVE'|null $Status
+ * @property list<Shapes\Tag>|null $Tags
+ * @property 'ENABLED'|'DISABLED'|null $PreserveFilename
+ * @property 'ENABLED'|'DISABLED'|null $EnforceMessageSigning
  */
 class CreateAgreementRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     ServerId: string,
      *     LocalProfileId: string,
      *     PartnerProfileId: string,
      *     BaseDirectory: string,
      *     AccessRole: string,
-     *     Status?: 'ACTIVE'|'INACTIVE',
-     *     Tags?: list<Shapes\Tag>,
-     *     PreserveFilename?: 'ENABLED'|'DISABLED',
-     *     EnforceMessageSigning?: 'ENABLED'|'DISABLED'
+     *     Status?: 'ACTIVE'|'INACTIVE'|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     PreserveFilename?: 'ENABLED'|'DISABLED'|null,
+     *     EnforceMessageSigning?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

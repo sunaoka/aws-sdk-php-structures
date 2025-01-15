@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\GetSpeakerSearchTask\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SpeakerSearchTaskId
- * @property 'NotStarted'|'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped' $SpeakerSearchTaskStatus
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
+ * @property string|null $SpeakerSearchTaskId
+ * @property 'NotStarted'|'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|null $SpeakerSearchTaskStatus
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
 class SpeakerSearchTask extends Shape
 {
     /**
      * @param array{
-     *     SpeakerSearchTaskId?: string,
-     *     SpeakerSearchTaskStatus?: 'NotStarted'|'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped',
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     SpeakerSearchTaskId?: string|null,
+     *     SpeakerSearchTaskStatus?: 'NotStarted'|'Initializing'|'InProgress'|'Failed'|'Stopping'|'Stopped'|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

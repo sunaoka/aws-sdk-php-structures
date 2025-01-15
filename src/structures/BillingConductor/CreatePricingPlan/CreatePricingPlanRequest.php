@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BillingConductor\CreatePricingPlan;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $Name
- * @property string $Description
- * @property list<string> $PricingRuleArns
- * @property array<string, string> $Tags
+ * @property string|null $Description
+ * @property list<string>|null $PricingRuleArns
+ * @property array<string, string>|null $Tags
  */
 class CreatePricingPlanRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     Name: string,
-     *     Description?: string,
-     *     PricingRuleArns?: list<string>,
-     *     Tags?: array<string, string>
+     *     Description?: string|null,
+     *     PricingRuleArns?: list<string>|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

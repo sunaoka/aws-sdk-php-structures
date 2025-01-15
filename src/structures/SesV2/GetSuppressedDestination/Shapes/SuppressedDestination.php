@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EmailAddress
  * @property 'BOUNCE'|'COMPLAINT' $Reason
  * @property \Aws\Api\DateTimeResult $LastUpdateTime
- * @property SuppressedDestinationAttributes $Attributes
+ * @property SuppressedDestinationAttributes|null $Attributes
  */
 class SuppressedDestination extends Shape
 {
@@ -17,7 +17,7 @@ class SuppressedDestination extends Shape
      *     EmailAddress: string,
      *     Reason: 'BOUNCE'|'COMPLAINT',
      *     LastUpdateTime: \Aws\Api\DateTimeResult,
-     *     Attributes?: SuppressedDestinationAttributes
+     *     Attributes?: SuppressedDestinationAttributes|null
      * } $args
      */
     public function __construct(array $args)

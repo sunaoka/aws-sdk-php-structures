@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Connect\CreateSecurityProfile;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $SecurityProfileId
- * @property string $SecurityProfileArn
+ * @property string|null $SecurityProfileId
+ * @property string|null $SecurityProfileArn
  */
 class CreateSecurityProfileResponse extends Response
 {

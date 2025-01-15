@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\StartLiveTail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $message
+ * @property string|null $message
  */
 class SessionTimeoutException extends Shape
 {
     /**
-     * @param array{message?: string} $args
+     * @param array{message?: string|null} $args
      */
     public function __construct(array $args = [])
     {

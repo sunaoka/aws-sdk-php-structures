@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeJobExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $jobId
- * @property 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'REJECTED'|'REMOVED'|'CANCELED' $status
- * @property bool $forceCanceled
- * @property JobExecutionStatusDetails $statusDetails
- * @property string $thingArn
- * @property \Aws\Api\DateTimeResult $queuedAt
- * @property \Aws\Api\DateTimeResult $startedAt
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property int $executionNumber
- * @property int $versionNumber
- * @property int $approximateSecondsBeforeTimedOut
+ * @property string|null $jobId
+ * @property 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'REJECTED'|'REMOVED'|'CANCELED'|null $status
+ * @property bool|null $forceCanceled
+ * @property JobExecutionStatusDetails|null $statusDetails
+ * @property string|null $thingArn
+ * @property \Aws\Api\DateTimeResult|null $queuedAt
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property int|null $executionNumber
+ * @property int|null $versionNumber
+ * @property int|null $approximateSecondsBeforeTimedOut
  */
 class JobExecution extends Shape
 {
     /**
      * @param array{
-     *     jobId?: string,
-     *     status?: 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'REJECTED'|'REMOVED'|'CANCELED',
-     *     forceCanceled?: bool,
-     *     statusDetails?: JobExecutionStatusDetails,
-     *     thingArn?: string,
-     *     queuedAt?: \Aws\Api\DateTimeResult,
-     *     startedAt?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     executionNumber?: int,
-     *     versionNumber?: int,
-     *     approximateSecondsBeforeTimedOut?: int
+     *     jobId?: string|null,
+     *     status?: 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'REJECTED'|'REMOVED'|'CANCELED'|null,
+     *     forceCanceled?: bool|null,
+     *     statusDetails?: JobExecutionStatusDetails|null,
+     *     thingArn?: string|null,
+     *     queuedAt?: \Aws\Api\DateTimeResult|null,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     executionNumber?: int|null,
+     *     versionNumber?: int|null,
+     *     approximateSecondsBeforeTimedOut?: int|null
      * } $args
      */
     public function __construct(array $args = [])

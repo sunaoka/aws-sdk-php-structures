@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $Namespace
  * @property 'QUICKSIGHT' $IdentityStore
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateNamespaceRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateNamespaceRequest extends Request
      *     AwsAccountId: string,
      *     Namespace: string,
      *     IdentityStore: 'QUICKSIGHT',
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

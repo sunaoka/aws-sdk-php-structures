@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EdgePackagingJobArn
  * @property string $EdgePackagingJobName
  * @property 'STARTING'|'INPROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED' $EdgePackagingJobStatus
- * @property string $CompilationJobName
- * @property string $ModelName
- * @property string $ModelVersion
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $CompilationJobName
+ * @property string|null $ModelName
+ * @property string|null $ModelVersion
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class EdgePackagingJobSummary extends Shape
 {
@@ -21,11 +21,11 @@ class EdgePackagingJobSummary extends Shape
      *     EdgePackagingJobArn: string,
      *     EdgePackagingJobName: string,
      *     EdgePackagingJobStatus: 'STARTING'|'INPROGRESS'|'COMPLETED'|'FAILED'|'STOPPING'|'STOPPED',
-     *     CompilationJobName?: string,
-     *     ModelName?: string,
-     *     ModelVersion?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     CompilationJobName?: string|null,
+     *     ModelName?: string|null,
+     *     ModelVersion?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

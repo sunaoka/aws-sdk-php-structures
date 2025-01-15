@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\ListAsyncInvokes;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\AsyncInvokeSummary> $asyncInvokeSummaries
+ * @property string|null $nextToken
+ * @property list<Shapes\AsyncInvokeSummary>|null $asyncInvokeSummaries
  */
 class ListAsyncInvokesResponse extends Response
 {

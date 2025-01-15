@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $promptIdentifier
- * @property string $promptVersion
+ * @property string|null $promptVersion
  */
 class DeletePromptRequest extends Request
 {
     /**
      * @param array{
      *     promptIdentifier: string,
-     *     promptVersion?: string
+     *     promptVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -11,10 +11,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property 'Human'|'Automated' $jobType
  * @property list<'Summarization'|'Classification'|'QuestionAndAnswer'|'Generation'|'Custom'> $evaluationTaskTypes
- * @property list<string> $modelIdentifiers
- * @property list<string> $ragIdentifiers
- * @property list<string> $evaluatorModelIdentifiers
- * @property 'ModelEvaluation'|'RagEvaluation' $applicationType
+ * @property list<string>|null $modelIdentifiers
+ * @property list<string>|null $ragIdentifiers
+ * @property list<string>|null $evaluatorModelIdentifiers
+ * @property 'ModelEvaluation'|'RagEvaluation'|null $applicationType
  */
 class EvaluationSummary extends Shape
 {
@@ -26,10 +26,10 @@ class EvaluationSummary extends Shape
      *     creationTime: \Aws\Api\DateTimeResult,
      *     jobType: 'Human'|'Automated',
      *     evaluationTaskTypes: list<'Summarization'|'Classification'|'QuestionAndAnswer'|'Generation'|'Custom'>,
-     *     modelIdentifiers?: list<string>,
-     *     ragIdentifiers?: list<string>,
-     *     evaluatorModelIdentifiers?: list<string>,
-     *     applicationType?: 'ModelEvaluation'|'RagEvaluation'
+     *     modelIdentifiers?: list<string>|null,
+     *     ragIdentifiers?: list<string>|null,
+     *     evaluatorModelIdentifiers?: list<string>|null,
+     *     applicationType?: 'ModelEvaluation'|'RagEvaluation'|null
      * } $args
      */
     public function __construct(array $args)

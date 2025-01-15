@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\kendra\DescribeIndex\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  */
 class ServerSideEncryptionConfiguration extends Shape
 {
     /**
-     * @param array{KmsKeyId?: string} $args
+     * @param array{KmsKeyId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

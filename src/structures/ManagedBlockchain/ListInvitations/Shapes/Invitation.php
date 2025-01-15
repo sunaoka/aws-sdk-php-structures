@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\ListInvitations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InvitationId
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $ExpirationDate
- * @property 'PENDING'|'ACCEPTED'|'ACCEPTING'|'REJECTED'|'EXPIRED' $Status
- * @property NetworkSummary $NetworkSummary
- * @property string $Arn
+ * @property string|null $InvitationId
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $ExpirationDate
+ * @property 'PENDING'|'ACCEPTED'|'ACCEPTING'|'REJECTED'|'EXPIRED'|null $Status
+ * @property NetworkSummary|null $NetworkSummary
+ * @property string|null $Arn
  */
 class Invitation extends Shape
 {
     /**
      * @param array{
-     *     InvitationId?: string,
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     ExpirationDate?: \Aws\Api\DateTimeResult,
-     *     Status?: 'PENDING'|'ACCEPTED'|'ACCEPTING'|'REJECTED'|'EXPIRED',
-     *     NetworkSummary?: NetworkSummary,
-     *     Arn?: string
+     *     InvitationId?: string|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     ExpirationDate?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'PENDING'|'ACCEPTED'|'ACCEPTING'|'REJECTED'|'EXPIRED'|null,
+     *     NetworkSummary?: NetworkSummary|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

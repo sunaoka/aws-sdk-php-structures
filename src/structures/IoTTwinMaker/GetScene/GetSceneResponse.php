@@ -11,11 +11,11 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $creationDateTime
  * @property \Aws\Api\DateTimeResult $updateDateTime
- * @property string $description
- * @property list<string> $capabilities
- * @property array<string, string> $sceneMetadata
- * @property array<string, string> $generatedSceneMetadata
- * @property Shapes\SceneError $error
+ * @property string|null $description
+ * @property list<string>|null $capabilities
+ * @property array<string, string>|null $sceneMetadata
+ * @property array<string, string>|null $generatedSceneMetadata
+ * @property Shapes\SceneError|null $error
  */
 class GetSceneResponse extends Response
 {

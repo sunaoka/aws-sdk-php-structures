@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsS3BucketWebsiteConfigurationRoutingRuleCondition $Condition
- * @property AwsS3BucketWebsiteConfigurationRoutingRuleRedirect $Redirect
+ * @property AwsS3BucketWebsiteConfigurationRoutingRuleCondition|null $Condition
+ * @property AwsS3BucketWebsiteConfigurationRoutingRuleRedirect|null $Redirect
  */
 class AwsS3BucketWebsiteConfigurationRoutingRule extends Shape
 {
     /**
      * @param array{
-     *     Condition?: AwsS3BucketWebsiteConfigurationRoutingRuleCondition,
-     *     Redirect?: AwsS3BucketWebsiteConfigurationRoutingRuleRedirect
+     *     Condition?: AwsS3BucketWebsiteConfigurationRoutingRuleCondition|null,
+     *     Redirect?: AwsS3BucketWebsiteConfigurationRoutingRuleRedirect|null
      * } $args
      */
     public function __construct(array $args = [])

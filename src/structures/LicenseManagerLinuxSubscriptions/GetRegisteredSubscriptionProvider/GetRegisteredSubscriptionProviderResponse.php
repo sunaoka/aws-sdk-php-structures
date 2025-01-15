@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LicenseManagerLinuxSubscriptions\GetRegisteredS
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LastSuccessfulDataRetrievalTime
- * @property string $SecretArn
- * @property string $SubscriptionProviderArn
- * @property 'RedHat' $SubscriptionProviderSource
- * @property 'ACTIVE'|'INVALID'|'PENDING' $SubscriptionProviderStatus
- * @property string $SubscriptionProviderStatusMessage
+ * @property string|null $LastSuccessfulDataRetrievalTime
+ * @property string|null $SecretArn
+ * @property string|null $SubscriptionProviderArn
+ * @property 'RedHat'|null $SubscriptionProviderSource
+ * @property 'ACTIVE'|'INVALID'|'PENDING'|null $SubscriptionProviderStatus
+ * @property string|null $SubscriptionProviderStatusMessage
  */
 class GetRegisteredSubscriptionProviderResponse extends Response
 {

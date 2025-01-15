@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property Shapes\RefreshSchedule $RefreshSchedule
- * @property list<Shapes\Tag> $TagsList
- * @property bool $TerminationProtectionEnabled
- * @property list<Shapes\RequestWidget> $Widgets
+ * @property Shapes\RefreshSchedule|null $RefreshSchedule
+ * @property list<Shapes\Tag>|null $TagsList
+ * @property bool|null $TerminationProtectionEnabled
+ * @property list<Shapes\RequestWidget>|null $Widgets
  */
 class CreateDashboardRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     RefreshSchedule?: Shapes\RefreshSchedule,
-     *     TagsList?: list<Shapes\Tag>,
-     *     TerminationProtectionEnabled?: bool,
-     *     Widgets?: list<Shapes\RequestWidget>
+     *     RefreshSchedule?: Shapes\RefreshSchedule|null,
+     *     TagsList?: list<Shapes\Tag>|null,
+     *     TerminationProtectionEnabled?: bool|null,
+     *     Widgets?: list<Shapes\RequestWidget>|null
      * } $args
      */
     public function __construct(array $args)

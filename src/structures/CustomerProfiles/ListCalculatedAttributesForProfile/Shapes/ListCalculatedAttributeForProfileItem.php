@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\ListCalculatedAttributesForPro
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CalculatedAttributeName
- * @property string $DisplayName
- * @property string $IsDataPartial
- * @property string $Value
+ * @property string|null $CalculatedAttributeName
+ * @property string|null $DisplayName
+ * @property string|null $IsDataPartial
+ * @property string|null $Value
  */
 class ListCalculatedAttributeForProfileItem extends Shape
 {
     /**
      * @param array{
-     *     CalculatedAttributeName?: string,
-     *     DisplayName?: string,
-     *     IsDataPartial?: string,
-     *     Value?: string
+     *     CalculatedAttributeName?: string|null,
+     *     DisplayName?: string|null,
+     *     IsDataPartial?: string|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

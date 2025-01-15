@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateCapacityReservationBySplitting;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property string $ClientToken
+ * @property bool|null $DryRun
+ * @property string|null $ClientToken
  * @property string $SourceCapacityReservationId
  * @property int $InstanceCount
- * @property list<Shapes\TagSpecification> $TagSpecifications
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CreateCapacityReservationBySplittingRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     ClientToken?: string,
+     *     DryRun?: bool|null,
+     *     ClientToken?: string|null,
      *     SourceCapacityReservationId: string,
      *     InstanceCount: int,
-     *     TagSpecifications?: list<Shapes\TagSpecification>
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

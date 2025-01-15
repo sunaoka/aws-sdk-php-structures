@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $thingName
- * @property 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'REJECTED'|'REMOVED'|'CANCELED' $status
- * @property string $namespaceId
- * @property int<1, 250> $maxResults
- * @property string $nextToken
- * @property string $jobId
+ * @property 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'REJECTED'|'REMOVED'|'CANCELED'|null $status
+ * @property string|null $namespaceId
+ * @property int<1, 250>|null $maxResults
+ * @property string|null $nextToken
+ * @property string|null $jobId
  */
 class ListJobExecutionsForThingRequest extends Request
 {
     /**
      * @param array{
      *     thingName: string,
-     *     status?: 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'REJECTED'|'REMOVED'|'CANCELED',
-     *     namespaceId?: string,
-     *     maxResults?: int<1, 250>,
-     *     nextToken?: string,
-     *     jobId?: string
+     *     status?: 'QUEUED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'TIMED_OUT'|'REJECTED'|'REMOVED'|'CANCELED'|null,
+     *     namespaceId?: string|null,
+     *     maxResults?: int<1, 250>|null,
+     *     nextToken?: string|null,
+     *     jobId?: string|null
      * } $args
      */
     public function __construct(array $args)

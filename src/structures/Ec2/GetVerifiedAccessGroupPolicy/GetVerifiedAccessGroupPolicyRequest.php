@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $VerifiedAccessGroupId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class GetVerifiedAccessGroupPolicyRequest extends Request
 {
     /**
      * @param array{
      *     VerifiedAccessGroupId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MarketplaceEntitlementService\GetEntitlements\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProductCode
- * @property string $Dimension
- * @property string $CustomerIdentifier
- * @property EntitlementValue $Value
- * @property \Aws\Api\DateTimeResult $ExpirationDate
+ * @property string|null $ProductCode
+ * @property string|null $Dimension
+ * @property string|null $CustomerIdentifier
+ * @property EntitlementValue|null $Value
+ * @property \Aws\Api\DateTimeResult|null $ExpirationDate
  */
 class Entitlement extends Shape
 {
     /**
      * @param array{
-     *     ProductCode?: string,
-     *     Dimension?: string,
-     *     CustomerIdentifier?: string,
-     *     Value?: EntitlementValue,
-     *     ExpirationDate?: \Aws\Api\DateTimeResult
+     *     ProductCode?: string|null,
+     *     Dimension?: string|null,
+     *     CustomerIdentifier?: string|null,
+     *     Value?: EntitlementValue|null,
+     *     ExpirationDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

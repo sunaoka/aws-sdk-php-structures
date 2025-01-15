@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property list<string> $SuggesterNames
- * @property bool $Deployed
+ * @property list<string>|null $SuggesterNames
+ * @property bool|null $Deployed
  */
 class DescribeSuggestersRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     SuggesterNames?: list<string>,
-     *     Deployed?: bool
+     *     SuggesterNames?: list<string>|null,
+     *     Deployed?: bool|null
      * } $args
      */
     public function __construct(array $args)

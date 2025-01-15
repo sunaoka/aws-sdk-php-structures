@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetDocumentationParts;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $position
- * @property list<Shapes\DocumentationPart> $items
+ * @property string|null $position
+ * @property list<Shapes\DocumentationPart>|null $items
  */
 class GetDocumentationPartsResponse extends Response
 {

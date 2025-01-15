@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QBusiness\GetChatControlsConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $indexId
- * @property string $dataSourceId
+ * @property string|null $indexId
+ * @property string|null $dataSourceId
  */
 class EligibleDataSource extends Shape
 {
     /**
      * @param array{
-     *     indexId?: string,
-     *     dataSourceId?: string
+     *     indexId?: string|null,
+     *     dataSourceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

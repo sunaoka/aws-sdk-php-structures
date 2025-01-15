@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Description
  * @property string $GroupName
- * @property string $VpcId
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
+ * @property string|null $VpcId
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
  */
 class CreateSecurityGroupRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateSecurityGroupRequest extends Request
      * @param array{
      *     Description: string,
      *     GroupName: string,
-     *     VpcId?: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool
+     *     VpcId?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

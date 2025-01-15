@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\FMS\ListComplianceStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PolicyOwner
- * @property string $PolicyId
- * @property string $PolicyName
- * @property string $MemberAccount
- * @property list<EvaluationResult> $EvaluationResults
- * @property \Aws\Api\DateTimeResult $LastUpdated
- * @property array<'AWSCONFIG'|'AWSWAF'|'AWSSHIELD_ADVANCED'|'AWSVPC', string> $IssueInfoMap
+ * @property string|null $PolicyOwner
+ * @property string|null $PolicyId
+ * @property string|null $PolicyName
+ * @property string|null $MemberAccount
+ * @property list<EvaluationResult>|null $EvaluationResults
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property array<'AWSCONFIG'|'AWSWAF'|'AWSSHIELD_ADVANCED'|'AWSVPC', string>|null $IssueInfoMap
  */
 class PolicyComplianceStatus extends Shape
 {
     /**
      * @param array{
-     *     PolicyOwner?: string,
-     *     PolicyId?: string,
-     *     PolicyName?: string,
-     *     MemberAccount?: string,
-     *     EvaluationResults?: list<EvaluationResult>,
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
-     *     IssueInfoMap?: array<'AWSCONFIG'|'AWSWAF'|'AWSSHIELD_ADVANCED'|'AWSVPC', string>
+     *     PolicyOwner?: string|null,
+     *     PolicyId?: string|null,
+     *     PolicyName?: string|null,
+     *     MemberAccount?: string|null,
+     *     EvaluationResults?: list<EvaluationResult>|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     IssueInfoMap?: array<'AWSCONFIG'|'AWSWAF'|'AWSSHIELD_ADVANCED'|'AWSVPC', string>|null
      * } $args
      */
     public function __construct(array $args = [])

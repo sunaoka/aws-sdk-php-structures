@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\GetFinding;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Finding $finding
+ * @property Shapes\Finding|null $finding
  */
 class GetFindingResponse extends Response
 {

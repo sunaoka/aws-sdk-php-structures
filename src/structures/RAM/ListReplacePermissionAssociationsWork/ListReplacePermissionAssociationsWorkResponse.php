@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\RAM\ListReplacePermissionAssociationsWork;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ReplacePermissionAssociationsWork> $replacePermissionAssociationsWorks
- * @property string $nextToken
+ * @property list<Shapes\ReplacePermissionAssociationsWork>|null $replacePermissionAssociationsWorks
+ * @property string|null $nextToken
  */
 class ListReplacePermissionAssociationsWorkResponse extends Response
 {

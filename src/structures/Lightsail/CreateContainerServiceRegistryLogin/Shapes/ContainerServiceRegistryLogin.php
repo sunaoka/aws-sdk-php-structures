@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Lightsail\CreateContainerServiceRegistryLogin\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $username
- * @property string $password
- * @property \Aws\Api\DateTimeResult $expiresAt
- * @property string $registry
+ * @property string|null $username
+ * @property string|null $password
+ * @property \Aws\Api\DateTimeResult|null $expiresAt
+ * @property string|null $registry
  */
 class ContainerServiceRegistryLogin extends Shape
 {
     /**
      * @param array{
-     *     username?: string,
-     *     password?: string,
-     *     expiresAt?: \Aws\Api\DateTimeResult,
-     *     registry?: string
+     *     username?: string|null,
+     *     password?: string|null,
+     *     expiresAt?: \Aws\Api\DateTimeResult|null,
+     *     registry?: string|null
      * } $args
      */
     public function __construct(array $args = [])

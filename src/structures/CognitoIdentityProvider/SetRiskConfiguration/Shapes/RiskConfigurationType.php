@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\SetRiskConfiguration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserPoolId
- * @property string $ClientId
- * @property CompromisedCredentialsRiskConfigurationType $CompromisedCredentialsRiskConfiguration
- * @property AccountTakeoverRiskConfigurationType $AccountTakeoverRiskConfiguration
- * @property RiskExceptionConfigurationType $RiskExceptionConfiguration
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
+ * @property string|null $UserPoolId
+ * @property string|null $ClientId
+ * @property CompromisedCredentialsRiskConfigurationType|null $CompromisedCredentialsRiskConfiguration
+ * @property AccountTakeoverRiskConfigurationType|null $AccountTakeoverRiskConfiguration
+ * @property RiskExceptionConfigurationType|null $RiskExceptionConfiguration
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
  */
 class RiskConfigurationType extends Shape
 {
     /**
      * @param array{
-     *     UserPoolId?: string,
-     *     ClientId?: string,
-     *     CompromisedCredentialsRiskConfiguration?: CompromisedCredentialsRiskConfigurationType,
-     *     AccountTakeoverRiskConfiguration?: AccountTakeoverRiskConfigurationType,
-     *     RiskExceptionConfiguration?: RiskExceptionConfigurationType,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult
+     *     UserPoolId?: string|null,
+     *     ClientId?: string|null,
+     *     CompromisedCredentialsRiskConfiguration?: CompromisedCredentialsRiskConfigurationType|null,
+     *     AccountTakeoverRiskConfiguration?: AccountTakeoverRiskConfigurationType|null,
+     *     RiskExceptionConfiguration?: RiskExceptionConfigurationType|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Appflow\CreateConnectorProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BasicAuthCredentials $basicAuthCredentials
- * @property OAuthCredentials $oAuthCredentials
+ * @property BasicAuthCredentials|null $basicAuthCredentials
+ * @property OAuthCredentials|null $oAuthCredentials
  */
 class SAPODataConnectorProfileCredentials extends Shape
 {
     /**
      * @param array{
-     *     basicAuthCredentials?: BasicAuthCredentials,
-     *     oAuthCredentials?: OAuthCredentials
+     *     basicAuthCredentials?: BasicAuthCredentials|null,
+     *     oAuthCredentials?: OAuthCredentials|null
      * } $args
      */
     public function __construct(array $args = [])

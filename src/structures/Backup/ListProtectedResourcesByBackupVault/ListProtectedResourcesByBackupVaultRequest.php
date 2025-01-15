@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupVaultName
- * @property string $BackupVaultAccountId
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
+ * @property string|null $BackupVaultAccountId
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
  */
 class ListProtectedResourcesByBackupVaultRequest extends Request
 {
     /**
      * @param array{
      *     BackupVaultName: string,
-     *     BackupVaultAccountId?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>
+     *     BackupVaultAccountId?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

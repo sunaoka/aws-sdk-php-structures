@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Transfer\CreateWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property list<S3Tag> $Tags
- * @property string $SourceFileLocation
+ * @property string|null $Name
+ * @property list<S3Tag>|null $Tags
+ * @property string|null $SourceFileLocation
  */
 class TagStepDetails extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Tags?: list<S3Tag>,
-     *     SourceFileLocation?: string
+     *     Name?: string|null,
+     *     Tags?: list<S3Tag>|null,
+     *     SourceFileLocation?: string|null
      * } $args
      */
     public function __construct(array $args = [])

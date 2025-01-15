@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\finspace\CreateKxCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $vpcId
- * @property list<string> $securityGroupIds
- * @property list<string> $subnetIds
- * @property 'IP_V4' $ipAddressType
+ * @property string|null $vpcId
+ * @property list<string>|null $securityGroupIds
+ * @property list<string>|null $subnetIds
+ * @property 'IP_V4'|null $ipAddressType
  */
 class VpcConfiguration extends Shape
 {
     /**
      * @param array{
-     *     vpcId?: string,
-     *     securityGroupIds?: list<string>,
-     *     subnetIds?: list<string>,
-     *     ipAddressType?: 'IP_V4'
+     *     vpcId?: string|null,
+     *     securityGroupIds?: list<string>|null,
+     *     subnetIds?: list<string>|null,
+     *     ipAddressType?: 'IP_V4'|null
      * } $args
      */
     public function __construct(array $args = [])

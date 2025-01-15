@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\TaxSettings\ListTaxRegistrations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BrazilAdditionalInfo $brazilAdditionalInfo
- * @property CanadaAdditionalInfo $canadaAdditionalInfo
- * @property EstoniaAdditionalInfo $estoniaAdditionalInfo
- * @property GeorgiaAdditionalInfo $georgiaAdditionalInfo
- * @property IndiaAdditionalInfo $indiaAdditionalInfo
- * @property IsraelAdditionalInfo $israelAdditionalInfo
- * @property ItalyAdditionalInfo $italyAdditionalInfo
- * @property KenyaAdditionalInfo $kenyaAdditionalInfo
- * @property MalaysiaAdditionalInfo $malaysiaAdditionalInfo
- * @property PolandAdditionalInfo $polandAdditionalInfo
- * @property RomaniaAdditionalInfo $romaniaAdditionalInfo
- * @property SaudiArabiaAdditionalInfo $saudiArabiaAdditionalInfo
- * @property SouthKoreaAdditionalInfo $southKoreaAdditionalInfo
- * @property SpainAdditionalInfo $spainAdditionalInfo
- * @property TurkeyAdditionalInfo $turkeyAdditionalInfo
- * @property UkraineAdditionalInfo $ukraineAdditionalInfo
+ * @property BrazilAdditionalInfo|null $brazilAdditionalInfo
+ * @property CanadaAdditionalInfo|null $canadaAdditionalInfo
+ * @property EstoniaAdditionalInfo|null $estoniaAdditionalInfo
+ * @property GeorgiaAdditionalInfo|null $georgiaAdditionalInfo
+ * @property IndiaAdditionalInfo|null $indiaAdditionalInfo
+ * @property IsraelAdditionalInfo|null $israelAdditionalInfo
+ * @property ItalyAdditionalInfo|null $italyAdditionalInfo
+ * @property KenyaAdditionalInfo|null $kenyaAdditionalInfo
+ * @property MalaysiaAdditionalInfo|null $malaysiaAdditionalInfo
+ * @property PolandAdditionalInfo|null $polandAdditionalInfo
+ * @property RomaniaAdditionalInfo|null $romaniaAdditionalInfo
+ * @property SaudiArabiaAdditionalInfo|null $saudiArabiaAdditionalInfo
+ * @property SouthKoreaAdditionalInfo|null $southKoreaAdditionalInfo
+ * @property SpainAdditionalInfo|null $spainAdditionalInfo
+ * @property TurkeyAdditionalInfo|null $turkeyAdditionalInfo
+ * @property UkraineAdditionalInfo|null $ukraineAdditionalInfo
  */
 class AdditionalInfoResponse extends Shape
 {
     /**
      * @param array{
-     *     brazilAdditionalInfo?: BrazilAdditionalInfo,
-     *     canadaAdditionalInfo?: CanadaAdditionalInfo,
-     *     estoniaAdditionalInfo?: EstoniaAdditionalInfo,
-     *     georgiaAdditionalInfo?: GeorgiaAdditionalInfo,
-     *     indiaAdditionalInfo?: IndiaAdditionalInfo,
-     *     israelAdditionalInfo?: IsraelAdditionalInfo,
-     *     italyAdditionalInfo?: ItalyAdditionalInfo,
-     *     kenyaAdditionalInfo?: KenyaAdditionalInfo,
-     *     malaysiaAdditionalInfo?: MalaysiaAdditionalInfo,
-     *     polandAdditionalInfo?: PolandAdditionalInfo,
-     *     romaniaAdditionalInfo?: RomaniaAdditionalInfo,
-     *     saudiArabiaAdditionalInfo?: SaudiArabiaAdditionalInfo,
-     *     southKoreaAdditionalInfo?: SouthKoreaAdditionalInfo,
-     *     spainAdditionalInfo?: SpainAdditionalInfo,
-     *     turkeyAdditionalInfo?: TurkeyAdditionalInfo,
-     *     ukraineAdditionalInfo?: UkraineAdditionalInfo
+     *     brazilAdditionalInfo?: BrazilAdditionalInfo|null,
+     *     canadaAdditionalInfo?: CanadaAdditionalInfo|null,
+     *     estoniaAdditionalInfo?: EstoniaAdditionalInfo|null,
+     *     georgiaAdditionalInfo?: GeorgiaAdditionalInfo|null,
+     *     indiaAdditionalInfo?: IndiaAdditionalInfo|null,
+     *     israelAdditionalInfo?: IsraelAdditionalInfo|null,
+     *     italyAdditionalInfo?: ItalyAdditionalInfo|null,
+     *     kenyaAdditionalInfo?: KenyaAdditionalInfo|null,
+     *     malaysiaAdditionalInfo?: MalaysiaAdditionalInfo|null,
+     *     polandAdditionalInfo?: PolandAdditionalInfo|null,
+     *     romaniaAdditionalInfo?: RomaniaAdditionalInfo|null,
+     *     saudiArabiaAdditionalInfo?: SaudiArabiaAdditionalInfo|null,
+     *     southKoreaAdditionalInfo?: SouthKoreaAdditionalInfo|null,
+     *     spainAdditionalInfo?: SpainAdditionalInfo|null,
+     *     turkeyAdditionalInfo?: TurkeyAdditionalInfo|null,
+     *     ukraineAdditionalInfo?: UkraineAdditionalInfo|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, AdditionalModelRequestFieldsValue> $additionalModelRequestFields
- * @property GuardrailConfiguration $guardrailConfiguration
- * @property InferenceConfig $inferenceConfig
- * @property PerformanceConfiguration $performanceConfig
- * @property PromptTemplate $promptTemplate
+ * @property array<string, AdditionalModelRequestFieldsValue>|null $additionalModelRequestFields
+ * @property GuardrailConfiguration|null $guardrailConfiguration
+ * @property InferenceConfig|null $inferenceConfig
+ * @property PerformanceConfiguration|null $performanceConfig
+ * @property PromptTemplate|null $promptTemplate
  */
 class GenerationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     additionalModelRequestFields?: array<string, AdditionalModelRequestFieldsValue>,
-     *     guardrailConfiguration?: GuardrailConfiguration,
-     *     inferenceConfig?: InferenceConfig,
-     *     performanceConfig?: PerformanceConfiguration,
-     *     promptTemplate?: PromptTemplate
+     *     additionalModelRequestFields?: array<string, AdditionalModelRequestFieldsValue>|null,
+     *     guardrailConfiguration?: GuardrailConfiguration|null,
+     *     inferenceConfig?: InferenceConfig|null,
+     *     performanceConfig?: PerformanceConfiguration|null,
+     *     promptTemplate?: PromptTemplate|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GlobalReplicationGroupId
  * @property int $NodeGroupCount
- * @property list<string> $GlobalNodeGroupsToRemove
- * @property list<string> $GlobalNodeGroupsToRetain
+ * @property list<string>|null $GlobalNodeGroupsToRemove
+ * @property list<string>|null $GlobalNodeGroupsToRetain
  * @property bool $ApplyImmediately
  */
 class DecreaseNodeGroupsInGlobalReplicationGroupRequest extends Request
@@ -17,8 +17,8 @@ class DecreaseNodeGroupsInGlobalReplicationGroupRequest extends Request
      * @param array{
      *     GlobalReplicationGroupId: string,
      *     NodeGroupCount: int,
-     *     GlobalNodeGroupsToRemove?: list<string>,
-     *     GlobalNodeGroupsToRetain?: list<string>,
+     *     GlobalNodeGroupsToRemove?: list<string>|null,
+     *     GlobalNodeGroupsToRetain?: list<string>|null,
      *     ApplyImmediately: bool
      * } $args
      */

@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountScope
- * @property string $service
- * @property string $normalizedUnitsToPurchase
- * @property string $term
- * @property string $paymentOption
- * @property string $numberOfInstancesToPurchase
- * @property string $instanceFamily
- * @property string $instanceType
- * @property string $reservedInstancesRegion
- * @property bool $sizeFlexEligible
- * @property string $currentGeneration
- * @property string $upfrontCost
- * @property string $monthlyRecurringCost
- * @property string $licenseModel
- * @property string $databaseEdition
- * @property string $databaseEngine
- * @property string $deploymentOption
+ * @property string|null $accountScope
+ * @property string|null $service
+ * @property string|null $normalizedUnitsToPurchase
+ * @property string|null $term
+ * @property string|null $paymentOption
+ * @property string|null $numberOfInstancesToPurchase
+ * @property string|null $instanceFamily
+ * @property string|null $instanceType
+ * @property string|null $reservedInstancesRegion
+ * @property bool|null $sizeFlexEligible
+ * @property string|null $currentGeneration
+ * @property string|null $upfrontCost
+ * @property string|null $monthlyRecurringCost
+ * @property string|null $licenseModel
+ * @property string|null $databaseEdition
+ * @property string|null $databaseEngine
+ * @property string|null $deploymentOption
  */
 class RdsReservedInstancesConfiguration extends Shape
 {
     /**
      * @param array{
-     *     accountScope?: string,
-     *     service?: string,
-     *     normalizedUnitsToPurchase?: string,
-     *     term?: string,
-     *     paymentOption?: string,
-     *     numberOfInstancesToPurchase?: string,
-     *     instanceFamily?: string,
-     *     instanceType?: string,
-     *     reservedInstancesRegion?: string,
-     *     sizeFlexEligible?: bool,
-     *     currentGeneration?: string,
-     *     upfrontCost?: string,
-     *     monthlyRecurringCost?: string,
-     *     licenseModel?: string,
-     *     databaseEdition?: string,
-     *     databaseEngine?: string,
-     *     deploymentOption?: string
+     *     accountScope?: string|null,
+     *     service?: string|null,
+     *     normalizedUnitsToPurchase?: string|null,
+     *     term?: string|null,
+     *     paymentOption?: string|null,
+     *     numberOfInstancesToPurchase?: string|null,
+     *     instanceFamily?: string|null,
+     *     instanceType?: string|null,
+     *     reservedInstancesRegion?: string|null,
+     *     sizeFlexEligible?: bool|null,
+     *     currentGeneration?: string|null,
+     *     upfrontCost?: string|null,
+     *     monthlyRecurringCost?: string|null,
+     *     licenseModel?: string|null,
+     *     databaseEdition?: string|null,
+     *     databaseEngine?: string|null,
+     *     deploymentOption?: string|null
      * } $args
      */
     public function __construct(array $args = [])

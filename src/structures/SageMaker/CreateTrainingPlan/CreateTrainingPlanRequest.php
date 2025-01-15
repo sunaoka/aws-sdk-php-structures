@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TrainingPlanName
  * @property string $TrainingPlanOfferingId
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateTrainingPlanRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateTrainingPlanRequest extends Request
      * @param array{
      *     TrainingPlanName: string,
      *     TrainingPlanOfferingId: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataExchange\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ImportAssetFromSignedUrlJobErrorDetails $ImportAssetFromSignedUrlJobErrorDetails
- * @property list<AssetSourceEntry> $ImportAssetsFromS3JobErrorDetails
+ * @property ImportAssetFromSignedUrlJobErrorDetails|null $ImportAssetFromSignedUrlJobErrorDetails
+ * @property list<AssetSourceEntry>|null $ImportAssetsFromS3JobErrorDetails
  */
 class Details extends Shape
 {
     /**
      * @param array{
-     *     ImportAssetFromSignedUrlJobErrorDetails?: ImportAssetFromSignedUrlJobErrorDetails,
-     *     ImportAssetsFromS3JobErrorDetails?: list<AssetSourceEntry>
+     *     ImportAssetFromSignedUrlJobErrorDetails?: ImportAssetFromSignedUrlJobErrorDetails|null,
+     *     ImportAssetsFromS3JobErrorDetails?: list<AssetSourceEntry>|null
      * } $args
      */
     public function __construct(array $args = [])

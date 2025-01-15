@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProjectName
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class CreateProjectRequest extends Request
 {
     /**
      * @param array{
      *     ProjectName: string,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

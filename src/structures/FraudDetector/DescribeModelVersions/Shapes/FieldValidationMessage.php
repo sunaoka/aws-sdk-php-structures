@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\FraudDetector\DescribeModelVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $fieldName
- * @property string $identifier
- * @property string $title
- * @property string $content
- * @property string $type
+ * @property string|null $fieldName
+ * @property string|null $identifier
+ * @property string|null $title
+ * @property string|null $content
+ * @property string|null $type
  */
 class FieldValidationMessage extends Shape
 {
     /**
      * @param array{
-     *     fieldName?: string,
-     *     identifier?: string,
-     *     title?: string,
-     *     content?: string,
-     *     type?: string
+     *     fieldName?: string|null,
+     *     identifier?: string|null,
+     *     title?: string|null,
+     *     content?: string|null,
+     *     type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

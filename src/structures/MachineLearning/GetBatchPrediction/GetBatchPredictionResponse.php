@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MachineLearning\GetBatchPrediction;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $BatchPredictionId
- * @property string $MLModelId
- * @property string $BatchPredictionDataSourceId
- * @property string $InputDataLocationS3
- * @property string $CreatedByIamUser
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $LastUpdatedAt
- * @property string $Name
- * @property 'PENDING'|'INPROGRESS'|'FAILED'|'COMPLETED'|'DELETED' $Status
- * @property string $OutputUri
- * @property string $LogUri
- * @property string $Message
- * @property int $ComputeTime
- * @property \Aws\Api\DateTimeResult $FinishedAt
- * @property \Aws\Api\DateTimeResult $StartedAt
- * @property int $TotalRecordCount
- * @property int $InvalidRecordCount
+ * @property string|null $BatchPredictionId
+ * @property string|null $MLModelId
+ * @property string|null $BatchPredictionDataSourceId
+ * @property string|null $InputDataLocationS3
+ * @property string|null $CreatedByIamUser
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property string|null $Name
+ * @property 'PENDING'|'INPROGRESS'|'FAILED'|'COMPLETED'|'DELETED'|null $Status
+ * @property string|null $OutputUri
+ * @property string|null $LogUri
+ * @property string|null $Message
+ * @property int|null $ComputeTime
+ * @property \Aws\Api\DateTimeResult|null $FinishedAt
+ * @property \Aws\Api\DateTimeResult|null $StartedAt
+ * @property int|null $TotalRecordCount
+ * @property int|null $InvalidRecordCount
  */
 class GetBatchPredictionResponse extends Response
 {

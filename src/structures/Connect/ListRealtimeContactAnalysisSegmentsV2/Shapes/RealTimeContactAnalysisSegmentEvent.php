@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property string $ParticipantId
- * @property 'AGENT'|'CUSTOMER'|'SYSTEM'|'CUSTOM_BOT'|'SUPERVISOR' $ParticipantRole
- * @property string $DisplayName
+ * @property string|null $ParticipantId
+ * @property 'AGENT'|'CUSTOMER'|'SYSTEM'|'CUSTOM_BOT'|'SUPERVISOR'|null $ParticipantRole
+ * @property string|null $DisplayName
  * @property string $EventType
  * @property RealTimeContactAnalysisTimeData $Time
  */
@@ -17,9 +17,9 @@ class RealTimeContactAnalysisSegmentEvent extends Shape
     /**
      * @param array{
      *     Id: string,
-     *     ParticipantId?: string,
-     *     ParticipantRole?: 'AGENT'|'CUSTOMER'|'SYSTEM'|'CUSTOM_BOT'|'SUPERVISOR',
-     *     DisplayName?: string,
+     *     ParticipantId?: string|null,
+     *     ParticipantRole?: 'AGENT'|'CUSTOMER'|'SYSTEM'|'CUSTOM_BOT'|'SUPERVISOR'|null,
+     *     DisplayName?: string|null,
      *     EventType: string,
      *     Time: RealTimeContactAnalysisTimeData
      * } $args

@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Iot\GetCommand;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $commandId
- * @property string $commandArn
- * @property 'AWS-IoT'|'AWS-IoT-FleetWise' $namespace
- * @property string $displayName
- * @property string $description
- * @property list<Shapes\CommandParameter> $mandatoryParameters
- * @property Shapes\CommandPayload $payload
- * @property string $roleArn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property bool $deprecated
- * @property bool $pendingDeletion
+ * @property string|null $commandId
+ * @property string|null $commandArn
+ * @property 'AWS-IoT'|'AWS-IoT-FleetWise'|null $namespace
+ * @property string|null $displayName
+ * @property string|null $description
+ * @property list<Shapes\CommandParameter>|null $mandatoryParameters
+ * @property Shapes\CommandPayload|null $payload
+ * @property string|null $roleArn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property bool|null $deprecated
+ * @property bool|null $pendingDeletion
  */
 class GetCommandResponse extends Response
 {

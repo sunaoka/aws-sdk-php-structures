@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ExportHiddenFieldsOption $ExportHiddenFieldsOption
+ * @property ExportHiddenFieldsOption|null $ExportHiddenFieldsOption
  */
 class DashboardVisualPublishOptions extends Shape
 {
     /**
-     * @param array{ExportHiddenFieldsOption?: ExportHiddenFieldsOption} $args
+     * @param array{ExportHiddenFieldsOption?: ExportHiddenFieldsOption|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeReservedCacheNodes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $RecurringChargeAmount
- * @property string $RecurringChargeFrequency
+ * @property double|null $RecurringChargeAmount
+ * @property string|null $RecurringChargeFrequency
  */
 class RecurringCharge extends Shape
 {
     /**
      * @param array{
-     *     RecurringChargeAmount?: double,
-     *     RecurringChargeFrequency?: string
+     *     RecurringChargeAmount?: double|null,
+     *     RecurringChargeFrequency?: string|null
      * } $args
      */
     public function __construct(array $args = [])

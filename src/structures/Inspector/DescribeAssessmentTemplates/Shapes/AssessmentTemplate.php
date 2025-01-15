@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<180, 86400> $durationInSeconds
  * @property list<string> $rulesPackageArns
  * @property list<Attribute> $userAttributesForFindings
- * @property string $lastAssessmentRunArn
+ * @property string|null $lastAssessmentRunArn
  * @property int $assessmentRunCount
  * @property \Aws\Api\DateTimeResult $createdAt
  */
@@ -25,7 +25,7 @@ class AssessmentTemplate extends Shape
      *     durationInSeconds: int<180, 86400>,
      *     rulesPackageArns: list<string>,
      *     userAttributesForFindings: list<Attribute>,
-     *     lastAssessmentRunArn?: string,
+     *     lastAssessmentRunArn?: string|null,
      *     assessmentRunCount: int,
      *     createdAt: \Aws\Api\DateTimeResult
      * } $args

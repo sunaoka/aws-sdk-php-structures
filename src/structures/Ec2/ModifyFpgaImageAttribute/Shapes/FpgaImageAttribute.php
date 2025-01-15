@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyFpgaImageAttribute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FpgaImageId
- * @property string $Name
- * @property string $Description
- * @property list<LoadPermission> $LoadPermissions
- * @property list<ProductCode> $ProductCodes
+ * @property string|null $FpgaImageId
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property list<LoadPermission>|null $LoadPermissions
+ * @property list<ProductCode>|null $ProductCodes
  */
 class FpgaImageAttribute extends Shape
 {
     /**
      * @param array{
-     *     FpgaImageId?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     LoadPermissions?: list<LoadPermission>,
-     *     ProductCodes?: list<ProductCode>
+     *     FpgaImageId?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     LoadPermissions?: list<LoadPermission>|null,
+     *     ProductCodes?: list<ProductCode>|null
      * } $args
      */
     public function __construct(array $args = [])

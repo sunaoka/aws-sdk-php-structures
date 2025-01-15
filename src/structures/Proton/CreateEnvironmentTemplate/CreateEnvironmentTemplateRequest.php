@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Proton\CreateEnvironmentTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
- * @property string $displayName
- * @property string $encryptionKey
+ * @property string|null $description
+ * @property string|null $displayName
+ * @property string|null $encryptionKey
  * @property string $name
- * @property 'CUSTOMER_MANAGED' $provisioning
- * @property list<Shapes\Tag> $tags
+ * @property 'CUSTOMER_MANAGED'|null $provisioning
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateEnvironmentTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
-     *     displayName?: string,
-     *     encryptionKey?: string,
+     *     description?: string|null,
+     *     displayName?: string|null,
+     *     encryptionKey?: string|null,
      *     name: string,
-     *     provisioning?: 'CUSTOMER_MANAGED',
-     *     tags?: list<Shapes\Tag>
+     *     provisioning?: 'CUSTOMER_MANAGED'|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

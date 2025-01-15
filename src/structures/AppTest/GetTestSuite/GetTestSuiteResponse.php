@@ -9,16 +9,16 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property Shapes\TestSuiteLatestVersion $latestVersion
  * @property int $testSuiteVersion
- * @property 'Creating'|'Updating'|'Active'|'Failed'|'Deleting' $status
- * @property string $statusReason
+ * @property 'Creating'|'Updating'|'Active'|'Failed'|'Deleting'|null $status
+ * @property string|null $statusReason
  * @property string $testSuiteArn
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property string $description
+ * @property string|null $description
  * @property list<Shapes\Step> $beforeSteps
  * @property list<Shapes\Step> $afterSteps
  * @property Shapes\TestCases $testCases
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class GetTestSuiteResponse extends Response
 {

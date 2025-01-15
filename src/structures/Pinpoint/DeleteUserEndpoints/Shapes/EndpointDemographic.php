@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Pinpoint\DeleteUserEndpoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AppVersion
- * @property string $Locale
- * @property string $Make
- * @property string $Model
- * @property string $ModelVersion
- * @property string $Platform
- * @property string $PlatformVersion
- * @property string $Timezone
+ * @property string|null $AppVersion
+ * @property string|null $Locale
+ * @property string|null $Make
+ * @property string|null $Model
+ * @property string|null $ModelVersion
+ * @property string|null $Platform
+ * @property string|null $PlatformVersion
+ * @property string|null $Timezone
  */
 class EndpointDemographic extends Shape
 {
     /**
      * @param array{
-     *     AppVersion?: string,
-     *     Locale?: string,
-     *     Make?: string,
-     *     Model?: string,
-     *     ModelVersion?: string,
-     *     Platform?: string,
-     *     PlatformVersion?: string,
-     *     Timezone?: string
+     *     AppVersion?: string|null,
+     *     Locale?: string|null,
+     *     Make?: string|null,
+     *     Model?: string|null,
+     *     ModelVersion?: string|null,
+     *     Platform?: string|null,
+     *     PlatformVersion?: string|null,
+     *     Timezone?: string|null
      * } $args
      */
     public function __construct(array $args = [])

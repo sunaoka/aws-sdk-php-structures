@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\StartExportTask\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Ec2RecommendationsExportPreferences $ec2RecommendationsPreferences
+ * @property Ec2RecommendationsExportPreferences|null $ec2RecommendationsPreferences
  */
 class ExportPreferences extends Shape
 {
     /**
-     * @param array{ec2RecommendationsPreferences?: Ec2RecommendationsExportPreferences} $args
+     * @param array{ec2RecommendationsPreferences?: Ec2RecommendationsExportPreferences|null} $args
      */
     public function __construct(array $args = [])
     {

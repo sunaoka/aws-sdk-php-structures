@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\DocumentLocation $DocumentLocation
- * @property string $ClientRequestToken
- * @property string $JobTag
- * @property Shapes\NotificationChannel $NotificationChannel
- * @property Shapes\OutputConfig $OutputConfig
- * @property string $KMSKeyId
+ * @property string|null $ClientRequestToken
+ * @property string|null $JobTag
+ * @property Shapes\NotificationChannel|null $NotificationChannel
+ * @property Shapes\OutputConfig|null $OutputConfig
+ * @property string|null $KMSKeyId
  */
 class StartDocumentTextDetectionRequest extends Request
 {
     /**
      * @param array{
      *     DocumentLocation: Shapes\DocumentLocation,
-     *     ClientRequestToken?: string,
-     *     JobTag?: string,
-     *     NotificationChannel?: Shapes\NotificationChannel,
-     *     OutputConfig?: Shapes\OutputConfig,
-     *     KMSKeyId?: string
+     *     ClientRequestToken?: string|null,
+     *     JobTag?: string|null,
+     *     NotificationChannel?: Shapes\NotificationChannel|null,
+     *     OutputConfig?: Shapes\OutputConfig|null,
+     *     KMSKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

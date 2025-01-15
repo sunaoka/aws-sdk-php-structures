@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AdminAccount
- * @property Shapes\AdminScope $AdminScope
+ * @property Shapes\AdminScope|null $AdminScope
  */
 class PutAdminAccountRequest extends Request
 {
     /**
      * @param array{
      *     AdminAccount: string,
-     *     AdminScope?: Shapes\AdminScope
+     *     AdminScope?: Shapes\AdminScope|null
      * } $args
      */
     public function __construct(array $args)

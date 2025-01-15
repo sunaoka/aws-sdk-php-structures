@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property Shapes\FairsharePolicy $fairsharePolicy
+ * @property Shapes\FairsharePolicy|null $fairsharePolicy
  */
 class UpdateSchedulingPolicyRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     fairsharePolicy?: Shapes\FairsharePolicy
+     *     fairsharePolicy?: Shapes\FairsharePolicy|null
      * } $args
      */
     public function __construct(array $args)

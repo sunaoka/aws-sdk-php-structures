@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AcceleratorArn
  * @property list<Shapes\PortRange> $PortRanges
  * @property 'TCP'|'UDP' $Protocol
- * @property 'NONE'|'SOURCE_IP' $ClientAffinity
+ * @property 'NONE'|'SOURCE_IP'|null $ClientAffinity
  * @property string $IdempotencyToken
  */
 class CreateListenerRequest extends Request
@@ -18,7 +18,7 @@ class CreateListenerRequest extends Request
      *     AcceleratorArn: string,
      *     PortRanges: list<Shapes\PortRange>,
      *     Protocol: 'TCP'|'UDP',
-     *     ClientAffinity?: 'NONE'|'SOURCE_IP',
+     *     ClientAffinity?: 'NONE'|'SOURCE_IP'|null,
      *     IdempotencyToken: string
      * } $args
      */

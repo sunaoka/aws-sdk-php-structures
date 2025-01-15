@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property bool $PublicSharingEnabled
+ * @property bool|null $PublicSharingEnabled
  */
 class UpdatePublicSharingSettingsRequest extends Request
 {
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     PublicSharingEnabled?: bool
+     *     PublicSharingEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

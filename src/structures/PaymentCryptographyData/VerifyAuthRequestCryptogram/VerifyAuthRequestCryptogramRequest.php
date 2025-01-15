@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AuthRequestCryptogram
  * @property 'EMV_OPTION_A'|'EMV_OPTION_B' $MajorKeyDerivationMode
  * @property Shapes\SessionKeyDerivation $SessionKeyDerivationAttributes
- * @property Shapes\CryptogramAuthResponse $AuthResponseAttributes
+ * @property Shapes\CryptogramAuthResponse|null $AuthResponseAttributes
  */
 class VerifyAuthRequestCryptogramRequest extends Request
 {
@@ -21,7 +21,7 @@ class VerifyAuthRequestCryptogramRequest extends Request
      *     AuthRequestCryptogram: string,
      *     MajorKeyDerivationMode: 'EMV_OPTION_A'|'EMV_OPTION_B',
      *     SessionKeyDerivationAttributes: Shapes\SessionKeyDerivation,
-     *     AuthResponseAttributes?: Shapes\CryptogramAuthResponse
+     *     AuthResponseAttributes?: Shapes\CryptogramAuthResponse|null
      * } $args
      */
     public function __construct(array $args)

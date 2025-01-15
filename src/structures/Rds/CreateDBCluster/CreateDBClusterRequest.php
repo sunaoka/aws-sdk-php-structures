@@ -5,125 +5,125 @@ namespace Sunaoka\Aws\Structures\Rds\CreateDBCluster;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $AvailabilityZones
- * @property int $BackupRetentionPeriod
- * @property string $CharacterSetName
- * @property string $DatabaseName
+ * @property list<string>|null $AvailabilityZones
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $CharacterSetName
+ * @property string|null $DatabaseName
  * @property string $DBClusterIdentifier
- * @property string $DBClusterParameterGroupName
- * @property list<string> $VpcSecurityGroupIds
- * @property string $DBSubnetGroupName
+ * @property string|null $DBClusterParameterGroupName
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property string|null $DBSubnetGroupName
  * @property string $Engine
- * @property string $EngineVersion
- * @property int $Port
- * @property string $MasterUsername
- * @property string $MasterUserPassword
- * @property string $OptionGroupName
- * @property string $PreferredBackupWindow
- * @property string $PreferredMaintenanceWindow
- * @property string $ReplicationSourceIdentifier
- * @property list<Shapes\Tag> $Tags
- * @property bool $StorageEncrypted
- * @property string $KmsKeyId
- * @property string $PreSignedUrl
- * @property string $DestinationRegion
- * @property bool $EnableIAMDatabaseAuthentication
- * @property int $BacktrackWindow
- * @property list<string> $EnableCloudwatchLogsExports
- * @property string $EngineMode
- * @property Shapes\ScalingConfiguration $ScalingConfiguration
- * @property Shapes\RdsCustomClusterConfiguration $RdsCustomClusterConfiguration
- * @property bool $DeletionProtection
- * @property string $GlobalClusterIdentifier
- * @property bool $EnableHttpEndpoint
- * @property bool $CopyTagsToSnapshot
- * @property string $Domain
- * @property string $DomainIAMRoleName
- * @property bool $EnableGlobalWriteForwarding
- * @property string $DBClusterInstanceClass
- * @property int $AllocatedStorage
- * @property string $StorageType
- * @property int $Iops
- * @property bool $PubliclyAccessible
- * @property bool $AutoMinorVersionUpgrade
- * @property int $MonitoringInterval
- * @property string $MonitoringRoleArn
- * @property 'standard'|'advanced' $DatabaseInsightsMode
- * @property bool $EnablePerformanceInsights
- * @property string $PerformanceInsightsKMSKeyId
- * @property int $PerformanceInsightsRetentionPeriod
- * @property bool $EnableLimitlessDatabase
- * @property Shapes\ServerlessV2ScalingConfiguration $ServerlessV2ScalingConfiguration
- * @property string $NetworkType
- * @property 'standard'|'limitless' $ClusterScalabilityType
- * @property string $DBSystemId
- * @property bool $ManageMasterUserPassword
- * @property string $MasterUserSecretKmsKeyId
- * @property bool $EnableLocalWriteForwarding
- * @property string $CACertificateIdentifier
- * @property string $EngineLifecycleSupport
+ * @property string|null $EngineVersion
+ * @property int|null $Port
+ * @property string|null $MasterUsername
+ * @property string|null $MasterUserPassword
+ * @property string|null $OptionGroupName
+ * @property string|null $PreferredBackupWindow
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $ReplicationSourceIdentifier
+ * @property list<Shapes\Tag>|null $Tags
+ * @property bool|null $StorageEncrypted
+ * @property string|null $KmsKeyId
+ * @property string|null $PreSignedUrl
+ * @property string|null $DestinationRegion
+ * @property bool|null $EnableIAMDatabaseAuthentication
+ * @property int|null $BacktrackWindow
+ * @property list<string>|null $EnableCloudwatchLogsExports
+ * @property string|null $EngineMode
+ * @property Shapes\ScalingConfiguration|null $ScalingConfiguration
+ * @property Shapes\RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
+ * @property bool|null $DeletionProtection
+ * @property string|null $GlobalClusterIdentifier
+ * @property bool|null $EnableHttpEndpoint
+ * @property bool|null $CopyTagsToSnapshot
+ * @property string|null $Domain
+ * @property string|null $DomainIAMRoleName
+ * @property bool|null $EnableGlobalWriteForwarding
+ * @property string|null $DBClusterInstanceClass
+ * @property int|null $AllocatedStorage
+ * @property string|null $StorageType
+ * @property int|null $Iops
+ * @property bool|null $PubliclyAccessible
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property int|null $MonitoringInterval
+ * @property string|null $MonitoringRoleArn
+ * @property 'standard'|'advanced'|null $DatabaseInsightsMode
+ * @property bool|null $EnablePerformanceInsights
+ * @property string|null $PerformanceInsightsKMSKeyId
+ * @property int|null $PerformanceInsightsRetentionPeriod
+ * @property bool|null $EnableLimitlessDatabase
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
+ * @property string|null $NetworkType
+ * @property 'standard'|'limitless'|null $ClusterScalabilityType
+ * @property string|null $DBSystemId
+ * @property bool|null $ManageMasterUserPassword
+ * @property string|null $MasterUserSecretKmsKeyId
+ * @property bool|null $EnableLocalWriteForwarding
+ * @property string|null $CACertificateIdentifier
+ * @property string|null $EngineLifecycleSupport
  */
 class CreateDBClusterRequest extends Request
 {
     /**
      * @param array{
-     *     AvailabilityZones?: list<string>,
-     *     BackupRetentionPeriod?: int,
-     *     CharacterSetName?: string,
-     *     DatabaseName?: string,
+     *     AvailabilityZones?: list<string>|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     CharacterSetName?: string|null,
+     *     DatabaseName?: string|null,
      *     DBClusterIdentifier: string,
-     *     DBClusterParameterGroupName?: string,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     DBSubnetGroupName?: string,
+     *     DBClusterParameterGroupName?: string|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     DBSubnetGroupName?: string|null,
      *     Engine: string,
-     *     EngineVersion?: string,
-     *     Port?: int,
-     *     MasterUsername?: string,
-     *     MasterUserPassword?: string,
-     *     OptionGroupName?: string,
-     *     PreferredBackupWindow?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     ReplicationSourceIdentifier?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     StorageEncrypted?: bool,
-     *     KmsKeyId?: string,
-     *     PreSignedUrl?: string,
-     *     DestinationRegion?: string,
-     *     EnableIAMDatabaseAuthentication?: bool,
-     *     BacktrackWindow?: int,
-     *     EnableCloudwatchLogsExports?: list<string>,
-     *     EngineMode?: string,
-     *     ScalingConfiguration?: Shapes\ScalingConfiguration,
-     *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration,
-     *     DeletionProtection?: bool,
-     *     GlobalClusterIdentifier?: string,
-     *     EnableHttpEndpoint?: bool,
-     *     CopyTagsToSnapshot?: bool,
-     *     Domain?: string,
-     *     DomainIAMRoleName?: string,
-     *     EnableGlobalWriteForwarding?: bool,
-     *     DBClusterInstanceClass?: string,
-     *     AllocatedStorage?: int,
-     *     StorageType?: string,
-     *     Iops?: int,
-     *     PubliclyAccessible?: bool,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     MonitoringInterval?: int,
-     *     MonitoringRoleArn?: string,
-     *     DatabaseInsightsMode?: 'standard'|'advanced',
-     *     EnablePerformanceInsights?: bool,
-     *     PerformanceInsightsKMSKeyId?: string,
-     *     PerformanceInsightsRetentionPeriod?: int,
-     *     EnableLimitlessDatabase?: bool,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration,
-     *     NetworkType?: string,
-     *     ClusterScalabilityType?: 'standard'|'limitless',
-     *     DBSystemId?: string,
-     *     ManageMasterUserPassword?: bool,
-     *     MasterUserSecretKmsKeyId?: string,
-     *     EnableLocalWriteForwarding?: bool,
-     *     CACertificateIdentifier?: string,
-     *     EngineLifecycleSupport?: string
+     *     EngineVersion?: string|null,
+     *     Port?: int|null,
+     *     MasterUsername?: string|null,
+     *     MasterUserPassword?: string|null,
+     *     OptionGroupName?: string|null,
+     *     PreferredBackupWindow?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     ReplicationSourceIdentifier?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     StorageEncrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     PreSignedUrl?: string|null,
+     *     DestinationRegion?: string|null,
+     *     EnableIAMDatabaseAuthentication?: bool|null,
+     *     BacktrackWindow?: int|null,
+     *     EnableCloudwatchLogsExports?: list<string>|null,
+     *     EngineMode?: string|null,
+     *     ScalingConfiguration?: Shapes\ScalingConfiguration|null,
+     *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration|null,
+     *     DeletionProtection?: bool|null,
+     *     GlobalClusterIdentifier?: string|null,
+     *     EnableHttpEndpoint?: bool|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     Domain?: string|null,
+     *     DomainIAMRoleName?: string|null,
+     *     EnableGlobalWriteForwarding?: bool|null,
+     *     DBClusterInstanceClass?: string|null,
+     *     AllocatedStorage?: int|null,
+     *     StorageType?: string|null,
+     *     Iops?: int|null,
+     *     PubliclyAccessible?: bool|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     MonitoringInterval?: int|null,
+     *     MonitoringRoleArn?: string|null,
+     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
+     *     EnablePerformanceInsights?: bool|null,
+     *     PerformanceInsightsKMSKeyId?: string|null,
+     *     PerformanceInsightsRetentionPeriod?: int|null,
+     *     EnableLimitlessDatabase?: bool|null,
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
+     *     NetworkType?: string|null,
+     *     ClusterScalabilityType?: 'standard'|'limitless'|null,
+     *     DBSystemId?: string|null,
+     *     ManageMasterUserPassword?: bool|null,
+     *     MasterUserSecretKmsKeyId?: string|null,
+     *     EnableLocalWriteForwarding?: bool|null,
+     *     CACertificateIdentifier?: string|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Batch\RegisterJobDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $assignPublicIp
+ * @property 'ENABLED'|'DISABLED'|null $assignPublicIp
  */
 class NetworkConfiguration extends Shape
 {
     /**
-     * @param array{assignPublicIp?: 'ENABLED'|'DISABLED'} $args
+     * @param array{assignPublicIp?: 'ENABLED'|'DISABLED'|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'autoscaling'|'ecs'|'ec2'|'rds'|'dynamodb' $ServiceNamespace
  * @property string $ResourceId
  * @property 'autoscaling:autoScalingGroup:DesiredCapacity'|'ecs:service:DesiredCount'|'ec2:spot-fleet-request:TargetCapacity'|'rds:cluster:ReadReplicaCount'|'dynamodb:table:ReadCapacityUnits'|'dynamodb:table:WriteCapacityUnits'|'dynamodb:index:ReadCapacityUnits'|'dynamodb:index:WriteCapacityUnits' $ScalableDimension
- * @property list<ScalingPolicy> $ScalingPolicies
+ * @property list<ScalingPolicy>|null $ScalingPolicies
  * @property 'Inactive'|'PartiallyActive'|'Active' $ScalingStatusCode
- * @property string $ScalingStatusMessage
+ * @property string|null $ScalingStatusMessage
  */
 class ScalingPlanResource extends Shape
 {
@@ -23,9 +23,9 @@ class ScalingPlanResource extends Shape
      *     ServiceNamespace: 'autoscaling'|'ecs'|'ec2'|'rds'|'dynamodb',
      *     ResourceId: string,
      *     ScalableDimension: 'autoscaling:autoScalingGroup:DesiredCapacity'|'ecs:service:DesiredCount'|'ec2:spot-fleet-request:TargetCapacity'|'rds:cluster:ReadReplicaCount'|'dynamodb:table:ReadCapacityUnits'|'dynamodb:table:WriteCapacityUnits'|'dynamodb:index:ReadCapacityUnits'|'dynamodb:index:WriteCapacityUnits',
-     *     ScalingPolicies?: list<ScalingPolicy>,
+     *     ScalingPolicies?: list<ScalingPolicy>|null,
      *     ScalingStatusCode: 'Inactive'|'PartiallyActive'|'Active',
-     *     ScalingStatusMessage?: string
+     *     ScalingStatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

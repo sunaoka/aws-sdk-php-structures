@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\ListLineageEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $namespace
+ * @property string|null $name
+ * @property string|null $namespace
  */
 class NameIdentifier extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     namespace?: string
+     *     name?: string|null,
+     *     namespace?: string|null
      * } $args
      */
     public function __construct(array $args = [])

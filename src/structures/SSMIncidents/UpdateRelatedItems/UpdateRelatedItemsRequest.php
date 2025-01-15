@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\UpdateRelatedItems;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $incidentRecordArn
  * @property Shapes\RelatedItemsUpdate $relatedItemsUpdate
  */
@@ -13,7 +13,7 @@ class UpdateRelatedItemsRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     incidentRecordArn: string,
      *     relatedItemsUpdate: Shapes\RelatedItemsUpdate
      * } $args

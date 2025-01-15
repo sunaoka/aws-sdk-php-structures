@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\Suggest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PhonemeTranscription> $Title
- * @property AddressComponentPhonemes $Address
+ * @property list<PhonemeTranscription>|null $Title
+ * @property AddressComponentPhonemes|null $Address
  */
 class PhonemeDetails extends Shape
 {
     /**
      * @param array{
-     *     Title?: list<PhonemeTranscription>,
-     *     Address?: AddressComponentPhonemes
+     *     Title?: list<PhonemeTranscription>|null,
+     *     Address?: AddressComponentPhonemes|null
      * } $args
      */
     public function __construct(array $args = [])

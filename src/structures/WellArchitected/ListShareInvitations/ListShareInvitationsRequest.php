@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\WellArchitected\ListShareInvitations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $WorkloadNamePrefix
- * @property string $LensNamePrefix
- * @property 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE' $ShareResourceType
- * @property string $NextToken
- * @property int<1, 50> $MaxResults
- * @property string $ProfileNamePrefix
- * @property string $TemplateNamePrefix
+ * @property string|null $WorkloadNamePrefix
+ * @property string|null $LensNamePrefix
+ * @property 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE'|null $ShareResourceType
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $ProfileNamePrefix
+ * @property string|null $TemplateNamePrefix
  */
 class ListShareInvitationsRequest extends Request
 {
     /**
      * @param array{
-     *     WorkloadNamePrefix?: string,
-     *     LensNamePrefix?: string,
-     *     ShareResourceType?: 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 50>,
-     *     ProfileNamePrefix?: string,
-     *     TemplateNamePrefix?: string
+     *     WorkloadNamePrefix?: string|null,
+     *     LensNamePrefix?: string|null,
+     *     ShareResourceType?: 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE'|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     ProfileNamePrefix?: string|null,
+     *     TemplateNamePrefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

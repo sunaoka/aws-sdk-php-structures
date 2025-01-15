@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $markerName
- * @property string $details
+ * @property string|null $details
  */
 class RecordMarkerDecisionAttributes extends Shape
 {
     /**
      * @param array{
      *     markerName: string,
-     *     details?: string
+     *     details?: string|null
      * } $args
      */
     public function __construct(array $args)

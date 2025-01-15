@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $databaseName
  * @property string $tableName
  * @property list<TimestreamDimension> $dimensions
- * @property TimestreamTimestamp $timestamp
+ * @property TimestreamTimestamp|null $timestamp
  */
 class TimestreamAction extends Shape
 {
@@ -19,7 +19,7 @@ class TimestreamAction extends Shape
      *     databaseName: string,
      *     tableName: string,
      *     dimensions: list<TimestreamDimension>,
-     *     timestamp?: TimestreamTimestamp
+     *     timestamp?: TimestreamTimestamp|null
      * } $args
      */
     public function __construct(array $args)

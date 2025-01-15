@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Days
- * @property string $Mode
- * @property int $Years
+ * @property int|null $Days
+ * @property string|null $Mode
+ * @property int|null $Years
  */
 class AwsS3BucketObjectLockConfigurationRuleDefaultRetentionDetails extends Shape
 {
     /**
      * @param array{
-     *     Days?: int,
-     *     Mode?: string,
-     *     Years?: int
+     *     Days?: int|null,
+     *     Mode?: string|null,
+     *     Years?: int|null
      * } $args
      */
     public function __construct(array $args = [])

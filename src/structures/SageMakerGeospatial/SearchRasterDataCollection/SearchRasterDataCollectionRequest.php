@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Arn
- * @property string $NextToken
+ * @property string|null $NextToken
  * @property Shapes\RasterDataCollectionQueryWithBandFilterInput $RasterDataCollectionQuery
  */
 class SearchRasterDataCollectionRequest extends Request
@@ -14,7 +14,7 @@ class SearchRasterDataCollectionRequest extends Request
     /**
      * @param array{
      *     Arn: string,
-     *     NextToken?: string,
+     *     NextToken?: string|null,
      *     RasterDataCollectionQuery: Shapes\RasterDataCollectionQueryWithBandFilterInput
      * } $args
      */

@@ -7,15 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ActivityType $activityType
  * @property string $activityId
- * @property string $input
- * @property string $control
- * @property string $scheduleToStartTimeout
- * @property string $scheduleToCloseTimeout
- * @property string $startToCloseTimeout
+ * @property string|null $input
+ * @property string|null $control
+ * @property string|null $scheduleToStartTimeout
+ * @property string|null $scheduleToCloseTimeout
+ * @property string|null $startToCloseTimeout
  * @property TaskList $taskList
- * @property string $taskPriority
+ * @property string|null $taskPriority
  * @property int $decisionTaskCompletedEventId
- * @property string $heartbeatTimeout
+ * @property string|null $heartbeatTimeout
  */
 class ActivityTaskScheduledEventAttributes extends Shape
 {
@@ -23,15 +23,15 @@ class ActivityTaskScheduledEventAttributes extends Shape
      * @param array{
      *     activityType: ActivityType,
      *     activityId: string,
-     *     input?: string,
-     *     control?: string,
-     *     scheduleToStartTimeout?: string,
-     *     scheduleToCloseTimeout?: string,
-     *     startToCloseTimeout?: string,
+     *     input?: string|null,
+     *     control?: string|null,
+     *     scheduleToStartTimeout?: string|null,
+     *     scheduleToCloseTimeout?: string|null,
+     *     startToCloseTimeout?: string|null,
      *     taskList: TaskList,
-     *     taskPriority?: string,
+     *     taskPriority?: string|null,
      *     decisionTaskCompletedEventId: int,
-     *     heartbeatTimeout?: string
+     *     heartbeatTimeout?: string|null
      * } $args
      */
     public function __construct(array $args)

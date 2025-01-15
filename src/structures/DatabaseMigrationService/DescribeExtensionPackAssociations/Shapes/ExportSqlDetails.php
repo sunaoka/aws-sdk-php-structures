@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeExtensionPackA
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3ObjectKey
- * @property string $ObjectURL
+ * @property string|null $S3ObjectKey
+ * @property string|null $ObjectURL
  */
 class ExportSqlDetails extends Shape
 {
     /**
      * @param array{
-     *     S3ObjectKey?: string,
-     *     ObjectURL?: string
+     *     S3ObjectKey?: string|null,
+     *     ObjectURL?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Type
  * @property string $Id
- * @property 'aws'|'aws-cn'|'aws-us-gov' $Partition
- * @property string $Region
- * @property string $ResourceRole
- * @property array<string, string> $Tags
- * @property DataClassificationDetails $DataClassification
- * @property ResourceDetails $Details
- * @property string $ApplicationName
- * @property string $ApplicationArn
+ * @property 'aws'|'aws-cn'|'aws-us-gov'|null $Partition
+ * @property string|null $Region
+ * @property string|null $ResourceRole
+ * @property array<string, string>|null $Tags
+ * @property DataClassificationDetails|null $DataClassification
+ * @property ResourceDetails|null $Details
+ * @property string|null $ApplicationName
+ * @property string|null $ApplicationArn
  */
 class Resource extends Shape
 {
@@ -22,14 +22,14 @@ class Resource extends Shape
      * @param array{
      *     Type: string,
      *     Id: string,
-     *     Partition?: 'aws'|'aws-cn'|'aws-us-gov',
-     *     Region?: string,
-     *     ResourceRole?: string,
-     *     Tags?: array<string, string>,
-     *     DataClassification?: DataClassificationDetails,
-     *     Details?: ResourceDetails,
-     *     ApplicationName?: string,
-     *     ApplicationArn?: string
+     *     Partition?: 'aws'|'aws-cn'|'aws-us-gov'|null,
+     *     Region?: string|null,
+     *     ResourceRole?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     DataClassification?: DataClassificationDetails|null,
+     *     Details?: ResourceDetails|null,
+     *     ApplicationName?: string|null,
+     *     ApplicationArn?: string|null
      * } $args
      */
     public function __construct(array $args)

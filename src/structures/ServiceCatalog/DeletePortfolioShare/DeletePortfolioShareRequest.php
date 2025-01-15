@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DeletePortfolioShare;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $PortfolioId
- * @property string $AccountId
- * @property Shapes\OrganizationNode $OrganizationNode
+ * @property string|null $AccountId
+ * @property Shapes\OrganizationNode|null $OrganizationNode
  */
 class DeletePortfolioShareRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     PortfolioId: string,
-     *     AccountId?: string,
-     *     OrganizationNode?: Shapes\OrganizationNode
+     *     AccountId?: string|null,
+     *     OrganizationNode?: Shapes\OrganizationNode|null
      * } $args
      */
     public function __construct(array $args)

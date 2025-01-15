@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkManager\CreateVpcAttachment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Tag> $Tags
- * @property int $AttachmentPolicyRuleNumber
- * @property string $NetworkFunctionGroupName
+ * @property list<Tag>|null $Tags
+ * @property int|null $AttachmentPolicyRuleNumber
+ * @property string|null $NetworkFunctionGroupName
  */
 class ProposedNetworkFunctionGroupChange extends Shape
 {
     /**
      * @param array{
-     *     Tags?: list<Tag>,
-     *     AttachmentPolicyRuleNumber?: int,
-     *     NetworkFunctionGroupName?: string
+     *     Tags?: list<Tag>|null,
+     *     AttachmentPolicyRuleNumber?: int|null,
+     *     NetworkFunctionGroupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\PurchaseReservedElasticsea
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ReservedElasticsearchInstanceId
- * @property string $ReservationName
+ * @property string|null $ReservedElasticsearchInstanceId
+ * @property string|null $ReservationName
  */
 class PurchaseReservedElasticsearchInstanceOfferingResponse extends Response
 {

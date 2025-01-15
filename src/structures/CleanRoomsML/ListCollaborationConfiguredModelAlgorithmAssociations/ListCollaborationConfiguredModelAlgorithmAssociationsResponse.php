@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\ListCollaborationConfiguredModelAl
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
+ * @property string|null $nextToken
  * @property list<Shapes\CollaborationConfiguredModelAlgorithmAssociationSummary> $collaborationConfiguredModelAlgorithmAssociations
  */
 class ListCollaborationConfiguredModelAlgorithmAssociationsResponse extends Response

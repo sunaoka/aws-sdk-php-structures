@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\DescribeLogGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $logGroupName
- * @property int<0, max> $creationTime
- * @property int $retentionInDays
- * @property int $metricFilterCount
- * @property string $arn
- * @property int<0, max> $storedBytes
- * @property string $kmsKeyId
- * @property 'ACTIVATED'|'DELETED'|'ARCHIVED'|'DISABLED' $dataProtectionStatus
- * @property list<'ACCOUNT_DATA_PROTECTION'> $inheritedProperties
- * @property 'STANDARD'|'INFREQUENT_ACCESS' $logGroupClass
- * @property string $logGroupArn
+ * @property string|null $logGroupName
+ * @property int<0, max>|null $creationTime
+ * @property int|null $retentionInDays
+ * @property int|null $metricFilterCount
+ * @property string|null $arn
+ * @property int<0, max>|null $storedBytes
+ * @property string|null $kmsKeyId
+ * @property 'ACTIVATED'|'DELETED'|'ARCHIVED'|'DISABLED'|null $dataProtectionStatus
+ * @property list<'ACCOUNT_DATA_PROTECTION'>|null $inheritedProperties
+ * @property 'STANDARD'|'INFREQUENT_ACCESS'|null $logGroupClass
+ * @property string|null $logGroupArn
  */
 class LogGroup extends Shape
 {
     /**
      * @param array{
-     *     logGroupName?: string,
-     *     creationTime?: int<0, max>,
-     *     retentionInDays?: int,
-     *     metricFilterCount?: int,
-     *     arn?: string,
-     *     storedBytes?: int<0, max>,
-     *     kmsKeyId?: string,
-     *     dataProtectionStatus?: 'ACTIVATED'|'DELETED'|'ARCHIVED'|'DISABLED',
-     *     inheritedProperties?: list<'ACCOUNT_DATA_PROTECTION'>,
-     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS',
-     *     logGroupArn?: string
+     *     logGroupName?: string|null,
+     *     creationTime?: int<0, max>|null,
+     *     retentionInDays?: int|null,
+     *     metricFilterCount?: int|null,
+     *     arn?: string|null,
+     *     storedBytes?: int<0, max>|null,
+     *     kmsKeyId?: string|null,
+     *     dataProtectionStatus?: 'ACTIVATED'|'DELETED'|'ARCHIVED'|'DISABLED'|null,
+     *     inheritedProperties?: list<'ACCOUNT_DATA_PROTECTION'>|null,
+     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|null,
+     *     logGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

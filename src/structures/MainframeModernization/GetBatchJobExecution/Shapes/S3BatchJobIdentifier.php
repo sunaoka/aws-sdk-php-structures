@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $bucket
  * @property JobIdentifier $identifier
- * @property string $keyPrefix
+ * @property string|null $keyPrefix
  */
 class S3BatchJobIdentifier extends Shape
 {
@@ -15,7 +15,7 @@ class S3BatchJobIdentifier extends Shape
      * @param array{
      *     bucket: string,
      *     identifier: JobIdentifier,
-     *     keyPrefix?: string
+     *     keyPrefix?: string|null
      * } $args
      */
     public function __construct(array $args)

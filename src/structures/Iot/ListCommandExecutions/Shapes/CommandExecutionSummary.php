@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Iot\ListCommandExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $commandArn
- * @property string $executionId
- * @property string $targetArn
- * @property 'CREATED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'REJECTED'|'TIMED_OUT' $status
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $startedAt
- * @property \Aws\Api\DateTimeResult $completedAt
+ * @property string|null $commandArn
+ * @property string|null $executionId
+ * @property string|null $targetArn
+ * @property 'CREATED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'REJECTED'|'TIMED_OUT'|null $status
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $completedAt
  */
 class CommandExecutionSummary extends Shape
 {
     /**
      * @param array{
-     *     commandArn?: string,
-     *     executionId?: string,
-     *     targetArn?: string,
-     *     status?: 'CREATED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'REJECTED'|'TIMED_OUT',
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     startedAt?: \Aws\Api\DateTimeResult,
-     *     completedAt?: \Aws\Api\DateTimeResult
+     *     commandArn?: string|null,
+     *     executionId?: string|null,
+     *     targetArn?: string|null,
+     *     status?: 'CREATED'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'REJECTED'|'TIMED_OUT'|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
+     *     completedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

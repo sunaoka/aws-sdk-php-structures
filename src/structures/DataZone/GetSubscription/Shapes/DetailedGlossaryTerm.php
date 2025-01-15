@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\GetSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $shortDescription
+ * @property string|null $name
+ * @property string|null $shortDescription
  */
 class DetailedGlossaryTerm extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     shortDescription?: string
+     *     name?: string|null,
+     *     shortDescription?: string|null
      * } $args
      */
     public function __construct(array $args = [])

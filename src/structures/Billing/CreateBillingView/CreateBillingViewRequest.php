@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property list<string> $sourceViews
- * @property Shapes\Expression $dataFilterExpression
- * @property string $clientToken
- * @property list<Shapes\ResourceTag> $resourceTags
+ * @property Shapes\Expression|null $dataFilterExpression
+ * @property string|null $clientToken
+ * @property list<Shapes\ResourceTag>|null $resourceTags
  */
 class CreateBillingViewRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     sourceViews: list<string>,
-     *     dataFilterExpression?: Shapes\Expression,
-     *     clientToken?: string,
-     *     resourceTags?: list<Shapes\ResourceTag>
+     *     dataFilterExpression?: Shapes\Expression|null,
+     *     clientToken?: string|null,
+     *     resourceTags?: list<Shapes\ResourceTag>|null
      * } $args
      */
     public function __construct(array $args)

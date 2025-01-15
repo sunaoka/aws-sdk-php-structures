@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\DescribeEdgeConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 720> $EdgeRetentionInHours
- * @property LocalSizeConfig $LocalSizeConfig
- * @property bool $DeleteAfterUpload
+ * @property int<1, 720>|null $EdgeRetentionInHours
+ * @property LocalSizeConfig|null $LocalSizeConfig
+ * @property bool|null $DeleteAfterUpload
  */
 class DeletionConfig extends Shape
 {
     /**
      * @param array{
-     *     EdgeRetentionInHours?: int<1, 720>,
-     *     LocalSizeConfig?: LocalSizeConfig,
-     *     DeleteAfterUpload?: bool
+     *     EdgeRetentionInHours?: int<1, 720>|null,
+     *     LocalSizeConfig?: LocalSizeConfig|null,
+     *     DeleteAfterUpload?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

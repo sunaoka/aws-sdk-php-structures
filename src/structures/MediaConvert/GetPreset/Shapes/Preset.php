@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetPreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Category
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $LastUpdated
+ * @property string|null $Arn
+ * @property string|null $Category
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
  * @property string $Name
  * @property PresetSettings $Settings
- * @property 'SYSTEM'|'CUSTOM' $Type
+ * @property 'SYSTEM'|'CUSTOM'|null $Type
  */
 class Preset extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Category?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
+     *     Arn?: string|null,
+     *     Category?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
      *     Name: string,
      *     Settings: PresetSettings,
-     *     Type?: 'SYSTEM'|'CUSTOM'
+     *     Type?: 'SYSTEM'|'CUSTOM'|null
      * } $args
      */
     public function __construct(array $args)

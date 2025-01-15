@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVerifiedAccessTrustProviders\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Issuer
- * @property string $AuthorizationEndpoint
- * @property string $TokenEndpoint
- * @property string $UserInfoEndpoint
- * @property string $ClientId
- * @property string $ClientSecret
- * @property string $Scope
+ * @property string|null $Issuer
+ * @property string|null $AuthorizationEndpoint
+ * @property string|null $TokenEndpoint
+ * @property string|null $UserInfoEndpoint
+ * @property string|null $ClientId
+ * @property string|null $ClientSecret
+ * @property string|null $Scope
  */
 class OidcOptions extends Shape
 {
     /**
      * @param array{
-     *     Issuer?: string,
-     *     AuthorizationEndpoint?: string,
-     *     TokenEndpoint?: string,
-     *     UserInfoEndpoint?: string,
-     *     ClientId?: string,
-     *     ClientSecret?: string,
-     *     Scope?: string
+     *     Issuer?: string|null,
+     *     AuthorizationEndpoint?: string|null,
+     *     TokenEndpoint?: string|null,
+     *     UserInfoEndpoint?: string|null,
+     *     ClientId?: string|null,
+     *     ClientSecret?: string|null,
+     *     Scope?: string|null
      * } $args
      */
     public function __construct(array $args = [])

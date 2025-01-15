@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CUSTOMER_MANAGED_KMS_KEY'|'AWS_OWNED_KMS_KEY' $type
- * @property string $kmsKeyIdentifier
+ * @property string|null $kmsKeyIdentifier
  */
 class EncryptionSpecification extends Shape
 {
     /**
      * @param array{
      *     type: 'CUSTOMER_MANAGED_KMS_KEY'|'AWS_OWNED_KMS_KEY',
-     *     kmsKeyIdentifier?: string
+     *     kmsKeyIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

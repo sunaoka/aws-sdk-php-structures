@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardSnapshotJobResult\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<SnapshotFile> $Files
- * @property list<SnapshotJobS3Result> $S3Results
+ * @property list<SnapshotFile>|null $Files
+ * @property list<SnapshotJobS3Result>|null $S3Results
  */
 class SnapshotJobResultFileGroup extends Shape
 {
     /**
      * @param array{
-     *     Files?: list<SnapshotFile>,
-     *     S3Results?: list<SnapshotJobS3Result>
+     *     Files?: list<SnapshotFile>|null,
+     *     S3Results?: list<SnapshotJobS3Result>|null
      * } $args
      */
     public function __construct(array $args = [])

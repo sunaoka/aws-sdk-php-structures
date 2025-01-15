@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Certificate
- * @property list<AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails> $EnvironmentVariables
- * @property bool $PrivilegedMode
- * @property string $ImagePullCredentialsType
- * @property AwsCodeBuildProjectEnvironmentRegistryCredential $RegistryCredential
- * @property string $Type
+ * @property string|null $Certificate
+ * @property list<AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails>|null $EnvironmentVariables
+ * @property bool|null $PrivilegedMode
+ * @property string|null $ImagePullCredentialsType
+ * @property AwsCodeBuildProjectEnvironmentRegistryCredential|null $RegistryCredential
+ * @property string|null $Type
  */
 class AwsCodeBuildProjectEnvironment extends Shape
 {
     /**
      * @param array{
-     *     Certificate?: string,
-     *     EnvironmentVariables?: list<AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails>,
-     *     PrivilegedMode?: bool,
-     *     ImagePullCredentialsType?: string,
-     *     RegistryCredential?: AwsCodeBuildProjectEnvironmentRegistryCredential,
-     *     Type?: string
+     *     Certificate?: string|null,
+     *     EnvironmentVariables?: list<AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails>|null,
+     *     PrivilegedMode?: bool|null,
+     *     ImagePullCredentialsType?: string|null,
+     *     RegistryCredential?: AwsCodeBuildProjectEnvironmentRegistryCredential|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DataMigrationIdentifier
- * @property string $DataMigrationName
- * @property bool $EnableCloudwatchLogs
- * @property string $ServiceAccessRoleArn
- * @property 'full-load'|'cdc'|'full-load-and-cdc' $DataMigrationType
- * @property list<Shapes\SourceDataSetting> $SourceDataSettings
- * @property int $NumberOfJobs
- * @property string $SelectionRules
+ * @property string|null $DataMigrationName
+ * @property bool|null $EnableCloudwatchLogs
+ * @property string|null $ServiceAccessRoleArn
+ * @property 'full-load'|'cdc'|'full-load-and-cdc'|null $DataMigrationType
+ * @property list<Shapes\SourceDataSetting>|null $SourceDataSettings
+ * @property int|null $NumberOfJobs
+ * @property string|null $SelectionRules
  */
 class ModifyDataMigrationRequest extends Request
 {
     /**
      * @param array{
      *     DataMigrationIdentifier: string,
-     *     DataMigrationName?: string,
-     *     EnableCloudwatchLogs?: bool,
-     *     ServiceAccessRoleArn?: string,
-     *     DataMigrationType?: 'full-load'|'cdc'|'full-load-and-cdc',
-     *     SourceDataSettings?: list<Shapes\SourceDataSetting>,
-     *     NumberOfJobs?: int,
-     *     SelectionRules?: string
+     *     DataMigrationName?: string|null,
+     *     EnableCloudwatchLogs?: bool|null,
+     *     ServiceAccessRoleArn?: string|null,
+     *     DataMigrationType?: 'full-load'|'cdc'|'full-load-and-cdc'|null,
+     *     SourceDataSettings?: list<Shapes\SourceDataSetting>|null,
+     *     NumberOfJobs?: int|null,
+     *     SelectionRules?: string|null
      * } $args
      */
     public function __construct(array $args)

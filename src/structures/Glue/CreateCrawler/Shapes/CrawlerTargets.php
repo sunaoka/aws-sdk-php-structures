@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Glue\CreateCrawler\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<S3Target> $S3Targets
- * @property list<JdbcTarget> $JdbcTargets
- * @property list<MongoDBTarget> $MongoDBTargets
- * @property list<DynamoDBTarget> $DynamoDBTargets
- * @property list<CatalogTarget> $CatalogTargets
- * @property list<DeltaTarget> $DeltaTargets
- * @property list<IcebergTarget> $IcebergTargets
- * @property list<HudiTarget> $HudiTargets
+ * @property list<S3Target>|null $S3Targets
+ * @property list<JdbcTarget>|null $JdbcTargets
+ * @property list<MongoDBTarget>|null $MongoDBTargets
+ * @property list<DynamoDBTarget>|null $DynamoDBTargets
+ * @property list<CatalogTarget>|null $CatalogTargets
+ * @property list<DeltaTarget>|null $DeltaTargets
+ * @property list<IcebergTarget>|null $IcebergTargets
+ * @property list<HudiTarget>|null $HudiTargets
  */
 class CrawlerTargets extends Shape
 {
     /**
      * @param array{
-     *     S3Targets?: list<S3Target>,
-     *     JdbcTargets?: list<JdbcTarget>,
-     *     MongoDBTargets?: list<MongoDBTarget>,
-     *     DynamoDBTargets?: list<DynamoDBTarget>,
-     *     CatalogTargets?: list<CatalogTarget>,
-     *     DeltaTargets?: list<DeltaTarget>,
-     *     IcebergTargets?: list<IcebergTarget>,
-     *     HudiTargets?: list<HudiTarget>
+     *     S3Targets?: list<S3Target>|null,
+     *     JdbcTargets?: list<JdbcTarget>|null,
+     *     MongoDBTargets?: list<MongoDBTarget>|null,
+     *     DynamoDBTargets?: list<DynamoDBTarget>|null,
+     *     CatalogTargets?: list<CatalogTarget>|null,
+     *     DeltaTargets?: list<DeltaTarget>|null,
+     *     IcebergTargets?: list<IcebergTarget>|null,
+     *     HudiTargets?: list<HudiTarget>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OAM\ListSinks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Id
- * @property string $Name
+ * @property string|null $Arn
+ * @property string|null $Id
+ * @property string|null $Name
  */
 class ListSinksItem extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Id?: string,
-     *     Name?: string
+     *     Arn?: string|null,
+     *     Id?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

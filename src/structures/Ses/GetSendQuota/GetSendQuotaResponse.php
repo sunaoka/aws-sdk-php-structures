@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ses\GetSendQuota;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property double $Max24HourSend
- * @property double $MaxSendRate
- * @property double $SentLast24Hours
+ * @property double|null $Max24HourSend
+ * @property double|null $MaxSendRate
+ * @property double|null $SentLast24Hours
  */
 class GetSendQuotaResponse extends Response
 {

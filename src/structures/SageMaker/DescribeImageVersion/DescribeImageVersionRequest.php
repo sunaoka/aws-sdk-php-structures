@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ImageName
- * @property int<0, max> $Version
- * @property string $Alias
+ * @property int<0, max>|null $Version
+ * @property string|null $Alias
  */
 class DescribeImageVersionRequest extends Request
 {
     /**
      * @param array{
      *     ImageName: string,
-     *     Version?: int<0, max>,
-     *     Alias?: string
+     *     Version?: int<0, max>|null,
+     *     Alias?: string|null
      * } $args
      */
     public function __construct(array $args)

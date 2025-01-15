@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\mgn\TerminateTargetInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $executionID
- * @property 'IN_PROGRESS'|'SUCCESS'|'FAILED' $executionStatus
- * @property string $failureReason
- * @property SsmDocument $ssmDocument
- * @property 'AUTOMATION'|'COMMAND' $ssmDocumentType
+ * @property string|null $executionID
+ * @property 'IN_PROGRESS'|'SUCCESS'|'FAILED'|null $executionStatus
+ * @property string|null $failureReason
+ * @property SsmDocument|null $ssmDocument
+ * @property 'AUTOMATION'|'COMMAND'|null $ssmDocumentType
  */
 class JobPostLaunchActionsLaunchStatus extends Shape
 {
     /**
      * @param array{
-     *     executionID?: string,
-     *     executionStatus?: 'IN_PROGRESS'|'SUCCESS'|'FAILED',
-     *     failureReason?: string,
-     *     ssmDocument?: SsmDocument,
-     *     ssmDocumentType?: 'AUTOMATION'|'COMMAND'
+     *     executionID?: string|null,
+     *     executionStatus?: 'IN_PROGRESS'|'SUCCESS'|'FAILED'|null,
+     *     failureReason?: string|null,
+     *     ssmDocument?: SsmDocument|null,
+     *     ssmDocumentType?: 'AUTOMATION'|'COMMAND'|null
      * } $args
      */
     public function __construct(array $args = [])

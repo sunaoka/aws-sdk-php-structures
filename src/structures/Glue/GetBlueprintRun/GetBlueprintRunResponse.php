@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\GetBlueprintRun;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\BlueprintRun $BlueprintRun
+ * @property Shapes\BlueprintRun|null $BlueprintRun
  */
 class GetBlueprintRunResponse extends Response
 {

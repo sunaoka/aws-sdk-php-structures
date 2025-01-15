@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $requestId
  * @property string $alarmModelName
- * @property string $keyValue
- * @property string $note
+ * @property string|null $keyValue
+ * @property string|null $note
  */
 class DisableAlarmActionRequest extends Shape
 {
@@ -16,8 +16,8 @@ class DisableAlarmActionRequest extends Shape
      * @param array{
      *     requestId: string,
      *     alarmModelName: string,
-     *     keyValue?: string,
-     *     note?: string
+     *     keyValue?: string|null,
+     *     note?: string|null
      * } $args
      */
     public function __construct(array $args)

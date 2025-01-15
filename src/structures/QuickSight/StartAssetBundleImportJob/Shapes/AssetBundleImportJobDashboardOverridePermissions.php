@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $DashboardIds
- * @property AssetBundleResourcePermissions $Permissions
- * @property AssetBundleResourceLinkSharingConfiguration $LinkSharingConfiguration
+ * @property AssetBundleResourcePermissions|null $Permissions
+ * @property AssetBundleResourceLinkSharingConfiguration|null $LinkSharingConfiguration
  */
 class AssetBundleImportJobDashboardOverridePermissions extends Shape
 {
     /**
      * @param array{
      *     DashboardIds: list<string>,
-     *     Permissions?: AssetBundleResourcePermissions,
-     *     LinkSharingConfiguration?: AssetBundleResourceLinkSharingConfiguration
+     *     Permissions?: AssetBundleResourcePermissions|null,
+     *     LinkSharingConfiguration?: AssetBundleResourceLinkSharingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

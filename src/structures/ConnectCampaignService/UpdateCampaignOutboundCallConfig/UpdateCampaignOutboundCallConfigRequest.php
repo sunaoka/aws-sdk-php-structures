@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $id
- * @property string $connectContactFlowId
- * @property string $connectSourcePhoneNumber
- * @property Shapes\AnswerMachineDetectionConfig $answerMachineDetectionConfig
+ * @property string|null $connectContactFlowId
+ * @property string|null $connectSourcePhoneNumber
+ * @property Shapes\AnswerMachineDetectionConfig|null $answerMachineDetectionConfig
  */
 class UpdateCampaignOutboundCallConfigRequest extends Request
 {
     /**
      * @param array{
      *     id: string,
-     *     connectContactFlowId?: string,
-     *     connectSourcePhoneNumber?: string,
-     *     answerMachineDetectionConfig?: Shapes\AnswerMachineDetectionConfig
+     *     connectContactFlowId?: string|null,
+     *     connectSourcePhoneNumber?: string|null,
+     *     answerMachineDetectionConfig?: Shapes\AnswerMachineDetectionConfig|null
      * } $args
      */
     public function __construct(array $args)

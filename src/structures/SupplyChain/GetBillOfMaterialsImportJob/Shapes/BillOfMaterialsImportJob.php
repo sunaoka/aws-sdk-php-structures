@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $jobId
  * @property 'NEW'|'FAILED'|'IN_PROGRESS'|'QUEUED'|'SUCCESS' $status
  * @property string $s3uri
- * @property string $message
+ * @property string|null $message
  */
 class BillOfMaterialsImportJob extends Shape
 {
@@ -19,7 +19,7 @@ class BillOfMaterialsImportJob extends Shape
      *     jobId: string,
      *     status: 'NEW'|'FAILED'|'IN_PROGRESS'|'QUEUED'|'SUCCESS',
      *     s3uri: string,
-     *     message?: string
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args)

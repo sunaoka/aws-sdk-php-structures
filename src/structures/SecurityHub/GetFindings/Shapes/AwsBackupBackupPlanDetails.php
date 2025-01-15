@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsBackupBackupPlanBackupPlanDetails $BackupPlan
- * @property string $BackupPlanArn
- * @property string $BackupPlanId
- * @property string $VersionId
+ * @property AwsBackupBackupPlanBackupPlanDetails|null $BackupPlan
+ * @property string|null $BackupPlanArn
+ * @property string|null $BackupPlanId
+ * @property string|null $VersionId
  */
 class AwsBackupBackupPlanDetails extends Shape
 {
     /**
      * @param array{
-     *     BackupPlan?: AwsBackupBackupPlanBackupPlanDetails,
-     *     BackupPlanArn?: string,
-     *     BackupPlanId?: string,
-     *     VersionId?: string
+     *     BackupPlan?: AwsBackupBackupPlanBackupPlanDetails|null,
+     *     BackupPlanArn?: string|null,
+     *     BackupPlanId?: string|null,
+     *     VersionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

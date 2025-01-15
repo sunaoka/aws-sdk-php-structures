@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VPCLattice\GetServiceNetwork;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $arn
- * @property 'NONE'|'AWS_IAM' $authType
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $id
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property string $name
- * @property int $numberOfAssociatedServices
- * @property int $numberOfAssociatedVPCs
- * @property Shapes\SharingConfig $sharingConfig
+ * @property string|null $arn
+ * @property 'NONE'|'AWS_IAM'|null $authType
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $id
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property string|null $name
+ * @property int|null $numberOfAssociatedServices
+ * @property int|null $numberOfAssociatedVPCs
+ * @property Shapes\SharingConfig|null $sharingConfig
  */
 class GetServiceNetworkResponse extends Response
 {

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property 'WORK_IN_PROGRESS'|'FAILED'|'COMPLETED' $status
- * @property string $url
+ * @property string|null $url
  */
 class GetAssessmentReportResponse extends Response
 {

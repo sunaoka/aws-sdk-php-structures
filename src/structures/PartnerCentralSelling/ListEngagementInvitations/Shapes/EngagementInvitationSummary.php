@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListEngagementInvitations
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
+ * @property string|null $Arn
  * @property string $Catalog
- * @property string $EngagementId
- * @property string $EngagementTitle
- * @property \Aws\Api\DateTimeResult $ExpirationDate
+ * @property string|null $EngagementId
+ * @property string|null $EngagementTitle
+ * @property \Aws\Api\DateTimeResult|null $ExpirationDate
  * @property string $Id
- * @property \Aws\Api\DateTimeResult $InvitationDate
- * @property 'SENDER'|'RECEIVER' $ParticipantType
- * @property 'OpportunityInvitation' $PayloadType
- * @property Receiver $Receiver
- * @property string $SenderAwsAccountId
- * @property string $SenderCompanyName
- * @property 'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED' $Status
+ * @property \Aws\Api\DateTimeResult|null $InvitationDate
+ * @property 'SENDER'|'RECEIVER'|null $ParticipantType
+ * @property 'OpportunityInvitation'|null $PayloadType
+ * @property Receiver|null $Receiver
+ * @property string|null $SenderAwsAccountId
+ * @property string|null $SenderCompanyName
+ * @property 'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'|null $Status
  */
 class EngagementInvitationSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
+     *     Arn?: string|null,
      *     Catalog: string,
-     *     EngagementId?: string,
-     *     EngagementTitle?: string,
-     *     ExpirationDate?: \Aws\Api\DateTimeResult,
+     *     EngagementId?: string|null,
+     *     EngagementTitle?: string|null,
+     *     ExpirationDate?: \Aws\Api\DateTimeResult|null,
      *     Id: string,
-     *     InvitationDate?: \Aws\Api\DateTimeResult,
-     *     ParticipantType?: 'SENDER'|'RECEIVER',
-     *     PayloadType?: 'OpportunityInvitation',
-     *     Receiver?: Receiver,
-     *     SenderAwsAccountId?: string,
-     *     SenderCompanyName?: string,
-     *     Status?: 'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'
+     *     InvitationDate?: \Aws\Api\DateTimeResult|null,
+     *     ParticipantType?: 'SENDER'|'RECEIVER'|null,
+     *     PayloadType?: 'OpportunityInvitation'|null,
+     *     Receiver?: Receiver|null,
+     *     SenderAwsAccountId?: string|null,
+     *     SenderCompanyName?: string|null,
+     *     Status?: 'ACCEPTED'|'PENDING'|'REJECTED'|'EXPIRED'|null
      * } $args
      */
     public function __construct(array $args)

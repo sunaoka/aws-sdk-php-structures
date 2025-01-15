@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property string $groupIdentifier
- * @property int<1, 50> $maxResults
- * @property string $name
- * @property string $nextToken
- * @property string $userIdentifier
+ * @property string|null $groupIdentifier
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $name
+ * @property string|null $nextToken
+ * @property string|null $userIdentifier
  */
 class ListProjectsRequest extends Request
 {
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     groupIdentifier?: string,
-     *     maxResults?: int<1, 50>,
-     *     name?: string,
-     *     nextToken?: string,
-     *     userIdentifier?: string
+     *     groupIdentifier?: string|null,
+     *     maxResults?: int<1, 50>|null,
+     *     name?: string|null,
+     *     nextToken?: string|null,
+     *     userIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

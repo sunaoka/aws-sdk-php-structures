@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListApplica
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ApplicationComponentDetail> $applicationComponentInfos
- * @property string $nextToken
+ * @property list<Shapes\ApplicationComponentDetail>|null $applicationComponentInfos
+ * @property string|null $nextToken
  */
 class ListApplicationComponentsResponse extends Response
 {

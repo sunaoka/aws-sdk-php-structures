@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\GetScalingConfigurationRecommendation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PredefinedMetricType
+ * @property string|null $PredefinedMetricType
  */
 class PredefinedMetricSpecification extends Shape
 {
     /**
-     * @param array{PredefinedMetricType?: string} $args
+     * @param array{PredefinedMetricType?: string|null} $args
      */
     public function __construct(array $args = [])
     {

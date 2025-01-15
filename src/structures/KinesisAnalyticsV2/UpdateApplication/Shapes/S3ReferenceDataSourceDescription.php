@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $BucketARN
  * @property string $FileKey
- * @property string $ReferenceRoleARN
+ * @property string|null $ReferenceRoleARN
  */
 class S3ReferenceDataSourceDescription extends Shape
 {
@@ -15,7 +15,7 @@ class S3ReferenceDataSourceDescription extends Shape
      * @param array{
      *     BucketARN: string,
      *     FileKey: string,
-     *     ReferenceRoleARN?: string
+     *     ReferenceRoleARN?: string|null
      * } $args
      */
     public function __construct(array $args)

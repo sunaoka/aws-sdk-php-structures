@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $IsDeviceInGeofence
  * @property double $NearestDistance
  * @property 'ENTER'|'EXIT'|'IDLE' $EventType
- * @property \Aws\Api\DateTimeResult $ForecastedBreachTime
- * @property array<string, string> $GeofenceProperties
+ * @property \Aws\Api\DateTimeResult|null $ForecastedBreachTime
+ * @property array<string, string>|null $GeofenceProperties
  */
 class ForecastedEvent extends Shape
 {
@@ -22,8 +22,8 @@ class ForecastedEvent extends Shape
      *     IsDeviceInGeofence: bool,
      *     NearestDistance: double,
      *     EventType: 'ENTER'|'EXIT'|'IDLE',
-     *     ForecastedBreachTime?: \Aws\Api\DateTimeResult,
-     *     GeofenceProperties?: array<string, string>
+     *     ForecastedBreachTime?: \Aws\Api\DateTimeResult|null,
+     *     GeofenceProperties?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

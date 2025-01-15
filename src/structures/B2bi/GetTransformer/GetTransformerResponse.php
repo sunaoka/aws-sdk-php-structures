@@ -10,15 +10,15 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property 'active'|'inactive' $status
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $modifiedAt
- * @property 'XML'|'JSON'|'NOT_USED' $fileFormat
- * @property string $mappingTemplate
- * @property Shapes\EdiType $ediType
- * @property string $sampleDocument
- * @property Shapes\InputConversion $inputConversion
- * @property Shapes\Mapping $mapping
- * @property Shapes\OutputConversion $outputConversion
- * @property Shapes\SampleDocuments $sampleDocuments
+ * @property \Aws\Api\DateTimeResult|null $modifiedAt
+ * @property 'XML'|'JSON'|'NOT_USED'|null $fileFormat
+ * @property string|null $mappingTemplate
+ * @property Shapes\EdiType|null $ediType
+ * @property string|null $sampleDocument
+ * @property Shapes\InputConversion|null $inputConversion
+ * @property Shapes\Mapping|null $mapping
+ * @property Shapes\OutputConversion|null $outputConversion
+ * @property Shapes\SampleDocuments|null $sampleDocuments
  */
 class GetTransformerResponse extends Response
 {

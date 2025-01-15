@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateFpgaImage;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property Shapes\StorageLocation $InputStorageLocation
- * @property Shapes\StorageLocation $LogsStorageLocation
- * @property string $Description
- * @property string $Name
- * @property string $ClientToken
- * @property list<Shapes\TagSpecification> $TagSpecifications
+ * @property Shapes\StorageLocation|null $LogsStorageLocation
+ * @property string|null $Description
+ * @property string|null $Name
+ * @property string|null $ClientToken
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class CreateFpgaImageRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     InputStorageLocation: Shapes\StorageLocation,
-     *     LogsStorageLocation?: Shapes\StorageLocation,
-     *     Description?: string,
-     *     Name?: string,
-     *     ClientToken?: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>
+     *     LogsStorageLocation?: Shapes\StorageLocation|null,
+     *     Description?: string|null,
+     *     Name?: string|null,
+     *     ClientToken?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

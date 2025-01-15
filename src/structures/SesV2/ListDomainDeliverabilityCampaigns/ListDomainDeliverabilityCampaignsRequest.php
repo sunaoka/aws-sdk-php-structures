@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $StartDate
  * @property \Aws\Api\DateTimeResult $EndDate
  * @property string $SubscribedDomain
- * @property string $NextToken
- * @property int $PageSize
+ * @property string|null $NextToken
+ * @property int|null $PageSize
  */
 class ListDomainDeliverabilityCampaignsRequest extends Request
 {
@@ -18,8 +18,8 @@ class ListDomainDeliverabilityCampaignsRequest extends Request
      *     StartDate: \Aws\Api\DateTimeResult,
      *     EndDate: \Aws\Api\DateTimeResult,
      *     SubscribedDomain: string,
-     *     NextToken?: string,
-     *     PageSize?: int
+     *     NextToken?: string|null,
+     *     PageSize?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FilterControlId
  * @property string $Title
  * @property string $SourceFilterId
- * @property SliderControlDisplayOptions $DisplayOptions
- * @property 'SINGLE_POINT'|'RANGE' $Type
+ * @property SliderControlDisplayOptions|null $DisplayOptions
+ * @property 'SINGLE_POINT'|'RANGE'|null $Type
  * @property double $MaximumValue
  * @property double $MinimumValue
  * @property double $StepSize
@@ -21,8 +21,8 @@ class FilterSliderControl extends Shape
      *     FilterControlId: string,
      *     Title: string,
      *     SourceFilterId: string,
-     *     DisplayOptions?: SliderControlDisplayOptions,
-     *     Type?: 'SINGLE_POINT'|'RANGE',
+     *     DisplayOptions?: SliderControlDisplayOptions|null,
+     *     Type?: 'SINGLE_POINT'|'RANGE'|null,
      *     MaximumValue: double,
      *     MinimumValue: double,
      *     StepSize: double

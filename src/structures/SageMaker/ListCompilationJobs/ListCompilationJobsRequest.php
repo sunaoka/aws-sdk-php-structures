@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListCompilationJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property \Aws\Api\DateTimeResult $CreationTimeAfter
- * @property \Aws\Api\DateTimeResult $CreationTimeBefore
- * @property \Aws\Api\DateTimeResult $LastModifiedTimeAfter
- * @property \Aws\Api\DateTimeResult $LastModifiedTimeBefore
- * @property string $NameContains
- * @property 'INPROGRESS'|'COMPLETED'|'FAILED'|'STARTING'|'STOPPING'|'STOPPED' $StatusEquals
- * @property 'Name'|'CreationTime'|'Status' $SortBy
- * @property 'Ascending'|'Descending' $SortOrder
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeAfter
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTimeBefore
+ * @property string|null $NameContains
+ * @property 'INPROGRESS'|'COMPLETED'|'FAILED'|'STARTING'|'STOPPING'|'STOPPED'|null $StatusEquals
+ * @property 'Name'|'CreationTime'|'Status'|null $SortBy
+ * @property 'Ascending'|'Descending'|null $SortOrder
  */
 class ListCompilationJobsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
-     *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTimeBefore?: \Aws\Api\DateTimeResult,
-     *     NameContains?: string,
-     *     StatusEquals?: 'INPROGRESS'|'COMPLETED'|'FAILED'|'STARTING'|'STOPPING'|'STOPPED',
-     *     SortBy?: 'Name'|'CreationTime'|'Status',
-     *     SortOrder?: 'Ascending'|'Descending'
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     NameContains?: string|null,
+     *     StatusEquals?: 'INPROGRESS'|'COMPLETED'|'FAILED'|'STARTING'|'STOPPING'|'STOPPED'|null,
+     *     SortBy?: 'Name'|'CreationTime'|'Status'|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WAFV2\ListAvailableManagedRuleGroupVersions\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property \Aws\Api\DateTimeResult $LastUpdateTimestamp
+ * @property string|null $Name
+ * @property \Aws\Api\DateTimeResult|null $LastUpdateTimestamp
  */
 class ManagedRuleGroupVersion extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     LastUpdateTimestamp?: \Aws\Api\DateTimeResult
+     *     Name?: string|null,
+     *     LastUpdateTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

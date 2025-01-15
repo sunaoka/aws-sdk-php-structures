@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Bedrock\GetModelCustomizationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $trainingLoss
+ * @property float|null $trainingLoss
  */
 class TrainingMetrics extends Shape
 {
     /**
-     * @param array{trainingLoss?: float} $args
+     * @param array{trainingLoss?: float|null} $args
      */
     public function __construct(array $args = [])
     {

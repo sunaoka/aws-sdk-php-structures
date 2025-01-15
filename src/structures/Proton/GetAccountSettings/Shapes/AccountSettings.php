@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Proton\GetAccountSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $pipelineCodebuildRoleArn
- * @property RepositoryBranch $pipelineProvisioningRepository
- * @property string $pipelineServiceRoleArn
+ * @property string|null $pipelineCodebuildRoleArn
+ * @property RepositoryBranch|null $pipelineProvisioningRepository
+ * @property string|null $pipelineServiceRoleArn
  */
 class AccountSettings extends Shape
 {
     /**
      * @param array{
-     *     pipelineCodebuildRoleArn?: string,
-     *     pipelineProvisioningRepository?: RepositoryBranch,
-     *     pipelineServiceRoleArn?: string
+     *     pipelineCodebuildRoleArn?: string|null,
+     *     pipelineProvisioningRepository?: RepositoryBranch|null,
+     *     pipelineServiceRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDefaultQBusinessApplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RequestId
- * @property int $Status
- * @property string $ApplicationId
+ * @property string|null $RequestId
+ * @property int|null $Status
+ * @property string|null $ApplicationId
  */
 class DescribeDefaultQBusinessApplicationResponse extends Response
 {

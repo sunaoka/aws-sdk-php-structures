@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListFeatureGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NameContains
- * @property 'Creating'|'Created'|'CreateFailed'|'Deleting'|'DeleteFailed' $FeatureGroupStatusEquals
- * @property 'Active'|'Blocked'|'Disabled' $OfflineStoreStatusEquals
- * @property \Aws\Api\DateTimeResult $CreationTimeAfter
- * @property \Aws\Api\DateTimeResult $CreationTimeBefore
- * @property 'Ascending'|'Descending' $SortOrder
- * @property 'Name'|'FeatureGroupStatus'|'OfflineStoreStatus'|'CreationTime' $SortBy
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $NameContains
+ * @property 'Creating'|'Created'|'CreateFailed'|'Deleting'|'DeleteFailed'|null $FeatureGroupStatusEquals
+ * @property 'Active'|'Blocked'|'Disabled'|null $OfflineStoreStatusEquals
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
+ * @property 'Ascending'|'Descending'|null $SortOrder
+ * @property 'Name'|'FeatureGroupStatus'|'OfflineStoreStatus'|'CreationTime'|null $SortBy
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListFeatureGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     NameContains?: string,
-     *     FeatureGroupStatusEquals?: 'Creating'|'Created'|'CreateFailed'|'Deleting'|'DeleteFailed',
-     *     OfflineStoreStatusEquals?: 'Active'|'Blocked'|'Disabled',
-     *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
-     *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     SortOrder?: 'Ascending'|'Descending',
-     *     SortBy?: 'Name'|'FeatureGroupStatus'|'OfflineStoreStatus'|'CreationTime',
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     NameContains?: string|null,
+     *     FeatureGroupStatusEquals?: 'Creating'|'Created'|'CreateFailed'|'Deleting'|'DeleteFailed'|null,
+     *     OfflineStoreStatusEquals?: 'Active'|'Blocked'|'Disabled'|null,
+     *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null,
+     *     SortBy?: 'Name'|'FeatureGroupStatus'|'OfflineStoreStatus'|'CreationTime'|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

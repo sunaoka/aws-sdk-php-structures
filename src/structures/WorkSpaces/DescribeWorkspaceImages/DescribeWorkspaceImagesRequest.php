@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeWorkspaceImages;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ImageIds
- * @property 'OWNED'|'SHARED' $ImageType
- * @property string $NextToken
- * @property int<1, 25> $MaxResults
+ * @property list<string>|null $ImageIds
+ * @property 'OWNED'|'SHARED'|null $ImageType
+ * @property string|null $NextToken
+ * @property int<1, 25>|null $MaxResults
  */
 class DescribeWorkspaceImagesRequest extends Request
 {
     /**
      * @param array{
-     *     ImageIds?: list<string>,
-     *     ImageType?: 'OWNED'|'SHARED',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 25>
+     *     ImageIds?: list<string>|null,
+     *     ImageType?: 'OWNED'|'SHARED'|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 25>|null
      * } $args
      */
     public function __construct(array $args = [])

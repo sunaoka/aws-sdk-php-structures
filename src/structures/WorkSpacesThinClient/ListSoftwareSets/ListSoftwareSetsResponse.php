@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkSpacesThinClient\ListSoftwareSets;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\SoftwareSetSummary> $softwareSets
- * @property string $nextToken
+ * @property list<Shapes\SoftwareSetSummary>|null $softwareSets
+ * @property string|null $nextToken
  */
 class ListSoftwareSetsResponse extends Response
 {

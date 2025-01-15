@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetDistributionConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $userIds
- * @property list<string> $userGroups
- * @property list<string> $organizationArns
- * @property list<string> $organizationalUnitArns
+ * @property list<string>|null $userIds
+ * @property list<string>|null $userGroups
+ * @property list<string>|null $organizationArns
+ * @property list<string>|null $organizationalUnitArns
  */
 class LaunchPermissionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     userIds?: list<string>,
-     *     userGroups?: list<string>,
-     *     organizationArns?: list<string>,
-     *     organizationalUnitArns?: list<string>
+     *     userIds?: list<string>|null,
+     *     userGroups?: list<string>|null,
+     *     organizationArns?: list<string>|null,
+     *     organizationalUnitArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

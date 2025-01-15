@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AdminSetUserMFAPreferen
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\SMSMfaSettingsType $SMSMfaSettings
- * @property Shapes\SoftwareTokenMfaSettingsType $SoftwareTokenMfaSettings
- * @property Shapes\EmailMfaSettingsType $EmailMfaSettings
+ * @property Shapes\SMSMfaSettingsType|null $SMSMfaSettings
+ * @property Shapes\SoftwareTokenMfaSettingsType|null $SoftwareTokenMfaSettings
+ * @property Shapes\EmailMfaSettingsType|null $EmailMfaSettings
  * @property string $Username
  * @property string $UserPoolId
  */
@@ -15,9 +15,9 @@ class AdminSetUserMFAPreferenceRequest extends Request
 {
     /**
      * @param array{
-     *     SMSMfaSettings?: Shapes\SMSMfaSettingsType,
-     *     SoftwareTokenMfaSettings?: Shapes\SoftwareTokenMfaSettingsType,
-     *     EmailMfaSettings?: Shapes\EmailMfaSettingsType,
+     *     SMSMfaSettings?: Shapes\SMSMfaSettingsType|null,
+     *     SoftwareTokenMfaSettings?: Shapes\SoftwareTokenMfaSettingsType|null,
+     *     EmailMfaSettings?: Shapes\EmailMfaSettingsType|null,
      *     Username: string,
      *     UserPoolId: string
      * } $args

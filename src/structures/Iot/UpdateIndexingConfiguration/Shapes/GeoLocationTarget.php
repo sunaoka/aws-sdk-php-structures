@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\UpdateIndexingConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property 'LatLon'|'LonLat' $order
+ * @property string|null $name
+ * @property 'LatLon'|'LonLat'|null $order
  */
 class GeoLocationTarget extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     order?: 'LatLon'|'LonLat'
+     *     name?: string|null,
+     *     order?: 'LatLon'|'LonLat'|null
      * } $args
      */
     public function __construct(array $args = [])

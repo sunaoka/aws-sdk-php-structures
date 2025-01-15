@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ProjectId
- * @property string $DataSetRegion
+ * @property string|null $DataSetRegion
  */
 class BigQueryParameters extends Shape
 {
     /**
      * @param array{
      *     ProjectId: string,
-     *     DataSetRegion?: string
+     *     DataSetRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $GatewayArn
  * @property string $GatewayInstanceArn
  * @property string $InstanceId
- * @property list<MessageDetail> $InstanceMessages
+ * @property list<MessageDetail>|null $InstanceMessages
  * @property 'REGISTERING'|'ACTIVE'|'DEREGISTERING'|'DEREGISTERED'|'REGISTRATION_ERROR'|'DEREGISTRATION_ERROR' $InstanceState
  * @property int $RunningBridgeCount
  */
@@ -23,7 +23,7 @@ class GatewayInstance extends Shape
      *     GatewayArn: string,
      *     GatewayInstanceArn: string,
      *     InstanceId: string,
-     *     InstanceMessages?: list<MessageDetail>,
+     *     InstanceMessages?: list<MessageDetail>|null,
      *     InstanceState: 'REGISTERING'|'ACTIVE'|'DEREGISTERING'|'DEREGISTERED'|'REGISTRATION_ERROR'|'DEREGISTRATION_ERROR',
      *     RunningBridgeCount: int
      * } $args

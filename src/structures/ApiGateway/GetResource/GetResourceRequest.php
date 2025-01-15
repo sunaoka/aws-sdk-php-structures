@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $restApiId
  * @property string $resourceId
- * @property list<string> $embed
+ * @property list<string>|null $embed
  */
 class GetResourceRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetResourceRequest extends Request
      * @param array{
      *     restApiId: string,
      *     resourceId: string,
-     *     embed?: list<string>
+     *     embed?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

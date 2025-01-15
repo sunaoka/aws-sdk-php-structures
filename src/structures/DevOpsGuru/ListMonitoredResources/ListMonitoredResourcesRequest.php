@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\ListMonitoredResources;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\ListMonitoredResourcesFilters $Filters
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
+ * @property Shapes\ListMonitoredResourcesFilters|null $Filters
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListMonitoredResourcesRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: Shapes\ListMonitoredResourcesFilters,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string
+     *     Filters?: Shapes\ListMonitoredResourcesFilters|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

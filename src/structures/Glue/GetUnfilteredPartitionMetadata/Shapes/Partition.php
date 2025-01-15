@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Glue\GetUnfilteredPartitionMetadata\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Values
- * @property string $DatabaseName
- * @property string $TableName
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastAccessTime
- * @property StorageDescriptor $StorageDescriptor
- * @property array<string, string> $Parameters
- * @property \Aws\Api\DateTimeResult $LastAnalyzedTime
- * @property string $CatalogId
+ * @property list<string>|null $Values
+ * @property string|null $DatabaseName
+ * @property string|null $TableName
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastAccessTime
+ * @property StorageDescriptor|null $StorageDescriptor
+ * @property array<string, string>|null $Parameters
+ * @property \Aws\Api\DateTimeResult|null $LastAnalyzedTime
+ * @property string|null $CatalogId
  */
 class Partition extends Shape
 {
     /**
      * @param array{
-     *     Values?: list<string>,
-     *     DatabaseName?: string,
-     *     TableName?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastAccessTime?: \Aws\Api\DateTimeResult,
-     *     StorageDescriptor?: StorageDescriptor,
-     *     Parameters?: array<string, string>,
-     *     LastAnalyzedTime?: \Aws\Api\DateTimeResult,
-     *     CatalogId?: string
+     *     Values?: list<string>|null,
+     *     DatabaseName?: string|null,
+     *     TableName?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastAccessTime?: \Aws\Api\DateTimeResult|null,
+     *     StorageDescriptor?: StorageDescriptor|null,
+     *     Parameters?: array<string, string>|null,
+     *     LastAnalyzedTime?: \Aws\Api\DateTimeResult|null,
+     *     CatalogId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

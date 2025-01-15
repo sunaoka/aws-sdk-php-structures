@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateVirtualGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualGatewayFileAccessLog $file
+ * @property VirtualGatewayFileAccessLog|null $file
  */
 class VirtualGatewayAccessLog extends Shape
 {
     /**
-     * @param array{file?: VirtualGatewayFileAccessLog} $args
+     * @param array{file?: VirtualGatewayFileAccessLog|null} $args
      */
     public function __construct(array $args = [])
     {

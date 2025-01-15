@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ssm\GetMaintenanceWindowTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClientContext
- * @property string $Qualifier
- * @property \Psr\Http\Message\StreamInterface $Payload
+ * @property string|null $ClientContext
+ * @property string|null $Qualifier
+ * @property \Psr\Http\Message\StreamInterface|null $Payload
  */
 class MaintenanceWindowLambdaParameters extends Shape
 {
     /**
      * @param array{
-     *     ClientContext?: string,
-     *     Qualifier?: string,
-     *     Payload?: \Psr\Http\Message\StreamInterface
+     *     ClientContext?: string|null,
+     *     Qualifier?: string|null,
+     *     Payload?: \Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args = [])

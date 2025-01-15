@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Health\DescribeEventAggregates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $eventArns
- * @property list<string> $eventTypeCodes
- * @property list<string> $services
- * @property list<string> $regions
- * @property list<string> $availabilityZones
- * @property list<DateTimeRange> $startTimes
- * @property list<DateTimeRange> $endTimes
- * @property list<DateTimeRange> $lastUpdatedTimes
- * @property list<string> $entityArns
- * @property list<string> $entityValues
- * @property list<'issue'|'accountNotification'|'scheduledChange'|'investigation'> $eventTypeCategories
- * @property list<array<string, string>> $tags
- * @property list<'open'|'closed'|'upcoming'> $eventStatusCodes
+ * @property list<string>|null $eventArns
+ * @property list<string>|null $eventTypeCodes
+ * @property list<string>|null $services
+ * @property list<string>|null $regions
+ * @property list<string>|null $availabilityZones
+ * @property list<DateTimeRange>|null $startTimes
+ * @property list<DateTimeRange>|null $endTimes
+ * @property list<DateTimeRange>|null $lastUpdatedTimes
+ * @property list<string>|null $entityArns
+ * @property list<string>|null $entityValues
+ * @property list<'issue'|'accountNotification'|'scheduledChange'|'investigation'>|null $eventTypeCategories
+ * @property list<array<string, string>>|null $tags
+ * @property list<'open'|'closed'|'upcoming'>|null $eventStatusCodes
  */
 class EventFilter extends Shape
 {
     /**
      * @param array{
-     *     eventArns?: list<string>,
-     *     eventTypeCodes?: list<string>,
-     *     services?: list<string>,
-     *     regions?: list<string>,
-     *     availabilityZones?: list<string>,
-     *     startTimes?: list<DateTimeRange>,
-     *     endTimes?: list<DateTimeRange>,
-     *     lastUpdatedTimes?: list<DateTimeRange>,
-     *     entityArns?: list<string>,
-     *     entityValues?: list<string>,
-     *     eventTypeCategories?: list<'issue'|'accountNotification'|'scheduledChange'|'investigation'>,
-     *     tags?: list<array<string, string>>,
-     *     eventStatusCodes?: list<'open'|'closed'|'upcoming'>
+     *     eventArns?: list<string>|null,
+     *     eventTypeCodes?: list<string>|null,
+     *     services?: list<string>|null,
+     *     regions?: list<string>|null,
+     *     availabilityZones?: list<string>|null,
+     *     startTimes?: list<DateTimeRange>|null,
+     *     endTimes?: list<DateTimeRange>|null,
+     *     lastUpdatedTimes?: list<DateTimeRange>|null,
+     *     entityArns?: list<string>|null,
+     *     entityValues?: list<string>|null,
+     *     eventTypeCategories?: list<'issue'|'accountNotification'|'scheduledChange'|'investigation'>|null,
+     *     tags?: list<array<string, string>>|null,
+     *     eventStatusCodes?: list<'open'|'closed'|'upcoming'>|null
      * } $args
      */
     public function __construct(array $args = [])

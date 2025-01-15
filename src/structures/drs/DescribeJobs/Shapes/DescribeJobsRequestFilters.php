@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\drs\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $fromDate
- * @property list<string> $jobIDs
- * @property string $toDate
+ * @property string|null $fromDate
+ * @property list<string>|null $jobIDs
+ * @property string|null $toDate
  */
 class DescribeJobsRequestFilters extends Shape
 {
     /**
      * @param array{
-     *     fromDate?: string,
-     *     jobIDs?: list<string>,
-     *     toDate?: string
+     *     fromDate?: string|null,
+     *     jobIDs?: list<string>|null,
+     *     toDate?: string|null
      * } $args
      */
     public function __construct(array $args = [])

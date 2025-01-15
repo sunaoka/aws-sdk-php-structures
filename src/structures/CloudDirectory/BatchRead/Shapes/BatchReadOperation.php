@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\BatchRead\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BatchListObjectAttributes $ListObjectAttributes
- * @property BatchListObjectChildren $ListObjectChildren
- * @property BatchListAttachedIndices $ListAttachedIndices
- * @property BatchListObjectParentPaths $ListObjectParentPaths
- * @property BatchGetObjectInformation $GetObjectInformation
- * @property BatchGetObjectAttributes $GetObjectAttributes
- * @property BatchListObjectParents $ListObjectParents
- * @property BatchListObjectPolicies $ListObjectPolicies
- * @property BatchListPolicyAttachments $ListPolicyAttachments
- * @property BatchLookupPolicy $LookupPolicy
- * @property BatchListIndex $ListIndex
- * @property BatchListOutgoingTypedLinks $ListOutgoingTypedLinks
- * @property BatchListIncomingTypedLinks $ListIncomingTypedLinks
- * @property BatchGetLinkAttributes $GetLinkAttributes
+ * @property BatchListObjectAttributes|null $ListObjectAttributes
+ * @property BatchListObjectChildren|null $ListObjectChildren
+ * @property BatchListAttachedIndices|null $ListAttachedIndices
+ * @property BatchListObjectParentPaths|null $ListObjectParentPaths
+ * @property BatchGetObjectInformation|null $GetObjectInformation
+ * @property BatchGetObjectAttributes|null $GetObjectAttributes
+ * @property BatchListObjectParents|null $ListObjectParents
+ * @property BatchListObjectPolicies|null $ListObjectPolicies
+ * @property BatchListPolicyAttachments|null $ListPolicyAttachments
+ * @property BatchLookupPolicy|null $LookupPolicy
+ * @property BatchListIndex|null $ListIndex
+ * @property BatchListOutgoingTypedLinks|null $ListOutgoingTypedLinks
+ * @property BatchListIncomingTypedLinks|null $ListIncomingTypedLinks
+ * @property BatchGetLinkAttributes|null $GetLinkAttributes
  */
 class BatchReadOperation extends Shape
 {
     /**
      * @param array{
-     *     ListObjectAttributes?: BatchListObjectAttributes,
-     *     ListObjectChildren?: BatchListObjectChildren,
-     *     ListAttachedIndices?: BatchListAttachedIndices,
-     *     ListObjectParentPaths?: BatchListObjectParentPaths,
-     *     GetObjectInformation?: BatchGetObjectInformation,
-     *     GetObjectAttributes?: BatchGetObjectAttributes,
-     *     ListObjectParents?: BatchListObjectParents,
-     *     ListObjectPolicies?: BatchListObjectPolicies,
-     *     ListPolicyAttachments?: BatchListPolicyAttachments,
-     *     LookupPolicy?: BatchLookupPolicy,
-     *     ListIndex?: BatchListIndex,
-     *     ListOutgoingTypedLinks?: BatchListOutgoingTypedLinks,
-     *     ListIncomingTypedLinks?: BatchListIncomingTypedLinks,
-     *     GetLinkAttributes?: BatchGetLinkAttributes
+     *     ListObjectAttributes?: BatchListObjectAttributes|null,
+     *     ListObjectChildren?: BatchListObjectChildren|null,
+     *     ListAttachedIndices?: BatchListAttachedIndices|null,
+     *     ListObjectParentPaths?: BatchListObjectParentPaths|null,
+     *     GetObjectInformation?: BatchGetObjectInformation|null,
+     *     GetObjectAttributes?: BatchGetObjectAttributes|null,
+     *     ListObjectParents?: BatchListObjectParents|null,
+     *     ListObjectPolicies?: BatchListObjectPolicies|null,
+     *     ListPolicyAttachments?: BatchListPolicyAttachments|null,
+     *     LookupPolicy?: BatchLookupPolicy|null,
+     *     ListIndex?: BatchListIndex|null,
+     *     ListOutgoingTypedLinks?: BatchListOutgoingTypedLinks|null,
+     *     ListIncomingTypedLinks?: BatchListIncomingTypedLinks|null,
+     *     GetLinkAttributes?: BatchGetLinkAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

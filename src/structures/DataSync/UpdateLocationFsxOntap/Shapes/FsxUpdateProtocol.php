@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataSync\UpdateLocationFsxOntap\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FsxProtocolNfs $NFS
- * @property FsxUpdateProtocolSmb $SMB
+ * @property FsxProtocolNfs|null $NFS
+ * @property FsxUpdateProtocolSmb|null $SMB
  */
 class FsxUpdateProtocol extends Shape
 {
     /**
      * @param array{
-     *     NFS?: FsxProtocolNfs,
-     *     SMB?: FsxUpdateProtocolSmb
+     *     NFS?: FsxProtocolNfs|null,
+     *     SMB?: FsxUpdateProtocolSmb|null
      * } $args
      */
     public function __construct(array $args = [])

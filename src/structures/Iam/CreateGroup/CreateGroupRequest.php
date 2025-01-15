@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Iam\CreateGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Path
+ * @property string|null $Path
  * @property string $GroupName
  */
 class CreateGroupRequest extends Request
 {
     /**
      * @param array{
-     *     Path?: string,
+     *     Path?: string|null,
      *     GroupName: string
      * } $args
      */

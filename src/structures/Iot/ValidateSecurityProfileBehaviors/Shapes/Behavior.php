@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $metric
- * @property MetricDimension $metricDimension
- * @property BehaviorCriteria $criteria
- * @property bool $suppressAlerts
- * @property bool $exportMetric
+ * @property string|null $metric
+ * @property MetricDimension|null $metricDimension
+ * @property BehaviorCriteria|null $criteria
+ * @property bool|null $suppressAlerts
+ * @property bool|null $exportMetric
  */
 class Behavior extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     metric?: string,
-     *     metricDimension?: MetricDimension,
-     *     criteria?: BehaviorCriteria,
-     *     suppressAlerts?: bool,
-     *     exportMetric?: bool
+     *     metric?: string|null,
+     *     metricDimension?: MetricDimension|null,
+     *     criteria?: BehaviorCriteria|null,
+     *     suppressAlerts?: bool|null,
+     *     exportMetric?: bool|null
      * } $args
      */
     public function __construct(array $args)

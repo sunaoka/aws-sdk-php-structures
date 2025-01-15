@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $appArn
  * @property string $appVersion
- * @property string $resolutionId
+ * @property string|null $resolutionId
  */
 class DescribeAppVersionResourcesResolutionStatusRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeAppVersionResourcesResolutionStatusRequest extends Request
      * @param array{
      *     appArn: string,
      *     appVersion: string,
-     *     resolutionId?: string
+     *     resolutionId?: string|null
      * } $args
      */
     public function __construct(array $args)

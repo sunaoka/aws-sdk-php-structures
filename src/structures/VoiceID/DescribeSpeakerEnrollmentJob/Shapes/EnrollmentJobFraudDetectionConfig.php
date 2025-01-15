@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\VoiceID\DescribeSpeakerEnrollmentJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'IGNORE'|'FAIL' $FraudDetectionAction
- * @property int<0, 100> $RiskThreshold
- * @property list<string> $WatchlistIds
+ * @property 'IGNORE'|'FAIL'|null $FraudDetectionAction
+ * @property int<0, 100>|null $RiskThreshold
+ * @property list<string>|null $WatchlistIds
  */
 class EnrollmentJobFraudDetectionConfig extends Shape
 {
     /**
      * @param array{
-     *     FraudDetectionAction?: 'IGNORE'|'FAIL',
-     *     RiskThreshold?: int<0, 100>,
-     *     WatchlistIds?: list<string>
+     *     FraudDetectionAction?: 'IGNORE'|'FAIL'|null,
+     *     RiskThreshold?: int<0, 100>|null,
+     *     WatchlistIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

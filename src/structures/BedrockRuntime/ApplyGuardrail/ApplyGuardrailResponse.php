@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'NONE'|'GUARDRAIL_INTERVENED' $action
  * @property list<Shapes\GuardrailOutputContent> $outputs
  * @property list<Shapes\GuardrailAssessment> $assessments
- * @property Shapes\GuardrailCoverage $guardrailCoverage
+ * @property Shapes\GuardrailCoverage|null $guardrailCoverage
  */
 class ApplyGuardrailResponse extends Response
 {

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Shield\DescribeAttack\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AttackId
- * @property string $ResourceArn
- * @property list<SubResourceSummary> $SubResources
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property list<SummarizedCounter> $AttackCounters
- * @property list<AttackProperty> $AttackProperties
- * @property list<Mitigation> $Mitigations
+ * @property string|null $AttackId
+ * @property string|null $ResourceArn
+ * @property list<SubResourceSummary>|null $SubResources
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property list<SummarizedCounter>|null $AttackCounters
+ * @property list<AttackProperty>|null $AttackProperties
+ * @property list<Mitigation>|null $Mitigations
  */
 class AttackDetail extends Shape
 {
     /**
      * @param array{
-     *     AttackId?: string,
-     *     ResourceArn?: string,
-     *     SubResources?: list<SubResourceSummary>,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     AttackCounters?: list<SummarizedCounter>,
-     *     AttackProperties?: list<AttackProperty>,
-     *     Mitigations?: list<Mitigation>
+     *     AttackId?: string|null,
+     *     ResourceArn?: string|null,
+     *     SubResources?: list<SubResourceSummary>|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     AttackCounters?: list<SummarizedCounter>|null,
+     *     AttackProperties?: list<AttackProperty>|null,
+     *     Mitigations?: list<Mitigation>|null
      * } $args
      */
     public function __construct(array $args = [])

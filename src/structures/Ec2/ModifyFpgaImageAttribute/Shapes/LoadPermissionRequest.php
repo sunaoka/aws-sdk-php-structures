@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyFpgaImageAttribute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'all' $Group
- * @property string $UserId
+ * @property 'all'|null $Group
+ * @property string|null $UserId
  */
 class LoadPermissionRequest extends Shape
 {
     /**
      * @param array{
-     *     Group?: 'all',
-     *     UserId?: string
+     *     Group?: 'all'|null,
+     *     UserId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

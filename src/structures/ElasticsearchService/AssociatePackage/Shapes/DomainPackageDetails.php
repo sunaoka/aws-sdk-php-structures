@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\AssociatePackage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PackageID
- * @property string $PackageName
- * @property 'TXT-DICTIONARY' $PackageType
- * @property \Aws\Api\DateTimeResult $LastUpdated
- * @property string $DomainName
- * @property 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ACTIVE'|'DISSOCIATING'|'DISSOCIATION_FAILED' $DomainPackageStatus
- * @property string $PackageVersion
- * @property string $ReferencePath
- * @property ErrorDetails $ErrorDetails
+ * @property string|null $PackageID
+ * @property string|null $PackageName
+ * @property 'TXT-DICTIONARY'|null $PackageType
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property string|null $DomainName
+ * @property 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ACTIVE'|'DISSOCIATING'|'DISSOCIATION_FAILED'|null $DomainPackageStatus
+ * @property string|null $PackageVersion
+ * @property string|null $ReferencePath
+ * @property ErrorDetails|null $ErrorDetails
  */
 class DomainPackageDetails extends Shape
 {
     /**
      * @param array{
-     *     PackageID?: string,
-     *     PackageName?: string,
-     *     PackageType?: 'TXT-DICTIONARY',
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
-     *     DomainName?: string,
-     *     DomainPackageStatus?: 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ACTIVE'|'DISSOCIATING'|'DISSOCIATION_FAILED',
-     *     PackageVersion?: string,
-     *     ReferencePath?: string,
-     *     ErrorDetails?: ErrorDetails
+     *     PackageID?: string|null,
+     *     PackageName?: string|null,
+     *     PackageType?: 'TXT-DICTIONARY'|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     DomainName?: string|null,
+     *     DomainPackageStatus?: 'ASSOCIATING'|'ASSOCIATION_FAILED'|'ACTIVE'|'DISSOCIATING'|'DISSOCIATION_FAILED'|null,
+     *     PackageVersion?: string|null,
+     *     ReferencePath?: string|null,
+     *     ErrorDetails?: ErrorDetails|null
      * } $args
      */
     public function __construct(array $args = [])

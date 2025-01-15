@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ServerlessApplicationRepository\ListApplication
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ApplicationSummary> $Applications
- * @property string $NextToken
+ * @property list<Shapes\ApplicationSummary>|null $Applications
+ * @property string|null $NextToken
  */
 class ListApplicationsResponse extends Response
 {

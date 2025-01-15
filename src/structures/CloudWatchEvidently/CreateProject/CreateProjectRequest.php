@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\CreateProject;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\ProjectAppConfigResourceConfig $appConfigResource
- * @property Shapes\ProjectDataDeliveryConfig $dataDelivery
- * @property string $description
+ * @property Shapes\ProjectAppConfigResourceConfig|null $appConfigResource
+ * @property Shapes\ProjectDataDeliveryConfig|null $dataDelivery
+ * @property string|null $description
  * @property string $name
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateProjectRequest extends Request
 {
     /**
      * @param array{
-     *     appConfigResource?: Shapes\ProjectAppConfigResourceConfig,
-     *     dataDelivery?: Shapes\ProjectDataDeliveryConfig,
-     *     description?: string,
+     *     appConfigResource?: Shapes\ProjectAppConfigResourceConfig|null,
+     *     dataDelivery?: Shapes\ProjectDataDeliveryConfig|null,
+     *     description?: string|null,
      *     name: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClusterId
  * @property list<string> $StepIds
- * @property 'SEND_INTERRUPT'|'TERMINATE_PROCESS' $StepCancellationOption
+ * @property 'SEND_INTERRUPT'|'TERMINATE_PROCESS'|null $StepCancellationOption
  */
 class CancelStepsRequest extends Request
 {
@@ -15,7 +15,7 @@ class CancelStepsRequest extends Request
      * @param array{
      *     ClusterId: string,
      *     StepIds: list<string>,
-     *     StepCancellationOption?: 'SEND_INTERRUPT'|'TERMINATE_PROCESS'
+     *     StepCancellationOption?: 'SEND_INTERRUPT'|'TERMINATE_PROCESS'|null
      * } $args
      */
     public function __construct(array $args)

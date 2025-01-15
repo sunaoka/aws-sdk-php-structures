@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeTrialComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MetricName
- * @property string $SourceArn
- * @property \Aws\Api\DateTimeResult $TimeStamp
- * @property double $Max
- * @property double $Min
- * @property double $Last
- * @property int $Count
- * @property double $Avg
- * @property double $StdDev
+ * @property string|null $MetricName
+ * @property string|null $SourceArn
+ * @property \Aws\Api\DateTimeResult|null $TimeStamp
+ * @property double|null $Max
+ * @property double|null $Min
+ * @property double|null $Last
+ * @property int|null $Count
+ * @property double|null $Avg
+ * @property double|null $StdDev
  */
 class TrialComponentMetricSummary extends Shape
 {
     /**
      * @param array{
-     *     MetricName?: string,
-     *     SourceArn?: string,
-     *     TimeStamp?: \Aws\Api\DateTimeResult,
-     *     Max?: double,
-     *     Min?: double,
-     *     Last?: double,
-     *     Count?: int,
-     *     Avg?: double,
-     *     StdDev?: double
+     *     MetricName?: string|null,
+     *     SourceArn?: string|null,
+     *     TimeStamp?: \Aws\Api\DateTimeResult|null,
+     *     Max?: double|null,
+     *     Min?: double|null,
+     *     Last?: double|null,
+     *     Count?: int|null,
+     *     Avg?: double|null,
+     *     StdDev?: double|null
      * } $args
      */
     public function __construct(array $args = [])

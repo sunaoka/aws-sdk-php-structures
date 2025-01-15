@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ProfileDescription
  * @property list<Shapes\ProfileQuestionUpdate> $ProfileQuestions
  * @property string $ClientRequestToken
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateProfileRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreateProfileRequest extends Request
      *     ProfileDescription: string,
      *     ProfileQuestions: list<Shapes\ProfileQuestionUpdate>,
      *     ClientRequestToken: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

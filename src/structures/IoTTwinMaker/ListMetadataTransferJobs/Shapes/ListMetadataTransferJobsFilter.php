@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\ListMetadataTransferJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $workspaceId
- * @property 'VALIDATING'|'PENDING'|'RUNNING'|'CANCELLING'|'ERROR'|'COMPLETED'|'CANCELLED' $state
+ * @property string|null $workspaceId
+ * @property 'VALIDATING'|'PENDING'|'RUNNING'|'CANCELLING'|'ERROR'|'COMPLETED'|'CANCELLED'|null $state
  */
 class ListMetadataTransferJobsFilter extends Shape
 {
     /**
      * @param array{
-     *     workspaceId?: string,
-     *     state?: 'VALIDATING'|'PENDING'|'RUNNING'|'CANCELLING'|'ERROR'|'COMPLETED'|'CANCELLED'
+     *     workspaceId?: string|null,
+     *     state?: 'VALIDATING'|'PENDING'|'RUNNING'|'CANCELLING'|'ERROR'|'COMPLETED'|'CANCELLED'|null
      * } $args
      */
     public function __construct(array $args = [])

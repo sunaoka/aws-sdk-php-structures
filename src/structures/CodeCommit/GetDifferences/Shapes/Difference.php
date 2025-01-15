@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeCommit\GetDifferences\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BlobMetadata $beforeBlob
- * @property BlobMetadata $afterBlob
- * @property 'A'|'M'|'D' $changeType
+ * @property BlobMetadata|null $beforeBlob
+ * @property BlobMetadata|null $afterBlob
+ * @property 'A'|'M'|'D'|null $changeType
  */
 class Difference extends Shape
 {
     /**
      * @param array{
-     *     beforeBlob?: BlobMetadata,
-     *     afterBlob?: BlobMetadata,
-     *     changeType?: 'A'|'M'|'D'
+     *     beforeBlob?: BlobMetadata|null,
+     *     afterBlob?: BlobMetadata|null,
+     *     changeType?: 'A'|'M'|'D'|null
      * } $args
      */
     public function __construct(array $args = [])

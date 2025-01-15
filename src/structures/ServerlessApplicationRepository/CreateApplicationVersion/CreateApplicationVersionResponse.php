@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServerlessApplicationRepository\CreateApplicati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApplicationId
- * @property string $CreationTime
- * @property list<Shapes\ParameterDefinition> $ParameterDefinitions
- * @property list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'|'CAPABILITY_RESOURCE_POLICY'> $RequiredCapabilities
- * @property bool $ResourcesSupported
- * @property string $SemanticVersion
- * @property string $SourceCodeArchiveUrl
- * @property string $SourceCodeUrl
- * @property string $TemplateUrl
+ * @property string|null $ApplicationId
+ * @property string|null $CreationTime
+ * @property list<Shapes\ParameterDefinition>|null $ParameterDefinitions
+ * @property list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'|'CAPABILITY_RESOURCE_POLICY'>|null $RequiredCapabilities
+ * @property bool|null $ResourcesSupported
+ * @property string|null $SemanticVersion
+ * @property string|null $SourceCodeArchiveUrl
+ * @property string|null $SourceCodeUrl
+ * @property string|null $TemplateUrl
  */
 class CreateApplicationVersionResponse extends Response
 {

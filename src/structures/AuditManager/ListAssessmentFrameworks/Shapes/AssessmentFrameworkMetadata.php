@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\AuditManager\ListAssessmentFrameworks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $id
- * @property 'Standard'|'Custom' $type
- * @property string $name
- * @property string $description
- * @property string $logo
- * @property string $complianceType
- * @property int $controlsCount
- * @property int $controlSetsCount
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
+ * @property string|null $arn
+ * @property string|null $id
+ * @property 'Standard'|'Custom'|null $type
+ * @property string|null $name
+ * @property string|null $description
+ * @property string|null $logo
+ * @property string|null $complianceType
+ * @property int|null $controlsCount
+ * @property int|null $controlSetsCount
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  */
 class AssessmentFrameworkMetadata extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     id?: string,
-     *     type?: 'Standard'|'Custom',
-     *     name?: string,
-     *     description?: string,
-     *     logo?: string,
-     *     complianceType?: string,
-     *     controlsCount?: int,
-     *     controlSetsCount?: int,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult
+     *     arn?: string|null,
+     *     id?: string|null,
+     *     type?: 'Standard'|'Custom'|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     logo?: string|null,
+     *     complianceType?: string|null,
+     *     controlsCount?: int|null,
+     *     controlSetsCount?: int|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

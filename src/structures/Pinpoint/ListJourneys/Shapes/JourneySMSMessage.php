@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Pinpoint\ListJourneys\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TRANSACTIONAL'|'PROMOTIONAL' $MessageType
- * @property string $OriginationNumber
- * @property string $SenderId
- * @property string $EntityId
- * @property string $TemplateId
+ * @property 'TRANSACTIONAL'|'PROMOTIONAL'|null $MessageType
+ * @property string|null $OriginationNumber
+ * @property string|null $SenderId
+ * @property string|null $EntityId
+ * @property string|null $TemplateId
  */
 class JourneySMSMessage extends Shape
 {
     /**
      * @param array{
-     *     MessageType?: 'TRANSACTIONAL'|'PROMOTIONAL',
-     *     OriginationNumber?: string,
-     *     SenderId?: string,
-     *     EntityId?: string,
-     *     TemplateId?: string
+     *     MessageType?: 'TRANSACTIONAL'|'PROMOTIONAL'|null,
+     *     OriginationNumber?: string|null,
+     *     SenderId?: string|null,
+     *     EntityId?: string|null,
+     *     TemplateId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

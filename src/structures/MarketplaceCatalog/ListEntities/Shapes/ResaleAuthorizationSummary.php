@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $ProductId
- * @property string $ProductName
- * @property string $ManufacturerAccountId
- * @property string $ManufacturerLegalName
- * @property string $ResellerAccountID
- * @property string $ResellerLegalName
- * @property 'Draft'|'Active'|'Restricted' $Status
- * @property string $OfferExtendedStatus
- * @property string $CreatedDate
- * @property string $AvailabilityEndDate
+ * @property string|null $Name
+ * @property string|null $ProductId
+ * @property string|null $ProductName
+ * @property string|null $ManufacturerAccountId
+ * @property string|null $ManufacturerLegalName
+ * @property string|null $ResellerAccountID
+ * @property string|null $ResellerLegalName
+ * @property 'Draft'|'Active'|'Restricted'|null $Status
+ * @property string|null $OfferExtendedStatus
+ * @property string|null $CreatedDate
+ * @property string|null $AvailabilityEndDate
  */
 class ResaleAuthorizationSummary extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     ProductId?: string,
-     *     ProductName?: string,
-     *     ManufacturerAccountId?: string,
-     *     ManufacturerLegalName?: string,
-     *     ResellerAccountID?: string,
-     *     ResellerLegalName?: string,
-     *     Status?: 'Draft'|'Active'|'Restricted',
-     *     OfferExtendedStatus?: string,
-     *     CreatedDate?: string,
-     *     AvailabilityEndDate?: string
+     *     Name?: string|null,
+     *     ProductId?: string|null,
+     *     ProductName?: string|null,
+     *     ManufacturerAccountId?: string|null,
+     *     ManufacturerLegalName?: string|null,
+     *     ResellerAccountID?: string|null,
+     *     ResellerLegalName?: string|null,
+     *     Status?: 'Draft'|'Active'|'Restricted'|null,
+     *     OfferExtendedStatus?: string|null,
+     *     CreatedDate?: string|null,
+     *     AvailabilityEndDate?: string|null
      * } $args
      */
     public function __construct(array $args = [])

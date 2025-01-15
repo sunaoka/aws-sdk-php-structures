@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\CreateUserPoolDomain;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $ManagedLoginVersion
- * @property string $CloudFrontDomain
+ * @property int|null $ManagedLoginVersion
+ * @property string|null $CloudFrontDomain
  */
 class CreateUserPoolDomainResponse extends Response
 {

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $bucketName
- * @property Shapes\AccessRules $accessRules
- * @property string $versioning
- * @property list<string> $readonlyAccessAccounts
- * @property Shapes\BucketAccessLogConfig $accessLogConfig
+ * @property Shapes\AccessRules|null $accessRules
+ * @property string|null $versioning
+ * @property list<string>|null $readonlyAccessAccounts
+ * @property Shapes\BucketAccessLogConfig|null $accessLogConfig
  */
 class UpdateBucketRequest extends Request
 {
     /**
      * @param array{
      *     bucketName: string,
-     *     accessRules?: Shapes\AccessRules,
-     *     versioning?: string,
-     *     readonlyAccessAccounts?: list<string>,
-     *     accessLogConfig?: Shapes\BucketAccessLogConfig
+     *     accessRules?: Shapes\AccessRules|null,
+     *     versioning?: string|null,
+     *     readonlyAccessAccounts?: list<string>|null,
+     *     accessLogConfig?: Shapes\BucketAccessLogConfig|null
      * } $args
      */
     public function __construct(array $args)

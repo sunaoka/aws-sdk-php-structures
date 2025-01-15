@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Macie2\TestCustomDataIdentifier;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ignoreWords
- * @property list<string> $keywords
- * @property int $maximumMatchDistance
+ * @property list<string>|null $ignoreWords
+ * @property list<string>|null $keywords
+ * @property int|null $maximumMatchDistance
  * @property string $regex
  * @property string $sampleText
  */
@@ -15,9 +15,9 @@ class TestCustomDataIdentifierRequest extends Request
 {
     /**
      * @param array{
-     *     ignoreWords?: list<string>,
-     *     keywords?: list<string>,
-     *     maximumMatchDistance?: int,
+     *     ignoreWords?: list<string>|null,
+     *     keywords?: list<string>|null,
+     *     maximumMatchDistance?: int|null,
      *     regex: string,
      *     sampleText: string
      * } $args

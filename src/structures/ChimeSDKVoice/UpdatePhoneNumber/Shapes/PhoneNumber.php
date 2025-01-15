@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\UpdatePhoneNumber\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PhoneNumberId
- * @property string $E164PhoneNumber
- * @property string $Country
- * @property 'Local'|'TollFree' $Type
- * @property 'VoiceConnector'|'SipMediaApplicationDialIn' $ProductType
- * @property 'Cancelled'|'PortinCancelRequested'|'PortinInProgress'|'AcquireInProgress'|'AcquireFailed'|'Unassigned'|'Assigned'|'ReleaseInProgress'|'DeleteInProgress'|'ReleaseFailed'|'DeleteFailed' $Status
- * @property PhoneNumberCapabilities $Capabilities
- * @property list<PhoneNumberAssociation> $Associations
- * @property string $CallingName
- * @property 'Unassigned'|'UpdateInProgress'|'UpdateSucceeded'|'UpdateFailed' $CallingNameStatus
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
- * @property \Aws\Api\DateTimeResult $DeletionTimestamp
- * @property string $OrderId
- * @property string $Name
+ * @property string|null $PhoneNumberId
+ * @property string|null $E164PhoneNumber
+ * @property string|null $Country
+ * @property 'Local'|'TollFree'|null $Type
+ * @property 'VoiceConnector'|'SipMediaApplicationDialIn'|null $ProductType
+ * @property 'Cancelled'|'PortinCancelRequested'|'PortinInProgress'|'AcquireInProgress'|'AcquireFailed'|'Unassigned'|'Assigned'|'ReleaseInProgress'|'DeleteInProgress'|'ReleaseFailed'|'DeleteFailed'|null $Status
+ * @property PhoneNumberCapabilities|null $Capabilities
+ * @property list<PhoneNumberAssociation>|null $Associations
+ * @property string|null $CallingName
+ * @property 'Unassigned'|'UpdateInProgress'|'UpdateSucceeded'|'UpdateFailed'|null $CallingNameStatus
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $DeletionTimestamp
+ * @property string|null $OrderId
+ * @property string|null $Name
  */
 class PhoneNumber extends Shape
 {
     /**
      * @param array{
-     *     PhoneNumberId?: string,
-     *     E164PhoneNumber?: string,
-     *     Country?: string,
-     *     Type?: 'Local'|'TollFree',
-     *     ProductType?: 'VoiceConnector'|'SipMediaApplicationDialIn',
-     *     Status?: 'Cancelled'|'PortinCancelRequested'|'PortinInProgress'|'AcquireInProgress'|'AcquireFailed'|'Unassigned'|'Assigned'|'ReleaseInProgress'|'DeleteInProgress'|'ReleaseFailed'|'DeleteFailed',
-     *     Capabilities?: PhoneNumberCapabilities,
-     *     Associations?: list<PhoneNumberAssociation>,
-     *     CallingName?: string,
-     *     CallingNameStatus?: 'Unassigned'|'UpdateInProgress'|'UpdateSucceeded'|'UpdateFailed',
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     DeletionTimestamp?: \Aws\Api\DateTimeResult,
-     *     OrderId?: string,
-     *     Name?: string
+     *     PhoneNumberId?: string|null,
+     *     E164PhoneNumber?: string|null,
+     *     Country?: string|null,
+     *     Type?: 'Local'|'TollFree'|null,
+     *     ProductType?: 'VoiceConnector'|'SipMediaApplicationDialIn'|null,
+     *     Status?: 'Cancelled'|'PortinCancelRequested'|'PortinInProgress'|'AcquireInProgress'|'AcquireFailed'|'Unassigned'|'Assigned'|'ReleaseInProgress'|'DeleteInProgress'|'ReleaseFailed'|'DeleteFailed'|null,
+     *     Capabilities?: PhoneNumberCapabilities|null,
+     *     Associations?: list<PhoneNumberAssociation>|null,
+     *     CallingName?: string|null,
+     *     CallingNameStatus?: 'Unassigned'|'UpdateInProgress'|'UpdateSucceeded'|'UpdateFailed'|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     DeletionTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     OrderId?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

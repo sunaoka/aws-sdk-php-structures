@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Days
- * @property string $StorageClass
+ * @property int|null $Days
+ * @property string|null $StorageClass
  */
 class AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetails extends Shape
 {
     /**
      * @param array{
-     *     Days?: int,
-     *     StorageClass?: string
+     *     Days?: int|null,
+     *     StorageClass?: string|null
      * } $args
      */
     public function __construct(array $args = [])

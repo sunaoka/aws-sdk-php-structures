@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\DynamoDb\ExportTableToPointInTime\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ExportArn
- * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED' $ExportStatus
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $ExportManifest
- * @property string $TableArn
- * @property string $TableId
- * @property \Aws\Api\DateTimeResult $ExportTime
- * @property string $ClientToken
- * @property string $S3Bucket
- * @property string $S3BucketOwner
- * @property string $S3Prefix
- * @property 'AES256'|'KMS' $S3SseAlgorithm
- * @property string $S3SseKmsKeyId
- * @property string $FailureCode
- * @property string $FailureMessage
- * @property 'DYNAMODB_JSON'|'ION' $ExportFormat
- * @property int<0, max> $BilledSizeBytes
- * @property int<0, max> $ItemCount
- * @property 'FULL_EXPORT'|'INCREMENTAL_EXPORT' $ExportType
- * @property IncrementalExportSpecification $IncrementalExportSpecification
+ * @property string|null $ExportArn
+ * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED'|null $ExportStatus
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $ExportManifest
+ * @property string|null $TableArn
+ * @property string|null $TableId
+ * @property \Aws\Api\DateTimeResult|null $ExportTime
+ * @property string|null $ClientToken
+ * @property string|null $S3Bucket
+ * @property string|null $S3BucketOwner
+ * @property string|null $S3Prefix
+ * @property 'AES256'|'KMS'|null $S3SseAlgorithm
+ * @property string|null $S3SseKmsKeyId
+ * @property string|null $FailureCode
+ * @property string|null $FailureMessage
+ * @property 'DYNAMODB_JSON'|'ION'|null $ExportFormat
+ * @property int<0, max>|null $BilledSizeBytes
+ * @property int<0, max>|null $ItemCount
+ * @property 'FULL_EXPORT'|'INCREMENTAL_EXPORT'|null $ExportType
+ * @property IncrementalExportSpecification|null $IncrementalExportSpecification
  */
 class ExportDescription extends Shape
 {
     /**
      * @param array{
-     *     ExportArn?: string,
-     *     ExportStatus?: 'IN_PROGRESS'|'COMPLETED'|'FAILED',
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     ExportManifest?: string,
-     *     TableArn?: string,
-     *     TableId?: string,
-     *     ExportTime?: \Aws\Api\DateTimeResult,
-     *     ClientToken?: string,
-     *     S3Bucket?: string,
-     *     S3BucketOwner?: string,
-     *     S3Prefix?: string,
-     *     S3SseAlgorithm?: 'AES256'|'KMS',
-     *     S3SseKmsKeyId?: string,
-     *     FailureCode?: string,
-     *     FailureMessage?: string,
-     *     ExportFormat?: 'DYNAMODB_JSON'|'ION',
-     *     BilledSizeBytes?: int<0, max>,
-     *     ItemCount?: int<0, max>,
-     *     ExportType?: 'FULL_EXPORT'|'INCREMENTAL_EXPORT',
-     *     IncrementalExportSpecification?: IncrementalExportSpecification
+     *     ExportArn?: string|null,
+     *     ExportStatus?: 'IN_PROGRESS'|'COMPLETED'|'FAILED'|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     ExportManifest?: string|null,
+     *     TableArn?: string|null,
+     *     TableId?: string|null,
+     *     ExportTime?: \Aws\Api\DateTimeResult|null,
+     *     ClientToken?: string|null,
+     *     S3Bucket?: string|null,
+     *     S3BucketOwner?: string|null,
+     *     S3Prefix?: string|null,
+     *     S3SseAlgorithm?: 'AES256'|'KMS'|null,
+     *     S3SseKmsKeyId?: string|null,
+     *     FailureCode?: string|null,
+     *     FailureMessage?: string|null,
+     *     ExportFormat?: 'DYNAMODB_JSON'|'ION'|null,
+     *     BilledSizeBytes?: int<0, max>|null,
+     *     ItemCount?: int<0, max>|null,
+     *     ExportType?: 'FULL_EXPORT'|'INCREMENTAL_EXPORT'|null,
+     *     IncrementalExportSpecification?: IncrementalExportSpecification|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DAX\DescribeEvents;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SourceName
- * @property 'CLUSTER'|'PARAMETER_GROUP'|'SUBNET_GROUP' $SourceType
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property int $Duration
- * @property int $MaxResults
- * @property string $NextToken
+ * @property string|null $SourceName
+ * @property 'CLUSTER'|'PARAMETER_GROUP'|'SUBNET_GROUP'|null $SourceType
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property int|null $Duration
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeEventsRequest extends Request
 {
     /**
      * @param array{
-     *     SourceName?: string,
-     *     SourceType?: 'CLUSTER'|'PARAMETER_GROUP'|'SUBNET_GROUP',
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Duration?: int,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     SourceName?: string|null,
+     *     SourceType?: 'CLUSTER'|'PARAMETER_GROUP'|'SUBNET_GROUP'|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Duration?: int|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

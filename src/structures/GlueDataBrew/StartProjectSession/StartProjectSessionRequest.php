@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property bool $AssumeControl
+ * @property bool|null $AssumeControl
  */
 class StartProjectSessionRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     AssumeControl?: bool
+     *     AssumeControl?: bool|null
      * } $args
      */
     public function __construct(array $args)

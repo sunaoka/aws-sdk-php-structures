@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ModelCardArn
- * @property string $ModelCardName
- * @property int $ModelCardVersion
- * @property string $Content
- * @property 'Draft'|'PendingReview'|'Approved'|'Archived' $ModelCardStatus
- * @property ModelCardSecurityConfig $SecurityConfig
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property UserContext $CreatedBy
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property UserContext $LastModifiedBy
- * @property list<Tag> $Tags
- * @property string $ModelId
- * @property string $RiskRating
- * @property string $ModelPackageGroupName
+ * @property string|null $ModelCardArn
+ * @property string|null $ModelCardName
+ * @property int|null $ModelCardVersion
+ * @property string|null $Content
+ * @property 'Draft'|'PendingReview'|'Approved'|'Archived'|null $ModelCardStatus
+ * @property ModelCardSecurityConfig|null $SecurityConfig
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property UserContext|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property UserContext|null $LastModifiedBy
+ * @property list<Tag>|null $Tags
+ * @property string|null $ModelId
+ * @property string|null $RiskRating
+ * @property string|null $ModelPackageGroupName
  */
 class ModelCard extends Shape
 {
     /**
      * @param array{
-     *     ModelCardArn?: string,
-     *     ModelCardName?: string,
-     *     ModelCardVersion?: int,
-     *     Content?: string,
-     *     ModelCardStatus?: 'Draft'|'PendingReview'|'Approved'|'Archived',
-     *     SecurityConfig?: ModelCardSecurityConfig,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     CreatedBy?: UserContext,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedBy?: UserContext,
-     *     Tags?: list<Tag>,
-     *     ModelId?: string,
-     *     RiskRating?: string,
-     *     ModelPackageGroupName?: string
+     *     ModelCardArn?: string|null,
+     *     ModelCardName?: string|null,
+     *     ModelCardVersion?: int|null,
+     *     Content?: string|null,
+     *     ModelCardStatus?: 'Draft'|'PendingReview'|'Approved'|'Archived'|null,
+     *     SecurityConfig?: ModelCardSecurityConfig|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBy?: UserContext|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedBy?: UserContext|null,
+     *     Tags?: list<Tag>|null,
+     *     ModelId?: string|null,
+     *     RiskRating?: string|null,
+     *     ModelPackageGroupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

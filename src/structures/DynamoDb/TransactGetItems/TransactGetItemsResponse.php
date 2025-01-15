@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DynamoDb\TransactGetItems;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ConsumedCapacity> $ConsumedCapacity
- * @property list<Shapes\ItemResponse> $Responses
+ * @property list<Shapes\ConsumedCapacity>|null $ConsumedCapacity
+ * @property list<Shapes\ItemResponse>|null $Responses
  */
 class TransactGetItemsResponse extends Response
 {

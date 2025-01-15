@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkteamName
- * @property string $WorkforceName
+ * @property string|null $WorkforceName
  * @property list<Shapes\MemberDefinition> $MemberDefinitions
  * @property string $Description
- * @property Shapes\NotificationConfiguration $NotificationConfiguration
- * @property Shapes\WorkerAccessConfiguration $WorkerAccessConfiguration
- * @property list<Shapes\Tag> $Tags
+ * @property Shapes\NotificationConfiguration|null $NotificationConfiguration
+ * @property Shapes\WorkerAccessConfiguration|null $WorkerAccessConfiguration
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateWorkteamRequest extends Request
 {
     /**
      * @param array{
      *     WorkteamName: string,
-     *     WorkforceName?: string,
+     *     WorkforceName?: string|null,
      *     MemberDefinitions: list<Shapes\MemberDefinition>,
      *     Description: string,
-     *     NotificationConfiguration?: Shapes\NotificationConfiguration,
-     *     WorkerAccessConfiguration?: Shapes\WorkerAccessConfiguration,
-     *     Tags?: list<Shapes\Tag>
+     *     NotificationConfiguration?: Shapes\NotificationConfiguration|null,
+     *     WorkerAccessConfiguration?: Shapes\WorkerAccessConfiguration|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

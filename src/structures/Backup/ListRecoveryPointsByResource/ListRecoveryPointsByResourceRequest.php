@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceArn
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
- * @property bool $ManagedByAWSBackupOnly
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
+ * @property bool|null $ManagedByAWSBackupOnly
  */
 class ListRecoveryPointsByResourceRequest extends Request
 {
     /**
      * @param array{
      *     ResourceArn: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     ManagedByAWSBackupOnly?: bool
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     ManagedByAWSBackupOnly?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $status
- * @property Shapes\RefreshStatisticsIdMap $payload
+ * @property Shapes\RefreshStatisticsIdMap|null $payload
  */
 class ManagePropertygraphStatisticsResponse extends Response
 {

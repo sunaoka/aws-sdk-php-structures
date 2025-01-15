@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetApplicat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $branch
- * @property string $projectName
- * @property string $repository
- * @property string $versionControlType
+ * @property string|null $branch
+ * @property string|null $projectName
+ * @property string|null $repository
+ * @property string|null $versionControlType
  */
 class SourceCodeRepository extends Shape
 {
     /**
      * @param array{
-     *     branch?: string,
-     *     projectName?: string,
-     *     repository?: string,
-     *     versionControlType?: string
+     *     branch?: string|null,
+     *     projectName?: string|null,
+     *     repository?: string|null,
+     *     versionControlType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Appflow\CreateConnectorProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $instanceUrl
- * @property bool $isSandboxEnvironment
- * @property string $businessUnitId
+ * @property string|null $instanceUrl
+ * @property bool|null $isSandboxEnvironment
+ * @property string|null $businessUnitId
  */
 class PardotConnectorProfileProperties extends Shape
 {
     /**
      * @param array{
-     *     instanceUrl?: string,
-     *     isSandboxEnvironment?: bool,
-     *     businessUnitId?: string
+     *     instanceUrl?: string|null,
+     *     isSandboxEnvironment?: bool|null,
+     *     businessUnitId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

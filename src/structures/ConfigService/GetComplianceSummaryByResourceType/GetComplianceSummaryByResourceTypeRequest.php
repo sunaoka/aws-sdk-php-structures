@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetComplianceSummaryByResourceTyp
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ResourceTypes
+ * @property list<string>|null $ResourceTypes
  */
 class GetComplianceSummaryByResourceTypeRequest extends Request
 {
     /**
-     * @param array{ResourceTypes?: list<string>} $args
+     * @param array{ResourceTypes?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

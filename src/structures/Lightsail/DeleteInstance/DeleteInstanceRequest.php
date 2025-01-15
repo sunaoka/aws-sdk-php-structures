@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $instanceName
- * @property bool $forceDeleteAddOns
+ * @property bool|null $forceDeleteAddOns
  */
 class DeleteInstanceRequest extends Request
 {
     /**
      * @param array{
      *     instanceName: string,
-     *     forceDeleteAddOns?: bool
+     *     forceDeleteAddOns?: bool|null
      * } $args
      */
     public function __construct(array $args)

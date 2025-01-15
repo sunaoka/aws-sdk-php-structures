@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DescribeRouterConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $vendor
- * @property string $platform
- * @property string $software
- * @property string $xsltTemplateName
- * @property string $xsltTemplateNameForMacSec
- * @property string $routerTypeIdentifier
+ * @property string|null $vendor
+ * @property string|null $platform
+ * @property string|null $software
+ * @property string|null $xsltTemplateName
+ * @property string|null $xsltTemplateNameForMacSec
+ * @property string|null $routerTypeIdentifier
  */
 class RouterType extends Shape
 {
     /**
      * @param array{
-     *     vendor?: string,
-     *     platform?: string,
-     *     software?: string,
-     *     xsltTemplateName?: string,
-     *     xsltTemplateNameForMacSec?: string,
-     *     routerTypeIdentifier?: string
+     *     vendor?: string|null,
+     *     platform?: string|null,
+     *     software?: string|null,
+     *     xsltTemplateName?: string|null,
+     *     xsltTemplateNameForMacSec?: string|null,
+     *     routerTypeIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

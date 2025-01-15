@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $bucketName
  * @property string $prefix
- * @property DataIntegrationFlowS3Options $options
+ * @property DataIntegrationFlowS3Options|null $options
  */
 class DataIntegrationFlowS3SourceConfiguration extends Shape
 {
@@ -15,7 +15,7 @@ class DataIntegrationFlowS3SourceConfiguration extends Shape
      * @param array{
      *     bucketName: string,
      *     prefix: string,
-     *     options?: DataIntegrationFlowS3Options
+     *     options?: DataIntegrationFlowS3Options|null
      * } $args
      */
     public function __construct(array $args)

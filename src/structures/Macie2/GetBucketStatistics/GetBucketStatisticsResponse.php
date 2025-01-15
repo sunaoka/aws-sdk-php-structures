@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\Macie2\GetBucketStatistics;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $bucketCount
- * @property Shapes\BucketCountByEffectivePermission $bucketCountByEffectivePermission
- * @property Shapes\BucketCountByEncryptionType $bucketCountByEncryptionType
- * @property Shapes\BucketCountPolicyAllowsUnencryptedObjectUploads $bucketCountByObjectEncryptionRequirement
- * @property Shapes\BucketCountBySharedAccessType $bucketCountBySharedAccessType
- * @property Shapes\BucketStatisticsBySensitivity $bucketStatisticsBySensitivity
- * @property int $classifiableObjectCount
- * @property int $classifiableSizeInBytes
- * @property \Aws\Api\DateTimeResult $lastUpdated
- * @property int $objectCount
- * @property int $sizeInBytes
- * @property int $sizeInBytesCompressed
- * @property Shapes\ObjectLevelStatistics $unclassifiableObjectCount
- * @property Shapes\ObjectLevelStatistics $unclassifiableObjectSizeInBytes
+ * @property int|null $bucketCount
+ * @property Shapes\BucketCountByEffectivePermission|null $bucketCountByEffectivePermission
+ * @property Shapes\BucketCountByEncryptionType|null $bucketCountByEncryptionType
+ * @property Shapes\BucketCountPolicyAllowsUnencryptedObjectUploads|null $bucketCountByObjectEncryptionRequirement
+ * @property Shapes\BucketCountBySharedAccessType|null $bucketCountBySharedAccessType
+ * @property Shapes\BucketStatisticsBySensitivity|null $bucketStatisticsBySensitivity
+ * @property int|null $classifiableObjectCount
+ * @property int|null $classifiableSizeInBytes
+ * @property \Aws\Api\DateTimeResult|null $lastUpdated
+ * @property int|null $objectCount
+ * @property int|null $sizeInBytes
+ * @property int|null $sizeInBytesCompressed
+ * @property Shapes\ObjectLevelStatistics|null $unclassifiableObjectCount
+ * @property Shapes\ObjectLevelStatistics|null $unclassifiableObjectSizeInBytes
  */
 class GetBucketStatisticsResponse extends Response
 {

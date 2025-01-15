@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ArchiveContainerSettings $ContainerSettings
- * @property string $Extension
- * @property string $NameModifier
+ * @property string|null $Extension
+ * @property string|null $NameModifier
  */
 class ArchiveOutputSettings extends Shape
 {
     /**
      * @param array{
      *     ContainerSettings: ArchiveContainerSettings,
-     *     Extension?: string,
-     *     NameModifier?: string
+     *     Extension?: string|null,
+     *     NameModifier?: string|null
      * } $args
      */
     public function __construct(array $args)

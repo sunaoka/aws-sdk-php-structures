@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\GetIntegration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $policyName
- * @property OpenSearchResourceStatus $status
+ * @property string|null $policyName
+ * @property OpenSearchResourceStatus|null $status
  */
 class OpenSearchLifecyclePolicy extends Shape
 {
     /**
      * @param array{
-     *     policyName?: string,
-     *     status?: OpenSearchResourceStatus
+     *     policyName?: string|null,
+     *     status?: OpenSearchResourceStatus|null
      * } $args
      */
     public function __construct(array $args = [])

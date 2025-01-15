@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $ContactId
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property Shapes\ParticipantDetailsToAdd $ParticipantDetails
  */
 class CreateParticipantRequest extends Request
@@ -16,7 +16,7 @@ class CreateParticipantRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     ContactId: string,
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     ParticipantDetails: Shapes\ParticipantDetailsToAdd
      * } $args
      */

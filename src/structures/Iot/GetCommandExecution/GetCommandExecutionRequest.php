@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $executionId
  * @property string $targetArn
- * @property bool $includeResult
+ * @property bool|null $includeResult
  */
 class GetCommandExecutionRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetCommandExecutionRequest extends Request
      * @param array{
      *     executionId: string,
      *     targetArn: string,
-     *     includeResult?: bool
+     *     includeResult?: bool|null
      * } $args
      */
     public function __construct(array $args)

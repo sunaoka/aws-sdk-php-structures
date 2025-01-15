@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConstantInitializationVector
- * @property 'SAMPLE_AES'|'AES_CTR' $EncryptionMethod
- * @property 'INCLUDE'|'EXCLUDE' $InitializationVectorInManifest
- * @property SpekeKeyProviderCmaf $SpekeKeyProvider
- * @property StaticKeyProvider $StaticKeyProvider
- * @property 'SPEKE'|'STATIC_KEY' $Type
+ * @property string|null $ConstantInitializationVector
+ * @property 'SAMPLE_AES'|'AES_CTR'|null $EncryptionMethod
+ * @property 'INCLUDE'|'EXCLUDE'|null $InitializationVectorInManifest
+ * @property SpekeKeyProviderCmaf|null $SpekeKeyProvider
+ * @property StaticKeyProvider|null $StaticKeyProvider
+ * @property 'SPEKE'|'STATIC_KEY'|null $Type
  */
 class CmafEncryptionSettings extends Shape
 {
     /**
      * @param array{
-     *     ConstantInitializationVector?: string,
-     *     EncryptionMethod?: 'SAMPLE_AES'|'AES_CTR',
-     *     InitializationVectorInManifest?: 'INCLUDE'|'EXCLUDE',
-     *     SpekeKeyProvider?: SpekeKeyProviderCmaf,
-     *     StaticKeyProvider?: StaticKeyProvider,
-     *     Type?: 'SPEKE'|'STATIC_KEY'
+     *     ConstantInitializationVector?: string|null,
+     *     EncryptionMethod?: 'SAMPLE_AES'|'AES_CTR'|null,
+     *     InitializationVectorInManifest?: 'INCLUDE'|'EXCLUDE'|null,
+     *     SpekeKeyProvider?: SpekeKeyProviderCmaf|null,
+     *     StaticKeyProvider?: StaticKeyProvider|null,
+     *     Type?: 'SPEKE'|'STATIC_KEY'|null
      * } $args
      */
     public function __construct(array $args = [])

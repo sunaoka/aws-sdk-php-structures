@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property NotificationTargetActions $action
- * @property list<SMSConfiguration> $smsConfigurations
- * @property list<EmailConfiguration> $emailConfigurations
+ * @property list<SMSConfiguration>|null $smsConfigurations
+ * @property list<EmailConfiguration>|null $emailConfigurations
  */
 class NotificationAction extends Shape
 {
     /**
      * @param array{
      *     action: NotificationTargetActions,
-     *     smsConfigurations?: list<SMSConfiguration>,
-     *     emailConfigurations?: list<EmailConfiguration>
+     *     smsConfigurations?: list<SMSConfiguration>|null,
+     *     emailConfigurations?: list<EmailConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

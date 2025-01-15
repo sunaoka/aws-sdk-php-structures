@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\Converse\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $match
- * @property string $regex
+ * @property string|null $name
+ * @property string|null $match
+ * @property string|null $regex
  * @property 'ANONYMIZED'|'BLOCKED' $action
  */
 class GuardrailRegexFilter extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     match?: string,
-     *     regex?: string,
+     *     name?: string|null,
+     *     match?: string|null,
+     *     regex?: string|null,
      *     action: 'ANONYMIZED'|'BLOCKED'
      * } $args
      */

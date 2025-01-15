@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Omics\StartAnnotationImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $sep
- * @property string $encoding
- * @property string $quote
- * @property bool $quoteAll
- * @property string $escape
- * @property bool $escapeQuotes
- * @property string $comment
- * @property bool $header
- * @property string $lineSep
+ * @property string|null $sep
+ * @property string|null $encoding
+ * @property string|null $quote
+ * @property bool|null $quoteAll
+ * @property string|null $escape
+ * @property bool|null $escapeQuotes
+ * @property string|null $comment
+ * @property bool|null $header
+ * @property string|null $lineSep
  */
 class ReadOptions extends Shape
 {
     /**
      * @param array{
-     *     sep?: string,
-     *     encoding?: string,
-     *     quote?: string,
-     *     quoteAll?: bool,
-     *     escape?: string,
-     *     escapeQuotes?: bool,
-     *     comment?: string,
-     *     header?: bool,
-     *     lineSep?: string
+     *     sep?: string|null,
+     *     encoding?: string|null,
+     *     quote?: string|null,
+     *     quoteAll?: bool|null,
+     *     escape?: string|null,
+     *     escapeQuotes?: bool|null,
+     *     comment?: string|null,
+     *     header?: bool|null,
+     *     lineSep?: string|null
      * } $args
      */
     public function __construct(array $args = [])

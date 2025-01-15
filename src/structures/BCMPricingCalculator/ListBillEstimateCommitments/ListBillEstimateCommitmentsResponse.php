@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\ListBillEstimateCommitment
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\BillEstimateCommitmentSummary> $items
- * @property string $nextToken
+ * @property list<Shapes\BillEstimateCommitmentSummary>|null $items
+ * @property string|null $nextToken
  */
 class ListBillEstimateCommitmentsResponse extends Response
 {

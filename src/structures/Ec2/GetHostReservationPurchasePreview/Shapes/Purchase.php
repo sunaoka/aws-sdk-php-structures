@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\GetHostReservationPurchasePreview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'USD' $CurrencyCode
- * @property int $Duration
- * @property list<string> $HostIdSet
- * @property string $HostReservationId
- * @property string $HourlyPrice
- * @property string $InstanceFamily
- * @property 'AllUpfront'|'PartialUpfront'|'NoUpfront' $PaymentOption
- * @property string $UpfrontPrice
+ * @property 'USD'|null $CurrencyCode
+ * @property int|null $Duration
+ * @property list<string>|null $HostIdSet
+ * @property string|null $HostReservationId
+ * @property string|null $HourlyPrice
+ * @property string|null $InstanceFamily
+ * @property 'AllUpfront'|'PartialUpfront'|'NoUpfront'|null $PaymentOption
+ * @property string|null $UpfrontPrice
  */
 class Purchase extends Shape
 {
     /**
      * @param array{
-     *     CurrencyCode?: 'USD',
-     *     Duration?: int,
-     *     HostIdSet?: list<string>,
-     *     HostReservationId?: string,
-     *     HourlyPrice?: string,
-     *     InstanceFamily?: string,
-     *     PaymentOption?: 'AllUpfront'|'PartialUpfront'|'NoUpfront',
-     *     UpfrontPrice?: string
+     *     CurrencyCode?: 'USD'|null,
+     *     Duration?: int|null,
+     *     HostIdSet?: list<string>|null,
+     *     HostReservationId?: string|null,
+     *     HourlyPrice?: string|null,
+     *     InstanceFamily?: string|null,
+     *     PaymentOption?: 'AllUpfront'|'PartialUpfront'|'NoUpfront'|null,
+     *     UpfrontPrice?: string|null
      * } $args
      */
     public function __construct(array $args = [])

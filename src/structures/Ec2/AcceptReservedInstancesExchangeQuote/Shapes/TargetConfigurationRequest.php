@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\AcceptReservedInstancesExchangeQuote\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $InstanceCount
+ * @property int|null $InstanceCount
  * @property string $OfferingId
  */
 class TargetConfigurationRequest extends Shape
 {
     /**
      * @param array{
-     *     InstanceCount?: int,
+     *     InstanceCount?: int|null,
      *     OfferingId: string
      * } $args
      */

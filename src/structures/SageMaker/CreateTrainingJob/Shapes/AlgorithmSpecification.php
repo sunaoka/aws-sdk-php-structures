@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateTrainingJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TrainingImage
- * @property string $AlgorithmName
+ * @property string|null $TrainingImage
+ * @property string|null $AlgorithmName
  * @property 'Pipe'|'File'|'FastFile' $TrainingInputMode
- * @property list<MetricDefinition> $MetricDefinitions
- * @property bool $EnableSageMakerMetricsTimeSeries
- * @property list<string> $ContainerEntrypoint
- * @property list<string> $ContainerArguments
- * @property TrainingImageConfig $TrainingImageConfig
+ * @property list<MetricDefinition>|null $MetricDefinitions
+ * @property bool|null $EnableSageMakerMetricsTimeSeries
+ * @property list<string>|null $ContainerEntrypoint
+ * @property list<string>|null $ContainerArguments
+ * @property TrainingImageConfig|null $TrainingImageConfig
  */
 class AlgorithmSpecification extends Shape
 {
     /**
      * @param array{
-     *     TrainingImage?: string,
-     *     AlgorithmName?: string,
+     *     TrainingImage?: string|null,
+     *     AlgorithmName?: string|null,
      *     TrainingInputMode: 'Pipe'|'File'|'FastFile',
-     *     MetricDefinitions?: list<MetricDefinition>,
-     *     EnableSageMakerMetricsTimeSeries?: bool,
-     *     ContainerEntrypoint?: list<string>,
-     *     ContainerArguments?: list<string>,
-     *     TrainingImageConfig?: TrainingImageConfig
+     *     MetricDefinitions?: list<MetricDefinition>|null,
+     *     EnableSageMakerMetricsTimeSeries?: bool|null,
+     *     ContainerEntrypoint?: list<string>|null,
+     *     ContainerArguments?: list<string>|null,
+     *     TrainingImageConfig?: TrainingImageConfig|null
      * } $args
      */
     public function __construct(array $args)

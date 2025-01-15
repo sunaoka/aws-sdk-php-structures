@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\TrustedAdvisor\ListOrganizationRecommendationRe
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
+ * @property string|null $nextToken
  * @property list<Shapes\OrganizationRecommendationResourceSummary> $organizationRecommendationResourceSummaries
  */
 class ListOrganizationRecommendationResourcesResponse extends Response

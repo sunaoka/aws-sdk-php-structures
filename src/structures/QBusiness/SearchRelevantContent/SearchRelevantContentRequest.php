@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $queryText
  * @property Shapes\ContentSource $contentSource
- * @property Shapes\AttributeFilter $attributeFilter
- * @property int $maxResults
- * @property string $nextToken
+ * @property Shapes\AttributeFilter|null $attributeFilter
+ * @property int|null $maxResults
+ * @property string|null $nextToken
  */
 class SearchRelevantContentRequest extends Request
 {
@@ -19,9 +19,9 @@ class SearchRelevantContentRequest extends Request
      *     applicationId: string,
      *     queryText: string,
      *     contentSource: Shapes\ContentSource,
-     *     attributeFilter?: Shapes\AttributeFilter,
-     *     maxResults?: int,
-     *     nextToken?: string
+     *     attributeFilter?: Shapes\AttributeFilter|null,
+     *     maxResults?: int|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property 'running'|'succeeded'|'failed' $status
- * @property list<Shapes\S3Location> $outputFiles
- * @property string $message
+ * @property list<Shapes\S3Location>|null $outputFiles
+ * @property string|null $message
  */
 class GetTransformerJobResponse extends Response
 {

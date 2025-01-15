@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Backup\ListFrameworks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FrameworkName
- * @property string $FrameworkArn
- * @property string $FrameworkDescription
- * @property int $NumberOfControls
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $DeploymentStatus
+ * @property string|null $FrameworkName
+ * @property string|null $FrameworkArn
+ * @property string|null $FrameworkDescription
+ * @property int|null $NumberOfControls
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $DeploymentStatus
  */
 class Framework extends Shape
 {
     /**
      * @param array{
-     *     FrameworkName?: string,
-     *     FrameworkArn?: string,
-     *     FrameworkDescription?: string,
-     *     NumberOfControls?: int,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     DeploymentStatus?: string
+     *     FrameworkName?: string|null,
+     *     FrameworkArn?: string|null,
+     *     FrameworkDescription?: string|null,
+     *     NumberOfControls?: int|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     DeploymentStatus?: string|null
      * } $args
      */
     public function __construct(array $args = [])

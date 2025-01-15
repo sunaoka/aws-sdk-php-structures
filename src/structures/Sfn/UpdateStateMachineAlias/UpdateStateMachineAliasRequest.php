@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $stateMachineAliasArn
- * @property string $description
- * @property list<Shapes\RoutingConfigurationListItem> $routingConfiguration
+ * @property string|null $description
+ * @property list<Shapes\RoutingConfigurationListItem>|null $routingConfiguration
  */
 class UpdateStateMachineAliasRequest extends Request
 {
     /**
      * @param array{
      *     stateMachineAliasArn: string,
-     *     description?: string,
-     *     routingConfiguration?: list<Shapes\RoutingConfigurationListItem>
+     *     description?: string|null,
+     *     routingConfiguration?: list<Shapes\RoutingConfigurationListItem>|null
      * } $args
      */
     public function __construct(array $args)

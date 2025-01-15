@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTEventsData\DescribeAlarm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $note
+ * @property string|null $note
  */
 class ResetActionConfiguration extends Shape
 {
     /**
-     * @param array{note?: string} $args
+     * @param array{note?: string|null} $args
      */
     public function __construct(array $args = [])
     {

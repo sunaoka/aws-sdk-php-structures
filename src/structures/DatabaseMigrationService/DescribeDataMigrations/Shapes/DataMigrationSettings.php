@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeDataMigrations
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NumberOfJobs
- * @property bool $CloudwatchLogsEnabled
- * @property string $SelectionRules
+ * @property int|null $NumberOfJobs
+ * @property bool|null $CloudwatchLogsEnabled
+ * @property string|null $SelectionRules
  */
 class DataMigrationSettings extends Shape
 {
     /**
      * @param array{
-     *     NumberOfJobs?: int,
-     *     CloudwatchLogsEnabled?: bool,
-     *     SelectionRules?: string
+     *     NumberOfJobs?: int|null,
+     *     CloudwatchLogsEnabled?: bool|null,
+     *     SelectionRules?: string|null
      * } $args
      */
     public function __construct(array $args = [])

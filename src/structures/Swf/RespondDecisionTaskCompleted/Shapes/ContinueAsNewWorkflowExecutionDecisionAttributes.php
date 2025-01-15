@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Swf\RespondDecisionTaskCompleted\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $input
- * @property string $executionStartToCloseTimeout
- * @property TaskList $taskList
- * @property string $taskPriority
- * @property string $taskStartToCloseTimeout
- * @property 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON' $childPolicy
- * @property list<string> $tagList
- * @property string $workflowTypeVersion
- * @property string $lambdaRole
+ * @property string|null $input
+ * @property string|null $executionStartToCloseTimeout
+ * @property TaskList|null $taskList
+ * @property string|null $taskPriority
+ * @property string|null $taskStartToCloseTimeout
+ * @property 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON'|null $childPolicy
+ * @property list<string>|null $tagList
+ * @property string|null $workflowTypeVersion
+ * @property string|null $lambdaRole
  */
 class ContinueAsNewWorkflowExecutionDecisionAttributes extends Shape
 {
     /**
      * @param array{
-     *     input?: string,
-     *     executionStartToCloseTimeout?: string,
-     *     taskList?: TaskList,
-     *     taskPriority?: string,
-     *     taskStartToCloseTimeout?: string,
-     *     childPolicy?: 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON',
-     *     tagList?: list<string>,
-     *     workflowTypeVersion?: string,
-     *     lambdaRole?: string
+     *     input?: string|null,
+     *     executionStartToCloseTimeout?: string|null,
+     *     taskList?: TaskList|null,
+     *     taskPriority?: string|null,
+     *     taskStartToCloseTimeout?: string|null,
+     *     childPolicy?: 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON'|null,
+     *     tagList?: list<string>|null,
+     *     workflowTypeVersion?: string|null,
+     *     lambdaRole?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property 'NotStarted'|'InProgress'|'Completed'|'Failed' $Status
- * @property string $FailureReason
+ * @property string|null $FailureReason
  */
 class ModelPackageStatusItem extends Shape
 {
@@ -15,7 +15,7 @@ class ModelPackageStatusItem extends Shape
      * @param array{
      *     Name: string,
      *     Status: 'NotStarted'|'InProgress'|'Completed'|'Failed',
-     *     FailureReason?: string
+     *     FailureReason?: string|null
      * } $args
      */
     public function __construct(array $args)

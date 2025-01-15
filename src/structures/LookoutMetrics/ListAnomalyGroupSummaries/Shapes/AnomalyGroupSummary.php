@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\ListAnomalyGroupSummaries\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StartTime
- * @property string $EndTime
- * @property string $AnomalyGroupId
- * @property double $AnomalyGroupScore
- * @property string $PrimaryMetricName
+ * @property string|null $StartTime
+ * @property string|null $EndTime
+ * @property string|null $AnomalyGroupId
+ * @property double|null $AnomalyGroupScore
+ * @property string|null $PrimaryMetricName
  */
 class AnomalyGroupSummary extends Shape
 {
     /**
      * @param array{
-     *     StartTime?: string,
-     *     EndTime?: string,
-     *     AnomalyGroupId?: string,
-     *     AnomalyGroupScore?: double,
-     *     PrimaryMetricName?: string
+     *     StartTime?: string|null,
+     *     EndTime?: string|null,
+     *     AnomalyGroupId?: string|null,
+     *     AnomalyGroupScore?: double|null,
+     *     PrimaryMetricName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

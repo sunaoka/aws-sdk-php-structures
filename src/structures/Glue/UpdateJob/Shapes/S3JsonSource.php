@@ -7,17 +7,17 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property list<string> $Paths
- * @property 'gzip'|'bzip2' $CompressionType
- * @property list<string> $Exclusions
- * @property string $GroupSize
- * @property string $GroupFiles
- * @property bool $Recurse
- * @property int<0, max> $MaxBand
- * @property int<0, max> $MaxFilesInBand
- * @property S3DirectSourceAdditionalOptions $AdditionalOptions
- * @property string $JsonPath
- * @property bool $Multiline
- * @property list<GlueSchema> $OutputSchemas
+ * @property 'gzip'|'bzip2'|null $CompressionType
+ * @property list<string>|null $Exclusions
+ * @property string|null $GroupSize
+ * @property string|null $GroupFiles
+ * @property bool|null $Recurse
+ * @property int<0, max>|null $MaxBand
+ * @property int<0, max>|null $MaxFilesInBand
+ * @property S3DirectSourceAdditionalOptions|null $AdditionalOptions
+ * @property string|null $JsonPath
+ * @property bool|null $Multiline
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class S3JsonSource extends Shape
 {
@@ -25,17 +25,17 @@ class S3JsonSource extends Shape
      * @param array{
      *     Name: string,
      *     Paths: list<string>,
-     *     CompressionType?: 'gzip'|'bzip2',
-     *     Exclusions?: list<string>,
-     *     GroupSize?: string,
-     *     GroupFiles?: string,
-     *     Recurse?: bool,
-     *     MaxBand?: int<0, max>,
-     *     MaxFilesInBand?: int<0, max>,
-     *     AdditionalOptions?: S3DirectSourceAdditionalOptions,
-     *     JsonPath?: string,
-     *     Multiline?: bool,
-     *     OutputSchemas?: list<GlueSchema>
+     *     CompressionType?: 'gzip'|'bzip2'|null,
+     *     Exclusions?: list<string>|null,
+     *     GroupSize?: string|null,
+     *     GroupFiles?: string|null,
+     *     Recurse?: bool|null,
+     *     MaxBand?: int<0, max>|null,
+     *     MaxFilesInBand?: int<0, max>|null,
+     *     AdditionalOptions?: S3DirectSourceAdditionalOptions|null,
+     *     JsonPath?: string|null,
+     *     Multiline?: bool|null,
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property bool $WithDecryption
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
+ * @property bool|null $WithDecryption
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
  */
 class GetParameterHistoryRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     WithDecryption?: bool,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string
+     *     WithDecryption?: bool|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

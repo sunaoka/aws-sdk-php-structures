@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListWorkteams\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Enabled'|'Disabled' $SourceIp
- * @property 'Enabled'|'Disabled' $VpcSourceIp
+ * @property 'Enabled'|'Disabled'|null $SourceIp
+ * @property 'Enabled'|'Disabled'|null $VpcSourceIp
  */
 class IamPolicyConstraints extends Shape
 {
     /**
      * @param array{
-     *     SourceIp?: 'Enabled'|'Disabled',
-     *     VpcSourceIp?: 'Enabled'|'Disabled'
+     *     SourceIp?: 'Enabled'|'Disabled'|null,
+     *     VpcSourceIp?: 'Enabled'|'Disabled'|null
      * } $args
      */
     public function __construct(array $args = [])

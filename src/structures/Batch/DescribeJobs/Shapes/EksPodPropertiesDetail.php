@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $serviceAccountName
- * @property bool $hostNetwork
- * @property string $dnsPolicy
- * @property list<ImagePullSecret> $imagePullSecrets
- * @property list<EksContainerDetail> $containers
- * @property list<EksContainerDetail> $initContainers
- * @property list<EksVolume> $volumes
- * @property string $podName
- * @property string $nodeName
- * @property EksMetadata $metadata
- * @property bool $shareProcessNamespace
+ * @property string|null $serviceAccountName
+ * @property bool|null $hostNetwork
+ * @property string|null $dnsPolicy
+ * @property list<ImagePullSecret>|null $imagePullSecrets
+ * @property list<EksContainerDetail>|null $containers
+ * @property list<EksContainerDetail>|null $initContainers
+ * @property list<EksVolume>|null $volumes
+ * @property string|null $podName
+ * @property string|null $nodeName
+ * @property EksMetadata|null $metadata
+ * @property bool|null $shareProcessNamespace
  */
 class EksPodPropertiesDetail extends Shape
 {
     /**
      * @param array{
-     *     serviceAccountName?: string,
-     *     hostNetwork?: bool,
-     *     dnsPolicy?: string,
-     *     imagePullSecrets?: list<ImagePullSecret>,
-     *     containers?: list<EksContainerDetail>,
-     *     initContainers?: list<EksContainerDetail>,
-     *     volumes?: list<EksVolume>,
-     *     podName?: string,
-     *     nodeName?: string,
-     *     metadata?: EksMetadata,
-     *     shareProcessNamespace?: bool
+     *     serviceAccountName?: string|null,
+     *     hostNetwork?: bool|null,
+     *     dnsPolicy?: string|null,
+     *     imagePullSecrets?: list<ImagePullSecret>|null,
+     *     containers?: list<EksContainerDetail>|null,
+     *     initContainers?: list<EksContainerDetail>|null,
+     *     volumes?: list<EksVolume>|null,
+     *     podName?: string|null,
+     *     nodeName?: string|null,
+     *     metadata?: EksMetadata|null,
+     *     shareProcessNamespace?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

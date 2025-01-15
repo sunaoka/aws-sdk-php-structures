@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $clusterName
  * @property list<Shapes\EncryptionConfig> $encryptionConfig
- * @property string $clientRequestToken
+ * @property string|null $clientRequestToken
  */
 class AssociateEncryptionConfigRequest extends Request
 {
@@ -15,7 +15,7 @@ class AssociateEncryptionConfigRequest extends Request
      * @param array{
      *     clusterName: string,
      *     encryptionConfig: list<Shapes\EncryptionConfig>,
-     *     clientRequestToken?: string
+     *     clientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

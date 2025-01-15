@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $loadBalancerName
  * @property string $certificateName
  * @property string $certificateDomainName
- * @property list<string> $certificateAlternativeNames
- * @property list<Shapes\Tag> $tags
+ * @property list<string>|null $certificateAlternativeNames
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateLoadBalancerTlsCertificateRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateLoadBalancerTlsCertificateRequest extends Request
      *     loadBalancerName: string,
      *     certificateName: string,
      *     certificateDomainName: string,
-     *     certificateAlternativeNames?: list<string>,
-     *     tags?: list<Shapes\Tag>
+     *     certificateAlternativeNames?: list<string>|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

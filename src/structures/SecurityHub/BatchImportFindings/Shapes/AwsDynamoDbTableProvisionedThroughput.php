@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LastDecreaseDateTime
- * @property string $LastIncreaseDateTime
- * @property int $NumberOfDecreasesToday
- * @property int $ReadCapacityUnits
- * @property int $WriteCapacityUnits
+ * @property string|null $LastDecreaseDateTime
+ * @property string|null $LastIncreaseDateTime
+ * @property int|null $NumberOfDecreasesToday
+ * @property int|null $ReadCapacityUnits
+ * @property int|null $WriteCapacityUnits
  */
 class AwsDynamoDbTableProvisionedThroughput extends Shape
 {
     /**
      * @param array{
-     *     LastDecreaseDateTime?: string,
-     *     LastIncreaseDateTime?: string,
-     *     NumberOfDecreasesToday?: int,
-     *     ReadCapacityUnits?: int,
-     *     WriteCapacityUnits?: int
+     *     LastDecreaseDateTime?: string|null,
+     *     LastIncreaseDateTime?: string|null,
+     *     NumberOfDecreasesToday?: int|null,
+     *     ReadCapacityUnits?: int|null,
+     *     WriteCapacityUnits?: int|null
      * } $args
      */
     public function __construct(array $args = [])

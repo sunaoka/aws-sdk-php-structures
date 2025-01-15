@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DatasetName
- * @property Shapes\DatasetSchema $DatasetSchema
- * @property string $ServerSideKmsKeyId
+ * @property Shapes\DatasetSchema|null $DatasetSchema
+ * @property string|null $ServerSideKmsKeyId
  * @property string $ClientToken
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateDatasetRequest extends Request
 {
     /**
      * @param array{
      *     DatasetName: string,
-     *     DatasetSchema?: Shapes\DatasetSchema,
-     *     ServerSideKmsKeyId?: string,
+     *     DatasetSchema?: Shapes\DatasetSchema|null,
+     *     ServerSideKmsKeyId?: string|null,
      *     ClientToken: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $Quantity
- * @property list<CacheBehavior> $Items
+ * @property list<CacheBehavior>|null $Items
  */
 class CacheBehaviors extends Shape
 {
     /**
      * @param array{
      *     Quantity: int,
-     *     Items?: list<CacheBehavior>
+     *     Items?: list<CacheBehavior>|null
      * } $args
      */
     public function __construct(array $args)

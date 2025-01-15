@@ -5,79 +5,79 @@ namespace Sunaoka\Aws\Structures\Emr\DescribeCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property ClusterStatus $Status
- * @property Ec2InstanceAttributes $Ec2InstanceAttributes
- * @property 'INSTANCE_FLEET'|'INSTANCE_GROUP' $InstanceCollectionType
- * @property string $LogUri
- * @property string $LogEncryptionKmsKeyId
- * @property string $RequestedAmiVersion
- * @property string $RunningAmiVersion
- * @property string $ReleaseLabel
- * @property bool $AutoTerminate
- * @property bool $TerminationProtected
- * @property bool $UnhealthyNodeReplacement
- * @property bool $VisibleToAllUsers
- * @property list<Application> $Applications
- * @property list<Tag> $Tags
- * @property string $ServiceRole
- * @property int $NormalizedInstanceHours
- * @property string $MasterPublicDnsName
- * @property list<Configuration> $Configurations
- * @property string $SecurityConfiguration
- * @property string $AutoScalingRole
- * @property 'TERMINATE_AT_INSTANCE_HOUR'|'TERMINATE_AT_TASK_COMPLETION' $ScaleDownBehavior
- * @property string $CustomAmiId
- * @property int $EbsRootVolumeSize
- * @property 'SECURITY'|'NONE' $RepoUpgradeOnBoot
- * @property KerberosAttributes $KerberosAttributes
- * @property string $ClusterArn
- * @property string $OutpostArn
- * @property int $StepConcurrencyLevel
- * @property list<PlacementGroupConfig> $PlacementGroups
- * @property string $OSReleaseLabel
- * @property int $EbsRootVolumeIops
- * @property int $EbsRootVolumeThroughput
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property ClusterStatus|null $Status
+ * @property Ec2InstanceAttributes|null $Ec2InstanceAttributes
+ * @property 'INSTANCE_FLEET'|'INSTANCE_GROUP'|null $InstanceCollectionType
+ * @property string|null $LogUri
+ * @property string|null $LogEncryptionKmsKeyId
+ * @property string|null $RequestedAmiVersion
+ * @property string|null $RunningAmiVersion
+ * @property string|null $ReleaseLabel
+ * @property bool|null $AutoTerminate
+ * @property bool|null $TerminationProtected
+ * @property bool|null $UnhealthyNodeReplacement
+ * @property bool|null $VisibleToAllUsers
+ * @property list<Application>|null $Applications
+ * @property list<Tag>|null $Tags
+ * @property string|null $ServiceRole
+ * @property int|null $NormalizedInstanceHours
+ * @property string|null $MasterPublicDnsName
+ * @property list<Configuration>|null $Configurations
+ * @property string|null $SecurityConfiguration
+ * @property string|null $AutoScalingRole
+ * @property 'TERMINATE_AT_INSTANCE_HOUR'|'TERMINATE_AT_TASK_COMPLETION'|null $ScaleDownBehavior
+ * @property string|null $CustomAmiId
+ * @property int|null $EbsRootVolumeSize
+ * @property 'SECURITY'|'NONE'|null $RepoUpgradeOnBoot
+ * @property KerberosAttributes|null $KerberosAttributes
+ * @property string|null $ClusterArn
+ * @property string|null $OutpostArn
+ * @property int|null $StepConcurrencyLevel
+ * @property list<PlacementGroupConfig>|null $PlacementGroups
+ * @property string|null $OSReleaseLabel
+ * @property int|null $EbsRootVolumeIops
+ * @property int|null $EbsRootVolumeThroughput
  */
 class Cluster extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     Status?: ClusterStatus,
-     *     Ec2InstanceAttributes?: Ec2InstanceAttributes,
-     *     InstanceCollectionType?: 'INSTANCE_FLEET'|'INSTANCE_GROUP',
-     *     LogUri?: string,
-     *     LogEncryptionKmsKeyId?: string,
-     *     RequestedAmiVersion?: string,
-     *     RunningAmiVersion?: string,
-     *     ReleaseLabel?: string,
-     *     AutoTerminate?: bool,
-     *     TerminationProtected?: bool,
-     *     UnhealthyNodeReplacement?: bool,
-     *     VisibleToAllUsers?: bool,
-     *     Applications?: list<Application>,
-     *     Tags?: list<Tag>,
-     *     ServiceRole?: string,
-     *     NormalizedInstanceHours?: int,
-     *     MasterPublicDnsName?: string,
-     *     Configurations?: list<Configuration>,
-     *     SecurityConfiguration?: string,
-     *     AutoScalingRole?: string,
-     *     ScaleDownBehavior?: 'TERMINATE_AT_INSTANCE_HOUR'|'TERMINATE_AT_TASK_COMPLETION',
-     *     CustomAmiId?: string,
-     *     EbsRootVolumeSize?: int,
-     *     RepoUpgradeOnBoot?: 'SECURITY'|'NONE',
-     *     KerberosAttributes?: KerberosAttributes,
-     *     ClusterArn?: string,
-     *     OutpostArn?: string,
-     *     StepConcurrencyLevel?: int,
-     *     PlacementGroups?: list<PlacementGroupConfig>,
-     *     OSReleaseLabel?: string,
-     *     EbsRootVolumeIops?: int,
-     *     EbsRootVolumeThroughput?: int
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Status?: ClusterStatus|null,
+     *     Ec2InstanceAttributes?: Ec2InstanceAttributes|null,
+     *     InstanceCollectionType?: 'INSTANCE_FLEET'|'INSTANCE_GROUP'|null,
+     *     LogUri?: string|null,
+     *     LogEncryptionKmsKeyId?: string|null,
+     *     RequestedAmiVersion?: string|null,
+     *     RunningAmiVersion?: string|null,
+     *     ReleaseLabel?: string|null,
+     *     AutoTerminate?: bool|null,
+     *     TerminationProtected?: bool|null,
+     *     UnhealthyNodeReplacement?: bool|null,
+     *     VisibleToAllUsers?: bool|null,
+     *     Applications?: list<Application>|null,
+     *     Tags?: list<Tag>|null,
+     *     ServiceRole?: string|null,
+     *     NormalizedInstanceHours?: int|null,
+     *     MasterPublicDnsName?: string|null,
+     *     Configurations?: list<Configuration>|null,
+     *     SecurityConfiguration?: string|null,
+     *     AutoScalingRole?: string|null,
+     *     ScaleDownBehavior?: 'TERMINATE_AT_INSTANCE_HOUR'|'TERMINATE_AT_TASK_COMPLETION'|null,
+     *     CustomAmiId?: string|null,
+     *     EbsRootVolumeSize?: int|null,
+     *     RepoUpgradeOnBoot?: 'SECURITY'|'NONE'|null,
+     *     KerberosAttributes?: KerberosAttributes|null,
+     *     ClusterArn?: string|null,
+     *     OutpostArn?: string|null,
+     *     StepConcurrencyLevel?: int|null,
+     *     PlacementGroups?: list<PlacementGroupConfig>|null,
+     *     OSReleaseLabel?: string|null,
+     *     EbsRootVolumeIops?: int|null,
+     *     EbsRootVolumeThroughput?: int|null
      * } $args
      */
     public function __construct(array $args = [])

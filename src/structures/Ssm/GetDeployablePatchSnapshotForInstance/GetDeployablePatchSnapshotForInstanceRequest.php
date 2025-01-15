@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $SnapshotId
- * @property Shapes\BaselineOverride $BaselineOverride
+ * @property Shapes\BaselineOverride|null $BaselineOverride
  */
 class GetDeployablePatchSnapshotForInstanceRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetDeployablePatchSnapshotForInstanceRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     SnapshotId: string,
-     *     BaselineOverride?: Shapes\BaselineOverride
+     *     BaselineOverride?: Shapes\BaselineOverride|null
      * } $args
      */
     public function __construct(array $args)

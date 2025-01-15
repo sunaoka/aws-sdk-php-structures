@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\StartBatchDeleteCon
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $taskId
+ * @property string|null $taskId
  */
 class StartBatchDeleteConfigurationTaskResponse extends Response
 {

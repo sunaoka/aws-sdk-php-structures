@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\BatchDeleteRumMetricDefinitionsError> $Errors
- * @property list<string> $MetricDefinitionIds
+ * @property list<string>|null $MetricDefinitionIds
  */
 class BatchDeleteRumMetricDefinitionsResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupVaultName
- * @property string $Policy
+ * @property string|null $Policy
  */
 class PutBackupVaultAccessPolicyRequest extends Request
 {
     /**
      * @param array{
      *     BackupVaultName: string,
-     *     Policy?: string
+     *     Policy?: string|null
      * } $args
      */
     public function __construct(array $args)

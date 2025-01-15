@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\UpdateIdentityP
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FailureMessage
+ * @property string|null $FailureMessage
  * @property IdentityProvider $IdentityProvider
- * @property string $IdentityProviderArn
+ * @property string|null $IdentityProviderArn
  * @property string $Product
  * @property Settings $Settings
  * @property string $Status
@@ -16,9 +16,9 @@ class IdentityProviderSummary extends Shape
 {
     /**
      * @param array{
-     *     FailureMessage?: string,
+     *     FailureMessage?: string|null,
      *     IdentityProvider: IdentityProvider,
-     *     IdentityProviderArn?: string,
+     *     IdentityProviderArn?: string|null,
      *     Product: string,
      *     Settings: Settings,
      *     Status: string

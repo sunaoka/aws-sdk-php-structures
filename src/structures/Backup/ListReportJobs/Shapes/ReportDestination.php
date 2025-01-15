@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Backup\ListReportJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3BucketName
- * @property list<string> $S3Keys
+ * @property string|null $S3BucketName
+ * @property list<string>|null $S3Keys
  */
 class ReportDestination extends Shape
 {
     /**
      * @param array{
-     *     S3BucketName?: string,
-     *     S3Keys?: list<string>
+     *     S3BucketName?: string|null,
+     *     S3Keys?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

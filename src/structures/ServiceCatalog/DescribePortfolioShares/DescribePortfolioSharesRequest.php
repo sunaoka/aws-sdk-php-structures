@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $PortfolioId
  * @property 'ACCOUNT'|'ORGANIZATION'|'ORGANIZATIONAL_UNIT'|'ORGANIZATION_MEMBER_ACCOUNT' $Type
- * @property string $PageToken
- * @property int<0, 100> $PageSize
+ * @property string|null $PageToken
+ * @property int<0, 100>|null $PageSize
  */
 class DescribePortfolioSharesRequest extends Request
 {
@@ -16,8 +16,8 @@ class DescribePortfolioSharesRequest extends Request
      * @param array{
      *     PortfolioId: string,
      *     Type: 'ACCOUNT'|'ORGANIZATION'|'ORGANIZATIONAL_UNIT'|'ORGANIZATION_MEMBER_ACCOUNT',
-     *     PageToken?: string,
-     *     PageSize?: int<0, 100>
+     *     PageToken?: string|null,
+     *     PageSize?: int<0, 100>|null
      * } $args
      */
     public function __construct(array $args)

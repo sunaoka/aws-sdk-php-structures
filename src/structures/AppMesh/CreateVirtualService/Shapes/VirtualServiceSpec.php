@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppMesh\CreateVirtualService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualServiceProvider $provider
+ * @property VirtualServiceProvider|null $provider
  */
 class VirtualServiceSpec extends Shape
 {
     /**
-     * @param array{provider?: VirtualServiceProvider} $args
+     * @param array{provider?: VirtualServiceProvider|null} $args
      */
     public function __construct(array $args = [])
     {

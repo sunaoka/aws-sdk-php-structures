@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Shield\DescribeProtection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property string $ResourceArn
- * @property list<string> $HealthCheckIds
- * @property string $ProtectionArn
- * @property ApplicationLayerAutomaticResponseConfiguration $ApplicationLayerAutomaticResponseConfiguration
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $ResourceArn
+ * @property list<string>|null $HealthCheckIds
+ * @property string|null $ProtectionArn
+ * @property ApplicationLayerAutomaticResponseConfiguration|null $ApplicationLayerAutomaticResponseConfiguration
  */
 class Protection extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     ResourceArn?: string,
-     *     HealthCheckIds?: list<string>,
-     *     ProtectionArn?: string,
-     *     ApplicationLayerAutomaticResponseConfiguration?: ApplicationLayerAutomaticResponseConfiguration
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     ResourceArn?: string|null,
+     *     HealthCheckIds?: list<string>|null,
+     *     ProtectionArn?: string|null,
+     *     ApplicationLayerAutomaticResponseConfiguration?: ApplicationLayerAutomaticResponseConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

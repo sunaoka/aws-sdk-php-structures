@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ClarifyShapBaselineConfig $ShapBaselineConfig
- * @property int<1, max> $NumberOfSamples
- * @property bool $UseLogit
- * @property int $Seed
- * @property ClarifyTextConfig $TextConfig
+ * @property int<1, max>|null $NumberOfSamples
+ * @property bool|null $UseLogit
+ * @property int|null $Seed
+ * @property ClarifyTextConfig|null $TextConfig
  */
 class ClarifyShapConfig extends Shape
 {
     /**
      * @param array{
      *     ShapBaselineConfig: ClarifyShapBaselineConfig,
-     *     NumberOfSamples?: int<1, max>,
-     *     UseLogit?: bool,
-     *     Seed?: int,
-     *     TextConfig?: ClarifyTextConfig
+     *     NumberOfSamples?: int<1, max>|null,
+     *     UseLogit?: bool|null,
+     *     Seed?: int|null,
+     *     TextConfig?: ClarifyTextConfig|null
      * } $args
      */
     public function __construct(array $args)

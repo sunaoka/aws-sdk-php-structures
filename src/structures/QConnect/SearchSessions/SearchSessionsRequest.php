@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assistantId
- * @property int<1, 100> $maxResults
- * @property string $nextToken
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
  * @property Shapes\SearchExpression $searchExpression
  */
 class SearchSessionsRequest extends Request
@@ -15,8 +15,8 @@ class SearchSessionsRequest extends Request
     /**
      * @param array{
      *     assistantId: string,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
      *     searchExpression: Shapes\SearchExpression
      * } $args
      */

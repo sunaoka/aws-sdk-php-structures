@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $clusterName
- * @property string $workgroupName
+ * @property string|null $clusterName
+ * @property string|null $workgroupName
  */
 class RedshiftStorageProperties extends Shape
 {
     /**
      * @param array{
-     *     clusterName?: string,
-     *     workgroupName?: string
+     *     clusterName?: string|null,
+     *     workgroupName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

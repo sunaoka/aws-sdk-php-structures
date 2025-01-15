@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DataZone\ListSubscriptions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $approverProjectId
+ * @property string|null $approverProjectId
  * @property string $domainIdentifier
- * @property int<1, 50> $maxResults
- * @property string $nextToken
- * @property string $owningProjectId
- * @property 'CREATED_AT'|'UPDATED_AT' $sortBy
- * @property 'ASCENDING'|'DESCENDING' $sortOrder
- * @property 'APPROVED'|'REVOKED'|'CANCELLED' $status
- * @property string $subscribedListingId
- * @property string $subscriptionRequestIdentifier
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $nextToken
+ * @property string|null $owningProjectId
+ * @property 'CREATED_AT'|'UPDATED_AT'|null $sortBy
+ * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
+ * @property 'APPROVED'|'REVOKED'|'CANCELLED'|null $status
+ * @property string|null $subscribedListingId
+ * @property string|null $subscriptionRequestIdentifier
  */
 class ListSubscriptionsRequest extends Request
 {
     /**
      * @param array{
-     *     approverProjectId?: string,
+     *     approverProjectId?: string|null,
      *     domainIdentifier: string,
-     *     maxResults?: int<1, 50>,
-     *     nextToken?: string,
-     *     owningProjectId?: string,
-     *     sortBy?: 'CREATED_AT'|'UPDATED_AT',
-     *     sortOrder?: 'ASCENDING'|'DESCENDING',
-     *     status?: 'APPROVED'|'REVOKED'|'CANCELLED',
-     *     subscribedListingId?: string,
-     *     subscriptionRequestIdentifier?: string
+     *     maxResults?: int<1, 50>|null,
+     *     nextToken?: string|null,
+     *     owningProjectId?: string|null,
+     *     sortBy?: 'CREATED_AT'|'UPDATED_AT'|null,
+     *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
+     *     status?: 'APPROVED'|'REVOKED'|'CANCELLED'|null,
+     *     subscribedListingId?: string|null,
+     *     subscriptionRequestIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

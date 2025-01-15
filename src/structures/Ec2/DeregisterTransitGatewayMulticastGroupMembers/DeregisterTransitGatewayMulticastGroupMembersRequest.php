@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DeregisterTransitGatewayMulticastGroupMembe
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TransitGatewayMulticastDomainId
- * @property string $GroupIpAddress
- * @property list<string> $NetworkInterfaceIds
- * @property bool $DryRun
+ * @property string|null $TransitGatewayMulticastDomainId
+ * @property string|null $GroupIpAddress
+ * @property list<string>|null $NetworkInterfaceIds
+ * @property bool|null $DryRun
  */
 class DeregisterTransitGatewayMulticastGroupMembersRequest extends Request
 {
     /**
      * @param array{
-     *     TransitGatewayMulticastDomainId?: string,
-     *     GroupIpAddress?: string,
-     *     NetworkInterfaceIds?: list<string>,
-     *     DryRun?: bool
+     *     TransitGatewayMulticastDomainId?: string|null,
+     *     GroupIpAddress?: string|null,
+     *     NetworkInterfaceIds?: list<string>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

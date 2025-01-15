@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdatePortal;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'Standard'|'IAM_Identity_Center' $authenticationType
- * @property string $displayName
- * @property 'standard.regular'|'standard.large'|'standard.xlarge' $instanceType
- * @property int<1, 5000> $maxConcurrentSessions
+ * @property 'Standard'|'IAM_Identity_Center'|null $authenticationType
+ * @property string|null $displayName
+ * @property 'standard.regular'|'standard.large'|'standard.xlarge'|null $instanceType
+ * @property int<1, 5000>|null $maxConcurrentSessions
  * @property string $portalArn
  */
 class UpdatePortalRequest extends Request
 {
     /**
      * @param array{
-     *     authenticationType?: 'Standard'|'IAM_Identity_Center',
-     *     displayName?: string,
-     *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge',
-     *     maxConcurrentSessions?: int<1, 5000>,
+     *     authenticationType?: 'Standard'|'IAM_Identity_Center'|null,
+     *     displayName?: string|null,
+     *     instanceType?: 'standard.regular'|'standard.large'|'standard.xlarge'|null,
+     *     maxConcurrentSessions?: int<1, 5000>|null,
      *     portalArn: string
      * } $args
      */

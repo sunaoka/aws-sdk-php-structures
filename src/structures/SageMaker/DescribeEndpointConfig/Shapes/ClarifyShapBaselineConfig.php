@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeEndpointConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MimeType
- * @property string $ShapBaseline
- * @property string $ShapBaselineUri
+ * @property string|null $MimeType
+ * @property string|null $ShapBaseline
+ * @property string|null $ShapBaselineUri
  */
 class ClarifyShapBaselineConfig extends Shape
 {
     /**
      * @param array{
-     *     MimeType?: string,
-     *     ShapBaseline?: string,
-     *     ShapBaselineUri?: string
+     *     MimeType?: string|null,
+     *     ShapBaseline?: string|null,
+     *     ShapBaselineUri?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SagemakerEdgeManager\SendHeartbeat\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeploymentName
- * @property string $DeploymentStatus
- * @property string $DeploymentStatusMessage
- * @property \Aws\Api\DateTimeResult $DeploymentStartTime
- * @property \Aws\Api\DateTimeResult $DeploymentEndTime
- * @property list<DeploymentModel> $DeploymentModels
+ * @property string|null $DeploymentName
+ * @property string|null $DeploymentStatus
+ * @property string|null $DeploymentStatusMessage
+ * @property \Aws\Api\DateTimeResult|null $DeploymentStartTime
+ * @property \Aws\Api\DateTimeResult|null $DeploymentEndTime
+ * @property list<DeploymentModel>|null $DeploymentModels
  */
 class DeploymentResult extends Shape
 {
     /**
      * @param array{
-     *     DeploymentName?: string,
-     *     DeploymentStatus?: string,
-     *     DeploymentStatusMessage?: string,
-     *     DeploymentStartTime?: \Aws\Api\DateTimeResult,
-     *     DeploymentEndTime?: \Aws\Api\DateTimeResult,
-     *     DeploymentModels?: list<DeploymentModel>
+     *     DeploymentName?: string|null,
+     *     DeploymentStatus?: string|null,
+     *     DeploymentStatusMessage?: string|null,
+     *     DeploymentStartTime?: \Aws\Api\DateTimeResult|null,
+     *     DeploymentEndTime?: \Aws\Api\DateTimeResult|null,
+     *     DeploymentModels?: list<DeploymentModel>|null
      * } $args
      */
     public function __construct(array $args = [])

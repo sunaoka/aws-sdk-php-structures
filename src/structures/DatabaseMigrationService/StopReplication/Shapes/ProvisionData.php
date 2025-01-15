@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\StopReplication\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProvisionState
- * @property int $ProvisionedCapacityUnits
- * @property \Aws\Api\DateTimeResult $DateProvisioned
- * @property bool $IsNewProvisioningAvailable
- * @property \Aws\Api\DateTimeResult $DateNewProvisioningDataAvailable
- * @property string $ReasonForNewProvisioningData
+ * @property string|null $ProvisionState
+ * @property int|null $ProvisionedCapacityUnits
+ * @property \Aws\Api\DateTimeResult|null $DateProvisioned
+ * @property bool|null $IsNewProvisioningAvailable
+ * @property \Aws\Api\DateTimeResult|null $DateNewProvisioningDataAvailable
+ * @property string|null $ReasonForNewProvisioningData
  */
 class ProvisionData extends Shape
 {
     /**
      * @param array{
-     *     ProvisionState?: string,
-     *     ProvisionedCapacityUnits?: int,
-     *     DateProvisioned?: \Aws\Api\DateTimeResult,
-     *     IsNewProvisioningAvailable?: bool,
-     *     DateNewProvisioningDataAvailable?: \Aws\Api\DateTimeResult,
-     *     ReasonForNewProvisioningData?: string
+     *     ProvisionState?: string|null,
+     *     ProvisionedCapacityUnits?: int|null,
+     *     DateProvisioned?: \Aws\Api\DateTimeResult|null,
+     *     IsNewProvisioningAvailable?: bool|null,
+     *     DateNewProvisioningDataAvailable?: \Aws\Api\DateTimeResult|null,
+     *     ReasonForNewProvisioningData?: string|null
      * } $args
      */
     public function __construct(array $args = [])

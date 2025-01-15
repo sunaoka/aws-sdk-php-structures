@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $componentName
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListComponentProvisionedResourcesRequest extends Request
 {
     /**
      * @param array{
      *     componentName: string,
-     *     nextToken?: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\ListUserAssocia
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\Filter> $Filters
+ * @property list<Shapes\Filter>|null $Filters
  * @property Shapes\IdentityProvider $IdentityProvider
  * @property string $InstanceId
- * @property int $MaxResults
- * @property string $NextToken
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListUserAssociationsRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: list<Shapes\Filter>,
+     *     Filters?: list<Shapes\Filter>|null,
      *     IdentityProvider: Shapes\IdentityProvider,
      *     InstanceId: string,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

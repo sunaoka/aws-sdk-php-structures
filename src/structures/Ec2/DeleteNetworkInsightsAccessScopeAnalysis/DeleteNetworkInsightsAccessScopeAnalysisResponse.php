@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteNetworkInsightsAccessScopeAnalysis;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NetworkInsightsAccessScopeAnalysisId
+ * @property string|null $NetworkInsightsAccessScopeAnalysisId
  */
 class DeleteNetworkInsightsAccessScopeAnalysisResponse extends Response
 {

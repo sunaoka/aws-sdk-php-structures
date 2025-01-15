@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $KmsDataKeyReusePeriodSeconds
- * @property string $KmsMasterKeyId
- * @property string $QueueName
- * @property string $DeadLetterTargetArn
+ * @property int|null $KmsDataKeyReusePeriodSeconds
+ * @property string|null $KmsMasterKeyId
+ * @property string|null $QueueName
+ * @property string|null $DeadLetterTargetArn
  */
 class AwsSqsQueueDetails extends Shape
 {
     /**
      * @param array{
-     *     KmsDataKeyReusePeriodSeconds?: int,
-     *     KmsMasterKeyId?: string,
-     *     QueueName?: string,
-     *     DeadLetterTargetArn?: string
+     *     KmsDataKeyReusePeriodSeconds?: int|null,
+     *     KmsMasterKeyId?: string|null,
+     *     QueueName?: string|null,
+     *     DeadLetterTargetArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

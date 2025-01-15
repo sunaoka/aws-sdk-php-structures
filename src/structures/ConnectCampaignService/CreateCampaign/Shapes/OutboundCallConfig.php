@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $connectContactFlowId
- * @property string $connectSourcePhoneNumber
- * @property string $connectQueueId
- * @property AnswerMachineDetectionConfig $answerMachineDetectionConfig
+ * @property string|null $connectSourcePhoneNumber
+ * @property string|null $connectQueueId
+ * @property AnswerMachineDetectionConfig|null $answerMachineDetectionConfig
  */
 class OutboundCallConfig extends Shape
 {
     /**
      * @param array{
      *     connectContactFlowId: string,
-     *     connectSourcePhoneNumber?: string,
-     *     connectQueueId?: string,
-     *     answerMachineDetectionConfig?: AnswerMachineDetectionConfig
+     *     connectSourcePhoneNumber?: string|null,
+     *     connectQueueId?: string|null,
+     *     answerMachineDetectionConfig?: AnswerMachineDetectionConfig|null
      * } $args
      */
     public function __construct(array $args)

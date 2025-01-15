@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SSEAlgorithm
- * @property string $KMSMasterKeyID
+ * @property string|null $SSEAlgorithm
+ * @property string|null $KMSMasterKeyID
  */
 class AwsS3BucketServerSideEncryptionByDefault extends Shape
 {
     /**
      * @param array{
-     *     SSEAlgorithm?: string,
-     *     KMSMasterKeyID?: string
+     *     SSEAlgorithm?: string|null,
+     *     KMSMasterKeyID?: string|null
      * } $args
      */
     public function __construct(array $args = [])

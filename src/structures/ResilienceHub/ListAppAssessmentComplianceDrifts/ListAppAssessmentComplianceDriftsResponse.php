@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ComplianceDrift> $complianceDrifts
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListAppAssessmentComplianceDriftsResponse extends Response
 {

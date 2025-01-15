@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CleanRooms\ListCollaborationIdNamespaceAssociat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
+ * @property string|null $nextToken
  * @property list<Shapes\CollaborationIdNamespaceAssociationSummary> $collaborationIdNamespaceAssociationSummaries
  */
 class ListCollaborationIdNamespaceAssociationsResponse extends Response

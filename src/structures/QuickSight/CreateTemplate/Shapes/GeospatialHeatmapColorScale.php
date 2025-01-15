@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<GeospatialHeatmapDataColor> $Colors
+ * @property list<GeospatialHeatmapDataColor>|null $Colors
  */
 class GeospatialHeatmapColorScale extends Shape
 {
     /**
-     * @param array{Colors?: list<GeospatialHeatmapDataColor>} $args
+     * @param array{Colors?: list<GeospatialHeatmapDataColor>|null} $args
      */
     public function __construct(array $args = [])
     {

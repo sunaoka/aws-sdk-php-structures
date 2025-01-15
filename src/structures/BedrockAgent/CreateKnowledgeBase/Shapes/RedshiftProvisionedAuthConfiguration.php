@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $databaseUser
+ * @property string|null $databaseUser
  * @property 'IAM'|'USERNAME_PASSWORD'|'USERNAME' $type
- * @property string $usernamePasswordSecretArn
+ * @property string|null $usernamePasswordSecretArn
  */
 class RedshiftProvisionedAuthConfiguration extends Shape
 {
     /**
      * @param array{
-     *     databaseUser?: string,
+     *     databaseUser?: string|null,
      *     type: 'IAM'|'USERNAME_PASSWORD'|'USERNAME',
-     *     usernamePasswordSecretArn?: string
+     *     usernamePasswordSecretArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LaunchWizard\ListDeployments;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DeploymentDataSummary> $deployments
- * @property string $nextToken
+ * @property list<Shapes\DeploymentDataSummary>|null $deployments
+ * @property string|null $nextToken
  */
 class ListDeploymentsResponse extends Response
 {

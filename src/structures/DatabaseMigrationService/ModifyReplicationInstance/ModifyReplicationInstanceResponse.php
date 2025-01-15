@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ModifyReplicationInsta
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ReplicationInstance $ReplicationInstance
+ * @property Shapes\ReplicationInstance|null $ReplicationInstance
  */
 class ModifyReplicationInstanceResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetSavingsPlansUtilizationDetails\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TotalCommitment
- * @property string $UsedCommitment
- * @property string $UnusedCommitment
- * @property string $UtilizationPercentage
+ * @property string|null $TotalCommitment
+ * @property string|null $UsedCommitment
+ * @property string|null $UnusedCommitment
+ * @property string|null $UtilizationPercentage
  */
 class SavingsPlansUtilization extends Shape
 {
     /**
      * @param array{
-     *     TotalCommitment?: string,
-     *     UsedCommitment?: string,
-     *     UnusedCommitment?: string,
-     *     UtilizationPercentage?: string
+     *     TotalCommitment?: string|null,
+     *     UsedCommitment?: string|null,
+     *     UnusedCommitment?: string|null,
+     *     UtilizationPercentage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

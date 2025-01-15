@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'DRIFTED'|'IN_SYNC'|'UNKNOWN'|'NOT_CHECKED' $StackDriftStatus
- * @property \Aws\Api\DateTimeResult $LastCheckTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastCheckTimestamp
  */
 class StackDriftInformationSummary extends Shape
 {
     /**
      * @param array{
      *     StackDriftStatus: 'DRIFTED'|'IN_SYNC'|'UNKNOWN'|'NOT_CHECKED',
-     *     LastCheckTimestamp?: \Aws\Api\DateTimeResult
+     *     LastCheckTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

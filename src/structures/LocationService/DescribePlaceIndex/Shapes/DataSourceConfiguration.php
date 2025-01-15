@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LocationService\DescribePlaceIndex\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SingleUse'|'Storage' $IntendedUse
+ * @property 'SingleUse'|'Storage'|null $IntendedUse
  */
 class DataSourceConfiguration extends Shape
 {
     /**
-     * @param array{IntendedUse?: 'SingleUse'|'Storage'} $args
+     * @param array{IntendedUse?: 'SingleUse'|'Storage'|null} $args
      */
     public function __construct(array $args = [])
     {

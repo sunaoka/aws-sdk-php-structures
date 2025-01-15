@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $OptOutListName
- * @property list<string> $OptedOutNumbers
- * @property list<Shapes\OptedOutFilter> $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property list<string>|null $OptedOutNumbers
+ * @property list<Shapes\OptedOutFilter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class DescribeOptedOutNumbersRequest extends Request
 {
     /**
      * @param array{
      *     OptOutListName: string,
-     *     OptedOutNumbers?: list<string>,
-     *     Filters?: list<Shapes\OptedOutFilter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     OptedOutNumbers?: list<string>|null,
+     *     Filters?: list<Shapes\OptedOutFilter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

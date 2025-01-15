@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\LookoutforVision\ListModelPackagingJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $JobName
- * @property string $ProjectName
- * @property string $ModelVersion
- * @property string $ModelPackagingJobDescription
- * @property string $ModelPackagingMethod
- * @property 'CREATED'|'RUNNING'|'SUCCEEDED'|'FAILED' $Status
- * @property string $StatusMessage
- * @property \Aws\Api\DateTimeResult $CreationTimestamp
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimestamp
+ * @property string|null $JobName
+ * @property string|null $ProjectName
+ * @property string|null $ModelVersion
+ * @property string|null $ModelPackagingJobDescription
+ * @property string|null $ModelPackagingMethod
+ * @property 'CREATED'|'RUNNING'|'SUCCEEDED'|'FAILED'|null $Status
+ * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $CreationTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimestamp
  */
 class ModelPackagingJobMetadata extends Shape
 {
     /**
      * @param array{
-     *     JobName?: string,
-     *     ProjectName?: string,
-     *     ModelVersion?: string,
-     *     ModelPackagingJobDescription?: string,
-     *     ModelPackagingMethod?: string,
-     *     Status?: 'CREATED'|'RUNNING'|'SUCCEEDED'|'FAILED',
-     *     StatusMessage?: string,
-     *     CreationTimestamp?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     JobName?: string|null,
+     *     ProjectName?: string|null,
+     *     ModelVersion?: string|null,
+     *     ModelPackagingJobDescription?: string|null,
+     *     ModelPackagingMethod?: string|null,
+     *     Status?: 'CREATED'|'RUNNING'|'SUCCEEDED'|'FAILED'|null,
+     *     StatusMessage?: string|null,
+     *     CreationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

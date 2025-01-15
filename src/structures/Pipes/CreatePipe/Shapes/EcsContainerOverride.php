@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Pipes\CreatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Command
- * @property int $Cpu
- * @property list<EcsEnvironmentVariable> $Environment
- * @property list<EcsEnvironmentFile> $EnvironmentFiles
- * @property int $Memory
- * @property int $MemoryReservation
- * @property string $Name
- * @property list<EcsResourceRequirement> $ResourceRequirements
+ * @property list<string>|null $Command
+ * @property int|null $Cpu
+ * @property list<EcsEnvironmentVariable>|null $Environment
+ * @property list<EcsEnvironmentFile>|null $EnvironmentFiles
+ * @property int|null $Memory
+ * @property int|null $MemoryReservation
+ * @property string|null $Name
+ * @property list<EcsResourceRequirement>|null $ResourceRequirements
  */
 class EcsContainerOverride extends Shape
 {
     /**
      * @param array{
-     *     Command?: list<string>,
-     *     Cpu?: int,
-     *     Environment?: list<EcsEnvironmentVariable>,
-     *     EnvironmentFiles?: list<EcsEnvironmentFile>,
-     *     Memory?: int,
-     *     MemoryReservation?: int,
-     *     Name?: string,
-     *     ResourceRequirements?: list<EcsResourceRequirement>
+     *     Command?: list<string>|null,
+     *     Cpu?: int|null,
+     *     Environment?: list<EcsEnvironmentVariable>|null,
+     *     EnvironmentFiles?: list<EcsEnvironmentFile>|null,
+     *     Memory?: int|null,
+     *     MemoryReservation?: int|null,
+     *     Name?: string|null,
+     *     ResourceRequirements?: list<EcsResourceRequirement>|null
      * } $args
      */
     public function __construct(array $args = [])

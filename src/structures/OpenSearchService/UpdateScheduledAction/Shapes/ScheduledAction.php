@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'SERVICE_SOFTWARE_UPDATE'|'JVM_HEAP_SIZE_TUNING'|'JVM_YOUNG_GEN_TUNING' $Type
  * @property 'HIGH'|'MEDIUM'|'LOW' $Severity
  * @property int $ScheduledTime
- * @property string $Description
- * @property 'CUSTOMER'|'SYSTEM' $ScheduledBy
- * @property 'PENDING_UPDATE'|'IN_PROGRESS'|'FAILED'|'COMPLETED'|'NOT_ELIGIBLE'|'ELIGIBLE' $Status
- * @property bool $Mandatory
- * @property bool $Cancellable
+ * @property string|null $Description
+ * @property 'CUSTOMER'|'SYSTEM'|null $ScheduledBy
+ * @property 'PENDING_UPDATE'|'IN_PROGRESS'|'FAILED'|'COMPLETED'|'NOT_ELIGIBLE'|'ELIGIBLE'|null $Status
+ * @property bool|null $Mandatory
+ * @property bool|null $Cancellable
  */
 class ScheduledAction extends Shape
 {
@@ -23,11 +23,11 @@ class ScheduledAction extends Shape
      *     Type: 'SERVICE_SOFTWARE_UPDATE'|'JVM_HEAP_SIZE_TUNING'|'JVM_YOUNG_GEN_TUNING',
      *     Severity: 'HIGH'|'MEDIUM'|'LOW',
      *     ScheduledTime: int,
-     *     Description?: string,
-     *     ScheduledBy?: 'CUSTOMER'|'SYSTEM',
-     *     Status?: 'PENDING_UPDATE'|'IN_PROGRESS'|'FAILED'|'COMPLETED'|'NOT_ELIGIBLE'|'ELIGIBLE',
-     *     Mandatory?: bool,
-     *     Cancellable?: bool
+     *     Description?: string|null,
+     *     ScheduledBy?: 'CUSTOMER'|'SYSTEM'|null,
+     *     Status?: 'PENDING_UPDATE'|'IN_PROGRESS'|'FAILED'|'COMPLETED'|'NOT_ELIGIBLE'|'ELIGIBLE'|null,
+     *     Mandatory?: bool|null,
+     *     Cancellable?: bool|null
      * } $args
      */
     public function __construct(array $args)

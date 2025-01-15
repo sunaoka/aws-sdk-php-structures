@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListServiceActions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
- * @property int<0, 20> $PageSize
- * @property string $PageToken
+ * @property string|null $AcceptLanguage
+ * @property int<0, 20>|null $PageSize
+ * @property string|null $PageToken
  */
 class ListServiceActionsRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
-     *     PageSize?: int<0, 20>,
-     *     PageToken?: string
+     *     AcceptLanguage?: string|null,
+     *     PageSize?: int<0, 20>|null,
+     *     PageToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

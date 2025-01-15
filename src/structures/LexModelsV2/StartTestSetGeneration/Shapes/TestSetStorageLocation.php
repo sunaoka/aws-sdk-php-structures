@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $s3BucketName
  * @property string $s3Path
- * @property string $kmsKeyArn
+ * @property string|null $kmsKeyArn
  */
 class TestSetStorageLocation extends Shape
 {
@@ -15,7 +15,7 @@ class TestSetStorageLocation extends Shape
      * @param array{
      *     s3BucketName: string,
      *     s3Path: string,
-     *     kmsKeyArn?: string
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

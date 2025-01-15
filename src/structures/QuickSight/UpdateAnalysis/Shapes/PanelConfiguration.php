@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PanelTitleOptions $Title
- * @property 'HIDDEN'|'VISIBLE' $BorderVisibility
- * @property string $BorderThickness
- * @property 'SOLID'|'DASHED'|'DOTTED' $BorderStyle
- * @property string $BorderColor
- * @property 'HIDDEN'|'VISIBLE' $GutterVisibility
- * @property string $GutterSpacing
- * @property 'HIDDEN'|'VISIBLE' $BackgroundVisibility
- * @property string $BackgroundColor
+ * @property PanelTitleOptions|null $Title
+ * @property 'HIDDEN'|'VISIBLE'|null $BorderVisibility
+ * @property string|null $BorderThickness
+ * @property 'SOLID'|'DASHED'|'DOTTED'|null $BorderStyle
+ * @property string|null $BorderColor
+ * @property 'HIDDEN'|'VISIBLE'|null $GutterVisibility
+ * @property string|null $GutterSpacing
+ * @property 'HIDDEN'|'VISIBLE'|null $BackgroundVisibility
+ * @property string|null $BackgroundColor
  */
 class PanelConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Title?: PanelTitleOptions,
-     *     BorderVisibility?: 'HIDDEN'|'VISIBLE',
-     *     BorderThickness?: string,
-     *     BorderStyle?: 'SOLID'|'DASHED'|'DOTTED',
-     *     BorderColor?: string,
-     *     GutterVisibility?: 'HIDDEN'|'VISIBLE',
-     *     GutterSpacing?: string,
-     *     BackgroundVisibility?: 'HIDDEN'|'VISIBLE',
-     *     BackgroundColor?: string
+     *     Title?: PanelTitleOptions|null,
+     *     BorderVisibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     BorderThickness?: string|null,
+     *     BorderStyle?: 'SOLID'|'DASHED'|'DOTTED'|null,
+     *     BorderColor?: string|null,
+     *     GutterVisibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     GutterSpacing?: string|null,
+     *     BackgroundVisibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     BackgroundColor?: string|null
      * } $args
      */
     public function __construct(array $args = [])

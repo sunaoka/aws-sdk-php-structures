@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeReservation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property int $Count
- * @property string $CurrencyCode
- * @property int $Duration
- * @property 'MONTHS' $DurationUnits
- * @property string $End
- * @property double $FixedPrice
- * @property string $Name
- * @property string $OfferingDescription
- * @property string $OfferingId
- * @property 'NO_UPFRONT' $OfferingType
- * @property string $Region
- * @property Shapes\RenewalSettings $RenewalSettings
- * @property string $ReservationId
- * @property Shapes\ReservationResourceSpecification $ResourceSpecification
- * @property string $Start
- * @property 'ACTIVE'|'EXPIRED'|'CANCELED'|'DELETED' $State
- * @property array<string, string> $Tags
- * @property double $UsagePrice
+ * @property string|null $Arn
+ * @property int|null $Count
+ * @property string|null $CurrencyCode
+ * @property int|null $Duration
+ * @property 'MONTHS'|null $DurationUnits
+ * @property string|null $End
+ * @property double|null $FixedPrice
+ * @property string|null $Name
+ * @property string|null $OfferingDescription
+ * @property string|null $OfferingId
+ * @property 'NO_UPFRONT'|null $OfferingType
+ * @property string|null $Region
+ * @property Shapes\RenewalSettings|null $RenewalSettings
+ * @property string|null $ReservationId
+ * @property Shapes\ReservationResourceSpecification|null $ResourceSpecification
+ * @property string|null $Start
+ * @property 'ACTIVE'|'EXPIRED'|'CANCELED'|'DELETED'|null $State
+ * @property array<string, string>|null $Tags
+ * @property double|null $UsagePrice
  */
 class DescribeReservationResponse extends Response
 {

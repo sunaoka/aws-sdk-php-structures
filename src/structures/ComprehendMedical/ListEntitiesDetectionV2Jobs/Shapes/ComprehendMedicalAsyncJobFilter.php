@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ComprehendMedical\ListEntitiesDetectionV2Jobs\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $JobName
- * @property 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'PARTIAL_SUCCESS'|'FAILED'|'STOP_REQUESTED'|'STOPPED' $JobStatus
- * @property \Aws\Api\DateTimeResult $SubmitTimeBefore
- * @property \Aws\Api\DateTimeResult $SubmitTimeAfter
+ * @property string|null $JobName
+ * @property 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'PARTIAL_SUCCESS'|'FAILED'|'STOP_REQUESTED'|'STOPPED'|null $JobStatus
+ * @property \Aws\Api\DateTimeResult|null $SubmitTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $SubmitTimeAfter
  */
 class ComprehendMedicalAsyncJobFilter extends Shape
 {
     /**
      * @param array{
-     *     JobName?: string,
-     *     JobStatus?: 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'PARTIAL_SUCCESS'|'FAILED'|'STOP_REQUESTED'|'STOPPED',
-     *     SubmitTimeBefore?: \Aws\Api\DateTimeResult,
-     *     SubmitTimeAfter?: \Aws\Api\DateTimeResult
+     *     JobName?: string|null,
+     *     JobStatus?: 'SUBMITTED'|'IN_PROGRESS'|'COMPLETED'|'PARTIAL_SUCCESS'|'FAILED'|'STOP_REQUESTED'|'STOPPED'|null,
+     *     SubmitTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     SubmitTimeAfter?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

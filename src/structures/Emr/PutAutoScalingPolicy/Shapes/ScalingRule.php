@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property ScalingAction $Action
  * @property ScalingTrigger $Trigger
  */
@@ -15,7 +15,7 @@ class ScalingRule extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Action: ScalingAction,
      *     Trigger: ScalingTrigger
      * } $args

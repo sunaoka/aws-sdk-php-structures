@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Sms\GetAppLaunchConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Server $server
- * @property string $logicalId
- * @property string $vpc
- * @property string $subnet
- * @property string $securityGroup
- * @property string $ec2KeyName
- * @property UserData $userData
- * @property string $instanceType
- * @property bool $associatePublicIpAddress
- * @property string $iamInstanceProfileName
- * @property S3Location $configureScript
- * @property 'SHELL_SCRIPT'|'POWERSHELL_SCRIPT' $configureScriptType
+ * @property Server|null $server
+ * @property string|null $logicalId
+ * @property string|null $vpc
+ * @property string|null $subnet
+ * @property string|null $securityGroup
+ * @property string|null $ec2KeyName
+ * @property UserData|null $userData
+ * @property string|null $instanceType
+ * @property bool|null $associatePublicIpAddress
+ * @property string|null $iamInstanceProfileName
+ * @property S3Location|null $configureScript
+ * @property 'SHELL_SCRIPT'|'POWERSHELL_SCRIPT'|null $configureScriptType
  */
 class ServerLaunchConfiguration extends Shape
 {
     /**
      * @param array{
-     *     server?: Server,
-     *     logicalId?: string,
-     *     vpc?: string,
-     *     subnet?: string,
-     *     securityGroup?: string,
-     *     ec2KeyName?: string,
-     *     userData?: UserData,
-     *     instanceType?: string,
-     *     associatePublicIpAddress?: bool,
-     *     iamInstanceProfileName?: string,
-     *     configureScript?: S3Location,
-     *     configureScriptType?: 'SHELL_SCRIPT'|'POWERSHELL_SCRIPT'
+     *     server?: Server|null,
+     *     logicalId?: string|null,
+     *     vpc?: string|null,
+     *     subnet?: string|null,
+     *     securityGroup?: string|null,
+     *     ec2KeyName?: string|null,
+     *     userData?: UserData|null,
+     *     instanceType?: string|null,
+     *     associatePublicIpAddress?: bool|null,
+     *     iamInstanceProfileName?: string|null,
+     *     configureScript?: S3Location|null,
+     *     configureScriptType?: 'SHELL_SCRIPT'|'POWERSHELL_SCRIPT'|null
      * } $args
      */
     public function __construct(array $args = [])

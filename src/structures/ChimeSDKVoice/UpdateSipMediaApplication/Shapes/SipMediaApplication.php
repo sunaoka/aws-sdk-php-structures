@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\UpdateSipMediaApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SipMediaApplicationId
- * @property string $AwsRegion
- * @property string $Name
- * @property list<SipMediaApplicationEndpoint> $Endpoints
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
- * @property string $SipMediaApplicationArn
+ * @property string|null $SipMediaApplicationId
+ * @property string|null $AwsRegion
+ * @property string|null $Name
+ * @property list<SipMediaApplicationEndpoint>|null $Endpoints
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
+ * @property string|null $SipMediaApplicationArn
  */
 class SipMediaApplication extends Shape
 {
     /**
      * @param array{
-     *     SipMediaApplicationId?: string,
-     *     AwsRegion?: string,
-     *     Name?: string,
-     *     Endpoints?: list<SipMediaApplicationEndpoint>,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     SipMediaApplicationArn?: string
+     *     SipMediaApplicationId?: string|null,
+     *     AwsRegion?: string|null,
+     *     Name?: string|null,
+     *     Endpoints?: list<SipMediaApplicationEndpoint>|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     SipMediaApplicationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

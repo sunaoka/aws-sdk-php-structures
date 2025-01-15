@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DeviceId
  * @property \Aws\Api\DateTimeResult $SampleTime
  * @property list<double> $Position
- * @property PositionalAccuracy $Accuracy
- * @property string $Ipv4Address
- * @property list<WiFiAccessPoint> $WiFiAccessPoints
- * @property CellSignals $CellSignals
+ * @property PositionalAccuracy|null $Accuracy
+ * @property string|null $Ipv4Address
+ * @property list<WiFiAccessPoint>|null $WiFiAccessPoints
+ * @property CellSignals|null $CellSignals
  */
 class DeviceState extends Shape
 {
@@ -20,10 +20,10 @@ class DeviceState extends Shape
      *     DeviceId: string,
      *     SampleTime: \Aws\Api\DateTimeResult,
      *     Position: list<double>,
-     *     Accuracy?: PositionalAccuracy,
-     *     Ipv4Address?: string,
-     *     WiFiAccessPoints?: list<WiFiAccessPoint>,
-     *     CellSignals?: CellSignals
+     *     Accuracy?: PositionalAccuracy|null,
+     *     Ipv4Address?: string|null,
+     *     WiFiAccessPoints?: list<WiFiAccessPoint>|null,
+     *     CellSignals?: CellSignals|null
      * } $args
      */
     public function __construct(array $args)

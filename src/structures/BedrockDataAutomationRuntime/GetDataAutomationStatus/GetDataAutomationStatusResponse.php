@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomationRuntime\GetDataAutomationS
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'Created'|'InProgress'|'Success'|'ServiceError'|'ClientError' $status
- * @property string $errorType
- * @property string $errorMessage
- * @property Shapes\OutputConfiguration $outputConfiguration
+ * @property 'Created'|'InProgress'|'Success'|'ServiceError'|'ClientError'|null $status
+ * @property string|null $errorType
+ * @property string|null $errorMessage
+ * @property Shapes\OutputConfiguration|null $outputConfiguration
  */
 class GetDataAutomationStatusResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DocDB\CreateDBInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StatusType
- * @property bool $Normal
- * @property string $Status
- * @property string $Message
+ * @property string|null $StatusType
+ * @property bool|null $Normal
+ * @property string|null $Status
+ * @property string|null $Message
  */
 class DBInstanceStatusInfo extends Shape
 {
     /**
      * @param array{
-     *     StatusType?: string,
-     *     Normal?: bool,
-     *     Status?: string,
-     *     Message?: string
+     *     StatusType?: string|null,
+     *     Normal?: bool|null,
+     *     Status?: string|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

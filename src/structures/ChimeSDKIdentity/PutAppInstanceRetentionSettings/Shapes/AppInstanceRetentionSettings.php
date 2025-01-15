@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\PutAppInstanceRetentionSetting
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ChannelRetentionSettings $ChannelRetentionSettings
+ * @property ChannelRetentionSettings|null $ChannelRetentionSettings
  */
 class AppInstanceRetentionSettings extends Shape
 {
     /**
-     * @param array{ChannelRetentionSettings?: ChannelRetentionSettings} $args
+     * @param array{ChannelRetentionSettings?: ChannelRetentionSettings|null} $args
      */
     public function __construct(array $args = [])
     {

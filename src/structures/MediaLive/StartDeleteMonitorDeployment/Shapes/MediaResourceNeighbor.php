@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Arn
- * @property string $Name
+ * @property string|null $Name
  */
 class MediaResourceNeighbor extends Shape
 {
     /**
      * @param array{
      *     Arn: string,
-     *     Name?: string
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

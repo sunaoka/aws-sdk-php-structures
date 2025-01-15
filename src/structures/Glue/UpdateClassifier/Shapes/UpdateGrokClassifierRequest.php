@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $Classification
- * @property string $GrokPattern
- * @property string $CustomPatterns
+ * @property string|null $Classification
+ * @property string|null $GrokPattern
+ * @property string|null $CustomPatterns
  */
 class UpdateGrokClassifierRequest extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Classification?: string,
-     *     GrokPattern?: string,
-     *     CustomPatterns?: string
+     *     Classification?: string|null,
+     *     GrokPattern?: string|null,
+     *     CustomPatterns?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $inputName
- * @property string $inputDescription
+ * @property string|null $inputDescription
  * @property string $inputArn
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastUpdateTime
@@ -17,7 +17,7 @@ class InputConfiguration extends Shape
     /**
      * @param array{
      *     inputName: string,
-     *     inputDescription?: string,
+     *     inputDescription?: string|null,
      *     inputArn: string,
      *     creationTime: \Aws\Api\DateTimeResult,
      *     lastUpdateTime: \Aws\Api\DateTimeResult,

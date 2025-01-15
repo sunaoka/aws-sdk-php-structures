@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Pipes\DescribePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<EcsContainerOverride> $ContainerOverrides
- * @property string $Cpu
- * @property EcsEphemeralStorage $EphemeralStorage
- * @property string $ExecutionRoleArn
- * @property list<EcsInferenceAcceleratorOverride> $InferenceAcceleratorOverrides
- * @property string $Memory
- * @property string $TaskRoleArn
+ * @property list<EcsContainerOverride>|null $ContainerOverrides
+ * @property string|null $Cpu
+ * @property EcsEphemeralStorage|null $EphemeralStorage
+ * @property string|null $ExecutionRoleArn
+ * @property list<EcsInferenceAcceleratorOverride>|null $InferenceAcceleratorOverrides
+ * @property string|null $Memory
+ * @property string|null $TaskRoleArn
  */
 class EcsTaskOverride extends Shape
 {
     /**
      * @param array{
-     *     ContainerOverrides?: list<EcsContainerOverride>,
-     *     Cpu?: string,
-     *     EphemeralStorage?: EcsEphemeralStorage,
-     *     ExecutionRoleArn?: string,
-     *     InferenceAcceleratorOverrides?: list<EcsInferenceAcceleratorOverride>,
-     *     Memory?: string,
-     *     TaskRoleArn?: string
+     *     ContainerOverrides?: list<EcsContainerOverride>|null,
+     *     Cpu?: string|null,
+     *     EphemeralStorage?: EcsEphemeralStorage|null,
+     *     ExecutionRoleArn?: string|null,
+     *     InferenceAcceleratorOverrides?: list<EcsInferenceAcceleratorOverride>|null,
+     *     Memory?: string|null,
+     *     TaskRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

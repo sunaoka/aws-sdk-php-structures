@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $instanceId
  * @property string $appId
- * @property string $title
- * @property string $description
- * @property Shapes\AppDefinitionInput $appDefinition
+ * @property string|null $title
+ * @property string|null $description
+ * @property Shapes\AppDefinitionInput|null $appDefinition
  */
 class UpdateQAppRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateQAppRequest extends Request
      * @param array{
      *     instanceId: string,
      *     appId: string,
-     *     title?: string,
-     *     description?: string,
-     *     appDefinition?: Shapes\AppDefinitionInput
+     *     title?: string|null,
+     *     description?: string|null,
+     *     appDefinition?: Shapes\AppDefinitionInput|null
      * } $args
      */
     public function __construct(array $args)

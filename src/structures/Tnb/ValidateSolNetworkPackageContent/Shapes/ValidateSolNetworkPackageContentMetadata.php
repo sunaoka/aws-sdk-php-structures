@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Tnb\ValidateSolNetworkPackageContent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NetworkArtifactMeta $nsd
+ * @property NetworkArtifactMeta|null $nsd
  */
 class ValidateSolNetworkPackageContentMetadata extends Shape
 {
     /**
-     * @param array{nsd?: NetworkArtifactMeta} $args
+     * @param array{nsd?: NetworkArtifactMeta|null} $args
      */
     public function __construct(array $args = [])
     {

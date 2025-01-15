@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\UpdateTemplateGroupAccessControl
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\AccessRights $AccessRights
- * @property string $GroupDisplayName
+ * @property Shapes\AccessRights|null $AccessRights
+ * @property string|null $GroupDisplayName
  * @property string $GroupSecurityIdentifier
  * @property string $TemplateArn
  */
@@ -14,8 +14,8 @@ class UpdateTemplateGroupAccessControlEntryRequest extends Request
 {
     /**
      * @param array{
-     *     AccessRights?: Shapes\AccessRights,
-     *     GroupDisplayName?: string,
+     *     AccessRights?: Shapes\AccessRights|null,
+     *     GroupDisplayName?: string|null,
      *     GroupSecurityIdentifier: string,
      *     TemplateArn: string
      * } $args

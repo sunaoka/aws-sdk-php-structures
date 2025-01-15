@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\UpdateEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LoadBalancerDescription $LoadBalancer
+ * @property LoadBalancerDescription|null $LoadBalancer
  */
 class EnvironmentResourcesDescription extends Shape
 {
     /**
-     * @param array{LoadBalancer?: LoadBalancerDescription} $args
+     * @param array{LoadBalancer?: LoadBalancerDescription|null} $args
      */
     public function __construct(array $args = [])
     {

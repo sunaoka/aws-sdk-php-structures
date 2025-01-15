@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $EmailAddress
- * @property string $DisplayName
+ * @property string|null $DisplayName
  */
 class EmailAddressInfo extends Shape
 {
     /**
      * @param array{
      *     EmailAddress: string,
-     *     DisplayName?: string
+     *     DisplayName?: string|null
      * } $args
      */
     public function __construct(array $args)

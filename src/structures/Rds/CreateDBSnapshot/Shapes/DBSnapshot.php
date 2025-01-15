@@ -5,83 +5,83 @@ namespace Sunaoka\Aws\Structures\Rds\CreateDBSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBSnapshotIdentifier
- * @property string $DBInstanceIdentifier
- * @property \Aws\Api\DateTimeResult $SnapshotCreateTime
- * @property string $Engine
- * @property int $AllocatedStorage
- * @property string $Status
- * @property int $Port
- * @property string $AvailabilityZone
- * @property string $VpcId
- * @property \Aws\Api\DateTimeResult $InstanceCreateTime
- * @property string $MasterUsername
- * @property string $EngineVersion
- * @property string $LicenseModel
- * @property string $SnapshotType
- * @property int $Iops
- * @property string $OptionGroupName
- * @property int $PercentProgress
- * @property string $SourceRegion
- * @property string $SourceDBSnapshotIdentifier
- * @property string $StorageType
- * @property string $TdeCredentialArn
- * @property bool $Encrypted
- * @property string $KmsKeyId
- * @property string $DBSnapshotArn
- * @property string $Timezone
- * @property bool $IAMDatabaseAuthenticationEnabled
- * @property list<ProcessorFeature> $ProcessorFeatures
- * @property string $DbiResourceId
- * @property list<Tag> $TagList
- * @property \Aws\Api\DateTimeResult $OriginalSnapshotCreateTime
- * @property \Aws\Api\DateTimeResult $SnapshotDatabaseTime
- * @property string $SnapshotTarget
- * @property int $StorageThroughput
- * @property string $DBSystemId
- * @property bool $DedicatedLogVolume
- * @property bool $MultiTenant
+ * @property string|null $DBSnapshotIdentifier
+ * @property string|null $DBInstanceIdentifier
+ * @property \Aws\Api\DateTimeResult|null $SnapshotCreateTime
+ * @property string|null $Engine
+ * @property int|null $AllocatedStorage
+ * @property string|null $Status
+ * @property int|null $Port
+ * @property string|null $AvailabilityZone
+ * @property string|null $VpcId
+ * @property \Aws\Api\DateTimeResult|null $InstanceCreateTime
+ * @property string|null $MasterUsername
+ * @property string|null $EngineVersion
+ * @property string|null $LicenseModel
+ * @property string|null $SnapshotType
+ * @property int|null $Iops
+ * @property string|null $OptionGroupName
+ * @property int|null $PercentProgress
+ * @property string|null $SourceRegion
+ * @property string|null $SourceDBSnapshotIdentifier
+ * @property string|null $StorageType
+ * @property string|null $TdeCredentialArn
+ * @property bool|null $Encrypted
+ * @property string|null $KmsKeyId
+ * @property string|null $DBSnapshotArn
+ * @property string|null $Timezone
+ * @property bool|null $IAMDatabaseAuthenticationEnabled
+ * @property list<ProcessorFeature>|null $ProcessorFeatures
+ * @property string|null $DbiResourceId
+ * @property list<Tag>|null $TagList
+ * @property \Aws\Api\DateTimeResult|null $OriginalSnapshotCreateTime
+ * @property \Aws\Api\DateTimeResult|null $SnapshotDatabaseTime
+ * @property string|null $SnapshotTarget
+ * @property int|null $StorageThroughput
+ * @property string|null $DBSystemId
+ * @property bool|null $DedicatedLogVolume
+ * @property bool|null $MultiTenant
  */
 class DBSnapshot extends Shape
 {
     /**
      * @param array{
-     *     DBSnapshotIdentifier?: string,
-     *     DBInstanceIdentifier?: string,
-     *     SnapshotCreateTime?: \Aws\Api\DateTimeResult,
-     *     Engine?: string,
-     *     AllocatedStorage?: int,
-     *     Status?: string,
-     *     Port?: int,
-     *     AvailabilityZone?: string,
-     *     VpcId?: string,
-     *     InstanceCreateTime?: \Aws\Api\DateTimeResult,
-     *     MasterUsername?: string,
-     *     EngineVersion?: string,
-     *     LicenseModel?: string,
-     *     SnapshotType?: string,
-     *     Iops?: int,
-     *     OptionGroupName?: string,
-     *     PercentProgress?: int,
-     *     SourceRegion?: string,
-     *     SourceDBSnapshotIdentifier?: string,
-     *     StorageType?: string,
-     *     TdeCredentialArn?: string,
-     *     Encrypted?: bool,
-     *     KmsKeyId?: string,
-     *     DBSnapshotArn?: string,
-     *     Timezone?: string,
-     *     IAMDatabaseAuthenticationEnabled?: bool,
-     *     ProcessorFeatures?: list<ProcessorFeature>,
-     *     DbiResourceId?: string,
-     *     TagList?: list<Tag>,
-     *     OriginalSnapshotCreateTime?: \Aws\Api\DateTimeResult,
-     *     SnapshotDatabaseTime?: \Aws\Api\DateTimeResult,
-     *     SnapshotTarget?: string,
-     *     StorageThroughput?: int,
-     *     DBSystemId?: string,
-     *     DedicatedLogVolume?: bool,
-     *     MultiTenant?: bool
+     *     DBSnapshotIdentifier?: string|null,
+     *     DBInstanceIdentifier?: string|null,
+     *     SnapshotCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     Engine?: string|null,
+     *     AllocatedStorage?: int|null,
+     *     Status?: string|null,
+     *     Port?: int|null,
+     *     AvailabilityZone?: string|null,
+     *     VpcId?: string|null,
+     *     InstanceCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     MasterUsername?: string|null,
+     *     EngineVersion?: string|null,
+     *     LicenseModel?: string|null,
+     *     SnapshotType?: string|null,
+     *     Iops?: int|null,
+     *     OptionGroupName?: string|null,
+     *     PercentProgress?: int|null,
+     *     SourceRegion?: string|null,
+     *     SourceDBSnapshotIdentifier?: string|null,
+     *     StorageType?: string|null,
+     *     TdeCredentialArn?: string|null,
+     *     Encrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     DBSnapshotArn?: string|null,
+     *     Timezone?: string|null,
+     *     IAMDatabaseAuthenticationEnabled?: bool|null,
+     *     ProcessorFeatures?: list<ProcessorFeature>|null,
+     *     DbiResourceId?: string|null,
+     *     TagList?: list<Tag>|null,
+     *     OriginalSnapshotCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     SnapshotDatabaseTime?: \Aws\Api\DateTimeResult|null,
+     *     SnapshotTarget?: string|null,
+     *     StorageThroughput?: int|null,
+     *     DBSystemId?: string|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     MultiTenant?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkloadId
- * @property string $NextToken
- * @property int<1, 50> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $MaxResults
  * @property string $LensArn
  * @property string $PillarId
  * @property string $QuestionId
@@ -18,8 +18,8 @@ class ListCheckDetailsRequest extends Request
     /**
      * @param array{
      *     WorkloadId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 50>,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 50>|null,
      *     LensArn: string,
      *     PillarId: string,
      *     QuestionId: string,

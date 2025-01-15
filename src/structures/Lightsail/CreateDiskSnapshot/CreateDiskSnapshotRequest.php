@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Lightsail\CreateDiskSnapshot;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $diskName
+ * @property string|null $diskName
  * @property string $diskSnapshotName
- * @property string $instanceName
- * @property list<Shapes\Tag> $tags
+ * @property string|null $instanceName
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateDiskSnapshotRequest extends Request
 {
     /**
      * @param array{
-     *     diskName?: string,
+     *     diskName?: string|null,
      *     diskSnapshotName: string,
-     *     instanceName?: string,
-     *     tags?: list<Shapes\Tag>
+     *     instanceName?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

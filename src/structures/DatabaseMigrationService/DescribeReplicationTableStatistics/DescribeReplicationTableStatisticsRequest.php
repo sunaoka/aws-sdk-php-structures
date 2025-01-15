@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReplicationConfigArn
- * @property int $MaxRecords
- * @property string $Marker
- * @property list<Shapes\Filter> $Filters
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
+ * @property list<Shapes\Filter>|null $Filters
  */
 class DescribeReplicationTableStatisticsRequest extends Request
 {
     /**
      * @param array{
      *     ReplicationConfigArn: string,
-     *     MaxRecords?: int,
-     *     Marker?: string,
-     *     Filters?: list<Shapes\Filter>
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args)

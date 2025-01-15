@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LookoutEquipment\CreateInferenceScheduler\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property InferenceS3InputConfiguration $S3InputConfiguration
- * @property string $InputTimeZoneOffset
- * @property InferenceInputNameConfiguration $InferenceInputNameConfiguration
+ * @property InferenceS3InputConfiguration|null $S3InputConfiguration
+ * @property string|null $InputTimeZoneOffset
+ * @property InferenceInputNameConfiguration|null $InferenceInputNameConfiguration
  */
 class InferenceInputConfiguration extends Shape
 {
     /**
      * @param array{
-     *     S3InputConfiguration?: InferenceS3InputConfiguration,
-     *     InputTimeZoneOffset?: string,
-     *     InferenceInputNameConfiguration?: InferenceInputNameConfiguration
+     *     S3InputConfiguration?: InferenceS3InputConfiguration|null,
+     *     InputTimeZoneOffset?: string|null,
+     *     InferenceInputNameConfiguration?: InferenceInputNameConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

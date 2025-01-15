@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeOpsItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
- * @property 'SearchableString'|'String' $Type
+ * @property string|null $Value
+ * @property 'SearchableString'|'String'|null $Type
  */
 class OpsItemDataValue extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
-     *     Type?: 'SearchableString'|'String'
+     *     Value?: string|null,
+     *     Type?: 'SearchableString'|'String'|null
      * } $args
      */
     public function __construct(array $args = [])

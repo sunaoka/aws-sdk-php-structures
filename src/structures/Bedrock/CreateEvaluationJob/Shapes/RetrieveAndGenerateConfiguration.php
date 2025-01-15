@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'KNOWLEDGE_BASE'|'EXTERNAL_SOURCES' $type
- * @property KnowledgeBaseRetrieveAndGenerateConfiguration $knowledgeBaseConfiguration
- * @property ExternalSourcesRetrieveAndGenerateConfiguration $externalSourcesConfiguration
+ * @property KnowledgeBaseRetrieveAndGenerateConfiguration|null $knowledgeBaseConfiguration
+ * @property ExternalSourcesRetrieveAndGenerateConfiguration|null $externalSourcesConfiguration
  */
 class RetrieveAndGenerateConfiguration extends Shape
 {
     /**
      * @param array{
      *     type: 'KNOWLEDGE_BASE'|'EXTERNAL_SOURCES',
-     *     knowledgeBaseConfiguration?: KnowledgeBaseRetrieveAndGenerateConfiguration,
-     *     externalSourcesConfiguration?: ExternalSourcesRetrieveAndGenerateConfiguration
+     *     knowledgeBaseConfiguration?: KnowledgeBaseRetrieveAndGenerateConfiguration|null,
+     *     externalSourcesConfiguration?: ExternalSourcesRetrieveAndGenerateConfiguration|null
      * } $args
      */
     public function __construct(array $args)

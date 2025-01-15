@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountScope
- * @property string $term
- * @property string $paymentOption
- * @property string $hourlyCommitment
- * @property string $instanceFamily
- * @property string $savingsPlansRegion
+ * @property string|null $accountScope
+ * @property string|null $term
+ * @property string|null $paymentOption
+ * @property string|null $hourlyCommitment
+ * @property string|null $instanceFamily
+ * @property string|null $savingsPlansRegion
  */
 class Ec2InstanceSavingsPlansConfiguration extends Shape
 {
     /**
      * @param array{
-     *     accountScope?: string,
-     *     term?: string,
-     *     paymentOption?: string,
-     *     hourlyCommitment?: string,
-     *     instanceFamily?: string,
-     *     savingsPlansRegion?: string
+     *     accountScope?: string|null,
+     *     term?: string|null,
+     *     paymentOption?: string|null,
+     *     hourlyCommitment?: string|null,
+     *     instanceFamily?: string|null,
+     *     savingsPlansRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

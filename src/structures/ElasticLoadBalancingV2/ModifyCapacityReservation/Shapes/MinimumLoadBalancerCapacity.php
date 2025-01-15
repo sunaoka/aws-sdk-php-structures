@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\ModifyCapacityReservatio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CapacityUnits
+ * @property int|null $CapacityUnits
  */
 class MinimumLoadBalancerCapacity extends Shape
 {
     /**
-     * @param array{CapacityUnits?: int} $args
+     * @param array{CapacityUnits?: int|null} $args
      */
     public function __construct(array $args = [])
     {

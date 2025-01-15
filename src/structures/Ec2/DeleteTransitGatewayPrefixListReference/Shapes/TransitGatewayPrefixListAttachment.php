@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteTransitGatewayPrefixListReference\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayAttachmentId
- * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering' $ResourceType
- * @property string $ResourceId
+ * @property string|null $TransitGatewayAttachmentId
+ * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null $ResourceType
+ * @property string|null $ResourceId
  */
 class TransitGatewayPrefixListAttachment extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayAttachmentId?: string,
-     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering',
-     *     ResourceId?: string
+     *     TransitGatewayAttachmentId?: string|null,
+     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null,
+     *     ResourceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

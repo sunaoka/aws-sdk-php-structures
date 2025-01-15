@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\GetEntity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $targetEntityId
- * @property string $targetComponentName
+ * @property string|null $targetEntityId
+ * @property string|null $targetComponentName
  */
 class RelationshipValue extends Shape
 {
     /**
      * @param array{
-     *     targetEntityId?: string,
-     *     targetComponentName?: string
+     *     targetEntityId?: string|null,
+     *     targetComponentName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

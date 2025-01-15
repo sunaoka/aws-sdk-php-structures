@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $id
- * @property Shapes\ReferenceItem $reference
- * @property 'GFF'|'TSV'|'VCF' $storeFormat
- * @property Shapes\StoreOptions $storeOptions
+ * @property Shapes\ReferenceItem|null $reference
+ * @property 'GFF'|'TSV'|'VCF'|null $storeFormat
+ * @property Shapes\StoreOptions|null $storeOptions
  * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED' $status
  * @property string $name
  * @property string $versionName

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Sms\PutAppValidationConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VmServerAddress $vmServerAddress
- * @property string $vmName
- * @property string $vmManagerName
- * @property 'VSPHERE'|'SCVMM'|'HYPERV-MANAGER' $vmManagerType
- * @property string $vmPath
+ * @property VmServerAddress|null $vmServerAddress
+ * @property string|null $vmName
+ * @property string|null $vmManagerName
+ * @property 'VSPHERE'|'SCVMM'|'HYPERV-MANAGER'|null $vmManagerType
+ * @property string|null $vmPath
  */
 class VmServer extends Shape
 {
     /**
      * @param array{
-     *     vmServerAddress?: VmServerAddress,
-     *     vmName?: string,
-     *     vmManagerName?: string,
-     *     vmManagerType?: 'VSPHERE'|'SCVMM'|'HYPERV-MANAGER',
-     *     vmPath?: string
+     *     vmServerAddress?: VmServerAddress|null,
+     *     vmName?: string|null,
+     *     vmManagerName?: string|null,
+     *     vmManagerType?: 'VSPHERE'|'SCVMM'|'HYPERV-MANAGER'|null,
+     *     vmPath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListEngagementInvitations
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Alias
+ * @property string|null $Alias
  * @property string $AwsAccountId
  */
 class AccountReceiver extends Shape
 {
     /**
      * @param array{
-     *     Alias?: string,
+     *     Alias?: string|null,
      *     AwsAccountId: string
      * } $args
      */

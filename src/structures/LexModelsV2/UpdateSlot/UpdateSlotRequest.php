@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $slotId
  * @property string $slotName
- * @property string $description
- * @property string $slotTypeId
+ * @property string|null $description
+ * @property string|null $slotTypeId
  * @property Shapes\SlotValueElicitationSetting $valueElicitationSetting
- * @property Shapes\ObfuscationSetting $obfuscationSetting
+ * @property Shapes\ObfuscationSetting|null $obfuscationSetting
  * @property string $botId
  * @property string $botVersion
  * @property string $localeId
  * @property string $intentId
- * @property Shapes\MultipleValuesSetting $multipleValuesSetting
- * @property Shapes\SubSlotSetting $subSlotSetting
+ * @property Shapes\MultipleValuesSetting|null $multipleValuesSetting
+ * @property Shapes\SubSlotSetting|null $subSlotSetting
  */
 class UpdateSlotRequest extends Request
 {
@@ -24,16 +24,16 @@ class UpdateSlotRequest extends Request
      * @param array{
      *     slotId: string,
      *     slotName: string,
-     *     description?: string,
-     *     slotTypeId?: string,
+     *     description?: string|null,
+     *     slotTypeId?: string|null,
      *     valueElicitationSetting: Shapes\SlotValueElicitationSetting,
-     *     obfuscationSetting?: Shapes\ObfuscationSetting,
+     *     obfuscationSetting?: Shapes\ObfuscationSetting|null,
      *     botId: string,
      *     botVersion: string,
      *     localeId: string,
      *     intentId: string,
-     *     multipleValuesSetting?: Shapes\MultipleValuesSetting,
-     *     subSlotSetting?: Shapes\SubSlotSetting
+     *     multipleValuesSetting?: Shapes\MultipleValuesSetting|null,
+     *     subSlotSetting?: Shapes\SubSlotSetting|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $PhoneNumberId
- * @property 'VoiceConnector'|'SipMediaApplicationDialIn' $ProductType
- * @property string $CallingName
- * @property string $Name
+ * @property 'VoiceConnector'|'SipMediaApplicationDialIn'|null $ProductType
+ * @property string|null $CallingName
+ * @property string|null $Name
  */
 class UpdatePhoneNumberRequestItem extends Shape
 {
     /**
      * @param array{
      *     PhoneNumberId: string,
-     *     ProductType?: 'VoiceConnector'|'SipMediaApplicationDialIn',
-     *     CallingName?: string,
-     *     Name?: string
+     *     ProductType?: 'VoiceConnector'|'SipMediaApplicationDialIn'|null,
+     *     CallingName?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

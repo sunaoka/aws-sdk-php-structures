@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeServerlessCaches;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ServerlessCacheName
- * @property int $MaxResults
- * @property string $NextToken
+ * @property string|null $ServerlessCacheName
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeServerlessCachesRequest extends Request
 {
     /**
      * @param array{
-     *     ServerlessCacheName?: string,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     ServerlessCacheName?: string|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

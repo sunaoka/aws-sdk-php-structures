@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\SetUserPoolMfaConfig\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Message
- * @property string $Subject
+ * @property string|null $Message
+ * @property string|null $Subject
  */
 class EmailMfaConfigType extends Shape
 {
     /**
      * @param array{
-     *     Message?: string,
-     *     Subject?: string
+     *     Message?: string|null,
+     *     Subject?: string|null
      * } $args
      */
     public function __construct(array $args = [])

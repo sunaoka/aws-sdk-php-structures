@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\StartReplicationTask\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReplicationTaskIdentifier
- * @property string $SourceEndpointArn
- * @property string $TargetEndpointArn
- * @property string $ReplicationInstanceArn
- * @property 'full-load'|'cdc'|'full-load-and-cdc' $MigrationType
- * @property string $TableMappings
- * @property string $ReplicationTaskSettings
- * @property string $Status
- * @property string $LastFailureMessage
- * @property string $StopReason
- * @property \Aws\Api\DateTimeResult $ReplicationTaskCreationDate
- * @property \Aws\Api\DateTimeResult $ReplicationTaskStartDate
- * @property string $CdcStartPosition
- * @property string $CdcStopPosition
- * @property string $RecoveryCheckpoint
- * @property string $ReplicationTaskArn
- * @property ReplicationTaskStats $ReplicationTaskStats
- * @property string $TaskData
- * @property string $TargetReplicationInstanceArn
+ * @property string|null $ReplicationTaskIdentifier
+ * @property string|null $SourceEndpointArn
+ * @property string|null $TargetEndpointArn
+ * @property string|null $ReplicationInstanceArn
+ * @property 'full-load'|'cdc'|'full-load-and-cdc'|null $MigrationType
+ * @property string|null $TableMappings
+ * @property string|null $ReplicationTaskSettings
+ * @property string|null $Status
+ * @property string|null $LastFailureMessage
+ * @property string|null $StopReason
+ * @property \Aws\Api\DateTimeResult|null $ReplicationTaskCreationDate
+ * @property \Aws\Api\DateTimeResult|null $ReplicationTaskStartDate
+ * @property string|null $CdcStartPosition
+ * @property string|null $CdcStopPosition
+ * @property string|null $RecoveryCheckpoint
+ * @property string|null $ReplicationTaskArn
+ * @property ReplicationTaskStats|null $ReplicationTaskStats
+ * @property string|null $TaskData
+ * @property string|null $TargetReplicationInstanceArn
  */
 class ReplicationTask extends Shape
 {
     /**
      * @param array{
-     *     ReplicationTaskIdentifier?: string,
-     *     SourceEndpointArn?: string,
-     *     TargetEndpointArn?: string,
-     *     ReplicationInstanceArn?: string,
-     *     MigrationType?: 'full-load'|'cdc'|'full-load-and-cdc',
-     *     TableMappings?: string,
-     *     ReplicationTaskSettings?: string,
-     *     Status?: string,
-     *     LastFailureMessage?: string,
-     *     StopReason?: string,
-     *     ReplicationTaskCreationDate?: \Aws\Api\DateTimeResult,
-     *     ReplicationTaskStartDate?: \Aws\Api\DateTimeResult,
-     *     CdcStartPosition?: string,
-     *     CdcStopPosition?: string,
-     *     RecoveryCheckpoint?: string,
-     *     ReplicationTaskArn?: string,
-     *     ReplicationTaskStats?: ReplicationTaskStats,
-     *     TaskData?: string,
-     *     TargetReplicationInstanceArn?: string
+     *     ReplicationTaskIdentifier?: string|null,
+     *     SourceEndpointArn?: string|null,
+     *     TargetEndpointArn?: string|null,
+     *     ReplicationInstanceArn?: string|null,
+     *     MigrationType?: 'full-load'|'cdc'|'full-load-and-cdc'|null,
+     *     TableMappings?: string|null,
+     *     ReplicationTaskSettings?: string|null,
+     *     Status?: string|null,
+     *     LastFailureMessage?: string|null,
+     *     StopReason?: string|null,
+     *     ReplicationTaskCreationDate?: \Aws\Api\DateTimeResult|null,
+     *     ReplicationTaskStartDate?: \Aws\Api\DateTimeResult|null,
+     *     CdcStartPosition?: string|null,
+     *     CdcStopPosition?: string|null,
+     *     RecoveryCheckpoint?: string|null,
+     *     ReplicationTaskArn?: string|null,
+     *     ReplicationTaskStats?: ReplicationTaskStats|null,
+     *     TaskData?: string|null,
+     *     TargetReplicationInstanceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

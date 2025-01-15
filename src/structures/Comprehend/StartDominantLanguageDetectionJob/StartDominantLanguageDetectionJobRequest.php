@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\InputDataConfig $InputDataConfig
  * @property Shapes\OutputDataConfig $OutputDataConfig
  * @property string $DataAccessRoleArn
- * @property string $JobName
- * @property string $ClientRequestToken
- * @property string $VolumeKmsKeyId
- * @property Shapes\VpcConfig $VpcConfig
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $JobName
+ * @property string|null $ClientRequestToken
+ * @property string|null $VolumeKmsKeyId
+ * @property Shapes\VpcConfig|null $VpcConfig
+ * @property list<Shapes\Tag>|null $Tags
  */
 class StartDominantLanguageDetectionJobRequest extends Request
 {
@@ -21,11 +21,11 @@ class StartDominantLanguageDetectionJobRequest extends Request
      *     InputDataConfig: Shapes\InputDataConfig,
      *     OutputDataConfig: Shapes\OutputDataConfig,
      *     DataAccessRoleArn: string,
-     *     JobName?: string,
-     *     ClientRequestToken?: string,
-     *     VolumeKmsKeyId?: string,
-     *     VpcConfig?: Shapes\VpcConfig,
-     *     Tags?: list<Shapes\Tag>
+     *     JobName?: string|null,
+     *     ClientRequestToken?: string|null,
+     *     VolumeKmsKeyId?: string|null,
+     *     VpcConfig?: Shapes\VpcConfig|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

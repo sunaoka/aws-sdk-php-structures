@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $keyspaceName
  * @property Shapes\ReplicationSpecification $replicationSpecification
- * @property Shapes\ClientSideTimestamps $clientSideTimestamps
+ * @property Shapes\ClientSideTimestamps|null $clientSideTimestamps
  */
 class UpdateKeyspaceRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateKeyspaceRequest extends Request
      * @param array{
      *     keyspaceName: string,
      *     replicationSpecification: Shapes\ReplicationSpecification,
-     *     clientSideTimestamps?: Shapes\ClientSideTimestamps
+     *     clientSideTimestamps?: Shapes\ClientSideTimestamps|null
      * } $args
      */
     public function __construct(array $args)

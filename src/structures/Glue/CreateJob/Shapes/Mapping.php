@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Glue\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ToKey
- * @property list<string> $FromPath
- * @property string $FromType
- * @property string $ToType
- * @property bool $Dropped
- * @property list<Mapping> $Children
+ * @property string|null $ToKey
+ * @property list<string>|null $FromPath
+ * @property string|null $FromType
+ * @property string|null $ToType
+ * @property bool|null $Dropped
+ * @property list<Mapping>|null $Children
  */
 class Mapping extends Shape
 {
     /**
      * @param array{
-     *     ToKey?: string,
-     *     FromPath?: list<string>,
-     *     FromType?: string,
-     *     ToType?: string,
-     *     Dropped?: bool,
-     *     Children?: list<Mapping>
+     *     ToKey?: string|null,
+     *     FromPath?: list<string>|null,
+     *     FromType?: string|null,
+     *     ToType?: string|null,
+     *     Dropped?: bool|null,
+     *     Children?: list<Mapping>|null
      * } $args
      */
     public function __construct(array $args = [])

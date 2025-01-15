@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Token
  * @property string $ClientId
- * @property string $ClientSecret
+ * @property string|null $ClientSecret
  */
 class RevokeTokenRequest extends Request
 {
@@ -15,7 +15,7 @@ class RevokeTokenRequest extends Request
      * @param array{
      *     Token: string,
      *     ClientId: string,
-     *     ClientSecret?: string
+     *     ClientSecret?: string|null
      * } $args
      */
     public function __construct(array $args)

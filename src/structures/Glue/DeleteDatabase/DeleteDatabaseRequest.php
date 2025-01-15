@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Glue\DeleteDatabase;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $Name
  */
 class DeleteDatabaseRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     Name: string
      * } $args
      */

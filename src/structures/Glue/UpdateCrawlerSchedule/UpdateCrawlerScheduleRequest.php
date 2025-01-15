@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CrawlerName
- * @property string $Schedule
+ * @property string|null $Schedule
  */
 class UpdateCrawlerScheduleRequest extends Request
 {
     /**
      * @param array{
      *     CrawlerName: string,
-     *     Schedule?: string
+     *     Schedule?: string|null
      * } $args
      */
     public function __construct(array $args)

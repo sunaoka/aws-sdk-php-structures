@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $datastoreId
  * @property string $sourceImageSetId
  * @property Shapes\CopyImageSetInformation $copyImageSetInformation
- * @property bool $force
+ * @property bool|null $force
  */
 class CopyImageSetRequest extends Request
 {
@@ -17,7 +17,7 @@ class CopyImageSetRequest extends Request
      *     datastoreId: string,
      *     sourceImageSetId: string,
      *     copyImageSetInformation: Shapes\CopyImageSetInformation,
-     *     force?: bool
+     *     force?: bool|null
      * } $args
      */
     public function __construct(array $args)

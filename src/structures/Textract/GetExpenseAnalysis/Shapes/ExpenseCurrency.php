@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Textract\GetExpenseAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Code
- * @property float $Confidence
+ * @property string|null $Code
+ * @property float|null $Confidence
  */
 class ExpenseCurrency extends Shape
 {
     /**
      * @param array{
-     *     Code?: string,
-     *     Confidence?: float
+     *     Code?: string|null,
+     *     Confidence?: float|null
      * } $args
      */
     public function __construct(array $args = [])

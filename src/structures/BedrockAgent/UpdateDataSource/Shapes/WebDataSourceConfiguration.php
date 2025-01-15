@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property WebCrawlerConfiguration $crawlerConfiguration
+ * @property WebCrawlerConfiguration|null $crawlerConfiguration
  * @property WebSourceConfiguration $sourceConfiguration
  */
 class WebDataSourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     crawlerConfiguration?: WebCrawlerConfiguration,
+     *     crawlerConfiguration?: WebCrawlerConfiguration|null,
      *     sourceConfiguration: WebSourceConfiguration
      * } $args
      */

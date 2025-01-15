@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\CreateContainerRecipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $image
- * @property list<InstanceBlockDeviceMapping> $blockDeviceMappings
+ * @property string|null $image
+ * @property list<InstanceBlockDeviceMapping>|null $blockDeviceMappings
  */
 class InstanceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     image?: string,
-     *     blockDeviceMappings?: list<InstanceBlockDeviceMapping>
+     *     image?: string|null,
+     *     blockDeviceMappings?: list<InstanceBlockDeviceMapping>|null
      * } $args
      */
     public function __construct(array $args = [])

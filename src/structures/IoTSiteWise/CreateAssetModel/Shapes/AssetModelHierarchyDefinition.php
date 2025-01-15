@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\CreateAssetModel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $externalId
+ * @property string|null $id
+ * @property string|null $externalId
  * @property string $name
  * @property string $childAssetModelId
  */
@@ -14,8 +14,8 @@ class AssetModelHierarchyDefinition extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     externalId?: string,
+     *     id?: string|null,
+     *     externalId?: string|null,
      *     name: string,
      *     childAssetModelId: string
      * } $args

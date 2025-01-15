@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Ec2\GetNetworkInsightsAccessScopeAnalysisFindin
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NetworkInsightsAccessScopeAnalysisId
- * @property 'running'|'succeeded'|'failed' $AnalysisStatus
- * @property list<Shapes\AccessScopeAnalysisFinding> $AnalysisFindings
- * @property string $NextToken
+ * @property string|null $NetworkInsightsAccessScopeAnalysisId
+ * @property 'running'|'succeeded'|'failed'|null $AnalysisStatus
+ * @property list<Shapes\AccessScopeAnalysisFinding>|null $AnalysisFindings
+ * @property string|null $NextToken
  */
 class GetNetworkInsightsAccessScopeAnalysisFindingsResponse extends Response
 {

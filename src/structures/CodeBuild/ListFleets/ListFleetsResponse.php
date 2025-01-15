@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CodeBuild\ListFleets;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<string> $fleets
+ * @property string|null $nextToken
+ * @property list<string>|null $fleets
  */
 class ListFleetsResponse extends Response
 {

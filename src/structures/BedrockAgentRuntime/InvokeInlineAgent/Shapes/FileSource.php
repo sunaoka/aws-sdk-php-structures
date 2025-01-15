@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ByteContentFile $byteContent
- * @property S3ObjectFile $s3Location
+ * @property ByteContentFile|null $byteContent
+ * @property S3ObjectFile|null $s3Location
  * @property 'S3'|'BYTE_CONTENT' $sourceType
  */
 class FileSource extends Shape
 {
     /**
      * @param array{
-     *     byteContent?: ByteContentFile,
-     *     s3Location?: S3ObjectFile,
+     *     byteContent?: ByteContentFile|null,
+     *     s3Location?: S3ObjectFile|null,
      *     sourceType: 'S3'|'BYTE_CONTENT'
      * } $args
      */

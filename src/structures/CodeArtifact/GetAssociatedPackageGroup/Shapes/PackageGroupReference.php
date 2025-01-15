@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\GetAssociatedPackageGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $pattern
+ * @property string|null $arn
+ * @property string|null $pattern
  */
 class PackageGroupReference extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     pattern?: string
+     *     arn?: string|null,
+     *     pattern?: string|null
      * } $args
      */
     public function __construct(array $args = [])

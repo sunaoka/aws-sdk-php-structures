@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannelClass\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AcquisitionPointId
- * @property 'PASSTHROUGH'|'USE_CONFIGURED_CLOCK' $AudioOnlyTimecodeControl
- * @property 'SELF_SIGNED'|'VERIFY_AUTHENTICITY' $CertificateMode
- * @property int<0, max> $ConnectionRetryInterval
+ * @property string|null $AcquisitionPointId
+ * @property 'PASSTHROUGH'|'USE_CONFIGURED_CLOCK'|null $AudioOnlyTimecodeControl
+ * @property 'SELF_SIGNED'|'VERIFY_AUTHENTICITY'|null $CertificateMode
+ * @property int<0, max>|null $ConnectionRetryInterval
  * @property OutputLocationRef $Destination
- * @property string $EventId
- * @property 'NO_EVENT_ID'|'USE_CONFIGURED'|'USE_TIMESTAMP' $EventIdMode
- * @property 'NONE'|'SEND_EOS' $EventStopBehavior
- * @property int<0, max> $FilecacheDuration
- * @property int<1, max> $FragmentLength
- * @property 'EMIT_OUTPUT'|'PAUSE_OUTPUT' $InputLossAction
- * @property int<0, max> $NumRetries
- * @property int<0, max> $RestartDelay
- * @property 'USE_INPUT_SEGMENTATION'|'USE_SEGMENT_DURATION' $SegmentationMode
- * @property int<0, 10000> $SendDelayMs
- * @property 'NONE'|'SCTE_35'|'SCTE_35_WITHOUT_SEGMENTATION' $SparseTrackType
- * @property 'DO_NOT_SEND'|'SEND' $StreamManifestBehavior
- * @property string $TimestampOffset
- * @property 'USE_CONFIGURED_OFFSET'|'USE_EVENT_START_DATE' $TimestampOffsetMode
+ * @property string|null $EventId
+ * @property 'NO_EVENT_ID'|'USE_CONFIGURED'|'USE_TIMESTAMP'|null $EventIdMode
+ * @property 'NONE'|'SEND_EOS'|null $EventStopBehavior
+ * @property int<0, max>|null $FilecacheDuration
+ * @property int<1, max>|null $FragmentLength
+ * @property 'EMIT_OUTPUT'|'PAUSE_OUTPUT'|null $InputLossAction
+ * @property int<0, max>|null $NumRetries
+ * @property int<0, max>|null $RestartDelay
+ * @property 'USE_INPUT_SEGMENTATION'|'USE_SEGMENT_DURATION'|null $SegmentationMode
+ * @property int<0, 10000>|null $SendDelayMs
+ * @property 'NONE'|'SCTE_35'|'SCTE_35_WITHOUT_SEGMENTATION'|null $SparseTrackType
+ * @property 'DO_NOT_SEND'|'SEND'|null $StreamManifestBehavior
+ * @property string|null $TimestampOffset
+ * @property 'USE_CONFIGURED_OFFSET'|'USE_EVENT_START_DATE'|null $TimestampOffsetMode
  */
 class MsSmoothGroupSettings extends Shape
 {
     /**
      * @param array{
-     *     AcquisitionPointId?: string,
-     *     AudioOnlyTimecodeControl?: 'PASSTHROUGH'|'USE_CONFIGURED_CLOCK',
-     *     CertificateMode?: 'SELF_SIGNED'|'VERIFY_AUTHENTICITY',
-     *     ConnectionRetryInterval?: int<0, max>,
+     *     AcquisitionPointId?: string|null,
+     *     AudioOnlyTimecodeControl?: 'PASSTHROUGH'|'USE_CONFIGURED_CLOCK'|null,
+     *     CertificateMode?: 'SELF_SIGNED'|'VERIFY_AUTHENTICITY'|null,
+     *     ConnectionRetryInterval?: int<0, max>|null,
      *     Destination: OutputLocationRef,
-     *     EventId?: string,
-     *     EventIdMode?: 'NO_EVENT_ID'|'USE_CONFIGURED'|'USE_TIMESTAMP',
-     *     EventStopBehavior?: 'NONE'|'SEND_EOS',
-     *     FilecacheDuration?: int<0, max>,
-     *     FragmentLength?: int<1, max>,
-     *     InputLossAction?: 'EMIT_OUTPUT'|'PAUSE_OUTPUT',
-     *     NumRetries?: int<0, max>,
-     *     RestartDelay?: int<0, max>,
-     *     SegmentationMode?: 'USE_INPUT_SEGMENTATION'|'USE_SEGMENT_DURATION',
-     *     SendDelayMs?: int<0, 10000>,
-     *     SparseTrackType?: 'NONE'|'SCTE_35'|'SCTE_35_WITHOUT_SEGMENTATION',
-     *     StreamManifestBehavior?: 'DO_NOT_SEND'|'SEND',
-     *     TimestampOffset?: string,
-     *     TimestampOffsetMode?: 'USE_CONFIGURED_OFFSET'|'USE_EVENT_START_DATE'
+     *     EventId?: string|null,
+     *     EventIdMode?: 'NO_EVENT_ID'|'USE_CONFIGURED'|'USE_TIMESTAMP'|null,
+     *     EventStopBehavior?: 'NONE'|'SEND_EOS'|null,
+     *     FilecacheDuration?: int<0, max>|null,
+     *     FragmentLength?: int<1, max>|null,
+     *     InputLossAction?: 'EMIT_OUTPUT'|'PAUSE_OUTPUT'|null,
+     *     NumRetries?: int<0, max>|null,
+     *     RestartDelay?: int<0, max>|null,
+     *     SegmentationMode?: 'USE_INPUT_SEGMENTATION'|'USE_SEGMENT_DURATION'|null,
+     *     SendDelayMs?: int<0, 10000>|null,
+     *     SparseTrackType?: 'NONE'|'SCTE_35'|'SCTE_35_WITHOUT_SEGMENTATION'|null,
+     *     StreamManifestBehavior?: 'DO_NOT_SEND'|'SEND'|null,
+     *     TimestampOffset?: string|null,
+     *     TimestampOffsetMode?: 'USE_CONFIGURED_OFFSET'|'USE_EVENT_START_DATE'|null
      * } $args
      */
     public function __construct(array $args)

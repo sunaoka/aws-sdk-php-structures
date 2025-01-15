@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetResourceEvaluationSummary\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EvaluationContextIdentifier
+ * @property string|null $EvaluationContextIdentifier
  */
 class EvaluationContext extends Shape
 {
     /**
-     * @param array{EvaluationContextIdentifier?: string} $args
+     * @param array{EvaluationContextIdentifier?: string|null} $args
      */
     public function __construct(array $args = [])
     {

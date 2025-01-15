@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\SendProjectSessionAction;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $Preview
+ * @property bool|null $Preview
  * @property string $Name
- * @property Shapes\RecipeStep $RecipeStep
- * @property int<0, max> $StepIndex
- * @property string $ClientSessionId
- * @property Shapes\ViewFrame $ViewFrame
+ * @property Shapes\RecipeStep|null $RecipeStep
+ * @property int<0, max>|null $StepIndex
+ * @property string|null $ClientSessionId
+ * @property Shapes\ViewFrame|null $ViewFrame
  */
 class SendProjectSessionActionRequest extends Request
 {
     /**
      * @param array{
-     *     Preview?: bool,
+     *     Preview?: bool|null,
      *     Name: string,
-     *     RecipeStep?: Shapes\RecipeStep,
-     *     StepIndex?: int<0, max>,
-     *     ClientSessionId?: string,
-     *     ViewFrame?: Shapes\ViewFrame
+     *     RecipeStep?: Shapes\RecipeStep|null,
+     *     StepIndex?: int<0, max>|null,
+     *     ClientSessionId?: string|null,
+     *     ViewFrame?: Shapes\ViewFrame|null
      * } $args
      */
     public function __construct(array $args)

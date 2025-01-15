@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assetModelId
- * @property string $nextToken
- * @property int<1, 250> $maxResults
- * @property string $assetModelVersion
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
+ * @property string|null $assetModelVersion
  */
 class ListAssetModelCompositeModelsRequest extends Request
 {
     /**
      * @param array{
      *     assetModelId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>,
-     *     assetModelVersion?: string
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null,
+     *     assetModelVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

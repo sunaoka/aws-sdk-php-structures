@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetLicenseRecommendations\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CloudWatchApplicationInsights' $provider
- * @property string $providerArn
+ * @property 'CloudWatchApplicationInsights'|null $provider
+ * @property string|null $providerArn
  */
 class MetricSource extends Shape
 {
     /**
      * @param array{
-     *     provider?: 'CloudWatchApplicationInsights',
-     *     providerArn?: string
+     *     provider?: 'CloudWatchApplicationInsights'|null,
+     *     providerArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

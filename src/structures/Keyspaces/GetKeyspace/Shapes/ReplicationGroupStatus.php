@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $region
  * @property 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING' $keyspaceStatus
- * @property string $tablesReplicationProgress
+ * @property string|null $tablesReplicationProgress
  */
 class ReplicationGroupStatus extends Shape
 {
@@ -15,7 +15,7 @@ class ReplicationGroupStatus extends Shape
      * @param array{
      *     region: string,
      *     keyspaceStatus: 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING',
-     *     tablesReplicationProgress?: string
+     *     tablesReplicationProgress?: string|null
      * } $args
      */
     public function __construct(array $args)

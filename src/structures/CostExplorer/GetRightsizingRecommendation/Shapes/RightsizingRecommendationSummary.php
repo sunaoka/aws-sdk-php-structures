@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetRightsizingRecommendation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TotalRecommendationCount
- * @property string $EstimatedTotalMonthlySavingsAmount
- * @property string $SavingsCurrencyCode
- * @property string $SavingsPercentage
+ * @property string|null $TotalRecommendationCount
+ * @property string|null $EstimatedTotalMonthlySavingsAmount
+ * @property string|null $SavingsCurrencyCode
+ * @property string|null $SavingsPercentage
  */
 class RightsizingRecommendationSummary extends Shape
 {
     /**
      * @param array{
-     *     TotalRecommendationCount?: string,
-     *     EstimatedTotalMonthlySavingsAmount?: string,
-     *     SavingsCurrencyCode?: string,
-     *     SavingsPercentage?: string
+     *     TotalRecommendationCount?: string|null,
+     *     EstimatedTotalMonthlySavingsAmount?: string|null,
+     *     SavingsCurrencyCode?: string|null,
+     *     SavingsPercentage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

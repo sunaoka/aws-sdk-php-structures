@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $eventData
  * @property string $eventId
- * @property list<EventReference> $eventReferences
+ * @property list<EventReference>|null $eventReferences
  * @property \Aws\Api\DateTimeResult $eventTime
  * @property string $eventType
  * @property \Aws\Api\DateTimeResult $eventUpdatedTime
@@ -19,7 +19,7 @@ class TimelineEvent extends Shape
      * @param array{
      *     eventData: string,
      *     eventId: string,
-     *     eventReferences?: list<EventReference>,
+     *     eventReferences?: list<EventReference>|null,
      *     eventTime: \Aws\Api\DateTimeResult,
      *     eventType: string,
      *     eventUpdatedTime: \Aws\Api\DateTimeResult,

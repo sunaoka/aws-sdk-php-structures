@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\BatchGetDeploymentTargets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $identifer
- * @property int $desiredCount
- * @property int $pendingCount
- * @property int $runningCount
- * @property string $status
- * @property double $trafficWeight
- * @property TargetGroupInfo $targetGroup
- * @property 'Blue'|'Green' $taskSetLabel
+ * @property string|null $identifer
+ * @property int|null $desiredCount
+ * @property int|null $pendingCount
+ * @property int|null $runningCount
+ * @property string|null $status
+ * @property double|null $trafficWeight
+ * @property TargetGroupInfo|null $targetGroup
+ * @property 'Blue'|'Green'|null $taskSetLabel
  */
 class ECSTaskSet extends Shape
 {
     /**
      * @param array{
-     *     identifer?: string,
-     *     desiredCount?: int,
-     *     pendingCount?: int,
-     *     runningCount?: int,
-     *     status?: string,
-     *     trafficWeight?: double,
-     *     targetGroup?: TargetGroupInfo,
-     *     taskSetLabel?: 'Blue'|'Green'
+     *     identifer?: string|null,
+     *     desiredCount?: int|null,
+     *     pendingCount?: int|null,
+     *     runningCount?: int|null,
+     *     status?: string|null,
+     *     trafficWeight?: double|null,
+     *     targetGroup?: TargetGroupInfo|null,
+     *     taskSetLabel?: 'Blue'|'Green'|null
      * } $args
      */
     public function __construct(array $args = [])

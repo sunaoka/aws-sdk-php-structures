@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMaker\StartPipelineExecution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourcePipelineExecutionArn
+ * @property string|null $SourcePipelineExecutionArn
  * @property list<SelectedStep> $SelectedSteps
  */
 class SelectiveExecutionConfig extends Shape
 {
     /**
      * @param array{
-     *     SourcePipelineExecutionArn?: string,
+     *     SourcePipelineExecutionArn?: string|null,
      *     SelectedSteps: list<SelectedStep>
      * } $args
      */

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\WorkMail\DescribeEntity;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $EntityId
- * @property string $Name
- * @property 'GROUP'|'USER'|'RESOURCE' $Type
+ * @property string|null $EntityId
+ * @property string|null $Name
+ * @property 'GROUP'|'USER'|'RESOURCE'|null $Type
  */
 class DescribeEntityResponse extends Response
 {

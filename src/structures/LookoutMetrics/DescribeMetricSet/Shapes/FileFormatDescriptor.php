@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\DescribeMetricSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CsvFormatDescriptor $CsvFormatDescriptor
- * @property JsonFormatDescriptor $JsonFormatDescriptor
+ * @property CsvFormatDescriptor|null $CsvFormatDescriptor
+ * @property JsonFormatDescriptor|null $JsonFormatDescriptor
  */
 class FileFormatDescriptor extends Shape
 {
     /**
      * @param array{
-     *     CsvFormatDescriptor?: CsvFormatDescriptor,
-     *     JsonFormatDescriptor?: JsonFormatDescriptor
+     *     CsvFormatDescriptor?: CsvFormatDescriptor|null,
+     *     JsonFormatDescriptor?: JsonFormatDescriptor|null
      * } $args
      */
     public function __construct(array $args = [])

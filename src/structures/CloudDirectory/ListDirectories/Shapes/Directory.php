@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\ListDirectories\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $DirectoryArn
- * @property 'ENABLED'|'DISABLED'|'DELETED' $State
- * @property \Aws\Api\DateTimeResult $CreationDateTime
+ * @property string|null $Name
+ * @property string|null $DirectoryArn
+ * @property 'ENABLED'|'DISABLED'|'DELETED'|null $State
+ * @property \Aws\Api\DateTimeResult|null $CreationDateTime
  */
 class Directory extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     DirectoryArn?: string,
-     *     State?: 'ENABLED'|'DISABLED'|'DELETED',
-     *     CreationDateTime?: \Aws\Api\DateTimeResult
+     *     Name?: string|null,
+     *     DirectoryArn?: string|null,
+     *     State?: 'ENABLED'|'DISABLED'|'DELETED'|null,
+     *     CreationDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

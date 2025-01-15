@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property list<string> $Inputs
  * @property string $ImputedPath
- * @property string $FilledPath
+ * @property string|null $FilledPath
  */
 class FillMissingValues extends Shape
 {
@@ -17,7 +17,7 @@ class FillMissingValues extends Shape
      *     Name: string,
      *     Inputs: list<string>,
      *     ImputedPath: string,
-     *     FilledPath?: string
+     *     FilledPath?: string|null
      * } $args
      */
     public function __construct(array $args)

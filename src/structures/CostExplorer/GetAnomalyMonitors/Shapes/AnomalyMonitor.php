@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetAnomalyMonitors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MonitorArn
+ * @property string|null $MonitorArn
  * @property string $MonitorName
- * @property string $CreationDate
- * @property string $LastUpdatedDate
- * @property string $LastEvaluatedDate
+ * @property string|null $CreationDate
+ * @property string|null $LastUpdatedDate
+ * @property string|null $LastEvaluatedDate
  * @property 'DIMENSIONAL'|'CUSTOM' $MonitorType
- * @property 'SERVICE' $MonitorDimension
- * @property Expression $MonitorSpecification
- * @property int<0, max> $DimensionalValueCount
+ * @property 'SERVICE'|null $MonitorDimension
+ * @property Expression|null $MonitorSpecification
+ * @property int<0, max>|null $DimensionalValueCount
  */
 class AnomalyMonitor extends Shape
 {
     /**
      * @param array{
-     *     MonitorArn?: string,
+     *     MonitorArn?: string|null,
      *     MonitorName: string,
-     *     CreationDate?: string,
-     *     LastUpdatedDate?: string,
-     *     LastEvaluatedDate?: string,
+     *     CreationDate?: string|null,
+     *     LastUpdatedDate?: string|null,
+     *     LastEvaluatedDate?: string|null,
      *     MonitorType: 'DIMENSIONAL'|'CUSTOM',
-     *     MonitorDimension?: 'SERVICE',
-     *     MonitorSpecification?: Expression,
-     *     DimensionalValueCount?: int<0, max>
+     *     MonitorDimension?: 'SERVICE'|null,
+     *     MonitorSpecification?: Expression|null,
+     *     DimensionalValueCount?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH' $boostingLevel
- * @property 'PRIORITIZE_LARGER_VALUES'|'PRIORITIZE_SMALLER_VALUES' $boostingType
+ * @property 'PRIORITIZE_LARGER_VALUES'|'PRIORITIZE_SMALLER_VALUES'|null $boostingType
  */
 class NumberAttributeBoostingConfiguration extends Shape
 {
     /**
      * @param array{
      *     boostingLevel: 'NONE'|'LOW'|'MEDIUM'|'HIGH'|'VERY_HIGH',
-     *     boostingType?: 'PRIORITIZE_LARGER_VALUES'|'PRIORITIZE_SMALLER_VALUES'
+     *     boostingType?: 'PRIORITIZE_LARGER_VALUES'|'PRIORITIZE_SMALLER_VALUES'|null
      * } $args
      */
     public function __construct(array $args)

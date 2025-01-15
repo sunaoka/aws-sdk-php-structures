@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Base
+ * @property double|null $Base
  */
 class AxisLogarithmicScale extends Shape
 {
     /**
-     * @param array{Base?: double} $args
+     * @param array{Base?: double|null} $args
      */
     public function __construct(array $args = [])
     {

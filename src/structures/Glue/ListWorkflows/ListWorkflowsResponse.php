@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Glue\ListWorkflows;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $Workflows
- * @property string $NextToken
+ * @property list<string>|null $Workflows
+ * @property string|null $NextToken
  */
 class ListWorkflowsResponse extends Response
 {

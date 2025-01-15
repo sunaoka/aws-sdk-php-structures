@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $UserName
  * @property string $ServerId
- * @property string $SessionId
+ * @property string|null $SessionId
  */
 class UserDetails extends Shape
 {
@@ -15,7 +15,7 @@ class UserDetails extends Shape
      * @param array{
      *     UserName: string,
      *     ServerId: string,
-     *     SessionId?: string
+     *     SessionId?: string|null
      * } $args
      */
     public function __construct(array $args)

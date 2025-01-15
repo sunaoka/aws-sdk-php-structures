@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $S3Uri
- * @property string $LabelDelimiter
+ * @property string|null $LabelDelimiter
  */
 class DatasetDocumentClassifierInputDataConfig extends Shape
 {
     /**
      * @param array{
      *     S3Uri: string,
-     *     LabelDelimiter?: string
+     *     LabelDelimiter?: string|null
      * } $args
      */
     public function __construct(array $args)

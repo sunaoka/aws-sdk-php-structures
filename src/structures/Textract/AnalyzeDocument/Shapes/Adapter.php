@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AdapterId
- * @property list<string> $Pages
+ * @property list<string>|null $Pages
  * @property string $Version
  */
 class Adapter extends Shape
@@ -14,7 +14,7 @@ class Adapter extends Shape
     /**
      * @param array{
      *     AdapterId: string,
-     *     Pages?: list<string>,
+     *     Pages?: list<string>|null,
      *     Version: string
      * } $args
      */

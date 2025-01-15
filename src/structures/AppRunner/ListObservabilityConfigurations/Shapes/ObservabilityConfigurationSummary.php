@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppRunner\ListObservabilityConfigurations\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ObservabilityConfigurationArn
- * @property string $ObservabilityConfigurationName
- * @property int $ObservabilityConfigurationRevision
+ * @property string|null $ObservabilityConfigurationArn
+ * @property string|null $ObservabilityConfigurationName
+ * @property int|null $ObservabilityConfigurationRevision
  */
 class ObservabilityConfigurationSummary extends Shape
 {
     /**
      * @param array{
-     *     ObservabilityConfigurationArn?: string,
-     *     ObservabilityConfigurationName?: string,
-     *     ObservabilityConfigurationRevision?: int
+     *     ObservabilityConfigurationArn?: string|null,
+     *     ObservabilityConfigurationName?: string|null,
+     *     ObservabilityConfigurationRevision?: int|null
      * } $args
      */
     public function __construct(array $args = [])

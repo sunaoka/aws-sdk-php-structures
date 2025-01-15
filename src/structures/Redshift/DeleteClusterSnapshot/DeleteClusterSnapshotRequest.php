@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SnapshotIdentifier
- * @property string $SnapshotClusterIdentifier
+ * @property string|null $SnapshotClusterIdentifier
  */
 class DeleteClusterSnapshotRequest extends Request
 {
     /**
      * @param array{
      *     SnapshotIdentifier: string,
-     *     SnapshotClusterIdentifier?: string
+     *     SnapshotClusterIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

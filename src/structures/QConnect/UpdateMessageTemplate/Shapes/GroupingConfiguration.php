@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QConnect\UpdateMessageTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $criteria
- * @property list<string> $values
+ * @property string|null $criteria
+ * @property list<string>|null $values
  */
 class GroupingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     criteria?: string,
-     *     values?: list<string>
+     *     criteria?: string|null,
+     *     values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

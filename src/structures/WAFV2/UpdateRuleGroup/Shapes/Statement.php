@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\WAFV2\UpdateRuleGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ByteMatchStatement $ByteMatchStatement
- * @property SqliMatchStatement $SqliMatchStatement
- * @property XssMatchStatement $XssMatchStatement
- * @property SizeConstraintStatement $SizeConstraintStatement
- * @property GeoMatchStatement $GeoMatchStatement
- * @property RuleGroupReferenceStatement $RuleGroupReferenceStatement
- * @property IPSetReferenceStatement $IPSetReferenceStatement
- * @property RegexPatternSetReferenceStatement $RegexPatternSetReferenceStatement
- * @property RateBasedStatement $RateBasedStatement
- * @property AndStatement $AndStatement
- * @property OrStatement $OrStatement
- * @property NotStatement $NotStatement
- * @property ManagedRuleGroupStatement $ManagedRuleGroupStatement
- * @property LabelMatchStatement $LabelMatchStatement
- * @property RegexMatchStatement $RegexMatchStatement
+ * @property ByteMatchStatement|null $ByteMatchStatement
+ * @property SqliMatchStatement|null $SqliMatchStatement
+ * @property XssMatchStatement|null $XssMatchStatement
+ * @property SizeConstraintStatement|null $SizeConstraintStatement
+ * @property GeoMatchStatement|null $GeoMatchStatement
+ * @property RuleGroupReferenceStatement|null $RuleGroupReferenceStatement
+ * @property IPSetReferenceStatement|null $IPSetReferenceStatement
+ * @property RegexPatternSetReferenceStatement|null $RegexPatternSetReferenceStatement
+ * @property RateBasedStatement|null $RateBasedStatement
+ * @property AndStatement|null $AndStatement
+ * @property OrStatement|null $OrStatement
+ * @property NotStatement|null $NotStatement
+ * @property ManagedRuleGroupStatement|null $ManagedRuleGroupStatement
+ * @property LabelMatchStatement|null $LabelMatchStatement
+ * @property RegexMatchStatement|null $RegexMatchStatement
  */
 class Statement extends Shape
 {
     /**
      * @param array{
-     *     ByteMatchStatement?: ByteMatchStatement,
-     *     SqliMatchStatement?: SqliMatchStatement,
-     *     XssMatchStatement?: XssMatchStatement,
-     *     SizeConstraintStatement?: SizeConstraintStatement,
-     *     GeoMatchStatement?: GeoMatchStatement,
-     *     RuleGroupReferenceStatement?: RuleGroupReferenceStatement,
-     *     IPSetReferenceStatement?: IPSetReferenceStatement,
-     *     RegexPatternSetReferenceStatement?: RegexPatternSetReferenceStatement,
-     *     RateBasedStatement?: RateBasedStatement,
-     *     AndStatement?: AndStatement,
-     *     OrStatement?: OrStatement,
-     *     NotStatement?: NotStatement,
-     *     ManagedRuleGroupStatement?: ManagedRuleGroupStatement,
-     *     LabelMatchStatement?: LabelMatchStatement,
-     *     RegexMatchStatement?: RegexMatchStatement
+     *     ByteMatchStatement?: ByteMatchStatement|null,
+     *     SqliMatchStatement?: SqliMatchStatement|null,
+     *     XssMatchStatement?: XssMatchStatement|null,
+     *     SizeConstraintStatement?: SizeConstraintStatement|null,
+     *     GeoMatchStatement?: GeoMatchStatement|null,
+     *     RuleGroupReferenceStatement?: RuleGroupReferenceStatement|null,
+     *     IPSetReferenceStatement?: IPSetReferenceStatement|null,
+     *     RegexPatternSetReferenceStatement?: RegexPatternSetReferenceStatement|null,
+     *     RateBasedStatement?: RateBasedStatement|null,
+     *     AndStatement?: AndStatement|null,
+     *     OrStatement?: OrStatement|null,
+     *     NotStatement?: NotStatement|null,
+     *     ManagedRuleGroupStatement?: ManagedRuleGroupStatement|null,
+     *     LabelMatchStatement?: LabelMatchStatement|null,
+     *     RegexMatchStatement?: RegexMatchStatement|null
      * } $args
      */
     public function __construct(array $args = [])

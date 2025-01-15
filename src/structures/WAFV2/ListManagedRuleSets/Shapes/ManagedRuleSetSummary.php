@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\WAFV2\ListManagedRuleSets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Id
- * @property string $Description
- * @property string $LockToken
- * @property string $ARN
- * @property string $LabelNamespace
+ * @property string|null $Name
+ * @property string|null $Id
+ * @property string|null $Description
+ * @property string|null $LockToken
+ * @property string|null $ARN
+ * @property string|null $LabelNamespace
  */
 class ManagedRuleSetSummary extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Id?: string,
-     *     Description?: string,
-     *     LockToken?: string,
-     *     ARN?: string,
-     *     LabelNamespace?: string
+     *     Name?: string|null,
+     *     Id?: string|null,
+     *     Description?: string|null,
+     *     LockToken?: string|null,
+     *     ARN?: string|null,
+     *     LabelNamespace?: string|null
      * } $args
      */
     public function __construct(array $args = [])

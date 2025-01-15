@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\ListIntegrations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $integrationName
- * @property 'OPENSEARCH' $integrationType
- * @property 'PROVISIONING'|'ACTIVE'|'FAILED' $integrationStatus
+ * @property string|null $integrationName
+ * @property 'OPENSEARCH'|null $integrationType
+ * @property 'PROVISIONING'|'ACTIVE'|'FAILED'|null $integrationStatus
  */
 class IntegrationSummary extends Shape
 {
     /**
      * @param array{
-     *     integrationName?: string,
-     *     integrationType?: 'OPENSEARCH',
-     *     integrationStatus?: 'PROVISIONING'|'ACTIVE'|'FAILED'
+     *     integrationName?: string|null,
+     *     integrationType?: 'OPENSEARCH'|null,
+     *     integrationStatus?: 'PROVISIONING'|'ACTIVE'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

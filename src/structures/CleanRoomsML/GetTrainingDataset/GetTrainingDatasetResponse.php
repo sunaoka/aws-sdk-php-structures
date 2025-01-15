@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\Dataset> $trainingData
  * @property 'ACTIVE' $status
  * @property string $roleArn
- * @property array<string, string> $tags
- * @property string $description
+ * @property array<string, string>|null $tags
+ * @property string|null $description
  */
 class GetTrainingDatasetResponse extends Response
 {

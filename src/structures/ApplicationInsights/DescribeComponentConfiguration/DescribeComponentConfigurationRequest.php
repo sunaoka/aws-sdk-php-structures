@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ResourceGroupName
  * @property string $ComponentName
- * @property string $AccountId
+ * @property string|null $AccountId
  */
 class DescribeComponentConfigurationRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeComponentConfigurationRequest extends Request
      * @param array{
      *     ResourceGroupName: string,
      *     ComponentName: string,
-     *     AccountId?: string
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

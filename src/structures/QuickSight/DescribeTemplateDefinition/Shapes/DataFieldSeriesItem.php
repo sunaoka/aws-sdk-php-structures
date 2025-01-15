@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FieldId
- * @property string $FieldValue
+ * @property string|null $FieldValue
  * @property 'PRIMARY_YAXIS'|'SECONDARY_YAXIS' $AxisBinding
- * @property LineChartSeriesSettings $Settings
+ * @property LineChartSeriesSettings|null $Settings
  */
 class DataFieldSeriesItem extends Shape
 {
     /**
      * @param array{
      *     FieldId: string,
-     *     FieldValue?: string,
+     *     FieldValue?: string|null,
      *     AxisBinding: 'PRIMARY_YAXIS'|'SECONDARY_YAXIS',
-     *     Settings?: LineChartSeriesSettings
+     *     Settings?: LineChartSeriesSettings|null
      * } $args
      */
     public function __construct(array $args)

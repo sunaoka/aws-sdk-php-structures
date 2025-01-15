@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeInstanceRefreshes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Alarms
+ * @property list<string>|null $Alarms
  */
 class AlarmSpecification extends Shape
 {
     /**
-     * @param array{Alarms?: list<string>} $args
+     * @param array{Alarms?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $loadBalancerName
  * @property string $certificateName
- * @property bool $force
+ * @property bool|null $force
  */
 class DeleteLoadBalancerTlsCertificateRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteLoadBalancerTlsCertificateRequest extends Request
      * @param array{
      *     loadBalancerName: string,
      *     certificateName: string,
-     *     force?: bool
+     *     force?: bool|null
      * } $args
      */
     public function __construct(array $args)

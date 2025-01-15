@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $arn
  * @property DataLakeDatasetSchema $schema
- * @property string $description
+ * @property string|null $description
  * @property \Aws\Api\DateTimeResult $createdTime
  * @property \Aws\Api\DateTimeResult $lastModifiedTime
  */
@@ -23,7 +23,7 @@ class DataLakeDataset extends Shape
      *     name: string,
      *     arn: string,
      *     schema: DataLakeDatasetSchema,
-     *     description?: string,
+     *     description?: string|null,
      *     createdTime: \Aws\Api\DateTimeResult,
      *     lastModifiedTime: \Aws\Api\DateTimeResult
      * } $args

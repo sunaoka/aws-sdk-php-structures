@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RdsDbInstanceConfiguration $configuration
- * @property ResourceCostCalculation $costCalculation
+ * @property RdsDbInstanceConfiguration|null $configuration
+ * @property ResourceCostCalculation|null $costCalculation
  */
 class RdsDbInstance extends Shape
 {
     /**
      * @param array{
-     *     configuration?: RdsDbInstanceConfiguration,
-     *     costCalculation?: ResourceCostCalculation
+     *     configuration?: RdsDbInstanceConfiguration|null,
+     *     costCalculation?: ResourceCostCalculation|null
      * } $args
      */
     public function __construct(array $args = [])

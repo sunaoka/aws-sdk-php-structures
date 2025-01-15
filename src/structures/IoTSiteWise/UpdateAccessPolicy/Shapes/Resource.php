@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\UpdateAccessPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PortalResource $portal
- * @property ProjectResource $project
+ * @property PortalResource|null $portal
+ * @property ProjectResource|null $project
  */
 class Resource extends Shape
 {
     /**
      * @param array{
-     *     portal?: PortalResource,
-     *     project?: ProjectResource
+     *     portal?: PortalResource|null,
+     *     project?: ProjectResource|null
      * } $args
      */
     public function __construct(array $args = [])

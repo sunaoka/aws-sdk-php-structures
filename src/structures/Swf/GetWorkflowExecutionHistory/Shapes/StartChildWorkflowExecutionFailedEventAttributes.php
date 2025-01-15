@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $workflowId
  * @property int $initiatedEventId
  * @property int $decisionTaskCompletedEventId
- * @property string $control
+ * @property string|null $control
  */
 class StartChildWorkflowExecutionFailedEventAttributes extends Shape
 {
@@ -21,7 +21,7 @@ class StartChildWorkflowExecutionFailedEventAttributes extends Shape
      *     workflowId: string,
      *     initiatedEventId: int,
      *     decisionTaskCompletedEventId: int,
-     *     control?: string
+     *     control?: string|null
      * } $args
      */
     public function __construct(array $args)

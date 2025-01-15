@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\MediaTailor\UpdateLiveSource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property list<Shapes\HttpPackageConfiguration> $HttpPackageConfigurations
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $LiveSourceName
- * @property string $SourceLocationName
- * @property array<string, string> $Tags
+ * @property string|null $Arn
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property list<Shapes\HttpPackageConfiguration>|null $HttpPackageConfigurations
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LiveSourceName
+ * @property string|null $SourceLocationName
+ * @property array<string, string>|null $Tags
  */
 class UpdateLiveSourceResponse extends Response
 {

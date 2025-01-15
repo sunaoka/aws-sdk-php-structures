@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $tableBucketARN
  * @property string $namespace
  * @property string $name
- * @property string $versionToken
+ * @property string|null $versionToken
  */
 class DeleteTableRequest extends Request
 {
@@ -17,7 +17,7 @@ class DeleteTableRequest extends Request
      *     tableBucketARN: string,
      *     namespace: string,
      *     name: string,
-     *     versionToken?: string
+     *     versionToken?: string|null
      * } $args
      */
     public function __construct(array $args)

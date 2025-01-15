@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InputId
- * @property string $RequestId
- * @property array<string, string> $Tags
+ * @property string|null $RequestId
+ * @property array<string, string>|null $Tags
  */
 class CreatePartnerInputRequest extends Request
 {
     /**
      * @param array{
      *     InputId: string,
-     *     RequestId?: string,
-     *     Tags?: array<string, string>
+     *     RequestId?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

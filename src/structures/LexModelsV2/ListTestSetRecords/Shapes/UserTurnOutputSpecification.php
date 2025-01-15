@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property UserTurnIntentOutput $intent
- * @property list<ActiveContext> $activeContexts
- * @property string $transcript
+ * @property list<ActiveContext>|null $activeContexts
+ * @property string|null $transcript
  */
 class UserTurnOutputSpecification extends Shape
 {
     /**
      * @param array{
      *     intent: UserTurnIntentOutput,
-     *     activeContexts?: list<ActiveContext>,
-     *     transcript?: string
+     *     activeContexts?: list<ActiveContext>|null,
+     *     transcript?: string|null
      * } $args
      */
     public function __construct(array $args)

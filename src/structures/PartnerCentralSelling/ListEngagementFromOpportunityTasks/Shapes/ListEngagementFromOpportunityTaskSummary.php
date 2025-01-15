@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\ListEngagementFromOpportu
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EngagementId
- * @property string $EngagementInvitationId
- * @property string $Message
- * @property string $OpportunityId
- * @property 'InvitationAccessDenied'|'InvitationValidationFailed'|'EngagementAccessDenied'|'OpportunityAccessDenied'|'ResourceSnapshotJobAccessDenied'|'ResourceSnapshotJobValidationFailed'|'ResourceSnapshotJobConflict'|'EngagementValidationFailed'|'EngagementConflict'|'OpportunitySubmissionFailed'|'EngagementInvitationConflict'|'OpportunityValidationFailed'|'OpportunityConflict'|'ResourceSnapshotAccessDenied'|'ResourceSnapshotValidationFailed'|'ResourceSnapshotConflict'|'InternalError'|'ServiceQuotaExceeded'|'RequestThrottled' $ReasonCode
- * @property string $ResourceSnapshotJobId
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property string $TaskArn
- * @property string $TaskId
- * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED' $TaskStatus
+ * @property string|null $EngagementId
+ * @property string|null $EngagementInvitationId
+ * @property string|null $Message
+ * @property string|null $OpportunityId
+ * @property 'InvitationAccessDenied'|'InvitationValidationFailed'|'EngagementAccessDenied'|'OpportunityAccessDenied'|'ResourceSnapshotJobAccessDenied'|'ResourceSnapshotJobValidationFailed'|'ResourceSnapshotJobConflict'|'EngagementValidationFailed'|'EngagementConflict'|'OpportunitySubmissionFailed'|'EngagementInvitationConflict'|'OpportunityValidationFailed'|'OpportunityConflict'|'ResourceSnapshotAccessDenied'|'ResourceSnapshotValidationFailed'|'ResourceSnapshotConflict'|'InternalError'|'ServiceQuotaExceeded'|'RequestThrottled'|null $ReasonCode
+ * @property string|null $ResourceSnapshotJobId
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property string|null $TaskArn
+ * @property string|null $TaskId
+ * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED'|null $TaskStatus
  */
 class ListEngagementFromOpportunityTaskSummary extends Shape
 {
     /**
      * @param array{
-     *     EngagementId?: string,
-     *     EngagementInvitationId?: string,
-     *     Message?: string,
-     *     OpportunityId?: string,
-     *     ReasonCode?: 'InvitationAccessDenied'|'InvitationValidationFailed'|'EngagementAccessDenied'|'OpportunityAccessDenied'|'ResourceSnapshotJobAccessDenied'|'ResourceSnapshotJobValidationFailed'|'ResourceSnapshotJobConflict'|'EngagementValidationFailed'|'EngagementConflict'|'OpportunitySubmissionFailed'|'EngagementInvitationConflict'|'OpportunityValidationFailed'|'OpportunityConflict'|'ResourceSnapshotAccessDenied'|'ResourceSnapshotValidationFailed'|'ResourceSnapshotConflict'|'InternalError'|'ServiceQuotaExceeded'|'RequestThrottled',
-     *     ResourceSnapshotJobId?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     TaskArn?: string,
-     *     TaskId?: string,
-     *     TaskStatus?: 'IN_PROGRESS'|'COMPLETE'|'FAILED'
+     *     EngagementId?: string|null,
+     *     EngagementInvitationId?: string|null,
+     *     Message?: string|null,
+     *     OpportunityId?: string|null,
+     *     ReasonCode?: 'InvitationAccessDenied'|'InvitationValidationFailed'|'EngagementAccessDenied'|'OpportunityAccessDenied'|'ResourceSnapshotJobAccessDenied'|'ResourceSnapshotJobValidationFailed'|'ResourceSnapshotJobConflict'|'EngagementValidationFailed'|'EngagementConflict'|'OpportunitySubmissionFailed'|'EngagementInvitationConflict'|'OpportunityValidationFailed'|'OpportunityConflict'|'ResourceSnapshotAccessDenied'|'ResourceSnapshotValidationFailed'|'ResourceSnapshotConflict'|'InternalError'|'ServiceQuotaExceeded'|'RequestThrottled'|null,
+     *     ResourceSnapshotJobId?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     TaskArn?: string|null,
+     *     TaskId?: string|null,
+     *     TaskStatus?: 'IN_PROGRESS'|'COMPLETE'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $runId
  * @property string $scanName
- * @property string $scanNameArn
+ * @property string|null $scanNameArn
  * @property 'InProgress'|'Successful'|'Failed' $scanState
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class ScanSummary extends Shape
 {
@@ -19,9 +19,9 @@ class ScanSummary extends Shape
      *     createdAt: \Aws\Api\DateTimeResult,
      *     runId: string,
      *     scanName: string,
-     *     scanNameArn?: string,
+     *     scanNameArn?: string|null,
      *     scanState: 'InProgress'|'Successful'|'Failed',
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

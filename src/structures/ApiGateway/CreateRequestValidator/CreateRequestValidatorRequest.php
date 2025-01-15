@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $restApiId
- * @property string $name
- * @property bool $validateRequestBody
- * @property bool $validateRequestParameters
+ * @property string|null $name
+ * @property bool|null $validateRequestBody
+ * @property bool|null $validateRequestParameters
  */
 class CreateRequestValidatorRequest extends Request
 {
     /**
      * @param array{
      *     restApiId: string,
-     *     name?: string,
-     *     validateRequestBody?: bool,
-     *     validateRequestParameters?: bool
+     *     name?: string|null,
+     *     validateRequestBody?: bool|null,
+     *     validateRequestParameters?: bool|null
      * } $args
      */
     public function __construct(array $args)

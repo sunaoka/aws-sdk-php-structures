@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $thingName
  * @property string $entityId
- * @property int $namespaceVersion
+ * @property int|null $namespaceVersion
  */
 class AssociateEntityToThingRequest extends Request
 {
@@ -15,7 +15,7 @@ class AssociateEntityToThingRequest extends Request
      * @param array{
      *     thingName: string,
      *     entityId: string,
-     *     namespaceVersion?: int
+     *     namespaceVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

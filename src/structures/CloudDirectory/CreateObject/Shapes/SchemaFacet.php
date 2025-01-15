@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\CreateObject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SchemaArn
- * @property string $FacetName
+ * @property string|null $SchemaArn
+ * @property string|null $FacetName
  */
 class SchemaFacet extends Shape
 {
     /**
      * @param array{
-     *     SchemaArn?: string,
-     *     FacetName?: string
+     *     SchemaArn?: string|null,
+     *     FacetName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

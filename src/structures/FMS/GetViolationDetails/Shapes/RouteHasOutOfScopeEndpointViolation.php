@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubnetId
- * @property string $VpcId
- * @property string $RouteTableId
- * @property list<Route> $ViolatingRoutes
- * @property string $SubnetAvailabilityZone
- * @property string $SubnetAvailabilityZoneId
- * @property string $CurrentFirewallSubnetRouteTable
- * @property string $FirewallSubnetId
- * @property list<Route> $FirewallSubnetRoutes
- * @property string $InternetGatewayId
- * @property string $CurrentInternetGatewayRouteTable
- * @property list<Route> $InternetGatewayRoutes
+ * @property string|null $SubnetId
+ * @property string|null $VpcId
+ * @property string|null $RouteTableId
+ * @property list<Route>|null $ViolatingRoutes
+ * @property string|null $SubnetAvailabilityZone
+ * @property string|null $SubnetAvailabilityZoneId
+ * @property string|null $CurrentFirewallSubnetRouteTable
+ * @property string|null $FirewallSubnetId
+ * @property list<Route>|null $FirewallSubnetRoutes
+ * @property string|null $InternetGatewayId
+ * @property string|null $CurrentInternetGatewayRouteTable
+ * @property list<Route>|null $InternetGatewayRoutes
  */
 class RouteHasOutOfScopeEndpointViolation extends Shape
 {
     /**
      * @param array{
-     *     SubnetId?: string,
-     *     VpcId?: string,
-     *     RouteTableId?: string,
-     *     ViolatingRoutes?: list<Route>,
-     *     SubnetAvailabilityZone?: string,
-     *     SubnetAvailabilityZoneId?: string,
-     *     CurrentFirewallSubnetRouteTable?: string,
-     *     FirewallSubnetId?: string,
-     *     FirewallSubnetRoutes?: list<Route>,
-     *     InternetGatewayId?: string,
-     *     CurrentInternetGatewayRouteTable?: string,
-     *     InternetGatewayRoutes?: list<Route>
+     *     SubnetId?: string|null,
+     *     VpcId?: string|null,
+     *     RouteTableId?: string|null,
+     *     ViolatingRoutes?: list<Route>|null,
+     *     SubnetAvailabilityZone?: string|null,
+     *     SubnetAvailabilityZoneId?: string|null,
+     *     CurrentFirewallSubnetRouteTable?: string|null,
+     *     FirewallSubnetId?: string|null,
+     *     FirewallSubnetRoutes?: list<Route>|null,
+     *     InternetGatewayId?: string|null,
+     *     CurrentInternetGatewayRouteTable?: string|null,
+     *     InternetGatewayRoutes?: list<Route>|null
      * } $args
      */
     public function __construct(array $args = [])

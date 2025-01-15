@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GroundStation\GetMissionProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $kmsAliasArn
- * @property string $kmsAliasName
- * @property string $kmsKeyArn
+ * @property string|null $kmsAliasArn
+ * @property string|null $kmsAliasName
+ * @property string|null $kmsKeyArn
  */
 class KmsKey extends Shape
 {
     /**
      * @param array{
-     *     kmsAliasArn?: string,
-     *     kmsAliasName?: string,
-     *     kmsKeyArn?: string
+     *     kmsAliasArn?: string|null,
+     *     kmsAliasName?: string|null,
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

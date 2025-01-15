@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImageBuildVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Ami> $amis
- * @property list<Container> $containers
+ * @property list<Ami>|null $amis
+ * @property list<Container>|null $containers
  */
 class OutputResources extends Shape
 {
     /**
      * @param array{
-     *     amis?: list<Ami>,
-     *     containers?: list<Container>
+     *     amis?: list<Ami>|null,
+     *     containers?: list<Container>|null
      * } $args
      */
     public function __construct(array $args = [])

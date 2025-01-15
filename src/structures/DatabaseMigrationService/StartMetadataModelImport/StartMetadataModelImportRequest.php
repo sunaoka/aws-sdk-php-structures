@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $MigrationProjectIdentifier
  * @property string $SelectionRules
  * @property 'SOURCE'|'TARGET' $Origin
- * @property bool $Refresh
+ * @property bool|null $Refresh
  */
 class StartMetadataModelImportRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartMetadataModelImportRequest extends Request
      *     MigrationProjectIdentifier: string,
      *     SelectionRules: string,
      *     Origin: 'SOURCE'|'TARGET',
-     *     Refresh?: bool
+     *     Refresh?: bool|null
      * } $args
      */
     public function __construct(array $args)

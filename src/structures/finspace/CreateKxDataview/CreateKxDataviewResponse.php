@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\finspace\CreateKxDataview;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $dataviewName
- * @property string $databaseName
- * @property string $environmentId
- * @property 'SINGLE'|'MULTI' $azMode
- * @property string $availabilityZoneId
- * @property string $changesetId
- * @property list<Shapes\KxDataviewSegmentConfiguration> $segmentConfigurations
- * @property string $description
- * @property bool $autoUpdate
- * @property bool $readWrite
- * @property \Aws\Api\DateTimeResult $createdTimestamp
- * @property \Aws\Api\DateTimeResult $lastModifiedTimestamp
- * @property 'CREATING'|'ACTIVE'|'UPDATING'|'FAILED'|'DELETING' $status
+ * @property string|null $dataviewName
+ * @property string|null $databaseName
+ * @property string|null $environmentId
+ * @property 'SINGLE'|'MULTI'|null $azMode
+ * @property string|null $availabilityZoneId
+ * @property string|null $changesetId
+ * @property list<Shapes\KxDataviewSegmentConfiguration>|null $segmentConfigurations
+ * @property string|null $description
+ * @property bool|null $autoUpdate
+ * @property bool|null $readWrite
+ * @property \Aws\Api\DateTimeResult|null $createdTimestamp
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTimestamp
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'FAILED'|'DELETING'|null $status
  */
 class CreateKxDataviewResponse extends Response
 {

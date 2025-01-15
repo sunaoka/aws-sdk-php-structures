@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FSx\DescribeBackups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $BackupIds
- * @property list<Shapes\Filter> $Filters
- * @property int<1, 2147483647> $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $BackupIds
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int<1, 2147483647>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeBackupsRequest extends Request
 {
     /**
      * @param array{
-     *     BackupIds?: list<string>,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int<1, 2147483647>,
-     *     NextToken?: string
+     *     BackupIds?: list<string>|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxResults?: int<1, 2147483647>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeCommit\GetFolder\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $blobId
- * @property string $absolutePath
- * @property string $relativePath
- * @property 'EXECUTABLE'|'NORMAL'|'SYMLINK' $fileMode
+ * @property string|null $blobId
+ * @property string|null $absolutePath
+ * @property string|null $relativePath
+ * @property 'EXECUTABLE'|'NORMAL'|'SYMLINK'|null $fileMode
  */
 class File extends Shape
 {
     /**
      * @param array{
-     *     blobId?: string,
-     *     absolutePath?: string,
-     *     relativePath?: string,
-     *     fileMode?: 'EXECUTABLE'|'NORMAL'|'SYMLINK'
+     *     blobId?: string|null,
+     *     absolutePath?: string|null,
+     *     relativePath?: string|null,
+     *     fileMode?: 'EXECUTABLE'|'NORMAL'|'SYMLINK'|null
      * } $args
      */
     public function __construct(array $args = [])

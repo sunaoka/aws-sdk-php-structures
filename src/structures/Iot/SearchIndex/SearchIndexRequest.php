@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Iot\SearchIndex;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $indexName
+ * @property string|null $indexName
  * @property string $queryString
- * @property string $nextToken
- * @property int<1, max> $maxResults
- * @property string $queryVersion
+ * @property string|null $nextToken
+ * @property int<1, max>|null $maxResults
+ * @property string|null $queryVersion
  */
 class SearchIndexRequest extends Request
 {
     /**
      * @param array{
-     *     indexName?: string,
+     *     indexName?: string|null,
      *     queryString: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, max>,
-     *     queryVersion?: string
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, max>|null,
+     *     queryVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

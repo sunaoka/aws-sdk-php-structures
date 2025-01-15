@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateQuickResponse\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $content
+ * @property string|null $content
  */
 class QuickResponseContentProvider extends Shape
 {
     /**
-     * @param array{content?: string} $args
+     * @param array{content?: string|null} $args
      */
     public function __construct(array $args = [])
     {

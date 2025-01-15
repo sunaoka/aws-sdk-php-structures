@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Bucket
- * @property string $BucketArn
+ * @property string|null $BucketArn
  * @property bool $PublicAccessBlockEnabled
  * @property \Aws\Api\DateTimeResult $CreationDate
- * @property string $OutpostId
+ * @property string|null $OutpostId
  */
 class RegionalBucket extends Shape
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     BucketArn?: string,
+     *     BucketArn?: string|null,
      *     PublicAccessBlockEnabled: bool,
      *     CreationDate: \Aws\Api\DateTimeResult,
-     *     OutpostId?: string
+     *     OutpostId?: string|null
      * } $args
      */
     public function __construct(array $args)

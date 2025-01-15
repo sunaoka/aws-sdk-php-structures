@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\Rekognition\DescribeStreamProcessor;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Name
- * @property string $StreamProcessorArn
- * @property 'STOPPED'|'STARTING'|'RUNNING'|'FAILED'|'STOPPING'|'UPDATING' $Status
- * @property string $StatusMessage
- * @property \Aws\Api\DateTimeResult $CreationTimestamp
- * @property \Aws\Api\DateTimeResult $LastUpdateTimestamp
- * @property Shapes\StreamProcessorInput $Input
- * @property Shapes\StreamProcessorOutput $Output
- * @property string $RoleArn
- * @property Shapes\StreamProcessorSettings $Settings
- * @property Shapes\StreamProcessorNotificationChannel $NotificationChannel
- * @property string $KmsKeyId
- * @property list<Shapes\RegionOfInterest> $RegionsOfInterest
- * @property Shapes\StreamProcessorDataSharingPreference $DataSharingPreference
+ * @property string|null $Name
+ * @property string|null $StreamProcessorArn
+ * @property 'STOPPED'|'STARTING'|'RUNNING'|'FAILED'|'STOPPING'|'UPDATING'|null $Status
+ * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $CreationTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdateTimestamp
+ * @property Shapes\StreamProcessorInput|null $Input
+ * @property Shapes\StreamProcessorOutput|null $Output
+ * @property string|null $RoleArn
+ * @property Shapes\StreamProcessorSettings|null $Settings
+ * @property Shapes\StreamProcessorNotificationChannel|null $NotificationChannel
+ * @property string|null $KmsKeyId
+ * @property list<Shapes\RegionOfInterest>|null $RegionsOfInterest
+ * @property Shapes\StreamProcessorDataSharingPreference|null $DataSharingPreference
  */
 class DescribeStreamProcessorResponse extends Response
 {

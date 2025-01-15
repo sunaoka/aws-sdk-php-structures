@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateNetwork;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\IpPoolCreateRequest> $IpPools
- * @property string $Name
- * @property string $RequestId
- * @property list<Shapes\RouteCreateRequest> $Routes
- * @property array<string, string> $Tags
+ * @property list<Shapes\IpPoolCreateRequest>|null $IpPools
+ * @property string|null $Name
+ * @property string|null $RequestId
+ * @property list<Shapes\RouteCreateRequest>|null $Routes
+ * @property array<string, string>|null $Tags
  */
 class CreateNetworkRequest extends Request
 {
     /**
      * @param array{
-     *     IpPools?: list<Shapes\IpPoolCreateRequest>,
-     *     Name?: string,
-     *     RequestId?: string,
-     *     Routes?: list<Shapes\RouteCreateRequest>,
-     *     Tags?: array<string, string>
+     *     IpPools?: list<Shapes\IpPoolCreateRequest>|null,
+     *     Name?: string|null,
+     *     RequestId?: string|null,
+     *     Routes?: list<Shapes\RouteCreateRequest>|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

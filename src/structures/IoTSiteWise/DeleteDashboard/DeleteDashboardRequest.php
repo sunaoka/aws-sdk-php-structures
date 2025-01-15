@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $dashboardId
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeleteDashboardRequest extends Request
 {
     /**
      * @param array{
      *     dashboardId: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

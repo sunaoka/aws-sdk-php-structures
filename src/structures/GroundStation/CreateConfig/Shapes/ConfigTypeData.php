@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\GroundStation\CreateConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AntennaDownlinkConfig $antennaDownlinkConfig
- * @property AntennaDownlinkDemodDecodeConfig $antennaDownlinkDemodDecodeConfig
- * @property AntennaUplinkConfig $antennaUplinkConfig
- * @property DataflowEndpointConfig $dataflowEndpointConfig
- * @property S3RecordingConfig $s3RecordingConfig
- * @property TrackingConfig $trackingConfig
- * @property UplinkEchoConfig $uplinkEchoConfig
+ * @property AntennaDownlinkConfig|null $antennaDownlinkConfig
+ * @property AntennaDownlinkDemodDecodeConfig|null $antennaDownlinkDemodDecodeConfig
+ * @property AntennaUplinkConfig|null $antennaUplinkConfig
+ * @property DataflowEndpointConfig|null $dataflowEndpointConfig
+ * @property S3RecordingConfig|null $s3RecordingConfig
+ * @property TrackingConfig|null $trackingConfig
+ * @property UplinkEchoConfig|null $uplinkEchoConfig
  */
 class ConfigTypeData extends Shape
 {
     /**
      * @param array{
-     *     antennaDownlinkConfig?: AntennaDownlinkConfig,
-     *     antennaDownlinkDemodDecodeConfig?: AntennaDownlinkDemodDecodeConfig,
-     *     antennaUplinkConfig?: AntennaUplinkConfig,
-     *     dataflowEndpointConfig?: DataflowEndpointConfig,
-     *     s3RecordingConfig?: S3RecordingConfig,
-     *     trackingConfig?: TrackingConfig,
-     *     uplinkEchoConfig?: UplinkEchoConfig
+     *     antennaDownlinkConfig?: AntennaDownlinkConfig|null,
+     *     antennaDownlinkDemodDecodeConfig?: AntennaDownlinkDemodDecodeConfig|null,
+     *     antennaUplinkConfig?: AntennaUplinkConfig|null,
+     *     dataflowEndpointConfig?: DataflowEndpointConfig|null,
+     *     s3RecordingConfig?: S3RecordingConfig|null,
+     *     trackingConfig?: TrackingConfig|null,
+     *     uplinkEchoConfig?: UplinkEchoConfig|null
      * } $args
      */
     public function __construct(array $args = [])

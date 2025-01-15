@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelGroupName
- * @property string $ClientToken
- * @property string $Description
- * @property array<string, string> $Tags
+ * @property string|null $ClientToken
+ * @property string|null $Description
+ * @property array<string, string>|null $Tags
  */
 class CreateChannelGroupRequest extends Request
 {
     /**
      * @param array{
      *     ChannelGroupName: string,
-     *     ClientToken?: string,
-     *     Description?: string,
-     *     Tags?: array<string, string>
+     *     ClientToken?: string|null,
+     *     Description?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

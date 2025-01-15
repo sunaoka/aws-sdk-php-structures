@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SesV2\SendBulkEmail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Subject
- * @property string $Text
- * @property string $Html
+ * @property string|null $Subject
+ * @property string|null $Text
+ * @property string|null $Html
  */
 class EmailTemplateContent extends Shape
 {
     /**
      * @param array{
-     *     Subject?: string,
-     *     Text?: string,
-     *     Html?: string
+     *     Subject?: string|null,
+     *     Text?: string|null,
+     *     Html?: string|null
      * } $args
      */
     public function __construct(array $args = [])

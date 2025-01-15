@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'ERROR' $state
- * @property ErrorDetails $error
+ * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'ERROR'|null $state
+ * @property ErrorDetails|null $error
  */
 class Status extends Shape
 {
     /**
      * @param array{
-     *     state?: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'ERROR',
-     *     error?: ErrorDetails
+     *     state?: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'ERROR'|null,
+     *     error?: ErrorDetails|null
      * } $args
      */
     public function __construct(array $args = [])

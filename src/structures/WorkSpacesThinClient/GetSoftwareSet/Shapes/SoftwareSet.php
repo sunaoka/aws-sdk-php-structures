@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\WorkSpacesThinClient\GetSoftwareSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $version
- * @property \Aws\Api\DateTimeResult $releasedAt
- * @property \Aws\Api\DateTimeResult $supportedUntil
- * @property 'VALIDATED'|'NOT_VALIDATED' $validationStatus
- * @property list<Software> $software
- * @property string $arn
- * @property array<string, string> $tags
+ * @property string|null $id
+ * @property string|null $version
+ * @property \Aws\Api\DateTimeResult|null $releasedAt
+ * @property \Aws\Api\DateTimeResult|null $supportedUntil
+ * @property 'VALIDATED'|'NOT_VALIDATED'|null $validationStatus
+ * @property list<Software>|null $software
+ * @property string|null $arn
+ * @property array<string, string>|null $tags
  */
 class SoftwareSet extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     version?: string,
-     *     releasedAt?: \Aws\Api\DateTimeResult,
-     *     supportedUntil?: \Aws\Api\DateTimeResult,
-     *     validationStatus?: 'VALIDATED'|'NOT_VALIDATED',
-     *     software?: list<Software>,
-     *     arn?: string,
-     *     tags?: array<string, string>
+     *     id?: string|null,
+     *     version?: string|null,
+     *     releasedAt?: \Aws\Api\DateTimeResult|null,
+     *     supportedUntil?: \Aws\Api\DateTimeResult|null,
+     *     validationStatus?: 'VALIDATED'|'NOT_VALIDATED'|null,
+     *     software?: list<Software>|null,
+     *     arn?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

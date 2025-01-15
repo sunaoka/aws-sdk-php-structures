@@ -6,13 +6,13 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $id
- * @property string $name
- * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED' $status
- * @property string $failureMessage
- * @property Shapes\BillInterval $billInterval
- * @property Shapes\BillEstimateCostSummary $costSummary
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $expiresAt
+ * @property string|null $name
+ * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED'|null $status
+ * @property string|null $failureMessage
+ * @property Shapes\BillInterval|null $billInterval
+ * @property Shapes\BillEstimateCostSummary|null $costSummary
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $expiresAt
  */
 class GetBillEstimateResponse extends Response
 {

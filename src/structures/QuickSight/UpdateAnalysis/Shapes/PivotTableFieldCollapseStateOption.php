@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property PivotTableFieldCollapseStateTarget $Target
- * @property 'COLLAPSED'|'EXPANDED' $State
+ * @property 'COLLAPSED'|'EXPANDED'|null $State
  */
 class PivotTableFieldCollapseStateOption extends Shape
 {
     /**
      * @param array{
      *     Target: PivotTableFieldCollapseStateTarget,
-     *     State?: 'COLLAPSED'|'EXPANDED'
+     *     State?: 'COLLAPSED'|'EXPANDED'|null
      * } $args
      */
     public function __construct(array $args)

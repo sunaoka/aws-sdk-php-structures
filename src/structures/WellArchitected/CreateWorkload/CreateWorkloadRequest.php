@@ -8,23 +8,23 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $WorkloadName
  * @property string $Description
  * @property 'PRODUCTION'|'PREPRODUCTION' $Environment
- * @property list<string> $AccountIds
- * @property list<string> $AwsRegions
- * @property list<string> $NonAwsRegions
- * @property list<string> $PillarPriorities
- * @property string $ArchitecturalDesign
- * @property string $ReviewOwner
- * @property string $IndustryType
- * @property string $Industry
+ * @property list<string>|null $AccountIds
+ * @property list<string>|null $AwsRegions
+ * @property list<string>|null $NonAwsRegions
+ * @property list<string>|null $PillarPriorities
+ * @property string|null $ArchitecturalDesign
+ * @property string|null $ReviewOwner
+ * @property string|null $IndustryType
+ * @property string|null $Industry
  * @property list<string> $Lenses
- * @property string $Notes
+ * @property string|null $Notes
  * @property string $ClientRequestToken
- * @property array<string, string> $Tags
- * @property Shapes\WorkloadDiscoveryConfig $DiscoveryConfig
- * @property list<string> $Applications
- * @property list<string> $ProfileArns
- * @property list<string> $ReviewTemplateArns
- * @property Shapes\WorkloadJiraConfigurationInput $JiraConfiguration
+ * @property array<string, string>|null $Tags
+ * @property Shapes\WorkloadDiscoveryConfig|null $DiscoveryConfig
+ * @property list<string>|null $Applications
+ * @property list<string>|null $ProfileArns
+ * @property list<string>|null $ReviewTemplateArns
+ * @property Shapes\WorkloadJiraConfigurationInput|null $JiraConfiguration
  */
 class CreateWorkloadRequest extends Request
 {
@@ -33,23 +33,23 @@ class CreateWorkloadRequest extends Request
      *     WorkloadName: string,
      *     Description: string,
      *     Environment: 'PRODUCTION'|'PREPRODUCTION',
-     *     AccountIds?: list<string>,
-     *     AwsRegions?: list<string>,
-     *     NonAwsRegions?: list<string>,
-     *     PillarPriorities?: list<string>,
-     *     ArchitecturalDesign?: string,
-     *     ReviewOwner?: string,
-     *     IndustryType?: string,
-     *     Industry?: string,
+     *     AccountIds?: list<string>|null,
+     *     AwsRegions?: list<string>|null,
+     *     NonAwsRegions?: list<string>|null,
+     *     PillarPriorities?: list<string>|null,
+     *     ArchitecturalDesign?: string|null,
+     *     ReviewOwner?: string|null,
+     *     IndustryType?: string|null,
+     *     Industry?: string|null,
      *     Lenses: list<string>,
-     *     Notes?: string,
+     *     Notes?: string|null,
      *     ClientRequestToken: string,
-     *     Tags?: array<string, string>,
-     *     DiscoveryConfig?: Shapes\WorkloadDiscoveryConfig,
-     *     Applications?: list<string>,
-     *     ProfileArns?: list<string>,
-     *     ReviewTemplateArns?: list<string>,
-     *     JiraConfiguration?: Shapes\WorkloadJiraConfigurationInput
+     *     Tags?: array<string, string>|null,
+     *     DiscoveryConfig?: Shapes\WorkloadDiscoveryConfig|null,
+     *     Applications?: list<string>|null,
+     *     ProfileArns?: list<string>|null,
+     *     ReviewTemplateArns?: list<string>|null,
+     *     JiraConfiguration?: Shapes\WorkloadJiraConfigurationInput|null
      * } $args
      */
     public function __construct(array $args)

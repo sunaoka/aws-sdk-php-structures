@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $JourneyId
  * @property string $KpiName
  * @property BaseKpiResult $KpiResult
- * @property string $NextToken
+ * @property string|null $NextToken
  * @property \Aws\Api\DateTimeResult $StartTime
  */
 class JourneyDateRangeKpiResponse extends Shape
@@ -22,7 +22,7 @@ class JourneyDateRangeKpiResponse extends Shape
      *     JourneyId: string,
      *     KpiName: string,
      *     KpiResult: BaseKpiResult,
-     *     NextToken?: string,
+     *     NextToken?: string|null,
      *     StartTime: \Aws\Api\DateTimeResult
      * } $args
      */

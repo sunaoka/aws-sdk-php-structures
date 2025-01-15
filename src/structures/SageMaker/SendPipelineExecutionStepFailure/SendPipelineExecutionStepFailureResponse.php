@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\SendPipelineExecutionStepFailure;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PipelineExecutionArn
+ * @property string|null $PipelineExecutionArn
  */
 class SendPipelineExecutionStepFailureResponse extends Response
 {

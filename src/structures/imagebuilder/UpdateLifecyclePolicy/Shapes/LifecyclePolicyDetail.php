@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property LifecyclePolicyDetailAction $action
  * @property LifecyclePolicyDetailFilter $filter
- * @property LifecyclePolicyDetailExclusionRules $exclusionRules
+ * @property LifecyclePolicyDetailExclusionRules|null $exclusionRules
  */
 class LifecyclePolicyDetail extends Shape
 {
@@ -15,7 +15,7 @@ class LifecyclePolicyDetail extends Shape
      * @param array{
      *     action: LifecyclePolicyDetailAction,
      *     filter: LifecyclePolicyDetailFilter,
-     *     exclusionRules?: LifecyclePolicyDetailExclusionRules
+     *     exclusionRules?: LifecyclePolicyDetailExclusionRules|null
      * } $args
      */
     public function __construct(array $args)

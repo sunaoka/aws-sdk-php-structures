@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\CreateBucket\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'public'|'private' $getObject
- * @property bool $allowPublicOverrides
+ * @property 'public'|'private'|null $getObject
+ * @property bool|null $allowPublicOverrides
  */
 class AccessRules extends Shape
 {
     /**
      * @param array{
-     *     getObject?: 'public'|'private',
-     *     allowPublicOverrides?: bool
+     *     getObject?: 'public'|'private'|null,
+     *     allowPublicOverrides?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

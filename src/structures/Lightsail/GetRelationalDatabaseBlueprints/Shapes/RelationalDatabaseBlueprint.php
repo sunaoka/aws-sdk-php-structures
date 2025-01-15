@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetRelationalDatabaseBlueprints\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $blueprintId
- * @property 'mysql' $engine
- * @property string $engineVersion
- * @property string $engineDescription
- * @property string $engineVersionDescription
- * @property bool $isEngineDefault
+ * @property string|null $blueprintId
+ * @property 'mysql'|null $engine
+ * @property string|null $engineVersion
+ * @property string|null $engineDescription
+ * @property string|null $engineVersionDescription
+ * @property bool|null $isEngineDefault
  */
 class RelationalDatabaseBlueprint extends Shape
 {
     /**
      * @param array{
-     *     blueprintId?: string,
-     *     engine?: 'mysql',
-     *     engineVersion?: string,
-     *     engineDescription?: string,
-     *     engineVersionDescription?: string,
-     *     isEngineDefault?: bool
+     *     blueprintId?: string|null,
+     *     engine?: 'mysql'|null,
+     *     engineVersion?: string|null,
+     *     engineDescription?: string|null,
+     *     engineVersionDescription?: string|null,
+     *     isEngineDefault?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

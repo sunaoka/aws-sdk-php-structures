@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterArn
- * @property int $ActiveServicesCount
- * @property list<string> $CapacityProviders
- * @property list<AwsEcsClusterClusterSettingsDetails> $ClusterSettings
- * @property AwsEcsClusterConfigurationDetails $Configuration
- * @property list<AwsEcsClusterDefaultCapacityProviderStrategyDetails> $DefaultCapacityProviderStrategy
- * @property string $ClusterName
- * @property int $RegisteredContainerInstancesCount
- * @property int $RunningTasksCount
- * @property string $Status
+ * @property string|null $ClusterArn
+ * @property int|null $ActiveServicesCount
+ * @property list<string>|null $CapacityProviders
+ * @property list<AwsEcsClusterClusterSettingsDetails>|null $ClusterSettings
+ * @property AwsEcsClusterConfigurationDetails|null $Configuration
+ * @property list<AwsEcsClusterDefaultCapacityProviderStrategyDetails>|null $DefaultCapacityProviderStrategy
+ * @property string|null $ClusterName
+ * @property int|null $RegisteredContainerInstancesCount
+ * @property int|null $RunningTasksCount
+ * @property string|null $Status
  */
 class AwsEcsClusterDetails extends Shape
 {
     /**
      * @param array{
-     *     ClusterArn?: string,
-     *     ActiveServicesCount?: int,
-     *     CapacityProviders?: list<string>,
-     *     ClusterSettings?: list<AwsEcsClusterClusterSettingsDetails>,
-     *     Configuration?: AwsEcsClusterConfigurationDetails,
-     *     DefaultCapacityProviderStrategy?: list<AwsEcsClusterDefaultCapacityProviderStrategyDetails>,
-     *     ClusterName?: string,
-     *     RegisteredContainerInstancesCount?: int,
-     *     RunningTasksCount?: int,
-     *     Status?: string
+     *     ClusterArn?: string|null,
+     *     ActiveServicesCount?: int|null,
+     *     CapacityProviders?: list<string>|null,
+     *     ClusterSettings?: list<AwsEcsClusterClusterSettingsDetails>|null,
+     *     Configuration?: AwsEcsClusterConfigurationDetails|null,
+     *     DefaultCapacityProviderStrategy?: list<AwsEcsClusterDefaultCapacityProviderStrategyDetails>|null,
+     *     ClusterName?: string|null,
+     *     RegisteredContainerInstancesCount?: int|null,
+     *     RunningTasksCount?: int|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

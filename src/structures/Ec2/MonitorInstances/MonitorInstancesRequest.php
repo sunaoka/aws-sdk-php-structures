@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $InstanceIds
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class MonitorInstancesRequest extends Request
 {
     /**
      * @param array{
      *     InstanceIds: list<string>,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

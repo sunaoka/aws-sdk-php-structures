@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\BatchPutMessage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $messageId
- * @property string $errorCode
- * @property string $errorMessage
+ * @property string|null $messageId
+ * @property string|null $errorCode
+ * @property string|null $errorMessage
  */
 class BatchPutMessageErrorEntry extends Shape
 {
     /**
      * @param array{
-     *     messageId?: string,
-     *     errorCode?: string,
-     *     errorMessage?: string
+     *     messageId?: string|null,
+     *     errorCode?: string|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

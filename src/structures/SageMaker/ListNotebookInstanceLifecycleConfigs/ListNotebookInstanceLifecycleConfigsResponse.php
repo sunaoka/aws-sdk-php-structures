@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListNotebookInstanceLifecycleConfigs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\NotebookInstanceLifecycleConfigSummary> $NotebookInstanceLifecycleConfigs
+ * @property string|null $NextToken
+ * @property list<Shapes\NotebookInstanceLifecycleConfigSummary>|null $NotebookInstanceLifecycleConfigs
  */
 class ListNotebookInstanceLifecycleConfigsResponse extends Response
 {

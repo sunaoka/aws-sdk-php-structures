@@ -10,10 +10,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClientToken
  * @property string $GatewayARN
  * @property string $LocationARN
- * @property list<Shapes\Tag> $Tags
- * @property string $AuditDestinationARN
- * @property Shapes\CacheAttributes $CacheAttributes
- * @property Shapes\EndpointNetworkConfiguration $EndpointNetworkConfiguration
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $AuditDestinationARN
+ * @property Shapes\CacheAttributes|null $CacheAttributes
+ * @property Shapes\EndpointNetworkConfiguration|null $EndpointNetworkConfiguration
  */
 class AssociateFileSystemRequest extends Request
 {
@@ -24,10 +24,10 @@ class AssociateFileSystemRequest extends Request
      *     ClientToken: string,
      *     GatewayARN: string,
      *     LocationARN: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     AuditDestinationARN?: string,
-     *     CacheAttributes?: Shapes\CacheAttributes,
-     *     EndpointNetworkConfiguration?: Shapes\EndpointNetworkConfiguration
+     *     Tags?: list<Shapes\Tag>|null,
+     *     AuditDestinationARN?: string|null,
+     *     CacheAttributes?: Shapes\CacheAttributes|null,
+     *     EndpointNetworkConfiguration?: Shapes\EndpointNetworkConfiguration|null
      * } $args
      */
     public function __construct(array $args)

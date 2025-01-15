@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $destinationName
  * @property string $targetArn
  * @property string $roleArn
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class PutDestinationRequest extends Request
 {
@@ -17,7 +17,7 @@ class PutDestinationRequest extends Request
      *     destinationName: string,
      *     targetArn: string,
      *     roleArn: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

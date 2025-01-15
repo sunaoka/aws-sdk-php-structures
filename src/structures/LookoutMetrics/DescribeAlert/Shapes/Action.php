@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\DescribeAlert\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SNSConfiguration $SNSConfiguration
- * @property LambdaConfiguration $LambdaConfiguration
+ * @property SNSConfiguration|null $SNSConfiguration
+ * @property LambdaConfiguration|null $LambdaConfiguration
  */
 class Action extends Shape
 {
     /**
      * @param array{
-     *     SNSConfiguration?: SNSConfiguration,
-     *     LambdaConfiguration?: LambdaConfiguration
+     *     SNSConfiguration?: SNSConfiguration|null,
+     *     LambdaConfiguration?: LambdaConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

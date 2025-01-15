@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetSegmentVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RecencyDimension $Recency
+ * @property RecencyDimension|null $Recency
  */
 class SegmentBehaviors extends Shape
 {
     /**
-     * @param array{Recency?: RecencyDimension} $args
+     * @param array{Recency?: RecencyDimension|null} $args
      */
     public function __construct(array $args = [])
     {

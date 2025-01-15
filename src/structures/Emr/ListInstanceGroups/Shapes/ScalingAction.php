@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Emr\ListInstanceGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ON_DEMAND'|'SPOT' $Market
+ * @property 'ON_DEMAND'|'SPOT'|null $Market
  * @property SimpleScalingPolicyConfiguration $SimpleScalingPolicyConfiguration
  */
 class ScalingAction extends Shape
 {
     /**
      * @param array{
-     *     Market?: 'ON_DEMAND'|'SPOT',
+     *     Market?: 'ON_DEMAND'|'SPOT'|null,
      *     SimpleScalingPolicyConfiguration: SimpleScalingPolicyConfiguration
      * } $args
      */

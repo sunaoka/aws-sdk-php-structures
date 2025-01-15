@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PipelineName
- * @property string $PipelineExecutionDisplayName
- * @property list<Shapes\Parameter> $PipelineParameters
- * @property string $PipelineExecutionDescription
+ * @property string|null $PipelineExecutionDisplayName
+ * @property list<Shapes\Parameter>|null $PipelineParameters
+ * @property string|null $PipelineExecutionDescription
  * @property string $ClientRequestToken
- * @property Shapes\ParallelismConfiguration $ParallelismConfiguration
- * @property Shapes\SelectiveExecutionConfig $SelectiveExecutionConfig
+ * @property Shapes\ParallelismConfiguration|null $ParallelismConfiguration
+ * @property Shapes\SelectiveExecutionConfig|null $SelectiveExecutionConfig
  */
 class StartPipelineExecutionRequest extends Request
 {
     /**
      * @param array{
      *     PipelineName: string,
-     *     PipelineExecutionDisplayName?: string,
-     *     PipelineParameters?: list<Shapes\Parameter>,
-     *     PipelineExecutionDescription?: string,
+     *     PipelineExecutionDisplayName?: string|null,
+     *     PipelineParameters?: list<Shapes\Parameter>|null,
+     *     PipelineExecutionDescription?: string|null,
      *     ClientRequestToken: string,
-     *     ParallelismConfiguration?: Shapes\ParallelismConfiguration,
-     *     SelectiveExecutionConfig?: Shapes\SelectiveExecutionConfig
+     *     ParallelismConfiguration?: Shapes\ParallelismConfiguration|null,
+     *     SelectiveExecutionConfig?: Shapes\SelectiveExecutionConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Task $Task
  * @property \Aws\Api\DateTimeResult $UpdateDateTime
  * @property int<0, max> $NextUpdateSeconds
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class NotifyMigrationTaskStateRequest extends Request
 {
@@ -21,7 +21,7 @@ class NotifyMigrationTaskStateRequest extends Request
      *     Task: Shapes\Task,
      *     UpdateDateTime: \Aws\Api\DateTimeResult,
      *     NextUpdateSeconds: int<0, max>,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

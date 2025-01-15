@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProtectionGroupId
- * @property string $NextToken
- * @property int<0, 10000> $MaxResults
+ * @property string|null $NextToken
+ * @property int<0, 10000>|null $MaxResults
  */
 class ListResourcesInProtectionGroupRequest extends Request
 {
     /**
      * @param array{
      *     ProtectionGroupId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 10000>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 10000>|null
      * } $args
      */
     public function __construct(array $args)

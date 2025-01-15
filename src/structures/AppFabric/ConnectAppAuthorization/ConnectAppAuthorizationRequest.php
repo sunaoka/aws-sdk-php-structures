@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $appBundleIdentifier
  * @property string $appAuthorizationIdentifier
- * @property Shapes\AuthRequest $authRequest
+ * @property Shapes\AuthRequest|null $authRequest
  */
 class ConnectAppAuthorizationRequest extends Request
 {
@@ -15,7 +15,7 @@ class ConnectAppAuthorizationRequest extends Request
      * @param array{
      *     appBundleIdentifier: string,
      *     appAuthorizationIdentifier: string,
-     *     authRequest?: Shapes\AuthRequest
+     *     authRequest?: Shapes\AuthRequest|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetUsageStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<UsageAccountResult> $SumByAccount
- * @property list<UsageTopAccountsResult> $TopAccountsByFeature
- * @property list<UsageDataSourceResult> $SumByDataSource
- * @property list<UsageResourceResult> $SumByResource
- * @property list<UsageResourceResult> $TopResources
- * @property list<UsageFeatureResult> $SumByFeature
+ * @property list<UsageAccountResult>|null $SumByAccount
+ * @property list<UsageTopAccountsResult>|null $TopAccountsByFeature
+ * @property list<UsageDataSourceResult>|null $SumByDataSource
+ * @property list<UsageResourceResult>|null $SumByResource
+ * @property list<UsageResourceResult>|null $TopResources
+ * @property list<UsageFeatureResult>|null $SumByFeature
  */
 class UsageStatistics extends Shape
 {
     /**
      * @param array{
-     *     SumByAccount?: list<UsageAccountResult>,
-     *     TopAccountsByFeature?: list<UsageTopAccountsResult>,
-     *     SumByDataSource?: list<UsageDataSourceResult>,
-     *     SumByResource?: list<UsageResourceResult>,
-     *     TopResources?: list<UsageResourceResult>,
-     *     SumByFeature?: list<UsageFeatureResult>
+     *     SumByAccount?: list<UsageAccountResult>|null,
+     *     TopAccountsByFeature?: list<UsageTopAccountsResult>|null,
+     *     SumByDataSource?: list<UsageDataSourceResult>|null,
+     *     SumByResource?: list<UsageResourceResult>|null,
+     *     TopResources?: list<UsageResourceResult>|null,
+     *     SumByFeature?: list<UsageFeatureResult>|null
      * } $args
      */
     public function __construct(array $args = [])

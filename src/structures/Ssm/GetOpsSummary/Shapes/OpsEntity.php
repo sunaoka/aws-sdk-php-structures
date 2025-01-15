@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ssm\GetOpsSummary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property array<string, OpsEntityItem> $Data
+ * @property string|null $Id
+ * @property array<string, OpsEntityItem>|null $Data
  */
 class OpsEntity extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Data?: array<string, OpsEntityItem>
+     *     Id?: string|null,
+     *     Data?: array<string, OpsEntityItem>|null
      * } $args
      */
     public function __construct(array $args = [])

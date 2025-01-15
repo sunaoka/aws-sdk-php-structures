@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\QueryLoggingConfig> $QueryLoggingConfigs
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListQueryLoggingConfigsResponse extends Response
 {

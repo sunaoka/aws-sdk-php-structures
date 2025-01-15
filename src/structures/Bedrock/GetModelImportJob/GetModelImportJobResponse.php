@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Bedrock\GetModelImportJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $jobArn
- * @property string $jobName
- * @property string $importedModelName
- * @property string $importedModelArn
- * @property string $roleArn
- * @property Shapes\ModelDataSource $modelDataSource
- * @property 'InProgress'|'Completed'|'Failed' $status
- * @property string $failureMessage
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastModifiedTime
- * @property \Aws\Api\DateTimeResult $endTime
- * @property Shapes\VpcConfig $vpcConfig
- * @property string $importedModelKmsKeyArn
+ * @property string|null $jobArn
+ * @property string|null $jobName
+ * @property string|null $importedModelName
+ * @property string|null $importedModelArn
+ * @property string|null $roleArn
+ * @property Shapes\ModelDataSource|null $modelDataSource
+ * @property 'InProgress'|'Completed'|'Failed'|null $status
+ * @property string|null $failureMessage
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property Shapes\VpcConfig|null $vpcConfig
+ * @property string|null $importedModelKmsKeyArn
  */
 class GetModelImportJobResponse extends Response
 {

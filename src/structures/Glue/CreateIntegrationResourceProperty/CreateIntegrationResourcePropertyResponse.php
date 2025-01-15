@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $ResourceArn
- * @property Shapes\SourceProcessingProperties $SourceProcessingProperties
- * @property Shapes\TargetProcessingProperties $TargetProcessingProperties
+ * @property Shapes\SourceProcessingProperties|null $SourceProcessingProperties
+ * @property Shapes\TargetProcessingProperties|null $TargetProcessingProperties
  */
 class CreateIntegrationResourcePropertyResponse extends Response
 {

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<AttributeKey> $OrderedIndexedAttributeList
  * @property bool $IsUnique
- * @property ObjectReference $ParentReference
- * @property string $LinkName
- * @property string $BatchReferenceName
+ * @property ObjectReference|null $ParentReference
+ * @property string|null $LinkName
+ * @property string|null $BatchReferenceName
  */
 class BatchCreateIndex extends Shape
 {
@@ -17,9 +17,9 @@ class BatchCreateIndex extends Shape
      * @param array{
      *     OrderedIndexedAttributeList: list<AttributeKey>,
      *     IsUnique: bool,
-     *     ParentReference?: ObjectReference,
-     *     LinkName?: string,
-     *     BatchReferenceName?: string
+     *     ParentReference?: ObjectReference|null,
+     *     LinkName?: string|null,
+     *     BatchReferenceName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeBrandAssignment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RequestId
- * @property string $BrandArn
+ * @property string|null $RequestId
+ * @property string|null $BrandArn
  */
 class DescribeBrandAssignmentResponse extends Response
 {

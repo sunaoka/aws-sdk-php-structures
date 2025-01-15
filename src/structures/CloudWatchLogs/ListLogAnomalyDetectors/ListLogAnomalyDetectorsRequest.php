@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\ListLogAnomalyDetectors;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $filterLogGroupArn
- * @property int<1, 50> $limit
- * @property string $nextToken
+ * @property string|null $filterLogGroupArn
+ * @property int<1, 50>|null $limit
+ * @property string|null $nextToken
  */
 class ListLogAnomalyDetectorsRequest extends Request
 {
     /**
      * @param array{
-     *     filterLogGroupArn?: string,
-     *     limit?: int<1, 50>,
-     *     nextToken?: string
+     *     filterLogGroupArn?: string|null,
+     *     limit?: int<1, 50>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ModelVersion
  * @property string $RoleArn
  * @property Shapes\EdgeOutputConfig $OutputConfig
- * @property string $ResourceKey
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ResourceKey
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateEdgePackagingJobRequest extends Request
 {
@@ -24,8 +24,8 @@ class CreateEdgePackagingJobRequest extends Request
      *     ModelVersion: string,
      *     RoleArn: string,
      *     OutputConfig: Shapes\EdgeOutputConfig,
-     *     ResourceKey?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     ResourceKey?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

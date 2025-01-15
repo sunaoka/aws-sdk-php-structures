@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateInputDevice\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AUTO'|'HDMI'|'SDI' $ConfiguredInput
- * @property int $MaxBitrate
- * @property int $LatencyMs
- * @property 'HEVC'|'AVC' $Codec
- * @property InputDeviceMediaConnectConfigurableSettings $MediaconnectSettings
- * @property list<InputDeviceConfigurableAudioChannelPairConfig> $AudioChannelPairs
+ * @property 'AUTO'|'HDMI'|'SDI'|null $ConfiguredInput
+ * @property int|null $MaxBitrate
+ * @property int|null $LatencyMs
+ * @property 'HEVC'|'AVC'|null $Codec
+ * @property InputDeviceMediaConnectConfigurableSettings|null $MediaconnectSettings
+ * @property list<InputDeviceConfigurableAudioChannelPairConfig>|null $AudioChannelPairs
  */
 class InputDeviceConfigurableSettings extends Shape
 {
     /**
      * @param array{
-     *     ConfiguredInput?: 'AUTO'|'HDMI'|'SDI',
-     *     MaxBitrate?: int,
-     *     LatencyMs?: int,
-     *     Codec?: 'HEVC'|'AVC',
-     *     MediaconnectSettings?: InputDeviceMediaConnectConfigurableSettings,
-     *     AudioChannelPairs?: list<InputDeviceConfigurableAudioChannelPairConfig>
+     *     ConfiguredInput?: 'AUTO'|'HDMI'|'SDI'|null,
+     *     MaxBitrate?: int|null,
+     *     LatencyMs?: int|null,
+     *     Codec?: 'HEVC'|'AVC'|null,
+     *     MediaconnectSettings?: InputDeviceMediaConnectConfigurableSettings|null,
+     *     AudioChannelPairs?: list<InputDeviceConfigurableAudioChannelPairConfig>|null
      * } $args
      */
     public function __construct(array $args = [])

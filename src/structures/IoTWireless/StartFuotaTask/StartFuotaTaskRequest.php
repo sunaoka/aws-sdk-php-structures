@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property Shapes\LoRaWANStartFuotaTask $LoRaWAN
+ * @property Shapes\LoRaWANStartFuotaTask|null $LoRaWAN
  */
 class StartFuotaTaskRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     LoRaWAN?: Shapes\LoRaWANStartFuotaTask
+     *     LoRaWAN?: Shapes\LoRaWANStartFuotaTask|null
      * } $args
      */
     public function __construct(array $args)

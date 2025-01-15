@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetails $ImmunityTimeProperty
+ * @property AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetails|null $ImmunityTimeProperty
  */
 class AwsWafv2WebAclCaptchaConfigDetails extends Shape
 {
     /**
-     * @param array{ImmunityTimeProperty?: AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetails} $args
+     * @param array{ImmunityTimeProperty?: AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetails|null} $args
      */
     public function __construct(array $args = [])
     {

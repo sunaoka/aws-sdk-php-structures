@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Iot\ReplaceTopicRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $stringValue
- * @property string $integerValue
- * @property string $doubleValue
- * @property string $booleanValue
+ * @property string|null $stringValue
+ * @property string|null $integerValue
+ * @property string|null $doubleValue
+ * @property string|null $booleanValue
  */
 class AssetPropertyVariant extends Shape
 {
     /**
      * @param array{
-     *     stringValue?: string,
-     *     integerValue?: string,
-     *     doubleValue?: string,
-     *     booleanValue?: string
+     *     stringValue?: string|null,
+     *     integerValue?: string|null,
+     *     doubleValue?: string|null,
+     *     booleanValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

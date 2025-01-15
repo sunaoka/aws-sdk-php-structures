@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $metric
- * @property MetricDimension $metricDimension
- * @property bool $exportMetric
+ * @property MetricDimension|null $metricDimension
+ * @property bool|null $exportMetric
  */
 class MetricToRetain extends Shape
 {
     /**
      * @param array{
      *     metric: string,
-     *     metricDimension?: MetricDimension,
-     *     exportMetric?: bool
+     *     metricDimension?: MetricDimension|null,
+     *     exportMetric?: bool|null
      * } $args
      */
     public function __construct(array $args)

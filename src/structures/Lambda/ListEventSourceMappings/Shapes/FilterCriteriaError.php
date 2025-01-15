@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lambda\ListEventSourceMappings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ErrorCode
- * @property string $Message
+ * @property string|null $ErrorCode
+ * @property string|null $Message
  */
 class FilterCriteriaError extends Shape
 {
     /**
      * @param array{
-     *     ErrorCode?: string,
-     *     Message?: string
+     *     ErrorCode?: string|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTopic\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TypeName
- * @property string $SubTypeName
- * @property array<string, string> $TypeParameters
- * @property string $TruthyCellValue
- * @property list<string> $TruthyCellValueSynonyms
- * @property string $FalseyCellValue
- * @property list<string> $FalseyCellValueSynonyms
+ * @property string|null $TypeName
+ * @property string|null $SubTypeName
+ * @property array<string, string>|null $TypeParameters
+ * @property string|null $TruthyCellValue
+ * @property list<string>|null $TruthyCellValueSynonyms
+ * @property string|null $FalseyCellValue
+ * @property list<string>|null $FalseyCellValueSynonyms
  */
 class SemanticType extends Shape
 {
     /**
      * @param array{
-     *     TypeName?: string,
-     *     SubTypeName?: string,
-     *     TypeParameters?: array<string, string>,
-     *     TruthyCellValue?: string,
-     *     TruthyCellValueSynonyms?: list<string>,
-     *     FalseyCellValue?: string,
-     *     FalseyCellValueSynonyms?: list<string>
+     *     TypeName?: string|null,
+     *     SubTypeName?: string|null,
+     *     TypeParameters?: array<string, string>|null,
+     *     TruthyCellValue?: string|null,
+     *     TruthyCellValueSynonyms?: list<string>|null,
+     *     FalseyCellValue?: string|null,
+     *     FalseyCellValueSynonyms?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

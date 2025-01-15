@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Redshift\CreateSnapshotSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterIdentifier
- * @property 'MODIFYING'|'ACTIVE'|'FAILED' $ScheduleAssociationState
+ * @property string|null $ClusterIdentifier
+ * @property 'MODIFYING'|'ACTIVE'|'FAILED'|null $ScheduleAssociationState
  */
 class ClusterAssociatedToSchedule extends Shape
 {
     /**
      * @param array{
-     *     ClusterIdentifier?: string,
-     *     ScheduleAssociationState?: 'MODIFYING'|'ACTIVE'|'FAILED'
+     *     ClusterIdentifier?: string|null,
+     *     ScheduleAssociationState?: 'MODIFYING'|'ACTIVE'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

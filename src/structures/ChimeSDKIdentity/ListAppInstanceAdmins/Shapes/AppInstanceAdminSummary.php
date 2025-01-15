@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\ListAppInstanceAdmins\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Identity $Admin
+ * @property Identity|null $Admin
  */
 class AppInstanceAdminSummary extends Shape
 {
     /**
-     * @param array{Admin?: Identity} $args
+     * @param array{Admin?: Identity|null} $args
      */
     public function __construct(array $args = [])
     {

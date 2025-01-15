@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Glue\CreateSecurityConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Name
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
+ * @property string|null $Name
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  */
 class CreateSecurityConfigurationResponse extends Response
 {

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Bucket
  * @property string $Id
  * @property Shapes\InventoryConfiguration $InventoryConfiguration
- * @property string $ExpectedBucketOwner
+ * @property string|null $ExpectedBucketOwner
  */
 class PutBucketInventoryConfigurationRequest extends Request
 {
@@ -17,7 +17,7 @@ class PutBucketInventoryConfigurationRequest extends Request
      *     Bucket: string,
      *     Id: string,
      *     InventoryConfiguration: Shapes\InventoryConfiguration,
-     *     ExpectedBucketOwner?: string
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

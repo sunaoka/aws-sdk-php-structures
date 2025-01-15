@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DeleteDefaultSenderId;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ConfigurationSetArn
- * @property string $ConfigurationSetName
- * @property string $SenderId
+ * @property string|null $ConfigurationSetArn
+ * @property string|null $ConfigurationSetName
+ * @property string|null $SenderId
  */
 class DeleteDefaultSenderIdResponse extends Response
 {

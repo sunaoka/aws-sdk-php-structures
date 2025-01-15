@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEC2InstanceRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $gpuCount
- * @property int $gpuMemorySizeInMiB
+ * @property int|null $gpuCount
+ * @property int|null $gpuMemorySizeInMiB
  */
 class Gpu extends Shape
 {
     /**
      * @param array{
-     *     gpuCount?: int,
-     *     gpuMemorySizeInMiB?: int
+     *     gpuCount?: int|null,
+     *     gpuMemorySizeInMiB?: int|null
      * } $args
      */
     public function __construct(array $args = [])

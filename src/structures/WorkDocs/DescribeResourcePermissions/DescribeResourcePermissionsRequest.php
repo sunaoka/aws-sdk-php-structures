@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DescribeResourcePermissions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $ResourceId
- * @property string $PrincipalId
- * @property int<1, 999> $Limit
- * @property string $Marker
+ * @property string|null $PrincipalId
+ * @property int<1, 999>|null $Limit
+ * @property string|null $Marker
  */
 class DescribeResourcePermissionsRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     ResourceId: string,
-     *     PrincipalId?: string,
-     *     Limit?: int<1, 999>,
-     *     Marker?: string
+     *     PrincipalId?: string|null,
+     *     Limit?: int<1, 999>|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args)

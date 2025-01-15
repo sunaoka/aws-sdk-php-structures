@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Macie2\GetSensitiveDataOccurrences;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $error
- * @property array<string, list<Shapes\DetectedDataDetails>> $sensitiveDataOccurrences
- * @property 'SUCCESS'|'PROCESSING'|'ERROR' $status
+ * @property string|null $error
+ * @property array<string, list<Shapes\DetectedDataDetails>>|null $sensitiveDataOccurrences
+ * @property 'SUCCESS'|'PROCESSING'|'ERROR'|null $status
  */
 class GetSensitiveDataOccurrencesResponse extends Response
 {

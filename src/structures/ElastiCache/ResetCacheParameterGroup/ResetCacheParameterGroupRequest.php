@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CacheParameterGroupName
- * @property bool $ResetAllParameters
- * @property list<Shapes\ParameterNameValue> $ParameterNameValues
+ * @property bool|null $ResetAllParameters
+ * @property list<Shapes\ParameterNameValue>|null $ParameterNameValues
  */
 class ResetCacheParameterGroupRequest extends Request
 {
     /**
      * @param array{
      *     CacheParameterGroupName: string,
-     *     ResetAllParameters?: bool,
-     *     ParameterNameValues?: list<Shapes\ParameterNameValue>
+     *     ResetAllParameters?: bool|null,
+     *     ParameterNameValues?: list<Shapes\ParameterNameValue>|null
      * } $args
      */
     public function __construct(array $args)

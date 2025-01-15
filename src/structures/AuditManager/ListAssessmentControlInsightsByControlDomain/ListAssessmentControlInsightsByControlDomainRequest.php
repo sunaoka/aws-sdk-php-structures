@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $controlDomainId
  * @property string $assessmentId
- * @property string $nextToken
- * @property int<1, 1000> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 1000>|null $maxResults
  */
 class ListAssessmentControlInsightsByControlDomainRequest extends Request
 {
@@ -16,8 +16,8 @@ class ListAssessmentControlInsightsByControlDomainRequest extends Request
      * @param array{
      *     controlDomainId: string,
      *     assessmentId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 1000>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

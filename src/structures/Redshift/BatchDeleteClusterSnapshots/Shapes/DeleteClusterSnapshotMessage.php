@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SnapshotIdentifier
- * @property string $SnapshotClusterIdentifier
+ * @property string|null $SnapshotClusterIdentifier
  */
 class DeleteClusterSnapshotMessage extends Shape
 {
     /**
      * @param array{
      *     SnapshotIdentifier: string,
-     *     SnapshotClusterIdentifier?: string
+     *     SnapshotClusterIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

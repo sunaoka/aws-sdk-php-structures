@@ -9,15 +9,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SiteId
  * @property string $SecretArn
  * @property S3Path $SslCertificateS3Path
- * @property bool $CrawlSystemFolders
- * @property bool $CrawlComments
- * @property list<'wiki'|'blog'|'documentLibrary'> $EntityFilter
- * @property list<DataSourceToIndexFieldMapping> $DocumentLibraryFieldMappings
- * @property list<DataSourceToIndexFieldMapping> $BlogFieldMappings
- * @property list<DataSourceToIndexFieldMapping> $WikiFieldMappings
- * @property list<string> $InclusionPatterns
- * @property list<string> $ExclusionPatterns
- * @property DataSourceVpcConfiguration $VpcConfiguration
+ * @property bool|null $CrawlSystemFolders
+ * @property bool|null $CrawlComments
+ * @property list<'wiki'|'blog'|'documentLibrary'>|null $EntityFilter
+ * @property list<DataSourceToIndexFieldMapping>|null $DocumentLibraryFieldMappings
+ * @property list<DataSourceToIndexFieldMapping>|null $BlogFieldMappings
+ * @property list<DataSourceToIndexFieldMapping>|null $WikiFieldMappings
+ * @property list<string>|null $InclusionPatterns
+ * @property list<string>|null $ExclusionPatterns
+ * @property DataSourceVpcConfiguration|null $VpcConfiguration
  */
 class AlfrescoConfiguration extends Shape
 {
@@ -27,15 +27,15 @@ class AlfrescoConfiguration extends Shape
      *     SiteId: string,
      *     SecretArn: string,
      *     SslCertificateS3Path: S3Path,
-     *     CrawlSystemFolders?: bool,
-     *     CrawlComments?: bool,
-     *     EntityFilter?: list<'wiki'|'blog'|'documentLibrary'>,
-     *     DocumentLibraryFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     BlogFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     WikiFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     InclusionPatterns?: list<string>,
-     *     ExclusionPatterns?: list<string>,
-     *     VpcConfiguration?: DataSourceVpcConfiguration
+     *     CrawlSystemFolders?: bool|null,
+     *     CrawlComments?: bool|null,
+     *     EntityFilter?: list<'wiki'|'blog'|'documentLibrary'>|null,
+     *     DocumentLibraryFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     BlogFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     WikiFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     InclusionPatterns?: list<string>|null,
+     *     ExclusionPatterns?: list<string>|null,
+     *     VpcConfiguration?: DataSourceVpcConfiguration|null
      * } $args
      */
     public function __construct(array $args)

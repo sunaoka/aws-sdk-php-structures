@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Control\GetMultiRegionAccessPointPolicy\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EstablishedMultiRegionAccessPointPolicy $Established
- * @property ProposedMultiRegionAccessPointPolicy $Proposed
+ * @property EstablishedMultiRegionAccessPointPolicy|null $Established
+ * @property ProposedMultiRegionAccessPointPolicy|null $Proposed
  */
 class MultiRegionAccessPointPolicyDocument extends Shape
 {
     /**
      * @param array{
-     *     Established?: EstablishedMultiRegionAccessPointPolicy,
-     *     Proposed?: ProposedMultiRegionAccessPointPolicy
+     *     Established?: EstablishedMultiRegionAccessPointPolicy|null,
+     *     Proposed?: ProposedMultiRegionAccessPointPolicy|null
      * } $args
      */
     public function __construct(array $args = [])

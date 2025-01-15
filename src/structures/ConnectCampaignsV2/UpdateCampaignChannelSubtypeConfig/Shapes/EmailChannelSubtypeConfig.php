@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\UpdateCampaignChannelSubtype
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $capacity
+ * @property double|null $capacity
  * @property EmailOutboundMode $outboundMode
  * @property EmailOutboundConfig $defaultOutboundConfig
  */
@@ -13,7 +13,7 @@ class EmailChannelSubtypeConfig extends Shape
 {
     /**
      * @param array{
-     *     capacity?: double,
+     *     capacity?: double|null,
      *     outboundMode: EmailOutboundMode,
      *     defaultOutboundConfig: EmailOutboundConfig
      * } $args

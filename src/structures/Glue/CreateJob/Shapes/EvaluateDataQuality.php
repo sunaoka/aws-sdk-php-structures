@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property list<string> $Inputs
  * @property string $Ruleset
- * @property 'PrimaryInput'|'EvaluationResults' $Output
- * @property DQResultsPublishingOptions $PublishingOptions
- * @property DQStopJobOnFailureOptions $StopJobOnFailureOptions
+ * @property 'PrimaryInput'|'EvaluationResults'|null $Output
+ * @property DQResultsPublishingOptions|null $PublishingOptions
+ * @property DQStopJobOnFailureOptions|null $StopJobOnFailureOptions
  */
 class EvaluateDataQuality extends Shape
 {
@@ -19,9 +19,9 @@ class EvaluateDataQuality extends Shape
      *     Name: string,
      *     Inputs: list<string>,
      *     Ruleset: string,
-     *     Output?: 'PrimaryInput'|'EvaluationResults',
-     *     PublishingOptions?: DQResultsPublishingOptions,
-     *     StopJobOnFailureOptions?: DQStopJobOnFailureOptions
+     *     Output?: 'PrimaryInput'|'EvaluationResults'|null,
+     *     PublishingOptions?: DQResultsPublishingOptions|null,
+     *     StopJobOnFailureOptions?: DQStopJobOnFailureOptions|null
      * } $args
      */
     public function __construct(array $args)

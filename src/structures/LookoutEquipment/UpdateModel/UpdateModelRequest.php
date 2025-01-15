@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ModelName
- * @property Shapes\LabelsInputConfiguration $LabelsInputConfiguration
- * @property string $RoleArn
- * @property Shapes\ModelDiagnosticsOutputConfiguration $ModelDiagnosticsOutputConfiguration
+ * @property Shapes\LabelsInputConfiguration|null $LabelsInputConfiguration
+ * @property string|null $RoleArn
+ * @property Shapes\ModelDiagnosticsOutputConfiguration|null $ModelDiagnosticsOutputConfiguration
  */
 class UpdateModelRequest extends Request
 {
     /**
      * @param array{
      *     ModelName: string,
-     *     LabelsInputConfiguration?: Shapes\LabelsInputConfiguration,
-     *     RoleArn?: string,
-     *     ModelDiagnosticsOutputConfiguration?: Shapes\ModelDiagnosticsOutputConfiguration
+     *     LabelsInputConfiguration?: Shapes\LabelsInputConfiguration|null,
+     *     RoleArn?: string|null,
+     *     ModelDiagnosticsOutputConfiguration?: Shapes\ModelDiagnosticsOutputConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CleanRooms\UpdateConfiguredTableAnalysisRule\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConfiguredTableAnalysisRulePolicyV1 $v1
+ * @property ConfiguredTableAnalysisRulePolicyV1|null $v1
  */
 class ConfiguredTableAnalysisRulePolicy extends Shape
 {
     /**
-     * @param array{v1?: ConfiguredTableAnalysisRulePolicyV1} $args
+     * @param array{v1?: ConfiguredTableAnalysisRulePolicyV1|null} $args
      */
     public function __construct(array $args = [])
     {

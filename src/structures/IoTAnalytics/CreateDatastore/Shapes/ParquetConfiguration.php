@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\CreateDatastore\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SchemaDefinition $schemaDefinition
+ * @property SchemaDefinition|null $schemaDefinition
  */
 class ParquetConfiguration extends Shape
 {
     /**
-     * @param array{schemaDefinition?: SchemaDefinition} $args
+     * @param array{schemaDefinition?: SchemaDefinition|null} $args
      */
     public function __construct(array $args = [])
     {

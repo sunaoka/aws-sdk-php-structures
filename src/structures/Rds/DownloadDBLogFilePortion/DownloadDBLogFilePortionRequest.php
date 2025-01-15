@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DBInstanceIdentifier
  * @property string $LogFileName
- * @property string $Marker
- * @property int $NumberOfLines
+ * @property string|null $Marker
+ * @property int|null $NumberOfLines
  */
 class DownloadDBLogFilePortionRequest extends Request
 {
@@ -16,8 +16,8 @@ class DownloadDBLogFilePortionRequest extends Request
      * @param array{
      *     DBInstanceIdentifier: string,
      *     LogFileName: string,
-     *     Marker?: string,
-     *     NumberOfLines?: int
+     *     Marker?: string|null,
+     *     NumberOfLines?: int|null
      * } $args
      */
     public function __construct(array $args)

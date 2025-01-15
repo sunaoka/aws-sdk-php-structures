@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ManifestName
  * @property string $Url
- * @property string $ChildManifestName
- * @property int $ManifestWindowSeconds
- * @property int $ProgramDateTimeIntervalSeconds
- * @property ScteHls $ScteHls
- * @property FilterConfiguration $FilterConfiguration
- * @property StartTag $StartTag
+ * @property string|null $ChildManifestName
+ * @property int|null $ManifestWindowSeconds
+ * @property int|null $ProgramDateTimeIntervalSeconds
+ * @property ScteHls|null $ScteHls
+ * @property FilterConfiguration|null $FilterConfiguration
+ * @property StartTag|null $StartTag
  */
 class GetHlsManifestConfiguration extends Shape
 {
@@ -20,12 +20,12 @@ class GetHlsManifestConfiguration extends Shape
      * @param array{
      *     ManifestName: string,
      *     Url: string,
-     *     ChildManifestName?: string,
-     *     ManifestWindowSeconds?: int,
-     *     ProgramDateTimeIntervalSeconds?: int,
-     *     ScteHls?: ScteHls,
-     *     FilterConfiguration?: FilterConfiguration,
-     *     StartTag?: StartTag
+     *     ChildManifestName?: string|null,
+     *     ManifestWindowSeconds?: int|null,
+     *     ProgramDateTimeIntervalSeconds?: int|null,
+     *     ScteHls?: ScteHls|null,
+     *     FilterConfiguration?: FilterConfiguration|null,
+     *     StartTag?: StartTag|null
      * } $args
      */
     public function __construct(array $args)

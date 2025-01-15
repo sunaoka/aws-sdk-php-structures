@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MigrationHubOrchestrator\GetTemplateStep\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $scriptLocationS3Bucket
- * @property PlatformScriptKey $scriptLocationS3Key
- * @property PlatformCommand $command
- * @property 'AWS'|'ONPREMISE' $runEnvironment
- * @property 'SINGLE'|'ALL'|'NONE' $targetType
+ * @property string|null $scriptLocationS3Bucket
+ * @property PlatformScriptKey|null $scriptLocationS3Key
+ * @property PlatformCommand|null $command
+ * @property 'AWS'|'ONPREMISE'|null $runEnvironment
+ * @property 'SINGLE'|'ALL'|'NONE'|null $targetType
  */
 class StepAutomationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     scriptLocationS3Bucket?: string,
-     *     scriptLocationS3Key?: PlatformScriptKey,
-     *     command?: PlatformCommand,
-     *     runEnvironment?: 'AWS'|'ONPREMISE',
-     *     targetType?: 'SINGLE'|'ALL'|'NONE'
+     *     scriptLocationS3Bucket?: string|null,
+     *     scriptLocationS3Key?: PlatformScriptKey|null,
+     *     command?: PlatformCommand|null,
+     *     runEnvironment?: 'AWS'|'ONPREMISE'|null,
+     *     targetType?: 'SINGLE'|'ALL'|'NONE'|null
      * } $args
      */
     public function __construct(array $args = [])

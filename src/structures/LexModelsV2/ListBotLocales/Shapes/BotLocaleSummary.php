@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListBotLocales\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $localeId
- * @property string $localeName
- * @property string $description
- * @property 'Creating'|'Building'|'Built'|'ReadyExpressTesting'|'Failed'|'Deleting'|'NotBuilt'|'Importing'|'Processing' $botLocaleStatus
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
- * @property \Aws\Api\DateTimeResult $lastBuildSubmittedDateTime
+ * @property string|null $localeId
+ * @property string|null $localeName
+ * @property string|null $description
+ * @property 'Creating'|'Building'|'Built'|'ReadyExpressTesting'|'Failed'|'Deleting'|'NotBuilt'|'Importing'|'Processing'|null $botLocaleStatus
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastBuildSubmittedDateTime
  */
 class BotLocaleSummary extends Shape
 {
     /**
      * @param array{
-     *     localeId?: string,
-     *     localeName?: string,
-     *     description?: string,
-     *     botLocaleStatus?: 'Creating'|'Building'|'Built'|'ReadyExpressTesting'|'Failed'|'Deleting'|'NotBuilt'|'Importing'|'Processing',
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult,
-     *     lastBuildSubmittedDateTime?: \Aws\Api\DateTimeResult
+     *     localeId?: string|null,
+     *     localeName?: string|null,
+     *     description?: string|null,
+     *     botLocaleStatus?: 'Creating'|'Building'|'Built'|'ReadyExpressTesting'|'Failed'|'Deleting'|'NotBuilt'|'Importing'|'Processing'|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastBuildSubmittedDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

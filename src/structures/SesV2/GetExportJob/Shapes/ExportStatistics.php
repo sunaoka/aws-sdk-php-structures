@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SesV2\GetExportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ProcessedRecordsCount
- * @property int $ExportedRecordsCount
+ * @property int|null $ProcessedRecordsCount
+ * @property int|null $ExportedRecordsCount
  */
 class ExportStatistics extends Shape
 {
     /**
      * @param array{
-     *     ProcessedRecordsCount?: int,
-     *     ExportedRecordsCount?: int
+     *     ProcessedRecordsCount?: int|null,
+     *     ExportedRecordsCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

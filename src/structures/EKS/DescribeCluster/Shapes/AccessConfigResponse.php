@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EKS\DescribeCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $bootstrapClusterCreatorAdminPermissions
- * @property 'API'|'API_AND_CONFIG_MAP'|'CONFIG_MAP' $authenticationMode
+ * @property bool|null $bootstrapClusterCreatorAdminPermissions
+ * @property 'API'|'API_AND_CONFIG_MAP'|'CONFIG_MAP'|null $authenticationMode
  */
 class AccessConfigResponse extends Shape
 {
     /**
      * @param array{
-     *     bootstrapClusterCreatorAdminPermissions?: bool,
-     *     authenticationMode?: 'API'|'API_AND_CONFIG_MAP'|'CONFIG_MAP'
+     *     bootstrapClusterCreatorAdminPermissions?: bool|null,
+     *     authenticationMode?: 'API'|'API_AND_CONFIG_MAP'|'CONFIG_MAP'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEBSVolumeRecommendations\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $volumeArn
- * @property string $accountId
- * @property VolumeConfiguration $currentConfiguration
- * @property 'Optimized'|'NotOptimized' $finding
- * @property list<EBSUtilizationMetric> $utilizationMetrics
- * @property double $lookBackPeriodInDays
- * @property list<VolumeRecommendationOption> $volumeRecommendationOptions
- * @property \Aws\Api\DateTimeResult $lastRefreshTimestamp
- * @property 'VeryLow'|'Low'|'Medium'|'High' $currentPerformanceRisk
- * @property EBSEffectiveRecommendationPreferences $effectiveRecommendationPreferences
- * @property list<Tag> $tags
+ * @property string|null $volumeArn
+ * @property string|null $accountId
+ * @property VolumeConfiguration|null $currentConfiguration
+ * @property 'Optimized'|'NotOptimized'|null $finding
+ * @property list<EBSUtilizationMetric>|null $utilizationMetrics
+ * @property double|null $lookBackPeriodInDays
+ * @property list<VolumeRecommendationOption>|null $volumeRecommendationOptions
+ * @property \Aws\Api\DateTimeResult|null $lastRefreshTimestamp
+ * @property 'VeryLow'|'Low'|'Medium'|'High'|null $currentPerformanceRisk
+ * @property EBSEffectiveRecommendationPreferences|null $effectiveRecommendationPreferences
+ * @property list<Tag>|null $tags
  */
 class VolumeRecommendation extends Shape
 {
     /**
      * @param array{
-     *     volumeArn?: string,
-     *     accountId?: string,
-     *     currentConfiguration?: VolumeConfiguration,
-     *     finding?: 'Optimized'|'NotOptimized',
-     *     utilizationMetrics?: list<EBSUtilizationMetric>,
-     *     lookBackPeriodInDays?: double,
-     *     volumeRecommendationOptions?: list<VolumeRecommendationOption>,
-     *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult,
-     *     currentPerformanceRisk?: 'VeryLow'|'Low'|'Medium'|'High',
-     *     effectiveRecommendationPreferences?: EBSEffectiveRecommendationPreferences,
-     *     tags?: list<Tag>
+     *     volumeArn?: string|null,
+     *     accountId?: string|null,
+     *     currentConfiguration?: VolumeConfiguration|null,
+     *     finding?: 'Optimized'|'NotOptimized'|null,
+     *     utilizationMetrics?: list<EBSUtilizationMetric>|null,
+     *     lookBackPeriodInDays?: double|null,
+     *     volumeRecommendationOptions?: list<VolumeRecommendationOption>|null,
+     *     lastRefreshTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     currentPerformanceRisk?: 'VeryLow'|'Low'|'Medium'|'High'|null,
+     *     effectiveRecommendationPreferences?: EBSEffectiveRecommendationPreferences|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

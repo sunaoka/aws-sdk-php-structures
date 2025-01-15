@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Emr\RunJobFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<EbsBlockDeviceConfig> $EbsBlockDeviceConfigs
- * @property bool $EbsOptimized
+ * @property list<EbsBlockDeviceConfig>|null $EbsBlockDeviceConfigs
+ * @property bool|null $EbsOptimized
  */
 class EbsConfiguration extends Shape
 {
     /**
      * @param array{
-     *     EbsBlockDeviceConfigs?: list<EbsBlockDeviceConfig>,
-     *     EbsOptimized?: bool
+     *     EbsBlockDeviceConfigs?: list<EbsBlockDeviceConfig>|null,
+     *     EbsOptimized?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

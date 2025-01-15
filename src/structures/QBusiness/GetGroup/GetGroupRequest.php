@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $indexId
  * @property string $groupName
- * @property string $dataSourceId
+ * @property string|null $dataSourceId
  */
 class GetGroupRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetGroupRequest extends Request
      *     applicationId: string,
      *     indexId: string,
      *     groupName: string,
-     *     dataSourceId?: string
+     *     dataSourceId?: string|null
      * } $args
      */
     public function __construct(array $args)

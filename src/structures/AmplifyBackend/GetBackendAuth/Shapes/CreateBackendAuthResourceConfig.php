@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'USER_POOL_ONLY'|'IDENTITY_POOL_AND_USER_POOL' $AuthResources
- * @property CreateBackendAuthIdentityPoolConfig $IdentityPoolConfigs
+ * @property CreateBackendAuthIdentityPoolConfig|null $IdentityPoolConfigs
  * @property 'COGNITO' $Service
  * @property CreateBackendAuthUserPoolConfig $UserPoolConfigs
  */
@@ -15,7 +15,7 @@ class CreateBackendAuthResourceConfig extends Shape
     /**
      * @param array{
      *     AuthResources: 'USER_POOL_ONLY'|'IDENTITY_POOL_AND_USER_POOL',
-     *     IdentityPoolConfigs?: CreateBackendAuthIdentityPoolConfig,
+     *     IdentityPoolConfigs?: CreateBackendAuthIdentityPoolConfig|null,
      *     Service: 'COGNITO',
      *     UserPoolConfigs: CreateBackendAuthUserPoolConfig
      * } $args

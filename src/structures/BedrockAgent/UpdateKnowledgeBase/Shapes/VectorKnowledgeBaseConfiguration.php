@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $embeddingModelArn
- * @property EmbeddingModelConfiguration $embeddingModelConfiguration
- * @property SupplementalDataStorageConfiguration $supplementalDataStorageConfiguration
+ * @property EmbeddingModelConfiguration|null $embeddingModelConfiguration
+ * @property SupplementalDataStorageConfiguration|null $supplementalDataStorageConfiguration
  */
 class VectorKnowledgeBaseConfiguration extends Shape
 {
     /**
      * @param array{
      *     embeddingModelArn: string,
-     *     embeddingModelConfiguration?: EmbeddingModelConfiguration,
-     *     supplementalDataStorageConfiguration?: SupplementalDataStorageConfiguration
+     *     embeddingModelConfiguration?: EmbeddingModelConfiguration|null,
+     *     supplementalDataStorageConfiguration?: SupplementalDataStorageConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $VpnConnectionId
  * @property string $VpnTunnelOutsideIpAddress
- * @property bool $ApplyPendingMaintenance
- * @property bool $DryRun
+ * @property bool|null $ApplyPendingMaintenance
+ * @property bool|null $DryRun
  */
 class ReplaceVpnTunnelRequest extends Request
 {
@@ -16,8 +16,8 @@ class ReplaceVpnTunnelRequest extends Request
      * @param array{
      *     VpnConnectionId: string,
      *     VpnTunnelOutsideIpAddress: string,
-     *     ApplyPendingMaintenance?: bool,
-     *     DryRun?: bool
+     *     ApplyPendingMaintenance?: bool|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

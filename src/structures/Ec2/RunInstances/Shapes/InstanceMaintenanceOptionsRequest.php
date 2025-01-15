@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\RunInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'disabled'|'default' $AutoRecovery
+ * @property 'disabled'|'default'|null $AutoRecovery
  */
 class InstanceMaintenanceOptionsRequest extends Shape
 {
     /**
-     * @param array{AutoRecovery?: 'disabled'|'default'} $args
+     * @param array{AutoRecovery?: 'disabled'|'default'|null} $args
      */
     public function __construct(array $args = [])
     {

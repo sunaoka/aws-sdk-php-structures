@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingGroupName
- * @property int $MaxRecords
- * @property string $NextToken
+ * @property int|null $MaxRecords
+ * @property string|null $NextToken
  */
 class DescribeWarmPoolRequest extends Request
 {
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     MaxRecords?: int,
-     *     NextToken?: string
+     *     MaxRecords?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

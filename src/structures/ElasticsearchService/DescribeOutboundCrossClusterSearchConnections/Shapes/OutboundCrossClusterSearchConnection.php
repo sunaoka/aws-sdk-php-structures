@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DescribeOutboundCrossClust
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DomainInformation $SourceDomainInfo
- * @property DomainInformation $DestinationDomainInfo
- * @property string $CrossClusterSearchConnectionId
- * @property string $ConnectionAlias
- * @property OutboundCrossClusterSearchConnectionStatus $ConnectionStatus
+ * @property DomainInformation|null $SourceDomainInfo
+ * @property DomainInformation|null $DestinationDomainInfo
+ * @property string|null $CrossClusterSearchConnectionId
+ * @property string|null $ConnectionAlias
+ * @property OutboundCrossClusterSearchConnectionStatus|null $ConnectionStatus
  */
 class OutboundCrossClusterSearchConnection extends Shape
 {
     /**
      * @param array{
-     *     SourceDomainInfo?: DomainInformation,
-     *     DestinationDomainInfo?: DomainInformation,
-     *     CrossClusterSearchConnectionId?: string,
-     *     ConnectionAlias?: string,
-     *     ConnectionStatus?: OutboundCrossClusterSearchConnectionStatus
+     *     SourceDomainInfo?: DomainInformation|null,
+     *     DestinationDomainInfo?: DomainInformation|null,
+     *     CrossClusterSearchConnectionId?: string|null,
+     *     ConnectionAlias?: string|null,
+     *     ConnectionStatus?: OutboundCrossClusterSearchConnectionStatus|null
      * } $args
      */
     public function __construct(array $args = [])

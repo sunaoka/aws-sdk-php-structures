@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Deadline\UpdateStorageProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $farmId
  * @property string $storageProfileId
- * @property string $displayName
- * @property 'WINDOWS'|'LINUX'|'MACOS' $osFamily
- * @property list<Shapes\FileSystemLocation> $fileSystemLocationsToAdd
- * @property list<Shapes\FileSystemLocation> $fileSystemLocationsToRemove
+ * @property string|null $displayName
+ * @property 'WINDOWS'|'LINUX'|'MACOS'|null $osFamily
+ * @property list<Shapes\FileSystemLocation>|null $fileSystemLocationsToAdd
+ * @property list<Shapes\FileSystemLocation>|null $fileSystemLocationsToRemove
  */
 class UpdateStorageProfileRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     farmId: string,
      *     storageProfileId: string,
-     *     displayName?: string,
-     *     osFamily?: 'WINDOWS'|'LINUX'|'MACOS',
-     *     fileSystemLocationsToAdd?: list<Shapes\FileSystemLocation>,
-     *     fileSystemLocationsToRemove?: list<Shapes\FileSystemLocation>
+     *     displayName?: string|null,
+     *     osFamily?: 'WINDOWS'|'LINUX'|'MACOS'|null,
+     *     fileSystemLocationsToAdd?: list<Shapes\FileSystemLocation>|null,
+     *     fileSystemLocationsToRemove?: list<Shapes\FileSystemLocation>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DynamoDbStreams\GetRecords\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $ApproximateCreationDateTime
- * @property array<string, AttributeValue> $Keys
- * @property array<string, AttributeValue> $NewImage
- * @property array<string, AttributeValue> $OldImage
- * @property string $SequenceNumber
- * @property int<1, max> $SizeBytes
- * @property 'NEW_IMAGE'|'OLD_IMAGE'|'NEW_AND_OLD_IMAGES'|'KEYS_ONLY' $StreamViewType
+ * @property \Aws\Api\DateTimeResult|null $ApproximateCreationDateTime
+ * @property array<string, AttributeValue>|null $Keys
+ * @property array<string, AttributeValue>|null $NewImage
+ * @property array<string, AttributeValue>|null $OldImage
+ * @property string|null $SequenceNumber
+ * @property int<1, max>|null $SizeBytes
+ * @property 'NEW_IMAGE'|'OLD_IMAGE'|'NEW_AND_OLD_IMAGES'|'KEYS_ONLY'|null $StreamViewType
  */
 class StreamRecord extends Shape
 {
     /**
      * @param array{
-     *     ApproximateCreationDateTime?: \Aws\Api\DateTimeResult,
-     *     Keys?: array<string, AttributeValue>,
-     *     NewImage?: array<string, AttributeValue>,
-     *     OldImage?: array<string, AttributeValue>,
-     *     SequenceNumber?: string,
-     *     SizeBytes?: int<1, max>,
-     *     StreamViewType?: 'NEW_IMAGE'|'OLD_IMAGE'|'NEW_AND_OLD_IMAGES'|'KEYS_ONLY'
+     *     ApproximateCreationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     Keys?: array<string, AttributeValue>|null,
+     *     NewImage?: array<string, AttributeValue>|null,
+     *     OldImage?: array<string, AttributeValue>|null,
+     *     SequenceNumber?: string|null,
+     *     SizeBytes?: int<1, max>|null,
+     *     StreamViewType?: 'NEW_IMAGE'|'OLD_IMAGE'|'NEW_AND_OLD_IMAGES'|'KEYS_ONLY'|null
      * } $args
      */
     public function __construct(array $args = [])

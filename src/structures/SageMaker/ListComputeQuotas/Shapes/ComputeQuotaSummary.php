@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ComputeQuotaArn
  * @property string $ComputeQuotaId
  * @property string $Name
- * @property int $ComputeQuotaVersion
+ * @property int|null $ComputeQuotaVersion
  * @property 'Creating'|'CreateFailed'|'CreateRollbackFailed'|'Created'|'Updating'|'UpdateFailed'|'UpdateRollbackFailed'|'Updated'|'Deleting'|'DeleteFailed'|'DeleteRollbackFailed'|'Deleted' $Status
- * @property string $ClusterArn
- * @property ComputeQuotaConfig $ComputeQuotaConfig
+ * @property string|null $ClusterArn
+ * @property ComputeQuotaConfig|null $ComputeQuotaConfig
  * @property ComputeQuotaTarget $ComputeQuotaTarget
- * @property 'Enabled'|'Disabled' $ActivationState
+ * @property 'Enabled'|'Disabled'|null $ActivationState
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class ComputeQuotaSummary extends Shape
 {
@@ -24,14 +24,14 @@ class ComputeQuotaSummary extends Shape
      *     ComputeQuotaArn: string,
      *     ComputeQuotaId: string,
      *     Name: string,
-     *     ComputeQuotaVersion?: int,
+     *     ComputeQuotaVersion?: int|null,
      *     Status: 'Creating'|'CreateFailed'|'CreateRollbackFailed'|'Created'|'Updating'|'UpdateFailed'|'UpdateRollbackFailed'|'Updated'|'Deleting'|'DeleteFailed'|'DeleteRollbackFailed'|'Deleted',
-     *     ClusterArn?: string,
-     *     ComputeQuotaConfig?: ComputeQuotaConfig,
+     *     ClusterArn?: string|null,
+     *     ComputeQuotaConfig?: ComputeQuotaConfig|null,
      *     ComputeQuotaTarget: ComputeQuotaTarget,
-     *     ActivationState?: 'Enabled'|'Disabled',
+     *     ActivationState?: 'Enabled'|'Disabled'|null,
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

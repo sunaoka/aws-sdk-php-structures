@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $botId
  * @property string $botVersion
  * @property string $localeId
- * @property double $nluIntentConfidenceThreshold
- * @property VoiceSettings $voiceSettings
+ * @property double|null $nluIntentConfidenceThreshold
+ * @property VoiceSettings|null $voiceSettings
  */
 class BotLocaleImportSpecification extends Shape
 {
@@ -18,8 +18,8 @@ class BotLocaleImportSpecification extends Shape
      *     botId: string,
      *     botVersion: string,
      *     localeId: string,
-     *     nluIntentConfidenceThreshold?: double,
-     *     voiceSettings?: VoiceSettings
+     *     nluIntentConfidenceThreshold?: double|null,
+     *     voiceSettings?: VoiceSettings|null
      * } $args
      */
     public function __construct(array $args)

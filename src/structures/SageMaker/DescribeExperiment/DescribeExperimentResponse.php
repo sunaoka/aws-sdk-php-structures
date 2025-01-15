@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeExperiment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ExperimentName
- * @property string $ExperimentArn
- * @property string $DisplayName
- * @property Shapes\ExperimentSource $Source
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property Shapes\UserContext $CreatedBy
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property Shapes\UserContext $LastModifiedBy
+ * @property string|null $ExperimentName
+ * @property string|null $ExperimentArn
+ * @property string|null $DisplayName
+ * @property Shapes\ExperimentSource|null $Source
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property Shapes\UserContext|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property Shapes\UserContext|null $LastModifiedBy
  */
 class DescribeExperimentResponse extends Response
 {

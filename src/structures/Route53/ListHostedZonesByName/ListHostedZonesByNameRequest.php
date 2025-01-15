@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Route53\ListHostedZonesByName;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DNSName
- * @property string $HostedZoneId
- * @property string $MaxItems
+ * @property string|null $DNSName
+ * @property string|null $HostedZoneId
+ * @property string|null $MaxItems
  */
 class ListHostedZonesByNameRequest extends Request
 {
     /**
      * @param array{
-     *     DNSName?: string,
-     *     HostedZoneId?: string,
-     *     MaxItems?: string
+     *     DNSName?: string|null,
+     *     HostedZoneId?: string|null,
+     *     MaxItems?: string|null
      * } $args
      */
     public function __construct(array $args = [])

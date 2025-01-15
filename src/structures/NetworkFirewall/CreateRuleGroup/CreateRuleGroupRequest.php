@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RuleGroupName
- * @property Shapes\RuleGroup $RuleGroup
- * @property string $Rules
+ * @property Shapes\RuleGroup|null $RuleGroup
+ * @property string|null $Rules
  * @property 'STATELESS'|'STATEFUL' $Type
- * @property string $Description
+ * @property string|null $Description
  * @property int $Capacity
- * @property list<Shapes\Tag> $Tags
- * @property bool $DryRun
- * @property Shapes\EncryptionConfiguration $EncryptionConfiguration
- * @property Shapes\SourceMetadata $SourceMetadata
- * @property bool $AnalyzeRuleGroup
+ * @property list<Shapes\Tag>|null $Tags
+ * @property bool|null $DryRun
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
+ * @property Shapes\SourceMetadata|null $SourceMetadata
+ * @property bool|null $AnalyzeRuleGroup
  */
 class CreateRuleGroupRequest extends Request
 {
     /**
      * @param array{
      *     RuleGroupName: string,
-     *     RuleGroup?: Shapes\RuleGroup,
-     *     Rules?: string,
+     *     RuleGroup?: Shapes\RuleGroup|null,
+     *     Rules?: string|null,
      *     Type: 'STATELESS'|'STATEFUL',
-     *     Description?: string,
+     *     Description?: string|null,
      *     Capacity: int,
-     *     Tags?: list<Shapes\Tag>,
-     *     DryRun?: bool,
-     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration,
-     *     SourceMetadata?: Shapes\SourceMetadata,
-     *     AnalyzeRuleGroup?: bool
+     *     Tags?: list<Shapes\Tag>|null,
+     *     DryRun?: bool|null,
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null,
+     *     SourceMetadata?: Shapes\SourceMetadata|null,
+     *     AnalyzeRuleGroup?: bool|null
      * } $args
      */
     public function __construct(array $args)

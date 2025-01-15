@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\ListEventTriggers;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\EventTriggerSummaryItem> $Items
- * @property string $NextToken
+ * @property list<Shapes\EventTriggerSummaryItem>|null $Items
+ * @property string|null $NextToken
  */
 class ListEventTriggersResponse extends Response
 {

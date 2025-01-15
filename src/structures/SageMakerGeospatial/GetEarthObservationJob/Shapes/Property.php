@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\GetEarthObservationJob\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EoCloudCoverInput $EoCloudCover
- * @property LandsatCloudCoverLandInput $LandsatCloudCoverLand
- * @property PlatformInput $Platform
- * @property ViewOffNadirInput $ViewOffNadir
- * @property ViewSunAzimuthInput $ViewSunAzimuth
- * @property ViewSunElevationInput $ViewSunElevation
+ * @property EoCloudCoverInput|null $EoCloudCover
+ * @property LandsatCloudCoverLandInput|null $LandsatCloudCoverLand
+ * @property PlatformInput|null $Platform
+ * @property ViewOffNadirInput|null $ViewOffNadir
+ * @property ViewSunAzimuthInput|null $ViewSunAzimuth
+ * @property ViewSunElevationInput|null $ViewSunElevation
  */
 class Property extends Shape
 {
     /**
      * @param array{
-     *     EoCloudCover?: EoCloudCoverInput,
-     *     LandsatCloudCoverLand?: LandsatCloudCoverLandInput,
-     *     Platform?: PlatformInput,
-     *     ViewOffNadir?: ViewOffNadirInput,
-     *     ViewSunAzimuth?: ViewSunAzimuthInput,
-     *     ViewSunElevation?: ViewSunElevationInput
+     *     EoCloudCover?: EoCloudCoverInput|null,
+     *     LandsatCloudCoverLand?: LandsatCloudCoverLandInput|null,
+     *     Platform?: PlatformInput|null,
+     *     ViewOffNadir?: ViewOffNadirInput|null,
+     *     ViewSunAzimuth?: ViewSunAzimuthInput|null,
+     *     ViewSunElevation?: ViewSunElevationInput|null
      * } $args
      */
     public function __construct(array $args = [])

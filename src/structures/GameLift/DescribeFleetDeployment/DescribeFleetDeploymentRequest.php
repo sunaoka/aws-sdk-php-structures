@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FleetId
- * @property string $DeploymentId
+ * @property string|null $DeploymentId
  */
 class DescribeFleetDeploymentRequest extends Request
 {
     /**
      * @param array{
      *     FleetId: string,
-     *     DeploymentId?: string
+     *     DeploymentId?: string|null
      * } $args
      */
     public function __construct(array $args)

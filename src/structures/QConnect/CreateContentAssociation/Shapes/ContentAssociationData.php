@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $contentId
  * @property string $knowledgeBaseArn
  * @property string $knowledgeBaseId
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class ContentAssociationData extends Shape
 {
@@ -27,7 +27,7 @@ class ContentAssociationData extends Shape
      *     contentId: string,
      *     knowledgeBaseArn: string,
      *     knowledgeBaseId: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

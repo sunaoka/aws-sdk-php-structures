@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $availabilityZone
- * @property list<string> $securityGroupIdList
- * @property string $subnetId
- * @property list<string> $subnetIdList
+ * @property string|null $availabilityZone
+ * @property list<string>|null $securityGroupIdList
+ * @property string|null $subnetId
+ * @property list<string>|null $subnetIdList
  */
 class PhysicalConnectionRequirements extends Shape
 {
     /**
      * @param array{
-     *     availabilityZone?: string,
-     *     securityGroupIdList?: list<string>,
-     *     subnetId?: string,
-     *     subnetIdList?: list<string>
+     *     availabilityZone?: string|null,
+     *     securityGroupIdList?: list<string>|null,
+     *     subnetId?: string|null,
+     *     subnetIdList?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

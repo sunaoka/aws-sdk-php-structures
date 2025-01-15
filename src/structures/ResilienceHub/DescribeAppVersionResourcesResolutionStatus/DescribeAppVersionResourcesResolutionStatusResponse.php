@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $appArn
  * @property string $appVersion
- * @property string $errorMessage
+ * @property string|null $errorMessage
  * @property string $resolutionId
  * @property 'Pending'|'InProgress'|'Failed'|'Success' $status
  */

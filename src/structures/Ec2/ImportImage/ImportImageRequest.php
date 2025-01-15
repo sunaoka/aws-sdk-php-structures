@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\Ec2\ImportImage;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Architecture
- * @property Shapes\ClientData $ClientData
- * @property string $ClientToken
- * @property string $Description
- * @property list<Shapes\ImageDiskContainer> $DiskContainers
- * @property bool $DryRun
- * @property bool $Encrypted
- * @property string $Hypervisor
- * @property string $KmsKeyId
- * @property string $LicenseType
- * @property string $Platform
- * @property string $RoleName
- * @property list<Shapes\ImportImageLicenseConfigurationRequest> $LicenseSpecifications
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property string $UsageOperation
- * @property 'legacy-bios'|'uefi'|'uefi-preferred' $BootMode
+ * @property string|null $Architecture
+ * @property Shapes\ClientData|null $ClientData
+ * @property string|null $ClientToken
+ * @property string|null $Description
+ * @property list<Shapes\ImageDiskContainer>|null $DiskContainers
+ * @property bool|null $DryRun
+ * @property bool|null $Encrypted
+ * @property string|null $Hypervisor
+ * @property string|null $KmsKeyId
+ * @property string|null $LicenseType
+ * @property string|null $Platform
+ * @property string|null $RoleName
+ * @property list<Shapes\ImportImageLicenseConfigurationRequest>|null $LicenseSpecifications
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property string|null $UsageOperation
+ * @property 'legacy-bios'|'uefi'|'uefi-preferred'|null $BootMode
  */
 class ImportImageRequest extends Request
 {
     /**
      * @param array{
-     *     Architecture?: string,
-     *     ClientData?: Shapes\ClientData,
-     *     ClientToken?: string,
-     *     Description?: string,
-     *     DiskContainers?: list<Shapes\ImageDiskContainer>,
-     *     DryRun?: bool,
-     *     Encrypted?: bool,
-     *     Hypervisor?: string,
-     *     KmsKeyId?: string,
-     *     LicenseType?: string,
-     *     Platform?: string,
-     *     RoleName?: string,
-     *     LicenseSpecifications?: list<Shapes\ImportImageLicenseConfigurationRequest>,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     UsageOperation?: string,
-     *     BootMode?: 'legacy-bios'|'uefi'|'uefi-preferred'
+     *     Architecture?: string|null,
+     *     ClientData?: Shapes\ClientData|null,
+     *     ClientToken?: string|null,
+     *     Description?: string|null,
+     *     DiskContainers?: list<Shapes\ImageDiskContainer>|null,
+     *     DryRun?: bool|null,
+     *     Encrypted?: bool|null,
+     *     Hypervisor?: string|null,
+     *     KmsKeyId?: string|null,
+     *     LicenseType?: string|null,
+     *     Platform?: string|null,
+     *     RoleName?: string|null,
+     *     LicenseSpecifications?: list<Shapes\ImportImageLicenseConfigurationRequest>|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     UsageOperation?: string|null,
+     *     BootMode?: 'legacy-bios'|'uefi'|'uefi-preferred'|null
      * } $args
      */
     public function __construct(array $args = [])

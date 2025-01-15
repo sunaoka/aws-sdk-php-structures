@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\SsmSap\GetDatabase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationId
- * @property string $ComponentId
- * @property list<ApplicationCredential> $Credentials
- * @property string $DatabaseId
- * @property string $DatabaseName
- * @property 'SYSTEM'|'TENANT' $DatabaseType
- * @property string $Arn
- * @property 'RUNNING'|'STARTING'|'STOPPED'|'WARNING'|'UNKNOWN'|'ERROR' $Status
- * @property string $PrimaryHost
- * @property int $SQLPort
- * @property \Aws\Api\DateTimeResult $LastUpdated
- * @property list<string> $ConnectedComponentArns
+ * @property string|null $ApplicationId
+ * @property string|null $ComponentId
+ * @property list<ApplicationCredential>|null $Credentials
+ * @property string|null $DatabaseId
+ * @property string|null $DatabaseName
+ * @property 'SYSTEM'|'TENANT'|null $DatabaseType
+ * @property string|null $Arn
+ * @property 'RUNNING'|'STARTING'|'STOPPED'|'WARNING'|'UNKNOWN'|'ERROR'|null $Status
+ * @property string|null $PrimaryHost
+ * @property int|null $SQLPort
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property list<string>|null $ConnectedComponentArns
  */
 class Database extends Shape
 {
     /**
      * @param array{
-     *     ApplicationId?: string,
-     *     ComponentId?: string,
-     *     Credentials?: list<ApplicationCredential>,
-     *     DatabaseId?: string,
-     *     DatabaseName?: string,
-     *     DatabaseType?: 'SYSTEM'|'TENANT',
-     *     Arn?: string,
-     *     Status?: 'RUNNING'|'STARTING'|'STOPPED'|'WARNING'|'UNKNOWN'|'ERROR',
-     *     PrimaryHost?: string,
-     *     SQLPort?: int,
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
-     *     ConnectedComponentArns?: list<string>
+     *     ApplicationId?: string|null,
+     *     ComponentId?: string|null,
+     *     Credentials?: list<ApplicationCredential>|null,
+     *     DatabaseId?: string|null,
+     *     DatabaseName?: string|null,
+     *     DatabaseType?: 'SYSTEM'|'TENANT'|null,
+     *     Arn?: string|null,
+     *     Status?: 'RUNNING'|'STARTING'|'STOPPED'|'WARNING'|'UNKNOWN'|'ERROR'|null,
+     *     PrimaryHost?: string|null,
+     *     SQLPort?: int|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     ConnectedComponentArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeospatialCoordinateBounds $Bounds
- * @property 'AUTO'|'MANUAL' $MapZoomMode
+ * @property GeospatialCoordinateBounds|null $Bounds
+ * @property 'AUTO'|'MANUAL'|null $MapZoomMode
  */
 class GeospatialWindowOptions extends Shape
 {
     /**
      * @param array{
-     *     Bounds?: GeospatialCoordinateBounds,
-     *     MapZoomMode?: 'AUTO'|'MANUAL'
+     *     Bounds?: GeospatialCoordinateBounds|null,
+     *     MapZoomMode?: 'AUTO'|'MANUAL'|null
      * } $args
      */
     public function __construct(array $args = [])

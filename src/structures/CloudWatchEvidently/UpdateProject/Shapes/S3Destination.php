@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\UpdateProject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bucket
- * @property string $prefix
+ * @property string|null $bucket
+ * @property string|null $prefix
  */
 class S3Destination extends Shape
 {
     /**
      * @param array{
-     *     bucket?: string,
-     *     prefix?: string
+     *     bucket?: string|null,
+     *     prefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

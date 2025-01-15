@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $spaceName
  * @property string $projectName
  * @property string $name
- * @property string $description
+ * @property string|null $description
  */
 class CreateSourceRepositoryResponse extends Response
 {

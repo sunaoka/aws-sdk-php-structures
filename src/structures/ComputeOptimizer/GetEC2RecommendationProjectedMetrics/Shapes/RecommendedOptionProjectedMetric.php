@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEC2RecommendationProjectedM
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $recommendedInstanceType
- * @property int $rank
- * @property list<ProjectedMetric> $projectedMetrics
+ * @property string|null $recommendedInstanceType
+ * @property int|null $rank
+ * @property list<ProjectedMetric>|null $projectedMetrics
  */
 class RecommendedOptionProjectedMetric extends Shape
 {
     /**
      * @param array{
-     *     recommendedInstanceType?: string,
-     *     rank?: int,
-     *     projectedMetrics?: list<ProjectedMetric>
+     *     recommendedInstanceType?: string|null,
+     *     rank?: int|null,
+     *     projectedMetrics?: list<ProjectedMetric>|null
      * } $args
      */
     public function __construct(array $args = [])

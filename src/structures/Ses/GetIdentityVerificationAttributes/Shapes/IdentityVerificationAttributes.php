@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Pending'|'Success'|'Failed'|'TemporaryFailure'|'NotStarted' $VerificationStatus
- * @property string $VerificationToken
+ * @property string|null $VerificationToken
  */
 class IdentityVerificationAttributes extends Shape
 {
     /**
      * @param array{
      *     VerificationStatus: 'Pending'|'Success'|'Failed'|'TemporaryFailure'|'NotStarted',
-     *     VerificationToken?: string
+     *     VerificationToken?: string|null
      * } $args
      */
     public function __construct(array $args)

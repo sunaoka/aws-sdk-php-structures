@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SagemakerEdgeManager\GetDeployments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeploymentName
- * @property 'Model' $Type
- * @property 'ROLLBACK_ON_FAILURE'|'DO_NOTHING' $FailureHandlingPolicy
- * @property list<Definition> $Definitions
+ * @property string|null $DeploymentName
+ * @property 'Model'|null $Type
+ * @property 'ROLLBACK_ON_FAILURE'|'DO_NOTHING'|null $FailureHandlingPolicy
+ * @property list<Definition>|null $Definitions
  */
 class EdgeDeployment extends Shape
 {
     /**
      * @param array{
-     *     DeploymentName?: string,
-     *     Type?: 'Model',
-     *     FailureHandlingPolicy?: 'ROLLBACK_ON_FAILURE'|'DO_NOTHING',
-     *     Definitions?: list<Definition>
+     *     DeploymentName?: string|null,
+     *     Type?: 'Model'|null,
+     *     FailureHandlingPolicy?: 'ROLLBACK_ON_FAILURE'|'DO_NOTHING'|null,
+     *     Definitions?: list<Definition>|null
      * } $args
      */
     public function __construct(array $args = [])

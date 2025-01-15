@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LakeFormation\ListPermissions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $ResourceShare
+ * @property list<string>|null $ResourceShare
  */
 class DetailsMap extends Shape
 {
     /**
-     * @param array{ResourceShare?: list<string>} $args
+     * @param array{ResourceShare?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

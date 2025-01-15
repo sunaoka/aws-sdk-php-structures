@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MailManager\UpdateIngressPoint;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\IngressPointConfiguration $IngressPointConfiguration
+ * @property Shapes\IngressPointConfiguration|null $IngressPointConfiguration
  * @property string $IngressPointId
- * @property string $IngressPointName
- * @property string $RuleSetId
- * @property 'ACTIVE'|'CLOSED' $StatusToUpdate
- * @property string $TrafficPolicyId
+ * @property string|null $IngressPointName
+ * @property string|null $RuleSetId
+ * @property 'ACTIVE'|'CLOSED'|null $StatusToUpdate
+ * @property string|null $TrafficPolicyId
  */
 class UpdateIngressPointRequest extends Request
 {
     /**
      * @param array{
-     *     IngressPointConfiguration?: Shapes\IngressPointConfiguration,
+     *     IngressPointConfiguration?: Shapes\IngressPointConfiguration|null,
      *     IngressPointId: string,
-     *     IngressPointName?: string,
-     *     RuleSetId?: string,
-     *     StatusToUpdate?: 'ACTIVE'|'CLOSED',
-     *     TrafficPolicyId?: string
+     *     IngressPointName?: string|null,
+     *     RuleSetId?: string|null,
+     *     StatusToUpdate?: 'ACTIVE'|'CLOSED'|null,
+     *     TrafficPolicyId?: string|null
      * } $args
      */
     public function __construct(array $args)

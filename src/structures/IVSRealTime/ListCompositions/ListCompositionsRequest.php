@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\ListCompositions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $filterByStageArn
- * @property string $filterByEncoderConfigurationArn
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $filterByStageArn
+ * @property string|null $filterByEncoderConfigurationArn
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListCompositionsRequest extends Request
 {
     /**
      * @param array{
-     *     filterByStageArn?: string,
-     *     filterByEncoderConfigurationArn?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     filterByStageArn?: string|null,
+     *     filterByEncoderConfigurationArn?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

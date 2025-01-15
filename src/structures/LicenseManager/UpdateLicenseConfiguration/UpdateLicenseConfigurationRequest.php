@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LicenseConfigurationArn
- * @property 'AVAILABLE'|'DISABLED' $LicenseConfigurationStatus
- * @property list<string> $LicenseRules
- * @property int $LicenseCount
- * @property bool $LicenseCountHardLimit
- * @property string $Name
- * @property string $Description
- * @property list<Shapes\ProductInformation> $ProductInformationList
- * @property bool $DisassociateWhenNotFound
+ * @property 'AVAILABLE'|'DISABLED'|null $LicenseConfigurationStatus
+ * @property list<string>|null $LicenseRules
+ * @property int|null $LicenseCount
+ * @property bool|null $LicenseCountHardLimit
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property list<Shapes\ProductInformation>|null $ProductInformationList
+ * @property bool|null $DisassociateWhenNotFound
  */
 class UpdateLicenseConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     LicenseConfigurationArn: string,
-     *     LicenseConfigurationStatus?: 'AVAILABLE'|'DISABLED',
-     *     LicenseRules?: list<string>,
-     *     LicenseCount?: int,
-     *     LicenseCountHardLimit?: bool,
-     *     Name?: string,
-     *     Description?: string,
-     *     ProductInformationList?: list<Shapes\ProductInformation>,
-     *     DisassociateWhenNotFound?: bool
+     *     LicenseConfigurationStatus?: 'AVAILABLE'|'DISABLED'|null,
+     *     LicenseRules?: list<string>|null,
+     *     LicenseCount?: int|null,
+     *     LicenseCountHardLimit?: bool|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     ProductInformationList?: list<Shapes\ProductInformation>|null,
+     *     DisassociateWhenNotFound?: bool|null
      * } $args
      */
     public function __construct(array $args)

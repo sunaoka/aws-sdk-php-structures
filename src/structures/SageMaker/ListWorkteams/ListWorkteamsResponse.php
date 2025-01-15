@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Workteam> $Workteams
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListWorkteamsResponse extends Response
 {

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaTailor\CreateProgram\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<KeyValuePair> $AdBreakMetadata
- * @property 'SPLICE_INSERT'|'TIME_SIGNAL' $MessageType
+ * @property list<KeyValuePair>|null $AdBreakMetadata
+ * @property 'SPLICE_INSERT'|'TIME_SIGNAL'|null $MessageType
  * @property int $OffsetMillis
- * @property SlateSource $Slate
- * @property SpliceInsertMessage $SpliceInsertMessage
- * @property TimeSignalMessage $TimeSignalMessage
+ * @property SlateSource|null $Slate
+ * @property SpliceInsertMessage|null $SpliceInsertMessage
+ * @property TimeSignalMessage|null $TimeSignalMessage
  */
 class AdBreak extends Shape
 {
     /**
      * @param array{
-     *     AdBreakMetadata?: list<KeyValuePair>,
-     *     MessageType?: 'SPLICE_INSERT'|'TIME_SIGNAL',
+     *     AdBreakMetadata?: list<KeyValuePair>|null,
+     *     MessageType?: 'SPLICE_INSERT'|'TIME_SIGNAL'|null,
      *     OffsetMillis: int,
-     *     Slate?: SlateSource,
-     *     SpliceInsertMessage?: SpliceInsertMessage,
-     *     TimeSignalMessage?: TimeSignalMessage
+     *     Slate?: SlateSource|null,
+     *     SpliceInsertMessage?: SpliceInsertMessage|null,
+     *     TimeSignalMessage?: TimeSignalMessage|null
      * } $args
      */
     public function __construct(array $args)

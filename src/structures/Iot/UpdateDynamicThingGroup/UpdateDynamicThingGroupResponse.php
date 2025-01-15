@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iot\UpdateDynamicThingGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $version
+ * @property int|null $version
  */
 class UpdateDynamicThingGroupResponse extends Response
 {

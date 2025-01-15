@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ComplianceResourceType
  * @property string $ComplianceResourceId
  * @property 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA' $ComplianceType
- * @property string $Annotation
+ * @property string|null $Annotation
  * @property \Aws\Api\DateTimeResult $OrderingTimestamp
  */
 class ExternalEvaluation extends Shape
@@ -18,7 +18,7 @@ class ExternalEvaluation extends Shape
      *     ComplianceResourceType: string,
      *     ComplianceResourceId: string,
      *     ComplianceType: 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA',
-     *     Annotation?: string,
+     *     Annotation?: string|null,
      *     OrderingTimestamp: \Aws\Api\DateTimeResult
      * } $args
      */

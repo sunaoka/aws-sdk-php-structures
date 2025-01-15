@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ComputationId
- * @property string $Name
- * @property DimensionField $Category
+ * @property string|null $Name
+ * @property DimensionField|null $Category
  */
 class UniqueValuesComputation extends Shape
 {
     /**
      * @param array{
      *     ComputationId: string,
-     *     Name?: string,
-     *     Category?: DimensionField
+     *     Name?: string|null,
+     *     Category?: DimensionField|null
      * } $args
      */
     public function __construct(array $args)

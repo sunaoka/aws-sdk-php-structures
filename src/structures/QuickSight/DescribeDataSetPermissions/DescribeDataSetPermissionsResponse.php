@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSetPermissions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DataSetArn
- * @property string $DataSetId
- * @property list<Shapes\ResourcePermission> $Permissions
- * @property string $RequestId
- * @property int $Status
+ * @property string|null $DataSetArn
+ * @property string|null $DataSetId
+ * @property list<Shapes\ResourcePermission>|null $Permissions
+ * @property string|null $RequestId
+ * @property int|null $Status
  */
 class DescribeDataSetPermissionsResponse extends Response
 {

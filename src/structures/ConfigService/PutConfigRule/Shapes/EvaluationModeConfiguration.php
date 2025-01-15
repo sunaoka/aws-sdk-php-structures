@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConfigService\PutConfigRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DETECTIVE'|'PROACTIVE' $Mode
+ * @property 'DETECTIVE'|'PROACTIVE'|null $Mode
  */
 class EvaluationModeConfiguration extends Shape
 {
     /**
-     * @param array{Mode?: 'DETECTIVE'|'PROACTIVE'} $args
+     * @param array{Mode?: 'DETECTIVE'|'PROACTIVE'|null} $args
      */
     public function __construct(array $args = [])
     {

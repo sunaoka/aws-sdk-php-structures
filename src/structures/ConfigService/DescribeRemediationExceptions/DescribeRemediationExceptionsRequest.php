@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConfigRuleName
- * @property list<Shapes\RemediationExceptionResourceKey> $ResourceKeys
- * @property int<0, 100> $Limit
- * @property string $NextToken
+ * @property list<Shapes\RemediationExceptionResourceKey>|null $ResourceKeys
+ * @property int<0, 100>|null $Limit
+ * @property string|null $NextToken
  */
 class DescribeRemediationExceptionsRequest extends Request
 {
     /**
      * @param array{
      *     ConfigRuleName: string,
-     *     ResourceKeys?: list<Shapes\RemediationExceptionResourceKey>,
-     *     Limit?: int<0, 100>,
-     *     NextToken?: string
+     *     ResourceKeys?: list<Shapes\RemediationExceptionResourceKey>|null,
+     *     Limit?: int<0, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

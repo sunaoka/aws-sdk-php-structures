@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\UpdateTrustAnchor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property bool $enabled
- * @property string $name
- * @property list<NotificationSettingDetail> $notificationSettings
- * @property Source $source
- * @property string $trustAnchorArn
- * @property string $trustAnchorId
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property bool|null $enabled
+ * @property string|null $name
+ * @property list<NotificationSettingDetail>|null $notificationSettings
+ * @property Source|null $source
+ * @property string|null $trustAnchorArn
+ * @property string|null $trustAnchorId
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class TrustAnchorDetail extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     enabled?: bool,
-     *     name?: string,
-     *     notificationSettings?: list<NotificationSettingDetail>,
-     *     source?: Source,
-     *     trustAnchorArn?: string,
-     *     trustAnchorId?: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     enabled?: bool|null,
+     *     name?: string|null,
+     *     notificationSettings?: list<NotificationSettingDetail>|null,
+     *     source?: Source|null,
+     *     trustAnchorArn?: string|null,
+     *     trustAnchorId?: string|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

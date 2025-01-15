@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assetModelId
- * @property string $assetModelExternalId
+ * @property string|null $assetModelExternalId
  * @property string $assetModelName
- * @property string $assetModelDescription
- * @property list<Shapes\AssetModelProperty> $assetModelProperties
- * @property list<Shapes\AssetModelHierarchy> $assetModelHierarchies
- * @property list<Shapes\AssetModelCompositeModel> $assetModelCompositeModels
- * @property string $clientToken
- * @property string $ifMatch
- * @property string $ifNoneMatch
- * @property 'LATEST'|'ACTIVE' $matchForVersionType
+ * @property string|null $assetModelDescription
+ * @property list<Shapes\AssetModelProperty>|null $assetModelProperties
+ * @property list<Shapes\AssetModelHierarchy>|null $assetModelHierarchies
+ * @property list<Shapes\AssetModelCompositeModel>|null $assetModelCompositeModels
+ * @property string|null $clientToken
+ * @property string|null $ifMatch
+ * @property string|null $ifNoneMatch
+ * @property 'LATEST'|'ACTIVE'|null $matchForVersionType
  */
 class UpdateAssetModelRequest extends Request
 {
     /**
      * @param array{
      *     assetModelId: string,
-     *     assetModelExternalId?: string,
+     *     assetModelExternalId?: string|null,
      *     assetModelName: string,
-     *     assetModelDescription?: string,
-     *     assetModelProperties?: list<Shapes\AssetModelProperty>,
-     *     assetModelHierarchies?: list<Shapes\AssetModelHierarchy>,
-     *     assetModelCompositeModels?: list<Shapes\AssetModelCompositeModel>,
-     *     clientToken?: string,
-     *     ifMatch?: string,
-     *     ifNoneMatch?: string,
-     *     matchForVersionType?: 'LATEST'|'ACTIVE'
+     *     assetModelDescription?: string|null,
+     *     assetModelProperties?: list<Shapes\AssetModelProperty>|null,
+     *     assetModelHierarchies?: list<Shapes\AssetModelHierarchy>|null,
+     *     assetModelCompositeModels?: list<Shapes\AssetModelCompositeModel>|null,
+     *     clientToken?: string|null,
+     *     ifMatch?: string|null,
+     *     ifNoneMatch?: string|null,
+     *     matchForVersionType?: 'LATEST'|'ACTIVE'|null
      * } $args
      */
     public function __construct(array $args)

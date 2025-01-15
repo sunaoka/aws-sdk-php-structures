@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryControlConfig\CreateRoutingContr
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $ClusterArn
- * @property string $ControlPanelArn
+ * @property string|null $ControlPanelArn
  * @property string $RoutingControlName
  */
 class CreateRoutingControlRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     ClusterArn: string,
-     *     ControlPanelArn?: string,
+     *     ControlPanelArn?: string|null,
      *     RoutingControlName: string
      * } $args
      */

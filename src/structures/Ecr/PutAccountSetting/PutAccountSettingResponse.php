@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ecr\PutAccountSetting;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $name
- * @property string $value
+ * @property string|null $name
+ * @property string|null $value
  */
 class PutAccountSettingResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchCreateWorkloadEstimat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $key
- * @property 'BAD_REQUEST'|'NOT_FOUND'|'CONFLICT'|'INTERNAL_SERVER_ERROR' $errorCode
- * @property string $errorMessage
+ * @property string|null $key
+ * @property 'BAD_REQUEST'|'NOT_FOUND'|'CONFLICT'|'INTERNAL_SERVER_ERROR'|null $errorCode
+ * @property string|null $errorMessage
  */
 class BatchCreateWorkloadEstimateUsageError extends Shape
 {
     /**
      * @param array{
-     *     key?: string,
-     *     errorCode?: 'BAD_REQUEST'|'NOT_FOUND'|'CONFLICT'|'INTERNAL_SERVER_ERROR',
-     *     errorMessage?: string
+     *     key?: string|null,
+     *     errorCode?: 'BAD_REQUEST'|'NOT_FOUND'|'CONFLICT'|'INTERNAL_SERVER_ERROR'|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

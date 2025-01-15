@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\GetScalingConfigurationRecommendation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $InvocationsPerInstance
- * @property int $ModelLatency
+ * @property int|null $InvocationsPerInstance
+ * @property int|null $ModelLatency
  */
 class ScalingPolicyMetric extends Shape
 {
     /**
      * @param array{
-     *     InvocationsPerInstance?: int,
-     *     ModelLatency?: int
+     *     InvocationsPerInstance?: int|null,
+     *     ModelLatency?: int|null
      * } $args
      */
     public function __construct(array $args = [])

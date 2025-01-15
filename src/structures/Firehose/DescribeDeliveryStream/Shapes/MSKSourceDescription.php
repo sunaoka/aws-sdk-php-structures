@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Firehose\DescribeDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MSKClusterARN
- * @property string $TopicName
- * @property AuthenticationConfiguration $AuthenticationConfiguration
- * @property \Aws\Api\DateTimeResult $DeliveryStartTimestamp
- * @property \Aws\Api\DateTimeResult $ReadFromTimestamp
+ * @property string|null $MSKClusterARN
+ * @property string|null $TopicName
+ * @property AuthenticationConfiguration|null $AuthenticationConfiguration
+ * @property \Aws\Api\DateTimeResult|null $DeliveryStartTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ReadFromTimestamp
  */
 class MSKSourceDescription extends Shape
 {
     /**
      * @param array{
-     *     MSKClusterARN?: string,
-     *     TopicName?: string,
-     *     AuthenticationConfiguration?: AuthenticationConfiguration,
-     *     DeliveryStartTimestamp?: \Aws\Api\DateTimeResult,
-     *     ReadFromTimestamp?: \Aws\Api\DateTimeResult
+     *     MSKClusterARN?: string|null,
+     *     TopicName?: string|null,
+     *     AuthenticationConfiguration?: AuthenticationConfiguration|null,
+     *     DeliveryStartTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ReadFromTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

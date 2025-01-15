@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeCertificate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $certificateArn
- * @property string $certificateId
- * @property string $caCertificateId
- * @property 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION' $status
- * @property string $certificatePem
- * @property string $ownedBy
- * @property string $previousOwnedBy
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property \Aws\Api\DateTimeResult $lastModifiedDate
- * @property int<1, max> $customerVersion
- * @property TransferData $transferData
- * @property string $generationId
- * @property CertificateValidity $validity
- * @property 'DEFAULT'|'SNI_ONLY' $certificateMode
+ * @property string|null $certificateArn
+ * @property string|null $certificateId
+ * @property string|null $caCertificateId
+ * @property 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION'|null $status
+ * @property string|null $certificatePem
+ * @property string|null $ownedBy
+ * @property string|null $previousOwnedBy
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedDate
+ * @property int<1, max>|null $customerVersion
+ * @property TransferData|null $transferData
+ * @property string|null $generationId
+ * @property CertificateValidity|null $validity
+ * @property 'DEFAULT'|'SNI_ONLY'|null $certificateMode
  */
 class CertificateDescription extends Shape
 {
     /**
      * @param array{
-     *     certificateArn?: string,
-     *     certificateId?: string,
-     *     caCertificateId?: string,
-     *     status?: 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION',
-     *     certificatePem?: string,
-     *     ownedBy?: string,
-     *     previousOwnedBy?: string,
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     lastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     customerVersion?: int<1, max>,
-     *     transferData?: TransferData,
-     *     generationId?: string,
-     *     validity?: CertificateValidity,
-     *     certificateMode?: 'DEFAULT'|'SNI_ONLY'
+     *     certificateArn?: string|null,
+     *     certificateId?: string|null,
+     *     caCertificateId?: string|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION'|null,
+     *     certificatePem?: string|null,
+     *     ownedBy?: string|null,
+     *     previousOwnedBy?: string|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     customerVersion?: int<1, max>|null,
+     *     transferData?: TransferData|null,
+     *     generationId?: string|null,
+     *     validity?: CertificateValidity|null,
+     *     certificateMode?: 'DEFAULT'|'SNI_ONLY'|null
      * } $args
      */
     public function __construct(array $args = [])

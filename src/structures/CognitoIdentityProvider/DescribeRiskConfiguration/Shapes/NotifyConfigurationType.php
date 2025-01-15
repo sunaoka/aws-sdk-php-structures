@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\DescribeRiskConfigurati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $From
- * @property string $ReplyTo
+ * @property string|null $From
+ * @property string|null $ReplyTo
  * @property string $SourceArn
- * @property NotifyEmailType $BlockEmail
- * @property NotifyEmailType $NoActionEmail
- * @property NotifyEmailType $MfaEmail
+ * @property NotifyEmailType|null $BlockEmail
+ * @property NotifyEmailType|null $NoActionEmail
+ * @property NotifyEmailType|null $MfaEmail
  */
 class NotifyConfigurationType extends Shape
 {
     /**
      * @param array{
-     *     From?: string,
-     *     ReplyTo?: string,
+     *     From?: string|null,
+     *     ReplyTo?: string|null,
      *     SourceArn: string,
-     *     BlockEmail?: NotifyEmailType,
-     *     NoActionEmail?: NotifyEmailType,
-     *     MfaEmail?: NotifyEmailType
+     *     BlockEmail?: NotifyEmailType|null,
+     *     NoActionEmail?: NotifyEmailType|null,
+     *     MfaEmail?: NotifyEmailType|null
      * } $args
      */
     public function __construct(array $args)

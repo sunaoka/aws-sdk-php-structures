@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\DataZone\SearchListings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AssetListingItemAdditionalAttributes $additionalAttributes
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
- * @property string $entityId
- * @property string $entityRevision
- * @property string $entityType
- * @property list<DetailedGlossaryTerm> $glossaryTerms
- * @property string $listingCreatedBy
- * @property string $listingId
- * @property string $listingRevision
- * @property string $listingUpdatedBy
- * @property string $name
- * @property string $owningProjectId
+ * @property AssetListingItemAdditionalAttributes|null $additionalAttributes
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $description
+ * @property string|null $entityId
+ * @property string|null $entityRevision
+ * @property string|null $entityType
+ * @property list<DetailedGlossaryTerm>|null $glossaryTerms
+ * @property string|null $listingCreatedBy
+ * @property string|null $listingId
+ * @property string|null $listingRevision
+ * @property string|null $listingUpdatedBy
+ * @property string|null $name
+ * @property string|null $owningProjectId
  */
 class AssetListingItem extends Shape
 {
     /**
      * @param array{
-     *     additionalAttributes?: AssetListingItemAdditionalAttributes,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     entityId?: string,
-     *     entityRevision?: string,
-     *     entityType?: string,
-     *     glossaryTerms?: list<DetailedGlossaryTerm>,
-     *     listingCreatedBy?: string,
-     *     listingId?: string,
-     *     listingRevision?: string,
-     *     listingUpdatedBy?: string,
-     *     name?: string,
-     *     owningProjectId?: string
+     *     additionalAttributes?: AssetListingItemAdditionalAttributes|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     description?: string|null,
+     *     entityId?: string|null,
+     *     entityRevision?: string|null,
+     *     entityType?: string|null,
+     *     glossaryTerms?: list<DetailedGlossaryTerm>|null,
+     *     listingCreatedBy?: string|null,
+     *     listingId?: string|null,
+     *     listingRevision?: string|null,
+     *     listingUpdatedBy?: string|null,
+     *     name?: string|null,
+     *     owningProjectId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

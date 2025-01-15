@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\CloudTrail\UpdateEventDataStore;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $EventDataStoreArn
- * @property string $Name
- * @property 'CREATED'|'ENABLED'|'PENDING_DELETION'|'STARTING_INGESTION'|'STOPPING_INGESTION'|'STOPPED_INGESTION' $Status
- * @property list<Shapes\AdvancedEventSelector> $AdvancedEventSelectors
- * @property bool $MultiRegionEnabled
- * @property bool $OrganizationEnabled
- * @property int<7, 3653> $RetentionPeriod
- * @property bool $TerminationProtectionEnabled
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
- * @property string $KmsKeyId
- * @property 'EXTENDABLE_RETENTION_PRICING'|'FIXED_RETENTION_PRICING' $BillingMode
- * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED' $FederationStatus
- * @property string $FederationRoleArn
+ * @property string|null $EventDataStoreArn
+ * @property string|null $Name
+ * @property 'CREATED'|'ENABLED'|'PENDING_DELETION'|'STARTING_INGESTION'|'STOPPING_INGESTION'|'STOPPED_INGESTION'|null $Status
+ * @property list<Shapes\AdvancedEventSelector>|null $AdvancedEventSelectors
+ * @property bool|null $MultiRegionEnabled
+ * @property bool|null $OrganizationEnabled
+ * @property int<7, 3653>|null $RetentionPeriod
+ * @property bool|null $TerminationProtectionEnabled
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
+ * @property string|null $KmsKeyId
+ * @property 'EXTENDABLE_RETENTION_PRICING'|'FIXED_RETENTION_PRICING'|null $BillingMode
+ * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|null $FederationStatus
+ * @property string|null $FederationRoleArn
  */
 class UpdateEventDataStoreResponse extends Response
 {

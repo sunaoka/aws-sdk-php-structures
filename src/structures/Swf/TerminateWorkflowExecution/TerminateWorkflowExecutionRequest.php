@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domain
  * @property string $workflowId
- * @property string $runId
- * @property string $reason
- * @property string $details
- * @property 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON' $childPolicy
+ * @property string|null $runId
+ * @property string|null $reason
+ * @property string|null $details
+ * @property 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON'|null $childPolicy
  */
 class TerminateWorkflowExecutionRequest extends Request
 {
@@ -18,10 +18,10 @@ class TerminateWorkflowExecutionRequest extends Request
      * @param array{
      *     domain: string,
      *     workflowId: string,
-     *     runId?: string,
-     *     reason?: string,
-     *     details?: string,
-     *     childPolicy?: 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON'
+     *     runId?: string|null,
+     *     reason?: string|null,
+     *     details?: string|null,
+     *     childPolicy?: 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON'|null
      * } $args
      */
     public function __construct(array $args)

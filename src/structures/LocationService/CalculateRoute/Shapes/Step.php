@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<double> $EndPosition
  * @property double $Distance
  * @property double $DurationSeconds
- * @property int<0, max> $GeometryOffset
+ * @property int<0, max>|null $GeometryOffset
  */
 class Step extends Shape
 {
@@ -19,7 +19,7 @@ class Step extends Shape
      *     EndPosition: list<double>,
      *     Distance: double,
      *     DurationSeconds: double,
-     *     GeometryOffset?: int<0, max>
+     *     GeometryOffset?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

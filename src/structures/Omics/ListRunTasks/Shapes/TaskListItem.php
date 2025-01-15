@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Omics\ListRunTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $taskId
- * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'CANCELLED'|'FAILED' $status
- * @property string $name
- * @property int<1, max> $cpus
- * @property bool $cacheHit
- * @property string $cacheS3Uri
- * @property int<1, max> $memory
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $stopTime
- * @property int<0, max> $gpus
- * @property string $instanceType
+ * @property string|null $taskId
+ * @property 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'CANCELLED'|'FAILED'|null $status
+ * @property string|null $name
+ * @property int<1, max>|null $cpus
+ * @property bool|null $cacheHit
+ * @property string|null $cacheS3Uri
+ * @property int<1, max>|null $memory
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $stopTime
+ * @property int<0, max>|null $gpus
+ * @property string|null $instanceType
  */
 class TaskListItem extends Shape
 {
     /**
      * @param array{
-     *     taskId?: string,
-     *     status?: 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'CANCELLED'|'FAILED',
-     *     name?: string,
-     *     cpus?: int<1, max>,
-     *     cacheHit?: bool,
-     *     cacheS3Uri?: string,
-     *     memory?: int<1, max>,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     stopTime?: \Aws\Api\DateTimeResult,
-     *     gpus?: int<0, max>,
-     *     instanceType?: string
+     *     taskId?: string|null,
+     *     status?: 'PENDING'|'STARTING'|'RUNNING'|'STOPPING'|'COMPLETED'|'CANCELLED'|'FAILED'|null,
+     *     name?: string|null,
+     *     cpus?: int<1, max>|null,
+     *     cacheHit?: bool|null,
+     *     cacheS3Uri?: string|null,
+     *     memory?: int<1, max>|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     stopTime?: \Aws\Api\DateTimeResult|null,
+     *     gpus?: int<0, max>|null,
+     *     instanceType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

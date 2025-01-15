@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeEventCategorie
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceType
- * @property list<string> $EventCategories
+ * @property string|null $SourceType
+ * @property list<string>|null $EventCategories
  */
 class EventCategoryGroup extends Shape
 {
     /**
      * @param array{
-     *     SourceType?: string,
-     *     EventCategories?: list<string>
+     *     SourceType?: string|null,
+     *     EventCategories?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

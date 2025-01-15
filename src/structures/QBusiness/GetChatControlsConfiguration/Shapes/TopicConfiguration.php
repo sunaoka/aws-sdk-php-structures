@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $description
- * @property list<string> $exampleChatMessages
+ * @property string|null $description
+ * @property list<string>|null $exampleChatMessages
  * @property list<Rule> $rules
  */
 class TopicConfiguration extends Shape
@@ -15,8 +15,8 @@ class TopicConfiguration extends Shape
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     exampleChatMessages?: list<string>,
+     *     description?: string|null,
+     *     exampleChatMessages?: list<string>|null,
      *     rules: list<Rule>
      * } $args
      */

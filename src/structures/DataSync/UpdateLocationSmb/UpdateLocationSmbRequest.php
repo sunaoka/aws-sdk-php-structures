@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LocationArn
- * @property string $Subdirectory
- * @property string $User
- * @property string $Domain
- * @property string $Password
- * @property list<string> $AgentArns
- * @property Shapes\SmbMountOptions $MountOptions
+ * @property string|null $Subdirectory
+ * @property string|null $User
+ * @property string|null $Domain
+ * @property string|null $Password
+ * @property list<string>|null $AgentArns
+ * @property Shapes\SmbMountOptions|null $MountOptions
  */
 class UpdateLocationSmbRequest extends Request
 {
     /**
      * @param array{
      *     LocationArn: string,
-     *     Subdirectory?: string,
-     *     User?: string,
-     *     Domain?: string,
-     *     Password?: string,
-     *     AgentArns?: list<string>,
-     *     MountOptions?: Shapes\SmbMountOptions
+     *     Subdirectory?: string|null,
+     *     User?: string|null,
+     *     Domain?: string|null,
+     *     Password?: string|null,
+     *     AgentArns?: list<string>|null,
+     *     MountOptions?: Shapes\SmbMountOptions|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WellArchitected\CreateTemplateShare;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TemplateArn
- * @property string $ShareId
+ * @property string|null $TemplateArn
+ * @property string|null $ShareId
  */
 class CreateTemplateShareResponse extends Response
 {

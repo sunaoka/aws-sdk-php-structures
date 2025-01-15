@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppRegistry\GetAssociatedResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CREATING'|'CREATE_COMPLETE'|'CREATE_FAILED'|'UPDATING'|'UPDATE_COMPLETE'|'UPDATE_FAILED' $state
- * @property string $arn
- * @property string $errorMessage
+ * @property 'CREATING'|'CREATE_COMPLETE'|'CREATE_FAILED'|'UPDATING'|'UPDATE_COMPLETE'|'UPDATE_FAILED'|null $state
+ * @property string|null $arn
+ * @property string|null $errorMessage
  */
 class ResourceGroup extends Shape
 {
     /**
      * @param array{
-     *     state?: 'CREATING'|'CREATE_COMPLETE'|'CREATE_FAILED'|'UPDATING'|'UPDATE_COMPLETE'|'UPDATE_FAILED',
-     *     arn?: string,
-     *     errorMessage?: string
+     *     state?: 'CREATING'|'CREATE_COMPLETE'|'CREATE_FAILED'|'UPDATING'|'UPDATE_COMPLETE'|'UPDATE_FAILED'|null,
+     *     arn?: string|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

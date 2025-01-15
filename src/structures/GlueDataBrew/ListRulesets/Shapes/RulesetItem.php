@@ -5,32 +5,32 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\ListRulesets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $CreatedBy
- * @property \Aws\Api\DateTimeResult $CreateDate
- * @property string $Description
- * @property string $LastModifiedBy
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
+ * @property string|null $AccountId
+ * @property string|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
+ * @property string|null $Description
+ * @property string|null $LastModifiedBy
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
  * @property string $Name
- * @property string $ResourceArn
- * @property int<0, max> $RuleCount
- * @property array<string, string> $Tags
+ * @property string|null $ResourceArn
+ * @property int<0, max>|null $RuleCount
+ * @property array<string, string>|null $Tags
  * @property string $TargetArn
  */
 class RulesetItem extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     CreatedBy?: string,
-     *     CreateDate?: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     LastModifiedBy?: string,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult,
+     *     AccountId?: string|null,
+     *     CreatedBy?: string|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     LastModifiedBy?: string|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
      *     Name: string,
-     *     ResourceArn?: string,
-     *     RuleCount?: int<0, max>,
-     *     Tags?: array<string, string>,
+     *     ResourceArn?: string|null,
+     *     RuleCount?: int<0, max>|null,
+     *     Tags?: array<string, string>|null,
      *     TargetArn: string
      * } $args
      */

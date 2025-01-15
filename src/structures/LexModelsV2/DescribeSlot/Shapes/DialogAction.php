@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ElicitIntent'|'StartIntent'|'ElicitSlot'|'EvaluateConditional'|'InvokeDialogCodeHook'|'ConfirmIntent'|'FulfillIntent'|'CloseIntent'|'EndConversation' $type
- * @property string $slotToElicit
- * @property bool $suppressNextMessage
+ * @property string|null $slotToElicit
+ * @property bool|null $suppressNextMessage
  */
 class DialogAction extends Shape
 {
     /**
      * @param array{
      *     type: 'ElicitIntent'|'StartIntent'|'ElicitSlot'|'EvaluateConditional'|'InvokeDialogCodeHook'|'ConfirmIntent'|'FulfillIntent'|'CloseIntent'|'EndConversation',
-     *     slotToElicit?: string,
-     *     suppressNextMessage?: bool
+     *     slotToElicit?: string|null,
+     *     suppressNextMessage?: bool|null
      * } $args
      */
     public function __construct(array $args)

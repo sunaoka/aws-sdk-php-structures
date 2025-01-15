@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateInput\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property list<string> $AttachedChannels
- * @property list<InputDestination> $Destinations
- * @property string $Id
- * @property 'STANDARD'|'SINGLE_PIPELINE' $InputClass
- * @property list<InputDeviceSettings> $InputDevices
- * @property list<string> $InputPartnerIds
- * @property 'STATIC'|'DYNAMIC' $InputSourceType
- * @property list<MediaConnectFlow> $MediaConnectFlows
- * @property string $Name
- * @property string $RoleArn
- * @property list<string> $SecurityGroups
- * @property list<InputSource> $Sources
- * @property 'CREATING'|'DETACHED'|'ATTACHED'|'DELETING'|'DELETED' $State
- * @property array<string, string> $Tags
- * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST' $Type
- * @property SrtSettings $SrtSettings
- * @property 'AWS'|'ON_PREMISES' $InputNetworkLocation
- * @property MulticastSettings $MulticastSettings
+ * @property string|null $Arn
+ * @property list<string>|null $AttachedChannels
+ * @property list<InputDestination>|null $Destinations
+ * @property string|null $Id
+ * @property 'STANDARD'|'SINGLE_PIPELINE'|null $InputClass
+ * @property list<InputDeviceSettings>|null $InputDevices
+ * @property list<string>|null $InputPartnerIds
+ * @property 'STATIC'|'DYNAMIC'|null $InputSourceType
+ * @property list<MediaConnectFlow>|null $MediaConnectFlows
+ * @property string|null $Name
+ * @property string|null $RoleArn
+ * @property list<string>|null $SecurityGroups
+ * @property list<InputSource>|null $Sources
+ * @property 'CREATING'|'DETACHED'|'ATTACHED'|'DELETING'|'DELETED'|null $State
+ * @property array<string, string>|null $Tags
+ * @property 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|null $Type
+ * @property SrtSettings|null $SrtSettings
+ * @property 'AWS'|'ON_PREMISES'|null $InputNetworkLocation
+ * @property MulticastSettings|null $MulticastSettings
  */
 class Input extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     AttachedChannels?: list<string>,
-     *     Destinations?: list<InputDestination>,
-     *     Id?: string,
-     *     InputClass?: 'STANDARD'|'SINGLE_PIPELINE',
-     *     InputDevices?: list<InputDeviceSettings>,
-     *     InputPartnerIds?: list<string>,
-     *     InputSourceType?: 'STATIC'|'DYNAMIC',
-     *     MediaConnectFlows?: list<MediaConnectFlow>,
-     *     Name?: string,
-     *     RoleArn?: string,
-     *     SecurityGroups?: list<string>,
-     *     Sources?: list<InputSource>,
-     *     State?: 'CREATING'|'DETACHED'|'ATTACHED'|'DELETING'|'DELETED',
-     *     Tags?: array<string, string>,
-     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST',
-     *     SrtSettings?: SrtSettings,
-     *     InputNetworkLocation?: 'AWS'|'ON_PREMISES',
-     *     MulticastSettings?: MulticastSettings
+     *     Arn?: string|null,
+     *     AttachedChannels?: list<string>|null,
+     *     Destinations?: list<InputDestination>|null,
+     *     Id?: string|null,
+     *     InputClass?: 'STANDARD'|'SINGLE_PIPELINE'|null,
+     *     InputDevices?: list<InputDeviceSettings>|null,
+     *     InputPartnerIds?: list<string>|null,
+     *     InputSourceType?: 'STATIC'|'DYNAMIC'|null,
+     *     MediaConnectFlows?: list<MediaConnectFlow>|null,
+     *     Name?: string|null,
+     *     RoleArn?: string|null,
+     *     SecurityGroups?: list<string>|null,
+     *     Sources?: list<InputSource>|null,
+     *     State?: 'CREATING'|'DETACHED'|'ATTACHED'|'DELETING'|'DELETED'|null,
+     *     Tags?: array<string, string>|null,
+     *     Type?: 'UDP_PUSH'|'RTP_PUSH'|'RTMP_PUSH'|'RTMP_PULL'|'URL_PULL'|'MP4_FILE'|'MEDIACONNECT'|'INPUT_DEVICE'|'AWS_CDI'|'TS_FILE'|'SRT_CALLER'|'MULTICAST'|null,
+     *     SrtSettings?: SrtSettings|null,
+     *     InputNetworkLocation?: 'AWS'|'ON_PREMISES'|null,
+     *     MulticastSettings?: MulticastSettings|null
      * } $args
      */
     public function __construct(array $args = [])

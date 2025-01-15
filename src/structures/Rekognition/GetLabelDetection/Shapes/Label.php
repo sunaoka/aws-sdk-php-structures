@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetLabelDetection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property float $Confidence
- * @property list<Instance> $Instances
- * @property list<ParentShape> $Parents
- * @property list<LabelAlias> $Aliases
- * @property list<LabelCategory> $Categories
+ * @property string|null $Name
+ * @property float|null $Confidence
+ * @property list<Instance>|null $Instances
+ * @property list<ParentShape>|null $Parents
+ * @property list<LabelAlias>|null $Aliases
+ * @property list<LabelCategory>|null $Categories
  */
 class Label extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Confidence?: float,
-     *     Instances?: list<Instance>,
-     *     Parents?: list<ParentShape>,
-     *     Aliases?: list<LabelAlias>,
-     *     Categories?: list<LabelCategory>
+     *     Name?: string|null,
+     *     Confidence?: float|null,
+     *     Instances?: list<Instance>|null,
+     *     Parents?: list<ParentShape>|null,
+     *     Aliases?: list<LabelAlias>|null,
+     *     Categories?: list<LabelCategory>|null
      * } $args
      */
     public function __construct(array $args = [])

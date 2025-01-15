@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $HITId
  * @property int $NumberOfAdditionalAssignments
- * @property string $UniqueRequestToken
+ * @property string|null $UniqueRequestToken
  */
 class CreateAdditionalAssignmentsForHITRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateAdditionalAssignmentsForHITRequest extends Request
      * @param array{
      *     HITId: string,
      *     NumberOfAdditionalAssignments: int,
-     *     UniqueRequestToken?: string
+     *     UniqueRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

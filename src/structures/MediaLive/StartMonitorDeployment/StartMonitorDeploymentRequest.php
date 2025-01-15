@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaLive\StartMonitorDeployment;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $Identifier
  */
 class StartMonitorDeploymentRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     Identifier: string
      * } $args
      */

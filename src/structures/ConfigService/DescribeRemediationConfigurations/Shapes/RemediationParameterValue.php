@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeRemediationConfigurations
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResourceValue $ResourceValue
- * @property StaticValue $StaticValue
+ * @property ResourceValue|null $ResourceValue
+ * @property StaticValue|null $StaticValue
  */
 class RemediationParameterValue extends Shape
 {
     /**
      * @param array{
-     *     ResourceValue?: ResourceValue,
-     *     StaticValue?: StaticValue
+     *     ResourceValue?: ResourceValue|null,
+     *     StaticValue?: StaticValue|null
      * } $args
      */
     public function __construct(array $args = [])

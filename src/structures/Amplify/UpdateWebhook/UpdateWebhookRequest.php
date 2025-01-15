@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $webhookId
- * @property string $branchName
- * @property string $description
+ * @property string|null $branchName
+ * @property string|null $description
  */
 class UpdateWebhookRequest extends Request
 {
     /**
      * @param array{
      *     webhookId: string,
-     *     branchName?: string,
-     *     description?: string
+     *     branchName?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

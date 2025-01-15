@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListAnycastIpLists\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AnycastIpListSummary> $Items
+ * @property list<AnycastIpListSummary>|null $Items
  * @property string $Marker
- * @property string $NextMarker
+ * @property string|null $NextMarker
  * @property int $MaxItems
  * @property bool $IsTruncated
  * @property int $Quantity
@@ -16,9 +16,9 @@ class AnycastIpListCollection extends Shape
 {
     /**
      * @param array{
-     *     Items?: list<AnycastIpListSummary>,
+     *     Items?: list<AnycastIpListSummary>|null,
      *     Marker: string,
-     *     NextMarker?: string,
+     *     NextMarker?: string|null,
      *     MaxItems: int,
      *     IsTruncated: bool,
      *     Quantity: int

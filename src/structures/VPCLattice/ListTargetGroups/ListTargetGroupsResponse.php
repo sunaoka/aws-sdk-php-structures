@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\VPCLattice\ListTargetGroups;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\TargetGroupSummary> $items
- * @property string $nextToken
+ * @property list<Shapes\TargetGroupSummary>|null $items
+ * @property string|null $nextToken
  */
 class ListTargetGroupsResponse extends Response
 {

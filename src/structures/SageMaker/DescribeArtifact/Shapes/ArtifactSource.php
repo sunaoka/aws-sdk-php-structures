@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SourceUri
- * @property list<ArtifactSourceType> $SourceTypes
+ * @property list<ArtifactSourceType>|null $SourceTypes
  */
 class ArtifactSource extends Shape
 {
     /**
      * @param array{
      *     SourceUri: string,
-     *     SourceTypes?: list<ArtifactSourceType>
+     *     SourceTypes?: list<ArtifactSourceType>|null
      * } $args
      */
     public function __construct(array $args)

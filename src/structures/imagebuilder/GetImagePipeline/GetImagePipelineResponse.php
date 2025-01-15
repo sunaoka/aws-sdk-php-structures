@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetImagePipeline;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $requestId
- * @property Shapes\ImagePipeline $imagePipeline
+ * @property string|null $requestId
+ * @property Shapes\ImagePipeline|null $imagePipeline
  */
 class GetImagePipelineResponse extends Response
 {

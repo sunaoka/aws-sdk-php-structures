@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ListJobsByPipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InputKey
- * @property string $MaxWidth
- * @property string $MaxHeight
- * @property string $SizingPolicy
- * @property string $PaddingPolicy
- * @property string $AlbumArtFormat
- * @property Encryption $Encryption
+ * @property string|null $InputKey
+ * @property string|null $MaxWidth
+ * @property string|null $MaxHeight
+ * @property string|null $SizingPolicy
+ * @property string|null $PaddingPolicy
+ * @property string|null $AlbumArtFormat
+ * @property Encryption|null $Encryption
  */
 class Artwork extends Shape
 {
     /**
      * @param array{
-     *     InputKey?: string,
-     *     MaxWidth?: string,
-     *     MaxHeight?: string,
-     *     SizingPolicy?: string,
-     *     PaddingPolicy?: string,
-     *     AlbumArtFormat?: string,
-     *     Encryption?: Encryption
+     *     InputKey?: string|null,
+     *     MaxWidth?: string|null,
+     *     MaxHeight?: string|null,
+     *     SizingPolicy?: string|null,
+     *     PaddingPolicy?: string|null,
+     *     AlbumArtFormat?: string|null,
+     *     Encryption?: Encryption|null
      * } $args
      */
     public function __construct(array $args = [])

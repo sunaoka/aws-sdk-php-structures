@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeEventCategorie
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\EventCategoryGroup> $EventCategoryGroupList
+ * @property list<Shapes\EventCategoryGroup>|null $EventCategoryGroupList
  */
 class DescribeEventCategoriesResponse extends Response
 {

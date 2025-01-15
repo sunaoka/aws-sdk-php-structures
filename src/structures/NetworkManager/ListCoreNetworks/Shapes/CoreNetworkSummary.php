@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\NetworkManager\ListCoreNetworks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CoreNetworkId
- * @property string $CoreNetworkArn
- * @property string $GlobalNetworkId
- * @property string $OwnerAccountId
- * @property 'CREATING'|'UPDATING'|'AVAILABLE'|'DELETING' $State
- * @property string $Description
- * @property list<Tag> $Tags
+ * @property string|null $CoreNetworkId
+ * @property string|null $CoreNetworkArn
+ * @property string|null $GlobalNetworkId
+ * @property string|null $OwnerAccountId
+ * @property 'CREATING'|'UPDATING'|'AVAILABLE'|'DELETING'|null $State
+ * @property string|null $Description
+ * @property list<Tag>|null $Tags
  */
 class CoreNetworkSummary extends Shape
 {
     /**
      * @param array{
-     *     CoreNetworkId?: string,
-     *     CoreNetworkArn?: string,
-     *     GlobalNetworkId?: string,
-     *     OwnerAccountId?: string,
-     *     State?: 'CREATING'|'UPDATING'|'AVAILABLE'|'DELETING',
-     *     Description?: string,
-     *     Tags?: list<Tag>
+     *     CoreNetworkId?: string|null,
+     *     CoreNetworkArn?: string|null,
+     *     GlobalNetworkId?: string|null,
+     *     OwnerAccountId?: string|null,
+     *     State?: 'CREATING'|'UPDATING'|'AVAILABLE'|'DELETING'|null,
+     *     Description?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

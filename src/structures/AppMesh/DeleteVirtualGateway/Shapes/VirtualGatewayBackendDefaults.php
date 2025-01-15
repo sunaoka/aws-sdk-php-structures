@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteVirtualGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualGatewayClientPolicy $clientPolicy
+ * @property VirtualGatewayClientPolicy|null $clientPolicy
  */
 class VirtualGatewayBackendDefaults extends Shape
 {
     /**
-     * @param array{clientPolicy?: VirtualGatewayClientPolicy} $args
+     * @param array{clientPolicy?: VirtualGatewayClientPolicy|null} $args
      */
     public function __construct(array $args = [])
     {

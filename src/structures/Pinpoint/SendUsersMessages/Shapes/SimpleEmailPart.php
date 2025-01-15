@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pinpoint\SendUsersMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Charset
- * @property string $Data
+ * @property string|null $Charset
+ * @property string|null $Data
  */
 class SimpleEmailPart extends Shape
 {
     /**
      * @param array{
-     *     Charset?: string,
-     *     Data?: string
+     *     Charset?: string|null,
+     *     Data?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $mqttTopic
- * @property Payload $payload
+ * @property Payload|null $payload
  */
 class IotTopicPublishAction extends Shape
 {
     /**
      * @param array{
      *     mqttTopic: string,
-     *     payload?: Payload
+     *     payload?: Payload|null
      * } $args
      */
     public function __construct(array $args)

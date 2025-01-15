@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $environmentName
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListEnvironmentProvisionedResourcesRequest extends Request
 {
     /**
      * @param array{
      *     environmentName: string,
-     *     nextToken?: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

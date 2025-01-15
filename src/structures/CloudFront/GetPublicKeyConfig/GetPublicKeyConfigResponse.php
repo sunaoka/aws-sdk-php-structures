@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudFront\GetPublicKeyConfig;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\PublicKeyConfig $PublicKeyConfig
- * @property string $ETag
+ * @property Shapes\PublicKeyConfig|null $PublicKeyConfig
+ * @property string|null $ETag
  */
 class GetPublicKeyConfigResponse extends Response
 {

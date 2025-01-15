@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY' $DayOfWeek
  * @property string $TimeOfDay
- * @property string $TimeZone
+ * @property string|null $TimeZone
  */
 class WeeklyStartTime extends Shape
 {
@@ -15,7 +15,7 @@ class WeeklyStartTime extends Shape
      * @param array{
      *     DayOfWeek: 'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY',
      *     TimeOfDay: string,
-     *     TimeZone?: string
+     *     TimeZone?: string|null
      * } $args
      */
     public function __construct(array $args)

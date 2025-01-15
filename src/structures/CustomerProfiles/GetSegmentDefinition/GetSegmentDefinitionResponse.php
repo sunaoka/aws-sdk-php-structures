@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetSegmentDefinition;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $SegmentDefinitionName
- * @property string $DisplayName
- * @property string $Description
- * @property Shapes\SegmentGroup $SegmentGroups
+ * @property string|null $SegmentDefinitionName
+ * @property string|null $DisplayName
+ * @property string|null $Description
+ * @property Shapes\SegmentGroup|null $SegmentGroups
  * @property string $SegmentDefinitionArn
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property array<string, string> $Tags
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property array<string, string>|null $Tags
  */
 class GetSegmentDefinitionResponse extends Response
 {

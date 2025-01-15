@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeBuild\ListProjects;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'NAME'|'CREATED_TIME'|'LAST_MODIFIED_TIME' $sortBy
- * @property 'ASCENDING'|'DESCENDING' $sortOrder
- * @property string $nextToken
+ * @property 'NAME'|'CREATED_TIME'|'LAST_MODIFIED_TIME'|null $sortBy
+ * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
+ * @property string|null $nextToken
  */
 class ListProjectsRequest extends Request
 {
     /**
      * @param array{
-     *     sortBy?: 'NAME'|'CREATED_TIME'|'LAST_MODIFIED_TIME',
-     *     sortOrder?: 'ASCENDING'|'DESCENDING',
-     *     nextToken?: string
+     *     sortBy?: 'NAME'|'CREATED_TIME'|'LAST_MODIFIED_TIME'|null,
+     *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

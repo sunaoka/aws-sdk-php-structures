@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Id
  * @property string $IndexId
- * @property string $NextToken
- * @property int<1, 10> $MaxResults
- * @property Shapes\TimeRange $StartTimeFilter
- * @property 'FAILED'|'SUCCEEDED'|'SYNCING'|'INCOMPLETE'|'STOPPING'|'ABORTED'|'SYNCING_INDEXING' $StatusFilter
+ * @property string|null $NextToken
+ * @property int<1, 10>|null $MaxResults
+ * @property Shapes\TimeRange|null $StartTimeFilter
+ * @property 'FAILED'|'SUCCEEDED'|'SYNCING'|'INCOMPLETE'|'STOPPING'|'ABORTED'|'SYNCING_INDEXING'|null $StatusFilter
  */
 class ListDataSourceSyncJobsRequest extends Request
 {
@@ -18,10 +18,10 @@ class ListDataSourceSyncJobsRequest extends Request
      * @param array{
      *     Id: string,
      *     IndexId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 10>,
-     *     StartTimeFilter?: Shapes\TimeRange,
-     *     StatusFilter?: 'FAILED'|'SUCCEEDED'|'SYNCING'|'INCOMPLETE'|'STOPPING'|'ABORTED'|'SYNCING_INDEXING'
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 10>|null,
+     *     StartTimeFilter?: Shapes\TimeRange|null,
+     *     StatusFilter?: 'FAILED'|'SUCCEEDED'|'SYNCING'|'INCOMPLETE'|'STOPPING'|'ABORTED'|'SYNCING_INDEXING'|null
      * } $args
      */
     public function __construct(array $args)

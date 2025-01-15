@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $fileContentsBase64
  * @property string $fileName
  * @property 'APPLICATION'|'SESSION' $scope
- * @property string $sessionId
+ * @property string|null $sessionId
  */
 class ImportDocumentRequest extends Request
 {
@@ -23,7 +23,7 @@ class ImportDocumentRequest extends Request
      *     fileContentsBase64: string,
      *     fileName: string,
      *     scope: 'APPLICATION'|'SESSION',
-     *     sessionId?: string
+     *     sessionId?: string|null
      * } $args
      */
     public function __construct(array $args)

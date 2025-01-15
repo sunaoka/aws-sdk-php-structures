@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\ListRepositories;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $repositoryPrefix
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property string|null $repositoryPrefix
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListRepositoriesRequest extends Request
 {
     /**
      * @param array{
-     *     repositoryPrefix?: string,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     repositoryPrefix?: string|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

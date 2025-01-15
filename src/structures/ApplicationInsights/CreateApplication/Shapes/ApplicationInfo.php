@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\CreateApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $ResourceGroupName
- * @property string $LifeCycle
- * @property string $OpsItemSNSTopicArn
- * @property string $SNSNotificationArn
- * @property bool $OpsCenterEnabled
- * @property bool $CWEMonitorEnabled
- * @property string $Remarks
- * @property bool $AutoConfigEnabled
- * @property 'RESOURCE_GROUP_BASED'|'ACCOUNT_BASED' $DiscoveryType
- * @property bool $AttachMissingPermission
+ * @property string|null $AccountId
+ * @property string|null $ResourceGroupName
+ * @property string|null $LifeCycle
+ * @property string|null $OpsItemSNSTopicArn
+ * @property string|null $SNSNotificationArn
+ * @property bool|null $OpsCenterEnabled
+ * @property bool|null $CWEMonitorEnabled
+ * @property string|null $Remarks
+ * @property bool|null $AutoConfigEnabled
+ * @property 'RESOURCE_GROUP_BASED'|'ACCOUNT_BASED'|null $DiscoveryType
+ * @property bool|null $AttachMissingPermission
  */
 class ApplicationInfo extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     ResourceGroupName?: string,
-     *     LifeCycle?: string,
-     *     OpsItemSNSTopicArn?: string,
-     *     SNSNotificationArn?: string,
-     *     OpsCenterEnabled?: bool,
-     *     CWEMonitorEnabled?: bool,
-     *     Remarks?: string,
-     *     AutoConfigEnabled?: bool,
-     *     DiscoveryType?: 'RESOURCE_GROUP_BASED'|'ACCOUNT_BASED',
-     *     AttachMissingPermission?: bool
+     *     AccountId?: string|null,
+     *     ResourceGroupName?: string|null,
+     *     LifeCycle?: string|null,
+     *     OpsItemSNSTopicArn?: string|null,
+     *     SNSNotificationArn?: string|null,
+     *     OpsCenterEnabled?: bool|null,
+     *     CWEMonitorEnabled?: bool|null,
+     *     Remarks?: string|null,
+     *     AutoConfigEnabled?: bool|null,
+     *     DiscoveryType?: 'RESOURCE_GROUP_BASED'|'ACCOUNT_BASED'|null,
+     *     AttachMissingPermission?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

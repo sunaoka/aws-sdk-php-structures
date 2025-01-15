@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\SearchUsers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $Similarity
- * @property MatchedUser $User
+ * @property float|null $Similarity
+ * @property MatchedUser|null $User
  */
 class UserMatch extends Shape
 {
     /**
      * @param array{
-     *     Similarity?: float,
-     *     User?: MatchedUser
+     *     Similarity?: float|null,
+     *     User?: MatchedUser|null
      * } $args
      */
     public function __construct(array $args = [])

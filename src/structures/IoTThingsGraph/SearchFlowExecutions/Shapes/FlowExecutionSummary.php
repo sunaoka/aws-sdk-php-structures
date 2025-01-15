@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\IoTThingsGraph\SearchFlowExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $flowExecutionId
- * @property 'RUNNING'|'ABORTED'|'SUCCEEDED'|'FAILED' $status
- * @property string $systemInstanceId
- * @property string $flowTemplateId
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $flowExecutionId
+ * @property 'RUNNING'|'ABORTED'|'SUCCEEDED'|'FAILED'|null $status
+ * @property string|null $systemInstanceId
+ * @property string|null $flowTemplateId
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class FlowExecutionSummary extends Shape
 {
     /**
      * @param array{
-     *     flowExecutionId?: string,
-     *     status?: 'RUNNING'|'ABORTED'|'SUCCEEDED'|'FAILED',
-     *     systemInstanceId?: string,
-     *     flowTemplateId?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     flowExecutionId?: string|null,
+     *     status?: 'RUNNING'|'ABORTED'|'SUCCEEDED'|'FAILED'|null,
+     *     systemInstanceId?: string|null,
+     *     flowTemplateId?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

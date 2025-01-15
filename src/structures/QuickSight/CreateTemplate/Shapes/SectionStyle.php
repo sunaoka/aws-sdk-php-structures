@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Height
- * @property Spacing $Padding
+ * @property string|null $Height
+ * @property Spacing|null $Padding
  */
 class SectionStyle extends Shape
 {
     /**
      * @param array{
-     *     Height?: string,
-     *     Padding?: Spacing
+     *     Height?: string|null,
+     *     Padding?: Spacing|null
      * } $args
      */
     public function __construct(array $args = [])

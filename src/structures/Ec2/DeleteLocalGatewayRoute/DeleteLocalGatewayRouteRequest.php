@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteLocalGatewayRoute;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DestinationCidrBlock
+ * @property string|null $DestinationCidrBlock
  * @property string $LocalGatewayRouteTableId
- * @property bool $DryRun
- * @property string $DestinationPrefixListId
+ * @property bool|null $DryRun
+ * @property string|null $DestinationPrefixListId
  */
 class DeleteLocalGatewayRouteRequest extends Request
 {
     /**
      * @param array{
-     *     DestinationCidrBlock?: string,
+     *     DestinationCidrBlock?: string|null,
      *     LocalGatewayRouteTableId: string,
-     *     DryRun?: bool,
-     *     DestinationPrefixListId?: string
+     *     DryRun?: bool|null,
+     *     DestinationPrefixListId?: string|null
      * } $args
      */
     public function __construct(array $args)

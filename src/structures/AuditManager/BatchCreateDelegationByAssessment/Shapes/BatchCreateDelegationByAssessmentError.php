@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AuditManager\BatchCreateDelegationByAssessment\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CreateDelegationRequest $createDelegationRequest
- * @property string $errorCode
- * @property string $errorMessage
+ * @property CreateDelegationRequest|null $createDelegationRequest
+ * @property string|null $errorCode
+ * @property string|null $errorMessage
  */
 class BatchCreateDelegationByAssessmentError extends Shape
 {
     /**
      * @param array{
-     *     createDelegationRequest?: CreateDelegationRequest,
-     *     errorCode?: string,
-     *     errorMessage?: string
+     *     createDelegationRequest?: CreateDelegationRequest|null,
+     *     errorCode?: string|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

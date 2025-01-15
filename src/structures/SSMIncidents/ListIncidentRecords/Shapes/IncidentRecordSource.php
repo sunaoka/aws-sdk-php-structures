@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $createdBy
- * @property string $invokedBy
- * @property string $resourceArn
+ * @property string|null $invokedBy
+ * @property string|null $resourceArn
  * @property string $source
  */
 class IncidentRecordSource extends Shape
@@ -15,8 +15,8 @@ class IncidentRecordSource extends Shape
     /**
      * @param array{
      *     createdBy: string,
-     *     invokedBy?: string,
-     *     resourceArn?: string,
+     *     invokedBy?: string|null,
+     *     resourceArn?: string|null,
      *     source: string
      * } $args
      */

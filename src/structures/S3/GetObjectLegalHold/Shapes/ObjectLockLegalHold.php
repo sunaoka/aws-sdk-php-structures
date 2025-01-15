@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3\GetObjectLegalHold\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ON'|'OFF' $Status
+ * @property 'ON'|'OFF'|null $Status
  */
 class ObjectLockLegalHold extends Shape
 {
     /**
-     * @param array{Status?: 'ON'|'OFF'} $args
+     * @param array{Status?: 'ON'|'OFF'|null} $args
      */
     public function __construct(array $args = [])
     {

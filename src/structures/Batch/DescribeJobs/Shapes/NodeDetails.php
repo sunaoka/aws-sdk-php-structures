@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $nodeIndex
- * @property bool $isMainNode
+ * @property int|null $nodeIndex
+ * @property bool|null $isMainNode
  */
 class NodeDetails extends Shape
 {
     /**
      * @param array{
-     *     nodeIndex?: int,
-     *     isMainNode?: bool
+     *     nodeIndex?: int|null,
+     *     isMainNode?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

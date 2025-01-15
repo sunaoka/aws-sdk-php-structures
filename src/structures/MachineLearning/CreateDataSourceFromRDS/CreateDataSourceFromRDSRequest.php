@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DataSourceId
- * @property string $DataSourceName
+ * @property string|null $DataSourceName
  * @property Shapes\RDSDataSpec $RDSData
  * @property string $RoleARN
- * @property bool $ComputeStatistics
+ * @property bool|null $ComputeStatistics
  */
 class CreateDataSourceFromRDSRequest extends Request
 {
     /**
      * @param array{
      *     DataSourceId: string,
-     *     DataSourceName?: string,
+     *     DataSourceName?: string|null,
      *     RDSData: Shapes\RDSDataSpec,
      *     RoleARN: string,
-     *     ComputeStatistics?: bool
+     *     ComputeStatistics?: bool|null
      * } $args
      */
     public function __construct(array $args)

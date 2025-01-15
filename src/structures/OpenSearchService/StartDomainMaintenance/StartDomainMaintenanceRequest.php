@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DomainName
  * @property 'REBOOT_NODE'|'RESTART_SEARCH_PROCESS'|'RESTART_DASHBOARD' $Action
- * @property string $NodeId
+ * @property string|null $NodeId
  */
 class StartDomainMaintenanceRequest extends Request
 {
@@ -15,7 +15,7 @@ class StartDomainMaintenanceRequest extends Request
      * @param array{
      *     DomainName: string,
      *     Action: 'REBOOT_NODE'|'RESTART_SEARCH_PROCESS'|'RESTART_DASHBOARD',
-     *     NodeId?: string
+     *     NodeId?: string|null
      * } $args
      */
     public function __construct(array $args)

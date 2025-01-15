@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AIPromptVersionSummary> $aiPromptVersionSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListAIPromptVersionsResponse extends Response
 {

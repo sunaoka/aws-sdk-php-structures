@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'SIGNING'|'ENCRYPTION'|'TLS' $Usage
  * @property string $Certificate
- * @property string $CertificateChain
- * @property string $PrivateKey
- * @property \Aws\Api\DateTimeResult $ActiveDate
- * @property \Aws\Api\DateTimeResult $InactiveDate
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $CertificateChain
+ * @property string|null $PrivateKey
+ * @property \Aws\Api\DateTimeResult|null $ActiveDate
+ * @property \Aws\Api\DateTimeResult|null $InactiveDate
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
  */
 class ImportCertificateRequest extends Request
 {
@@ -20,12 +20,12 @@ class ImportCertificateRequest extends Request
      * @param array{
      *     Usage: 'SIGNING'|'ENCRYPTION'|'TLS',
      *     Certificate: string,
-     *     CertificateChain?: string,
-     *     PrivateKey?: string,
-     *     ActiveDate?: \Aws\Api\DateTimeResult,
-     *     InactiveDate?: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     CertificateChain?: string|null,
+     *     PrivateKey?: string|null,
+     *     ActiveDate?: \Aws\Api\DateTimeResult|null,
+     *     InactiveDate?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

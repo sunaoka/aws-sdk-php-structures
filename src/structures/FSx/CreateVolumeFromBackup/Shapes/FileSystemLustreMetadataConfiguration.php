@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FSx\CreateVolumeFromBackup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1500, 192000> $Iops
+ * @property int<1500, 192000>|null $Iops
  * @property 'AUTOMATIC'|'USER_PROVISIONED' $Mode
  */
 class FileSystemLustreMetadataConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Iops?: int<1500, 192000>,
+     *     Iops?: int<1500, 192000>|null,
      *     Mode: 'AUTOMATIC'|'USER_PROVISIONED'
      * } $args
      */

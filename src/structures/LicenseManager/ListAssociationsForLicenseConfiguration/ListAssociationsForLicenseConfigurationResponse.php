@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListAssociationsForLicenseConfig
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\LicenseConfigurationAssociation> $LicenseConfigurationAssociations
- * @property string $NextToken
+ * @property list<Shapes\LicenseConfigurationAssociation>|null $LicenseConfigurationAssociations
+ * @property string|null $NextToken
  */
 class ListAssociationsForLicenseConfigurationResponse extends Response
 {

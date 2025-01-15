@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateTargetGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $httpCode
+ * @property string|null $httpCode
  */
 class Matcher extends Shape
 {
     /**
-     * @param array{httpCode?: string} $args
+     * @param array{httpCode?: string|null} $args
      */
     public function __construct(array $args = [])
     {

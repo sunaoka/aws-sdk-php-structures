@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\DescribeOrganizationResourceCollecti
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\CloudFormationHealth> $CloudFormation
- * @property list<Shapes\ServiceHealth> $Service
- * @property list<Shapes\AccountHealth> $Account
- * @property string $NextToken
- * @property list<Shapes\TagHealth> $Tags
+ * @property list<Shapes\CloudFormationHealth>|null $CloudFormation
+ * @property list<Shapes\ServiceHealth>|null $Service
+ * @property list<Shapes\AccountHealth>|null $Account
+ * @property string|null $NextToken
+ * @property list<Shapes\TagHealth>|null $Tags
  */
 class DescribeOrganizationResourceCollectionHealthResponse extends Response
 {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\EMRContainers\ListVirtualClusters;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\VirtualCluster> $virtualClusters
- * @property string $nextToken
+ * @property list<Shapes\VirtualCluster>|null $virtualClusters
+ * @property string|null $nextToken
  */
 class ListVirtualClustersResponse extends Response
 {

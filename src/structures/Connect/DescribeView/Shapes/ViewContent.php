@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeView\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InputSchema
- * @property string $Template
- * @property list<string> $Actions
+ * @property string|null $InputSchema
+ * @property string|null $Template
+ * @property list<string>|null $Actions
  */
 class ViewContent extends Shape
 {
     /**
      * @param array{
-     *     InputSchema?: string,
-     *     Template?: string,
-     *     Actions?: list<string>
+     *     InputSchema?: string|null,
+     *     Template?: string|null,
+     *     Actions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

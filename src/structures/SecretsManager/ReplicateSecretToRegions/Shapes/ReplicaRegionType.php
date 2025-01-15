@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecretsManager\ReplicateSecretToRegions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Region
- * @property string $KmsKeyId
+ * @property string|null $Region
+ * @property string|null $KmsKeyId
  */
 class ReplicaRegionType extends Shape
 {
     /**
      * @param array{
-     *     Region?: string,
-     *     KmsKeyId?: string
+     *     Region?: string|null,
+     *     KmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

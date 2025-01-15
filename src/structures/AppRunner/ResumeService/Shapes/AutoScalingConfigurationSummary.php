@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\AppRunner\ResumeService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AutoScalingConfigurationArn
- * @property string $AutoScalingConfigurationName
- * @property int $AutoScalingConfigurationRevision
- * @property 'ACTIVE'|'INACTIVE' $Status
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property bool $HasAssociatedService
- * @property bool $IsDefault
+ * @property string|null $AutoScalingConfigurationArn
+ * @property string|null $AutoScalingConfigurationName
+ * @property int|null $AutoScalingConfigurationRevision
+ * @property 'ACTIVE'|'INACTIVE'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property bool|null $HasAssociatedService
+ * @property bool|null $IsDefault
  */
 class AutoScalingConfigurationSummary extends Shape
 {
     /**
      * @param array{
-     *     AutoScalingConfigurationArn?: string,
-     *     AutoScalingConfigurationName?: string,
-     *     AutoScalingConfigurationRevision?: int,
-     *     Status?: 'ACTIVE'|'INACTIVE',
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     HasAssociatedService?: bool,
-     *     IsDefault?: bool
+     *     AutoScalingConfigurationArn?: string|null,
+     *     AutoScalingConfigurationName?: string|null,
+     *     AutoScalingConfigurationRevision?: int|null,
+     *     Status?: 'ACTIVE'|'INACTIVE'|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     HasAssociatedService?: bool|null,
+     *     IsDefault?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

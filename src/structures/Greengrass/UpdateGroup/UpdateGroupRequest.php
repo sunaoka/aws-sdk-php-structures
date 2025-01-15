@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GroupId
- * @property string $Name
+ * @property string|null $Name
  */
 class UpdateGroupRequest extends Request
 {
     /**
      * @param array{
      *     GroupId: string,
-     *     Name?: string
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

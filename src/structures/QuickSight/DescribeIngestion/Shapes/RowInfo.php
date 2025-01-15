@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeIngestion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $RowsIngested
- * @property int $RowsDropped
- * @property int $TotalRowsInDataset
+ * @property int|null $RowsIngested
+ * @property int|null $RowsDropped
+ * @property int|null $TotalRowsInDataset
  */
 class RowInfo extends Shape
 {
     /**
      * @param array{
-     *     RowsIngested?: int,
-     *     RowsDropped?: int,
-     *     TotalRowsInDataset?: int
+     *     RowsIngested?: int|null,
+     *     RowsDropped?: int|null,
+     *     TotalRowsInDataset?: int|null
      * } $args
      */
     public function __construct(array $args = [])

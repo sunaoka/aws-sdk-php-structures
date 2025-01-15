@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeConnectorProfiles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $databaseUrl
+ * @property string|null $databaseUrl
  * @property string $bucketName
- * @property string $bucketPrefix
+ * @property string|null $bucketPrefix
  * @property string $roleArn
- * @property string $dataApiRoleArn
- * @property bool $isRedshiftServerless
- * @property string $clusterIdentifier
- * @property string $workgroupName
- * @property string $databaseName
+ * @property string|null $dataApiRoleArn
+ * @property bool|null $isRedshiftServerless
+ * @property string|null $clusterIdentifier
+ * @property string|null $workgroupName
+ * @property string|null $databaseName
  */
 class RedshiftConnectorProfileProperties extends Shape
 {
     /**
      * @param array{
-     *     databaseUrl?: string,
+     *     databaseUrl?: string|null,
      *     bucketName: string,
-     *     bucketPrefix?: string,
+     *     bucketPrefix?: string|null,
      *     roleArn: string,
-     *     dataApiRoleArn?: string,
-     *     isRedshiftServerless?: bool,
-     *     clusterIdentifier?: string,
-     *     workgroupName?: string,
-     *     databaseName?: string
+     *     dataApiRoleArn?: string|null,
+     *     isRedshiftServerless?: bool|null,
+     *     clusterIdentifier?: string|null,
+     *     workgroupName?: string|null,
+     *     databaseName?: string|null
      * } $args
      */
     public function __construct(array $args)

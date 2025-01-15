@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeEventCategories;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SourceType
+ * @property string|null $SourceType
  */
 class DescribeEventCategoriesRequest extends Request
 {
     /**
-     * @param array{SourceType?: string} $args
+     * @param array{SourceType?: string|null} $args
      */
     public function __construct(array $args = [])
     {

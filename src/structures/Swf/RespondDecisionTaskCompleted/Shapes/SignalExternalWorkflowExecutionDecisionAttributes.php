@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $workflowId
- * @property string $runId
+ * @property string|null $runId
  * @property string $signalName
- * @property string $input
- * @property string $control
+ * @property string|null $input
+ * @property string|null $control
  */
 class SignalExternalWorkflowExecutionDecisionAttributes extends Shape
 {
     /**
      * @param array{
      *     workflowId: string,
-     *     runId?: string,
+     *     runId?: string|null,
      *     signalName: string,
-     *     input?: string,
-     *     control?: string
+     *     input?: string|null,
+     *     control?: string|null
      * } $args
      */
     public function __construct(array $args)

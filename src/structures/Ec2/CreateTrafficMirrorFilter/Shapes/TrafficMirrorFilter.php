@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateTrafficMirrorFilter\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TrafficMirrorFilterId
- * @property list<TrafficMirrorFilterRule> $IngressFilterRules
- * @property list<TrafficMirrorFilterRule> $EgressFilterRules
- * @property list<'amazon-dns'> $NetworkServices
- * @property string $Description
- * @property list<Tag> $Tags
+ * @property string|null $TrafficMirrorFilterId
+ * @property list<TrafficMirrorFilterRule>|null $IngressFilterRules
+ * @property list<TrafficMirrorFilterRule>|null $EgressFilterRules
+ * @property list<'amazon-dns'>|null $NetworkServices
+ * @property string|null $Description
+ * @property list<Tag>|null $Tags
  */
 class TrafficMirrorFilter extends Shape
 {
     /**
      * @param array{
-     *     TrafficMirrorFilterId?: string,
-     *     IngressFilterRules?: list<TrafficMirrorFilterRule>,
-     *     EgressFilterRules?: list<TrafficMirrorFilterRule>,
-     *     NetworkServices?: list<'amazon-dns'>,
-     *     Description?: string,
-     *     Tags?: list<Tag>
+     *     TrafficMirrorFilterId?: string|null,
+     *     IngressFilterRules?: list<TrafficMirrorFilterRule>|null,
+     *     EgressFilterRules?: list<TrafficMirrorFilterRule>|null,
+     *     NetworkServices?: list<'amazon-dns'>|null,
+     *     Description?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

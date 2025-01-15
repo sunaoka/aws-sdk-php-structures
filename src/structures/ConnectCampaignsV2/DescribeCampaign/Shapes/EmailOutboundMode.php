@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\DescribeCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AgentlessConfig $agentless
+ * @property AgentlessConfig|null $agentless
  */
 class EmailOutboundMode extends Shape
 {
     /**
-     * @param array{agentless?: AgentlessConfig} $args
+     * @param array{agentless?: AgentlessConfig|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'Salesforce'|'Marketo'|'Zendesk'|'Servicenow'|'S3' $SourceConnectorType
  * @property string $ConnectorProfileName
- * @property string $RoleArn
+ * @property string|null $RoleArn
  */
 class AppflowIntegrationWorkflowAttributes extends Shape
 {
@@ -15,7 +15,7 @@ class AppflowIntegrationWorkflowAttributes extends Shape
      * @param array{
      *     SourceConnectorType: 'Salesforce'|'Marketo'|'Zendesk'|'Servicenow'|'S3',
      *     ConnectorProfileName: string,
-     *     RoleArn?: string
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

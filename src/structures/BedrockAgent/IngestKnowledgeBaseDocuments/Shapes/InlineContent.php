@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\IngestKnowledgeBaseDocuments\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ByteContentDoc $byteContent
- * @property TextContentDoc $textContent
+ * @property ByteContentDoc|null $byteContent
+ * @property TextContentDoc|null $textContent
  * @property 'BYTE'|'TEXT' $type
  */
 class InlineContent extends Shape
 {
     /**
      * @param array{
-     *     byteContent?: ByteContentDoc,
-     *     textContent?: TextContentDoc,
+     *     byteContent?: ByteContentDoc|null,
+     *     textContent?: TextContentDoc|null,
      *     type: 'BYTE'|'TEXT'
      * } $args
      */

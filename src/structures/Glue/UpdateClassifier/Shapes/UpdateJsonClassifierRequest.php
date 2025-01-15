@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $JsonPath
+ * @property string|null $JsonPath
  */
 class UpdateJsonClassifierRequest extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     JsonPath?: string
+     *     JsonPath?: string|null
      * } $args
      */
     public function __construct(array $args)

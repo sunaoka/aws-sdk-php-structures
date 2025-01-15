@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $alias
  * @property string $assetId
  * @property string $propertyId
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DisassociateTimeSeriesFromAssetPropertyRequest extends Request
 {
@@ -17,7 +17,7 @@ class DisassociateTimeSeriesFromAssetPropertyRequest extends Request
      *     alias: string,
      *     assetId: string,
      *     propertyId: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

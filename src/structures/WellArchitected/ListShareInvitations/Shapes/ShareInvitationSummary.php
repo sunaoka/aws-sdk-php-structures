@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\WellArchitected\ListShareInvitations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ShareInvitationId
- * @property string $SharedBy
- * @property string $SharedWith
- * @property 'READONLY'|'CONTRIBUTOR' $PermissionType
- * @property 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE' $ShareResourceType
- * @property string $WorkloadName
- * @property string $WorkloadId
- * @property string $LensName
- * @property string $LensArn
- * @property string $ProfileName
- * @property string $ProfileArn
- * @property string $TemplateName
- * @property string $TemplateArn
+ * @property string|null $ShareInvitationId
+ * @property string|null $SharedBy
+ * @property string|null $SharedWith
+ * @property 'READONLY'|'CONTRIBUTOR'|null $PermissionType
+ * @property 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE'|null $ShareResourceType
+ * @property string|null $WorkloadName
+ * @property string|null $WorkloadId
+ * @property string|null $LensName
+ * @property string|null $LensArn
+ * @property string|null $ProfileName
+ * @property string|null $ProfileArn
+ * @property string|null $TemplateName
+ * @property string|null $TemplateArn
  */
 class ShareInvitationSummary extends Shape
 {
     /**
      * @param array{
-     *     ShareInvitationId?: string,
-     *     SharedBy?: string,
-     *     SharedWith?: string,
-     *     PermissionType?: 'READONLY'|'CONTRIBUTOR',
-     *     ShareResourceType?: 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE',
-     *     WorkloadName?: string,
-     *     WorkloadId?: string,
-     *     LensName?: string,
-     *     LensArn?: string,
-     *     ProfileName?: string,
-     *     ProfileArn?: string,
-     *     TemplateName?: string,
-     *     TemplateArn?: string
+     *     ShareInvitationId?: string|null,
+     *     SharedBy?: string|null,
+     *     SharedWith?: string|null,
+     *     PermissionType?: 'READONLY'|'CONTRIBUTOR'|null,
+     *     ShareResourceType?: 'WORKLOAD'|'LENS'|'PROFILE'|'TEMPLATE'|null,
+     *     WorkloadName?: string|null,
+     *     WorkloadId?: string|null,
+     *     LensName?: string|null,
+     *     LensArn?: string|null,
+     *     ProfileName?: string|null,
+     *     ProfileArn?: string|null,
+     *     TemplateName?: string|null,
+     *     TemplateArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

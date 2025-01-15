@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribePatchGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PatchGroup
- * @property PatchBaselineIdentity $BaselineIdentity
+ * @property string|null $PatchGroup
+ * @property PatchBaselineIdentity|null $BaselineIdentity
  */
 class PatchGroupPatchBaselineMapping extends Shape
 {
     /**
      * @param array{
-     *     PatchGroup?: string,
-     *     BaselineIdentity?: PatchBaselineIdentity
+     *     PatchGroup?: string|null,
+     *     BaselineIdentity?: PatchBaselineIdentity|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\LakeFormation\GetTableObjects;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $DatabaseName
  * @property string $TableName
- * @property string $TransactionId
- * @property \Aws\Api\DateTimeResult $QueryAsOfTime
- * @property string $PartitionPredicate
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property string|null $TransactionId
+ * @property \Aws\Api\DateTimeResult|null $QueryAsOfTime
+ * @property string|null $PartitionPredicate
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class GetTableObjectsRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DatabaseName: string,
      *     TableName: string,
-     *     TransactionId?: string,
-     *     QueryAsOfTime?: \Aws\Api\DateTimeResult,
-     *     PartitionPredicate?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     TransactionId?: string|null,
+     *     QueryAsOfTime?: \Aws\Api\DateTimeResult|null,
+     *     PartitionPredicate?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

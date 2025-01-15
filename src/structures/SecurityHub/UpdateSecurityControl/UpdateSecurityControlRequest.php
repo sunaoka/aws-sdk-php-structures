@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SecurityControlId
  * @property array<string, Shapes\ParameterConfiguration> $Parameters
- * @property string $LastUpdateReason
+ * @property string|null $LastUpdateReason
  */
 class UpdateSecurityControlRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateSecurityControlRequest extends Request
      * @param array{
      *     SecurityControlId: string,
      *     Parameters: array<string, Shapes\ParameterConfiguration>,
-     *     LastUpdateReason?: string
+     *     LastUpdateReason?: string|null
      * } $args
      */
     public function __construct(array $args)

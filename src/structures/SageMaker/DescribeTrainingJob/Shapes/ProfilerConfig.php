@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeTrainingJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3OutputPath
- * @property int $ProfilingIntervalInMilliseconds
- * @property array<string, string> $ProfilingParameters
- * @property bool $DisableProfiler
+ * @property string|null $S3OutputPath
+ * @property int|null $ProfilingIntervalInMilliseconds
+ * @property array<string, string>|null $ProfilingParameters
+ * @property bool|null $DisableProfiler
  */
 class ProfilerConfig extends Shape
 {
     /**
      * @param array{
-     *     S3OutputPath?: string,
-     *     ProfilingIntervalInMilliseconds?: int,
-     *     ProfilingParameters?: array<string, string>,
-     *     DisableProfiler?: bool
+     *     S3OutputPath?: string|null,
+     *     ProfilingIntervalInMilliseconds?: int|null,
+     *     ProfilingParameters?: array<string, string>|null,
+     *     DisableProfiler?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

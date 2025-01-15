@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DirectoryArn
  * @property Shapes\ObjectReference $ObjectReference
- * @property list<Shapes\TypedLinkAttributeRange> $FilterAttributeRanges
- * @property Shapes\TypedLinkSchemaAndFacetName $FilterTypedLink
- * @property string $NextToken
- * @property int<1, max> $MaxResults
- * @property 'SERIALIZABLE'|'EVENTUAL' $ConsistencyLevel
+ * @property list<Shapes\TypedLinkAttributeRange>|null $FilterAttributeRanges
+ * @property Shapes\TypedLinkSchemaAndFacetName|null $FilterTypedLink
+ * @property string|null $NextToken
+ * @property int<1, max>|null $MaxResults
+ * @property 'SERIALIZABLE'|'EVENTUAL'|null $ConsistencyLevel
  */
 class ListIncomingTypedLinksRequest extends Request
 {
@@ -19,11 +19,11 @@ class ListIncomingTypedLinksRequest extends Request
      * @param array{
      *     DirectoryArn: string,
      *     ObjectReference: Shapes\ObjectReference,
-     *     FilterAttributeRanges?: list<Shapes\TypedLinkAttributeRange>,
-     *     FilterTypedLink?: Shapes\TypedLinkSchemaAndFacetName,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, max>,
-     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'
+     *     FilterAttributeRanges?: list<Shapes\TypedLinkAttributeRange>|null,
+     *     FilterTypedLink?: Shapes\TypedLinkSchemaAndFacetName|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, max>|null,
+     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'|null
      * } $args
      */
     public function __construct(array $args)

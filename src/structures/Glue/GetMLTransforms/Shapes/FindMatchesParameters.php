@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\GetMLTransforms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PrimaryKeyColumnName
- * @property double $PrecisionRecallTradeoff
- * @property double $AccuracyCostTradeoff
- * @property bool $EnforceProvidedLabels
+ * @property string|null $PrimaryKeyColumnName
+ * @property double|null $PrecisionRecallTradeoff
+ * @property double|null $AccuracyCostTradeoff
+ * @property bool|null $EnforceProvidedLabels
  */
 class FindMatchesParameters extends Shape
 {
     /**
      * @param array{
-     *     PrimaryKeyColumnName?: string,
-     *     PrecisionRecallTradeoff?: double,
-     *     AccuracyCostTradeoff?: double,
-     *     EnforceProvidedLabels?: bool
+     *     PrimaryKeyColumnName?: string|null,
+     *     PrecisionRecallTradeoff?: double|null,
+     *     AccuracyCostTradeoff?: double|null,
+     *     EnforceProvidedLabels?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

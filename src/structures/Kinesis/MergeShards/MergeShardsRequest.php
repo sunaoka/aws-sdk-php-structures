@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Kinesis\MergeShards;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamName
+ * @property string|null $StreamName
  * @property string $ShardToMerge
  * @property string $AdjacentShardToMerge
- * @property string $StreamARN
+ * @property string|null $StreamARN
  */
 class MergeShardsRequest extends Request
 {
     /**
      * @param array{
-     *     StreamName?: string,
+     *     StreamName?: string|null,
      *     ShardToMerge: string,
      *     AdjacentShardToMerge: string,
-     *     StreamARN?: string
+     *     StreamARN?: string|null
      * } $args
      */
     public function __construct(array $args)

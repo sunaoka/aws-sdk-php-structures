@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\kendra\ListExperienceEntities;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ExperienceEntitiesSummary> $SummaryItems
- * @property string $NextToken
+ * @property list<Shapes\ExperienceEntitiesSummary>|null $SummaryItems
+ * @property string|null $NextToken
  */
 class ListExperienceEntitiesResponse extends Response
 {

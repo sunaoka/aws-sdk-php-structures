@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Omics\CreateRunCache;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'CACHE_ON_FAILURE'|'CACHE_ALWAYS' $cacheBehavior
+ * @property 'CACHE_ON_FAILURE'|'CACHE_ALWAYS'|null $cacheBehavior
  * @property string $cacheS3Location
- * @property string $description
- * @property string $name
+ * @property string|null $description
+ * @property string|null $name
  * @property string $requestId
- * @property array<string, string> $tags
- * @property string $cacheBucketOwnerId
+ * @property array<string, string>|null $tags
+ * @property string|null $cacheBucketOwnerId
  */
 class CreateRunCacheRequest extends Request
 {
     /**
      * @param array{
-     *     cacheBehavior?: 'CACHE_ON_FAILURE'|'CACHE_ALWAYS',
+     *     cacheBehavior?: 'CACHE_ON_FAILURE'|'CACHE_ALWAYS'|null,
      *     cacheS3Location: string,
-     *     description?: string,
-     *     name?: string,
+     *     description?: string|null,
+     *     name?: string|null,
      *     requestId: string,
-     *     tags?: array<string, string>,
-     *     cacheBucketOwnerId?: string
+     *     tags?: array<string, string>|null,
+     *     cacheBucketOwnerId?: string|null
      * } $args
      */
     public function __construct(array $args)

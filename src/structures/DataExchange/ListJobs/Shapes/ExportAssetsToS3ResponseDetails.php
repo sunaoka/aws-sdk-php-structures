@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<AssetDestinationEntry> $AssetDestinations
  * @property string $DataSetId
- * @property ExportServerSideEncryption $Encryption
+ * @property ExportServerSideEncryption|null $Encryption
  * @property string $RevisionId
  */
 class ExportAssetsToS3ResponseDetails extends Shape
@@ -16,7 +16,7 @@ class ExportAssetsToS3ResponseDetails extends Shape
      * @param array{
      *     AssetDestinations: list<AssetDestinationEntry>,
      *     DataSetId: string,
-     *     Encryption?: ExportServerSideEncryption,
+     *     Encryption?: ExportServerSideEncryption|null,
      *     RevisionId: string
      * } $args
      */

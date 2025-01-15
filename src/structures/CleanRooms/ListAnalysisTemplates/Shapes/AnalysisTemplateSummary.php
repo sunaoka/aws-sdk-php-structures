@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $membershipId
  * @property string $collaborationArn
  * @property string $collaborationId
- * @property string $description
+ * @property string|null $description
  */
 class AnalysisTemplateSummary extends Shape
 {
@@ -29,7 +29,7 @@ class AnalysisTemplateSummary extends Shape
      *     membershipId: string,
      *     collaborationArn: string,
      *     collaborationId: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

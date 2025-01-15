@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SavingsPlans\DescribeSavingsPlansOfferings\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'region'|'instanceFamily' $name
- * @property list<string> $values
+ * @property 'region'|'instanceFamily'|null $name
+ * @property list<string>|null $values
  */
 class SavingsPlanOfferingFilterElement extends Shape
 {
     /**
      * @param array{
-     *     name?: 'region'|'instanceFamily',
-     *     values?: list<string>
+     *     name?: 'region'|'instanceFamily'|null,
+     *     values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

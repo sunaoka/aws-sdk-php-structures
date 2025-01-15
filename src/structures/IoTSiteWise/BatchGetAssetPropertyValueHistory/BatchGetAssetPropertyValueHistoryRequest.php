@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\BatchGetAssetPropertyValueHistoryEntry> $entries
- * @property string $nextToken
- * @property int<1, max> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, max>|null $maxResults
  */
 class BatchGetAssetPropertyValueHistoryRequest extends Request
 {
     /**
      * @param array{
      *     entries: list<Shapes\BatchGetAssetPropertyValueHistoryEntry>,
-     *     nextToken?: string,
-     *     maxResults?: int<1, max>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

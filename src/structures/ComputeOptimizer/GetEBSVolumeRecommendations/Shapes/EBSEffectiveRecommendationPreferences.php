@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEBSVolumeRecommendations\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EBSSavingsEstimationMode $savingsEstimationMode
+ * @property EBSSavingsEstimationMode|null $savingsEstimationMode
  */
 class EBSEffectiveRecommendationPreferences extends Shape
 {
     /**
-     * @param array{savingsEstimationMode?: EBSSavingsEstimationMode} $args
+     * @param array{savingsEstimationMode?: EBSSavingsEstimationMode|null} $args
      */
     public function __construct(array $args = [])
     {

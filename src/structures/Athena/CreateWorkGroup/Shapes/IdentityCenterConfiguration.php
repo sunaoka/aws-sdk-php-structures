@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Athena\CreateWorkGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableIdentityCenter
- * @property string $IdentityCenterInstanceArn
+ * @property bool|null $EnableIdentityCenter
+ * @property string|null $IdentityCenterInstanceArn
  */
 class IdentityCenterConfiguration extends Shape
 {
     /**
      * @param array{
-     *     EnableIdentityCenter?: bool,
-     *     IdentityCenterInstanceArn?: string
+     *     EnableIdentityCenter?: bool|null,
+     *     IdentityCenterInstanceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

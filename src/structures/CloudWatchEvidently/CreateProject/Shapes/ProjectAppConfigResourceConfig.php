@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\CreateProject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $applicationId
- * @property string $environmentId
+ * @property string|null $applicationId
+ * @property string|null $environmentId
  */
 class ProjectAppConfigResourceConfig extends Shape
 {
     /**
      * @param array{
-     *     applicationId?: string,
-     *     environmentId?: string
+     *     applicationId?: string|null,
+     *     environmentId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

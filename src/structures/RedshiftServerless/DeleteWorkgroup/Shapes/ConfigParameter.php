@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\DeleteWorkgroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $parameterKey
- * @property string $parameterValue
+ * @property string|null $parameterKey
+ * @property string|null $parameterValue
  */
 class ConfigParameter extends Shape
 {
     /**
      * @param array{
-     *     parameterKey?: string,
-     *     parameterValue?: string
+     *     parameterKey?: string|null,
+     *     parameterValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

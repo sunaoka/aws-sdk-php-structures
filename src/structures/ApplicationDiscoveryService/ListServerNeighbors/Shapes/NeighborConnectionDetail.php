@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $sourceServerId
  * @property string $destinationServerId
- * @property int $destinationPort
- * @property string $transportProtocol
+ * @property int|null $destinationPort
+ * @property string|null $transportProtocol
  * @property int $connectionsCount
  */
 class NeighborConnectionDetail extends Shape
@@ -17,8 +17,8 @@ class NeighborConnectionDetail extends Shape
      * @param array{
      *     sourceServerId: string,
      *     destinationServerId: string,
-     *     destinationPort?: int,
-     *     transportProtocol?: string,
+     *     destinationPort?: int|null,
+     *     transportProtocol?: string|null,
      *     connectionsCount: int
      * } $args
      */

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackName
- * @property string $RoleARN
- * @property string $ClientRequestToken
- * @property bool $RetainExceptOnCreate
+ * @property string|null $RoleARN
+ * @property string|null $ClientRequestToken
+ * @property bool|null $RetainExceptOnCreate
  */
 class RollbackStackRequest extends Request
 {
     /**
      * @param array{
      *     StackName: string,
-     *     RoleARN?: string,
-     *     ClientRequestToken?: string,
-     *     RetainExceptOnCreate?: bool
+     *     RoleARN?: string|null,
+     *     ClientRequestToken?: string|null,
+     *     RetainExceptOnCreate?: bool|null
      * } $args
      */
     public function __construct(array $args)

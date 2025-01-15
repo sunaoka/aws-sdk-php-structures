@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PageId
- * @property string $ContactChannelId
+ * @property string|null $ContactChannelId
  * @property 'DELIVERED'|'READ' $AcceptType
- * @property string $Note
+ * @property string|null $Note
  * @property string $AcceptCode
- * @property 'IGNORE'|'ENFORCE' $AcceptCodeValidation
+ * @property 'IGNORE'|'ENFORCE'|null $AcceptCodeValidation
  */
 class AcceptPageRequest extends Request
 {
     /**
      * @param array{
      *     PageId: string,
-     *     ContactChannelId?: string,
+     *     ContactChannelId?: string|null,
      *     AcceptType: 'DELIVERED'|'READ',
-     *     Note?: string,
+     *     Note?: string|null,
      *     AcceptCode: string,
-     *     AcceptCodeValidation?: 'IGNORE'|'ENFORCE'
+     *     AcceptCodeValidation?: 'IGNORE'|'ENFORCE'|null
      * } $args
      */
     public function __construct(array $args)

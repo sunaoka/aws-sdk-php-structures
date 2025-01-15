@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Path
- * @property bool $Recursive
- * @property list<Shapes\ParameterStringFilter> $ParameterFilters
- * @property bool $WithDecryption
- * @property int<1, 10> $MaxResults
- * @property string $NextToken
+ * @property bool|null $Recursive
+ * @property list<Shapes\ParameterStringFilter>|null $ParameterFilters
+ * @property bool|null $WithDecryption
+ * @property int<1, 10>|null $MaxResults
+ * @property string|null $NextToken
  */
 class GetParametersByPathRequest extends Request
 {
     /**
      * @param array{
      *     Path: string,
-     *     Recursive?: bool,
-     *     ParameterFilters?: list<Shapes\ParameterStringFilter>,
-     *     WithDecryption?: bool,
-     *     MaxResults?: int<1, 10>,
-     *     NextToken?: string
+     *     Recursive?: bool|null,
+     *     ParameterFilters?: list<Shapes\ParameterStringFilter>|null,
+     *     WithDecryption?: bool|null,
+     *     MaxResults?: int<1, 10>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

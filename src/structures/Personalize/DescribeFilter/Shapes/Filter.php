@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeFilter\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $filterArn
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
- * @property string $datasetGroupArn
- * @property string $failureReason
- * @property string $filterExpression
- * @property string $status
+ * @property string|null $name
+ * @property string|null $filterArn
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
+ * @property string|null $datasetGroupArn
+ * @property string|null $failureReason
+ * @property string|null $filterExpression
+ * @property string|null $status
  */
 class Filter extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     filterArn?: string,
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult,
-     *     datasetGroupArn?: string,
-     *     failureReason?: string,
-     *     filterExpression?: string,
-     *     status?: string
+     *     name?: string|null,
+     *     filterArn?: string|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
+     *     datasetGroupArn?: string|null,
+     *     failureReason?: string|null,
+     *     filterExpression?: string|null,
+     *     status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

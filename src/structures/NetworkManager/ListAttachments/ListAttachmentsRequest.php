@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\NetworkManager\ListAttachments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CoreNetworkId
- * @property 'CONNECT'|'SITE_TO_SITE_VPN'|'VPC'|'DIRECT_CONNECT_GATEWAY'|'TRANSIT_GATEWAY_ROUTE_TABLE' $AttachmentType
- * @property string $EdgeLocation
- * @property 'REJECTED'|'PENDING_ATTACHMENT_ACCEPTANCE'|'CREATING'|'FAILED'|'AVAILABLE'|'UPDATING'|'PENDING_NETWORK_UPDATE'|'PENDING_TAG_ACCEPTANCE'|'DELETING' $State
- * @property int<1, 500> $MaxResults
- * @property string $NextToken
+ * @property string|null $CoreNetworkId
+ * @property 'CONNECT'|'SITE_TO_SITE_VPN'|'VPC'|'DIRECT_CONNECT_GATEWAY'|'TRANSIT_GATEWAY_ROUTE_TABLE'|null $AttachmentType
+ * @property string|null $EdgeLocation
+ * @property 'REJECTED'|'PENDING_ATTACHMENT_ACCEPTANCE'|'CREATING'|'FAILED'|'AVAILABLE'|'UPDATING'|'PENDING_NETWORK_UPDATE'|'PENDING_TAG_ACCEPTANCE'|'DELETING'|null $State
+ * @property int<1, 500>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListAttachmentsRequest extends Request
 {
     /**
      * @param array{
-     *     CoreNetworkId?: string,
-     *     AttachmentType?: 'CONNECT'|'SITE_TO_SITE_VPN'|'VPC'|'DIRECT_CONNECT_GATEWAY'|'TRANSIT_GATEWAY_ROUTE_TABLE',
-     *     EdgeLocation?: string,
-     *     State?: 'REJECTED'|'PENDING_ATTACHMENT_ACCEPTANCE'|'CREATING'|'FAILED'|'AVAILABLE'|'UPDATING'|'PENDING_NETWORK_UPDATE'|'PENDING_TAG_ACCEPTANCE'|'DELETING',
-     *     MaxResults?: int<1, 500>,
-     *     NextToken?: string
+     *     CoreNetworkId?: string|null,
+     *     AttachmentType?: 'CONNECT'|'SITE_TO_SITE_VPN'|'VPC'|'DIRECT_CONNECT_GATEWAY'|'TRANSIT_GATEWAY_ROUTE_TABLE'|null,
+     *     EdgeLocation?: string|null,
+     *     State?: 'REJECTED'|'PENDING_ATTACHMENT_ACCEPTANCE'|'CREATING'|'FAILED'|'AVAILABLE'|'UPDATING'|'PENDING_NETWORK_UPDATE'|'PENDING_TAG_ACCEPTANCE'|'DELETING'|null,
+     *     MaxResults?: int<1, 500>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

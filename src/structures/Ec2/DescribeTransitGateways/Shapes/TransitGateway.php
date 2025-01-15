@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeTransitGateways\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayId
- * @property string $TransitGatewayArn
- * @property 'pending'|'available'|'modifying'|'deleting'|'deleted' $State
- * @property string $OwnerId
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property TransitGatewayOptions $Options
- * @property list<Tag> $Tags
+ * @property string|null $TransitGatewayId
+ * @property string|null $TransitGatewayArn
+ * @property 'pending'|'available'|'modifying'|'deleting'|'deleted'|null $State
+ * @property string|null $OwnerId
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property TransitGatewayOptions|null $Options
+ * @property list<Tag>|null $Tags
  */
 class TransitGateway extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayId?: string,
-     *     TransitGatewayArn?: string,
-     *     State?: 'pending'|'available'|'modifying'|'deleting'|'deleted',
-     *     OwnerId?: string,
-     *     Description?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     Options?: TransitGatewayOptions,
-     *     Tags?: list<Tag>
+     *     TransitGatewayId?: string|null,
+     *     TransitGatewayArn?: string|null,
+     *     State?: 'pending'|'available'|'modifying'|'deleting'|'deleted'|null,
+     *     OwnerId?: string|null,
+     *     Description?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     Options?: TransitGatewayOptions|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

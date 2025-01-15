@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupId
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  */
 class DeleteBackupRequest extends Request
 {
     /**
      * @param array{
      *     BackupId: string,
-     *     ClientRequestToken?: string
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $reportArn
- * @property string $nextToken
- * @property int<1, 100> $maxResults
- * @property 'ASCENDING'|'DESCENDING' $sortOrder
- * @property 'LINE_COVERAGE_PERCENTAGE'|'FILE_PATH' $sortBy
- * @property double $minLineCoveragePercentage
- * @property double $maxLineCoveragePercentage
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
+ * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
+ * @property 'LINE_COVERAGE_PERCENTAGE'|'FILE_PATH'|null $sortBy
+ * @property double|null $minLineCoveragePercentage
+ * @property double|null $maxLineCoveragePercentage
  */
 class DescribeCodeCoveragesRequest extends Request
 {
     /**
      * @param array{
      *     reportArn: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>,
-     *     sortOrder?: 'ASCENDING'|'DESCENDING',
-     *     sortBy?: 'LINE_COVERAGE_PERCENTAGE'|'FILE_PATH',
-     *     minLineCoveragePercentage?: double,
-     *     maxLineCoveragePercentage?: double
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null,
+     *     sortOrder?: 'ASCENDING'|'DESCENDING'|null,
+     *     sortBy?: 'LINE_COVERAGE_PERCENTAGE'|'FILE_PATH'|null,
+     *     minLineCoveragePercentage?: double|null,
+     *     maxLineCoveragePercentage?: double|null
      * } $args
      */
     public function __construct(array $args)

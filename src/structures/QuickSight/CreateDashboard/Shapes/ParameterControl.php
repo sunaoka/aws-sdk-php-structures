@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ParameterDateTimePickerControl $DateTimePicker
- * @property ParameterListControl $List
- * @property ParameterDropDownControl $Dropdown
- * @property ParameterTextFieldControl $TextField
- * @property ParameterTextAreaControl $TextArea
- * @property ParameterSliderControl $Slider
+ * @property ParameterDateTimePickerControl|null $DateTimePicker
+ * @property ParameterListControl|null $List
+ * @property ParameterDropDownControl|null $Dropdown
+ * @property ParameterTextFieldControl|null $TextField
+ * @property ParameterTextAreaControl|null $TextArea
+ * @property ParameterSliderControl|null $Slider
  */
 class ParameterControl extends Shape
 {
     /**
      * @param array{
-     *     DateTimePicker?: ParameterDateTimePickerControl,
-     *     List?: ParameterListControl,
-     *     Dropdown?: ParameterDropDownControl,
-     *     TextField?: ParameterTextFieldControl,
-     *     TextArea?: ParameterTextAreaControl,
-     *     Slider?: ParameterSliderControl
+     *     DateTimePicker?: ParameterDateTimePickerControl|null,
+     *     List?: ParameterListControl|null,
+     *     Dropdown?: ParameterDropDownControl|null,
+     *     TextField?: ParameterTextFieldControl|null,
+     *     TextArea?: ParameterTextAreaControl|null,
+     *     Slider?: ParameterSliderControl|null
      * } $args
      */
     public function __construct(array $args = [])

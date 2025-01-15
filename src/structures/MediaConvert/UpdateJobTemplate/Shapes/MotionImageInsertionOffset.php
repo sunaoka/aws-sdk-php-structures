@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\UpdateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 2147483647> $ImageX
- * @property int<0, 2147483647> $ImageY
+ * @property int<0, 2147483647>|null $ImageX
+ * @property int<0, 2147483647>|null $ImageY
  */
 class MotionImageInsertionOffset extends Shape
 {
     /**
      * @param array{
-     *     ImageX?: int<0, 2147483647>,
-     *     ImageY?: int<0, 2147483647>
+     *     ImageX?: int<0, 2147483647>|null,
+     *     ImageY?: int<0, 2147483647>|null
      * } $args
      */
     public function __construct(array $args = [])

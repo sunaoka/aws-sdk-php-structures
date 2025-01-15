@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeIpGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $groupId
- * @property string $groupName
- * @property string $groupDesc
- * @property list<IpRuleItem> $userRules
+ * @property string|null $groupId
+ * @property string|null $groupName
+ * @property string|null $groupDesc
+ * @property list<IpRuleItem>|null $userRules
  */
 class WorkspacesIpGroup extends Shape
 {
     /**
      * @param array{
-     *     groupId?: string,
-     *     groupName?: string,
-     *     groupDesc?: string,
-     *     userRules?: list<IpRuleItem>
+     *     groupId?: string|null,
+     *     groupName?: string|null,
+     *     groupDesc?: string|null,
+     *     userRules?: list<IpRuleItem>|null
      * } $args
      */
     public function __construct(array $args = [])

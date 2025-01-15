@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTopic\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TypeName
- * @property string $SubTypeName
- * @property array<string, string> $TypeParameters
+ * @property string|null $TypeName
+ * @property string|null $SubTypeName
+ * @property array<string, string>|null $TypeParameters
  */
 class SemanticEntityType extends Shape
 {
     /**
      * @param array{
-     *     TypeName?: string,
-     *     SubTypeName?: string,
-     *     TypeParameters?: array<string, string>
+     *     TypeName?: string|null,
+     *     SubTypeName?: string|null,
+     *     TypeParameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

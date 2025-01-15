@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property double $offset
  * @property double $factor
  * @property int<0, max> $length
- * @property string $name
+ * @property string|null $name
  */
 class CanSignal extends Shape
 {
@@ -25,7 +25,7 @@ class CanSignal extends Shape
      *     offset: double,
      *     factor: double,
      *     length: int<0, max>,
-     *     name?: string
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args)

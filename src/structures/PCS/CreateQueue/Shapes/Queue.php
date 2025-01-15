@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $modifiedAt
  * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED' $status
  * @property list<ComputeNodeGroupConfiguration> $computeNodeGroupConfigurations
- * @property list<ErrorInfo> $errorInfo
+ * @property list<ErrorInfo>|null $errorInfo
  */
 class Queue extends Shape
 {
@@ -27,7 +27,7 @@ class Queue extends Shape
      *     modifiedAt: \Aws\Api\DateTimeResult,
      *     status: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'DELETE_FAILED'|'UPDATE_FAILED',
      *     computeNodeGroupConfigurations: list<ComputeNodeGroupConfiguration>,
-     *     errorInfo?: list<ErrorInfo>
+     *     errorInfo?: list<ErrorInfo>|null
      * } $args
      */
     public function __construct(array $args)

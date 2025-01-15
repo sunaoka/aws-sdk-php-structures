@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ecs\StopTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $sizeInGiB
- * @property string $kmsKeyId
+ * @property int|null $sizeInGiB
+ * @property string|null $kmsKeyId
  */
 class TaskEphemeralStorage extends Shape
 {
     /**
      * @param array{
-     *     sizeInGiB?: int,
-     *     kmsKeyId?: string
+     *     sizeInGiB?: int|null,
+     *     kmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

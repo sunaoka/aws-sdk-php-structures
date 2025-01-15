@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\CreateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property SAMLIdp $Idp
- * @property string $MasterUserName
- * @property string $MasterBackendRole
- * @property string $SubjectKey
- * @property string $RolesKey
- * @property int $SessionTimeoutMinutes
+ * @property bool|null $Enabled
+ * @property SAMLIdp|null $Idp
+ * @property string|null $MasterUserName
+ * @property string|null $MasterBackendRole
+ * @property string|null $SubjectKey
+ * @property string|null $RolesKey
+ * @property int|null $SessionTimeoutMinutes
  */
 class SAMLOptionsInput extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     Idp?: SAMLIdp,
-     *     MasterUserName?: string,
-     *     MasterBackendRole?: string,
-     *     SubjectKey?: string,
-     *     RolesKey?: string,
-     *     SessionTimeoutMinutes?: int
+     *     Enabled?: bool|null,
+     *     Idp?: SAMLIdp|null,
+     *     MasterUserName?: string|null,
+     *     MasterBackendRole?: string|null,
+     *     SubjectKey?: string|null,
+     *     RolesKey?: string|null,
+     *     SessionTimeoutMinutes?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetRightsizingRecommendation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DiskReadOpsPerSecond
- * @property string $DiskWriteOpsPerSecond
- * @property string $DiskReadBytesPerSecond
- * @property string $DiskWriteBytesPerSecond
+ * @property string|null $DiskReadOpsPerSecond
+ * @property string|null $DiskWriteOpsPerSecond
+ * @property string|null $DiskReadBytesPerSecond
+ * @property string|null $DiskWriteBytesPerSecond
  */
 class DiskResourceUtilization extends Shape
 {
     /**
      * @param array{
-     *     DiskReadOpsPerSecond?: string,
-     *     DiskWriteOpsPerSecond?: string,
-     *     DiskReadBytesPerSecond?: string,
-     *     DiskWriteBytesPerSecond?: string
+     *     DiskReadOpsPerSecond?: string|null,
+     *     DiskWriteOpsPerSecond?: string|null,
+     *     DiskReadBytesPerSecond?: string|null,
+     *     DiskWriteBytesPerSecond?: string|null
      * } $args
      */
     public function __construct(array $args = [])

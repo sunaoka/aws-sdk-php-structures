@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteIpamExternalResourceVerificationToken
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\IpamExternalResourceVerificationToken $IpamExternalResourceVerificationToken
+ * @property Shapes\IpamExternalResourceVerificationToken|null $IpamExternalResourceVerificationToken
  */
 class DeleteIpamExternalResourceVerificationTokenResponse extends Response
 {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeReservedInstanceOffer
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\ReservedInstanceOffering> $ReservedInstanceOfferings
+ * @property string|null $NextToken
+ * @property list<Shapes\ReservedInstanceOffering>|null $ReservedInstanceOfferings
  */
 class DescribeReservedInstanceOfferingsResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateCodeRepository\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecretArn
+ * @property string|null $SecretArn
  */
 class GitConfigForUpdate extends Shape
 {
     /**
-     * @param array{SecretArn?: string} $args
+     * @param array{SecretArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

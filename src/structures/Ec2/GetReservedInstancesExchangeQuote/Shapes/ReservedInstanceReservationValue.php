@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\GetReservedInstancesExchangeQuote\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ReservationValue $ReservationValue
- * @property string $ReservedInstanceId
+ * @property ReservationValue|null $ReservationValue
+ * @property string|null $ReservedInstanceId
  */
 class ReservedInstanceReservationValue extends Shape
 {
     /**
      * @param array{
-     *     ReservationValue?: ReservationValue,
-     *     ReservedInstanceId?: string
+     *     ReservationValue?: ReservationValue|null,
+     *     ReservedInstanceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

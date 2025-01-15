@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GatewayARN
- * @property int<0, 23> $HourOfDay
- * @property int<0, 59> $MinuteOfHour
- * @property int<0, 6> $DayOfWeek
- * @property int<1, 28> $DayOfMonth
- * @property Shapes\SoftwareUpdatePreferences $SoftwareUpdatePreferences
+ * @property int<0, 23>|null $HourOfDay
+ * @property int<0, 59>|null $MinuteOfHour
+ * @property int<0, 6>|null $DayOfWeek
+ * @property int<1, 28>|null $DayOfMonth
+ * @property Shapes\SoftwareUpdatePreferences|null $SoftwareUpdatePreferences
  */
 class UpdateMaintenanceStartTimeRequest extends Request
 {
     /**
      * @param array{
      *     GatewayARN: string,
-     *     HourOfDay?: int<0, 23>,
-     *     MinuteOfHour?: int<0, 59>,
-     *     DayOfWeek?: int<0, 6>,
-     *     DayOfMonth?: int<1, 28>,
-     *     SoftwareUpdatePreferences?: Shapes\SoftwareUpdatePreferences
+     *     HourOfDay?: int<0, 23>|null,
+     *     MinuteOfHour?: int<0, 59>|null,
+     *     DayOfWeek?: int<0, 6>|null,
+     *     DayOfMonth?: int<1, 28>|null,
+     *     SoftwareUpdatePreferences?: Shapes\SoftwareUpdatePreferences|null
      * } $args
      */
     public function __construct(array $args)

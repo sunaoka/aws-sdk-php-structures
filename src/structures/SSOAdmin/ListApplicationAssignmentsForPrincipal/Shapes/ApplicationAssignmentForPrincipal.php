@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListApplicationAssignmentsForPrincipal
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationArn
- * @property string $PrincipalId
- * @property 'USER'|'GROUP' $PrincipalType
+ * @property string|null $ApplicationArn
+ * @property string|null $PrincipalId
+ * @property 'USER'|'GROUP'|null $PrincipalType
  */
 class ApplicationAssignmentForPrincipal extends Shape
 {
     /**
      * @param array{
-     *     ApplicationArn?: string,
-     *     PrincipalId?: string,
-     *     PrincipalType?: 'USER'|'GROUP'
+     *     ApplicationArn?: string|null,
+     *     PrincipalId?: string|null,
+     *     PrincipalType?: 'USER'|'GROUP'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged' $ProviderType
  * @property string $ProviderEndpoint
- * @property Shapes\VpcConfiguration $VpcConfiguration
- * @property list<Shapes\Tag> $Tags
+ * @property Shapes\VpcConfiguration|null $VpcConfiguration
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateHostRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateHostRequest extends Request
      *     Name: string,
      *     ProviderType: 'Bitbucket'|'GitHub'|'GitHubEnterpriseServer'|'GitLab'|'GitLabSelfManaged',
      *     ProviderEndpoint: string,
-     *     VpcConfiguration?: Shapes\VpcConfiguration,
-     *     Tags?: list<Shapes\Tag>
+     *     VpcConfiguration?: Shapes\VpcConfiguration|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

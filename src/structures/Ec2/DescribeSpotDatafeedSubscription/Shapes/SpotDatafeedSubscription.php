@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSpotDatafeedSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Bucket
- * @property SpotInstanceStateFault $Fault
- * @property string $OwnerId
- * @property string $Prefix
- * @property 'Active'|'Inactive' $State
+ * @property string|null $Bucket
+ * @property SpotInstanceStateFault|null $Fault
+ * @property string|null $OwnerId
+ * @property string|null $Prefix
+ * @property 'Active'|'Inactive'|null $State
  */
 class SpotDatafeedSubscription extends Shape
 {
     /**
      * @param array{
-     *     Bucket?: string,
-     *     Fault?: SpotInstanceStateFault,
-     *     OwnerId?: string,
-     *     Prefix?: string,
-     *     State?: 'Active'|'Inactive'
+     *     Bucket?: string|null,
+     *     Fault?: SpotInstanceStateFault|null,
+     *     OwnerId?: string|null,
+     *     Prefix?: string|null,
+     *     State?: 'Active'|'Inactive'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,12 +9,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $stepGroupId
  * @property string $workflowId
  * @property 'MANUAL'|'AUTOMATED' $stepActionType
- * @property string $description
- * @property Shapes\WorkflowStepAutomationConfiguration $workflowStepAutomationConfiguration
- * @property list<string> $stepTarget
- * @property list<Shapes\WorkflowStepOutput> $outputs
- * @property list<string> $previous
- * @property list<string> $next
+ * @property string|null $description
+ * @property Shapes\WorkflowStepAutomationConfiguration|null $workflowStepAutomationConfiguration
+ * @property list<string>|null $stepTarget
+ * @property list<Shapes\WorkflowStepOutput>|null $outputs
+ * @property list<string>|null $previous
+ * @property list<string>|null $next
  */
 class CreateWorkflowStepRequest extends Request
 {
@@ -24,12 +24,12 @@ class CreateWorkflowStepRequest extends Request
      *     stepGroupId: string,
      *     workflowId: string,
      *     stepActionType: 'MANUAL'|'AUTOMATED',
-     *     description?: string,
-     *     workflowStepAutomationConfiguration?: Shapes\WorkflowStepAutomationConfiguration,
-     *     stepTarget?: list<string>,
-     *     outputs?: list<Shapes\WorkflowStepOutput>,
-     *     previous?: list<string>,
-     *     next?: list<string>
+     *     description?: string|null,
+     *     workflowStepAutomationConfiguration?: Shapes\WorkflowStepAutomationConfiguration|null,
+     *     stepTarget?: list<string>|null,
+     *     outputs?: list<Shapes\WorkflowStepOutput>|null,
+     *     previous?: list<string>|null,
+     *     next?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

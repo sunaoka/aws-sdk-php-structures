@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeCatalyst\GetUserDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $email
- * @property bool $verified
+ * @property string|null $email
+ * @property bool|null $verified
  */
 class EmailAddress extends Shape
 {
     /**
      * @param array{
-     *     email?: string,
-     *     verified?: bool
+     *     email?: string|null,
+     *     verified?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

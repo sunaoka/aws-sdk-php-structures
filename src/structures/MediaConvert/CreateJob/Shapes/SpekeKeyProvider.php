@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CertificateArn
- * @property EncryptionContractConfiguration $EncryptionContractConfiguration
- * @property string $ResourceId
- * @property list<string> $SystemIds
- * @property string $Url
+ * @property string|null $CertificateArn
+ * @property EncryptionContractConfiguration|null $EncryptionContractConfiguration
+ * @property string|null $ResourceId
+ * @property list<string>|null $SystemIds
+ * @property string|null $Url
  */
 class SpekeKeyProvider extends Shape
 {
     /**
      * @param array{
-     *     CertificateArn?: string,
-     *     EncryptionContractConfiguration?: EncryptionContractConfiguration,
-     *     ResourceId?: string,
-     *     SystemIds?: list<string>,
-     *     Url?: string
+     *     CertificateArn?: string|null,
+     *     EncryptionContractConfiguration?: EncryptionContractConfiguration|null,
+     *     ResourceId?: string|null,
+     *     SystemIds?: list<string>|null,
+     *     Url?: string|null
      * } $args
      */
     public function __construct(array $args = [])

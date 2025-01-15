@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\GetComposition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property ChannelDestinationConfiguration $channel
- * @property S3DestinationConfiguration $s3
+ * @property string|null $name
+ * @property ChannelDestinationConfiguration|null $channel
+ * @property S3DestinationConfiguration|null $s3
  */
 class DestinationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     channel?: ChannelDestinationConfiguration,
-     *     s3?: S3DestinationConfiguration
+     *     name?: string|null,
+     *     channel?: ChannelDestinationConfiguration|null,
+     *     s3?: S3DestinationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

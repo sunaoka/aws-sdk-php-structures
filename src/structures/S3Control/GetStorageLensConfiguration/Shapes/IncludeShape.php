@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Control\GetStorageLensConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Buckets
- * @property list<string> $Regions
+ * @property list<string>|null $Buckets
+ * @property list<string>|null $Regions
  */
 class IncludeShape extends Shape
 {
     /**
      * @param array{
-     *     Buckets?: list<string>,
-     *     Regions?: list<string>
+     *     Buckets?: list<string>|null,
+     *     Regions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

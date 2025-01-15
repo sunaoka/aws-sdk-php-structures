@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateInput\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SrtCallerDecryption $Decryption
- * @property int $MinimumLatency
- * @property string $SrtListenerAddress
- * @property string $SrtListenerPort
- * @property string $StreamId
+ * @property SrtCallerDecryption|null $Decryption
+ * @property int|null $MinimumLatency
+ * @property string|null $SrtListenerAddress
+ * @property string|null $SrtListenerPort
+ * @property string|null $StreamId
  */
 class SrtCallerSource extends Shape
 {
     /**
      * @param array{
-     *     Decryption?: SrtCallerDecryption,
-     *     MinimumLatency?: int,
-     *     SrtListenerAddress?: string,
-     *     SrtListenerPort?: string,
-     *     StreamId?: string
+     *     Decryption?: SrtCallerDecryption|null,
+     *     MinimumLatency?: int|null,
+     *     SrtListenerAddress?: string|null,
+     *     SrtListenerPort?: string|null,
+     *     StreamId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Iot\ListAuditFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $findingId
- * @property string $taskId
- * @property string $checkName
- * @property \Aws\Api\DateTimeResult $taskStartTime
- * @property \Aws\Api\DateTimeResult $findingTime
- * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW' $severity
- * @property NonCompliantResource $nonCompliantResource
- * @property list<RelatedResource> $relatedResources
- * @property string $reasonForNonCompliance
- * @property string $reasonForNonComplianceCode
- * @property bool $isSuppressed
+ * @property string|null $findingId
+ * @property string|null $taskId
+ * @property string|null $checkName
+ * @property \Aws\Api\DateTimeResult|null $taskStartTime
+ * @property \Aws\Api\DateTimeResult|null $findingTime
+ * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|null $severity
+ * @property NonCompliantResource|null $nonCompliantResource
+ * @property list<RelatedResource>|null $relatedResources
+ * @property string|null $reasonForNonCompliance
+ * @property string|null $reasonForNonComplianceCode
+ * @property bool|null $isSuppressed
  */
 class AuditFinding extends Shape
 {
     /**
      * @param array{
-     *     findingId?: string,
-     *     taskId?: string,
-     *     checkName?: string,
-     *     taskStartTime?: \Aws\Api\DateTimeResult,
-     *     findingTime?: \Aws\Api\DateTimeResult,
-     *     severity?: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW',
-     *     nonCompliantResource?: NonCompliantResource,
-     *     relatedResources?: list<RelatedResource>,
-     *     reasonForNonCompliance?: string,
-     *     reasonForNonComplianceCode?: string,
-     *     isSuppressed?: bool
+     *     findingId?: string|null,
+     *     taskId?: string|null,
+     *     checkName?: string|null,
+     *     taskStartTime?: \Aws\Api\DateTimeResult|null,
+     *     findingTime?: \Aws\Api\DateTimeResult|null,
+     *     severity?: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|null,
+     *     nonCompliantResource?: NonCompliantResource|null,
+     *     relatedResources?: list<RelatedResource>|null,
+     *     reasonForNonCompliance?: string|null,
+     *     reasonForNonComplianceCode?: string|null,
+     *     isSuppressed?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

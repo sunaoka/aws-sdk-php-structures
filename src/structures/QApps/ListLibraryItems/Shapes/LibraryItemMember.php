@@ -12,12 +12,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  * @property int $ratingCount
- * @property bool $isRatedByUser
- * @property int $userCount
- * @property bool $isVerified
+ * @property bool|null $isRatedByUser
+ * @property int|null $userCount
+ * @property bool|null $isVerified
  */
 class LibraryItemMember extends Shape
 {
@@ -30,12 +30,12 @@ class LibraryItemMember extends Shape
      *     status: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     createdBy: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null,
      *     ratingCount: int,
-     *     isRatedByUser?: bool,
-     *     userCount?: int,
-     *     isVerified?: bool
+     *     isRatedByUser?: bool|null,
+     *     userCount?: int|null,
+     *     isVerified?: bool|null
      * } $args
      */
     public function __construct(array $args)

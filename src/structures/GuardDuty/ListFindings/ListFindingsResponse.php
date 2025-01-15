@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<string> $FindingIds
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListFindingsResponse extends Response
 {

@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\MediaConnect\UpdateFlowEntitlement\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DataTransferSubscriberFeePercent
- * @property string $Description
- * @property Encryption $Encryption
+ * @property int|null $DataTransferSubscriberFeePercent
+ * @property string|null $Description
+ * @property Encryption|null $Encryption
  * @property string $EntitlementArn
- * @property 'ENABLED'|'DISABLED' $EntitlementStatus
+ * @property 'ENABLED'|'DISABLED'|null $EntitlementStatus
  * @property string $Name
  * @property list<string> $Subscribers
  */
@@ -17,11 +17,11 @@ class Entitlement extends Shape
 {
     /**
      * @param array{
-     *     DataTransferSubscriberFeePercent?: int,
-     *     Description?: string,
-     *     Encryption?: Encryption,
+     *     DataTransferSubscriberFeePercent?: int|null,
+     *     Description?: string|null,
+     *     Encryption?: Encryption|null,
      *     EntitlementArn: string,
-     *     EntitlementStatus?: 'ENABLED'|'DISABLED',
+     *     EntitlementStatus?: 'ENABLED'|'DISABLED'|null,
      *     Name: string,
      *     Subscribers: list<string>
      * } $args

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MailManager\StartArchiveExport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TO'|'FROM'|'CC'|'SUBJECT'|'ENVELOPE_TO'|'ENVELOPE_FROM' $Attribute
+ * @property 'TO'|'FROM'|'CC'|'SUBJECT'|'ENVELOPE_TO'|'ENVELOPE_FROM'|null $Attribute
  */
 class ArchiveStringToEvaluate extends Shape
 {
     /**
-     * @param array{Attribute?: 'TO'|'FROM'|'CC'|'SUBJECT'|'ENVELOPE_TO'|'ENVELOPE_FROM'} $args
+     * @param array{Attribute?: 'TO'|'FROM'|'CC'|'SUBJECT'|'ENVELOPE_TO'|'ENVELOPE_FROM'|null} $args
      */
     public function __construct(array $args = [])
     {

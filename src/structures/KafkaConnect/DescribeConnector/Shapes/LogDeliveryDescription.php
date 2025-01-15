@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\DescribeConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property WorkerLogDeliveryDescription $workerLogDelivery
+ * @property WorkerLogDeliveryDescription|null $workerLogDelivery
  */
 class LogDeliveryDescription extends Shape
 {
     /**
-     * @param array{workerLogDelivery?: WorkerLogDeliveryDescription} $args
+     * @param array{workerLogDelivery?: WorkerLogDeliveryDescription|null} $args
      */
     public function __construct(array $args = [])
     {

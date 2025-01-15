@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\kendra\DescribeFeaturedResultsSet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FeaturedResultsSetId
- * @property string $FeaturedResultsSetName
- * @property string $Description
- * @property 'ACTIVE'|'INACTIVE' $Status
- * @property list<string> $QueryTexts
- * @property list<Shapes\FeaturedDocumentWithMetadata> $FeaturedDocumentsWithMetadata
- * @property list<Shapes\FeaturedDocumentMissing> $FeaturedDocumentsMissing
- * @property int $LastUpdatedTimestamp
- * @property int $CreationTimestamp
+ * @property string|null $FeaturedResultsSetId
+ * @property string|null $FeaturedResultsSetName
+ * @property string|null $Description
+ * @property 'ACTIVE'|'INACTIVE'|null $Status
+ * @property list<string>|null $QueryTexts
+ * @property list<Shapes\FeaturedDocumentWithMetadata>|null $FeaturedDocumentsWithMetadata
+ * @property list<Shapes\FeaturedDocumentMissing>|null $FeaturedDocumentsMissing
+ * @property int|null $LastUpdatedTimestamp
+ * @property int|null $CreationTimestamp
  */
 class DescribeFeaturedResultsSetResponse extends Response
 {

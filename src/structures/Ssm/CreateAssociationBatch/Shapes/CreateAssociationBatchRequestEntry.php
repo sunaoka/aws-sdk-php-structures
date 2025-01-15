@@ -6,50 +6,50 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $InstanceId
- * @property array<string, list<string>> $Parameters
- * @property string $AutomationTargetParameterName
- * @property string $DocumentVersion
- * @property list<Target> $Targets
- * @property string $ScheduleExpression
- * @property InstanceAssociationOutputLocation $OutputLocation
- * @property string $AssociationName
- * @property string $MaxErrors
- * @property string $MaxConcurrency
- * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED' $ComplianceSeverity
- * @property 'AUTO'|'MANUAL' $SyncCompliance
- * @property bool $ApplyOnlyAtCronInterval
- * @property list<string> $CalendarNames
- * @property list<TargetLocation> $TargetLocations
- * @property int<1, 6> $ScheduleOffset
- * @property int<1, 24> $Duration
- * @property list<array<string, list<string>>> $TargetMaps
- * @property AlarmConfiguration $AlarmConfiguration
+ * @property string|null $InstanceId
+ * @property array<string, list<string>>|null $Parameters
+ * @property string|null $AutomationTargetParameterName
+ * @property string|null $DocumentVersion
+ * @property list<Target>|null $Targets
+ * @property string|null $ScheduleExpression
+ * @property InstanceAssociationOutputLocation|null $OutputLocation
+ * @property string|null $AssociationName
+ * @property string|null $MaxErrors
+ * @property string|null $MaxConcurrency
+ * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED'|null $ComplianceSeverity
+ * @property 'AUTO'|'MANUAL'|null $SyncCompliance
+ * @property bool|null $ApplyOnlyAtCronInterval
+ * @property list<string>|null $CalendarNames
+ * @property list<TargetLocation>|null $TargetLocations
+ * @property int<1, 6>|null $ScheduleOffset
+ * @property int<1, 24>|null $Duration
+ * @property list<array<string, list<string>>>|null $TargetMaps
+ * @property AlarmConfiguration|null $AlarmConfiguration
  */
 class CreateAssociationBatchRequestEntry extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     InstanceId?: string,
-     *     Parameters?: array<string, list<string>>,
-     *     AutomationTargetParameterName?: string,
-     *     DocumentVersion?: string,
-     *     Targets?: list<Target>,
-     *     ScheduleExpression?: string,
-     *     OutputLocation?: InstanceAssociationOutputLocation,
-     *     AssociationName?: string,
-     *     MaxErrors?: string,
-     *     MaxConcurrency?: string,
-     *     ComplianceSeverity?: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED',
-     *     SyncCompliance?: 'AUTO'|'MANUAL',
-     *     ApplyOnlyAtCronInterval?: bool,
-     *     CalendarNames?: list<string>,
-     *     TargetLocations?: list<TargetLocation>,
-     *     ScheduleOffset?: int<1, 6>,
-     *     Duration?: int<1, 24>,
-     *     TargetMaps?: list<array<string, list<string>>>,
-     *     AlarmConfiguration?: AlarmConfiguration
+     *     InstanceId?: string|null,
+     *     Parameters?: array<string, list<string>>|null,
+     *     AutomationTargetParameterName?: string|null,
+     *     DocumentVersion?: string|null,
+     *     Targets?: list<Target>|null,
+     *     ScheduleExpression?: string|null,
+     *     OutputLocation?: InstanceAssociationOutputLocation|null,
+     *     AssociationName?: string|null,
+     *     MaxErrors?: string|null,
+     *     MaxConcurrency?: string|null,
+     *     ComplianceSeverity?: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED'|null,
+     *     SyncCompliance?: 'AUTO'|'MANUAL'|null,
+     *     ApplyOnlyAtCronInterval?: bool|null,
+     *     CalendarNames?: list<string>|null,
+     *     TargetLocations?: list<TargetLocation>|null,
+     *     ScheduleOffset?: int<1, 6>|null,
+     *     Duration?: int<1, 24>|null,
+     *     TargetMaps?: list<array<string, list<string>>>|null,
+     *     AlarmConfiguration?: AlarmConfiguration|null
      * } $args
      */
     public function __construct(array $args)

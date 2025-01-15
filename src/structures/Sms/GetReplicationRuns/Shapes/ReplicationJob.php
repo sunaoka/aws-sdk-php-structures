@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\Sms\GetReplicationRuns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $replicationJobId
- * @property string $serverId
- * @property 'VIRTUAL_MACHINE' $serverType
- * @property VmServer $vmServer
- * @property \Aws\Api\DateTimeResult $seedReplicationTime
- * @property int $frequency
- * @property bool $runOnce
- * @property \Aws\Api\DateTimeResult $nextReplicationRunStartTime
- * @property 'AWS'|'BYOL' $licenseType
- * @property string $roleName
- * @property string $latestAmiId
- * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|'DELETED'|'COMPLETED'|'PAUSED_ON_FAILURE'|'FAILING' $state
- * @property string $statusMessage
- * @property string $description
- * @property int $numberOfRecentAmisToKeep
- * @property bool $encrypted
- * @property string $kmsKeyId
- * @property list<ReplicationRun> $replicationRunList
+ * @property string|null $replicationJobId
+ * @property string|null $serverId
+ * @property 'VIRTUAL_MACHINE'|null $serverType
+ * @property VmServer|null $vmServer
+ * @property \Aws\Api\DateTimeResult|null $seedReplicationTime
+ * @property int|null $frequency
+ * @property bool|null $runOnce
+ * @property \Aws\Api\DateTimeResult|null $nextReplicationRunStartTime
+ * @property 'AWS'|'BYOL'|null $licenseType
+ * @property string|null $roleName
+ * @property string|null $latestAmiId
+ * @property 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|'DELETED'|'COMPLETED'|'PAUSED_ON_FAILURE'|'FAILING'|null $state
+ * @property string|null $statusMessage
+ * @property string|null $description
+ * @property int|null $numberOfRecentAmisToKeep
+ * @property bool|null $encrypted
+ * @property string|null $kmsKeyId
+ * @property list<ReplicationRun>|null $replicationRunList
  */
 class ReplicationJob extends Shape
 {
     /**
      * @param array{
-     *     replicationJobId?: string,
-     *     serverId?: string,
-     *     serverType?: 'VIRTUAL_MACHINE',
-     *     vmServer?: VmServer,
-     *     seedReplicationTime?: \Aws\Api\DateTimeResult,
-     *     frequency?: int,
-     *     runOnce?: bool,
-     *     nextReplicationRunStartTime?: \Aws\Api\DateTimeResult,
-     *     licenseType?: 'AWS'|'BYOL',
-     *     roleName?: string,
-     *     latestAmiId?: string,
-     *     state?: 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|'DELETED'|'COMPLETED'|'PAUSED_ON_FAILURE'|'FAILING',
-     *     statusMessage?: string,
-     *     description?: string,
-     *     numberOfRecentAmisToKeep?: int,
-     *     encrypted?: bool,
-     *     kmsKeyId?: string,
-     *     replicationRunList?: list<ReplicationRun>
+     *     replicationJobId?: string|null,
+     *     serverId?: string|null,
+     *     serverType?: 'VIRTUAL_MACHINE'|null,
+     *     vmServer?: VmServer|null,
+     *     seedReplicationTime?: \Aws\Api\DateTimeResult|null,
+     *     frequency?: int|null,
+     *     runOnce?: bool|null,
+     *     nextReplicationRunStartTime?: \Aws\Api\DateTimeResult|null,
+     *     licenseType?: 'AWS'|'BYOL'|null,
+     *     roleName?: string|null,
+     *     latestAmiId?: string|null,
+     *     state?: 'PENDING'|'ACTIVE'|'FAILED'|'DELETING'|'DELETED'|'COMPLETED'|'PAUSED_ON_FAILURE'|'FAILING'|null,
+     *     statusMessage?: string|null,
+     *     description?: string|null,
+     *     numberOfRecentAmisToKeep?: int|null,
+     *     encrypted?: bool|null,
+     *     kmsKeyId?: string|null,
+     *     replicationRunList?: list<ReplicationRun>|null
      * } $args
      */
     public function __construct(array $args = [])

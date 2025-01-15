@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Chatbot\GetAccountPreferences\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $UserAuthorizationRequired
- * @property bool $TrainingDataCollectionEnabled
+ * @property bool|null $UserAuthorizationRequired
+ * @property bool|null $TrainingDataCollectionEnabled
  */
 class AccountPreferences extends Shape
 {
     /**
      * @param array{
-     *     UserAuthorizationRequired?: bool,
-     *     TrainingDataCollectionEnabled?: bool
+     *     UserAuthorizationRequired?: bool|null,
+     *     TrainingDataCollectionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

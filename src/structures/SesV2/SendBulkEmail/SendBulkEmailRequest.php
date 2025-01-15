@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\SesV2\SendBulkEmail;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $FromEmailAddress
- * @property string $FromEmailAddressIdentityArn
- * @property list<string> $ReplyToAddresses
- * @property string $FeedbackForwardingEmailAddress
- * @property string $FeedbackForwardingEmailAddressIdentityArn
- * @property list<Shapes\MessageTag> $DefaultEmailTags
+ * @property string|null $FromEmailAddress
+ * @property string|null $FromEmailAddressIdentityArn
+ * @property list<string>|null $ReplyToAddresses
+ * @property string|null $FeedbackForwardingEmailAddress
+ * @property string|null $FeedbackForwardingEmailAddressIdentityArn
+ * @property list<Shapes\MessageTag>|null $DefaultEmailTags
  * @property Shapes\BulkEmailContent $DefaultContent
  * @property list<Shapes\BulkEmailEntry> $BulkEmailEntries
- * @property string $ConfigurationSetName
- * @property string $EndpointId
+ * @property string|null $ConfigurationSetName
+ * @property string|null $EndpointId
  */
 class SendBulkEmailRequest extends Request
 {
     /**
      * @param array{
-     *     FromEmailAddress?: string,
-     *     FromEmailAddressIdentityArn?: string,
-     *     ReplyToAddresses?: list<string>,
-     *     FeedbackForwardingEmailAddress?: string,
-     *     FeedbackForwardingEmailAddressIdentityArn?: string,
-     *     DefaultEmailTags?: list<Shapes\MessageTag>,
+     *     FromEmailAddress?: string|null,
+     *     FromEmailAddressIdentityArn?: string|null,
+     *     ReplyToAddresses?: list<string>|null,
+     *     FeedbackForwardingEmailAddress?: string|null,
+     *     FeedbackForwardingEmailAddressIdentityArn?: string|null,
+     *     DefaultEmailTags?: list<Shapes\MessageTag>|null,
      *     DefaultContent: Shapes\BulkEmailContent,
      *     BulkEmailEntries: list<Shapes\BulkEmailEntry>,
-     *     ConfigurationSetName?: string,
-     *     EndpointId?: string
+     *     ConfigurationSetName?: string|null,
+     *     EndpointId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListCollect
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'LINUX'|'WINDOWS' $osType
- * @property string $vcenterConfigurationTimeStamp
+ * @property 'LINUX'|'WINDOWS'|null $osType
+ * @property string|null $vcenterConfigurationTimeStamp
  */
 class VcenterBasedRemoteInfo extends Shape
 {
     /**
      * @param array{
-     *     osType?: 'LINUX'|'WINDOWS',
-     *     vcenterConfigurationTimeStamp?: string
+     *     osType?: 'LINUX'|'WINDOWS'|null,
+     *     vcenterConfigurationTimeStamp?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\DeleteTLSInspectionConfiguratio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KeyId
+ * @property string|null $KeyId
  * @property 'CUSTOMER_KMS'|'AWS_OWNED_KMS_KEY' $Type
  */
 class EncryptionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     KeyId?: string,
+     *     KeyId?: string|null,
      *     Type: 'CUSTOMER_KMS'|'AWS_OWNED_KMS_KEY'
      * } $args
      */

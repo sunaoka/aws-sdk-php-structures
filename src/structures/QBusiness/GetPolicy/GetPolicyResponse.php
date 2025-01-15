@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\QBusiness\GetPolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $policy
+ * @property string|null $policy
  */
 class GetPolicyResponse extends Response
 {

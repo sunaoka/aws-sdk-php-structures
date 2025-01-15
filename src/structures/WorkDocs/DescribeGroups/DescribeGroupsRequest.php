@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DescribeGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $SearchQuery
- * @property string $OrganizationId
- * @property string $Marker
- * @property int<1, max> $Limit
+ * @property string|null $OrganizationId
+ * @property string|null $Marker
+ * @property int<1, max>|null $Limit
  */
 class DescribeGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     SearchQuery: string,
-     *     OrganizationId?: string,
-     *     Marker?: string,
-     *     Limit?: int<1, max>
+     *     OrganizationId?: string|null,
+     *     Marker?: string|null,
+     *     Limit?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

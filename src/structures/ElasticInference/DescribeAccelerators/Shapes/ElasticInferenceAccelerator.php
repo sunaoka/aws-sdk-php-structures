@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticInference\DescribeAccelerators\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ElasticInferenceAcceleratorHealth $acceleratorHealth
- * @property string $acceleratorType
- * @property string $acceleratorId
- * @property string $availabilityZone
- * @property string $attachedResource
+ * @property ElasticInferenceAcceleratorHealth|null $acceleratorHealth
+ * @property string|null $acceleratorType
+ * @property string|null $acceleratorId
+ * @property string|null $availabilityZone
+ * @property string|null $attachedResource
  */
 class ElasticInferenceAccelerator extends Shape
 {
     /**
      * @param array{
-     *     acceleratorHealth?: ElasticInferenceAcceleratorHealth,
-     *     acceleratorType?: string,
-     *     acceleratorId?: string,
-     *     availabilityZone?: string,
-     *     attachedResource?: string
+     *     acceleratorHealth?: ElasticInferenceAcceleratorHealth|null,
+     *     acceleratorType?: string|null,
+     *     acceleratorId?: string|null,
+     *     availabilityZone?: string|null,
+     *     attachedResource?: string|null
      * } $args
      */
     public function __construct(array $args = [])

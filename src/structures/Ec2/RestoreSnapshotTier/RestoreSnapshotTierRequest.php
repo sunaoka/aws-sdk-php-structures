@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SnapshotId
- * @property int $TemporaryRestoreDays
- * @property bool $PermanentRestore
- * @property bool $DryRun
+ * @property int|null $TemporaryRestoreDays
+ * @property bool|null $PermanentRestore
+ * @property bool|null $DryRun
  */
 class RestoreSnapshotTierRequest extends Request
 {
     /**
      * @param array{
      *     SnapshotId: string,
-     *     TemporaryRestoreDays?: int,
-     *     PermanentRestore?: bool,
-     *     DryRun?: bool
+     *     TemporaryRestoreDays?: int|null,
+     *     PermanentRestore?: bool|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

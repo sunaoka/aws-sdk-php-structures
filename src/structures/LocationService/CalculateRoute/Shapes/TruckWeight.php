@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LocationService\CalculateRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Total
- * @property 'Kilograms'|'Pounds' $Unit
+ * @property double|null $Total
+ * @property 'Kilograms'|'Pounds'|null $Unit
  */
 class TruckWeight extends Shape
 {
     /**
      * @param array{
-     *     Total?: double,
-     *     Unit?: 'Kilograms'|'Pounds'
+     *     Total?: double|null,
+     *     Unit?: 'Kilograms'|'Pounds'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property MetricStat $MetricStat
- * @property string $Expression
- * @property string $Label
- * @property bool $ReturnData
- * @property int<1, max> $Period
- * @property string $AccountId
+ * @property MetricStat|null $MetricStat
+ * @property string|null $Expression
+ * @property string|null $Label
+ * @property bool|null $ReturnData
+ * @property int<1, max>|null $Period
+ * @property string|null $AccountId
  */
 class MetricDataQuery extends Shape
 {
     /**
      * @param array{
      *     Id: string,
-     *     MetricStat?: MetricStat,
-     *     Expression?: string,
-     *     Label?: string,
-     *     ReturnData?: bool,
-     *     Period?: int<1, max>,
-     *     AccountId?: string
+     *     MetricStat?: MetricStat|null,
+     *     Expression?: string|null,
+     *     Label?: string|null,
+     *     ReturnData?: bool|null,
+     *     Period?: int<1, max>|null,
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

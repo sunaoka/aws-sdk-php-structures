@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcEndpointServices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Interface'|'Gateway'|'GatewayLoadBalancer' $ServiceType
+ * @property 'Interface'|'Gateway'|'GatewayLoadBalancer'|null $ServiceType
  */
 class ServiceTypeDetail extends Shape
 {
     /**
-     * @param array{ServiceType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'} $args
+     * @param array{ServiceType?: 'Interface'|'Gateway'|'GatewayLoadBalancer'|null} $args
      */
     public function __construct(array $args = [])
     {

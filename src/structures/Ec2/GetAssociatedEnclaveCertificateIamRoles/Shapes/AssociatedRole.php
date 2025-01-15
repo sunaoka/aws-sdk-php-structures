@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\GetAssociatedEnclaveCertificateIamRoles\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AssociatedRoleArn
- * @property string $CertificateS3BucketName
- * @property string $CertificateS3ObjectKey
- * @property string $EncryptionKmsKeyId
+ * @property string|null $AssociatedRoleArn
+ * @property string|null $CertificateS3BucketName
+ * @property string|null $CertificateS3ObjectKey
+ * @property string|null $EncryptionKmsKeyId
  */
 class AssociatedRole extends Shape
 {
     /**
      * @param array{
-     *     AssociatedRoleArn?: string,
-     *     CertificateS3BucketName?: string,
-     *     CertificateS3ObjectKey?: string,
-     *     EncryptionKmsKeyId?: string
+     *     AssociatedRoleArn?: string|null,
+     *     CertificateS3BucketName?: string|null,
+     *     CertificateS3ObjectKey?: string|null,
+     *     EncryptionKmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

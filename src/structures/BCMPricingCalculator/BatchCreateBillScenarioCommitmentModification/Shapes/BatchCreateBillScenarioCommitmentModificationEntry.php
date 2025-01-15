@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $key
- * @property string $group
+ * @property string|null $group
  * @property string $usageAccountId
  * @property BillScenarioCommitmentModificationAction $commitmentAction
  */
@@ -15,7 +15,7 @@ class BatchCreateBillScenarioCommitmentModificationEntry extends Shape
     /**
      * @param array{
      *     key: string,
-     *     group?: string,
+     *     group?: string|null,
      *     usageAccountId: string,
      *     commitmentAction: BillScenarioCommitmentModificationAction
      * } $args

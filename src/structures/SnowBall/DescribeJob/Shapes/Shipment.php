@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SnowBall\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Status
- * @property string $TrackingNumber
+ * @property string|null $Status
+ * @property string|null $TrackingNumber
  */
 class Shipment extends Shape
 {
     /**
      * @param array{
-     *     Status?: string,
-     *     TrackingNumber?: string
+     *     Status?: string|null,
+     *     TrackingNumber?: string|null
      * } $args
      */
     public function __construct(array $args = [])

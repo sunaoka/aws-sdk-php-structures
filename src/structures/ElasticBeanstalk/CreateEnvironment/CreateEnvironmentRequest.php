@@ -6,38 +6,38 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property string $EnvironmentName
- * @property string $GroupName
- * @property string $Description
- * @property string $CNAMEPrefix
- * @property Shapes\EnvironmentTier $Tier
- * @property list<Shapes\Tag> $Tags
- * @property string $VersionLabel
- * @property string $TemplateName
- * @property string $SolutionStackName
- * @property string $PlatformArn
- * @property list<Shapes\ConfigurationOptionSetting> $OptionSettings
- * @property list<Shapes\OptionSpecification> $OptionsToRemove
- * @property string $OperationsRole
+ * @property string|null $EnvironmentName
+ * @property string|null $GroupName
+ * @property string|null $Description
+ * @property string|null $CNAMEPrefix
+ * @property Shapes\EnvironmentTier|null $Tier
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $VersionLabel
+ * @property string|null $TemplateName
+ * @property string|null $SolutionStackName
+ * @property string|null $PlatformArn
+ * @property list<Shapes\ConfigurationOptionSetting>|null $OptionSettings
+ * @property list<Shapes\OptionSpecification>|null $OptionsToRemove
+ * @property string|null $OperationsRole
  */
 class CreateEnvironmentRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationName: string,
-     *     EnvironmentName?: string,
-     *     GroupName?: string,
-     *     Description?: string,
-     *     CNAMEPrefix?: string,
-     *     Tier?: Shapes\EnvironmentTier,
-     *     Tags?: list<Shapes\Tag>,
-     *     VersionLabel?: string,
-     *     TemplateName?: string,
-     *     SolutionStackName?: string,
-     *     PlatformArn?: string,
-     *     OptionSettings?: list<Shapes\ConfigurationOptionSetting>,
-     *     OptionsToRemove?: list<Shapes\OptionSpecification>,
-     *     OperationsRole?: string
+     *     EnvironmentName?: string|null,
+     *     GroupName?: string|null,
+     *     Description?: string|null,
+     *     CNAMEPrefix?: string|null,
+     *     Tier?: Shapes\EnvironmentTier|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     VersionLabel?: string|null,
+     *     TemplateName?: string|null,
+     *     SolutionStackName?: string|null,
+     *     PlatformArn?: string|null,
+     *     OptionSettings?: list<Shapes\ConfigurationOptionSetting>|null,
+     *     OptionsToRemove?: list<Shapes\OptionSpecification>|null,
+     *     OperationsRole?: string|null
      * } $args
      */
     public function __construct(array $args)

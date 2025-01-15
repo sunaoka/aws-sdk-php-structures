@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
- * @property list<IdNamespaceIdMappingWorkflowMetadata> $idMappingWorkflowProperties
+ * @property string|null $description
+ * @property list<IdNamespaceIdMappingWorkflowMetadata>|null $idMappingWorkflowProperties
  * @property string $idNamespaceArn
  * @property string $idNamespaceName
  * @property 'SOURCE'|'TARGET' $type
@@ -18,8 +18,8 @@ class IdNamespaceSummary extends Shape
     /**
      * @param array{
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     idMappingWorkflowProperties?: list<IdNamespaceIdMappingWorkflowMetadata>,
+     *     description?: string|null,
+     *     idMappingWorkflowProperties?: list<IdNamespaceIdMappingWorkflowMetadata>|null,
      *     idNamespaceArn: string,
      *     idNamespaceName: string,
      *     type: 'SOURCE'|'TARGET',

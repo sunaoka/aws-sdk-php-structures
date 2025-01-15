@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\RunInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ElasticInferenceAcceleratorArn
- * @property string $ElasticInferenceAcceleratorAssociationId
- * @property string $ElasticInferenceAcceleratorAssociationState
- * @property \Aws\Api\DateTimeResult $ElasticInferenceAcceleratorAssociationTime
+ * @property string|null $ElasticInferenceAcceleratorArn
+ * @property string|null $ElasticInferenceAcceleratorAssociationId
+ * @property string|null $ElasticInferenceAcceleratorAssociationState
+ * @property \Aws\Api\DateTimeResult|null $ElasticInferenceAcceleratorAssociationTime
  */
 class ElasticInferenceAcceleratorAssociation extends Shape
 {
     /**
      * @param array{
-     *     ElasticInferenceAcceleratorArn?: string,
-     *     ElasticInferenceAcceleratorAssociationId?: string,
-     *     ElasticInferenceAcceleratorAssociationState?: string,
-     *     ElasticInferenceAcceleratorAssociationTime?: \Aws\Api\DateTimeResult
+     *     ElasticInferenceAcceleratorArn?: string|null,
+     *     ElasticInferenceAcceleratorAssociationId?: string|null,
+     *     ElasticInferenceAcceleratorAssociationState?: string|null,
+     *     ElasticInferenceAcceleratorAssociationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

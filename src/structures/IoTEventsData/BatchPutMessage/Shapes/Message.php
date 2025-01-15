@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $messageId
  * @property string $inputName
  * @property string|resource|\Psr\Http\Message\StreamInterface $payload
- * @property TimestampValue $timestamp
+ * @property TimestampValue|null $timestamp
  */
 class Message extends Shape
 {
@@ -17,7 +17,7 @@ class Message extends Shape
      *     messageId: string,
      *     inputName: string,
      *     payload: string|resource|\Psr\Http\Message\StreamInterface,
-     *     timestamp?: TimestampValue
+     *     timestamp?: TimestampValue|null
      * } $args
      */
     public function __construct(array $args)

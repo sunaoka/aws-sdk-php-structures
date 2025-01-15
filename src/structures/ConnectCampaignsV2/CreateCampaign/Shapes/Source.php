@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\CreateCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $customerProfilesSegmentArn
- * @property EventTrigger $eventTrigger
+ * @property string|null $customerProfilesSegmentArn
+ * @property EventTrigger|null $eventTrigger
  */
 class Source extends Shape
 {
     /**
      * @param array{
-     *     customerProfilesSegmentArn?: string,
-     *     eventTrigger?: EventTrigger
+     *     customerProfilesSegmentArn?: string|null,
+     *     eventTrigger?: EventTrigger|null
      * } $args
      */
     public function __construct(array $args = [])

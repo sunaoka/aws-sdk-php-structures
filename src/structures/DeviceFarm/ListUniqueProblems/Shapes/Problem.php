@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListUniqueProblems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ProblemDetail $run
- * @property ProblemDetail $job
- * @property ProblemDetail $suite
- * @property ProblemDetail $test
- * @property Device $device
- * @property 'PENDING'|'PASSED'|'WARNED'|'FAILED'|'SKIPPED'|'ERRORED'|'STOPPED' $result
- * @property string $message
+ * @property ProblemDetail|null $run
+ * @property ProblemDetail|null $job
+ * @property ProblemDetail|null $suite
+ * @property ProblemDetail|null $test
+ * @property Device|null $device
+ * @property 'PENDING'|'PASSED'|'WARNED'|'FAILED'|'SKIPPED'|'ERRORED'|'STOPPED'|null $result
+ * @property string|null $message
  */
 class Problem extends Shape
 {
     /**
      * @param array{
-     *     run?: ProblemDetail,
-     *     job?: ProblemDetail,
-     *     suite?: ProblemDetail,
-     *     test?: ProblemDetail,
-     *     device?: Device,
-     *     result?: 'PENDING'|'PASSED'|'WARNED'|'FAILED'|'SKIPPED'|'ERRORED'|'STOPPED',
-     *     message?: string
+     *     run?: ProblemDetail|null,
+     *     job?: ProblemDetail|null,
+     *     suite?: ProblemDetail|null,
+     *     test?: ProblemDetail|null,
+     *     device?: Device|null,
+     *     result?: 'PENDING'|'PASSED'|'WARNED'|'FAILED'|'SKIPPED'|'ERRORED'|'STOPPED'|null,
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

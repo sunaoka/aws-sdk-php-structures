@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DeviceToken
- * @property string $VoipDeviceToken
+ * @property string|null $VoipDeviceToken
  */
 class EndpointAttributes extends Shape
 {
     /**
      * @param array{
      *     DeviceToken: string,
-     *     VoipDeviceToken?: string
+     *     VoipDeviceToken?: string|null
      * } $args
      */
     public function __construct(array $args)

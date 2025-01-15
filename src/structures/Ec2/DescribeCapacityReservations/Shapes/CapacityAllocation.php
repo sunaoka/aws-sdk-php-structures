@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeCapacityReservations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'used' $AllocationType
- * @property int $Count
+ * @property 'used'|null $AllocationType
+ * @property int|null $Count
  */
 class CapacityAllocation extends Shape
 {
     /**
      * @param array{
-     *     AllocationType?: 'used',
-     *     Count?: int
+     *     AllocationType?: 'used'|null,
+     *     Count?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CodeCommit\UpdateApprovalRuleTemplateName\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $approvalRuleTemplateId
- * @property string $approvalRuleTemplateName
- * @property string $approvalRuleTemplateDescription
- * @property string $approvalRuleTemplateContent
- * @property string $ruleContentSha256
- * @property \Aws\Api\DateTimeResult $lastModifiedDate
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property string $lastModifiedUser
+ * @property string|null $approvalRuleTemplateId
+ * @property string|null $approvalRuleTemplateName
+ * @property string|null $approvalRuleTemplateDescription
+ * @property string|null $approvalRuleTemplateContent
+ * @property string|null $ruleContentSha256
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedDate
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property string|null $lastModifiedUser
  */
 class ApprovalRuleTemplate extends Shape
 {
     /**
      * @param array{
-     *     approvalRuleTemplateId?: string,
-     *     approvalRuleTemplateName?: string,
-     *     approvalRuleTemplateDescription?: string,
-     *     approvalRuleTemplateContent?: string,
-     *     ruleContentSha256?: string,
-     *     lastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     lastModifiedUser?: string
+     *     approvalRuleTemplateId?: string|null,
+     *     approvalRuleTemplateName?: string|null,
+     *     approvalRuleTemplateDescription?: string|null,
+     *     approvalRuleTemplateContent?: string|null,
+     *     ruleContentSha256?: string|null,
+     *     lastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedUser?: string|null
      * } $args
      */
     public function __construct(array $args = [])

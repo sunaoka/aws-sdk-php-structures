@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\PublishSchema;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PublishedSchemaArn
+ * @property string|null $PublishedSchemaArn
  */
 class PublishSchemaResponse extends Response
 {

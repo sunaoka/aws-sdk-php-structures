@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainName
- * @property string $domainNameId
+ * @property string|null $domainNameId
  */
 class DeleteDomainNameRequest extends Request
 {
     /**
      * @param array{
      *     domainName: string,
-     *     domainNameId?: string
+     *     domainNameId?: string|null
      * } $args
      */
     public function __construct(array $args)

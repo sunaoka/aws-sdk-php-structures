@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\DescribeApplicationOperation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ErrorString
+ * @property string|null $ErrorString
  */
 class ErrorInfo extends Shape
 {
     /**
-     * @param array{ErrorString?: string} $args
+     * @param array{ErrorString?: string|null} $args
      */
     public function __construct(array $args = [])
     {

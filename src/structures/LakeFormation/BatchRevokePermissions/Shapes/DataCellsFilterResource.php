@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LakeFormation\BatchRevokePermissions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TableCatalogId
- * @property string $DatabaseName
- * @property string $TableName
- * @property string $Name
+ * @property string|null $TableCatalogId
+ * @property string|null $DatabaseName
+ * @property string|null $TableName
+ * @property string|null $Name
  */
 class DataCellsFilterResource extends Shape
 {
     /**
      * @param array{
-     *     TableCatalogId?: string,
-     *     DatabaseName?: string,
-     *     TableName?: string,
-     *     Name?: string
+     *     TableCatalogId?: string|null,
+     *     DatabaseName?: string|null,
+     *     TableName?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

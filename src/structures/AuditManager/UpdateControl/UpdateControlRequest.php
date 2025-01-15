@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $controlId
  * @property string $name
- * @property string $description
- * @property string $testingInformation
- * @property string $actionPlanTitle
- * @property string $actionPlanInstructions
+ * @property string|null $description
+ * @property string|null $testingInformation
+ * @property string|null $actionPlanTitle
+ * @property string|null $actionPlanInstructions
  * @property list<Shapes\ControlMappingSource> $controlMappingSources
  */
 class UpdateControlRequest extends Request
@@ -19,10 +19,10 @@ class UpdateControlRequest extends Request
      * @param array{
      *     controlId: string,
      *     name: string,
-     *     description?: string,
-     *     testingInformation?: string,
-     *     actionPlanTitle?: string,
-     *     actionPlanInstructions?: string,
+     *     description?: string|null,
+     *     testingInformation?: string|null,
+     *     actionPlanTitle?: string|null,
+     *     actionPlanInstructions?: string|null,
      *     controlMappingSources: list<Shapes\ControlMappingSource>
      * } $args
      */

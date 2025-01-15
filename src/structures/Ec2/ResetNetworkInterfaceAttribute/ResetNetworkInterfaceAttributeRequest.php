@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\ResetNetworkInterfaceAttribute;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $NetworkInterfaceId
- * @property string $SourceDestCheck
+ * @property string|null $SourceDestCheck
  */
 class ResetNetworkInterfaceAttributeRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     NetworkInterfaceId: string,
-     *     SourceDestCheck?: string
+     *     SourceDestCheck?: string|null
      * } $args
      */
     public function __construct(array $args)

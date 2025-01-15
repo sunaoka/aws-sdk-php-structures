@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\TrustedAdvisor\BatchUpdateRecommendationResourc
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $errorCode
- * @property string $errorMessage
+ * @property string|null $arn
+ * @property string|null $errorCode
+ * @property string|null $errorMessage
  */
 class UpdateRecommendationResourceExclusionError extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     errorCode?: string,
-     *     errorMessage?: string
+     *     arn?: string|null,
+     *     errorCode?: string|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

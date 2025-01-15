@@ -6,15 +6,15 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $arn
- * @property Shapes\ProblemDetails $error
- * @property string $id
- * @property 'INSTANTIATE'|'UPDATE'|'TERMINATE' $lcmOperationType
- * @property Shapes\GetSolNetworkOperationMetadata $metadata
- * @property string $nsInstanceId
- * @property 'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED' $operationState
- * @property array<string, string> $tags
- * @property list<Shapes\GetSolNetworkOperationTaskDetails> $tasks
- * @property 'MODIFY_VNF_INFORMATION'|'UPDATE_NS' $updateType
+ * @property Shapes\ProblemDetails|null $error
+ * @property string|null $id
+ * @property 'INSTANTIATE'|'UPDATE'|'TERMINATE'|null $lcmOperationType
+ * @property Shapes\GetSolNetworkOperationMetadata|null $metadata
+ * @property string|null $nsInstanceId
+ * @property 'PROCESSING'|'COMPLETED'|'FAILED'|'CANCELLING'|'CANCELLED'|null $operationState
+ * @property array<string, string>|null $tags
+ * @property list<Shapes\GetSolNetworkOperationTaskDetails>|null $tasks
+ * @property 'MODIFY_VNF_INFORMATION'|'UPDATE_NS'|null $updateType
  */
 class GetSolNetworkOperationResponse extends Response
 {

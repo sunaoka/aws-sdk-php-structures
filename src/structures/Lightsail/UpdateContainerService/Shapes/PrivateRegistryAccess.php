@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lightsail\UpdateContainerService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ContainerServiceECRImagePullerRole $ecrImagePullerRole
+ * @property ContainerServiceECRImagePullerRole|null $ecrImagePullerRole
  */
 class PrivateRegistryAccess extends Shape
 {
     /**
-     * @param array{ecrImagePullerRole?: ContainerServiceECRImagePullerRole} $args
+     * @param array{ecrImagePullerRole?: ContainerServiceECRImagePullerRole|null} $args
      */
     public function __construct(array $args = [])
     {

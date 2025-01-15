@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\AssociateAddress;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AssociationId
+ * @property string|null $AssociationId
  */
 class AssociateAddressResponse extends Response
 {

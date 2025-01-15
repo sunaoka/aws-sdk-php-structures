@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetServerDe
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AssociatedApplication> $associatedApplications
- * @property string $nextToken
- * @property Shapes\ServerDetail $serverDetail
+ * @property list<Shapes\AssociatedApplication>|null $associatedApplications
+ * @property string|null $nextToken
+ * @property Shapes\ServerDetail|null $serverDetail
  */
 class GetServerDetailsResponse extends Response
 {

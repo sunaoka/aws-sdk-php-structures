@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElastiCache\CreateUserGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $UserGroupId
- * @property string $Status
- * @property string $Engine
- * @property list<string> $UserIds
- * @property string $MinimumEngineVersion
- * @property Shapes\UserGroupPendingChanges $PendingChanges
- * @property list<string> $ReplicationGroups
- * @property list<string> $ServerlessCaches
- * @property string $ARN
+ * @property string|null $UserGroupId
+ * @property string|null $Status
+ * @property string|null $Engine
+ * @property list<string>|null $UserIds
+ * @property string|null $MinimumEngineVersion
+ * @property Shapes\UserGroupPendingChanges|null $PendingChanges
+ * @property list<string>|null $ReplicationGroups
+ * @property list<string>|null $ServerlessCaches
+ * @property string|null $ARN
  */
 class CreateUserGroupResponse extends Response
 {

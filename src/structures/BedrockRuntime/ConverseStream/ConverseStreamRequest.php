@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $modelId
- * @property list<Shapes\Message> $messages
- * @property list<Shapes\SystemContentBlock> $system
- * @property Shapes\InferenceConfiguration $inferenceConfig
- * @property Shapes\ToolConfiguration $toolConfig
- * @property Shapes\GuardrailStreamConfiguration $guardrailConfig
- * @property Shapes\Document $additionalModelRequestFields
- * @property array<string, Shapes\PromptVariableValues> $promptVariables
- * @property list<string> $additionalModelResponseFieldPaths
- * @property array<string, string> $requestMetadata
- * @property Shapes\PerformanceConfiguration $performanceConfig
+ * @property list<Shapes\Message>|null $messages
+ * @property list<Shapes\SystemContentBlock>|null $system
+ * @property Shapes\InferenceConfiguration|null $inferenceConfig
+ * @property Shapes\ToolConfiguration|null $toolConfig
+ * @property Shapes\GuardrailStreamConfiguration|null $guardrailConfig
+ * @property Shapes\Document|null $additionalModelRequestFields
+ * @property array<string, Shapes\PromptVariableValues>|null $promptVariables
+ * @property list<string>|null $additionalModelResponseFieldPaths
+ * @property array<string, string>|null $requestMetadata
+ * @property Shapes\PerformanceConfiguration|null $performanceConfig
  */
 class ConverseStreamRequest extends Request
 {
     /**
      * @param array{
      *     modelId: string,
-     *     messages?: list<Shapes\Message>,
-     *     system?: list<Shapes\SystemContentBlock>,
-     *     inferenceConfig?: Shapes\InferenceConfiguration,
-     *     toolConfig?: Shapes\ToolConfiguration,
-     *     guardrailConfig?: Shapes\GuardrailStreamConfiguration,
-     *     additionalModelRequestFields?: Shapes\Document,
-     *     promptVariables?: array<string, Shapes\PromptVariableValues>,
-     *     additionalModelResponseFieldPaths?: list<string>,
-     *     requestMetadata?: array<string, string>,
-     *     performanceConfig?: Shapes\PerformanceConfiguration
+     *     messages?: list<Shapes\Message>|null,
+     *     system?: list<Shapes\SystemContentBlock>|null,
+     *     inferenceConfig?: Shapes\InferenceConfiguration|null,
+     *     toolConfig?: Shapes\ToolConfiguration|null,
+     *     guardrailConfig?: Shapes\GuardrailStreamConfiguration|null,
+     *     additionalModelRequestFields?: Shapes\Document|null,
+     *     promptVariables?: array<string, Shapes\PromptVariableValues>|null,
+     *     additionalModelResponseFieldPaths?: list<string>|null,
+     *     requestMetadata?: array<string, string>|null,
+     *     performanceConfig?: Shapes\PerformanceConfiguration|null
      * } $args
      */
     public function __construct(array $args)

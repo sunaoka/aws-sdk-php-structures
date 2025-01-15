@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsRoute53HostedZoneObjectDetails $HostedZone
- * @property list<AwsRoute53HostedZoneVpcDetails> $Vpcs
- * @property list<string> $NameServers
- * @property AwsRoute53QueryLoggingConfigDetails $QueryLoggingConfig
+ * @property AwsRoute53HostedZoneObjectDetails|null $HostedZone
+ * @property list<AwsRoute53HostedZoneVpcDetails>|null $Vpcs
+ * @property list<string>|null $NameServers
+ * @property AwsRoute53QueryLoggingConfigDetails|null $QueryLoggingConfig
  */
 class AwsRoute53HostedZoneDetails extends Shape
 {
     /**
      * @param array{
-     *     HostedZone?: AwsRoute53HostedZoneObjectDetails,
-     *     Vpcs?: list<AwsRoute53HostedZoneVpcDetails>,
-     *     NameServers?: list<string>,
-     *     QueryLoggingConfig?: AwsRoute53QueryLoggingConfigDetails
+     *     HostedZone?: AwsRoute53HostedZoneObjectDetails|null,
+     *     Vpcs?: list<AwsRoute53HostedZoneVpcDetails>|null,
+     *     NameServers?: list<string>|null,
+     *     QueryLoggingConfig?: AwsRoute53QueryLoggingConfigDetails|null
      * } $args
      */
     public function __construct(array $args = [])

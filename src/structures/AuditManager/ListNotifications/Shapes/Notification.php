@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\AuditManager\ListNotifications\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $assessmentId
- * @property string $assessmentName
- * @property string $controlSetId
- * @property string $controlSetName
- * @property string $description
- * @property \Aws\Api\DateTimeResult $eventTime
- * @property string $source
+ * @property string|null $id
+ * @property string|null $assessmentId
+ * @property string|null $assessmentName
+ * @property string|null $controlSetId
+ * @property string|null $controlSetName
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $eventTime
+ * @property string|null $source
  */
 class Notification extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     assessmentId?: string,
-     *     assessmentName?: string,
-     *     controlSetId?: string,
-     *     controlSetName?: string,
-     *     description?: string,
-     *     eventTime?: \Aws\Api\DateTimeResult,
-     *     source?: string
+     *     id?: string|null,
+     *     assessmentId?: string|null,
+     *     assessmentName?: string|null,
+     *     controlSetId?: string|null,
+     *     controlSetName?: string|null,
+     *     description?: string|null,
+     *     eventTime?: \Aws\Api\DateTimeResult|null,
+     *     source?: string|null
      * } $args
      */
     public function __construct(array $args = [])

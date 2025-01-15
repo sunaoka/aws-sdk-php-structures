@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Pinpoint\CreateJourney\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Condition $Condition
- * @property WaitTime $EvaluationWaitTime
- * @property string $FalseActivity
- * @property string $TrueActivity
+ * @property Condition|null $Condition
+ * @property WaitTime|null $EvaluationWaitTime
+ * @property string|null $FalseActivity
+ * @property string|null $TrueActivity
  */
 class ConditionalSplitActivity extends Shape
 {
     /**
      * @param array{
-     *     Condition?: Condition,
-     *     EvaluationWaitTime?: WaitTime,
-     *     FalseActivity?: string,
-     *     TrueActivity?: string
+     *     Condition?: Condition|null,
+     *     EvaluationWaitTime?: WaitTime|null,
+     *     FalseActivity?: string|null,
+     *     TrueActivity?: string|null
      * } $args
      */
     public function __construct(array $args = [])

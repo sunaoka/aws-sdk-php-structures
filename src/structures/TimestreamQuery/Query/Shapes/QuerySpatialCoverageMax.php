@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\Query\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Value
- * @property string $TableArn
- * @property list<string> $PartitionKey
+ * @property double|null $Value
+ * @property string|null $TableArn
+ * @property list<string>|null $PartitionKey
  */
 class QuerySpatialCoverageMax extends Shape
 {
     /**
      * @param array{
-     *     Value?: double,
-     *     TableArn?: string,
-     *     PartitionKey?: list<string>
+     *     Value?: double|null,
+     *     TableArn?: string|null,
+     *     PartitionKey?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

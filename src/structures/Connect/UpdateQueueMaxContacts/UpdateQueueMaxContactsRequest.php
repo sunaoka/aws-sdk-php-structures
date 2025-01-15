@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $QueueId
- * @property int<0, max> $MaxContacts
+ * @property int<0, max>|null $MaxContacts
  */
 class UpdateQueueMaxContactsRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateQueueMaxContactsRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     QueueId: string,
-     *     MaxContacts?: int<0, max>
+     *     MaxContacts?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

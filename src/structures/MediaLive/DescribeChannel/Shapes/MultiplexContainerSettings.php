@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MultiplexM2tsSettings $MultiplexM2tsSettings
+ * @property MultiplexM2tsSettings|null $MultiplexM2tsSettings
  */
 class MultiplexContainerSettings extends Shape
 {
     /**
-     * @param array{MultiplexM2tsSettings?: MultiplexM2tsSettings} $args
+     * @param array{MultiplexM2tsSettings?: MultiplexM2tsSettings|null} $args
      */
     public function __construct(array $args = [])
     {

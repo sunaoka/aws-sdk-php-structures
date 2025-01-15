@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ecs\DeleteCluster;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Cluster $cluster
+ * @property Shapes\Cluster|null $cluster
  */
 class DeleteClusterResponse extends Response
 {

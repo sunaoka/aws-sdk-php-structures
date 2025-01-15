@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $warehouse
  * @property string $stage
  * @property string $bucketName
- * @property string $bucketPrefix
- * @property string $privateLinkServiceName
- * @property string $accountName
- * @property string $region
+ * @property string|null $bucketPrefix
+ * @property string|null $privateLinkServiceName
+ * @property string|null $accountName
+ * @property string|null $region
  */
 class SnowflakeConnectorProfileProperties extends Shape
 {
@@ -20,10 +20,10 @@ class SnowflakeConnectorProfileProperties extends Shape
      *     warehouse: string,
      *     stage: string,
      *     bucketName: string,
-     *     bucketPrefix?: string,
-     *     privateLinkServiceName?: string,
-     *     accountName?: string,
-     *     region?: string
+     *     bucketPrefix?: string|null,
+     *     privateLinkServiceName?: string|null,
+     *     accountName?: string|null,
+     *     region?: string|null
      * } $args
      */
     public function __construct(array $args)

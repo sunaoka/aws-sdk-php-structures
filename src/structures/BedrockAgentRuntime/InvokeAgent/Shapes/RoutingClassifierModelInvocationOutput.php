@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Metadata $metadata
- * @property RawResponse $rawResponse
- * @property string $traceId
+ * @property Metadata|null $metadata
+ * @property RawResponse|null $rawResponse
+ * @property string|null $traceId
  */
 class RoutingClassifierModelInvocationOutput extends Shape
 {
     /**
      * @param array{
-     *     metadata?: Metadata,
-     *     rawResponse?: RawResponse,
-     *     traceId?: string
+     *     metadata?: Metadata|null,
+     *     rawResponse?: RawResponse|null,
+     *     traceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

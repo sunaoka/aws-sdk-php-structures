@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetCalculatedAttributeDefiniti
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Range $Range
- * @property int<1, 100> $ObjectCount
- * @property Threshold $Threshold
+ * @property Range|null $Range
+ * @property int<1, 100>|null $ObjectCount
+ * @property Threshold|null $Threshold
  */
 class Conditions extends Shape
 {
     /**
      * @param array{
-     *     Range?: Range,
-     *     ObjectCount?: int<1, 100>,
-     *     Threshold?: Threshold
+     *     Range?: Range|null,
+     *     ObjectCount?: int<1, 100>|null,
+     *     Threshold?: Threshold|null
      * } $args
      */
     public function __construct(array $args = [])

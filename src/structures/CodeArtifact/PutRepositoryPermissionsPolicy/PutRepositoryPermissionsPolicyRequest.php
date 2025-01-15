@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
+ * @property string|null $domainOwner
  * @property string $repository
- * @property string $policyRevision
+ * @property string|null $policyRevision
  * @property string $policyDocument
  */
 class PutRepositoryPermissionsPolicyRequest extends Request
@@ -16,9 +16,9 @@ class PutRepositoryPermissionsPolicyRequest extends Request
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string,
+     *     domainOwner?: string|null,
      *     repository: string,
-     *     policyRevision?: string,
+     *     policyRevision?: string|null,
      *     policyDocument: string
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetTextDetection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BoundingBox $BoundingBox
- * @property list<Point> $Polygon
+ * @property BoundingBox|null $BoundingBox
+ * @property list<Point>|null $Polygon
  */
 class Geometry extends Shape
 {
     /**
      * @param array{
-     *     BoundingBox?: BoundingBox,
-     *     Polygon?: list<Point>
+     *     BoundingBox?: BoundingBox|null,
+     *     Polygon?: list<Point>|null
      * } $args
      */
     public function __construct(array $args = [])

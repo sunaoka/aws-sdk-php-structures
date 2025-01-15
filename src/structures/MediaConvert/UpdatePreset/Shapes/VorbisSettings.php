@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\UpdatePreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 2> $Channels
- * @property int<22050, 48000> $SampleRate
- * @property int<-1, 10> $VbrQuality
+ * @property int<1, 2>|null $Channels
+ * @property int<22050, 48000>|null $SampleRate
+ * @property int<-1, 10>|null $VbrQuality
  */
 class VorbisSettings extends Shape
 {
     /**
      * @param array{
-     *     Channels?: int<1, 2>,
-     *     SampleRate?: int<22050, 48000>,
-     *     VbrQuality?: int<-1, 10>
+     *     Channels?: int<1, 2>|null,
+     *     SampleRate?: int<22050, 48000>|null,
+     *     VbrQuality?: int<-1, 10>|null
      * } $args
      */
     public function __construct(array $args = [])

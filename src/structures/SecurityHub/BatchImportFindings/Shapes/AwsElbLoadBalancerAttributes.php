@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsElbLoadBalancerAccessLog $AccessLog
- * @property AwsElbLoadBalancerConnectionDraining $ConnectionDraining
- * @property AwsElbLoadBalancerConnectionSettings $ConnectionSettings
- * @property AwsElbLoadBalancerCrossZoneLoadBalancing $CrossZoneLoadBalancing
- * @property list<AwsElbLoadBalancerAdditionalAttribute> $AdditionalAttributes
+ * @property AwsElbLoadBalancerAccessLog|null $AccessLog
+ * @property AwsElbLoadBalancerConnectionDraining|null $ConnectionDraining
+ * @property AwsElbLoadBalancerConnectionSettings|null $ConnectionSettings
+ * @property AwsElbLoadBalancerCrossZoneLoadBalancing|null $CrossZoneLoadBalancing
+ * @property list<AwsElbLoadBalancerAdditionalAttribute>|null $AdditionalAttributes
  */
 class AwsElbLoadBalancerAttributes extends Shape
 {
     /**
      * @param array{
-     *     AccessLog?: AwsElbLoadBalancerAccessLog,
-     *     ConnectionDraining?: AwsElbLoadBalancerConnectionDraining,
-     *     ConnectionSettings?: AwsElbLoadBalancerConnectionSettings,
-     *     CrossZoneLoadBalancing?: AwsElbLoadBalancerCrossZoneLoadBalancing,
-     *     AdditionalAttributes?: list<AwsElbLoadBalancerAdditionalAttribute>
+     *     AccessLog?: AwsElbLoadBalancerAccessLog|null,
+     *     ConnectionDraining?: AwsElbLoadBalancerConnectionDraining|null,
+     *     ConnectionSettings?: AwsElbLoadBalancerConnectionSettings|null,
+     *     CrossZoneLoadBalancing?: AwsElbLoadBalancerCrossZoneLoadBalancing|null,
+     *     AdditionalAttributes?: list<AwsElbLoadBalancerAdditionalAttribute>|null
      * } $args
      */
     public function __construct(array $args = [])

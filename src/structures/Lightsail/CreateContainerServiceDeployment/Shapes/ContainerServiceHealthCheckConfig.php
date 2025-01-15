@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Lightsail\CreateContainerServiceDeployment\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $healthyThreshold
- * @property int $unhealthyThreshold
- * @property int $timeoutSeconds
- * @property int $intervalSeconds
- * @property string $path
- * @property string $successCodes
+ * @property int|null $healthyThreshold
+ * @property int|null $unhealthyThreshold
+ * @property int|null $timeoutSeconds
+ * @property int|null $intervalSeconds
+ * @property string|null $path
+ * @property string|null $successCodes
  */
 class ContainerServiceHealthCheckConfig extends Shape
 {
     /**
      * @param array{
-     *     healthyThreshold?: int,
-     *     unhealthyThreshold?: int,
-     *     timeoutSeconds?: int,
-     *     intervalSeconds?: int,
-     *     path?: string,
-     *     successCodes?: string
+     *     healthyThreshold?: int|null,
+     *     unhealthyThreshold?: int|null,
+     *     timeoutSeconds?: int|null,
+     *     intervalSeconds?: int|null,
+     *     path?: string|null,
+     *     successCodes?: string|null
      * } $args
      */
     public function __construct(array $args = [])

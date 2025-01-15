@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Bucket
- * @property string $Delimiter
- * @property 'url' $EncodingType
- * @property string $Marker
- * @property int $MaxKeys
- * @property string $Prefix
- * @property 'requester' $RequestPayer
- * @property string $ExpectedBucketOwner
- * @property list<'RestoreStatus'> $OptionalObjectAttributes
+ * @property string|null $Delimiter
+ * @property 'url'|null $EncodingType
+ * @property string|null $Marker
+ * @property int|null $MaxKeys
+ * @property string|null $Prefix
+ * @property 'requester'|null $RequestPayer
+ * @property string|null $ExpectedBucketOwner
+ * @property list<'RestoreStatus'>|null $OptionalObjectAttributes
  */
 class ListObjectsRequest extends Request
 {
     /**
      * @param array{
      *     Bucket: string,
-     *     Delimiter?: string,
-     *     EncodingType?: 'url',
-     *     Marker?: string,
-     *     MaxKeys?: int,
-     *     Prefix?: string,
-     *     RequestPayer?: 'requester',
-     *     ExpectedBucketOwner?: string,
-     *     OptionalObjectAttributes?: list<'RestoreStatus'>
+     *     Delimiter?: string|null,
+     *     EncodingType?: 'url'|null,
+     *     Marker?: string|null,
+     *     MaxKeys?: int|null,
+     *     Prefix?: string|null,
+     *     RequestPayer?: 'requester'|null,
+     *     ExpectedBucketOwner?: string|null,
+     *     OptionalObjectAttributes?: list<'RestoreStatus'>|null
      * } $args
      */
     public function __construct(array $args)

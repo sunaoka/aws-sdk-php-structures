@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $pullRequestId
- * @property string $repositoryName
- * @property string $beforeCommitId
- * @property string $afterCommitId
- * @property string $nextToken
- * @property int $maxResults
+ * @property string|null $repositoryName
+ * @property string|null $beforeCommitId
+ * @property string|null $afterCommitId
+ * @property string|null $nextToken
+ * @property int|null $maxResults
  */
 class GetCommentsForPullRequestRequest extends Request
 {
     /**
      * @param array{
      *     pullRequestId: string,
-     *     repositoryName?: string,
-     *     beforeCommitId?: string,
-     *     afterCommitId?: string,
-     *     nextToken?: string,
-     *     maxResults?: int
+     *     repositoryName?: string|null,
+     *     beforeCommitId?: string|null,
+     *     afterCommitId?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int|null
      * } $args
      */
     public function __construct(array $args)

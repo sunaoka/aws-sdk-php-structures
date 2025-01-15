@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannelClass\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EncryptionPassphraseSecretArn
- * @property string $StreamId
- * @property string $Url
+ * @property string|null $EncryptionPassphraseSecretArn
+ * @property string|null $StreamId
+ * @property string|null $Url
  */
 class SrtOutputDestinationSettings extends Shape
 {
     /**
      * @param array{
-     *     EncryptionPassphraseSecretArn?: string,
-     *     StreamId?: string,
-     *     Url?: string
+     *     EncryptionPassphraseSecretArn?: string|null,
+     *     StreamId?: string|null,
+     *     Url?: string|null
      * } $args
      */
     public function __construct(array $args = [])

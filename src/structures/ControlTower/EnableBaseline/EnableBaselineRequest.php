@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $baselineIdentifier
  * @property string $baselineVersion
- * @property list<Shapes\EnabledBaselineParameter> $parameters
- * @property array<string, string> $tags
+ * @property list<Shapes\EnabledBaselineParameter>|null $parameters
+ * @property array<string, string>|null $tags
  * @property string $targetIdentifier
  */
 class EnableBaselineRequest extends Request
@@ -17,8 +17,8 @@ class EnableBaselineRequest extends Request
      * @param array{
      *     baselineIdentifier: string,
      *     baselineVersion: string,
-     *     parameters?: list<Shapes\EnabledBaselineParameter>,
-     *     tags?: array<string, string>,
+     *     parameters?: list<Shapes\EnabledBaselineParameter>|null,
+     *     tags?: array<string, string>|null,
      *     targetIdentifier: string
      * } $args
      */

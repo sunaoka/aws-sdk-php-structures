@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\GetComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ComponentProperty $type
- * @property ComponentProperty $url
- * @property ComponentProperty $anchor
- * @property ComponentProperty $target
- * @property ComponentProperty $global
- * @property string $model
- * @property ComponentProperty $id
- * @property array<string, ComponentProperty> $fields
- * @property MutationActionSetStateParameter $state
+ * @property ComponentProperty|null $type
+ * @property ComponentProperty|null $url
+ * @property ComponentProperty|null $anchor
+ * @property ComponentProperty|null $target
+ * @property ComponentProperty|null $global
+ * @property string|null $model
+ * @property ComponentProperty|null $id
+ * @property array<string, ComponentProperty>|null $fields
+ * @property MutationActionSetStateParameter|null $state
  */
 class ActionParameters extends Shape
 {
     /**
      * @param array{
-     *     type?: ComponentProperty,
-     *     url?: ComponentProperty,
-     *     anchor?: ComponentProperty,
-     *     target?: ComponentProperty,
-     *     global?: ComponentProperty,
-     *     model?: string,
-     *     id?: ComponentProperty,
-     *     fields?: array<string, ComponentProperty>,
-     *     state?: MutationActionSetStateParameter
+     *     type?: ComponentProperty|null,
+     *     url?: ComponentProperty|null,
+     *     anchor?: ComponentProperty|null,
+     *     target?: ComponentProperty|null,
+     *     global?: ComponentProperty|null,
+     *     model?: string|null,
+     *     id?: ComponentProperty|null,
+     *     fields?: array<string, ComponentProperty>|null,
+     *     state?: MutationActionSetStateParameter|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Iot\GetStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $count
- * @property double $average
- * @property double $sum
- * @property double $minimum
- * @property double $maximum
- * @property double $sumOfSquares
- * @property double $variance
- * @property double $stdDeviation
+ * @property int|null $count
+ * @property double|null $average
+ * @property double|null $sum
+ * @property double|null $minimum
+ * @property double|null $maximum
+ * @property double|null $sumOfSquares
+ * @property double|null $variance
+ * @property double|null $stdDeviation
  */
 class Statistics extends Shape
 {
     /**
      * @param array{
-     *     count?: int,
-     *     average?: double,
-     *     sum?: double,
-     *     minimum?: double,
-     *     maximum?: double,
-     *     sumOfSquares?: double,
-     *     variance?: double,
-     *     stdDeviation?: double
+     *     count?: int|null,
+     *     average?: double|null,
+     *     sum?: double|null,
+     *     minimum?: double|null,
+     *     maximum?: double|null,
+     *     sumOfSquares?: double|null,
+     *     variance?: double|null,
+     *     stdDeviation?: double|null
      * } $args
      */
     public function __construct(array $args = [])

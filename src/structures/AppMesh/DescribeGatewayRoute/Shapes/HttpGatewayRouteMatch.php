@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\AppMesh\DescribeGatewayRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<HttpGatewayRouteHeader> $headers
- * @property GatewayRouteHostnameMatch $hostname
- * @property 'GET'|'HEAD'|'POST'|'PUT'|'DELETE'|'CONNECT'|'OPTIONS'|'TRACE'|'PATCH' $method
- * @property HttpPathMatch $path
- * @property int<1, 65535> $port
- * @property string $prefix
- * @property list<HttpQueryParameter> $queryParameters
+ * @property list<HttpGatewayRouteHeader>|null $headers
+ * @property GatewayRouteHostnameMatch|null $hostname
+ * @property 'GET'|'HEAD'|'POST'|'PUT'|'DELETE'|'CONNECT'|'OPTIONS'|'TRACE'|'PATCH'|null $method
+ * @property HttpPathMatch|null $path
+ * @property int<1, 65535>|null $port
+ * @property string|null $prefix
+ * @property list<HttpQueryParameter>|null $queryParameters
  */
 class HttpGatewayRouteMatch extends Shape
 {
     /**
      * @param array{
-     *     headers?: list<HttpGatewayRouteHeader>,
-     *     hostname?: GatewayRouteHostnameMatch,
-     *     method?: 'GET'|'HEAD'|'POST'|'PUT'|'DELETE'|'CONNECT'|'OPTIONS'|'TRACE'|'PATCH',
-     *     path?: HttpPathMatch,
-     *     port?: int<1, 65535>,
-     *     prefix?: string,
-     *     queryParameters?: list<HttpQueryParameter>
+     *     headers?: list<HttpGatewayRouteHeader>|null,
+     *     hostname?: GatewayRouteHostnameMatch|null,
+     *     method?: 'GET'|'HEAD'|'POST'|'PUT'|'DELETE'|'CONNECT'|'OPTIONS'|'TRACE'|'PATCH'|null,
+     *     path?: HttpPathMatch|null,
+     *     port?: int<1, 65535>|null,
+     *     prefix?: string|null,
+     *     queryParameters?: list<HttpQueryParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

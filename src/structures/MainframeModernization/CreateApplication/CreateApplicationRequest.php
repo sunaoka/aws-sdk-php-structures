@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\CreateApplication;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property Shapes\Definition $definition
- * @property string $description
+ * @property string|null $description
  * @property 'microfocus'|'bluage' $engineType
- * @property string $kmsKeyId
+ * @property string|null $kmsKeyId
  * @property string $name
- * @property string $roleArn
- * @property array<string, string> $tags
+ * @property string|null $roleArn
+ * @property array<string, string>|null $tags
  */
 class CreateApplicationRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     definition: Shapes\Definition,
-     *     description?: string,
+     *     description?: string|null,
      *     engineType: 'microfocus'|'bluage',
-     *     kmsKeyId?: string,
+     *     kmsKeyId?: string|null,
      *     name: string,
-     *     roleArn?: string,
-     *     tags?: array<string, string>
+     *     roleArn?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

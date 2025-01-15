@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $workspaceId
  * @property string $sceneId
- * @property string $contentLocation
- * @property string $description
- * @property list<string> $capabilities
- * @property array<string, string> $sceneMetadata
+ * @property string|null $contentLocation
+ * @property string|null $description
+ * @property list<string>|null $capabilities
+ * @property array<string, string>|null $sceneMetadata
  */
 class UpdateSceneRequest extends Request
 {
@@ -18,10 +18,10 @@ class UpdateSceneRequest extends Request
      * @param array{
      *     workspaceId: string,
      *     sceneId: string,
-     *     contentLocation?: string,
-     *     description?: string,
-     *     capabilities?: list<string>,
-     *     sceneMetadata?: array<string, string>
+     *     contentLocation?: string|null,
+     *     description?: string|null,
+     *     capabilities?: list<string>|null,
+     *     sceneMetadata?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

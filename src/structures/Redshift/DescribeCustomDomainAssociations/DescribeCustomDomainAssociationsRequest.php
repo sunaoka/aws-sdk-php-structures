@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeCustomDomainAssociations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CustomDomainName
- * @property string $CustomDomainCertificateArn
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $CustomDomainName
+ * @property string|null $CustomDomainCertificateArn
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeCustomDomainAssociationsRequest extends Request
 {
     /**
      * @param array{
-     *     CustomDomainName?: string,
-     *     CustomDomainCertificateArn?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     CustomDomainName?: string|null,
+     *     CustomDomainCertificateArn?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

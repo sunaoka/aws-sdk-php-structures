@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lambda\GetEventSourceMapping\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConsumerGroupId
+ * @property string|null $ConsumerGroupId
  */
 class AmazonManagedKafkaEventSourceConfig extends Shape
 {
     /**
-     * @param array{ConsumerGroupId?: string} $args
+     * @param array{ConsumerGroupId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

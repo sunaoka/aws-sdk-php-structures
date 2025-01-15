@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Health\DescribeAffectedEntitiesForOrganization\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $entityArn
- * @property string $eventArn
- * @property string $entityValue
- * @property string $entityUrl
- * @property string $awsAccountId
- * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property 'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED' $statusCode
- * @property array<string, string> $tags
- * @property array<string, string> $entityMetadata
+ * @property string|null $entityArn
+ * @property string|null $eventArn
+ * @property string|null $entityValue
+ * @property string|null $entityUrl
+ * @property string|null $awsAccountId
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
+ * @property 'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'|null $statusCode
+ * @property array<string, string>|null $tags
+ * @property array<string, string>|null $entityMetadata
  */
 class AffectedEntity extends Shape
 {
     /**
      * @param array{
-     *     entityArn?: string,
-     *     eventArn?: string,
-     *     entityValue?: string,
-     *     entityUrl?: string,
-     *     awsAccountId?: string,
-     *     lastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     statusCode?: 'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED',
-     *     tags?: array<string, string>,
-     *     entityMetadata?: array<string, string>
+     *     entityArn?: string|null,
+     *     eventArn?: string|null,
+     *     entityValue?: string|null,
+     *     entityUrl?: string|null,
+     *     awsAccountId?: string|null,
+     *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     statusCode?: 'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'|null,
+     *     tags?: array<string, string>|null,
+     *     entityMetadata?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Running'|'Failure'|'Pending'|'ShuttingDown'|'SystemUpdating'|'DeepHealthCheckInProgress' $Status
- * @property string $Message
+ * @property string|null $Message
  */
 class ClusterInstanceStatusDetails extends Shape
 {
     /**
      * @param array{
      *     Status: 'Running'|'Failure'|'Pending'|'ShuttingDown'|'SystemUpdating'|'DeepHealthCheckInProgress',
-     *     Message?: string
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args)

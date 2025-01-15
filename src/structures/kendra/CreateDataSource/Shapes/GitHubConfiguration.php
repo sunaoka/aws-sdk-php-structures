@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\kendra\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SaaSConfiguration $SaaSConfiguration
- * @property OnPremiseConfiguration $OnPremiseConfiguration
- * @property 'SAAS'|'ON_PREMISE' $Type
+ * @property SaaSConfiguration|null $SaaSConfiguration
+ * @property OnPremiseConfiguration|null $OnPremiseConfiguration
+ * @property 'SAAS'|'ON_PREMISE'|null $Type
  * @property string $SecretArn
- * @property bool $UseChangeLog
- * @property GitHubDocumentCrawlProperties $GitHubDocumentCrawlProperties
- * @property list<string> $RepositoryFilter
- * @property list<string> $InclusionFolderNamePatterns
- * @property list<string> $InclusionFileTypePatterns
- * @property list<string> $InclusionFileNamePatterns
- * @property list<string> $ExclusionFolderNamePatterns
- * @property list<string> $ExclusionFileTypePatterns
- * @property list<string> $ExclusionFileNamePatterns
- * @property DataSourceVpcConfiguration $VpcConfiguration
- * @property list<DataSourceToIndexFieldMapping> $GitHubRepositoryConfigurationFieldMappings
- * @property list<DataSourceToIndexFieldMapping> $GitHubCommitConfigurationFieldMappings
- * @property list<DataSourceToIndexFieldMapping> $GitHubIssueDocumentConfigurationFieldMappings
- * @property list<DataSourceToIndexFieldMapping> $GitHubIssueCommentConfigurationFieldMappings
- * @property list<DataSourceToIndexFieldMapping> $GitHubIssueAttachmentConfigurationFieldMappings
- * @property list<DataSourceToIndexFieldMapping> $GitHubPullRequestCommentConfigurationFieldMappings
- * @property list<DataSourceToIndexFieldMapping> $GitHubPullRequestDocumentConfigurationFieldMappings
- * @property list<DataSourceToIndexFieldMapping> $GitHubPullRequestDocumentAttachmentConfigurationFieldMappings
+ * @property bool|null $UseChangeLog
+ * @property GitHubDocumentCrawlProperties|null $GitHubDocumentCrawlProperties
+ * @property list<string>|null $RepositoryFilter
+ * @property list<string>|null $InclusionFolderNamePatterns
+ * @property list<string>|null $InclusionFileTypePatterns
+ * @property list<string>|null $InclusionFileNamePatterns
+ * @property list<string>|null $ExclusionFolderNamePatterns
+ * @property list<string>|null $ExclusionFileTypePatterns
+ * @property list<string>|null $ExclusionFileNamePatterns
+ * @property DataSourceVpcConfiguration|null $VpcConfiguration
+ * @property list<DataSourceToIndexFieldMapping>|null $GitHubRepositoryConfigurationFieldMappings
+ * @property list<DataSourceToIndexFieldMapping>|null $GitHubCommitConfigurationFieldMappings
+ * @property list<DataSourceToIndexFieldMapping>|null $GitHubIssueDocumentConfigurationFieldMappings
+ * @property list<DataSourceToIndexFieldMapping>|null $GitHubIssueCommentConfigurationFieldMappings
+ * @property list<DataSourceToIndexFieldMapping>|null $GitHubIssueAttachmentConfigurationFieldMappings
+ * @property list<DataSourceToIndexFieldMapping>|null $GitHubPullRequestCommentConfigurationFieldMappings
+ * @property list<DataSourceToIndexFieldMapping>|null $GitHubPullRequestDocumentConfigurationFieldMappings
+ * @property list<DataSourceToIndexFieldMapping>|null $GitHubPullRequestDocumentAttachmentConfigurationFieldMappings
  */
 class GitHubConfiguration extends Shape
 {
     /**
      * @param array{
-     *     SaaSConfiguration?: SaaSConfiguration,
-     *     OnPremiseConfiguration?: OnPremiseConfiguration,
-     *     Type?: 'SAAS'|'ON_PREMISE',
+     *     SaaSConfiguration?: SaaSConfiguration|null,
+     *     OnPremiseConfiguration?: OnPremiseConfiguration|null,
+     *     Type?: 'SAAS'|'ON_PREMISE'|null,
      *     SecretArn: string,
-     *     UseChangeLog?: bool,
-     *     GitHubDocumentCrawlProperties?: GitHubDocumentCrawlProperties,
-     *     RepositoryFilter?: list<string>,
-     *     InclusionFolderNamePatterns?: list<string>,
-     *     InclusionFileTypePatterns?: list<string>,
-     *     InclusionFileNamePatterns?: list<string>,
-     *     ExclusionFolderNamePatterns?: list<string>,
-     *     ExclusionFileTypePatterns?: list<string>,
-     *     ExclusionFileNamePatterns?: list<string>,
-     *     VpcConfiguration?: DataSourceVpcConfiguration,
-     *     GitHubRepositoryConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     GitHubCommitConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     GitHubIssueDocumentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     GitHubIssueCommentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     GitHubIssueAttachmentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     GitHubPullRequestCommentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     GitHubPullRequestDocumentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     GitHubPullRequestDocumentAttachmentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>
+     *     UseChangeLog?: bool|null,
+     *     GitHubDocumentCrawlProperties?: GitHubDocumentCrawlProperties|null,
+     *     RepositoryFilter?: list<string>|null,
+     *     InclusionFolderNamePatterns?: list<string>|null,
+     *     InclusionFileTypePatterns?: list<string>|null,
+     *     InclusionFileNamePatterns?: list<string>|null,
+     *     ExclusionFolderNamePatterns?: list<string>|null,
+     *     ExclusionFileTypePatterns?: list<string>|null,
+     *     ExclusionFileNamePatterns?: list<string>|null,
+     *     VpcConfiguration?: DataSourceVpcConfiguration|null,
+     *     GitHubRepositoryConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     GitHubCommitConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     GitHubIssueDocumentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     GitHubIssueCommentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     GitHubIssueAttachmentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     GitHubPullRequestCommentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     GitHubPullRequestDocumentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     GitHubPullRequestDocumentAttachmentConfigurationFieldMappings?: list<DataSourceToIndexFieldMapping>|null
      * } $args
      */
     public function __construct(array $args)

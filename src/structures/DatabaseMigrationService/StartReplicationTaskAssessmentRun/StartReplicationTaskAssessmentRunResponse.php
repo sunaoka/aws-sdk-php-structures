@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\StartReplicationTaskAs
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ReplicationTaskAssessmentRun $ReplicationTaskAssessmentRun
+ * @property Shapes\ReplicationTaskAssessmentRun|null $ReplicationTaskAssessmentRun
  */
 class StartReplicationTaskAssessmentRunResponse extends Response
 {

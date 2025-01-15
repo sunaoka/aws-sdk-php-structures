@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ModifyReplicationInsta
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KeyCacheSecretId
- * @property string $KeyCacheSecretIamArn
- * @property string $Krb5FileContents
+ * @property string|null $KeyCacheSecretId
+ * @property string|null $KeyCacheSecretIamArn
+ * @property string|null $Krb5FileContents
  */
 class KerberosAuthenticationSettings extends Shape
 {
     /**
      * @param array{
-     *     KeyCacheSecretId?: string,
-     *     KeyCacheSecretIamArn?: string,
-     *     Krb5FileContents?: string
+     *     KeyCacheSecretId?: string|null,
+     *     KeyCacheSecretIamArn?: string|null,
+     *     Krb5FileContents?: string|null
      * } $args
      */
     public function __construct(array $args = [])

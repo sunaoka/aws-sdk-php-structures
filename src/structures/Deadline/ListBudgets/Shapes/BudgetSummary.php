@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property UsageTrackingResource $usageTrackingResource
  * @property 'ACTIVE'|'INACTIVE' $status
  * @property string $displayName
- * @property string $description
+ * @property string|null $description
  * @property float $approximateDollarLimit
  * @property ConsumedUsages $usages
  * @property string $createdBy
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $updatedBy
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class BudgetSummary extends Shape
 {
@@ -25,13 +25,13 @@ class BudgetSummary extends Shape
      *     usageTrackingResource: UsageTrackingResource,
      *     status: 'ACTIVE'|'INACTIVE',
      *     displayName: string,
-     *     description?: string,
+     *     description?: string|null,
      *     approximateDollarLimit: float,
      *     usages: ConsumedUsages,
      *     createdBy: string,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     updatedBy?: string|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

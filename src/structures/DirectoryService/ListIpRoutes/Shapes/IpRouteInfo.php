@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DirectoryService\ListIpRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DirectoryId
- * @property string $CidrIp
- * @property 'Adding'|'Added'|'Removing'|'Removed'|'AddFailed'|'RemoveFailed' $IpRouteStatusMsg
- * @property \Aws\Api\DateTimeResult $AddedDateTime
- * @property string $IpRouteStatusReason
- * @property string $Description
+ * @property string|null $DirectoryId
+ * @property string|null $CidrIp
+ * @property 'Adding'|'Added'|'Removing'|'Removed'|'AddFailed'|'RemoveFailed'|null $IpRouteStatusMsg
+ * @property \Aws\Api\DateTimeResult|null $AddedDateTime
+ * @property string|null $IpRouteStatusReason
+ * @property string|null $Description
  */
 class IpRouteInfo extends Shape
 {
     /**
      * @param array{
-     *     DirectoryId?: string,
-     *     CidrIp?: string,
-     *     IpRouteStatusMsg?: 'Adding'|'Added'|'Removing'|'Removed'|'AddFailed'|'RemoveFailed',
-     *     AddedDateTime?: \Aws\Api\DateTimeResult,
-     *     IpRouteStatusReason?: string,
-     *     Description?: string
+     *     DirectoryId?: string|null,
+     *     CidrIp?: string|null,
+     *     IpRouteStatusMsg?: 'Adding'|'Added'|'Removing'|'Removed'|'AddFailed'|'RemoveFailed'|null,
+     *     AddedDateTime?: \Aws\Api\DateTimeResult|null,
+     *     IpRouteStatusReason?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

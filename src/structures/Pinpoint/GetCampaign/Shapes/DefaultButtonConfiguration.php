@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BackgroundColor
- * @property int $BorderRadius
+ * @property string|null $BackgroundColor
+ * @property int|null $BorderRadius
  * @property 'LINK'|'DEEP_LINK'|'CLOSE' $ButtonAction
- * @property string $Link
+ * @property string|null $Link
  * @property string $Text
- * @property string $TextColor
+ * @property string|null $TextColor
  */
 class DefaultButtonConfiguration extends Shape
 {
     /**
      * @param array{
-     *     BackgroundColor?: string,
-     *     BorderRadius?: int,
+     *     BackgroundColor?: string|null,
+     *     BorderRadius?: int|null,
      *     ButtonAction: 'LINK'|'DEEP_LINK'|'CLOSE',
-     *     Link?: string,
+     *     Link?: string|null,
      *     Text: string,
-     *     TextColor?: string
+     *     TextColor?: string|null
      * } $args
      */
     public function __construct(array $args)

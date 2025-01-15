@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ResourceExplorer2\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Complete
- * @property int $TotalResources
+ * @property bool|null $Complete
+ * @property int|null $TotalResources
  */
 class ResourceCount extends Shape
 {
     /**
      * @param array{
-     *     Complete?: bool,
-     *     TotalResources?: int
+     *     Complete?: bool|null,
+     *     TotalResources?: int|null
      * } $args
      */
     public function __construct(array $args = [])

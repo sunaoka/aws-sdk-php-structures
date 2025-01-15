@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeAutoMLJobV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $ValidationFraction
+ * @property float|null $ValidationFraction
  */
 class AutoMLDataSplitConfig extends Shape
 {
     /**
-     * @param array{ValidationFraction?: float} $args
+     * @param array{ValidationFraction?: float|null} $args
      */
     public function __construct(array $args = [])
     {

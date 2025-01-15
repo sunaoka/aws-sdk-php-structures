@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetEventConfigurationByResourceType
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DeviceRegistrationStateResourceTypeEventConfiguration $DeviceRegistrationState
- * @property Shapes\ProximityResourceTypeEventConfiguration $Proximity
- * @property Shapes\JoinResourceTypeEventConfiguration $Join
- * @property Shapes\ConnectionStatusResourceTypeEventConfiguration $ConnectionStatus
- * @property Shapes\MessageDeliveryStatusResourceTypeEventConfiguration $MessageDeliveryStatus
+ * @property Shapes\DeviceRegistrationStateResourceTypeEventConfiguration|null $DeviceRegistrationState
+ * @property Shapes\ProximityResourceTypeEventConfiguration|null $Proximity
+ * @property Shapes\JoinResourceTypeEventConfiguration|null $Join
+ * @property Shapes\ConnectionStatusResourceTypeEventConfiguration|null $ConnectionStatus
+ * @property Shapes\MessageDeliveryStatusResourceTypeEventConfiguration|null $MessageDeliveryStatus
  */
 class GetEventConfigurationByResourceTypesResponse extends Response
 {

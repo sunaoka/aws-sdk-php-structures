@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\WorkDocs\AddResourcePermissions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PrincipalId
- * @property string $InviteePrincipalId
- * @property 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'COOWNER' $Role
- * @property 'SUCCESS'|'FAILURE' $Status
- * @property string $ShareId
- * @property string $StatusMessage
+ * @property string|null $PrincipalId
+ * @property string|null $InviteePrincipalId
+ * @property 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'COOWNER'|null $Role
+ * @property 'SUCCESS'|'FAILURE'|null $Status
+ * @property string|null $ShareId
+ * @property string|null $StatusMessage
  */
 class ShareResult extends Shape
 {
     /**
      * @param array{
-     *     PrincipalId?: string,
-     *     InviteePrincipalId?: string,
-     *     Role?: 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'COOWNER',
-     *     Status?: 'SUCCESS'|'FAILURE',
-     *     ShareId?: string,
-     *     StatusMessage?: string
+     *     PrincipalId?: string|null,
+     *     InviteePrincipalId?: string|null,
+     *     Role?: 'VIEWER'|'CONTRIBUTOR'|'OWNER'|'COOWNER'|null,
+     *     Status?: 'SUCCESS'|'FAILURE'|null,
+     *     ShareId?: string|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

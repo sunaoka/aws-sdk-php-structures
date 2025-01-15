@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ResourceExplorer2\GetAccountLevelServiceConfigu
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\OrgConfiguration $OrgConfiguration
+ * @property Shapes\OrgConfiguration|null $OrgConfiguration
  */
 class GetAccountLevelServiceConfigurationResponse extends Response
 {

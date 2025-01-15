@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $VpnConnectionId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DeleteVpnConnectionRequest extends Request
 {
     /**
      * @param array{
      *     VpnConnectionId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

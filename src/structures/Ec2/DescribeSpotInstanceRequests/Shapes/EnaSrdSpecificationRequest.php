@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSpotInstanceRequests\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnaSrdEnabled
- * @property EnaSrdUdpSpecificationRequest $EnaSrdUdpSpecification
+ * @property bool|null $EnaSrdEnabled
+ * @property EnaSrdUdpSpecificationRequest|null $EnaSrdUdpSpecification
  */
 class EnaSrdSpecificationRequest extends Shape
 {
     /**
      * @param array{
-     *     EnaSrdEnabled?: bool,
-     *     EnaSrdUdpSpecification?: EnaSrdUdpSpecificationRequest
+     *     EnaSrdEnabled?: bool|null,
+     *     EnaSrdUdpSpecification?: EnaSrdUdpSpecificationRequest|null
      * } $args
      */
     public function __construct(array $args = [])

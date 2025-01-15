@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeCapacityReservationBillingRequests\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceType
- * @property string $AvailabilityZone
- * @property 'default'|'dedicated' $Tenancy
+ * @property string|null $InstanceType
+ * @property string|null $AvailabilityZone
+ * @property 'default'|'dedicated'|null $Tenancy
  */
 class CapacityReservationInfo extends Shape
 {
     /**
      * @param array{
-     *     InstanceType?: string,
-     *     AvailabilityZone?: string,
-     *     Tenancy?: 'default'|'dedicated'
+     *     InstanceType?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     Tenancy?: 'default'|'dedicated'|null
      * } $args
      */
     public function __construct(array $args = [])

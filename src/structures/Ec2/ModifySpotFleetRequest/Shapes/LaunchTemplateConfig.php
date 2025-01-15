@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifySpotFleetRequest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FleetLaunchTemplateSpecification $LaunchTemplateSpecification
- * @property list<LaunchTemplateOverrides> $Overrides
+ * @property FleetLaunchTemplateSpecification|null $LaunchTemplateSpecification
+ * @property list<LaunchTemplateOverrides>|null $Overrides
  */
 class LaunchTemplateConfig extends Shape
 {
     /**
      * @param array{
-     *     LaunchTemplateSpecification?: FleetLaunchTemplateSpecification,
-     *     Overrides?: list<LaunchTemplateOverrides>
+     *     LaunchTemplateSpecification?: FleetLaunchTemplateSpecification|null,
+     *     Overrides?: list<LaunchTemplateOverrides>|null
      * } $args
      */
     public function __construct(array $args = [])

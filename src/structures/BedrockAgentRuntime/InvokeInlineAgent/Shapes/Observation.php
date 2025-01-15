@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ActionGroupInvocationOutput $actionGroupInvocationOutput
- * @property AgentCollaboratorInvocationOutput $agentCollaboratorInvocationOutput
- * @property CodeInterpreterInvocationOutput $codeInterpreterInvocationOutput
- * @property FinalResponse $finalResponse
- * @property KnowledgeBaseLookupOutput $knowledgeBaseLookupOutput
- * @property RepromptResponse $repromptResponse
- * @property string $traceId
- * @property 'ACTION_GROUP'|'AGENT_COLLABORATOR'|'KNOWLEDGE_BASE'|'FINISH'|'ASK_USER'|'REPROMPT' $type
+ * @property ActionGroupInvocationOutput|null $actionGroupInvocationOutput
+ * @property AgentCollaboratorInvocationOutput|null $agentCollaboratorInvocationOutput
+ * @property CodeInterpreterInvocationOutput|null $codeInterpreterInvocationOutput
+ * @property FinalResponse|null $finalResponse
+ * @property KnowledgeBaseLookupOutput|null $knowledgeBaseLookupOutput
+ * @property RepromptResponse|null $repromptResponse
+ * @property string|null $traceId
+ * @property 'ACTION_GROUP'|'AGENT_COLLABORATOR'|'KNOWLEDGE_BASE'|'FINISH'|'ASK_USER'|'REPROMPT'|null $type
  */
 class Observation extends Shape
 {
     /**
      * @param array{
-     *     actionGroupInvocationOutput?: ActionGroupInvocationOutput,
-     *     agentCollaboratorInvocationOutput?: AgentCollaboratorInvocationOutput,
-     *     codeInterpreterInvocationOutput?: CodeInterpreterInvocationOutput,
-     *     finalResponse?: FinalResponse,
-     *     knowledgeBaseLookupOutput?: KnowledgeBaseLookupOutput,
-     *     repromptResponse?: RepromptResponse,
-     *     traceId?: string,
-     *     type?: 'ACTION_GROUP'|'AGENT_COLLABORATOR'|'KNOWLEDGE_BASE'|'FINISH'|'ASK_USER'|'REPROMPT'
+     *     actionGroupInvocationOutput?: ActionGroupInvocationOutput|null,
+     *     agentCollaboratorInvocationOutput?: AgentCollaboratorInvocationOutput|null,
+     *     codeInterpreterInvocationOutput?: CodeInterpreterInvocationOutput|null,
+     *     finalResponse?: FinalResponse|null,
+     *     knowledgeBaseLookupOutput?: KnowledgeBaseLookupOutput|null,
+     *     repromptResponse?: RepromptResponse|null,
+     *     traceId?: string|null,
+     *     type?: 'ACTION_GROUP'|'AGENT_COLLABORATOR'|'KNOWLEDGE_BASE'|'FINISH'|'ASK_USER'|'REPROMPT'|null
      * } $args
      */
     public function __construct(array $args = [])

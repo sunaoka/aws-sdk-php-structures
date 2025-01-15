@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Glue\GetDataQualityModel;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StatisticId
+ * @property string|null $StatisticId
  * @property string $ProfileId
  */
 class GetDataQualityModelRequest extends Request
 {
     /**
      * @param array{
-     *     StatisticId?: string,
+     *     StatisticId?: string|null,
      *     ProfileId: string
      * } $args
      */

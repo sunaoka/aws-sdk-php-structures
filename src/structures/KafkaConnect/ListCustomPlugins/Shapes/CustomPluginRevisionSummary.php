@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\ListCustomPlugins\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'JAR'|'ZIP' $contentType
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property string $description
- * @property CustomPluginFileDescription $fileDescription
- * @property CustomPluginLocationDescription $location
- * @property int $revision
+ * @property 'JAR'|'ZIP'|null $contentType
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property string|null $description
+ * @property CustomPluginFileDescription|null $fileDescription
+ * @property CustomPluginLocationDescription|null $location
+ * @property int|null $revision
  */
 class CustomPluginRevisionSummary extends Shape
 {
     /**
      * @param array{
-     *     contentType?: 'JAR'|'ZIP',
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     fileDescription?: CustomPluginFileDescription,
-     *     location?: CustomPluginLocationDescription,
-     *     revision?: int
+     *     contentType?: 'JAR'|'ZIP'|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     description?: string|null,
+     *     fileDescription?: CustomPluginFileDescription|null,
+     *     location?: CustomPluginLocationDescription|null,
+     *     revision?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribePendingAggregationRequest
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RequesterAccountId
- * @property string $RequesterAwsRegion
+ * @property string|null $RequesterAccountId
+ * @property string|null $RequesterAwsRegion
  */
 class PendingAggregationRequest extends Shape
 {
     /**
      * @param array{
-     *     RequesterAccountId?: string,
-     *     RequesterAwsRegion?: string
+     *     RequesterAccountId?: string|null,
+     *     RequesterAwsRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

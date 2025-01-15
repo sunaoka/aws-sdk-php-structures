@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReservedDBInstancesOfferingId
- * @property string $ReservedDBInstanceId
- * @property int $DBInstanceCount
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ReservedDBInstanceId
+ * @property int|null $DBInstanceCount
+ * @property list<Shapes\Tag>|null $Tags
  */
 class PurchaseReservedDBInstancesOfferingRequest extends Request
 {
     /**
      * @param array{
      *     ReservedDBInstancesOfferingId: string,
-     *     ReservedDBInstanceId?: string,
-     *     DBInstanceCount?: int,
-     *     Tags?: list<Shapes\Tag>
+     *     ReservedDBInstanceId?: string|null,
+     *     DBInstanceCount?: int|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

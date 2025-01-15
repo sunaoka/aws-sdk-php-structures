@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Health\DescribeEventAggregates;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\EventFilter $filter
+ * @property Shapes\EventFilter|null $filter
  * @property 'eventTypeCategory' $aggregateField
- * @property int<10, 100> $maxResults
- * @property string $nextToken
+ * @property int<10, 100>|null $maxResults
+ * @property string|null $nextToken
  */
 class DescribeEventAggregatesRequest extends Request
 {
     /**
      * @param array{
-     *     filter?: Shapes\EventFilter,
+     *     filter?: Shapes\EventFilter|null,
      *     aggregateField: 'eventTypeCategory',
-     *     maxResults?: int<10, 100>,
-     *     nextToken?: string
+     *     maxResults?: int<10, 100>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

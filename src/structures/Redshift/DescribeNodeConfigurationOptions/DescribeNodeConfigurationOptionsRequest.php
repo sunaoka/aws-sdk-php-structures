@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'restore-cluster'|'recommend-node-config'|'resize-cluster' $ActionType
- * @property string $ClusterIdentifier
- * @property string $SnapshotIdentifier
- * @property string $SnapshotArn
- * @property string $OwnerAccount
- * @property list<Shapes\NodeConfigurationOptionsFilter> $Filters
- * @property string $Marker
- * @property int $MaxRecords
+ * @property string|null $ClusterIdentifier
+ * @property string|null $SnapshotIdentifier
+ * @property string|null $SnapshotArn
+ * @property string|null $OwnerAccount
+ * @property list<Shapes\NodeConfigurationOptionsFilter>|null $Filters
+ * @property string|null $Marker
+ * @property int|null $MaxRecords
  */
 class DescribeNodeConfigurationOptionsRequest extends Request
 {
     /**
      * @param array{
      *     ActionType: 'restore-cluster'|'recommend-node-config'|'resize-cluster',
-     *     ClusterIdentifier?: string,
-     *     SnapshotIdentifier?: string,
-     *     SnapshotArn?: string,
-     *     OwnerAccount?: string,
-     *     Filters?: list<Shapes\NodeConfigurationOptionsFilter>,
-     *     Marker?: string,
-     *     MaxRecords?: int
+     *     ClusterIdentifier?: string|null,
+     *     SnapshotIdentifier?: string|null,
+     *     SnapshotArn?: string|null,
+     *     OwnerAccount?: string|null,
+     *     Filters?: list<Shapes\NodeConfigurationOptionsFilter>|null,
+     *     Marker?: string|null,
+     *     MaxRecords?: int|null
      * } $args
      */
     public function __construct(array $args)

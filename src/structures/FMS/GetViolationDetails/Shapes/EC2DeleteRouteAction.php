@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property string $DestinationCidrBlock
- * @property string $DestinationPrefixListId
- * @property string $DestinationIpv6CidrBlock
+ * @property string|null $Description
+ * @property string|null $DestinationCidrBlock
+ * @property string|null $DestinationPrefixListId
+ * @property string|null $DestinationIpv6CidrBlock
  * @property ActionTarget $RouteTableId
  */
 class EC2DeleteRouteAction extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     DestinationCidrBlock?: string,
-     *     DestinationPrefixListId?: string,
-     *     DestinationIpv6CidrBlock?: string,
+     *     Description?: string|null,
+     *     DestinationCidrBlock?: string|null,
+     *     DestinationPrefixListId?: string|null,
+     *     DestinationIpv6CidrBlock?: string|null,
      *     RouteTableId: ActionTarget
      * } $args
      */

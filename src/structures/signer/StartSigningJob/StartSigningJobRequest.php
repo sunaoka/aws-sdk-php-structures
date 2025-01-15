@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Destination $destination
  * @property string $profileName
  * @property string $clientRequestToken
- * @property string $profileOwner
+ * @property string|null $profileOwner
  */
 class StartSigningJobRequest extends Request
 {
@@ -19,7 +19,7 @@ class StartSigningJobRequest extends Request
      *     destination: Shapes\Destination,
      *     profileName: string,
      *     clientRequestToken: string,
-     *     profileOwner?: string
+     *     profileOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

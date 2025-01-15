@@ -5,87 +5,87 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TrainingJobName
- * @property string $TrainingJobArn
- * @property string $TuningJobArn
- * @property string $LabelingJobArn
- * @property string $AutoMLJobArn
- * @property ModelArtifacts $ModelArtifacts
- * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $TrainingJobStatus
- * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending' $SecondaryStatus
- * @property string $FailureReason
- * @property array<string, string> $HyperParameters
- * @property AlgorithmSpecification $AlgorithmSpecification
- * @property string $RoleArn
- * @property list<Channel> $InputDataConfig
- * @property OutputDataConfig $OutputDataConfig
- * @property ResourceConfig $ResourceConfig
- * @property VpcConfig $VpcConfig
- * @property StoppingCondition $StoppingCondition
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $TrainingStartTime
- * @property \Aws\Api\DateTimeResult $TrainingEndTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property list<SecondaryStatusTransition> $SecondaryStatusTransitions
- * @property list<MetricData> $FinalMetricDataList
- * @property bool $EnableNetworkIsolation
- * @property bool $EnableInterContainerTrafficEncryption
- * @property bool $EnableManagedSpotTraining
- * @property CheckpointConfig $CheckpointConfig
- * @property int<1, max> $TrainingTimeInSeconds
- * @property int<1, max> $BillableTimeInSeconds
- * @property DebugHookConfig $DebugHookConfig
- * @property ExperimentConfig $ExperimentConfig
- * @property list<DebugRuleConfiguration> $DebugRuleConfigurations
- * @property TensorBoardOutputConfig $TensorBoardOutputConfig
- * @property list<DebugRuleEvaluationStatus> $DebugRuleEvaluationStatuses
- * @property ProfilerConfig $ProfilerConfig
- * @property array<string, string> $Environment
- * @property RetryStrategy $RetryStrategy
- * @property list<Tag> $Tags
+ * @property string|null $TrainingJobName
+ * @property string|null $TrainingJobArn
+ * @property string|null $TuningJobArn
+ * @property string|null $LabelingJobArn
+ * @property string|null $AutoMLJobArn
+ * @property ModelArtifacts|null $ModelArtifacts
+ * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null $TrainingJobStatus
+ * @property 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending'|null $SecondaryStatus
+ * @property string|null $FailureReason
+ * @property array<string, string>|null $HyperParameters
+ * @property AlgorithmSpecification|null $AlgorithmSpecification
+ * @property string|null $RoleArn
+ * @property list<Channel>|null $InputDataConfig
+ * @property OutputDataConfig|null $OutputDataConfig
+ * @property ResourceConfig|null $ResourceConfig
+ * @property VpcConfig|null $VpcConfig
+ * @property StoppingCondition|null $StoppingCondition
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $TrainingStartTime
+ * @property \Aws\Api\DateTimeResult|null $TrainingEndTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property list<SecondaryStatusTransition>|null $SecondaryStatusTransitions
+ * @property list<MetricData>|null $FinalMetricDataList
+ * @property bool|null $EnableNetworkIsolation
+ * @property bool|null $EnableInterContainerTrafficEncryption
+ * @property bool|null $EnableManagedSpotTraining
+ * @property CheckpointConfig|null $CheckpointConfig
+ * @property int<1, max>|null $TrainingTimeInSeconds
+ * @property int<1, max>|null $BillableTimeInSeconds
+ * @property DebugHookConfig|null $DebugHookConfig
+ * @property ExperimentConfig|null $ExperimentConfig
+ * @property list<DebugRuleConfiguration>|null $DebugRuleConfigurations
+ * @property TensorBoardOutputConfig|null $TensorBoardOutputConfig
+ * @property list<DebugRuleEvaluationStatus>|null $DebugRuleEvaluationStatuses
+ * @property ProfilerConfig|null $ProfilerConfig
+ * @property array<string, string>|null $Environment
+ * @property RetryStrategy|null $RetryStrategy
+ * @property list<Tag>|null $Tags
  */
 class TrainingJob extends Shape
 {
     /**
      * @param array{
-     *     TrainingJobName?: string,
-     *     TrainingJobArn?: string,
-     *     TuningJobArn?: string,
-     *     LabelingJobArn?: string,
-     *     AutoMLJobArn?: string,
-     *     ModelArtifacts?: ModelArtifacts,
-     *     TrainingJobStatus?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped',
-     *     SecondaryStatus?: 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending',
-     *     FailureReason?: string,
-     *     HyperParameters?: array<string, string>,
-     *     AlgorithmSpecification?: AlgorithmSpecification,
-     *     RoleArn?: string,
-     *     InputDataConfig?: list<Channel>,
-     *     OutputDataConfig?: OutputDataConfig,
-     *     ResourceConfig?: ResourceConfig,
-     *     VpcConfig?: VpcConfig,
-     *     StoppingCondition?: StoppingCondition,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     TrainingStartTime?: \Aws\Api\DateTimeResult,
-     *     TrainingEndTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     SecondaryStatusTransitions?: list<SecondaryStatusTransition>,
-     *     FinalMetricDataList?: list<MetricData>,
-     *     EnableNetworkIsolation?: bool,
-     *     EnableInterContainerTrafficEncryption?: bool,
-     *     EnableManagedSpotTraining?: bool,
-     *     CheckpointConfig?: CheckpointConfig,
-     *     TrainingTimeInSeconds?: int<1, max>,
-     *     BillableTimeInSeconds?: int<1, max>,
-     *     DebugHookConfig?: DebugHookConfig,
-     *     ExperimentConfig?: ExperimentConfig,
-     *     DebugRuleConfigurations?: list<DebugRuleConfiguration>,
-     *     TensorBoardOutputConfig?: TensorBoardOutputConfig,
-     *     DebugRuleEvaluationStatuses?: list<DebugRuleEvaluationStatus>,
-     *     ProfilerConfig?: ProfilerConfig,
-     *     Environment?: array<string, string>,
-     *     RetryStrategy?: RetryStrategy,
-     *     Tags?: list<Tag>
+     *     TrainingJobName?: string|null,
+     *     TrainingJobArn?: string|null,
+     *     TuningJobArn?: string|null,
+     *     LabelingJobArn?: string|null,
+     *     AutoMLJobArn?: string|null,
+     *     ModelArtifacts?: ModelArtifacts|null,
+     *     TrainingJobStatus?: 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null,
+     *     SecondaryStatus?: 'Starting'|'LaunchingMLInstances'|'PreparingTrainingStack'|'Downloading'|'DownloadingTrainingImage'|'Training'|'Uploading'|'Stopping'|'Stopped'|'MaxRuntimeExceeded'|'Completed'|'Failed'|'Interrupted'|'MaxWaitTimeExceeded'|'Updating'|'Restarting'|'Pending'|null,
+     *     FailureReason?: string|null,
+     *     HyperParameters?: array<string, string>|null,
+     *     AlgorithmSpecification?: AlgorithmSpecification|null,
+     *     RoleArn?: string|null,
+     *     InputDataConfig?: list<Channel>|null,
+     *     OutputDataConfig?: OutputDataConfig|null,
+     *     ResourceConfig?: ResourceConfig|null,
+     *     VpcConfig?: VpcConfig|null,
+     *     StoppingCondition?: StoppingCondition|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     TrainingStartTime?: \Aws\Api\DateTimeResult|null,
+     *     TrainingEndTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     SecondaryStatusTransitions?: list<SecondaryStatusTransition>|null,
+     *     FinalMetricDataList?: list<MetricData>|null,
+     *     EnableNetworkIsolation?: bool|null,
+     *     EnableInterContainerTrafficEncryption?: bool|null,
+     *     EnableManagedSpotTraining?: bool|null,
+     *     CheckpointConfig?: CheckpointConfig|null,
+     *     TrainingTimeInSeconds?: int<1, max>|null,
+     *     BillableTimeInSeconds?: int<1, max>|null,
+     *     DebugHookConfig?: DebugHookConfig|null,
+     *     ExperimentConfig?: ExperimentConfig|null,
+     *     DebugRuleConfigurations?: list<DebugRuleConfiguration>|null,
+     *     TensorBoardOutputConfig?: TensorBoardOutputConfig|null,
+     *     DebugRuleEvaluationStatuses?: list<DebugRuleEvaluationStatus>|null,
+     *     ProfilerConfig?: ProfilerConfig|null,
+     *     Environment?: array<string, string>|null,
+     *     RetryStrategy?: RetryStrategy|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

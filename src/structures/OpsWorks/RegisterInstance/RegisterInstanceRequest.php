@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackId
- * @property string $Hostname
- * @property string $PublicIp
- * @property string $PrivateIp
- * @property string $RsaPublicKey
- * @property string $RsaPublicKeyFingerprint
- * @property Shapes\InstanceIdentity $InstanceIdentity
+ * @property string|null $Hostname
+ * @property string|null $PublicIp
+ * @property string|null $PrivateIp
+ * @property string|null $RsaPublicKey
+ * @property string|null $RsaPublicKeyFingerprint
+ * @property Shapes\InstanceIdentity|null $InstanceIdentity
  */
 class RegisterInstanceRequest extends Request
 {
     /**
      * @param array{
      *     StackId: string,
-     *     Hostname?: string,
-     *     PublicIp?: string,
-     *     PrivateIp?: string,
-     *     RsaPublicKey?: string,
-     *     RsaPublicKeyFingerprint?: string,
-     *     InstanceIdentity?: Shapes\InstanceIdentity
+     *     Hostname?: string|null,
+     *     PublicIp?: string|null,
+     *     PrivateIp?: string|null,
+     *     RsaPublicKey?: string|null,
+     *     RsaPublicKeyFingerprint?: string|null,
+     *     InstanceIdentity?: Shapes\InstanceIdentity|null
      * } $args
      */
     public function __construct(array $args)

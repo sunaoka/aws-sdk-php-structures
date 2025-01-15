@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeAccountAttributes\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResourceQuota $ApplicationQuota
- * @property ResourceQuota $ApplicationVersionQuota
- * @property ResourceQuota $EnvironmentQuota
- * @property ResourceQuota $ConfigurationTemplateQuota
- * @property ResourceQuota $CustomPlatformQuota
+ * @property ResourceQuota|null $ApplicationQuota
+ * @property ResourceQuota|null $ApplicationVersionQuota
+ * @property ResourceQuota|null $EnvironmentQuota
+ * @property ResourceQuota|null $ConfigurationTemplateQuota
+ * @property ResourceQuota|null $CustomPlatformQuota
  */
 class ResourceQuotas extends Shape
 {
     /**
      * @param array{
-     *     ApplicationQuota?: ResourceQuota,
-     *     ApplicationVersionQuota?: ResourceQuota,
-     *     EnvironmentQuota?: ResourceQuota,
-     *     ConfigurationTemplateQuota?: ResourceQuota,
-     *     CustomPlatformQuota?: ResourceQuota
+     *     ApplicationQuota?: ResourceQuota|null,
+     *     ApplicationVersionQuota?: ResourceQuota|null,
+     *     EnvironmentQuota?: ResourceQuota|null,
+     *     ConfigurationTemplateQuota?: ResourceQuota|null,
+     *     CustomPlatformQuota?: ResourceQuota|null
      * } $args
      */
     public function __construct(array $args = [])

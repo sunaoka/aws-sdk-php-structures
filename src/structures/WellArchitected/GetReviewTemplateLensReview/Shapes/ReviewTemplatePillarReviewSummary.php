@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WellArchitected\GetReviewTemplateLensReview\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PillarId
- * @property string $PillarName
- * @property string $Notes
- * @property array<'UNANSWERED'|'ANSWERED', int<0, max>> $QuestionCounts
+ * @property string|null $PillarId
+ * @property string|null $PillarName
+ * @property string|null $Notes
+ * @property array<'UNANSWERED'|'ANSWERED', int<0, max>>|null $QuestionCounts
  */
 class ReviewTemplatePillarReviewSummary extends Shape
 {
     /**
      * @param array{
-     *     PillarId?: string,
-     *     PillarName?: string,
-     *     Notes?: string,
-     *     QuestionCounts?: array<'UNANSWERED'|'ANSWERED', int<0, max>>
+     *     PillarId?: string|null,
+     *     PillarName?: string|null,
+     *     Notes?: string|null,
+     *     QuestionCounts?: array<'UNANSWERED'|'ANSWERED', int<0, max>>|null
      * } $args
      */
     public function __construct(array $args = [])

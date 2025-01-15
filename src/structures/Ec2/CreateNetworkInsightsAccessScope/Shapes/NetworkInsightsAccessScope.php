@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateNetworkInsightsAccessScope\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NetworkInsightsAccessScopeId
- * @property string $NetworkInsightsAccessScopeArn
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property \Aws\Api\DateTimeResult $UpdatedDate
- * @property list<Tag> $Tags
+ * @property string|null $NetworkInsightsAccessScopeId
+ * @property string|null $NetworkInsightsAccessScopeArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property \Aws\Api\DateTimeResult|null $UpdatedDate
+ * @property list<Tag>|null $Tags
  */
 class NetworkInsightsAccessScope extends Shape
 {
     /**
      * @param array{
-     *     NetworkInsightsAccessScopeId?: string,
-     *     NetworkInsightsAccessScopeArn?: string,
-     *     CreatedDate?: \Aws\Api\DateTimeResult,
-     *     UpdatedDate?: \Aws\Api\DateTimeResult,
-     *     Tags?: list<Tag>
+     *     NetworkInsightsAccessScopeId?: string|null,
+     *     NetworkInsightsAccessScopeArn?: string|null,
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedDate?: \Aws\Api\DateTimeResult|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

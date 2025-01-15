@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AllocationId
  * @property string $TransferAccountId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class EnableAddressTransferRequest extends Request
 {
@@ -15,7 +15,7 @@ class EnableAddressTransferRequest extends Request
      * @param array{
      *     AllocationId: string,
      *     TransferAccountId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $agentId
  * @property string $agentName
  * @property 'CREATING'|'PREPARING'|'PREPARED'|'NOT_PREPARED'|'DELETING'|'FAILED'|'VERSIONING'|'UPDATING' $agentStatus
- * @property string $description
- * @property GuardrailConfiguration $guardrailConfiguration
- * @property string $latestAgentVersion
+ * @property string|null $description
+ * @property GuardrailConfiguration|null $guardrailConfiguration
+ * @property string|null $latestAgentVersion
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class AgentSummary extends Shape
@@ -20,9 +20,9 @@ class AgentSummary extends Shape
      *     agentId: string,
      *     agentName: string,
      *     agentStatus: 'CREATING'|'PREPARING'|'PREPARED'|'NOT_PREPARED'|'DELETING'|'FAILED'|'VERSIONING'|'UPDATING',
-     *     description?: string,
-     *     guardrailConfiguration?: GuardrailConfiguration,
-     *     latestAgentVersion?: string,
+     *     description?: string|null,
+     *     guardrailConfiguration?: GuardrailConfiguration|null,
+     *     latestAgentVersion?: string|null,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

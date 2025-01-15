@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<1, 1000000> $workerCount
- * @property WorkerResourceConfig $workerConfiguration
+ * @property WorkerResourceConfig|null $workerConfiguration
  */
 class InitialCapacityConfig extends Shape
 {
     /**
      * @param array{
      *     workerCount: int<1, 1000000>,
-     *     workerConfiguration?: WorkerResourceConfig
+     *     workerConfiguration?: WorkerResourceConfig|null
      * } $args
      */
     public function __construct(array $args)

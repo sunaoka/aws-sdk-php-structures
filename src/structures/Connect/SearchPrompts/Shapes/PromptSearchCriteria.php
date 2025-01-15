@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Connect\SearchPrompts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PromptSearchCriteria> $OrConditions
- * @property list<PromptSearchCriteria> $AndConditions
- * @property StringCondition $StringCondition
+ * @property list<PromptSearchCriteria>|null $OrConditions
+ * @property list<PromptSearchCriteria>|null $AndConditions
+ * @property StringCondition|null $StringCondition
  */
 class PromptSearchCriteria extends Shape
 {
     /**
      * @param array{
-     *     OrConditions?: list<PromptSearchCriteria>,
-     *     AndConditions?: list<PromptSearchCriteria>,
-     *     StringCondition?: StringCondition
+     *     OrConditions?: list<PromptSearchCriteria>|null,
+     *     AndConditions?: list<PromptSearchCriteria>|null,
+     *     StringCondition?: StringCondition|null
      * } $args
      */
     public function __construct(array $args = [])

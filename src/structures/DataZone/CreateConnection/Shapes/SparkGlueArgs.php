@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $connection
+ * @property string|null $connection
  */
 class SparkGlueArgs extends Shape
 {
     /**
-     * @param array{connection?: string} $args
+     * @param array{connection?: string|null} $args
      */
     public function __construct(array $args = [])
     {

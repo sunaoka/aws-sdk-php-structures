@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Lambda\ListLayers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LayerName
- * @property string $LayerArn
- * @property LayerVersionsListItem $LatestMatchingVersion
+ * @property string|null $LayerName
+ * @property string|null $LayerArn
+ * @property LayerVersionsListItem|null $LatestMatchingVersion
  */
 class LayersListItem extends Shape
 {
     /**
      * @param array{
-     *     LayerName?: string,
-     *     LayerArn?: string,
-     *     LatestMatchingVersion?: LayerVersionsListItem
+     *     LayerName?: string|null,
+     *     LayerArn?: string|null,
+     *     LatestMatchingVersion?: LayerVersionsListItem|null
      * } $args
      */
     public function __construct(array $args = [])

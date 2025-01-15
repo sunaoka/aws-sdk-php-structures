@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Destination
- * @property DestinationSettings $DestinationSettings
+ * @property string|null $Destination
+ * @property DestinationSettings|null $DestinationSettings
  */
 class FileGroupSettings extends Shape
 {
     /**
      * @param array{
-     *     Destination?: string,
-     *     DestinationSettings?: DestinationSettings
+     *     Destination?: string|null,
+     *     DestinationSettings?: DestinationSettings|null
      * } $args
      */
     public function __construct(array $args = [])

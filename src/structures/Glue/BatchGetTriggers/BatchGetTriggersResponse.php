@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetTriggers;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Trigger> $Triggers
- * @property list<string> $TriggersNotFound
+ * @property list<Shapes\Trigger>|null $Triggers
+ * @property list<string>|null $TriggersNotFound
  */
 class BatchGetTriggersResponse extends Response
 {

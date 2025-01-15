@@ -7,24 +7,24 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $PathPattern
  * @property string $TargetOriginId
- * @property TrustedSigners $TrustedSigners
- * @property TrustedKeyGroups $TrustedKeyGroups
+ * @property TrustedSigners|null $TrustedSigners
+ * @property TrustedKeyGroups|null $TrustedKeyGroups
  * @property 'allow-all'|'https-only'|'redirect-to-https' $ViewerProtocolPolicy
- * @property AllowedMethods $AllowedMethods
- * @property bool $SmoothStreaming
- * @property bool $Compress
- * @property LambdaFunctionAssociations $LambdaFunctionAssociations
- * @property FunctionAssociations $FunctionAssociations
- * @property string $FieldLevelEncryptionId
- * @property string $RealtimeLogConfigArn
- * @property string $CachePolicyId
- * @property string $OriginRequestPolicyId
- * @property string $ResponseHeadersPolicyId
- * @property GrpcConfig $GrpcConfig
- * @property ForwardedValues $ForwardedValues
- * @property int $MinTTL
- * @property int $DefaultTTL
- * @property int $MaxTTL
+ * @property AllowedMethods|null $AllowedMethods
+ * @property bool|null $SmoothStreaming
+ * @property bool|null $Compress
+ * @property LambdaFunctionAssociations|null $LambdaFunctionAssociations
+ * @property FunctionAssociations|null $FunctionAssociations
+ * @property string|null $FieldLevelEncryptionId
+ * @property string|null $RealtimeLogConfigArn
+ * @property string|null $CachePolicyId
+ * @property string|null $OriginRequestPolicyId
+ * @property string|null $ResponseHeadersPolicyId
+ * @property GrpcConfig|null $GrpcConfig
+ * @property ForwardedValues|null $ForwardedValues
+ * @property int|null $MinTTL
+ * @property int|null $DefaultTTL
+ * @property int|null $MaxTTL
  */
 class CacheBehavior extends Shape
 {
@@ -32,24 +32,24 @@ class CacheBehavior extends Shape
      * @param array{
      *     PathPattern: string,
      *     TargetOriginId: string,
-     *     TrustedSigners?: TrustedSigners,
-     *     TrustedKeyGroups?: TrustedKeyGroups,
+     *     TrustedSigners?: TrustedSigners|null,
+     *     TrustedKeyGroups?: TrustedKeyGroups|null,
      *     ViewerProtocolPolicy: 'allow-all'|'https-only'|'redirect-to-https',
-     *     AllowedMethods?: AllowedMethods,
-     *     SmoothStreaming?: bool,
-     *     Compress?: bool,
-     *     LambdaFunctionAssociations?: LambdaFunctionAssociations,
-     *     FunctionAssociations?: FunctionAssociations,
-     *     FieldLevelEncryptionId?: string,
-     *     RealtimeLogConfigArn?: string,
-     *     CachePolicyId?: string,
-     *     OriginRequestPolicyId?: string,
-     *     ResponseHeadersPolicyId?: string,
-     *     GrpcConfig?: GrpcConfig,
-     *     ForwardedValues?: ForwardedValues,
-     *     MinTTL?: int,
-     *     DefaultTTL?: int,
-     *     MaxTTL?: int
+     *     AllowedMethods?: AllowedMethods|null,
+     *     SmoothStreaming?: bool|null,
+     *     Compress?: bool|null,
+     *     LambdaFunctionAssociations?: LambdaFunctionAssociations|null,
+     *     FunctionAssociations?: FunctionAssociations|null,
+     *     FieldLevelEncryptionId?: string|null,
+     *     RealtimeLogConfigArn?: string|null,
+     *     CachePolicyId?: string|null,
+     *     OriginRequestPolicyId?: string|null,
+     *     ResponseHeadersPolicyId?: string|null,
+     *     GrpcConfig?: GrpcConfig|null,
+     *     ForwardedValues?: ForwardedValues|null,
+     *     MinTTL?: int|null,
+     *     DefaultTTL?: int|null,
+     *     MaxTTL?: int|null
      * } $args
      */
     public function __construct(array $args)

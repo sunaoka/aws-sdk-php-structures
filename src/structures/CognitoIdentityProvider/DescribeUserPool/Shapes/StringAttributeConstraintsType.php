@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\DescribeUserPool\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MinLength
- * @property string $MaxLength
+ * @property string|null $MinLength
+ * @property string|null $MaxLength
  */
 class StringAttributeConstraintsType extends Shape
 {
     /**
      * @param array{
-     *     MinLength?: string,
-     *     MaxLength?: string
+     *     MinLength?: string|null,
+     *     MaxLength?: string|null
      * } $args
      */
     public function __construct(array $args = [])

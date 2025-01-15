@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\PutPortfoli
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'ALL'|'KNOWN'|'UNKNOWN' $applicationMode
- * @property Shapes\ApplicationPreferences $applicationPreferences
- * @property Shapes\DatabasePreferences $databasePreferences
- * @property Shapes\PrioritizeBusinessGoals $prioritizeBusinessGoals
+ * @property 'ALL'|'KNOWN'|'UNKNOWN'|null $applicationMode
+ * @property Shapes\ApplicationPreferences|null $applicationPreferences
+ * @property Shapes\DatabasePreferences|null $databasePreferences
+ * @property Shapes\PrioritizeBusinessGoals|null $prioritizeBusinessGoals
  */
 class PutPortfolioPreferencesRequest extends Request
 {
     /**
      * @param array{
-     *     applicationMode?: 'ALL'|'KNOWN'|'UNKNOWN',
-     *     applicationPreferences?: Shapes\ApplicationPreferences,
-     *     databasePreferences?: Shapes\DatabasePreferences,
-     *     prioritizeBusinessGoals?: Shapes\PrioritizeBusinessGoals
+     *     applicationMode?: 'ALL'|'KNOWN'|'UNKNOWN'|null,
+     *     applicationPreferences?: Shapes\ApplicationPreferences|null,
+     *     databasePreferences?: Shapes\DatabasePreferences|null,
+     *     prioritizeBusinessGoals?: Shapes\PrioritizeBusinessGoals|null
      * } $args
      */
     public function __construct(array $args = [])

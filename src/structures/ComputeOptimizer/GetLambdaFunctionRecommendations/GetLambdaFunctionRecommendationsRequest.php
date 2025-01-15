@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetLambdaFunctionRecommendatio
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $functionArns
- * @property list<string> $accountIds
- * @property list<Shapes\LambdaFunctionRecommendationFilter> $filters
- * @property string $nextToken
- * @property int<0, 1000> $maxResults
+ * @property list<string>|null $functionArns
+ * @property list<string>|null $accountIds
+ * @property list<Shapes\LambdaFunctionRecommendationFilter>|null $filters
+ * @property string|null $nextToken
+ * @property int<0, 1000>|null $maxResults
  */
 class GetLambdaFunctionRecommendationsRequest extends Request
 {
     /**
      * @param array{
-     *     functionArns?: list<string>,
-     *     accountIds?: list<string>,
-     *     filters?: list<Shapes\LambdaFunctionRecommendationFilter>,
-     *     nextToken?: string,
-     *     maxResults?: int<0, 1000>
+     *     functionArns?: list<string>|null,
+     *     accountIds?: list<string>|null,
+     *     filters?: list<Shapes\LambdaFunctionRecommendationFilter>|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<0, 1000>|null
      * } $args
      */
     public function __construct(array $args = [])

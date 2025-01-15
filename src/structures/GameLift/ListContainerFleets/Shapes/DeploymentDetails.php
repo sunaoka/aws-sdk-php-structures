@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GameLift\ListContainerFleets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LatestDeploymentId
+ * @property string|null $LatestDeploymentId
  */
 class DeploymentDetails extends Shape
 {
     /**
-     * @param array{LatestDeploymentId?: string} $args
+     * @param array{LatestDeploymentId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

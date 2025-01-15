@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SesV2\CreateDeliverabilityTestReport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Content $Text
- * @property Content $Html
+ * @property Content|null $Text
+ * @property Content|null $Html
  */
 class Body extends Shape
 {
     /**
      * @param array{
-     *     Text?: Content,
-     *     Html?: Content
+     *     Text?: Content|null,
+     *     Html?: Content|null
      * } $args
      */
     public function __construct(array $args = [])

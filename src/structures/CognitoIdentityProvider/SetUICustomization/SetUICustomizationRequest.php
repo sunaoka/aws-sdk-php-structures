@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $UserPoolId
- * @property string $ClientId
- * @property string $CSS
- * @property string|resource|\Psr\Http\Message\StreamInterface $ImageFile
+ * @property string|null $ClientId
+ * @property string|null $CSS
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $ImageFile
  */
 class SetUICustomizationRequest extends Request
 {
     /**
      * @param array{
      *     UserPoolId: string,
-     *     ClientId?: string,
-     *     CSS?: string,
-     *     ImageFile?: string|resource|\Psr\Http\Message\StreamInterface
+     *     ClientId?: string|null,
+     *     CSS?: string|null,
+     *     ImageFile?: string|resource|\Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args)

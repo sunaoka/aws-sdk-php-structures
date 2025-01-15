@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ColumnIdentifier $Column
  * @property CategoryFilterConfiguration $Configuration
- * @property DefaultFilterControlConfiguration $DefaultFilterControlConfiguration
+ * @property DefaultFilterControlConfiguration|null $DefaultFilterControlConfiguration
  */
 class CategoryInnerFilter extends Shape
 {
@@ -15,7 +15,7 @@ class CategoryInnerFilter extends Shape
      * @param array{
      *     Column: ColumnIdentifier,
      *     Configuration: CategoryFilterConfiguration,
-     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration
+     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration|null
      * } $args
      */
     public function __construct(array $args)

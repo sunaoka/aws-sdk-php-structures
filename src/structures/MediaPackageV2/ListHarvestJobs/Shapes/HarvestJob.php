@@ -11,14 +11,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Destination $Destination
  * @property string $HarvestJobName
  * @property HarvestedManifests $HarvestedManifests
- * @property string $Description
+ * @property string|null $Description
  * @property HarvesterScheduleConfiguration $ScheduleConfiguration
  * @property string $Arn
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $ModifiedAt
  * @property 'QUEUED'|'IN_PROGRESS'|'CANCELLED'|'COMPLETED'|'FAILED' $Status
- * @property string $ErrorMessage
- * @property string $ETag
+ * @property string|null $ErrorMessage
+ * @property string|null $ETag
  */
 class HarvestJob extends Shape
 {
@@ -30,14 +30,14 @@ class HarvestJob extends Shape
      *     Destination: Destination,
      *     HarvestJobName: string,
      *     HarvestedManifests: HarvestedManifests,
-     *     Description?: string,
+     *     Description?: string|null,
      *     ScheduleConfiguration: HarvesterScheduleConfiguration,
      *     Arn: string,
      *     CreatedAt: \Aws\Api\DateTimeResult,
      *     ModifiedAt: \Aws\Api\DateTimeResult,
      *     Status: 'QUEUED'|'IN_PROGRESS'|'CANCELLED'|'COMPLETED'|'FAILED',
-     *     ErrorMessage?: string,
-     *     ETag?: string
+     *     ErrorMessage?: string|null,
+     *     ETag?: string|null
      * } $args
      */
     public function __construct(array $args)

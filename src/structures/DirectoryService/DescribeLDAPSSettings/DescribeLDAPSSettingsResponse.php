@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DirectoryService\DescribeLDAPSSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\LDAPSSettingInfo> $LDAPSSettingsInfo
- * @property string $NextToken
+ * @property list<Shapes\LDAPSSettingInfo>|null $LDAPSSettingsInfo
+ * @property string|null $NextToken
  */
 class DescribeLDAPSSettingsResponse extends Response
 {

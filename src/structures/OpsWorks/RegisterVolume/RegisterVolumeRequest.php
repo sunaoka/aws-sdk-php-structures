@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\OpsWorks\RegisterVolume;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Ec2VolumeId
+ * @property string|null $Ec2VolumeId
  * @property string $StackId
  */
 class RegisterVolumeRequest extends Request
 {
     /**
      * @param array{
-     *     Ec2VolumeId?: string,
+     *     Ec2VolumeId?: string|null,
      *     StackId: string
      * } $args
      */

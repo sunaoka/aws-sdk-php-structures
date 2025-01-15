@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ReloadTables;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ReplicationTaskArn
+ * @property string|null $ReplicationTaskArn
  */
 class ReloadTablesResponse extends Response
 {

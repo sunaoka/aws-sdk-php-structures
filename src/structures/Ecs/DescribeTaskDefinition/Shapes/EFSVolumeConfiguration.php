@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $fileSystemId
- * @property string $rootDirectory
- * @property 'ENABLED'|'DISABLED' $transitEncryption
- * @property int $transitEncryptionPort
- * @property EFSAuthorizationConfig $authorizationConfig
+ * @property string|null $rootDirectory
+ * @property 'ENABLED'|'DISABLED'|null $transitEncryption
+ * @property int|null $transitEncryptionPort
+ * @property EFSAuthorizationConfig|null $authorizationConfig
  */
 class EFSVolumeConfiguration extends Shape
 {
     /**
      * @param array{
      *     fileSystemId: string,
-     *     rootDirectory?: string,
-     *     transitEncryption?: 'ENABLED'|'DISABLED',
-     *     transitEncryptionPort?: int,
-     *     authorizationConfig?: EFSAuthorizationConfig
+     *     rootDirectory?: string|null,
+     *     transitEncryption?: 'ENABLED'|'DISABLED'|null,
+     *     transitEncryptionPort?: int|null,
+     *     authorizationConfig?: EFSAuthorizationConfig|null
      * } $args
      */
     public function __construct(array $args)

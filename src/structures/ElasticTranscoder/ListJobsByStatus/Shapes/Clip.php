@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ListJobsByStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TimeSpan $TimeSpan
+ * @property TimeSpan|null $TimeSpan
  */
 class Clip extends Shape
 {
     /**
-     * @param array{TimeSpan?: TimeSpan} $args
+     * @param array{TimeSpan?: TimeSpan|null} $args
      */
     public function __construct(array $args = [])
     {

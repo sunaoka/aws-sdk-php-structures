@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeospatialColor $FillColor
- * @property GeospatialColor $StrokeColor
- * @property GeospatialLineWidth $StrokeWidth
+ * @property GeospatialColor|null $FillColor
+ * @property GeospatialColor|null $StrokeColor
+ * @property GeospatialLineWidth|null $StrokeWidth
  */
 class GeospatialPolygonSymbolStyle extends Shape
 {
     /**
      * @param array{
-     *     FillColor?: GeospatialColor,
-     *     StrokeColor?: GeospatialColor,
-     *     StrokeWidth?: GeospatialLineWidth
+     *     FillColor?: GeospatialColor|null,
+     *     StrokeColor?: GeospatialColor|null,
+     *     StrokeWidth?: GeospatialLineWidth|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $mergedApiIdentifier
  * @property string $associationId
  * @property 'SDL'|'JSON' $format
- * @property string $nextToken
- * @property int<0, 25> $maxResults
+ * @property string|null $nextToken
+ * @property int<0, 25>|null $maxResults
  */
 class ListTypesByAssociationRequest extends Request
 {
@@ -18,8 +18,8 @@ class ListTypesByAssociationRequest extends Request
      *     mergedApiIdentifier: string,
      *     associationId: string,
      *     format: 'SDL'|'JSON',
-     *     nextToken?: string,
-     *     maxResults?: int<0, 25>
+     *     nextToken?: string|null,
+     *     maxResults?: int<0, 25>|null
      * } $args
      */
     public function __construct(array $args)

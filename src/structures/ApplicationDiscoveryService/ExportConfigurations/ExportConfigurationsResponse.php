@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\ExportConfiguration
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $exportId
+ * @property string|null $exportId
  */
 class ExportConfigurationsResponse extends Response
 {

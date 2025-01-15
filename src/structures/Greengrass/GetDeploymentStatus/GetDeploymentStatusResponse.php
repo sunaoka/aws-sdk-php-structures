@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Greengrass\GetDeploymentStatus;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DeploymentStatus
- * @property 'NewDeployment'|'Redeployment'|'ResetDeployment'|'ForceResetDeployment' $DeploymentType
- * @property list<Shapes\ErrorDetail> $ErrorDetails
- * @property string $ErrorMessage
- * @property string $UpdatedAt
+ * @property string|null $DeploymentStatus
+ * @property 'NewDeployment'|'Redeployment'|'ResetDeployment'|'ForceResetDeployment'|null $DeploymentType
+ * @property list<Shapes\ErrorDetail>|null $ErrorDetails
+ * @property string|null $ErrorMessage
+ * @property string|null $UpdatedAt
  */
 class GetDeploymentStatusResponse extends Response
 {

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PivotTableFieldWells $FieldWells
- * @property PivotTableSortConfiguration $SortConfiguration
- * @property PivotTableOptions $TableOptions
- * @property PivotTableTotalOptions $TotalOptions
- * @property PivotTableFieldOptions $FieldOptions
- * @property PivotTablePaginatedReportOptions $PaginatedReportOptions
- * @property VisualInteractionOptions $Interactions
+ * @property PivotTableFieldWells|null $FieldWells
+ * @property PivotTableSortConfiguration|null $SortConfiguration
+ * @property PivotTableOptions|null $TableOptions
+ * @property PivotTableTotalOptions|null $TotalOptions
+ * @property PivotTableFieldOptions|null $FieldOptions
+ * @property PivotTablePaginatedReportOptions|null $PaginatedReportOptions
+ * @property VisualInteractionOptions|null $Interactions
  */
 class PivotTableConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FieldWells?: PivotTableFieldWells,
-     *     SortConfiguration?: PivotTableSortConfiguration,
-     *     TableOptions?: PivotTableOptions,
-     *     TotalOptions?: PivotTableTotalOptions,
-     *     FieldOptions?: PivotTableFieldOptions,
-     *     PaginatedReportOptions?: PivotTablePaginatedReportOptions,
-     *     Interactions?: VisualInteractionOptions
+     *     FieldWells?: PivotTableFieldWells|null,
+     *     SortConfiguration?: PivotTableSortConfiguration|null,
+     *     TableOptions?: PivotTableOptions|null,
+     *     TotalOptions?: PivotTableTotalOptions|null,
+     *     FieldOptions?: PivotTableFieldOptions|null,
+     *     PaginatedReportOptions?: PivotTablePaginatedReportOptions|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

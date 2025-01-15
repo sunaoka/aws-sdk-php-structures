@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $InCluster
- * @property string $ClientBroker
+ * @property bool|null $InCluster
+ * @property string|null $ClientBroker
  */
 class AwsMskClusterClusterInfoEncryptionInfoEncryptionInTransitDetails extends Shape
 {
     /**
      * @param array{
-     *     InCluster?: bool,
-     *     ClientBroker?: string
+     *     InCluster?: bool|null,
+     *     ClientBroker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

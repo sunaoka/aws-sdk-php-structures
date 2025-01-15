@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ecs\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $kmsKeyId
- * @property 'NONE'|'DEFAULT'|'OVERRIDE' $logging
- * @property ExecuteCommandLogConfiguration $logConfiguration
+ * @property string|null $kmsKeyId
+ * @property 'NONE'|'DEFAULT'|'OVERRIDE'|null $logging
+ * @property ExecuteCommandLogConfiguration|null $logConfiguration
  */
 class ExecuteCommandConfiguration extends Shape
 {
     /**
      * @param array{
-     *     kmsKeyId?: string,
-     *     logging?: 'NONE'|'DEFAULT'|'OVERRIDE',
-     *     logConfiguration?: ExecuteCommandLogConfiguration
+     *     kmsKeyId?: string|null,
+     *     logging?: 'NONE'|'DEFAULT'|'OVERRIDE'|null,
+     *     logConfiguration?: ExecuteCommandLogConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

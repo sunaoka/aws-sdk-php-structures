@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<'TRANSACTIONAL'|'PROMOTIONAL'> $MessageTypes
  * @property string $MonthlyLeasingPrice
  * @property bool $Registered
- * @property string $RegistrationId
+ * @property string|null $RegistrationId
  */
 class ReleaseSenderIdResponse extends Response
 {

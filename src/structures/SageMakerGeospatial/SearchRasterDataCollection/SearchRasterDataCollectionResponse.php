@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property int $ApproximateResultCount
- * @property list<Shapes\ItemSource> $Items
- * @property string $NextToken
+ * @property list<Shapes\ItemSource>|null $Items
+ * @property string|null $NextToken
  */
 class SearchRasterDataCollectionResponse extends Response
 {

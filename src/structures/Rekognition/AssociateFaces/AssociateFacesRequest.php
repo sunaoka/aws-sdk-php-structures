@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CollectionId
  * @property string $UserId
  * @property list<string> $FaceIds
- * @property float $UserMatchThreshold
- * @property string $ClientRequestToken
+ * @property float|null $UserMatchThreshold
+ * @property string|null $ClientRequestToken
  */
 class AssociateFacesRequest extends Request
 {
@@ -18,8 +18,8 @@ class AssociateFacesRequest extends Request
      *     CollectionId: string,
      *     UserId: string,
      *     FaceIds: list<string>,
-     *     UserMatchThreshold?: float,
-     *     ClientRequestToken?: string
+     *     UserMatchThreshold?: float|null,
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeEnvironmentResources\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
+ * @property string|null $Name
  */
 class LaunchConfiguration extends Shape
 {
     /**
-     * @param array{Name?: string} $args
+     * @param array{Name?: string|null} $args
      */
     public function __construct(array $args = [])
     {

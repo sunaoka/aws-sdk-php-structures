@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApiId
- * @property string $Basepath
+ * @property string|null $Basepath
  * @property string $Body
- * @property bool $FailOnWarnings
+ * @property bool|null $FailOnWarnings
  */
 class ReimportApiRequest extends Request
 {
     /**
      * @param array{
      *     ApiId: string,
-     *     Basepath?: string,
+     *     Basepath?: string|null,
      *     Body: string,
-     *     FailOnWarnings?: bool
+     *     FailOnWarnings?: bool|null
      * } $args
      */
     public function __construct(array $args)

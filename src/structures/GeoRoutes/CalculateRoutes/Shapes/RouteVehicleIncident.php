@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property string $EndTime
- * @property 'Critical'|'High'|'Medium'|'Low' $Severity
- * @property string $StartTime
- * @property 'Accident'|'Congestion'|'Construction'|'DisabledVehicle'|'LaneRestriction'|'MassTransit'|'Other'|'PlannedEvent'|'RoadClosure'|'RoadHazard'|'Weather' $Type
+ * @property string|null $Description
+ * @property string|null $EndTime
+ * @property 'Critical'|'High'|'Medium'|'Low'|null $Severity
+ * @property string|null $StartTime
+ * @property 'Accident'|'Congestion'|'Construction'|'DisabledVehicle'|'LaneRestriction'|'MassTransit'|'Other'|'PlannedEvent'|'RoadClosure'|'RoadHazard'|'Weather'|null $Type
  */
 class RouteVehicleIncident extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     EndTime?: string,
-     *     Severity?: 'Critical'|'High'|'Medium'|'Low',
-     *     StartTime?: string,
-     *     Type?: 'Accident'|'Congestion'|'Construction'|'DisabledVehicle'|'LaneRestriction'|'MassTransit'|'Other'|'PlannedEvent'|'RoadClosure'|'RoadHazard'|'Weather'
+     *     Description?: string|null,
+     *     EndTime?: string|null,
+     *     Severity?: 'Critical'|'High'|'Medium'|'Low'|null,
+     *     StartTime?: string|null,
+     *     Type?: 'Accident'|'Congestion'|'Construction'|'DisabledVehicle'|'LaneRestriction'|'MassTransit'|'Other'|'PlannedEvent'|'RoadClosure'|'RoadHazard'|'Weather'|null
      * } $args
      */
     public function __construct(array $args = [])

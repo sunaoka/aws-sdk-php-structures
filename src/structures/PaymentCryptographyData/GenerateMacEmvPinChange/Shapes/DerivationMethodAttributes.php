@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\GenerateMacEmvPinChange
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EmvCommonAttributes $EmvCommon
- * @property AmexAttributes $Amex
- * @property VisaAttributes $Visa
- * @property Emv2000Attributes $Emv2000
- * @property MasterCardAttributes $Mastercard
+ * @property EmvCommonAttributes|null $EmvCommon
+ * @property AmexAttributes|null $Amex
+ * @property VisaAttributes|null $Visa
+ * @property Emv2000Attributes|null $Emv2000
+ * @property MasterCardAttributes|null $Mastercard
  */
 class DerivationMethodAttributes extends Shape
 {
     /**
      * @param array{
-     *     EmvCommon?: EmvCommonAttributes,
-     *     Amex?: AmexAttributes,
-     *     Visa?: VisaAttributes,
-     *     Emv2000?: Emv2000Attributes,
-     *     Mastercard?: MasterCardAttributes
+     *     EmvCommon?: EmvCommonAttributes|null,
+     *     Amex?: AmexAttributes|null,
+     *     Visa?: VisaAttributes|null,
+     *     Emv2000?: Emv2000Attributes|null,
+     *     Mastercard?: MasterCardAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListBotResourceGenerations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $generationId
- * @property 'Failed'|'Complete'|'InProgress' $generationStatus
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
+ * @property string|null $generationId
+ * @property 'Failed'|'Complete'|'InProgress'|null $generationStatus
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  */
 class GenerationSummary extends Shape
 {
     /**
      * @param array{
-     *     generationId?: string,
-     *     generationStatus?: 'Failed'|'Complete'|'InProgress',
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult
+     *     generationId?: string|null,
+     *     generationStatus?: 'Failed'|'Complete'|'InProgress'|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

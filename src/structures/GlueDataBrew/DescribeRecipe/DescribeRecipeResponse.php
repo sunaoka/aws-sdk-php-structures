@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\DescribeRecipe;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $CreatedBy
- * @property \Aws\Api\DateTimeResult $CreateDate
- * @property string $LastModifiedBy
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
- * @property string $ProjectName
- * @property string $PublishedBy
- * @property \Aws\Api\DateTimeResult $PublishedDate
- * @property string $Description
+ * @property string|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
+ * @property string|null $LastModifiedBy
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
+ * @property string|null $ProjectName
+ * @property string|null $PublishedBy
+ * @property \Aws\Api\DateTimeResult|null $PublishedDate
+ * @property string|null $Description
  * @property string $Name
- * @property list<Shapes\RecipeStep> $Steps
- * @property array<string, string> $Tags
- * @property string $ResourceArn
- * @property string $RecipeVersion
+ * @property list<Shapes\RecipeStep>|null $Steps
+ * @property array<string, string>|null $Tags
+ * @property string|null $ResourceArn
+ * @property string|null $RecipeVersion
  */
 class DescribeRecipeResponse extends Response
 {

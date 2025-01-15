@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListDeviceInstances;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DeviceInstance> $deviceInstances
- * @property string $nextToken
+ * @property list<Shapes\DeviceInstance>|null $deviceInstances
+ * @property string|null $nextToken
  */
 class ListDeviceInstancesResponse extends Response
 {

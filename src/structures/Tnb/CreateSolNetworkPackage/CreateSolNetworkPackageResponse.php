@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'CREATED'|'ONBOARDED'|'ERROR' $nsdOnboardingState
  * @property 'ENABLED'|'DISABLED' $nsdOperationalState
  * @property 'IN_USE'|'NOT_IN_USE' $nsdUsageState
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateSolNetworkPackageResponse extends Response
 {

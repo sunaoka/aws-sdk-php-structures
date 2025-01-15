@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TreeMapFieldWells $FieldWells
- * @property TreeMapSortConfiguration $SortConfiguration
- * @property ChartAxisLabelOptions $GroupLabelOptions
- * @property ChartAxisLabelOptions $SizeLabelOptions
- * @property ChartAxisLabelOptions $ColorLabelOptions
- * @property ColorScale $ColorScale
- * @property LegendOptions $Legend
- * @property DataLabelOptions $DataLabels
- * @property TooltipOptions $Tooltip
- * @property VisualInteractionOptions $Interactions
+ * @property TreeMapFieldWells|null $FieldWells
+ * @property TreeMapSortConfiguration|null $SortConfiguration
+ * @property ChartAxisLabelOptions|null $GroupLabelOptions
+ * @property ChartAxisLabelOptions|null $SizeLabelOptions
+ * @property ChartAxisLabelOptions|null $ColorLabelOptions
+ * @property ColorScale|null $ColorScale
+ * @property LegendOptions|null $Legend
+ * @property DataLabelOptions|null $DataLabels
+ * @property TooltipOptions|null $Tooltip
+ * @property VisualInteractionOptions|null $Interactions
  */
 class TreeMapConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FieldWells?: TreeMapFieldWells,
-     *     SortConfiguration?: TreeMapSortConfiguration,
-     *     GroupLabelOptions?: ChartAxisLabelOptions,
-     *     SizeLabelOptions?: ChartAxisLabelOptions,
-     *     ColorLabelOptions?: ChartAxisLabelOptions,
-     *     ColorScale?: ColorScale,
-     *     Legend?: LegendOptions,
-     *     DataLabels?: DataLabelOptions,
-     *     Tooltip?: TooltipOptions,
-     *     Interactions?: VisualInteractionOptions
+     *     FieldWells?: TreeMapFieldWells|null,
+     *     SortConfiguration?: TreeMapSortConfiguration|null,
+     *     GroupLabelOptions?: ChartAxisLabelOptions|null,
+     *     SizeLabelOptions?: ChartAxisLabelOptions|null,
+     *     ColorLabelOptions?: ChartAxisLabelOptions|null,
+     *     ColorScale?: ColorScale|null,
+     *     Legend?: LegendOptions|null,
+     *     DataLabels?: DataLabelOptions|null,
+     *     Tooltip?: TooltipOptions|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

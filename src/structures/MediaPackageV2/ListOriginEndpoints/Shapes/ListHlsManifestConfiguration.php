@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ManifestName
- * @property string $ChildManifestName
- * @property string $Url
+ * @property string|null $ChildManifestName
+ * @property string|null $Url
  */
 class ListHlsManifestConfiguration extends Shape
 {
     /**
      * @param array{
      *     ManifestName: string,
-     *     ChildManifestName?: string,
-     *     Url?: string
+     *     ChildManifestName?: string|null,
+     *     Url?: string|null
      * } $args
      */
     public function __construct(array $args)

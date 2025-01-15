@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\UpdateElasticsearchDomainC
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property string $UserPoolId
- * @property string $IdentityPoolId
- * @property string $RoleArn
+ * @property bool|null $Enabled
+ * @property string|null $UserPoolId
+ * @property string|null $IdentityPoolId
+ * @property string|null $RoleArn
  */
 class CognitoOptions extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     UserPoolId?: string,
-     *     IdentityPoolId?: string,
-     *     RoleArn?: string
+     *     Enabled?: bool|null,
+     *     UserPoolId?: string|null,
+     *     IdentityPoolId?: string|null,
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

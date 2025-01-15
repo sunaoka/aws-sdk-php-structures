@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3\PutBucketVersioning\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Enabled'|'Disabled' $MFADelete
- * @property 'Enabled'|'Suspended' $Status
+ * @property 'Enabled'|'Disabled'|null $MFADelete
+ * @property 'Enabled'|'Suspended'|null $Status
  */
 class VersioningConfiguration extends Shape
 {
     /**
      * @param array{
-     *     MFADelete?: 'Enabled'|'Disabled',
-     *     Status?: 'Enabled'|'Suspended'
+     *     MFADelete?: 'Enabled'|'Disabled'|null,
+     *     Status?: 'Enabled'|'Suspended'|null
      * } $args
      */
     public function __construct(array $args = [])

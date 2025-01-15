@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Pinpoint\SendMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BodyOverride
- * @property array<string, string> $Context
- * @property string $RawContent
- * @property array<string, list<string>> $Substitutions
- * @property string $TitleOverride
+ * @property string|null $BodyOverride
+ * @property array<string, string>|null $Context
+ * @property string|null $RawContent
+ * @property array<string, list<string>>|null $Substitutions
+ * @property string|null $TitleOverride
  */
 class EndpointSendConfiguration extends Shape
 {
     /**
      * @param array{
-     *     BodyOverride?: string,
-     *     Context?: array<string, string>,
-     *     RawContent?: string,
-     *     Substitutions?: array<string, list<string>>,
-     *     TitleOverride?: string
+     *     BodyOverride?: string|null,
+     *     Context?: array<string, string>|null,
+     *     RawContent?: string|null,
+     *     Substitutions?: array<string, list<string>>|null,
+     *     TitleOverride?: string|null
      * } $args
      */
     public function __construct(array $args = [])

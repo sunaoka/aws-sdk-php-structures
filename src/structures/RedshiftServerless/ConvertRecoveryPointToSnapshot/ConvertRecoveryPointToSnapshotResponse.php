@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\ConvertRecoveryPointToSnapsh
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Snapshot $snapshot
+ * @property Shapes\Snapshot|null $snapshot
  */
 class ConvertRecoveryPointToSnapshotResponse extends Response
 {

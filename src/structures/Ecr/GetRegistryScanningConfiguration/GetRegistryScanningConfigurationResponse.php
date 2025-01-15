@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ecr\GetRegistryScanningConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $registryId
- * @property Shapes\RegistryScanningConfiguration $scanningConfiguration
+ * @property string|null $registryId
+ * @property Shapes\RegistryScanningConfiguration|null $scanningConfiguration
  */
 class GetRegistryScanningConfigurationResponse extends Response
 {

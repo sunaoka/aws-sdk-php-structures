@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTopic\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $QBusinessInsightsEnabled
+ * @property bool|null $QBusinessInsightsEnabled
  */
 class TopicConfigOptions extends Shape
 {
     /**
-     * @param array{QBusinessInsightsEnabled?: bool} $args
+     * @param array{QBusinessInsightsEnabled?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\NamespaceSummary> $namespaces
- * @property string $continuationToken
+ * @property string|null $continuationToken
  */
 class ListNamespacesResponse extends Response
 {

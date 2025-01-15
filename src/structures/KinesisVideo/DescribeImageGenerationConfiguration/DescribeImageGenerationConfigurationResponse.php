@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\DescribeImageGenerationConfigurati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ImageGenerationConfiguration $ImageGenerationConfiguration
+ * @property Shapes\ImageGenerationConfiguration|null $ImageGenerationConfiguration
  */
 class DescribeImageGenerationConfigurationResponse extends Response
 {

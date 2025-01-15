@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $actionGroupName
- * @property string $apiPath
- * @property 'LAMBDA'|'RETURN_CONTROL' $executionType
- * @property string $function
- * @property string $invocationId
- * @property list<Parameter> $parameters
- * @property RequestBody $requestBody
- * @property string $verb
+ * @property string|null $actionGroupName
+ * @property string|null $apiPath
+ * @property 'LAMBDA'|'RETURN_CONTROL'|null $executionType
+ * @property string|null $function
+ * @property string|null $invocationId
+ * @property list<Parameter>|null $parameters
+ * @property RequestBody|null $requestBody
+ * @property string|null $verb
  */
 class ActionGroupInvocationInput extends Shape
 {
     /**
      * @param array{
-     *     actionGroupName?: string,
-     *     apiPath?: string,
-     *     executionType?: 'LAMBDA'|'RETURN_CONTROL',
-     *     function?: string,
-     *     invocationId?: string,
-     *     parameters?: list<Parameter>,
-     *     requestBody?: RequestBody,
-     *     verb?: string
+     *     actionGroupName?: string|null,
+     *     apiPath?: string|null,
+     *     executionType?: 'LAMBDA'|'RETURN_CONTROL'|null,
+     *     function?: string|null,
+     *     invocationId?: string|null,
+     *     parameters?: list<Parameter>|null,
+     *     requestBody?: RequestBody|null,
+     *     verb?: string|null
      * } $args
      */
     public function __construct(array $args = [])

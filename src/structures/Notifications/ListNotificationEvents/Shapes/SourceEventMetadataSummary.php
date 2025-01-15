@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Notifications\ListNotificationEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $eventOriginRegion
+ * @property string|null $eventOriginRegion
  * @property string $source
  * @property string $eventType
  */
@@ -13,7 +13,7 @@ class SourceEventMetadataSummary extends Shape
 {
     /**
      * @param array{
-     *     eventOriginRegion?: string,
+     *     eventOriginRegion?: string|null,
      *     source: string,
      *     eventType: string
      * } $args

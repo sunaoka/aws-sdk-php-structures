@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Glue\GetCrawlerMetrics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CrawlerName
- * @property double $TimeLeftSeconds
- * @property bool $StillEstimating
- * @property double $LastRuntimeSeconds
- * @property double $MedianRuntimeSeconds
- * @property int<0, max> $TablesCreated
- * @property int<0, max> $TablesUpdated
- * @property int<0, max> $TablesDeleted
+ * @property string|null $CrawlerName
+ * @property double|null $TimeLeftSeconds
+ * @property bool|null $StillEstimating
+ * @property double|null $LastRuntimeSeconds
+ * @property double|null $MedianRuntimeSeconds
+ * @property int<0, max>|null $TablesCreated
+ * @property int<0, max>|null $TablesUpdated
+ * @property int<0, max>|null $TablesDeleted
  */
 class CrawlerMetrics extends Shape
 {
     /**
      * @param array{
-     *     CrawlerName?: string,
-     *     TimeLeftSeconds?: double,
-     *     StillEstimating?: bool,
-     *     LastRuntimeSeconds?: double,
-     *     MedianRuntimeSeconds?: double,
-     *     TablesCreated?: int<0, max>,
-     *     TablesUpdated?: int<0, max>,
-     *     TablesDeleted?: int<0, max>
+     *     CrawlerName?: string|null,
+     *     TimeLeftSeconds?: double|null,
+     *     StillEstimating?: bool|null,
+     *     LastRuntimeSeconds?: double|null,
+     *     MedianRuntimeSeconds?: double|null,
+     *     TablesCreated?: int<0, max>|null,
+     *     TablesUpdated?: int<0, max>|null,
+     *     TablesDeleted?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

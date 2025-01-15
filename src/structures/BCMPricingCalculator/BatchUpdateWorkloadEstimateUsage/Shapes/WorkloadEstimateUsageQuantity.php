@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchUpdateWorkloadEstimat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $unit
- * @property double $amount
+ * @property string|null $unit
+ * @property double|null $amount
  */
 class WorkloadEstimateUsageQuantity extends Shape
 {
     /**
      * @param array{
-     *     unit?: string,
-     *     amount?: double
+     *     unit?: string|null,
+     *     amount?: double|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\CancelSpotFleetRequests;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property list<string> $SpotFleetRequestIds
  * @property bool $TerminateInstances
  */
@@ -13,7 +13,7 @@ class CancelSpotFleetRequestsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     SpotFleetRequestIds: list<string>,
      *     TerminateInstances: bool
      * } $args

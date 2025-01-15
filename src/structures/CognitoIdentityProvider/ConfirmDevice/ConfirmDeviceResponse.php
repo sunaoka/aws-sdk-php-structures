@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\ConfirmDevice;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $UserConfirmationNecessary
+ * @property bool|null $UserConfirmationNecessary
  */
 class ConfirmDeviceResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Address
- * @property list<PortRange> $PortRanges
+ * @property list<string>|null $Address
+ * @property list<PortRange>|null $PortRanges
  */
 class NetworkPathComponentDetails extends Shape
 {
     /**
      * @param array{
-     *     Address?: list<string>,
-     *     PortRanges?: list<PortRange>
+     *     Address?: list<string>|null,
+     *     PortRanges?: list<PortRange>|null
      * } $args
      */
     public function __construct(array $args = [])

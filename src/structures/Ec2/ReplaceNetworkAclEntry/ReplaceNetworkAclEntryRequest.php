@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Ec2\ReplaceNetworkAclEntry;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $NetworkAclId
  * @property int $RuleNumber
  * @property string $Protocol
  * @property 'allow'|'deny' $RuleAction
  * @property bool $Egress
- * @property string $CidrBlock
- * @property string $Ipv6CidrBlock
- * @property Shapes\IcmpTypeCode $IcmpTypeCode
- * @property Shapes\PortRange $PortRange
+ * @property string|null $CidrBlock
+ * @property string|null $Ipv6CidrBlock
+ * @property Shapes\IcmpTypeCode|null $IcmpTypeCode
+ * @property Shapes\PortRange|null $PortRange
  */
 class ReplaceNetworkAclEntryRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     NetworkAclId: string,
      *     RuleNumber: int,
      *     Protocol: string,
      *     RuleAction: 'allow'|'deny',
      *     Egress: bool,
-     *     CidrBlock?: string,
-     *     Ipv6CidrBlock?: string,
-     *     IcmpTypeCode?: Shapes\IcmpTypeCode,
-     *     PortRange?: Shapes\PortRange
+     *     CidrBlock?: string|null,
+     *     Ipv6CidrBlock?: string|null,
+     *     IcmpTypeCode?: Shapes\IcmpTypeCode|null,
+     *     PortRange?: Shapes\PortRange|null
      * } $args
      */
     public function __construct(array $args)

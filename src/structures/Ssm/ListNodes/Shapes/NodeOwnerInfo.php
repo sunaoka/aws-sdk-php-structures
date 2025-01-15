@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ssm\ListNodes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $OrganizationalUnitId
- * @property string $OrganizationalUnitPath
+ * @property string|null $AccountId
+ * @property string|null $OrganizationalUnitId
+ * @property string|null $OrganizationalUnitPath
  */
 class NodeOwnerInfo extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     OrganizationalUnitId?: string,
-     *     OrganizationalUnitPath?: string
+     *     AccountId?: string|null,
+     *     OrganizationalUnitId?: string|null,
+     *     OrganizationalUnitPath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

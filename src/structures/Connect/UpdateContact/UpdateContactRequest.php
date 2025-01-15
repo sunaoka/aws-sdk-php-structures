@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $ContactId
- * @property string $Name
- * @property string $Description
- * @property array<string, Shapes\Reference> $References
- * @property array<string, Shapes\SegmentAttributeValue> $SegmentAttributes
- * @property Shapes\QueueInfoInput $QueueInfo
- * @property Shapes\UserInfo $UserInfo
- * @property Shapes\Endpoint $CustomerEndpoint
- * @property Shapes\Endpoint $SystemEndpoint
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property array<string, Shapes\Reference>|null $References
+ * @property array<string, Shapes\SegmentAttributeValue>|null $SegmentAttributes
+ * @property Shapes\QueueInfoInput|null $QueueInfo
+ * @property Shapes\UserInfo|null $UserInfo
+ * @property Shapes\Endpoint|null $CustomerEndpoint
+ * @property Shapes\Endpoint|null $SystemEndpoint
  */
 class UpdateContactRequest extends Request
 {
@@ -22,14 +22,14 @@ class UpdateContactRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     ContactId: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     References?: array<string, Shapes\Reference>,
-     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>,
-     *     QueueInfo?: Shapes\QueueInfoInput,
-     *     UserInfo?: Shapes\UserInfo,
-     *     CustomerEndpoint?: Shapes\Endpoint,
-     *     SystemEndpoint?: Shapes\Endpoint
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     References?: array<string, Shapes\Reference>|null,
+     *     SegmentAttributes?: array<string, Shapes\SegmentAttributeValue>|null,
+     *     QueueInfo?: Shapes\QueueInfoInput|null,
+     *     UserInfo?: Shapes\UserInfo|null,
+     *     CustomerEndpoint?: Shapes\Endpoint|null,
+     *     SystemEndpoint?: Shapes\Endpoint|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ProvisionedProductId
  * @property string $ServiceActionId
  * @property string $ExecuteToken
- * @property string $AcceptLanguage
- * @property array<string, list<string>> $Parameters
+ * @property string|null $AcceptLanguage
+ * @property array<string, list<string>>|null $Parameters
  */
 class ExecuteProvisionedProductServiceActionRequest extends Request
 {
@@ -18,8 +18,8 @@ class ExecuteProvisionedProductServiceActionRequest extends Request
      *     ProvisionedProductId: string,
      *     ServiceActionId: string,
      *     ExecuteToken: string,
-     *     AcceptLanguage?: string,
-     *     Parameters?: array<string, list<string>>
+     *     AcceptLanguage?: string|null,
+     *     Parameters?: array<string, list<string>>|null
      * } $args
      */
     public function __construct(array $args)

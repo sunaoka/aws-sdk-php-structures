@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\kendra\ListExperienceEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserName
- * @property string $GroupName
- * @property string $IdentifiedUserName
- * @property string $FirstName
- * @property string $LastName
+ * @property string|null $UserName
+ * @property string|null $GroupName
+ * @property string|null $IdentifiedUserName
+ * @property string|null $FirstName
+ * @property string|null $LastName
  */
 class EntityDisplayData extends Shape
 {
     /**
      * @param array{
-     *     UserName?: string,
-     *     GroupName?: string,
-     *     IdentifiedUserName?: string,
-     *     FirstName?: string,
-     *     LastName?: string
+     *     UserName?: string|null,
+     *     GroupName?: string|null,
+     *     IdentifiedUserName?: string|null,
+     *     FirstName?: string|null,
+     *     LastName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AccessPreviewSummary> $accessPreviews
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListAccessPreviewsResponse extends Response
 {

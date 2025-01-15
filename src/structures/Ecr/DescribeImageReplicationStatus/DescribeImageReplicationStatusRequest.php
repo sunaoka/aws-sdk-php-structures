@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $repositoryName
  * @property Shapes\ImageIdentifier $imageId
- * @property string $registryId
+ * @property string|null $registryId
  */
 class DescribeImageReplicationStatusRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeImageReplicationStatusRequest extends Request
      * @param array{
      *     repositoryName: string,
      *     imageId: Shapes\ImageIdentifier,
-     *     registryId?: string
+     *     registryId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\UpdateMetricSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property list<Filter> $FilterList
+ * @property string|null $Name
+ * @property list<Filter>|null $FilterList
  */
 class MetricSetDimensionFilter extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     FilterList?: list<Filter>
+     *     Name?: string|null,
+     *     FilterList?: list<Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

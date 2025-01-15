@@ -6,40 +6,40 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
- * @property string $imageRecipeArn
- * @property string $containerRecipeArn
+ * @property string|null $description
+ * @property string|null $imageRecipeArn
+ * @property string|null $containerRecipeArn
  * @property string $infrastructureConfigurationArn
- * @property string $distributionConfigurationArn
- * @property Shapes\ImageTestsConfiguration $imageTestsConfiguration
- * @property bool $enhancedImageMetadataEnabled
- * @property Shapes\Schedule $schedule
- * @property 'DISABLED'|'ENABLED' $status
- * @property array<string, string> $tags
+ * @property string|null $distributionConfigurationArn
+ * @property Shapes\ImageTestsConfiguration|null $imageTestsConfiguration
+ * @property bool|null $enhancedImageMetadataEnabled
+ * @property Shapes\Schedule|null $schedule
+ * @property 'DISABLED'|'ENABLED'|null $status
+ * @property array<string, string>|null $tags
  * @property string $clientToken
- * @property Shapes\ImageScanningConfiguration $imageScanningConfiguration
- * @property list<Shapes\WorkflowConfiguration> $workflows
- * @property string $executionRole
+ * @property Shapes\ImageScanningConfiguration|null $imageScanningConfiguration
+ * @property list<Shapes\WorkflowConfiguration>|null $workflows
+ * @property string|null $executionRole
  */
 class CreateImagePipelineRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     imageRecipeArn?: string,
-     *     containerRecipeArn?: string,
+     *     description?: string|null,
+     *     imageRecipeArn?: string|null,
+     *     containerRecipeArn?: string|null,
      *     infrastructureConfigurationArn: string,
-     *     distributionConfigurationArn?: string,
-     *     imageTestsConfiguration?: Shapes\ImageTestsConfiguration,
-     *     enhancedImageMetadataEnabled?: bool,
-     *     schedule?: Shapes\Schedule,
-     *     status?: 'DISABLED'|'ENABLED',
-     *     tags?: array<string, string>,
+     *     distributionConfigurationArn?: string|null,
+     *     imageTestsConfiguration?: Shapes\ImageTestsConfiguration|null,
+     *     enhancedImageMetadataEnabled?: bool|null,
+     *     schedule?: Shapes\Schedule|null,
+     *     status?: 'DISABLED'|'ENABLED'|null,
+     *     tags?: array<string, string>|null,
      *     clientToken: string,
-     *     imageScanningConfiguration?: Shapes\ImageScanningConfiguration,
-     *     workflows?: list<Shapes\WorkflowConfiguration>,
-     *     executionRole?: string
+     *     imageScanningConfiguration?: Shapes\ImageScanningConfiguration|null,
+     *     workflows?: list<Shapes\WorkflowConfiguration>|null,
+     *     executionRole?: string|null
      * } $args
      */
     public function __construct(array $args)

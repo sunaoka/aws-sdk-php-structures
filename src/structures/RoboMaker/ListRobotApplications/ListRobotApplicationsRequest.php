@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\RoboMaker\ListRobotApplications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $versionQualifier
- * @property string $nextToken
- * @property int $maxResults
- * @property list<Shapes\Filter> $filters
+ * @property string|null $versionQualifier
+ * @property string|null $nextToken
+ * @property int|null $maxResults
+ * @property list<Shapes\Filter>|null $filters
  */
 class ListRobotApplicationsRequest extends Request
 {
     /**
      * @param array{
-     *     versionQualifier?: string,
-     *     nextToken?: string,
-     *     maxResults?: int,
-     *     filters?: list<Shapes\Filter>
+     *     versionQualifier?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int|null,
+     *     filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

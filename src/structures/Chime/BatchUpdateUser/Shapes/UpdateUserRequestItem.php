@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $UserId
- * @property 'Basic'|'Plus'|'Pro'|'ProTrial' $LicenseType
- * @property 'PrivateUser'|'SharedDevice' $UserType
- * @property AlexaForBusinessMetadata $AlexaForBusinessMetadata
+ * @property 'Basic'|'Plus'|'Pro'|'ProTrial'|null $LicenseType
+ * @property 'PrivateUser'|'SharedDevice'|null $UserType
+ * @property AlexaForBusinessMetadata|null $AlexaForBusinessMetadata
  */
 class UpdateUserRequestItem extends Shape
 {
     /**
      * @param array{
      *     UserId: string,
-     *     LicenseType?: 'Basic'|'Plus'|'Pro'|'ProTrial',
-     *     UserType?: 'PrivateUser'|'SharedDevice',
-     *     AlexaForBusinessMetadata?: AlexaForBusinessMetadata
+     *     LicenseType?: 'Basic'|'Plus'|'Pro'|'ProTrial'|null,
+     *     UserType?: 'PrivateUser'|'SharedDevice'|null,
+     *     AlexaForBusinessMetadata?: AlexaForBusinessMetadata|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $Value
+ * @property string|null $Value
  */
 class DimensionFilter extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Value?: string
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args)

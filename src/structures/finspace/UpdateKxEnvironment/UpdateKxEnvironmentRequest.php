@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $environmentId
- * @property string $name
- * @property string $description
- * @property string $clientToken
+ * @property string|null $name
+ * @property string|null $description
+ * @property string|null $clientToken
  */
 class UpdateKxEnvironmentRequest extends Request
 {
     /**
      * @param array{
      *     environmentId: string,
-     *     name?: string,
-     *     description?: string,
-     *     clientToken?: string
+     *     name?: string|null,
+     *     description?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

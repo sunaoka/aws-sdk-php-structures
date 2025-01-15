@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateNetworkInsightsPath;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SourceIp
- * @property string $DestinationIp
+ * @property string|null $SourceIp
+ * @property string|null $DestinationIp
  * @property string $Source
- * @property string $Destination
+ * @property string|null $Destination
  * @property 'tcp'|'udp' $Protocol
- * @property int<0, 65535> $DestinationPort
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
+ * @property int<0, 65535>|null $DestinationPort
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
  * @property string $ClientToken
- * @property Shapes\PathRequestFilter $FilterAtSource
- * @property Shapes\PathRequestFilter $FilterAtDestination
+ * @property Shapes\PathRequestFilter|null $FilterAtSource
+ * @property Shapes\PathRequestFilter|null $FilterAtDestination
  */
 class CreateNetworkInsightsPathRequest extends Request
 {
     /**
      * @param array{
-     *     SourceIp?: string,
-     *     DestinationIp?: string,
+     *     SourceIp?: string|null,
+     *     DestinationIp?: string|null,
      *     Source: string,
-     *     Destination?: string,
+     *     Destination?: string|null,
      *     Protocol: 'tcp'|'udp',
-     *     DestinationPort?: int<0, 65535>,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool,
+     *     DestinationPort?: int<0, 65535>|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null,
      *     ClientToken: string,
-     *     FilterAtSource?: Shapes\PathRequestFilter,
-     *     FilterAtDestination?: Shapes\PathRequestFilter
+     *     FilterAtSource?: Shapes\PathRequestFilter|null,
+     *     FilterAtDestination?: Shapes\PathRequestFilter|null
      * } $args
      */
     public function __construct(array $args)

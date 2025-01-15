@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Connect\BatchGetAttachedFileMetadata\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ErrorCode
- * @property string $ErrorMessage
- * @property string $FileId
+ * @property string|null $ErrorCode
+ * @property string|null $ErrorMessage
+ * @property string|null $FileId
  */
 class AttachedFileError extends Shape
 {
     /**
      * @param array{
-     *     ErrorCode?: string,
-     *     ErrorMessage?: string,
-     *     FileId?: string
+     *     ErrorCode?: string|null,
+     *     ErrorMessage?: string|null,
+     *     FileId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

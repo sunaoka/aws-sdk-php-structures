@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Lambda\ListVersionsByFunction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'JSON'|'Text' $LogFormat
- * @property 'TRACE'|'DEBUG'|'INFO'|'WARN'|'ERROR'|'FATAL' $ApplicationLogLevel
- * @property 'DEBUG'|'INFO'|'WARN' $SystemLogLevel
- * @property string $LogGroup
+ * @property 'JSON'|'Text'|null $LogFormat
+ * @property 'TRACE'|'DEBUG'|'INFO'|'WARN'|'ERROR'|'FATAL'|null $ApplicationLogLevel
+ * @property 'DEBUG'|'INFO'|'WARN'|null $SystemLogLevel
+ * @property string|null $LogGroup
  */
 class LoggingConfig extends Shape
 {
     /**
      * @param array{
-     *     LogFormat?: 'JSON'|'Text',
-     *     ApplicationLogLevel?: 'TRACE'|'DEBUG'|'INFO'|'WARN'|'ERROR'|'FATAL',
-     *     SystemLogLevel?: 'DEBUG'|'INFO'|'WARN',
-     *     LogGroup?: string
+     *     LogFormat?: 'JSON'|'Text'|null,
+     *     ApplicationLogLevel?: 'TRACE'|'DEBUG'|'INFO'|'WARN'|'ERROR'|'FATAL'|null,
+     *     SystemLogLevel?: 'DEBUG'|'INFO'|'WARN'|null,
+     *     LogGroup?: string|null
      * } $args
      */
     public function __construct(array $args = [])

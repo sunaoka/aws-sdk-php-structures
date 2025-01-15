@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\LookoutforVision\DescribeModel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ModelVersion
- * @property string $ModelArn
- * @property \Aws\Api\DateTimeResult $CreationTimestamp
- * @property string $Description
- * @property 'TRAINING'|'TRAINED'|'TRAINING_FAILED'|'STARTING_HOSTING'|'HOSTED'|'HOSTING_FAILED'|'STOPPING_HOSTING'|'SYSTEM_UPDATING'|'DELETING' $Status
- * @property string $StatusMessage
- * @property ModelPerformance $Performance
- * @property OutputConfig $OutputConfig
- * @property OutputS3Object $EvaluationManifest
- * @property OutputS3Object $EvaluationResult
- * @property \Aws\Api\DateTimeResult $EvaluationEndTimestamp
- * @property string $KmsKeyId
- * @property int<1, max> $MinInferenceUnits
- * @property int<1, max> $MaxInferenceUnits
+ * @property string|null $ModelVersion
+ * @property string|null $ModelArn
+ * @property \Aws\Api\DateTimeResult|null $CreationTimestamp
+ * @property string|null $Description
+ * @property 'TRAINING'|'TRAINED'|'TRAINING_FAILED'|'STARTING_HOSTING'|'HOSTED'|'HOSTING_FAILED'|'STOPPING_HOSTING'|'SYSTEM_UPDATING'|'DELETING'|null $Status
+ * @property string|null $StatusMessage
+ * @property ModelPerformance|null $Performance
+ * @property OutputConfig|null $OutputConfig
+ * @property OutputS3Object|null $EvaluationManifest
+ * @property OutputS3Object|null $EvaluationResult
+ * @property \Aws\Api\DateTimeResult|null $EvaluationEndTimestamp
+ * @property string|null $KmsKeyId
+ * @property int<1, max>|null $MinInferenceUnits
+ * @property int<1, max>|null $MaxInferenceUnits
  */
 class ModelDescription extends Shape
 {
     /**
      * @param array{
-     *     ModelVersion?: string,
-     *     ModelArn?: string,
-     *     CreationTimestamp?: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     Status?: 'TRAINING'|'TRAINED'|'TRAINING_FAILED'|'STARTING_HOSTING'|'HOSTED'|'HOSTING_FAILED'|'STOPPING_HOSTING'|'SYSTEM_UPDATING'|'DELETING',
-     *     StatusMessage?: string,
-     *     Performance?: ModelPerformance,
-     *     OutputConfig?: OutputConfig,
-     *     EvaluationManifest?: OutputS3Object,
-     *     EvaluationResult?: OutputS3Object,
-     *     EvaluationEndTimestamp?: \Aws\Api\DateTimeResult,
-     *     KmsKeyId?: string,
-     *     MinInferenceUnits?: int<1, max>,
-     *     MaxInferenceUnits?: int<1, max>
+     *     ModelVersion?: string|null,
+     *     ModelArn?: string|null,
+     *     CreationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     Status?: 'TRAINING'|'TRAINED'|'TRAINING_FAILED'|'STARTING_HOSTING'|'HOSTED'|'HOSTING_FAILED'|'STOPPING_HOSTING'|'SYSTEM_UPDATING'|'DELETING'|null,
+     *     StatusMessage?: string|null,
+     *     Performance?: ModelPerformance|null,
+     *     OutputConfig?: OutputConfig|null,
+     *     EvaluationManifest?: OutputS3Object|null,
+     *     EvaluationResult?: OutputS3Object|null,
+     *     EvaluationEndTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     KmsKeyId?: string|null,
+     *     MinInferenceUnits?: int<1, max>|null,
+     *     MaxInferenceUnits?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

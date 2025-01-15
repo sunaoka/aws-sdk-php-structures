@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $MapName
  * @property string $FileName
- * @property string $Key
+ * @property string|null $Key
  */
 class GetMapSpritesRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetMapSpritesRequest extends Request
      * @param array{
      *     MapName: string,
      *     FileName: string,
-     *     Key?: string
+     *     Key?: string|null
      * } $args
      */
     public function __construct(array $args)

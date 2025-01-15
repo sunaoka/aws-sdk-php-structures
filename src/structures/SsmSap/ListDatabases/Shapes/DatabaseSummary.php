@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SsmSap\ListDatabases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationId
- * @property string $ComponentId
- * @property string $DatabaseId
- * @property 'SYSTEM'|'TENANT' $DatabaseType
- * @property string $Arn
- * @property array<string, string> $Tags
+ * @property string|null $ApplicationId
+ * @property string|null $ComponentId
+ * @property string|null $DatabaseId
+ * @property 'SYSTEM'|'TENANT'|null $DatabaseType
+ * @property string|null $Arn
+ * @property array<string, string>|null $Tags
  */
 class DatabaseSummary extends Shape
 {
     /**
      * @param array{
-     *     ApplicationId?: string,
-     *     ComponentId?: string,
-     *     DatabaseId?: string,
-     *     DatabaseType?: 'SYSTEM'|'TENANT',
-     *     Arn?: string,
-     *     Tags?: array<string, string>
+     *     ApplicationId?: string|null,
+     *     ComponentId?: string|null,
+     *     DatabaseId?: string|null,
+     *     DatabaseType?: 'SYSTEM'|'TENANT'|null,
+     *     Arn?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

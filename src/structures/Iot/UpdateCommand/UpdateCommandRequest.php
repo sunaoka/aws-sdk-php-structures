@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $commandId
- * @property string $displayName
- * @property string $description
- * @property bool $deprecated
+ * @property string|null $displayName
+ * @property string|null $description
+ * @property bool|null $deprecated
  */
 class UpdateCommandRequest extends Request
 {
     /**
      * @param array{
      *     commandId: string,
-     *     displayName?: string,
-     *     description?: string,
-     *     deprecated?: bool
+     *     displayName?: string|null,
+     *     description?: string|null,
+     *     deprecated?: bool|null
      * } $args
      */
     public function __construct(array $args)

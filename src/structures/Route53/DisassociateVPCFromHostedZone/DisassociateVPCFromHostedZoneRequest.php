@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $HostedZoneId
  * @property Shapes\VPC $VPC
- * @property string $Comment
+ * @property string|null $Comment
  */
 class DisassociateVPCFromHostedZoneRequest extends Request
 {
@@ -15,7 +15,7 @@ class DisassociateVPCFromHostedZoneRequest extends Request
      * @param array{
      *     HostedZoneId: string,
      *     VPC: Shapes\VPC,
-     *     Comment?: string
+     *     Comment?: string|null
      * } $args
      */
     public function __construct(array $args)

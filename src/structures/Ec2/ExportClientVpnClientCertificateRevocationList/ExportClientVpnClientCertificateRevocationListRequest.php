@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClientVpnEndpointId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class ExportClientVpnClientCertificateRevocationListRequest extends Request
 {
     /**
      * @param array{
      *     ClientVpnEndpointId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

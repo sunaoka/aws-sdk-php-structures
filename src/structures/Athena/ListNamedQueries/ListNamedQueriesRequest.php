@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Athena\ListNamedQueries;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<0, 50> $MaxResults
- * @property string $WorkGroup
+ * @property string|null $NextToken
+ * @property int<0, 50>|null $MaxResults
+ * @property string|null $WorkGroup
  */
 class ListNamedQueriesRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 50>,
-     *     WorkGroup?: string
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 50>|null,
+     *     WorkGroup?: string|null
      * } $args
      */
     public function __construct(array $args = [])

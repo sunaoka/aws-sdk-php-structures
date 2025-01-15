@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property list<string> $Inputs
- * @property list<list<string>> $PartitionKeys
+ * @property list<list<string>>|null $PartitionKeys
  * @property string $Table
  * @property string $Database
- * @property CatalogSchemaChangePolicy $SchemaChangePolicy
+ * @property CatalogSchemaChangePolicy|null $SchemaChangePolicy
  */
 class GovernedCatalogTarget extends Shape
 {
@@ -18,10 +18,10 @@ class GovernedCatalogTarget extends Shape
      * @param array{
      *     Name: string,
      *     Inputs: list<string>,
-     *     PartitionKeys?: list<list<string>>,
+     *     PartitionKeys?: list<list<string>>|null,
      *     Table: string,
      *     Database: string,
-     *     SchemaChangePolicy?: CatalogSchemaChangePolicy
+     *     SchemaChangePolicy?: CatalogSchemaChangePolicy|null
      * } $args
      */
     public function __construct(array $args)

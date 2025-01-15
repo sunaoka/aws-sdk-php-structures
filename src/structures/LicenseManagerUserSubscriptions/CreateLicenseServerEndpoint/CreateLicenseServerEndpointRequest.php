@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IdentityProviderArn
  * @property Shapes\LicenseServerSettings $LicenseServerSettings
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateLicenseServerEndpointRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateLicenseServerEndpointRequest extends Request
      * @param array{
      *     IdentityProviderArn: string,
      *     LicenseServerSettings: Shapes\LicenseServerSettings,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

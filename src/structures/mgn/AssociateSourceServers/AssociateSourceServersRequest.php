@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\mgn\AssociateSourceServers;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $accountID
+ * @property string|null $accountID
  * @property string $applicationID
  * @property list<string> $sourceServerIDs
  */
@@ -13,7 +13,7 @@ class AssociateSourceServersRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string,
+     *     accountID?: string|null,
      *     applicationID: string,
      *     sourceServerIDs: list<string>
      * } $args

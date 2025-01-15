@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetComplianceSummaryByConfigRule\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CappedCount
- * @property bool $CapExceeded
+ * @property int|null $CappedCount
+ * @property bool|null $CapExceeded
  */
 class ComplianceContributorCount extends Shape
 {
     /**
      * @param array{
-     *     CappedCount?: int,
-     *     CapExceeded?: bool
+     *     CappedCount?: int|null,
+     *     CapExceeded?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Personalize\CreateCampaign;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $campaignArn
+ * @property string|null $campaignArn
  */
 class CreateCampaignResponse extends Response
 {

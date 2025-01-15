@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCisScanResultsAggregatedByChecks
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\CisScanResultsAggregatedByChecksFilterCriteria $filterCriteria
- * @property int<1, 100> $maxResults
- * @property string $nextToken
+ * @property Shapes\CisScanResultsAggregatedByChecksFilterCriteria|null $filterCriteria
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
  * @property string $scanArn
- * @property 'CHECK_ID'|'TITLE'|'PLATFORM'|'FAILED_COUNTS'|'SECURITY_LEVEL' $sortBy
- * @property 'ASC'|'DESC' $sortOrder
+ * @property 'CHECK_ID'|'TITLE'|'PLATFORM'|'FAILED_COUNTS'|'SECURITY_LEVEL'|null $sortBy
+ * @property 'ASC'|'DESC'|null $sortOrder
  */
 class ListCisScanResultsAggregatedByChecksRequest extends Request
 {
     /**
      * @param array{
-     *     filterCriteria?: Shapes\CisScanResultsAggregatedByChecksFilterCriteria,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
+     *     filterCriteria?: Shapes\CisScanResultsAggregatedByChecksFilterCriteria|null,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
      *     scanArn: string,
-     *     sortBy?: 'CHECK_ID'|'TITLE'|'PLATFORM'|'FAILED_COUNTS'|'SECURITY_LEVEL',
-     *     sortOrder?: 'ASC'|'DESC'
+     *     sortBy?: 'CHECK_ID'|'TITLE'|'PLATFORM'|'FAILED_COUNTS'|'SECURITY_LEVEL'|null,
+     *     sortOrder?: 'ASC'|'DESC'|null
      * } $args
      */
     public function __construct(array $args)

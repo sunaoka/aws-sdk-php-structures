@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LicenseManager\GetLicenseManagerReportGenerator
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bucket
- * @property string $keyPrefix
+ * @property string|null $bucket
+ * @property string|null $keyPrefix
  */
 class S3Location extends Shape
 {
     /**
      * @param array{
-     *     bucket?: string,
-     *     keyPrefix?: string
+     *     bucket?: string|null,
+     *     keyPrefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

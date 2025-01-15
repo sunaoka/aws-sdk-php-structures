@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<RoutePedestrianNotice> $Notices
  * @property list<RoutePassThroughWaypoint> $PassThroughWaypoints
  * @property list<RoutePedestrianSpan> $Spans
- * @property RoutePedestrianSummary $Summary
+ * @property RoutePedestrianSummary|null $Summary
  * @property list<RoutePedestrianTravelStep> $TravelSteps
  */
 class RoutePedestrianLegDetails extends Shape
@@ -22,7 +22,7 @@ class RoutePedestrianLegDetails extends Shape
      *     Notices: list<RoutePedestrianNotice>,
      *     PassThroughWaypoints: list<RoutePassThroughWaypoint>,
      *     Spans: list<RoutePedestrianSpan>,
-     *     Summary?: RoutePedestrianSummary,
+     *     Summary?: RoutePedestrianSummary|null,
      *     TravelSteps: list<RoutePedestrianTravelStep>
      * } $args
      */

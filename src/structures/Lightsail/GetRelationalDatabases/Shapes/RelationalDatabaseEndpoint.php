@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetRelationalDatabases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $port
- * @property string $address
+ * @property int|null $port
+ * @property string|null $address
  */
 class RelationalDatabaseEndpoint extends Shape
 {
     /**
      * @param array{
-     *     port?: int,
-     *     address?: string
+     *     port?: int|null,
+     *     address?: string|null
      * } $args
      */
     public function __construct(array $args = [])

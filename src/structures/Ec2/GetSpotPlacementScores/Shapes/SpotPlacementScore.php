@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\GetSpotPlacementScores\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Region
- * @property string $AvailabilityZoneId
- * @property int $Score
+ * @property string|null $Region
+ * @property string|null $AvailabilityZoneId
+ * @property int|null $Score
  */
 class SpotPlacementScore extends Shape
 {
     /**
      * @param array{
-     *     Region?: string,
-     *     AvailabilityZoneId?: string,
-     *     Score?: int
+     *     Region?: string|null,
+     *     AvailabilityZoneId?: string|null,
+     *     Score?: int|null
      * } $args
      */
     public function __construct(array $args = [])

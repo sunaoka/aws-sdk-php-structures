@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $ArcAngle
- * @property 'SMALL'|'MEDIUM'|'LARGE' $ArcThickness
+ * @property double|null $ArcAngle
+ * @property 'SMALL'|'MEDIUM'|'LARGE'|null $ArcThickness
  */
 class ArcConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ArcAngle?: double,
-     *     ArcThickness?: 'SMALL'|'MEDIUM'|'LARGE'
+     *     ArcAngle?: double|null,
+     *     ArcThickness?: 'SMALL'|'MEDIUM'|'LARGE'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\CreateThingType\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $userPropertyKey
- * @property string $thingAttribute
- * @property string $connectionAttribute
+ * @property string|null $userPropertyKey
+ * @property string|null $thingAttribute
+ * @property string|null $connectionAttribute
  */
 class PropagatingAttribute extends Shape
 {
     /**
      * @param array{
-     *     userPropertyKey?: string,
-     *     thingAttribute?: string,
-     *     connectionAttribute?: string
+     *     userPropertyKey?: string|null,
+     *     thingAttribute?: string|null,
+     *     connectionAttribute?: string|null
      * } $args
      */
     public function __construct(array $args = [])

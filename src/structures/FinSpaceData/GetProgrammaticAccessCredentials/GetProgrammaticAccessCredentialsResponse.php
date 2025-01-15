@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\GetProgrammaticAccessCredentials;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Credentials $credentials
- * @property int<1, 60> $durationInMinutes
+ * @property Shapes\Credentials|null $credentials
+ * @property int<1, 60>|null $durationInMinutes
  */
 class GetProgrammaticAccessCredentialsResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeEndpointAccess\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VpcEndpointId
- * @property string $VpcId
- * @property list<NetworkInterface> $NetworkInterfaces
+ * @property string|null $VpcEndpointId
+ * @property string|null $VpcId
+ * @property list<NetworkInterface>|null $NetworkInterfaces
  */
 class VpcEndpoint extends Shape
 {
     /**
      * @param array{
-     *     VpcEndpointId?: string,
-     *     VpcId?: string,
-     *     NetworkInterfaces?: list<NetworkInterface>
+     *     VpcEndpointId?: string|null,
+     *     VpcId?: string|null,
+     *     NetworkInterfaces?: list<NetworkInterface>|null
      * } $args
      */
     public function __construct(array $args = [])

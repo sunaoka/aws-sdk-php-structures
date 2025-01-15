@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $OptionName
- * @property int $Port
- * @property string $OptionVersion
- * @property list<string> $DBSecurityGroupMemberships
- * @property list<string> $VpcSecurityGroupMemberships
- * @property list<OptionSetting> $OptionSettings
+ * @property int|null $Port
+ * @property string|null $OptionVersion
+ * @property list<string>|null $DBSecurityGroupMemberships
+ * @property list<string>|null $VpcSecurityGroupMemberships
+ * @property list<OptionSetting>|null $OptionSettings
  */
 class OptionConfiguration extends Shape
 {
     /**
      * @param array{
      *     OptionName: string,
-     *     Port?: int,
-     *     OptionVersion?: string,
-     *     DBSecurityGroupMemberships?: list<string>,
-     *     VpcSecurityGroupMemberships?: list<string>,
-     *     OptionSettings?: list<OptionSetting>
+     *     Port?: int|null,
+     *     OptionVersion?: string|null,
+     *     DBSecurityGroupMemberships?: list<string>|null,
+     *     VpcSecurityGroupMemberships?: list<string>|null,
+     *     OptionSettings?: list<OptionSetting>|null
      * } $args
      */
     public function __construct(array $args)

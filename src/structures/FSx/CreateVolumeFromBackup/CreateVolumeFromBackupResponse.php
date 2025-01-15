@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\FSx\CreateVolumeFromBackup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Volume $Volume
+ * @property Shapes\Volume|null $Volume
  */
 class CreateVolumeFromBackupResponse extends Response
 {

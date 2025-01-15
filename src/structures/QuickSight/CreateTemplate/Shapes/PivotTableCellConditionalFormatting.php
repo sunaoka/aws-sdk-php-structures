@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FieldId
- * @property TextConditionalFormat $TextFormat
- * @property PivotTableConditionalFormattingScope $Scope
- * @property list<PivotTableConditionalFormattingScope> $Scopes
+ * @property TextConditionalFormat|null $TextFormat
+ * @property PivotTableConditionalFormattingScope|null $Scope
+ * @property list<PivotTableConditionalFormattingScope>|null $Scopes
  */
 class PivotTableCellConditionalFormatting extends Shape
 {
     /**
      * @param array{
      *     FieldId: string,
-     *     TextFormat?: TextConditionalFormat,
-     *     Scope?: PivotTableConditionalFormattingScope,
-     *     Scopes?: list<PivotTableConditionalFormattingScope>
+     *     TextFormat?: TextConditionalFormat|null,
+     *     Scope?: PivotTableConditionalFormattingScope|null,
+     *     Scopes?: list<PivotTableConditionalFormattingScope>|null
      * } $args
      */
     public function __construct(array $args)

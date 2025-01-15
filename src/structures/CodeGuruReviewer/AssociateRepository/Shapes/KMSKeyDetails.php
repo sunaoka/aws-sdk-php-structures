@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeGuruReviewer\AssociateRepository\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KMSKeyId
- * @property 'AWS_OWNED_CMK'|'CUSTOMER_MANAGED_CMK' $EncryptionOption
+ * @property string|null $KMSKeyId
+ * @property 'AWS_OWNED_CMK'|'CUSTOMER_MANAGED_CMK'|null $EncryptionOption
  */
 class KMSKeyDetails extends Shape
 {
     /**
      * @param array{
-     *     KMSKeyId?: string,
-     *     EncryptionOption?: 'AWS_OWNED_CMK'|'CUSTOMER_MANAGED_CMK'
+     *     KMSKeyId?: string|null,
+     *     EncryptionOption?: 'AWS_OWNED_CMK'|'CUSTOMER_MANAGED_CMK'|null
      * } $args
      */
     public function __construct(array $args = [])

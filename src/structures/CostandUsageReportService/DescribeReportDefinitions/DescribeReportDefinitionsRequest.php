@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostandUsageReportService\DescribeReportDefinit
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<5, 5> $MaxResults
- * @property string $NextToken
+ * @property int<5, 5>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeReportDefinitionsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<5, 5>,
-     *     NextToken?: string
+     *     MaxResults?: int<5, 5>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

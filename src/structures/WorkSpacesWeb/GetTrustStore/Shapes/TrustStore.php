@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\GetTrustStore\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $associatedPortalArns
+ * @property list<string>|null $associatedPortalArns
  * @property string $trustStoreArn
  */
 class TrustStore extends Shape
 {
     /**
      * @param array{
-     *     associatedPortalArns?: list<string>,
+     *     associatedPortalArns?: list<string>|null,
      *     trustStoreArn: string
      * } $args
      */

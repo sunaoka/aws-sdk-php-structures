@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteNetworkInsightsPath;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $NetworkInsightsPathId
  */
 class DeleteNetworkInsightsPathRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     NetworkInsightsPathId: string
      * } $args
      */

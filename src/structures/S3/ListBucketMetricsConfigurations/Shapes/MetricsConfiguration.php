@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property MetricsFilter $Filter
+ * @property MetricsFilter|null $Filter
  */
 class MetricsConfiguration extends Shape
 {
     /**
      * @param array{
      *     Id: string,
-     *     Filter?: MetricsFilter
+     *     Filter?: MetricsFilter|null
      * } $args
      */
     public function __construct(array $args)

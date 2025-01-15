@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\ResponseStream $Body
- * @property string $ContentType
- * @property string $InvokedProductionVariant
- * @property string $CustomAttributes
+ * @property string|null $ContentType
+ * @property string|null $InvokedProductionVariant
+ * @property string|null $CustomAttributes
  */
 class InvokeEndpointWithResponseStreamResponse extends Response
 {

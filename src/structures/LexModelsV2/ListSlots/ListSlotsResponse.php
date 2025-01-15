@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListSlots;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $botId
- * @property string $botVersion
- * @property string $localeId
- * @property string $intentId
- * @property list<Shapes\SlotSummary> $slotSummaries
- * @property string $nextToken
+ * @property string|null $botId
+ * @property string|null $botVersion
+ * @property string|null $localeId
+ * @property string|null $intentId
+ * @property list<Shapes\SlotSummary>|null $slotSummaries
+ * @property string|null $nextToken
  */
 class ListSlotsResponse extends Response
 {

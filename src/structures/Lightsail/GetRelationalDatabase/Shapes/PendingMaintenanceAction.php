@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetRelationalDatabase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $action
- * @property string $description
- * @property \Aws\Api\DateTimeResult $currentApplyDate
+ * @property string|null $action
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $currentApplyDate
  */
 class PendingMaintenanceAction extends Shape
 {
     /**
      * @param array{
-     *     action?: string,
-     *     description?: string,
-     *     currentApplyDate?: \Aws\Api\DateTimeResult
+     *     action?: string|null,
+     *     description?: string|null,
+     *     currentApplyDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

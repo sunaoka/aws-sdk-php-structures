@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\PutMLConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Destination $destination
+ * @property Destination|null $destination
  * @property string $roleArn
  */
 class MLOutputConfiguration extends Shape
 {
     /**
      * @param array{
-     *     destination?: Destination,
+     *     destination?: Destination|null,
      *     roleArn: string
      * } $args
      */

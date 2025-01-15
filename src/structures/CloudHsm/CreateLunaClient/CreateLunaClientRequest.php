@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CloudHsm\CreateLunaClient;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Label
+ * @property string|null $Label
  * @property string $Certificate
  */
 class CreateLunaClientRequest extends Request
 {
     /**
      * @param array{
-     *     Label?: string,
+     *     Label?: string|null,
      *     Certificate: string
      * } $args
      */

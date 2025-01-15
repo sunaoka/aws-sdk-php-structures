@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DAX\UpdateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterGroupName
- * @property string $ParameterApplyStatus
- * @property list<string> $NodeIdsToReboot
+ * @property string|null $ParameterGroupName
+ * @property string|null $ParameterApplyStatus
+ * @property list<string>|null $NodeIdsToReboot
  */
 class ParameterGroupStatus extends Shape
 {
     /**
      * @param array{
-     *     ParameterGroupName?: string,
-     *     ParameterApplyStatus?: string,
-     *     NodeIdsToReboot?: list<string>
+     *     ParameterGroupName?: string|null,
+     *     ParameterApplyStatus?: string|null,
+     *     NodeIdsToReboot?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

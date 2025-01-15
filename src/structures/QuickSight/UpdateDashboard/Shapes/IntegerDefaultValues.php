@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DynamicDefaultValue $DynamicValue
- * @property list<int> $StaticValues
+ * @property DynamicDefaultValue|null $DynamicValue
+ * @property list<int>|null $StaticValues
  */
 class IntegerDefaultValues extends Shape
 {
     /**
      * @param array{
-     *     DynamicValue?: DynamicDefaultValue,
-     *     StaticValues?: list<int>
+     *     DynamicValue?: DynamicDefaultValue|null,
+     *     StaticValues?: list<int>|null
      * } $args
      */
     public function __construct(array $args = [])

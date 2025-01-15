@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\AuditManager\BatchAssociateAssessmentReportEvid
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $evidenceIds
- * @property list<Shapes\AssessmentReportEvidenceError> $errors
+ * @property list<string>|null $evidenceIds
+ * @property list<Shapes\AssessmentReportEvidenceError>|null $errors
  */
 class BatchAssociateAssessmentReportEvidenceResponse extends Response
 {

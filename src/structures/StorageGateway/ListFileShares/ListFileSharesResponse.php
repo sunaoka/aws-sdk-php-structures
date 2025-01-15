@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\StorageGateway\ListFileShares;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property string $NextMarker
- * @property list<Shapes\FileShareInfo> $FileShareInfoList
+ * @property string|null $Marker
+ * @property string|null $NextMarker
+ * @property list<Shapes\FileShareInfo>|null $FileShareInfoList
  */
 class ListFileSharesResponse extends Response
 {

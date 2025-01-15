@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $HTTPPort
  * @property int $HTTPSPort
  * @property 'http-only'|'match-viewer'|'https-only' $OriginProtocolPolicy
- * @property OriginSslProtocols $OriginSslProtocols
- * @property int $OriginReadTimeout
- * @property int $OriginKeepaliveTimeout
+ * @property OriginSslProtocols|null $OriginSslProtocols
+ * @property int|null $OriginReadTimeout
+ * @property int|null $OriginKeepaliveTimeout
  */
 class CustomOriginConfig extends Shape
 {
@@ -19,9 +19,9 @@ class CustomOriginConfig extends Shape
      *     HTTPPort: int,
      *     HTTPSPort: int,
      *     OriginProtocolPolicy: 'http-only'|'match-viewer'|'https-only',
-     *     OriginSslProtocols?: OriginSslProtocols,
-     *     OriginReadTimeout?: int,
-     *     OriginKeepaliveTimeout?: int
+     *     OriginSslProtocols?: OriginSslProtocols|null,
+     *     OriginReadTimeout?: int|null,
+     *     OriginKeepaliveTimeout?: int|null
      * } $args
      */
     public function __construct(array $args)

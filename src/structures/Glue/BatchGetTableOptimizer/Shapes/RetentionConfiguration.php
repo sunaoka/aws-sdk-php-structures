@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetTableOptimizer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IcebergRetentionConfiguration $icebergConfiguration
+ * @property IcebergRetentionConfiguration|null $icebergConfiguration
  */
 class RetentionConfiguration extends Shape
 {
     /**
-     * @param array{icebergConfiguration?: IcebergRetentionConfiguration} $args
+     * @param array{icebergConfiguration?: IcebergRetentionConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

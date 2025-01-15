@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AwsKmsKeyId
- * @property string $AwsKmsEncryptionContext
+ * @property string|null $AwsKmsEncryptionContext
  */
 class SseAwsKeyManagementParams extends Shape
 {
     /**
      * @param array{
      *     AwsKmsKeyId: string,
-     *     AwsKmsEncryptionContext?: string
+     *     AwsKmsEncryptionContext?: string|null
      * } $args
      */
     public function __construct(array $args)

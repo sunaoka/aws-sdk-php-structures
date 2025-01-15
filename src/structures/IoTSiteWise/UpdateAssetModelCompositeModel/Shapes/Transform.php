@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $expression
  * @property list<ExpressionVariable> $variables
- * @property TransformProcessingConfig $processingConfig
+ * @property TransformProcessingConfig|null $processingConfig
  */
 class Transform extends Shape
 {
@@ -15,7 +15,7 @@ class Transform extends Shape
      * @param array{
      *     expression: string,
      *     variables: list<ExpressionVariable>,
-     *     processingConfig?: TransformProcessingConfig
+     *     processingConfig?: TransformProcessingConfig|null
      * } $args
      */
     public function __construct(array $args)

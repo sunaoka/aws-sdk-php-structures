@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CREATING'|'PENDING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED' $state
- * @property MonitorErrorDetails $error
+ * @property MonitorErrorDetails|null $error
  */
 class PortalStatus extends Shape
 {
     /**
      * @param array{
      *     state: 'CREATING'|'PENDING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED',
-     *     error?: MonitorErrorDetails
+     *     error?: MonitorErrorDetails|null
      * } $args
      */
     public function __construct(array $args)

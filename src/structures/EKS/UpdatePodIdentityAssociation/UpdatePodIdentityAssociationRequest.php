@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $clusterName
  * @property string $associationId
- * @property string $roleArn
- * @property string $clientRequestToken
+ * @property string|null $roleArn
+ * @property string|null $clientRequestToken
  */
 class UpdatePodIdentityAssociationRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdatePodIdentityAssociationRequest extends Request
      * @param array{
      *     clusterName: string,
      *     associationId: string,
-     *     roleArn?: string,
-     *     clientRequestToken?: string
+     *     roleArn?: string|null,
+     *     clientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

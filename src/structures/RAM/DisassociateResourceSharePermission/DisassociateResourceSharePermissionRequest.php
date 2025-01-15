@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $resourceShareArn
  * @property string $permissionArn
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DisassociateResourceSharePermissionRequest extends Request
 {
@@ -15,7 +15,7 @@ class DisassociateResourceSharePermissionRequest extends Request
      * @param array{
      *     resourceShareArn: string,
      *     permissionArn: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

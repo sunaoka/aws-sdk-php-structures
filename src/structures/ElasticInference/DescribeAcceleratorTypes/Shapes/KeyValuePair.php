@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticInference\DescribeAcceleratorTypes\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $key
- * @property int $value
+ * @property string|null $key
+ * @property int|null $value
  */
 class KeyValuePair extends Shape
 {
     /**
      * @param array{
-     *     key?: string,
-     *     value?: int
+     *     key?: string|null,
+     *     value?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $model
- * @property list<SortProperty> $sort
- * @property Predicate $predicate
- * @property list<string> $identifiers
+ * @property list<SortProperty>|null $sort
+ * @property Predicate|null $predicate
+ * @property list<string>|null $identifiers
  */
 class ComponentDataConfiguration extends Shape
 {
     /**
      * @param array{
      *     model: string,
-     *     sort?: list<SortProperty>,
-     *     predicate?: Predicate,
-     *     identifiers?: list<string>
+     *     sort?: list<SortProperty>|null,
+     *     predicate?: Predicate|null,
+     *     identifiers?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

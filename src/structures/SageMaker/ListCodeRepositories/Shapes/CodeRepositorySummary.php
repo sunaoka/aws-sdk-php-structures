@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $CodeRepositoryArn
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property GitConfig $GitConfig
+ * @property GitConfig|null $GitConfig
  */
 class CodeRepositorySummary extends Shape
 {
@@ -19,7 +19,7 @@ class CodeRepositorySummary extends Shape
      *     CodeRepositoryArn: string,
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
-     *     GitConfig?: GitConfig
+     *     GitConfig?: GitConfig|null
      * } $args
      */
     public function __construct(array $args)

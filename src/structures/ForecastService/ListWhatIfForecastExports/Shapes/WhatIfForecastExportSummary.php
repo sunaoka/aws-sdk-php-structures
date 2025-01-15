@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ForecastService\ListWhatIfForecastExports\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WhatIfForecastExportArn
- * @property list<string> $WhatIfForecastArns
- * @property string $WhatIfForecastExportName
- * @property DataDestination $Destination
- * @property string $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
+ * @property string|null $WhatIfForecastExportArn
+ * @property list<string>|null $WhatIfForecastArns
+ * @property string|null $WhatIfForecastExportName
+ * @property DataDestination|null $Destination
+ * @property string|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
  */
 class WhatIfForecastExportSummary extends Shape
 {
     /**
      * @param array{
-     *     WhatIfForecastExportArn?: string,
-     *     WhatIfForecastArns?: list<string>,
-     *     WhatIfForecastExportName?: string,
-     *     Destination?: DataDestination,
-     *     Status?: string,
-     *     Message?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModificationTime?: \Aws\Api\DateTimeResult
+     *     WhatIfForecastExportArn?: string|null,
+     *     WhatIfForecastArns?: list<string>|null,
+     *     WhatIfForecastExportName?: string|null,
+     *     Destination?: DataDestination|null,
+     *     Status?: string|null,
+     *     Message?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModificationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

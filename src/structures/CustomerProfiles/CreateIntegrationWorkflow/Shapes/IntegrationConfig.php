@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\CreateIntegrationWorkflow\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AppflowIntegration $AppflowIntegration
+ * @property AppflowIntegration|null $AppflowIntegration
  */
 class IntegrationConfig extends Shape
 {
     /**
-     * @param array{AppflowIntegration?: AppflowIntegration} $args
+     * @param array{AppflowIntegration?: AppflowIntegration|null} $args
      */
     public function __construct(array $args = [])
     {

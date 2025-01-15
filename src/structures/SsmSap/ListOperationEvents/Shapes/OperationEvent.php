@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SsmSap\ListOperationEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property Resource $Resource
- * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED' $Status
- * @property string $StatusMessage
- * @property \Aws\Api\DateTimeResult $Timestamp
+ * @property string|null $Description
+ * @property Resource|null $Resource
+ * @property 'IN_PROGRESS'|'COMPLETED'|'FAILED'|null $Status
+ * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
  */
 class OperationEvent extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     Resource?: Resource,
-     *     Status?: 'IN_PROGRESS'|'COMPLETED'|'FAILED',
-     *     StatusMessage?: string,
-     *     Timestamp?: \Aws\Api\DateTimeResult
+     *     Description?: string|null,
+     *     Resource?: Resource|null,
+     *     Status?: 'IN_PROGRESS'|'COMPLETED'|'FAILED'|null,
+     *     StatusMessage?: string|null,
+     *     Timestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

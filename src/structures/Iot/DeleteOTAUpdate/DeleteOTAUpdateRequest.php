@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $otaUpdateId
- * @property bool $deleteStream
- * @property bool $forceDeleteAWSJob
+ * @property bool|null $deleteStream
+ * @property bool|null $forceDeleteAWSJob
  */
 class DeleteOTAUpdateRequest extends Request
 {
     /**
      * @param array{
      *     otaUpdateId: string,
-     *     deleteStream?: bool,
-     *     forceDeleteAWSJob?: bool
+     *     deleteStream?: bool|null,
+     *     forceDeleteAWSJob?: bool|null
      * } $args
      */
     public function __construct(array $args)

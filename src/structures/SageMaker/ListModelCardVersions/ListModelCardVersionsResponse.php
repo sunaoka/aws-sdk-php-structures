@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ModelCardVersionSummary> $ModelCardVersionSummaryList
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListModelCardVersionsResponse extends Response
 {

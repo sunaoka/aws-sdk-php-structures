@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Id
  * @property string $ReceiptHandle
- * @property int $VisibilityTimeout
+ * @property int|null $VisibilityTimeout
  */
 class ChangeMessageVisibilityBatchRequestEntry extends Shape
 {
@@ -15,7 +15,7 @@ class ChangeMessageVisibilityBatchRequestEntry extends Shape
      * @param array{
      *     Id: string,
      *     ReceiptHandle: string,
-     *     VisibilityTimeout?: int
+     *     VisibilityTimeout?: int|null
      * } $args
      */
     public function __construct(array $args)

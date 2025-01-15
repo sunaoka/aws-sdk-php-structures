@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelArn
- * @property 'DEFAULT'|'HIDDEN' $Type
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
- * @property string $ChimeBearer
+ * @property 'DEFAULT'|'HIDDEN'|null $Type
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
+ * @property string|null $ChimeBearer
  */
 class ListChannelMembershipsRequest extends Request
 {
     /**
      * @param array{
      *     ChannelArn: string,
-     *     Type?: 'DEFAULT'|'HIDDEN',
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string,
-     *     ChimeBearer?: string
+     *     Type?: 'DEFAULT'|'HIDDEN'|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null,
+     *     ChimeBearer?: string|null
      * } $args
      */
     public function __construct(array $args)

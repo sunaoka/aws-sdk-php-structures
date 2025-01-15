@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SecretId
- * @property string $ClientRequestToken
- * @property string $RotationLambdaARN
- * @property Shapes\RotationRulesType $RotationRules
- * @property bool $RotateImmediately
+ * @property string|null $ClientRequestToken
+ * @property string|null $RotationLambdaARN
+ * @property Shapes\RotationRulesType|null $RotationRules
+ * @property bool|null $RotateImmediately
  */
 class RotateSecretRequest extends Request
 {
     /**
      * @param array{
      *     SecretId: string,
-     *     ClientRequestToken?: string,
-     *     RotationLambdaARN?: string,
-     *     RotationRules?: Shapes\RotationRulesType,
-     *     RotateImmediately?: bool
+     *     ClientRequestToken?: string|null,
+     *     RotationLambdaARN?: string|null,
+     *     RotationRules?: Shapes\RotationRulesType|null,
+     *     RotateImmediately?: bool|null
      * } $args
      */
     public function __construct(array $args)

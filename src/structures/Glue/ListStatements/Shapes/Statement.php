@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Glue\ListStatements\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Id
- * @property string $Code
- * @property 'WAITING'|'RUNNING'|'AVAILABLE'|'CANCELLING'|'CANCELLED'|'ERROR' $State
- * @property StatementOutput $Output
- * @property double $Progress
- * @property int $StartedOn
- * @property int $CompletedOn
+ * @property int|null $Id
+ * @property string|null $Code
+ * @property 'WAITING'|'RUNNING'|'AVAILABLE'|'CANCELLING'|'CANCELLED'|'ERROR'|null $State
+ * @property StatementOutput|null $Output
+ * @property double|null $Progress
+ * @property int|null $StartedOn
+ * @property int|null $CompletedOn
  */
 class Statement extends Shape
 {
     /**
      * @param array{
-     *     Id?: int,
-     *     Code?: string,
-     *     State?: 'WAITING'|'RUNNING'|'AVAILABLE'|'CANCELLING'|'CANCELLED'|'ERROR',
-     *     Output?: StatementOutput,
-     *     Progress?: double,
-     *     StartedOn?: int,
-     *     CompletedOn?: int
+     *     Id?: int|null,
+     *     Code?: string|null,
+     *     State?: 'WAITING'|'RUNNING'|'AVAILABLE'|'CANCELLING'|'CANCELLED'|'ERROR'|null,
+     *     Output?: StatementOutput|null,
+     *     Progress?: double|null,
+     *     StartedOn?: int|null,
+     *     CompletedOn?: int|null
      * } $args
      */
     public function __construct(array $args = [])

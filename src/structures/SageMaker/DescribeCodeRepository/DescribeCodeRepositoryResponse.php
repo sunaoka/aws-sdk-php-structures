@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $CodeRepositoryArn
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property Shapes\GitConfig $GitConfig
+ * @property Shapes\GitConfig|null $GitConfig
  */
 class DescribeCodeRepositoryResponse extends Response
 {

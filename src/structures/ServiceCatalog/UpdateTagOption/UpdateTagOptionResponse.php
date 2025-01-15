@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\UpdateTagOption;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TagOptionDetail $TagOptionDetail
+ * @property Shapes\TagOptionDetail|null $TagOptionDetail
  */
 class UpdateTagOptionResponse extends Response
 {

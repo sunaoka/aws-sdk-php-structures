@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeSecurityProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $OrganizationResourceId
- * @property string $Arn
- * @property string $SecurityProfileName
- * @property string $Description
- * @property array<string, string> $Tags
- * @property array<string, string> $AllowedAccessControlTags
- * @property list<string> $TagRestrictedResources
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $LastModifiedRegion
- * @property list<string> $HierarchyRestrictedResources
- * @property string $AllowedAccessControlHierarchyGroupId
+ * @property string|null $Id
+ * @property string|null $OrganizationResourceId
+ * @property string|null $Arn
+ * @property string|null $SecurityProfileName
+ * @property string|null $Description
+ * @property array<string, string>|null $Tags
+ * @property array<string, string>|null $AllowedAccessControlTags
+ * @property list<string>|null $TagRestrictedResources
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
+ * @property list<string>|null $HierarchyRestrictedResources
+ * @property string|null $AllowedAccessControlHierarchyGroupId
  */
 class SecurityProfile extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     OrganizationResourceId?: string,
-     *     Arn?: string,
-     *     SecurityProfileName?: string,
-     *     Description?: string,
-     *     Tags?: array<string, string>,
-     *     AllowedAccessControlTags?: array<string, string>,
-     *     TagRestrictedResources?: list<string>,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedRegion?: string,
-     *     HierarchyRestrictedResources?: list<string>,
-     *     AllowedAccessControlHierarchyGroupId?: string
+     *     Id?: string|null,
+     *     OrganizationResourceId?: string|null,
+     *     Arn?: string|null,
+     *     SecurityProfileName?: string|null,
+     *     Description?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     AllowedAccessControlTags?: array<string, string>|null,
+     *     TagRestrictedResources?: list<string>|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null,
+     *     HierarchyRestrictedResources?: list<string>|null,
+     *     AllowedAccessControlHierarchyGroupId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

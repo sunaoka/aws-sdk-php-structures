@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IVS\GetStreamSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $code
- * @property \Aws\Api\DateTimeResult $eventTime
- * @property string $name
- * @property string $type
+ * @property string|null $code
+ * @property \Aws\Api\DateTimeResult|null $eventTime
+ * @property string|null $name
+ * @property string|null $type
  */
 class StreamEvent extends Shape
 {
     /**
      * @param array{
-     *     code?: string,
-     *     eventTime?: \Aws\Api\DateTimeResult,
-     *     name?: string,
-     *     type?: string
+     *     code?: string|null,
+     *     eventTime?: \Aws\Api\DateTimeResult|null,
+     *     name?: string|null,
+     *     type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

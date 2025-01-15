@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ASName
  * @property int $ASNumber
  * @property string $Country
- * @property string $Subdivision
- * @property string $Metro
+ * @property string|null $Subdivision
+ * @property string|null $Metro
  * @property string $City
  * @property double $Latitude
  * @property double $Longitude
@@ -21,8 +21,8 @@ class ClientLocation extends Shape
      *     ASName: string,
      *     ASNumber: int,
      *     Country: string,
-     *     Subdivision?: string,
-     *     Metro?: string,
+     *     Subdivision?: string|null,
+     *     Metro?: string|null,
      *     City: string,
      *     Latitude: double,
      *     Longitude: double

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SaaSProductEntityIdFilter $EntityId
- * @property SaaSProductTitleFilter $ProductTitle
- * @property SaaSProductVisibilityFilter $Visibility
- * @property SaaSProductLastModifiedDateFilter $LastModifiedDate
+ * @property SaaSProductEntityIdFilter|null $EntityId
+ * @property SaaSProductTitleFilter|null $ProductTitle
+ * @property SaaSProductVisibilityFilter|null $Visibility
+ * @property SaaSProductLastModifiedDateFilter|null $LastModifiedDate
  */
 class SaaSProductFilters extends Shape
 {
     /**
      * @param array{
-     *     EntityId?: SaaSProductEntityIdFilter,
-     *     ProductTitle?: SaaSProductTitleFilter,
-     *     Visibility?: SaaSProductVisibilityFilter,
-     *     LastModifiedDate?: SaaSProductLastModifiedDateFilter
+     *     EntityId?: SaaSProductEntityIdFilter|null,
+     *     ProductTitle?: SaaSProductTitleFilter|null,
+     *     Visibility?: SaaSProductVisibilityFilter|null,
+     *     LastModifiedDate?: SaaSProductLastModifiedDateFilter|null
      * } $args
      */
     public function __construct(array $args = [])

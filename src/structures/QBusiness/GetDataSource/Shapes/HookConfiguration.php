@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QBusiness\GetDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DocumentAttributeCondition $invocationCondition
- * @property string $lambdaArn
- * @property string $s3BucketName
- * @property string $roleArn
+ * @property DocumentAttributeCondition|null $invocationCondition
+ * @property string|null $lambdaArn
+ * @property string|null $s3BucketName
+ * @property string|null $roleArn
  */
 class HookConfiguration extends Shape
 {
     /**
      * @param array{
-     *     invocationCondition?: DocumentAttributeCondition,
-     *     lambdaArn?: string,
-     *     s3BucketName?: string,
-     *     roleArn?: string
+     *     invocationCondition?: DocumentAttributeCondition|null,
+     *     lambdaArn?: string|null,
+     *     s3BucketName?: string|null,
+     *     roleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Comprehend\DescribeEntityRecognizer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FlywheelStatsS3Prefix
+ * @property string|null $FlywheelStatsS3Prefix
  */
 class EntityRecognizerOutputDataConfig extends Shape
 {
     /**
-     * @param array{FlywheelStatsS3Prefix?: string} $args
+     * @param array{FlywheelStatsS3Prefix?: string|null} $args
      */
     public function __construct(array $args = [])
     {

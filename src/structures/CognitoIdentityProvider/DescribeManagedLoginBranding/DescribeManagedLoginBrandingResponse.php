@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\DescribeManagedLoginBra
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ManagedLoginBrandingType $ManagedLoginBranding
+ * @property Shapes\ManagedLoginBrandingType|null $ManagedLoginBranding
  */
 class DescribeManagedLoginBrandingResponse extends Response
 {

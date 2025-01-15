@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property \Aws\Api\DateTimeResult $associationTime
  * @property RelatedItemContent $content
- * @property UserUnion $performedBy
+ * @property UserUnion|null $performedBy
  * @property string $relatedItemId
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property 'Contact'|'Comment'|'File' $type
  */
 class SearchRelatedItemsResponseItem extends Shape
@@ -18,9 +18,9 @@ class SearchRelatedItemsResponseItem extends Shape
      * @param array{
      *     associationTime: \Aws\Api\DateTimeResult,
      *     content: RelatedItemContent,
-     *     performedBy?: UserUnion,
+     *     performedBy?: UserUnion|null,
      *     relatedItemId: string,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     type: 'Contact'|'Comment'|'File'
      * } $args
      */

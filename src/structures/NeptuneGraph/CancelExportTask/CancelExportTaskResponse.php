@@ -12,8 +12,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PARQUET'|'CSV' $format
  * @property string $destination
  * @property string $kmsKeyIdentifier
- * @property 'COLUMNAR' $parquetType
- * @property string $statusReason
+ * @property 'COLUMNAR'|null $parquetType
+ * @property string|null $statusReason
  */
 class CancelExportTaskResponse extends Response
 {

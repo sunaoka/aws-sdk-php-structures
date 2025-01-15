@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetReservationPurchaseRecommendati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PAYER'|'LINKED' $AccountScope
- * @property 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS' $LookbackPeriodInDays
- * @property 'ONE_YEAR'|'THREE_YEARS' $TermInYears
- * @property 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION' $PaymentOption
- * @property ServiceSpecification $ServiceSpecification
- * @property list<ReservationPurchaseRecommendationDetail> $RecommendationDetails
- * @property ReservationPurchaseRecommendationSummary $RecommendationSummary
+ * @property 'PAYER'|'LINKED'|null $AccountScope
+ * @property 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS'|null $LookbackPeriodInDays
+ * @property 'ONE_YEAR'|'THREE_YEARS'|null $TermInYears
+ * @property 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION'|null $PaymentOption
+ * @property ServiceSpecification|null $ServiceSpecification
+ * @property list<ReservationPurchaseRecommendationDetail>|null $RecommendationDetails
+ * @property ReservationPurchaseRecommendationSummary|null $RecommendationSummary
  */
 class ReservationPurchaseRecommendation extends Shape
 {
     /**
      * @param array{
-     *     AccountScope?: 'PAYER'|'LINKED',
-     *     LookbackPeriodInDays?: 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS',
-     *     TermInYears?: 'ONE_YEAR'|'THREE_YEARS',
-     *     PaymentOption?: 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION',
-     *     ServiceSpecification?: ServiceSpecification,
-     *     RecommendationDetails?: list<ReservationPurchaseRecommendationDetail>,
-     *     RecommendationSummary?: ReservationPurchaseRecommendationSummary
+     *     AccountScope?: 'PAYER'|'LINKED'|null,
+     *     LookbackPeriodInDays?: 'SEVEN_DAYS'|'THIRTY_DAYS'|'SIXTY_DAYS'|null,
+     *     TermInYears?: 'ONE_YEAR'|'THREE_YEARS'|null,
+     *     PaymentOption?: 'NO_UPFRONT'|'PARTIAL_UPFRONT'|'ALL_UPFRONT'|'LIGHT_UTILIZATION'|'MEDIUM_UTILIZATION'|'HEAVY_UTILIZATION'|null,
+     *     ServiceSpecification?: ServiceSpecification|null,
+     *     RecommendationDetails?: list<ReservationPurchaseRecommendationDetail>|null,
+     *     RecommendationSummary?: ReservationPurchaseRecommendationSummary|null
      * } $args
      */
     public function __construct(array $args = [])

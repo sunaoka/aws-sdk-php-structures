@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetWorkflows\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'RUNNING'|'CANCELLING'|'CANCELLED'|'SUCCEEDED'|'FAILED'|'ERROR' $State
- * @property \Aws\Api\DateTimeResult $StartedOn
- * @property \Aws\Api\DateTimeResult $CompletedOn
- * @property string $ErrorMessage
- * @property string $LogGroup
- * @property string $LogStream
+ * @property 'RUNNING'|'CANCELLING'|'CANCELLED'|'SUCCEEDED'|'FAILED'|'ERROR'|null $State
+ * @property \Aws\Api\DateTimeResult|null $StartedOn
+ * @property \Aws\Api\DateTimeResult|null $CompletedOn
+ * @property string|null $ErrorMessage
+ * @property string|null $LogGroup
+ * @property string|null $LogStream
  */
 class Crawl extends Shape
 {
     /**
      * @param array{
-     *     State?: 'RUNNING'|'CANCELLING'|'CANCELLED'|'SUCCEEDED'|'FAILED'|'ERROR',
-     *     StartedOn?: \Aws\Api\DateTimeResult,
-     *     CompletedOn?: \Aws\Api\DateTimeResult,
-     *     ErrorMessage?: string,
-     *     LogGroup?: string,
-     *     LogStream?: string
+     *     State?: 'RUNNING'|'CANCELLING'|'CANCELLED'|'SUCCEEDED'|'FAILED'|'ERROR'|null,
+     *     StartedOn?: \Aws\Api\DateTimeResult|null,
+     *     CompletedOn?: \Aws\Api\DateTimeResult|null,
+     *     ErrorMessage?: string|null,
+     *     LogGroup?: string|null,
+     *     LogStream?: string|null
      * } $args
      */
     public function __construct(array $args = [])

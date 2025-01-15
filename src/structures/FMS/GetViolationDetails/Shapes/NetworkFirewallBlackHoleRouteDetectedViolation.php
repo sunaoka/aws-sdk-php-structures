@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ViolationTarget
- * @property string $RouteTableId
- * @property string $VpcId
- * @property list<Route> $ViolatingRoutes
+ * @property string|null $ViolationTarget
+ * @property string|null $RouteTableId
+ * @property string|null $VpcId
+ * @property list<Route>|null $ViolatingRoutes
  */
 class NetworkFirewallBlackHoleRouteDetectedViolation extends Shape
 {
     /**
      * @param array{
-     *     ViolationTarget?: string,
-     *     RouteTableId?: string,
-     *     VpcId?: string,
-     *     ViolatingRoutes?: list<Route>
+     *     ViolationTarget?: string|null,
+     *     RouteTableId?: string|null,
+     *     VpcId?: string|null,
+     *     ViolatingRoutes?: list<Route>|null
      * } $args
      */
     public function __construct(array $args = [])

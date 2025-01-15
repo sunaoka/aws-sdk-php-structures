@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\DynamoDb\UpdateTableReplicaAutoScaling\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $DisableScaleIn
- * @property int $ScaleInCooldown
- * @property int $ScaleOutCooldown
+ * @property bool|null $DisableScaleIn
+ * @property int|null $ScaleInCooldown
+ * @property int|null $ScaleOutCooldown
  * @property double $TargetValue
  */
 class AutoScalingTargetTrackingScalingPolicyConfigurationDescription extends Shape
 {
     /**
      * @param array{
-     *     DisableScaleIn?: bool,
-     *     ScaleInCooldown?: int,
-     *     ScaleOutCooldown?: int,
+     *     DisableScaleIn?: bool|null,
+     *     ScaleInCooldown?: int|null,
+     *     ScaleOutCooldown?: int|null,
      *     TargetValue: double
      * } $args
      */

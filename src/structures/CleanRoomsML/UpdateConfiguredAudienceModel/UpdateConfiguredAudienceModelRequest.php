@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $configuredAudienceModelArn
- * @property Shapes\ConfiguredAudienceModelOutputConfig $outputConfig
- * @property string $audienceModelArn
- * @property list<'ALL'|'NONE'> $sharedAudienceMetrics
- * @property int<25, 500000> $minMatchingSeedSize
- * @property Shapes\AudienceSizeConfig $audienceSizeConfig
- * @property string $description
+ * @property Shapes\ConfiguredAudienceModelOutputConfig|null $outputConfig
+ * @property string|null $audienceModelArn
+ * @property list<'ALL'|'NONE'>|null $sharedAudienceMetrics
+ * @property int<25, 500000>|null $minMatchingSeedSize
+ * @property Shapes\AudienceSizeConfig|null $audienceSizeConfig
+ * @property string|null $description
  */
 class UpdateConfiguredAudienceModelRequest extends Request
 {
     /**
      * @param array{
      *     configuredAudienceModelArn: string,
-     *     outputConfig?: Shapes\ConfiguredAudienceModelOutputConfig,
-     *     audienceModelArn?: string,
-     *     sharedAudienceMetrics?: list<'ALL'|'NONE'>,
-     *     minMatchingSeedSize?: int<25, 500000>,
-     *     audienceSizeConfig?: Shapes\AudienceSizeConfig,
-     *     description?: string
+     *     outputConfig?: Shapes\ConfiguredAudienceModelOutputConfig|null,
+     *     audienceModelArn?: string|null,
+     *     sharedAudienceMetrics?: list<'ALL'|'NONE'>|null,
+     *     minMatchingSeedSize?: int<25, 500000>|null,
+     *     audienceSizeConfig?: Shapes\AudienceSizeConfig|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

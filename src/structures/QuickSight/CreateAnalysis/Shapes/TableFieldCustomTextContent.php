@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
+ * @property string|null $Value
  * @property FontConfiguration $FontConfiguration
  */
 class TableFieldCustomTextContent extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
+     *     Value?: string|null,
      *     FontConfiguration: FontConfiguration
      * } $args
      */

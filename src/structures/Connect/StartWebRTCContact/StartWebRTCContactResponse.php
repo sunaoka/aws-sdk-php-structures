@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Connect\StartWebRTCContact;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ConnectionData $ConnectionData
- * @property string $ContactId
- * @property string $ParticipantId
- * @property string $ParticipantToken
+ * @property Shapes\ConnectionData|null $ConnectionData
+ * @property string|null $ContactId
+ * @property string|null $ParticipantId
+ * @property string|null $ParticipantToken
  */
 class StartWebRTCContactResponse extends Response
 {

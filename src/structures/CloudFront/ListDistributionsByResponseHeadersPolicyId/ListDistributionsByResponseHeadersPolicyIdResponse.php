@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListDistributionsByResponseHeadersPo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DistributionIdList $DistributionIdList
+ * @property Shapes\DistributionIdList|null $DistributionIdList
  */
 class ListDistributionsByResponseHeadersPolicyIdResponse extends Response
 {

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DescribeActivities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Username
- * @property string $GivenName
- * @property string $Surname
- * @property string $EmailAddress
+ * @property string|null $Id
+ * @property string|null $Username
+ * @property string|null $GivenName
+ * @property string|null $Surname
+ * @property string|null $EmailAddress
  */
 class UserMetadata extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Username?: string,
-     *     GivenName?: string,
-     *     Surname?: string,
-     *     EmailAddress?: string
+     *     Id?: string|null,
+     *     Username?: string|null,
+     *     GivenName?: string|null,
+     *     Surname?: string|null,
+     *     EmailAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

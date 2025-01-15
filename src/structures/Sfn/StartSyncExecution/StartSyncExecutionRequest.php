@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $stateMachineArn
- * @property string $name
- * @property string $input
- * @property string $traceHeader
- * @property 'ALL_DATA'|'METADATA_ONLY' $includedData
+ * @property string|null $name
+ * @property string|null $input
+ * @property string|null $traceHeader
+ * @property 'ALL_DATA'|'METADATA_ONLY'|null $includedData
  */
 class StartSyncExecutionRequest extends Request
 {
     /**
      * @param array{
      *     stateMachineArn: string,
-     *     name?: string,
-     *     input?: string,
-     *     traceHeader?: string,
-     *     includedData?: 'ALL_DATA'|'METADATA_ONLY'
+     *     name?: string|null,
+     *     input?: string|null,
+     *     traceHeader?: string|null,
+     *     includedData?: 'ALL_DATA'|'METADATA_ONLY'|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SenderId
  * @property string $IsoCountryCode
- * @property bool $DeletionProtectionEnabled
+ * @property bool|null $DeletionProtectionEnabled
  */
 class UpdateSenderIdRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateSenderIdRequest extends Request
      * @param array{
      *     SenderId: string,
      *     IsoCountryCode: string,
-     *     DeletionProtectionEnabled?: bool
+     *     DeletionProtectionEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QLDBSession\SendCommand\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Page $Page
- * @property TimingInformation $TimingInformation
- * @property IOUsage $ConsumedIOs
+ * @property Page|null $Page
+ * @property TimingInformation|null $TimingInformation
+ * @property IOUsage|null $ConsumedIOs
  */
 class FetchPageResult extends Shape
 {
     /**
      * @param array{
-     *     Page?: Page,
-     *     TimingInformation?: TimingInformation,
-     *     ConsumedIOs?: IOUsage
+     *     Page?: Page|null,
+     *     TimingInformation?: TimingInformation|null,
+     *     ConsumedIOs?: IOUsage|null
      * } $args
      */
     public function __construct(array $args = [])

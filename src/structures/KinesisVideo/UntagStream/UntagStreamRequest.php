@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\UntagStream;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StreamARN
- * @property string $StreamName
+ * @property string|null $StreamARN
+ * @property string|null $StreamName
  * @property list<string> $TagKeyList
  */
 class UntagStreamRequest extends Request
 {
     /**
      * @param array{
-     *     StreamARN?: string,
-     *     StreamName?: string,
+     *     StreamARN?: string|null,
+     *     StreamName?: string|null,
      *     TagKeyList: list<string>
      * } $args
      */

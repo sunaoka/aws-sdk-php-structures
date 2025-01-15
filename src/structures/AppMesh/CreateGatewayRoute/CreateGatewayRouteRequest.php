@@ -5,24 +5,24 @@ namespace Sunaoka\Aws\Structures\AppMesh\CreateGatewayRoute;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $gatewayRouteName
  * @property string $meshName
- * @property string $meshOwner
+ * @property string|null $meshOwner
  * @property Shapes\GatewayRouteSpec $spec
- * @property list<Shapes\TagRef> $tags
+ * @property list<Shapes\TagRef>|null $tags
  * @property string $virtualGatewayName
  */
 class CreateGatewayRouteRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     gatewayRouteName: string,
      *     meshName: string,
-     *     meshOwner?: string,
+     *     meshOwner?: string|null,
      *     spec: Shapes\GatewayRouteSpec,
-     *     tags?: list<Shapes\TagRef>,
+     *     tags?: list<Shapes\TagRef>|null,
      *     virtualGatewayName: string
      * } $args
      */

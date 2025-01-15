@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListReceivedGrantsForOrganizatio
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DISTRIBUTED_GRANTS_ONLY'|'ALL_GRANTS_PERMITTED_BY_ISSUER' $ActivationOverrideBehavior
+ * @property 'DISTRIBUTED_GRANTS_ONLY'|'ALL_GRANTS_PERMITTED_BY_ISSUER'|null $ActivationOverrideBehavior
  */
 class Options extends Shape
 {
     /**
-     * @param array{ActivationOverrideBehavior?: 'DISTRIBUTED_GRANTS_ONLY'|'ALL_GRANTS_PERMITTED_BY_ISSUER'} $args
+     * @param array{ActivationOverrideBehavior?: 'DISTRIBUTED_GRANTS_ONLY'|'ALL_GRANTS_PERMITTED_BY_ISSUER'|null} $args
      */
     public function __construct(array $args = [])
     {

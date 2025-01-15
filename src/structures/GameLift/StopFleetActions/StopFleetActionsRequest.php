@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FleetId
  * @property list<'AUTO_SCALING'> $Actions
- * @property string $Location
+ * @property string|null $Location
  */
 class StopFleetActionsRequest extends Request
 {
@@ -15,7 +15,7 @@ class StopFleetActionsRequest extends Request
      * @param array{
      *     FleetId: string,
      *     Actions: list<'AUTO_SCALING'>,
-     *     Location?: string
+     *     Location?: string|null
      * } $args
      */
     public function __construct(array $args)

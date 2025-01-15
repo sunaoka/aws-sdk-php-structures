@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\DataZone\GetDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property string $dataAccessRole
- * @property RedshiftCredentialConfiguration $redshiftCredentialConfiguration
+ * @property string|null $accountId
+ * @property string|null $dataAccessRole
+ * @property RedshiftCredentialConfiguration|null $redshiftCredentialConfiguration
  * @property RedshiftStorage $redshiftStorage
- * @property string $region
+ * @property string|null $region
  * @property list<RelationalFilterConfiguration> $relationalFilterConfigurations
  */
 class RedshiftRunConfigurationOutput extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     dataAccessRole?: string,
-     *     redshiftCredentialConfiguration?: RedshiftCredentialConfiguration,
+     *     accountId?: string|null,
+     *     dataAccessRole?: string|null,
+     *     redshiftCredentialConfiguration?: RedshiftCredentialConfiguration|null,
      *     redshiftStorage: RedshiftStorage,
-     *     region?: string,
+     *     region?: string|null,
      *     relationalFilterConfigurations: list<RelationalFilterConfiguration>
      * } $args
      */

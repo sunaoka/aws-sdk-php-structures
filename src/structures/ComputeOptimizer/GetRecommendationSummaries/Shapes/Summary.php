@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRecommendationSummaries\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Underprovisioned'|'Overprovisioned'|'Optimized'|'NotOptimized' $name
- * @property double $value
- * @property list<ReasonCodeSummary> $reasonCodeSummaries
+ * @property 'Underprovisioned'|'Overprovisioned'|'Optimized'|'NotOptimized'|null $name
+ * @property double|null $value
+ * @property list<ReasonCodeSummary>|null $reasonCodeSummaries
  */
 class Summary extends Shape
 {
     /**
      * @param array{
-     *     name?: 'Underprovisioned'|'Overprovisioned'|'Optimized'|'NotOptimized',
-     *     value?: double,
-     *     reasonCodeSummaries?: list<ReasonCodeSummary>
+     *     name?: 'Underprovisioned'|'Overprovisioned'|'Optimized'|'NotOptimized'|null,
+     *     value?: double|null,
+     *     reasonCodeSummaries?: list<ReasonCodeSummary>|null
      * } $args
      */
     public function __construct(array $args = [])

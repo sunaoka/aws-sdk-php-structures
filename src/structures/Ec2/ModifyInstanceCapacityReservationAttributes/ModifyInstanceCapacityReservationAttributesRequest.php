@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property Shapes\CapacityReservationSpecification $CapacityReservationSpecification
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class ModifyInstanceCapacityReservationAttributesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ModifyInstanceCapacityReservationAttributesRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     CapacityReservationSpecification: Shapes\CapacityReservationSpecification,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

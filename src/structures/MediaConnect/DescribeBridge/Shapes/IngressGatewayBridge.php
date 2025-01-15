@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaConnect\DescribeBridge\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceId
+ * @property string|null $InstanceId
  * @property int $MaxBitrate
  * @property int $MaxOutputs
  */
@@ -13,7 +13,7 @@ class IngressGatewayBridge extends Shape
 {
     /**
      * @param array{
-     *     InstanceId?: string,
+     *     InstanceId?: string|null,
      *     MaxBitrate: int,
      *     MaxOutputs: int
      * } $args

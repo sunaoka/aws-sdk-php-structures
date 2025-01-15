@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DeleteComment;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $DocumentId
  * @property string $VersionId
  * @property string $CommentId
@@ -14,7 +14,7 @@ class DeleteCommentRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     DocumentId: string,
      *     VersionId: string,
      *     CommentId: string

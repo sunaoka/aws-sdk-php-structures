@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DeleteOutboundConnection\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $SkipUnavailable
+ * @property 'ENABLED'|'DISABLED'|null $SkipUnavailable
  */
 class CrossClusterSearchConnectionProperties extends Shape
 {
     /**
-     * @param array{SkipUnavailable?: 'ENABLED'|'DISABLED'} $args
+     * @param array{SkipUnavailable?: 'ENABLED'|'DISABLED'|null} $args
      */
     public function __construct(array $args = [])
     {

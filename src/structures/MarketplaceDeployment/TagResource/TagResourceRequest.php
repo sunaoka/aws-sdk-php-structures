@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $resourceArn
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class TagResourceRequest extends Request
 {
     /**
      * @param array{
      *     resourceArn: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

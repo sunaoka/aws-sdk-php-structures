@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\DirectoryServiceData\AddGroupMember;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $DirectoryId
  * @property string $GroupName
  * @property string $MemberName
- * @property string $MemberRealm
+ * @property string|null $MemberRealm
  */
 class AddGroupMemberRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     DirectoryId: string,
      *     GroupName: string,
      *     MemberName: string,
-     *     MemberRealm?: string
+     *     MemberRealm?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $testSetId
  * @property Shapes\TestExecutionTarget $target
  * @property 'Streaming'|'NonStreaming' $apiMode
- * @property 'Text'|'Audio' $testExecutionModality
+ * @property 'Text'|'Audio'|null $testExecutionModality
  */
 class StartTestExecutionRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartTestExecutionRequest extends Request
      *     testSetId: string,
      *     target: Shapes\TestExecutionTarget,
      *     apiMode: 'Streaming'|'NonStreaming',
-     *     testExecutionModality?: 'Text'|'Audio'
+     *     testExecutionModality?: 'Text'|'Audio'|null
      * } $args
      */
     public function __construct(array $args)

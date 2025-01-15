@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsEfsAccessPointRootDirectoryCreationInfoDetails $CreationInfo
- * @property string $Path
+ * @property AwsEfsAccessPointRootDirectoryCreationInfoDetails|null $CreationInfo
+ * @property string|null $Path
  */
 class AwsEfsAccessPointRootDirectoryDetails extends Shape
 {
     /**
      * @param array{
-     *     CreationInfo?: AwsEfsAccessPointRootDirectoryCreationInfoDetails,
-     *     Path?: string
+     *     CreationInfo?: AwsEfsAccessPointRootDirectoryCreationInfoDetails|null,
+     *     Path?: string|null
      * } $args
      */
     public function __construct(array $args = [])

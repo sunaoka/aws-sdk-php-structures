@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $channelName
- * @property bool $includeStatistics
+ * @property bool|null $includeStatistics
  */
 class DescribeChannelRequest extends Request
 {
     /**
      * @param array{
      *     channelName: string,
-     *     includeStatistics?: bool
+     *     includeStatistics?: bool|null
      * } $args
      */
     public function __construct(array $args)

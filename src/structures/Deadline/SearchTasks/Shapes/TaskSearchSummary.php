@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Deadline\SearchTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $taskId
- * @property string $stepId
- * @property string $jobId
- * @property string $queueId
- * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE' $runStatus
- * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING' $targetRunStatus
- * @property array<string, TaskParameterValue> $parameters
- * @property int<0, 2147483647> $failureRetryCount
- * @property \Aws\Api\DateTimeResult $startedAt
- * @property \Aws\Api\DateTimeResult $endedAt
+ * @property string|null $taskId
+ * @property string|null $stepId
+ * @property string|null $jobId
+ * @property string|null $queueId
+ * @property 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE'|null $runStatus
+ * @property 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null $targetRunStatus
+ * @property array<string, TaskParameterValue>|null $parameters
+ * @property int<0, 2147483647>|null $failureRetryCount
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $endedAt
  */
 class TaskSearchSummary extends Shape
 {
     /**
      * @param array{
-     *     taskId?: string,
-     *     stepId?: string,
-     *     jobId?: string,
-     *     queueId?: string,
-     *     runStatus?: 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE',
-     *     targetRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING',
-     *     parameters?: array<string, TaskParameterValue>,
-     *     failureRetryCount?: int<0, 2147483647>,
-     *     startedAt?: \Aws\Api\DateTimeResult,
-     *     endedAt?: \Aws\Api\DateTimeResult
+     *     taskId?: string|null,
+     *     stepId?: string|null,
+     *     jobId?: string|null,
+     *     queueId?: string|null,
+     *     runStatus?: 'PENDING'|'READY'|'ASSIGNED'|'STARTING'|'SCHEDULED'|'INTERRUPTING'|'RUNNING'|'SUSPENDED'|'CANCELED'|'FAILED'|'SUCCEEDED'|'NOT_COMPATIBLE'|null,
+     *     targetRunStatus?: 'READY'|'FAILED'|'SUCCEEDED'|'CANCELED'|'SUSPENDED'|'PENDING'|null,
+     *     parameters?: array<string, TaskParameterValue>|null,
+     *     failureRetryCount?: int<0, 2147483647>|null,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
+     *     endedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

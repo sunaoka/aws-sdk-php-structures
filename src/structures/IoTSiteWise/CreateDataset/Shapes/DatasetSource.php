@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'KENDRA' $sourceType
  * @property 'KNOWLEDGE_BASE' $sourceFormat
- * @property SourceDetail $sourceDetail
+ * @property SourceDetail|null $sourceDetail
  */
 class DatasetSource extends Shape
 {
@@ -15,7 +15,7 @@ class DatasetSource extends Shape
      * @param array{
      *     sourceType: 'KENDRA',
      *     sourceFormat: 'KNOWLEDGE_BASE',
-     *     sourceDetail?: SourceDetail
+     *     sourceDetail?: SourceDetail|null
      * } $args
      */
     public function __construct(array $args)

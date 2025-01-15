@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\CreateAccelerator\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $Timestamp
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
  */
 class AcceleratorEvent extends Shape
 {
     /**
      * @param array{
-     *     Message?: string,
-     *     Timestamp?: \Aws\Api\DateTimeResult
+     *     Message?: string|null,
+     *     Timestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

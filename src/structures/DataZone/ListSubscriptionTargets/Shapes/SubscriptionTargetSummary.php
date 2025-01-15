@@ -12,14 +12,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $domainId
  * @property string $environmentId
  * @property string $id
- * @property string $manageAccessRole
+ * @property string|null $manageAccessRole
  * @property string $name
  * @property string $projectId
  * @property string $provider
  * @property list<SubscriptionTargetForm> $subscriptionTargetConfig
  * @property string $type
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  */
 class SubscriptionTargetSummary extends Shape
 {
@@ -32,14 +32,14 @@ class SubscriptionTargetSummary extends Shape
      *     domainId: string,
      *     environmentId: string,
      *     id: string,
-     *     manageAccessRole?: string,
+     *     manageAccessRole?: string|null,
      *     name: string,
      *     projectId: string,
      *     provider: string,
      *     subscriptionTargetConfig: list<SubscriptionTargetForm>,
      *     type: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null
      * } $args
      */
     public function __construct(array $args)

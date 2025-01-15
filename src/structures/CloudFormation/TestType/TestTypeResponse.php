@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudFormation\TestType;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TypeVersionArn
+ * @property string|null $TypeVersionArn
  */
 class TestTypeResponse extends Response
 {

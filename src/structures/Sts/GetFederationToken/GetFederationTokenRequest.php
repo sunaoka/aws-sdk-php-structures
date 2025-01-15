@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Policy
- * @property list<Shapes\PolicyDescriptorType> $PolicyArns
- * @property int<900, 129600> $DurationSeconds
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $Policy
+ * @property list<Shapes\PolicyDescriptorType>|null $PolicyArns
+ * @property int<900, 129600>|null $DurationSeconds
+ * @property list<Shapes\Tag>|null $Tags
  */
 class GetFederationTokenRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Policy?: string,
-     *     PolicyArns?: list<Shapes\PolicyDescriptorType>,
-     *     DurationSeconds?: int<900, 129600>,
-     *     Tags?: list<Shapes\Tag>
+     *     Policy?: string|null,
+     *     PolicyArns?: list<Shapes\PolicyDescriptorType>|null,
+     *     DurationSeconds?: int<900, 129600>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

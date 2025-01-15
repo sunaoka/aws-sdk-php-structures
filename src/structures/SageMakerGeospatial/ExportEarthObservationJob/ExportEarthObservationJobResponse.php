@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $Arn
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property string $ExecutionRoleArn
- * @property bool $ExportSourceImages
+ * @property bool|null $ExportSourceImages
  * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED' $ExportStatus
  * @property Shapes\OutputConfigInput $OutputConfig
  */

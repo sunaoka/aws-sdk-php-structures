@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AuditEvent> $auditEvents
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class GetCaseAuditEventsResponse extends Response
 {

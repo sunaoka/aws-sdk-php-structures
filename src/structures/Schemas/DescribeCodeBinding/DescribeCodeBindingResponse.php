@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Schemas\DescribeCodeBinding;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $LastModified
- * @property string $SchemaVersion
- * @property 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'CREATE_FAILED' $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $LastModified
+ * @property string|null $SchemaVersion
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_COMPLETE'|'CREATE_FAILED'|null $Status
  */
 class DescribeCodeBindingResponse extends Response
 {

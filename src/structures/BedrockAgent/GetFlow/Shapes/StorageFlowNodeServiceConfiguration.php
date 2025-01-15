@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StorageFlowNodeS3Configuration $s3
+ * @property StorageFlowNodeS3Configuration|null $s3
  */
 class StorageFlowNodeServiceConfiguration extends Shape
 {
     /**
-     * @param array{s3?: StorageFlowNodeS3Configuration} $args
+     * @param array{s3?: StorageFlowNodeS3Configuration|null} $args
      */
     public function __construct(array $args = [])
     {

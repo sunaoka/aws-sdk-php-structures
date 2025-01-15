@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Comprehend\ListFlywheelIterationHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FlywheelArn
- * @property string $FlywheelIterationId
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property 'TRAINING'|'EVALUATING'|'COMPLETED'|'FAILED'|'STOP_REQUESTED'|'STOPPED' $Status
- * @property string $Message
- * @property string $EvaluatedModelArn
- * @property FlywheelModelEvaluationMetrics $EvaluatedModelMetrics
- * @property string $TrainedModelArn
- * @property FlywheelModelEvaluationMetrics $TrainedModelMetrics
- * @property string $EvaluationManifestS3Prefix
+ * @property string|null $FlywheelArn
+ * @property string|null $FlywheelIterationId
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property 'TRAINING'|'EVALUATING'|'COMPLETED'|'FAILED'|'STOP_REQUESTED'|'STOPPED'|null $Status
+ * @property string|null $Message
+ * @property string|null $EvaluatedModelArn
+ * @property FlywheelModelEvaluationMetrics|null $EvaluatedModelMetrics
+ * @property string|null $TrainedModelArn
+ * @property FlywheelModelEvaluationMetrics|null $TrainedModelMetrics
+ * @property string|null $EvaluationManifestS3Prefix
  */
 class FlywheelIterationProperties extends Shape
 {
     /**
      * @param array{
-     *     FlywheelArn?: string,
-     *     FlywheelIterationId?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Status?: 'TRAINING'|'EVALUATING'|'COMPLETED'|'FAILED'|'STOP_REQUESTED'|'STOPPED',
-     *     Message?: string,
-     *     EvaluatedModelArn?: string,
-     *     EvaluatedModelMetrics?: FlywheelModelEvaluationMetrics,
-     *     TrainedModelArn?: string,
-     *     TrainedModelMetrics?: FlywheelModelEvaluationMetrics,
-     *     EvaluationManifestS3Prefix?: string
+     *     FlywheelArn?: string|null,
+     *     FlywheelIterationId?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'TRAINING'|'EVALUATING'|'COMPLETED'|'FAILED'|'STOP_REQUESTED'|'STOPPED'|null,
+     *     Message?: string|null,
+     *     EvaluatedModelArn?: string|null,
+     *     EvaluatedModelMetrics?: FlywheelModelEvaluationMetrics|null,
+     *     TrainedModelArn?: string|null,
+     *     TrainedModelMetrics?: FlywheelModelEvaluationMetrics|null,
+     *     EvaluationManifestS3Prefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

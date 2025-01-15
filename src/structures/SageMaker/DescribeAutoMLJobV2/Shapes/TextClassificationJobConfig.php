@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeAutoMLJobV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AutoMLJobCompletionCriteria $CompletionCriteria
+ * @property AutoMLJobCompletionCriteria|null $CompletionCriteria
  * @property string $ContentColumn
  * @property string $TargetLabelColumn
  */
@@ -13,7 +13,7 @@ class TextClassificationJobConfig extends Shape
 {
     /**
      * @param array{
-     *     CompletionCriteria?: AutoMLJobCompletionCriteria,
+     *     CompletionCriteria?: AutoMLJobCompletionCriteria|null,
      *     ContentColumn: string,
      *     TargetLabelColumn: string
      * } $args

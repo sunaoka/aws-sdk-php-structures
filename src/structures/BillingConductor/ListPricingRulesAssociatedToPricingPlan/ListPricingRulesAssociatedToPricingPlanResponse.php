@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListPricingRulesAssociatedToPr
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $BillingPeriod
- * @property string $PricingPlanArn
- * @property list<string> $PricingRuleArns
- * @property string $NextToken
+ * @property string|null $BillingPeriod
+ * @property string|null $PricingPlanArn
+ * @property list<string>|null $PricingRuleArns
+ * @property string|null $NextToken
  */
 class ListPricingRulesAssociatedToPricingPlanResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeEngineDefaultParameters\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CacheParameterGroupFamily
- * @property string $Marker
- * @property list<Parameter> $Parameters
- * @property list<CacheNodeTypeSpecificParameter> $CacheNodeTypeSpecificParameters
+ * @property string|null $CacheParameterGroupFamily
+ * @property string|null $Marker
+ * @property list<Parameter>|null $Parameters
+ * @property list<CacheNodeTypeSpecificParameter>|null $CacheNodeTypeSpecificParameters
  */
 class EngineDefaults extends Shape
 {
     /**
      * @param array{
-     *     CacheParameterGroupFamily?: string,
-     *     Marker?: string,
-     *     Parameters?: list<Parameter>,
-     *     CacheNodeTypeSpecificParameters?: list<CacheNodeTypeSpecificParameter>
+     *     CacheParameterGroupFamily?: string|null,
+     *     Marker?: string|null,
+     *     Parameters?: list<Parameter>|null,
+     *     CacheNodeTypeSpecificParameters?: list<CacheNodeTypeSpecificParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

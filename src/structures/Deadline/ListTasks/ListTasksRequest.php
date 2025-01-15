@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $queueId
  * @property string $jobId
  * @property string $stepId
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListTasksRequest extends Request
 {
@@ -20,8 +20,8 @@ class ListTasksRequest extends Request
      *     queueId: string,
      *     jobId: string,
      *     stepId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

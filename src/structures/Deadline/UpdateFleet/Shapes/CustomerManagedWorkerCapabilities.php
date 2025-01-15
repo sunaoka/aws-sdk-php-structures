@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property VCpuCountRange $vCpuCount
  * @property MemoryMiBRange $memoryMiB
- * @property list<'gpu'> $acceleratorTypes
- * @property AcceleratorCountRange $acceleratorCount
- * @property AcceleratorTotalMemoryMiBRange $acceleratorTotalMemoryMiB
+ * @property list<'gpu'>|null $acceleratorTypes
+ * @property AcceleratorCountRange|null $acceleratorCount
+ * @property AcceleratorTotalMemoryMiBRange|null $acceleratorTotalMemoryMiB
  * @property 'WINDOWS'|'LINUX'|'MACOS' $osFamily
  * @property 'x86_64'|'arm64' $cpuArchitectureType
- * @property list<FleetAmountCapability> $customAmounts
- * @property list<FleetAttributeCapability> $customAttributes
+ * @property list<FleetAmountCapability>|null $customAmounts
+ * @property list<FleetAttributeCapability>|null $customAttributes
  */
 class CustomerManagedWorkerCapabilities extends Shape
 {
@@ -21,13 +21,13 @@ class CustomerManagedWorkerCapabilities extends Shape
      * @param array{
      *     vCpuCount: VCpuCountRange,
      *     memoryMiB: MemoryMiBRange,
-     *     acceleratorTypes?: list<'gpu'>,
-     *     acceleratorCount?: AcceleratorCountRange,
-     *     acceleratorTotalMemoryMiB?: AcceleratorTotalMemoryMiBRange,
+     *     acceleratorTypes?: list<'gpu'>|null,
+     *     acceleratorCount?: AcceleratorCountRange|null,
+     *     acceleratorTotalMemoryMiB?: AcceleratorTotalMemoryMiBRange|null,
      *     osFamily: 'WINDOWS'|'LINUX'|'MACOS',
      *     cpuArchitectureType: 'x86_64'|'arm64',
-     *     customAmounts?: list<FleetAmountCapability>,
-     *     customAttributes?: list<FleetAttributeCapability>
+     *     customAmounts?: list<FleetAmountCapability>|null,
+     *     customAttributes?: list<FleetAttributeCapability>|null
      * } $args
      */
     public function __construct(array $args)

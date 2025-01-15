@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\Route53\GetDNSSEC\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $KmsArn
- * @property int $Flag
- * @property string $SigningAlgorithmMnemonic
- * @property int $SigningAlgorithmType
- * @property string $DigestAlgorithmMnemonic
- * @property int $DigestAlgorithmType
- * @property int<0, 65536> $KeyTag
- * @property string $DigestValue
- * @property string $PublicKey
- * @property string $DSRecord
- * @property string $DNSKEYRecord
- * @property string $Status
- * @property string $StatusMessage
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
+ * @property string|null $Name
+ * @property string|null $KmsArn
+ * @property int|null $Flag
+ * @property string|null $SigningAlgorithmMnemonic
+ * @property int|null $SigningAlgorithmType
+ * @property string|null $DigestAlgorithmMnemonic
+ * @property int|null $DigestAlgorithmType
+ * @property int<0, 65536>|null $KeyTag
+ * @property string|null $DigestValue
+ * @property string|null $PublicKey
+ * @property string|null $DSRecord
+ * @property string|null $DNSKEYRecord
+ * @property string|null $Status
+ * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
  */
 class KeySigningKey extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     KmsArn?: string,
-     *     Flag?: int,
-     *     SigningAlgorithmMnemonic?: string,
-     *     SigningAlgorithmType?: int,
-     *     DigestAlgorithmMnemonic?: string,
-     *     DigestAlgorithmType?: int,
-     *     KeyTag?: int<0, 65536>,
-     *     DigestValue?: string,
-     *     PublicKey?: string,
-     *     DSRecord?: string,
-     *     DNSKEYRecord?: string,
-     *     Status?: string,
-     *     StatusMessage?: string,
-     *     CreatedDate?: \Aws\Api\DateTimeResult,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult
+     *     Name?: string|null,
+     *     KmsArn?: string|null,
+     *     Flag?: int|null,
+     *     SigningAlgorithmMnemonic?: string|null,
+     *     SigningAlgorithmType?: int|null,
+     *     DigestAlgorithmMnemonic?: string|null,
+     *     DigestAlgorithmType?: int|null,
+     *     KeyTag?: int<0, 65536>|null,
+     *     DigestValue?: string|null,
+     *     PublicKey?: string|null,
+     *     DSRecord?: string|null,
+     *     DNSKEYRecord?: string|null,
+     *     Status?: string|null,
+     *     StatusMessage?: string|null,
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

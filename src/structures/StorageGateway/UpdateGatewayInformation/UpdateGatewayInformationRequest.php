@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GatewayARN
- * @property string $GatewayName
- * @property string $GatewayTimezone
- * @property string $CloudWatchLogGroupARN
- * @property 'Small'|'Medium'|'Large' $GatewayCapacity
+ * @property string|null $GatewayName
+ * @property string|null $GatewayTimezone
+ * @property string|null $CloudWatchLogGroupARN
+ * @property 'Small'|'Medium'|'Large'|null $GatewayCapacity
  */
 class UpdateGatewayInformationRequest extends Request
 {
     /**
      * @param array{
      *     GatewayARN: string,
-     *     GatewayName?: string,
-     *     GatewayTimezone?: string,
-     *     CloudWatchLogGroupARN?: string,
-     *     GatewayCapacity?: 'Small'|'Medium'|'Large'
+     *     GatewayName?: string|null,
+     *     GatewayTimezone?: string|null,
+     *     CloudWatchLogGroupARN?: string|null,
+     *     GatewayCapacity?: 'Small'|'Medium'|'Large'|null
      * } $args
      */
     public function __construct(array $args)

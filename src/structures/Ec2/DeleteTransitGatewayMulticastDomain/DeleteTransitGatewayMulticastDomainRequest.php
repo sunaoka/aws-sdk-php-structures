@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TransitGatewayMulticastDomainId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DeleteTransitGatewayMulticastDomainRequest extends Request
 {
     /**
      * @param array{
      *     TransitGatewayMulticastDomainId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TargetGroupArn
- * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE' $HealthCheckProtocol
- * @property string $HealthCheckPort
- * @property string $HealthCheckPath
- * @property bool $HealthCheckEnabled
- * @property int<5, 300> $HealthCheckIntervalSeconds
- * @property int<2, 120> $HealthCheckTimeoutSeconds
- * @property int<2, 10> $HealthyThresholdCount
- * @property int<2, 10> $UnhealthyThresholdCount
- * @property Shapes\Matcher $Matcher
+ * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null $HealthCheckProtocol
+ * @property string|null $HealthCheckPort
+ * @property string|null $HealthCheckPath
+ * @property bool|null $HealthCheckEnabled
+ * @property int<5, 300>|null $HealthCheckIntervalSeconds
+ * @property int<2, 120>|null $HealthCheckTimeoutSeconds
+ * @property int<2, 10>|null $HealthyThresholdCount
+ * @property int<2, 10>|null $UnhealthyThresholdCount
+ * @property Shapes\Matcher|null $Matcher
  */
 class ModifyTargetGroupRequest extends Request
 {
     /**
      * @param array{
      *     TargetGroupArn: string,
-     *     HealthCheckProtocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE',
-     *     HealthCheckPort?: string,
-     *     HealthCheckPath?: string,
-     *     HealthCheckEnabled?: bool,
-     *     HealthCheckIntervalSeconds?: int<5, 300>,
-     *     HealthCheckTimeoutSeconds?: int<2, 120>,
-     *     HealthyThresholdCount?: int<2, 10>,
-     *     UnhealthyThresholdCount?: int<2, 10>,
-     *     Matcher?: Shapes\Matcher
+     *     HealthCheckProtocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null,
+     *     HealthCheckPort?: string|null,
+     *     HealthCheckPath?: string|null,
+     *     HealthCheckEnabled?: bool|null,
+     *     HealthCheckIntervalSeconds?: int<5, 300>|null,
+     *     HealthCheckTimeoutSeconds?: int<2, 120>|null,
+     *     HealthyThresholdCount?: int<2, 10>|null,
+     *     UnhealthyThresholdCount?: int<2, 10>|null,
+     *     Matcher?: Shapes\Matcher|null
      * } $args
      */
     public function __construct(array $args)

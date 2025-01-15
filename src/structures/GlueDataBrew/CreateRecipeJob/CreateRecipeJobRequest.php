@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\CreateRecipeJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DatasetName
- * @property string $EncryptionKeyArn
- * @property 'SSE-KMS'|'SSE-S3' $EncryptionMode
+ * @property string|null $DatasetName
+ * @property string|null $EncryptionKeyArn
+ * @property 'SSE-KMS'|'SSE-S3'|null $EncryptionMode
  * @property string $Name
- * @property 'ENABLE'|'DISABLE' $LogSubscription
- * @property int $MaxCapacity
- * @property int<0, max> $MaxRetries
- * @property list<Shapes\Output> $Outputs
- * @property list<Shapes\DataCatalogOutput> $DataCatalogOutputs
- * @property list<Shapes\DatabaseOutput> $DatabaseOutputs
- * @property string $ProjectName
- * @property Shapes\RecipeReference $RecipeReference
+ * @property 'ENABLE'|'DISABLE'|null $LogSubscription
+ * @property int|null $MaxCapacity
+ * @property int<0, max>|null $MaxRetries
+ * @property list<Shapes\Output>|null $Outputs
+ * @property list<Shapes\DataCatalogOutput>|null $DataCatalogOutputs
+ * @property list<Shapes\DatabaseOutput>|null $DatabaseOutputs
+ * @property string|null $ProjectName
+ * @property Shapes\RecipeReference|null $RecipeReference
  * @property string $RoleArn
- * @property array<string, string> $Tags
- * @property int<0, max> $Timeout
+ * @property array<string, string>|null $Tags
+ * @property int<0, max>|null $Timeout
  */
 class CreateRecipeJobRequest extends Request
 {
     /**
      * @param array{
-     *     DatasetName?: string,
-     *     EncryptionKeyArn?: string,
-     *     EncryptionMode?: 'SSE-KMS'|'SSE-S3',
+     *     DatasetName?: string|null,
+     *     EncryptionKeyArn?: string|null,
+     *     EncryptionMode?: 'SSE-KMS'|'SSE-S3'|null,
      *     Name: string,
-     *     LogSubscription?: 'ENABLE'|'DISABLE',
-     *     MaxCapacity?: int,
-     *     MaxRetries?: int<0, max>,
-     *     Outputs?: list<Shapes\Output>,
-     *     DataCatalogOutputs?: list<Shapes\DataCatalogOutput>,
-     *     DatabaseOutputs?: list<Shapes\DatabaseOutput>,
-     *     ProjectName?: string,
-     *     RecipeReference?: Shapes\RecipeReference,
+     *     LogSubscription?: 'ENABLE'|'DISABLE'|null,
+     *     MaxCapacity?: int|null,
+     *     MaxRetries?: int<0, max>|null,
+     *     Outputs?: list<Shapes\Output>|null,
+     *     DataCatalogOutputs?: list<Shapes\DataCatalogOutput>|null,
+     *     DatabaseOutputs?: list<Shapes\DatabaseOutput>|null,
+     *     ProjectName?: string|null,
+     *     RecipeReference?: Shapes\RecipeReference|null,
      *     RoleArn: string,
-     *     Tags?: array<string, string>,
-     *     Timeout?: int<0, max>
+     *     Tags?: array<string, string>|null,
+     *     Timeout?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

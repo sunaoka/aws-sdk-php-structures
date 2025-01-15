@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BackupGateway\AssociateGatewayToServer;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $GatewayArn
+ * @property string|null $GatewayArn
  */
 class AssociateGatewayToServerResponse extends Response
 {

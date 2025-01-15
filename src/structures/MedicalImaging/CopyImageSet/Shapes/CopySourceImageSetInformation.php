@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $latestVersionId
- * @property MetadataCopies $DICOMCopies
+ * @property MetadataCopies|null $DICOMCopies
  */
 class CopySourceImageSetInformation extends Shape
 {
     /**
      * @param array{
      *     latestVersionId: string,
-     *     DICOMCopies?: MetadataCopies
+     *     DICOMCopies?: MetadataCopies|null
      * } $args
      */
     public function __construct(array $args)

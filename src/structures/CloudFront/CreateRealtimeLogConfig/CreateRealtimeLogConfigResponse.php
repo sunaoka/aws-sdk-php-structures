@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudFront\CreateRealtimeLogConfig;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\RealtimeLogConfig $RealtimeLogConfig
+ * @property Shapes\RealtimeLogConfig|null $RealtimeLogConfig
  */
 class CreateRealtimeLogConfigResponse extends Response
 {

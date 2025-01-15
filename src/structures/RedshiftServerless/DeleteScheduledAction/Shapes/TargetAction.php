@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\DeleteScheduledAction\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CreateSnapshotScheduleActionParameters $createSnapshot
+ * @property CreateSnapshotScheduleActionParameters|null $createSnapshot
  */
 class TargetAction extends Shape
 {
     /**
-     * @param array{createSnapshot?: CreateSnapshotScheduleActionParameters} $args
+     * @param array{createSnapshot?: CreateSnapshotScheduleActionParameters|null} $args
      */
     public function __construct(array $args = [])
     {

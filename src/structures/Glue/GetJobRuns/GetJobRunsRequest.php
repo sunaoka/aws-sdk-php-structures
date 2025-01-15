@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $JobName
- * @property string $NextToken
- * @property int<1, 200> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 200>|null $MaxResults
  */
 class GetJobRunsRequest extends Request
 {
     /**
      * @param array{
      *     JobName: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 200>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 200>|null
      * } $args
      */
     public function __construct(array $args)

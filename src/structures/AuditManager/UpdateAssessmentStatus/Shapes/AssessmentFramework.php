@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AuditManager\UpdateAssessmentStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $arn
- * @property FrameworkMetadata $metadata
- * @property list<AssessmentControlSet> $controlSets
+ * @property string|null $id
+ * @property string|null $arn
+ * @property FrameworkMetadata|null $metadata
+ * @property list<AssessmentControlSet>|null $controlSets
  */
 class AssessmentFramework extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     arn?: string,
-     *     metadata?: FrameworkMetadata,
-     *     controlSets?: list<AssessmentControlSet>
+     *     id?: string|null,
+     *     arn?: string|null,
+     *     metadata?: FrameworkMetadata|null,
+     *     controlSets?: list<AssessmentControlSet>|null
      * } $args
      */
     public function __construct(array $args = [])

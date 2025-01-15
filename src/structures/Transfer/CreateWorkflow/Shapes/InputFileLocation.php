@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Transfer\CreateWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3InputFileLocation $S3FileLocation
- * @property EfsFileLocation $EfsFileLocation
+ * @property S3InputFileLocation|null $S3FileLocation
+ * @property EfsFileLocation|null $EfsFileLocation
  */
 class InputFileLocation extends Shape
 {
     /**
      * @param array{
-     *     S3FileLocation?: S3InputFileLocation,
-     *     EfsFileLocation?: EfsFileLocation
+     *     S3FileLocation?: S3InputFileLocation|null,
+     *     EfsFileLocation?: EfsFileLocation|null
      * } $args
      */
     public function __construct(array $args = [])

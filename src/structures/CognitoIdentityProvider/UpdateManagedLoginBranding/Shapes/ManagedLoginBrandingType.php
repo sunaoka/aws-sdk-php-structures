@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\UpdateManagedLoginBrand
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ManagedLoginBrandingId
- * @property string $UserPoolId
- * @property bool $UseCognitoProvidedValues
- * @property Document $Settings
- * @property list<AssetType> $Assets
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
+ * @property string|null $ManagedLoginBrandingId
+ * @property string|null $UserPoolId
+ * @property bool|null $UseCognitoProvidedValues
+ * @property Document|null $Settings
+ * @property list<AssetType>|null $Assets
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
  */
 class ManagedLoginBrandingType extends Shape
 {
     /**
      * @param array{
-     *     ManagedLoginBrandingId?: string,
-     *     UserPoolId?: string,
-     *     UseCognitoProvidedValues?: bool,
-     *     Settings?: Document,
-     *     Assets?: list<AssetType>,
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult
+     *     ManagedLoginBrandingId?: string|null,
+     *     UserPoolId?: string|null,
+     *     UseCognitoProvidedValues?: bool|null,
+     *     Settings?: Document|null,
+     *     Assets?: list<AssetType>|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

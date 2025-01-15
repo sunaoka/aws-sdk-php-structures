@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StudioLifecycleConfigName
  * @property string $StudioLifecycleConfigContent
  * @property 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab' $StudioLifecycleConfigAppType
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateStudioLifecycleConfigRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateStudioLifecycleConfigRequest extends Request
      *     StudioLifecycleConfigName: string,
      *     StudioLifecycleConfigContent: string,
      *     StudioLifecycleConfigAppType: 'JupyterServer'|'KernelGateway'|'CodeEditor'|'JupyterLab',
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

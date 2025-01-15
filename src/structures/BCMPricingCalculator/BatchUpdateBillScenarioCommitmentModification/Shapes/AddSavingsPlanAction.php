@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchUpdateBillScenarioCom
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $savingsPlanOfferingId
- * @property double $commitment
+ * @property string|null $savingsPlanOfferingId
+ * @property double|null $commitment
  */
 class AddSavingsPlanAction extends Shape
 {
     /**
      * @param array{
-     *     savingsPlanOfferingId?: string,
-     *     commitment?: double
+     *     savingsPlanOfferingId?: string|null,
+     *     commitment?: double|null
      * } $args
      */
     public function __construct(array $args = [])

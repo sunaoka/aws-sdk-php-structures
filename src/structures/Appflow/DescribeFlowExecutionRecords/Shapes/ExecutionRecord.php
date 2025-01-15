@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeFlowExecutionRecords\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $executionId
- * @property 'InProgress'|'Successful'|'Error'|'CancelStarted'|'Canceled' $executionStatus
- * @property ExecutionResult $executionResult
- * @property \Aws\Api\DateTimeResult $startedAt
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property \Aws\Api\DateTimeResult $dataPullStartTime
- * @property \Aws\Api\DateTimeResult $dataPullEndTime
- * @property list<MetadataCatalogDetail> $metadataCatalogDetails
+ * @property string|null $executionId
+ * @property 'InProgress'|'Successful'|'Error'|'CancelStarted'|'Canceled'|null $executionStatus
+ * @property ExecutionResult|null $executionResult
+ * @property \Aws\Api\DateTimeResult|null $startedAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property \Aws\Api\DateTimeResult|null $dataPullStartTime
+ * @property \Aws\Api\DateTimeResult|null $dataPullEndTime
+ * @property list<MetadataCatalogDetail>|null $metadataCatalogDetails
  */
 class ExecutionRecord extends Shape
 {
     /**
      * @param array{
-     *     executionId?: string,
-     *     executionStatus?: 'InProgress'|'Successful'|'Error'|'CancelStarted'|'Canceled',
-     *     executionResult?: ExecutionResult,
-     *     startedAt?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     dataPullStartTime?: \Aws\Api\DateTimeResult,
-     *     dataPullEndTime?: \Aws\Api\DateTimeResult,
-     *     metadataCatalogDetails?: list<MetadataCatalogDetail>
+     *     executionId?: string|null,
+     *     executionStatus?: 'InProgress'|'Successful'|'Error'|'CancelStarted'|'Canceled'|null,
+     *     executionResult?: ExecutionResult|null,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     dataPullStartTime?: \Aws\Api\DateTimeResult|null,
+     *     dataPullEndTime?: \Aws\Api\DateTimeResult|null,
+     *     metadataCatalogDetails?: list<MetadataCatalogDetail>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\DocumentLocation $DocumentLocation
  * @property list<'TABLES'|'FORMS'|'QUERIES'|'SIGNATURES'|'LAYOUT'> $FeatureTypes
- * @property string $ClientRequestToken
- * @property string $JobTag
- * @property Shapes\NotificationChannel $NotificationChannel
- * @property Shapes\OutputConfig $OutputConfig
- * @property string $KMSKeyId
- * @property Shapes\QueriesConfig $QueriesConfig
- * @property Shapes\AdaptersConfig $AdaptersConfig
+ * @property string|null $ClientRequestToken
+ * @property string|null $JobTag
+ * @property Shapes\NotificationChannel|null $NotificationChannel
+ * @property Shapes\OutputConfig|null $OutputConfig
+ * @property string|null $KMSKeyId
+ * @property Shapes\QueriesConfig|null $QueriesConfig
+ * @property Shapes\AdaptersConfig|null $AdaptersConfig
  */
 class StartDocumentAnalysisRequest extends Request
 {
@@ -21,13 +21,13 @@ class StartDocumentAnalysisRequest extends Request
      * @param array{
      *     DocumentLocation: Shapes\DocumentLocation,
      *     FeatureTypes: list<'TABLES'|'FORMS'|'QUERIES'|'SIGNATURES'|'LAYOUT'>,
-     *     ClientRequestToken?: string,
-     *     JobTag?: string,
-     *     NotificationChannel?: Shapes\NotificationChannel,
-     *     OutputConfig?: Shapes\OutputConfig,
-     *     KMSKeyId?: string,
-     *     QueriesConfig?: Shapes\QueriesConfig,
-     *     AdaptersConfig?: Shapes\AdaptersConfig
+     *     ClientRequestToken?: string|null,
+     *     JobTag?: string|null,
+     *     NotificationChannel?: Shapes\NotificationChannel|null,
+     *     OutputConfig?: Shapes\OutputConfig|null,
+     *     KMSKeyId?: string|null,
+     *     QueriesConfig?: Shapes\QueriesConfig|null,
+     *     AdaptersConfig?: Shapes\AdaptersConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Pricing\DescribeServices;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Service> $Services
- * @property string $FormatVersion
- * @property string $NextToken
+ * @property list<Shapes\Service>|null $Services
+ * @property string|null $FormatVersion
+ * @property string|null $NextToken
  */
 class DescribeServicesResponse extends Response
 {

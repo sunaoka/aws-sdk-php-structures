@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Status
- * @property string $VpcSecurityGroupId
+ * @property string|null $Status
+ * @property string|null $VpcSecurityGroupId
  */
 class AwsRedshiftClusterVpcSecurityGroup extends Shape
 {
     /**
      * @param array{
-     *     Status?: string,
-     *     VpcSecurityGroupId?: string
+     *     Status?: string|null,
+     *     VpcSecurityGroupId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreatePreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BurninDestinationSettings $BurninDestinationSettings
- * @property 'BURN_IN'|'DVB_SUB'|'EMBEDDED'|'EMBEDDED_PLUS_SCTE20'|'IMSC'|'SCTE20_PLUS_EMBEDDED'|'SCC'|'SRT'|'SMI'|'TELETEXT'|'TTML'|'WEBVTT' $DestinationType
- * @property DvbSubDestinationSettings $DvbSubDestinationSettings
- * @property EmbeddedDestinationSettings $EmbeddedDestinationSettings
- * @property ImscDestinationSettings $ImscDestinationSettings
- * @property SccDestinationSettings $SccDestinationSettings
- * @property SrtDestinationSettings $SrtDestinationSettings
- * @property TeletextDestinationSettings $TeletextDestinationSettings
- * @property TtmlDestinationSettings $TtmlDestinationSettings
- * @property WebvttDestinationSettings $WebvttDestinationSettings
+ * @property BurninDestinationSettings|null $BurninDestinationSettings
+ * @property 'BURN_IN'|'DVB_SUB'|'EMBEDDED'|'EMBEDDED_PLUS_SCTE20'|'IMSC'|'SCTE20_PLUS_EMBEDDED'|'SCC'|'SRT'|'SMI'|'TELETEXT'|'TTML'|'WEBVTT'|null $DestinationType
+ * @property DvbSubDestinationSettings|null $DvbSubDestinationSettings
+ * @property EmbeddedDestinationSettings|null $EmbeddedDestinationSettings
+ * @property ImscDestinationSettings|null $ImscDestinationSettings
+ * @property SccDestinationSettings|null $SccDestinationSettings
+ * @property SrtDestinationSettings|null $SrtDestinationSettings
+ * @property TeletextDestinationSettings|null $TeletextDestinationSettings
+ * @property TtmlDestinationSettings|null $TtmlDestinationSettings
+ * @property WebvttDestinationSettings|null $WebvttDestinationSettings
  */
 class CaptionDestinationSettings extends Shape
 {
     /**
      * @param array{
-     *     BurninDestinationSettings?: BurninDestinationSettings,
-     *     DestinationType?: 'BURN_IN'|'DVB_SUB'|'EMBEDDED'|'EMBEDDED_PLUS_SCTE20'|'IMSC'|'SCTE20_PLUS_EMBEDDED'|'SCC'|'SRT'|'SMI'|'TELETEXT'|'TTML'|'WEBVTT',
-     *     DvbSubDestinationSettings?: DvbSubDestinationSettings,
-     *     EmbeddedDestinationSettings?: EmbeddedDestinationSettings,
-     *     ImscDestinationSettings?: ImscDestinationSettings,
-     *     SccDestinationSettings?: SccDestinationSettings,
-     *     SrtDestinationSettings?: SrtDestinationSettings,
-     *     TeletextDestinationSettings?: TeletextDestinationSettings,
-     *     TtmlDestinationSettings?: TtmlDestinationSettings,
-     *     WebvttDestinationSettings?: WebvttDestinationSettings
+     *     BurninDestinationSettings?: BurninDestinationSettings|null,
+     *     DestinationType?: 'BURN_IN'|'DVB_SUB'|'EMBEDDED'|'EMBEDDED_PLUS_SCTE20'|'IMSC'|'SCTE20_PLUS_EMBEDDED'|'SCC'|'SRT'|'SMI'|'TELETEXT'|'TTML'|'WEBVTT'|null,
+     *     DvbSubDestinationSettings?: DvbSubDestinationSettings|null,
+     *     EmbeddedDestinationSettings?: EmbeddedDestinationSettings|null,
+     *     ImscDestinationSettings?: ImscDestinationSettings|null,
+     *     SccDestinationSettings?: SccDestinationSettings|null,
+     *     SrtDestinationSettings?: SrtDestinationSettings|null,
+     *     TeletextDestinationSettings?: TeletextDestinationSettings|null,
+     *     TtmlDestinationSettings?: TtmlDestinationSettings|null,
+     *     WebvttDestinationSettings?: WebvttDestinationSettings|null
      * } $args
      */
     public function __construct(array $args = [])

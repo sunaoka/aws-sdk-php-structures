@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Tnb\GetSolFunctionInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'STARTED'|'STOPPED' $vnfState
- * @property list<GetSolVnfcResourceInfo> $vnfcResourceInfo
+ * @property 'STARTED'|'STOPPED'|null $vnfState
+ * @property list<GetSolVnfcResourceInfo>|null $vnfcResourceInfo
  */
 class GetSolVnfInfo extends Shape
 {
     /**
      * @param array{
-     *     vnfState?: 'STARTED'|'STOPPED',
-     *     vnfcResourceInfo?: list<GetSolVnfcResourceInfo>
+     *     vnfState?: 'STARTED'|'STOPPED'|null,
+     *     vnfcResourceInfo?: list<GetSolVnfcResourceInfo>|null
      * } $args
      */
     public function __construct(array $args = [])

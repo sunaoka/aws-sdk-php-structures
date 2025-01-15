@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property int $ParameterVersion
+ * @property int|null $ParameterVersion
  * @property list<string> $Labels
  */
 class LabelParameterVersionRequest extends Request
@@ -14,7 +14,7 @@ class LabelParameterVersionRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     ParameterVersion?: int,
+     *     ParameterVersion?: int|null,
      *     Labels: list<string>
      * } $args
      */

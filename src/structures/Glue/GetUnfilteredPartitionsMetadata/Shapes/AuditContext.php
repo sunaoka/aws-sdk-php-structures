@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\GetUnfilteredPartitionsMetadata\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AdditionalAuditContext
- * @property list<string> $RequestedColumns
- * @property bool $AllColumnsRequested
+ * @property string|null $AdditionalAuditContext
+ * @property list<string>|null $RequestedColumns
+ * @property bool|null $AllColumnsRequested
  */
 class AuditContext extends Shape
 {
     /**
      * @param array{
-     *     AdditionalAuditContext?: string,
-     *     RequestedColumns?: list<string>,
-     *     AllColumnsRequested?: bool
+     *     AdditionalAuditContext?: string|null,
+     *     RequestedColumns?: list<string>|null,
+     *     AllColumnsRequested?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

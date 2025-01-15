@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $executionArn
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class RedriveExecutionRequest extends Request
 {
     /**
      * @param array{
      *     executionArn: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

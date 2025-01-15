@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\CoverageByTime> $CoveragesByTime
- * @property Shapes\Coverage $Total
- * @property string $NextPageToken
+ * @property Shapes\Coverage|null $Total
+ * @property string|null $NextPageToken
  */
 class GetReservationCoverageResponse extends Response
 {

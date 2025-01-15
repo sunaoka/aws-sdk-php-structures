@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ModifyDataMigration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DataMigration $DataMigration
+ * @property Shapes\DataMigration|null $DataMigration
  */
 class ModifyDataMigrationResponse extends Response
 {

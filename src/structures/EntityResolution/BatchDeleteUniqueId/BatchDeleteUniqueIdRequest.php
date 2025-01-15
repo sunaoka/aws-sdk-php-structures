@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\EntityResolution\BatchDeleteUniqueId;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $inputSource
+ * @property string|null $inputSource
  * @property list<string> $uniqueIds
  * @property string $workflowName
  */
@@ -13,7 +13,7 @@ class BatchDeleteUniqueIdRequest extends Request
 {
     /**
      * @param array{
-     *     inputSource?: string,
+     *     inputSource?: string|null,
      *     uniqueIds: list<string>,
      *     workflowName: string
      * } $args

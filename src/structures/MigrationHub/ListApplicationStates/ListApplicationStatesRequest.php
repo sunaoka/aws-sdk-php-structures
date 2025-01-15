@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MigrationHub\ListApplicationStates;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ApplicationIds
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property list<string>|null $ApplicationIds
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListApplicationStatesRequest extends Request
 {
     /**
      * @param array{
-     *     ApplicationIds?: list<string>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     ApplicationIds?: list<string>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

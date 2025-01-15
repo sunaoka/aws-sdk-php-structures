@@ -8,17 +8,17 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CalculatorName
  * @property list<double> $DeparturePosition
  * @property list<double> $DestinationPosition
- * @property list<list<double>> $WaypointPositions
- * @property 'Car'|'Truck'|'Walking'|'Bicycle'|'Motorcycle' $TravelMode
- * @property \Aws\Api\DateTimeResult $DepartureTime
- * @property bool $DepartNow
- * @property 'Kilometers'|'Miles' $DistanceUnit
- * @property bool $IncludeLegGeometry
- * @property Shapes\CalculateRouteCarModeOptions $CarModeOptions
- * @property Shapes\CalculateRouteTruckModeOptions $TruckModeOptions
- * @property \Aws\Api\DateTimeResult $ArrivalTime
- * @property 'FastestRoute'|'ShortestRoute' $OptimizeFor
- * @property string $Key
+ * @property list<list<double>>|null $WaypointPositions
+ * @property 'Car'|'Truck'|'Walking'|'Bicycle'|'Motorcycle'|null $TravelMode
+ * @property \Aws\Api\DateTimeResult|null $DepartureTime
+ * @property bool|null $DepartNow
+ * @property 'Kilometers'|'Miles'|null $DistanceUnit
+ * @property bool|null $IncludeLegGeometry
+ * @property Shapes\CalculateRouteCarModeOptions|null $CarModeOptions
+ * @property Shapes\CalculateRouteTruckModeOptions|null $TruckModeOptions
+ * @property \Aws\Api\DateTimeResult|null $ArrivalTime
+ * @property 'FastestRoute'|'ShortestRoute'|null $OptimizeFor
+ * @property string|null $Key
  */
 class CalculateRouteRequest extends Request
 {
@@ -27,17 +27,17 @@ class CalculateRouteRequest extends Request
      *     CalculatorName: string,
      *     DeparturePosition: list<double>,
      *     DestinationPosition: list<double>,
-     *     WaypointPositions?: list<list<double>>,
-     *     TravelMode?: 'Car'|'Truck'|'Walking'|'Bicycle'|'Motorcycle',
-     *     DepartureTime?: \Aws\Api\DateTimeResult,
-     *     DepartNow?: bool,
-     *     DistanceUnit?: 'Kilometers'|'Miles',
-     *     IncludeLegGeometry?: bool,
-     *     CarModeOptions?: Shapes\CalculateRouteCarModeOptions,
-     *     TruckModeOptions?: Shapes\CalculateRouteTruckModeOptions,
-     *     ArrivalTime?: \Aws\Api\DateTimeResult,
-     *     OptimizeFor?: 'FastestRoute'|'ShortestRoute',
-     *     Key?: string
+     *     WaypointPositions?: list<list<double>>|null,
+     *     TravelMode?: 'Car'|'Truck'|'Walking'|'Bicycle'|'Motorcycle'|null,
+     *     DepartureTime?: \Aws\Api\DateTimeResult|null,
+     *     DepartNow?: bool|null,
+     *     DistanceUnit?: 'Kilometers'|'Miles'|null,
+     *     IncludeLegGeometry?: bool|null,
+     *     CarModeOptions?: Shapes\CalculateRouteCarModeOptions|null,
+     *     TruckModeOptions?: Shapes\CalculateRouteTruckModeOptions|null,
+     *     ArrivalTime?: \Aws\Api\DateTimeResult|null,
+     *     OptimizeFor?: 'FastestRoute'|'ShortestRoute'|null,
+     *     Key?: string|null
      * } $args
      */
     public function __construct(array $args)

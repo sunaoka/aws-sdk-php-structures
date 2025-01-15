@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\TrustedAdvisor\ListOrganizationRecommendationRe
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $affectedAccountId
- * @property 'excluded'|'included' $exclusionStatus
- * @property int<1, 200> $maxResults
- * @property string $nextToken
+ * @property string|null $affectedAccountId
+ * @property 'excluded'|'included'|null $exclusionStatus
+ * @property int<1, 200>|null $maxResults
+ * @property string|null $nextToken
  * @property string $organizationRecommendationIdentifier
- * @property string $regionCode
- * @property 'ok'|'warning'|'error' $status
+ * @property string|null $regionCode
+ * @property 'ok'|'warning'|'error'|null $status
  */
 class ListOrganizationRecommendationResourcesRequest extends Request
 {
     /**
      * @param array{
-     *     affectedAccountId?: string,
-     *     exclusionStatus?: 'excluded'|'included',
-     *     maxResults?: int<1, 200>,
-     *     nextToken?: string,
+     *     affectedAccountId?: string|null,
+     *     exclusionStatus?: 'excluded'|'included'|null,
+     *     maxResults?: int<1, 200>|null,
+     *     nextToken?: string|null,
      *     organizationRecommendationIdentifier: string,
-     *     regionCode?: string,
-     *     status?: 'ok'|'warning'|'error'
+     *     regionCode?: string|null,
+     *     status?: 'ok'|'warning'|'error'|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Source
  * @property Shapes\Destination $Destination
  * @property Shapes\Message $Message
- * @property list<string> $ReplyToAddresses
- * @property string $ReturnPath
- * @property string $SourceArn
- * @property string $ReturnPathArn
- * @property list<Shapes\MessageTag> $Tags
- * @property string $ConfigurationSetName
+ * @property list<string>|null $ReplyToAddresses
+ * @property string|null $ReturnPath
+ * @property string|null $SourceArn
+ * @property string|null $ReturnPathArn
+ * @property list<Shapes\MessageTag>|null $Tags
+ * @property string|null $ConfigurationSetName
  */
 class SendEmailRequest extends Request
 {
@@ -22,12 +22,12 @@ class SendEmailRequest extends Request
      *     Source: string,
      *     Destination: Shapes\Destination,
      *     Message: Shapes\Message,
-     *     ReplyToAddresses?: list<string>,
-     *     ReturnPath?: string,
-     *     SourceArn?: string,
-     *     ReturnPathArn?: string,
-     *     Tags?: list<Shapes\MessageTag>,
-     *     ConfigurationSetName?: string
+     *     ReplyToAddresses?: list<string>|null,
+     *     ReturnPath?: string|null,
+     *     SourceArn?: string|null,
+     *     ReturnPathArn?: string|null,
+     *     Tags?: list<Shapes\MessageTag>|null,
+     *     ConfigurationSetName?: string|null
      * } $args
      */
     public function __construct(array $args)

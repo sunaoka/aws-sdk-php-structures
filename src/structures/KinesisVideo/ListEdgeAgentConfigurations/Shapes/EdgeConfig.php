@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $HubDeviceArn
  * @property RecorderConfig $RecorderConfig
- * @property UploaderConfig $UploaderConfig
- * @property DeletionConfig $DeletionConfig
+ * @property UploaderConfig|null $UploaderConfig
+ * @property DeletionConfig|null $DeletionConfig
  */
 class EdgeConfig extends Shape
 {
@@ -16,8 +16,8 @@ class EdgeConfig extends Shape
      * @param array{
      *     HubDeviceArn: string,
      *     RecorderConfig: RecorderConfig,
-     *     UploaderConfig?: UploaderConfig,
-     *     DeletionConfig?: DeletionConfig
+     *     UploaderConfig?: UploaderConfig|null,
+     *     DeletionConfig?: DeletionConfig|null
      * } $args
      */
     public function __construct(array $args)

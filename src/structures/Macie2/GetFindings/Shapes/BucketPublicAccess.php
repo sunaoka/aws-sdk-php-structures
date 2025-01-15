@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PUBLIC'|'NOT_PUBLIC'|'UNKNOWN' $effectivePermission
- * @property BucketPermissionConfiguration $permissionConfiguration
+ * @property 'PUBLIC'|'NOT_PUBLIC'|'UNKNOWN'|null $effectivePermission
+ * @property BucketPermissionConfiguration|null $permissionConfiguration
  */
 class BucketPublicAccess extends Shape
 {
     /**
      * @param array{
-     *     effectivePermission?: 'PUBLIC'|'NOT_PUBLIC'|'UNKNOWN',
-     *     permissionConfiguration?: BucketPermissionConfiguration
+     *     effectivePermission?: 'PUBLIC'|'NOT_PUBLIC'|'UNKNOWN'|null,
+     *     permissionConfiguration?: BucketPermissionConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

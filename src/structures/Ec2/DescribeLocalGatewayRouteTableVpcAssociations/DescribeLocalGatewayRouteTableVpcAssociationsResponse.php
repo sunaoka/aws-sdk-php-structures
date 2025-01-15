@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeLocalGatewayRouteTableVpcAssociatio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\LocalGatewayRouteTableVpcAssociation> $LocalGatewayRouteTableVpcAssociations
- * @property string $NextToken
+ * @property list<Shapes\LocalGatewayRouteTableVpcAssociation>|null $LocalGatewayRouteTableVpcAssociations
+ * @property string|null $NextToken
  */
 class DescribeLocalGatewayRouteTableVpcAssociationsResponse extends Response
 {

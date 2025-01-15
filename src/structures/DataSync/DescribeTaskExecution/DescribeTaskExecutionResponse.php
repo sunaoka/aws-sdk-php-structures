@@ -5,30 +5,30 @@ namespace Sunaoka\Aws\Structures\DataSync\DescribeTaskExecution;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TaskExecutionArn
- * @property 'QUEUED'|'CANCELLING'|'LAUNCHING'|'PREPARING'|'TRANSFERRING'|'VERIFYING'|'SUCCESS'|'ERROR' $Status
- * @property Shapes\Options $Options
- * @property list<Shapes\FilterRule> $Excludes
- * @property list<Shapes\FilterRule> $Includes
- * @property Shapes\ManifestConfig $ManifestConfig
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property int $EstimatedFilesToTransfer
- * @property int $EstimatedBytesToTransfer
- * @property int $FilesTransferred
- * @property int $BytesWritten
- * @property int $BytesTransferred
- * @property int $BytesCompressed
- * @property Shapes\TaskExecutionResultDetail $Result
- * @property Shapes\TaskReportConfig $TaskReportConfig
- * @property int $FilesDeleted
- * @property int $FilesSkipped
- * @property int $FilesVerified
- * @property Shapes\ReportResult $ReportResult
- * @property int $EstimatedFilesToDelete
- * @property 'BASIC'|'ENHANCED' $TaskMode
- * @property int $FilesPrepared
- * @property Shapes\TaskExecutionFilesListedDetail $FilesListed
- * @property Shapes\TaskExecutionFilesFailedDetail $FilesFailed
+ * @property string|null $TaskExecutionArn
+ * @property 'QUEUED'|'CANCELLING'|'LAUNCHING'|'PREPARING'|'TRANSFERRING'|'VERIFYING'|'SUCCESS'|'ERROR'|null $Status
+ * @property Shapes\Options|null $Options
+ * @property list<Shapes\FilterRule>|null $Excludes
+ * @property list<Shapes\FilterRule>|null $Includes
+ * @property Shapes\ManifestConfig|null $ManifestConfig
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property int|null $EstimatedFilesToTransfer
+ * @property int|null $EstimatedBytesToTransfer
+ * @property int|null $FilesTransferred
+ * @property int|null $BytesWritten
+ * @property int|null $BytesTransferred
+ * @property int|null $BytesCompressed
+ * @property Shapes\TaskExecutionResultDetail|null $Result
+ * @property Shapes\TaskReportConfig|null $TaskReportConfig
+ * @property int|null $FilesDeleted
+ * @property int|null $FilesSkipped
+ * @property int|null $FilesVerified
+ * @property Shapes\ReportResult|null $ReportResult
+ * @property int|null $EstimatedFilesToDelete
+ * @property 'BASIC'|'ENHANCED'|null $TaskMode
+ * @property int|null $FilesPrepared
+ * @property Shapes\TaskExecutionFilesListedDetail|null $FilesListed
+ * @property Shapes\TaskExecutionFilesFailedDetail|null $FilesFailed
  */
 class DescribeTaskExecutionResponse extends Response
 {

@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SubscriptionName
- * @property string $SnsTopicArn
- * @property string $SourceType
- * @property list<string> $SourceIds
- * @property list<string> $EventCategories
- * @property string $Severity
- * @property bool $Enabled
+ * @property string|null $SnsTopicArn
+ * @property string|null $SourceType
+ * @property list<string>|null $SourceIds
+ * @property list<string>|null $EventCategories
+ * @property string|null $Severity
+ * @property bool|null $Enabled
  */
 class ModifyEventSubscriptionRequest extends Request
 {
     /**
      * @param array{
      *     SubscriptionName: string,
-     *     SnsTopicArn?: string,
-     *     SourceType?: string,
-     *     SourceIds?: list<string>,
-     *     EventCategories?: list<string>,
-     *     Severity?: string,
-     *     Enabled?: bool
+     *     SnsTopicArn?: string|null,
+     *     SourceType?: string|null,
+     *     SourceIds?: list<string>|null,
+     *     EventCategories?: list<string>|null,
+     *     Severity?: string|null,
+     *     Enabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

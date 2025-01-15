@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchGetConfigurationPolicyAssociat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Target $Target
+ * @property Target|null $Target
  */
 class ConfigurationPolicyAssociation extends Shape
 {
     /**
-     * @param array{Target?: Target} $args
+     * @param array{Target?: Target|null} $args
      */
     public function __construct(array $args = [])
     {

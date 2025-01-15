@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<0, 4294967295> $Duration
- * @property string $Instruction
+ * @property string|null $Instruction
  * @property 'Board' $Type
  */
 class RouteFerryBeforeTravelStep extends Shape
@@ -14,7 +14,7 @@ class RouteFerryBeforeTravelStep extends Shape
     /**
      * @param array{
      *     Duration: int<0, 4294967295>,
-     *     Instruction?: string,
+     *     Instruction?: string|null,
      *     Type: 'Board'
      * } $args
      */

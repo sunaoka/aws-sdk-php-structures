@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'Count'|'Success'|'Failed'|'Dropped'|'Retry' $name
  * @property 'Sum'|'Avg'|'Max' $statistic
- * @property 'Ascending'|'Descending' $order
+ * @property 'Ascending'|'Descending'|null $order
  */
 class AnalyticsIntentStageMetric extends Shape
 {
@@ -15,7 +15,7 @@ class AnalyticsIntentStageMetric extends Shape
      * @param array{
      *     name: 'Count'|'Success'|'Failed'|'Dropped'|'Retry',
      *     statistic: 'Sum'|'Avg'|'Max',
-     *     order?: 'Ascending'|'Descending'
+     *     order?: 'Ascending'|'Descending'|null
      * } $args
      */
     public function __construct(array $args)

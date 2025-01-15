@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Namespace
- * @property string $Value
+ * @property string|null $Namespace
+ * @property string|null $Value
  */
 class AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetails extends Shape
 {
     /**
      * @param array{
-     *     Namespace?: string,
-     *     Value?: string
+     *     Namespace?: string|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

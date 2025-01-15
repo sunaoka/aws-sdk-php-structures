@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'BUSINESS_LOGIC'|'ML_MODEL'|'MEDIA_SOURCE'|'MEDIA_SINK' $Category
  * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property string $Description
+ * @property string|null $Description
  * @property string $Name
  * @property string $NodeId
- * @property string $OwnerAccount
- * @property string $PackageArn
+ * @property string|null $OwnerAccount
+ * @property string|null $PackageArn
  * @property string $PackageId
  * @property string $PackageName
  * @property string $PackageVersion
@@ -23,11 +23,11 @@ class Node extends Shape
      * @param array{
      *     Category: 'BUSINESS_LOGIC'|'ML_MODEL'|'MEDIA_SOURCE'|'MEDIA_SINK',
      *     CreatedTime: \Aws\Api\DateTimeResult,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Name: string,
      *     NodeId: string,
-     *     OwnerAccount?: string,
-     *     PackageArn?: string,
+     *     OwnerAccount?: string|null,
+     *     PackageArn?: string|null,
      *     PackageId: string,
      *     PackageName: string,
      *     PackageVersion: string,

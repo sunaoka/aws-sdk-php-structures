@@ -5,26 +5,26 @@ namespace Sunaoka\Aws\Structures\DataZone\ListNotifications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property \Aws\Api\DateTimeResult $afterTimestamp
- * @property \Aws\Api\DateTimeResult $beforeTimestamp
+ * @property \Aws\Api\DateTimeResult|null $afterTimestamp
+ * @property \Aws\Api\DateTimeResult|null $beforeTimestamp
  * @property string $domainIdentifier
- * @property int<1, 50> $maxResults
- * @property string $nextToken
- * @property list<string> $subjects
- * @property 'ACTIVE'|'INACTIVE' $taskStatus
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $nextToken
+ * @property list<string>|null $subjects
+ * @property 'ACTIVE'|'INACTIVE'|null $taskStatus
  * @property 'TASK'|'EVENT' $type
  */
 class ListNotificationsRequest extends Request
 {
     /**
      * @param array{
-     *     afterTimestamp?: \Aws\Api\DateTimeResult,
-     *     beforeTimestamp?: \Aws\Api\DateTimeResult,
+     *     afterTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     beforeTimestamp?: \Aws\Api\DateTimeResult|null,
      *     domainIdentifier: string,
-     *     maxResults?: int<1, 50>,
-     *     nextToken?: string,
-     *     subjects?: list<string>,
-     *     taskStatus?: 'ACTIVE'|'INACTIVE',
+     *     maxResults?: int<1, 50>|null,
+     *     nextToken?: string|null,
+     *     subjects?: list<string>|null,
+     *     taskStatus?: 'ACTIVE'|'INACTIVE'|null,
      *     type: 'TASK'|'EVENT'
      * } $args
      */

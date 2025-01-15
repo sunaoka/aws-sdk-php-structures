@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppMesh\CreateMesh\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EgressFilter $egressFilter
- * @property MeshServiceDiscovery $serviceDiscovery
+ * @property EgressFilter|null $egressFilter
+ * @property MeshServiceDiscovery|null $serviceDiscovery
  */
 class MeshSpec extends Shape
 {
     /**
      * @param array{
-     *     egressFilter?: EgressFilter,
-     *     serviceDiscovery?: MeshServiceDiscovery
+     *     egressFilter?: EgressFilter|null,
+     *     serviceDiscovery?: MeshServiceDiscovery|null
      * } $args
      */
     public function __construct(array $args = [])

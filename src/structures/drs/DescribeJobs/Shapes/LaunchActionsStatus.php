@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\drs\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<LaunchActionRun> $runs
- * @property string $ssmAgentDiscoveryDatetime
+ * @property list<LaunchActionRun>|null $runs
+ * @property string|null $ssmAgentDiscoveryDatetime
  */
 class LaunchActionsStatus extends Shape
 {
     /**
      * @param array{
-     *     runs?: list<LaunchActionRun>,
-     *     ssmAgentDiscoveryDatetime?: string
+     *     runs?: list<LaunchActionRun>|null,
+     *     ssmAgentDiscoveryDatetime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

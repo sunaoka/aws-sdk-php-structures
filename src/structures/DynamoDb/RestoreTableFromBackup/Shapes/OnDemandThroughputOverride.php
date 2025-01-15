@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DynamoDb\RestoreTableFromBackup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MaxReadRequestUnits
+ * @property int|null $MaxReadRequestUnits
  */
 class OnDemandThroughputOverride extends Shape
 {
     /**
-     * @param array{MaxReadRequestUnits?: int} $args
+     * @param array{MaxReadRequestUnits?: int|null} $args
      */
     public function __construct(array $args = [])
     {

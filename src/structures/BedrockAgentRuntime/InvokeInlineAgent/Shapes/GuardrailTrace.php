@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INTERVENED'|'NONE' $action
- * @property list<GuardrailAssessment> $inputAssessments
- * @property list<GuardrailAssessment> $outputAssessments
- * @property string $traceId
+ * @property 'INTERVENED'|'NONE'|null $action
+ * @property list<GuardrailAssessment>|null $inputAssessments
+ * @property list<GuardrailAssessment>|null $outputAssessments
+ * @property string|null $traceId
  */
 class GuardrailTrace extends Shape
 {
     /**
      * @param array{
-     *     action?: 'INTERVENED'|'NONE',
-     *     inputAssessments?: list<GuardrailAssessment>,
-     *     outputAssessments?: list<GuardrailAssessment>,
-     *     traceId?: string
+     *     action?: 'INTERVENED'|'NONE'|null,
+     *     inputAssessments?: list<GuardrailAssessment>|null,
+     *     outputAssessments?: list<GuardrailAssessment>|null,
+     *     traceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

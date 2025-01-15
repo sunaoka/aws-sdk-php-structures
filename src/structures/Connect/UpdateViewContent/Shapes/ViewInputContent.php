@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\UpdateViewContent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Template
- * @property list<string> $Actions
+ * @property string|null $Template
+ * @property list<string>|null $Actions
  */
 class ViewInputContent extends Shape
 {
     /**
      * @param array{
-     *     Template?: string,
-     *     Actions?: list<string>
+     *     Template?: string|null,
+     *     Actions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

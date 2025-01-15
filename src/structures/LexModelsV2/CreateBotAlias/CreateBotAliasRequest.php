@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $botAliasName
- * @property string $description
- * @property string $botVersion
- * @property array<string, Shapes\BotAliasLocaleSettings> $botAliasLocaleSettings
- * @property Shapes\ConversationLogSettings $conversationLogSettings
- * @property Shapes\SentimentAnalysisSettings $sentimentAnalysisSettings
+ * @property string|null $description
+ * @property string|null $botVersion
+ * @property array<string, Shapes\BotAliasLocaleSettings>|null $botAliasLocaleSettings
+ * @property Shapes\ConversationLogSettings|null $conversationLogSettings
+ * @property Shapes\SentimentAnalysisSettings|null $sentimentAnalysisSettings
  * @property string $botId
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateBotAliasRequest extends Request
 {
     /**
      * @param array{
      *     botAliasName: string,
-     *     description?: string,
-     *     botVersion?: string,
-     *     botAliasLocaleSettings?: array<string, Shapes\BotAliasLocaleSettings>,
-     *     conversationLogSettings?: Shapes\ConversationLogSettings,
-     *     sentimentAnalysisSettings?: Shapes\SentimentAnalysisSettings,
+     *     description?: string|null,
+     *     botVersion?: string|null,
+     *     botAliasLocaleSettings?: array<string, Shapes\BotAliasLocaleSettings>|null,
+     *     conversationLogSettings?: Shapes\ConversationLogSettings|null,
+     *     sentimentAnalysisSettings?: Shapes\SentimentAnalysisSettings|null,
      *     botId: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

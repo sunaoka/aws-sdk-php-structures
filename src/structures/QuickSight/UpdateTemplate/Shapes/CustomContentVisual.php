@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $VisualId
- * @property VisualTitleLabelOptions $Title
- * @property VisualSubtitleLabelOptions $Subtitle
- * @property CustomContentConfiguration $ChartConfiguration
- * @property list<VisualCustomAction> $Actions
+ * @property VisualTitleLabelOptions|null $Title
+ * @property VisualSubtitleLabelOptions|null $Subtitle
+ * @property CustomContentConfiguration|null $ChartConfiguration
+ * @property list<VisualCustomAction>|null $Actions
  * @property string $DataSetIdentifier
- * @property string $VisualContentAltText
+ * @property string|null $VisualContentAltText
  */
 class CustomContentVisual extends Shape
 {
     /**
      * @param array{
      *     VisualId: string,
-     *     Title?: VisualTitleLabelOptions,
-     *     Subtitle?: VisualSubtitleLabelOptions,
-     *     ChartConfiguration?: CustomContentConfiguration,
-     *     Actions?: list<VisualCustomAction>,
+     *     Title?: VisualTitleLabelOptions|null,
+     *     Subtitle?: VisualSubtitleLabelOptions|null,
+     *     ChartConfiguration?: CustomContentConfiguration|null,
+     *     Actions?: list<VisualCustomAction>|null,
      *     DataSetIdentifier: string,
-     *     VisualContentAltText?: string
+     *     VisualContentAltText?: string|null
      * } $args
      */
     public function __construct(array $args)

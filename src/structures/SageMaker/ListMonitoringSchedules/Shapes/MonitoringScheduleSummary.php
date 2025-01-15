@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  * @property 'Pending'|'Failed'|'Scheduled'|'Stopped' $MonitoringScheduleStatus
- * @property string $EndpointName
- * @property string $MonitoringJobDefinitionName
- * @property 'DataQuality'|'ModelQuality'|'ModelBias'|'ModelExplainability' $MonitoringType
+ * @property string|null $EndpointName
+ * @property string|null $MonitoringJobDefinitionName
+ * @property 'DataQuality'|'ModelQuality'|'ModelBias'|'ModelExplainability'|null $MonitoringType
  */
 class MonitoringScheduleSummary extends Shape
 {
@@ -23,9 +23,9 @@ class MonitoringScheduleSummary extends Shape
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
      *     MonitoringScheduleStatus: 'Pending'|'Failed'|'Scheduled'|'Stopped',
-     *     EndpointName?: string,
-     *     MonitoringJobDefinitionName?: string,
-     *     MonitoringType?: 'DataQuality'|'ModelQuality'|'ModelBias'|'ModelExplainability'
+     *     EndpointName?: string|null,
+     *     MonitoringJobDefinitionName?: string|null,
+     *     MonitoringType?: 'DataQuality'|'ModelQuality'|'ModelBias'|'ModelExplainability'|null
      * } $args
      */
     public function __construct(array $args)

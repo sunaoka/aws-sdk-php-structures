@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iam\CreateInstanceProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PermissionsBoundaryPolicy' $PermissionsBoundaryType
- * @property string $PermissionsBoundaryArn
+ * @property 'PermissionsBoundaryPolicy'|null $PermissionsBoundaryType
+ * @property string|null $PermissionsBoundaryArn
  */
 class AttachedPermissionsBoundary extends Shape
 {
     /**
      * @param array{
-     *     PermissionsBoundaryType?: 'PermissionsBoundaryPolicy',
-     *     PermissionsBoundaryArn?: string
+     *     PermissionsBoundaryType?: 'PermissionsBoundaryPolicy'|null,
+     *     PermissionsBoundaryArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

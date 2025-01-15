@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateFleet;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $farmId
  * @property string $displayName
- * @property string $description
+ * @property string|null $description
  * @property string $roleArn
- * @property int<0, 2147483647> $minWorkerCount
+ * @property int<0, 2147483647>|null $minWorkerCount
  * @property int<0, 2147483647> $maxWorkerCount
  * @property Shapes\FleetConfiguration $configuration
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateFleetRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     farmId: string,
      *     displayName: string,
-     *     description?: string,
+     *     description?: string|null,
      *     roleArn: string,
-     *     minWorkerCount?: int<0, 2147483647>,
+     *     minWorkerCount?: int<0, 2147483647>|null,
      *     maxWorkerCount: int<0, 2147483647>,
      *     configuration: Shapes\FleetConfiguration,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

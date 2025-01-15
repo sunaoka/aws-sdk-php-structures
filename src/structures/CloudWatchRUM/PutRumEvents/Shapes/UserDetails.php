@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchRUM\PutRumEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $sessionId
- * @property string $userId
+ * @property string|null $sessionId
+ * @property string|null $userId
  */
 class UserDetails extends Shape
 {
     /**
      * @param array{
-     *     sessionId?: string,
-     *     userId?: string
+     *     sessionId?: string|null,
+     *     userId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

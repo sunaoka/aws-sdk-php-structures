@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\GetIpamPoolCidrs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\IpamPoolCidr> $IpamPoolCidrs
- * @property string $NextToken
+ * @property list<Shapes\IpamPoolCidr>|null $IpamPoolCidrs
+ * @property string|null $NextToken
  */
 class GetIpamPoolCidrsResponse extends Response
 {

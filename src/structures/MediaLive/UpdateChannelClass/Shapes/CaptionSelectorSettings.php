@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannelClass\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AncillarySourceSettings $AncillarySourceSettings
- * @property AribSourceSettings $AribSourceSettings
- * @property DvbSubSourceSettings $DvbSubSourceSettings
- * @property EmbeddedSourceSettings $EmbeddedSourceSettings
- * @property Scte20SourceSettings $Scte20SourceSettings
- * @property Scte27SourceSettings $Scte27SourceSettings
- * @property TeletextSourceSettings $TeletextSourceSettings
+ * @property AncillarySourceSettings|null $AncillarySourceSettings
+ * @property AribSourceSettings|null $AribSourceSettings
+ * @property DvbSubSourceSettings|null $DvbSubSourceSettings
+ * @property EmbeddedSourceSettings|null $EmbeddedSourceSettings
+ * @property Scte20SourceSettings|null $Scte20SourceSettings
+ * @property Scte27SourceSettings|null $Scte27SourceSettings
+ * @property TeletextSourceSettings|null $TeletextSourceSettings
  */
 class CaptionSelectorSettings extends Shape
 {
     /**
      * @param array{
-     *     AncillarySourceSettings?: AncillarySourceSettings,
-     *     AribSourceSettings?: AribSourceSettings,
-     *     DvbSubSourceSettings?: DvbSubSourceSettings,
-     *     EmbeddedSourceSettings?: EmbeddedSourceSettings,
-     *     Scte20SourceSettings?: Scte20SourceSettings,
-     *     Scte27SourceSettings?: Scte27SourceSettings,
-     *     TeletextSourceSettings?: TeletextSourceSettings
+     *     AncillarySourceSettings?: AncillarySourceSettings|null,
+     *     AribSourceSettings?: AribSourceSettings|null,
+     *     DvbSubSourceSettings?: DvbSubSourceSettings|null,
+     *     EmbeddedSourceSettings?: EmbeddedSourceSettings|null,
+     *     Scte20SourceSettings?: Scte20SourceSettings|null,
+     *     Scte27SourceSettings?: Scte27SourceSettings|null,
+     *     TeletextSourceSettings?: TeletextSourceSettings|null
      * } $args
      */
     public function __construct(array $args = [])

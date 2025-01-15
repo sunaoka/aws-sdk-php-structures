@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TemplateArn
  * @property string $LensAlias
- * @property string $LensNotes
- * @property array<string, string> $PillarNotes
+ * @property string|null $LensNotes
+ * @property array<string, string>|null $PillarNotes
  */
 class UpdateReviewTemplateLensReviewRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateReviewTemplateLensReviewRequest extends Request
      * @param array{
      *     TemplateArn: string,
      *     LensAlias: string,
-     *     LensNotes?: string,
-     *     PillarNotes?: array<string, string>
+     *     LensNotes?: string|null,
+     *     PillarNotes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

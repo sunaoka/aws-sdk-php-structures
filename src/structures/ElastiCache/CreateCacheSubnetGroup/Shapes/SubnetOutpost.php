@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElastiCache\CreateCacheSubnetGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubnetOutpostArn
+ * @property string|null $SubnetOutpostArn
  */
 class SubnetOutpost extends Shape
 {
     /**
-     * @param array{SubnetOutpostArn?: string} $args
+     * @param array{SubnetOutpostArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

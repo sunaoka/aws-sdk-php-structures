@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SocialMessaging\AssociateWhatsAppBusinessAccoun
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountName
- * @property 'COMPLETE'|'INCOMPLETE' $registrationStatus
- * @property list<WhatsAppPhoneNumberDetail> $unregisteredWhatsAppPhoneNumbers
- * @property string $wabaId
+ * @property string|null $accountName
+ * @property 'COMPLETE'|'INCOMPLETE'|null $registrationStatus
+ * @property list<WhatsAppPhoneNumberDetail>|null $unregisteredWhatsAppPhoneNumbers
+ * @property string|null $wabaId
  */
 class LinkedWhatsAppBusinessAccountIdMetaData extends Shape
 {
     /**
      * @param array{
-     *     accountName?: string,
-     *     registrationStatus?: 'COMPLETE'|'INCOMPLETE',
-     *     unregisteredWhatsAppPhoneNumbers?: list<WhatsAppPhoneNumberDetail>,
-     *     wabaId?: string
+     *     accountName?: string|null,
+     *     registrationStatus?: 'COMPLETE'|'INCOMPLETE'|null,
+     *     unregisteredWhatsAppPhoneNumbers?: list<WhatsAppPhoneNumberDetail>|null,
+     *     wabaId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\GreengrassV2\GetComponent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'JSON'|'YAML' $recipeOutputFormat
+ * @property 'JSON'|'YAML'|null $recipeOutputFormat
  * @property string $arn
  */
 class GetComponentRequest extends Request
 {
     /**
      * @param array{
-     *     recipeOutputFormat?: 'JSON'|'YAML',
+     *     recipeOutputFormat?: 'JSON'|'YAML'|null,
      *     arn: string
      * } $args
      */

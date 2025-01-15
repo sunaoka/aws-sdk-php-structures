@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property string $Expression
- * @property TargetTrackingMetricStat $MetricStat
- * @property string $Label
- * @property int<1, max> $Period
- * @property bool $ReturnData
+ * @property string|null $Expression
+ * @property TargetTrackingMetricStat|null $MetricStat
+ * @property string|null $Label
+ * @property int<1, max>|null $Period
+ * @property bool|null $ReturnData
  */
 class TargetTrackingMetricDataQuery extends Shape
 {
     /**
      * @param array{
      *     Id: string,
-     *     Expression?: string,
-     *     MetricStat?: TargetTrackingMetricStat,
-     *     Label?: string,
-     *     Period?: int<1, max>,
-     *     ReturnData?: bool
+     *     Expression?: string|null,
+     *     MetricStat?: TargetTrackingMetricStat|null,
+     *     Label?: string|null,
+     *     Period?: int<1, max>|null,
+     *     ReturnData?: bool|null
      * } $args
      */
     public function __construct(array $args)

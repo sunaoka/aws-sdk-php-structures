@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\DiscoverInputSchema;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ResourceARN
+ * @property string|null $ResourceARN
  * @property string $ServiceExecutionRole
- * @property Shapes\InputStartingPositionConfiguration $InputStartingPositionConfiguration
- * @property Shapes\S3Configuration $S3Configuration
- * @property Shapes\InputProcessingConfiguration $InputProcessingConfiguration
+ * @property Shapes\InputStartingPositionConfiguration|null $InputStartingPositionConfiguration
+ * @property Shapes\S3Configuration|null $S3Configuration
+ * @property Shapes\InputProcessingConfiguration|null $InputProcessingConfiguration
  */
 class DiscoverInputSchemaRequest extends Request
 {
     /**
      * @param array{
-     *     ResourceARN?: string,
+     *     ResourceARN?: string|null,
      *     ServiceExecutionRole: string,
-     *     InputStartingPositionConfiguration?: Shapes\InputStartingPositionConfiguration,
-     *     S3Configuration?: Shapes\S3Configuration,
-     *     InputProcessingConfiguration?: Shapes\InputProcessingConfiguration
+     *     InputStartingPositionConfiguration?: Shapes\InputStartingPositionConfiguration|null,
+     *     S3Configuration?: Shapes\S3Configuration|null,
+     *     InputProcessingConfiguration?: Shapes\InputProcessingConfiguration|null
      * } $args
      */
     public function __construct(array $args)

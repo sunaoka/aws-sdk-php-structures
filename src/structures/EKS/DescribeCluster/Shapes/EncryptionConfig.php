@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EKS\DescribeCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $resources
- * @property Provider $provider
+ * @property list<string>|null $resources
+ * @property Provider|null $provider
  */
 class EncryptionConfig extends Shape
 {
     /**
      * @param array{
-     *     resources?: list<string>,
-     *     provider?: Provider
+     *     resources?: list<string>|null,
+     *     provider?: Provider|null
      * } $args
      */
     public function __construct(array $args = [])

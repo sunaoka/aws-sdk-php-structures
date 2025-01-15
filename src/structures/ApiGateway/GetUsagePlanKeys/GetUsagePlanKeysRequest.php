@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $usagePlanId
- * @property string $position
- * @property int $limit
- * @property string $nameQuery
+ * @property string|null $position
+ * @property int|null $limit
+ * @property string|null $nameQuery
  */
 class GetUsagePlanKeysRequest extends Request
 {
     /**
      * @param array{
      *     usagePlanId: string,
-     *     position?: string,
-     *     limit?: int,
-     *     nameQuery?: string
+     *     position?: string|null,
+     *     limit?: int|null,
+     *     nameQuery?: string|null
      * } $args
      */
     public function __construct(array $args)

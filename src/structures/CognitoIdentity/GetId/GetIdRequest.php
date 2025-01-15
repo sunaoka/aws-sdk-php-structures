@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CognitoIdentity\GetId;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AccountId
+ * @property string|null $AccountId
  * @property string $IdentityPoolId
- * @property array<string, string> $Logins
+ * @property array<string, string>|null $Logins
  */
 class GetIdRequest extends Request
 {
     /**
      * @param array{
-     *     AccountId?: string,
+     *     AccountId?: string|null,
      *     IdentityPoolId: string,
-     *     Logins?: array<string, string>
+     *     Logins?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

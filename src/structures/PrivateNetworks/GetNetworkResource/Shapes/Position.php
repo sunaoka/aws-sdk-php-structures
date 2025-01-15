@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PrivateNetworks\GetNetworkResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $elevation
- * @property 'AGL'|'AMSL' $elevationReference
- * @property 'FEET' $elevationUnit
- * @property double $latitude
- * @property double $longitude
+ * @property double|null $elevation
+ * @property 'AGL'|'AMSL'|null $elevationReference
+ * @property 'FEET'|null $elevationUnit
+ * @property double|null $latitude
+ * @property double|null $longitude
  */
 class Position extends Shape
 {
     /**
      * @param array{
-     *     elevation?: double,
-     *     elevationReference?: 'AGL'|'AMSL',
-     *     elevationUnit?: 'FEET',
-     *     latitude?: double,
-     *     longitude?: double
+     *     elevation?: double|null,
+     *     elevationReference?: 'AGL'|'AMSL'|null,
+     *     elevationUnit?: 'FEET'|null,
+     *     latitude?: double|null,
+     *     longitude?: double|null
      * } $args
      */
     public function __construct(array $args = [])

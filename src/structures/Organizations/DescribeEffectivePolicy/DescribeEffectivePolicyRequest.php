@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'TAG_POLICY'|'BACKUP_POLICY'|'AISERVICES_OPT_OUT_POLICY'|'CHATBOT_POLICY'|'DECLARATIVE_POLICY_EC2' $PolicyType
- * @property string $TargetId
+ * @property string|null $TargetId
  */
 class DescribeEffectivePolicyRequest extends Request
 {
     /**
      * @param array{
      *     PolicyType: 'TAG_POLICY'|'BACKUP_POLICY'|'AISERVICES_OPT_OUT_POLICY'|'CHATBOT_POLICY'|'DECLARATIVE_POLICY_EC2',
-     *     TargetId?: string
+     *     TargetId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\ListBillScenarioUsageModif
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Expression> $and
- * @property list<Expression> $or
- * @property Expression $not
- * @property ExpressionFilter $costCategories
- * @property ExpressionFilter $dimensions
- * @property ExpressionFilter $tags
+ * @property list<Expression>|null $and
+ * @property list<Expression>|null $or
+ * @property Expression|null $not
+ * @property ExpressionFilter|null $costCategories
+ * @property ExpressionFilter|null $dimensions
+ * @property ExpressionFilter|null $tags
  */
 class Expression extends Shape
 {
     /**
      * @param array{
-     *     and?: list<Expression>,
-     *     or?: list<Expression>,
-     *     not?: Expression,
-     *     costCategories?: ExpressionFilter,
-     *     dimensions?: ExpressionFilter,
-     *     tags?: ExpressionFilter
+     *     and?: list<Expression>|null,
+     *     or?: list<Expression>|null,
+     *     not?: Expression|null,
+     *     costCategories?: ExpressionFilter|null,
+     *     dimensions?: ExpressionFilter|null,
+     *     tags?: ExpressionFilter|null
      * } $args
      */
     public function __construct(array $args = [])

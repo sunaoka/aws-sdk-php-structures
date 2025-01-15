@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\SearchNearby\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<double> $BoundingBox
- * @property list<string> $IncludeCountries
- * @property list<string> $IncludeCategories
- * @property list<string> $ExcludeCategories
- * @property list<string> $IncludeBusinessChains
- * @property list<string> $ExcludeBusinessChains
- * @property list<string> $IncludeFoodTypes
- * @property list<string> $ExcludeFoodTypes
+ * @property list<double>|null $BoundingBox
+ * @property list<string>|null $IncludeCountries
+ * @property list<string>|null $IncludeCategories
+ * @property list<string>|null $ExcludeCategories
+ * @property list<string>|null $IncludeBusinessChains
+ * @property list<string>|null $ExcludeBusinessChains
+ * @property list<string>|null $IncludeFoodTypes
+ * @property list<string>|null $ExcludeFoodTypes
  */
 class SearchNearbyFilter extends Shape
 {
     /**
      * @param array{
-     *     BoundingBox?: list<double>,
-     *     IncludeCountries?: list<string>,
-     *     IncludeCategories?: list<string>,
-     *     ExcludeCategories?: list<string>,
-     *     IncludeBusinessChains?: list<string>,
-     *     ExcludeBusinessChains?: list<string>,
-     *     IncludeFoodTypes?: list<string>,
-     *     ExcludeFoodTypes?: list<string>
+     *     BoundingBox?: list<double>|null,
+     *     IncludeCountries?: list<string>|null,
+     *     IncludeCategories?: list<string>|null,
+     *     ExcludeCategories?: list<string>|null,
+     *     IncludeBusinessChains?: list<string>|null,
+     *     ExcludeBusinessChains?: list<string>|null,
+     *     IncludeFoodTypes?: list<string>|null,
+     *     ExcludeFoodTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

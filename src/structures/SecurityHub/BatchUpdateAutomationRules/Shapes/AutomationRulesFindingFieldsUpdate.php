@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchUpdateAutomationRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NoteUpdate $Note
- * @property SeverityUpdate $Severity
- * @property 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE' $VerificationState
- * @property int<0, 100> $Confidence
- * @property int<0, 100> $Criticality
- * @property list<string> $Types
- * @property array<string, string> $UserDefinedFields
- * @property WorkflowUpdate $Workflow
- * @property list<RelatedFinding> $RelatedFindings
+ * @property NoteUpdate|null $Note
+ * @property SeverityUpdate|null $Severity
+ * @property 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE'|null $VerificationState
+ * @property int<0, 100>|null $Confidence
+ * @property int<0, 100>|null $Criticality
+ * @property list<string>|null $Types
+ * @property array<string, string>|null $UserDefinedFields
+ * @property WorkflowUpdate|null $Workflow
+ * @property list<RelatedFinding>|null $RelatedFindings
  */
 class AutomationRulesFindingFieldsUpdate extends Shape
 {
     /**
      * @param array{
-     *     Note?: NoteUpdate,
-     *     Severity?: SeverityUpdate,
-     *     VerificationState?: 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE',
-     *     Confidence?: int<0, 100>,
-     *     Criticality?: int<0, 100>,
-     *     Types?: list<string>,
-     *     UserDefinedFields?: array<string, string>,
-     *     Workflow?: WorkflowUpdate,
-     *     RelatedFindings?: list<RelatedFinding>
+     *     Note?: NoteUpdate|null,
+     *     Severity?: SeverityUpdate|null,
+     *     VerificationState?: 'UNKNOWN'|'TRUE_POSITIVE'|'FALSE_POSITIVE'|'BENIGN_POSITIVE'|null,
+     *     Confidence?: int<0, 100>|null,
+     *     Criticality?: int<0, 100>|null,
+     *     Types?: list<string>|null,
+     *     UserDefinedFields?: array<string, string>|null,
+     *     Workflow?: WorkflowUpdate|null,
+     *     RelatedFindings?: list<RelatedFinding>|null
      * } $args
      */
     public function __construct(array $args = [])

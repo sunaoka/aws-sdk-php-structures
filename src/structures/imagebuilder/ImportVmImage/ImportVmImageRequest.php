@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property string $semanticVersion
- * @property string $description
+ * @property string|null $description
  * @property 'Windows'|'Linux'|'macOS' $platform
- * @property string $osVersion
+ * @property string|null $osVersion
  * @property string $vmImportTaskId
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property string $clientToken
  */
 class ImportVmImageRequest extends Request
@@ -20,11 +20,11 @@ class ImportVmImageRequest extends Request
      * @param array{
      *     name: string,
      *     semanticVersion: string,
-     *     description?: string,
+     *     description?: string|null,
      *     platform: 'Windows'|'Linux'|'macOS',
-     *     osVersion?: string,
+     *     osVersion?: string|null,
      *     vmImportTaskId: string,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     clientToken: string
      * } $args
      */

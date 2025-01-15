@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\SearchProducts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
- * @property int $ApproximateCount
+ * @property string|null $Value
+ * @property int|null $ApproximateCount
  */
 class ProductViewAggregationValue extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
-     *     ApproximateCount?: int
+     *     Value?: string|null,
+     *     ApproximateCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

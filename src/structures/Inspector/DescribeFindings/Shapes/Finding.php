@@ -6,19 +6,19 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $arn
- * @property int<0, max> $schemaVersion
- * @property string $service
- * @property InspectorServiceAttributes $serviceAttributes
- * @property 'ec2-instance' $assetType
- * @property AssetAttributes $assetAttributes
- * @property string $id
- * @property string $title
- * @property string $description
- * @property string $recommendation
- * @property 'Low'|'Medium'|'High'|'Informational'|'Undefined' $severity
- * @property double $numericSeverity
- * @property int<0, 10> $confidence
- * @property bool $indicatorOfCompromise
+ * @property int<0, max>|null $schemaVersion
+ * @property string|null $service
+ * @property InspectorServiceAttributes|null $serviceAttributes
+ * @property 'ec2-instance'|null $assetType
+ * @property AssetAttributes|null $assetAttributes
+ * @property string|null $id
+ * @property string|null $title
+ * @property string|null $description
+ * @property string|null $recommendation
+ * @property 'Low'|'Medium'|'High'|'Informational'|'Undefined'|null $severity
+ * @property double|null $numericSeverity
+ * @property int<0, 10>|null $confidence
+ * @property bool|null $indicatorOfCompromise
  * @property list<Attribute> $attributes
  * @property list<Attribute> $userAttributes
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -29,19 +29,19 @@ class Finding extends Shape
     /**
      * @param array{
      *     arn: string,
-     *     schemaVersion?: int<0, max>,
-     *     service?: string,
-     *     serviceAttributes?: InspectorServiceAttributes,
-     *     assetType?: 'ec2-instance',
-     *     assetAttributes?: AssetAttributes,
-     *     id?: string,
-     *     title?: string,
-     *     description?: string,
-     *     recommendation?: string,
-     *     severity?: 'Low'|'Medium'|'High'|'Informational'|'Undefined',
-     *     numericSeverity?: double,
-     *     confidence?: int<0, 10>,
-     *     indicatorOfCompromise?: bool,
+     *     schemaVersion?: int<0, max>|null,
+     *     service?: string|null,
+     *     serviceAttributes?: InspectorServiceAttributes|null,
+     *     assetType?: 'ec2-instance'|null,
+     *     assetAttributes?: AssetAttributes|null,
+     *     id?: string|null,
+     *     title?: string|null,
+     *     description?: string|null,
+     *     recommendation?: string|null,
+     *     severity?: 'Low'|'Medium'|'High'|'Informational'|'Undefined'|null,
+     *     numericSeverity?: double|null,
+     *     confidence?: int<0, 10>|null,
+     *     indicatorOfCompromise?: bool|null,
      *     attributes: list<Attribute>,
      *     userAttributes: list<Attribute>,
      *     createdAt: \Aws\Api\DateTimeResult,

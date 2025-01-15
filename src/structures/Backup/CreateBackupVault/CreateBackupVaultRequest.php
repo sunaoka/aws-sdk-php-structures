@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupVaultName
- * @property array<string, string> $BackupVaultTags
- * @property string $EncryptionKeyArn
- * @property string $CreatorRequestId
+ * @property array<string, string>|null $BackupVaultTags
+ * @property string|null $EncryptionKeyArn
+ * @property string|null $CreatorRequestId
  */
 class CreateBackupVaultRequest extends Request
 {
     /**
      * @param array{
      *     BackupVaultName: string,
-     *     BackupVaultTags?: array<string, string>,
-     *     EncryptionKeyArn?: string,
-     *     CreatorRequestId?: string
+     *     BackupVaultTags?: array<string, string>|null,
+     *     EncryptionKeyArn?: string|null,
+     *     CreatorRequestId?: string|null
      * } $args
      */
     public function __construct(array $args)

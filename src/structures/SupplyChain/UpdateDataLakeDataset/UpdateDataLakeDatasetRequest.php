@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $instanceId
  * @property string $namespace
  * @property string $name
- * @property string $description
+ * @property string|null $description
  */
 class UpdateDataLakeDatasetRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateDataLakeDatasetRequest extends Request
      *     instanceId: string,
      *     namespace: string,
      *     name: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

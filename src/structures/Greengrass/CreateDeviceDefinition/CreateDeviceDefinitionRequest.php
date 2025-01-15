@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateDeviceDefinition;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AmznClientToken
- * @property Shapes\DeviceDefinitionVersion $InitialVersion
- * @property string $Name
- * @property array<string, string> $tags
+ * @property string|null $AmznClientToken
+ * @property Shapes\DeviceDefinitionVersion|null $InitialVersion
+ * @property string|null $Name
+ * @property array<string, string>|null $tags
  */
 class CreateDeviceDefinitionRequest extends Request
 {
     /**
      * @param array{
-     *     AmznClientToken?: string,
-     *     InitialVersion?: Shapes\DeviceDefinitionVersion,
-     *     Name?: string,
-     *     tags?: array<string, string>
+     *     AmznClientToken?: string|null,
+     *     InitialVersion?: Shapes\DeviceDefinitionVersion|null,
+     *     Name?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

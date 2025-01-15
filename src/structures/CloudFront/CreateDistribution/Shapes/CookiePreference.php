@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'none'|'whitelist'|'all' $Forward
- * @property CookieNames $WhitelistedNames
+ * @property CookieNames|null $WhitelistedNames
  */
 class CookiePreference extends Shape
 {
     /**
      * @param array{
      *     Forward: 'none'|'whitelist'|'all',
-     *     WhitelistedNames?: CookieNames
+     *     WhitelistedNames?: CookieNames|null
      * } $args
      */
     public function __construct(array $args)

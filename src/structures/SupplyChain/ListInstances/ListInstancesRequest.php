@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SupplyChain\ListInstances;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property int<0, 20> $maxResults
- * @property list<string> $instanceNameFilter
- * @property list<'Initializing'|'Active'|'CreateFailed'|'DeleteFailed'|'Deleting'|'Deleted'> $instanceStateFilter
+ * @property string|null $nextToken
+ * @property int<0, 20>|null $maxResults
+ * @property list<string>|null $instanceNameFilter
+ * @property list<'Initializing'|'Active'|'CreateFailed'|'DeleteFailed'|'Deleting'|'Deleted'>|null $instanceStateFilter
  */
 class ListInstancesRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     maxResults?: int<0, 20>,
-     *     instanceNameFilter?: list<string>,
-     *     instanceStateFilter?: list<'Initializing'|'Active'|'CreateFailed'|'DeleteFailed'|'Deleting'|'Deleted'>
+     *     nextToken?: string|null,
+     *     maxResults?: int<0, 20>|null,
+     *     instanceNameFilter?: list<string>|null,
+     *     instanceStateFilter?: list<'Initializing'|'Active'|'CreateFailed'|'DeleteFailed'|'Deleting'|'Deleted'>|null
      * } $args
      */
     public function __construct(array $args = [])

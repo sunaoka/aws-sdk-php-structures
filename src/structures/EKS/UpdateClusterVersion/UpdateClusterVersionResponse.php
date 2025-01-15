@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\EKS\UpdateClusterVersion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Update $update
+ * @property Shapes\Update|null $update
  */
 class UpdateClusterVersionResponse extends Response
 {

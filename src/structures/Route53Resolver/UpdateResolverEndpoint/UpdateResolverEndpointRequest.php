@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResolverEndpointId
- * @property string $Name
- * @property 'IPV6'|'IPV4'|'DUALSTACK' $ResolverEndpointType
- * @property list<Shapes\UpdateIpAddress> $UpdateIpAddresses
- * @property list<'DoH'|'Do53'|'DoH-FIPS'> $Protocols
+ * @property string|null $Name
+ * @property 'IPV6'|'IPV4'|'DUALSTACK'|null $ResolverEndpointType
+ * @property list<Shapes\UpdateIpAddress>|null $UpdateIpAddresses
+ * @property list<'DoH'|'Do53'|'DoH-FIPS'>|null $Protocols
  */
 class UpdateResolverEndpointRequest extends Request
 {
     /**
      * @param array{
      *     ResolverEndpointId: string,
-     *     Name?: string,
-     *     ResolverEndpointType?: 'IPV6'|'IPV4'|'DUALSTACK',
-     *     UpdateIpAddresses?: list<Shapes\UpdateIpAddress>,
-     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>
+     *     Name?: string|null,
+     *     ResolverEndpointType?: 'IPV6'|'IPV4'|'DUALSTACK'|null,
+     *     UpdateIpAddresses?: list<Shapes\UpdateIpAddress>|null,
+     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null
      * } $args
      */
     public function __construct(array $args)

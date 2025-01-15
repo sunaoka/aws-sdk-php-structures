@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DataZone\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $contentSummary
+ * @property string|null $contentSummary
  * @property string $formName
- * @property string $id
+ * @property string|null $id
  * @property \Aws\Api\DateTimeResult $timestamp
  * @property string $typeIdentifier
- * @property string $typeRevision
+ * @property string|null $typeRevision
  */
 class TimeSeriesDataPointSummaryFormOutput extends Shape
 {
     /**
      * @param array{
-     *     contentSummary?: string,
+     *     contentSummary?: string|null,
      *     formName: string,
-     *     id?: string,
+     *     id?: string|null,
      *     timestamp: \Aws\Api\DateTimeResult,
      *     typeIdentifier: string,
-     *     typeRevision?: string
+     *     typeRevision?: string|null
      * } $args
      */
     public function __construct(array $args)

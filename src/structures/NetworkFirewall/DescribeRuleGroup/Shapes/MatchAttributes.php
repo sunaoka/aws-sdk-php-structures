@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\DescribeRuleGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Address> $Sources
- * @property list<Address> $Destinations
- * @property list<PortRange> $SourcePorts
- * @property list<PortRange> $DestinationPorts
- * @property list<int<0, 255>> $Protocols
- * @property list<TCPFlagField> $TCPFlags
+ * @property list<Address>|null $Sources
+ * @property list<Address>|null $Destinations
+ * @property list<PortRange>|null $SourcePorts
+ * @property list<PortRange>|null $DestinationPorts
+ * @property list<int<0, 255>>|null $Protocols
+ * @property list<TCPFlagField>|null $TCPFlags
  */
 class MatchAttributes extends Shape
 {
     /**
      * @param array{
-     *     Sources?: list<Address>,
-     *     Destinations?: list<Address>,
-     *     SourcePorts?: list<PortRange>,
-     *     DestinationPorts?: list<PortRange>,
-     *     Protocols?: list<int<0, 255>>,
-     *     TCPFlags?: list<TCPFlagField>
+     *     Sources?: list<Address>|null,
+     *     Destinations?: list<Address>|null,
+     *     SourcePorts?: list<PortRange>|null,
+     *     DestinationPorts?: list<PortRange>|null,
+     *     Protocols?: list<int<0, 255>>|null,
+     *     TCPFlags?: list<TCPFlagField>|null
      * } $args
      */
     public function __construct(array $args = [])

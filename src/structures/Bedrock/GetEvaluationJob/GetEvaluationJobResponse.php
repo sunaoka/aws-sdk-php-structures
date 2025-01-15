@@ -8,17 +8,17 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $jobName
  * @property 'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|'Deleting' $status
  * @property string $jobArn
- * @property string $jobDescription
+ * @property string|null $jobDescription
  * @property string $roleArn
- * @property string $customerEncryptionKeyId
+ * @property string|null $customerEncryptionKeyId
  * @property 'Human'|'Automated' $jobType
- * @property 'ModelEvaluation'|'RagEvaluation' $applicationType
+ * @property 'ModelEvaluation'|'RagEvaluation'|null $applicationType
  * @property Shapes\EvaluationConfig $evaluationConfig
  * @property Shapes\EvaluationInferenceConfig $inferenceConfig
  * @property Shapes\EvaluationOutputDataConfig $outputDataConfig
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastModifiedTime
- * @property list<string> $failureMessages
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTime
+ * @property list<string>|null $failureMessages
  */
 class GetEvaluationJobResponse extends Response
 {

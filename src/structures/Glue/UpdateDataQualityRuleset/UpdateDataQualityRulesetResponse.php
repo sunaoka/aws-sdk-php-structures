@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateDataQualityRuleset;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Name
- * @property string $Description
- * @property string $Ruleset
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $Ruleset
  */
 class UpdateDataQualityRulesetResponse extends Response
 {

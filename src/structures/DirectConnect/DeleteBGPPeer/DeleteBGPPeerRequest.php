@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DeleteBGPPeer;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $virtualInterfaceId
- * @property int $asn
- * @property string $customerAddress
- * @property string $bgpPeerId
+ * @property string|null $virtualInterfaceId
+ * @property int|null $asn
+ * @property string|null $customerAddress
+ * @property string|null $bgpPeerId
  */
 class DeleteBGPPeerRequest extends Request
 {
     /**
      * @param array{
-     *     virtualInterfaceId?: string,
-     *     asn?: int,
-     *     customerAddress?: string,
-     *     bgpPeerId?: string
+     *     virtualInterfaceId?: string|null,
+     *     asn?: int|null,
+     *     customerAddress?: string|null,
+     *     bgpPeerId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

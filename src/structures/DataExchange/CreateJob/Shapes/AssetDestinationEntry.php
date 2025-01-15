@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $AssetId
  * @property string $Bucket
- * @property string $Key
+ * @property string|null $Key
  */
 class AssetDestinationEntry extends Shape
 {
@@ -15,7 +15,7 @@ class AssetDestinationEntry extends Shape
      * @param array{
      *     AssetId: string,
      *     Bucket: string,
-     *     Key?: string
+     *     Key?: string|null
      * } $args
      */
     public function __construct(array $args)

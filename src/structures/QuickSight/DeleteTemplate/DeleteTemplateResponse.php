@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\QuickSight\DeleteTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RequestId
- * @property string $Arn
- * @property string $TemplateId
- * @property int $Status
+ * @property string|null $RequestId
+ * @property string|null $Arn
+ * @property string|null $TemplateId
+ * @property int|null $Status
  */
 class DeleteTemplateResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\XRay\BatchGetTraces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property double $Duration
- * @property bool $LimitExceeded
- * @property list<Segment> $Segments
+ * @property string|null $Id
+ * @property double|null $Duration
+ * @property bool|null $LimitExceeded
+ * @property list<Segment>|null $Segments
  */
 class Trace extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Duration?: double,
-     *     LimitExceeded?: bool,
-     *     Segments?: list<Segment>
+     *     Id?: string|null,
+     *     Duration?: double|null,
+     *     LimitExceeded?: bool|null,
+     *     Segments?: list<Segment>|null
      * } $args
      */
     public function __construct(array $args = [])

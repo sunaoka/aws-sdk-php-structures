@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\FMS\GetPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CENTRALIZED'|'DISTRIBUTED' $FirewallDeploymentModel
+ * @property 'CENTRALIZED'|'DISTRIBUTED'|null $FirewallDeploymentModel
  */
 class NetworkFirewallPolicy extends Shape
 {
     /**
-     * @param array{FirewallDeploymentModel?: 'CENTRALIZED'|'DISTRIBUTED'} $args
+     * @param array{FirewallDeploymentModel?: 'CENTRALIZED'|'DISTRIBUTED'|null} $args
      */
     public function __construct(array $args = [])
     {

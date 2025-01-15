@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MQ\Promote;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $BrokerId
+ * @property string|null $BrokerId
  */
 class PromoteResponse extends Response
 {

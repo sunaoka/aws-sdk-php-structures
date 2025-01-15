@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Text
+ * @property string|null $Text
  */
 class ColumnDescription extends Shape
 {
     /**
-     * @param array{Text?: string} $args
+     * @param array{Text?: string|null} $args
      */
     public function __construct(array $args = [])
     {

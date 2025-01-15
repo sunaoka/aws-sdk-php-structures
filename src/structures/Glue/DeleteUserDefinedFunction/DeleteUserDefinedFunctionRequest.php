@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\DeleteUserDefinedFunction;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $DatabaseName
  * @property string $FunctionName
  */
@@ -13,7 +13,7 @@ class DeleteUserDefinedFunctionRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DatabaseName: string,
      *     FunctionName: string
      * } $args

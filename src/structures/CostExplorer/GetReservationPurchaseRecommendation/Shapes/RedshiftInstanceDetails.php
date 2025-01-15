@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetReservationPurchaseRecommendati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Family
- * @property string $NodeType
- * @property string $Region
- * @property bool $CurrentGeneration
- * @property bool $SizeFlexEligible
+ * @property string|null $Family
+ * @property string|null $NodeType
+ * @property string|null $Region
+ * @property bool|null $CurrentGeneration
+ * @property bool|null $SizeFlexEligible
  */
 class RedshiftInstanceDetails extends Shape
 {
     /**
      * @param array{
-     *     Family?: string,
-     *     NodeType?: string,
-     *     Region?: string,
-     *     CurrentGeneration?: bool,
-     *     SizeFlexEligible?: bool
+     *     Family?: string|null,
+     *     NodeType?: string|null,
+     *     Region?: string|null,
+     *     CurrentGeneration?: bool|null,
+     *     SizeFlexEligible?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

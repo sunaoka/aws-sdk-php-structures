@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $instanceId
  * @property string $sessionId
- * @property string $sessionName
+ * @property string|null $sessionName
  * @property Shapes\SessionSharingConfiguration $sharingConfiguration
  */
 class UpdateQAppSessionMetadataRequest extends Request
@@ -16,7 +16,7 @@ class UpdateQAppSessionMetadataRequest extends Request
      * @param array{
      *     instanceId: string,
      *     sessionId: string,
-     *     sessionName?: string,
+     *     sessionName?: string|null,
      *     sharingConfiguration: Shapes\SessionSharingConfiguration
      * } $args
      */

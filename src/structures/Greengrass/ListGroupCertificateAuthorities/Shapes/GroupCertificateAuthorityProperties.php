@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Greengrass\ListGroupCertificateAuthorities\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GroupCertificateAuthorityArn
- * @property string $GroupCertificateAuthorityId
+ * @property string|null $GroupCertificateAuthorityArn
+ * @property string|null $GroupCertificateAuthorityId
  */
 class GroupCertificateAuthorityProperties extends Shape
 {
     /**
      * @param array{
-     *     GroupCertificateAuthorityArn?: string,
-     *     GroupCertificateAuthorityId?: string
+     *     GroupCertificateAuthorityArn?: string|null,
+     *     GroupCertificateAuthorityId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

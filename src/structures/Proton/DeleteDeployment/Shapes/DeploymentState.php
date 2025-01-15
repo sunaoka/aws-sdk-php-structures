@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Proton\DeleteDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ComponentState $component
- * @property EnvironmentState $environment
- * @property ServiceInstanceState $serviceInstance
- * @property ServicePipelineState $servicePipeline
+ * @property ComponentState|null $component
+ * @property EnvironmentState|null $environment
+ * @property ServiceInstanceState|null $serviceInstance
+ * @property ServicePipelineState|null $servicePipeline
  */
 class DeploymentState extends Shape
 {
     /**
      * @param array{
-     *     component?: ComponentState,
-     *     environment?: EnvironmentState,
-     *     serviceInstance?: ServiceInstanceState,
-     *     servicePipeline?: ServicePipelineState
+     *     component?: ComponentState|null,
+     *     environment?: EnvironmentState|null,
+     *     serviceInstance?: ServiceInstanceState|null,
+     *     servicePipeline?: ServicePipelineState|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\InvokeAssistant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property Location $location
+ * @property string|null $arn
+ * @property Location|null $location
  */
 class Source extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     location?: Location
+     *     arn?: string|null,
+     *     location?: Location|null
      * } $args
      */
     public function __construct(array $args = [])

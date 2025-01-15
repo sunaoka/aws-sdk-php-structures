@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $deliveryStreamName
- * @property string $separator
- * @property Payload $payload
+ * @property string|null $separator
+ * @property Payload|null $payload
  */
 class FirehoseAction extends Shape
 {
     /**
      * @param array{
      *     deliveryStreamName: string,
-     *     separator?: string,
-     *     payload?: Payload
+     *     separator?: string|null,
+     *     payload?: Payload|null
      * } $args
      */
     public function __construct(array $args)

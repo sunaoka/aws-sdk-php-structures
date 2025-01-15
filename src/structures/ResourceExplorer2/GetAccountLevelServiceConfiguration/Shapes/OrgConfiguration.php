@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ENABLED'|'DISABLED' $AWSServiceAccessStatus
- * @property string $ServiceLinkedRole
+ * @property string|null $ServiceLinkedRole
  */
 class OrgConfiguration extends Shape
 {
     /**
      * @param array{
      *     AWSServiceAccessStatus: 'ENABLED'|'DISABLED',
-     *     ServiceLinkedRole?: string
+     *     ServiceLinkedRole?: string|null
      * } $args
      */
     public function __construct(array $args)

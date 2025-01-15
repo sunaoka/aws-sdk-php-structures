@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClientRequestToken
  * @property string $MediaRegion
- * @property string $MeetingHostId
+ * @property string|null $MeetingHostId
  * @property string $ExternalMeetingId
- * @property Shapes\NotificationsConfiguration $NotificationsConfiguration
- * @property Shapes\MeetingFeaturesConfiguration $MeetingFeatures
- * @property string $PrimaryMeetingId
- * @property list<string> $TenantIds
- * @property list<Shapes\Tag> $Tags
+ * @property Shapes\NotificationsConfiguration|null $NotificationsConfiguration
+ * @property Shapes\MeetingFeaturesConfiguration|null $MeetingFeatures
+ * @property string|null $PrimaryMeetingId
+ * @property list<string>|null $TenantIds
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateMeetingRequest extends Request
 {
@@ -21,13 +21,13 @@ class CreateMeetingRequest extends Request
      * @param array{
      *     ClientRequestToken: string,
      *     MediaRegion: string,
-     *     MeetingHostId?: string,
+     *     MeetingHostId?: string|null,
      *     ExternalMeetingId: string,
-     *     NotificationsConfiguration?: Shapes\NotificationsConfiguration,
-     *     MeetingFeatures?: Shapes\MeetingFeaturesConfiguration,
-     *     PrimaryMeetingId?: string,
-     *     TenantIds?: list<string>,
-     *     Tags?: list<Shapes\Tag>
+     *     NotificationsConfiguration?: Shapes\NotificationsConfiguration|null,
+     *     MeetingFeatures?: Shapes\MeetingFeaturesConfiguration|null,
+     *     PrimaryMeetingId?: string|null,
+     *     TenantIds?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

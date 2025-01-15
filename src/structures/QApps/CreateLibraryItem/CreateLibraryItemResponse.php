@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $status
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
  * @property int $ratingCount
- * @property bool $isVerified
+ * @property bool|null $isVerified
  */
 class CreateLibraryItemResponse extends Response
 {

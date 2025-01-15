@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribeFleetUtilization\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FleetId
- * @property string $FleetArn
- * @property int<0, max> $ActiveServerProcessCount
- * @property int<0, max> $ActiveGameSessionCount
- * @property int<0, max> $CurrentPlayerSessionCount
- * @property int<0, max> $MaximumPlayerSessionCount
- * @property string $Location
+ * @property string|null $FleetId
+ * @property string|null $FleetArn
+ * @property int<0, max>|null $ActiveServerProcessCount
+ * @property int<0, max>|null $ActiveGameSessionCount
+ * @property int<0, max>|null $CurrentPlayerSessionCount
+ * @property int<0, max>|null $MaximumPlayerSessionCount
+ * @property string|null $Location
  */
 class FleetUtilization extends Shape
 {
     /**
      * @param array{
-     *     FleetId?: string,
-     *     FleetArn?: string,
-     *     ActiveServerProcessCount?: int<0, max>,
-     *     ActiveGameSessionCount?: int<0, max>,
-     *     CurrentPlayerSessionCount?: int<0, max>,
-     *     MaximumPlayerSessionCount?: int<0, max>,
-     *     Location?: string
+     *     FleetId?: string|null,
+     *     FleetArn?: string|null,
+     *     ActiveServerProcessCount?: int<0, max>|null,
+     *     ActiveGameSessionCount?: int<0, max>|null,
+     *     CurrentPlayerSessionCount?: int<0, max>|null,
+     *     MaximumPlayerSessionCount?: int<0, max>|null,
+     *     Location?: string|null
      * } $args
      */
     public function __construct(array $args = [])

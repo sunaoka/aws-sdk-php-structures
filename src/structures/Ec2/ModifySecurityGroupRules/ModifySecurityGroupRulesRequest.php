@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GroupId
  * @property list<Shapes\SecurityGroupRuleUpdate> $SecurityGroupRules
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class ModifySecurityGroupRulesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ModifySecurityGroupRulesRequest extends Request
      * @param array{
      *     GroupId: string,
      *     SecurityGroupRules: list<Shapes\SecurityGroupRuleUpdate>,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

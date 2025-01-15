@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeMonitoringSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MonitoringCsvDatasetFormat $Csv
- * @property MonitoringJsonDatasetFormat $Json
- * @property MonitoringParquetDatasetFormat $Parquet
+ * @property MonitoringCsvDatasetFormat|null $Csv
+ * @property MonitoringJsonDatasetFormat|null $Json
+ * @property MonitoringParquetDatasetFormat|null $Parquet
  */
 class MonitoringDatasetFormat extends Shape
 {
     /**
      * @param array{
-     *     Csv?: MonitoringCsvDatasetFormat,
-     *     Json?: MonitoringJsonDatasetFormat,
-     *     Parquet?: MonitoringParquetDatasetFormat
+     *     Csv?: MonitoringCsvDatasetFormat|null,
+     *     Json?: MonitoringJsonDatasetFormat|null,
+     *     Parquet?: MonitoringParquetDatasetFormat|null
      * } $args
      */
     public function __construct(array $args = [])

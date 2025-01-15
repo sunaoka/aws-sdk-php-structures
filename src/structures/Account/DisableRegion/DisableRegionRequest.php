@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Account\DisableRegion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AccountId
+ * @property string|null $AccountId
  * @property string $RegionName
  */
 class DisableRegionRequest extends Request
 {
     /**
      * @param array{
-     *     AccountId?: string,
+     *     AccountId?: string|null,
      *     RegionName: string
      * } $args
      */

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<Column> $columns
  * @property list<Column> $partitionKeys
  * @property list<'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE'> $analysisRuleTypes
- * @property 'DIRECT_QUERY' $analysisMethod
+ * @property 'DIRECT_QUERY'|null $analysisMethod
  * @property string $creatorAccountId
  * @property string $name
  * @property string $collaborationId
@@ -18,7 +18,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property 'TABLE'|'ID_MAPPING_TABLE' $type
  * @property list<SchemaStatusDetail> $schemaStatusDetails
- * @property SchemaTypeProperties $schemaTypeProperties
+ * @property SchemaTypeProperties|null $schemaTypeProperties
  */
 class Schema extends Shape
 {
@@ -27,7 +27,7 @@ class Schema extends Shape
      *     columns: list<Column>,
      *     partitionKeys: list<Column>,
      *     analysisRuleTypes: list<'AGGREGATION'|'LIST'|'CUSTOM'|'ID_MAPPING_TABLE'>,
-     *     analysisMethod?: 'DIRECT_QUERY',
+     *     analysisMethod?: 'DIRECT_QUERY'|null,
      *     creatorAccountId: string,
      *     name: string,
      *     collaborationId: string,
@@ -37,7 +37,7 @@ class Schema extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     type: 'TABLE'|'ID_MAPPING_TABLE',
      *     schemaStatusDetails: list<SchemaStatusDetail>,
-     *     schemaTypeProperties?: SchemaTypeProperties
+     *     schemaTypeProperties?: SchemaTypeProperties|null
      * } $args
      */
     public function __construct(array $args)

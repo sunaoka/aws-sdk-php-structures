@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $ViewId
- * @property string $VersionDescription
- * @property string $ViewContentSha256
+ * @property string|null $VersionDescription
+ * @property string|null $ViewContentSha256
  */
 class CreateViewVersionRequest extends Request
 {
@@ -16,8 +16,8 @@ class CreateViewVersionRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     ViewId: string,
-     *     VersionDescription?: string,
-     *     ViewContentSha256?: string
+     *     VersionDescription?: string|null,
+     *     ViewContentSha256?: string|null
      * } $args
      */
     public function __construct(array $args)

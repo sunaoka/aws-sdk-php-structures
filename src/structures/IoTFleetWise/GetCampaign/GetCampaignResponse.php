@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\GetCampaign;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $name
- * @property string $arn
- * @property string $description
- * @property string $signalCatalogArn
- * @property string $targetArn
- * @property 'CREATING'|'WAITING_FOR_APPROVAL'|'RUNNING'|'SUSPENDED' $status
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $expiryTime
- * @property int<0, 4294967295> $postTriggerCollectionDuration
- * @property 'OFF'|'SEND_ACTIVE_DTCS' $diagnosticsMode
- * @property 'OFF'|'TO_DISK' $spoolingMode
- * @property 'OFF'|'SNAPPY' $compression
- * @property int<0, max> $priority
- * @property list<Shapes\SignalInformation> $signalsToCollect
- * @property Shapes\CollectionScheme $collectionScheme
- * @property list<string> $dataExtraDimensions
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastModificationTime
- * @property list<Shapes\DataDestinationConfig> $dataDestinationConfigs
- * @property list<Shapes\DataPartition> $dataPartitions
- * @property list<Shapes\SignalFetchInformation> $signalsToFetch
+ * @property string|null $name
+ * @property string|null $arn
+ * @property string|null $description
+ * @property string|null $signalCatalogArn
+ * @property string|null $targetArn
+ * @property 'CREATING'|'WAITING_FOR_APPROVAL'|'RUNNING'|'SUSPENDED'|null $status
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $expiryTime
+ * @property int<0, 4294967295>|null $postTriggerCollectionDuration
+ * @property 'OFF'|'SEND_ACTIVE_DTCS'|null $diagnosticsMode
+ * @property 'OFF'|'TO_DISK'|null $spoolingMode
+ * @property 'OFF'|'SNAPPY'|null $compression
+ * @property int<0, max>|null $priority
+ * @property list<Shapes\SignalInformation>|null $signalsToCollect
+ * @property Shapes\CollectionScheme|null $collectionScheme
+ * @property list<string>|null $dataExtraDimensions
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastModificationTime
+ * @property list<Shapes\DataDestinationConfig>|null $dataDestinationConfigs
+ * @property list<Shapes\DataPartition>|null $dataPartitions
+ * @property list<Shapes\SignalFetchInformation>|null $signalsToFetch
  */
 class GetCampaignResponse extends Response
 {

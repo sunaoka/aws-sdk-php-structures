@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\DeleteConnector;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $connectorArn
- * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED' $connectorState
+ * @property string|null $connectorArn
+ * @property 'RUNNING'|'CREATING'|'UPDATING'|'DELETING'|'FAILED'|null $connectorState
  */
 class DeleteConnectorResponse extends Response
 {

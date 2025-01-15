@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Arn
  * @property string $Name
- * @property 'PeriodBased'|'RequestBased' $EvaluationType
+ * @property 'PeriodBased'|'RequestBased'|null $EvaluationType
  * @property 'OK'|'WARNING'|'BREACHED'|'INSUFFICIENT_DATA' $BudgetStatus
- * @property double $Attainment
- * @property int $TotalBudgetSeconds
- * @property int $BudgetSecondsRemaining
- * @property int $TotalBudgetRequests
- * @property int $BudgetRequestsRemaining
- * @property ServiceLevelIndicator $Sli
- * @property RequestBasedServiceLevelIndicator $RequestBasedSli
- * @property Goal $Goal
+ * @property double|null $Attainment
+ * @property int|null $TotalBudgetSeconds
+ * @property int|null $BudgetSecondsRemaining
+ * @property int|null $TotalBudgetRequests
+ * @property int|null $BudgetRequestsRemaining
+ * @property ServiceLevelIndicator|null $Sli
+ * @property RequestBasedServiceLevelIndicator|null $RequestBasedSli
+ * @property Goal|null $Goal
  */
 class ServiceLevelObjectiveBudgetReport extends Shape
 {
@@ -24,16 +24,16 @@ class ServiceLevelObjectiveBudgetReport extends Shape
      * @param array{
      *     Arn: string,
      *     Name: string,
-     *     EvaluationType?: 'PeriodBased'|'RequestBased',
+     *     EvaluationType?: 'PeriodBased'|'RequestBased'|null,
      *     BudgetStatus: 'OK'|'WARNING'|'BREACHED'|'INSUFFICIENT_DATA',
-     *     Attainment?: double,
-     *     TotalBudgetSeconds?: int,
-     *     BudgetSecondsRemaining?: int,
-     *     TotalBudgetRequests?: int,
-     *     BudgetRequestsRemaining?: int,
-     *     Sli?: ServiceLevelIndicator,
-     *     RequestBasedSli?: RequestBasedServiceLevelIndicator,
-     *     Goal?: Goal
+     *     Attainment?: double|null,
+     *     TotalBudgetSeconds?: int|null,
+     *     BudgetSecondsRemaining?: int|null,
+     *     TotalBudgetRequests?: int|null,
+     *     BudgetRequestsRemaining?: int|null,
+     *     Sli?: ServiceLevelIndicator|null,
+     *     RequestBasedSli?: RequestBasedServiceLevelIndicator|null,
+     *     Goal?: Goal|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ivschat\ListLoggingConfigurations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3DestinationConfiguration $s3
- * @property CloudWatchLogsDestinationConfiguration $cloudWatchLogs
- * @property FirehoseDestinationConfiguration $firehose
+ * @property S3DestinationConfiguration|null $s3
+ * @property CloudWatchLogsDestinationConfiguration|null $cloudWatchLogs
+ * @property FirehoseDestinationConfiguration|null $firehose
  */
 class DestinationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     s3?: S3DestinationConfiguration,
-     *     cloudWatchLogs?: CloudWatchLogsDestinationConfiguration,
-     *     firehose?: FirehoseDestinationConfiguration
+     *     s3?: S3DestinationConfiguration|null,
+     *     cloudWatchLogs?: CloudWatchLogsDestinationConfiguration|null,
+     *     firehose?: FirehoseDestinationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

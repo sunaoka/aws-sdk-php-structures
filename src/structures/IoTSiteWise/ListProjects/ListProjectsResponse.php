@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ProjectSummary> $projectSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListProjectsResponse extends Response
 {

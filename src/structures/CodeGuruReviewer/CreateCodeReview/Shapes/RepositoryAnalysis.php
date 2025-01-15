@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeGuruReviewer\CreateCodeReview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RepositoryHeadSourceCodeType $RepositoryHead
- * @property SourceCodeType $SourceCodeType
+ * @property RepositoryHeadSourceCodeType|null $RepositoryHead
+ * @property SourceCodeType|null $SourceCodeType
  */
 class RepositoryAnalysis extends Shape
 {
     /**
      * @param array{
-     *     RepositoryHead?: RepositoryHeadSourceCodeType,
-     *     SourceCodeType?: SourceCodeType
+     *     RepositoryHead?: RepositoryHeadSourceCodeType|null,
+     *     SourceCodeType?: SourceCodeType|null
      * } $args
      */
     public function __construct(array $args = [])

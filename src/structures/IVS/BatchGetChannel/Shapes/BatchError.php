@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IVS\BatchGetChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $code
- * @property string $message
+ * @property string|null $arn
+ * @property string|null $code
+ * @property string|null $message
  */
 class BatchError extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     code?: string,
-     *     message?: string
+     *     arn?: string|null,
+     *     code?: string|null,
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

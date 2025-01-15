@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\GetSubject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property list<CredentialSummary> $credentials
- * @property bool $enabled
- * @property list<InstanceProperty> $instanceProperties
- * @property \Aws\Api\DateTimeResult $lastSeenAt
- * @property string $subjectArn
- * @property string $subjectId
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $x509Subject
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property list<CredentialSummary>|null $credentials
+ * @property bool|null $enabled
+ * @property list<InstanceProperty>|null $instanceProperties
+ * @property \Aws\Api\DateTimeResult|null $lastSeenAt
+ * @property string|null $subjectArn
+ * @property string|null $subjectId
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $x509Subject
  */
 class SubjectDetail extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     credentials?: list<CredentialSummary>,
-     *     enabled?: bool,
-     *     instanceProperties?: list<InstanceProperty>,
-     *     lastSeenAt?: \Aws\Api\DateTimeResult,
-     *     subjectArn?: string,
-     *     subjectId?: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     x509Subject?: string
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     credentials?: list<CredentialSummary>|null,
+     *     enabled?: bool|null,
+     *     instanceProperties?: list<InstanceProperty>|null,
+     *     lastSeenAt?: \Aws\Api\DateTimeResult|null,
+     *     subjectArn?: string|null,
+     *     subjectId?: string|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     x509Subject?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Pipes\UpdatePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3LogDestinationParameters $S3LogDestination
- * @property FirehoseLogDestinationParameters $FirehoseLogDestination
- * @property CloudwatchLogsLogDestinationParameters $CloudwatchLogsLogDestination
+ * @property S3LogDestinationParameters|null $S3LogDestination
+ * @property FirehoseLogDestinationParameters|null $FirehoseLogDestination
+ * @property CloudwatchLogsLogDestinationParameters|null $CloudwatchLogsLogDestination
  * @property 'OFF'|'ERROR'|'INFO'|'TRACE' $Level
- * @property list<'ALL'> $IncludeExecutionData
+ * @property list<'ALL'>|null $IncludeExecutionData
  */
 class PipeLogConfigurationParameters extends Shape
 {
     /**
      * @param array{
-     *     S3LogDestination?: S3LogDestinationParameters,
-     *     FirehoseLogDestination?: FirehoseLogDestinationParameters,
-     *     CloudwatchLogsLogDestination?: CloudwatchLogsLogDestinationParameters,
+     *     S3LogDestination?: S3LogDestinationParameters|null,
+     *     FirehoseLogDestination?: FirehoseLogDestinationParameters|null,
+     *     CloudwatchLogsLogDestination?: CloudwatchLogsLogDestinationParameters|null,
      *     Level: 'OFF'|'ERROR'|'INFO'|'TRACE',
-     *     IncludeExecutionData?: list<'ALL'>
+     *     IncludeExecutionData?: list<'ALL'>|null
      * } $args
      */
     public function __construct(array $args)

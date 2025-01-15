@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Option
- * @property string $Title
- * @property string $Description
+ * @property string|null $Title
+ * @property string|null $Description
  */
 class SelectOptionDescription extends Shape
 {
     /**
      * @param array{
      *     Option: string,
-     *     Title?: string,
-     *     Description?: string
+     *     Title?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

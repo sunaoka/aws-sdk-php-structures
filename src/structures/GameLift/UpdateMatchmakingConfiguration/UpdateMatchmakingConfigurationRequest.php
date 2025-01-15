@@ -6,38 +6,38 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property list<string> $GameSessionQueueArns
- * @property int<1, 43200> $RequestTimeoutSeconds
- * @property int<1, 600> $AcceptanceTimeoutSeconds
- * @property bool $AcceptanceRequired
- * @property string $RuleSetName
- * @property string $NotificationTarget
- * @property int<0, max> $AdditionalPlayerCount
- * @property string $CustomEventData
- * @property list<Shapes\GameProperty> $GameProperties
- * @property string $GameSessionData
- * @property 'AUTOMATIC'|'MANUAL' $BackfillMode
- * @property 'STANDALONE'|'WITH_QUEUE' $FlexMatchMode
+ * @property string|null $Description
+ * @property list<string>|null $GameSessionQueueArns
+ * @property int<1, 43200>|null $RequestTimeoutSeconds
+ * @property int<1, 600>|null $AcceptanceTimeoutSeconds
+ * @property bool|null $AcceptanceRequired
+ * @property string|null $RuleSetName
+ * @property string|null $NotificationTarget
+ * @property int<0, max>|null $AdditionalPlayerCount
+ * @property string|null $CustomEventData
+ * @property list<Shapes\GameProperty>|null $GameProperties
+ * @property string|null $GameSessionData
+ * @property 'AUTOMATIC'|'MANUAL'|null $BackfillMode
+ * @property 'STANDALONE'|'WITH_QUEUE'|null $FlexMatchMode
  */
 class UpdateMatchmakingConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     GameSessionQueueArns?: list<string>,
-     *     RequestTimeoutSeconds?: int<1, 43200>,
-     *     AcceptanceTimeoutSeconds?: int<1, 600>,
-     *     AcceptanceRequired?: bool,
-     *     RuleSetName?: string,
-     *     NotificationTarget?: string,
-     *     AdditionalPlayerCount?: int<0, max>,
-     *     CustomEventData?: string,
-     *     GameProperties?: list<Shapes\GameProperty>,
-     *     GameSessionData?: string,
-     *     BackfillMode?: 'AUTOMATIC'|'MANUAL',
-     *     FlexMatchMode?: 'STANDALONE'|'WITH_QUEUE'
+     *     Description?: string|null,
+     *     GameSessionQueueArns?: list<string>|null,
+     *     RequestTimeoutSeconds?: int<1, 43200>|null,
+     *     AcceptanceTimeoutSeconds?: int<1, 600>|null,
+     *     AcceptanceRequired?: bool|null,
+     *     RuleSetName?: string|null,
+     *     NotificationTarget?: string|null,
+     *     AdditionalPlayerCount?: int<0, max>|null,
+     *     CustomEventData?: string|null,
+     *     GameProperties?: list<Shapes\GameProperty>|null,
+     *     GameSessionData?: string|null,
+     *     BackfillMode?: 'AUTOMATIC'|'MANUAL'|null,
+     *     FlexMatchMode?: 'STANDALONE'|'WITH_QUEUE'|null
      * } $args
      */
     public function __construct(array $args)

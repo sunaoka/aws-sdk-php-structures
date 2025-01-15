@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $resourceArn
  * @property string $secretArn
- * @property string $database
- * @property string $schema
+ * @property string|null $database
+ * @property string|null $schema
  */
 class BeginTransactionRequest extends Request
 {
@@ -16,8 +16,8 @@ class BeginTransactionRequest extends Request
      * @param array{
      *     resourceArn: string,
      *     secretArn: string,
-     *     database?: string,
-     *     schema?: string
+     *     database?: string|null,
+     *     schema?: string|null
      * } $args
      */
     public function __construct(array $args)

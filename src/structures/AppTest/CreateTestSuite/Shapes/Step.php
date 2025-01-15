@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property StepAction $action
  */
 class Step extends Shape
@@ -14,7 +14,7 @@ class Step extends Shape
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     action: StepAction
      * } $args
      */

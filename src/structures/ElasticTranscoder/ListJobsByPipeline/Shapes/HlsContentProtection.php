@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ListJobsByPipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Method
- * @property string $Key
- * @property string $KeyMd5
- * @property string $InitializationVector
- * @property string $LicenseAcquisitionUrl
- * @property string $KeyStoragePolicy
+ * @property string|null $Method
+ * @property string|null $Key
+ * @property string|null $KeyMd5
+ * @property string|null $InitializationVector
+ * @property string|null $LicenseAcquisitionUrl
+ * @property string|null $KeyStoragePolicy
  */
 class HlsContentProtection extends Shape
 {
     /**
      * @param array{
-     *     Method?: string,
-     *     Key?: string,
-     *     KeyMd5?: string,
-     *     InitializationVector?: string,
-     *     LicenseAcquisitionUrl?: string,
-     *     KeyStoragePolicy?: string
+     *     Method?: string|null,
+     *     Key?: string|null,
+     *     KeyMd5?: string|null,
+     *     InitializationVector?: string|null,
+     *     LicenseAcquisitionUrl?: string|null,
+     *     KeyStoragePolicy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

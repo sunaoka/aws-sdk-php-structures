@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GatewayARN
- * @property list<string> $TapeARNs
- * @property string $Marker
- * @property int<1, max> $Limit
+ * @property list<string>|null $TapeARNs
+ * @property string|null $Marker
+ * @property int<1, max>|null $Limit
  */
 class DescribeTapesRequest extends Request
 {
     /**
      * @param array{
      *     GatewayARN: string,
-     *     TapeARNs?: list<string>,
-     *     Marker?: string,
-     *     Limit?: int<1, max>
+     *     TapeARNs?: list<string>|null,
+     *     Marker?: string|null,
+     *     Limit?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

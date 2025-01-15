@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $notificationConfigurationArn
  * @property string $source
  * @property string $eventType
- * @property string $eventPattern
+ * @property string|null $eventPattern
  * @property list<string> $regions
  */
 class CreateEventRuleRequest extends Request
@@ -18,7 +18,7 @@ class CreateEventRuleRequest extends Request
      *     notificationConfigurationArn: string,
      *     source: string,
      *     eventType: string,
-     *     eventPattern?: string,
+     *     eventPattern?: string|null,
      *     regions: list<string>
      * } $args
      */

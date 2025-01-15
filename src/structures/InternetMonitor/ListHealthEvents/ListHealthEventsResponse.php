@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\HealthEvent> $HealthEvents
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListHealthEventsResponse extends Response
 {

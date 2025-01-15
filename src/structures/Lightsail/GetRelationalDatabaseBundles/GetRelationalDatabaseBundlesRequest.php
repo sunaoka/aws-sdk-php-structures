@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetRelationalDatabaseBundles;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $pageToken
- * @property bool $includeInactive
+ * @property string|null $pageToken
+ * @property bool|null $includeInactive
  */
 class GetRelationalDatabaseBundlesRequest extends Request
 {
     /**
      * @param array{
-     *     pageToken?: string,
-     *     includeInactive?: bool
+     *     pageToken?: string|null,
+     *     includeInactive?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

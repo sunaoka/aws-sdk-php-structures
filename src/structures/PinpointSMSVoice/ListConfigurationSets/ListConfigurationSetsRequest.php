@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoice\ListConfigurationSets;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property string $PageSize
+ * @property string|null $NextToken
+ * @property string|null $PageSize
  */
 class ListConfigurationSetsRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     PageSize?: string
+     *     NextToken?: string|null,
+     *     PageSize?: string|null
      * } $args
      */
     public function __construct(array $args = [])

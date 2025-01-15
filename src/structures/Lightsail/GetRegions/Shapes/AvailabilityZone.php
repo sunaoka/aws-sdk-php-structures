@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetRegions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $zoneName
- * @property string $state
+ * @property string|null $zoneName
+ * @property string|null $state
  */
 class AvailabilityZone extends Shape
 {
     /**
      * @param array{
-     *     zoneName?: string,
-     *     state?: string
+     *     zoneName?: string|null,
+     *     state?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppRunner\CreateService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConnectionArn
- * @property string $AccessRoleArn
+ * @property string|null $ConnectionArn
+ * @property string|null $AccessRoleArn
  */
 class AuthenticationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ConnectionArn?: string,
-     *     AccessRoleArn?: string
+     *     ConnectionArn?: string|null,
+     *     AccessRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

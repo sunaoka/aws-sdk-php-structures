@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\XRay\GetTraceSummaries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property double $Duration
- * @property double $ResponseTime
- * @property bool $HasFault
- * @property bool $HasError
- * @property bool $HasThrottle
- * @property bool $IsPartial
- * @property Http $Http
- * @property array<string, list<ValueWithServiceIds>> $Annotations
- * @property list<TraceUser> $Users
- * @property list<ServiceId> $ServiceIds
- * @property list<ResourceARNDetail> $ResourceARNs
- * @property list<InstanceIdDetail> $InstanceIds
- * @property list<AvailabilityZoneDetail> $AvailabilityZones
- * @property ServiceId $EntryPoint
- * @property list<FaultRootCause> $FaultRootCauses
- * @property list<ErrorRootCause> $ErrorRootCauses
- * @property list<ResponseTimeRootCause> $ResponseTimeRootCauses
- * @property int $Revision
- * @property \Aws\Api\DateTimeResult $MatchedEventTime
+ * @property string|null $Id
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property double|null $Duration
+ * @property double|null $ResponseTime
+ * @property bool|null $HasFault
+ * @property bool|null $HasError
+ * @property bool|null $HasThrottle
+ * @property bool|null $IsPartial
+ * @property Http|null $Http
+ * @property array<string, list<ValueWithServiceIds>>|null $Annotations
+ * @property list<TraceUser>|null $Users
+ * @property list<ServiceId>|null $ServiceIds
+ * @property list<ResourceARNDetail>|null $ResourceARNs
+ * @property list<InstanceIdDetail>|null $InstanceIds
+ * @property list<AvailabilityZoneDetail>|null $AvailabilityZones
+ * @property ServiceId|null $EntryPoint
+ * @property list<FaultRootCause>|null $FaultRootCauses
+ * @property list<ErrorRootCause>|null $ErrorRootCauses
+ * @property list<ResponseTimeRootCause>|null $ResponseTimeRootCauses
+ * @property int|null $Revision
+ * @property \Aws\Api\DateTimeResult|null $MatchedEventTime
  */
 class TraceSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     Duration?: double,
-     *     ResponseTime?: double,
-     *     HasFault?: bool,
-     *     HasError?: bool,
-     *     HasThrottle?: bool,
-     *     IsPartial?: bool,
-     *     Http?: Http,
-     *     Annotations?: array<string, list<ValueWithServiceIds>>,
-     *     Users?: list<TraceUser>,
-     *     ServiceIds?: list<ServiceId>,
-     *     ResourceARNs?: list<ResourceARNDetail>,
-     *     InstanceIds?: list<InstanceIdDetail>,
-     *     AvailabilityZones?: list<AvailabilityZoneDetail>,
-     *     EntryPoint?: ServiceId,
-     *     FaultRootCauses?: list<FaultRootCause>,
-     *     ErrorRootCauses?: list<ErrorRootCause>,
-     *     ResponseTimeRootCauses?: list<ResponseTimeRootCause>,
-     *     Revision?: int,
-     *     MatchedEventTime?: \Aws\Api\DateTimeResult
+     *     Id?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     Duration?: double|null,
+     *     ResponseTime?: double|null,
+     *     HasFault?: bool|null,
+     *     HasError?: bool|null,
+     *     HasThrottle?: bool|null,
+     *     IsPartial?: bool|null,
+     *     Http?: Http|null,
+     *     Annotations?: array<string, list<ValueWithServiceIds>>|null,
+     *     Users?: list<TraceUser>|null,
+     *     ServiceIds?: list<ServiceId>|null,
+     *     ResourceARNs?: list<ResourceARNDetail>|null,
+     *     InstanceIds?: list<InstanceIdDetail>|null,
+     *     AvailabilityZones?: list<AvailabilityZoneDetail>|null,
+     *     EntryPoint?: ServiceId|null,
+     *     FaultRootCauses?: list<FaultRootCause>|null,
+     *     ErrorRootCauses?: list<ErrorRootCause>|null,
+     *     ResponseTimeRootCauses?: list<ResponseTimeRootCause>|null,
+     *     Revision?: int|null,
+     *     MatchedEventTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

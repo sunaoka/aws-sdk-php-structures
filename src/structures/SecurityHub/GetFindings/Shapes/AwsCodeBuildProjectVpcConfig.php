@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VpcId
- * @property list<string> $Subnets
- * @property list<string> $SecurityGroupIds
+ * @property string|null $VpcId
+ * @property list<string>|null $Subnets
+ * @property list<string>|null $SecurityGroupIds
  */
 class AwsCodeBuildProjectVpcConfig extends Shape
 {
     /**
      * @param array{
-     *     VpcId?: string,
-     *     Subnets?: list<string>,
-     *     SecurityGroupIds?: list<string>
+     *     VpcId?: string|null,
+     *     Subnets?: list<string>|null,
+     *     SecurityGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

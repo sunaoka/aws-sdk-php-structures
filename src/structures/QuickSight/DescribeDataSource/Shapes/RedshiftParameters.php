@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Host
- * @property int<0, 65535> $Port
+ * @property string|null $Host
+ * @property int<0, 65535>|null $Port
  * @property string $Database
- * @property string $ClusterId
- * @property RedshiftIAMParameters $IAMParameters
- * @property IdentityCenterConfiguration $IdentityCenterConfiguration
+ * @property string|null $ClusterId
+ * @property RedshiftIAMParameters|null $IAMParameters
+ * @property IdentityCenterConfiguration|null $IdentityCenterConfiguration
  */
 class RedshiftParameters extends Shape
 {
     /**
      * @param array{
-     *     Host?: string,
-     *     Port?: int<0, 65535>,
+     *     Host?: string|null,
+     *     Port?: int<0, 65535>|null,
      *     Database: string,
-     *     ClusterId?: string,
-     *     IAMParameters?: RedshiftIAMParameters,
-     *     IdentityCenterConfiguration?: IdentityCenterConfiguration
+     *     ClusterId?: string|null,
+     *     IAMParameters?: RedshiftIAMParameters|null,
+     *     IdentityCenterConfiguration?: IdentityCenterConfiguration|null
      * } $args
      */
     public function __construct(array $args)

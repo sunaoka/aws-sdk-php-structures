@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\WafRegional\GetSampledRequests\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClientIP
- * @property string $Country
- * @property string $URI
- * @property string $Method
- * @property string $HTTPVersion
- * @property list<HTTPHeader> $Headers
+ * @property string|null $ClientIP
+ * @property string|null $Country
+ * @property string|null $URI
+ * @property string|null $Method
+ * @property string|null $HTTPVersion
+ * @property list<HTTPHeader>|null $Headers
  */
 class HTTPRequest extends Shape
 {
     /**
      * @param array{
-     *     ClientIP?: string,
-     *     Country?: string,
-     *     URI?: string,
-     *     Method?: string,
-     *     HTTPVersion?: string,
-     *     Headers?: list<HTTPHeader>
+     *     ClientIP?: string|null,
+     *     Country?: string|null,
+     *     URI?: string|null,
+     *     Method?: string|null,
+     *     HTTPVersion?: string|null,
+     *     Headers?: list<HTTPHeader>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $Account
- * @property 'application.opensearchservice.amazonaws.com' $Service
+ * @property string|null $Account
+ * @property 'application.opensearchservice.amazonaws.com'|null $Service
  */
 class AuthorizeVpcEndpointAccessRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     Account?: string,
-     *     Service?: 'application.opensearchservice.amazonaws.com'
+     *     Account?: string|null,
+     *     Service?: 'application.opensearchservice.amazonaws.com'|null
      * } $args
      */
     public function __construct(array $args)

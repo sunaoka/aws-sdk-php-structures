@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FieldId
- * @property string $CustomLabel
- * @property 'HIDDEN'|'VISIBLE' $Visibility
+ * @property string|null $CustomLabel
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
  */
 class PivotTableFieldOption extends Shape
 {
     /**
      * @param array{
      *     FieldId: string,
-     *     CustomLabel?: string,
-     *     Visibility?: 'HIDDEN'|'VISIBLE'
+     *     CustomLabel?: string|null,
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null
      * } $args
      */
     public function __construct(array $args)

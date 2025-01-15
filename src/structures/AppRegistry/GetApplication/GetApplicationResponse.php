@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\AppRegistry\GetApplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $id
- * @property string $arn
- * @property string $name
- * @property string $description
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property int<0, max> $associatedResourceCount
- * @property array<string, string> $tags
- * @property Shapes\Integrations $integrations
- * @property array<string, string> $applicationTag
+ * @property string|null $id
+ * @property string|null $arn
+ * @property string|null $name
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property int<0, max>|null $associatedResourceCount
+ * @property array<string, string>|null $tags
+ * @property Shapes\Integrations|null $integrations
+ * @property array<string, string>|null $applicationTag
  */
 class GetApplicationResponse extends Response
 {

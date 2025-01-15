@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Batch\RegisterJobDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $attemptDurationSeconds
+ * @property int|null $attemptDurationSeconds
  */
 class JobTimeout extends Shape
 {
     /**
-     * @param array{attemptDurationSeconds?: int} $args
+     * @param array{attemptDurationSeconds?: int|null} $args
      */
     public function __construct(array $args = [])
     {

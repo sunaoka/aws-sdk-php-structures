@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<Message> $messages
- * @property string $responseCard
+ * @property string|null $responseCard
  */
 class Statement extends Shape
 {
     /**
      * @param array{
      *     messages: list<Message>,
-     *     responseCard?: string
+     *     responseCard?: string|null
      * } $args
      */
     public function __construct(array $args)

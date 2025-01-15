@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListWirelessGatewayTaskDefinitions\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LoRaWANGatewayVersion $CurrentVersion
- * @property LoRaWANGatewayVersion $UpdateVersion
+ * @property LoRaWANGatewayVersion|null $CurrentVersion
+ * @property LoRaWANGatewayVersion|null $UpdateVersion
  */
 class LoRaWANUpdateGatewayTaskEntry extends Shape
 {
     /**
      * @param array{
-     *     CurrentVersion?: LoRaWANGatewayVersion,
-     *     UpdateVersion?: LoRaWANGatewayVersion
+     *     CurrentVersion?: LoRaWANGatewayVersion|null,
+     *     UpdateVersion?: LoRaWANGatewayVersion|null
      * } $args
      */
     public function __construct(array $args = [])

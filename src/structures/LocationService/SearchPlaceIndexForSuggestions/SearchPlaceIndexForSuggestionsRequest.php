@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IndexName
  * @property string $Text
- * @property list<double> $BiasPosition
- * @property list<double> $FilterBBox
- * @property list<string> $FilterCountries
- * @property int<1, 15> $MaxResults
- * @property string $Language
- * @property list<string> $FilterCategories
- * @property string $Key
+ * @property list<double>|null $BiasPosition
+ * @property list<double>|null $FilterBBox
+ * @property list<string>|null $FilterCountries
+ * @property int<1, 15>|null $MaxResults
+ * @property string|null $Language
+ * @property list<string>|null $FilterCategories
+ * @property string|null $Key
  */
 class SearchPlaceIndexForSuggestionsRequest extends Request
 {
@@ -21,13 +21,13 @@ class SearchPlaceIndexForSuggestionsRequest extends Request
      * @param array{
      *     IndexName: string,
      *     Text: string,
-     *     BiasPosition?: list<double>,
-     *     FilterBBox?: list<double>,
-     *     FilterCountries?: list<string>,
-     *     MaxResults?: int<1, 15>,
-     *     Language?: string,
-     *     FilterCategories?: list<string>,
-     *     Key?: string
+     *     BiasPosition?: list<double>|null,
+     *     FilterBBox?: list<double>|null,
+     *     FilterCountries?: list<string>|null,
+     *     MaxResults?: int<1, 15>|null,
+     *     Language?: string|null,
+     *     FilterCategories?: list<string>|null,
+     *     Key?: string|null
      * } $args
      */
     public function __construct(array $args)

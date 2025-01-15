@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Iot\CreateProvisioningTemplateVersion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $templateArn
- * @property string $templateName
- * @property int $versionId
- * @property bool $isDefaultVersion
+ * @property string|null $templateArn
+ * @property string|null $templateName
+ * @property int|null $versionId
+ * @property bool|null $isDefaultVersion
  */
 class CreateProvisioningTemplateVersionResponse extends Response
 {

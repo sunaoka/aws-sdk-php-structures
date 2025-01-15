@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BCMDataExports\ListTables\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DefaultValue
- * @property string $Description
- * @property string $Name
- * @property list<string> $ValidValues
+ * @property string|null $DefaultValue
+ * @property string|null $Description
+ * @property string|null $Name
+ * @property list<string>|null $ValidValues
  */
 class TablePropertyDescription extends Shape
 {
     /**
      * @param array{
-     *     DefaultValue?: string,
-     *     Description?: string,
-     *     Name?: string,
-     *     ValidValues?: list<string>
+     *     DefaultValue?: string|null,
+     *     Description?: string|null,
+     *     Name?: string|null,
+     *     ValidValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

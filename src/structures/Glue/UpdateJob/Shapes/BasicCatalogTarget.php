@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property list<string> $Inputs
- * @property list<list<string>> $PartitionKeys
+ * @property list<list<string>>|null $PartitionKeys
  * @property string $Database
  * @property string $Table
  */
@@ -17,7 +17,7 @@ class BasicCatalogTarget extends Shape
      * @param array{
      *     Name: string,
      *     Inputs: list<string>,
-     *     PartitionKeys?: list<list<string>>,
+     *     PartitionKeys?: list<list<string>>|null,
      *     Database: string,
      *     Table: string
      * } $args

@@ -6,80 +6,80 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBClusterIdentifier
- * @property string $RestoreType
- * @property string $SourceDBClusterIdentifier
- * @property \Aws\Api\DateTimeResult $RestoreToTime
- * @property bool $UseLatestRestorableTime
- * @property int $Port
- * @property string $DBSubnetGroupName
- * @property string $OptionGroupName
- * @property list<string> $VpcSecurityGroupIds
- * @property list<Shapes\Tag> $Tags
- * @property string $KmsKeyId
- * @property bool $EnableIAMDatabaseAuthentication
- * @property int $BacktrackWindow
- * @property list<string> $EnableCloudwatchLogsExports
- * @property string $DBClusterParameterGroupName
- * @property bool $DeletionProtection
- * @property bool $CopyTagsToSnapshot
- * @property string $Domain
- * @property string $DomainIAMRoleName
- * @property Shapes\ScalingConfiguration $ScalingConfiguration
- * @property string $EngineMode
- * @property string $DBClusterInstanceClass
- * @property string $StorageType
- * @property bool $PubliclyAccessible
- * @property int $Iops
- * @property Shapes\ServerlessV2ScalingConfiguration $ServerlessV2ScalingConfiguration
- * @property string $NetworkType
- * @property string $SourceDbClusterResourceId
- * @property Shapes\RdsCustomClusterConfiguration $RdsCustomClusterConfiguration
- * @property int $MonitoringInterval
- * @property string $MonitoringRoleArn
- * @property bool $EnablePerformanceInsights
- * @property string $PerformanceInsightsKMSKeyId
- * @property int $PerformanceInsightsRetentionPeriod
- * @property string $EngineLifecycleSupport
+ * @property string|null $RestoreType
+ * @property string|null $SourceDBClusterIdentifier
+ * @property \Aws\Api\DateTimeResult|null $RestoreToTime
+ * @property bool|null $UseLatestRestorableTime
+ * @property int|null $Port
+ * @property string|null $DBSubnetGroupName
+ * @property string|null $OptionGroupName
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $KmsKeyId
+ * @property bool|null $EnableIAMDatabaseAuthentication
+ * @property int|null $BacktrackWindow
+ * @property list<string>|null $EnableCloudwatchLogsExports
+ * @property string|null $DBClusterParameterGroupName
+ * @property bool|null $DeletionProtection
+ * @property bool|null $CopyTagsToSnapshot
+ * @property string|null $Domain
+ * @property string|null $DomainIAMRoleName
+ * @property Shapes\ScalingConfiguration|null $ScalingConfiguration
+ * @property string|null $EngineMode
+ * @property string|null $DBClusterInstanceClass
+ * @property string|null $StorageType
+ * @property bool|null $PubliclyAccessible
+ * @property int|null $Iops
+ * @property Shapes\ServerlessV2ScalingConfiguration|null $ServerlessV2ScalingConfiguration
+ * @property string|null $NetworkType
+ * @property string|null $SourceDbClusterResourceId
+ * @property Shapes\RdsCustomClusterConfiguration|null $RdsCustomClusterConfiguration
+ * @property int|null $MonitoringInterval
+ * @property string|null $MonitoringRoleArn
+ * @property bool|null $EnablePerformanceInsights
+ * @property string|null $PerformanceInsightsKMSKeyId
+ * @property int|null $PerformanceInsightsRetentionPeriod
+ * @property string|null $EngineLifecycleSupport
  */
 class RestoreDBClusterToPointInTimeRequest extends Request
 {
     /**
      * @param array{
      *     DBClusterIdentifier: string,
-     *     RestoreType?: string,
-     *     SourceDBClusterIdentifier?: string,
-     *     RestoreToTime?: \Aws\Api\DateTimeResult,
-     *     UseLatestRestorableTime?: bool,
-     *     Port?: int,
-     *     DBSubnetGroupName?: string,
-     *     OptionGroupName?: string,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     Tags?: list<Shapes\Tag>,
-     *     KmsKeyId?: string,
-     *     EnableIAMDatabaseAuthentication?: bool,
-     *     BacktrackWindow?: int,
-     *     EnableCloudwatchLogsExports?: list<string>,
-     *     DBClusterParameterGroupName?: string,
-     *     DeletionProtection?: bool,
-     *     CopyTagsToSnapshot?: bool,
-     *     Domain?: string,
-     *     DomainIAMRoleName?: string,
-     *     ScalingConfiguration?: Shapes\ScalingConfiguration,
-     *     EngineMode?: string,
-     *     DBClusterInstanceClass?: string,
-     *     StorageType?: string,
-     *     PubliclyAccessible?: bool,
-     *     Iops?: int,
-     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration,
-     *     NetworkType?: string,
-     *     SourceDbClusterResourceId?: string,
-     *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration,
-     *     MonitoringInterval?: int,
-     *     MonitoringRoleArn?: string,
-     *     EnablePerformanceInsights?: bool,
-     *     PerformanceInsightsKMSKeyId?: string,
-     *     PerformanceInsightsRetentionPeriod?: int,
-     *     EngineLifecycleSupport?: string
+     *     RestoreType?: string|null,
+     *     SourceDBClusterIdentifier?: string|null,
+     *     RestoreToTime?: \Aws\Api\DateTimeResult|null,
+     *     UseLatestRestorableTime?: bool|null,
+     *     Port?: int|null,
+     *     DBSubnetGroupName?: string|null,
+     *     OptionGroupName?: string|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     KmsKeyId?: string|null,
+     *     EnableIAMDatabaseAuthentication?: bool|null,
+     *     BacktrackWindow?: int|null,
+     *     EnableCloudwatchLogsExports?: list<string>|null,
+     *     DBClusterParameterGroupName?: string|null,
+     *     DeletionProtection?: bool|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     Domain?: string|null,
+     *     DomainIAMRoleName?: string|null,
+     *     ScalingConfiguration?: Shapes\ScalingConfiguration|null,
+     *     EngineMode?: string|null,
+     *     DBClusterInstanceClass?: string|null,
+     *     StorageType?: string|null,
+     *     PubliclyAccessible?: bool|null,
+     *     Iops?: int|null,
+     *     ServerlessV2ScalingConfiguration?: Shapes\ServerlessV2ScalingConfiguration|null,
+     *     NetworkType?: string|null,
+     *     SourceDbClusterResourceId?: string|null,
+     *     RdsCustomClusterConfiguration?: Shapes\RdsCustomClusterConfiguration|null,
+     *     MonitoringInterval?: int|null,
+     *     MonitoringRoleArn?: string|null,
+     *     EnablePerformanceInsights?: bool|null,
+     *     PerformanceInsightsKMSKeyId?: string|null,
+     *     PerformanceInsightsRetentionPeriod?: int|null,
+     *     EngineLifecycleSupport?: string|null
      * } $args
      */
     public function __construct(array $args)

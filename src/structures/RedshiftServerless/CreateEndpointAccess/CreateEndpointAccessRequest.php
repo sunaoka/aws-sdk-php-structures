@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $endpointName
- * @property string $ownerAccount
+ * @property string|null $ownerAccount
  * @property list<string> $subnetIds
- * @property list<string> $vpcSecurityGroupIds
+ * @property list<string>|null $vpcSecurityGroupIds
  * @property string $workgroupName
  */
 class CreateEndpointAccessRequest extends Request
@@ -16,9 +16,9 @@ class CreateEndpointAccessRequest extends Request
     /**
      * @param array{
      *     endpointName: string,
-     *     ownerAccount?: string,
+     *     ownerAccount?: string|null,
      *     subnetIds: list<string>,
-     *     vpcSecurityGroupIds?: list<string>,
+     *     vpcSecurityGroupIds?: list<string>|null,
      *     workgroupName: string
      * } $args
      */

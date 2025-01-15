@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<0, 65535> $port
- * @property string $dnsName
+ * @property string|null $dnsName
  */
 class ServiceConnectClientAlias extends Shape
 {
     /**
      * @param array{
      *     port: int<0, 65535>,
-     *     dnsName?: string
+     *     dnsName?: string|null
      * } $args
      */
     public function __construct(array $args)

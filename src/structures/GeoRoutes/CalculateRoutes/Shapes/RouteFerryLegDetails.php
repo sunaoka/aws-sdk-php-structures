@@ -11,9 +11,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property RouteFerryDeparture $Departure
  * @property list<RouteFerryNotice> $Notices
  * @property list<RoutePassThroughWaypoint> $PassThroughWaypoints
- * @property string $RouteName
+ * @property string|null $RouteName
  * @property list<RouteFerrySpan> $Spans
- * @property RouteFerrySummary $Summary
+ * @property RouteFerrySummary|null $Summary
  * @property list<RouteFerryTravelStep> $TravelSteps
  */
 class RouteFerryLegDetails extends Shape
@@ -26,9 +26,9 @@ class RouteFerryLegDetails extends Shape
      *     Departure: RouteFerryDeparture,
      *     Notices: list<RouteFerryNotice>,
      *     PassThroughWaypoints: list<RoutePassThroughWaypoint>,
-     *     RouteName?: string,
+     *     RouteName?: string|null,
      *     Spans: list<RouteFerrySpan>,
-     *     Summary?: RouteFerrySummary,
+     *     Summary?: RouteFerrySummary|null,
      *     TravelSteps: list<RouteFerryTravelStep>
      * } $args
      */

@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DatasetName
  * @property string $Name
  * @property string $RecipeName
- * @property Shapes\Sample $Sample
+ * @property Shapes\Sample|null $Sample
  * @property string $RoleArn
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateProjectRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateProjectRequest extends Request
      *     DatasetName: string,
      *     Name: string,
      *     RecipeName: string,
-     *     Sample?: Shapes\Sample,
+     *     Sample?: Shapes\Sample|null,
      *     RoleArn: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

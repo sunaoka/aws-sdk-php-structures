@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property Shapes\StreamProcessingStartSelector $StartSelector
- * @property Shapes\StreamProcessingStopSelector $StopSelector
+ * @property Shapes\StreamProcessingStartSelector|null $StartSelector
+ * @property Shapes\StreamProcessingStopSelector|null $StopSelector
  */
 class StartStreamProcessorRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     StartSelector?: Shapes\StreamProcessingStartSelector,
-     *     StopSelector?: Shapes\StreamProcessingStopSelector
+     *     StartSelector?: Shapes\StreamProcessingStartSelector|null,
+     *     StopSelector?: Shapes\StreamProcessingStopSelector|null
      * } $args
      */
     public function __construct(array $args)

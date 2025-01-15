@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Transfer\ListExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FileSystemId
- * @property string $Path
+ * @property string|null $FileSystemId
+ * @property string|null $Path
  */
 class EfsFileLocation extends Shape
 {
     /**
      * @param array{
-     *     FileSystemId?: string,
-     *     Path?: string
+     *     FileSystemId?: string|null,
+     *     Path?: string|null
      * } $args
      */
     public function __construct(array $args = [])

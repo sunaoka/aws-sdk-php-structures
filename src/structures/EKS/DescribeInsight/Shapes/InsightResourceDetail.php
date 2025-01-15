@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\EKS\DescribeInsight\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property InsightStatus $insightStatus
- * @property string $kubernetesResourceUri
- * @property string $arn
+ * @property InsightStatus|null $insightStatus
+ * @property string|null $kubernetesResourceUri
+ * @property string|null $arn
  */
 class InsightResourceDetail extends Shape
 {
     /**
      * @param array{
-     *     insightStatus?: InsightStatus,
-     *     kubernetesResourceUri?: string,
-     *     arn?: string
+     *     insightStatus?: InsightStatus|null,
+     *     kubernetesResourceUri?: string|null,
+     *     arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

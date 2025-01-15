@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeAuthenticationProfiles;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationProfileName
+ * @property string|null $AuthenticationProfileName
  */
 class DescribeAuthenticationProfilesRequest extends Request
 {
     /**
-     * @param array{AuthenticationProfileName?: string} $args
+     * @param array{AuthenticationProfileName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

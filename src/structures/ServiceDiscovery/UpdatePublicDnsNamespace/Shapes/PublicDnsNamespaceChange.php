@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\UpdatePublicDnsNamespace\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property PublicDnsNamespacePropertiesChange $Properties
+ * @property string|null $Description
+ * @property PublicDnsNamespacePropertiesChange|null $Properties
  */
 class PublicDnsNamespaceChange extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     Properties?: PublicDnsNamespacePropertiesChange
+     *     Description?: string|null,
+     *     Properties?: PublicDnsNamespacePropertiesChange|null
      * } $args
      */
     public function __construct(array $args = [])

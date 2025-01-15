@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\BatchPutDataQualityStatisticAnnotation\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProfileId
- * @property string $StatisticId
- * @property string $FailureReason
+ * @property string|null $ProfileId
+ * @property string|null $StatisticId
+ * @property string|null $FailureReason
  */
 class AnnotationError extends Shape
 {
     /**
      * @param array{
-     *     ProfileId?: string,
-     *     StatisticId?: string,
-     *     FailureReason?: string
+     *     ProfileId?: string|null,
+     *     StatisticId?: string|null,
+     *     FailureReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

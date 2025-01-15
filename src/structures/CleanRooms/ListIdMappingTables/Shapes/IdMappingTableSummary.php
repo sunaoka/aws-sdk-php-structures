@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $id
  * @property string $arn
- * @property string $description
+ * @property string|null $description
  * @property IdMappingTableInputReferenceConfig $inputReferenceConfig
  * @property string $name
  */
@@ -29,7 +29,7 @@ class IdMappingTableSummary extends Shape
      *     updateTime: \Aws\Api\DateTimeResult,
      *     id: string,
      *     arn: string,
-     *     description?: string,
+     *     description?: string|null,
      *     inputReferenceConfig: IdMappingTableInputReferenceConfig,
      *     name: string
      * } $args

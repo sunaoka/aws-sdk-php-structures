@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVerifiedAccessEndpoints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $VerifiedAccessEndpointIds
- * @property string $VerifiedAccessInstanceId
- * @property string $VerifiedAccessGroupId
- * @property int<5, 1000> $MaxResults
- * @property string $NextToken
- * @property list<Shapes\Filter> $Filters
- * @property bool $DryRun
+ * @property list<string>|null $VerifiedAccessEndpointIds
+ * @property string|null $VerifiedAccessInstanceId
+ * @property string|null $VerifiedAccessGroupId
+ * @property int<5, 1000>|null $MaxResults
+ * @property string|null $NextToken
+ * @property list<Shapes\Filter>|null $Filters
+ * @property bool|null $DryRun
  */
 class DescribeVerifiedAccessEndpointsRequest extends Request
 {
     /**
      * @param array{
-     *     VerifiedAccessEndpointIds?: list<string>,
-     *     VerifiedAccessInstanceId?: string,
-     *     VerifiedAccessGroupId?: string,
-     *     MaxResults?: int<5, 1000>,
-     *     NextToken?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     DryRun?: bool
+     *     VerifiedAccessEndpointIds?: list<string>|null,
+     *     VerifiedAccessInstanceId?: string|null,
+     *     VerifiedAccessGroupId?: string|null,
+     *     MaxResults?: int<5, 1000>|null,
+     *     NextToken?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

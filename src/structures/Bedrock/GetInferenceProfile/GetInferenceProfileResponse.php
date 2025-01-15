@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $inferenceProfileName
- * @property string $description
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  * @property string $inferenceProfileArn
  * @property list<Shapes\InferenceProfileModel> $models
  * @property string $inferenceProfileId

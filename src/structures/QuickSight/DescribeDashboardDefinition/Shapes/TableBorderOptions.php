@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Color
- * @property int<1, 4> $Thickness
- * @property 'NONE'|'SOLID' $Style
+ * @property string|null $Color
+ * @property int<1, 4>|null $Thickness
+ * @property 'NONE'|'SOLID'|null $Style
  */
 class TableBorderOptions extends Shape
 {
     /**
      * @param array{
-     *     Color?: string,
-     *     Thickness?: int<1, 4>,
-     *     Style?: 'NONE'|'SOLID'
+     *     Color?: string|null,
+     *     Thickness?: int<1, 4>|null,
+     *     Style?: 'NONE'|'SOLID'|null
      * } $args
      */
     public function __construct(array $args = [])

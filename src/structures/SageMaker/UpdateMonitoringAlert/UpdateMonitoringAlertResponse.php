@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $MonitoringScheduleArn
- * @property string $MonitoringAlertName
+ * @property string|null $MonitoringAlertName
  */
 class UpdateMonitoringAlertResponse extends Response
 {

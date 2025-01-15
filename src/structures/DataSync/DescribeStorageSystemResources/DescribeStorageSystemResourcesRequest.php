@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DiscoveryJobArn
  * @property 'SVM'|'VOLUME'|'CLUSTER' $ResourceType
- * @property list<string> $ResourceIds
- * @property array<'SVM', list<string>> $Filter
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $ResourceIds
+ * @property array<'SVM', list<string>>|null $Filter
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeStorageSystemResourcesRequest extends Request
 {
@@ -18,10 +18,10 @@ class DescribeStorageSystemResourcesRequest extends Request
      * @param array{
      *     DiscoveryJobArn: string,
      *     ResourceType: 'SVM'|'VOLUME'|'CLUSTER',
-     *     ResourceIds?: list<string>,
-     *     Filter?: array<'SVM', list<string>>,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     ResourceIds?: list<string>|null,
+     *     Filter?: array<'SVM', list<string>>|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

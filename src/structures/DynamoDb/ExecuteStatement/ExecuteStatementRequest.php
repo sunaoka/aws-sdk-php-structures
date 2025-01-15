@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Statement
- * @property list<Shapes\AttributeValue> $Parameters
- * @property bool $ConsistentRead
- * @property string $NextToken
- * @property 'INDEXES'|'TOTAL'|'NONE' $ReturnConsumedCapacity
- * @property int<1, max> $Limit
- * @property 'ALL_OLD'|'NONE' $ReturnValuesOnConditionCheckFailure
+ * @property list<Shapes\AttributeValue>|null $Parameters
+ * @property bool|null $ConsistentRead
+ * @property string|null $NextToken
+ * @property 'INDEXES'|'TOTAL'|'NONE'|null $ReturnConsumedCapacity
+ * @property int<1, max>|null $Limit
+ * @property 'ALL_OLD'|'NONE'|null $ReturnValuesOnConditionCheckFailure
  */
 class ExecuteStatementRequest extends Request
 {
     /**
      * @param array{
      *     Statement: string,
-     *     Parameters?: list<Shapes\AttributeValue>,
-     *     ConsistentRead?: bool,
-     *     NextToken?: string,
-     *     ReturnConsumedCapacity?: 'INDEXES'|'TOTAL'|'NONE',
-     *     Limit?: int<1, max>,
-     *     ReturnValuesOnConditionCheckFailure?: 'ALL_OLD'|'NONE'
+     *     Parameters?: list<Shapes\AttributeValue>|null,
+     *     ConsistentRead?: bool|null,
+     *     NextToken?: string|null,
+     *     ReturnConsumedCapacity?: 'INDEXES'|'TOTAL'|'NONE'|null,
+     *     Limit?: int<1, max>|null,
+     *     ReturnValuesOnConditionCheckFailure?: 'ALL_OLD'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

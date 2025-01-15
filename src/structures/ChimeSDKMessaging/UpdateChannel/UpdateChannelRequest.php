@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelArn
- * @property string $Name
- * @property 'UNRESTRICTED'|'RESTRICTED' $Mode
- * @property string $Metadata
+ * @property string|null $Name
+ * @property 'UNRESTRICTED'|'RESTRICTED'|null $Mode
+ * @property string|null $Metadata
  * @property string $ChimeBearer
  */
 class UpdateChannelRequest extends Request
@@ -16,9 +16,9 @@ class UpdateChannelRequest extends Request
     /**
      * @param array{
      *     ChannelArn: string,
-     *     Name?: string,
-     *     Mode?: 'UNRESTRICTED'|'RESTRICTED',
-     *     Metadata?: string,
+     *     Name?: string|null,
+     *     Mode?: 'UNRESTRICTED'|'RESTRICTED'|null,
+     *     Metadata?: string|null,
      *     ChimeBearer: string
      * } $args
      */

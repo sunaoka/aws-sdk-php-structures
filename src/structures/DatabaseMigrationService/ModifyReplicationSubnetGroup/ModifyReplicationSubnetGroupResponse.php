@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\ModifyReplicationSubne
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ReplicationSubnetGroup $ReplicationSubnetGroup
+ * @property Shapes\ReplicationSubnetGroup|null $ReplicationSubnetGroup
  */
 class ModifyReplicationSubnetGroupResponse extends Response
 {

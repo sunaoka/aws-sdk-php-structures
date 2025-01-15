@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $computeArn
- * @property string $instanceProfileArn
- * @property string $javaVirtualEnv
- * @property string $logUri
- * @property string $pythonVirtualEnv
- * @property string $runtimeRole
- * @property string $trustedCertificatesS3Uri
+ * @property string|null $computeArn
+ * @property string|null $instanceProfileArn
+ * @property string|null $javaVirtualEnv
+ * @property string|null $logUri
+ * @property string|null $pythonVirtualEnv
+ * @property string|null $runtimeRole
+ * @property string|null $trustedCertificatesS3Uri
  */
 class SparkEmrPropertiesPatch extends Shape
 {
     /**
      * @param array{
-     *     computeArn?: string,
-     *     instanceProfileArn?: string,
-     *     javaVirtualEnv?: string,
-     *     logUri?: string,
-     *     pythonVirtualEnv?: string,
-     *     runtimeRole?: string,
-     *     trustedCertificatesS3Uri?: string
+     *     computeArn?: string|null,
+     *     instanceProfileArn?: string|null,
+     *     javaVirtualEnv?: string|null,
+     *     logUri?: string|null,
+     *     pythonVirtualEnv?: string|null,
+     *     runtimeRole?: string|null,
+     *     trustedCertificatesS3Uri?: string|null
      * } $args
      */
     public function __construct(array $args = [])

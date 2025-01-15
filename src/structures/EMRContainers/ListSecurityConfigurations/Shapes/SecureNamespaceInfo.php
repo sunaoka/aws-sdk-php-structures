@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EMRContainers\ListSecurityConfigurations\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $clusterId
- * @property string $namespace
+ * @property string|null $clusterId
+ * @property string|null $namespace
  */
 class SecureNamespaceInfo extends Shape
 {
     /**
      * @param array{
-     *     clusterId?: string,
-     *     namespace?: string
+     *     clusterId?: string|null,
+     *     namespace?: string|null
      * } $args
      */
     public function __construct(array $args = [])

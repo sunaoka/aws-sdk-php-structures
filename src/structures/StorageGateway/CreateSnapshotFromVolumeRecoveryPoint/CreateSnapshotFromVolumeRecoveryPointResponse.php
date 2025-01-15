@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\StorageGateway\CreateSnapshotFromVolumeRecovery
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $SnapshotId
- * @property string $VolumeARN
- * @property string $VolumeRecoveryPointTime
+ * @property string|null $SnapshotId
+ * @property string|null $VolumeARN
+ * @property string|null $VolumeRecoveryPointTime
  */
 class CreateSnapshotFromVolumeRecoveryPointResponse extends Response
 {

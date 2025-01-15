@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\Identity $accessPolicyIdentity
  * @property Shapes\Resource $accessPolicyResource
  * @property 'ADMINISTRATOR'|'VIEWER' $accessPolicyPermission
- * @property string $clientToken
- * @property array<string, string> $tags
+ * @property string|null $clientToken
+ * @property array<string, string>|null $tags
  */
 class CreateAccessPolicyRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateAccessPolicyRequest extends Request
      *     accessPolicyIdentity: Shapes\Identity,
      *     accessPolicyResource: Shapes\Resource,
      *     accessPolicyPermission: 'ADMINISTRATOR'|'VIEWER',
-     *     clientToken?: string,
-     *     tags?: array<string, string>
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

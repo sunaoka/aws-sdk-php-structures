@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MachineLearning\DescribeDataSources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RDSDatabase $Database
- * @property string $DatabaseUserName
- * @property string $SelectSqlQuery
- * @property string $ResourceRole
- * @property string $ServiceRole
- * @property string $DataPipelineId
+ * @property RDSDatabase|null $Database
+ * @property string|null $DatabaseUserName
+ * @property string|null $SelectSqlQuery
+ * @property string|null $ResourceRole
+ * @property string|null $ServiceRole
+ * @property string|null $DataPipelineId
  */
 class RDSMetadata extends Shape
 {
     /**
      * @param array{
-     *     Database?: RDSDatabase,
-     *     DatabaseUserName?: string,
-     *     SelectSqlQuery?: string,
-     *     ResourceRole?: string,
-     *     ServiceRole?: string,
-     *     DataPipelineId?: string
+     *     Database?: RDSDatabase|null,
+     *     DatabaseUserName?: string|null,
+     *     SelectSqlQuery?: string|null,
+     *     ResourceRole?: string|null,
+     *     ServiceRole?: string|null,
+     *     DataPipelineId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

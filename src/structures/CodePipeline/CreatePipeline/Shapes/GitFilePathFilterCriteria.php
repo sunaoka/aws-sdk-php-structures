@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodePipeline\CreatePipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $includes
- * @property list<string> $excludes
+ * @property list<string>|null $includes
+ * @property list<string>|null $excludes
  */
 class GitFilePathFilterCriteria extends Shape
 {
     /**
      * @param array{
-     *     includes?: list<string>,
-     *     excludes?: list<string>
+     *     includes?: list<string>|null,
+     *     excludes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

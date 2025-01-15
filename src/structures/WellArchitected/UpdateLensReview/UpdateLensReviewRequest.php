@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $WorkloadId
  * @property string $LensAlias
- * @property string $LensNotes
- * @property array<string, string> $PillarNotes
- * @property Shapes\JiraSelectedQuestionConfiguration $JiraConfiguration
+ * @property string|null $LensNotes
+ * @property array<string, string>|null $PillarNotes
+ * @property Shapes\JiraSelectedQuestionConfiguration|null $JiraConfiguration
  */
 class UpdateLensReviewRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateLensReviewRequest extends Request
      * @param array{
      *     WorkloadId: string,
      *     LensAlias: string,
-     *     LensNotes?: string,
-     *     PillarNotes?: array<string, string>,
-     *     JiraConfiguration?: Shapes\JiraSelectedQuestionConfiguration
+     *     LensNotes?: string|null,
+     *     PillarNotes?: array<string, string>|null,
+     *     JiraConfiguration?: Shapes\JiraSelectedQuestionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\RetrieveAndGenerateStream\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MetadataConfigurationForReranking $metadataConfiguration
+ * @property MetadataConfigurationForReranking|null $metadataConfiguration
  * @property VectorSearchBedrockRerankingModelConfiguration $modelConfiguration
- * @property int<1, 100> $numberOfRerankedResults
+ * @property int<1, 100>|null $numberOfRerankedResults
  */
 class VectorSearchBedrockRerankingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     metadataConfiguration?: MetadataConfigurationForReranking,
+     *     metadataConfiguration?: MetadataConfigurationForReranking|null,
      *     modelConfiguration: VectorSearchBedrockRerankingModelConfiguration,
-     *     numberOfRerankedResults?: int<1, 100>
+     *     numberOfRerankedResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

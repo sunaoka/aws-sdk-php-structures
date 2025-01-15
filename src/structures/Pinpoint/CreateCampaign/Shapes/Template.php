@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pinpoint\CreateCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Version
+ * @property string|null $Name
+ * @property string|null $Version
  */
 class Template extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Version?: string
+     *     Name?: string|null,
+     *     Version?: string|null
      * } $args
      */
     public function __construct(array $args = [])

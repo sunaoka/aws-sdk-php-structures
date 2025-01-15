@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\GetIntegrationTableProperties\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TOPLEVEL'|'FULL'|'NOUNNEST' $UnnestSpec
- * @property list<IntegrationPartition> $PartitionSpec
- * @property string $TargetTableName
+ * @property 'TOPLEVEL'|'FULL'|'NOUNNEST'|null $UnnestSpec
+ * @property list<IntegrationPartition>|null $PartitionSpec
+ * @property string|null $TargetTableName
  */
 class TargetTableConfig extends Shape
 {
     /**
      * @param array{
-     *     UnnestSpec?: 'TOPLEVEL'|'FULL'|'NOUNNEST',
-     *     PartitionSpec?: list<IntegrationPartition>,
-     *     TargetTableName?: string
+     *     UnnestSpec?: 'TOPLEVEL'|'FULL'|'NOUNNEST'|null,
+     *     PartitionSpec?: list<IntegrationPartition>|null,
+     *     TargetTableName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

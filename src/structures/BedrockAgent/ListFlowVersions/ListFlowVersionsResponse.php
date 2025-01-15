@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\FlowVersionSummary> $flowVersionSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListFlowVersionsResponse extends Response
 {

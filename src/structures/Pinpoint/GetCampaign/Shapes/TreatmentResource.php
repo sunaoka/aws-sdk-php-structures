@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetCampaign\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomDeliveryConfiguration $CustomDeliveryConfiguration
+ * @property CustomDeliveryConfiguration|null $CustomDeliveryConfiguration
  * @property string $Id
- * @property MessageConfiguration $MessageConfiguration
- * @property Schedule $Schedule
+ * @property MessageConfiguration|null $MessageConfiguration
+ * @property Schedule|null $Schedule
  * @property int $SizePercent
- * @property CampaignState $State
- * @property TemplateConfiguration $TemplateConfiguration
- * @property string $TreatmentDescription
- * @property string $TreatmentName
+ * @property CampaignState|null $State
+ * @property TemplateConfiguration|null $TemplateConfiguration
+ * @property string|null $TreatmentDescription
+ * @property string|null $TreatmentName
  */
 class TreatmentResource extends Shape
 {
     /**
      * @param array{
-     *     CustomDeliveryConfiguration?: CustomDeliveryConfiguration,
+     *     CustomDeliveryConfiguration?: CustomDeliveryConfiguration|null,
      *     Id: string,
-     *     MessageConfiguration?: MessageConfiguration,
-     *     Schedule?: Schedule,
+     *     MessageConfiguration?: MessageConfiguration|null,
+     *     Schedule?: Schedule|null,
      *     SizePercent: int,
-     *     State?: CampaignState,
-     *     TemplateConfiguration?: TemplateConfiguration,
-     *     TreatmentDescription?: string,
-     *     TreatmentName?: string
+     *     State?: CampaignState|null,
+     *     TemplateConfiguration?: TemplateConfiguration|null,
+     *     TreatmentDescription?: string|null,
+     *     TreatmentName?: string|null
      * } $args
      */
     public function __construct(array $args)

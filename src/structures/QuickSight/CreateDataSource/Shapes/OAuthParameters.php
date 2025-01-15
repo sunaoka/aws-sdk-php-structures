@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $TokenProviderUrl
- * @property string $OAuthScope
- * @property VpcConnectionProperties $IdentityProviderVpcConnectionProperties
- * @property string $IdentityProviderResourceUri
+ * @property string|null $OAuthScope
+ * @property VpcConnectionProperties|null $IdentityProviderVpcConnectionProperties
+ * @property string|null $IdentityProviderResourceUri
  */
 class OAuthParameters extends Shape
 {
     /**
      * @param array{
      *     TokenProviderUrl: string,
-     *     OAuthScope?: string,
-     *     IdentityProviderVpcConnectionProperties?: VpcConnectionProperties,
-     *     IdentityProviderResourceUri?: string
+     *     OAuthScope?: string|null,
+     *     IdentityProviderVpcConnectionProperties?: VpcConnectionProperties|null,
+     *     IdentityProviderResourceUri?: string|null
      * } $args
      */
     public function __construct(array $args)

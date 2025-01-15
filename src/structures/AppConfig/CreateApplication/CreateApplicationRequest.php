@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property array<string, string> $Tags
+ * @property string|null $Description
+ * @property array<string, string>|null $Tags
  */
 class CreateApplicationRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     Tags?: array<string, string>
+     *     Description?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

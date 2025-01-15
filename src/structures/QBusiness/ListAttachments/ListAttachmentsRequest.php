@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $applicationId
- * @property string $conversationId
- * @property string $userId
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $conversationId
+ * @property string|null $userId
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListAttachmentsRequest extends Request
 {
     /**
      * @param array{
      *     applicationId: string,
-     *     conversationId?: string,
-     *     userId?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     conversationId?: string|null,
+     *     userId?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\XRay\GetInsightSummaries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ServiceId $ServiceId
+ * @property ServiceId|null $ServiceId
  */
 class AnomalousService extends Shape
 {
     /**
-     * @param array{ServiceId?: ServiceId} $args
+     * @param array{ServiceId?: ServiceId|null} $args
      */
     public function __construct(array $args = [])
     {

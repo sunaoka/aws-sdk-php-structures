@@ -7,44 +7,44 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $RequestRoute
  * @property string $RequestToken
- * @property string|resource|\Psr\Http\Message\StreamInterface $Body
- * @property int $StatusCode
- * @property string $ErrorCode
- * @property string $ErrorMessage
- * @property string $AcceptRanges
- * @property string $CacheControl
- * @property string $ContentDisposition
- * @property string $ContentEncoding
- * @property string $ContentLanguage
- * @property int $ContentLength
- * @property string $ContentRange
- * @property string $ContentType
- * @property string $ChecksumCRC32
- * @property string $ChecksumCRC32C
- * @property string $ChecksumSHA1
- * @property string $ChecksumSHA256
- * @property bool $DeleteMarker
- * @property string $ETag
- * @property \Aws\Api\DateTimeResult $Expires
- * @property string $Expiration
- * @property \Aws\Api\DateTimeResult $LastModified
- * @property int $MissingMeta
- * @property array<string, string> $Metadata
- * @property 'GOVERNANCE'|'COMPLIANCE' $ObjectLockMode
- * @property 'ON'|'OFF' $ObjectLockLegalHoldStatus
- * @property \Aws\Api\DateTimeResult $ObjectLockRetainUntilDate
- * @property int $PartsCount
- * @property 'COMPLETE'|'PENDING'|'FAILED'|'REPLICA'|'COMPLETED' $ReplicationStatus
- * @property 'requester' $RequestCharged
- * @property string $Restore
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse' $ServerSideEncryption
- * @property string $SSECustomerAlgorithm
- * @property string $SSEKMSKeyId
- * @property string $SSECustomerKeyMD5
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE' $StorageClass
- * @property int $TagCount
- * @property string $VersionId
- * @property bool $BucketKeyEnabled
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $Body
+ * @property int|null $StatusCode
+ * @property string|null $ErrorCode
+ * @property string|null $ErrorMessage
+ * @property string|null $AcceptRanges
+ * @property string|null $CacheControl
+ * @property string|null $ContentDisposition
+ * @property string|null $ContentEncoding
+ * @property string|null $ContentLanguage
+ * @property int|null $ContentLength
+ * @property string|null $ContentRange
+ * @property string|null $ContentType
+ * @property string|null $ChecksumCRC32
+ * @property string|null $ChecksumCRC32C
+ * @property string|null $ChecksumSHA1
+ * @property string|null $ChecksumSHA256
+ * @property bool|null $DeleteMarker
+ * @property string|null $ETag
+ * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $Expiration
+ * @property \Aws\Api\DateTimeResult|null $LastModified
+ * @property int|null $MissingMeta
+ * @property array<string, string>|null $Metadata
+ * @property 'GOVERNANCE'|'COMPLIANCE'|null $ObjectLockMode
+ * @property 'ON'|'OFF'|null $ObjectLockLegalHoldStatus
+ * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
+ * @property int|null $PartsCount
+ * @property 'COMPLETE'|'PENDING'|'FAILED'|'REPLICA'|'COMPLETED'|null $ReplicationStatus
+ * @property 'requester'|null $RequestCharged
+ * @property string|null $Restore
+ * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property string|null $SSECustomerAlgorithm
+ * @property string|null $SSEKMSKeyId
+ * @property string|null $SSECustomerKeyMD5
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
+ * @property int|null $TagCount
+ * @property string|null $VersionId
+ * @property bool|null $BucketKeyEnabled
  */
 class WriteGetObjectResponseRequest extends Request
 {
@@ -52,44 +52,44 @@ class WriteGetObjectResponseRequest extends Request
      * @param array{
      *     RequestRoute: string,
      *     RequestToken: string,
-     *     Body?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     StatusCode?: int,
-     *     ErrorCode?: string,
-     *     ErrorMessage?: string,
-     *     AcceptRanges?: string,
-     *     CacheControl?: string,
-     *     ContentDisposition?: string,
-     *     ContentEncoding?: string,
-     *     ContentLanguage?: string,
-     *     ContentLength?: int,
-     *     ContentRange?: string,
-     *     ContentType?: string,
-     *     ChecksumCRC32?: string,
-     *     ChecksumCRC32C?: string,
-     *     ChecksumSHA1?: string,
-     *     ChecksumSHA256?: string,
-     *     DeleteMarker?: bool,
-     *     ETag?: string,
-     *     Expires?: \Aws\Api\DateTimeResult,
-     *     Expiration?: string,
-     *     LastModified?: \Aws\Api\DateTimeResult,
-     *     MissingMeta?: int,
-     *     Metadata?: array<string, string>,
-     *     ObjectLockMode?: 'GOVERNANCE'|'COMPLIANCE',
-     *     ObjectLockLegalHoldStatus?: 'ON'|'OFF',
-     *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult,
-     *     PartsCount?: int,
-     *     ReplicationStatus?: 'COMPLETE'|'PENDING'|'FAILED'|'REPLICA'|'COMPLETED',
-     *     RequestCharged?: 'requester',
-     *     Restore?: string,
-     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse',
-     *     SSECustomerAlgorithm?: string,
-     *     SSEKMSKeyId?: string,
-     *     SSECustomerKeyMD5?: string,
-     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE',
-     *     TagCount?: int,
-     *     VersionId?: string,
-     *     BucketKeyEnabled?: bool
+     *     Body?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     StatusCode?: int|null,
+     *     ErrorCode?: string|null,
+     *     ErrorMessage?: string|null,
+     *     AcceptRanges?: string|null,
+     *     CacheControl?: string|null,
+     *     ContentDisposition?: string|null,
+     *     ContentEncoding?: string|null,
+     *     ContentLanguage?: string|null,
+     *     ContentLength?: int|null,
+     *     ContentRange?: string|null,
+     *     ContentType?: string|null,
+     *     ChecksumCRC32?: string|null,
+     *     ChecksumCRC32C?: string|null,
+     *     ChecksumSHA1?: string|null,
+     *     ChecksumSHA256?: string|null,
+     *     DeleteMarker?: bool|null,
+     *     ETag?: string|null,
+     *     Expires?: \Aws\Api\DateTimeResult|null,
+     *     Expiration?: string|null,
+     *     LastModified?: \Aws\Api\DateTimeResult|null,
+     *     MissingMeta?: int|null,
+     *     Metadata?: array<string, string>|null,
+     *     ObjectLockMode?: 'GOVERNANCE'|'COMPLIANCE'|null,
+     *     ObjectLockLegalHoldStatus?: 'ON'|'OFF'|null,
+     *     ObjectLockRetainUntilDate?: \Aws\Api\DateTimeResult|null,
+     *     PartsCount?: int|null,
+     *     ReplicationStatus?: 'COMPLETE'|'PENDING'|'FAILED'|'REPLICA'|'COMPLETED'|null,
+     *     RequestCharged?: 'requester'|null,
+     *     Restore?: string|null,
+     *     ServerSideEncryption?: 'AES256'|'aws:kms'|'aws:kms:dsse'|null,
+     *     SSECustomerAlgorithm?: string|null,
+     *     SSEKMSKeyId?: string|null,
+     *     SSECustomerKeyMD5?: string|null,
+     *     StorageClass?: 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null,
+     *     TagCount?: int|null,
+     *     VersionId?: string|null,
+     *     BucketKeyEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

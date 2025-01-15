@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateAIAgentVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AssociationConfigurationData $associationConfigurationData
- * @property string $associationId
- * @property 'KNOWLEDGE_BASE' $associationType
+ * @property AssociationConfigurationData|null $associationConfigurationData
+ * @property string|null $associationId
+ * @property 'KNOWLEDGE_BASE'|null $associationType
  */
 class AssociationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     associationConfigurationData?: AssociationConfigurationData,
-     *     associationId?: string,
-     *     associationType?: 'KNOWLEDGE_BASE'
+     *     associationConfigurationData?: AssociationConfigurationData|null,
+     *     associationId?: string|null,
+     *     associationType?: 'KNOWLEDGE_BASE'|null
      * } $args
      */
     public function __construct(array $args = [])

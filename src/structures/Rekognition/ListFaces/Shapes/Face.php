@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Rekognition\ListFaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FaceId
- * @property BoundingBox $BoundingBox
- * @property string $ImageId
- * @property string $ExternalImageId
- * @property float $Confidence
- * @property string $IndexFacesModelVersion
- * @property string $UserId
+ * @property string|null $FaceId
+ * @property BoundingBox|null $BoundingBox
+ * @property string|null $ImageId
+ * @property string|null $ExternalImageId
+ * @property float|null $Confidence
+ * @property string|null $IndexFacesModelVersion
+ * @property string|null $UserId
  */
 class Face extends Shape
 {
     /**
      * @param array{
-     *     FaceId?: string,
-     *     BoundingBox?: BoundingBox,
-     *     ImageId?: string,
-     *     ExternalImageId?: string,
-     *     Confidence?: float,
-     *     IndexFacesModelVersion?: string,
-     *     UserId?: string
+     *     FaceId?: string|null,
+     *     BoundingBox?: BoundingBox|null,
+     *     ImageId?: string|null,
+     *     ExternalImageId?: string|null,
+     *     Confidence?: float|null,
+     *     IndexFacesModelVersion?: string|null,
+     *     UserId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

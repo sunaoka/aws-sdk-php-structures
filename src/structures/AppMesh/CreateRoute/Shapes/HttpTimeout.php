@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppMesh\CreateRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Duration $idle
- * @property Duration $perRequest
+ * @property Duration|null $idle
+ * @property Duration|null $perRequest
  */
 class HttpTimeout extends Shape
 {
     /**
      * @param array{
-     *     idle?: Duration,
-     *     perRequest?: Duration
+     *     idle?: Duration|null,
+     *     perRequest?: Duration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ecr\PutImageTagMutability;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $registryId
- * @property string $repositoryName
- * @property 'MUTABLE'|'IMMUTABLE' $imageTagMutability
+ * @property string|null $registryId
+ * @property string|null $repositoryName
+ * @property 'MUTABLE'|'IMMUTABLE'|null $imageTagMutability
  */
 class PutImageTagMutabilityResponse extends Response
 {

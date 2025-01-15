@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeCommit\DescribePullRequestEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $repositoryName
- * @property string $beforeCommitId
- * @property string $afterCommitId
- * @property string $mergeBase
+ * @property string|null $repositoryName
+ * @property string|null $beforeCommitId
+ * @property string|null $afterCommitId
+ * @property string|null $mergeBase
  */
 class PullRequestSourceReferenceUpdatedEventMetadata extends Shape
 {
     /**
      * @param array{
-     *     repositoryName?: string,
-     *     beforeCommitId?: string,
-     *     afterCommitId?: string,
-     *     mergeBase?: string
+     *     repositoryName?: string|null,
+     *     beforeCommitId?: string|null,
+     *     afterCommitId?: string|null,
+     *     mergeBase?: string|null
      * } $args
      */
     public function __construct(array $args = [])

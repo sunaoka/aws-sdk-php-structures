@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $agentId
  * @property string $agentVersion
- * @property string $description
+ * @property string|null $description
  * @property string $knowledgeBaseId
- * @property 'ENABLED'|'DISABLED' $knowledgeBaseState
+ * @property 'ENABLED'|'DISABLED'|null $knowledgeBaseState
  */
 class UpdateAgentKnowledgeBaseRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateAgentKnowledgeBaseRequest extends Request
      * @param array{
      *     agentId: string,
      *     agentVersion: string,
-     *     description?: string,
+     *     description?: string|null,
      *     knowledgeBaseId: string,
-     *     knowledgeBaseState?: 'ENABLED'|'DISABLED'
+     *     knowledgeBaseState?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

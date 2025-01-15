@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImages;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $requestId
- * @property list<Shapes\ImageVersion> $imageVersionList
- * @property string $nextToken
+ * @property string|null $requestId
+ * @property list<Shapes\ImageVersion>|null $imageVersionList
+ * @property string|null $nextToken
  */
 class ListImagesResponse extends Response
 {

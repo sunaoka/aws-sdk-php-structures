@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\ListUserPoolClients\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClientId
- * @property string $UserPoolId
- * @property string $ClientName
+ * @property string|null $ClientId
+ * @property string|null $UserPoolId
+ * @property string|null $ClientName
  */
 class UserPoolClientDescription extends Shape
 {
     /**
      * @param array{
-     *     ClientId?: string,
-     *     UserPoolId?: string,
-     *     ClientName?: string
+     *     ClientId?: string|null,
+     *     UserPoolId?: string|null,
+     *     ClientName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

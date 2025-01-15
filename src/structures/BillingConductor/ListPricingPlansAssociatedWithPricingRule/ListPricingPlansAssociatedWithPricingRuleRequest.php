@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListPricingPlansAssociatedWith
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $BillingPeriod
+ * @property string|null $BillingPeriod
  * @property string $PricingRuleArn
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListPricingPlansAssociatedWithPricingRuleRequest extends Request
 {
     /**
      * @param array{
-     *     BillingPeriod?: string,
+     *     BillingPeriod?: string|null,
      *     PricingRuleArn: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

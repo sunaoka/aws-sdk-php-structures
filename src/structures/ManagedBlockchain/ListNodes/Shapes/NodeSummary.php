@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\ListNodes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property 'CREATING'|'AVAILABLE'|'UNHEALTHY'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'FAILED'|'INACCESSIBLE_ENCRYPTION_KEY' $Status
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property string $AvailabilityZone
- * @property string $InstanceType
- * @property string $Arn
+ * @property string|null $Id
+ * @property 'CREATING'|'AVAILABLE'|'UNHEALTHY'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'FAILED'|'INACCESSIBLE_ENCRYPTION_KEY'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property string|null $AvailabilityZone
+ * @property string|null $InstanceType
+ * @property string|null $Arn
  */
 class NodeSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Status?: 'CREATING'|'AVAILABLE'|'UNHEALTHY'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'FAILED'|'INACCESSIBLE_ENCRYPTION_KEY',
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     AvailabilityZone?: string,
-     *     InstanceType?: string,
-     *     Arn?: string
+     *     Id?: string|null,
+     *     Status?: 'CREATING'|'AVAILABLE'|'UNHEALTHY'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'FAILED'|'INACCESSIBLE_ENCRYPTION_KEY'|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     AvailabilityZone?: string|null,
+     *     InstanceType?: string|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $Name
- * @property string $Description
- * @property Shapes\CapacityUnitsConfiguration $CapacityUnits
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property Shapes\CapacityUnitsConfiguration|null $CapacityUnits
  */
 class UpdateRescoreExecutionPlanRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     CapacityUnits?: Shapes\CapacityUnitsConfiguration
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     CapacityUnits?: Shapes\CapacityUnitsConfiguration|null
      * } $args
      */
     public function __construct(array $args)

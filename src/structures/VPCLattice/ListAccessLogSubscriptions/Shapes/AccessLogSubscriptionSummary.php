@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $lastUpdatedAt
  * @property string $resourceArn
  * @property string $resourceId
- * @property 'SERVICE'|'RESOURCE' $serviceNetworkLogType
+ * @property 'SERVICE'|'RESOURCE'|null $serviceNetworkLogType
  */
 class AccessLogSubscriptionSummary extends Shape
 {
@@ -25,7 +25,7 @@ class AccessLogSubscriptionSummary extends Shape
      *     lastUpdatedAt: \Aws\Api\DateTimeResult,
      *     resourceArn: string,
      *     resourceId: string,
-     *     serviceNetworkLogType?: 'SERVICE'|'RESOURCE'
+     *     serviceNetworkLogType?: 'SERVICE'|'RESOURCE'|null
      * } $args
      */
     public function __construct(array $args)

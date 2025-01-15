@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\WellArchitected\UpdateAnswer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $QuestionId
- * @property string $PillarId
- * @property string $QuestionTitle
- * @property string $QuestionDescription
- * @property string $ImprovementPlanUrl
- * @property string $HelpfulResourceUrl
- * @property string $HelpfulResourceDisplayText
- * @property list<Choice> $Choices
- * @property list<string> $SelectedChoices
- * @property list<ChoiceAnswer> $ChoiceAnswers
- * @property bool $IsApplicable
- * @property 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE' $Risk
- * @property string $Notes
- * @property 'OUT_OF_SCOPE'|'BUSINESS_PRIORITIES'|'ARCHITECTURE_CONSTRAINTS'|'OTHER'|'NONE' $Reason
- * @property JiraConfiguration $JiraConfiguration
+ * @property string|null $QuestionId
+ * @property string|null $PillarId
+ * @property string|null $QuestionTitle
+ * @property string|null $QuestionDescription
+ * @property string|null $ImprovementPlanUrl
+ * @property string|null $HelpfulResourceUrl
+ * @property string|null $HelpfulResourceDisplayText
+ * @property list<Choice>|null $Choices
+ * @property list<string>|null $SelectedChoices
+ * @property list<ChoiceAnswer>|null $ChoiceAnswers
+ * @property bool|null $IsApplicable
+ * @property 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE'|null $Risk
+ * @property string|null $Notes
+ * @property 'OUT_OF_SCOPE'|'BUSINESS_PRIORITIES'|'ARCHITECTURE_CONSTRAINTS'|'OTHER'|'NONE'|null $Reason
+ * @property JiraConfiguration|null $JiraConfiguration
  */
 class Answer extends Shape
 {
     /**
      * @param array{
-     *     QuestionId?: string,
-     *     PillarId?: string,
-     *     QuestionTitle?: string,
-     *     QuestionDescription?: string,
-     *     ImprovementPlanUrl?: string,
-     *     HelpfulResourceUrl?: string,
-     *     HelpfulResourceDisplayText?: string,
-     *     Choices?: list<Choice>,
-     *     SelectedChoices?: list<string>,
-     *     ChoiceAnswers?: list<ChoiceAnswer>,
-     *     IsApplicable?: bool,
-     *     Risk?: 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE',
-     *     Notes?: string,
-     *     Reason?: 'OUT_OF_SCOPE'|'BUSINESS_PRIORITIES'|'ARCHITECTURE_CONSTRAINTS'|'OTHER'|'NONE',
-     *     JiraConfiguration?: JiraConfiguration
+     *     QuestionId?: string|null,
+     *     PillarId?: string|null,
+     *     QuestionTitle?: string|null,
+     *     QuestionDescription?: string|null,
+     *     ImprovementPlanUrl?: string|null,
+     *     HelpfulResourceUrl?: string|null,
+     *     HelpfulResourceDisplayText?: string|null,
+     *     Choices?: list<Choice>|null,
+     *     SelectedChoices?: list<string>|null,
+     *     ChoiceAnswers?: list<ChoiceAnswer>|null,
+     *     IsApplicable?: bool|null,
+     *     Risk?: 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE'|null,
+     *     Notes?: string|null,
+     *     Reason?: 'OUT_OF_SCOPE'|'BUSINESS_PRIORITIES'|'ARCHITECTURE_CONSTRAINTS'|'OTHER'|'NONE'|null,
+     *     JiraConfiguration?: JiraConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MemoryDB\CreateParameterGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Family
- * @property string $Description
- * @property string $ARN
+ * @property string|null $Name
+ * @property string|null $Family
+ * @property string|null $Description
+ * @property string|null $ARN
  */
 class ParameterGroup extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Family?: string,
-     *     Description?: string,
-     *     ARN?: string
+     *     Name?: string|null,
+     *     Family?: string|null,
+     *     Description?: string|null,
+     *     ARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

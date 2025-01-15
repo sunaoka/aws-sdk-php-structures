@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeUserGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserGroupId
- * @property string $Status
- * @property string $Engine
- * @property list<string> $UserIds
- * @property string $MinimumEngineVersion
- * @property UserGroupPendingChanges $PendingChanges
- * @property list<string> $ReplicationGroups
- * @property list<string> $ServerlessCaches
- * @property string $ARN
+ * @property string|null $UserGroupId
+ * @property string|null $Status
+ * @property string|null $Engine
+ * @property list<string>|null $UserIds
+ * @property string|null $MinimumEngineVersion
+ * @property UserGroupPendingChanges|null $PendingChanges
+ * @property list<string>|null $ReplicationGroups
+ * @property list<string>|null $ServerlessCaches
+ * @property string|null $ARN
  */
 class UserGroup extends Shape
 {
     /**
      * @param array{
-     *     UserGroupId?: string,
-     *     Status?: string,
-     *     Engine?: string,
-     *     UserIds?: list<string>,
-     *     MinimumEngineVersion?: string,
-     *     PendingChanges?: UserGroupPendingChanges,
-     *     ReplicationGroups?: list<string>,
-     *     ServerlessCaches?: list<string>,
-     *     ARN?: string
+     *     UserGroupId?: string|null,
+     *     Status?: string|null,
+     *     Engine?: string|null,
+     *     UserIds?: list<string>|null,
+     *     MinimumEngineVersion?: string|null,
+     *     PendingChanges?: UserGroupPendingChanges|null,
+     *     ReplicationGroups?: list<string>|null,
+     *     ServerlessCaches?: list<string>|null,
+     *     ARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

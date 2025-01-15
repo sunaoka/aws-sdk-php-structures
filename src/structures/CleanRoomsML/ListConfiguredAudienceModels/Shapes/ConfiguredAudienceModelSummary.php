@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property string $audienceModelArn
  * @property ConfiguredAudienceModelOutputConfig $outputConfig
- * @property string $description
+ * @property string|null $description
  * @property string $configuredAudienceModelArn
  * @property 'ACTIVE' $status
  */
@@ -23,7 +23,7 @@ class ConfiguredAudienceModelSummary extends Shape
      *     name: string,
      *     audienceModelArn: string,
      *     outputConfig: ConfiguredAudienceModelOutputConfig,
-     *     description?: string,
+     *     description?: string|null,
      *     configuredAudienceModelArn: string,
      *     status: 'ACTIVE'
      * } $args

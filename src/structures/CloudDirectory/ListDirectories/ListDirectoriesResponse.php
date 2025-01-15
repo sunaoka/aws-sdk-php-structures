@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Directory> $Directories
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListDirectoriesResponse extends Response
 {

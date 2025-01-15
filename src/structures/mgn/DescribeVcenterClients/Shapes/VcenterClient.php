@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\mgn\DescribeVcenterClients\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $datacenterName
- * @property string $hostname
- * @property string $lastSeenDatetime
- * @property array<string, string> $sourceServerTags
- * @property array<string, string> $tags
- * @property string $vcenterClientID
- * @property string $vcenterUUID
+ * @property string|null $arn
+ * @property string|null $datacenterName
+ * @property string|null $hostname
+ * @property string|null $lastSeenDatetime
+ * @property array<string, string>|null $sourceServerTags
+ * @property array<string, string>|null $tags
+ * @property string|null $vcenterClientID
+ * @property string|null $vcenterUUID
  */
 class VcenterClient extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     datacenterName?: string,
-     *     hostname?: string,
-     *     lastSeenDatetime?: string,
-     *     sourceServerTags?: array<string, string>,
-     *     tags?: array<string, string>,
-     *     vcenterClientID?: string,
-     *     vcenterUUID?: string
+     *     arn?: string|null,
+     *     datacenterName?: string|null,
+     *     hostname?: string|null,
+     *     lastSeenDatetime?: string|null,
+     *     sourceServerTags?: array<string, string>|null,
+     *     tags?: array<string, string>|null,
+     *     vcenterClientID?: string|null,
+     *     vcenterUUID?: string|null
      * } $args
      */
     public function __construct(array $args = [])

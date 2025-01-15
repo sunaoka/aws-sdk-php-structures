@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Neptune\ModifyDBParameterGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterName
- * @property string $ParameterValue
- * @property string $Description
- * @property string $Source
- * @property string $ApplyType
- * @property string $DataType
- * @property string $AllowedValues
- * @property bool $IsModifiable
- * @property string $MinimumEngineVersion
- * @property 'immediate'|'pending-reboot' $ApplyMethod
+ * @property string|null $ParameterName
+ * @property string|null $ParameterValue
+ * @property string|null $Description
+ * @property string|null $Source
+ * @property string|null $ApplyType
+ * @property string|null $DataType
+ * @property string|null $AllowedValues
+ * @property bool|null $IsModifiable
+ * @property string|null $MinimumEngineVersion
+ * @property 'immediate'|'pending-reboot'|null $ApplyMethod
  */
 class Parameter extends Shape
 {
     /**
      * @param array{
-     *     ParameterName?: string,
-     *     ParameterValue?: string,
-     *     Description?: string,
-     *     Source?: string,
-     *     ApplyType?: string,
-     *     DataType?: string,
-     *     AllowedValues?: string,
-     *     IsModifiable?: bool,
-     *     MinimumEngineVersion?: string,
-     *     ApplyMethod?: 'immediate'|'pending-reboot'
+     *     ParameterName?: string|null,
+     *     ParameterValue?: string|null,
+     *     Description?: string|null,
+     *     Source?: string|null,
+     *     ApplyType?: string|null,
+     *     DataType?: string|null,
+     *     AllowedValues?: string|null,
+     *     IsModifiable?: bool|null,
+     *     MinimumEngineVersion?: string|null,
+     *     ApplyMethod?: 'immediate'|'pending-reboot'|null
      * } $args
      */
     public function __construct(array $args = [])

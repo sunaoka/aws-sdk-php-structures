@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Organizations\ListDelegatedServicesForAccount\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServicePrincipal
- * @property \Aws\Api\DateTimeResult $DelegationEnabledDate
+ * @property string|null $ServicePrincipal
+ * @property \Aws\Api\DateTimeResult|null $DelegationEnabledDate
  */
 class DelegatedService extends Shape
 {
     /**
      * @param array{
-     *     ServicePrincipal?: string,
-     *     DelegationEnabledDate?: \Aws\Api\DateTimeResult
+     *     ServicePrincipal?: string|null,
+     *     DelegationEnabledDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

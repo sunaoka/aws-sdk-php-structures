@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $groupingRecommendationId
- * @property 'DistinctBusinessPurpose'|'SeparateDataConcern'|'DistinctUserGroupHandling'|'Other' $rejectionReason
+ * @property 'DistinctBusinessPurpose'|'SeparateDataConcern'|'DistinctUserGroupHandling'|'Other'|null $rejectionReason
  */
 class RejectGroupingRecommendationEntry extends Shape
 {
     /**
      * @param array{
      *     groupingRecommendationId: string,
-     *     rejectionReason?: 'DistinctBusinessPurpose'|'SeparateDataConcern'|'DistinctUserGroupHandling'|'Other'
+     *     rejectionReason?: 'DistinctBusinessPurpose'|'SeparateDataConcern'|'DistinctUserGroupHandling'|'Other'|null
      * } $args
      */
     public function __construct(array $args)

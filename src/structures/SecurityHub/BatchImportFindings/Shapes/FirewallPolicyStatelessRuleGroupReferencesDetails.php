@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Priority
- * @property string $ResourceArn
+ * @property int|null $Priority
+ * @property string|null $ResourceArn
  */
 class FirewallPolicyStatelessRuleGroupReferencesDetails extends Shape
 {
     /**
      * @param array{
-     *     Priority?: int,
-     *     ResourceArn?: string
+     *     Priority?: int|null,
+     *     ResourceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

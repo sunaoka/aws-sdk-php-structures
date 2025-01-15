@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DescribeLoadBalancers\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AppCookieStickinessPolicy> $AppCookieStickinessPolicies
- * @property list<LBCookieStickinessPolicy> $LBCookieStickinessPolicies
- * @property list<string> $OtherPolicies
+ * @property list<AppCookieStickinessPolicy>|null $AppCookieStickinessPolicies
+ * @property list<LBCookieStickinessPolicy>|null $LBCookieStickinessPolicies
+ * @property list<string>|null $OtherPolicies
  */
 class Policies extends Shape
 {
     /**
      * @param array{
-     *     AppCookieStickinessPolicies?: list<AppCookieStickinessPolicy>,
-     *     LBCookieStickinessPolicies?: list<LBCookieStickinessPolicy>,
-     *     OtherPolicies?: list<string>
+     *     AppCookieStickinessPolicies?: list<AppCookieStickinessPolicy>|null,
+     *     LBCookieStickinessPolicies?: list<LBCookieStickinessPolicy>|null,
+     *     OtherPolicies?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

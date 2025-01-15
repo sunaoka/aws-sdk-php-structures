@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Glue\GetColumnStatisticsForTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $MinimumValue
- * @property \Aws\Api\DateTimeResult $MaximumValue
+ * @property \Aws\Api\DateTimeResult|null $MinimumValue
+ * @property \Aws\Api\DateTimeResult|null $MaximumValue
  * @property int<0, max> $NumberOfNulls
  * @property int<0, max> $NumberOfDistinctValues
  */
@@ -14,8 +14,8 @@ class DateColumnStatisticsData extends Shape
 {
     /**
      * @param array{
-     *     MinimumValue?: \Aws\Api\DateTimeResult,
-     *     MaximumValue?: \Aws\Api\DateTimeResult,
+     *     MinimumValue?: \Aws\Api\DateTimeResult|null,
+     *     MaximumValue?: \Aws\Api\DateTimeResult|null,
      *     NumberOfNulls: int<0, max>,
      *     NumberOfDistinctValues: int<0, max>
      * } $args

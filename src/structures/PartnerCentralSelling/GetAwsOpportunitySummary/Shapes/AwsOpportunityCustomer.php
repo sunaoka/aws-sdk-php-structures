@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetAwsOpportunitySummary\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Contact> $Contacts
+ * @property list<Contact>|null $Contacts
  */
 class AwsOpportunityCustomer extends Shape
 {
     /**
-     * @param array{Contacts?: list<Contact>} $args
+     * @param array{Contacts?: list<Contact>|null} $args
      */
     public function __construct(array $args = [])
     {

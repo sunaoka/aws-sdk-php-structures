@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\CreateVpcEndpoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\CreateVpcEndpointDetail $createVpcEndpointDetail
+ * @property Shapes\CreateVpcEndpointDetail|null $createVpcEndpointDetail
  */
 class CreateVpcEndpointResponse extends Response
 {

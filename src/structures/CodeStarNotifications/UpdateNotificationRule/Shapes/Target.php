@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeStarNotifications\UpdateNotificationRule\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TargetType
- * @property string $TargetAddress
+ * @property string|null $TargetType
+ * @property string|null $TargetAddress
  */
 class Target extends Shape
 {
     /**
      * @param array{
-     *     TargetType?: string,
-     *     TargetAddress?: string
+     *     TargetType?: string|null,
+     *     TargetAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataExchange\ListJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DataSetId
- * @property int<1, 200> $MaxResults
- * @property string $NextToken
- * @property string $RevisionId
+ * @property string|null $DataSetId
+ * @property int<1, 200>|null $MaxResults
+ * @property string|null $NextToken
+ * @property string|null $RevisionId
  */
 class ListJobsRequest extends Request
 {
     /**
      * @param array{
-     *     DataSetId?: string,
-     *     MaxResults?: int<1, 200>,
-     *     NextToken?: string,
-     *     RevisionId?: string
+     *     DataSetId?: string|null,
+     *     MaxResults?: int<1, 200>|null,
+     *     NextToken?: string|null,
+     *     RevisionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

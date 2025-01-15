@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $Name
  * @property 'SMS'|'VOICE'|'EMAIL' $Type
  * @property Shapes\ContactChannelAddress $DeliveryAddress
- * @property 'ACTIVATED'|'NOT_ACTIVATED' $ActivationStatus
+ * @property 'ACTIVATED'|'NOT_ACTIVATED'|null $ActivationStatus
  */
 class GetContactChannelResponse extends Response
 {

@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\CreateDataProtectionSettings\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $builtInPatternId
- * @property int<1, 3> $confidenceLevel
- * @property CustomPattern $customPattern
- * @property list<string> $enforcedUrls
- * @property list<string> $exemptUrls
+ * @property string|null $builtInPatternId
+ * @property int<1, 3>|null $confidenceLevel
+ * @property CustomPattern|null $customPattern
+ * @property list<string>|null $enforcedUrls
+ * @property list<string>|null $exemptUrls
  * @property RedactionPlaceHolder $redactionPlaceHolder
  */
 class InlineRedactionPattern extends Shape
 {
     /**
      * @param array{
-     *     builtInPatternId?: string,
-     *     confidenceLevel?: int<1, 3>,
-     *     customPattern?: CustomPattern,
-     *     enforcedUrls?: list<string>,
-     *     exemptUrls?: list<string>,
+     *     builtInPatternId?: string|null,
+     *     confidenceLevel?: int<1, 3>|null,
+     *     customPattern?: CustomPattern|null,
+     *     enforcedUrls?: list<string>|null,
+     *     exemptUrls?: list<string>|null,
      *     redactionPlaceHolder: RedactionPlaceHolder
      * } $args
      */

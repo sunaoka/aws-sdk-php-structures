@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ElastiCache\ExportServerlessCacheSnapshot\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServerlessCacheSnapshotName
- * @property string $ARN
- * @property string $KmsKeyId
- * @property string $SnapshotType
- * @property string $Status
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property \Aws\Api\DateTimeResult $ExpiryTime
- * @property string $BytesUsedForCache
- * @property ServerlessCacheConfiguration $ServerlessCacheConfiguration
+ * @property string|null $ServerlessCacheSnapshotName
+ * @property string|null $ARN
+ * @property string|null $KmsKeyId
+ * @property string|null $SnapshotType
+ * @property string|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property \Aws\Api\DateTimeResult|null $ExpiryTime
+ * @property string|null $BytesUsedForCache
+ * @property ServerlessCacheConfiguration|null $ServerlessCacheConfiguration
  */
 class ServerlessCacheSnapshot extends Shape
 {
     /**
      * @param array{
-     *     ServerlessCacheSnapshotName?: string,
-     *     ARN?: string,
-     *     KmsKeyId?: string,
-     *     SnapshotType?: string,
-     *     Status?: string,
-     *     CreateTime?: \Aws\Api\DateTimeResult,
-     *     ExpiryTime?: \Aws\Api\DateTimeResult,
-     *     BytesUsedForCache?: string,
-     *     ServerlessCacheConfiguration?: ServerlessCacheConfiguration
+     *     ServerlessCacheSnapshotName?: string|null,
+     *     ARN?: string|null,
+     *     KmsKeyId?: string|null,
+     *     SnapshotType?: string|null,
+     *     Status?: string|null,
+     *     CreateTime?: \Aws\Api\DateTimeResult|null,
+     *     ExpiryTime?: \Aws\Api\DateTimeResult|null,
+     *     BytesUsedForCache?: string|null,
+     *     ServerlessCacheConfiguration?: ServerlessCacheConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

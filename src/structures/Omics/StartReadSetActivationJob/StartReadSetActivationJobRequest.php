@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $sequenceStoreId
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property list<Shapes\StartReadSetActivationJobSourceItem> $sources
  */
 class StartReadSetActivationJobRequest extends Request
@@ -14,7 +14,7 @@ class StartReadSetActivationJobRequest extends Request
     /**
      * @param array{
      *     sequenceStoreId: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     sources: list<Shapes\StartReadSetActivationJobSourceItem>
      * } $args
      */

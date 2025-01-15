@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListAccountAssignmentsForPrincipal;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\ListAccountAssignmentsFilter $Filter
+ * @property Shapes\ListAccountAssignmentsFilter|null $Filter
  * @property string $InstanceArn
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  * @property string $PrincipalId
  * @property 'USER'|'GROUP' $PrincipalType
  */
@@ -16,10 +16,10 @@ class ListAccountAssignmentsForPrincipalRequest extends Request
 {
     /**
      * @param array{
-     *     Filter?: Shapes\ListAccountAssignmentsFilter,
+     *     Filter?: Shapes\ListAccountAssignmentsFilter|null,
      *     InstanceArn: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
      *     PrincipalId: string,
      *     PrincipalType: 'USER'|'GROUP'
      * } $args

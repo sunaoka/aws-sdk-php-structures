@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Appstream\DeleteImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $allowFleet
- * @property bool $allowImageBuilder
+ * @property bool|null $allowFleet
+ * @property bool|null $allowImageBuilder
  */
 class ImagePermissions extends Shape
 {
     /**
      * @param array{
-     *     allowFleet?: bool,
-     *     allowImageBuilder?: bool
+     *     allowFleet?: bool|null,
+     *     allowImageBuilder?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

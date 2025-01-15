@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DirectoryServiceData\UpdateGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $DirectoryId
- * @property 'DomainLocal'|'Global'|'Universal'|'BuiltinLocal' $GroupScope
- * @property 'Distribution'|'Security' $GroupType
- * @property array<string, Shapes\AttributeValue> $OtherAttributes
+ * @property 'DomainLocal'|'Global'|'Universal'|'BuiltinLocal'|null $GroupScope
+ * @property 'Distribution'|'Security'|null $GroupType
+ * @property array<string, Shapes\AttributeValue>|null $OtherAttributes
  * @property string $SAMAccountName
- * @property 'ADD'|'REPLACE'|'REMOVE' $UpdateType
+ * @property 'ADD'|'REPLACE'|'REMOVE'|null $UpdateType
  */
 class UpdateGroupRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     DirectoryId: string,
-     *     GroupScope?: 'DomainLocal'|'Global'|'Universal'|'BuiltinLocal',
-     *     GroupType?: 'Distribution'|'Security',
-     *     OtherAttributes?: array<string, Shapes\AttributeValue>,
+     *     GroupScope?: 'DomainLocal'|'Global'|'Universal'|'BuiltinLocal'|null,
+     *     GroupType?: 'Distribution'|'Security'|null,
+     *     OtherAttributes?: array<string, Shapes\AttributeValue>|null,
      *     SAMAccountName: string,
-     *     UpdateType?: 'ADD'|'REPLACE'|'REMOVE'
+     *     UpdateType?: 'ADD'|'REPLACE'|'REMOVE'|null
      * } $args
      */
     public function __construct(array $args)

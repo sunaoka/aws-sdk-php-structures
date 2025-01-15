@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\SearchUsersByImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Male'|'Female' $Value
- * @property float $Confidence
+ * @property 'Male'|'Female'|null $Value
+ * @property float|null $Confidence
  */
 class Gender extends Shape
 {
     /**
      * @param array{
-     *     Value?: 'Male'|'Female',
-     *     Confidence?: float
+     *     Value?: 'Male'|'Female'|null,
+     *     Confidence?: float|null
      * } $args
      */
     public function __construct(array $args = [])

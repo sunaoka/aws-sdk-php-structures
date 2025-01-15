@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CodePipeline\GetThirdPartyJobDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
+ * @property string|null $name
  */
 class StageContext extends Shape
 {
     /**
-     * @param array{name?: string} $args
+     * @param array{name?: string|null} $args
      */
     public function __construct(array $args = [])
     {

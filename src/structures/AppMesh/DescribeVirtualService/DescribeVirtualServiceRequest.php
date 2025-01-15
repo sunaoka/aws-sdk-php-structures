@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $meshName
- * @property string $meshOwner
+ * @property string|null $meshOwner
  * @property string $virtualServiceName
  */
 class DescribeVirtualServiceRequest extends Request
@@ -14,7 +14,7 @@ class DescribeVirtualServiceRequest extends Request
     /**
      * @param array{
      *     meshName: string,
-     *     meshOwner?: string,
+     *     meshOwner?: string|null,
      *     virtualServiceName: string
      * } $args
      */

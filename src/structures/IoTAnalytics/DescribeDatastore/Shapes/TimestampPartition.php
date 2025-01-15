@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $attributeName
- * @property string $timestampFormat
+ * @property string|null $timestampFormat
  */
 class TimestampPartition extends Shape
 {
     /**
      * @param array{
      *     attributeName: string,
-     *     timestampFormat?: string
+     *     timestampFormat?: string|null
      * } $args
      */
     public function __construct(array $args)

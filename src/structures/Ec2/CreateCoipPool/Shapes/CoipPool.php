@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateCoipPool\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PoolId
- * @property list<string> $PoolCidrs
- * @property string $LocalGatewayRouteTableId
- * @property list<Tag> $Tags
- * @property string $PoolArn
+ * @property string|null $PoolId
+ * @property list<string>|null $PoolCidrs
+ * @property string|null $LocalGatewayRouteTableId
+ * @property list<Tag>|null $Tags
+ * @property string|null $PoolArn
  */
 class CoipPool extends Shape
 {
     /**
      * @param array{
-     *     PoolId?: string,
-     *     PoolCidrs?: list<string>,
-     *     LocalGatewayRouteTableId?: string,
-     *     Tags?: list<Tag>,
-     *     PoolArn?: string
+     *     PoolId?: string|null,
+     *     PoolCidrs?: list<string>|null,
+     *     LocalGatewayRouteTableId?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     PoolArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

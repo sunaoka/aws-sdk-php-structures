@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SubnetCidrReservationId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DeleteSubnetCidrReservationRequest extends Request
 {
     /**
      * @param array{
      *     SubnetCidrReservationId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

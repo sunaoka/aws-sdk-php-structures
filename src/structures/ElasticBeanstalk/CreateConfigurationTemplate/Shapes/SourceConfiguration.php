@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\CreateConfigurationTemplate\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationName
- * @property string $TemplateName
+ * @property string|null $ApplicationName
+ * @property string|null $TemplateName
  */
 class SourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ApplicationName?: string,
-     *     TemplateName?: string
+     *     ApplicationName?: string|null,
+     *     TemplateName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

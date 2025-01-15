@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeTransitGatewayMulticastDomains\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayMulticastDomainId
- * @property string $TransitGatewayId
- * @property string $TransitGatewayMulticastDomainArn
- * @property string $OwnerId
- * @property TransitGatewayMulticastDomainOptions $Options
- * @property 'pending'|'available'|'deleting'|'deleted' $State
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property list<Tag> $Tags
+ * @property string|null $TransitGatewayMulticastDomainId
+ * @property string|null $TransitGatewayId
+ * @property string|null $TransitGatewayMulticastDomainArn
+ * @property string|null $OwnerId
+ * @property TransitGatewayMulticastDomainOptions|null $Options
+ * @property 'pending'|'available'|'deleting'|'deleted'|null $State
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property list<Tag>|null $Tags
  */
 class TransitGatewayMulticastDomain extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayMulticastDomainId?: string,
-     *     TransitGatewayId?: string,
-     *     TransitGatewayMulticastDomainArn?: string,
-     *     OwnerId?: string,
-     *     Options?: TransitGatewayMulticastDomainOptions,
-     *     State?: 'pending'|'available'|'deleting'|'deleted',
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     Tags?: list<Tag>
+     *     TransitGatewayMulticastDomainId?: string|null,
+     *     TransitGatewayId?: string|null,
+     *     TransitGatewayMulticastDomainArn?: string|null,
+     *     OwnerId?: string|null,
+     *     Options?: TransitGatewayMulticastDomainOptions|null,
+     *     State?: 'pending'|'available'|'deleting'|'deleted'|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

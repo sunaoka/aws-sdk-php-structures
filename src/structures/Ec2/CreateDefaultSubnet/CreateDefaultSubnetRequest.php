@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AvailabilityZone
- * @property bool $DryRun
- * @property bool $Ipv6Native
+ * @property bool|null $DryRun
+ * @property bool|null $Ipv6Native
  */
 class CreateDefaultSubnetRequest extends Request
 {
     /**
      * @param array{
      *     AvailabilityZone: string,
-     *     DryRun?: bool,
-     *     Ipv6Native?: bool
+     *     DryRun?: bool|null,
+     *     Ipv6Native?: bool|null
      * } $args
      */
     public function __construct(array $args)

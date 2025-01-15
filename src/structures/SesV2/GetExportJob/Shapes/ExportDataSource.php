@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SesV2\GetExportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MetricsDataSource $MetricsDataSource
- * @property MessageInsightsDataSource $MessageInsightsDataSource
+ * @property MetricsDataSource|null $MetricsDataSource
+ * @property MessageInsightsDataSource|null $MessageInsightsDataSource
  */
 class ExportDataSource extends Shape
 {
     /**
      * @param array{
-     *     MetricsDataSource?: MetricsDataSource,
-     *     MessageInsightsDataSource?: MessageInsightsDataSource
+     *     MetricsDataSource?: MetricsDataSource|null,
+     *     MessageInsightsDataSource?: MessageInsightsDataSource|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Pricing\DescribeServices;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ServiceCode
- * @property string $FormatVersion
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $ServiceCode
+ * @property string|null $FormatVersion
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class DescribeServicesRequest extends Request
 {
     /**
      * @param array{
-     *     ServiceCode?: string,
-     *     FormatVersion?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     ServiceCode?: string|null,
+     *     FormatVersion?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

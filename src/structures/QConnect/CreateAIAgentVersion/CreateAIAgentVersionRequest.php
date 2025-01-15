@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $aiAgentId
  * @property string $assistantId
- * @property string $clientToken
- * @property \Aws\Api\DateTimeResult $modifiedTime
+ * @property string|null $clientToken
+ * @property \Aws\Api\DateTimeResult|null $modifiedTime
  */
 class CreateAIAgentVersionRequest extends Request
 {
@@ -16,8 +16,8 @@ class CreateAIAgentVersionRequest extends Request
      * @param array{
      *     aiAgentId: string,
      *     assistantId: string,
-     *     clientToken?: string,
-     *     modifiedTime?: \Aws\Api\DateTimeResult
+     *     clientToken?: string|null,
+     *     modifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

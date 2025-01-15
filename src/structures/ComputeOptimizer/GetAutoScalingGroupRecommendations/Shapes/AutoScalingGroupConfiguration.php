@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetAutoScalingGroupRecommendat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $desiredCapacity
- * @property int $minSize
- * @property int $maxSize
- * @property string $instanceType
- * @property 'Prioritized'|'LowestPrice' $allocationStrategy
- * @property double $estimatedInstanceHourReductionPercentage
- * @property 'SingleInstanceType'|'MixedInstanceTypes' $type
- * @property list<string> $mixedInstanceTypes
+ * @property int|null $desiredCapacity
+ * @property int|null $minSize
+ * @property int|null $maxSize
+ * @property string|null $instanceType
+ * @property 'Prioritized'|'LowestPrice'|null $allocationStrategy
+ * @property double|null $estimatedInstanceHourReductionPercentage
+ * @property 'SingleInstanceType'|'MixedInstanceTypes'|null $type
+ * @property list<string>|null $mixedInstanceTypes
  */
 class AutoScalingGroupConfiguration extends Shape
 {
     /**
      * @param array{
-     *     desiredCapacity?: int,
-     *     minSize?: int,
-     *     maxSize?: int,
-     *     instanceType?: string,
-     *     allocationStrategy?: 'Prioritized'|'LowestPrice',
-     *     estimatedInstanceHourReductionPercentage?: double,
-     *     type?: 'SingleInstanceType'|'MixedInstanceTypes',
-     *     mixedInstanceTypes?: list<string>
+     *     desiredCapacity?: int|null,
+     *     minSize?: int|null,
+     *     maxSize?: int|null,
+     *     instanceType?: string|null,
+     *     allocationStrategy?: 'Prioritized'|'LowestPrice'|null,
+     *     estimatedInstanceHourReductionPercentage?: double|null,
+     *     type?: 'SingleInstanceType'|'MixedInstanceTypes'|null,
+     *     mixedInstanceTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

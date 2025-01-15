@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ssm\ListNodes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SyncName
- * @property list<Shapes\NodeFilter> $Filters
- * @property string $NextToken
- * @property int<1, 50> $MaxResults
+ * @property string|null $SyncName
+ * @property list<Shapes\NodeFilter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $MaxResults
  */
 class ListNodesRequest extends Request
 {
     /**
      * @param array{
-     *     SyncName?: string,
-     *     Filters?: list<Shapes\NodeFilter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 50>
+     *     SyncName?: string|null,
+     *     Filters?: list<Shapes\NodeFilter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\ListProfileObjectTypeTemplates
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TemplateId
- * @property string $SourceName
- * @property string $SourceObject
+ * @property string|null $TemplateId
+ * @property string|null $SourceName
+ * @property string|null $SourceObject
  */
 class ListProfileObjectTypeTemplateItem extends Shape
 {
     /**
      * @param array{
-     *     TemplateId?: string,
-     *     SourceName?: string,
-     *     SourceObject?: string
+     *     TemplateId?: string|null,
+     *     SourceName?: string|null,
+     *     SourceObject?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\ListServices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
- * @property string $Name
- * @property 'HTTP'|'DNS_HTTP'|'DNS' $Type
- * @property string $Description
- * @property int $InstanceCount
- * @property DnsConfig $DnsConfig
- * @property HealthCheckConfig $HealthCheckConfig
- * @property HealthCheckCustomConfig $HealthCheckCustomConfig
- * @property \Aws\Api\DateTimeResult $CreateDate
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property 'HTTP'|'DNS_HTTP'|'DNS'|null $Type
+ * @property string|null $Description
+ * @property int|null $InstanceCount
+ * @property DnsConfig|null $DnsConfig
+ * @property HealthCheckConfig|null $HealthCheckConfig
+ * @property HealthCheckCustomConfig|null $HealthCheckCustomConfig
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
  */
 class ServiceSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string,
-     *     Name?: string,
-     *     Type?: 'HTTP'|'DNS_HTTP'|'DNS',
-     *     Description?: string,
-     *     InstanceCount?: int,
-     *     DnsConfig?: DnsConfig,
-     *     HealthCheckConfig?: HealthCheckConfig,
-     *     HealthCheckCustomConfig?: HealthCheckCustomConfig,
-     *     CreateDate?: \Aws\Api\DateTimeResult
+     *     Id?: string|null,
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     Type?: 'HTTP'|'DNS_HTTP'|'DNS'|null,
+     *     Description?: string|null,
+     *     InstanceCount?: int|null,
+     *     DnsConfig?: DnsConfig|null,
+     *     HealthCheckConfig?: HealthCheckConfig|null,
+     *     HealthCheckCustomConfig?: HealthCheckCustomConfig|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

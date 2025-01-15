@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\CodePipeline\ListRuleExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $pipelineExecutionId
- * @property string $ruleExecutionId
- * @property int<1, max> $pipelineVersion
- * @property string $stageName
- * @property string $ruleName
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property string $updatedBy
- * @property 'InProgress'|'Abandoned'|'Succeeded'|'Failed' $status
- * @property RuleExecutionInput $input
- * @property RuleExecutionOutput $output
+ * @property string|null $pipelineExecutionId
+ * @property string|null $ruleExecutionId
+ * @property int<1, max>|null $pipelineVersion
+ * @property string|null $stageName
+ * @property string|null $ruleName
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property string|null $updatedBy
+ * @property 'InProgress'|'Abandoned'|'Succeeded'|'Failed'|null $status
+ * @property RuleExecutionInput|null $input
+ * @property RuleExecutionOutput|null $output
  */
 class RuleExecutionDetail extends Shape
 {
     /**
      * @param array{
-     *     pipelineExecutionId?: string,
-     *     ruleExecutionId?: string,
-     *     pipelineVersion?: int<1, max>,
-     *     stageName?: string,
-     *     ruleName?: string,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string,
-     *     status?: 'InProgress'|'Abandoned'|'Succeeded'|'Failed',
-     *     input?: RuleExecutionInput,
-     *     output?: RuleExecutionOutput
+     *     pipelineExecutionId?: string|null,
+     *     ruleExecutionId?: string|null,
+     *     pipelineVersion?: int<1, max>|null,
+     *     stageName?: string|null,
+     *     ruleName?: string|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null,
+     *     status?: 'InProgress'|'Abandoned'|'Succeeded'|'Failed'|null,
+     *     input?: RuleExecutionInput|null,
+     *     output?: RuleExecutionOutput|null
      * } $args
      */
     public function __construct(array $args = [])

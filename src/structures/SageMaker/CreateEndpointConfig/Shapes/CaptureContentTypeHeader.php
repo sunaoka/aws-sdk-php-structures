@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateEndpointConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $CsvContentTypes
- * @property list<string> $JsonContentTypes
+ * @property list<string>|null $CsvContentTypes
+ * @property list<string>|null $JsonContentTypes
  */
 class CaptureContentTypeHeader extends Shape
 {
     /**
      * @param array{
-     *     CsvContentTypes?: list<string>,
-     *     JsonContentTypes?: list<string>
+     *     CsvContentTypes?: list<string>|null,
+     *     JsonContentTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

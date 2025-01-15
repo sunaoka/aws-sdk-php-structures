@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DirectConnect\UpdateVirtualInterfaceAttributes\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $cidr
+ * @property string|null $cidr
  */
 class RouteFilterPrefix extends Shape
 {
     /**
-     * @param array{cidr?: string} $args
+     * @param array{cidr?: string|null} $args
      */
     public function __construct(array $args = [])
     {

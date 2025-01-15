@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreatePrompt\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PromptAgentResource $agent
+ * @property PromptAgentResource|null $agent
  */
 class PromptGenAiResource extends Shape
 {
     /**
-     * @param array{agent?: PromptAgentResource} $args
+     * @param array{agent?: PromptAgentResource|null} $args
      */
     public function __construct(array $args = [])
     {

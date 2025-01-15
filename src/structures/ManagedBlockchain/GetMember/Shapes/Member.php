@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\GetMember\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NetworkId
- * @property string $Id
- * @property string $Name
- * @property string $Description
- * @property MemberFrameworkAttributes $FrameworkAttributes
- * @property MemberLogPublishingConfiguration $LogPublishingConfiguration
- * @property 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'INACCESSIBLE_ENCRYPTION_KEY' $Status
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property array<string, string> $Tags
- * @property string $Arn
- * @property string $KmsKeyArn
+ * @property string|null $NetworkId
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property MemberFrameworkAttributes|null $FrameworkAttributes
+ * @property MemberLogPublishingConfiguration|null $LogPublishingConfiguration
+ * @property 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'INACCESSIBLE_ENCRYPTION_KEY'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property array<string, string>|null $Tags
+ * @property string|null $Arn
+ * @property string|null $KmsKeyArn
  */
 class Member extends Shape
 {
     /**
      * @param array{
-     *     NetworkId?: string,
-     *     Id?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     FrameworkAttributes?: MemberFrameworkAttributes,
-     *     LogPublishingConfiguration?: MemberLogPublishingConfiguration,
-     *     Status?: 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'INACCESSIBLE_ENCRYPTION_KEY',
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     Tags?: array<string, string>,
-     *     Arn?: string,
-     *     KmsKeyArn?: string
+     *     NetworkId?: string|null,
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     FrameworkAttributes?: MemberFrameworkAttributes|null,
+     *     LogPublishingConfiguration?: MemberLogPublishingConfiguration|null,
+     *     Status?: 'CREATING'|'AVAILABLE'|'CREATE_FAILED'|'UPDATING'|'DELETING'|'DELETED'|'INACCESSIBLE_ENCRYPTION_KEY'|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     Tags?: array<string, string>|null,
+     *     Arn?: string|null,
+     *     KmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

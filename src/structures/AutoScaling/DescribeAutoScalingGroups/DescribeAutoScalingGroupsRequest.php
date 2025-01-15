@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AutoScaling\DescribeAutoScalingGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $AutoScalingGroupNames
- * @property string $NextToken
- * @property int $MaxRecords
- * @property list<Shapes\Filter> $Filters
+ * @property list<string>|null $AutoScalingGroupNames
+ * @property string|null $NextToken
+ * @property int|null $MaxRecords
+ * @property list<Shapes\Filter>|null $Filters
  */
 class DescribeAutoScalingGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     AutoScalingGroupNames?: list<string>,
-     *     NextToken?: string,
-     *     MaxRecords?: int,
-     *     Filters?: list<Shapes\Filter>
+     *     AutoScalingGroupNames?: list<string>|null,
+     *     NextToken?: string|null,
+     *     MaxRecords?: int|null,
+     *     Filters?: list<Shapes\Filter>|null
      * } $args
      */
     public function __construct(array $args = [])

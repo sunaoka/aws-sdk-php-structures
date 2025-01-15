@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeSchedule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\ScheduleAction> $ScheduleActions
+ * @property string|null $NextToken
+ * @property list<Shapes\ScheduleAction>|null $ScheduleActions
  */
 class DescribeScheduleResponse extends Response
 {

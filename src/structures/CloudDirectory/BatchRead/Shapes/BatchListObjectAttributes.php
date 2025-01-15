@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ObjectReference $ObjectReference
- * @property string $NextToken
- * @property int<1, max> $MaxResults
- * @property SchemaFacet $FacetFilter
+ * @property string|null $NextToken
+ * @property int<1, max>|null $MaxResults
+ * @property SchemaFacet|null $FacetFilter
  */
 class BatchListObjectAttributes extends Shape
 {
     /**
      * @param array{
      *     ObjectReference: ObjectReference,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, max>,
-     *     FacetFilter?: SchemaFacet
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, max>|null,
+     *     FacetFilter?: SchemaFacet|null
      * } $args
      */
     public function __construct(array $args)

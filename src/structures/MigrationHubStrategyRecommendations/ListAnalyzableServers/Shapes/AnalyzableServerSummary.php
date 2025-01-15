@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListAnalyza
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $hostname
- * @property string $ipAddress
- * @property string $source
- * @property string $vmId
+ * @property string|null $hostname
+ * @property string|null $ipAddress
+ * @property string|null $source
+ * @property string|null $vmId
  */
 class AnalyzableServerSummary extends Shape
 {
     /**
      * @param array{
-     *     hostname?: string,
-     *     ipAddress?: string,
-     *     source?: string,
-     *     vmId?: string
+     *     hostname?: string|null,
+     *     ipAddress?: string|null,
+     *     source?: string|null,
+     *     vmId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

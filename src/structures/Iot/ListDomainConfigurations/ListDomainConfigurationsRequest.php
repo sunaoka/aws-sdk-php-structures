@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\ListDomainConfigurations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $marker
- * @property int<1, 250> $pageSize
- * @property 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS' $serviceType
+ * @property string|null $marker
+ * @property int<1, 250>|null $pageSize
+ * @property 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS'|null $serviceType
  */
 class ListDomainConfigurationsRequest extends Request
 {
     /**
      * @param array{
-     *     marker?: string,
-     *     pageSize?: int<1, 250>,
-     *     serviceType?: 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS'
+     *     marker?: string|null,
+     *     pageSize?: int<1, 250>|null,
+     *     serviceType?: 'DATA'|'CREDENTIAL_PROVIDER'|'JOBS'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElastiCache\CreateUser\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'password'|'no-password-required'|'iam' $Type
- * @property list<string> $Passwords
+ * @property 'password'|'no-password-required'|'iam'|null $Type
+ * @property list<string>|null $Passwords
  */
 class AuthenticationMode extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'password'|'no-password-required'|'iam',
-     *     Passwords?: list<string>
+     *     Type?: 'password'|'no-password-required'|'iam'|null,
+     *     Passwords?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $agreementId
  * @property string $deploymentParameterId
  * @property string $resourceArn
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class PutDeploymentParameterResponse extends Response
 {

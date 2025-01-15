@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\DataExchange\UpdateRevision;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Comment
+ * @property string|null $Comment
  * @property string $DataSetId
- * @property bool $Finalized
+ * @property bool|null $Finalized
  * @property string $RevisionId
  */
 class UpdateRevisionRequest extends Request
 {
     /**
      * @param array{
-     *     Comment?: string,
+     *     Comment?: string|null,
      *     DataSetId: string,
-     *     Finalized?: bool,
+     *     Finalized?: bool|null,
      *     RevisionId: string
      * } $args
      */

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property string $externalId
+ * @property string|null $externalId
  * @property string $name
  * @property string $type
  * @property string $description
@@ -17,7 +17,7 @@ class AssetCompositeModelSummary extends Shape
     /**
      * @param array{
      *     id: string,
-     *     externalId?: string,
+     *     externalId?: string|null,
      *     name: string,
      *     type: string,
      *     description: string,

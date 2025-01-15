@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\drs\StartReplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\SourceServer $sourceServer
+ * @property Shapes\SourceServer|null $sourceServer
  */
 class StartReplicationResponse extends Response
 {

@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
- * @property list<Shapes\Step> $beforeSteps
- * @property list<Shapes\Step> $afterSteps
+ * @property string|null $description
+ * @property list<Shapes\Step>|null $beforeSteps
+ * @property list<Shapes\Step>|null $afterSteps
  * @property Shapes\TestCases $testCases
- * @property string $clientToken
- * @property array<string, string> $tags
+ * @property string|null $clientToken
+ * @property array<string, string>|null $tags
  */
 class CreateTestSuiteRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     beforeSteps?: list<Shapes\Step>,
-     *     afterSteps?: list<Shapes\Step>,
+     *     description?: string|null,
+     *     beforeSteps?: list<Shapes\Step>|null,
+     *     afterSteps?: list<Shapes\Step>|null,
      *     testCases: Shapes\TestCases,
-     *     clientToken?: string,
-     *     tags?: array<string, string>
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

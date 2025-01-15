@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SsmSap\GetResourcePermission;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'RESTORE' $ActionType
+ * @property 'RESTORE'|null $ActionType
  * @property string $ResourceArn
  */
 class GetResourcePermissionRequest extends Request
 {
     /**
      * @param array{
-     *     ActionType?: 'RESTORE',
+     *     ActionType?: 'RESTORE'|null,
      *     ResourceArn: string
      * } $args
      */

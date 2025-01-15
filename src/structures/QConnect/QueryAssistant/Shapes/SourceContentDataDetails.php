@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\QConnect\QueryAssistant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CitationSpan $citationSpan
+ * @property CitationSpan|null $citationSpan
  * @property string $id
  * @property RankingData $rankingData
  * @property TextData $textData
@@ -15,7 +15,7 @@ class SourceContentDataDetails extends Shape
 {
     /**
      * @param array{
-     *     citationSpan?: CitationSpan,
+     *     citationSpan?: CitationSpan|null,
      *     id: string,
      *     rankingData: RankingData,
      *     textData: TextData,

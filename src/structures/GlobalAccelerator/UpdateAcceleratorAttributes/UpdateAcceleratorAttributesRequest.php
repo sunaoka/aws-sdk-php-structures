@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AcceleratorArn
- * @property bool $FlowLogsEnabled
- * @property string $FlowLogsS3Bucket
- * @property string $FlowLogsS3Prefix
+ * @property bool|null $FlowLogsEnabled
+ * @property string|null $FlowLogsS3Bucket
+ * @property string|null $FlowLogsS3Prefix
  */
 class UpdateAcceleratorAttributesRequest extends Request
 {
     /**
      * @param array{
      *     AcceleratorArn: string,
-     *     FlowLogsEnabled?: bool,
-     *     FlowLogsS3Bucket?: string,
-     *     FlowLogsS3Prefix?: string
+     *     FlowLogsEnabled?: bool|null,
+     *     FlowLogsS3Bucket?: string|null,
+     *     FlowLogsS3Prefix?: string|null
      * } $args
      */
     public function __construct(array $args)

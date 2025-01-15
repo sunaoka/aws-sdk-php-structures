@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $VersionName
- * @property string $DocumentVersion
- * @property 'YAML'|'JSON'|'TEXT' $DocumentFormat
+ * @property string|null $VersionName
+ * @property string|null $DocumentVersion
+ * @property 'YAML'|'JSON'|'TEXT'|null $DocumentFormat
  */
 class GetDocumentRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     VersionName?: string,
-     *     DocumentVersion?: string,
-     *     DocumentFormat?: 'YAML'|'JSON'|'TEXT'
+     *     VersionName?: string|null,
+     *     DocumentVersion?: string|null,
+     *     DocumentFormat?: 'YAML'|'JSON'|'TEXT'|null
      * } $args
      */
     public function __construct(array $args)

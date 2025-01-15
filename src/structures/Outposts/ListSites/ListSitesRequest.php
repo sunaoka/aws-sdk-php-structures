@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Outposts\ListSites;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
- * @property list<string> $OperatingAddressCountryCodeFilter
- * @property list<string> $OperatingAddressStateOrRegionFilter
- * @property list<string> $OperatingAddressCityFilter
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
+ * @property list<string>|null $OperatingAddressCountryCodeFilter
+ * @property list<string>|null $OperatingAddressStateOrRegionFilter
+ * @property list<string>|null $OperatingAddressCityFilter
  */
 class ListSitesRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     OperatingAddressCountryCodeFilter?: list<string>,
-     *     OperatingAddressStateOrRegionFilter?: list<string>,
-     *     OperatingAddressCityFilter?: list<string>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     OperatingAddressCountryCodeFilter?: list<string>|null,
+     *     OperatingAddressStateOrRegionFilter?: list<string>|null,
+     *     OperatingAddressCityFilter?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

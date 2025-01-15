@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DirectConnect\ConfirmCustomerAgreement;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $agreementName
+ * @property string|null $agreementName
  */
 class ConfirmCustomerAgreementRequest extends Request
 {
     /**
-     * @param array{agreementName?: string} $args
+     * @param array{agreementName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

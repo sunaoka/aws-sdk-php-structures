@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $connectionId
- * @property string $connectionName
- * @property string $encryptionMode
+ * @property string|null $connectionName
+ * @property string|null $encryptionMode
  */
 class UpdateConnectionRequest extends Request
 {
     /**
      * @param array{
      *     connectionId: string,
-     *     connectionName?: string,
-     *     encryptionMode?: string
+     *     connectionName?: string|null,
+     *     encryptionMode?: string|null
      * } $args
      */
     public function __construct(array $args)

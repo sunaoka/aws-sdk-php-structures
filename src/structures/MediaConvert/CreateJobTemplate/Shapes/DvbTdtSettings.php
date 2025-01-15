@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1000, 30000> $TdtInterval
+ * @property int<1000, 30000>|null $TdtInterval
  */
 class DvbTdtSettings extends Shape
 {
     /**
-     * @param array{TdtInterval?: int<1000, 30000>} $args
+     * @param array{TdtInterval?: int<1000, 30000>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Detective\ListIndicators\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Location
- * @property string $IpAddress
- * @property bool $IsNewForEntireAccount
+ * @property string|null $Location
+ * @property string|null $IpAddress
+ * @property bool|null $IsNewForEntireAccount
  */
 class NewGeolocationDetail extends Shape
 {
     /**
      * @param array{
-     *     Location?: string,
-     *     IpAddress?: string,
-     *     IsNewForEntireAccount?: bool
+     *     Location?: string|null,
+     *     IpAddress?: string|null,
+     *     IsNewForEntireAccount?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

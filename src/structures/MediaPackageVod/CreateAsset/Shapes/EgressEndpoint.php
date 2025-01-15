@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\CreateAsset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PackagingConfigurationId
- * @property string $Status
- * @property string $Url
+ * @property string|null $PackagingConfigurationId
+ * @property string|null $Status
+ * @property string|null $Url
  */
 class EgressEndpoint extends Shape
 {
     /**
      * @param array{
-     *     PackagingConfigurationId?: string,
-     *     Status?: string,
-     *     Url?: string
+     *     PackagingConfigurationId?: string|null,
+     *     Status?: string|null,
+     *     Url?: string|null
      * } $args
      */
     public function __construct(array $args = [])

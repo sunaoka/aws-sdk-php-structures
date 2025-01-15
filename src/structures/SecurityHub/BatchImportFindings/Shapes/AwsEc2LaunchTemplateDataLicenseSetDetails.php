@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LicenseConfigurationArn
+ * @property string|null $LicenseConfigurationArn
  */
 class AwsEc2LaunchTemplateDataLicenseSetDetails extends Shape
 {
     /**
-     * @param array{LicenseConfigurationArn?: string} $args
+     * @param array{LicenseConfigurationArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

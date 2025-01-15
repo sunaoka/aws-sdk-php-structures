@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Omics\CreateAnnotationStore;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\ReferenceItem $reference
- * @property string $name
- * @property string $description
- * @property array<string, string> $tags
- * @property string $versionName
- * @property Shapes\SseConfig $sseConfig
+ * @property Shapes\ReferenceItem|null $reference
+ * @property string|null $name
+ * @property string|null $description
+ * @property array<string, string>|null $tags
+ * @property string|null $versionName
+ * @property Shapes\SseConfig|null $sseConfig
  * @property 'GFF'|'TSV'|'VCF' $storeFormat
- * @property Shapes\StoreOptions $storeOptions
+ * @property Shapes\StoreOptions|null $storeOptions
  */
 class CreateAnnotationStoreRequest extends Request
 {
     /**
      * @param array{
-     *     reference?: Shapes\ReferenceItem,
-     *     name?: string,
-     *     description?: string,
-     *     tags?: array<string, string>,
-     *     versionName?: string,
-     *     sseConfig?: Shapes\SseConfig,
+     *     reference?: Shapes\ReferenceItem|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     tags?: array<string, string>|null,
+     *     versionName?: string|null,
+     *     sseConfig?: Shapes\SseConfig|null,
      *     storeFormat: 'GFF'|'TSV'|'VCF',
-     *     storeOptions?: Shapes\StoreOptions
+     *     storeOptions?: Shapes\StoreOptions|null
      * } $args
      */
     public function __construct(array $args)

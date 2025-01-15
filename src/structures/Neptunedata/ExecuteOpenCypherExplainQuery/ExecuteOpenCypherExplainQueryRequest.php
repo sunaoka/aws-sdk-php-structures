@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $openCypherQuery
- * @property string $parameters
+ * @property string|null $parameters
  * @property 'static'|'dynamic'|'details' $explainMode
  */
 class ExecuteOpenCypherExplainQueryRequest extends Request
@@ -14,7 +14,7 @@ class ExecuteOpenCypherExplainQueryRequest extends Request
     /**
      * @param array{
      *     openCypherQuery: string,
-     *     parameters?: string,
+     *     parameters?: string|null,
      *     explainMode: 'static'|'dynamic'|'details'
      * } $args
      */

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AuditManager\BatchImportEvidenceToAssessmentCon
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ManualEvidence $manualEvidence
- * @property string $errorCode
- * @property string $errorMessage
+ * @property ManualEvidence|null $manualEvidence
+ * @property string|null $errorCode
+ * @property string|null $errorMessage
  */
 class BatchImportEvidenceToAssessmentControlError extends Shape
 {
     /**
      * @param array{
-     *     manualEvidence?: ManualEvidence,
-     *     errorCode?: string,
-     *     errorMessage?: string
+     *     manualEvidence?: ManualEvidence|null,
+     *     errorCode?: string|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

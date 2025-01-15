@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppIntegrationsService\ListDataIntegrationAssoc
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'COMPLETED'|'IN_PROGRESS'|'FAILED' $ExecutionStatus
- * @property string $StatusMessage
+ * @property 'COMPLETED'|'IN_PROGRESS'|'FAILED'|null $ExecutionStatus
+ * @property string|null $StatusMessage
  */
 class LastExecutionStatus extends Shape
 {
     /**
      * @param array{
-     *     ExecutionStatus?: 'COMPLETED'|'IN_PROGRESS'|'FAILED',
-     *     StatusMessage?: string
+     *     ExecutionStatus?: 'COMPLETED'|'IN_PROGRESS'|'FAILED'|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

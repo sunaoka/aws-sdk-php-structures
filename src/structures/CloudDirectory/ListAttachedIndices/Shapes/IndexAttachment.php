@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\ListAttachedIndices\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AttributeKeyAndValue> $IndexedAttributes
- * @property string $ObjectIdentifier
+ * @property list<AttributeKeyAndValue>|null $IndexedAttributes
+ * @property string|null $ObjectIdentifier
  */
 class IndexAttachment extends Shape
 {
     /**
      * @param array{
-     *     IndexedAttributes?: list<AttributeKeyAndValue>,
-     *     ObjectIdentifier?: string
+     *     IndexedAttributes?: list<AttributeKeyAndValue>|null,
+     *     ObjectIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

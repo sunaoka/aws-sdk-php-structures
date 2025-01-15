@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\LaunchWizard\GetWorkload\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
- * @property string $displayName
- * @property string $documentationUrl
- * @property string $iconUrl
- * @property 'ACTIVE'|'INACTIVE'|'DISABLED'|'DELETED' $status
- * @property string $statusMessage
- * @property string $workloadName
+ * @property string|null $description
+ * @property string|null $displayName
+ * @property string|null $documentationUrl
+ * @property string|null $iconUrl
+ * @property 'ACTIVE'|'INACTIVE'|'DISABLED'|'DELETED'|null $status
+ * @property string|null $statusMessage
+ * @property string|null $workloadName
  */
 class WorkloadData extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
-     *     displayName?: string,
-     *     documentationUrl?: string,
-     *     iconUrl?: string,
-     *     status?: 'ACTIVE'|'INACTIVE'|'DISABLED'|'DELETED',
-     *     statusMessage?: string,
-     *     workloadName?: string
+     *     description?: string|null,
+     *     displayName?: string|null,
+     *     documentationUrl?: string|null,
+     *     iconUrl?: string|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|'DISABLED'|'DELETED'|null,
+     *     statusMessage?: string|null,
+     *     workloadName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

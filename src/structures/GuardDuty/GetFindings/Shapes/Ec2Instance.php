@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property string $ImageDescription
- * @property string $InstanceState
- * @property IamInstanceProfile $IamInstanceProfile
- * @property string $InstanceType
- * @property string $OutpostArn
- * @property string $Platform
- * @property list<ProductCode> $ProductCodes
- * @property list<string> $Ec2NetworkInterfaceUids
+ * @property string|null $AvailabilityZone
+ * @property string|null $ImageDescription
+ * @property string|null $InstanceState
+ * @property IamInstanceProfile|null $IamInstanceProfile
+ * @property string|null $InstanceType
+ * @property string|null $OutpostArn
+ * @property string|null $Platform
+ * @property list<ProductCode>|null $ProductCodes
+ * @property list<string>|null $Ec2NetworkInterfaceUids
  */
 class Ec2Instance extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     ImageDescription?: string,
-     *     InstanceState?: string,
-     *     IamInstanceProfile?: IamInstanceProfile,
-     *     InstanceType?: string,
-     *     OutpostArn?: string,
-     *     Platform?: string,
-     *     ProductCodes?: list<ProductCode>,
-     *     Ec2NetworkInterfaceUids?: list<string>
+     *     AvailabilityZone?: string|null,
+     *     ImageDescription?: string|null,
+     *     InstanceState?: string|null,
+     *     IamInstanceProfile?: IamInstanceProfile|null,
+     *     InstanceType?: string|null,
+     *     OutpostArn?: string|null,
+     *     Platform?: string|null,
+     *     ProductCodes?: list<ProductCode>|null,
+     *     Ec2NetworkInterfaceUids?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

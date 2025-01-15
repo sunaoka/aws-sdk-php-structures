@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Schemas\ListSchemaVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SchemaArn
- * @property string $SchemaName
- * @property string $SchemaVersion
- * @property string $Type
+ * @property string|null $SchemaArn
+ * @property string|null $SchemaName
+ * @property string|null $SchemaVersion
+ * @property string|null $Type
  */
 class SchemaVersionSummary extends Shape
 {
     /**
      * @param array{
-     *     SchemaArn?: string,
-     *     SchemaName?: string,
-     *     SchemaVersion?: string,
-     *     Type?: string
+     *     SchemaArn?: string|null,
+     *     SchemaName?: string|null,
+     *     SchemaVersion?: string|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

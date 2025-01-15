@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectParticipant\CreateParticipantConnection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<'WEBSOCKET'|'CONNECTION_CREDENTIALS'> $Type
+ * @property list<'WEBSOCKET'|'CONNECTION_CREDENTIALS'>|null $Type
  * @property string $ParticipantToken
- * @property bool $ConnectParticipant
+ * @property bool|null $ConnectParticipant
  */
 class CreateParticipantConnectionRequest extends Request
 {
     /**
      * @param array{
-     *     Type?: list<'WEBSOCKET'|'CONNECTION_CREDENTIALS'>,
+     *     Type?: list<'WEBSOCKET'|'CONNECTION_CREDENTIALS'>|null,
      *     ParticipantToken: string,
-     *     ConnectParticipant?: bool
+     *     ConnectParticipant?: bool|null
      * } $args
      */
     public function __construct(array $args)

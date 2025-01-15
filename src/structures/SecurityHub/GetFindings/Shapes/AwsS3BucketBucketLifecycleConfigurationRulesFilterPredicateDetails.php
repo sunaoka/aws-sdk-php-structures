@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetails> $Operands
- * @property string $Prefix
- * @property AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetails $Tag
- * @property string $Type
+ * @property list<AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetails>|null $Operands
+ * @property string|null $Prefix
+ * @property AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetails|null $Tag
+ * @property string|null $Type
  */
 class AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetails extends Shape
 {
     /**
      * @param array{
-     *     Operands?: list<AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetails>,
-     *     Prefix?: string,
-     *     Tag?: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetails,
-     *     Type?: string
+     *     Operands?: list<AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetails>|null,
+     *     Prefix?: string|null,
+     *     Tag?: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetails|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

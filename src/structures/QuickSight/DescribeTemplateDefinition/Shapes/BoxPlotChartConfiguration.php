@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BoxPlotFieldWells $FieldWells
- * @property BoxPlotSortConfiguration $SortConfiguration
- * @property BoxPlotOptions $BoxPlotOptions
- * @property AxisDisplayOptions $CategoryAxis
- * @property ChartAxisLabelOptions $CategoryLabelOptions
- * @property AxisDisplayOptions $PrimaryYAxisDisplayOptions
- * @property ChartAxisLabelOptions $PrimaryYAxisLabelOptions
- * @property LegendOptions $Legend
- * @property TooltipOptions $Tooltip
- * @property list<ReferenceLine> $ReferenceLines
- * @property VisualPalette $VisualPalette
- * @property VisualInteractionOptions $Interactions
+ * @property BoxPlotFieldWells|null $FieldWells
+ * @property BoxPlotSortConfiguration|null $SortConfiguration
+ * @property BoxPlotOptions|null $BoxPlotOptions
+ * @property AxisDisplayOptions|null $CategoryAxis
+ * @property ChartAxisLabelOptions|null $CategoryLabelOptions
+ * @property AxisDisplayOptions|null $PrimaryYAxisDisplayOptions
+ * @property ChartAxisLabelOptions|null $PrimaryYAxisLabelOptions
+ * @property LegendOptions|null $Legend
+ * @property TooltipOptions|null $Tooltip
+ * @property list<ReferenceLine>|null $ReferenceLines
+ * @property VisualPalette|null $VisualPalette
+ * @property VisualInteractionOptions|null $Interactions
  */
 class BoxPlotChartConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FieldWells?: BoxPlotFieldWells,
-     *     SortConfiguration?: BoxPlotSortConfiguration,
-     *     BoxPlotOptions?: BoxPlotOptions,
-     *     CategoryAxis?: AxisDisplayOptions,
-     *     CategoryLabelOptions?: ChartAxisLabelOptions,
-     *     PrimaryYAxisDisplayOptions?: AxisDisplayOptions,
-     *     PrimaryYAxisLabelOptions?: ChartAxisLabelOptions,
-     *     Legend?: LegendOptions,
-     *     Tooltip?: TooltipOptions,
-     *     ReferenceLines?: list<ReferenceLine>,
-     *     VisualPalette?: VisualPalette,
-     *     Interactions?: VisualInteractionOptions
+     *     FieldWells?: BoxPlotFieldWells|null,
+     *     SortConfiguration?: BoxPlotSortConfiguration|null,
+     *     BoxPlotOptions?: BoxPlotOptions|null,
+     *     CategoryAxis?: AxisDisplayOptions|null,
+     *     CategoryLabelOptions?: ChartAxisLabelOptions|null,
+     *     PrimaryYAxisDisplayOptions?: AxisDisplayOptions|null,
+     *     PrimaryYAxisLabelOptions?: ChartAxisLabelOptions|null,
+     *     Legend?: LegendOptions|null,
+     *     Tooltip?: TooltipOptions|null,
+     *     ReferenceLines?: list<ReferenceLine>|null,
+     *     VisualPalette?: VisualPalette|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

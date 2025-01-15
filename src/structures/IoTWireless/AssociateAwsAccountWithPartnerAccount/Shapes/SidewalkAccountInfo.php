@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTWireless\AssociateAwsAccountWithPartnerAccou
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AmazonId
- * @property string $AppServerPrivateKey
+ * @property string|null $AmazonId
+ * @property string|null $AppServerPrivateKey
  */
 class SidewalkAccountInfo extends Shape
 {
     /**
      * @param array{
-     *     AmazonId?: string,
-     *     AppServerPrivateKey?: string
+     *     AmazonId?: string|null,
+     *     AppServerPrivateKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

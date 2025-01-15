@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Username
- * @property list<string> $Groups
+ * @property string|null $Username
+ * @property list<string>|null $Groups
  */
 class ImpersonatedUser extends Shape
 {
     /**
      * @param array{
-     *     Username?: string,
-     *     Groups?: list<string>
+     *     Username?: string|null,
+     *     Groups?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GameLift\RegisterCompute;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Compute $Compute
+ * @property Shapes\Compute|null $Compute
  */
 class RegisterComputeResponse extends Response
 {

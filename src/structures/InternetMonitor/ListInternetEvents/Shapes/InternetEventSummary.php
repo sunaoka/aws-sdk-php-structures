@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EventId
  * @property string $EventArn
  * @property \Aws\Api\DateTimeResult $StartedAt
- * @property \Aws\Api\DateTimeResult $EndedAt
+ * @property \Aws\Api\DateTimeResult|null $EndedAt
  * @property ClientLocation $ClientLocation
  * @property 'AVAILABILITY'|'PERFORMANCE' $EventType
  * @property 'ACTIVE'|'RESOLVED' $EventStatus
@@ -20,7 +20,7 @@ class InternetEventSummary extends Shape
      *     EventId: string,
      *     EventArn: string,
      *     StartedAt: \Aws\Api\DateTimeResult,
-     *     EndedAt?: \Aws\Api\DateTimeResult,
+     *     EndedAt?: \Aws\Api\DateTimeResult|null,
      *     ClientLocation: ClientLocation,
      *     EventType: 'AVAILABILITY'|'PERFORMANCE',
      *     EventStatus: 'ACTIVE'|'RESOLVED'

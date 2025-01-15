@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetServerDe
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
+ * @property string|null $id
+ * @property string|null $name
  */
 class AssociatedApplication extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string
+     *     id?: string|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

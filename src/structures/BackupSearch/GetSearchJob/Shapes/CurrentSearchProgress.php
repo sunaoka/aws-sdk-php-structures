@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BackupSearch\GetSearchJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $RecoveryPointsScannedCount
- * @property int $ItemsScannedCount
- * @property int $ItemsMatchedCount
+ * @property int|null $RecoveryPointsScannedCount
+ * @property int|null $ItemsScannedCount
+ * @property int|null $ItemsMatchedCount
  */
 class CurrentSearchProgress extends Shape
 {
     /**
      * @param array{
-     *     RecoveryPointsScannedCount?: int,
-     *     ItemsScannedCount?: int,
-     *     ItemsMatchedCount?: int
+     *     RecoveryPointsScannedCount?: int|null,
+     *     ItemsScannedCount?: int|null,
+     *     ItemsMatchedCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

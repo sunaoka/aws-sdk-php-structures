@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LinkId
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class DeleteAccountLinkInvitationRequest extends Request
 {
     /**
      * @param array{
      *     LinkId: string,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

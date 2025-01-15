@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\FeatureGroupSummary> $FeatureGroupSummaries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListFeatureGroupsResponse extends Response
 {

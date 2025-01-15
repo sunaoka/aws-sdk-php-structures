@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListStackInstancesForProvisioned
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $ProvisionedProductId
- * @property string $PageToken
- * @property int<0, 20> $PageSize
+ * @property string|null $PageToken
+ * @property int<0, 20>|null $PageSize
  */
 class ListStackInstancesForProvisionedProductRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     ProvisionedProductId: string,
-     *     PageToken?: string,
-     *     PageSize?: int<0, 20>
+     *     PageToken?: string|null,
+     *     PageSize?: int<0, 20>|null
      * } $args
      */
     public function __construct(array $args)

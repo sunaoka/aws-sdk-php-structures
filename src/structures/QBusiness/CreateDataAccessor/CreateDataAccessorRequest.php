@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $principal
  * @property list<Shapes\ActionConfiguration> $actionConfigurations
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $displayName
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateDataAccessorRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateDataAccessorRequest extends Request
      *     applicationId: string,
      *     principal: string,
      *     actionConfigurations: list<Shapes\ActionConfiguration>,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     displayName: string,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

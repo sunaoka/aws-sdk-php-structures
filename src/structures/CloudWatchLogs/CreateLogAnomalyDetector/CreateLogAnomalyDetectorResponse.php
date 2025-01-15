@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\CreateLogAnomalyDetector;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $anomalyDetectorArn
+ * @property string|null $anomalyDetectorArn
  */
 class CreateLogAnomalyDetectorResponse extends Response
 {

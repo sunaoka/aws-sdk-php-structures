@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetEvent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $eventId
- * @property string $eventTypeName
- * @property string $eventTimestamp
- * @property array<string, string> $eventVariables
- * @property string $currentLabel
- * @property string $labelTimestamp
- * @property list<Entity> $entities
+ * @property string|null $eventId
+ * @property string|null $eventTypeName
+ * @property string|null $eventTimestamp
+ * @property array<string, string>|null $eventVariables
+ * @property string|null $currentLabel
+ * @property string|null $labelTimestamp
+ * @property list<Entity>|null $entities
  */
 class Event extends Shape
 {
     /**
      * @param array{
-     *     eventId?: string,
-     *     eventTypeName?: string,
-     *     eventTimestamp?: string,
-     *     eventVariables?: array<string, string>,
-     *     currentLabel?: string,
-     *     labelTimestamp?: string,
-     *     entities?: list<Entity>
+     *     eventId?: string|null,
+     *     eventTypeName?: string|null,
+     *     eventTimestamp?: string|null,
+     *     eventVariables?: array<string, string>|null,
+     *     currentLabel?: string|null,
+     *     labelTimestamp?: string|null,
+     *     entities?: list<Entity>|null
      * } $args
      */
     public function __construct(array $args = [])

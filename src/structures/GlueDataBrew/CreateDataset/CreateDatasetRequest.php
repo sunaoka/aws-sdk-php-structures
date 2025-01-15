@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property 'CSV'|'JSON'|'PARQUET'|'EXCEL'|'ORC' $Format
- * @property Shapes\FormatOptions $FormatOptions
+ * @property 'CSV'|'JSON'|'PARQUET'|'EXCEL'|'ORC'|null $Format
+ * @property Shapes\FormatOptions|null $FormatOptions
  * @property Shapes\Input $Input
- * @property Shapes\PathOptions $PathOptions
- * @property array<string, string> $Tags
+ * @property Shapes\PathOptions|null $PathOptions
+ * @property array<string, string>|null $Tags
  */
 class CreateDatasetRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Format?: 'CSV'|'JSON'|'PARQUET'|'EXCEL'|'ORC',
-     *     FormatOptions?: Shapes\FormatOptions,
+     *     Format?: 'CSV'|'JSON'|'PARQUET'|'EXCEL'|'ORC'|null,
+     *     FormatOptions?: Shapes\FormatOptions|null,
      *     Input: Shapes\Input,
-     *     PathOptions?: Shapes\PathOptions,
-     *     Tags?: array<string, string>
+     *     PathOptions?: Shapes\PathOptions|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

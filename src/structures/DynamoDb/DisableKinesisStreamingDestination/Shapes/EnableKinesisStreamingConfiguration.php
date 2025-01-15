@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DisableKinesisStreamingDestination\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'MILLISECOND'|'MICROSECOND' $ApproximateCreationDateTimePrecision
+ * @property 'MILLISECOND'|'MICROSECOND'|null $ApproximateCreationDateTimePrecision
  */
 class EnableKinesisStreamingConfiguration extends Shape
 {
     /**
-     * @param array{ApproximateCreationDateTimePrecision?: 'MILLISECOND'|'MICROSECOND'} $args
+     * @param array{ApproximateCreationDateTimePrecision?: 'MILLISECOND'|'MICROSECOND'|null} $args
      */
     public function __construct(array $args = [])
     {

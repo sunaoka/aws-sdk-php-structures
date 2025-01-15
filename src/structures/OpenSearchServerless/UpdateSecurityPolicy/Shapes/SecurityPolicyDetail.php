@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateSecurityPolicy\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $createdDate
- * @property string $description
- * @property int $lastModifiedDate
- * @property string $name
- * @property Document $policy
- * @property string $policyVersion
- * @property 'encryption'|'network' $type
+ * @property int|null $createdDate
+ * @property string|null $description
+ * @property int|null $lastModifiedDate
+ * @property string|null $name
+ * @property Document|null $policy
+ * @property string|null $policyVersion
+ * @property 'encryption'|'network'|null $type
  */
 class SecurityPolicyDetail extends Shape
 {
     /**
      * @param array{
-     *     createdDate?: int,
-     *     description?: string,
-     *     lastModifiedDate?: int,
-     *     name?: string,
-     *     policy?: Document,
-     *     policyVersion?: string,
-     *     type?: 'encryption'|'network'
+     *     createdDate?: int|null,
+     *     description?: string|null,
+     *     lastModifiedDate?: int|null,
+     *     name?: string|null,
+     *     policy?: Document|null,
+     *     policyVersion?: string|null,
+     *     type?: 'encryption'|'network'|null
      * } $args
      */
     public function __construct(array $args = [])

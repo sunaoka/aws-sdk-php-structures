@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FunctionName
- * @property string $Qualifier
+ * @property string|null $Qualifier
  */
 class DeleteFunctionRequest extends Request
 {
     /**
      * @param array{
      *     FunctionName: string,
-     *     Qualifier?: string
+     *     Qualifier?: string|null
      * } $args
      */
     public function __construct(array $args)

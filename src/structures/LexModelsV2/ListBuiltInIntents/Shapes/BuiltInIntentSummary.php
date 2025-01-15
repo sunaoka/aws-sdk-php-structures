@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListBuiltInIntents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $intentSignature
- * @property string $description
+ * @property string|null $intentSignature
+ * @property string|null $description
  */
 class BuiltInIntentSummary extends Shape
 {
     /**
      * @param array{
-     *     intentSignature?: string,
-     *     description?: string
+     *     intentSignature?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

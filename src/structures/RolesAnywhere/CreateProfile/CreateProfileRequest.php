@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\CreateProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $acceptRoleSessionName
- * @property int<900, 43200> $durationSeconds
- * @property bool $enabled
- * @property list<string> $managedPolicyArns
+ * @property bool|null $acceptRoleSessionName
+ * @property int<900, 43200>|null $durationSeconds
+ * @property bool|null $enabled
+ * @property list<string>|null $managedPolicyArns
  * @property string $name
- * @property bool $requireInstanceProperties
+ * @property bool|null $requireInstanceProperties
  * @property list<string> $roleArns
- * @property string $sessionPolicy
- * @property list<Shapes\Tag> $tags
+ * @property string|null $sessionPolicy
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateProfileRequest extends Request
 {
     /**
      * @param array{
-     *     acceptRoleSessionName?: bool,
-     *     durationSeconds?: int<900, 43200>,
-     *     enabled?: bool,
-     *     managedPolicyArns?: list<string>,
+     *     acceptRoleSessionName?: bool|null,
+     *     durationSeconds?: int<900, 43200>|null,
+     *     enabled?: bool|null,
+     *     managedPolicyArns?: list<string>|null,
      *     name: string,
-     *     requireInstanceProperties?: bool,
+     *     requireInstanceProperties?: bool|null,
      *     roleArns: list<string>,
-     *     sessionPolicy?: string,
-     *     tags?: list<Shapes\Tag>
+     *     sessionPolicy?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

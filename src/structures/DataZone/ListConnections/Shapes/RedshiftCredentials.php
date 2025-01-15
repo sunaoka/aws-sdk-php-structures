@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\ListConnections\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $secretArn
- * @property UsernamePassword $usernamePassword
+ * @property string|null $secretArn
+ * @property UsernamePassword|null $usernamePassword
  */
 class RedshiftCredentials extends Shape
 {
     /**
      * @param array{
-     *     secretArn?: string,
-     *     usernamePassword?: UsernamePassword
+     *     secretArn?: string|null,
+     *     usernamePassword?: UsernamePassword|null
      * } $args
      */
     public function __construct(array $args = [])

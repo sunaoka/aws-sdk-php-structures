@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EmailIdentity
- * @property string $ConfigurationSetName
+ * @property string|null $ConfigurationSetName
  */
 class PutEmailIdentityConfigurationSetAttributesRequest extends Request
 {
     /**
      * @param array{
      *     EmailIdentity: string,
-     *     ConfigurationSetName?: string
+     *     ConfigurationSetName?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $object
- * @property ErrorHandlingConfig $errorHandlingConfig
+ * @property ErrorHandlingConfig|null $errorHandlingConfig
  */
 class MarketoDestinationProperties extends Shape
 {
     /**
      * @param array{
      *     object: string,
-     *     errorHandlingConfig?: ErrorHandlingConfig
+     *     errorHandlingConfig?: ErrorHandlingConfig|null
      * } $args
      */
     public function __construct(array $args)

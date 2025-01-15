@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property bool $Disabled
+ * @property bool|null $Disabled
  * @property string $CheckExpression
- * @property array<string, string> $SubstitutionMap
- * @property Threshold $Threshold
- * @property list<ColumnSelector> $ColumnSelectors
+ * @property array<string, string>|null $SubstitutionMap
+ * @property Threshold|null $Threshold
+ * @property list<ColumnSelector>|null $ColumnSelectors
  */
 class Rule extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Disabled?: bool,
+     *     Disabled?: bool|null,
      *     CheckExpression: string,
-     *     SubstitutionMap?: array<string, string>,
-     *     Threshold?: Threshold,
-     *     ColumnSelectors?: list<ColumnSelector>
+     *     SubstitutionMap?: array<string, string>|null,
+     *     Threshold?: Threshold|null,
+     *     ColumnSelectors?: list<ColumnSelector>|null
      * } $args
      */
     public function __construct(array $args)

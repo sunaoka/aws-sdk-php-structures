@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaTailor\DescribeSourceLocation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BaseUrl
- * @property string $Name
+ * @property string|null $BaseUrl
+ * @property string|null $Name
  */
 class SegmentDeliveryConfiguration extends Shape
 {
     /**
      * @param array{
-     *     BaseUrl?: string,
-     *     Name?: string
+     *     BaseUrl?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Schemas\ListRegistries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RegistryArn
- * @property string $RegistryName
- * @property array<string, string> $Tags
+ * @property string|null $RegistryArn
+ * @property string|null $RegistryName
+ * @property array<string, string>|null $Tags
  */
 class RegistrySummary extends Shape
 {
     /**
      * @param array{
-     *     RegistryArn?: string,
-     *     RegistryName?: string,
-     *     Tags?: array<string, string>
+     *     RegistryArn?: string|null,
+     *     RegistryName?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Ec2\ImportImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property string $DeviceName
- * @property double $DiskImageSize
- * @property string $Format
- * @property string $Progress
- * @property string $SnapshotId
- * @property string $Status
- * @property string $StatusMessage
- * @property string $Url
- * @property UserBucketDetails $UserBucket
+ * @property string|null $Description
+ * @property string|null $DeviceName
+ * @property double|null $DiskImageSize
+ * @property string|null $Format
+ * @property string|null $Progress
+ * @property string|null $SnapshotId
+ * @property string|null $Status
+ * @property string|null $StatusMessage
+ * @property string|null $Url
+ * @property UserBucketDetails|null $UserBucket
  */
 class SnapshotDetail extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     DeviceName?: string,
-     *     DiskImageSize?: double,
-     *     Format?: string,
-     *     Progress?: string,
-     *     SnapshotId?: string,
-     *     Status?: string,
-     *     StatusMessage?: string,
-     *     Url?: string,
-     *     UserBucket?: UserBucketDetails
+     *     Description?: string|null,
+     *     DeviceName?: string|null,
+     *     DiskImageSize?: double|null,
+     *     Format?: string|null,
+     *     Progress?: string|null,
+     *     SnapshotId?: string|null,
+     *     Status?: string|null,
+     *     StatusMessage?: string|null,
+     *     Url?: string|null,
+     *     UserBucket?: UserBucketDetails|null
      * } $args
      */
     public function __construct(array $args = [])

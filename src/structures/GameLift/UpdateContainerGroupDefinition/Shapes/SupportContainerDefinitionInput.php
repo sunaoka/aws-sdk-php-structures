@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ContainerName
- * @property list<ContainerDependency> $DependsOn
- * @property list<ContainerMountPoint> $MountPoints
- * @property list<ContainerEnvironment> $EnvironmentOverride
- * @property bool $Essential
- * @property ContainerHealthCheck $HealthCheck
+ * @property list<ContainerDependency>|null $DependsOn
+ * @property list<ContainerMountPoint>|null $MountPoints
+ * @property list<ContainerEnvironment>|null $EnvironmentOverride
+ * @property bool|null $Essential
+ * @property ContainerHealthCheck|null $HealthCheck
  * @property string $ImageUri
- * @property int<4, 1024000> $MemoryHardLimitMebibytes
- * @property ContainerPortConfiguration $PortConfiguration
- * @property double $Vcpu
+ * @property int<4, 1024000>|null $MemoryHardLimitMebibytes
+ * @property ContainerPortConfiguration|null $PortConfiguration
+ * @property double|null $Vcpu
  */
 class SupportContainerDefinitionInput extends Shape
 {
     /**
      * @param array{
      *     ContainerName: string,
-     *     DependsOn?: list<ContainerDependency>,
-     *     MountPoints?: list<ContainerMountPoint>,
-     *     EnvironmentOverride?: list<ContainerEnvironment>,
-     *     Essential?: bool,
-     *     HealthCheck?: ContainerHealthCheck,
+     *     DependsOn?: list<ContainerDependency>|null,
+     *     MountPoints?: list<ContainerMountPoint>|null,
+     *     EnvironmentOverride?: list<ContainerEnvironment>|null,
+     *     Essential?: bool|null,
+     *     HealthCheck?: ContainerHealthCheck|null,
      *     ImageUri: string,
-     *     MemoryHardLimitMebibytes?: int<4, 1024000>,
-     *     PortConfiguration?: ContainerPortConfiguration,
-     *     Vcpu?: double
+     *     MemoryHardLimitMebibytes?: int<4, 1024000>|null,
+     *     PortConfiguration?: ContainerPortConfiguration|null,
+     *     Vcpu?: double|null
      * } $args
      */
     public function __construct(array $args)

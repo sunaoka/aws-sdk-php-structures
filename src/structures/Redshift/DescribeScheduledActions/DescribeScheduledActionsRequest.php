@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeScheduledActions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ScheduledActionName
- * @property 'ResizeCluster'|'PauseCluster'|'ResumeCluster' $TargetActionType
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property bool $Active
- * @property list<Shapes\ScheduledActionFilter> $Filters
- * @property string $Marker
- * @property int $MaxRecords
+ * @property string|null $ScheduledActionName
+ * @property 'ResizeCluster'|'PauseCluster'|'ResumeCluster'|null $TargetActionType
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property bool|null $Active
+ * @property list<Shapes\ScheduledActionFilter>|null $Filters
+ * @property string|null $Marker
+ * @property int|null $MaxRecords
  */
 class DescribeScheduledActionsRequest extends Request
 {
     /**
      * @param array{
-     *     ScheduledActionName?: string,
-     *     TargetActionType?: 'ResizeCluster'|'PauseCluster'|'ResumeCluster',
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     Active?: bool,
-     *     Filters?: list<Shapes\ScheduledActionFilter>,
-     *     Marker?: string,
-     *     MaxRecords?: int
+     *     ScheduledActionName?: string|null,
+     *     TargetActionType?: 'ResizeCluster'|'PauseCluster'|'ResumeCluster'|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     Active?: bool|null,
+     *     Filters?: list<Shapes\ScheduledActionFilter>|null,
+     *     Marker?: string|null,
+     *     MaxRecords?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\MemoryDB\CreateUser\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Status
- * @property string $AccessString
- * @property list<string> $ACLNames
- * @property string $MinimumEngineVersion
- * @property Authentication $Authentication
- * @property string $ARN
+ * @property string|null $Name
+ * @property string|null $Status
+ * @property string|null $AccessString
+ * @property list<string>|null $ACLNames
+ * @property string|null $MinimumEngineVersion
+ * @property Authentication|null $Authentication
+ * @property string|null $ARN
  */
 class User extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Status?: string,
-     *     AccessString?: string,
-     *     ACLNames?: list<string>,
-     *     MinimumEngineVersion?: string,
-     *     Authentication?: Authentication,
-     *     ARN?: string
+     *     Name?: string|null,
+     *     Status?: string|null,
+     *     AccessString?: string|null,
+     *     ACLNames?: list<string>|null,
+     *     MinimumEngineVersion?: string|null,
+     *     Authentication?: Authentication|null,
+     *     ARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

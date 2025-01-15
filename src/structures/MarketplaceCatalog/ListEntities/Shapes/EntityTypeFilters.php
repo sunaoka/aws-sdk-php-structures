@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataProductFilters $DataProductFilters
- * @property SaaSProductFilters $SaaSProductFilters
- * @property AmiProductFilters $AmiProductFilters
- * @property OfferFilters $OfferFilters
- * @property ContainerProductFilters $ContainerProductFilters
- * @property ResaleAuthorizationFilters $ResaleAuthorizationFilters
+ * @property DataProductFilters|null $DataProductFilters
+ * @property SaaSProductFilters|null $SaaSProductFilters
+ * @property AmiProductFilters|null $AmiProductFilters
+ * @property OfferFilters|null $OfferFilters
+ * @property ContainerProductFilters|null $ContainerProductFilters
+ * @property ResaleAuthorizationFilters|null $ResaleAuthorizationFilters
  */
 class EntityTypeFilters extends Shape
 {
     /**
      * @param array{
-     *     DataProductFilters?: DataProductFilters,
-     *     SaaSProductFilters?: SaaSProductFilters,
-     *     AmiProductFilters?: AmiProductFilters,
-     *     OfferFilters?: OfferFilters,
-     *     ContainerProductFilters?: ContainerProductFilters,
-     *     ResaleAuthorizationFilters?: ResaleAuthorizationFilters
+     *     DataProductFilters?: DataProductFilters|null,
+     *     SaaSProductFilters?: SaaSProductFilters|null,
+     *     AmiProductFilters?: AmiProductFilters|null,
+     *     OfferFilters?: OfferFilters|null,
+     *     ContainerProductFilters?: ContainerProductFilters|null,
+     *     ResaleAuthorizationFilters?: ResaleAuthorizationFilters|null
      * } $args
      */
     public function __construct(array $args = [])

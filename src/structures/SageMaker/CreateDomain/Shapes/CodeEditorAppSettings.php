@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResourceSpec $DefaultResourceSpec
- * @property list<CustomImage> $CustomImages
- * @property list<string> $LifecycleConfigArns
- * @property AppLifecycleManagement $AppLifecycleManagement
- * @property string $BuiltInLifecycleConfigArn
+ * @property ResourceSpec|null $DefaultResourceSpec
+ * @property list<CustomImage>|null $CustomImages
+ * @property list<string>|null $LifecycleConfigArns
+ * @property AppLifecycleManagement|null $AppLifecycleManagement
+ * @property string|null $BuiltInLifecycleConfigArn
  */
 class CodeEditorAppSettings extends Shape
 {
     /**
      * @param array{
-     *     DefaultResourceSpec?: ResourceSpec,
-     *     CustomImages?: list<CustomImage>,
-     *     LifecycleConfigArns?: list<string>,
-     *     AppLifecycleManagement?: AppLifecycleManagement,
-     *     BuiltInLifecycleConfigArn?: string
+     *     DefaultResourceSpec?: ResourceSpec|null,
+     *     CustomImages?: list<CustomImage>|null,
+     *     LifecycleConfigArns?: list<string>|null,
+     *     AppLifecycleManagement?: AppLifecycleManagement|null,
+     *     BuiltInLifecycleConfigArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $PolicyArn
  * @property string $PolicyDocument
- * @property bool $SetAsDefault
+ * @property bool|null $SetAsDefault
  */
 class CreatePolicyVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreatePolicyVersionRequest extends Request
      * @param array{
      *     PolicyArn: string,
      *     PolicyDocument: string,
-     *     SetAsDefault?: bool
+     *     SetAsDefault?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\QuickSight\PredictQAResults\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $QuestionText
- * @property 'ANSWER_GENERATED'|'ANSWER_RETRIEVED'|'ANSWER_DOWNGRADE' $AnswerStatus
- * @property string $TopicId
- * @property string $TopicName
- * @property string $Restatement
- * @property string $QuestionId
- * @property string $AnswerId
- * @property string $QuestionUrl
+ * @property string|null $QuestionText
+ * @property 'ANSWER_GENERATED'|'ANSWER_RETRIEVED'|'ANSWER_DOWNGRADE'|null $AnswerStatus
+ * @property string|null $TopicId
+ * @property string|null $TopicName
+ * @property string|null $Restatement
+ * @property string|null $QuestionId
+ * @property string|null $AnswerId
+ * @property string|null $QuestionUrl
  */
 class GeneratedAnswerResult extends Shape
 {
     /**
      * @param array{
-     *     QuestionText?: string,
-     *     AnswerStatus?: 'ANSWER_GENERATED'|'ANSWER_RETRIEVED'|'ANSWER_DOWNGRADE',
-     *     TopicId?: string,
-     *     TopicName?: string,
-     *     Restatement?: string,
-     *     QuestionId?: string,
-     *     AnswerId?: string,
-     *     QuestionUrl?: string
+     *     QuestionText?: string|null,
+     *     AnswerStatus?: 'ANSWER_GENERATED'|'ANSWER_RETRIEVED'|'ANSWER_DOWNGRADE'|null,
+     *     TopicId?: string|null,
+     *     TopicName?: string|null,
+     *     Restatement?: string|null,
+     *     QuestionId?: string|null,
+     *     AnswerId?: string|null,
+     *     QuestionUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

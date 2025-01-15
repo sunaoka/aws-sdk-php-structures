@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Sms\UpdateApp;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AppSummary $appSummary
- * @property list<Shapes\ServerGroup> $serverGroups
- * @property list<Shapes\Tag> $tags
+ * @property Shapes\AppSummary|null $appSummary
+ * @property list<Shapes\ServerGroup>|null $serverGroups
+ * @property list<Shapes\Tag>|null $tags
  */
 class UpdateAppResponse extends Response
 {

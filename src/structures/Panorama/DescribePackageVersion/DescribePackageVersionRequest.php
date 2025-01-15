@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Panorama\DescribePackageVersion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $OwnerAccount
+ * @property string|null $OwnerAccount
  * @property string $PackageId
  * @property string $PackageVersion
- * @property string $PatchVersion
+ * @property string|null $PatchVersion
  */
 class DescribePackageVersionRequest extends Request
 {
     /**
      * @param array{
-     *     OwnerAccount?: string,
+     *     OwnerAccount?: string|null,
      *     PackageId: string,
      *     PackageVersion: string,
-     *     PatchVersion?: string
+     *     PatchVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Chime\AssociatePhoneNumbersWithVoiceConnector\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PhoneNumberId
- * @property 'BadRequest'|'Conflict'|'Forbidden'|'NotFound'|'PreconditionFailed'|'ResourceLimitExceeded'|'ServiceFailure'|'AccessDenied'|'ServiceUnavailable'|'Throttled'|'Throttling'|'Unauthorized'|'Unprocessable'|'VoiceConnectorGroupAssociationsExist'|'PhoneNumberAssociationsExist' $ErrorCode
- * @property string $ErrorMessage
+ * @property string|null $PhoneNumberId
+ * @property 'BadRequest'|'Conflict'|'Forbidden'|'NotFound'|'PreconditionFailed'|'ResourceLimitExceeded'|'ServiceFailure'|'AccessDenied'|'ServiceUnavailable'|'Throttled'|'Throttling'|'Unauthorized'|'Unprocessable'|'VoiceConnectorGroupAssociationsExist'|'PhoneNumberAssociationsExist'|null $ErrorCode
+ * @property string|null $ErrorMessage
  */
 class PhoneNumberError extends Shape
 {
     /**
      * @param array{
-     *     PhoneNumberId?: string,
-     *     ErrorCode?: 'BadRequest'|'Conflict'|'Forbidden'|'NotFound'|'PreconditionFailed'|'ResourceLimitExceeded'|'ServiceFailure'|'AccessDenied'|'ServiceUnavailable'|'Throttled'|'Throttling'|'Unauthorized'|'Unprocessable'|'VoiceConnectorGroupAssociationsExist'|'PhoneNumberAssociationsExist',
-     *     ErrorMessage?: string
+     *     PhoneNumberId?: string|null,
+     *     ErrorCode?: 'BadRequest'|'Conflict'|'Forbidden'|'NotFound'|'PreconditionFailed'|'ResourceLimitExceeded'|'ServiceFailure'|'AccessDenied'|'ServiceUnavailable'|'Throttled'|'Throttling'|'Unauthorized'|'Unprocessable'|'VoiceConnectorGroupAssociationsExist'|'PhoneNumberAssociationsExist'|null,
+     *     ErrorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

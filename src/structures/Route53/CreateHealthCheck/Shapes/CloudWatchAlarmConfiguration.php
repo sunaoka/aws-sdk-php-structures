@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $MetricName
  * @property string $Namespace
  * @property 'Average'|'Sum'|'SampleCount'|'Maximum'|'Minimum' $Statistic
- * @property list<Dimension> $Dimensions
+ * @property list<Dimension>|null $Dimensions
  */
 class CloudWatchAlarmConfiguration extends Shape
 {
@@ -25,7 +25,7 @@ class CloudWatchAlarmConfiguration extends Shape
      *     MetricName: string,
      *     Namespace: string,
      *     Statistic: 'Average'|'Sum'|'SampleCount'|'Maximum'|'Minimum',
-     *     Dimensions?: list<Dimension>
+     *     Dimensions?: list<Dimension>|null
      * } $args
      */
     public function __construct(array $args)

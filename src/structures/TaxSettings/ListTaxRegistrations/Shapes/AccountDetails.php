@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\TaxSettings\ListTaxRegistrations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accountId
- * @property AccountMetaData $accountMetaData
- * @property TaxInheritanceDetails $taxInheritanceDetails
- * @property TaxRegistrationWithJurisdiction $taxRegistration
+ * @property string|null $accountId
+ * @property AccountMetaData|null $accountMetaData
+ * @property TaxInheritanceDetails|null $taxInheritanceDetails
+ * @property TaxRegistrationWithJurisdiction|null $taxRegistration
  */
 class AccountDetails extends Shape
 {
     /**
      * @param array{
-     *     accountId?: string,
-     *     accountMetaData?: AccountMetaData,
-     *     taxInheritanceDetails?: TaxInheritanceDetails,
-     *     taxRegistration?: TaxRegistrationWithJurisdiction
+     *     accountId?: string|null,
+     *     accountMetaData?: AccountMetaData|null,
+     *     taxInheritanceDetails?: TaxInheritanceDetails|null,
+     *     taxRegistration?: TaxRegistrationWithJurisdiction|null
      * } $args
      */
     public function __construct(array $args = [])

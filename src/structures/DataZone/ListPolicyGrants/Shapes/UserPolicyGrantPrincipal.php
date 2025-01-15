@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\ListPolicyGrants\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AllUsersGrantFilter $allUsersGrantFilter
- * @property string $userIdentifier
+ * @property AllUsersGrantFilter|null $allUsersGrantFilter
+ * @property string|null $userIdentifier
  */
 class UserPolicyGrantPrincipal extends Shape
 {
     /**
      * @param array{
-     *     allUsersGrantFilter?: AllUsersGrantFilter,
-     *     userIdentifier?: string
+     *     allUsersGrantFilter?: AllUsersGrantFilter|null,
+     *     userIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

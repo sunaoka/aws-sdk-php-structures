@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DescribeGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
+ * @property string|null $Id
+ * @property string|null $Name
  */
 class GroupMetadata extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string
+     *     Id?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

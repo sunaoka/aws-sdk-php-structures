@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $appId
  * @property string $appArn
  * @property string $title
- * @property string $description
+ * @property string|null $description
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property bool $canEdit
- * @property string $status
- * @property bool $isVerified
+ * @property bool|null $canEdit
+ * @property string|null $status
+ * @property bool|null $isVerified
  */
 class UserAppItem extends Shape
 {
@@ -21,11 +21,11 @@ class UserAppItem extends Shape
      *     appId: string,
      *     appArn: string,
      *     title: string,
-     *     description?: string,
+     *     description?: string|null,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     canEdit?: bool,
-     *     status?: string,
-     *     isVerified?: bool
+     *     canEdit?: bool|null,
+     *     status?: string|null,
+     *     isVerified?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TargetAddress
- * @property bool $ForceUnsubscribeAll
+ * @property bool|null $ForceUnsubscribeAll
  */
 class DeleteTargetRequest extends Request
 {
     /**
      * @param array{
      *     TargetAddress: string,
-     *     ForceUnsubscribeAll?: bool
+     *     ForceUnsubscribeAll?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EMRServerless\CreateApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $queueTimeoutMinutes
- * @property int $maxConcurrentRuns
+ * @property int|null $queueTimeoutMinutes
+ * @property int|null $maxConcurrentRuns
  */
 class SchedulerConfiguration extends Shape
 {
     /**
      * @param array{
-     *     queueTimeoutMinutes?: int,
-     *     maxConcurrentRuns?: int
+     *     queueTimeoutMinutes?: int|null,
+     *     maxConcurrentRuns?: int|null
      * } $args
      */
     public function __construct(array $args = [])

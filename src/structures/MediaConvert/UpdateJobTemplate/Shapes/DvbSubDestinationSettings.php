@@ -5,73 +5,73 @@ namespace Sunaoka\Aws\Structures\MediaConvert\UpdateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CENTERED'|'LEFT'|'AUTO' $Alignment
- * @property 'WHITE_TEXT_ONLY'|'ALL_TEXT' $ApplyFontColor
- * @property 'NONE'|'BLACK'|'WHITE'|'AUTO' $BackgroundColor
- * @property int<0, 255> $BackgroundOpacity
- * @property 'NONE'|'SPECIFIED'|'NO_DISPLAY_WINDOW' $DdsHandling
- * @property int<0, 2147483647> $DdsXCoordinate
- * @property int<0, 2147483647> $DdsYCoordinate
- * @property 'BEST_MATCH'|'MONOSPACED_SANSSERIF'|'MONOSPACED_SERIF'|'PROPORTIONAL_SANSSERIF'|'PROPORTIONAL_SERIF' $FallbackFont
- * @property 'WHITE'|'BLACK'|'YELLOW'|'RED'|'GREEN'|'BLUE'|'HEX'|'AUTO' $FontColor
- * @property string $FontFileBold
- * @property string $FontFileBoldItalic
- * @property string $FontFileItalic
- * @property string $FontFileRegular
- * @property int<0, 255> $FontOpacity
- * @property int<96, 600> $FontResolution
- * @property 'AUTOMATIC'|'HANS'|'HANT' $FontScript
- * @property int<0, 96> $FontSize
- * @property int<1, 2147483647> $Height
- * @property string $HexFontColor
- * @property 'BLACK'|'WHITE'|'YELLOW'|'RED'|'GREEN'|'BLUE'|'AUTO' $OutlineColor
- * @property int<0, 10> $OutlineSize
- * @property 'NONE'|'BLACK'|'WHITE'|'AUTO' $ShadowColor
- * @property int<0, 255> $ShadowOpacity
- * @property int<-2147483648, 2147483647> $ShadowXOffset
- * @property int<-2147483648, 2147483647> $ShadowYOffset
- * @property 'ENABLED'|'DISABLED' $StylePassthrough
- * @property 'HEARING_IMPAIRED'|'STANDARD' $SubtitlingType
- * @property 'FIXED_GRID'|'PROPORTIONAL'|'AUTO' $TeletextSpacing
- * @property int<1, 2147483647> $Width
- * @property int<0, 2147483647> $XPosition
- * @property int<0, 2147483647> $YPosition
+ * @property 'CENTERED'|'LEFT'|'AUTO'|null $Alignment
+ * @property 'WHITE_TEXT_ONLY'|'ALL_TEXT'|null $ApplyFontColor
+ * @property 'NONE'|'BLACK'|'WHITE'|'AUTO'|null $BackgroundColor
+ * @property int<0, 255>|null $BackgroundOpacity
+ * @property 'NONE'|'SPECIFIED'|'NO_DISPLAY_WINDOW'|null $DdsHandling
+ * @property int<0, 2147483647>|null $DdsXCoordinate
+ * @property int<0, 2147483647>|null $DdsYCoordinate
+ * @property 'BEST_MATCH'|'MONOSPACED_SANSSERIF'|'MONOSPACED_SERIF'|'PROPORTIONAL_SANSSERIF'|'PROPORTIONAL_SERIF'|null $FallbackFont
+ * @property 'WHITE'|'BLACK'|'YELLOW'|'RED'|'GREEN'|'BLUE'|'HEX'|'AUTO'|null $FontColor
+ * @property string|null $FontFileBold
+ * @property string|null $FontFileBoldItalic
+ * @property string|null $FontFileItalic
+ * @property string|null $FontFileRegular
+ * @property int<0, 255>|null $FontOpacity
+ * @property int<96, 600>|null $FontResolution
+ * @property 'AUTOMATIC'|'HANS'|'HANT'|null $FontScript
+ * @property int<0, 96>|null $FontSize
+ * @property int<1, 2147483647>|null $Height
+ * @property string|null $HexFontColor
+ * @property 'BLACK'|'WHITE'|'YELLOW'|'RED'|'GREEN'|'BLUE'|'AUTO'|null $OutlineColor
+ * @property int<0, 10>|null $OutlineSize
+ * @property 'NONE'|'BLACK'|'WHITE'|'AUTO'|null $ShadowColor
+ * @property int<0, 255>|null $ShadowOpacity
+ * @property int<-2147483648, 2147483647>|null $ShadowXOffset
+ * @property int<-2147483648, 2147483647>|null $ShadowYOffset
+ * @property 'ENABLED'|'DISABLED'|null $StylePassthrough
+ * @property 'HEARING_IMPAIRED'|'STANDARD'|null $SubtitlingType
+ * @property 'FIXED_GRID'|'PROPORTIONAL'|'AUTO'|null $TeletextSpacing
+ * @property int<1, 2147483647>|null $Width
+ * @property int<0, 2147483647>|null $XPosition
+ * @property int<0, 2147483647>|null $YPosition
  */
 class DvbSubDestinationSettings extends Shape
 {
     /**
      * @param array{
-     *     Alignment?: 'CENTERED'|'LEFT'|'AUTO',
-     *     ApplyFontColor?: 'WHITE_TEXT_ONLY'|'ALL_TEXT',
-     *     BackgroundColor?: 'NONE'|'BLACK'|'WHITE'|'AUTO',
-     *     BackgroundOpacity?: int<0, 255>,
-     *     DdsHandling?: 'NONE'|'SPECIFIED'|'NO_DISPLAY_WINDOW',
-     *     DdsXCoordinate?: int<0, 2147483647>,
-     *     DdsYCoordinate?: int<0, 2147483647>,
-     *     FallbackFont?: 'BEST_MATCH'|'MONOSPACED_SANSSERIF'|'MONOSPACED_SERIF'|'PROPORTIONAL_SANSSERIF'|'PROPORTIONAL_SERIF',
-     *     FontColor?: 'WHITE'|'BLACK'|'YELLOW'|'RED'|'GREEN'|'BLUE'|'HEX'|'AUTO',
-     *     FontFileBold?: string,
-     *     FontFileBoldItalic?: string,
-     *     FontFileItalic?: string,
-     *     FontFileRegular?: string,
-     *     FontOpacity?: int<0, 255>,
-     *     FontResolution?: int<96, 600>,
-     *     FontScript?: 'AUTOMATIC'|'HANS'|'HANT',
-     *     FontSize?: int<0, 96>,
-     *     Height?: int<1, 2147483647>,
-     *     HexFontColor?: string,
-     *     OutlineColor?: 'BLACK'|'WHITE'|'YELLOW'|'RED'|'GREEN'|'BLUE'|'AUTO',
-     *     OutlineSize?: int<0, 10>,
-     *     ShadowColor?: 'NONE'|'BLACK'|'WHITE'|'AUTO',
-     *     ShadowOpacity?: int<0, 255>,
-     *     ShadowXOffset?: int<-2147483648, 2147483647>,
-     *     ShadowYOffset?: int<-2147483648, 2147483647>,
-     *     StylePassthrough?: 'ENABLED'|'DISABLED',
-     *     SubtitlingType?: 'HEARING_IMPAIRED'|'STANDARD',
-     *     TeletextSpacing?: 'FIXED_GRID'|'PROPORTIONAL'|'AUTO',
-     *     Width?: int<1, 2147483647>,
-     *     XPosition?: int<0, 2147483647>,
-     *     YPosition?: int<0, 2147483647>
+     *     Alignment?: 'CENTERED'|'LEFT'|'AUTO'|null,
+     *     ApplyFontColor?: 'WHITE_TEXT_ONLY'|'ALL_TEXT'|null,
+     *     BackgroundColor?: 'NONE'|'BLACK'|'WHITE'|'AUTO'|null,
+     *     BackgroundOpacity?: int<0, 255>|null,
+     *     DdsHandling?: 'NONE'|'SPECIFIED'|'NO_DISPLAY_WINDOW'|null,
+     *     DdsXCoordinate?: int<0, 2147483647>|null,
+     *     DdsYCoordinate?: int<0, 2147483647>|null,
+     *     FallbackFont?: 'BEST_MATCH'|'MONOSPACED_SANSSERIF'|'MONOSPACED_SERIF'|'PROPORTIONAL_SANSSERIF'|'PROPORTIONAL_SERIF'|null,
+     *     FontColor?: 'WHITE'|'BLACK'|'YELLOW'|'RED'|'GREEN'|'BLUE'|'HEX'|'AUTO'|null,
+     *     FontFileBold?: string|null,
+     *     FontFileBoldItalic?: string|null,
+     *     FontFileItalic?: string|null,
+     *     FontFileRegular?: string|null,
+     *     FontOpacity?: int<0, 255>|null,
+     *     FontResolution?: int<96, 600>|null,
+     *     FontScript?: 'AUTOMATIC'|'HANS'|'HANT'|null,
+     *     FontSize?: int<0, 96>|null,
+     *     Height?: int<1, 2147483647>|null,
+     *     HexFontColor?: string|null,
+     *     OutlineColor?: 'BLACK'|'WHITE'|'YELLOW'|'RED'|'GREEN'|'BLUE'|'AUTO'|null,
+     *     OutlineSize?: int<0, 10>|null,
+     *     ShadowColor?: 'NONE'|'BLACK'|'WHITE'|'AUTO'|null,
+     *     ShadowOpacity?: int<0, 255>|null,
+     *     ShadowXOffset?: int<-2147483648, 2147483647>|null,
+     *     ShadowYOffset?: int<-2147483648, 2147483647>|null,
+     *     StylePassthrough?: 'ENABLED'|'DISABLED'|null,
+     *     SubtitlingType?: 'HEARING_IMPAIRED'|'STANDARD'|null,
+     *     TeletextSpacing?: 'FIXED_GRID'|'PROPORTIONAL'|'AUTO'|null,
+     *     Width?: int<1, 2147483647>|null,
+     *     XPosition?: int<0, 2147483647>|null,
+     *     YPosition?: int<0, 2147483647>|null
      * } $args
      */
     public function __construct(array $args = [])

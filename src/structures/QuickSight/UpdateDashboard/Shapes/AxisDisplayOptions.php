@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AxisTickLabelOptions $TickLabelOptions
- * @property 'HIDDEN'|'VISIBLE' $AxisLineVisibility
- * @property 'HIDDEN'|'VISIBLE' $GridLineVisibility
- * @property AxisDataOptions $DataOptions
- * @property ScrollBarOptions $ScrollbarOptions
- * @property string $AxisOffset
+ * @property AxisTickLabelOptions|null $TickLabelOptions
+ * @property 'HIDDEN'|'VISIBLE'|null $AxisLineVisibility
+ * @property 'HIDDEN'|'VISIBLE'|null $GridLineVisibility
+ * @property AxisDataOptions|null $DataOptions
+ * @property ScrollBarOptions|null $ScrollbarOptions
+ * @property string|null $AxisOffset
  */
 class AxisDisplayOptions extends Shape
 {
     /**
      * @param array{
-     *     TickLabelOptions?: AxisTickLabelOptions,
-     *     AxisLineVisibility?: 'HIDDEN'|'VISIBLE',
-     *     GridLineVisibility?: 'HIDDEN'|'VISIBLE',
-     *     DataOptions?: AxisDataOptions,
-     *     ScrollbarOptions?: ScrollBarOptions,
-     *     AxisOffset?: string
+     *     TickLabelOptions?: AxisTickLabelOptions|null,
+     *     AxisLineVisibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     GridLineVisibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     DataOptions?: AxisDataOptions|null,
+     *     ScrollbarOptions?: ScrollBarOptions|null,
+     *     AxisOffset?: string|null
      * } $args
      */
     public function __construct(array $args = [])

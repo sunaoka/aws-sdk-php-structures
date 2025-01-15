@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $environmentId
  * @property string $clusterName
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DeleteKxClusterRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteKxClusterRequest extends Request
      * @param array{
      *     environmentId: string,
      *     clusterName: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

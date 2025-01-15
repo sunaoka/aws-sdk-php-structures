@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SsmSap\ListComponents;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ApplicationId
- * @property string $NextToken
- * @property int<1, 50> $MaxResults
+ * @property string|null $ApplicationId
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $MaxResults
  */
 class ListComponentsRequest extends Request
 {
     /**
      * @param array{
-     *     ApplicationId?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 50>
+     *     ApplicationId?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 50>|null
      * } $args
      */
     public function __construct(array $args = [])

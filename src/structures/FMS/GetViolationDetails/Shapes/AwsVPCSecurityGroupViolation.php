@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ViolationTarget
- * @property string $ViolationTargetDescription
- * @property list<PartialMatch> $PartialMatches
- * @property list<SecurityGroupRemediationAction> $PossibleSecurityGroupRemediationActions
+ * @property string|null $ViolationTarget
+ * @property string|null $ViolationTargetDescription
+ * @property list<PartialMatch>|null $PartialMatches
+ * @property list<SecurityGroupRemediationAction>|null $PossibleSecurityGroupRemediationActions
  */
 class AwsVPCSecurityGroupViolation extends Shape
 {
     /**
      * @param array{
-     *     ViolationTarget?: string,
-     *     ViolationTargetDescription?: string,
-     *     PartialMatches?: list<PartialMatch>,
-     *     PossibleSecurityGroupRemediationActions?: list<SecurityGroupRemediationAction>
+     *     ViolationTarget?: string|null,
+     *     ViolationTargetDescription?: string|null,
+     *     PartialMatches?: list<PartialMatch>|null,
+     *     PossibleSecurityGroupRemediationActions?: list<SecurityGroupRemediationAction>|null
      * } $args
      */
     public function __construct(array $args = [])

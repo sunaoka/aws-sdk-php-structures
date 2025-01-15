@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Metric
- * @property array<string, string> $Dimensions
+ * @property array<string, string>|null $Dimensions
  */
 class ResponseResourceMetricKey extends Shape
 {
     /**
      * @param array{
      *     Metric: string,
-     *     Dimensions?: array<string, string>
+     *     Dimensions?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

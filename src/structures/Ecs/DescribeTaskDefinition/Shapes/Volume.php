@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeTaskDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property HostVolumeProperties $host
- * @property DockerVolumeConfiguration $dockerVolumeConfiguration
- * @property EFSVolumeConfiguration $efsVolumeConfiguration
- * @property FSxWindowsFileServerVolumeConfiguration $fsxWindowsFileServerVolumeConfiguration
- * @property bool $configuredAtLaunch
+ * @property string|null $name
+ * @property HostVolumeProperties|null $host
+ * @property DockerVolumeConfiguration|null $dockerVolumeConfiguration
+ * @property EFSVolumeConfiguration|null $efsVolumeConfiguration
+ * @property FSxWindowsFileServerVolumeConfiguration|null $fsxWindowsFileServerVolumeConfiguration
+ * @property bool|null $configuredAtLaunch
  */
 class Volume extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     host?: HostVolumeProperties,
-     *     dockerVolumeConfiguration?: DockerVolumeConfiguration,
-     *     efsVolumeConfiguration?: EFSVolumeConfiguration,
-     *     fsxWindowsFileServerVolumeConfiguration?: FSxWindowsFileServerVolumeConfiguration,
-     *     configuredAtLaunch?: bool
+     *     name?: string|null,
+     *     host?: HostVolumeProperties|null,
+     *     dockerVolumeConfiguration?: DockerVolumeConfiguration|null,
+     *     efsVolumeConfiguration?: EFSVolumeConfiguration|null,
+     *     fsxWindowsFileServerVolumeConfiguration?: FSxWindowsFileServerVolumeConfiguration|null,
+     *     configuredAtLaunch?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

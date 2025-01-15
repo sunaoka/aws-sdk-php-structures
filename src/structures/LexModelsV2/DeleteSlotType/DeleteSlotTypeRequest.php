@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botId
  * @property string $botVersion
  * @property string $localeId
- * @property bool $skipResourceInUseCheck
+ * @property bool|null $skipResourceInUseCheck
  */
 class DeleteSlotTypeRequest extends Request
 {
@@ -19,7 +19,7 @@ class DeleteSlotTypeRequest extends Request
      *     botId: string,
      *     botVersion: string,
      *     localeId: string,
-     *     skipResourceInUseCheck?: bool
+     *     skipResourceInUseCheck?: bool|null
      * } $args
      */
     public function __construct(array $args)

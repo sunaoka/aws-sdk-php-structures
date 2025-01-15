@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
+ * @property string|null $domainOwner
  * @property string $repository
- * @property string $description
- * @property list<Shapes\UpstreamRepository> $upstreams
+ * @property string|null $description
+ * @property list<Shapes\UpstreamRepository>|null $upstreams
  */
 class UpdateRepositoryRequest extends Request
 {
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string,
+     *     domainOwner?: string|null,
      *     repository: string,
-     *     description?: string,
-     *     upstreams?: list<Shapes\UpstreamRepository>
+     *     description?: string|null,
+     *     upstreams?: list<Shapes\UpstreamRepository>|null
      * } $args
      */
     public function __construct(array $args)

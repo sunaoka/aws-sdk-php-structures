@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudSearch\UpdateAvailabilityOptions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AvailabilityOptionsStatus $AvailabilityOptions
+ * @property Shapes\AvailabilityOptionsStatus|null $AvailabilityOptions
  */
 class UpdateAvailabilityOptionsResponse extends Response
 {

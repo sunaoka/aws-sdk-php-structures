@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PipelineExecutionArn
- * @property string $PipelineExecutionDescription
- * @property string $PipelineExecutionDisplayName
- * @property Shapes\ParallelismConfiguration $ParallelismConfiguration
+ * @property string|null $PipelineExecutionDescription
+ * @property string|null $PipelineExecutionDisplayName
+ * @property Shapes\ParallelismConfiguration|null $ParallelismConfiguration
  */
 class UpdatePipelineExecutionRequest extends Request
 {
     /**
      * @param array{
      *     PipelineExecutionArn: string,
-     *     PipelineExecutionDescription?: string,
-     *     PipelineExecutionDisplayName?: string,
-     *     ParallelismConfiguration?: Shapes\ParallelismConfiguration
+     *     PipelineExecutionDescription?: string|null,
+     *     PipelineExecutionDisplayName?: string|null,
+     *     ParallelismConfiguration?: Shapes\ParallelismConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\BatchGetTableOptimizer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $NumberOfOrphanFilesDeleted
- * @property int $NumberOfDpus
- * @property double $JobDurationInHour
+ * @property int|null $NumberOfOrphanFilesDeleted
+ * @property int|null $NumberOfDpus
+ * @property double|null $JobDurationInHour
  */
 class IcebergOrphanFileDeletionMetrics extends Shape
 {
     /**
      * @param array{
-     *     NumberOfOrphanFilesDeleted?: int,
-     *     NumberOfDpus?: int,
-     *     JobDurationInHour?: double
+     *     NumberOfOrphanFilesDeleted?: int|null,
+     *     NumberOfDpus?: int|null,
+     *     JobDurationInHour?: double|null
      * } $args
      */
     public function __construct(array $args = [])

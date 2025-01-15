@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateMultiplex\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<int> $AudioPids
- * @property list<int> $DvbSubPids
- * @property int $DvbTeletextPid
- * @property int $EtvPlatformPid
- * @property int $EtvSignalPid
- * @property list<int> $KlvDataPids
- * @property int $PcrPid
- * @property int $PmtPid
- * @property int $PrivateMetadataPid
- * @property list<int> $Scte27Pids
- * @property int $Scte35Pid
- * @property int $TimedMetadataPid
- * @property int $VideoPid
- * @property int $AribCaptionsPid
- * @property list<int> $DvbTeletextPids
- * @property int $EcmPid
- * @property int $Smpte2038Pid
+ * @property list<int>|null $AudioPids
+ * @property list<int>|null $DvbSubPids
+ * @property int|null $DvbTeletextPid
+ * @property int|null $EtvPlatformPid
+ * @property int|null $EtvSignalPid
+ * @property list<int>|null $KlvDataPids
+ * @property int|null $PcrPid
+ * @property int|null $PmtPid
+ * @property int|null $PrivateMetadataPid
+ * @property list<int>|null $Scte27Pids
+ * @property int|null $Scte35Pid
+ * @property int|null $TimedMetadataPid
+ * @property int|null $VideoPid
+ * @property int|null $AribCaptionsPid
+ * @property list<int>|null $DvbTeletextPids
+ * @property int|null $EcmPid
+ * @property int|null $Smpte2038Pid
  */
 class MultiplexProgramPacketIdentifiersMap extends Shape
 {
     /**
      * @param array{
-     *     AudioPids?: list<int>,
-     *     DvbSubPids?: list<int>,
-     *     DvbTeletextPid?: int,
-     *     EtvPlatformPid?: int,
-     *     EtvSignalPid?: int,
-     *     KlvDataPids?: list<int>,
-     *     PcrPid?: int,
-     *     PmtPid?: int,
-     *     PrivateMetadataPid?: int,
-     *     Scte27Pids?: list<int>,
-     *     Scte35Pid?: int,
-     *     TimedMetadataPid?: int,
-     *     VideoPid?: int,
-     *     AribCaptionsPid?: int,
-     *     DvbTeletextPids?: list<int>,
-     *     EcmPid?: int,
-     *     Smpte2038Pid?: int
+     *     AudioPids?: list<int>|null,
+     *     DvbSubPids?: list<int>|null,
+     *     DvbTeletextPid?: int|null,
+     *     EtvPlatformPid?: int|null,
+     *     EtvSignalPid?: int|null,
+     *     KlvDataPids?: list<int>|null,
+     *     PcrPid?: int|null,
+     *     PmtPid?: int|null,
+     *     PrivateMetadataPid?: int|null,
+     *     Scte27Pids?: list<int>|null,
+     *     Scte35Pid?: int|null,
+     *     TimedMetadataPid?: int|null,
+     *     VideoPid?: int|null,
+     *     AribCaptionsPid?: int|null,
+     *     DvbTeletextPids?: list<int>|null,
+     *     EcmPid?: int|null,
+     *     Smpte2038Pid?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateFolderPermissions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $Status
- * @property string $Arn
- * @property string $FolderId
- * @property list<Shapes\ResourcePermission> $Permissions
- * @property string $RequestId
+ * @property int|null $Status
+ * @property string|null $Arn
+ * @property string|null $FolderId
+ * @property list<Shapes\ResourcePermission>|null $Permissions
+ * @property string|null $RequestId
  */
 class UpdateFolderPermissionsResponse extends Response
 {

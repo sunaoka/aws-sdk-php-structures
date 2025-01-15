@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTWireless\CreateMulticastGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $GatewayList
- * @property int<0, 60000> $TransmissionInterval
+ * @property list<string>|null $GatewayList
+ * @property int<0, 60000>|null $TransmissionInterval
  */
 class ParticipatingGatewaysMulticast extends Shape
 {
     /**
      * @param array{
-     *     GatewayList?: list<string>,
-     *     TransmissionInterval?: int<0, 60000>
+     *     GatewayList?: list<string>|null,
+     *     TransmissionInterval?: int<0, 60000>|null
      * } $args
      */
     public function __construct(array $args = [])

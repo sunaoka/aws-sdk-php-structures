@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppConfig\ListExtensionAssociations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $ExtensionArn
- * @property string $ResourceArn
+ * @property string|null $Id
+ * @property string|null $ExtensionArn
+ * @property string|null $ResourceArn
  */
 class ExtensionAssociationSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     ExtensionArn?: string,
-     *     ResourceArn?: string
+     *     Id?: string|null,
+     *     ExtensionArn?: string|null,
+     *     ResourceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

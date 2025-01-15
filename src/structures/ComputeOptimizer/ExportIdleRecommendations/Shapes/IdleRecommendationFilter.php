@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\ExportIdleRecommendations\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Finding'|'ResourceType' $name
- * @property list<string> $values
+ * @property 'Finding'|'ResourceType'|null $name
+ * @property list<string>|null $values
  */
 class IdleRecommendationFilter extends Shape
 {
     /**
      * @param array{
-     *     name?: 'Finding'|'ResourceType',
-     *     values?: list<string>
+     *     name?: 'Finding'|'ResourceType'|null,
+     *     values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

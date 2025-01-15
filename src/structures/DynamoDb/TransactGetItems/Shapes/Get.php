@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property array<string, AttributeValue> $Key
  * @property string $TableName
- * @property string $ProjectionExpression
- * @property array<string, string> $ExpressionAttributeNames
+ * @property string|null $ProjectionExpression
+ * @property array<string, string>|null $ExpressionAttributeNames
  */
 class Get extends Shape
 {
@@ -16,8 +16,8 @@ class Get extends Shape
      * @param array{
      *     Key: array<string, AttributeValue>,
      *     TableName: string,
-     *     ProjectionExpression?: string,
-     *     ExpressionAttributeNames?: array<string, string>
+     *     ProjectionExpression?: string|null,
+     *     ExpressionAttributeNames?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

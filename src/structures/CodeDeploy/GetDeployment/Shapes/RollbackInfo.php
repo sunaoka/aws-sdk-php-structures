@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $rollbackDeploymentId
- * @property string $rollbackTriggeringDeploymentId
- * @property string $rollbackMessage
+ * @property string|null $rollbackDeploymentId
+ * @property string|null $rollbackTriggeringDeploymentId
+ * @property string|null $rollbackMessage
  */
 class RollbackInfo extends Shape
 {
     /**
      * @param array{
-     *     rollbackDeploymentId?: string,
-     *     rollbackTriggeringDeploymentId?: string,
-     *     rollbackMessage?: string
+     *     rollbackDeploymentId?: string|null,
+     *     rollbackTriggeringDeploymentId?: string|null,
+     *     rollbackMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

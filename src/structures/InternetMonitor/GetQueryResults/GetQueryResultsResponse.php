@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property list<Shapes\QueryField> $Fields
  * @property list<list<string>> $Data
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class GetQueryResultsResponse extends Response
 {

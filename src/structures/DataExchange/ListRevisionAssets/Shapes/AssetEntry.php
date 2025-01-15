@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $Name
  * @property string $RevisionId
- * @property string $SourceId
+ * @property string|null $SourceId
  * @property \Aws\Api\DateTimeResult $UpdatedAt
  */
 class AssetEntry extends Shape
@@ -28,7 +28,7 @@ class AssetEntry extends Shape
      *     Id: string,
      *     Name: string,
      *     RevisionId: string,
-     *     SourceId?: string,
+     *     SourceId?: string|null,
      *     UpdatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

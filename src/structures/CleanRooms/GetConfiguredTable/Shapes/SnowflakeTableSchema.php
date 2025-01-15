@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CleanRooms\GetConfiguredTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<SnowflakeTableSchemaV1> $v1
+ * @property list<SnowflakeTableSchemaV1>|null $v1
  */
 class SnowflakeTableSchema extends Shape
 {
     /**
-     * @param array{v1?: list<SnowflakeTableSchemaV1>} $args
+     * @param array{v1?: list<SnowflakeTableSchemaV1>|null} $args
      */
     public function __construct(array $args = [])
     {

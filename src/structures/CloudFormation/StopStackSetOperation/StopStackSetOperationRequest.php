@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $StackSetName
  * @property string $OperationId
- * @property 'SELF'|'DELEGATED_ADMIN' $CallAs
+ * @property 'SELF'|'DELEGATED_ADMIN'|null $CallAs
  */
 class StopStackSetOperationRequest extends Request
 {
@@ -15,7 +15,7 @@ class StopStackSetOperationRequest extends Request
      * @param array{
      *     StackSetName: string,
      *     OperationId: string,
-     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'
+     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'|null
      * } $args
      */
     public function __construct(array $args)

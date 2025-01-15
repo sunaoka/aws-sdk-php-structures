@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\AppSync\ListSourceApiAssociations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $associationId
- * @property string $associationArn
- * @property string $sourceApiId
- * @property string $sourceApiArn
- * @property string $mergedApiId
- * @property string $mergedApiArn
- * @property string $description
+ * @property string|null $associationId
+ * @property string|null $associationArn
+ * @property string|null $sourceApiId
+ * @property string|null $sourceApiArn
+ * @property string|null $mergedApiId
+ * @property string|null $mergedApiArn
+ * @property string|null $description
  */
 class SourceApiAssociationSummary extends Shape
 {
     /**
      * @param array{
-     *     associationId?: string,
-     *     associationArn?: string,
-     *     sourceApiId?: string,
-     *     sourceApiArn?: string,
-     *     mergedApiId?: string,
-     *     mergedApiArn?: string,
-     *     description?: string
+     *     associationId?: string|null,
+     *     associationArn?: string|null,
+     *     sourceApiId?: string|null,
+     *     sourceApiArn?: string|null,
+     *     mergedApiId?: string|null,
+     *     mergedApiArn?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

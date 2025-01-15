@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EnvironmentName
- * @property string $LinkName
+ * @property string|null $EnvironmentName
+ * @property string|null $LinkName
  */
 class AwsElasticBeanstalkEnvironmentEnvironmentLink extends Shape
 {
     /**
      * @param array{
-     *     EnvironmentName?: string,
-     *     LinkName?: string
+     *     EnvironmentName?: string|null,
+     *     LinkName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

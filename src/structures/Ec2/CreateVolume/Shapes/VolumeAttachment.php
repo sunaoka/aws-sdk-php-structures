@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateVolume\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $DeleteOnTermination
- * @property string $AssociatedResource
- * @property string $InstanceOwningService
- * @property string $VolumeId
- * @property string $InstanceId
- * @property string $Device
- * @property 'attaching'|'attached'|'detaching'|'detached'|'busy' $State
- * @property \Aws\Api\DateTimeResult $AttachTime
+ * @property bool|null $DeleteOnTermination
+ * @property string|null $AssociatedResource
+ * @property string|null $InstanceOwningService
+ * @property string|null $VolumeId
+ * @property string|null $InstanceId
+ * @property string|null $Device
+ * @property 'attaching'|'attached'|'detaching'|'detached'|'busy'|null $State
+ * @property \Aws\Api\DateTimeResult|null $AttachTime
  */
 class VolumeAttachment extends Shape
 {
     /**
      * @param array{
-     *     DeleteOnTermination?: bool,
-     *     AssociatedResource?: string,
-     *     InstanceOwningService?: string,
-     *     VolumeId?: string,
-     *     InstanceId?: string,
-     *     Device?: string,
-     *     State?: 'attaching'|'attached'|'detaching'|'detached'|'busy',
-     *     AttachTime?: \Aws\Api\DateTimeResult
+     *     DeleteOnTermination?: bool|null,
+     *     AssociatedResource?: string|null,
+     *     InstanceOwningService?: string|null,
+     *     VolumeId?: string|null,
+     *     InstanceId?: string|null,
+     *     Device?: string|null,
+     *     State?: 'attaching'|'attached'|'detaching'|'detached'|'busy'|null,
+     *     AttachTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

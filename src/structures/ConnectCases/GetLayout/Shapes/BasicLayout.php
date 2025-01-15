@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCases\GetLayout\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LayoutSections $moreInfo
- * @property LayoutSections $topPanel
+ * @property LayoutSections|null $moreInfo
+ * @property LayoutSections|null $topPanel
  */
 class BasicLayout extends Shape
 {
     /**
      * @param array{
-     *     moreInfo?: LayoutSections,
-     *     topPanel?: LayoutSections
+     *     moreInfo?: LayoutSections|null,
+     *     topPanel?: LayoutSections|null
      * } $args
      */
     public function __construct(array $args = [])

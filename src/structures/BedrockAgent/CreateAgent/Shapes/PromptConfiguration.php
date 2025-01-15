@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\CreateAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $basePromptTemplate
- * @property string $foundationModel
- * @property InferenceConfiguration $inferenceConfiguration
- * @property 'DEFAULT'|'OVERRIDDEN' $parserMode
- * @property 'DEFAULT'|'OVERRIDDEN' $promptCreationMode
- * @property 'ENABLED'|'DISABLED' $promptState
- * @property 'PRE_PROCESSING'|'ORCHESTRATION'|'POST_PROCESSING'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'MEMORY_SUMMARIZATION' $promptType
+ * @property string|null $basePromptTemplate
+ * @property string|null $foundationModel
+ * @property InferenceConfiguration|null $inferenceConfiguration
+ * @property 'DEFAULT'|'OVERRIDDEN'|null $parserMode
+ * @property 'DEFAULT'|'OVERRIDDEN'|null $promptCreationMode
+ * @property 'ENABLED'|'DISABLED'|null $promptState
+ * @property 'PRE_PROCESSING'|'ORCHESTRATION'|'POST_PROCESSING'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'MEMORY_SUMMARIZATION'|null $promptType
  */
 class PromptConfiguration extends Shape
 {
     /**
      * @param array{
-     *     basePromptTemplate?: string,
-     *     foundationModel?: string,
-     *     inferenceConfiguration?: InferenceConfiguration,
-     *     parserMode?: 'DEFAULT'|'OVERRIDDEN',
-     *     promptCreationMode?: 'DEFAULT'|'OVERRIDDEN',
-     *     promptState?: 'ENABLED'|'DISABLED',
-     *     promptType?: 'PRE_PROCESSING'|'ORCHESTRATION'|'POST_PROCESSING'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'MEMORY_SUMMARIZATION'
+     *     basePromptTemplate?: string|null,
+     *     foundationModel?: string|null,
+     *     inferenceConfiguration?: InferenceConfiguration|null,
+     *     parserMode?: 'DEFAULT'|'OVERRIDDEN'|null,
+     *     promptCreationMode?: 'DEFAULT'|'OVERRIDDEN'|null,
+     *     promptState?: 'ENABLED'|'DISABLED'|null,
+     *     promptType?: 'PRE_PROCESSING'|'ORCHESTRATION'|'POST_PROCESSING'|'KNOWLEDGE_BASE_RESPONSE_GENERATION'|'MEMORY_SUMMARIZATION'|null
      * } $args
      */
     public function __construct(array $args = [])

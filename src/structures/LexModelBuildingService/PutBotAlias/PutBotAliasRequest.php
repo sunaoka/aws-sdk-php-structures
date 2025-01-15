@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $botVersion
  * @property string $botName
- * @property string $checksum
- * @property Shapes\ConversationLogsRequest $conversationLogs
- * @property list<Shapes\Tag> $tags
+ * @property string|null $checksum
+ * @property Shapes\ConversationLogsRequest|null $conversationLogs
+ * @property list<Shapes\Tag>|null $tags
  */
 class PutBotAliasRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     botVersion: string,
      *     botName: string,
-     *     checksum?: string,
-     *     conversationLogs?: Shapes\ConversationLogsRequest,
-     *     tags?: list<Shapes\Tag>
+     *     checksum?: string|null,
+     *     conversationLogs?: Shapes\ConversationLogsRequest|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

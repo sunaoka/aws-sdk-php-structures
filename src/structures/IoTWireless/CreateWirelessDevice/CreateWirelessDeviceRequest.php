@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'Sidewalk'|'LoRaWAN' $Type
- * @property string $Name
- * @property string $Description
+ * @property string|null $Name
+ * @property string|null $Description
  * @property string $DestinationName
- * @property string $ClientRequestToken
- * @property Shapes\LoRaWANDevice $LoRaWAN
- * @property list<Shapes\Tag> $Tags
- * @property 'Enabled'|'Disabled' $Positioning
- * @property Shapes\SidewalkCreateWirelessDevice $Sidewalk
+ * @property string|null $ClientRequestToken
+ * @property Shapes\LoRaWANDevice|null $LoRaWAN
+ * @property list<Shapes\Tag>|null $Tags
+ * @property 'Enabled'|'Disabled'|null $Positioning
+ * @property Shapes\SidewalkCreateWirelessDevice|null $Sidewalk
  */
 class CreateWirelessDeviceRequest extends Request
 {
     /**
      * @param array{
      *     Type: 'Sidewalk'|'LoRaWAN',
-     *     Name?: string,
-     *     Description?: string,
+     *     Name?: string|null,
+     *     Description?: string|null,
      *     DestinationName: string,
-     *     ClientRequestToken?: string,
-     *     LoRaWAN?: Shapes\LoRaWANDevice,
-     *     Tags?: list<Shapes\Tag>,
-     *     Positioning?: 'Enabled'|'Disabled',
-     *     Sidewalk?: Shapes\SidewalkCreateWirelessDevice
+     *     ClientRequestToken?: string|null,
+     *     LoRaWAN?: Shapes\LoRaWANDevice|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     Positioning?: 'Enabled'|'Disabled'|null,
+     *     Sidewalk?: Shapes\SidewalkCreateWirelessDevice|null
      * } $args
      */
     public function __construct(array $args)

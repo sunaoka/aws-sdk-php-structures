@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetSegment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<SegmentDimensions> $Dimensions
- * @property list<SegmentReference> $SourceSegments
- * @property 'ALL'|'ANY'|'NONE' $SourceType
- * @property 'ALL'|'ANY'|'NONE' $Type
+ * @property list<SegmentDimensions>|null $Dimensions
+ * @property list<SegmentReference>|null $SourceSegments
+ * @property 'ALL'|'ANY'|'NONE'|null $SourceType
+ * @property 'ALL'|'ANY'|'NONE'|null $Type
  */
 class SegmentGroup extends Shape
 {
     /**
      * @param array{
-     *     Dimensions?: list<SegmentDimensions>,
-     *     SourceSegments?: list<SegmentReference>,
-     *     SourceType?: 'ALL'|'ANY'|'NONE',
-     *     Type?: 'ALL'|'ANY'|'NONE'
+     *     Dimensions?: list<SegmentDimensions>|null,
+     *     SourceSegments?: list<SegmentReference>|null,
+     *     SourceType?: 'ALL'|'ANY'|'NONE'|null,
+     *     Type?: 'ALL'|'ANY'|'NONE'|null
      * } $args
      */
     public function __construct(array $args = [])

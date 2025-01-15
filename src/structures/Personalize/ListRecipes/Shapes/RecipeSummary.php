@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Personalize\ListRecipes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $recipeArn
- * @property string $status
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
- * @property 'ECOMMERCE'|'VIDEO_ON_DEMAND' $domain
+ * @property string|null $name
+ * @property string|null $recipeArn
+ * @property string|null $status
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
+ * @property 'ECOMMERCE'|'VIDEO_ON_DEMAND'|null $domain
  */
 class RecipeSummary extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     recipeArn?: string,
-     *     status?: string,
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult,
-     *     domain?: 'ECOMMERCE'|'VIDEO_ON_DEMAND'
+     *     name?: string|null,
+     *     recipeArn?: string|null,
+     *     status?: string|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
+     *     domain?: 'ECOMMERCE'|'VIDEO_ON_DEMAND'|null
      * } $args
      */
     public function __construct(array $args = [])

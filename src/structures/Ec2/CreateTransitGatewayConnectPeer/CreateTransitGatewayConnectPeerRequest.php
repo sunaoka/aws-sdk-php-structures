@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TransitGatewayAttachmentId
- * @property string $TransitGatewayAddress
+ * @property string|null $TransitGatewayAddress
  * @property string $PeerAddress
- * @property Shapes\TransitGatewayConnectRequestBgpOptions $BgpOptions
+ * @property Shapes\TransitGatewayConnectRequestBgpOptions|null $BgpOptions
  * @property list<string> $InsideCidrBlocks
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property bool $DryRun
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property bool|null $DryRun
  */
 class CreateTransitGatewayConnectPeerRequest extends Request
 {
     /**
      * @param array{
      *     TransitGatewayAttachmentId: string,
-     *     TransitGatewayAddress?: string,
+     *     TransitGatewayAddress?: string|null,
      *     PeerAddress: string,
-     *     BgpOptions?: Shapes\TransitGatewayConnectRequestBgpOptions,
+     *     BgpOptions?: Shapes\TransitGatewayConnectRequestBgpOptions|null,
      *     InsideCidrBlocks: list<string>,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     DryRun?: bool
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

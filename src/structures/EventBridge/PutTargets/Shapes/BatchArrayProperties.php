@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EventBridge\PutTargets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Size
+ * @property int|null $Size
  */
 class BatchArrayProperties extends Shape
 {
     /**
-     * @param array{Size?: int} $args
+     * @param array{Size?: int|null} $args
      */
     public function __construct(array $args = [])
     {

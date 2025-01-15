@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $applicationId
  * @property string $displayName
- * @property string $description
- * @property 'ENTERPRISE'|'STARTER' $type
- * @property list<Shapes\Tag> $tags
- * @property Shapes\IndexCapacityConfiguration $capacityConfiguration
- * @property string $clientToken
+ * @property string|null $description
+ * @property 'ENTERPRISE'|'STARTER'|null $type
+ * @property list<Shapes\Tag>|null $tags
+ * @property Shapes\IndexCapacityConfiguration|null $capacityConfiguration
+ * @property string|null $clientToken
  */
 class CreateIndexRequest extends Request
 {
@@ -19,11 +19,11 @@ class CreateIndexRequest extends Request
      * @param array{
      *     applicationId: string,
      *     displayName: string,
-     *     description?: string,
-     *     type?: 'ENTERPRISE'|'STARTER',
-     *     tags?: list<Shapes\Tag>,
-     *     capacityConfiguration?: Shapes\IndexCapacityConfiguration,
-     *     clientToken?: string
+     *     description?: string|null,
+     *     type?: 'ENTERPRISE'|'STARTER'|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     capacityConfiguration?: Shapes\IndexCapacityConfiguration|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

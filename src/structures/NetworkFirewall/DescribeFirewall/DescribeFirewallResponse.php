@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\DescribeFirewall;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $UpdateToken
- * @property Shapes\Firewall $Firewall
- * @property Shapes\FirewallStatus $FirewallStatus
+ * @property string|null $UpdateToken
+ * @property Shapes\Firewall|null $Firewall
+ * @property Shapes\FirewallStatus|null $FirewallStatus
  */
 class DescribeFirewallResponse extends Response
 {

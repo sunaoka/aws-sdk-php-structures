@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FraudDetector\DescribeModelVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OFITrainingMetricsValue $ofi
- * @property TFITrainingMetricsValue $tfi
- * @property ATITrainingMetricsValue $ati
+ * @property OFITrainingMetricsValue|null $ofi
+ * @property TFITrainingMetricsValue|null $tfi
+ * @property ATITrainingMetricsValue|null $ati
  */
 class TrainingMetricsV2 extends Shape
 {
     /**
      * @param array{
-     *     ofi?: OFITrainingMetricsValue,
-     *     tfi?: TFITrainingMetricsValue,
-     *     ati?: ATITrainingMetricsValue
+     *     ofi?: OFITrainingMetricsValue|null,
+     *     tfi?: TFITrainingMetricsValue|null,
+     *     ati?: ATITrainingMetricsValue|null
      * } $args
      */
     public function __construct(array $args = [])

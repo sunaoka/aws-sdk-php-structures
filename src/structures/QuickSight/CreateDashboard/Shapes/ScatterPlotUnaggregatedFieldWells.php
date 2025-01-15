@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $XAxis
- * @property list<DimensionField> $YAxis
- * @property list<MeasureField> $Size
- * @property list<DimensionField> $Category
- * @property list<DimensionField> $Label
+ * @property list<DimensionField>|null $XAxis
+ * @property list<DimensionField>|null $YAxis
+ * @property list<MeasureField>|null $Size
+ * @property list<DimensionField>|null $Category
+ * @property list<DimensionField>|null $Label
  */
 class ScatterPlotUnaggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     XAxis?: list<DimensionField>,
-     *     YAxis?: list<DimensionField>,
-     *     Size?: list<MeasureField>,
-     *     Category?: list<DimensionField>,
-     *     Label?: list<DimensionField>
+     *     XAxis?: list<DimensionField>|null,
+     *     YAxis?: list<DimensionField>|null,
+     *     Size?: list<MeasureField>|null,
+     *     Category?: list<DimensionField>|null,
+     *     Label?: list<DimensionField>|null
      * } $args
      */
     public function __construct(array $args = [])

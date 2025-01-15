@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\AppConfig\ListHostedConfigurationVersions\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationId
- * @property string $ConfigurationProfileId
- * @property int $VersionNumber
- * @property string $Description
- * @property string $ContentType
- * @property string $VersionLabel
- * @property string $KmsKeyArn
+ * @property string|null $ApplicationId
+ * @property string|null $ConfigurationProfileId
+ * @property int|null $VersionNumber
+ * @property string|null $Description
+ * @property string|null $ContentType
+ * @property string|null $VersionLabel
+ * @property string|null $KmsKeyArn
  */
 class HostedConfigurationVersionSummary extends Shape
 {
     /**
      * @param array{
-     *     ApplicationId?: string,
-     *     ConfigurationProfileId?: string,
-     *     VersionNumber?: int,
-     *     Description?: string,
-     *     ContentType?: string,
-     *     VersionLabel?: string,
-     *     KmsKeyArn?: string
+     *     ApplicationId?: string|null,
+     *     ConfigurationProfileId?: string|null,
+     *     VersionNumber?: int|null,
+     *     Description?: string|null,
+     *     ContentType?: string|null,
+     *     VersionLabel?: string|null,
+     *     KmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

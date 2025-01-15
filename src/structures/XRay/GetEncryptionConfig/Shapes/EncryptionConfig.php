@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\XRay\GetEncryptionConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KeyId
- * @property 'UPDATING'|'ACTIVE' $Status
- * @property 'NONE'|'KMS' $Type
+ * @property string|null $KeyId
+ * @property 'UPDATING'|'ACTIVE'|null $Status
+ * @property 'NONE'|'KMS'|null $Type
  */
 class EncryptionConfig extends Shape
 {
     /**
      * @param array{
-     *     KeyId?: string,
-     *     Status?: 'UPDATING'|'ACTIVE',
-     *     Type?: 'NONE'|'KMS'
+     *     KeyId?: string|null,
+     *     Status?: 'UPDATING'|'ACTIVE'|null,
+     *     Type?: 'NONE'|'KMS'|null
      * } $args
      */
     public function __construct(array $args = [])

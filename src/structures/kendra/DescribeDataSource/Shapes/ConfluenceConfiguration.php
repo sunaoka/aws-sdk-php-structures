@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ServerUrl
  * @property string $SecretArn
  * @property 'CLOUD'|'SERVER' $Version
- * @property ConfluenceSpaceConfiguration $SpaceConfiguration
- * @property ConfluencePageConfiguration $PageConfiguration
- * @property ConfluenceBlogConfiguration $BlogConfiguration
- * @property ConfluenceAttachmentConfiguration $AttachmentConfiguration
- * @property DataSourceVpcConfiguration $VpcConfiguration
- * @property list<string> $InclusionPatterns
- * @property list<string> $ExclusionPatterns
- * @property ProxyConfiguration $ProxyConfiguration
- * @property 'HTTP_BASIC'|'PAT' $AuthenticationType
+ * @property ConfluenceSpaceConfiguration|null $SpaceConfiguration
+ * @property ConfluencePageConfiguration|null $PageConfiguration
+ * @property ConfluenceBlogConfiguration|null $BlogConfiguration
+ * @property ConfluenceAttachmentConfiguration|null $AttachmentConfiguration
+ * @property DataSourceVpcConfiguration|null $VpcConfiguration
+ * @property list<string>|null $InclusionPatterns
+ * @property list<string>|null $ExclusionPatterns
+ * @property ProxyConfiguration|null $ProxyConfiguration
+ * @property 'HTTP_BASIC'|'PAT'|null $AuthenticationType
  */
 class ConfluenceConfiguration extends Shape
 {
@@ -25,15 +25,15 @@ class ConfluenceConfiguration extends Shape
      *     ServerUrl: string,
      *     SecretArn: string,
      *     Version: 'CLOUD'|'SERVER',
-     *     SpaceConfiguration?: ConfluenceSpaceConfiguration,
-     *     PageConfiguration?: ConfluencePageConfiguration,
-     *     BlogConfiguration?: ConfluenceBlogConfiguration,
-     *     AttachmentConfiguration?: ConfluenceAttachmentConfiguration,
-     *     VpcConfiguration?: DataSourceVpcConfiguration,
-     *     InclusionPatterns?: list<string>,
-     *     ExclusionPatterns?: list<string>,
-     *     ProxyConfiguration?: ProxyConfiguration,
-     *     AuthenticationType?: 'HTTP_BASIC'|'PAT'
+     *     SpaceConfiguration?: ConfluenceSpaceConfiguration|null,
+     *     PageConfiguration?: ConfluencePageConfiguration|null,
+     *     BlogConfiguration?: ConfluenceBlogConfiguration|null,
+     *     AttachmentConfiguration?: ConfluenceAttachmentConfiguration|null,
+     *     VpcConfiguration?: DataSourceVpcConfiguration|null,
+     *     InclusionPatterns?: list<string>|null,
+     *     ExclusionPatterns?: list<string>|null,
+     *     ProxyConfiguration?: ProxyConfiguration|null,
+     *     AuthenticationType?: 'HTTP_BASIC'|'PAT'|null
      * } $args
      */
     public function __construct(array $args)

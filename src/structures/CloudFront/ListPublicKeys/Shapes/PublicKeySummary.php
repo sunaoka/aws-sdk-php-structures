@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property \Aws\Api\DateTimeResult $CreatedTime
  * @property string $EncodedKey
- * @property string $Comment
+ * @property string|null $Comment
  */
 class PublicKeySummary extends Shape
 {
@@ -19,7 +19,7 @@ class PublicKeySummary extends Shape
      *     Name: string,
      *     CreatedTime: \Aws\Api\DateTimeResult,
      *     EncodedKey: string,
-     *     Comment?: string
+     *     Comment?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\UpdateProject;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\ProjectAppConfigResourceConfig $appConfigResource
- * @property string $description
+ * @property Shapes\ProjectAppConfigResourceConfig|null $appConfigResource
+ * @property string|null $description
  * @property string $project
  */
 class UpdateProjectRequest extends Request
 {
     /**
      * @param array{
-     *     appConfigResource?: Shapes\ProjectAppConfigResourceConfig,
-     *     description?: string,
+     *     appConfigResource?: Shapes\ProjectAppConfigResourceConfig|null,
+     *     description?: string|null,
      *     project: string
      * } $args
      */

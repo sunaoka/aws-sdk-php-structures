@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $TagKey
  * @property string $ColumnName
- * @property string $TagMultiValueDelimiter
- * @property string $MatchAllValue
+ * @property string|null $TagMultiValueDelimiter
+ * @property string|null $MatchAllValue
  */
 class RowLevelPermissionTagRule extends Shape
 {
@@ -16,8 +16,8 @@ class RowLevelPermissionTagRule extends Shape
      * @param array{
      *     TagKey: string,
      *     ColumnName: string,
-     *     TagMultiValueDelimiter?: string,
-     *     MatchAllValue?: string
+     *     TagMultiValueDelimiter?: string|null,
+     *     MatchAllValue?: string|null
      * } $args
      */
     public function __construct(array $args)

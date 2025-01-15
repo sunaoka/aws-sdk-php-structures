@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\S3\PutBucketLifecycleConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Prefix
- * @property list<Tag> $Tags
- * @property int $ObjectSizeGreaterThan
- * @property int $ObjectSizeLessThan
+ * @property string|null $Prefix
+ * @property list<Tag>|null $Tags
+ * @property int|null $ObjectSizeGreaterThan
+ * @property int|null $ObjectSizeLessThan
  */
 class LifecycleRuleAndOperator extends Shape
 {
     /**
      * @param array{
-     *     Prefix?: string,
-     *     Tags?: list<Tag>,
-     *     ObjectSizeGreaterThan?: int,
-     *     ObjectSizeLessThan?: int
+     *     Prefix?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     ObjectSizeGreaterThan?: int|null,
+     *     ObjectSizeLessThan?: int|null
      * } $args
      */
     public function __construct(array $args = [])

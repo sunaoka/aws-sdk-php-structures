@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataSync\CreateLocationFsxWindows;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LocationArn
+ * @property string|null $LocationArn
  */
 class CreateLocationFsxWindowsResponse extends Response
 {

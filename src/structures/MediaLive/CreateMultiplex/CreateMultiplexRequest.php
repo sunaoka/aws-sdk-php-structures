@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\MultiplexSettings $MultiplexSettings
  * @property string $Name
  * @property string $RequestId
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateMultiplexRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreateMultiplexRequest extends Request
      *     MultiplexSettings: Shapes\MultiplexSettings,
      *     Name: string,
      *     RequestId: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

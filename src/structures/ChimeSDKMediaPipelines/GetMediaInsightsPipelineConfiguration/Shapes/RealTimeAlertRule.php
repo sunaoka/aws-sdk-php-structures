@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'KeywordMatch'|'Sentiment'|'IssueDetection' $Type
- * @property KeywordMatchConfiguration $KeywordMatchConfiguration
- * @property SentimentConfiguration $SentimentConfiguration
- * @property IssueDetectionConfiguration $IssueDetectionConfiguration
+ * @property KeywordMatchConfiguration|null $KeywordMatchConfiguration
+ * @property SentimentConfiguration|null $SentimentConfiguration
+ * @property IssueDetectionConfiguration|null $IssueDetectionConfiguration
  */
 class RealTimeAlertRule extends Shape
 {
     /**
      * @param array{
      *     Type: 'KeywordMatch'|'Sentiment'|'IssueDetection',
-     *     KeywordMatchConfiguration?: KeywordMatchConfiguration,
-     *     SentimentConfiguration?: SentimentConfiguration,
-     *     IssueDetectionConfiguration?: IssueDetectionConfiguration
+     *     KeywordMatchConfiguration?: KeywordMatchConfiguration|null,
+     *     SentimentConfiguration?: SentimentConfiguration|null,
+     *     IssueDetectionConfiguration?: IssueDetectionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServiceType
+ * @property string|null $ServiceType
  */
 class AwsEc2VpcEndpointServiceServiceTypeDetails extends Shape
 {
     /**
-     * @param array{ServiceType?: string} $args
+     * @param array{ServiceType?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Personalize\ListBatchSegmentJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $batchSegmentJobArn
- * @property string $jobName
- * @property string $status
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
- * @property string $failureReason
- * @property string $solutionVersionArn
+ * @property string|null $batchSegmentJobArn
+ * @property string|null $jobName
+ * @property string|null $status
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
+ * @property string|null $failureReason
+ * @property string|null $solutionVersionArn
  */
 class BatchSegmentJobSummary extends Shape
 {
     /**
      * @param array{
-     *     batchSegmentJobArn?: string,
-     *     jobName?: string,
-     *     status?: string,
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult,
-     *     failureReason?: string,
-     *     solutionVersionArn?: string
+     *     batchSegmentJobArn?: string|null,
+     *     jobName?: string|null,
+     *     status?: string|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null,
+     *     failureReason?: string|null,
+     *     solutionVersionArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

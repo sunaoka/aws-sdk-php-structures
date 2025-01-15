@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeAlgorithm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
+ * @property string|null $name
  * @property string $dockerURI
  */
 class AlgorithmImage extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
+     *     name?: string|null,
      *     dockerURI: string
      * } $args
      */

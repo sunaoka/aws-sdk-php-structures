@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $id
  * @property bool $autoRenew
- * @property string $clientRequestToken
+ * @property string|null $clientRequestToken
  */
 class UpdateEksAnywhereSubscriptionRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateEksAnywhereSubscriptionRequest extends Request
      * @param array{
      *     id: string,
      *     autoRenew: bool,
-     *     clientRequestToken?: string
+     *     clientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

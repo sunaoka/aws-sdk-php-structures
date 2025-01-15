@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeAlgorithm\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max> $MaxConcurrentTransforms
- * @property int<0, max> $MaxPayloadInMB
- * @property 'MultiRecord'|'SingleRecord' $BatchStrategy
- * @property array<string, string> $Environment
+ * @property int<0, max>|null $MaxConcurrentTransforms
+ * @property int<0, max>|null $MaxPayloadInMB
+ * @property 'MultiRecord'|'SingleRecord'|null $BatchStrategy
+ * @property array<string, string>|null $Environment
  * @property TransformInput $TransformInput
  * @property TransformOutput $TransformOutput
  * @property TransformResources $TransformResources
@@ -17,10 +17,10 @@ class TransformJobDefinition extends Shape
 {
     /**
      * @param array{
-     *     MaxConcurrentTransforms?: int<0, max>,
-     *     MaxPayloadInMB?: int<0, max>,
-     *     BatchStrategy?: 'MultiRecord'|'SingleRecord',
-     *     Environment?: array<string, string>,
+     *     MaxConcurrentTransforms?: int<0, max>|null,
+     *     MaxPayloadInMB?: int<0, max>|null,
+     *     BatchStrategy?: 'MultiRecord'|'SingleRecord'|null,
+     *     Environment?: array<string, string>|null,
      *     TransformInput: TransformInput,
      *     TransformOutput: TransformOutput,
      *     TransformResources: TransformResources

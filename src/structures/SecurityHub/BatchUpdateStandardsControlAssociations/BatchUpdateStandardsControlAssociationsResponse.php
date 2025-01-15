@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchUpdateStandardsControlAssociat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\UnprocessedStandardsControlAssociationUpdate> $UnprocessedAssociationUpdates
+ * @property list<Shapes\UnprocessedStandardsControlAssociationUpdate>|null $UnprocessedAssociationUpdates
  */
 class BatchUpdateStandardsControlAssociationsResponse extends Response
 {

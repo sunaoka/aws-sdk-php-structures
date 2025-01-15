@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Redshift\CreateSnapshotSchedule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ScheduleDefinitions
- * @property string $ScheduleIdentifier
- * @property string $ScheduleDescription
- * @property list<Shapes\Tag> $Tags
- * @property bool $DryRun
- * @property int $NextInvocations
+ * @property list<string>|null $ScheduleDefinitions
+ * @property string|null $ScheduleIdentifier
+ * @property string|null $ScheduleDescription
+ * @property list<Shapes\Tag>|null $Tags
+ * @property bool|null $DryRun
+ * @property int|null $NextInvocations
  */
 class CreateSnapshotScheduleRequest extends Request
 {
     /**
      * @param array{
-     *     ScheduleDefinitions?: list<string>,
-     *     ScheduleIdentifier?: string,
-     *     ScheduleDescription?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     DryRun?: bool,
-     *     NextInvocations?: int
+     *     ScheduleDefinitions?: list<string>|null,
+     *     ScheduleIdentifier?: string|null,
+     *     ScheduleDescription?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     DryRun?: bool|null,
+     *     NextInvocations?: int|null
      * } $args
      */
     public function __construct(array $args = [])

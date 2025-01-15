@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Waf\ListSubscribedRuleGroups;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextMarker
- * @property list<Shapes\SubscribedRuleGroupSummary> $RuleGroups
+ * @property string|null $NextMarker
+ * @property list<Shapes\SubscribedRuleGroupSummary>|null $RuleGroups
  */
 class ListSubscribedRuleGroupsResponse extends Response
 {

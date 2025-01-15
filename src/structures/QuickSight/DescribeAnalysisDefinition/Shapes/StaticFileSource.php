@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StaticFileUrlSourceOptions $UrlOptions
- * @property StaticFileS3SourceOptions $S3Options
+ * @property StaticFileUrlSourceOptions|null $UrlOptions
+ * @property StaticFileS3SourceOptions|null $S3Options
  */
 class StaticFileSource extends Shape
 {
     /**
      * @param array{
-     *     UrlOptions?: StaticFileUrlSourceOptions,
-     *     S3Options?: StaticFileS3SourceOptions
+     *     UrlOptions?: StaticFileUrlSourceOptions|null,
+     *     S3Options?: StaticFileS3SourceOptions|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ecs\StopTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bindIP
- * @property int $containerPort
- * @property int $hostPort
- * @property 'tcp'|'udp' $protocol
- * @property string $containerPortRange
- * @property string $hostPortRange
+ * @property string|null $bindIP
+ * @property int|null $containerPort
+ * @property int|null $hostPort
+ * @property 'tcp'|'udp'|null $protocol
+ * @property string|null $containerPortRange
+ * @property string|null $hostPortRange
  */
 class NetworkBinding extends Shape
 {
     /**
      * @param array{
-     *     bindIP?: string,
-     *     containerPort?: int,
-     *     hostPort?: int,
-     *     protocol?: 'tcp'|'udp',
-     *     containerPortRange?: string,
-     *     hostPortRange?: string
+     *     bindIP?: string|null,
+     *     containerPort?: int|null,
+     *     hostPort?: int|null,
+     *     protocol?: 'tcp'|'udp'|null,
+     *     containerPortRange?: string|null,
+     *     hostPortRange?: string|null
      * } $args
      */
     public function __construct(array $args = [])

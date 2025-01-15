@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\WellArchitected\ListProfileNotifications\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CurrentProfileVersion
- * @property string $LatestProfileVersion
- * @property 'PROFILE_ANSWERS_UPDATED'|'PROFILE_DELETED' $Type
- * @property string $ProfileArn
- * @property string $ProfileName
- * @property string $WorkloadId
- * @property string $WorkloadName
+ * @property string|null $CurrentProfileVersion
+ * @property string|null $LatestProfileVersion
+ * @property 'PROFILE_ANSWERS_UPDATED'|'PROFILE_DELETED'|null $Type
+ * @property string|null $ProfileArn
+ * @property string|null $ProfileName
+ * @property string|null $WorkloadId
+ * @property string|null $WorkloadName
  */
 class ProfileNotificationSummary extends Shape
 {
     /**
      * @param array{
-     *     CurrentProfileVersion?: string,
-     *     LatestProfileVersion?: string,
-     *     Type?: 'PROFILE_ANSWERS_UPDATED'|'PROFILE_DELETED',
-     *     ProfileArn?: string,
-     *     ProfileName?: string,
-     *     WorkloadId?: string,
-     *     WorkloadName?: string
+     *     CurrentProfileVersion?: string|null,
+     *     LatestProfileVersion?: string|null,
+     *     Type?: 'PROFILE_ANSWERS_UPDATED'|'PROFILE_DELETED'|null,
+     *     ProfileArn?: string|null,
+     *     ProfileName?: string|null,
+     *     WorkloadId?: string|null,
+     *     WorkloadName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

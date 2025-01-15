@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Pinpoint\CreateJourney\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property JourneyPushMessage $MessageConfig
- * @property string $NextActivity
- * @property string $TemplateName
- * @property string $TemplateVersion
+ * @property JourneyPushMessage|null $MessageConfig
+ * @property string|null $NextActivity
+ * @property string|null $TemplateName
+ * @property string|null $TemplateVersion
  */
 class PushMessageActivity extends Shape
 {
     /**
      * @param array{
-     *     MessageConfig?: JourneyPushMessage,
-     *     NextActivity?: string,
-     *     TemplateName?: string,
-     *     TemplateVersion?: string
+     *     MessageConfig?: JourneyPushMessage|null,
+     *     NextActivity?: string|null,
+     *     TemplateName?: string|null,
+     *     TemplateVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\drs\DescribeSourceServers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataReplicationError $dataReplicationError
- * @property DataReplicationInitiation $dataReplicationInitiation
- * @property 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED' $dataReplicationState
- * @property string $etaDateTime
- * @property string $lagDuration
- * @property list<DataReplicationInfoReplicatedDisk> $replicatedDisks
- * @property string $stagingAvailabilityZone
- * @property string $stagingOutpostArn
+ * @property DataReplicationError|null $dataReplicationError
+ * @property DataReplicationInitiation|null $dataReplicationInitiation
+ * @property 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED'|null $dataReplicationState
+ * @property string|null $etaDateTime
+ * @property string|null $lagDuration
+ * @property list<DataReplicationInfoReplicatedDisk>|null $replicatedDisks
+ * @property string|null $stagingAvailabilityZone
+ * @property string|null $stagingOutpostArn
  */
 class DataReplicationInfo extends Shape
 {
     /**
      * @param array{
-     *     dataReplicationError?: DataReplicationError,
-     *     dataReplicationInitiation?: DataReplicationInitiation,
-     *     dataReplicationState?: 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED',
-     *     etaDateTime?: string,
-     *     lagDuration?: string,
-     *     replicatedDisks?: list<DataReplicationInfoReplicatedDisk>,
-     *     stagingAvailabilityZone?: string,
-     *     stagingOutpostArn?: string
+     *     dataReplicationError?: DataReplicationError|null,
+     *     dataReplicationInitiation?: DataReplicationInitiation|null,
+     *     dataReplicationState?: 'STOPPED'|'INITIATING'|'INITIAL_SYNC'|'BACKLOG'|'CREATING_SNAPSHOT'|'CONTINUOUS'|'PAUSED'|'RESCAN'|'STALLED'|'DISCONNECTED'|null,
+     *     etaDateTime?: string|null,
+     *     lagDuration?: string|null,
+     *     replicatedDisks?: list<DataReplicationInfoReplicatedDisk>|null,
+     *     stagingAvailabilityZone?: string|null,
+     *     stagingOutpostArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

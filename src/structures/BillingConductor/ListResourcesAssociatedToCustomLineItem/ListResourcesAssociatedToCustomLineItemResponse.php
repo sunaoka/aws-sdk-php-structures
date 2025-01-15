@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListResourcesAssociatedToCusto
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property list<Shapes\ListResourcesAssociatedToCustomLineItemResponseElement> $AssociatedResources
- * @property string $NextToken
+ * @property string|null $Arn
+ * @property list<Shapes\ListResourcesAssociatedToCustomLineItemResponseElement>|null $AssociatedResources
+ * @property string|null $NextToken
  */
 class ListResourcesAssociatedToCustomLineItemResponse extends Response
 {

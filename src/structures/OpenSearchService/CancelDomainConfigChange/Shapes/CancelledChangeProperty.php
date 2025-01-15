@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\CancelDomainConfigChange\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PropertyName
- * @property string $CancelledValue
- * @property string $ActiveValue
+ * @property string|null $PropertyName
+ * @property string|null $CancelledValue
+ * @property string|null $ActiveValue
  */
 class CancelledChangeProperty extends Shape
 {
     /**
      * @param array{
-     *     PropertyName?: string,
-     *     CancelledValue?: string,
-     *     ActiveValue?: string
+     *     PropertyName?: string|null,
+     *     CancelledValue?: string|null,
+     *     ActiveValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

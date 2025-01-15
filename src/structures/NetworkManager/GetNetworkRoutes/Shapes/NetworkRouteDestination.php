@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetNetworkRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CoreNetworkAttachmentId
- * @property string $TransitGatewayAttachmentId
- * @property string $SegmentName
- * @property string $NetworkFunctionGroupName
- * @property string $EdgeLocation
- * @property string $ResourceType
- * @property string $ResourceId
+ * @property string|null $CoreNetworkAttachmentId
+ * @property string|null $TransitGatewayAttachmentId
+ * @property string|null $SegmentName
+ * @property string|null $NetworkFunctionGroupName
+ * @property string|null $EdgeLocation
+ * @property string|null $ResourceType
+ * @property string|null $ResourceId
  */
 class NetworkRouteDestination extends Shape
 {
     /**
      * @param array{
-     *     CoreNetworkAttachmentId?: string,
-     *     TransitGatewayAttachmentId?: string,
-     *     SegmentName?: string,
-     *     NetworkFunctionGroupName?: string,
-     *     EdgeLocation?: string,
-     *     ResourceType?: string,
-     *     ResourceId?: string
+     *     CoreNetworkAttachmentId?: string|null,
+     *     TransitGatewayAttachmentId?: string|null,
+     *     SegmentName?: string|null,
+     *     NetworkFunctionGroupName?: string|null,
+     *     EdgeLocation?: string|null,
+     *     ResourceType?: string|null,
+     *     ResourceId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

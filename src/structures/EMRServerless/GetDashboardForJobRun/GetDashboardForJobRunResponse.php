@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\EMRServerless\GetDashboardForJobRun;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $url
+ * @property string|null $url
  */
 class GetDashboardForJobRunResponse extends Response
 {

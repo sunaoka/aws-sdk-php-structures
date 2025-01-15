@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $stateMachineArn
- * @property 'ALL_DATA'|'METADATA_ONLY' $includedData
+ * @property 'ALL_DATA'|'METADATA_ONLY'|null $includedData
  */
 class DescribeStateMachineRequest extends Request
 {
     /**
      * @param array{
      *     stateMachineArn: string,
-     *     includedData?: 'ALL_DATA'|'METADATA_ONLY'
+     *     includedData?: 'ALL_DATA'|'METADATA_ONLY'|null
      * } $args
      */
     public function __construct(array $args)

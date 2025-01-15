@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\CreateMediaLiveConnector
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TopLeft'|'TopRight'|'BottomLeft'|'BottomRight' $PresenterPosition
+ * @property 'TopLeft'|'TopRight'|'BottomLeft'|'BottomRight'|null $PresenterPosition
  */
 class PresenterOnlyConfiguration extends Shape
 {
     /**
-     * @param array{PresenterPosition?: 'TopLeft'|'TopRight'|'BottomLeft'|'BottomRight'} $args
+     * @param array{PresenterPosition?: 'TopLeft'|'TopRight'|'BottomLeft'|'BottomRight'|null} $args
      */
     public function __construct(array $args = [])
     {

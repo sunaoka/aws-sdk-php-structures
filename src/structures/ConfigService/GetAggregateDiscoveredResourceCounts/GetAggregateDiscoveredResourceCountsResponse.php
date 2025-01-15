@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property int $TotalDiscoveredResources
- * @property string $GroupByKey
- * @property list<Shapes\GroupedResourceCount> $GroupedResourceCounts
- * @property string $NextToken
+ * @property string|null $GroupByKey
+ * @property list<Shapes\GroupedResourceCount>|null $GroupedResourceCounts
+ * @property string|null $NextToken
  */
 class GetAggregateDiscoveredResourceCountsResponse extends Response
 {

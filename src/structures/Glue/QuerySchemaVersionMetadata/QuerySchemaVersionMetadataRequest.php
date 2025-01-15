@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Glue\QuerySchemaVersionMetadata;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\SchemaId $SchemaId
- * @property Shapes\SchemaVersionNumber $SchemaVersionNumber
- * @property string $SchemaVersionId
- * @property list<Shapes\MetadataKeyValuePair> $MetadataList
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
+ * @property Shapes\SchemaId|null $SchemaId
+ * @property Shapes\SchemaVersionNumber|null $SchemaVersionNumber
+ * @property string|null $SchemaVersionId
+ * @property list<Shapes\MetadataKeyValuePair>|null $MetadataList
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
  */
 class QuerySchemaVersionMetadataRequest extends Request
 {
     /**
      * @param array{
-     *     SchemaId?: Shapes\SchemaId,
-     *     SchemaVersionNumber?: Shapes\SchemaVersionNumber,
-     *     SchemaVersionId?: string,
-     *     MetadataList?: list<Shapes\MetadataKeyValuePair>,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string
+     *     SchemaId?: Shapes\SchemaId|null,
+     *     SchemaVersionNumber?: Shapes\SchemaVersionNumber|null,
+     *     SchemaVersionId?: string|null,
+     *     MetadataList?: list<Shapes\MetadataKeyValuePair>|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

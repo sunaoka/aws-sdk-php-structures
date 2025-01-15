@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property double $DesiredSamplingPercentage
- * @property double $ActualSamplingPercentage
+ * @property double|null $ActualSamplingPercentage
  */
 class ProbabilisticRuleValue extends Shape
 {
     /**
      * @param array{
      *     DesiredSamplingPercentage: double,
-     *     ActualSamplingPercentage?: double
+     *     ActualSamplingPercentage?: double|null
      * } $args
      */
     public function __construct(array $args)

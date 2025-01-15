@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateModelQualityJobDefinition\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3Uri
+ * @property string|null $S3Uri
  */
 class MonitoringGroundTruthS3Input extends Shape
 {
     /**
-     * @param array{S3Uri?: string} $args
+     * @param array{S3Uri?: string|null} $args
      */
     public function __construct(array $args = [])
     {

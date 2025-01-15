@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeContact\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $QualityScore
- * @property list<string> $PotentialQualityIssues
+ * @property float|null $QualityScore
+ * @property list<string>|null $PotentialQualityIssues
  */
 class AudioQualityMetricsInfo extends Shape
 {
     /**
      * @param array{
-     *     QualityScore?: float,
-     *     PotentialQualityIssues?: list<string>
+     *     QualityScore?: float|null,
+     *     PotentialQualityIssues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $Description
- * @property string $DisplayName
- * @property string $FailureReason
+ * @property string|null $Description
+ * @property string|null $DisplayName
+ * @property string|null $FailureReason
  * @property string $ImageArn
  * @property string $ImageName
  * @property 'CREATING'|'CREATED'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'DELETE_FAILED' $ImageStatus
@@ -19,9 +19,9 @@ class Image extends Shape
     /**
      * @param array{
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     DisplayName?: string,
-     *     FailureReason?: string,
+     *     Description?: string|null,
+     *     DisplayName?: string|null,
+     *     FailureReason?: string|null,
      *     ImageArn: string,
      *     ImageName: string,
      *     ImageStatus: 'CREATING'|'CREATED'|'CREATE_FAILED'|'UPDATING'|'UPDATE_FAILED'|'DELETING'|'DELETE_FAILED',

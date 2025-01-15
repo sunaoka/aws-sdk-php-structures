@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\kendra\GetQuerySuggestions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property SuggestionValue $Value
- * @property list<SourceDocument> $SourceDocuments
+ * @property string|null $Id
+ * @property SuggestionValue|null $Value
+ * @property list<SourceDocument>|null $SourceDocuments
  */
 class Suggestion extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Value?: SuggestionValue,
-     *     SourceDocuments?: list<SourceDocument>
+     *     Id?: string|null,
+     *     Value?: SuggestionValue|null,
+     *     SourceDocuments?: list<SourceDocument>|null
      * } $args
      */
     public function __construct(array $args = [])

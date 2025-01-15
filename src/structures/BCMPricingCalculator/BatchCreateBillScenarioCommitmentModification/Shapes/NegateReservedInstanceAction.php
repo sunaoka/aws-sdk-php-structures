@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchCreateBillScenarioCom
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $reservedInstancesId
+ * @property string|null $reservedInstancesId
  */
 class NegateReservedInstanceAction extends Shape
 {
     /**
-     * @param array{reservedInstancesId?: string} $args
+     * @param array{reservedInstancesId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

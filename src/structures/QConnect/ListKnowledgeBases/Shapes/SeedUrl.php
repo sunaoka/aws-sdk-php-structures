@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\ListKnowledgeBases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $url
+ * @property string|null $url
  */
 class SeedUrl extends Shape
 {
     /**
-     * @param array{url?: string} $args
+     * @param array{url?: string|null} $args
      */
     public function __construct(array $args = [])
     {

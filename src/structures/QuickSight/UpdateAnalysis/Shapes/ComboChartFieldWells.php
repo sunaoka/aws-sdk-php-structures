@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ComboChartAggregatedFieldWells $ComboChartAggregatedFieldWells
+ * @property ComboChartAggregatedFieldWells|null $ComboChartAggregatedFieldWells
  */
 class ComboChartFieldWells extends Shape
 {
     /**
-     * @param array{ComboChartAggregatedFieldWells?: ComboChartAggregatedFieldWells} $args
+     * @param array{ComboChartAggregatedFieldWells?: ComboChartAggregatedFieldWells|null} $args
      */
     public function __construct(array $args = [])
     {

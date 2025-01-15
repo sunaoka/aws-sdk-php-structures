@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $CapacityBlockExtensionOfferingId
  * @property string $CapacityReservationId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class PurchaseCapacityBlockExtensionRequest extends Request
 {
@@ -15,7 +15,7 @@ class PurchaseCapacityBlockExtensionRequest extends Request
      * @param array{
      *     CapacityBlockExtensionOfferingId: string,
      *     CapacityReservationId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

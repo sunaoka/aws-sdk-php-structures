@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\AppMesh\DescribeRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $invert
- * @property GrpcRouteMetadataMatchMethod $match
+ * @property bool|null $invert
+ * @property GrpcRouteMetadataMatchMethod|null $match
  * @property string $name
  */
 class GrpcRouteMetadata extends Shape
 {
     /**
      * @param array{
-     *     invert?: bool,
-     *     match?: GrpcRouteMetadataMatchMethod,
+     *     invert?: bool|null,
+     *     match?: GrpcRouteMetadataMatchMethod|null,
      *     name: string
      * } $args
      */

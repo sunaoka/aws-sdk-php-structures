@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\GuardDuty\UpdateFilter\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Eq
- * @property list<string> $Neq
- * @property int $Gt
- * @property int $Gte
- * @property int $Lt
- * @property int $Lte
- * @property list<string> $Equals
- * @property list<string> $NotEquals
- * @property int $GreaterThan
- * @property int $GreaterThanOrEqual
- * @property int $LessThan
- * @property int $LessThanOrEqual
+ * @property list<string>|null $Eq
+ * @property list<string>|null $Neq
+ * @property int|null $Gt
+ * @property int|null $Gte
+ * @property int|null $Lt
+ * @property int|null $Lte
+ * @property list<string>|null $Equals
+ * @property list<string>|null $NotEquals
+ * @property int|null $GreaterThan
+ * @property int|null $GreaterThanOrEqual
+ * @property int|null $LessThan
+ * @property int|null $LessThanOrEqual
  */
 class Condition extends Shape
 {
     /**
      * @param array{
-     *     Eq?: list<string>,
-     *     Neq?: list<string>,
-     *     Gt?: int,
-     *     Gte?: int,
-     *     Lt?: int,
-     *     Lte?: int,
-     *     Equals?: list<string>,
-     *     NotEquals?: list<string>,
-     *     GreaterThan?: int,
-     *     GreaterThanOrEqual?: int,
-     *     LessThan?: int,
-     *     LessThanOrEqual?: int
+     *     Eq?: list<string>|null,
+     *     Neq?: list<string>|null,
+     *     Gt?: int|null,
+     *     Gte?: int|null,
+     *     Lt?: int|null,
+     *     Lte?: int|null,
+     *     Equals?: list<string>|null,
+     *     NotEquals?: list<string>|null,
+     *     GreaterThan?: int|null,
+     *     GreaterThanOrEqual?: int|null,
+     *     LessThan?: int|null,
+     *     LessThanOrEqual?: int|null
      * } $args
      */
     public function __construct(array $args = [])

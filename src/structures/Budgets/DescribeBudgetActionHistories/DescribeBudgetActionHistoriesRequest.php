@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AccountId
  * @property string $BudgetName
  * @property string $ActionId
- * @property Shapes\TimePeriod $TimePeriod
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property Shapes\TimePeriod|null $TimePeriod
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeBudgetActionHistoriesRequest extends Request
 {
@@ -19,9 +19,9 @@ class DescribeBudgetActionHistoriesRequest extends Request
      *     AccountId: string,
      *     BudgetName: string,
      *     ActionId: string,
-     *     TimePeriod?: Shapes\TimePeriod,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     TimePeriod?: Shapes\TimePeriod|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

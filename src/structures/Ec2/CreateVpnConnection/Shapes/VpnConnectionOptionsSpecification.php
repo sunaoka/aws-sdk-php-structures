@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateVpnConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableAcceleration
- * @property 'ipv4'|'ipv6' $TunnelInsideIpVersion
- * @property list<VpnTunnelOptionsSpecification> $TunnelOptions
- * @property string $LocalIpv4NetworkCidr
- * @property string $RemoteIpv4NetworkCidr
- * @property string $LocalIpv6NetworkCidr
- * @property string $RemoteIpv6NetworkCidr
- * @property string $OutsideIpAddressType
- * @property string $TransportTransitGatewayAttachmentId
- * @property bool $StaticRoutesOnly
+ * @property bool|null $EnableAcceleration
+ * @property 'ipv4'|'ipv6'|null $TunnelInsideIpVersion
+ * @property list<VpnTunnelOptionsSpecification>|null $TunnelOptions
+ * @property string|null $LocalIpv4NetworkCidr
+ * @property string|null $RemoteIpv4NetworkCidr
+ * @property string|null $LocalIpv6NetworkCidr
+ * @property string|null $RemoteIpv6NetworkCidr
+ * @property string|null $OutsideIpAddressType
+ * @property string|null $TransportTransitGatewayAttachmentId
+ * @property bool|null $StaticRoutesOnly
  */
 class VpnConnectionOptionsSpecification extends Shape
 {
     /**
      * @param array{
-     *     EnableAcceleration?: bool,
-     *     TunnelInsideIpVersion?: 'ipv4'|'ipv6',
-     *     TunnelOptions?: list<VpnTunnelOptionsSpecification>,
-     *     LocalIpv4NetworkCidr?: string,
-     *     RemoteIpv4NetworkCidr?: string,
-     *     LocalIpv6NetworkCidr?: string,
-     *     RemoteIpv6NetworkCidr?: string,
-     *     OutsideIpAddressType?: string,
-     *     TransportTransitGatewayAttachmentId?: string,
-     *     StaticRoutesOnly?: bool
+     *     EnableAcceleration?: bool|null,
+     *     TunnelInsideIpVersion?: 'ipv4'|'ipv6'|null,
+     *     TunnelOptions?: list<VpnTunnelOptionsSpecification>|null,
+     *     LocalIpv4NetworkCidr?: string|null,
+     *     RemoteIpv4NetworkCidr?: string|null,
+     *     LocalIpv6NetworkCidr?: string|null,
+     *     RemoteIpv6NetworkCidr?: string|null,
+     *     OutsideIpAddressType?: string|null,
+     *     TransportTransitGatewayAttachmentId?: string|null,
+     *     StaticRoutesOnly?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

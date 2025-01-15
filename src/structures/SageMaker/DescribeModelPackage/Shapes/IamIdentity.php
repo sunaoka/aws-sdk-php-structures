@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeModelPackage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $PrincipalId
- * @property string $SourceIdentity
+ * @property string|null $Arn
+ * @property string|null $PrincipalId
+ * @property string|null $SourceIdentity
  */
 class IamIdentity extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     PrincipalId?: string,
-     *     SourceIdentity?: string
+     *     Arn?: string|null,
+     *     PrincipalId?: string|null,
+     *     SourceIdentity?: string|null
      * } $args
      */
     public function __construct(array $args = [])

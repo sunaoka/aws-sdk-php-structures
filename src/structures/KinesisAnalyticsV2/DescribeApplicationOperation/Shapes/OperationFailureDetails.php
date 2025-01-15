@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\DescribeApplicationOperation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RollbackOperationId
- * @property ErrorInfo $ErrorInfo
+ * @property string|null $RollbackOperationId
+ * @property ErrorInfo|null $ErrorInfo
  */
 class OperationFailureDetails extends Shape
 {
     /**
      * @param array{
-     *     RollbackOperationId?: string,
-     *     ErrorInfo?: ErrorInfo
+     *     RollbackOperationId?: string|null,
+     *     ErrorInfo?: ErrorInfo|null
      * } $args
      */
     public function __construct(array $args = [])

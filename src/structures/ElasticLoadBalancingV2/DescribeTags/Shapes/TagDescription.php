@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeTags\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceArn
- * @property list<Tag> $Tags
+ * @property string|null $ResourceArn
+ * @property list<Tag>|null $Tags
  */
 class TagDescription extends Shape
 {
     /**
      * @param array{
-     *     ResourceArn?: string,
-     *     Tags?: list<Tag>
+     *     ResourceArn?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

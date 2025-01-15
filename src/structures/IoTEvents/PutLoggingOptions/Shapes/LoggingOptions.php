@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $roleArn
  * @property 'ERROR'|'INFO'|'DEBUG' $level
  * @property bool $enabled
- * @property list<DetectorDebugOption> $detectorDebugOptions
+ * @property list<DetectorDebugOption>|null $detectorDebugOptions
  */
 class LoggingOptions extends Shape
 {
@@ -17,7 +17,7 @@ class LoggingOptions extends Shape
      *     roleArn: string,
      *     level: 'ERROR'|'INFO'|'DEBUG',
      *     enabled: bool,
-     *     detectorDebugOptions?: list<DetectorDebugOption>
+     *     detectorDebugOptions?: list<DetectorDebugOption>|null
      * } $args
      */
     public function __construct(array $args)

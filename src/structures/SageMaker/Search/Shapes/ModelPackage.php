@@ -5,73 +5,73 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ModelPackageName
- * @property string $ModelPackageGroupName
- * @property int<1, max> $ModelPackageVersion
- * @property string $ModelPackageArn
- * @property string $ModelPackageDescription
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property InferenceSpecification $InferenceSpecification
- * @property SourceAlgorithmSpecification $SourceAlgorithmSpecification
- * @property ModelPackageValidationSpecification $ValidationSpecification
- * @property 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting' $ModelPackageStatus
- * @property ModelPackageStatusDetails $ModelPackageStatusDetails
- * @property bool $CertifyForMarketplace
- * @property 'Approved'|'Rejected'|'PendingManualApproval' $ModelApprovalStatus
- * @property UserContext $CreatedBy
- * @property MetadataProperties $MetadataProperties
- * @property ModelMetrics $ModelMetrics
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property UserContext $LastModifiedBy
- * @property string $ApprovalDescription
- * @property string $Domain
- * @property string $Task
- * @property string $SamplePayloadUrl
- * @property list<AdditionalInferenceSpecificationDefinition> $AdditionalInferenceSpecifications
- * @property string $SourceUri
- * @property ModelPackageSecurityConfig $SecurityConfig
- * @property ModelPackageModelCard $ModelCard
- * @property ModelLifeCycle $ModelLifeCycle
- * @property list<Tag> $Tags
- * @property array<string, string> $CustomerMetadataProperties
- * @property DriftCheckBaselines $DriftCheckBaselines
- * @property 'All'|'None' $SkipModelValidation
+ * @property string|null $ModelPackageName
+ * @property string|null $ModelPackageGroupName
+ * @property int<1, max>|null $ModelPackageVersion
+ * @property string|null $ModelPackageArn
+ * @property string|null $ModelPackageDescription
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property InferenceSpecification|null $InferenceSpecification
+ * @property SourceAlgorithmSpecification|null $SourceAlgorithmSpecification
+ * @property ModelPackageValidationSpecification|null $ValidationSpecification
+ * @property 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting'|null $ModelPackageStatus
+ * @property ModelPackageStatusDetails|null $ModelPackageStatusDetails
+ * @property bool|null $CertifyForMarketplace
+ * @property 'Approved'|'Rejected'|'PendingManualApproval'|null $ModelApprovalStatus
+ * @property UserContext|null $CreatedBy
+ * @property MetadataProperties|null $MetadataProperties
+ * @property ModelMetrics|null $ModelMetrics
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property UserContext|null $LastModifiedBy
+ * @property string|null $ApprovalDescription
+ * @property string|null $Domain
+ * @property string|null $Task
+ * @property string|null $SamplePayloadUrl
+ * @property list<AdditionalInferenceSpecificationDefinition>|null $AdditionalInferenceSpecifications
+ * @property string|null $SourceUri
+ * @property ModelPackageSecurityConfig|null $SecurityConfig
+ * @property ModelPackageModelCard|null $ModelCard
+ * @property ModelLifeCycle|null $ModelLifeCycle
+ * @property list<Tag>|null $Tags
+ * @property array<string, string>|null $CustomerMetadataProperties
+ * @property DriftCheckBaselines|null $DriftCheckBaselines
+ * @property 'All'|'None'|null $SkipModelValidation
  */
 class ModelPackage extends Shape
 {
     /**
      * @param array{
-     *     ModelPackageName?: string,
-     *     ModelPackageGroupName?: string,
-     *     ModelPackageVersion?: int<1, max>,
-     *     ModelPackageArn?: string,
-     *     ModelPackageDescription?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     InferenceSpecification?: InferenceSpecification,
-     *     SourceAlgorithmSpecification?: SourceAlgorithmSpecification,
-     *     ValidationSpecification?: ModelPackageValidationSpecification,
-     *     ModelPackageStatus?: 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting',
-     *     ModelPackageStatusDetails?: ModelPackageStatusDetails,
-     *     CertifyForMarketplace?: bool,
-     *     ModelApprovalStatus?: 'Approved'|'Rejected'|'PendingManualApproval',
-     *     CreatedBy?: UserContext,
-     *     MetadataProperties?: MetadataProperties,
-     *     ModelMetrics?: ModelMetrics,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedBy?: UserContext,
-     *     ApprovalDescription?: string,
-     *     Domain?: string,
-     *     Task?: string,
-     *     SamplePayloadUrl?: string,
-     *     AdditionalInferenceSpecifications?: list<AdditionalInferenceSpecificationDefinition>,
-     *     SourceUri?: string,
-     *     SecurityConfig?: ModelPackageSecurityConfig,
-     *     ModelCard?: ModelPackageModelCard,
-     *     ModelLifeCycle?: ModelLifeCycle,
-     *     Tags?: list<Tag>,
-     *     CustomerMetadataProperties?: array<string, string>,
-     *     DriftCheckBaselines?: DriftCheckBaselines,
-     *     SkipModelValidation?: 'All'|'None'
+     *     ModelPackageName?: string|null,
+     *     ModelPackageGroupName?: string|null,
+     *     ModelPackageVersion?: int<1, max>|null,
+     *     ModelPackageArn?: string|null,
+     *     ModelPackageDescription?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     InferenceSpecification?: InferenceSpecification|null,
+     *     SourceAlgorithmSpecification?: SourceAlgorithmSpecification|null,
+     *     ValidationSpecification?: ModelPackageValidationSpecification|null,
+     *     ModelPackageStatus?: 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting'|null,
+     *     ModelPackageStatusDetails?: ModelPackageStatusDetails|null,
+     *     CertifyForMarketplace?: bool|null,
+     *     ModelApprovalStatus?: 'Approved'|'Rejected'|'PendingManualApproval'|null,
+     *     CreatedBy?: UserContext|null,
+     *     MetadataProperties?: MetadataProperties|null,
+     *     ModelMetrics?: ModelMetrics|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedBy?: UserContext|null,
+     *     ApprovalDescription?: string|null,
+     *     Domain?: string|null,
+     *     Task?: string|null,
+     *     SamplePayloadUrl?: string|null,
+     *     AdditionalInferenceSpecifications?: list<AdditionalInferenceSpecificationDefinition>|null,
+     *     SourceUri?: string|null,
+     *     SecurityConfig?: ModelPackageSecurityConfig|null,
+     *     ModelCard?: ModelPackageModelCard|null,
+     *     ModelLifeCycle?: ModelLifeCycle|null,
+     *     Tags?: list<Tag>|null,
+     *     CustomerMetadataProperties?: array<string, string>|null,
+     *     DriftCheckBaselines?: DriftCheckBaselines|null,
+     *     SkipModelValidation?: 'All'|'None'|null
      * } $args
      */
     public function __construct(array $args = [])

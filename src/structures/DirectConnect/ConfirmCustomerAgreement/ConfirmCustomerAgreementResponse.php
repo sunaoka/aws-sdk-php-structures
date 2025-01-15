@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DirectConnect\ConfirmCustomerAgreement;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $status
+ * @property string|null $status
  */
 class ConfirmCustomerAgreementResponse extends Response
 {

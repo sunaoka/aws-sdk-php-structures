@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $DryRunId
- * @property bool $LoadDryRunConfig
+ * @property string|null $DryRunId
+ * @property bool|null $LoadDryRunConfig
  */
 class DescribeDryRunProgressRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     DryRunId?: string,
-     *     LoadDryRunConfig?: bool
+     *     DryRunId?: string|null,
+     *     LoadDryRunConfig?: bool|null
      * } $args
      */
     public function __construct(array $args)

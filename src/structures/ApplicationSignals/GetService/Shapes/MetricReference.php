@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Namespace
  * @property string $MetricType
- * @property list<Dimension> $Dimensions
+ * @property list<Dimension>|null $Dimensions
  * @property string $MetricName
  */
 class MetricReference extends Shape
@@ -16,7 +16,7 @@ class MetricReference extends Shape
      * @param array{
      *     Namespace: string,
      *     MetricType: string,
-     *     Dimensions?: list<Dimension>,
+     *     Dimensions?: list<Dimension>|null,
      *     MetricName: string
      * } $args
      */

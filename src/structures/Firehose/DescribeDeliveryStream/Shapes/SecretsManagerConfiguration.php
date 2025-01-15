@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Firehose\DescribeDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecretARN
- * @property string $RoleARN
+ * @property string|null $SecretARN
+ * @property string|null $RoleARN
  * @property bool $Enabled
  */
 class SecretsManagerConfiguration extends Shape
 {
     /**
      * @param array{
-     *     SecretARN?: string,
-     *     RoleARN?: string,
+     *     SecretARN?: string|null,
+     *     RoleARN?: string|null,
      *     Enabled: bool
      * } $args
      */

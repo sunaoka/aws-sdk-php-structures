@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $caseId
  * @property Shapes\RelatedItemInputContent $content
  * @property string $domainId
- * @property Shapes\UserUnion $performedBy
+ * @property Shapes\UserUnion|null $performedBy
  * @property 'Contact'|'Comment'|'File' $type
  */
 class CreateRelatedItemRequest extends Request
@@ -18,7 +18,7 @@ class CreateRelatedItemRequest extends Request
      *     caseId: string,
      *     content: Shapes\RelatedItemInputContent,
      *     domainId: string,
-     *     performedBy?: Shapes\UserUnion,
+     *     performedBy?: Shapes\UserUnion|null,
      *     type: 'Contact'|'Comment'|'File'
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\AddEntityOwner\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OwnerGroupProperties $group
- * @property OwnerUserProperties $user
+ * @property OwnerGroupProperties|null $group
+ * @property OwnerUserProperties|null $user
  */
 class OwnerProperties extends Shape
 {
     /**
      * @param array{
-     *     group?: OwnerGroupProperties,
-     *     user?: OwnerUserProperties
+     *     group?: OwnerGroupProperties|null,
+     *     user?: OwnerUserProperties|null
      * } $args
      */
     public function __construct(array $args = [])

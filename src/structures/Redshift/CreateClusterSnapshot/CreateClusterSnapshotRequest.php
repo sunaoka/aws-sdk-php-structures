@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SnapshotIdentifier
  * @property string $ClusterIdentifier
- * @property int $ManualSnapshotRetentionPeriod
- * @property list<Shapes\Tag> $Tags
+ * @property int|null $ManualSnapshotRetentionPeriod
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateClusterSnapshotRequest extends Request
 {
@@ -16,8 +16,8 @@ class CreateClusterSnapshotRequest extends Request
      * @param array{
      *     SnapshotIdentifier: string,
      *     ClusterIdentifier: string,
-     *     ManualSnapshotRetentionPeriod?: int,
-     *     Tags?: list<Shapes\Tag>
+     *     ManualSnapshotRetentionPeriod?: int|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

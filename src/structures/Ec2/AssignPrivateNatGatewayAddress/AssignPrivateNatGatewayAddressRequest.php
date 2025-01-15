@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NatGatewayId
- * @property list<string> $PrivateIpAddresses
- * @property int<1, 31> $PrivateIpAddressCount
- * @property bool $DryRun
+ * @property list<string>|null $PrivateIpAddresses
+ * @property int<1, 31>|null $PrivateIpAddressCount
+ * @property bool|null $DryRun
  */
 class AssignPrivateNatGatewayAddressRequest extends Request
 {
     /**
      * @param array{
      *     NatGatewayId: string,
-     *     PrivateIpAddresses?: list<string>,
-     *     PrivateIpAddressCount?: int<1, 31>,
-     *     DryRun?: bool
+     *     PrivateIpAddresses?: list<string>|null,
+     *     PrivateIpAddressCount?: int<1, 31>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

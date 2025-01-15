@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $Name
- * @property string $ClientSessionId
+ * @property string|null $ClientSessionId
  */
 class StartProjectSessionResponse extends Response
 {

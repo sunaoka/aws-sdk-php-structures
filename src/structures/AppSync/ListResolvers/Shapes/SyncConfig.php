@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppSync\ListResolvers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'OPTIMISTIC_CONCURRENCY'|'LAMBDA'|'AUTOMERGE'|'NONE' $conflictHandler
- * @property 'VERSION'|'NONE' $conflictDetection
- * @property LambdaConflictHandlerConfig $lambdaConflictHandlerConfig
+ * @property 'OPTIMISTIC_CONCURRENCY'|'LAMBDA'|'AUTOMERGE'|'NONE'|null $conflictHandler
+ * @property 'VERSION'|'NONE'|null $conflictDetection
+ * @property LambdaConflictHandlerConfig|null $lambdaConflictHandlerConfig
  */
 class SyncConfig extends Shape
 {
     /**
      * @param array{
-     *     conflictHandler?: 'OPTIMISTIC_CONCURRENCY'|'LAMBDA'|'AUTOMERGE'|'NONE',
-     *     conflictDetection?: 'VERSION'|'NONE',
-     *     lambdaConflictHandlerConfig?: LambdaConflictHandlerConfig
+     *     conflictHandler?: 'OPTIMISTIC_CONCURRENCY'|'LAMBDA'|'AUTOMERGE'|'NONE'|null,
+     *     conflictDetection?: 'VERSION'|'NONE'|null,
+     *     lambdaConflictHandlerConfig?: LambdaConflictHandlerConfig|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetWorkflowRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $JobName
- * @property string $RunId
+ * @property string|null $JobName
+ * @property string|null $RunId
  */
 class Predecessor extends Shape
 {
     /**
      * @param array{
-     *     JobName?: string,
-     *     RunId?: string
+     *     JobName?: string|null,
+     *     RunId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\LakeFormation\BatchRevokePermissions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property list<Shapes\BatchPermissionsRequestEntry> $Entries
  */
 class BatchRevokePermissionsRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     Entries: list<Shapes\BatchPermissionsRequestEntry>
      * } $args
      */

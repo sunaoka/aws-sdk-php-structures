@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $introspectionId
- * @property bool $includeModelsSDL
- * @property string $nextToken
- * @property int<0, 25> $maxResults
+ * @property bool|null $includeModelsSDL
+ * @property string|null $nextToken
+ * @property int<0, 25>|null $maxResults
  */
 class GetDataSourceIntrospectionRequest extends Request
 {
     /**
      * @param array{
      *     introspectionId: string,
-     *     includeModelsSDL?: bool,
-     *     nextToken?: string,
-     *     maxResults?: int<0, 25>
+     *     includeModelsSDL?: bool|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<0, 25>|null
      * } $args
      */
     public function __construct(array $args)

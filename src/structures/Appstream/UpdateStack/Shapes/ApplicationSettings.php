@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property string $SettingsGroup
+ * @property string|null $SettingsGroup
  */
 class ApplicationSettings extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     SettingsGroup?: string
+     *     SettingsGroup?: string|null
      * } $args
      */
     public function __construct(array $args)

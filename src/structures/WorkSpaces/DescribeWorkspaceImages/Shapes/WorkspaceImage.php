@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeWorkspaceImages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ImageId
- * @property string $Name
- * @property string $Description
- * @property OperatingSystem $OperatingSystem
- * @property 'AVAILABLE'|'PENDING'|'ERROR' $State
- * @property 'DEFAULT'|'DEDICATED' $RequiredTenancy
- * @property string $ErrorCode
- * @property string $ErrorMessage
- * @property \Aws\Api\DateTimeResult $Created
- * @property string $OwnerAccountId
- * @property UpdateResult $Updates
- * @property list<ErrorDetails> $ErrorDetails
+ * @property string|null $ImageId
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property OperatingSystem|null $OperatingSystem
+ * @property 'AVAILABLE'|'PENDING'|'ERROR'|null $State
+ * @property 'DEFAULT'|'DEDICATED'|null $RequiredTenancy
+ * @property string|null $ErrorCode
+ * @property string|null $ErrorMessage
+ * @property \Aws\Api\DateTimeResult|null $Created
+ * @property string|null $OwnerAccountId
+ * @property UpdateResult|null $Updates
+ * @property list<ErrorDetails>|null $ErrorDetails
  */
 class WorkspaceImage extends Shape
 {
     /**
      * @param array{
-     *     ImageId?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     OperatingSystem?: OperatingSystem,
-     *     State?: 'AVAILABLE'|'PENDING'|'ERROR',
-     *     RequiredTenancy?: 'DEFAULT'|'DEDICATED',
-     *     ErrorCode?: string,
-     *     ErrorMessage?: string,
-     *     Created?: \Aws\Api\DateTimeResult,
-     *     OwnerAccountId?: string,
-     *     Updates?: UpdateResult,
-     *     ErrorDetails?: list<ErrorDetails>
+     *     ImageId?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     OperatingSystem?: OperatingSystem|null,
+     *     State?: 'AVAILABLE'|'PENDING'|'ERROR'|null,
+     *     RequiredTenancy?: 'DEFAULT'|'DEDICATED'|null,
+     *     ErrorCode?: string|null,
+     *     ErrorMessage?: string|null,
+     *     Created?: \Aws\Api\DateTimeResult|null,
+     *     OwnerAccountId?: string|null,
+     *     Updates?: UpdateResult|null,
+     *     ErrorDetails?: list<ErrorDetails>|null
      * } $args
      */
     public function __construct(array $args = [])

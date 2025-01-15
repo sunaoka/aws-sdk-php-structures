@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Uri
  * @property 'HEALTHY'|'UNHEALTHY' $Status
- * @property \Aws\Api\DateTimeResult $UnhealthySince
- * @property string $Message
+ * @property \Aws\Api\DateTimeResult|null $UnhealthySince
+ * @property string|null $Message
  */
 class EventStreamDestinationDetails extends Shape
 {
@@ -16,8 +16,8 @@ class EventStreamDestinationDetails extends Shape
      * @param array{
      *     Uri: string,
      *     Status: 'HEALTHY'|'UNHEALTHY',
-     *     UnhealthySince?: \Aws\Api\DateTimeResult,
-     *     Message?: string
+     *     UnhealthySince?: \Aws\Api\DateTimeResult|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args)

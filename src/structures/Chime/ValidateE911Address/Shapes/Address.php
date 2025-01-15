@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Chime\ValidateE911Address\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $streetName
- * @property string $streetSuffix
- * @property string $postDirectional
- * @property string $preDirectional
- * @property string $streetNumber
- * @property string $city
- * @property string $state
- * @property string $postalCode
- * @property string $postalCodePlus4
- * @property string $country
+ * @property string|null $streetName
+ * @property string|null $streetSuffix
+ * @property string|null $postDirectional
+ * @property string|null $preDirectional
+ * @property string|null $streetNumber
+ * @property string|null $city
+ * @property string|null $state
+ * @property string|null $postalCode
+ * @property string|null $postalCodePlus4
+ * @property string|null $country
  */
 class Address extends Shape
 {
     /**
      * @param array{
-     *     streetName?: string,
-     *     streetSuffix?: string,
-     *     postDirectional?: string,
-     *     preDirectional?: string,
-     *     streetNumber?: string,
-     *     city?: string,
-     *     state?: string,
-     *     postalCode?: string,
-     *     postalCodePlus4?: string,
-     *     country?: string
+     *     streetName?: string|null,
+     *     streetSuffix?: string|null,
+     *     postDirectional?: string|null,
+     *     preDirectional?: string|null,
+     *     streetNumber?: string|null,
+     *     city?: string|null,
+     *     state?: string|null,
+     *     postalCode?: string|null,
+     *     postalCodePlus4?: string|null,
+     *     country?: string|null
      * } $args
      */
     public function __construct(array $args = [])

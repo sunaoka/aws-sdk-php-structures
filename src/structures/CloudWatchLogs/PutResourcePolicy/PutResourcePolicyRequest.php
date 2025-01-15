@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\PutResourcePolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $policyName
- * @property string $policyDocument
+ * @property string|null $policyName
+ * @property string|null $policyDocument
  */
 class PutResourcePolicyRequest extends Request
 {
     /**
      * @param array{
-     *     policyName?: string,
-     *     policyDocument?: string
+     *     policyName?: string|null,
+     *     policyDocument?: string|null
      * } $args
      */
     public function __construct(array $args = [])

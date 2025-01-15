@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\CodeGuruReviewer\ListCodeReviews\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $CodeReviewArn
- * @property string $RepositoryName
- * @property string $Owner
- * @property 'CodeCommit'|'GitHub'|'Bitbucket'|'GitHubEnterpriseServer'|'S3Bucket' $ProviderType
- * @property 'Completed'|'Pending'|'Failed'|'Deleting' $State
- * @property \Aws\Api\DateTimeResult $CreatedTimeStamp
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimeStamp
- * @property 'PullRequest'|'RepositoryAnalysis' $Type
- * @property string $PullRequestId
- * @property MetricsSummary $MetricsSummary
- * @property SourceCodeType $SourceCodeType
+ * @property string|null $Name
+ * @property string|null $CodeReviewArn
+ * @property string|null $RepositoryName
+ * @property string|null $Owner
+ * @property 'CodeCommit'|'GitHub'|'Bitbucket'|'GitHubEnterpriseServer'|'S3Bucket'|null $ProviderType
+ * @property 'Completed'|'Pending'|'Failed'|'Deleting'|null $State
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimeStamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimeStamp
+ * @property 'PullRequest'|'RepositoryAnalysis'|null $Type
+ * @property string|null $PullRequestId
+ * @property MetricsSummary|null $MetricsSummary
+ * @property SourceCodeType|null $SourceCodeType
  */
 class CodeReviewSummary extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     CodeReviewArn?: string,
-     *     RepositoryName?: string,
-     *     Owner?: string,
-     *     ProviderType?: 'CodeCommit'|'GitHub'|'Bitbucket'|'GitHubEnterpriseServer'|'S3Bucket',
-     *     State?: 'Completed'|'Pending'|'Failed'|'Deleting',
-     *     CreatedTimeStamp?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTimeStamp?: \Aws\Api\DateTimeResult,
-     *     Type?: 'PullRequest'|'RepositoryAnalysis',
-     *     PullRequestId?: string,
-     *     MetricsSummary?: MetricsSummary,
-     *     SourceCodeType?: SourceCodeType
+     *     Name?: string|null,
+     *     CodeReviewArn?: string|null,
+     *     RepositoryName?: string|null,
+     *     Owner?: string|null,
+     *     ProviderType?: 'CodeCommit'|'GitHub'|'Bitbucket'|'GitHubEnterpriseServer'|'S3Bucket'|null,
+     *     State?: 'Completed'|'Pending'|'Failed'|'Deleting'|null,
+     *     CreatedTimeStamp?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTimeStamp?: \Aws\Api\DateTimeResult|null,
+     *     Type?: 'PullRequest'|'RepositoryAnalysis'|null,
+     *     PullRequestId?: string|null,
+     *     MetricsSummary?: MetricsSummary|null,
+     *     SourceCodeType?: SourceCodeType|null
      * } $args
      */
     public function __construct(array $args = [])

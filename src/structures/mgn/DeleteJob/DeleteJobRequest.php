@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\mgn\DeleteJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $accountID
+ * @property string|null $accountID
  * @property string $jobID
  */
 class DeleteJobRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string,
+     *     accountID?: string|null,
      *     jobID: string
      * } $args
      */

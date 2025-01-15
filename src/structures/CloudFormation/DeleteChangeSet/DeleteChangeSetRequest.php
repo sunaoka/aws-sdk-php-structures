@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChangeSetName
- * @property string $StackName
+ * @property string|null $StackName
  */
 class DeleteChangeSetRequest extends Request
 {
     /**
      * @param array{
      *     ChangeSetName: string,
-     *     StackName?: string
+     *     StackName?: string|null
      * } $args
      */
     public function __construct(array $args)

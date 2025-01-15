@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Bucket
  * @property Shapes\BucketLoggingStatus $BucketLoggingStatus
- * @property string $ContentMD5
- * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256' $ChecksumAlgorithm
- * @property string $ExpectedBucketOwner
+ * @property string|null $ContentMD5
+ * @property 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null $ChecksumAlgorithm
+ * @property string|null $ExpectedBucketOwner
  */
 class PutBucketLoggingRequest extends Request
 {
@@ -17,9 +17,9 @@ class PutBucketLoggingRequest extends Request
      * @param array{
      *     Bucket: string,
      *     BucketLoggingStatus: Shapes\BucketLoggingStatus,
-     *     ContentMD5?: string,
-     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256',
-     *     ExpectedBucketOwner?: string
+     *     ContentMD5?: string|null,
+     *     ChecksumAlgorithm?: 'CRC32'|'CRC32C'|'SHA1'|'SHA256'|null,
+     *     ExpectedBucketOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

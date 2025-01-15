@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\ListLifecyclePolicies\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $createdDate
- * @property string $description
- * @property int $lastModifiedDate
- * @property string $name
- * @property string $policyVersion
- * @property 'retention' $type
+ * @property int|null $createdDate
+ * @property string|null $description
+ * @property int|null $lastModifiedDate
+ * @property string|null $name
+ * @property string|null $policyVersion
+ * @property 'retention'|null $type
  */
 class LifecyclePolicySummary extends Shape
 {
     /**
      * @param array{
-     *     createdDate?: int,
-     *     description?: string,
-     *     lastModifiedDate?: int,
-     *     name?: string,
-     *     policyVersion?: string,
-     *     type?: 'retention'
+     *     createdDate?: int|null,
+     *     description?: string|null,
+     *     lastModifiedDate?: int|null,
+     *     name?: string|null,
+     *     policyVersion?: string|null,
+     *     type?: 'retention'|null
      * } $args
      */
     public function __construct(array $args = [])

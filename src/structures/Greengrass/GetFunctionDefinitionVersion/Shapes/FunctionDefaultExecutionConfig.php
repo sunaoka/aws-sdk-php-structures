@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Greengrass\GetFunctionDefinitionVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'GreengrassContainer'|'NoContainer' $IsolationMode
- * @property FunctionRunAsConfig $RunAs
+ * @property 'GreengrassContainer'|'NoContainer'|null $IsolationMode
+ * @property FunctionRunAsConfig|null $RunAs
  */
 class FunctionDefaultExecutionConfig extends Shape
 {
     /**
      * @param array{
-     *     IsolationMode?: 'GreengrassContainer'|'NoContainer',
-     *     RunAs?: FunctionRunAsConfig
+     *     IsolationMode?: 'GreengrassContainer'|'NoContainer'|null,
+     *     RunAs?: FunctionRunAsConfig|null
      * } $args
      */
     public function __construct(array $args = [])

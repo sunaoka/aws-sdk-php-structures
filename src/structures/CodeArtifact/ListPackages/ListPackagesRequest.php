@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
+ * @property string|null $domainOwner
  * @property string $repository
- * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo' $format
- * @property string $namespace
- * @property string $packagePrefix
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
- * @property 'ALLOW'|'BLOCK' $publish
- * @property 'ALLOW'|'BLOCK' $upstream
+ * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null $format
+ * @property string|null $namespace
+ * @property string|null $packagePrefix
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
+ * @property 'ALLOW'|'BLOCK'|null $publish
+ * @property 'ALLOW'|'BLOCK'|null $upstream
  */
 class ListPackagesRequest extends Request
 {
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string,
+     *     domainOwner?: string|null,
      *     repository: string,
-     *     format?: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo',
-     *     namespace?: string,
-     *     packagePrefix?: string,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string,
-     *     publish?: 'ALLOW'|'BLOCK',
-     *     upstream?: 'ALLOW'|'BLOCK'
+     *     format?: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null,
+     *     namespace?: string|null,
+     *     packagePrefix?: string|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null,
+     *     publish?: 'ALLOW'|'BLOCK'|null,
+     *     upstream?: 'ALLOW'|'BLOCK'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostExplorer\CreateCostCategoryDefinition\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
- * @property Expression $Rule
- * @property CostCategoryInheritedValueDimension $InheritedValue
- * @property 'REGULAR'|'INHERITED_VALUE' $Type
+ * @property string|null $Value
+ * @property Expression|null $Rule
+ * @property CostCategoryInheritedValueDimension|null $InheritedValue
+ * @property 'REGULAR'|'INHERITED_VALUE'|null $Type
  */
 class CostCategoryRule extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
-     *     Rule?: Expression,
-     *     InheritedValue?: CostCategoryInheritedValueDimension,
-     *     Type?: 'REGULAR'|'INHERITED_VALUE'
+     *     Value?: string|null,
+     *     Rule?: Expression|null,
+     *     InheritedValue?: CostCategoryInheritedValueDimension|null,
+     *     Type?: 'REGULAR'|'INHERITED_VALUE'|null
      * } $args
      */
     public function __construct(array $args = [])

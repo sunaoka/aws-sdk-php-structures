@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Ec2\RunScheduledInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ScheduledInstancesBlockDeviceMapping> $BlockDeviceMappings
- * @property bool $EbsOptimized
- * @property ScheduledInstancesIamInstanceProfile $IamInstanceProfile
+ * @property list<ScheduledInstancesBlockDeviceMapping>|null $BlockDeviceMappings
+ * @property bool|null $EbsOptimized
+ * @property ScheduledInstancesIamInstanceProfile|null $IamInstanceProfile
  * @property string $ImageId
- * @property string $InstanceType
- * @property string $KernelId
- * @property string $KeyName
- * @property ScheduledInstancesMonitoring $Monitoring
- * @property list<ScheduledInstancesNetworkInterface> $NetworkInterfaces
- * @property ScheduledInstancesPlacement $Placement
- * @property string $RamdiskId
- * @property list<string> $SecurityGroupIds
- * @property string $SubnetId
- * @property string $UserData
+ * @property string|null $InstanceType
+ * @property string|null $KernelId
+ * @property string|null $KeyName
+ * @property ScheduledInstancesMonitoring|null $Monitoring
+ * @property list<ScheduledInstancesNetworkInterface>|null $NetworkInterfaces
+ * @property ScheduledInstancesPlacement|null $Placement
+ * @property string|null $RamdiskId
+ * @property list<string>|null $SecurityGroupIds
+ * @property string|null $SubnetId
+ * @property string|null $UserData
  */
 class ScheduledInstancesLaunchSpecification extends Shape
 {
     /**
      * @param array{
-     *     BlockDeviceMappings?: list<ScheduledInstancesBlockDeviceMapping>,
-     *     EbsOptimized?: bool,
-     *     IamInstanceProfile?: ScheduledInstancesIamInstanceProfile,
+     *     BlockDeviceMappings?: list<ScheduledInstancesBlockDeviceMapping>|null,
+     *     EbsOptimized?: bool|null,
+     *     IamInstanceProfile?: ScheduledInstancesIamInstanceProfile|null,
      *     ImageId: string,
-     *     InstanceType?: string,
-     *     KernelId?: string,
-     *     KeyName?: string,
-     *     Monitoring?: ScheduledInstancesMonitoring,
-     *     NetworkInterfaces?: list<ScheduledInstancesNetworkInterface>,
-     *     Placement?: ScheduledInstancesPlacement,
-     *     RamdiskId?: string,
-     *     SecurityGroupIds?: list<string>,
-     *     SubnetId?: string,
-     *     UserData?: string
+     *     InstanceType?: string|null,
+     *     KernelId?: string|null,
+     *     KeyName?: string|null,
+     *     Monitoring?: ScheduledInstancesMonitoring|null,
+     *     NetworkInterfaces?: list<ScheduledInstancesNetworkInterface>|null,
+     *     Placement?: ScheduledInstancesPlacement|null,
+     *     RamdiskId?: string|null,
+     *     SecurityGroupIds?: list<string>|null,
+     *     SubnetId?: string|null,
+     *     UserData?: string|null
      * } $args
      */
     public function __construct(array $args)

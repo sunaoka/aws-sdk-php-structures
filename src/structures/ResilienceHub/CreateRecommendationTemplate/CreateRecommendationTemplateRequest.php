@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assessmentArn
- * @property string $bucketName
- * @property string $clientToken
- * @property 'CfnYaml'|'CfnJson' $format
+ * @property string|null $bucketName
+ * @property string|null $clientToken
+ * @property 'CfnYaml'|'CfnJson'|null $format
  * @property string $name
- * @property list<string> $recommendationIds
- * @property list<'Alarm'|'Sop'|'Test'> $recommendationTypes
- * @property array<string, string> $tags
+ * @property list<string>|null $recommendationIds
+ * @property list<'Alarm'|'Sop'|'Test'>|null $recommendationTypes
+ * @property array<string, string>|null $tags
  */
 class CreateRecommendationTemplateRequest extends Request
 {
     /**
      * @param array{
      *     assessmentArn: string,
-     *     bucketName?: string,
-     *     clientToken?: string,
-     *     format?: 'CfnYaml'|'CfnJson',
+     *     bucketName?: string|null,
+     *     clientToken?: string|null,
+     *     format?: 'CfnYaml'|'CfnJson'|null,
      *     name: string,
-     *     recommendationIds?: list<string>,
-     *     recommendationTypes?: list<'Alarm'|'Sop'|'Test'>,
-     *     tags?: array<string, string>
+     *     recommendationIds?: list<string>|null,
+     *     recommendationTypes?: list<'Alarm'|'Sop'|'Test'>|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $datasetGroupArn
  * @property Shapes\DataSource $dataSource
  * @property string $roleArn
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateDataDeletionJobRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreateDataDeletionJobRequest extends Request
      *     datasetGroupArn: string,
      *     dataSource: Shapes\DataSource,
      *     roleArn: string,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

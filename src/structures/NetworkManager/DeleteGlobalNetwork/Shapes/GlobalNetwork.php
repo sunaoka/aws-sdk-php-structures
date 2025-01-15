@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\NetworkManager\DeleteGlobalNetwork\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GlobalNetworkId
- * @property string $GlobalNetworkArn
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING' $State
- * @property list<Tag> $Tags
+ * @property string|null $GlobalNetworkId
+ * @property string|null $GlobalNetworkArn
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING'|null $State
+ * @property list<Tag>|null $Tags
  */
 class GlobalNetwork extends Shape
 {
     /**
      * @param array{
-     *     GlobalNetworkId?: string,
-     *     GlobalNetworkArn?: string,
-     *     Description?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     State?: 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING',
-     *     Tags?: list<Tag>
+     *     GlobalNetworkId?: string|null,
+     *     GlobalNetworkArn?: string|null,
+     *     Description?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     State?: 'PENDING'|'AVAILABLE'|'DELETING'|'UPDATING'|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

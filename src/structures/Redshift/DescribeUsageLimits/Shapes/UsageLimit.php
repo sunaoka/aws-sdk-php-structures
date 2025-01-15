@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeUsageLimits\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UsageLimitId
- * @property string $ClusterIdentifier
- * @property 'spectrum'|'concurrency-scaling'|'cross-region-datasharing' $FeatureType
- * @property 'time'|'data-scanned' $LimitType
- * @property int $Amount
- * @property 'daily'|'weekly'|'monthly' $Period
- * @property 'log'|'emit-metric'|'disable' $BreachAction
- * @property list<Tag> $Tags
+ * @property string|null $UsageLimitId
+ * @property string|null $ClusterIdentifier
+ * @property 'spectrum'|'concurrency-scaling'|'cross-region-datasharing'|null $FeatureType
+ * @property 'time'|'data-scanned'|null $LimitType
+ * @property int|null $Amount
+ * @property 'daily'|'weekly'|'monthly'|null $Period
+ * @property 'log'|'emit-metric'|'disable'|null $BreachAction
+ * @property list<Tag>|null $Tags
  */
 class UsageLimit extends Shape
 {
     /**
      * @param array{
-     *     UsageLimitId?: string,
-     *     ClusterIdentifier?: string,
-     *     FeatureType?: 'spectrum'|'concurrency-scaling'|'cross-region-datasharing',
-     *     LimitType?: 'time'|'data-scanned',
-     *     Amount?: int,
-     *     Period?: 'daily'|'weekly'|'monthly',
-     *     BreachAction?: 'log'|'emit-metric'|'disable',
-     *     Tags?: list<Tag>
+     *     UsageLimitId?: string|null,
+     *     ClusterIdentifier?: string|null,
+     *     FeatureType?: 'spectrum'|'concurrency-scaling'|'cross-region-datasharing'|null,
+     *     LimitType?: 'time'|'data-scanned'|null,
+     *     Amount?: int|null,
+     *     Period?: 'daily'|'weekly'|'monthly'|null,
+     *     BreachAction?: 'log'|'emit-metric'|'disable'|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

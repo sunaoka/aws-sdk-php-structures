@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\mgn\ArchiveWave;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $arn
- * @property string $creationDateTime
- * @property string $description
- * @property bool $isArchived
- * @property string $lastModifiedDateTime
- * @property string $name
- * @property array<string, string> $tags
- * @property Shapes\WaveAggregatedStatus $waveAggregatedStatus
- * @property string $waveID
+ * @property string|null $arn
+ * @property string|null $creationDateTime
+ * @property string|null $description
+ * @property bool|null $isArchived
+ * @property string|null $lastModifiedDateTime
+ * @property string|null $name
+ * @property array<string, string>|null $tags
+ * @property Shapes\WaveAggregatedStatus|null $waveAggregatedStatus
+ * @property string|null $waveID
  */
 class ArchiveWaveResponse extends Response
 {

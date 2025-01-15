@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MailManager\GetRuleSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CONTINUE'|'DROP' $ActionFailurePolicy
+ * @property 'CONTINUE'|'DROP'|null $ActionFailurePolicy
  * @property string $RoleArn
  */
 class SendAction extends Shape
 {
     /**
      * @param array{
-     *     ActionFailurePolicy?: 'CONTINUE'|'DROP',
+     *     ActionFailurePolicy?: 'CONTINUE'|'DROP'|null,
      *     RoleArn: string
      * } $args
      */

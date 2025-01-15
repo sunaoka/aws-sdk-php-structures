@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteTransitGatewayPeeringAttachment\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayId
- * @property string $CoreNetworkId
- * @property string $OwnerId
- * @property string $Region
+ * @property string|null $TransitGatewayId
+ * @property string|null $CoreNetworkId
+ * @property string|null $OwnerId
+ * @property string|null $Region
  */
 class PeeringTgwInfo extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayId?: string,
-     *     CoreNetworkId?: string,
-     *     OwnerId?: string,
-     *     Region?: string
+     *     TransitGatewayId?: string|null,
+     *     CoreNetworkId?: string|null,
+     *     OwnerId?: string|null,
+     *     Region?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Swf\PollForDecisionTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $result
+ * @property string|null $result
  * @property int $decisionTaskCompletedEventId
  */
 class WorkflowExecutionCompletedEventAttributes extends Shape
 {
     /**
      * @param array{
-     *     result?: string,
+     *     result?: string|null,
      *     decisionTaskCompletedEventId: int
      * } $args
      */

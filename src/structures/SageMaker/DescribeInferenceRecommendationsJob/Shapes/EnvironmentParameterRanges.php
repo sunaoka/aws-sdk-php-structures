@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeInferenceRecommendationsJob\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<CategoricalParameter> $CategoricalParameterRanges
+ * @property list<CategoricalParameter>|null $CategoricalParameterRanges
  */
 class EnvironmentParameterRanges extends Shape
 {
     /**
-     * @param array{CategoricalParameterRanges?: list<CategoricalParameter>} $args
+     * @param array{CategoricalParameterRanges?: list<CategoricalParameter>|null} $args
      */
     public function __construct(array $args = [])
     {

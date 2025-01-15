@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $vehicleName
- * @property string $modelManifestArn
- * @property string $decoderManifestArn
- * @property array<string, string> $attributes
- * @property 'Overwrite'|'Merge' $attributeUpdateMode
- * @property list<Shapes\StateTemplateAssociation> $stateTemplatesToAdd
- * @property list<string> $stateTemplatesToRemove
+ * @property string|null $modelManifestArn
+ * @property string|null $decoderManifestArn
+ * @property array<string, string>|null $attributes
+ * @property 'Overwrite'|'Merge'|null $attributeUpdateMode
+ * @property list<Shapes\StateTemplateAssociation>|null $stateTemplatesToAdd
+ * @property list<string>|null $stateTemplatesToRemove
  */
 class UpdateVehicleRequest extends Request
 {
     /**
      * @param array{
      *     vehicleName: string,
-     *     modelManifestArn?: string,
-     *     decoderManifestArn?: string,
-     *     attributes?: array<string, string>,
-     *     attributeUpdateMode?: 'Overwrite'|'Merge',
-     *     stateTemplatesToAdd?: list<Shapes\StateTemplateAssociation>,
-     *     stateTemplatesToRemove?: list<string>
+     *     modelManifestArn?: string|null,
+     *     decoderManifestArn?: string|null,
+     *     attributes?: array<string, string>|null,
+     *     attributeUpdateMode?: 'Overwrite'|'Merge'|null,
+     *     stateTemplatesToAdd?: list<Shapes\StateTemplateAssociation>|null,
+     *     stateTemplatesToRemove?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

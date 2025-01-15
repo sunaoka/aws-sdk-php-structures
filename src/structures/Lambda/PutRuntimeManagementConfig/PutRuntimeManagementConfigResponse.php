@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property 'Auto'|'Manual'|'FunctionUpdate' $UpdateRuntimeOn
  * @property string $FunctionArn
- * @property string $RuntimeVersionArn
+ * @property string|null $RuntimeVersionArn
  */
 class PutRuntimeManagementConfigResponse extends Response
 {

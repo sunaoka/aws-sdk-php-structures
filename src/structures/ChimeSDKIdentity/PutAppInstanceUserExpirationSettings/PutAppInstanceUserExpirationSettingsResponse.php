@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\PutAppInstanceUserExpirationSe
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AppInstanceUserArn
- * @property Shapes\ExpirationSettings $ExpirationSettings
+ * @property string|null $AppInstanceUserArn
+ * @property Shapes\ExpirationSettings|null $ExpirationSettings
  */
 class PutAppInstanceUserExpirationSettingsResponse extends Response
 {

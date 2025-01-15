@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\GetAudienceGenerationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property WorkerComputeConfiguration $worker
+ * @property WorkerComputeConfiguration|null $worker
  */
 class ComputeConfiguration extends Shape
 {
     /**
-     * @param array{worker?: WorkerComputeConfiguration} $args
+     * @param array{worker?: WorkerComputeConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

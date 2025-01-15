@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsElasticsearchDomainLogPublishingOptionsLogConfig $IndexSlowLogs
- * @property AwsElasticsearchDomainLogPublishingOptionsLogConfig $SearchSlowLogs
- * @property AwsElasticsearchDomainLogPublishingOptionsLogConfig $AuditLogs
+ * @property AwsElasticsearchDomainLogPublishingOptionsLogConfig|null $IndexSlowLogs
+ * @property AwsElasticsearchDomainLogPublishingOptionsLogConfig|null $SearchSlowLogs
+ * @property AwsElasticsearchDomainLogPublishingOptionsLogConfig|null $AuditLogs
  */
 class AwsElasticsearchDomainLogPublishingOptions extends Shape
 {
     /**
      * @param array{
-     *     IndexSlowLogs?: AwsElasticsearchDomainLogPublishingOptionsLogConfig,
-     *     SearchSlowLogs?: AwsElasticsearchDomainLogPublishingOptionsLogConfig,
-     *     AuditLogs?: AwsElasticsearchDomainLogPublishingOptionsLogConfig
+     *     IndexSlowLogs?: AwsElasticsearchDomainLogPublishingOptionsLogConfig|null,
+     *     SearchSlowLogs?: AwsElasticsearchDomainLogPublishingOptionsLogConfig|null,
+     *     AuditLogs?: AwsElasticsearchDomainLogPublishingOptionsLogConfig|null
      * } $args
      */
     public function __construct(array $args = [])

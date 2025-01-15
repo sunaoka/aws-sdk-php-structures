@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $PackageName
  * @property 'TXT-DICTIONARY'|'ZIP-PLUGIN'|'PACKAGE-LICENSE'|'PACKAGE-CONFIG' $PackageType
- * @property string $PackageDescription
+ * @property string|null $PackageDescription
  * @property Shapes\PackageSource $PackageSource
- * @property Shapes\PackageConfiguration $PackageConfiguration
- * @property string $EngineVersion
- * @property Shapes\PackageVendingOptions $PackageVendingOptions
- * @property Shapes\PackageEncryptionOptions $PackageEncryptionOptions
+ * @property Shapes\PackageConfiguration|null $PackageConfiguration
+ * @property string|null $EngineVersion
+ * @property Shapes\PackageVendingOptions|null $PackageVendingOptions
+ * @property Shapes\PackageEncryptionOptions|null $PackageEncryptionOptions
  */
 class CreatePackageRequest extends Request
 {
@@ -20,12 +20,12 @@ class CreatePackageRequest extends Request
      * @param array{
      *     PackageName: string,
      *     PackageType: 'TXT-DICTIONARY'|'ZIP-PLUGIN'|'PACKAGE-LICENSE'|'PACKAGE-CONFIG',
-     *     PackageDescription?: string,
+     *     PackageDescription?: string|null,
      *     PackageSource: Shapes\PackageSource,
-     *     PackageConfiguration?: Shapes\PackageConfiguration,
-     *     EngineVersion?: string,
-     *     PackageVendingOptions?: Shapes\PackageVendingOptions,
-     *     PackageEncryptionOptions?: Shapes\PackageEncryptionOptions
+     *     PackageConfiguration?: Shapes\PackageConfiguration|null,
+     *     EngineVersion?: string|null,
+     *     PackageVendingOptions?: Shapes\PackageVendingOptions|null,
+     *     PackageEncryptionOptions?: Shapes\PackageEncryptionOptions|null
      * } $args
      */
     public function __construct(array $args)

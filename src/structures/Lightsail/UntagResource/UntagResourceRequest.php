@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $resourceName
- * @property string $resourceArn
+ * @property string|null $resourceArn
  * @property list<string> $tagKeys
  */
 class UntagResourceRequest extends Request
@@ -14,7 +14,7 @@ class UntagResourceRequest extends Request
     /**
      * @param array{
      *     resourceName: string,
-     *     resourceArn?: string,
+     *     resourceArn?: string|null,
      *     tagKeys: list<string>
      * } $args
      */

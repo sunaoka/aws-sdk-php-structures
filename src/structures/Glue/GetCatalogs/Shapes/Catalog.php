@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Glue\GetCatalogs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $Name
- * @property string $ResourceArn
- * @property string $Description
- * @property array<string, string> $Parameters
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property \Aws\Api\DateTimeResult $UpdateTime
- * @property TargetRedshiftCatalog $TargetRedshiftCatalog
- * @property FederatedCatalog $FederatedCatalog
- * @property CatalogPropertiesOutput $CatalogProperties
- * @property list<PrincipalPermissions> $CreateTableDefaultPermissions
- * @property list<PrincipalPermissions> $CreateDatabaseDefaultPermissions
+ * @property string|null $ResourceArn
+ * @property string|null $Description
+ * @property array<string, string>|null $Parameters
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property \Aws\Api\DateTimeResult|null $UpdateTime
+ * @property TargetRedshiftCatalog|null $TargetRedshiftCatalog
+ * @property FederatedCatalog|null $FederatedCatalog
+ * @property CatalogPropertiesOutput|null $CatalogProperties
+ * @property list<PrincipalPermissions>|null $CreateTableDefaultPermissions
+ * @property list<PrincipalPermissions>|null $CreateDatabaseDefaultPermissions
  */
 class Catalog extends Shape
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     Name: string,
-     *     ResourceArn?: string,
-     *     Description?: string,
-     *     Parameters?: array<string, string>,
-     *     CreateTime?: \Aws\Api\DateTimeResult,
-     *     UpdateTime?: \Aws\Api\DateTimeResult,
-     *     TargetRedshiftCatalog?: TargetRedshiftCatalog,
-     *     FederatedCatalog?: FederatedCatalog,
-     *     CatalogProperties?: CatalogPropertiesOutput,
-     *     CreateTableDefaultPermissions?: list<PrincipalPermissions>,
-     *     CreateDatabaseDefaultPermissions?: list<PrincipalPermissions>
+     *     ResourceArn?: string|null,
+     *     Description?: string|null,
+     *     Parameters?: array<string, string>|null,
+     *     CreateTime?: \Aws\Api\DateTimeResult|null,
+     *     UpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     TargetRedshiftCatalog?: TargetRedshiftCatalog|null,
+     *     FederatedCatalog?: FederatedCatalog|null,
+     *     CatalogProperties?: CatalogPropertiesOutput|null,
+     *     CreateTableDefaultPermissions?: list<PrincipalPermissions>|null,
+     *     CreateDatabaseDefaultPermissions?: list<PrincipalPermissions>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeExportTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceId
- * @property 'citrix'|'vmware'|'microsoft' $TargetEnvironment
+ * @property string|null $InstanceId
+ * @property 'citrix'|'vmware'|'microsoft'|null $TargetEnvironment
  */
 class InstanceExportDetails extends Shape
 {
     /**
      * @param array{
-     *     InstanceId?: string,
-     *     TargetEnvironment?: 'citrix'|'vmware'|'microsoft'
+     *     InstanceId?: string|null,
+     *     TargetEnvironment?: 'citrix'|'vmware'|'microsoft'|null
      * } $args
      */
     public function __construct(array $args = [])

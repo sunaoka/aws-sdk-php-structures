@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LocalNavigationConfiguration $LocalNavigationConfiguration
+ * @property LocalNavigationConfiguration|null $LocalNavigationConfiguration
  */
 class CustomActionNavigationOperation extends Shape
 {
     /**
-     * @param array{LocalNavigationConfiguration?: LocalNavigationConfiguration} $args
+     * @param array{LocalNavigationConfiguration?: LocalNavigationConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

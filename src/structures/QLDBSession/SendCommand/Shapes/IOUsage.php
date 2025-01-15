@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QLDBSession\SendCommand\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ReadIOs
- * @property int $WriteIOs
+ * @property int|null $ReadIOs
+ * @property int|null $WriteIOs
  */
 class IOUsage extends Shape
 {
     /**
      * @param array{
-     *     ReadIOs?: int,
-     *     WriteIOs?: int
+     *     ReadIOs?: int|null,
+     *     WriteIOs?: int|null
      * } $args
      */
     public function __construct(array $args = [])

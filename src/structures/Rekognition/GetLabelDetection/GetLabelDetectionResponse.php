@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetLabelDetection;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED' $JobStatus
- * @property string $StatusMessage
- * @property Shapes\VideoMetadata $VideoMetadata
- * @property string $NextToken
- * @property list<Shapes\LabelDetection> $Labels
- * @property string $LabelModelVersion
- * @property string $JobId
- * @property Shapes\Video $Video
- * @property string $JobTag
- * @property Shapes\GetLabelDetectionRequestMetadata $GetRequestMetadata
+ * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null $JobStatus
+ * @property string|null $StatusMessage
+ * @property Shapes\VideoMetadata|null $VideoMetadata
+ * @property string|null $NextToken
+ * @property list<Shapes\LabelDetection>|null $Labels
+ * @property string|null $LabelModelVersion
+ * @property string|null $JobId
+ * @property Shapes\Video|null $Video
+ * @property string|null $JobTag
+ * @property Shapes\GetLabelDetectionRequestMetadata|null $GetRequestMetadata
  */
 class GetLabelDetectionResponse extends Response
 {

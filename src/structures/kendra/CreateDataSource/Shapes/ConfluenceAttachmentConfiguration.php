@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\kendra\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $CrawlAttachments
- * @property list<ConfluenceAttachmentToIndexFieldMapping> $AttachmentFieldMappings
+ * @property bool|null $CrawlAttachments
+ * @property list<ConfluenceAttachmentToIndexFieldMapping>|null $AttachmentFieldMappings
  */
 class ConfluenceAttachmentConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CrawlAttachments?: bool,
-     *     AttachmentFieldMappings?: list<ConfluenceAttachmentToIndexFieldMapping>
+     *     CrawlAttachments?: bool|null,
+     *     AttachmentFieldMappings?: list<ConfluenceAttachmentToIndexFieldMapping>|null
      * } $args
      */
     public function __construct(array $args = [])

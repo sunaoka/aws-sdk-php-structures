@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppSync\GetDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $signingRegion
- * @property string $signingServiceName
+ * @property string|null $signingRegion
+ * @property string|null $signingServiceName
  */
 class AwsIamConfig extends Shape
 {
     /**
      * @param array{
-     *     signingRegion?: string,
-     *     signingServiceName?: string
+     *     signingRegion?: string|null,
+     *     signingServiceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

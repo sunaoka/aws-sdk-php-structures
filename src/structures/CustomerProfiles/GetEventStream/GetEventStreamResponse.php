@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $EventStreamArn
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property 'RUNNING'|'STOPPED' $State
- * @property \Aws\Api\DateTimeResult $StoppedSince
+ * @property \Aws\Api\DateTimeResult|null $StoppedSince
  * @property Shapes\EventStreamDestinationDetails $DestinationDetails
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class GetEventStreamResponse extends Response
 {

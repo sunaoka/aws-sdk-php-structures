@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Comprehend\DescribeDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DatasetArn
- * @property string $DatasetName
- * @property 'TRAIN'|'TEST' $DatasetType
- * @property string $DatasetS3Uri
- * @property string $Description
- * @property 'CREATING'|'COMPLETED'|'FAILED' $Status
- * @property string $Message
- * @property int $NumberOfDocuments
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $EndTime
+ * @property string|null $DatasetArn
+ * @property string|null $DatasetName
+ * @property 'TRAIN'|'TEST'|null $DatasetType
+ * @property string|null $DatasetS3Uri
+ * @property string|null $Description
+ * @property 'CREATING'|'COMPLETED'|'FAILED'|null $Status
+ * @property string|null $Message
+ * @property int|null $NumberOfDocuments
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
  */
 class DatasetProperties extends Shape
 {
     /**
      * @param array{
-     *     DatasetArn?: string,
-     *     DatasetName?: string,
-     *     DatasetType?: 'TRAIN'|'TEST',
-     *     DatasetS3Uri?: string,
-     *     Description?: string,
-     *     Status?: 'CREATING'|'COMPLETED'|'FAILED',
-     *     Message?: string,
-     *     NumberOfDocuments?: int,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult
+     *     DatasetArn?: string|null,
+     *     DatasetName?: string|null,
+     *     DatasetType?: 'TRAIN'|'TEST'|null,
+     *     DatasetS3Uri?: string|null,
+     *     Description?: string|null,
+     *     Status?: 'CREATING'|'COMPLETED'|'FAILED'|null,
+     *     Message?: string|null,
+     *     NumberOfDocuments?: int|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

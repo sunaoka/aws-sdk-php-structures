@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $GeoMatchSetId
- * @property string $Name
+ * @property string|null $Name
  * @property list<GeoMatchConstraint> $GeoMatchConstraints
  */
 class GeoMatchSet extends Shape
@@ -14,7 +14,7 @@ class GeoMatchSet extends Shape
     /**
      * @param array{
      *     GeoMatchSetId: string,
-     *     Name?: string,
+     *     Name?: string|null,
      *     GeoMatchConstraints: list<GeoMatchConstraint>
      * } $args
      */

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DateTimeFormat
- * @property NullValueFormatConfiguration $NullValueFormatConfiguration
- * @property NumericFormatConfiguration $NumericFormatConfiguration
+ * @property string|null $DateTimeFormat
+ * @property NullValueFormatConfiguration|null $NullValueFormatConfiguration
+ * @property NumericFormatConfiguration|null $NumericFormatConfiguration
  */
 class DateTimeFormatConfiguration extends Shape
 {
     /**
      * @param array{
-     *     DateTimeFormat?: string,
-     *     NullValueFormatConfiguration?: NullValueFormatConfiguration,
-     *     NumericFormatConfiguration?: NumericFormatConfiguration
+     *     DateTimeFormat?: string|null,
+     *     NullValueFormatConfiguration?: NullValueFormatConfiguration|null,
+     *     NumericFormatConfiguration?: NumericFormatConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

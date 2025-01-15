@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ProviderName
  * @property 'SAML'|'Facebook'|'Google'|'LoginWithAmazon'|'SignInWithApple'|'OIDC' $ProviderType
  * @property array<string, string> $ProviderDetails
- * @property array<string, string> $AttributeMapping
- * @property list<string> $IdpIdentifiers
+ * @property array<string, string>|null $AttributeMapping
+ * @property list<string>|null $IdpIdentifiers
  */
 class CreateIdentityProviderRequest extends Request
 {
@@ -20,8 +20,8 @@ class CreateIdentityProviderRequest extends Request
      *     ProviderName: string,
      *     ProviderType: 'SAML'|'Facebook'|'Google'|'LoginWithAmazon'|'SignInWithApple'|'OIDC',
      *     ProviderDetails: array<string, string>,
-     *     AttributeMapping?: array<string, string>,
-     *     IdpIdentifiers?: list<string>
+     *     AttributeMapping?: array<string, string>|null,
+     *     IdpIdentifiers?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

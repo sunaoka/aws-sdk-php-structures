@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AudioDescription> $AudioDescriptions
- * @property list<CaptionDescription> $CaptionDescriptions
- * @property ContainerSettings $ContainerSettings
- * @property string $Extension
- * @property string $NameModifier
- * @property OutputSettings $OutputSettings
- * @property string $Preset
- * @property VideoDescription $VideoDescription
+ * @property list<AudioDescription>|null $AudioDescriptions
+ * @property list<CaptionDescription>|null $CaptionDescriptions
+ * @property ContainerSettings|null $ContainerSettings
+ * @property string|null $Extension
+ * @property string|null $NameModifier
+ * @property OutputSettings|null $OutputSettings
+ * @property string|null $Preset
+ * @property VideoDescription|null $VideoDescription
  */
 class Output extends Shape
 {
     /**
      * @param array{
-     *     AudioDescriptions?: list<AudioDescription>,
-     *     CaptionDescriptions?: list<CaptionDescription>,
-     *     ContainerSettings?: ContainerSettings,
-     *     Extension?: string,
-     *     NameModifier?: string,
-     *     OutputSettings?: OutputSettings,
-     *     Preset?: string,
-     *     VideoDescription?: VideoDescription
+     *     AudioDescriptions?: list<AudioDescription>|null,
+     *     CaptionDescriptions?: list<CaptionDescription>|null,
+     *     ContainerSettings?: ContainerSettings|null,
+     *     Extension?: string|null,
+     *     NameModifier?: string|null,
+     *     OutputSettings?: OutputSettings|null,
+     *     Preset?: string|null,
+     *     VideoDescription?: VideoDescription|null
      * } $args
      */
     public function __construct(array $args = [])

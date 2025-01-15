@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetReservationPurchaseRecommendati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EC2InstanceDetails $EC2InstanceDetails
- * @property RDSInstanceDetails $RDSInstanceDetails
- * @property RedshiftInstanceDetails $RedshiftInstanceDetails
- * @property ElastiCacheInstanceDetails $ElastiCacheInstanceDetails
- * @property ESInstanceDetails $ESInstanceDetails
- * @property MemoryDBInstanceDetails $MemoryDBInstanceDetails
+ * @property EC2InstanceDetails|null $EC2InstanceDetails
+ * @property RDSInstanceDetails|null $RDSInstanceDetails
+ * @property RedshiftInstanceDetails|null $RedshiftInstanceDetails
+ * @property ElastiCacheInstanceDetails|null $ElastiCacheInstanceDetails
+ * @property ESInstanceDetails|null $ESInstanceDetails
+ * @property MemoryDBInstanceDetails|null $MemoryDBInstanceDetails
  */
 class InstanceDetails extends Shape
 {
     /**
      * @param array{
-     *     EC2InstanceDetails?: EC2InstanceDetails,
-     *     RDSInstanceDetails?: RDSInstanceDetails,
-     *     RedshiftInstanceDetails?: RedshiftInstanceDetails,
-     *     ElastiCacheInstanceDetails?: ElastiCacheInstanceDetails,
-     *     ESInstanceDetails?: ESInstanceDetails,
-     *     MemoryDBInstanceDetails?: MemoryDBInstanceDetails
+     *     EC2InstanceDetails?: EC2InstanceDetails|null,
+     *     RDSInstanceDetails?: RDSInstanceDetails|null,
+     *     RedshiftInstanceDetails?: RedshiftInstanceDetails|null,
+     *     ElastiCacheInstanceDetails?: ElastiCacheInstanceDetails|null,
+     *     ESInstanceDetails?: ESInstanceDetails|null,
+     *     MemoryDBInstanceDetails?: MemoryDBInstanceDetails|null
      * } $args
      */
     public function __construct(array $args = [])

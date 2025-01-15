@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AppMonitorName
  * @property 'CloudWatch'|'Evidently' $Destination
- * @property string $DestinationArn
- * @property string $IamRoleArn
+ * @property string|null $DestinationArn
+ * @property string|null $IamRoleArn
  */
 class PutRumMetricsDestinationRequest extends Request
 {
@@ -16,8 +16,8 @@ class PutRumMetricsDestinationRequest extends Request
      * @param array{
      *     AppMonitorName: string,
      *     Destination: 'CloudWatch'|'Evidently',
-     *     DestinationArn?: string,
-     *     IamRoleArn?: string
+     *     DestinationArn?: string|null,
+     *     IamRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

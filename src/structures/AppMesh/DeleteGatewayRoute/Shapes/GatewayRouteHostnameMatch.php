@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteGatewayRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $exact
- * @property string $suffix
+ * @property string|null $exact
+ * @property string|null $suffix
  */
 class GatewayRouteHostnameMatch extends Shape
 {
     /**
      * @param array{
-     *     exact?: string,
-     *     suffix?: string
+     *     exact?: string|null,
+     *     suffix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

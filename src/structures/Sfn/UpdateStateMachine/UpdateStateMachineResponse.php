@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property \Aws\Api\DateTimeResult $updateDate
- * @property string $revisionId
- * @property string $stateMachineVersionArn
+ * @property string|null $revisionId
+ * @property string|null $stateMachineVersionArn
  */
 class UpdateStateMachineResponse extends Response
 {

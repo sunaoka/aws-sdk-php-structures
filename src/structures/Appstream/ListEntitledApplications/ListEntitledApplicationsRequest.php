@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $StackName
  * @property string $EntitlementName
- * @property string $NextToken
- * @property int $MaxResults
+ * @property string|null $NextToken
+ * @property int|null $MaxResults
  */
 class ListEntitledApplicationsRequest extends Request
 {
@@ -16,8 +16,8 @@ class ListEntitledApplicationsRequest extends Request
      * @param array{
      *     StackName: string,
      *     EntitlementName: string,
-     *     NextToken?: string,
-     *     MaxResults?: int
+     *     NextToken?: string|null,
+     *     MaxResults?: int|null
      * } $args
      */
     public function __construct(array $args)

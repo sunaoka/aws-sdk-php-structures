@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DataId
- * @property bool $Negated
- * @property string $Type
+ * @property string|null $DataId
+ * @property bool|null $Negated
+ * @property string|null $Type
  */
 class AwsWafRegionalRulePredicateListDetails extends Shape
 {
     /**
      * @param array{
-     *     DataId?: string,
-     *     Negated?: bool,
-     *     Type?: string
+     *     DataId?: string|null,
+     *     Negated?: bool|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

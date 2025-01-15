@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $HubName
  * @property 'Model'|'Notebook'|'ModelReference' $HubContentType
- * @property string $NameContains
- * @property string $MaxSchemaVersion
- * @property \Aws\Api\DateTimeResult $CreationTimeBefore
- * @property \Aws\Api\DateTimeResult $CreationTimeAfter
- * @property 'HubContentName'|'CreationTime'|'HubContentStatus' $SortBy
- * @property 'Ascending'|'Descending' $SortOrder
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $NameContains
+ * @property string|null $MaxSchemaVersion
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeBefore
+ * @property \Aws\Api\DateTimeResult|null $CreationTimeAfter
+ * @property 'HubContentName'|'CreationTime'|'HubContentStatus'|null $SortBy
+ * @property 'Ascending'|'Descending'|null $SortOrder
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListHubContentsRequest extends Request
 {
@@ -22,14 +22,14 @@ class ListHubContentsRequest extends Request
      * @param array{
      *     HubName: string,
      *     HubContentType: 'Model'|'Notebook'|'ModelReference',
-     *     NameContains?: string,
-     *     MaxSchemaVersion?: string,
-     *     CreationTimeBefore?: \Aws\Api\DateTimeResult,
-     *     CreationTimeAfter?: \Aws\Api\DateTimeResult,
-     *     SortBy?: 'HubContentName'|'CreationTime'|'HubContentStatus',
-     *     SortOrder?: 'Ascending'|'Descending',
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     NameContains?: string|null,
+     *     MaxSchemaVersion?: string|null,
+     *     CreationTimeBefore?: \Aws\Api\DateTimeResult|null,
+     *     CreationTimeAfter?: \Aws\Api\DateTimeResult|null,
+     *     SortBy?: 'HubContentName'|'CreationTime'|'HubContentStatus'|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

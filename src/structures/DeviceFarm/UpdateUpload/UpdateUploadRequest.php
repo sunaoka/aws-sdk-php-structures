@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property string $name
- * @property string $contentType
- * @property bool $editContent
+ * @property string|null $name
+ * @property string|null $contentType
+ * @property bool|null $editContent
  */
 class UpdateUploadRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     name?: string,
-     *     contentType?: string,
-     *     editContent?: bool
+     *     name?: string|null,
+     *     contentType?: string|null,
+     *     editContent?: bool|null
      * } $args
      */
     public function __construct(array $args)

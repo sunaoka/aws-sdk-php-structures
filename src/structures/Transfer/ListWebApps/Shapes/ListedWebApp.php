@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Arn
  * @property string $WebAppId
- * @property string $AccessEndpoint
- * @property string $WebAppEndpoint
+ * @property string|null $AccessEndpoint
+ * @property string|null $WebAppEndpoint
  */
 class ListedWebApp extends Shape
 {
@@ -16,8 +16,8 @@ class ListedWebApp extends Shape
      * @param array{
      *     Arn: string,
      *     WebAppId: string,
-     *     AccessEndpoint?: string,
-     *     WebAppEndpoint?: string
+     *     AccessEndpoint?: string|null,
+     *     WebAppEndpoint?: string|null
      * } $args
      */
     public function __construct(array $args)

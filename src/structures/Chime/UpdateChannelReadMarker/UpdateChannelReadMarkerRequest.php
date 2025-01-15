@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelArn
- * @property string $ChimeBearer
+ * @property string|null $ChimeBearer
  */
 class UpdateChannelReadMarkerRequest extends Request
 {
     /**
      * @param array{
      *     ChannelArn: string,
-     *     ChimeBearer?: string
+     *     ChimeBearer?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\EntityResolution\CreateMatchingWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $applyNormalization
+ * @property bool|null $applyNormalization
  * @property string $inputSourceARN
  * @property string $schemaName
  */
@@ -13,7 +13,7 @@ class InputSource extends Shape
 {
     /**
      * @param array{
-     *     applyNormalization?: bool,
+     *     applyNormalization?: bool|null,
      *     inputSourceARN: string,
      *     schemaName: string
      * } $args

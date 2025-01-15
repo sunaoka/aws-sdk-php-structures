@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $semanticVersion
  * @property list<Shapes\ComponentConfiguration> $components
  * @property string $parentImage
- * @property list<Shapes\InstanceBlockDeviceMapping> $blockDeviceMappings
- * @property array<string, string> $tags
- * @property string $workingDirectory
- * @property Shapes\AdditionalInstanceConfiguration $additionalInstanceConfiguration
+ * @property list<Shapes\InstanceBlockDeviceMapping>|null $blockDeviceMappings
+ * @property array<string, string>|null $tags
+ * @property string|null $workingDirectory
+ * @property Shapes\AdditionalInstanceConfiguration|null $additionalInstanceConfiguration
  * @property string $clientToken
  */
 class CreateImageRecipeRequest extends Request
@@ -21,14 +21,14 @@ class CreateImageRecipeRequest extends Request
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     semanticVersion: string,
      *     components: list<Shapes\ComponentConfiguration>,
      *     parentImage: string,
-     *     blockDeviceMappings?: list<Shapes\InstanceBlockDeviceMapping>,
-     *     tags?: array<string, string>,
-     *     workingDirectory?: string,
-     *     additionalInstanceConfiguration?: Shapes\AdditionalInstanceConfiguration,
+     *     blockDeviceMappings?: list<Shapes\InstanceBlockDeviceMapping>|null,
+     *     tags?: array<string, string>|null,
+     *     workingDirectory?: string|null,
+     *     additionalInstanceConfiguration?: Shapes\AdditionalInstanceConfiguration|null,
      *     clientToken: string
      * } $args
      */

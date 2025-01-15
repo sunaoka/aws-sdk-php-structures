@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\AuditManager\ListControls\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $id
- * @property string $name
- * @property string $controlSources
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
+ * @property string|null $arn
+ * @property string|null $id
+ * @property string|null $name
+ * @property string|null $controlSources
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  */
 class ControlMetadata extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     id?: string,
-     *     name?: string,
-     *     controlSources?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult
+     *     arn?: string|null,
+     *     id?: string|null,
+     *     name?: string|null,
+     *     controlSources?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

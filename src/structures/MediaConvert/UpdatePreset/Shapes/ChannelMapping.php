@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\UpdatePreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<OutputChannelMapping> $OutputChannels
+ * @property list<OutputChannelMapping>|null $OutputChannels
  */
 class ChannelMapping extends Shape
 {
     /**
-     * @param array{OutputChannels?: list<OutputChannelMapping>} $args
+     * @param array{OutputChannels?: list<OutputChannelMapping>|null} $args
      */
     public function __construct(array $args = [])
     {

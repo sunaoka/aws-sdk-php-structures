@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\SnapToRoads\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Heading
+ * @property double|null $Heading
  * @property list<double> $Position
- * @property double $Speed
- * @property string $Timestamp
+ * @property double|null $Speed
+ * @property string|null $Timestamp
  */
 class RoadSnapTracePoint extends Shape
 {
     /**
      * @param array{
-     *     Heading?: double,
+     *     Heading?: double|null,
      *     Position: list<double>,
-     *     Speed?: double,
-     *     Timestamp?: string
+     *     Speed?: double|null,
+     *     Timestamp?: string|null
      * } $args
      */
     public function __construct(array $args)

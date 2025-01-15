@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $Name
  * @property string $CallerReference
- * @property HostedZoneConfig $Config
- * @property int $ResourceRecordSetCount
- * @property LinkedService $LinkedService
+ * @property HostedZoneConfig|null $Config
+ * @property int|null $ResourceRecordSetCount
+ * @property LinkedService|null $LinkedService
  */
 class HostedZone extends Shape
 {
@@ -19,9 +19,9 @@ class HostedZone extends Shape
      *     Id: string,
      *     Name: string,
      *     CallerReference: string,
-     *     Config?: HostedZoneConfig,
-     *     ResourceRecordSetCount?: int,
-     *     LinkedService?: LinkedService
+     *     Config?: HostedZoneConfig|null,
+     *     ResourceRecordSetCount?: int|null,
+     *     LinkedService?: LinkedService|null
      * } $args
      */
     public function __construct(array $args)

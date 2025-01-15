@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetRelationalDatabases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $cpuCount
- * @property int $diskSizeInGb
- * @property float $ramSizeInGb
+ * @property int|null $cpuCount
+ * @property int|null $diskSizeInGb
+ * @property float|null $ramSizeInGb
  */
 class RelationalDatabaseHardware extends Shape
 {
     /**
      * @param array{
-     *     cpuCount?: int,
-     *     diskSizeInGb?: int,
-     *     ramSizeInGb?: float
+     *     cpuCount?: int|null,
+     *     diskSizeInGb?: int|null,
+     *     ramSizeInGb?: float|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property bool $required
  * @property bool $readOnly
  * @property bool $isArray
- * @property CodegenGenericDataRelationshipType $relationship
+ * @property CodegenGenericDataRelationshipType|null $relationship
  */
 class CodegenGenericDataField extends Shape
 {
@@ -21,7 +21,7 @@ class CodegenGenericDataField extends Shape
      *     required: bool,
      *     readOnly: bool,
      *     isArray: bool,
-     *     relationship?: CodegenGenericDataRelationshipType
+     *     relationship?: CodegenGenericDataRelationshipType|null
      * } $args
      */
     public function __construct(array $args)

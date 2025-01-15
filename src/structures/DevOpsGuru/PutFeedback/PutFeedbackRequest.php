@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\PutFeedback;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\InsightFeedback $InsightFeedback
+ * @property Shapes\InsightFeedback|null $InsightFeedback
  */
 class PutFeedbackRequest extends Request
 {
     /**
-     * @param array{InsightFeedback?: Shapes\InsightFeedback} $args
+     * @param array{InsightFeedback?: Shapes\InsightFeedback|null} $args
      */
     public function __construct(array $args = [])
     {

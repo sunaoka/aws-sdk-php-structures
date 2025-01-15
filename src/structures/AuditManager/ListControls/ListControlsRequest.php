@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'Standard'|'Custom'|'Core' $controlType
- * @property string $nextToken
- * @property int<1, 1000> $maxResults
- * @property string $controlCatalogId
+ * @property string|null $nextToken
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $controlCatalogId
  */
 class ListControlsRequest extends Request
 {
     /**
      * @param array{
      *     controlType: 'Standard'|'Custom'|'Core',
-     *     nextToken?: string,
-     *     maxResults?: int<1, 1000>,
-     *     controlCatalogId?: string
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     controlCatalogId?: string|null
      * } $args
      */
     public function __construct(array $args)

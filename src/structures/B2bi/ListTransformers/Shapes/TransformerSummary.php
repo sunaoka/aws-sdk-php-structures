@@ -9,15 +9,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property 'active'|'inactive' $status
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $modifiedAt
- * @property 'XML'|'JSON'|'NOT_USED' $fileFormat
- * @property string $mappingTemplate
- * @property EdiType $ediType
- * @property string $sampleDocument
- * @property InputConversion $inputConversion
- * @property Mapping $mapping
- * @property OutputConversion $outputConversion
- * @property SampleDocuments $sampleDocuments
+ * @property \Aws\Api\DateTimeResult|null $modifiedAt
+ * @property 'XML'|'JSON'|'NOT_USED'|null $fileFormat
+ * @property string|null $mappingTemplate
+ * @property EdiType|null $ediType
+ * @property string|null $sampleDocument
+ * @property InputConversion|null $inputConversion
+ * @property Mapping|null $mapping
+ * @property OutputConversion|null $outputConversion
+ * @property SampleDocuments|null $sampleDocuments
  */
 class TransformerSummary extends Shape
 {
@@ -27,15 +27,15 @@ class TransformerSummary extends Shape
      *     name: string,
      *     status: 'active'|'inactive',
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     modifiedAt?: \Aws\Api\DateTimeResult,
-     *     fileFormat?: 'XML'|'JSON'|'NOT_USED',
-     *     mappingTemplate?: string,
-     *     ediType?: EdiType,
-     *     sampleDocument?: string,
-     *     inputConversion?: InputConversion,
-     *     mapping?: Mapping,
-     *     outputConversion?: OutputConversion,
-     *     sampleDocuments?: SampleDocuments
+     *     modifiedAt?: \Aws\Api\DateTimeResult|null,
+     *     fileFormat?: 'XML'|'JSON'|'NOT_USED'|null,
+     *     mappingTemplate?: string|null,
+     *     ediType?: EdiType|null,
+     *     sampleDocument?: string|null,
+     *     inputConversion?: InputConversion|null,
+     *     mapping?: Mapping|null,
+     *     outputConversion?: OutputConversion|null,
+     *     sampleDocuments?: SampleDocuments|null
      * } $args
      */
     public function __construct(array $args)

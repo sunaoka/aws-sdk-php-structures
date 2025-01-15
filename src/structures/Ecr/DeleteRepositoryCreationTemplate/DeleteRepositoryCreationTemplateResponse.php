@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ecr\DeleteRepositoryCreationTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $registryId
- * @property Shapes\RepositoryCreationTemplate $repositoryCreationTemplate
+ * @property string|null $registryId
+ * @property Shapes\RepositoryCreationTemplate|null $repositoryCreationTemplate
  */
 class DeleteRepositoryCreationTemplateResponse extends Response
 {

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\kendra\ListDataSources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Id
- * @property 'S3'|'SHAREPOINT'|'DATABASE'|'SALESFORCE'|'ONEDRIVE'|'SERVICENOW'|'CUSTOM'|'CONFLUENCE'|'GOOGLEDRIVE'|'WEBCRAWLER'|'WORKDOCS'|'FSX'|'SLACK'|'BOX'|'QUIP'|'JIRA'|'GITHUB'|'ALFRESCO'|'TEMPLATE' $Type
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $UpdatedAt
- * @property 'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'ACTIVE' $Status
- * @property string $LanguageCode
+ * @property string|null $Name
+ * @property string|null $Id
+ * @property 'S3'|'SHAREPOINT'|'DATABASE'|'SALESFORCE'|'ONEDRIVE'|'SERVICENOW'|'CUSTOM'|'CONFLUENCE'|'GOOGLEDRIVE'|'WEBCRAWLER'|'WORKDOCS'|'FSX'|'SLACK'|'BOX'|'QUIP'|'JIRA'|'GITHUB'|'ALFRESCO'|'TEMPLATE'|null $Type
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property 'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'ACTIVE'|null $Status
+ * @property string|null $LanguageCode
  */
 class DataSourceSummary extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Id?: string,
-     *     Type?: 'S3'|'SHAREPOINT'|'DATABASE'|'SALESFORCE'|'ONEDRIVE'|'SERVICENOW'|'CUSTOM'|'CONFLUENCE'|'GOOGLEDRIVE'|'WEBCRAWLER'|'WORKDOCS'|'FSX'|'SLACK'|'BOX'|'QUIP'|'JIRA'|'GITHUB'|'ALFRESCO'|'TEMPLATE',
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult,
-     *     Status?: 'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'ACTIVE',
-     *     LanguageCode?: string
+     *     Name?: string|null,
+     *     Id?: string|null,
+     *     Type?: 'S3'|'SHAREPOINT'|'DATABASE'|'SALESFORCE'|'ONEDRIVE'|'SERVICENOW'|'CUSTOM'|'CONFLUENCE'|'GOOGLEDRIVE'|'WEBCRAWLER'|'WORKDOCS'|'FSX'|'SLACK'|'BOX'|'QUIP'|'JIRA'|'GITHUB'|'ALFRESCO'|'TEMPLATE'|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'CREATING'|'DELETING'|'FAILED'|'UPDATING'|'ACTIVE'|null,
+     *     LanguageCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\UpdatePipelineStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Bucket
- * @property string $StorageClass
- * @property list<Permission> $Permissions
+ * @property string|null $Bucket
+ * @property string|null $StorageClass
+ * @property list<Permission>|null $Permissions
  */
 class PipelineOutputConfig extends Shape
 {
     /**
      * @param array{
-     *     Bucket?: string,
-     *     StorageClass?: string,
-     *     Permissions?: list<Permission>
+     *     Bucket?: string|null,
+     *     StorageClass?: string|null,
+     *     Permissions?: list<Permission>|null
      * } $args
      */
     public function __construct(array $args = [])

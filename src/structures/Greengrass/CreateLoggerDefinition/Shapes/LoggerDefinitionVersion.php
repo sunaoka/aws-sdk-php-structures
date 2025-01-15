@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateLoggerDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Logger> $Loggers
+ * @property list<Logger>|null $Loggers
  */
 class LoggerDefinitionVersion extends Shape
 {
     /**
-     * @param array{Loggers?: list<Logger>} $args
+     * @param array{Loggers?: list<Logger>|null} $args
      */
     public function __construct(array $args = [])
     {

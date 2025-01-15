@@ -7,15 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property list<string> $Paths
- * @property 'snappy'|'lzo'|'gzip'|'uncompressed'|'none' $CompressionType
- * @property list<string> $Exclusions
- * @property string $GroupSize
- * @property string $GroupFiles
- * @property bool $Recurse
- * @property int<0, max> $MaxBand
- * @property int<0, max> $MaxFilesInBand
- * @property S3DirectSourceAdditionalOptions $AdditionalOptions
- * @property list<GlueSchema> $OutputSchemas
+ * @property 'snappy'|'lzo'|'gzip'|'uncompressed'|'none'|null $CompressionType
+ * @property list<string>|null $Exclusions
+ * @property string|null $GroupSize
+ * @property string|null $GroupFiles
+ * @property bool|null $Recurse
+ * @property int<0, max>|null $MaxBand
+ * @property int<0, max>|null $MaxFilesInBand
+ * @property S3DirectSourceAdditionalOptions|null $AdditionalOptions
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class S3ParquetSource extends Shape
 {
@@ -23,15 +23,15 @@ class S3ParquetSource extends Shape
      * @param array{
      *     Name: string,
      *     Paths: list<string>,
-     *     CompressionType?: 'snappy'|'lzo'|'gzip'|'uncompressed'|'none',
-     *     Exclusions?: list<string>,
-     *     GroupSize?: string,
-     *     GroupFiles?: string,
-     *     Recurse?: bool,
-     *     MaxBand?: int<0, max>,
-     *     MaxFilesInBand?: int<0, max>,
-     *     AdditionalOptions?: S3DirectSourceAdditionalOptions,
-     *     OutputSchemas?: list<GlueSchema>
+     *     CompressionType?: 'snappy'|'lzo'|'gzip'|'uncompressed'|'none'|null,
+     *     Exclusions?: list<string>|null,
+     *     GroupSize?: string|null,
+     *     GroupFiles?: string|null,
+     *     Recurse?: bool|null,
+     *     MaxBand?: int<0, max>|null,
+     *     MaxFilesInBand?: int<0, max>|null,
+     *     AdditionalOptions?: S3DirectSourceAdditionalOptions|null,
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

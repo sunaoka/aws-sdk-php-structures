@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Backup\ListTags;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property array<string, string> $Tags
+ * @property string|null $NextToken
+ * @property array<string, string>|null $Tags
  */
 class ListTagsResponse extends Response
 {

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $AssignmentName
  * @property 'ENABLED'|'DRAFT'|'DISABLED' $AssignmentStatus
- * @property string $PolicyArn
- * @property array<string, list<string>> $Identities
+ * @property string|null $PolicyArn
+ * @property array<string, list<string>>|null $Identities
  * @property string $Namespace
  */
 class CreateIAMPolicyAssignmentRequest extends Request
@@ -19,8 +19,8 @@ class CreateIAMPolicyAssignmentRequest extends Request
      *     AwsAccountId: string,
      *     AssignmentName: string,
      *     AssignmentStatus: 'ENABLED'|'DRAFT'|'DISABLED',
-     *     PolicyArn?: string,
-     *     Identities?: array<string, list<string>>,
+     *     PolicyArn?: string|null,
+     *     Identities?: array<string, list<string>>|null,
      *     Namespace: string
      * } $args
      */

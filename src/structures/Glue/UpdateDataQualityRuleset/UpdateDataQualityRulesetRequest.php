@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property string $Ruleset
+ * @property string|null $Description
+ * @property string|null $Ruleset
  */
 class UpdateDataQualityRulesetRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     Ruleset?: string
+     *     Description?: string|null,
+     *     Ruleset?: string|null
      * } $args
      */
     public function __construct(array $args)

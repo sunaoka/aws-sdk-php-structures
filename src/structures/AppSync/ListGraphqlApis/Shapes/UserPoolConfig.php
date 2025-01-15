@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $userPoolId
  * @property string $awsRegion
  * @property 'ALLOW'|'DENY' $defaultAction
- * @property string $appIdClientRegex
+ * @property string|null $appIdClientRegex
  */
 class UserPoolConfig extends Shape
 {
@@ -17,7 +17,7 @@ class UserPoolConfig extends Shape
      *     userPoolId: string,
      *     awsRegion: string,
      *     defaultAction: 'ALLOW'|'DENY',
-     *     appIdClientRegex?: string
+     *     appIdClientRegex?: string|null
      * } $args
      */
     public function __construct(array $args)

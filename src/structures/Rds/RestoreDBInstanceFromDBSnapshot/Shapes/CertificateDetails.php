@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rds\RestoreDBInstanceFromDBSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CAIdentifier
- * @property \Aws\Api\DateTimeResult $ValidTill
+ * @property string|null $CAIdentifier
+ * @property \Aws\Api\DateTimeResult|null $ValidTill
  */
 class CertificateDetails extends Shape
 {
     /**
      * @param array{
-     *     CAIdentifier?: string,
-     *     ValidTill?: \Aws\Api\DateTimeResult
+     *     CAIdentifier?: string|null,
+     *     ValidTill?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

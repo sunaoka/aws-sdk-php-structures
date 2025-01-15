@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $defaultValue
- * @property string $description
+ * @property string|null $defaultValue
+ * @property string|null $description
  */
 class PipelineVariableDeclaration extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     defaultValue?: string,
-     *     description?: string
+     *     defaultValue?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

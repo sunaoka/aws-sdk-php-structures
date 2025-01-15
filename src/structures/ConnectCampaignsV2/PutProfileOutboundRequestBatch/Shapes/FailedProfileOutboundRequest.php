@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\PutProfileOutboundRequestBat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $clientToken
- * @property string $id
- * @property 'UnknownError'|'ResourceNotFound'|'Conflict'|'RequestThrottled'|'InvalidInput' $failureCode
+ * @property string|null $clientToken
+ * @property string|null $id
+ * @property 'UnknownError'|'ResourceNotFound'|'Conflict'|'RequestThrottled'|'InvalidInput'|null $failureCode
  */
 class FailedProfileOutboundRequest extends Shape
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     id?: string,
-     *     failureCode?: 'UnknownError'|'ResourceNotFound'|'Conflict'|'RequestThrottled'|'InvalidInput'
+     *     clientToken?: string|null,
+     *     id?: string|null,
+     *     failureCode?: 'UnknownError'|'ResourceNotFound'|'Conflict'|'RequestThrottled'|'InvalidInput'|null
      * } $args
      */
     public function __construct(array $args = [])

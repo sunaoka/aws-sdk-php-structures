@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\XRay\UpdateSamplingRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RuleName
- * @property string $RuleARN
- * @property string $ResourceARN
- * @property int $Priority
- * @property double $FixedRate
- * @property int $ReservoirSize
- * @property string $Host
- * @property string $ServiceName
- * @property string $ServiceType
- * @property string $HTTPMethod
- * @property string $URLPath
- * @property array<string, string> $Attributes
+ * @property string|null $RuleName
+ * @property string|null $RuleARN
+ * @property string|null $ResourceARN
+ * @property int|null $Priority
+ * @property double|null $FixedRate
+ * @property int|null $ReservoirSize
+ * @property string|null $Host
+ * @property string|null $ServiceName
+ * @property string|null $ServiceType
+ * @property string|null $HTTPMethod
+ * @property string|null $URLPath
+ * @property array<string, string>|null $Attributes
  */
 class SamplingRuleUpdate extends Shape
 {
     /**
      * @param array{
-     *     RuleName?: string,
-     *     RuleARN?: string,
-     *     ResourceARN?: string,
-     *     Priority?: int,
-     *     FixedRate?: double,
-     *     ReservoirSize?: int,
-     *     Host?: string,
-     *     ServiceName?: string,
-     *     ServiceType?: string,
-     *     HTTPMethod?: string,
-     *     URLPath?: string,
-     *     Attributes?: array<string, string>
+     *     RuleName?: string|null,
+     *     RuleARN?: string|null,
+     *     ResourceARN?: string|null,
+     *     Priority?: int|null,
+     *     FixedRate?: double|null,
+     *     ReservoirSize?: int|null,
+     *     Host?: string|null,
+     *     ServiceName?: string|null,
+     *     ServiceType?: string|null,
+     *     HTTPMethod?: string|null,
+     *     URLPath?: string|null,
+     *     Attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

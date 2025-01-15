@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CostExplorer\CreateAnomalySubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubscriptionArn
- * @property string $AccountId
+ * @property string|null $SubscriptionArn
+ * @property string|null $AccountId
  * @property list<string> $MonitorArnList
  * @property list<Subscriber> $Subscribers
- * @property double $Threshold
+ * @property double|null $Threshold
  * @property 'DAILY'|'IMMEDIATE'|'WEEKLY' $Frequency
  * @property string $SubscriptionName
- * @property Expression $ThresholdExpression
+ * @property Expression|null $ThresholdExpression
  */
 class AnomalySubscription extends Shape
 {
     /**
      * @param array{
-     *     SubscriptionArn?: string,
-     *     AccountId?: string,
+     *     SubscriptionArn?: string|null,
+     *     AccountId?: string|null,
      *     MonitorArnList: list<string>,
      *     Subscribers: list<Subscriber>,
-     *     Threshold?: double,
+     *     Threshold?: double|null,
      *     Frequency: 'DAILY'|'IMMEDIATE'|'WEEKLY',
      *     SubscriptionName: string,
-     *     ThresholdExpression?: Expression
+     *     ThresholdExpression?: Expression|null
      * } $args
      */
     public function __construct(array $args)

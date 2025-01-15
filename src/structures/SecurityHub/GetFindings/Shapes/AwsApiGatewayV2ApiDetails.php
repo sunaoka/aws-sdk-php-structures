@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApiEndpoint
- * @property string $ApiId
- * @property string $ApiKeySelectionExpression
- * @property string $CreatedDate
- * @property string $Description
- * @property string $Version
- * @property string $Name
- * @property string $ProtocolType
- * @property string $RouteSelectionExpression
- * @property AwsCorsConfiguration $CorsConfiguration
+ * @property string|null $ApiEndpoint
+ * @property string|null $ApiId
+ * @property string|null $ApiKeySelectionExpression
+ * @property string|null $CreatedDate
+ * @property string|null $Description
+ * @property string|null $Version
+ * @property string|null $Name
+ * @property string|null $ProtocolType
+ * @property string|null $RouteSelectionExpression
+ * @property AwsCorsConfiguration|null $CorsConfiguration
  */
 class AwsApiGatewayV2ApiDetails extends Shape
 {
     /**
      * @param array{
-     *     ApiEndpoint?: string,
-     *     ApiId?: string,
-     *     ApiKeySelectionExpression?: string,
-     *     CreatedDate?: string,
-     *     Description?: string,
-     *     Version?: string,
-     *     Name?: string,
-     *     ProtocolType?: string,
-     *     RouteSelectionExpression?: string,
-     *     CorsConfiguration?: AwsCorsConfiguration
+     *     ApiEndpoint?: string|null,
+     *     ApiId?: string|null,
+     *     ApiKeySelectionExpression?: string|null,
+     *     CreatedDate?: string|null,
+     *     Description?: string|null,
+     *     Version?: string|null,
+     *     Name?: string|null,
+     *     ProtocolType?: string|null,
+     *     RouteSelectionExpression?: string|null,
+     *     CorsConfiguration?: AwsCorsConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

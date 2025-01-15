@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property string $SegmentDefinitionName
  * @property string $DisplayName
- * @property string $Description
+ * @property string|null $Description
  * @property Shapes\SegmentGroup $SegmentGroups
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateSegmentDefinitionRequest extends Request
 {
@@ -19,9 +19,9 @@ class CreateSegmentDefinitionRequest extends Request
      *     DomainName: string,
      *     SegmentDefinitionName: string,
      *     DisplayName: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     SegmentGroups: Shapes\SegmentGroup,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

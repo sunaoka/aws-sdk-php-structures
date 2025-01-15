@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ParentVolumeId
- * @property int<-1, 2147483647> $StorageCapacityReservationGiB
- * @property int<-1, 2147483647> $StorageCapacityQuotaGiB
- * @property int<4, 4096> $RecordSizeKiB
- * @property 'NONE'|'ZSTD'|'LZ4' $DataCompressionType
- * @property bool $CopyTagsToSnapshots
- * @property CreateOpenZFSOriginSnapshotConfiguration $OriginSnapshot
- * @property bool $ReadOnly
- * @property list<OpenZFSNfsExport> $NfsExports
- * @property list<OpenZFSUserOrGroupQuota> $UserAndGroupQuotas
+ * @property int<-1, 2147483647>|null $StorageCapacityReservationGiB
+ * @property int<-1, 2147483647>|null $StorageCapacityQuotaGiB
+ * @property int<4, 4096>|null $RecordSizeKiB
+ * @property 'NONE'|'ZSTD'|'LZ4'|null $DataCompressionType
+ * @property bool|null $CopyTagsToSnapshots
+ * @property CreateOpenZFSOriginSnapshotConfiguration|null $OriginSnapshot
+ * @property bool|null $ReadOnly
+ * @property list<OpenZFSNfsExport>|null $NfsExports
+ * @property list<OpenZFSUserOrGroupQuota>|null $UserAndGroupQuotas
  */
 class CreateOpenZFSVolumeConfiguration extends Shape
 {
     /**
      * @param array{
      *     ParentVolumeId: string,
-     *     StorageCapacityReservationGiB?: int<-1, 2147483647>,
-     *     StorageCapacityQuotaGiB?: int<-1, 2147483647>,
-     *     RecordSizeKiB?: int<4, 4096>,
-     *     DataCompressionType?: 'NONE'|'ZSTD'|'LZ4',
-     *     CopyTagsToSnapshots?: bool,
-     *     OriginSnapshot?: CreateOpenZFSOriginSnapshotConfiguration,
-     *     ReadOnly?: bool,
-     *     NfsExports?: list<OpenZFSNfsExport>,
-     *     UserAndGroupQuotas?: list<OpenZFSUserOrGroupQuota>
+     *     StorageCapacityReservationGiB?: int<-1, 2147483647>|null,
+     *     StorageCapacityQuotaGiB?: int<-1, 2147483647>|null,
+     *     RecordSizeKiB?: int<4, 4096>|null,
+     *     DataCompressionType?: 'NONE'|'ZSTD'|'LZ4'|null,
+     *     CopyTagsToSnapshots?: bool|null,
+     *     OriginSnapshot?: CreateOpenZFSOriginSnapshotConfiguration|null,
+     *     ReadOnly?: bool|null,
+     *     NfsExports?: list<OpenZFSNfsExport>|null,
+     *     UserAndGroupQuotas?: list<OpenZFSUserOrGroupQuota>|null
      * } $args
      */
     public function __construct(array $args)

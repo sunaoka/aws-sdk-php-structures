@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Macie2\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $blockPublicAcls
- * @property bool $blockPublicPolicy
- * @property bool $ignorePublicAcls
- * @property bool $restrictPublicBuckets
+ * @property bool|null $blockPublicAcls
+ * @property bool|null $blockPublicPolicy
+ * @property bool|null $ignorePublicAcls
+ * @property bool|null $restrictPublicBuckets
  */
 class BlockPublicAccess extends Shape
 {
     /**
      * @param array{
-     *     blockPublicAcls?: bool,
-     *     blockPublicPolicy?: bool,
-     *     ignorePublicAcls?: bool,
-     *     restrictPublicBuckets?: bool
+     *     blockPublicAcls?: bool|null,
+     *     blockPublicPolicy?: bool|null,
+     *     ignorePublicAcls?: bool|null,
+     *     restrictPublicBuckets?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

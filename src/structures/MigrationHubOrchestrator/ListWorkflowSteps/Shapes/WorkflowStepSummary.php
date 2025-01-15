@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\MigrationHubOrchestrator\ListWorkflowSteps\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $stepId
- * @property string $name
- * @property 'MANUAL'|'AUTOMATED' $stepActionType
- * @property 'AWS_MANAGED'|'CUSTOM' $owner
- * @property list<string> $previous
- * @property list<string> $next
- * @property 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED' $status
- * @property string $statusMessage
- * @property int $noOfSrvCompleted
- * @property int $noOfSrvFailed
- * @property int $totalNoOfSrv
- * @property string $description
- * @property string $scriptLocation
+ * @property string|null $stepId
+ * @property string|null $name
+ * @property 'MANUAL'|'AUTOMATED'|null $stepActionType
+ * @property 'AWS_MANAGED'|'CUSTOM'|null $owner
+ * @property list<string>|null $previous
+ * @property list<string>|null $next
+ * @property 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null $status
+ * @property string|null $statusMessage
+ * @property int|null $noOfSrvCompleted
+ * @property int|null $noOfSrvFailed
+ * @property int|null $totalNoOfSrv
+ * @property string|null $description
+ * @property string|null $scriptLocation
  */
 class WorkflowStepSummary extends Shape
 {
     /**
      * @param array{
-     *     stepId?: string,
-     *     name?: string,
-     *     stepActionType?: 'MANUAL'|'AUTOMATED',
-     *     owner?: 'AWS_MANAGED'|'CUSTOM',
-     *     previous?: list<string>,
-     *     next?: list<string>,
-     *     status?: 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED',
-     *     statusMessage?: string,
-     *     noOfSrvCompleted?: int,
-     *     noOfSrvFailed?: int,
-     *     totalNoOfSrv?: int,
-     *     description?: string,
-     *     scriptLocation?: string
+     *     stepId?: string|null,
+     *     name?: string|null,
+     *     stepActionType?: 'MANUAL'|'AUTOMATED'|null,
+     *     owner?: 'AWS_MANAGED'|'CUSTOM'|null,
+     *     previous?: list<string>|null,
+     *     next?: list<string>|null,
+     *     status?: 'AWAITING_DEPENDENCIES'|'SKIPPED'|'READY'|'IN_PROGRESS'|'COMPLETED'|'FAILED'|'PAUSED'|'USER_ATTENTION_REQUIRED'|null,
+     *     statusMessage?: string|null,
+     *     noOfSrvCompleted?: int|null,
+     *     noOfSrvFailed?: int|null,
+     *     totalNoOfSrv?: int|null,
+     *     description?: string|null,
+     *     scriptLocation?: string|null
      * } $args
      */
     public function __construct(array $args = [])

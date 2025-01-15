@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\mgn\StartReplication;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $accountID
+ * @property string|null $accountID
  * @property string $sourceServerID
  */
 class StartReplicationRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string,
+     *     accountID?: string|null,
      *     sourceServerID: string
      * } $args
      */

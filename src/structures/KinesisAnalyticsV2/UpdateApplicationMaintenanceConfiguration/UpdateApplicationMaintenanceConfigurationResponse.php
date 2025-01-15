@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\UpdateApplicationMaintenance
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApplicationARN
- * @property Shapes\ApplicationMaintenanceConfigurationDescription $ApplicationMaintenanceConfigurationDescription
+ * @property string|null $ApplicationARN
+ * @property Shapes\ApplicationMaintenanceConfigurationDescription|null $ApplicationMaintenanceConfigurationDescription
  */
 class UpdateApplicationMaintenanceConfigurationResponse extends Response
 {

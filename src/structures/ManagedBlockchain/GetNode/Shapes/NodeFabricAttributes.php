@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\GetNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PeerEndpoint
- * @property string $PeerEventEndpoint
+ * @property string|null $PeerEndpoint
+ * @property string|null $PeerEventEndpoint
  */
 class NodeFabricAttributes extends Shape
 {
     /**
      * @param array{
-     *     PeerEndpoint?: string,
-     *     PeerEventEndpoint?: string
+     *     PeerEndpoint?: string|null,
+     *     PeerEventEndpoint?: string|null
      * } $args
      */
     public function __construct(array $args = [])

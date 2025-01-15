@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListSubscribedWorkteams;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NameContains
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $NameContains
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListSubscribedWorkteamsRequest extends Request
 {
     /**
      * @param array{
-     *     NameContains?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     NameContains?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

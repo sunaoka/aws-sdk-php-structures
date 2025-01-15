@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeNetworkAcls\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $From
- * @property int $To
+ * @property int|null $From
+ * @property int|null $To
  */
 class PortRange extends Shape
 {
     /**
      * @param array{
-     *     From?: int,
-     *     To?: int
+     *     From?: int|null,
+     *     To?: int|null
      * } $args
      */
     public function __construct(array $args = [])

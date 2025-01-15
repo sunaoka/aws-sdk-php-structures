@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsMasterKeyId
- * @property list<AwsSnsTopicSubscription> $Subscription
- * @property string $TopicName
- * @property string $Owner
- * @property string $SqsSuccessFeedbackRoleArn
- * @property string $SqsFailureFeedbackRoleArn
- * @property string $ApplicationSuccessFeedbackRoleArn
- * @property string $FirehoseSuccessFeedbackRoleArn
- * @property string $FirehoseFailureFeedbackRoleArn
- * @property string $HttpSuccessFeedbackRoleArn
- * @property string $HttpFailureFeedbackRoleArn
+ * @property string|null $KmsMasterKeyId
+ * @property list<AwsSnsTopicSubscription>|null $Subscription
+ * @property string|null $TopicName
+ * @property string|null $Owner
+ * @property string|null $SqsSuccessFeedbackRoleArn
+ * @property string|null $SqsFailureFeedbackRoleArn
+ * @property string|null $ApplicationSuccessFeedbackRoleArn
+ * @property string|null $FirehoseSuccessFeedbackRoleArn
+ * @property string|null $FirehoseFailureFeedbackRoleArn
+ * @property string|null $HttpSuccessFeedbackRoleArn
+ * @property string|null $HttpFailureFeedbackRoleArn
  */
 class AwsSnsTopicDetails extends Shape
 {
     /**
      * @param array{
-     *     KmsMasterKeyId?: string,
-     *     Subscription?: list<AwsSnsTopicSubscription>,
-     *     TopicName?: string,
-     *     Owner?: string,
-     *     SqsSuccessFeedbackRoleArn?: string,
-     *     SqsFailureFeedbackRoleArn?: string,
-     *     ApplicationSuccessFeedbackRoleArn?: string,
-     *     FirehoseSuccessFeedbackRoleArn?: string,
-     *     FirehoseFailureFeedbackRoleArn?: string,
-     *     HttpSuccessFeedbackRoleArn?: string,
-     *     HttpFailureFeedbackRoleArn?: string
+     *     KmsMasterKeyId?: string|null,
+     *     Subscription?: list<AwsSnsTopicSubscription>|null,
+     *     TopicName?: string|null,
+     *     Owner?: string|null,
+     *     SqsSuccessFeedbackRoleArn?: string|null,
+     *     SqsFailureFeedbackRoleArn?: string|null,
+     *     ApplicationSuccessFeedbackRoleArn?: string|null,
+     *     FirehoseSuccessFeedbackRoleArn?: string|null,
+     *     FirehoseFailureFeedbackRoleArn?: string|null,
+     *     HttpSuccessFeedbackRoleArn?: string|null,
+     *     HttpFailureFeedbackRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

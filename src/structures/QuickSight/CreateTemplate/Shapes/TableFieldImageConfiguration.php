@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TableCellImageSizingConfiguration $SizingOptions
+ * @property TableCellImageSizingConfiguration|null $SizingOptions
  */
 class TableFieldImageConfiguration extends Shape
 {
     /**
-     * @param array{SizingOptions?: TableCellImageSizingConfiguration} $args
+     * @param array{SizingOptions?: TableCellImageSizingConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

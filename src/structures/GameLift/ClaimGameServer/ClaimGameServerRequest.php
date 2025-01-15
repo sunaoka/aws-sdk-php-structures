@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GameServerGroupName
- * @property string $GameServerId
- * @property string $GameServerData
- * @property Shapes\ClaimFilterOption $FilterOption
+ * @property string|null $GameServerId
+ * @property string|null $GameServerData
+ * @property Shapes\ClaimFilterOption|null $FilterOption
  */
 class ClaimGameServerRequest extends Request
 {
     /**
      * @param array{
      *     GameServerGroupName: string,
-     *     GameServerId?: string,
-     *     GameServerData?: string,
-     *     FilterOption?: Shapes\ClaimFilterOption
+     *     GameServerId?: string|null,
+     *     GameServerData?: string|null,
+     *     FilterOption?: Shapes\ClaimFilterOption|null
      * } $args
      */
     public function __construct(array $args)

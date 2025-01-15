@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $StaticFileId
- * @property StaticFileSource $Source
+ * @property StaticFileSource|null $Source
  */
 class ImageStaticFile extends Shape
 {
     /**
      * @param array{
      *     StaticFileId: string,
-     *     Source?: StaticFileSource
+     *     Source?: StaticFileSource|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MediaConnect\UpdateFlowSource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FlowArn
- * @property Shapes\Source $Source
+ * @property string|null $FlowArn
+ * @property Shapes\Source|null $Source
  */
 class UpdateFlowSourceResponse extends Response
 {

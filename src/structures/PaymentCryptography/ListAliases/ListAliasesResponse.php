@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Alias> $Aliases
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListAliasesResponse extends Response
 {

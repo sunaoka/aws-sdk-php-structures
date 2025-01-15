@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'OFF'|'ON' $thingGroupIndexingMode
- * @property list<Field> $managedFields
- * @property list<Field> $customFields
+ * @property list<Field>|null $managedFields
+ * @property list<Field>|null $customFields
  */
 class ThingGroupIndexingConfiguration extends Shape
 {
     /**
      * @param array{
      *     thingGroupIndexingMode: 'OFF'|'ON',
-     *     managedFields?: list<Field>,
-     *     customFields?: list<Field>
+     *     managedFields?: list<Field>|null,
+     *     customFields?: list<Field>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Backup\GetBackupPlanFromTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceType
- * @property array<string, string> $BackupOptions
+ * @property string|null $ResourceType
+ * @property array<string, string>|null $BackupOptions
  */
 class AdvancedBackupSetting extends Shape
 {
     /**
      * @param array{
-     *     ResourceType?: string,
-     *     BackupOptions?: array<string, string>
+     *     ResourceType?: string|null,
+     *     BackupOptions?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

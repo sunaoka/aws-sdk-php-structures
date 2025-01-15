@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetOrganizationConfigRuleDetailed
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\MemberAccountStatus> $OrganizationConfigRuleDetailedStatus
- * @property string $NextToken
+ * @property list<Shapes\MemberAccountStatus>|null $OrganizationConfigRuleDetailedStatus
+ * @property string|null $NextToken
  */
 class GetOrganizationConfigRuleDetailedStatusResponse extends Response
 {

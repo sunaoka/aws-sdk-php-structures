@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DeviceDefinitionId
- * @property string $Name
+ * @property string|null $Name
  */
 class UpdateDeviceDefinitionRequest extends Request
 {
     /**
      * @param array{
      *     DeviceDefinitionId: string,
-     *     Name?: string
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Chime\DescribeChannelMembershipForAppInstanceUs
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ChannelMembershipForAppInstanceUserSummary $ChannelMembership
+ * @property Shapes\ChannelMembershipForAppInstanceUserSummary|null $ChannelMembership
  */
 class DescribeChannelMembershipForAppInstanceUserResponse extends Response
 {

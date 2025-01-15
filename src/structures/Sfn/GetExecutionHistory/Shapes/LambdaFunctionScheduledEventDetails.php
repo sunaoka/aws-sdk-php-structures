@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $resource
- * @property string $input
- * @property HistoryEventExecutionDataDetails $inputDetails
- * @property int $timeoutInSeconds
- * @property TaskCredentials $taskCredentials
+ * @property string|null $input
+ * @property HistoryEventExecutionDataDetails|null $inputDetails
+ * @property int|null $timeoutInSeconds
+ * @property TaskCredentials|null $taskCredentials
  */
 class LambdaFunctionScheduledEventDetails extends Shape
 {
     /**
      * @param array{
      *     resource: string,
-     *     input?: string,
-     *     inputDetails?: HistoryEventExecutionDataDetails,
-     *     timeoutInSeconds?: int,
-     *     taskCredentials?: TaskCredentials
+     *     input?: string|null,
+     *     inputDetails?: HistoryEventExecutionDataDetails|null,
+     *     timeoutInSeconds?: int|null,
+     *     taskCredentials?: TaskCredentials|null
      * } $args
      */
     public function __construct(array $args)

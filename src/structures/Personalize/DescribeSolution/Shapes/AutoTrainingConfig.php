@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeSolution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $schedulingExpression
+ * @property string|null $schedulingExpression
  */
 class AutoTrainingConfig extends Shape
 {
     /**
-     * @param array{schedulingExpression?: string} $args
+     * @param array{schedulingExpression?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LakeFormation\AddLFTagsToResource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property Shapes\Resource $Resource
  * @property list<Shapes\LFTagPair> $LFTags
  */
@@ -13,7 +13,7 @@ class AddLFTagsToResourceRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     Resource: Shapes\Resource,
      *     LFTags: list<Shapes\LFTagPair>
      * } $args

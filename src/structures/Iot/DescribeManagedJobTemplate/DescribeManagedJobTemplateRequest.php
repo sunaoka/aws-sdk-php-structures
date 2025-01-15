@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $templateName
- * @property string $templateVersion
+ * @property string|null $templateVersion
  */
 class DescribeManagedJobTemplateRequest extends Request
 {
     /**
      * @param array{
      *     templateName: string,
-     *     templateVersion?: string
+     *     templateVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

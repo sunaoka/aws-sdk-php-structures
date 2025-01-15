@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Document $document
- * @property double $relevanceScore
+ * @property double|null $relevanceScore
  * @property string $resultId
  */
 class ResultData extends Shape
@@ -14,7 +14,7 @@ class ResultData extends Shape
     /**
      * @param array{
      *     document: Document,
-     *     relevanceScore?: double,
+     *     relevanceScore?: double|null,
      *     resultId: string
      * } $args
      */

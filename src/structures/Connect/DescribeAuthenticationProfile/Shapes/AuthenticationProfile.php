@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeAuthenticationProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
- * @property string $Name
- * @property string $Description
- * @property list<string> $AllowedIps
- * @property list<string> $BlockedIps
- * @property bool $IsDefault
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $LastModifiedRegion
- * @property int<10, 60> $PeriodicSessionDuration
- * @property int<360, 720> $MaxSessionDuration
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property list<string>|null $AllowedIps
+ * @property list<string>|null $BlockedIps
+ * @property bool|null $IsDefault
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
+ * @property int<10, 60>|null $PeriodicSessionDuration
+ * @property int<360, 720>|null $MaxSessionDuration
  */
 class AuthenticationProfile extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     AllowedIps?: list<string>,
-     *     BlockedIps?: list<string>,
-     *     IsDefault?: bool,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedRegion?: string,
-     *     PeriodicSessionDuration?: int<10, 60>,
-     *     MaxSessionDuration?: int<360, 720>
+     *     Id?: string|null,
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     AllowedIps?: list<string>|null,
+     *     BlockedIps?: list<string>|null,
+     *     IsDefault?: bool|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null,
+     *     PeriodicSessionDuration?: int<10, 60>|null,
+     *     MaxSessionDuration?: int<360, 720>|null
      * } $args
      */
     public function __construct(array $args = [])

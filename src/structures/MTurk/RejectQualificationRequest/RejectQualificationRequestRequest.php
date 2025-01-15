@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $QualificationRequestId
- * @property string $Reason
+ * @property string|null $Reason
  */
 class RejectQualificationRequestRequest extends Request
 {
     /**
      * @param array{
      *     QualificationRequestId: string,
-     *     Reason?: string
+     *     Reason?: string|null
      * } $args
      */
     public function __construct(array $args)

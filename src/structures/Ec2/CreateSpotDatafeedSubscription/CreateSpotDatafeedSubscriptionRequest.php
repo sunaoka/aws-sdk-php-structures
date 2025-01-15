@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateSpotDatafeedSubscription;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $Bucket
- * @property string $Prefix
+ * @property string|null $Prefix
  */
 class CreateSpotDatafeedSubscriptionRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     Bucket: string,
-     *     Prefix?: string
+     *     Prefix?: string|null
      * } $args
      */
     public function __construct(array $args)

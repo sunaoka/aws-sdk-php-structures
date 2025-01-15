@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeReplicationIns
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ReplicationInstanceArn
- * @property list<Shapes\ReplicationInstanceTaskLog> $ReplicationInstanceTaskLogs
- * @property string $Marker
+ * @property string|null $ReplicationInstanceArn
+ * @property list<Shapes\ReplicationInstanceTaskLog>|null $ReplicationInstanceTaskLogs
+ * @property string|null $Marker
  */
 class DescribeReplicationInstanceTaskLogsResponse extends Response
 {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'productCodes'|'createVolumePermission' $Attribute
  * @property string $SnapshotId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DescribeSnapshotAttributeRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeSnapshotAttributeRequest extends Request
      * @param array{
      *     Attribute: 'productCodes'|'createVolumePermission',
      *     SnapshotId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

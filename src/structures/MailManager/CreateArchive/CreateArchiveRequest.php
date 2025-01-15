@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ArchiveName
- * @property string $ClientToken
- * @property string $KmsKeyArn
- * @property Shapes\ArchiveRetention $Retention
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ClientToken
+ * @property string|null $KmsKeyArn
+ * @property Shapes\ArchiveRetention|null $Retention
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateArchiveRequest extends Request
 {
     /**
      * @param array{
      *     ArchiveName: string,
-     *     ClientToken?: string,
-     *     KmsKeyArn?: string,
-     *     Retention?: Shapes\ArchiveRetention,
-     *     Tags?: list<Shapes\Tag>
+     *     ClientToken?: string|null,
+     *     KmsKeyArn?: string|null,
+     *     Retention?: Shapes\ArchiveRetention|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\AppMesh\CreateRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $exact
- * @property string $prefix
- * @property MatchRange $range
- * @property string $regex
- * @property string $suffix
+ * @property string|null $exact
+ * @property string|null $prefix
+ * @property MatchRange|null $range
+ * @property string|null $regex
+ * @property string|null $suffix
  */
 class HeaderMatchMethod extends Shape
 {
     /**
      * @param array{
-     *     exact?: string,
-     *     prefix?: string,
-     *     range?: MatchRange,
-     *     regex?: string,
-     *     suffix?: string
+     *     exact?: string|null,
+     *     prefix?: string|null,
+     *     range?: MatchRange|null,
+     *     regex?: string|null,
+     *     suffix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

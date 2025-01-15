@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\QuerySchemaVersionMetadata\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MetadataValue
- * @property string $CreatedTime
+ * @property string|null $MetadataValue
+ * @property string|null $CreatedTime
  */
 class OtherMetadataValueListItem extends Shape
 {
     /**
      * @param array{
-     *     MetadataValue?: string,
-     *     CreatedTime?: string
+     *     MetadataValue?: string|null,
+     *     CreatedTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

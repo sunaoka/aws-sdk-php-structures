@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImagePackages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $packageName
- * @property string $packageVersion
+ * @property string|null $packageName
+ * @property string|null $packageVersion
  */
 class ImagePackage extends Shape
 {
     /**
      * @param array{
-     *     packageName?: string,
-     *     packageVersion?: string
+     *     packageName?: string|null,
+     *     packageVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

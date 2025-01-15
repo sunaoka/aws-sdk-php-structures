@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $accountId
  * @property string $vaultName
- * @property Shapes\VaultNotificationConfig $vaultNotificationConfig
+ * @property Shapes\VaultNotificationConfig|null $vaultNotificationConfig
  */
 class SetVaultNotificationsRequest extends Request
 {
@@ -15,7 +15,7 @@ class SetVaultNotificationsRequest extends Request
      * @param array{
      *     accountId: string,
      *     vaultName: string,
-     *     vaultNotificationConfig?: Shapes\VaultNotificationConfig
+     *     vaultNotificationConfig?: Shapes\VaultNotificationConfig|null
      * } $args
      */
     public function __construct(array $args)

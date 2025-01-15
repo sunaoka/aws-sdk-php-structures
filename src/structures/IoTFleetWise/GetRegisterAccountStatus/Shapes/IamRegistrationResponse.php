@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $roleArn
  * @property 'REGISTRATION_PENDING'|'REGISTRATION_SUCCESS'|'REGISTRATION_FAILURE' $registrationStatus
- * @property string $errorMessage
+ * @property string|null $errorMessage
  */
 class IamRegistrationResponse extends Shape
 {
@@ -15,7 +15,7 @@ class IamRegistrationResponse extends Shape
      * @param array{
      *     roleArn: string,
      *     registrationStatus: 'REGISTRATION_PENDING'|'REGISTRATION_SUCCESS'|'REGISTRATION_FAILURE',
-     *     errorMessage?: string
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

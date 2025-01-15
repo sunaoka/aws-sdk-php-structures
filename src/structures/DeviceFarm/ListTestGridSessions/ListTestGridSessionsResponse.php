@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListTestGridSessions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\TestGridSession> $testGridSessions
- * @property string $nextToken
+ * @property list<Shapes\TestGridSession>|null $testGridSessions
+ * @property string|null $nextToken
  */
 class ListTestGridSessionsResponse extends Response
 {

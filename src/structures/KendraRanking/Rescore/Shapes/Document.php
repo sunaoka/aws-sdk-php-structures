@@ -6,11 +6,11 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property string $GroupId
- * @property string $Title
- * @property string $Body
- * @property list<string> $TokenizedTitle
- * @property list<string> $TokenizedBody
+ * @property string|null $GroupId
+ * @property string|null $Title
+ * @property string|null $Body
+ * @property list<string>|null $TokenizedTitle
+ * @property list<string>|null $TokenizedBody
  * @property float $OriginalScore
  */
 class Document extends Shape
@@ -18,11 +18,11 @@ class Document extends Shape
     /**
      * @param array{
      *     Id: string,
-     *     GroupId?: string,
-     *     Title?: string,
-     *     Body?: string,
-     *     TokenizedTitle?: list<string>,
-     *     TokenizedBody?: list<string>,
+     *     GroupId?: string|null,
+     *     Title?: string|null,
+     *     Body?: string|null,
+     *     TokenizedTitle?: list<string>|null,
+     *     TokenizedBody?: list<string>|null,
      *     OriginalScore: float
      * } $args
      */

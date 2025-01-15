@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Translate\ListTerminologies;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\TerminologyProperties> $TerminologyPropertiesList
- * @property string $NextToken
+ * @property list<Shapes\TerminologyProperties>|null $TerminologyPropertiesList
+ * @property string|null $NextToken
  */
 class ListTerminologiesResponse extends Response
 {

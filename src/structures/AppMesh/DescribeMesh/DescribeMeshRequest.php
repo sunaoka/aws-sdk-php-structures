@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $meshName
- * @property string $meshOwner
+ * @property string|null $meshOwner
  */
 class DescribeMeshRequest extends Request
 {
     /**
      * @param array{
      *     meshName: string,
-     *     meshOwner?: string
+     *     meshOwner?: string|null
      * } $args
      */
     public function __construct(array $args)

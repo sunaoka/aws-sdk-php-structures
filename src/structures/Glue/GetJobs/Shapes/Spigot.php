@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property list<string> $Inputs
  * @property string $Path
- * @property int<0, 100> $Topk
- * @property double $Prob
+ * @property int<0, 100>|null $Topk
+ * @property double|null $Prob
  */
 class Spigot extends Shape
 {
@@ -18,8 +18,8 @@ class Spigot extends Shape
      *     Name: string,
      *     Inputs: list<string>,
      *     Path: string,
-     *     Topk?: int<0, 100>,
-     *     Prob?: double
+     *     Topk?: int<0, 100>|null,
+     *     Prob?: double|null
      * } $args
      */
     public function __construct(array $args)

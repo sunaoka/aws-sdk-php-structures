@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property string $Description
+ * @property string|null $Description
  * @property string $ContactFlowId
- * @property string $FlowContentSha256
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $LastModifiedRegion
+ * @property string|null $FlowContentSha256
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  */
 class CreateContactFlowVersionRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     ContactFlowId: string,
-     *     FlowContentSha256?: string,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedRegion?: string
+     *     FlowContentSha256?: string|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property MetadataTableConfigurationResult $MetadataTableConfigurationResult
  * @property string $Status
- * @property ErrorDetails $Error
+ * @property ErrorDetails|null $Error
  */
 class GetBucketMetadataTableConfigurationResult extends Shape
 {
@@ -15,7 +15,7 @@ class GetBucketMetadataTableConfigurationResult extends Shape
      * @param array{
      *     MetadataTableConfigurationResult: MetadataTableConfigurationResult,
      *     Status: string,
-     *     Error?: ErrorDetails
+     *     Error?: ErrorDetails|null
      * } $args
      */
     public function __construct(array $args)

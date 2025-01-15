@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Backup\DeleteBackupPlan;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $BackupPlanId
- * @property string $BackupPlanArn
- * @property \Aws\Api\DateTimeResult $DeletionDate
- * @property string $VersionId
+ * @property string|null $BackupPlanId
+ * @property string|null $BackupPlanArn
+ * @property \Aws\Api\DateTimeResult|null $DeletionDate
+ * @property string|null $VersionId
  */
 class DeleteBackupPlanResponse extends Response
 {

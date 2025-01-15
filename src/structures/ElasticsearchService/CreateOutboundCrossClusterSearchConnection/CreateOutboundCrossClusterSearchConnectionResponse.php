@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\CreateOutboundCrossCluster
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DomainInformation $SourceDomainInfo
- * @property Shapes\DomainInformation $DestinationDomainInfo
- * @property string $ConnectionAlias
- * @property Shapes\OutboundCrossClusterSearchConnectionStatus $ConnectionStatus
- * @property string $CrossClusterSearchConnectionId
+ * @property Shapes\DomainInformation|null $SourceDomainInfo
+ * @property Shapes\DomainInformation|null $DestinationDomainInfo
+ * @property string|null $ConnectionAlias
+ * @property Shapes\OutboundCrossClusterSearchConnectionStatus|null $ConnectionStatus
+ * @property string|null $CrossClusterSearchConnectionId
  */
 class CreateOutboundCrossClusterSearchConnectionResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\DisassociateFirewallRuleGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\FirewallRuleGroupAssociation $FirewallRuleGroupAssociation
+ * @property Shapes\FirewallRuleGroupAssociation|null $FirewallRuleGroupAssociation
  */
 class DisassociateFirewallRuleGroupResponse extends Response
 {

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $startDateTime
  * @property \Aws\Api\DateTimeResult $endDateTime
  * @property string $intentPath
- * @property list<Shapes\AnalyticsPathFilter> $filters
+ * @property list<Shapes\AnalyticsPathFilter>|null $filters
  */
 class ListIntentPathsRequest extends Request
 {
@@ -19,7 +19,7 @@ class ListIntentPathsRequest extends Request
      *     startDateTime: \Aws\Api\DateTimeResult,
      *     endDateTime: \Aws\Api\DateTimeResult,
      *     intentPath: string,
-     *     filters?: list<Shapes\AnalyticsPathFilter>
+     *     filters?: list<Shapes\AnalyticsPathFilter>|null
      * } $args
      */
     public function __construct(array $args)

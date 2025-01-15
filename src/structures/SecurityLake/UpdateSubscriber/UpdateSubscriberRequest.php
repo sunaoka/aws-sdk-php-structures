@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityLake\UpdateSubscriber;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\LogSourceResource> $sources
- * @property string $subscriberDescription
+ * @property list<Shapes\LogSourceResource>|null $sources
+ * @property string|null $subscriberDescription
  * @property string $subscriberId
- * @property Shapes\AwsIdentity $subscriberIdentity
- * @property string $subscriberName
+ * @property Shapes\AwsIdentity|null $subscriberIdentity
+ * @property string|null $subscriberName
  */
 class UpdateSubscriberRequest extends Request
 {
     /**
      * @param array{
-     *     sources?: list<Shapes\LogSourceResource>,
-     *     subscriberDescription?: string,
+     *     sources?: list<Shapes\LogSourceResource>|null,
+     *     subscriberDescription?: string|null,
      *     subscriberId: string,
-     *     subscriberIdentity?: Shapes\AwsIdentity,
-     *     subscriberName?: string
+     *     subscriberIdentity?: Shapes\AwsIdentity|null,
+     *     subscriberName?: string|null
      * } $args
      */
     public function __construct(array $args)

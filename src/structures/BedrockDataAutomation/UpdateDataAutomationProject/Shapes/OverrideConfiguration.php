@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomation\UpdateDataAutomationProje
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DocumentOverrideConfiguration $document
+ * @property DocumentOverrideConfiguration|null $document
  */
 class OverrideConfiguration extends Shape
 {
     /**
-     * @param array{document?: DocumentOverrideConfiguration} $args
+     * @param array{document?: DocumentOverrideConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

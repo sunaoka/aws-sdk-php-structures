@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\RDSDataService\ExecuteSql\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Value> $values
+ * @property list<Value>|null $values
  */
 class Record extends Shape
 {
     /**
-     * @param array{values?: list<Value>} $args
+     * @param array{values?: list<Value>|null} $args
      */
     public function __construct(array $args = [])
     {

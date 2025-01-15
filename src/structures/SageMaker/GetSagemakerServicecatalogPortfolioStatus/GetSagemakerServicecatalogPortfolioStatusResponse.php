@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\GetSagemakerServicecatalogPortfolioSt
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'Enabled'|'Disabled' $Status
+ * @property 'Enabled'|'Disabled'|null $Status
  */
 class GetSagemakerServicecatalogPortfolioStatusResponse extends Response
 {

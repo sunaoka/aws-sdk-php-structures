@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Redshift\ListRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Text
- * @property string $Link
+ * @property string|null $Text
+ * @property string|null $Link
  */
 class ReferenceLink extends Shape
 {
     /**
      * @param array{
-     *     Text?: string,
-     *     Link?: string
+     *     Text?: string|null,
+     *     Link?: string|null
      * } $args
      */
     public function __construct(array $args = [])

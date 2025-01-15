@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\GetVoiceConnectorLoggingConfigura
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\LoggingConfiguration $LoggingConfiguration
+ * @property Shapes\LoggingConfiguration|null $LoggingConfiguration
  */
 class GetVoiceConnectorLoggingConfigurationResponse extends Response
 {

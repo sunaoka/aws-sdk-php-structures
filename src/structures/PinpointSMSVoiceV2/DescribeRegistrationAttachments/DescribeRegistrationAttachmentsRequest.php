@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DescribeRegistrationAttachme
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $RegistrationAttachmentIds
- * @property list<Shapes\RegistrationAttachmentFilter> $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property list<string>|null $RegistrationAttachmentIds
+ * @property list<Shapes\RegistrationAttachmentFilter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class DescribeRegistrationAttachmentsRequest extends Request
 {
     /**
      * @param array{
-     *     RegistrationAttachmentIds?: list<string>,
-     *     Filters?: list<Shapes\RegistrationAttachmentFilter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     RegistrationAttachmentIds?: list<string>|null,
+     *     Filters?: list<Shapes\RegistrationAttachmentFilter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

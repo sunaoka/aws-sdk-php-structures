@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\KinesisVideoArchivedMedia\ListFragments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FragmentNumber
- * @property int $FragmentSizeInBytes
- * @property \Aws\Api\DateTimeResult $ProducerTimestamp
- * @property \Aws\Api\DateTimeResult $ServerTimestamp
- * @property int $FragmentLengthInMilliseconds
+ * @property string|null $FragmentNumber
+ * @property int|null $FragmentSizeInBytes
+ * @property \Aws\Api\DateTimeResult|null $ProducerTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ServerTimestamp
+ * @property int|null $FragmentLengthInMilliseconds
  */
 class Fragment extends Shape
 {
     /**
      * @param array{
-     *     FragmentNumber?: string,
-     *     FragmentSizeInBytes?: int,
-     *     ProducerTimestamp?: \Aws\Api\DateTimeResult,
-     *     ServerTimestamp?: \Aws\Api\DateTimeResult,
-     *     FragmentLengthInMilliseconds?: int
+     *     FragmentNumber?: string|null,
+     *     FragmentSizeInBytes?: int|null,
+     *     ProducerTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ServerTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     FragmentLengthInMilliseconds?: int|null
      * } $args
      */
     public function __construct(array $args = [])

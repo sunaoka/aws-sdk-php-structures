@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TypeName
  * @property string $SchemaVersion
  * @property string $CaptureTime
- * @property string $ContentHash
- * @property list<array<string, string>> $Content
- * @property array<string, string> $Context
+ * @property string|null $ContentHash
+ * @property list<array<string, string>>|null $Content
+ * @property array<string, string>|null $Context
  */
 class InventoryItem extends Shape
 {
@@ -19,9 +19,9 @@ class InventoryItem extends Shape
      *     TypeName: string,
      *     SchemaVersion: string,
      *     CaptureTime: string,
-     *     ContentHash?: string,
-     *     Content?: list<array<string, string>>,
-     *     Context?: array<string, string>
+     *     ContentHash?: string|null,
+     *     Content?: list<array<string, string>>|null,
+     *     Context?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

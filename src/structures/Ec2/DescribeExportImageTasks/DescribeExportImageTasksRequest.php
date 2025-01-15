@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeExportImageTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property list<Shapes\Filter> $Filters
- * @property list<string> $ExportImageTaskIds
- * @property int<1, 500> $MaxResults
- * @property string $NextToken
+ * @property bool|null $DryRun
+ * @property list<Shapes\Filter>|null $Filters
+ * @property list<string>|null $ExportImageTaskIds
+ * @property int<1, 500>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeExportImageTasksRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     Filters?: list<Shapes\Filter>,
-     *     ExportImageTaskIds?: list<string>,
-     *     MaxResults?: int<1, 500>,
-     *     NextToken?: string
+     *     DryRun?: bool|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     ExportImageTaskIds?: list<string>|null,
+     *     MaxResults?: int<1, 500>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,51 +5,51 @@ namespace Sunaoka\Aws\Structures\MediaConnect\UpdateFlowSource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\UpdateEncryption $Decryption
- * @property string $Description
- * @property string $EntitlementArn
+ * @property Shapes\UpdateEncryption|null $Decryption
+ * @property string|null $Description
+ * @property string|null $EntitlementArn
  * @property string $FlowArn
- * @property int $IngestPort
- * @property int $MaxBitrate
- * @property int $MaxLatency
- * @property int $MaxSyncBuffer
- * @property list<Shapes\MediaStreamSourceConfigurationRequest> $MediaStreamSourceConfigurations
- * @property int $MinLatency
- * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp' $Protocol
- * @property int $SenderControlPort
- * @property string $SenderIpAddress
+ * @property int|null $IngestPort
+ * @property int|null $MaxBitrate
+ * @property int|null $MaxLatency
+ * @property int|null $MaxSyncBuffer
+ * @property list<Shapes\MediaStreamSourceConfigurationRequest>|null $MediaStreamSourceConfigurations
+ * @property int|null $MinLatency
+ * @property 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null $Protocol
+ * @property int|null $SenderControlPort
+ * @property string|null $SenderIpAddress
  * @property string $SourceArn
- * @property string $SourceListenerAddress
- * @property int $SourceListenerPort
- * @property string $StreamId
- * @property string $VpcInterfaceName
- * @property string $WhitelistCidr
- * @property Shapes\UpdateGatewayBridgeSourceRequest $GatewayBridgeSource
+ * @property string|null $SourceListenerAddress
+ * @property int|null $SourceListenerPort
+ * @property string|null $StreamId
+ * @property string|null $VpcInterfaceName
+ * @property string|null $WhitelistCidr
+ * @property Shapes\UpdateGatewayBridgeSourceRequest|null $GatewayBridgeSource
  */
 class UpdateFlowSourceRequest extends Request
 {
     /**
      * @param array{
-     *     Decryption?: Shapes\UpdateEncryption,
-     *     Description?: string,
-     *     EntitlementArn?: string,
+     *     Decryption?: Shapes\UpdateEncryption|null,
+     *     Description?: string|null,
+     *     EntitlementArn?: string|null,
      *     FlowArn: string,
-     *     IngestPort?: int,
-     *     MaxBitrate?: int,
-     *     MaxLatency?: int,
-     *     MaxSyncBuffer?: int,
-     *     MediaStreamSourceConfigurations?: list<Shapes\MediaStreamSourceConfigurationRequest>,
-     *     MinLatency?: int,
-     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp',
-     *     SenderControlPort?: int,
-     *     SenderIpAddress?: string,
+     *     IngestPort?: int|null,
+     *     MaxBitrate?: int|null,
+     *     MaxLatency?: int|null,
+     *     MaxSyncBuffer?: int|null,
+     *     MediaStreamSourceConfigurations?: list<Shapes\MediaStreamSourceConfigurationRequest>|null,
+     *     MinLatency?: int|null,
+     *     Protocol?: 'zixi-push'|'rtp-fec'|'rtp'|'zixi-pull'|'rist'|'st2110-jpegxs'|'cdi'|'srt-listener'|'srt-caller'|'fujitsu-qos'|'udp'|null,
+     *     SenderControlPort?: int|null,
+     *     SenderIpAddress?: string|null,
      *     SourceArn: string,
-     *     SourceListenerAddress?: string,
-     *     SourceListenerPort?: int,
-     *     StreamId?: string,
-     *     VpcInterfaceName?: string,
-     *     WhitelistCidr?: string,
-     *     GatewayBridgeSource?: Shapes\UpdateGatewayBridgeSourceRequest
+     *     SourceListenerAddress?: string|null,
+     *     SourceListenerPort?: int|null,
+     *     StreamId?: string|null,
+     *     VpcInterfaceName?: string|null,
+     *     WhitelistCidr?: string|null,
+     *     GatewayBridgeSource?: Shapes\UpdateGatewayBridgeSourceRequest|null
      * } $args
      */
     public function __construct(array $args)

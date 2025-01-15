@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\GetUserPoolMfaConfig\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
+ * @property bool|null $Enabled
  */
 class SoftwareTokenMfaConfigType extends Shape
 {
     /**
-     * @param array{Enabled?: bool} $args
+     * @param array{Enabled?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

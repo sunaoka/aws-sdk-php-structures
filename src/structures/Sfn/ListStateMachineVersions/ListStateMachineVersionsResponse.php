@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\StateMachineVersionListItem> $stateMachineVersions
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListStateMachineVersionsResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\GetResolverQueryLogConfigAssoci
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ResolverQueryLogConfigAssociation $ResolverQueryLogConfigAssociation
+ * @property Shapes\ResolverQueryLogConfigAssociation|null $ResolverQueryLogConfigAssociation
  */
 class GetResolverQueryLogConfigAssociationResponse extends Response
 {

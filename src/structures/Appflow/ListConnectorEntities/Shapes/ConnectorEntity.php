@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $label
- * @property bool $hasNestedEntities
+ * @property string|null $label
+ * @property bool|null $hasNestedEntities
  */
 class ConnectorEntity extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     label?: string,
-     *     hasNestedEntities?: bool
+     *     label?: string|null,
+     *     hasNestedEntities?: bool|null
      * } $args
      */
     public function __construct(array $args)

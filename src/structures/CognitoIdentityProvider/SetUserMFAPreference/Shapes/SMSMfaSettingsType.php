@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\SetUserMFAPreference\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property bool $PreferredMfa
+ * @property bool|null $Enabled
+ * @property bool|null $PreferredMfa
  */
 class SMSMfaSettingsType extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     PreferredMfa?: bool
+     *     Enabled?: bool|null,
+     *     PreferredMfa?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

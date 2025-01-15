@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateDeployment;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DeploymentArn
- * @property string $DeploymentId
+ * @property string|null $DeploymentArn
+ * @property string|null $DeploymentId
  */
 class CreateDeploymentResponse extends Response
 {

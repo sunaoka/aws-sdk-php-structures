@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domainIdentifier
  * @property string $formTypeIdentifier
- * @property string $revision
+ * @property string|null $revision
  */
 class GetFormTypeRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetFormTypeRequest extends Request
      * @param array{
      *     domainIdentifier: string,
      *     formTypeIdentifier: string,
-     *     revision?: string
+     *     revision?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Uri
- * @property string $ETag
- * @property list<string> $PartitionValues
+ * @property string|null $ETag
+ * @property list<string>|null $PartitionValues
  */
 class DeleteObjectInput extends Shape
 {
     /**
      * @param array{
      *     Uri: string,
-     *     ETag?: string,
-     *     PartitionValues?: list<string>
+     *     ETag?: string|null,
+     *     PartitionValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

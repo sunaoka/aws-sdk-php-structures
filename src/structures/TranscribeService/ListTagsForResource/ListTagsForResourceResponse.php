@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\TranscribeService\ListTagsForResource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ResourceArn
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ResourceArn
+ * @property list<Shapes\Tag>|null $Tags
  */
 class ListTagsForResourceResponse extends Response
 {

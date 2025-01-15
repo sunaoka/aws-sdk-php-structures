@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $bandwidth
  * @property string $connectionName
  * @property int $vlan
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class AllocateHostedConnectionRequest extends Request
 {
@@ -21,7 +21,7 @@ class AllocateHostedConnectionRequest extends Request
      *     bandwidth: string,
      *     connectionName: string,
      *     vlan: int,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

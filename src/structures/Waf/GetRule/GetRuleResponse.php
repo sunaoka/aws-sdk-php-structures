@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Waf\GetRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Rule $Rule
+ * @property Shapes\Rule|null $Rule
  */
 class GetRuleResponse extends Response
 {

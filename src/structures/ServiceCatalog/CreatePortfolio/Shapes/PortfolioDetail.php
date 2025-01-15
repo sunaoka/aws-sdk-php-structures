@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\CreatePortfolio\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $ARN
- * @property string $DisplayName
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property string $ProviderName
+ * @property string|null $Id
+ * @property string|null $ARN
+ * @property string|null $DisplayName
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property string|null $ProviderName
  */
 class PortfolioDetail extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     ARN?: string,
-     *     DisplayName?: string,
-     *     Description?: string,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     ProviderName?: string
+     *     Id?: string|null,
+     *     ARN?: string|null,
+     *     DisplayName?: string|null,
+     *     Description?: string|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     ProviderName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourceDBParameterGroupIdentifier
  * @property string $TargetDBParameterGroupIdentifier
  * @property string $TargetDBParameterGroupDescription
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CopyDBParameterGroupRequest extends Request
 {
@@ -17,7 +17,7 @@ class CopyDBParameterGroupRequest extends Request
      *     SourceDBParameterGroupIdentifier: string,
      *     TargetDBParameterGroupIdentifier: string,
      *     TargetDBParameterGroupDescription: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

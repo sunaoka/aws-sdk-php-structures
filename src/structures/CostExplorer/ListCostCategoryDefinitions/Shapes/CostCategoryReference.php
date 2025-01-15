@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CostExplorer\ListCostCategoryDefinitions\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CostCategoryArn
- * @property string $Name
- * @property string $EffectiveStart
- * @property string $EffectiveEnd
- * @property int<0, max> $NumberOfRules
- * @property list<CostCategoryProcessingStatus> $ProcessingStatus
- * @property list<string> $Values
- * @property string $DefaultValue
+ * @property string|null $CostCategoryArn
+ * @property string|null $Name
+ * @property string|null $EffectiveStart
+ * @property string|null $EffectiveEnd
+ * @property int<0, max>|null $NumberOfRules
+ * @property list<CostCategoryProcessingStatus>|null $ProcessingStatus
+ * @property list<string>|null $Values
+ * @property string|null $DefaultValue
  */
 class CostCategoryReference extends Shape
 {
     /**
      * @param array{
-     *     CostCategoryArn?: string,
-     *     Name?: string,
-     *     EffectiveStart?: string,
-     *     EffectiveEnd?: string,
-     *     NumberOfRules?: int<0, max>,
-     *     ProcessingStatus?: list<CostCategoryProcessingStatus>,
-     *     Values?: list<string>,
-     *     DefaultValue?: string
+     *     CostCategoryArn?: string|null,
+     *     Name?: string|null,
+     *     EffectiveStart?: string|null,
+     *     EffectiveEnd?: string|null,
+     *     NumberOfRules?: int<0, max>|null,
+     *     ProcessingStatus?: list<CostCategoryProcessingStatus>|null,
+     *     Values?: list<string>|null,
+     *     DefaultValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

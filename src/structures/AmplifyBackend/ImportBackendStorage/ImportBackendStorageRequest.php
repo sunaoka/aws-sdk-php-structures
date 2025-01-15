@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AppId
  * @property string $BackendEnvironmentName
- * @property string $BucketName
+ * @property string|null $BucketName
  * @property 'S3' $ServiceName
  */
 class ImportBackendStorageRequest extends Request
@@ -16,7 +16,7 @@ class ImportBackendStorageRequest extends Request
      * @param array{
      *     AppId: string,
      *     BackendEnvironmentName: string,
-     *     BucketName?: string,
+     *     BucketName?: string|null,
      *     ServiceName: 'S3'
      * } $args
      */

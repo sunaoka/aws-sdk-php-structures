@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Iot\ListThings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $thingName
- * @property string $thingTypeName
- * @property string $thingArn
- * @property array<string, string> $attributes
- * @property int $version
+ * @property string|null $thingName
+ * @property string|null $thingTypeName
+ * @property string|null $thingArn
+ * @property array<string, string>|null $attributes
+ * @property int|null $version
  */
 class ThingAttribute extends Shape
 {
     /**
      * @param array{
-     *     thingName?: string,
-     *     thingTypeName?: string,
-     *     thingArn?: string,
-     *     attributes?: array<string, string>,
-     *     version?: int
+     *     thingName?: string|null,
+     *     thingTypeName?: string|null,
+     *     thingArn?: string|null,
+     *     attributes?: array<string, string>|null,
+     *     version?: int|null
      * } $args
      */
     public function __construct(array $args = [])

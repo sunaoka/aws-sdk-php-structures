@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\GetSubnetCidrReservations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\Filter> $Filters
+ * @property list<Shapes\Filter>|null $Filters
  * @property string $SubnetId
- * @property bool $DryRun
- * @property string $NextToken
- * @property int<5, 1000> $MaxResults
+ * @property bool|null $DryRun
+ * @property string|null $NextToken
+ * @property int<5, 1000>|null $MaxResults
  */
 class GetSubnetCidrReservationsRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: list<Shapes\Filter>,
+     *     Filters?: list<Shapes\Filter>|null,
      *     SubnetId: string,
-     *     DryRun?: bool,
-     *     NextToken?: string,
-     *     MaxResults?: int<5, 1000>
+     *     DryRun?: bool|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<5, 1000>|null
      * } $args
      */
     public function __construct(array $args)

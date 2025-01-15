@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Outposts\ListBlockingInstancesForCapacityTask\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceId
- * @property string $AccountId
- * @property 'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53' $AwsServiceName
+ * @property string|null $InstanceId
+ * @property string|null $AccountId
+ * @property 'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'|null $AwsServiceName
  */
 class BlockingInstance extends Shape
 {
     /**
      * @param array{
-     *     InstanceId?: string,
-     *     AccountId?: string,
-     *     AwsServiceName?: 'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'
+     *     InstanceId?: string|null,
+     *     AccountId?: string|null,
+     *     AwsServiceName?: 'AWS'|'EC2'|'ELASTICACHE'|'ELB'|'RDS'|'ROUTE53'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ListLinksItem> $Items
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListLinksResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetEventPredictionMetadata\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $outputVariableName
- * @property string $evaluationScore
- * @property PredictionExplanations $predictionExplanations
+ * @property string|null $outputVariableName
+ * @property string|null $evaluationScore
+ * @property PredictionExplanations|null $predictionExplanations
  */
 class ModelVersionEvaluation extends Shape
 {
     /**
      * @param array{
-     *     outputVariableName?: string,
-     *     evaluationScore?: string,
-     *     predictionExplanations?: PredictionExplanations
+     *     outputVariableName?: string|null,
+     *     evaluationScore?: string|null,
+     *     predictionExplanations?: PredictionExplanations|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $MissingDateVisibility
+ * @property 'HIDDEN'|'VISIBLE'|null $MissingDateVisibility
  */
 class DateAxisOptions extends Shape
 {
     /**
-     * @param array{MissingDateVisibility?: 'HIDDEN'|'VISIBLE'} $args
+     * @param array{MissingDateVisibility?: 'HIDDEN'|'VISIBLE'|null} $args
      */
     public function __construct(array $args = [])
     {

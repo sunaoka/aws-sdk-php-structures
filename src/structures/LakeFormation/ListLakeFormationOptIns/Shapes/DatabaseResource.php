@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\LakeFormation\ListLakeFormationOptIns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $Name
  */
 class DatabaseResource extends Shape
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     Name: string
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeEffectivePatchesForPatchBaseline\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Patch $Patch
- * @property PatchStatus $PatchStatus
+ * @property Patch|null $Patch
+ * @property PatchStatus|null $PatchStatus
  */
 class EffectivePatch extends Shape
 {
     /**
      * @param array{
-     *     Patch?: Patch,
-     *     PatchStatus?: PatchStatus
+     *     Patch?: Patch|null,
+     *     PatchStatus?: PatchStatus|null
      * } $args
      */
     public function __construct(array $args = [])

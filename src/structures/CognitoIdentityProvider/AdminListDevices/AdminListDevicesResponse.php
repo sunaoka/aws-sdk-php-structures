@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AdminListDevices;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DeviceType> $Devices
- * @property string $PaginationToken
+ * @property list<Shapes\DeviceType>|null $Devices
+ * @property string|null $PaginationToken
  */
 class AdminListDevicesResponse extends Response
 {

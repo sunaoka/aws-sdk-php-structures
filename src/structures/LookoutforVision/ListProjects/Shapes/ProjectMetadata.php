@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LookoutforVision\ListProjects\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProjectArn
- * @property string $ProjectName
- * @property \Aws\Api\DateTimeResult $CreationTimestamp
+ * @property string|null $ProjectArn
+ * @property string|null $ProjectName
+ * @property \Aws\Api\DateTimeResult|null $CreationTimestamp
  */
 class ProjectMetadata extends Shape
 {
     /**
      * @param array{
-     *     ProjectArn?: string,
-     *     ProjectName?: string,
-     *     CreationTimestamp?: \Aws\Api\DateTimeResult
+     *     ProjectArn?: string|null,
+     *     ProjectName?: string|null,
+     *     CreationTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

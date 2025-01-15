@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConvert\DescribeEndpoints;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $MaxResults
- * @property 'DEFAULT'|'GET_ONLY' $Mode
- * @property string $NextToken
+ * @property int|null $MaxResults
+ * @property 'DEFAULT'|'GET_ONLY'|null $Mode
+ * @property string|null $NextToken
  */
 class DescribeEndpointsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int,
-     *     Mode?: 'DEFAULT'|'GET_ONLY',
-     *     NextToken?: string
+     *     MaxResults?: int|null,
+     *     Mode?: 'DEFAULT'|'GET_ONLY'|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

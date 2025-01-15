@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetDeploymentConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $firstZoneMonitorDurationInSeconds
- * @property int $monitorDurationInSeconds
- * @property MinimumHealthyHostsPerZone $minimumHealthyHostsPerZone
+ * @property int|null $firstZoneMonitorDurationInSeconds
+ * @property int|null $monitorDurationInSeconds
+ * @property MinimumHealthyHostsPerZone|null $minimumHealthyHostsPerZone
  */
 class ZonalConfig extends Shape
 {
     /**
      * @param array{
-     *     firstZoneMonitorDurationInSeconds?: int,
-     *     monitorDurationInSeconds?: int,
-     *     minimumHealthyHostsPerZone?: MinimumHealthyHostsPerZone
+     *     firstZoneMonitorDurationInSeconds?: int|null,
+     *     monitorDurationInSeconds?: int|null,
+     *     minimumHealthyHostsPerZone?: MinimumHealthyHostsPerZone|null
      * } $args
      */
     public function __construct(array $args = [])

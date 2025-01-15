@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SnapshotIdentifier
- * @property int $ManualSnapshotRetentionPeriod
- * @property bool $Force
+ * @property int|null $ManualSnapshotRetentionPeriod
+ * @property bool|null $Force
  */
 class ModifyClusterSnapshotRequest extends Request
 {
     /**
      * @param array{
      *     SnapshotIdentifier: string,
-     *     ManualSnapshotRetentionPeriod?: int,
-     *     Force?: bool
+     *     ManualSnapshotRetentionPeriod?: int|null,
+     *     Force?: bool|null
      * } $args
      */
     public function __construct(array $args)

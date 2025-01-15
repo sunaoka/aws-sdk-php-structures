@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property string $vpceConfigurationName
- * @property string $vpceServiceName
- * @property string $serviceDnsName
- * @property string $vpceConfigurationDescription
+ * @property string|null $vpceConfigurationName
+ * @property string|null $vpceServiceName
+ * @property string|null $serviceDnsName
+ * @property string|null $vpceConfigurationDescription
  */
 class UpdateVPCEConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     vpceConfigurationName?: string,
-     *     vpceServiceName?: string,
-     *     serviceDnsName?: string,
-     *     vpceConfigurationDescription?: string
+     *     vpceConfigurationName?: string|null,
+     *     vpceServiceName?: string|null,
+     *     serviceDnsName?: string|null,
+     *     vpceConfigurationDescription?: string|null
      * } $args
      */
     public function __construct(array $args)

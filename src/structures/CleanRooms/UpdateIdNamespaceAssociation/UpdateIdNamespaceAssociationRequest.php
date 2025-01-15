@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $idNamespaceAssociationIdentifier
  * @property string $membershipIdentifier
- * @property string $name
- * @property string $description
- * @property Shapes\IdMappingConfig $idMappingConfig
+ * @property string|null $name
+ * @property string|null $description
+ * @property Shapes\IdMappingConfig|null $idMappingConfig
  */
 class UpdateIdNamespaceAssociationRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateIdNamespaceAssociationRequest extends Request
      * @param array{
      *     idNamespaceAssociationIdentifier: string,
      *     membershipIdentifier: string,
-     *     name?: string,
-     *     description?: string,
-     *     idMappingConfig?: Shapes\IdMappingConfig
+     *     name?: string|null,
+     *     description?: string|null,
+     *     idMappingConfig?: Shapes\IdMappingConfig|null
      * } $args
      */
     public function __construct(array $args)

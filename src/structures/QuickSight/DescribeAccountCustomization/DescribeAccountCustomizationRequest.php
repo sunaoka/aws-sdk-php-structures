@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property string $Namespace
- * @property bool $Resolved
+ * @property string|null $Namespace
+ * @property bool|null $Resolved
  */
 class DescribeAccountCustomizationRequest extends Request
 {
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     Namespace?: string,
-     *     Resolved?: bool
+     *     Namespace?: string|null,
+     *     Resolved?: bool|null
      * } $args
      */
     public function __construct(array $args)

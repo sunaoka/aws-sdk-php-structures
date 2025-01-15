@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'JSON'|'CSV' $RecordFormatType
- * @property MappingParameters $MappingParameters
+ * @property MappingParameters|null $MappingParameters
  */
 class RecordFormat extends Shape
 {
     /**
      * @param array{
      *     RecordFormatType: 'JSON'|'CSV',
-     *     MappingParameters?: MappingParameters
+     *     MappingParameters?: MappingParameters|null
      * } $args
      */
     public function __construct(array $args)

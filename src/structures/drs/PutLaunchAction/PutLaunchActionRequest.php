@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property bool $optional
  * @property int<2, 10000> $order
- * @property array<string, Shapes\LaunchActionParameter> $parameters
+ * @property array<string, Shapes\LaunchActionParameter>|null $parameters
  * @property string $resourceId
  */
 class PutLaunchActionRequest extends Request
@@ -30,7 +30,7 @@ class PutLaunchActionRequest extends Request
      *     name: string,
      *     optional: bool,
      *     order: int<2, 10000>,
-     *     parameters?: array<string, Shapes\LaunchActionParameter>,
+     *     parameters?: array<string, Shapes\LaunchActionParameter>|null,
      *     resourceId: string
      * } $args
      */

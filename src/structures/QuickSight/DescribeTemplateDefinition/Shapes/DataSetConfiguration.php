@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Placeholder
- * @property DataSetSchema $DataSetSchema
- * @property list<ColumnGroupSchema> $ColumnGroupSchemaList
+ * @property string|null $Placeholder
+ * @property DataSetSchema|null $DataSetSchema
+ * @property list<ColumnGroupSchema>|null $ColumnGroupSchemaList
  */
 class DataSetConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Placeholder?: string,
-     *     DataSetSchema?: DataSetSchema,
-     *     ColumnGroupSchemaList?: list<ColumnGroupSchema>
+     *     Placeholder?: string|null,
+     *     DataSetSchema?: DataSetSchema|null,
+     *     ColumnGroupSchemaList?: list<ColumnGroupSchema>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\GetEntity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $componentName
- * @property string $description
- * @property string $componentTypeId
- * @property Status $status
- * @property string $definedIn
- * @property array<string, PropertyResponse> $properties
- * @property array<string, ComponentPropertyGroupResponse> $propertyGroups
- * @property string $syncSource
- * @property bool $areAllPropertiesReturned
- * @property array<string, ComponentSummary> $compositeComponents
- * @property bool $areAllCompositeComponentsReturned
+ * @property string|null $componentName
+ * @property string|null $description
+ * @property string|null $componentTypeId
+ * @property Status|null $status
+ * @property string|null $definedIn
+ * @property array<string, PropertyResponse>|null $properties
+ * @property array<string, ComponentPropertyGroupResponse>|null $propertyGroups
+ * @property string|null $syncSource
+ * @property bool|null $areAllPropertiesReturned
+ * @property array<string, ComponentSummary>|null $compositeComponents
+ * @property bool|null $areAllCompositeComponentsReturned
  */
 class ComponentResponse extends Shape
 {
     /**
      * @param array{
-     *     componentName?: string,
-     *     description?: string,
-     *     componentTypeId?: string,
-     *     status?: Status,
-     *     definedIn?: string,
-     *     properties?: array<string, PropertyResponse>,
-     *     propertyGroups?: array<string, ComponentPropertyGroupResponse>,
-     *     syncSource?: string,
-     *     areAllPropertiesReturned?: bool,
-     *     compositeComponents?: array<string, ComponentSummary>,
-     *     areAllCompositeComponentsReturned?: bool
+     *     componentName?: string|null,
+     *     description?: string|null,
+     *     componentTypeId?: string|null,
+     *     status?: Status|null,
+     *     definedIn?: string|null,
+     *     properties?: array<string, PropertyResponse>|null,
+     *     propertyGroups?: array<string, ComponentPropertyGroupResponse>|null,
+     *     syncSource?: string|null,
+     *     areAllPropertiesReturned?: bool|null,
+     *     compositeComponents?: array<string, ComponentSummary>|null,
+     *     areAllCompositeComponentsReturned?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

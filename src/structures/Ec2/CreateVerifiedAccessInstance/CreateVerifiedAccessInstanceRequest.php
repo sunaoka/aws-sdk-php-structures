@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateVerifiedAccessInstance;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property string $ClientToken
- * @property bool $DryRun
- * @property bool $FIPSEnabled
- * @property string $CidrEndpointsCustomSubDomain
+ * @property string|null $Description
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property string|null $ClientToken
+ * @property bool|null $DryRun
+ * @property bool|null $FIPSEnabled
+ * @property string|null $CidrEndpointsCustomSubDomain
  */
 class CreateVerifiedAccessInstanceRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     ClientToken?: string,
-     *     DryRun?: bool,
-     *     FIPSEnabled?: bool,
-     *     CidrEndpointsCustomSubDomain?: string
+     *     Description?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     ClientToken?: string|null,
+     *     DryRun?: bool|null,
+     *     FIPSEnabled?: bool|null,
+     *     CidrEndpointsCustomSubDomain?: string|null
      * } $args
      */
     public function __construct(array $args = [])

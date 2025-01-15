@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $CalendarNames
- * @property string $AtTime
+ * @property string|null $AtTime
  */
 class GetCalendarStateRequest extends Request
 {
     /**
      * @param array{
      *     CalendarNames: list<string>,
-     *     AtTime?: string
+     *     AtTime?: string|null
      * } $args
      */
     public function __construct(array $args)

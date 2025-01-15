@@ -6,70 +6,70 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CacheClusterId
- * @property string $ReplicationGroupId
- * @property 'single-az'|'cross-az' $AZMode
- * @property string $PreferredAvailabilityZone
- * @property list<string> $PreferredAvailabilityZones
- * @property int $NumCacheNodes
- * @property string $CacheNodeType
- * @property string $Engine
- * @property string $EngineVersion
- * @property string $CacheParameterGroupName
- * @property string $CacheSubnetGroupName
- * @property list<string> $CacheSecurityGroupNames
- * @property list<string> $SecurityGroupIds
- * @property list<Shapes\Tag> $Tags
- * @property list<string> $SnapshotArns
- * @property string $SnapshotName
- * @property string $PreferredMaintenanceWindow
- * @property int $Port
- * @property string $NotificationTopicArn
- * @property bool $AutoMinorVersionUpgrade
- * @property int $SnapshotRetentionLimit
- * @property string $SnapshotWindow
- * @property string $AuthToken
- * @property 'single-outpost'|'cross-outpost' $OutpostMode
- * @property string $PreferredOutpostArn
- * @property list<string> $PreferredOutpostArns
- * @property list<Shapes\LogDeliveryConfigurationRequest> $LogDeliveryConfigurations
- * @property bool $TransitEncryptionEnabled
- * @property 'ipv4'|'ipv6'|'dual_stack' $NetworkType
- * @property 'ipv4'|'ipv6' $IpDiscovery
+ * @property string|null $ReplicationGroupId
+ * @property 'single-az'|'cross-az'|null $AZMode
+ * @property string|null $PreferredAvailabilityZone
+ * @property list<string>|null $PreferredAvailabilityZones
+ * @property int|null $NumCacheNodes
+ * @property string|null $CacheNodeType
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property string|null $CacheParameterGroupName
+ * @property string|null $CacheSubnetGroupName
+ * @property list<string>|null $CacheSecurityGroupNames
+ * @property list<string>|null $SecurityGroupIds
+ * @property list<Shapes\Tag>|null $Tags
+ * @property list<string>|null $SnapshotArns
+ * @property string|null $SnapshotName
+ * @property string|null $PreferredMaintenanceWindow
+ * @property int|null $Port
+ * @property string|null $NotificationTopicArn
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property int|null $SnapshotRetentionLimit
+ * @property string|null $SnapshotWindow
+ * @property string|null $AuthToken
+ * @property 'single-outpost'|'cross-outpost'|null $OutpostMode
+ * @property string|null $PreferredOutpostArn
+ * @property list<string>|null $PreferredOutpostArns
+ * @property list<Shapes\LogDeliveryConfigurationRequest>|null $LogDeliveryConfigurations
+ * @property bool|null $TransitEncryptionEnabled
+ * @property 'ipv4'|'ipv6'|'dual_stack'|null $NetworkType
+ * @property 'ipv4'|'ipv6'|null $IpDiscovery
  */
 class CreateCacheClusterRequest extends Request
 {
     /**
      * @param array{
      *     CacheClusterId: string,
-     *     ReplicationGroupId?: string,
-     *     AZMode?: 'single-az'|'cross-az',
-     *     PreferredAvailabilityZone?: string,
-     *     PreferredAvailabilityZones?: list<string>,
-     *     NumCacheNodes?: int,
-     *     CacheNodeType?: string,
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     CacheParameterGroupName?: string,
-     *     CacheSubnetGroupName?: string,
-     *     CacheSecurityGroupNames?: list<string>,
-     *     SecurityGroupIds?: list<string>,
-     *     Tags?: list<Shapes\Tag>,
-     *     SnapshotArns?: list<string>,
-     *     SnapshotName?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     Port?: int,
-     *     NotificationTopicArn?: string,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     SnapshotRetentionLimit?: int,
-     *     SnapshotWindow?: string,
-     *     AuthToken?: string,
-     *     OutpostMode?: 'single-outpost'|'cross-outpost',
-     *     PreferredOutpostArn?: string,
-     *     PreferredOutpostArns?: list<string>,
-     *     LogDeliveryConfigurations?: list<Shapes\LogDeliveryConfigurationRequest>,
-     *     TransitEncryptionEnabled?: bool,
-     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack',
-     *     IpDiscovery?: 'ipv4'|'ipv6'
+     *     ReplicationGroupId?: string|null,
+     *     AZMode?: 'single-az'|'cross-az'|null,
+     *     PreferredAvailabilityZone?: string|null,
+     *     PreferredAvailabilityZones?: list<string>|null,
+     *     NumCacheNodes?: int|null,
+     *     CacheNodeType?: string|null,
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     CacheParameterGroupName?: string|null,
+     *     CacheSubnetGroupName?: string|null,
+     *     CacheSecurityGroupNames?: list<string>|null,
+     *     SecurityGroupIds?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     SnapshotArns?: list<string>|null,
+     *     SnapshotName?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     Port?: int|null,
+     *     NotificationTopicArn?: string|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     SnapshotRetentionLimit?: int|null,
+     *     SnapshotWindow?: string|null,
+     *     AuthToken?: string|null,
+     *     OutpostMode?: 'single-outpost'|'cross-outpost'|null,
+     *     PreferredOutpostArn?: string|null,
+     *     PreferredOutpostArns?: list<string>|null,
+     *     LogDeliveryConfigurations?: list<Shapes\LogDeliveryConfigurationRequest>|null,
+     *     TransitEncryptionEnabled?: bool|null,
+     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null,
+     *     IpDiscovery?: 'ipv4'|'ipv6'|null
      * } $args
      */
     public function __construct(array $args)

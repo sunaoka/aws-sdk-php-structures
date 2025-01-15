@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FileSystemAssociationARN
- * @property string $UserName
- * @property string $Password
- * @property string $AuditDestinationARN
- * @property Shapes\CacheAttributes $CacheAttributes
+ * @property string|null $UserName
+ * @property string|null $Password
+ * @property string|null $AuditDestinationARN
+ * @property Shapes\CacheAttributes|null $CacheAttributes
  */
 class UpdateFileSystemAssociationRequest extends Request
 {
     /**
      * @param array{
      *     FileSystemAssociationARN: string,
-     *     UserName?: string,
-     *     Password?: string,
-     *     AuditDestinationARN?: string,
-     *     CacheAttributes?: Shapes\CacheAttributes
+     *     UserName?: string|null,
+     *     Password?: string|null,
+     *     AuditDestinationARN?: string|null,
+     *     CacheAttributes?: Shapes\CacheAttributes|null
      * } $args
      */
     public function __construct(array $args)

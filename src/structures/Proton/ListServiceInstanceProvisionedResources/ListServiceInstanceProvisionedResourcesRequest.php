@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Proton\ListServiceInstanceProvisionedResources;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
+ * @property string|null $nextToken
  * @property string $serviceInstanceName
  * @property string $serviceName
  */
@@ -13,7 +13,7 @@ class ListServiceInstanceProvisionedResourcesRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
+     *     nextToken?: string|null,
      *     serviceInstanceName: string,
      *     serviceName: string
      * } $args

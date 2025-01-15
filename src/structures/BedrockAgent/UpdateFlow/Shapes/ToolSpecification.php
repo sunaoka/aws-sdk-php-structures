@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property ToolInputSchema $inputSchema
  * @property string $name
  */
@@ -13,7 +13,7 @@ class ToolSpecification extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     inputSchema: ToolInputSchema,
      *     name: string
      * } $args

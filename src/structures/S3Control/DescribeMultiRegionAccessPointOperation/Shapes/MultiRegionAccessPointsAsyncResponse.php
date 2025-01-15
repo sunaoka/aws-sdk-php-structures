@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3Control\DescribeMultiRegionAccessPointOperati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<MultiRegionAccessPointRegionalResponse> $Regions
+ * @property list<MultiRegionAccessPointRegionalResponse>|null $Regions
  */
 class MultiRegionAccessPointsAsyncResponse extends Shape
 {
     /**
-     * @param array{Regions?: list<MultiRegionAccessPointRegionalResponse>} $args
+     * @param array{Regions?: list<MultiRegionAccessPointRegionalResponse>|null} $args
      */
     public function __construct(array $args = [])
     {

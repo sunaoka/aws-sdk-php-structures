@@ -5,85 +5,85 @@ namespace Sunaoka\Aws\Structures\Redshift\RevokeSnapshotAccess\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SnapshotIdentifier
- * @property string $ClusterIdentifier
- * @property \Aws\Api\DateTimeResult $SnapshotCreateTime
- * @property string $Status
- * @property int $Port
- * @property string $AvailabilityZone
- * @property \Aws\Api\DateTimeResult $ClusterCreateTime
- * @property string $MasterUsername
- * @property string $ClusterVersion
- * @property string $EngineFullVersion
- * @property string $SnapshotType
- * @property string $NodeType
- * @property int $NumberOfNodes
- * @property string $DBName
- * @property string $VpcId
- * @property bool $Encrypted
- * @property string $KmsKeyId
- * @property bool $EncryptedWithHSM
- * @property list<AccountWithRestoreAccess> $AccountsWithRestoreAccess
- * @property string $OwnerAccount
- * @property double $TotalBackupSizeInMegaBytes
- * @property double $ActualIncrementalBackupSizeInMegaBytes
- * @property double $BackupProgressInMegaBytes
- * @property double $CurrentBackupRateInMegaBytesPerSecond
- * @property int $EstimatedSecondsToCompletion
- * @property int $ElapsedTimeInSeconds
- * @property string $SourceRegion
- * @property list<Tag> $Tags
- * @property list<string> $RestorableNodeTypes
- * @property bool $EnhancedVpcRouting
- * @property string $MaintenanceTrackName
- * @property int $ManualSnapshotRetentionPeriod
- * @property int $ManualSnapshotRemainingDays
- * @property \Aws\Api\DateTimeResult $SnapshotRetentionStartTime
- * @property string $MasterPasswordSecretArn
- * @property string $MasterPasswordSecretKmsKeyId
- * @property string $SnapshotArn
+ * @property string|null $SnapshotIdentifier
+ * @property string|null $ClusterIdentifier
+ * @property \Aws\Api\DateTimeResult|null $SnapshotCreateTime
+ * @property string|null $Status
+ * @property int|null $Port
+ * @property string|null $AvailabilityZone
+ * @property \Aws\Api\DateTimeResult|null $ClusterCreateTime
+ * @property string|null $MasterUsername
+ * @property string|null $ClusterVersion
+ * @property string|null $EngineFullVersion
+ * @property string|null $SnapshotType
+ * @property string|null $NodeType
+ * @property int|null $NumberOfNodes
+ * @property string|null $DBName
+ * @property string|null $VpcId
+ * @property bool|null $Encrypted
+ * @property string|null $KmsKeyId
+ * @property bool|null $EncryptedWithHSM
+ * @property list<AccountWithRestoreAccess>|null $AccountsWithRestoreAccess
+ * @property string|null $OwnerAccount
+ * @property double|null $TotalBackupSizeInMegaBytes
+ * @property double|null $ActualIncrementalBackupSizeInMegaBytes
+ * @property double|null $BackupProgressInMegaBytes
+ * @property double|null $CurrentBackupRateInMegaBytesPerSecond
+ * @property int|null $EstimatedSecondsToCompletion
+ * @property int|null $ElapsedTimeInSeconds
+ * @property string|null $SourceRegion
+ * @property list<Tag>|null $Tags
+ * @property list<string>|null $RestorableNodeTypes
+ * @property bool|null $EnhancedVpcRouting
+ * @property string|null $MaintenanceTrackName
+ * @property int|null $ManualSnapshotRetentionPeriod
+ * @property int|null $ManualSnapshotRemainingDays
+ * @property \Aws\Api\DateTimeResult|null $SnapshotRetentionStartTime
+ * @property string|null $MasterPasswordSecretArn
+ * @property string|null $MasterPasswordSecretKmsKeyId
+ * @property string|null $SnapshotArn
  */
 class Snapshot extends Shape
 {
     /**
      * @param array{
-     *     SnapshotIdentifier?: string,
-     *     ClusterIdentifier?: string,
-     *     SnapshotCreateTime?: \Aws\Api\DateTimeResult,
-     *     Status?: string,
-     *     Port?: int,
-     *     AvailabilityZone?: string,
-     *     ClusterCreateTime?: \Aws\Api\DateTimeResult,
-     *     MasterUsername?: string,
-     *     ClusterVersion?: string,
-     *     EngineFullVersion?: string,
-     *     SnapshotType?: string,
-     *     NodeType?: string,
-     *     NumberOfNodes?: int,
-     *     DBName?: string,
-     *     VpcId?: string,
-     *     Encrypted?: bool,
-     *     KmsKeyId?: string,
-     *     EncryptedWithHSM?: bool,
-     *     AccountsWithRestoreAccess?: list<AccountWithRestoreAccess>,
-     *     OwnerAccount?: string,
-     *     TotalBackupSizeInMegaBytes?: double,
-     *     ActualIncrementalBackupSizeInMegaBytes?: double,
-     *     BackupProgressInMegaBytes?: double,
-     *     CurrentBackupRateInMegaBytesPerSecond?: double,
-     *     EstimatedSecondsToCompletion?: int,
-     *     ElapsedTimeInSeconds?: int,
-     *     SourceRegion?: string,
-     *     Tags?: list<Tag>,
-     *     RestorableNodeTypes?: list<string>,
-     *     EnhancedVpcRouting?: bool,
-     *     MaintenanceTrackName?: string,
-     *     ManualSnapshotRetentionPeriod?: int,
-     *     ManualSnapshotRemainingDays?: int,
-     *     SnapshotRetentionStartTime?: \Aws\Api\DateTimeResult,
-     *     MasterPasswordSecretArn?: string,
-     *     MasterPasswordSecretKmsKeyId?: string,
-     *     SnapshotArn?: string
+     *     SnapshotIdentifier?: string|null,
+     *     ClusterIdentifier?: string|null,
+     *     SnapshotCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     Status?: string|null,
+     *     Port?: int|null,
+     *     AvailabilityZone?: string|null,
+     *     ClusterCreateTime?: \Aws\Api\DateTimeResult|null,
+     *     MasterUsername?: string|null,
+     *     ClusterVersion?: string|null,
+     *     EngineFullVersion?: string|null,
+     *     SnapshotType?: string|null,
+     *     NodeType?: string|null,
+     *     NumberOfNodes?: int|null,
+     *     DBName?: string|null,
+     *     VpcId?: string|null,
+     *     Encrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     EncryptedWithHSM?: bool|null,
+     *     AccountsWithRestoreAccess?: list<AccountWithRestoreAccess>|null,
+     *     OwnerAccount?: string|null,
+     *     TotalBackupSizeInMegaBytes?: double|null,
+     *     ActualIncrementalBackupSizeInMegaBytes?: double|null,
+     *     BackupProgressInMegaBytes?: double|null,
+     *     CurrentBackupRateInMegaBytesPerSecond?: double|null,
+     *     EstimatedSecondsToCompletion?: int|null,
+     *     ElapsedTimeInSeconds?: int|null,
+     *     SourceRegion?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     RestorableNodeTypes?: list<string>|null,
+     *     EnhancedVpcRouting?: bool|null,
+     *     MaintenanceTrackName?: string|null,
+     *     ManualSnapshotRetentionPeriod?: int|null,
+     *     ManualSnapshotRemainingDays?: int|null,
+     *     SnapshotRetentionStartTime?: \Aws\Api\DateTimeResult|null,
+     *     MasterPasswordSecretArn?: string|null,
+     *     MasterPasswordSecretKmsKeyId?: string|null,
+     *     SnapshotArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

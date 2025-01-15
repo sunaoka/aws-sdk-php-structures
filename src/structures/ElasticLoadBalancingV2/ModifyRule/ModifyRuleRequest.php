@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RuleArn
- * @property list<Shapes\RuleCondition> $Conditions
- * @property list<Shapes\Action> $Actions
+ * @property list<Shapes\RuleCondition>|null $Conditions
+ * @property list<Shapes\Action>|null $Actions
  */
 class ModifyRuleRequest extends Request
 {
     /**
      * @param array{
      *     RuleArn: string,
-     *     Conditions?: list<Shapes\RuleCondition>,
-     *     Actions?: list<Shapes\Action>
+     *     Conditions?: list<Shapes\RuleCondition>|null,
+     *     Actions?: list<Shapes\Action>|null
      * } $args
      */
     public function __construct(array $args)

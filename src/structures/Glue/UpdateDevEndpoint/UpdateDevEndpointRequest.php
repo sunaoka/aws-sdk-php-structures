@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EndpointName
- * @property string $PublicKey
- * @property list<string> $AddPublicKeys
- * @property list<string> $DeletePublicKeys
- * @property Shapes\DevEndpointCustomLibraries $CustomLibraries
- * @property bool $UpdateEtlLibraries
- * @property list<string> $DeleteArguments
- * @property array<string, string> $AddArguments
+ * @property string|null $PublicKey
+ * @property list<string>|null $AddPublicKeys
+ * @property list<string>|null $DeletePublicKeys
+ * @property Shapes\DevEndpointCustomLibraries|null $CustomLibraries
+ * @property bool|null $UpdateEtlLibraries
+ * @property list<string>|null $DeleteArguments
+ * @property array<string, string>|null $AddArguments
  */
 class UpdateDevEndpointRequest extends Request
 {
     /**
      * @param array{
      *     EndpointName: string,
-     *     PublicKey?: string,
-     *     AddPublicKeys?: list<string>,
-     *     DeletePublicKeys?: list<string>,
-     *     CustomLibraries?: Shapes\DevEndpointCustomLibraries,
-     *     UpdateEtlLibraries?: bool,
-     *     DeleteArguments?: list<string>,
-     *     AddArguments?: array<string, string>
+     *     PublicKey?: string|null,
+     *     AddPublicKeys?: list<string>|null,
+     *     DeletePublicKeys?: list<string>|null,
+     *     CustomLibraries?: Shapes\DevEndpointCustomLibraries|null,
+     *     UpdateEtlLibraries?: bool|null,
+     *     DeleteArguments?: list<string>|null,
+     *     AddArguments?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

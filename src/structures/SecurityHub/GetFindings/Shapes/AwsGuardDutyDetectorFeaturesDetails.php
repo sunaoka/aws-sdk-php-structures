@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Status
+ * @property string|null $Name
+ * @property string|null $Status
  */
 class AwsGuardDutyDetectorFeaturesDetails extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Status?: string
+     *     Name?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

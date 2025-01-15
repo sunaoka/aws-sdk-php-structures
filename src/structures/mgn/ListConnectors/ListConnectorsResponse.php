@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\mgn\ListConnectors;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Connector> $items
- * @property string $nextToken
+ * @property list<Shapes\Connector>|null $items
+ * @property string|null $nextToken
  */
 class ListConnectorsResponse extends Response
 {

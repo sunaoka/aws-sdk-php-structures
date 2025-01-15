@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InstanceId
- * @property string $CpuCredits
+ * @property string|null $CpuCredits
  */
 class InstanceCreditSpecificationRequest extends Shape
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     CpuCredits?: string
+     *     CpuCredits?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelId
- * @property Shapes\BatchScheduleActionCreateRequest $Creates
- * @property Shapes\BatchScheduleActionDeleteRequest $Deletes
+ * @property Shapes\BatchScheduleActionCreateRequest|null $Creates
+ * @property Shapes\BatchScheduleActionDeleteRequest|null $Deletes
  */
 class BatchUpdateScheduleRequest extends Request
 {
     /**
      * @param array{
      *     ChannelId: string,
-     *     Creates?: Shapes\BatchScheduleActionCreateRequest,
-     *     Deletes?: Shapes\BatchScheduleActionDeleteRequest
+     *     Creates?: Shapes\BatchScheduleActionCreateRequest|null,
+     *     Deletes?: Shapes\BatchScheduleActionDeleteRequest|null
      * } $args
      */
     public function __construct(array $args)

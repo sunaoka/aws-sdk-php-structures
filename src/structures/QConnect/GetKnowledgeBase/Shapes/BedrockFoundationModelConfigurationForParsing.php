@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $modelArn
- * @property ParsingPrompt $parsingPrompt
+ * @property ParsingPrompt|null $parsingPrompt
  */
 class BedrockFoundationModelConfigurationForParsing extends Shape
 {
     /**
      * @param array{
      *     modelArn: string,
-     *     parsingPrompt?: ParsingPrompt
+     *     parsingPrompt?: ParsingPrompt|null
      * } $args
      */
     public function __construct(array $args)

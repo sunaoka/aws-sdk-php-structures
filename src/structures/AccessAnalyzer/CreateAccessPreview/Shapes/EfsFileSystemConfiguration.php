@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\CreateAccessPreview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $fileSystemPolicy
+ * @property string|null $fileSystemPolicy
  */
 class EfsFileSystemConfiguration extends Shape
 {
     /**
-     * @param array{fileSystemPolicy?: string} $args
+     * @param array{fileSystemPolicy?: string|null} $args
      */
     public function __construct(array $args = [])
     {

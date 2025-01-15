@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DescribeLoadBalancerPolici
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AttributeName
- * @property string $AttributeValue
+ * @property string|null $AttributeName
+ * @property string|null $AttributeValue
  */
 class PolicyAttributeDescription extends Shape
 {
     /**
      * @param array{
-     *     AttributeName?: string,
-     *     AttributeValue?: string
+     *     AttributeName?: string|null,
+     *     AttributeValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

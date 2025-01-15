@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $PackageID
  * @property Shapes\PackageSource $PackageSource
- * @property string $PackageDescription
- * @property string $CommitMessage
+ * @property string|null $PackageDescription
+ * @property string|null $CommitMessage
  */
 class UpdatePackageRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdatePackageRequest extends Request
      * @param array{
      *     PackageID: string,
      *     PackageSource: Shapes\PackageSource,
-     *     PackageDescription?: string,
-     *     CommitMessage?: string
+     *     PackageDescription?: string|null,
+     *     CommitMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

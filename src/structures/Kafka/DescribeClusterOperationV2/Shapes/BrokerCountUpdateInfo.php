@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeClusterOperationV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<double> $CreatedBrokerIds
- * @property list<double> $DeletedBrokerIds
+ * @property list<double>|null $CreatedBrokerIds
+ * @property list<double>|null $DeletedBrokerIds
  */
 class BrokerCountUpdateInfo extends Shape
 {
     /**
      * @param array{
-     *     CreatedBrokerIds?: list<double>,
-     *     DeletedBrokerIds?: list<double>
+     *     CreatedBrokerIds?: list<double>|null,
+     *     DeletedBrokerIds?: list<double>|null
      * } $args
      */
     public function __construct(array $args = [])

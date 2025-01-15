@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ListStackSetOperations;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\StackSetOperationSummary> $Summaries
- * @property string $NextToken
+ * @property list<Shapes\StackSetOperationSummary>|null $Summaries
+ * @property string|null $NextToken
  */
 class ListStackSetOperationsResponse extends Response
 {

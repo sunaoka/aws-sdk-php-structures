@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\CreateLaunch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property array<string, string> $featureVariations
  * @property string $name
  */
@@ -13,7 +13,7 @@ class LaunchGroup extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     featureVariations: array<string, string>,
      *     name: string
      * } $args

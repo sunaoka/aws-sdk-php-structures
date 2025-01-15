@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Greengrass\ListBulkDeploymentDetailedReports\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DetailedErrorCode
- * @property string $DetailedErrorMessage
+ * @property string|null $DetailedErrorCode
+ * @property string|null $DetailedErrorMessage
  */
 class ErrorDetail extends Shape
 {
     /**
      * @param array{
-     *     DetailedErrorCode?: string,
-     *     DetailedErrorMessage?: string
+     *     DetailedErrorCode?: string|null,
+     *     DetailedErrorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

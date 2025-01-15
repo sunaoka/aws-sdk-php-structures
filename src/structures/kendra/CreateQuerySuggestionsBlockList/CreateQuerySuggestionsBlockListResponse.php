@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\kendra\CreateQuerySuggestionsBlockList;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Id
+ * @property string|null $Id
  */
 class CreateQuerySuggestionsBlockListResponse extends Response
 {

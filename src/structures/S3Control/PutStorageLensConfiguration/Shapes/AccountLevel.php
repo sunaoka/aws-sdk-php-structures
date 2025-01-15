@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\S3Control\PutStorageLensConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ActivityMetrics $ActivityMetrics
+ * @property ActivityMetrics|null $ActivityMetrics
  * @property BucketLevel $BucketLevel
- * @property AdvancedCostOptimizationMetrics $AdvancedCostOptimizationMetrics
- * @property AdvancedDataProtectionMetrics $AdvancedDataProtectionMetrics
- * @property DetailedStatusCodesMetrics $DetailedStatusCodesMetrics
- * @property StorageLensGroupLevel $StorageLensGroupLevel
+ * @property AdvancedCostOptimizationMetrics|null $AdvancedCostOptimizationMetrics
+ * @property AdvancedDataProtectionMetrics|null $AdvancedDataProtectionMetrics
+ * @property DetailedStatusCodesMetrics|null $DetailedStatusCodesMetrics
+ * @property StorageLensGroupLevel|null $StorageLensGroupLevel
  */
 class AccountLevel extends Shape
 {
     /**
      * @param array{
-     *     ActivityMetrics?: ActivityMetrics,
+     *     ActivityMetrics?: ActivityMetrics|null,
      *     BucketLevel: BucketLevel,
-     *     AdvancedCostOptimizationMetrics?: AdvancedCostOptimizationMetrics,
-     *     AdvancedDataProtectionMetrics?: AdvancedDataProtectionMetrics,
-     *     DetailedStatusCodesMetrics?: DetailedStatusCodesMetrics,
-     *     StorageLensGroupLevel?: StorageLensGroupLevel
+     *     AdvancedCostOptimizationMetrics?: AdvancedCostOptimizationMetrics|null,
+     *     AdvancedDataProtectionMetrics?: AdvancedDataProtectionMetrics|null,
+     *     DetailedStatusCodesMetrics?: DetailedStatusCodesMetrics|null,
+     *     StorageLensGroupLevel?: StorageLensGroupLevel|null
      * } $args
      */
     public function __construct(array $args)

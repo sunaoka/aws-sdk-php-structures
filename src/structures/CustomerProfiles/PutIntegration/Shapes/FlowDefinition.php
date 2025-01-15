@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\PutIntegration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $FlowName
  * @property string $KmsArn
  * @property SourceFlowConfig $SourceFlowConfig
@@ -16,7 +16,7 @@ class FlowDefinition extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     FlowName: string,
      *     KmsArn: string,
      *     SourceFlowConfig: SourceFlowConfig,

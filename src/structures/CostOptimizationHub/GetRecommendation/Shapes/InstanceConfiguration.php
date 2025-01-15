@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $type
+ * @property string|null $type
  */
 class InstanceConfiguration extends Shape
 {
     /**
-     * @param array{type?: string} $args
+     * @param array{type?: string|null} $args
      */
     public function __construct(array $args = [])
     {

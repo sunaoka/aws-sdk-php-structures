@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'FIRST'|'LAST'|'LAST_BEFORE_MISSING_VALUES'|'INCLUSIVE'|'EXCLUSIVE' $StartMode
- * @property TypedAttributeValue $StartValue
+ * @property TypedAttributeValue|null $StartValue
  * @property 'FIRST'|'LAST'|'LAST_BEFORE_MISSING_VALUES'|'INCLUSIVE'|'EXCLUSIVE' $EndMode
- * @property TypedAttributeValue $EndValue
+ * @property TypedAttributeValue|null $EndValue
  */
 class TypedAttributeValueRange extends Shape
 {
     /**
      * @param array{
      *     StartMode: 'FIRST'|'LAST'|'LAST_BEFORE_MISSING_VALUES'|'INCLUSIVE'|'EXCLUSIVE',
-     *     StartValue?: TypedAttributeValue,
+     *     StartValue?: TypedAttributeValue|null,
      *     EndMode: 'FIRST'|'LAST'|'LAST_BEFORE_MISSING_VALUES'|'INCLUSIVE'|'EXCLUSIVE',
-     *     EndValue?: TypedAttributeValue
+     *     EndValue?: TypedAttributeValue|null
      * } $args
      */
     public function __construct(array $args)

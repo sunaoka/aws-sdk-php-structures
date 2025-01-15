@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\GroundStation\GetDataflowEndpointGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SUCCESS'|'FAILED'|'ACTIVE'|'INACTIVE' $agentStatus
- * @property 'HEALTHY'|'UNHEALTHY' $auditResults
+ * @property 'SUCCESS'|'FAILED'|'ACTIVE'|'INACTIVE'|null $agentStatus
+ * @property 'HEALTHY'|'UNHEALTHY'|null $auditResults
  * @property ConnectionDetails $egressAddress
  * @property RangedConnectionDetails $ingressAddress
  * @property string $name
@@ -15,8 +15,8 @@ class AwsGroundStationAgentEndpoint extends Shape
 {
     /**
      * @param array{
-     *     agentStatus?: 'SUCCESS'|'FAILED'|'ACTIVE'|'INACTIVE',
-     *     auditResults?: 'HEALTHY'|'UNHEALTHY',
+     *     agentStatus?: 'SUCCESS'|'FAILED'|'ACTIVE'|'INACTIVE'|null,
+     *     auditResults?: 'HEALTHY'|'UNHEALTHY'|null,
      *     egressAddress: ConnectionDetails,
      *     ingressAddress: RangedConnectionDetails,
      *     name: string

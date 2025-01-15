@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListAppAssessments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $appArn
- * @property string $assessmentName
- * @property list<'Pending'|'InProgress'|'Failed'|'Success'> $assessmentStatus
- * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy' $complianceStatus
- * @property 'User'|'System' $invoker
- * @property int<1, 100> $maxResults
- * @property string $nextToken
- * @property bool $reverseOrder
+ * @property string|null $appArn
+ * @property string|null $assessmentName
+ * @property list<'Pending'|'InProgress'|'Failed'|'Success'>|null $assessmentStatus
+ * @property 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy'|null $complianceStatus
+ * @property 'User'|'System'|null $invoker
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
+ * @property bool|null $reverseOrder
  */
 class ListAppAssessmentsRequest extends Request
 {
     /**
      * @param array{
-     *     appArn?: string,
-     *     assessmentName?: string,
-     *     assessmentStatus?: list<'Pending'|'InProgress'|'Failed'|'Success'>,
-     *     complianceStatus?: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy',
-     *     invoker?: 'User'|'System',
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
-     *     reverseOrder?: bool
+     *     appArn?: string|null,
+     *     assessmentName?: string|null,
+     *     assessmentStatus?: list<'Pending'|'InProgress'|'Failed'|'Success'>|null,
+     *     complianceStatus?: 'PolicyBreached'|'PolicyMet'|'NotApplicable'|'MissingPolicy'|null,
+     *     invoker?: 'User'|'System'|null,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
+     *     reverseOrder?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

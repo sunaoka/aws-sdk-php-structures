@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ForecastService\DescribeExplainabilityExport;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ExplainabilityExportArn
- * @property string $ExplainabilityExportName
- * @property string $ExplainabilityArn
- * @property Shapes\DataDestination $Destination
- * @property string $Message
- * @property string $Status
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
- * @property string $Format
+ * @property string|null $ExplainabilityExportArn
+ * @property string|null $ExplainabilityExportName
+ * @property string|null $ExplainabilityArn
+ * @property Shapes\DataDestination|null $Destination
+ * @property string|null $Message
+ * @property string|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
+ * @property string|null $Format
  */
 class DescribeExplainabilityExportResponse extends Response
 {

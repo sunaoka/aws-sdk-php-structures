@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $Path
  * @property 'GET'|'PUT'|'POST'|'PATCH'|'DELETE' $Method
- * @property Shapes\Document $QueryParameters
- * @property Shapes\RestApiRequestBody $Body
+ * @property Shapes\Document|null $QueryParameters
+ * @property Shapes\RestApiRequestBody|null $Body
  */
 class InvokeRestApiRequest extends Request
 {
@@ -18,8 +18,8 @@ class InvokeRestApiRequest extends Request
      *     Name: string,
      *     Path: string,
      *     Method: 'GET'|'PUT'|'POST'|'PATCH'|'DELETE',
-     *     QueryParameters?: Shapes\Document,
-     *     Body?: Shapes\RestApiRequestBody
+     *     QueryParameters?: Shapes\Document|null,
+     *     Body?: Shapes\RestApiRequestBody|null
      * } $args
      */
     public function __construct(array $args)

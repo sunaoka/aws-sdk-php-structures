@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteTransitGatewayConnect\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'gre' $Protocol
+ * @property 'gre'|null $Protocol
  */
 class TransitGatewayConnectOptions extends Shape
 {
     /**
-     * @param array{Protocol?: 'gre'} $args
+     * @param array{Protocol?: 'gre'|null} $args
      */
     public function __construct(array $args = [])
     {

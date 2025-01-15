@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $cardId
  * @property string $value
- * @property SubmissionMutation $submissionMutation
+ * @property SubmissionMutation|null $submissionMutation
  */
 class CardValue extends Shape
 {
@@ -15,7 +15,7 @@ class CardValue extends Shape
      * @param array{
      *     cardId: string,
      *     value: string,
-     *     submissionMutation?: SubmissionMutation
+     *     submissionMutation?: SubmissionMutation|null
      * } $args
      */
     public function __construct(array $args)

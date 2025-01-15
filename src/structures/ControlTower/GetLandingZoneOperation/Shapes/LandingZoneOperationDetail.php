@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ControlTower\GetLandingZoneOperation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $endTime
- * @property string $operationIdentifier
- * @property 'DELETE'|'CREATE'|'UPDATE'|'RESET' $operationType
- * @property \Aws\Api\DateTimeResult $startTime
- * @property 'SUCCEEDED'|'FAILED'|'IN_PROGRESS' $status
- * @property string $statusMessage
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property string|null $operationIdentifier
+ * @property 'DELETE'|'CREATE'|'UPDATE'|'RESET'|null $operationType
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property 'SUCCEEDED'|'FAILED'|'IN_PROGRESS'|null $status
+ * @property string|null $statusMessage
  */
 class LandingZoneOperationDetail extends Shape
 {
     /**
      * @param array{
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     operationIdentifier?: string,
-     *     operationType?: 'DELETE'|'CREATE'|'UPDATE'|'RESET',
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     status?: 'SUCCEEDED'|'FAILED'|'IN_PROGRESS',
-     *     statusMessage?: string
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     operationIdentifier?: string|null,
+     *     operationType?: 'DELETE'|'CREATE'|'UPDATE'|'RESET'|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'SUCCEEDED'|'FAILED'|'IN_PROGRESS'|null,
+     *     statusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

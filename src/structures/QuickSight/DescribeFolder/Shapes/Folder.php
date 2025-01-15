@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeFolder\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FolderId
- * @property string $Arn
- * @property string $Name
- * @property 'SHARED'|'RESTRICTED' $FolderType
- * @property list<string> $FolderPath
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property 'ACCOUNT'|'NAMESPACE' $SharingModel
+ * @property string|null $FolderId
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property 'SHARED'|'RESTRICTED'|null $FolderType
+ * @property list<string>|null $FolderPath
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
+ * @property 'ACCOUNT'|'NAMESPACE'|null $SharingModel
  */
 class Folder extends Shape
 {
     /**
      * @param array{
-     *     FolderId?: string,
-     *     Arn?: string,
-     *     Name?: string,
-     *     FolderType?: 'SHARED'|'RESTRICTED',
-     *     FolderPath?: list<string>,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     SharingModel?: 'ACCOUNT'|'NAMESPACE'
+     *     FolderId?: string|null,
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     FolderType?: 'SHARED'|'RESTRICTED'|null,
+     *     FolderPath?: list<string>|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     SharingModel?: 'ACCOUNT'|'NAMESPACE'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\UpdateService;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $OperationId
+ * @property string|null $OperationId
  */
 class UpdateServiceResponse extends Response
 {

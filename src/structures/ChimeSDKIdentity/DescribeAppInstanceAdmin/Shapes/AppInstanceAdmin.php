@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\DescribeAppInstanceAdmin\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Identity $Admin
- * @property string $AppInstanceArn
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
+ * @property Identity|null $Admin
+ * @property string|null $AppInstanceArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  */
 class AppInstanceAdmin extends Shape
 {
     /**
      * @param array{
-     *     Admin?: Identity,
-     *     AppInstanceArn?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult
+     *     Admin?: Identity|null,
+     *     AppInstanceArn?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

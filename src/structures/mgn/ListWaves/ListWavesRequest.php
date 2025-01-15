@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\mgn\ListWaves;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $accountID
- * @property Shapes\ListWavesRequestFilters $filters
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property string|null $accountID
+ * @property Shapes\ListWavesRequestFilters|null $filters
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListWavesRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string,
-     *     filters?: Shapes\ListWavesRequestFilters,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     accountID?: string|null,
+     *     filters?: Shapes\ListWavesRequestFilters|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

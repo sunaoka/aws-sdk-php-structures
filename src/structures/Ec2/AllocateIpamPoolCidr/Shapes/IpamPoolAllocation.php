@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\AllocateIpamPoolCidr\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Cidr
- * @property string $IpamPoolAllocationId
- * @property string $Description
- * @property string $ResourceId
- * @property 'ipam-pool'|'vpc'|'ec2-public-ipv4-pool'|'custom'|'subnet'|'eip' $ResourceType
- * @property string $ResourceRegion
- * @property string $ResourceOwner
+ * @property string|null $Cidr
+ * @property string|null $IpamPoolAllocationId
+ * @property string|null $Description
+ * @property string|null $ResourceId
+ * @property 'ipam-pool'|'vpc'|'ec2-public-ipv4-pool'|'custom'|'subnet'|'eip'|null $ResourceType
+ * @property string|null $ResourceRegion
+ * @property string|null $ResourceOwner
  */
 class IpamPoolAllocation extends Shape
 {
     /**
      * @param array{
-     *     Cidr?: string,
-     *     IpamPoolAllocationId?: string,
-     *     Description?: string,
-     *     ResourceId?: string,
-     *     ResourceType?: 'ipam-pool'|'vpc'|'ec2-public-ipv4-pool'|'custom'|'subnet'|'eip',
-     *     ResourceRegion?: string,
-     *     ResourceOwner?: string
+     *     Cidr?: string|null,
+     *     IpamPoolAllocationId?: string|null,
+     *     Description?: string|null,
+     *     ResourceId?: string|null,
+     *     ResourceType?: 'ipam-pool'|'vpc'|'ec2-public-ipv4-pool'|'custom'|'subnet'|'eip'|null,
+     *     ResourceRegion?: string|null,
+     *     ResourceOwner?: string|null
      * } $args
      */
     public function __construct(array $args = [])

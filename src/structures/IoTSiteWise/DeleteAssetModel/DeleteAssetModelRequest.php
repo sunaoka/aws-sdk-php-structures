@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assetModelId
- * @property string $clientToken
- * @property string $ifMatch
- * @property string $ifNoneMatch
- * @property 'LATEST'|'ACTIVE' $matchForVersionType
+ * @property string|null $clientToken
+ * @property string|null $ifMatch
+ * @property string|null $ifNoneMatch
+ * @property 'LATEST'|'ACTIVE'|null $matchForVersionType
  */
 class DeleteAssetModelRequest extends Request
 {
     /**
      * @param array{
      *     assetModelId: string,
-     *     clientToken?: string,
-     *     ifMatch?: string,
-     *     ifNoneMatch?: string,
-     *     matchForVersionType?: 'LATEST'|'ACTIVE'
+     *     clientToken?: string|null,
+     *     ifMatch?: string|null,
+     *     ifNoneMatch?: string|null,
+     *     matchForVersionType?: 'LATEST'|'ACTIVE'|null
      * } $args
      */
     public function __construct(array $args)

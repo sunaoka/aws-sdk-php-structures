@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Version
- * @property string $Epoch
- * @property string $Release
- * @property string $Architecture
- * @property string $PackageManager
- * @property string $FilePath
- * @property string $FixedInVersion
- * @property string $Remediation
- * @property string $SourceLayerHash
- * @property string $SourceLayerArn
+ * @property string|null $Name
+ * @property string|null $Version
+ * @property string|null $Epoch
+ * @property string|null $Release
+ * @property string|null $Architecture
+ * @property string|null $PackageManager
+ * @property string|null $FilePath
+ * @property string|null $FixedInVersion
+ * @property string|null $Remediation
+ * @property string|null $SourceLayerHash
+ * @property string|null $SourceLayerArn
  */
 class SoftwarePackage extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Version?: string,
-     *     Epoch?: string,
-     *     Release?: string,
-     *     Architecture?: string,
-     *     PackageManager?: string,
-     *     FilePath?: string,
-     *     FixedInVersion?: string,
-     *     Remediation?: string,
-     *     SourceLayerHash?: string,
-     *     SourceLayerArn?: string
+     *     Name?: string|null,
+     *     Version?: string|null,
+     *     Epoch?: string|null,
+     *     Release?: string|null,
+     *     Architecture?: string|null,
+     *     PackageManager?: string|null,
+     *     FilePath?: string|null,
+     *     FixedInVersion?: string|null,
+     *     Remediation?: string|null,
+     *     SourceLayerHash?: string|null,
+     *     SourceLayerArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

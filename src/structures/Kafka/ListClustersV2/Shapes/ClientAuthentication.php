@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Kafka\ListClustersV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Sasl $Sasl
- * @property Tls $Tls
- * @property Unauthenticated $Unauthenticated
+ * @property Sasl|null $Sasl
+ * @property Tls|null $Tls
+ * @property Unauthenticated|null $Unauthenticated
  */
 class ClientAuthentication extends Shape
 {
     /**
      * @param array{
-     *     Sasl?: Sasl,
-     *     Tls?: Tls,
-     *     Unauthenticated?: Unauthenticated
+     *     Sasl?: Sasl|null,
+     *     Tls?: Tls|null,
+     *     Unauthenticated?: Unauthenticated|null
      * } $args
      */
     public function __construct(array $args = [])

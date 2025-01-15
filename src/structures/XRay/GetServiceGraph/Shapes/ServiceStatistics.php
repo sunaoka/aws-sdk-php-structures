@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\XRay\GetServiceGraph\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $OkCount
- * @property ErrorStatistics $ErrorStatistics
- * @property FaultStatistics $FaultStatistics
- * @property int $TotalCount
- * @property double $TotalResponseTime
+ * @property int|null $OkCount
+ * @property ErrorStatistics|null $ErrorStatistics
+ * @property FaultStatistics|null $FaultStatistics
+ * @property int|null $TotalCount
+ * @property double|null $TotalResponseTime
  */
 class ServiceStatistics extends Shape
 {
     /**
      * @param array{
-     *     OkCount?: int,
-     *     ErrorStatistics?: ErrorStatistics,
-     *     FaultStatistics?: FaultStatistics,
-     *     TotalCount?: int,
-     *     TotalResponseTime?: double
+     *     OkCount?: int|null,
+     *     ErrorStatistics?: ErrorStatistics|null,
+     *     FaultStatistics?: FaultStatistics|null,
+     *     TotalCount?: int|null,
+     *     TotalResponseTime?: double|null
      * } $args
      */
     public function __construct(array $args = [])

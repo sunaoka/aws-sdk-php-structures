@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\VerifiedPermissions\IsAuthorized\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $boolean
- * @property EntityIdentifier $entityIdentifier
- * @property int $long
- * @property string $string
- * @property list<AttributeValue> $set
- * @property array<string, AttributeValue> $record
- * @property string $ipaddr
- * @property string $decimal
+ * @property bool|null $boolean
+ * @property EntityIdentifier|null $entityIdentifier
+ * @property int|null $long
+ * @property string|null $string
+ * @property list<AttributeValue>|null $set
+ * @property array<string, AttributeValue>|null $record
+ * @property string|null $ipaddr
+ * @property string|null $decimal
  */
 class AttributeValue extends Shape
 {
     /**
      * @param array{
-     *     boolean?: bool,
-     *     entityIdentifier?: EntityIdentifier,
-     *     long?: int,
-     *     string?: string,
-     *     set?: list<AttributeValue>,
-     *     record?: array<string, AttributeValue>,
-     *     ipaddr?: string,
-     *     decimal?: string
+     *     boolean?: bool|null,
+     *     entityIdentifier?: EntityIdentifier|null,
+     *     long?: int|null,
+     *     string?: string|null,
+     *     set?: list<AttributeValue>|null,
+     *     record?: array<string, AttributeValue>|null,
+     *     ipaddr?: string|null,
+     *     decimal?: string|null
      * } $args
      */
     public function __construct(array $args = [])

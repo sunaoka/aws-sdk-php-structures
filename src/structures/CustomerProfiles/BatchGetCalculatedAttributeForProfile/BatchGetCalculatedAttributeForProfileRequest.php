@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CalculatedAttributeName
  * @property string $DomainName
  * @property list<string> $ProfileIds
- * @property Shapes\ConditionOverrides $ConditionOverrides
+ * @property Shapes\ConditionOverrides|null $ConditionOverrides
  */
 class BatchGetCalculatedAttributeForProfileRequest extends Request
 {
@@ -17,7 +17,7 @@ class BatchGetCalculatedAttributeForProfileRequest extends Request
      *     CalculatedAttributeName: string,
      *     DomainName: string,
      *     ProfileIds: list<string>,
-     *     ConditionOverrides?: Shapes\ConditionOverrides
+     *     ConditionOverrides?: Shapes\ConditionOverrides|null
      * } $args
      */
     public function __construct(array $args)

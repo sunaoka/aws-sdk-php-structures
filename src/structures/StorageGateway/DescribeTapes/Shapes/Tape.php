@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DescribeTapes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TapeARN
- * @property string $TapeBarcode
- * @property \Aws\Api\DateTimeResult $TapeCreatedDate
- * @property int $TapeSizeInBytes
- * @property string $TapeStatus
- * @property string $VTLDevice
- * @property double $Progress
- * @property int $TapeUsedInBytes
- * @property string $KMSKey
- * @property string $PoolId
- * @property bool $Worm
- * @property \Aws\Api\DateTimeResult $RetentionStartDate
- * @property \Aws\Api\DateTimeResult $PoolEntryDate
+ * @property string|null $TapeARN
+ * @property string|null $TapeBarcode
+ * @property \Aws\Api\DateTimeResult|null $TapeCreatedDate
+ * @property int|null $TapeSizeInBytes
+ * @property string|null $TapeStatus
+ * @property string|null $VTLDevice
+ * @property double|null $Progress
+ * @property int|null $TapeUsedInBytes
+ * @property string|null $KMSKey
+ * @property string|null $PoolId
+ * @property bool|null $Worm
+ * @property \Aws\Api\DateTimeResult|null $RetentionStartDate
+ * @property \Aws\Api\DateTimeResult|null $PoolEntryDate
  */
 class Tape extends Shape
 {
     /**
      * @param array{
-     *     TapeARN?: string,
-     *     TapeBarcode?: string,
-     *     TapeCreatedDate?: \Aws\Api\DateTimeResult,
-     *     TapeSizeInBytes?: int,
-     *     TapeStatus?: string,
-     *     VTLDevice?: string,
-     *     Progress?: double,
-     *     TapeUsedInBytes?: int,
-     *     KMSKey?: string,
-     *     PoolId?: string,
-     *     Worm?: bool,
-     *     RetentionStartDate?: \Aws\Api\DateTimeResult,
-     *     PoolEntryDate?: \Aws\Api\DateTimeResult
+     *     TapeARN?: string|null,
+     *     TapeBarcode?: string|null,
+     *     TapeCreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     TapeSizeInBytes?: int|null,
+     *     TapeStatus?: string|null,
+     *     VTLDevice?: string|null,
+     *     Progress?: double|null,
+     *     TapeUsedInBytes?: int|null,
+     *     KMSKey?: string|null,
+     *     PoolId?: string|null,
+     *     Worm?: bool|null,
+     *     RetentionStartDate?: \Aws\Api\DateTimeResult|null,
+     *     PoolEntryDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

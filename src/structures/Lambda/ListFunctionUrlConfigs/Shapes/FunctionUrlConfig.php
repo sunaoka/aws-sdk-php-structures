@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FunctionArn
  * @property string $CreationTime
  * @property string $LastModifiedTime
- * @property Cors $Cors
+ * @property Cors|null $Cors
  * @property 'NONE'|'AWS_IAM' $AuthType
- * @property 'BUFFERED'|'RESPONSE_STREAM' $InvokeMode
+ * @property 'BUFFERED'|'RESPONSE_STREAM'|null $InvokeMode
  */
 class FunctionUrlConfig extends Shape
 {
@@ -21,9 +21,9 @@ class FunctionUrlConfig extends Shape
      *     FunctionArn: string,
      *     CreationTime: string,
      *     LastModifiedTime: string,
-     *     Cors?: Cors,
+     *     Cors?: Cors|null,
      *     AuthType: 'NONE'|'AWS_IAM',
-     *     InvokeMode?: 'BUFFERED'|'RESPONSE_STREAM'
+     *     InvokeMode?: 'BUFFERED'|'RESPONSE_STREAM'|null
      * } $args
      */
     public function __construct(array $args)

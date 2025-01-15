@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $ScriptLocation
- * @property string $PythonVersion
- * @property string $Runtime
+ * @property string|null $Name
+ * @property string|null $ScriptLocation
+ * @property string|null $PythonVersion
+ * @property string|null $Runtime
  */
 class JobCommand extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     ScriptLocation?: string,
-     *     PythonVersion?: string,
-     *     Runtime?: string
+     *     Name?: string|null,
+     *     ScriptLocation?: string|null,
+     *     PythonVersion?: string|null,
+     *     Runtime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

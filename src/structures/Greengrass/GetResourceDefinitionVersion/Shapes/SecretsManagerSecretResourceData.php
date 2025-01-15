@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Greengrass\GetResourceDefinitionVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ARN
- * @property list<string> $AdditionalStagingLabelsToDownload
+ * @property string|null $ARN
+ * @property list<string>|null $AdditionalStagingLabelsToDownload
  */
 class SecretsManagerSecretResourceData extends Shape
 {
     /**
      * @param array{
-     *     ARN?: string,
-     *     AdditionalStagingLabelsToDownload?: list<string>
+     *     ARN?: string|null,
+     *     AdditionalStagingLabelsToDownload?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

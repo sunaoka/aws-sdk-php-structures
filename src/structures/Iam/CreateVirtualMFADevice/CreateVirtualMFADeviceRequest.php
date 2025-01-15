@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iam\CreateVirtualMFADevice;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Path
+ * @property string|null $Path
  * @property string $VirtualMFADeviceName
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateVirtualMFADeviceRequest extends Request
 {
     /**
      * @param array{
-     *     Path?: string,
+     *     Path?: string|null,
      *     VirtualMFADeviceName: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

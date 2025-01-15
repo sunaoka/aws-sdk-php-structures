@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FieldId
  * @property 'PRIMARY_YAXIS'|'SECONDARY_YAXIS' $AxisBinding
- * @property LineChartSeriesSettings $Settings
+ * @property LineChartSeriesSettings|null $Settings
  */
 class FieldSeriesItem extends Shape
 {
@@ -15,7 +15,7 @@ class FieldSeriesItem extends Shape
      * @param array{
      *     FieldId: string,
      *     AxisBinding: 'PRIMARY_YAXIS'|'SECONDARY_YAXIS',
-     *     Settings?: LineChartSeriesSettings
+     *     Settings?: LineChartSeriesSettings|null
      * } $args
      */
     public function __construct(array $args)

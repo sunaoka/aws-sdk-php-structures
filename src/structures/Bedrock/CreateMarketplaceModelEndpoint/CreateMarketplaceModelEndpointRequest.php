@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $modelSourceIdentifier
  * @property Shapes\EndpointConfig $endpointConfig
- * @property bool $acceptEula
+ * @property bool|null $acceptEula
  * @property string $endpointName
- * @property string $clientRequestToken
- * @property list<Shapes\Tag> $tags
+ * @property string|null $clientRequestToken
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateMarketplaceModelEndpointRequest extends Request
 {
@@ -18,10 +18,10 @@ class CreateMarketplaceModelEndpointRequest extends Request
      * @param array{
      *     modelSourceIdentifier: string,
      *     endpointConfig: Shapes\EndpointConfig,
-     *     acceptEula?: bool,
+     *     acceptEula?: bool|null,
      *     endpointName: string,
-     *     clientRequestToken?: string,
-     *     tags?: list<Shapes\Tag>
+     *     clientRequestToken?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateAppImageConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $ContainerArguments
- * @property list<string> $ContainerEntrypoint
- * @property array<string, string> $ContainerEnvironmentVariables
+ * @property list<string>|null $ContainerArguments
+ * @property list<string>|null $ContainerEntrypoint
+ * @property array<string, string>|null $ContainerEnvironmentVariables
  */
 class ContainerConfig extends Shape
 {
     /**
      * @param array{
-     *     ContainerArguments?: list<string>,
-     *     ContainerEntrypoint?: list<string>,
-     *     ContainerEnvironmentVariables?: array<string, string>
+     *     ContainerArguments?: list<string>|null,
+     *     ContainerEntrypoint?: list<string>|null,
+     *     ContainerEnvironmentVariables?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

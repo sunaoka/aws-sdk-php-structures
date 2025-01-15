@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\AuditManager\GetAssessment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $id
- * @property string $description
- * @property string $complianceType
- * @property 'ACTIVE'|'INACTIVE' $status
- * @property AssessmentReportsDestination $assessmentReportsDestination
- * @property Scope $scope
- * @property list<Role> $roles
- * @property list<Delegation> $delegations
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdated
+ * @property string|null $name
+ * @property string|null $id
+ * @property string|null $description
+ * @property string|null $complianceType
+ * @property 'ACTIVE'|'INACTIVE'|null $status
+ * @property AssessmentReportsDestination|null $assessmentReportsDestination
+ * @property Scope|null $scope
+ * @property list<Role>|null $roles
+ * @property list<Delegation>|null $delegations
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdated
  */
 class AssessmentMetadata extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     id?: string,
-     *     description?: string,
-     *     complianceType?: string,
-     *     status?: 'ACTIVE'|'INACTIVE',
-     *     assessmentReportsDestination?: AssessmentReportsDestination,
-     *     scope?: Scope,
-     *     roles?: list<Role>,
-     *     delegations?: list<Delegation>,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdated?: \Aws\Api\DateTimeResult
+     *     name?: string|null,
+     *     id?: string|null,
+     *     description?: string|null,
+     *     complianceType?: string|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|null,
+     *     assessmentReportsDestination?: AssessmentReportsDestination|null,
+     *     scope?: Scope|null,
+     *     roles?: list<Role>|null,
+     *     delegations?: list<Delegation>|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdated?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

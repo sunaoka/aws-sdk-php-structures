@@ -5,40 +5,40 @@ namespace Sunaoka\Aws\Structures\S3\HeadObject;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $DeleteMarker
- * @property string $AcceptRanges
- * @property string $Expiration
- * @property string $Restore
- * @property 'ARCHIVE_ACCESS'|'DEEP_ARCHIVE_ACCESS' $ArchiveStatus
- * @property \Aws\Api\DateTimeResult $LastModified
- * @property int $ContentLength
- * @property string $ChecksumCRC32
- * @property string $ChecksumCRC32C
- * @property string $ChecksumSHA1
- * @property string $ChecksumSHA256
- * @property string $ETag
- * @property int $MissingMeta
- * @property string $VersionId
- * @property string $CacheControl
- * @property string $ContentDisposition
- * @property string $ContentEncoding
- * @property string $ContentLanguage
- * @property string $ContentType
- * @property \Aws\Api\DateTimeResult $Expires
- * @property string $WebsiteRedirectLocation
- * @property 'AES256'|'aws:kms'|'aws:kms:dsse' $ServerSideEncryption
- * @property array<string, string> $Metadata
- * @property string $SSECustomerAlgorithm
- * @property string $SSECustomerKeyMD5
- * @property string $SSEKMSKeyId
- * @property bool $BucketKeyEnabled
- * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE' $StorageClass
- * @property 'requester' $RequestCharged
- * @property 'COMPLETE'|'PENDING'|'FAILED'|'REPLICA'|'COMPLETED' $ReplicationStatus
- * @property int $PartsCount
- * @property 'GOVERNANCE'|'COMPLIANCE' $ObjectLockMode
- * @property \Aws\Api\DateTimeResult $ObjectLockRetainUntilDate
- * @property 'ON'|'OFF' $ObjectLockLegalHoldStatus
+ * @property bool|null $DeleteMarker
+ * @property string|null $AcceptRanges
+ * @property string|null $Expiration
+ * @property string|null $Restore
+ * @property 'ARCHIVE_ACCESS'|'DEEP_ARCHIVE_ACCESS'|null $ArchiveStatus
+ * @property \Aws\Api\DateTimeResult|null $LastModified
+ * @property int|null $ContentLength
+ * @property string|null $ChecksumCRC32
+ * @property string|null $ChecksumCRC32C
+ * @property string|null $ChecksumSHA1
+ * @property string|null $ChecksumSHA256
+ * @property string|null $ETag
+ * @property int|null $MissingMeta
+ * @property string|null $VersionId
+ * @property string|null $CacheControl
+ * @property string|null $ContentDisposition
+ * @property string|null $ContentEncoding
+ * @property string|null $ContentLanguage
+ * @property string|null $ContentType
+ * @property \Aws\Api\DateTimeResult|null $Expires
+ * @property string|null $WebsiteRedirectLocation
+ * @property 'AES256'|'aws:kms'|'aws:kms:dsse'|null $ServerSideEncryption
+ * @property array<string, string>|null $Metadata
+ * @property string|null $SSECustomerAlgorithm
+ * @property string|null $SSECustomerKeyMD5
+ * @property string|null $SSEKMSKeyId
+ * @property bool|null $BucketKeyEnabled
+ * @property 'STANDARD'|'REDUCED_REDUNDANCY'|'STANDARD_IA'|'ONEZONE_IA'|'INTELLIGENT_TIERING'|'GLACIER'|'DEEP_ARCHIVE'|'OUTPOSTS'|'GLACIER_IR'|'SNOW'|'EXPRESS_ONEZONE'|null $StorageClass
+ * @property 'requester'|null $RequestCharged
+ * @property 'COMPLETE'|'PENDING'|'FAILED'|'REPLICA'|'COMPLETED'|null $ReplicationStatus
+ * @property int|null $PartsCount
+ * @property 'GOVERNANCE'|'COMPLIANCE'|null $ObjectLockMode
+ * @property \Aws\Api\DateTimeResult|null $ObjectLockRetainUntilDate
+ * @property 'ON'|'OFF'|null $ObjectLockLegalHoldStatus
  */
 class HeadObjectResponse extends Response
 {

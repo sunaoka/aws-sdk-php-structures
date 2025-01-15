@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\DescribeInsight\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property 'LOW'|'MEDIUM'|'HIGH' $Severity
- * @property 'ONGOING'|'CLOSED' $Status
- * @property InsightTimeRange $InsightTimeRange
- * @property PredictionTimeRange $PredictionTimeRange
- * @property ResourceCollection $ResourceCollection
- * @property string $SsmOpsItemId
- * @property string $Description
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property 'LOW'|'MEDIUM'|'HIGH'|null $Severity
+ * @property 'ONGOING'|'CLOSED'|null $Status
+ * @property InsightTimeRange|null $InsightTimeRange
+ * @property PredictionTimeRange|null $PredictionTimeRange
+ * @property ResourceCollection|null $ResourceCollection
+ * @property string|null $SsmOpsItemId
+ * @property string|null $Description
  */
 class ProactiveInsight extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     Severity?: 'LOW'|'MEDIUM'|'HIGH',
-     *     Status?: 'ONGOING'|'CLOSED',
-     *     InsightTimeRange?: InsightTimeRange,
-     *     PredictionTimeRange?: PredictionTimeRange,
-     *     ResourceCollection?: ResourceCollection,
-     *     SsmOpsItemId?: string,
-     *     Description?: string
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Severity?: 'LOW'|'MEDIUM'|'HIGH'|null,
+     *     Status?: 'ONGOING'|'CLOSED'|null,
+     *     InsightTimeRange?: InsightTimeRange|null,
+     *     PredictionTimeRange?: PredictionTimeRange|null,
+     *     ResourceCollection?: ResourceCollection|null,
+     *     SsmOpsItemId?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

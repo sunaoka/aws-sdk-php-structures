@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domainNameArn
  * @property 'VPCE' $accessAssociationSourceType
  * @property string $accessAssociationSource
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateDomainNameAccessAssociationRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateDomainNameAccessAssociationRequest extends Request
      *     domainNameArn: string,
      *     accessAssociationSourceType: 'VPCE',
      *     accessAssociationSource: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

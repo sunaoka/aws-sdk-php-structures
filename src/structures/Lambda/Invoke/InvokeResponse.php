@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Lambda\Invoke;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $StatusCode
- * @property string $FunctionError
- * @property string $LogResult
- * @property string|resource|\Psr\Http\Message\StreamInterface $Payload
- * @property string $ExecutedVersion
+ * @property int|null $StatusCode
+ * @property string|null $FunctionError
+ * @property string|null $LogResult
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $Payload
+ * @property string|null $ExecutedVersion
  */
 class InvokeResponse extends Response
 {

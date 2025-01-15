@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $resourceId
  * @property string $httpMethod
  * @property string $statusCode
- * @property list<Shapes\PatchOperation> $patchOperations
+ * @property list<Shapes\PatchOperation>|null $patchOperations
  */
 class UpdateMethodResponseRequest extends Request
 {
@@ -19,7 +19,7 @@ class UpdateMethodResponseRequest extends Request
      *     resourceId: string,
      *     httpMethod: string,
      *     statusCode: string,
-     *     patchOperations?: list<Shapes\PatchOperation>
+     *     patchOperations?: list<Shapes\PatchOperation>|null
      * } $args
      */
     public function __construct(array $args)

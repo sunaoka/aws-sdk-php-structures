@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StorageSystemArn
  * @property int<60, 44640> $CollectionDurationMinutes
  * @property string $ClientToken
- * @property list<Shapes\TagListEntry> $Tags
+ * @property list<Shapes\TagListEntry>|null $Tags
  */
 class StartDiscoveryJobRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartDiscoveryJobRequest extends Request
      *     StorageSystemArn: string,
      *     CollectionDurationMinutes: int<60, 44640>,
      *     ClientToken: string,
-     *     Tags?: list<Shapes\TagListEntry>
+     *     Tags?: list<Shapes\TagListEntry>|null
      * } $args
      */
     public function __construct(array $args)

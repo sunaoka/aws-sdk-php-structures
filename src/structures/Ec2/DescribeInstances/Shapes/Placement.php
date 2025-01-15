@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Affinity
- * @property string $GroupName
- * @property int $PartitionNumber
- * @property string $HostId
- * @property 'default'|'dedicated'|'host' $Tenancy
- * @property string $SpreadDomain
- * @property string $HostResourceGroupArn
- * @property string $GroupId
- * @property string $AvailabilityZone
+ * @property string|null $Affinity
+ * @property string|null $GroupName
+ * @property int|null $PartitionNumber
+ * @property string|null $HostId
+ * @property 'default'|'dedicated'|'host'|null $Tenancy
+ * @property string|null $SpreadDomain
+ * @property string|null $HostResourceGroupArn
+ * @property string|null $GroupId
+ * @property string|null $AvailabilityZone
  */
 class Placement extends Shape
 {
     /**
      * @param array{
-     *     Affinity?: string,
-     *     GroupName?: string,
-     *     PartitionNumber?: int,
-     *     HostId?: string,
-     *     Tenancy?: 'default'|'dedicated'|'host',
-     *     SpreadDomain?: string,
-     *     HostResourceGroupArn?: string,
-     *     GroupId?: string,
-     *     AvailabilityZone?: string
+     *     Affinity?: string|null,
+     *     GroupName?: string|null,
+     *     PartitionNumber?: int|null,
+     *     HostId?: string|null,
+     *     Tenancy?: 'default'|'dedicated'|'host'|null,
+     *     SpreadDomain?: string|null,
+     *     HostResourceGroupArn?: string|null,
+     *     GroupId?: string|null,
+     *     AvailabilityZone?: string|null
      * } $args
      */
     public function __construct(array $args = [])

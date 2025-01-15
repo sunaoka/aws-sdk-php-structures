@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $QueryId
  * @property string $QueryArn
  * @property string $QueryName
- * @property string $Description
+ * @property string|null $Description
  */
 class StoredQueryMetadata extends Shape
 {
@@ -17,7 +17,7 @@ class StoredQueryMetadata extends Shape
      *     QueryId: string,
      *     QueryArn: string,
      *     QueryName: string,
-     *     Description?: string
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

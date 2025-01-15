@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $deploymentId
  * @property string $environmentId
  * @property 'Deploying'|'Succeeded'|'Failed'|'Updating Deployment' $status
- * @property string $statusReason
+ * @property string|null $statusReason
  */
 class GetDeploymentResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaPackage\ListChannels;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListChannelsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

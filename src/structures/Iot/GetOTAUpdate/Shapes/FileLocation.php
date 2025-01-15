@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\GetOTAUpdate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Stream $stream
- * @property S3Location $s3Location
+ * @property Stream|null $stream
+ * @property S3Location|null $s3Location
  */
 class FileLocation extends Shape
 {
     /**
      * @param array{
-     *     stream?: Stream,
-     *     s3Location?: S3Location
+     *     stream?: Stream|null,
+     *     s3Location?: S3Location|null
      * } $args
      */
     public function __construct(array $args = [])

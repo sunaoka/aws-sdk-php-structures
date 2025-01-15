@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string|resource|\Psr\Http\Message\StreamInterface $Message
  * @property string $KeyId
  * @property 'HMAC_SHA_224'|'HMAC_SHA_256'|'HMAC_SHA_384'|'HMAC_SHA_512' $MacAlgorithm
- * @property list<string> $GrantTokens
- * @property bool $DryRun
+ * @property list<string>|null $GrantTokens
+ * @property bool|null $DryRun
  */
 class GenerateMacRequest extends Request
 {
@@ -18,8 +18,8 @@ class GenerateMacRequest extends Request
      *     Message: string|resource|\Psr\Http\Message\StreamInterface,
      *     KeyId: string,
      *     MacAlgorithm: 'HMAC_SHA_224'|'HMAC_SHA_256'|'HMAC_SHA_384'|'HMAC_SHA_512',
-     *     GrantTokens?: list<string>,
-     *     DryRun?: bool
+     *     GrantTokens?: list<string>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

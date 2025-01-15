@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\UpdateApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SqlApplicationConfigurationUpdate $SqlApplicationConfigurationUpdate
- * @property ApplicationCodeConfigurationUpdate $ApplicationCodeConfigurationUpdate
- * @property FlinkApplicationConfigurationUpdate $FlinkApplicationConfigurationUpdate
- * @property EnvironmentPropertyUpdates $EnvironmentPropertyUpdates
- * @property ApplicationSnapshotConfigurationUpdate $ApplicationSnapshotConfigurationUpdate
- * @property ApplicationSystemRollbackConfigurationUpdate $ApplicationSystemRollbackConfigurationUpdate
- * @property list<VpcConfigurationUpdate> $VpcConfigurationUpdates
- * @property ZeppelinApplicationConfigurationUpdate $ZeppelinApplicationConfigurationUpdate
+ * @property SqlApplicationConfigurationUpdate|null $SqlApplicationConfigurationUpdate
+ * @property ApplicationCodeConfigurationUpdate|null $ApplicationCodeConfigurationUpdate
+ * @property FlinkApplicationConfigurationUpdate|null $FlinkApplicationConfigurationUpdate
+ * @property EnvironmentPropertyUpdates|null $EnvironmentPropertyUpdates
+ * @property ApplicationSnapshotConfigurationUpdate|null $ApplicationSnapshotConfigurationUpdate
+ * @property ApplicationSystemRollbackConfigurationUpdate|null $ApplicationSystemRollbackConfigurationUpdate
+ * @property list<VpcConfigurationUpdate>|null $VpcConfigurationUpdates
+ * @property ZeppelinApplicationConfigurationUpdate|null $ZeppelinApplicationConfigurationUpdate
  */
 class ApplicationConfigurationUpdate extends Shape
 {
     /**
      * @param array{
-     *     SqlApplicationConfigurationUpdate?: SqlApplicationConfigurationUpdate,
-     *     ApplicationCodeConfigurationUpdate?: ApplicationCodeConfigurationUpdate,
-     *     FlinkApplicationConfigurationUpdate?: FlinkApplicationConfigurationUpdate,
-     *     EnvironmentPropertyUpdates?: EnvironmentPropertyUpdates,
-     *     ApplicationSnapshotConfigurationUpdate?: ApplicationSnapshotConfigurationUpdate,
-     *     ApplicationSystemRollbackConfigurationUpdate?: ApplicationSystemRollbackConfigurationUpdate,
-     *     VpcConfigurationUpdates?: list<VpcConfigurationUpdate>,
-     *     ZeppelinApplicationConfigurationUpdate?: ZeppelinApplicationConfigurationUpdate
+     *     SqlApplicationConfigurationUpdate?: SqlApplicationConfigurationUpdate|null,
+     *     ApplicationCodeConfigurationUpdate?: ApplicationCodeConfigurationUpdate|null,
+     *     FlinkApplicationConfigurationUpdate?: FlinkApplicationConfigurationUpdate|null,
+     *     EnvironmentPropertyUpdates?: EnvironmentPropertyUpdates|null,
+     *     ApplicationSnapshotConfigurationUpdate?: ApplicationSnapshotConfigurationUpdate|null,
+     *     ApplicationSystemRollbackConfigurationUpdate?: ApplicationSystemRollbackConfigurationUpdate|null,
+     *     VpcConfigurationUpdates?: list<VpcConfigurationUpdate>|null,
+     *     ZeppelinApplicationConfigurationUpdate?: ZeppelinApplicationConfigurationUpdate|null
      * } $args
      */
     public function __construct(array $args = [])

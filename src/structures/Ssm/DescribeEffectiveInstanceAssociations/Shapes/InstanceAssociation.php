@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeEffectiveInstanceAssociations\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AssociationId
- * @property string $InstanceId
- * @property string $Content
- * @property string $AssociationVersion
+ * @property string|null $AssociationId
+ * @property string|null $InstanceId
+ * @property string|null $Content
+ * @property string|null $AssociationVersion
  */
 class InstanceAssociation extends Shape
 {
     /**
      * @param array{
-     *     AssociationId?: string,
-     *     InstanceId?: string,
-     *     Content?: string,
-     *     AssociationVersion?: string
+     *     AssociationId?: string|null,
+     *     InstanceId?: string|null,
+     *     Content?: string|null,
+     *     AssociationVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

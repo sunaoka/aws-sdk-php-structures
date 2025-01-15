@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\EKS\DescribeIdentityProviderConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $identityProviderConfigName
- * @property string $identityProviderConfigArn
- * @property string $clusterName
- * @property string $issuerUrl
- * @property string $clientId
- * @property string $usernameClaim
- * @property string $usernamePrefix
- * @property string $groupsClaim
- * @property string $groupsPrefix
- * @property array<string, string> $requiredClaims
- * @property array<string, string> $tags
- * @property 'CREATING'|'DELETING'|'ACTIVE' $status
+ * @property string|null $identityProviderConfigName
+ * @property string|null $identityProviderConfigArn
+ * @property string|null $clusterName
+ * @property string|null $issuerUrl
+ * @property string|null $clientId
+ * @property string|null $usernameClaim
+ * @property string|null $usernamePrefix
+ * @property string|null $groupsClaim
+ * @property string|null $groupsPrefix
+ * @property array<string, string>|null $requiredClaims
+ * @property array<string, string>|null $tags
+ * @property 'CREATING'|'DELETING'|'ACTIVE'|null $status
  */
 class OidcIdentityProviderConfig extends Shape
 {
     /**
      * @param array{
-     *     identityProviderConfigName?: string,
-     *     identityProviderConfigArn?: string,
-     *     clusterName?: string,
-     *     issuerUrl?: string,
-     *     clientId?: string,
-     *     usernameClaim?: string,
-     *     usernamePrefix?: string,
-     *     groupsClaim?: string,
-     *     groupsPrefix?: string,
-     *     requiredClaims?: array<string, string>,
-     *     tags?: array<string, string>,
-     *     status?: 'CREATING'|'DELETING'|'ACTIVE'
+     *     identityProviderConfigName?: string|null,
+     *     identityProviderConfigArn?: string|null,
+     *     clusterName?: string|null,
+     *     issuerUrl?: string|null,
+     *     clientId?: string|null,
+     *     usernameClaim?: string|null,
+     *     usernamePrefix?: string|null,
+     *     groupsClaim?: string|null,
+     *     groupsPrefix?: string|null,
+     *     requiredClaims?: array<string, string>|null,
+     *     tags?: array<string, string>|null,
+     *     status?: 'CREATING'|'DELETING'|'ACTIVE'|null
      * } $args
      */
     public function __construct(array $args = [])

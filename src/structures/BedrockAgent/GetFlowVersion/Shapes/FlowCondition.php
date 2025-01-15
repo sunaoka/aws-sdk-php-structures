@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\GetFlowVersion\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $expression
+ * @property string|null $expression
  * @property string $name
  */
 class FlowCondition extends Shape
 {
     /**
      * @param array{
-     *     expression?: string,
+     *     expression?: string|null,
      *     name: string
      * } $args
      */

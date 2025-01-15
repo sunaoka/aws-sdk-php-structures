@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $resourceType
  * @property string $resource
- * @property string $error
- * @property string $cause
+ * @property string|null $error
+ * @property string|null $cause
  */
 class TaskFailedEventDetails extends Shape
 {
@@ -16,8 +16,8 @@ class TaskFailedEventDetails extends Shape
      * @param array{
      *     resourceType: string,
      *     resource: string,
-     *     error?: string,
-     *     cause?: string
+     *     error?: string|null,
+     *     cause?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NeptuneGraph\ListGraphSnapshots;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $graphIdentifier
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $graphIdentifier
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListGraphSnapshotsRequest extends Request
 {
     /**
      * @param array{
-     *     graphIdentifier?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     graphIdentifier?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\AuditManager\UpdateAssessmentStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $description
- * @property 'ACTIVE'|'UNDER_REVIEW'|'REVIEWED' $status
- * @property list<Role> $roles
- * @property list<AssessmentControl> $controls
- * @property list<Delegation> $delegations
- * @property int $systemEvidenceCount
- * @property int $manualEvidenceCount
+ * @property string|null $id
+ * @property string|null $description
+ * @property 'ACTIVE'|'UNDER_REVIEW'|'REVIEWED'|null $status
+ * @property list<Role>|null $roles
+ * @property list<AssessmentControl>|null $controls
+ * @property list<Delegation>|null $delegations
+ * @property int|null $systemEvidenceCount
+ * @property int|null $manualEvidenceCount
  */
 class AssessmentControlSet extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     description?: string,
-     *     status?: 'ACTIVE'|'UNDER_REVIEW'|'REVIEWED',
-     *     roles?: list<Role>,
-     *     controls?: list<AssessmentControl>,
-     *     delegations?: list<Delegation>,
-     *     systemEvidenceCount?: int,
-     *     manualEvidenceCount?: int
+     *     id?: string|null,
+     *     description?: string|null,
+     *     status?: 'ACTIVE'|'UNDER_REVIEW'|'REVIEWED'|null,
+     *     roles?: list<Role>|null,
+     *     controls?: list<AssessmentControl>|null,
+     *     delegations?: list<Delegation>|null,
+     *     systemEvidenceCount?: int|null,
+     *     manualEvidenceCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property array<string, AttributeValue> $Item
  * @property string $TableName
- * @property string $ConditionExpression
- * @property array<string, string> $ExpressionAttributeNames
- * @property array<string, AttributeValue> $ExpressionAttributeValues
- * @property 'ALL_OLD'|'NONE' $ReturnValuesOnConditionCheckFailure
+ * @property string|null $ConditionExpression
+ * @property array<string, string>|null $ExpressionAttributeNames
+ * @property array<string, AttributeValue>|null $ExpressionAttributeValues
+ * @property 'ALL_OLD'|'NONE'|null $ReturnValuesOnConditionCheckFailure
  */
 class Put extends Shape
 {
@@ -18,10 +18,10 @@ class Put extends Shape
      * @param array{
      *     Item: array<string, AttributeValue>,
      *     TableName: string,
-     *     ConditionExpression?: string,
-     *     ExpressionAttributeNames?: array<string, string>,
-     *     ExpressionAttributeValues?: array<string, AttributeValue>,
-     *     ReturnValuesOnConditionCheckFailure?: 'ALL_OLD'|'NONE'
+     *     ConditionExpression?: string|null,
+     *     ExpressionAttributeNames?: array<string, string>|null,
+     *     ExpressionAttributeValues?: array<string, AttributeValue>|null,
+     *     ReturnValuesOnConditionCheckFailure?: 'ALL_OLD'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ComputeConfiguration $compute
+ * @property ComputeConfiguration|null $compute
  */
 class LambdaFunctionConfiguration extends Shape
 {
     /**
-     * @param array{compute?: ComputeConfiguration} $args
+     * @param array{compute?: ComputeConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\CreateNamespace;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $adminPasswordSecretKmsKeyId
- * @property string $adminUserPassword
- * @property string $adminUsername
- * @property string $dbName
- * @property string $defaultIamRoleArn
- * @property list<string> $iamRoles
- * @property string $kmsKeyId
- * @property list<'useractivitylog'|'userlog'|'connectionlog'> $logExports
- * @property bool $manageAdminPassword
+ * @property string|null $adminPasswordSecretKmsKeyId
+ * @property string|null $adminUserPassword
+ * @property string|null $adminUsername
+ * @property string|null $dbName
+ * @property string|null $defaultIamRoleArn
+ * @property list<string>|null $iamRoles
+ * @property string|null $kmsKeyId
+ * @property list<'useractivitylog'|'userlog'|'connectionlog'>|null $logExports
+ * @property bool|null $manageAdminPassword
  * @property string $namespaceName
- * @property string $redshiftIdcApplicationArn
- * @property list<Shapes\Tag> $tags
+ * @property string|null $redshiftIdcApplicationArn
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateNamespaceRequest extends Request
 {
     /**
      * @param array{
-     *     adminPasswordSecretKmsKeyId?: string,
-     *     adminUserPassword?: string,
-     *     adminUsername?: string,
-     *     dbName?: string,
-     *     defaultIamRoleArn?: string,
-     *     iamRoles?: list<string>,
-     *     kmsKeyId?: string,
-     *     logExports?: list<'useractivitylog'|'userlog'|'connectionlog'>,
-     *     manageAdminPassword?: bool,
+     *     adminPasswordSecretKmsKeyId?: string|null,
+     *     adminUserPassword?: string|null,
+     *     adminUsername?: string|null,
+     *     dbName?: string|null,
+     *     defaultIamRoleArn?: string|null,
+     *     iamRoles?: list<string>|null,
+     *     kmsKeyId?: string|null,
+     *     logExports?: list<'useractivitylog'|'userlog'|'connectionlog'>|null,
+     *     manageAdminPassword?: bool|null,
      *     namespaceName: string,
-     *     redshiftIdcApplicationArn?: string,
-     *     tags?: list<Shapes\Tag>
+     *     redshiftIdcApplicationArn?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

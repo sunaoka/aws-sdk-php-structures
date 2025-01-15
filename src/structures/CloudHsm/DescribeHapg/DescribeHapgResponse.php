@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudHsm\DescribeHapg;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $HapgArn
- * @property string $HapgSerial
- * @property list<string> $HsmsLastActionFailed
- * @property list<string> $HsmsPendingDeletion
- * @property list<string> $HsmsPendingRegistration
- * @property string $Label
- * @property string $LastModifiedTimestamp
- * @property list<string> $PartitionSerialList
- * @property 'READY'|'UPDATING'|'DEGRADED' $State
+ * @property string|null $HapgArn
+ * @property string|null $HapgSerial
+ * @property list<string>|null $HsmsLastActionFailed
+ * @property list<string>|null $HsmsPendingDeletion
+ * @property list<string>|null $HsmsPendingRegistration
+ * @property string|null $Label
+ * @property string|null $LastModifiedTimestamp
+ * @property list<string>|null $PartitionSerialList
+ * @property 'READY'|'UPDATING'|'DEGRADED'|null $State
  */
 class DescribeHapgResponse extends Response
 {

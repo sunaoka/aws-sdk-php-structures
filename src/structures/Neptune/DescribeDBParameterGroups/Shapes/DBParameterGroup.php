@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Neptune\DescribeDBParameterGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBParameterGroupName
- * @property string $DBParameterGroupFamily
- * @property string $Description
- * @property string $DBParameterGroupArn
+ * @property string|null $DBParameterGroupName
+ * @property string|null $DBParameterGroupFamily
+ * @property string|null $Description
+ * @property string|null $DBParameterGroupArn
  */
 class DBParameterGroup extends Shape
 {
     /**
      * @param array{
-     *     DBParameterGroupName?: string,
-     *     DBParameterGroupFamily?: string,
-     *     Description?: string,
-     *     DBParameterGroupArn?: string
+     *     DBParameterGroupName?: string|null,
+     *     DBParameterGroupFamily?: string|null,
+     *     Description?: string|null,
+     *     DBParameterGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

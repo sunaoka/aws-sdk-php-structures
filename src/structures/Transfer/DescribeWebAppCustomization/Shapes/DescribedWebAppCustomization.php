@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Arn
  * @property string $WebAppId
- * @property string $Title
- * @property \Psr\Http\Message\StreamInterface $LogoFile
- * @property \Psr\Http\Message\StreamInterface $FaviconFile
+ * @property string|null $Title
+ * @property \Psr\Http\Message\StreamInterface|null $LogoFile
+ * @property \Psr\Http\Message\StreamInterface|null $FaviconFile
  */
 class DescribedWebAppCustomization extends Shape
 {
@@ -17,9 +17,9 @@ class DescribedWebAppCustomization extends Shape
      * @param array{
      *     Arn: string,
      *     WebAppId: string,
-     *     Title?: string,
-     *     LogoFile?: \Psr\Http\Message\StreamInterface,
-     *     FaviconFile?: \Psr\Http\Message\StreamInterface
+     *     Title?: string|null,
+     *     LogoFile?: \Psr\Http\Message\StreamInterface|null,
+     *     FaviconFile?: \Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args)

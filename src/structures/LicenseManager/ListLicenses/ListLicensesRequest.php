@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LicenseManager\ListLicenses;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $LicenseArns
- * @property list<Shapes\Filter> $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property list<string>|null $LicenseArns
+ * @property list<Shapes\Filter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListLicensesRequest extends Request
 {
     /**
      * @param array{
-     *     LicenseArns?: list<string>,
-     *     Filters?: list<Shapes\Filter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     LicenseArns?: list<string>|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

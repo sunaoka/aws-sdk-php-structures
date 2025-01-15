@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property Script $script
- * @property list<string> $exportDataSetNames
+ * @property list<string>|null $exportDataSetNames
  */
 class TN3270 extends Shape
 {
     /**
      * @param array{
      *     script: Script,
-     *     exportDataSetNames?: list<string>
+     *     exportDataSetNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

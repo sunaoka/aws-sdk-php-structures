@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeCommands\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CommandId
- * @property string $InstanceId
- * @property string $DeploymentId
- * @property string $CreatedAt
- * @property string $AcknowledgedAt
- * @property string $CompletedAt
- * @property string $Status
- * @property int $ExitCode
- * @property string $LogUrl
- * @property string $Type
+ * @property string|null $CommandId
+ * @property string|null $InstanceId
+ * @property string|null $DeploymentId
+ * @property string|null $CreatedAt
+ * @property string|null $AcknowledgedAt
+ * @property string|null $CompletedAt
+ * @property string|null $Status
+ * @property int|null $ExitCode
+ * @property string|null $LogUrl
+ * @property string|null $Type
  */
 class Command extends Shape
 {
     /**
      * @param array{
-     *     CommandId?: string,
-     *     InstanceId?: string,
-     *     DeploymentId?: string,
-     *     CreatedAt?: string,
-     *     AcknowledgedAt?: string,
-     *     CompletedAt?: string,
-     *     Status?: string,
-     *     ExitCode?: int,
-     *     LogUrl?: string,
-     *     Type?: string
+     *     CommandId?: string|null,
+     *     InstanceId?: string|null,
+     *     DeploymentId?: string|null,
+     *     CreatedAt?: string|null,
+     *     AcknowledgedAt?: string|null,
+     *     CompletedAt?: string|null,
+     *     Status?: string|null,
+     *     ExitCode?: int|null,
+     *     LogUrl?: string|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

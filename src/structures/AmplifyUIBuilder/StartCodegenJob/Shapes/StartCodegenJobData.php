@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CodegenJobRenderConfig $renderConfig
- * @property CodegenJobGenericDataSchema $genericDataSchema
- * @property bool $autoGenerateForms
- * @property CodegenFeatureFlags $features
- * @property array<string, string> $tags
+ * @property CodegenJobGenericDataSchema|null $genericDataSchema
+ * @property bool|null $autoGenerateForms
+ * @property CodegenFeatureFlags|null $features
+ * @property array<string, string>|null $tags
  */
 class StartCodegenJobData extends Shape
 {
     /**
      * @param array{
      *     renderConfig: CodegenJobRenderConfig,
-     *     genericDataSchema?: CodegenJobGenericDataSchema,
-     *     autoGenerateForms?: bool,
-     *     features?: CodegenFeatureFlags,
-     *     tags?: array<string, string>
+     *     genericDataSchema?: CodegenJobGenericDataSchema|null,
+     *     autoGenerateForms?: bool|null,
+     *     features?: CodegenFeatureFlags|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

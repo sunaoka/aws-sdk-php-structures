@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListClusters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property list<string> $ChannelIds
- * @property 'ON_PREMISES' $ClusterType
- * @property string $Id
- * @property string $InstanceRoleArn
- * @property string $Name
- * @property ClusterNetworkSettings $NetworkSettings
- * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'DELETE_FAILED'|'DELETED' $State
+ * @property string|null $Arn
+ * @property list<string>|null $ChannelIds
+ * @property 'ON_PREMISES'|null $ClusterType
+ * @property string|null $Id
+ * @property string|null $InstanceRoleArn
+ * @property string|null $Name
+ * @property ClusterNetworkSettings|null $NetworkSettings
+ * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'DELETE_FAILED'|'DELETED'|null $State
  */
 class DescribeClusterSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     ChannelIds?: list<string>,
-     *     ClusterType?: 'ON_PREMISES',
-     *     Id?: string,
-     *     InstanceRoleArn?: string,
-     *     Name?: string,
-     *     NetworkSettings?: ClusterNetworkSettings,
-     *     State?: 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'DELETE_FAILED'|'DELETED'
+     *     Arn?: string|null,
+     *     ChannelIds?: list<string>|null,
+     *     ClusterType?: 'ON_PREMISES'|null,
+     *     Id?: string|null,
+     *     InstanceRoleArn?: string|null,
+     *     Name?: string|null,
+     *     NetworkSettings?: ClusterNetworkSettings|null,
+     *     State?: 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'DELETE_FAILED'|'DELETED'|null
      * } $args
      */
     public function __construct(array $args = [])

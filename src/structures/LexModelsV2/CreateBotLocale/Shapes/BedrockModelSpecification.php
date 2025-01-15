@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $modelArn
- * @property BedrockGuardrailConfiguration $guardrail
- * @property 'ENABLED'|'DISABLED' $traceStatus
- * @property string $customPrompt
+ * @property BedrockGuardrailConfiguration|null $guardrail
+ * @property 'ENABLED'|'DISABLED'|null $traceStatus
+ * @property string|null $customPrompt
  */
 class BedrockModelSpecification extends Shape
 {
     /**
      * @param array{
      *     modelArn: string,
-     *     guardrail?: BedrockGuardrailConfiguration,
-     *     traceStatus?: 'ENABLED'|'DISABLED',
-     *     customPrompt?: string
+     *     guardrail?: BedrockGuardrailConfiguration|null,
+     *     traceStatus?: 'ENABLED'|'DISABLED'|null,
+     *     customPrompt?: string|null
      * } $args
      */
     public function __construct(array $args)

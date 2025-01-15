@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataExchange\SendDataSetNotification\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $KeyPrefixes
- * @property list<string> $Keys
+ * @property list<string>|null $KeyPrefixes
+ * @property list<string>|null $Keys
  */
 class S3DataAccessDetails extends Shape
 {
     /**
      * @param array{
-     *     KeyPrefixes?: list<string>,
-     *     Keys?: list<string>
+     *     KeyPrefixes?: list<string>|null,
+     *     Keys?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

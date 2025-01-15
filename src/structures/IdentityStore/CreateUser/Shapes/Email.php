@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IdentityStore\CreateUser\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
- * @property string $Type
- * @property bool $Primary
+ * @property string|null $Value
+ * @property string|null $Type
+ * @property bool|null $Primary
  */
 class Email extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
-     *     Type?: string,
-     *     Primary?: bool
+     *     Value?: string|null,
+     *     Type?: string|null,
+     *     Primary?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\MediaConvert\UpdateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ColorCorrector $ColorCorrector
- * @property Deinterlacer $Deinterlacer
- * @property DolbyVision $DolbyVision
- * @property Hdr10Plus $Hdr10Plus
- * @property ImageInserter $ImageInserter
- * @property NoiseReducer $NoiseReducer
- * @property PartnerWatermarking $PartnerWatermarking
- * @property TimecodeBurnin $TimecodeBurnin
+ * @property ColorCorrector|null $ColorCorrector
+ * @property Deinterlacer|null $Deinterlacer
+ * @property DolbyVision|null $DolbyVision
+ * @property Hdr10Plus|null $Hdr10Plus
+ * @property ImageInserter|null $ImageInserter
+ * @property NoiseReducer|null $NoiseReducer
+ * @property PartnerWatermarking|null $PartnerWatermarking
+ * @property TimecodeBurnin|null $TimecodeBurnin
  */
 class VideoPreprocessor extends Shape
 {
     /**
      * @param array{
-     *     ColorCorrector?: ColorCorrector,
-     *     Deinterlacer?: Deinterlacer,
-     *     DolbyVision?: DolbyVision,
-     *     Hdr10Plus?: Hdr10Plus,
-     *     ImageInserter?: ImageInserter,
-     *     NoiseReducer?: NoiseReducer,
-     *     PartnerWatermarking?: PartnerWatermarking,
-     *     TimecodeBurnin?: TimecodeBurnin
+     *     ColorCorrector?: ColorCorrector|null,
+     *     Deinterlacer?: Deinterlacer|null,
+     *     DolbyVision?: DolbyVision|null,
+     *     Hdr10Plus?: Hdr10Plus|null,
+     *     ImageInserter?: ImageInserter|null,
+     *     NoiseReducer?: NoiseReducer|null,
+     *     PartnerWatermarking?: PartnerWatermarking|null,
+     *     TimecodeBurnin?: TimecodeBurnin|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FilePath
  * @property 'QUEUED'|'IN_PROGRESS'|'COMPLETED'|'FAILED' $StatusCode
- * @property string $FailureCode
- * @property string $FailureMessage
+ * @property string|null $FailureCode
+ * @property string|null $FailureMessage
  */
 class ConnectorFileTransferResult extends Shape
 {
@@ -16,8 +16,8 @@ class ConnectorFileTransferResult extends Shape
      * @param array{
      *     FilePath: string,
      *     StatusCode: 'QUEUED'|'IN_PROGRESS'|'COMPLETED'|'FAILED',
-     *     FailureCode?: string,
-     *     FailureMessage?: string
+     *     FailureCode?: string|null,
+     *     FailureMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

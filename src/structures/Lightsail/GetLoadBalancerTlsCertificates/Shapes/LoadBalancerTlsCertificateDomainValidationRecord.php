@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetLoadBalancerTlsCertificates\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $type
- * @property string $value
- * @property 'PENDING_VALIDATION'|'FAILED'|'SUCCESS' $validationStatus
- * @property string $domainName
- * @property LoadBalancerTlsCertificateDnsRecordCreationState $dnsRecordCreationState
+ * @property string|null $name
+ * @property string|null $type
+ * @property string|null $value
+ * @property 'PENDING_VALIDATION'|'FAILED'|'SUCCESS'|null $validationStatus
+ * @property string|null $domainName
+ * @property LoadBalancerTlsCertificateDnsRecordCreationState|null $dnsRecordCreationState
  */
 class LoadBalancerTlsCertificateDomainValidationRecord extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     type?: string,
-     *     value?: string,
-     *     validationStatus?: 'PENDING_VALIDATION'|'FAILED'|'SUCCESS',
-     *     domainName?: string,
-     *     dnsRecordCreationState?: LoadBalancerTlsCertificateDnsRecordCreationState
+     *     name?: string|null,
+     *     type?: string|null,
+     *     value?: string|null,
+     *     validationStatus?: 'PENDING_VALIDATION'|'FAILED'|'SUCCESS'|null,
+     *     domainName?: string|null,
+     *     dnsRecordCreationState?: LoadBalancerTlsCertificateDnsRecordCreationState|null
      * } $args
      */
     public function __construct(array $args = [])

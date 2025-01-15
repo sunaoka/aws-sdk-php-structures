@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $MigrationProjectIdentifier
  * @property string $SelectionRules
  * @property 'SOURCE'|'TARGET' $Origin
- * @property string $FileName
+ * @property string|null $FileName
  */
 class StartMetadataModelExportAsScriptRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartMetadataModelExportAsScriptRequest extends Request
      *     MigrationProjectIdentifier: string,
      *     SelectionRules: string,
      *     Origin: 'SOURCE'|'TARGET',
-     *     FileName?: string
+     *     FileName?: string|null
      * } $args
      */
     public function __construct(array $args)

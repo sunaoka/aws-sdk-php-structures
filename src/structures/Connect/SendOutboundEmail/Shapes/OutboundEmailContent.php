@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'TEMPLATE'|'RAW' $MessageSourceType
- * @property TemplatedMessageConfig $TemplatedMessageConfig
- * @property OutboundRawMessage $RawMessage
+ * @property TemplatedMessageConfig|null $TemplatedMessageConfig
+ * @property OutboundRawMessage|null $RawMessage
  */
 class OutboundEmailContent extends Shape
 {
     /**
      * @param array{
      *     MessageSourceType: 'TEMPLATE'|'RAW',
-     *     TemplatedMessageConfig?: TemplatedMessageConfig,
-     *     RawMessage?: OutboundRawMessage
+     *     TemplatedMessageConfig?: TemplatedMessageConfig|null,
+     *     RawMessage?: OutboundRawMessage|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeAggregateComplianceByConf
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AggregateComplianceByConfigRule> $AggregateComplianceByConfigRules
- * @property string $NextToken
+ * @property list<Shapes\AggregateComplianceByConfigRule>|null $AggregateComplianceByConfigRules
+ * @property string|null $NextToken
  */
 class DescribeAggregateComplianceByConfigRulesResponse extends Response
 {

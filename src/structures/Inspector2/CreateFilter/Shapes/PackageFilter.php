@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Inspector2\CreateFilter\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StringFilter $architecture
- * @property NumberFilter $epoch
- * @property StringFilter $filePath
- * @property StringFilter $name
- * @property StringFilter $release
- * @property StringFilter $sourceLambdaLayerArn
- * @property StringFilter $sourceLayerHash
- * @property StringFilter $version
+ * @property StringFilter|null $architecture
+ * @property NumberFilter|null $epoch
+ * @property StringFilter|null $filePath
+ * @property StringFilter|null $name
+ * @property StringFilter|null $release
+ * @property StringFilter|null $sourceLambdaLayerArn
+ * @property StringFilter|null $sourceLayerHash
+ * @property StringFilter|null $version
  */
 class PackageFilter extends Shape
 {
     /**
      * @param array{
-     *     architecture?: StringFilter,
-     *     epoch?: NumberFilter,
-     *     filePath?: StringFilter,
-     *     name?: StringFilter,
-     *     release?: StringFilter,
-     *     sourceLambdaLayerArn?: StringFilter,
-     *     sourceLayerHash?: StringFilter,
-     *     version?: StringFilter
+     *     architecture?: StringFilter|null,
+     *     epoch?: NumberFilter|null,
+     *     filePath?: StringFilter|null,
+     *     name?: StringFilter|null,
+     *     release?: StringFilter|null,
+     *     sourceLambdaLayerArn?: StringFilter|null,
+     *     sourceLayerHash?: StringFilter|null,
+     *     version?: StringFilter|null
      * } $args
      */
     public function __construct(array $args = [])

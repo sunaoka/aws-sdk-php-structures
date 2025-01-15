@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\SystemInstanceSummary $summary
- * @property string $greengrassDeploymentId
+ * @property string|null $greengrassDeploymentId
  */
 class DeploySystemInstanceResponse extends Response
 {

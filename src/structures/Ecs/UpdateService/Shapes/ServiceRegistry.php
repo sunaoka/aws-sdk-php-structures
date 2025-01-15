@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ecs\UpdateService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $registryArn
- * @property int $port
- * @property string $containerName
- * @property int $containerPort
+ * @property string|null $registryArn
+ * @property int|null $port
+ * @property string|null $containerName
+ * @property int|null $containerPort
  */
 class ServiceRegistry extends Shape
 {
     /**
      * @param array{
-     *     registryArn?: string,
-     *     port?: int,
-     *     containerName?: string,
-     *     containerPort?: int
+     *     registryArn?: string|null,
+     *     port?: int|null,
+     *     containerName?: string|null,
+     *     containerPort?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,79 +5,79 @@ namespace Sunaoka\Aws\Structures\TimestreamInfluxDB\CreateDbParameterGroup\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $fluxLogEnabled
- * @property 'debug'|'info'|'error' $logLevel
- * @property bool $noTasks
- * @property int<0, 256> $queryConcurrency
- * @property int<0, 256> $queryQueueSize
- * @property 'log'|'jaeger' $tracingType
- * @property bool $metricsDisabled
- * @property Duration $httpIdleTimeout
- * @property Duration $httpReadHeaderTimeout
- * @property Duration $httpReadTimeout
- * @property Duration $httpWriteTimeout
- * @property int<0, 1000000000000> $influxqlMaxSelectBuckets
- * @property int<0, 1000000000000> $influxqlMaxSelectPoint
- * @property int<0, 1000000000000> $influxqlMaxSelectSeries
- * @property bool $pprofDisabled
- * @property int<0, 1000000000000> $queryInitialMemoryBytes
- * @property int<0, 1000000000000> $queryMaxMemoryBytes
- * @property int<0, 1000000000000> $queryMemoryBytes
- * @property int<1, 2880> $sessionLength
- * @property bool $sessionRenewDisabled
- * @property int<0, 1000000000000> $storageCacheMaxMemorySize
- * @property int<0, 1000000000000> $storageCacheSnapshotMemorySize
- * @property Duration $storageCacheSnapshotWriteColdDuration
- * @property Duration $storageCompactFullWriteColdDuration
- * @property int<0, 1000000000000> $storageCompactThroughputBurst
- * @property int<0, 64> $storageMaxConcurrentCompactions
- * @property int<0, 1000000000000> $storageMaxIndexLogFileSize
- * @property bool $storageNoValidateFieldSize
- * @property Duration $storageRetentionCheckInterval
- * @property int<0, 64> $storageSeriesFileMaxConcurrentSnapshotCompactions
- * @property int<0, 1000000000000> $storageSeriesIdSetCacheSize
- * @property int<0, 256> $storageWalMaxConcurrentWrites
- * @property Duration $storageWalMaxWriteDelay
- * @property bool $uiDisabled
+ * @property bool|null $fluxLogEnabled
+ * @property 'debug'|'info'|'error'|null $logLevel
+ * @property bool|null $noTasks
+ * @property int<0, 256>|null $queryConcurrency
+ * @property int<0, 256>|null $queryQueueSize
+ * @property 'log'|'jaeger'|null $tracingType
+ * @property bool|null $metricsDisabled
+ * @property Duration|null $httpIdleTimeout
+ * @property Duration|null $httpReadHeaderTimeout
+ * @property Duration|null $httpReadTimeout
+ * @property Duration|null $httpWriteTimeout
+ * @property int<0, 1000000000000>|null $influxqlMaxSelectBuckets
+ * @property int<0, 1000000000000>|null $influxqlMaxSelectPoint
+ * @property int<0, 1000000000000>|null $influxqlMaxSelectSeries
+ * @property bool|null $pprofDisabled
+ * @property int<0, 1000000000000>|null $queryInitialMemoryBytes
+ * @property int<0, 1000000000000>|null $queryMaxMemoryBytes
+ * @property int<0, 1000000000000>|null $queryMemoryBytes
+ * @property int<1, 2880>|null $sessionLength
+ * @property bool|null $sessionRenewDisabled
+ * @property int<0, 1000000000000>|null $storageCacheMaxMemorySize
+ * @property int<0, 1000000000000>|null $storageCacheSnapshotMemorySize
+ * @property Duration|null $storageCacheSnapshotWriteColdDuration
+ * @property Duration|null $storageCompactFullWriteColdDuration
+ * @property int<0, 1000000000000>|null $storageCompactThroughputBurst
+ * @property int<0, 64>|null $storageMaxConcurrentCompactions
+ * @property int<0, 1000000000000>|null $storageMaxIndexLogFileSize
+ * @property bool|null $storageNoValidateFieldSize
+ * @property Duration|null $storageRetentionCheckInterval
+ * @property int<0, 64>|null $storageSeriesFileMaxConcurrentSnapshotCompactions
+ * @property int<0, 1000000000000>|null $storageSeriesIdSetCacheSize
+ * @property int<0, 256>|null $storageWalMaxConcurrentWrites
+ * @property Duration|null $storageWalMaxWriteDelay
+ * @property bool|null $uiDisabled
  */
 class InfluxDBv2Parameters extends Shape
 {
     /**
      * @param array{
-     *     fluxLogEnabled?: bool,
-     *     logLevel?: 'debug'|'info'|'error',
-     *     noTasks?: bool,
-     *     queryConcurrency?: int<0, 256>,
-     *     queryQueueSize?: int<0, 256>,
-     *     tracingType?: 'log'|'jaeger',
-     *     metricsDisabled?: bool,
-     *     httpIdleTimeout?: Duration,
-     *     httpReadHeaderTimeout?: Duration,
-     *     httpReadTimeout?: Duration,
-     *     httpWriteTimeout?: Duration,
-     *     influxqlMaxSelectBuckets?: int<0, 1000000000000>,
-     *     influxqlMaxSelectPoint?: int<0, 1000000000000>,
-     *     influxqlMaxSelectSeries?: int<0, 1000000000000>,
-     *     pprofDisabled?: bool,
-     *     queryInitialMemoryBytes?: int<0, 1000000000000>,
-     *     queryMaxMemoryBytes?: int<0, 1000000000000>,
-     *     queryMemoryBytes?: int<0, 1000000000000>,
-     *     sessionLength?: int<1, 2880>,
-     *     sessionRenewDisabled?: bool,
-     *     storageCacheMaxMemorySize?: int<0, 1000000000000>,
-     *     storageCacheSnapshotMemorySize?: int<0, 1000000000000>,
-     *     storageCacheSnapshotWriteColdDuration?: Duration,
-     *     storageCompactFullWriteColdDuration?: Duration,
-     *     storageCompactThroughputBurst?: int<0, 1000000000000>,
-     *     storageMaxConcurrentCompactions?: int<0, 64>,
-     *     storageMaxIndexLogFileSize?: int<0, 1000000000000>,
-     *     storageNoValidateFieldSize?: bool,
-     *     storageRetentionCheckInterval?: Duration,
-     *     storageSeriesFileMaxConcurrentSnapshotCompactions?: int<0, 64>,
-     *     storageSeriesIdSetCacheSize?: int<0, 1000000000000>,
-     *     storageWalMaxConcurrentWrites?: int<0, 256>,
-     *     storageWalMaxWriteDelay?: Duration,
-     *     uiDisabled?: bool
+     *     fluxLogEnabled?: bool|null,
+     *     logLevel?: 'debug'|'info'|'error'|null,
+     *     noTasks?: bool|null,
+     *     queryConcurrency?: int<0, 256>|null,
+     *     queryQueueSize?: int<0, 256>|null,
+     *     tracingType?: 'log'|'jaeger'|null,
+     *     metricsDisabled?: bool|null,
+     *     httpIdleTimeout?: Duration|null,
+     *     httpReadHeaderTimeout?: Duration|null,
+     *     httpReadTimeout?: Duration|null,
+     *     httpWriteTimeout?: Duration|null,
+     *     influxqlMaxSelectBuckets?: int<0, 1000000000000>|null,
+     *     influxqlMaxSelectPoint?: int<0, 1000000000000>|null,
+     *     influxqlMaxSelectSeries?: int<0, 1000000000000>|null,
+     *     pprofDisabled?: bool|null,
+     *     queryInitialMemoryBytes?: int<0, 1000000000000>|null,
+     *     queryMaxMemoryBytes?: int<0, 1000000000000>|null,
+     *     queryMemoryBytes?: int<0, 1000000000000>|null,
+     *     sessionLength?: int<1, 2880>|null,
+     *     sessionRenewDisabled?: bool|null,
+     *     storageCacheMaxMemorySize?: int<0, 1000000000000>|null,
+     *     storageCacheSnapshotMemorySize?: int<0, 1000000000000>|null,
+     *     storageCacheSnapshotWriteColdDuration?: Duration|null,
+     *     storageCompactFullWriteColdDuration?: Duration|null,
+     *     storageCompactThroughputBurst?: int<0, 1000000000000>|null,
+     *     storageMaxConcurrentCompactions?: int<0, 64>|null,
+     *     storageMaxIndexLogFileSize?: int<0, 1000000000000>|null,
+     *     storageNoValidateFieldSize?: bool|null,
+     *     storageRetentionCheckInterval?: Duration|null,
+     *     storageSeriesFileMaxConcurrentSnapshotCompactions?: int<0, 64>|null,
+     *     storageSeriesIdSetCacheSize?: int<0, 1000000000000>|null,
+     *     storageWalMaxConcurrentWrites?: int<0, 256>|null,
+     *     storageWalMaxWriteDelay?: Duration|null,
+     *     uiDisabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

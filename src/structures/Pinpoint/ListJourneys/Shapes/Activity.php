@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Pinpoint\ListJourneys\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomMessageActivity $CUSTOM
- * @property ConditionalSplitActivity $ConditionalSplit
- * @property string $Description
- * @property EmailMessageActivity $EMAIL
- * @property HoldoutActivity $Holdout
- * @property MultiConditionalSplitActivity $MultiCondition
- * @property PushMessageActivity $PUSH
- * @property RandomSplitActivity $RandomSplit
- * @property SMSMessageActivity $SMS
- * @property WaitActivity $Wait
- * @property ContactCenterActivity $ContactCenter
+ * @property CustomMessageActivity|null $CUSTOM
+ * @property ConditionalSplitActivity|null $ConditionalSplit
+ * @property string|null $Description
+ * @property EmailMessageActivity|null $EMAIL
+ * @property HoldoutActivity|null $Holdout
+ * @property MultiConditionalSplitActivity|null $MultiCondition
+ * @property PushMessageActivity|null $PUSH
+ * @property RandomSplitActivity|null $RandomSplit
+ * @property SMSMessageActivity|null $SMS
+ * @property WaitActivity|null $Wait
+ * @property ContactCenterActivity|null $ContactCenter
  */
 class Activity extends Shape
 {
     /**
      * @param array{
-     *     CUSTOM?: CustomMessageActivity,
-     *     ConditionalSplit?: ConditionalSplitActivity,
-     *     Description?: string,
-     *     EMAIL?: EmailMessageActivity,
-     *     Holdout?: HoldoutActivity,
-     *     MultiCondition?: MultiConditionalSplitActivity,
-     *     PUSH?: PushMessageActivity,
-     *     RandomSplit?: RandomSplitActivity,
-     *     SMS?: SMSMessageActivity,
-     *     Wait?: WaitActivity,
-     *     ContactCenter?: ContactCenterActivity
+     *     CUSTOM?: CustomMessageActivity|null,
+     *     ConditionalSplit?: ConditionalSplitActivity|null,
+     *     Description?: string|null,
+     *     EMAIL?: EmailMessageActivity|null,
+     *     Holdout?: HoldoutActivity|null,
+     *     MultiCondition?: MultiConditionalSplitActivity|null,
+     *     PUSH?: PushMessageActivity|null,
+     *     RandomSplit?: RandomSplitActivity|null,
+     *     SMS?: SMSMessageActivity|null,
+     *     Wait?: WaitActivity|null,
+     *     ContactCenter?: ContactCenterActivity|null
      * } $args
      */
     public function __construct(array $args = [])

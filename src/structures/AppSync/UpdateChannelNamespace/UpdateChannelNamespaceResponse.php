@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AppSync\UpdateChannelNamespace;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ChannelNamespace $channelNamespace
+ * @property Shapes\ChannelNamespace|null $channelNamespace
  */
 class UpdateChannelNamespaceResponse extends Response
 {

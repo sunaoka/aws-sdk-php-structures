@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $jsonPath
- * @property string $matchEquals
+ * @property string|null $matchEquals
  */
 class WebhookFilterRule extends Shape
 {
     /**
      * @param array{
      *     jsonPath: string,
-     *     matchEquals?: string
+     *     matchEquals?: string|null
      * } $args
      */
     public function __construct(array $args)

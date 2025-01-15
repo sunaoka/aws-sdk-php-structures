@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $FsxFilesystemArn
  * @property Shapes\FsxProtocol $Protocol
  * @property list<string> $SecurityGroupArns
- * @property string $Subdirectory
- * @property list<Shapes\TagListEntry> $Tags
+ * @property string|null $Subdirectory
+ * @property list<Shapes\TagListEntry>|null $Tags
  */
 class CreateLocationFsxOpenZfsRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateLocationFsxOpenZfsRequest extends Request
      *     FsxFilesystemArn: string,
      *     Protocol: Shapes\FsxProtocol,
      *     SecurityGroupArns: list<string>,
-     *     Subdirectory?: string,
-     *     Tags?: list<Shapes\TagListEntry>
+     *     Subdirectory?: string|null,
+     *     Tags?: list<Shapes\TagListEntry>|null
      * } $args
      */
     public function __construct(array $args)

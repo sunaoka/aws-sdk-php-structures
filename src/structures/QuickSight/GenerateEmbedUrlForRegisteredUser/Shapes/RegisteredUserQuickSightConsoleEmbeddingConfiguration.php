@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\GenerateEmbedUrlForRegisteredUser\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InitialPath
- * @property RegisteredUserConsoleFeatureConfigurations $FeatureConfigurations
+ * @property string|null $InitialPath
+ * @property RegisteredUserConsoleFeatureConfigurations|null $FeatureConfigurations
  */
 class RegisteredUserQuickSightConsoleEmbeddingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     InitialPath?: string,
-     *     FeatureConfigurations?: RegisteredUserConsoleFeatureConfigurations
+     *     InitialPath?: string|null,
+     *     FeatureConfigurations?: RegisteredUserConsoleFeatureConfigurations|null
      * } $args
      */
     public function __construct(array $args = [])

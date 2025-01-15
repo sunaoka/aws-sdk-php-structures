@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\LakeFormation\GrantPermissions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $ResourceArn
  */
 class DataLocationResource extends Shape
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     ResourceArn: string
      * } $args
      */

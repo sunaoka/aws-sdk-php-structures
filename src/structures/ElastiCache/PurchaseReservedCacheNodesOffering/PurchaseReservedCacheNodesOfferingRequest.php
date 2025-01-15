@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReservedCacheNodesOfferingId
- * @property string $ReservedCacheNodeId
- * @property int $CacheNodeCount
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ReservedCacheNodeId
+ * @property int|null $CacheNodeCount
+ * @property list<Shapes\Tag>|null $Tags
  */
 class PurchaseReservedCacheNodesOfferingRequest extends Request
 {
     /**
      * @param array{
      *     ReservedCacheNodesOfferingId: string,
-     *     ReservedCacheNodeId?: string,
-     *     CacheNodeCount?: int,
-     *     Tags?: list<Shapes\Tag>
+     *     ReservedCacheNodeId?: string|null,
+     *     CacheNodeCount?: int|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'RECOMMENDED_VALUE'|'NULL' $ValueWhenUnsetOption
- * @property double $CustomValue
+ * @property 'RECOMMENDED_VALUE'|'NULL'|null $ValueWhenUnsetOption
+ * @property double|null $CustomValue
  */
 class DecimalValueWhenUnsetConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ValueWhenUnsetOption?: 'RECOMMENDED_VALUE'|'NULL',
-     *     CustomValue?: double
+     *     ValueWhenUnsetOption?: 'RECOMMENDED_VALUE'|'NULL'|null,
+     *     CustomValue?: double|null
      * } $args
      */
     public function __construct(array $args = [])

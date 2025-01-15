@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\GenerateEmbedUrlForRegisteredUserWit
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InitialTopicId
+ * @property string|null $InitialTopicId
  */
 class RegisteredUserQSearchBarEmbeddingConfiguration extends Shape
 {
     /**
-     * @param array{InitialTopicId?: string} $args
+     * @param array{InitialTopicId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

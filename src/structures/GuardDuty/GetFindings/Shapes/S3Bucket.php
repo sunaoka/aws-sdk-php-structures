@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OwnerId
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $EncryptionType
- * @property string $EncryptionKeyArn
- * @property string $EffectivePermission
- * @property 'BLOCKED'|'ALLOWED' $PublicReadAccess
- * @property 'BLOCKED'|'ALLOWED' $PublicWriteAccess
- * @property PublicAccessConfiguration $AccountPublicAccess
- * @property PublicAccessConfiguration $BucketPublicAccess
- * @property list<string> $S3ObjectUids
+ * @property string|null $OwnerId
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $EncryptionType
+ * @property string|null $EncryptionKeyArn
+ * @property string|null $EffectivePermission
+ * @property 'BLOCKED'|'ALLOWED'|null $PublicReadAccess
+ * @property 'BLOCKED'|'ALLOWED'|null $PublicWriteAccess
+ * @property PublicAccessConfiguration|null $AccountPublicAccess
+ * @property PublicAccessConfiguration|null $BucketPublicAccess
+ * @property list<string>|null $S3ObjectUids
  */
 class S3Bucket extends Shape
 {
     /**
      * @param array{
-     *     OwnerId?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     EncryptionType?: string,
-     *     EncryptionKeyArn?: string,
-     *     EffectivePermission?: string,
-     *     PublicReadAccess?: 'BLOCKED'|'ALLOWED',
-     *     PublicWriteAccess?: 'BLOCKED'|'ALLOWED',
-     *     AccountPublicAccess?: PublicAccessConfiguration,
-     *     BucketPublicAccess?: PublicAccessConfiguration,
-     *     S3ObjectUids?: list<string>
+     *     OwnerId?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     EncryptionType?: string|null,
+     *     EncryptionKeyArn?: string|null,
+     *     EffectivePermission?: string|null,
+     *     PublicReadAccess?: 'BLOCKED'|'ALLOWED'|null,
+     *     PublicWriteAccess?: 'BLOCKED'|'ALLOWED'|null,
+     *     AccountPublicAccess?: PublicAccessConfiguration|null,
+     *     BucketPublicAccess?: PublicAccessConfiguration|null,
+     *     S3ObjectUids?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

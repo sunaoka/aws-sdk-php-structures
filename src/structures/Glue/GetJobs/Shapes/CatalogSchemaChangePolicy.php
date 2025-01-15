@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableUpdateCatalog
- * @property 'UPDATE_IN_DATABASE'|'LOG' $UpdateBehavior
+ * @property bool|null $EnableUpdateCatalog
+ * @property 'UPDATE_IN_DATABASE'|'LOG'|null $UpdateBehavior
  */
 class CatalogSchemaChangePolicy extends Shape
 {
     /**
      * @param array{
-     *     EnableUpdateCatalog?: bool,
-     *     UpdateBehavior?: 'UPDATE_IN_DATABASE'|'LOG'
+     *     EnableUpdateCatalog?: bool|null,
+     *     UpdateBehavior?: 'UPDATE_IN_DATABASE'|'LOG'|null
      * } $args
      */
     public function __construct(array $args = [])

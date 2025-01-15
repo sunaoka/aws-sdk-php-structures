@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property string $Namespace
+ * @property string|null $Namespace
  */
 class DescribeDefaultQBusinessApplicationRequest extends Request
 {
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     Namespace?: string
+     *     Namespace?: string|null
      * } $args
      */
     public function __construct(array $args)

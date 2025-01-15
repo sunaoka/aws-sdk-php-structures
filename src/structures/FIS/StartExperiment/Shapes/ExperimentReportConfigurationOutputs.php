@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\FIS\StartExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ExperimentReportConfigurationOutputsS3Configuration $s3Configuration
+ * @property ExperimentReportConfigurationOutputsS3Configuration|null $s3Configuration
  */
 class ExperimentReportConfigurationOutputs extends Shape
 {
     /**
-     * @param array{s3Configuration?: ExperimentReportConfigurationOutputsS3Configuration} $args
+     * @param array{s3Configuration?: ExperimentReportConfigurationOutputsS3Configuration|null} $args
      */
     public function __construct(array $args = [])
     {

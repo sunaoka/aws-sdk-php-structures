@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\ApplyEnvironmentManagedAction;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $EnvironmentName
- * @property string $EnvironmentId
+ * @property string|null $EnvironmentName
+ * @property string|null $EnvironmentId
  * @property string $ActionId
  */
 class ApplyEnvironmentManagedActionRequest extends Request
 {
     /**
      * @param array{
-     *     EnvironmentName?: string,
-     *     EnvironmentId?: string,
+     *     EnvironmentName?: string|null,
+     *     EnvironmentId?: string|null,
      *     ActionId: string
      * } $args
      */

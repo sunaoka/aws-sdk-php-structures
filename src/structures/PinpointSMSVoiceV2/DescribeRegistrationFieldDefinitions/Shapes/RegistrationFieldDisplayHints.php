@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Title
  * @property string $ShortDescription
- * @property string $LongDescription
- * @property string $DocumentationTitle
- * @property string $DocumentationLink
- * @property list<SelectOptionDescription> $SelectOptionDescriptions
- * @property string $TextValidationDescription
- * @property string $ExampleTextValue
+ * @property string|null $LongDescription
+ * @property string|null $DocumentationTitle
+ * @property string|null $DocumentationLink
+ * @property list<SelectOptionDescription>|null $SelectOptionDescriptions
+ * @property string|null $TextValidationDescription
+ * @property string|null $ExampleTextValue
  */
 class RegistrationFieldDisplayHints extends Shape
 {
@@ -20,12 +20,12 @@ class RegistrationFieldDisplayHints extends Shape
      * @param array{
      *     Title: string,
      *     ShortDescription: string,
-     *     LongDescription?: string,
-     *     DocumentationTitle?: string,
-     *     DocumentationLink?: string,
-     *     SelectOptionDescriptions?: list<SelectOptionDescription>,
-     *     TextValidationDescription?: string,
-     *     ExampleTextValue?: string
+     *     LongDescription?: string|null,
+     *     DocumentationTitle?: string|null,
+     *     DocumentationLink?: string|null,
+     *     SelectOptionDescriptions?: list<SelectOptionDescription>|null,
+     *     TextValidationDescription?: string|null,
+     *     ExampleTextValue?: string|null
      * } $args
      */
     public function __construct(array $args)

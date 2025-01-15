@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\CreatePackage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Description
- * @property string $Version
- * @property string $ClassName
- * @property int $UncompressedSizeInBytes
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property string|null $Version
+ * @property string|null $ClassName
+ * @property int|null $UncompressedSizeInBytes
  */
 class PluginProperties extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Description?: string,
-     *     Version?: string,
-     *     ClassName?: string,
-     *     UncompressedSizeInBytes?: int
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Version?: string|null,
+     *     ClassName?: string|null,
+     *     UncompressedSizeInBytes?: int|null
      * } $args
      */
     public function __construct(array $args = [])

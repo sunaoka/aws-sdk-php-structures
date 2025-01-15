@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PrometheusService\ListWorkspaces;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $alias
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property string|null $alias
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListWorkspacesRequest extends Request
 {
     /**
      * @param array{
-     *     alias?: string,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     alias?: string|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

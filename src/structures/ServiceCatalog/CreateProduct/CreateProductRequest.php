@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\CreateProduct;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $Name
  * @property string $Owner
- * @property string $Description
- * @property string $Distributor
- * @property string $SupportDescription
- * @property string $SupportEmail
- * @property string $SupportUrl
+ * @property string|null $Description
+ * @property string|null $Distributor
+ * @property string|null $SupportDescription
+ * @property string|null $SupportEmail
+ * @property string|null $SupportUrl
  * @property 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL' $ProductType
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\ProvisioningArtifactProperties $ProvisioningArtifactParameters
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\ProvisioningArtifactProperties|null $ProvisioningArtifactParameters
  * @property string $IdempotencyToken
- * @property Shapes\SourceConnection $SourceConnection
+ * @property Shapes\SourceConnection|null $SourceConnection
  */
 class CreateProductRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     Name: string,
      *     Owner: string,
-     *     Description?: string,
-     *     Distributor?: string,
-     *     SupportDescription?: string,
-     *     SupportEmail?: string,
-     *     SupportUrl?: string,
+     *     Description?: string|null,
+     *     Distributor?: string|null,
+     *     SupportDescription?: string|null,
+     *     SupportEmail?: string|null,
+     *     SupportUrl?: string|null,
      *     ProductType: 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL',
-     *     Tags?: list<Shapes\Tag>,
-     *     ProvisioningArtifactParameters?: Shapes\ProvisioningArtifactProperties,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ProvisioningArtifactParameters?: Shapes\ProvisioningArtifactProperties|null,
      *     IdempotencyToken: string,
-     *     SourceConnection?: Shapes\SourceConnection
+     *     SourceConnection?: Shapes\SourceConnection|null
      * } $args
      */
     public function __construct(array $args)

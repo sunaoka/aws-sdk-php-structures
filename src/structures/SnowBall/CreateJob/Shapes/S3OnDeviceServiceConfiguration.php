@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SnowBall\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $StorageLimit
- * @property 'TB' $StorageUnit
- * @property int<3, 16> $ServiceSize
- * @property int<1, 4> $FaultTolerance
+ * @property double|null $StorageLimit
+ * @property 'TB'|null $StorageUnit
+ * @property int<3, 16>|null $ServiceSize
+ * @property int<1, 4>|null $FaultTolerance
  */
 class S3OnDeviceServiceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     StorageLimit?: double,
-     *     StorageUnit?: 'TB',
-     *     ServiceSize?: int<3, 16>,
-     *     FaultTolerance?: int<1, 4>
+     *     StorageLimit?: double|null,
+     *     StorageUnit?: 'TB'|null,
+     *     ServiceSize?: int<3, 16>|null,
+     *     FaultTolerance?: int<1, 4>|null
      * } $args
      */
     public function __construct(array $args = [])

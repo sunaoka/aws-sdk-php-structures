@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $vehicleName
  * @property string $modelManifestArn
  * @property string $decoderManifestArn
- * @property array<string, string> $attributes
- * @property 'CreateIotThing'|'ValidateIotThingExists' $associationBehavior
- * @property list<Tag> $tags
- * @property list<StateTemplateAssociation> $stateTemplates
+ * @property array<string, string>|null $attributes
+ * @property 'CreateIotThing'|'ValidateIotThingExists'|null $associationBehavior
+ * @property list<Tag>|null $tags
+ * @property list<StateTemplateAssociation>|null $stateTemplates
  */
 class CreateVehicleRequestItem extends Shape
 {
@@ -20,10 +20,10 @@ class CreateVehicleRequestItem extends Shape
      *     vehicleName: string,
      *     modelManifestArn: string,
      *     decoderManifestArn: string,
-     *     attributes?: array<string, string>,
-     *     associationBehavior?: 'CreateIotThing'|'ValidateIotThingExists',
-     *     tags?: list<Tag>,
-     *     stateTemplates?: list<StateTemplateAssociation>
+     *     attributes?: array<string, string>|null,
+     *     associationBehavior?: 'CreateIotThing'|'ValidateIotThingExists'|null,
+     *     tags?: list<Tag>|null,
+     *     stateTemplates?: list<StateTemplateAssociation>|null
      * } $args
      */
     public function __construct(array $args)

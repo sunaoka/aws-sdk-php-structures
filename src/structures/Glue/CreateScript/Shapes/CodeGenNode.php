@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property string $NodeType
  * @property list<CodeGenNodeArg> $Args
- * @property int $LineNumber
+ * @property int|null $LineNumber
  */
 class CodeGenNode extends Shape
 {
@@ -17,7 +17,7 @@ class CodeGenNode extends Shape
      *     Id: string,
      *     NodeType: string,
      *     Args: list<CodeGenNodeArg>,
-     *     LineNumber?: int
+     *     LineNumber?: int|null
      * } $args
      */
     public function __construct(array $args)

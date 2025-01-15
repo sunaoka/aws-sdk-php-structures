@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\UpdateCampaignChannelSubtype
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $capacity
- * @property string $connectQueueId
+ * @property double|null $capacity
+ * @property string|null $connectQueueId
  * @property TelephonyOutboundMode $outboundMode
  * @property TelephonyOutboundConfig $defaultOutboundConfig
  */
@@ -14,8 +14,8 @@ class TelephonyChannelSubtypeConfig extends Shape
 {
     /**
      * @param array{
-     *     capacity?: double,
-     *     connectQueueId?: string,
+     *     capacity?: double|null,
+     *     connectQueueId?: string|null,
      *     outboundMode: TelephonyOutboundMode,
      *     defaultOutboundConfig: TelephonyOutboundConfig
      * } $args

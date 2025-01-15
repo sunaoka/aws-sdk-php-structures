@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MTurk\ListQualificationRequests;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $QualificationTypeId
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property string|null $QualificationTypeId
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListQualificationRequestsRequest extends Request
 {
     /**
      * @param array{
-     *     QualificationTypeId?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     QualificationTypeId?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

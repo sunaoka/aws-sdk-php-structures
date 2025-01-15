@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GlobalAccelerator\AddEndpoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EndpointId
- * @property int<0, 255> $Weight
- * @property bool $ClientIPPreservationEnabled
- * @property string $AttachmentArn
+ * @property string|null $EndpointId
+ * @property int<0, 255>|null $Weight
+ * @property bool|null $ClientIPPreservationEnabled
+ * @property string|null $AttachmentArn
  */
 class EndpointConfiguration extends Shape
 {
     /**
      * @param array{
-     *     EndpointId?: string,
-     *     Weight?: int<0, 255>,
-     *     ClientIPPreservationEnabled?: bool,
-     *     AttachmentArn?: string
+     *     EndpointId?: string|null,
+     *     Weight?: int<0, 255>|null,
+     *     ClientIPPreservationEnabled?: bool|null,
+     *     AttachmentArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

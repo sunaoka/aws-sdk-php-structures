@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHyperParameterTuningJob\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HyperParameterTuningJobName
+ * @property string|null $HyperParameterTuningJobName
  */
 class ParentHyperParameterTuningJob extends Shape
 {
     /**
-     * @param array{HyperParameterTuningJobName?: string} $args
+     * @param array{HyperParameterTuningJobName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

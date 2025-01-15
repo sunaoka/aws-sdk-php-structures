@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\EnableFastLaunch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TargetResourceCount
+ * @property int|null $TargetResourceCount
  */
 class FastLaunchSnapshotConfigurationResponse extends Shape
 {
     /**
-     * @param array{TargetResourceCount?: int} $args
+     * @param array{TargetResourceCount?: int|null} $args
      */
     public function __construct(array $args = [])
     {

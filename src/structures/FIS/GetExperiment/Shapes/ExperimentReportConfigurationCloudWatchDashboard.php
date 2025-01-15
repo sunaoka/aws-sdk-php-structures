@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\FIS\GetExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $dashboardIdentifier
+ * @property string|null $dashboardIdentifier
  */
 class ExperimentReportConfigurationCloudWatchDashboard extends Shape
 {
     /**
-     * @param array{dashboardIdentifier?: string} $args
+     * @param array{dashboardIdentifier?: string|null} $args
      */
     public function __construct(array $args = [])
     {

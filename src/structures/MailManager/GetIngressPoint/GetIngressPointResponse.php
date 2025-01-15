@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MailManager\GetIngressPoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ARecord
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property string $IngressPointArn
- * @property Shapes\IngressPointAuthConfiguration $IngressPointAuthConfiguration
+ * @property string|null $ARecord
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property string|null $IngressPointArn
+ * @property Shapes\IngressPointAuthConfiguration|null $IngressPointAuthConfiguration
  * @property string $IngressPointId
  * @property string $IngressPointName
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimestamp
- * @property string $RuleSetId
- * @property 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED' $Status
- * @property string $TrafficPolicyId
- * @property 'OPEN'|'AUTH' $Type
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimestamp
+ * @property string|null $RuleSetId
+ * @property 'PROVISIONING'|'DEPROVISIONING'|'UPDATING'|'ACTIVE'|'CLOSED'|'FAILED'|null $Status
+ * @property string|null $TrafficPolicyId
+ * @property 'OPEN'|'AUTH'|null $Type
  */
 class GetIngressPointResponse extends Response
 {

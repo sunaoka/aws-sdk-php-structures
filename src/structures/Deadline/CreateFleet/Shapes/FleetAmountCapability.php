@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $name
  * @property float $min
- * @property float $max
+ * @property float|null $max
  */
 class FleetAmountCapability extends Shape
 {
@@ -15,7 +15,7 @@ class FleetAmountCapability extends Shape
      * @param array{
      *     name: string,
      *     min: float,
-     *     max?: float
+     *     max?: float|null
      * } $args
      */
     public function __construct(array $args)

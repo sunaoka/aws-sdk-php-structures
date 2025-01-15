@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\UpdateConfigurationTemplate\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceName
- * @property string $Namespace
- * @property string $OptionName
- * @property string $Value
+ * @property string|null $ResourceName
+ * @property string|null $Namespace
+ * @property string|null $OptionName
+ * @property string|null $Value
  */
 class ConfigurationOptionSetting extends Shape
 {
     /**
      * @param array{
-     *     ResourceName?: string,
-     *     Namespace?: string,
-     *     OptionName?: string,
-     *     Value?: string
+     *     ResourceName?: string|null,
+     *     Namespace?: string|null,
+     *     OptionName?: string|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

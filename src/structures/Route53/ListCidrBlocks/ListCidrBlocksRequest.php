@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CollectionId
- * @property string $LocationName
- * @property string $NextToken
- * @property string $MaxResults
+ * @property string|null $LocationName
+ * @property string|null $NextToken
+ * @property string|null $MaxResults
  */
 class ListCidrBlocksRequest extends Request
 {
     /**
      * @param array{
      *     CollectionId: string,
-     *     LocationName?: string,
-     *     NextToken?: string,
-     *     MaxResults?: string
+     *     LocationName?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: string|null
      * } $args
      */
     public function __construct(array $args)

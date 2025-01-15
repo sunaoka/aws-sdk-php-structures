@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkMail\ListUsers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UsernamePrefix
- * @property string $DisplayNamePrefix
- * @property string $PrimaryEmailPrefix
- * @property 'ENABLED'|'DISABLED'|'DELETED' $State
- * @property string $IdentityProviderUserIdPrefix
+ * @property string|null $UsernamePrefix
+ * @property string|null $DisplayNamePrefix
+ * @property string|null $PrimaryEmailPrefix
+ * @property 'ENABLED'|'DISABLED'|'DELETED'|null $State
+ * @property string|null $IdentityProviderUserIdPrefix
  */
 class ListUsersFilters extends Shape
 {
     /**
      * @param array{
-     *     UsernamePrefix?: string,
-     *     DisplayNamePrefix?: string,
-     *     PrimaryEmailPrefix?: string,
-     *     State?: 'ENABLED'|'DISABLED'|'DELETED',
-     *     IdentityProviderUserIdPrefix?: string
+     *     UsernamePrefix?: string|null,
+     *     DisplayNamePrefix?: string|null,
+     *     PrimaryEmailPrefix?: string|null,
+     *     State?: 'ENABLED'|'DISABLED'|'DELETED'|null,
+     *     IdentityProviderUserIdPrefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

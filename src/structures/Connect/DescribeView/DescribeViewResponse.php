@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeView;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\View $View
+ * @property Shapes\View|null $View
  */
 class DescribeViewResponse extends Response
 {

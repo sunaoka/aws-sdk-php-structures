@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\WellArchitected\GetLensReviewReport;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $WorkloadId
- * @property int<1, 100> $MilestoneNumber
- * @property Shapes\LensReviewReport $LensReviewReport
+ * @property string|null $WorkloadId
+ * @property int<1, 100>|null $MilestoneNumber
+ * @property Shapes\LensReviewReport|null $LensReviewReport
  */
 class GetLensReviewReportResponse extends Response
 {

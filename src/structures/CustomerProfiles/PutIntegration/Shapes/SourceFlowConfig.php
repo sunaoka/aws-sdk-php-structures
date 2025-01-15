@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\PutIntegration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConnectorProfileName
+ * @property string|null $ConnectorProfileName
  * @property 'Salesforce'|'Marketo'|'Zendesk'|'Servicenow'|'S3' $ConnectorType
- * @property IncrementalPullConfig $IncrementalPullConfig
+ * @property IncrementalPullConfig|null $IncrementalPullConfig
  * @property SourceConnectorProperties $SourceConnectorProperties
  */
 class SourceFlowConfig extends Shape
 {
     /**
      * @param array{
-     *     ConnectorProfileName?: string,
+     *     ConnectorProfileName?: string|null,
      *     ConnectorType: 'Salesforce'|'Marketo'|'Zendesk'|'Servicenow'|'S3',
-     *     IncrementalPullConfig?: IncrementalPullConfig,
+     *     IncrementalPullConfig?: IncrementalPullConfig|null,
      *     SourceConnectorProperties: SourceConnectorProperties
      * } $args
      */

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $name
  * @property string $regionName
- * @property string $displayName
- * @property string $description
+ * @property string|null $displayName
+ * @property string|null $description
  */
 class GetSpaceResponse extends Response
 {

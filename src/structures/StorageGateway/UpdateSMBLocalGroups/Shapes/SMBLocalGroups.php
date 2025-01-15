@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\StorageGateway\UpdateSMBLocalGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $GatewayAdmins
+ * @property list<string>|null $GatewayAdmins
  */
 class SMBLocalGroups extends Shape
 {
     /**
-     * @param array{GatewayAdmins?: list<string>} $args
+     * @param array{GatewayAdmins?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

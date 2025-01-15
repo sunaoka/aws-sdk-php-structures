@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Kafka\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EBSStorageInfo $EbsStorageInfo
+ * @property EBSStorageInfo|null $EbsStorageInfo
  */
 class StorageInfo extends Shape
 {
     /**
-     * @param array{EbsStorageInfo?: EBSStorageInfo} $args
+     * @param array{EbsStorageInfo?: EBSStorageInfo|null} $args
      */
     public function __construct(array $args = [])
     {

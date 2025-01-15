@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaTailor\PutPlaybackConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MpdLocation
- * @property 'SINGLE_PERIOD'|'MULTI_PERIOD' $OriginManifestType
+ * @property string|null $MpdLocation
+ * @property 'SINGLE_PERIOD'|'MULTI_PERIOD'|null $OriginManifestType
  */
 class DashConfigurationForPut extends Shape
 {
     /**
      * @param array{
-     *     MpdLocation?: string,
-     *     OriginManifestType?: 'SINGLE_PERIOD'|'MULTI_PERIOD'
+     *     MpdLocation?: string|null,
+     *     OriginManifestType?: 'SINGLE_PERIOD'|'MULTI_PERIOD'|null
      * } $args
      */
     public function __construct(array $args = [])

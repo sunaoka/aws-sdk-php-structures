@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\GetBackendStorage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AppId
- * @property string $BackendEnvironmentName
- * @property Shapes\GetBackendStorageResourceConfig $ResourceConfig
- * @property string $ResourceName
+ * @property string|null $AppId
+ * @property string|null $BackendEnvironmentName
+ * @property Shapes\GetBackendStorageResourceConfig|null $ResourceConfig
+ * @property string|null $ResourceName
  */
 class GetBackendStorageResponse extends Response
 {

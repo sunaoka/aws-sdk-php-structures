@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $profileId
- * @property string $name
- * @property string $email
- * @property string $phone
- * @property string $businessName
+ * @property string|null $name
+ * @property string|null $email
+ * @property string|null $phone
+ * @property string|null $businessName
  */
 class UpdateProfileRequest extends Request
 {
     /**
      * @param array{
      *     profileId: string,
-     *     name?: string,
-     *     email?: string,
-     *     phone?: string,
-     *     businessName?: string
+     *     name?: string|null,
+     *     email?: string|null,
+     *     phone?: string|null,
+     *     businessName?: string|null
      * } $args
      */
     public function __construct(array $args)

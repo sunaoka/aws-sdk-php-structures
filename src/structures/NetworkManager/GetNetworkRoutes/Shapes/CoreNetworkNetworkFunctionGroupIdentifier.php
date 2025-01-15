@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetNetworkRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CoreNetworkId
- * @property string $NetworkFunctionGroupName
- * @property string $EdgeLocation
+ * @property string|null $CoreNetworkId
+ * @property string|null $NetworkFunctionGroupName
+ * @property string|null $EdgeLocation
  */
 class CoreNetworkNetworkFunctionGroupIdentifier extends Shape
 {
     /**
      * @param array{
-     *     CoreNetworkId?: string,
-     *     NetworkFunctionGroupName?: string,
-     *     EdgeLocation?: string
+     *     CoreNetworkId?: string|null,
+     *     NetworkFunctionGroupName?: string|null,
+     *     EdgeLocation?: string|null
      * } $args
      */
     public function __construct(array $args = [])

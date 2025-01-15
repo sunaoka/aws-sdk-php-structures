@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $Name
- * @property Shapes\PredefinedAttributeValues $Values
+ * @property Shapes\PredefinedAttributeValues|null $Values
  */
 class UpdatePredefinedAttributeRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdatePredefinedAttributeRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     Name: string,
-     *     Values?: Shapes\PredefinedAttributeValues
+     *     Values?: Shapes\PredefinedAttributeValues|null
      * } $args
      */
     public function __construct(array $args)

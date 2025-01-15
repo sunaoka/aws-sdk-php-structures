@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeCommit\BatchGetRepositories\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $repositoryId
- * @property string $repositoryName
- * @property 'EncryptionIntegrityChecksFailedException'|'EncryptionKeyAccessDeniedException'|'EncryptionKeyDisabledException'|'EncryptionKeyNotFoundException'|'EncryptionKeyUnavailableException'|'RepositoryDoesNotExistException' $errorCode
- * @property string $errorMessage
+ * @property string|null $repositoryId
+ * @property string|null $repositoryName
+ * @property 'EncryptionIntegrityChecksFailedException'|'EncryptionKeyAccessDeniedException'|'EncryptionKeyDisabledException'|'EncryptionKeyNotFoundException'|'EncryptionKeyUnavailableException'|'RepositoryDoesNotExistException'|null $errorCode
+ * @property string|null $errorMessage
  */
 class BatchGetRepositoriesError extends Shape
 {
     /**
      * @param array{
-     *     repositoryId?: string,
-     *     repositoryName?: string,
-     *     errorCode?: 'EncryptionIntegrityChecksFailedException'|'EncryptionKeyAccessDeniedException'|'EncryptionKeyDisabledException'|'EncryptionKeyNotFoundException'|'EncryptionKeyUnavailableException'|'RepositoryDoesNotExistException',
-     *     errorMessage?: string
+     *     repositoryId?: string|null,
+     *     repositoryName?: string|null,
+     *     errorCode?: 'EncryptionIntegrityChecksFailedException'|'EncryptionKeyAccessDeniedException'|'EncryptionKeyDisabledException'|'EncryptionKeyNotFoundException'|'EncryptionKeyUnavailableException'|'RepositoryDoesNotExistException'|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

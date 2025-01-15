@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property ConfigurationRevision $LatestRevision
  * @property string $Name
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class Configuration extends Shape
 {
@@ -29,7 +29,7 @@ class Configuration extends Shape
      *     Id: string,
      *     LatestRevision: ConfigurationRevision,
      *     Name: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

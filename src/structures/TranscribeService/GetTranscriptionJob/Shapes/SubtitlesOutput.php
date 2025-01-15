@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\TranscribeService\GetTranscriptionJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'vtt'|'srt'> $Formats
- * @property list<string> $SubtitleFileUris
- * @property int<0, 1> $OutputStartIndex
+ * @property list<'vtt'|'srt'>|null $Formats
+ * @property list<string>|null $SubtitleFileUris
+ * @property int<0, 1>|null $OutputStartIndex
  */
 class SubtitlesOutput extends Shape
 {
     /**
      * @param array{
-     *     Formats?: list<'vtt'|'srt'>,
-     *     SubtitleFileUris?: list<string>,
-     *     OutputStartIndex?: int<0, 1>
+     *     Formats?: list<'vtt'|'srt'>|null,
+     *     SubtitleFileUris?: list<string>|null,
+     *     OutputStartIndex?: int<0, 1>|null
      * } $args
      */
     public function __construct(array $args = [])

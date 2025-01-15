@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateDataProvider\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServerName
- * @property int $Port
- * @property string $DatabaseName
+ * @property string|null $ServerName
+ * @property int|null $Port
+ * @property string|null $DatabaseName
  */
 class RedshiftDataProviderSettings extends Shape
 {
     /**
      * @param array{
-     *     ServerName?: string,
-     *     Port?: int,
-     *     DatabaseName?: string
+     *     ServerName?: string|null,
+     *     Port?: int|null,
+     *     DatabaseName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

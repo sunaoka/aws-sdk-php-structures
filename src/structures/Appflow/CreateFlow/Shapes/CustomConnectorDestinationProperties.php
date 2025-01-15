@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $entityName
- * @property ErrorHandlingConfig $errorHandlingConfig
- * @property 'INSERT'|'UPSERT'|'UPDATE'|'DELETE' $writeOperationType
- * @property list<string> $idFieldNames
- * @property array<string, string> $customProperties
+ * @property ErrorHandlingConfig|null $errorHandlingConfig
+ * @property 'INSERT'|'UPSERT'|'UPDATE'|'DELETE'|null $writeOperationType
+ * @property list<string>|null $idFieldNames
+ * @property array<string, string>|null $customProperties
  */
 class CustomConnectorDestinationProperties extends Shape
 {
     /**
      * @param array{
      *     entityName: string,
-     *     errorHandlingConfig?: ErrorHandlingConfig,
-     *     writeOperationType?: 'INSERT'|'UPSERT'|'UPDATE'|'DELETE',
-     *     idFieldNames?: list<string>,
-     *     customProperties?: array<string, string>
+     *     errorHandlingConfig?: ErrorHandlingConfig|null,
+     *     writeOperationType?: 'INSERT'|'UPSERT'|'UPDATE'|'DELETE'|null,
+     *     idFieldNames?: list<string>|null,
+     *     customProperties?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

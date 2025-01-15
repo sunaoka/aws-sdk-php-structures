@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\PrivateNetworks\DeactivateDeviceIdentifier\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $deviceIdentifierArn
- * @property string $iccid
- * @property string $imsi
- * @property string $networkArn
- * @property string $orderArn
- * @property 'ACTIVE'|'INACTIVE' $status
- * @property string $trafficGroupArn
- * @property string $vendor
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $deviceIdentifierArn
+ * @property string|null $iccid
+ * @property string|null $imsi
+ * @property string|null $networkArn
+ * @property string|null $orderArn
+ * @property 'ACTIVE'|'INACTIVE'|null $status
+ * @property string|null $trafficGroupArn
+ * @property string|null $vendor
  */
 class DeviceIdentifier extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     deviceIdentifierArn?: string,
-     *     iccid?: string,
-     *     imsi?: string,
-     *     networkArn?: string,
-     *     orderArn?: string,
-     *     status?: 'ACTIVE'|'INACTIVE',
-     *     trafficGroupArn?: string,
-     *     vendor?: string
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     deviceIdentifierArn?: string|null,
+     *     iccid?: string|null,
+     *     imsi?: string|null,
+     *     networkArn?: string|null,
+     *     orderArn?: string|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|null,
+     *     trafficGroupArn?: string|null,
+     *     vendor?: string|null
      * } $args
      */
     public function __construct(array $args = [])

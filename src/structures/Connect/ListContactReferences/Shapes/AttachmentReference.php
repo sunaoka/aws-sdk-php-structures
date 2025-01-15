@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Connect\ListContactReferences\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Value
- * @property 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED' $Status
- * @property string $Arn
+ * @property string|null $Name
+ * @property string|null $Value
+ * @property 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|null $Status
+ * @property string|null $Arn
  */
 class AttachmentReference extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Value?: string,
-     *     Status?: 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED',
-     *     Arn?: string
+     *     Name?: string|null,
+     *     Value?: string|null,
+     *     Status?: 'AVAILABLE'|'DELETED'|'APPROVED'|'REJECTED'|'PROCESSING'|'FAILED'|null,
+     *     Arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

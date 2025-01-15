@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteFpgaImage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $Return
+ * @property bool|null $Return
  */
 class DeleteFpgaImageResponse extends Response
 {

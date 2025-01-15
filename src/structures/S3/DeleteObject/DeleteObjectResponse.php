@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\S3\DeleteObject;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $DeleteMarker
- * @property string $VersionId
- * @property 'requester' $RequestCharged
+ * @property bool|null $DeleteMarker
+ * @property string|null $VersionId
+ * @property 'requester'|null $RequestCharged
  */
 class DeleteObjectResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\CreateDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $actionName
- * @property SqlQueryDatasetAction $queryAction
- * @property ContainerDatasetAction $containerAction
+ * @property string|null $actionName
+ * @property SqlQueryDatasetAction|null $queryAction
+ * @property ContainerDatasetAction|null $containerAction
  */
 class DatasetAction extends Shape
 {
     /**
      * @param array{
-     *     actionName?: string,
-     *     queryAction?: SqlQueryDatasetAction,
-     *     containerAction?: ContainerDatasetAction
+     *     actionName?: string|null,
+     *     queryAction?: SqlQueryDatasetAction|null,
+     *     containerAction?: ContainerDatasetAction|null
      * } $args
      */
     public function __construct(array $args = [])

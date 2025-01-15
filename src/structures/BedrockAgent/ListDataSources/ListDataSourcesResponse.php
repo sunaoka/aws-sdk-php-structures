@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DataSourceSummary> $dataSourceSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListDataSourcesResponse extends Response
 {

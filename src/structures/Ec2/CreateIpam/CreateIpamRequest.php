@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateIpam;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property string $Description
- * @property list<Shapes\AddIpamOperatingRegion> $OperatingRegions
- * @property list<Shapes\TagSpecification> $TagSpecifications
- * @property string $ClientToken
- * @property 'free'|'advanced' $Tier
- * @property bool $EnablePrivateGua
+ * @property bool|null $DryRun
+ * @property string|null $Description
+ * @property list<Shapes\AddIpamOperatingRegion>|null $OperatingRegions
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
+ * @property string|null $ClientToken
+ * @property 'free'|'advanced'|null $Tier
+ * @property bool|null $EnablePrivateGua
  */
 class CreateIpamRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     Description?: string,
-     *     OperatingRegions?: list<Shapes\AddIpamOperatingRegion>,
-     *     TagSpecifications?: list<Shapes\TagSpecification>,
-     *     ClientToken?: string,
-     *     Tier?: 'free'|'advanced',
-     *     EnablePrivateGua?: bool
+     *     DryRun?: bool|null,
+     *     Description?: string|null,
+     *     OperatingRegions?: list<Shapes\AddIpamOperatingRegion>|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null,
+     *     ClientToken?: string|null,
+     *     Tier?: 'free'|'advanced'|null,
+     *     EnablePrivateGua?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

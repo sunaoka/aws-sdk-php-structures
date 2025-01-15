@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackName
- * @property list<string> $LogicalResourceIds
+ * @property list<string>|null $LogicalResourceIds
  */
 class DetectStackDriftRequest extends Request
 {
     /**
      * @param array{
      *     StackName: string,
-     *     LogicalResourceIds?: list<string>
+     *     LogicalResourceIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

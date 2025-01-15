@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\MTurk\ListReviewableHITs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property int $NumResults
- * @property list<Shapes\HIT> $HITs
+ * @property string|null $NextToken
+ * @property int|null $NumResults
+ * @property list<Shapes\HIT>|null $HITs
  */
 class ListReviewableHITsResponse extends Response
 {

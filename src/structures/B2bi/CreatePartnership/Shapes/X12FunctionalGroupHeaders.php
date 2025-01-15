@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\B2bi\CreatePartnership\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $applicationSenderCode
- * @property string $applicationReceiverCode
- * @property string $responsibleAgencyCode
+ * @property string|null $applicationSenderCode
+ * @property string|null $applicationReceiverCode
+ * @property string|null $responsibleAgencyCode
  */
 class X12FunctionalGroupHeaders extends Shape
 {
     /**
      * @param array{
-     *     applicationSenderCode?: string,
-     *     applicationReceiverCode?: string,
-     *     responsibleAgencyCode?: string
+     *     applicationSenderCode?: string|null,
+     *     applicationReceiverCode?: string|null,
+     *     responsibleAgencyCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

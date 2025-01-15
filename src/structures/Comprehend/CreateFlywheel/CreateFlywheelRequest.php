@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FlywheelName
- * @property string $ActiveModelArn
+ * @property string|null $ActiveModelArn
  * @property string $DataAccessRoleArn
- * @property Shapes\TaskConfig $TaskConfig
- * @property 'DOCUMENT_CLASSIFIER'|'ENTITY_RECOGNIZER' $ModelType
+ * @property Shapes\TaskConfig|null $TaskConfig
+ * @property 'DOCUMENT_CLASSIFIER'|'ENTITY_RECOGNIZER'|null $ModelType
  * @property string $DataLakeS3Uri
- * @property Shapes\DataSecurityConfig $DataSecurityConfig
- * @property string $ClientRequestToken
- * @property list<Shapes\Tag> $Tags
+ * @property Shapes\DataSecurityConfig|null $DataSecurityConfig
+ * @property string|null $ClientRequestToken
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateFlywheelRequest extends Request
 {
     /**
      * @param array{
      *     FlywheelName: string,
-     *     ActiveModelArn?: string,
+     *     ActiveModelArn?: string|null,
      *     DataAccessRoleArn: string,
-     *     TaskConfig?: Shapes\TaskConfig,
-     *     ModelType?: 'DOCUMENT_CLASSIFIER'|'ENTITY_RECOGNIZER',
+     *     TaskConfig?: Shapes\TaskConfig|null,
+     *     ModelType?: 'DOCUMENT_CLASSIFIER'|'ENTITY_RECOGNIZER'|null,
      *     DataLakeS3Uri: string,
-     *     DataSecurityConfig?: Shapes\DataSecurityConfig,
-     *     ClientRequestToken?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     DataSecurityConfig?: Shapes\DataSecurityConfig|null,
+     *     ClientRequestToken?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GameLift\GetInstanceAccess\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FleetId
- * @property string $InstanceId
- * @property string $IpAddress
- * @property 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023' $OperatingSystem
- * @property InstanceCredentials $Credentials
+ * @property string|null $FleetId
+ * @property string|null $InstanceId
+ * @property string|null $IpAddress
+ * @property 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|null $OperatingSystem
+ * @property InstanceCredentials|null $Credentials
  */
 class InstanceAccess extends Shape
 {
     /**
      * @param array{
-     *     FleetId?: string,
-     *     InstanceId?: string,
-     *     IpAddress?: string,
-     *     OperatingSystem?: 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023',
-     *     Credentials?: InstanceCredentials
+     *     FleetId?: string|null,
+     *     InstanceId?: string|null,
+     *     IpAddress?: string|null,
+     *     OperatingSystem?: 'WINDOWS_2012'|'AMAZON_LINUX'|'AMAZON_LINUX_2'|'WINDOWS_2016'|'AMAZON_LINUX_2023'|null,
+     *     Credentials?: InstanceCredentials|null
      * } $args
      */
     public function __construct(array $args = [])

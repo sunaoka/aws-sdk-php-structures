@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\CloudFrontOriginAccessIdentityConfig $CloudFrontOriginAccessIdentityConfig
  * @property string $Id
- * @property string $IfMatch
+ * @property string|null $IfMatch
  */
 class UpdateCloudFrontOriginAccessIdentityRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateCloudFrontOriginAccessIdentityRequest extends Request
      * @param array{
      *     CloudFrontOriginAccessIdentityConfig: Shapes\CloudFrontOriginAccessIdentityConfig,
      *     Id: string,
-     *     IfMatch?: string
+     *     IfMatch?: string|null
      * } $args
      */
     public function __construct(array $args)

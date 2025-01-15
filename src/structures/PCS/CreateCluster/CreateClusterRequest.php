@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SchedulerRequest $scheduler
  * @property 'SMALL'|'MEDIUM'|'LARGE' $size
  * @property Shapes\NetworkingRequest $networking
- * @property Shapes\ClusterSlurmConfigurationRequest $slurmConfiguration
- * @property string $clientToken
- * @property array<string, string> $tags
+ * @property Shapes\ClusterSlurmConfigurationRequest|null $slurmConfiguration
+ * @property string|null $clientToken
+ * @property array<string, string>|null $tags
  */
 class CreateClusterRequest extends Request
 {
@@ -21,9 +21,9 @@ class CreateClusterRequest extends Request
      *     scheduler: Shapes\SchedulerRequest,
      *     size: 'SMALL'|'MEDIUM'|'LARGE',
      *     networking: Shapes\NetworkingRequest,
-     *     slurmConfiguration?: Shapes\ClusterSlurmConfigurationRequest,
-     *     clientToken?: string,
-     *     tags?: array<string, string>
+     *     slurmConfiguration?: Shapes\ClusterSlurmConfigurationRequest|null,
+     *     clientToken?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $property
- * @property string $field
+ * @property string|null $field
  */
 class ComponentPropertyBindingProperties extends Shape
 {
     /**
      * @param array{
      *     property: string,
-     *     field?: string
+     *     field?: string|null
      * } $args
      */
     public function __construct(array $args)

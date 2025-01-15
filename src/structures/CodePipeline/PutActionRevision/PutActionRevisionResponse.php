@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CodePipeline\PutActionRevision;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $newRevision
- * @property string $pipelineExecutionId
+ * @property bool|null $newRevision
+ * @property string|null $pipelineExecutionId
  */
 class PutActionRevisionResponse extends Response
 {

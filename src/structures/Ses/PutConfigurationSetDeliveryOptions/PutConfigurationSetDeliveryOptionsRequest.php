@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ConfigurationSetName
- * @property Shapes\DeliveryOptions $DeliveryOptions
+ * @property Shapes\DeliveryOptions|null $DeliveryOptions
  */
 class PutConfigurationSetDeliveryOptionsRequest extends Request
 {
     /**
      * @param array{
      *     ConfigurationSetName: string,
-     *     DeliveryOptions?: Shapes\DeliveryOptions
+     *     DeliveryOptions?: Shapes\DeliveryOptions|null
      * } $args
      */
     public function __construct(array $args)

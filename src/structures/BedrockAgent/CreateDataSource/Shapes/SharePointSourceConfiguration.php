@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $domain
  * @property 'ONLINE' $hostType
  * @property list<string> $siteUrls
- * @property string $tenantId
+ * @property string|null $tenantId
  */
 class SharePointSourceConfiguration extends Shape
 {
@@ -21,7 +21,7 @@ class SharePointSourceConfiguration extends Shape
      *     domain: string,
      *     hostType: 'ONLINE',
      *     siteUrls: list<string>,
-     *     tenantId?: string
+     *     tenantId?: string|null
      * } $args
      */
     public function __construct(array $args)

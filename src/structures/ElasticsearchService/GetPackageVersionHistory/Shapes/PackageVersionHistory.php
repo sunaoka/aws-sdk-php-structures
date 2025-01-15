@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\GetPackageVersionHistory\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PackageVersion
- * @property string $CommitMessage
- * @property \Aws\Api\DateTimeResult $CreatedAt
+ * @property string|null $PackageVersion
+ * @property string|null $CommitMessage
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
  */
 class PackageVersionHistory extends Shape
 {
     /**
      * @param array{
-     *     PackageVersion?: string,
-     *     CommitMessage?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult
+     *     PackageVersion?: string|null,
+     *     CommitMessage?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $StandardsArn
  * @property string $SecurityControlId
  * @property 'ENABLED'|'DISABLED' $AssociationStatus
- * @property string $UpdatedReason
+ * @property string|null $UpdatedReason
  */
 class StandardsControlAssociationUpdate extends Shape
 {
@@ -17,7 +17,7 @@ class StandardsControlAssociationUpdate extends Shape
      *     StandardsArn: string,
      *     SecurityControlId: string,
      *     AssociationStatus: 'ENABLED'|'DISABLED',
-     *     UpdatedReason?: string
+     *     UpdatedReason?: string|null
      * } $args
      */
     public function __construct(array $args)

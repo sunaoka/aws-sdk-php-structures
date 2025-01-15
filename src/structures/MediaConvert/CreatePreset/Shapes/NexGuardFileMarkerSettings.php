@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreatePreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $License
- * @property int<0, 4194303> $Payload
- * @property string $Preset
- * @property 'LIGHTEST'|'LIGHTER'|'DEFAULT'|'STRONGER'|'STRONGEST' $Strength
+ * @property string|null $License
+ * @property int<0, 4194303>|null $Payload
+ * @property string|null $Preset
+ * @property 'LIGHTEST'|'LIGHTER'|'DEFAULT'|'STRONGER'|'STRONGEST'|null $Strength
  */
 class NexGuardFileMarkerSettings extends Shape
 {
     /**
      * @param array{
-     *     License?: string,
-     *     Payload?: int<0, 4194303>,
-     *     Preset?: string,
-     *     Strength?: 'LIGHTEST'|'LIGHTER'|'DEFAULT'|'STRONGER'|'STRONGEST'
+     *     License?: string|null,
+     *     Payload?: int<0, 4194303>|null,
+     *     Preset?: string|null,
+     *     Strength?: 'LIGHTEST'|'LIGHTER'|'DEFAULT'|'STRONGER'|'STRONGEST'|null
      * } $args
      */
     public function __construct(array $args = [])

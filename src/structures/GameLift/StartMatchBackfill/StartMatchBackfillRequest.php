@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\GameLift\StartMatchBackfill;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TicketId
+ * @property string|null $TicketId
  * @property string $ConfigurationName
- * @property string $GameSessionArn
+ * @property string|null $GameSessionArn
  * @property list<Shapes\Player> $Players
  */
 class StartMatchBackfillRequest extends Request
 {
     /**
      * @param array{
-     *     TicketId?: string,
+     *     TicketId?: string|null,
      *     ConfigurationName: string,
-     *     GameSessionArn?: string,
+     *     GameSessionArn?: string|null,
      *     Players: list<Shapes\Player>
      * } $args
      */

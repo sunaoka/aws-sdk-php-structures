@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DomainName
  * @property string $CalculatedAttributeName
- * @property string $DisplayName
- * @property string $Description
- * @property Shapes\Conditions $Conditions
+ * @property string|null $DisplayName
+ * @property string|null $Description
+ * @property Shapes\Conditions|null $Conditions
  */
 class UpdateCalculatedAttributeDefinitionRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateCalculatedAttributeDefinitionRequest extends Request
      * @param array{
      *     DomainName: string,
      *     CalculatedAttributeName: string,
-     *     DisplayName?: string,
-     *     Description?: string,
-     *     Conditions?: Shapes\Conditions
+     *     DisplayName?: string|null,
+     *     Description?: string|null,
+     *     Conditions?: Shapes\Conditions|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AuditManager\RegisterAccount;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $kmsKey
- * @property string $delegatedAdminAccount
+ * @property string|null $kmsKey
+ * @property string|null $delegatedAdminAccount
  */
 class RegisterAccountRequest extends Request
 {
     /**
      * @param array{
-     *     kmsKey?: string,
-     *     delegatedAdminAccount?: string
+     *     kmsKey?: string|null,
+     *     delegatedAdminAccount?: string|null
      * } $args
      */
     public function __construct(array $args = [])

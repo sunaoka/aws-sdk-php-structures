@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AutoScalingGroup> $AutoScalingGroups
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class DescribeAutoScalingGroupsResponse extends Response
 {

@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $TLSInspectionConfigurationArn
  * @property string $TLSInspectionConfigurationName
  * @property string $TLSInspectionConfigurationId
- * @property 'ACTIVE'|'DELETING'|'ERROR' $TLSInspectionConfigurationStatus
- * @property string $Description
- * @property list<Tag> $Tags
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property int $NumberOfAssociations
- * @property EncryptionConfiguration $EncryptionConfiguration
- * @property list<TlsCertificateData> $Certificates
- * @property TlsCertificateData $CertificateAuthority
+ * @property 'ACTIVE'|'DELETING'|'ERROR'|null $TLSInspectionConfigurationStatus
+ * @property string|null $Description
+ * @property list<Tag>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property int|null $NumberOfAssociations
+ * @property EncryptionConfiguration|null $EncryptionConfiguration
+ * @property list<TlsCertificateData>|null $Certificates
+ * @property TlsCertificateData|null $CertificateAuthority
  */
 class TLSInspectionConfigurationResponse extends Shape
 {
@@ -24,14 +24,14 @@ class TLSInspectionConfigurationResponse extends Shape
      *     TLSInspectionConfigurationArn: string,
      *     TLSInspectionConfigurationName: string,
      *     TLSInspectionConfigurationId: string,
-     *     TLSInspectionConfigurationStatus?: 'ACTIVE'|'DELETING'|'ERROR',
-     *     Description?: string,
-     *     Tags?: list<Tag>,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     NumberOfAssociations?: int,
-     *     EncryptionConfiguration?: EncryptionConfiguration,
-     *     Certificates?: list<TlsCertificateData>,
-     *     CertificateAuthority?: TlsCertificateData
+     *     TLSInspectionConfigurationStatus?: 'ACTIVE'|'DELETING'|'ERROR'|null,
+     *     Description?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     NumberOfAssociations?: int|null,
+     *     EncryptionConfiguration?: EncryptionConfiguration|null,
+     *     Certificates?: list<TlsCertificateData>|null,
+     *     CertificateAuthority?: TlsCertificateData|null
      * } $args
      */
     public function __construct(array $args)

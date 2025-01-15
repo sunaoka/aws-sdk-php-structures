@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\DescribeResourceCollectionHealth\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StackName
- * @property InsightHealth $Insight
- * @property int $AnalyzedResourceCount
+ * @property string|null $StackName
+ * @property InsightHealth|null $Insight
+ * @property int|null $AnalyzedResourceCount
  */
 class CloudFormationHealth extends Shape
 {
     /**
      * @param array{
-     *     StackName?: string,
-     *     Insight?: InsightHealth,
-     *     AnalyzedResourceCount?: int
+     *     StackName?: string|null,
+     *     Insight?: InsightHealth|null,
+     *     AnalyzedResourceCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

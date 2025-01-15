@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\DescribeAlert\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $MetricList
- * @property list<DimensionFilter> $DimensionFilterList
+ * @property list<string>|null $MetricList
+ * @property list<DimensionFilter>|null $DimensionFilterList
  */
 class AlertFilters extends Shape
 {
     /**
      * @param array{
-     *     MetricList?: list<string>,
-     *     DimensionFilterList?: list<DimensionFilter>
+     *     MetricList?: list<string>|null,
+     *     DimensionFilterList?: list<DimensionFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

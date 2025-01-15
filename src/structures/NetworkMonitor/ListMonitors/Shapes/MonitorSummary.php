@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $monitorArn
  * @property string $monitorName
  * @property 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR'|'DELETING' $state
- * @property int<30, max> $aggregationPeriod
- * @property array<string, string> $tags
+ * @property int<30, max>|null $aggregationPeriod
+ * @property array<string, string>|null $tags
  */
 class MonitorSummary extends Shape
 {
@@ -18,8 +18,8 @@ class MonitorSummary extends Shape
      *     monitorArn: string,
      *     monitorName: string,
      *     state: 'PENDING'|'ACTIVE'|'INACTIVE'|'ERROR'|'DELETING',
-     *     aggregationPeriod?: int<30, max>,
-     *     tags?: array<string, string>
+     *     aggregationPeriod?: int<30, max>|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

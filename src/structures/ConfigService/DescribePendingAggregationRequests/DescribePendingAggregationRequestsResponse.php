@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribePendingAggregationRequest
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\PendingAggregationRequest> $PendingAggregationRequests
- * @property string $NextToken
+ * @property list<Shapes\PendingAggregationRequest>|null $PendingAggregationRequests
+ * @property string|null $NextToken
  */
 class DescribePendingAggregationRequestsResponse extends Response
 {

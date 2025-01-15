@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property Shapes\ProfileConfiguration $Configuration
  */
 class UpdateUsageProfileRequest extends Request
@@ -14,7 +14,7 @@ class UpdateUsageProfileRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Configuration: Shapes\ProfileConfiguration
      * } $args
      */

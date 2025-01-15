@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $assetId
  * @property string $hierarchyId
  * @property string $childAssetId
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class DisassociateAssetsRequest extends Request
 {
@@ -17,7 +17,7 @@ class DisassociateAssetsRequest extends Request
      *     assetId: string,
      *     hierarchyId: string,
      *     childAssetId: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

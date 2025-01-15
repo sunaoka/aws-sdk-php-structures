@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingGroupName
- * @property 'Rolling' $Strategy
- * @property Shapes\DesiredConfiguration $DesiredConfiguration
- * @property Shapes\RefreshPreferences $Preferences
+ * @property 'Rolling'|null $Strategy
+ * @property Shapes\DesiredConfiguration|null $DesiredConfiguration
+ * @property Shapes\RefreshPreferences|null $Preferences
  */
 class StartInstanceRefreshRequest extends Request
 {
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     Strategy?: 'Rolling',
-     *     DesiredConfiguration?: Shapes\DesiredConfiguration,
-     *     Preferences?: Shapes\RefreshPreferences
+     *     Strategy?: 'Rolling'|null,
+     *     DesiredConfiguration?: Shapes\DesiredConfiguration|null,
+     *     Preferences?: Shapes\RefreshPreferences|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetAutoScalingGroupRecommendat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Gpu> $gpus
+ * @property list<Gpu>|null $gpus
  */
 class GpuInfo extends Shape
 {
     /**
-     * @param array{gpus?: list<Gpu>} $args
+     * @param array{gpus?: list<Gpu>|null} $args
      */
     public function __construct(array $args = [])
     {

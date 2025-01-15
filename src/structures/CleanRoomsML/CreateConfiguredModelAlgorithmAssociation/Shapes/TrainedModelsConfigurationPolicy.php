@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CleanRoomsML\CreateConfiguredModelAlgorithmAsso
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<LogsConfigurationPolicy> $containerLogs
- * @property MetricsConfigurationPolicy $containerMetrics
+ * @property list<LogsConfigurationPolicy>|null $containerLogs
+ * @property MetricsConfigurationPolicy|null $containerMetrics
  */
 class TrainedModelsConfigurationPolicy extends Shape
 {
     /**
      * @param array{
-     *     containerLogs?: list<LogsConfigurationPolicy>,
-     *     containerMetrics?: MetricsConfigurationPolicy
+     *     containerLogs?: list<LogsConfigurationPolicy>|null,
+     *     containerMetrics?: MetricsConfigurationPolicy|null
      * } $args
      */
     public function __construct(array $args = [])

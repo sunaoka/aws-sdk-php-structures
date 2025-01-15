@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Uid
- * @property string $Name
- * @property string $AccountId
+ * @property string|null $Name
+ * @property string|null $AccountId
  * @property 'EC2_INSTANCE'|'EC2_NETWORK_INTERFACE'|'S3_BUCKET'|'S3_OBJECT'|'ACCESS_KEY' $ResourceType
- * @property string $Region
- * @property string $Service
- * @property string $CloudPartition
- * @property list<Tag> $Tags
- * @property ResourceData $Data
+ * @property string|null $Region
+ * @property string|null $Service
+ * @property string|null $CloudPartition
+ * @property list<Tag>|null $Tags
+ * @property ResourceData|null $Data
  */
 class ResourceV2 extends Shape
 {
     /**
      * @param array{
      *     Uid: string,
-     *     Name?: string,
-     *     AccountId?: string,
+     *     Name?: string|null,
+     *     AccountId?: string|null,
      *     ResourceType: 'EC2_INSTANCE'|'EC2_NETWORK_INTERFACE'|'S3_BUCKET'|'S3_OBJECT'|'ACCESS_KEY',
-     *     Region?: string,
-     *     Service?: string,
-     *     CloudPartition?: string,
-     *     Tags?: list<Tag>,
-     *     Data?: ResourceData
+     *     Region?: string|null,
+     *     Service?: string|null,
+     *     CloudPartition?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     Data?: ResourceData|null
      * } $args
      */
     public function __construct(array $args)

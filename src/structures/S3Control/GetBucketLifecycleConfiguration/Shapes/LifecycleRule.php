@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\S3Control\GetBucketLifecycleConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LifecycleExpiration $Expiration
- * @property string $ID
- * @property LifecycleRuleFilter $Filter
+ * @property LifecycleExpiration|null $Expiration
+ * @property string|null $ID
+ * @property LifecycleRuleFilter|null $Filter
  * @property 'Enabled'|'Disabled' $Status
- * @property list<Transition> $Transitions
- * @property list<NoncurrentVersionTransition> $NoncurrentVersionTransitions
- * @property NoncurrentVersionExpiration $NoncurrentVersionExpiration
- * @property AbortIncompleteMultipartUpload $AbortIncompleteMultipartUpload
+ * @property list<Transition>|null $Transitions
+ * @property list<NoncurrentVersionTransition>|null $NoncurrentVersionTransitions
+ * @property NoncurrentVersionExpiration|null $NoncurrentVersionExpiration
+ * @property AbortIncompleteMultipartUpload|null $AbortIncompleteMultipartUpload
  */
 class LifecycleRule extends Shape
 {
     /**
      * @param array{
-     *     Expiration?: LifecycleExpiration,
-     *     ID?: string,
-     *     Filter?: LifecycleRuleFilter,
+     *     Expiration?: LifecycleExpiration|null,
+     *     ID?: string|null,
+     *     Filter?: LifecycleRuleFilter|null,
      *     Status: 'Enabled'|'Disabled',
-     *     Transitions?: list<Transition>,
-     *     NoncurrentVersionTransitions?: list<NoncurrentVersionTransition>,
-     *     NoncurrentVersionExpiration?: NoncurrentVersionExpiration,
-     *     AbortIncompleteMultipartUpload?: AbortIncompleteMultipartUpload
+     *     Transitions?: list<Transition>|null,
+     *     NoncurrentVersionTransitions?: list<NoncurrentVersionTransition>|null,
+     *     NoncurrentVersionExpiration?: NoncurrentVersionExpiration|null,
+     *     AbortIncompleteMultipartUpload?: AbortIncompleteMultipartUpload|null
      * } $args
      */
     public function __construct(array $args)

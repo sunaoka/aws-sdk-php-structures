@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeGuruProfiler\GetFindingsReportAccountSummar
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $dailyReportsOnly
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property bool|null $dailyReportsOnly
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class GetFindingsReportAccountSummaryRequest extends Request
 {
     /**
      * @param array{
-     *     dailyReportsOnly?: bool,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     dailyReportsOnly?: bool|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

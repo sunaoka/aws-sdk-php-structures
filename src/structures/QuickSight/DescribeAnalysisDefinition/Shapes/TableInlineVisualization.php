@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataBarsOptions $DataBars
+ * @property DataBarsOptions|null $DataBars
  */
 class TableInlineVisualization extends Shape
 {
     /**
-     * @param array{DataBars?: DataBarsOptions} $args
+     * @param array{DataBars?: DataBarsOptions|null} $args
      */
     public function __construct(array $args = [])
     {

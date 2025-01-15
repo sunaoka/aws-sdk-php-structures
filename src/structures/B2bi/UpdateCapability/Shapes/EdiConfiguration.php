@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\B2bi\UpdateCapability\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INBOUND'|'OUTBOUND' $capabilityDirection
+ * @property 'INBOUND'|'OUTBOUND'|null $capabilityDirection
  * @property EdiType $type
  * @property S3Location $inputLocation
  * @property S3Location $outputLocation
@@ -15,7 +15,7 @@ class EdiConfiguration extends Shape
 {
     /**
      * @param array{
-     *     capabilityDirection?: 'INBOUND'|'OUTBOUND',
+     *     capabilityDirection?: 'INBOUND'|'OUTBOUND'|null,
      *     type: EdiType,
      *     inputLocation: S3Location,
      *     outputLocation: S3Location,

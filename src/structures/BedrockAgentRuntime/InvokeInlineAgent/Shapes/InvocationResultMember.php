@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ApiResult $apiResult
- * @property FunctionResult $functionResult
+ * @property ApiResult|null $apiResult
+ * @property FunctionResult|null $functionResult
  */
 class InvocationResultMember extends Shape
 {
     /**
      * @param array{
-     *     apiResult?: ApiResult,
-     *     functionResult?: FunctionResult
+     *     apiResult?: ApiResult|null,
+     *     functionResult?: FunctionResult|null
      * } $args
      */
     public function __construct(array $args = [])

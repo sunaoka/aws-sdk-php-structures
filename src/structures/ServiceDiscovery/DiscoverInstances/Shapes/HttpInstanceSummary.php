@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\DiscoverInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceId
- * @property string $NamespaceName
- * @property string $ServiceName
- * @property 'HEALTHY'|'UNHEALTHY'|'UNKNOWN' $HealthStatus
- * @property array<string, string> $Attributes
+ * @property string|null $InstanceId
+ * @property string|null $NamespaceName
+ * @property string|null $ServiceName
+ * @property 'HEALTHY'|'UNHEALTHY'|'UNKNOWN'|null $HealthStatus
+ * @property array<string, string>|null $Attributes
  */
 class HttpInstanceSummary extends Shape
 {
     /**
      * @param array{
-     *     InstanceId?: string,
-     *     NamespaceName?: string,
-     *     ServiceName?: string,
-     *     HealthStatus?: 'HEALTHY'|'UNHEALTHY'|'UNKNOWN',
-     *     Attributes?: array<string, string>
+     *     InstanceId?: string|null,
+     *     NamespaceName?: string|null,
+     *     ServiceName?: string|null,
+     *     HealthStatus?: 'HEALTHY'|'UNHEALTHY'|'UNKNOWN'|null,
+     *     Attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

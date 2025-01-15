@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeAuditMitigationActionsTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $totalFindingsCount
- * @property int $failedFindingsCount
- * @property int $succeededFindingsCount
- * @property int $skippedFindingsCount
- * @property int $canceledFindingsCount
+ * @property int|null $totalFindingsCount
+ * @property int|null $failedFindingsCount
+ * @property int|null $succeededFindingsCount
+ * @property int|null $skippedFindingsCount
+ * @property int|null $canceledFindingsCount
  */
 class TaskStatisticsForAuditCheck extends Shape
 {
     /**
      * @param array{
-     *     totalFindingsCount?: int,
-     *     failedFindingsCount?: int,
-     *     succeededFindingsCount?: int,
-     *     skippedFindingsCount?: int,
-     *     canceledFindingsCount?: int
+     *     totalFindingsCount?: int|null,
+     *     failedFindingsCount?: int|null,
+     *     succeededFindingsCount?: int|null,
+     *     skippedFindingsCount?: int|null,
+     *     canceledFindingsCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FSx\CreateBackup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $FileSystemId
- * @property string $ClientRequestToken
- * @property list<Shapes\Tag> $Tags
- * @property string $VolumeId
+ * @property string|null $FileSystemId
+ * @property string|null $ClientRequestToken
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $VolumeId
  */
 class CreateBackupRequest extends Request
 {
     /**
      * @param array{
-     *     FileSystemId?: string,
-     *     ClientRequestToken?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     VolumeId?: string
+     *     FileSystemId?: string|null,
+     *     ClientRequestToken?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     VolumeId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

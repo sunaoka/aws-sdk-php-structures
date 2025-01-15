@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $medium
- * @property string $sizeLimit
+ * @property string|null $medium
+ * @property string|null $sizeLimit
  */
 class EksEmptyDir extends Shape
 {
     /**
      * @param array{
-     *     medium?: string,
-     *     sizeLimit?: string
+     *     medium?: string|null,
+     *     sizeLimit?: string|null
      * } $args
      */
     public function __construct(array $args = [])

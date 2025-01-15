@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListAppVersionResourceMappings\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $appRegistryAppName
- * @property string $eksSourceName
- * @property string $logicalStackName
+ * @property string|null $appRegistryAppName
+ * @property string|null $eksSourceName
+ * @property string|null $logicalStackName
  * @property 'CfnStack'|'Resource'|'AppRegistryApp'|'ResourceGroup'|'Terraform'|'EKS' $mappingType
  * @property PhysicalResourceId $physicalResourceId
- * @property string $resourceGroupName
- * @property string $resourceName
- * @property string $terraformSourceName
+ * @property string|null $resourceGroupName
+ * @property string|null $resourceName
+ * @property string|null $terraformSourceName
  */
 class ResourceMapping extends Shape
 {
     /**
      * @param array{
-     *     appRegistryAppName?: string,
-     *     eksSourceName?: string,
-     *     logicalStackName?: string,
+     *     appRegistryAppName?: string|null,
+     *     eksSourceName?: string|null,
+     *     logicalStackName?: string|null,
      *     mappingType: 'CfnStack'|'Resource'|'AppRegistryApp'|'ResourceGroup'|'Terraform'|'EKS',
      *     physicalResourceId: PhysicalResourceId,
-     *     resourceGroupName?: string,
-     *     resourceName?: string,
-     *     terraformSourceName?: string
+     *     resourceGroupName?: string|null,
+     *     resourceName?: string|null,
+     *     terraformSourceName?: string|null
      * } $args
      */
     public function __construct(array $args)

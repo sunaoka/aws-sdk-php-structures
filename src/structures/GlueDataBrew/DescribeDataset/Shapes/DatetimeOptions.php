@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Format
- * @property string $TimezoneOffset
- * @property string $LocaleCode
+ * @property string|null $TimezoneOffset
+ * @property string|null $LocaleCode
  */
 class DatetimeOptions extends Shape
 {
     /**
      * @param array{
      *     Format: string,
-     *     TimezoneOffset?: string,
-     *     LocaleCode?: string
+     *     TimezoneOffset?: string|null,
+     *     LocaleCode?: string|null
      * } $args
      */
     public function __construct(array $args)

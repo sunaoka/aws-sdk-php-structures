@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\CancelSpotFleetRequests\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CancelSpotFleetRequestsError $Error
- * @property string $SpotFleetRequestId
+ * @property CancelSpotFleetRequestsError|null $Error
+ * @property string|null $SpotFleetRequestId
  */
 class CancelSpotFleetRequestsErrorItem extends Shape
 {
     /**
      * @param array{
-     *     Error?: CancelSpotFleetRequestsError,
-     *     SpotFleetRequestId?: string
+     *     Error?: CancelSpotFleetRequestsError|null,
+     *     SpotFleetRequestId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

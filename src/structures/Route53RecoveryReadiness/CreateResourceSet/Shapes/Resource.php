@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Route53RecoveryReadiness\CreateResourceSet\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ComponentId
- * @property DNSTargetResource $DnsTargetResource
- * @property list<string> $ReadinessScopes
- * @property string $ResourceArn
+ * @property string|null $ComponentId
+ * @property DNSTargetResource|null $DnsTargetResource
+ * @property list<string>|null $ReadinessScopes
+ * @property string|null $ResourceArn
  */
 class Resource extends Shape
 {
     /**
      * @param array{
-     *     ComponentId?: string,
-     *     DnsTargetResource?: DNSTargetResource,
-     *     ReadinessScopes?: list<string>,
-     *     ResourceArn?: string
+     *     ComponentId?: string|null,
+     *     DnsTargetResource?: DNSTargetResource|null,
+     *     ReadinessScopes?: list<string>|null,
+     *     ResourceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

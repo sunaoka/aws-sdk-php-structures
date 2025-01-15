@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\GetBillEstimate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CostDifference $totalCostDifference
- * @property array<string, CostDifference> $serviceCostDifferences
+ * @property CostDifference|null $totalCostDifference
+ * @property array<string, CostDifference>|null $serviceCostDifferences
  */
 class BillEstimateCostSummary extends Shape
 {
     /**
      * @param array{
-     *     totalCostDifference?: CostDifference,
-     *     serviceCostDifferences?: array<string, CostDifference>
+     *     totalCostDifference?: CostDifference|null,
+     *     serviceCostDifferences?: array<string, CostDifference>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\AppSyncRuntime $runtime
  * @property string $code
  * @property string $context
- * @property string $function
+ * @property string|null $function
  */
 class EvaluateCodeRequest extends Request
 {
@@ -17,7 +17,7 @@ class EvaluateCodeRequest extends Request
      *     runtime: Shapes\AppSyncRuntime,
      *     code: string,
      *     context: string,
-     *     function?: string
+     *     function?: string|null
      * } $args
      */
     public function __construct(array $args)

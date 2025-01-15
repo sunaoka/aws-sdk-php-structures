@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Iam\GetServiceLastAccessedDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ActionName
- * @property string $LastAccessedEntity
- * @property \Aws\Api\DateTimeResult $LastAccessedTime
- * @property string $LastAccessedRegion
+ * @property string|null $ActionName
+ * @property string|null $LastAccessedEntity
+ * @property \Aws\Api\DateTimeResult|null $LastAccessedTime
+ * @property string|null $LastAccessedRegion
  */
 class TrackedActionLastAccessed extends Shape
 {
     /**
      * @param array{
-     *     ActionName?: string,
-     *     LastAccessedEntity?: string,
-     *     LastAccessedTime?: \Aws\Api\DateTimeResult,
-     *     LastAccessedRegion?: string
+     *     ActionName?: string|null,
+     *     LastAccessedEntity?: string|null,
+     *     LastAccessedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastAccessedRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

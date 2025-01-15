@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Chime\ListSupportedPhoneNumberCountries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CountryCode
- * @property list<'Local'|'TollFree'> $SupportedPhoneNumberTypes
+ * @property string|null $CountryCode
+ * @property list<'Local'|'TollFree'>|null $SupportedPhoneNumberTypes
  */
 class PhoneNumberCountry extends Shape
 {
     /**
      * @param array{
-     *     CountryCode?: string,
-     *     SupportedPhoneNumberTypes?: list<'Local'|'TollFree'>
+     *     CountryCode?: string|null,
+     *     SupportedPhoneNumberTypes?: list<'Local'|'TollFree'>|null
      * } $args
      */
     public function __construct(array $args = [])

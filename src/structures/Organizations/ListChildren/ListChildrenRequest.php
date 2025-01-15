@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ParentId
  * @property 'ACCOUNT'|'ORGANIZATIONAL_UNIT' $ChildType
- * @property string $NextToken
- * @property int<1, 20> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 20>|null $MaxResults
  */
 class ListChildrenRequest extends Request
 {
@@ -16,8 +16,8 @@ class ListChildrenRequest extends Request
      * @param array{
      *     ParentId: string,
      *     ChildType: 'ACCOUNT'|'ORGANIZATIONAL_UNIT',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 20>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 20>|null
      * } $args
      */
     public function __construct(array $args)

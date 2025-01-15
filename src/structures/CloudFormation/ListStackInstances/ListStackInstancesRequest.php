@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackSetName
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property list<Shapes\StackInstanceFilter> $Filters
- * @property string $StackInstanceAccount
- * @property string $StackInstanceRegion
- * @property 'SELF'|'DELEGATED_ADMIN' $CallAs
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property list<Shapes\StackInstanceFilter>|null $Filters
+ * @property string|null $StackInstanceAccount
+ * @property string|null $StackInstanceRegion
+ * @property 'SELF'|'DELEGATED_ADMIN'|null $CallAs
  */
 class ListStackInstancesRequest extends Request
 {
     /**
      * @param array{
      *     StackSetName: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     Filters?: list<Shapes\StackInstanceFilter>,
-     *     StackInstanceAccount?: string,
-     *     StackInstanceRegion?: string,
-     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     Filters?: list<Shapes\StackInstanceFilter>|null,
+     *     StackInstanceAccount?: string|null,
+     *     StackInstanceRegion?: string|null,
+     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'|null
      * } $args
      */
     public function __construct(array $args)

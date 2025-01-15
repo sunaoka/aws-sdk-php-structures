@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ecr\PutLifecyclePolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $registryId
+ * @property string|null $registryId
  * @property string $repositoryName
  * @property string $lifecyclePolicyText
  */
@@ -13,7 +13,7 @@ class PutLifecyclePolicyRequest extends Request
 {
     /**
      * @param array{
-     *     registryId?: string,
+     *     registryId?: string|null,
      *     repositoryName: string,
      *     lifecyclePolicyText: string
      * } $args

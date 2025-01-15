@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Iot\ListCertificatesByCA\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $certificateArn
- * @property string $certificateId
- * @property 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION' $status
- * @property 'DEFAULT'|'SNI_ONLY' $certificateMode
- * @property \Aws\Api\DateTimeResult $creationDate
+ * @property string|null $certificateArn
+ * @property string|null $certificateId
+ * @property 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION'|null $status
+ * @property 'DEFAULT'|'SNI_ONLY'|null $certificateMode
+ * @property \Aws\Api\DateTimeResult|null $creationDate
  */
 class Certificate extends Shape
 {
     /**
      * @param array{
-     *     certificateArn?: string,
-     *     certificateId?: string,
-     *     status?: 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION',
-     *     certificateMode?: 'DEFAULT'|'SNI_ONLY',
-     *     creationDate?: \Aws\Api\DateTimeResult
+     *     certificateArn?: string|null,
+     *     certificateId?: string|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|'REVOKED'|'PENDING_TRANSFER'|'REGISTER_INACTIVE'|'PENDING_ACTIVATION'|null,
+     *     certificateMode?: 'DEFAULT'|'SNI_ONLY'|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\ModifyListener\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Protocol
- * @property string $Port
- * @property string $Host
- * @property string $Path
- * @property string $Query
+ * @property string|null $Protocol
+ * @property string|null $Port
+ * @property string|null $Host
+ * @property string|null $Path
+ * @property string|null $Query
  * @property 'HTTP_301'|'HTTP_302' $StatusCode
  */
 class RedirectActionConfig extends Shape
 {
     /**
      * @param array{
-     *     Protocol?: string,
-     *     Port?: string,
-     *     Host?: string,
-     *     Path?: string,
-     *     Query?: string,
+     *     Protocol?: string|null,
+     *     Port?: string|null,
+     *     Host?: string|null,
+     *     Path?: string|null,
+     *     Query?: string|null,
      *     StatusCode: 'HTTP_301'|'HTTP_302'
      * } $args
      */

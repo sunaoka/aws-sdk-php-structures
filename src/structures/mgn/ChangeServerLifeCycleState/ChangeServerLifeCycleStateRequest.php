@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\mgn\ChangeServerLifeCycleState;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $accountID
+ * @property string|null $accountID
  * @property Shapes\ChangeServerLifeCycleStateSourceServerLifecycle $lifeCycle
  * @property string $sourceServerID
  */
@@ -13,7 +13,7 @@ class ChangeServerLifeCycleStateRequest extends Request
 {
     /**
      * @param array{
-     *     accountID?: string,
+     *     accountID?: string|null,
      *     lifeCycle: Shapes\ChangeServerLifeCycleStateSourceServerLifecycle,
      *     sourceServerID: string
      * } $args

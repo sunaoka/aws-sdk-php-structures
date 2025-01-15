@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property double $MaxImpact
- * @property double $TotalImpact
- * @property double $TotalActualSpend
- * @property double $TotalExpectedSpend
- * @property double $TotalImpactPercentage
+ * @property double|null $TotalImpact
+ * @property double|null $TotalActualSpend
+ * @property double|null $TotalExpectedSpend
+ * @property double|null $TotalImpactPercentage
  */
 class Impact extends Shape
 {
     /**
      * @param array{
      *     MaxImpact: double,
-     *     TotalImpact?: double,
-     *     TotalActualSpend?: double,
-     *     TotalExpectedSpend?: double,
-     *     TotalImpactPercentage?: double
+     *     TotalImpact?: double|null,
+     *     TotalActualSpend?: double|null,
+     *     TotalExpectedSpend?: double|null,
+     *     TotalImpactPercentage?: double|null
      * } $args
      */
     public function __construct(array $args)

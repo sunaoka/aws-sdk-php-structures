@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\OpsWorksCM\DisassociateNode;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NodeAssociationStatusToken
+ * @property string|null $NodeAssociationStatusToken
  */
 class DisassociateNodeResponse extends Response
 {

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property 'WORK_IN_PROGRESS'|'COMPLETED' $previewStatus
- * @property list<Shapes\ExclusionPreview> $exclusionPreviews
- * @property string $nextToken
+ * @property list<Shapes\ExclusionPreview>|null $exclusionPreviews
+ * @property string|null $nextToken
  */
 class GetExclusionsPreviewResponse extends Response
 {

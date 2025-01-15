@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $bucketName
- * @property string $keyPrefix
+ * @property string|null $keyPrefix
  */
 class S3Config extends Shape
 {
     /**
      * @param array{
      *     bucketName: string,
-     *     keyPrefix?: string
+     *     keyPrefix?: string|null
      * } $args
      */
     public function __construct(array $args)

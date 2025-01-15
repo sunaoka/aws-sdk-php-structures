@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TopicArn
  * @property string $Token
- * @property string $AuthenticateOnUnsubscribe
+ * @property string|null $AuthenticateOnUnsubscribe
  */
 class ConfirmSubscriptionRequest extends Request
 {
@@ -15,7 +15,7 @@ class ConfirmSubscriptionRequest extends Request
      * @param array{
      *     TopicArn: string,
      *     Token: string,
-     *     AuthenticateOnUnsubscribe?: string
+     *     AuthenticateOnUnsubscribe?: string|null
      * } $args
      */
     public function __construct(array $args)

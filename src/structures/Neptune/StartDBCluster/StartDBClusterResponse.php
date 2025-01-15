@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Neptune\StartDBCluster;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DBCluster $DBCluster
+ * @property Shapes\DBCluster|null $DBCluster
  */
 class StartDBClusterResponse extends Response
 {

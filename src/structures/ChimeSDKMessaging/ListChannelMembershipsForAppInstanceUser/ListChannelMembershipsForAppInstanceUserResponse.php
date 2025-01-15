@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\ListChannelMembershipsForAppI
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ChannelMembershipForAppInstanceUserSummary> $ChannelMemberships
- * @property string $NextToken
+ * @property list<Shapes\ChannelMembershipForAppInstanceUserSummary>|null $ChannelMemberships
+ * @property string|null $NextToken
  */
 class ListChannelMembershipsForAppInstanceUserResponse extends Response
 {

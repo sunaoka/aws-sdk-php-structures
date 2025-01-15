@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GraphArn
- * @property bool $AutoEnable
+ * @property bool|null $AutoEnable
  */
 class UpdateOrganizationConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     GraphArn: string,
-     *     AutoEnable?: bool
+     *     AutoEnable?: bool|null
      * } $args
      */
     public function __construct(array $args)

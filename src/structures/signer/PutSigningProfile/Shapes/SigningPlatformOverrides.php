@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\signer\PutSigningProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SigningConfigurationOverrides $signingConfiguration
- * @property 'JSON'|'JSONEmbedded'|'JSONDetached' $signingImageFormat
+ * @property SigningConfigurationOverrides|null $signingConfiguration
+ * @property 'JSON'|'JSONEmbedded'|'JSONDetached'|null $signingImageFormat
  */
 class SigningPlatformOverrides extends Shape
 {
     /**
      * @param array{
-     *     signingConfiguration?: SigningConfigurationOverrides,
-     *     signingImageFormat?: 'JSON'|'JSONEmbedded'|'JSONDetached'
+     *     signingConfiguration?: SigningConfigurationOverrides|null,
+     *     signingImageFormat?: 'JSON'|'JSONEmbedded'|'JSONDetached'|null
      * } $args
      */
     public function __construct(array $args = [])

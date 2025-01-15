@@ -5,30 +5,30 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\RestoreTableFromRecoveryPoin
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $activateCaseSensitiveIdentifier
+ * @property bool|null $activateCaseSensitiveIdentifier
  * @property string $namespaceName
  * @property string $newTableName
  * @property string $recoveryPointId
  * @property string $sourceDatabaseName
- * @property string $sourceSchemaName
+ * @property string|null $sourceSchemaName
  * @property string $sourceTableName
- * @property string $targetDatabaseName
- * @property string $targetSchemaName
+ * @property string|null $targetDatabaseName
+ * @property string|null $targetSchemaName
  * @property string $workgroupName
  */
 class RestoreTableFromRecoveryPointRequest extends Request
 {
     /**
      * @param array{
-     *     activateCaseSensitiveIdentifier?: bool,
+     *     activateCaseSensitiveIdentifier?: bool|null,
      *     namespaceName: string,
      *     newTableName: string,
      *     recoveryPointId: string,
      *     sourceDatabaseName: string,
-     *     sourceSchemaName?: string,
+     *     sourceSchemaName?: string|null,
      *     sourceTableName: string,
-     *     targetDatabaseName?: string,
-     *     targetSchemaName?: string,
+     *     targetDatabaseName?: string|null,
+     *     targetSchemaName?: string|null,
      *     workgroupName: string
      * } $args
      */

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectContactLens\ListRealtimeContactAnalysisS
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Content
+ * @property string|null $Content
  * @property 'FAILED'|'COMPLETED' $Status
- * @property 'QUOTA_EXCEEDED'|'INSUFFICIENT_CONVERSATION_CONTENT'|'FAILED_SAFETY_GUIDELINES'|'INVALID_ANALYSIS_CONFIGURATION'|'INTERNAL_ERROR' $FailureCode
+ * @property 'QUOTA_EXCEEDED'|'INSUFFICIENT_CONVERSATION_CONTENT'|'FAILED_SAFETY_GUIDELINES'|'INVALID_ANALYSIS_CONFIGURATION'|'INTERNAL_ERROR'|null $FailureCode
  */
 class PostContactSummary extends Shape
 {
     /**
      * @param array{
-     *     Content?: string,
+     *     Content?: string|null,
      *     Status: 'FAILED'|'COMPLETED',
-     *     FailureCode?: 'QUOTA_EXCEEDED'|'INSUFFICIENT_CONVERSATION_CONTENT'|'FAILED_SAFETY_GUIDELINES'|'INVALID_ANALYSIS_CONFIGURATION'|'INTERNAL_ERROR'
+     *     FailureCode?: 'QUOTA_EXCEEDED'|'INSUFFICIENT_CONVERSATION_CONTENT'|'FAILED_SAFETY_GUIDELINES'|'INVALID_ANALYSIS_CONFIGURATION'|'INTERNAL_ERROR'|null
      * } $args
      */
     public function __construct(array $args)

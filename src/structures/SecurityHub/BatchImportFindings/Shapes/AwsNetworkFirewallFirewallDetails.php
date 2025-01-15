@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $DeleteProtection
- * @property string $Description
- * @property string $FirewallArn
- * @property string $FirewallId
- * @property string $FirewallName
- * @property string $FirewallPolicyArn
- * @property bool $FirewallPolicyChangeProtection
- * @property bool $SubnetChangeProtection
- * @property list<AwsNetworkFirewallFirewallSubnetMappingsDetails> $SubnetMappings
- * @property string $VpcId
+ * @property bool|null $DeleteProtection
+ * @property string|null $Description
+ * @property string|null $FirewallArn
+ * @property string|null $FirewallId
+ * @property string|null $FirewallName
+ * @property string|null $FirewallPolicyArn
+ * @property bool|null $FirewallPolicyChangeProtection
+ * @property bool|null $SubnetChangeProtection
+ * @property list<AwsNetworkFirewallFirewallSubnetMappingsDetails>|null $SubnetMappings
+ * @property string|null $VpcId
  */
 class AwsNetworkFirewallFirewallDetails extends Shape
 {
     /**
      * @param array{
-     *     DeleteProtection?: bool,
-     *     Description?: string,
-     *     FirewallArn?: string,
-     *     FirewallId?: string,
-     *     FirewallName?: string,
-     *     FirewallPolicyArn?: string,
-     *     FirewallPolicyChangeProtection?: bool,
-     *     SubnetChangeProtection?: bool,
-     *     SubnetMappings?: list<AwsNetworkFirewallFirewallSubnetMappingsDetails>,
-     *     VpcId?: string
+     *     DeleteProtection?: bool|null,
+     *     Description?: string|null,
+     *     FirewallArn?: string|null,
+     *     FirewallId?: string|null,
+     *     FirewallName?: string|null,
+     *     FirewallPolicyArn?: string|null,
+     *     FirewallPolicyChangeProtection?: bool|null,
+     *     SubnetChangeProtection?: bool|null,
+     *     SubnetMappings?: list<AwsNetworkFirewallFirewallSubnetMappingsDetails>|null,
+     *     VpcId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceCreditSpecifications\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceId
- * @property string $CpuCredits
+ * @property string|null $InstanceId
+ * @property string|null $CpuCredits
  */
 class InstanceCreditSpecification extends Shape
 {
     /**
      * @param array{
-     *     InstanceId?: string,
-     *     CpuCredits?: string
+     *     InstanceId?: string|null,
+     *     CpuCredits?: string|null
      * } $args
      */
     public function __construct(array $args = [])

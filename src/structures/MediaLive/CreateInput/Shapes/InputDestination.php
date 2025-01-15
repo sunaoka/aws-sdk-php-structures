@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateInput\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Ip
- * @property string $Port
- * @property string $Url
- * @property InputDestinationVpc $Vpc
- * @property string $Network
- * @property list<InputDestinationRoute> $NetworkRoutes
+ * @property string|null $Ip
+ * @property string|null $Port
+ * @property string|null $Url
+ * @property InputDestinationVpc|null $Vpc
+ * @property string|null $Network
+ * @property list<InputDestinationRoute>|null $NetworkRoutes
  */
 class InputDestination extends Shape
 {
     /**
      * @param array{
-     *     Ip?: string,
-     *     Port?: string,
-     *     Url?: string,
-     *     Vpc?: InputDestinationVpc,
-     *     Network?: string,
-     *     NetworkRoutes?: list<InputDestinationRoute>
+     *     Ip?: string|null,
+     *     Port?: string|null,
+     *     Url?: string|null,
+     *     Vpc?: InputDestinationVpc|null,
+     *     Network?: string|null,
+     *     NetworkRoutes?: list<InputDestinationRoute>|null
      * } $args
      */
     public function __construct(array $args = [])

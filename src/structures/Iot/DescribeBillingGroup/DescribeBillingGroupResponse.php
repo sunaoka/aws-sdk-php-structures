@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeBillingGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $billingGroupName
- * @property string $billingGroupId
- * @property string $billingGroupArn
- * @property int $version
- * @property Shapes\BillingGroupProperties $billingGroupProperties
- * @property Shapes\BillingGroupMetadata $billingGroupMetadata
+ * @property string|null $billingGroupName
+ * @property string|null $billingGroupId
+ * @property string|null $billingGroupArn
+ * @property int|null $version
+ * @property Shapes\BillingGroupProperties|null $billingGroupProperties
+ * @property Shapes\BillingGroupMetadata|null $billingGroupMetadata
  */
 class DescribeBillingGroupResponse extends Response
 {

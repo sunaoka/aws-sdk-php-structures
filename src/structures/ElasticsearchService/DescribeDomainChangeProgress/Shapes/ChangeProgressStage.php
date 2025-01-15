@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DescribeDomainChangeProgre
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Status
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $LastUpdated
+ * @property string|null $Name
+ * @property string|null $Status
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
  */
 class ChangeProgressStage extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Status?: string,
-     *     Description?: string,
-     *     LastUpdated?: \Aws\Api\DateTimeResult
+     *     Name?: string|null,
+     *     Status?: string|null,
+     *     Description?: string|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

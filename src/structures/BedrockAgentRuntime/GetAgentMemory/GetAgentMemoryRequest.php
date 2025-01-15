@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $agentAliasId
  * @property string $agentId
- * @property int<1, 1000> $maxItems
+ * @property int<1, 1000>|null $maxItems
  * @property string $memoryId
  * @property 'SESSION_SUMMARY' $memoryType
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class GetAgentMemoryRequest extends Request
 {
@@ -18,10 +18,10 @@ class GetAgentMemoryRequest extends Request
      * @param array{
      *     agentAliasId: string,
      *     agentId: string,
-     *     maxItems?: int<1, 1000>,
+     *     maxItems?: int<1, 1000>|null,
      *     memoryId: string,
      *     memoryType: 'SESSION_SUMMARY',
-     *     nextToken?: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

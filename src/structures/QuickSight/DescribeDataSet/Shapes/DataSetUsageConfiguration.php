@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $DisableUseAsDirectQuerySource
- * @property bool $DisableUseAsImportedSource
+ * @property bool|null $DisableUseAsDirectQuerySource
+ * @property bool|null $DisableUseAsImportedSource
  */
 class DataSetUsageConfiguration extends Shape
 {
     /**
      * @param array{
-     *     DisableUseAsDirectQuerySource?: bool,
-     *     DisableUseAsImportedSource?: bool
+     *     DisableUseAsDirectQuerySource?: bool|null,
+     *     DisableUseAsImportedSource?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
- * @property list<Shapes\ApiStage> $apiStages
- * @property Shapes\ThrottleSettings $throttle
- * @property Shapes\QuotaSettings $quota
- * @property array<string, string> $tags
+ * @property string|null $description
+ * @property list<Shapes\ApiStage>|null $apiStages
+ * @property Shapes\ThrottleSettings|null $throttle
+ * @property Shapes\QuotaSettings|null $quota
+ * @property array<string, string>|null $tags
  */
 class CreateUsagePlanRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     apiStages?: list<Shapes\ApiStage>,
-     *     throttle?: Shapes\ThrottleSettings,
-     *     quota?: Shapes\QuotaSettings,
-     *     tags?: array<string, string>
+     *     description?: string|null,
+     *     apiStages?: list<Shapes\ApiStage>|null,
+     *     throttle?: Shapes\ThrottleSettings|null,
+     *     quota?: Shapes\QuotaSettings|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

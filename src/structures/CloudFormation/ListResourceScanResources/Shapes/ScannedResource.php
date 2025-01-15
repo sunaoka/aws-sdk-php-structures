@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ListResourceScanResources\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceType
- * @property array<string, string> $ResourceIdentifier
- * @property bool $ManagedByStack
+ * @property string|null $ResourceType
+ * @property array<string, string>|null $ResourceIdentifier
+ * @property bool|null $ManagedByStack
  */
 class ScannedResource extends Shape
 {
     /**
      * @param array{
-     *     ResourceType?: string,
-     *     ResourceIdentifier?: array<string, string>,
-     *     ManagedByStack?: bool
+     *     ResourceType?: string|null,
+     *     ResourceIdentifier?: array<string, string>|null,
+     *     ManagedByStack?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

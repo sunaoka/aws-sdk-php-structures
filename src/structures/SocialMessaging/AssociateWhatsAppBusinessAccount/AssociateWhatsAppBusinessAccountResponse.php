@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SocialMessaging\AssociateWhatsAppBusinessAccoun
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\WhatsAppSignupCallbackResult $signupCallbackResult
- * @property int $statusCode
+ * @property Shapes\WhatsAppSignupCallbackResult|null $signupCallbackResult
+ * @property int|null $statusCode
  */
 class AssociateWhatsAppBusinessAccountResponse extends Response
 {

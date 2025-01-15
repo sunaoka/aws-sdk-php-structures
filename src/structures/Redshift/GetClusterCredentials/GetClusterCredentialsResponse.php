@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Redshift\GetClusterCredentials;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DbUser
- * @property string $DbPassword
- * @property \Aws\Api\DateTimeResult $Expiration
+ * @property string|null $DbUser
+ * @property string|null $DbPassword
+ * @property \Aws\Api\DateTimeResult|null $Expiration
  */
 class GetClusterCredentialsResponse extends Response
 {

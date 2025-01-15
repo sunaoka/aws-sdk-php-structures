@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\Scheduler\DeleteSchedule;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
- * @property string $GroupName
+ * @property string|null $ClientToken
+ * @property string|null $GroupName
  * @property string $Name
  */
 class DeleteScheduleRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
-     *     GroupName?: string,
+     *     ClientToken?: string|null,
+     *     GroupName?: string|null,
      *     Name: string
      * } $args
      */

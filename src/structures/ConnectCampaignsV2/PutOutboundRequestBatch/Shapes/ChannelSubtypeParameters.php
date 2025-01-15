@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\PutOutboundRequestBatch\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TelephonyChannelSubtypeParameters $telephony
- * @property SmsChannelSubtypeParameters $sms
- * @property EmailChannelSubtypeParameters $email
+ * @property TelephonyChannelSubtypeParameters|null $telephony
+ * @property SmsChannelSubtypeParameters|null $sms
+ * @property EmailChannelSubtypeParameters|null $email
  */
 class ChannelSubtypeParameters extends Shape
 {
     /**
      * @param array{
-     *     telephony?: TelephonyChannelSubtypeParameters,
-     *     sms?: SmsChannelSubtypeParameters,
-     *     email?: EmailChannelSubtypeParameters
+     *     telephony?: TelephonyChannelSubtypeParameters|null,
+     *     sms?: SmsChannelSubtypeParameters|null,
+     *     email?: EmailChannelSubtypeParameters|null
      * } $args
      */
     public function __construct(array $args = [])

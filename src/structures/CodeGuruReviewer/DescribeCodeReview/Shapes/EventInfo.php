@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeGuruReviewer\DescribeCodeReview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $State
+ * @property string|null $Name
+ * @property string|null $State
  */
 class EventInfo extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     State?: string
+     *     Name?: string|null,
+     *     State?: string|null
      * } $args
      */
     public function __construct(array $args = [])

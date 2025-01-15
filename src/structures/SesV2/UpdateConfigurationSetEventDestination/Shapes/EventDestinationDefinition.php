@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\SesV2\UpdateConfigurationSetEventDestination\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property list<'SEND'|'REJECT'|'BOUNCE'|'COMPLAINT'|'DELIVERY'|'OPEN'|'CLICK'|'RENDERING_FAILURE'|'DELIVERY_DELAY'|'SUBSCRIPTION'> $MatchingEventTypes
- * @property KinesisFirehoseDestination $KinesisFirehoseDestination
- * @property CloudWatchDestination $CloudWatchDestination
- * @property SnsDestination $SnsDestination
- * @property EventBridgeDestination $EventBridgeDestination
- * @property PinpointDestination $PinpointDestination
+ * @property bool|null $Enabled
+ * @property list<'SEND'|'REJECT'|'BOUNCE'|'COMPLAINT'|'DELIVERY'|'OPEN'|'CLICK'|'RENDERING_FAILURE'|'DELIVERY_DELAY'|'SUBSCRIPTION'>|null $MatchingEventTypes
+ * @property KinesisFirehoseDestination|null $KinesisFirehoseDestination
+ * @property CloudWatchDestination|null $CloudWatchDestination
+ * @property SnsDestination|null $SnsDestination
+ * @property EventBridgeDestination|null $EventBridgeDestination
+ * @property PinpointDestination|null $PinpointDestination
  */
 class EventDestinationDefinition extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     MatchingEventTypes?: list<'SEND'|'REJECT'|'BOUNCE'|'COMPLAINT'|'DELIVERY'|'OPEN'|'CLICK'|'RENDERING_FAILURE'|'DELIVERY_DELAY'|'SUBSCRIPTION'>,
-     *     KinesisFirehoseDestination?: KinesisFirehoseDestination,
-     *     CloudWatchDestination?: CloudWatchDestination,
-     *     SnsDestination?: SnsDestination,
-     *     EventBridgeDestination?: EventBridgeDestination,
-     *     PinpointDestination?: PinpointDestination
+     *     Enabled?: bool|null,
+     *     MatchingEventTypes?: list<'SEND'|'REJECT'|'BOUNCE'|'COMPLAINT'|'DELIVERY'|'OPEN'|'CLICK'|'RENDERING_FAILURE'|'DELIVERY_DELAY'|'SUBSCRIPTION'>|null,
+     *     KinesisFirehoseDestination?: KinesisFirehoseDestination|null,
+     *     CloudWatchDestination?: CloudWatchDestination|null,
+     *     SnsDestination?: SnsDestination|null,
+     *     EventBridgeDestination?: EventBridgeDestination|null,
+     *     PinpointDestination?: PinpointDestination|null
      * } $args
      */
     public function __construct(array $args = [])

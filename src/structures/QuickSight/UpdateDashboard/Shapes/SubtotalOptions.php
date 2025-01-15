@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $TotalsVisibility
- * @property string $CustomLabel
- * @property 'ALL'|'CUSTOM'|'LAST' $FieldLevel
- * @property list<PivotTableFieldSubtotalOptions> $FieldLevelOptions
- * @property TableCellStyle $TotalCellStyle
- * @property TableCellStyle $ValueCellStyle
- * @property TableCellStyle $MetricHeaderCellStyle
- * @property list<TableStyleTarget> $StyleTargets
+ * @property 'HIDDEN'|'VISIBLE'|null $TotalsVisibility
+ * @property string|null $CustomLabel
+ * @property 'ALL'|'CUSTOM'|'LAST'|null $FieldLevel
+ * @property list<PivotTableFieldSubtotalOptions>|null $FieldLevelOptions
+ * @property TableCellStyle|null $TotalCellStyle
+ * @property TableCellStyle|null $ValueCellStyle
+ * @property TableCellStyle|null $MetricHeaderCellStyle
+ * @property list<TableStyleTarget>|null $StyleTargets
  */
 class SubtotalOptions extends Shape
 {
     /**
      * @param array{
-     *     TotalsVisibility?: 'HIDDEN'|'VISIBLE',
-     *     CustomLabel?: string,
-     *     FieldLevel?: 'ALL'|'CUSTOM'|'LAST',
-     *     FieldLevelOptions?: list<PivotTableFieldSubtotalOptions>,
-     *     TotalCellStyle?: TableCellStyle,
-     *     ValueCellStyle?: TableCellStyle,
-     *     MetricHeaderCellStyle?: TableCellStyle,
-     *     StyleTargets?: list<TableStyleTarget>
+     *     TotalsVisibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     CustomLabel?: string|null,
+     *     FieldLevel?: 'ALL'|'CUSTOM'|'LAST'|null,
+     *     FieldLevelOptions?: list<PivotTableFieldSubtotalOptions>|null,
+     *     TotalCellStyle?: TableCellStyle|null,
+     *     ValueCellStyle?: TableCellStyle|null,
+     *     MetricHeaderCellStyle?: TableCellStyle|null,
+     *     StyleTargets?: list<TableStyleTarget>|null
      * } $args
      */
     public function __construct(array $args = [])

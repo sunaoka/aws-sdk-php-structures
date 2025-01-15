@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DataSourceArn
- * @property UploadSettings $UploadSettings
+ * @property UploadSettings|null $UploadSettings
  * @property list<InputColumn> $InputColumns
  */
 class S3Source extends Shape
@@ -14,7 +14,7 @@ class S3Source extends Shape
     /**
      * @param array{
      *     DataSourceArn: string,
-     *     UploadSettings?: UploadSettings,
+     *     UploadSettings?: UploadSettings|null,
      *     InputColumns: list<InputColumn>
      * } $args
      */

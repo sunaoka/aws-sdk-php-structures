@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Iot\ListTopicRules\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ruleArn
- * @property string $ruleName
- * @property string $topicPattern
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property bool $ruleDisabled
+ * @property string|null $ruleArn
+ * @property string|null $ruleName
+ * @property string|null $topicPattern
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property bool|null $ruleDisabled
  */
 class TopicRuleListItem extends Shape
 {
     /**
      * @param array{
-     *     ruleArn?: string,
-     *     ruleName?: string,
-     *     topicPattern?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     ruleDisabled?: bool
+     *     ruleArn?: string|null,
+     *     ruleName?: string|null,
+     *     topicPattern?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     ruleDisabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\HubInfo> $HubSummaries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListHubsResponse extends Response
 {

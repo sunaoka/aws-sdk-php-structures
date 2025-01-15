@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateFeatureGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OnlineStoreSecurityConfig $SecurityConfig
- * @property bool $EnableOnlineStore
- * @property TtlDuration $TtlDuration
- * @property 'Standard'|'InMemory' $StorageType
+ * @property OnlineStoreSecurityConfig|null $SecurityConfig
+ * @property bool|null $EnableOnlineStore
+ * @property TtlDuration|null $TtlDuration
+ * @property 'Standard'|'InMemory'|null $StorageType
  */
 class OnlineStoreConfig extends Shape
 {
     /**
      * @param array{
-     *     SecurityConfig?: OnlineStoreSecurityConfig,
-     *     EnableOnlineStore?: bool,
-     *     TtlDuration?: TtlDuration,
-     *     StorageType?: 'Standard'|'InMemory'
+     *     SecurityConfig?: OnlineStoreSecurityConfig|null,
+     *     EnableOnlineStore?: bool|null,
+     *     TtlDuration?: TtlDuration|null,
+     *     StorageType?: 'Standard'|'InMemory'|null
      * } $args
      */
     public function __construct(array $args = [])

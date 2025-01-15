@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $idMappingTableIdentifier
  * @property string $membershipIdentifier
- * @property string $description
- * @property string $kmsKeyArn
+ * @property string|null $description
+ * @property string|null $kmsKeyArn
  */
 class UpdateIdMappingTableRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateIdMappingTableRequest extends Request
      * @param array{
      *     idMappingTableIdentifier: string,
      *     membershipIdentifier: string,
-     *     description?: string,
-     *     kmsKeyArn?: string
+     *     description?: string|null,
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

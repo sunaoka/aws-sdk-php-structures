@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\ListRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property list<RecommendationRelatedEventResource> $Resources
+ * @property string|null $Name
+ * @property list<RecommendationRelatedEventResource>|null $Resources
  */
 class RecommendationRelatedEvent extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Resources?: list<RecommendationRelatedEventResource>
+     *     Name?: string|null,
+     *     Resources?: list<RecommendationRelatedEventResource>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\LexRuntimeV2\GetSession;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $sessionId
- * @property list<Shapes\Message> $messages
- * @property list<Shapes\Interpretation> $interpretations
- * @property Shapes\SessionState $sessionState
+ * @property string|null $sessionId
+ * @property list<Shapes\Message>|null $messages
+ * @property list<Shapes\Interpretation>|null $interpretations
+ * @property Shapes\SessionState|null $sessionState
  */
 class GetSessionResponse extends Response
 {

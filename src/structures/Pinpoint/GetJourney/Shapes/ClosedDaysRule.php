@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Pinpoint\GetJourney\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $StartDateTime
- * @property string $EndDateTime
+ * @property string|null $Name
+ * @property string|null $StartDateTime
+ * @property string|null $EndDateTime
  */
 class ClosedDaysRule extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     StartDateTime?: string,
-     *     EndDateTime?: string
+     *     Name?: string|null,
+     *     StartDateTime?: string|null,
+     *     EndDateTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

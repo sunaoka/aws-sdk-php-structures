@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\DescribeProject\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 5000> $Size
+ * @property int<1, 5000>|null $Size
  * @property 'FIRST_N'|'LAST_N'|'RANDOM' $Type
  */
 class Sample extends Shape
 {
     /**
      * @param array{
-     *     Size?: int<1, 5000>,
+     *     Size?: int<1, 5000>|null,
      *     Type: 'FIRST_N'|'LAST_N'|'RANDOM'
      * } $args
      */

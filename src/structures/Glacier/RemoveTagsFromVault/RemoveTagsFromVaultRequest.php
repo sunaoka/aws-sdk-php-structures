@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $accountId
  * @property string $vaultName
- * @property list<string> $TagKeys
+ * @property list<string>|null $TagKeys
  */
 class RemoveTagsFromVaultRequest extends Request
 {
@@ -15,7 +15,7 @@ class RemoveTagsFromVaultRequest extends Request
      * @param array{
      *     accountId: string,
      *     vaultName: string,
-     *     TagKeys?: list<string>
+     *     TagKeys?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

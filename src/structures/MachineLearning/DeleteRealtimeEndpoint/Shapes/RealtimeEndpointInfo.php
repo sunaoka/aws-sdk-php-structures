@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MachineLearning\DeleteRealtimeEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $PeakRequestsPerSecond
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $EndpointUrl
- * @property 'NONE'|'READY'|'UPDATING'|'FAILED' $EndpointStatus
+ * @property int|null $PeakRequestsPerSecond
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $EndpointUrl
+ * @property 'NONE'|'READY'|'UPDATING'|'FAILED'|null $EndpointStatus
  */
 class RealtimeEndpointInfo extends Shape
 {
     /**
      * @param array{
-     *     PeakRequestsPerSecond?: int,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     EndpointUrl?: string,
-     *     EndpointStatus?: 'NONE'|'READY'|'UPDATING'|'FAILED'
+     *     PeakRequestsPerSecond?: int|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     EndpointUrl?: string|null,
+     *     EndpointStatus?: 'NONE'|'READY'|'UPDATING'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

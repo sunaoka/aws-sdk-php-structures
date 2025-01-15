@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Personalize\UpdateSolution;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $solutionArn
+ * @property string|null $solutionArn
  */
 class UpdateSolutionResponse extends Response
 {

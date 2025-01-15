@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTEvents\StartDetectorModelAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Event> $events
+ * @property list<Event>|null $events
  */
 class OnEnterLifecycle extends Shape
 {
     /**
-     * @param array{events?: list<Event>} $args
+     * @param array{events?: list<Event>|null} $args
      */
     public function __construct(array $args = [])
     {

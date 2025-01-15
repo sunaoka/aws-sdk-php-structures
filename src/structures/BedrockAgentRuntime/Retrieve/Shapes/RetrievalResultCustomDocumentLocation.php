@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\Retrieve\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
+ * @property string|null $id
  */
 class RetrievalResultCustomDocumentLocation extends Shape
 {
     /**
-     * @param array{id?: string} $args
+     * @param array{id?: string|null} $args
      */
     public function __construct(array $args = [])
     {

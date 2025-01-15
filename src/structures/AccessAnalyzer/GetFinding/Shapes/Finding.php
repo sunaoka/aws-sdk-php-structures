@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property array<string, string> $principal
- * @property list<string> $action
- * @property string $resource
- * @property bool $isPublic
+ * @property array<string, string>|null $principal
+ * @property list<string>|null $action
+ * @property string|null $resource
+ * @property bool|null $isPublic
  * @property 'AWS::S3::Bucket'|'AWS::IAM::Role'|'AWS::SQS::Queue'|'AWS::Lambda::Function'|'AWS::Lambda::LayerVersion'|'AWS::KMS::Key'|'AWS::SecretsManager::Secret'|'AWS::EFS::FileSystem'|'AWS::EC2::Snapshot'|'AWS::ECR::Repository'|'AWS::RDS::DBSnapshot'|'AWS::RDS::DBClusterSnapshot'|'AWS::SNS::Topic'|'AWS::S3Express::DirectoryBucket'|'AWS::DynamoDB::Table'|'AWS::DynamoDB::Stream'|'AWS::IAM::User' $resourceType
  * @property array<string, string> $condition
  * @property \Aws\Api\DateTimeResult $createdAt
@@ -17,19 +17,19 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $updatedAt
  * @property 'ACTIVE'|'ARCHIVED'|'RESOLVED' $status
  * @property string $resourceOwnerAccount
- * @property string $error
- * @property list<FindingSource> $sources
- * @property 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE' $resourceControlPolicyRestriction
+ * @property string|null $error
+ * @property list<FindingSource>|null $sources
+ * @property 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|null $resourceControlPolicyRestriction
  */
 class Finding extends Shape
 {
     /**
      * @param array{
      *     id: string,
-     *     principal?: array<string, string>,
-     *     action?: list<string>,
-     *     resource?: string,
-     *     isPublic?: bool,
+     *     principal?: array<string, string>|null,
+     *     action?: list<string>|null,
+     *     resource?: string|null,
+     *     isPublic?: bool|null,
      *     resourceType: 'AWS::S3::Bucket'|'AWS::IAM::Role'|'AWS::SQS::Queue'|'AWS::Lambda::Function'|'AWS::Lambda::LayerVersion'|'AWS::KMS::Key'|'AWS::SecretsManager::Secret'|'AWS::EFS::FileSystem'|'AWS::EC2::Snapshot'|'AWS::ECR::Repository'|'AWS::RDS::DBSnapshot'|'AWS::RDS::DBClusterSnapshot'|'AWS::SNS::Topic'|'AWS::S3Express::DirectoryBucket'|'AWS::DynamoDB::Table'|'AWS::DynamoDB::Stream'|'AWS::IAM::User',
      *     condition: array<string, string>,
      *     createdAt: \Aws\Api\DateTimeResult,
@@ -37,9 +37,9 @@ class Finding extends Shape
      *     updatedAt: \Aws\Api\DateTimeResult,
      *     status: 'ACTIVE'|'ARCHIVED'|'RESOLVED',
      *     resourceOwnerAccount: string,
-     *     error?: string,
-     *     sources?: list<FindingSource>,
-     *     resourceControlPolicyRestriction?: 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'
+     *     error?: string|null,
+     *     sources?: list<FindingSource>|null,
+     *     resourceControlPolicyRestriction?: 'APPLICABLE'|'FAILED_TO_EVALUATE_RCP'|'NOT_APPLICABLE'|null
      * } $args
      */
     public function __construct(array $args)

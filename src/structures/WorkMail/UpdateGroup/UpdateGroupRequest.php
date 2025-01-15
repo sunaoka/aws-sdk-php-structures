@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $OrganizationId
  * @property string $GroupId
- * @property bool $HiddenFromGlobalAddressList
+ * @property bool|null $HiddenFromGlobalAddressList
  */
 class UpdateGroupRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateGroupRequest extends Request
      * @param array{
      *     OrganizationId: string,
      *     GroupId: string,
-     *     HiddenFromGlobalAddressList?: bool
+     *     HiddenFromGlobalAddressList?: bool|null
      * } $args
      */
     public function __construct(array $args)

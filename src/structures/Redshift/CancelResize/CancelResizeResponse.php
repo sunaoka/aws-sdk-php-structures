@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\Redshift\CancelResize;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TargetNodeType
- * @property int $TargetNumberOfNodes
- * @property string $TargetClusterType
- * @property string $Status
- * @property list<string> $ImportTablesCompleted
- * @property list<string> $ImportTablesInProgress
- * @property list<string> $ImportTablesNotStarted
- * @property double $AvgResizeRateInMegaBytesPerSecond
- * @property int $TotalResizeDataInMegaBytes
- * @property int $ProgressInMegaBytes
- * @property int $ElapsedTimeInSeconds
- * @property int $EstimatedTimeToCompletionInSeconds
- * @property string $ResizeType
- * @property string $Message
- * @property string $TargetEncryptionType
- * @property double $DataTransferProgressPercent
+ * @property string|null $TargetNodeType
+ * @property int|null $TargetNumberOfNodes
+ * @property string|null $TargetClusterType
+ * @property string|null $Status
+ * @property list<string>|null $ImportTablesCompleted
+ * @property list<string>|null $ImportTablesInProgress
+ * @property list<string>|null $ImportTablesNotStarted
+ * @property double|null $AvgResizeRateInMegaBytesPerSecond
+ * @property int|null $TotalResizeDataInMegaBytes
+ * @property int|null $ProgressInMegaBytes
+ * @property int|null $ElapsedTimeInSeconds
+ * @property int|null $EstimatedTimeToCompletionInSeconds
+ * @property string|null $ResizeType
+ * @property string|null $Message
+ * @property string|null $TargetEncryptionType
+ * @property double|null $DataTransferProgressPercent
  */
 class CancelResizeResponse extends Response
 {

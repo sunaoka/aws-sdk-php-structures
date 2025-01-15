@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\FIS\GetExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $actionId
- * @property string $description
- * @property array<string, string> $parameters
- * @property array<string, string> $targets
- * @property list<string> $startAfter
- * @property ExperimentActionState $state
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property string|null $actionId
+ * @property string|null $description
+ * @property array<string, string>|null $parameters
+ * @property array<string, string>|null $targets
+ * @property list<string>|null $startAfter
+ * @property ExperimentActionState|null $state
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  */
 class ExperimentAction extends Shape
 {
     /**
      * @param array{
-     *     actionId?: string,
-     *     description?: string,
-     *     parameters?: array<string, string>,
-     *     targets?: array<string, string>,
-     *     startAfter?: list<string>,
-     *     state?: ExperimentActionState,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult
+     *     actionId?: string|null,
+     *     description?: string|null,
+     *     parameters?: array<string, string>|null,
+     *     targets?: array<string, string>|null,
+     *     startAfter?: list<string>|null,
+     *     state?: ExperimentActionState|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

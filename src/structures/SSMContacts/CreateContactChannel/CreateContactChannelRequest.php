@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'SMS'|'VOICE'|'EMAIL' $Type
  * @property Shapes\ContactChannelAddress $DeliveryAddress
- * @property bool $DeferActivation
- * @property string $IdempotencyToken
+ * @property bool|null $DeferActivation
+ * @property string|null $IdempotencyToken
  */
 class CreateContactChannelRequest extends Request
 {
@@ -20,8 +20,8 @@ class CreateContactChannelRequest extends Request
      *     Name: string,
      *     Type: 'SMS'|'VOICE'|'EMAIL',
      *     DeliveryAddress: Shapes\ContactChannelAddress,
-     *     DeferActivation?: bool,
-     *     IdempotencyToken?: string
+     *     DeferActivation?: bool|null,
+     *     IdempotencyToken?: string|null
      * } $args
      */
     public function __construct(array $args)

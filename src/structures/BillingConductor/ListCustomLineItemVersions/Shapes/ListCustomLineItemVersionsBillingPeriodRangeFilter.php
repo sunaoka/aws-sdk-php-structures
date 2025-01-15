@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListCustomLineItemVersions\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StartBillingPeriod
- * @property string $EndBillingPeriod
+ * @property string|null $StartBillingPeriod
+ * @property string|null $EndBillingPeriod
  */
 class ListCustomLineItemVersionsBillingPeriodRangeFilter extends Shape
 {
     /**
      * @param array{
-     *     StartBillingPeriod?: string,
-     *     EndBillingPeriod?: string
+     *     StartBillingPeriod?: string|null,
+     *     EndBillingPeriod?: string|null
      * } $args
      */
     public function __construct(array $args = [])

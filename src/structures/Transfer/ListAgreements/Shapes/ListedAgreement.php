@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Transfer\ListAgreements\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $AgreementId
- * @property string $Description
- * @property 'ACTIVE'|'INACTIVE' $Status
- * @property string $ServerId
- * @property string $LocalProfileId
- * @property string $PartnerProfileId
+ * @property string|null $Arn
+ * @property string|null $AgreementId
+ * @property string|null $Description
+ * @property 'ACTIVE'|'INACTIVE'|null $Status
+ * @property string|null $ServerId
+ * @property string|null $LocalProfileId
+ * @property string|null $PartnerProfileId
  */
 class ListedAgreement extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     AgreementId?: string,
-     *     Description?: string,
-     *     Status?: 'ACTIVE'|'INACTIVE',
-     *     ServerId?: string,
-     *     LocalProfileId?: string,
-     *     PartnerProfileId?: string
+     *     Arn?: string|null,
+     *     AgreementId?: string|null,
+     *     Description?: string|null,
+     *     Status?: 'ACTIVE'|'INACTIVE'|null,
+     *     ServerId?: string|null,
+     *     LocalProfileId?: string|null,
+     *     PartnerProfileId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

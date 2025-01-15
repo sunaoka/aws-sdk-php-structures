@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Swf\GetWorkflowExecutionHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $input
+ * @property string|null $input
  * @property int $decisionTaskCompletedEventId
  * @property string $newExecutionRunId
- * @property string $executionStartToCloseTimeout
+ * @property string|null $executionStartToCloseTimeout
  * @property TaskList $taskList
- * @property string $taskPriority
- * @property string $taskStartToCloseTimeout
+ * @property string|null $taskPriority
+ * @property string|null $taskStartToCloseTimeout
  * @property 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON' $childPolicy
- * @property list<string> $tagList
+ * @property list<string>|null $tagList
  * @property WorkflowType $workflowType
- * @property string $lambdaRole
+ * @property string|null $lambdaRole
  */
 class WorkflowExecutionContinuedAsNewEventAttributes extends Shape
 {
     /**
      * @param array{
-     *     input?: string,
+     *     input?: string|null,
      *     decisionTaskCompletedEventId: int,
      *     newExecutionRunId: string,
-     *     executionStartToCloseTimeout?: string,
+     *     executionStartToCloseTimeout?: string|null,
      *     taskList: TaskList,
-     *     taskPriority?: string,
-     *     taskStartToCloseTimeout?: string,
+     *     taskPriority?: string|null,
+     *     taskStartToCloseTimeout?: string|null,
      *     childPolicy: 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON',
-     *     tagList?: list<string>,
+     *     tagList?: list<string>|null,
      *     workflowType: WorkflowType,
-     *     lambdaRole?: string
+     *     lambdaRole?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServerlessApplicationRepository\CreateCloudForm
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MonitoringTimeInMinutes
- * @property list<RollbackTrigger> $RollbackTriggers
+ * @property int|null $MonitoringTimeInMinutes
+ * @property list<RollbackTrigger>|null $RollbackTriggers
  */
 class RollbackConfiguration extends Shape
 {
     /**
      * @param array{
-     *     MonitoringTimeInMinutes?: int,
-     *     RollbackTriggers?: list<RollbackTrigger>
+     *     MonitoringTimeInMinutes?: int|null,
+     *     RollbackTriggers?: list<RollbackTrigger>|null
      * } $args
      */
     public function __construct(array $args = [])

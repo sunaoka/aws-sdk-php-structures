@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Support\DescribeCreateCaseOptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $startTime
- * @property string $endTime
+ * @property string|null $startTime
+ * @property string|null $endTime
  */
 class SupportedHour extends Shape
 {
     /**
      * @param array{
-     *     startTime?: string,
-     *     endTime?: string
+     *     startTime?: string|null,
+     *     endTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

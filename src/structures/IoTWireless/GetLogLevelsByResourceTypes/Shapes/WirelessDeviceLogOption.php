@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'Sidewalk'|'LoRaWAN' $Type
  * @property 'INFO'|'ERROR'|'DISABLED' $LogLevel
- * @property list<WirelessDeviceEventLogOption> $Events
+ * @property list<WirelessDeviceEventLogOption>|null $Events
  */
 class WirelessDeviceLogOption extends Shape
 {
@@ -15,7 +15,7 @@ class WirelessDeviceLogOption extends Shape
      * @param array{
      *     Type: 'Sidewalk'|'LoRaWAN',
      *     LogLevel: 'INFO'|'ERROR'|'DISABLED',
-     *     Events?: list<WirelessDeviceEventLogOption>
+     *     Events?: list<WirelessDeviceEventLogOption>|null
      * } $args
      */
     public function __construct(array $args)

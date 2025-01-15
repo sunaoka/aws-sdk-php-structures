@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\RemoveTags\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
+ * @property string|null $Key
  */
 class TagKeyOnly extends Shape
 {
     /**
-     * @param array{Key?: string} $args
+     * @param array{Key?: string|null} $args
      */
     public function __construct(array $args = [])
     {

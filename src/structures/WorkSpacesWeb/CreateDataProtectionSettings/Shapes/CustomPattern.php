@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\CreateDataProtectionSettings\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $keywordRegex
- * @property string $patternDescription
+ * @property string|null $keywordRegex
+ * @property string|null $patternDescription
  * @property string $patternName
  * @property string $patternRegex
  */
@@ -14,8 +14,8 @@ class CustomPattern extends Shape
 {
     /**
      * @param array{
-     *     keywordRegex?: string,
-     *     patternDescription?: string,
+     *     keywordRegex?: string|null,
+     *     patternDescription?: string|null,
      *     patternName: string,
      *     patternRegex: string
      * } $args

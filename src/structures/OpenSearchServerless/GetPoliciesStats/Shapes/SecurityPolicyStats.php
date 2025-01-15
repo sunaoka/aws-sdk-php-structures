@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\GetPoliciesStats\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $EncryptionPolicyCount
- * @property int $NetworkPolicyCount
+ * @property int|null $EncryptionPolicyCount
+ * @property int|null $NetworkPolicyCount
  */
 class SecurityPolicyStats extends Shape
 {
     /**
      * @param array{
-     *     EncryptionPolicyCount?: int,
-     *     NetworkPolicyCount?: int
+     *     EncryptionPolicyCount?: int|null,
+     *     NetworkPolicyCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

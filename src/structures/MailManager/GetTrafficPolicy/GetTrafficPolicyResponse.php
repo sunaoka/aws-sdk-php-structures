@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MailManager\GetTrafficPolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property 'ALLOW'|'DENY' $DefaultAction
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimestamp
- * @property int<1, max> $MaxMessageSizeBytes
- * @property list<Shapes\PolicyStatement> $PolicyStatements
- * @property string $TrafficPolicyArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property 'ALLOW'|'DENY'|null $DefaultAction
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimestamp
+ * @property int<1, max>|null $MaxMessageSizeBytes
+ * @property list<Shapes\PolicyStatement>|null $PolicyStatements
+ * @property string|null $TrafficPolicyArn
  * @property string $TrafficPolicyId
  * @property string $TrafficPolicyName
  */

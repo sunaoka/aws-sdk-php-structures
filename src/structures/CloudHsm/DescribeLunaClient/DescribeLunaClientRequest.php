@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudHsm\DescribeLunaClient;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientArn
- * @property string $CertificateFingerprint
+ * @property string|null $ClientArn
+ * @property string|null $CertificateFingerprint
  */
 class DescribeLunaClientRequest extends Request
 {
     /**
      * @param array{
-     *     ClientArn?: string,
-     *     CertificateFingerprint?: string
+     *     ClientArn?: string|null,
+     *     CertificateFingerprint?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\UpdateProject;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\Sample $Sample
+ * @property Shapes\Sample|null $Sample
  * @property string $RoleArn
  * @property string $Name
  */
@@ -13,7 +13,7 @@ class UpdateProjectRequest extends Request
 {
     /**
      * @param array{
-     *     Sample?: Shapes\Sample,
+     *     Sample?: Shapes\Sample|null,
      *     RoleArn: string,
      *     Name: string
      * } $args

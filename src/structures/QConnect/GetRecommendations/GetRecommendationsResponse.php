@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\RecommendationData> $recommendations
- * @property list<Shapes\RecommendationTrigger> $triggers
+ * @property list<Shapes\RecommendationTrigger>|null $triggers
  */
 class GetRecommendationsResponse extends Response
 {

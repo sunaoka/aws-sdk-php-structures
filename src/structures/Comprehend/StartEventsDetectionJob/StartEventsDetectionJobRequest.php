@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\InputDataConfig $InputDataConfig
  * @property Shapes\OutputDataConfig $OutputDataConfig
  * @property string $DataAccessRoleArn
- * @property string $JobName
+ * @property string|null $JobName
  * @property 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW' $LanguageCode
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property list<string> $TargetEventTypes
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class StartEventsDetectionJobRequest extends Request
 {
@@ -21,11 +21,11 @@ class StartEventsDetectionJobRequest extends Request
      *     InputDataConfig: Shapes\InputDataConfig,
      *     OutputDataConfig: Shapes\OutputDataConfig,
      *     DataAccessRoleArn: string,
-     *     JobName?: string,
+     *     JobName?: string|null,
      *     LanguageCode: 'en'|'es'|'fr'|'de'|'it'|'pt'|'ar'|'hi'|'ja'|'ko'|'zh'|'zh-TW',
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     TargetEventTypes: list<string>,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

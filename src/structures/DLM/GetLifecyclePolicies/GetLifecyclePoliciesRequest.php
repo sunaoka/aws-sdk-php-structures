@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DLM\GetLifecyclePolicies;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $PolicyIds
- * @property 'ENABLED'|'DISABLED'|'ERROR' $State
- * @property list<'VOLUME'|'INSTANCE'> $ResourceTypes
- * @property list<string> $TargetTags
- * @property list<string> $TagsToAdd
- * @property 'VOLUME'|'INSTANCE'|'ALL' $DefaultPolicyType
+ * @property list<string>|null $PolicyIds
+ * @property 'ENABLED'|'DISABLED'|'ERROR'|null $State
+ * @property list<'VOLUME'|'INSTANCE'>|null $ResourceTypes
+ * @property list<string>|null $TargetTags
+ * @property list<string>|null $TagsToAdd
+ * @property 'VOLUME'|'INSTANCE'|'ALL'|null $DefaultPolicyType
  */
 class GetLifecyclePoliciesRequest extends Request
 {
     /**
      * @param array{
-     *     PolicyIds?: list<string>,
-     *     State?: 'ENABLED'|'DISABLED'|'ERROR',
-     *     ResourceTypes?: list<'VOLUME'|'INSTANCE'>,
-     *     TargetTags?: list<string>,
-     *     TagsToAdd?: list<string>,
-     *     DefaultPolicyType?: 'VOLUME'|'INSTANCE'|'ALL'
+     *     PolicyIds?: list<string>|null,
+     *     State?: 'ENABLED'|'DISABLED'|'ERROR'|null,
+     *     ResourceTypes?: list<'VOLUME'|'INSTANCE'>|null,
+     *     TargetTags?: list<string>|null,
+     *     TagsToAdd?: list<string>|null,
+     *     DefaultPolicyType?: 'VOLUME'|'INSTANCE'|'ALL'|null
      * } $args
      */
     public function __construct(array $args = [])

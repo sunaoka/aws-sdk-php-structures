@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DynamoDb\ListBackups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TableName
- * @property string $TableId
- * @property string $TableArn
- * @property string $BackupArn
- * @property string $BackupName
- * @property \Aws\Api\DateTimeResult $BackupCreationDateTime
- * @property \Aws\Api\DateTimeResult $BackupExpiryDateTime
- * @property 'CREATING'|'DELETED'|'AVAILABLE' $BackupStatus
- * @property 'USER'|'SYSTEM'|'AWS_BACKUP' $BackupType
- * @property int<0, max> $BackupSizeBytes
+ * @property string|null $TableName
+ * @property string|null $TableId
+ * @property string|null $TableArn
+ * @property string|null $BackupArn
+ * @property string|null $BackupName
+ * @property \Aws\Api\DateTimeResult|null $BackupCreationDateTime
+ * @property \Aws\Api\DateTimeResult|null $BackupExpiryDateTime
+ * @property 'CREATING'|'DELETED'|'AVAILABLE'|null $BackupStatus
+ * @property 'USER'|'SYSTEM'|'AWS_BACKUP'|null $BackupType
+ * @property int<0, max>|null $BackupSizeBytes
  */
 class BackupSummary extends Shape
 {
     /**
      * @param array{
-     *     TableName?: string,
-     *     TableId?: string,
-     *     TableArn?: string,
-     *     BackupArn?: string,
-     *     BackupName?: string,
-     *     BackupCreationDateTime?: \Aws\Api\DateTimeResult,
-     *     BackupExpiryDateTime?: \Aws\Api\DateTimeResult,
-     *     BackupStatus?: 'CREATING'|'DELETED'|'AVAILABLE',
-     *     BackupType?: 'USER'|'SYSTEM'|'AWS_BACKUP',
-     *     BackupSizeBytes?: int<0, max>
+     *     TableName?: string|null,
+     *     TableId?: string|null,
+     *     TableArn?: string|null,
+     *     BackupArn?: string|null,
+     *     BackupName?: string|null,
+     *     BackupCreationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     BackupExpiryDateTime?: \Aws\Api\DateTimeResult|null,
+     *     BackupStatus?: 'CREATING'|'DELETED'|'AVAILABLE'|null,
+     *     BackupType?: 'USER'|'SYSTEM'|'AWS_BACKUP'|null,
+     *     BackupSizeBytes?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

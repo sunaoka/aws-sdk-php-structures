@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Textract\AnalyzeExpense\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Text
- * @property Geometry $Geometry
- * @property float $Confidence
+ * @property string|null $Text
+ * @property Geometry|null $Geometry
+ * @property float|null $Confidence
  */
 class ExpenseDetection extends Shape
 {
     /**
      * @param array{
-     *     Text?: string,
-     *     Geometry?: Geometry,
-     *     Confidence?: float
+     *     Text?: string|null,
+     *     Geometry?: Geometry|null,
+     *     Confidence?: float|null
      * } $args
      */
     public function __construct(array $args = [])

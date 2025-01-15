@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListVpcEndpointsForDomainRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

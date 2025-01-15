@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ControlTower\GetEnabledControl\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $controlIdentifier
- * @property DriftStatusSummary $driftStatusSummary
- * @property list<EnabledControlParameterSummary> $parameters
- * @property EnablementStatusSummary $statusSummary
- * @property string $targetIdentifier
- * @property list<Region> $targetRegions
+ * @property string|null $arn
+ * @property string|null $controlIdentifier
+ * @property DriftStatusSummary|null $driftStatusSummary
+ * @property list<EnabledControlParameterSummary>|null $parameters
+ * @property EnablementStatusSummary|null $statusSummary
+ * @property string|null $targetIdentifier
+ * @property list<Region>|null $targetRegions
  */
 class EnabledControlDetails extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     controlIdentifier?: string,
-     *     driftStatusSummary?: DriftStatusSummary,
-     *     parameters?: list<EnabledControlParameterSummary>,
-     *     statusSummary?: EnablementStatusSummary,
-     *     targetIdentifier?: string,
-     *     targetRegions?: list<Region>
+     *     arn?: string|null,
+     *     controlIdentifier?: string|null,
+     *     driftStatusSummary?: DriftStatusSummary|null,
+     *     parameters?: list<EnabledControlParameterSummary>|null,
+     *     statusSummary?: EnablementStatusSummary|null,
+     *     targetIdentifier?: string|null,
+     *     targetRegions?: list<Region>|null
      * } $args
      */
     public function __construct(array $args = [])

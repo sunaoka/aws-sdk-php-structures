@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\kendra\DescribeDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SeedUrlConfiguration $SeedUrlConfiguration
- * @property SiteMapsConfiguration $SiteMapsConfiguration
+ * @property SeedUrlConfiguration|null $SeedUrlConfiguration
+ * @property SiteMapsConfiguration|null $SiteMapsConfiguration
  */
 class Urls extends Shape
 {
     /**
      * @param array{
-     *     SeedUrlConfiguration?: SeedUrlConfiguration,
-     *     SiteMapsConfiguration?: SiteMapsConfiguration
+     *     SeedUrlConfiguration?: SeedUrlConfiguration|null,
+     *     SiteMapsConfiguration?: SiteMapsConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

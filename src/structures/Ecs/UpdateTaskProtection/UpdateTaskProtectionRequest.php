@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $cluster
  * @property list<string> $tasks
  * @property bool $protectionEnabled
- * @property int $expiresInMinutes
+ * @property int|null $expiresInMinutes
  */
 class UpdateTaskProtectionRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateTaskProtectionRequest extends Request
      *     cluster: string,
      *     tasks: list<string>,
      *     protectionEnabled: bool,
-     *     expiresInMinutes?: int
+     *     expiresInMinutes?: int|null
      * } $args
      */
     public function __construct(array $args)

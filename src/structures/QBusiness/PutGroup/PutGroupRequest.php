@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $indexId
  * @property string $groupName
- * @property string $dataSourceId
+ * @property string|null $dataSourceId
  * @property 'INDEX'|'DATASOURCE' $type
  * @property Shapes\GroupMembers $groupMembers
- * @property string $roleArn
+ * @property string|null $roleArn
  */
 class PutGroupRequest extends Request
 {
@@ -20,10 +20,10 @@ class PutGroupRequest extends Request
      *     applicationId: string,
      *     indexId: string,
      *     groupName: string,
-     *     dataSourceId?: string,
+     *     dataSourceId?: string|null,
      *     type: 'INDEX'|'DATASOURCE',
      *     groupMembers: Shapes\GroupMembers,
-     *     roleArn?: string
+     *     roleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

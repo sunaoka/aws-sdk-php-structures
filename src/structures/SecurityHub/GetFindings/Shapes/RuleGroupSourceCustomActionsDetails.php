@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StatelessCustomActionDefinition $ActionDefinition
- * @property string $ActionName
+ * @property StatelessCustomActionDefinition|null $ActionDefinition
+ * @property string|null $ActionName
  */
 class RuleGroupSourceCustomActionsDetails extends Shape
 {
     /**
      * @param array{
-     *     ActionDefinition?: StatelessCustomActionDefinition,
-     *     ActionName?: string
+     *     ActionDefinition?: StatelessCustomActionDefinition|null,
+     *     ActionName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PlainText
+ * @property string|null $PlainText
  */
 class SheetImageTooltipText extends Shape
 {
     /**
-     * @param array{PlainText?: string} $args
+     * @param array{PlainText?: string|null} $args
      */
     public function __construct(array $args = [])
     {

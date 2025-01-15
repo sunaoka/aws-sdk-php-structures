@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $alarmRoleArn
- * @property string $notificationLambdaArn
+ * @property string|null $notificationLambdaArn
  */
 class Alarms extends Shape
 {
     /**
      * @param array{
      *     alarmRoleArn: string,
-     *     notificationLambdaArn?: string
+     *     notificationLambdaArn?: string|null
      * } $args
      */
     public function __construct(array $args)

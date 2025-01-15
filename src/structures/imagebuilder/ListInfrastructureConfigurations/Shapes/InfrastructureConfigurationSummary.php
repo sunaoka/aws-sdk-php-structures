@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListInfrastructureConfigurations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
- * @property string $description
- * @property string $dateCreated
- * @property string $dateUpdated
- * @property array<string, string> $resourceTags
- * @property array<string, string> $tags
- * @property list<string> $instanceTypes
- * @property string $instanceProfileName
- * @property Placement $placement
+ * @property string|null $arn
+ * @property string|null $name
+ * @property string|null $description
+ * @property string|null $dateCreated
+ * @property string|null $dateUpdated
+ * @property array<string, string>|null $resourceTags
+ * @property array<string, string>|null $tags
+ * @property list<string>|null $instanceTypes
+ * @property string|null $instanceProfileName
+ * @property Placement|null $placement
  */
 class InfrastructureConfigurationSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string,
-     *     description?: string,
-     *     dateCreated?: string,
-     *     dateUpdated?: string,
-     *     resourceTags?: array<string, string>,
-     *     tags?: array<string, string>,
-     *     instanceTypes?: list<string>,
-     *     instanceProfileName?: string,
-     *     placement?: Placement
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     dateCreated?: string|null,
+     *     dateUpdated?: string|null,
+     *     resourceTags?: array<string, string>|null,
+     *     tags?: array<string, string>|null,
+     *     instanceTypes?: list<string>|null,
+     *     instanceProfileName?: string|null,
+     *     placement?: Placement|null
      * } $args
      */
     public function __construct(array $args = [])

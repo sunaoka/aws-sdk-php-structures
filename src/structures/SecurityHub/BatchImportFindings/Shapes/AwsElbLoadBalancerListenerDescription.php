@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsElbLoadBalancerListener $Listener
- * @property list<string> $PolicyNames
+ * @property AwsElbLoadBalancerListener|null $Listener
+ * @property list<string>|null $PolicyNames
  */
 class AwsElbLoadBalancerListenerDescription extends Shape
 {
     /**
      * @param array{
-     *     Listener?: AwsElbLoadBalancerListener,
-     *     PolicyNames?: list<string>
+     *     Listener?: AwsElbLoadBalancerListener|null,
+     *     PolicyNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

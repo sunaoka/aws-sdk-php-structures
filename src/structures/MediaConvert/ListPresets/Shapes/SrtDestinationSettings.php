@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListPresets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $StylePassthrough
+ * @property 'ENABLED'|'DISABLED'|null $StylePassthrough
  */
 class SrtDestinationSettings extends Shape
 {
     /**
-     * @param array{StylePassthrough?: 'ENABLED'|'DISABLED'} $args
+     * @param array{StylePassthrough?: 'ENABLED'|'DISABLED'|null} $args
      */
     public function __construct(array $args = [])
     {

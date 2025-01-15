@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALLOW_ANY_DURATION'|'DROP_FRAMES_FOR_COMPLIANCE' $DurationMode
- * @property int<0, 2147483647> $MaxAncDataSize
+ * @property 'ALLOW_ANY_DURATION'|'DROP_FRAMES_FOR_COMPLIANCE'|null $DurationMode
+ * @property int<0, 2147483647>|null $MaxAncDataSize
  */
 class MxfXavcProfileSettings extends Shape
 {
     /**
      * @param array{
-     *     DurationMode?: 'ALLOW_ANY_DURATION'|'DROP_FRAMES_FOR_COMPLIANCE',
-     *     MaxAncDataSize?: int<0, 2147483647>
+     *     DurationMode?: 'ALLOW_ANY_DURATION'|'DROP_FRAMES_FOR_COMPLIANCE'|null,
+     *     MaxAncDataSize?: int<0, 2147483647>|null
      * } $args
      */
     public function __construct(array $args = [])

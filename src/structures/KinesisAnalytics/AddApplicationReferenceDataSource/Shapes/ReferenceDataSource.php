@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $TableName
- * @property S3ReferenceDataSource $S3ReferenceDataSource
+ * @property S3ReferenceDataSource|null $S3ReferenceDataSource
  * @property SourceSchema $ReferenceSchema
  */
 class ReferenceDataSource extends Shape
@@ -14,7 +14,7 @@ class ReferenceDataSource extends Shape
     /**
      * @param array{
      *     TableName: string,
-     *     S3ReferenceDataSource?: S3ReferenceDataSource,
+     *     S3ReferenceDataSource?: S3ReferenceDataSource|null,
      *     ReferenceSchema: SourceSchema
      * } $args
      */

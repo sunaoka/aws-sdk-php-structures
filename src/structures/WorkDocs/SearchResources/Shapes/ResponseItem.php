@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\WorkDocs\SearchResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DOCUMENT'|'FOLDER'|'COMMENT'|'DOCUMENT_VERSION' $ResourceType
- * @property string $WebUrl
- * @property DocumentMetadata $DocumentMetadata
- * @property FolderMetadata $FolderMetadata
- * @property CommentMetadata $CommentMetadata
- * @property DocumentVersionMetadata $DocumentVersionMetadata
+ * @property 'DOCUMENT'|'FOLDER'|'COMMENT'|'DOCUMENT_VERSION'|null $ResourceType
+ * @property string|null $WebUrl
+ * @property DocumentMetadata|null $DocumentMetadata
+ * @property FolderMetadata|null $FolderMetadata
+ * @property CommentMetadata|null $CommentMetadata
+ * @property DocumentVersionMetadata|null $DocumentVersionMetadata
  */
 class ResponseItem extends Shape
 {
     /**
      * @param array{
-     *     ResourceType?: 'DOCUMENT'|'FOLDER'|'COMMENT'|'DOCUMENT_VERSION',
-     *     WebUrl?: string,
-     *     DocumentMetadata?: DocumentMetadata,
-     *     FolderMetadata?: FolderMetadata,
-     *     CommentMetadata?: CommentMetadata,
-     *     DocumentVersionMetadata?: DocumentVersionMetadata
+     *     ResourceType?: 'DOCUMENT'|'FOLDER'|'COMMENT'|'DOCUMENT_VERSION'|null,
+     *     WebUrl?: string|null,
+     *     DocumentMetadata?: DocumentMetadata|null,
+     *     FolderMetadata?: FolderMetadata|null,
+     *     CommentMetadata?: CommentMetadata|null,
+     *     DocumentVersionMetadata?: DocumentVersionMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

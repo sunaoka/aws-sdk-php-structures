@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CopyrightHolder
- * @property 'DISABLED'|'ENABLED' $FillLineGap
- * @property string $FontFamily
- * @property 'EXCLUDE'|'INCLUDE' $StyleControl
+ * @property string|null $CopyrightHolder
+ * @property 'DISABLED'|'ENABLED'|null $FillLineGap
+ * @property string|null $FontFamily
+ * @property 'EXCLUDE'|'INCLUDE'|null $StyleControl
  */
 class EbuTtDDestinationSettings extends Shape
 {
     /**
      * @param array{
-     *     CopyrightHolder?: string,
-     *     FillLineGap?: 'DISABLED'|'ENABLED',
-     *     FontFamily?: string,
-     *     StyleControl?: 'EXCLUDE'|'INCLUDE'
+     *     CopyrightHolder?: string|null,
+     *     FillLineGap?: 'DISABLED'|'ENABLED'|null,
+     *     FontFamily?: string|null,
+     *     StyleControl?: 'EXCLUDE'|'INCLUDE'|null
      * } $args
      */
     public function __construct(array $args = [])

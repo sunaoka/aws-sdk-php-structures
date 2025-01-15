@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QLDBSession\SendCommand\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransactionId
- * @property string|resource|\Psr\Http\Message\StreamInterface $CommitDigest
- * @property TimingInformation $TimingInformation
- * @property IOUsage $ConsumedIOs
+ * @property string|null $TransactionId
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $CommitDigest
+ * @property TimingInformation|null $TimingInformation
+ * @property IOUsage|null $ConsumedIOs
  */
 class CommitTransactionResult extends Shape
 {
     /**
      * @param array{
-     *     TransactionId?: string,
-     *     CommitDigest?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     TimingInformation?: TimingInformation,
-     *     ConsumedIOs?: IOUsage
+     *     TransactionId?: string|null,
+     *     CommitDigest?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     TimingInformation?: TimingInformation|null,
+     *     ConsumedIOs?: IOUsage|null
      * } $args
      */
     public function __construct(array $args = [])

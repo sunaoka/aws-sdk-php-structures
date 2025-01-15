@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Pinpoint\DeleteJourney\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property JourneyEmailMessage $MessageConfig
- * @property string $NextActivity
- * @property string $TemplateName
- * @property string $TemplateVersion
+ * @property JourneyEmailMessage|null $MessageConfig
+ * @property string|null $NextActivity
+ * @property string|null $TemplateName
+ * @property string|null $TemplateVersion
  */
 class EmailMessageActivity extends Shape
 {
     /**
      * @param array{
-     *     MessageConfig?: JourneyEmailMessage,
-     *     NextActivity?: string,
-     *     TemplateName?: string,
-     *     TemplateVersion?: string
+     *     MessageConfig?: JourneyEmailMessage|null,
+     *     NextActivity?: string|null,
+     *     TemplateName?: string|null,
+     *     TemplateVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

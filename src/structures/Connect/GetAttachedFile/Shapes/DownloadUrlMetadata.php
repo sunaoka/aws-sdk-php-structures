@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Connect\GetAttachedFile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Url
- * @property string $UrlExpiry
+ * @property string|null $Url
+ * @property string|null $UrlExpiry
  */
 class DownloadUrlMetadata extends Shape
 {
     /**
      * @param array{
-     *     Url?: string,
-     *     UrlExpiry?: string
+     *     Url?: string|null,
+     *     UrlExpiry?: string|null
      * } $args
      */
     public function __construct(array $args = [])

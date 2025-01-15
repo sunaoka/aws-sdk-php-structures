@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PipelineName
- * @property \Aws\Api\DateTimeResult $CreatedAfter
- * @property \Aws\Api\DateTimeResult $CreatedBefore
- * @property 'CreationTime'|'PipelineExecutionArn' $SortBy
- * @property 'Ascending'|'Descending' $SortOrder
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property \Aws\Api\DateTimeResult|null $CreatedAfter
+ * @property \Aws\Api\DateTimeResult|null $CreatedBefore
+ * @property 'CreationTime'|'PipelineExecutionArn'|null $SortBy
+ * @property 'Ascending'|'Descending'|null $SortOrder
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListPipelineExecutionsRequest extends Request
 {
     /**
      * @param array{
      *     PipelineName: string,
-     *     CreatedAfter?: \Aws\Api\DateTimeResult,
-     *     CreatedBefore?: \Aws\Api\DateTimeResult,
-     *     SortBy?: 'CreationTime'|'PipelineExecutionArn',
-     *     SortOrder?: 'Ascending'|'Descending',
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     CreatedAfter?: \Aws\Api\DateTimeResult|null,
+     *     CreatedBefore?: \Aws\Api\DateTimeResult|null,
+     *     SortBy?: 'CreationTime'|'PipelineExecutionArn'|null,
+     *     SortOrder?: 'Ascending'|'Descending'|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

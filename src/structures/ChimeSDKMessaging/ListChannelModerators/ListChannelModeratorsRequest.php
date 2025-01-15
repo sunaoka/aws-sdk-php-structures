@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ChannelArn
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
  * @property string $ChimeBearer
  */
 class ListChannelModeratorsRequest extends Request
@@ -15,8 +15,8 @@ class ListChannelModeratorsRequest extends Request
     /**
      * @param array{
      *     ChannelArn: string,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null,
      *     ChimeBearer: string
      * } $args
      */

@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Catalog
- * @property list<string> $CustomerCompanyName
- * @property list<string> $Identifier
- * @property Shapes\LastModifiedDate $LastModifiedDate
- * @property list<'Pending Submission'|'Submitted'|'In review'|'Approved'|'Rejected'|'Action Required'> $LifeCycleReviewStatus
- * @property list<'Prospect'|'Qualified'|'Technical Validation'|'Business Validation'|'Committed'|'Launched'|'Closed Lost'> $LifeCycleStage
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
- * @property Shapes\OpportunitySort $Sort
+ * @property list<string>|null $CustomerCompanyName
+ * @property list<string>|null $Identifier
+ * @property Shapes\LastModifiedDate|null $LastModifiedDate
+ * @property list<'Pending Submission'|'Submitted'|'In review'|'Approved'|'Rejected'|'Action Required'>|null $LifeCycleReviewStatus
+ * @property list<'Prospect'|'Qualified'|'Technical Validation'|'Business Validation'|'Committed'|'Launched'|'Closed Lost'>|null $LifeCycleStage
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property Shapes\OpportunitySort|null $Sort
  */
 class ListOpportunitiesRequest extends Request
 {
     /**
      * @param array{
      *     Catalog: string,
-     *     CustomerCompanyName?: list<string>,
-     *     Identifier?: list<string>,
-     *     LastModifiedDate?: Shapes\LastModifiedDate,
-     *     LifeCycleReviewStatus?: list<'Pending Submission'|'Submitted'|'In review'|'Approved'|'Rejected'|'Action Required'>,
-     *     LifeCycleStage?: list<'Prospect'|'Qualified'|'Technical Validation'|'Business Validation'|'Committed'|'Launched'|'Closed Lost'>,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
-     *     Sort?: Shapes\OpportunitySort
+     *     CustomerCompanyName?: list<string>|null,
+     *     Identifier?: list<string>|null,
+     *     LastModifiedDate?: Shapes\LastModifiedDate|null,
+     *     LifeCycleReviewStatus?: list<'Pending Submission'|'Submitted'|'In review'|'Approved'|'Rejected'|'Action Required'>|null,
+     *     LifeCycleStage?: list<'Prospect'|'Qualified'|'Technical Validation'|'Business Validation'|'Committed'|'Launched'|'Closed Lost'>|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     Sort?: Shapes\OpportunitySort|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAccountSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $IAMUser
- * @property string $userLoginName
- * @property string $accountName
- * @property string $directoryType
+ * @property bool|null $IAMUser
+ * @property string|null $userLoginName
+ * @property string|null $accountName
+ * @property string|null $directoryType
  */
 class SignupResponse extends Shape
 {
     /**
      * @param array{
-     *     IAMUser?: bool,
-     *     userLoginName?: string,
-     *     accountName?: string,
-     *     directoryType?: string
+     *     IAMUser?: bool|null,
+     *     userLoginName?: string|null,
+     *     accountName?: string|null,
+     *     directoryType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

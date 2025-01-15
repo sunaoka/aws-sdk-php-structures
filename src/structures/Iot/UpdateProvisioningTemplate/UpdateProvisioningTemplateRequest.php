@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $templateName
- * @property string $description
- * @property bool $enabled
- * @property int $defaultVersionId
- * @property string $provisioningRoleArn
- * @property Shapes\ProvisioningHook $preProvisioningHook
- * @property bool $removePreProvisioningHook
+ * @property string|null $description
+ * @property bool|null $enabled
+ * @property int|null $defaultVersionId
+ * @property string|null $provisioningRoleArn
+ * @property Shapes\ProvisioningHook|null $preProvisioningHook
+ * @property bool|null $removePreProvisioningHook
  */
 class UpdateProvisioningTemplateRequest extends Request
 {
     /**
      * @param array{
      *     templateName: string,
-     *     description?: string,
-     *     enabled?: bool,
-     *     defaultVersionId?: int,
-     *     provisioningRoleArn?: string,
-     *     preProvisioningHook?: Shapes\ProvisioningHook,
-     *     removePreProvisioningHook?: bool
+     *     description?: string|null,
+     *     enabled?: bool|null,
+     *     defaultVersionId?: int|null,
+     *     provisioningRoleArn?: string|null,
+     *     preProvisioningHook?: Shapes\ProvisioningHook|null,
+     *     removePreProvisioningHook?: bool|null
      * } $args
      */
     public function __construct(array $args)

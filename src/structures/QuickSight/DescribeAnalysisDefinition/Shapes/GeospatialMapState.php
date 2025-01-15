@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeospatialCoordinateBounds $Bounds
- * @property 'ENABLED'|'DISABLED' $MapNavigation
+ * @property GeospatialCoordinateBounds|null $Bounds
+ * @property 'ENABLED'|'DISABLED'|null $MapNavigation
  */
 class GeospatialMapState extends Shape
 {
     /**
      * @param array{
-     *     Bounds?: GeospatialCoordinateBounds,
-     *     MapNavigation?: 'ENABLED'|'DISABLED'
+     *     Bounds?: GeospatialCoordinateBounds|null,
+     *     MapNavigation?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

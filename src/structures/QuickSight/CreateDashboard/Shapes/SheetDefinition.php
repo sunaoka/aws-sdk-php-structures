@@ -6,34 +6,34 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SheetId
- * @property string $Title
- * @property string $Description
- * @property string $Name
- * @property list<ParameterControl> $ParameterControls
- * @property list<FilterControl> $FilterControls
- * @property list<Visual> $Visuals
- * @property list<SheetTextBox> $TextBoxes
- * @property list<SheetImage> $Images
- * @property list<Layout> $Layouts
- * @property list<SheetControlLayout> $SheetControlLayouts
- * @property 'PAGINATED'|'INTERACTIVE' $ContentType
+ * @property string|null $Title
+ * @property string|null $Description
+ * @property string|null $Name
+ * @property list<ParameterControl>|null $ParameterControls
+ * @property list<FilterControl>|null $FilterControls
+ * @property list<Visual>|null $Visuals
+ * @property list<SheetTextBox>|null $TextBoxes
+ * @property list<SheetImage>|null $Images
+ * @property list<Layout>|null $Layouts
+ * @property list<SheetControlLayout>|null $SheetControlLayouts
+ * @property 'PAGINATED'|'INTERACTIVE'|null $ContentType
  */
 class SheetDefinition extends Shape
 {
     /**
      * @param array{
      *     SheetId: string,
-     *     Title?: string,
-     *     Description?: string,
-     *     Name?: string,
-     *     ParameterControls?: list<ParameterControl>,
-     *     FilterControls?: list<FilterControl>,
-     *     Visuals?: list<Visual>,
-     *     TextBoxes?: list<SheetTextBox>,
-     *     Images?: list<SheetImage>,
-     *     Layouts?: list<Layout>,
-     *     SheetControlLayouts?: list<SheetControlLayout>,
-     *     ContentType?: 'PAGINATED'|'INTERACTIVE'
+     *     Title?: string|null,
+     *     Description?: string|null,
+     *     Name?: string|null,
+     *     ParameterControls?: list<ParameterControl>|null,
+     *     FilterControls?: list<FilterControl>|null,
+     *     Visuals?: list<Visual>|null,
+     *     TextBoxes?: list<SheetTextBox>|null,
+     *     Images?: list<SheetImage>|null,
+     *     Layouts?: list<Layout>|null,
+     *     SheetControlLayouts?: list<SheetControlLayout>|null,
+     *     ContentType?: 'PAGINATED'|'INTERACTIVE'|null
      * } $args
      */
     public function __construct(array $args)

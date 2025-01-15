@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FSx\DeleteFileSystem\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $SkipFinalBackup
- * @property list<Tag> $FinalBackupTags
+ * @property bool|null $SkipFinalBackup
+ * @property list<Tag>|null $FinalBackupTags
  */
 class DeleteFileSystemLustreConfiguration extends Shape
 {
     /**
      * @param array{
-     *     SkipFinalBackup?: bool,
-     *     FinalBackupTags?: list<Tag>
+     *     SkipFinalBackup?: bool|null,
+     *     FinalBackupTags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

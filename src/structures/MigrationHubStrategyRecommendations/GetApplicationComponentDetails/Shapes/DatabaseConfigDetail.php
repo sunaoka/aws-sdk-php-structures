@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetApplicat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $secretName
+ * @property string|null $secretName
  */
 class DatabaseConfigDetail extends Shape
 {
     /**
-     * @param array{secretName?: string} $args
+     * @param array{secretName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

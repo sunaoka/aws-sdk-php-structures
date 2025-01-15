@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<FieldSortOptions> $CategorySort
- * @property ItemsLimitConfiguration $CategoryItemsLimit
- * @property list<FieldSortOptions> $ColorSort
- * @property ItemsLimitConfiguration $ColorItemsLimit
- * @property list<FieldSortOptions> $SmallMultiplesSort
- * @property ItemsLimitConfiguration $SmallMultiplesLimitConfiguration
+ * @property list<FieldSortOptions>|null $CategorySort
+ * @property ItemsLimitConfiguration|null $CategoryItemsLimit
+ * @property list<FieldSortOptions>|null $ColorSort
+ * @property ItemsLimitConfiguration|null $ColorItemsLimit
+ * @property list<FieldSortOptions>|null $SmallMultiplesSort
+ * @property ItemsLimitConfiguration|null $SmallMultiplesLimitConfiguration
  */
 class BarChartSortConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CategorySort?: list<FieldSortOptions>,
-     *     CategoryItemsLimit?: ItemsLimitConfiguration,
-     *     ColorSort?: list<FieldSortOptions>,
-     *     ColorItemsLimit?: ItemsLimitConfiguration,
-     *     SmallMultiplesSort?: list<FieldSortOptions>,
-     *     SmallMultiplesLimitConfiguration?: ItemsLimitConfiguration
+     *     CategorySort?: list<FieldSortOptions>|null,
+     *     CategoryItemsLimit?: ItemsLimitConfiguration|null,
+     *     ColorSort?: list<FieldSortOptions>|null,
+     *     ColorItemsLimit?: ItemsLimitConfiguration|null,
+     *     SmallMultiplesSort?: list<FieldSortOptions>|null,
+     *     SmallMultiplesLimitConfiguration?: ItemsLimitConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

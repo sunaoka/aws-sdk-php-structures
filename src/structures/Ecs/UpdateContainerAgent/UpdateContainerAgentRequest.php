@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ecs\UpdateContainerAgent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $cluster
+ * @property string|null $cluster
  * @property string $containerInstance
  */
 class UpdateContainerAgentRequest extends Request
 {
     /**
      * @param array{
-     *     cluster?: string,
+     *     cluster?: string|null,
      *     containerInstance: string
      * } $args
      */

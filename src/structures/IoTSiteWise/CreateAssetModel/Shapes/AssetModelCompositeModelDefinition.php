@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\CreateAssetModel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $externalId
+ * @property string|null $id
+ * @property string|null $externalId
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $type
- * @property list<AssetModelPropertyDefinition> $properties
+ * @property list<AssetModelPropertyDefinition>|null $properties
  */
 class AssetModelCompositeModelDefinition extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     externalId?: string,
+     *     id?: string|null,
+     *     externalId?: string|null,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     type: string,
-     *     properties?: list<AssetModelPropertyDefinition>
+     *     properties?: list<AssetModelPropertyDefinition>|null
      * } $args
      */
     public function __construct(array $args)

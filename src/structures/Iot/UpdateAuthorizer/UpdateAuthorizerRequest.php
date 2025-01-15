@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $authorizerName
- * @property string $authorizerFunctionArn
- * @property string $tokenKeyName
- * @property array<string, string> $tokenSigningPublicKeys
- * @property 'ACTIVE'|'INACTIVE' $status
- * @property bool $enableCachingForHttp
+ * @property string|null $authorizerFunctionArn
+ * @property string|null $tokenKeyName
+ * @property array<string, string>|null $tokenSigningPublicKeys
+ * @property 'ACTIVE'|'INACTIVE'|null $status
+ * @property bool|null $enableCachingForHttp
  */
 class UpdateAuthorizerRequest extends Request
 {
     /**
      * @param array{
      *     authorizerName: string,
-     *     authorizerFunctionArn?: string,
-     *     tokenKeyName?: string,
-     *     tokenSigningPublicKeys?: array<string, string>,
-     *     status?: 'ACTIVE'|'INACTIVE',
-     *     enableCachingForHttp?: bool
+     *     authorizerFunctionArn?: string|null,
+     *     tokenKeyName?: string|null,
+     *     tokenSigningPublicKeys?: array<string, string>|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|null,
+     *     enableCachingForHttp?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $InstanceId
- * @property string $LastStatusCheckDate
+ * @property string|null $LastStatusCheckDate
  * @property list<string> $Products
  * @property string $Status
- * @property string $StatusMessage
+ * @property string|null $StatusMessage
  */
 class InstanceSummary extends Shape
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     LastStatusCheckDate?: string,
+     *     LastStatusCheckDate?: string|null,
      *     Products: list<string>,
      *     Status: string,
-     *     StatusMessage?: string
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

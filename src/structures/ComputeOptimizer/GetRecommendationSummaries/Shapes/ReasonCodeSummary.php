@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRecommendationSummaries\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'MemoryOverprovisioned'|'MemoryUnderprovisioned' $name
- * @property double $value
+ * @property 'MemoryOverprovisioned'|'MemoryUnderprovisioned'|null $name
+ * @property double|null $value
  */
 class ReasonCodeSummary extends Shape
 {
     /**
      * @param array{
-     *     name?: 'MemoryOverprovisioned'|'MemoryUnderprovisioned',
-     *     value?: double
+     *     name?: 'MemoryOverprovisioned'|'MemoryUnderprovisioned'|null,
+     *     value?: double|null
      * } $args
      */
     public function __construct(array $args = [])

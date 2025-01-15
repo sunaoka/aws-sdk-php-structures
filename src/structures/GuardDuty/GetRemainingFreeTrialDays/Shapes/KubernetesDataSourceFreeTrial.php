@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetRemainingFreeTrialDays\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DataSourceFreeTrial $AuditLogs
+ * @property DataSourceFreeTrial|null $AuditLogs
  */
 class KubernetesDataSourceFreeTrial extends Shape
 {
     /**
-     * @param array{AuditLogs?: DataSourceFreeTrial} $args
+     * @param array{AuditLogs?: DataSourceFreeTrial|null} $args
      */
     public function __construct(array $args = [])
     {

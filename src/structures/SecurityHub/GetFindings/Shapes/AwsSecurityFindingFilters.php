@@ -5,219 +5,219 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<StringFilter> $ProductArn
- * @property list<StringFilter> $AwsAccountId
- * @property list<StringFilter> $Id
- * @property list<StringFilter> $GeneratorId
- * @property list<StringFilter> $Region
- * @property list<StringFilter> $Type
- * @property list<DateFilter> $FirstObservedAt
- * @property list<DateFilter> $LastObservedAt
- * @property list<DateFilter> $CreatedAt
- * @property list<DateFilter> $UpdatedAt
- * @property list<NumberFilter> $SeverityProduct
- * @property list<NumberFilter> $SeverityNormalized
- * @property list<StringFilter> $SeverityLabel
- * @property list<NumberFilter> $Confidence
- * @property list<NumberFilter> $Criticality
- * @property list<StringFilter> $Title
- * @property list<StringFilter> $Description
- * @property list<StringFilter> $RecommendationText
- * @property list<StringFilter> $SourceUrl
- * @property list<MapFilter> $ProductFields
- * @property list<StringFilter> $ProductName
- * @property list<StringFilter> $CompanyName
- * @property list<MapFilter> $UserDefinedFields
- * @property list<StringFilter> $MalwareName
- * @property list<StringFilter> $MalwareType
- * @property list<StringFilter> $MalwarePath
- * @property list<StringFilter> $MalwareState
- * @property list<StringFilter> $NetworkDirection
- * @property list<StringFilter> $NetworkProtocol
- * @property list<IpFilter> $NetworkSourceIpV4
- * @property list<IpFilter> $NetworkSourceIpV6
- * @property list<NumberFilter> $NetworkSourcePort
- * @property list<StringFilter> $NetworkSourceDomain
- * @property list<StringFilter> $NetworkSourceMac
- * @property list<IpFilter> $NetworkDestinationIpV4
- * @property list<IpFilter> $NetworkDestinationIpV6
- * @property list<NumberFilter> $NetworkDestinationPort
- * @property list<StringFilter> $NetworkDestinationDomain
- * @property list<StringFilter> $ProcessName
- * @property list<StringFilter> $ProcessPath
- * @property list<NumberFilter> $ProcessPid
- * @property list<NumberFilter> $ProcessParentPid
- * @property list<DateFilter> $ProcessLaunchedAt
- * @property list<DateFilter> $ProcessTerminatedAt
- * @property list<StringFilter> $ThreatIntelIndicatorType
- * @property list<StringFilter> $ThreatIntelIndicatorValue
- * @property list<StringFilter> $ThreatIntelIndicatorCategory
- * @property list<DateFilter> $ThreatIntelIndicatorLastObservedAt
- * @property list<StringFilter> $ThreatIntelIndicatorSource
- * @property list<StringFilter> $ThreatIntelIndicatorSourceUrl
- * @property list<StringFilter> $ResourceType
- * @property list<StringFilter> $ResourceId
- * @property list<StringFilter> $ResourcePartition
- * @property list<StringFilter> $ResourceRegion
- * @property list<MapFilter> $ResourceTags
- * @property list<StringFilter> $ResourceAwsEc2InstanceType
- * @property list<StringFilter> $ResourceAwsEc2InstanceImageId
- * @property list<IpFilter> $ResourceAwsEc2InstanceIpV4Addresses
- * @property list<IpFilter> $ResourceAwsEc2InstanceIpV6Addresses
- * @property list<StringFilter> $ResourceAwsEc2InstanceKeyName
- * @property list<StringFilter> $ResourceAwsEc2InstanceIamInstanceProfileArn
- * @property list<StringFilter> $ResourceAwsEc2InstanceVpcId
- * @property list<StringFilter> $ResourceAwsEc2InstanceSubnetId
- * @property list<DateFilter> $ResourceAwsEc2InstanceLaunchedAt
- * @property list<StringFilter> $ResourceAwsS3BucketOwnerId
- * @property list<StringFilter> $ResourceAwsS3BucketOwnerName
- * @property list<StringFilter> $ResourceAwsIamAccessKeyUserName
- * @property list<StringFilter> $ResourceAwsIamAccessKeyPrincipalName
- * @property list<StringFilter> $ResourceAwsIamAccessKeyStatus
- * @property list<DateFilter> $ResourceAwsIamAccessKeyCreatedAt
- * @property list<StringFilter> $ResourceAwsIamUserUserName
- * @property list<StringFilter> $ResourceContainerName
- * @property list<StringFilter> $ResourceContainerImageId
- * @property list<StringFilter> $ResourceContainerImageName
- * @property list<DateFilter> $ResourceContainerLaunchedAt
- * @property list<MapFilter> $ResourceDetailsOther
- * @property list<StringFilter> $ComplianceStatus
- * @property list<StringFilter> $VerificationState
- * @property list<StringFilter> $WorkflowState
- * @property list<StringFilter> $WorkflowStatus
- * @property list<StringFilter> $RecordState
- * @property list<StringFilter> $RelatedFindingsProductArn
- * @property list<StringFilter> $RelatedFindingsId
- * @property list<StringFilter> $NoteText
- * @property list<DateFilter> $NoteUpdatedAt
- * @property list<StringFilter> $NoteUpdatedBy
- * @property list<KeywordFilter> $Keyword
- * @property list<NumberFilter> $FindingProviderFieldsConfidence
- * @property list<NumberFilter> $FindingProviderFieldsCriticality
- * @property list<StringFilter> $FindingProviderFieldsRelatedFindingsId
- * @property list<StringFilter> $FindingProviderFieldsRelatedFindingsProductArn
- * @property list<StringFilter> $FindingProviderFieldsSeverityLabel
- * @property list<StringFilter> $FindingProviderFieldsSeverityOriginal
- * @property list<StringFilter> $FindingProviderFieldsTypes
- * @property list<BooleanFilter> $Sample
- * @property list<StringFilter> $ComplianceSecurityControlId
- * @property list<StringFilter> $ComplianceAssociatedStandardsId
- * @property list<StringFilter> $VulnerabilitiesExploitAvailable
- * @property list<StringFilter> $VulnerabilitiesFixAvailable
- * @property list<StringFilter> $ComplianceSecurityControlParametersName
- * @property list<StringFilter> $ComplianceSecurityControlParametersValue
- * @property list<StringFilter> $AwsAccountName
- * @property list<StringFilter> $ResourceApplicationName
- * @property list<StringFilter> $ResourceApplicationArn
+ * @property list<StringFilter>|null $ProductArn
+ * @property list<StringFilter>|null $AwsAccountId
+ * @property list<StringFilter>|null $Id
+ * @property list<StringFilter>|null $GeneratorId
+ * @property list<StringFilter>|null $Region
+ * @property list<StringFilter>|null $Type
+ * @property list<DateFilter>|null $FirstObservedAt
+ * @property list<DateFilter>|null $LastObservedAt
+ * @property list<DateFilter>|null $CreatedAt
+ * @property list<DateFilter>|null $UpdatedAt
+ * @property list<NumberFilter>|null $SeverityProduct
+ * @property list<NumberFilter>|null $SeverityNormalized
+ * @property list<StringFilter>|null $SeverityLabel
+ * @property list<NumberFilter>|null $Confidence
+ * @property list<NumberFilter>|null $Criticality
+ * @property list<StringFilter>|null $Title
+ * @property list<StringFilter>|null $Description
+ * @property list<StringFilter>|null $RecommendationText
+ * @property list<StringFilter>|null $SourceUrl
+ * @property list<MapFilter>|null $ProductFields
+ * @property list<StringFilter>|null $ProductName
+ * @property list<StringFilter>|null $CompanyName
+ * @property list<MapFilter>|null $UserDefinedFields
+ * @property list<StringFilter>|null $MalwareName
+ * @property list<StringFilter>|null $MalwareType
+ * @property list<StringFilter>|null $MalwarePath
+ * @property list<StringFilter>|null $MalwareState
+ * @property list<StringFilter>|null $NetworkDirection
+ * @property list<StringFilter>|null $NetworkProtocol
+ * @property list<IpFilter>|null $NetworkSourceIpV4
+ * @property list<IpFilter>|null $NetworkSourceIpV6
+ * @property list<NumberFilter>|null $NetworkSourcePort
+ * @property list<StringFilter>|null $NetworkSourceDomain
+ * @property list<StringFilter>|null $NetworkSourceMac
+ * @property list<IpFilter>|null $NetworkDestinationIpV4
+ * @property list<IpFilter>|null $NetworkDestinationIpV6
+ * @property list<NumberFilter>|null $NetworkDestinationPort
+ * @property list<StringFilter>|null $NetworkDestinationDomain
+ * @property list<StringFilter>|null $ProcessName
+ * @property list<StringFilter>|null $ProcessPath
+ * @property list<NumberFilter>|null $ProcessPid
+ * @property list<NumberFilter>|null $ProcessParentPid
+ * @property list<DateFilter>|null $ProcessLaunchedAt
+ * @property list<DateFilter>|null $ProcessTerminatedAt
+ * @property list<StringFilter>|null $ThreatIntelIndicatorType
+ * @property list<StringFilter>|null $ThreatIntelIndicatorValue
+ * @property list<StringFilter>|null $ThreatIntelIndicatorCategory
+ * @property list<DateFilter>|null $ThreatIntelIndicatorLastObservedAt
+ * @property list<StringFilter>|null $ThreatIntelIndicatorSource
+ * @property list<StringFilter>|null $ThreatIntelIndicatorSourceUrl
+ * @property list<StringFilter>|null $ResourceType
+ * @property list<StringFilter>|null $ResourceId
+ * @property list<StringFilter>|null $ResourcePartition
+ * @property list<StringFilter>|null $ResourceRegion
+ * @property list<MapFilter>|null $ResourceTags
+ * @property list<StringFilter>|null $ResourceAwsEc2InstanceType
+ * @property list<StringFilter>|null $ResourceAwsEc2InstanceImageId
+ * @property list<IpFilter>|null $ResourceAwsEc2InstanceIpV4Addresses
+ * @property list<IpFilter>|null $ResourceAwsEc2InstanceIpV6Addresses
+ * @property list<StringFilter>|null $ResourceAwsEc2InstanceKeyName
+ * @property list<StringFilter>|null $ResourceAwsEc2InstanceIamInstanceProfileArn
+ * @property list<StringFilter>|null $ResourceAwsEc2InstanceVpcId
+ * @property list<StringFilter>|null $ResourceAwsEc2InstanceSubnetId
+ * @property list<DateFilter>|null $ResourceAwsEc2InstanceLaunchedAt
+ * @property list<StringFilter>|null $ResourceAwsS3BucketOwnerId
+ * @property list<StringFilter>|null $ResourceAwsS3BucketOwnerName
+ * @property list<StringFilter>|null $ResourceAwsIamAccessKeyUserName
+ * @property list<StringFilter>|null $ResourceAwsIamAccessKeyPrincipalName
+ * @property list<StringFilter>|null $ResourceAwsIamAccessKeyStatus
+ * @property list<DateFilter>|null $ResourceAwsIamAccessKeyCreatedAt
+ * @property list<StringFilter>|null $ResourceAwsIamUserUserName
+ * @property list<StringFilter>|null $ResourceContainerName
+ * @property list<StringFilter>|null $ResourceContainerImageId
+ * @property list<StringFilter>|null $ResourceContainerImageName
+ * @property list<DateFilter>|null $ResourceContainerLaunchedAt
+ * @property list<MapFilter>|null $ResourceDetailsOther
+ * @property list<StringFilter>|null $ComplianceStatus
+ * @property list<StringFilter>|null $VerificationState
+ * @property list<StringFilter>|null $WorkflowState
+ * @property list<StringFilter>|null $WorkflowStatus
+ * @property list<StringFilter>|null $RecordState
+ * @property list<StringFilter>|null $RelatedFindingsProductArn
+ * @property list<StringFilter>|null $RelatedFindingsId
+ * @property list<StringFilter>|null $NoteText
+ * @property list<DateFilter>|null $NoteUpdatedAt
+ * @property list<StringFilter>|null $NoteUpdatedBy
+ * @property list<KeywordFilter>|null $Keyword
+ * @property list<NumberFilter>|null $FindingProviderFieldsConfidence
+ * @property list<NumberFilter>|null $FindingProviderFieldsCriticality
+ * @property list<StringFilter>|null $FindingProviderFieldsRelatedFindingsId
+ * @property list<StringFilter>|null $FindingProviderFieldsRelatedFindingsProductArn
+ * @property list<StringFilter>|null $FindingProviderFieldsSeverityLabel
+ * @property list<StringFilter>|null $FindingProviderFieldsSeverityOriginal
+ * @property list<StringFilter>|null $FindingProviderFieldsTypes
+ * @property list<BooleanFilter>|null $Sample
+ * @property list<StringFilter>|null $ComplianceSecurityControlId
+ * @property list<StringFilter>|null $ComplianceAssociatedStandardsId
+ * @property list<StringFilter>|null $VulnerabilitiesExploitAvailable
+ * @property list<StringFilter>|null $VulnerabilitiesFixAvailable
+ * @property list<StringFilter>|null $ComplianceSecurityControlParametersName
+ * @property list<StringFilter>|null $ComplianceSecurityControlParametersValue
+ * @property list<StringFilter>|null $AwsAccountName
+ * @property list<StringFilter>|null $ResourceApplicationName
+ * @property list<StringFilter>|null $ResourceApplicationArn
  */
 class AwsSecurityFindingFilters extends Shape
 {
     /**
      * @param array{
-     *     ProductArn?: list<StringFilter>,
-     *     AwsAccountId?: list<StringFilter>,
-     *     Id?: list<StringFilter>,
-     *     GeneratorId?: list<StringFilter>,
-     *     Region?: list<StringFilter>,
-     *     Type?: list<StringFilter>,
-     *     FirstObservedAt?: list<DateFilter>,
-     *     LastObservedAt?: list<DateFilter>,
-     *     CreatedAt?: list<DateFilter>,
-     *     UpdatedAt?: list<DateFilter>,
-     *     SeverityProduct?: list<NumberFilter>,
-     *     SeverityNormalized?: list<NumberFilter>,
-     *     SeverityLabel?: list<StringFilter>,
-     *     Confidence?: list<NumberFilter>,
-     *     Criticality?: list<NumberFilter>,
-     *     Title?: list<StringFilter>,
-     *     Description?: list<StringFilter>,
-     *     RecommendationText?: list<StringFilter>,
-     *     SourceUrl?: list<StringFilter>,
-     *     ProductFields?: list<MapFilter>,
-     *     ProductName?: list<StringFilter>,
-     *     CompanyName?: list<StringFilter>,
-     *     UserDefinedFields?: list<MapFilter>,
-     *     MalwareName?: list<StringFilter>,
-     *     MalwareType?: list<StringFilter>,
-     *     MalwarePath?: list<StringFilter>,
-     *     MalwareState?: list<StringFilter>,
-     *     NetworkDirection?: list<StringFilter>,
-     *     NetworkProtocol?: list<StringFilter>,
-     *     NetworkSourceIpV4?: list<IpFilter>,
-     *     NetworkSourceIpV6?: list<IpFilter>,
-     *     NetworkSourcePort?: list<NumberFilter>,
-     *     NetworkSourceDomain?: list<StringFilter>,
-     *     NetworkSourceMac?: list<StringFilter>,
-     *     NetworkDestinationIpV4?: list<IpFilter>,
-     *     NetworkDestinationIpV6?: list<IpFilter>,
-     *     NetworkDestinationPort?: list<NumberFilter>,
-     *     NetworkDestinationDomain?: list<StringFilter>,
-     *     ProcessName?: list<StringFilter>,
-     *     ProcessPath?: list<StringFilter>,
-     *     ProcessPid?: list<NumberFilter>,
-     *     ProcessParentPid?: list<NumberFilter>,
-     *     ProcessLaunchedAt?: list<DateFilter>,
-     *     ProcessTerminatedAt?: list<DateFilter>,
-     *     ThreatIntelIndicatorType?: list<StringFilter>,
-     *     ThreatIntelIndicatorValue?: list<StringFilter>,
-     *     ThreatIntelIndicatorCategory?: list<StringFilter>,
-     *     ThreatIntelIndicatorLastObservedAt?: list<DateFilter>,
-     *     ThreatIntelIndicatorSource?: list<StringFilter>,
-     *     ThreatIntelIndicatorSourceUrl?: list<StringFilter>,
-     *     ResourceType?: list<StringFilter>,
-     *     ResourceId?: list<StringFilter>,
-     *     ResourcePartition?: list<StringFilter>,
-     *     ResourceRegion?: list<StringFilter>,
-     *     ResourceTags?: list<MapFilter>,
-     *     ResourceAwsEc2InstanceType?: list<StringFilter>,
-     *     ResourceAwsEc2InstanceImageId?: list<StringFilter>,
-     *     ResourceAwsEc2InstanceIpV4Addresses?: list<IpFilter>,
-     *     ResourceAwsEc2InstanceIpV6Addresses?: list<IpFilter>,
-     *     ResourceAwsEc2InstanceKeyName?: list<StringFilter>,
-     *     ResourceAwsEc2InstanceIamInstanceProfileArn?: list<StringFilter>,
-     *     ResourceAwsEc2InstanceVpcId?: list<StringFilter>,
-     *     ResourceAwsEc2InstanceSubnetId?: list<StringFilter>,
-     *     ResourceAwsEc2InstanceLaunchedAt?: list<DateFilter>,
-     *     ResourceAwsS3BucketOwnerId?: list<StringFilter>,
-     *     ResourceAwsS3BucketOwnerName?: list<StringFilter>,
-     *     ResourceAwsIamAccessKeyUserName?: list<StringFilter>,
-     *     ResourceAwsIamAccessKeyPrincipalName?: list<StringFilter>,
-     *     ResourceAwsIamAccessKeyStatus?: list<StringFilter>,
-     *     ResourceAwsIamAccessKeyCreatedAt?: list<DateFilter>,
-     *     ResourceAwsIamUserUserName?: list<StringFilter>,
-     *     ResourceContainerName?: list<StringFilter>,
-     *     ResourceContainerImageId?: list<StringFilter>,
-     *     ResourceContainerImageName?: list<StringFilter>,
-     *     ResourceContainerLaunchedAt?: list<DateFilter>,
-     *     ResourceDetailsOther?: list<MapFilter>,
-     *     ComplianceStatus?: list<StringFilter>,
-     *     VerificationState?: list<StringFilter>,
-     *     WorkflowState?: list<StringFilter>,
-     *     WorkflowStatus?: list<StringFilter>,
-     *     RecordState?: list<StringFilter>,
-     *     RelatedFindingsProductArn?: list<StringFilter>,
-     *     RelatedFindingsId?: list<StringFilter>,
-     *     NoteText?: list<StringFilter>,
-     *     NoteUpdatedAt?: list<DateFilter>,
-     *     NoteUpdatedBy?: list<StringFilter>,
-     *     Keyword?: list<KeywordFilter>,
-     *     FindingProviderFieldsConfidence?: list<NumberFilter>,
-     *     FindingProviderFieldsCriticality?: list<NumberFilter>,
-     *     FindingProviderFieldsRelatedFindingsId?: list<StringFilter>,
-     *     FindingProviderFieldsRelatedFindingsProductArn?: list<StringFilter>,
-     *     FindingProviderFieldsSeverityLabel?: list<StringFilter>,
-     *     FindingProviderFieldsSeverityOriginal?: list<StringFilter>,
-     *     FindingProviderFieldsTypes?: list<StringFilter>,
-     *     Sample?: list<BooleanFilter>,
-     *     ComplianceSecurityControlId?: list<StringFilter>,
-     *     ComplianceAssociatedStandardsId?: list<StringFilter>,
-     *     VulnerabilitiesExploitAvailable?: list<StringFilter>,
-     *     VulnerabilitiesFixAvailable?: list<StringFilter>,
-     *     ComplianceSecurityControlParametersName?: list<StringFilter>,
-     *     ComplianceSecurityControlParametersValue?: list<StringFilter>,
-     *     AwsAccountName?: list<StringFilter>,
-     *     ResourceApplicationName?: list<StringFilter>,
-     *     ResourceApplicationArn?: list<StringFilter>
+     *     ProductArn?: list<StringFilter>|null,
+     *     AwsAccountId?: list<StringFilter>|null,
+     *     Id?: list<StringFilter>|null,
+     *     GeneratorId?: list<StringFilter>|null,
+     *     Region?: list<StringFilter>|null,
+     *     Type?: list<StringFilter>|null,
+     *     FirstObservedAt?: list<DateFilter>|null,
+     *     LastObservedAt?: list<DateFilter>|null,
+     *     CreatedAt?: list<DateFilter>|null,
+     *     UpdatedAt?: list<DateFilter>|null,
+     *     SeverityProduct?: list<NumberFilter>|null,
+     *     SeverityNormalized?: list<NumberFilter>|null,
+     *     SeverityLabel?: list<StringFilter>|null,
+     *     Confidence?: list<NumberFilter>|null,
+     *     Criticality?: list<NumberFilter>|null,
+     *     Title?: list<StringFilter>|null,
+     *     Description?: list<StringFilter>|null,
+     *     RecommendationText?: list<StringFilter>|null,
+     *     SourceUrl?: list<StringFilter>|null,
+     *     ProductFields?: list<MapFilter>|null,
+     *     ProductName?: list<StringFilter>|null,
+     *     CompanyName?: list<StringFilter>|null,
+     *     UserDefinedFields?: list<MapFilter>|null,
+     *     MalwareName?: list<StringFilter>|null,
+     *     MalwareType?: list<StringFilter>|null,
+     *     MalwarePath?: list<StringFilter>|null,
+     *     MalwareState?: list<StringFilter>|null,
+     *     NetworkDirection?: list<StringFilter>|null,
+     *     NetworkProtocol?: list<StringFilter>|null,
+     *     NetworkSourceIpV4?: list<IpFilter>|null,
+     *     NetworkSourceIpV6?: list<IpFilter>|null,
+     *     NetworkSourcePort?: list<NumberFilter>|null,
+     *     NetworkSourceDomain?: list<StringFilter>|null,
+     *     NetworkSourceMac?: list<StringFilter>|null,
+     *     NetworkDestinationIpV4?: list<IpFilter>|null,
+     *     NetworkDestinationIpV6?: list<IpFilter>|null,
+     *     NetworkDestinationPort?: list<NumberFilter>|null,
+     *     NetworkDestinationDomain?: list<StringFilter>|null,
+     *     ProcessName?: list<StringFilter>|null,
+     *     ProcessPath?: list<StringFilter>|null,
+     *     ProcessPid?: list<NumberFilter>|null,
+     *     ProcessParentPid?: list<NumberFilter>|null,
+     *     ProcessLaunchedAt?: list<DateFilter>|null,
+     *     ProcessTerminatedAt?: list<DateFilter>|null,
+     *     ThreatIntelIndicatorType?: list<StringFilter>|null,
+     *     ThreatIntelIndicatorValue?: list<StringFilter>|null,
+     *     ThreatIntelIndicatorCategory?: list<StringFilter>|null,
+     *     ThreatIntelIndicatorLastObservedAt?: list<DateFilter>|null,
+     *     ThreatIntelIndicatorSource?: list<StringFilter>|null,
+     *     ThreatIntelIndicatorSourceUrl?: list<StringFilter>|null,
+     *     ResourceType?: list<StringFilter>|null,
+     *     ResourceId?: list<StringFilter>|null,
+     *     ResourcePartition?: list<StringFilter>|null,
+     *     ResourceRegion?: list<StringFilter>|null,
+     *     ResourceTags?: list<MapFilter>|null,
+     *     ResourceAwsEc2InstanceType?: list<StringFilter>|null,
+     *     ResourceAwsEc2InstanceImageId?: list<StringFilter>|null,
+     *     ResourceAwsEc2InstanceIpV4Addresses?: list<IpFilter>|null,
+     *     ResourceAwsEc2InstanceIpV6Addresses?: list<IpFilter>|null,
+     *     ResourceAwsEc2InstanceKeyName?: list<StringFilter>|null,
+     *     ResourceAwsEc2InstanceIamInstanceProfileArn?: list<StringFilter>|null,
+     *     ResourceAwsEc2InstanceVpcId?: list<StringFilter>|null,
+     *     ResourceAwsEc2InstanceSubnetId?: list<StringFilter>|null,
+     *     ResourceAwsEc2InstanceLaunchedAt?: list<DateFilter>|null,
+     *     ResourceAwsS3BucketOwnerId?: list<StringFilter>|null,
+     *     ResourceAwsS3BucketOwnerName?: list<StringFilter>|null,
+     *     ResourceAwsIamAccessKeyUserName?: list<StringFilter>|null,
+     *     ResourceAwsIamAccessKeyPrincipalName?: list<StringFilter>|null,
+     *     ResourceAwsIamAccessKeyStatus?: list<StringFilter>|null,
+     *     ResourceAwsIamAccessKeyCreatedAt?: list<DateFilter>|null,
+     *     ResourceAwsIamUserUserName?: list<StringFilter>|null,
+     *     ResourceContainerName?: list<StringFilter>|null,
+     *     ResourceContainerImageId?: list<StringFilter>|null,
+     *     ResourceContainerImageName?: list<StringFilter>|null,
+     *     ResourceContainerLaunchedAt?: list<DateFilter>|null,
+     *     ResourceDetailsOther?: list<MapFilter>|null,
+     *     ComplianceStatus?: list<StringFilter>|null,
+     *     VerificationState?: list<StringFilter>|null,
+     *     WorkflowState?: list<StringFilter>|null,
+     *     WorkflowStatus?: list<StringFilter>|null,
+     *     RecordState?: list<StringFilter>|null,
+     *     RelatedFindingsProductArn?: list<StringFilter>|null,
+     *     RelatedFindingsId?: list<StringFilter>|null,
+     *     NoteText?: list<StringFilter>|null,
+     *     NoteUpdatedAt?: list<DateFilter>|null,
+     *     NoteUpdatedBy?: list<StringFilter>|null,
+     *     Keyword?: list<KeywordFilter>|null,
+     *     FindingProviderFieldsConfidence?: list<NumberFilter>|null,
+     *     FindingProviderFieldsCriticality?: list<NumberFilter>|null,
+     *     FindingProviderFieldsRelatedFindingsId?: list<StringFilter>|null,
+     *     FindingProviderFieldsRelatedFindingsProductArn?: list<StringFilter>|null,
+     *     FindingProviderFieldsSeverityLabel?: list<StringFilter>|null,
+     *     FindingProviderFieldsSeverityOriginal?: list<StringFilter>|null,
+     *     FindingProviderFieldsTypes?: list<StringFilter>|null,
+     *     Sample?: list<BooleanFilter>|null,
+     *     ComplianceSecurityControlId?: list<StringFilter>|null,
+     *     ComplianceAssociatedStandardsId?: list<StringFilter>|null,
+     *     VulnerabilitiesExploitAvailable?: list<StringFilter>|null,
+     *     VulnerabilitiesFixAvailable?: list<StringFilter>|null,
+     *     ComplianceSecurityControlParametersName?: list<StringFilter>|null,
+     *     ComplianceSecurityControlParametersValue?: list<StringFilter>|null,
+     *     AwsAccountName?: list<StringFilter>|null,
+     *     ResourceApplicationName?: list<StringFilter>|null,
+     *     ResourceApplicationArn?: list<StringFilter>|null
      * } $args
      */
     public function __construct(array $args = [])

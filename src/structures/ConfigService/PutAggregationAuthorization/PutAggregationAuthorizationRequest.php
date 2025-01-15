@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AuthorizedAccountId
  * @property string $AuthorizedAwsRegion
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class PutAggregationAuthorizationRequest extends Request
 {
@@ -15,7 +15,7 @@ class PutAggregationAuthorizationRequest extends Request
      * @param array{
      *     AuthorizedAccountId: string,
      *     AuthorizedAwsRegion: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

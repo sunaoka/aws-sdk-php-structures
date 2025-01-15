@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $NetworkInterfaceId
- * @property string $AwsAccountId
- * @property string $AwsService
+ * @property string|null $AwsAccountId
+ * @property string|null $AwsService
  * @property 'INSTANCE-ATTACH'|'EIP-ASSOCIATE' $Permission
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class CreateNetworkInterfacePermissionRequest extends Request
 {
     /**
      * @param array{
      *     NetworkInterfaceId: string,
-     *     AwsAccountId?: string,
-     *     AwsService?: string,
+     *     AwsAccountId?: string|null,
+     *     AwsService?: string|null,
      *     Permission: 'INSTANCE-ATTACH'|'EIP-ASSOCIATE',
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

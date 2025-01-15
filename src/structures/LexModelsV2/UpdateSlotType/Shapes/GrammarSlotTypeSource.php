@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $s3BucketName
  * @property string $s3ObjectKey
- * @property string $kmsKeyArn
+ * @property string|null $kmsKeyArn
  */
 class GrammarSlotTypeSource extends Shape
 {
@@ -15,7 +15,7 @@ class GrammarSlotTypeSource extends Shape
      * @param array{
      *     s3BucketName: string,
      *     s3ObjectKey: string,
-     *     kmsKeyArn?: string
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

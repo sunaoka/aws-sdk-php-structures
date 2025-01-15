@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $Visibility
- * @property ShortFormatText $FormatText
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
+ * @property ShortFormatText|null $FormatText
  */
 class VisualTitleLabelOptions extends Shape
 {
     /**
      * @param array{
-     *     Visibility?: 'HIDDEN'|'VISIBLE',
-     *     FormatText?: ShortFormatText
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     FormatText?: ShortFormatText|null
      * } $args
      */
     public function __construct(array $args = [])

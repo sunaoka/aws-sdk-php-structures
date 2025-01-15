@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property int $CodeSize
+ * @property string|null $Arn
+ * @property int|null $CodeSize
  */
 class AwsLambdaFunctionLayer extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     CodeSize?: int
+     *     Arn?: string|null,
+     *     CodeSize?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTopic\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SINGULAR'|'RANGE'|'COLLECTIVE' $ConstantType
- * @property RangeConstant $RangeConstant
+ * @property 'SINGULAR'|'RANGE'|'COLLECTIVE'|null $ConstantType
+ * @property RangeConstant|null $RangeConstant
  */
 class TopicRangeFilterConstant extends Shape
 {
     /**
      * @param array{
-     *     ConstantType?: 'SINGULAR'|'RANGE'|'COLLECTIVE',
-     *     RangeConstant?: RangeConstant
+     *     ConstantType?: 'SINGULAR'|'RANGE'|'COLLECTIVE'|null,
+     *     RangeConstant?: RangeConstant|null
      * } $args
      */
     public function __construct(array $args = [])

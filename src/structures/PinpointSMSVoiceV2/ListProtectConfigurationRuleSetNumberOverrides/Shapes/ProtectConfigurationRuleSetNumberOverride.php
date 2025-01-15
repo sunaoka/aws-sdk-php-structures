@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $DestinationPhoneNumber
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  * @property 'ALLOW'|'BLOCK' $Action
- * @property string $IsoCountryCode
- * @property \Aws\Api\DateTimeResult $ExpirationTimestamp
+ * @property string|null $IsoCountryCode
+ * @property \Aws\Api\DateTimeResult|null $ExpirationTimestamp
  */
 class ProtectConfigurationRuleSetNumberOverride extends Shape
 {
@@ -18,8 +18,8 @@ class ProtectConfigurationRuleSetNumberOverride extends Shape
      *     DestinationPhoneNumber: string,
      *     CreatedTimestamp: \Aws\Api\DateTimeResult,
      *     Action: 'ALLOW'|'BLOCK',
-     *     IsoCountryCode?: string,
-     *     ExpirationTimestamp?: \Aws\Api\DateTimeResult
+     *     IsoCountryCode?: string|null,
+     *     ExpirationTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

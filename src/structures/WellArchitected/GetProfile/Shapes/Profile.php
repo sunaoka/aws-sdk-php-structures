@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\WellArchitected\GetProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProfileArn
- * @property string $ProfileVersion
- * @property string $ProfileName
- * @property string $ProfileDescription
- * @property list<ProfileQuestion> $ProfileQuestions
- * @property string $Owner
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $UpdatedAt
- * @property string $ShareInvitationId
- * @property array<string, string> $Tags
+ * @property string|null $ProfileArn
+ * @property string|null $ProfileVersion
+ * @property string|null $ProfileName
+ * @property string|null $ProfileDescription
+ * @property list<ProfileQuestion>|null $ProfileQuestions
+ * @property string|null $Owner
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property string|null $ShareInvitationId
+ * @property array<string, string>|null $Tags
  */
 class Profile extends Shape
 {
     /**
      * @param array{
-     *     ProfileArn?: string,
-     *     ProfileVersion?: string,
-     *     ProfileName?: string,
-     *     ProfileDescription?: string,
-     *     ProfileQuestions?: list<ProfileQuestion>,
-     *     Owner?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult,
-     *     ShareInvitationId?: string,
-     *     Tags?: array<string, string>
+     *     ProfileArn?: string|null,
+     *     ProfileVersion?: string|null,
+     *     ProfileName?: string|null,
+     *     ProfileDescription?: string|null,
+     *     ProfileQuestions?: list<ProfileQuestion>|null,
+     *     Owner?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     ShareInvitationId?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

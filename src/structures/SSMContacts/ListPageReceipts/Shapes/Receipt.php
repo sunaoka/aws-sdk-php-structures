@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\SSMContacts\ListPageReceipts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContactChannelArn
+ * @property string|null $ContactChannelArn
  * @property 'DELIVERED'|'ERROR'|'READ'|'SENT'|'STOP' $ReceiptType
- * @property string $ReceiptInfo
+ * @property string|null $ReceiptInfo
  * @property \Aws\Api\DateTimeResult $ReceiptTime
  */
 class Receipt extends Shape
 {
     /**
      * @param array{
-     *     ContactChannelArn?: string,
+     *     ContactChannelArn?: string|null,
      *     ReceiptType: 'DELIVERED'|'ERROR'|'READ'|'SENT'|'STOP',
-     *     ReceiptInfo?: string,
+     *     ReceiptInfo?: string|null,
      *     ReceiptTime: \Aws\Api\DateTimeResult
      * } $args
      */

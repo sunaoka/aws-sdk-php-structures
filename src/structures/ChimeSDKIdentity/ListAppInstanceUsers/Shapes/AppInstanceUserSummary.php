@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\ListAppInstanceUsers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AppInstanceUserArn
- * @property string $Name
- * @property string $Metadata
+ * @property string|null $AppInstanceUserArn
+ * @property string|null $Name
+ * @property string|null $Metadata
  */
 class AppInstanceUserSummary extends Shape
 {
     /**
      * @param array{
-     *     AppInstanceUserArn?: string,
-     *     Name?: string,
-     *     Metadata?: string
+     *     AppInstanceUserArn?: string|null,
+     *     Name?: string|null,
+     *     Metadata?: string|null
      * } $args
      */
     public function __construct(array $args = [])

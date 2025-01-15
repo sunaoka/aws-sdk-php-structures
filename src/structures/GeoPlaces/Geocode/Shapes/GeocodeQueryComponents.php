@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\Geocode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Country
- * @property string $Region
- * @property string $SubRegion
- * @property string $Locality
- * @property string $District
- * @property string $Street
- * @property string $AddressNumber
- * @property string $PostalCode
+ * @property string|null $Country
+ * @property string|null $Region
+ * @property string|null $SubRegion
+ * @property string|null $Locality
+ * @property string|null $District
+ * @property string|null $Street
+ * @property string|null $AddressNumber
+ * @property string|null $PostalCode
  */
 class GeocodeQueryComponents extends Shape
 {
     /**
      * @param array{
-     *     Country?: string,
-     *     Region?: string,
-     *     SubRegion?: string,
-     *     Locality?: string,
-     *     District?: string,
-     *     Street?: string,
-     *     AddressNumber?: string,
-     *     PostalCode?: string
+     *     Country?: string|null,
+     *     Region?: string|null,
+     *     SubRegion?: string|null,
+     *     Locality?: string|null,
+     *     District?: string|null,
+     *     Street?: string|null,
+     *     AddressNumber?: string|null,
+     *     PostalCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomation\GetDataAutomationProject\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ImageStandardExtraction $extraction
- * @property ImageStandardGenerativeField $generativeField
+ * @property ImageStandardExtraction|null $extraction
+ * @property ImageStandardGenerativeField|null $generativeField
  */
 class ImageStandardOutputConfiguration extends Shape
 {
     /**
      * @param array{
-     *     extraction?: ImageStandardExtraction,
-     *     generativeField?: ImageStandardGenerativeField
+     *     extraction?: ImageStandardExtraction|null,
+     *     generativeField?: ImageStandardGenerativeField|null
      * } $args
      */
     public function __construct(array $args = [])

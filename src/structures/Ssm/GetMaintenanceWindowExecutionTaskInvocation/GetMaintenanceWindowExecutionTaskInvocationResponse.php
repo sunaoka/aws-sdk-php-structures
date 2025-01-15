@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Ssm\GetMaintenanceWindowExecutionTaskInvocation
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $WindowExecutionId
- * @property string $TaskExecutionId
- * @property string $InvocationId
- * @property string $ExecutionId
- * @property 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA' $TaskType
- * @property string $Parameters
- * @property 'PENDING'|'IN_PROGRESS'|'SUCCESS'|'FAILED'|'TIMED_OUT'|'CANCELLING'|'CANCELLED'|'SKIPPED_OVERLAPPING' $Status
- * @property string $StatusDetails
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $OwnerInformation
- * @property string $WindowTargetId
+ * @property string|null $WindowExecutionId
+ * @property string|null $TaskExecutionId
+ * @property string|null $InvocationId
+ * @property string|null $ExecutionId
+ * @property 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA'|null $TaskType
+ * @property string|null $Parameters
+ * @property 'PENDING'|'IN_PROGRESS'|'SUCCESS'|'FAILED'|'TIMED_OUT'|'CANCELLING'|'CANCELLED'|'SKIPPED_OVERLAPPING'|null $Status
+ * @property string|null $StatusDetails
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $OwnerInformation
+ * @property string|null $WindowTargetId
  */
 class GetMaintenanceWindowExecutionTaskInvocationResponse extends Response
 {

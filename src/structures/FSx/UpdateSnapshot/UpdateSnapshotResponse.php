@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateSnapshot;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Snapshot $Snapshot
+ * @property Shapes\Snapshot|null $Snapshot
  */
 class UpdateSnapshotResponse extends Response
 {

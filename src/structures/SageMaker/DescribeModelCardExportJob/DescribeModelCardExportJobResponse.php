@@ -13,8 +13,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\ModelCardExportOutputConfig $OutputConfig
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $LastModifiedAt
- * @property string $FailureReason
- * @property Shapes\ModelCardExportArtifacts $ExportArtifacts
+ * @property string|null $FailureReason
+ * @property Shapes\ModelCardExportArtifacts|null $ExportArtifacts
  */
 class DescribeModelCardExportJobResponse extends Response
 {

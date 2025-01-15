@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DescribeDirectConnectGatewayAttac
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $directConnectGatewayId
- * @property string $virtualInterfaceId
- * @property int $maxResults
- * @property string $nextToken
+ * @property string|null $directConnectGatewayId
+ * @property string|null $virtualInterfaceId
+ * @property int|null $maxResults
+ * @property string|null $nextToken
  */
 class DescribeDirectConnectGatewayAttachmentsRequest extends Request
 {
     /**
      * @param array{
-     *     directConnectGatewayId?: string,
-     *     virtualInterfaceId?: string,
-     *     maxResults?: int,
-     *     nextToken?: string
+     *     directConnectGatewayId?: string|null,
+     *     virtualInterfaceId?: string|null,
+     *     maxResults?: int|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

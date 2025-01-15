@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\DescribeAgents\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ipAddress
- * @property string $macAddress
+ * @property string|null $ipAddress
+ * @property string|null $macAddress
  */
 class AgentNetworkInfo extends Shape
 {
     /**
      * @param array{
-     *     ipAddress?: string,
-     *     macAddress?: string
+     *     ipAddress?: string|null,
+     *     macAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeOutboundConnections\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DomainInformationContainer $LocalDomainInfo
- * @property DomainInformationContainer $RemoteDomainInfo
- * @property string $ConnectionId
- * @property string $ConnectionAlias
- * @property OutboundConnectionStatus $ConnectionStatus
- * @property 'DIRECT'|'VPC_ENDPOINT' $ConnectionMode
- * @property ConnectionProperties $ConnectionProperties
+ * @property DomainInformationContainer|null $LocalDomainInfo
+ * @property DomainInformationContainer|null $RemoteDomainInfo
+ * @property string|null $ConnectionId
+ * @property string|null $ConnectionAlias
+ * @property OutboundConnectionStatus|null $ConnectionStatus
+ * @property 'DIRECT'|'VPC_ENDPOINT'|null $ConnectionMode
+ * @property ConnectionProperties|null $ConnectionProperties
  */
 class OutboundConnection extends Shape
 {
     /**
      * @param array{
-     *     LocalDomainInfo?: DomainInformationContainer,
-     *     RemoteDomainInfo?: DomainInformationContainer,
-     *     ConnectionId?: string,
-     *     ConnectionAlias?: string,
-     *     ConnectionStatus?: OutboundConnectionStatus,
-     *     ConnectionMode?: 'DIRECT'|'VPC_ENDPOINT',
-     *     ConnectionProperties?: ConnectionProperties
+     *     LocalDomainInfo?: DomainInformationContainer|null,
+     *     RemoteDomainInfo?: DomainInformationContainer|null,
+     *     ConnectionId?: string|null,
+     *     ConnectionAlias?: string|null,
+     *     ConnectionStatus?: OutboundConnectionStatus|null,
+     *     ConnectionMode?: 'DIRECT'|'VPC_ENDPOINT'|null,
+     *     ConnectionProperties?: ConnectionProperties|null
      * } $args
      */
     public function __construct(array $args = [])

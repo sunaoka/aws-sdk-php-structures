@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property CopySourceImageSetInformation $sourceImageSet
- * @property CopyDestinationImageSet $destinationImageSet
+ * @property CopyDestinationImageSet|null $destinationImageSet
  */
 class CopyImageSetInformation extends Shape
 {
     /**
      * @param array{
      *     sourceImageSet: CopySourceImageSetInformation,
-     *     destinationImageSet?: CopyDestinationImageSet
+     *     destinationImageSet?: CopyDestinationImageSet|null
      * } $args
      */
     public function __construct(array $args)

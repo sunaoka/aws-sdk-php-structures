@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\ListOrganizationInsights\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $AccountId
- * @property string $OrganizationalUnitId
- * @property string $Name
- * @property 'LOW'|'MEDIUM'|'HIGH' $Severity
- * @property 'ONGOING'|'CLOSED' $Status
- * @property InsightTimeRange $InsightTimeRange
- * @property PredictionTimeRange $PredictionTimeRange
- * @property ResourceCollection $ResourceCollection
- * @property ServiceCollection $ServiceCollection
+ * @property string|null $Id
+ * @property string|null $AccountId
+ * @property string|null $OrganizationalUnitId
+ * @property string|null $Name
+ * @property 'LOW'|'MEDIUM'|'HIGH'|null $Severity
+ * @property 'ONGOING'|'CLOSED'|null $Status
+ * @property InsightTimeRange|null $InsightTimeRange
+ * @property PredictionTimeRange|null $PredictionTimeRange
+ * @property ResourceCollection|null $ResourceCollection
+ * @property ServiceCollection|null $ServiceCollection
  */
 class ProactiveOrganizationInsightSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     AccountId?: string,
-     *     OrganizationalUnitId?: string,
-     *     Name?: string,
-     *     Severity?: 'LOW'|'MEDIUM'|'HIGH',
-     *     Status?: 'ONGOING'|'CLOSED',
-     *     InsightTimeRange?: InsightTimeRange,
-     *     PredictionTimeRange?: PredictionTimeRange,
-     *     ResourceCollection?: ResourceCollection,
-     *     ServiceCollection?: ServiceCollection
+     *     Id?: string|null,
+     *     AccountId?: string|null,
+     *     OrganizationalUnitId?: string|null,
+     *     Name?: string|null,
+     *     Severity?: 'LOW'|'MEDIUM'|'HIGH'|null,
+     *     Status?: 'ONGOING'|'CLOSED'|null,
+     *     InsightTimeRange?: InsightTimeRange|null,
+     *     PredictionTimeRange?: PredictionTimeRange|null,
+     *     ResourceCollection?: ResourceCollection|null,
+     *     ServiceCollection?: ServiceCollection|null
      * } $args
      */
     public function __construct(array $args = [])

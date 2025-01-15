@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Transfer\DescribeServer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $DirectoryListingOptimization
+ * @property 'ENABLED'|'DISABLED'|null $DirectoryListingOptimization
  */
 class S3StorageOptions extends Shape
 {
     /**
-     * @param array{DirectoryListingOptimization?: 'ENABLED'|'DISABLED'} $args
+     * @param array{DirectoryListingOptimization?: 'ENABLED'|'DISABLED'|null} $args
      */
     public function __construct(array $args = [])
     {

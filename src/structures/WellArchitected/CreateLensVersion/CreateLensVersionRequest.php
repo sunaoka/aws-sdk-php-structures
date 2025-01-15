@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $LensAlias
  * @property string $LensVersion
- * @property bool $IsMajorVersion
+ * @property bool|null $IsMajorVersion
  * @property string $ClientRequestToken
  */
 class CreateLensVersionRequest extends Request
@@ -16,7 +16,7 @@ class CreateLensVersionRequest extends Request
      * @param array{
      *     LensAlias: string,
      *     LensVersion: string,
-     *     IsMajorVersion?: bool,
+     *     IsMajorVersion?: bool|null,
      *     ClientRequestToken: string
      * } $args
      */

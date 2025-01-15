@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Budgets\DescribeBudgetPerformanceHistory\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $IncludeTax
- * @property bool $IncludeSubscription
- * @property bool $UseBlended
- * @property bool $IncludeRefund
- * @property bool $IncludeCredit
- * @property bool $IncludeUpfront
- * @property bool $IncludeRecurring
- * @property bool $IncludeOtherSubscription
- * @property bool $IncludeSupport
- * @property bool $IncludeDiscount
- * @property bool $UseAmortized
+ * @property bool|null $IncludeTax
+ * @property bool|null $IncludeSubscription
+ * @property bool|null $UseBlended
+ * @property bool|null $IncludeRefund
+ * @property bool|null $IncludeCredit
+ * @property bool|null $IncludeUpfront
+ * @property bool|null $IncludeRecurring
+ * @property bool|null $IncludeOtherSubscription
+ * @property bool|null $IncludeSupport
+ * @property bool|null $IncludeDiscount
+ * @property bool|null $UseAmortized
  */
 class CostTypes extends Shape
 {
     /**
      * @param array{
-     *     IncludeTax?: bool,
-     *     IncludeSubscription?: bool,
-     *     UseBlended?: bool,
-     *     IncludeRefund?: bool,
-     *     IncludeCredit?: bool,
-     *     IncludeUpfront?: bool,
-     *     IncludeRecurring?: bool,
-     *     IncludeOtherSubscription?: bool,
-     *     IncludeSupport?: bool,
-     *     IncludeDiscount?: bool,
-     *     UseAmortized?: bool
+     *     IncludeTax?: bool|null,
+     *     IncludeSubscription?: bool|null,
+     *     UseBlended?: bool|null,
+     *     IncludeRefund?: bool|null,
+     *     IncludeCredit?: bool|null,
+     *     IncludeUpfront?: bool|null,
+     *     IncludeRecurring?: bool|null,
+     *     IncludeOtherSubscription?: bool|null,
+     *     IncludeSupport?: bool|null,
+     *     IncludeDiscount?: bool|null,
+     *     UseAmortized?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

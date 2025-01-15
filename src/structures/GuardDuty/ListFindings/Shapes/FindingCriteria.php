@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GuardDuty\ListFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, Condition> $Criterion
+ * @property array<string, Condition>|null $Criterion
  */
 class FindingCriteria extends Shape
 {
     /**
-     * @param array{Criterion?: array<string, Condition>} $args
+     * @param array{Criterion?: array<string, Condition>|null} $args
      */
     public function __construct(array $args = [])
     {

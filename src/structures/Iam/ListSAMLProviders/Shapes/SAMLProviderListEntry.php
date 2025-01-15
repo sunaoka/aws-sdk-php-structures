@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iam\ListSAMLProviders\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property \Aws\Api\DateTimeResult $ValidUntil
- * @property \Aws\Api\DateTimeResult $CreateDate
+ * @property string|null $Arn
+ * @property \Aws\Api\DateTimeResult|null $ValidUntil
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
  */
 class SAMLProviderListEntry extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     ValidUntil?: \Aws\Api\DateTimeResult,
-     *     CreateDate?: \Aws\Api\DateTimeResult
+     *     Arn?: string|null,
+     *     ValidUntil?: \Aws\Api\DateTimeResult|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

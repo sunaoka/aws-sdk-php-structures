@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\GetLaunchTemplateData\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceFamily
+ * @property string|null $InstanceFamily
  */
 class PerformanceFactorReference extends Shape
 {
     /**
-     * @param array{InstanceFamily?: string} $args
+     * @param array{InstanceFamily?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $TargetQueryTCU
- * @property AccountSettingsNotificationConfiguration $NotificationConfiguration
+ * @property AccountSettingsNotificationConfiguration|null $NotificationConfiguration
  */
 class ProvisionedCapacityRequest extends Shape
 {
     /**
      * @param array{
      *     TargetQueryTCU: int,
-     *     NotificationConfiguration?: AccountSettingsNotificationConfiguration
+     *     NotificationConfiguration?: AccountSettingsNotificationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

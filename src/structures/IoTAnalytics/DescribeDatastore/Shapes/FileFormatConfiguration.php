@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\DescribeDatastore\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property JsonConfiguration $jsonConfiguration
- * @property ParquetConfiguration $parquetConfiguration
+ * @property JsonConfiguration|null $jsonConfiguration
+ * @property ParquetConfiguration|null $parquetConfiguration
  */
 class FileFormatConfiguration extends Shape
 {
     /**
      * @param array{
-     *     jsonConfiguration?: JsonConfiguration,
-     *     parquetConfiguration?: ParquetConfiguration
+     *     jsonConfiguration?: JsonConfiguration|null,
+     *     parquetConfiguration?: ParquetConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

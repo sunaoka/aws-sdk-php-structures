@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyIpam;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $IpamId
- * @property string $Description
- * @property list<Shapes\AddIpamOperatingRegion> $AddOperatingRegions
- * @property list<Shapes\RemoveIpamOperatingRegion> $RemoveOperatingRegions
- * @property 'free'|'advanced' $Tier
- * @property bool $EnablePrivateGua
+ * @property string|null $Description
+ * @property list<Shapes\AddIpamOperatingRegion>|null $AddOperatingRegions
+ * @property list<Shapes\RemoveIpamOperatingRegion>|null $RemoveOperatingRegions
+ * @property 'free'|'advanced'|null $Tier
+ * @property bool|null $EnablePrivateGua
  */
 class ModifyIpamRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     IpamId: string,
-     *     Description?: string,
-     *     AddOperatingRegions?: list<Shapes\AddIpamOperatingRegion>,
-     *     RemoveOperatingRegions?: list<Shapes\RemoveIpamOperatingRegion>,
-     *     Tier?: 'free'|'advanced',
-     *     EnablePrivateGua?: bool
+     *     Description?: string|null,
+     *     AddOperatingRegions?: list<Shapes\AddIpamOperatingRegion>|null,
+     *     RemoveOperatingRegions?: list<Shapes\RemoveIpamOperatingRegion>|null,
+     *     Tier?: 'free'|'advanced'|null,
+     *     EnablePrivateGua?: bool|null
      * } $args
      */
     public function __construct(array $args)

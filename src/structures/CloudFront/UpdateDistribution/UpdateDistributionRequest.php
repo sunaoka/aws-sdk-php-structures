@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\DistributionConfig $DistributionConfig
  * @property string $Id
- * @property string $IfMatch
+ * @property string|null $IfMatch
  */
 class UpdateDistributionRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateDistributionRequest extends Request
      * @param array{
      *     DistributionConfig: Shapes\DistributionConfig,
      *     Id: string,
-     *     IfMatch?: string
+     *     IfMatch?: string|null
      * } $args
      */
     public function __construct(array $args)

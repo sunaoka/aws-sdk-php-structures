@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetConnectPeer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $CoreNetworkAsn
- * @property int $PeerAsn
- * @property string $CoreNetworkAddress
- * @property string $PeerAddress
+ * @property int|null $CoreNetworkAsn
+ * @property int|null $PeerAsn
+ * @property string|null $CoreNetworkAddress
+ * @property string|null $PeerAddress
  */
 class ConnectPeerBgpConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CoreNetworkAsn?: int,
-     *     PeerAsn?: int,
-     *     CoreNetworkAddress?: string,
-     *     PeerAddress?: string
+     *     CoreNetworkAsn?: int|null,
+     *     PeerAsn?: int|null,
+     *     CoreNetworkAddress?: string|null,
+     *     PeerAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

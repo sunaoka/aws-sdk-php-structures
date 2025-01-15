@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\GetNetworkInsightsAccessScopeAnalysisFindin
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NetworkInsightsAccessScopeAnalysisId
- * @property string $NetworkInsightsAccessScopeId
- * @property string $FindingId
- * @property list<PathComponent> $FindingComponents
+ * @property string|null $NetworkInsightsAccessScopeAnalysisId
+ * @property string|null $NetworkInsightsAccessScopeId
+ * @property string|null $FindingId
+ * @property list<PathComponent>|null $FindingComponents
  */
 class AccessScopeAnalysisFinding extends Shape
 {
     /**
      * @param array{
-     *     NetworkInsightsAccessScopeAnalysisId?: string,
-     *     NetworkInsightsAccessScopeId?: string,
-     *     FindingId?: string,
-     *     FindingComponents?: list<PathComponent>
+     *     NetworkInsightsAccessScopeAnalysisId?: string|null,
+     *     NetworkInsightsAccessScopeId?: string|null,
+     *     FindingId?: string|null,
+     *     FindingComponents?: list<PathComponent>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'Draft'|'PendingReview'|'Approved'|'Archived' $ModelCardStatus
  * @property int $ModelCardVersion
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class ModelCardVersionSummary extends Shape
 {
@@ -21,7 +21,7 @@ class ModelCardVersionSummary extends Shape
      *     ModelCardStatus: 'Draft'|'PendingReview'|'Approved'|'Archived',
      *     ModelCardVersion: int,
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetSavingsPlansPurchaseRecommendat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Region
- * @property string $InstanceFamily
- * @property string $OfferingId
+ * @property string|null $Region
+ * @property string|null $InstanceFamily
+ * @property string|null $OfferingId
  */
 class SavingsPlansDetails extends Shape
 {
     /**
      * @param array{
-     *     Region?: string,
-     *     InstanceFamily?: string,
-     *     OfferingId?: string
+     *     Region?: string|null,
+     *     InstanceFamily?: string|null,
+     *     OfferingId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

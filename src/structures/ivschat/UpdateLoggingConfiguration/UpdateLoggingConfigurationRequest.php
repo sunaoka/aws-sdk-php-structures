@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $identifier
- * @property string $name
- * @property Shapes\DestinationConfiguration $destinationConfiguration
+ * @property string|null $name
+ * @property Shapes\DestinationConfiguration|null $destinationConfiguration
  */
 class UpdateLoggingConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     identifier: string,
-     *     name?: string,
-     *     destinationConfiguration?: Shapes\DestinationConfiguration
+     *     name?: string|null,
+     *     destinationConfiguration?: Shapes\DestinationConfiguration|null
      * } $args
      */
     public function __construct(array $args)

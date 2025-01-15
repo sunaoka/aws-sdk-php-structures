@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property string $connectionArn
- * @property string $encryptionKey
+ * @property string|null $encryptionKey
  * @property string $name
  * @property 'GITHUB'|'GITHUB_ENTERPRISE'|'BITBUCKET' $provider
  */
@@ -17,7 +17,7 @@ class Repository extends Shape
      * @param array{
      *     arn: string,
      *     connectionArn: string,
-     *     encryptionKey?: string,
+     *     encryptionKey?: string|null,
      *     name: string,
      *     provider: 'GITHUB'|'GITHUB_ENTERPRISE'|'BITBUCKET'
      * } $args

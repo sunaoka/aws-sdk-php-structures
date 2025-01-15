@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\VoiceID\ListSpeakerEnrollmentJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Message
- * @property int $StatusCode
+ * @property string|null $Message
+ * @property int|null $StatusCode
  */
 class FailureDetails extends Shape
 {
     /**
      * @param array{
-     *     Message?: string,
-     *     StatusCode?: int
+     *     Message?: string|null,
+     *     StatusCode?: int|null
      * } $args
      */
     public function __construct(array $args = [])

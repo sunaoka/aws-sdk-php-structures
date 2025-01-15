@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property string $id
  * @property ListSolNetworkPackageMetadata $metadata
- * @property string $nsdDesigner
- * @property string $nsdId
- * @property string $nsdInvariantId
- * @property string $nsdName
+ * @property string|null $nsdDesigner
+ * @property string|null $nsdId
+ * @property string|null $nsdInvariantId
+ * @property string|null $nsdName
  * @property 'CREATED'|'ONBOARDED'|'ERROR' $nsdOnboardingState
  * @property 'ENABLED'|'DISABLED' $nsdOperationalState
  * @property 'IN_USE'|'NOT_IN_USE' $nsdUsageState
- * @property string $nsdVersion
- * @property list<string> $vnfPkgIds
+ * @property string|null $nsdVersion
+ * @property list<string>|null $vnfPkgIds
  */
 class ListSolNetworkPackageInfo extends Shape
 {
@@ -25,15 +25,15 @@ class ListSolNetworkPackageInfo extends Shape
      *     arn: string,
      *     id: string,
      *     metadata: ListSolNetworkPackageMetadata,
-     *     nsdDesigner?: string,
-     *     nsdId?: string,
-     *     nsdInvariantId?: string,
-     *     nsdName?: string,
+     *     nsdDesigner?: string|null,
+     *     nsdId?: string|null,
+     *     nsdInvariantId?: string|null,
+     *     nsdName?: string|null,
      *     nsdOnboardingState: 'CREATED'|'ONBOARDED'|'ERROR',
      *     nsdOperationalState: 'ENABLED'|'DISABLED',
      *     nsdUsageState: 'IN_USE'|'NOT_IN_USE',
-     *     nsdVersion?: string,
-     *     vnfPkgIds?: list<string>
+     *     nsdVersion?: string|null,
+     *     vnfPkgIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

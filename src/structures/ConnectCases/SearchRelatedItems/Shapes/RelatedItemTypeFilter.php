@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectCases\SearchRelatedItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CommentFilter $comment
- * @property ContactFilter $contact
- * @property FileFilter $file
+ * @property CommentFilter|null $comment
+ * @property ContactFilter|null $contact
+ * @property FileFilter|null $file
  */
 class RelatedItemTypeFilter extends Shape
 {
     /**
      * @param array{
-     *     comment?: CommentFilter,
-     *     contact?: ContactFilter,
-     *     file?: FileFilter
+     *     comment?: CommentFilter|null,
+     *     contact?: ContactFilter|null,
+     *     file?: FileFilter|null
      * } $args
      */
     public function __construct(array $args = [])

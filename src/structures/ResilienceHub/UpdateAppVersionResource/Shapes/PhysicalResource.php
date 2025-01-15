@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\UpdateAppVersionResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, list<string>> $additionalInfo
- * @property list<AppComponent> $appComponents
- * @property bool $excluded
+ * @property array<string, list<string>>|null $additionalInfo
+ * @property list<AppComponent>|null $appComponents
+ * @property bool|null $excluded
  * @property LogicalResourceId $logicalResourceId
- * @property string $parentResourceName
+ * @property string|null $parentResourceName
  * @property PhysicalResourceId $physicalResourceId
- * @property string $resourceName
+ * @property string|null $resourceName
  * @property string $resourceType
- * @property 'AppTemplate'|'Discovered' $sourceType
+ * @property 'AppTemplate'|'Discovered'|null $sourceType
  */
 class PhysicalResource extends Shape
 {
     /**
      * @param array{
-     *     additionalInfo?: array<string, list<string>>,
-     *     appComponents?: list<AppComponent>,
-     *     excluded?: bool,
+     *     additionalInfo?: array<string, list<string>>|null,
+     *     appComponents?: list<AppComponent>|null,
+     *     excluded?: bool|null,
      *     logicalResourceId: LogicalResourceId,
-     *     parentResourceName?: string,
+     *     parentResourceName?: string|null,
      *     physicalResourceId: PhysicalResourceId,
-     *     resourceName?: string,
+     *     resourceName?: string|null,
      *     resourceType: string,
-     *     sourceType?: 'AppTemplate'|'Discovered'
+     *     sourceType?: 'AppTemplate'|'Discovered'|null
      * } $args
      */
     public function __construct(array $args)

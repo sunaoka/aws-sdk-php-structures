@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $indexId
  * @property list<Shapes\DeleteDocument> $documents
- * @property string $dataSourceSyncId
+ * @property string|null $dataSourceSyncId
  */
 class BatchDeleteDocumentRequest extends Request
 {
@@ -17,7 +17,7 @@ class BatchDeleteDocumentRequest extends Request
      *     applicationId: string,
      *     indexId: string,
      *     documents: list<Shapes\DeleteDocument>,
-     *     dataSourceSyncId?: string
+     *     dataSourceSyncId?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\DescribeOrganizationConfiguration\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CENTRAL'|'LOCAL' $ConfigurationType
- * @property 'PENDING'|'ENABLED'|'FAILED' $Status
- * @property string $StatusMessage
+ * @property 'CENTRAL'|'LOCAL'|null $ConfigurationType
+ * @property 'PENDING'|'ENABLED'|'FAILED'|null $Status
+ * @property string|null $StatusMessage
  */
 class OrganizationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ConfigurationType?: 'CENTRAL'|'LOCAL',
-     *     Status?: 'PENDING'|'ENABLED'|'FAILED',
-     *     StatusMessage?: string
+     *     ConfigurationType?: 'CENTRAL'|'LOCAL'|null,
+     *     Status?: 'PENDING'|'ENABLED'|'FAILED'|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

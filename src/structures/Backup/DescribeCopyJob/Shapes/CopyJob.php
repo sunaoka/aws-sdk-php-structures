@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\Backup\DescribeCopyJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccountId
- * @property string $CopyJobId
- * @property string $SourceBackupVaultArn
- * @property string $SourceRecoveryPointArn
- * @property string $DestinationBackupVaultArn
- * @property string $DestinationRecoveryPointArn
- * @property string $ResourceArn
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $CompletionDate
- * @property 'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL' $State
- * @property string $StatusMessage
- * @property int $BackupSizeInBytes
- * @property string $IamRoleArn
- * @property RecoveryPointCreator $CreatedBy
- * @property string $ResourceType
- * @property string $ParentJobId
- * @property bool $IsParent
- * @property string $CompositeMemberIdentifier
- * @property int $NumberOfChildJobs
- * @property array<'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL', int> $ChildJobsInState
- * @property string $ResourceName
- * @property string $MessageCategory
+ * @property string|null $AccountId
+ * @property string|null $CopyJobId
+ * @property string|null $SourceBackupVaultArn
+ * @property string|null $SourceRecoveryPointArn
+ * @property string|null $DestinationBackupVaultArn
+ * @property string|null $DestinationRecoveryPointArn
+ * @property string|null $ResourceArn
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $CompletionDate
+ * @property 'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL'|null $State
+ * @property string|null $StatusMessage
+ * @property int|null $BackupSizeInBytes
+ * @property string|null $IamRoleArn
+ * @property RecoveryPointCreator|null $CreatedBy
+ * @property string|null $ResourceType
+ * @property string|null $ParentJobId
+ * @property bool|null $IsParent
+ * @property string|null $CompositeMemberIdentifier
+ * @property int|null $NumberOfChildJobs
+ * @property array<'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL', int>|null $ChildJobsInState
+ * @property string|null $ResourceName
+ * @property string|null $MessageCategory
  */
 class CopyJob extends Shape
 {
     /**
      * @param array{
-     *     AccountId?: string,
-     *     CopyJobId?: string,
-     *     SourceBackupVaultArn?: string,
-     *     SourceRecoveryPointArn?: string,
-     *     DestinationBackupVaultArn?: string,
-     *     DestinationRecoveryPointArn?: string,
-     *     ResourceArn?: string,
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     CompletionDate?: \Aws\Api\DateTimeResult,
-     *     State?: 'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL',
-     *     StatusMessage?: string,
-     *     BackupSizeInBytes?: int,
-     *     IamRoleArn?: string,
-     *     CreatedBy?: RecoveryPointCreator,
-     *     ResourceType?: string,
-     *     ParentJobId?: string,
-     *     IsParent?: bool,
-     *     CompositeMemberIdentifier?: string,
-     *     NumberOfChildJobs?: int,
-     *     ChildJobsInState?: array<'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL', int>,
-     *     ResourceName?: string,
-     *     MessageCategory?: string
+     *     AccountId?: string|null,
+     *     CopyJobId?: string|null,
+     *     SourceBackupVaultArn?: string|null,
+     *     SourceRecoveryPointArn?: string|null,
+     *     DestinationBackupVaultArn?: string|null,
+     *     DestinationRecoveryPointArn?: string|null,
+     *     ResourceArn?: string|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     CompletionDate?: \Aws\Api\DateTimeResult|null,
+     *     State?: 'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL'|null,
+     *     StatusMessage?: string|null,
+     *     BackupSizeInBytes?: int|null,
+     *     IamRoleArn?: string|null,
+     *     CreatedBy?: RecoveryPointCreator|null,
+     *     ResourceType?: string|null,
+     *     ParentJobId?: string|null,
+     *     IsParent?: bool|null,
+     *     CompositeMemberIdentifier?: string|null,
+     *     NumberOfChildJobs?: int|null,
+     *     ChildJobsInState?: array<'CREATED'|'RUNNING'|'COMPLETED'|'FAILED'|'PARTIAL', int>|null,
+     *     ResourceName?: string|null,
+     *     MessageCategory?: string|null
      * } $args
      */
     public function __construct(array $args = [])

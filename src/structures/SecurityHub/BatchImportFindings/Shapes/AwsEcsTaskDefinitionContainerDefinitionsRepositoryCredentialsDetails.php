@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CredentialsParameter
+ * @property string|null $CredentialsParameter
  */
 class AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetails extends Shape
 {
     /**
-     * @param array{CredentialsParameter?: string} $args
+     * @param array{CredentialsParameter?: string|null} $args
      */
     public function __construct(array $args = [])
     {

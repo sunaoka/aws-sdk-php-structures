@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'ARCHIVE'|'NOOP' $action
- * @property string $clientToken
- * @property string $description
+ * @property string|null $clientToken
+ * @property string|null $description
  * @property Shapes\FindingCriteria $findingCriteria
  * @property string $name
- * @property int $position
- * @property array<string, string> $tags
+ * @property int|null $position
+ * @property array<string, string>|null $tags
  */
 class CreateFindingsFilterRequest extends Request
 {
     /**
      * @param array{
      *     action: 'ARCHIVE'|'NOOP',
-     *     clientToken?: string,
-     *     description?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
      *     findingCriteria: Shapes\FindingCriteria,
      *     name: string,
-     *     position?: int,
-     *     tags?: array<string, string>
+     *     position?: int|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

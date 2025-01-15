@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\EdgePackagingJobSummary> $EdgePackagingJobSummaries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListEdgePackagingJobsResponse extends Response
 {

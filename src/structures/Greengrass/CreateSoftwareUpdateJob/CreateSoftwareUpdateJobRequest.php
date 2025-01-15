@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateSoftwareUpdateJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AmznClientToken
+ * @property string|null $AmznClientToken
  * @property string $S3UrlSignerRole
  * @property 'core'|'ota_agent' $SoftwareToUpdate
- * @property 'NONE'|'TRACE'|'DEBUG'|'VERBOSE'|'INFO'|'WARN'|'ERROR'|'FATAL' $UpdateAgentLogLevel
+ * @property 'NONE'|'TRACE'|'DEBUG'|'VERBOSE'|'INFO'|'WARN'|'ERROR'|'FATAL'|null $UpdateAgentLogLevel
  * @property list<string> $UpdateTargets
  * @property 'armv6l'|'armv7l'|'x86_64'|'aarch64' $UpdateTargetsArchitecture
  * @property 'ubuntu'|'raspbian'|'amazon_linux'|'openwrt' $UpdateTargetsOperatingSystem
@@ -17,10 +17,10 @@ class CreateSoftwareUpdateJobRequest extends Request
 {
     /**
      * @param array{
-     *     AmznClientToken?: string,
+     *     AmznClientToken?: string|null,
      *     S3UrlSignerRole: string,
      *     SoftwareToUpdate: 'core'|'ota_agent',
-     *     UpdateAgentLogLevel?: 'NONE'|'TRACE'|'DEBUG'|'VERBOSE'|'INFO'|'WARN'|'ERROR'|'FATAL',
+     *     UpdateAgentLogLevel?: 'NONE'|'TRACE'|'DEBUG'|'VERBOSE'|'INFO'|'WARN'|'ERROR'|'FATAL'|null,
      *     UpdateTargets: list<string>,
      *     UpdateTargetsArchitecture: 'armv6l'|'armv7l'|'x86_64'|'aarch64',
      *     UpdateTargetsOperatingSystem: 'ubuntu'|'raspbian'|'amazon_linux'|'openwrt'

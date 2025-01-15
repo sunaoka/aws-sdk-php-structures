@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property bool $UserConfirmed
- * @property Shapes\CodeDeliveryDetailsType $CodeDeliveryDetails
+ * @property Shapes\CodeDeliveryDetailsType|null $CodeDeliveryDetails
  * @property string $UserSub
- * @property string $Session
+ * @property string|null $Session
  */
 class SignUpResponse extends Response
 {

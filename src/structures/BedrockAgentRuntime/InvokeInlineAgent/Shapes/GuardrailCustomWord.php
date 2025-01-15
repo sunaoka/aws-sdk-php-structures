@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'BLOCKED' $action
- * @property string $match
+ * @property 'BLOCKED'|null $action
+ * @property string|null $match
  */
 class GuardrailCustomWord extends Shape
 {
     /**
      * @param array{
-     *     action?: 'BLOCKED',
-     *     match?: string
+     *     action?: 'BLOCKED'|null,
+     *     match?: string|null
      * } $args
      */
     public function __construct(array $args = [])

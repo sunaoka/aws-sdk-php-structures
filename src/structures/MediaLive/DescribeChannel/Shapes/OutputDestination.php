@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property list<MediaPackageOutputDestinationSettings> $MediaPackageSettings
- * @property MultiplexProgramChannelDestinationSettings $MultiplexSettings
- * @property list<OutputDestinationSettings> $Settings
- * @property list<SrtOutputDestinationSettings> $SrtSettings
+ * @property string|null $Id
+ * @property list<MediaPackageOutputDestinationSettings>|null $MediaPackageSettings
+ * @property MultiplexProgramChannelDestinationSettings|null $MultiplexSettings
+ * @property list<OutputDestinationSettings>|null $Settings
+ * @property list<SrtOutputDestinationSettings>|null $SrtSettings
  */
 class OutputDestination extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     MediaPackageSettings?: list<MediaPackageOutputDestinationSettings>,
-     *     MultiplexSettings?: MultiplexProgramChannelDestinationSettings,
-     *     Settings?: list<OutputDestinationSettings>,
-     *     SrtSettings?: list<SrtOutputDestinationSettings>
+     *     Id?: string|null,
+     *     MediaPackageSettings?: list<MediaPackageOutputDestinationSettings>|null,
+     *     MultiplexSettings?: MultiplexProgramChannelDestinationSettings|null,
+     *     Settings?: list<OutputDestinationSettings>|null,
+     *     SrtSettings?: list<SrtOutputDestinationSettings>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\DeprovisionIpamByoasn\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Asn
- * @property string $IpamId
- * @property string $StatusMessage
- * @property 'deprovisioned'|'failed-deprovision'|'failed-provision'|'pending-deprovision'|'pending-provision'|'provisioned' $State
+ * @property string|null $Asn
+ * @property string|null $IpamId
+ * @property string|null $StatusMessage
+ * @property 'deprovisioned'|'failed-deprovision'|'failed-provision'|'pending-deprovision'|'pending-provision'|'provisioned'|null $State
  */
 class Byoasn extends Shape
 {
     /**
      * @param array{
-     *     Asn?: string,
-     *     IpamId?: string,
-     *     StatusMessage?: string,
-     *     State?: 'deprovisioned'|'failed-deprovision'|'failed-provision'|'pending-deprovision'|'pending-provision'|'provisioned'
+     *     Asn?: string|null,
+     *     IpamId?: string|null,
+     *     StatusMessage?: string|null,
+     *     State?: 'deprovisioned'|'failed-deprovision'|'failed-provision'|'pending-deprovision'|'pending-provision'|'provisioned'|null
      * } $args
      */
     public function __construct(array $args = [])

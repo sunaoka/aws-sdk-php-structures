@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $endpointArn
  * @property Shapes\EndpointConfig $endpointConfig
- * @property string $clientRequestToken
+ * @property string|null $clientRequestToken
  */
 class UpdateMarketplaceModelEndpointRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateMarketplaceModelEndpointRequest extends Request
      * @param array{
      *     endpointArn: string,
      *     endpointConfig: Shapes\EndpointConfig,
-     *     clientRequestToken?: string
+     *     clientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

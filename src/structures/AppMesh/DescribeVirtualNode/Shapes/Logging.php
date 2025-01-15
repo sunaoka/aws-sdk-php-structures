@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppMesh\DescribeVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AccessLog $accessLog
+ * @property AccessLog|null $accessLog
  */
 class Logging extends Shape
 {
     /**
-     * @param array{accessLog?: AccessLog} $args
+     * @param array{accessLog?: AccessLog|null} $args
      */
     public function __construct(array $args = [])
     {

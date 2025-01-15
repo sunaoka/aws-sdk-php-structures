@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\StartComposition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $featuredParticipantAttribute
- * @property bool $omitStoppedVideo
- * @property 'AUTO'|'VIDEO'|'SQUARE'|'PORTRAIT' $videoAspectRatio
- * @property 'FILL'|'COVER'|'CONTAIN' $videoFillMode
- * @property int<0, max> $gridGap
+ * @property string|null $featuredParticipantAttribute
+ * @property bool|null $omitStoppedVideo
+ * @property 'AUTO'|'VIDEO'|'SQUARE'|'PORTRAIT'|null $videoAspectRatio
+ * @property 'FILL'|'COVER'|'CONTAIN'|null $videoFillMode
+ * @property int<0, max>|null $gridGap
  */
 class GridConfiguration extends Shape
 {
     /**
      * @param array{
-     *     featuredParticipantAttribute?: string,
-     *     omitStoppedVideo?: bool,
-     *     videoAspectRatio?: 'AUTO'|'VIDEO'|'SQUARE'|'PORTRAIT',
-     *     videoFillMode?: 'FILL'|'COVER'|'CONTAIN',
-     *     gridGap?: int<0, max>
+     *     featuredParticipantAttribute?: string|null,
+     *     omitStoppedVideo?: bool|null,
+     *     videoAspectRatio?: 'AUTO'|'VIDEO'|'SQUARE'|'PORTRAIT'|null,
+     *     videoFillMode?: 'FILL'|'COVER'|'CONTAIN'|null,
+     *     gridGap?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

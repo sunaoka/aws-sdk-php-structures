@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\drs\DescribeJobLogItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConversionProperties $conversionProperties
- * @property string $conversionServerID
- * @property EventResourceData $eventResourceData
- * @property string $rawError
- * @property string $sourceServerID
- * @property string $targetInstanceID
+ * @property ConversionProperties|null $conversionProperties
+ * @property string|null $conversionServerID
+ * @property EventResourceData|null $eventResourceData
+ * @property string|null $rawError
+ * @property string|null $sourceServerID
+ * @property string|null $targetInstanceID
  */
 class JobLogEventData extends Shape
 {
     /**
      * @param array{
-     *     conversionProperties?: ConversionProperties,
-     *     conversionServerID?: string,
-     *     eventResourceData?: EventResourceData,
-     *     rawError?: string,
-     *     sourceServerID?: string,
-     *     targetInstanceID?: string
+     *     conversionProperties?: ConversionProperties|null,
+     *     conversionServerID?: string|null,
+     *     eventResourceData?: EventResourceData|null,
+     *     rawError?: string|null,
+     *     sourceServerID?: string|null,
+     *     targetInstanceID?: string|null
      * } $args
      */
     public function __construct(array $args = [])

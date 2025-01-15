@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\BatchStopJobRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $JobName
- * @property string $JobRunId
- * @property ErrorDetail $ErrorDetail
+ * @property string|null $JobName
+ * @property string|null $JobRunId
+ * @property ErrorDetail|null $ErrorDetail
  */
 class BatchStopJobRunError extends Shape
 {
     /**
      * @param array{
-     *     JobName?: string,
-     *     JobRunId?: string,
-     *     ErrorDetail?: ErrorDetail
+     *     JobName?: string|null,
+     *     JobRunId?: string|null,
+     *     ErrorDetail?: ErrorDetail|null
      * } $args
      */
     public function __construct(array $args = [])

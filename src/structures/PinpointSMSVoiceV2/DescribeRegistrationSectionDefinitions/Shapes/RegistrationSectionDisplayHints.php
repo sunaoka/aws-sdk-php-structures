@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Title
  * @property string $ShortDescription
- * @property string $LongDescription
- * @property string $DocumentationTitle
- * @property string $DocumentationLink
+ * @property string|null $LongDescription
+ * @property string|null $DocumentationTitle
+ * @property string|null $DocumentationLink
  */
 class RegistrationSectionDisplayHints extends Shape
 {
@@ -17,9 +17,9 @@ class RegistrationSectionDisplayHints extends Shape
      * @param array{
      *     Title: string,
      *     ShortDescription: string,
-     *     LongDescription?: string,
-     *     DocumentationTitle?: string,
-     *     DocumentationLink?: string
+     *     LongDescription?: string|null,
+     *     DocumentationTitle?: string|null,
+     *     DocumentationLink?: string|null
      * } $args
      */
     public function __construct(array $args)

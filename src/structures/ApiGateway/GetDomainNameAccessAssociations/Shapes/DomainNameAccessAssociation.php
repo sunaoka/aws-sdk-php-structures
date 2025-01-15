@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetDomainNameAccessAssociations\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $domainNameAccessAssociationArn
- * @property string $domainNameArn
- * @property 'VPCE' $accessAssociationSourceType
- * @property string $accessAssociationSource
- * @property array<string, string> $tags
+ * @property string|null $domainNameAccessAssociationArn
+ * @property string|null $domainNameArn
+ * @property 'VPCE'|null $accessAssociationSourceType
+ * @property string|null $accessAssociationSource
+ * @property array<string, string>|null $tags
  */
 class DomainNameAccessAssociation extends Shape
 {
     /**
      * @param array{
-     *     domainNameAccessAssociationArn?: string,
-     *     domainNameArn?: string,
-     *     accessAssociationSourceType?: 'VPCE',
-     *     accessAssociationSource?: string,
-     *     tags?: array<string, string>
+     *     domainNameAccessAssociationArn?: string|null,
+     *     domainNameArn?: string|null,
+     *     accessAssociationSourceType?: 'VPCE'|null,
+     *     accessAssociationSource?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

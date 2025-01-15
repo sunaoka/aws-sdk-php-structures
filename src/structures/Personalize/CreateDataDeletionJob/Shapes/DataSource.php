@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Personalize\CreateDataDeletionJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $dataLocation
+ * @property string|null $dataLocation
  */
 class DataSource extends Shape
 {
     /**
-     * @param array{dataLocation?: string} $args
+     * @param array{dataLocation?: string|null} $args
      */
     public function __construct(array $args = [])
     {

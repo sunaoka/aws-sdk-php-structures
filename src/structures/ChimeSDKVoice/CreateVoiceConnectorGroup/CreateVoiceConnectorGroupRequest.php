@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property list<Shapes\VoiceConnectorItem> $VoiceConnectorItems
+ * @property list<Shapes\VoiceConnectorItem>|null $VoiceConnectorItems
  */
 class CreateVoiceConnectorGroupRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     VoiceConnectorItems?: list<Shapes\VoiceConnectorItem>
+     *     VoiceConnectorItems?: list<Shapes\VoiceConnectorItem>|null
      * } $args
      */
     public function __construct(array $args)

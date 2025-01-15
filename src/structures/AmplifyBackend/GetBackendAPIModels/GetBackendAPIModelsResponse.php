@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\GetBackendAPIModels;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Models
- * @property 'LATEST'|'STALE' $Status
- * @property string $ModelIntrospectionSchema
+ * @property string|null $Models
+ * @property 'LATEST'|'STALE'|null $Status
+ * @property string|null $ModelIntrospectionSchema
  */
 class GetBackendAPIModelsResponse extends Response
 {

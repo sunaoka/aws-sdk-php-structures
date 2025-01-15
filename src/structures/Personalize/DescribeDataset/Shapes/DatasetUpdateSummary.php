@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeDataset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $schemaArn
- * @property string $status
- * @property string $failureReason
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
+ * @property string|null $schemaArn
+ * @property string|null $status
+ * @property string|null $failureReason
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  */
 class DatasetUpdateSummary extends Shape
 {
     /**
      * @param array{
-     *     schemaArn?: string,
-     *     status?: string,
-     *     failureReason?: string,
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult
+     *     schemaArn?: string|null,
+     *     status?: string|null,
+     *     failureReason?: string|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

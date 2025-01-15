@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteNetworkInterface;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $NetworkInterfaceId
  */
 class DeleteNetworkInterfaceRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     NetworkInterfaceId: string
      * } $args
      */

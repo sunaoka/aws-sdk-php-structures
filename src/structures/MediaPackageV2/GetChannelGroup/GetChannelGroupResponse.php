@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $EgressDomain
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $ModifiedAt
- * @property string $Description
- * @property string $ETag
- * @property array<string, string> $Tags
+ * @property string|null $Description
+ * @property string|null $ETag
+ * @property array<string, string>|null $Tags
  */
 class GetChannelGroupResponse extends Response
 {

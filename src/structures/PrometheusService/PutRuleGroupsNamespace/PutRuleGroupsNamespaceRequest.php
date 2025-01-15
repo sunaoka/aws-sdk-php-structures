@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PrometheusService\PutRuleGroupsNamespace;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string|resource|\Psr\Http\Message\StreamInterface $data
  * @property string $name
  * @property string $workspaceId
@@ -14,7 +14,7 @@ class PutRuleGroupsNamespaceRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     data: string|resource|\Psr\Http\Message\StreamInterface,
      *     name: string,
      *     workspaceId: string

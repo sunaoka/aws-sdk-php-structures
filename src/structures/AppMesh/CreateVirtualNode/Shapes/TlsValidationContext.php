@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppMesh\CreateVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SubjectAlternativeNames $subjectAlternativeNames
+ * @property SubjectAlternativeNames|null $subjectAlternativeNames
  * @property TlsValidationContextTrust $trust
  */
 class TlsValidationContext extends Shape
 {
     /**
      * @param array{
-     *     subjectAlternativeNames?: SubjectAlternativeNames,
+     *     subjectAlternativeNames?: SubjectAlternativeNames|null,
      *     trust: TlsValidationContextTrust
      * } $args
      */

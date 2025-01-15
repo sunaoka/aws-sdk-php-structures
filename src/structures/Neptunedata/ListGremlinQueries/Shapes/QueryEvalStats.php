@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Neptunedata\ListGremlinQueries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $waited
- * @property int $elapsed
- * @property bool $cancelled
- * @property Document $subqueries
+ * @property int|null $waited
+ * @property int|null $elapsed
+ * @property bool|null $cancelled
+ * @property Document|null $subqueries
  */
 class QueryEvalStats extends Shape
 {
     /**
      * @param array{
-     *     waited?: int,
-     *     elapsed?: int,
-     *     cancelled?: bool,
-     *     subqueries?: Document
+     *     waited?: int|null,
+     *     elapsed?: int|null,
+     *     cancelled?: bool|null,
+     *     subqueries?: Document|null
      * } $args
      */
     public function __construct(array $args = [])

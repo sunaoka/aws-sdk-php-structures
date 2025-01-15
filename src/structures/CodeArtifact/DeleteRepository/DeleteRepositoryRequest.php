@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
+ * @property string|null $domainOwner
  * @property string $repository
  */
 class DeleteRepositoryRequest extends Request
@@ -14,7 +14,7 @@ class DeleteRepositoryRequest extends Request
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string,
+     *     domainOwner?: string|null,
      *     repository: string
      * } $args
      */

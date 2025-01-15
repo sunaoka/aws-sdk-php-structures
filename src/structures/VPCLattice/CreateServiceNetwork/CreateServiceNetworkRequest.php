@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\VPCLattice\CreateServiceNetwork;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'NONE'|'AWS_IAM' $authType
- * @property string $clientToken
+ * @property 'NONE'|'AWS_IAM'|null $authType
+ * @property string|null $clientToken
  * @property string $name
- * @property Shapes\SharingConfig $sharingConfig
- * @property array<string, string> $tags
+ * @property Shapes\SharingConfig|null $sharingConfig
+ * @property array<string, string>|null $tags
  */
 class CreateServiceNetworkRequest extends Request
 {
     /**
      * @param array{
-     *     authType?: 'NONE'|'AWS_IAM',
-     *     clientToken?: string,
+     *     authType?: 'NONE'|'AWS_IAM'|null,
+     *     clientToken?: string|null,
      *     name: string,
-     *     sharingConfig?: Shapes\SharingConfig,
-     *     tags?: array<string, string>
+     *     sharingConfig?: Shapes\SharingConfig|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

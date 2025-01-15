@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\finspace\ListKxDataviews\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $environmentId
- * @property string $databaseName
- * @property string $dataviewName
- * @property 'SINGLE'|'MULTI' $azMode
- * @property string $availabilityZoneId
- * @property string $changesetId
- * @property list<KxDataviewSegmentConfiguration> $segmentConfigurations
- * @property list<KxDataviewActiveVersion> $activeVersions
- * @property 'CREATING'|'ACTIVE'|'UPDATING'|'FAILED'|'DELETING' $status
- * @property string $description
- * @property bool $autoUpdate
- * @property bool $readWrite
- * @property \Aws\Api\DateTimeResult $createdTimestamp
- * @property \Aws\Api\DateTimeResult $lastModifiedTimestamp
- * @property string $statusReason
+ * @property string|null $environmentId
+ * @property string|null $databaseName
+ * @property string|null $dataviewName
+ * @property 'SINGLE'|'MULTI'|null $azMode
+ * @property string|null $availabilityZoneId
+ * @property string|null $changesetId
+ * @property list<KxDataviewSegmentConfiguration>|null $segmentConfigurations
+ * @property list<KxDataviewActiveVersion>|null $activeVersions
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'FAILED'|'DELETING'|null $status
+ * @property string|null $description
+ * @property bool|null $autoUpdate
+ * @property bool|null $readWrite
+ * @property \Aws\Api\DateTimeResult|null $createdTimestamp
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedTimestamp
+ * @property string|null $statusReason
  */
 class KxDataviewListEntry extends Shape
 {
     /**
      * @param array{
-     *     environmentId?: string,
-     *     databaseName?: string,
-     *     dataviewName?: string,
-     *     azMode?: 'SINGLE'|'MULTI',
-     *     availabilityZoneId?: string,
-     *     changesetId?: string,
-     *     segmentConfigurations?: list<KxDataviewSegmentConfiguration>,
-     *     activeVersions?: list<KxDataviewActiveVersion>,
-     *     status?: 'CREATING'|'ACTIVE'|'UPDATING'|'FAILED'|'DELETING',
-     *     description?: string,
-     *     autoUpdate?: bool,
-     *     readWrite?: bool,
-     *     createdTimestamp?: \Aws\Api\DateTimeResult,
-     *     lastModifiedTimestamp?: \Aws\Api\DateTimeResult,
-     *     statusReason?: string
+     *     environmentId?: string|null,
+     *     databaseName?: string|null,
+     *     dataviewName?: string|null,
+     *     azMode?: 'SINGLE'|'MULTI'|null,
+     *     availabilityZoneId?: string|null,
+     *     changesetId?: string|null,
+     *     segmentConfigurations?: list<KxDataviewSegmentConfiguration>|null,
+     *     activeVersions?: list<KxDataviewActiveVersion>|null,
+     *     status?: 'CREATING'|'ACTIVE'|'UPDATING'|'FAILED'|'DELETING'|null,
+     *     description?: string|null,
+     *     autoUpdate?: bool|null,
+     *     readWrite?: bool|null,
+     *     createdTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     lastModifiedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     statusReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

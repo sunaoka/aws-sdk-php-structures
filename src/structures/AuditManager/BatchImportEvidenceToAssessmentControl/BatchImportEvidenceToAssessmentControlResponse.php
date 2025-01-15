@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\AuditManager\BatchImportEvidenceToAssessmentCon
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\BatchImportEvidenceToAssessmentControlError> $errors
+ * @property list<Shapes\BatchImportEvidenceToAssessmentControlError>|null $errors
  */
 class BatchImportEvidenceToAssessmentControlResponse extends Response
 {

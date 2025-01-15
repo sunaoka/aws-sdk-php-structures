@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GlobalNetworkId
- * @property string $Description
- * @property string $Type
+ * @property string|null $Description
+ * @property string|null $Type
  * @property Shapes\Bandwidth $Bandwidth
- * @property string $Provider
+ * @property string|null $Provider
  * @property string $SiteId
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateLinkRequest extends Request
 {
     /**
      * @param array{
      *     GlobalNetworkId: string,
-     *     Description?: string,
-     *     Type?: string,
+     *     Description?: string|null,
+     *     Type?: string|null,
      *     Bandwidth: Shapes\Bandwidth,
-     *     Provider?: string,
+     *     Provider?: string|null,
      *     SiteId: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LexRuntimeService\PostText\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $version
- * @property 'application/vnd.amazonaws.card.generic' $contentType
- * @property list<GenericAttachment> $genericAttachments
+ * @property string|null $version
+ * @property 'application/vnd.amazonaws.card.generic'|null $contentType
+ * @property list<GenericAttachment>|null $genericAttachments
  */
 class ResponseCard extends Shape
 {
     /**
      * @param array{
-     *     version?: string,
-     *     contentType?: 'application/vnd.amazonaws.card.generic',
-     *     genericAttachments?: list<GenericAttachment>
+     *     version?: string|null,
+     *     contentType?: 'application/vnd.amazonaws.card.generic'|null,
+     *     genericAttachments?: list<GenericAttachment>|null
      * } $args
      */
     public function __construct(array $args = [])

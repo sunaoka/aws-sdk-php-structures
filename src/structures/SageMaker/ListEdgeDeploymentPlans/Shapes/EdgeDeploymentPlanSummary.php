@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $EdgeDeploymentSuccess
  * @property int $EdgeDeploymentPending
  * @property int $EdgeDeploymentFailed
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class EdgeDeploymentPlanSummary extends Shape
 {
@@ -24,8 +24,8 @@ class EdgeDeploymentPlanSummary extends Shape
      *     EdgeDeploymentSuccess: int,
      *     EdgeDeploymentPending: int,
      *     EdgeDeploymentFailed: int,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AuditManager\UpdateAssessment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $emailAddress
- * @property string $name
+ * @property string|null $id
+ * @property string|null $emailAddress
+ * @property string|null $name
  */
 class AWSAccount extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     emailAddress?: string,
-     *     name?: string
+     *     id?: string|null,
+     *     emailAddress?: string|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

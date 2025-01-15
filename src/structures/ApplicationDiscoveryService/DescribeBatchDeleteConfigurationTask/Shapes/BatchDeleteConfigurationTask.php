@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\DescribeBatchDelete
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $taskId
- * @property 'INITIALIZING'|'VALIDATING'|'DELETING'|'COMPLETED'|'FAILED' $status
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
- * @property 'SERVER' $configurationType
- * @property list<string> $requestedConfigurations
- * @property list<string> $deletedConfigurations
- * @property list<FailedConfiguration> $failedConfigurations
- * @property list<DeletionWarning> $deletionWarnings
+ * @property string|null $taskId
+ * @property 'INITIALIZING'|'VALIDATING'|'DELETING'|'COMPLETED'|'FAILED'|null $status
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property 'SERVER'|null $configurationType
+ * @property list<string>|null $requestedConfigurations
+ * @property list<string>|null $deletedConfigurations
+ * @property list<FailedConfiguration>|null $failedConfigurations
+ * @property list<DeletionWarning>|null $deletionWarnings
  */
 class BatchDeleteConfigurationTask extends Shape
 {
     /**
      * @param array{
-     *     taskId?: string,
-     *     status?: 'INITIALIZING'|'VALIDATING'|'DELETING'|'COMPLETED'|'FAILED',
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     configurationType?: 'SERVER',
-     *     requestedConfigurations?: list<string>,
-     *     deletedConfigurations?: list<string>,
-     *     failedConfigurations?: list<FailedConfiguration>,
-     *     deletionWarnings?: list<DeletionWarning>
+     *     taskId?: string|null,
+     *     status?: 'INITIALIZING'|'VALIDATING'|'DELETING'|'COMPLETED'|'FAILED'|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     configurationType?: 'SERVER'|null,
+     *     requestedConfigurations?: list<string>|null,
+     *     deletedConfigurations?: list<string>|null,
+     *     failedConfigurations?: list<FailedConfiguration>|null,
+     *     deletionWarnings?: list<DeletionWarning>|null
      * } $args
      */
     public function __construct(array $args = [])

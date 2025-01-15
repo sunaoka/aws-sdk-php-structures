@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FieldTooltipItem $FieldTooltipItem
- * @property ColumnTooltipItem $ColumnTooltipItem
+ * @property FieldTooltipItem|null $FieldTooltipItem
+ * @property ColumnTooltipItem|null $ColumnTooltipItem
  */
 class TooltipItem extends Shape
 {
     /**
      * @param array{
-     *     FieldTooltipItem?: FieldTooltipItem,
-     *     ColumnTooltipItem?: ColumnTooltipItem
+     *     FieldTooltipItem?: FieldTooltipItem|null,
+     *     ColumnTooltipItem?: ColumnTooltipItem|null
      * } $args
      */
     public function __construct(array $args = [])

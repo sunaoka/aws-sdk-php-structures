@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $TemplateId
- * @property Shapes\TemplateSourceEntity $SourceEntity
- * @property string $VersionDescription
- * @property string $Name
- * @property Shapes\TemplateVersionDefinition $Definition
- * @property Shapes\ValidationStrategy $ValidationStrategy
+ * @property Shapes\TemplateSourceEntity|null $SourceEntity
+ * @property string|null $VersionDescription
+ * @property string|null $Name
+ * @property Shapes\TemplateVersionDefinition|null $Definition
+ * @property Shapes\ValidationStrategy|null $ValidationStrategy
  */
 class UpdateTemplateRequest extends Request
 {
@@ -19,11 +19,11 @@ class UpdateTemplateRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     TemplateId: string,
-     *     SourceEntity?: Shapes\TemplateSourceEntity,
-     *     VersionDescription?: string,
-     *     Name?: string,
-     *     Definition?: Shapes\TemplateVersionDefinition,
-     *     ValidationStrategy?: Shapes\ValidationStrategy
+     *     SourceEntity?: Shapes\TemplateSourceEntity|null,
+     *     VersionDescription?: string|null,
+     *     Name?: string|null,
+     *     Definition?: Shapes\TemplateVersionDefinition|null,
+     *     ValidationStrategy?: Shapes\ValidationStrategy|null
      * } $args
      */
     public function __construct(array $args)

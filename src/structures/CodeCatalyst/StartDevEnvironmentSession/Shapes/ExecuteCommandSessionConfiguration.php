@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $command
- * @property list<string> $arguments
+ * @property list<string>|null $arguments
  */
 class ExecuteCommandSessionConfiguration extends Shape
 {
     /**
      * @param array{
      *     command: string,
-     *     arguments?: list<string>
+     *     arguments?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

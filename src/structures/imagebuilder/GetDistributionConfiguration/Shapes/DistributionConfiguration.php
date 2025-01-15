@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetDistributionConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
- * @property string $description
- * @property list<Distribution> $distributions
+ * @property string|null $arn
+ * @property string|null $name
+ * @property string|null $description
+ * @property list<Distribution>|null $distributions
  * @property int<30, 720> $timeoutMinutes
- * @property string $dateCreated
- * @property string $dateUpdated
- * @property array<string, string> $tags
+ * @property string|null $dateCreated
+ * @property string|null $dateUpdated
+ * @property array<string, string>|null $tags
  */
 class DistributionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string,
-     *     description?: string,
-     *     distributions?: list<Distribution>,
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     distributions?: list<Distribution>|null,
      *     timeoutMinutes: int<30, 720>,
-     *     dateCreated?: string,
-     *     dateUpdated?: string,
-     *     tags?: array<string, string>
+     *     dateCreated?: string|null,
+     *     dateUpdated?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

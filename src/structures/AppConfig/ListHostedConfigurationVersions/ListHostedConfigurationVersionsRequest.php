@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApplicationId
  * @property string $ConfigurationProfileId
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
- * @property string $VersionLabel
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
+ * @property string|null $VersionLabel
  */
 class ListHostedConfigurationVersionsRequest extends Request
 {
@@ -17,9 +17,9 @@ class ListHostedConfigurationVersionsRequest extends Request
      * @param array{
      *     ApplicationId: string,
      *     ConfigurationProfileId: string,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string,
-     *     VersionLabel?: string
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null,
+     *     VersionLabel?: string|null
      * } $args
      */
     public function __construct(array $args)

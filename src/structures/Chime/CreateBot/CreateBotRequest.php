@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $DisplayName
- * @property string $Domain
+ * @property string|null $Domain
  */
 class CreateBotRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateBotRequest extends Request
      * @param array{
      *     AccountId: string,
      *     DisplayName: string,
-     *     Domain?: string
+     *     Domain?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\TranscribeService\CreateCallAnalyticsCategory\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NonTalkTimeFilter $NonTalkTimeFilter
- * @property InterruptionFilter $InterruptionFilter
- * @property TranscriptFilter $TranscriptFilter
- * @property SentimentFilter $SentimentFilter
+ * @property NonTalkTimeFilter|null $NonTalkTimeFilter
+ * @property InterruptionFilter|null $InterruptionFilter
+ * @property TranscriptFilter|null $TranscriptFilter
+ * @property SentimentFilter|null $SentimentFilter
  */
 class Rule extends Shape
 {
     /**
      * @param array{
-     *     NonTalkTimeFilter?: NonTalkTimeFilter,
-     *     InterruptionFilter?: InterruptionFilter,
-     *     TranscriptFilter?: TranscriptFilter,
-     *     SentimentFilter?: SentimentFilter
+     *     NonTalkTimeFilter?: NonTalkTimeFilter|null,
+     *     InterruptionFilter?: InterruptionFilter|null,
+     *     TranscriptFilter?: TranscriptFilter|null,
+     *     SentimentFilter?: SentimentFilter|null
      * } $args
      */
     public function __construct(array $args = [])

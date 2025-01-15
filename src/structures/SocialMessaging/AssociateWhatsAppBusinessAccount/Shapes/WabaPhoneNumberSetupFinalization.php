@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $id
  * @property string $twoFactorPin
- * @property string $dataLocalizationRegion
- * @property list<Tag> $tags
+ * @property string|null $dataLocalizationRegion
+ * @property list<Tag>|null $tags
  */
 class WabaPhoneNumberSetupFinalization extends Shape
 {
@@ -16,8 +16,8 @@ class WabaPhoneNumberSetupFinalization extends Shape
      * @param array{
      *     id: string,
      *     twoFactorPin: string,
-     *     dataLocalizationRegion?: string,
-     *     tags?: list<Tag>
+     *     dataLocalizationRegion?: string|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,21 +8,21 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $StackId
  * @property list<string> $LayerIds
  * @property string $InstanceType
- * @property 'load'|'timer' $AutoScalingType
- * @property string $Hostname
- * @property string $Os
- * @property string $AmiId
- * @property string $SshKeyName
- * @property string $AvailabilityZone
- * @property string $VirtualizationType
- * @property string $SubnetId
- * @property 'x86_64'|'i386' $Architecture
- * @property 'ebs'|'instance-store' $RootDeviceType
- * @property list<Shapes\BlockDeviceMapping> $BlockDeviceMappings
- * @property bool $InstallUpdatesOnBoot
- * @property bool $EbsOptimized
- * @property string $AgentVersion
- * @property string $Tenancy
+ * @property 'load'|'timer'|null $AutoScalingType
+ * @property string|null $Hostname
+ * @property string|null $Os
+ * @property string|null $AmiId
+ * @property string|null $SshKeyName
+ * @property string|null $AvailabilityZone
+ * @property string|null $VirtualizationType
+ * @property string|null $SubnetId
+ * @property 'x86_64'|'i386'|null $Architecture
+ * @property 'ebs'|'instance-store'|null $RootDeviceType
+ * @property list<Shapes\BlockDeviceMapping>|null $BlockDeviceMappings
+ * @property bool|null $InstallUpdatesOnBoot
+ * @property bool|null $EbsOptimized
+ * @property string|null $AgentVersion
+ * @property string|null $Tenancy
  */
 class CreateInstanceRequest extends Request
 {
@@ -31,21 +31,21 @@ class CreateInstanceRequest extends Request
      *     StackId: string,
      *     LayerIds: list<string>,
      *     InstanceType: string,
-     *     AutoScalingType?: 'load'|'timer',
-     *     Hostname?: string,
-     *     Os?: string,
-     *     AmiId?: string,
-     *     SshKeyName?: string,
-     *     AvailabilityZone?: string,
-     *     VirtualizationType?: string,
-     *     SubnetId?: string,
-     *     Architecture?: 'x86_64'|'i386',
-     *     RootDeviceType?: 'ebs'|'instance-store',
-     *     BlockDeviceMappings?: list<Shapes\BlockDeviceMapping>,
-     *     InstallUpdatesOnBoot?: bool,
-     *     EbsOptimized?: bool,
-     *     AgentVersion?: string,
-     *     Tenancy?: string
+     *     AutoScalingType?: 'load'|'timer'|null,
+     *     Hostname?: string|null,
+     *     Os?: string|null,
+     *     AmiId?: string|null,
+     *     SshKeyName?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     VirtualizationType?: string|null,
+     *     SubnetId?: string|null,
+     *     Architecture?: 'x86_64'|'i386'|null,
+     *     RootDeviceType?: 'ebs'|'instance-store'|null,
+     *     BlockDeviceMappings?: list<Shapes\BlockDeviceMapping>|null,
+     *     InstallUpdatesOnBoot?: bool|null,
+     *     EbsOptimized?: bool|null,
+     *     AgentVersion?: string|null,
+     *     Tenancy?: string|null
      * } $args
      */
     public function __construct(array $args)

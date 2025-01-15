@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetResourceSnapshot\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Account $Account
- * @property list<Contact> $Contacts
+ * @property Account|null $Account
+ * @property list<Contact>|null $Contacts
  */
 class Customer extends Shape
 {
     /**
      * @param array{
-     *     Account?: Account,
-     *     Contacts?: list<Contact>
+     *     Account?: Account|null,
+     *     Contacts?: list<Contact>|null
      * } $args
      */
     public function __construct(array $args = [])

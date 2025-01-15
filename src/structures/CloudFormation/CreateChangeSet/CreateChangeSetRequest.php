@@ -6,48 +6,48 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackName
- * @property string $TemplateBody
- * @property string $TemplateURL
- * @property bool $UsePreviousTemplate
- * @property list<Shapes\Parameter> $Parameters
- * @property list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'> $Capabilities
- * @property list<string> $ResourceTypes
- * @property string $RoleARN
- * @property Shapes\RollbackConfiguration $RollbackConfiguration
- * @property list<string> $NotificationARNs
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $TemplateBody
+ * @property string|null $TemplateURL
+ * @property bool|null $UsePreviousTemplate
+ * @property list<Shapes\Parameter>|null $Parameters
+ * @property list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'>|null $Capabilities
+ * @property list<string>|null $ResourceTypes
+ * @property string|null $RoleARN
+ * @property Shapes\RollbackConfiguration|null $RollbackConfiguration
+ * @property list<string>|null $NotificationARNs
+ * @property list<Shapes\Tag>|null $Tags
  * @property string $ChangeSetName
- * @property string $ClientToken
- * @property string $Description
- * @property 'CREATE'|'UPDATE'|'IMPORT' $ChangeSetType
- * @property list<Shapes\ResourceToImport> $ResourcesToImport
- * @property bool $IncludeNestedStacks
- * @property 'DO_NOTHING'|'ROLLBACK'|'DELETE' $OnStackFailure
- * @property bool $ImportExistingResources
+ * @property string|null $ClientToken
+ * @property string|null $Description
+ * @property 'CREATE'|'UPDATE'|'IMPORT'|null $ChangeSetType
+ * @property list<Shapes\ResourceToImport>|null $ResourcesToImport
+ * @property bool|null $IncludeNestedStacks
+ * @property 'DO_NOTHING'|'ROLLBACK'|'DELETE'|null $OnStackFailure
+ * @property bool|null $ImportExistingResources
  */
 class CreateChangeSetRequest extends Request
 {
     /**
      * @param array{
      *     StackName: string,
-     *     TemplateBody?: string,
-     *     TemplateURL?: string,
-     *     UsePreviousTemplate?: bool,
-     *     Parameters?: list<Shapes\Parameter>,
-     *     Capabilities?: list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'>,
-     *     ResourceTypes?: list<string>,
-     *     RoleARN?: string,
-     *     RollbackConfiguration?: Shapes\RollbackConfiguration,
-     *     NotificationARNs?: list<string>,
-     *     Tags?: list<Shapes\Tag>,
+     *     TemplateBody?: string|null,
+     *     TemplateURL?: string|null,
+     *     UsePreviousTemplate?: bool|null,
+     *     Parameters?: list<Shapes\Parameter>|null,
+     *     Capabilities?: list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'>|null,
+     *     ResourceTypes?: list<string>|null,
+     *     RoleARN?: string|null,
+     *     RollbackConfiguration?: Shapes\RollbackConfiguration|null,
+     *     NotificationARNs?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null,
      *     ChangeSetName: string,
-     *     ClientToken?: string,
-     *     Description?: string,
-     *     ChangeSetType?: 'CREATE'|'UPDATE'|'IMPORT',
-     *     ResourcesToImport?: list<Shapes\ResourceToImport>,
-     *     IncludeNestedStacks?: bool,
-     *     OnStackFailure?: 'DO_NOTHING'|'ROLLBACK'|'DELETE',
-     *     ImportExistingResources?: bool
+     *     ClientToken?: string|null,
+     *     Description?: string|null,
+     *     ChangeSetType?: 'CREATE'|'UPDATE'|'IMPORT'|null,
+     *     ResourcesToImport?: list<Shapes\ResourceToImport>|null,
+     *     IncludeNestedStacks?: bool|null,
+     *     OnStackFailure?: 'DO_NOTHING'|'ROLLBACK'|'DELETE'|null,
+     *     ImportExistingResources?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $thingGroupName
  * @property Shapes\ThingGroupProperties $thingGroupProperties
- * @property int $expectedVersion
- * @property string $indexName
- * @property string $queryString
- * @property string $queryVersion
+ * @property int|null $expectedVersion
+ * @property string|null $indexName
+ * @property string|null $queryString
+ * @property string|null $queryVersion
  */
 class UpdateDynamicThingGroupRequest extends Request
 {
@@ -18,10 +18,10 @@ class UpdateDynamicThingGroupRequest extends Request
      * @param array{
      *     thingGroupName: string,
      *     thingGroupProperties: Shapes\ThingGroupProperties,
-     *     expectedVersion?: int,
-     *     indexName?: string,
-     *     queryString?: string,
-     *     queryVersion?: string
+     *     expectedVersion?: int|null,
+     *     indexName?: string|null,
+     *     queryString?: string|null,
+     *     queryVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

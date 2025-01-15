@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Key
- * @property 'ASCENDING'|'DESCENDING' $SortOrder
+ * @property 'ASCENDING'|'DESCENDING'|null $SortOrder
  */
 class SortDefinition extends Shape
 {
     /**
      * @param array{
      *     Key: string,
-     *     SortOrder?: 'ASCENDING'|'DESCENDING'
+     *     SortOrder?: 'ASCENDING'|'DESCENDING'|null
      * } $args
      */
     public function __construct(array $args)

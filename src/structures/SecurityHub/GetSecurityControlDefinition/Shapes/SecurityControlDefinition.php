@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RemediationUrl
  * @property 'LOW'|'MEDIUM'|'HIGH'|'CRITICAL' $SeverityRating
  * @property 'AVAILABLE'|'UNAVAILABLE' $CurrentRegionAvailability
- * @property list<'Parameters'> $CustomizableProperties
- * @property array<string, ParameterDefinition> $ParameterDefinitions
+ * @property list<'Parameters'>|null $CustomizableProperties
+ * @property array<string, ParameterDefinition>|null $ParameterDefinitions
  */
 class SecurityControlDefinition extends Shape
 {
@@ -24,8 +24,8 @@ class SecurityControlDefinition extends Shape
      *     RemediationUrl: string,
      *     SeverityRating: 'LOW'|'MEDIUM'|'HIGH'|'CRITICAL',
      *     CurrentRegionAvailability: 'AVAILABLE'|'UNAVAILABLE',
-     *     CustomizableProperties?: list<'Parameters'>,
-     *     ParameterDefinitions?: array<string, ParameterDefinition>
+     *     CustomizableProperties?: list<'Parameters'>|null,
+     *     ParameterDefinitions?: array<string, ParameterDefinition>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AwsAccountId
  * @property string $TemplateId
- * @property string $Name
- * @property list<Shapes\ResourcePermission> $Permissions
- * @property Shapes\TemplateSourceEntity $SourceEntity
- * @property list<Shapes\Tag> $Tags
- * @property string $VersionDescription
- * @property Shapes\TemplateVersionDefinition $Definition
- * @property Shapes\ValidationStrategy $ValidationStrategy
+ * @property string|null $Name
+ * @property list<Shapes\ResourcePermission>|null $Permissions
+ * @property Shapes\TemplateSourceEntity|null $SourceEntity
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $VersionDescription
+ * @property Shapes\TemplateVersionDefinition|null $Definition
+ * @property Shapes\ValidationStrategy|null $ValidationStrategy
  */
 class CreateTemplateRequest extends Request
 {
@@ -21,13 +21,13 @@ class CreateTemplateRequest extends Request
      * @param array{
      *     AwsAccountId: string,
      *     TemplateId: string,
-     *     Name?: string,
-     *     Permissions?: list<Shapes\ResourcePermission>,
-     *     SourceEntity?: Shapes\TemplateSourceEntity,
-     *     Tags?: list<Shapes\Tag>,
-     *     VersionDescription?: string,
-     *     Definition?: Shapes\TemplateVersionDefinition,
-     *     ValidationStrategy?: Shapes\ValidationStrategy
+     *     Name?: string|null,
+     *     Permissions?: list<Shapes\ResourcePermission>|null,
+     *     SourceEntity?: Shapes\TemplateSourceEntity|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     VersionDescription?: string|null,
+     *     Definition?: Shapes\TemplateVersionDefinition|null,
+     *     ValidationStrategy?: Shapes\ValidationStrategy|null
      * } $args
      */
     public function __construct(array $args)

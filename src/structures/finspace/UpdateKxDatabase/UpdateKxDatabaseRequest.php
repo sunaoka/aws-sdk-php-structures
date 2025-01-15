@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $environmentId
  * @property string $databaseName
- * @property string $description
+ * @property string|null $description
  * @property string $clientToken
  */
 class UpdateKxDatabaseRequest extends Request
@@ -16,7 +16,7 @@ class UpdateKxDatabaseRequest extends Request
      * @param array{
      *     environmentId: string,
      *     databaseName: string,
-     *     description?: string,
+     *     description?: string|null,
      *     clientToken: string
      * } $args
      */

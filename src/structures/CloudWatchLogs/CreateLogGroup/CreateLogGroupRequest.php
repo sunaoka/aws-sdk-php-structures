@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $logGroupName
- * @property string $kmsKeyId
- * @property array<string, string> $tags
- * @property 'STANDARD'|'INFREQUENT_ACCESS' $logGroupClass
+ * @property string|null $kmsKeyId
+ * @property array<string, string>|null $tags
+ * @property 'STANDARD'|'INFREQUENT_ACCESS'|null $logGroupClass
  */
 class CreateLogGroupRequest extends Request
 {
     /**
      * @param array{
      *     logGroupName: string,
-     *     kmsKeyId?: string,
-     *     tags?: array<string, string>,
-     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'
+     *     kmsKeyId?: string|null,
+     *     tags?: array<string, string>|null,
+     *     logGroupClass?: 'STANDARD'|'INFREQUENT_ACCESS'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Emr\ListSteps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreationDateTime
- * @property \Aws\Api\DateTimeResult $StartDateTime
- * @property \Aws\Api\DateTimeResult $EndDateTime
+ * @property \Aws\Api\DateTimeResult|null $CreationDateTime
+ * @property \Aws\Api\DateTimeResult|null $StartDateTime
+ * @property \Aws\Api\DateTimeResult|null $EndDateTime
  */
 class StepTimeline extends Shape
 {
     /**
      * @param array{
-     *     CreationDateTime?: \Aws\Api\DateTimeResult,
-     *     StartDateTime?: \Aws\Api\DateTimeResult,
-     *     EndDateTime?: \Aws\Api\DateTimeResult
+     *     CreationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     StartDateTime?: \Aws\Api\DateTimeResult|null,
+     *     EndDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

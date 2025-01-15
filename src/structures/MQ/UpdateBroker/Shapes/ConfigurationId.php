@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property int $Revision
+ * @property int|null $Revision
  */
 class ConfigurationId extends Shape
 {
     /**
      * @param array{
      *     Id: string,
-     *     Revision?: int
+     *     Revision?: int|null
      * } $args
      */
     public function __construct(array $args)

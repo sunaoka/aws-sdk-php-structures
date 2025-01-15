@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $Value
- * @property bool $Active
+ * @property string|null $Value
+ * @property bool|null $Active
  */
 class UpdateTagOptionRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     Value?: string,
-     *     Active?: bool
+     *     Value?: string|null,
+     *     Active?: bool|null
      * } $args
      */
     public function __construct(array $args)

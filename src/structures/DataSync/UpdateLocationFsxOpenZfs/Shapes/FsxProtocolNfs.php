@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataSync\UpdateLocationFsxOpenZfs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NfsMountOptions $MountOptions
+ * @property NfsMountOptions|null $MountOptions
  */
 class FsxProtocolNfs extends Shape
 {
     /**
-     * @param array{MountOptions?: NfsMountOptions} $args
+     * @param array{MountOptions?: NfsMountOptions|null} $args
      */
     public function __construct(array $args = [])
     {

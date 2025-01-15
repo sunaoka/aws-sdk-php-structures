@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\DescribeScheduledQuery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property QuerySpatialCoverageMax $Max
+ * @property QuerySpatialCoverageMax|null $Max
  */
 class QuerySpatialCoverage extends Shape
 {
     /**
-     * @param array{Max?: QuerySpatialCoverageMax} $args
+     * @param array{Max?: QuerySpatialCoverageMax|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MTurk\ListReviewPolicyResultsForHIT;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $HITId
- * @property Shapes\ReviewPolicy $AssignmentReviewPolicy
- * @property Shapes\ReviewPolicy $HITReviewPolicy
- * @property Shapes\ReviewReport $AssignmentReviewReport
- * @property Shapes\ReviewReport $HITReviewReport
- * @property string $NextToken
+ * @property string|null $HITId
+ * @property Shapes\ReviewPolicy|null $AssignmentReviewPolicy
+ * @property Shapes\ReviewPolicy|null $HITReviewPolicy
+ * @property Shapes\ReviewReport|null $AssignmentReviewReport
+ * @property Shapes\ReviewReport|null $HITReviewReport
+ * @property string|null $NextToken
  */
 class ListReviewPolicyResultsForHITResponse extends Response
 {

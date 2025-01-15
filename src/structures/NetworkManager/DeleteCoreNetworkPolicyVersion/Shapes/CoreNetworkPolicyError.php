@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ErrorCode
  * @property string $Message
- * @property string $Path
+ * @property string|null $Path
  */
 class CoreNetworkPolicyError extends Shape
 {
@@ -15,7 +15,7 @@ class CoreNetworkPolicyError extends Shape
      * @param array{
      *     ErrorCode: string,
      *     Message: string,
-     *     Path?: string
+     *     Path?: string|null
      * } $args
      */
     public function __construct(array $args)

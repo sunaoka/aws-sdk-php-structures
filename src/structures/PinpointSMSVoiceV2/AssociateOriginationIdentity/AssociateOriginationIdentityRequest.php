@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $PoolId
  * @property string $OriginationIdentity
  * @property string $IsoCountryCode
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class AssociateOriginationIdentityRequest extends Request
 {
@@ -17,7 +17,7 @@ class AssociateOriginationIdentityRequest extends Request
      *     PoolId: string,
      *     OriginationIdentity: string,
      *     IsoCountryCode: string,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

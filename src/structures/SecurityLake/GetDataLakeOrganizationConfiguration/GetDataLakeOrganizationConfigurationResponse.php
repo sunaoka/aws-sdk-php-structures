@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SecurityLake\GetDataLakeOrganizationConfigurati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DataLakeAutoEnableNewAccountConfiguration> $autoEnableNewAccount
+ * @property list<Shapes\DataLakeAutoEnableNewAccountConfiguration>|null $autoEnableNewAccount
  */
 class GetDataLakeOrganizationConfigurationResponse extends Response
 {

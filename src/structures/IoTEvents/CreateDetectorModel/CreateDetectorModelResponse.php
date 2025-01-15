@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\IoTEvents\CreateDetectorModel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DetectorModelConfiguration $detectorModelConfiguration
+ * @property Shapes\DetectorModelConfiguration|null $detectorModelConfiguration
  */
 class CreateDetectorModelResponse extends Response
 {

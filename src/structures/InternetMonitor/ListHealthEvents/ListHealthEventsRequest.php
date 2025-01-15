@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $MonitorName
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $NextToken
- * @property int<1, 25> $MaxResults
- * @property 'ACTIVE'|'RESOLVED' $EventStatus
- * @property string $LinkedAccountId
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $NextToken
+ * @property int<1, 25>|null $MaxResults
+ * @property 'ACTIVE'|'RESOLVED'|null $EventStatus
+ * @property string|null $LinkedAccountId
  */
 class ListHealthEventsRequest extends Request
 {
     /**
      * @param array{
      *     MonitorName: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 25>,
-     *     EventStatus?: 'ACTIVE'|'RESOLVED',
-     *     LinkedAccountId?: string
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 25>|null,
+     *     EventStatus?: 'ACTIVE'|'RESOLVED'|null,
+     *     LinkedAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

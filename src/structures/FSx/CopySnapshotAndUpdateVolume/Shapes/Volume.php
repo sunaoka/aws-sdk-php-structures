@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\FSx\CopySnapshotAndUpdateVolume\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $FileSystemId
- * @property 'CREATING'|'CREATED'|'DELETING'|'FAILED'|'MISCONFIGURED'|'PENDING'|'AVAILABLE' $Lifecycle
- * @property string $Name
- * @property OntapVolumeConfiguration $OntapConfiguration
- * @property string $ResourceARN
- * @property list<Tag> $Tags
- * @property string $VolumeId
- * @property 'ONTAP'|'OPENZFS' $VolumeType
- * @property LifecycleTransitionReason $LifecycleTransitionReason
- * @property list<AdministrativeAction> $AdministrativeActions
- * @property OpenZFSVolumeConfiguration $OpenZFSConfiguration
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $FileSystemId
+ * @property 'CREATING'|'CREATED'|'DELETING'|'FAILED'|'MISCONFIGURED'|'PENDING'|'AVAILABLE'|null $Lifecycle
+ * @property string|null $Name
+ * @property OntapVolumeConfiguration|null $OntapConfiguration
+ * @property string|null $ResourceARN
+ * @property list<Tag>|null $Tags
+ * @property string|null $VolumeId
+ * @property 'ONTAP'|'OPENZFS'|null $VolumeType
+ * @property LifecycleTransitionReason|null $LifecycleTransitionReason
+ * @property list<AdministrativeAction>|null $AdministrativeActions
+ * @property OpenZFSVolumeConfiguration|null $OpenZFSConfiguration
  */
 class Volume extends Shape
 {
     /**
      * @param array{
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     FileSystemId?: string,
-     *     Lifecycle?: 'CREATING'|'CREATED'|'DELETING'|'FAILED'|'MISCONFIGURED'|'PENDING'|'AVAILABLE',
-     *     Name?: string,
-     *     OntapConfiguration?: OntapVolumeConfiguration,
-     *     ResourceARN?: string,
-     *     Tags?: list<Tag>,
-     *     VolumeId?: string,
-     *     VolumeType?: 'ONTAP'|'OPENZFS',
-     *     LifecycleTransitionReason?: LifecycleTransitionReason,
-     *     AdministrativeActions?: list<AdministrativeAction>,
-     *     OpenZFSConfiguration?: OpenZFSVolumeConfiguration
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     FileSystemId?: string|null,
+     *     Lifecycle?: 'CREATING'|'CREATED'|'DELETING'|'FAILED'|'MISCONFIGURED'|'PENDING'|'AVAILABLE'|null,
+     *     Name?: string|null,
+     *     OntapConfiguration?: OntapVolumeConfiguration|null,
+     *     ResourceARN?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     VolumeId?: string|null,
+     *     VolumeType?: 'ONTAP'|'OPENZFS'|null,
+     *     LifecycleTransitionReason?: LifecycleTransitionReason|null,
+     *     AdministrativeActions?: list<AdministrativeAction>|null,
+     *     OpenZFSConfiguration?: OpenZFSVolumeConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

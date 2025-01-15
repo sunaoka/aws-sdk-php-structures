@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property WaterfallChartGroupColorConfiguration $GroupColorConfiguration
+ * @property WaterfallChartGroupColorConfiguration|null $GroupColorConfiguration
  */
 class WaterfallChartColorConfiguration extends Shape
 {
     /**
-     * @param array{GroupColorConfiguration?: WaterfallChartGroupColorConfiguration} $args
+     * @param array{GroupColorConfiguration?: WaterfallChartGroupColorConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

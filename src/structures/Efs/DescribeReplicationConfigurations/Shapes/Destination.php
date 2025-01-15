@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'ENABLED'|'ENABLING'|'DELETING'|'ERROR'|'PAUSED'|'PAUSING' $Status
  * @property string $FileSystemId
  * @property string $Region
- * @property \Aws\Api\DateTimeResult $LastReplicatedTimestamp
- * @property string $OwnerId
- * @property string $StatusMessage
- * @property string $RoleArn
+ * @property \Aws\Api\DateTimeResult|null $LastReplicatedTimestamp
+ * @property string|null $OwnerId
+ * @property string|null $StatusMessage
+ * @property string|null $RoleArn
  */
 class Destination extends Shape
 {
@@ -20,10 +20,10 @@ class Destination extends Shape
      *     Status: 'ENABLED'|'ENABLING'|'DELETING'|'ERROR'|'PAUSED'|'PAUSING',
      *     FileSystemId: string,
      *     Region: string,
-     *     LastReplicatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     OwnerId?: string,
-     *     StatusMessage?: string,
-     *     RoleArn?: string
+     *     LastReplicatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     OwnerId?: string|null,
+     *     StatusMessage?: string|null,
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

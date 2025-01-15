@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\ElastiCache\PurchaseReservedCacheNodesOffering\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReservedCacheNodeId
- * @property string $ReservedCacheNodesOfferingId
- * @property string $CacheNodeType
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property int $Duration
- * @property double $FixedPrice
- * @property double $UsagePrice
- * @property int $CacheNodeCount
- * @property string $ProductDescription
- * @property string $OfferingType
- * @property string $State
- * @property list<RecurringCharge> $RecurringCharges
- * @property string $ReservationARN
+ * @property string|null $ReservedCacheNodeId
+ * @property string|null $ReservedCacheNodesOfferingId
+ * @property string|null $CacheNodeType
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property int|null $Duration
+ * @property double|null $FixedPrice
+ * @property double|null $UsagePrice
+ * @property int|null $CacheNodeCount
+ * @property string|null $ProductDescription
+ * @property string|null $OfferingType
+ * @property string|null $State
+ * @property list<RecurringCharge>|null $RecurringCharges
+ * @property string|null $ReservationARN
  */
 class ReservedCacheNode extends Shape
 {
     /**
      * @param array{
-     *     ReservedCacheNodeId?: string,
-     *     ReservedCacheNodesOfferingId?: string,
-     *     CacheNodeType?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     Duration?: int,
-     *     FixedPrice?: double,
-     *     UsagePrice?: double,
-     *     CacheNodeCount?: int,
-     *     ProductDescription?: string,
-     *     OfferingType?: string,
-     *     State?: string,
-     *     RecurringCharges?: list<RecurringCharge>,
-     *     ReservationARN?: string
+     *     ReservedCacheNodeId?: string|null,
+     *     ReservedCacheNodesOfferingId?: string|null,
+     *     CacheNodeType?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     Duration?: int|null,
+     *     FixedPrice?: double|null,
+     *     UsagePrice?: double|null,
+     *     CacheNodeCount?: int|null,
+     *     ProductDescription?: string|null,
+     *     OfferingType?: string|null,
+     *     State?: string|null,
+     *     RecurringCharges?: list<RecurringCharge>|null,
+     *     ReservationARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

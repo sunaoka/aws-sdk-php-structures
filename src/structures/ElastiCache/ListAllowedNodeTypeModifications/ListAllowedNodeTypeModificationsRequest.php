@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElastiCache\ListAllowedNodeTypeModifications;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CacheClusterId
- * @property string $ReplicationGroupId
+ * @property string|null $CacheClusterId
+ * @property string|null $ReplicationGroupId
  */
 class ListAllowedNodeTypeModificationsRequest extends Request
 {
     /**
      * @param array{
-     *     CacheClusterId?: string,
-     *     ReplicationGroupId?: string
+     *     CacheClusterId?: string|null,
+     *     ReplicationGroupId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

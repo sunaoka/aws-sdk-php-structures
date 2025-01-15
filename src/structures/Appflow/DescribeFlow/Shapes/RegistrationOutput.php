@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $message
- * @property string $result
- * @property 'InProgress'|'Successful'|'Error'|'CancelStarted'|'Canceled' $status
+ * @property string|null $message
+ * @property string|null $result
+ * @property 'InProgress'|'Successful'|'Error'|'CancelStarted'|'Canceled'|null $status
  */
 class RegistrationOutput extends Shape
 {
     /**
      * @param array{
-     *     message?: string,
-     *     result?: string,
-     *     status?: 'InProgress'|'Successful'|'Error'|'CancelStarted'|'Canceled'
+     *     message?: string|null,
+     *     result?: string|null,
+     *     status?: 'InProgress'|'Successful'|'Error'|'CancelStarted'|'Canceled'|null
      * } $args
      */
     public function __construct(array $args = [])

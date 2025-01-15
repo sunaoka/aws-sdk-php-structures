@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateStorageVirtualMachine\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SelfManagedActiveDirectoryConfigurationUpdates $SelfManagedActiveDirectoryConfiguration
- * @property string $NetBiosName
+ * @property SelfManagedActiveDirectoryConfigurationUpdates|null $SelfManagedActiveDirectoryConfiguration
+ * @property string|null $NetBiosName
  */
 class UpdateSvmActiveDirectoryConfiguration extends Shape
 {
     /**
      * @param array{
-     *     SelfManagedActiveDirectoryConfiguration?: SelfManagedActiveDirectoryConfigurationUpdates,
-     *     NetBiosName?: string
+     *     SelfManagedActiveDirectoryConfiguration?: SelfManagedActiveDirectoryConfigurationUpdates|null,
+     *     NetBiosName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

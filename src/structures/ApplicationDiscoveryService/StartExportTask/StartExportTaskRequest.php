@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\StartExportTask;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<'CSV'> $exportDataFormat
- * @property list<Shapes\ExportFilter> $filters
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
- * @property Shapes\ExportPreferences $preferences
+ * @property list<'CSV'>|null $exportDataFormat
+ * @property list<Shapes\ExportFilter>|null $filters
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property Shapes\ExportPreferences|null $preferences
  */
 class StartExportTaskRequest extends Request
 {
     /**
      * @param array{
-     *     exportDataFormat?: list<'CSV'>,
-     *     filters?: list<Shapes\ExportFilter>,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     preferences?: Shapes\ExportPreferences
+     *     exportDataFormat?: list<'CSV'>|null,
+     *     filters?: list<Shapes\ExportFilter>|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     preferences?: Shapes\ExportPreferences|null
      * } $args
      */
     public function __construct(array $args = [])

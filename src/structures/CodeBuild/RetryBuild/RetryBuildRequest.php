@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeBuild\RetryBuild;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $id
- * @property string $idempotencyToken
+ * @property string|null $id
+ * @property string|null $idempotencyToken
  */
 class RetryBuildRequest extends Request
 {
     /**
      * @param array{
-     *     id?: string,
-     *     idempotencyToken?: string
+     *     id?: string|null,
+     *     idempotencyToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

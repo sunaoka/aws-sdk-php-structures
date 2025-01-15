@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\GroundStation\ListSatellites;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\SatelliteListItem> $satellites
+ * @property string|null $nextToken
+ * @property list<Shapes\SatelliteListItem>|null $satellites
  */
 class ListSatellitesResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $S3Uri
- * @property EncryptionKey $EncryptionKey
+ * @property EncryptionKey|null $EncryptionKey
  */
 class OutputDataConfig extends Shape
 {
     /**
      * @param array{
      *     S3Uri: string,
-     *     EncryptionKey?: EncryptionKey
+     *     EncryptionKey?: EncryptionKey|null
      * } $args
      */
     public function __construct(array $args)

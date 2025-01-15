@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\BatchWrite\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BatchCreateObject $CreateObject
- * @property BatchAttachObject $AttachObject
- * @property BatchDetachObject $DetachObject
- * @property BatchUpdateObjectAttributes $UpdateObjectAttributes
- * @property BatchDeleteObject $DeleteObject
- * @property BatchAddFacetToObject $AddFacetToObject
- * @property BatchRemoveFacetFromObject $RemoveFacetFromObject
- * @property BatchAttachPolicy $AttachPolicy
- * @property BatchDetachPolicy $DetachPolicy
- * @property BatchCreateIndex $CreateIndex
- * @property BatchAttachToIndex $AttachToIndex
- * @property BatchDetachFromIndex $DetachFromIndex
- * @property BatchAttachTypedLink $AttachTypedLink
- * @property BatchDetachTypedLink $DetachTypedLink
- * @property BatchUpdateLinkAttributes $UpdateLinkAttributes
+ * @property BatchCreateObject|null $CreateObject
+ * @property BatchAttachObject|null $AttachObject
+ * @property BatchDetachObject|null $DetachObject
+ * @property BatchUpdateObjectAttributes|null $UpdateObjectAttributes
+ * @property BatchDeleteObject|null $DeleteObject
+ * @property BatchAddFacetToObject|null $AddFacetToObject
+ * @property BatchRemoveFacetFromObject|null $RemoveFacetFromObject
+ * @property BatchAttachPolicy|null $AttachPolicy
+ * @property BatchDetachPolicy|null $DetachPolicy
+ * @property BatchCreateIndex|null $CreateIndex
+ * @property BatchAttachToIndex|null $AttachToIndex
+ * @property BatchDetachFromIndex|null $DetachFromIndex
+ * @property BatchAttachTypedLink|null $AttachTypedLink
+ * @property BatchDetachTypedLink|null $DetachTypedLink
+ * @property BatchUpdateLinkAttributes|null $UpdateLinkAttributes
  */
 class BatchWriteOperation extends Shape
 {
     /**
      * @param array{
-     *     CreateObject?: BatchCreateObject,
-     *     AttachObject?: BatchAttachObject,
-     *     DetachObject?: BatchDetachObject,
-     *     UpdateObjectAttributes?: BatchUpdateObjectAttributes,
-     *     DeleteObject?: BatchDeleteObject,
-     *     AddFacetToObject?: BatchAddFacetToObject,
-     *     RemoveFacetFromObject?: BatchRemoveFacetFromObject,
-     *     AttachPolicy?: BatchAttachPolicy,
-     *     DetachPolicy?: BatchDetachPolicy,
-     *     CreateIndex?: BatchCreateIndex,
-     *     AttachToIndex?: BatchAttachToIndex,
-     *     DetachFromIndex?: BatchDetachFromIndex,
-     *     AttachTypedLink?: BatchAttachTypedLink,
-     *     DetachTypedLink?: BatchDetachTypedLink,
-     *     UpdateLinkAttributes?: BatchUpdateLinkAttributes
+     *     CreateObject?: BatchCreateObject|null,
+     *     AttachObject?: BatchAttachObject|null,
+     *     DetachObject?: BatchDetachObject|null,
+     *     UpdateObjectAttributes?: BatchUpdateObjectAttributes|null,
+     *     DeleteObject?: BatchDeleteObject|null,
+     *     AddFacetToObject?: BatchAddFacetToObject|null,
+     *     RemoveFacetFromObject?: BatchRemoveFacetFromObject|null,
+     *     AttachPolicy?: BatchAttachPolicy|null,
+     *     DetachPolicy?: BatchDetachPolicy|null,
+     *     CreateIndex?: BatchCreateIndex|null,
+     *     AttachToIndex?: BatchAttachToIndex|null,
+     *     DetachFromIndex?: BatchDetachFromIndex|null,
+     *     AttachTypedLink?: BatchAttachTypedLink|null,
+     *     DetachTypedLink?: BatchDetachTypedLink|null,
+     *     UpdateLinkAttributes?: BatchUpdateLinkAttributes|null
      * } $args
      */
     public function __construct(array $args = [])

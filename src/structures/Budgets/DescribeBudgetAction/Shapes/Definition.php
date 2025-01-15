@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Budgets\DescribeBudgetAction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IamActionDefinition $IamActionDefinition
- * @property ScpActionDefinition $ScpActionDefinition
- * @property SsmActionDefinition $SsmActionDefinition
+ * @property IamActionDefinition|null $IamActionDefinition
+ * @property ScpActionDefinition|null $ScpActionDefinition
+ * @property SsmActionDefinition|null $SsmActionDefinition
  */
 class Definition extends Shape
 {
     /**
      * @param array{
-     *     IamActionDefinition?: IamActionDefinition,
-     *     ScpActionDefinition?: ScpActionDefinition,
-     *     SsmActionDefinition?: SsmActionDefinition
+     *     IamActionDefinition?: IamActionDefinition|null,
+     *     ScpActionDefinition?: ScpActionDefinition|null,
+     *     SsmActionDefinition?: SsmActionDefinition|null
      * } $args
      */
     public function __construct(array $args = [])

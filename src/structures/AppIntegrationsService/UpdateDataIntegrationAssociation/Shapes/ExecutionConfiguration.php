@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ON_DEMAND'|'SCHEDULED' $ExecutionMode
- * @property OnDemandConfiguration $OnDemandConfiguration
- * @property ScheduleConfiguration $ScheduleConfiguration
+ * @property OnDemandConfiguration|null $OnDemandConfiguration
+ * @property ScheduleConfiguration|null $ScheduleConfiguration
  */
 class ExecutionConfiguration extends Shape
 {
     /**
      * @param array{
      *     ExecutionMode: 'ON_DEMAND'|'SCHEDULED',
-     *     OnDemandConfiguration?: OnDemandConfiguration,
-     *     ScheduleConfiguration?: ScheduleConfiguration
+     *     OnDemandConfiguration?: OnDemandConfiguration|null,
+     *     ScheduleConfiguration?: ScheduleConfiguration|null
      * } $args
      */
     public function __construct(array $args)

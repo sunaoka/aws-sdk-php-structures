@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ClientPolicy $clientPolicy
+ * @property ClientPolicy|null $clientPolicy
  */
 class BackendDefaults extends Shape
 {
     /**
-     * @param array{clientPolicy?: ClientPolicy} $args
+     * @param array{clientPolicy?: ClientPolicy|null} $args
      */
     public function __construct(array $args = [])
     {

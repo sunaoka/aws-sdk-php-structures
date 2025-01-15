@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Neptunedata\ManagePropertygraphStatistics\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $statisticsId
+ * @property string|null $statisticsId
  */
 class RefreshStatisticsIdMap extends Shape
 {
     /**
-     * @param array{statisticsId?: string} $args
+     * @param array{statisticsId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

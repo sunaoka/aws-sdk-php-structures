@@ -12,10 +12,10 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'PARQUET'|'CSV' $format
  * @property string $destination
  * @property string $kmsKeyIdentifier
- * @property 'COLUMNAR' $parquetType
- * @property string $statusReason
- * @property Shapes\ExportTaskDetails $exportTaskDetails
- * @property Shapes\ExportFilter $exportFilter
+ * @property 'COLUMNAR'|null $parquetType
+ * @property string|null $statusReason
+ * @property Shapes\ExportTaskDetails|null $exportTaskDetails
+ * @property Shapes\ExportFilter|null $exportFilter
  */
 class GetExportTaskResponse extends Response
 {

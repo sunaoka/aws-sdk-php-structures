@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListExports;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $botId
- * @property string $botVersion
- * @property Shapes\ExportSortBy $sortBy
- * @property list<Shapes\ExportFilter> $filters
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
- * @property string $localeId
+ * @property string|null $botId
+ * @property string|null $botVersion
+ * @property Shapes\ExportSortBy|null $sortBy
+ * @property list<Shapes\ExportFilter>|null $filters
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
+ * @property string|null $localeId
  */
 class ListExportsRequest extends Request
 {
     /**
      * @param array{
-     *     botId?: string,
-     *     botVersion?: string,
-     *     sortBy?: Shapes\ExportSortBy,
-     *     filters?: list<Shapes\ExportFilter>,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string,
-     *     localeId?: string
+     *     botId?: string|null,
+     *     botVersion?: string|null,
+     *     sortBy?: Shapes\ExportSortBy|null,
+     *     filters?: list<Shapes\ExportFilter>|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null,
+     *     localeId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

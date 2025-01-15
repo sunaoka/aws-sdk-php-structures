@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\DescribeAppInstanceUserEndpoin
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AppInstanceUserEndpoint $AppInstanceUserEndpoint
+ * @property Shapes\AppInstanceUserEndpoint|null $AppInstanceUserEndpoint
  */
 class DescribeAppInstanceUserEndpointResponse extends Response
 {

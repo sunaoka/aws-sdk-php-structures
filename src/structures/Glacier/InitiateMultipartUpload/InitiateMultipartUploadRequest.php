@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $accountId
  * @property string $vaultName
- * @property string $archiveDescription
- * @property string $partSize
+ * @property string|null $archiveDescription
+ * @property string|null $partSize
  */
 class InitiateMultipartUploadRequest extends Request
 {
@@ -16,8 +16,8 @@ class InitiateMultipartUploadRequest extends Request
      * @param array{
      *     accountId: string,
      *     vaultName: string,
-     *     archiveDescription?: string,
-     *     partSize?: string
+     *     archiveDescription?: string|null,
+     *     partSize?: string|null
      * } $args
      */
     public function __construct(array $args)

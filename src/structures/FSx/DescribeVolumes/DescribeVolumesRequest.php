@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FSx\DescribeVolumes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $VolumeIds
- * @property list<Shapes\VolumeFilter> $Filters
- * @property int<1, 2147483647> $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $VolumeIds
+ * @property list<Shapes\VolumeFilter>|null $Filters
+ * @property int<1, 2147483647>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeVolumesRequest extends Request
 {
     /**
      * @param array{
-     *     VolumeIds?: list<string>,
-     *     Filters?: list<Shapes\VolumeFilter>,
-     *     MaxResults?: int<1, 2147483647>,
-     *     NextToken?: string
+     *     VolumeIds?: list<string>|null,
+     *     Filters?: list<Shapes\VolumeFilter>|null,
+     *     MaxResults?: int<1, 2147483647>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

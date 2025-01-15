@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListAppVersionResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $eksSourceName
+ * @property string|null $eksSourceName
  * @property string $identifier
- * @property string $logicalStackName
- * @property string $resourceGroupName
- * @property string $terraformSourceName
+ * @property string|null $logicalStackName
+ * @property string|null $resourceGroupName
+ * @property string|null $terraformSourceName
  */
 class LogicalResourceId extends Shape
 {
     /**
      * @param array{
-     *     eksSourceName?: string,
+     *     eksSourceName?: string|null,
      *     identifier: string,
-     *     logicalStackName?: string,
-     *     resourceGroupName?: string,
-     *     terraformSourceName?: string
+     *     logicalStackName?: string|null,
+     *     resourceGroupName?: string|null,
+     *     terraformSourceName?: string|null
      * } $args
      */
     public function __construct(array $args)

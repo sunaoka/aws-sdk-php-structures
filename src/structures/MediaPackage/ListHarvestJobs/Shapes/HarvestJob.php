@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\MediaPackage\ListHarvestJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $ChannelId
- * @property string $CreatedAt
- * @property string $EndTime
- * @property string $Id
- * @property string $OriginEndpointId
- * @property S3Destination $S3Destination
- * @property string $StartTime
- * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED' $Status
+ * @property string|null $Arn
+ * @property string|null $ChannelId
+ * @property string|null $CreatedAt
+ * @property string|null $EndTime
+ * @property string|null $Id
+ * @property string|null $OriginEndpointId
+ * @property S3Destination|null $S3Destination
+ * @property string|null $StartTime
+ * @property 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null $Status
  */
 class HarvestJob extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     ChannelId?: string,
-     *     CreatedAt?: string,
-     *     EndTime?: string,
-     *     Id?: string,
-     *     OriginEndpointId?: string,
-     *     S3Destination?: S3Destination,
-     *     StartTime?: string,
-     *     Status?: 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'
+     *     Arn?: string|null,
+     *     ChannelId?: string|null,
+     *     CreatedAt?: string|null,
+     *     EndTime?: string|null,
+     *     Id?: string|null,
+     *     OriginEndpointId?: string|null,
+     *     S3Destination?: S3Destination|null,
+     *     StartTime?: string|null,
+     *     Status?: 'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args = [])

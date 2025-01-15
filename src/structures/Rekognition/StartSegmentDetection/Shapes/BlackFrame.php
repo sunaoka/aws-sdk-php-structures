@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\StartSegmentDetection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $MaxPixelThreshold
- * @property float $MinCoveragePercentage
+ * @property float|null $MaxPixelThreshold
+ * @property float|null $MinCoveragePercentage
  */
 class BlackFrame extends Shape
 {
     /**
      * @param array{
-     *     MaxPixelThreshold?: float,
-     *     MinCoveragePercentage?: float
+     *     MaxPixelThreshold?: float|null,
+     *     MinCoveragePercentage?: float|null
      * } $args
      */
     public function __construct(array $args = [])

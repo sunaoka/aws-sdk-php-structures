@@ -11,12 +11,12 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $startedAt
  * @property Shapes\LogConfiguration $log
  * @property 'STARTED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCEEDED'|'UPDATE_FAILED'|'ENDED' $lifecycleStatus
- * @property \Aws\Api\DateTimeResult $endedAt
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
- * @property 'ENDED' $targetLifecycleStatus
- * @property Shapes\HostPropertiesResponse $hostProperties
- * @property Shapes\LogConfiguration $workerLog
+ * @property \Aws\Api\DateTimeResult|null $endedAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
+ * @property 'ENDED'|null $targetLifecycleStatus
+ * @property Shapes\HostPropertiesResponse|null $hostProperties
+ * @property Shapes\LogConfiguration|null $workerLog
  */
 class GetSessionResponse extends Response
 {

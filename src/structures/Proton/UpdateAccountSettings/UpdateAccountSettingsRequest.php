@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Proton\UpdateAccountSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $deletePipelineProvisioningRepository
- * @property string $pipelineCodebuildRoleArn
- * @property Shapes\RepositoryBranchInput $pipelineProvisioningRepository
- * @property string $pipelineServiceRoleArn
+ * @property bool|null $deletePipelineProvisioningRepository
+ * @property string|null $pipelineCodebuildRoleArn
+ * @property Shapes\RepositoryBranchInput|null $pipelineProvisioningRepository
+ * @property string|null $pipelineServiceRoleArn
  */
 class UpdateAccountSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     deletePipelineProvisioningRepository?: bool,
-     *     pipelineCodebuildRoleArn?: string,
-     *     pipelineProvisioningRepository?: Shapes\RepositoryBranchInput,
-     *     pipelineServiceRoleArn?: string
+     *     deletePipelineProvisioningRepository?: bool|null,
+     *     pipelineCodebuildRoleArn?: string|null,
+     *     pipelineProvisioningRepository?: Shapes\RepositoryBranchInput|null,
+     *     pipelineServiceRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

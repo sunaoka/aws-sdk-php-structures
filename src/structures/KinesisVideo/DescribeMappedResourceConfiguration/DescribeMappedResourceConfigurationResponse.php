@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\DescribeMappedResourceConfiguratio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\MappedResourceConfigurationListItem> $MappedResourceConfigurationList
- * @property string $NextToken
+ * @property list<Shapes\MappedResourceConfigurationListItem>|null $MappedResourceConfigurationList
+ * @property string|null $NextToken
  */
 class DescribeMappedResourceConfigurationResponse extends Response
 {

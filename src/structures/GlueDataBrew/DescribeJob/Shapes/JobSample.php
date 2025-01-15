@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'FULL_DATASET'|'CUSTOM_ROWS' $Mode
- * @property int $Size
+ * @property 'FULL_DATASET'|'CUSTOM_ROWS'|null $Mode
+ * @property int|null $Size
  */
 class JobSample extends Shape
 {
     /**
      * @param array{
-     *     Mode?: 'FULL_DATASET'|'CUSTOM_ROWS',
-     *     Size?: int
+     *     Mode?: 'FULL_DATASET'|'CUSTOM_ROWS'|null,
+     *     Size?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\MonitoringScheduleSummary> $MonitoringScheduleSummaries
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListMonitoringSchedulesResponse extends Response
 {

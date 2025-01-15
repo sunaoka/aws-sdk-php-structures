@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DBInstanceIdentifier
  * @property string $TenantDBName
- * @property string $MasterUserPassword
- * @property string $NewTenantDBName
+ * @property string|null $MasterUserPassword
+ * @property string|null $NewTenantDBName
  */
 class ModifyTenantDatabaseRequest extends Request
 {
@@ -16,8 +16,8 @@ class ModifyTenantDatabaseRequest extends Request
      * @param array{
      *     DBInstanceIdentifier: string,
      *     TenantDBName: string,
-     *     MasterUserPassword?: string,
-     *     NewTenantDBName?: string
+     *     MasterUserPassword?: string|null,
+     *     NewTenantDBName?: string|null
      * } $args
      */
     public function __construct(array $args)

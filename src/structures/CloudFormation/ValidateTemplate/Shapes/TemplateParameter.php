@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ValidateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterKey
- * @property string $DefaultValue
- * @property bool $NoEcho
- * @property string $Description
+ * @property string|null $ParameterKey
+ * @property string|null $DefaultValue
+ * @property bool|null $NoEcho
+ * @property string|null $Description
  */
 class TemplateParameter extends Shape
 {
     /**
      * @param array{
-     *     ParameterKey?: string,
-     *     DefaultValue?: string,
-     *     NoEcho?: bool,
-     *     Description?: string
+     *     ParameterKey?: string|null,
+     *     DefaultValue?: string|null,
+     *     NoEcho?: bool|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetTransitGatewayRouteTableAttac
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TransitGatewayRouteTableAttachment $TransitGatewayRouteTableAttachment
+ * @property Shapes\TransitGatewayRouteTableAttachment|null $TransitGatewayRouteTableAttachment
  */
 class GetTransitGatewayRouteTableAttachmentResponse extends Response
 {

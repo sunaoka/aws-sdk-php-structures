@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\UnlockSnapshot;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $SnapshotId
+ * @property string|null $SnapshotId
  */
 class UnlockSnapshotResponse extends Response
 {

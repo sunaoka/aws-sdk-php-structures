@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RuleName
- * @property string $RuleState
+ * @property string|null $RuleState
  * @property string $RuleDefinition
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class PutInsightRuleRequest extends Request
 {
     /**
      * @param array{
      *     RuleName: string,
-     *     RuleState?: string,
+     *     RuleState?: string|null,
      *     RuleDefinition: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

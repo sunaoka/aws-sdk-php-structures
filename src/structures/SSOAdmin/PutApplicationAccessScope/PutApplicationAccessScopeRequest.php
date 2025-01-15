@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationArn
- * @property list<string> $AuthorizedTargets
+ * @property list<string>|null $AuthorizedTargets
  * @property string $Scope
  */
 class PutApplicationAccessScopeRequest extends Request
@@ -14,7 +14,7 @@ class PutApplicationAccessScopeRequest extends Request
     /**
      * @param array{
      *     ApplicationArn: string,
-     *     AuthorizedTargets?: list<string>,
+     *     AuthorizedTargets?: list<string>|null,
      *     Scope: string
      * } $args
      */

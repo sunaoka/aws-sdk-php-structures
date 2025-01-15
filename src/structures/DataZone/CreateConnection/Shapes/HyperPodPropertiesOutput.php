@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $clusterArn
+ * @property string|null $clusterArn
  * @property string $clusterName
- * @property 'EKS'|'SLURM' $orchestrator
+ * @property 'EKS'|'SLURM'|null $orchestrator
  */
 class HyperPodPropertiesOutput extends Shape
 {
     /**
      * @param array{
-     *     clusterArn?: string,
+     *     clusterArn?: string|null,
      *     clusterName: string,
-     *     orchestrator?: 'EKS'|'SLURM'
+     *     orchestrator?: 'EKS'|'SLURM'|null
      * } $args
      */
     public function __construct(array $args)

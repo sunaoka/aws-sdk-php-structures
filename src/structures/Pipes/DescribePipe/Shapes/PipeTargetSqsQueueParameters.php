@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pipes\DescribePipe\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MessageGroupId
- * @property string $MessageDeduplicationId
+ * @property string|null $MessageGroupId
+ * @property string|null $MessageDeduplicationId
  */
 class PipeTargetSqsQueueParameters extends Shape
 {
     /**
      * @param array{
-     *     MessageGroupId?: string,
-     *     MessageDeduplicationId?: string
+     *     MessageGroupId?: string|null,
+     *     MessageDeduplicationId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

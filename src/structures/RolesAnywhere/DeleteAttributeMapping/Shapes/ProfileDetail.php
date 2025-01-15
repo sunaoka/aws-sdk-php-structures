@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\DeleteAttributeMapping\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $acceptRoleSessionName
- * @property list<AttributeMapping> $attributeMappings
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property int $durationSeconds
- * @property bool $enabled
- * @property list<string> $managedPolicyArns
- * @property string $name
- * @property string $profileArn
- * @property string $profileId
- * @property bool $requireInstanceProperties
- * @property list<string> $roleArns
- * @property string $sessionPolicy
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property bool|null $acceptRoleSessionName
+ * @property list<AttributeMapping>|null $attributeMappings
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property int|null $durationSeconds
+ * @property bool|null $enabled
+ * @property list<string>|null $managedPolicyArns
+ * @property string|null $name
+ * @property string|null $profileArn
+ * @property string|null $profileId
+ * @property bool|null $requireInstanceProperties
+ * @property list<string>|null $roleArns
+ * @property string|null $sessionPolicy
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class ProfileDetail extends Shape
 {
     /**
      * @param array{
-     *     acceptRoleSessionName?: bool,
-     *     attributeMappings?: list<AttributeMapping>,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     createdBy?: string,
-     *     durationSeconds?: int,
-     *     enabled?: bool,
-     *     managedPolicyArns?: list<string>,
-     *     name?: string,
-     *     profileArn?: string,
-     *     profileId?: string,
-     *     requireInstanceProperties?: bool,
-     *     roleArns?: list<string>,
-     *     sessionPolicy?: string,
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     acceptRoleSessionName?: bool|null,
+     *     attributeMappings?: list<AttributeMapping>|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     createdBy?: string|null,
+     *     durationSeconds?: int|null,
+     *     enabled?: bool|null,
+     *     managedPolicyArns?: list<string>|null,
+     *     name?: string|null,
+     *     profileArn?: string|null,
+     *     profileId?: string|null,
+     *     requireInstanceProperties?: bool|null,
+     *     roleArns?: list<string>|null,
+     *     sessionPolicy?: string|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

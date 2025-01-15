@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeWorkspaceDirectories\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableWorkDocs
- * @property bool $EnableInternetAccess
- * @property string $DefaultOu
- * @property string $CustomSecurityGroupId
- * @property bool $UserEnabledAsLocalAdministrator
- * @property bool $EnableMaintenanceMode
- * @property string $InstanceIamRoleArn
+ * @property bool|null $EnableWorkDocs
+ * @property bool|null $EnableInternetAccess
+ * @property string|null $DefaultOu
+ * @property string|null $CustomSecurityGroupId
+ * @property bool|null $UserEnabledAsLocalAdministrator
+ * @property bool|null $EnableMaintenanceMode
+ * @property string|null $InstanceIamRoleArn
  */
 class DefaultWorkspaceCreationProperties extends Shape
 {
     /**
      * @param array{
-     *     EnableWorkDocs?: bool,
-     *     EnableInternetAccess?: bool,
-     *     DefaultOu?: string,
-     *     CustomSecurityGroupId?: string,
-     *     UserEnabledAsLocalAdministrator?: bool,
-     *     EnableMaintenanceMode?: bool,
-     *     InstanceIamRoleArn?: string
+     *     EnableWorkDocs?: bool|null,
+     *     EnableInternetAccess?: bool|null,
+     *     DefaultOu?: string|null,
+     *     CustomSecurityGroupId?: string|null,
+     *     UserEnabledAsLocalAdministrator?: bool|null,
+     *     EnableMaintenanceMode?: bool|null,
+     *     InstanceIamRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

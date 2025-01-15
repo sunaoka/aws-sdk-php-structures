@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\EnableAwsNetworkPerformanceMetricSubscripti
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $Output
+ * @property bool|null $Output
  */
 class EnableAwsNetworkPerformanceMetricSubscriptionResponse extends Response
 {

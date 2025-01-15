@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LocationService\GetPlace\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<double> $Point
+ * @property list<double>|null $Point
  */
 class PlaceGeometry extends Shape
 {
     /**
-     * @param array{Point?: list<double>} $args
+     * @param array{Point?: list<double>|null} $args
      */
     public function __construct(array $args = [])
     {

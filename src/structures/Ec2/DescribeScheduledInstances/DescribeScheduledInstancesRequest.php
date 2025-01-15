@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeScheduledInstances;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
- * @property string $NextToken
- * @property list<string> $ScheduledInstanceIds
- * @property Shapes\SlotStartTimeRangeRequest $SlotStartTimeRange
+ * @property bool|null $DryRun
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
+ * @property list<string>|null $ScheduledInstanceIds
+ * @property Shapes\SlotStartTimeRangeRequest|null $SlotStartTimeRange
  */
 class DescribeScheduledInstancesRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
-     *     NextToken?: string,
-     *     ScheduledInstanceIds?: list<string>,
-     *     SlotStartTimeRange?: Shapes\SlotStartTimeRangeRequest
+     *     DryRun?: bool|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null,
+     *     ScheduledInstanceIds?: list<string>|null,
+     *     SlotStartTimeRange?: Shapes\SlotStartTimeRangeRequest|null
      * } $args
      */
     public function __construct(array $args = [])

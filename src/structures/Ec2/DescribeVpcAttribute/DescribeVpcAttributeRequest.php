@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'enableDnsSupport'|'enableDnsHostnames'|'enableNetworkAddressUsageMetrics' $Attribute
  * @property string $VpcId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DescribeVpcAttributeRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeVpcAttributeRequest extends Request
      * @param array{
      *     Attribute: 'enableDnsSupport'|'enableDnsHostnames'|'enableNetworkAddressUsageMetrics',
      *     VpcId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

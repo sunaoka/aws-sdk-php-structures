@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ListRemoteAccessSessions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
- * @property \Aws\Api\DateTimeResult $created
- * @property 'PENDING'|'PENDING_CONCURRENCY'|'PENDING_DEVICE'|'PROCESSING'|'SCHEDULING'|'PREPARING'|'RUNNING'|'COMPLETED'|'STOPPING' $status
- * @property 'PENDING'|'PASSED'|'WARNED'|'FAILED'|'SKIPPED'|'ERRORED'|'STOPPED' $result
- * @property string $message
- * @property \Aws\Api\DateTimeResult $started
- * @property \Aws\Api\DateTimeResult $stopped
- * @property Device $device
- * @property string $instanceArn
- * @property bool $remoteDebugEnabled
- * @property bool $remoteRecordEnabled
- * @property string $remoteRecordAppArn
- * @property string $hostAddress
- * @property string $clientId
- * @property 'METERED'|'UNMETERED' $billingMethod
- * @property DeviceMinutes $deviceMinutes
- * @property string $endpoint
- * @property string $deviceUdid
- * @property 'INTERACTIVE'|'NO_VIDEO'|'VIDEO_ONLY' $interactionMode
- * @property bool $skipAppResign
- * @property VpcConfig $vpcConfig
+ * @property string|null $arn
+ * @property string|null $name
+ * @property \Aws\Api\DateTimeResult|null $created
+ * @property 'PENDING'|'PENDING_CONCURRENCY'|'PENDING_DEVICE'|'PROCESSING'|'SCHEDULING'|'PREPARING'|'RUNNING'|'COMPLETED'|'STOPPING'|null $status
+ * @property 'PENDING'|'PASSED'|'WARNED'|'FAILED'|'SKIPPED'|'ERRORED'|'STOPPED'|null $result
+ * @property string|null $message
+ * @property \Aws\Api\DateTimeResult|null $started
+ * @property \Aws\Api\DateTimeResult|null $stopped
+ * @property Device|null $device
+ * @property string|null $instanceArn
+ * @property bool|null $remoteDebugEnabled
+ * @property bool|null $remoteRecordEnabled
+ * @property string|null $remoteRecordAppArn
+ * @property string|null $hostAddress
+ * @property string|null $clientId
+ * @property 'METERED'|'UNMETERED'|null $billingMethod
+ * @property DeviceMinutes|null $deviceMinutes
+ * @property string|null $endpoint
+ * @property string|null $deviceUdid
+ * @property 'INTERACTIVE'|'NO_VIDEO'|'VIDEO_ONLY'|null $interactionMode
+ * @property bool|null $skipAppResign
+ * @property VpcConfig|null $vpcConfig
  */
 class RemoteAccessSession extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string,
-     *     created?: \Aws\Api\DateTimeResult,
-     *     status?: 'PENDING'|'PENDING_CONCURRENCY'|'PENDING_DEVICE'|'PROCESSING'|'SCHEDULING'|'PREPARING'|'RUNNING'|'COMPLETED'|'STOPPING',
-     *     result?: 'PENDING'|'PASSED'|'WARNED'|'FAILED'|'SKIPPED'|'ERRORED'|'STOPPED',
-     *     message?: string,
-     *     started?: \Aws\Api\DateTimeResult,
-     *     stopped?: \Aws\Api\DateTimeResult,
-     *     device?: Device,
-     *     instanceArn?: string,
-     *     remoteDebugEnabled?: bool,
-     *     remoteRecordEnabled?: bool,
-     *     remoteRecordAppArn?: string,
-     *     hostAddress?: string,
-     *     clientId?: string,
-     *     billingMethod?: 'METERED'|'UNMETERED',
-     *     deviceMinutes?: DeviceMinutes,
-     *     endpoint?: string,
-     *     deviceUdid?: string,
-     *     interactionMode?: 'INTERACTIVE'|'NO_VIDEO'|'VIDEO_ONLY',
-     *     skipAppResign?: bool,
-     *     vpcConfig?: VpcConfig
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     created?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'PENDING'|'PENDING_CONCURRENCY'|'PENDING_DEVICE'|'PROCESSING'|'SCHEDULING'|'PREPARING'|'RUNNING'|'COMPLETED'|'STOPPING'|null,
+     *     result?: 'PENDING'|'PASSED'|'WARNED'|'FAILED'|'SKIPPED'|'ERRORED'|'STOPPED'|null,
+     *     message?: string|null,
+     *     started?: \Aws\Api\DateTimeResult|null,
+     *     stopped?: \Aws\Api\DateTimeResult|null,
+     *     device?: Device|null,
+     *     instanceArn?: string|null,
+     *     remoteDebugEnabled?: bool|null,
+     *     remoteRecordEnabled?: bool|null,
+     *     remoteRecordAppArn?: string|null,
+     *     hostAddress?: string|null,
+     *     clientId?: string|null,
+     *     billingMethod?: 'METERED'|'UNMETERED'|null,
+     *     deviceMinutes?: DeviceMinutes|null,
+     *     endpoint?: string|null,
+     *     deviceUdid?: string|null,
+     *     interactionMode?: 'INTERACTIVE'|'NO_VIDEO'|'VIDEO_ONLY'|null,
+     *     skipAppResign?: bool|null,
+     *     vpcConfig?: VpcConfig|null
      * } $args
      */
     public function __construct(array $args = [])

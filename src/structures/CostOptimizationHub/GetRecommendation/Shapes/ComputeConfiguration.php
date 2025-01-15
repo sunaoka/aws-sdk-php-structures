@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $vCpu
- * @property int $memorySizeInMB
- * @property string $architecture
- * @property string $platform
+ * @property double|null $vCpu
+ * @property int|null $memorySizeInMB
+ * @property string|null $architecture
+ * @property string|null $platform
  */
 class ComputeConfiguration extends Shape
 {
     /**
      * @param array{
-     *     vCpu?: double,
-     *     memorySizeInMB?: int,
-     *     architecture?: string,
-     *     platform?: string
+     *     vCpu?: double|null,
+     *     memorySizeInMB?: int|null,
+     *     architecture?: string|null,
+     *     platform?: string|null
      * } $args
      */
     public function __construct(array $args = [])

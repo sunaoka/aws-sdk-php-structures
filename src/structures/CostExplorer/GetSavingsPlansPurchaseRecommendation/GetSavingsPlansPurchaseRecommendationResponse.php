@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetSavingsPlansPurchaseRecommendat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\SavingsPlansPurchaseRecommendationMetadata $Metadata
- * @property Shapes\SavingsPlansPurchaseRecommendation $SavingsPlansPurchaseRecommendation
- * @property string $NextPageToken
+ * @property Shapes\SavingsPlansPurchaseRecommendationMetadata|null $Metadata
+ * @property Shapes\SavingsPlansPurchaseRecommendation|null $SavingsPlansPurchaseRecommendation
+ * @property string|null $NextPageToken
  */
 class GetSavingsPlansPurchaseRecommendationResponse extends Response
 {

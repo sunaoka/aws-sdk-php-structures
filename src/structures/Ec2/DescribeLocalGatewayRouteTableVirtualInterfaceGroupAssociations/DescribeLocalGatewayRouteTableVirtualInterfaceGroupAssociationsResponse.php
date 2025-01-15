@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeLocalGatewayRouteTableVirtualInterf
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\LocalGatewayRouteTableVirtualInterfaceGroupAssociation> $LocalGatewayRouteTableVirtualInterfaceGroupAssociations
- * @property string $NextToken
+ * @property list<Shapes\LocalGatewayRouteTableVirtualInterfaceGroupAssociation>|null $LocalGatewayRouteTableVirtualInterfaceGroupAssociations
+ * @property string|null $NextToken
  */
 class DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResponse extends Response
 {

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED' $Status
- * @property string $FailureReason
+ * @property string|null $FailureReason
  */
 class EvaluationStatus extends Shape
 {
     /**
      * @param array{
      *     Status: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED',
-     *     FailureReason?: string
+     *     FailureReason?: string|null
      * } $args
      */
     public function __construct(array $args)

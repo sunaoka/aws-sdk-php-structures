@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudTrail\ListImportFailures\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Location
- * @property 'FAILED'|'RETRY'|'SUCCEEDED' $Status
- * @property string $ErrorType
- * @property string $ErrorMessage
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
+ * @property string|null $Location
+ * @property 'FAILED'|'RETRY'|'SUCCEEDED'|null $Status
+ * @property string|null $ErrorType
+ * @property string|null $ErrorMessage
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
  */
 class ImportFailureListItem extends Shape
 {
     /**
      * @param array{
-     *     Location?: string,
-     *     Status?: 'FAILED'|'RETRY'|'SUCCEEDED',
-     *     ErrorType?: string,
-     *     ErrorMessage?: string,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult
+     *     Location?: string|null,
+     *     Status?: 'FAILED'|'RETRY'|'SUCCEEDED'|null,
+     *     ErrorType?: string|null,
+     *     ErrorMessage?: string|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

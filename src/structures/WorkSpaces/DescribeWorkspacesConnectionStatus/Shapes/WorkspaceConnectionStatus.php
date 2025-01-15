@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeWorkspacesConnectionStatus\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WorkspaceId
- * @property 'CONNECTED'|'DISCONNECTED'|'UNKNOWN' $ConnectionState
- * @property \Aws\Api\DateTimeResult $ConnectionStateCheckTimestamp
- * @property \Aws\Api\DateTimeResult $LastKnownUserConnectionTimestamp
+ * @property string|null $WorkspaceId
+ * @property 'CONNECTED'|'DISCONNECTED'|'UNKNOWN'|null $ConnectionState
+ * @property \Aws\Api\DateTimeResult|null $ConnectionStateCheckTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastKnownUserConnectionTimestamp
  */
 class WorkspaceConnectionStatus extends Shape
 {
     /**
      * @param array{
-     *     WorkspaceId?: string,
-     *     ConnectionState?: 'CONNECTED'|'DISCONNECTED'|'UNKNOWN',
-     *     ConnectionStateCheckTimestamp?: \Aws\Api\DateTimeResult,
-     *     LastKnownUserConnectionTimestamp?: \Aws\Api\DateTimeResult
+     *     WorkspaceId?: string|null,
+     *     ConnectionState?: 'CONNECTED'|'DISCONNECTED'|'UNKNOWN'|null,
+     *     ConnectionStateCheckTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     LastKnownUserConnectionTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

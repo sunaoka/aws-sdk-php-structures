@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ComputationId
- * @property string $Name
- * @property DimensionField $Time
- * @property MeasureField $Value
- * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND' $PeriodTimeGranularity
+ * @property string|null $Name
+ * @property DimensionField|null $Time
+ * @property MeasureField|null $Value
+ * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null $PeriodTimeGranularity
  */
 class PeriodToDateComputation extends Shape
 {
     /**
      * @param array{
      *     ComputationId: string,
-     *     Name?: string,
-     *     Time?: DimensionField,
-     *     Value?: MeasureField,
-     *     PeriodTimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'
+     *     Name?: string|null,
+     *     Time?: DimensionField|null,
+     *     Value?: MeasureField|null,
+     *     PeriodTimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ecr\ValidatePullThroughCacheRule;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ecrRepositoryPrefix
- * @property string $registryId
- * @property string $upstreamRegistryUrl
- * @property string $credentialArn
- * @property bool $isValid
- * @property string $failure
+ * @property string|null $ecrRepositoryPrefix
+ * @property string|null $registryId
+ * @property string|null $upstreamRegistryUrl
+ * @property string|null $credentialArn
+ * @property bool|null $isValid
+ * @property string|null $failure
  */
 class ValidatePullThroughCacheRuleResponse extends Response
 {

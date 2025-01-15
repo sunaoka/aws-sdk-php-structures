@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FlowArn
- * @property Shapes\UpdateFailoverConfig $SourceFailoverConfig
- * @property Shapes\UpdateMaintenance $Maintenance
- * @property Shapes\MonitoringConfig $SourceMonitoringConfig
+ * @property Shapes\UpdateFailoverConfig|null $SourceFailoverConfig
+ * @property Shapes\UpdateMaintenance|null $Maintenance
+ * @property Shapes\MonitoringConfig|null $SourceMonitoringConfig
  */
 class UpdateFlowRequest extends Request
 {
     /**
      * @param array{
      *     FlowArn: string,
-     *     SourceFailoverConfig?: Shapes\UpdateFailoverConfig,
-     *     Maintenance?: Shapes\UpdateMaintenance,
-     *     SourceMonitoringConfig?: Shapes\MonitoringConfig
+     *     SourceFailoverConfig?: Shapes\UpdateFailoverConfig|null,
+     *     Maintenance?: Shapes\UpdateMaintenance|null,
+     *     SourceMonitoringConfig?: Shapes\MonitoringConfig|null
      * } $args
      */
     public function __construct(array $args)

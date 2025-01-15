@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $UserName
- * @property Shapes\AuthenticationMode $AuthenticationMode
- * @property string $AccessString
+ * @property Shapes\AuthenticationMode|null $AuthenticationMode
+ * @property string|null $AccessString
  */
 class UpdateUserRequest extends Request
 {
     /**
      * @param array{
      *     UserName: string,
-     *     AuthenticationMode?: Shapes\AuthenticationMode,
-     *     AccessString?: string
+     *     AuthenticationMode?: Shapes\AuthenticationMode|null,
+     *     AccessString?: string|null
      * } $args
      */
     public function __construct(array $args)

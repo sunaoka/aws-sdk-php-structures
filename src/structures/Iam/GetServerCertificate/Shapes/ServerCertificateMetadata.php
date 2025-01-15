@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ServerCertificateName
  * @property string $ServerCertificateId
  * @property string $Arn
- * @property \Aws\Api\DateTimeResult $UploadDate
- * @property \Aws\Api\DateTimeResult $Expiration
+ * @property \Aws\Api\DateTimeResult|null $UploadDate
+ * @property \Aws\Api\DateTimeResult|null $Expiration
  */
 class ServerCertificateMetadata extends Shape
 {
@@ -20,8 +20,8 @@ class ServerCertificateMetadata extends Shape
      *     ServerCertificateName: string,
      *     ServerCertificateId: string,
      *     Arn: string,
-     *     UploadDate?: \Aws\Api\DateTimeResult,
-     *     Expiration?: \Aws\Api\DateTimeResult
+     *     UploadDate?: \Aws\Api\DateTimeResult|null,
+     *     Expiration?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

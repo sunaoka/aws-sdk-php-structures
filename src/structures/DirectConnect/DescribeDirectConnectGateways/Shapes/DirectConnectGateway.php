@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DescribeDirectConnectGateways\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $directConnectGatewayId
- * @property string $directConnectGatewayName
- * @property int $amazonSideAsn
- * @property string $ownerAccount
- * @property 'pending'|'available'|'deleting'|'deleted' $directConnectGatewayState
- * @property string $stateChangeError
+ * @property string|null $directConnectGatewayId
+ * @property string|null $directConnectGatewayName
+ * @property int|null $amazonSideAsn
+ * @property string|null $ownerAccount
+ * @property 'pending'|'available'|'deleting'|'deleted'|null $directConnectGatewayState
+ * @property string|null $stateChangeError
  */
 class DirectConnectGateway extends Shape
 {
     /**
      * @param array{
-     *     directConnectGatewayId?: string,
-     *     directConnectGatewayName?: string,
-     *     amazonSideAsn?: int,
-     *     ownerAccount?: string,
-     *     directConnectGatewayState?: 'pending'|'available'|'deleting'|'deleted',
-     *     stateChangeError?: string
+     *     directConnectGatewayId?: string|null,
+     *     directConnectGatewayName?: string|null,
+     *     amazonSideAsn?: int|null,
+     *     ownerAccount?: string|null,
+     *     directConnectGatewayState?: 'pending'|'available'|'deleting'|'deleted'|null,
+     *     stateChangeError?: string|null
      * } $args
      */
     public function __construct(array $args = [])

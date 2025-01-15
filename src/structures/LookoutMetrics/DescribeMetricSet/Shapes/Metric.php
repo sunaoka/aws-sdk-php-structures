@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $MetricName
  * @property 'AVG'|'SUM' $AggregationFunction
- * @property string $Namespace
+ * @property string|null $Namespace
  */
 class Metric extends Shape
 {
@@ -15,7 +15,7 @@ class Metric extends Shape
      * @param array{
      *     MetricName: string,
      *     AggregationFunction: 'AVG'|'SUM',
-     *     Namespace?: string
+     *     Namespace?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\UpdateFirewallDescription;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $UpdateToken
- * @property string $FirewallArn
- * @property string $FirewallName
- * @property string $Description
+ * @property string|null $UpdateToken
+ * @property string|null $FirewallArn
+ * @property string|null $FirewallName
+ * @property string|null $Description
  */
 class UpdateFirewallDescriptionRequest extends Request
 {
     /**
      * @param array{
-     *     UpdateToken?: string,
-     *     FirewallArn?: string,
-     *     FirewallName?: string,
-     *     Description?: string
+     *     UpdateToken?: string|null,
+     *     FirewallArn?: string|null,
+     *     FirewallName?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

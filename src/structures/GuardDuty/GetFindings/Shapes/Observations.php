@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Text
+ * @property list<string>|null $Text
  */
 class Observations extends Shape
 {
     /**
-     * @param array{Text?: list<string>} $args
+     * @param array{Text?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

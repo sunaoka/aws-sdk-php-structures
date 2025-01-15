@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FeatureGroupArn
- * @property string $FeatureGroupName
- * @property string $FeatureName
- * @property 'Integral'|'Fractional'|'String' $FeatureType
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $Description
- * @property list<FeatureParameter> $Parameters
+ * @property string|null $FeatureGroupArn
+ * @property string|null $FeatureGroupName
+ * @property string|null $FeatureName
+ * @property 'Integral'|'Fractional'|'String'|null $FeatureType
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $Description
+ * @property list<FeatureParameter>|null $Parameters
  */
 class FeatureMetadata extends Shape
 {
     /**
      * @param array{
-     *     FeatureGroupArn?: string,
-     *     FeatureGroupName?: string,
-     *     FeatureName?: string,
-     *     FeatureType?: 'Integral'|'Fractional'|'String',
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     Parameters?: list<FeatureParameter>
+     *     FeatureGroupArn?: string|null,
+     *     FeatureGroupName?: string|null,
+     *     FeatureName?: string|null,
+     *     FeatureType?: 'Integral'|'Fractional'|'String'|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     Parameters?: list<FeatureParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

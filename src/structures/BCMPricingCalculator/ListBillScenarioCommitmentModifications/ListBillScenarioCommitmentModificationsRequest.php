@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $billScenarioId
- * @property string $nextToken
- * @property int<min, 25> $maxResults
+ * @property string|null $nextToken
+ * @property int<min, 25>|null $maxResults
  */
 class ListBillScenarioCommitmentModificationsRequest extends Request
 {
     /**
      * @param array{
      *     billScenarioId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<min, 25>
+     *     nextToken?: string|null,
+     *     maxResults?: int<min, 25>|null
      * } $args
      */
     public function __construct(array $args)

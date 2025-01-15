@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeListenerCertific
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Certificate> $Certificates
- * @property string $NextMarker
+ * @property list<Shapes\Certificate>|null $Certificates
+ * @property string|null $NextMarker
  */
 class DescribeListenerCertificatesResponse extends Response
 {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $PolicyRuntime
  * @property string $PolicyText
- * @property bool $EnableDebugLogDelivery
+ * @property bool|null $EnableDebugLogDelivery
  */
 class CustomPolicyDetails extends Shape
 {
@@ -15,7 +15,7 @@ class CustomPolicyDetails extends Shape
      * @param array{
      *     PolicyRuntime: string,
      *     PolicyText: string,
-     *     EnableDebugLogDelivery?: bool
+     *     EnableDebugLogDelivery?: bool|null
      * } $args
      */
     public function __construct(array $args)

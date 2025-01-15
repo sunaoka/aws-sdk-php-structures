@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\LookupPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PolicyId
- * @property string $ObjectIdentifier
- * @property string $PolicyType
+ * @property string|null $PolicyId
+ * @property string|null $ObjectIdentifier
+ * @property string|null $PolicyType
  */
 class PolicyAttachment extends Shape
 {
     /**
      * @param array{
-     *     PolicyId?: string,
-     *     ObjectIdentifier?: string,
-     *     PolicyType?: string
+     *     PolicyId?: string|null,
+     *     ObjectIdentifier?: string|null,
+     *     PolicyType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

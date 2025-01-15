@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $EndTime
  * @property string $KpiName
  * @property BaseKpiResult $KpiResult
- * @property string $NextToken
+ * @property string|null $NextToken
  * @property \Aws\Api\DateTimeResult $StartTime
  */
 class CampaignDateRangeKpiResponse extends Shape
@@ -22,7 +22,7 @@ class CampaignDateRangeKpiResponse extends Shape
      *     EndTime: \Aws\Api\DateTimeResult,
      *     KpiName: string,
      *     KpiResult: BaseKpiResult,
-     *     NextToken?: string,
+     *     NextToken?: string|null,
      *     StartTime: \Aws\Api\DateTimeResult
      * } $args
      */

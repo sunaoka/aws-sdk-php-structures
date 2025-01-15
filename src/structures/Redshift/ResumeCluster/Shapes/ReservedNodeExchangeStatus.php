@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Redshift\ResumeCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReservedNodeExchangeRequestId
- * @property 'REQUESTED'|'PENDING'|'IN_PROGRESS'|'RETRYING'|'SUCCEEDED'|'FAILED' $Status
- * @property \Aws\Api\DateTimeResult $RequestTime
- * @property string $SourceReservedNodeId
- * @property string $SourceReservedNodeType
- * @property int $SourceReservedNodeCount
- * @property string $TargetReservedNodeOfferingId
- * @property string $TargetReservedNodeType
- * @property int $TargetReservedNodeCount
+ * @property string|null $ReservedNodeExchangeRequestId
+ * @property 'REQUESTED'|'PENDING'|'IN_PROGRESS'|'RETRYING'|'SUCCEEDED'|'FAILED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $RequestTime
+ * @property string|null $SourceReservedNodeId
+ * @property string|null $SourceReservedNodeType
+ * @property int|null $SourceReservedNodeCount
+ * @property string|null $TargetReservedNodeOfferingId
+ * @property string|null $TargetReservedNodeType
+ * @property int|null $TargetReservedNodeCount
  */
 class ReservedNodeExchangeStatus extends Shape
 {
     /**
      * @param array{
-     *     ReservedNodeExchangeRequestId?: string,
-     *     Status?: 'REQUESTED'|'PENDING'|'IN_PROGRESS'|'RETRYING'|'SUCCEEDED'|'FAILED',
-     *     RequestTime?: \Aws\Api\DateTimeResult,
-     *     SourceReservedNodeId?: string,
-     *     SourceReservedNodeType?: string,
-     *     SourceReservedNodeCount?: int,
-     *     TargetReservedNodeOfferingId?: string,
-     *     TargetReservedNodeType?: string,
-     *     TargetReservedNodeCount?: int
+     *     ReservedNodeExchangeRequestId?: string|null,
+     *     Status?: 'REQUESTED'|'PENDING'|'IN_PROGRESS'|'RETRYING'|'SUCCEEDED'|'FAILED'|null,
+     *     RequestTime?: \Aws\Api\DateTimeResult|null,
+     *     SourceReservedNodeId?: string|null,
+     *     SourceReservedNodeType?: string|null,
+     *     SourceReservedNodeCount?: int|null,
+     *     TargetReservedNodeOfferingId?: string|null,
+     *     TargetReservedNodeType?: string|null,
+     *     TargetReservedNodeCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

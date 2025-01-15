@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EKS\DescribeAddonConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $serviceAccount
- * @property list<string> $recommendedManagedPolicies
+ * @property string|null $serviceAccount
+ * @property list<string>|null $recommendedManagedPolicies
  */
 class AddonPodIdentityConfiguration extends Shape
 {
     /**
      * @param array{
-     *     serviceAccount?: string,
-     *     recommendedManagedPolicies?: list<string>
+     *     serviceAccount?: string|null,
+     *     recommendedManagedPolicies?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

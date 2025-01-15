@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KeyId
- * @property string $Status
- * @property string $Type
+ * @property string|null $KeyId
+ * @property string|null $Status
+ * @property string|null $Type
  */
 class AwsXrayEncryptionConfigDetails extends Shape
 {
     /**
      * @param array{
-     *     KeyId?: string,
-     *     Status?: string,
-     *     Type?: string
+     *     KeyId?: string|null,
+     *     Status?: string|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

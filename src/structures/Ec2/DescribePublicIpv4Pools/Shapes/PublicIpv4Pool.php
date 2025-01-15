@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribePublicIpv4Pools\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PoolId
- * @property string $Description
- * @property list<PublicIpv4PoolRange> $PoolAddressRanges
- * @property int $TotalAddressCount
- * @property int $TotalAvailableAddressCount
- * @property string $NetworkBorderGroup
- * @property list<Tag> $Tags
+ * @property string|null $PoolId
+ * @property string|null $Description
+ * @property list<PublicIpv4PoolRange>|null $PoolAddressRanges
+ * @property int|null $TotalAddressCount
+ * @property int|null $TotalAvailableAddressCount
+ * @property string|null $NetworkBorderGroup
+ * @property list<Tag>|null $Tags
  */
 class PublicIpv4Pool extends Shape
 {
     /**
      * @param array{
-     *     PoolId?: string,
-     *     Description?: string,
-     *     PoolAddressRanges?: list<PublicIpv4PoolRange>,
-     *     TotalAddressCount?: int,
-     *     TotalAvailableAddressCount?: int,
-     *     NetworkBorderGroup?: string,
-     *     Tags?: list<Tag>
+     *     PoolId?: string|null,
+     *     Description?: string|null,
+     *     PoolAddressRanges?: list<PublicIpv4PoolRange>|null,
+     *     TotalAddressCount?: int|null,
+     *     TotalAvailableAddressCount?: int|null,
+     *     NetworkBorderGroup?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

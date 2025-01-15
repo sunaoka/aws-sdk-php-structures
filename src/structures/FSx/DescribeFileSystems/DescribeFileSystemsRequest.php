@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FSx\DescribeFileSystems;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $FileSystemIds
- * @property int<1, 2147483647> $MaxResults
- * @property string $NextToken
+ * @property list<string>|null $FileSystemIds
+ * @property int<1, 2147483647>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeFileSystemsRequest extends Request
 {
     /**
      * @param array{
-     *     FileSystemIds?: list<string>,
-     *     MaxResults?: int<1, 2147483647>,
-     *     NextToken?: string
+     *     FileSystemIds?: list<string>|null,
+     *     MaxResults?: int<1, 2147483647>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

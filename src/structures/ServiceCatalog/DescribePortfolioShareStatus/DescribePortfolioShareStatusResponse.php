@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribePortfolioShareStatus;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PortfolioShareToken
- * @property string $PortfolioId
- * @property string $OrganizationNodeValue
- * @property 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETED'|'COMPLETED_WITH_ERRORS'|'ERROR' $Status
- * @property Shapes\ShareDetails $ShareDetails
+ * @property string|null $PortfolioShareToken
+ * @property string|null $PortfolioId
+ * @property string|null $OrganizationNodeValue
+ * @property 'NOT_STARTED'|'IN_PROGRESS'|'COMPLETED'|'COMPLETED_WITH_ERRORS'|'ERROR'|null $Status
+ * @property Shapes\ShareDetails|null $ShareDetails
  */
 class DescribePortfolioShareStatusResponse extends Response
 {

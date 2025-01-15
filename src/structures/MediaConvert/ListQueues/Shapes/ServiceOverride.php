@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListQueues\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Message
- * @property string $Name
- * @property string $OverrideValue
- * @property string $Value
+ * @property string|null $Message
+ * @property string|null $Name
+ * @property string|null $OverrideValue
+ * @property string|null $Value
  */
 class ServiceOverride extends Shape
 {
     /**
      * @param array{
-     *     Message?: string,
-     *     Name?: string,
-     *     OverrideValue?: string,
-     *     Value?: string
+     *     Message?: string|null,
+     *     Name?: string|null,
+     *     OverrideValue?: string|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

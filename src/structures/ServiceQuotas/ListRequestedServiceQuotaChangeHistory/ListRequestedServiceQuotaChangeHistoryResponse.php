@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ServiceQuotas\ListRequestedServiceQuotaChangeHi
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\RequestedServiceQuotaChange> $RequestedQuotas
+ * @property string|null $NextToken
+ * @property list<Shapes\RequestedServiceQuotaChange>|null $RequestedQuotas
  */
 class ListRequestedServiceQuotaChangeHistoryResponse extends Response
 {

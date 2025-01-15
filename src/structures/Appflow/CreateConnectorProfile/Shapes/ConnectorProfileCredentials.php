@@ -5,49 +5,49 @@ namespace Sunaoka\Aws\Structures\Appflow\CreateConnectorProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AmplitudeConnectorProfileCredentials $Amplitude
- * @property DatadogConnectorProfileCredentials $Datadog
- * @property DynatraceConnectorProfileCredentials $Dynatrace
- * @property GoogleAnalyticsConnectorProfileCredentials $GoogleAnalytics
- * @property HoneycodeConnectorProfileCredentials $Honeycode
- * @property InforNexusConnectorProfileCredentials $InforNexus
- * @property MarketoConnectorProfileCredentials $Marketo
- * @property RedshiftConnectorProfileCredentials $Redshift
- * @property SalesforceConnectorProfileCredentials $Salesforce
- * @property ServiceNowConnectorProfileCredentials $ServiceNow
- * @property SingularConnectorProfileCredentials $Singular
- * @property SlackConnectorProfileCredentials $Slack
- * @property SnowflakeConnectorProfileCredentials $Snowflake
- * @property TrendmicroConnectorProfileCredentials $Trendmicro
- * @property VeevaConnectorProfileCredentials $Veeva
- * @property ZendeskConnectorProfileCredentials $Zendesk
- * @property SAPODataConnectorProfileCredentials $SAPOData
- * @property CustomConnectorProfileCredentials $CustomConnector
- * @property PardotConnectorProfileCredentials $Pardot
+ * @property AmplitudeConnectorProfileCredentials|null $Amplitude
+ * @property DatadogConnectorProfileCredentials|null $Datadog
+ * @property DynatraceConnectorProfileCredentials|null $Dynatrace
+ * @property GoogleAnalyticsConnectorProfileCredentials|null $GoogleAnalytics
+ * @property HoneycodeConnectorProfileCredentials|null $Honeycode
+ * @property InforNexusConnectorProfileCredentials|null $InforNexus
+ * @property MarketoConnectorProfileCredentials|null $Marketo
+ * @property RedshiftConnectorProfileCredentials|null $Redshift
+ * @property SalesforceConnectorProfileCredentials|null $Salesforce
+ * @property ServiceNowConnectorProfileCredentials|null $ServiceNow
+ * @property SingularConnectorProfileCredentials|null $Singular
+ * @property SlackConnectorProfileCredentials|null $Slack
+ * @property SnowflakeConnectorProfileCredentials|null $Snowflake
+ * @property TrendmicroConnectorProfileCredentials|null $Trendmicro
+ * @property VeevaConnectorProfileCredentials|null $Veeva
+ * @property ZendeskConnectorProfileCredentials|null $Zendesk
+ * @property SAPODataConnectorProfileCredentials|null $SAPOData
+ * @property CustomConnectorProfileCredentials|null $CustomConnector
+ * @property PardotConnectorProfileCredentials|null $Pardot
  */
 class ConnectorProfileCredentials extends Shape
 {
     /**
      * @param array{
-     *     Amplitude?: AmplitudeConnectorProfileCredentials,
-     *     Datadog?: DatadogConnectorProfileCredentials,
-     *     Dynatrace?: DynatraceConnectorProfileCredentials,
-     *     GoogleAnalytics?: GoogleAnalyticsConnectorProfileCredentials,
-     *     Honeycode?: HoneycodeConnectorProfileCredentials,
-     *     InforNexus?: InforNexusConnectorProfileCredentials,
-     *     Marketo?: MarketoConnectorProfileCredentials,
-     *     Redshift?: RedshiftConnectorProfileCredentials,
-     *     Salesforce?: SalesforceConnectorProfileCredentials,
-     *     ServiceNow?: ServiceNowConnectorProfileCredentials,
-     *     Singular?: SingularConnectorProfileCredentials,
-     *     Slack?: SlackConnectorProfileCredentials,
-     *     Snowflake?: SnowflakeConnectorProfileCredentials,
-     *     Trendmicro?: TrendmicroConnectorProfileCredentials,
-     *     Veeva?: VeevaConnectorProfileCredentials,
-     *     Zendesk?: ZendeskConnectorProfileCredentials,
-     *     SAPOData?: SAPODataConnectorProfileCredentials,
-     *     CustomConnector?: CustomConnectorProfileCredentials,
-     *     Pardot?: PardotConnectorProfileCredentials
+     *     Amplitude?: AmplitudeConnectorProfileCredentials|null,
+     *     Datadog?: DatadogConnectorProfileCredentials|null,
+     *     Dynatrace?: DynatraceConnectorProfileCredentials|null,
+     *     GoogleAnalytics?: GoogleAnalyticsConnectorProfileCredentials|null,
+     *     Honeycode?: HoneycodeConnectorProfileCredentials|null,
+     *     InforNexus?: InforNexusConnectorProfileCredentials|null,
+     *     Marketo?: MarketoConnectorProfileCredentials|null,
+     *     Redshift?: RedshiftConnectorProfileCredentials|null,
+     *     Salesforce?: SalesforceConnectorProfileCredentials|null,
+     *     ServiceNow?: ServiceNowConnectorProfileCredentials|null,
+     *     Singular?: SingularConnectorProfileCredentials|null,
+     *     Slack?: SlackConnectorProfileCredentials|null,
+     *     Snowflake?: SnowflakeConnectorProfileCredentials|null,
+     *     Trendmicro?: TrendmicroConnectorProfileCredentials|null,
+     *     Veeva?: VeevaConnectorProfileCredentials|null,
+     *     Zendesk?: ZendeskConnectorProfileCredentials|null,
+     *     SAPOData?: SAPODataConnectorProfileCredentials|null,
+     *     CustomConnector?: CustomConnectorProfileCredentials|null,
+     *     Pardot?: PardotConnectorProfileCredentials|null
      * } $args
      */
     public function __construct(array $args = [])

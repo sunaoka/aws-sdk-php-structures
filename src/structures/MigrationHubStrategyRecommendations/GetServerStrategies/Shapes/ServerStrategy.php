@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetServerSt
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isPreferred
- * @property int $numberOfApplicationComponents
- * @property RecommendationSet $recommendation
- * @property 'recommended'|'viableOption'|'notRecommended'|'potential' $status
+ * @property bool|null $isPreferred
+ * @property int|null $numberOfApplicationComponents
+ * @property RecommendationSet|null $recommendation
+ * @property 'recommended'|'viableOption'|'notRecommended'|'potential'|null $status
  */
 class ServerStrategy extends Shape
 {
     /**
      * @param array{
-     *     isPreferred?: bool,
-     *     numberOfApplicationComponents?: int,
-     *     recommendation?: RecommendationSet,
-     *     status?: 'recommended'|'viableOption'|'notRecommended'|'potential'
+     *     isPreferred?: bool|null,
+     *     numberOfApplicationComponents?: int|null,
+     *     recommendation?: RecommendationSet|null,
+     *     status?: 'recommended'|'viableOption'|'notRecommended'|'potential'|null
      * } $args
      */
     public function __construct(array $args = [])

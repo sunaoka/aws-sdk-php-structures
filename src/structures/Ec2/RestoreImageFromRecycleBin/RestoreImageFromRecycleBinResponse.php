@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\RestoreImageFromRecycleBin;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $Return
+ * @property bool|null $Return
  */
 class RestoreImageFromRecycleBinResponse extends Response
 {

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceGroupName
  * @property string $ComponentName
  * @property string $WorkloadId
- * @property string $AccountId
+ * @property string|null $AccountId
  */
 class DescribeWorkloadRequest extends Request
 {
@@ -17,7 +17,7 @@ class DescribeWorkloadRequest extends Request
      *     ResourceGroupName: string,
      *     ComponentName: string,
      *     WorkloadId: string,
-     *     AccountId?: string
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

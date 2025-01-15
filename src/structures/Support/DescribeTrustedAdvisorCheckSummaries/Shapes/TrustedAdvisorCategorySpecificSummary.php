@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Support\DescribeTrustedAdvisorCheckSummaries\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TrustedAdvisorCostOptimizingSummary $costOptimizing
+ * @property TrustedAdvisorCostOptimizingSummary|null $costOptimizing
  */
 class TrustedAdvisorCategorySpecificSummary extends Shape
 {
     /**
-     * @param array{costOptimizing?: TrustedAdvisorCostOptimizingSummary} $args
+     * @param array{costOptimizing?: TrustedAdvisorCostOptimizingSummary|null} $args
      */
     public function __construct(array $args = [])
     {

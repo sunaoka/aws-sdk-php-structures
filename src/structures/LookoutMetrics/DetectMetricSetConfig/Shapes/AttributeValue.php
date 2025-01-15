@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\DetectMetricSetConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S
- * @property string $N
- * @property string $B
- * @property list<string> $SS
- * @property list<string> $NS
- * @property list<string> $BS
+ * @property string|null $S
+ * @property string|null $N
+ * @property string|null $B
+ * @property list<string>|null $SS
+ * @property list<string>|null $NS
+ * @property list<string>|null $BS
  */
 class AttributeValue extends Shape
 {
     /**
      * @param array{
-     *     S?: string,
-     *     N?: string,
-     *     B?: string,
-     *     SS?: list<string>,
-     *     NS?: list<string>,
-     *     BS?: list<string>
+     *     S?: string|null,
+     *     N?: string|null,
+     *     B?: string|null,
+     *     SS?: list<string>|null,
+     *     NS?: list<string>|null,
+     *     BS?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

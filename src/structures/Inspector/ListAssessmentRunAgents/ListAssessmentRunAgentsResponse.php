@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AssessmentRunAgent> $assessmentRunAgents
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListAssessmentRunAgentsResponse extends Response
 {

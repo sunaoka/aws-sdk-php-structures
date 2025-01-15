@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lambda\CreateFunction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $Variables
+ * @property array<string, string>|null $Variables
  */
 class Environment extends Shape
 {
     /**
-     * @param array{Variables?: array<string, string>} $args
+     * @param array{Variables?: array<string, string>|null} $args
      */
     public function __construct(array $args = [])
     {

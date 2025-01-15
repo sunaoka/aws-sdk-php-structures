@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ProfileId
  * @property string $Message
- * @property int $Status
+ * @property int|null $Status
  */
 class ProfileQueryFailures extends Shape
 {
@@ -15,7 +15,7 @@ class ProfileQueryFailures extends Shape
      * @param array{
      *     ProfileId: string,
      *     Message: string,
-     *     Status?: int
+     *     Status?: int|null
      * } $args
      */
     public function __construct(array $args)

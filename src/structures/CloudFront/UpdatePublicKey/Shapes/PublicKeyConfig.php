@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $CallerReference
  * @property string $Name
  * @property string $EncodedKey
- * @property string $Comment
+ * @property string|null $Comment
  */
 class PublicKeyConfig extends Shape
 {
@@ -17,7 +17,7 @@ class PublicKeyConfig extends Shape
      *     CallerReference: string,
      *     Name: string,
      *     EncodedKey: string,
-     *     Comment?: string
+     *     Comment?: string|null
      * } $args
      */
     public function __construct(array $args)

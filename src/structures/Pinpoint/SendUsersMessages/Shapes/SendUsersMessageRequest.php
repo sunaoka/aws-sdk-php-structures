@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\Pinpoint\SendUsersMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $Context
+ * @property array<string, string>|null $Context
  * @property DirectMessageConfiguration $MessageConfiguration
- * @property TemplateConfiguration $TemplateConfiguration
- * @property string $TraceId
+ * @property TemplateConfiguration|null $TemplateConfiguration
+ * @property string|null $TraceId
  * @property array<string, EndpointSendConfiguration> $Users
  */
 class SendUsersMessageRequest extends Shape
 {
     /**
      * @param array{
-     *     Context?: array<string, string>,
+     *     Context?: array<string, string>|null,
      *     MessageConfiguration: DirectMessageConfiguration,
-     *     TemplateConfiguration?: TemplateConfiguration,
-     *     TraceId?: string,
+     *     TemplateConfiguration?: TemplateConfiguration|null,
+     *     TraceId?: string|null,
      *     Users: array<string, EndpointSendConfiguration>
      * } $args
      */

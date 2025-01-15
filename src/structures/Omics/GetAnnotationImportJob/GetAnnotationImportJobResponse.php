@@ -17,7 +17,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\AnnotationImportItemDetail> $items
  * @property bool $runLeftNormalization
  * @property Shapes\FormatOptions $formatOptions
- * @property array<string, string> $annotationFields
+ * @property array<string, string>|null $annotationFields
  */
 class GetAnnotationImportJobResponse extends Response
 {

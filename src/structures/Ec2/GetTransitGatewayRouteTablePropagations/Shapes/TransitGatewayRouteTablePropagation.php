@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\GetTransitGatewayRouteTablePropagations\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransitGatewayAttachmentId
- * @property string $ResourceId
- * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering' $ResourceType
- * @property 'enabling'|'enabled'|'disabling'|'disabled' $State
- * @property string $TransitGatewayRouteTableAnnouncementId
+ * @property string|null $TransitGatewayAttachmentId
+ * @property string|null $ResourceId
+ * @property 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null $ResourceType
+ * @property 'enabling'|'enabled'|'disabling'|'disabled'|null $State
+ * @property string|null $TransitGatewayRouteTableAnnouncementId
  */
 class TransitGatewayRouteTablePropagation extends Shape
 {
     /**
      * @param array{
-     *     TransitGatewayAttachmentId?: string,
-     *     ResourceId?: string,
-     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering',
-     *     State?: 'enabling'|'enabled'|'disabling'|'disabled',
-     *     TransitGatewayRouteTableAnnouncementId?: string
+     *     TransitGatewayAttachmentId?: string|null,
+     *     ResourceId?: string|null,
+     *     ResourceType?: 'vpc'|'vpn'|'direct-connect-gateway'|'connect'|'peering'|'tgw-peering'|null,
+     *     State?: 'enabling'|'enabled'|'disabling'|'disabled'|null,
+     *     TransitGatewayRouteTableAnnouncementId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

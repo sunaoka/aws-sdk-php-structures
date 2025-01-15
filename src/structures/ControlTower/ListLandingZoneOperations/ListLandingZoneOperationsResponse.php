@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\LandingZoneOperationSummary> $landingZoneOperations
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListLandingZoneOperationsResponse extends Response
 {

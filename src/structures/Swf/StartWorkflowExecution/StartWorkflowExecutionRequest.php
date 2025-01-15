@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $domain
  * @property string $workflowId
  * @property Shapes\WorkflowType $workflowType
- * @property Shapes\TaskList $taskList
- * @property string $taskPriority
- * @property string $input
- * @property string $executionStartToCloseTimeout
- * @property list<string> $tagList
- * @property string $taskStartToCloseTimeout
- * @property 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON' $childPolicy
- * @property string $lambdaRole
+ * @property Shapes\TaskList|null $taskList
+ * @property string|null $taskPriority
+ * @property string|null $input
+ * @property string|null $executionStartToCloseTimeout
+ * @property list<string>|null $tagList
+ * @property string|null $taskStartToCloseTimeout
+ * @property 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON'|null $childPolicy
+ * @property string|null $lambdaRole
  */
 class StartWorkflowExecutionRequest extends Request
 {
@@ -24,14 +24,14 @@ class StartWorkflowExecutionRequest extends Request
      *     domain: string,
      *     workflowId: string,
      *     workflowType: Shapes\WorkflowType,
-     *     taskList?: Shapes\TaskList,
-     *     taskPriority?: string,
-     *     input?: string,
-     *     executionStartToCloseTimeout?: string,
-     *     tagList?: list<string>,
-     *     taskStartToCloseTimeout?: string,
-     *     childPolicy?: 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON',
-     *     lambdaRole?: string
+     *     taskList?: Shapes\TaskList|null,
+     *     taskPriority?: string|null,
+     *     input?: string|null,
+     *     executionStartToCloseTimeout?: string|null,
+     *     tagList?: list<string>|null,
+     *     taskStartToCloseTimeout?: string|null,
+     *     childPolicy?: 'TERMINATE'|'REQUEST_CANCEL'|'ABANDON'|null,
+     *     lambdaRole?: string|null
      * } $args
      */
     public function __construct(array $args)

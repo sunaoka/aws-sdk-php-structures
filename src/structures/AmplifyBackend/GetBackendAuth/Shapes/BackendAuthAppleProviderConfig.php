@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\GetBackendAuth\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClientId
- * @property string $KeyId
- * @property string $PrivateKey
- * @property string $TeamId
+ * @property string|null $ClientId
+ * @property string|null $KeyId
+ * @property string|null $PrivateKey
+ * @property string|null $TeamId
  */
 class BackendAuthAppleProviderConfig extends Shape
 {
     /**
      * @param array{
-     *     ClientId?: string,
-     *     KeyId?: string,
-     *     PrivateKey?: string,
-     *     TeamId?: string
+     *     ClientId?: string|null,
+     *     KeyId?: string|null,
+     *     PrivateKey?: string|null,
+     *     TeamId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

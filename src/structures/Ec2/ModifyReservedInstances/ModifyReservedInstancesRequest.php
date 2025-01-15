@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $ReservedInstancesIds
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property list<Shapes\ReservedInstancesConfiguration> $TargetConfigurations
  */
 class ModifyReservedInstancesRequest extends Request
@@ -14,7 +14,7 @@ class ModifyReservedInstancesRequest extends Request
     /**
      * @param array{
      *     ReservedInstancesIds: list<string>,
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     TargetConfigurations: list<Shapes\ReservedInstancesConfiguration>
      * } $args
      */

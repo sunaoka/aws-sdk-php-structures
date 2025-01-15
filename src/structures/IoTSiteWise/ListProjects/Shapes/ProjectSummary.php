@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $id
  * @property string $name
- * @property string $description
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property \Aws\Api\DateTimeResult $lastUpdateDate
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateDate
  */
 class ProjectSummary extends Shape
 {
@@ -17,9 +17,9 @@ class ProjectSummary extends Shape
      * @param array{
      *     id: string,
      *     name: string,
-     *     description?: string,
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     lastUpdateDate?: \Aws\Api\DateTimeResult
+     *     description?: string|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $containerArn
- * @property string $taskArn
- * @property string $name
- * @property string $image
- * @property string $imageDigest
- * @property string $runtimeId
- * @property string $lastStatus
- * @property int $exitCode
- * @property string $reason
- * @property list<NetworkBinding> $networkBindings
- * @property list<NetworkInterface> $networkInterfaces
- * @property 'HEALTHY'|'UNHEALTHY'|'UNKNOWN' $healthStatus
- * @property list<ManagedAgent> $managedAgents
- * @property string $cpu
- * @property string $memory
- * @property string $memoryReservation
- * @property list<string> $gpuIds
+ * @property string|null $containerArn
+ * @property string|null $taskArn
+ * @property string|null $name
+ * @property string|null $image
+ * @property string|null $imageDigest
+ * @property string|null $runtimeId
+ * @property string|null $lastStatus
+ * @property int|null $exitCode
+ * @property string|null $reason
+ * @property list<NetworkBinding>|null $networkBindings
+ * @property list<NetworkInterface>|null $networkInterfaces
+ * @property 'HEALTHY'|'UNHEALTHY'|'UNKNOWN'|null $healthStatus
+ * @property list<ManagedAgent>|null $managedAgents
+ * @property string|null $cpu
+ * @property string|null $memory
+ * @property string|null $memoryReservation
+ * @property list<string>|null $gpuIds
  */
 class Container extends Shape
 {
     /**
      * @param array{
-     *     containerArn?: string,
-     *     taskArn?: string,
-     *     name?: string,
-     *     image?: string,
-     *     imageDigest?: string,
-     *     runtimeId?: string,
-     *     lastStatus?: string,
-     *     exitCode?: int,
-     *     reason?: string,
-     *     networkBindings?: list<NetworkBinding>,
-     *     networkInterfaces?: list<NetworkInterface>,
-     *     healthStatus?: 'HEALTHY'|'UNHEALTHY'|'UNKNOWN',
-     *     managedAgents?: list<ManagedAgent>,
-     *     cpu?: string,
-     *     memory?: string,
-     *     memoryReservation?: string,
-     *     gpuIds?: list<string>
+     *     containerArn?: string|null,
+     *     taskArn?: string|null,
+     *     name?: string|null,
+     *     image?: string|null,
+     *     imageDigest?: string|null,
+     *     runtimeId?: string|null,
+     *     lastStatus?: string|null,
+     *     exitCode?: int|null,
+     *     reason?: string|null,
+     *     networkBindings?: list<NetworkBinding>|null,
+     *     networkInterfaces?: list<NetworkInterface>|null,
+     *     healthStatus?: 'HEALTHY'|'UNHEALTHY'|'UNKNOWN'|null,
+     *     managedAgents?: list<ManagedAgent>|null,
+     *     cpu?: string|null,
+     *     memory?: string|null,
+     *     memoryReservation?: string|null,
+     *     gpuIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

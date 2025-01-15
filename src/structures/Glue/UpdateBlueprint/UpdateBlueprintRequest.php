@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property string $BlueprintLocation
  */
 class UpdateBlueprintRequest extends Request
@@ -14,7 +14,7 @@ class UpdateBlueprintRequest extends Request
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     BlueprintLocation: string
      * } $args
      */

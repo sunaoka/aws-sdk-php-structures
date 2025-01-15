@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CostExplorer\StartCostAllocationTagBackfill\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BackfillFrom
- * @property string $RequestedAt
- * @property string $CompletedAt
- * @property 'SUCCEEDED'|'PROCESSING'|'FAILED' $BackfillStatus
- * @property string $LastUpdatedAt
+ * @property string|null $BackfillFrom
+ * @property string|null $RequestedAt
+ * @property string|null $CompletedAt
+ * @property 'SUCCEEDED'|'PROCESSING'|'FAILED'|null $BackfillStatus
+ * @property string|null $LastUpdatedAt
  */
 class CostAllocationTagBackfillRequest extends Shape
 {
     /**
      * @param array{
-     *     BackfillFrom?: string,
-     *     RequestedAt?: string,
-     *     CompletedAt?: string,
-     *     BackfillStatus?: 'SUCCEEDED'|'PROCESSING'|'FAILED',
-     *     LastUpdatedAt?: string
+     *     BackfillFrom?: string|null,
+     *     RequestedAt?: string|null,
+     *     CompletedAt?: string|null,
+     *     BackfillStatus?: 'SUCCEEDED'|'PROCESSING'|'FAILED'|null,
+     *     LastUpdatedAt?: string|null
      * } $args
      */
     public function __construct(array $args = [])

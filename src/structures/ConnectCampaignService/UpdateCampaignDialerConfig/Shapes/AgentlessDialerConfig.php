@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\UpdateCampaignDialerConf
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $dialingCapacity
+ * @property double|null $dialingCapacity
  */
 class AgentlessDialerConfig extends Shape
 {
     /**
-     * @param array{dialingCapacity?: double} $args
+     * @param array{dialingCapacity?: double|null} $args
      */
     public function __construct(array $args = [])
     {

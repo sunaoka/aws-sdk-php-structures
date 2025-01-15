@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $thingName
  * @property string $metricName
- * @property string $dimensionName
- * @property 'IN'|'NOT_IN' $dimensionValueOperator
+ * @property string|null $dimensionName
+ * @property 'IN'|'NOT_IN'|null $dimensionValueOperator
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $endTime
- * @property int<1, 250> $maxResults
- * @property string $nextToken
+ * @property int<1, 250>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListMetricValuesRequest extends Request
 {
@@ -20,12 +20,12 @@ class ListMetricValuesRequest extends Request
      * @param array{
      *     thingName: string,
      *     metricName: string,
-     *     dimensionName?: string,
-     *     dimensionValueOperator?: 'IN'|'NOT_IN',
+     *     dimensionName?: string|null,
+     *     dimensionValueOperator?: 'IN'|'NOT_IN'|null,
      *     startTime: \Aws\Api\DateTimeResult,
      *     endTime: \Aws\Api\DateTimeResult,
-     *     maxResults?: int<1, 250>,
-     *     nextToken?: string
+     *     maxResults?: int<1, 250>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

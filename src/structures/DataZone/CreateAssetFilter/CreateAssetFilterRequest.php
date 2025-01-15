@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assetIdentifier
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property Shapes\AssetFilterConfiguration $configuration
- * @property string $description
+ * @property string|null $description
  * @property string $domainIdentifier
  * @property string $name
  */
@@ -17,9 +17,9 @@ class CreateAssetFilterRequest extends Request
     /**
      * @param array{
      *     assetIdentifier: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     configuration: Shapes\AssetFilterConfiguration,
-     *     description?: string,
+     *     description?: string|null,
      *     domainIdentifier: string,
      *     name: string
      * } $args

@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DomainName
- * @property string $Uri
- * @property string $ObjectTypeName
- * @property array<string, string> $Tags
- * @property Shapes\FlowDefinition $FlowDefinition
- * @property array<string, string> $ObjectTypeNames
- * @property string $RoleArn
- * @property list<string> $EventTriggerNames
+ * @property string|null $Uri
+ * @property string|null $ObjectTypeName
+ * @property array<string, string>|null $Tags
+ * @property Shapes\FlowDefinition|null $FlowDefinition
+ * @property array<string, string>|null $ObjectTypeNames
+ * @property string|null $RoleArn
+ * @property list<string>|null $EventTriggerNames
  */
 class PutIntegrationRequest extends Request
 {
     /**
      * @param array{
      *     DomainName: string,
-     *     Uri?: string,
-     *     ObjectTypeName?: string,
-     *     Tags?: array<string, string>,
-     *     FlowDefinition?: Shapes\FlowDefinition,
-     *     ObjectTypeNames?: array<string, string>,
-     *     RoleArn?: string,
-     *     EventTriggerNames?: list<string>
+     *     Uri?: string|null,
+     *     ObjectTypeName?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     FlowDefinition?: Shapes\FlowDefinition|null,
+     *     ObjectTypeNames?: array<string, string>|null,
+     *     RoleArn?: string|null,
+     *     EventTriggerNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

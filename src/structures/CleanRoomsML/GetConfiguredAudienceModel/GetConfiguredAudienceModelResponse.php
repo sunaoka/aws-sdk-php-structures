@@ -11,13 +11,13 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $name
  * @property string $audienceModelArn
  * @property Shapes\ConfiguredAudienceModelOutputConfig $outputConfig
- * @property string $description
+ * @property string|null $description
  * @property 'ACTIVE' $status
  * @property list<'ALL'|'NONE'> $sharedAudienceMetrics
- * @property int<25, 500000> $minMatchingSeedSize
- * @property Shapes\AudienceSizeConfig $audienceSizeConfig
- * @property array<string, string> $tags
- * @property 'FROM_PARENT_RESOURCE'|'NONE' $childResourceTagOnCreatePolicy
+ * @property int<25, 500000>|null $minMatchingSeedSize
+ * @property Shapes\AudienceSizeConfig|null $audienceSizeConfig
+ * @property array<string, string>|null $tags
+ * @property 'FROM_PARENT_RESOURCE'|'NONE'|null $childResourceTagOnCreatePolicy
  */
 class GetConfiguredAudienceModelResponse extends Response
 {

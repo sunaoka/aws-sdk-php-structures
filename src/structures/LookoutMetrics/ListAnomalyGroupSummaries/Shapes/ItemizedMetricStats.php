@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\ListAnomalyGroupSummaries\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MetricName
- * @property int $OccurrenceCount
+ * @property string|null $MetricName
+ * @property int|null $OccurrenceCount
  */
 class ItemizedMetricStats extends Shape
 {
     /**
      * @param array{
-     *     MetricName?: string,
-     *     OccurrenceCount?: int
+     *     MetricName?: string|null,
+     *     OccurrenceCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

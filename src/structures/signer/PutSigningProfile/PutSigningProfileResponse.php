@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\signer\PutSigningProfile;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $arn
- * @property string $profileVersion
- * @property string $profileVersionArn
+ * @property string|null $arn
+ * @property string|null $profileVersion
+ * @property string|null $profileVersionArn
  */
 class PutSigningProfileResponse extends Response
 {

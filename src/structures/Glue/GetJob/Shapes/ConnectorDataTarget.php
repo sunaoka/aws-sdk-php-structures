@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $ConnectionType
  * @property array<string, string> $Data
- * @property list<string> $Inputs
+ * @property list<string>|null $Inputs
  */
 class ConnectorDataTarget extends Shape
 {
@@ -17,7 +17,7 @@ class ConnectorDataTarget extends Shape
      *     Name: string,
      *     ConnectionType: string,
      *     Data: array<string, string>,
-     *     Inputs?: list<string>
+     *     Inputs?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

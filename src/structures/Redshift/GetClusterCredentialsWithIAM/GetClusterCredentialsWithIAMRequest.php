@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Redshift\GetClusterCredentialsWithIAM;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $DbName
- * @property string $ClusterIdentifier
- * @property int $DurationSeconds
- * @property string $CustomDomainName
+ * @property string|null $DbName
+ * @property string|null $ClusterIdentifier
+ * @property int|null $DurationSeconds
+ * @property string|null $CustomDomainName
  */
 class GetClusterCredentialsWithIAMRequest extends Request
 {
     /**
      * @param array{
-     *     DbName?: string,
-     *     ClusterIdentifier?: string,
-     *     DurationSeconds?: int,
-     *     CustomDomainName?: string
+     *     DbName?: string|null,
+     *     ClusterIdentifier?: string|null,
+     *     DurationSeconds?: int|null,
+     *     CustomDomainName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property DocumentContent $content
- * @property DocumentMetadata $metadata
+ * @property DocumentMetadata|null $metadata
  */
 class KnowledgeBaseDocument extends Shape
 {
     /**
      * @param array{
      *     content: DocumentContent,
-     *     metadata?: DocumentMetadata
+     *     metadata?: DocumentMetadata|null
      * } $args
      */
     public function __construct(array $args)

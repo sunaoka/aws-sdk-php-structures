@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\mgn\ResumeReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $connectorArn
- * @property string $credentialsSecretArn
+ * @property string|null $connectorArn
+ * @property string|null $credentialsSecretArn
  */
 class SourceServerConnectorAction extends Shape
 {
     /**
      * @param array{
-     *     connectorArn?: string,
-     *     credentialsSecretArn?: string
+     *     connectorArn?: string|null,
+     *     credentialsSecretArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

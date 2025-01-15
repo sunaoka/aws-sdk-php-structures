@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListCustomVocabularyItems;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $botId
- * @property string $botVersion
- * @property string $localeId
- * @property list<Shapes\CustomVocabularyItem> $customVocabularyItems
- * @property string $nextToken
+ * @property string|null $botId
+ * @property string|null $botVersion
+ * @property string|null $localeId
+ * @property list<Shapes\CustomVocabularyItem>|null $customVocabularyItems
+ * @property string|null $nextToken
  */
 class ListCustomVocabularyItemsResponse extends Response
 {

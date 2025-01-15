@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ServerlessApplicationRepository\ListApplication
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\VersionSummary> $Versions
+ * @property string|null $NextToken
+ * @property list<Shapes\VersionSummary>|null $Versions
  */
 class ListApplicationVersionsResponse extends Response
 {

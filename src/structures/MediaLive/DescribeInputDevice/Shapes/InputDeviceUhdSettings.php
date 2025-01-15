@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeInputDevice\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HDMI'|'SDI' $ActiveInput
- * @property 'AUTO'|'HDMI'|'SDI' $ConfiguredInput
- * @property 'IDLE'|'STREAMING' $DeviceState
- * @property double $Framerate
- * @property int $Height
- * @property int $MaxBitrate
- * @property 'INTERLACED'|'PROGRESSIVE' $ScanType
- * @property int $Width
- * @property int $LatencyMs
- * @property 'HEVC'|'AVC' $Codec
- * @property InputDeviceMediaConnectSettings $MediaconnectSettings
- * @property list<InputDeviceUhdAudioChannelPairConfig> $AudioChannelPairs
+ * @property 'HDMI'|'SDI'|null $ActiveInput
+ * @property 'AUTO'|'HDMI'|'SDI'|null $ConfiguredInput
+ * @property 'IDLE'|'STREAMING'|null $DeviceState
+ * @property double|null $Framerate
+ * @property int|null $Height
+ * @property int|null $MaxBitrate
+ * @property 'INTERLACED'|'PROGRESSIVE'|null $ScanType
+ * @property int|null $Width
+ * @property int|null $LatencyMs
+ * @property 'HEVC'|'AVC'|null $Codec
+ * @property InputDeviceMediaConnectSettings|null $MediaconnectSettings
+ * @property list<InputDeviceUhdAudioChannelPairConfig>|null $AudioChannelPairs
  */
 class InputDeviceUhdSettings extends Shape
 {
     /**
      * @param array{
-     *     ActiveInput?: 'HDMI'|'SDI',
-     *     ConfiguredInput?: 'AUTO'|'HDMI'|'SDI',
-     *     DeviceState?: 'IDLE'|'STREAMING',
-     *     Framerate?: double,
-     *     Height?: int,
-     *     MaxBitrate?: int,
-     *     ScanType?: 'INTERLACED'|'PROGRESSIVE',
-     *     Width?: int,
-     *     LatencyMs?: int,
-     *     Codec?: 'HEVC'|'AVC',
-     *     MediaconnectSettings?: InputDeviceMediaConnectSettings,
-     *     AudioChannelPairs?: list<InputDeviceUhdAudioChannelPairConfig>
+     *     ActiveInput?: 'HDMI'|'SDI'|null,
+     *     ConfiguredInput?: 'AUTO'|'HDMI'|'SDI'|null,
+     *     DeviceState?: 'IDLE'|'STREAMING'|null,
+     *     Framerate?: double|null,
+     *     Height?: int|null,
+     *     MaxBitrate?: int|null,
+     *     ScanType?: 'INTERLACED'|'PROGRESSIVE'|null,
+     *     Width?: int|null,
+     *     LatencyMs?: int|null,
+     *     Codec?: 'HEVC'|'AVC'|null,
+     *     MediaconnectSettings?: InputDeviceMediaConnectSettings|null,
+     *     AudioChannelPairs?: list<InputDeviceUhdAudioChannelPairConfig>|null
      * } $args
      */
     public function __construct(array $args = [])

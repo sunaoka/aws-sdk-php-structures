@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DataSync\ListTaskExecutions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TaskArn
- * @property int<0, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $TaskArn
+ * @property int<0, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListTaskExecutionsRequest extends Request
 {
     /**
      * @param array{
-     *     TaskArn?: string,
-     *     MaxResults?: int<0, 100>,
-     *     NextToken?: string
+     *     TaskArn?: string|null,
+     *     MaxResults?: int<0, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

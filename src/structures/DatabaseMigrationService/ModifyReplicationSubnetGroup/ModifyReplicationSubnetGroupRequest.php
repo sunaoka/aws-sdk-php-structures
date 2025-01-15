@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReplicationSubnetGroupIdentifier
- * @property string $ReplicationSubnetGroupDescription
+ * @property string|null $ReplicationSubnetGroupDescription
  * @property list<string> $SubnetIds
  */
 class ModifyReplicationSubnetGroupRequest extends Request
@@ -14,7 +14,7 @@ class ModifyReplicationSubnetGroupRequest extends Request
     /**
      * @param array{
      *     ReplicationSubnetGroupIdentifier: string,
-     *     ReplicationSubnetGroupDescription?: string,
+     *     ReplicationSubnetGroupDescription?: string|null,
      *     SubnetIds: list<string>
      * } $args
      */

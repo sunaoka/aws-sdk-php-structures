@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PrivateNetworks\UpdateNetworkSitePlan;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $networkSiteArn
  * @property Shapes\SitePlan $pendingPlan
  */
@@ -13,7 +13,7 @@ class UpdateNetworkSitePlanRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     networkSiteArn: string,
      *     pendingPlan: Shapes\SitePlan
      * } $args

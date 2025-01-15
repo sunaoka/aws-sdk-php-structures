@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ECRPublic\DescribeRepositories\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $repositoryArn
- * @property string $registryId
- * @property string $repositoryName
- * @property string $repositoryUri
- * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string|null $repositoryArn
+ * @property string|null $registryId
+ * @property string|null $repositoryName
+ * @property string|null $repositoryUri
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  */
 class Repository extends Shape
 {
     /**
      * @param array{
-     *     repositoryArn?: string,
-     *     registryId?: string,
-     *     repositoryName?: string,
-     *     repositoryUri?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult
+     *     repositoryArn?: string|null,
+     *     registryId?: string|null,
+     *     repositoryName?: string|null,
+     *     repositoryUri?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

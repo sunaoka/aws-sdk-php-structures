@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\GetServiceAttributes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServiceArn
- * @property array<string, string> $Attributes
+ * @property string|null $ServiceArn
+ * @property array<string, string>|null $Attributes
  */
 class ServiceAttributes extends Shape
 {
     /**
      * @param array{
-     *     ServiceArn?: string,
-     *     Attributes?: array<string, string>
+     *     ServiceArn?: string|null,
+     *     Attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

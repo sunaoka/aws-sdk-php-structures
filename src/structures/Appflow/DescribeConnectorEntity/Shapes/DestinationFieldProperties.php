@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeConnectorEntity\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isCreatable
- * @property bool $isNullable
- * @property bool $isUpsertable
- * @property bool $isUpdatable
- * @property bool $isDefaultedOnCreate
- * @property list<'INSERT'|'UPSERT'|'UPDATE'|'DELETE'> $supportedWriteOperations
+ * @property bool|null $isCreatable
+ * @property bool|null $isNullable
+ * @property bool|null $isUpsertable
+ * @property bool|null $isUpdatable
+ * @property bool|null $isDefaultedOnCreate
+ * @property list<'INSERT'|'UPSERT'|'UPDATE'|'DELETE'>|null $supportedWriteOperations
  */
 class DestinationFieldProperties extends Shape
 {
     /**
      * @param array{
-     *     isCreatable?: bool,
-     *     isNullable?: bool,
-     *     isUpsertable?: bool,
-     *     isUpdatable?: bool,
-     *     isDefaultedOnCreate?: bool,
-     *     supportedWriteOperations?: list<'INSERT'|'UPSERT'|'UPDATE'|'DELETE'>
+     *     isCreatable?: bool|null,
+     *     isNullable?: bool|null,
+     *     isUpsertable?: bool|null,
+     *     isUpdatable?: bool|null,
+     *     isDefaultedOnCreate?: bool|null,
+     *     supportedWriteOperations?: list<'INSERT'|'UPSERT'|'UPDATE'|'DELETE'>|null
      * } $args
      */
     public function __construct(array $args = [])

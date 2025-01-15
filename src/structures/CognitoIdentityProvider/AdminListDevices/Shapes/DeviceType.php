@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AdminListDevices\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeviceKey
- * @property list<AttributeType> $DeviceAttributes
- * @property \Aws\Api\DateTimeResult $DeviceCreateDate
- * @property \Aws\Api\DateTimeResult $DeviceLastModifiedDate
- * @property \Aws\Api\DateTimeResult $DeviceLastAuthenticatedDate
+ * @property string|null $DeviceKey
+ * @property list<AttributeType>|null $DeviceAttributes
+ * @property \Aws\Api\DateTimeResult|null $DeviceCreateDate
+ * @property \Aws\Api\DateTimeResult|null $DeviceLastModifiedDate
+ * @property \Aws\Api\DateTimeResult|null $DeviceLastAuthenticatedDate
  */
 class DeviceType extends Shape
 {
     /**
      * @param array{
-     *     DeviceKey?: string,
-     *     DeviceAttributes?: list<AttributeType>,
-     *     DeviceCreateDate?: \Aws\Api\DateTimeResult,
-     *     DeviceLastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     DeviceLastAuthenticatedDate?: \Aws\Api\DateTimeResult
+     *     DeviceKey?: string|null,
+     *     DeviceAttributes?: list<AttributeType>|null,
+     *     DeviceCreateDate?: \Aws\Api\DateTimeResult|null,
+     *     DeviceLastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     DeviceLastAuthenticatedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

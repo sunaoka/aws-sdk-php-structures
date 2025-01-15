@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListSlots\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $slotId
- * @property string $slotName
- * @property string $description
- * @property 'Required'|'Optional' $slotConstraint
- * @property string $slotTypeId
- * @property PromptSpecification $valueElicitationPromptSpecification
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
+ * @property string|null $slotId
+ * @property string|null $slotName
+ * @property string|null $description
+ * @property 'Required'|'Optional'|null $slotConstraint
+ * @property string|null $slotTypeId
+ * @property PromptSpecification|null $valueElicitationPromptSpecification
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  */
 class SlotSummary extends Shape
 {
     /**
      * @param array{
-     *     slotId?: string,
-     *     slotName?: string,
-     *     description?: string,
-     *     slotConstraint?: 'Required'|'Optional',
-     *     slotTypeId?: string,
-     *     valueElicitationPromptSpecification?: PromptSpecification,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult
+     *     slotId?: string|null,
+     *     slotName?: string|null,
+     *     description?: string|null,
+     *     slotConstraint?: 'Required'|'Optional'|null,
+     *     slotTypeId?: string|null,
+     *     valueElicitationPromptSpecification?: PromptSpecification|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

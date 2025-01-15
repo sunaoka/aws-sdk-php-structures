@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\PutDialRequestBatch\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $clientToken
- * @property string $id
- * @property 'InvalidInput'|'RequestThrottled'|'UnknownError' $failureCode
+ * @property string|null $clientToken
+ * @property string|null $id
+ * @property 'InvalidInput'|'RequestThrottled'|'UnknownError'|null $failureCode
  */
 class FailedRequest extends Shape
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     id?: string,
-     *     failureCode?: 'InvalidInput'|'RequestThrottled'|'UnknownError'
+     *     clientToken?: string|null,
+     *     id?: string|null,
+     *     failureCode?: 'InvalidInput'|'RequestThrottled'|'UnknownError'|null
      * } $args
      */
     public function __construct(array $args = [])

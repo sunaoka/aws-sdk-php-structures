@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeTaskDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property KernelCapabilities $capabilities
- * @property list<Device> $devices
- * @property bool $initProcessEnabled
- * @property int $sharedMemorySize
- * @property list<Tmpfs> $tmpfs
- * @property int $maxSwap
- * @property int $swappiness
+ * @property KernelCapabilities|null $capabilities
+ * @property list<Device>|null $devices
+ * @property bool|null $initProcessEnabled
+ * @property int|null $sharedMemorySize
+ * @property list<Tmpfs>|null $tmpfs
+ * @property int|null $maxSwap
+ * @property int|null $swappiness
  */
 class LinuxParameters extends Shape
 {
     /**
      * @param array{
-     *     capabilities?: KernelCapabilities,
-     *     devices?: list<Device>,
-     *     initProcessEnabled?: bool,
-     *     sharedMemorySize?: int,
-     *     tmpfs?: list<Tmpfs>,
-     *     maxSwap?: int,
-     *     swappiness?: int
+     *     capabilities?: KernelCapabilities|null,
+     *     devices?: list<Device>|null,
+     *     initProcessEnabled?: bool|null,
+     *     sharedMemorySize?: int|null,
+     *     tmpfs?: list<Tmpfs>|null,
+     *     maxSwap?: int|null,
+     *     swappiness?: int|null
      * } $args
      */
     public function __construct(array $args = [])

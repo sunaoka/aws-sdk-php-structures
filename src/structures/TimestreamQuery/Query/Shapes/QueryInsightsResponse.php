@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\Query\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property QuerySpatialCoverage $QuerySpatialCoverage
- * @property QueryTemporalRange $QueryTemporalRange
- * @property int $QueryTableCount
- * @property int $OutputRows
- * @property int $OutputBytes
- * @property int $UnloadPartitionCount
- * @property int $UnloadWrittenRows
- * @property int $UnloadWrittenBytes
+ * @property QuerySpatialCoverage|null $QuerySpatialCoverage
+ * @property QueryTemporalRange|null $QueryTemporalRange
+ * @property int|null $QueryTableCount
+ * @property int|null $OutputRows
+ * @property int|null $OutputBytes
+ * @property int|null $UnloadPartitionCount
+ * @property int|null $UnloadWrittenRows
+ * @property int|null $UnloadWrittenBytes
  */
 class QueryInsightsResponse extends Shape
 {
     /**
      * @param array{
-     *     QuerySpatialCoverage?: QuerySpatialCoverage,
-     *     QueryTemporalRange?: QueryTemporalRange,
-     *     QueryTableCount?: int,
-     *     OutputRows?: int,
-     *     OutputBytes?: int,
-     *     UnloadPartitionCount?: int,
-     *     UnloadWrittenRows?: int,
-     *     UnloadWrittenBytes?: int
+     *     QuerySpatialCoverage?: QuerySpatialCoverage|null,
+     *     QueryTemporalRange?: QueryTemporalRange|null,
+     *     QueryTableCount?: int|null,
+     *     OutputRows?: int|null,
+     *     OutputBytes?: int|null,
+     *     UnloadPartitionCount?: int|null,
+     *     UnloadWrittenRows?: int|null,
+     *     UnloadWrittenBytes?: int|null
      * } $args
      */
     public function __construct(array $args = [])

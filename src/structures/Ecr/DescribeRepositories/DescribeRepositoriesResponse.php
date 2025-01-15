@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ecr\DescribeRepositories;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Repository> $repositories
- * @property string $nextToken
+ * @property list<Shapes\Repository>|null $repositories
+ * @property string|null $nextToken
  */
 class DescribeRepositoriesResponse extends Response
 {

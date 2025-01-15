@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $UserName
  * @property Shapes\AuthenticationMode $AuthenticationMode
  * @property string $AccessString
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateUserRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateUserRequest extends Request
      *     UserName: string,
      *     AuthenticationMode: Shapes\AuthenticationMode,
      *     AccessString: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

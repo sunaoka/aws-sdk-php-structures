@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\CreateAccessPreview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $accessPointPolicy
- * @property S3PublicAccessBlockConfiguration $publicAccessBlock
- * @property NetworkOriginConfiguration $networkOrigin
+ * @property string|null $accessPointPolicy
+ * @property S3PublicAccessBlockConfiguration|null $publicAccessBlock
+ * @property NetworkOriginConfiguration|null $networkOrigin
  */
 class S3AccessPointConfiguration extends Shape
 {
     /**
      * @param array{
-     *     accessPointPolicy?: string,
-     *     publicAccessBlock?: S3PublicAccessBlockConfiguration,
-     *     networkOrigin?: NetworkOriginConfiguration
+     *     accessPointPolicy?: string|null,
+     *     publicAccessBlock?: S3PublicAccessBlockConfiguration|null,
+     *     networkOrigin?: NetworkOriginConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

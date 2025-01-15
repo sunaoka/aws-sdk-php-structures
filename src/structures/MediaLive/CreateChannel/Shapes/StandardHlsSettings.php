@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AudioRenditionSets
+ * @property string|null $AudioRenditionSets
  * @property M3u8Settings $M3u8Settings
  */
 class StandardHlsSettings extends Shape
 {
     /**
      * @param array{
-     *     AudioRenditionSets?: string,
+     *     AudioRenditionSets?: string|null,
      *     M3u8Settings: M3u8Settings
      * } $args
      */

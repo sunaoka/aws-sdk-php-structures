@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
+ * @property string|null $domainOwner
  * @property string $repository
  * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo' $format
- * @property string $namespace
+ * @property string|null $namespace
  * @property string $package
- * @property 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted' $status
- * @property 'PUBLISHED_TIME' $sortBy
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
- * @property 'INTERNAL'|'EXTERNAL'|'UNKNOWN' $originType
+ * @property 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted'|null $status
+ * @property 'PUBLISHED_TIME'|null $sortBy
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
+ * @property 'INTERNAL'|'EXTERNAL'|'UNKNOWN'|null $originType
  */
 class ListPackageVersionsRequest extends Request
 {
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string,
+     *     domainOwner?: string|null,
      *     repository: string,
      *     format: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo',
-     *     namespace?: string,
+     *     namespace?: string|null,
      *     package: string,
-     *     status?: 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted',
-     *     sortBy?: 'PUBLISHED_TIME',
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string,
-     *     originType?: 'INTERNAL'|'EXTERNAL'|'UNKNOWN'
+     *     status?: 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted'|null,
+     *     sortBy?: 'PUBLISHED_TIME'|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null,
+     *     originType?: 'INTERNAL'|'EXTERNAL'|'UNKNOWN'|null
      * } $args
      */
     public function __construct(array $args)

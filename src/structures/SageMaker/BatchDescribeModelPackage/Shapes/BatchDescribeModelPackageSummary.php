@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ModelPackageGroupName
- * @property int<1, max> $ModelPackageVersion
+ * @property int<1, max>|null $ModelPackageVersion
  * @property string $ModelPackageArn
- * @property string $ModelPackageDescription
+ * @property string|null $ModelPackageDescription
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property InferenceSpecification $InferenceSpecification
  * @property 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting' $ModelPackageStatus
- * @property 'Approved'|'Rejected'|'PendingManualApproval' $ModelApprovalStatus
+ * @property 'Approved'|'Rejected'|'PendingManualApproval'|null $ModelApprovalStatus
  */
 class BatchDescribeModelPackageSummary extends Shape
 {
     /**
      * @param array{
      *     ModelPackageGroupName: string,
-     *     ModelPackageVersion?: int<1, max>,
+     *     ModelPackageVersion?: int<1, max>|null,
      *     ModelPackageArn: string,
-     *     ModelPackageDescription?: string,
+     *     ModelPackageDescription?: string|null,
      *     CreationTime: \Aws\Api\DateTimeResult,
      *     InferenceSpecification: InferenceSpecification,
      *     ModelPackageStatus: 'Pending'|'InProgress'|'Completed'|'Failed'|'Deleting',
-     *     ModelApprovalStatus?: 'Approved'|'Rejected'|'PendingManualApproval'
+     *     ModelApprovalStatus?: 'Approved'|'Rejected'|'PendingManualApproval'|null
      * } $args
      */
     public function __construct(array $args)

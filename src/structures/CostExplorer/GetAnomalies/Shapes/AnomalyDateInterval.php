@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $StartDate
- * @property string $EndDate
+ * @property string|null $EndDate
  */
 class AnomalyDateInterval extends Shape
 {
     /**
      * @param array{
      *     StartDate: string,
-     *     EndDate?: string
+     *     EndDate?: string|null
      * } $args
      */
     public function __construct(array $args)

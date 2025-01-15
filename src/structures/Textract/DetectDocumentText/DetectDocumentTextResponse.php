@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Textract\DetectDocumentText;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DocumentMetadata $DocumentMetadata
- * @property list<Shapes\Block> $Blocks
- * @property string $DetectDocumentTextModelVersion
+ * @property Shapes\DocumentMetadata|null $DocumentMetadata
+ * @property list<Shapes\Block>|null $Blocks
+ * @property string|null $DetectDocumentTextModelVersion
  */
 class DetectDocumentTextResponse extends Response
 {

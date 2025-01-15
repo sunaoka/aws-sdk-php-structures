@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\GetNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HttpEndpoint
- * @property string $WebSocketEndpoint
+ * @property string|null $HttpEndpoint
+ * @property string|null $WebSocketEndpoint
  */
 class NodeEthereumAttributes extends Shape
 {
     /**
      * @param array{
-     *     HttpEndpoint?: string,
-     *     WebSocketEndpoint?: string
+     *     HttpEndpoint?: string|null,
+     *     WebSocketEndpoint?: string|null
      * } $args
      */
     public function __construct(array $args = [])

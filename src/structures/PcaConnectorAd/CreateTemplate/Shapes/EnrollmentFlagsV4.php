@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $EnableKeyReuseOnNtTokenKeysetStorageFull
- * @property bool $IncludeSymmetricAlgorithms
- * @property bool $NoSecurityExtension
- * @property bool $RemoveInvalidCertificateFromPersonalStore
- * @property bool $UserInteractionRequired
+ * @property bool|null $EnableKeyReuseOnNtTokenKeysetStorageFull
+ * @property bool|null $IncludeSymmetricAlgorithms
+ * @property bool|null $NoSecurityExtension
+ * @property bool|null $RemoveInvalidCertificateFromPersonalStore
+ * @property bool|null $UserInteractionRequired
  */
 class EnrollmentFlagsV4 extends Shape
 {
     /**
      * @param array{
-     *     EnableKeyReuseOnNtTokenKeysetStorageFull?: bool,
-     *     IncludeSymmetricAlgorithms?: bool,
-     *     NoSecurityExtension?: bool,
-     *     RemoveInvalidCertificateFromPersonalStore?: bool,
-     *     UserInteractionRequired?: bool
+     *     EnableKeyReuseOnNtTokenKeysetStorageFull?: bool|null,
+     *     IncludeSymmetricAlgorithms?: bool|null,
+     *     NoSecurityExtension?: bool|null,
+     *     RemoveInvalidCertificateFromPersonalStore?: bool|null,
+     *     UserInteractionRequired?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

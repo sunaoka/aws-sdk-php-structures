@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\DescribeEnvironmentManagedActi
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $EnvironmentName
- * @property string $EnvironmentId
- * @property 'Scheduled'|'Pending'|'Running'|'Unknown' $Status
+ * @property string|null $EnvironmentName
+ * @property string|null $EnvironmentId
+ * @property 'Scheduled'|'Pending'|'Running'|'Unknown'|null $Status
  */
 class DescribeEnvironmentManagedActionsRequest extends Request
 {
     /**
      * @param array{
-     *     EnvironmentName?: string,
-     *     EnvironmentId?: string,
-     *     Status?: 'Scheduled'|'Pending'|'Running'|'Unknown'
+     *     EnvironmentName?: string|null,
+     *     EnvironmentId?: string|null,
+     *     Status?: 'Scheduled'|'Pending'|'Running'|'Unknown'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationId
- * @property string $PageSize
- * @property string $Token
+ * @property string|null $PageSize
+ * @property string|null $Token
  */
 class GetImportJobsRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationId: string,
-     *     PageSize?: string,
-     *     Token?: string
+     *     PageSize?: string|null,
+     *     Token?: string|null
      * } $args
      */
     public function __construct(array $args)

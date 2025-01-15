@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $containerName
  * @property int $containerPort
- * @property ContainerServiceHealthCheckConfig $healthCheck
+ * @property ContainerServiceHealthCheckConfig|null $healthCheck
  */
 class EndpointRequest extends Shape
 {
@@ -15,7 +15,7 @@ class EndpointRequest extends Shape
      * @param array{
      *     containerName: string,
      *     containerPort: int,
-     *     healthCheck?: ContainerServiceHealthCheckConfig
+     *     healthCheck?: ContainerServiceHealthCheckConfig|null
      * } $args
      */
     public function __construct(array $args)

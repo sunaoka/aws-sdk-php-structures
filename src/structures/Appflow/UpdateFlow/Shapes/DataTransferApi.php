@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Appflow\UpdateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property 'SYNC'|'ASYNC'|'AUTOMATIC' $Type
+ * @property string|null $Name
+ * @property 'SYNC'|'ASYNC'|'AUTOMATIC'|null $Type
  */
 class DataTransferApi extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Type?: 'SYNC'|'ASYNC'|'AUTOMATIC'
+     *     Name?: string|null,
+     *     Type?: 'SYNC'|'ASYNC'|'AUTOMATIC'|null
      * } $args
      */
     public function __construct(array $args = [])

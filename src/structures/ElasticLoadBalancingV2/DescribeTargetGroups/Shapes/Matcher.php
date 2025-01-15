@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeTargetGroups\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HttpCode
- * @property string $GrpcCode
+ * @property string|null $HttpCode
+ * @property string|null $GrpcCode
  */
 class Matcher extends Shape
 {
     /**
      * @param array{
-     *     HttpCode?: string,
-     *     GrpcCode?: string
+     *     HttpCode?: string|null,
+     *     GrpcCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

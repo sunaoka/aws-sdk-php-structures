@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GeoPlaces\Suggest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Code2
- * @property string $Code3
- * @property string $Name
+ * @property string|null $Code2
+ * @property string|null $Code3
+ * @property string|null $Name
  */
 class Country extends Shape
 {
     /**
      * @param array{
-     *     Code2?: string,
-     *     Code3?: string,
-     *     Name?: string
+     *     Code2?: string|null,
+     *     Code3?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

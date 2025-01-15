@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $HomeRegion
  * @property Shapes\Target $Target
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class CreateHomeRegionControlRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateHomeRegionControlRequest extends Request
      * @param array{
      *     HomeRegion: string,
      *     Target: Shapes\Target,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

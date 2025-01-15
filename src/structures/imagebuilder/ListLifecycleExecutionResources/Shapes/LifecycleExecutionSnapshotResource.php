@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListLifecycleExecutionResources\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $snapshotId
- * @property LifecycleExecutionResourceState $state
+ * @property string|null $snapshotId
+ * @property LifecycleExecutionResourceState|null $state
  */
 class LifecycleExecutionSnapshotResource extends Shape
 {
     /**
      * @param array{
-     *     snapshotId?: string,
-     *     state?: LifecycleExecutionResourceState
+     *     snapshotId?: string|null,
+     *     state?: LifecycleExecutionResourceState|null
      * } $args
      */
     public function __construct(array $args = [])

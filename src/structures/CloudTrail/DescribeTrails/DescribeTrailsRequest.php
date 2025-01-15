@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudTrail\DescribeTrails;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $trailNameList
- * @property bool $includeShadowTrails
+ * @property list<string>|null $trailNameList
+ * @property bool|null $includeShadowTrails
  */
 class DescribeTrailsRequest extends Request
 {
     /**
      * @param array{
-     *     trailNameList?: list<string>,
-     *     includeShadowTrails?: bool
+     *     trailNameList?: list<string>|null,
+     *     includeShadowTrails?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

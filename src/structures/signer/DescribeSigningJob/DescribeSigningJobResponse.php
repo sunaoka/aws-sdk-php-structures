@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\signer\DescribeSigningJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $jobId
- * @property Shapes\Source $source
- * @property Shapes\SigningMaterial $signingMaterial
- * @property string $platformId
- * @property string $platformDisplayName
- * @property string $profileName
- * @property string $profileVersion
- * @property Shapes\SigningPlatformOverrides $overrides
- * @property array<string, string> $signingParameters
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $completedAt
- * @property \Aws\Api\DateTimeResult $signatureExpiresAt
- * @property string $requestedBy
- * @property 'InProgress'|'Failed'|'Succeeded' $status
- * @property string $statusReason
- * @property Shapes\SigningJobRevocationRecord $revocationRecord
- * @property Shapes\SignedObject $signedObject
- * @property string $jobOwner
- * @property string $jobInvoker
+ * @property string|null $jobId
+ * @property Shapes\Source|null $source
+ * @property Shapes\SigningMaterial|null $signingMaterial
+ * @property string|null $platformId
+ * @property string|null $platformDisplayName
+ * @property string|null $profileName
+ * @property string|null $profileVersion
+ * @property Shapes\SigningPlatformOverrides|null $overrides
+ * @property array<string, string>|null $signingParameters
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $completedAt
+ * @property \Aws\Api\DateTimeResult|null $signatureExpiresAt
+ * @property string|null $requestedBy
+ * @property 'InProgress'|'Failed'|'Succeeded'|null $status
+ * @property string|null $statusReason
+ * @property Shapes\SigningJobRevocationRecord|null $revocationRecord
+ * @property Shapes\SignedObject|null $signedObject
+ * @property string|null $jobOwner
+ * @property string|null $jobInvoker
  */
 class DescribeSigningJobResponse extends Response
 {

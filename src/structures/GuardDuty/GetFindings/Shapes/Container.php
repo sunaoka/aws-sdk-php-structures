@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContainerRuntime
- * @property string $Id
- * @property string $Name
- * @property string $Image
- * @property string $ImagePrefix
- * @property list<VolumeMount> $VolumeMounts
- * @property SecurityContext $SecurityContext
+ * @property string|null $ContainerRuntime
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $Image
+ * @property string|null $ImagePrefix
+ * @property list<VolumeMount>|null $VolumeMounts
+ * @property SecurityContext|null $SecurityContext
  */
 class Container extends Shape
 {
     /**
      * @param array{
-     *     ContainerRuntime?: string,
-     *     Id?: string,
-     *     Name?: string,
-     *     Image?: string,
-     *     ImagePrefix?: string,
-     *     VolumeMounts?: list<VolumeMount>,
-     *     SecurityContext?: SecurityContext
+     *     ContainerRuntime?: string|null,
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Image?: string|null,
+     *     ImagePrefix?: string|null,
+     *     VolumeMounts?: list<VolumeMount>|null,
+     *     SecurityContext?: SecurityContext|null
      * } $args
      */
     public function __construct(array $args = [])

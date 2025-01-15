@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $LineVisibility
- * @property 'LINEAR'|'SMOOTH'|'STEPPED' $LineInterpolation
- * @property 'SOLID'|'DOTTED'|'DASHED' $LineStyle
- * @property string $LineWidth
+ * @property 'HIDDEN'|'VISIBLE'|null $LineVisibility
+ * @property 'LINEAR'|'SMOOTH'|'STEPPED'|null $LineInterpolation
+ * @property 'SOLID'|'DOTTED'|'DASHED'|null $LineStyle
+ * @property string|null $LineWidth
  */
 class LineChartLineStyleSettings extends Shape
 {
     /**
      * @param array{
-     *     LineVisibility?: 'HIDDEN'|'VISIBLE',
-     *     LineInterpolation?: 'LINEAR'|'SMOOTH'|'STEPPED',
-     *     LineStyle?: 'SOLID'|'DOTTED'|'DASHED',
-     *     LineWidth?: string
+     *     LineVisibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     LineInterpolation?: 'LINEAR'|'SMOOTH'|'STEPPED'|null,
+     *     LineStyle?: 'SOLID'|'DOTTED'|'DASHED'|null,
+     *     LineWidth?: string|null
      * } $args
      */
     public function __construct(array $args = [])

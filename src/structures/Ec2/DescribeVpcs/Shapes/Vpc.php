@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVpcs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OwnerId
- * @property 'default'|'dedicated'|'host' $InstanceTenancy
- * @property list<VpcIpv6CidrBlockAssociation> $Ipv6CidrBlockAssociationSet
- * @property list<VpcCidrBlockAssociation> $CidrBlockAssociationSet
- * @property bool $IsDefault
- * @property list<Tag> $Tags
- * @property BlockPublicAccessStates $BlockPublicAccessStates
- * @property string $VpcId
- * @property 'pending'|'available' $State
- * @property string $CidrBlock
- * @property string $DhcpOptionsId
+ * @property string|null $OwnerId
+ * @property 'default'|'dedicated'|'host'|null $InstanceTenancy
+ * @property list<VpcIpv6CidrBlockAssociation>|null $Ipv6CidrBlockAssociationSet
+ * @property list<VpcCidrBlockAssociation>|null $CidrBlockAssociationSet
+ * @property bool|null $IsDefault
+ * @property list<Tag>|null $Tags
+ * @property BlockPublicAccessStates|null $BlockPublicAccessStates
+ * @property string|null $VpcId
+ * @property 'pending'|'available'|null $State
+ * @property string|null $CidrBlock
+ * @property string|null $DhcpOptionsId
  */
 class Vpc extends Shape
 {
     /**
      * @param array{
-     *     OwnerId?: string,
-     *     InstanceTenancy?: 'default'|'dedicated'|'host',
-     *     Ipv6CidrBlockAssociationSet?: list<VpcIpv6CidrBlockAssociation>,
-     *     CidrBlockAssociationSet?: list<VpcCidrBlockAssociation>,
-     *     IsDefault?: bool,
-     *     Tags?: list<Tag>,
-     *     BlockPublicAccessStates?: BlockPublicAccessStates,
-     *     VpcId?: string,
-     *     State?: 'pending'|'available',
-     *     CidrBlock?: string,
-     *     DhcpOptionsId?: string
+     *     OwnerId?: string|null,
+     *     InstanceTenancy?: 'default'|'dedicated'|'host'|null,
+     *     Ipv6CidrBlockAssociationSet?: list<VpcIpv6CidrBlockAssociation>|null,
+     *     CidrBlockAssociationSet?: list<VpcCidrBlockAssociation>|null,
+     *     IsDefault?: bool|null,
+     *     Tags?: list<Tag>|null,
+     *     BlockPublicAccessStates?: BlockPublicAccessStates|null,
+     *     VpcId?: string|null,
+     *     State?: 'pending'|'available'|null,
+     *     CidrBlock?: string|null,
+     *     DhcpOptionsId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

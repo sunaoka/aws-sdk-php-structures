@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property GrpcRouteAction $action
  * @property GrpcRouteMatch $match
- * @property GrpcRetryPolicy $retryPolicy
- * @property GrpcTimeout $timeout
+ * @property GrpcRetryPolicy|null $retryPolicy
+ * @property GrpcTimeout|null $timeout
  */
 class GrpcRoute extends Shape
 {
@@ -16,8 +16,8 @@ class GrpcRoute extends Shape
      * @param array{
      *     action: GrpcRouteAction,
      *     match: GrpcRouteMatch,
-     *     retryPolicy?: GrpcRetryPolicy,
-     *     timeout?: GrpcTimeout
+     *     retryPolicy?: GrpcRetryPolicy|null,
+     *     timeout?: GrpcTimeout|null
      * } $args
      */
     public function __construct(array $args)

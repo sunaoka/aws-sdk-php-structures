@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\VerifiedPermissions\CreatePolicyStore;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property Shapes\ValidationSettings $validationSettings
- * @property string $description
+ * @property string|null $description
  */
 class CreatePolicyStoreRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     validationSettings: Shapes\ValidationSettings,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

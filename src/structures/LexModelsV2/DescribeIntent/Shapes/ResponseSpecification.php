@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<MessageGroup> $messageGroups
- * @property bool $allowInterrupt
+ * @property bool|null $allowInterrupt
  */
 class ResponseSpecification extends Shape
 {
     /**
      * @param array{
      *     messageGroups: list<MessageGroup>,
-     *     allowInterrupt?: bool
+     *     allowInterrupt?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\ListClassificationJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SimpleCriterionForJob $simpleCriterion
- * @property TagCriterionForJob $tagCriterion
+ * @property SimpleCriterionForJob|null $simpleCriterion
+ * @property TagCriterionForJob|null $tagCriterion
  */
 class CriteriaForJob extends Shape
 {
     /**
      * @param array{
-     *     simpleCriterion?: SimpleCriterionForJob,
-     *     tagCriterion?: TagCriterionForJob
+     *     simpleCriterion?: SimpleCriterionForJob|null,
+     *     tagCriterion?: TagCriterionForJob|null
      * } $args
      */
     public function __construct(array $args = [])

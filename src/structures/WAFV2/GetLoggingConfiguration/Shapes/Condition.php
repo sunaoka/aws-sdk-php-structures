@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WAFV2\GetLoggingConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ActionCondition $ActionCondition
- * @property LabelNameCondition $LabelNameCondition
+ * @property ActionCondition|null $ActionCondition
+ * @property LabelNameCondition|null $LabelNameCondition
  */
 class Condition extends Shape
 {
     /**
      * @param array{
-     *     ActionCondition?: ActionCondition,
-     *     LabelNameCondition?: LabelNameCondition
+     *     ActionCondition?: ActionCondition|null,
+     *     LabelNameCondition?: LabelNameCondition|null
      * } $args
      */
     public function __construct(array $args = [])

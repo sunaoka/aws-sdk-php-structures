@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\S3Control\GetBucketLifecycleConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $Date
- * @property int $Days
- * @property bool $ExpiredObjectDeleteMarker
+ * @property \Aws\Api\DateTimeResult|null $Date
+ * @property int|null $Days
+ * @property bool|null $ExpiredObjectDeleteMarker
  */
 class LifecycleExpiration extends Shape
 {
     /**
      * @param array{
-     *     Date?: \Aws\Api\DateTimeResult,
-     *     Days?: int,
-     *     ExpiredObjectDeleteMarker?: bool
+     *     Date?: \Aws\Api\DateTimeResult|null,
+     *     Days?: int|null,
+     *     ExpiredObjectDeleteMarker?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardSnapshotJobResult\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ErrorMessage
- * @property string $ErrorType
+ * @property string|null $ErrorMessage
+ * @property string|null $ErrorType
  */
 class SnapshotJobResultErrorInfo extends Shape
 {
     /**
      * @param array{
-     *     ErrorMessage?: string,
-     *     ErrorType?: string
+     *     ErrorMessage?: string|null,
+     *     ErrorType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

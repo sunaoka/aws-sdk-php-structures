@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\UpdateBackendConfig;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AppId
- * @property string $BackendManagerAppId
- * @property string $Error
- * @property Shapes\LoginAuthConfigReqObj $LoginAuthConfig
+ * @property string|null $AppId
+ * @property string|null $BackendManagerAppId
+ * @property string|null $Error
+ * @property Shapes\LoginAuthConfigReqObj|null $LoginAuthConfig
  */
 class UpdateBackendConfigResponse extends Response
 {

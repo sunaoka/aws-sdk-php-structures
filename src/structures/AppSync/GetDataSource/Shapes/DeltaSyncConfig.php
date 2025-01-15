@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppSync\GetDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $baseTableTTL
- * @property string $deltaSyncTableName
- * @property int $deltaSyncTableTTL
+ * @property int|null $baseTableTTL
+ * @property string|null $deltaSyncTableName
+ * @property int|null $deltaSyncTableTTL
  */
 class DeltaSyncConfig extends Shape
 {
     /**
      * @param array{
-     *     baseTableTTL?: int,
-     *     deltaSyncTableName?: string,
-     *     deltaSyncTableTTL?: int
+     *     baseTableTTL?: int|null,
+     *     deltaSyncTableName?: string|null,
+     *     deltaSyncTableTTL?: int|null
      * } $args
      */
     public function __construct(array $args = [])

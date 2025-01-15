@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NetworkPerformance
- * @property int $MaximumNetworkInterfaces
- * @property int $MaximumNetworkCards
- * @property int $DefaultNetworkCardIndex
- * @property list<NetworkCardInfo> $NetworkCards
- * @property int $Ipv4AddressesPerInterface
- * @property int $Ipv6AddressesPerInterface
- * @property bool $Ipv6Supported
- * @property 'unsupported'|'supported'|'required' $EnaSupport
- * @property bool $EfaSupported
- * @property EfaInfo $EfaInfo
- * @property bool $EncryptionInTransitSupported
- * @property bool $EnaSrdSupported
- * @property list<'default'|'vpc-1'|'ebs-1'> $BandwidthWeightings
+ * @property string|null $NetworkPerformance
+ * @property int|null $MaximumNetworkInterfaces
+ * @property int|null $MaximumNetworkCards
+ * @property int|null $DefaultNetworkCardIndex
+ * @property list<NetworkCardInfo>|null $NetworkCards
+ * @property int|null $Ipv4AddressesPerInterface
+ * @property int|null $Ipv6AddressesPerInterface
+ * @property bool|null $Ipv6Supported
+ * @property 'unsupported'|'supported'|'required'|null $EnaSupport
+ * @property bool|null $EfaSupported
+ * @property EfaInfo|null $EfaInfo
+ * @property bool|null $EncryptionInTransitSupported
+ * @property bool|null $EnaSrdSupported
+ * @property list<'default'|'vpc-1'|'ebs-1'>|null $BandwidthWeightings
  */
 class NetworkInfo extends Shape
 {
     /**
      * @param array{
-     *     NetworkPerformance?: string,
-     *     MaximumNetworkInterfaces?: int,
-     *     MaximumNetworkCards?: int,
-     *     DefaultNetworkCardIndex?: int,
-     *     NetworkCards?: list<NetworkCardInfo>,
-     *     Ipv4AddressesPerInterface?: int,
-     *     Ipv6AddressesPerInterface?: int,
-     *     Ipv6Supported?: bool,
-     *     EnaSupport?: 'unsupported'|'supported'|'required',
-     *     EfaSupported?: bool,
-     *     EfaInfo?: EfaInfo,
-     *     EncryptionInTransitSupported?: bool,
-     *     EnaSrdSupported?: bool,
-     *     BandwidthWeightings?: list<'default'|'vpc-1'|'ebs-1'>
+     *     NetworkPerformance?: string|null,
+     *     MaximumNetworkInterfaces?: int|null,
+     *     MaximumNetworkCards?: int|null,
+     *     DefaultNetworkCardIndex?: int|null,
+     *     NetworkCards?: list<NetworkCardInfo>|null,
+     *     Ipv4AddressesPerInterface?: int|null,
+     *     Ipv6AddressesPerInterface?: int|null,
+     *     Ipv6Supported?: bool|null,
+     *     EnaSupport?: 'unsupported'|'supported'|'required'|null,
+     *     EfaSupported?: bool|null,
+     *     EfaInfo?: EfaInfo|null,
+     *     EncryptionInTransitSupported?: bool|null,
+     *     EnaSrdSupported?: bool|null,
+     *     BandwidthWeightings?: list<'default'|'vpc-1'|'ebs-1'>|null
      * } $args
      */
     public function __construct(array $args = [])

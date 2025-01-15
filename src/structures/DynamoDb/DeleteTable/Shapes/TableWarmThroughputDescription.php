@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DeleteTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, max> $ReadUnitsPerSecond
- * @property int<1, max> $WriteUnitsPerSecond
- * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED' $Status
+ * @property int<1, max>|null $ReadUnitsPerSecond
+ * @property int<1, max>|null $WriteUnitsPerSecond
+ * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED'|null $Status
  */
 class TableWarmThroughputDescription extends Shape
 {
     /**
      * @param array{
-     *     ReadUnitsPerSecond?: int<1, max>,
-     *     WriteUnitsPerSecond?: int<1, max>,
-     *     Status?: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED'
+     *     ReadUnitsPerSecond?: int<1, max>|null,
+     *     WriteUnitsPerSecond?: int<1, max>|null,
+     *     Status?: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'INACCESSIBLE_ENCRYPTION_CREDENTIALS'|'ARCHIVING'|'ARCHIVED'|null
      * } $args
      */
     public function __construct(array $args = [])

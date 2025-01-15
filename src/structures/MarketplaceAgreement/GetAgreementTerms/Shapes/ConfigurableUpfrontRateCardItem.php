@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MarketplaceAgreement\GetAgreementTerms\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Constraints $constraints
- * @property list<RateCardItem> $rateCard
- * @property Selector $selector
+ * @property Constraints|null $constraints
+ * @property list<RateCardItem>|null $rateCard
+ * @property Selector|null $selector
  */
 class ConfigurableUpfrontRateCardItem extends Shape
 {
     /**
      * @param array{
-     *     constraints?: Constraints,
-     *     rateCard?: list<RateCardItem>,
-     *     selector?: Selector
+     *     constraints?: Constraints|null,
+     *     rateCard?: list<RateCardItem>|null,
+     *     selector?: Selector|null
      * } $args
      */
     public function __construct(array $args = [])

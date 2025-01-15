@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $Visibility
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
  */
 class ProgressBarOptions extends Shape
 {
     /**
-     * @param array{Visibility?: 'HIDDEN'|'VISIBLE'} $args
+     * @param array{Visibility?: 'HIDDEN'|'VISIBLE'|null} $args
      */
     public function __construct(array $args = [])
     {

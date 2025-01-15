@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Comprehend\ListSentimentDetectionJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\SentimentDetectionJobFilter $Filter
- * @property string $NextToken
- * @property int<1, 500> $MaxResults
+ * @property Shapes\SentimentDetectionJobFilter|null $Filter
+ * @property string|null $NextToken
+ * @property int<1, 500>|null $MaxResults
  */
 class ListSentimentDetectionJobsRequest extends Request
 {
     /**
      * @param array{
-     *     Filter?: Shapes\SentimentDetectionJobFilter,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 500>
+     *     Filter?: Shapes\SentimentDetectionJobFilter|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 500>|null
      * } $args
      */
     public function __construct(array $args = [])

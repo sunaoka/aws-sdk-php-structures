@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEBSVolumeRecommendations\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VolumeConfiguration $configuration
- * @property double $performanceRisk
- * @property int $rank
- * @property SavingsOpportunity $savingsOpportunity
- * @property EBSSavingsOpportunityAfterDiscounts $savingsOpportunityAfterDiscounts
+ * @property VolumeConfiguration|null $configuration
+ * @property double|null $performanceRisk
+ * @property int|null $rank
+ * @property SavingsOpportunity|null $savingsOpportunity
+ * @property EBSSavingsOpportunityAfterDiscounts|null $savingsOpportunityAfterDiscounts
  */
 class VolumeRecommendationOption extends Shape
 {
     /**
      * @param array{
-     *     configuration?: VolumeConfiguration,
-     *     performanceRisk?: double,
-     *     rank?: int,
-     *     savingsOpportunity?: SavingsOpportunity,
-     *     savingsOpportunityAfterDiscounts?: EBSSavingsOpportunityAfterDiscounts
+     *     configuration?: VolumeConfiguration|null,
+     *     performanceRisk?: double|null,
+     *     rank?: int|null,
+     *     savingsOpportunity?: SavingsOpportunity|null,
+     *     savingsOpportunityAfterDiscounts?: EBSSavingsOpportunityAfterDiscounts|null
      * } $args
      */
     public function __construct(array $args = [])

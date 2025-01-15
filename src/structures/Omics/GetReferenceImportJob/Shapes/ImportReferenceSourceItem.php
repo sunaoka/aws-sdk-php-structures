@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Omics\GetReferenceImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $sourceFile
+ * @property string|null $sourceFile
  * @property 'NOT_STARTED'|'IN_PROGRESS'|'FINISHED'|'FAILED' $status
- * @property string $statusMessage
- * @property string $name
- * @property string $description
- * @property array<string, string> $tags
- * @property string $referenceId
+ * @property string|null $statusMessage
+ * @property string|null $name
+ * @property string|null $description
+ * @property array<string, string>|null $tags
+ * @property string|null $referenceId
  */
 class ImportReferenceSourceItem extends Shape
 {
     /**
      * @param array{
-     *     sourceFile?: string,
+     *     sourceFile?: string|null,
      *     status: 'NOT_STARTED'|'IN_PROGRESS'|'FINISHED'|'FAILED',
-     *     statusMessage?: string,
-     *     name?: string,
-     *     description?: string,
-     *     tags?: array<string, string>,
-     *     referenceId?: string
+     *     statusMessage?: string|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     tags?: array<string, string>|null,
+     *     referenceId?: string|null
      * } $args
      */
     public function __construct(array $args)

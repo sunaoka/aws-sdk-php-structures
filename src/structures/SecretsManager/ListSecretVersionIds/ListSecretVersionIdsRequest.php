@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SecretId
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
- * @property bool $IncludeDeprecated
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
+ * @property bool|null $IncludeDeprecated
  */
 class ListSecretVersionIdsRequest extends Request
 {
     /**
      * @param array{
      *     SecretId: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string,
-     *     IncludeDeprecated?: bool
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null,
+     *     IncludeDeprecated?: bool|null
      * } $args
      */
     public function __construct(array $args)

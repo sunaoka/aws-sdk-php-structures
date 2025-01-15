@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SELECTIVE'|'ALL' $selectionMode
- * @property RerankingMetadataSelectiveModeConfiguration $selectiveModeConfiguration
+ * @property RerankingMetadataSelectiveModeConfiguration|null $selectiveModeConfiguration
  */
 class MetadataConfigurationForReranking extends Shape
 {
     /**
      * @param array{
      *     selectionMode: 'SELECTIVE'|'ALL',
-     *     selectiveModeConfiguration?: RerankingMetadataSelectiveModeConfiguration
+     *     selectiveModeConfiguration?: RerankingMetadataSelectiveModeConfiguration|null
      * } $args
      */
     public function __construct(array $args)

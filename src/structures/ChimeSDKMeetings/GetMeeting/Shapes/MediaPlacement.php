@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMeetings\GetMeeting\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AudioHostUrl
- * @property string $AudioFallbackUrl
- * @property string $SignalingUrl
- * @property string $TurnControlUrl
- * @property string $ScreenDataUrl
- * @property string $ScreenViewingUrl
- * @property string $ScreenSharingUrl
- * @property string $EventIngestionUrl
+ * @property string|null $AudioHostUrl
+ * @property string|null $AudioFallbackUrl
+ * @property string|null $SignalingUrl
+ * @property string|null $TurnControlUrl
+ * @property string|null $ScreenDataUrl
+ * @property string|null $ScreenViewingUrl
+ * @property string|null $ScreenSharingUrl
+ * @property string|null $EventIngestionUrl
  */
 class MediaPlacement extends Shape
 {
     /**
      * @param array{
-     *     AudioHostUrl?: string,
-     *     AudioFallbackUrl?: string,
-     *     SignalingUrl?: string,
-     *     TurnControlUrl?: string,
-     *     ScreenDataUrl?: string,
-     *     ScreenViewingUrl?: string,
-     *     ScreenSharingUrl?: string,
-     *     EventIngestionUrl?: string
+     *     AudioHostUrl?: string|null,
+     *     AudioFallbackUrl?: string|null,
+     *     SignalingUrl?: string|null,
+     *     TurnControlUrl?: string|null,
+     *     ScreenDataUrl?: string|null,
+     *     ScreenViewingUrl?: string|null,
+     *     ScreenSharingUrl?: string|null,
+     *     EventIngestionUrl?: string|null
      * } $args
      */
     public function __construct(array $args = [])

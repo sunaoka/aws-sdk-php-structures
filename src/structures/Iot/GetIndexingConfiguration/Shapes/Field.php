@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\GetIndexingConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property 'Number'|'String'|'Boolean' $type
+ * @property string|null $name
+ * @property 'Number'|'String'|'Boolean'|null $type
  */
 class Field extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     type?: 'Number'|'String'|'Boolean'
+     *     name?: string|null,
+     *     type?: 'Number'|'String'|'Boolean'|null
      * } $args
      */
     public function __construct(array $args = [])

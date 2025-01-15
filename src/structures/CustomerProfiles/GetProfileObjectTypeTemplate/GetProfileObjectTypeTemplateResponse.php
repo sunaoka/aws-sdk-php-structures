@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetProfileObjectTypeTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TemplateId
- * @property string $SourceName
- * @property string $SourceObject
- * @property bool $AllowProfileCreation
- * @property string $SourceLastUpdatedTimestampFormat
- * @property array<string, Shapes\ObjectTypeField> $Fields
- * @property array<string, list<Shapes\ObjectTypeKey>> $Keys
+ * @property string|null $TemplateId
+ * @property string|null $SourceName
+ * @property string|null $SourceObject
+ * @property bool|null $AllowProfileCreation
+ * @property string|null $SourceLastUpdatedTimestampFormat
+ * @property array<string, Shapes\ObjectTypeField>|null $Fields
+ * @property array<string, list<Shapes\ObjectTypeKey>>|null $Keys
  */
 class GetProfileObjectTypeTemplateResponse extends Response
 {

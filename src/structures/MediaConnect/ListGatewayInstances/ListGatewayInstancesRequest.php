@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaConnect\ListGatewayInstances;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $FilterArn
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property string|null $FilterArn
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListGatewayInstancesRequest extends Request
 {
     /**
      * @param array{
-     *     FilterArn?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     FilterArn?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

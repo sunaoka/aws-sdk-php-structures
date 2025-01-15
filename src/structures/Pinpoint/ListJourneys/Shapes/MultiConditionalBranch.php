@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Pinpoint\ListJourneys\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SimpleCondition $Condition
- * @property string $NextActivity
+ * @property SimpleCondition|null $Condition
+ * @property string|null $NextActivity
  */
 class MultiConditionalBranch extends Shape
 {
     /**
      * @param array{
-     *     Condition?: SimpleCondition,
-     *     NextActivity?: string
+     *     Condition?: SimpleCondition|null,
+     *     NextActivity?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\CreateMember;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $MemberId
+ * @property string|null $MemberId
  */
 class CreateMemberResponse extends Response
 {

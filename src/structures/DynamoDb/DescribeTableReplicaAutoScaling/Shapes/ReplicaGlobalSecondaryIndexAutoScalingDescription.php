@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DynamoDb\DescribeTableReplicaAutoScaling\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IndexName
- * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE' $IndexStatus
- * @property AutoScalingSettingsDescription $ProvisionedReadCapacityAutoScalingSettings
- * @property AutoScalingSettingsDescription $ProvisionedWriteCapacityAutoScalingSettings
+ * @property string|null $IndexName
+ * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|null $IndexStatus
+ * @property AutoScalingSettingsDescription|null $ProvisionedReadCapacityAutoScalingSettings
+ * @property AutoScalingSettingsDescription|null $ProvisionedWriteCapacityAutoScalingSettings
  */
 class ReplicaGlobalSecondaryIndexAutoScalingDescription extends Shape
 {
     /**
      * @param array{
-     *     IndexName?: string,
-     *     IndexStatus?: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE',
-     *     ProvisionedReadCapacityAutoScalingSettings?: AutoScalingSettingsDescription,
-     *     ProvisionedWriteCapacityAutoScalingSettings?: AutoScalingSettingsDescription
+     *     IndexName?: string|null,
+     *     IndexStatus?: 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|null,
+     *     ProvisionedReadCapacityAutoScalingSettings?: AutoScalingSettingsDescription|null,
+     *     ProvisionedWriteCapacityAutoScalingSettings?: AutoScalingSettingsDescription|null
      * } $args
      */
     public function __construct(array $args = [])

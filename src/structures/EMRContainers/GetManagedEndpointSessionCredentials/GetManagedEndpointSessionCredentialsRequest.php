@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $virtualClusterIdentifier
  * @property string $executionRoleArn
  * @property string $credentialType
- * @property int $durationInSeconds
- * @property string $logContext
- * @property string $clientToken
+ * @property int|null $durationInSeconds
+ * @property string|null $logContext
+ * @property string|null $clientToken
  */
 class GetManagedEndpointSessionCredentialsRequest extends Request
 {
@@ -21,9 +21,9 @@ class GetManagedEndpointSessionCredentialsRequest extends Request
      *     virtualClusterIdentifier: string,
      *     executionRoleArn: string,
      *     credentialType: string,
-     *     durationInSeconds?: int,
-     *     logContext?: string,
-     *     clientToken?: string
+     *     durationInSeconds?: int|null,
+     *     logContext?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

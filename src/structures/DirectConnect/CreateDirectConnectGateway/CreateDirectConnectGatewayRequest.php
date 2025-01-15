@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $directConnectGatewayName
- * @property int $amazonSideAsn
+ * @property int|null $amazonSideAsn
  */
 class CreateDirectConnectGatewayRequest extends Request
 {
     /**
      * @param array{
      *     directConnectGatewayName: string,
-     *     amazonSideAsn?: int
+     *     amazonSideAsn?: int|null
      * } $args
      */
     public function __construct(array $args)

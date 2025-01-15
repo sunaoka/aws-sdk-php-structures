@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\UpdateRoutingControlStateEntry> $UpdateRoutingControlStateEntries
- * @property list<string> $SafetyRulesToOverride
+ * @property list<string>|null $SafetyRulesToOverride
  */
 class UpdateRoutingControlStatesRequest extends Request
 {
     /**
      * @param array{
      *     UpdateRoutingControlStateEntries: list<Shapes\UpdateRoutingControlStateEntry>,
-     *     SafetyRulesToOverride?: list<string>
+     *     SafetyRulesToOverride?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SagemakerEdgeManager\GetDeviceRegistration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DeviceRegistration
- * @property string $CacheTTL
+ * @property string|null $DeviceRegistration
+ * @property string|null $CacheTTL
  */
 class GetDeviceRegistrationResponse extends Response
 {

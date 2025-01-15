@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\GetReservedInstancesExchangeQuote\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HourlyPrice
- * @property string $RemainingTotalValue
- * @property string $RemainingUpfrontValue
+ * @property string|null $HourlyPrice
+ * @property string|null $RemainingTotalValue
+ * @property string|null $RemainingUpfrontValue
  */
 class ReservationValue extends Shape
 {
     /**
      * @param array{
-     *     HourlyPrice?: string,
-     *     RemainingTotalValue?: string,
-     *     RemainingUpfrontValue?: string
+     *     HourlyPrice?: string|null,
+     *     RemainingTotalValue?: string|null,
+     *     RemainingUpfrontValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

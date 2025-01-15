@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Redshift\CreateEventSubscription\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CustomerAwsId
- * @property string $CustSubscriptionId
- * @property string $SnsTopicArn
- * @property string $Status
- * @property \Aws\Api\DateTimeResult $SubscriptionCreationTime
- * @property string $SourceType
- * @property list<string> $SourceIdsList
- * @property list<string> $EventCategoriesList
- * @property string $Severity
- * @property bool $Enabled
- * @property list<Tag> $Tags
+ * @property string|null $CustomerAwsId
+ * @property string|null $CustSubscriptionId
+ * @property string|null $SnsTopicArn
+ * @property string|null $Status
+ * @property \Aws\Api\DateTimeResult|null $SubscriptionCreationTime
+ * @property string|null $SourceType
+ * @property list<string>|null $SourceIdsList
+ * @property list<string>|null $EventCategoriesList
+ * @property string|null $Severity
+ * @property bool|null $Enabled
+ * @property list<Tag>|null $Tags
  */
 class EventSubscription extends Shape
 {
     /**
      * @param array{
-     *     CustomerAwsId?: string,
-     *     CustSubscriptionId?: string,
-     *     SnsTopicArn?: string,
-     *     Status?: string,
-     *     SubscriptionCreationTime?: \Aws\Api\DateTimeResult,
-     *     SourceType?: string,
-     *     SourceIdsList?: list<string>,
-     *     EventCategoriesList?: list<string>,
-     *     Severity?: string,
-     *     Enabled?: bool,
-     *     Tags?: list<Tag>
+     *     CustomerAwsId?: string|null,
+     *     CustSubscriptionId?: string|null,
+     *     SnsTopicArn?: string|null,
+     *     Status?: string|null,
+     *     SubscriptionCreationTime?: \Aws\Api\DateTimeResult|null,
+     *     SourceType?: string|null,
+     *     SourceIdsList?: list<string>|null,
+     *     EventCategoriesList?: list<string>|null,
+     *     Severity?: string|null,
+     *     Enabled?: bool|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

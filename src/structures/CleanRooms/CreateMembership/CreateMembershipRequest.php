@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $collaborationIdentifier
  * @property 'ENABLED'|'DISABLED' $queryLogStatus
- * @property array<string, string> $tags
- * @property Shapes\MembershipProtectedQueryResultConfiguration $defaultResultConfiguration
- * @property Shapes\MembershipPaymentConfiguration $paymentConfiguration
+ * @property array<string, string>|null $tags
+ * @property Shapes\MembershipProtectedQueryResultConfiguration|null $defaultResultConfiguration
+ * @property Shapes\MembershipPaymentConfiguration|null $paymentConfiguration
  */
 class CreateMembershipRequest extends Request
 {
@@ -17,9 +17,9 @@ class CreateMembershipRequest extends Request
      * @param array{
      *     collaborationIdentifier: string,
      *     queryLogStatus: 'ENABLED'|'DISABLED',
-     *     tags?: array<string, string>,
-     *     defaultResultConfiguration?: Shapes\MembershipProtectedQueryResultConfiguration,
-     *     paymentConfiguration?: Shapes\MembershipPaymentConfiguration
+     *     tags?: array<string, string>|null,
+     *     defaultResultConfiguration?: Shapes\MembershipProtectedQueryResultConfiguration|null,
+     *     paymentConfiguration?: Shapes\MembershipPaymentConfiguration|null
      * } $args
      */
     public function __construct(array $args)

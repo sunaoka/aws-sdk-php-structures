@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\RejectVpcEndpointConnections;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $ServiceId
  * @property list<string> $VpcEndpointIds
  */
@@ -13,7 +13,7 @@ class RejectVpcEndpointConnectionsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     ServiceId: string,
      *     VpcEndpointIds: list<string>
      * } $args

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $metadataXML
  * @property string $roleArn
  * @property string $userIdAttribute
- * @property string $userGroupAttribute
+ * @property string|null $userGroupAttribute
  */
 class SamlConfiguration extends Shape
 {
@@ -17,7 +17,7 @@ class SamlConfiguration extends Shape
      *     metadataXML: string,
      *     roleArn: string,
      *     userIdAttribute: string,
-     *     userGroupAttribute?: string
+     *     userGroupAttribute?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DataSourceId
- * @property string $DataSourceName
+ * @property string|null $DataSourceName
  * @property Shapes\S3DataSpec $DataSpec
- * @property bool $ComputeStatistics
+ * @property bool|null $ComputeStatistics
  */
 class CreateDataSourceFromS3Request extends Request
 {
     /**
      * @param array{
      *     DataSourceId: string,
-     *     DataSourceName?: string,
+     *     DataSourceName?: string|null,
      *     DataSpec: Shapes\S3DataSpec,
-     *     ComputeStatistics?: bool
+     *     ComputeStatistics?: bool|null
      * } $args
      */
     public function __construct(array $args)

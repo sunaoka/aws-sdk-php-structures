@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\DetachLoadBalancerFromSubn
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $Subnets
+ * @property list<string>|null $Subnets
  */
 class DetachLoadBalancerFromSubnetsResponse extends Response
 {

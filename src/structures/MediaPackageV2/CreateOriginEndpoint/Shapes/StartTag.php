@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property float $TimeOffset
- * @property bool $Precise
+ * @property bool|null $Precise
  */
 class StartTag extends Shape
 {
     /**
      * @param array{
      *     TimeOffset: float,
-     *     Precise?: bool
+     *     Precise?: bool|null
      * } $args
      */
     public function __construct(array $args)

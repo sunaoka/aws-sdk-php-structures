@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max> $GeometryOffset
+ * @property int<0, max>|null $GeometryOffset
  * @property RoutePassThroughPlace $Place
  */
 class RoutePassThroughWaypoint extends Shape
 {
     /**
      * @param array{
-     *     GeometryOffset?: int<0, max>,
+     *     GeometryOffset?: int<0, max>|null,
      *     Place: RoutePassThroughPlace
      * } $args
      */

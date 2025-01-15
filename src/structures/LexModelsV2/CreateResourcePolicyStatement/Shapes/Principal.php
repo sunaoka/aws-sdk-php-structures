@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\CreateResourcePolicyStatement\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $service
- * @property string $arn
+ * @property string|null $service
+ * @property string|null $arn
  */
 class Principal extends Shape
 {
     /**
      * @param array{
-     *     service?: string,
-     *     arn?: string
+     *     service?: string|null,
+     *     arn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

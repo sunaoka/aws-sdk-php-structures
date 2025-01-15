@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ConnectWisdomService\CreateSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
- * @property SessionIntegrationConfiguration $integrationConfiguration
+ * @property string|null $description
+ * @property SessionIntegrationConfiguration|null $integrationConfiguration
  * @property string $name
  * @property string $sessionArn
  * @property string $sessionId
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class SessionData extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
-     *     integrationConfiguration?: SessionIntegrationConfiguration,
+     *     description?: string|null,
+     *     integrationConfiguration?: SessionIntegrationConfiguration|null,
      *     name: string,
      *     sessionArn: string,
      *     sessionId: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

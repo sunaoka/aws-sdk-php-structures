@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\GetBatchJobExecution\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $fromProcStep
+ * @property string|null $fromProcStep
  * @property string $fromStep
- * @property string $toProcStep
- * @property string $toStep
+ * @property string|null $toProcStep
+ * @property string|null $toStep
  */
 class JobStepRestartMarker extends Shape
 {
     /**
      * @param array{
-     *     fromProcStep?: string,
+     *     fromProcStep?: string|null,
      *     fromStep: string,
-     *     toProcStep?: string,
-     *     toStep?: string
+     *     toProcStep?: string|null,
+     *     toStep?: string|null
      * } $args
      */
     public function __construct(array $args)

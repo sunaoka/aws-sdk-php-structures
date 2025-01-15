@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $code
- * @property string $name
+ * @property int|null $code
+ * @property string|null $name
  */
 class InstanceState extends Shape
 {
     /**
      * @param array{
-     *     code?: int,
-     *     name?: string
+     *     code?: int|null,
+     *     name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

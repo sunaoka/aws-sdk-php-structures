@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\NetworkManager\CreateTransitGatewayPeering\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CoreNetworkId
- * @property string $CoreNetworkArn
- * @property string $PeeringId
- * @property string $OwnerAccountId
- * @property 'TRANSIT_GATEWAY' $PeeringType
- * @property 'CREATING'|'FAILED'|'AVAILABLE'|'DELETING' $State
- * @property string $EdgeLocation
- * @property string $ResourceArn
- * @property list<Tag> $Tags
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property list<PeeringError> $LastModificationErrors
+ * @property string|null $CoreNetworkId
+ * @property string|null $CoreNetworkArn
+ * @property string|null $PeeringId
+ * @property string|null $OwnerAccountId
+ * @property 'TRANSIT_GATEWAY'|null $PeeringType
+ * @property 'CREATING'|'FAILED'|'AVAILABLE'|'DELETING'|null $State
+ * @property string|null $EdgeLocation
+ * @property string|null $ResourceArn
+ * @property list<Tag>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property list<PeeringError>|null $LastModificationErrors
  */
 class Peering extends Shape
 {
     /**
      * @param array{
-     *     CoreNetworkId?: string,
-     *     CoreNetworkArn?: string,
-     *     PeeringId?: string,
-     *     OwnerAccountId?: string,
-     *     PeeringType?: 'TRANSIT_GATEWAY',
-     *     State?: 'CREATING'|'FAILED'|'AVAILABLE'|'DELETING',
-     *     EdgeLocation?: string,
-     *     ResourceArn?: string,
-     *     Tags?: list<Tag>,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     LastModificationErrors?: list<PeeringError>
+     *     CoreNetworkId?: string|null,
+     *     CoreNetworkArn?: string|null,
+     *     PeeringId?: string|null,
+     *     OwnerAccountId?: string|null,
+     *     PeeringType?: 'TRANSIT_GATEWAY'|null,
+     *     State?: 'CREATING'|'FAILED'|'AVAILABLE'|'DELETING'|null,
+     *     EdgeLocation?: string|null,
+     *     ResourceArn?: string|null,
+     *     Tags?: list<Tag>|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     LastModificationErrors?: list<PeeringError>|null
      * } $args
      */
     public function __construct(array $args = [])

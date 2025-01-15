@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaPackageVod\DescribePackagingConfiguration\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConstantInitializationVector
+ * @property string|null $ConstantInitializationVector
  * @property SpekeKeyProvider $SpekeKeyProvider
  */
 class CmafEncryption extends Shape
 {
     /**
      * @param array{
-     *     ConstantInitializationVector?: string,
+     *     ConstantInitializationVector?: string|null,
      *     SpekeKeyProvider: SpekeKeyProvider
      * } $args
      */

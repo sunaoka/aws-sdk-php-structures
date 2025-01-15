@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeAggregateComplianceByConf
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA' $ComplianceType
- * @property int $CompliantRuleCount
- * @property int $NonCompliantRuleCount
- * @property int $TotalRuleCount
+ * @property 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA'|null $ComplianceType
+ * @property int|null $CompliantRuleCount
+ * @property int|null $NonCompliantRuleCount
+ * @property int|null $TotalRuleCount
  */
 class AggregateConformancePackCompliance extends Shape
 {
     /**
      * @param array{
-     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA',
-     *     CompliantRuleCount?: int,
-     *     NonCompliantRuleCount?: int,
-     *     TotalRuleCount?: int
+     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA'|null,
+     *     CompliantRuleCount?: int|null,
+     *     NonCompliantRuleCount?: int|null,
+     *     TotalRuleCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

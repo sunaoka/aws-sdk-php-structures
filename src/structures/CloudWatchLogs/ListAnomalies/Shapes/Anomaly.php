@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $patternId
  * @property string $anomalyDetectorArn
  * @property string $patternString
- * @property string $patternRegex
- * @property string $priority
+ * @property string|null $patternRegex
+ * @property string|null $priority
  * @property int<0, max> $firstSeen
  * @property int<0, max> $lastSeen
  * @property string $description
@@ -20,10 +20,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<LogEvent> $logSamples
  * @property list<PatternToken> $patternTokens
  * @property list<string> $logGroupArnList
- * @property bool $suppressed
- * @property int<0, max> $suppressedDate
- * @property int<0, max> $suppressedUntil
- * @property bool $isPatternLevelSuppression
+ * @property bool|null $suppressed
+ * @property int<0, max>|null $suppressedDate
+ * @property int<0, max>|null $suppressedUntil
+ * @property bool|null $isPatternLevelSuppression
  */
 class Anomaly extends Shape
 {
@@ -33,8 +33,8 @@ class Anomaly extends Shape
      *     patternId: string,
      *     anomalyDetectorArn: string,
      *     patternString: string,
-     *     patternRegex?: string,
-     *     priority?: string,
+     *     patternRegex?: string|null,
+     *     priority?: string|null,
      *     firstSeen: int<0, max>,
      *     lastSeen: int<0, max>,
      *     description: string,
@@ -44,10 +44,10 @@ class Anomaly extends Shape
      *     logSamples: list<LogEvent>,
      *     patternTokens: list<PatternToken>,
      *     logGroupArnList: list<string>,
-     *     suppressed?: bool,
-     *     suppressedDate?: int<0, max>,
-     *     suppressedUntil?: int<0, max>,
-     *     isPatternLevelSuppression?: bool
+     *     suppressed?: bool|null,
+     *     suppressedDate?: int<0, max>|null,
+     *     suppressedUntil?: int<0, max>|null,
+     *     isPatternLevelSuppression?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property Shapes\WeeklyAutoScalingSchedule $AutoScalingSchedule
+ * @property Shapes\WeeklyAutoScalingSchedule|null $AutoScalingSchedule
  */
 class SetTimeBasedAutoScalingRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     AutoScalingSchedule?: Shapes\WeeklyAutoScalingSchedule
+     *     AutoScalingSchedule?: Shapes\WeeklyAutoScalingSchedule|null
      * } $args
      */
     public function __construct(array $args)

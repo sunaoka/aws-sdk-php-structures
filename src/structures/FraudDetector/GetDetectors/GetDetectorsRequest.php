@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetDetectors;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $detectorId
- * @property string $nextToken
- * @property int<5, 10> $maxResults
+ * @property string|null $detectorId
+ * @property string|null $nextToken
+ * @property int<5, 10>|null $maxResults
  */
 class GetDetectorsRequest extends Request
 {
     /**
      * @param array{
-     *     detectorId?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<5, 10>
+     *     detectorId?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<5, 10>|null
      * } $args
      */
     public function __construct(array $args = [])

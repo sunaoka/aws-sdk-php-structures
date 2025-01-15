@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lambda\ListFunctions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ImageConfig $ImageConfig
- * @property ImageConfigError $Error
+ * @property ImageConfig|null $ImageConfig
+ * @property ImageConfigError|null $Error
  */
 class ImageConfigResponse extends Shape
 {
     /**
      * @param array{
-     *     ImageConfig?: ImageConfig,
-     *     Error?: ImageConfigError
+     *     ImageConfig?: ImageConfig|null,
+     *     Error?: ImageConfigError|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $resourceArn
  * @property string $statementId
- * @property string $expectedRevisionId
+ * @property string|null $expectedRevisionId
  */
 class DeleteResourcePolicyStatementRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteResourcePolicyStatementRequest extends Request
      * @param array{
      *     resourceArn: string,
      *     statementId: string,
-     *     expectedRevisionId?: string
+     *     expectedRevisionId?: string|null
      * } $args
      */
     public function __construct(array $args)

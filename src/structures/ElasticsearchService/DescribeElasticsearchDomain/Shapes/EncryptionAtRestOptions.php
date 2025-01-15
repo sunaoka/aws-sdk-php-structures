@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DescribeElasticsearchDomai
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property string $KmsKeyId
+ * @property bool|null $Enabled
+ * @property string|null $KmsKeyId
  */
 class EncryptionAtRestOptions extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     KmsKeyId?: string
+     *     Enabled?: bool|null,
+     *     KmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

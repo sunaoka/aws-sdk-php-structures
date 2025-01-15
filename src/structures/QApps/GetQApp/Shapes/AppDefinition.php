@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $appDefinitionVersion
  * @property list<Card> $cards
- * @property bool $canEdit
+ * @property bool|null $canEdit
  */
 class AppDefinition extends Shape
 {
@@ -15,7 +15,7 @@ class AppDefinition extends Shape
      * @param array{
      *     appDefinitionVersion: string,
      *     cards: list<Card>,
-     *     canEdit?: bool
+     *     canEdit?: bool|null
      * } $args
      */
     public function __construct(array $args)

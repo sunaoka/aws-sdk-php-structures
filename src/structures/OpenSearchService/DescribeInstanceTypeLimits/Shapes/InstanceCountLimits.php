@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeInstanceTypeLimits\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $MinimumInstanceCount
- * @property int $MaximumInstanceCount
+ * @property int|null $MinimumInstanceCount
+ * @property int|null $MaximumInstanceCount
  */
 class InstanceCountLimits extends Shape
 {
     /**
      * @param array{
-     *     MinimumInstanceCount?: int,
-     *     MaximumInstanceCount?: int
+     *     MinimumInstanceCount?: int|null,
+     *     MaximumInstanceCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkforceName
- * @property Shapes\SourceIpConfig $SourceIpConfig
- * @property Shapes\OidcConfig $OidcConfig
- * @property Shapes\WorkforceVpcConfigRequest $WorkforceVpcConfig
+ * @property Shapes\SourceIpConfig|null $SourceIpConfig
+ * @property Shapes\OidcConfig|null $OidcConfig
+ * @property Shapes\WorkforceVpcConfigRequest|null $WorkforceVpcConfig
  */
 class UpdateWorkforceRequest extends Request
 {
     /**
      * @param array{
      *     WorkforceName: string,
-     *     SourceIpConfig?: Shapes\SourceIpConfig,
-     *     OidcConfig?: Shapes\OidcConfig,
-     *     WorkforceVpcConfig?: Shapes\WorkforceVpcConfigRequest
+     *     SourceIpConfig?: Shapes\SourceIpConfig|null,
+     *     OidcConfig?: Shapes\OidcConfig|null,
+     *     WorkforceVpcConfig?: Shapes\WorkforceVpcConfigRequest|null
      * } $args
      */
     public function __construct(array $args)

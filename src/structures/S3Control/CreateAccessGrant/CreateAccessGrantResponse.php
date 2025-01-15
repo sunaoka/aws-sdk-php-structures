@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Control\CreateAccessGrant;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $AccessGrantId
- * @property string $AccessGrantArn
- * @property Shapes\Grantee $Grantee
- * @property string $AccessGrantsLocationId
- * @property Shapes\AccessGrantsLocationConfiguration $AccessGrantsLocationConfiguration
- * @property 'READ'|'WRITE'|'READWRITE' $Permission
- * @property string $ApplicationArn
- * @property string $GrantScope
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $AccessGrantId
+ * @property string|null $AccessGrantArn
+ * @property Shapes\Grantee|null $Grantee
+ * @property string|null $AccessGrantsLocationId
+ * @property Shapes\AccessGrantsLocationConfiguration|null $AccessGrantsLocationConfiguration
+ * @property 'READ'|'WRITE'|'READWRITE'|null $Permission
+ * @property string|null $ApplicationArn
+ * @property string|null $GrantScope
  */
 class CreateAccessGrantResponse extends Response
 {

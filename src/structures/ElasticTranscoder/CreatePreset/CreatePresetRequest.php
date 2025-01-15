@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property string $Container
- * @property Shapes\VideoParameters $Video
- * @property Shapes\AudioParameters $Audio
- * @property Shapes\Thumbnails $Thumbnails
+ * @property Shapes\VideoParameters|null $Video
+ * @property Shapes\AudioParameters|null $Audio
+ * @property Shapes\Thumbnails|null $Thumbnails
  */
 class CreatePresetRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Container: string,
-     *     Video?: Shapes\VideoParameters,
-     *     Audio?: Shapes\AudioParameters,
-     *     Thumbnails?: Shapes\Thumbnails
+     *     Video?: Shapes\VideoParameters|null,
+     *     Audio?: Shapes\AudioParameters|null,
+     *     Thumbnails?: Shapes\Thumbnails|null
      * } $args
      */
     public function __construct(array $args)

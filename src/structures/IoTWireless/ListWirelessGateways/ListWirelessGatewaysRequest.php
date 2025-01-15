@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTWireless\ListWirelessGateways;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<0, 250> $MaxResults
+ * @property string|null $NextToken
+ * @property int<0, 250>|null $MaxResults
  */
 class ListWirelessGatewaysRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 250>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 250>|null
      * } $args
      */
     public function __construct(array $args = [])

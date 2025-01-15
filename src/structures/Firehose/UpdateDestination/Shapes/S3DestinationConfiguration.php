@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $RoleARN
  * @property string $BucketARN
- * @property string $Prefix
- * @property string $ErrorOutputPrefix
- * @property BufferingHints $BufferingHints
- * @property 'UNCOMPRESSED'|'GZIP'|'ZIP'|'Snappy'|'HADOOP_SNAPPY' $CompressionFormat
- * @property EncryptionConfiguration $EncryptionConfiguration
- * @property CloudWatchLoggingOptions $CloudWatchLoggingOptions
+ * @property string|null $Prefix
+ * @property string|null $ErrorOutputPrefix
+ * @property BufferingHints|null $BufferingHints
+ * @property 'UNCOMPRESSED'|'GZIP'|'ZIP'|'Snappy'|'HADOOP_SNAPPY'|null $CompressionFormat
+ * @property EncryptionConfiguration|null $EncryptionConfiguration
+ * @property CloudWatchLoggingOptions|null $CloudWatchLoggingOptions
  */
 class S3DestinationConfiguration extends Shape
 {
@@ -20,12 +20,12 @@ class S3DestinationConfiguration extends Shape
      * @param array{
      *     RoleARN: string,
      *     BucketARN: string,
-     *     Prefix?: string,
-     *     ErrorOutputPrefix?: string,
-     *     BufferingHints?: BufferingHints,
-     *     CompressionFormat?: 'UNCOMPRESSED'|'GZIP'|'ZIP'|'Snappy'|'HADOOP_SNAPPY',
-     *     EncryptionConfiguration?: EncryptionConfiguration,
-     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions
+     *     Prefix?: string|null,
+     *     ErrorOutputPrefix?: string|null,
+     *     BufferingHints?: BufferingHints|null,
+     *     CompressionFormat?: 'UNCOMPRESSED'|'GZIP'|'ZIP'|'Snappy'|'HADOOP_SNAPPY'|null,
+     *     EncryptionConfiguration?: EncryptionConfiguration|null,
+     *     CloudWatchLoggingOptions?: CloudWatchLoggingOptions|null
      * } $args
      */
     public function __construct(array $args)

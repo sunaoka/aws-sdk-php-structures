@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\XRay\UpdateGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $InsightsEnabled
- * @property bool $NotificationsEnabled
+ * @property bool|null $InsightsEnabled
+ * @property bool|null $NotificationsEnabled
  */
 class InsightsConfiguration extends Shape
 {
     /**
      * @param array{
-     *     InsightsEnabled?: bool,
-     *     NotificationsEnabled?: bool
+     *     InsightsEnabled?: bool|null,
+     *     NotificationsEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

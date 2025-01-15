@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppFabric\GetIngestionDestination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AuditLogDestinationConfiguration $auditLog
+ * @property AuditLogDestinationConfiguration|null $auditLog
  */
 class DestinationConfiguration extends Shape
 {
     /**
-     * @param array{auditLog?: AuditLogDestinationConfiguration} $args
+     * @param array{auditLog?: AuditLogDestinationConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

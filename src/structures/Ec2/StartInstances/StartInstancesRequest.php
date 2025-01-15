@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $InstanceIds
- * @property string $AdditionalInfo
- * @property bool $DryRun
+ * @property string|null $AdditionalInfo
+ * @property bool|null $DryRun
  */
 class StartInstancesRequest extends Request
 {
     /**
      * @param array{
      *     InstanceIds: list<string>,
-     *     AdditionalInfo?: string,
-     *     DryRun?: bool
+     *     AdditionalInfo?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

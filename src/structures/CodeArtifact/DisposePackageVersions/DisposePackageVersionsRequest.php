@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
+ * @property string|null $domainOwner
  * @property string $repository
  * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo' $format
- * @property string $namespace
+ * @property string|null $namespace
  * @property string $package
  * @property list<string> $versions
- * @property array<string, string> $versionRevisions
- * @property 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted' $expectedStatus
+ * @property array<string, string>|null $versionRevisions
+ * @property 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted'|null $expectedStatus
  */
 class DisposePackageVersionsRequest extends Request
 {
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string,
+     *     domainOwner?: string|null,
      *     repository: string,
      *     format: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo',
-     *     namespace?: string,
+     *     namespace?: string|null,
      *     package: string,
      *     versions: list<string>,
-     *     versionRevisions?: array<string, string>,
-     *     expectedStatus?: 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted'
+     *     versionRevisions?: array<string, string>|null,
+     *     expectedStatus?: 'Published'|'Unfinished'|'Unlisted'|'Archived'|'Disposed'|'Deleted'|null
      * } $args
      */
     public function __construct(array $args)

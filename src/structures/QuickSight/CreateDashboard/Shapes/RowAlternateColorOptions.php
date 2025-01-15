@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $Status
- * @property list<string> $RowAlternateColors
- * @property 'ENABLED'|'DISABLED' $UsePrimaryBackgroundColor
+ * @property 'ENABLED'|'DISABLED'|null $Status
+ * @property list<string>|null $RowAlternateColors
+ * @property 'ENABLED'|'DISABLED'|null $UsePrimaryBackgroundColor
  */
 class RowAlternateColorOptions extends Shape
 {
     /**
      * @param array{
-     *     Status?: 'ENABLED'|'DISABLED',
-     *     RowAlternateColors?: list<string>,
-     *     UsePrimaryBackgroundColor?: 'ENABLED'|'DISABLED'
+     *     Status?: 'ENABLED'|'DISABLED'|null,
+     *     RowAlternateColors?: list<string>|null,
+     *     UsePrimaryBackgroundColor?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

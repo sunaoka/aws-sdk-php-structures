@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeClusterNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ClusterEbsVolumeConfig $EbsVolumeConfig
+ * @property ClusterEbsVolumeConfig|null $EbsVolumeConfig
  */
 class ClusterInstanceStorageConfig extends Shape
 {
     /**
-     * @param array{EbsVolumeConfig?: ClusterEbsVolumeConfig} $args
+     * @param array{EbsVolumeConfig?: ClusterEbsVolumeConfig|null} $args
      */
     public function __construct(array $args = [])
     {

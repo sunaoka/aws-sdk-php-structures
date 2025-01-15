@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $name
  * @property string $clientToken
  * @property Shapes\JobTemplateData $jobTemplateData
- * @property array<string, string> $tags
- * @property string $kmsKeyArn
+ * @property array<string, string>|null $tags
+ * @property string|null $kmsKeyArn
  */
 class CreateJobTemplateRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateJobTemplateRequest extends Request
      *     name: string,
      *     clientToken: string,
      *     jobTemplateData: Shapes\JobTemplateData,
-     *     tags?: array<string, string>,
-     *     kmsKeyArn?: string
+     *     tags?: array<string, string>|null,
+     *     kmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

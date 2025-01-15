@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 3600000> $CaptureInterval
- * @property 'MILLISECONDS'|'SECONDS' $CaptureIntervalUnits
- * @property TimecodeBurninSettings $TimecodeBurninSettings
+ * @property int<1, 3600000>|null $CaptureInterval
+ * @property 'MILLISECONDS'|'SECONDS'|null $CaptureIntervalUnits
+ * @property TimecodeBurninSettings|null $TimecodeBurninSettings
  */
 class FrameCaptureSettings extends Shape
 {
     /**
      * @param array{
-     *     CaptureInterval?: int<1, 3600000>,
-     *     CaptureIntervalUnits?: 'MILLISECONDS'|'SECONDS',
-     *     TimecodeBurninSettings?: TimecodeBurninSettings
+     *     CaptureInterval?: int<1, 3600000>|null,
+     *     CaptureIntervalUnits?: 'MILLISECONDS'|'SECONDS'|null,
+     *     TimecodeBurninSettings?: TimecodeBurninSettings|null
      * } $args
      */
     public function __construct(array $args = [])

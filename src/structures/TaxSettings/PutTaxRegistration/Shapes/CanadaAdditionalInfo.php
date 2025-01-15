@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\TaxSettings\PutTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $canadaQuebecSalesTaxNumber
- * @property string $canadaRetailSalesTaxNumber
- * @property bool $isResellerAccount
- * @property string $provincialSalesTaxId
+ * @property string|null $canadaQuebecSalesTaxNumber
+ * @property string|null $canadaRetailSalesTaxNumber
+ * @property bool|null $isResellerAccount
+ * @property string|null $provincialSalesTaxId
  */
 class CanadaAdditionalInfo extends Shape
 {
     /**
      * @param array{
-     *     canadaQuebecSalesTaxNumber?: string,
-     *     canadaRetailSalesTaxNumber?: string,
-     *     isResellerAccount?: bool,
-     *     provincialSalesTaxId?: string
+     *     canadaQuebecSalesTaxNumber?: string|null,
+     *     canadaRetailSalesTaxNumber?: string|null,
+     *     isResellerAccount?: bool|null,
+     *     provincialSalesTaxId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

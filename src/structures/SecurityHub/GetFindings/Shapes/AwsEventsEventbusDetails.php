@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Name
- * @property string $Policy
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property string|null $Policy
  */
 class AwsEventsEventbusDetails extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Name?: string,
-     *     Policy?: string
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     Policy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

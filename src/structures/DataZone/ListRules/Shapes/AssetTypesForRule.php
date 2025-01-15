@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ALL'|'SPECIFIC' $selectionMode
- * @property list<string> $specificAssetTypes
+ * @property list<string>|null $specificAssetTypes
  */
 class AssetTypesForRule extends Shape
 {
     /**
      * @param array{
      *     selectionMode: 'ALL'|'SPECIFIC',
-     *     specificAssetTypes?: list<string>
+     *     specificAssetTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

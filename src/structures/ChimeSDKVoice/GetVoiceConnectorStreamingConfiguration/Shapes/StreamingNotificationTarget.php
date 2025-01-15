@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\GetVoiceConnectorStreamingConfigu
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EventBridge'|'SNS'|'SQS' $NotificationTarget
+ * @property 'EventBridge'|'SNS'|'SQS'|null $NotificationTarget
  */
 class StreamingNotificationTarget extends Shape
 {
     /**
-     * @param array{NotificationTarget?: 'EventBridge'|'SNS'|'SQS'} $args
+     * @param array{NotificationTarget?: 'EventBridge'|'SNS'|'SQS'|null} $args
      */
     public function __construct(array $args = [])
     {

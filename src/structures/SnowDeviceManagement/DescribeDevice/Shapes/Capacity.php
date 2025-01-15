@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SnowDeviceManagement\DescribeDevice\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $available
- * @property string $name
- * @property int $total
- * @property string $unit
- * @property int $used
+ * @property int|null $available
+ * @property string|null $name
+ * @property int|null $total
+ * @property string|null $unit
+ * @property int|null $used
  */
 class Capacity extends Shape
 {
     /**
      * @param array{
-     *     available?: int,
-     *     name?: string,
-     *     total?: int,
-     *     unit?: string,
-     *     used?: int
+     *     available?: int|null,
+     *     name?: string|null,
+     *     total?: int|null,
+     *     unit?: string|null,
+     *     used?: int|null
      * } $args
      */
     public function __construct(array $args = [])

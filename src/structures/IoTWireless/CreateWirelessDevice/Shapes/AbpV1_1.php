@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTWireless\CreateWirelessDevice\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DevAddr
- * @property SessionKeysAbpV1_1 $SessionKeys
- * @property int<0, 65535> $FCntStart
+ * @property string|null $DevAddr
+ * @property SessionKeysAbpV1_1|null $SessionKeys
+ * @property int<0, 65535>|null $FCntStart
  */
 class AbpV1_1 extends Shape
 {
     /**
      * @param array{
-     *     DevAddr?: string,
-     *     SessionKeys?: SessionKeysAbpV1_1,
-     *     FCntStart?: int<0, 65535>
+     *     DevAddr?: string|null,
+     *     SessionKeys?: SessionKeysAbpV1_1|null,
+     *     FCntStart?: int<0, 65535>|null
      * } $args
      */
     public function __construct(array $args = [])

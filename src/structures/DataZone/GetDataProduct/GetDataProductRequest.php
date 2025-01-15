@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domainIdentifier
  * @property string $identifier
- * @property string $revision
+ * @property string|null $revision
  */
 class GetDataProductRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetDataProductRequest extends Request
      * @param array{
      *     domainIdentifier: string,
      *     identifier: string,
-     *     revision?: string
+     *     revision?: string|null
      * } $args
      */
     public function __construct(array $args)

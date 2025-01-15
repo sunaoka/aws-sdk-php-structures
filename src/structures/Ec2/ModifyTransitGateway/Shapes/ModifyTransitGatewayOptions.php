@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyTransitGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $AddTransitGatewayCidrBlocks
- * @property list<string> $RemoveTransitGatewayCidrBlocks
- * @property 'enable'|'disable' $VpnEcmpSupport
- * @property 'enable'|'disable' $DnsSupport
- * @property 'enable'|'disable' $SecurityGroupReferencingSupport
- * @property 'enable'|'disable' $AutoAcceptSharedAttachments
- * @property 'enable'|'disable' $DefaultRouteTableAssociation
- * @property string $AssociationDefaultRouteTableId
- * @property 'enable'|'disable' $DefaultRouteTablePropagation
- * @property string $PropagationDefaultRouteTableId
- * @property int $AmazonSideAsn
+ * @property list<string>|null $AddTransitGatewayCidrBlocks
+ * @property list<string>|null $RemoveTransitGatewayCidrBlocks
+ * @property 'enable'|'disable'|null $VpnEcmpSupport
+ * @property 'enable'|'disable'|null $DnsSupport
+ * @property 'enable'|'disable'|null $SecurityGroupReferencingSupport
+ * @property 'enable'|'disable'|null $AutoAcceptSharedAttachments
+ * @property 'enable'|'disable'|null $DefaultRouteTableAssociation
+ * @property string|null $AssociationDefaultRouteTableId
+ * @property 'enable'|'disable'|null $DefaultRouteTablePropagation
+ * @property string|null $PropagationDefaultRouteTableId
+ * @property int|null $AmazonSideAsn
  */
 class ModifyTransitGatewayOptions extends Shape
 {
     /**
      * @param array{
-     *     AddTransitGatewayCidrBlocks?: list<string>,
-     *     RemoveTransitGatewayCidrBlocks?: list<string>,
-     *     VpnEcmpSupport?: 'enable'|'disable',
-     *     DnsSupport?: 'enable'|'disable',
-     *     SecurityGroupReferencingSupport?: 'enable'|'disable',
-     *     AutoAcceptSharedAttachments?: 'enable'|'disable',
-     *     DefaultRouteTableAssociation?: 'enable'|'disable',
-     *     AssociationDefaultRouteTableId?: string,
-     *     DefaultRouteTablePropagation?: 'enable'|'disable',
-     *     PropagationDefaultRouteTableId?: string,
-     *     AmazonSideAsn?: int
+     *     AddTransitGatewayCidrBlocks?: list<string>|null,
+     *     RemoveTransitGatewayCidrBlocks?: list<string>|null,
+     *     VpnEcmpSupport?: 'enable'|'disable'|null,
+     *     DnsSupport?: 'enable'|'disable'|null,
+     *     SecurityGroupReferencingSupport?: 'enable'|'disable'|null,
+     *     AutoAcceptSharedAttachments?: 'enable'|'disable'|null,
+     *     DefaultRouteTableAssociation?: 'enable'|'disable'|null,
+     *     AssociationDefaultRouteTableId?: string|null,
+     *     DefaultRouteTablePropagation?: 'enable'|'disable'|null,
+     *     PropagationDefaultRouteTableId?: string|null,
+     *     AmazonSideAsn?: int|null
      * } $args
      */
     public function __construct(array $args = [])

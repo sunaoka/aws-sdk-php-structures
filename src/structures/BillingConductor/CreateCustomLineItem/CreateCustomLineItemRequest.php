@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\BillingConductor\CreateCustomLineItem;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $Name
  * @property string $Description
  * @property string $BillingGroupArn
- * @property Shapes\CustomLineItemBillingPeriodRange $BillingPeriodRange
- * @property array<string, string> $Tags
+ * @property Shapes\CustomLineItemBillingPeriodRange|null $BillingPeriodRange
+ * @property array<string, string>|null $Tags
  * @property Shapes\CustomLineItemChargeDetails $ChargeDetails
- * @property string $AccountId
+ * @property string|null $AccountId
  */
 class CreateCustomLineItemRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     Name: string,
      *     Description: string,
      *     BillingGroupArn: string,
-     *     BillingPeriodRange?: Shapes\CustomLineItemBillingPeriodRange,
-     *     Tags?: array<string, string>,
+     *     BillingPeriodRange?: Shapes\CustomLineItemBillingPeriodRange|null,
+     *     Tags?: array<string, string>|null,
      *     ChargeDetails: Shapes\CustomLineItemChargeDetails,
-     *     AccountId?: string
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

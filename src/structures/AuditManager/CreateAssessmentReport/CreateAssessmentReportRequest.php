@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $assessmentId
- * @property string $queryStatement
+ * @property string|null $queryStatement
  */
 class CreateAssessmentReportRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     assessmentId: string,
-     *     queryStatement?: string
+     *     queryStatement?: string|null
      * } $args
      */
     public function __construct(array $args)

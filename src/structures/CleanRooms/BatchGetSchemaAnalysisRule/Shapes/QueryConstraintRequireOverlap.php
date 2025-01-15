@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CleanRooms\BatchGetSchemaAnalysisRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $columns
+ * @property list<string>|null $columns
  */
 class QueryConstraintRequireOverlap extends Shape
 {
     /**
-     * @param array{columns?: list<string>} $args
+     * @param array{columns?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

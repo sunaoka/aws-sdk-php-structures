@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\QBusiness\ListApplications\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $displayName
- * @property string $applicationId
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING' $status
- * @property 'AWS_IAM_IDP_SAML'|'AWS_IAM_IDP_OIDC'|'AWS_IAM_IDC'|'AWS_QUICKSIGHT_IDP' $identityType
- * @property QuickSightConfiguration $quickSightConfiguration
+ * @property string|null $displayName
+ * @property string|null $applicationId
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING'|null $status
+ * @property 'AWS_IAM_IDP_SAML'|'AWS_IAM_IDP_OIDC'|'AWS_IAM_IDC'|'AWS_QUICKSIGHT_IDP'|null $identityType
+ * @property QuickSightConfiguration|null $quickSightConfiguration
  */
 class Application extends Shape
 {
     /**
      * @param array{
-     *     displayName?: string,
-     *     applicationId?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult,
-     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING',
-     *     identityType?: 'AWS_IAM_IDP_SAML'|'AWS_IAM_IDP_OIDC'|'AWS_IAM_IDC'|'AWS_QUICKSIGHT_IDP',
-     *     quickSightConfiguration?: QuickSightConfiguration
+     *     displayName?: string|null,
+     *     applicationId?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|'UPDATING'|null,
+     *     identityType?: 'AWS_IAM_IDP_SAML'|'AWS_IAM_IDP_OIDC'|'AWS_IAM_IDC'|'AWS_QUICKSIGHT_IDP'|null,
+     *     quickSightConfiguration?: QuickSightConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

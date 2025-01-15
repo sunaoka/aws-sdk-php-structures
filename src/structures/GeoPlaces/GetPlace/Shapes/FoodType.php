@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $LocalizedName
- * @property string $Id
- * @property bool $Primary
+ * @property string|null $Id
+ * @property bool|null $Primary
  */
 class FoodType extends Shape
 {
     /**
      * @param array{
      *     LocalizedName: string,
-     *     Id?: string,
-     *     Primary?: bool
+     *     Id?: string|null,
+     *     Primary?: bool|null
      * } $args
      */
     public function __construct(array $args)

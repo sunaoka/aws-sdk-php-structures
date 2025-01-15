@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<DashManifest> $DashManifests
- * @property DashEncryption $Encryption
- * @property bool $IncludeEncoderConfigurationInSegments
- * @property bool $IncludeIframeOnlyStream
- * @property list<'ADS'> $PeriodTriggers
- * @property int $SegmentDurationSeconds
- * @property 'NUMBER_WITH_TIMELINE'|'TIME_WITH_TIMELINE'|'NUMBER_WITH_DURATION' $SegmentTemplateFormat
+ * @property DashEncryption|null $Encryption
+ * @property bool|null $IncludeEncoderConfigurationInSegments
+ * @property bool|null $IncludeIframeOnlyStream
+ * @property list<'ADS'>|null $PeriodTriggers
+ * @property int|null $SegmentDurationSeconds
+ * @property 'NUMBER_WITH_TIMELINE'|'TIME_WITH_TIMELINE'|'NUMBER_WITH_DURATION'|null $SegmentTemplateFormat
  */
 class DashPackage extends Shape
 {
     /**
      * @param array{
      *     DashManifests: list<DashManifest>,
-     *     Encryption?: DashEncryption,
-     *     IncludeEncoderConfigurationInSegments?: bool,
-     *     IncludeIframeOnlyStream?: bool,
-     *     PeriodTriggers?: list<'ADS'>,
-     *     SegmentDurationSeconds?: int,
-     *     SegmentTemplateFormat?: 'NUMBER_WITH_TIMELINE'|'TIME_WITH_TIMELINE'|'NUMBER_WITH_DURATION'
+     *     Encryption?: DashEncryption|null,
+     *     IncludeEncoderConfigurationInSegments?: bool|null,
+     *     IncludeIframeOnlyStream?: bool|null,
+     *     PeriodTriggers?: list<'ADS'>|null,
+     *     SegmentDurationSeconds?: int|null,
+     *     SegmentTemplateFormat?: 'NUMBER_WITH_TIMELINE'|'TIME_WITH_TIMELINE'|'NUMBER_WITH_DURATION'|null
      * } $args
      */
     public function __construct(array $args)

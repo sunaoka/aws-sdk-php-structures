@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\EnabledBaselineSummary> $enabledBaselines
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListEnabledBaselinesResponse extends Response
 {

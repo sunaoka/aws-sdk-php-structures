@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CloudWatch\ListMetrics;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Namespace
- * @property string $MetricName
- * @property list<Shapes\DimensionFilter> $Dimensions
- * @property string $NextToken
- * @property 'PT3H' $RecentlyActive
- * @property bool $IncludeLinkedAccounts
- * @property string $OwningAccount
+ * @property string|null $Namespace
+ * @property string|null $MetricName
+ * @property list<Shapes\DimensionFilter>|null $Dimensions
+ * @property string|null $NextToken
+ * @property 'PT3H'|null $RecentlyActive
+ * @property bool|null $IncludeLinkedAccounts
+ * @property string|null $OwningAccount
  */
 class ListMetricsRequest extends Request
 {
     /**
      * @param array{
-     *     Namespace?: string,
-     *     MetricName?: string,
-     *     Dimensions?: list<Shapes\DimensionFilter>,
-     *     NextToken?: string,
-     *     RecentlyActive?: 'PT3H',
-     *     IncludeLinkedAccounts?: bool,
-     *     OwningAccount?: string
+     *     Namespace?: string|null,
+     *     MetricName?: string|null,
+     *     Dimensions?: list<Shapes\DimensionFilter>|null,
+     *     NextToken?: string|null,
+     *     RecentlyActive?: 'PT3H'|null,
+     *     IncludeLinkedAccounts?: bool|null,
+     *     OwningAccount?: string|null
      * } $args
      */
     public function __construct(array $args = [])

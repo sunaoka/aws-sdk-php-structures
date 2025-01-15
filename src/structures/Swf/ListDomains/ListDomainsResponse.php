@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DomainInfo> $domainInfos
- * @property string $nextPageToken
+ * @property string|null $nextPageToken
  */
 class ListDomainsResponse extends Response
 {

@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\mgn\UpdateLaunchConfigurationTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $associatePublicIpAddress
- * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE' $bootMode
- * @property bool $copyPrivateIp
- * @property bool $copyTags
- * @property bool $enableMapAutoTagging
- * @property Shapes\LaunchTemplateDiskConf $largeVolumeConf
+ * @property bool|null $associatePublicIpAddress
+ * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null $bootMode
+ * @property bool|null $copyPrivateIp
+ * @property bool|null $copyTags
+ * @property bool|null $enableMapAutoTagging
+ * @property Shapes\LaunchTemplateDiskConf|null $largeVolumeConf
  * @property string $launchConfigurationTemplateID
- * @property 'STOPPED'|'STARTED' $launchDisposition
- * @property Shapes\Licensing $licensing
- * @property string $mapAutoTaggingMpeID
- * @property Shapes\PostLaunchActions $postLaunchActions
- * @property Shapes\LaunchTemplateDiskConf $smallVolumeConf
- * @property int<0, max> $smallVolumeMaxSize
- * @property 'NONE'|'BASIC' $targetInstanceTypeRightSizingMethod
+ * @property 'STOPPED'|'STARTED'|null $launchDisposition
+ * @property Shapes\Licensing|null $licensing
+ * @property string|null $mapAutoTaggingMpeID
+ * @property Shapes\PostLaunchActions|null $postLaunchActions
+ * @property Shapes\LaunchTemplateDiskConf|null $smallVolumeConf
+ * @property int<0, max>|null $smallVolumeMaxSize
+ * @property 'NONE'|'BASIC'|null $targetInstanceTypeRightSizingMethod
  */
 class UpdateLaunchConfigurationTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     associatePublicIpAddress?: bool,
-     *     bootMode?: 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE',
-     *     copyPrivateIp?: bool,
-     *     copyTags?: bool,
-     *     enableMapAutoTagging?: bool,
-     *     largeVolumeConf?: Shapes\LaunchTemplateDiskConf,
+     *     associatePublicIpAddress?: bool|null,
+     *     bootMode?: 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null,
+     *     copyPrivateIp?: bool|null,
+     *     copyTags?: bool|null,
+     *     enableMapAutoTagging?: bool|null,
+     *     largeVolumeConf?: Shapes\LaunchTemplateDiskConf|null,
      *     launchConfigurationTemplateID: string,
-     *     launchDisposition?: 'STOPPED'|'STARTED',
-     *     licensing?: Shapes\Licensing,
-     *     mapAutoTaggingMpeID?: string,
-     *     postLaunchActions?: Shapes\PostLaunchActions,
-     *     smallVolumeConf?: Shapes\LaunchTemplateDiskConf,
-     *     smallVolumeMaxSize?: int<0, max>,
-     *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'
+     *     launchDisposition?: 'STOPPED'|'STARTED'|null,
+     *     licensing?: Shapes\Licensing|null,
+     *     mapAutoTaggingMpeID?: string|null,
+     *     postLaunchActions?: Shapes\PostLaunchActions|null,
+     *     smallVolumeConf?: Shapes\LaunchTemplateDiskConf|null,
+     *     smallVolumeMaxSize?: int<0, max>|null,
+     *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Sms\PutAppValidationConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Source $source
- * @property string $instanceId
- * @property 'SHELL_SCRIPT'|'POWERSHELL_SCRIPT' $scriptType
- * @property string $command
- * @property int<60, 28800> $executionTimeoutSeconds
- * @property string $outputS3BucketName
+ * @property Source|null $source
+ * @property string|null $instanceId
+ * @property 'SHELL_SCRIPT'|'POWERSHELL_SCRIPT'|null $scriptType
+ * @property string|null $command
+ * @property int<60, 28800>|null $executionTimeoutSeconds
+ * @property string|null $outputS3BucketName
  */
 class SSMValidationParameters extends Shape
 {
     /**
      * @param array{
-     *     source?: Source,
-     *     instanceId?: string,
-     *     scriptType?: 'SHELL_SCRIPT'|'POWERSHELL_SCRIPT',
-     *     command?: string,
-     *     executionTimeoutSeconds?: int<60, 28800>,
-     *     outputS3BucketName?: string
+     *     source?: Source|null,
+     *     instanceId?: string|null,
+     *     scriptType?: 'SHELL_SCRIPT'|'POWERSHELL_SCRIPT'|null,
+     *     command?: string|null,
+     *     executionTimeoutSeconds?: int<60, 28800>|null,
+     *     outputS3BucketName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

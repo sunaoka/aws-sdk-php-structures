@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Omics\GetShare\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $shareId
- * @property string $resourceArn
- * @property string $resourceId
- * @property string $principalSubscriber
- * @property string $ownerId
- * @property 'PENDING'|'ACTIVATING'|'ACTIVE'|'DELETING'|'DELETED'|'FAILED' $status
- * @property string $statusMessage
- * @property string $shareName
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $updateTime
+ * @property string|null $shareId
+ * @property string|null $resourceArn
+ * @property string|null $resourceId
+ * @property string|null $principalSubscriber
+ * @property string|null $ownerId
+ * @property 'PENDING'|'ACTIVATING'|'ACTIVE'|'DELETING'|'DELETED'|'FAILED'|null $status
+ * @property string|null $statusMessage
+ * @property string|null $shareName
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $updateTime
  */
 class ShareDetails extends Shape
 {
     /**
      * @param array{
-     *     shareId?: string,
-     *     resourceArn?: string,
-     *     resourceId?: string,
-     *     principalSubscriber?: string,
-     *     ownerId?: string,
-     *     status?: 'PENDING'|'ACTIVATING'|'ACTIVE'|'DELETING'|'DELETED'|'FAILED',
-     *     statusMessage?: string,
-     *     shareName?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     updateTime?: \Aws\Api\DateTimeResult
+     *     shareId?: string|null,
+     *     resourceArn?: string|null,
+     *     resourceId?: string|null,
+     *     principalSubscriber?: string|null,
+     *     ownerId?: string|null,
+     *     status?: 'PENDING'|'ACTIVATING'|'ACTIVE'|'DELETING'|'DELETED'|'FAILED'|null,
+     *     statusMessage?: string|null,
+     *     shareName?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     updateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

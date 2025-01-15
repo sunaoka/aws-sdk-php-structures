@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\GetUsageProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DefaultValue
- * @property list<string> $AllowedValues
- * @property string $MinValue
- * @property string $MaxValue
+ * @property string|null $DefaultValue
+ * @property list<string>|null $AllowedValues
+ * @property string|null $MinValue
+ * @property string|null $MaxValue
  */
 class ConfigurationObject extends Shape
 {
     /**
      * @param array{
-     *     DefaultValue?: string,
-     *     AllowedValues?: list<string>,
-     *     MinValue?: string,
-     *     MaxValue?: string
+     *     DefaultValue?: string|null,
+     *     AllowedValues?: list<string>|null,
+     *     MinValue?: string|null,
+     *     MaxValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

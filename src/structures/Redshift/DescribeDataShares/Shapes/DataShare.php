@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeDataShares\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DataShareArn
- * @property string $ProducerArn
- * @property bool $AllowPubliclyAccessibleConsumers
- * @property list<DataShareAssociation> $DataShareAssociations
- * @property string $ManagedBy
- * @property 'INTERNAL' $DataShareType
+ * @property string|null $DataShareArn
+ * @property string|null $ProducerArn
+ * @property bool|null $AllowPubliclyAccessibleConsumers
+ * @property list<DataShareAssociation>|null $DataShareAssociations
+ * @property string|null $ManagedBy
+ * @property 'INTERNAL'|null $DataShareType
  */
 class DataShare extends Shape
 {
     /**
      * @param array{
-     *     DataShareArn?: string,
-     *     ProducerArn?: string,
-     *     AllowPubliclyAccessibleConsumers?: bool,
-     *     DataShareAssociations?: list<DataShareAssociation>,
-     *     ManagedBy?: string,
-     *     DataShareType?: 'INTERNAL'
+     *     DataShareArn?: string|null,
+     *     ProducerArn?: string|null,
+     *     AllowPubliclyAccessibleConsumers?: bool|null,
+     *     DataShareAssociations?: list<DataShareAssociation>|null,
+     *     ManagedBy?: string|null,
+     *     DataShareType?: 'INTERNAL'|null
      * } $args
      */
     public function __construct(array $args = [])

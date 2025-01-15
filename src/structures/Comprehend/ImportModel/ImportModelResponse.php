@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Comprehend\ImportModel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ModelArn
+ * @property string|null $ModelArn
  */
 class ImportModelResponse extends Response
 {

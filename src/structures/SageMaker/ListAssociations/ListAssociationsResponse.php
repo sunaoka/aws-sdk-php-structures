@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListAssociations;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AssociationSummary> $AssociationSummaries
- * @property string $NextToken
+ * @property list<Shapes\AssociationSummary>|null $AssociationSummaries
+ * @property string|null $NextToken
  */
 class ListAssociationsResponse extends Response
 {

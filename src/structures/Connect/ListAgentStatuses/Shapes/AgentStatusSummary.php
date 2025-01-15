@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Connect\ListAgentStatuses\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
- * @property string $Name
- * @property 'ROUTABLE'|'CUSTOM'|'OFFLINE' $Type
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $LastModifiedRegion
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property 'ROUTABLE'|'CUSTOM'|'OFFLINE'|null $Type
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property string|null $LastModifiedRegion
  */
 class AgentStatusSummary extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string,
-     *     Name?: string,
-     *     Type?: 'ROUTABLE'|'CUSTOM'|'OFFLINE',
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedRegion?: string
+     *     Id?: string|null,
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     Type?: 'ROUTABLE'|'CUSTOM'|'OFFLINE'|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedRegion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

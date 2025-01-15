@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteEgressOnlyInternetGateway;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $EgressOnlyInternetGatewayId
  */
 class DeleteEgressOnlyInternetGatewayRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     EgressOnlyInternetGatewayId: string
      * } $args
      */

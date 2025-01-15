@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Iam\DeleteSigningCertificate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $UserName
+ * @property string|null $UserName
  * @property string $CertificateId
  */
 class DeleteSigningCertificateRequest extends Request
 {
     /**
      * @param array{
-     *     UserName?: string,
+     *     UserName?: string|null,
      *     CertificateId: string
      * } $args
      */

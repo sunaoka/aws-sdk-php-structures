@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $eventTypeVersion
  * @property string $sourceEventId
- * @property string $eventOriginRegion
+ * @property string|null $eventOriginRegion
  * @property string $relatedAccount
  * @property string $source
  * @property \Aws\Api\DateTimeResult $eventOccurrenceTime
@@ -20,7 +20,7 @@ class SourceEventMetadata extends Shape
      * @param array{
      *     eventTypeVersion: string,
      *     sourceEventId: string,
-     *     eventOriginRegion?: string,
+     *     eventOriginRegion?: string|null,
      *     relatedAccount: string,
      *     source: string,
      *     eventOccurrenceTime: \Aws\Api\DateTimeResult,

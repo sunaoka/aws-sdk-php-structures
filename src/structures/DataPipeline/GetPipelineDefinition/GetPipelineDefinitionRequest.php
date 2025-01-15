@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $pipelineId
- * @property string $version
+ * @property string|null $version
  */
 class GetPipelineDefinitionRequest extends Request
 {
     /**
      * @param array{
      *     pipelineId: string,
-     *     version?: string
+     *     version?: string|null
      * } $args
      */
     public function __construct(array $args)

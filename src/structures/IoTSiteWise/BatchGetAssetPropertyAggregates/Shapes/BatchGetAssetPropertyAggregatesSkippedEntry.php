@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $entryId
  * @property 'SUCCESS'|'ERROR' $completionStatus
- * @property BatchGetAssetPropertyAggregatesErrorInfo $errorInfo
+ * @property BatchGetAssetPropertyAggregatesErrorInfo|null $errorInfo
  */
 class BatchGetAssetPropertyAggregatesSkippedEntry extends Shape
 {
@@ -15,7 +15,7 @@ class BatchGetAssetPropertyAggregatesSkippedEntry extends Shape
      * @param array{
      *     entryId: string,
      *     completionStatus: 'SUCCESS'|'ERROR',
-     *     errorInfo?: BatchGetAssetPropertyAggregatesErrorInfo
+     *     errorInfo?: BatchGetAssetPropertyAggregatesErrorInfo|null
      * } $args
      */
     public function __construct(array $args)

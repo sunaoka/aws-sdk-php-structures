@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $OutputId
- * @property string $NameUpdate
- * @property KinesisStreamsOutputUpdate $KinesisStreamsOutputUpdate
- * @property KinesisFirehoseOutputUpdate $KinesisFirehoseOutputUpdate
- * @property LambdaOutputUpdate $LambdaOutputUpdate
- * @property DestinationSchema $DestinationSchemaUpdate
+ * @property string|null $NameUpdate
+ * @property KinesisStreamsOutputUpdate|null $KinesisStreamsOutputUpdate
+ * @property KinesisFirehoseOutputUpdate|null $KinesisFirehoseOutputUpdate
+ * @property LambdaOutputUpdate|null $LambdaOutputUpdate
+ * @property DestinationSchema|null $DestinationSchemaUpdate
  */
 class OutputUpdate extends Shape
 {
     /**
      * @param array{
      *     OutputId: string,
-     *     NameUpdate?: string,
-     *     KinesisStreamsOutputUpdate?: KinesisStreamsOutputUpdate,
-     *     KinesisFirehoseOutputUpdate?: KinesisFirehoseOutputUpdate,
-     *     LambdaOutputUpdate?: LambdaOutputUpdate,
-     *     DestinationSchemaUpdate?: DestinationSchema
+     *     NameUpdate?: string|null,
+     *     KinesisStreamsOutputUpdate?: KinesisStreamsOutputUpdate|null,
+     *     KinesisFirehoseOutputUpdate?: KinesisFirehoseOutputUpdate|null,
+     *     LambdaOutputUpdate?: LambdaOutputUpdate|null,
+     *     DestinationSchemaUpdate?: DestinationSchema|null
      * } $args
      */
     public function __construct(array $args)

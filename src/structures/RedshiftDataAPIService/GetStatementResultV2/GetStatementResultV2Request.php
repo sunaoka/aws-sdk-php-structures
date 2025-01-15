@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class GetStatementResultV2Request extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

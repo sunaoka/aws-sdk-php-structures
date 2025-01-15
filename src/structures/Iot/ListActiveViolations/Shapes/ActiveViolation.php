@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Iot\ListActiveViolations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $violationId
- * @property string $thingName
- * @property string $securityProfileName
- * @property Behavior $behavior
- * @property MetricValue $lastViolationValue
- * @property ViolationEventAdditionalInfo $violationEventAdditionalInfo
- * @property 'FALSE_POSITIVE'|'BENIGN_POSITIVE'|'TRUE_POSITIVE'|'UNKNOWN' $verificationState
- * @property string $verificationStateDescription
- * @property \Aws\Api\DateTimeResult $lastViolationTime
- * @property \Aws\Api\DateTimeResult $violationStartTime
+ * @property string|null $violationId
+ * @property string|null $thingName
+ * @property string|null $securityProfileName
+ * @property Behavior|null $behavior
+ * @property MetricValue|null $lastViolationValue
+ * @property ViolationEventAdditionalInfo|null $violationEventAdditionalInfo
+ * @property 'FALSE_POSITIVE'|'BENIGN_POSITIVE'|'TRUE_POSITIVE'|'UNKNOWN'|null $verificationState
+ * @property string|null $verificationStateDescription
+ * @property \Aws\Api\DateTimeResult|null $lastViolationTime
+ * @property \Aws\Api\DateTimeResult|null $violationStartTime
  */
 class ActiveViolation extends Shape
 {
     /**
      * @param array{
-     *     violationId?: string,
-     *     thingName?: string,
-     *     securityProfileName?: string,
-     *     behavior?: Behavior,
-     *     lastViolationValue?: MetricValue,
-     *     violationEventAdditionalInfo?: ViolationEventAdditionalInfo,
-     *     verificationState?: 'FALSE_POSITIVE'|'BENIGN_POSITIVE'|'TRUE_POSITIVE'|'UNKNOWN',
-     *     verificationStateDescription?: string,
-     *     lastViolationTime?: \Aws\Api\DateTimeResult,
-     *     violationStartTime?: \Aws\Api\DateTimeResult
+     *     violationId?: string|null,
+     *     thingName?: string|null,
+     *     securityProfileName?: string|null,
+     *     behavior?: Behavior|null,
+     *     lastViolationValue?: MetricValue|null,
+     *     violationEventAdditionalInfo?: ViolationEventAdditionalInfo|null,
+     *     verificationState?: 'FALSE_POSITIVE'|'BENIGN_POSITIVE'|'TRUE_POSITIVE'|'UNKNOWN'|null,
+     *     verificationStateDescription?: string|null,
+     *     lastViolationTime?: \Aws\Api\DateTimeResult|null,
+     *     violationStartTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

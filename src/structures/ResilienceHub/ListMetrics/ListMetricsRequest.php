@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\ListMetrics;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\Condition> $conditions
- * @property string $dataSource
- * @property list<Shapes\Field> $fields
- * @property int<1, 100> $maxResults
- * @property string $nextToken
- * @property list<Shapes\Sort> $sorts
+ * @property list<Shapes\Condition>|null $conditions
+ * @property string|null $dataSource
+ * @property list<Shapes\Field>|null $fields
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
+ * @property list<Shapes\Sort>|null $sorts
  */
 class ListMetricsRequest extends Request
 {
     /**
      * @param array{
-     *     conditions?: list<Shapes\Condition>,
-     *     dataSource?: string,
-     *     fields?: list<Shapes\Field>,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
-     *     sorts?: list<Shapes\Sort>
+     *     conditions?: list<Shapes\Condition>|null,
+     *     dataSource?: string|null,
+     *     fields?: list<Shapes\Field>|null,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
+     *     sorts?: list<Shapes\Sort>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AdminListUserAuthEvents
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'NoRisk'|'AccountTakeover'|'Block' $RiskDecision
- * @property 'Low'|'Medium'|'High' $RiskLevel
- * @property bool $CompromisedCredentialsDetected
+ * @property 'NoRisk'|'AccountTakeover'|'Block'|null $RiskDecision
+ * @property 'Low'|'Medium'|'High'|null $RiskLevel
+ * @property bool|null $CompromisedCredentialsDetected
  */
 class EventRiskType extends Shape
 {
     /**
      * @param array{
-     *     RiskDecision?: 'NoRisk'|'AccountTakeover'|'Block',
-     *     RiskLevel?: 'Low'|'Medium'|'High',
-     *     CompromisedCredentialsDetected?: bool
+     *     RiskDecision?: 'NoRisk'|'AccountTakeover'|'Block'|null,
+     *     RiskLevel?: 'Low'|'Medium'|'High'|null,
+     *     CompromisedCredentialsDetected?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

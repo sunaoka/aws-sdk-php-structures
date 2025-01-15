@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeTransformJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InputFilter
- * @property string $OutputFilter
- * @property 'Input'|'None' $JoinSource
+ * @property string|null $InputFilter
+ * @property string|null $OutputFilter
+ * @property 'Input'|'None'|null $JoinSource
  */
 class DataProcessing extends Shape
 {
     /**
      * @param array{
-     *     InputFilter?: string,
-     *     OutputFilter?: string,
-     *     JoinSource?: 'Input'|'None'
+     *     InputFilter?: string|null,
+     *     OutputFilter?: string|null,
+     *     JoinSource?: 'Input'|'None'|null
      * } $args
      */
     public function __construct(array $args = [])

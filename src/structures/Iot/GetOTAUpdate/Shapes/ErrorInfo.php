@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\GetOTAUpdate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $code
- * @property string $message
+ * @property string|null $code
+ * @property string|null $message
  */
 class ErrorInfo extends Shape
 {
     /**
      * @param array{
-     *     code?: string,
-     *     message?: string
+     *     code?: string|null,
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

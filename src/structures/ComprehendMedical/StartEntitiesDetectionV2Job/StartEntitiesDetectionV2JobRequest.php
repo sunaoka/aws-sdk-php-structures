@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\InputDataConfig $InputDataConfig
  * @property Shapes\OutputDataConfig $OutputDataConfig
  * @property string $DataAccessRoleArn
- * @property string $JobName
- * @property string $ClientRequestToken
- * @property string $KMSKey
+ * @property string|null $JobName
+ * @property string|null $ClientRequestToken
+ * @property string|null $KMSKey
  * @property 'en' $LanguageCode
  */
 class StartEntitiesDetectionV2JobRequest extends Request
@@ -20,9 +20,9 @@ class StartEntitiesDetectionV2JobRequest extends Request
      *     InputDataConfig: Shapes\InputDataConfig,
      *     OutputDataConfig: Shapes\OutputDataConfig,
      *     DataAccessRoleArn: string,
-     *     JobName?: string,
-     *     ClientRequestToken?: string,
-     *     KMSKey?: string,
+     *     JobName?: string|null,
+     *     ClientRequestToken?: string|null,
+     *     KMSKey?: string|null,
      *     LanguageCode: 'en'
      * } $args
      */

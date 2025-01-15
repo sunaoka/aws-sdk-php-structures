@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $appArn
  * @property string $appVersion
- * @property list<Shapes\EksSource> $eksSources
- * @property list<string> $sourceArns
+ * @property list<Shapes\EksSource>|null $eksSources
+ * @property list<string>|null $sourceArns
  * @property 'Pending'|'InProgress'|'Failed'|'Success' $status
- * @property list<Shapes\TerraformSource> $terraformSources
+ * @property list<Shapes\TerraformSource>|null $terraformSources
  */
 class ImportResourcesToDraftAppVersionResponse extends Response
 {

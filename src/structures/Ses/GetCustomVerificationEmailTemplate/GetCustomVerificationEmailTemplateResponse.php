@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ses\GetCustomVerificationEmailTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TemplateName
- * @property string $FromEmailAddress
- * @property string $TemplateSubject
- * @property string $TemplateContent
- * @property string $SuccessRedirectionURL
- * @property string $FailureRedirectionURL
+ * @property string|null $TemplateName
+ * @property string|null $FromEmailAddress
+ * @property string|null $TemplateSubject
+ * @property string|null $TemplateContent
+ * @property string|null $SuccessRedirectionURL
+ * @property string|null $FailureRedirectionURL
  */
 class GetCustomVerificationEmailTemplateResponse extends Response
 {

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Efs\DescribeTags;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
+ * @property string|null $Marker
  * @property list<Shapes\Tag> $Tags
- * @property string $NextMarker
+ * @property string|null $NextMarker
  */
 class DescribeTagsResponse extends Response
 {

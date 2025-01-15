@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetTransitGatewayPeering\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Peering $Peering
- * @property string $TransitGatewayArn
- * @property string $TransitGatewayPeeringAttachmentId
+ * @property Peering|null $Peering
+ * @property string|null $TransitGatewayArn
+ * @property string|null $TransitGatewayPeeringAttachmentId
  */
 class TransitGatewayPeering extends Shape
 {
     /**
      * @param array{
-     *     Peering?: Peering,
-     *     TransitGatewayArn?: string,
-     *     TransitGatewayPeeringAttachmentId?: string
+     *     Peering?: Peering|null,
+     *     TransitGatewayArn?: string|null,
+     *     TransitGatewayPeeringAttachmentId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

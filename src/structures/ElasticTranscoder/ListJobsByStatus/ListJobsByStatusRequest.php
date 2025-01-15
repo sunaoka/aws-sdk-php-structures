@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Status
- * @property string $Ascending
- * @property string $PageToken
+ * @property string|null $Ascending
+ * @property string|null $PageToken
  */
 class ListJobsByStatusRequest extends Request
 {
     /**
      * @param array{
      *     Status: string,
-     *     Ascending?: string,
-     *     PageToken?: string
+     *     Ascending?: string|null,
+     *     PageToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeWorkforce\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClientId
- * @property string $Issuer
- * @property string $AuthorizationEndpoint
- * @property string $TokenEndpoint
- * @property string $UserInfoEndpoint
- * @property string $LogoutEndpoint
- * @property string $JwksUri
- * @property string $Scope
- * @property array<string, string> $AuthenticationRequestExtraParams
+ * @property string|null $ClientId
+ * @property string|null $Issuer
+ * @property string|null $AuthorizationEndpoint
+ * @property string|null $TokenEndpoint
+ * @property string|null $UserInfoEndpoint
+ * @property string|null $LogoutEndpoint
+ * @property string|null $JwksUri
+ * @property string|null $Scope
+ * @property array<string, string>|null $AuthenticationRequestExtraParams
  */
 class OidcConfigForResponse extends Shape
 {
     /**
      * @param array{
-     *     ClientId?: string,
-     *     Issuer?: string,
-     *     AuthorizationEndpoint?: string,
-     *     TokenEndpoint?: string,
-     *     UserInfoEndpoint?: string,
-     *     LogoutEndpoint?: string,
-     *     JwksUri?: string,
-     *     Scope?: string,
-     *     AuthenticationRequestExtraParams?: array<string, string>
+     *     ClientId?: string|null,
+     *     Issuer?: string|null,
+     *     AuthorizationEndpoint?: string|null,
+     *     TokenEndpoint?: string|null,
+     *     UserInfoEndpoint?: string|null,
+     *     LogoutEndpoint?: string|null,
+     *     JwksUri?: string|null,
+     *     Scope?: string|null,
+     *     AuthenticationRequestExtraParams?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

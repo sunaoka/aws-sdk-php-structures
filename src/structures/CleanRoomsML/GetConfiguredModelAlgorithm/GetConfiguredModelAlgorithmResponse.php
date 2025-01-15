@@ -9,12 +9,12 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property string $configuredModelAlgorithmArn
  * @property string $name
- * @property Shapes\ContainerConfig $trainingContainerConfig
- * @property Shapes\InferenceContainerConfig $inferenceContainerConfig
+ * @property Shapes\ContainerConfig|null $trainingContainerConfig
+ * @property Shapes\InferenceContainerConfig|null $inferenceContainerConfig
  * @property string $roleArn
- * @property string $description
- * @property array<string, string> $tags
- * @property string $kmsKeyArn
+ * @property string|null $description
+ * @property array<string, string>|null $tags
+ * @property string|null $kmsKeyArn
  */
 class GetConfiguredModelAlgorithmResponse extends Response
 {

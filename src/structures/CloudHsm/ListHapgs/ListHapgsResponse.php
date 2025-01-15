@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<string> $HapgList
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListHapgsResponse extends Response
 {

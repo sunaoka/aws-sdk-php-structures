@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $PricingBucket
- * @property list<Shapes\SearchTextResultItem> $ResultItems
- * @property string $NextToken
+ * @property list<Shapes\SearchTextResultItem>|null $ResultItems
+ * @property string|null $NextToken
  */
 class SearchTextResponse extends Response
 {

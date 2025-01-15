@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LicenseManagerLinuxSubscriptions\ListLinuxSubsc
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property 'Equal'|'NotEqual'|'Contains' $Operator
- * @property list<string> $Values
+ * @property string|null $Name
+ * @property 'Equal'|'NotEqual'|'Contains'|null $Operator
+ * @property list<string>|null $Values
  */
 class Filter extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Operator?: 'Equal'|'NotEqual'|'Contains',
-     *     Values?: list<string>
+     *     Name?: string|null,
+     *     Operator?: 'Equal'|'NotEqual'|'Contains'|null,
+     *     Values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

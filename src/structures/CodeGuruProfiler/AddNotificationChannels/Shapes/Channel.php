@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<'AnomalyDetection'> $eventPublishers
- * @property string $id
+ * @property string|null $id
  * @property string $uri
  */
 class Channel extends Shape
@@ -14,7 +14,7 @@ class Channel extends Shape
     /**
      * @param array{
      *     eventPublishers: list<'AnomalyDetection'>,
-     *     id?: string,
+     *     id?: string|null,
      *     uri: string
      * } $args
      */

@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $ShortName
+ * @property string|null $ShortName
  * @property string $Password
- * @property string $Description
+ * @property string|null $Description
  * @property 'Small'|'Large' $Size
- * @property Shapes\DirectoryVpcSettings $VpcSettings
- * @property list<Shapes\Tag> $Tags
+ * @property Shapes\DirectoryVpcSettings|null $VpcSettings
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateDirectoryRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     ShortName?: string,
+     *     ShortName?: string|null,
      *     Password: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Size: 'Small'|'Large',
-     *     VpcSettings?: Shapes\DirectoryVpcSettings,
-     *     Tags?: list<Shapes\Tag>
+     *     VpcSettings?: Shapes\DirectoryVpcSettings|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

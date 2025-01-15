@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $text
- * @property string $url
+ * @property string|null $text
+ * @property string|null $url
  */
 class Recommendation extends Shape
 {
     /**
      * @param array{
-     *     text?: string,
-     *     url?: string
+     *     text?: string|null,
+     *     url?: string|null
      * } $args
      */
     public function __construct(array $args = [])

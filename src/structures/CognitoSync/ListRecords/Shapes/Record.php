@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CognitoSync\ListRecords\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property string $Value
- * @property int $SyncCount
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
- * @property string $LastModifiedBy
- * @property \Aws\Api\DateTimeResult $DeviceLastModifiedDate
+ * @property string|null $Key
+ * @property string|null $Value
+ * @property int|null $SyncCount
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
+ * @property string|null $LastModifiedBy
+ * @property \Aws\Api\DateTimeResult|null $DeviceLastModifiedDate
  */
 class Record extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     Value?: string,
-     *     SyncCount?: int,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     LastModifiedBy?: string,
-     *     DeviceLastModifiedDate?: \Aws\Api\DateTimeResult
+     *     Key?: string|null,
+     *     Value?: string|null,
+     *     SyncCount?: int|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedBy?: string|null,
+     *     DeviceLastModifiedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

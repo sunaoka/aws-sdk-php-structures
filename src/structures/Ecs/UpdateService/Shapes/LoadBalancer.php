@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ecs\UpdateService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $targetGroupArn
- * @property string $loadBalancerName
- * @property string $containerName
- * @property int $containerPort
+ * @property string|null $targetGroupArn
+ * @property string|null $loadBalancerName
+ * @property string|null $containerName
+ * @property int|null $containerPort
  */
 class LoadBalancer extends Shape
 {
     /**
      * @param array{
-     *     targetGroupArn?: string,
-     *     loadBalancerName?: string,
-     *     containerName?: string,
-     *     containerPort?: int
+     *     targetGroupArn?: string|null,
+     *     loadBalancerName?: string|null,
+     *     containerName?: string|null,
+     *     containerPort?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $KmsKeyId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class ModifyEbsDefaultKmsKeyIdRequest extends Request
 {
     /**
      * @param array{
      *     KmsKeyId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

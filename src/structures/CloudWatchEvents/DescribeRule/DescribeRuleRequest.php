@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $EventBusName
+ * @property string|null $EventBusName
  */
 class DescribeRuleRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     EventBusName?: string
+     *     EventBusName?: string|null
      * } $args
      */
     public function __construct(array $args)

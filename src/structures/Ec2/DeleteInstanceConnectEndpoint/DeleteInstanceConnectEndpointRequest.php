@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteInstanceConnectEndpoint;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $InstanceConnectEndpointId
  */
 class DeleteInstanceConnectEndpointRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     InstanceConnectEndpointId: string
      * } $args
      */

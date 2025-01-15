@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $sessionArn
- * @property 'VIDEO'|'LOG' $type
- * @property int<1, 1000> $maxResult
- * @property string $nextToken
+ * @property 'VIDEO'|'LOG'|null $type
+ * @property int<1, 1000>|null $maxResult
+ * @property string|null $nextToken
  */
 class ListTestGridSessionArtifactsRequest extends Request
 {
     /**
      * @param array{
      *     sessionArn: string,
-     *     type?: 'VIDEO'|'LOG',
-     *     maxResult?: int<1, 1000>,
-     *     nextToken?: string
+     *     type?: 'VIDEO'|'LOG'|null,
+     *     maxResult?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

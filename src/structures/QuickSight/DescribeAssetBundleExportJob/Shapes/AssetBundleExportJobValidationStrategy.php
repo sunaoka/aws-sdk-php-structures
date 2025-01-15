@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAssetBundleExportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $StrictModeForAllResources
+ * @property bool|null $StrictModeForAllResources
  */
 class AssetBundleExportJobValidationStrategy extends Shape
 {
     /**
-     * @param array{StrictModeForAllResources?: bool} $args
+     * @param array{StrictModeForAllResources?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

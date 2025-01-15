@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\GetAccessPreview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $kmsKeyId
- * @property string $secretPolicy
+ * @property string|null $kmsKeyId
+ * @property string|null $secretPolicy
  */
 class SecretsManagerSecretConfiguration extends Shape
 {
     /**
      * @param array{
-     *     kmsKeyId?: string,
-     *     secretPolicy?: string
+     *     kmsKeyId?: string|null,
+     *     secretPolicy?: string|null
      * } $args
      */
     public function __construct(array $args = [])

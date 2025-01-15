@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $resourceARN
- * @property string $nextToken
- * @property int<50, 50> $maxResults
+ * @property string|null $nextToken
+ * @property int<50, 50>|null $maxResults
  */
 class ListTagsForResourceRequest extends Request
 {
     /**
      * @param array{
      *     resourceARN: string,
-     *     nextToken?: string,
-     *     maxResults?: int<50, 50>
+     *     nextToken?: string|null,
+     *     maxResults?: int<50, 50>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IPV4Range
- * @property string $IPV6Range
- * @property string $PrefixListId
- * @property string $Protocol
- * @property int<0, 65535> $FromPort
- * @property int<0, 65535> $ToPort
+ * @property string|null $IPV4Range
+ * @property string|null $IPV6Range
+ * @property string|null $PrefixListId
+ * @property string|null $Protocol
+ * @property int<0, 65535>|null $FromPort
+ * @property int<0, 65535>|null $ToPort
  */
 class SecurityGroupRuleDescription extends Shape
 {
     /**
      * @param array{
-     *     IPV4Range?: string,
-     *     IPV6Range?: string,
-     *     PrefixListId?: string,
-     *     Protocol?: string,
-     *     FromPort?: int<0, 65535>,
-     *     ToPort?: int<0, 65535>
+     *     IPV4Range?: string|null,
+     *     IPV6Range?: string|null,
+     *     PrefixListId?: string|null,
+     *     Protocol?: string|null,
+     *     FromPort?: int<0, 65535>|null,
+     *     ToPort?: int<0, 65535>|null
      * } $args
      */
     public function __construct(array $args = [])

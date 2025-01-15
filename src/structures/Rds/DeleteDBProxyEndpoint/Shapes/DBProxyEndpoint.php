@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Rds\DeleteDBProxyEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBProxyEndpointName
- * @property string $DBProxyEndpointArn
- * @property string $DBProxyName
- * @property 'available'|'modifying'|'incompatible-network'|'insufficient-resource-limits'|'creating'|'deleting' $Status
- * @property string $VpcId
- * @property list<string> $VpcSecurityGroupIds
- * @property list<string> $VpcSubnetIds
- * @property string $Endpoint
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property 'READ_WRITE'|'READ_ONLY' $TargetRole
- * @property bool $IsDefault
+ * @property string|null $DBProxyEndpointName
+ * @property string|null $DBProxyEndpointArn
+ * @property string|null $DBProxyName
+ * @property 'available'|'modifying'|'incompatible-network'|'insufficient-resource-limits'|'creating'|'deleting'|null $Status
+ * @property string|null $VpcId
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property list<string>|null $VpcSubnetIds
+ * @property string|null $Endpoint
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property 'READ_WRITE'|'READ_ONLY'|null $TargetRole
+ * @property bool|null $IsDefault
  */
 class DBProxyEndpoint extends Shape
 {
     /**
      * @param array{
-     *     DBProxyEndpointName?: string,
-     *     DBProxyEndpointArn?: string,
-     *     DBProxyName?: string,
-     *     Status?: 'available'|'modifying'|'incompatible-network'|'insufficient-resource-limits'|'creating'|'deleting',
-     *     VpcId?: string,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     VpcSubnetIds?: list<string>,
-     *     Endpoint?: string,
-     *     CreatedDate?: \Aws\Api\DateTimeResult,
-     *     TargetRole?: 'READ_WRITE'|'READ_ONLY',
-     *     IsDefault?: bool
+     *     DBProxyEndpointName?: string|null,
+     *     DBProxyEndpointArn?: string|null,
+     *     DBProxyName?: string|null,
+     *     Status?: 'available'|'modifying'|'incompatible-network'|'insufficient-resource-limits'|'creating'|'deleting'|null,
+     *     VpcId?: string|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     VpcSubnetIds?: list<string>|null,
+     *     Endpoint?: string|null,
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     TargetRole?: 'READ_WRITE'|'READ_ONLY'|null,
+     *     IsDefault?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

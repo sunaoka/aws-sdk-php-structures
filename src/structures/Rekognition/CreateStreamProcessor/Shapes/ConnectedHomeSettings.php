@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $Labels
- * @property float $MinConfidence
+ * @property float|null $MinConfidence
  */
 class ConnectedHomeSettings extends Shape
 {
     /**
      * @param array{
      *     Labels: list<string>,
-     *     MinConfidence?: float
+     *     MinConfidence?: float|null
      * } $args
      */
     public function __construct(array $args)

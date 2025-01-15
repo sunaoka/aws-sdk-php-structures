@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ListStackSetOperationResults\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Account
- * @property string $Region
- * @property 'PENDING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'CANCELLED' $Status
- * @property string $StatusReason
- * @property AccountGateResult $AccountGateResult
- * @property string $OrganizationalUnitId
+ * @property string|null $Account
+ * @property string|null $Region
+ * @property 'PENDING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'CANCELLED'|null $Status
+ * @property string|null $StatusReason
+ * @property AccountGateResult|null $AccountGateResult
+ * @property string|null $OrganizationalUnitId
  */
 class StackSetOperationResultSummary extends Shape
 {
     /**
      * @param array{
-     *     Account?: string,
-     *     Region?: string,
-     *     Status?: 'PENDING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'CANCELLED',
-     *     StatusReason?: string,
-     *     AccountGateResult?: AccountGateResult,
-     *     OrganizationalUnitId?: string
+     *     Account?: string|null,
+     *     Region?: string|null,
+     *     Status?: 'PENDING'|'RUNNING'|'SUCCEEDED'|'FAILED'|'CANCELLED'|null,
+     *     StatusReason?: string|null,
+     *     AccountGateResult?: AccountGateResult|null,
+     *     OrganizationalUnitId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

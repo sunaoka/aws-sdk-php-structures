@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VoiceConnectorId
  * @property string $TransactionId
  * @property 'en-US' $LanguageCode
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  */
 class StartVoiceToneAnalysisTaskRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartVoiceToneAnalysisTaskRequest extends Request
      *     VoiceConnectorId: string,
      *     TransactionId: string,
      *     LanguageCode: 'en-US',
-     *     ClientRequestToken?: string
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

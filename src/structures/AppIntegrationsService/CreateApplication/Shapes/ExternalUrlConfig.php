@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $AccessUrl
- * @property list<string> $ApprovedOrigins
+ * @property list<string>|null $ApprovedOrigins
  */
 class ExternalUrlConfig extends Shape
 {
     /**
      * @param array{
      *     AccessUrl: string,
-     *     ApprovedOrigins?: list<string>
+     *     ApprovedOrigins?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $instanceId
  * @property string $sessionId
- * @property list<Shapes\CardValue> $values
+ * @property list<Shapes\CardValue>|null $values
  */
 class UpdateQAppSessionRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateQAppSessionRequest extends Request
      * @param array{
      *     instanceId: string,
      *     sessionId: string,
-     *     values?: list<Shapes\CardValue>
+     *     values?: list<Shapes\CardValue>|null
      * } $args
      */
     public function __construct(array $args)

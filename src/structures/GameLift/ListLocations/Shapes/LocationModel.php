@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GameLift\ListLocations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LocationName
- * @property string $LocationArn
+ * @property string|null $LocationName
+ * @property string|null $LocationArn
  */
 class LocationModel extends Shape
 {
     /**
      * @param array{
-     *     LocationName?: string,
-     *     LocationArn?: string
+     *     LocationName?: string|null,
+     *     LocationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

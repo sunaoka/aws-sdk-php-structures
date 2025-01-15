@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\MailManager\GetArchiveMessage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $IngressPointId
- * @property string $RuleSetId
- * @property string $SenderHostname
- * @property string $SenderIpAddress
- * @property \Aws\Api\DateTimeResult $Timestamp
- * @property string $TlsCipherSuite
- * @property string $TlsProtocol
- * @property string $TrafficPolicyId
+ * @property string|null $IngressPointId
+ * @property string|null $RuleSetId
+ * @property string|null $SenderHostname
+ * @property string|null $SenderIpAddress
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
+ * @property string|null $TlsCipherSuite
+ * @property string|null $TlsProtocol
+ * @property string|null $TrafficPolicyId
  */
 class Metadata extends Shape
 {
     /**
      * @param array{
-     *     IngressPointId?: string,
-     *     RuleSetId?: string,
-     *     SenderHostname?: string,
-     *     SenderIpAddress?: string,
-     *     Timestamp?: \Aws\Api\DateTimeResult,
-     *     TlsCipherSuite?: string,
-     *     TlsProtocol?: string,
-     *     TrafficPolicyId?: string
+     *     IngressPointId?: string|null,
+     *     RuleSetId?: string|null,
+     *     SenderHostname?: string|null,
+     *     SenderIpAddress?: string|null,
+     *     Timestamp?: \Aws\Api\DateTimeResult|null,
+     *     TlsCipherSuite?: string|null,
+     *     TlsProtocol?: string|null,
+     *     TrafficPolicyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

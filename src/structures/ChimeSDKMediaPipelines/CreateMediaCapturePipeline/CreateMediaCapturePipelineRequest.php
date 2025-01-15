@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourceArn
  * @property 'S3Bucket' $SinkType
  * @property string $SinkArn
- * @property string $ClientRequestToken
- * @property Shapes\ChimeSdkMeetingConfiguration $ChimeSdkMeetingConfiguration
- * @property Shapes\SseAwsKeyManagementParams $SseAwsKeyManagementParams
- * @property string $SinkIamRoleArn
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ClientRequestToken
+ * @property Shapes\ChimeSdkMeetingConfiguration|null $ChimeSdkMeetingConfiguration
+ * @property Shapes\SseAwsKeyManagementParams|null $SseAwsKeyManagementParams
+ * @property string|null $SinkIamRoleArn
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateMediaCapturePipelineRequest extends Request
 {
@@ -23,11 +23,11 @@ class CreateMediaCapturePipelineRequest extends Request
      *     SourceArn: string,
      *     SinkType: 'S3Bucket',
      *     SinkArn: string,
-     *     ClientRequestToken?: string,
-     *     ChimeSdkMeetingConfiguration?: Shapes\ChimeSdkMeetingConfiguration,
-     *     SseAwsKeyManagementParams?: Shapes\SseAwsKeyManagementParams,
-     *     SinkIamRoleArn?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     ClientRequestToken?: string|null,
+     *     ChimeSdkMeetingConfiguration?: Shapes\ChimeSdkMeetingConfiguration|null,
+     *     SseAwsKeyManagementParams?: Shapes\SseAwsKeyManagementParams|null,
+     *     SinkIamRoleArn?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetRestApi;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $id
- * @property string $name
- * @property string $description
- * @property \Aws\Api\DateTimeResult $createdDate
- * @property string $version
- * @property list<string> $warnings
- * @property list<string> $binaryMediaTypes
- * @property int $minimumCompressionSize
- * @property 'HEADER'|'AUTHORIZER' $apiKeySource
- * @property Shapes\EndpointConfiguration $endpointConfiguration
- * @property string $policy
- * @property array<string, string> $tags
- * @property bool $disableExecuteApiEndpoint
- * @property string $rootResourceId
+ * @property string|null $id
+ * @property string|null $name
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $createdDate
+ * @property string|null $version
+ * @property list<string>|null $warnings
+ * @property list<string>|null $binaryMediaTypes
+ * @property int|null $minimumCompressionSize
+ * @property 'HEADER'|'AUTHORIZER'|null $apiKeySource
+ * @property Shapes\EndpointConfiguration|null $endpointConfiguration
+ * @property string|null $policy
+ * @property array<string, string>|null $tags
+ * @property bool|null $disableExecuteApiEndpoint
+ * @property string|null $rootResourceId
  */
 class GetRestApiResponse extends Response
 {

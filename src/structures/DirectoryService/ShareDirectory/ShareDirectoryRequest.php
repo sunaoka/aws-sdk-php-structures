@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DirectoryId
- * @property string $ShareNotes
+ * @property string|null $ShareNotes
  * @property Shapes\ShareTarget $ShareTarget
  * @property 'ORGANIZATIONS'|'HANDSHAKE' $ShareMethod
  */
@@ -15,7 +15,7 @@ class ShareDirectoryRequest extends Request
     /**
      * @param array{
      *     DirectoryId: string,
-     *     ShareNotes?: string,
+     *     ShareNotes?: string|null,
      *     ShareTarget: Shapes\ShareTarget,
      *     ShareMethod: 'ORGANIZATIONS'|'HANDSHAKE'
      * } $args

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\GetPropertyValueHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'LINEAR' $interpolationType
- * @property int $intervalInSeconds
+ * @property 'LINEAR'|null $interpolationType
+ * @property int|null $intervalInSeconds
  */
 class InterpolationParameters extends Shape
 {
     /**
      * @param array{
-     *     interpolationType?: 'LINEAR',
-     *     intervalInSeconds?: int
+     *     interpolationType?: 'LINEAR'|null,
+     *     intervalInSeconds?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AIAgentVersionSummary> $aiAgentVersionSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListAIAgentVersionsResponse extends Response
 {

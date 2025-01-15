@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateApp;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AppArn
+ * @property string|null $AppArn
  */
 class CreateAppResponse extends Response
 {

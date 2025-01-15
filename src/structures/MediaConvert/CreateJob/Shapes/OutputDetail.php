@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DurationInMs
- * @property VideoDetail $VideoDetails
+ * @property int|null $DurationInMs
+ * @property VideoDetail|null $VideoDetails
  */
 class OutputDetail extends Shape
 {
     /**
      * @param array{
-     *     DurationInMs?: int,
-     *     VideoDetails?: VideoDetail
+     *     DurationInMs?: int|null,
+     *     VideoDetails?: VideoDetail|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
- * @property string $displayName
+ * @property string|null $description
+ * @property string|null $displayName
  * @property \Aws\Api\DateTimeResult $lastModifiedAt
  * @property string $name
- * @property 'CUSTOMER_MANAGED' $pipelineProvisioning
- * @property string $recommendedVersion
+ * @property 'CUSTOMER_MANAGED'|null $pipelineProvisioning
+ * @property string|null $recommendedVersion
  */
 class ServiceTemplateSummary extends Shape
 {
@@ -20,12 +20,12 @@ class ServiceTemplateSummary extends Shape
      * @param array{
      *     arn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     displayName?: string,
+     *     description?: string|null,
+     *     displayName?: string|null,
      *     lastModifiedAt: \Aws\Api\DateTimeResult,
      *     name: string,
-     *     pipelineProvisioning?: 'CUSTOMER_MANAGED',
-     *     recommendedVersion?: string
+     *     pipelineProvisioning?: 'CUSTOMER_MANAGED'|null,
+     *     recommendedVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

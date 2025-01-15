@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsMskClusterClusterInfoDetails $ClusterInfo
+ * @property AwsMskClusterClusterInfoDetails|null $ClusterInfo
  */
 class AwsMskClusterDetails extends Shape
 {
     /**
-     * @param array{ClusterInfo?: AwsMskClusterClusterInfoDetails} $args
+     * @param array{ClusterInfo?: AwsMskClusterClusterInfoDetails|null} $args
      */
     public function __construct(array $args = [])
     {

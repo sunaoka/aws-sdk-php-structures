@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DetectorId
- * @property list<string> $FindingTypes
+ * @property list<string>|null $FindingTypes
  */
 class CreateSampleFindingsRequest extends Request
 {
     /**
      * @param array{
      *     DetectorId: string,
-     *     FindingTypes?: list<string>
+     *     FindingTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

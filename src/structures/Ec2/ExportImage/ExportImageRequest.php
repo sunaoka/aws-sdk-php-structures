@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ec2\ExportImage;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
- * @property string $Description
+ * @property string|null $ClientToken
+ * @property string|null $Description
  * @property 'VMDK'|'RAW'|'VHD' $DiskImageFormat
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $ImageId
  * @property Shapes\ExportTaskS3LocationRequest $S3ExportLocation
- * @property string $RoleName
- * @property list<Shapes\TagSpecification> $TagSpecifications
+ * @property string|null $RoleName
+ * @property list<Shapes\TagSpecification>|null $TagSpecifications
  */
 class ExportImageRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
-     *     Description?: string,
+     *     ClientToken?: string|null,
+     *     Description?: string|null,
      *     DiskImageFormat: 'VMDK'|'RAW'|'VHD',
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     ImageId: string,
      *     S3ExportLocation: Shapes\ExportTaskS3LocationRequest,
-     *     RoleName?: string,
-     *     TagSpecifications?: list<Shapes\TagSpecification>
+     *     RoleName?: string|null,
+     *     TagSpecifications?: list<Shapes\TagSpecification>|null
      * } $args
      */
     public function __construct(array $args)

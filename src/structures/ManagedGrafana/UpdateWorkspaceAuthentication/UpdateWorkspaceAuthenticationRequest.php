@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<'AWS_SSO'|'SAML'> $authenticationProviders
- * @property Shapes\SamlConfiguration $samlConfiguration
+ * @property Shapes\SamlConfiguration|null $samlConfiguration
  * @property string $workspaceId
  */
 class UpdateWorkspaceAuthenticationRequest extends Request
@@ -14,7 +14,7 @@ class UpdateWorkspaceAuthenticationRequest extends Request
     /**
      * @param array{
      *     authenticationProviders: list<'AWS_SSO'|'SAML'>,
-     *     samlConfiguration?: Shapes\SamlConfiguration,
+     *     samlConfiguration?: Shapes\SamlConfiguration|null,
      *     workspaceId: string
      * } $args
      */

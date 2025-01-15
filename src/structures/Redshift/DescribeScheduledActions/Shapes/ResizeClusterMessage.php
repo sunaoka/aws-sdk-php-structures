@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ClusterIdentifier
- * @property string $ClusterType
- * @property string $NodeType
- * @property int $NumberOfNodes
- * @property bool $Classic
- * @property string $ReservedNodeId
- * @property string $TargetReservedNodeOfferingId
+ * @property string|null $ClusterType
+ * @property string|null $NodeType
+ * @property int|null $NumberOfNodes
+ * @property bool|null $Classic
+ * @property string|null $ReservedNodeId
+ * @property string|null $TargetReservedNodeOfferingId
  */
 class ResizeClusterMessage extends Shape
 {
     /**
      * @param array{
      *     ClusterIdentifier: string,
-     *     ClusterType?: string,
-     *     NodeType?: string,
-     *     NumberOfNodes?: int,
-     *     Classic?: bool,
-     *     ReservedNodeId?: string,
-     *     TargetReservedNodeOfferingId?: string
+     *     ClusterType?: string|null,
+     *     NodeType?: string|null,
+     *     NumberOfNodes?: int|null,
+     *     Classic?: bool|null,
+     *     ReservedNodeId?: string|null,
+     *     TargetReservedNodeOfferingId?: string|null
      * } $args
      */
     public function __construct(array $args)

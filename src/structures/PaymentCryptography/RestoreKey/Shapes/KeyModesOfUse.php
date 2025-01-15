@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\PaymentCryptography\RestoreKey\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Encrypt
- * @property bool $Decrypt
- * @property bool $Wrap
- * @property bool $Unwrap
- * @property bool $Generate
- * @property bool $Sign
- * @property bool $Verify
- * @property bool $DeriveKey
- * @property bool $NoRestrictions
+ * @property bool|null $Encrypt
+ * @property bool|null $Decrypt
+ * @property bool|null $Wrap
+ * @property bool|null $Unwrap
+ * @property bool|null $Generate
+ * @property bool|null $Sign
+ * @property bool|null $Verify
+ * @property bool|null $DeriveKey
+ * @property bool|null $NoRestrictions
  */
 class KeyModesOfUse extends Shape
 {
     /**
      * @param array{
-     *     Encrypt?: bool,
-     *     Decrypt?: bool,
-     *     Wrap?: bool,
-     *     Unwrap?: bool,
-     *     Generate?: bool,
-     *     Sign?: bool,
-     *     Verify?: bool,
-     *     DeriveKey?: bool,
-     *     NoRestrictions?: bool
+     *     Encrypt?: bool|null,
+     *     Decrypt?: bool|null,
+     *     Wrap?: bool|null,
+     *     Unwrap?: bool|null,
+     *     Generate?: bool|null,
+     *     Sign?: bool|null,
+     *     Verify?: bool|null,
+     *     DeriveKey?: bool|null,
+     *     NoRestrictions?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

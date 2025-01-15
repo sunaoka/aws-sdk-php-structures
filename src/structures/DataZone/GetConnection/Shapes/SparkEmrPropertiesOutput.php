@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\DataZone\GetConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $computeArn
- * @property UsernamePassword $credentials
- * @property \Aws\Api\DateTimeResult $credentialsExpiration
- * @property 'AWS_MANAGED'|'USER_MANAGED' $governanceType
- * @property string $instanceProfileArn
- * @property string $javaVirtualEnv
- * @property string $livyEndpoint
- * @property string $logUri
- * @property string $pythonVirtualEnv
- * @property string $runtimeRole
- * @property string $trustedCertificatesS3Uri
+ * @property string|null $computeArn
+ * @property UsernamePassword|null $credentials
+ * @property \Aws\Api\DateTimeResult|null $credentialsExpiration
+ * @property 'AWS_MANAGED'|'USER_MANAGED'|null $governanceType
+ * @property string|null $instanceProfileArn
+ * @property string|null $javaVirtualEnv
+ * @property string|null $livyEndpoint
+ * @property string|null $logUri
+ * @property string|null $pythonVirtualEnv
+ * @property string|null $runtimeRole
+ * @property string|null $trustedCertificatesS3Uri
  */
 class SparkEmrPropertiesOutput extends Shape
 {
     /**
      * @param array{
-     *     computeArn?: string,
-     *     credentials?: UsernamePassword,
-     *     credentialsExpiration?: \Aws\Api\DateTimeResult,
-     *     governanceType?: 'AWS_MANAGED'|'USER_MANAGED',
-     *     instanceProfileArn?: string,
-     *     javaVirtualEnv?: string,
-     *     livyEndpoint?: string,
-     *     logUri?: string,
-     *     pythonVirtualEnv?: string,
-     *     runtimeRole?: string,
-     *     trustedCertificatesS3Uri?: string
+     *     computeArn?: string|null,
+     *     credentials?: UsernamePassword|null,
+     *     credentialsExpiration?: \Aws\Api\DateTimeResult|null,
+     *     governanceType?: 'AWS_MANAGED'|'USER_MANAGED'|null,
+     *     instanceProfileArn?: string|null,
+     *     javaVirtualEnv?: string|null,
+     *     livyEndpoint?: string|null,
+     *     logUri?: string|null,
+     *     pythonVirtualEnv?: string|null,
+     *     runtimeRole?: string|null,
+     *     trustedCertificatesS3Uri?: string|null
      * } $args
      */
     public function __construct(array $args = [])

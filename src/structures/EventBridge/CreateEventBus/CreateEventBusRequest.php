@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $EventSourceName
- * @property string $Description
- * @property string $KmsKeyIdentifier
- * @property Shapes\DeadLetterConfig $DeadLetterConfig
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $EventSourceName
+ * @property string|null $Description
+ * @property string|null $KmsKeyIdentifier
+ * @property Shapes\DeadLetterConfig|null $DeadLetterConfig
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateEventBusRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     EventSourceName?: string,
-     *     Description?: string,
-     *     KmsKeyIdentifier?: string,
-     *     DeadLetterConfig?: Shapes\DeadLetterConfig,
-     *     Tags?: list<Shapes\Tag>
+     *     EventSourceName?: string|null,
+     *     Description?: string|null,
+     *     KmsKeyIdentifier?: string|null,
+     *     DeadLetterConfig?: Shapes\DeadLetterConfig|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

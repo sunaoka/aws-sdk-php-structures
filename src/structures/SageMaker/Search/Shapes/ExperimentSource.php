@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SourceArn
- * @property string $SourceType
+ * @property string|null $SourceType
  */
 class ExperimentSource extends Shape
 {
     /**
      * @param array{
      *     SourceArn: string,
-     *     SourceType?: string
+     *     SourceType?: string|null
      * } $args
      */
     public function __construct(array $args)

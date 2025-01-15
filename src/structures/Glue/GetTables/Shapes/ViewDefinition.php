@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\GetTables\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $IsProtected
- * @property string $Definer
- * @property list<string> $SubObjects
- * @property list<ViewRepresentation> $Representations
+ * @property bool|null $IsProtected
+ * @property string|null $Definer
+ * @property list<string>|null $SubObjects
+ * @property list<ViewRepresentation>|null $Representations
  */
 class ViewDefinition extends Shape
 {
     /**
      * @param array{
-     *     IsProtected?: bool,
-     *     Definer?: string,
-     *     SubObjects?: list<string>,
-     *     Representations?: list<ViewRepresentation>
+     *     IsProtected?: bool|null,
+     *     Definer?: string|null,
+     *     SubObjects?: list<string>|null,
+     *     Representations?: list<ViewRepresentation>|null
      * } $args
      */
     public function __construct(array $args = [])

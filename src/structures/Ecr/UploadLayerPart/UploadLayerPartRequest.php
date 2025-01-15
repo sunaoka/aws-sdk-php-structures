@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ecr\UploadLayerPart;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $registryId
+ * @property string|null $registryId
  * @property string $repositoryName
  * @property string $uploadId
  * @property int<0, max> $partFirstByte
@@ -16,7 +16,7 @@ class UploadLayerPartRequest extends Request
 {
     /**
      * @param array{
-     *     registryId?: string,
+     *     registryId?: string|null,
      *     repositoryName: string,
      *     uploadId: string,
      *     partFirstByte: int<0, max>,

@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VoiceConnectorId
  * @property int $DefaultSessionExpiryMinutes
  * @property list<string> $PhoneNumberPoolCountries
- * @property string $FallBackPhoneNumber
- * @property bool $Disabled
+ * @property string|null $FallBackPhoneNumber
+ * @property bool|null $Disabled
  */
 class PutVoiceConnectorProxyRequest extends Request
 {
@@ -18,8 +18,8 @@ class PutVoiceConnectorProxyRequest extends Request
      *     VoiceConnectorId: string,
      *     DefaultSessionExpiryMinutes: int,
      *     PhoneNumberPoolCountries: list<string>,
-     *     FallBackPhoneNumber?: string,
-     *     Disabled?: bool
+     *     FallBackPhoneNumber?: string|null,
+     *     Disabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

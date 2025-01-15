@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBClusterIdentifier
- * @property string $BacktrackIdentifier
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $BacktrackIdentifier
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeDBClusterBacktracksRequest extends Request
 {
     /**
      * @param array{
      *     DBClusterIdentifier: string,
-     *     BacktrackIdentifier?: string,
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     BacktrackIdentifier?: string|null,
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $QualificationRequestId
- * @property int $IntegerValue
+ * @property int|null $IntegerValue
  */
 class AcceptQualificationRequestRequest extends Request
 {
     /**
      * @param array{
      *     QualificationRequestId: string,
-     *     IntegerValue?: int
+     *     IntegerValue?: int|null
      * } $args
      */
     public function __construct(array $args)

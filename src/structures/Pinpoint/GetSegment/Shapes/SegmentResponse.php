@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ApplicationId
  * @property string $Arn
  * @property string $CreationDate
- * @property SegmentDimensions $Dimensions
+ * @property SegmentDimensions|null $Dimensions
  * @property string $Id
- * @property SegmentImportResource $ImportDefinition
- * @property string $LastModifiedDate
- * @property string $Name
- * @property SegmentGroupList $SegmentGroups
+ * @property SegmentImportResource|null $ImportDefinition
+ * @property string|null $LastModifiedDate
+ * @property string|null $Name
+ * @property SegmentGroupList|null $SegmentGroups
  * @property 'DIMENSIONAL'|'IMPORT' $SegmentType
- * @property array<string, string> $tags
- * @property int $Version
+ * @property array<string, string>|null $tags
+ * @property int|null $Version
  */
 class SegmentResponse extends Shape
 {
@@ -25,15 +25,15 @@ class SegmentResponse extends Shape
      *     ApplicationId: string,
      *     Arn: string,
      *     CreationDate: string,
-     *     Dimensions?: SegmentDimensions,
+     *     Dimensions?: SegmentDimensions|null,
      *     Id: string,
-     *     ImportDefinition?: SegmentImportResource,
-     *     LastModifiedDate?: string,
-     *     Name?: string,
-     *     SegmentGroups?: SegmentGroupList,
+     *     ImportDefinition?: SegmentImportResource|null,
+     *     LastModifiedDate?: string|null,
+     *     Name?: string|null,
+     *     SegmentGroups?: SegmentGroupList|null,
      *     SegmentType: 'DIMENSIONAL'|'IMPORT',
-     *     tags?: array<string, string>,
-     *     Version?: int
+     *     tags?: array<string, string>|null,
+     *     Version?: int|null
      * } $args
      */
     public function __construct(array $args)

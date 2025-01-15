@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $failOnFirstDestinationError
- * @property string $bucketPrefix
- * @property string $bucketName
+ * @property bool|null $failOnFirstDestinationError
+ * @property string|null $bucketPrefix
+ * @property string|null $bucketName
  */
 class ErrorHandlingConfig extends Shape
 {
     /**
      * @param array{
-     *     failOnFirstDestinationError?: bool,
-     *     bucketPrefix?: string,
-     *     bucketName?: string
+     *     failOnFirstDestinationError?: bool|null,
+     *     bucketPrefix?: string|null,
+     *     bucketName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

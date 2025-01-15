@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $RegistrationId
- * @property list<Shapes\RegistrationAssociationFilter> $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property list<Shapes\RegistrationAssociationFilter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListRegistrationAssociationsRequest extends Request
 {
     /**
      * @param array{
      *     RegistrationId: string,
-     *     Filters?: list<Shapes\RegistrationAssociationFilter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     Filters?: list<Shapes\RegistrationAssociationFilter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

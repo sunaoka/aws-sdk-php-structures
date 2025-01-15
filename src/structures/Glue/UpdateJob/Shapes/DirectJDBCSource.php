@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Table
  * @property string $ConnectionName
  * @property 'sqlserver'|'mysql'|'oracle'|'postgresql'|'redshift' $ConnectionType
- * @property string $RedshiftTmpDir
+ * @property string|null $RedshiftTmpDir
  */
 class DirectJDBCSource extends Shape
 {
@@ -21,7 +21,7 @@ class DirectJDBCSource extends Shape
      *     Table: string,
      *     ConnectionName: string,
      *     ConnectionType: 'sqlserver'|'mysql'|'oracle'|'postgresql'|'redshift',
-     *     RedshiftTmpDir?: string
+     *     RedshiftTmpDir?: string|null
      * } $args
      */
     public function __construct(array $args)

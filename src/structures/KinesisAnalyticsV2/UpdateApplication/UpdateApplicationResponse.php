@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\ApplicationDetail $ApplicationDetail
- * @property string $OperationId
+ * @property string|null $OperationId
  */
 class UpdateApplicationResponse extends Response
 {

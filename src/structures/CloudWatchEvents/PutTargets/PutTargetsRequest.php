@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Rule
- * @property string $EventBusName
+ * @property string|null $EventBusName
  * @property list<Shapes\Target> $Targets
  */
 class PutTargetsRequest extends Request
@@ -14,7 +14,7 @@ class PutTargetsRequest extends Request
     /**
      * @param array{
      *     Rule: string,
-     *     EventBusName?: string,
+     *     EventBusName?: string|null,
      *     Targets: list<Shapes\Target>
      * } $args
      */

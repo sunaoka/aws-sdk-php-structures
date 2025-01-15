@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<ActivityResponse> $Item
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ActivitiesResponse extends Shape
 {
     /**
      * @param array{
      *     Item: list<ActivityResponse>,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

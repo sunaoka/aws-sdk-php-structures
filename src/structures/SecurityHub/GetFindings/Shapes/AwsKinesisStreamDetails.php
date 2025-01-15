@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Arn
- * @property AwsKinesisStreamStreamEncryptionDetails $StreamEncryption
- * @property int $ShardCount
- * @property int $RetentionPeriodHours
+ * @property string|null $Name
+ * @property string|null $Arn
+ * @property AwsKinesisStreamStreamEncryptionDetails|null $StreamEncryption
+ * @property int|null $ShardCount
+ * @property int|null $RetentionPeriodHours
  */
 class AwsKinesisStreamDetails extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Arn?: string,
-     *     StreamEncryption?: AwsKinesisStreamStreamEncryptionDetails,
-     *     ShardCount?: int,
-     *     RetentionPeriodHours?: int
+     *     Name?: string|null,
+     *     Arn?: string|null,
+     *     StreamEncryption?: AwsKinesisStreamStreamEncryptionDetails|null,
+     *     ShardCount?: int|null,
+     *     RetentionPeriodHours?: int|null
      * } $args
      */
     public function __construct(array $args = [])

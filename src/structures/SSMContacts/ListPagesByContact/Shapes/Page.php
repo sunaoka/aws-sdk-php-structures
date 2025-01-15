@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EngagementArn
  * @property string $ContactArn
  * @property string $Sender
- * @property string $IncidentId
- * @property \Aws\Api\DateTimeResult $SentTime
- * @property \Aws\Api\DateTimeResult $DeliveryTime
- * @property \Aws\Api\DateTimeResult $ReadTime
+ * @property string|null $IncidentId
+ * @property \Aws\Api\DateTimeResult|null $SentTime
+ * @property \Aws\Api\DateTimeResult|null $DeliveryTime
+ * @property \Aws\Api\DateTimeResult|null $ReadTime
  */
 class Page extends Shape
 {
@@ -22,10 +22,10 @@ class Page extends Shape
      *     EngagementArn: string,
      *     ContactArn: string,
      *     Sender: string,
-     *     IncidentId?: string,
-     *     SentTime?: \Aws\Api\DateTimeResult,
-     *     DeliveryTime?: \Aws\Api\DateTimeResult,
-     *     ReadTime?: \Aws\Api\DateTimeResult
+     *     IncidentId?: string|null,
+     *     SentTime?: \Aws\Api\DateTimeResult|null,
+     *     DeliveryTime?: \Aws\Api\DateTimeResult|null,
+     *     ReadTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

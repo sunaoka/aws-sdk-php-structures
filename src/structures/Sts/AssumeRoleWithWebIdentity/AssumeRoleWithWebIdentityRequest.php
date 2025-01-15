@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $RoleArn
  * @property string $RoleSessionName
  * @property string $WebIdentityToken
- * @property string $ProviderId
- * @property list<Shapes\PolicyDescriptorType> $PolicyArns
- * @property string $Policy
- * @property int<900, 43200> $DurationSeconds
+ * @property string|null $ProviderId
+ * @property list<Shapes\PolicyDescriptorType>|null $PolicyArns
+ * @property string|null $Policy
+ * @property int<900, 43200>|null $DurationSeconds
  */
 class AssumeRoleWithWebIdentityRequest extends Request
 {
@@ -20,10 +20,10 @@ class AssumeRoleWithWebIdentityRequest extends Request
      *     RoleArn: string,
      *     RoleSessionName: string,
      *     WebIdentityToken: string,
-     *     ProviderId?: string,
-     *     PolicyArns?: list<Shapes\PolicyDescriptorType>,
-     *     Policy?: string,
-     *     DurationSeconds?: int<900, 43200>
+     *     ProviderId?: string|null,
+     *     PolicyArns?: list<Shapes\PolicyDescriptorType>|null,
+     *     Policy?: string|null,
+     *     DurationSeconds?: int<900, 43200>|null
      * } $args
      */
     public function __construct(array $args)

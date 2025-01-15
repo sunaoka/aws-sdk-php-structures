@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\AppConfig\ListConfigurationProfiles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationId
- * @property string $Id
- * @property string $Name
- * @property string $LocationUri
- * @property list<'JSON_SCHEMA'|'LAMBDA'> $ValidatorTypes
- * @property string $Type
+ * @property string|null $ApplicationId
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $LocationUri
+ * @property list<'JSON_SCHEMA'|'LAMBDA'>|null $ValidatorTypes
+ * @property string|null $Type
  */
 class ConfigurationProfileSummary extends Shape
 {
     /**
      * @param array{
-     *     ApplicationId?: string,
-     *     Id?: string,
-     *     Name?: string,
-     *     LocationUri?: string,
-     *     ValidatorTypes?: list<'JSON_SCHEMA'|'LAMBDA'>,
-     *     Type?: string
+     *     ApplicationId?: string|null,
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     LocationUri?: string|null,
+     *     ValidatorTypes?: list<'JSON_SCHEMA'|'LAMBDA'>|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

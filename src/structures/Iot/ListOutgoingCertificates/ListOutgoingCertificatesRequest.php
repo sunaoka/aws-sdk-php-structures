@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\ListOutgoingCertificates;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 250> $pageSize
- * @property string $marker
- * @property bool $ascendingOrder
+ * @property int<1, 250>|null $pageSize
+ * @property string|null $marker
+ * @property bool|null $ascendingOrder
  */
 class ListOutgoingCertificatesRequest extends Request
 {
     /**
      * @param array{
-     *     pageSize?: int<1, 250>,
-     *     marker?: string,
-     *     ascendingOrder?: bool
+     *     pageSize?: int<1, 250>|null,
+     *     marker?: string|null,
+     *     ascendingOrder?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

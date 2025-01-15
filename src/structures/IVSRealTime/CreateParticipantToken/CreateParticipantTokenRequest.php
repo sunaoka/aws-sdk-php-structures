@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $stageArn
- * @property int<1, 20160> $duration
- * @property string $userId
- * @property array<string, string> $attributes
- * @property list<'PUBLISH'|'SUBSCRIBE'> $capabilities
+ * @property int<1, 20160>|null $duration
+ * @property string|null $userId
+ * @property array<string, string>|null $attributes
+ * @property list<'PUBLISH'|'SUBSCRIBE'>|null $capabilities
  */
 class CreateParticipantTokenRequest extends Request
 {
     /**
      * @param array{
      *     stageArn: string,
-     *     duration?: int<1, 20160>,
-     *     userId?: string,
-     *     attributes?: array<string, string>,
-     *     capabilities?: list<'PUBLISH'|'SUBSCRIBE'>
+     *     duration?: int<1, 20160>|null,
+     *     userId?: string|null,
+     *     attributes?: array<string, string>|null,
+     *     capabilities?: list<'PUBLISH'|'SUBSCRIBE'>|null
      * } $args
      */
     public function __construct(array $args)

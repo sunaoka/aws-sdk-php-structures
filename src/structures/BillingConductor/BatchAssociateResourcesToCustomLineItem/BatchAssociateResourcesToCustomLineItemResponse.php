@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\BillingConductor\BatchAssociateResourcesToCusto
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AssociateResourceResponseElement> $SuccessfullyAssociatedResources
- * @property list<Shapes\AssociateResourceResponseElement> $FailedAssociatedResources
+ * @property list<Shapes\AssociateResourceResponseElement>|null $SuccessfullyAssociatedResources
+ * @property list<Shapes\AssociateResourceResponseElement>|null $FailedAssociatedResources
  */
 class BatchAssociateResourcesToCustomLineItemResponse extends Response
 {

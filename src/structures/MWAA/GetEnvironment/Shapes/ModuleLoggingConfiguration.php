@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MWAA\GetEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property 'CRITICAL'|'ERROR'|'WARNING'|'INFO'|'DEBUG' $LogLevel
- * @property string $CloudWatchLogGroupArn
+ * @property bool|null $Enabled
+ * @property 'CRITICAL'|'ERROR'|'WARNING'|'INFO'|'DEBUG'|null $LogLevel
+ * @property string|null $CloudWatchLogGroupArn
  */
 class ModuleLoggingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     LogLevel?: 'CRITICAL'|'ERROR'|'WARNING'|'INFO'|'DEBUG',
-     *     CloudWatchLogGroupArn?: string
+     *     Enabled?: bool|null,
+     *     LogLevel?: 'CRITICAL'|'ERROR'|'WARNING'|'INFO'|'DEBUG'|null,
+     *     CloudWatchLogGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

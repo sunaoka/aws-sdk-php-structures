@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\MailManager\GetRuleSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CONTINUE'|'DROP' $ActionFailurePolicy
- * @property 'REPLACE'|'PRESERVE' $MailFrom
+ * @property 'CONTINUE'|'DROP'|null $ActionFailurePolicy
+ * @property 'REPLACE'|'PRESERVE'|null $MailFrom
  * @property string $Relay
  */
 class RelayAction extends Shape
 {
     /**
      * @param array{
-     *     ActionFailurePolicy?: 'CONTINUE'|'DROP',
-     *     MailFrom?: 'REPLACE'|'PRESERVE',
+     *     ActionFailurePolicy?: 'CONTINUE'|'DROP'|null,
+     *     MailFrom?: 'REPLACE'|'PRESERVE'|null,
      *     Relay: string
      * } $args
      */

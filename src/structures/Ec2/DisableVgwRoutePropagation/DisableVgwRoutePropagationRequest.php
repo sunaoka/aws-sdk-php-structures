@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GatewayId
  * @property string $RouteTableId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DisableVgwRoutePropagationRequest extends Request
 {
@@ -15,7 +15,7 @@ class DisableVgwRoutePropagationRequest extends Request
      * @param array{
      *     GatewayId: string,
      *     RouteTableId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

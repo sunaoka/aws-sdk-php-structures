@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $SourceArn
  * @property string $TargetArn
- * @property string $Description
+ * @property string|null $Description
  * @property string $IntegrationName
  * @property string $IntegrationArn
- * @property string $KmsKeyId
- * @property array<string, string> $AdditionalEncryptionContext
- * @property list<Tag> $Tags
+ * @property string|null $KmsKeyId
+ * @property array<string, string>|null $AdditionalEncryptionContext
+ * @property list<Tag>|null $Tags
  * @property 'CREATING'|'ACTIVE'|'MODIFYING'|'FAILED'|'DELETING'|'SYNCING'|'NEEDS_ATTENTION' $Status
  * @property \Aws\Api\DateTimeResult $CreateTime
- * @property list<IntegrationError> $Errors
- * @property string $DataFilter
+ * @property list<IntegrationError>|null $Errors
+ * @property string|null $DataFilter
  */
 class Integration extends Shape
 {
@@ -24,16 +24,16 @@ class Integration extends Shape
      * @param array{
      *     SourceArn: string,
      *     TargetArn: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     IntegrationName: string,
      *     IntegrationArn: string,
-     *     KmsKeyId?: string,
-     *     AdditionalEncryptionContext?: array<string, string>,
-     *     Tags?: list<Tag>,
+     *     KmsKeyId?: string|null,
+     *     AdditionalEncryptionContext?: array<string, string>|null,
+     *     Tags?: list<Tag>|null,
      *     Status: 'CREATING'|'ACTIVE'|'MODIFYING'|'FAILED'|'DELETING'|'SYNCING'|'NEEDS_ATTENTION',
      *     CreateTime: \Aws\Api\DateTimeResult,
-     *     Errors?: list<IntegrationError>,
-     *     DataFilter?: string
+     *     Errors?: list<IntegrationError>|null,
+     *     DataFilter?: string|null
      * } $args
      */
     public function __construct(array $args)

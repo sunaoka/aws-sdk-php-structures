@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\ListFacetAttributes;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\FacetAttribute> $Attributes
- * @property string $NextToken
+ * @property list<Shapes\FacetAttribute>|null $Attributes
+ * @property string|null $NextToken
  */
 class ListFacetAttributesResponse extends Response
 {

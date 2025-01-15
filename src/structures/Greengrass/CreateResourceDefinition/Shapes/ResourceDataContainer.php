@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateResourceDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LocalDeviceResourceData $LocalDeviceResourceData
- * @property LocalVolumeResourceData $LocalVolumeResourceData
- * @property S3MachineLearningModelResourceData $S3MachineLearningModelResourceData
- * @property SageMakerMachineLearningModelResourceData $SageMakerMachineLearningModelResourceData
- * @property SecretsManagerSecretResourceData $SecretsManagerSecretResourceData
+ * @property LocalDeviceResourceData|null $LocalDeviceResourceData
+ * @property LocalVolumeResourceData|null $LocalVolumeResourceData
+ * @property S3MachineLearningModelResourceData|null $S3MachineLearningModelResourceData
+ * @property SageMakerMachineLearningModelResourceData|null $SageMakerMachineLearningModelResourceData
+ * @property SecretsManagerSecretResourceData|null $SecretsManagerSecretResourceData
  */
 class ResourceDataContainer extends Shape
 {
     /**
      * @param array{
-     *     LocalDeviceResourceData?: LocalDeviceResourceData,
-     *     LocalVolumeResourceData?: LocalVolumeResourceData,
-     *     S3MachineLearningModelResourceData?: S3MachineLearningModelResourceData,
-     *     SageMakerMachineLearningModelResourceData?: SageMakerMachineLearningModelResourceData,
-     *     SecretsManagerSecretResourceData?: SecretsManagerSecretResourceData
+     *     LocalDeviceResourceData?: LocalDeviceResourceData|null,
+     *     LocalVolumeResourceData?: LocalVolumeResourceData|null,
+     *     S3MachineLearningModelResourceData?: S3MachineLearningModelResourceData|null,
+     *     SageMakerMachineLearningModelResourceData?: SageMakerMachineLearningModelResourceData|null,
+     *     SecretsManagerSecretResourceData?: SecretsManagerSecretResourceData|null
      * } $args
      */
     public function __construct(array $args = [])

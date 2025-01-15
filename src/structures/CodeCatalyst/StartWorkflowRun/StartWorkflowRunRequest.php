@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $spaceName
  * @property string $projectName
  * @property string $workflowId
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class StartWorkflowRunRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartWorkflowRunRequest extends Request
      *     spaceName: string,
      *     projectName: string,
      *     workflowId: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

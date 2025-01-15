@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetCertificates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $certificateArn
- * @property string $certificateName
- * @property string $domainName
- * @property Certificate $certificateDetail
- * @property list<Tag> $tags
+ * @property string|null $certificateArn
+ * @property string|null $certificateName
+ * @property string|null $domainName
+ * @property Certificate|null $certificateDetail
+ * @property list<Tag>|null $tags
  */
 class CertificateSummary extends Shape
 {
     /**
      * @param array{
-     *     certificateArn?: string,
-     *     certificateName?: string,
-     *     domainName?: string,
-     *     certificateDetail?: Certificate,
-     *     tags?: list<Tag>
+     *     certificateArn?: string|null,
+     *     certificateName?: string|null,
+     *     domainName?: string|null,
+     *     certificateDetail?: Certificate|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

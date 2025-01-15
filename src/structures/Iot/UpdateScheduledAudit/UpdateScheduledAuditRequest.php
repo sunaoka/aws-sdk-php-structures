@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\Iot\UpdateScheduledAudit;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'DAILY'|'WEEKLY'|'BIWEEKLY'|'MONTHLY' $frequency
- * @property string $dayOfMonth
- * @property 'SUN'|'MON'|'TUE'|'WED'|'THU'|'FRI'|'SAT' $dayOfWeek
- * @property list<string> $targetCheckNames
+ * @property 'DAILY'|'WEEKLY'|'BIWEEKLY'|'MONTHLY'|null $frequency
+ * @property string|null $dayOfMonth
+ * @property 'SUN'|'MON'|'TUE'|'WED'|'THU'|'FRI'|'SAT'|null $dayOfWeek
+ * @property list<string>|null $targetCheckNames
  * @property string $scheduledAuditName
  */
 class UpdateScheduledAuditRequest extends Request
 {
     /**
      * @param array{
-     *     frequency?: 'DAILY'|'WEEKLY'|'BIWEEKLY'|'MONTHLY',
-     *     dayOfMonth?: string,
-     *     dayOfWeek?: 'SUN'|'MON'|'TUE'|'WED'|'THU'|'FRI'|'SAT',
-     *     targetCheckNames?: list<string>,
+     *     frequency?: 'DAILY'|'WEEKLY'|'BIWEEKLY'|'MONTHLY'|null,
+     *     dayOfMonth?: string|null,
+     *     dayOfWeek?: 'SUN'|'MON'|'TUE'|'WED'|'THU'|'FRI'|'SAT'|null,
+     *     targetCheckNames?: list<string>|null,
      *     scheduledAuditName: string
      * } $args
      */

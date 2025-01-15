@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Proton\GetDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $lastSuccessfulComponentDeploymentIds
- * @property string $lastSuccessfulEnvironmentDeploymentId
- * @property string $lastSuccessfulServicePipelineDeploymentId
+ * @property list<string>|null $lastSuccessfulComponentDeploymentIds
+ * @property string|null $lastSuccessfulEnvironmentDeploymentId
+ * @property string|null $lastSuccessfulServicePipelineDeploymentId
  * @property string $spec
  * @property string $templateMajorVersion
  * @property string $templateMinorVersion
@@ -17,9 +17,9 @@ class ServiceInstanceState extends Shape
 {
     /**
      * @param array{
-     *     lastSuccessfulComponentDeploymentIds?: list<string>,
-     *     lastSuccessfulEnvironmentDeploymentId?: string,
-     *     lastSuccessfulServicePipelineDeploymentId?: string,
+     *     lastSuccessfulComponentDeploymentIds?: list<string>|null,
+     *     lastSuccessfulEnvironmentDeploymentId?: string|null,
+     *     lastSuccessfulServicePipelineDeploymentId?: string|null,
      *     spec: string,
      *     templateMajorVersion: string,
      *     templateMinorVersion: string,

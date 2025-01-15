@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\ResourceSet $ResourceSet
- * @property list<Shapes\Tag> $TagList
+ * @property list<Shapes\Tag>|null $TagList
  */
 class PutResourceSetRequest extends Request
 {
     /**
      * @param array{
      *     ResourceSet: Shapes\ResourceSet,
-     *     TagList?: list<Shapes\Tag>
+     *     TagList?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

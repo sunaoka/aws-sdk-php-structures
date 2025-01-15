@@ -5,57 +5,57 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\BatchGetDeploymentGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $applicationName
- * @property string $deploymentGroupId
- * @property string $deploymentGroupName
- * @property string $deploymentConfigName
- * @property list<EC2TagFilter> $ec2TagFilters
- * @property list<TagFilter> $onPremisesInstanceTagFilters
- * @property list<AutoScalingGroup> $autoScalingGroups
- * @property string $serviceRoleArn
- * @property RevisionLocation $targetRevision
- * @property list<TriggerConfig> $triggerConfigurations
- * @property AlarmConfiguration $alarmConfiguration
- * @property AutoRollbackConfiguration $autoRollbackConfiguration
- * @property DeploymentStyle $deploymentStyle
- * @property 'UPDATE'|'IGNORE' $outdatedInstancesStrategy
- * @property BlueGreenDeploymentConfiguration $blueGreenDeploymentConfiguration
- * @property LoadBalancerInfo $loadBalancerInfo
- * @property LastDeploymentInfo $lastSuccessfulDeployment
- * @property LastDeploymentInfo $lastAttemptedDeployment
- * @property EC2TagSet $ec2TagSet
- * @property OnPremisesTagSet $onPremisesTagSet
- * @property 'Server'|'Lambda'|'ECS' $computePlatform
- * @property list<ECSService> $ecsServices
- * @property bool $terminationHookEnabled
+ * @property string|null $applicationName
+ * @property string|null $deploymentGroupId
+ * @property string|null $deploymentGroupName
+ * @property string|null $deploymentConfigName
+ * @property list<EC2TagFilter>|null $ec2TagFilters
+ * @property list<TagFilter>|null $onPremisesInstanceTagFilters
+ * @property list<AutoScalingGroup>|null $autoScalingGroups
+ * @property string|null $serviceRoleArn
+ * @property RevisionLocation|null $targetRevision
+ * @property list<TriggerConfig>|null $triggerConfigurations
+ * @property AlarmConfiguration|null $alarmConfiguration
+ * @property AutoRollbackConfiguration|null $autoRollbackConfiguration
+ * @property DeploymentStyle|null $deploymentStyle
+ * @property 'UPDATE'|'IGNORE'|null $outdatedInstancesStrategy
+ * @property BlueGreenDeploymentConfiguration|null $blueGreenDeploymentConfiguration
+ * @property LoadBalancerInfo|null $loadBalancerInfo
+ * @property LastDeploymentInfo|null $lastSuccessfulDeployment
+ * @property LastDeploymentInfo|null $lastAttemptedDeployment
+ * @property EC2TagSet|null $ec2TagSet
+ * @property OnPremisesTagSet|null $onPremisesTagSet
+ * @property 'Server'|'Lambda'|'ECS'|null $computePlatform
+ * @property list<ECSService>|null $ecsServices
+ * @property bool|null $terminationHookEnabled
  */
 class DeploymentGroupInfo extends Shape
 {
     /**
      * @param array{
-     *     applicationName?: string,
-     *     deploymentGroupId?: string,
-     *     deploymentGroupName?: string,
-     *     deploymentConfigName?: string,
-     *     ec2TagFilters?: list<EC2TagFilter>,
-     *     onPremisesInstanceTagFilters?: list<TagFilter>,
-     *     autoScalingGroups?: list<AutoScalingGroup>,
-     *     serviceRoleArn?: string,
-     *     targetRevision?: RevisionLocation,
-     *     triggerConfigurations?: list<TriggerConfig>,
-     *     alarmConfiguration?: AlarmConfiguration,
-     *     autoRollbackConfiguration?: AutoRollbackConfiguration,
-     *     deploymentStyle?: DeploymentStyle,
-     *     outdatedInstancesStrategy?: 'UPDATE'|'IGNORE',
-     *     blueGreenDeploymentConfiguration?: BlueGreenDeploymentConfiguration,
-     *     loadBalancerInfo?: LoadBalancerInfo,
-     *     lastSuccessfulDeployment?: LastDeploymentInfo,
-     *     lastAttemptedDeployment?: LastDeploymentInfo,
-     *     ec2TagSet?: EC2TagSet,
-     *     onPremisesTagSet?: OnPremisesTagSet,
-     *     computePlatform?: 'Server'|'Lambda'|'ECS',
-     *     ecsServices?: list<ECSService>,
-     *     terminationHookEnabled?: bool
+     *     applicationName?: string|null,
+     *     deploymentGroupId?: string|null,
+     *     deploymentGroupName?: string|null,
+     *     deploymentConfigName?: string|null,
+     *     ec2TagFilters?: list<EC2TagFilter>|null,
+     *     onPremisesInstanceTagFilters?: list<TagFilter>|null,
+     *     autoScalingGroups?: list<AutoScalingGroup>|null,
+     *     serviceRoleArn?: string|null,
+     *     targetRevision?: RevisionLocation|null,
+     *     triggerConfigurations?: list<TriggerConfig>|null,
+     *     alarmConfiguration?: AlarmConfiguration|null,
+     *     autoRollbackConfiguration?: AutoRollbackConfiguration|null,
+     *     deploymentStyle?: DeploymentStyle|null,
+     *     outdatedInstancesStrategy?: 'UPDATE'|'IGNORE'|null,
+     *     blueGreenDeploymentConfiguration?: BlueGreenDeploymentConfiguration|null,
+     *     loadBalancerInfo?: LoadBalancerInfo|null,
+     *     lastSuccessfulDeployment?: LastDeploymentInfo|null,
+     *     lastAttemptedDeployment?: LastDeploymentInfo|null,
+     *     ec2TagSet?: EC2TagSet|null,
+     *     onPremisesTagSet?: OnPremisesTagSet|null,
+     *     computePlatform?: 'Server'|'Lambda'|'ECS'|null,
+     *     ecsServices?: list<ECSService>|null,
+     *     terminationHookEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

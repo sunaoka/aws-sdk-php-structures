@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $TrackerName
  * @property string $TrackerArn
  * @property string $Description
- * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement' $PricingPlan
- * @property string $PricingPlanDataSource
- * @property array<string, string> $Tags
+ * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
+ * @property string|null $PricingPlanDataSource
+ * @property array<string, string>|null $Tags
  * @property \Aws\Api\DateTimeResult $CreateTime
  * @property \Aws\Api\DateTimeResult $UpdateTime
- * @property string $KmsKeyId
- * @property 'TimeBased'|'DistanceBased'|'AccuracyBased' $PositionFiltering
- * @property bool $EventBridgeEnabled
- * @property bool $KmsKeyEnableGeospatialQueries
+ * @property string|null $KmsKeyId
+ * @property 'TimeBased'|'DistanceBased'|'AccuracyBased'|null $PositionFiltering
+ * @property bool|null $EventBridgeEnabled
+ * @property bool|null $KmsKeyEnableGeospatialQueries
  */
 class DescribeTrackerResponse extends Response
 {

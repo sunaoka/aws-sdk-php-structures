@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\PrivateNetworks\ActivateDeviceIdentifier;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $deviceIdentifierArn
  */
 class ActivateDeviceIdentifierRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     deviceIdentifierArn: string
      * } $args
      */

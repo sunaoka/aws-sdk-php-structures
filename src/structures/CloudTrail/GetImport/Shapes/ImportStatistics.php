@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudTrail\GetImport\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $PrefixesFound
- * @property int $PrefixesCompleted
- * @property int $FilesCompleted
- * @property int $EventsCompleted
- * @property int $FailedEntries
+ * @property int|null $PrefixesFound
+ * @property int|null $PrefixesCompleted
+ * @property int|null $FilesCompleted
+ * @property int|null $EventsCompleted
+ * @property int|null $FailedEntries
  */
 class ImportStatistics extends Shape
 {
     /**
      * @param array{
-     *     PrefixesFound?: int,
-     *     PrefixesCompleted?: int,
-     *     FilesCompleted?: int,
-     *     EventsCompleted?: int,
-     *     FailedEntries?: int
+     *     PrefixesFound?: int|null,
+     *     PrefixesCompleted?: int|null,
+     *     FilesCompleted?: int|null,
+     *     EventsCompleted?: int|null,
+     *     FailedEntries?: int|null
      * } $args
      */
     public function __construct(array $args = [])

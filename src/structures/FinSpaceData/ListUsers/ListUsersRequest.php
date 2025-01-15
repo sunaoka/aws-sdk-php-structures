@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\ListUsers;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
+ * @property string|null $nextToken
  * @property int<1, 100> $maxResults
  */
 class ListUsersRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
+     *     nextToken?: string|null,
      *     maxResults: int<1, 100>
      * } $args
      */

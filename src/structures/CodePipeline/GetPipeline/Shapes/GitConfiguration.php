@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $sourceActionName
- * @property list<GitPushFilter> $push
- * @property list<GitPullRequestFilter> $pullRequest
+ * @property list<GitPushFilter>|null $push
+ * @property list<GitPullRequestFilter>|null $pullRequest
  */
 class GitConfiguration extends Shape
 {
     /**
      * @param array{
      *     sourceActionName: string,
-     *     push?: list<GitPushFilter>,
-     *     pullRequest?: list<GitPullRequestFilter>
+     *     push?: list<GitPushFilter>|null,
+     *     pullRequest?: list<GitPullRequestFilter>|null
      * } $args
      */
     public function __construct(array $args)

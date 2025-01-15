@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EdgeDeploymentPlanName
- * @property string $NextToken
- * @property int<min, 10> $MaxResults
+ * @property string|null $NextToken
+ * @property int<min, 10>|null $MaxResults
  */
 class DescribeEdgeDeploymentPlanRequest extends Request
 {
     /**
      * @param array{
      *     EdgeDeploymentPlanName: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<min, 10>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<min, 10>|null
      * } $args
      */
     public function __construct(array $args)

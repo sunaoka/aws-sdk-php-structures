@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Efs\DescribeAccountPreferences;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<1, max> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, max>|null $MaxResults
  */
 class DescribeAccountPreferencesRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<1, max>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

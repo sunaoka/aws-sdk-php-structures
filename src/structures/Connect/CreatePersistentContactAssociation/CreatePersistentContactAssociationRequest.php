@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InitialContactId
  * @property 'ENTIRE_PAST_SESSION'|'FROM_SEGMENT' $RehydrationType
  * @property string $SourceContactId
- * @property string $ClientToken
+ * @property string|null $ClientToken
  */
 class CreatePersistentContactAssociationRequest extends Request
 {
@@ -19,7 +19,7 @@ class CreatePersistentContactAssociationRequest extends Request
      *     InitialContactId: string,
      *     RehydrationType: 'ENTIRE_PAST_SESSION'|'FROM_SEGMENT',
      *     SourceContactId: string,
-     *     ClientToken?: string
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

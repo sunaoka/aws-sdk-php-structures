@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $applicationId
  * @property string $applicationName
- * @property string $applicationDescription
+ * @property string|null $applicationDescription
  * @property string $applicationUrl
- * @property int $applicationCreationDate
- * @property int $applicationLastUpdateDate
- * @property 'CREATING'|'DELETING'|'ACTIVE'|'CREATE_FAILED'|'DELETE_FAILED' $applicationState
+ * @property int|null $applicationCreationDate
+ * @property int|null $applicationLastUpdateDate
+ * @property 'CREATING'|'DELETING'|'ACTIVE'|'CREATE_FAILED'|'DELETE_FAILED'|null $applicationState
  */
 class ApplicationSummary extends Shape
 {
@@ -19,11 +19,11 @@ class ApplicationSummary extends Shape
      * @param array{
      *     applicationId: string,
      *     applicationName: string,
-     *     applicationDescription?: string,
+     *     applicationDescription?: string|null,
      *     applicationUrl: string,
-     *     applicationCreationDate?: int,
-     *     applicationLastUpdateDate?: int,
-     *     applicationState?: 'CREATING'|'DELETING'|'ACTIVE'|'CREATE_FAILED'|'DELETE_FAILED'
+     *     applicationCreationDate?: int|null,
+     *     applicationLastUpdateDate?: int|null,
+     *     applicationState?: 'CREATING'|'DELETING'|'ACTIVE'|'CREATE_FAILED'|'DELETE_FAILED'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SnowDeviceManagement\ListDevices;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $jobId
- * @property int<1, 100> $maxResults
- * @property string $nextToken
+ * @property string|null $jobId
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListDevicesRequest extends Request
 {
     /**
      * @param array{
-     *     jobId?: string,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string
+     *     jobId?: string|null,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

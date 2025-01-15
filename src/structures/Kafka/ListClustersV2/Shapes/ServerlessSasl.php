@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Kafka\ListClustersV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Iam $Iam
+ * @property Iam|null $Iam
  */
 class ServerlessSasl extends Shape
 {
     /**
-     * @param array{Iam?: Iam} $args
+     * @param array{Iam?: Iam|null} $args
      */
     public function __construct(array $args = [])
     {

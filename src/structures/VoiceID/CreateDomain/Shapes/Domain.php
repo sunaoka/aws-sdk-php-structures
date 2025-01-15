@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\VoiceID\CreateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $Description
- * @property string $DomainId
- * @property 'ACTIVE'|'PENDING'|'SUSPENDED' $DomainStatus
- * @property string $Name
- * @property ServerSideEncryptionConfiguration $ServerSideEncryptionConfiguration
- * @property ServerSideEncryptionUpdateDetails $ServerSideEncryptionUpdateDetails
- * @property \Aws\Api\DateTimeResult $UpdatedAt
- * @property WatchlistDetails $WatchlistDetails
+ * @property string|null $Arn
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $Description
+ * @property string|null $DomainId
+ * @property 'ACTIVE'|'PENDING'|'SUSPENDED'|null $DomainStatus
+ * @property string|null $Name
+ * @property ServerSideEncryptionConfiguration|null $ServerSideEncryptionConfiguration
+ * @property ServerSideEncryptionUpdateDetails|null $ServerSideEncryptionUpdateDetails
+ * @property \Aws\Api\DateTimeResult|null $UpdatedAt
+ * @property WatchlistDetails|null $WatchlistDetails
  */
 class Domain extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     DomainId?: string,
-     *     DomainStatus?: 'ACTIVE'|'PENDING'|'SUSPENDED',
-     *     Name?: string,
-     *     ServerSideEncryptionConfiguration?: ServerSideEncryptionConfiguration,
-     *     ServerSideEncryptionUpdateDetails?: ServerSideEncryptionUpdateDetails,
-     *     UpdatedAt?: \Aws\Api\DateTimeResult,
-     *     WatchlistDetails?: WatchlistDetails
+     *     Arn?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     DomainId?: string|null,
+     *     DomainStatus?: 'ACTIVE'|'PENDING'|'SUSPENDED'|null,
+     *     Name?: string|null,
+     *     ServerSideEncryptionConfiguration?: ServerSideEncryptionConfiguration|null,
+     *     ServerSideEncryptionUpdateDetails?: ServerSideEncryptionUpdateDetails|null,
+     *     UpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     WatchlistDetails?: WatchlistDetails|null
      * } $args
      */
     public function __construct(array $args = [])

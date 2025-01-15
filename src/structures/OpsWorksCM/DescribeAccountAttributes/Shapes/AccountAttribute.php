@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpsWorksCM\DescribeAccountAttributes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property int $Maximum
- * @property int $Used
+ * @property string|null $Name
+ * @property int|null $Maximum
+ * @property int|null $Used
  */
 class AccountAttribute extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Maximum?: int,
-     *     Used?: int
+     *     Name?: string|null,
+     *     Maximum?: int|null,
+     *     Used?: int|null
      * } $args
      */
     public function __construct(array $args = [])

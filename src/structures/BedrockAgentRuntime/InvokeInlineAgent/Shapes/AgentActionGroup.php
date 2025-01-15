@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ActionGroupExecutor $actionGroupExecutor
+ * @property ActionGroupExecutor|null $actionGroupExecutor
  * @property string $actionGroupName
- * @property APISchema $apiSchema
- * @property string $description
- * @property FunctionSchema $functionSchema
- * @property 'AMAZON.UserInput'|'AMAZON.CodeInterpreter' $parentActionGroupSignature
+ * @property APISchema|null $apiSchema
+ * @property string|null $description
+ * @property FunctionSchema|null $functionSchema
+ * @property 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|null $parentActionGroupSignature
  */
 class AgentActionGroup extends Shape
 {
     /**
      * @param array{
-     *     actionGroupExecutor?: ActionGroupExecutor,
+     *     actionGroupExecutor?: ActionGroupExecutor|null,
      *     actionGroupName: string,
-     *     apiSchema?: APISchema,
-     *     description?: string,
-     *     functionSchema?: FunctionSchema,
-     *     parentActionGroupSignature?: 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'
+     *     apiSchema?: APISchema|null,
+     *     description?: string|null,
+     *     functionSchema?: FunctionSchema|null,
+     *     parentActionGroupSignature?: 'AMAZON.UserInput'|'AMAZON.CodeInterpreter'|null
      * } $args
      */
     public function __construct(array $args)

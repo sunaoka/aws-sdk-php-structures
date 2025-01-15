@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodePipeline\PutJobSuccessResult\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $summary
- * @property string $externalExecutionId
- * @property int<0, 100> $percentComplete
+ * @property string|null $summary
+ * @property string|null $externalExecutionId
+ * @property int<0, 100>|null $percentComplete
  */
 class ExecutionDetails extends Shape
 {
     /**
      * @param array{
-     *     summary?: string,
-     *     externalExecutionId?: string,
-     *     percentComplete?: int<0, 100>
+     *     summary?: string|null,
+     *     externalExecutionId?: string|null,
+     *     percentComplete?: int<0, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

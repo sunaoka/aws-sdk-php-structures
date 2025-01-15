@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Synthetics\UpdateCanary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<BaseScreenshot> $BaseScreenshots
+ * @property list<BaseScreenshot>|null $BaseScreenshots
  * @property string $BaseCanaryRunId
  */
 class VisualReferenceInput extends Shape
 {
     /**
      * @param array{
-     *     BaseScreenshots?: list<BaseScreenshot>,
+     *     BaseScreenshots?: list<BaseScreenshot>|null,
      *     BaseCanaryRunId: string
      * } $args
      */

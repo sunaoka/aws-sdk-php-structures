@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\TimestreamWrite\CreateBatchLoadTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ColumnSeparator
- * @property string $EscapeChar
- * @property string $QuoteChar
- * @property string $NullValue
- * @property bool $TrimWhiteSpace
+ * @property string|null $ColumnSeparator
+ * @property string|null $EscapeChar
+ * @property string|null $QuoteChar
+ * @property string|null $NullValue
+ * @property bool|null $TrimWhiteSpace
  */
 class CsvConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ColumnSeparator?: string,
-     *     EscapeChar?: string,
-     *     QuoteChar?: string,
-     *     NullValue?: string,
-     *     TrimWhiteSpace?: bool
+     *     ColumnSeparator?: string|null,
+     *     EscapeChar?: string|null,
+     *     QuoteChar?: string|null,
+     *     NullValue?: string|null,
+     *     TrimWhiteSpace?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaStoreData\ListItems;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Path
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property string|null $Path
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListItemsRequest extends Request
 {
     /**
      * @param array{
-     *     Path?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     Path?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $OriginalMessageId
  * @property string $BounceSender
- * @property string $Explanation
- * @property Shapes\MessageDsn $MessageDsn
+ * @property string|null $Explanation
+ * @property Shapes\MessageDsn|null $MessageDsn
  * @property list<Shapes\BouncedRecipientInfo> $BouncedRecipientInfoList
- * @property string $BounceSenderArn
+ * @property string|null $BounceSenderArn
  */
 class SendBounceRequest extends Request
 {
@@ -18,10 +18,10 @@ class SendBounceRequest extends Request
      * @param array{
      *     OriginalMessageId: string,
      *     BounceSender: string,
-     *     Explanation?: string,
-     *     MessageDsn?: Shapes\MessageDsn,
+     *     Explanation?: string|null,
+     *     MessageDsn?: Shapes\MessageDsn|null,
      *     BouncedRecipientInfoList: list<Shapes\BouncedRecipientInfo>,
-     *     BounceSenderArn?: string
+     *     BounceSenderArn?: string|null
      * } $args
      */
     public function __construct(array $args)

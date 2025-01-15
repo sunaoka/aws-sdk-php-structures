@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\BatchRead\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ObjectIdentifierAndLinkNameTuple> $ParentLinks
- * @property string $NextToken
+ * @property list<ObjectIdentifierAndLinkNameTuple>|null $ParentLinks
+ * @property string|null $NextToken
  */
 class BatchListObjectParentsResponse extends Shape
 {
     /**
      * @param array{
-     *     ParentLinks?: list<ObjectIdentifierAndLinkNameTuple>,
-     *     NextToken?: string
+     *     ParentLinks?: list<ObjectIdentifierAndLinkNameTuple>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

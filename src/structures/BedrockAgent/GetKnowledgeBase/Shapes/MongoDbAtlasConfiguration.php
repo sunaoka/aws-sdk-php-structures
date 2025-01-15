@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $credentialsSecretArn
  * @property string $databaseName
  * @property string $endpoint
- * @property string $endpointServiceName
+ * @property string|null $endpointServiceName
  * @property MongoDbAtlasFieldMapping $fieldMapping
  * @property string $vectorIndexName
  */
@@ -21,7 +21,7 @@ class MongoDbAtlasConfiguration extends Shape
      *     credentialsSecretArn: string,
      *     databaseName: string,
      *     endpoint: string,
-     *     endpointServiceName?: string,
+     *     endpointServiceName?: string|null,
      *     fieldMapping: MongoDbAtlasFieldMapping,
      *     vectorIndexName: string
      * } $args

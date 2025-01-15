@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\DeleteBackendAPI\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'OPTIMISTIC_CONCURRENCY'|'LAMBDA'|'AUTOMERGE'|'NONE' $ResolutionStrategy
+ * @property 'OPTIMISTIC_CONCURRENCY'|'LAMBDA'|'AUTOMERGE'|'NONE'|null $ResolutionStrategy
  */
 class BackendAPIConflictResolution extends Shape
 {
     /**
-     * @param array{ResolutionStrategy?: 'OPTIMISTIC_CONCURRENCY'|'LAMBDA'|'AUTOMERGE'|'NONE'} $args
+     * @param array{ResolutionStrategy?: 'OPTIMISTIC_CONCURRENCY'|'LAMBDA'|'AUTOMERGE'|'NONE'|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SnowBall\CreateCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BucketArn
- * @property KeyRange $KeyRange
- * @property list<TargetOnDeviceService> $TargetOnDeviceServices
+ * @property string|null $BucketArn
+ * @property KeyRange|null $KeyRange
+ * @property list<TargetOnDeviceService>|null $TargetOnDeviceServices
  */
 class S3Resource extends Shape
 {
     /**
      * @param array{
-     *     BucketArn?: string,
-     *     KeyRange?: KeyRange,
-     *     TargetOnDeviceServices?: list<TargetOnDeviceService>
+     *     BucketArn?: string|null,
+     *     KeyRange?: KeyRange|null,
+     *     TargetOnDeviceServices?: list<TargetOnDeviceService>|null
      * } $args
      */
     public function __construct(array $args = [])

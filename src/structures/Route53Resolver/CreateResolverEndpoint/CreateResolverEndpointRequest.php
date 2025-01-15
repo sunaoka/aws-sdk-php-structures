@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CreatorRequestId
- * @property string $Name
+ * @property string|null $Name
  * @property list<string> $SecurityGroupIds
  * @property 'INBOUND'|'OUTBOUND' $Direction
  * @property list<Shapes\IpAddressRequest> $IpAddresses
- * @property string $OutpostArn
- * @property string $PreferredInstanceType
- * @property list<Shapes\Tag> $Tags
- * @property 'IPV6'|'IPV4'|'DUALSTACK' $ResolverEndpointType
- * @property list<'DoH'|'Do53'|'DoH-FIPS'> $Protocols
+ * @property string|null $OutpostArn
+ * @property string|null $PreferredInstanceType
+ * @property list<Shapes\Tag>|null $Tags
+ * @property 'IPV6'|'IPV4'|'DUALSTACK'|null $ResolverEndpointType
+ * @property list<'DoH'|'Do53'|'DoH-FIPS'>|null $Protocols
  */
 class CreateResolverEndpointRequest extends Request
 {
     /**
      * @param array{
      *     CreatorRequestId: string,
-     *     Name?: string,
+     *     Name?: string|null,
      *     SecurityGroupIds: list<string>,
      *     Direction: 'INBOUND'|'OUTBOUND',
      *     IpAddresses: list<Shapes\IpAddressRequest>,
-     *     OutpostArn?: string,
-     *     PreferredInstanceType?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     ResolverEndpointType?: 'IPV6'|'IPV4'|'DUALSTACK',
-     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>
+     *     OutpostArn?: string|null,
+     *     PreferredInstanceType?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ResolverEndpointType?: 'IPV6'|'IPV4'|'DUALSTACK'|null,
+     *     Protocols?: list<'DoH'|'Do53'|'DoH-FIPS'>|null
      * } $args
      */
     public function __construct(array $args)

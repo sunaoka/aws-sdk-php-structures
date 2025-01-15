@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\AwsSecurityFindingFilters $Filters
- * @property Shapes\NoteUpdate $Note
- * @property 'ACTIVE'|'ARCHIVED' $RecordState
+ * @property Shapes\NoteUpdate|null $Note
+ * @property 'ACTIVE'|'ARCHIVED'|null $RecordState
  */
 class UpdateFindingsRequest extends Request
 {
     /**
      * @param array{
      *     Filters: Shapes\AwsSecurityFindingFilters,
-     *     Note?: Shapes\NoteUpdate,
-     *     RecordState?: 'ACTIVE'|'ARCHIVED'
+     *     Note?: Shapes\NoteUpdate|null,
+     *     RecordState?: 'ACTIVE'|'ARCHIVED'|null
      * } $args
      */
     public function __construct(array $args)

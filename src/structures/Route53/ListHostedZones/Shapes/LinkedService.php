@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Route53\ListHostedZones\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServicePrincipal
- * @property string $Description
+ * @property string|null $ServicePrincipal
+ * @property string|null $Description
  */
 class LinkedService extends Shape
 {
     /**
      * @param array{
-     *     ServicePrincipal?: string,
-     *     Description?: string
+     *     ServicePrincipal?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

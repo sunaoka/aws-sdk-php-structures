@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetECSServiceRecommendationPro
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Cpu'|'Memory' $name
- * @property list<\Aws\Api\DateTimeResult> $timestamps
- * @property list<double> $upperBoundValues
- * @property list<double> $lowerBoundValues
+ * @property 'Cpu'|'Memory'|null $name
+ * @property list<\Aws\Api\DateTimeResult>|null $timestamps
+ * @property list<double>|null $upperBoundValues
+ * @property list<double>|null $lowerBoundValues
  */
 class ECSServiceProjectedMetric extends Shape
 {
     /**
      * @param array{
-     *     name?: 'Cpu'|'Memory',
-     *     timestamps?: list<\Aws\Api\DateTimeResult>,
-     *     upperBoundValues?: list<double>,
-     *     lowerBoundValues?: list<double>
+     *     name?: 'Cpu'|'Memory'|null,
+     *     timestamps?: list<\Aws\Api\DateTimeResult>|null,
+     *     upperBoundValues?: list<double>|null,
+     *     lowerBoundValues?: list<double>|null
      * } $args
      */
     public function __construct(array $args = [])

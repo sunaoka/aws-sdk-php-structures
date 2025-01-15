@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PolicyId
- * @property bool $DeleteAllPolicyResources
+ * @property bool|null $DeleteAllPolicyResources
  */
 class DeletePolicyRequest extends Request
 {
     /**
      * @param array{
      *     PolicyId: string,
-     *     DeleteAllPolicyResources?: bool
+     *     DeleteAllPolicyResources?: bool|null
      * } $args
      */
     public function __construct(array $args)

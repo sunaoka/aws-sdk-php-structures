@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ProtectionGroup> $ProtectionGroups
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListProtectionGroupsResponse extends Response
 {

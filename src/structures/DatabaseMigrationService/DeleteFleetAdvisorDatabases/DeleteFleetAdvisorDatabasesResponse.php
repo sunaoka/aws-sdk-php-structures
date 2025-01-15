@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DeleteFleetAdvisorData
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $DatabaseIds
+ * @property list<string>|null $DatabaseIds
  */
 class DeleteFleetAdvisorDatabasesResponse extends Response
 {

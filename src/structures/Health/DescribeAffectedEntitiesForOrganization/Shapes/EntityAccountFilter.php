@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $eventArn
- * @property string $awsAccountId
- * @property list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'> $statusCodes
+ * @property string|null $awsAccountId
+ * @property list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'>|null $statusCodes
  */
 class EntityAccountFilter extends Shape
 {
     /**
      * @param array{
      *     eventArn: string,
-     *     awsAccountId?: string,
-     *     statusCodes?: list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'>
+     *     awsAccountId?: string|null,
+     *     statusCodes?: list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'>|null
      * } $args
      */
     public function __construct(array $args)

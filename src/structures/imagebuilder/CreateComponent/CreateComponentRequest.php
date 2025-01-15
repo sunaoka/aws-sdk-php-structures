@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property string $semanticVersion
- * @property string $description
- * @property string $changeDescription
+ * @property string|null $description
+ * @property string|null $changeDescription
  * @property 'Windows'|'Linux'|'macOS' $platform
- * @property list<string> $supportedOsVersions
- * @property string $data
- * @property string $uri
- * @property string $kmsKeyId
- * @property array<string, string> $tags
+ * @property list<string>|null $supportedOsVersions
+ * @property string|null $data
+ * @property string|null $uri
+ * @property string|null $kmsKeyId
+ * @property array<string, string>|null $tags
  * @property string $clientToken
  */
 class CreateComponentRequest extends Request
@@ -23,14 +23,14 @@ class CreateComponentRequest extends Request
      * @param array{
      *     name: string,
      *     semanticVersion: string,
-     *     description?: string,
-     *     changeDescription?: string,
+     *     description?: string|null,
+     *     changeDescription?: string|null,
      *     platform: 'Windows'|'Linux'|'macOS',
-     *     supportedOsVersions?: list<string>,
-     *     data?: string,
-     *     uri?: string,
-     *     kmsKeyId?: string,
-     *     tags?: array<string, string>,
+     *     supportedOsVersions?: list<string>|null,
+     *     data?: string|null,
+     *     uri?: string|null,
+     *     kmsKeyId?: string|null,
+     *     tags?: array<string, string>|null,
      *     clientToken: string
      * } $args
      */

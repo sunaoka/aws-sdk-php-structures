@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\GetAnalyzer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $unusedAccessAge
- * @property AnalysisRule $analysisRule
+ * @property int|null $unusedAccessAge
+ * @property AnalysisRule|null $analysisRule
  */
 class UnusedAccessConfiguration extends Shape
 {
     /**
      * @param array{
-     *     unusedAccessAge?: int,
-     *     analysisRule?: AnalysisRule
+     *     unusedAccessAge?: int|null,
+     *     analysisRule?: AnalysisRule|null
      * } $args
      */
     public function __construct(array $args = [])

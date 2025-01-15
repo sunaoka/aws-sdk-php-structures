@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $RoutingControlArn
  * @property 'On'|'Off' $RoutingControlState
- * @property string $RoutingControlName
+ * @property string|null $RoutingControlName
  */
 class GetRoutingControlStateResponse extends Response
 {

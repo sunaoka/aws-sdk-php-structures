@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'BIN_COUNT'|'BIN_WIDTH' $SelectedBinType
- * @property BinCountOptions $BinCount
- * @property BinWidthOptions $BinWidth
- * @property double $StartValue
+ * @property 'BIN_COUNT'|'BIN_WIDTH'|null $SelectedBinType
+ * @property BinCountOptions|null $BinCount
+ * @property BinWidthOptions|null $BinWidth
+ * @property double|null $StartValue
  */
 class HistogramBinOptions extends Shape
 {
     /**
      * @param array{
-     *     SelectedBinType?: 'BIN_COUNT'|'BIN_WIDTH',
-     *     BinCount?: BinCountOptions,
-     *     BinWidth?: BinWidthOptions,
-     *     StartValue?: double
+     *     SelectedBinType?: 'BIN_COUNT'|'BIN_WIDTH'|null,
+     *     BinCount?: BinCountOptions|null,
+     *     BinWidth?: BinWidthOptions|null,
+     *     StartValue?: double|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Platform'|'Vpc' $RepositoryAccessMode
- * @property RepositoryAuthConfig $RepositoryAuthConfig
+ * @property RepositoryAuthConfig|null $RepositoryAuthConfig
  */
 class ImageConfig extends Shape
 {
     /**
      * @param array{
      *     RepositoryAccessMode: 'Platform'|'Vpc',
-     *     RepositoryAuthConfig?: RepositoryAuthConfig
+     *     RepositoryAuthConfig?: RepositoryAuthConfig|null
      * } $args
      */
     public function __construct(array $args)

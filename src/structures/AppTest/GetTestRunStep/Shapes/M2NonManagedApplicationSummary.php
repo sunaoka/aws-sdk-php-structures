@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $vpcEndpointServiceName
  * @property int $listenerPort
  * @property 'BluAge' $runtime
- * @property string $webAppName
+ * @property string|null $webAppName
  */
 class M2NonManagedApplicationSummary extends Shape
 {
@@ -17,7 +17,7 @@ class M2NonManagedApplicationSummary extends Shape
      *     vpcEndpointServiceName: string,
      *     listenerPort: int,
      *     runtime: 'BluAge',
-     *     webAppName?: string
+     *     webAppName?: string|null
      * } $args
      */
     public function __construct(array $args)

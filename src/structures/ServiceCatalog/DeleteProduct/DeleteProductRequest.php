@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DeleteProduct;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $Id
  */
 class DeleteProductRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     Id: string
      * } $args
      */

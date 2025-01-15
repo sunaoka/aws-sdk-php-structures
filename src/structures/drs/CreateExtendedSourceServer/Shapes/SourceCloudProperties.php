@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\drs\CreateExtendedSourceServer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $originAccountID
- * @property string $originAvailabilityZone
- * @property string $originRegion
- * @property string $sourceOutpostArn
+ * @property string|null $originAccountID
+ * @property string|null $originAvailabilityZone
+ * @property string|null $originRegion
+ * @property string|null $sourceOutpostArn
  */
 class SourceCloudProperties extends Shape
 {
     /**
      * @param array{
-     *     originAccountID?: string,
-     *     originAvailabilityZone?: string,
-     *     originRegion?: string,
-     *     sourceOutpostArn?: string
+     *     originAccountID?: string|null,
+     *     originAvailabilityZone?: string|null,
+     *     originRegion?: string|null,
+     *     sourceOutpostArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\DeleteMultiplex\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EntitlementArn
+ * @property string|null $EntitlementArn
  */
 class MultiplexMediaConnectOutputDestinationSettings extends Shape
 {
     /**
-     * @param array{EntitlementArn?: string} $args
+     * @param array{EntitlementArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

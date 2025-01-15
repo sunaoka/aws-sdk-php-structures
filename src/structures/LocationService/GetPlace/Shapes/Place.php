@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\LocationService\GetPlace\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Label
+ * @property string|null $Label
  * @property PlaceGeometry $Geometry
- * @property string $AddressNumber
- * @property string $Street
- * @property string $Neighborhood
- * @property string $Municipality
- * @property string $SubRegion
- * @property string $Region
- * @property string $Country
- * @property string $PostalCode
- * @property bool $Interpolated
- * @property TimeZone $TimeZone
- * @property string $UnitType
- * @property string $UnitNumber
- * @property list<string> $Categories
- * @property list<string> $SupplementalCategories
- * @property string $SubMunicipality
+ * @property string|null $AddressNumber
+ * @property string|null $Street
+ * @property string|null $Neighborhood
+ * @property string|null $Municipality
+ * @property string|null $SubRegion
+ * @property string|null $Region
+ * @property string|null $Country
+ * @property string|null $PostalCode
+ * @property bool|null $Interpolated
+ * @property TimeZone|null $TimeZone
+ * @property string|null $UnitType
+ * @property string|null $UnitNumber
+ * @property list<string>|null $Categories
+ * @property list<string>|null $SupplementalCategories
+ * @property string|null $SubMunicipality
  */
 class Place extends Shape
 {
     /**
      * @param array{
-     *     Label?: string,
+     *     Label?: string|null,
      *     Geometry: PlaceGeometry,
-     *     AddressNumber?: string,
-     *     Street?: string,
-     *     Neighborhood?: string,
-     *     Municipality?: string,
-     *     SubRegion?: string,
-     *     Region?: string,
-     *     Country?: string,
-     *     PostalCode?: string,
-     *     Interpolated?: bool,
-     *     TimeZone?: TimeZone,
-     *     UnitType?: string,
-     *     UnitNumber?: string,
-     *     Categories?: list<string>,
-     *     SupplementalCategories?: list<string>,
-     *     SubMunicipality?: string
+     *     AddressNumber?: string|null,
+     *     Street?: string|null,
+     *     Neighborhood?: string|null,
+     *     Municipality?: string|null,
+     *     SubRegion?: string|null,
+     *     Region?: string|null,
+     *     Country?: string|null,
+     *     PostalCode?: string|null,
+     *     Interpolated?: bool|null,
+     *     TimeZone?: TimeZone|null,
+     *     UnitType?: string|null,
+     *     UnitNumber?: string|null,
+     *     Categories?: list<string>|null,
+     *     SupplementalCategories?: list<string>|null,
+     *     SubMunicipality?: string|null
      * } $args
      */
     public function __construct(array $args)

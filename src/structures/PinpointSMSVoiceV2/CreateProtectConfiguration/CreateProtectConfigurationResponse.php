@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $CreatedTimestamp
  * @property bool $AccountDefault
  * @property bool $DeletionProtectionEnabled
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateProtectConfigurationResponse extends Response
 {

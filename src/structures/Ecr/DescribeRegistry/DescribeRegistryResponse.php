@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ecr\DescribeRegistry;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $registryId
- * @property Shapes\ReplicationConfiguration $replicationConfiguration
+ * @property string|null $registryId
+ * @property Shapes\ReplicationConfiguration|null $replicationConfiguration
  */
 class DescribeRegistryResponse extends Response
 {

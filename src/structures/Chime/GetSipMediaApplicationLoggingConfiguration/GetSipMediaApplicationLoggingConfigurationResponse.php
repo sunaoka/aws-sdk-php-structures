@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Chime\GetSipMediaApplicationLoggingConfiguratio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\SipMediaApplicationLoggingConfiguration $SipMediaApplicationLoggingConfiguration
+ * @property Shapes\SipMediaApplicationLoggingConfiguration|null $SipMediaApplicationLoggingConfiguration
  */
 class GetSipMediaApplicationLoggingConfigurationResponse extends Response
 {

@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeStaleSecurityGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
- * @property int<5, 255> $MaxResults
- * @property string $NextToken
+ * @property bool|null $DryRun
+ * @property int<5, 255>|null $MaxResults
+ * @property string|null $NextToken
  * @property string $VpcId
  */
 class DescribeStaleSecurityGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
-     *     MaxResults?: int<5, 255>,
-     *     NextToken?: string,
+     *     DryRun?: bool|null,
+     *     MaxResults?: int<5, 255>|null,
+     *     NextToken?: string|null,
      *     VpcId: string
      * } $args
      */

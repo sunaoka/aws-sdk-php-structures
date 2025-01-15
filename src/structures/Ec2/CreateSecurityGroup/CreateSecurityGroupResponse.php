@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateSecurityGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $GroupId
- * @property list<Shapes\Tag> $Tags
- * @property string $SecurityGroupArn
+ * @property string|null $GroupId
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $SecurityGroupArn
  */
 class CreateSecurityGroupResponse extends Response
 {

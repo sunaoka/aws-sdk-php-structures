@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DescribeProtectConfiguration
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ProtectConfigurationInformation> $ProtectConfigurations
- * @property string $NextToken
+ * @property list<Shapes\ProtectConfigurationInformation>|null $ProtectConfigurations
+ * @property string|null $NextToken
  */
 class DescribeProtectConfigurationsResponse extends Response
 {

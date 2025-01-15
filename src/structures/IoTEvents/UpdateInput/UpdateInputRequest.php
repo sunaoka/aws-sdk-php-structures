@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $inputName
- * @property string $inputDescription
+ * @property string|null $inputDescription
  * @property Shapes\InputDefinition $inputDefinition
  */
 class UpdateInputRequest extends Request
@@ -14,7 +14,7 @@ class UpdateInputRequest extends Request
     /**
      * @param array{
      *     inputName: string,
-     *     inputDescription?: string,
+     *     inputDescription?: string|null,
      *     inputDefinition: Shapes\InputDefinition
      * } $args
      */

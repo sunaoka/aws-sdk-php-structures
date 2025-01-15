@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\RedshiftDataAPIService\ExecuteStatement;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
- * @property string $ClusterIdentifier
- * @property string $Database
- * @property string $DbUser
- * @property list<Shapes\SqlParameter> $Parameters
- * @property 'JSON'|'CSV' $ResultFormat
- * @property string $SecretArn
- * @property string $SessionId
- * @property int<0, 86400> $SessionKeepAliveSeconds
+ * @property string|null $ClientToken
+ * @property string|null $ClusterIdentifier
+ * @property string|null $Database
+ * @property string|null $DbUser
+ * @property list<Shapes\SqlParameter>|null $Parameters
+ * @property 'JSON'|'CSV'|null $ResultFormat
+ * @property string|null $SecretArn
+ * @property string|null $SessionId
+ * @property int<0, 86400>|null $SessionKeepAliveSeconds
  * @property string $Sql
- * @property string $StatementName
- * @property bool $WithEvent
- * @property string $WorkgroupName
+ * @property string|null $StatementName
+ * @property bool|null $WithEvent
+ * @property string|null $WorkgroupName
  */
 class ExecuteStatementRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
-     *     ClusterIdentifier?: string,
-     *     Database?: string,
-     *     DbUser?: string,
-     *     Parameters?: list<Shapes\SqlParameter>,
-     *     ResultFormat?: 'JSON'|'CSV',
-     *     SecretArn?: string,
-     *     SessionId?: string,
-     *     SessionKeepAliveSeconds?: int<0, 86400>,
+     *     ClientToken?: string|null,
+     *     ClusterIdentifier?: string|null,
+     *     Database?: string|null,
+     *     DbUser?: string|null,
+     *     Parameters?: list<Shapes\SqlParameter>|null,
+     *     ResultFormat?: 'JSON'|'CSV'|null,
+     *     SecretArn?: string|null,
+     *     SessionId?: string|null,
+     *     SessionKeepAliveSeconds?: int<0, 86400>|null,
      *     Sql: string,
-     *     StatementName?: string,
-     *     WithEvent?: bool,
-     *     WorkgroupName?: string
+     *     StatementName?: string|null,
+     *     WithEvent?: bool|null,
+     *     WorkgroupName?: string|null
      * } $args
      */
     public function __construct(array $args)

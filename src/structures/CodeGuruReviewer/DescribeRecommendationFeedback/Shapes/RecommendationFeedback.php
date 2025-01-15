@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CodeGuruReviewer\DescribeRecommendationFeedback
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CodeReviewArn
- * @property string $RecommendationId
- * @property list<'ThumbsUp'|'ThumbsDown'> $Reactions
- * @property string $UserId
- * @property \Aws\Api\DateTimeResult $CreatedTimeStamp
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimeStamp
+ * @property string|null $CodeReviewArn
+ * @property string|null $RecommendationId
+ * @property list<'ThumbsUp'|'ThumbsDown'>|null $Reactions
+ * @property string|null $UserId
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimeStamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimeStamp
  */
 class RecommendationFeedback extends Shape
 {
     /**
      * @param array{
-     *     CodeReviewArn?: string,
-     *     RecommendationId?: string,
-     *     Reactions?: list<'ThumbsUp'|'ThumbsDown'>,
-     *     UserId?: string,
-     *     CreatedTimeStamp?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTimeStamp?: \Aws\Api\DateTimeResult
+     *     CodeReviewArn?: string|null,
+     *     RecommendationId?: string|null,
+     *     Reactions?: list<'ThumbsUp'|'ThumbsDown'>|null,
+     *     UserId?: string|null,
+     *     CreatedTimeStamp?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTimeStamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

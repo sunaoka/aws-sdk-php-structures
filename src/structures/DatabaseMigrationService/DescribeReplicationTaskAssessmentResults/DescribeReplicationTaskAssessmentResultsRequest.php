@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeReplicationTas
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ReplicationTaskArn
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $ReplicationTaskArn
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeReplicationTaskAssessmentResultsRequest extends Request
 {
     /**
      * @param array{
-     *     ReplicationTaskArn?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     ReplicationTaskArn?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

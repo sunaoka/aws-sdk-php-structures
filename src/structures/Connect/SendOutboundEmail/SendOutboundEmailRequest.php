@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property Shapes\EmailAddressInfo $FromEmailAddress
  * @property Shapes\EmailAddressInfo $DestinationEmailAddress
- * @property Shapes\OutboundAdditionalRecipients $AdditionalRecipients
+ * @property Shapes\OutboundAdditionalRecipients|null $AdditionalRecipients
  * @property Shapes\OutboundEmailContent $EmailMessage
  * @property 'GENERAL'|'CAMPAIGN' $TrafficType
- * @property Shapes\SourceCampaign $SourceCampaign
- * @property string $ClientToken
+ * @property Shapes\SourceCampaign|null $SourceCampaign
+ * @property string|null $ClientToken
  */
 class SendOutboundEmailRequest extends Request
 {
@@ -21,11 +21,11 @@ class SendOutboundEmailRequest extends Request
      *     InstanceId: string,
      *     FromEmailAddress: Shapes\EmailAddressInfo,
      *     DestinationEmailAddress: Shapes\EmailAddressInfo,
-     *     AdditionalRecipients?: Shapes\OutboundAdditionalRecipients,
+     *     AdditionalRecipients?: Shapes\OutboundAdditionalRecipients|null,
      *     EmailMessage: Shapes\OutboundEmailContent,
      *     TrafficType: 'GENERAL'|'CAMPAIGN',
-     *     SourceCampaign?: Shapes\SourceCampaign,
-     *     ClientToken?: string
+     *     SourceCampaign?: Shapes\SourceCampaign|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RadarChartAreaStyleSettings $AreaStyleSettings
+ * @property RadarChartAreaStyleSettings|null $AreaStyleSettings
  */
 class RadarChartSeriesSettings extends Shape
 {
     /**
-     * @param array{AreaStyleSettings?: RadarChartAreaStyleSettings} $args
+     * @param array{AreaStyleSettings?: RadarChartAreaStyleSettings|null} $args
      */
     public function __construct(array $args = [])
     {

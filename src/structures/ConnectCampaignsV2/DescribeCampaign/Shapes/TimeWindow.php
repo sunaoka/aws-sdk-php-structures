@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property OpenHours $openHours
- * @property RestrictedPeriods $restrictedPeriods
+ * @property RestrictedPeriods|null $restrictedPeriods
  */
 class TimeWindow extends Shape
 {
     /**
      * @param array{
      *     openHours: OpenHours,
-     *     restrictedPeriods?: RestrictedPeriods
+     *     restrictedPeriods?: RestrictedPeriods|null
      * } $args
      */
     public function __construct(array $args)

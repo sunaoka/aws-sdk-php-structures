@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\ListProjectMemberships\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GroupDetails $group
- * @property UserDetails $user
+ * @property GroupDetails|null $group
+ * @property UserDetails|null $user
  */
 class MemberDetails extends Shape
 {
     /**
      * @param array{
-     *     group?: GroupDetails,
-     *     user?: UserDetails
+     *     group?: GroupDetails|null,
+     *     user?: UserDetails|null
      * } $args
      */
     public function __construct(array $args = [])

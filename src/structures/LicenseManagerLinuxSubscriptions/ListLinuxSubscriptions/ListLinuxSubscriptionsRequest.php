@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\LicenseManagerLinuxSubscriptions\ListLinuxSubsc
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<Shapes\Filter> $Filters
- * @property int $MaxResults
- * @property string $NextToken
+ * @property list<Shapes\Filter>|null $Filters
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListLinuxSubscriptionsRequest extends Request
 {
     /**
      * @param array{
-     *     Filters?: list<Shapes\Filter>,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     Filters?: list<Shapes\Filter>|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

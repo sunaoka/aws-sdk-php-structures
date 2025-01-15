@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iam\SimulateCustomPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Line
- * @property int $Column
+ * @property int|null $Line
+ * @property int|null $Column
  */
 class Position extends Shape
 {
     /**
      * @param array{
-     *     Line?: int,
-     *     Column?: int
+     *     Line?: int|null,
+     *     Column?: int|null
      * } $args
      */
     public function __construct(array $args = [])

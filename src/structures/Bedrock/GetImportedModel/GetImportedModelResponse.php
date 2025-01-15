@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Bedrock\GetImportedModel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $modelArn
- * @property string $modelName
- * @property string $jobName
- * @property string $jobArn
- * @property Shapes\ModelDataSource $modelDataSource
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property string $modelArchitecture
- * @property string $modelKmsKeyArn
- * @property bool $instructSupported
+ * @property string|null $modelArn
+ * @property string|null $modelName
+ * @property string|null $jobName
+ * @property string|null $jobArn
+ * @property Shapes\ModelDataSource|null $modelDataSource
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property string|null $modelArchitecture
+ * @property string|null $modelKmsKeyArn
+ * @property bool|null $instructSupported
  */
 class GetImportedModelResponse extends Response
 {

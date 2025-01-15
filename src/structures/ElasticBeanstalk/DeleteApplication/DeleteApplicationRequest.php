@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property bool $TerminateEnvByForce
+ * @property bool|null $TerminateEnvByForce
  */
 class DeleteApplicationRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationName: string,
-     *     TerminateEnvByForce?: bool
+     *     TerminateEnvByForce?: bool|null
      * } $args
      */
     public function __construct(array $args)

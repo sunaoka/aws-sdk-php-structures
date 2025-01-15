@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\CodeBuild\BatchGetReports\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property 'TEST'|'CODE_COVERAGE' $type
- * @property string $name
- * @property string $reportGroupArn
- * @property string $executionId
- * @property 'GENERATING'|'SUCCEEDED'|'FAILED'|'INCOMPLETE'|'DELETING' $status
- * @property \Aws\Api\DateTimeResult $created
- * @property \Aws\Api\DateTimeResult $expired
- * @property ReportExportConfig $exportConfig
- * @property bool $truncated
- * @property TestReportSummary $testSummary
- * @property CodeCoverageReportSummary $codeCoverageSummary
+ * @property string|null $arn
+ * @property 'TEST'|'CODE_COVERAGE'|null $type
+ * @property string|null $name
+ * @property string|null $reportGroupArn
+ * @property string|null $executionId
+ * @property 'GENERATING'|'SUCCEEDED'|'FAILED'|'INCOMPLETE'|'DELETING'|null $status
+ * @property \Aws\Api\DateTimeResult|null $created
+ * @property \Aws\Api\DateTimeResult|null $expired
+ * @property ReportExportConfig|null $exportConfig
+ * @property bool|null $truncated
+ * @property TestReportSummary|null $testSummary
+ * @property CodeCoverageReportSummary|null $codeCoverageSummary
  */
 class Report extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     type?: 'TEST'|'CODE_COVERAGE',
-     *     name?: string,
-     *     reportGroupArn?: string,
-     *     executionId?: string,
-     *     status?: 'GENERATING'|'SUCCEEDED'|'FAILED'|'INCOMPLETE'|'DELETING',
-     *     created?: \Aws\Api\DateTimeResult,
-     *     expired?: \Aws\Api\DateTimeResult,
-     *     exportConfig?: ReportExportConfig,
-     *     truncated?: bool,
-     *     testSummary?: TestReportSummary,
-     *     codeCoverageSummary?: CodeCoverageReportSummary
+     *     arn?: string|null,
+     *     type?: 'TEST'|'CODE_COVERAGE'|null,
+     *     name?: string|null,
+     *     reportGroupArn?: string|null,
+     *     executionId?: string|null,
+     *     status?: 'GENERATING'|'SUCCEEDED'|'FAILED'|'INCOMPLETE'|'DELETING'|null,
+     *     created?: \Aws\Api\DateTimeResult|null,
+     *     expired?: \Aws\Api\DateTimeResult|null,
+     *     exportConfig?: ReportExportConfig|null,
+     *     truncated?: bool|null,
+     *     testSummary?: TestReportSummary|null,
+     *     codeCoverageSummary?: CodeCoverageReportSummary|null
      * } $args
      */
     public function __construct(array $args = [])

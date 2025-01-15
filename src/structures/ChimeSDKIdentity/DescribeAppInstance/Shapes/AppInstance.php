@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ChimeSDKIdentity\DescribeAppInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AppInstanceArn
- * @property string $Name
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimestamp
- * @property string $Metadata
+ * @property string|null $AppInstanceArn
+ * @property string|null $Name
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimestamp
+ * @property string|null $Metadata
  */
 class AppInstance extends Shape
 {
     /**
      * @param array{
-     *     AppInstanceArn?: string,
-     *     Name?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     Metadata?: string
+     *     AppInstanceArn?: string|null,
+     *     Name?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     Metadata?: string|null
      * } $args
      */
     public function __construct(array $args = [])

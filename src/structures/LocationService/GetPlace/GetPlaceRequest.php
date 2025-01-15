@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $IndexName
  * @property string $PlaceId
- * @property string $Language
- * @property string $Key
+ * @property string|null $Language
+ * @property string|null $Key
  */
 class GetPlaceRequest extends Request
 {
@@ -16,8 +16,8 @@ class GetPlaceRequest extends Request
      * @param array{
      *     IndexName: string,
      *     PlaceId: string,
-     *     Language?: string,
-     *     Key?: string
+     *     Language?: string|null,
+     *     Key?: string|null
      * } $args
      */
     public function __construct(array $args)

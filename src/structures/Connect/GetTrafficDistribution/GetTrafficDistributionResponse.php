@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\Connect\GetTrafficDistribution;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TelephonyConfig $TelephonyConfig
- * @property string $Id
- * @property string $Arn
- * @property Shapes\SignInConfig $SignInConfig
- * @property Shapes\AgentConfig $AgentConfig
+ * @property Shapes\TelephonyConfig|null $TelephonyConfig
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property Shapes\SignInConfig|null $SignInConfig
+ * @property Shapes\AgentConfig|null $AgentConfig
  */
 class GetTrafficDistributionResponse extends Response
 {

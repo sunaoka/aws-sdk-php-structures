@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Chime\ListChannelMemberships;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ChannelArn
- * @property list<Shapes\ChannelMembershipSummary> $ChannelMemberships
- * @property string $NextToken
+ * @property string|null $ChannelArn
+ * @property list<Shapes\ChannelMembershipSummary>|null $ChannelMemberships
+ * @property string|null $NextToken
  */
 class ListChannelMembershipsResponse extends Response
 {

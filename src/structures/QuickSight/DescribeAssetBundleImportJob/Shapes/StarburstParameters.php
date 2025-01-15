@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Host
  * @property int<1, 65535> $Port
  * @property string $Catalog
- * @property 'GALAXY'|'ENTERPRISE' $ProductType
- * @property string $DatabaseAccessControlRole
- * @property 'PASSWORD'|'TOKEN'|'X509' $AuthenticationType
- * @property OAuthParameters $OAuthParameters
+ * @property 'GALAXY'|'ENTERPRISE'|null $ProductType
+ * @property string|null $DatabaseAccessControlRole
+ * @property 'PASSWORD'|'TOKEN'|'X509'|null $AuthenticationType
+ * @property OAuthParameters|null $OAuthParameters
  */
 class StarburstParameters extends Shape
 {
@@ -20,10 +20,10 @@ class StarburstParameters extends Shape
      *     Host: string,
      *     Port: int<1, 65535>,
      *     Catalog: string,
-     *     ProductType?: 'GALAXY'|'ENTERPRISE',
-     *     DatabaseAccessControlRole?: string,
-     *     AuthenticationType?: 'PASSWORD'|'TOKEN'|'X509',
-     *     OAuthParameters?: OAuthParameters
+     *     ProductType?: 'GALAXY'|'ENTERPRISE'|null,
+     *     DatabaseAccessControlRole?: string|null,
+     *     AuthenticationType?: 'PASSWORD'|'TOKEN'|'X509'|null,
+     *     OAuthParameters?: OAuthParameters|null
      * } $args
      */
     public function __construct(array $args)

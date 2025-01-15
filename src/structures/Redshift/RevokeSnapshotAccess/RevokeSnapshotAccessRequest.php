@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Redshift\RevokeSnapshotAccess;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SnapshotIdentifier
- * @property string $SnapshotArn
- * @property string $SnapshotClusterIdentifier
+ * @property string|null $SnapshotIdentifier
+ * @property string|null $SnapshotArn
+ * @property string|null $SnapshotClusterIdentifier
  * @property string $AccountWithRestoreAccess
  */
 class RevokeSnapshotAccessRequest extends Request
 {
     /**
      * @param array{
-     *     SnapshotIdentifier?: string,
-     *     SnapshotArn?: string,
-     *     SnapshotClusterIdentifier?: string,
+     *     SnapshotIdentifier?: string|null,
+     *     SnapshotArn?: string|null,
+     *     SnapshotClusterIdentifier?: string|null,
      *     AccountWithRestoreAccess: string
      * } $args
      */

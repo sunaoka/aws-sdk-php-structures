@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $WorkflowName
+ * @property string|null $WorkflowName
  * @property 'SCHEDULED'|'CONDITIONAL'|'ON_DEMAND'|'EVENT' $Type
- * @property string $Schedule
- * @property Shapes\Predicate $Predicate
+ * @property string|null $Schedule
+ * @property Shapes\Predicate|null $Predicate
  * @property list<Shapes\Action> $Actions
- * @property string $Description
- * @property bool $StartOnCreation
- * @property array<string, string> $Tags
- * @property Shapes\EventBatchingCondition $EventBatchingCondition
+ * @property string|null $Description
+ * @property bool|null $StartOnCreation
+ * @property array<string, string>|null $Tags
+ * @property Shapes\EventBatchingCondition|null $EventBatchingCondition
  */
 class CreateTriggerRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     WorkflowName?: string,
+     *     WorkflowName?: string|null,
      *     Type: 'SCHEDULED'|'CONDITIONAL'|'ON_DEMAND'|'EVENT',
-     *     Schedule?: string,
-     *     Predicate?: Shapes\Predicate,
+     *     Schedule?: string|null,
+     *     Predicate?: Shapes\Predicate|null,
      *     Actions: list<Shapes\Action>,
-     *     Description?: string,
-     *     StartOnCreation?: bool,
-     *     Tags?: array<string, string>,
-     *     EventBatchingCondition?: Shapes\EventBatchingCondition
+     *     Description?: string|null,
+     *     StartOnCreation?: bool|null,
+     *     Tags?: array<string, string>|null,
+     *     EventBatchingCondition?: Shapes\EventBatchingCondition|null
      * } $args
      */
     public function __construct(array $args)

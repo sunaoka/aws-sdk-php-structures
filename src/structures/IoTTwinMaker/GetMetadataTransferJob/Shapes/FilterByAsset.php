@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IoTTwinMaker\GetMetadataTransferJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $assetId
- * @property string $assetExternalId
- * @property bool $includeOffspring
- * @property bool $includeAssetModel
+ * @property string|null $assetId
+ * @property string|null $assetExternalId
+ * @property bool|null $includeOffspring
+ * @property bool|null $includeAssetModel
  */
 class FilterByAsset extends Shape
 {
     /**
      * @param array{
-     *     assetId?: string,
-     *     assetExternalId?: string,
-     *     includeOffspring?: bool,
-     *     includeAssetModel?: bool
+     *     assetId?: string|null,
+     *     assetExternalId?: string|null,
+     *     includeOffspring?: bool|null,
+     *     includeAssetModel?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

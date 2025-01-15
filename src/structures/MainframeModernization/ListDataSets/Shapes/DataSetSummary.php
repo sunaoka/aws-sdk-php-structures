@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\ListDataSets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $creationTime
+ * @property \Aws\Api\DateTimeResult|null $creationTime
  * @property string $dataSetName
- * @property string $dataSetOrg
- * @property string $format
- * @property \Aws\Api\DateTimeResult $lastReferencedTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedTime
+ * @property string|null $dataSetOrg
+ * @property string|null $format
+ * @property \Aws\Api\DateTimeResult|null $lastReferencedTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
  */
 class DataSetSummary extends Shape
 {
     /**
      * @param array{
-     *     creationTime?: \Aws\Api\DateTimeResult,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
      *     dataSetName: string,
-     *     dataSetOrg?: string,
-     *     format?: string,
-     *     lastReferencedTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedTime?: \Aws\Api\DateTimeResult
+     *     dataSetOrg?: string|null,
+     *     format?: string|null,
+     *     lastReferencedTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

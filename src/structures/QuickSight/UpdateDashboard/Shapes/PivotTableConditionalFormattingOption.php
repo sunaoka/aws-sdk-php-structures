@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PivotTableCellConditionalFormatting $Cell
+ * @property PivotTableCellConditionalFormatting|null $Cell
  */
 class PivotTableConditionalFormattingOption extends Shape
 {
     /**
-     * @param array{Cell?: PivotTableCellConditionalFormatting} $args
+     * @param array{Cell?: PivotTableCellConditionalFormatting|null} $args
      */
     public function __construct(array $args = [])
     {

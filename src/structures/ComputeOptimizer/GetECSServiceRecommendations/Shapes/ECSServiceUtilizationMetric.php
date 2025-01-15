@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetECSServiceRecommendations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Cpu'|'Memory' $name
- * @property 'Maximum'|'Average' $statistic
- * @property double $value
+ * @property 'Cpu'|'Memory'|null $name
+ * @property 'Maximum'|'Average'|null $statistic
+ * @property double|null $value
  */
 class ECSServiceUtilizationMetric extends Shape
 {
     /**
      * @param array{
-     *     name?: 'Cpu'|'Memory',
-     *     statistic?: 'Maximum'|'Average',
-     *     value?: double
+     *     name?: 'Cpu'|'Memory'|null,
+     *     statistic?: 'Maximum'|'Average'|null,
+     *     value?: double|null
      * } $args
      */
     public function __construct(array $args = [])

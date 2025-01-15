@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $spaceName
  * @property string $projectName
  * @property string $devEnvironmentId
- * @property string $nextToken
- * @property int<1, 200> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 200>|null $maxResults
  */
 class ListDevEnvironmentSessionsRequest extends Request
 {
@@ -18,8 +18,8 @@ class ListDevEnvironmentSessionsRequest extends Request
      *     spaceName: string,
      *     projectName: string,
      *     devEnvironmentId: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 200>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 200>|null
      * } $args
      */
     public function __construct(array $args)

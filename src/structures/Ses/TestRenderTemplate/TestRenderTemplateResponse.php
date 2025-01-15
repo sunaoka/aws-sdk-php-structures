@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ses\TestRenderTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RenderedTemplate
+ * @property string|null $RenderedTemplate
  */
 class TestRenderTemplateResponse extends Response
 {

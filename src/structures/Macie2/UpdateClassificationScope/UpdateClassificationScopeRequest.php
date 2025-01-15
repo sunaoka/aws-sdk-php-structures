@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $id
- * @property Shapes\S3ClassificationScopeUpdate $s3
+ * @property Shapes\S3ClassificationScopeUpdate|null $s3
  */
 class UpdateClassificationScopeRequest extends Request
 {
     /**
      * @param array{
      *     id: string,
-     *     s3?: Shapes\S3ClassificationScopeUpdate
+     *     s3?: Shapes\S3ClassificationScopeUpdate|null
      * } $args
      */
     public function __construct(array $args)

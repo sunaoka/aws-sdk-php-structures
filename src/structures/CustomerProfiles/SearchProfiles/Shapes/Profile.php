@@ -5,61 +5,61 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\SearchProfiles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProfileId
- * @property string $AccountNumber
- * @property string $AdditionalInformation
- * @property 'INDIVIDUAL'|'BUSINESS'|'OTHER' $PartyType
- * @property string $BusinessName
- * @property string $FirstName
- * @property string $MiddleName
- * @property string $LastName
- * @property string $BirthDate
- * @property 'MALE'|'FEMALE'|'UNSPECIFIED' $Gender
- * @property string $PhoneNumber
- * @property string $MobilePhoneNumber
- * @property string $HomePhoneNumber
- * @property string $BusinessPhoneNumber
- * @property string $EmailAddress
- * @property string $PersonalEmailAddress
- * @property string $BusinessEmailAddress
- * @property Address $Address
- * @property Address $ShippingAddress
- * @property Address $MailingAddress
- * @property Address $BillingAddress
- * @property array<string, string> $Attributes
- * @property list<FoundByKeyValue> $FoundByItems
- * @property string $PartyTypeString
- * @property string $GenderString
+ * @property string|null $ProfileId
+ * @property string|null $AccountNumber
+ * @property string|null $AdditionalInformation
+ * @property 'INDIVIDUAL'|'BUSINESS'|'OTHER'|null $PartyType
+ * @property string|null $BusinessName
+ * @property string|null $FirstName
+ * @property string|null $MiddleName
+ * @property string|null $LastName
+ * @property string|null $BirthDate
+ * @property 'MALE'|'FEMALE'|'UNSPECIFIED'|null $Gender
+ * @property string|null $PhoneNumber
+ * @property string|null $MobilePhoneNumber
+ * @property string|null $HomePhoneNumber
+ * @property string|null $BusinessPhoneNumber
+ * @property string|null $EmailAddress
+ * @property string|null $PersonalEmailAddress
+ * @property string|null $BusinessEmailAddress
+ * @property Address|null $Address
+ * @property Address|null $ShippingAddress
+ * @property Address|null $MailingAddress
+ * @property Address|null $BillingAddress
+ * @property array<string, string>|null $Attributes
+ * @property list<FoundByKeyValue>|null $FoundByItems
+ * @property string|null $PartyTypeString
+ * @property string|null $GenderString
  */
 class Profile extends Shape
 {
     /**
      * @param array{
-     *     ProfileId?: string,
-     *     AccountNumber?: string,
-     *     AdditionalInformation?: string,
-     *     PartyType?: 'INDIVIDUAL'|'BUSINESS'|'OTHER',
-     *     BusinessName?: string,
-     *     FirstName?: string,
-     *     MiddleName?: string,
-     *     LastName?: string,
-     *     BirthDate?: string,
-     *     Gender?: 'MALE'|'FEMALE'|'UNSPECIFIED',
-     *     PhoneNumber?: string,
-     *     MobilePhoneNumber?: string,
-     *     HomePhoneNumber?: string,
-     *     BusinessPhoneNumber?: string,
-     *     EmailAddress?: string,
-     *     PersonalEmailAddress?: string,
-     *     BusinessEmailAddress?: string,
-     *     Address?: Address,
-     *     ShippingAddress?: Address,
-     *     MailingAddress?: Address,
-     *     BillingAddress?: Address,
-     *     Attributes?: array<string, string>,
-     *     FoundByItems?: list<FoundByKeyValue>,
-     *     PartyTypeString?: string,
-     *     GenderString?: string
+     *     ProfileId?: string|null,
+     *     AccountNumber?: string|null,
+     *     AdditionalInformation?: string|null,
+     *     PartyType?: 'INDIVIDUAL'|'BUSINESS'|'OTHER'|null,
+     *     BusinessName?: string|null,
+     *     FirstName?: string|null,
+     *     MiddleName?: string|null,
+     *     LastName?: string|null,
+     *     BirthDate?: string|null,
+     *     Gender?: 'MALE'|'FEMALE'|'UNSPECIFIED'|null,
+     *     PhoneNumber?: string|null,
+     *     MobilePhoneNumber?: string|null,
+     *     HomePhoneNumber?: string|null,
+     *     BusinessPhoneNumber?: string|null,
+     *     EmailAddress?: string|null,
+     *     PersonalEmailAddress?: string|null,
+     *     BusinessEmailAddress?: string|null,
+     *     Address?: Address|null,
+     *     ShippingAddress?: Address|null,
+     *     MailingAddress?: Address|null,
+     *     BillingAddress?: Address|null,
+     *     Attributes?: array<string, string>|null,
+     *     FoundByItems?: list<FoundByKeyValue>|null,
+     *     PartyTypeString?: string|null,
+     *     GenderString?: string|null
      * } $args
      */
     public function __construct(array $args = [])

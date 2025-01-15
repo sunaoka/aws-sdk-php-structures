@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'x509Subject'|'x509Issuer'|'x509SAN' $certificateField
  * @property string $profileId
- * @property list<string> $specifiers
+ * @property list<string>|null $specifiers
  */
 class DeleteAttributeMappingRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteAttributeMappingRequest extends Request
      * @param array{
      *     certificateField: 'x509Subject'|'x509Issuer'|'x509SAN',
      *     profileId: string,
-     *     specifiers?: list<string>
+     *     specifiers?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

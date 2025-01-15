@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Detective\ListGraphs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\Graph> $GraphList
- * @property string $NextToken
+ * @property list<Shapes\Graph>|null $GraphList
+ * @property string|null $NextToken
  */
 class ListGraphsResponse extends Response
 {

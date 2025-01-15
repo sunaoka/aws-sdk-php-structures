@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\IoTWireless\SendDataToMulticastGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $MessageId
+ * @property string|null $MessageId
  */
 class SendDataToMulticastGroupResponse extends Response
 {

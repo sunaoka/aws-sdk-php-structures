@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Firehose\CreateDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PartitionField> $Identity
+ * @property list<PartitionField>|null $Identity
  */
 class PartitionSpec extends Shape
 {
     /**
-     * @param array{Identity?: list<PartitionField>} $args
+     * @param array{Identity?: list<PartitionField>|null} $args
      */
     public function __construct(array $args = [])
     {

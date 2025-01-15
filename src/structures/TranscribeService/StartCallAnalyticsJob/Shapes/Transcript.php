@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\TranscribeService\StartCallAnalyticsJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TranscriptFileUri
- * @property string $RedactedTranscriptFileUri
+ * @property string|null $TranscriptFileUri
+ * @property string|null $RedactedTranscriptFileUri
  */
 class Transcript extends Shape
 {
     /**
      * @param array{
-     *     TranscriptFileUri?: string,
-     *     RedactedTranscriptFileUri?: string
+     *     TranscriptFileUri?: string|null,
+     *     RedactedTranscriptFileUri?: string|null
      * } $args
      */
     public function __construct(array $args = [])

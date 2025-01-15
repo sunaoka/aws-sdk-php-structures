@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeHoursOfOperationOverride;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\HoursOfOperationOverride $HoursOfOperationOverride
+ * @property Shapes\HoursOfOperationOverride|null $HoursOfOperationOverride
  */
 class DescribeHoursOfOperationOverrideResponse extends Response
 {

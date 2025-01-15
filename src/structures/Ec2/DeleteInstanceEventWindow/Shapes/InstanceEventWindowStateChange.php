@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteInstanceEventWindow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceEventWindowId
- * @property 'creating'|'deleting'|'active'|'deleted' $State
+ * @property string|null $InstanceEventWindowId
+ * @property 'creating'|'deleting'|'active'|'deleted'|null $State
  */
 class InstanceEventWindowStateChange extends Shape
 {
     /**
      * @param array{
-     *     InstanceEventWindowId?: string,
-     *     State?: 'creating'|'deleting'|'active'|'deleted'
+     *     InstanceEventWindowId?: string|null,
+     *     State?: 'creating'|'deleting'|'active'|'deleted'|null
      * } $args
      */
     public function __construct(array $args = [])

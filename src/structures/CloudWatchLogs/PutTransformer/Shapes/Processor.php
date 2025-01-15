@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\PutTransformer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AddKeys $addKeys
- * @property CopyValue $copyValue
- * @property CSV $csv
- * @property DateTimeConverter $dateTimeConverter
- * @property DeleteKeys $deleteKeys
- * @property Grok $grok
- * @property ListToMap $listToMap
- * @property LowerCaseString $lowerCaseString
- * @property MoveKeys $moveKeys
- * @property ParseCloudfront $parseCloudfront
- * @property ParseJSON $parseJSON
- * @property ParseKeyValue $parseKeyValue
- * @property ParseRoute53 $parseRoute53
- * @property ParsePostgres $parsePostgres
- * @property ParseVPC $parseVPC
- * @property ParseWAF $parseWAF
- * @property RenameKeys $renameKeys
- * @property SplitString $splitString
- * @property SubstituteString $substituteString
- * @property TrimString $trimString
- * @property TypeConverter $typeConverter
- * @property UpperCaseString $upperCaseString
+ * @property AddKeys|null $addKeys
+ * @property CopyValue|null $copyValue
+ * @property CSV|null $csv
+ * @property DateTimeConverter|null $dateTimeConverter
+ * @property DeleteKeys|null $deleteKeys
+ * @property Grok|null $grok
+ * @property ListToMap|null $listToMap
+ * @property LowerCaseString|null $lowerCaseString
+ * @property MoveKeys|null $moveKeys
+ * @property ParseCloudfront|null $parseCloudfront
+ * @property ParseJSON|null $parseJSON
+ * @property ParseKeyValue|null $parseKeyValue
+ * @property ParseRoute53|null $parseRoute53
+ * @property ParsePostgres|null $parsePostgres
+ * @property ParseVPC|null $parseVPC
+ * @property ParseWAF|null $parseWAF
+ * @property RenameKeys|null $renameKeys
+ * @property SplitString|null $splitString
+ * @property SubstituteString|null $substituteString
+ * @property TrimString|null $trimString
+ * @property TypeConverter|null $typeConverter
+ * @property UpperCaseString|null $upperCaseString
  */
 class Processor extends Shape
 {
     /**
      * @param array{
-     *     addKeys?: AddKeys,
-     *     copyValue?: CopyValue,
-     *     csv?: CSV,
-     *     dateTimeConverter?: DateTimeConverter,
-     *     deleteKeys?: DeleteKeys,
-     *     grok?: Grok,
-     *     listToMap?: ListToMap,
-     *     lowerCaseString?: LowerCaseString,
-     *     moveKeys?: MoveKeys,
-     *     parseCloudfront?: ParseCloudfront,
-     *     parseJSON?: ParseJSON,
-     *     parseKeyValue?: ParseKeyValue,
-     *     parseRoute53?: ParseRoute53,
-     *     parsePostgres?: ParsePostgres,
-     *     parseVPC?: ParseVPC,
-     *     parseWAF?: ParseWAF,
-     *     renameKeys?: RenameKeys,
-     *     splitString?: SplitString,
-     *     substituteString?: SubstituteString,
-     *     trimString?: TrimString,
-     *     typeConverter?: TypeConverter,
-     *     upperCaseString?: UpperCaseString
+     *     addKeys?: AddKeys|null,
+     *     copyValue?: CopyValue|null,
+     *     csv?: CSV|null,
+     *     dateTimeConverter?: DateTimeConverter|null,
+     *     deleteKeys?: DeleteKeys|null,
+     *     grok?: Grok|null,
+     *     listToMap?: ListToMap|null,
+     *     lowerCaseString?: LowerCaseString|null,
+     *     moveKeys?: MoveKeys|null,
+     *     parseCloudfront?: ParseCloudfront|null,
+     *     parseJSON?: ParseJSON|null,
+     *     parseKeyValue?: ParseKeyValue|null,
+     *     parseRoute53?: ParseRoute53|null,
+     *     parsePostgres?: ParsePostgres|null,
+     *     parseVPC?: ParseVPC|null,
+     *     parseWAF?: ParseWAF|null,
+     *     renameKeys?: RenameKeys|null,
+     *     splitString?: SplitString|null,
+     *     substituteString?: SubstituteString|null,
+     *     trimString?: TrimString|null,
+     *     typeConverter?: TypeConverter|null,
+     *     upperCaseString?: UpperCaseString|null
      * } $args
      */
     public function __construct(array $args = [])

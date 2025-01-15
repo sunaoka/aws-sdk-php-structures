@@ -12,7 +12,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property list<Shapes\MonitorRemoteResource> $remoteResources
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property \Aws\Api\DateTimeResult $modifiedAt
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateMonitorResponse extends Response
 {

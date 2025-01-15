@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PoolId
  * @property int $TapeSizeInBytes
  * @property int<1, 10> $MinimumNumTapes
- * @property bool $Worm
+ * @property bool|null $Worm
  */
 class AutomaticTapeCreationRule extends Shape
 {
@@ -19,7 +19,7 @@ class AutomaticTapeCreationRule extends Shape
      *     PoolId: string,
      *     TapeSizeInBytes: int,
      *     MinimumNumTapes: int<1, 10>,
-     *     Worm?: bool
+     *     Worm?: bool|null
      * } $args
      */
     public function __construct(array $args)

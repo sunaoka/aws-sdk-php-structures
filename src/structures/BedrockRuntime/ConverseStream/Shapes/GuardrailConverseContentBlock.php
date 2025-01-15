@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\ConverseStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GuardrailConverseTextBlock $text
- * @property GuardrailConverseImageBlock $image
+ * @property GuardrailConverseTextBlock|null $text
+ * @property GuardrailConverseImageBlock|null $image
  */
 class GuardrailConverseContentBlock extends Shape
 {
     /**
      * @param array{
-     *     text?: GuardrailConverseTextBlock,
-     *     image?: GuardrailConverseImageBlock
+     *     text?: GuardrailConverseTextBlock|null,
+     *     image?: GuardrailConverseImageBlock|null
      * } $args
      */
     public function __construct(array $args = [])

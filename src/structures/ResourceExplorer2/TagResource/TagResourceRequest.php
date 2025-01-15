@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ResourceExplorer2\TagResource;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  * @property string $resourceArn
  */
 class TagResourceRequest extends Request
 {
     /**
      * @param array{
-     *     Tags?: array<string, string>,
+     *     Tags?: array<string, string>|null,
      *     resourceArn: string
      * } $args
      */

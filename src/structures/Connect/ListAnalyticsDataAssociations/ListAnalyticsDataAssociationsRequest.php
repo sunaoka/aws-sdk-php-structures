@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property string $DataSetId
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
+ * @property string|null $DataSetId
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
  */
 class ListAnalyticsDataAssociationsRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     DataSetId?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>
+     *     DataSetId?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

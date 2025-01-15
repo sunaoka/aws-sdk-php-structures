@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'spectrum'|'concurrency-scaling'|'cross-region-datasharing' $FeatureType
  * @property 'time'|'data-scanned' $LimitType
  * @property int $Amount
- * @property 'daily'|'weekly'|'monthly' $Period
- * @property 'log'|'emit-metric'|'disable' $BreachAction
- * @property list<Shapes\Tag> $Tags
+ * @property 'daily'|'weekly'|'monthly'|null $Period
+ * @property 'log'|'emit-metric'|'disable'|null $BreachAction
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateUsageLimitRequest extends Request
 {
@@ -21,9 +21,9 @@ class CreateUsageLimitRequest extends Request
      *     FeatureType: 'spectrum'|'concurrency-scaling'|'cross-region-datasharing',
      *     LimitType: 'time'|'data-scanned',
      *     Amount: int,
-     *     Period?: 'daily'|'weekly'|'monthly',
-     *     BreachAction?: 'log'|'emit-metric'|'disable',
-     *     Tags?: list<Shapes\Tag>
+     *     Period?: 'daily'|'weekly'|'monthly'|null,
+     *     BreachAction?: 'log'|'emit-metric'|'disable'|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

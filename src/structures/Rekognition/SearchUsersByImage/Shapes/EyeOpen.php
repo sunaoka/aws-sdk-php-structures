@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\SearchUsersByImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Value
- * @property float $Confidence
+ * @property bool|null $Value
+ * @property float|null $Confidence
  */
 class EyeOpen extends Shape
 {
     /**
      * @param array{
-     *     Value?: bool,
-     *     Confidence?: float
+     *     Value?: bool|null,
+     *     Confidence?: float|null
      * } $args
      */
     public function __construct(array $args = [])

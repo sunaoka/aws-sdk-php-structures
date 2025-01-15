@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\ListVoiceProfileDomains\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VoiceProfileDomainId
- * @property string $VoiceProfileDomainArn
- * @property string $Name
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
+ * @property string|null $VoiceProfileDomainId
+ * @property string|null $VoiceProfileDomainArn
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
 class VoiceProfileDomainSummary extends Shape
 {
     /**
      * @param array{
-     *     VoiceProfileDomainId?: string,
-     *     VoiceProfileDomainArn?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     VoiceProfileDomainId?: string|null,
+     *     VoiceProfileDomainArn?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

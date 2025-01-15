@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DescribeClusters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServiceUpdateName
- * @property 'available'|'in-progress'|'complete'|'scheduled' $Status
+ * @property string|null $ServiceUpdateName
+ * @property 'available'|'in-progress'|'complete'|'scheduled'|null $Status
  */
 class PendingModifiedServiceUpdate extends Shape
 {
     /**
      * @param array{
-     *     ServiceUpdateName?: string,
-     *     Status?: 'available'|'in-progress'|'complete'|'scheduled'
+     *     ServiceUpdateName?: string|null,
+     *     Status?: 'available'|'in-progress'|'complete'|'scheduled'|null
      * } $args
      */
     public function __construct(array $args = [])

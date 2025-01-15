@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\GetAgentMemory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MemorySessionSummary $sessionSummary
+ * @property MemorySessionSummary|null $sessionSummary
  */
 class Memory extends Shape
 {
     /**
-     * @param array{sessionSummary?: MemorySessionSummary} $args
+     * @param array{sessionSummary?: MemorySessionSummary|null} $args
      */
     public function __construct(array $args = [])
     {

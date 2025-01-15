@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PinpointEmail\SendEmail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TemplateArn
- * @property string $TemplateData
+ * @property string|null $TemplateArn
+ * @property string|null $TemplateData
  */
 class Template extends Shape
 {
     /**
      * @param array{
-     *     TemplateArn?: string,
-     *     TemplateData?: string
+     *     TemplateArn?: string|null,
+     *     TemplateData?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancing\ModifyLoadBalancerAttribut
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CrossZoneLoadBalancing $CrossZoneLoadBalancing
- * @property AccessLog $AccessLog
- * @property ConnectionDraining $ConnectionDraining
- * @property ConnectionSettings $ConnectionSettings
- * @property list<AdditionalAttribute> $AdditionalAttributes
+ * @property CrossZoneLoadBalancing|null $CrossZoneLoadBalancing
+ * @property AccessLog|null $AccessLog
+ * @property ConnectionDraining|null $ConnectionDraining
+ * @property ConnectionSettings|null $ConnectionSettings
+ * @property list<AdditionalAttribute>|null $AdditionalAttributes
  */
 class LoadBalancerAttributes extends Shape
 {
     /**
      * @param array{
-     *     CrossZoneLoadBalancing?: CrossZoneLoadBalancing,
-     *     AccessLog?: AccessLog,
-     *     ConnectionDraining?: ConnectionDraining,
-     *     ConnectionSettings?: ConnectionSettings,
-     *     AdditionalAttributes?: list<AdditionalAttribute>
+     *     CrossZoneLoadBalancing?: CrossZoneLoadBalancing|null,
+     *     AccessLog?: AccessLog|null,
+     *     ConnectionDraining?: ConnectionDraining|null,
+     *     ConnectionSettings?: ConnectionSettings|null,
+     *     AdditionalAttributes?: list<AdditionalAttribute>|null
      * } $args
      */
     public function __construct(array $args = [])

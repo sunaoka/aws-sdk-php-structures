@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\GetUserSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\UserSettings $userSettings
+ * @property Shapes\UserSettings|null $userSettings
  */
 class GetUserSettingsResponse extends Response
 {

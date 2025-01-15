@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeMaintenanceWindowExecutionTasks\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WindowExecutionId
- * @property string $TaskExecutionId
- * @property 'PENDING'|'IN_PROGRESS'|'SUCCESS'|'FAILED'|'TIMED_OUT'|'CANCELLING'|'CANCELLED'|'SKIPPED_OVERLAPPING' $Status
- * @property string $StatusDetails
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $TaskArn
- * @property 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA' $TaskType
- * @property AlarmConfiguration $AlarmConfiguration
- * @property list<AlarmStateInformation> $TriggeredAlarms
+ * @property string|null $WindowExecutionId
+ * @property string|null $TaskExecutionId
+ * @property 'PENDING'|'IN_PROGRESS'|'SUCCESS'|'FAILED'|'TIMED_OUT'|'CANCELLING'|'CANCELLED'|'SKIPPED_OVERLAPPING'|null $Status
+ * @property string|null $StatusDetails
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $TaskArn
+ * @property 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA'|null $TaskType
+ * @property AlarmConfiguration|null $AlarmConfiguration
+ * @property list<AlarmStateInformation>|null $TriggeredAlarms
  */
 class MaintenanceWindowExecutionTaskIdentity extends Shape
 {
     /**
      * @param array{
-     *     WindowExecutionId?: string,
-     *     TaskExecutionId?: string,
-     *     Status?: 'PENDING'|'IN_PROGRESS'|'SUCCESS'|'FAILED'|'TIMED_OUT'|'CANCELLING'|'CANCELLED'|'SKIPPED_OVERLAPPING',
-     *     StatusDetails?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     TaskArn?: string,
-     *     TaskType?: 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA',
-     *     AlarmConfiguration?: AlarmConfiguration,
-     *     TriggeredAlarms?: list<AlarmStateInformation>
+     *     WindowExecutionId?: string|null,
+     *     TaskExecutionId?: string|null,
+     *     Status?: 'PENDING'|'IN_PROGRESS'|'SUCCESS'|'FAILED'|'TIMED_OUT'|'CANCELLING'|'CANCELLED'|'SKIPPED_OVERLAPPING'|null,
+     *     StatusDetails?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     TaskArn?: string|null,
+     *     TaskType?: 'RUN_COMMAND'|'AUTOMATION'|'STEP_FUNCTIONS'|'LAMBDA'|null,
+     *     AlarmConfiguration?: AlarmConfiguration|null,
+     *     TriggeredAlarms?: list<AlarmStateInformation>|null
      * } $args
      */
     public function __construct(array $args = [])

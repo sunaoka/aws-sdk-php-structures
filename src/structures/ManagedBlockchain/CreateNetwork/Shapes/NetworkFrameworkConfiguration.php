@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\CreateNetwork\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NetworkFabricConfiguration $Fabric
+ * @property NetworkFabricConfiguration|null $Fabric
  */
 class NetworkFrameworkConfiguration extends Shape
 {
     /**
-     * @param array{Fabric?: NetworkFabricConfiguration} $args
+     * @param array{Fabric?: NetworkFabricConfiguration|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceARN
- * @property string $SnapshotId
- * @property string $Name
- * @property string $VolumeId
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property 'PENDING'|'CREATING'|'DELETING'|'AVAILABLE' $Lifecycle
- * @property LifecycleTransitionReason $LifecycleTransitionReason
- * @property list<Tag> $Tags
- * @property list<AdministrativeAction> $AdministrativeActions
+ * @property string|null $ResourceARN
+ * @property string|null $SnapshotId
+ * @property string|null $Name
+ * @property string|null $VolumeId
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property 'PENDING'|'CREATING'|'DELETING'|'AVAILABLE'|null $Lifecycle
+ * @property LifecycleTransitionReason|null $LifecycleTransitionReason
+ * @property list<Tag>|null $Tags
+ * @property list<AdministrativeAction>|null $AdministrativeActions
  */
 class Snapshot extends Shape
 {
     /**
      * @param array{
-     *     ResourceARN?: string,
-     *     SnapshotId?: string,
-     *     Name?: string,
-     *     VolumeId?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     Lifecycle?: 'PENDING'|'CREATING'|'DELETING'|'AVAILABLE',
-     *     LifecycleTransitionReason?: LifecycleTransitionReason,
-     *     Tags?: list<Tag>,
-     *     AdministrativeActions?: list<AdministrativeAction>
+     *     ResourceARN?: string|null,
+     *     SnapshotId?: string|null,
+     *     Name?: string|null,
+     *     VolumeId?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     Lifecycle?: 'PENDING'|'CREATING'|'DELETING'|'AVAILABLE'|null,
+     *     LifecycleTransitionReason?: LifecycleTransitionReason|null,
+     *     Tags?: list<Tag>|null,
+     *     AdministrativeActions?: list<AdministrativeAction>|null
      * } $args
      */
     public function __construct(array $args = [])

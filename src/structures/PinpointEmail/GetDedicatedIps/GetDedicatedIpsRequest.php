@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\PinpointEmail\GetDedicatedIps;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $PoolName
- * @property string $NextToken
- * @property int $PageSize
+ * @property string|null $PoolName
+ * @property string|null $NextToken
+ * @property int|null $PageSize
  */
 class GetDedicatedIpsRequest extends Request
 {
     /**
      * @param array{
-     *     PoolName?: string,
-     *     NextToken?: string,
-     *     PageSize?: int
+     *     PoolName?: string|null,
+     *     NextToken?: string|null,
+     *     PageSize?: int|null
      * } $args
      */
     public function __construct(array $args = [])

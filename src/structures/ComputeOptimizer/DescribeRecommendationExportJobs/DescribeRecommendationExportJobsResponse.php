@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\DescribeRecommendationExportJo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\RecommendationExportJob> $recommendationExportJobs
- * @property string $nextToken
+ * @property list<Shapes\RecommendationExportJob>|null $recommendationExportJobs
+ * @property string|null $nextToken
  */
 class DescribeRecommendationExportJobsResponse extends Response
 {

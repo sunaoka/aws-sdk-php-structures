@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $encryptionKey
- * @property list<Shapes\Tag> $tags
+ * @property string|null $encryptionKey
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateDomainRequest extends Request
 {
     /**
      * @param array{
      *     domain: string,
-     *     encryptionKey?: string,
-     *     tags?: list<Shapes\Tag>
+     *     encryptionKey?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

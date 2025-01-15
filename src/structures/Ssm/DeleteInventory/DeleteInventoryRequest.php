@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TypeName
- * @property 'DisableSchema'|'DeleteSchema' $SchemaDeleteOption
- * @property bool $DryRun
- * @property string $ClientToken
+ * @property 'DisableSchema'|'DeleteSchema'|null $SchemaDeleteOption
+ * @property bool|null $DryRun
+ * @property string|null $ClientToken
  */
 class DeleteInventoryRequest extends Request
 {
     /**
      * @param array{
      *     TypeName: string,
-     *     SchemaDeleteOption?: 'DisableSchema'|'DeleteSchema',
-     *     DryRun?: bool,
-     *     ClientToken?: string
+     *     SchemaDeleteOption?: 'DisableSchema'|'DeleteSchema'|null,
+     *     DryRun?: bool|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

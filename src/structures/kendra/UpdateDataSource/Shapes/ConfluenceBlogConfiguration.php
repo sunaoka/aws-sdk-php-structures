@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\kendra\UpdateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<ConfluenceBlogToIndexFieldMapping> $BlogFieldMappings
+ * @property list<ConfluenceBlogToIndexFieldMapping>|null $BlogFieldMappings
  */
 class ConfluenceBlogConfiguration extends Shape
 {
     /**
-     * @param array{BlogFieldMappings?: list<ConfluenceBlogToIndexFieldMapping>} $args
+     * @param array{BlogFieldMappings?: list<ConfluenceBlogToIndexFieldMapping>|null} $args
      */
     public function __construct(array $args = [])
     {

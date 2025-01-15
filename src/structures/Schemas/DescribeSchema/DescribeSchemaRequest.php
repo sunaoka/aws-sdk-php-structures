@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $RegistryName
  * @property string $SchemaName
- * @property string $SchemaVersion
+ * @property string|null $SchemaVersion
  */
 class DescribeSchemaRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeSchemaRequest extends Request
      * @param array{
      *     RegistryName: string,
      *     SchemaName: string,
-     *     SchemaVersion?: string
+     *     SchemaVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

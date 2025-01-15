@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PageId
- * @property string $NextToken
- * @property int<0, 1024> $MaxResults
+ * @property string|null $NextToken
+ * @property int<0, 1024>|null $MaxResults
  */
 class ListPageReceiptsRequest extends Request
 {
     /**
      * @param array{
      *     PageId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 1024>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 1024>|null
      * } $args
      */
     public function __construct(array $args)

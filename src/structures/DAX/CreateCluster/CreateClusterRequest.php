@@ -7,18 +7,18 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClusterName
  * @property string $NodeType
- * @property string $Description
+ * @property string|null $Description
  * @property int $ReplicationFactor
- * @property list<string> $AvailabilityZones
- * @property string $SubnetGroupName
- * @property list<string> $SecurityGroupIds
- * @property string $PreferredMaintenanceWindow
- * @property string $NotificationTopicArn
+ * @property list<string>|null $AvailabilityZones
+ * @property string|null $SubnetGroupName
+ * @property list<string>|null $SecurityGroupIds
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $NotificationTopicArn
  * @property string $IamRoleArn
- * @property string $ParameterGroupName
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\SSESpecification $SSESpecification
- * @property 'NONE'|'TLS' $ClusterEndpointEncryptionType
+ * @property string|null $ParameterGroupName
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\SSESpecification|null $SSESpecification
+ * @property 'NONE'|'TLS'|null $ClusterEndpointEncryptionType
  */
 class CreateClusterRequest extends Request
 {
@@ -26,18 +26,18 @@ class CreateClusterRequest extends Request
      * @param array{
      *     ClusterName: string,
      *     NodeType: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     ReplicationFactor: int,
-     *     AvailabilityZones?: list<string>,
-     *     SubnetGroupName?: string,
-     *     SecurityGroupIds?: list<string>,
-     *     PreferredMaintenanceWindow?: string,
-     *     NotificationTopicArn?: string,
+     *     AvailabilityZones?: list<string>|null,
+     *     SubnetGroupName?: string|null,
+     *     SecurityGroupIds?: list<string>|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     NotificationTopicArn?: string|null,
      *     IamRoleArn: string,
-     *     ParameterGroupName?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     SSESpecification?: Shapes\SSESpecification,
-     *     ClusterEndpointEncryptionType?: 'NONE'|'TLS'
+     *     ParameterGroupName?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     SSESpecification?: Shapes\SSESpecification|null,
+     *     ClusterEndpointEncryptionType?: 'NONE'|'TLS'|null
      * } $args
      */
     public function __construct(array $args)

@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botName
  * @property string $botAlias
  * @property string $userId
- * @property array<string, string> $sessionAttributes
- * @property array<string, string> $requestAttributes
+ * @property array<string, string>|null $sessionAttributes
+ * @property array<string, string>|null $requestAttributes
  * @property string $inputText
- * @property list<Shapes\ActiveContext> $activeContexts
+ * @property list<Shapes\ActiveContext>|null $activeContexts
  */
 class PostTextRequest extends Request
 {
@@ -20,10 +20,10 @@ class PostTextRequest extends Request
      *     botName: string,
      *     botAlias: string,
      *     userId: string,
-     *     sessionAttributes?: array<string, string>,
-     *     requestAttributes?: array<string, string>,
+     *     sessionAttributes?: array<string, string>|null,
+     *     requestAttributes?: array<string, string>|null,
      *     inputText: string,
-     *     activeContexts?: list<Shapes\ActiveContext>
+     *     activeContexts?: list<Shapes\ActiveContext>|null
      * } $args
      */
     public function __construct(array $args)

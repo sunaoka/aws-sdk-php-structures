@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AmplifyUIBuilder\ExportComponents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $variantValues
- * @property array<string, array<string, string>> $overrides
+ * @property array<string, string>|null $variantValues
+ * @property array<string, array<string, string>>|null $overrides
  */
 class ComponentVariant extends Shape
 {
     /**
      * @param array{
-     *     variantValues?: array<string, string>,
-     *     overrides?: array<string, array<string, string>>
+     *     variantValues?: array<string, string>|null,
+     *     overrides?: array<string, array<string, string>>|null
      * } $args
      */
     public function __construct(array $args = [])

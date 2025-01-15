@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BillingConductor\ListResourcesAssociatedToCusto
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property 'PARENT'|'CHILD' $Relationship
- * @property string $EndBillingPeriod
+ * @property string|null $Arn
+ * @property 'PARENT'|'CHILD'|null $Relationship
+ * @property string|null $EndBillingPeriod
  */
 class ListResourcesAssociatedToCustomLineItemResponseElement extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Relationship?: 'PARENT'|'CHILD',
-     *     EndBillingPeriod?: string
+     *     Arn?: string|null,
+     *     Relationship?: 'PARENT'|'CHILD'|null,
+     *     EndBillingPeriod?: string|null
      * } $args
      */
     public function __construct(array $args = [])

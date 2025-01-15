@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $anomalyInstanceId
- * @property string $comment
+ * @property string|null $comment
  * @property string $profilingGroupName
  * @property 'Positive'|'Negative' $type
  */
@@ -15,7 +15,7 @@ class SubmitFeedbackRequest extends Request
     /**
      * @param array{
      *     anomalyInstanceId: string,
-     *     comment?: string,
+     *     comment?: string|null,
      *     profilingGroupName: string,
      *     type: 'Positive'|'Negative'
      * } $args

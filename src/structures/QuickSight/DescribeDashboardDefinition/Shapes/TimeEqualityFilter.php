@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $FilterId
  * @property ColumnIdentifier $Column
- * @property \Aws\Api\DateTimeResult $Value
- * @property string $ParameterName
- * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND' $TimeGranularity
- * @property RollingDateConfiguration $RollingDate
- * @property DefaultFilterControlConfiguration $DefaultFilterControlConfiguration
+ * @property \Aws\Api\DateTimeResult|null $Value
+ * @property string|null $ParameterName
+ * @property 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null $TimeGranularity
+ * @property RollingDateConfiguration|null $RollingDate
+ * @property DefaultFilterControlConfiguration|null $DefaultFilterControlConfiguration
  */
 class TimeEqualityFilter extends Shape
 {
@@ -19,11 +19,11 @@ class TimeEqualityFilter extends Shape
      * @param array{
      *     FilterId: string,
      *     Column: ColumnIdentifier,
-     *     Value?: \Aws\Api\DateTimeResult,
-     *     ParameterName?: string,
-     *     TimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND',
-     *     RollingDate?: RollingDateConfiguration,
-     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration
+     *     Value?: \Aws\Api\DateTimeResult|null,
+     *     ParameterName?: string|null,
+     *     TimeGranularity?: 'YEAR'|'QUARTER'|'MONTH'|'WEEK'|'DAY'|'HOUR'|'MINUTE'|'SECOND'|'MILLISECOND'|null,
+     *     RollingDate?: RollingDateConfiguration|null,
+     *     DefaultFilterControlConfiguration?: DefaultFilterControlConfiguration|null
      * } $args
      */
     public function __construct(array $args)

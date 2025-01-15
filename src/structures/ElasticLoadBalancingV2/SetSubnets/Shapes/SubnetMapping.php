@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\SetSubnets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubnetId
- * @property string $AllocationId
- * @property string $PrivateIPv4Address
- * @property string $IPv6Address
- * @property string $SourceNatIpv6Prefix
+ * @property string|null $SubnetId
+ * @property string|null $AllocationId
+ * @property string|null $PrivateIPv4Address
+ * @property string|null $IPv6Address
+ * @property string|null $SourceNatIpv6Prefix
  */
 class SubnetMapping extends Shape
 {
     /**
      * @param array{
-     *     SubnetId?: string,
-     *     AllocationId?: string,
-     *     PrivateIPv4Address?: string,
-     *     IPv6Address?: string,
-     *     SourceNatIpv6Prefix?: string
+     *     SubnetId?: string|null,
+     *     AllocationId?: string|null,
+     *     PrivateIPv4Address?: string|null,
+     *     IPv6Address?: string|null,
+     *     SourceNatIpv6Prefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

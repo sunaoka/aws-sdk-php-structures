@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $workflowId
- * @property string $runId
+ * @property string|null $runId
  * @property string $signalName
- * @property string $input
+ * @property string|null $input
  * @property int $decisionTaskCompletedEventId
- * @property string $control
+ * @property string|null $control
  */
 class SignalExternalWorkflowExecutionInitiatedEventAttributes extends Shape
 {
     /**
      * @param array{
      *     workflowId: string,
-     *     runId?: string,
+     *     runId?: string|null,
      *     signalName: string,
-     *     input?: string,
+     *     input?: string|null,
      *     decisionTaskCompletedEventId: int,
-     *     control?: string
+     *     control?: string|null
      * } $args
      */
     public function __construct(array $args)

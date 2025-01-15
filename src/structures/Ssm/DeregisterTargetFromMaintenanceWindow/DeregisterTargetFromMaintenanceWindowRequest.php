@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $WindowId
  * @property string $WindowTargetId
- * @property bool $Safe
+ * @property bool|null $Safe
  */
 class DeregisterTargetFromMaintenanceWindowRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeregisterTargetFromMaintenanceWindowRequest extends Request
      * @param array{
      *     WindowId: string,
      *     WindowTargetId: string,
-     *     Safe?: bool
+     *     Safe?: bool|null
      * } $args
      */
     public function __construct(array $args)

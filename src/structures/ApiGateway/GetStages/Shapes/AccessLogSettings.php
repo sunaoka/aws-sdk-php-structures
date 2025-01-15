@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetStages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $format
- * @property string $destinationArn
+ * @property string|null $format
+ * @property string|null $destinationArn
  */
 class AccessLogSettings extends Shape
 {
     /**
      * @param array{
-     *     format?: string,
-     *     destinationArn?: string
+     *     format?: string|null,
+     *     destinationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $KeyName
- * @property bool $ForceDelete
+ * @property bool|null $ForceDelete
  */
 class DeleteKeyRequest extends Request
 {
     /**
      * @param array{
      *     KeyName: string,
-     *     ForceDelete?: bool
+     *     ForceDelete?: bool|null
      * } $args
      */
     public function __construct(array $args)

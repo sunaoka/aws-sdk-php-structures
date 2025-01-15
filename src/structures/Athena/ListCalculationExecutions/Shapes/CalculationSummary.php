@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Athena\ListCalculationExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CalculationExecutionId
- * @property string $Description
- * @property CalculationStatus $Status
+ * @property string|null $CalculationExecutionId
+ * @property string|null $Description
+ * @property CalculationStatus|null $Status
  */
 class CalculationSummary extends Shape
 {
     /**
      * @param array{
-     *     CalculationExecutionId?: string,
-     *     Description?: string,
-     *     Status?: CalculationStatus
+     *     CalculationExecutionId?: string|null,
+     *     Description?: string|null,
+     *     Status?: CalculationStatus|null
      * } $args
      */
     public function __construct(array $args = [])

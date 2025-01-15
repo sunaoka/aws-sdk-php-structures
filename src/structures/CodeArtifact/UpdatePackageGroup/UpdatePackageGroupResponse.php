@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\UpdatePackageGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\PackageGroupDescription $packageGroup
+ * @property Shapes\PackageGroupDescription|null $packageGroup
  */
 class UpdatePackageGroupResponse extends Response
 {

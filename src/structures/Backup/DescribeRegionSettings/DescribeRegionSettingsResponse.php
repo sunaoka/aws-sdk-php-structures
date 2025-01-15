@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Backup\DescribeRegionSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property array<string, bool> $ResourceTypeOptInPreference
- * @property array<string, bool> $ResourceTypeManagementPreference
+ * @property array<string, bool>|null $ResourceTypeOptInPreference
+ * @property array<string, bool>|null $ResourceTypeManagementPreference
  */
 class DescribeRegionSettingsResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AxisDisplayOptions $AxisOptions
- * @property list<MissingDataConfiguration> $MissingDataConfigurations
+ * @property AxisDisplayOptions|null $AxisOptions
+ * @property list<MissingDataConfiguration>|null $MissingDataConfigurations
  */
 class LineSeriesAxisDisplayOptions extends Shape
 {
     /**
      * @param array{
-     *     AxisOptions?: AxisDisplayOptions,
-     *     MissingDataConfigurations?: list<MissingDataConfiguration>
+     *     AxisOptions?: AxisDisplayOptions|null,
+     *     MissingDataConfigurations?: list<MissingDataConfiguration>|null
      * } $args
      */
     public function __construct(array $args = [])

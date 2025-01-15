@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\SnapToRoads;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Key
- * @property 'FlexiblePolyline'|'Simple' $SnappedGeometryFormat
- * @property int<0, 10000> $SnapRadius
+ * @property string|null $Key
+ * @property 'FlexiblePolyline'|'Simple'|null $SnappedGeometryFormat
+ * @property int<0, 10000>|null $SnapRadius
  * @property list<Shapes\RoadSnapTracePoint> $TracePoints
- * @property 'Car'|'Pedestrian'|'Scooter'|'Truck' $TravelMode
- * @property Shapes\RoadSnapTravelModeOptions $TravelModeOptions
+ * @property 'Car'|'Pedestrian'|'Scooter'|'Truck'|null $TravelMode
+ * @property Shapes\RoadSnapTravelModeOptions|null $TravelModeOptions
  */
 class SnapToRoadsRequest extends Request
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     SnappedGeometryFormat?: 'FlexiblePolyline'|'Simple',
-     *     SnapRadius?: int<0, 10000>,
+     *     Key?: string|null,
+     *     SnappedGeometryFormat?: 'FlexiblePolyline'|'Simple'|null,
+     *     SnapRadius?: int<0, 10000>|null,
      *     TracePoints: list<Shapes\RoadSnapTracePoint>,
-     *     TravelMode?: 'Car'|'Pedestrian'|'Scooter'|'Truck',
-     *     TravelModeOptions?: Shapes\RoadSnapTravelModeOptions
+     *     TravelMode?: 'Car'|'Pedestrian'|'Scooter'|'Truck'|null,
+     *     TravelModeOptions?: Shapes\RoadSnapTravelModeOptions|null
      * } $args
      */
     public function __construct(array $args)

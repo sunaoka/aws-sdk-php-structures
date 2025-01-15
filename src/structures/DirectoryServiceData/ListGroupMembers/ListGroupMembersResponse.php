@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\DirectoryServiceData\ListGroupMembers;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DirectoryId
- * @property string $MemberRealm
- * @property list<Shapes\Member> $Members
- * @property string $NextToken
- * @property string $Realm
+ * @property string|null $DirectoryId
+ * @property string|null $MemberRealm
+ * @property list<Shapes\Member>|null $Members
+ * @property string|null $NextToken
+ * @property string|null $Realm
  */
 class ListGroupMembersResponse extends Response
 {

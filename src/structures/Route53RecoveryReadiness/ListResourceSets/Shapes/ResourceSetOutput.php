@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ResourceSetName
  * @property string $ResourceSetType
  * @property list<Resource> $Resources
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class ResourceSetOutput extends Shape
 {
@@ -19,7 +19,7 @@ class ResourceSetOutput extends Shape
      *     ResourceSetName: string,
      *     ResourceSetType: string,
      *     Resources: list<Resource>,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

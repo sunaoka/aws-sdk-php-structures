@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\TargetResource $targetResource
  * @property string $actionDefinitionId
  * @property Shapes\ActionPayload $actionPayload
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class ExecuteActionRequest extends Request
 {
@@ -17,7 +17,7 @@ class ExecuteActionRequest extends Request
      *     targetResource: Shapes\TargetResource,
      *     actionDefinitionId: string,
      *     actionPayload: Shapes\ActionPayload,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

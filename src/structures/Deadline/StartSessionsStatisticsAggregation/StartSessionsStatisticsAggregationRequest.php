@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\SessionsStatisticsResources $resourceIds
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $endTime
- * @property string $timezone
- * @property 'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY' $period
+ * @property string|null $timezone
+ * @property 'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY'|null $period
  * @property list<'QUEUE_ID'|'FLEET_ID'|'JOB_ID'|'USER_ID'|'USAGE_TYPE'|'INSTANCE_TYPE'|'LICENSE_PRODUCT'> $groupBy
  * @property list<'SUM'|'MIN'|'MAX'|'AVG'> $statistics
  */
@@ -22,8 +22,8 @@ class StartSessionsStatisticsAggregationRequest extends Request
      *     resourceIds: Shapes\SessionsStatisticsResources,
      *     startTime: \Aws\Api\DateTimeResult,
      *     endTime: \Aws\Api\DateTimeResult,
-     *     timezone?: string,
-     *     period?: 'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY',
+     *     timezone?: string|null,
+     *     period?: 'HOURLY'|'DAILY'|'WEEKLY'|'MONTHLY'|null,
      *     groupBy: list<'QUEUE_ID'|'FLEET_ID'|'JOB_ID'|'USER_ID'|'USAGE_TYPE'|'INSTANCE_TYPE'|'LICENSE_PRODUCT'>,
      *     statistics: list<'SUM'|'MIN'|'MAX'|'AVG'>
      * } $args

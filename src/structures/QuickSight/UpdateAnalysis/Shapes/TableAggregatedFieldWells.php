@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $GroupBy
- * @property list<MeasureField> $Values
+ * @property list<DimensionField>|null $GroupBy
+ * @property list<MeasureField>|null $Values
  */
 class TableAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     GroupBy?: list<DimensionField>,
-     *     Values?: list<MeasureField>
+     *     GroupBy?: list<DimensionField>|null,
+     *     Values?: list<MeasureField>|null
      * } $args
      */
     public function __construct(array $args = [])

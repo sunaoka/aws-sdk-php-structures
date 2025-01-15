@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ssm\GetMaintenanceWindowTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Comment
- * @property CloudWatchOutputConfig $CloudWatchOutputConfig
- * @property string $DocumentHash
- * @property 'Sha256'|'Sha1' $DocumentHashType
- * @property string $DocumentVersion
- * @property NotificationConfig $NotificationConfig
- * @property string $OutputS3BucketName
- * @property string $OutputS3KeyPrefix
- * @property array<string, list<string>> $Parameters
- * @property string $ServiceRoleArn
- * @property int<30, 2592000> $TimeoutSeconds
+ * @property string|null $Comment
+ * @property CloudWatchOutputConfig|null $CloudWatchOutputConfig
+ * @property string|null $DocumentHash
+ * @property 'Sha256'|'Sha1'|null $DocumentHashType
+ * @property string|null $DocumentVersion
+ * @property NotificationConfig|null $NotificationConfig
+ * @property string|null $OutputS3BucketName
+ * @property string|null $OutputS3KeyPrefix
+ * @property array<string, list<string>>|null $Parameters
+ * @property string|null $ServiceRoleArn
+ * @property int<30, 2592000>|null $TimeoutSeconds
  */
 class MaintenanceWindowRunCommandParameters extends Shape
 {
     /**
      * @param array{
-     *     Comment?: string,
-     *     CloudWatchOutputConfig?: CloudWatchOutputConfig,
-     *     DocumentHash?: string,
-     *     DocumentHashType?: 'Sha256'|'Sha1',
-     *     DocumentVersion?: string,
-     *     NotificationConfig?: NotificationConfig,
-     *     OutputS3BucketName?: string,
-     *     OutputS3KeyPrefix?: string,
-     *     Parameters?: array<string, list<string>>,
-     *     ServiceRoleArn?: string,
-     *     TimeoutSeconds?: int<30, 2592000>
+     *     Comment?: string|null,
+     *     CloudWatchOutputConfig?: CloudWatchOutputConfig|null,
+     *     DocumentHash?: string|null,
+     *     DocumentHashType?: 'Sha256'|'Sha1'|null,
+     *     DocumentVersion?: string|null,
+     *     NotificationConfig?: NotificationConfig|null,
+     *     OutputS3BucketName?: string|null,
+     *     OutputS3KeyPrefix?: string|null,
+     *     Parameters?: array<string, list<string>>|null,
+     *     ServiceRoleArn?: string|null,
+     *     TimeoutSeconds?: int<30, 2592000>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,15 +8,15 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $serviceCode
  * @property string $usageType
  * @property string $operation
- * @property string $location
- * @property string $id
- * @property string $usageAccountId
- * @property string $group
- * @property WorkloadEstimateUsageQuantity $quantity
- * @property double $cost
- * @property 'USD' $currency
- * @property 'VALID'|'INVALID'|'STALE' $status
- * @property HistoricalUsageEntity $historicalUsage
+ * @property string|null $location
+ * @property string|null $id
+ * @property string|null $usageAccountId
+ * @property string|null $group
+ * @property WorkloadEstimateUsageQuantity|null $quantity
+ * @property double|null $cost
+ * @property 'USD'|null $currency
+ * @property 'VALID'|'INVALID'|'STALE'|null $status
+ * @property HistoricalUsageEntity|null $historicalUsage
  */
 class WorkloadEstimateUsageItem extends Shape
 {
@@ -25,15 +25,15 @@ class WorkloadEstimateUsageItem extends Shape
      *     serviceCode: string,
      *     usageType: string,
      *     operation: string,
-     *     location?: string,
-     *     id?: string,
-     *     usageAccountId?: string,
-     *     group?: string,
-     *     quantity?: WorkloadEstimateUsageQuantity,
-     *     cost?: double,
-     *     currency?: 'USD',
-     *     status?: 'VALID'|'INVALID'|'STALE',
-     *     historicalUsage?: HistoricalUsageEntity
+     *     location?: string|null,
+     *     id?: string|null,
+     *     usageAccountId?: string|null,
+     *     group?: string|null,
+     *     quantity?: WorkloadEstimateUsageQuantity|null,
+     *     cost?: double|null,
+     *     currency?: 'USD'|null,
+     *     status?: 'VALID'|'INVALID'|'STALE'|null,
+     *     historicalUsage?: HistoricalUsageEntity|null
      * } $args
      */
     public function __construct(array $args)

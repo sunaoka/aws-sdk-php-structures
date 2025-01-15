@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Kafka\ListClusterOperationsV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClusterArn
- * @property 'PROVISIONED'|'SERVERLESS' $ClusterType
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $OperationArn
- * @property string $OperationState
- * @property string $OperationType
+ * @property string|null $ClusterArn
+ * @property 'PROVISIONED'|'SERVERLESS'|null $ClusterType
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property string|null $OperationArn
+ * @property string|null $OperationState
+ * @property string|null $OperationType
  */
 class ClusterOperationV2Summary extends Shape
 {
     /**
      * @param array{
-     *     ClusterArn?: string,
-     *     ClusterType?: 'PROVISIONED'|'SERVERLESS',
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     OperationArn?: string,
-     *     OperationState?: string,
-     *     OperationType?: string
+     *     ClusterArn?: string|null,
+     *     ClusterType?: 'PROVISIONED'|'SERVERLESS'|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     OperationArn?: string|null,
+     *     OperationState?: string|null,
+     *     OperationType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

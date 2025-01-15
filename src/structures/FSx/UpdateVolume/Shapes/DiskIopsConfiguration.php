@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateVolume\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AUTOMATIC'|'USER_PROVISIONED' $Mode
- * @property int<0, 2400000> $Iops
+ * @property 'AUTOMATIC'|'USER_PROVISIONED'|null $Mode
+ * @property int<0, 2400000>|null $Iops
  */
 class DiskIopsConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Mode?: 'AUTOMATIC'|'USER_PROVISIONED',
-     *     Iops?: int<0, 2400000>
+     *     Mode?: 'AUTOMATIC'|'USER_PROVISIONED'|null,
+     *     Iops?: int<0, 2400000>|null
      * } $args
      */
     public function __construct(array $args = [])

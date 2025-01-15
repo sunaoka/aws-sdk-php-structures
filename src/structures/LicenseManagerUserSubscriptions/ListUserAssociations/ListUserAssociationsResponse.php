@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\ListUserAssocia
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\InstanceUserSummary> $InstanceUserSummaries
- * @property string $NextToken
+ * @property list<Shapes\InstanceUserSummary>|null $InstanceUserSummaries
+ * @property string|null $NextToken
  */
 class ListUserAssociationsResponse extends Response
 {

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'CLOUDFRONT'|'REGIONAL' $Scope
  * @property string $WebACLName
  * @property string $WebACLId
- * @property string $RuleGroupRuleName
+ * @property string|null $RuleGroupRuleName
  * @property string $RuleName
  */
 class GetRateBasedStatementManagedKeysRequest extends Request
@@ -18,7 +18,7 @@ class GetRateBasedStatementManagedKeysRequest extends Request
      *     Scope: 'CLOUDFRONT'|'REGIONAL',
      *     WebACLName: string,
      *     WebACLId: string,
-     *     RuleGroupRuleName?: string,
+     *     RuleGroupRuleName?: string|null,
      *     RuleName: string
      * } $args
      */

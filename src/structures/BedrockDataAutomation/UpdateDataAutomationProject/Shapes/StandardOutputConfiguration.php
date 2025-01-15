@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockDataAutomation\UpdateDataAutomationProje
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DocumentStandardOutputConfiguration $document
- * @property ImageStandardOutputConfiguration $image
- * @property VideoStandardOutputConfiguration $video
- * @property AudioStandardOutputConfiguration $audio
+ * @property DocumentStandardOutputConfiguration|null $document
+ * @property ImageStandardOutputConfiguration|null $image
+ * @property VideoStandardOutputConfiguration|null $video
+ * @property AudioStandardOutputConfiguration|null $audio
  */
 class StandardOutputConfiguration extends Shape
 {
     /**
      * @param array{
-     *     document?: DocumentStandardOutputConfiguration,
-     *     image?: ImageStandardOutputConfiguration,
-     *     video?: VideoStandardOutputConfiguration,
-     *     audio?: AudioStandardOutputConfiguration
+     *     document?: DocumentStandardOutputConfiguration|null,
+     *     image?: ImageStandardOutputConfiguration|null,
+     *     video?: VideoStandardOutputConfiguration|null,
+     *     audio?: AudioStandardOutputConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

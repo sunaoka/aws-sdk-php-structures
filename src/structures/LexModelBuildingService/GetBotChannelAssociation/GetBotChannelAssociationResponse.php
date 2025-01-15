@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LexModelBuildingService\GetBotChannelAssociatio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $name
- * @property string $description
- * @property string $botAlias
- * @property string $botName
- * @property \Aws\Api\DateTimeResult $createdDate
- * @property 'Facebook'|'Slack'|'Twilio-Sms'|'Kik' $type
- * @property array<string, string> $botConfiguration
- * @property 'IN_PROGRESS'|'CREATED'|'FAILED' $status
- * @property string $failureReason
+ * @property string|null $name
+ * @property string|null $description
+ * @property string|null $botAlias
+ * @property string|null $botName
+ * @property \Aws\Api\DateTimeResult|null $createdDate
+ * @property 'Facebook'|'Slack'|'Twilio-Sms'|'Kik'|null $type
+ * @property array<string, string>|null $botConfiguration
+ * @property 'IN_PROGRESS'|'CREATED'|'FAILED'|null $status
+ * @property string|null $failureReason
  */
 class GetBotChannelAssociationResponse extends Response
 {

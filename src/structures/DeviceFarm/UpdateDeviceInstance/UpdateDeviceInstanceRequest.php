@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property string $profileArn
- * @property list<string> $labels
+ * @property string|null $profileArn
+ * @property list<string>|null $labels
  */
 class UpdateDeviceInstanceRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     profileArn?: string,
-     *     labels?: list<string>
+     *     profileArn?: string|null,
+     *     labels?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

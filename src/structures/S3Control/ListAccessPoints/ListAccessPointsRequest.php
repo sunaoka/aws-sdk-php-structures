@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AccountId
- * @property string $Bucket
- * @property string $NextToken
- * @property int<0, 1000> $MaxResults
+ * @property string|null $Bucket
+ * @property string|null $NextToken
+ * @property int<0, 1000>|null $MaxResults
  */
 class ListAccessPointsRequest extends Request
 {
     /**
      * @param array{
      *     AccountId: string,
-     *     Bucket?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<0, 1000>
+     *     Bucket?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<0, 1000>|null
      * } $args
      */
     public function __construct(array $args)

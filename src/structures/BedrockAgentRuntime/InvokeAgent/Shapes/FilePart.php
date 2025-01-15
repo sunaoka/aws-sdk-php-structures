@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<OutputFile> $files
+ * @property list<OutputFile>|null $files
  */
 class FilePart extends Shape
 {
     /**
-     * @param array{files?: list<OutputFile>} $args
+     * @param array{files?: list<OutputFile>|null} $args
      */
     public function __construct(array $args = [])
     {

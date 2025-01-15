@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SourceDatasetArn
- * @property string $DatasetName
+ * @property string|null $DatasetName
  * @property string $ClientToken
- * @property string $ServerSideKmsKeyId
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ServerSideKmsKeyId
+ * @property list<Shapes\Tag>|null $Tags
  */
 class ImportDatasetRequest extends Request
 {
     /**
      * @param array{
      *     SourceDatasetArn: string,
-     *     DatasetName?: string,
+     *     DatasetName?: string|null,
      *     ClientToken: string,
-     *     ServerSideKmsKeyId?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     ServerSideKmsKeyId?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property bool $Enable
- * @property string $ClientToken
- * @property 'FIFTEEN_MINUTES'|'ONE_HOUR'|'SIX_HOURS' $FindingPublishingFrequency
- * @property Shapes\DataSourceConfigurations $DataSources
- * @property array<string, string> $Tags
- * @property list<Shapes\DetectorFeatureConfiguration> $Features
+ * @property string|null $ClientToken
+ * @property 'FIFTEEN_MINUTES'|'ONE_HOUR'|'SIX_HOURS'|null $FindingPublishingFrequency
+ * @property Shapes\DataSourceConfigurations|null $DataSources
+ * @property array<string, string>|null $Tags
+ * @property list<Shapes\DetectorFeatureConfiguration>|null $Features
  */
 class CreateDetectorRequest extends Request
 {
     /**
      * @param array{
      *     Enable: bool,
-     *     ClientToken?: string,
-     *     FindingPublishingFrequency?: 'FIFTEEN_MINUTES'|'ONE_HOUR'|'SIX_HOURS',
-     *     DataSources?: Shapes\DataSourceConfigurations,
-     *     Tags?: array<string, string>,
-     *     Features?: list<Shapes\DetectorFeatureConfiguration>
+     *     ClientToken?: string|null,
+     *     FindingPublishingFrequency?: 'FIFTEEN_MINUTES'|'ONE_HOUR'|'SIX_HOURS'|null,
+     *     DataSources?: Shapes\DataSourceConfigurations|null,
+     *     Tags?: array<string, string>|null,
+     *     Features?: list<Shapes\DetectorFeatureConfiguration>|null
      * } $args
      */
     public function __construct(array $args)

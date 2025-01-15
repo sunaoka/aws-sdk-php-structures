@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Bedrock\CreateEvaluationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property KnowledgeBaseConfig $knowledgeBaseConfig
+ * @property KnowledgeBaseConfig|null $knowledgeBaseConfig
  */
 class RAGConfig extends Shape
 {
     /**
-     * @param array{knowledgeBaseConfig?: KnowledgeBaseConfig} $args
+     * @param array{knowledgeBaseConfig?: KnowledgeBaseConfig|null} $args
      */
     public function __construct(array $args = [])
     {

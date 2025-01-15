@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $description
  * @property string $knowledgeBaseId
- * @property KnowledgeBaseRetrievalConfiguration $retrievalConfiguration
+ * @property KnowledgeBaseRetrievalConfiguration|null $retrievalConfiguration
  */
 class KnowledgeBase extends Shape
 {
@@ -15,7 +15,7 @@ class KnowledgeBase extends Shape
      * @param array{
      *     description: string,
      *     knowledgeBaseId: string,
-     *     retrievalConfiguration?: KnowledgeBaseRetrievalConfiguration
+     *     retrievalConfiguration?: KnowledgeBaseRetrievalConfiguration|null
      * } $args
      */
     public function __construct(array $args)

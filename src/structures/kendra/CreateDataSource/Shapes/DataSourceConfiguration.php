@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\kendra\CreateDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property S3DataSourceConfiguration $S3Configuration
- * @property SharePointConfiguration $SharePointConfiguration
- * @property DatabaseConfiguration $DatabaseConfiguration
- * @property SalesforceConfiguration $SalesforceConfiguration
- * @property OneDriveConfiguration $OneDriveConfiguration
- * @property ServiceNowConfiguration $ServiceNowConfiguration
- * @property ConfluenceConfiguration $ConfluenceConfiguration
- * @property GoogleDriveConfiguration $GoogleDriveConfiguration
- * @property WebCrawlerConfiguration $WebCrawlerConfiguration
- * @property WorkDocsConfiguration $WorkDocsConfiguration
- * @property FsxConfiguration $FsxConfiguration
- * @property SlackConfiguration $SlackConfiguration
- * @property BoxConfiguration $BoxConfiguration
- * @property QuipConfiguration $QuipConfiguration
- * @property JiraConfiguration $JiraConfiguration
- * @property GitHubConfiguration $GitHubConfiguration
- * @property AlfrescoConfiguration $AlfrescoConfiguration
- * @property TemplateConfiguration $TemplateConfiguration
+ * @property S3DataSourceConfiguration|null $S3Configuration
+ * @property SharePointConfiguration|null $SharePointConfiguration
+ * @property DatabaseConfiguration|null $DatabaseConfiguration
+ * @property SalesforceConfiguration|null $SalesforceConfiguration
+ * @property OneDriveConfiguration|null $OneDriveConfiguration
+ * @property ServiceNowConfiguration|null $ServiceNowConfiguration
+ * @property ConfluenceConfiguration|null $ConfluenceConfiguration
+ * @property GoogleDriveConfiguration|null $GoogleDriveConfiguration
+ * @property WebCrawlerConfiguration|null $WebCrawlerConfiguration
+ * @property WorkDocsConfiguration|null $WorkDocsConfiguration
+ * @property FsxConfiguration|null $FsxConfiguration
+ * @property SlackConfiguration|null $SlackConfiguration
+ * @property BoxConfiguration|null $BoxConfiguration
+ * @property QuipConfiguration|null $QuipConfiguration
+ * @property JiraConfiguration|null $JiraConfiguration
+ * @property GitHubConfiguration|null $GitHubConfiguration
+ * @property AlfrescoConfiguration|null $AlfrescoConfiguration
+ * @property TemplateConfiguration|null $TemplateConfiguration
  */
 class DataSourceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     S3Configuration?: S3DataSourceConfiguration,
-     *     SharePointConfiguration?: SharePointConfiguration,
-     *     DatabaseConfiguration?: DatabaseConfiguration,
-     *     SalesforceConfiguration?: SalesforceConfiguration,
-     *     OneDriveConfiguration?: OneDriveConfiguration,
-     *     ServiceNowConfiguration?: ServiceNowConfiguration,
-     *     ConfluenceConfiguration?: ConfluenceConfiguration,
-     *     GoogleDriveConfiguration?: GoogleDriveConfiguration,
-     *     WebCrawlerConfiguration?: WebCrawlerConfiguration,
-     *     WorkDocsConfiguration?: WorkDocsConfiguration,
-     *     FsxConfiguration?: FsxConfiguration,
-     *     SlackConfiguration?: SlackConfiguration,
-     *     BoxConfiguration?: BoxConfiguration,
-     *     QuipConfiguration?: QuipConfiguration,
-     *     JiraConfiguration?: JiraConfiguration,
-     *     GitHubConfiguration?: GitHubConfiguration,
-     *     AlfrescoConfiguration?: AlfrescoConfiguration,
-     *     TemplateConfiguration?: TemplateConfiguration
+     *     S3Configuration?: S3DataSourceConfiguration|null,
+     *     SharePointConfiguration?: SharePointConfiguration|null,
+     *     DatabaseConfiguration?: DatabaseConfiguration|null,
+     *     SalesforceConfiguration?: SalesforceConfiguration|null,
+     *     OneDriveConfiguration?: OneDriveConfiguration|null,
+     *     ServiceNowConfiguration?: ServiceNowConfiguration|null,
+     *     ConfluenceConfiguration?: ConfluenceConfiguration|null,
+     *     GoogleDriveConfiguration?: GoogleDriveConfiguration|null,
+     *     WebCrawlerConfiguration?: WebCrawlerConfiguration|null,
+     *     WorkDocsConfiguration?: WorkDocsConfiguration|null,
+     *     FsxConfiguration?: FsxConfiguration|null,
+     *     SlackConfiguration?: SlackConfiguration|null,
+     *     BoxConfiguration?: BoxConfiguration|null,
+     *     QuipConfiguration?: QuipConfiguration|null,
+     *     JiraConfiguration?: JiraConfiguration|null,
+     *     GitHubConfiguration?: GitHubConfiguration|null,
+     *     AlfrescoConfiguration?: AlfrescoConfiguration|null,
+     *     TemplateConfiguration?: TemplateConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,59 +5,59 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeClientVpnEndpoints\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClientVpnEndpointId
- * @property string $Description
- * @property ClientVpnEndpointStatus $Status
- * @property string $CreationTime
- * @property string $DeletionTime
- * @property string $DnsName
- * @property string $ClientCidrBlock
- * @property list<string> $DnsServers
- * @property bool $SplitTunnel
- * @property 'openvpn' $VpnProtocol
- * @property 'tcp'|'udp' $TransportProtocol
- * @property int $VpnPort
- * @property list<AssociatedTargetNetwork> $AssociatedTargetNetworks
- * @property string $ServerCertificateArn
- * @property list<ClientVpnAuthentication> $AuthenticationOptions
- * @property ConnectionLogResponseOptions $ConnectionLogOptions
- * @property list<Tag> $Tags
- * @property list<string> $SecurityGroupIds
- * @property string $VpcId
- * @property string $SelfServicePortalUrl
- * @property ClientConnectResponseOptions $ClientConnectOptions
- * @property int $SessionTimeoutHours
- * @property ClientLoginBannerResponseOptions $ClientLoginBannerOptions
- * @property bool $DisconnectOnSessionTimeout
+ * @property string|null $ClientVpnEndpointId
+ * @property string|null $Description
+ * @property ClientVpnEndpointStatus|null $Status
+ * @property string|null $CreationTime
+ * @property string|null $DeletionTime
+ * @property string|null $DnsName
+ * @property string|null $ClientCidrBlock
+ * @property list<string>|null $DnsServers
+ * @property bool|null $SplitTunnel
+ * @property 'openvpn'|null $VpnProtocol
+ * @property 'tcp'|'udp'|null $TransportProtocol
+ * @property int|null $VpnPort
+ * @property list<AssociatedTargetNetwork>|null $AssociatedTargetNetworks
+ * @property string|null $ServerCertificateArn
+ * @property list<ClientVpnAuthentication>|null $AuthenticationOptions
+ * @property ConnectionLogResponseOptions|null $ConnectionLogOptions
+ * @property list<Tag>|null $Tags
+ * @property list<string>|null $SecurityGroupIds
+ * @property string|null $VpcId
+ * @property string|null $SelfServicePortalUrl
+ * @property ClientConnectResponseOptions|null $ClientConnectOptions
+ * @property int|null $SessionTimeoutHours
+ * @property ClientLoginBannerResponseOptions|null $ClientLoginBannerOptions
+ * @property bool|null $DisconnectOnSessionTimeout
  */
 class ClientVpnEndpoint extends Shape
 {
     /**
      * @param array{
-     *     ClientVpnEndpointId?: string,
-     *     Description?: string,
-     *     Status?: ClientVpnEndpointStatus,
-     *     CreationTime?: string,
-     *     DeletionTime?: string,
-     *     DnsName?: string,
-     *     ClientCidrBlock?: string,
-     *     DnsServers?: list<string>,
-     *     SplitTunnel?: bool,
-     *     VpnProtocol?: 'openvpn',
-     *     TransportProtocol?: 'tcp'|'udp',
-     *     VpnPort?: int,
-     *     AssociatedTargetNetworks?: list<AssociatedTargetNetwork>,
-     *     ServerCertificateArn?: string,
-     *     AuthenticationOptions?: list<ClientVpnAuthentication>,
-     *     ConnectionLogOptions?: ConnectionLogResponseOptions,
-     *     Tags?: list<Tag>,
-     *     SecurityGroupIds?: list<string>,
-     *     VpcId?: string,
-     *     SelfServicePortalUrl?: string,
-     *     ClientConnectOptions?: ClientConnectResponseOptions,
-     *     SessionTimeoutHours?: int,
-     *     ClientLoginBannerOptions?: ClientLoginBannerResponseOptions,
-     *     DisconnectOnSessionTimeout?: bool
+     *     ClientVpnEndpointId?: string|null,
+     *     Description?: string|null,
+     *     Status?: ClientVpnEndpointStatus|null,
+     *     CreationTime?: string|null,
+     *     DeletionTime?: string|null,
+     *     DnsName?: string|null,
+     *     ClientCidrBlock?: string|null,
+     *     DnsServers?: list<string>|null,
+     *     SplitTunnel?: bool|null,
+     *     VpnProtocol?: 'openvpn'|null,
+     *     TransportProtocol?: 'tcp'|'udp'|null,
+     *     VpnPort?: int|null,
+     *     AssociatedTargetNetworks?: list<AssociatedTargetNetwork>|null,
+     *     ServerCertificateArn?: string|null,
+     *     AuthenticationOptions?: list<ClientVpnAuthentication>|null,
+     *     ConnectionLogOptions?: ConnectionLogResponseOptions|null,
+     *     Tags?: list<Tag>|null,
+     *     SecurityGroupIds?: list<string>|null,
+     *     VpcId?: string|null,
+     *     SelfServicePortalUrl?: string|null,
+     *     ClientConnectOptions?: ClientConnectResponseOptions|null,
+     *     SessionTimeoutHours?: int|null,
+     *     ClientLoginBannerOptions?: ClientLoginBannerResponseOptions|null,
+     *     DisconnectOnSessionTimeout?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

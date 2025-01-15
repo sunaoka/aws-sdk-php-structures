@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property string $HoursOfOperationId
  * @property string $HoursOfOperationOverrideId
- * @property string $Name
- * @property string $Description
- * @property list<Shapes\HoursOfOperationOverrideConfig> $Config
- * @property string $EffectiveFrom
- * @property string $EffectiveTill
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property list<Shapes\HoursOfOperationOverrideConfig>|null $Config
+ * @property string|null $EffectiveFrom
+ * @property string|null $EffectiveTill
  */
 class UpdateHoursOfOperationOverrideRequest extends Request
 {
@@ -21,11 +21,11 @@ class UpdateHoursOfOperationOverrideRequest extends Request
      *     InstanceId: string,
      *     HoursOfOperationId: string,
      *     HoursOfOperationOverrideId: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     Config?: list<Shapes\HoursOfOperationOverrideConfig>,
-     *     EffectiveFrom?: string,
-     *     EffectiveTill?: string
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Config?: list<Shapes\HoursOfOperationOverrideConfig>|null,
+     *     EffectiveFrom?: string|null,
+     *     EffectiveTill?: string|null
      * } $args
      */
     public function __construct(array $args)

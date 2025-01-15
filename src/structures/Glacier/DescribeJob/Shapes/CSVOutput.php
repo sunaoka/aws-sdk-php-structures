@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Glacier\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALWAYS'|'ASNEEDED' $QuoteFields
- * @property string $QuoteEscapeCharacter
- * @property string $RecordDelimiter
- * @property string $FieldDelimiter
- * @property string $QuoteCharacter
+ * @property 'ALWAYS'|'ASNEEDED'|null $QuoteFields
+ * @property string|null $QuoteEscapeCharacter
+ * @property string|null $RecordDelimiter
+ * @property string|null $FieldDelimiter
+ * @property string|null $QuoteCharacter
  */
 class CSVOutput extends Shape
 {
     /**
      * @param array{
-     *     QuoteFields?: 'ALWAYS'|'ASNEEDED',
-     *     QuoteEscapeCharacter?: string,
-     *     RecordDelimiter?: string,
-     *     FieldDelimiter?: string,
-     *     QuoteCharacter?: string
+     *     QuoteFields?: 'ALWAYS'|'ASNEEDED'|null,
+     *     QuoteEscapeCharacter?: string|null,
+     *     RecordDelimiter?: string|null,
+     *     FieldDelimiter?: string|null,
+     *     QuoteCharacter?: string|null
      * } $args
      */
     public function __construct(array $args = [])

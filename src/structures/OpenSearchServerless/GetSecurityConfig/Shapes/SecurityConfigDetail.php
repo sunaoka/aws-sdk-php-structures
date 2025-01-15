@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\GetSecurityConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $configVersion
- * @property int $createdDate
- * @property string $description
- * @property IamIdentityCenterConfigOptions $iamIdentityCenterOptions
- * @property string $id
- * @property int $lastModifiedDate
- * @property SamlConfigOptions $samlOptions
- * @property 'saml'|'iamidentitycenter' $type
+ * @property string|null $configVersion
+ * @property int|null $createdDate
+ * @property string|null $description
+ * @property IamIdentityCenterConfigOptions|null $iamIdentityCenterOptions
+ * @property string|null $id
+ * @property int|null $lastModifiedDate
+ * @property SamlConfigOptions|null $samlOptions
+ * @property 'saml'|'iamidentitycenter'|null $type
  */
 class SecurityConfigDetail extends Shape
 {
     /**
      * @param array{
-     *     configVersion?: string,
-     *     createdDate?: int,
-     *     description?: string,
-     *     iamIdentityCenterOptions?: IamIdentityCenterConfigOptions,
-     *     id?: string,
-     *     lastModifiedDate?: int,
-     *     samlOptions?: SamlConfigOptions,
-     *     type?: 'saml'|'iamidentitycenter'
+     *     configVersion?: string|null,
+     *     createdDate?: int|null,
+     *     description?: string|null,
+     *     iamIdentityCenterOptions?: IamIdentityCenterConfigOptions|null,
+     *     id?: string|null,
+     *     lastModifiedDate?: int|null,
+     *     samlOptions?: SamlConfigOptions|null,
+     *     type?: 'saml'|'iamidentitycenter'|null
      * } $args
      */
     public function __construct(array $args = [])

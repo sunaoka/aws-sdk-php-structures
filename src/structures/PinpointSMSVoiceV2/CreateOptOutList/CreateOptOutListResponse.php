@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\CreateOptOutList;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $OptOutListArn
- * @property string $OptOutListName
- * @property list<Shapes\Tag> $Tags
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
+ * @property string|null $OptOutListArn
+ * @property string|null $OptOutListName
+ * @property list<Shapes\Tag>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
  */
 class CreateOptOutListResponse extends Response
 {

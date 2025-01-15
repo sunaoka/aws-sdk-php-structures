@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BucketLevelPermissions $BucketLevelPermissions
- * @property AccountLevelPermissions $AccountLevelPermissions
+ * @property BucketLevelPermissions|null $BucketLevelPermissions
+ * @property AccountLevelPermissions|null $AccountLevelPermissions
  */
 class PermissionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     BucketLevelPermissions?: BucketLevelPermissions,
-     *     AccountLevelPermissions?: AccountLevelPermissions
+     *     BucketLevelPermissions?: BucketLevelPermissions|null,
+     *     AccountLevelPermissions?: AccountLevelPermissions|null
      * } $args
      */
     public function __construct(array $args = [])

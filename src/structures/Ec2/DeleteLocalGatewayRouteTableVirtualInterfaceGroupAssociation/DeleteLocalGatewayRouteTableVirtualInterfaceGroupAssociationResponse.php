@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteLocalGatewayRouteTableVirtualInterfac
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\LocalGatewayRouteTableVirtualInterfaceGroupAssociation $LocalGatewayRouteTableVirtualInterfaceGroupAssociation
+ * @property Shapes\LocalGatewayRouteTableVirtualInterfaceGroupAssociation|null $LocalGatewayRouteTableVirtualInterfaceGroupAssociation
  */
 class DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResponse extends Response
 {

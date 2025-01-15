@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateDomain\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $AssumableRoleArns
- * @property list<string> $ExecutionRoleArns
+ * @property list<string>|null $AssumableRoleArns
+ * @property list<string>|null $ExecutionRoleArns
  */
 class EmrSettings extends Shape
 {
     /**
      * @param array{
-     *     AssumableRoleArns?: list<string>,
-     *     ExecutionRoleArns?: list<string>
+     *     AssumableRoleArns?: list<string>|null,
+     *     ExecutionRoleArns?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

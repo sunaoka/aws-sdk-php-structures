@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property int<1, 5> $impact
  * @property IncidentRecordSource $incidentRecordSource
- * @property \Aws\Api\DateTimeResult $resolvedTime
+ * @property \Aws\Api\DateTimeResult|null $resolvedTime
  * @property 'OPEN'|'RESOLVED' $status
  * @property string $title
  */
@@ -21,7 +21,7 @@ class IncidentRecordSummary extends Shape
      *     creationTime: \Aws\Api\DateTimeResult,
      *     impact: int<1, 5>,
      *     incidentRecordSource: IncidentRecordSource,
-     *     resolvedTime?: \Aws\Api\DateTimeResult,
+     *     resolvedTime?: \Aws\Api\DateTimeResult|null,
      *     status: 'OPEN'|'RESOLVED',
      *     title: string
      * } $args

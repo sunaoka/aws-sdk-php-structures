@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property string $name
- * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED' $status
- * @property BillInterval $billInterval
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $expiresAt
+ * @property string|null $name
+ * @property 'IN_PROGRESS'|'COMPLETE'|'FAILED'|null $status
+ * @property BillInterval|null $billInterval
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $expiresAt
  */
 class BillEstimateSummary extends Shape
 {
     /**
      * @param array{
      *     id: string,
-     *     name?: string,
-     *     status?: 'IN_PROGRESS'|'COMPLETE'|'FAILED',
-     *     billInterval?: BillInterval,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     expiresAt?: \Aws\Api\DateTimeResult
+     *     name?: string|null,
+     *     status?: 'IN_PROGRESS'|'COMPLETE'|'FAILED'|null,
+     *     billInterval?: BillInterval|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     expiresAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

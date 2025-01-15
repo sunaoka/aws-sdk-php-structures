@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetBucketBundles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bundleId
- * @property string $name
- * @property float $price
- * @property int $storagePerMonthInGb
- * @property int $transferPerMonthInGb
- * @property bool $isActive
+ * @property string|null $bundleId
+ * @property string|null $name
+ * @property float|null $price
+ * @property int|null $storagePerMonthInGb
+ * @property int|null $transferPerMonthInGb
+ * @property bool|null $isActive
  */
 class BucketBundle extends Shape
 {
     /**
      * @param array{
-     *     bundleId?: string,
-     *     name?: string,
-     *     price?: float,
-     *     storagePerMonthInGb?: int,
-     *     transferPerMonthInGb?: int,
-     *     isActive?: bool
+     *     bundleId?: string|null,
+     *     name?: string|null,
+     *     price?: float|null,
+     *     storagePerMonthInGb?: int|null,
+     *     transferPerMonthInGb?: int|null,
+     *     isActive?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

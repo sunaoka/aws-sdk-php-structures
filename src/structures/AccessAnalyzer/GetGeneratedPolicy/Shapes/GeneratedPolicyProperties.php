@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\GetGeneratedPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $isComplete
+ * @property bool|null $isComplete
  * @property string $principalArn
- * @property CloudTrailProperties $cloudTrailProperties
+ * @property CloudTrailProperties|null $cloudTrailProperties
  */
 class GeneratedPolicyProperties extends Shape
 {
     /**
      * @param array{
-     *     isComplete?: bool,
+     *     isComplete?: bool|null,
      *     principalArn: string,
-     *     cloudTrailProperties?: CloudTrailProperties
+     *     cloudTrailProperties?: CloudTrailProperties|null
      * } $args
      */
     public function __construct(array $args)

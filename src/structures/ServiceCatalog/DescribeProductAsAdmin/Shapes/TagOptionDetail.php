@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProductAsAdmin\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property string $Value
- * @property bool $Active
- * @property string $Id
- * @property string $Owner
+ * @property string|null $Key
+ * @property string|null $Value
+ * @property bool|null $Active
+ * @property string|null $Id
+ * @property string|null $Owner
  */
 class TagOptionDetail extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     Value?: string,
-     *     Active?: bool,
-     *     Id?: string,
-     *     Owner?: string
+     *     Key?: string|null,
+     *     Value?: string|null,
+     *     Active?: bool|null,
+     *     Id?: string|null,
+     *     Owner?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Organizations\UpdatePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PolicySummary $PolicySummary
- * @property string $Content
+ * @property PolicySummary|null $PolicySummary
+ * @property string|null $Content
  */
 class Policy extends Shape
 {
     /**
      * @param array{
-     *     PolicySummary?: PolicySummary,
-     *     Content?: string
+     *     PolicySummary?: PolicySummary|null,
+     *     Content?: string|null
      * } $args
      */
     public function __construct(array $args = [])

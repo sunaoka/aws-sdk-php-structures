@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardSnapshotJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<StringParameter> $StringParameters
- * @property list<IntegerParameter> $IntegerParameters
- * @property list<DecimalParameter> $DecimalParameters
- * @property list<DateTimeParameter> $DateTimeParameters
+ * @property list<StringParameter>|null $StringParameters
+ * @property list<IntegerParameter>|null $IntegerParameters
+ * @property list<DecimalParameter>|null $DecimalParameters
+ * @property list<DateTimeParameter>|null $DateTimeParameters
  */
 class Parameters extends Shape
 {
     /**
      * @param array{
-     *     StringParameters?: list<StringParameter>,
-     *     IntegerParameters?: list<IntegerParameter>,
-     *     DecimalParameters?: list<DecimalParameter>,
-     *     DateTimeParameters?: list<DateTimeParameter>
+     *     StringParameters?: list<StringParameter>|null,
+     *     IntegerParameters?: list<IntegerParameter>|null,
+     *     DecimalParameters?: list<DecimalParameter>|null,
+     *     DateTimeParameters?: list<DateTimeParameter>|null
      * } $args
      */
     public function __construct(array $args = [])

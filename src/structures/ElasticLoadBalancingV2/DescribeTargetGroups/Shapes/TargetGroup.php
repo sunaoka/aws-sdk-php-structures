@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeTargetGroups\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TargetGroupArn
- * @property string $TargetGroupName
- * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE' $Protocol
- * @property int<1, 65535> $Port
- * @property string $VpcId
- * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE' $HealthCheckProtocol
- * @property string $HealthCheckPort
- * @property bool $HealthCheckEnabled
- * @property int<5, 300> $HealthCheckIntervalSeconds
- * @property int<2, 120> $HealthCheckTimeoutSeconds
- * @property int<2, 10> $HealthyThresholdCount
- * @property int<2, 10> $UnhealthyThresholdCount
- * @property string $HealthCheckPath
- * @property Matcher $Matcher
- * @property list<string> $LoadBalancerArns
- * @property 'instance'|'ip'|'lambda'|'alb' $TargetType
- * @property string $ProtocolVersion
- * @property 'ipv4'|'ipv6' $IpAddressType
+ * @property string|null $TargetGroupArn
+ * @property string|null $TargetGroupName
+ * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null $Protocol
+ * @property int<1, 65535>|null $Port
+ * @property string|null $VpcId
+ * @property 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null $HealthCheckProtocol
+ * @property string|null $HealthCheckPort
+ * @property bool|null $HealthCheckEnabled
+ * @property int<5, 300>|null $HealthCheckIntervalSeconds
+ * @property int<2, 120>|null $HealthCheckTimeoutSeconds
+ * @property int<2, 10>|null $HealthyThresholdCount
+ * @property int<2, 10>|null $UnhealthyThresholdCount
+ * @property string|null $HealthCheckPath
+ * @property Matcher|null $Matcher
+ * @property list<string>|null $LoadBalancerArns
+ * @property 'instance'|'ip'|'lambda'|'alb'|null $TargetType
+ * @property string|null $ProtocolVersion
+ * @property 'ipv4'|'ipv6'|null $IpAddressType
  */
 class TargetGroup extends Shape
 {
     /**
      * @param array{
-     *     TargetGroupArn?: string,
-     *     TargetGroupName?: string,
-     *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE',
-     *     Port?: int<1, 65535>,
-     *     VpcId?: string,
-     *     HealthCheckProtocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE',
-     *     HealthCheckPort?: string,
-     *     HealthCheckEnabled?: bool,
-     *     HealthCheckIntervalSeconds?: int<5, 300>,
-     *     HealthCheckTimeoutSeconds?: int<2, 120>,
-     *     HealthyThresholdCount?: int<2, 10>,
-     *     UnhealthyThresholdCount?: int<2, 10>,
-     *     HealthCheckPath?: string,
-     *     Matcher?: Matcher,
-     *     LoadBalancerArns?: list<string>,
-     *     TargetType?: 'instance'|'ip'|'lambda'|'alb',
-     *     ProtocolVersion?: string,
-     *     IpAddressType?: 'ipv4'|'ipv6'
+     *     TargetGroupArn?: string|null,
+     *     TargetGroupName?: string|null,
+     *     Protocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null,
+     *     Port?: int<1, 65535>|null,
+     *     VpcId?: string|null,
+     *     HealthCheckProtocol?: 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'|'GENEVE'|null,
+     *     HealthCheckPort?: string|null,
+     *     HealthCheckEnabled?: bool|null,
+     *     HealthCheckIntervalSeconds?: int<5, 300>|null,
+     *     HealthCheckTimeoutSeconds?: int<2, 120>|null,
+     *     HealthyThresholdCount?: int<2, 10>|null,
+     *     UnhealthyThresholdCount?: int<2, 10>|null,
+     *     HealthCheckPath?: string|null,
+     *     Matcher?: Matcher|null,
+     *     LoadBalancerArns?: list<string>|null,
+     *     TargetType?: 'instance'|'ip'|'lambda'|'alb'|null,
+     *     ProtocolVersion?: string|null,
+     *     IpAddressType?: 'ipv4'|'ipv6'|null
      * } $args
      */
     public function __construct(array $args = [])

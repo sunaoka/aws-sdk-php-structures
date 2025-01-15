@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DescribeGatewayInformation\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Ipv4Address
- * @property string $MacAddress
- * @property string $Ipv6Address
+ * @property string|null $Ipv4Address
+ * @property string|null $MacAddress
+ * @property string|null $Ipv6Address
  */
 class NetworkInterface extends Shape
 {
     /**
      * @param array{
-     *     Ipv4Address?: string,
-     *     MacAddress?: string,
-     *     Ipv6Address?: string
+     *     Ipv4Address?: string|null,
+     *     MacAddress?: string|null,
+     *     Ipv6Address?: string|null
      * } $args
      */
     public function __construct(array $args = [])

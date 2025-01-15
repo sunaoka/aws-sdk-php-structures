@@ -5,69 +5,69 @@ namespace Sunaoka\Aws\Structures\Ssm\CreateAssociationBatch\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $InstanceId
- * @property string $AssociationVersion
- * @property \Aws\Api\DateTimeResult $Date
- * @property \Aws\Api\DateTimeResult $LastUpdateAssociationDate
- * @property AssociationStatus $Status
- * @property AssociationOverview $Overview
- * @property string $DocumentVersion
- * @property string $AutomationTargetParameterName
- * @property array<string, list<string>> $Parameters
- * @property string $AssociationId
- * @property list<Target> $Targets
- * @property string $ScheduleExpression
- * @property InstanceAssociationOutputLocation $OutputLocation
- * @property \Aws\Api\DateTimeResult $LastExecutionDate
- * @property \Aws\Api\DateTimeResult $LastSuccessfulExecutionDate
- * @property string $AssociationName
- * @property string $MaxErrors
- * @property string $MaxConcurrency
- * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED' $ComplianceSeverity
- * @property 'AUTO'|'MANUAL' $SyncCompliance
- * @property bool $ApplyOnlyAtCronInterval
- * @property list<string> $CalendarNames
- * @property list<TargetLocation> $TargetLocations
- * @property int<1, 6> $ScheduleOffset
- * @property int<1, 24> $Duration
- * @property list<array<string, list<string>>> $TargetMaps
- * @property AlarmConfiguration $AlarmConfiguration
- * @property list<AlarmStateInformation> $TriggeredAlarms
+ * @property string|null $Name
+ * @property string|null $InstanceId
+ * @property string|null $AssociationVersion
+ * @property \Aws\Api\DateTimeResult|null $Date
+ * @property \Aws\Api\DateTimeResult|null $LastUpdateAssociationDate
+ * @property AssociationStatus|null $Status
+ * @property AssociationOverview|null $Overview
+ * @property string|null $DocumentVersion
+ * @property string|null $AutomationTargetParameterName
+ * @property array<string, list<string>>|null $Parameters
+ * @property string|null $AssociationId
+ * @property list<Target>|null $Targets
+ * @property string|null $ScheduleExpression
+ * @property InstanceAssociationOutputLocation|null $OutputLocation
+ * @property \Aws\Api\DateTimeResult|null $LastExecutionDate
+ * @property \Aws\Api\DateTimeResult|null $LastSuccessfulExecutionDate
+ * @property string|null $AssociationName
+ * @property string|null $MaxErrors
+ * @property string|null $MaxConcurrency
+ * @property 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED'|null $ComplianceSeverity
+ * @property 'AUTO'|'MANUAL'|null $SyncCompliance
+ * @property bool|null $ApplyOnlyAtCronInterval
+ * @property list<string>|null $CalendarNames
+ * @property list<TargetLocation>|null $TargetLocations
+ * @property int<1, 6>|null $ScheduleOffset
+ * @property int<1, 24>|null $Duration
+ * @property list<array<string, list<string>>>|null $TargetMaps
+ * @property AlarmConfiguration|null $AlarmConfiguration
+ * @property list<AlarmStateInformation>|null $TriggeredAlarms
  */
 class AssociationDescription extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     InstanceId?: string,
-     *     AssociationVersion?: string,
-     *     Date?: \Aws\Api\DateTimeResult,
-     *     LastUpdateAssociationDate?: \Aws\Api\DateTimeResult,
-     *     Status?: AssociationStatus,
-     *     Overview?: AssociationOverview,
-     *     DocumentVersion?: string,
-     *     AutomationTargetParameterName?: string,
-     *     Parameters?: array<string, list<string>>,
-     *     AssociationId?: string,
-     *     Targets?: list<Target>,
-     *     ScheduleExpression?: string,
-     *     OutputLocation?: InstanceAssociationOutputLocation,
-     *     LastExecutionDate?: \Aws\Api\DateTimeResult,
-     *     LastSuccessfulExecutionDate?: \Aws\Api\DateTimeResult,
-     *     AssociationName?: string,
-     *     MaxErrors?: string,
-     *     MaxConcurrency?: string,
-     *     ComplianceSeverity?: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED',
-     *     SyncCompliance?: 'AUTO'|'MANUAL',
-     *     ApplyOnlyAtCronInterval?: bool,
-     *     CalendarNames?: list<string>,
-     *     TargetLocations?: list<TargetLocation>,
-     *     ScheduleOffset?: int<1, 6>,
-     *     Duration?: int<1, 24>,
-     *     TargetMaps?: list<array<string, list<string>>>,
-     *     AlarmConfiguration?: AlarmConfiguration,
-     *     TriggeredAlarms?: list<AlarmStateInformation>
+     *     Name?: string|null,
+     *     InstanceId?: string|null,
+     *     AssociationVersion?: string|null,
+     *     Date?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdateAssociationDate?: \Aws\Api\DateTimeResult|null,
+     *     Status?: AssociationStatus|null,
+     *     Overview?: AssociationOverview|null,
+     *     DocumentVersion?: string|null,
+     *     AutomationTargetParameterName?: string|null,
+     *     Parameters?: array<string, list<string>>|null,
+     *     AssociationId?: string|null,
+     *     Targets?: list<Target>|null,
+     *     ScheduleExpression?: string|null,
+     *     OutputLocation?: InstanceAssociationOutputLocation|null,
+     *     LastExecutionDate?: \Aws\Api\DateTimeResult|null,
+     *     LastSuccessfulExecutionDate?: \Aws\Api\DateTimeResult|null,
+     *     AssociationName?: string|null,
+     *     MaxErrors?: string|null,
+     *     MaxConcurrency?: string|null,
+     *     ComplianceSeverity?: 'CRITICAL'|'HIGH'|'MEDIUM'|'LOW'|'UNSPECIFIED'|null,
+     *     SyncCompliance?: 'AUTO'|'MANUAL'|null,
+     *     ApplyOnlyAtCronInterval?: bool|null,
+     *     CalendarNames?: list<string>|null,
+     *     TargetLocations?: list<TargetLocation>|null,
+     *     ScheduleOffset?: int<1, 6>|null,
+     *     Duration?: int<1, 24>|null,
+     *     TargetMaps?: list<array<string, list<string>>>|null,
+     *     AlarmConfiguration?: AlarmConfiguration|null,
+     *     TriggeredAlarms?: list<AlarmStateInformation>|null
      * } $args
      */
     public function __construct(array $args = [])

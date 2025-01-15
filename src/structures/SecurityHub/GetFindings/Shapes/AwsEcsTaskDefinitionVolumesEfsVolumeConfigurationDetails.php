@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetails $AuthorizationConfig
- * @property string $FilesystemId
- * @property string $RootDirectory
- * @property string $TransitEncryption
- * @property int $TransitEncryptionPort
+ * @property AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetails|null $AuthorizationConfig
+ * @property string|null $FilesystemId
+ * @property string|null $RootDirectory
+ * @property string|null $TransitEncryption
+ * @property int|null $TransitEncryptionPort
  */
 class AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails extends Shape
 {
     /**
      * @param array{
-     *     AuthorizationConfig?: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetails,
-     *     FilesystemId?: string,
-     *     RootDirectory?: string,
-     *     TransitEncryption?: string,
-     *     TransitEncryptionPort?: int
+     *     AuthorizationConfig?: AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetails|null,
+     *     FilesystemId?: string|null,
+     *     RootDirectory?: string|null,
+     *     TransitEncryption?: string|null,
+     *     TransitEncryptionPort?: int|null
      * } $args
      */
     public function __construct(array $args = [])

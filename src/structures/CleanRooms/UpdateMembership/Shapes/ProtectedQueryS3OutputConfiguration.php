@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'CSV'|'PARQUET' $resultFormat
  * @property string $bucket
- * @property string $keyPrefix
- * @property bool $singleFileOutput
+ * @property string|null $keyPrefix
+ * @property bool|null $singleFileOutput
  */
 class ProtectedQueryS3OutputConfiguration extends Shape
 {
@@ -16,8 +16,8 @@ class ProtectedQueryS3OutputConfiguration extends Shape
      * @param array{
      *     resultFormat: 'CSV'|'PARQUET',
      *     bucket: string,
-     *     keyPrefix?: string,
-     *     singleFileOutput?: bool
+     *     keyPrefix?: string|null,
+     *     singleFileOutput?: bool|null
      * } $args
      */
     public function __construct(array $args)

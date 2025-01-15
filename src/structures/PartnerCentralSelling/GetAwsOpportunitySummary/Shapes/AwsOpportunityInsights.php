@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetAwsOpportunitySummary\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'High'|'Medium'|'Low' $EngagementScore
- * @property string $NextBestActions
+ * @property 'High'|'Medium'|'Low'|null $EngagementScore
+ * @property string|null $NextBestActions
  */
 class AwsOpportunityInsights extends Shape
 {
     /**
      * @param array{
-     *     EngagementScore?: 'High'|'Medium'|'Low',
-     *     NextBestActions?: string
+     *     EngagementScore?: 'High'|'Medium'|'Low'|null,
+     *     NextBestActions?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ResourceName
- * @property string $ParentResourceName
- * @property list<SyncBlocker> $LatestBlockers
+ * @property string|null $ParentResourceName
+ * @property list<SyncBlocker>|null $LatestBlockers
  */
 class SyncBlockerSummary extends Shape
 {
     /**
      * @param array{
      *     ResourceName: string,
-     *     ParentResourceName?: string,
-     *     LatestBlockers?: list<SyncBlocker>
+     *     ParentResourceName?: string|null,
+     *     LatestBlockers?: list<SyncBlocker>|null
      * } $args
      */
     public function __construct(array $args)

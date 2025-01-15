@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $BackupVaultName
- * @property string $BackupVaultAccountId
+ * @property string|null $BackupVaultAccountId
  */
 class DescribeBackupVaultRequest extends Request
 {
     /**
      * @param array{
      *     BackupVaultName: string,
-     *     BackupVaultAccountId?: string
+     *     BackupVaultAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

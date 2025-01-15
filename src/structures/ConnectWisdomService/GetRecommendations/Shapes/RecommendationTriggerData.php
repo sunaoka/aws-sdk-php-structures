@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ConnectWisdomService\GetRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property QueryRecommendationTriggerData $query
+ * @property QueryRecommendationTriggerData|null $query
  */
 class RecommendationTriggerData extends Shape
 {
     /**
-     * @param array{query?: QueryRecommendationTriggerData} $args
+     * @param array{query?: QueryRecommendationTriggerData|null} $args
      */
     public function __construct(array $args = [])
     {

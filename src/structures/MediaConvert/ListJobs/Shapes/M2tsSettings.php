@@ -5,95 +5,95 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DVB'|'ATSC' $AudioBufferModel
- * @property 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION' $AudioDuration
- * @property int<0, 2147483647> $AudioFramesPerPes
- * @property list<int<32, 8182>> $AudioPids
- * @property int<0, 2147483647> $Bitrate
- * @property 'MULTIPLEX'|'NONE' $BufferModel
- * @property 'AUTO'|'ALIGN_TO_VIDEO' $DataPTSControl
- * @property DvbNitSettings $DvbNitSettings
- * @property DvbSdtSettings $DvbSdtSettings
- * @property list<int<32, 8182>> $DvbSubPids
- * @property DvbTdtSettings $DvbTdtSettings
- * @property int<32, 8182> $DvbTeletextPid
- * @property 'VIDEO_AND_FIXED_INTERVALS'|'VIDEO_INTERVAL' $EbpAudioInterval
- * @property 'VIDEO_AND_AUDIO_PIDS'|'VIDEO_PID' $EbpPlacement
- * @property 'INCLUDE'|'EXCLUDE' $EsRateInPes
- * @property 'FORCE'|'DEFAULT' $ForceTsVideoEbpOrder
- * @property double $FragmentTime
- * @property 'PASSTHROUGH'|'NONE' $KlvMetadata
- * @property int<0, 500> $MaxPcrInterval
- * @property int<0, 10000> $MinEbpInterval
- * @property 'INSERT'|'NONE' $NielsenId3
- * @property double $NullPacketBitrate
- * @property int<0, 1000> $PatInterval
- * @property 'PCR_EVERY_PES_PACKET'|'CONFIGURED_PCR_PERIOD' $PcrControl
- * @property int<32, 8182> $PcrPid
- * @property int<0, 1000> $PmtInterval
- * @property int<32, 8182> $PmtPid
- * @property 'DISABLED'|'ENABLED' $PreventBufferUnderflow
- * @property int<32, 8182> $PrivateMetadataPid
- * @property int<0, 65535> $ProgramNumber
- * @property int<0, 3600> $PtsOffset
- * @property 'AUTO'|'SECONDS' $PtsOffsetMode
- * @property 'VBR'|'CBR' $RateMode
- * @property M2tsScte35Esam $Scte35Esam
- * @property int<32, 8182> $Scte35Pid
- * @property 'PASSTHROUGH'|'NONE' $Scte35Source
- * @property 'NONE'|'RAI_SEGSTART'|'RAI_ADAPT'|'PSI_SEGSTART'|'EBP'|'EBP_LEGACY' $SegmentationMarkers
- * @property 'MAINTAIN_CADENCE'|'RESET_CADENCE' $SegmentationStyle
- * @property double $SegmentationTime
- * @property int<32, 8182> $TimedMetadataPid
- * @property int<0, 65535> $TransportStreamId
- * @property int<32, 8182> $VideoPid
+ * @property 'DVB'|'ATSC'|null $AudioBufferModel
+ * @property 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null $AudioDuration
+ * @property int<0, 2147483647>|null $AudioFramesPerPes
+ * @property list<int<32, 8182>>|null $AudioPids
+ * @property int<0, 2147483647>|null $Bitrate
+ * @property 'MULTIPLEX'|'NONE'|null $BufferModel
+ * @property 'AUTO'|'ALIGN_TO_VIDEO'|null $DataPTSControl
+ * @property DvbNitSettings|null $DvbNitSettings
+ * @property DvbSdtSettings|null $DvbSdtSettings
+ * @property list<int<32, 8182>>|null $DvbSubPids
+ * @property DvbTdtSettings|null $DvbTdtSettings
+ * @property int<32, 8182>|null $DvbTeletextPid
+ * @property 'VIDEO_AND_FIXED_INTERVALS'|'VIDEO_INTERVAL'|null $EbpAudioInterval
+ * @property 'VIDEO_AND_AUDIO_PIDS'|'VIDEO_PID'|null $EbpPlacement
+ * @property 'INCLUDE'|'EXCLUDE'|null $EsRateInPes
+ * @property 'FORCE'|'DEFAULT'|null $ForceTsVideoEbpOrder
+ * @property double|null $FragmentTime
+ * @property 'PASSTHROUGH'|'NONE'|null $KlvMetadata
+ * @property int<0, 500>|null $MaxPcrInterval
+ * @property int<0, 10000>|null $MinEbpInterval
+ * @property 'INSERT'|'NONE'|null $NielsenId3
+ * @property double|null $NullPacketBitrate
+ * @property int<0, 1000>|null $PatInterval
+ * @property 'PCR_EVERY_PES_PACKET'|'CONFIGURED_PCR_PERIOD'|null $PcrControl
+ * @property int<32, 8182>|null $PcrPid
+ * @property int<0, 1000>|null $PmtInterval
+ * @property int<32, 8182>|null $PmtPid
+ * @property 'DISABLED'|'ENABLED'|null $PreventBufferUnderflow
+ * @property int<32, 8182>|null $PrivateMetadataPid
+ * @property int<0, 65535>|null $ProgramNumber
+ * @property int<0, 3600>|null $PtsOffset
+ * @property 'AUTO'|'SECONDS'|null $PtsOffsetMode
+ * @property 'VBR'|'CBR'|null $RateMode
+ * @property M2tsScte35Esam|null $Scte35Esam
+ * @property int<32, 8182>|null $Scte35Pid
+ * @property 'PASSTHROUGH'|'NONE'|null $Scte35Source
+ * @property 'NONE'|'RAI_SEGSTART'|'RAI_ADAPT'|'PSI_SEGSTART'|'EBP'|'EBP_LEGACY'|null $SegmentationMarkers
+ * @property 'MAINTAIN_CADENCE'|'RESET_CADENCE'|null $SegmentationStyle
+ * @property double|null $SegmentationTime
+ * @property int<32, 8182>|null $TimedMetadataPid
+ * @property int<0, 65535>|null $TransportStreamId
+ * @property int<32, 8182>|null $VideoPid
  */
 class M2tsSettings extends Shape
 {
     /**
      * @param array{
-     *     AudioBufferModel?: 'DVB'|'ATSC',
-     *     AudioDuration?: 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION',
-     *     AudioFramesPerPes?: int<0, 2147483647>,
-     *     AudioPids?: list<int<32, 8182>>,
-     *     Bitrate?: int<0, 2147483647>,
-     *     BufferModel?: 'MULTIPLEX'|'NONE',
-     *     DataPTSControl?: 'AUTO'|'ALIGN_TO_VIDEO',
-     *     DvbNitSettings?: DvbNitSettings,
-     *     DvbSdtSettings?: DvbSdtSettings,
-     *     DvbSubPids?: list<int<32, 8182>>,
-     *     DvbTdtSettings?: DvbTdtSettings,
-     *     DvbTeletextPid?: int<32, 8182>,
-     *     EbpAudioInterval?: 'VIDEO_AND_FIXED_INTERVALS'|'VIDEO_INTERVAL',
-     *     EbpPlacement?: 'VIDEO_AND_AUDIO_PIDS'|'VIDEO_PID',
-     *     EsRateInPes?: 'INCLUDE'|'EXCLUDE',
-     *     ForceTsVideoEbpOrder?: 'FORCE'|'DEFAULT',
-     *     FragmentTime?: double,
-     *     KlvMetadata?: 'PASSTHROUGH'|'NONE',
-     *     MaxPcrInterval?: int<0, 500>,
-     *     MinEbpInterval?: int<0, 10000>,
-     *     NielsenId3?: 'INSERT'|'NONE',
-     *     NullPacketBitrate?: double,
-     *     PatInterval?: int<0, 1000>,
-     *     PcrControl?: 'PCR_EVERY_PES_PACKET'|'CONFIGURED_PCR_PERIOD',
-     *     PcrPid?: int<32, 8182>,
-     *     PmtInterval?: int<0, 1000>,
-     *     PmtPid?: int<32, 8182>,
-     *     PreventBufferUnderflow?: 'DISABLED'|'ENABLED',
-     *     PrivateMetadataPid?: int<32, 8182>,
-     *     ProgramNumber?: int<0, 65535>,
-     *     PtsOffset?: int<0, 3600>,
-     *     PtsOffsetMode?: 'AUTO'|'SECONDS',
-     *     RateMode?: 'VBR'|'CBR',
-     *     Scte35Esam?: M2tsScte35Esam,
-     *     Scte35Pid?: int<32, 8182>,
-     *     Scte35Source?: 'PASSTHROUGH'|'NONE',
-     *     SegmentationMarkers?: 'NONE'|'RAI_SEGSTART'|'RAI_ADAPT'|'PSI_SEGSTART'|'EBP'|'EBP_LEGACY',
-     *     SegmentationStyle?: 'MAINTAIN_CADENCE'|'RESET_CADENCE',
-     *     SegmentationTime?: double,
-     *     TimedMetadataPid?: int<32, 8182>,
-     *     TransportStreamId?: int<0, 65535>,
-     *     VideoPid?: int<32, 8182>
+     *     AudioBufferModel?: 'DVB'|'ATSC'|null,
+     *     AudioDuration?: 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null,
+     *     AudioFramesPerPes?: int<0, 2147483647>|null,
+     *     AudioPids?: list<int<32, 8182>>|null,
+     *     Bitrate?: int<0, 2147483647>|null,
+     *     BufferModel?: 'MULTIPLEX'|'NONE'|null,
+     *     DataPTSControl?: 'AUTO'|'ALIGN_TO_VIDEO'|null,
+     *     DvbNitSettings?: DvbNitSettings|null,
+     *     DvbSdtSettings?: DvbSdtSettings|null,
+     *     DvbSubPids?: list<int<32, 8182>>|null,
+     *     DvbTdtSettings?: DvbTdtSettings|null,
+     *     DvbTeletextPid?: int<32, 8182>|null,
+     *     EbpAudioInterval?: 'VIDEO_AND_FIXED_INTERVALS'|'VIDEO_INTERVAL'|null,
+     *     EbpPlacement?: 'VIDEO_AND_AUDIO_PIDS'|'VIDEO_PID'|null,
+     *     EsRateInPes?: 'INCLUDE'|'EXCLUDE'|null,
+     *     ForceTsVideoEbpOrder?: 'FORCE'|'DEFAULT'|null,
+     *     FragmentTime?: double|null,
+     *     KlvMetadata?: 'PASSTHROUGH'|'NONE'|null,
+     *     MaxPcrInterval?: int<0, 500>|null,
+     *     MinEbpInterval?: int<0, 10000>|null,
+     *     NielsenId3?: 'INSERT'|'NONE'|null,
+     *     NullPacketBitrate?: double|null,
+     *     PatInterval?: int<0, 1000>|null,
+     *     PcrControl?: 'PCR_EVERY_PES_PACKET'|'CONFIGURED_PCR_PERIOD'|null,
+     *     PcrPid?: int<32, 8182>|null,
+     *     PmtInterval?: int<0, 1000>|null,
+     *     PmtPid?: int<32, 8182>|null,
+     *     PreventBufferUnderflow?: 'DISABLED'|'ENABLED'|null,
+     *     PrivateMetadataPid?: int<32, 8182>|null,
+     *     ProgramNumber?: int<0, 65535>|null,
+     *     PtsOffset?: int<0, 3600>|null,
+     *     PtsOffsetMode?: 'AUTO'|'SECONDS'|null,
+     *     RateMode?: 'VBR'|'CBR'|null,
+     *     Scte35Esam?: M2tsScte35Esam|null,
+     *     Scte35Pid?: int<32, 8182>|null,
+     *     Scte35Source?: 'PASSTHROUGH'|'NONE'|null,
+     *     SegmentationMarkers?: 'NONE'|'RAI_SEGSTART'|'RAI_ADAPT'|'PSI_SEGSTART'|'EBP'|'EBP_LEGACY'|null,
+     *     SegmentationStyle?: 'MAINTAIN_CADENCE'|'RESET_CADENCE'|null,
+     *     SegmentationTime?: double|null,
+     *     TimedMetadataPid?: int<32, 8182>|null,
+     *     TransportStreamId?: int<0, 65535>|null,
+     *     VideoPid?: int<32, 8182>|null
      * } $args
      */
     public function __construct(array $args = [])

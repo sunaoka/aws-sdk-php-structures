@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Swf\GetWorkflowExecutionHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $result
+ * @property string|null $result
  * @property int $scheduledEventId
  * @property int $startedEventId
  */
@@ -13,7 +13,7 @@ class ActivityTaskCompletedEventAttributes extends Shape
 {
     /**
      * @param array{
-     *     result?: string,
+     *     result?: string|null,
      *     scheduledEventId: int,
      *     startedEventId: int
      * } $args

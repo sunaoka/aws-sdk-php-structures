@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\AutoScaling\StartInstanceRefresh\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OnDemandAllocationStrategy
- * @property int $OnDemandBaseCapacity
- * @property int $OnDemandPercentageAboveBaseCapacity
- * @property string $SpotAllocationStrategy
- * @property int $SpotInstancePools
- * @property string $SpotMaxPrice
+ * @property string|null $OnDemandAllocationStrategy
+ * @property int|null $OnDemandBaseCapacity
+ * @property int|null $OnDemandPercentageAboveBaseCapacity
+ * @property string|null $SpotAllocationStrategy
+ * @property int|null $SpotInstancePools
+ * @property string|null $SpotMaxPrice
  */
 class InstancesDistribution extends Shape
 {
     /**
      * @param array{
-     *     OnDemandAllocationStrategy?: string,
-     *     OnDemandBaseCapacity?: int,
-     *     OnDemandPercentageAboveBaseCapacity?: int,
-     *     SpotAllocationStrategy?: string,
-     *     SpotInstancePools?: int,
-     *     SpotMaxPrice?: string
+     *     OnDemandAllocationStrategy?: string|null,
+     *     OnDemandBaseCapacity?: int|null,
+     *     OnDemandPercentageAboveBaseCapacity?: int|null,
+     *     SpotAllocationStrategy?: string|null,
+     *     SpotInstancePools?: int|null,
+     *     SpotMaxPrice?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Kafka\ListClusters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Type
+ * @property string|null $Type
  */
 class PublicAccess extends Shape
 {
     /**
-     * @param array{Type?: string} $args
+     * @param array{Type?: string|null} $args
      */
     public function __construct(array $args = [])
     {

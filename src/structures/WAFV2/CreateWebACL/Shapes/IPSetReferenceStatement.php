@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ARN
- * @property IPSetForwardedIPConfig $IPSetForwardedIPConfig
+ * @property IPSetForwardedIPConfig|null $IPSetForwardedIPConfig
  */
 class IPSetReferenceStatement extends Shape
 {
     /**
      * @param array{
      *     ARN: string,
-     *     IPSetForwardedIPConfig?: IPSetForwardedIPConfig
+     *     IPSetForwardedIPConfig?: IPSetForwardedIPConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property 'NATIVE_INDEX'|'KENDRA_INDEX' $type
  * @property string $displayName
  * @property Shapes\RetrieverConfiguration $configuration
- * @property string $roleArn
- * @property string $clientToken
- * @property list<Shapes\Tag> $tags
+ * @property string|null $roleArn
+ * @property string|null $clientToken
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateRetrieverRequest extends Request
 {
@@ -21,9 +21,9 @@ class CreateRetrieverRequest extends Request
      *     type: 'NATIVE_INDEX'|'KENDRA_INDEX',
      *     displayName: string,
      *     configuration: Shapes\RetrieverConfiguration,
-     *     roleArn?: string,
-     *     clientToken?: string,
-     *     tags?: list<Shapes\Tag>
+     *     roleArn?: string|null,
+     *     clientToken?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

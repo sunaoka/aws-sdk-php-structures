@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $name
  * @property Shapes\AutoScalingGroupProvider $autoScalingGroupProvider
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateCapacityProviderRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateCapacityProviderRequest extends Request
      * @param array{
      *     name: string,
      *     autoScalingGroupProvider: Shapes\AutoScalingGroupProvider,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

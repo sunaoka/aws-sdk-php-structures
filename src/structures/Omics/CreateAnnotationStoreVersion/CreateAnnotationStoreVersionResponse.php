@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $id
  * @property string $versionName
  * @property string $storeId
- * @property Shapes\VersionOptions $versionOptions
+ * @property Shapes\VersionOptions|null $versionOptions
  * @property string $name
  * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED' $status
  * @property \Aws\Api\DateTimeResult $creationTime

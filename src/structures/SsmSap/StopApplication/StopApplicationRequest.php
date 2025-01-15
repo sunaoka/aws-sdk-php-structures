@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationId
- * @property 'DBMS' $StopConnectedEntity
- * @property bool $IncludeEc2InstanceShutdown
+ * @property 'DBMS'|null $StopConnectedEntity
+ * @property bool|null $IncludeEc2InstanceShutdown
  */
 class StopApplicationRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationId: string,
-     *     StopConnectedEntity?: 'DBMS',
-     *     IncludeEc2InstanceShutdown?: bool
+     *     StopConnectedEntity?: 'DBMS'|null,
+     *     IncludeEc2InstanceShutdown?: bool|null
      * } $args
      */
     public function __construct(array $args)

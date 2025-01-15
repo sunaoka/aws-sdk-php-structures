@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\NetworkManager\StartOrganizationServiceAccessUp
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OrganizationId
- * @property string $OrganizationAwsServiceAccessStatus
- * @property string $SLRDeploymentStatus
- * @property list<AccountStatus> $AccountStatusList
+ * @property string|null $OrganizationId
+ * @property string|null $OrganizationAwsServiceAccessStatus
+ * @property string|null $SLRDeploymentStatus
+ * @property list<AccountStatus>|null $AccountStatusList
  */
 class OrganizationStatus extends Shape
 {
     /**
      * @param array{
-     *     OrganizationId?: string,
-     *     OrganizationAwsServiceAccessStatus?: string,
-     *     SLRDeploymentStatus?: string,
-     *     AccountStatusList?: list<AccountStatus>
+     *     OrganizationId?: string|null,
+     *     OrganizationAwsServiceAccessStatus?: string|null,
+     *     SLRDeploymentStatus?: string|null,
+     *     AccountStatusList?: list<AccountStatus>|null
      * } $args
      */
     public function __construct(array $args = [])

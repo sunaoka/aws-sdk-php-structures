@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeConformancePackCompliance
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $ConfigRuleNames
- * @property 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA' $ComplianceType
+ * @property list<string>|null $ConfigRuleNames
+ * @property 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA'|null $ComplianceType
  */
 class ConformancePackComplianceFilters extends Shape
 {
     /**
      * @param array{
-     *     ConfigRuleNames?: list<string>,
-     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA'
+     *     ConfigRuleNames?: list<string>|null,
+     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'INSUFFICIENT_DATA'|null
      * } $args
      */
     public function __construct(array $args = [])

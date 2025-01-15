@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribeGameServerInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GameServerGroupName
- * @property string $GameServerGroupArn
- * @property string $InstanceId
- * @property 'ACTIVE'|'DRAINING'|'SPOT_TERMINATING' $InstanceStatus
+ * @property string|null $GameServerGroupName
+ * @property string|null $GameServerGroupArn
+ * @property string|null $InstanceId
+ * @property 'ACTIVE'|'DRAINING'|'SPOT_TERMINATING'|null $InstanceStatus
  */
 class GameServerInstance extends Shape
 {
     /**
      * @param array{
-     *     GameServerGroupName?: string,
-     *     GameServerGroupArn?: string,
-     *     InstanceId?: string,
-     *     InstanceStatus?: 'ACTIVE'|'DRAINING'|'SPOT_TERMINATING'
+     *     GameServerGroupName?: string|null,
+     *     GameServerGroupArn?: string|null,
+     *     InstanceId?: string|null,
+     *     InstanceStatus?: 'ACTIVE'|'DRAINING'|'SPOT_TERMINATING'|null
      * } $args
      */
     public function __construct(array $args = [])

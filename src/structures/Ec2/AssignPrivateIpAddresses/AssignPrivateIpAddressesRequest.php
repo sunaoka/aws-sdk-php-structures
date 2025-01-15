@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ec2\AssignPrivateIpAddresses;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $Ipv4Prefixes
- * @property int $Ipv4PrefixCount
+ * @property list<string>|null $Ipv4Prefixes
+ * @property int|null $Ipv4PrefixCount
  * @property string $NetworkInterfaceId
- * @property list<string> $PrivateIpAddresses
- * @property int $SecondaryPrivateIpAddressCount
- * @property bool $AllowReassignment
+ * @property list<string>|null $PrivateIpAddresses
+ * @property int|null $SecondaryPrivateIpAddressCount
+ * @property bool|null $AllowReassignment
  */
 class AssignPrivateIpAddressesRequest extends Request
 {
     /**
      * @param array{
-     *     Ipv4Prefixes?: list<string>,
-     *     Ipv4PrefixCount?: int,
+     *     Ipv4Prefixes?: list<string>|null,
+     *     Ipv4PrefixCount?: int|null,
      *     NetworkInterfaceId: string,
-     *     PrivateIpAddresses?: list<string>,
-     *     SecondaryPrivateIpAddressCount?: int,
-     *     AllowReassignment?: bool
+     *     PrivateIpAddresses?: list<string>|null,
+     *     SecondaryPrivateIpAddressCount?: int|null,
+     *     AllowReassignment?: bool|null
      * } $args
      */
     public function __construct(array $args)

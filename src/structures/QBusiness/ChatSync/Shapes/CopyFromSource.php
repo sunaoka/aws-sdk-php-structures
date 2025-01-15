@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QBusiness\ChatSync\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConversationSource $conversation
+ * @property ConversationSource|null $conversation
  */
 class CopyFromSource extends Shape
 {
     /**
-     * @param array{conversation?: ConversationSource} $args
+     * @param array{conversation?: ConversationSource|null} $args
      */
     public function __construct(array $args = [])
     {

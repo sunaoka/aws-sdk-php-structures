@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $StringValues
- * @property list<int> $IntegerValues
- * @property list<double> $DecimalValues
- * @property list<\Aws\Api\DateTimeResult> $DateTimeValues
+ * @property list<string>|null $StringValues
+ * @property list<int>|null $IntegerValues
+ * @property list<double>|null $DecimalValues
+ * @property list<\Aws\Api\DateTimeResult>|null $DateTimeValues
  */
 class CustomParameterValues extends Shape
 {
     /**
      * @param array{
-     *     StringValues?: list<string>,
-     *     IntegerValues?: list<int>,
-     *     DecimalValues?: list<double>,
-     *     DateTimeValues?: list<\Aws\Api\DateTimeResult>
+     *     StringValues?: list<string>|null,
+     *     IntegerValues?: list<int>|null,
+     *     DecimalValues?: list<double>|null,
+     *     DateTimeValues?: list<\Aws\Api\DateTimeResult>|null
      * } $args
      */
     public function __construct(array $args = [])

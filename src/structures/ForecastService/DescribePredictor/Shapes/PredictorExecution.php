@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ForecastService\DescribePredictor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AlgorithmArn
- * @property list<TestWindowSummary> $TestWindows
+ * @property string|null $AlgorithmArn
+ * @property list<TestWindowSummary>|null $TestWindows
  */
 class PredictorExecution extends Shape
 {
     /**
      * @param array{
-     *     AlgorithmArn?: string,
-     *     TestWindows?: list<TestWindowSummary>
+     *     AlgorithmArn?: string|null,
+     *     TestWindows?: list<TestWindowSummary>|null
      * } $args
      */
     public function __construct(array $args = [])

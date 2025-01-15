@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FMS\ListThirdPartyFirewallFirewallPolicies\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FirewallPolicyId
- * @property string $FirewallPolicyName
+ * @property string|null $FirewallPolicyId
+ * @property string|null $FirewallPolicyName
  */
 class ThirdPartyFirewallFirewallPolicy extends Shape
 {
     /**
      * @param array{
-     *     FirewallPolicyId?: string,
-     *     FirewallPolicyName?: string
+     *     FirewallPolicyId?: string|null,
+     *     FirewallPolicyName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

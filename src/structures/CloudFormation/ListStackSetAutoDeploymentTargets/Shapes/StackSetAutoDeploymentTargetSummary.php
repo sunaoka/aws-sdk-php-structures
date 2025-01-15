@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ListStackSetAutoDeploymentTarget
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OrganizationalUnitId
- * @property list<string> $Regions
+ * @property string|null $OrganizationalUnitId
+ * @property list<string>|null $Regions
  */
 class StackSetAutoDeploymentTargetSummary extends Shape
 {
     /**
      * @param array{
-     *     OrganizationalUnitId?: string,
-     *     Regions?: list<string>
+     *     OrganizationalUnitId?: string|null,
+     *     Regions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

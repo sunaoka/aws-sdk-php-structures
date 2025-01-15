@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<EksAttemptContainerDetail> $containers
- * @property list<EksAttemptContainerDetail> $initContainers
- * @property string $eksClusterArn
- * @property string $podName
- * @property string $podNamespace
- * @property string $nodeName
- * @property int $startedAt
- * @property int $stoppedAt
- * @property string $statusReason
+ * @property list<EksAttemptContainerDetail>|null $containers
+ * @property list<EksAttemptContainerDetail>|null $initContainers
+ * @property string|null $eksClusterArn
+ * @property string|null $podName
+ * @property string|null $podNamespace
+ * @property string|null $nodeName
+ * @property int|null $startedAt
+ * @property int|null $stoppedAt
+ * @property string|null $statusReason
  */
 class EksAttemptDetail extends Shape
 {
     /**
      * @param array{
-     *     containers?: list<EksAttemptContainerDetail>,
-     *     initContainers?: list<EksAttemptContainerDetail>,
-     *     eksClusterArn?: string,
-     *     podName?: string,
-     *     podNamespace?: string,
-     *     nodeName?: string,
-     *     startedAt?: int,
-     *     stoppedAt?: int,
-     *     statusReason?: string
+     *     containers?: list<EksAttemptContainerDetail>|null,
+     *     initContainers?: list<EksAttemptContainerDetail>|null,
+     *     eksClusterArn?: string|null,
+     *     podName?: string|null,
+     *     podNamespace?: string|null,
+     *     nodeName?: string|null,
+     *     startedAt?: int|null,
+     *     stoppedAt?: int|null,
+     *     statusReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

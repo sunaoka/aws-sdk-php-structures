@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Route53Resolver\ListOutpostResolvers;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $OutpostArn
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $OutpostArn
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListOutpostResolversRequest extends Request
 {
     /**
      * @param array{
-     *     OutpostArn?: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     OutpostArn?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $containerID
- * @property int $exitCode
- * @property string $reason
+ * @property string|null $name
+ * @property string|null $containerID
+ * @property int|null $exitCode
+ * @property string|null $reason
  */
 class EksAttemptContainerDetail extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     containerID?: string,
-     *     exitCode?: int,
-     *     reason?: string
+     *     name?: string|null,
+     *     containerID?: string|null,
+     *     exitCode?: int|null,
+     *     reason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

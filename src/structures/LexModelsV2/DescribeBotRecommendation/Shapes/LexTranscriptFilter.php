@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\DescribeBotRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property DateRangeFilter $dateRangeFilter
+ * @property DateRangeFilter|null $dateRangeFilter
  */
 class LexTranscriptFilter extends Shape
 {
     /**
-     * @param array{dateRangeFilter?: DateRangeFilter} $args
+     * @param array{dateRangeFilter?: DateRangeFilter|null} $args
      */
     public function __construct(array $args = [])
     {

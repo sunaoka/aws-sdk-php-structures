@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AdminListUserAuthEvents
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $EventId
- * @property 'SignIn'|'SignUp'|'ForgotPassword'|'PasswordChange'|'ResendCode' $EventType
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property 'Pass'|'Fail'|'InProgress' $EventResponse
- * @property EventRiskType $EventRisk
- * @property list<ChallengeResponseType> $ChallengeResponses
- * @property EventContextDataType $EventContextData
- * @property EventFeedbackType $EventFeedback
+ * @property string|null $EventId
+ * @property 'SignIn'|'SignUp'|'ForgotPassword'|'PasswordChange'|'ResendCode'|null $EventType
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property 'Pass'|'Fail'|'InProgress'|null $EventResponse
+ * @property EventRiskType|null $EventRisk
+ * @property list<ChallengeResponseType>|null $ChallengeResponses
+ * @property EventContextDataType|null $EventContextData
+ * @property EventFeedbackType|null $EventFeedback
  */
 class AuthEventType extends Shape
 {
     /**
      * @param array{
-     *     EventId?: string,
-     *     EventType?: 'SignIn'|'SignUp'|'ForgotPassword'|'PasswordChange'|'ResendCode',
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     EventResponse?: 'Pass'|'Fail'|'InProgress',
-     *     EventRisk?: EventRiskType,
-     *     ChallengeResponses?: list<ChallengeResponseType>,
-     *     EventContextData?: EventContextDataType,
-     *     EventFeedback?: EventFeedbackType
+     *     EventId?: string|null,
+     *     EventType?: 'SignIn'|'SignUp'|'ForgotPassword'|'PasswordChange'|'ResendCode'|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     EventResponse?: 'Pass'|'Fail'|'InProgress'|null,
+     *     EventRisk?: EventRiskType|null,
+     *     ChallengeResponses?: list<ChallengeResponseType>|null,
+     *     EventContextData?: EventContextDataType|null,
+     *     EventFeedback?: EventFeedbackType|null
      * } $args
      */
     public function __construct(array $args = [])

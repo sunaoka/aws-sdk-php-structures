@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeBuild\RetryBuildBatch;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $id
- * @property string $idempotencyToken
- * @property 'RETRY_ALL_BUILDS'|'RETRY_FAILED_BUILDS' $retryType
+ * @property string|null $id
+ * @property string|null $idempotencyToken
+ * @property 'RETRY_ALL_BUILDS'|'RETRY_FAILED_BUILDS'|null $retryType
  */
 class RetryBuildBatchRequest extends Request
 {
     /**
      * @param array{
-     *     id?: string,
-     *     idempotencyToken?: string,
-     *     retryType?: 'RETRY_ALL_BUILDS'|'RETRY_FAILED_BUILDS'
+     *     id?: string|null,
+     *     idempotencyToken?: string|null,
+     *     retryType?: 'RETRY_ALL_BUILDS'|'RETRY_FAILED_BUILDS'|null
      * } $args
      */
     public function __construct(array $args = [])

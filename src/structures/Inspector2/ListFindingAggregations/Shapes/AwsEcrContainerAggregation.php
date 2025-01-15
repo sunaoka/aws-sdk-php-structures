@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListFindingAggregations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<StringFilter> $architectures
- * @property list<StringFilter> $imageShas
- * @property list<StringFilter> $imageTags
- * @property list<StringFilter> $repositories
- * @property list<StringFilter> $resourceIds
- * @property 'CRITICAL'|'HIGH'|'ALL' $sortBy
- * @property 'ASC'|'DESC' $sortOrder
+ * @property list<StringFilter>|null $architectures
+ * @property list<StringFilter>|null $imageShas
+ * @property list<StringFilter>|null $imageTags
+ * @property list<StringFilter>|null $repositories
+ * @property list<StringFilter>|null $resourceIds
+ * @property 'CRITICAL'|'HIGH'|'ALL'|null $sortBy
+ * @property 'ASC'|'DESC'|null $sortOrder
  */
 class AwsEcrContainerAggregation extends Shape
 {
     /**
      * @param array{
-     *     architectures?: list<StringFilter>,
-     *     imageShas?: list<StringFilter>,
-     *     imageTags?: list<StringFilter>,
-     *     repositories?: list<StringFilter>,
-     *     resourceIds?: list<StringFilter>,
-     *     sortBy?: 'CRITICAL'|'HIGH'|'ALL',
-     *     sortOrder?: 'ASC'|'DESC'
+     *     architectures?: list<StringFilter>|null,
+     *     imageShas?: list<StringFilter>|null,
+     *     imageTags?: list<StringFilter>|null,
+     *     repositories?: list<StringFilter>|null,
+     *     resourceIds?: list<StringFilter>|null,
+     *     sortBy?: 'CRITICAL'|'HIGH'|'ALL'|null,
+     *     sortOrder?: 'ASC'|'DESC'|null
      * } $args
      */
     public function __construct(array $args = [])

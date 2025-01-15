@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Proton\GetResourcesSummary\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $behindMajor
- * @property int $behindMinor
- * @property int $failed
+ * @property int|null $behindMajor
+ * @property int|null $behindMinor
+ * @property int|null $failed
  * @property int $total
- * @property int $upToDate
+ * @property int|null $upToDate
  */
 class ResourceCountsSummary extends Shape
 {
     /**
      * @param array{
-     *     behindMajor?: int,
-     *     behindMinor?: int,
-     *     failed?: int,
+     *     behindMajor?: int|null,
+     *     behindMinor?: int|null,
+     *     failed?: int|null,
      *     total: int,
-     *     upToDate?: int
+     *     upToDate?: int|null
      * } $args
      */
     public function __construct(array $args)

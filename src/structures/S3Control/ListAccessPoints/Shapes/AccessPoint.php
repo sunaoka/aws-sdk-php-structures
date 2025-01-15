@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property 'Internet'|'VPC' $NetworkOrigin
- * @property VpcConfiguration $VpcConfiguration
+ * @property VpcConfiguration|null $VpcConfiguration
  * @property string $Bucket
- * @property string $AccessPointArn
- * @property string $Alias
- * @property string $BucketAccountId
+ * @property string|null $AccessPointArn
+ * @property string|null $Alias
+ * @property string|null $BucketAccountId
  */
 class AccessPoint extends Shape
 {
@@ -19,11 +19,11 @@ class AccessPoint extends Shape
      * @param array{
      *     Name: string,
      *     NetworkOrigin: 'Internet'|'VPC',
-     *     VpcConfiguration?: VpcConfiguration,
+     *     VpcConfiguration?: VpcConfiguration|null,
      *     Bucket: string,
-     *     AccessPointArn?: string,
-     *     Alias?: string,
-     *     BucketAccountId?: string
+     *     AccessPointArn?: string|null,
+     *     Alias?: string|null,
+     *     BucketAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

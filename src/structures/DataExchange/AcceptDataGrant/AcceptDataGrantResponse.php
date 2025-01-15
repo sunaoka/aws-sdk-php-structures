@@ -6,12 +6,12 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $Name
- * @property string $SenderPrincipal
+ * @property string|null $SenderPrincipal
  * @property string $ReceiverPrincipal
- * @property string $Description
+ * @property string|null $Description
  * @property 'PENDING_RECEIVER_ACCEPTANCE'|'ACCEPTED' $AcceptanceState
- * @property \Aws\Api\DateTimeResult $AcceptedAt
- * @property \Aws\Api\DateTimeResult $EndsAt
+ * @property \Aws\Api\DateTimeResult|null $AcceptedAt
+ * @property \Aws\Api\DateTimeResult|null $EndsAt
  * @property 'AWS_ORGANIZATION'|'NONE' $GrantDistributionScope
  * @property string $DataSetId
  * @property string $Id

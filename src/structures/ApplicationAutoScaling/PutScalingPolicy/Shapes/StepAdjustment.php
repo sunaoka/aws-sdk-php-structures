@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ApplicationAutoScaling\PutScalingPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $MetricIntervalLowerBound
- * @property double $MetricIntervalUpperBound
+ * @property double|null $MetricIntervalLowerBound
+ * @property double|null $MetricIntervalUpperBound
  * @property int $ScalingAdjustment
  */
 class StepAdjustment extends Shape
 {
     /**
      * @param array{
-     *     MetricIntervalLowerBound?: double,
-     *     MetricIntervalUpperBound?: double,
+     *     MetricIntervalLowerBound?: double|null,
+     *     MetricIntervalUpperBound?: double|null,
      *     ScalingAdjustment: int
      * } $args
      */

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $domainIdentifier
  * @property string $environmentIdentifier
- * @property int<1, 50> $maxResults
- * @property string $nextToken
- * @property 'CREATED_AT'|'UPDATED_AT' $sortBy
- * @property 'ASCENDING'|'DESCENDING' $sortOrder
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $nextToken
+ * @property 'CREATED_AT'|'UPDATED_AT'|null $sortBy
+ * @property 'ASCENDING'|'DESCENDING'|null $sortOrder
  */
 class ListSubscriptionTargetsRequest extends Request
 {
@@ -18,10 +18,10 @@ class ListSubscriptionTargetsRequest extends Request
      * @param array{
      *     domainIdentifier: string,
      *     environmentIdentifier: string,
-     *     maxResults?: int<1, 50>,
-     *     nextToken?: string,
-     *     sortBy?: 'CREATED_AT'|'UPDATED_AT',
-     *     sortOrder?: 'ASCENDING'|'DESCENDING'
+     *     maxResults?: int<1, 50>|null,
+     *     nextToken?: string|null,
+     *     sortBy?: 'CREATED_AT'|'UPDATED_AT'|null,
+     *     sortOrder?: 'ASCENDING'|'DESCENDING'|null
      * } $args
      */
     public function __construct(array $args)

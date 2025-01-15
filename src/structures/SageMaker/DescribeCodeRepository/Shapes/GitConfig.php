@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $RepositoryUrl
- * @property string $Branch
- * @property string $SecretArn
+ * @property string|null $Branch
+ * @property string|null $SecretArn
  */
 class GitConfig extends Shape
 {
     /**
      * @param array{
      *     RepositoryUrl: string,
-     *     Branch?: string,
-     *     SecretArn?: string
+     *     Branch?: string|null,
+     *     SecretArn?: string|null
      * } $args
      */
     public function __construct(array $args)

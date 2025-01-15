@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\VerifiedPermissions\UpdatePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $statement
  */
 class UpdateStaticPolicyDefinition extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     statement: string
      * } $args
      */

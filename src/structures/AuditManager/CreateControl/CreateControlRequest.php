@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
- * @property string $testingInformation
- * @property string $actionPlanTitle
- * @property string $actionPlanInstructions
+ * @property string|null $description
+ * @property string|null $testingInformation
+ * @property string|null $actionPlanTitle
+ * @property string|null $actionPlanInstructions
  * @property list<Shapes\CreateControlMappingSource> $controlMappingSources
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateControlRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     testingInformation?: string,
-     *     actionPlanTitle?: string,
-     *     actionPlanInstructions?: string,
+     *     description?: string|null,
+     *     testingInformation?: string|null,
+     *     actionPlanTitle?: string|null,
+     *     actionPlanInstructions?: string|null,
      *     controlMappingSources: list<Shapes\CreateControlMappingSource>,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

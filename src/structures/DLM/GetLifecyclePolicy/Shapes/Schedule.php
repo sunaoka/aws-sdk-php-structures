@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\DLM\GetLifecyclePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property bool $CopyTags
- * @property list<Tag> $TagsToAdd
- * @property list<Tag> $VariableTags
- * @property CreateRule $CreateRule
- * @property RetainRule $RetainRule
- * @property FastRestoreRule $FastRestoreRule
- * @property list<CrossRegionCopyRule> $CrossRegionCopyRules
- * @property list<ShareRule> $ShareRules
- * @property DeprecateRule $DeprecateRule
- * @property ArchiveRule $ArchiveRule
+ * @property string|null $Name
+ * @property bool|null $CopyTags
+ * @property list<Tag>|null $TagsToAdd
+ * @property list<Tag>|null $VariableTags
+ * @property CreateRule|null $CreateRule
+ * @property RetainRule|null $RetainRule
+ * @property FastRestoreRule|null $FastRestoreRule
+ * @property list<CrossRegionCopyRule>|null $CrossRegionCopyRules
+ * @property list<ShareRule>|null $ShareRules
+ * @property DeprecateRule|null $DeprecateRule
+ * @property ArchiveRule|null $ArchiveRule
  */
 class Schedule extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     CopyTags?: bool,
-     *     TagsToAdd?: list<Tag>,
-     *     VariableTags?: list<Tag>,
-     *     CreateRule?: CreateRule,
-     *     RetainRule?: RetainRule,
-     *     FastRestoreRule?: FastRestoreRule,
-     *     CrossRegionCopyRules?: list<CrossRegionCopyRule>,
-     *     ShareRules?: list<ShareRule>,
-     *     DeprecateRule?: DeprecateRule,
-     *     ArchiveRule?: ArchiveRule
+     *     Name?: string|null,
+     *     CopyTags?: bool|null,
+     *     TagsToAdd?: list<Tag>|null,
+     *     VariableTags?: list<Tag>|null,
+     *     CreateRule?: CreateRule|null,
+     *     RetainRule?: RetainRule|null,
+     *     FastRestoreRule?: FastRestoreRule|null,
+     *     CrossRegionCopyRules?: list<CrossRegionCopyRule>|null,
+     *     ShareRules?: list<ShareRule>|null,
+     *     DeprecateRule?: DeprecateRule|null,
+     *     ArchiveRule?: ArchiveRule|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $status
- * @property string $region
+ * @property string|null $region
  * @property string $resourceId
- * @property bool $isSuppressed
+ * @property bool|null $isSuppressed
  * @property list<string> $metadata
  */
 class TrustedAdvisorResourceDetail extends Shape
@@ -16,9 +16,9 @@ class TrustedAdvisorResourceDetail extends Shape
     /**
      * @param array{
      *     status: string,
-     *     region?: string,
+     *     region?: string|null,
      *     resourceId: string,
-     *     isSuppressed?: bool,
+     *     isSuppressed?: bool|null,
      *     metadata: list<string>
      * } $args
      */

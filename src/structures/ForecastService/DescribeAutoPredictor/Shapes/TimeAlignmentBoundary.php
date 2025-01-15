@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ForecastService\DescribeAutoPredictor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'JANUARY'|'FEBRUARY'|'MARCH'|'APRIL'|'MAY'|'JUNE'|'JULY'|'AUGUST'|'SEPTEMBER'|'OCTOBER'|'NOVEMBER'|'DECEMBER' $Month
- * @property int<1, 28> $DayOfMonth
- * @property 'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY' $DayOfWeek
- * @property int<0, 23> $Hour
+ * @property 'JANUARY'|'FEBRUARY'|'MARCH'|'APRIL'|'MAY'|'JUNE'|'JULY'|'AUGUST'|'SEPTEMBER'|'OCTOBER'|'NOVEMBER'|'DECEMBER'|null $Month
+ * @property int<1, 28>|null $DayOfMonth
+ * @property 'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY'|null $DayOfWeek
+ * @property int<0, 23>|null $Hour
  */
 class TimeAlignmentBoundary extends Shape
 {
     /**
      * @param array{
-     *     Month?: 'JANUARY'|'FEBRUARY'|'MARCH'|'APRIL'|'MAY'|'JUNE'|'JULY'|'AUGUST'|'SEPTEMBER'|'OCTOBER'|'NOVEMBER'|'DECEMBER',
-     *     DayOfMonth?: int<1, 28>,
-     *     DayOfWeek?: 'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY',
-     *     Hour?: int<0, 23>
+     *     Month?: 'JANUARY'|'FEBRUARY'|'MARCH'|'APRIL'|'MAY'|'JUNE'|'JULY'|'AUGUST'|'SEPTEMBER'|'OCTOBER'|'NOVEMBER'|'DECEMBER'|null,
+     *     DayOfMonth?: int<1, 28>|null,
+     *     DayOfWeek?: 'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY'|null,
+     *     Hour?: int<0, 23>|null
      * } $args
      */
     public function __construct(array $args = [])

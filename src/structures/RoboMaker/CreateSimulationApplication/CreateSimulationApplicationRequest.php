@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property list<Shapes\SourceConfig> $sources
+ * @property list<Shapes\SourceConfig>|null $sources
  * @property Shapes\SimulationSoftwareSuite $simulationSoftwareSuite
  * @property Shapes\RobotSoftwareSuite $robotSoftwareSuite
- * @property Shapes\RenderingEngine $renderingEngine
- * @property array<string, string> $tags
- * @property Shapes\Environment $environment
+ * @property Shapes\RenderingEngine|null $renderingEngine
+ * @property array<string, string>|null $tags
+ * @property Shapes\Environment|null $environment
  */
 class CreateSimulationApplicationRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     sources?: list<Shapes\SourceConfig>,
+     *     sources?: list<Shapes\SourceConfig>|null,
      *     simulationSoftwareSuite: Shapes\SimulationSoftwareSuite,
      *     robotSoftwareSuite: Shapes\RobotSoftwareSuite,
-     *     renderingEngine?: Shapes\RenderingEngine,
-     *     tags?: array<string, string>,
-     *     environment?: Shapes\Environment
+     *     renderingEngine?: Shapes\RenderingEngine|null,
+     *     tags?: array<string, string>|null,
+     *     environment?: Shapes\Environment|null
      * } $args
      */
     public function __construct(array $args)

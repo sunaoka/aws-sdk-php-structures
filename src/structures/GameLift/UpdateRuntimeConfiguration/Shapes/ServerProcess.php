@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $LaunchPath
- * @property string $Parameters
+ * @property string|null $Parameters
  * @property int<1, max> $ConcurrentExecutions
  */
 class ServerProcess extends Shape
@@ -14,7 +14,7 @@ class ServerProcess extends Shape
     /**
      * @param array{
      *     LaunchPath: string,
-     *     Parameters?: string,
+     *     Parameters?: string|null,
      *     ConcurrentExecutions: int<1, max>
      * } $args
      */

@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\CreateEnvironment;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property string $description
+ * @property string|null $clientToken
+ * @property string|null $description
  * @property 'microfocus'|'bluage' $engineType
- * @property string $engineVersion
- * @property Shapes\HighAvailabilityConfig $highAvailabilityConfig
+ * @property string|null $engineVersion
+ * @property Shapes\HighAvailabilityConfig|null $highAvailabilityConfig
  * @property string $instanceType
- * @property string $kmsKeyId
+ * @property string|null $kmsKeyId
  * @property string $name
- * @property 'ipv4'|'dual' $networkType
- * @property string $preferredMaintenanceWindow
- * @property bool $publiclyAccessible
- * @property list<string> $securityGroupIds
- * @property list<Shapes\StorageConfiguration> $storageConfigurations
- * @property list<string> $subnetIds
- * @property array<string, string> $tags
+ * @property 'ipv4'|'dual'|null $networkType
+ * @property string|null $preferredMaintenanceWindow
+ * @property bool|null $publiclyAccessible
+ * @property list<string>|null $securityGroupIds
+ * @property list<Shapes\StorageConfiguration>|null $storageConfigurations
+ * @property list<string>|null $subnetIds
+ * @property array<string, string>|null $tags
  */
 class CreateEnvironmentRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     description?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
      *     engineType: 'microfocus'|'bluage',
-     *     engineVersion?: string,
-     *     highAvailabilityConfig?: Shapes\HighAvailabilityConfig,
+     *     engineVersion?: string|null,
+     *     highAvailabilityConfig?: Shapes\HighAvailabilityConfig|null,
      *     instanceType: string,
-     *     kmsKeyId?: string,
+     *     kmsKeyId?: string|null,
      *     name: string,
-     *     networkType?: 'ipv4'|'dual',
-     *     preferredMaintenanceWindow?: string,
-     *     publiclyAccessible?: bool,
-     *     securityGroupIds?: list<string>,
-     *     storageConfigurations?: list<Shapes\StorageConfiguration>,
-     *     subnetIds?: list<string>,
-     *     tags?: array<string, string>
+     *     networkType?: 'ipv4'|'dual'|null,
+     *     preferredMaintenanceWindow?: string|null,
+     *     publiclyAccessible?: bool|null,
+     *     securityGroupIds?: list<string>|null,
+     *     storageConfigurations?: list<Shapes\StorageConfiguration>|null,
+     *     subnetIds?: list<string>|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

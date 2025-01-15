@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Outposts\ListCatalogItems\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CatalogItemId
- * @property 'AVAILABLE'|'DISCONTINUED' $ItemStatus
- * @property list<EC2Capacity> $EC2Capacities
- * @property float $PowerKva
- * @property int $WeightLbs
- * @property list<int> $SupportedUplinkGbps
- * @property list<'EBS'|'S3'> $SupportedStorage
+ * @property string|null $CatalogItemId
+ * @property 'AVAILABLE'|'DISCONTINUED'|null $ItemStatus
+ * @property list<EC2Capacity>|null $EC2Capacities
+ * @property float|null $PowerKva
+ * @property int|null $WeightLbs
+ * @property list<int>|null $SupportedUplinkGbps
+ * @property list<'EBS'|'S3'>|null $SupportedStorage
  */
 class CatalogItem extends Shape
 {
     /**
      * @param array{
-     *     CatalogItemId?: string,
-     *     ItemStatus?: 'AVAILABLE'|'DISCONTINUED',
-     *     EC2Capacities?: list<EC2Capacity>,
-     *     PowerKva?: float,
-     *     WeightLbs?: int,
-     *     SupportedUplinkGbps?: list<int>,
-     *     SupportedStorage?: list<'EBS'|'S3'>
+     *     CatalogItemId?: string|null,
+     *     ItemStatus?: 'AVAILABLE'|'DISCONTINUED'|null,
+     *     EC2Capacities?: list<EC2Capacity>|null,
+     *     PowerKva?: float|null,
+     *     WeightLbs?: int|null,
+     *     SupportedUplinkGbps?: list<int>|null,
+     *     SupportedStorage?: list<'EBS'|'S3'>|null
      * } $args
      */
     public function __construct(array $args = [])

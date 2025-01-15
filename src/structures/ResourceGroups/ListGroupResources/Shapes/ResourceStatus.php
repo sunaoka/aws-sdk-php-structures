@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ResourceGroups\ListGroupResources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PENDING' $Name
+ * @property 'PENDING'|null $Name
  */
 class ResourceStatus extends Shape
 {
     /**
-     * @param array{Name?: 'PENDING'} $args
+     * @param array{Name?: 'PENDING'|null} $args
      */
     public function __construct(array $args = [])
     {

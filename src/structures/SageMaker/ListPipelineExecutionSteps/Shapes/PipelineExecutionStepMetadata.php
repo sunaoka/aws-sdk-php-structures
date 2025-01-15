@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListPipelineExecutionSteps\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TrainingJobStepMetadata $TrainingJob
- * @property ProcessingJobStepMetadata $ProcessingJob
- * @property TransformJobStepMetadata $TransformJob
- * @property TuningJobStepMetaData $TuningJob
- * @property ModelStepMetadata $Model
- * @property RegisterModelStepMetadata $RegisterModel
- * @property ConditionStepMetadata $Condition
- * @property CallbackStepMetadata $Callback
- * @property LambdaStepMetadata $Lambda
- * @property EMRStepMetadata $EMR
- * @property QualityCheckStepMetadata $QualityCheck
- * @property ClarifyCheckStepMetadata $ClarifyCheck
- * @property FailStepMetadata $Fail
- * @property AutoMLJobStepMetadata $AutoMLJob
- * @property EndpointStepMetadata $Endpoint
- * @property EndpointConfigStepMetadata $EndpointConfig
+ * @property TrainingJobStepMetadata|null $TrainingJob
+ * @property ProcessingJobStepMetadata|null $ProcessingJob
+ * @property TransformJobStepMetadata|null $TransformJob
+ * @property TuningJobStepMetaData|null $TuningJob
+ * @property ModelStepMetadata|null $Model
+ * @property RegisterModelStepMetadata|null $RegisterModel
+ * @property ConditionStepMetadata|null $Condition
+ * @property CallbackStepMetadata|null $Callback
+ * @property LambdaStepMetadata|null $Lambda
+ * @property EMRStepMetadata|null $EMR
+ * @property QualityCheckStepMetadata|null $QualityCheck
+ * @property ClarifyCheckStepMetadata|null $ClarifyCheck
+ * @property FailStepMetadata|null $Fail
+ * @property AutoMLJobStepMetadata|null $AutoMLJob
+ * @property EndpointStepMetadata|null $Endpoint
+ * @property EndpointConfigStepMetadata|null $EndpointConfig
  */
 class PipelineExecutionStepMetadata extends Shape
 {
     /**
      * @param array{
-     *     TrainingJob?: TrainingJobStepMetadata,
-     *     ProcessingJob?: ProcessingJobStepMetadata,
-     *     TransformJob?: TransformJobStepMetadata,
-     *     TuningJob?: TuningJobStepMetaData,
-     *     Model?: ModelStepMetadata,
-     *     RegisterModel?: RegisterModelStepMetadata,
-     *     Condition?: ConditionStepMetadata,
-     *     Callback?: CallbackStepMetadata,
-     *     Lambda?: LambdaStepMetadata,
-     *     EMR?: EMRStepMetadata,
-     *     QualityCheck?: QualityCheckStepMetadata,
-     *     ClarifyCheck?: ClarifyCheckStepMetadata,
-     *     Fail?: FailStepMetadata,
-     *     AutoMLJob?: AutoMLJobStepMetadata,
-     *     Endpoint?: EndpointStepMetadata,
-     *     EndpointConfig?: EndpointConfigStepMetadata
+     *     TrainingJob?: TrainingJobStepMetadata|null,
+     *     ProcessingJob?: ProcessingJobStepMetadata|null,
+     *     TransformJob?: TransformJobStepMetadata|null,
+     *     TuningJob?: TuningJobStepMetaData|null,
+     *     Model?: ModelStepMetadata|null,
+     *     RegisterModel?: RegisterModelStepMetadata|null,
+     *     Condition?: ConditionStepMetadata|null,
+     *     Callback?: CallbackStepMetadata|null,
+     *     Lambda?: LambdaStepMetadata|null,
+     *     EMR?: EMRStepMetadata|null,
+     *     QualityCheck?: QualityCheckStepMetadata|null,
+     *     ClarifyCheck?: ClarifyCheckStepMetadata|null,
+     *     Fail?: FailStepMetadata|null,
+     *     AutoMLJob?: AutoMLJobStepMetadata|null,
+     *     Endpoint?: EndpointStepMetadata|null,
+     *     EndpointConfig?: EndpointConfigStepMetadata|null
      * } $args
      */
     public function __construct(array $args = [])

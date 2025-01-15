@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Transfer\ListProfiles;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
- * @property 'LOCAL'|'PARTNER' $ProfileType
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
+ * @property 'LOCAL'|'PARTNER'|null $ProfileType
  */
 class ListProfilesRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string,
-     *     ProfileType?: 'LOCAL'|'PARTNER'
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null,
+     *     ProfileType?: 'LOCAL'|'PARTNER'|null
      * } $args
      */
     public function __construct(array $args = [])

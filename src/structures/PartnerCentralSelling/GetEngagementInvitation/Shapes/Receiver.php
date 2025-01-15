@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\PartnerCentralSelling\GetEngagementInvitation\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AccountReceiver $Account
+ * @property AccountReceiver|null $Account
  */
 class Receiver extends Shape
 {
     /**
-     * @param array{Account?: AccountReceiver} $args
+     * @param array{Account?: AccountReceiver|null} $args
      */
     public function __construct(array $args = [])
     {

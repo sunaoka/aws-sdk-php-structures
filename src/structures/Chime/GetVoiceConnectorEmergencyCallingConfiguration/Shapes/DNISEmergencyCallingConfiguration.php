@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $EmergencyPhoneNumber
- * @property string $TestPhoneNumber
+ * @property string|null $TestPhoneNumber
  * @property string $CallingCountry
  */
 class DNISEmergencyCallingConfiguration extends Shape
@@ -14,7 +14,7 @@ class DNISEmergencyCallingConfiguration extends Shape
     /**
      * @param array{
      *     EmergencyPhoneNumber: string,
-     *     TestPhoneNumber?: string,
+     *     TestPhoneNumber?: string|null,
      *     CallingCountry: string
      * } $args
      */

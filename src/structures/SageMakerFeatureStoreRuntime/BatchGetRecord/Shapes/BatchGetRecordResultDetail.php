@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FeatureGroupName
  * @property string $RecordIdentifierValueAsString
  * @property list<FeatureValue> $Record
- * @property string $ExpiresAt
+ * @property string|null $ExpiresAt
  */
 class BatchGetRecordResultDetail extends Shape
 {
@@ -17,7 +17,7 @@ class BatchGetRecordResultDetail extends Shape
      *     FeatureGroupName: string,
      *     RecordIdentifierValueAsString: string,
      *     Record: list<FeatureValue>,
-     *     ExpiresAt?: string
+     *     ExpiresAt?: string|null
      * } $args
      */
     public function __construct(array $args)

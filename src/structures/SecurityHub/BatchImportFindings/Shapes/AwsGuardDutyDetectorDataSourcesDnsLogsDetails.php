@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Status
+ * @property string|null $Status
  */
 class AwsGuardDutyDetectorDataSourcesDnsLogsDetails extends Shape
 {
     /**
-     * @param array{Status?: string} $args
+     * @param array{Status?: string|null} $args
      */
     public function __construct(array $args = [])
     {

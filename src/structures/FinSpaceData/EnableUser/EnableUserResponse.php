@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\EnableUser;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $userId
+ * @property string|null $userId
  */
 class EnableUserResponse extends Response
 {

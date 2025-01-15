@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\GetBackendStorage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BucketName
+ * @property string|null $BucketName
  * @property bool $Imported
- * @property BackendStoragePermissions $Permissions
+ * @property BackendStoragePermissions|null $Permissions
  * @property 'S3' $ServiceName
  */
 class GetBackendStorageResourceConfig extends Shape
 {
     /**
      * @param array{
-     *     BucketName?: string,
+     *     BucketName?: string|null,
      *     Imported: bool,
-     *     Permissions?: BackendStoragePermissions,
+     *     Permissions?: BackendStoragePermissions|null,
      *     ServiceName: 'S3'
      * } $args
      */

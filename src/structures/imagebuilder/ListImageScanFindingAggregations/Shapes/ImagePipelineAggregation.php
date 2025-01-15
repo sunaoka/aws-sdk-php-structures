@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListImageScanFindingAggregations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $imagePipelineArn
- * @property SeverityCounts $severityCounts
+ * @property string|null $imagePipelineArn
+ * @property SeverityCounts|null $severityCounts
  */
 class ImagePipelineAggregation extends Shape
 {
     /**
      * @param array{
-     *     imagePipelineArn?: string,
-     *     severityCounts?: SeverityCounts
+     *     imagePipelineArn?: string|null,
+     *     severityCounts?: SeverityCounts|null
      * } $args
      */
     public function __construct(array $args = [])

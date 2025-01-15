@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetDiskSnapshot\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $arn
- * @property string $supportCode
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property ResourceLocation $location
- * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket' $resourceType
- * @property list<Tag> $tags
- * @property int $sizeInGb
- * @property 'pending'|'completed'|'error'|'unknown' $state
- * @property string $progress
- * @property string $fromDiskName
- * @property string $fromDiskArn
- * @property string $fromInstanceName
- * @property string $fromInstanceArn
- * @property bool $isFromAutoSnapshot
+ * @property string|null $name
+ * @property string|null $arn
+ * @property string|null $supportCode
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property ResourceLocation|null $location
+ * @property 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null $resourceType
+ * @property list<Tag>|null $tags
+ * @property int|null $sizeInGb
+ * @property 'pending'|'completed'|'error'|'unknown'|null $state
+ * @property string|null $progress
+ * @property string|null $fromDiskName
+ * @property string|null $fromDiskArn
+ * @property string|null $fromInstanceName
+ * @property string|null $fromInstanceArn
+ * @property bool|null $isFromAutoSnapshot
  */
 class DiskSnapshot extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     arn?: string,
-     *     supportCode?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     location?: ResourceLocation,
-     *     resourceType?: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket',
-     *     tags?: list<Tag>,
-     *     sizeInGb?: int,
-     *     state?: 'pending'|'completed'|'error'|'unknown',
-     *     progress?: string,
-     *     fromDiskName?: string,
-     *     fromDiskArn?: string,
-     *     fromInstanceName?: string,
-     *     fromInstanceArn?: string,
-     *     isFromAutoSnapshot?: bool
+     *     name?: string|null,
+     *     arn?: string|null,
+     *     supportCode?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     location?: ResourceLocation|null,
+     *     resourceType?: 'ContainerService'|'Instance'|'StaticIp'|'KeyPair'|'InstanceSnapshot'|'Domain'|'PeeredVpc'|'LoadBalancer'|'LoadBalancerTlsCertificate'|'Disk'|'DiskSnapshot'|'RelationalDatabase'|'RelationalDatabaseSnapshot'|'ExportSnapshotRecord'|'CloudFormationStackRecord'|'Alarm'|'ContactMethod'|'Distribution'|'Certificate'|'Bucket'|null,
+     *     tags?: list<Tag>|null,
+     *     sizeInGb?: int|null,
+     *     state?: 'pending'|'completed'|'error'|'unknown'|null,
+     *     progress?: string|null,
+     *     fromDiskName?: string|null,
+     *     fromDiskArn?: string|null,
+     *     fromInstanceName?: string|null,
+     *     fromInstanceArn?: string|null,
+     *     isFromAutoSnapshot?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

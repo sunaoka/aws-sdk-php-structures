@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EKS\DescribeNodegroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ec2SshKey
- * @property list<string> $sourceSecurityGroups
+ * @property string|null $ec2SshKey
+ * @property list<string>|null $sourceSecurityGroups
  */
 class RemoteAccessConfig extends Shape
 {
     /**
      * @param array{
-     *     ec2SshKey?: string,
-     *     sourceSecurityGroups?: list<string>
+     *     ec2SshKey?: string|null,
+     *     sourceSecurityGroups?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

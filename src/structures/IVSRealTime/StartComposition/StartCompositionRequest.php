@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $stageArn
- * @property string $idempotencyToken
- * @property Shapes\LayoutConfiguration $layout
+ * @property string|null $idempotencyToken
+ * @property Shapes\LayoutConfiguration|null $layout
  * @property list<Shapes\DestinationConfiguration> $destinations
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class StartCompositionRequest extends Request
 {
     /**
      * @param array{
      *     stageArn: string,
-     *     idempotencyToken?: string,
-     *     layout?: Shapes\LayoutConfiguration,
+     *     idempotencyToken?: string|null,
+     *     layout?: Shapes\LayoutConfiguration|null,
      *     destinations: list<Shapes\DestinationConfiguration>,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

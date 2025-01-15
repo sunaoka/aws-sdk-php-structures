@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $columnName
- * @property string $columnValue
- * @property 'BLOB'|'BOOLEAN'|'DOUBLE'|'NULL'|'LONG'|'STRING' $type
+ * @property string|null $columnName
+ * @property string|null $columnValue
+ * @property 'BLOB'|'BOOLEAN'|'DOUBLE'|'NULL'|'LONG'|'STRING'|null $type
  */
 class RetrievalResultContentColumn extends Shape
 {
     /**
      * @param array{
-     *     columnName?: string,
-     *     columnValue?: string,
-     *     type?: 'BLOB'|'BOOLEAN'|'DOUBLE'|'NULL'|'LONG'|'STRING'
+     *     columnName?: string|null,
+     *     columnValue?: string|null,
+     *     type?: 'BLOB'|'BOOLEAN'|'DOUBLE'|'NULL'|'LONG'|'STRING'|null
      * } $args
      */
     public function __construct(array $args = [])

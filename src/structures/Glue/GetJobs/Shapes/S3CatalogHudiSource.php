@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Database
  * @property string $Table
- * @property array<string, string> $AdditionalHudiOptions
- * @property list<GlueSchema> $OutputSchemas
+ * @property array<string, string>|null $AdditionalHudiOptions
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class S3CatalogHudiSource extends Shape
 {
@@ -18,8 +18,8 @@ class S3CatalogHudiSource extends Shape
      *     Name: string,
      *     Database: string,
      *     Table: string,
-     *     AdditionalHudiOptions?: array<string, string>,
-     *     OutputSchemas?: list<GlueSchema>
+     *     AdditionalHudiOptions?: array<string, string>|null,
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

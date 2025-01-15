@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\CheckDNSAvailability;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $Available
- * @property string $FullyQualifiedCNAME
+ * @property bool|null $Available
+ * @property string|null $FullyQualifiedCNAME
  */
 class CheckDNSAvailabilityResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\FraudDetector\DescribeModelVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $auc
- * @property list<MetricDataPoint> $metricDataPoints
+ * @property float|null $auc
+ * @property list<MetricDataPoint>|null $metricDataPoints
  */
 class TrainingMetrics extends Shape
 {
     /**
      * @param array{
-     *     auc?: float,
-     *     metricDataPoints?: list<MetricDataPoint>
+     *     auc?: float|null,
+     *     metricDataPoints?: list<MetricDataPoint>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TotalBarLabel
+ * @property string|null $TotalBarLabel
  */
 class WaterfallChartOptions extends Shape
 {
     /**
-     * @param array{TotalBarLabel?: string} $args
+     * @param array{TotalBarLabel?: string|null} $args
      */
     public function __construct(array $args = [])
     {

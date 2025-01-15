@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Appstream\DescribeAppBlocks;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AppBlock> $AppBlocks
- * @property string $NextToken
+ * @property list<Shapes\AppBlock>|null $AppBlocks
+ * @property string|null $NextToken
  */
 class DescribeAppBlocksResponse extends Response
 {

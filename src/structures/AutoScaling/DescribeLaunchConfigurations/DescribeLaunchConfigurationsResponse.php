@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\LaunchConfiguration> $LaunchConfigurations
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class DescribeLaunchConfigurationsResponse extends Response
 {

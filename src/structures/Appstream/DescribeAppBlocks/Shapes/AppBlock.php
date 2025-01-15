@@ -7,15 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property string $Arn
- * @property string $Description
- * @property string $DisplayName
- * @property S3Location $SourceS3Location
- * @property ScriptDetails $SetupScriptDetails
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property ScriptDetails $PostSetupScriptDetails
- * @property 'CUSTOM'|'APPSTREAM2' $PackagingType
- * @property 'INACTIVE'|'ACTIVE' $State
- * @property list<ErrorDetails> $AppBlockErrors
+ * @property string|null $Description
+ * @property string|null $DisplayName
+ * @property S3Location|null $SourceS3Location
+ * @property ScriptDetails|null $SetupScriptDetails
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property ScriptDetails|null $PostSetupScriptDetails
+ * @property 'CUSTOM'|'APPSTREAM2'|null $PackagingType
+ * @property 'INACTIVE'|'ACTIVE'|null $State
+ * @property list<ErrorDetails>|null $AppBlockErrors
  */
 class AppBlock extends Shape
 {
@@ -23,15 +23,15 @@ class AppBlock extends Shape
      * @param array{
      *     Name: string,
      *     Arn: string,
-     *     Description?: string,
-     *     DisplayName?: string,
-     *     SourceS3Location?: S3Location,
-     *     SetupScriptDetails?: ScriptDetails,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     PostSetupScriptDetails?: ScriptDetails,
-     *     PackagingType?: 'CUSTOM'|'APPSTREAM2',
-     *     State?: 'INACTIVE'|'ACTIVE',
-     *     AppBlockErrors?: list<ErrorDetails>
+     *     Description?: string|null,
+     *     DisplayName?: string|null,
+     *     SourceS3Location?: S3Location|null,
+     *     SetupScriptDetails?: ScriptDetails|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     PostSetupScriptDetails?: ScriptDetails|null,
+     *     PackagingType?: 'CUSTOM'|'APPSTREAM2'|null,
+     *     State?: 'INACTIVE'|'ACTIVE'|null,
+     *     AppBlockErrors?: list<ErrorDetails>|null
      * } $args
      */
     public function __construct(array $args)

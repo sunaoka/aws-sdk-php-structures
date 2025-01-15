@@ -7,15 +7,15 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TableName
  * @property array<string, Shapes\AttributeValue> $Key
- * @property array<string, Shapes\ExpectedAttributeValue> $Expected
- * @property 'AND'|'OR' $ConditionalOperator
- * @property 'NONE'|'ALL_OLD'|'UPDATED_OLD'|'ALL_NEW'|'UPDATED_NEW' $ReturnValues
- * @property 'INDEXES'|'TOTAL'|'NONE' $ReturnConsumedCapacity
- * @property 'SIZE'|'NONE' $ReturnItemCollectionMetrics
- * @property string $ConditionExpression
- * @property array<string, string> $ExpressionAttributeNames
- * @property array<string, Shapes\AttributeValue> $ExpressionAttributeValues
- * @property 'ALL_OLD'|'NONE' $ReturnValuesOnConditionCheckFailure
+ * @property array<string, Shapes\ExpectedAttributeValue>|null $Expected
+ * @property 'AND'|'OR'|null $ConditionalOperator
+ * @property 'NONE'|'ALL_OLD'|'UPDATED_OLD'|'ALL_NEW'|'UPDATED_NEW'|null $ReturnValues
+ * @property 'INDEXES'|'TOTAL'|'NONE'|null $ReturnConsumedCapacity
+ * @property 'SIZE'|'NONE'|null $ReturnItemCollectionMetrics
+ * @property string|null $ConditionExpression
+ * @property array<string, string>|null $ExpressionAttributeNames
+ * @property array<string, Shapes\AttributeValue>|null $ExpressionAttributeValues
+ * @property 'ALL_OLD'|'NONE'|null $ReturnValuesOnConditionCheckFailure
  */
 class DeleteItemRequest extends Request
 {
@@ -23,15 +23,15 @@ class DeleteItemRequest extends Request
      * @param array{
      *     TableName: string,
      *     Key: array<string, Shapes\AttributeValue>,
-     *     Expected?: array<string, Shapes\ExpectedAttributeValue>,
-     *     ConditionalOperator?: 'AND'|'OR',
-     *     ReturnValues?: 'NONE'|'ALL_OLD'|'UPDATED_OLD'|'ALL_NEW'|'UPDATED_NEW',
-     *     ReturnConsumedCapacity?: 'INDEXES'|'TOTAL'|'NONE',
-     *     ReturnItemCollectionMetrics?: 'SIZE'|'NONE',
-     *     ConditionExpression?: string,
-     *     ExpressionAttributeNames?: array<string, string>,
-     *     ExpressionAttributeValues?: array<string, Shapes\AttributeValue>,
-     *     ReturnValuesOnConditionCheckFailure?: 'ALL_OLD'|'NONE'
+     *     Expected?: array<string, Shapes\ExpectedAttributeValue>|null,
+     *     ConditionalOperator?: 'AND'|'OR'|null,
+     *     ReturnValues?: 'NONE'|'ALL_OLD'|'UPDATED_OLD'|'ALL_NEW'|'UPDATED_NEW'|null,
+     *     ReturnConsumedCapacity?: 'INDEXES'|'TOTAL'|'NONE'|null,
+     *     ReturnItemCollectionMetrics?: 'SIZE'|'NONE'|null,
+     *     ConditionExpression?: string|null,
+     *     ExpressionAttributeNames?: array<string, string>|null,
+     *     ExpressionAttributeValues?: array<string, Shapes\AttributeValue>|null,
+     *     ReturnValuesOnConditionCheckFailure?: 'ALL_OLD'|'NONE'|null
      * } $args
      */
     public function __construct(array $args)

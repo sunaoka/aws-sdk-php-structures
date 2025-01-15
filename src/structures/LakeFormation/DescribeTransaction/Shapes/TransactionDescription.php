@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LakeFormation\DescribeTransaction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TransactionId
- * @property 'ACTIVE'|'COMMITTED'|'ABORTED'|'COMMIT_IN_PROGRESS' $TransactionStatus
- * @property \Aws\Api\DateTimeResult $TransactionStartTime
- * @property \Aws\Api\DateTimeResult $TransactionEndTime
+ * @property string|null $TransactionId
+ * @property 'ACTIVE'|'COMMITTED'|'ABORTED'|'COMMIT_IN_PROGRESS'|null $TransactionStatus
+ * @property \Aws\Api\DateTimeResult|null $TransactionStartTime
+ * @property \Aws\Api\DateTimeResult|null $TransactionEndTime
  */
 class TransactionDescription extends Shape
 {
     /**
      * @param array{
-     *     TransactionId?: string,
-     *     TransactionStatus?: 'ACTIVE'|'COMMITTED'|'ABORTED'|'COMMIT_IN_PROGRESS',
-     *     TransactionStartTime?: \Aws\Api\DateTimeResult,
-     *     TransactionEndTime?: \Aws\Api\DateTimeResult
+     *     TransactionId?: string|null,
+     *     TransactionStatus?: 'ACTIVE'|'COMMITTED'|'ABORTED'|'COMMIT_IN_PROGRESS'|null,
+     *     TransactionStartTime?: \Aws\Api\DateTimeResult|null,
+     *     TransactionEndTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

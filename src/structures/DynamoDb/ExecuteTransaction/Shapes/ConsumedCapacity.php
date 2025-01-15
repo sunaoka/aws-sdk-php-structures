@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DynamoDb\ExecuteTransaction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TableName
- * @property double $CapacityUnits
- * @property double $ReadCapacityUnits
- * @property double $WriteCapacityUnits
- * @property Capacity $Table
- * @property array<string, Capacity> $LocalSecondaryIndexes
- * @property array<string, Capacity> $GlobalSecondaryIndexes
+ * @property string|null $TableName
+ * @property double|null $CapacityUnits
+ * @property double|null $ReadCapacityUnits
+ * @property double|null $WriteCapacityUnits
+ * @property Capacity|null $Table
+ * @property array<string, Capacity>|null $LocalSecondaryIndexes
+ * @property array<string, Capacity>|null $GlobalSecondaryIndexes
  */
 class ConsumedCapacity extends Shape
 {
     /**
      * @param array{
-     *     TableName?: string,
-     *     CapacityUnits?: double,
-     *     ReadCapacityUnits?: double,
-     *     WriteCapacityUnits?: double,
-     *     Table?: Capacity,
-     *     LocalSecondaryIndexes?: array<string, Capacity>,
-     *     GlobalSecondaryIndexes?: array<string, Capacity>
+     *     TableName?: string|null,
+     *     CapacityUnits?: double|null,
+     *     ReadCapacityUnits?: double|null,
+     *     WriteCapacityUnits?: double|null,
+     *     Table?: Capacity|null,
+     *     LocalSecondaryIndexes?: array<string, Capacity>|null,
+     *     GlobalSecondaryIndexes?: array<string, Capacity>|null
      * } $args
      */
     public function __construct(array $args = [])

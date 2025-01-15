@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ContentType
- * @property string $ContentDigest
+ * @property string|null $ContentDigest
  * @property string $S3Uri
  */
 class MetricsSource extends Shape
@@ -14,7 +14,7 @@ class MetricsSource extends Shape
     /**
      * @param array{
      *     ContentType: string,
-     *     ContentDigest?: string,
+     *     ContentDigest?: string|null,
      *     S3Uri: string
      * } $args
      */

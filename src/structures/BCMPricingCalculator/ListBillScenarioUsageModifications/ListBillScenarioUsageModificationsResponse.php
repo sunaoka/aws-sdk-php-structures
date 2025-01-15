@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\ListBillScenarioUsageModif
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\BillScenarioUsageModificationItem> $items
- * @property string $nextToken
+ * @property list<Shapes\BillScenarioUsageModificationItem>|null $items
+ * @property string|null $nextToken
  */
 class ListBillScenarioUsageModificationsResponse extends Response
 {

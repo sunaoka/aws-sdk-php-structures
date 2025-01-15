@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $analyzerArn
  * @property 'ACTIVE'|'ARCHIVED' $status
- * @property list<string> $ids
- * @property string $resourceArn
- * @property string $clientToken
+ * @property list<string>|null $ids
+ * @property string|null $resourceArn
+ * @property string|null $clientToken
  */
 class UpdateFindingsRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateFindingsRequest extends Request
      * @param array{
      *     analyzerArn: string,
      *     status: 'ACTIVE'|'ARCHIVED',
-     *     ids?: list<string>,
-     *     resourceArn?: string,
-     *     clientToken?: string
+     *     ids?: list<string>|null,
+     *     resourceArn?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\GetAssociatedPackageGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALLOW'|'ALLOW_SPECIFIC_REPOSITORIES'|'BLOCK'|'INHERIT' $mode
- * @property 'ALLOW'|'ALLOW_SPECIFIC_REPOSITORIES'|'BLOCK'|'INHERIT' $effectiveMode
- * @property PackageGroupReference $inheritedFrom
- * @property int $repositoriesCount
+ * @property 'ALLOW'|'ALLOW_SPECIFIC_REPOSITORIES'|'BLOCK'|'INHERIT'|null $mode
+ * @property 'ALLOW'|'ALLOW_SPECIFIC_REPOSITORIES'|'BLOCK'|'INHERIT'|null $effectiveMode
+ * @property PackageGroupReference|null $inheritedFrom
+ * @property int|null $repositoriesCount
  */
 class PackageGroupOriginRestriction extends Shape
 {
     /**
      * @param array{
-     *     mode?: 'ALLOW'|'ALLOW_SPECIFIC_REPOSITORIES'|'BLOCK'|'INHERIT',
-     *     effectiveMode?: 'ALLOW'|'ALLOW_SPECIFIC_REPOSITORIES'|'BLOCK'|'INHERIT',
-     *     inheritedFrom?: PackageGroupReference,
-     *     repositoriesCount?: int
+     *     mode?: 'ALLOW'|'ALLOW_SPECIFIC_REPOSITORIES'|'BLOCK'|'INHERIT'|null,
+     *     effectiveMode?: 'ALLOW'|'ALLOW_SPECIFIC_REPOSITORIES'|'BLOCK'|'INHERIT'|null,
+     *     inheritedFrom?: PackageGroupReference|null,
+     *     repositoriesCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

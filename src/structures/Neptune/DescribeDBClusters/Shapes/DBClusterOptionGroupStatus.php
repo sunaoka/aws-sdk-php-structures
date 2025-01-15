@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Neptune\DescribeDBClusters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBClusterOptionGroupName
- * @property string $Status
+ * @property string|null $DBClusterOptionGroupName
+ * @property string|null $Status
  */
 class DBClusterOptionGroupStatus extends Shape
 {
     /**
      * @param array{
-     *     DBClusterOptionGroupName?: string,
-     *     Status?: string
+     *     DBClusterOptionGroupName?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

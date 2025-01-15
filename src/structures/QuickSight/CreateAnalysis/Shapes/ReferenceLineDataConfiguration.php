@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ReferenceLineStaticDataConfiguration $StaticConfiguration
- * @property ReferenceLineDynamicDataConfiguration $DynamicConfiguration
- * @property 'PRIMARY_YAXIS'|'SECONDARY_YAXIS' $AxisBinding
- * @property 'BAR'|'LINE' $SeriesType
+ * @property ReferenceLineStaticDataConfiguration|null $StaticConfiguration
+ * @property ReferenceLineDynamicDataConfiguration|null $DynamicConfiguration
+ * @property 'PRIMARY_YAXIS'|'SECONDARY_YAXIS'|null $AxisBinding
+ * @property 'BAR'|'LINE'|null $SeriesType
  */
 class ReferenceLineDataConfiguration extends Shape
 {
     /**
      * @param array{
-     *     StaticConfiguration?: ReferenceLineStaticDataConfiguration,
-     *     DynamicConfiguration?: ReferenceLineDynamicDataConfiguration,
-     *     AxisBinding?: 'PRIMARY_YAXIS'|'SECONDARY_YAXIS',
-     *     SeriesType?: 'BAR'|'LINE'
+     *     StaticConfiguration?: ReferenceLineStaticDataConfiguration|null,
+     *     DynamicConfiguration?: ReferenceLineDynamicDataConfiguration|null,
+     *     AxisBinding?: 'PRIMARY_YAXIS'|'SECONDARY_YAXIS'|null,
+     *     SeriesType?: 'BAR'|'LINE'|null
      * } $args
      */
     public function __construct(array $args = [])

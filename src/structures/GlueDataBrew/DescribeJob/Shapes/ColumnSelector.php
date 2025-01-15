@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Regex
- * @property string $Name
+ * @property string|null $Regex
+ * @property string|null $Name
  */
 class ColumnSelector extends Shape
 {
     /**
      * @param array{
-     *     Regex?: string,
-     *     Name?: string
+     *     Regex?: string|null,
+     *     Name?: string|null
      * } $args
      */
     public function __construct(array $args = [])

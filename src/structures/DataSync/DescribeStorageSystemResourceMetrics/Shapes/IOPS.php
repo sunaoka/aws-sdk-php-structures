@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\DataSync\DescribeStorageSystemResourceMetrics\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Read
- * @property double $Write
- * @property double $Other
- * @property double $Total
+ * @property double|null $Read
+ * @property double|null $Write
+ * @property double|null $Other
+ * @property double|null $Total
  */
 class IOPS extends Shape
 {
     /**
      * @param array{
-     *     Read?: double,
-     *     Write?: double,
-     *     Other?: double,
-     *     Total?: double
+     *     Read?: double|null,
+     *     Write?: double|null,
+     *     Other?: double|null,
+     *     Total?: double|null
      * } $args
      */
     public function __construct(array $args = [])

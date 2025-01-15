@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Backup\ListRecoveryPointsByBackupVault\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $MoveToColdStorageAt
- * @property \Aws\Api\DateTimeResult $DeleteAt
+ * @property \Aws\Api\DateTimeResult|null $MoveToColdStorageAt
+ * @property \Aws\Api\DateTimeResult|null $DeleteAt
  */
 class CalculatedLifecycle extends Shape
 {
     /**
      * @param array{
-     *     MoveToColdStorageAt?: \Aws\Api\DateTimeResult,
-     *     DeleteAt?: \Aws\Api\DateTimeResult
+     *     MoveToColdStorageAt?: \Aws\Api\DateTimeResult|null,
+     *     DeleteAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

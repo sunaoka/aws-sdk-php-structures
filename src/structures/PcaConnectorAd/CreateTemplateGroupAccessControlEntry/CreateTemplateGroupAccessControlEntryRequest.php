@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\AccessRights $AccessRights
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $GroupDisplayName
  * @property string $GroupSecurityIdentifier
  * @property string $TemplateArn
@@ -16,7 +16,7 @@ class CreateTemplateGroupAccessControlEntryRequest extends Request
     /**
      * @param array{
      *     AccessRights: Shapes\AccessRights,
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     GroupDisplayName: string,
      *     GroupSecurityIdentifier: string,
      *     TemplateArn: string

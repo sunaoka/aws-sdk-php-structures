@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVerifiedAccessInstanceLoggingConfig
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $VerifiedAccessInstanceId
- * @property VerifiedAccessLogs $AccessLogs
+ * @property string|null $VerifiedAccessInstanceId
+ * @property VerifiedAccessLogs|null $AccessLogs
  */
 class VerifiedAccessInstanceLoggingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     VerifiedAccessInstanceId?: string,
-     *     AccessLogs?: VerifiedAccessLogs
+     *     VerifiedAccessInstanceId?: string|null,
+     *     AccessLogs?: VerifiedAccessLogs|null
      * } $args
      */
     public function __construct(array $args = [])

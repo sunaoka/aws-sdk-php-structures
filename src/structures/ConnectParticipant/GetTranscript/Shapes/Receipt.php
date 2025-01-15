@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConnectParticipant\GetTranscript\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeliveredTimestamp
- * @property string $ReadTimestamp
- * @property string $RecipientParticipantId
+ * @property string|null $DeliveredTimestamp
+ * @property string|null $ReadTimestamp
+ * @property string|null $RecipientParticipantId
  */
 class Receipt extends Shape
 {
     /**
      * @param array{
-     *     DeliveredTimestamp?: string,
-     *     ReadTimestamp?: string,
-     *     RecipientParticipantId?: string
+     *     DeliveredTimestamp?: string|null,
+     *     ReadTimestamp?: string|null,
+     *     RecipientParticipantId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

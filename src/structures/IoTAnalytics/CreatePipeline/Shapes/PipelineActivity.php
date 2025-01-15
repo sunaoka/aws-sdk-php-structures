@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\CreatePipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ChannelActivity $channel
- * @property LambdaActivity $lambda
- * @property DatastoreActivity $datastore
- * @property AddAttributesActivity $addAttributes
- * @property RemoveAttributesActivity $removeAttributes
- * @property SelectAttributesActivity $selectAttributes
- * @property FilterActivity $filter
- * @property MathActivity $math
- * @property DeviceRegistryEnrichActivity $deviceRegistryEnrich
- * @property DeviceShadowEnrichActivity $deviceShadowEnrich
+ * @property ChannelActivity|null $channel
+ * @property LambdaActivity|null $lambda
+ * @property DatastoreActivity|null $datastore
+ * @property AddAttributesActivity|null $addAttributes
+ * @property RemoveAttributesActivity|null $removeAttributes
+ * @property SelectAttributesActivity|null $selectAttributes
+ * @property FilterActivity|null $filter
+ * @property MathActivity|null $math
+ * @property DeviceRegistryEnrichActivity|null $deviceRegistryEnrich
+ * @property DeviceShadowEnrichActivity|null $deviceShadowEnrich
  */
 class PipelineActivity extends Shape
 {
     /**
      * @param array{
-     *     channel?: ChannelActivity,
-     *     lambda?: LambdaActivity,
-     *     datastore?: DatastoreActivity,
-     *     addAttributes?: AddAttributesActivity,
-     *     removeAttributes?: RemoveAttributesActivity,
-     *     selectAttributes?: SelectAttributesActivity,
-     *     filter?: FilterActivity,
-     *     math?: MathActivity,
-     *     deviceRegistryEnrich?: DeviceRegistryEnrichActivity,
-     *     deviceShadowEnrich?: DeviceShadowEnrichActivity
+     *     channel?: ChannelActivity|null,
+     *     lambda?: LambdaActivity|null,
+     *     datastore?: DatastoreActivity|null,
+     *     addAttributes?: AddAttributesActivity|null,
+     *     removeAttributes?: RemoveAttributesActivity|null,
+     *     selectAttributes?: SelectAttributesActivity|null,
+     *     filter?: FilterActivity|null,
+     *     math?: MathActivity|null,
+     *     deviceRegistryEnrich?: DeviceRegistryEnrichActivity|null,
+     *     deviceShadowEnrich?: DeviceShadowEnrichActivity|null
      * } $args
      */
     public function __construct(array $args = [])

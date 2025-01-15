@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateDataRepositoryAssociation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'NEW'|'CHANGED'|'DELETED'> $Events
+ * @property list<'NEW'|'CHANGED'|'DELETED'>|null $Events
  */
 class AutoExportPolicy extends Shape
 {
     /**
-     * @param array{Events?: list<'NEW'|'CHANGED'|'DELETED'>} $args
+     * @param array{Events?: list<'NEW'|'CHANGED'|'DELETED'>|null} $args
      */
     public function __construct(array $args = [])
     {

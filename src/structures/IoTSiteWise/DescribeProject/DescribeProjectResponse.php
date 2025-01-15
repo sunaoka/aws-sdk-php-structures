@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $projectArn
  * @property string $projectName
  * @property string $portalId
- * @property string $projectDescription
+ * @property string|null $projectDescription
  * @property \Aws\Api\DateTimeResult $projectCreationDate
  * @property \Aws\Api\DateTimeResult $projectLastUpdateDate
  */

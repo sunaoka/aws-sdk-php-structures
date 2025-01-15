@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\CreateVehicle\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PeriodicStateTemplateUpdateStrategy $periodic
- * @property OnChangeStateTemplateUpdateStrategy $onChange
+ * @property PeriodicStateTemplateUpdateStrategy|null $periodic
+ * @property OnChangeStateTemplateUpdateStrategy|null $onChange
  */
 class StateTemplateUpdateStrategy extends Shape
 {
     /**
      * @param array{
-     *     periodic?: PeriodicStateTemplateUpdateStrategy,
-     *     onChange?: OnChangeStateTemplateUpdateStrategy
+     *     periodic?: PeriodicStateTemplateUpdateStrategy|null,
+     *     onChange?: OnChangeStateTemplateUpdateStrategy|null
      * } $args
      */
     public function __construct(array $args = [])

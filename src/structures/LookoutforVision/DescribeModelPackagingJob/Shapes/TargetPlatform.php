@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'LINUX' $Os
  * @property 'ARM64'|'X86_64' $Arch
- * @property 'NVIDIA' $Accelerator
+ * @property 'NVIDIA'|null $Accelerator
  */
 class TargetPlatform extends Shape
 {
@@ -15,7 +15,7 @@ class TargetPlatform extends Shape
      * @param array{
      *     Os: 'LINUX',
      *     Arch: 'ARM64'|'X86_64',
-     *     Accelerator?: 'NVIDIA'
+     *     Accelerator?: 'NVIDIA'|null
      * } $args
      */
     public function __construct(array $args)

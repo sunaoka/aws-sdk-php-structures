@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\ListRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $dimension
- * @property 'Asc'|'Desc' $order
+ * @property string|null $dimension
+ * @property 'Asc'|'Desc'|null $order
  */
 class OrderBy extends Shape
 {
     /**
      * @param array{
-     *     dimension?: string,
-     *     order?: 'Asc'|'Desc'
+     *     dimension?: string|null,
+     *     order?: 'Asc'|'Desc'|null
      * } $args
      */
     public function __construct(array $args = [])

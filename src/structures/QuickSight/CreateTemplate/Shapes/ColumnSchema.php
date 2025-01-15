@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $DataType
- * @property string $GeographicRole
+ * @property string|null $Name
+ * @property string|null $DataType
+ * @property string|null $GeographicRole
  */
 class ColumnSchema extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     DataType?: string,
-     *     GeographicRole?: string
+     *     Name?: string|null,
+     *     DataType?: string|null,
+     *     GeographicRole?: string|null
      * } $args
      */
     public function __construct(array $args = [])

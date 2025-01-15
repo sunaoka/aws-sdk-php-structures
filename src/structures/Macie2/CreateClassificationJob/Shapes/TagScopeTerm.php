@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Macie2\CreateClassificationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'EQ'|'GT'|'GTE'|'LT'|'LTE'|'NE'|'CONTAINS'|'STARTS_WITH' $comparator
- * @property string $key
- * @property list<TagValuePair> $tagValues
- * @property 'S3_OBJECT' $target
+ * @property 'EQ'|'GT'|'GTE'|'LT'|'LTE'|'NE'|'CONTAINS'|'STARTS_WITH'|null $comparator
+ * @property string|null $key
+ * @property list<TagValuePair>|null $tagValues
+ * @property 'S3_OBJECT'|null $target
  */
 class TagScopeTerm extends Shape
 {
     /**
      * @param array{
-     *     comparator?: 'EQ'|'GT'|'GTE'|'LT'|'LTE'|'NE'|'CONTAINS'|'STARTS_WITH',
-     *     key?: string,
-     *     tagValues?: list<TagValuePair>,
-     *     target?: 'S3_OBJECT'
+     *     comparator?: 'EQ'|'GT'|'GTE'|'LT'|'LTE'|'NE'|'CONTAINS'|'STARTS_WITH'|null,
+     *     key?: string|null,
+     *     tagValues?: list<TagValuePair>|null,
+     *     target?: 'S3_OBJECT'|null
      * } $args
      */
     public function __construct(array $args = [])

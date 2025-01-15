@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Connect\UpdateUserHierarchy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $HierarchyGroupId
+ * @property string|null $HierarchyGroupId
  * @property string $UserId
  * @property string $InstanceId
  */
@@ -13,7 +13,7 @@ class UpdateUserHierarchyRequest extends Request
 {
     /**
      * @param array{
-     *     HierarchyGroupId?: string,
+     *     HierarchyGroupId?: string|null,
      *     UserId: string,
      *     InstanceId: string
      * } $args

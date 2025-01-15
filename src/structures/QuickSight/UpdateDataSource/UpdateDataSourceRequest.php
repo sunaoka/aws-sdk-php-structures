@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $AwsAccountId
  * @property string $DataSourceId
  * @property string $Name
- * @property Shapes\DataSourceParameters $DataSourceParameters
- * @property Shapes\DataSourceCredentials $Credentials
- * @property Shapes\VpcConnectionProperties $VpcConnectionProperties
- * @property Shapes\SslProperties $SslProperties
+ * @property Shapes\DataSourceParameters|null $DataSourceParameters
+ * @property Shapes\DataSourceCredentials|null $Credentials
+ * @property Shapes\VpcConnectionProperties|null $VpcConnectionProperties
+ * @property Shapes\SslProperties|null $SslProperties
  */
 class UpdateDataSourceRequest extends Request
 {
@@ -20,10 +20,10 @@ class UpdateDataSourceRequest extends Request
      *     AwsAccountId: string,
      *     DataSourceId: string,
      *     Name: string,
-     *     DataSourceParameters?: Shapes\DataSourceParameters,
-     *     Credentials?: Shapes\DataSourceCredentials,
-     *     VpcConnectionProperties?: Shapes\VpcConnectionProperties,
-     *     SslProperties?: Shapes\SslProperties
+     *     DataSourceParameters?: Shapes\DataSourceParameters|null,
+     *     Credentials?: Shapes\DataSourceCredentials|null,
+     *     VpcConnectionProperties?: Shapes\VpcConnectionProperties|null,
+     *     SslProperties?: Shapes\SslProperties|null
      * } $args
      */
     public function __construct(array $args)

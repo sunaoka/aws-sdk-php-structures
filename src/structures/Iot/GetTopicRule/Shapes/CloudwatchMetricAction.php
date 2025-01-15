@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $metricName
  * @property string $metricValue
  * @property string $metricUnit
- * @property string $metricTimestamp
+ * @property string|null $metricTimestamp
  */
 class CloudwatchMetricAction extends Shape
 {
@@ -21,7 +21,7 @@ class CloudwatchMetricAction extends Shape
      *     metricName: string,
      *     metricValue: string,
      *     metricUnit: string,
-     *     metricTimestamp?: string
+     *     metricTimestamp?: string|null
      * } $args
      */
     public function __construct(array $args)

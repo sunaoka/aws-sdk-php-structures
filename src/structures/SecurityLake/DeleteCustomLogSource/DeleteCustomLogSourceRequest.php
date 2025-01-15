@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $sourceName
- * @property string $sourceVersion
+ * @property string|null $sourceVersion
  */
 class DeleteCustomLogSourceRequest extends Request
 {
     /**
      * @param array{
      *     sourceName: string,
-     *     sourceVersion?: string
+     *     sourceVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

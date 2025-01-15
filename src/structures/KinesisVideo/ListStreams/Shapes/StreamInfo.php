@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\ListStreams\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeviceName
- * @property string $StreamName
- * @property string $StreamARN
- * @property string $MediaType
- * @property string $KmsKeyId
- * @property string $Version
- * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING' $Status
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property int<0, max> $DataRetentionInHours
+ * @property string|null $DeviceName
+ * @property string|null $StreamName
+ * @property string|null $StreamARN
+ * @property string|null $MediaType
+ * @property string|null $KmsKeyId
+ * @property string|null $Version
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property int<0, max>|null $DataRetentionInHours
  */
 class StreamInfo extends Shape
 {
     /**
      * @param array{
-     *     DeviceName?: string,
-     *     StreamName?: string,
-     *     StreamARN?: string,
-     *     MediaType?: string,
-     *     KmsKeyId?: string,
-     *     Version?: string,
-     *     Status?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING',
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     DataRetentionInHours?: int<0, max>
+     *     DeviceName?: string|null,
+     *     StreamName?: string|null,
+     *     StreamARN?: string|null,
+     *     MediaType?: string|null,
+     *     KmsKeyId?: string|null,
+     *     Version?: string|null,
+     *     Status?: 'CREATING'|'ACTIVE'|'UPDATING'|'DELETING'|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     DataRetentionInHours?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

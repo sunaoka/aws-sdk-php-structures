@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property string $eventPattern
- * @property list<string> $regions
+ * @property string|null $eventPattern
+ * @property list<string>|null $regions
  */
 class UpdateEventRuleRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     eventPattern?: string,
-     *     regions?: list<string>
+     *     eventPattern?: string|null,
+     *     regions?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

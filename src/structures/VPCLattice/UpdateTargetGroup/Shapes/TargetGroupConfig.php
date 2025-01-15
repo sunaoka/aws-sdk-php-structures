@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\VPCLattice\UpdateTargetGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HealthCheckConfig $healthCheck
- * @property 'IPV4'|'IPV6' $ipAddressType
- * @property 'V1'|'V2' $lambdaEventStructureVersion
- * @property int<1, 65535> $port
- * @property 'HTTP'|'HTTPS'|'TCP' $protocol
- * @property 'HTTP1'|'HTTP2'|'GRPC' $protocolVersion
- * @property string $vpcIdentifier
+ * @property HealthCheckConfig|null $healthCheck
+ * @property 'IPV4'|'IPV6'|null $ipAddressType
+ * @property 'V1'|'V2'|null $lambdaEventStructureVersion
+ * @property int<1, 65535>|null $port
+ * @property 'HTTP'|'HTTPS'|'TCP'|null $protocol
+ * @property 'HTTP1'|'HTTP2'|'GRPC'|null $protocolVersion
+ * @property string|null $vpcIdentifier
  */
 class TargetGroupConfig extends Shape
 {
     /**
      * @param array{
-     *     healthCheck?: HealthCheckConfig,
-     *     ipAddressType?: 'IPV4'|'IPV6',
-     *     lambdaEventStructureVersion?: 'V1'|'V2',
-     *     port?: int<1, 65535>,
-     *     protocol?: 'HTTP'|'HTTPS'|'TCP',
-     *     protocolVersion?: 'HTTP1'|'HTTP2'|'GRPC',
-     *     vpcIdentifier?: string
+     *     healthCheck?: HealthCheckConfig|null,
+     *     ipAddressType?: 'IPV4'|'IPV6'|null,
+     *     lambdaEventStructureVersion?: 'V1'|'V2'|null,
+     *     port?: int<1, 65535>|null,
+     *     protocol?: 'HTTP'|'HTTPS'|'TCP'|null,
+     *     protocolVersion?: 'HTTP1'|'HTTP2'|'GRPC'|null,
+     *     vpcIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

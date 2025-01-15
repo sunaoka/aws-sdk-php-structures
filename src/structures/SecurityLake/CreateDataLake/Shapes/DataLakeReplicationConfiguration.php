@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityLake\CreateDataLake\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $regions
- * @property string $roleArn
+ * @property list<string>|null $regions
+ * @property string|null $roleArn
  */
 class DataLakeReplicationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     regions?: list<string>,
-     *     roleArn?: string
+     *     regions?: list<string>|null,
+     *     roleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

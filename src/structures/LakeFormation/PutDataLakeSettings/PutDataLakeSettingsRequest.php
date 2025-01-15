@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\LakeFormation\PutDataLakeSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property Shapes\DataLakeSettings $DataLakeSettings
  */
 class PutDataLakeSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     DataLakeSettings: Shapes\DataLakeSettings
      * } $args
      */

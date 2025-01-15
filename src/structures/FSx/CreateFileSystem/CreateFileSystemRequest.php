@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\FSx\CreateFileSystem;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property 'WINDOWS'|'LUSTRE'|'ONTAP'|'OPENZFS' $FileSystemType
- * @property int<0, 2147483647> $StorageCapacity
- * @property 'SSD'|'HDD'|'INTELLIGENT_TIERING' $StorageType
+ * @property int<0, 2147483647>|null $StorageCapacity
+ * @property 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null $StorageType
  * @property list<string> $SubnetIds
- * @property list<string> $SecurityGroupIds
- * @property list<Shapes\Tag> $Tags
- * @property string $KmsKeyId
- * @property Shapes\CreateFileSystemWindowsConfiguration $WindowsConfiguration
- * @property Shapes\CreateFileSystemLustreConfiguration $LustreConfiguration
- * @property Shapes\CreateFileSystemOntapConfiguration $OntapConfiguration
- * @property string $FileSystemTypeVersion
- * @property Shapes\CreateFileSystemOpenZFSConfiguration $OpenZFSConfiguration
+ * @property list<string>|null $SecurityGroupIds
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $KmsKeyId
+ * @property Shapes\CreateFileSystemWindowsConfiguration|null $WindowsConfiguration
+ * @property Shapes\CreateFileSystemLustreConfiguration|null $LustreConfiguration
+ * @property Shapes\CreateFileSystemOntapConfiguration|null $OntapConfiguration
+ * @property string|null $FileSystemTypeVersion
+ * @property Shapes\CreateFileSystemOpenZFSConfiguration|null $OpenZFSConfiguration
  */
 class CreateFileSystemRequest extends Request
 {
     /**
      * @param array{
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     FileSystemType: 'WINDOWS'|'LUSTRE'|'ONTAP'|'OPENZFS',
-     *     StorageCapacity?: int<0, 2147483647>,
-     *     StorageType?: 'SSD'|'HDD'|'INTELLIGENT_TIERING',
+     *     StorageCapacity?: int<0, 2147483647>|null,
+     *     StorageType?: 'SSD'|'HDD'|'INTELLIGENT_TIERING'|null,
      *     SubnetIds: list<string>,
-     *     SecurityGroupIds?: list<string>,
-     *     Tags?: list<Shapes\Tag>,
-     *     KmsKeyId?: string,
-     *     WindowsConfiguration?: Shapes\CreateFileSystemWindowsConfiguration,
-     *     LustreConfiguration?: Shapes\CreateFileSystemLustreConfiguration,
-     *     OntapConfiguration?: Shapes\CreateFileSystemOntapConfiguration,
-     *     FileSystemTypeVersion?: string,
-     *     OpenZFSConfiguration?: Shapes\CreateFileSystemOpenZFSConfiguration
+     *     SecurityGroupIds?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     KmsKeyId?: string|null,
+     *     WindowsConfiguration?: Shapes\CreateFileSystemWindowsConfiguration|null,
+     *     LustreConfiguration?: Shapes\CreateFileSystemLustreConfiguration|null,
+     *     OntapConfiguration?: Shapes\CreateFileSystemOntapConfiguration|null,
+     *     FileSystemTypeVersion?: string|null,
+     *     OpenZFSConfiguration?: Shapes\CreateFileSystemOpenZFSConfiguration|null
      * } $args
      */
     public function __construct(array $args)

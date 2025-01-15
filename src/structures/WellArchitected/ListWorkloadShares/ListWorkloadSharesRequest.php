@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $WorkloadId
- * @property string $SharedWithPrefix
- * @property string $NextToken
- * @property int<1, 50> $MaxResults
- * @property 'ACCEPTED'|'REJECTED'|'PENDING'|'REVOKED'|'EXPIRED'|'ASSOCIATING'|'ASSOCIATED'|'FAILED' $Status
+ * @property string|null $SharedWithPrefix
+ * @property string|null $NextToken
+ * @property int<1, 50>|null $MaxResults
+ * @property 'ACCEPTED'|'REJECTED'|'PENDING'|'REVOKED'|'EXPIRED'|'ASSOCIATING'|'ASSOCIATED'|'FAILED'|null $Status
  */
 class ListWorkloadSharesRequest extends Request
 {
     /**
      * @param array{
      *     WorkloadId: string,
-     *     SharedWithPrefix?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 50>,
-     *     Status?: 'ACCEPTED'|'REJECTED'|'PENDING'|'REVOKED'|'EXPIRED'|'ASSOCIATING'|'ASSOCIATED'|'FAILED'
+     *     SharedWithPrefix?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     Status?: 'ACCEPTED'|'REJECTED'|'PENDING'|'REVOKED'|'EXPIRED'|'ASSOCIATING'|'ASSOCIATED'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args)

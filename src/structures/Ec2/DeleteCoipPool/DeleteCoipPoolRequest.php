@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CoipPoolId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DeleteCoipPoolRequest extends Request
 {
     /**
      * @param array{
      *     CoipPoolId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

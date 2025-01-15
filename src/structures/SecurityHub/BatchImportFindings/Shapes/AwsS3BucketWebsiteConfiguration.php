@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ErrorDocument
- * @property string $IndexDocumentSuffix
- * @property AwsS3BucketWebsiteConfigurationRedirectTo $RedirectAllRequestsTo
- * @property list<AwsS3BucketWebsiteConfigurationRoutingRule> $RoutingRules
+ * @property string|null $ErrorDocument
+ * @property string|null $IndexDocumentSuffix
+ * @property AwsS3BucketWebsiteConfigurationRedirectTo|null $RedirectAllRequestsTo
+ * @property list<AwsS3BucketWebsiteConfigurationRoutingRule>|null $RoutingRules
  */
 class AwsS3BucketWebsiteConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ErrorDocument?: string,
-     *     IndexDocumentSuffix?: string,
-     *     RedirectAllRequestsTo?: AwsS3BucketWebsiteConfigurationRedirectTo,
-     *     RoutingRules?: list<AwsS3BucketWebsiteConfigurationRoutingRule>
+     *     ErrorDocument?: string|null,
+     *     IndexDocumentSuffix?: string|null,
+     *     RedirectAllRequestsTo?: AwsS3BucketWebsiteConfigurationRedirectTo|null,
+     *     RoutingRules?: list<AwsS3BucketWebsiteConfigurationRoutingRule>|null
      * } $args
      */
     public function __construct(array $args = [])

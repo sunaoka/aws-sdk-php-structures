@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\UpdateRecipe;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $Name
- * @property list<Shapes\RecipeStep> $Steps
+ * @property list<Shapes\RecipeStep>|null $Steps
  */
 class UpdateRecipeRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     Name: string,
-     *     Steps?: list<Shapes\RecipeStep>
+     *     Steps?: list<Shapes\RecipeStep>|null
      * } $args
      */
     public function __construct(array $args)

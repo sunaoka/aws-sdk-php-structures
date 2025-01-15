@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Event
- * @property string $Description
+ * @property string|null $Description
  */
 class Subscription extends Shape
 {
     /**
      * @param array{
      *     Event: string,
-     *     Description?: string
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,12 +10,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $RoleId
  * @property string $Arn
  * @property \Aws\Api\DateTimeResult $CreateDate
- * @property string $AssumeRolePolicyDocument
- * @property string $Description
- * @property int<3600, 43200> $MaxSessionDuration
- * @property AttachedPermissionsBoundary $PermissionsBoundary
- * @property list<Tag> $Tags
- * @property RoleLastUsed $RoleLastUsed
+ * @property string|null $AssumeRolePolicyDocument
+ * @property string|null $Description
+ * @property int<3600, 43200>|null $MaxSessionDuration
+ * @property AttachedPermissionsBoundary|null $PermissionsBoundary
+ * @property list<Tag>|null $Tags
+ * @property RoleLastUsed|null $RoleLastUsed
  */
 class Role extends Shape
 {
@@ -26,12 +26,12 @@ class Role extends Shape
      *     RoleId: string,
      *     Arn: string,
      *     CreateDate: \Aws\Api\DateTimeResult,
-     *     AssumeRolePolicyDocument?: string,
-     *     Description?: string,
-     *     MaxSessionDuration?: int<3600, 43200>,
-     *     PermissionsBoundary?: AttachedPermissionsBoundary,
-     *     Tags?: list<Tag>,
-     *     RoleLastUsed?: RoleLastUsed
+     *     AssumeRolePolicyDocument?: string|null,
+     *     Description?: string|null,
+     *     MaxSessionDuration?: int<3600, 43200>|null,
+     *     PermissionsBoundary?: AttachedPermissionsBoundary|null,
+     *     Tags?: list<Tag>|null,
+     *     RoleLastUsed?: RoleLastUsed|null
      * } $args
      */
     public function __construct(array $args)

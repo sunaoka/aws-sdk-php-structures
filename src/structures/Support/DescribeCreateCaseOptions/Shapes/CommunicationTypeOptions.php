@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Support\DescribeCreateCaseOptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $type
- * @property list<SupportedHour> $supportedHours
- * @property list<DateInterval> $datesWithoutSupport
+ * @property string|null $type
+ * @property list<SupportedHour>|null $supportedHours
+ * @property list<DateInterval>|null $datesWithoutSupport
  */
 class CommunicationTypeOptions extends Shape
 {
     /**
      * @param array{
-     *     type?: string,
-     *     supportedHours?: list<SupportedHour>,
-     *     datesWithoutSupport?: list<DateInterval>
+     *     type?: string|null,
+     *     supportedHours?: list<SupportedHour>|null,
+     *     datesWithoutSupport?: list<DateInterval>|null
      * } $args
      */
     public function __construct(array $args = [])

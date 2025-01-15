@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProductAsAdmin;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
- * @property string $Id
- * @property string $Name
- * @property string $SourcePortfolioId
+ * @property string|null $AcceptLanguage
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $SourcePortfolioId
  */
 class DescribeProductAsAdminRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
-     *     Id?: string,
-     *     Name?: string,
-     *     SourcePortfolioId?: string
+     *     AcceptLanguage?: string|null,
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     SourcePortfolioId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

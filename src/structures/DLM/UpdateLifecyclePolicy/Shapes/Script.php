@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\DLM\UpdateLifecyclePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<'PRE'|'POST'> $Stages
- * @property 'AWS_SYSTEMS_MANAGER' $ExecutionHandlerService
+ * @property list<'PRE'|'POST'>|null $Stages
+ * @property 'AWS_SYSTEMS_MANAGER'|null $ExecutionHandlerService
  * @property string $ExecutionHandler
- * @property bool $ExecuteOperationOnScriptFailure
- * @property int<10, 120> $ExecutionTimeout
- * @property int<0, 3> $MaximumRetryCount
+ * @property bool|null $ExecuteOperationOnScriptFailure
+ * @property int<10, 120>|null $ExecutionTimeout
+ * @property int<0, 3>|null $MaximumRetryCount
  */
 class Script extends Shape
 {
     /**
      * @param array{
-     *     Stages?: list<'PRE'|'POST'>,
-     *     ExecutionHandlerService?: 'AWS_SYSTEMS_MANAGER',
+     *     Stages?: list<'PRE'|'POST'>|null,
+     *     ExecutionHandlerService?: 'AWS_SYSTEMS_MANAGER'|null,
      *     ExecutionHandler: string,
-     *     ExecuteOperationOnScriptFailure?: bool,
-     *     ExecutionTimeout?: int<10, 120>,
-     *     MaximumRetryCount?: int<0, 3>
+     *     ExecuteOperationOnScriptFailure?: bool|null,
+     *     ExecutionTimeout?: int<10, 120>|null,
+     *     MaximumRetryCount?: int<0, 3>|null
      * } $args
      */
     public function __construct(array $args)

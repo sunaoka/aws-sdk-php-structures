@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property int<1, 999999999> $CurrentApplicationVersionId
+ * @property int<1, 999999999>|null $CurrentApplicationVersionId
  * @property string $VpcConfigurationId
- * @property string $ConditionalToken
+ * @property string|null $ConditionalToken
  */
 class DeleteApplicationVpcConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationName: string,
-     *     CurrentApplicationVersionId?: int<1, 999999999>,
+     *     CurrentApplicationVersionId?: int<1, 999999999>|null,
      *     VpcConfigurationId: string,
-     *     ConditionalToken?: string
+     *     ConditionalToken?: string|null
      * } $args
      */
     public function __construct(array $args)

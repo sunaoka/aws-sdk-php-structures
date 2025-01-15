@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateUserProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'sagemaker_distribution' $SageMakerImageName
- * @property list<string> $VersionAliases
+ * @property 'sagemaker_distribution'|null $SageMakerImageName
+ * @property list<string>|null $VersionAliases
  */
 class HiddenSageMakerImage extends Shape
 {
     /**
      * @param array{
-     *     SageMakerImageName?: 'sagemaker_distribution',
-     *     VersionAliases?: list<string>
+     *     SageMakerImageName?: 'sagemaker_distribution'|null,
+     *     VersionAliases?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

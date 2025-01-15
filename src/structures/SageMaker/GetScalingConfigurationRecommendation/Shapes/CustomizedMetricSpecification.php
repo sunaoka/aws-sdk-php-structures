@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\GetScalingConfigurationRecommendation
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MetricName
- * @property string $Namespace
- * @property 'Average'|'Minimum'|'Maximum'|'SampleCount'|'Sum' $Statistic
+ * @property string|null $MetricName
+ * @property string|null $Namespace
+ * @property 'Average'|'Minimum'|'Maximum'|'SampleCount'|'Sum'|null $Statistic
  */
 class CustomizedMetricSpecification extends Shape
 {
     /**
      * @param array{
-     *     MetricName?: string,
-     *     Namespace?: string,
-     *     Statistic?: 'Average'|'Minimum'|'Maximum'|'SampleCount'|'Sum'
+     *     MetricName?: string|null,
+     *     Namespace?: string|null,
+     *     Statistic?: 'Average'|'Minimum'|'Maximum'|'SampleCount'|'Sum'|null
      * } $args
      */
     public function __construct(array $args = [])

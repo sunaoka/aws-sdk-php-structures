@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\ExportClientVpnClientCertificateRevocationL
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $CertificateRevocationList
- * @property Shapes\ClientCertificateRevocationListStatus $Status
+ * @property string|null $CertificateRevocationList
+ * @property Shapes\ClientCertificateRevocationListStatus|null $Status
  */
 class ExportClientVpnClientCertificateRevocationListResponse extends Response
 {

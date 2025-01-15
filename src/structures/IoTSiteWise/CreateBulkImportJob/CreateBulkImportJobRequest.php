@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property list<Shapes\File> $files
  * @property Shapes\ErrorReportLocation $errorReportLocation
  * @property Shapes\JobConfiguration $jobConfiguration
- * @property bool $adaptiveIngestion
- * @property bool $deleteFilesAfterImport
+ * @property bool|null $adaptiveIngestion
+ * @property bool|null $deleteFilesAfterImport
  */
 class CreateBulkImportJobRequest extends Request
 {
@@ -22,8 +22,8 @@ class CreateBulkImportJobRequest extends Request
      *     files: list<Shapes\File>,
      *     errorReportLocation: Shapes\ErrorReportLocation,
      *     jobConfiguration: Shapes\JobConfiguration,
-     *     adaptiveIngestion?: bool,
-     *     deleteFilesAfterImport?: bool
+     *     adaptiveIngestion?: bool|null,
+     *     deleteFilesAfterImport?: bool|null
      * } $args
      */
     public function __construct(array $args)

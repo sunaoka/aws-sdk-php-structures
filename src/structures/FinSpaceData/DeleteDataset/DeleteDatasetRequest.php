@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\DeleteDataset;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $datasetId
  */
 class DeleteDatasetRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     datasetId: string
      * } $args
      */

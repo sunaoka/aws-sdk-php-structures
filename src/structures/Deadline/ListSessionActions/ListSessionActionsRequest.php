@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $farmId
  * @property string $queueId
  * @property string $jobId
- * @property string $sessionId
- * @property string $taskId
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $sessionId
+ * @property string|null $taskId
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListSessionActionsRequest extends Request
 {
@@ -20,10 +20,10 @@ class ListSessionActionsRequest extends Request
      *     farmId: string,
      *     queueId: string,
      *     jobId: string,
-     *     sessionId?: string,
-     *     taskId?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     sessionId?: string|null,
+     *     taskId?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

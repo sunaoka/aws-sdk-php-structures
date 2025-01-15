@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $URI
- * @property string $AccountId
+ * @property string|null $AccountId
  */
 class Resource extends Shape
 {
     /**
      * @param array{
      *     URI: string,
-     *     AccountId?: string
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

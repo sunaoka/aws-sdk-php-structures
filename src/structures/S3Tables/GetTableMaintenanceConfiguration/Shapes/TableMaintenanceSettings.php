@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Tables\GetTableMaintenanceConfiguration\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IcebergCompactionSettings $icebergCompaction
- * @property IcebergSnapshotManagementSettings $icebergSnapshotManagement
+ * @property IcebergCompactionSettings|null $icebergCompaction
+ * @property IcebergSnapshotManagementSettings|null $icebergSnapshotManagement
  */
 class TableMaintenanceSettings extends Shape
 {
     /**
      * @param array{
-     *     icebergCompaction?: IcebergCompactionSettings,
-     *     icebergSnapshotManagement?: IcebergSnapshotManagementSettings
+     *     icebergCompaction?: IcebergCompactionSettings|null,
+     *     icebergSnapshotManagement?: IcebergSnapshotManagementSettings|null
      * } $args
      */
     public function __construct(array $args = [])

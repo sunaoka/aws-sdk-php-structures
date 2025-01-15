@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<CuratedQuery> $curatedQueries
- * @property list<QueryGenerationTable> $tables
+ * @property list<CuratedQuery>|null $curatedQueries
+ * @property list<QueryGenerationTable>|null $tables
  */
 class QueryGenerationContext extends Shape
 {
     /**
      * @param array{
-     *     curatedQueries?: list<CuratedQuery>,
-     *     tables?: list<QueryGenerationTable>
+     *     curatedQueries?: list<CuratedQuery>|null,
+     *     tables?: list<QueryGenerationTable>|null
      * } $args
      */
     public function __construct(array $args = [])

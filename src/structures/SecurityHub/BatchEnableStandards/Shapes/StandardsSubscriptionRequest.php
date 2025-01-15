@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $StandardsArn
- * @property array<string, string> $StandardsInput
+ * @property array<string, string>|null $StandardsInput
  */
 class StandardsSubscriptionRequest extends Shape
 {
     /**
      * @param array{
      *     StandardsArn: string,
-     *     StandardsInput?: array<string, string>
+     *     StandardsInput?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

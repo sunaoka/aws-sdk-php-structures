@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ForecastService\ListPredictors\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property 'Active'|'Deleted' $State
+ * @property string|null $Arn
+ * @property 'Active'|'Deleted'|null $State
  */
 class ReferencePredictorSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     State?: 'Active'|'Deleted'
+     *     Arn?: string|null,
+     *     State?: 'Active'|'Deleted'|null
      * } $args
      */
     public function __construct(array $args = [])

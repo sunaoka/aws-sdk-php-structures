@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $applicationId
- * @property string $applicationName
- * @property string $applicationDescription
- * @property string $clientToken
+ * @property string|null $applicationName
+ * @property string|null $applicationDescription
+ * @property string|null $clientToken
  */
 class UpdateApplicationRequest extends Request
 {
     /**
      * @param array{
      *     applicationId: string,
-     *     applicationName?: string,
-     *     applicationDescription?: string,
-     *     clientToken?: string
+     *     applicationName?: string|null,
+     *     applicationDescription?: string|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubOrchestrator\CreateWorkflowStep\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $linux
- * @property string $windows
+ * @property string|null $linux
+ * @property string|null $windows
  */
 class PlatformCommand extends Shape
 {
     /**
      * @param array{
-     *     linux?: string,
-     *     windows?: string
+     *     linux?: string|null,
+     *     windows?: string|null
      * } $args
      */
     public function __construct(array $args = [])

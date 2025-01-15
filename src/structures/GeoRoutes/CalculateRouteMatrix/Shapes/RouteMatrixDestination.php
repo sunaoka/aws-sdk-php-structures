@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRouteMatrix\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RouteMatrixDestinationOptions $Options
+ * @property RouteMatrixDestinationOptions|null $Options
  * @property list<double> $Position
  */
 class RouteMatrixDestination extends Shape
 {
     /**
      * @param array{
-     *     Options?: RouteMatrixDestinationOptions,
+     *     Options?: RouteMatrixDestinationOptions|null,
      *     Position: list<double>
      * } $args
      */

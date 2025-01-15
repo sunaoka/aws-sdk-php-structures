@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Neptunedata\CreateMLEndpoint;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $id
- * @property string $mlModelTrainingJobId
- * @property string $mlModelTransformJobId
- * @property bool $update
- * @property string $neptuneIamRoleArn
- * @property string $modelName
- * @property string $instanceType
- * @property int $instanceCount
- * @property string $volumeEncryptionKMSKey
+ * @property string|null $id
+ * @property string|null $mlModelTrainingJobId
+ * @property string|null $mlModelTransformJobId
+ * @property bool|null $update
+ * @property string|null $neptuneIamRoleArn
+ * @property string|null $modelName
+ * @property string|null $instanceType
+ * @property int|null $instanceCount
+ * @property string|null $volumeEncryptionKMSKey
  */
 class CreateMLEndpointRequest extends Request
 {
     /**
      * @param array{
-     *     id?: string,
-     *     mlModelTrainingJobId?: string,
-     *     mlModelTransformJobId?: string,
-     *     update?: bool,
-     *     neptuneIamRoleArn?: string,
-     *     modelName?: string,
-     *     instanceType?: string,
-     *     instanceCount?: int,
-     *     volumeEncryptionKMSKey?: string
+     *     id?: string|null,
+     *     mlModelTrainingJobId?: string|null,
+     *     mlModelTransformJobId?: string|null,
+     *     update?: bool|null,
+     *     neptuneIamRoleArn?: string|null,
+     *     modelName?: string|null,
+     *     instanceType?: string|null,
+     *     instanceCount?: int|null,
+     *     volumeEncryptionKMSKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

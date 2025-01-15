@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudWatch\PutAnomalyDetector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<MetricDataQuery> $MetricDataQueries
+ * @property list<MetricDataQuery>|null $MetricDataQueries
  */
 class MetricMathAnomalyDetector extends Shape
 {
     /**
-     * @param array{MetricDataQueries?: list<MetricDataQuery>} $args
+     * @param array{MetricDataQueries?: list<MetricDataQuery>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\B2bi\CreatePartnership\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $senderIdQualifier
- * @property string $senderId
- * @property string $receiverIdQualifier
- * @property string $receiverId
- * @property string $repetitionSeparator
- * @property string $acknowledgmentRequestedCode
- * @property string $usageIndicatorCode
+ * @property string|null $senderIdQualifier
+ * @property string|null $senderId
+ * @property string|null $receiverIdQualifier
+ * @property string|null $receiverId
+ * @property string|null $repetitionSeparator
+ * @property string|null $acknowledgmentRequestedCode
+ * @property string|null $usageIndicatorCode
  */
 class X12InterchangeControlHeaders extends Shape
 {
     /**
      * @param array{
-     *     senderIdQualifier?: string,
-     *     senderId?: string,
-     *     receiverIdQualifier?: string,
-     *     receiverId?: string,
-     *     repetitionSeparator?: string,
-     *     acknowledgmentRequestedCode?: string,
-     *     usageIndicatorCode?: string
+     *     senderIdQualifier?: string|null,
+     *     senderId?: string|null,
+     *     receiverIdQualifier?: string|null,
+     *     receiverId?: string|null,
+     *     repetitionSeparator?: string|null,
+     *     acknowledgmentRequestedCode?: string|null,
+     *     usageIndicatorCode?: string|null
      * } $args
      */
     public function __construct(array $args = [])

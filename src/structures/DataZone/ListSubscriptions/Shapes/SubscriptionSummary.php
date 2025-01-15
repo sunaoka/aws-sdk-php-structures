@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $createdBy
  * @property string $domainId
  * @property string $id
- * @property bool $retainPermissions
+ * @property bool|null $retainPermissions
  * @property 'APPROVED'|'REVOKED'|'CANCELLED' $status
  * @property SubscribedListing $subscribedListing
  * @property SubscribedPrincipal $subscribedPrincipal
- * @property string $subscriptionRequestId
+ * @property string|null $subscriptionRequestId
  * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
+ * @property string|null $updatedBy
  */
 class SubscriptionSummary extends Shape
 {
@@ -25,13 +25,13 @@ class SubscriptionSummary extends Shape
      *     createdBy: string,
      *     domainId: string,
      *     id: string,
-     *     retainPermissions?: bool,
+     *     retainPermissions?: bool|null,
      *     status: 'APPROVED'|'REVOKED'|'CANCELLED',
      *     subscribedListing: SubscribedListing,
      *     subscribedPrincipal: SubscribedPrincipal,
-     *     subscriptionRequestId?: string,
+     *     subscriptionRequestId?: string|null,
      *     updatedAt: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string
+     *     updatedBy?: string|null
      * } $args
      */
     public function __construct(array $args)

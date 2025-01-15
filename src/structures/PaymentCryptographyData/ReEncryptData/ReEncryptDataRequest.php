@@ -10,8 +10,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $CipherText
  * @property Shapes\ReEncryptionAttributes $IncomingEncryptionAttributes
  * @property Shapes\ReEncryptionAttributes $OutgoingEncryptionAttributes
- * @property Shapes\WrappedKey $IncomingWrappedKey
- * @property Shapes\WrappedKey $OutgoingWrappedKey
+ * @property Shapes\WrappedKey|null $IncomingWrappedKey
+ * @property Shapes\WrappedKey|null $OutgoingWrappedKey
  */
 class ReEncryptDataRequest extends Request
 {
@@ -22,8 +22,8 @@ class ReEncryptDataRequest extends Request
      *     CipherText: string,
      *     IncomingEncryptionAttributes: Shapes\ReEncryptionAttributes,
      *     OutgoingEncryptionAttributes: Shapes\ReEncryptionAttributes,
-     *     IncomingWrappedKey?: Shapes\WrappedKey,
-     *     OutgoingWrappedKey?: Shapes\WrappedKey
+     *     IncomingWrappedKey?: Shapes\WrappedKey|null,
+     *     OutgoingWrappedKey?: Shapes\WrappedKey|null
      * } $args
      */
     public function __construct(array $args)

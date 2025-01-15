@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $scalingGroupName
  * @property string $hostType
  * @property string $availabilityZoneId
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateKxScalingGroupRequest extends Request
 {
@@ -21,7 +21,7 @@ class CreateKxScalingGroupRequest extends Request
      *     scalingGroupName: string,
      *     hostType: string,
      *     availabilityZoneId: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

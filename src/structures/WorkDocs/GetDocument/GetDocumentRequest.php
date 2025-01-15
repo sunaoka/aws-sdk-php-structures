@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WorkDocs\GetDocument;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $DocumentId
- * @property bool $IncludeCustomMetadata
+ * @property bool|null $IncludeCustomMetadata
  */
 class GetDocumentRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     DocumentId: string,
-     *     IncludeCustomMetadata?: bool
+     *     IncludeCustomMetadata?: bool|null
      * } $args
      */
     public function __construct(array $args)

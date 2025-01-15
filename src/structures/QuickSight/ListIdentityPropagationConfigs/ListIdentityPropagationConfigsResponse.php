@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListIdentityPropagationConfigs;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AuthorizedTargetsByService> $Services
- * @property string $NextToken
- * @property int $Status
- * @property string $RequestId
+ * @property list<Shapes\AuthorizedTargetsByService>|null $Services
+ * @property string|null $NextToken
+ * @property int|null $Status
+ * @property string|null $RequestId
  */
 class ListIdentityPropagationConfigsResponse extends Response
 {

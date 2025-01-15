@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\UpdateMediaInsightsPipel
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Disabled
+ * @property bool|null $Disabled
  */
 class VoiceEnhancementSinkConfiguration extends Shape
 {
     /**
-     * @param array{Disabled?: bool} $args
+     * @param array{Disabled?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GuardDuty\UpdatePublishingDestination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DestinationArn
- * @property string $KmsKeyArn
+ * @property string|null $DestinationArn
+ * @property string|null $KmsKeyArn
  */
 class DestinationProperties extends Shape
 {
     /**
      * @param array{
-     *     DestinationArn?: string,
-     *     KmsKeyArn?: string
+     *     DestinationArn?: string|null,
+     *     KmsKeyArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

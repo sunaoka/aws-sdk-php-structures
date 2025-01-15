@@ -5,61 +5,61 @@ namespace Sunaoka\Aws\Structures\StorageGateway\DescribeNFSFileShares\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property NFSFileShareDefaults $NFSFileShareDefaults
- * @property string $FileShareARN
- * @property string $FileShareId
- * @property string $FileShareStatus
- * @property string $GatewayARN
- * @property 'SseS3'|'SseKms'|'DsseKms' $EncryptionType
- * @property bool $KMSEncrypted
- * @property string $KMSKey
- * @property string $Path
- * @property string $Role
- * @property string $LocationARN
- * @property string $DefaultStorageClass
- * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'bucket-owner-read'|'bucket-owner-full-control'|'aws-exec-read' $ObjectACL
- * @property list<string> $ClientList
- * @property string $Squash
- * @property bool $ReadOnly
- * @property bool $GuessMIMETypeEnabled
- * @property bool $RequesterPays
- * @property list<Tag> $Tags
- * @property string $FileShareName
- * @property CacheAttributes $CacheAttributes
- * @property string $NotificationPolicy
- * @property string $VPCEndpointDNSName
- * @property string $BucketRegion
- * @property string $AuditDestinationARN
+ * @property NFSFileShareDefaults|null $NFSFileShareDefaults
+ * @property string|null $FileShareARN
+ * @property string|null $FileShareId
+ * @property string|null $FileShareStatus
+ * @property string|null $GatewayARN
+ * @property 'SseS3'|'SseKms'|'DsseKms'|null $EncryptionType
+ * @property bool|null $KMSEncrypted
+ * @property string|null $KMSKey
+ * @property string|null $Path
+ * @property string|null $Role
+ * @property string|null $LocationARN
+ * @property string|null $DefaultStorageClass
+ * @property 'private'|'public-read'|'public-read-write'|'authenticated-read'|'bucket-owner-read'|'bucket-owner-full-control'|'aws-exec-read'|null $ObjectACL
+ * @property list<string>|null $ClientList
+ * @property string|null $Squash
+ * @property bool|null $ReadOnly
+ * @property bool|null $GuessMIMETypeEnabled
+ * @property bool|null $RequesterPays
+ * @property list<Tag>|null $Tags
+ * @property string|null $FileShareName
+ * @property CacheAttributes|null $CacheAttributes
+ * @property string|null $NotificationPolicy
+ * @property string|null $VPCEndpointDNSName
+ * @property string|null $BucketRegion
+ * @property string|null $AuditDestinationARN
  */
 class NFSFileShareInfo extends Shape
 {
     /**
      * @param array{
-     *     NFSFileShareDefaults?: NFSFileShareDefaults,
-     *     FileShareARN?: string,
-     *     FileShareId?: string,
-     *     FileShareStatus?: string,
-     *     GatewayARN?: string,
-     *     EncryptionType?: 'SseS3'|'SseKms'|'DsseKms',
-     *     KMSEncrypted?: bool,
-     *     KMSKey?: string,
-     *     Path?: string,
-     *     Role?: string,
-     *     LocationARN?: string,
-     *     DefaultStorageClass?: string,
-     *     ObjectACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'bucket-owner-read'|'bucket-owner-full-control'|'aws-exec-read',
-     *     ClientList?: list<string>,
-     *     Squash?: string,
-     *     ReadOnly?: bool,
-     *     GuessMIMETypeEnabled?: bool,
-     *     RequesterPays?: bool,
-     *     Tags?: list<Tag>,
-     *     FileShareName?: string,
-     *     CacheAttributes?: CacheAttributes,
-     *     NotificationPolicy?: string,
-     *     VPCEndpointDNSName?: string,
-     *     BucketRegion?: string,
-     *     AuditDestinationARN?: string
+     *     NFSFileShareDefaults?: NFSFileShareDefaults|null,
+     *     FileShareARN?: string|null,
+     *     FileShareId?: string|null,
+     *     FileShareStatus?: string|null,
+     *     GatewayARN?: string|null,
+     *     EncryptionType?: 'SseS3'|'SseKms'|'DsseKms'|null,
+     *     KMSEncrypted?: bool|null,
+     *     KMSKey?: string|null,
+     *     Path?: string|null,
+     *     Role?: string|null,
+     *     LocationARN?: string|null,
+     *     DefaultStorageClass?: string|null,
+     *     ObjectACL?: 'private'|'public-read'|'public-read-write'|'authenticated-read'|'bucket-owner-read'|'bucket-owner-full-control'|'aws-exec-read'|null,
+     *     ClientList?: list<string>|null,
+     *     Squash?: string|null,
+     *     ReadOnly?: bool|null,
+     *     GuessMIMETypeEnabled?: bool|null,
+     *     RequesterPays?: bool|null,
+     *     Tags?: list<Tag>|null,
+     *     FileShareName?: string|null,
+     *     CacheAttributes?: CacheAttributes|null,
+     *     NotificationPolicy?: string|null,
+     *     VPCEndpointDNSName?: string|null,
+     *     BucketRegion?: string|null,
+     *     AuditDestinationARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

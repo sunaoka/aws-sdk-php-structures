@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Omics\UpdateVariantStore\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $referenceArn
+ * @property string|null $referenceArn
  */
 class ReferenceItem extends Shape
 {
     /**
-     * @param array{referenceArn?: string} $args
+     * @param array{referenceArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

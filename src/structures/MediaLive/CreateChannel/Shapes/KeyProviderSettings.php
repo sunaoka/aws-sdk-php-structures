@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StaticKeySettings $StaticKeySettings
+ * @property StaticKeySettings|null $StaticKeySettings
  */
 class KeyProviderSettings extends Shape
 {
     /**
-     * @param array{StaticKeySettings?: StaticKeySettings} $args
+     * @param array{StaticKeySettings?: StaticKeySettings|null} $args
      */
     public function __construct(array $args = [])
     {

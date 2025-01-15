@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteCoipCidr\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Cidr
- * @property string $CoipPoolId
- * @property string $LocalGatewayRouteTableId
+ * @property string|null $Cidr
+ * @property string|null $CoipPoolId
+ * @property string|null $LocalGatewayRouteTableId
  */
 class CoipCidr extends Shape
 {
     /**
      * @param array{
-     *     Cidr?: string,
-     *     CoipPoolId?: string,
-     *     LocalGatewayRouteTableId?: string
+     *     Cidr?: string|null,
+     *     CoipPoolId?: string|null,
+     *     LocalGatewayRouteTableId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

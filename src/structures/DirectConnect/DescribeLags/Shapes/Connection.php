@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\DirectConnect\DescribeLags\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ownerAccount
- * @property string $connectionId
- * @property string $connectionName
- * @property 'ordering'|'requested'|'pending'|'available'|'down'|'deleting'|'deleted'|'rejected'|'unknown' $connectionState
- * @property string $region
- * @property string $location
- * @property string $bandwidth
- * @property int $vlan
- * @property string $partnerName
- * @property \Aws\Api\DateTimeResult $loaIssueTime
- * @property string $lagId
- * @property string $awsDevice
- * @property bool $jumboFrameCapable
- * @property string $awsDeviceV2
- * @property string $awsLogicalDeviceId
- * @property 'unknown'|'yes'|'no' $hasLogicalRedundancy
- * @property list<Tag> $tags
- * @property string $providerName
- * @property bool $macSecCapable
- * @property string $portEncryptionStatus
- * @property string $encryptionMode
- * @property list<MacSecKey> $macSecKeys
+ * @property string|null $ownerAccount
+ * @property string|null $connectionId
+ * @property string|null $connectionName
+ * @property 'ordering'|'requested'|'pending'|'available'|'down'|'deleting'|'deleted'|'rejected'|'unknown'|null $connectionState
+ * @property string|null $region
+ * @property string|null $location
+ * @property string|null $bandwidth
+ * @property int|null $vlan
+ * @property string|null $partnerName
+ * @property \Aws\Api\DateTimeResult|null $loaIssueTime
+ * @property string|null $lagId
+ * @property string|null $awsDevice
+ * @property bool|null $jumboFrameCapable
+ * @property string|null $awsDeviceV2
+ * @property string|null $awsLogicalDeviceId
+ * @property 'unknown'|'yes'|'no'|null $hasLogicalRedundancy
+ * @property list<Tag>|null $tags
+ * @property string|null $providerName
+ * @property bool|null $macSecCapable
+ * @property string|null $portEncryptionStatus
+ * @property string|null $encryptionMode
+ * @property list<MacSecKey>|null $macSecKeys
  */
 class Connection extends Shape
 {
     /**
      * @param array{
-     *     ownerAccount?: string,
-     *     connectionId?: string,
-     *     connectionName?: string,
-     *     connectionState?: 'ordering'|'requested'|'pending'|'available'|'down'|'deleting'|'deleted'|'rejected'|'unknown',
-     *     region?: string,
-     *     location?: string,
-     *     bandwidth?: string,
-     *     vlan?: int,
-     *     partnerName?: string,
-     *     loaIssueTime?: \Aws\Api\DateTimeResult,
-     *     lagId?: string,
-     *     awsDevice?: string,
-     *     jumboFrameCapable?: bool,
-     *     awsDeviceV2?: string,
-     *     awsLogicalDeviceId?: string,
-     *     hasLogicalRedundancy?: 'unknown'|'yes'|'no',
-     *     tags?: list<Tag>,
-     *     providerName?: string,
-     *     macSecCapable?: bool,
-     *     portEncryptionStatus?: string,
-     *     encryptionMode?: string,
-     *     macSecKeys?: list<MacSecKey>
+     *     ownerAccount?: string|null,
+     *     connectionId?: string|null,
+     *     connectionName?: string|null,
+     *     connectionState?: 'ordering'|'requested'|'pending'|'available'|'down'|'deleting'|'deleted'|'rejected'|'unknown'|null,
+     *     region?: string|null,
+     *     location?: string|null,
+     *     bandwidth?: string|null,
+     *     vlan?: int|null,
+     *     partnerName?: string|null,
+     *     loaIssueTime?: \Aws\Api\DateTimeResult|null,
+     *     lagId?: string|null,
+     *     awsDevice?: string|null,
+     *     jumboFrameCapable?: bool|null,
+     *     awsDeviceV2?: string|null,
+     *     awsLogicalDeviceId?: string|null,
+     *     hasLogicalRedundancy?: 'unknown'|'yes'|'no'|null,
+     *     tags?: list<Tag>|null,
+     *     providerName?: string|null,
+     *     macSecCapable?: bool|null,
+     *     portEncryptionStatus?: string|null,
+     *     encryptionMode?: string|null,
+     *     macSecKeys?: list<MacSecKey>|null
      * } $args
      */
     public function __construct(array $args = [])

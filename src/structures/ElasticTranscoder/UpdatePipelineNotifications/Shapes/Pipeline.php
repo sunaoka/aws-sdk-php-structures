@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\UpdatePipelineNotifications\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
- * @property string $Name
- * @property string $Status
- * @property string $InputBucket
- * @property string $OutputBucket
- * @property string $Role
- * @property string $AwsKmsKeyArn
- * @property Notifications $Notifications
- * @property PipelineOutputConfig $ContentConfig
- * @property PipelineOutputConfig $ThumbnailConfig
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property string|null $Status
+ * @property string|null $InputBucket
+ * @property string|null $OutputBucket
+ * @property string|null $Role
+ * @property string|null $AwsKmsKeyArn
+ * @property Notifications|null $Notifications
+ * @property PipelineOutputConfig|null $ContentConfig
+ * @property PipelineOutputConfig|null $ThumbnailConfig
  */
 class Pipeline extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string,
-     *     Name?: string,
-     *     Status?: string,
-     *     InputBucket?: string,
-     *     OutputBucket?: string,
-     *     Role?: string,
-     *     AwsKmsKeyArn?: string,
-     *     Notifications?: Notifications,
-     *     ContentConfig?: PipelineOutputConfig,
-     *     ThumbnailConfig?: PipelineOutputConfig
+     *     Id?: string|null,
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     Status?: string|null,
+     *     InputBucket?: string|null,
+     *     OutputBucket?: string|null,
+     *     Role?: string|null,
+     *     AwsKmsKeyArn?: string|null,
+     *     Notifications?: Notifications|null,
+     *     ContentConfig?: PipelineOutputConfig|null,
+     *     ThumbnailConfig?: PipelineOutputConfig|null
      * } $args
      */
     public function __construct(array $args = [])

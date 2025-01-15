@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\TableSummary> $tables
- * @property string $continuationToken
+ * @property string|null $continuationToken
  */
 class ListTablesResponse extends Response
 {

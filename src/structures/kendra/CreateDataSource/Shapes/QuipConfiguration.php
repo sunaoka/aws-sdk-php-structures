@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Domain
  * @property string $SecretArn
- * @property bool $CrawlFileComments
- * @property bool $CrawlChatRooms
- * @property bool $CrawlAttachments
- * @property list<string> $FolderIds
- * @property list<DataSourceToIndexFieldMapping> $ThreadFieldMappings
- * @property list<DataSourceToIndexFieldMapping> $MessageFieldMappings
- * @property list<DataSourceToIndexFieldMapping> $AttachmentFieldMappings
- * @property list<string> $InclusionPatterns
- * @property list<string> $ExclusionPatterns
- * @property DataSourceVpcConfiguration $VpcConfiguration
+ * @property bool|null $CrawlFileComments
+ * @property bool|null $CrawlChatRooms
+ * @property bool|null $CrawlAttachments
+ * @property list<string>|null $FolderIds
+ * @property list<DataSourceToIndexFieldMapping>|null $ThreadFieldMappings
+ * @property list<DataSourceToIndexFieldMapping>|null $MessageFieldMappings
+ * @property list<DataSourceToIndexFieldMapping>|null $AttachmentFieldMappings
+ * @property list<string>|null $InclusionPatterns
+ * @property list<string>|null $ExclusionPatterns
+ * @property DataSourceVpcConfiguration|null $VpcConfiguration
  */
 class QuipConfiguration extends Shape
 {
@@ -24,16 +24,16 @@ class QuipConfiguration extends Shape
      * @param array{
      *     Domain: string,
      *     SecretArn: string,
-     *     CrawlFileComments?: bool,
-     *     CrawlChatRooms?: bool,
-     *     CrawlAttachments?: bool,
-     *     FolderIds?: list<string>,
-     *     ThreadFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     MessageFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     AttachmentFieldMappings?: list<DataSourceToIndexFieldMapping>,
-     *     InclusionPatterns?: list<string>,
-     *     ExclusionPatterns?: list<string>,
-     *     VpcConfiguration?: DataSourceVpcConfiguration
+     *     CrawlFileComments?: bool|null,
+     *     CrawlChatRooms?: bool|null,
+     *     CrawlAttachments?: bool|null,
+     *     FolderIds?: list<string>|null,
+     *     ThreadFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     MessageFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     AttachmentFieldMappings?: list<DataSourceToIndexFieldMapping>|null,
+     *     InclusionPatterns?: list<string>|null,
+     *     ExclusionPatterns?: list<string>|null,
+     *     VpcConfiguration?: DataSourceVpcConfiguration|null
      * } $args
      */
     public function __construct(array $args)

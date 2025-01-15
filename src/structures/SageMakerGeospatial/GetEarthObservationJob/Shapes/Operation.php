@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Equation
  * @property string $Name
- * @property 'INT32'|'FLOAT32'|'INT16'|'FLOAT64'|'UINT16' $OutputType
+ * @property 'INT32'|'FLOAT32'|'INT16'|'FLOAT64'|'UINT16'|null $OutputType
  */
 class Operation extends Shape
 {
@@ -15,7 +15,7 @@ class Operation extends Shape
      * @param array{
      *     Equation: string,
      *     Name: string,
-     *     OutputType?: 'INT32'|'FLOAT32'|'INT16'|'FLOAT64'|'UINT16'
+     *     OutputType?: 'INT32'|'FLOAT32'|'INT16'|'FLOAT64'|'UINT16'|null
      * } $args
      */
     public function __construct(array $args)

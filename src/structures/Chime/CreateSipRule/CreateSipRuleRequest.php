@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property 'ToPhoneNumber'|'RequestUriHostname' $TriggerType
  * @property string $TriggerValue
- * @property bool $Disabled
+ * @property bool|null $Disabled
  * @property list<Shapes\SipRuleTargetApplication> $TargetApplications
  */
 class CreateSipRuleRequest extends Request
@@ -18,7 +18,7 @@ class CreateSipRuleRequest extends Request
      *     Name: string,
      *     TriggerType: 'ToPhoneNumber'|'RequestUriHostname',
      *     TriggerValue: string,
-     *     Disabled?: bool,
+     *     Disabled?: bool|null,
      *     TargetApplications: list<Shapes\SipRuleTargetApplication>
      * } $args
      */

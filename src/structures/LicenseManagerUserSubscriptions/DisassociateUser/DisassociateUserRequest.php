@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\DisassociateUse
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Domain
- * @property Shapes\IdentityProvider $IdentityProvider
- * @property string $InstanceId
- * @property string $InstanceUserArn
- * @property string $Username
+ * @property string|null $Domain
+ * @property Shapes\IdentityProvider|null $IdentityProvider
+ * @property string|null $InstanceId
+ * @property string|null $InstanceUserArn
+ * @property string|null $Username
  */
 class DisassociateUserRequest extends Request
 {
     /**
      * @param array{
-     *     Domain?: string,
-     *     IdentityProvider?: Shapes\IdentityProvider,
-     *     InstanceId?: string,
-     *     InstanceUserArn?: string,
-     *     Username?: string
+     *     Domain?: string|null,
+     *     IdentityProvider?: Shapes\IdentityProvider|null,
+     *     InstanceId?: string|null,
+     *     InstanceUserArn?: string|null,
+     *     Username?: string|null
      * } $args
      */
     public function __construct(array $args = [])

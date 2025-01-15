@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\RoboMaker\DescribeSimulationJobBatch;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $arn
- * @property 'Pending'|'InProgress'|'Failed'|'Completed'|'Canceled'|'Canceling'|'Completing'|'TimingOut'|'TimedOut' $status
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $clientRequestToken
- * @property Shapes\BatchPolicy $batchPolicy
- * @property 'InternalServiceError' $failureCode
- * @property string $failureReason
- * @property list<Shapes\FailedCreateSimulationJobRequest> $failedRequests
- * @property list<Shapes\SimulationJobRequest> $pendingRequests
- * @property list<Shapes\SimulationJobSummary> $createdRequests
- * @property array<string, string> $tags
+ * @property string|null $arn
+ * @property 'Pending'|'InProgress'|'Failed'|'Completed'|'Canceled'|'Canceling'|'Completing'|'TimingOut'|'TimedOut'|null $status
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $clientRequestToken
+ * @property Shapes\BatchPolicy|null $batchPolicy
+ * @property 'InternalServiceError'|null $failureCode
+ * @property string|null $failureReason
+ * @property list<Shapes\FailedCreateSimulationJobRequest>|null $failedRequests
+ * @property list<Shapes\SimulationJobRequest>|null $pendingRequests
+ * @property list<Shapes\SimulationJobSummary>|null $createdRequests
+ * @property array<string, string>|null $tags
  */
 class DescribeSimulationJobBatchResponse extends Response
 {

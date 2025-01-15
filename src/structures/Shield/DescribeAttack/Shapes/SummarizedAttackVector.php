@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $VectorType
- * @property list<SummarizedCounter> $VectorCounters
+ * @property list<SummarizedCounter>|null $VectorCounters
  */
 class SummarizedAttackVector extends Shape
 {
     /**
      * @param array{
      *     VectorType: string,
-     *     VectorCounters?: list<SummarizedCounter>
+     *     VectorCounters?: list<SummarizedCounter>|null
      * } $args
      */
     public function __construct(array $args)

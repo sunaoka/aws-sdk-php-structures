@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\DeleteCollection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $id
  */
 class DeleteCollectionRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     id: string
      * } $args
      */

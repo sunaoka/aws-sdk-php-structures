@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeExportTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
- * @property string $ExportTaskId
- * @property ExportToS3Task $ExportToS3Task
- * @property InstanceExportDetails $InstanceExportDetails
- * @property 'active'|'cancelling'|'cancelled'|'completed' $State
- * @property string $StatusMessage
- * @property list<Tag> $Tags
+ * @property string|null $Description
+ * @property string|null $ExportTaskId
+ * @property ExportToS3Task|null $ExportToS3Task
+ * @property InstanceExportDetails|null $InstanceExportDetails
+ * @property 'active'|'cancelling'|'cancelled'|'completed'|null $State
+ * @property string|null $StatusMessage
+ * @property list<Tag>|null $Tags
  */
 class ExportTask extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     ExportTaskId?: string,
-     *     ExportToS3Task?: ExportToS3Task,
-     *     InstanceExportDetails?: InstanceExportDetails,
-     *     State?: 'active'|'cancelling'|'cancelled'|'completed',
-     *     StatusMessage?: string,
-     *     Tags?: list<Tag>
+     *     Description?: string|null,
+     *     ExportTaskId?: string|null,
+     *     ExportToS3Task?: ExportToS3Task|null,
+     *     InstanceExportDetails?: InstanceExportDetails|null,
+     *     State?: 'active'|'cancelling'|'cancelled'|'completed'|null,
+     *     StatusMessage?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

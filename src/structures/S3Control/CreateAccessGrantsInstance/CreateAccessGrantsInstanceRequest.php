@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AccountId
- * @property string $IdentityCenterArn
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $IdentityCenterArn
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateAccessGrantsInstanceRequest extends Request
 {
     /**
      * @param array{
      *     AccountId: string,
-     *     IdentityCenterArn?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     IdentityCenterArn?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

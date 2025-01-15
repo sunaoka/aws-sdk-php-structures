@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property bool $IncludeBlueprint
- * @property bool $IncludeParameterSpec
+ * @property bool|null $IncludeBlueprint
+ * @property bool|null $IncludeParameterSpec
  */
 class GetBlueprintRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     IncludeBlueprint?: bool,
-     *     IncludeParameterSpec?: bool
+     *     IncludeBlueprint?: bool|null,
+     *     IncludeParameterSpec?: bool|null
      * } $args
      */
     public function __construct(array $args)

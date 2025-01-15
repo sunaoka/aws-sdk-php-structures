@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $JobId
- * @property int<1, max> $MaxResults
- * @property string $NextToken
- * @property 'NAME'|'TIMESTAMP' $SortBy
- * @property 'TIMESTAMPS'|'SEGMENTS' $AggregateBy
+ * @property int<1, max>|null $MaxResults
+ * @property string|null $NextToken
+ * @property 'NAME'|'TIMESTAMP'|null $SortBy
+ * @property 'TIMESTAMPS'|'SEGMENTS'|null $AggregateBy
  */
 class GetLabelDetectionRequest extends Request
 {
     /**
      * @param array{
      *     JobId: string,
-     *     MaxResults?: int<1, max>,
-     *     NextToken?: string,
-     *     SortBy?: 'NAME'|'TIMESTAMP',
-     *     AggregateBy?: 'TIMESTAMPS'|'SEGMENTS'
+     *     MaxResults?: int<1, max>|null,
+     *     NextToken?: string|null,
+     *     SortBy?: 'NAME'|'TIMESTAMP'|null,
+     *     AggregateBy?: 'TIMESTAMPS'|'SEGMENTS'|null
      * } $args
      */
     public function __construct(array $args)

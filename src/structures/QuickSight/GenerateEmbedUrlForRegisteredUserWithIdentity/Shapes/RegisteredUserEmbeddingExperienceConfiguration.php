@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QuickSight\GenerateEmbedUrlForRegisteredUserWit
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RegisteredUserDashboardEmbeddingConfiguration $Dashboard
- * @property RegisteredUserQuickSightConsoleEmbeddingConfiguration $QuickSightConsole
- * @property RegisteredUserQSearchBarEmbeddingConfiguration $QSearchBar
- * @property RegisteredUserDashboardVisualEmbeddingConfiguration $DashboardVisual
- * @property RegisteredUserGenerativeQnAEmbeddingConfiguration $GenerativeQnA
+ * @property RegisteredUserDashboardEmbeddingConfiguration|null $Dashboard
+ * @property RegisteredUserQuickSightConsoleEmbeddingConfiguration|null $QuickSightConsole
+ * @property RegisteredUserQSearchBarEmbeddingConfiguration|null $QSearchBar
+ * @property RegisteredUserDashboardVisualEmbeddingConfiguration|null $DashboardVisual
+ * @property RegisteredUserGenerativeQnAEmbeddingConfiguration|null $GenerativeQnA
  */
 class RegisteredUserEmbeddingExperienceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Dashboard?: RegisteredUserDashboardEmbeddingConfiguration,
-     *     QuickSightConsole?: RegisteredUserQuickSightConsoleEmbeddingConfiguration,
-     *     QSearchBar?: RegisteredUserQSearchBarEmbeddingConfiguration,
-     *     DashboardVisual?: RegisteredUserDashboardVisualEmbeddingConfiguration,
-     *     GenerativeQnA?: RegisteredUserGenerativeQnAEmbeddingConfiguration
+     *     Dashboard?: RegisteredUserDashboardEmbeddingConfiguration|null,
+     *     QuickSightConsole?: RegisteredUserQuickSightConsoleEmbeddingConfiguration|null,
+     *     QSearchBar?: RegisteredUserQSearchBarEmbeddingConfiguration|null,
+     *     DashboardVisual?: RegisteredUserDashboardVisualEmbeddingConfiguration|null,
+     *     GenerativeQnA?: RegisteredUserGenerativeQnAEmbeddingConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

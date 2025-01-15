@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\CreateMetricSet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $MetricSetArn
+ * @property string|null $MetricSetArn
  */
 class CreateMetricSetResponse extends Response
 {

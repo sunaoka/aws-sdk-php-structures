@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GameLift\CreateBuild\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccessKeyId
- * @property string $SecretAccessKey
- * @property string $SessionToken
+ * @property string|null $AccessKeyId
+ * @property string|null $SecretAccessKey
+ * @property string|null $SessionToken
  */
 class AwsCredentials extends Shape
 {
     /**
      * @param array{
-     *     AccessKeyId?: string,
-     *     SecretAccessKey?: string,
-     *     SessionToken?: string
+     *     AccessKeyId?: string|null,
+     *     SecretAccessKey?: string|null,
+     *     SessionToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

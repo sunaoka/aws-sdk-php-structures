@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3\PutBucketLogging\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LoggingEnabled $LoggingEnabled
+ * @property LoggingEnabled|null $LoggingEnabled
  */
 class BucketLoggingStatus extends Shape
 {
     /**
-     * @param array{LoggingEnabled?: LoggingEnabled} $args
+     * @param array{LoggingEnabled?: LoggingEnabled|null} $args
      */
     public function __construct(array $args = [])
     {

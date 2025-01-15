@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $repositoryName
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListBranchesRequest extends Request
 {
     /**
      * @param array{
      *     repositoryName: string,
-     *     nextToken?: string
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

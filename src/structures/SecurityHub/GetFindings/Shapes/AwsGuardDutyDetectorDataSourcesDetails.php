@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsGuardDutyDetectorDataSourcesCloudTrailDetails $CloudTrail
- * @property AwsGuardDutyDetectorDataSourcesDnsLogsDetails $DnsLogs
- * @property AwsGuardDutyDetectorDataSourcesFlowLogsDetails $FlowLogs
- * @property AwsGuardDutyDetectorDataSourcesKubernetesDetails $Kubernetes
- * @property AwsGuardDutyDetectorDataSourcesMalwareProtectionDetails $MalwareProtection
- * @property AwsGuardDutyDetectorDataSourcesS3LogsDetails $S3Logs
+ * @property AwsGuardDutyDetectorDataSourcesCloudTrailDetails|null $CloudTrail
+ * @property AwsGuardDutyDetectorDataSourcesDnsLogsDetails|null $DnsLogs
+ * @property AwsGuardDutyDetectorDataSourcesFlowLogsDetails|null $FlowLogs
+ * @property AwsGuardDutyDetectorDataSourcesKubernetesDetails|null $Kubernetes
+ * @property AwsGuardDutyDetectorDataSourcesMalwareProtectionDetails|null $MalwareProtection
+ * @property AwsGuardDutyDetectorDataSourcesS3LogsDetails|null $S3Logs
  */
 class AwsGuardDutyDetectorDataSourcesDetails extends Shape
 {
     /**
      * @param array{
-     *     CloudTrail?: AwsGuardDutyDetectorDataSourcesCloudTrailDetails,
-     *     DnsLogs?: AwsGuardDutyDetectorDataSourcesDnsLogsDetails,
-     *     FlowLogs?: AwsGuardDutyDetectorDataSourcesFlowLogsDetails,
-     *     Kubernetes?: AwsGuardDutyDetectorDataSourcesKubernetesDetails,
-     *     MalwareProtection?: AwsGuardDutyDetectorDataSourcesMalwareProtectionDetails,
-     *     S3Logs?: AwsGuardDutyDetectorDataSourcesS3LogsDetails
+     *     CloudTrail?: AwsGuardDutyDetectorDataSourcesCloudTrailDetails|null,
+     *     DnsLogs?: AwsGuardDutyDetectorDataSourcesDnsLogsDetails|null,
+     *     FlowLogs?: AwsGuardDutyDetectorDataSourcesFlowLogsDetails|null,
+     *     Kubernetes?: AwsGuardDutyDetectorDataSourcesKubernetesDetails|null,
+     *     MalwareProtection?: AwsGuardDutyDetectorDataSourcesMalwareProtectionDetails|null,
+     *     S3Logs?: AwsGuardDutyDetectorDataSourcesS3LogsDetails|null
      * } $args
      */
     public function __construct(array $args = [])

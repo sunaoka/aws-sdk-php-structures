@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeClusterV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VpcConnectivityClientAuthentication $ClientAuthentication
+ * @property VpcConnectivityClientAuthentication|null $ClientAuthentication
  */
 class VpcConnectivity extends Shape
 {
     /**
-     * @param array{ClientAuthentication?: VpcConnectivityClientAuthentication} $args
+     * @param array{ClientAuthentication?: VpcConnectivityClientAuthentication|null} $args
      */
     public function __construct(array $args = [])
     {

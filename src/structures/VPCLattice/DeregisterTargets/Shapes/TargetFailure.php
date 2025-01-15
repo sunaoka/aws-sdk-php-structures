@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\VPCLattice\DeregisterTargets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $failureCode
- * @property string $failureMessage
- * @property string $id
- * @property int<1, 65535> $port
+ * @property string|null $failureCode
+ * @property string|null $failureMessage
+ * @property string|null $id
+ * @property int<1, 65535>|null $port
  */
 class TargetFailure extends Shape
 {
     /**
      * @param array{
-     *     failureCode?: string,
-     *     failureMessage?: string,
-     *     id?: string,
-     *     port?: int<1, 65535>
+     *     failureCode?: string|null,
+     *     failureMessage?: string|null,
+     *     id?: string|null,
+     *     port?: int<1, 65535>|null
      * } $args
      */
     public function __construct(array $args = [])

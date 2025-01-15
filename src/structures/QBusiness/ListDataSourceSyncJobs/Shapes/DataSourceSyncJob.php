@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\QBusiness\ListDataSourceSyncJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $executionId
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
- * @property 'FAILED'|'SUCCEEDED'|'SYNCING'|'INCOMPLETE'|'STOPPING'|'ABORTED'|'SYNCING_INDEXING' $status
- * @property ErrorDetail $error
- * @property string $dataSourceErrorCode
- * @property DataSourceSyncJobMetrics $metrics
+ * @property string|null $executionId
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property 'FAILED'|'SUCCEEDED'|'SYNCING'|'INCOMPLETE'|'STOPPING'|'ABORTED'|'SYNCING_INDEXING'|null $status
+ * @property ErrorDetail|null $error
+ * @property string|null $dataSourceErrorCode
+ * @property DataSourceSyncJobMetrics|null $metrics
  */
 class DataSourceSyncJob extends Shape
 {
     /**
      * @param array{
-     *     executionId?: string,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     status?: 'FAILED'|'SUCCEEDED'|'SYNCING'|'INCOMPLETE'|'STOPPING'|'ABORTED'|'SYNCING_INDEXING',
-     *     error?: ErrorDetail,
-     *     dataSourceErrorCode?: string,
-     *     metrics?: DataSourceSyncJobMetrics
+     *     executionId?: string|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'FAILED'|'SUCCEEDED'|'SYNCING'|'INCOMPLETE'|'STOPPING'|'ABORTED'|'SYNCING_INDEXING'|null,
+     *     error?: ErrorDetail|null,
+     *     dataSourceErrorCode?: string|null,
+     *     metrics?: DataSourceSyncJobMetrics|null
      * } $args
      */
     public function __construct(array $args = [])

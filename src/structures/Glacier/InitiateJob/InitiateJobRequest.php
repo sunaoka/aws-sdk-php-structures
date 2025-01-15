@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $accountId
  * @property string $vaultName
- * @property Shapes\JobParameters $jobParameters
+ * @property Shapes\JobParameters|null $jobParameters
  */
 class InitiateJobRequest extends Request
 {
@@ -15,7 +15,7 @@ class InitiateJobRequest extends Request
      * @param array{
      *     accountId: string,
      *     vaultName: string,
-     *     jobParameters?: Shapes\JobParameters
+     *     jobParameters?: Shapes\JobParameters|null
      * } $args
      */
     public function __construct(array $args)

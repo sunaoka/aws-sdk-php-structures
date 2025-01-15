@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Iam\CreateServiceSpecificCredential;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ServiceSpecificCredential $ServiceSpecificCredential
+ * @property Shapes\ServiceSpecificCredential|null $ServiceSpecificCredential
  */
 class CreateServiceSpecificCredentialResponse extends Response
 {

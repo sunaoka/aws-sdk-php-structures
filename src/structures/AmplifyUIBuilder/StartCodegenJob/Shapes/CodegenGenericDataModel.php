@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property array<string, CodegenGenericDataField> $fields
- * @property bool $isJoinTable
+ * @property bool|null $isJoinTable
  * @property list<string> $primaryKeys
  */
 class CodegenGenericDataModel extends Shape
@@ -14,7 +14,7 @@ class CodegenGenericDataModel extends Shape
     /**
      * @param array{
      *     fields: array<string, CodegenGenericDataField>,
-     *     isJoinTable?: bool,
+     *     isJoinTable?: bool|null,
      *     primaryKeys: list<string>
      * } $args
      */

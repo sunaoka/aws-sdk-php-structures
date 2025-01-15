@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Iot\CreateCommand\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S
- * @property bool $B
- * @property int $I
- * @property int $L
- * @property double $D
- * @property string|resource|\Psr\Http\Message\StreamInterface $BIN
- * @property string $UL
+ * @property string|null $S
+ * @property bool|null $B
+ * @property int|null $I
+ * @property int|null $L
+ * @property double|null $D
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $BIN
+ * @property string|null $UL
  */
 class CommandParameterValue extends Shape
 {
     /**
      * @param array{
-     *     S?: string,
-     *     B?: bool,
-     *     I?: int,
-     *     L?: int,
-     *     D?: double,
-     *     BIN?: string|resource|\Psr\Http\Message\StreamInterface,
-     *     UL?: string
+     *     S?: string|null,
+     *     B?: bool|null,
+     *     I?: int|null,
+     *     L?: int|null,
+     *     D?: double|null,
+     *     BIN?: string|resource|\Psr\Http\Message\StreamInterface|null,
+     *     UL?: string|null
      * } $args
      */
     public function __construct(array $args = [])

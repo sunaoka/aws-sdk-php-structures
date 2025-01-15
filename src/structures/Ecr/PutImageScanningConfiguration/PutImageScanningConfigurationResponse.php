@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ecr\PutImageScanningConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $registryId
- * @property string $repositoryName
- * @property Shapes\ImageScanningConfiguration $imageScanningConfiguration
+ * @property string|null $registryId
+ * @property string|null $repositoryName
+ * @property Shapes\ImageScanningConfiguration|null $imageScanningConfiguration
  */
 class PutImageScanningConfigurationResponse extends Response
 {

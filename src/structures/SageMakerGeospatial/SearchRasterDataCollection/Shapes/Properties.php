@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\SearchRasterDataCollection\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $EoCloudCover
- * @property float $LandsatCloudCoverLand
- * @property string $Platform
- * @property float $ViewOffNadir
- * @property float $ViewSunAzimuth
- * @property float $ViewSunElevation
+ * @property float|null $EoCloudCover
+ * @property float|null $LandsatCloudCoverLand
+ * @property string|null $Platform
+ * @property float|null $ViewOffNadir
+ * @property float|null $ViewSunAzimuth
+ * @property float|null $ViewSunElevation
  */
 class Properties extends Shape
 {
     /**
      * @param array{
-     *     EoCloudCover?: float,
-     *     LandsatCloudCoverLand?: float,
-     *     Platform?: string,
-     *     ViewOffNadir?: float,
-     *     ViewSunAzimuth?: float,
-     *     ViewSunElevation?: float
+     *     EoCloudCover?: float|null,
+     *     LandsatCloudCoverLand?: float|null,
+     *     Platform?: string|null,
+     *     ViewOffNadir?: float|null,
+     *     ViewSunAzimuth?: float|null,
+     *     ViewSunElevation?: float|null
      * } $args
      */
     public function __construct(array $args = [])

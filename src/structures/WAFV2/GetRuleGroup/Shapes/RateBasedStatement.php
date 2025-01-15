@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int<10, 2000000000> $Limit
- * @property int $EvaluationWindowSec
+ * @property int|null $EvaluationWindowSec
  * @property 'IP'|'FORWARDED_IP'|'CUSTOM_KEYS'|'CONSTANT' $AggregateKeyType
- * @property Statement $ScopeDownStatement
- * @property ForwardedIPConfig $ForwardedIPConfig
- * @property list<RateBasedStatementCustomKey> $CustomKeys
+ * @property Statement|null $ScopeDownStatement
+ * @property ForwardedIPConfig|null $ForwardedIPConfig
+ * @property list<RateBasedStatementCustomKey>|null $CustomKeys
  */
 class RateBasedStatement extends Shape
 {
     /**
      * @param array{
      *     Limit: int<10, 2000000000>,
-     *     EvaluationWindowSec?: int,
+     *     EvaluationWindowSec?: int|null,
      *     AggregateKeyType: 'IP'|'FORWARDED_IP'|'CUSTOM_KEYS'|'CONSTANT',
-     *     ScopeDownStatement?: Statement,
-     *     ForwardedIPConfig?: ForwardedIPConfig,
-     *     CustomKeys?: list<RateBasedStatementCustomKey>
+     *     ScopeDownStatement?: Statement|null,
+     *     ForwardedIPConfig?: ForwardedIPConfig|null,
+     *     CustomKeys?: list<RateBasedStatementCustomKey>|null
      * } $args
      */
     public function __construct(array $args)

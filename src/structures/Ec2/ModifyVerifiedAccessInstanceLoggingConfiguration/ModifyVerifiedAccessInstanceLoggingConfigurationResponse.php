@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVerifiedAccessInstanceLoggingConfigur
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\VerifiedAccessInstanceLoggingConfiguration $LoggingConfiguration
+ * @property Shapes\VerifiedAccessInstanceLoggingConfiguration|null $LoggingConfiguration
  */
 class ModifyVerifiedAccessInstanceLoggingConfigurationResponse extends Response
 {

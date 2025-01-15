@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $LanguageCode
+ * @property string|null $LanguageCode
  * @property string $Name
- * @property CaptionSelectorSettings $SelectorSettings
+ * @property CaptionSelectorSettings|null $SelectorSettings
  */
 class CaptionSelector extends Shape
 {
     /**
      * @param array{
-     *     LanguageCode?: string,
+     *     LanguageCode?: string|null,
      *     Name: string,
-     *     SelectorSettings?: CaptionSelectorSettings
+     *     SelectorSettings?: CaptionSelectorSettings|null
      * } $args
      */
     public function __construct(array $args)

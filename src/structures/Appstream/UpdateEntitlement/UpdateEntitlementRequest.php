@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property string $StackName
- * @property string $Description
- * @property 'ALL'|'ASSOCIATED' $AppVisibility
- * @property list<Shapes\EntitlementAttribute> $Attributes
+ * @property string|null $Description
+ * @property 'ALL'|'ASSOCIATED'|null $AppVisibility
+ * @property list<Shapes\EntitlementAttribute>|null $Attributes
  */
 class UpdateEntitlementRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateEntitlementRequest extends Request
      * @param array{
      *     Name: string,
      *     StackName: string,
-     *     Description?: string,
-     *     AppVisibility?: 'ALL'|'ASSOCIATED',
-     *     Attributes?: list<Shapes\EntitlementAttribute>
+     *     Description?: string|null,
+     *     AppVisibility?: 'ALL'|'ASSOCIATED'|null,
+     *     Attributes?: list<Shapes\EntitlementAttribute>|null
      * } $args
      */
     public function __construct(array $args)

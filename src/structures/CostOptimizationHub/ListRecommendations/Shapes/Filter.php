@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\ListRecommendations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $restartNeeded
- * @property bool $rollbackPossible
- * @property list<'VeryLow'|'Low'|'Medium'|'High'|'VeryHigh'> $implementationEfforts
- * @property list<string> $accountIds
- * @property list<string> $regions
- * @property list<'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'> $resourceTypes
- * @property list<'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete'> $actionTypes
- * @property list<Tag> $tags
- * @property list<string> $resourceIds
- * @property list<string> $resourceArns
- * @property list<string> $recommendationIds
+ * @property bool|null $restartNeeded
+ * @property bool|null $rollbackPossible
+ * @property list<'VeryLow'|'Low'|'Medium'|'High'|'VeryHigh'>|null $implementationEfforts
+ * @property list<string>|null $accountIds
+ * @property list<string>|null $regions
+ * @property list<'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'>|null $resourceTypes
+ * @property list<'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete'>|null $actionTypes
+ * @property list<Tag>|null $tags
+ * @property list<string>|null $resourceIds
+ * @property list<string>|null $resourceArns
+ * @property list<string>|null $recommendationIds
  */
 class Filter extends Shape
 {
     /**
      * @param array{
-     *     restartNeeded?: bool,
-     *     rollbackPossible?: bool,
-     *     implementationEfforts?: list<'VeryLow'|'Low'|'Medium'|'High'|'VeryHigh'>,
-     *     accountIds?: list<string>,
-     *     regions?: list<string>,
-     *     resourceTypes?: list<'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'>,
-     *     actionTypes?: list<'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete'>,
-     *     tags?: list<Tag>,
-     *     resourceIds?: list<string>,
-     *     resourceArns?: list<string>,
-     *     recommendationIds?: list<string>
+     *     restartNeeded?: bool|null,
+     *     rollbackPossible?: bool|null,
+     *     implementationEfforts?: list<'VeryLow'|'Low'|'Medium'|'High'|'VeryHigh'>|null,
+     *     accountIds?: list<string>|null,
+     *     regions?: list<string>|null,
+     *     resourceTypes?: list<'Ec2Instance'|'LambdaFunction'|'EbsVolume'|'EcsService'|'Ec2AutoScalingGroup'|'Ec2InstanceSavingsPlans'|'ComputeSavingsPlans'|'SageMakerSavingsPlans'|'Ec2ReservedInstances'|'RdsReservedInstances'|'OpenSearchReservedInstances'|'RedshiftReservedInstances'|'ElastiCacheReservedInstances'|'RdsDbInstanceStorage'|'RdsDbInstance'>|null,
+     *     actionTypes?: list<'Rightsize'|'Stop'|'Upgrade'|'PurchaseSavingsPlans'|'PurchaseReservedInstances'|'MigrateToGraviton'|'Delete'>|null,
+     *     tags?: list<Tag>|null,
+     *     resourceIds?: list<string>|null,
+     *     resourceArns?: list<string>|null,
+     *     recommendationIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

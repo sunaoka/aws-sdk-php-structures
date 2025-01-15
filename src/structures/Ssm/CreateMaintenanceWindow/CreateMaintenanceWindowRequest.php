@@ -6,34 +6,34 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property string $StartDate
- * @property string $EndDate
+ * @property string|null $Description
+ * @property string|null $StartDate
+ * @property string|null $EndDate
  * @property string $Schedule
- * @property string $ScheduleTimezone
- * @property int<1, 6> $ScheduleOffset
+ * @property string|null $ScheduleTimezone
+ * @property int<1, 6>|null $ScheduleOffset
  * @property int<1, 24> $Duration
  * @property int<0, 23> $Cutoff
  * @property bool $AllowUnassociatedTargets
- * @property string $ClientToken
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ClientToken
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateMaintenanceWindowRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     StartDate?: string,
-     *     EndDate?: string,
+     *     Description?: string|null,
+     *     StartDate?: string|null,
+     *     EndDate?: string|null,
      *     Schedule: string,
-     *     ScheduleTimezone?: string,
-     *     ScheduleOffset?: int<1, 6>,
+     *     ScheduleTimezone?: string|null,
+     *     ScheduleOffset?: int<1, 6>|null,
      *     Duration: int<1, 24>,
      *     Cutoff: int<0, 23>,
      *     AllowUnassociatedTargets: bool,
-     *     ClientToken?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     ClientToken?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

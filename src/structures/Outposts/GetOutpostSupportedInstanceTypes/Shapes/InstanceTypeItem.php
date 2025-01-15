@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Outposts\GetOutpostSupportedInstanceTypes\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceType
- * @property int $VCPUs
+ * @property string|null $InstanceType
+ * @property int|null $VCPUs
  */
 class InstanceTypeItem extends Shape
 {
     /**
      * @param array{
-     *     InstanceType?: string,
-     *     VCPUs?: int
+     *     InstanceType?: string|null,
+     *     VCPUs?: int|null
      * } $args
      */
     public function __construct(array $args = [])

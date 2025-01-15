@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ses\DescribeReceiptRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TopicArn
+ * @property string|null $TopicArn
  * @property string $BucketName
- * @property string $ObjectKeyPrefix
- * @property string $KmsKeyArn
- * @property string $IamRoleArn
+ * @property string|null $ObjectKeyPrefix
+ * @property string|null $KmsKeyArn
+ * @property string|null $IamRoleArn
  */
 class S3Action extends Shape
 {
     /**
      * @param array{
-     *     TopicArn?: string,
+     *     TopicArn?: string|null,
      *     BucketName: string,
-     *     ObjectKeyPrefix?: string,
-     *     KmsKeyArn?: string,
-     *     IamRoleArn?: string
+     *     ObjectKeyPrefix?: string|null,
+     *     KmsKeyArn?: string|null,
+     *     IamRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

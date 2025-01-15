@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeServiceActionExecutionPa
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ExecutionParameter> $ServiceActionParameters
+ * @property list<Shapes\ExecutionParameter>|null $ServiceActionParameters
  */
 class DescribeServiceActionExecutionParametersResponse extends Response
 {

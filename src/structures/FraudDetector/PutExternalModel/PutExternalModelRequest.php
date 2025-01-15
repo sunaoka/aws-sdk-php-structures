@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\ModelInputConfiguration $inputConfiguration
  * @property Shapes\ModelOutputConfiguration $outputConfiguration
  * @property 'ASSOCIATED'|'DISSOCIATED' $modelEndpointStatus
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class PutExternalModelRequest extends Request
 {
@@ -23,7 +23,7 @@ class PutExternalModelRequest extends Request
      *     inputConfiguration: Shapes\ModelInputConfiguration,
      *     outputConfiguration: Shapes\ModelOutputConfiguration,
      *     modelEndpointStatus: 'ASSOCIATED'|'DISSOCIATED',
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

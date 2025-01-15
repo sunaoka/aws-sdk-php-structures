@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $apiId
  * @property string $typeName
- * @property string $nextToken
- * @property int<0, 25> $maxResults
+ * @property string|null $nextToken
+ * @property int<0, 25>|null $maxResults
  */
 class ListResolversRequest extends Request
 {
@@ -16,8 +16,8 @@ class ListResolversRequest extends Request
      * @param array{
      *     apiId: string,
      *     typeName: string,
-     *     nextToken?: string,
-     *     maxResults?: int<0, 25>
+     *     nextToken?: string|null,
+     *     maxResults?: int<0, 25>|null
      * } $args
      */
     public function __construct(array $args)

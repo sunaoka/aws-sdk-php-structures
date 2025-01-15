@@ -7,18 +7,18 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $EndpointName
  * @property string $EndpointArn
- * @property string $EndpointConfigName
- * @property list<Shapes\ProductionVariantSummary> $ProductionVariants
- * @property Shapes\DataCaptureConfigSummary $DataCaptureConfig
+ * @property string|null $EndpointConfigName
+ * @property list<Shapes\ProductionVariantSummary>|null $ProductionVariants
+ * @property Shapes\DataCaptureConfigSummary|null $DataCaptureConfig
  * @property 'OutOfService'|'Creating'|'Updating'|'SystemUpdating'|'RollingBack'|'InService'|'Deleting'|'Failed'|'UpdateRollbackFailed' $EndpointStatus
- * @property string $FailureReason
+ * @property string|null $FailureReason
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property Shapes\DeploymentConfig $LastDeploymentConfig
- * @property Shapes\AsyncInferenceConfig $AsyncInferenceConfig
- * @property Shapes\PendingDeploymentSummary $PendingDeploymentSummary
- * @property Shapes\ExplainerConfig $ExplainerConfig
- * @property list<Shapes\ProductionVariantSummary> $ShadowProductionVariants
+ * @property Shapes\DeploymentConfig|null $LastDeploymentConfig
+ * @property Shapes\AsyncInferenceConfig|null $AsyncInferenceConfig
+ * @property Shapes\PendingDeploymentSummary|null $PendingDeploymentSummary
+ * @property Shapes\ExplainerConfig|null $ExplainerConfig
+ * @property list<Shapes\ProductionVariantSummary>|null $ShadowProductionVariants
  */
 class DescribeEndpointResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeClusterOperationV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ClusterOperationStepInfo $StepInfo
- * @property string $StepName
+ * @property ClusterOperationStepInfo|null $StepInfo
+ * @property string|null $StepName
  */
 class ClusterOperationStep extends Shape
 {
     /**
      * @param array{
-     *     StepInfo?: ClusterOperationStepInfo,
-     *     StepName?: string
+     *     StepInfo?: ClusterOperationStepInfo|null,
+     *     StepName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

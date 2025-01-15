@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<'S3'|'EBS'> $BackupResourceTypes
- * @property BackupCreationTimeFilter $BackupResourceCreationTime
- * @property list<string> $SourceResourceArns
- * @property list<string> $BackupResourceArns
- * @property array<string, string> $BackupResourceTags
+ * @property BackupCreationTimeFilter|null $BackupResourceCreationTime
+ * @property list<string>|null $SourceResourceArns
+ * @property list<string>|null $BackupResourceArns
+ * @property array<string, string>|null $BackupResourceTags
  */
 class SearchScope extends Shape
 {
     /**
      * @param array{
      *     BackupResourceTypes: list<'S3'|'EBS'>,
-     *     BackupResourceCreationTime?: BackupCreationTimeFilter,
-     *     SourceResourceArns?: list<string>,
-     *     BackupResourceArns?: list<string>,
-     *     BackupResourceTags?: array<string, string>
+     *     BackupResourceCreationTime?: BackupCreationTimeFilter|null,
+     *     SourceResourceArns?: list<string>|null,
+     *     BackupResourceArns?: list<string>|null,
+     *     BackupResourceTags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY' $MaintenanceDay
- * @property string $MaintenanceScheduledDate
- * @property string $MaintenanceStartTime
+ * @property 'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY'|null $MaintenanceDay
+ * @property string|null $MaintenanceScheduledDate
+ * @property string|null $MaintenanceStartTime
  */
 class MaintenanceUpdateSettings extends Shape
 {
     /**
      * @param array{
-     *     MaintenanceDay?: 'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY',
-     *     MaintenanceScheduledDate?: string,
-     *     MaintenanceStartTime?: string
+     *     MaintenanceDay?: 'MONDAY'|'TUESDAY'|'WEDNESDAY'|'THURSDAY'|'FRIDAY'|'SATURDAY'|'SUNDAY'|null,
+     *     MaintenanceScheduledDate?: string|null,
+     *     MaintenanceStartTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

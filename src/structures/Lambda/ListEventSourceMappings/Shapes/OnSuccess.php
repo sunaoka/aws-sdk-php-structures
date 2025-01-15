@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lambda\ListEventSourceMappings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Destination
+ * @property string|null $Destination
  */
 class OnSuccess extends Shape
 {
     /**
-     * @param array{Destination?: string} $args
+     * @param array{Destination?: string|null} $args
      */
     public function __construct(array $args = [])
     {

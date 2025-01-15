@@ -7,18 +7,18 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string $ObjectTypeName
  * @property string $Description
- * @property string $TemplateId
- * @property int<1, 1098> $ExpirationDays
- * @property string $EncryptionKey
- * @property bool $AllowProfileCreation
- * @property string $SourceLastUpdatedTimestampFormat
- * @property int<0, max> $MaxAvailableProfileObjectCount
- * @property int<1, max> $MaxProfileObjectCount
- * @property array<string, Shapes\ObjectTypeField> $Fields
- * @property array<string, list<Shapes\ObjectTypeKey>> $Keys
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property \Aws\Api\DateTimeResult $LastUpdatedAt
- * @property array<string, string> $Tags
+ * @property string|null $TemplateId
+ * @property int<1, 1098>|null $ExpirationDays
+ * @property string|null $EncryptionKey
+ * @property bool|null $AllowProfileCreation
+ * @property string|null $SourceLastUpdatedTimestampFormat
+ * @property int<0, max>|null $MaxAvailableProfileObjectCount
+ * @property int<1, max>|null $MaxProfileObjectCount
+ * @property array<string, Shapes\ObjectTypeField>|null $Fields
+ * @property array<string, list<Shapes\ObjectTypeKey>>|null $Keys
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property array<string, string>|null $Tags
  */
 class GetProfileObjectTypeResponse extends Response
 {

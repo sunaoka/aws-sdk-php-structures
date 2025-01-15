@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTEvents\ListInputRoutings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property IotSiteWiseAssetModelPropertyIdentifier $iotSiteWiseAssetModelPropertyIdentifier
+ * @property IotSiteWiseAssetModelPropertyIdentifier|null $iotSiteWiseAssetModelPropertyIdentifier
  */
 class IotSiteWiseInputIdentifier extends Shape
 {
     /**
-     * @param array{iotSiteWiseAssetModelPropertyIdentifier?: IotSiteWiseAssetModelPropertyIdentifier} $args
+     * @param array{iotSiteWiseAssetModelPropertyIdentifier?: IotSiteWiseAssetModelPropertyIdentifier|null} $args
      */
     public function __construct(array $args = [])
     {

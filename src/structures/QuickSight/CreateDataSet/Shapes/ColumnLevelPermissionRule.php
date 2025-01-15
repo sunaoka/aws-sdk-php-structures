@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDataSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Principals
- * @property list<string> $ColumnNames
+ * @property list<string>|null $Principals
+ * @property list<string>|null $ColumnNames
  */
 class ColumnLevelPermissionRule extends Shape
 {
     /**
      * @param array{
-     *     Principals?: list<string>,
-     *     ColumnNames?: list<string>
+     *     Principals?: list<string>|null,
+     *     ColumnNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

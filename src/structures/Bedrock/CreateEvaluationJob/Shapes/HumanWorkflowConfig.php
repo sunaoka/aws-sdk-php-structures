@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $flowDefinitionArn
- * @property string $instructions
+ * @property string|null $instructions
  */
 class HumanWorkflowConfig extends Shape
 {
     /**
      * @param array{
      *     flowDefinitionArn: string,
-     *     instructions?: string
+     *     instructions?: string|null
      * } $args
      */
     public function __construct(array $args)

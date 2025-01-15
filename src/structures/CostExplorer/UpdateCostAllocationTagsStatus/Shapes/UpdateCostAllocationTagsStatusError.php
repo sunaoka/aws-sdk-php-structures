@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CostExplorer\UpdateCostAllocationTagsStatus\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TagKey
- * @property string $Code
- * @property string $Message
+ * @property string|null $TagKey
+ * @property string|null $Code
+ * @property string|null $Message
  */
 class UpdateCostAllocationTagsStatusError extends Shape
 {
     /**
      * @param array{
-     *     TagKey?: string,
-     *     Code?: string,
-     *     Message?: string
+     *     TagKey?: string|null,
+     *     Code?: string|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

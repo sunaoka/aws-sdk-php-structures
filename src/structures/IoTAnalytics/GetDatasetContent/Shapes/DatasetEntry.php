@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTAnalytics\GetDatasetContent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $entryName
- * @property string $dataURI
+ * @property string|null $entryName
+ * @property string|null $dataURI
  */
 class DatasetEntry extends Shape
 {
     /**
      * @param array{
-     *     entryName?: string,
-     *     dataURI?: string
+     *     entryName?: string|null,
+     *     dataURI?: string|null
      * } $args
      */
     public function __construct(array $args = [])

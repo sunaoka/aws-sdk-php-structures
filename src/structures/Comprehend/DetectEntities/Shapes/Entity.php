@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Comprehend\DetectEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $Score
- * @property 'PERSON'|'LOCATION'|'ORGANIZATION'|'COMMERCIAL_ITEM'|'EVENT'|'DATE'|'QUANTITY'|'TITLE'|'OTHER' $Type
- * @property string $Text
- * @property int $BeginOffset
- * @property int $EndOffset
- * @property list<BlockReference> $BlockReferences
+ * @property float|null $Score
+ * @property 'PERSON'|'LOCATION'|'ORGANIZATION'|'COMMERCIAL_ITEM'|'EVENT'|'DATE'|'QUANTITY'|'TITLE'|'OTHER'|null $Type
+ * @property string|null $Text
+ * @property int|null $BeginOffset
+ * @property int|null $EndOffset
+ * @property list<BlockReference>|null $BlockReferences
  */
 class Entity extends Shape
 {
     /**
      * @param array{
-     *     Score?: float,
-     *     Type?: 'PERSON'|'LOCATION'|'ORGANIZATION'|'COMMERCIAL_ITEM'|'EVENT'|'DATE'|'QUANTITY'|'TITLE'|'OTHER',
-     *     Text?: string,
-     *     BeginOffset?: int,
-     *     EndOffset?: int,
-     *     BlockReferences?: list<BlockReference>
+     *     Score?: float|null,
+     *     Type?: 'PERSON'|'LOCATION'|'ORGANIZATION'|'COMMERCIAL_ITEM'|'EVENT'|'DATE'|'QUANTITY'|'TITLE'|'OTHER'|null,
+     *     Text?: string|null,
+     *     BeginOffset?: int|null,
+     *     EndOffset?: int|null,
+     *     BlockReferences?: list<BlockReference>|null
      * } $args
      */
     public function __construct(array $args = [])

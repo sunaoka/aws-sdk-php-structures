@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property Document $document
  * @property string $recommendationId
- * @property 'HIGH'|'MEDIUM'|'LOW' $relevanceLevel
- * @property double $relevanceScore
- * @property 'KNOWLEDGE_CONTENT' $type
+ * @property 'HIGH'|'MEDIUM'|'LOW'|null $relevanceLevel
+ * @property double|null $relevanceScore
+ * @property 'KNOWLEDGE_CONTENT'|null $type
  */
 class RecommendationData extends Shape
 {
@@ -17,9 +17,9 @@ class RecommendationData extends Shape
      * @param array{
      *     document: Document,
      *     recommendationId: string,
-     *     relevanceLevel?: 'HIGH'|'MEDIUM'|'LOW',
-     *     relevanceScore?: double,
-     *     type?: 'KNOWLEDGE_CONTENT'
+     *     relevanceLevel?: 'HIGH'|'MEDIUM'|'LOW'|null,
+     *     relevanceScore?: double|null,
+     *     type?: 'KNOWLEDGE_CONTENT'|null
      * } $args
      */
     public function __construct(array $args)

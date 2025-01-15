@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $thingName
- * @property string $thingTypeName
- * @property Shapes\AttributePayload $attributePayload
- * @property int $expectedVersion
- * @property bool $removeThingType
+ * @property string|null $thingTypeName
+ * @property Shapes\AttributePayload|null $attributePayload
+ * @property int|null $expectedVersion
+ * @property bool|null $removeThingType
  */
 class UpdateThingRequest extends Request
 {
     /**
      * @param array{
      *     thingName: string,
-     *     thingTypeName?: string,
-     *     attributePayload?: Shapes\AttributePayload,
-     *     expectedVersion?: int,
-     *     removeThingType?: bool
+     *     thingTypeName?: string|null,
+     *     attributePayload?: Shapes\AttributePayload|null,
+     *     expectedVersion?: int|null,
+     *     removeThingType?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property StorageLensGroupFilter $Filter
- * @property string $StorageLensGroupArn
+ * @property string|null $StorageLensGroupArn
  */
 class StorageLensGroup extends Shape
 {
@@ -15,7 +15,7 @@ class StorageLensGroup extends Shape
      * @param array{
      *     Name: string,
      *     Filter: StorageLensGroupFilter,
-     *     StorageLensGroupArn?: string
+     *     StorageLensGroupArn?: string|null
      * } $args
      */
     public function __construct(array $args)

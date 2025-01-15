@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\UpdateSpace;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $SpaceArn
+ * @property string|null $SpaceArn
  */
 class UpdateSpaceResponse extends Response
 {

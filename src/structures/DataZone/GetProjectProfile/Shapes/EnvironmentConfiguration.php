@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property AwsAccount $awsAccount
  * @property Region $awsRegion
- * @property EnvironmentConfigurationParametersDetails $configurationParameters
- * @property 'ON_CREATE'|'ON_DEMAND' $deploymentMode
- * @property int<0, 16> $deploymentOrder
- * @property string $description
+ * @property EnvironmentConfigurationParametersDetails|null $configurationParameters
+ * @property 'ON_CREATE'|'ON_DEMAND'|null $deploymentMode
+ * @property int<0, 16>|null $deploymentOrder
+ * @property string|null $description
  * @property string $environmentBlueprintId
- * @property string $id
+ * @property string|null $id
  * @property string $name
  */
 class EnvironmentConfiguration extends Shape
@@ -21,12 +21,12 @@ class EnvironmentConfiguration extends Shape
      * @param array{
      *     awsAccount: AwsAccount,
      *     awsRegion: Region,
-     *     configurationParameters?: EnvironmentConfigurationParametersDetails,
-     *     deploymentMode?: 'ON_CREATE'|'ON_DEMAND',
-     *     deploymentOrder?: int<0, 16>,
-     *     description?: string,
+     *     configurationParameters?: EnvironmentConfigurationParametersDetails|null,
+     *     deploymentMode?: 'ON_CREATE'|'ON_DEMAND'|null,
+     *     deploymentOrder?: int<0, 16>|null,
+     *     description?: string|null,
      *     environmentBlueprintId: string,
-     *     id?: string,
+     *     id?: string|null,
      *     name: string
      * } $args
      */

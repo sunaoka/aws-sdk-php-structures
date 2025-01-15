@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\Kafka\DescribeConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $Description
- * @property list<string> $KafkaVersions
- * @property Shapes\ConfigurationRevision $LatestRevision
- * @property string $Name
- * @property 'ACTIVE'|'DELETING'|'DELETE_FAILED' $State
+ * @property string|null $Arn
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $Description
+ * @property list<string>|null $KafkaVersions
+ * @property Shapes\ConfigurationRevision|null $LatestRevision
+ * @property string|null $Name
+ * @property 'ACTIVE'|'DELETING'|'DELETE_FAILED'|null $State
  */
 class DescribeConfigurationResponse extends Response
 {

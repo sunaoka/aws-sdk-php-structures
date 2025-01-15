@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<InputFile> $files
- * @property string $invocationId
- * @property array<string, string> $promptSessionAttributes
- * @property list<InvocationResultMember> $returnControlInvocationResults
- * @property array<string, string> $sessionAttributes
+ * @property list<InputFile>|null $files
+ * @property string|null $invocationId
+ * @property array<string, string>|null $promptSessionAttributes
+ * @property list<InvocationResultMember>|null $returnControlInvocationResults
+ * @property array<string, string>|null $sessionAttributes
  */
 class InlineSessionState extends Shape
 {
     /**
      * @param array{
-     *     files?: list<InputFile>,
-     *     invocationId?: string,
-     *     promptSessionAttributes?: array<string, string>,
-     *     returnControlInvocationResults?: list<InvocationResultMember>,
-     *     sessionAttributes?: array<string, string>
+     *     files?: list<InputFile>|null,
+     *     invocationId?: string|null,
+     *     promptSessionAttributes?: array<string, string>|null,
+     *     returnControlInvocationResults?: list<InvocationResultMember>|null,
+     *     sessionAttributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

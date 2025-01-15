@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\TaxSettings\PutTaxRegistration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $dateOfBirth
- * @property list<TaxRegistrationDocument> $taxRegistrationDocuments
+ * @property string|null $dateOfBirth
+ * @property list<TaxRegistrationDocument>|null $taxRegistrationDocuments
  */
 class VerificationDetails extends Shape
 {
     /**
      * @param array{
-     *     dateOfBirth?: string,
-     *     taxRegistrationDocuments?: list<TaxRegistrationDocument>
+     *     dateOfBirth?: string|null,
+     *     taxRegistrationDocuments?: list<TaxRegistrationDocument>|null
      * } $args
      */
     public function __construct(array $args = [])

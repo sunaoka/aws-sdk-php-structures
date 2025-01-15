@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property Shapes\VpcConfigRequest $resourcesVpcConfig
- * @property Shapes\Logging $logging
- * @property string $clientRequestToken
- * @property Shapes\UpdateAccessConfigRequest $accessConfig
- * @property Shapes\UpgradePolicyRequest $upgradePolicy
- * @property Shapes\ZonalShiftConfigRequest $zonalShiftConfig
- * @property Shapes\ComputeConfigRequest $computeConfig
- * @property Shapes\KubernetesNetworkConfigRequest $kubernetesNetworkConfig
- * @property Shapes\StorageConfigRequest $storageConfig
+ * @property Shapes\VpcConfigRequest|null $resourcesVpcConfig
+ * @property Shapes\Logging|null $logging
+ * @property string|null $clientRequestToken
+ * @property Shapes\UpdateAccessConfigRequest|null $accessConfig
+ * @property Shapes\UpgradePolicyRequest|null $upgradePolicy
+ * @property Shapes\ZonalShiftConfigRequest|null $zonalShiftConfig
+ * @property Shapes\ComputeConfigRequest|null $computeConfig
+ * @property Shapes\KubernetesNetworkConfigRequest|null $kubernetesNetworkConfig
+ * @property Shapes\StorageConfigRequest|null $storageConfig
  */
 class UpdateClusterConfigRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     resourcesVpcConfig?: Shapes\VpcConfigRequest,
-     *     logging?: Shapes\Logging,
-     *     clientRequestToken?: string,
-     *     accessConfig?: Shapes\UpdateAccessConfigRequest,
-     *     upgradePolicy?: Shapes\UpgradePolicyRequest,
-     *     zonalShiftConfig?: Shapes\ZonalShiftConfigRequest,
-     *     computeConfig?: Shapes\ComputeConfigRequest,
-     *     kubernetesNetworkConfig?: Shapes\KubernetesNetworkConfigRequest,
-     *     storageConfig?: Shapes\StorageConfigRequest
+     *     resourcesVpcConfig?: Shapes\VpcConfigRequest|null,
+     *     logging?: Shapes\Logging|null,
+     *     clientRequestToken?: string|null,
+     *     accessConfig?: Shapes\UpdateAccessConfigRequest|null,
+     *     upgradePolicy?: Shapes\UpgradePolicyRequest|null,
+     *     zonalShiftConfig?: Shapes\ZonalShiftConfigRequest|null,
+     *     computeConfig?: Shapes\ComputeConfigRequest|null,
+     *     kubernetesNetworkConfig?: Shapes\KubernetesNetworkConfigRequest|null,
+     *     storageConfig?: Shapes\StorageConfigRequest|null
      * } $args
      */
     public function __construct(array $args)

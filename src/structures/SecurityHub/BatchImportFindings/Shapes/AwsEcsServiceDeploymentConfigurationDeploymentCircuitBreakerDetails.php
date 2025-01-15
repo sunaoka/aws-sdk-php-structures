@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enable
- * @property bool $Rollback
+ * @property bool|null $Enable
+ * @property bool|null $Rollback
  */
 class AwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerDetails extends Shape
 {
     /**
      * @param array{
-     *     Enable?: bool,
-     *     Rollback?: bool
+     *     Enable?: bool|null,
+     *     Rollback?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MachineLearning\DeleteTags;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ResourceId
- * @property 'BatchPrediction'|'DataSource'|'Evaluation'|'MLModel' $ResourceType
+ * @property string|null $ResourceId
+ * @property 'BatchPrediction'|'DataSource'|'Evaluation'|'MLModel'|null $ResourceType
  */
 class DeleteTagsResponse extends Response
 {

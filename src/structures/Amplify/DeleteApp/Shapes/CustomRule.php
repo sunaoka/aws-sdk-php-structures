@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $source
  * @property string $target
- * @property string $status
- * @property string $condition
+ * @property string|null $status
+ * @property string|null $condition
  */
 class CustomRule extends Shape
 {
@@ -16,8 +16,8 @@ class CustomRule extends Shape
      * @param array{
      *     source: string,
      *     target: string,
-     *     status?: string,
-     *     condition?: string
+     *     status?: string|null,
+     *     condition?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeBuild\BatchGetProjects\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $vCpu
- * @property int $memory
- * @property int $disk
- * @property 'GENERAL'|'NVME' $machineType
+ * @property int|null $vCpu
+ * @property int|null $memory
+ * @property int|null $disk
+ * @property 'GENERAL'|'NVME'|null $machineType
  */
 class ComputeConfiguration extends Shape
 {
     /**
      * @param array{
-     *     vCpu?: int,
-     *     memory?: int,
-     *     disk?: int,
-     *     machineType?: 'GENERAL'|'NVME'
+     *     vCpu?: int|null,
+     *     memory?: int|null,
+     *     disk?: int|null,
+     *     machineType?: 'GENERAL'|'NVME'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DeleteDocumentVersion;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $DocumentId
  * @property string $VersionId
  * @property bool $DeletePriorVersions
@@ -14,7 +14,7 @@ class DeleteDocumentVersionRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     DocumentId: string,
      *     VersionId: string,
      *     DeletePriorVersions: bool

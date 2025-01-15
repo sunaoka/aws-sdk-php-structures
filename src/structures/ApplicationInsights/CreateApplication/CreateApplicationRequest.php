@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\CreateApplication;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ResourceGroupName
- * @property bool $OpsCenterEnabled
- * @property bool $CWEMonitorEnabled
- * @property string $OpsItemSNSTopicArn
- * @property string $SNSNotificationArn
- * @property list<Shapes\Tag> $Tags
- * @property bool $AutoConfigEnabled
- * @property bool $AutoCreate
- * @property 'ACCOUNT_BASED' $GroupingType
- * @property bool $AttachMissingPermission
+ * @property string|null $ResourceGroupName
+ * @property bool|null $OpsCenterEnabled
+ * @property bool|null $CWEMonitorEnabled
+ * @property string|null $OpsItemSNSTopicArn
+ * @property string|null $SNSNotificationArn
+ * @property list<Shapes\Tag>|null $Tags
+ * @property bool|null $AutoConfigEnabled
+ * @property bool|null $AutoCreate
+ * @property 'ACCOUNT_BASED'|null $GroupingType
+ * @property bool|null $AttachMissingPermission
  */
 class CreateApplicationRequest extends Request
 {
     /**
      * @param array{
-     *     ResourceGroupName?: string,
-     *     OpsCenterEnabled?: bool,
-     *     CWEMonitorEnabled?: bool,
-     *     OpsItemSNSTopicArn?: string,
-     *     SNSNotificationArn?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     AutoConfigEnabled?: bool,
-     *     AutoCreate?: bool,
-     *     GroupingType?: 'ACCOUNT_BASED',
-     *     AttachMissingPermission?: bool
+     *     ResourceGroupName?: string|null,
+     *     OpsCenterEnabled?: bool|null,
+     *     CWEMonitorEnabled?: bool|null,
+     *     OpsItemSNSTopicArn?: string|null,
+     *     SNSNotificationArn?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     AutoConfigEnabled?: bool|null,
+     *     AutoCreate?: bool|null,
+     *     GroupingType?: 'ACCOUNT_BASED'|null,
+     *     AttachMissingPermission?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\LaunchWizard\ListDeployments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $id
- * @property string $name
- * @property string $patternName
- * @property 'COMPLETED'|'CREATING'|'DELETE_IN_PROGRESS'|'DELETE_INITIATING'|'DELETE_FAILED'|'DELETED'|'FAILED'|'IN_PROGRESS'|'VALIDATING' $status
- * @property string $workloadName
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $id
+ * @property string|null $name
+ * @property string|null $patternName
+ * @property 'COMPLETED'|'CREATING'|'DELETE_IN_PROGRESS'|'DELETE_INITIATING'|'DELETE_FAILED'|'DELETED'|'FAILED'|'IN_PROGRESS'|'VALIDATING'|null $status
+ * @property string|null $workloadName
  */
 class DeploymentDataSummary extends Shape
 {
     /**
      * @param array{
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     id?: string,
-     *     name?: string,
-     *     patternName?: string,
-     *     status?: 'COMPLETED'|'CREATING'|'DELETE_IN_PROGRESS'|'DELETE_INITIATING'|'DELETE_FAILED'|'DELETED'|'FAILED'|'IN_PROGRESS'|'VALIDATING',
-     *     workloadName?: string
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     id?: string|null,
+     *     name?: string|null,
+     *     patternName?: string|null,
+     *     status?: 'COMPLETED'|'CREATING'|'DELETE_IN_PROGRESS'|'DELETE_INITIATING'|'DELETE_FAILED'|'DELETED'|'FAILED'|'IN_PROGRESS'|'VALIDATING'|null,
+     *     workloadName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

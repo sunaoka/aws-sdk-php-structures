@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityLake\ListDataLakes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $regions
+ * @property list<string>|null $regions
  */
 class ListDataLakesRequest extends Request
 {
     /**
-     * @param array{regions?: list<string>} $args
+     * @param array{regions?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

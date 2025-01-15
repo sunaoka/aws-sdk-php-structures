@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudFormation\DeleteStackInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Accounts
- * @property string $AccountsUrl
- * @property list<string> $OrganizationalUnitIds
- * @property 'NONE'|'INTERSECTION'|'DIFFERENCE'|'UNION' $AccountFilterType
+ * @property list<string>|null $Accounts
+ * @property string|null $AccountsUrl
+ * @property list<string>|null $OrganizationalUnitIds
+ * @property 'NONE'|'INTERSECTION'|'DIFFERENCE'|'UNION'|null $AccountFilterType
  */
 class DeploymentTargets extends Shape
 {
     /**
      * @param array{
-     *     Accounts?: list<string>,
-     *     AccountsUrl?: string,
-     *     OrganizationalUnitIds?: list<string>,
-     *     AccountFilterType?: 'NONE'|'INTERSECTION'|'DIFFERENCE'|'UNION'
+     *     Accounts?: list<string>|null,
+     *     AccountsUrl?: string|null,
+     *     OrganizationalUnitIds?: list<string>|null,
+     *     AccountFilterType?: 'NONE'|'INTERSECTION'|'DIFFERENCE'|'UNION'|null
      * } $args
      */
     public function __construct(array $args = [])

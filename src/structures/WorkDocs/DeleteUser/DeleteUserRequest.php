@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DeleteUser;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
+ * @property string|null $AuthenticationToken
  * @property string $UserId
  */
 class DeleteUserRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
+     *     AuthenticationToken?: string|null,
      *     UserId: string
      * } $args
      */

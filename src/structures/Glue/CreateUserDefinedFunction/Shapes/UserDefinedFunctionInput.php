@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Glue\CreateUserDefinedFunction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FunctionName
- * @property string $ClassName
- * @property string $OwnerName
- * @property 'USER'|'ROLE'|'GROUP' $OwnerType
- * @property list<ResourceUri> $ResourceUris
+ * @property string|null $FunctionName
+ * @property string|null $ClassName
+ * @property string|null $OwnerName
+ * @property 'USER'|'ROLE'|'GROUP'|null $OwnerType
+ * @property list<ResourceUri>|null $ResourceUris
  */
 class UserDefinedFunctionInput extends Shape
 {
     /**
      * @param array{
-     *     FunctionName?: string,
-     *     ClassName?: string,
-     *     OwnerName?: string,
-     *     OwnerType?: 'USER'|'ROLE'|'GROUP',
-     *     ResourceUris?: list<ResourceUri>
+     *     FunctionName?: string|null,
+     *     ClassName?: string|null,
+     *     OwnerName?: string|null,
+     *     OwnerType?: 'USER'|'ROLE'|'GROUP'|null,
+     *     ResourceUris?: list<ResourceUri>|null
      * } $args
      */
     public function __construct(array $args = [])

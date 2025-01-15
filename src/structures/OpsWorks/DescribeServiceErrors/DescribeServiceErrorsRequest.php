@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeServiceErrors;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $StackId
- * @property string $InstanceId
- * @property list<string> $ServiceErrorIds
+ * @property string|null $StackId
+ * @property string|null $InstanceId
+ * @property list<string>|null $ServiceErrorIds
  */
 class DescribeServiceErrorsRequest extends Request
 {
     /**
      * @param array{
-     *     StackId?: string,
-     *     InstanceId?: string,
-     *     ServiceErrorIds?: list<string>
+     *     StackId?: string|null,
+     *     InstanceId?: string|null,
+     *     ServiceErrorIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

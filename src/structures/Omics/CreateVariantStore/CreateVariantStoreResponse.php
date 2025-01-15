@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $id
- * @property Shapes\ReferenceItem $reference
+ * @property Shapes\ReferenceItem|null $reference
  * @property 'CREATING'|'UPDATING'|'DELETING'|'ACTIVE'|'FAILED' $status
  * @property string $name
  * @property \Aws\Api\DateTimeResult $creationTime

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Audit
- * @property bool $General
+ * @property bool|null $Audit
+ * @property bool|null $General
  */
 class AwsAmazonMqBrokerLogsPendingDetails extends Shape
 {
     /**
      * @param array{
-     *     Audit?: bool,
-     *     General?: bool
+     *     Audit?: bool|null,
+     *     General?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

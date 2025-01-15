@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $jobId
  * @property string $thingName
  * @property int $executionNumber
- * @property bool $force
- * @property string $namespaceId
+ * @property bool|null $force
+ * @property string|null $namespaceId
  */
 class DeleteJobExecutionRequest extends Request
 {
@@ -18,8 +18,8 @@ class DeleteJobExecutionRequest extends Request
      *     jobId: string,
      *     thingName: string,
      *     executionNumber: int,
-     *     force?: bool,
-     *     namespaceId?: string
+     *     force?: bool|null,
+     *     namespaceId?: string|null
      * } $args
      */
     public function __construct(array $args)

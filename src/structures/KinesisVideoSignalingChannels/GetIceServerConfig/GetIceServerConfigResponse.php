@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\KinesisVideoSignalingChannels\GetIceServerConfi
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\IceServer> $IceServerList
+ * @property list<Shapes\IceServer>|null $IceServerList
  */
 class GetIceServerConfigResponse extends Response
 {

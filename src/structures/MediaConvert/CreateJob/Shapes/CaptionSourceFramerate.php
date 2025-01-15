@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 1001> $FramerateDenominator
- * @property int<1, 60000> $FramerateNumerator
+ * @property int<1, 1001>|null $FramerateDenominator
+ * @property int<1, 60000>|null $FramerateNumerator
  */
 class CaptionSourceFramerate extends Shape
 {
     /**
      * @param array{
-     *     FramerateDenominator?: int<1, 1001>,
-     *     FramerateNumerator?: int<1, 60000>
+     *     FramerateDenominator?: int<1, 1001>|null,
+     *     FramerateNumerator?: int<1, 60000>|null
      * } $args
      */
     public function __construct(array $args = [])

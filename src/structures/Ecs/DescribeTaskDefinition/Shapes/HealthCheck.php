@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $command
- * @property int $interval
- * @property int $timeout
- * @property int $retries
- * @property int $startPeriod
+ * @property int|null $interval
+ * @property int|null $timeout
+ * @property int|null $retries
+ * @property int|null $startPeriod
  */
 class HealthCheck extends Shape
 {
     /**
      * @param array{
      *     command: list<string>,
-     *     interval?: int,
-     *     timeout?: int,
-     *     retries?: int,
-     *     startPeriod?: int
+     *     interval?: int|null,
+     *     timeout?: int|null,
+     *     retries?: int|null,
+     *     startPeriod?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ConditionalFormattingColor $TextColor
- * @property ConditionalFormattingIcon $Icon
+ * @property ConditionalFormattingColor|null $TextColor
+ * @property ConditionalFormattingIcon|null $Icon
  */
 class KPIComparisonValueConditionalFormatting extends Shape
 {
     /**
      * @param array{
-     *     TextColor?: ConditionalFormattingColor,
-     *     Icon?: ConditionalFormattingIcon
+     *     TextColor?: ConditionalFormattingColor|null,
+     *     Icon?: ConditionalFormattingIcon|null
      * } $args
      */
     public function __construct(array $args = [])

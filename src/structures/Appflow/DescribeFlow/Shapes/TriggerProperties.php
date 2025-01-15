@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ScheduledTriggerProperties $Scheduled
+ * @property ScheduledTriggerProperties|null $Scheduled
  */
 class TriggerProperties extends Shape
 {
     /**
-     * @param array{Scheduled?: ScheduledTriggerProperties} $args
+     * @param array{Scheduled?: ScheduledTriggerProperties|null} $args
      */
     public function __construct(array $args = [])
     {

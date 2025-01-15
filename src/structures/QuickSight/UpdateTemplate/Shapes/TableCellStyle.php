@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $Visibility
- * @property FontConfiguration $FontConfiguration
- * @property 'NONE'|'WRAP' $TextWrap
- * @property 'LEFT'|'CENTER'|'RIGHT'|'AUTO' $HorizontalTextAlignment
- * @property 'TOP'|'MIDDLE'|'BOTTOM'|'AUTO' $VerticalTextAlignment
- * @property string $BackgroundColor
- * @property int<8, 500> $Height
- * @property GlobalTableBorderOptions $Border
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
+ * @property FontConfiguration|null $FontConfiguration
+ * @property 'NONE'|'WRAP'|null $TextWrap
+ * @property 'LEFT'|'CENTER'|'RIGHT'|'AUTO'|null $HorizontalTextAlignment
+ * @property 'TOP'|'MIDDLE'|'BOTTOM'|'AUTO'|null $VerticalTextAlignment
+ * @property string|null $BackgroundColor
+ * @property int<8, 500>|null $Height
+ * @property GlobalTableBorderOptions|null $Border
  */
 class TableCellStyle extends Shape
 {
     /**
      * @param array{
-     *     Visibility?: 'HIDDEN'|'VISIBLE',
-     *     FontConfiguration?: FontConfiguration,
-     *     TextWrap?: 'NONE'|'WRAP',
-     *     HorizontalTextAlignment?: 'LEFT'|'CENTER'|'RIGHT'|'AUTO',
-     *     VerticalTextAlignment?: 'TOP'|'MIDDLE'|'BOTTOM'|'AUTO',
-     *     BackgroundColor?: string,
-     *     Height?: int<8, 500>,
-     *     Border?: GlobalTableBorderOptions
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     FontConfiguration?: FontConfiguration|null,
+     *     TextWrap?: 'NONE'|'WRAP'|null,
+     *     HorizontalTextAlignment?: 'LEFT'|'CENTER'|'RIGHT'|'AUTO'|null,
+     *     VerticalTextAlignment?: 'TOP'|'MIDDLE'|'BOTTOM'|'AUTO'|null,
+     *     BackgroundColor?: string|null,
+     *     Height?: int<8, 500>|null,
+     *     Border?: GlobalTableBorderOptions|null
      * } $args
      */
     public function __construct(array $args = [])

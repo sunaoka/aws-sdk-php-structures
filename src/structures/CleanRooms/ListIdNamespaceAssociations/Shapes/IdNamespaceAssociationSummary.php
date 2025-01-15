@@ -15,7 +15,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property IdNamespaceAssociationInputReferenceConfig $inputReferenceConfig
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property IdNamespaceAssociationInputReferencePropertiesSummary $inputReferenceProperties
  */
 class IdNamespaceAssociationSummary extends Shape
@@ -32,7 +32,7 @@ class IdNamespaceAssociationSummary extends Shape
      *     arn: string,
      *     inputReferenceConfig: IdNamespaceAssociationInputReferenceConfig,
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     inputReferenceProperties: IdNamespaceAssociationInputReferencePropertiesSummary
      * } $args
      */

@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CapacityReservationId
- * @property int $InstanceCount
- * @property \Aws\Api\DateTimeResult $EndDate
- * @property 'unlimited'|'limited' $EndDateType
- * @property bool $Accept
- * @property bool $DryRun
- * @property string $AdditionalInfo
- * @property 'open'|'targeted' $InstanceMatchCriteria
+ * @property int|null $InstanceCount
+ * @property \Aws\Api\DateTimeResult|null $EndDate
+ * @property 'unlimited'|'limited'|null $EndDateType
+ * @property bool|null $Accept
+ * @property bool|null $DryRun
+ * @property string|null $AdditionalInfo
+ * @property 'open'|'targeted'|null $InstanceMatchCriteria
  */
 class ModifyCapacityReservationRequest extends Request
 {
     /**
      * @param array{
      *     CapacityReservationId: string,
-     *     InstanceCount?: int,
-     *     EndDate?: \Aws\Api\DateTimeResult,
-     *     EndDateType?: 'unlimited'|'limited',
-     *     Accept?: bool,
-     *     DryRun?: bool,
-     *     AdditionalInfo?: string,
-     *     InstanceMatchCriteria?: 'open'|'targeted'
+     *     InstanceCount?: int|null,
+     *     EndDate?: \Aws\Api\DateTimeResult|null,
+     *     EndDateType?: 'unlimited'|'limited'|null,
+     *     Accept?: bool|null,
+     *     DryRun?: bool|null,
+     *     AdditionalInfo?: string|null,
+     *     InstanceMatchCriteria?: 'open'|'targeted'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeInstanceStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property string $OutpostArn
- * @property OperatorResponse $Operator
- * @property list<InstanceStatusEvent> $Events
- * @property string $InstanceId
- * @property InstanceState $InstanceState
- * @property InstanceStatusSummary $InstanceStatus
- * @property InstanceStatusSummary $SystemStatus
- * @property EbsStatusSummary $AttachedEbsStatus
+ * @property string|null $AvailabilityZone
+ * @property string|null $OutpostArn
+ * @property OperatorResponse|null $Operator
+ * @property list<InstanceStatusEvent>|null $Events
+ * @property string|null $InstanceId
+ * @property InstanceState|null $InstanceState
+ * @property InstanceStatusSummary|null $InstanceStatus
+ * @property InstanceStatusSummary|null $SystemStatus
+ * @property EbsStatusSummary|null $AttachedEbsStatus
  */
 class InstanceStatus extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     OutpostArn?: string,
-     *     Operator?: OperatorResponse,
-     *     Events?: list<InstanceStatusEvent>,
-     *     InstanceId?: string,
-     *     InstanceState?: InstanceState,
-     *     InstanceStatus?: InstanceStatusSummary,
-     *     SystemStatus?: InstanceStatusSummary,
-     *     AttachedEbsStatus?: EbsStatusSummary
+     *     AvailabilityZone?: string|null,
+     *     OutpostArn?: string|null,
+     *     Operator?: OperatorResponse|null,
+     *     Events?: list<InstanceStatusEvent>|null,
+     *     InstanceId?: string|null,
+     *     InstanceState?: InstanceState|null,
+     *     InstanceStatus?: InstanceStatusSummary|null,
+     *     SystemStatus?: InstanceStatusSummary|null,
+     *     AttachedEbsStatus?: EbsStatusSummary|null
      * } $args
      */
     public function __construct(array $args = [])

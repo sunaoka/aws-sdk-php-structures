@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $s3Bucket
- * @property string $s3BucketOwner
+ * @property string|null $s3BucketOwner
  * @property string $s3Key
  */
 class S3BucketSource extends Shape
@@ -14,7 +14,7 @@ class S3BucketSource extends Shape
     /**
      * @param array{
      *     s3Bucket: string,
-     *     s3BucketOwner?: string,
+     *     s3BucketOwner?: string|null,
      *     s3Key: string
      * } $args
      */

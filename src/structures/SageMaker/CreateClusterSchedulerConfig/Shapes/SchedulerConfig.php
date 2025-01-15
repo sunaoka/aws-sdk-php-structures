@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateClusterSchedulerConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PriorityClass> $PriorityClasses
- * @property 'Enabled'|'Disabled' $FairShare
+ * @property list<PriorityClass>|null $PriorityClasses
+ * @property 'Enabled'|'Disabled'|null $FairShare
  */
 class SchedulerConfig extends Shape
 {
     /**
      * @param array{
-     *     PriorityClasses?: list<PriorityClass>,
-     *     FairShare?: 'Enabled'|'Disabled'
+     *     PriorityClasses?: list<PriorityClass>|null,
+     *     FairShare?: 'Enabled'|'Disabled'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\MediaConnect\DescribeFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DataTransferSubscriberFeePercent
- * @property Encryption $Decryption
- * @property string $Description
- * @property string $EntitlementArn
- * @property string $IngestIp
- * @property int $IngestPort
- * @property list<MediaStreamSourceConfiguration> $MediaStreamSourceConfigurations
+ * @property int|null $DataTransferSubscriberFeePercent
+ * @property Encryption|null $Decryption
+ * @property string|null $Description
+ * @property string|null $EntitlementArn
+ * @property string|null $IngestIp
+ * @property int|null $IngestPort
+ * @property list<MediaStreamSourceConfiguration>|null $MediaStreamSourceConfigurations
  * @property string $Name
- * @property int $SenderControlPort
- * @property string $SenderIpAddress
+ * @property int|null $SenderControlPort
+ * @property string|null $SenderIpAddress
  * @property string $SourceArn
- * @property Transport $Transport
- * @property string $VpcInterfaceName
- * @property string $WhitelistCidr
- * @property GatewayBridgeSource $GatewayBridgeSource
+ * @property Transport|null $Transport
+ * @property string|null $VpcInterfaceName
+ * @property string|null $WhitelistCidr
+ * @property GatewayBridgeSource|null $GatewayBridgeSource
  */
 class Source extends Shape
 {
     /**
      * @param array{
-     *     DataTransferSubscriberFeePercent?: int,
-     *     Decryption?: Encryption,
-     *     Description?: string,
-     *     EntitlementArn?: string,
-     *     IngestIp?: string,
-     *     IngestPort?: int,
-     *     MediaStreamSourceConfigurations?: list<MediaStreamSourceConfiguration>,
+     *     DataTransferSubscriberFeePercent?: int|null,
+     *     Decryption?: Encryption|null,
+     *     Description?: string|null,
+     *     EntitlementArn?: string|null,
+     *     IngestIp?: string|null,
+     *     IngestPort?: int|null,
+     *     MediaStreamSourceConfigurations?: list<MediaStreamSourceConfiguration>|null,
      *     Name: string,
-     *     SenderControlPort?: int,
-     *     SenderIpAddress?: string,
+     *     SenderControlPort?: int|null,
+     *     SenderIpAddress?: string|null,
      *     SourceArn: string,
-     *     Transport?: Transport,
-     *     VpcInterfaceName?: string,
-     *     WhitelistCidr?: string,
-     *     GatewayBridgeSource?: GatewayBridgeSource
+     *     Transport?: Transport|null,
+     *     VpcInterfaceName?: string|null,
+     *     WhitelistCidr?: string|null,
+     *     GatewayBridgeSource?: GatewayBridgeSource|null
      * } $args
      */
     public function __construct(array $args)

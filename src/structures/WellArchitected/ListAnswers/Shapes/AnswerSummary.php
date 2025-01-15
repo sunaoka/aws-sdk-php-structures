@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\WellArchitected\ListAnswers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $QuestionId
- * @property string $PillarId
- * @property string $QuestionTitle
- * @property list<Choice> $Choices
- * @property list<string> $SelectedChoices
- * @property list<ChoiceAnswerSummary> $ChoiceAnswerSummaries
- * @property bool $IsApplicable
- * @property 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE' $Risk
- * @property 'OUT_OF_SCOPE'|'BUSINESS_PRIORITIES'|'ARCHITECTURE_CONSTRAINTS'|'OTHER'|'NONE' $Reason
- * @property 'PRIORITIZED'|'NON_PRIORITIZED' $QuestionType
- * @property JiraConfiguration $JiraConfiguration
+ * @property string|null $QuestionId
+ * @property string|null $PillarId
+ * @property string|null $QuestionTitle
+ * @property list<Choice>|null $Choices
+ * @property list<string>|null $SelectedChoices
+ * @property list<ChoiceAnswerSummary>|null $ChoiceAnswerSummaries
+ * @property bool|null $IsApplicable
+ * @property 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE'|null $Risk
+ * @property 'OUT_OF_SCOPE'|'BUSINESS_PRIORITIES'|'ARCHITECTURE_CONSTRAINTS'|'OTHER'|'NONE'|null $Reason
+ * @property 'PRIORITIZED'|'NON_PRIORITIZED'|null $QuestionType
+ * @property JiraConfiguration|null $JiraConfiguration
  */
 class AnswerSummary extends Shape
 {
     /**
      * @param array{
-     *     QuestionId?: string,
-     *     PillarId?: string,
-     *     QuestionTitle?: string,
-     *     Choices?: list<Choice>,
-     *     SelectedChoices?: list<string>,
-     *     ChoiceAnswerSummaries?: list<ChoiceAnswerSummary>,
-     *     IsApplicable?: bool,
-     *     Risk?: 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE',
-     *     Reason?: 'OUT_OF_SCOPE'|'BUSINESS_PRIORITIES'|'ARCHITECTURE_CONSTRAINTS'|'OTHER'|'NONE',
-     *     QuestionType?: 'PRIORITIZED'|'NON_PRIORITIZED',
-     *     JiraConfiguration?: JiraConfiguration
+     *     QuestionId?: string|null,
+     *     PillarId?: string|null,
+     *     QuestionTitle?: string|null,
+     *     Choices?: list<Choice>|null,
+     *     SelectedChoices?: list<string>|null,
+     *     ChoiceAnswerSummaries?: list<ChoiceAnswerSummary>|null,
+     *     IsApplicable?: bool|null,
+     *     Risk?: 'UNANSWERED'|'HIGH'|'MEDIUM'|'NONE'|'NOT_APPLICABLE'|null,
+     *     Reason?: 'OUT_OF_SCOPE'|'BUSINESS_PRIORITIES'|'ARCHITECTURE_CONSTRAINTS'|'OTHER'|'NONE'|null,
+     *     QuestionType?: 'PRIORITIZED'|'NON_PRIORITIZED'|null,
+     *     JiraConfiguration?: JiraConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

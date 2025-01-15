@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CostExplorer\UpdateCostCategoryDefinition\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property list<string> $Values
- * @property list<'EQUALS'|'ABSENT'|'STARTS_WITH'|'ENDS_WITH'|'CONTAINS'|'CASE_SENSITIVE'|'CASE_INSENSITIVE'|'GREATER_THAN_OR_EQUAL'> $MatchOptions
+ * @property string|null $Key
+ * @property list<string>|null $Values
+ * @property list<'EQUALS'|'ABSENT'|'STARTS_WITH'|'ENDS_WITH'|'CONTAINS'|'CASE_SENSITIVE'|'CASE_INSENSITIVE'|'GREATER_THAN_OR_EQUAL'>|null $MatchOptions
  */
 class CostCategoryValues extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     Values?: list<string>,
-     *     MatchOptions?: list<'EQUALS'|'ABSENT'|'STARTS_WITH'|'ENDS_WITH'|'CONTAINS'|'CASE_SENSITIVE'|'CASE_INSENSITIVE'|'GREATER_THAN_OR_EQUAL'>
+     *     Key?: string|null,
+     *     Values?: list<string>|null,
+     *     MatchOptions?: list<'EQUALS'|'ABSENT'|'STARTS_WITH'|'ENDS_WITH'|'CONTAINS'|'CASE_SENSITIVE'|'CASE_INSENSITIVE'|'GREATER_THAN_OR_EQUAL'>|null
      * } $args
      */
     public function __construct(array $args = [])

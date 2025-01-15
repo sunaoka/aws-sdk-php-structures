@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $datastoreId
  * @property string $datastoreName
  * @property 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'DELETED' $datastoreStatus
- * @property string $kmsKeyArn
- * @property string $datastoreArn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property string|null $kmsKeyArn
+ * @property string|null $datastoreArn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class DatastoreProperties extends Shape
 {
@@ -20,10 +20,10 @@ class DatastoreProperties extends Shape
      *     datastoreId: string,
      *     datastoreName: string,
      *     datastoreStatus: 'CREATING'|'CREATE_FAILED'|'ACTIVE'|'DELETING'|'DELETED',
-     *     kmsKeyArn?: string,
-     *     datastoreArn?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     kmsKeyArn?: string|null,
+     *     datastoreArn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

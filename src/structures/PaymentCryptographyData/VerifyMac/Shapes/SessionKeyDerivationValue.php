@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PaymentCryptographyData\VerifyMac\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationCryptogram
- * @property string $ApplicationTransactionCounter
+ * @property string|null $ApplicationCryptogram
+ * @property string|null $ApplicationTransactionCounter
  */
 class SessionKeyDerivationValue extends Shape
 {
     /**
      * @param array{
-     *     ApplicationCryptogram?: string,
-     *     ApplicationTransactionCounter?: string
+     *     ApplicationCryptogram?: string|null,
+     *     ApplicationTransactionCounter?: string|null
      * } $args
      */
     public function __construct(array $args = [])

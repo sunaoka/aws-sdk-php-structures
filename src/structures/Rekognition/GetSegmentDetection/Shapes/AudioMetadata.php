@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Rekognition\GetSegmentDetection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Codec
- * @property int<0, max> $DurationMillis
- * @property int<0, max> $SampleRate
- * @property int<0, max> $NumberOfChannels
+ * @property string|null $Codec
+ * @property int<0, max>|null $DurationMillis
+ * @property int<0, max>|null $SampleRate
+ * @property int<0, max>|null $NumberOfChannels
  */
 class AudioMetadata extends Shape
 {
     /**
      * @param array{
-     *     Codec?: string,
-     *     DurationMillis?: int<0, max>,
-     *     SampleRate?: int<0, max>,
-     *     NumberOfChannels?: int<0, max>
+     *     Codec?: string|null,
+     *     DurationMillis?: int<0, max>|null,
+     *     SampleRate?: int<0, max>|null,
+     *     NumberOfChannels?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

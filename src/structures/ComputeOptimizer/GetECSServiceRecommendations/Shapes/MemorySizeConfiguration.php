@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetECSServiceRecommendations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $memory
- * @property int $memoryReservation
+ * @property int|null $memory
+ * @property int|null $memoryReservation
  */
 class MemorySizeConfiguration extends Shape
 {
     /**
      * @param array{
-     *     memory?: int,
-     *     memoryReservation?: int
+     *     memory?: int|null,
+     *     memoryReservation?: int|null
      * } $args
      */
     public function __construct(array $args = [])

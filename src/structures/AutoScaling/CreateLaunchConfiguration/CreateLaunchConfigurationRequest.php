@@ -6,48 +6,48 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LaunchConfigurationName
- * @property string $ImageId
- * @property string $KeyName
- * @property list<string> $SecurityGroups
- * @property string $ClassicLinkVPCId
- * @property list<string> $ClassicLinkVPCSecurityGroups
- * @property string $UserData
- * @property string $InstanceId
- * @property string $InstanceType
- * @property string $KernelId
- * @property string $RamdiskId
- * @property list<Shapes\BlockDeviceMapping> $BlockDeviceMappings
- * @property Shapes\InstanceMonitoring $InstanceMonitoring
- * @property string $SpotPrice
- * @property string $IamInstanceProfile
- * @property bool $EbsOptimized
- * @property bool $AssociatePublicIpAddress
- * @property string $PlacementTenancy
- * @property Shapes\InstanceMetadataOptions $MetadataOptions
+ * @property string|null $ImageId
+ * @property string|null $KeyName
+ * @property list<string>|null $SecurityGroups
+ * @property string|null $ClassicLinkVPCId
+ * @property list<string>|null $ClassicLinkVPCSecurityGroups
+ * @property string|null $UserData
+ * @property string|null $InstanceId
+ * @property string|null $InstanceType
+ * @property string|null $KernelId
+ * @property string|null $RamdiskId
+ * @property list<Shapes\BlockDeviceMapping>|null $BlockDeviceMappings
+ * @property Shapes\InstanceMonitoring|null $InstanceMonitoring
+ * @property string|null $SpotPrice
+ * @property string|null $IamInstanceProfile
+ * @property bool|null $EbsOptimized
+ * @property bool|null $AssociatePublicIpAddress
+ * @property string|null $PlacementTenancy
+ * @property Shapes\InstanceMetadataOptions|null $MetadataOptions
  */
 class CreateLaunchConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     LaunchConfigurationName: string,
-     *     ImageId?: string,
-     *     KeyName?: string,
-     *     SecurityGroups?: list<string>,
-     *     ClassicLinkVPCId?: string,
-     *     ClassicLinkVPCSecurityGroups?: list<string>,
-     *     UserData?: string,
-     *     InstanceId?: string,
-     *     InstanceType?: string,
-     *     KernelId?: string,
-     *     RamdiskId?: string,
-     *     BlockDeviceMappings?: list<Shapes\BlockDeviceMapping>,
-     *     InstanceMonitoring?: Shapes\InstanceMonitoring,
-     *     SpotPrice?: string,
-     *     IamInstanceProfile?: string,
-     *     EbsOptimized?: bool,
-     *     AssociatePublicIpAddress?: bool,
-     *     PlacementTenancy?: string,
-     *     MetadataOptions?: Shapes\InstanceMetadataOptions
+     *     ImageId?: string|null,
+     *     KeyName?: string|null,
+     *     SecurityGroups?: list<string>|null,
+     *     ClassicLinkVPCId?: string|null,
+     *     ClassicLinkVPCSecurityGroups?: list<string>|null,
+     *     UserData?: string|null,
+     *     InstanceId?: string|null,
+     *     InstanceType?: string|null,
+     *     KernelId?: string|null,
+     *     RamdiskId?: string|null,
+     *     BlockDeviceMappings?: list<Shapes\BlockDeviceMapping>|null,
+     *     InstanceMonitoring?: Shapes\InstanceMonitoring|null,
+     *     SpotPrice?: string|null,
+     *     IamInstanceProfile?: string|null,
+     *     EbsOptimized?: bool|null,
+     *     AssociatePublicIpAddress?: bool|null,
+     *     PlacementTenancy?: string|null,
+     *     MetadataOptions?: Shapes\InstanceMetadataOptions|null
      * } $args
      */
     public function __construct(array $args)

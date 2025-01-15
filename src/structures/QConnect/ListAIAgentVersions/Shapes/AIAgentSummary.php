@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $aiAgentId
  * @property string $assistantArn
  * @property string $assistantId
- * @property AIAgentConfiguration $configuration
- * @property string $description
- * @property \Aws\Api\DateTimeResult $modifiedTime
+ * @property AIAgentConfiguration|null $configuration
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $modifiedTime
  * @property string $name
- * @property 'SYSTEM'|'CUSTOMER' $origin
- * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED' $status
- * @property array<string, string> $tags
+ * @property 'SYSTEM'|'CUSTOMER'|null $origin
+ * @property 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null $status
+ * @property array<string, string>|null $tags
  * @property 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE' $type
  * @property 'SAVED'|'PUBLISHED' $visibilityStatus
  */
@@ -27,13 +27,13 @@ class AIAgentSummary extends Shape
      *     aiAgentId: string,
      *     assistantArn: string,
      *     assistantId: string,
-     *     configuration?: AIAgentConfiguration,
-     *     description?: string,
-     *     modifiedTime?: \Aws\Api\DateTimeResult,
+     *     configuration?: AIAgentConfiguration|null,
+     *     description?: string|null,
+     *     modifiedTime?: \Aws\Api\DateTimeResult|null,
      *     name: string,
-     *     origin?: 'SYSTEM'|'CUSTOMER',
-     *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED',
-     *     tags?: array<string, string>,
+     *     origin?: 'SYSTEM'|'CUSTOMER'|null,
+     *     status?: 'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETED'|null,
+     *     tags?: array<string, string>|null,
      *     type: 'MANUAL_SEARCH'|'ANSWER_RECOMMENDATION'|'SELF_SERVICE',
      *     visibilityStatus: 'SAVED'|'PUBLISHED'
      * } $args

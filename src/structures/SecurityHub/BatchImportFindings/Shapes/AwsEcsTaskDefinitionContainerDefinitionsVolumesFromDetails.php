@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ReadOnly
- * @property string $SourceContainer
+ * @property bool|null $ReadOnly
+ * @property string|null $SourceContainer
  */
 class AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetails extends Shape
 {
     /**
      * @param array{
-     *     ReadOnly?: bool,
-     *     SourceContainer?: string
+     *     ReadOnly?: bool|null,
+     *     SourceContainer?: string|null
      * } $args
      */
     public function __construct(array $args = [])

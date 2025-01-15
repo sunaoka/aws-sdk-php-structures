@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ResourceARN
- * @property string $RoleARN
+ * @property string|null $RoleARN
  */
 class KinesisStreamsInputDescription extends Shape
 {
     /**
      * @param array{
      *     ResourceARN: string,
-     *     RoleARN?: string
+     *     RoleARN?: string|null
      * } $args
      */
     public function __construct(array $args)

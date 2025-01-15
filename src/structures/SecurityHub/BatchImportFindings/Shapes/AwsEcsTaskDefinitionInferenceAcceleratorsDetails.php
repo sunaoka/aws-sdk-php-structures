@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeviceName
- * @property string $DeviceType
+ * @property string|null $DeviceName
+ * @property string|null $DeviceType
  */
 class AwsEcsTaskDefinitionInferenceAcceleratorsDetails extends Shape
 {
     /**
      * @param array{
-     *     DeviceName?: string,
-     *     DeviceType?: string
+     *     DeviceName?: string|null,
+     *     DeviceType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

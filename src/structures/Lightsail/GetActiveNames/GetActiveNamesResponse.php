@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetActiveNames;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $activeNames
- * @property string $nextPageToken
+ * @property list<string>|null $activeNames
+ * @property string|null $nextPageToken
  */
 class GetActiveNamesResponse extends Response
 {

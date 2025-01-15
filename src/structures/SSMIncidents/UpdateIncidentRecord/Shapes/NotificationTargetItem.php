@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SSMIncidents\UpdateIncidentRecord\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $snsTopicArn
+ * @property string|null $snsTopicArn
  */
 class NotificationTargetItem extends Shape
 {
     /**
-     * @param array{snsTopicArn?: string} $args
+     * @param array{snsTopicArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetTransitGatewayRegistrations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'|'FAILED' $Code
- * @property string $Message
+ * @property 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'|'FAILED'|null $Code
+ * @property string|null $Message
  */
 class TransitGatewayRegistrationStateReason extends Shape
 {
     /**
      * @param array{
-     *     Code?: 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'|'FAILED',
-     *     Message?: string
+     *     Code?: 'PENDING'|'AVAILABLE'|'DELETING'|'DELETED'|'FAILED'|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

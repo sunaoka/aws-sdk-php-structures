@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ClientVpnEndpointId
  * @property string $AssociationId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DisassociateClientVpnTargetNetworkRequest extends Request
 {
@@ -15,7 +15,7 @@ class DisassociateClientVpnTargetNetworkRequest extends Request
      * @param array{
      *     ClientVpnEndpointId: string,
      *     AssociationId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

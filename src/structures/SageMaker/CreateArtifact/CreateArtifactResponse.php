@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateArtifact;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ArtifactArn
+ * @property string|null $ArtifactArn
  */
 class CreateArtifactResponse extends Response
 {

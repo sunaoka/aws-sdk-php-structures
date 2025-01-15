@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $id
- * @property string $name
+ * @property string|null $name
  * @property 'PROJECT' $type
  */
 class NotificationResource extends Shape
@@ -14,7 +14,7 @@ class NotificationResource extends Shape
     /**
      * @param array{
      *     id: string,
-     *     name?: string,
+     *     name?: string|null,
      *     type: 'PROJECT'
      * } $args
      */

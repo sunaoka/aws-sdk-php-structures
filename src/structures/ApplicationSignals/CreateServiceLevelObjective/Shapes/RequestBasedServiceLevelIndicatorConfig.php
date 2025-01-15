@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property RequestBasedServiceLevelIndicatorMetricConfig $RequestBasedSliMetricConfig
- * @property double $MetricThreshold
- * @property 'GreaterThanOrEqualTo'|'GreaterThan'|'LessThan'|'LessThanOrEqualTo' $ComparisonOperator
+ * @property double|null $MetricThreshold
+ * @property 'GreaterThanOrEqualTo'|'GreaterThan'|'LessThan'|'LessThanOrEqualTo'|null $ComparisonOperator
  */
 class RequestBasedServiceLevelIndicatorConfig extends Shape
 {
     /**
      * @param array{
      *     RequestBasedSliMetricConfig: RequestBasedServiceLevelIndicatorMetricConfig,
-     *     MetricThreshold?: double,
-     *     ComparisonOperator?: 'GreaterThanOrEqualTo'|'GreaterThan'|'LessThan'|'LessThanOrEqualTo'
+     *     MetricThreshold?: double|null,
+     *     ComparisonOperator?: 'GreaterThanOrEqualTo'|'GreaterThan'|'LessThan'|'LessThanOrEqualTo'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\GetGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GroupName
- * @property string $UserPoolId
- * @property string $Description
- * @property string $RoleArn
- * @property int<0, max> $Precedence
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
- * @property \Aws\Api\DateTimeResult $CreationDate
+ * @property string|null $GroupName
+ * @property string|null $UserPoolId
+ * @property string|null $Description
+ * @property string|null $RoleArn
+ * @property int<0, max>|null $Precedence
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
  */
 class GroupType extends Shape
 {
     /**
      * @param array{
-     *     GroupName?: string,
-     *     UserPoolId?: string,
-     *     Description?: string,
-     *     RoleArn?: string,
-     *     Precedence?: int<0, max>,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     CreationDate?: \Aws\Api\DateTimeResult
+     *     GroupName?: string|null,
+     *     UserPoolId?: string|null,
+     *     Description?: string|null,
+     *     RoleArn?: string|null,
+     *     Precedence?: int<0, max>|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

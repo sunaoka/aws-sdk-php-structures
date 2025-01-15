@@ -8,19 +8,19 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'CANCELLING'|'CANCELLED' $deploymentStatus
- * @property string $deploymentStatusMessage
- * @property string $description
+ * @property string|null $deploymentStatusMessage
+ * @property string|null $description
  * @property string $environmentName
- * @property string $lastAttemptedDeploymentId
- * @property string $lastClientRequestToken
- * @property \Aws\Api\DateTimeResult $lastDeploymentAttemptedAt
- * @property \Aws\Api\DateTimeResult $lastDeploymentSucceededAt
+ * @property string|null $lastAttemptedDeploymentId
+ * @property string|null $lastClientRequestToken
+ * @property \Aws\Api\DateTimeResult|null $lastDeploymentAttemptedAt
+ * @property \Aws\Api\DateTimeResult|null $lastDeploymentSucceededAt
  * @property \Aws\Api\DateTimeResult $lastModifiedAt
- * @property string $lastSucceededDeploymentId
+ * @property string|null $lastSucceededDeploymentId
  * @property string $name
- * @property string $serviceInstanceName
- * @property string $serviceName
- * @property string $serviceSpec
+ * @property string|null $serviceInstanceName
+ * @property string|null $serviceName
+ * @property string|null $serviceSpec
  */
 class Component extends Shape
 {
@@ -29,19 +29,19 @@ class Component extends Shape
      *     arn: string,
      *     createdAt: \Aws\Api\DateTimeResult,
      *     deploymentStatus: 'IN_PROGRESS'|'FAILED'|'SUCCEEDED'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'DELETE_COMPLETE'|'CANCELLING'|'CANCELLED',
-     *     deploymentStatusMessage?: string,
-     *     description?: string,
+     *     deploymentStatusMessage?: string|null,
+     *     description?: string|null,
      *     environmentName: string,
-     *     lastAttemptedDeploymentId?: string,
-     *     lastClientRequestToken?: string,
-     *     lastDeploymentAttemptedAt?: \Aws\Api\DateTimeResult,
-     *     lastDeploymentSucceededAt?: \Aws\Api\DateTimeResult,
+     *     lastAttemptedDeploymentId?: string|null,
+     *     lastClientRequestToken?: string|null,
+     *     lastDeploymentAttemptedAt?: \Aws\Api\DateTimeResult|null,
+     *     lastDeploymentSucceededAt?: \Aws\Api\DateTimeResult|null,
      *     lastModifiedAt: \Aws\Api\DateTimeResult,
-     *     lastSucceededDeploymentId?: string,
+     *     lastSucceededDeploymentId?: string|null,
      *     name: string,
-     *     serviceInstanceName?: string,
-     *     serviceName?: string,
-     *     serviceSpec?: string
+     *     serviceInstanceName?: string|null,
+     *     serviceName?: string|null,
+     *     serviceSpec?: string|null
      * } $args
      */
     public function __construct(array $args)

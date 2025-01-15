@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $tunnelId
- * @property bool $delete
+ * @property bool|null $delete
  */
 class CloseTunnelRequest extends Request
 {
     /**
      * @param array{
      *     tunnelId: string,
-     *     delete?: bool
+     *     delete?: bool|null
      * } $args
      */
     public function __construct(array $args)

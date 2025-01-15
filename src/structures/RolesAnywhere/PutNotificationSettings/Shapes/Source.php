@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RolesAnywhere\PutNotificationSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SourceData $sourceData
- * @property 'AWS_ACM_PCA'|'CERTIFICATE_BUNDLE'|'SELF_SIGNED_REPOSITORY' $sourceType
+ * @property SourceData|null $sourceData
+ * @property 'AWS_ACM_PCA'|'CERTIFICATE_BUNDLE'|'SELF_SIGNED_REPOSITORY'|null $sourceType
  */
 class Source extends Shape
 {
     /**
      * @param array{
-     *     sourceData?: SourceData,
-     *     sourceType?: 'AWS_ACM_PCA'|'CERTIFICATE_BUNDLE'|'SELF_SIGNED_REPOSITORY'
+     *     sourceData?: SourceData|null,
+     *     sourceType?: 'AWS_ACM_PCA'|'CERTIFICATE_BUNDLE'|'SELF_SIGNED_REPOSITORY'|null
      * } $args
      */
     public function __construct(array $args = [])

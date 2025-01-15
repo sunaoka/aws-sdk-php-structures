@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AnalysisId
- * @property string $Arn
- * @property string $Name
- * @property 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED' $Status
- * @property list<AnalysisError> $Errors
- * @property list<string> $DataSetArns
- * @property string $ThemeArn
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property list<Sheet> $Sheets
+ * @property string|null $AnalysisId
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null $Status
+ * @property list<AnalysisError>|null $Errors
+ * @property list<string>|null $DataSetArns
+ * @property string|null $ThemeArn
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
+ * @property list<Sheet>|null $Sheets
  */
 class Analysis extends Shape
 {
     /**
      * @param array{
-     *     AnalysisId?: string,
-     *     Arn?: string,
-     *     Name?: string,
-     *     Status?: 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED',
-     *     Errors?: list<AnalysisError>,
-     *     DataSetArns?: list<string>,
-     *     ThemeArn?: string,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     Sheets?: list<Sheet>
+     *     AnalysisId?: string|null,
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     Status?: 'CREATION_IN_PROGRESS'|'CREATION_SUCCESSFUL'|'CREATION_FAILED'|'UPDATE_IN_PROGRESS'|'UPDATE_SUCCESSFUL'|'UPDATE_FAILED'|'DELETED'|null,
+     *     Errors?: list<AnalysisError>|null,
+     *     DataSetArns?: list<string>|null,
+     *     ThemeArn?: string|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     Sheets?: list<Sheet>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\ScheduleRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DeviceFilter> $filters
- * @property int $matchedDevicesCount
- * @property int $maxDevices
+ * @property list<DeviceFilter>|null $filters
+ * @property int|null $matchedDevicesCount
+ * @property int|null $maxDevices
  */
 class DeviceSelectionResult extends Shape
 {
     /**
      * @param array{
-     *     filters?: list<DeviceFilter>,
-     *     matchedDevicesCount?: int,
-     *     maxDevices?: int
+     *     filters?: list<DeviceFilter>|null,
+     *     matchedDevicesCount?: int|null,
+     *     maxDevices?: int|null
      * } $args
      */
     public function __construct(array $args = [])

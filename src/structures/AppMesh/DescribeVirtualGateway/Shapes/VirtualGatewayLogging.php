@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppMesh\DescribeVirtualGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualGatewayAccessLog $accessLog
+ * @property VirtualGatewayAccessLog|null $accessLog
  */
 class VirtualGatewayLogging extends Shape
 {
     /**
-     * @param array{accessLog?: VirtualGatewayAccessLog} $args
+     * @param array{accessLog?: VirtualGatewayAccessLog|null} $args
      */
     public function __construct(array $args = [])
     {

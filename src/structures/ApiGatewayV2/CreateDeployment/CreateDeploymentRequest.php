@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApiId
- * @property string $Description
- * @property string $StageName
+ * @property string|null $Description
+ * @property string|null $StageName
  */
 class CreateDeploymentRequest extends Request
 {
     /**
      * @param array{
      *     ApiId: string,
-     *     Description?: string,
-     *     StageName?: string
+     *     Description?: string|null,
+     *     StageName?: string|null
      * } $args
      */
     public function __construct(array $args)

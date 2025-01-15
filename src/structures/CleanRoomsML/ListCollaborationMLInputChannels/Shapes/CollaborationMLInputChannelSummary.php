@@ -14,7 +14,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $mlInputChannelArn
  * @property 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'INACTIVE' $status
  * @property string $creatorAccountId
- * @property string $description
+ * @property string|null $description
  */
 class CollaborationMLInputChannelSummary extends Shape
 {
@@ -29,7 +29,7 @@ class CollaborationMLInputChannelSummary extends Shape
      *     mlInputChannelArn: string,
      *     status: 'CREATE_PENDING'|'CREATE_IN_PROGRESS'|'CREATE_FAILED'|'ACTIVE'|'DELETE_PENDING'|'DELETE_IN_PROGRESS'|'DELETE_FAILED'|'INACTIVE',
      *     creatorAccountId: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

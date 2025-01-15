@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $ImageName
- * @property string $ImageArn
+ * @property string|null $ImageName
+ * @property string|null $ImageArn
  * @property string $InstanceType
- * @property string $Description
- * @property string $DisplayName
- * @property Shapes\VpcConfig $VpcConfig
- * @property string $IamRoleArn
- * @property bool $EnableDefaultInternetAccess
- * @property Shapes\DomainJoinInfo $DomainJoinInfo
- * @property string $AppstreamAgentVersion
- * @property array<string, string> $Tags
- * @property list<Shapes\AccessEndpoint> $AccessEndpoints
+ * @property string|null $Description
+ * @property string|null $DisplayName
+ * @property Shapes\VpcConfig|null $VpcConfig
+ * @property string|null $IamRoleArn
+ * @property bool|null $EnableDefaultInternetAccess
+ * @property Shapes\DomainJoinInfo|null $DomainJoinInfo
+ * @property string|null $AppstreamAgentVersion
+ * @property array<string, string>|null $Tags
+ * @property list<Shapes\AccessEndpoint>|null $AccessEndpoints
  */
 class CreateImageBuilderRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     ImageName?: string,
-     *     ImageArn?: string,
+     *     ImageName?: string|null,
+     *     ImageArn?: string|null,
      *     InstanceType: string,
-     *     Description?: string,
-     *     DisplayName?: string,
-     *     VpcConfig?: Shapes\VpcConfig,
-     *     IamRoleArn?: string,
-     *     EnableDefaultInternetAccess?: bool,
-     *     DomainJoinInfo?: Shapes\DomainJoinInfo,
-     *     AppstreamAgentVersion?: string,
-     *     Tags?: array<string, string>,
-     *     AccessEndpoints?: list<Shapes\AccessEndpoint>
+     *     Description?: string|null,
+     *     DisplayName?: string|null,
+     *     VpcConfig?: Shapes\VpcConfig|null,
+     *     IamRoleArn?: string|null,
+     *     EnableDefaultInternetAccess?: bool|null,
+     *     DomainJoinInfo?: Shapes\DomainJoinInfo|null,
+     *     AppstreamAgentVersion?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     AccessEndpoints?: list<Shapes\AccessEndpoint>|null
      * } $args
      */
     public function __construct(array $args)

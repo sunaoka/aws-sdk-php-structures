@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Redshift\DeleteCluster;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Cluster $Cluster
+ * @property Shapes\Cluster|null $Cluster
  */
 class DeleteClusterResponse extends Response
 {

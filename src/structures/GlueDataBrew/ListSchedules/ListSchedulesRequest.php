@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\ListSchedules;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $JobName
- * @property int<1, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $JobName
+ * @property int<1, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListSchedulesRequest extends Request
 {
     /**
      * @param array{
-     *     JobName?: string,
-     *     MaxResults?: int<1, 100>,
-     *     NextToken?: string
+     *     JobName?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

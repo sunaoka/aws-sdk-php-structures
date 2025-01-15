@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GroupName
  * @property 'opted-in'|'not-opted-in' $OptInStatus
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class ModifyAvailabilityZoneGroupRequest extends Request
 {
@@ -15,7 +15,7 @@ class ModifyAvailabilityZoneGroupRequest extends Request
      * @param array{
      *     GroupName: string,
      *     OptInStatus: 'opted-in'|'not-opted-in',
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

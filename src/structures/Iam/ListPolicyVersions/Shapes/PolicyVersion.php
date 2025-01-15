@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Iam\ListPolicyVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Document
- * @property string $VersionId
- * @property bool $IsDefaultVersion
- * @property \Aws\Api\DateTimeResult $CreateDate
+ * @property string|null $Document
+ * @property string|null $VersionId
+ * @property bool|null $IsDefaultVersion
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
  */
 class PolicyVersion extends Shape
 {
     /**
      * @param array{
-     *     Document?: string,
-     *     VersionId?: string,
-     *     IsDefaultVersion?: bool,
-     *     CreateDate?: \Aws\Api\DateTimeResult
+     *     Document?: string|null,
+     *     VersionId?: string|null,
+     *     IsDefaultVersion?: bool|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

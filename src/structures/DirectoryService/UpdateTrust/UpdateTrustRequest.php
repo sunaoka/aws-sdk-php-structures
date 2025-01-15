@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TrustId
- * @property 'Enabled'|'Disabled' $SelectiveAuth
+ * @property 'Enabled'|'Disabled'|null $SelectiveAuth
  */
 class UpdateTrustRequest extends Request
 {
     /**
      * @param array{
      *     TrustId: string,
-     *     SelectiveAuth?: 'Enabled'|'Disabled'
+     *     SelectiveAuth?: 'Enabled'|'Disabled'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\DescribeChannelModeratedByApp
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ChannelModeratedByAppInstanceUserSummary $Channel
+ * @property Shapes\ChannelModeratedByAppInstanceUserSummary|null $Channel
  */
 class DescribeChannelModeratedByAppInstanceUserResponse extends Response
 {

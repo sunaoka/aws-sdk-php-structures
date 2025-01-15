@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ses\DescribeConfigurationSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Require'|'Optional' $TlsPolicy
+ * @property 'Require'|'Optional'|null $TlsPolicy
  */
 class DeliveryOptions extends Shape
 {
     /**
-     * @param array{TlsPolicy?: 'Require'|'Optional'} $args
+     * @param array{TlsPolicy?: 'Require'|'Optional'|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\ListServicePrincipalNames;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\ServicePrincipalNameSummary> $ServicePrincipalNames
+ * @property string|null $NextToken
+ * @property list<Shapes\ServicePrincipalNameSummary>|null $ServicePrincipalNames
  */
 class ListServicePrincipalNamesResponse extends Response
 {

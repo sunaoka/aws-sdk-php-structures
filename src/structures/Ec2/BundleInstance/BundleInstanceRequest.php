@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property Shapes\Storage $Storage
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class BundleInstanceRequest extends Request
 {
@@ -15,7 +15,7 @@ class BundleInstanceRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     Storage: Shapes\Storage,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $restApiId
- * @property string $position
- * @property int $limit
- * @property list<string> $embed
+ * @property string|null $position
+ * @property int|null $limit
+ * @property list<string>|null $embed
  */
 class GetResourcesRequest extends Request
 {
     /**
      * @param array{
      *     restApiId: string,
-     *     position?: string,
-     *     limit?: int,
-     *     embed?: list<string>
+     *     position?: string|null,
+     *     limit?: int|null,
+     *     embed?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

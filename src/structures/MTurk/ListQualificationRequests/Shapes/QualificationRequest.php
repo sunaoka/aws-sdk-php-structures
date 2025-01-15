@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MTurk\ListQualificationRequests\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $QualificationRequestId
- * @property string $QualificationTypeId
- * @property string $WorkerId
- * @property string $Test
- * @property string $Answer
- * @property \Aws\Api\DateTimeResult $SubmitTime
+ * @property string|null $QualificationRequestId
+ * @property string|null $QualificationTypeId
+ * @property string|null $WorkerId
+ * @property string|null $Test
+ * @property string|null $Answer
+ * @property \Aws\Api\DateTimeResult|null $SubmitTime
  */
 class QualificationRequest extends Shape
 {
     /**
      * @param array{
-     *     QualificationRequestId?: string,
-     *     QualificationTypeId?: string,
-     *     WorkerId?: string,
-     *     Test?: string,
-     *     Answer?: string,
-     *     SubmitTime?: \Aws\Api\DateTimeResult
+     *     QualificationRequestId?: string|null,
+     *     QualificationTypeId?: string|null,
+     *     WorkerId?: string|null,
+     *     Test?: string|null,
+     *     Answer?: string|null,
+     *     SubmitTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

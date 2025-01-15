@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Health\DescribeEventsForOrganization\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $service
- * @property string $eventTypeCode
- * @property 'issue'|'accountNotification'|'scheduledChange'|'investigation' $eventTypeCategory
- * @property 'PUBLIC'|'ACCOUNT_SPECIFIC'|'NONE' $eventScopeCode
- * @property string $region
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property 'open'|'closed'|'upcoming' $statusCode
+ * @property string|null $arn
+ * @property string|null $service
+ * @property string|null $eventTypeCode
+ * @property 'issue'|'accountNotification'|'scheduledChange'|'investigation'|null $eventTypeCategory
+ * @property 'PUBLIC'|'ACCOUNT_SPECIFIC'|'NONE'|null $eventScopeCode
+ * @property string|null $region
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
+ * @property 'open'|'closed'|'upcoming'|null $statusCode
  */
 class OrganizationEvent extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     service?: string,
-     *     eventTypeCode?: string,
-     *     eventTypeCategory?: 'issue'|'accountNotification'|'scheduledChange'|'investigation',
-     *     eventScopeCode?: 'PUBLIC'|'ACCOUNT_SPECIFIC'|'NONE',
-     *     region?: string,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     statusCode?: 'open'|'closed'|'upcoming'
+     *     arn?: string|null,
+     *     service?: string|null,
+     *     eventTypeCode?: string|null,
+     *     eventTypeCategory?: 'issue'|'accountNotification'|'scheduledChange'|'investigation'|null,
+     *     eventScopeCode?: 'PUBLIC'|'ACCOUNT_SPECIFIC'|'NONE'|null,
+     *     region?: string|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     statusCode?: 'open'|'closed'|'upcoming'|null
      * } $args
      */
     public function __construct(array $args = [])

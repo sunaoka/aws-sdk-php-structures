@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ssm\GetExecutionPreview\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Count
- * @property string $TargetType
+ * @property int|null $Count
+ * @property string|null $TargetType
  */
 class TargetPreview extends Shape
 {
     /**
      * @param array{
-     *     Count?: int,
-     *     TargetType?: string
+     *     Count?: int|null,
+     *     TargetType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

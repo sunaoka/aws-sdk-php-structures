@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AppRunner\PauseService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Cpu
- * @property string $Memory
- * @property string $InstanceRoleArn
+ * @property string|null $Cpu
+ * @property string|null $Memory
+ * @property string|null $InstanceRoleArn
  */
 class InstanceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Cpu?: string,
-     *     Memory?: string,
-     *     InstanceRoleArn?: string
+     *     Cpu?: string|null,
+     *     Memory?: string|null,
+     *     InstanceRoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

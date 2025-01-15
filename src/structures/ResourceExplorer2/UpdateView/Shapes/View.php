@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ResourceExplorer2\UpdateView\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SearchFilter $Filters
- * @property list<IncludedProperty> $IncludedProperties
- * @property \Aws\Api\DateTimeResult $LastUpdatedAt
- * @property string $Owner
- * @property string $Scope
- * @property string $ViewArn
+ * @property SearchFilter|null $Filters
+ * @property list<IncludedProperty>|null $IncludedProperties
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property string|null $Owner
+ * @property string|null $Scope
+ * @property string|null $ViewArn
  */
 class View extends Shape
 {
     /**
      * @param array{
-     *     Filters?: SearchFilter,
-     *     IncludedProperties?: list<IncludedProperty>,
-     *     LastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     Owner?: string,
-     *     Scope?: string,
-     *     ViewArn?: string
+     *     Filters?: SearchFilter|null,
+     *     IncludedProperties?: list<IncludedProperty>|null,
+     *     LastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     Owner?: string|null,
+     *     Scope?: string|null,
+     *     ViewArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PRIMARY_YAXIS'|'SECONDARY_YAXIS' $AxisBinding
- * @property LineChartLineStyleSettings $LineStyleSettings
- * @property LineChartMarkerStyleSettings $MarkerStyleSettings
+ * @property 'PRIMARY_YAXIS'|'SECONDARY_YAXIS'|null $AxisBinding
+ * @property LineChartLineStyleSettings|null $LineStyleSettings
+ * @property LineChartMarkerStyleSettings|null $MarkerStyleSettings
  */
 class LineChartDefaultSeriesSettings extends Shape
 {
     /**
      * @param array{
-     *     AxisBinding?: 'PRIMARY_YAXIS'|'SECONDARY_YAXIS',
-     *     LineStyleSettings?: LineChartLineStyleSettings,
-     *     MarkerStyleSettings?: LineChartMarkerStyleSettings
+     *     AxisBinding?: 'PRIMARY_YAXIS'|'SECONDARY_YAXIS'|null,
+     *     LineStyleSettings?: LineChartLineStyleSettings|null,
+     *     MarkerStyleSettings?: LineChartMarkerStyleSettings|null
      * } $args
      */
     public function __construct(array $args = [])

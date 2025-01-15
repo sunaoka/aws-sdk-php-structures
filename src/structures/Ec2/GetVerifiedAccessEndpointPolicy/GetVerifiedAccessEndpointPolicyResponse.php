@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\GetVerifiedAccessEndpointPolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property bool $PolicyEnabled
- * @property string $PolicyDocument
+ * @property bool|null $PolicyEnabled
+ * @property string|null $PolicyDocument
  */
 class GetVerifiedAccessEndpointPolicyResponse extends Response
 {

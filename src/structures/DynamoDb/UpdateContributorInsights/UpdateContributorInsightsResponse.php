@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\DynamoDb\UpdateContributorInsights;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TableName
- * @property string $IndexName
- * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'FAILED' $ContributorInsightsStatus
+ * @property string|null $TableName
+ * @property string|null $IndexName
+ * @property 'ENABLING'|'ENABLED'|'DISABLING'|'DISABLED'|'FAILED'|null $ContributorInsightsStatus
  */
 class UpdateContributorInsightsResponse extends Response
 {

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeOrganizationConformancePa
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\OrganizationConformancePack> $OrganizationConformancePacks
- * @property string $NextToken
+ * @property list<Shapes\OrganizationConformancePack>|null $OrganizationConformancePacks
+ * @property string|null $NextToken
  */
 class DescribeOrganizationConformancePacksResponse extends Response
 {

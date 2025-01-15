@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\FMS\GetViolationDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<StatelessRuleGroup> $StatelessRuleGroups
- * @property list<string> $StatelessDefaultActions
- * @property list<string> $StatelessFragmentDefaultActions
- * @property list<string> $StatelessCustomActions
- * @property list<StatefulRuleGroup> $StatefulRuleGroups
- * @property list<string> $StatefulDefaultActions
- * @property StatefulEngineOptions $StatefulEngineOptions
+ * @property list<StatelessRuleGroup>|null $StatelessRuleGroups
+ * @property list<string>|null $StatelessDefaultActions
+ * @property list<string>|null $StatelessFragmentDefaultActions
+ * @property list<string>|null $StatelessCustomActions
+ * @property list<StatefulRuleGroup>|null $StatefulRuleGroups
+ * @property list<string>|null $StatefulDefaultActions
+ * @property StatefulEngineOptions|null $StatefulEngineOptions
  */
 class NetworkFirewallPolicyDescription extends Shape
 {
     /**
      * @param array{
-     *     StatelessRuleGroups?: list<StatelessRuleGroup>,
-     *     StatelessDefaultActions?: list<string>,
-     *     StatelessFragmentDefaultActions?: list<string>,
-     *     StatelessCustomActions?: list<string>,
-     *     StatefulRuleGroups?: list<StatefulRuleGroup>,
-     *     StatefulDefaultActions?: list<string>,
-     *     StatefulEngineOptions?: StatefulEngineOptions
+     *     StatelessRuleGroups?: list<StatelessRuleGroup>|null,
+     *     StatelessDefaultActions?: list<string>|null,
+     *     StatelessFragmentDefaultActions?: list<string>|null,
+     *     StatelessCustomActions?: list<string>|null,
+     *     StatefulRuleGroups?: list<StatefulRuleGroup>|null,
+     *     StatefulDefaultActions?: list<string>|null,
+     *     StatefulEngineOptions?: StatefulEngineOptions|null
      * } $args
      */
     public function __construct(array $args = [])

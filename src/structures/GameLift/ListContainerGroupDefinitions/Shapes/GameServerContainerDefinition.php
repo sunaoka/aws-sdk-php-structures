@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\GameLift\ListContainerGroupDefinitions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContainerName
- * @property list<ContainerDependency> $DependsOn
- * @property list<ContainerMountPoint> $MountPoints
- * @property list<ContainerEnvironment> $EnvironmentOverride
- * @property string $ImageUri
- * @property ContainerPortConfiguration $PortConfiguration
- * @property string $ResolvedImageDigest
- * @property string $ServerSdkVersion
+ * @property string|null $ContainerName
+ * @property list<ContainerDependency>|null $DependsOn
+ * @property list<ContainerMountPoint>|null $MountPoints
+ * @property list<ContainerEnvironment>|null $EnvironmentOverride
+ * @property string|null $ImageUri
+ * @property ContainerPortConfiguration|null $PortConfiguration
+ * @property string|null $ResolvedImageDigest
+ * @property string|null $ServerSdkVersion
  */
 class GameServerContainerDefinition extends Shape
 {
     /**
      * @param array{
-     *     ContainerName?: string,
-     *     DependsOn?: list<ContainerDependency>,
-     *     MountPoints?: list<ContainerMountPoint>,
-     *     EnvironmentOverride?: list<ContainerEnvironment>,
-     *     ImageUri?: string,
-     *     PortConfiguration?: ContainerPortConfiguration,
-     *     ResolvedImageDigest?: string,
-     *     ServerSdkVersion?: string
+     *     ContainerName?: string|null,
+     *     DependsOn?: list<ContainerDependency>|null,
+     *     MountPoints?: list<ContainerMountPoint>|null,
+     *     EnvironmentOverride?: list<ContainerEnvironment>|null,
+     *     ImageUri?: string|null,
+     *     PortConfiguration?: ContainerPortConfiguration|null,
+     *     ResolvedImageDigest?: string|null,
+     *     ServerSdkVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

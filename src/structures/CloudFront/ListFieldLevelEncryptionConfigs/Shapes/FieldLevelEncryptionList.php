@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListFieldLevelEncryptionConfigs\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NextMarker
+ * @property string|null $NextMarker
  * @property int $MaxItems
  * @property int $Quantity
- * @property list<FieldLevelEncryptionSummary> $Items
+ * @property list<FieldLevelEncryptionSummary>|null $Items
  */
 class FieldLevelEncryptionList extends Shape
 {
     /**
      * @param array{
-     *     NextMarker?: string,
+     *     NextMarker?: string|null,
      *     MaxItems: int,
      *     Quantity: int,
-     *     Items?: list<FieldLevelEncryptionSummary>
+     *     Items?: list<FieldLevelEncryptionSummary>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Appflow\DescribeConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $oAuthScopes
+ * @property list<string>|null $oAuthScopes
  */
 class HoneycodeMetadata extends Shape
 {
     /**
-     * @param array{oAuthScopes?: list<string>} $args
+     * @param array{oAuthScopes?: list<string>|null} $args
      */
     public function __construct(array $args = [])
     {

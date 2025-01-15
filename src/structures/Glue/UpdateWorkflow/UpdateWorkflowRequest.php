@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
- * @property array<string, string> $DefaultRunProperties
- * @property int $MaxConcurrentRuns
+ * @property string|null $Description
+ * @property array<string, string>|null $DefaultRunProperties
+ * @property int|null $MaxConcurrentRuns
  */
 class UpdateWorkflowRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
-     *     DefaultRunProperties?: array<string, string>,
-     *     MaxConcurrentRuns?: int
+     *     Description?: string|null,
+     *     DefaultRunProperties?: array<string, string>|null,
+     *     MaxConcurrentRuns?: int|null
      * } $args
      */
     public function __construct(array $args)

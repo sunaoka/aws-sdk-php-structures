@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Batch\RegisterJobDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $onStatusReason
- * @property string $onReason
- * @property string $onExitCode
+ * @property string|null $onStatusReason
+ * @property string|null $onReason
+ * @property string|null $onExitCode
  * @property 'RETRY'|'EXIT' $action
  */
 class EvaluateOnExit extends Shape
 {
     /**
      * @param array{
-     *     onStatusReason?: string,
-     *     onReason?: string,
-     *     onExitCode?: string,
+     *     onStatusReason?: string|null,
+     *     onReason?: string|null,
+     *     onExitCode?: string|null,
      *     action: 'RETRY'|'EXIT'
      * } $args
      */

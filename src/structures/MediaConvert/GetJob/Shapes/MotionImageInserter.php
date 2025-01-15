@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MotionImageInsertionFramerate $Framerate
- * @property string $Input
- * @property 'MOV'|'PNG' $InsertionMode
- * @property MotionImageInsertionOffset $Offset
- * @property 'ONCE'|'REPEAT' $Playback
- * @property string $StartTime
+ * @property MotionImageInsertionFramerate|null $Framerate
+ * @property string|null $Input
+ * @property 'MOV'|'PNG'|null $InsertionMode
+ * @property MotionImageInsertionOffset|null $Offset
+ * @property 'ONCE'|'REPEAT'|null $Playback
+ * @property string|null $StartTime
  */
 class MotionImageInserter extends Shape
 {
     /**
      * @param array{
-     *     Framerate?: MotionImageInsertionFramerate,
-     *     Input?: string,
-     *     InsertionMode?: 'MOV'|'PNG',
-     *     Offset?: MotionImageInsertionOffset,
-     *     Playback?: 'ONCE'|'REPEAT',
-     *     StartTime?: string
+     *     Framerate?: MotionImageInsertionFramerate|null,
+     *     Input?: string|null,
+     *     InsertionMode?: 'MOV'|'PNG'|null,
+     *     Offset?: MotionImageInsertionOffset|null,
+     *     Playback?: 'ONCE'|'REPEAT'|null,
+     *     StartTime?: string|null
      * } $args
      */
     public function __construct(array $args = [])

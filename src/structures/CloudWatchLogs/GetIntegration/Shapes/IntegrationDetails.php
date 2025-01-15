@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\GetIntegration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OpenSearchIntegrationDetails $openSearchIntegrationDetails
+ * @property OpenSearchIntegrationDetails|null $openSearchIntegrationDetails
  */
 class IntegrationDetails extends Shape
 {
     /**
-     * @param array{openSearchIntegrationDetails?: OpenSearchIntegrationDetails} $args
+     * @param array{openSearchIntegrationDetails?: OpenSearchIntegrationDetails|null} $args
      */
     public function __construct(array $args = [])
     {

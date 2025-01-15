@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property \Aws\Api\DateTimeResult $FromTime
- * @property \Aws\Api\DateTimeResult $ToTime
+ * @property \Aws\Api\DateTimeResult|null $ToTime
  */
 class DescribeAccountOverviewRequest extends Request
 {
     /**
      * @param array{
      *     FromTime: \Aws\Api\DateTimeResult,
-     *     ToTime?: \Aws\Api\DateTimeResult
+     *     ToTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

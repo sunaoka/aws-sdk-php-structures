@@ -6,12 +6,12 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $channelId
- * @property string $channelName
+ * @property string|null $channelName
  * @property string $channelRoleArn
- * @property bool $notifyOnAddCorrespondenceToCase
+ * @property bool|null $notifyOnAddCorrespondenceToCase
  * @property 'none'|'all'|'high' $notifyOnCaseSeverity
- * @property bool $notifyOnCreateOrReopenCase
- * @property bool $notifyOnResolveCase
+ * @property bool|null $notifyOnCreateOrReopenCase
+ * @property bool|null $notifyOnResolveCase
  * @property string $teamId
  */
 class CreateSlackChannelConfigurationRequest extends Request
@@ -19,12 +19,12 @@ class CreateSlackChannelConfigurationRequest extends Request
     /**
      * @param array{
      *     channelId: string,
-     *     channelName?: string,
+     *     channelName?: string|null,
      *     channelRoleArn: string,
-     *     notifyOnAddCorrespondenceToCase?: bool,
+     *     notifyOnAddCorrespondenceToCase?: bool|null,
      *     notifyOnCaseSeverity: 'none'|'all'|'high',
-     *     notifyOnCreateOrReopenCase?: bool,
-     *     notifyOnResolveCase?: bool,
+     *     notifyOnCreateOrReopenCase?: bool|null,
+     *     notifyOnResolveCase?: bool|null,
      *     teamId: string
      * } $args
      */

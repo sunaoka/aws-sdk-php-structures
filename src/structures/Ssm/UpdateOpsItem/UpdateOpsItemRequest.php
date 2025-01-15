@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\Ssm\UpdateOpsItem;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Description
- * @property array<string, Shapes\OpsItemDataValue> $OperationalData
- * @property list<string> $OperationalDataToDelete
- * @property list<Shapes\OpsItemNotification> $Notifications
- * @property int<1, 5> $Priority
- * @property list<Shapes\RelatedOpsItem> $RelatedOpsItems
- * @property 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed' $Status
+ * @property string|null $Description
+ * @property array<string, Shapes\OpsItemDataValue>|null $OperationalData
+ * @property list<string>|null $OperationalDataToDelete
+ * @property list<Shapes\OpsItemNotification>|null $Notifications
+ * @property int<1, 5>|null $Priority
+ * @property list<Shapes\RelatedOpsItem>|null $RelatedOpsItems
+ * @property 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed'|null $Status
  * @property string $OpsItemId
- * @property string $Title
- * @property string $Category
- * @property string $Severity
- * @property \Aws\Api\DateTimeResult $ActualStartTime
- * @property \Aws\Api\DateTimeResult $ActualEndTime
- * @property \Aws\Api\DateTimeResult $PlannedStartTime
- * @property \Aws\Api\DateTimeResult $PlannedEndTime
- * @property string $OpsItemArn
+ * @property string|null $Title
+ * @property string|null $Category
+ * @property string|null $Severity
+ * @property \Aws\Api\DateTimeResult|null $ActualStartTime
+ * @property \Aws\Api\DateTimeResult|null $ActualEndTime
+ * @property \Aws\Api\DateTimeResult|null $PlannedStartTime
+ * @property \Aws\Api\DateTimeResult|null $PlannedEndTime
+ * @property string|null $OpsItemArn
  */
 class UpdateOpsItemRequest extends Request
 {
     /**
      * @param array{
-     *     Description?: string,
-     *     OperationalData?: array<string, Shapes\OpsItemDataValue>,
-     *     OperationalDataToDelete?: list<string>,
-     *     Notifications?: list<Shapes\OpsItemNotification>,
-     *     Priority?: int<1, 5>,
-     *     RelatedOpsItems?: list<Shapes\RelatedOpsItem>,
-     *     Status?: 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed',
+     *     Description?: string|null,
+     *     OperationalData?: array<string, Shapes\OpsItemDataValue>|null,
+     *     OperationalDataToDelete?: list<string>|null,
+     *     Notifications?: list<Shapes\OpsItemNotification>|null,
+     *     Priority?: int<1, 5>|null,
+     *     RelatedOpsItems?: list<Shapes\RelatedOpsItem>|null,
+     *     Status?: 'Open'|'InProgress'|'Resolved'|'Pending'|'TimedOut'|'Cancelling'|'Cancelled'|'Failed'|'CompletedWithSuccess'|'CompletedWithFailure'|'Scheduled'|'RunbookInProgress'|'PendingChangeCalendarOverride'|'ChangeCalendarOverrideApproved'|'ChangeCalendarOverrideRejected'|'PendingApproval'|'Approved'|'Rejected'|'Closed'|null,
      *     OpsItemId: string,
-     *     Title?: string,
-     *     Category?: string,
-     *     Severity?: string,
-     *     ActualStartTime?: \Aws\Api\DateTimeResult,
-     *     ActualEndTime?: \Aws\Api\DateTimeResult,
-     *     PlannedStartTime?: \Aws\Api\DateTimeResult,
-     *     PlannedEndTime?: \Aws\Api\DateTimeResult,
-     *     OpsItemArn?: string
+     *     Title?: string|null,
+     *     Category?: string|null,
+     *     Severity?: string|null,
+     *     ActualStartTime?: \Aws\Api\DateTimeResult|null,
+     *     ActualEndTime?: \Aws\Api\DateTimeResult|null,
+     *     PlannedStartTime?: \Aws\Api\DateTimeResult|null,
+     *     PlannedEndTime?: \Aws\Api\DateTimeResult|null,
+     *     OpsItemArn?: string|null
      * } $args
      */
     public function __construct(array $args)

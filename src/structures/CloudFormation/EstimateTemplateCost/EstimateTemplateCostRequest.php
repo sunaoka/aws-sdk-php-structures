@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudFormation\EstimateTemplateCost;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $TemplateBody
- * @property string $TemplateURL
- * @property list<Shapes\Parameter> $Parameters
+ * @property string|null $TemplateBody
+ * @property string|null $TemplateURL
+ * @property list<Shapes\Parameter>|null $Parameters
  */
 class EstimateTemplateCostRequest extends Request
 {
     /**
      * @param array{
-     *     TemplateBody?: string,
-     *     TemplateURL?: string,
-     *     Parameters?: list<Shapes\Parameter>
+     *     TemplateBody?: string|null,
+     *     TemplateURL?: string|null,
+     *     Parameters?: list<Shapes\Parameter>|null
      * } $args
      */
     public function __construct(array $args = [])

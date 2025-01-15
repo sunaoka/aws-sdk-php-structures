@@ -8,18 +8,18 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $jobName
  * @property string $customModelName
  * @property string $roleArn
- * @property string $clientRequestToken
+ * @property string|null $clientRequestToken
  * @property string $baseModelIdentifier
- * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION' $customizationType
- * @property string $customModelKmsKeyId
- * @property list<Shapes\Tag> $jobTags
- * @property list<Shapes\Tag> $customModelTags
+ * @property 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|null $customizationType
+ * @property string|null $customModelKmsKeyId
+ * @property list<Shapes\Tag>|null $jobTags
+ * @property list<Shapes\Tag>|null $customModelTags
  * @property Shapes\TrainingDataConfig $trainingDataConfig
- * @property Shapes\ValidationDataConfig $validationDataConfig
+ * @property Shapes\ValidationDataConfig|null $validationDataConfig
  * @property Shapes\OutputDataConfig $outputDataConfig
- * @property array<string, string> $hyperParameters
- * @property Shapes\VpcConfig $vpcConfig
- * @property Shapes\CustomizationConfig $customizationConfig
+ * @property array<string, string>|null $hyperParameters
+ * @property Shapes\VpcConfig|null $vpcConfig
+ * @property Shapes\CustomizationConfig|null $customizationConfig
  */
 class CreateModelCustomizationJobRequest extends Request
 {
@@ -28,18 +28,18 @@ class CreateModelCustomizationJobRequest extends Request
      *     jobName: string,
      *     customModelName: string,
      *     roleArn: string,
-     *     clientRequestToken?: string,
+     *     clientRequestToken?: string|null,
      *     baseModelIdentifier: string,
-     *     customizationType?: 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION',
-     *     customModelKmsKeyId?: string,
-     *     jobTags?: list<Shapes\Tag>,
-     *     customModelTags?: list<Shapes\Tag>,
+     *     customizationType?: 'FINE_TUNING'|'CONTINUED_PRE_TRAINING'|'DISTILLATION'|null,
+     *     customModelKmsKeyId?: string|null,
+     *     jobTags?: list<Shapes\Tag>|null,
+     *     customModelTags?: list<Shapes\Tag>|null,
      *     trainingDataConfig: Shapes\TrainingDataConfig,
-     *     validationDataConfig?: Shapes\ValidationDataConfig,
+     *     validationDataConfig?: Shapes\ValidationDataConfig|null,
      *     outputDataConfig: Shapes\OutputDataConfig,
-     *     hyperParameters?: array<string, string>,
-     *     vpcConfig?: Shapes\VpcConfig,
-     *     customizationConfig?: Shapes\CustomizationConfig
+     *     hyperParameters?: array<string, string>|null,
+     *     vpcConfig?: Shapes\VpcConfig|null,
+     *     customizationConfig?: Shapes\CustomizationConfig|null
      * } $args
      */
     public function __construct(array $args)

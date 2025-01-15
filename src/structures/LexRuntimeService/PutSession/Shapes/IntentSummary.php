@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\LexRuntimeService\PutSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $intentName
- * @property string $checkpointLabel
- * @property array<string, string> $slots
- * @property 'None'|'Confirmed'|'Denied' $confirmationStatus
+ * @property string|null $intentName
+ * @property string|null $checkpointLabel
+ * @property array<string, string>|null $slots
+ * @property 'None'|'Confirmed'|'Denied'|null $confirmationStatus
  * @property 'ElicitIntent'|'ConfirmIntent'|'ElicitSlot'|'Close'|'Delegate' $dialogActionType
- * @property 'Fulfilled'|'Failed'|'ReadyForFulfillment' $fulfillmentState
- * @property string $slotToElicit
+ * @property 'Fulfilled'|'Failed'|'ReadyForFulfillment'|null $fulfillmentState
+ * @property string|null $slotToElicit
  */
 class IntentSummary extends Shape
 {
     /**
      * @param array{
-     *     intentName?: string,
-     *     checkpointLabel?: string,
-     *     slots?: array<string, string>,
-     *     confirmationStatus?: 'None'|'Confirmed'|'Denied',
+     *     intentName?: string|null,
+     *     checkpointLabel?: string|null,
+     *     slots?: array<string, string>|null,
+     *     confirmationStatus?: 'None'|'Confirmed'|'Denied'|null,
      *     dialogActionType: 'ElicitIntent'|'ConfirmIntent'|'ElicitSlot'|'Close'|'Delegate',
-     *     fulfillmentState?: 'Fulfilled'|'Failed'|'ReadyForFulfillment',
-     *     slotToElicit?: string
+     *     fulfillmentState?: 'Fulfilled'|'Failed'|'ReadyForFulfillment'|null,
+     *     slotToElicit?: string|null
      * } $args
      */
     public function __construct(array $args)

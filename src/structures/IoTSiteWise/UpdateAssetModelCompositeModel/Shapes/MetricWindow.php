@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\UpdateAssetModelCompositeModel\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TumblingWindow $tumbling
+ * @property TumblingWindow|null $tumbling
  */
 class MetricWindow extends Shape
 {
     /**
-     * @param array{tumbling?: TumblingWindow} $args
+     * @param array{tumbling?: TumblingWindow|null} $args
      */
     public function __construct(array $args = [])
     {

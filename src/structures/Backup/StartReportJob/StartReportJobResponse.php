@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Backup\StartReportJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ReportJobId
+ * @property string|null $ReportJobId
  */
 class StartReportJobResponse extends Response
 {

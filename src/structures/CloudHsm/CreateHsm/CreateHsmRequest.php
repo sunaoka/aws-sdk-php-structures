@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SubnetId
  * @property string $SshKey
- * @property string $EniIp
+ * @property string|null $EniIp
  * @property string $IamRoleArn
- * @property string $ExternalId
+ * @property string|null $ExternalId
  * @property 'PRODUCTION' $SubscriptionType
- * @property string $ClientToken
- * @property string $SyslogIp
+ * @property string|null $ClientToken
+ * @property string|null $SyslogIp
  */
 class CreateHsmRequest extends Request
 {
@@ -20,12 +20,12 @@ class CreateHsmRequest extends Request
      * @param array{
      *     SubnetId: string,
      *     SshKey: string,
-     *     EniIp?: string,
+     *     EniIp?: string|null,
      *     IamRoleArn: string,
-     *     ExternalId?: string,
+     *     ExternalId?: string|null,
      *     SubscriptionType: 'PRODUCTION',
-     *     ClientToken?: string,
-     *     SyslogIp?: string
+     *     ClientToken?: string|null,
+     *     SyslogIp?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\IoTEvents\ListInputs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $inputName
- * @property string $inputDescription
- * @property string $inputArn
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING' $status
+ * @property string|null $inputName
+ * @property string|null $inputDescription
+ * @property string|null $inputArn
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|null $status
  */
 class InputSummary extends Shape
 {
     /**
      * @param array{
-     *     inputName?: string,
-     *     inputDescription?: string,
-     *     inputArn?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     status?: 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'
+     *     inputName?: string|null,
+     *     inputDescription?: string|null,
+     *     inputArn?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'CREATING'|'UPDATING'|'ACTIVE'|'DELETING'|null
      * } $args
      */
     public function __construct(array $args = [])

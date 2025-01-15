@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListContinuousDeploymentPolicies\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NextMarker
+ * @property string|null $NextMarker
  * @property int $MaxItems
  * @property int $Quantity
- * @property list<ContinuousDeploymentPolicySummary> $Items
+ * @property list<ContinuousDeploymentPolicySummary>|null $Items
  */
 class ContinuousDeploymentPolicyList extends Shape
 {
     /**
      * @param array{
-     *     NextMarker?: string,
+     *     NextMarker?: string|null,
      *     MaxItems: int,
      *     Quantity: int,
-     *     Items?: list<ContinuousDeploymentPolicySummary>
+     *     Items?: list<ContinuousDeploymentPolicySummary>|null
      * } $args
      */
     public function __construct(array $args)

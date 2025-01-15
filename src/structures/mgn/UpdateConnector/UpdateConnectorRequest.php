@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $connectorID
- * @property string $name
- * @property Shapes\ConnectorSsmCommandConfig $ssmCommandConfig
+ * @property string|null $name
+ * @property Shapes\ConnectorSsmCommandConfig|null $ssmCommandConfig
  */
 class UpdateConnectorRequest extends Request
 {
     /**
      * @param array{
      *     connectorID: string,
-     *     name?: string,
-     *     ssmCommandConfig?: Shapes\ConnectorSsmCommandConfig
+     *     name?: string|null,
+     *     ssmCommandConfig?: Shapes\ConnectorSsmCommandConfig|null
      * } $args
      */
     public function __construct(array $args)

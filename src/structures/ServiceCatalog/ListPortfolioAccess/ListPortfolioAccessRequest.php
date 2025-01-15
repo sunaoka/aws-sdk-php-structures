@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListPortfolioAccess;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $PortfolioId
- * @property string $OrganizationParentId
- * @property string $PageToken
- * @property int<0, 100> $PageSize
+ * @property string|null $OrganizationParentId
+ * @property string|null $PageToken
+ * @property int<0, 100>|null $PageSize
  */
 class ListPortfolioAccessRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     PortfolioId: string,
-     *     OrganizationParentId?: string,
-     *     PageToken?: string,
-     *     PageSize?: int<0, 100>
+     *     OrganizationParentId?: string|null,
+     *     PageToken?: string|null,
+     *     PageSize?: int<0, 100>|null
      * } $args
      */
     public function __construct(array $args)

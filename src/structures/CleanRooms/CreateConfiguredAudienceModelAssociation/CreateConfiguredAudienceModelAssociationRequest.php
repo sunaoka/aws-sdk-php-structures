@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $configuredAudienceModelArn
  * @property string $configuredAudienceModelAssociationName
  * @property bool $manageResourcePolicies
- * @property array<string, string> $tags
- * @property string $description
+ * @property array<string, string>|null $tags
+ * @property string|null $description
  */
 class CreateConfiguredAudienceModelAssociationRequest extends Request
 {
@@ -20,8 +20,8 @@ class CreateConfiguredAudienceModelAssociationRequest extends Request
      *     configuredAudienceModelArn: string,
      *     configuredAudienceModelAssociationName: string,
      *     manageResourcePolicies: bool,
-     *     tags?: array<string, string>,
-     *     description?: string
+     *     tags?: array<string, string>|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

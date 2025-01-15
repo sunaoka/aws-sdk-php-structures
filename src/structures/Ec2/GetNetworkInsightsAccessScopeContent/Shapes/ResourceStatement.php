@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\GetNetworkInsightsAccessScopeContent\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Resources
- * @property list<string> $ResourceTypes
+ * @property list<string>|null $Resources
+ * @property list<string>|null $ResourceTypes
  */
 class ResourceStatement extends Shape
 {
     /**
      * @param array{
-     *     Resources?: list<string>,
-     *     ResourceTypes?: list<string>
+     *     Resources?: list<string>|null,
+     *     ResourceTypes?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

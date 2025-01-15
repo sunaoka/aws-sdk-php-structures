@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Macie2\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Range $lineRange
- * @property Range $offsetRange
- * @property int $pageNumber
+ * @property Range|null $lineRange
+ * @property Range|null $offsetRange
+ * @property int|null $pageNumber
  */
 class Page extends Shape
 {
     /**
      * @param array{
-     *     lineRange?: Range,
-     *     offsetRange?: Range,
-     *     pageNumber?: int
+     *     lineRange?: Range|null,
+     *     offsetRange?: Range|null,
+     *     pageNumber?: int|null
      * } $args
      */
     public function __construct(array $args = [])

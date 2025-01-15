@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $S3Uri
- * @property 'TRAIN'|'TEST' $Split
+ * @property 'TRAIN'|'TEST'|null $Split
  * @property list<string> $AttributeNames
- * @property string $AnnotationDataS3Uri
- * @property string $SourceDocumentsS3Uri
- * @property 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT' $DocumentType
+ * @property string|null $AnnotationDataS3Uri
+ * @property string|null $SourceDocumentsS3Uri
+ * @property 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT'|null $DocumentType
  */
 class AugmentedManifestsListItem extends Shape
 {
     /**
      * @param array{
      *     S3Uri: string,
-     *     Split?: 'TRAIN'|'TEST',
+     *     Split?: 'TRAIN'|'TEST'|null,
      *     AttributeNames: list<string>,
-     *     AnnotationDataS3Uri?: string,
-     *     SourceDocumentsS3Uri?: string,
-     *     DocumentType?: 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT'
+     *     AnnotationDataS3Uri?: string|null,
+     *     SourceDocumentsS3Uri?: string|null,
+     *     DocumentType?: 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT'|null
      * } $args
      */
     public function __construct(array $args)

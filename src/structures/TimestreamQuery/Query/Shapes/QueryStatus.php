@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\Query\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $ProgressPercentage
- * @property int $CumulativeBytesScanned
- * @property int $CumulativeBytesMetered
+ * @property double|null $ProgressPercentage
+ * @property int|null $CumulativeBytesScanned
+ * @property int|null $CumulativeBytesMetered
  */
 class QueryStatus extends Shape
 {
     /**
      * @param array{
-     *     ProgressPercentage?: double,
-     *     CumulativeBytesScanned?: int,
-     *     CumulativeBytesMetered?: int
+     *     ProgressPercentage?: double|null,
+     *     CumulativeBytesScanned?: int|null,
+     *     CumulativeBytesMetered?: int|null
      * } $args
      */
     public function __construct(array $args = [])

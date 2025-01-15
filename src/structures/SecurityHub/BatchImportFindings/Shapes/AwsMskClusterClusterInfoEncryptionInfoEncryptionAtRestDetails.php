@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DataVolumeKMSKeyId
+ * @property string|null $DataVolumeKMSKeyId
  */
 class AwsMskClusterClusterInfoEncryptionInfoEncryptionAtRestDetails extends Shape
 {
     /**
-     * @param array{DataVolumeKMSKeyId?: string} $args
+     * @param array{DataVolumeKMSKeyId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

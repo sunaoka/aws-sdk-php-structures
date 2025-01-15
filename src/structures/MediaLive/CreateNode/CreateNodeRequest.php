@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClusterId
- * @property string $Name
- * @property list<Shapes\NodeInterfaceMappingCreateRequest> $NodeInterfaceMappings
- * @property string $RequestId
- * @property 'BACKUP'|'ACTIVE' $Role
- * @property array<string, string> $Tags
+ * @property string|null $Name
+ * @property list<Shapes\NodeInterfaceMappingCreateRequest>|null $NodeInterfaceMappings
+ * @property string|null $RequestId
+ * @property 'BACKUP'|'ACTIVE'|null $Role
+ * @property array<string, string>|null $Tags
  */
 class CreateNodeRequest extends Request
 {
     /**
      * @param array{
      *     ClusterId: string,
-     *     Name?: string,
-     *     NodeInterfaceMappings?: list<Shapes\NodeInterfaceMappingCreateRequest>,
-     *     RequestId?: string,
-     *     Role?: 'BACKUP'|'ACTIVE',
-     *     Tags?: array<string, string>
+     *     Name?: string|null,
+     *     NodeInterfaceMappings?: list<Shapes\NodeInterfaceMappingCreateRequest>|null,
+     *     RequestId?: string|null,
+     *     Role?: 'BACKUP'|'ACTIVE'|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

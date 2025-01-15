@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $source
  * @property 'SUBMITTED'|'IN_PROGRESS'|'CANCELLED'|'COMPLETED'|'FAILED'|'COMPLETED_WITH_FAILURES' $jobStatus
- * @property string $statusMessage
+ * @property string|null $statusMessage
  */
 class VariantImportItemDetail extends Shape
 {
@@ -15,7 +15,7 @@ class VariantImportItemDetail extends Shape
      * @param array{
      *     source: string,
      *     jobStatus: 'SUBMITTED'|'IN_PROGRESS'|'CANCELLED'|'COMPLETED'|'FAILED'|'COMPLETED_WITH_FAILURES',
-     *     statusMessage?: string
+     *     statusMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

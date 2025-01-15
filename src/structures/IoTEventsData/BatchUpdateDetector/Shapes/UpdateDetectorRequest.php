@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $messageId
  * @property string $detectorModelName
- * @property string $keyValue
+ * @property string|null $keyValue
  * @property DetectorStateDefinition $state
  */
 class UpdateDetectorRequest extends Shape
@@ -16,7 +16,7 @@ class UpdateDetectorRequest extends Shape
      * @param array{
      *     messageId: string,
      *     detectorModelName: string,
-     *     keyValue?: string,
+     *     keyValue?: string|null,
      *     state: DetectorStateDefinition
      * } $args
      */

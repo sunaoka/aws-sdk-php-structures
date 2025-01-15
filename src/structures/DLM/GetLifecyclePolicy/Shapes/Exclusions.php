@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DLM\GetLifecyclePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ExcludeBootVolumes
- * @property list<string> $ExcludeVolumeTypes
- * @property list<Tag> $ExcludeTags
+ * @property bool|null $ExcludeBootVolumes
+ * @property list<string>|null $ExcludeVolumeTypes
+ * @property list<Tag>|null $ExcludeTags
  */
 class Exclusions extends Shape
 {
     /**
      * @param array{
-     *     ExcludeBootVolumes?: bool,
-     *     ExcludeVolumeTypes?: list<string>,
-     *     ExcludeTags?: list<Tag>
+     *     ExcludeBootVolumes?: bool|null,
+     *     ExcludeVolumeTypes?: list<string>|null,
+     *     ExcludeTags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

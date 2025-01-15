@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GeospatialSolidColor $Solid
- * @property GeospatialGradientColor $Gradient
- * @property GeospatialCategoricalColor $Categorical
+ * @property GeospatialSolidColor|null $Solid
+ * @property GeospatialGradientColor|null $Gradient
+ * @property GeospatialCategoricalColor|null $Categorical
  */
 class GeospatialColor extends Shape
 {
     /**
      * @param array{
-     *     Solid?: GeospatialSolidColor,
-     *     Gradient?: GeospatialGradientColor,
-     *     Categorical?: GeospatialCategoricalColor
+     *     Solid?: GeospatialSolidColor|null,
+     *     Gradient?: GeospatialGradientColor|null,
+     *     Categorical?: GeospatialCategoricalColor|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\UpdateNetworkSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $networkSettingsArn
- * @property list<string> $securityGroupIds
- * @property list<string> $subnetIds
- * @property string $vpcId
+ * @property list<string>|null $securityGroupIds
+ * @property list<string>|null $subnetIds
+ * @property string|null $vpcId
  */
 class UpdateNetworkSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     networkSettingsArn: string,
-     *     securityGroupIds?: list<string>,
-     *     subnetIds?: list<string>,
-     *     vpcId?: string
+     *     securityGroupIds?: list<string>|null,
+     *     subnetIds?: list<string>|null,
+     *     vpcId?: string|null
      * } $args
      */
     public function __construct(array $args)

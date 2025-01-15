@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\ListIdentityProviders\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ProviderName
- * @property 'SAML'|'Facebook'|'Google'|'LoginWithAmazon'|'SignInWithApple'|'OIDC' $ProviderType
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
- * @property \Aws\Api\DateTimeResult $CreationDate
+ * @property string|null $ProviderName
+ * @property 'SAML'|'Facebook'|'Google'|'LoginWithAmazon'|'SignInWithApple'|'OIDC'|null $ProviderType
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
  */
 class ProviderDescription extends Shape
 {
     /**
      * @param array{
-     *     ProviderName?: string,
-     *     ProviderType?: 'SAML'|'Facebook'|'Google'|'LoginWithAmazon'|'SignInWithApple'|'OIDC',
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     CreationDate?: \Aws\Api\DateTimeResult
+     *     ProviderName?: string|null,
+     *     ProviderType?: 'SAML'|'Facebook'|'Google'|'LoginWithAmazon'|'SignInWithApple'|'OIDC'|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

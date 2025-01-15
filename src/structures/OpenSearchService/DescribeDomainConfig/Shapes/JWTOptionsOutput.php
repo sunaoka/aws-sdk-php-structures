@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\OpenSearchService\DescribeDomainConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property string $SubjectKey
- * @property string $RolesKey
- * @property string $PublicKey
+ * @property bool|null $Enabled
+ * @property string|null $SubjectKey
+ * @property string|null $RolesKey
+ * @property string|null $PublicKey
  */
 class JWTOptionsOutput extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     SubjectKey?: string,
-     *     RolesKey?: string,
-     *     PublicKey?: string
+     *     Enabled?: bool|null,
+     *     SubjectKey?: string|null,
+     *     RolesKey?: string|null,
+     *     PublicKey?: string|null
      * } $args
      */
     public function __construct(array $args = [])

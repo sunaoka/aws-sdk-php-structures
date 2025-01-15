@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $TransitGatewayMulticastDomainId
  * @property string $TransitGatewayAttachmentId
  * @property list<string> $SubnetIds
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DisassociateTransitGatewayMulticastDomainRequest extends Request
 {
@@ -17,7 +17,7 @@ class DisassociateTransitGatewayMulticastDomainRequest extends Request
      *     TransitGatewayMulticastDomainId: string,
      *     TransitGatewayAttachmentId: string,
      *     SubnetIds: list<string>,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

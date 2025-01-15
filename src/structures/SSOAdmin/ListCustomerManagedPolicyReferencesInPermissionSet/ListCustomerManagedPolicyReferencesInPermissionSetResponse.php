@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SSOAdmin\ListCustomerManagedPolicyReferencesInP
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\CustomerManagedPolicyReference> $CustomerManagedPolicyReferences
- * @property string $NextToken
+ * @property list<Shapes\CustomerManagedPolicyReference>|null $CustomerManagedPolicyReferences
+ * @property string|null $NextToken
  */
 class ListCustomerManagedPolicyReferencesInPermissionSetResponse extends Response
 {

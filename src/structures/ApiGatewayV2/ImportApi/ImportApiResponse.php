@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\ApiGatewayV2\ImportApi;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApiEndpoint
- * @property bool $ApiGatewayManaged
- * @property string $ApiId
- * @property string $ApiKeySelectionExpression
- * @property Shapes\Cors $CorsConfiguration
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property string $Description
- * @property bool $DisableSchemaValidation
- * @property bool $DisableExecuteApiEndpoint
- * @property list<string> $ImportInfo
- * @property string $Name
- * @property 'WEBSOCKET'|'HTTP' $ProtocolType
- * @property string $RouteSelectionExpression
- * @property array<string, string> $Tags
- * @property string $Version
- * @property list<string> $Warnings
+ * @property string|null $ApiEndpoint
+ * @property bool|null $ApiGatewayManaged
+ * @property string|null $ApiId
+ * @property string|null $ApiKeySelectionExpression
+ * @property Shapes\Cors|null $CorsConfiguration
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property string|null $Description
+ * @property bool|null $DisableSchemaValidation
+ * @property bool|null $DisableExecuteApiEndpoint
+ * @property list<string>|null $ImportInfo
+ * @property string|null $Name
+ * @property 'WEBSOCKET'|'HTTP'|null $ProtocolType
+ * @property string|null $RouteSelectionExpression
+ * @property array<string, string>|null $Tags
+ * @property string|null $Version
+ * @property list<string>|null $Warnings
  */
 class ImportApiResponse extends Response
 {

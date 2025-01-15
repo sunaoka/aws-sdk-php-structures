@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AwsAccountId
- * @property string $Namespace
+ * @property string|null $Namespace
  * @property Shapes\AccountCustomization $AccountCustomization
  */
 class UpdateAccountCustomizationRequest extends Request
@@ -14,7 +14,7 @@ class UpdateAccountCustomizationRequest extends Request
     /**
      * @param array{
      *     AwsAccountId: string,
-     *     Namespace?: string,
+     *     Namespace?: string|null,
      *     AccountCustomization: Shapes\AccountCustomization
      * } $args
      */

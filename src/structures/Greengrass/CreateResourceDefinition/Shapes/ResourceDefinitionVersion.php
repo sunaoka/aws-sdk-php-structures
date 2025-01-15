@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateResourceDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Resource> $Resources
+ * @property list<Resource>|null $Resources
  */
 class ResourceDefinitionVersion extends Shape
 {
     /**
-     * @param array{Resources?: list<Resource>} $args
+     * @param array{Resources?: list<Resource>|null} $args
      */
     public function __construct(array $args = [])
     {

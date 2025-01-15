@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $RegexPatternSetId
- * @property string $Name
+ * @property string|null $Name
  * @property list<string> $RegexPatternStrings
  */
 class RegexPatternSet extends Shape
@@ -14,7 +14,7 @@ class RegexPatternSet extends Shape
     /**
      * @param array{
      *     RegexPatternSetId: string,
-     *     Name?: string,
+     *     Name?: string|null,
      *     RegexPatternStrings: list<string>
      * } $args
      */

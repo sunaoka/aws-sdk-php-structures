@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVerifiedAccessInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubDomain
- * @property list<string> $Nameservers
+ * @property string|null $SubDomain
+ * @property list<string>|null $Nameservers
  */
 class VerifiedAccessInstanceCustomSubDomain extends Shape
 {
     /**
      * @param array{
-     *     SubDomain?: string,
-     *     Nameservers?: list<string>
+     *     SubDomain?: string|null,
+     *     Nameservers?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

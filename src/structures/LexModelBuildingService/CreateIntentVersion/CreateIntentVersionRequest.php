@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $checksum
+ * @property string|null $checksum
  */
 class CreateIntentVersionRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     checksum?: string
+     *     checksum?: string|null
      * } $args
      */
     public function __construct(array $args)

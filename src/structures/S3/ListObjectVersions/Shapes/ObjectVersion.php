@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\S3\ListObjectVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ETag
- * @property list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'> $ChecksumAlgorithm
- * @property int $Size
- * @property 'STANDARD' $StorageClass
- * @property string $Key
- * @property string $VersionId
- * @property bool $IsLatest
- * @property \Aws\Api\DateTimeResult $LastModified
- * @property Owner $Owner
- * @property RestoreStatus $RestoreStatus
+ * @property string|null $ETag
+ * @property list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'>|null $ChecksumAlgorithm
+ * @property int|null $Size
+ * @property 'STANDARD'|null $StorageClass
+ * @property string|null $Key
+ * @property string|null $VersionId
+ * @property bool|null $IsLatest
+ * @property \Aws\Api\DateTimeResult|null $LastModified
+ * @property Owner|null $Owner
+ * @property RestoreStatus|null $RestoreStatus
  */
 class ObjectVersion extends Shape
 {
     /**
      * @param array{
-     *     ETag?: string,
-     *     ChecksumAlgorithm?: list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'>,
-     *     Size?: int,
-     *     StorageClass?: 'STANDARD',
-     *     Key?: string,
-     *     VersionId?: string,
-     *     IsLatest?: bool,
-     *     LastModified?: \Aws\Api\DateTimeResult,
-     *     Owner?: Owner,
-     *     RestoreStatus?: RestoreStatus
+     *     ETag?: string|null,
+     *     ChecksumAlgorithm?: list<'CRC32'|'CRC32C'|'SHA1'|'SHA256'>|null,
+     *     Size?: int|null,
+     *     StorageClass?: 'STANDARD'|null,
+     *     Key?: string|null,
+     *     VersionId?: string|null,
+     *     IsLatest?: bool|null,
+     *     LastModified?: \Aws\Api\DateTimeResult|null,
+     *     Owner?: Owner|null,
+     *     RestoreStatus?: RestoreStatus|null
      * } $args
      */
     public function __construct(array $args = [])

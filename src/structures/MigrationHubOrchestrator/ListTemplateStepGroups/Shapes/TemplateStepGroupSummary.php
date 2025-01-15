@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MigrationHubOrchestrator\ListTemplateStepGroups
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
- * @property list<string> $previous
- * @property list<string> $next
+ * @property string|null $id
+ * @property string|null $name
+ * @property list<string>|null $previous
+ * @property list<string>|null $next
  */
 class TemplateStepGroupSummary extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string,
-     *     previous?: list<string>,
-     *     next?: list<string>
+     *     id?: string|null,
+     *     name?: string|null,
+     *     previous?: list<string>|null,
+     *     next?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

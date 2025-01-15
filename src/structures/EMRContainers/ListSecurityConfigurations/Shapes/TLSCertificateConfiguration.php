@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\EMRContainers\ListSecurityConfigurations\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PEM' $certificateProviderType
- * @property string $publicCertificateSecretArn
- * @property string $privateCertificateSecretArn
+ * @property 'PEM'|null $certificateProviderType
+ * @property string|null $publicCertificateSecretArn
+ * @property string|null $privateCertificateSecretArn
  */
 class TLSCertificateConfiguration extends Shape
 {
     /**
      * @param array{
-     *     certificateProviderType?: 'PEM',
-     *     publicCertificateSecretArn?: string,
-     *     privateCertificateSecretArn?: string
+     *     certificateProviderType?: 'PEM'|null,
+     *     publicCertificateSecretArn?: string|null,
+     *     privateCertificateSecretArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

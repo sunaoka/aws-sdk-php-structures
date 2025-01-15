@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Macie2\AcceptInvitation;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $administratorAccountId
+ * @property string|null $administratorAccountId
  * @property string $invitationId
- * @property string $masterAccount
+ * @property string|null $masterAccount
  */
 class AcceptInvitationRequest extends Request
 {
     /**
      * @param array{
-     *     administratorAccountId?: string,
+     *     administratorAccountId?: string|null,
      *     invitationId: string,
-     *     masterAccount?: string
+     *     masterAccount?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FeatureGroupName
  * @property string $RecordIdentifierValueAsString
- * @property list<string> $FeatureNames
- * @property 'Enabled'|'Disabled' $ExpirationTimeResponse
+ * @property list<string>|null $FeatureNames
+ * @property 'Enabled'|'Disabled'|null $ExpirationTimeResponse
  */
 class GetRecordRequest extends Request
 {
@@ -16,8 +16,8 @@ class GetRecordRequest extends Request
      * @param array{
      *     FeatureGroupName: string,
      *     RecordIdentifierValueAsString: string,
-     *     FeatureNames?: list<string>,
-     *     ExpirationTimeResponse?: 'Enabled'|'Disabled'
+     *     FeatureNames?: list<string>|null,
+     *     ExpirationTimeResponse?: 'Enabled'|'Disabled'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MTurk\CreateHITWithHITType;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\HIT $HIT
+ * @property Shapes\HIT|null $HIT
  */
 class CreateHITWithHITTypeResponse extends Response
 {

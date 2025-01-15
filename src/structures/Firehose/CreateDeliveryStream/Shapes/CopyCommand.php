@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DataTableName
- * @property string $DataTableColumns
- * @property string $CopyOptions
+ * @property string|null $DataTableColumns
+ * @property string|null $CopyOptions
  */
 class CopyCommand extends Shape
 {
     /**
      * @param array{
      *     DataTableName: string,
-     *     DataTableColumns?: string,
-     *     CopyOptions?: string
+     *     DataTableColumns?: string|null,
+     *     CopyOptions?: string|null
      * } $args
      */
     public function __construct(array $args)

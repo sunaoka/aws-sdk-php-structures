@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Connect\DescribeEmailAddress;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $EmailAddressId
- * @property string $EmailAddressArn
- * @property string $EmailAddress
- * @property string $DisplayName
- * @property string $Description
- * @property string $CreateTimestamp
- * @property string $ModifiedTimestamp
- * @property array<string, string> $Tags
+ * @property string|null $EmailAddressId
+ * @property string|null $EmailAddressArn
+ * @property string|null $EmailAddress
+ * @property string|null $DisplayName
+ * @property string|null $Description
+ * @property string|null $CreateTimestamp
+ * @property string|null $ModifiedTimestamp
+ * @property array<string, string>|null $Tags
  */
 class DescribeEmailAddressResponse extends Response
 {

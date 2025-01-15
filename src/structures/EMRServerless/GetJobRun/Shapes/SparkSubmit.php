@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $entryPoint
- * @property list<string> $entryPointArguments
- * @property string $sparkSubmitParameters
+ * @property list<string>|null $entryPointArguments
+ * @property string|null $sparkSubmitParameters
  */
 class SparkSubmit extends Shape
 {
     /**
      * @param array{
      *     entryPoint: string,
-     *     entryPointArguments?: list<string>,
-     *     sparkSubmitParameters?: string
+     *     entryPointArguments?: list<string>|null,
+     *     sparkSubmitParameters?: string|null
      * } $args
      */
     public function __construct(array $args)

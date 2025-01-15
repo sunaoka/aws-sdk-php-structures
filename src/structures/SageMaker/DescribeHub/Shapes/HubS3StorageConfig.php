@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHub\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3OutputPath
+ * @property string|null $S3OutputPath
  */
 class HubS3StorageConfig extends Shape
 {
     /**
-     * @param array{S3OutputPath?: string} $args
+     * @param array{S3OutputPath?: string|null} $args
      */
     public function __construct(array $args = [])
     {

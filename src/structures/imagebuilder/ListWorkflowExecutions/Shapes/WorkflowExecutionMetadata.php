@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListWorkflowExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $workflowBuildVersionArn
- * @property string $workflowExecutionId
- * @property 'BUILD'|'TEST'|'DISTRIBUTION' $type
- * @property 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETED'|'CANCELLED' $status
- * @property string $message
- * @property int $totalStepCount
- * @property int $totalStepsSucceeded
- * @property int $totalStepsFailed
- * @property int $totalStepsSkipped
- * @property string $startTime
- * @property string $endTime
- * @property string $parallelGroup
+ * @property string|null $workflowBuildVersionArn
+ * @property string|null $workflowExecutionId
+ * @property 'BUILD'|'TEST'|'DISTRIBUTION'|null $type
+ * @property 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETED'|'CANCELLED'|null $status
+ * @property string|null $message
+ * @property int|null $totalStepCount
+ * @property int|null $totalStepsSucceeded
+ * @property int|null $totalStepsFailed
+ * @property int|null $totalStepsSkipped
+ * @property string|null $startTime
+ * @property string|null $endTime
+ * @property string|null $parallelGroup
  */
 class WorkflowExecutionMetadata extends Shape
 {
     /**
      * @param array{
-     *     workflowBuildVersionArn?: string,
-     *     workflowExecutionId?: string,
-     *     type?: 'BUILD'|'TEST'|'DISTRIBUTION',
-     *     status?: 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETED'|'CANCELLED',
-     *     message?: string,
-     *     totalStepCount?: int,
-     *     totalStepsSucceeded?: int,
-     *     totalStepsFailed?: int,
-     *     totalStepsSkipped?: int,
-     *     startTime?: string,
-     *     endTime?: string,
-     *     parallelGroup?: string
+     *     workflowBuildVersionArn?: string|null,
+     *     workflowExecutionId?: string|null,
+     *     type?: 'BUILD'|'TEST'|'DISTRIBUTION'|null,
+     *     status?: 'PENDING'|'SKIPPED'|'RUNNING'|'COMPLETED'|'FAILED'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETED'|'CANCELLED'|null,
+     *     message?: string|null,
+     *     totalStepCount?: int|null,
+     *     totalStepsSucceeded?: int|null,
+     *     totalStepsFailed?: int|null,
+     *     totalStepsSkipped?: int|null,
+     *     startTime?: string|null,
+     *     endTime?: string|null,
+     *     parallelGroup?: string|null
      * } $args
      */
     public function __construct(array $args = [])

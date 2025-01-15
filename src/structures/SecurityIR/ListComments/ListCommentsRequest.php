@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\SecurityIR\ListComments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property int<1, 25> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 25>|null $maxResults
  * @property string $caseId
  */
 class ListCommentsRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     maxResults?: int<1, 25>,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 25>|null,
      *     caseId: string
      * } $args
      */

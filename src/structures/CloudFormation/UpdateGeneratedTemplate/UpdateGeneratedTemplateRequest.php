@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $GeneratedTemplateName
- * @property string $NewGeneratedTemplateName
- * @property list<Shapes\ResourceDefinition> $AddResources
- * @property list<string> $RemoveResources
- * @property bool $RefreshAllResources
- * @property Shapes\TemplateConfiguration $TemplateConfiguration
+ * @property string|null $NewGeneratedTemplateName
+ * @property list<Shapes\ResourceDefinition>|null $AddResources
+ * @property list<string>|null $RemoveResources
+ * @property bool|null $RefreshAllResources
+ * @property Shapes\TemplateConfiguration|null $TemplateConfiguration
  */
 class UpdateGeneratedTemplateRequest extends Request
 {
     /**
      * @param array{
      *     GeneratedTemplateName: string,
-     *     NewGeneratedTemplateName?: string,
-     *     AddResources?: list<Shapes\ResourceDefinition>,
-     *     RemoveResources?: list<string>,
-     *     RefreshAllResources?: bool,
-     *     TemplateConfiguration?: Shapes\TemplateConfiguration
+     *     NewGeneratedTemplateName?: string|null,
+     *     AddResources?: list<Shapes\ResourceDefinition>|null,
+     *     RemoveResources?: list<string>|null,
+     *     RefreshAllResources?: bool|null,
+     *     TemplateConfiguration?: Shapes\TemplateConfiguration|null
      * } $args
      */
     public function __construct(array $args)

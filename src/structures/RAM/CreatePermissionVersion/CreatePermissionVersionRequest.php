@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $permissionArn
  * @property string $policyTemplate
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class CreatePermissionVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreatePermissionVersionRequest extends Request
      * @param array{
      *     permissionArn: string,
      *     policyTemplate: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchUpdateBillScenarioUsa
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\BillScenarioUsageModificationItem> $items
- * @property list<Shapes\BatchUpdateBillScenarioUsageModificationError> $errors
+ * @property list<Shapes\BillScenarioUsageModificationItem>|null $items
+ * @property list<Shapes\BatchUpdateBillScenarioUsageModificationError>|null $errors
  */
 class BatchUpdateBillScenarioUsageModificationResponse extends Response
 {

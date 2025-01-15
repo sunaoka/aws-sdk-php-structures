@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVolumeAttribute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Value
+ * @property bool|null $Value
  */
 class AttributeBooleanValue extends Shape
 {
     /**
-     * @param array{Value?: bool} $args
+     * @param array{Value?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

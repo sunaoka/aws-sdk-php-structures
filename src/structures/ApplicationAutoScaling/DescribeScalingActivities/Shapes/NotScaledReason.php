@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Code
- * @property int $MaxCapacity
- * @property int $MinCapacity
- * @property int $CurrentCapacity
+ * @property int|null $MaxCapacity
+ * @property int|null $MinCapacity
+ * @property int|null $CurrentCapacity
  */
 class NotScaledReason extends Shape
 {
     /**
      * @param array{
      *     Code: string,
-     *     MaxCapacity?: int,
-     *     MinCapacity?: int,
-     *     CurrentCapacity?: int
+     *     MaxCapacity?: int|null,
+     *     MinCapacity?: int|null,
+     *     CurrentCapacity?: int|null
      * } $args
      */
     public function __construct(array $args)

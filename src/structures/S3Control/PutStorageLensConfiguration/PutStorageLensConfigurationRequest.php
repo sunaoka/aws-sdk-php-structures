@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ConfigId
  * @property string $AccountId
  * @property Shapes\StorageLensConfiguration $StorageLensConfiguration
- * @property list<Shapes\StorageLensTag> $Tags
+ * @property list<Shapes\StorageLensTag>|null $Tags
  */
 class PutStorageLensConfigurationRequest extends Request
 {
@@ -17,7 +17,7 @@ class PutStorageLensConfigurationRequest extends Request
      *     ConfigId: string,
      *     AccountId: string,
      *     StorageLensConfiguration: Shapes\StorageLensConfiguration,
-     *     Tags?: list<Shapes\StorageLensTag>
+     *     Tags?: list<Shapes\StorageLensTag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LaunchWizard\ListDeploymentEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
- * @property string $name
- * @property 'CANCELED'|'CANCELING'|'COMPLETED'|'CREATED'|'FAILED'|'IN_PROGRESS'|'PENDING'|'TIMED_OUT' $status
- * @property string $statusReason
- * @property \Aws\Api\DateTimeResult $timestamp
+ * @property string|null $description
+ * @property string|null $name
+ * @property 'CANCELED'|'CANCELING'|'COMPLETED'|'CREATED'|'FAILED'|'IN_PROGRESS'|'PENDING'|'TIMED_OUT'|null $status
+ * @property string|null $statusReason
+ * @property \Aws\Api\DateTimeResult|null $timestamp
  */
 class DeploymentEventDataSummary extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
-     *     name?: string,
-     *     status?: 'CANCELED'|'CANCELING'|'COMPLETED'|'CREATED'|'FAILED'|'IN_PROGRESS'|'PENDING'|'TIMED_OUT',
-     *     statusReason?: string,
-     *     timestamp?: \Aws\Api\DateTimeResult
+     *     description?: string|null,
+     *     name?: string|null,
+     *     status?: 'CANCELED'|'CANCELING'|'COMPLETED'|'CREATED'|'FAILED'|'IN_PROGRESS'|'PENDING'|'TIMED_OUT'|null,
+     *     statusReason?: string|null,
+     *     timestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

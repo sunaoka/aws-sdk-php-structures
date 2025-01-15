@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Chime\GetRetentionSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RoomRetentionSettings $RoomRetentionSettings
- * @property ConversationRetentionSettings $ConversationRetentionSettings
+ * @property RoomRetentionSettings|null $RoomRetentionSettings
+ * @property ConversationRetentionSettings|null $ConversationRetentionSettings
  */
 class RetentionSettings extends Shape
 {
     /**
      * @param array{
-     *     RoomRetentionSettings?: RoomRetentionSettings,
-     *     ConversationRetentionSettings?: ConversationRetentionSettings
+     *     RoomRetentionSettings?: RoomRetentionSettings|null,
+     *     ConversationRetentionSettings?: ConversationRetentionSettings|null
      * } $args
      */
     public function __construct(array $args = [])

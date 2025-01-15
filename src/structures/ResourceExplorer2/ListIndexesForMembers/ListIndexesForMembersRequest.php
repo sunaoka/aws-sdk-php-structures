@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $AccountIdList
- * @property int<1, 10> $MaxResults
- * @property string $NextToken
+ * @property int<1, 10>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListIndexesForMembersRequest extends Request
 {
     /**
      * @param array{
      *     AccountIdList: list<string>,
-     *     MaxResults?: int<1, 10>,
-     *     NextToken?: string
+     *     MaxResults?: int<1, 10>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

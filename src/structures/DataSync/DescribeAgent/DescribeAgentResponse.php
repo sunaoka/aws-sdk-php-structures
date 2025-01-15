@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\DataSync\DescribeAgent;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $AgentArn
- * @property string $Name
- * @property 'ONLINE'|'OFFLINE' $Status
- * @property \Aws\Api\DateTimeResult $LastConnectionTime
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property 'PUBLIC'|'PRIVATE_LINK'|'FIPS' $EndpointType
- * @property Shapes\PrivateLinkConfig $PrivateLinkConfig
- * @property Shapes\Platform $Platform
+ * @property string|null $AgentArn
+ * @property string|null $Name
+ * @property 'ONLINE'|'OFFLINE'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $LastConnectionTime
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property 'PUBLIC'|'PRIVATE_LINK'|'FIPS'|null $EndpointType
+ * @property Shapes\PrivateLinkConfig|null $PrivateLinkConfig
+ * @property Shapes\Platform|null $Platform
  */
 class DescribeAgentResponse extends Response
 {

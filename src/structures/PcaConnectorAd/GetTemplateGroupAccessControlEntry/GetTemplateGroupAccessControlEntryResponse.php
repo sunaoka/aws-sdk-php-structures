@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\GetTemplateGroupAccessControlEnt
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AccessControlEntry $AccessControlEntry
+ * @property Shapes\AccessControlEntry|null $AccessControlEntry
  */
 class GetTemplateGroupAccessControlEntryResponse extends Response
 {

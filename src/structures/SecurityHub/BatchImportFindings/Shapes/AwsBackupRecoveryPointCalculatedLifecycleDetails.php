@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeleteAt
- * @property string $MoveToColdStorageAt
+ * @property string|null $DeleteAt
+ * @property string|null $MoveToColdStorageAt
  */
 class AwsBackupRecoveryPointCalculatedLifecycleDetails extends Shape
 {
     /**
      * @param array{
-     *     DeleteAt?: string,
-     *     MoveToColdStorageAt?: string
+     *     DeleteAt?: string|null,
+     *     MoveToColdStorageAt?: string|null
      * } $args
      */
     public function __construct(array $args = [])

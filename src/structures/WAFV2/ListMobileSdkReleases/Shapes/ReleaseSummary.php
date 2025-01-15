@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\WAFV2\ListMobileSdkReleases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReleaseVersion
- * @property \Aws\Api\DateTimeResult $Timestamp
+ * @property string|null $ReleaseVersion
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
  */
 class ReleaseSummary extends Shape
 {
     /**
      * @param array{
-     *     ReleaseVersion?: string,
-     *     Timestamp?: \Aws\Api\DateTimeResult
+     *     ReleaseVersion?: string|null,
+     *     Timestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

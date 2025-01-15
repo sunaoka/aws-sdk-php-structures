@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WorkDocs\DescribeResourcePermissions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property 'USER'|'GROUP'|'INVITE'|'ANONYMOUS'|'ORGANIZATION' $Type
- * @property list<PermissionInfo> $Roles
+ * @property string|null $Id
+ * @property 'USER'|'GROUP'|'INVITE'|'ANONYMOUS'|'ORGANIZATION'|null $Type
+ * @property list<PermissionInfo>|null $Roles
  */
 class Principal extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Type?: 'USER'|'GROUP'|'INVITE'|'ANONYMOUS'|'ORGANIZATION',
-     *     Roles?: list<PermissionInfo>
+     *     Id?: string|null,
+     *     Type?: 'USER'|'GROUP'|'INVITE'|'ANONYMOUS'|'ORGANIZATION'|null,
+     *     Roles?: list<PermissionInfo>|null
      * } $args
      */
     public function __construct(array $args = [])

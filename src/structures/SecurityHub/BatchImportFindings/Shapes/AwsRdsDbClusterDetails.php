@@ -5,87 +5,87 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AllocatedStorage
- * @property list<string> $AvailabilityZones
- * @property int $BackupRetentionPeriod
- * @property string $DatabaseName
- * @property string $Status
- * @property string $Endpoint
- * @property string $ReaderEndpoint
- * @property list<string> $CustomEndpoints
- * @property bool $MultiAz
- * @property string $Engine
- * @property string $EngineVersion
- * @property int $Port
- * @property string $MasterUsername
- * @property string $PreferredBackupWindow
- * @property string $PreferredMaintenanceWindow
- * @property list<string> $ReadReplicaIdentifiers
- * @property list<AwsRdsDbInstanceVpcSecurityGroup> $VpcSecurityGroups
- * @property string $HostedZoneId
- * @property bool $StorageEncrypted
- * @property string $KmsKeyId
- * @property string $DbClusterResourceId
- * @property list<AwsRdsDbClusterAssociatedRole> $AssociatedRoles
- * @property string $ClusterCreateTime
- * @property list<string> $EnabledCloudWatchLogsExports
- * @property string $EngineMode
- * @property bool $DeletionProtection
- * @property bool $HttpEndpointEnabled
- * @property string $ActivityStreamStatus
- * @property bool $CopyTagsToSnapshot
- * @property bool $CrossAccountClone
- * @property list<AwsRdsDbDomainMembership> $DomainMemberships
- * @property string $DbClusterParameterGroup
- * @property string $DbSubnetGroup
- * @property list<AwsRdsDbClusterOptionGroupMembership> $DbClusterOptionGroupMemberships
- * @property string $DbClusterIdentifier
- * @property list<AwsRdsDbClusterMember> $DbClusterMembers
- * @property bool $IamDatabaseAuthenticationEnabled
- * @property bool $AutoMinorVersionUpgrade
+ * @property int|null $AllocatedStorage
+ * @property list<string>|null $AvailabilityZones
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $DatabaseName
+ * @property string|null $Status
+ * @property string|null $Endpoint
+ * @property string|null $ReaderEndpoint
+ * @property list<string>|null $CustomEndpoints
+ * @property bool|null $MultiAz
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property int|null $Port
+ * @property string|null $MasterUsername
+ * @property string|null $PreferredBackupWindow
+ * @property string|null $PreferredMaintenanceWindow
+ * @property list<string>|null $ReadReplicaIdentifiers
+ * @property list<AwsRdsDbInstanceVpcSecurityGroup>|null $VpcSecurityGroups
+ * @property string|null $HostedZoneId
+ * @property bool|null $StorageEncrypted
+ * @property string|null $KmsKeyId
+ * @property string|null $DbClusterResourceId
+ * @property list<AwsRdsDbClusterAssociatedRole>|null $AssociatedRoles
+ * @property string|null $ClusterCreateTime
+ * @property list<string>|null $EnabledCloudWatchLogsExports
+ * @property string|null $EngineMode
+ * @property bool|null $DeletionProtection
+ * @property bool|null $HttpEndpointEnabled
+ * @property string|null $ActivityStreamStatus
+ * @property bool|null $CopyTagsToSnapshot
+ * @property bool|null $CrossAccountClone
+ * @property list<AwsRdsDbDomainMembership>|null $DomainMemberships
+ * @property string|null $DbClusterParameterGroup
+ * @property string|null $DbSubnetGroup
+ * @property list<AwsRdsDbClusterOptionGroupMembership>|null $DbClusterOptionGroupMemberships
+ * @property string|null $DbClusterIdentifier
+ * @property list<AwsRdsDbClusterMember>|null $DbClusterMembers
+ * @property bool|null $IamDatabaseAuthenticationEnabled
+ * @property bool|null $AutoMinorVersionUpgrade
  */
 class AwsRdsDbClusterDetails extends Shape
 {
     /**
      * @param array{
-     *     AllocatedStorage?: int,
-     *     AvailabilityZones?: list<string>,
-     *     BackupRetentionPeriod?: int,
-     *     DatabaseName?: string,
-     *     Status?: string,
-     *     Endpoint?: string,
-     *     ReaderEndpoint?: string,
-     *     CustomEndpoints?: list<string>,
-     *     MultiAz?: bool,
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     Port?: int,
-     *     MasterUsername?: string,
-     *     PreferredBackupWindow?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     ReadReplicaIdentifiers?: list<string>,
-     *     VpcSecurityGroups?: list<AwsRdsDbInstanceVpcSecurityGroup>,
-     *     HostedZoneId?: string,
-     *     StorageEncrypted?: bool,
-     *     KmsKeyId?: string,
-     *     DbClusterResourceId?: string,
-     *     AssociatedRoles?: list<AwsRdsDbClusterAssociatedRole>,
-     *     ClusterCreateTime?: string,
-     *     EnabledCloudWatchLogsExports?: list<string>,
-     *     EngineMode?: string,
-     *     DeletionProtection?: bool,
-     *     HttpEndpointEnabled?: bool,
-     *     ActivityStreamStatus?: string,
-     *     CopyTagsToSnapshot?: bool,
-     *     CrossAccountClone?: bool,
-     *     DomainMemberships?: list<AwsRdsDbDomainMembership>,
-     *     DbClusterParameterGroup?: string,
-     *     DbSubnetGroup?: string,
-     *     DbClusterOptionGroupMemberships?: list<AwsRdsDbClusterOptionGroupMembership>,
-     *     DbClusterIdentifier?: string,
-     *     DbClusterMembers?: list<AwsRdsDbClusterMember>,
-     *     IamDatabaseAuthenticationEnabled?: bool,
-     *     AutoMinorVersionUpgrade?: bool
+     *     AllocatedStorage?: int|null,
+     *     AvailabilityZones?: list<string>|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     DatabaseName?: string|null,
+     *     Status?: string|null,
+     *     Endpoint?: string|null,
+     *     ReaderEndpoint?: string|null,
+     *     CustomEndpoints?: list<string>|null,
+     *     MultiAz?: bool|null,
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     Port?: int|null,
+     *     MasterUsername?: string|null,
+     *     PreferredBackupWindow?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     ReadReplicaIdentifiers?: list<string>|null,
+     *     VpcSecurityGroups?: list<AwsRdsDbInstanceVpcSecurityGroup>|null,
+     *     HostedZoneId?: string|null,
+     *     StorageEncrypted?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     DbClusterResourceId?: string|null,
+     *     AssociatedRoles?: list<AwsRdsDbClusterAssociatedRole>|null,
+     *     ClusterCreateTime?: string|null,
+     *     EnabledCloudWatchLogsExports?: list<string>|null,
+     *     EngineMode?: string|null,
+     *     DeletionProtection?: bool|null,
+     *     HttpEndpointEnabled?: bool|null,
+     *     ActivityStreamStatus?: string|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     CrossAccountClone?: bool|null,
+     *     DomainMemberships?: list<AwsRdsDbDomainMembership>|null,
+     *     DbClusterParameterGroup?: string|null,
+     *     DbSubnetGroup?: string|null,
+     *     DbClusterOptionGroupMemberships?: list<AwsRdsDbClusterOptionGroupMembership>|null,
+     *     DbClusterIdentifier?: string|null,
+     *     DbClusterMembers?: list<AwsRdsDbClusterMember>|null,
+     *     IamDatabaseAuthenticationEnabled?: bool|null,
+     *     AutoMinorVersionUpgrade?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

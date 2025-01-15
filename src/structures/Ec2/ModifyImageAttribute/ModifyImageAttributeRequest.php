@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyImageAttribute;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Attribute
- * @property Shapes\AttributeValue $Description
+ * @property string|null $Attribute
+ * @property Shapes\AttributeValue|null $Description
  * @property string $ImageId
- * @property Shapes\LaunchPermissionModifications $LaunchPermission
- * @property 'add'|'remove' $OperationType
- * @property list<string> $ProductCodes
- * @property list<string> $UserGroups
- * @property list<string> $UserIds
- * @property string $Value
- * @property list<string> $OrganizationArns
- * @property list<string> $OrganizationalUnitArns
- * @property Shapes\AttributeValue $ImdsSupport
- * @property bool $DryRun
+ * @property Shapes\LaunchPermissionModifications|null $LaunchPermission
+ * @property 'add'|'remove'|null $OperationType
+ * @property list<string>|null $ProductCodes
+ * @property list<string>|null $UserGroups
+ * @property list<string>|null $UserIds
+ * @property string|null $Value
+ * @property list<string>|null $OrganizationArns
+ * @property list<string>|null $OrganizationalUnitArns
+ * @property Shapes\AttributeValue|null $ImdsSupport
+ * @property bool|null $DryRun
  */
 class ModifyImageAttributeRequest extends Request
 {
     /**
      * @param array{
-     *     Attribute?: string,
-     *     Description?: Shapes\AttributeValue,
+     *     Attribute?: string|null,
+     *     Description?: Shapes\AttributeValue|null,
      *     ImageId: string,
-     *     LaunchPermission?: Shapes\LaunchPermissionModifications,
-     *     OperationType?: 'add'|'remove',
-     *     ProductCodes?: list<string>,
-     *     UserGroups?: list<string>,
-     *     UserIds?: list<string>,
-     *     Value?: string,
-     *     OrganizationArns?: list<string>,
-     *     OrganizationalUnitArns?: list<string>,
-     *     ImdsSupport?: Shapes\AttributeValue,
-     *     DryRun?: bool
+     *     LaunchPermission?: Shapes\LaunchPermissionModifications|null,
+     *     OperationType?: 'add'|'remove'|null,
+     *     ProductCodes?: list<string>|null,
+     *     UserGroups?: list<string>|null,
+     *     UserIds?: list<string>|null,
+     *     Value?: string|null,
+     *     OrganizationArns?: list<string>|null,
+     *     OrganizationalUnitArns?: list<string>|null,
+     *     ImdsSupport?: Shapes\AttributeValue|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

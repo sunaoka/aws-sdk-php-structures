@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\SupportApp\RegisterSlackWorkspaceForOrganizatio
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'management'|'member' $accountType
- * @property string $teamId
- * @property string $teamName
+ * @property 'management'|'member'|null $accountType
+ * @property string|null $teamId
+ * @property string|null $teamName
  */
 class RegisterSlackWorkspaceForOrganizationResponse extends Response
 {

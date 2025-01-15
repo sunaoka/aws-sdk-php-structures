@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\RoboMaker\ListWorldTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property string $name
- * @property string $version
+ * @property string|null $arn
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property string|null $name
+ * @property string|null $version
  */
 class TemplateSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     name?: string,
-     *     version?: string
+     *     arn?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     name?: string|null,
+     *     version?: string|null
      * } $args
      */
     public function __construct(array $args = [])

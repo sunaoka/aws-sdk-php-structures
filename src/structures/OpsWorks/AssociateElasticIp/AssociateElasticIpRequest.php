@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ElasticIp
- * @property string $InstanceId
+ * @property string|null $InstanceId
  */
 class AssociateElasticIpRequest extends Request
 {
     /**
      * @param array{
      *     ElasticIp: string,
-     *     InstanceId?: string
+     *     InstanceId?: string|null
      * } $args
      */
     public function __construct(array $args)

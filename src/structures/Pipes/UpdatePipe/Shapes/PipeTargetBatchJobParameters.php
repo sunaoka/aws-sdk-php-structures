@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $JobDefinition
  * @property string $JobName
- * @property BatchArrayProperties $ArrayProperties
- * @property BatchRetryStrategy $RetryStrategy
- * @property BatchContainerOverrides $ContainerOverrides
- * @property list<BatchJobDependency> $DependsOn
- * @property array<string, string> $Parameters
+ * @property BatchArrayProperties|null $ArrayProperties
+ * @property BatchRetryStrategy|null $RetryStrategy
+ * @property BatchContainerOverrides|null $ContainerOverrides
+ * @property list<BatchJobDependency>|null $DependsOn
+ * @property array<string, string>|null $Parameters
  */
 class PipeTargetBatchJobParameters extends Shape
 {
@@ -19,11 +19,11 @@ class PipeTargetBatchJobParameters extends Shape
      * @param array{
      *     JobDefinition: string,
      *     JobName: string,
-     *     ArrayProperties?: BatchArrayProperties,
-     *     RetryStrategy?: BatchRetryStrategy,
-     *     ContainerOverrides?: BatchContainerOverrides,
-     *     DependsOn?: list<BatchJobDependency>,
-     *     Parameters?: array<string, string>
+     *     ArrayProperties?: BatchArrayProperties|null,
+     *     RetryStrategy?: BatchRetryStrategy|null,
+     *     ContainerOverrides?: BatchContainerOverrides|null,
+     *     DependsOn?: list<BatchJobDependency>|null,
+     *     Parameters?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

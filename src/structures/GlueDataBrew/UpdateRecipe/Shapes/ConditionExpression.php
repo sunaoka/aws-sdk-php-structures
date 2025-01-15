@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Condition
- * @property string $Value
+ * @property string|null $Value
  * @property string $TargetColumn
  */
 class ConditionExpression extends Shape
@@ -14,7 +14,7 @@ class ConditionExpression extends Shape
     /**
      * @param array{
      *     Condition: string,
-     *     Value?: string,
+     *     Value?: string|null,
      *     TargetColumn: string
      * } $args
      */

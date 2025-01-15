@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ServiceAccessRoleArn
  * @property string $EndpointUri
- * @property int $FullLoadErrorPercentage
- * @property int $ErrorRetryDuration
- * @property bool $UseNewMappingType
+ * @property int|null $FullLoadErrorPercentage
+ * @property int|null $ErrorRetryDuration
+ * @property bool|null $UseNewMappingType
  */
 class ElasticsearchSettings extends Shape
 {
@@ -17,9 +17,9 @@ class ElasticsearchSettings extends Shape
      * @param array{
      *     ServiceAccessRoleArn: string,
      *     EndpointUri: string,
-     *     FullLoadErrorPercentage?: int,
-     *     ErrorRetryDuration?: int,
-     *     UseNewMappingType?: bool
+     *     FullLoadErrorPercentage?: int|null,
+     *     ErrorRetryDuration?: int|null,
+     *     UseNewMappingType?: bool|null
      * } $args
      */
     public function __construct(array $args)

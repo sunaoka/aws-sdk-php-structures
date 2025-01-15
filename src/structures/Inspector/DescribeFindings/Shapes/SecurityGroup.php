@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector\DescribeFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $groupName
- * @property string $groupId
+ * @property string|null $groupName
+ * @property string|null $groupId
  */
 class SecurityGroup extends Shape
 {
     /**
      * @param array{
-     *     groupName?: string,
-     *     groupId?: string
+     *     groupName?: string|null,
+     *     groupId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

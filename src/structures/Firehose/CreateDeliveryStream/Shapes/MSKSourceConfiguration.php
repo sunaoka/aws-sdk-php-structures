@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $MSKClusterARN
  * @property string $TopicName
  * @property AuthenticationConfiguration $AuthenticationConfiguration
- * @property \Aws\Api\DateTimeResult $ReadFromTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ReadFromTimestamp
  */
 class MSKSourceConfiguration extends Shape
 {
@@ -17,7 +17,7 @@ class MSKSourceConfiguration extends Shape
      *     MSKClusterARN: string,
      *     TopicName: string,
      *     AuthenticationConfiguration: AuthenticationConfiguration,
-     *     ReadFromTimestamp?: \Aws\Api\DateTimeResult
+     *     ReadFromTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

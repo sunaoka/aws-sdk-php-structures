@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAssetBundleImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AssetBundleImportJobResourceIdOverrideConfiguration $ResourceIdOverrideConfiguration
- * @property list<AssetBundleImportJobVPCConnectionOverrideParameters> $VPCConnections
- * @property list<AssetBundleImportJobRefreshScheduleOverrideParameters> $RefreshSchedules
- * @property list<AssetBundleImportJobDataSourceOverrideParameters> $DataSources
- * @property list<AssetBundleImportJobDataSetOverrideParameters> $DataSets
- * @property list<AssetBundleImportJobThemeOverrideParameters> $Themes
- * @property list<AssetBundleImportJobAnalysisOverrideParameters> $Analyses
- * @property list<AssetBundleImportJobDashboardOverrideParameters> $Dashboards
- * @property list<AssetBundleImportJobFolderOverrideParameters> $Folders
+ * @property AssetBundleImportJobResourceIdOverrideConfiguration|null $ResourceIdOverrideConfiguration
+ * @property list<AssetBundleImportJobVPCConnectionOverrideParameters>|null $VPCConnections
+ * @property list<AssetBundleImportJobRefreshScheduleOverrideParameters>|null $RefreshSchedules
+ * @property list<AssetBundleImportJobDataSourceOverrideParameters>|null $DataSources
+ * @property list<AssetBundleImportJobDataSetOverrideParameters>|null $DataSets
+ * @property list<AssetBundleImportJobThemeOverrideParameters>|null $Themes
+ * @property list<AssetBundleImportJobAnalysisOverrideParameters>|null $Analyses
+ * @property list<AssetBundleImportJobDashboardOverrideParameters>|null $Dashboards
+ * @property list<AssetBundleImportJobFolderOverrideParameters>|null $Folders
  */
 class AssetBundleImportJobOverrideParameters extends Shape
 {
     /**
      * @param array{
-     *     ResourceIdOverrideConfiguration?: AssetBundleImportJobResourceIdOverrideConfiguration,
-     *     VPCConnections?: list<AssetBundleImportJobVPCConnectionOverrideParameters>,
-     *     RefreshSchedules?: list<AssetBundleImportJobRefreshScheduleOverrideParameters>,
-     *     DataSources?: list<AssetBundleImportJobDataSourceOverrideParameters>,
-     *     DataSets?: list<AssetBundleImportJobDataSetOverrideParameters>,
-     *     Themes?: list<AssetBundleImportJobThemeOverrideParameters>,
-     *     Analyses?: list<AssetBundleImportJobAnalysisOverrideParameters>,
-     *     Dashboards?: list<AssetBundleImportJobDashboardOverrideParameters>,
-     *     Folders?: list<AssetBundleImportJobFolderOverrideParameters>
+     *     ResourceIdOverrideConfiguration?: AssetBundleImportJobResourceIdOverrideConfiguration|null,
+     *     VPCConnections?: list<AssetBundleImportJobVPCConnectionOverrideParameters>|null,
+     *     RefreshSchedules?: list<AssetBundleImportJobRefreshScheduleOverrideParameters>|null,
+     *     DataSources?: list<AssetBundleImportJobDataSourceOverrideParameters>|null,
+     *     DataSets?: list<AssetBundleImportJobDataSetOverrideParameters>|null,
+     *     Themes?: list<AssetBundleImportJobThemeOverrideParameters>|null,
+     *     Analyses?: list<AssetBundleImportJobAnalysisOverrideParameters>|null,
+     *     Dashboards?: list<AssetBundleImportJobDashboardOverrideParameters>|null,
+     *     Folders?: list<AssetBundleImportJobFolderOverrideParameters>|null
      * } $args
      */
     public function __construct(array $args = [])

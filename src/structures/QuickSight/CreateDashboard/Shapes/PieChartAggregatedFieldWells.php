@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $Category
- * @property list<MeasureField> $Values
- * @property list<DimensionField> $SmallMultiples
+ * @property list<DimensionField>|null $Category
+ * @property list<MeasureField>|null $Values
+ * @property list<DimensionField>|null $SmallMultiples
  */
 class PieChartAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     Category?: list<DimensionField>,
-     *     Values?: list<MeasureField>,
-     *     SmallMultiples?: list<DimensionField>
+     *     Category?: list<DimensionField>|null,
+     *     Values?: list<MeasureField>|null,
+     *     SmallMultiples?: list<DimensionField>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $connectorArn
- * @property string $currentVersion
+ * @property string|null $currentVersion
  */
 class DeleteConnectorRequest extends Request
 {
     /**
      * @param array{
      *     connectorArn: string,
-     *     currentVersion?: string
+     *     currentVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

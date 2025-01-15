@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property Condition $condition
  * @property DialogState $nextStep
- * @property ResponseSpecification $response
+ * @property ResponseSpecification|null $response
  */
 class ConditionalBranch extends Shape
 {
@@ -17,7 +17,7 @@ class ConditionalBranch extends Shape
      *     name: string,
      *     condition: Condition,
      *     nextStep: DialogState,
-     *     response?: ResponseSpecification
+     *     response?: ResponseSpecification|null
      * } $args
      */
     public function __construct(array $args)

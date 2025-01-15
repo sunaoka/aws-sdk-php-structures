@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MQ\CreateConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property 'SIMPLE'|'LDAP' $AuthenticationStrategy
- * @property \Aws\Api\DateTimeResult $Created
- * @property string $Id
- * @property Shapes\ConfigurationRevision $LatestRevision
- * @property string $Name
+ * @property string|null $Arn
+ * @property 'SIMPLE'|'LDAP'|null $AuthenticationStrategy
+ * @property \Aws\Api\DateTimeResult|null $Created
+ * @property string|null $Id
+ * @property Shapes\ConfigurationRevision|null $LatestRevision
+ * @property string|null $Name
  */
 class CreateConfigurationResponse extends Response
 {

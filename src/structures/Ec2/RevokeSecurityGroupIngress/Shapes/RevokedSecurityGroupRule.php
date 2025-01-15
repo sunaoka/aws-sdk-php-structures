@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ec2\RevokeSecurityGroupIngress\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SecurityGroupRuleId
- * @property string $GroupId
- * @property bool $IsEgress
- * @property string $IpProtocol
- * @property int $FromPort
- * @property int $ToPort
- * @property string $CidrIpv4
- * @property string $CidrIpv6
- * @property string $PrefixListId
- * @property string $ReferencedGroupId
- * @property string $Description
+ * @property string|null $SecurityGroupRuleId
+ * @property string|null $GroupId
+ * @property bool|null $IsEgress
+ * @property string|null $IpProtocol
+ * @property int|null $FromPort
+ * @property int|null $ToPort
+ * @property string|null $CidrIpv4
+ * @property string|null $CidrIpv6
+ * @property string|null $PrefixListId
+ * @property string|null $ReferencedGroupId
+ * @property string|null $Description
  */
 class RevokedSecurityGroupRule extends Shape
 {
     /**
      * @param array{
-     *     SecurityGroupRuleId?: string,
-     *     GroupId?: string,
-     *     IsEgress?: bool,
-     *     IpProtocol?: string,
-     *     FromPort?: int,
-     *     ToPort?: int,
-     *     CidrIpv4?: string,
-     *     CidrIpv6?: string,
-     *     PrefixListId?: string,
-     *     ReferencedGroupId?: string,
-     *     Description?: string
+     *     SecurityGroupRuleId?: string|null,
+     *     GroupId?: string|null,
+     *     IsEgress?: bool|null,
+     *     IpProtocol?: string|null,
+     *     FromPort?: int|null,
+     *     ToPort?: int|null,
+     *     CidrIpv4?: string|null,
+     *     CidrIpv6?: string|null,
+     *     PrefixListId?: string|null,
+     *     ReferencedGroupId?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListSpaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DomainId
- * @property string $SpaceName
- * @property 'Deleting'|'Failed'|'InService'|'Pending'|'Updating'|'Update_Failed'|'Delete_Failed' $Status
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property SpaceSettingsSummary $SpaceSettingsSummary
- * @property SpaceSharingSettingsSummary $SpaceSharingSettingsSummary
- * @property OwnershipSettingsSummary $OwnershipSettingsSummary
- * @property string $SpaceDisplayName
+ * @property string|null $DomainId
+ * @property string|null $SpaceName
+ * @property 'Deleting'|'Failed'|'InService'|'Pending'|'Updating'|'Update_Failed'|'Delete_Failed'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property SpaceSettingsSummary|null $SpaceSettingsSummary
+ * @property SpaceSharingSettingsSummary|null $SpaceSharingSettingsSummary
+ * @property OwnershipSettingsSummary|null $OwnershipSettingsSummary
+ * @property string|null $SpaceDisplayName
  */
 class SpaceDetails extends Shape
 {
     /**
      * @param array{
-     *     DomainId?: string,
-     *     SpaceName?: string,
-     *     Status?: 'Deleting'|'Failed'|'InService'|'Pending'|'Updating'|'Update_Failed'|'Delete_Failed',
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     SpaceSettingsSummary?: SpaceSettingsSummary,
-     *     SpaceSharingSettingsSummary?: SpaceSharingSettingsSummary,
-     *     OwnershipSettingsSummary?: OwnershipSettingsSummary,
-     *     SpaceDisplayName?: string
+     *     DomainId?: string|null,
+     *     SpaceName?: string|null,
+     *     Status?: 'Deleting'|'Failed'|'InService'|'Pending'|'Updating'|'Update_Failed'|'Delete_Failed'|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     SpaceSettingsSummary?: SpaceSettingsSummary|null,
+     *     SpaceSharingSettingsSummary?: SpaceSharingSettingsSummary|null,
+     *     OwnershipSettingsSummary?: OwnershipSettingsSummary|null,
+     *     SpaceDisplayName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

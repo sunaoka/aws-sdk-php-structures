@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
+ * @property string|null $domainOwner
  * @property string $packageGroup
  */
 class DeletePackageGroupRequest extends Request
@@ -14,7 +14,7 @@ class DeletePackageGroupRequest extends Request
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string,
+     *     domainOwner?: string|null,
      *     packageGroup: string
      * } $args
      */

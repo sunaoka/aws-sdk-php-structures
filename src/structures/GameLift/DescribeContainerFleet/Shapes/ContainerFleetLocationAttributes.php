@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribeContainerFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Location
- * @property 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING' $Status
+ * @property string|null $Location
+ * @property 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING'|null $Status
  */
 class ContainerFleetLocationAttributes extends Shape
 {
     /**
      * @param array{
-     *     Location?: string,
-     *     Status?: 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING'
+     *     Location?: string|null,
+     *     Status?: 'PENDING'|'CREATING'|'CREATED'|'ACTIVATING'|'ACTIVE'|'UPDATING'|'DELETING'|null
      * } $args
      */
     public function __construct(array $args = [])

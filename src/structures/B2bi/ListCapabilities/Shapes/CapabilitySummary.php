@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $name
  * @property 'edi' $type
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $modifiedAt
+ * @property \Aws\Api\DateTimeResult|null $modifiedAt
  */
 class CapabilitySummary extends Shape
 {
@@ -19,7 +19,7 @@ class CapabilitySummary extends Shape
      *     name: string,
      *     type: 'edi',
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     modifiedAt?: \Aws\Api\DateTimeResult
+     *     modifiedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

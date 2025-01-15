@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ApplicationAutoScaling\GetPredictiveScalingFore
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\LoadForecast> $LoadForecast
- * @property Shapes\CapacityForecast $CapacityForecast
- * @property \Aws\Api\DateTimeResult $UpdateTime
+ * @property list<Shapes\LoadForecast>|null $LoadForecast
+ * @property Shapes\CapacityForecast|null $CapacityForecast
+ * @property \Aws\Api\DateTimeResult|null $UpdateTime
  */
 class GetPredictiveScalingForecastResponse extends Response
 {

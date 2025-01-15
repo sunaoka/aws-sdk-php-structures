@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceGroupName
- * @property string $AccountId
+ * @property string|null $AccountId
  */
 class DescribeApplicationRequest extends Request
 {
     /**
      * @param array{
      *     ResourceGroupName: string,
-     *     AccountId?: string
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

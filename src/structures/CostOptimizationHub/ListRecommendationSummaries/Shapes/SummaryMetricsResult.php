@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\ListRecommendationSummaries
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $savingsPercentage
+ * @property string|null $savingsPercentage
  */
 class SummaryMetricsResult extends Shape
 {
     /**
-     * @param array{savingsPercentage?: string} $args
+     * @param array{savingsPercentage?: string|null} $args
      */
     public function __construct(array $args = [])
     {

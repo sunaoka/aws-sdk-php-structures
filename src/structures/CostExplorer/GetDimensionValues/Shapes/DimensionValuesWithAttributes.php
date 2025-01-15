@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetDimensionValues\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
- * @property array<string, string> $Attributes
+ * @property string|null $Value
+ * @property array<string, string>|null $Attributes
  */
 class DimensionValuesWithAttributes extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
-     *     Attributes?: array<string, string>
+     *     Value?: string|null,
+     *     Attributes?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

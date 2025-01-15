@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Radius
+ * @property double|null $Radius
  */
 class GeospatialCircleRadius extends Shape
 {
     /**
-     * @param array{Radius?: double} $args
+     * @param array{Radius?: double|null} $args
      */
     public function __construct(array $args = [])
     {

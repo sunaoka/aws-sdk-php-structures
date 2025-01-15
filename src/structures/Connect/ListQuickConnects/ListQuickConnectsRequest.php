@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InstanceId
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
- * @property list<'USER'|'QUEUE'|'PHONE_NUMBER'> $QuickConnectTypes
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
+ * @property list<'USER'|'QUEUE'|'PHONE_NUMBER'>|null $QuickConnectTypes
  */
 class ListQuickConnectsRequest extends Request
 {
     /**
      * @param array{
      *     InstanceId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     QuickConnectTypes?: list<'USER'|'QUEUE'|'PHONE_NUMBER'>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     QuickConnectTypes?: list<'USER'|'QUEUE'|'PHONE_NUMBER'>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\CachePolicyConfig $CachePolicyConfig
  * @property string $Id
- * @property string $IfMatch
+ * @property string|null $IfMatch
  */
 class UpdateCachePolicyRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateCachePolicyRequest extends Request
      * @param array{
      *     CachePolicyConfig: Shapes\CachePolicyConfig,
      *     Id: string,
-     *     IfMatch?: string
+     *     IfMatch?: string|null
      * } $args
      */
     public function __construct(array $args)

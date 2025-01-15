@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $QueueId
- * @property string $Name
- * @property string $Description
+ * @property string|null $Name
+ * @property string|null $Description
  */
 class UpdateQueueNameRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateQueueNameRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     QueueId: string,
-     *     Name?: string,
-     *     Description?: string
+     *     Name?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

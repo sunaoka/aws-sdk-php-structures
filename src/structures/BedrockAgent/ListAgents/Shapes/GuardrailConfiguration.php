@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\ListAgents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $guardrailIdentifier
- * @property string $guardrailVersion
+ * @property string|null $guardrailIdentifier
+ * @property string|null $guardrailVersion
  */
 class GuardrailConfiguration extends Shape
 {
     /**
      * @param array{
-     *     guardrailIdentifier?: string,
-     *     guardrailVersion?: string
+     *     guardrailIdentifier?: string|null,
+     *     guardrailVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

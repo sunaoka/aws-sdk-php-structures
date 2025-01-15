@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $RegistrationId
  * @property string $RegistrationType
  * @property list<Shapes\RegistrationAssociationMetadata> $RegistrationAssociations
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListRegistrationAssociationsResponse extends Response
 {

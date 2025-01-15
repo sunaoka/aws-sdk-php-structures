@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $monitorName
- * @property list<Shapes\MonitorLocalResource> $localResourcesToAdd
- * @property list<Shapes\MonitorLocalResource> $localResourcesToRemove
- * @property list<Shapes\MonitorRemoteResource> $remoteResourcesToAdd
- * @property list<Shapes\MonitorRemoteResource> $remoteResourcesToRemove
- * @property string $clientToken
+ * @property list<Shapes\MonitorLocalResource>|null $localResourcesToAdd
+ * @property list<Shapes\MonitorLocalResource>|null $localResourcesToRemove
+ * @property list<Shapes\MonitorRemoteResource>|null $remoteResourcesToAdd
+ * @property list<Shapes\MonitorRemoteResource>|null $remoteResourcesToRemove
+ * @property string|null $clientToken
  */
 class UpdateMonitorRequest extends Request
 {
     /**
      * @param array{
      *     monitorName: string,
-     *     localResourcesToAdd?: list<Shapes\MonitorLocalResource>,
-     *     localResourcesToRemove?: list<Shapes\MonitorLocalResource>,
-     *     remoteResourcesToAdd?: list<Shapes\MonitorRemoteResource>,
-     *     remoteResourcesToRemove?: list<Shapes\MonitorRemoteResource>,
-     *     clientToken?: string
+     *     localResourcesToAdd?: list<Shapes\MonitorLocalResource>|null,
+     *     localResourcesToRemove?: list<Shapes\MonitorLocalResource>|null,
+     *     remoteResourcesToAdd?: list<Shapes\MonitorRemoteResource>|null,
+     *     remoteResourcesToRemove?: list<Shapes\MonitorRemoteResource>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

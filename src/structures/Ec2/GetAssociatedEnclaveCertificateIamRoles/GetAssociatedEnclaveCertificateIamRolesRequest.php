@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CertificateArn
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class GetAssociatedEnclaveCertificateIamRolesRequest extends Request
 {
     /**
      * @param array{
      *     CertificateArn: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

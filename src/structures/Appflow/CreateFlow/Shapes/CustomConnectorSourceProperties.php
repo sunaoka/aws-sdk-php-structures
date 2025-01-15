@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $entityName
- * @property array<string, string> $customProperties
- * @property DataTransferApi $dataTransferApi
+ * @property array<string, string>|null $customProperties
+ * @property DataTransferApi|null $dataTransferApi
  */
 class CustomConnectorSourceProperties extends Shape
 {
     /**
      * @param array{
      *     entityName: string,
-     *     customProperties?: array<string, string>,
-     *     dataTransferApi?: DataTransferApi
+     *     customProperties?: array<string, string>|null,
+     *     dataTransferApi?: DataTransferApi|null
      * } $args
      */
     public function __construct(array $args)

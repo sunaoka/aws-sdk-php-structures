@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $blueprintArn
- * @property string $blueprintVersion
+ * @property string|null $blueprintVersion
  */
 class DeleteBlueprintRequest extends Request
 {
     /**
      * @param array{
      *     blueprintArn: string,
-     *     blueprintVersion?: string
+     *     blueprintVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\MTurk\ListHITs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $HITId
- * @property string $HITTypeId
- * @property string $HITGroupId
- * @property string $HITLayoutId
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $Title
- * @property string $Description
- * @property string $Question
- * @property string $Keywords
- * @property 'Assignable'|'Unassignable'|'Reviewable'|'Reviewing'|'Disposed' $HITStatus
- * @property int $MaxAssignments
- * @property string $Reward
- * @property int $AutoApprovalDelayInSeconds
- * @property \Aws\Api\DateTimeResult $Expiration
- * @property int $AssignmentDurationInSeconds
- * @property string $RequesterAnnotation
- * @property list<QualificationRequirement> $QualificationRequirements
- * @property 'NotReviewed'|'MarkedForReview'|'ReviewedAppropriate'|'ReviewedInappropriate' $HITReviewStatus
- * @property int $NumberOfAssignmentsPending
- * @property int $NumberOfAssignmentsAvailable
- * @property int $NumberOfAssignmentsCompleted
+ * @property string|null $HITId
+ * @property string|null $HITTypeId
+ * @property string|null $HITGroupId
+ * @property string|null $HITLayoutId
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $Title
+ * @property string|null $Description
+ * @property string|null $Question
+ * @property string|null $Keywords
+ * @property 'Assignable'|'Unassignable'|'Reviewable'|'Reviewing'|'Disposed'|null $HITStatus
+ * @property int|null $MaxAssignments
+ * @property string|null $Reward
+ * @property int|null $AutoApprovalDelayInSeconds
+ * @property \Aws\Api\DateTimeResult|null $Expiration
+ * @property int|null $AssignmentDurationInSeconds
+ * @property string|null $RequesterAnnotation
+ * @property list<QualificationRequirement>|null $QualificationRequirements
+ * @property 'NotReviewed'|'MarkedForReview'|'ReviewedAppropriate'|'ReviewedInappropriate'|null $HITReviewStatus
+ * @property int|null $NumberOfAssignmentsPending
+ * @property int|null $NumberOfAssignmentsAvailable
+ * @property int|null $NumberOfAssignmentsCompleted
  */
 class HIT extends Shape
 {
     /**
      * @param array{
-     *     HITId?: string,
-     *     HITTypeId?: string,
-     *     HITGroupId?: string,
-     *     HITLayoutId?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     Title?: string,
-     *     Description?: string,
-     *     Question?: string,
-     *     Keywords?: string,
-     *     HITStatus?: 'Assignable'|'Unassignable'|'Reviewable'|'Reviewing'|'Disposed',
-     *     MaxAssignments?: int,
-     *     Reward?: string,
-     *     AutoApprovalDelayInSeconds?: int,
-     *     Expiration?: \Aws\Api\DateTimeResult,
-     *     AssignmentDurationInSeconds?: int,
-     *     RequesterAnnotation?: string,
-     *     QualificationRequirements?: list<QualificationRequirement>,
-     *     HITReviewStatus?: 'NotReviewed'|'MarkedForReview'|'ReviewedAppropriate'|'ReviewedInappropriate',
-     *     NumberOfAssignmentsPending?: int,
-     *     NumberOfAssignmentsAvailable?: int,
-     *     NumberOfAssignmentsCompleted?: int
+     *     HITId?: string|null,
+     *     HITTypeId?: string|null,
+     *     HITGroupId?: string|null,
+     *     HITLayoutId?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     Title?: string|null,
+     *     Description?: string|null,
+     *     Question?: string|null,
+     *     Keywords?: string|null,
+     *     HITStatus?: 'Assignable'|'Unassignable'|'Reviewable'|'Reviewing'|'Disposed'|null,
+     *     MaxAssignments?: int|null,
+     *     Reward?: string|null,
+     *     AutoApprovalDelayInSeconds?: int|null,
+     *     Expiration?: \Aws\Api\DateTimeResult|null,
+     *     AssignmentDurationInSeconds?: int|null,
+     *     RequesterAnnotation?: string|null,
+     *     QualificationRequirements?: list<QualificationRequirement>|null,
+     *     HITReviewStatus?: 'NotReviewed'|'MarkedForReview'|'ReviewedAppropriate'|'ReviewedInappropriate'|null,
+     *     NumberOfAssignmentsPending?: int|null,
+     *     NumberOfAssignmentsAvailable?: int|null,
+     *     NumberOfAssignmentsCompleted?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PermissionConfiguration $PermissionConfiguration
- * @property string $EffectivePermission
+ * @property PermissionConfiguration|null $PermissionConfiguration
+ * @property string|null $EffectivePermission
  */
 class PublicAccess extends Shape
 {
     /**
      * @param array{
-     *     PermissionConfiguration?: PermissionConfiguration,
-     *     EffectivePermission?: string
+     *     PermissionConfiguration?: PermissionConfiguration|null,
+     *     EffectivePermission?: string|null
      * } $args
      */
     public function __construct(array $args = [])

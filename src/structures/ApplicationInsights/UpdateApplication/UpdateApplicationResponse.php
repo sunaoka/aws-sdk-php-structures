@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\UpdateApplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ApplicationInfo $ApplicationInfo
+ * @property Shapes\ApplicationInfo|null $ApplicationInfo
  */
 class UpdateApplicationResponse extends Response
 {

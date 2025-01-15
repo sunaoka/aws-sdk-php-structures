@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $snapshotCopyConfigurationId
- * @property int $snapshotRetentionPeriod
+ * @property int|null $snapshotRetentionPeriod
  */
 class UpdateSnapshotCopyConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     snapshotCopyConfigurationId: string,
-     *     snapshotRetentionPeriod?: int
+     *     snapshotRetentionPeriod?: int|null
      * } $args
      */
     public function __construct(array $args)

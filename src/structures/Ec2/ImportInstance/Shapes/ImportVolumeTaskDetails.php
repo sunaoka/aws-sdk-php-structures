@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\ImportInstance\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property int $BytesConverted
- * @property string $Description
- * @property DiskImageDescription $Image
- * @property DiskImageVolumeDescription $Volume
+ * @property string|null $AvailabilityZone
+ * @property int|null $BytesConverted
+ * @property string|null $Description
+ * @property DiskImageDescription|null $Image
+ * @property DiskImageVolumeDescription|null $Volume
  */
 class ImportVolumeTaskDetails extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     BytesConverted?: int,
-     *     Description?: string,
-     *     Image?: DiskImageDescription,
-     *     Volume?: DiskImageVolumeDescription
+     *     AvailabilityZone?: string|null,
+     *     BytesConverted?: int|null,
+     *     Description?: string|null,
+     *     Image?: DiskImageDescription|null,
+     *     Volume?: DiskImageVolumeDescription|null
      * } $args
      */
     public function __construct(array $args = [])

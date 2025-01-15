@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\drs\DescribeLaunchConfigurationTemplates\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $osByol
+ * @property bool|null $osByol
  */
 class Licensing extends Shape
 {
     /**
-     * @param array{osByol?: bool} $args
+     * @param array{osByol?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

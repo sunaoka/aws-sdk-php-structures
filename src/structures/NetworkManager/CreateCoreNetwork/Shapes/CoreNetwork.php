@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\NetworkManager\CreateCoreNetwork\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GlobalNetworkId
- * @property string $CoreNetworkId
- * @property string $CoreNetworkArn
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property 'CREATING'|'UPDATING'|'AVAILABLE'|'DELETING' $State
- * @property list<CoreNetworkSegment> $Segments
- * @property list<CoreNetworkNetworkFunctionGroup> $NetworkFunctionGroups
- * @property list<CoreNetworkEdge> $Edges
- * @property list<Tag> $Tags
+ * @property string|null $GlobalNetworkId
+ * @property string|null $CoreNetworkId
+ * @property string|null $CoreNetworkArn
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property 'CREATING'|'UPDATING'|'AVAILABLE'|'DELETING'|null $State
+ * @property list<CoreNetworkSegment>|null $Segments
+ * @property list<CoreNetworkNetworkFunctionGroup>|null $NetworkFunctionGroups
+ * @property list<CoreNetworkEdge>|null $Edges
+ * @property list<Tag>|null $Tags
  */
 class CoreNetwork extends Shape
 {
     /**
      * @param array{
-     *     GlobalNetworkId?: string,
-     *     CoreNetworkId?: string,
-     *     CoreNetworkArn?: string,
-     *     Description?: string,
-     *     CreatedAt?: \Aws\Api\DateTimeResult,
-     *     State?: 'CREATING'|'UPDATING'|'AVAILABLE'|'DELETING',
-     *     Segments?: list<CoreNetworkSegment>,
-     *     NetworkFunctionGroups?: list<CoreNetworkNetworkFunctionGroup>,
-     *     Edges?: list<CoreNetworkEdge>,
-     *     Tags?: list<Tag>
+     *     GlobalNetworkId?: string|null,
+     *     CoreNetworkId?: string|null,
+     *     CoreNetworkArn?: string|null,
+     *     Description?: string|null,
+     *     CreatedAt?: \Aws\Api\DateTimeResult|null,
+     *     State?: 'CREATING'|'UPDATING'|'AVAILABLE'|'DELETING'|null,
+     *     Segments?: list<CoreNetworkSegment>|null,
+     *     NetworkFunctionGroups?: list<CoreNetworkNetworkFunctionGroup>|null,
+     *     Edges?: list<CoreNetworkEdge>|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

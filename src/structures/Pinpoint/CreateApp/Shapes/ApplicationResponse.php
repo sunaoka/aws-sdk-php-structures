@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Arn
  * @property string $Id
  * @property string $Name
- * @property array<string, string> $tags
- * @property string $CreationDate
+ * @property array<string, string>|null $tags
+ * @property string|null $CreationDate
  */
 class ApplicationResponse extends Shape
 {
@@ -18,8 +18,8 @@ class ApplicationResponse extends Shape
      *     Arn: string,
      *     Id: string,
      *     Name: string,
-     *     tags?: array<string, string>,
-     *     CreationDate?: string
+     *     tags?: array<string, string>|null,
+     *     CreationDate?: string|null
      * } $args
      */
     public function __construct(array $args)

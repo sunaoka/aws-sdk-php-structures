@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $iops
- * @property double $throughput
+ * @property double|null $iops
+ * @property double|null $throughput
  */
 class BlockStoragePerformanceConfiguration extends Shape
 {
     /**
      * @param array{
-     *     iops?: double,
-     *     throughput?: double
+     *     iops?: double|null,
+     *     throughput?: double|null
      * } $args
      */
     public function __construct(array $args = [])

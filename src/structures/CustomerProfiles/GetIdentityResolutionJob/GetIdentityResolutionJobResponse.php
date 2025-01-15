@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetIdentityResolutionJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DomainName
- * @property string $JobId
- * @property 'PENDING'|'PREPROCESSING'|'FIND_MATCHING'|'MERGING'|'COMPLETED'|'PARTIAL_SUCCESS'|'FAILED' $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $JobStartTime
- * @property \Aws\Api\DateTimeResult $JobEndTime
- * @property \Aws\Api\DateTimeResult $LastUpdatedAt
- * @property \Aws\Api\DateTimeResult $JobExpirationTime
- * @property Shapes\AutoMerging $AutoMerging
- * @property Shapes\ExportingLocation $ExportingLocation
- * @property Shapes\JobStats $JobStats
+ * @property string|null $DomainName
+ * @property string|null $JobId
+ * @property 'PENDING'|'PREPROCESSING'|'FIND_MATCHING'|'MERGING'|'COMPLETED'|'PARTIAL_SUCCESS'|'FAILED'|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $JobStartTime
+ * @property \Aws\Api\DateTimeResult|null $JobEndTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedAt
+ * @property \Aws\Api\DateTimeResult|null $JobExpirationTime
+ * @property Shapes\AutoMerging|null $AutoMerging
+ * @property Shapes\ExportingLocation|null $ExportingLocation
+ * @property Shapes\JobStats|null $JobStats
  */
 class GetIdentityResolutionJobResponse extends Response
 {

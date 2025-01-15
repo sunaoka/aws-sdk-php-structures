@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $instanceId
  * @property string $libraryItemId
- * @property bool $isVerified
+ * @property bool|null $isVerified
  */
 class UpdateLibraryItemMetadataRequest extends Request
 {
@@ -15,7 +15,7 @@ class UpdateLibraryItemMetadataRequest extends Request
      * @param array{
      *     instanceId: string,
      *     libraryItemId: string,
-     *     isVerified?: bool
+     *     isVerified?: bool|null
      * } $args
      */
     public function __construct(array $args)

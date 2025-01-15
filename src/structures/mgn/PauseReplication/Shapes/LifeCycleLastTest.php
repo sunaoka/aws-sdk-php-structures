@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\mgn\PauseReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LifeCycleLastTestFinalized $finalized
- * @property LifeCycleLastTestInitiated $initiated
- * @property LifeCycleLastTestReverted $reverted
+ * @property LifeCycleLastTestFinalized|null $finalized
+ * @property LifeCycleLastTestInitiated|null $initiated
+ * @property LifeCycleLastTestReverted|null $reverted
  */
 class LifeCycleLastTest extends Shape
 {
     /**
      * @param array{
-     *     finalized?: LifeCycleLastTestFinalized,
-     *     initiated?: LifeCycleLastTestInitiated,
-     *     reverted?: LifeCycleLastTestReverted
+     *     finalized?: LifeCycleLastTestFinalized|null,
+     *     initiated?: LifeCycleLastTestInitiated|null,
+     *     reverted?: LifeCycleLastTestReverted|null
      * } $args
      */
     public function __construct(array $args = [])

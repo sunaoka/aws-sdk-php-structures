@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $PlaybackConfigurationName
  * @property PrefetchRetrieval $Retrieval
- * @property string $StreamId
+ * @property string|null $StreamId
  */
 class PrefetchSchedule extends Shape
 {
@@ -21,7 +21,7 @@ class PrefetchSchedule extends Shape
      *     Name: string,
      *     PlaybackConfigurationName: string,
      *     Retrieval: PrefetchRetrieval,
-     *     StreamId?: string
+     *     StreamId?: string|null
      * } $args
      */
     public function __construct(array $args)

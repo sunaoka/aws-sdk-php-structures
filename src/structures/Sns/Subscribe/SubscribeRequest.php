@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TopicArn
  * @property string $Protocol
- * @property string $Endpoint
- * @property array<string, string> $Attributes
- * @property bool $ReturnSubscriptionArn
+ * @property string|null $Endpoint
+ * @property array<string, string>|null $Attributes
+ * @property bool|null $ReturnSubscriptionArn
  */
 class SubscribeRequest extends Request
 {
@@ -17,9 +17,9 @@ class SubscribeRequest extends Request
      * @param array{
      *     TopicArn: string,
      *     Protocol: string,
-     *     Endpoint?: string,
-     *     Attributes?: array<string, string>,
-     *     ReturnSubscriptionArn?: bool
+     *     Endpoint?: string|null,
+     *     Attributes?: array<string, string>|null,
+     *     ReturnSubscriptionArn?: bool|null
      * } $args
      */
     public function __construct(array $args)

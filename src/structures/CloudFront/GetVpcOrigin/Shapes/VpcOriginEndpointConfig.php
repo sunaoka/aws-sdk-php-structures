@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $HTTPPort
  * @property int $HTTPSPort
  * @property 'http-only'|'match-viewer'|'https-only' $OriginProtocolPolicy
- * @property OriginSslProtocols $OriginSslProtocols
+ * @property OriginSslProtocols|null $OriginSslProtocols
  */
 class VpcOriginEndpointConfig extends Shape
 {
@@ -21,7 +21,7 @@ class VpcOriginEndpointConfig extends Shape
      *     HTTPPort: int,
      *     HTTPSPort: int,
      *     OriginProtocolPolicy: 'http-only'|'match-viewer'|'https-only',
-     *     OriginSslProtocols?: OriginSslProtocols
+     *     OriginSslProtocols?: OriginSslProtocols|null
      * } $args
      */
     public function __construct(array $args)

@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $BundleId
  * @property string $DirectoryId
  * @property Shapes\Capacity $Capacity
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\ApplicationSettingsRequest $ApplicationSettings
- * @property Shapes\TimeoutSettings $TimeoutSettings
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\ApplicationSettingsRequest|null $ApplicationSettings
+ * @property Shapes\TimeoutSettings|null $TimeoutSettings
  */
 class CreateWorkspacesPoolRequest extends Request
 {
@@ -23,9 +23,9 @@ class CreateWorkspacesPoolRequest extends Request
      *     BundleId: string,
      *     DirectoryId: string,
      *     Capacity: Shapes\Capacity,
-     *     Tags?: list<Shapes\Tag>,
-     *     ApplicationSettings?: Shapes\ApplicationSettingsRequest,
-     *     TimeoutSettings?: Shapes\TimeoutSettings
+     *     Tags?: list<Shapes\Tag>|null,
+     *     ApplicationSettings?: Shapes\ApplicationSettingsRequest|null,
+     *     TimeoutSettings?: Shapes\TimeoutSettings|null
      * } $args
      */
     public function __construct(array $args)

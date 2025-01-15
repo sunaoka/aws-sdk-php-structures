@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\ExportVerifiedAccessInstanceClientConfigura
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Version
- * @property string $VerifiedAccessInstanceId
- * @property string $Region
- * @property list<'jamf'|'crowdstrike'|'jumpcloud'> $DeviceTrustProviders
- * @property Shapes\VerifiedAccessInstanceUserTrustProviderClientConfiguration $UserTrustProvider
- * @property list<Shapes\VerifiedAccessInstanceOpenVpnClientConfiguration> $OpenVpnConfigurations
+ * @property string|null $Version
+ * @property string|null $VerifiedAccessInstanceId
+ * @property string|null $Region
+ * @property list<'jamf'|'crowdstrike'|'jumpcloud'>|null $DeviceTrustProviders
+ * @property Shapes\VerifiedAccessInstanceUserTrustProviderClientConfiguration|null $UserTrustProvider
+ * @property list<Shapes\VerifiedAccessInstanceOpenVpnClientConfiguration>|null $OpenVpnConfigurations
  */
 class ExportVerifiedAccessInstanceClientConfigurationResponse extends Response
 {

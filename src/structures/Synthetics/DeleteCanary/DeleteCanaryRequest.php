@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property bool $DeleteLambda
+ * @property bool|null $DeleteLambda
  */
 class DeleteCanaryRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     DeleteLambda?: bool
+     *     DeleteLambda?: bool|null
      * } $args
      */
     public function __construct(array $args)

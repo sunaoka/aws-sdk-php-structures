@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MccXml
+ * @property string|null $MccXml
  */
 class EsamManifestConfirmConditionNotification extends Shape
 {
     /**
-     * @param array{MccXml?: string} $args
+     * @param array{MccXml?: string|null} $args
      */
     public function __construct(array $args = [])
     {

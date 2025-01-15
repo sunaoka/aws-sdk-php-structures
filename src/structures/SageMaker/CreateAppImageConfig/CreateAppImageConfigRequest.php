@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AppImageConfigName
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\KernelGatewayImageConfig $KernelGatewayImageConfig
- * @property Shapes\JupyterLabAppImageConfig $JupyterLabAppImageConfig
- * @property Shapes\CodeEditorAppImageConfig $CodeEditorAppImageConfig
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\KernelGatewayImageConfig|null $KernelGatewayImageConfig
+ * @property Shapes\JupyterLabAppImageConfig|null $JupyterLabAppImageConfig
+ * @property Shapes\CodeEditorAppImageConfig|null $CodeEditorAppImageConfig
  */
 class CreateAppImageConfigRequest extends Request
 {
     /**
      * @param array{
      *     AppImageConfigName: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     KernelGatewayImageConfig?: Shapes\KernelGatewayImageConfig,
-     *     JupyterLabAppImageConfig?: Shapes\JupyterLabAppImageConfig,
-     *     CodeEditorAppImageConfig?: Shapes\CodeEditorAppImageConfig
+     *     Tags?: list<Shapes\Tag>|null,
+     *     KernelGatewayImageConfig?: Shapes\KernelGatewayImageConfig|null,
+     *     JupyterLabAppImageConfig?: Shapes\JupyterLabAppImageConfig|null,
+     *     CodeEditorAppImageConfig?: Shapes\CodeEditorAppImageConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTopic\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Minimum
- * @property string $Maximum
+ * @property string|null $Minimum
+ * @property string|null $Maximum
  */
 class RangeConstant extends Shape
 {
     /**
      * @param array{
-     *     Minimum?: string,
-     *     Maximum?: string
+     *     Minimum?: string|null,
+     *     Maximum?: string|null
      * } $args
      */
     public function __construct(array $args = [])

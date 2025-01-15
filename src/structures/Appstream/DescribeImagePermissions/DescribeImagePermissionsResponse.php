@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Appstream\DescribeImagePermissions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Name
- * @property list<Shapes\SharedImagePermissions> $SharedImagePermissionsList
- * @property string $NextToken
+ * @property string|null $Name
+ * @property list<Shapes\SharedImagePermissions>|null $SharedImagePermissionsList
+ * @property string|null $NextToken
  */
 class DescribeImagePermissionsResponse extends Response
 {

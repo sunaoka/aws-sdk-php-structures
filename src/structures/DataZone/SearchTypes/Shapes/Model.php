@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DataZone\SearchTypes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $smithy
+ * @property string|null $smithy
  */
 class Model extends Shape
 {
     /**
-     * @param array{smithy?: string} $args
+     * @param array{smithy?: string|null} $args
      */
     public function __construct(array $args = [])
     {

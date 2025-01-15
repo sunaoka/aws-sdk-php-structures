@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $SenderPrincipal
  * @property string $ReceiverPrincipal
  * @property 'PENDING_RECEIVER_ACCEPTANCE'|'ACCEPTED' $AcceptanceState
- * @property \Aws\Api\DateTimeResult $AcceptedAt
- * @property \Aws\Api\DateTimeResult $EndsAt
+ * @property \Aws\Api\DateTimeResult|null $AcceptedAt
+ * @property \Aws\Api\DateTimeResult|null $EndsAt
  * @property string $DataSetId
  * @property string $SourceDataSetId
  * @property string $Id
@@ -26,8 +26,8 @@ class DataGrantSummaryEntry extends Shape
      *     SenderPrincipal: string,
      *     ReceiverPrincipal: string,
      *     AcceptanceState: 'PENDING_RECEIVER_ACCEPTANCE'|'ACCEPTED',
-     *     AcceptedAt?: \Aws\Api\DateTimeResult,
-     *     EndsAt?: \Aws\Api\DateTimeResult,
+     *     AcceptedAt?: \Aws\Api\DateTimeResult|null,
+     *     EndsAt?: \Aws\Api\DateTimeResult|null,
      *     DataSetId: string,
      *     SourceDataSetId: string,
      *     Id: string,

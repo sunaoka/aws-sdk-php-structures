@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property int<12, 1000> $PerUnitStorageThroughput
  * @property 'CACHE_1' $DeploymentType
- * @property string $WeeklyMaintenanceStartTime
+ * @property string|null $WeeklyMaintenanceStartTime
  * @property FileCacheLustreMetadataConfiguration $MetadataConfiguration
  */
 class CreateFileCacheLustreConfiguration extends Shape
@@ -16,7 +16,7 @@ class CreateFileCacheLustreConfiguration extends Shape
      * @param array{
      *     PerUnitStorageThroughput: int<12, 1000>,
      *     DeploymentType: 'CACHE_1',
-     *     WeeklyMaintenanceStartTime?: string,
+     *     WeeklyMaintenanceStartTime?: string|null,
      *     MetadataConfiguration: FileCacheLustreMetadataConfiguration
      * } $args
      */

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\TranscribeService\StartMedicalScribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ShowSpeakerLabels
- * @property int<2, 30> $MaxSpeakerLabels
- * @property bool $ChannelIdentification
- * @property string $VocabularyName
- * @property string $VocabularyFilterName
- * @property 'remove'|'mask'|'tag' $VocabularyFilterMethod
+ * @property bool|null $ShowSpeakerLabels
+ * @property int<2, 30>|null $MaxSpeakerLabels
+ * @property bool|null $ChannelIdentification
+ * @property string|null $VocabularyName
+ * @property string|null $VocabularyFilterName
+ * @property 'remove'|'mask'|'tag'|null $VocabularyFilterMethod
  */
 class MedicalScribeSettings extends Shape
 {
     /**
      * @param array{
-     *     ShowSpeakerLabels?: bool,
-     *     MaxSpeakerLabels?: int<2, 30>,
-     *     ChannelIdentification?: bool,
-     *     VocabularyName?: string,
-     *     VocabularyFilterName?: string,
-     *     VocabularyFilterMethod?: 'remove'|'mask'|'tag'
+     *     ShowSpeakerLabels?: bool|null,
+     *     MaxSpeakerLabels?: int<2, 30>|null,
+     *     ChannelIdentification?: bool|null,
+     *     VocabularyName?: string|null,
+     *     VocabularyFilterName?: string|null,
+     *     VocabularyFilterMethod?: 'remove'|'mask'|'tag'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ecr\DescribeImageScanFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResourceDetails $details
- * @property string $id
- * @property array<string, string> $tags
- * @property string $type
+ * @property ResourceDetails|null $details
+ * @property string|null $id
+ * @property array<string, string>|null $tags
+ * @property string|null $type
  */
 class Resource extends Shape
 {
     /**
      * @param array{
-     *     details?: ResourceDetails,
-     *     id?: string,
-     *     tags?: array<string, string>,
-     *     type?: string
+     *     details?: ResourceDetails|null,
+     *     id?: string|null,
+     *     tags?: array<string, string>|null,
+     *     type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

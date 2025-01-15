@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MQ\DescribeBroker\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  * @property bool $UseAwsOwnedKey
  */
 class EncryptionOptions extends Shape
 {
     /**
      * @param array{
-     *     KmsKeyId?: string,
+     *     KmsKeyId?: string|null,
      *     UseAwsOwnedKey: bool
      * } $args
      */

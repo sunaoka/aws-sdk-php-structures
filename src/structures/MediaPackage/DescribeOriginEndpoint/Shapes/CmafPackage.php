@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaPackage\DescribeOriginEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CmafEncryption $Encryption
- * @property list<HlsManifest> $HlsManifests
- * @property int $SegmentDurationSeconds
- * @property string $SegmentPrefix
- * @property StreamSelection $StreamSelection
+ * @property CmafEncryption|null $Encryption
+ * @property list<HlsManifest>|null $HlsManifests
+ * @property int|null $SegmentDurationSeconds
+ * @property string|null $SegmentPrefix
+ * @property StreamSelection|null $StreamSelection
  */
 class CmafPackage extends Shape
 {
     /**
      * @param array{
-     *     Encryption?: CmafEncryption,
-     *     HlsManifests?: list<HlsManifest>,
-     *     SegmentDurationSeconds?: int,
-     *     SegmentPrefix?: string,
-     *     StreamSelection?: StreamSelection
+     *     Encryption?: CmafEncryption|null,
+     *     HlsManifests?: list<HlsManifest>|null,
+     *     SegmentDurationSeconds?: int|null,
+     *     SegmentPrefix?: string|null,
+     *     StreamSelection?: StreamSelection|null
      * } $args
      */
     public function __construct(array $args = [])

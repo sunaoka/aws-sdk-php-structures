@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property list<string> $Types
+ * @property bool|null $Enabled
+ * @property list<string>|null $Types
  */
 class AwsEksClusterLoggingClusterLoggingDetails extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     Types?: list<string>
+     *     Enabled?: bool|null,
+     *     Types?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

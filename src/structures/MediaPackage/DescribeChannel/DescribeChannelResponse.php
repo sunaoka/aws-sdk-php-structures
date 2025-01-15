@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\MediaPackage\DescribeChannel;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property string $CreatedAt
- * @property string $Description
- * @property Shapes\EgressAccessLogs $EgressAccessLogs
- * @property Shapes\HlsIngest $HlsIngest
- * @property string $Id
- * @property Shapes\IngressAccessLogs $IngressAccessLogs
- * @property array<string, string> $Tags
+ * @property string|null $Arn
+ * @property string|null $CreatedAt
+ * @property string|null $Description
+ * @property Shapes\EgressAccessLogs|null $EgressAccessLogs
+ * @property Shapes\HlsIngest|null $HlsIngest
+ * @property string|null $Id
+ * @property Shapes\IngressAccessLogs|null $IngressAccessLogs
+ * @property array<string, string>|null $Tags
  */
 class DescribeChannelResponse extends Response
 {

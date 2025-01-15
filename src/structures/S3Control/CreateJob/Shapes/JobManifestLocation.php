@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $ObjectArn
- * @property string $ObjectVersionId
+ * @property string|null $ObjectVersionId
  * @property string $ETag
  */
 class JobManifestLocation extends Shape
@@ -14,7 +14,7 @@ class JobManifestLocation extends Shape
     /**
      * @param array{
      *     ObjectArn: string,
-     *     ObjectVersionId?: string,
+     *     ObjectVersionId?: string|null,
      *     ETag: string
      * } $args
      */

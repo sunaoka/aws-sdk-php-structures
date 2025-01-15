@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Comprehend\BatchDetectKeyPhrases\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Index
- * @property list<KeyPhrase> $KeyPhrases
+ * @property int|null $Index
+ * @property list<KeyPhrase>|null $KeyPhrases
  */
 class BatchDetectKeyPhrasesItemResult extends Shape
 {
     /**
      * @param array{
-     *     Index?: int,
-     *     KeyPhrases?: list<KeyPhrase>
+     *     Index?: int|null,
+     *     KeyPhrases?: list<KeyPhrase>|null
      * } $args
      */
     public function __construct(array $args = [])

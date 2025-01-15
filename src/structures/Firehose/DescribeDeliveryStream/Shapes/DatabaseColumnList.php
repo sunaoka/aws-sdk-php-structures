@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Firehose\DescribeDeliveryStream\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $Include
- * @property list<string> $Exclude
+ * @property list<string>|null $Include
+ * @property list<string>|null $Exclude
  */
 class DatabaseColumnList extends Shape
 {
     /**
      * @param array{
-     *     Include?: list<string>,
-     *     Exclude?: list<string>
+     *     Include?: list<string>|null,
+     *     Exclude?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

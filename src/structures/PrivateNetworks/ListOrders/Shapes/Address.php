@@ -6,32 +6,32 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $city
- * @property string $company
+ * @property string|null $company
  * @property string $country
- * @property string $emailAddress
+ * @property string|null $emailAddress
  * @property string $name
- * @property string $phoneNumber
+ * @property string|null $phoneNumber
  * @property string $postalCode
  * @property string $stateOrProvince
  * @property string $street1
- * @property string $street2
- * @property string $street3
+ * @property string|null $street2
+ * @property string|null $street3
  */
 class Address extends Shape
 {
     /**
      * @param array{
      *     city: string,
-     *     company?: string,
+     *     company?: string|null,
      *     country: string,
-     *     emailAddress?: string,
+     *     emailAddress?: string|null,
      *     name: string,
-     *     phoneNumber?: string,
+     *     phoneNumber?: string|null,
      *     postalCode: string,
      *     stateOrProvince: string,
      *     street1: string,
-     *     street2?: string,
-     *     street3?: string
+     *     street2?: string|null,
+     *     street3?: string|null
      * } $args
      */
     public function __construct(array $args)

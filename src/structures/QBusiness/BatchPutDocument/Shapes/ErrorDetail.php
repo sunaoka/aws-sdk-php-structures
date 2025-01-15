@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QBusiness\BatchPutDocument\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $errorMessage
- * @property 'InternalError'|'InvalidRequest'|'ResourceInactive'|'ResourceNotFound' $errorCode
+ * @property string|null $errorMessage
+ * @property 'InternalError'|'InvalidRequest'|'ResourceInactive'|'ResourceNotFound'|null $errorCode
  */
 class ErrorDetail extends Shape
 {
     /**
      * @param array{
-     *     errorMessage?: string,
-     *     errorCode?: 'InternalError'|'InvalidRequest'|'ResourceInactive'|'ResourceNotFound'
+     *     errorMessage?: string|null,
+     *     errorCode?: 'InternalError'|'InvalidRequest'|'ResourceInactive'|'ResourceNotFound'|null
      * } $args
      */
     public function __construct(array $args = [])

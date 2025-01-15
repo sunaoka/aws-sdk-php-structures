@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $markerName
- * @property string $details
+ * @property string|null $details
  * @property int $decisionTaskCompletedEventId
  */
 class MarkerRecordedEventAttributes extends Shape
@@ -14,7 +14,7 @@ class MarkerRecordedEventAttributes extends Shape
     /**
      * @param array{
      *     markerName: string,
-     *     details?: string,
+     *     details?: string|null,
      *     decisionTaskCompletedEventId: int
      * } $args
      */

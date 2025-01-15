@@ -10,9 +10,9 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'WINDOWS'|'LINUX'|'MACOS' $osFamily
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $createdBy
- * @property \Aws\Api\DateTimeResult $updatedAt
- * @property string $updatedBy
- * @property list<Shapes\FileSystemLocation> $fileSystemLocations
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
+ * @property string|null $updatedBy
+ * @property list<Shapes\FileSystemLocation>|null $fileSystemLocations
  */
 class GetStorageProfileResponse extends Response
 {

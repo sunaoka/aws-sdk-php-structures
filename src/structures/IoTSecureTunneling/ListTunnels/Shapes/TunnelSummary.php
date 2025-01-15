@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\IoTSecureTunneling\ListTunnels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $tunnelId
- * @property string $tunnelArn
- * @property 'OPEN'|'CLOSED' $status
- * @property string $description
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
+ * @property string|null $tunnelId
+ * @property string|null $tunnelArn
+ * @property 'OPEN'|'CLOSED'|null $status
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
  */
 class TunnelSummary extends Shape
 {
     /**
      * @param array{
-     *     tunnelId?: string,
-     *     tunnelArn?: string,
-     *     status?: 'OPEN'|'CLOSED',
-     *     description?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult
+     *     tunnelId?: string|null,
+     *     tunnelArn?: string|null,
+     *     status?: 'OPEN'|'CLOSED'|null,
+     *     description?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

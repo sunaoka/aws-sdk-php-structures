@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeUsers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserId
- * @property string $UserName
- * @property string $Status
- * @property string $Engine
- * @property string $MinimumEngineVersion
- * @property string $AccessString
- * @property list<string> $UserGroupIds
- * @property Authentication $Authentication
- * @property string $ARN
+ * @property string|null $UserId
+ * @property string|null $UserName
+ * @property string|null $Status
+ * @property string|null $Engine
+ * @property string|null $MinimumEngineVersion
+ * @property string|null $AccessString
+ * @property list<string>|null $UserGroupIds
+ * @property Authentication|null $Authentication
+ * @property string|null $ARN
  */
 class User extends Shape
 {
     /**
      * @param array{
-     *     UserId?: string,
-     *     UserName?: string,
-     *     Status?: string,
-     *     Engine?: string,
-     *     MinimumEngineVersion?: string,
-     *     AccessString?: string,
-     *     UserGroupIds?: list<string>,
-     *     Authentication?: Authentication,
-     *     ARN?: string
+     *     UserId?: string|null,
+     *     UserName?: string|null,
+     *     Status?: string|null,
+     *     Engine?: string|null,
+     *     MinimumEngineVersion?: string|null,
+     *     AccessString?: string|null,
+     *     UserGroupIds?: list<string>|null,
+     *     Authentication?: Authentication|null,
+     *     ARN?: string|null
      * } $args
      */
     public function __construct(array $args = [])

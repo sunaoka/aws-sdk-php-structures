@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\OpsWorks\SetTimeBasedAutoScaling\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property array<string, string> $Monday
- * @property array<string, string> $Tuesday
- * @property array<string, string> $Wednesday
- * @property array<string, string> $Thursday
- * @property array<string, string> $Friday
- * @property array<string, string> $Saturday
- * @property array<string, string> $Sunday
+ * @property array<string, string>|null $Monday
+ * @property array<string, string>|null $Tuesday
+ * @property array<string, string>|null $Wednesday
+ * @property array<string, string>|null $Thursday
+ * @property array<string, string>|null $Friday
+ * @property array<string, string>|null $Saturday
+ * @property array<string, string>|null $Sunday
  */
 class WeeklyAutoScalingSchedule extends Shape
 {
     /**
      * @param array{
-     *     Monday?: array<string, string>,
-     *     Tuesday?: array<string, string>,
-     *     Wednesday?: array<string, string>,
-     *     Thursday?: array<string, string>,
-     *     Friday?: array<string, string>,
-     *     Saturday?: array<string, string>,
-     *     Sunday?: array<string, string>
+     *     Monday?: array<string, string>|null,
+     *     Tuesday?: array<string, string>|null,
+     *     Wednesday?: array<string, string>|null,
+     *     Thursday?: array<string, string>|null,
+     *     Friday?: array<string, string>|null,
+     *     Saturday?: array<string, string>|null,
+     *     Sunday?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

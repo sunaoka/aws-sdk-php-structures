@@ -8,20 +8,20 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $jobDefinitionName
  * @property string $jobDefinitionArn
  * @property int $revision
- * @property string $status
+ * @property string|null $status
  * @property string $type
- * @property int $schedulingPriority
- * @property array<string, string> $parameters
- * @property RetryStrategy $retryStrategy
- * @property ContainerProperties $containerProperties
- * @property JobTimeout $timeout
- * @property NodeProperties $nodeProperties
- * @property array<string, string> $tags
- * @property bool $propagateTags
- * @property list<'EC2'|'FARGATE'> $platformCapabilities
- * @property EcsProperties $ecsProperties
- * @property EksProperties $eksProperties
- * @property 'ECS'|'EKS' $containerOrchestrationType
+ * @property int|null $schedulingPriority
+ * @property array<string, string>|null $parameters
+ * @property RetryStrategy|null $retryStrategy
+ * @property ContainerProperties|null $containerProperties
+ * @property JobTimeout|null $timeout
+ * @property NodeProperties|null $nodeProperties
+ * @property array<string, string>|null $tags
+ * @property bool|null $propagateTags
+ * @property list<'EC2'|'FARGATE'>|null $platformCapabilities
+ * @property EcsProperties|null $ecsProperties
+ * @property EksProperties|null $eksProperties
+ * @property 'ECS'|'EKS'|null $containerOrchestrationType
  */
 class JobDefinition extends Shape
 {
@@ -30,20 +30,20 @@ class JobDefinition extends Shape
      *     jobDefinitionName: string,
      *     jobDefinitionArn: string,
      *     revision: int,
-     *     status?: string,
+     *     status?: string|null,
      *     type: string,
-     *     schedulingPriority?: int,
-     *     parameters?: array<string, string>,
-     *     retryStrategy?: RetryStrategy,
-     *     containerProperties?: ContainerProperties,
-     *     timeout?: JobTimeout,
-     *     nodeProperties?: NodeProperties,
-     *     tags?: array<string, string>,
-     *     propagateTags?: bool,
-     *     platformCapabilities?: list<'EC2'|'FARGATE'>,
-     *     ecsProperties?: EcsProperties,
-     *     eksProperties?: EksProperties,
-     *     containerOrchestrationType?: 'ECS'|'EKS'
+     *     schedulingPriority?: int|null,
+     *     parameters?: array<string, string>|null,
+     *     retryStrategy?: RetryStrategy|null,
+     *     containerProperties?: ContainerProperties|null,
+     *     timeout?: JobTimeout|null,
+     *     nodeProperties?: NodeProperties|null,
+     *     tags?: array<string, string>|null,
+     *     propagateTags?: bool|null,
+     *     platformCapabilities?: list<'EC2'|'FARGATE'>|null,
+     *     ecsProperties?: EcsProperties|null,
+     *     eksProperties?: EksProperties|null,
+     *     containerOrchestrationType?: 'ECS'|'EKS'|null
      * } $args
      */
     public function __construct(array $args)

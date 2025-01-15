@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\AllowListCriteria $criteria
- * @property string $description
+ * @property string|null $description
  * @property string $id
  * @property string $name
  */
@@ -15,7 +15,7 @@ class UpdateAllowListRequest extends Request
     /**
      * @param array{
      *     criteria: Shapes\AllowListCriteria,
-     *     description?: string,
+     *     description?: string|null,
      *     id: string,
      *     name: string
      * } $args

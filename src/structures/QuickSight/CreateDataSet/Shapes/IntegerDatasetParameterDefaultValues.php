@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDataSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<int> $StaticValues
+ * @property list<int>|null $StaticValues
  */
 class IntegerDatasetParameterDefaultValues extends Shape
 {
     /**
-     * @param array{StaticValues?: list<int>} $args
+     * @param array{StaticValues?: list<int>|null} $args
      */
     public function __construct(array $args = [])
     {

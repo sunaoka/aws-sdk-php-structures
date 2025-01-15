@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\Activity> $Activities
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class DescribeScalingActivitiesResponse extends Response
 {

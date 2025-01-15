@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DeliveryStreamName
- * @property bool $AllowForceDelete
+ * @property bool|null $AllowForceDelete
  */
 class DeleteDeliveryStreamRequest extends Request
 {
     /**
      * @param array{
      *     DeliveryStreamName: string,
-     *     AllowForceDelete?: bool
+     *     AllowForceDelete?: bool|null
      * } $args
      */
     public function __construct(array $args)

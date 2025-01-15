@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\CreateStandbyWorkspaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property StandbyWorkspace $StandbyWorkspaceRequest
- * @property string $ErrorCode
- * @property string $ErrorMessage
+ * @property StandbyWorkspace|null $StandbyWorkspaceRequest
+ * @property string|null $ErrorCode
+ * @property string|null $ErrorMessage
  */
 class FailedCreateStandbyWorkspacesRequest extends Shape
 {
     /**
      * @param array{
-     *     StandbyWorkspaceRequest?: StandbyWorkspace,
-     *     ErrorCode?: string,
-     *     ErrorMessage?: string
+     *     StandbyWorkspaceRequest?: StandbyWorkspace|null,
+     *     ErrorCode?: string|null,
+     *     ErrorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

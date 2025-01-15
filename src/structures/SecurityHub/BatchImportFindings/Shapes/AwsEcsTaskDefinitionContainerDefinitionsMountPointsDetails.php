@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContainerPath
- * @property bool $ReadOnly
- * @property string $SourceVolume
+ * @property string|null $ContainerPath
+ * @property bool|null $ReadOnly
+ * @property string|null $SourceVolume
  */
 class AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetails extends Shape
 {
     /**
      * @param array{
-     *     ContainerPath?: string,
-     *     ReadOnly?: bool,
-     *     SourceVolume?: string
+     *     ContainerPath?: string|null,
+     *     ReadOnly?: bool|null,
+     *     SourceVolume?: string|null
      * } $args
      */
     public function __construct(array $args = [])

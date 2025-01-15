@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\ListScheduledQueries\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DatabaseName
- * @property string $TableName
+ * @property string|null $DatabaseName
+ * @property string|null $TableName
  */
 class TimestreamDestination extends Shape
 {
     /**
      * @param array{
-     *     DatabaseName?: string,
-     *     TableName?: string
+     *     DatabaseName?: string|null,
+     *     TableName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Connect\StartScreenSharing;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
+ * @property string|null $ClientToken
  * @property string $InstanceId
  * @property string $ContactId
  */
@@ -13,7 +13,7 @@ class StartScreenSharingRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
+     *     ClientToken?: string|null,
      *     InstanceId: string,
      *     ContactId: string
      * } $args

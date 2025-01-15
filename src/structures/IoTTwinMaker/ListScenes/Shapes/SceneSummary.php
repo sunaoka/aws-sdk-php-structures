@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $creationDateTime
  * @property \Aws\Api\DateTimeResult $updateDateTime
- * @property string $description
+ * @property string|null $description
  */
 class SceneSummary extends Shape
 {
@@ -21,7 +21,7 @@ class SceneSummary extends Shape
      *     arn: string,
      *     creationDateTime: \Aws\Api\DateTimeResult,
      *     updateDateTime: \Aws\Api\DateTimeResult,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'KMS' $type
- * @property string $keyArn
+ * @property string|null $keyArn
  */
 class SseConfig extends Shape
 {
     /**
      * @param array{
      *     type: 'KMS',
-     *     keyArn?: string
+     *     keyArn?: string|null
      * } $args
      */
     public function __construct(array $args)

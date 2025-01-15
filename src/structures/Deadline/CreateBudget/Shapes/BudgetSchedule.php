@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Deadline\CreateBudget\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FixedBudgetSchedule $fixed
+ * @property FixedBudgetSchedule|null $fixed
  */
 class BudgetSchedule extends Shape
 {
     /**
-     * @param array{fixed?: FixedBudgetSchedule} $args
+     * @param array{fixed?: FixedBudgetSchedule|null} $args
      */
     public function __construct(array $args = [])
     {

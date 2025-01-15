@@ -5,26 +5,26 @@ namespace Sunaoka\Aws\Structures\DataExchange\SendApiAsset;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Body
- * @property array<string, string> $QueryStringParameters
+ * @property string|null $Body
+ * @property array<string, string>|null $QueryStringParameters
  * @property string $AssetId
  * @property string $DataSetId
- * @property array<string, string> $RequestHeaders
- * @property string $Method
- * @property string $Path
+ * @property array<string, string>|null $RequestHeaders
+ * @property string|null $Method
+ * @property string|null $Path
  * @property string $RevisionId
  */
 class SendApiAssetRequest extends Request
 {
     /**
      * @param array{
-     *     Body?: string,
-     *     QueryStringParameters?: array<string, string>,
+     *     Body?: string|null,
+     *     QueryStringParameters?: array<string, string>|null,
      *     AssetId: string,
      *     DataSetId: string,
-     *     RequestHeaders?: array<string, string>,
-     *     Method?: string,
-     *     Path?: string,
+     *     RequestHeaders?: array<string, string>|null,
+     *     Method?: string|null,
+     *     Path?: string|null,
      *     RevisionId: string
      * } $args
      */

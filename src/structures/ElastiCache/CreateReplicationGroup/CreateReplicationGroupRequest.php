@@ -7,43 +7,43 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ReplicationGroupId
  * @property string $ReplicationGroupDescription
- * @property string $GlobalReplicationGroupId
- * @property string $PrimaryClusterId
- * @property bool $AutomaticFailoverEnabled
- * @property bool $MultiAZEnabled
- * @property int $NumCacheClusters
- * @property list<string> $PreferredCacheClusterAZs
- * @property int $NumNodeGroups
- * @property int $ReplicasPerNodeGroup
- * @property list<Shapes\NodeGroupConfiguration> $NodeGroupConfiguration
- * @property string $CacheNodeType
- * @property string $Engine
- * @property string $EngineVersion
- * @property string $CacheParameterGroupName
- * @property string $CacheSubnetGroupName
- * @property list<string> $CacheSecurityGroupNames
- * @property list<string> $SecurityGroupIds
- * @property list<Shapes\Tag> $Tags
- * @property list<string> $SnapshotArns
- * @property string $SnapshotName
- * @property string $PreferredMaintenanceWindow
- * @property int $Port
- * @property string $NotificationTopicArn
- * @property bool $AutoMinorVersionUpgrade
- * @property int $SnapshotRetentionLimit
- * @property string $SnapshotWindow
- * @property string $AuthToken
- * @property bool $TransitEncryptionEnabled
- * @property bool $AtRestEncryptionEnabled
- * @property string $KmsKeyId
- * @property list<string> $UserGroupIds
- * @property list<Shapes\LogDeliveryConfigurationRequest> $LogDeliveryConfigurations
- * @property bool $DataTieringEnabled
- * @property 'ipv4'|'ipv6'|'dual_stack' $NetworkType
- * @property 'ipv4'|'ipv6' $IpDiscovery
- * @property 'preferred'|'required' $TransitEncryptionMode
- * @property 'enabled'|'disabled'|'compatible' $ClusterMode
- * @property string $ServerlessCacheSnapshotName
+ * @property string|null $GlobalReplicationGroupId
+ * @property string|null $PrimaryClusterId
+ * @property bool|null $AutomaticFailoverEnabled
+ * @property bool|null $MultiAZEnabled
+ * @property int|null $NumCacheClusters
+ * @property list<string>|null $PreferredCacheClusterAZs
+ * @property int|null $NumNodeGroups
+ * @property int|null $ReplicasPerNodeGroup
+ * @property list<Shapes\NodeGroupConfiguration>|null $NodeGroupConfiguration
+ * @property string|null $CacheNodeType
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property string|null $CacheParameterGroupName
+ * @property string|null $CacheSubnetGroupName
+ * @property list<string>|null $CacheSecurityGroupNames
+ * @property list<string>|null $SecurityGroupIds
+ * @property list<Shapes\Tag>|null $Tags
+ * @property list<string>|null $SnapshotArns
+ * @property string|null $SnapshotName
+ * @property string|null $PreferredMaintenanceWindow
+ * @property int|null $Port
+ * @property string|null $NotificationTopicArn
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property int|null $SnapshotRetentionLimit
+ * @property string|null $SnapshotWindow
+ * @property string|null $AuthToken
+ * @property bool|null $TransitEncryptionEnabled
+ * @property bool|null $AtRestEncryptionEnabled
+ * @property string|null $KmsKeyId
+ * @property list<string>|null $UserGroupIds
+ * @property list<Shapes\LogDeliveryConfigurationRequest>|null $LogDeliveryConfigurations
+ * @property bool|null $DataTieringEnabled
+ * @property 'ipv4'|'ipv6'|'dual_stack'|null $NetworkType
+ * @property 'ipv4'|'ipv6'|null $IpDiscovery
+ * @property 'preferred'|'required'|null $TransitEncryptionMode
+ * @property 'enabled'|'disabled'|'compatible'|null $ClusterMode
+ * @property string|null $ServerlessCacheSnapshotName
  */
 class CreateReplicationGroupRequest extends Request
 {
@@ -51,43 +51,43 @@ class CreateReplicationGroupRequest extends Request
      * @param array{
      *     ReplicationGroupId: string,
      *     ReplicationGroupDescription: string,
-     *     GlobalReplicationGroupId?: string,
-     *     PrimaryClusterId?: string,
-     *     AutomaticFailoverEnabled?: bool,
-     *     MultiAZEnabled?: bool,
-     *     NumCacheClusters?: int,
-     *     PreferredCacheClusterAZs?: list<string>,
-     *     NumNodeGroups?: int,
-     *     ReplicasPerNodeGroup?: int,
-     *     NodeGroupConfiguration?: list<Shapes\NodeGroupConfiguration>,
-     *     CacheNodeType?: string,
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     CacheParameterGroupName?: string,
-     *     CacheSubnetGroupName?: string,
-     *     CacheSecurityGroupNames?: list<string>,
-     *     SecurityGroupIds?: list<string>,
-     *     Tags?: list<Shapes\Tag>,
-     *     SnapshotArns?: list<string>,
-     *     SnapshotName?: string,
-     *     PreferredMaintenanceWindow?: string,
-     *     Port?: int,
-     *     NotificationTopicArn?: string,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     SnapshotRetentionLimit?: int,
-     *     SnapshotWindow?: string,
-     *     AuthToken?: string,
-     *     TransitEncryptionEnabled?: bool,
-     *     AtRestEncryptionEnabled?: bool,
-     *     KmsKeyId?: string,
-     *     UserGroupIds?: list<string>,
-     *     LogDeliveryConfigurations?: list<Shapes\LogDeliveryConfigurationRequest>,
-     *     DataTieringEnabled?: bool,
-     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack',
-     *     IpDiscovery?: 'ipv4'|'ipv6',
-     *     TransitEncryptionMode?: 'preferred'|'required',
-     *     ClusterMode?: 'enabled'|'disabled'|'compatible',
-     *     ServerlessCacheSnapshotName?: string
+     *     GlobalReplicationGroupId?: string|null,
+     *     PrimaryClusterId?: string|null,
+     *     AutomaticFailoverEnabled?: bool|null,
+     *     MultiAZEnabled?: bool|null,
+     *     NumCacheClusters?: int|null,
+     *     PreferredCacheClusterAZs?: list<string>|null,
+     *     NumNodeGroups?: int|null,
+     *     ReplicasPerNodeGroup?: int|null,
+     *     NodeGroupConfiguration?: list<Shapes\NodeGroupConfiguration>|null,
+     *     CacheNodeType?: string|null,
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     CacheParameterGroupName?: string|null,
+     *     CacheSubnetGroupName?: string|null,
+     *     CacheSecurityGroupNames?: list<string>|null,
+     *     SecurityGroupIds?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     SnapshotArns?: list<string>|null,
+     *     SnapshotName?: string|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     Port?: int|null,
+     *     NotificationTopicArn?: string|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     SnapshotRetentionLimit?: int|null,
+     *     SnapshotWindow?: string|null,
+     *     AuthToken?: string|null,
+     *     TransitEncryptionEnabled?: bool|null,
+     *     AtRestEncryptionEnabled?: bool|null,
+     *     KmsKeyId?: string|null,
+     *     UserGroupIds?: list<string>|null,
+     *     LogDeliveryConfigurations?: list<Shapes\LogDeliveryConfigurationRequest>|null,
+     *     DataTieringEnabled?: bool|null,
+     *     NetworkType?: 'ipv4'|'ipv6'|'dual_stack'|null,
+     *     IpDiscovery?: 'ipv4'|'ipv6'|null,
+     *     TransitEncryptionMode?: 'preferred'|'required'|null,
+     *     ClusterMode?: 'enabled'|'disabled'|'compatible'|null,
+     *     ServerlessCacheSnapshotName?: string|null
      * } $args
      */
     public function __construct(array $args)

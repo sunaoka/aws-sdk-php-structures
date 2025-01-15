@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ConnectorProfileProperties $connectorProfileProperties
- * @property ConnectorProfileCredentials $connectorProfileCredentials
+ * @property ConnectorProfileCredentials|null $connectorProfileCredentials
  */
 class ConnectorProfileConfig extends Shape
 {
     /**
      * @param array{
      *     connectorProfileProperties: ConnectorProfileProperties,
-     *     connectorProfileCredentials?: ConnectorProfileCredentials
+     *     connectorProfileCredentials?: ConnectorProfileCredentials|null
      * } $args
      */
     public function __construct(array $args)

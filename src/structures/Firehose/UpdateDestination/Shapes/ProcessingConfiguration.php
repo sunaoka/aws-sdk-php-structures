@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Firehose\UpdateDestination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Enabled
- * @property list<Processor> $Processors
+ * @property bool|null $Enabled
+ * @property list<Processor>|null $Processors
  */
 class ProcessingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Enabled?: bool,
-     *     Processors?: list<Processor>
+     *     Enabled?: bool|null,
+     *     Processors?: list<Processor>|null
      * } $args
      */
     public function __construct(array $args = [])

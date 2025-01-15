@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeRecommendation
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\Limitation> $Limitations
+ * @property string|null $NextToken
+ * @property list<Shapes\Limitation>|null $Limitations
  */
 class DescribeRecommendationLimitationsResponse extends Response
 {

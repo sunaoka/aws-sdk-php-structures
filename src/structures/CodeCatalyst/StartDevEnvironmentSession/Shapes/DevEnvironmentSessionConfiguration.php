@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SSM'|'SSH' $sessionType
- * @property ExecuteCommandSessionConfiguration $executeCommandSessionConfiguration
+ * @property ExecuteCommandSessionConfiguration|null $executeCommandSessionConfiguration
  */
 class DevEnvironmentSessionConfiguration extends Shape
 {
     /**
      * @param array{
      *     sessionType: 'SSM'|'SSH',
-     *     executeCommandSessionConfiguration?: ExecuteCommandSessionConfiguration
+     *     executeCommandSessionConfiguration?: ExecuteCommandSessionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribePlayerSessions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PlayerSessionId
- * @property string $PlayerId
- * @property string $GameSessionId
- * @property string $FleetId
- * @property string $FleetArn
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $TerminationTime
- * @property 'RESERVED'|'ACTIVE'|'COMPLETED'|'TIMEDOUT' $Status
- * @property string $IpAddress
- * @property string $DnsName
- * @property int<1, 60000> $Port
- * @property string $PlayerData
+ * @property string|null $PlayerSessionId
+ * @property string|null $PlayerId
+ * @property string|null $GameSessionId
+ * @property string|null $FleetId
+ * @property string|null $FleetArn
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $TerminationTime
+ * @property 'RESERVED'|'ACTIVE'|'COMPLETED'|'TIMEDOUT'|null $Status
+ * @property string|null $IpAddress
+ * @property string|null $DnsName
+ * @property int<1, 60000>|null $Port
+ * @property string|null $PlayerData
  */
 class PlayerSession extends Shape
 {
     /**
      * @param array{
-     *     PlayerSessionId?: string,
-     *     PlayerId?: string,
-     *     GameSessionId?: string,
-     *     FleetId?: string,
-     *     FleetArn?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     TerminationTime?: \Aws\Api\DateTimeResult,
-     *     Status?: 'RESERVED'|'ACTIVE'|'COMPLETED'|'TIMEDOUT',
-     *     IpAddress?: string,
-     *     DnsName?: string,
-     *     Port?: int<1, 60000>,
-     *     PlayerData?: string
+     *     PlayerSessionId?: string|null,
+     *     PlayerId?: string|null,
+     *     GameSessionId?: string|null,
+     *     FleetId?: string|null,
+     *     FleetArn?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     TerminationTime?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'RESERVED'|'ACTIVE'|'COMPLETED'|'TIMEDOUT'|null,
+     *     IpAddress?: string|null,
+     *     DnsName?: string|null,
+     *     Port?: int<1, 60000>|null,
+     *     PlayerData?: string|null
      * } $args
      */
     public function __construct(array $args = [])

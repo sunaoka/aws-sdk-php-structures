@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property ColumnIdentifier $Column
- * @property string $Label
- * @property 'HIDDEN'|'VISIBLE' $Visibility
- * @property AggregationFunction $Aggregation
- * @property 'BOTH'|'BAR'|'LINE' $TooltipTarget
+ * @property string|null $Label
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
+ * @property AggregationFunction|null $Aggregation
+ * @property 'BOTH'|'BAR'|'LINE'|null $TooltipTarget
  */
 class ColumnTooltipItem extends Shape
 {
     /**
      * @param array{
      *     Column: ColumnIdentifier,
-     *     Label?: string,
-     *     Visibility?: 'HIDDEN'|'VISIBLE',
-     *     Aggregation?: AggregationFunction,
-     *     TooltipTarget?: 'BOTH'|'BAR'|'LINE'
+     *     Label?: string|null,
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     Aggregation?: AggregationFunction|null,
+     *     TooltipTarget?: 'BOTH'|'BAR'|'LINE'|null
      * } $args
      */
     public function __construct(array $args)

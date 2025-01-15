@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $inferenceProfileArn
- * @property 'ACTIVE' $status
+ * @property 'ACTIVE'|null $status
  */
 class CreateInferenceProfileResponse extends Response
 {

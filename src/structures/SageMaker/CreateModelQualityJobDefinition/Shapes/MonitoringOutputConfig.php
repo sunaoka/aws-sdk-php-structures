@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<MonitoringOutput> $MonitoringOutputs
- * @property string $KmsKeyId
+ * @property string|null $KmsKeyId
  */
 class MonitoringOutputConfig extends Shape
 {
     /**
      * @param array{
      *     MonitoringOutputs: list<MonitoringOutput>,
-     *     KmsKeyId?: string
+     *     KmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args)

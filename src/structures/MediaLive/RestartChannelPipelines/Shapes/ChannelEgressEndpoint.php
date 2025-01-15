@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\RestartChannelPipelines\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceIp
+ * @property string|null $SourceIp
  */
 class ChannelEgressEndpoint extends Shape
 {
     /**
-     * @param array{SourceIp?: string} $args
+     * @param array{SourceIp?: string|null} $args
      */
     public function __construct(array $args = [])
     {

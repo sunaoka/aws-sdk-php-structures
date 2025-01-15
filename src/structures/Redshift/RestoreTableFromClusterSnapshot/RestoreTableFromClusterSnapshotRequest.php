@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ClusterIdentifier
  * @property string $SnapshotIdentifier
  * @property string $SourceDatabaseName
- * @property string $SourceSchemaName
+ * @property string|null $SourceSchemaName
  * @property string $SourceTableName
- * @property string $TargetDatabaseName
- * @property string $TargetSchemaName
+ * @property string|null $TargetDatabaseName
+ * @property string|null $TargetSchemaName
  * @property string $NewTableName
- * @property bool $EnableCaseSensitiveIdentifier
+ * @property bool|null $EnableCaseSensitiveIdentifier
  */
 class RestoreTableFromClusterSnapshotRequest extends Request
 {
@@ -22,12 +22,12 @@ class RestoreTableFromClusterSnapshotRequest extends Request
      *     ClusterIdentifier: string,
      *     SnapshotIdentifier: string,
      *     SourceDatabaseName: string,
-     *     SourceSchemaName?: string,
+     *     SourceSchemaName?: string|null,
      *     SourceTableName: string,
-     *     TargetDatabaseName?: string,
-     *     TargetSchemaName?: string,
+     *     TargetDatabaseName?: string|null,
+     *     TargetSchemaName?: string|null,
      *     NewTableName: string,
-     *     EnableCaseSensitiveIdentifier?: bool
+     *     EnableCaseSensitiveIdentifier?: bool|null
      * } $args
      */
     public function __construct(array $args)

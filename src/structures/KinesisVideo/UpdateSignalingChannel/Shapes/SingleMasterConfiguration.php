@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\UpdateSignalingChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<5, 120> $MessageTtlSeconds
+ * @property int<5, 120>|null $MessageTtlSeconds
  */
 class SingleMasterConfiguration extends Shape
 {
     /**
-     * @param array{MessageTtlSeconds?: int<5, 120>} $args
+     * @param array{MessageTtlSeconds?: int<5, 120>|null} $args
      */
     public function __construct(array $args = [])
     {

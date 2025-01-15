@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LambdaFunction $lambdaFunction
- * @property EcsService $ecsService
- * @property Ec2Instance $ec2Instance
- * @property EbsVolume $ebsVolume
- * @property Ec2AutoScalingGroup $ec2AutoScalingGroup
- * @property Ec2ReservedInstances $ec2ReservedInstances
- * @property RdsReservedInstances $rdsReservedInstances
- * @property ElastiCacheReservedInstances $elastiCacheReservedInstances
- * @property OpenSearchReservedInstances $openSearchReservedInstances
- * @property RedshiftReservedInstances $redshiftReservedInstances
- * @property Ec2InstanceSavingsPlans $ec2InstanceSavingsPlans
- * @property ComputeSavingsPlans $computeSavingsPlans
- * @property SageMakerSavingsPlans $sageMakerSavingsPlans
- * @property RdsDbInstance $rdsDbInstance
- * @property RdsDbInstanceStorage $rdsDbInstanceStorage
+ * @property LambdaFunction|null $lambdaFunction
+ * @property EcsService|null $ecsService
+ * @property Ec2Instance|null $ec2Instance
+ * @property EbsVolume|null $ebsVolume
+ * @property Ec2AutoScalingGroup|null $ec2AutoScalingGroup
+ * @property Ec2ReservedInstances|null $ec2ReservedInstances
+ * @property RdsReservedInstances|null $rdsReservedInstances
+ * @property ElastiCacheReservedInstances|null $elastiCacheReservedInstances
+ * @property OpenSearchReservedInstances|null $openSearchReservedInstances
+ * @property RedshiftReservedInstances|null $redshiftReservedInstances
+ * @property Ec2InstanceSavingsPlans|null $ec2InstanceSavingsPlans
+ * @property ComputeSavingsPlans|null $computeSavingsPlans
+ * @property SageMakerSavingsPlans|null $sageMakerSavingsPlans
+ * @property RdsDbInstance|null $rdsDbInstance
+ * @property RdsDbInstanceStorage|null $rdsDbInstanceStorage
  */
 class ResourceDetails extends Shape
 {
     /**
      * @param array{
-     *     lambdaFunction?: LambdaFunction,
-     *     ecsService?: EcsService,
-     *     ec2Instance?: Ec2Instance,
-     *     ebsVolume?: EbsVolume,
-     *     ec2AutoScalingGroup?: Ec2AutoScalingGroup,
-     *     ec2ReservedInstances?: Ec2ReservedInstances,
-     *     rdsReservedInstances?: RdsReservedInstances,
-     *     elastiCacheReservedInstances?: ElastiCacheReservedInstances,
-     *     openSearchReservedInstances?: OpenSearchReservedInstances,
-     *     redshiftReservedInstances?: RedshiftReservedInstances,
-     *     ec2InstanceSavingsPlans?: Ec2InstanceSavingsPlans,
-     *     computeSavingsPlans?: ComputeSavingsPlans,
-     *     sageMakerSavingsPlans?: SageMakerSavingsPlans,
-     *     rdsDbInstance?: RdsDbInstance,
-     *     rdsDbInstanceStorage?: RdsDbInstanceStorage
+     *     lambdaFunction?: LambdaFunction|null,
+     *     ecsService?: EcsService|null,
+     *     ec2Instance?: Ec2Instance|null,
+     *     ebsVolume?: EbsVolume|null,
+     *     ec2AutoScalingGroup?: Ec2AutoScalingGroup|null,
+     *     ec2ReservedInstances?: Ec2ReservedInstances|null,
+     *     rdsReservedInstances?: RdsReservedInstances|null,
+     *     elastiCacheReservedInstances?: ElastiCacheReservedInstances|null,
+     *     openSearchReservedInstances?: OpenSearchReservedInstances|null,
+     *     redshiftReservedInstances?: RedshiftReservedInstances|null,
+     *     ec2InstanceSavingsPlans?: Ec2InstanceSavingsPlans|null,
+     *     computeSavingsPlans?: ComputeSavingsPlans|null,
+     *     sageMakerSavingsPlans?: SageMakerSavingsPlans|null,
+     *     rdsDbInstance?: RdsDbInstance|null,
+     *     rdsDbInstanceStorage?: RdsDbInstanceStorage|null
      * } $args
      */
     public function __construct(array $args = [])

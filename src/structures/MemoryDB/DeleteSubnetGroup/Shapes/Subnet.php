@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MemoryDB\DeleteSubnetGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Identifier
- * @property AvailabilityZone $AvailabilityZone
+ * @property string|null $Identifier
+ * @property AvailabilityZone|null $AvailabilityZone
  */
 class Subnet extends Shape
 {
     /**
      * @param array{
-     *     Identifier?: string,
-     *     AvailabilityZone?: AvailabilityZone
+     *     Identifier?: string|null,
+     *     AvailabilityZone?: AvailabilityZone|null
      * } $args
      */
     public function __construct(array $args = [])

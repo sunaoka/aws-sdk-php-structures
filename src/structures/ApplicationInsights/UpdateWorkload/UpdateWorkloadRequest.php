@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ResourceGroupName
  * @property string $ComponentName
- * @property string $WorkloadId
+ * @property string|null $WorkloadId
  * @property Shapes\WorkloadConfiguration $WorkloadConfiguration
  */
 class UpdateWorkloadRequest extends Request
@@ -16,7 +16,7 @@ class UpdateWorkloadRequest extends Request
      * @param array{
      *     ResourceGroupName: string,
      *     ComponentName: string,
-     *     WorkloadId?: string,
+     *     WorkloadId?: string|null,
      *     WorkloadConfiguration: Shapes\WorkloadConfiguration
      * } $args
      */

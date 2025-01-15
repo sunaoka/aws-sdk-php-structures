@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DirectoryArn
  * @property Shapes\ObjectReference $ObjectReference
- * @property string $NextToken
- * @property int<1, max> $MaxResults
- * @property 'SERIALIZABLE'|'EVENTUAL' $ConsistencyLevel
- * @property Shapes\SchemaFacet $FacetFilter
+ * @property string|null $NextToken
+ * @property int<1, max>|null $MaxResults
+ * @property 'SERIALIZABLE'|'EVENTUAL'|null $ConsistencyLevel
+ * @property Shapes\SchemaFacet|null $FacetFilter
  */
 class ListObjectAttributesRequest extends Request
 {
@@ -18,10 +18,10 @@ class ListObjectAttributesRequest extends Request
      * @param array{
      *     DirectoryArn: string,
      *     ObjectReference: Shapes\ObjectReference,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, max>,
-     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL',
-     *     FacetFilter?: Shapes\SchemaFacet
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, max>|null,
+     *     ConsistencyLevel?: 'SERIALIZABLE'|'EVENTUAL'|null,
+     *     FacetFilter?: Shapes\SchemaFacet|null
      * } $args
      */
     public function __construct(array $args)

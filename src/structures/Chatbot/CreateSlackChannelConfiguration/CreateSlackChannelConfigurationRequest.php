@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SlackTeamId
  * @property string $SlackChannelId
- * @property string $SlackChannelName
- * @property list<string> $SnsTopicArns
+ * @property string|null $SlackChannelName
+ * @property list<string>|null $SnsTopicArns
  * @property string $IamRoleArn
  * @property string $ConfigurationName
- * @property string $LoggingLevel
- * @property list<string> $GuardrailPolicyArns
- * @property bool $UserAuthorizationRequired
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $LoggingLevel
+ * @property list<string>|null $GuardrailPolicyArns
+ * @property bool|null $UserAuthorizationRequired
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateSlackChannelConfigurationRequest extends Request
 {
@@ -22,14 +22,14 @@ class CreateSlackChannelConfigurationRequest extends Request
      * @param array{
      *     SlackTeamId: string,
      *     SlackChannelId: string,
-     *     SlackChannelName?: string,
-     *     SnsTopicArns?: list<string>,
+     *     SlackChannelName?: string|null,
+     *     SnsTopicArns?: list<string>|null,
      *     IamRoleArn: string,
      *     ConfigurationName: string,
-     *     LoggingLevel?: string,
-     *     GuardrailPolicyArns?: list<string>,
-     *     UserAuthorizationRequired?: bool,
-     *     Tags?: list<Shapes\Tag>
+     *     LoggingLevel?: string|null,
+     *     GuardrailPolicyArns?: list<string>|null,
+     *     UserAuthorizationRequired?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\UpdateExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'INCREASE'|'DECREASE' $desiredChange
+ * @property 'INCREASE'|'DECREASE'|null $desiredChange
  * @property MetricDefinition $metricDefinition
  */
 class MetricGoal extends Shape
 {
     /**
      * @param array{
-     *     desiredChange?: 'INCREASE'|'DECREASE',
+     *     desiredChange?: 'INCREASE'|'DECREASE'|null,
      *     metricDefinition: MetricDefinition
      * } $args
      */

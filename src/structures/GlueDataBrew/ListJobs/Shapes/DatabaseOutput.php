@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $GlueConnectionName
  * @property DatabaseTableOutputOptions $DatabaseOptions
- * @property 'NEW_TABLE' $DatabaseOutputMode
+ * @property 'NEW_TABLE'|null $DatabaseOutputMode
  */
 class DatabaseOutput extends Shape
 {
@@ -15,7 +15,7 @@ class DatabaseOutput extends Shape
      * @param array{
      *     GlueConnectionName: string,
      *     DatabaseOptions: DatabaseTableOutputOptions,
-     *     DatabaseOutputMode?: 'NEW_TABLE'
+     *     DatabaseOutputMode?: 'NEW_TABLE'|null
      * } $args
      */
     public function __construct(array $args)

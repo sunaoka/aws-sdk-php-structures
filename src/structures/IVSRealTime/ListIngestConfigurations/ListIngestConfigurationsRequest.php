@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IVSRealTime\ListIngestConfigurations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $filterByStageArn
- * @property 'ACTIVE'|'INACTIVE' $filterByState
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $filterByStageArn
+ * @property 'ACTIVE'|'INACTIVE'|null $filterByState
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListIngestConfigurationsRequest extends Request
 {
     /**
      * @param array{
-     *     filterByStageArn?: string,
-     *     filterByState?: 'ACTIVE'|'INACTIVE',
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     filterByStageArn?: string|null,
+     *     filterByState?: 'ACTIVE'|'INACTIVE'|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

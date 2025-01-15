@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\TranscribeService\ListMedicalScribeJobs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'QUEUED'|'IN_PROGRESS'|'FAILED'|'COMPLETED' $Status
- * @property string $JobNameContains
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property 'QUEUED'|'IN_PROGRESS'|'FAILED'|'COMPLETED'|null $Status
+ * @property string|null $JobNameContains
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class ListMedicalScribeJobsRequest extends Request
 {
     /**
      * @param array{
-     *     Status?: 'QUEUED'|'IN_PROGRESS'|'FAILED'|'COMPLETED',
-     *     JobNameContains?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     Status?: 'QUEUED'|'IN_PROGRESS'|'FAILED'|'COMPLETED'|null,
+     *     JobNameContains?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

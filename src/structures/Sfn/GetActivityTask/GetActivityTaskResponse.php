@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Sfn\GetActivityTask;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $taskToken
- * @property string $input
+ * @property string|null $taskToken
+ * @property string|null $input
  */
 class GetActivityTaskResponse extends Response
 {

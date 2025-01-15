@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, 10000> $BufferMsec
+ * @property int<0, 10000>|null $BufferMsec
  * @property UdpContainerSettings $ContainerSettings
  * @property OutputLocationRef $Destination
- * @property 'AES128'|'AES192'|'AES256' $EncryptionType
- * @property int<40, 16000> $Latency
+ * @property 'AES128'|'AES192'|'AES256'|null $EncryptionType
+ * @property int<40, 16000>|null $Latency
  */
 class SrtOutputSettings extends Shape
 {
     /**
      * @param array{
-     *     BufferMsec?: int<0, 10000>,
+     *     BufferMsec?: int<0, 10000>|null,
      *     ContainerSettings: UdpContainerSettings,
      *     Destination: OutputLocationRef,
-     *     EncryptionType?: 'AES128'|'AES192'|'AES256',
-     *     Latency?: int<40, 16000>
+     *     EncryptionType?: 'AES128'|'AES192'|'AES256'|null,
+     *     Latency?: int<40, 16000>|null
      * } $args
      */
     public function __construct(array $args)

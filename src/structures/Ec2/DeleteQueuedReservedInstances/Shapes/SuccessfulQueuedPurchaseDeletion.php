@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteQueuedReservedInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReservedInstancesId
+ * @property string|null $ReservedInstancesId
  */
 class SuccessfulQueuedPurchaseDeletion extends Shape
 {
     /**
-     * @param array{ReservedInstancesId?: string} $args
+     * @param array{ReservedInstancesId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

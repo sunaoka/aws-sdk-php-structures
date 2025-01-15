@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $id
  * @property 'text-input'|'q-query'|'file-upload'|'q-plugin'|'form-input' $type
  * @property string $prompt
- * @property 'approved-sources'|'llm' $outputSource
- * @property AttributeFilter $attributeFilter
+ * @property 'approved-sources'|'llm'|null $outputSource
+ * @property AttributeFilter|null $attributeFilter
  */
 class QQueryCardInput extends Shape
 {
@@ -20,8 +20,8 @@ class QQueryCardInput extends Shape
      *     id: string,
      *     type: 'text-input'|'q-query'|'file-upload'|'q-plugin'|'form-input',
      *     prompt: string,
-     *     outputSource?: 'approved-sources'|'llm',
-     *     attributeFilter?: AttributeFilter
+     *     outputSource?: 'approved-sources'|'llm'|null,
+     *     attributeFilter?: AttributeFilter|null
      * } $args
      */
     public function __construct(array $args)

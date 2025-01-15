@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
- * @property list<Shapes\Tag> $tags
+ * @property string|null $description
+ * @property list<Shapes\Tag>|null $tags
  */
 class PutOutcomeRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
-     *     tags?: list<Shapes\Tag>
+     *     description?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

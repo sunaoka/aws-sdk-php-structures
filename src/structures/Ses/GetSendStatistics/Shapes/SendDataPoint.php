@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ses\GetSendStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $Timestamp
- * @property int $DeliveryAttempts
- * @property int $Bounces
- * @property int $Complaints
- * @property int $Rejects
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
+ * @property int|null $DeliveryAttempts
+ * @property int|null $Bounces
+ * @property int|null $Complaints
+ * @property int|null $Rejects
  */
 class SendDataPoint extends Shape
 {
     /**
      * @param array{
-     *     Timestamp?: \Aws\Api\DateTimeResult,
-     *     DeliveryAttempts?: int,
-     *     Bounces?: int,
-     *     Complaints?: int,
-     *     Rejects?: int
+     *     Timestamp?: \Aws\Api\DateTimeResult|null,
+     *     DeliveryAttempts?: int|null,
+     *     Bounces?: int|null,
+     *     Complaints?: int|null,
+     *     Rejects?: int|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\ListNamespaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $adminPasswordSecretArn
- * @property string $adminPasswordSecretKmsKeyId
- * @property string $adminUsername
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property string $dbName
- * @property string $defaultIamRoleArn
- * @property list<string> $iamRoles
- * @property string $kmsKeyId
- * @property list<'useractivitylog'|'userlog'|'connectionlog'> $logExports
- * @property string $namespaceArn
- * @property string $namespaceId
- * @property string $namespaceName
- * @property 'AVAILABLE'|'MODIFYING'|'DELETING' $status
+ * @property string|null $adminPasswordSecretArn
+ * @property string|null $adminPasswordSecretKmsKeyId
+ * @property string|null $adminUsername
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property string|null $dbName
+ * @property string|null $defaultIamRoleArn
+ * @property list<string>|null $iamRoles
+ * @property string|null $kmsKeyId
+ * @property list<'useractivitylog'|'userlog'|'connectionlog'>|null $logExports
+ * @property string|null $namespaceArn
+ * @property string|null $namespaceId
+ * @property string|null $namespaceName
+ * @property 'AVAILABLE'|'MODIFYING'|'DELETING'|null $status
  */
 class NamespaceShape extends Shape
 {
     /**
      * @param array{
-     *     adminPasswordSecretArn?: string,
-     *     adminPasswordSecretKmsKeyId?: string,
-     *     adminUsername?: string,
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     dbName?: string,
-     *     defaultIamRoleArn?: string,
-     *     iamRoles?: list<string>,
-     *     kmsKeyId?: string,
-     *     logExports?: list<'useractivitylog'|'userlog'|'connectionlog'>,
-     *     namespaceArn?: string,
-     *     namespaceId?: string,
-     *     namespaceName?: string,
-     *     status?: 'AVAILABLE'|'MODIFYING'|'DELETING'
+     *     adminPasswordSecretArn?: string|null,
+     *     adminPasswordSecretKmsKeyId?: string|null,
+     *     adminUsername?: string|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     dbName?: string|null,
+     *     defaultIamRoleArn?: string|null,
+     *     iamRoles?: list<string>|null,
+     *     kmsKeyId?: string|null,
+     *     logExports?: list<'useractivitylog'|'userlog'|'connectionlog'>|null,
+     *     namespaceArn?: string|null,
+     *     namespaceId?: string|null,
+     *     namespaceName?: string|null,
+     *     status?: 'AVAILABLE'|'MODIFYING'|'DELETING'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $billingGroupName
- * @property Shapes\BillingGroupProperties $billingGroupProperties
- * @property list<Shapes\Tag> $tags
+ * @property Shapes\BillingGroupProperties|null $billingGroupProperties
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateBillingGroupRequest extends Request
 {
     /**
      * @param array{
      *     billingGroupName: string,
-     *     billingGroupProperties?: Shapes\BillingGroupProperties,
-     *     tags?: list<Shapes\Tag>
+     *     billingGroupProperties?: Shapes\BillingGroupProperties|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeClusterDbRevisions;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClusterIdentifier
- * @property int $MaxRecords
- * @property string $Marker
+ * @property string|null $ClusterIdentifier
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
  */
 class DescribeClusterDbRevisionsRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterIdentifier?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string
+     *     ClusterIdentifier?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $JobDefinitionArn
  * @property string $JobDefinitionName
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property Shapes\DataQualityBaselineConfig $DataQualityBaselineConfig
+ * @property Shapes\DataQualityBaselineConfig|null $DataQualityBaselineConfig
  * @property Shapes\DataQualityAppSpecification $DataQualityAppSpecification
  * @property Shapes\DataQualityJobInput $DataQualityJobInput
  * @property Shapes\MonitoringOutputConfig $DataQualityJobOutputConfig
  * @property Shapes\MonitoringResources $JobResources
- * @property Shapes\MonitoringNetworkConfig $NetworkConfig
+ * @property Shapes\MonitoringNetworkConfig|null $NetworkConfig
  * @property string $RoleArn
- * @property Shapes\MonitoringStoppingCondition $StoppingCondition
+ * @property Shapes\MonitoringStoppingCondition|null $StoppingCondition
  */
 class DescribeDataQualityJobDefinitionResponse extends Response
 {

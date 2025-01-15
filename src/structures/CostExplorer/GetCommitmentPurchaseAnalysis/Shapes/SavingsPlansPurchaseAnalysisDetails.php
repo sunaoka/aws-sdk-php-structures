@@ -5,55 +5,55 @@ namespace Sunaoka\Aws\Structures\CostExplorer\GetCommitmentPurchaseAnalysis\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CurrencyCode
- * @property string $LookbackPeriodInHours
- * @property string $CurrentAverageCoverage
- * @property string $CurrentAverageHourlyOnDemandSpend
- * @property string $CurrentMaximumHourlyOnDemandSpend
- * @property string $CurrentMinimumHourlyOnDemandSpend
- * @property string $CurrentOnDemandSpend
- * @property string $ExistingHourlyCommitment
- * @property string $HourlyCommitmentToPurchase
- * @property string $EstimatedAverageCoverage
- * @property string $EstimatedAverageUtilization
- * @property string $EstimatedMonthlySavingsAmount
- * @property string $EstimatedOnDemandCost
- * @property string $EstimatedOnDemandCostWithCurrentCommitment
- * @property string $EstimatedROI
- * @property string $EstimatedSavingsAmount
- * @property string $EstimatedSavingsPercentage
- * @property string $EstimatedCommitmentCost
- * @property string $LatestUsageTimestamp
- * @property string $UpfrontCost
- * @property string $AdditionalMetadata
- * @property list<RecommendationDetailHourlyMetrics> $MetricsOverLookbackPeriod
+ * @property string|null $CurrencyCode
+ * @property string|null $LookbackPeriodInHours
+ * @property string|null $CurrentAverageCoverage
+ * @property string|null $CurrentAverageHourlyOnDemandSpend
+ * @property string|null $CurrentMaximumHourlyOnDemandSpend
+ * @property string|null $CurrentMinimumHourlyOnDemandSpend
+ * @property string|null $CurrentOnDemandSpend
+ * @property string|null $ExistingHourlyCommitment
+ * @property string|null $HourlyCommitmentToPurchase
+ * @property string|null $EstimatedAverageCoverage
+ * @property string|null $EstimatedAverageUtilization
+ * @property string|null $EstimatedMonthlySavingsAmount
+ * @property string|null $EstimatedOnDemandCost
+ * @property string|null $EstimatedOnDemandCostWithCurrentCommitment
+ * @property string|null $EstimatedROI
+ * @property string|null $EstimatedSavingsAmount
+ * @property string|null $EstimatedSavingsPercentage
+ * @property string|null $EstimatedCommitmentCost
+ * @property string|null $LatestUsageTimestamp
+ * @property string|null $UpfrontCost
+ * @property string|null $AdditionalMetadata
+ * @property list<RecommendationDetailHourlyMetrics>|null $MetricsOverLookbackPeriod
  */
 class SavingsPlansPurchaseAnalysisDetails extends Shape
 {
     /**
      * @param array{
-     *     CurrencyCode?: string,
-     *     LookbackPeriodInHours?: string,
-     *     CurrentAverageCoverage?: string,
-     *     CurrentAverageHourlyOnDemandSpend?: string,
-     *     CurrentMaximumHourlyOnDemandSpend?: string,
-     *     CurrentMinimumHourlyOnDemandSpend?: string,
-     *     CurrentOnDemandSpend?: string,
-     *     ExistingHourlyCommitment?: string,
-     *     HourlyCommitmentToPurchase?: string,
-     *     EstimatedAverageCoverage?: string,
-     *     EstimatedAverageUtilization?: string,
-     *     EstimatedMonthlySavingsAmount?: string,
-     *     EstimatedOnDemandCost?: string,
-     *     EstimatedOnDemandCostWithCurrentCommitment?: string,
-     *     EstimatedROI?: string,
-     *     EstimatedSavingsAmount?: string,
-     *     EstimatedSavingsPercentage?: string,
-     *     EstimatedCommitmentCost?: string,
-     *     LatestUsageTimestamp?: string,
-     *     UpfrontCost?: string,
-     *     AdditionalMetadata?: string,
-     *     MetricsOverLookbackPeriod?: list<RecommendationDetailHourlyMetrics>
+     *     CurrencyCode?: string|null,
+     *     LookbackPeriodInHours?: string|null,
+     *     CurrentAverageCoverage?: string|null,
+     *     CurrentAverageHourlyOnDemandSpend?: string|null,
+     *     CurrentMaximumHourlyOnDemandSpend?: string|null,
+     *     CurrentMinimumHourlyOnDemandSpend?: string|null,
+     *     CurrentOnDemandSpend?: string|null,
+     *     ExistingHourlyCommitment?: string|null,
+     *     HourlyCommitmentToPurchase?: string|null,
+     *     EstimatedAverageCoverage?: string|null,
+     *     EstimatedAverageUtilization?: string|null,
+     *     EstimatedMonthlySavingsAmount?: string|null,
+     *     EstimatedOnDemandCost?: string|null,
+     *     EstimatedOnDemandCostWithCurrentCommitment?: string|null,
+     *     EstimatedROI?: string|null,
+     *     EstimatedSavingsAmount?: string|null,
+     *     EstimatedSavingsPercentage?: string|null,
+     *     EstimatedCommitmentCost?: string|null,
+     *     LatestUsageTimestamp?: string|null,
+     *     UpfrontCost?: string|null,
+     *     AdditionalMetadata?: string|null,
+     *     MetricsOverLookbackPeriod?: list<RecommendationDetailHourlyMetrics>|null
      * } $args
      */
     public function __construct(array $args = [])

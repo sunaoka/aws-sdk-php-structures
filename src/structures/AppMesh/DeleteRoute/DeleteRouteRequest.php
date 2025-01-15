@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $meshName
- * @property string $meshOwner
+ * @property string|null $meshOwner
  * @property string $routeName
  * @property string $virtualRouterName
  */
@@ -15,7 +15,7 @@ class DeleteRouteRequest extends Request
     /**
      * @param array{
      *     meshName: string,
-     *     meshOwner?: string,
+     *     meshOwner?: string|null,
      *     routeName: string,
      *     virtualRouterName: string
      * } $args

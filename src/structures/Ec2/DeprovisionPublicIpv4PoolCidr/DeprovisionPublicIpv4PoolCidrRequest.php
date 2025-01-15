@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\DeprovisionPublicIpv4PoolCidr;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $PoolId
  * @property string $Cidr
  */
@@ -13,7 +13,7 @@ class DeprovisionPublicIpv4PoolCidrRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     PoolId: string,
      *     Cidr: string
      * } $args

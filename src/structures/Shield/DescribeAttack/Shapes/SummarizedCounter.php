@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Shield\DescribeAttack\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property double $Max
- * @property double $Average
- * @property double $Sum
- * @property int $N
- * @property string $Unit
+ * @property string|null $Name
+ * @property double|null $Max
+ * @property double|null $Average
+ * @property double|null $Sum
+ * @property int|null $N
+ * @property string|null $Unit
  */
 class SummarizedCounter extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Max?: double,
-     *     Average?: double,
-     *     Sum?: double,
-     *     N?: int,
-     *     Unit?: string
+     *     Name?: string|null,
+     *     Max?: double|null,
+     *     Average?: double|null,
+     *     Sum?: double|null,
+     *     N?: int|null,
+     *     Unit?: string|null
      * } $args
      */
     public function __construct(array $args = [])

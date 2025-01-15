@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\PinpointEmail\GetConfigurationSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'REQUIRE'|'OPTIONAL' $TlsPolicy
- * @property string $SendingPoolName
+ * @property 'REQUIRE'|'OPTIONAL'|null $TlsPolicy
+ * @property string|null $SendingPoolName
  */
 class DeliveryOptions extends Shape
 {
     /**
      * @param array{
-     *     TlsPolicy?: 'REQUIRE'|'OPTIONAL',
-     *     SendingPoolName?: string
+     *     TlsPolicy?: 'REQUIRE'|'OPTIONAL'|null,
+     *     SendingPoolName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

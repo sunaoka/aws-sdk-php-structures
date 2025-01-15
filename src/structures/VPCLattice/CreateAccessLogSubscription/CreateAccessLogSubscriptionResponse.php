@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $id
  * @property string $resourceArn
  * @property string $resourceId
- * @property 'SERVICE'|'RESOURCE' $serviceNetworkLogType
+ * @property 'SERVICE'|'RESOURCE'|null $serviceNetworkLogType
  */
 class CreateAccessLogSubscriptionResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTopic\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SINGULAR'|'RANGE'|'COLLECTIVE' $ConstantType
- * @property string $SingularConstant
- * @property CollectiveConstant $CollectiveConstant
+ * @property 'SINGULAR'|'RANGE'|'COLLECTIVE'|null $ConstantType
+ * @property string|null $SingularConstant
+ * @property CollectiveConstant|null $CollectiveConstant
  */
 class TopicCategoryFilterConstant extends Shape
 {
     /**
      * @param array{
-     *     ConstantType?: 'SINGULAR'|'RANGE'|'COLLECTIVE',
-     *     SingularConstant?: string,
-     *     CollectiveConstant?: CollectiveConstant
+     *     ConstantType?: 'SINGULAR'|'RANGE'|'COLLECTIVE'|null,
+     *     SingularConstant?: string|null,
+     *     CollectiveConstant?: CollectiveConstant|null
      * } $args
      */
     public function __construct(array $args = [])

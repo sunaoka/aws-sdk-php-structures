@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApplicationId
  * @property string $ConfigurationProfileId
- * @property string $Description
+ * @property string|null $Description
  * @property string|resource|\Psr\Http\Message\StreamInterface $Content
  * @property string $ContentType
- * @property int $LatestVersionNumber
- * @property string $VersionLabel
+ * @property int|null $LatestVersionNumber
+ * @property string|null $VersionLabel
  */
 class CreateHostedConfigurationVersionRequest extends Request
 {
@@ -19,11 +19,11 @@ class CreateHostedConfigurationVersionRequest extends Request
      * @param array{
      *     ApplicationId: string,
      *     ConfigurationProfileId: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Content: string|resource|\Psr\Http\Message\StreamInterface,
      *     ContentType: string,
-     *     LatestVersionNumber?: int,
-     *     VersionLabel?: string
+     *     LatestVersionNumber?: int|null,
+     *     VersionLabel?: string|null
      * } $args
      */
     public function __construct(array $args)

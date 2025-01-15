@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ConfigService\PutOrganizationConformancePack;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $OrganizationConformancePackArn
+ * @property string|null $OrganizationConformancePackArn
  */
 class PutOrganizationConformancePackResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\StartDataSourceRun;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $dataSourceIdentifier
  * @property string $domainIdentifier
  */
@@ -13,7 +13,7 @@ class StartDataSourceRunRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     dataSourceIdentifier: string,
      *     domainIdentifier: string
      * } $args

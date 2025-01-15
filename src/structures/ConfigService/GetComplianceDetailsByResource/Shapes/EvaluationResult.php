@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ConfigService\GetComplianceDetailsByResource\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EvaluationResultIdentifier $EvaluationResultIdentifier
- * @property 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA' $ComplianceType
- * @property \Aws\Api\DateTimeResult $ResultRecordedTime
- * @property \Aws\Api\DateTimeResult $ConfigRuleInvokedTime
- * @property string $Annotation
- * @property string $ResultToken
+ * @property EvaluationResultIdentifier|null $EvaluationResultIdentifier
+ * @property 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA'|null $ComplianceType
+ * @property \Aws\Api\DateTimeResult|null $ResultRecordedTime
+ * @property \Aws\Api\DateTimeResult|null $ConfigRuleInvokedTime
+ * @property string|null $Annotation
+ * @property string|null $ResultToken
  */
 class EvaluationResult extends Shape
 {
     /**
      * @param array{
-     *     EvaluationResultIdentifier?: EvaluationResultIdentifier,
-     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA',
-     *     ResultRecordedTime?: \Aws\Api\DateTimeResult,
-     *     ConfigRuleInvokedTime?: \Aws\Api\DateTimeResult,
-     *     Annotation?: string,
-     *     ResultToken?: string
+     *     EvaluationResultIdentifier?: EvaluationResultIdentifier|null,
+     *     ComplianceType?: 'COMPLIANT'|'NON_COMPLIANT'|'NOT_APPLICABLE'|'INSUFFICIENT_DATA'|null,
+     *     ResultRecordedTime?: \Aws\Api\DateTimeResult|null,
+     *     ConfigRuleInvokedTime?: \Aws\Api\DateTimeResult|null,
+     *     Annotation?: string|null,
+     *     ResultToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FieldPath
  * @property 'SELECT'|'TEXT'|'ATTACHMENT' $FieldType
  * @property 'REQUIRED'|'CONDITIONAL'|'OPTIONAL' $FieldRequirement
- * @property SelectValidation $SelectValidation
- * @property TextValidation $TextValidation
+ * @property SelectValidation|null $SelectValidation
+ * @property TextValidation|null $TextValidation
  * @property RegistrationFieldDisplayHints $DisplayHints
  */
 class RegistrationFieldDefinition extends Shape
@@ -21,8 +21,8 @@ class RegistrationFieldDefinition extends Shape
      *     FieldPath: string,
      *     FieldType: 'SELECT'|'TEXT'|'ATTACHMENT',
      *     FieldRequirement: 'REQUIRED'|'CONDITIONAL'|'OPTIONAL',
-     *     SelectValidation?: SelectValidation,
-     *     TextValidation?: TextValidation,
+     *     SelectValidation?: SelectValidation|null,
+     *     TextValidation?: TextValidation|null,
      *     DisplayHints: RegistrationFieldDisplayHints
      * } $args
      */

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<RelevanceMetric> $relevanceMetrics
- * @property double $recallMetric
+ * @property double|null $recallMetric
  */
 class AudienceQualityMetrics extends Shape
 {
     /**
      * @param array{
      *     relevanceMetrics: list<RelevanceMetric>,
-     *     recallMetric?: double
+     *     recallMetric?: double|null
      * } $args
      */
     public function __construct(array $args)

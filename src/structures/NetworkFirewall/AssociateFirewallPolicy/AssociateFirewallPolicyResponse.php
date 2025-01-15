@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\AssociateFirewallPolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FirewallArn
- * @property string $FirewallName
- * @property string $FirewallPolicyArn
- * @property string $UpdateToken
+ * @property string|null $FirewallArn
+ * @property string|null $FirewallName
+ * @property string|null $FirewallPolicyArn
+ * @property string|null $UpdateToken
  */
 class AssociateFirewallPolicyResponse extends Response
 {

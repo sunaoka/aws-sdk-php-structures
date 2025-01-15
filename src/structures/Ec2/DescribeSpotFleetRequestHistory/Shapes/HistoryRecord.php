@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeSpotFleetRequestHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property EventInformation $EventInformation
- * @property 'instanceChange'|'fleetRequestChange'|'error'|'information' $EventType
- * @property \Aws\Api\DateTimeResult $Timestamp
+ * @property EventInformation|null $EventInformation
+ * @property 'instanceChange'|'fleetRequestChange'|'error'|'information'|null $EventType
+ * @property \Aws\Api\DateTimeResult|null $Timestamp
  */
 class HistoryRecord extends Shape
 {
     /**
      * @param array{
-     *     EventInformation?: EventInformation,
-     *     EventType?: 'instanceChange'|'fleetRequestChange'|'error'|'information',
-     *     Timestamp?: \Aws\Api\DateTimeResult
+     *     EventInformation?: EventInformation|null,
+     *     EventType?: 'instanceChange'|'fleetRequestChange'|'error'|'information'|null,
+     *     Timestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

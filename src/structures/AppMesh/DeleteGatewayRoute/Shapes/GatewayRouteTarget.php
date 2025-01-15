@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppMesh\DeleteGatewayRoute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<1, 65535> $port
+ * @property int<1, 65535>|null $port
  * @property GatewayRouteVirtualService $virtualService
  */
 class GatewayRouteTarget extends Shape
 {
     /**
      * @param array{
-     *     port?: int<1, 65535>,
+     *     port?: int<1, 65535>|null,
      *     virtualService: GatewayRouteVirtualService
      * } $args
      */

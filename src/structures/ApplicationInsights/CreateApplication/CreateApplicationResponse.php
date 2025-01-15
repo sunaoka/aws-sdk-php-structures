@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ApplicationInsights\CreateApplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ApplicationInfo $ApplicationInfo
+ * @property Shapes\ApplicationInfo|null $ApplicationInfo
  */
 class CreateApplicationResponse extends Response
 {

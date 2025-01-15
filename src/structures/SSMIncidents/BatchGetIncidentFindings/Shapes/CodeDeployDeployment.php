@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $deploymentGroupArn
  * @property string $deploymentId
- * @property \Aws\Api\DateTimeResult $endTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
  * @property \Aws\Api\DateTimeResult $startTime
  */
 class CodeDeployDeployment extends Shape
@@ -16,7 +16,7 @@ class CodeDeployDeployment extends Shape
      * @param array{
      *     deploymentGroupArn: string,
      *     deploymentId: string,
-     *     endTime?: \Aws\Api\DateTimeResult,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
      *     startTime: \Aws\Api\DateTimeResult
      * } $args
      */

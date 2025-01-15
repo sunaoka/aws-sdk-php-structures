@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\Rds\DeleteCustomDBEngineVersion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Engine
- * @property string $EngineVersion
- * @property string $DBParameterGroupFamily
- * @property string $DBEngineDescription
- * @property string $DBEngineVersionDescription
- * @property Shapes\CharacterSet $DefaultCharacterSet
- * @property Shapes\CustomDBEngineVersionAMI $Image
- * @property string $DBEngineMediaType
- * @property list<Shapes\CharacterSet> $SupportedCharacterSets
- * @property list<Shapes\CharacterSet> $SupportedNcharCharacterSets
- * @property list<Shapes\UpgradeTarget> $ValidUpgradeTarget
- * @property list<Shapes\Timezone> $SupportedTimezones
- * @property list<string> $ExportableLogTypes
- * @property bool $SupportsLogExportsToCloudwatchLogs
- * @property bool $SupportsReadReplica
- * @property list<string> $SupportedEngineModes
- * @property list<string> $SupportedFeatureNames
- * @property string $Status
- * @property bool $SupportsParallelQuery
- * @property bool $SupportsGlobalDatabases
- * @property string $MajorEngineVersion
- * @property string $DatabaseInstallationFilesS3BucketName
- * @property string $DatabaseInstallationFilesS3Prefix
- * @property string $DBEngineVersionArn
- * @property string $KMSKeyId
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property list<Shapes\Tag> $TagList
- * @property bool $SupportsBabelfish
- * @property string $CustomDBEngineVersionManifest
- * @property bool $SupportsLimitlessDatabase
- * @property bool $SupportsCertificateRotationWithoutRestart
- * @property list<string> $SupportedCACertificateIdentifiers
- * @property bool $SupportsLocalWriteForwarding
- * @property bool $SupportsIntegrations
- * @property Shapes\ServerlessV2FeaturesSupport $ServerlessV2FeaturesSupport
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property string|null $DBParameterGroupFamily
+ * @property string|null $DBEngineDescription
+ * @property string|null $DBEngineVersionDescription
+ * @property Shapes\CharacterSet|null $DefaultCharacterSet
+ * @property Shapes\CustomDBEngineVersionAMI|null $Image
+ * @property string|null $DBEngineMediaType
+ * @property list<Shapes\CharacterSet>|null $SupportedCharacterSets
+ * @property list<Shapes\CharacterSet>|null $SupportedNcharCharacterSets
+ * @property list<Shapes\UpgradeTarget>|null $ValidUpgradeTarget
+ * @property list<Shapes\Timezone>|null $SupportedTimezones
+ * @property list<string>|null $ExportableLogTypes
+ * @property bool|null $SupportsLogExportsToCloudwatchLogs
+ * @property bool|null $SupportsReadReplica
+ * @property list<string>|null $SupportedEngineModes
+ * @property list<string>|null $SupportedFeatureNames
+ * @property string|null $Status
+ * @property bool|null $SupportsParallelQuery
+ * @property bool|null $SupportsGlobalDatabases
+ * @property string|null $MajorEngineVersion
+ * @property string|null $DatabaseInstallationFilesS3BucketName
+ * @property string|null $DatabaseInstallationFilesS3Prefix
+ * @property string|null $DBEngineVersionArn
+ * @property string|null $KMSKeyId
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property list<Shapes\Tag>|null $TagList
+ * @property bool|null $SupportsBabelfish
+ * @property string|null $CustomDBEngineVersionManifest
+ * @property bool|null $SupportsLimitlessDatabase
+ * @property bool|null $SupportsCertificateRotationWithoutRestart
+ * @property list<string>|null $SupportedCACertificateIdentifiers
+ * @property bool|null $SupportsLocalWriteForwarding
+ * @property bool|null $SupportsIntegrations
+ * @property Shapes\ServerlessV2FeaturesSupport|null $ServerlessV2FeaturesSupport
  */
 class DeleteCustomDBEngineVersionResponse extends Response
 {

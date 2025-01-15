@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\PipelineIdName> $pipelineIdList
- * @property string $marker
- * @property bool $hasMoreResults
+ * @property string|null $marker
+ * @property bool|null $hasMoreResults
  */
 class ListPipelinesResponse extends Response
 {

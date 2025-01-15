@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $appId
- * @property string $description
+ * @property string|null $description
  */
 class StartOnDemandAppReplicationRequest extends Request
 {
     /**
      * @param array{
      *     appId: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

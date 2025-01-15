@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TrafficMirrorSessionId
- * @property string $TrafficMirrorTargetId
- * @property string $TrafficMirrorFilterId
- * @property int $PacketLength
- * @property int $SessionNumber
- * @property int $VirtualNetworkId
- * @property string $Description
- * @property list<'packet-length'|'description'|'virtual-network-id'> $RemoveFields
- * @property bool $DryRun
+ * @property string|null $TrafficMirrorTargetId
+ * @property string|null $TrafficMirrorFilterId
+ * @property int|null $PacketLength
+ * @property int|null $SessionNumber
+ * @property int|null $VirtualNetworkId
+ * @property string|null $Description
+ * @property list<'packet-length'|'description'|'virtual-network-id'>|null $RemoveFields
+ * @property bool|null $DryRun
  */
 class ModifyTrafficMirrorSessionRequest extends Request
 {
     /**
      * @param array{
      *     TrafficMirrorSessionId: string,
-     *     TrafficMirrorTargetId?: string,
-     *     TrafficMirrorFilterId?: string,
-     *     PacketLength?: int,
-     *     SessionNumber?: int,
-     *     VirtualNetworkId?: int,
-     *     Description?: string,
-     *     RemoveFields?: list<'packet-length'|'description'|'virtual-network-id'>,
-     *     DryRun?: bool
+     *     TrafficMirrorTargetId?: string|null,
+     *     TrafficMirrorFilterId?: string|null,
+     *     PacketLength?: int|null,
+     *     SessionNumber?: int|null,
+     *     VirtualNetworkId?: int|null,
+     *     Description?: string|null,
+     *     RemoveFields?: list<'packet-length'|'description'|'virtual-network-id'>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Personalize\ListRecipes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property 'SERVICE' $recipeProvider
- * @property string $nextToken
- * @property int<1, 100> $maxResults
- * @property 'ECOMMERCE'|'VIDEO_ON_DEMAND' $domain
+ * @property 'SERVICE'|null $recipeProvider
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
+ * @property 'ECOMMERCE'|'VIDEO_ON_DEMAND'|null $domain
  */
 class ListRecipesRequest extends Request
 {
     /**
      * @param array{
-     *     recipeProvider?: 'SERVICE',
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>,
-     *     domain?: 'ECOMMERCE'|'VIDEO_ON_DEMAND'
+     *     recipeProvider?: 'SERVICE'|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null,
+     *     domain?: 'ECOMMERCE'|'VIDEO_ON_DEMAND'|null
      * } $args
      */
     public function __construct(array $args = [])

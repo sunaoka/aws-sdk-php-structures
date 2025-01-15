@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $channelArn
- * @property string $encoderConfigurationArn
+ * @property string|null $encoderConfigurationArn
  */
 class ChannelDestinationConfiguration extends Shape
 {
     /**
      * @param array{
      *     channelArn: string,
-     *     encoderConfigurationArn?: string
+     *     encoderConfigurationArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $FunctionName
  * @property string $Name
- * @property string $FunctionVersion
- * @property string $Description
- * @property Shapes\AliasRoutingConfiguration $RoutingConfig
- * @property string $RevisionId
+ * @property string|null $FunctionVersion
+ * @property string|null $Description
+ * @property Shapes\AliasRoutingConfiguration|null $RoutingConfig
+ * @property string|null $RevisionId
  */
 class UpdateAliasRequest extends Request
 {
@@ -18,10 +18,10 @@ class UpdateAliasRequest extends Request
      * @param array{
      *     FunctionName: string,
      *     Name: string,
-     *     FunctionVersion?: string,
-     *     Description?: string,
-     *     RoutingConfig?: Shapes\AliasRoutingConfiguration,
-     *     RevisionId?: string
+     *     FunctionVersion?: string|null,
+     *     Description?: string|null,
+     *     RoutingConfig?: Shapes\AliasRoutingConfiguration|null,
+     *     RevisionId?: string|null
      * } $args
      */
     public function __construct(array $args)

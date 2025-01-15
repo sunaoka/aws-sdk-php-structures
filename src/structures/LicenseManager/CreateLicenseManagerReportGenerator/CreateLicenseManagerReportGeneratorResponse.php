@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\LicenseManager\CreateLicenseManagerReportGenera
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LicenseManagerReportGeneratorArn
+ * @property string|null $LicenseManagerReportGeneratorArn
  */
 class CreateLicenseManagerReportGeneratorResponse extends Response
 {

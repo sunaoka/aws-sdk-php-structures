@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $systemInstanceId
- * @property string $flowExecutionId
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $endTime
- * @property string $nextToken
- * @property int<1, 250> $maxResults
+ * @property string|null $flowExecutionId
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
  */
 class SearchFlowExecutionsRequest extends Request
 {
     /**
      * @param array{
      *     systemInstanceId: string,
-     *     flowExecutionId?: string,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>
+     *     flowExecutionId?: string|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null
      * } $args
      */
     public function __construct(array $args)

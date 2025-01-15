@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchain\GetAccessor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property 'BILLING_TOKEN' $Type
- * @property string $BillingToken
- * @property 'AVAILABLE'|'PENDING_DELETION'|'DELETED' $Status
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property string $Arn
- * @property array<string, string> $Tags
- * @property 'ETHEREUM_GOERLI'|'ETHEREUM_MAINNET'|'ETHEREUM_MAINNET_AND_GOERLI'|'POLYGON_MAINNET'|'POLYGON_MUMBAI' $NetworkType
+ * @property string|null $Id
+ * @property 'BILLING_TOKEN'|null $Type
+ * @property string|null $BillingToken
+ * @property 'AVAILABLE'|'PENDING_DELETION'|'DELETED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property string|null $Arn
+ * @property array<string, string>|null $Tags
+ * @property 'ETHEREUM_GOERLI'|'ETHEREUM_MAINNET'|'ETHEREUM_MAINNET_AND_GOERLI'|'POLYGON_MAINNET'|'POLYGON_MUMBAI'|null $NetworkType
  */
 class Accessor extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Type?: 'BILLING_TOKEN',
-     *     BillingToken?: string,
-     *     Status?: 'AVAILABLE'|'PENDING_DELETION'|'DELETED',
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     Arn?: string,
-     *     Tags?: array<string, string>,
-     *     NetworkType?: 'ETHEREUM_GOERLI'|'ETHEREUM_MAINNET'|'ETHEREUM_MAINNET_AND_GOERLI'|'POLYGON_MAINNET'|'POLYGON_MUMBAI'
+     *     Id?: string|null,
+     *     Type?: 'BILLING_TOKEN'|null,
+     *     BillingToken?: string|null,
+     *     Status?: 'AVAILABLE'|'PENDING_DELETION'|'DELETED'|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     Arn?: string|null,
+     *     Tags?: array<string, string>|null,
+     *     NetworkType?: 'ETHEREUM_GOERLI'|'ETHEREUM_MAINNET'|'ETHEREUM_MAINNET_AND_GOERLI'|'POLYGON_MAINNET'|'POLYGON_MUMBAI'|null
      * } $args
      */
     public function __construct(array $args = [])

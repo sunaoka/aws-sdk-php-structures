@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ModelPackageGroupName
- * @property string $ModelPackageGroupDescription
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ModelPackageGroupDescription
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateModelPackageGroupRequest extends Request
 {
     /**
      * @param array{
      *     ModelPackageGroupName: string,
-     *     ModelPackageGroupDescription?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     ModelPackageGroupDescription?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ACMPCA\ListCertificateAuthorities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OtherName $OtherName
- * @property string $Rfc822Name
- * @property string $DnsName
- * @property ASN1Subject $DirectoryName
- * @property EdiPartyName $EdiPartyName
- * @property string $UniformResourceIdentifier
- * @property string $IpAddress
- * @property string $RegisteredId
+ * @property OtherName|null $OtherName
+ * @property string|null $Rfc822Name
+ * @property string|null $DnsName
+ * @property ASN1Subject|null $DirectoryName
+ * @property EdiPartyName|null $EdiPartyName
+ * @property string|null $UniformResourceIdentifier
+ * @property string|null $IpAddress
+ * @property string|null $RegisteredId
  */
 class GeneralName extends Shape
 {
     /**
      * @param array{
-     *     OtherName?: OtherName,
-     *     Rfc822Name?: string,
-     *     DnsName?: string,
-     *     DirectoryName?: ASN1Subject,
-     *     EdiPartyName?: EdiPartyName,
-     *     UniformResourceIdentifier?: string,
-     *     IpAddress?: string,
-     *     RegisteredId?: string
+     *     OtherName?: OtherName|null,
+     *     Rfc822Name?: string|null,
+     *     DnsName?: string|null,
+     *     DirectoryName?: ASN1Subject|null,
+     *     EdiPartyName?: EdiPartyName|null,
+     *     UniformResourceIdentifier?: string|null,
+     *     IpAddress?: string|null,
+     *     RegisteredId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

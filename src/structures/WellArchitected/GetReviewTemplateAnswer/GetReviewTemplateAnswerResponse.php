@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\WellArchitected\GetReviewTemplateAnswer;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $TemplateArn
- * @property string $LensAlias
- * @property Shapes\ReviewTemplateAnswer $Answer
+ * @property string|null $TemplateArn
+ * @property string|null $LensAlias
+ * @property Shapes\ReviewTemplateAnswer|null $Answer
  */
 class GetReviewTemplateAnswerResponse extends Response
 {

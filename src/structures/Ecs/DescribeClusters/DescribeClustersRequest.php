@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeClusters;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $clusters
- * @property list<'ATTACHMENTS'|'CONFIGURATIONS'|'SETTINGS'|'STATISTICS'|'TAGS'> $include
+ * @property list<string>|null $clusters
+ * @property list<'ATTACHMENTS'|'CONFIGURATIONS'|'SETTINGS'|'STATISTICS'|'TAGS'>|null $include
  */
 class DescribeClustersRequest extends Request
 {
     /**
      * @param array{
-     *     clusters?: list<string>,
-     *     include?: list<'ATTACHMENTS'|'CONFIGURATIONS'|'SETTINGS'|'STATISTICS'|'TAGS'>
+     *     clusters?: list<string>|null,
+     *     include?: list<'ATTACHMENTS'|'CONFIGURATIONS'|'SETTINGS'|'STATISTICS'|'TAGS'>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $PanSequenceNumber
  * @property string $ApplicationTransactionCounter
  * @property string $AuthorizationRequestKeyIdentifier
- * @property CurrentPinAttributes $CurrentPinAttributes
+ * @property CurrentPinAttributes|null $CurrentPinAttributes
  */
 class VisaAttributes extends Shape
 {
@@ -21,7 +21,7 @@ class VisaAttributes extends Shape
      *     PanSequenceNumber: string,
      *     ApplicationTransactionCounter: string,
      *     AuthorizationRequestKeyIdentifier: string,
-     *     CurrentPinAttributes?: CurrentPinAttributes
+     *     CurrentPinAttributes?: CurrentPinAttributes|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\DescribeApplicationVersion\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<InputDescription> $InputDescriptions
- * @property list<OutputDescription> $OutputDescriptions
- * @property list<ReferenceDataSourceDescription> $ReferenceDataSourceDescriptions
+ * @property list<InputDescription>|null $InputDescriptions
+ * @property list<OutputDescription>|null $OutputDescriptions
+ * @property list<ReferenceDataSourceDescription>|null $ReferenceDataSourceDescriptions
  */
 class SqlApplicationConfigurationDescription extends Shape
 {
     /**
      * @param array{
-     *     InputDescriptions?: list<InputDescription>,
-     *     OutputDescriptions?: list<OutputDescription>,
-     *     ReferenceDataSourceDescriptions?: list<ReferenceDataSourceDescription>
+     *     InputDescriptions?: list<InputDescription>|null,
+     *     OutputDescriptions?: list<OutputDescription>|null,
+     *     ReferenceDataSourceDescriptions?: list<ReferenceDataSourceDescription>|null
      * } $args
      */
     public function __construct(array $args = [])

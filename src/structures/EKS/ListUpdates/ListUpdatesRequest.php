@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $nodegroupName
- * @property string $addonName
- * @property string $nextToken
- * @property int<1, 100> $maxResults
+ * @property string|null $nodegroupName
+ * @property string|null $addonName
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
  */
 class ListUpdatesRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     nodegroupName?: string,
-     *     addonName?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>
+     *     nodegroupName?: string|null,
+     *     addonName?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args)

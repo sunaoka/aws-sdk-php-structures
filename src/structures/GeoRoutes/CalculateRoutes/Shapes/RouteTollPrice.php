@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Currency
  * @property bool $Estimate
- * @property int<0, 4294967295> $PerDuration
+ * @property int<0, 4294967295>|null $PerDuration
  * @property bool $Range
- * @property RouteTollPriceValueRange $RangeValue
+ * @property RouteTollPriceValueRange|null $RangeValue
  * @property double $Value
  */
 class RouteTollPrice extends Shape
@@ -18,9 +18,9 @@ class RouteTollPrice extends Shape
      * @param array{
      *     Currency: string,
      *     Estimate: bool,
-     *     PerDuration?: int<0, 4294967295>,
+     *     PerDuration?: int<0, 4294967295>|null,
      *     Range: bool,
-     *     RangeValue?: RouteTollPriceValueRange,
+     *     RangeValue?: RouteTollPriceValueRange|null,
      *     Value: double
      * } $args
      */

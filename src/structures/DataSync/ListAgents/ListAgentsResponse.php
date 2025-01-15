@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DataSync\ListAgents;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AgentListEntry> $Agents
- * @property string $NextToken
+ * @property list<Shapes\AgentListEntry>|null $Agents
+ * @property string|null $NextToken
  */
 class ListAgentsResponse extends Response
 {

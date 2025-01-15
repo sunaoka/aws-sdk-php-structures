@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CollectionName
- * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement' $PricingPlan
- * @property string $PricingPlanDataSource
- * @property string $Description
+ * @property 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null $PricingPlan
+ * @property string|null $PricingPlanDataSource
+ * @property string|null $Description
  */
 class UpdateGeofenceCollectionRequest extends Request
 {
     /**
      * @param array{
      *     CollectionName: string,
-     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement',
-     *     PricingPlanDataSource?: string,
-     *     Description?: string
+     *     PricingPlan?: 'RequestBasedUsage'|'MobileAssetTracking'|'MobileAssetManagement'|null,
+     *     PricingPlanDataSource?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

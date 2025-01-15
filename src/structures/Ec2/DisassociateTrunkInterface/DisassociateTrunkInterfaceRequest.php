@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AssociationId
- * @property string $ClientToken
- * @property bool $DryRun
+ * @property string|null $ClientToken
+ * @property bool|null $DryRun
  */
 class DisassociateTrunkInterfaceRequest extends Request
 {
     /**
      * @param array{
      *     AssociationId: string,
-     *     ClientToken?: string,
-     *     DryRun?: bool
+     *     ClientToken?: string|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

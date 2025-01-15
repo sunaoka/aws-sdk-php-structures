@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ApiGatewayManagementApi\GetConnection;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Aws\Api\DateTimeResult $ConnectedAt
- * @property Shapes\Identity $Identity
- * @property \Aws\Api\DateTimeResult $LastActiveAt
+ * @property \Aws\Api\DateTimeResult|null $ConnectedAt
+ * @property Shapes\Identity|null $Identity
+ * @property \Aws\Api\DateTimeResult|null $LastActiveAt
  */
 class GetConnectionResponse extends Response
 {

@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $EndpointArn
  * @property string $EndpointName
  * @property string $VariantName
- * @property 'InService'|'Creating'|'Updating'|'Failed'|'Deleting' $InferenceComponentStatus
+ * @property 'InService'|'Creating'|'Updating'|'Failed'|'Deleting'|null $InferenceComponentStatus
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
  */
 class InferenceComponentSummary extends Shape
@@ -24,7 +24,7 @@ class InferenceComponentSummary extends Shape
      *     EndpointArn: string,
      *     EndpointName: string,
      *     VariantName: string,
-     *     InferenceComponentStatus?: 'InService'|'Creating'|'Updating'|'Failed'|'Deleting',
+     *     InferenceComponentStatus?: 'InService'|'Creating'|'Updating'|'Failed'|'Deleting'|null,
      *     LastModifiedTime: \Aws\Api\DateTimeResult
      * } $args
      */

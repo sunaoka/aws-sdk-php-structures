@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ssm\ResetServiceSetting\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SettingId
- * @property string $SettingValue
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
- * @property string $LastModifiedUser
- * @property string $ARN
- * @property string $Status
+ * @property string|null $SettingId
+ * @property string|null $SettingValue
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
+ * @property string|null $LastModifiedUser
+ * @property string|null $ARN
+ * @property string|null $Status
  */
 class ServiceSetting extends Shape
 {
     /**
      * @param array{
-     *     SettingId?: string,
-     *     SettingValue?: string,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     LastModifiedUser?: string,
-     *     ARN?: string,
-     *     Status?: string
+     *     SettingId?: string|null,
+     *     SettingValue?: string|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedUser?: string|null,
+     *     ARN?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $SourceId
  * @property string $DestinationId
- * @property string $Subtype
+ * @property string|null $Subtype
  * @property Shapes\ChatEvent $Event
- * @property Shapes\NewSessionDetails $NewSessionDetails
+ * @property Shapes\NewSessionDetails|null $NewSessionDetails
  */
 class SendChatIntegrationEventRequest extends Request
 {
@@ -17,9 +17,9 @@ class SendChatIntegrationEventRequest extends Request
      * @param array{
      *     SourceId: string,
      *     DestinationId: string,
-     *     Subtype?: string,
+     *     Subtype?: string|null,
      *     Event: Shapes\ChatEvent,
-     *     NewSessionDetails?: Shapes\NewSessionDetails
+     *     NewSessionDetails?: Shapes\NewSessionDetails|null
      * } $args
      */
     public function __construct(array $args)

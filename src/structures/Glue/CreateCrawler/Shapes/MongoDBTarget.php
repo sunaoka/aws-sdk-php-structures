@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Glue\CreateCrawler\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConnectionName
- * @property string $Path
- * @property bool $ScanAll
+ * @property string|null $ConnectionName
+ * @property string|null $Path
+ * @property bool|null $ScanAll
  */
 class MongoDBTarget extends Shape
 {
     /**
      * @param array{
-     *     ConnectionName?: string,
-     *     Path?: string,
-     *     ScanAll?: bool
+     *     ConnectionName?: string|null,
+     *     Path?: string|null,
+     *     ScanAll?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

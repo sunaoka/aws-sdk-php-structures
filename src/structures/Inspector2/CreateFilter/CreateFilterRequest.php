@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'NONE'|'SUPPRESS' $action
- * @property string $description
+ * @property string|null $description
  * @property Shapes\FilterCriteria $filterCriteria
  * @property string $name
- * @property string $reason
- * @property array<string, string> $tags
+ * @property string|null $reason
+ * @property array<string, string>|null $tags
  */
 class CreateFilterRequest extends Request
 {
     /**
      * @param array{
      *     action: 'NONE'|'SUPPRESS',
-     *     description?: string,
+     *     description?: string|null,
      *     filterCriteria: Shapes\FilterCriteria,
      *     name: string,
-     *     reason?: string,
-     *     tags?: array<string, string>
+     *     reason?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

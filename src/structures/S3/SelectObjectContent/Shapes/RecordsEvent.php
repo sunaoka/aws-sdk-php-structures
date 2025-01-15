@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\S3\SelectObjectContent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Psr\Http\Message\StreamInterface $Payload
+ * @property \Psr\Http\Message\StreamInterface|null $Payload
  */
 class RecordsEvent extends Shape
 {
     /**
-     * @param array{Payload?: \Psr\Http\Message\StreamInterface} $args
+     * @param array{Payload?: \Psr\Http\Message\StreamInterface|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $lifecyclePolicyArn
- * @property string $description
- * @property 'DISABLED'|'ENABLED' $status
+ * @property string|null $description
+ * @property 'DISABLED'|'ENABLED'|null $status
  * @property string $executionRole
  * @property 'AMI_IMAGE'|'CONTAINER_IMAGE' $resourceType
  * @property list<Shapes\LifecyclePolicyDetail> $policyDetails
@@ -19,8 +19,8 @@ class UpdateLifecyclePolicyRequest extends Request
     /**
      * @param array{
      *     lifecyclePolicyArn: string,
-     *     description?: string,
-     *     status?: 'DISABLED'|'ENABLED',
+     *     description?: string|null,
+     *     status?: 'DISABLED'|'ENABLED'|null,
      *     executionRole: string,
      *     resourceType: 'AMI_IMAGE'|'CONTAINER_IMAGE',
      *     policyDetails: list<Shapes\LifecyclePolicyDetail>,

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property array<string, list<Shapes\ConnectorEntity>> $connectorEntityMap
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListConnectorEntitiesResponse extends Response
 {

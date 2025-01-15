@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Ecs\ListTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $cluster
- * @property string $containerInstance
- * @property string $family
- * @property string $nextToken
- * @property int $maxResults
- * @property string $startedBy
- * @property string $serviceName
- * @property 'RUNNING'|'PENDING'|'STOPPED' $desiredStatus
- * @property 'EC2'|'FARGATE'|'EXTERNAL' $launchType
+ * @property string|null $cluster
+ * @property string|null $containerInstance
+ * @property string|null $family
+ * @property string|null $nextToken
+ * @property int|null $maxResults
+ * @property string|null $startedBy
+ * @property string|null $serviceName
+ * @property 'RUNNING'|'PENDING'|'STOPPED'|null $desiredStatus
+ * @property 'EC2'|'FARGATE'|'EXTERNAL'|null $launchType
  */
 class ListTasksRequest extends Request
 {
     /**
      * @param array{
-     *     cluster?: string,
-     *     containerInstance?: string,
-     *     family?: string,
-     *     nextToken?: string,
-     *     maxResults?: int,
-     *     startedBy?: string,
-     *     serviceName?: string,
-     *     desiredStatus?: 'RUNNING'|'PENDING'|'STOPPED',
-     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'
+     *     cluster?: string|null,
+     *     containerInstance?: string|null,
+     *     family?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int|null,
+     *     startedBy?: string|null,
+     *     serviceName?: string|null,
+     *     desiredStatus?: 'RUNNING'|'PENDING'|'STOPPED'|null,
+     *     launchType?: 'EC2'|'FARGATE'|'EXTERNAL'|null
      * } $args
      */
     public function __construct(array $args = [])

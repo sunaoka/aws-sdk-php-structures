@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\ListAssetRelationships\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $parentAssetId
- * @property string $childAssetId
+ * @property string|null $parentAssetId
+ * @property string|null $childAssetId
  */
 class AssetHierarchyInfo extends Shape
 {
     /**
      * @param array{
-     *     parentAssetId?: string,
-     *     childAssetId?: string
+     *     parentAssetId?: string|null,
+     *     childAssetId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

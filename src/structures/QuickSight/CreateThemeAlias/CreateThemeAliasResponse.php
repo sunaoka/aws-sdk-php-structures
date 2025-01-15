@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateThemeAlias;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ThemeAlias $ThemeAlias
- * @property int $Status
- * @property string $RequestId
+ * @property Shapes\ThemeAlias|null $ThemeAlias
+ * @property int|null $Status
+ * @property string|null $RequestId
  */
 class CreateThemeAliasResponse extends Response
 {

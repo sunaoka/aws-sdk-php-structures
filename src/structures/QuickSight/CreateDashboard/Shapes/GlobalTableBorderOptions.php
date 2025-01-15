@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\CreateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TableBorderOptions $UniformBorder
- * @property TableSideBorderOptions $SideSpecificBorder
+ * @property TableBorderOptions|null $UniformBorder
+ * @property TableSideBorderOptions|null $SideSpecificBorder
  */
 class GlobalTableBorderOptions extends Shape
 {
     /**
      * @param array{
-     *     UniformBorder?: TableBorderOptions,
-     *     SideSpecificBorder?: TableSideBorderOptions
+     *     UniformBorder?: TableBorderOptions|null,
+     *     SideSpecificBorder?: TableSideBorderOptions|null
      * } $args
      */
     public function __construct(array $args = [])

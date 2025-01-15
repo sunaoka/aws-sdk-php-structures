@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $RoleArn
  * @property string $RoleSessionName
- * @property list<Shapes\PolicyDescriptorType> $PolicyArns
- * @property string $Policy
- * @property int<900, 43200> $DurationSeconds
- * @property list<Shapes\Tag> $Tags
- * @property list<string> $TransitiveTagKeys
- * @property string $ExternalId
- * @property string $SerialNumber
- * @property string $TokenCode
- * @property string $SourceIdentity
- * @property list<Shapes\ProvidedContext> $ProvidedContexts
+ * @property list<Shapes\PolicyDescriptorType>|null $PolicyArns
+ * @property string|null $Policy
+ * @property int<900, 43200>|null $DurationSeconds
+ * @property list<Shapes\Tag>|null $Tags
+ * @property list<string>|null $TransitiveTagKeys
+ * @property string|null $ExternalId
+ * @property string|null $SerialNumber
+ * @property string|null $TokenCode
+ * @property string|null $SourceIdentity
+ * @property list<Shapes\ProvidedContext>|null $ProvidedContexts
  */
 class AssumeRoleRequest extends Request
 {
@@ -24,16 +24,16 @@ class AssumeRoleRequest extends Request
      * @param array{
      *     RoleArn: string,
      *     RoleSessionName: string,
-     *     PolicyArns?: list<Shapes\PolicyDescriptorType>,
-     *     Policy?: string,
-     *     DurationSeconds?: int<900, 43200>,
-     *     Tags?: list<Shapes\Tag>,
-     *     TransitiveTagKeys?: list<string>,
-     *     ExternalId?: string,
-     *     SerialNumber?: string,
-     *     TokenCode?: string,
-     *     SourceIdentity?: string,
-     *     ProvidedContexts?: list<Shapes\ProvidedContext>
+     *     PolicyArns?: list<Shapes\PolicyDescriptorType>|null,
+     *     Policy?: string|null,
+     *     DurationSeconds?: int<900, 43200>|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     TransitiveTagKeys?: list<string>|null,
+     *     ExternalId?: string|null,
+     *     SerialNumber?: string|null,
+     *     TokenCode?: string|null,
+     *     SourceIdentity?: string|null,
+     *     ProvidedContexts?: list<Shapes\ProvidedContext>|null
      * } $args
      */
     public function __construct(array $args)

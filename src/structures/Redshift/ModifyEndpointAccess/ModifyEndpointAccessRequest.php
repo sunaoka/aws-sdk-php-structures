@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $EndpointName
- * @property list<string> $VpcSecurityGroupIds
+ * @property list<string>|null $VpcSecurityGroupIds
  */
 class ModifyEndpointAccessRequest extends Request
 {
     /**
      * @param array{
      *     EndpointName: string,
-     *     VpcSecurityGroupIds?: list<string>
+     *     VpcSecurityGroupIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

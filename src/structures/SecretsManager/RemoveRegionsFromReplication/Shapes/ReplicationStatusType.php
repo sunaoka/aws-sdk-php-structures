@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecretsManager\RemoveRegionsFromReplication\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Region
- * @property string $KmsKeyId
- * @property 'InSync'|'Failed'|'InProgress' $Status
- * @property string $StatusMessage
- * @property \Aws\Api\DateTimeResult $LastAccessedDate
+ * @property string|null $Region
+ * @property string|null $KmsKeyId
+ * @property 'InSync'|'Failed'|'InProgress'|null $Status
+ * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $LastAccessedDate
  */
 class ReplicationStatusType extends Shape
 {
     /**
      * @param array{
-     *     Region?: string,
-     *     KmsKeyId?: string,
-     *     Status?: 'InSync'|'Failed'|'InProgress',
-     *     StatusMessage?: string,
-     *     LastAccessedDate?: \Aws\Api\DateTimeResult
+     *     Region?: string|null,
+     *     KmsKeyId?: string|null,
+     *     Status?: 'InSync'|'Failed'|'InProgress'|null,
+     *     StatusMessage?: string|null,
+     *     LastAccessedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

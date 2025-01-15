@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ListSolFunctionPackageInfo> $functionPackages
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListSolFunctionPackagesResponse extends Response
 {

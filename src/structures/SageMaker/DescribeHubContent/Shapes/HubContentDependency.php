@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeHubContent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DependencyOriginPath
- * @property string $DependencyCopyPath
+ * @property string|null $DependencyOriginPath
+ * @property string|null $DependencyCopyPath
  */
 class HubContentDependency extends Shape
 {
     /**
      * @param array{
-     *     DependencyOriginPath?: string,
-     *     DependencyCopyPath?: string
+     *     DependencyOriginPath?: string|null,
+     *     DependencyCopyPath?: string|null
      * } $args
      */
     public function __construct(array $args = [])

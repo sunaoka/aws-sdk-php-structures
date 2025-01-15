@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\HostedZone $HostedZone
- * @property Shapes\DelegationSet $DelegationSet
- * @property list<Shapes\VPC> $VPCs
+ * @property Shapes\DelegationSet|null $DelegationSet
+ * @property list<Shapes\VPC>|null $VPCs
  */
 class GetHostedZoneResponse extends Response
 {

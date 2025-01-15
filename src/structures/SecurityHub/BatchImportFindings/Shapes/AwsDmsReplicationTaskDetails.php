@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CdcStartPosition
- * @property string $CdcStartTime
- * @property string $CdcStopPosition
- * @property string $MigrationType
- * @property string $Id
- * @property string $ResourceIdentifier
- * @property string $ReplicationInstanceArn
- * @property string $ReplicationTaskIdentifier
- * @property string $ReplicationTaskSettings
- * @property string $SourceEndpointArn
- * @property string $TableMappings
- * @property string $TargetEndpointArn
- * @property string $TaskData
+ * @property string|null $CdcStartPosition
+ * @property string|null $CdcStartTime
+ * @property string|null $CdcStopPosition
+ * @property string|null $MigrationType
+ * @property string|null $Id
+ * @property string|null $ResourceIdentifier
+ * @property string|null $ReplicationInstanceArn
+ * @property string|null $ReplicationTaskIdentifier
+ * @property string|null $ReplicationTaskSettings
+ * @property string|null $SourceEndpointArn
+ * @property string|null $TableMappings
+ * @property string|null $TargetEndpointArn
+ * @property string|null $TaskData
  */
 class AwsDmsReplicationTaskDetails extends Shape
 {
     /**
      * @param array{
-     *     CdcStartPosition?: string,
-     *     CdcStartTime?: string,
-     *     CdcStopPosition?: string,
-     *     MigrationType?: string,
-     *     Id?: string,
-     *     ResourceIdentifier?: string,
-     *     ReplicationInstanceArn?: string,
-     *     ReplicationTaskIdentifier?: string,
-     *     ReplicationTaskSettings?: string,
-     *     SourceEndpointArn?: string,
-     *     TableMappings?: string,
-     *     TargetEndpointArn?: string,
-     *     TaskData?: string
+     *     CdcStartPosition?: string|null,
+     *     CdcStartTime?: string|null,
+     *     CdcStopPosition?: string|null,
+     *     MigrationType?: string|null,
+     *     Id?: string|null,
+     *     ResourceIdentifier?: string|null,
+     *     ReplicationInstanceArn?: string|null,
+     *     ReplicationTaskIdentifier?: string|null,
+     *     ReplicationTaskSettings?: string|null,
+     *     SourceEndpointArn?: string|null,
+     *     TableMappings?: string|null,
+     *     TargetEndpointArn?: string|null,
+     *     TaskData?: string|null
      * } $args
      */
     public function __construct(array $args = [])

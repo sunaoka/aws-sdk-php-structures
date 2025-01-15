@@ -7,11 +7,11 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DomainName
  * @property int<1, 1098> $DefaultExpirationDays
- * @property string $DefaultEncryptionKey
- * @property string $DeadLetterQueueUrl
- * @property Shapes\MatchingRequest $Matching
- * @property Shapes\RuleBasedMatchingRequest $RuleBasedMatching
- * @property array<string, string> $Tags
+ * @property string|null $DefaultEncryptionKey
+ * @property string|null $DeadLetterQueueUrl
+ * @property Shapes\MatchingRequest|null $Matching
+ * @property Shapes\RuleBasedMatchingRequest|null $RuleBasedMatching
+ * @property array<string, string>|null $Tags
  */
 class CreateDomainRequest extends Request
 {
@@ -19,11 +19,11 @@ class CreateDomainRequest extends Request
      * @param array{
      *     DomainName: string,
      *     DefaultExpirationDays: int<1, 1098>,
-     *     DefaultEncryptionKey?: string,
-     *     DeadLetterQueueUrl?: string,
-     *     Matching?: Shapes\MatchingRequest,
-     *     RuleBasedMatching?: Shapes\RuleBasedMatchingRequest,
-     *     Tags?: array<string, string>
+     *     DefaultEncryptionKey?: string|null,
+     *     DeadLetterQueueUrl?: string|null,
+     *     Matching?: Shapes\MatchingRequest|null,
+     *     RuleBasedMatching?: Shapes\RuleBasedMatchingRequest|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\MediaConnect\CreateFlow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $DataTransferSubscriberFeePercent
- * @property string $Description
- * @property Encryption $Encryption
- * @property 'ENABLED'|'DISABLED' $EntitlementStatus
- * @property string $Name
+ * @property int|null $DataTransferSubscriberFeePercent
+ * @property string|null $Description
+ * @property Encryption|null $Encryption
+ * @property 'ENABLED'|'DISABLED'|null $EntitlementStatus
+ * @property string|null $Name
  * @property list<string> $Subscribers
  */
 class GrantEntitlementRequest extends Shape
 {
     /**
      * @param array{
-     *     DataTransferSubscriberFeePercent?: int,
-     *     Description?: string,
-     *     Encryption?: Encryption,
-     *     EntitlementStatus?: 'ENABLED'|'DISABLED',
-     *     Name?: string,
+     *     DataTransferSubscriberFeePercent?: int|null,
+     *     Description?: string|null,
+     *     Encryption?: Encryption|null,
+     *     EntitlementStatus?: 'ENABLED'|'DISABLED'|null,
+     *     Name?: string|null,
      *     Subscribers: list<string>
      * } $args
      */

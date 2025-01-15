@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\StorageGateway\RemoveTagsFromResource;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ResourceARN
+ * @property string|null $ResourceARN
  */
 class RemoveTagsFromResourceResponse extends Response
 {

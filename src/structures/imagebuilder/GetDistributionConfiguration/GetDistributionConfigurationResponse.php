@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetDistributionConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $requestId
- * @property Shapes\DistributionConfiguration $distributionConfiguration
+ * @property string|null $requestId
+ * @property Shapes\DistributionConfiguration|null $distributionConfiguration
  */
 class GetDistributionConfigurationResponse extends Response
 {

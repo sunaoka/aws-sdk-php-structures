@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\UpdateUserPool\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AllowAdminCreateUserOnly
- * @property int<0, 365> $UnusedAccountValidityDays
- * @property MessageTemplateType $InviteMessageTemplate
+ * @property bool|null $AllowAdminCreateUserOnly
+ * @property int<0, 365>|null $UnusedAccountValidityDays
+ * @property MessageTemplateType|null $InviteMessageTemplate
  */
 class AdminCreateUserConfigType extends Shape
 {
     /**
      * @param array{
-     *     AllowAdminCreateUserOnly?: bool,
-     *     UnusedAccountValidityDays?: int<0, 365>,
-     *     InviteMessageTemplate?: MessageTemplateType
+     *     AllowAdminCreateUserOnly?: bool|null,
+     *     UnusedAccountValidityDays?: int<0, 365>|null,
+     *     InviteMessageTemplate?: MessageTemplateType|null
      * } $args
      */
     public function __construct(array $args = [])

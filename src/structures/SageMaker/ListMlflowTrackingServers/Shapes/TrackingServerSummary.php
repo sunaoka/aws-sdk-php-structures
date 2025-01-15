@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListMlflowTrackingServers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TrackingServerArn
- * @property string $TrackingServerName
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property 'Creating'|'Created'|'CreateFailed'|'Updating'|'Updated'|'UpdateFailed'|'Deleting'|'DeleteFailed'|'Stopping'|'Stopped'|'StopFailed'|'Starting'|'Started'|'StartFailed'|'MaintenanceInProgress'|'MaintenanceComplete'|'MaintenanceFailed' $TrackingServerStatus
- * @property 'Active'|'Inactive' $IsActive
- * @property string $MlflowVersion
+ * @property string|null $TrackingServerArn
+ * @property string|null $TrackingServerName
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property 'Creating'|'Created'|'CreateFailed'|'Updating'|'Updated'|'UpdateFailed'|'Deleting'|'DeleteFailed'|'Stopping'|'Stopped'|'StopFailed'|'Starting'|'Started'|'StartFailed'|'MaintenanceInProgress'|'MaintenanceComplete'|'MaintenanceFailed'|null $TrackingServerStatus
+ * @property 'Active'|'Inactive'|null $IsActive
+ * @property string|null $MlflowVersion
  */
 class TrackingServerSummary extends Shape
 {
     /**
      * @param array{
-     *     TrackingServerArn?: string,
-     *     TrackingServerName?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult,
-     *     TrackingServerStatus?: 'Creating'|'Created'|'CreateFailed'|'Updating'|'Updated'|'UpdateFailed'|'Deleting'|'DeleteFailed'|'Stopping'|'Stopped'|'StopFailed'|'Starting'|'Started'|'StartFailed'|'MaintenanceInProgress'|'MaintenanceComplete'|'MaintenanceFailed',
-     *     IsActive?: 'Active'|'Inactive',
-     *     MlflowVersion?: string
+     *     TrackingServerArn?: string|null,
+     *     TrackingServerName?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null,
+     *     TrackingServerStatus?: 'Creating'|'Created'|'CreateFailed'|'Updating'|'Updated'|'UpdateFailed'|'Deleting'|'DeleteFailed'|'Stopping'|'Stopped'|'StopFailed'|'Starting'|'Started'|'StartFailed'|'MaintenanceInProgress'|'MaintenanceComplete'|'MaintenanceFailed'|null,
+     *     IsActive?: 'Active'|'Inactive'|null,
+     *     MlflowVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

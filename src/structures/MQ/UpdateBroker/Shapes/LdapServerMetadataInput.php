@@ -7,15 +7,15 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<string> $Hosts
  * @property string $RoleBase
- * @property string $RoleName
+ * @property string|null $RoleName
  * @property string $RoleSearchMatching
- * @property bool $RoleSearchSubtree
+ * @property bool|null $RoleSearchSubtree
  * @property string $ServiceAccountPassword
  * @property string $ServiceAccountUsername
  * @property string $UserBase
- * @property string $UserRoleName
+ * @property string|null $UserRoleName
  * @property string $UserSearchMatching
- * @property bool $UserSearchSubtree
+ * @property bool|null $UserSearchSubtree
  */
 class LdapServerMetadataInput extends Shape
 {
@@ -23,15 +23,15 @@ class LdapServerMetadataInput extends Shape
      * @param array{
      *     Hosts: list<string>,
      *     RoleBase: string,
-     *     RoleName?: string,
+     *     RoleName?: string|null,
      *     RoleSearchMatching: string,
-     *     RoleSearchSubtree?: bool,
+     *     RoleSearchSubtree?: bool|null,
      *     ServiceAccountPassword: string,
      *     ServiceAccountUsername: string,
      *     UserBase: string,
-     *     UserRoleName?: string,
+     *     UserRoleName?: string|null,
      *     UserSearchMatching: string,
-     *     UserSearchSubtree?: bool
+     *     UserSearchSubtree?: bool|null
      * } $args
      */
     public function __construct(array $args)

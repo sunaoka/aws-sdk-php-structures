@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\ServerlessApplicationRepository\CreateCloudForm
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApplicationId
- * @property string $CreationTime
- * @property string $ExpirationTime
- * @property string $SemanticVersion
- * @property 'PREPARING'|'ACTIVE'|'EXPIRED' $Status
- * @property string $TemplateId
- * @property string $TemplateUrl
+ * @property string|null $ApplicationId
+ * @property string|null $CreationTime
+ * @property string|null $ExpirationTime
+ * @property string|null $SemanticVersion
+ * @property 'PREPARING'|'ACTIVE'|'EXPIRED'|null $Status
+ * @property string|null $TemplateId
+ * @property string|null $TemplateUrl
  */
 class CreateCloudFormationTemplateResponse extends Response
 {

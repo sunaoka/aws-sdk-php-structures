@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetECSServiceRecommendations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'PublicPricing'|'CostExplorerRightsizing'|'CostOptimizationHub' $source
+ * @property 'PublicPricing'|'CostExplorerRightsizing'|'CostOptimizationHub'|null $source
  */
 class ECSSavingsEstimationMode extends Shape
 {
     /**
-     * @param array{source?: 'PublicPricing'|'CostExplorerRightsizing'|'CostOptimizationHub'} $args
+     * @param array{source?: 'PublicPricing'|'CostExplorerRightsizing'|'CostOptimizationHub'|null} $args
      */
     public function __construct(array $args = [])
     {

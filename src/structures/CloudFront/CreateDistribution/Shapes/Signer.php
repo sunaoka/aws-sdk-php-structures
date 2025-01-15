@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudFront\CreateDistribution\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AwsAccountNumber
- * @property KeyPairIds $KeyPairIds
+ * @property string|null $AwsAccountNumber
+ * @property KeyPairIds|null $KeyPairIds
  */
 class Signer extends Shape
 {
     /**
      * @param array{
-     *     AwsAccountNumber?: string,
-     *     KeyPairIds?: KeyPairIds
+     *     AwsAccountNumber?: string|null,
+     *     KeyPairIds?: KeyPairIds|null
      * } $args
      */
     public function __construct(array $args = [])

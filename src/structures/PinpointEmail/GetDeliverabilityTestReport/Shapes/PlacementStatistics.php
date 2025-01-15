@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\PinpointEmail\GetDeliverabilityTestReport\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $InboxPercentage
- * @property double $SpamPercentage
- * @property double $MissingPercentage
- * @property double $SpfPercentage
- * @property double $DkimPercentage
+ * @property double|null $InboxPercentage
+ * @property double|null $SpamPercentage
+ * @property double|null $MissingPercentage
+ * @property double|null $SpfPercentage
+ * @property double|null $DkimPercentage
  */
 class PlacementStatistics extends Shape
 {
     /**
      * @param array{
-     *     InboxPercentage?: double,
-     *     SpamPercentage?: double,
-     *     MissingPercentage?: double,
-     *     SpfPercentage?: double,
-     *     DkimPercentage?: double
+     *     InboxPercentage?: double|null,
+     *     SpamPercentage?: double|null,
+     *     MissingPercentage?: double|null,
+     *     SpfPercentage?: double|null,
+     *     DkimPercentage?: double|null
      * } $args
      */
     public function __construct(array $args = [])

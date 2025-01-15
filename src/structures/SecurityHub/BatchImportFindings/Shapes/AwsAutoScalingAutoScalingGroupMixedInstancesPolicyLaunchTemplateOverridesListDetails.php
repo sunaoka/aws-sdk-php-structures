@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceType
- * @property string $WeightedCapacity
+ * @property string|null $InstanceType
+ * @property string|null $WeightedCapacity
  */
 class AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateOverridesListDetails extends Shape
 {
     /**
      * @param array{
-     *     InstanceType?: string,
-     *     WeightedCapacity?: string
+     *     InstanceType?: string|null,
+     *     WeightedCapacity?: string|null
      * } $args
      */
     public function __construct(array $args = [])

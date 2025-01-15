@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\SocialMessaging\GetLinkedWhatsAppBusinessAccoun
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\LinkedWhatsAppBusinessAccount $account
+ * @property Shapes\LinkedWhatsAppBusinessAccount|null $account
  */
 class GetLinkedWhatsAppBusinessAccountResponse extends Response
 {

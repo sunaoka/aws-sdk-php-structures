@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property string $EvaluationFormId
  * @property int<1, max> $EvaluationFormVersion
- * @property bool $CreateNewVersion
+ * @property bool|null $CreateNewVersion
  * @property string $Title
- * @property string $Description
+ * @property string|null $Description
  * @property list<Shapes\EvaluationFormItem> $Items
- * @property Shapes\EvaluationFormScoringStrategy $ScoringStrategy
- * @property string $ClientToken
+ * @property Shapes\EvaluationFormScoringStrategy|null $ScoringStrategy
+ * @property string|null $ClientToken
  */
 class UpdateEvaluationFormRequest extends Request
 {
@@ -22,12 +22,12 @@ class UpdateEvaluationFormRequest extends Request
      *     InstanceId: string,
      *     EvaluationFormId: string,
      *     EvaluationFormVersion: int<1, max>,
-     *     CreateNewVersion?: bool,
+     *     CreateNewVersion?: bool|null,
      *     Title: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Items: list<Shapes\EvaluationFormItem>,
-     *     ScoringStrategy?: Shapes\EvaluationFormScoringStrategy,
-     *     ClientToken?: string
+     *     ScoringStrategy?: Shapes\EvaluationFormScoringStrategy|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

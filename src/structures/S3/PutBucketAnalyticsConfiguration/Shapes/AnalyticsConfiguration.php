@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Id
- * @property AnalyticsFilter $Filter
+ * @property AnalyticsFilter|null $Filter
  * @property StorageClassAnalysis $StorageClassAnalysis
  */
 class AnalyticsConfiguration extends Shape
@@ -14,7 +14,7 @@ class AnalyticsConfiguration extends Shape
     /**
      * @param array{
      *     Id: string,
-     *     Filter?: AnalyticsFilter,
+     *     Filter?: AnalyticsFilter|null,
      *     StorageClassAnalysis: StorageClassAnalysis
      * } $args
      */

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsGuardDutyDetectorDataSourcesDetails $DataSources
- * @property list<AwsGuardDutyDetectorFeaturesDetails> $Features
- * @property string $FindingPublishingFrequency
- * @property string $ServiceRole
- * @property string $Status
+ * @property AwsGuardDutyDetectorDataSourcesDetails|null $DataSources
+ * @property list<AwsGuardDutyDetectorFeaturesDetails>|null $Features
+ * @property string|null $FindingPublishingFrequency
+ * @property string|null $ServiceRole
+ * @property string|null $Status
  */
 class AwsGuardDutyDetectorDetails extends Shape
 {
     /**
      * @param array{
-     *     DataSources?: AwsGuardDutyDetectorDataSourcesDetails,
-     *     Features?: list<AwsGuardDutyDetectorFeaturesDetails>,
-     *     FindingPublishingFrequency?: string,
-     *     ServiceRole?: string,
-     *     Status?: string
+     *     DataSources?: AwsGuardDutyDetectorDataSourcesDetails|null,
+     *     Features?: list<AwsGuardDutyDetectorFeaturesDetails>|null,
+     *     FindingPublishingFrequency?: string|null,
+     *     ServiceRole?: string|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

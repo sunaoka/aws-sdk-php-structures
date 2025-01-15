@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDataSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<\Aws\Api\DateTimeResult> $StaticValues
+ * @property list<\Aws\Api\DateTimeResult>|null $StaticValues
  */
 class DateTimeDatasetParameterDefaultValues extends Shape
 {
     /**
-     * @param array{StaticValues?: list<\Aws\Api\DateTimeResult>} $args
+     * @param array{StaticValues?: list<\Aws\Api\DateTimeResult>|null} $args
      */
     public function __construct(array $args = [])
     {

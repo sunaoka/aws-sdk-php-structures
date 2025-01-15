@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RadarChartAggregatedFieldWells $RadarChartAggregatedFieldWells
+ * @property RadarChartAggregatedFieldWells|null $RadarChartAggregatedFieldWells
  */
 class RadarChartFieldWells extends Shape
 {
     /**
-     * @param array{RadarChartAggregatedFieldWells?: RadarChartAggregatedFieldWells} $args
+     * @param array{RadarChartAggregatedFieldWells?: RadarChartAggregatedFieldWells|null} $args
      */
     public function __construct(array $args = [])
     {

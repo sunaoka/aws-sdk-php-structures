@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\GetExperimentResults\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $content
- * @property string $metricName
- * @property 'BayesianInference' $reportName
- * @property string $treatmentName
+ * @property string|null $content
+ * @property string|null $metricName
+ * @property 'BayesianInference'|null $reportName
+ * @property string|null $treatmentName
  */
 class ExperimentReport extends Shape
 {
     /**
      * @param array{
-     *     content?: string,
-     *     metricName?: string,
-     *     reportName?: 'BayesianInference',
-     *     treatmentName?: string
+     *     content?: string|null,
+     *     metricName?: string|null,
+     *     reportName?: 'BayesianInference'|null,
+     *     treatmentName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateFunctionDefinitionVersion\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'binary'|'json' $EncodingType
- * @property FunctionConfigurationEnvironment $Environment
- * @property string $ExecArgs
- * @property string $Executable
- * @property int $MemorySize
- * @property bool $Pinned
- * @property int $Timeout
- * @property string $FunctionRuntimeOverride
+ * @property 'binary'|'json'|null $EncodingType
+ * @property FunctionConfigurationEnvironment|null $Environment
+ * @property string|null $ExecArgs
+ * @property string|null $Executable
+ * @property int|null $MemorySize
+ * @property bool|null $Pinned
+ * @property int|null $Timeout
+ * @property string|null $FunctionRuntimeOverride
  */
 class FunctionConfiguration extends Shape
 {
     /**
      * @param array{
-     *     EncodingType?: 'binary'|'json',
-     *     Environment?: FunctionConfigurationEnvironment,
-     *     ExecArgs?: string,
-     *     Executable?: string,
-     *     MemorySize?: int,
-     *     Pinned?: bool,
-     *     Timeout?: int,
-     *     FunctionRuntimeOverride?: string
+     *     EncodingType?: 'binary'|'json'|null,
+     *     Environment?: FunctionConfigurationEnvironment|null,
+     *     ExecArgs?: string|null,
+     *     Executable?: string|null,
+     *     MemorySize?: int|null,
+     *     Pinned?: bool|null,
+     *     Timeout?: int|null,
+     *     FunctionRuntimeOverride?: string|null
      * } $args
      */
     public function __construct(array $args = [])

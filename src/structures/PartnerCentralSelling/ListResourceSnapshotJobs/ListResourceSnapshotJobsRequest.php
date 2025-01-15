@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Catalog
- * @property string $EngagementIdentifier
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
- * @property Shapes\SortObject $Sort
- * @property 'Running'|'Stopped' $Status
+ * @property string|null $EngagementIdentifier
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
+ * @property Shapes\SortObject|null $Sort
+ * @property 'Running'|'Stopped'|null $Status
  */
 class ListResourceSnapshotJobsRequest extends Request
 {
     /**
      * @param array{
      *     Catalog: string,
-     *     EngagementIdentifier?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string,
-     *     Sort?: Shapes\SortObject,
-     *     Status?: 'Running'|'Stopped'
+     *     EngagementIdentifier?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null,
+     *     Sort?: Shapes\SortObject|null,
+     *     Status?: 'Running'|'Stopped'|null
      * } $args
      */
     public function __construct(array $args)

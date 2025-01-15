@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Color
- * @property 'ENABLED'|'DISABLED' $State
+ * @property 'ENABLED'|'DISABLED'|null $State
  */
 class GeospatialSolidColor extends Shape
 {
     /**
      * @param array{
      *     Color: string,
-     *     State?: 'ENABLED'|'DISABLED'
+     *     State?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Health\DescribeEventDetails\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $eventArn
- * @property string $errorName
- * @property string $errorMessage
+ * @property string|null $eventArn
+ * @property string|null $errorName
+ * @property string|null $errorMessage
  */
 class EventDetailsErrorItem extends Shape
 {
     /**
      * @param array{
-     *     eventArn?: string,
-     *     errorName?: string,
-     *     errorMessage?: string
+     *     eventArn?: string|null,
+     *     errorName?: string|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\PutIndexPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $logGroupIdentifier
- * @property int<0, max> $lastUpdateTime
- * @property string $policyDocument
- * @property string $policyName
- * @property 'ACCOUNT'|'LOG_GROUP' $source
+ * @property string|null $logGroupIdentifier
+ * @property int<0, max>|null $lastUpdateTime
+ * @property string|null $policyDocument
+ * @property string|null $policyName
+ * @property 'ACCOUNT'|'LOG_GROUP'|null $source
  */
 class IndexPolicy extends Shape
 {
     /**
      * @param array{
-     *     logGroupIdentifier?: string,
-     *     lastUpdateTime?: int<0, max>,
-     *     policyDocument?: string,
-     *     policyName?: string,
-     *     source?: 'ACCOUNT'|'LOG_GROUP'
+     *     logGroupIdentifier?: string|null,
+     *     lastUpdateTime?: int<0, max>|null,
+     *     policyDocument?: string|null,
+     *     policyName?: string|null,
+     *     source?: 'ACCOUNT'|'LOG_GROUP'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ForecastService\ListForecastExportJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ForecastExportJobArn
- * @property string $ForecastExportJobName
- * @property DataDestination $Destination
- * @property string $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
+ * @property string|null $ForecastExportJobArn
+ * @property string|null $ForecastExportJobName
+ * @property DataDestination|null $Destination
+ * @property string|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
  */
 class ForecastExportJobSummary extends Shape
 {
     /**
      * @param array{
-     *     ForecastExportJobArn?: string,
-     *     ForecastExportJobName?: string,
-     *     Destination?: DataDestination,
-     *     Status?: string,
-     *     Message?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModificationTime?: \Aws\Api\DateTimeResult
+     *     ForecastExportJobArn?: string|null,
+     *     ForecastExportJobName?: string|null,
+     *     Destination?: DataDestination|null,
+     *     Status?: string|null,
+     *     Message?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModificationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

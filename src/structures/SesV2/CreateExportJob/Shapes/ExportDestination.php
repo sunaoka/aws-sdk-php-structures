@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CSV'|'JSON' $DataFormat
- * @property string $S3Url
+ * @property string|null $S3Url
  */
 class ExportDestination extends Shape
 {
     /**
      * @param array{
      *     DataFormat: 'CSV'|'JSON',
-     *     S3Url?: string
+     *     S3Url?: string|null
      * } $args
      */
     public function __construct(array $args)

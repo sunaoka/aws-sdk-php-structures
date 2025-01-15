@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeNodeConfigurationOptions\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $NodeType
- * @property int $NumberOfNodes
- * @property double $EstimatedDiskUtilizationPercent
- * @property 'standard'|'high-performance' $Mode
+ * @property string|null $NodeType
+ * @property int|null $NumberOfNodes
+ * @property double|null $EstimatedDiskUtilizationPercent
+ * @property 'standard'|'high-performance'|null $Mode
  */
 class NodeConfigurationOption extends Shape
 {
     /**
      * @param array{
-     *     NodeType?: string,
-     *     NumberOfNodes?: int,
-     *     EstimatedDiskUtilizationPercent?: double,
-     *     Mode?: 'standard'|'high-performance'
+     *     NodeType?: string|null,
+     *     NumberOfNodes?: int|null,
+     *     EstimatedDiskUtilizationPercent?: double|null,
+     *     Mode?: 'standard'|'high-performance'|null
      * } $args
      */
     public function __construct(array $args = [])

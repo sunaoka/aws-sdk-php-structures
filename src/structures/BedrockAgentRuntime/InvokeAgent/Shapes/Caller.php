@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $agentAliasArn
+ * @property string|null $agentAliasArn
  */
 class Caller extends Shape
 {
     /**
-     * @param array{agentAliasArn?: string} $args
+     * @param array{agentAliasArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

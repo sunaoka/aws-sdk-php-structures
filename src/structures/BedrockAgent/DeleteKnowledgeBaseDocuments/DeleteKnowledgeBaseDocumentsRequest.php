@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\DeleteKnowledgeBaseDocuments;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $dataSourceId
  * @property list<Shapes\DocumentIdentifier> $documentIdentifiers
  * @property string $knowledgeBaseId
@@ -14,7 +14,7 @@ class DeleteKnowledgeBaseDocumentsRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     dataSourceId: string,
      *     documentIdentifiers: list<Shapes\DocumentIdentifier>,
      *     knowledgeBaseId: string

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Connect\ListAnalyticsDataAssociations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DataSetId
- * @property string $TargetAccountId
- * @property string $ResourceShareId
- * @property string $ResourceShareArn
+ * @property string|null $DataSetId
+ * @property string|null $TargetAccountId
+ * @property string|null $ResourceShareId
+ * @property string|null $ResourceShareArn
  */
 class AnalyticsDataAssociationResult extends Shape
 {
     /**
      * @param array{
-     *     DataSetId?: string,
-     *     TargetAccountId?: string,
-     *     ResourceShareId?: string,
-     *     ResourceShareArn?: string
+     *     DataSetId?: string|null,
+     *     TargetAccountId?: string|null,
+     *     ResourceShareId?: string|null,
+     *     ResourceShareArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $HumanLoopName
  * @property string $FlowDefinitionArn
  * @property Shapes\HumanLoopInput $HumanLoopInput
- * @property Shapes\HumanLoopDataAttributes $DataAttributes
+ * @property Shapes\HumanLoopDataAttributes|null $DataAttributes
  */
 class StartHumanLoopRequest extends Request
 {
@@ -17,7 +17,7 @@ class StartHumanLoopRequest extends Request
      *     HumanLoopName: string,
      *     FlowDefinitionArn: string,
      *     HumanLoopInput: Shapes\HumanLoopInput,
-     *     DataAttributes?: Shapes\HumanLoopDataAttributes
+     *     DataAttributes?: Shapes\HumanLoopDataAttributes|null
      * } $args
      */
     public function __construct(array $args)

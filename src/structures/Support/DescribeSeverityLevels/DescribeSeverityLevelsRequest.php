@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Support\DescribeSeverityLevels;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $language
+ * @property string|null $language
  */
 class DescribeSeverityLevelsRequest extends Request
 {
     /**
-     * @param array{language?: string} $args
+     * @param array{language?: string|null} $args
      */
     public function __construct(array $args = [])
     {

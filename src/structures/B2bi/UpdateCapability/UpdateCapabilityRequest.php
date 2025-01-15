@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $capabilityId
- * @property string $name
- * @property Shapes\CapabilityConfiguration $configuration
- * @property list<Shapes\S3Location> $instructionsDocuments
+ * @property string|null $name
+ * @property Shapes\CapabilityConfiguration|null $configuration
+ * @property list<Shapes\S3Location>|null $instructionsDocuments
  */
 class UpdateCapabilityRequest extends Request
 {
     /**
      * @param array{
      *     capabilityId: string,
-     *     name?: string,
-     *     configuration?: Shapes\CapabilityConfiguration,
-     *     instructionsDocuments?: list<Shapes\S3Location>
+     *     name?: string|null,
+     *     configuration?: Shapes\CapabilityConfiguration|null,
+     *     instructionsDocuments?: list<Shapes\S3Location>|null
      * } $args
      */
     public function __construct(array $args)

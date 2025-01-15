@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $AttachToVpc
- * @property string $CidrBlock
+ * @property string|null $CidrBlock
  */
 class VpcAttachmentOptions extends Shape
 {
     /**
      * @param array{
      *     AttachToVpc: bool,
-     *     CidrBlock?: string
+     *     CidrBlock?: string|null
      * } $args
      */
     public function __construct(array $args)

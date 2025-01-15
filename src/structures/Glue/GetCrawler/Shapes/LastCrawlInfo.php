@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Glue\GetCrawler\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SUCCEEDED'|'CANCELLED'|'FAILED' $Status
- * @property string $ErrorMessage
- * @property string $LogGroup
- * @property string $LogStream
- * @property string $MessagePrefix
- * @property \Aws\Api\DateTimeResult $StartTime
+ * @property 'SUCCEEDED'|'CANCELLED'|'FAILED'|null $Status
+ * @property string|null $ErrorMessage
+ * @property string|null $LogGroup
+ * @property string|null $LogStream
+ * @property string|null $MessagePrefix
+ * @property \Aws\Api\DateTimeResult|null $StartTime
  */
 class LastCrawlInfo extends Shape
 {
     /**
      * @param array{
-     *     Status?: 'SUCCEEDED'|'CANCELLED'|'FAILED',
-     *     ErrorMessage?: string,
-     *     LogGroup?: string,
-     *     LogStream?: string,
-     *     MessagePrefix?: string,
-     *     StartTime?: \Aws\Api\DateTimeResult
+     *     Status?: 'SUCCEEDED'|'CANCELLED'|'FAILED'|null,
+     *     ErrorMessage?: string|null,
+     *     LogGroup?: string|null,
+     *     LogStream?: string|null,
+     *     MessagePrefix?: string|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

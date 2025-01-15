@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetRecommen
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $completionTime
- * @property string $s3Bucket
- * @property list<string> $s3Keys
- * @property \Aws\Api\DateTimeResult $startTime
- * @property 'FAILED'|'IN_PROGRESS'|'SUCCESS' $status
- * @property string $statusMessage
+ * @property \Aws\Api\DateTimeResult|null $completionTime
+ * @property string|null $s3Bucket
+ * @property list<string>|null $s3Keys
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property 'FAILED'|'IN_PROGRESS'|'SUCCESS'|null $status
+ * @property string|null $statusMessage
  */
 class RecommendationReportDetails extends Shape
 {
     /**
      * @param array{
-     *     completionTime?: \Aws\Api\DateTimeResult,
-     *     s3Bucket?: string,
-     *     s3Keys?: list<string>,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     status?: 'FAILED'|'IN_PROGRESS'|'SUCCESS',
-     *     statusMessage?: string
+     *     completionTime?: \Aws\Api\DateTimeResult|null,
+     *     s3Bucket?: string|null,
+     *     s3Keys?: list<string>|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     status?: 'FAILED'|'IN_PROGRESS'|'SUCCESS'|null,
+     *     statusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

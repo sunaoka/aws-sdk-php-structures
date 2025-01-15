@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\PutRecommendationPreferences\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Organization'|'AccountId'|'ResourceArn' $name
- * @property string $value
+ * @property 'Organization'|'AccountId'|'ResourceArn'|null $name
+ * @property string|null $value
  */
 class Scope extends Shape
 {
     /**
      * @param array{
-     *     name?: 'Organization'|'AccountId'|'ResourceArn',
-     *     value?: string
+     *     name?: 'Organization'|'AccountId'|'ResourceArn'|null,
+     *     value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

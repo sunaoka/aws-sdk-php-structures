@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property DateInterval $TimePeriod
  * @property SavingsPlansUtilization $Utilization
- * @property SavingsPlansSavings $Savings
- * @property SavingsPlansAmortizedCommitment $AmortizedCommitment
+ * @property SavingsPlansSavings|null $Savings
+ * @property SavingsPlansAmortizedCommitment|null $AmortizedCommitment
  */
 class SavingsPlansUtilizationByTime extends Shape
 {
@@ -16,8 +16,8 @@ class SavingsPlansUtilizationByTime extends Shape
      * @param array{
      *     TimePeriod: DateInterval,
      *     Utilization: SavingsPlansUtilization,
-     *     Savings?: SavingsPlansSavings,
-     *     AmortizedCommitment?: SavingsPlansAmortizedCommitment
+     *     Savings?: SavingsPlansSavings|null,
+     *     AmortizedCommitment?: SavingsPlansAmortizedCommitment|null
      * } $args
      */
     public function __construct(array $args)

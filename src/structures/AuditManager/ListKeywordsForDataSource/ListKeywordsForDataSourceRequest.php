@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property 'AWS_Cloudtrail'|'AWS_Config'|'AWS_Security_Hub'|'AWS_API_Call'|'MANUAL' $source
- * @property string $nextToken
- * @property int<1, 1000> $maxResults
+ * @property string|null $nextToken
+ * @property int<1, 1000>|null $maxResults
  */
 class ListKeywordsForDataSourceRequest extends Request
 {
     /**
      * @param array{
      *     source: 'AWS_Cloudtrail'|'AWS_Config'|'AWS_Security_Hub'|'AWS_API_Call'|'MANUAL',
-     *     nextToken?: string,
-     *     maxResults?: int<1, 1000>
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 1000>|null
      * } $args
      */
     public function __construct(array $args)

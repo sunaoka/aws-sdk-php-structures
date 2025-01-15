@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\GameLift\ListFleetDeployments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeploymentId
- * @property string $FleetId
- * @property string $GameServerBinaryArn
- * @property string $RollbackGameServerBinaryArn
- * @property string $PerInstanceBinaryArn
- * @property string $RollbackPerInstanceBinaryArn
- * @property 'IN_PROGRESS'|'IMPAIRED'|'COMPLETE'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETE'|'CANCELLED'|'PENDING' $DeploymentStatus
- * @property DeploymentConfiguration $DeploymentConfiguration
- * @property \Aws\Api\DateTimeResult $CreationTime
+ * @property string|null $DeploymentId
+ * @property string|null $FleetId
+ * @property string|null $GameServerBinaryArn
+ * @property string|null $RollbackGameServerBinaryArn
+ * @property string|null $PerInstanceBinaryArn
+ * @property string|null $RollbackPerInstanceBinaryArn
+ * @property 'IN_PROGRESS'|'IMPAIRED'|'COMPLETE'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETE'|'CANCELLED'|'PENDING'|null $DeploymentStatus
+ * @property DeploymentConfiguration|null $DeploymentConfiguration
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
  */
 class FleetDeployment extends Shape
 {
     /**
      * @param array{
-     *     DeploymentId?: string,
-     *     FleetId?: string,
-     *     GameServerBinaryArn?: string,
-     *     RollbackGameServerBinaryArn?: string,
-     *     PerInstanceBinaryArn?: string,
-     *     RollbackPerInstanceBinaryArn?: string,
-     *     DeploymentStatus?: 'IN_PROGRESS'|'IMPAIRED'|'COMPLETE'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETE'|'CANCELLED'|'PENDING',
-     *     DeploymentConfiguration?: DeploymentConfiguration,
-     *     CreationTime?: \Aws\Api\DateTimeResult
+     *     DeploymentId?: string|null,
+     *     FleetId?: string|null,
+     *     GameServerBinaryArn?: string|null,
+     *     RollbackGameServerBinaryArn?: string|null,
+     *     PerInstanceBinaryArn?: string|null,
+     *     RollbackPerInstanceBinaryArn?: string|null,
+     *     DeploymentStatus?: 'IN_PROGRESS'|'IMPAIRED'|'COMPLETE'|'ROLLBACK_IN_PROGRESS'|'ROLLBACK_COMPLETE'|'CANCELLED'|'PENDING'|null,
+     *     DeploymentConfiguration?: DeploymentConfiguration|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

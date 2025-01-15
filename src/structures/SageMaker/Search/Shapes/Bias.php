@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MetricsSource $Report
- * @property MetricsSource $PreTrainingReport
- * @property MetricsSource $PostTrainingReport
+ * @property MetricsSource|null $Report
+ * @property MetricsSource|null $PreTrainingReport
+ * @property MetricsSource|null $PostTrainingReport
  */
 class Bias extends Shape
 {
     /**
      * @param array{
-     *     Report?: MetricsSource,
-     *     PreTrainingReport?: MetricsSource,
-     *     PostTrainingReport?: MetricsSource
+     *     Report?: MetricsSource|null,
+     *     PreTrainingReport?: MetricsSource|null,
+     *     PostTrainingReport?: MetricsSource|null
      * } $args
      */
     public function __construct(array $args = [])

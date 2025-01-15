@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ElasticInference\DescribeAcceleratorTypes\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $sizeInMiB
+ * @property int|null $sizeInMiB
  */
 class MemoryInfo extends Shape
 {
     /**
-     * @param array{sizeInMiB?: int} $args
+     * @param array{sizeInMiB?: int|null} $args
      */
     public function __construct(array $args = [])
     {

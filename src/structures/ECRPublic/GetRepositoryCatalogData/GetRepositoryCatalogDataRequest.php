@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\ECRPublic\GetRepositoryCatalogData;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $registryId
+ * @property string|null $registryId
  * @property string $repositoryName
  */
 class GetRepositoryCatalogDataRequest extends Request
 {
     /**
      * @param array{
-     *     registryId?: string,
+     *     registryId?: string|null,
      *     repositoryName: string
      * } $args
      */

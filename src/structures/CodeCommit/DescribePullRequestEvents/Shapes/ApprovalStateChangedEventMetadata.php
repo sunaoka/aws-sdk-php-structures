@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeCommit\DescribePullRequestEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $revisionId
- * @property 'APPROVE'|'REVOKE' $approvalStatus
+ * @property string|null $revisionId
+ * @property 'APPROVE'|'REVOKE'|null $approvalStatus
  */
 class ApprovalStateChangedEventMetadata extends Shape
 {
     /**
      * @param array{
-     *     revisionId?: string,
-     *     approvalStatus?: 'APPROVE'|'REVOKE'
+     *     revisionId?: string|null,
+     *     approvalStatus?: 'APPROVE'|'REVOKE'|null
      * } $args
      */
     public function __construct(array $args = [])

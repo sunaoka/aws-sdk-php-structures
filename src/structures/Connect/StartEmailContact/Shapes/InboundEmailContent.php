@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'RAW' $MessageSourceType
- * @property InboundRawMessage $RawMessage
+ * @property InboundRawMessage|null $RawMessage
  */
 class InboundEmailContent extends Shape
 {
     /**
      * @param array{
      *     MessageSourceType: 'RAW',
-     *     RawMessage?: InboundRawMessage
+     *     RawMessage?: InboundRawMessage|null
      * } $args
      */
     public function __construct(array $args)

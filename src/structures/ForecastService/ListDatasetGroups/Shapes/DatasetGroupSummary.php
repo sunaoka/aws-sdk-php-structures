@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ForecastService\ListDatasetGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DatasetGroupArn
- * @property string $DatasetGroupName
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
+ * @property string|null $DatasetGroupArn
+ * @property string|null $DatasetGroupName
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
  */
 class DatasetGroupSummary extends Shape
 {
     /**
      * @param array{
-     *     DatasetGroupArn?: string,
-     *     DatasetGroupName?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModificationTime?: \Aws\Api\DateTimeResult
+     *     DatasetGroupArn?: string|null,
+     *     DatasetGroupName?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModificationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

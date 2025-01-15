@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyDBProxyTargetGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBProxyName
- * @property string $TargetGroupName
- * @property string $TargetGroupArn
- * @property bool $IsDefault
- * @property string $Status
- * @property ConnectionPoolConfigurationInfo $ConnectionPoolConfig
- * @property \Aws\Api\DateTimeResult $CreatedDate
- * @property \Aws\Api\DateTimeResult $UpdatedDate
+ * @property string|null $DBProxyName
+ * @property string|null $TargetGroupName
+ * @property string|null $TargetGroupArn
+ * @property bool|null $IsDefault
+ * @property string|null $Status
+ * @property ConnectionPoolConfigurationInfo|null $ConnectionPoolConfig
+ * @property \Aws\Api\DateTimeResult|null $CreatedDate
+ * @property \Aws\Api\DateTimeResult|null $UpdatedDate
  */
 class DBProxyTargetGroup extends Shape
 {
     /**
      * @param array{
-     *     DBProxyName?: string,
-     *     TargetGroupName?: string,
-     *     TargetGroupArn?: string,
-     *     IsDefault?: bool,
-     *     Status?: string,
-     *     ConnectionPoolConfig?: ConnectionPoolConfigurationInfo,
-     *     CreatedDate?: \Aws\Api\DateTimeResult,
-     *     UpdatedDate?: \Aws\Api\DateTimeResult
+     *     DBProxyName?: string|null,
+     *     TargetGroupName?: string|null,
+     *     TargetGroupArn?: string|null,
+     *     IsDefault?: bool|null,
+     *     Status?: string|null,
+     *     ConnectionPoolConfig?: ConnectionPoolConfigurationInfo|null,
+     *     CreatedDate?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

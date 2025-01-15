@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListImportF
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\ImportFileTaskInformation> $taskInfos
+ * @property string|null $nextToken
+ * @property list<Shapes\ImportFileTaskInformation>|null $taskInfos
  */
 class ListImportFileTaskResponse extends Response
 {

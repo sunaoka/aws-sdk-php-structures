@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'description'|'kernel'|'ramdisk'|'launchPermission'|'productCodes'|'blockDeviceMapping'|'sriovNetSupport'|'bootMode'|'tpmSupport'|'uefiData'|'lastLaunchedTime'|'imdsSupport'|'deregistrationProtection' $Attribute
  * @property string $ImageId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DescribeImageAttributeRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeImageAttributeRequest extends Request
      * @param array{
      *     Attribute: 'description'|'kernel'|'ramdisk'|'launchPermission'|'productCodes'|'blockDeviceMapping'|'sriovNetSupport'|'bootMode'|'tpmSupport'|'uefiData'|'lastLaunchedTime'|'imdsSupport'|'deregistrationProtection',
      *     ImageId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteFlowLogs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property list<string> $FlowLogIds
  */
 class DeleteFlowLogsRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     FlowLogIds: list<string>
      * } $args
      */

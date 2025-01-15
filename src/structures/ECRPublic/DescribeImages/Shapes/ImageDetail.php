@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ECRPublic\DescribeImages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $registryId
- * @property string $repositoryName
- * @property string $imageDigest
- * @property list<string> $imageTags
- * @property int $imageSizeInBytes
- * @property \Aws\Api\DateTimeResult $imagePushedAt
- * @property string $imageManifestMediaType
- * @property string $artifactMediaType
+ * @property string|null $registryId
+ * @property string|null $repositoryName
+ * @property string|null $imageDigest
+ * @property list<string>|null $imageTags
+ * @property int|null $imageSizeInBytes
+ * @property \Aws\Api\DateTimeResult|null $imagePushedAt
+ * @property string|null $imageManifestMediaType
+ * @property string|null $artifactMediaType
  */
 class ImageDetail extends Shape
 {
     /**
      * @param array{
-     *     registryId?: string,
-     *     repositoryName?: string,
-     *     imageDigest?: string,
-     *     imageTags?: list<string>,
-     *     imageSizeInBytes?: int,
-     *     imagePushedAt?: \Aws\Api\DateTimeResult,
-     *     imageManifestMediaType?: string,
-     *     artifactMediaType?: string
+     *     registryId?: string|null,
+     *     repositoryName?: string|null,
+     *     imageDigest?: string|null,
+     *     imageTags?: list<string>|null,
+     *     imageSizeInBytes?: int|null,
+     *     imagePushedAt?: \Aws\Api\DateTimeResult|null,
+     *     imageManifestMediaType?: string|null,
+     *     artifactMediaType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

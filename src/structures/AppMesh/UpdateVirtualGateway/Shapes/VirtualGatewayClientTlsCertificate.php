@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateVirtualGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualGatewayListenerTlsFileCertificate $file
- * @property VirtualGatewayListenerTlsSdsCertificate $sds
+ * @property VirtualGatewayListenerTlsFileCertificate|null $file
+ * @property VirtualGatewayListenerTlsSdsCertificate|null $sds
  */
 class VirtualGatewayClientTlsCertificate extends Shape
 {
     /**
      * @param array{
-     *     file?: VirtualGatewayListenerTlsFileCertificate,
-     *     sds?: VirtualGatewayListenerTlsSdsCertificate
+     *     file?: VirtualGatewayListenerTlsFileCertificate|null,
+     *     sds?: VirtualGatewayListenerTlsSdsCertificate|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property KendraKnowledgeBaseConfiguration $kendraKnowledgeBaseConfiguration
- * @property SqlKnowledgeBaseConfiguration $sqlKnowledgeBaseConfiguration
+ * @property KendraKnowledgeBaseConfiguration|null $kendraKnowledgeBaseConfiguration
+ * @property SqlKnowledgeBaseConfiguration|null $sqlKnowledgeBaseConfiguration
  * @property 'VECTOR'|'KENDRA'|'SQL' $type
- * @property VectorKnowledgeBaseConfiguration $vectorKnowledgeBaseConfiguration
+ * @property VectorKnowledgeBaseConfiguration|null $vectorKnowledgeBaseConfiguration
  */
 class KnowledgeBaseConfiguration extends Shape
 {
     /**
      * @param array{
-     *     kendraKnowledgeBaseConfiguration?: KendraKnowledgeBaseConfiguration,
-     *     sqlKnowledgeBaseConfiguration?: SqlKnowledgeBaseConfiguration,
+     *     kendraKnowledgeBaseConfiguration?: KendraKnowledgeBaseConfiguration|null,
+     *     sqlKnowledgeBaseConfiguration?: SqlKnowledgeBaseConfiguration|null,
      *     type: 'VECTOR'|'KENDRA'|'SQL',
-     *     vectorKnowledgeBaseConfiguration?: VectorKnowledgeBaseConfiguration
+     *     vectorKnowledgeBaseConfiguration?: VectorKnowledgeBaseConfiguration|null
      * } $args
      */
     public function __construct(array $args)

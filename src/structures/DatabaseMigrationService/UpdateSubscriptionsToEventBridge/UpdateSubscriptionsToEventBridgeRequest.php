@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\UpdateSubscriptionsToE
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $ForceMove
+ * @property bool|null $ForceMove
  */
 class UpdateSubscriptionsToEventBridgeRequest extends Request
 {
     /**
-     * @param array{ForceMove?: bool} $args
+     * @param array{ForceMove?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

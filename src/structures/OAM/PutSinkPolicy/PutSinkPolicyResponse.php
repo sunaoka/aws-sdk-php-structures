@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\OAM\PutSinkPolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Policy
- * @property string $SinkArn
- * @property string $SinkId
+ * @property string|null $Policy
+ * @property string|null $SinkArn
+ * @property string|null $SinkId
  */
 class PutSinkPolicyResponse extends Response
 {

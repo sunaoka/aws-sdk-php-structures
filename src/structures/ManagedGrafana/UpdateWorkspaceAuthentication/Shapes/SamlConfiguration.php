@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ManagedGrafana\UpdateWorkspaceAuthentication\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $allowedOrganizations
- * @property AssertionAttributes $assertionAttributes
+ * @property list<string>|null $allowedOrganizations
+ * @property AssertionAttributes|null $assertionAttributes
  * @property IdpMetadata $idpMetadata
- * @property int $loginValidityDuration
- * @property RoleValues $roleValues
+ * @property int|null $loginValidityDuration
+ * @property RoleValues|null $roleValues
  */
 class SamlConfiguration extends Shape
 {
     /**
      * @param array{
-     *     allowedOrganizations?: list<string>,
-     *     assertionAttributes?: AssertionAttributes,
+     *     allowedOrganizations?: list<string>|null,
+     *     assertionAttributes?: AssertionAttributes|null,
      *     idpMetadata: IdpMetadata,
-     *     loginValidityDuration?: int,
-     *     roleValues?: RoleValues
+     *     loginValidityDuration?: int|null,
+     *     roleValues?: RoleValues|null
      * } $args
      */
     public function __construct(array $args)

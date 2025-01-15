@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property array<string, string> $ConnectionPropertyNameOverrides
  * @property array<string, string> $ConnectionOptionNameOverrides
  * @property list<string> $ConnectionPropertiesRequiredOverrides
- * @property bool $PhysicalConnectionPropertiesRequired
+ * @property bool|null $PhysicalConnectionPropertiesRequired
  */
 class ComputeEnvironmentConfiguration extends Shape
 {
@@ -27,7 +27,7 @@ class ComputeEnvironmentConfiguration extends Shape
      *     ConnectionPropertyNameOverrides: array<string, string>,
      *     ConnectionOptionNameOverrides: array<string, string>,
      *     ConnectionPropertiesRequiredOverrides: list<string>,
-     *     PhysicalConnectionPropertiesRequired?: bool
+     *     PhysicalConnectionPropertiesRequired?: bool|null
      * } $args
      */
     public function __construct(array $args)

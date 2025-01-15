@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ForecastService\ListPredictorBacktestExportJobs
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PredictorBacktestExportJobArn
- * @property string $PredictorBacktestExportJobName
- * @property DataDestination $Destination
- * @property string $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
+ * @property string|null $PredictorBacktestExportJobArn
+ * @property string|null $PredictorBacktestExportJobName
+ * @property DataDestination|null $Destination
+ * @property string|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
  */
 class PredictorBacktestExportJobSummary extends Shape
 {
     /**
      * @param array{
-     *     PredictorBacktestExportJobArn?: string,
-     *     PredictorBacktestExportJobName?: string,
-     *     Destination?: DataDestination,
-     *     Status?: string,
-     *     Message?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModificationTime?: \Aws\Api\DateTimeResult
+     *     PredictorBacktestExportJobArn?: string|null,
+     *     PredictorBacktestExportJobName?: string|null,
+     *     Destination?: DataDestination|null,
+     *     Status?: string|null,
+     *     Message?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModificationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\CreateApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SqlApplicationConfiguration $SqlApplicationConfiguration
- * @property FlinkApplicationConfiguration $FlinkApplicationConfiguration
- * @property EnvironmentProperties $EnvironmentProperties
- * @property ApplicationCodeConfiguration $ApplicationCodeConfiguration
- * @property ApplicationSnapshotConfiguration $ApplicationSnapshotConfiguration
- * @property ApplicationSystemRollbackConfiguration $ApplicationSystemRollbackConfiguration
- * @property list<VpcConfiguration> $VpcConfigurations
- * @property ZeppelinApplicationConfiguration $ZeppelinApplicationConfiguration
+ * @property SqlApplicationConfiguration|null $SqlApplicationConfiguration
+ * @property FlinkApplicationConfiguration|null $FlinkApplicationConfiguration
+ * @property EnvironmentProperties|null $EnvironmentProperties
+ * @property ApplicationCodeConfiguration|null $ApplicationCodeConfiguration
+ * @property ApplicationSnapshotConfiguration|null $ApplicationSnapshotConfiguration
+ * @property ApplicationSystemRollbackConfiguration|null $ApplicationSystemRollbackConfiguration
+ * @property list<VpcConfiguration>|null $VpcConfigurations
+ * @property ZeppelinApplicationConfiguration|null $ZeppelinApplicationConfiguration
  */
 class ApplicationConfiguration extends Shape
 {
     /**
      * @param array{
-     *     SqlApplicationConfiguration?: SqlApplicationConfiguration,
-     *     FlinkApplicationConfiguration?: FlinkApplicationConfiguration,
-     *     EnvironmentProperties?: EnvironmentProperties,
-     *     ApplicationCodeConfiguration?: ApplicationCodeConfiguration,
-     *     ApplicationSnapshotConfiguration?: ApplicationSnapshotConfiguration,
-     *     ApplicationSystemRollbackConfiguration?: ApplicationSystemRollbackConfiguration,
-     *     VpcConfigurations?: list<VpcConfiguration>,
-     *     ZeppelinApplicationConfiguration?: ZeppelinApplicationConfiguration
+     *     SqlApplicationConfiguration?: SqlApplicationConfiguration|null,
+     *     FlinkApplicationConfiguration?: FlinkApplicationConfiguration|null,
+     *     EnvironmentProperties?: EnvironmentProperties|null,
+     *     ApplicationCodeConfiguration?: ApplicationCodeConfiguration|null,
+     *     ApplicationSnapshotConfiguration?: ApplicationSnapshotConfiguration|null,
+     *     ApplicationSystemRollbackConfiguration?: ApplicationSystemRollbackConfiguration|null,
+     *     VpcConfigurations?: list<VpcConfiguration>|null,
+     *     ZeppelinApplicationConfiguration?: ZeppelinApplicationConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,38 +6,38 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $BackupId
- * @property string $BackupArn
- * @property 'CREATE_IN_PROGRESS'|'READY'|'DELETED'|'PENDING_DELETION' $BackupState
- * @property string $ClusterId
- * @property \Aws\Api\DateTimeResult $CreateTimestamp
- * @property \Aws\Api\DateTimeResult $CopyTimestamp
- * @property bool $NeverExpires
- * @property string $SourceRegion
- * @property string $SourceBackup
- * @property string $SourceCluster
- * @property \Aws\Api\DateTimeResult $DeleteTimestamp
- * @property list<Tag> $TagList
- * @property string $HsmType
- * @property 'FIPS'|'NON_FIPS' $Mode
+ * @property string|null $BackupArn
+ * @property 'CREATE_IN_PROGRESS'|'READY'|'DELETED'|'PENDING_DELETION'|null $BackupState
+ * @property string|null $ClusterId
+ * @property \Aws\Api\DateTimeResult|null $CreateTimestamp
+ * @property \Aws\Api\DateTimeResult|null $CopyTimestamp
+ * @property bool|null $NeverExpires
+ * @property string|null $SourceRegion
+ * @property string|null $SourceBackup
+ * @property string|null $SourceCluster
+ * @property \Aws\Api\DateTimeResult|null $DeleteTimestamp
+ * @property list<Tag>|null $TagList
+ * @property string|null $HsmType
+ * @property 'FIPS'|'NON_FIPS'|null $Mode
  */
 class Backup extends Shape
 {
     /**
      * @param array{
      *     BackupId: string,
-     *     BackupArn?: string,
-     *     BackupState?: 'CREATE_IN_PROGRESS'|'READY'|'DELETED'|'PENDING_DELETION',
-     *     ClusterId?: string,
-     *     CreateTimestamp?: \Aws\Api\DateTimeResult,
-     *     CopyTimestamp?: \Aws\Api\DateTimeResult,
-     *     NeverExpires?: bool,
-     *     SourceRegion?: string,
-     *     SourceBackup?: string,
-     *     SourceCluster?: string,
-     *     DeleteTimestamp?: \Aws\Api\DateTimeResult,
-     *     TagList?: list<Tag>,
-     *     HsmType?: string,
-     *     Mode?: 'FIPS'|'NON_FIPS'
+     *     BackupArn?: string|null,
+     *     BackupState?: 'CREATE_IN_PROGRESS'|'READY'|'DELETED'|'PENDING_DELETION'|null,
+     *     ClusterId?: string|null,
+     *     CreateTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     CopyTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     NeverExpires?: bool|null,
+     *     SourceRegion?: string|null,
+     *     SourceBackup?: string|null,
+     *     SourceCluster?: string|null,
+     *     DeleteTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     TagList?: list<Tag>|null,
+     *     HsmType?: string|null,
+     *     Mode?: 'FIPS'|'NON_FIPS'|null
      * } $args
      */
     public function __construct(array $args)

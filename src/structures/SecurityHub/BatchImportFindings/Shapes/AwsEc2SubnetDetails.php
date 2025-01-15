@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AssignIpv6AddressOnCreation
- * @property string $AvailabilityZone
- * @property string $AvailabilityZoneId
- * @property int $AvailableIpAddressCount
- * @property string $CidrBlock
- * @property bool $DefaultForAz
- * @property bool $MapPublicIpOnLaunch
- * @property string $OwnerId
- * @property string $State
- * @property string $SubnetArn
- * @property string $SubnetId
- * @property string $VpcId
- * @property list<Ipv6CidrBlockAssociation> $Ipv6CidrBlockAssociationSet
+ * @property bool|null $AssignIpv6AddressOnCreation
+ * @property string|null $AvailabilityZone
+ * @property string|null $AvailabilityZoneId
+ * @property int|null $AvailableIpAddressCount
+ * @property string|null $CidrBlock
+ * @property bool|null $DefaultForAz
+ * @property bool|null $MapPublicIpOnLaunch
+ * @property string|null $OwnerId
+ * @property string|null $State
+ * @property string|null $SubnetArn
+ * @property string|null $SubnetId
+ * @property string|null $VpcId
+ * @property list<Ipv6CidrBlockAssociation>|null $Ipv6CidrBlockAssociationSet
  */
 class AwsEc2SubnetDetails extends Shape
 {
     /**
      * @param array{
-     *     AssignIpv6AddressOnCreation?: bool,
-     *     AvailabilityZone?: string,
-     *     AvailabilityZoneId?: string,
-     *     AvailableIpAddressCount?: int,
-     *     CidrBlock?: string,
-     *     DefaultForAz?: bool,
-     *     MapPublicIpOnLaunch?: bool,
-     *     OwnerId?: string,
-     *     State?: string,
-     *     SubnetArn?: string,
-     *     SubnetId?: string,
-     *     VpcId?: string,
-     *     Ipv6CidrBlockAssociationSet?: list<Ipv6CidrBlockAssociation>
+     *     AssignIpv6AddressOnCreation?: bool|null,
+     *     AvailabilityZone?: string|null,
+     *     AvailabilityZoneId?: string|null,
+     *     AvailableIpAddressCount?: int|null,
+     *     CidrBlock?: string|null,
+     *     DefaultForAz?: bool|null,
+     *     MapPublicIpOnLaunch?: bool|null,
+     *     OwnerId?: string|null,
+     *     State?: string|null,
+     *     SubnetArn?: string|null,
+     *     SubnetId?: string|null,
+     *     VpcId?: string|null,
+     *     Ipv6CidrBlockAssociationSet?: list<Ipv6CidrBlockAssociation>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeAction;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ActionName
- * @property string $ActionArn
- * @property Shapes\ActionSource $Source
- * @property string $ActionType
- * @property string $Description
- * @property 'Unknown'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped' $Status
- * @property array<string, string> $Properties
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property Shapes\UserContext $CreatedBy
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property Shapes\UserContext $LastModifiedBy
- * @property Shapes\MetadataProperties $MetadataProperties
- * @property string $LineageGroupArn
+ * @property string|null $ActionName
+ * @property string|null $ActionArn
+ * @property Shapes\ActionSource|null $Source
+ * @property string|null $ActionType
+ * @property string|null $Description
+ * @property 'Unknown'|'InProgress'|'Completed'|'Failed'|'Stopping'|'Stopped'|null $Status
+ * @property array<string, string>|null $Properties
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property Shapes\UserContext|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property Shapes\UserContext|null $LastModifiedBy
+ * @property Shapes\MetadataProperties|null $MetadataProperties
+ * @property string|null $LineageGroupArn
  */
 class DescribeActionResponse extends Response
 {

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Ecs\ListAttributes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $cluster
+ * @property string|null $cluster
  * @property 'container-instance' $targetType
- * @property string $attributeName
- * @property string $attributeValue
- * @property string $nextToken
- * @property int $maxResults
+ * @property string|null $attributeName
+ * @property string|null $attributeValue
+ * @property string|null $nextToken
+ * @property int|null $maxResults
  */
 class ListAttributesRequest extends Request
 {
     /**
      * @param array{
-     *     cluster?: string,
+     *     cluster?: string|null,
      *     targetType: 'container-instance',
-     *     attributeName?: string,
-     *     attributeValue?: string,
-     *     nextToken?: string,
-     *     maxResults?: int
+     *     attributeName?: string|null,
+     *     attributeValue?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int|null
      * } $args
      */
     public function __construct(array $args)

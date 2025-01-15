@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\BatchGetEffectiveLifecycle
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $errorCode
- * @property string $errorMessage
- * @property string $resource
- * @property 'retention' $type
+ * @property string|null $errorCode
+ * @property string|null $errorMessage
+ * @property string|null $resource
+ * @property 'retention'|null $type
  */
 class EffectiveLifecyclePolicyErrorDetail extends Shape
 {
     /**
      * @param array{
-     *     errorCode?: string,
-     *     errorMessage?: string,
-     *     resource?: string,
-     *     type?: 'retention'
+     *     errorCode?: string|null,
+     *     errorMessage?: string|null,
+     *     resource?: string|null,
+     *     type?: 'retention'|null
      * } $args
      */
     public function __construct(array $args = [])

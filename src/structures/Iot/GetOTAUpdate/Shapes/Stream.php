@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Iot\GetOTAUpdate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $streamId
- * @property int<0, 255> $fileId
+ * @property string|null $streamId
+ * @property int<0, 255>|null $fileId
  */
 class Stream extends Shape
 {
     /**
      * @param array{
-     *     streamId?: string,
-     *     fileId?: int<0, 255>
+     *     streamId?: string|null,
+     *     fileId?: int<0, 255>|null
      * } $args
      */
     public function __construct(array $args = [])

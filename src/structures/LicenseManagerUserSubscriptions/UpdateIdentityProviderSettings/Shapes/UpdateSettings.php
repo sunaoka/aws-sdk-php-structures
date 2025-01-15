@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property list<string> $AddSubnets
  * @property list<string> $RemoveSubnets
- * @property string $SecurityGroupId
+ * @property string|null $SecurityGroupId
  */
 class UpdateSettings extends Shape
 {
@@ -15,7 +15,7 @@ class UpdateSettings extends Shape
      * @param array{
      *     AddSubnets: list<string>,
      *     RemoveSubnets: list<string>,
-     *     SecurityGroupId?: string
+     *     SecurityGroupId?: string|null
      * } $args
      */
     public function __construct(array $args)

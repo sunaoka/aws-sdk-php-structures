@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateCloudWatchAlarmTemplate;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold' $ComparisonOperator
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property int<1, max> $DatapointsToAlarm
- * @property string $Description
- * @property int<1, max> $EvaluationPeriods
- * @property string $GroupId
- * @property string $Id
- * @property string $MetricName
- * @property \Aws\Api\DateTimeResult $ModifiedAt
- * @property string $Name
- * @property int<10, 86400> $Period
- * @property 'SampleCount'|'Average'|'Sum'|'Minimum'|'Maximum' $Statistic
- * @property array<string, string> $Tags
- * @property 'CLOUDFRONT_DISTRIBUTION'|'MEDIALIVE_MULTIPLEX'|'MEDIALIVE_CHANNEL'|'MEDIALIVE_INPUT_DEVICE'|'MEDIAPACKAGE_CHANNEL'|'MEDIAPACKAGE_ORIGIN_ENDPOINT'|'MEDIACONNECT_FLOW'|'S3_BUCKET' $TargetResourceType
- * @property double $Threshold
- * @property 'notBreaching'|'breaching'|'ignore'|'missing' $TreatMissingData
+ * @property string|null $Arn
+ * @property 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold'|null $ComparisonOperator
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property int<1, max>|null $DatapointsToAlarm
+ * @property string|null $Description
+ * @property int<1, max>|null $EvaluationPeriods
+ * @property string|null $GroupId
+ * @property string|null $Id
+ * @property string|null $MetricName
+ * @property \Aws\Api\DateTimeResult|null $ModifiedAt
+ * @property string|null $Name
+ * @property int<10, 86400>|null $Period
+ * @property 'SampleCount'|'Average'|'Sum'|'Minimum'|'Maximum'|null $Statistic
+ * @property array<string, string>|null $Tags
+ * @property 'CLOUDFRONT_DISTRIBUTION'|'MEDIALIVE_MULTIPLEX'|'MEDIALIVE_CHANNEL'|'MEDIALIVE_INPUT_DEVICE'|'MEDIAPACKAGE_CHANNEL'|'MEDIAPACKAGE_ORIGIN_ENDPOINT'|'MEDIACONNECT_FLOW'|'S3_BUCKET'|null $TargetResourceType
+ * @property double|null $Threshold
+ * @property 'notBreaching'|'breaching'|'ignore'|'missing'|null $TreatMissingData
  */
 class UpdateCloudWatchAlarmTemplateResponse extends Response
 {

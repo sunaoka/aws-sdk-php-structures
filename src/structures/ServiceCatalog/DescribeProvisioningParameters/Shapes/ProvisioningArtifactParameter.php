@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProvisioningParameters\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterKey
- * @property string $DefaultValue
- * @property string $ParameterType
- * @property bool $IsNoEcho
- * @property string $Description
- * @property ParameterConstraints $ParameterConstraints
+ * @property string|null $ParameterKey
+ * @property string|null $DefaultValue
+ * @property string|null $ParameterType
+ * @property bool|null $IsNoEcho
+ * @property string|null $Description
+ * @property ParameterConstraints|null $ParameterConstraints
  */
 class ProvisioningArtifactParameter extends Shape
 {
     /**
      * @param array{
-     *     ParameterKey?: string,
-     *     DefaultValue?: string,
-     *     ParameterType?: string,
-     *     IsNoEcho?: bool,
-     *     Description?: string,
-     *     ParameterConstraints?: ParameterConstraints
+     *     ParameterKey?: string|null,
+     *     DefaultValue?: string|null,
+     *     ParameterType?: string|null,
+     *     IsNoEcho?: bool|null,
+     *     Description?: string|null,
+     *     ParameterConstraints?: ParameterConstraints|null
      * } $args
      */
     public function __construct(array $args = [])

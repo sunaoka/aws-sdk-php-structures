@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Kafka\ListClustersV2\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConfigurationArn
- * @property int $ConfigurationRevision
- * @property string $KafkaVersion
+ * @property string|null $ConfigurationArn
+ * @property int|null $ConfigurationRevision
+ * @property string|null $KafkaVersion
  */
 class BrokerSoftwareInfo extends Shape
 {
     /**
      * @param array{
-     *     ConfigurationArn?: string,
-     *     ConfigurationRevision?: int,
-     *     KafkaVersion?: string
+     *     ConfigurationArn?: string|null,
+     *     ConfigurationRevision?: int|null,
+     *     KafkaVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

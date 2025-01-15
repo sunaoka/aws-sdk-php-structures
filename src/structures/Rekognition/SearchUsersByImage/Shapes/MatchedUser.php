@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\SearchUsersByImage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserId
- * @property 'ACTIVE'|'UPDATING'|'CREATING'|'CREATED' $UserStatus
+ * @property string|null $UserId
+ * @property 'ACTIVE'|'UPDATING'|'CREATING'|'CREATED'|null $UserStatus
  */
 class MatchedUser extends Shape
 {
     /**
      * @param array{
-     *     UserId?: string,
-     *     UserStatus?: 'ACTIVE'|'UPDATING'|'CREATING'|'CREATED'
+     *     UserId?: string|null,
+     *     UserStatus?: 'ACTIVE'|'UPDATING'|'CREATING'|'CREATED'|null
      * } $args
      */
     public function __construct(array $args = [])

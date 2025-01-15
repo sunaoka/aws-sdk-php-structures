@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $arn
  * @property string $id
- * @property string $name
- * @property string $description
- * @property SseConfig $sseConfig
+ * @property string|null $name
+ * @property string|null $description
+ * @property SseConfig|null $sseConfig
  * @property \Aws\Api\DateTimeResult $creationTime
  */
 class ReferenceStoreDetail extends Shape
@@ -18,9 +18,9 @@ class ReferenceStoreDetail extends Shape
      * @param array{
      *     arn: string,
      *     id: string,
-     *     name?: string,
-     *     description?: string,
-     *     sseConfig?: SseConfig,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     sseConfig?: SseConfig|null,
      *     creationTime: \Aws\Api\DateTimeResult
      * } $args
      */

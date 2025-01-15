@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateEndpointConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AsyncInferenceClientConfig $ClientConfig
+ * @property AsyncInferenceClientConfig|null $ClientConfig
  * @property AsyncInferenceOutputConfig $OutputConfig
  */
 class AsyncInferenceConfig extends Shape
 {
     /**
      * @param array{
-     *     ClientConfig?: AsyncInferenceClientConfig,
+     *     ClientConfig?: AsyncInferenceClientConfig|null,
      *     OutputConfig: AsyncInferenceOutputConfig
      * } $args
      */

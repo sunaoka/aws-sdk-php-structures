@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\MigrationHubRefactorSpaces\ListEnvironments\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property string $Description
- * @property string $EnvironmentId
- * @property ErrorResponse $Error
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property string $Name
- * @property 'TRANSIT_GATEWAY'|'NONE' $NetworkFabricType
- * @property string $OwnerAccountId
- * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED' $State
- * @property array<string, string> $Tags
- * @property string $TransitGatewayId
+ * @property string|null $Arn
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property string|null $Description
+ * @property string|null $EnvironmentId
+ * @property ErrorResponse|null $Error
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
+ * @property string|null $Name
+ * @property 'TRANSIT_GATEWAY'|'NONE'|null $NetworkFabricType
+ * @property string|null $OwnerAccountId
+ * @property 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|null $State
+ * @property array<string, string>|null $Tags
+ * @property string|null $TransitGatewayId
  */
 class EnvironmentSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     Description?: string,
-     *     EnvironmentId?: string,
-     *     Error?: ErrorResponse,
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     Name?: string,
-     *     NetworkFabricType?: 'TRANSIT_GATEWAY'|'NONE',
-     *     OwnerAccountId?: string,
-     *     State?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED',
-     *     Tags?: array<string, string>,
-     *     TransitGatewayId?: string
+     *     Arn?: string|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     Description?: string|null,
+     *     EnvironmentId?: string|null,
+     *     Error?: ErrorResponse|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     Name?: string|null,
+     *     NetworkFabricType?: 'TRANSIT_GATEWAY'|'NONE'|null,
+     *     OwnerAccountId?: string|null,
+     *     State?: 'CREATING'|'ACTIVE'|'DELETING'|'FAILED'|null,
+     *     Tags?: array<string, string>|null,
+     *     TransitGatewayId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

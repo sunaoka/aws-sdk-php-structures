@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $repositoryName
- * @property string $beforeCommitSpecifier
+ * @property string|null $beforeCommitSpecifier
  * @property string $afterCommitSpecifier
- * @property string $beforePath
- * @property string $afterPath
- * @property int $MaxResults
- * @property string $NextToken
+ * @property string|null $beforePath
+ * @property string|null $afterPath
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class GetDifferencesRequest extends Request
 {
     /**
      * @param array{
      *     repositoryName: string,
-     *     beforeCommitSpecifier?: string,
+     *     beforeCommitSpecifier?: string|null,
      *     afterCommitSpecifier: string,
-     *     beforePath?: string,
-     *     afterPath?: string,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     beforePath?: string|null,
+     *     afterPath?: string|null,
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

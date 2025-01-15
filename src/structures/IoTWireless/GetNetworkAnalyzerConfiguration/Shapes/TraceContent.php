@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetNetworkAnalyzerConfiguration\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $WirelessDeviceFrameInfo
- * @property 'INFO'|'ERROR'|'DISABLED' $LogLevel
- * @property 'ENABLED'|'DISABLED' $MulticastFrameInfo
+ * @property 'ENABLED'|'DISABLED'|null $WirelessDeviceFrameInfo
+ * @property 'INFO'|'ERROR'|'DISABLED'|null $LogLevel
+ * @property 'ENABLED'|'DISABLED'|null $MulticastFrameInfo
  */
 class TraceContent extends Shape
 {
     /**
      * @param array{
-     *     WirelessDeviceFrameInfo?: 'ENABLED'|'DISABLED',
-     *     LogLevel?: 'INFO'|'ERROR'|'DISABLED',
-     *     MulticastFrameInfo?: 'ENABLED'|'DISABLED'
+     *     WirelessDeviceFrameInfo?: 'ENABLED'|'DISABLED'|null,
+     *     LogLevel?: 'INFO'|'ERROR'|'DISABLED'|null,
+     *     MulticastFrameInfo?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

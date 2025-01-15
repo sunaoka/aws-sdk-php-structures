@@ -8,14 +8,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $ProjectArn
  * @property string $ProjectName
  * @property string $ProjectId
- * @property string $ProjectDescription
+ * @property string|null $ProjectDescription
  * @property Shapes\ServiceCatalogProvisioningDetails $ServiceCatalogProvisioningDetails
- * @property Shapes\ServiceCatalogProvisionedProductDetails $ServiceCatalogProvisionedProductDetails
+ * @property Shapes\ServiceCatalogProvisionedProductDetails|null $ServiceCatalogProvisionedProductDetails
  * @property 'Pending'|'CreateInProgress'|'CreateCompleted'|'CreateFailed'|'DeleteInProgress'|'DeleteFailed'|'DeleteCompleted'|'UpdateInProgress'|'UpdateCompleted'|'UpdateFailed' $ProjectStatus
- * @property Shapes\UserContext $CreatedBy
+ * @property Shapes\UserContext|null $CreatedBy
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property Shapes\UserContext $LastModifiedBy
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property Shapes\UserContext|null $LastModifiedBy
  */
 class DescribeProjectResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\StartMetadataGenerationRun;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $domainIdentifier
  * @property string $owningProjectIdentifier
  * @property Shapes\MetadataGenerationRunTarget $target
@@ -15,7 +15,7 @@ class StartMetadataGenerationRunRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     domainIdentifier: string,
      *     owningProjectIdentifier: string,
      *     target: Shapes\MetadataGenerationRunTarget,

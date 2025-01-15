@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $guardrailIdentifier
- * @property string $guardrailVersion
+ * @property string|null $guardrailVersion
  */
 class DeleteGuardrailRequest extends Request
 {
     /**
      * @param array{
      *     guardrailIdentifier: string,
-     *     guardrailVersion?: string
+     *     guardrailVersion?: string|null
      * } $args
      */
     public function __construct(array $args)

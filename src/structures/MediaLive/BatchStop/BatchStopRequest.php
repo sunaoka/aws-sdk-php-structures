@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\BatchStop;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ChannelIds
- * @property list<string> $MultiplexIds
+ * @property list<string>|null $ChannelIds
+ * @property list<string>|null $MultiplexIds
  */
 class BatchStopRequest extends Request
 {
     /**
      * @param array{
-     *     ChannelIds?: list<string>,
-     *     MultiplexIds?: list<string>
+     *     ChannelIds?: list<string>|null,
+     *     MultiplexIds?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

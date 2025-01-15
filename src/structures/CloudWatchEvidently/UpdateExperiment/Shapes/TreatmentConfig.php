@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvidently\UpdateExperiment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $feature
  * @property string $name
  * @property string $variation
@@ -14,7 +14,7 @@ class TreatmentConfig extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     feature: string,
      *     name: string,
      *     variation: string

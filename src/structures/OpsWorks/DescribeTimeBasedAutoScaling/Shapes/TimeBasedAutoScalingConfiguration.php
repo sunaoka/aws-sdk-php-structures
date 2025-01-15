@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeTimeBasedAutoScaling\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InstanceId
- * @property WeeklyAutoScalingSchedule $AutoScalingSchedule
+ * @property string|null $InstanceId
+ * @property WeeklyAutoScalingSchedule|null $AutoScalingSchedule
  */
 class TimeBasedAutoScalingConfiguration extends Shape
 {
     /**
      * @param array{
-     *     InstanceId?: string,
-     *     AutoScalingSchedule?: WeeklyAutoScalingSchedule
+     *     InstanceId?: string|null,
+     *     AutoScalingSchedule?: WeeklyAutoScalingSchedule|null
      * } $args
      */
     public function __construct(array $args = [])

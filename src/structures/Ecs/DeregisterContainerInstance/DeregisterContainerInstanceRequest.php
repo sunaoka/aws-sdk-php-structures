@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ecs\DeregisterContainerInstance;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $cluster
+ * @property string|null $cluster
  * @property string $containerInstance
- * @property bool $force
+ * @property bool|null $force
  */
 class DeregisterContainerInstanceRequest extends Request
 {
     /**
      * @param array{
-     *     cluster?: string,
+     *     cluster?: string|null,
      *     containerInstance: string,
-     *     force?: bool
+     *     force?: bool|null
      * } $args
      */
     public function __construct(array $args)

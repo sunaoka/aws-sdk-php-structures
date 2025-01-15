@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\BedrockAgent\UpdateKnowledgeBase\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RedshiftQueryEngineAwsDataCatalogStorageConfiguration $awsDataCatalogConfiguration
- * @property RedshiftQueryEngineRedshiftStorageConfiguration $redshiftConfiguration
+ * @property RedshiftQueryEngineAwsDataCatalogStorageConfiguration|null $awsDataCatalogConfiguration
+ * @property RedshiftQueryEngineRedshiftStorageConfiguration|null $redshiftConfiguration
  * @property 'REDSHIFT'|'AWS_DATA_CATALOG' $type
  */
 class RedshiftQueryEngineStorageConfiguration extends Shape
 {
     /**
      * @param array{
-     *     awsDataCatalogConfiguration?: RedshiftQueryEngineAwsDataCatalogStorageConfiguration,
-     *     redshiftConfiguration?: RedshiftQueryEngineRedshiftStorageConfiguration,
+     *     awsDataCatalogConfiguration?: RedshiftQueryEngineAwsDataCatalogStorageConfiguration|null,
+     *     redshiftConfiguration?: RedshiftQueryEngineRedshiftStorageConfiguration|null,
      *     type: 'REDSHIFT'|'AWS_DATA_CATALOG'
      * } $args
      */

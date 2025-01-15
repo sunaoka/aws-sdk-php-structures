@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReplicationGroupId
- * @property bool $Force
+ * @property bool|null $Force
  */
 class CompleteMigrationRequest extends Request
 {
     /**
      * @param array{
      *     ReplicationGroupId: string,
-     *     Force?: bool
+     *     Force?: bool|null
      * } $args
      */
     public function __construct(array $args)

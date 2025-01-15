@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\DisableFastSnapshotRestores\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SnapshotId
- * @property list<DisableFastSnapshotRestoreStateErrorItem> $FastSnapshotRestoreStateErrors
+ * @property string|null $SnapshotId
+ * @property list<DisableFastSnapshotRestoreStateErrorItem>|null $FastSnapshotRestoreStateErrors
  */
 class DisableFastSnapshotRestoreErrorItem extends Shape
 {
     /**
      * @param array{
-     *     SnapshotId?: string,
-     *     FastSnapshotRestoreStateErrors?: list<DisableFastSnapshotRestoreStateErrorItem>
+     *     SnapshotId?: string|null,
+     *     FastSnapshotRestoreStateErrors?: list<DisableFastSnapshotRestoreStateErrorItem>|null
      * } $args
      */
     public function __construct(array $args = [])

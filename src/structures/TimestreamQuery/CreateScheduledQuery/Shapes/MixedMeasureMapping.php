@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\TimestreamQuery\CreateScheduledQuery\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MeasureName
- * @property string $SourceColumn
- * @property string $TargetMeasureName
+ * @property string|null $MeasureName
+ * @property string|null $SourceColumn
+ * @property string|null $TargetMeasureName
  * @property 'BIGINT'|'BOOLEAN'|'DOUBLE'|'VARCHAR'|'MULTI' $MeasureValueType
- * @property list<MultiMeasureAttributeMapping> $MultiMeasureAttributeMappings
+ * @property list<MultiMeasureAttributeMapping>|null $MultiMeasureAttributeMappings
  */
 class MixedMeasureMapping extends Shape
 {
     /**
      * @param array{
-     *     MeasureName?: string,
-     *     SourceColumn?: string,
-     *     TargetMeasureName?: string,
+     *     MeasureName?: string|null,
+     *     SourceColumn?: string|null,
+     *     TargetMeasureName?: string|null,
      *     MeasureValueType: 'BIGINT'|'BOOLEAN'|'DOUBLE'|'VARCHAR'|'MULTI',
-     *     MultiMeasureAttributeMappings?: list<MultiMeasureAttributeMapping>
+     *     MultiMeasureAttributeMappings?: list<MultiMeasureAttributeMapping>|null
      * } $args
      */
     public function __construct(array $args)

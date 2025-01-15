@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DescribeReservedElasticsea
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ReservedElasticsearchInstanceOfferingId
- * @property int<min, 100> $MaxResults
- * @property string $NextToken
+ * @property string|null $ReservedElasticsearchInstanceOfferingId
+ * @property int<min, 100>|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeReservedElasticsearchInstanceOfferingsRequest extends Request
 {
     /**
      * @param array{
-     *     ReservedElasticsearchInstanceOfferingId?: string,
-     *     MaxResults?: int<min, 100>,
-     *     NextToken?: string
+     *     ReservedElasticsearchInstanceOfferingId?: string|null,
+     *     MaxResults?: int<min, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListLifecyclePolicies\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
- * @property string $description
- * @property 'DISABLED'|'ENABLED' $status
- * @property string $executionRole
- * @property 'AMI_IMAGE'|'CONTAINER_IMAGE' $resourceType
- * @property \Aws\Api\DateTimeResult $dateCreated
- * @property \Aws\Api\DateTimeResult $dateUpdated
- * @property \Aws\Api\DateTimeResult $dateLastRun
- * @property array<string, string> $tags
+ * @property string|null $arn
+ * @property string|null $name
+ * @property string|null $description
+ * @property 'DISABLED'|'ENABLED'|null $status
+ * @property string|null $executionRole
+ * @property 'AMI_IMAGE'|'CONTAINER_IMAGE'|null $resourceType
+ * @property \Aws\Api\DateTimeResult|null $dateCreated
+ * @property \Aws\Api\DateTimeResult|null $dateUpdated
+ * @property \Aws\Api\DateTimeResult|null $dateLastRun
+ * @property array<string, string>|null $tags
  */
 class LifecyclePolicySummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string,
-     *     description?: string,
-     *     status?: 'DISABLED'|'ENABLED',
-     *     executionRole?: string,
-     *     resourceType?: 'AMI_IMAGE'|'CONTAINER_IMAGE',
-     *     dateCreated?: \Aws\Api\DateTimeResult,
-     *     dateUpdated?: \Aws\Api\DateTimeResult,
-     *     dateLastRun?: \Aws\Api\DateTimeResult,
-     *     tags?: array<string, string>
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     status?: 'DISABLED'|'ENABLED'|null,
+     *     executionRole?: string|null,
+     *     resourceType?: 'AMI_IMAGE'|'CONTAINER_IMAGE'|null,
+     *     dateCreated?: \Aws\Api\DateTimeResult|null,
+     *     dateUpdated?: \Aws\Api\DateTimeResult|null,
+     *     dateLastRun?: \Aws\Api\DateTimeResult|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

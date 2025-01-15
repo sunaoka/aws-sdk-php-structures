@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ec2\TerminateClientVpnConnections;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ClientVpnEndpointId
- * @property string $Username
- * @property list<Shapes\TerminateConnectionStatus> $ConnectionStatuses
+ * @property string|null $ClientVpnEndpointId
+ * @property string|null $Username
+ * @property list<Shapes\TerminateConnectionStatus>|null $ConnectionStatuses
  */
 class TerminateClientVpnConnectionsResponse extends Response
 {

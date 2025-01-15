@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MailManager\UpdateRelay;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property Shapes\RelayAuthentication $Authentication
+ * @property Shapes\RelayAuthentication|null $Authentication
  * @property string $RelayId
- * @property string $RelayName
- * @property string $ServerName
- * @property int<1, 65535> $ServerPort
+ * @property string|null $RelayName
+ * @property string|null $ServerName
+ * @property int<1, 65535>|null $ServerPort
  */
 class UpdateRelayRequest extends Request
 {
     /**
      * @param array{
-     *     Authentication?: Shapes\RelayAuthentication,
+     *     Authentication?: Shapes\RelayAuthentication|null,
      *     RelayId: string,
-     *     RelayName?: string,
-     *     ServerName?: string,
-     *     ServerPort?: int<1, 65535>
+     *     RelayName?: string|null,
+     *     ServerName?: string|null,
+     *     ServerPort?: int<1, 65535>|null
      * } $args
      */
     public function __construct(array $args)

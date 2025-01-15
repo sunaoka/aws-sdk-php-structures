@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Lightsail\UpdateDistributionBundle;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $distributionName
- * @property string $bundleId
+ * @property string|null $distributionName
+ * @property string|null $bundleId
  */
 class UpdateDistributionBundleRequest extends Request
 {
     /**
      * @param array{
-     *     distributionName?: string,
-     *     bundleId?: string
+     *     distributionName?: string|null,
+     *     bundleId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

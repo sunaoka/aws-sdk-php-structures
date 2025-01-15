@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeAssociation;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\AssociationDescription $AssociationDescription
+ * @property Shapes\AssociationDescription|null $AssociationDescription
  */
 class DescribeAssociationResponse extends Response
 {

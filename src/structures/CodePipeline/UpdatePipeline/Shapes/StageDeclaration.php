@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property list<BlockerDeclaration> $blockers
+ * @property list<BlockerDeclaration>|null $blockers
  * @property list<ActionDeclaration> $actions
- * @property FailureConditions $onFailure
- * @property SuccessConditions $onSuccess
- * @property BeforeEntryConditions $beforeEntry
+ * @property FailureConditions|null $onFailure
+ * @property SuccessConditions|null $onSuccess
+ * @property BeforeEntryConditions|null $beforeEntry
  */
 class StageDeclaration extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     blockers?: list<BlockerDeclaration>,
+     *     blockers?: list<BlockerDeclaration>|null,
      *     actions: list<ActionDeclaration>,
-     *     onFailure?: FailureConditions,
-     *     onSuccess?: SuccessConditions,
-     *     beforeEntry?: BeforeEntryConditions
+     *     onFailure?: FailureConditions|null,
+     *     onSuccess?: SuccessConditions|null,
+     *     beforeEntry?: BeforeEntryConditions|null
      * } $args
      */
     public function __construct(array $args)

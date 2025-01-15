@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $TrafficPolicyVersionMarker
- * @property string $MaxItems
+ * @property string|null $TrafficPolicyVersionMarker
+ * @property string|null $MaxItems
  */
 class ListTrafficPolicyVersionsRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     TrafficPolicyVersionMarker?: string,
-     *     MaxItems?: string
+     *     TrafficPolicyVersionMarker?: string|null,
+     *     MaxItems?: string|null
      * } $args
      */
     public function __construct(array $args)

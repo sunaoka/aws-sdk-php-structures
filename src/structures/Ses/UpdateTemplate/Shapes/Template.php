@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $TemplateName
- * @property string $SubjectPart
- * @property string $TextPart
- * @property string $HtmlPart
+ * @property string|null $SubjectPart
+ * @property string|null $TextPart
+ * @property string|null $HtmlPart
  */
 class Template extends Shape
 {
     /**
      * @param array{
      *     TemplateName: string,
-     *     SubjectPart?: string,
-     *     TextPart?: string,
-     *     HtmlPart?: string
+     *     SubjectPart?: string|null,
+     *     TextPart?: string|null,
+     *     HtmlPart?: string|null
      * } $args
      */
     public function __construct(array $args)

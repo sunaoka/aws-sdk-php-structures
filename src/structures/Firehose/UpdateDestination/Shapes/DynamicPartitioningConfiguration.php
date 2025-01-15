@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Firehose\UpdateDestination\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property RetryOptions $RetryOptions
- * @property bool $Enabled
+ * @property RetryOptions|null $RetryOptions
+ * @property bool|null $Enabled
  */
 class DynamicPartitioningConfiguration extends Shape
 {
     /**
      * @param array{
-     *     RetryOptions?: RetryOptions,
-     *     Enabled?: bool
+     *     RetryOptions?: RetryOptions|null,
+     *     Enabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

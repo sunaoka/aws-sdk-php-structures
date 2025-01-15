@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateProjectMembership\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $groupIdentifier
- * @property string $userIdentifier
+ * @property string|null $groupIdentifier
+ * @property string|null $userIdentifier
  */
 class Member extends Shape
 {
     /**
      * @param array{
-     *     groupIdentifier?: string,
-     *     userIdentifier?: string
+     *     groupIdentifier?: string|null,
+     *     userIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args = [])

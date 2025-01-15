@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property list<string> $Inputs
- * @property RecipeReference $RecipeReference
- * @property list<RecipeStep> $RecipeSteps
+ * @property RecipeReference|null $RecipeReference
+ * @property list<RecipeStep>|null $RecipeSteps
  */
 class Recipe extends Shape
 {
@@ -16,8 +16,8 @@ class Recipe extends Shape
      * @param array{
      *     Name: string,
      *     Inputs: list<string>,
-     *     RecipeReference?: RecipeReference,
-     *     RecipeSteps?: list<RecipeStep>
+     *     RecipeReference?: RecipeReference|null,
+     *     RecipeSteps?: list<RecipeStep>|null
      * } $args
      */
     public function __construct(array $args)

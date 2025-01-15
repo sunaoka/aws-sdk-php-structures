@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CostOptimizationHub\GetRecommendation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ComputeSavingsPlansConfiguration $configuration
- * @property SavingsPlansCostCalculation $costCalculation
+ * @property ComputeSavingsPlansConfiguration|null $configuration
+ * @property SavingsPlansCostCalculation|null $costCalculation
  */
 class ComputeSavingsPlans extends Shape
 {
     /**
      * @param array{
-     *     configuration?: ComputeSavingsPlansConfiguration,
-     *     costCalculation?: SavingsPlansCostCalculation
+     *     configuration?: ComputeSavingsPlansConfiguration|null,
+     *     costCalculation?: SavingsPlansCostCalculation|null
      * } $args
      */
     public function __construct(array $args = [])

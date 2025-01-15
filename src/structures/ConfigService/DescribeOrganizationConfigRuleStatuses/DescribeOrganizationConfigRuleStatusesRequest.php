@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ConfigService\DescribeOrganizationConfigRuleSta
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $OrganizationConfigRuleNames
- * @property int<0, 100> $Limit
- * @property string $NextToken
+ * @property list<string>|null $OrganizationConfigRuleNames
+ * @property int<0, 100>|null $Limit
+ * @property string|null $NextToken
  */
 class DescribeOrganizationConfigRuleStatusesRequest extends Request
 {
     /**
      * @param array{
-     *     OrganizationConfigRuleNames?: list<string>,
-     *     Limit?: int<0, 100>,
-     *     NextToken?: string
+     *     OrganizationConfigRuleNames?: list<string>|null,
+     *     Limit?: int<0, 100>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

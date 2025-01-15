@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FlowDefinitionArn
  * @property 'Initializing'|'Active'|'Failed'|'Deleting' $FlowDefinitionStatus
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $FailureReason
+ * @property string|null $FailureReason
  */
 class FlowDefinitionSummary extends Shape
 {
@@ -19,7 +19,7 @@ class FlowDefinitionSummary extends Shape
      *     FlowDefinitionArn: string,
      *     FlowDefinitionStatus: 'Initializing'|'Active'|'Failed'|'Deleting',
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     FailureReason?: string
+     *     FailureReason?: string|null
      * } $args
      */
     public function __construct(array $args)

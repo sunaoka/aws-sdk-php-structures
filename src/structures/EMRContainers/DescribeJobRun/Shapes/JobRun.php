@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\EMRContainers\DescribeJobRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
- * @property string $virtualClusterId
- * @property string $arn
- * @property 'PENDING'|'SUBMITTED'|'RUNNING'|'FAILED'|'CANCELLED'|'CANCEL_PENDING'|'COMPLETED' $state
- * @property string $clientToken
- * @property string $executionRoleArn
- * @property string $releaseLabel
- * @property ConfigurationOverrides $configurationOverrides
- * @property JobDriver $jobDriver
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $createdBy
- * @property \Aws\Api\DateTimeResult $finishedAt
- * @property string $stateDetails
- * @property 'INTERNAL_ERROR'|'USER_ERROR'|'VALIDATION_ERROR'|'CLUSTER_UNAVAILABLE' $failureReason
- * @property array<string, string> $tags
- * @property RetryPolicyConfiguration $retryPolicyConfiguration
- * @property RetryPolicyExecution $retryPolicyExecution
+ * @property string|null $id
+ * @property string|null $name
+ * @property string|null $virtualClusterId
+ * @property string|null $arn
+ * @property 'PENDING'|'SUBMITTED'|'RUNNING'|'FAILED'|'CANCELLED'|'CANCEL_PENDING'|'COMPLETED'|null $state
+ * @property string|null $clientToken
+ * @property string|null $executionRoleArn
+ * @property string|null $releaseLabel
+ * @property ConfigurationOverrides|null $configurationOverrides
+ * @property JobDriver|null $jobDriver
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property string|null $createdBy
+ * @property \Aws\Api\DateTimeResult|null $finishedAt
+ * @property string|null $stateDetails
+ * @property 'INTERNAL_ERROR'|'USER_ERROR'|'VALIDATION_ERROR'|'CLUSTER_UNAVAILABLE'|null $failureReason
+ * @property array<string, string>|null $tags
+ * @property RetryPolicyConfiguration|null $retryPolicyConfiguration
+ * @property RetryPolicyExecution|null $retryPolicyExecution
  */
 class JobRun extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string,
-     *     virtualClusterId?: string,
-     *     arn?: string,
-     *     state?: 'PENDING'|'SUBMITTED'|'RUNNING'|'FAILED'|'CANCELLED'|'CANCEL_PENDING'|'COMPLETED',
-     *     clientToken?: string,
-     *     executionRoleArn?: string,
-     *     releaseLabel?: string,
-     *     configurationOverrides?: ConfigurationOverrides,
-     *     jobDriver?: JobDriver,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     createdBy?: string,
-     *     finishedAt?: \Aws\Api\DateTimeResult,
-     *     stateDetails?: string,
-     *     failureReason?: 'INTERNAL_ERROR'|'USER_ERROR'|'VALIDATION_ERROR'|'CLUSTER_UNAVAILABLE',
-     *     tags?: array<string, string>,
-     *     retryPolicyConfiguration?: RetryPolicyConfiguration,
-     *     retryPolicyExecution?: RetryPolicyExecution
+     *     id?: string|null,
+     *     name?: string|null,
+     *     virtualClusterId?: string|null,
+     *     arn?: string|null,
+     *     state?: 'PENDING'|'SUBMITTED'|'RUNNING'|'FAILED'|'CANCELLED'|'CANCEL_PENDING'|'COMPLETED'|null,
+     *     clientToken?: string|null,
+     *     executionRoleArn?: string|null,
+     *     releaseLabel?: string|null,
+     *     configurationOverrides?: ConfigurationOverrides|null,
+     *     jobDriver?: JobDriver|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     createdBy?: string|null,
+     *     finishedAt?: \Aws\Api\DateTimeResult|null,
+     *     stateDetails?: string|null,
+     *     failureReason?: 'INTERNAL_ERROR'|'USER_ERROR'|'VALIDATION_ERROR'|'CLUSTER_UNAVAILABLE'|null,
+     *     tags?: array<string, string>|null,
+     *     retryPolicyConfiguration?: RetryPolicyConfiguration|null,
+     *     retryPolicyExecution?: RetryPolicyExecution|null
      * } $args
      */
     public function __construct(array $args = [])

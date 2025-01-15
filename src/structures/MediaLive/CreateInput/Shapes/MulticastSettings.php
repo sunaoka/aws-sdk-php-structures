@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaLive\CreateInput\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<MulticastSource> $Sources
+ * @property list<MulticastSource>|null $Sources
  */
 class MulticastSettings extends Shape
 {
     /**
-     * @param array{Sources?: list<MulticastSource>} $args
+     * @param array{Sources?: list<MulticastSource>|null} $args
      */
     public function __construct(array $args = [])
     {

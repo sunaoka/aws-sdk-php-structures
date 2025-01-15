@@ -5,69 +5,69 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $jobArn
+ * @property string|null $jobArn
  * @property string $jobName
  * @property string $jobId
  * @property string $jobQueue
  * @property 'SUBMITTED'|'PENDING'|'RUNNABLE'|'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED' $status
- * @property string $shareIdentifier
- * @property int $schedulingPriority
- * @property list<AttemptDetail> $attempts
- * @property string $statusReason
- * @property int $createdAt
- * @property RetryStrategy $retryStrategy
+ * @property string|null $shareIdentifier
+ * @property int|null $schedulingPriority
+ * @property list<AttemptDetail>|null $attempts
+ * @property string|null $statusReason
+ * @property int|null $createdAt
+ * @property RetryStrategy|null $retryStrategy
  * @property int $startedAt
- * @property int $stoppedAt
- * @property list<JobDependency> $dependsOn
+ * @property int|null $stoppedAt
+ * @property list<JobDependency>|null $dependsOn
  * @property string $jobDefinition
- * @property array<string, string> $parameters
- * @property ContainerDetail $container
- * @property NodeDetails $nodeDetails
- * @property NodeProperties $nodeProperties
- * @property ArrayPropertiesDetail $arrayProperties
- * @property JobTimeout $timeout
- * @property array<string, string> $tags
- * @property bool $propagateTags
- * @property list<'EC2'|'FARGATE'> $platformCapabilities
- * @property EksPropertiesDetail $eksProperties
- * @property list<EksAttemptDetail> $eksAttempts
- * @property EcsPropertiesDetail $ecsProperties
- * @property bool $isCancelled
- * @property bool $isTerminated
+ * @property array<string, string>|null $parameters
+ * @property ContainerDetail|null $container
+ * @property NodeDetails|null $nodeDetails
+ * @property NodeProperties|null $nodeProperties
+ * @property ArrayPropertiesDetail|null $arrayProperties
+ * @property JobTimeout|null $timeout
+ * @property array<string, string>|null $tags
+ * @property bool|null $propagateTags
+ * @property list<'EC2'|'FARGATE'>|null $platformCapabilities
+ * @property EksPropertiesDetail|null $eksProperties
+ * @property list<EksAttemptDetail>|null $eksAttempts
+ * @property EcsPropertiesDetail|null $ecsProperties
+ * @property bool|null $isCancelled
+ * @property bool|null $isTerminated
  */
 class JobDetail extends Shape
 {
     /**
      * @param array{
-     *     jobArn?: string,
+     *     jobArn?: string|null,
      *     jobName: string,
      *     jobId: string,
      *     jobQueue: string,
      *     status: 'SUBMITTED'|'PENDING'|'RUNNABLE'|'STARTING'|'RUNNING'|'SUCCEEDED'|'FAILED',
-     *     shareIdentifier?: string,
-     *     schedulingPriority?: int,
-     *     attempts?: list<AttemptDetail>,
-     *     statusReason?: string,
-     *     createdAt?: int,
-     *     retryStrategy?: RetryStrategy,
+     *     shareIdentifier?: string|null,
+     *     schedulingPriority?: int|null,
+     *     attempts?: list<AttemptDetail>|null,
+     *     statusReason?: string|null,
+     *     createdAt?: int|null,
+     *     retryStrategy?: RetryStrategy|null,
      *     startedAt: int,
-     *     stoppedAt?: int,
-     *     dependsOn?: list<JobDependency>,
+     *     stoppedAt?: int|null,
+     *     dependsOn?: list<JobDependency>|null,
      *     jobDefinition: string,
-     *     parameters?: array<string, string>,
-     *     container?: ContainerDetail,
-     *     nodeDetails?: NodeDetails,
-     *     nodeProperties?: NodeProperties,
-     *     arrayProperties?: ArrayPropertiesDetail,
-     *     timeout?: JobTimeout,
-     *     tags?: array<string, string>,
-     *     propagateTags?: bool,
-     *     platformCapabilities?: list<'EC2'|'FARGATE'>,
-     *     eksProperties?: EksPropertiesDetail,
-     *     eksAttempts?: list<EksAttemptDetail>,
-     *     ecsProperties?: EcsPropertiesDetail,
-     *     isCancelled?: bool,
-     *     isTerminated?: bool
+     *     parameters?: array<string, string>|null,
+     *     container?: ContainerDetail|null,
+     *     nodeDetails?: NodeDetails|null,
+     *     nodeProperties?: NodeProperties|null,
+     *     arrayProperties?: ArrayPropertiesDetail|null,
+     *     timeout?: JobTimeout|null,
+     *     tags?: array<string, string>|null,
+     *     propagateTags?: bool|null,
+     *     platformCapabilities?: list<'EC2'|'FARGATE'>|null,
+     *     eksProperties?: EksPropertiesDetail|null,
+     *     eksAttempts?: list<EksAttemptDetail>|null,
+     *     ecsProperties?: EcsPropertiesDetail|null,
+     *     isCancelled?: bool|null,
+     *     isTerminated?: bool|null
      * } $args
      */
     public function __construct(array $args)

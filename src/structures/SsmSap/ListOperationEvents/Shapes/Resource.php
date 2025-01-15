@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SsmSap\ListOperationEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ResourceArn
- * @property string $ResourceType
+ * @property string|null $ResourceArn
+ * @property string|null $ResourceType
  */
 class Resource extends Shape
 {
     /**
      * @param array{
-     *     ResourceArn?: string,
-     *     ResourceType?: string
+     *     ResourceArn?: string|null,
+     *     ResourceType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

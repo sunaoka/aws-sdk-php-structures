@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\GameLift\DescribeFleetLocationAttributes\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LocationState $LocationState
- * @property list<'AUTO_SCALING'> $StoppedActions
- * @property 'PENDING_UPDATE' $UpdateStatus
+ * @property LocationState|null $LocationState
+ * @property list<'AUTO_SCALING'>|null $StoppedActions
+ * @property 'PENDING_UPDATE'|null $UpdateStatus
  */
 class LocationAttributes extends Shape
 {
     /**
      * @param array{
-     *     LocationState?: LocationState,
-     *     StoppedActions?: list<'AUTO_SCALING'>,
-     *     UpdateStatus?: 'PENDING_UPDATE'
+     *     LocationState?: LocationState|null,
+     *     StoppedActions?: list<'AUTO_SCALING'>|null,
+     *     UpdateStatus?: 'PENDING_UPDATE'|null
      * } $args
      */
     public function __construct(array $args = [])

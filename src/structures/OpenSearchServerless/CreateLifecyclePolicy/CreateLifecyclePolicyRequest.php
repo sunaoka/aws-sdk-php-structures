@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\CreateLifecyclePolicy;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property string $description
+ * @property string|null $clientToken
+ * @property string|null $description
  * @property string $name
  * @property string $policy
  * @property 'retention' $type
@@ -15,8 +15,8 @@ class CreateLifecyclePolicyRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     description?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
      *     name: string,
      *     policy: string,
      *     type: 'retention'

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\RunScheduledInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DeviceName
- * @property ScheduledInstancesEbs $Ebs
- * @property string $NoDevice
- * @property string $VirtualName
+ * @property string|null $DeviceName
+ * @property ScheduledInstancesEbs|null $Ebs
+ * @property string|null $NoDevice
+ * @property string|null $VirtualName
  */
 class ScheduledInstancesBlockDeviceMapping extends Shape
 {
     /**
      * @param array{
-     *     DeviceName?: string,
-     *     Ebs?: ScheduledInstancesEbs,
-     *     NoDevice?: string,
-     *     VirtualName?: string
+     *     DeviceName?: string|null,
+     *     Ebs?: ScheduledInstancesEbs|null,
+     *     NoDevice?: string|null,
+     *     VirtualName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

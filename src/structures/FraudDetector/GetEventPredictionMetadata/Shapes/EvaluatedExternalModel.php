@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetEventPredictionMetadata\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $modelEndpoint
- * @property bool $useEventVariables
- * @property array<string, string> $inputVariables
- * @property array<string, string> $outputVariables
+ * @property string|null $modelEndpoint
+ * @property bool|null $useEventVariables
+ * @property array<string, string>|null $inputVariables
+ * @property array<string, string>|null $outputVariables
  */
 class EvaluatedExternalModel extends Shape
 {
     /**
      * @param array{
-     *     modelEndpoint?: string,
-     *     useEventVariables?: bool,
-     *     inputVariables?: array<string, string>,
-     *     outputVariables?: array<string, string>
+     *     modelEndpoint?: string|null,
+     *     useEventVariables?: bool|null,
+     *     inputVariables?: array<string, string>|null,
+     *     outputVariables?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

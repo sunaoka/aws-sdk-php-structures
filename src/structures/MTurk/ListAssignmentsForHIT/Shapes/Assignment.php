@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\MTurk\ListAssignmentsForHIT\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AssignmentId
- * @property string $WorkerId
- * @property string $HITId
- * @property 'Submitted'|'Approved'|'Rejected' $AssignmentStatus
- * @property \Aws\Api\DateTimeResult $AutoApprovalTime
- * @property \Aws\Api\DateTimeResult $AcceptTime
- * @property \Aws\Api\DateTimeResult $SubmitTime
- * @property \Aws\Api\DateTimeResult $ApprovalTime
- * @property \Aws\Api\DateTimeResult $RejectionTime
- * @property \Aws\Api\DateTimeResult $Deadline
- * @property string $Answer
- * @property string $RequesterFeedback
+ * @property string|null $AssignmentId
+ * @property string|null $WorkerId
+ * @property string|null $HITId
+ * @property 'Submitted'|'Approved'|'Rejected'|null $AssignmentStatus
+ * @property \Aws\Api\DateTimeResult|null $AutoApprovalTime
+ * @property \Aws\Api\DateTimeResult|null $AcceptTime
+ * @property \Aws\Api\DateTimeResult|null $SubmitTime
+ * @property \Aws\Api\DateTimeResult|null $ApprovalTime
+ * @property \Aws\Api\DateTimeResult|null $RejectionTime
+ * @property \Aws\Api\DateTimeResult|null $Deadline
+ * @property string|null $Answer
+ * @property string|null $RequesterFeedback
  */
 class Assignment extends Shape
 {
     /**
      * @param array{
-     *     AssignmentId?: string,
-     *     WorkerId?: string,
-     *     HITId?: string,
-     *     AssignmentStatus?: 'Submitted'|'Approved'|'Rejected',
-     *     AutoApprovalTime?: \Aws\Api\DateTimeResult,
-     *     AcceptTime?: \Aws\Api\DateTimeResult,
-     *     SubmitTime?: \Aws\Api\DateTimeResult,
-     *     ApprovalTime?: \Aws\Api\DateTimeResult,
-     *     RejectionTime?: \Aws\Api\DateTimeResult,
-     *     Deadline?: \Aws\Api\DateTimeResult,
-     *     Answer?: string,
-     *     RequesterFeedback?: string
+     *     AssignmentId?: string|null,
+     *     WorkerId?: string|null,
+     *     HITId?: string|null,
+     *     AssignmentStatus?: 'Submitted'|'Approved'|'Rejected'|null,
+     *     AutoApprovalTime?: \Aws\Api\DateTimeResult|null,
+     *     AcceptTime?: \Aws\Api\DateTimeResult|null,
+     *     SubmitTime?: \Aws\Api\DateTimeResult|null,
+     *     ApprovalTime?: \Aws\Api\DateTimeResult|null,
+     *     RejectionTime?: \Aws\Api\DateTimeResult|null,
+     *     Deadline?: \Aws\Api\DateTimeResult|null,
+     *     Answer?: string|null,
+     *     RequesterFeedback?: string|null
      * } $args
      */
     public function __construct(array $args = [])

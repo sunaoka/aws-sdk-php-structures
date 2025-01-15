@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $arn
- * @property string $name
- * @property string $description
- * @property Shapes\Expression $dataFilterExpression
+ * @property string|null $name
+ * @property string|null $description
+ * @property Shapes\Expression|null $dataFilterExpression
  */
 class UpdateBillingViewRequest extends Request
 {
     /**
      * @param array{
      *     arn: string,
-     *     name?: string,
-     *     description?: string,
-     *     dataFilterExpression?: Shapes\Expression
+     *     name?: string|null,
+     *     description?: string|null,
+     *     dataFilterExpression?: Shapes\Expression|null
      * } $args
      */
     public function __construct(array $args)

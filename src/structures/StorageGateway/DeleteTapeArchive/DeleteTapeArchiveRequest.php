@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $TapeARN
- * @property bool $BypassGovernanceRetention
+ * @property bool|null $BypassGovernanceRetention
  */
 class DeleteTapeArchiveRequest extends Request
 {
     /**
      * @param array{
      *     TapeARN: string,
-     *     BypassGovernanceRetention?: bool
+     *     BypassGovernanceRetention?: bool|null
      * } $args
      */
     public function __construct(array $args)

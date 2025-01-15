@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'launchPermission' $Attribute
  * @property string $ImageId
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class ResetImageAttributeRequest extends Request
 {
@@ -15,7 +15,7 @@ class ResetImageAttributeRequest extends Request
      * @param array{
      *     Attribute: 'launchPermission',
      *     ImageId: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

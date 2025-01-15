@@ -9,11 +9,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property \Aws\Api\DateTimeResult $startDateTime
  * @property \Aws\Api\DateTimeResult $endDateTime
  * @property list<Shapes\AnalyticsIntentMetric> $metrics
- * @property list<Shapes\AnalyticsBinBySpecification> $binBy
- * @property list<Shapes\AnalyticsIntentGroupBySpecification> $groupBy
- * @property list<Shapes\AnalyticsIntentFilter> $filters
- * @property int<1, 1000> $maxResults
- * @property string $nextToken
+ * @property list<Shapes\AnalyticsBinBySpecification>|null $binBy
+ * @property list<Shapes\AnalyticsIntentGroupBySpecification>|null $groupBy
+ * @property list<Shapes\AnalyticsIntentFilter>|null $filters
+ * @property int<1, 1000>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListIntentMetricsRequest extends Request
 {
@@ -23,11 +23,11 @@ class ListIntentMetricsRequest extends Request
      *     startDateTime: \Aws\Api\DateTimeResult,
      *     endDateTime: \Aws\Api\DateTimeResult,
      *     metrics: list<Shapes\AnalyticsIntentMetric>,
-     *     binBy?: list<Shapes\AnalyticsBinBySpecification>,
-     *     groupBy?: list<Shapes\AnalyticsIntentGroupBySpecification>,
-     *     filters?: list<Shapes\AnalyticsIntentFilter>,
-     *     maxResults?: int<1, 1000>,
-     *     nextToken?: string
+     *     binBy?: list<Shapes\AnalyticsBinBySpecification>|null,
+     *     groupBy?: list<Shapes\AnalyticsIntentGroupBySpecification>|null,
+     *     filters?: list<Shapes\AnalyticsIntentFilter>|null,
+     *     maxResults?: int<1, 1000>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

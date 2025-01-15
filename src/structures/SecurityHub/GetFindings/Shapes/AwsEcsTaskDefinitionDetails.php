@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AwsEcsTaskDefinitionContainerDefinitionsDetails> $ContainerDefinitions
- * @property string $Cpu
- * @property string $ExecutionRoleArn
- * @property string $Family
- * @property list<AwsEcsTaskDefinitionInferenceAcceleratorsDetails> $InferenceAccelerators
- * @property string $IpcMode
- * @property string $Memory
- * @property string $NetworkMode
- * @property string $PidMode
- * @property list<AwsEcsTaskDefinitionPlacementConstraintsDetails> $PlacementConstraints
- * @property AwsEcsTaskDefinitionProxyConfigurationDetails $ProxyConfiguration
- * @property list<string> $RequiresCompatibilities
- * @property string $TaskRoleArn
- * @property list<AwsEcsTaskDefinitionVolumesDetails> $Volumes
- * @property string $Status
+ * @property list<AwsEcsTaskDefinitionContainerDefinitionsDetails>|null $ContainerDefinitions
+ * @property string|null $Cpu
+ * @property string|null $ExecutionRoleArn
+ * @property string|null $Family
+ * @property list<AwsEcsTaskDefinitionInferenceAcceleratorsDetails>|null $InferenceAccelerators
+ * @property string|null $IpcMode
+ * @property string|null $Memory
+ * @property string|null $NetworkMode
+ * @property string|null $PidMode
+ * @property list<AwsEcsTaskDefinitionPlacementConstraintsDetails>|null $PlacementConstraints
+ * @property AwsEcsTaskDefinitionProxyConfigurationDetails|null $ProxyConfiguration
+ * @property list<string>|null $RequiresCompatibilities
+ * @property string|null $TaskRoleArn
+ * @property list<AwsEcsTaskDefinitionVolumesDetails>|null $Volumes
+ * @property string|null $Status
  */
 class AwsEcsTaskDefinitionDetails extends Shape
 {
     /**
      * @param array{
-     *     ContainerDefinitions?: list<AwsEcsTaskDefinitionContainerDefinitionsDetails>,
-     *     Cpu?: string,
-     *     ExecutionRoleArn?: string,
-     *     Family?: string,
-     *     InferenceAccelerators?: list<AwsEcsTaskDefinitionInferenceAcceleratorsDetails>,
-     *     IpcMode?: string,
-     *     Memory?: string,
-     *     NetworkMode?: string,
-     *     PidMode?: string,
-     *     PlacementConstraints?: list<AwsEcsTaskDefinitionPlacementConstraintsDetails>,
-     *     ProxyConfiguration?: AwsEcsTaskDefinitionProxyConfigurationDetails,
-     *     RequiresCompatibilities?: list<string>,
-     *     TaskRoleArn?: string,
-     *     Volumes?: list<AwsEcsTaskDefinitionVolumesDetails>,
-     *     Status?: string
+     *     ContainerDefinitions?: list<AwsEcsTaskDefinitionContainerDefinitionsDetails>|null,
+     *     Cpu?: string|null,
+     *     ExecutionRoleArn?: string|null,
+     *     Family?: string|null,
+     *     InferenceAccelerators?: list<AwsEcsTaskDefinitionInferenceAcceleratorsDetails>|null,
+     *     IpcMode?: string|null,
+     *     Memory?: string|null,
+     *     NetworkMode?: string|null,
+     *     PidMode?: string|null,
+     *     PlacementConstraints?: list<AwsEcsTaskDefinitionPlacementConstraintsDetails>|null,
+     *     ProxyConfiguration?: AwsEcsTaskDefinitionProxyConfigurationDetails|null,
+     *     RequiresCompatibilities?: list<string>|null,
+     *     TaskRoleArn?: string|null,
+     *     Volumes?: list<AwsEcsTaskDefinitionVolumesDetails>|null,
+     *     Status?: string|null
      * } $args
      */
     public function __construct(array $args = [])

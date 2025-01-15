@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $OutpostIdentifier
  * @property string $CapacityTaskId
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListBlockingInstancesForCapacityTaskRequest extends Request
 {
@@ -16,8 +16,8 @@ class ListBlockingInstancesForCapacityTaskRequest extends Request
      * @param array{
      *     OutpostIdentifier: string,
      *     CapacityTaskId: string,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

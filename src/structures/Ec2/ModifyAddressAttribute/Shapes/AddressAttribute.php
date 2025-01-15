@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyAddressAttribute\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PublicIp
- * @property string $AllocationId
- * @property string $PtrRecord
- * @property PtrUpdateStatus $PtrRecordUpdate
+ * @property string|null $PublicIp
+ * @property string|null $AllocationId
+ * @property string|null $PtrRecord
+ * @property PtrUpdateStatus|null $PtrRecordUpdate
  */
 class AddressAttribute extends Shape
 {
     /**
      * @param array{
-     *     PublicIp?: string,
-     *     AllocationId?: string,
-     *     PtrRecord?: string,
-     *     PtrRecordUpdate?: PtrUpdateStatus
+     *     PublicIp?: string|null,
+     *     AllocationId?: string|null,
+     *     PtrRecord?: string|null,
+     *     PtrRecordUpdate?: PtrUpdateStatus|null
      * } $args
      */
     public function __construct(array $args = [])

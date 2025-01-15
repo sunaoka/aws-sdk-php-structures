@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ConfigService\PutOrganizationConfigRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Description
+ * @property string|null $Description
  * @property string $RuleIdentifier
- * @property string $InputParameters
- * @property 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours' $MaximumExecutionFrequency
- * @property list<string> $ResourceTypesScope
- * @property string $ResourceIdScope
- * @property string $TagKeyScope
- * @property string $TagValueScope
+ * @property string|null $InputParameters
+ * @property 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours'|null $MaximumExecutionFrequency
+ * @property list<string>|null $ResourceTypesScope
+ * @property string|null $ResourceIdScope
+ * @property string|null $TagKeyScope
+ * @property string|null $TagValueScope
  */
 class OrganizationManagedRuleMetadata extends Shape
 {
     /**
      * @param array{
-     *     Description?: string,
+     *     Description?: string|null,
      *     RuleIdentifier: string,
-     *     InputParameters?: string,
-     *     MaximumExecutionFrequency?: 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours',
-     *     ResourceTypesScope?: list<string>,
-     *     ResourceIdScope?: string,
-     *     TagKeyScope?: string,
-     *     TagValueScope?: string
+     *     InputParameters?: string|null,
+     *     MaximumExecutionFrequency?: 'One_Hour'|'Three_Hours'|'Six_Hours'|'Twelve_Hours'|'TwentyFour_Hours'|null,
+     *     ResourceTypesScope?: list<string>|null,
+     *     ResourceIdScope?: string|null,
+     *     TagKeyScope?: string|null,
+     *     TagValueScope?: string|null
      * } $args
      */
     public function __construct(array $args)

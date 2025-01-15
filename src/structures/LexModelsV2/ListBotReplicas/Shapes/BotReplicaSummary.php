@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListBotReplicas\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $replicaRegion
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property 'Enabling'|'Enabled'|'Deleting'|'Failed' $botReplicaStatus
- * @property list<string> $failureReasons
+ * @property string|null $replicaRegion
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property 'Enabling'|'Enabled'|'Deleting'|'Failed'|null $botReplicaStatus
+ * @property list<string>|null $failureReasons
  */
 class BotReplicaSummary extends Shape
 {
     /**
      * @param array{
-     *     replicaRegion?: string,
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     botReplicaStatus?: 'Enabling'|'Enabled'|'Deleting'|'Failed',
-     *     failureReasons?: list<string>
+     *     replicaRegion?: string|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     botReplicaStatus?: 'Enabling'|'Enabled'|'Deleting'|'Failed'|null,
+     *     failureReasons?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

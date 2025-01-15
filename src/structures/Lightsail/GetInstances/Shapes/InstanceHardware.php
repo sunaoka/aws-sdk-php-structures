@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $cpuCount
- * @property list<Disk> $disks
- * @property float $ramSizeInGb
+ * @property int|null $cpuCount
+ * @property list<Disk>|null $disks
+ * @property float|null $ramSizeInGb
  */
 class InstanceHardware extends Shape
 {
     /**
      * @param array{
-     *     cpuCount?: int,
-     *     disks?: list<Disk>,
-     *     ramSizeInGb?: float
+     *     cpuCount?: int|null,
+     *     disks?: list<Disk>|null,
+     *     ramSizeInGb?: float|null
      * } $args
      */
     public function __construct(array $args = [])

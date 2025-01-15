@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OAM\ListLinks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<1, 5> $MaxResults
- * @property string $NextToken
+ * @property int<1, 5>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListLinksRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<1, 5>,
-     *     NextToken?: string
+     *     MaxResults?: int<1, 5>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

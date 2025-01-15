@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $sourceName
  * @property string $instanceType
  * @property 'DEFAULT'|'INSTANCE'|'NONE'|'CLOSED' $portInfoSource
- * @property string $userData
+ * @property string|null $userData
  * @property string $availabilityZone
  */
 class InstanceEntry extends Shape
@@ -18,7 +18,7 @@ class InstanceEntry extends Shape
      *     sourceName: string,
      *     instanceType: string,
      *     portInfoSource: 'DEFAULT'|'INSTANCE'|'NONE'|'CLOSED',
-     *     userData?: string,
+     *     userData?: string|null,
      *     availabilityZone: string
      * } $args
      */

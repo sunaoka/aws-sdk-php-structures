@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Connect\ListRealtimeContactAnalysisSegmentsV2\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<RealTimeContactAnalysisCharacterInterval> $CharacterOffsets
+ * @property list<RealTimeContactAnalysisCharacterInterval>|null $CharacterOffsets
  */
 class RealTimeContactAnalysisTranscriptItemRedaction extends Shape
 {
     /**
-     * @param array{CharacterOffsets?: list<RealTimeContactAnalysisCharacterInterval>} $args
+     * @param array{CharacterOffsets?: list<RealTimeContactAnalysisCharacterInterval>|null} $args
      */
     public function __construct(array $args = [])
     {

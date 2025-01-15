@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ProgressUpdateStream
  * @property string $MigrationTaskName
  * @property string $SourceResourceName
- * @property bool $DryRun
+ * @property bool|null $DryRun
  */
 class DisassociateSourceResourceRequest extends Request
 {
@@ -17,7 +17,7 @@ class DisassociateSourceResourceRequest extends Request
      *     ProgressUpdateStream: string,
      *     MigrationTaskName: string,
      *     SourceResourceName: string,
-     *     DryRun?: bool
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

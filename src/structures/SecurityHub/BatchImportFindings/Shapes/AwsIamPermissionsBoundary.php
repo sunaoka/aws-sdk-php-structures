@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PermissionsBoundaryArn
- * @property string $PermissionsBoundaryType
+ * @property string|null $PermissionsBoundaryArn
+ * @property string|null $PermissionsBoundaryType
  */
 class AwsIamPermissionsBoundary extends Shape
 {
     /**
      * @param array{
-     *     PermissionsBoundaryArn?: string,
-     *     PermissionsBoundaryType?: string
+     *     PermissionsBoundaryArn?: string|null,
+     *     PermissionsBoundaryType?: string|null
      * } $args
      */
     public function __construct(array $args = [])

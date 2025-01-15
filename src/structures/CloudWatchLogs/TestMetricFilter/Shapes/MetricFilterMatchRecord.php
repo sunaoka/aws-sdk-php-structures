@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\TestMetricFilter\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $eventNumber
- * @property string $eventMessage
- * @property array<string, string> $extractedValues
+ * @property int|null $eventNumber
+ * @property string|null $eventMessage
+ * @property array<string, string>|null $extractedValues
  */
 class MetricFilterMatchRecord extends Shape
 {
     /**
      * @param array{
-     *     eventNumber?: int,
-     *     eventMessage?: string,
-     *     extractedValues?: array<string, string>
+     *     eventNumber?: int|null,
+     *     eventMessage?: string|null,
+     *     extractedValues?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

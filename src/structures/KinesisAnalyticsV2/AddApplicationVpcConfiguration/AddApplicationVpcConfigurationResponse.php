@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\AddApplicationVpcConfigurati
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ApplicationARN
- * @property int<1, 999999999> $ApplicationVersionId
- * @property Shapes\VpcConfigurationDescription $VpcConfigurationDescription
- * @property string $OperationId
+ * @property string|null $ApplicationARN
+ * @property int<1, 999999999>|null $ApplicationVersionId
+ * @property Shapes\VpcConfigurationDescription|null $VpcConfigurationDescription
+ * @property string|null $OperationId
  */
 class AddApplicationVpcConfigurationResponse extends Response
 {

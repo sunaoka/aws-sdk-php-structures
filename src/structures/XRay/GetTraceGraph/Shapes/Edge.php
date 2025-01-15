@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\XRay\GetTraceGraph\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $ReferenceId
- * @property \Aws\Api\DateTimeResult $StartTime
- * @property \Aws\Api\DateTimeResult $EndTime
- * @property EdgeStatistics $SummaryStatistics
- * @property list<HistogramEntry> $ResponseTimeHistogram
- * @property list<Alias> $Aliases
- * @property string $EdgeType
- * @property list<HistogramEntry> $ReceivedEventAgeHistogram
+ * @property int|null $ReferenceId
+ * @property \Aws\Api\DateTimeResult|null $StartTime
+ * @property \Aws\Api\DateTimeResult|null $EndTime
+ * @property EdgeStatistics|null $SummaryStatistics
+ * @property list<HistogramEntry>|null $ResponseTimeHistogram
+ * @property list<Alias>|null $Aliases
+ * @property string|null $EdgeType
+ * @property list<HistogramEntry>|null $ReceivedEventAgeHistogram
  */
 class Edge extends Shape
 {
     /**
      * @param array{
-     *     ReferenceId?: int,
-     *     StartTime?: \Aws\Api\DateTimeResult,
-     *     EndTime?: \Aws\Api\DateTimeResult,
-     *     SummaryStatistics?: EdgeStatistics,
-     *     ResponseTimeHistogram?: list<HistogramEntry>,
-     *     Aliases?: list<Alias>,
-     *     EdgeType?: string,
-     *     ReceivedEventAgeHistogram?: list<HistogramEntry>
+     *     ReferenceId?: int|null,
+     *     StartTime?: \Aws\Api\DateTimeResult|null,
+     *     EndTime?: \Aws\Api\DateTimeResult|null,
+     *     SummaryStatistics?: EdgeStatistics|null,
+     *     ResponseTimeHistogram?: list<HistogramEntry>|null,
+     *     Aliases?: list<Alias>|null,
+     *     EdgeType?: string|null,
+     *     ReceivedEventAgeHistogram?: list<HistogramEntry>|null
      * } $args
      */
     public function __construct(array $args = [])

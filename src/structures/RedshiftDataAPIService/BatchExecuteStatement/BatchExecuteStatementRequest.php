@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\RedshiftDataAPIService\BatchExecuteStatement;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientToken
- * @property string $ClusterIdentifier
- * @property string $Database
- * @property string $DbUser
- * @property 'JSON'|'CSV' $ResultFormat
- * @property string $SecretArn
- * @property string $SessionId
- * @property int<0, 86400> $SessionKeepAliveSeconds
+ * @property string|null $ClientToken
+ * @property string|null $ClusterIdentifier
+ * @property string|null $Database
+ * @property string|null $DbUser
+ * @property 'JSON'|'CSV'|null $ResultFormat
+ * @property string|null $SecretArn
+ * @property string|null $SessionId
+ * @property int<0, 86400>|null $SessionKeepAliveSeconds
  * @property list<string> $Sqls
- * @property string $StatementName
- * @property bool $WithEvent
- * @property string $WorkgroupName
+ * @property string|null $StatementName
+ * @property bool|null $WithEvent
+ * @property string|null $WorkgroupName
  */
 class BatchExecuteStatementRequest extends Request
 {
     /**
      * @param array{
-     *     ClientToken?: string,
-     *     ClusterIdentifier?: string,
-     *     Database?: string,
-     *     DbUser?: string,
-     *     ResultFormat?: 'JSON'|'CSV',
-     *     SecretArn?: string,
-     *     SessionId?: string,
-     *     SessionKeepAliveSeconds?: int<0, 86400>,
+     *     ClientToken?: string|null,
+     *     ClusterIdentifier?: string|null,
+     *     Database?: string|null,
+     *     DbUser?: string|null,
+     *     ResultFormat?: 'JSON'|'CSV'|null,
+     *     SecretArn?: string|null,
+     *     SessionId?: string|null,
+     *     SessionKeepAliveSeconds?: int<0, 86400>|null,
      *     Sqls: list<string>,
-     *     StatementName?: string,
-     *     WithEvent?: bool,
-     *     WorkgroupName?: string
+     *     StatementName?: string|null,
+     *     WithEvent?: bool|null,
+     *     WorkgroupName?: string|null
      * } $args
      */
     public function __construct(array $args)

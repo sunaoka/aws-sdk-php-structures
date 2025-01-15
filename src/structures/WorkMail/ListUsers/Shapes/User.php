@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\WorkMail\ListUsers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Email
- * @property string $Name
- * @property string $DisplayName
- * @property 'ENABLED'|'DISABLED'|'DELETED' $State
- * @property 'USER'|'RESOURCE'|'SYSTEM_USER'|'REMOTE_USER' $UserRole
- * @property \Aws\Api\DateTimeResult $EnabledDate
- * @property \Aws\Api\DateTimeResult $DisabledDate
- * @property string $IdentityProviderUserId
- * @property string $IdentityProviderIdentityStoreId
+ * @property string|null $Id
+ * @property string|null $Email
+ * @property string|null $Name
+ * @property string|null $DisplayName
+ * @property 'ENABLED'|'DISABLED'|'DELETED'|null $State
+ * @property 'USER'|'RESOURCE'|'SYSTEM_USER'|'REMOTE_USER'|null $UserRole
+ * @property \Aws\Api\DateTimeResult|null $EnabledDate
+ * @property \Aws\Api\DateTimeResult|null $DisabledDate
+ * @property string|null $IdentityProviderUserId
+ * @property string|null $IdentityProviderIdentityStoreId
  */
 class User extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Email?: string,
-     *     Name?: string,
-     *     DisplayName?: string,
-     *     State?: 'ENABLED'|'DISABLED'|'DELETED',
-     *     UserRole?: 'USER'|'RESOURCE'|'SYSTEM_USER'|'REMOTE_USER',
-     *     EnabledDate?: \Aws\Api\DateTimeResult,
-     *     DisabledDate?: \Aws\Api\DateTimeResult,
-     *     IdentityProviderUserId?: string,
-     *     IdentityProviderIdentityStoreId?: string
+     *     Id?: string|null,
+     *     Email?: string|null,
+     *     Name?: string|null,
+     *     DisplayName?: string|null,
+     *     State?: 'ENABLED'|'DISABLED'|'DELETED'|null,
+     *     UserRole?: 'USER'|'RESOURCE'|'SYSTEM_USER'|'REMOTE_USER'|null,
+     *     EnabledDate?: \Aws\Api\DateTimeResult|null,
+     *     DisabledDate?: \Aws\Api\DateTimeResult|null,
+     *     IdentityProviderUserId?: string|null,
+     *     IdentityProviderIdentityStoreId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetServerSt
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ServerStrategy> $serverStrategies
+ * @property list<Shapes\ServerStrategy>|null $serverStrategies
  */
 class GetServerStrategiesResponse extends Response
 {

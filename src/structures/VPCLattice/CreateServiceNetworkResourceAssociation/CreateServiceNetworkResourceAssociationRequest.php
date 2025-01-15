@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\VPCLattice\CreateServiceNetworkResourceAssociat
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $resourceConfigurationIdentifier
  * @property string $serviceNetworkIdentifier
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateServiceNetworkResourceAssociationRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     resourceConfigurationIdentifier: string,
      *     serviceNetworkIdentifier: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

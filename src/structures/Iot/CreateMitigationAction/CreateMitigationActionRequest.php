@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $actionName
  * @property string $roleArn
  * @property Shapes\MitigationActionParams $actionParams
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateMitigationActionRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateMitigationActionRequest extends Request
      *     actionName: string,
      *     roleArn: string,
      *     actionParams: Shapes\MitigationActionParams,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

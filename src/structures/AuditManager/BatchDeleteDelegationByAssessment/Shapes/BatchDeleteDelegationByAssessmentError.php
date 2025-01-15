@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AuditManager\BatchDeleteDelegationByAssessment\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $delegationId
- * @property string $errorCode
- * @property string $errorMessage
+ * @property string|null $delegationId
+ * @property string|null $errorCode
+ * @property string|null $errorMessage
  */
 class BatchDeleteDelegationByAssessmentError extends Shape
 {
     /**
      * @param array{
-     *     delegationId?: string,
-     *     errorCode?: string,
-     *     errorMessage?: string
+     *     delegationId?: string|null,
+     *     errorCode?: string|null,
+     *     errorMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ModelCardName
- * @property Shapes\ModelCardSecurityConfig $SecurityConfig
+ * @property Shapes\ModelCardSecurityConfig|null $SecurityConfig
  * @property string $Content
  * @property 'Draft'|'PendingReview'|'Approved'|'Archived' $ModelCardStatus
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateModelCardRequest extends Request
 {
     /**
      * @param array{
      *     ModelCardName: string,
-     *     SecurityConfig?: Shapes\ModelCardSecurityConfig,
+     *     SecurityConfig?: Shapes\ModelCardSecurityConfig|null,
      *     Content: string,
      *     ModelCardStatus: 'Draft'|'PendingReview'|'Approved'|'Archived',
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

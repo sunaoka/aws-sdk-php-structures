@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateSchema\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $LatestVersion
- * @property int<1, 100000> $VersionNumber
+ * @property bool|null $LatestVersion
+ * @property int<1, 100000>|null $VersionNumber
  */
 class SchemaVersionNumber extends Shape
 {
     /**
      * @param array{
-     *     LatestVersion?: bool,
-     *     VersionNumber?: int<1, 100000>
+     *     LatestVersion?: bool|null,
+     *     VersionNumber?: int<1, 100000>|null
      * } $args
      */
     public function __construct(array $args = [])

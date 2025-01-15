@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Appflow\CreateConnectorProfile\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $instanceUrl
- * @property bool $isSandboxEnvironment
- * @property bool $usePrivateLinkForMetadataAndAuthorization
+ * @property string|null $instanceUrl
+ * @property bool|null $isSandboxEnvironment
+ * @property bool|null $usePrivateLinkForMetadataAndAuthorization
  */
 class SalesforceConnectorProfileProperties extends Shape
 {
     /**
      * @param array{
-     *     instanceUrl?: string,
-     *     isSandboxEnvironment?: bool,
-     *     usePrivateLinkForMetadataAndAuthorization?: bool
+     *     instanceUrl?: string|null,
+     *     isSandboxEnvironment?: bool|null,
+     *     usePrivateLinkForMetadataAndAuthorization?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

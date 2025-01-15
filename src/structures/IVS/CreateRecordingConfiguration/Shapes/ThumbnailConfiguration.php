@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\IVS\CreateRecordingConfiguration\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DISABLED'|'INTERVAL' $recordingMode
- * @property 'SD'|'HD'|'FULL_HD'|'LOWEST_RESOLUTION' $resolution
- * @property list<'SEQUENTIAL'|'LATEST'> $storage
- * @property int<1, 60> $targetIntervalSeconds
+ * @property 'DISABLED'|'INTERVAL'|null $recordingMode
+ * @property 'SD'|'HD'|'FULL_HD'|'LOWEST_RESOLUTION'|null $resolution
+ * @property list<'SEQUENTIAL'|'LATEST'>|null $storage
+ * @property int<1, 60>|null $targetIntervalSeconds
  */
 class ThumbnailConfiguration extends Shape
 {
     /**
      * @param array{
-     *     recordingMode?: 'DISABLED'|'INTERVAL',
-     *     resolution?: 'SD'|'HD'|'FULL_HD'|'LOWEST_RESOLUTION',
-     *     storage?: list<'SEQUENTIAL'|'LATEST'>,
-     *     targetIntervalSeconds?: int<1, 60>
+     *     recordingMode?: 'DISABLED'|'INTERVAL'|null,
+     *     resolution?: 'SD'|'HD'|'FULL_HD'|'LOWEST_RESOLUTION'|null,
+     *     storage?: list<'SEQUENTIAL'|'LATEST'>|null,
+     *     targetIntervalSeconds?: int<1, 60>|null
      * } $args
      */
     public function __construct(array $args = [])

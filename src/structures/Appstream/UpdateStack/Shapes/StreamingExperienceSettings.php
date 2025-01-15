@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Appstream\UpdateStack\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'TCP'|'UDP' $PreferredProtocol
+ * @property 'TCP'|'UDP'|null $PreferredProtocol
  */
 class StreamingExperienceSettings extends Shape
 {
     /**
-     * @param array{PreferredProtocol?: 'TCP'|'UDP'} $args
+     * @param array{PreferredProtocol?: 'TCP'|'UDP'|null} $args
      */
     public function __construct(array $args = [])
     {

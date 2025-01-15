@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $HITId
- * @property bool $Revert
+ * @property bool|null $Revert
  */
 class UpdateHITReviewStatusRequest extends Request
 {
     /**
      * @param array{
      *     HITId: string,
-     *     Revert?: bool
+     *     Revert?: bool|null
      * } $args
      */
     public function __construct(array $args)

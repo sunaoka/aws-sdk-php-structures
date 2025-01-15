@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Rds\DescribeDBShardGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DBShardGroupResourceId
- * @property string $DBShardGroupIdentifier
- * @property string $DBClusterIdentifier
- * @property double $MaxACU
- * @property double $MinACU
- * @property int $ComputeRedundancy
- * @property string $Status
- * @property bool $PubliclyAccessible
- * @property string $Endpoint
- * @property string $DBShardGroupArn
- * @property list<Tag> $TagList
+ * @property string|null $DBShardGroupResourceId
+ * @property string|null $DBShardGroupIdentifier
+ * @property string|null $DBClusterIdentifier
+ * @property double|null $MaxACU
+ * @property double|null $MinACU
+ * @property int|null $ComputeRedundancy
+ * @property string|null $Status
+ * @property bool|null $PubliclyAccessible
+ * @property string|null $Endpoint
+ * @property string|null $DBShardGroupArn
+ * @property list<Tag>|null $TagList
  */
 class DBShardGroup extends Shape
 {
     /**
      * @param array{
-     *     DBShardGroupResourceId?: string,
-     *     DBShardGroupIdentifier?: string,
-     *     DBClusterIdentifier?: string,
-     *     MaxACU?: double,
-     *     MinACU?: double,
-     *     ComputeRedundancy?: int,
-     *     Status?: string,
-     *     PubliclyAccessible?: bool,
-     *     Endpoint?: string,
-     *     DBShardGroupArn?: string,
-     *     TagList?: list<Tag>
+     *     DBShardGroupResourceId?: string|null,
+     *     DBShardGroupIdentifier?: string|null,
+     *     DBClusterIdentifier?: string|null,
+     *     MaxACU?: double|null,
+     *     MinACU?: double|null,
+     *     ComputeRedundancy?: int|null,
+     *     Status?: string|null,
+     *     PubliclyAccessible?: bool|null,
+     *     Endpoint?: string|null,
+     *     DBShardGroupArn?: string|null,
+     *     TagList?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

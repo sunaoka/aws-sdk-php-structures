@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $testSuiteId
- * @property int $testSuiteVersion
+ * @property int|null $testSuiteVersion
  */
 class GetTestSuiteRequest extends Request
 {
     /**
      * @param array{
      *     testSuiteId: string,
-     *     testSuiteVersion?: int
+     *     testSuiteVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

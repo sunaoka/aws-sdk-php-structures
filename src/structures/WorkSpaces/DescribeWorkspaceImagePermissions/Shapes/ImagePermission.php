@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\DescribeWorkspaceImagePermissions\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SharedAccountId
+ * @property string|null $SharedAccountId
  */
 class ImagePermission extends Shape
 {
     /**
-     * @param array{SharedAccountId?: string} $args
+     * @param array{SharedAccountId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

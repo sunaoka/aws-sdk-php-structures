@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $attributes
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  * @property string $clientToken
  */
 class CreateAttributeGroupRequest extends Request
@@ -16,9 +16,9 @@ class CreateAttributeGroupRequest extends Request
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     attributes: string,
-     *     tags?: array<string, string>,
+     *     tags?: array<string, string>|null,
      *     clientToken: string
      * } $args
      */

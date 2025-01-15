@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $AssumeRolePolicyDocument
- * @property string $CreateDate
- * @property string $Path
- * @property string $RoleId
- * @property string $RoleName
+ * @property string|null $Arn
+ * @property string|null $AssumeRolePolicyDocument
+ * @property string|null $CreateDate
+ * @property string|null $Path
+ * @property string|null $RoleId
+ * @property string|null $RoleName
  */
 class AwsIamInstanceProfileRole extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     AssumeRolePolicyDocument?: string,
-     *     CreateDate?: string,
-     *     Path?: string,
-     *     RoleId?: string,
-     *     RoleName?: string
+     *     Arn?: string|null,
+     *     AssumeRolePolicyDocument?: string|null,
+     *     CreateDate?: string|null,
+     *     Path?: string|null,
+     *     RoleId?: string|null,
+     *     RoleName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

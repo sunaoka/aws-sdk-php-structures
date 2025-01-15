@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $dataAccessorId
  * @property list<Shapes\ActionConfiguration> $actionConfigurations
- * @property string $displayName
+ * @property string|null $displayName
  */
 class UpdateDataAccessorRequest extends Request
 {
@@ -17,7 +17,7 @@ class UpdateDataAccessorRequest extends Request
      *     applicationId: string,
      *     dataAccessorId: string,
      *     actionConfigurations: list<Shapes\ActionConfiguration>,
-     *     displayName?: string
+     *     displayName?: string|null
      * } $args
      */
     public function __construct(array $args)

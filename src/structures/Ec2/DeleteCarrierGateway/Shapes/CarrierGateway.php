@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteCarrierGateway\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CarrierGatewayId
- * @property string $VpcId
- * @property 'pending'|'available'|'deleting'|'deleted' $State
- * @property string $OwnerId
- * @property list<Tag> $Tags
+ * @property string|null $CarrierGatewayId
+ * @property string|null $VpcId
+ * @property 'pending'|'available'|'deleting'|'deleted'|null $State
+ * @property string|null $OwnerId
+ * @property list<Tag>|null $Tags
  */
 class CarrierGateway extends Shape
 {
     /**
      * @param array{
-     *     CarrierGatewayId?: string,
-     *     VpcId?: string,
-     *     State?: 'pending'|'available'|'deleting'|'deleted',
-     *     OwnerId?: string,
-     *     Tags?: list<Tag>
+     *     CarrierGatewayId?: string|null,
+     *     VpcId?: string|null,
+     *     State?: 'pending'|'available'|'deleting'|'deleted'|null,
+     *     OwnerId?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

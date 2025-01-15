@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetResource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $statusCode
- * @property string $selectionPattern
- * @property array<string, string> $responseParameters
- * @property array<string, string> $responseTemplates
- * @property 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT' $contentHandling
+ * @property string|null $statusCode
+ * @property string|null $selectionPattern
+ * @property array<string, string>|null $responseParameters
+ * @property array<string, string>|null $responseTemplates
+ * @property 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT'|null $contentHandling
  */
 class IntegrationResponse extends Shape
 {
     /**
      * @param array{
-     *     statusCode?: string,
-     *     selectionPattern?: string,
-     *     responseParameters?: array<string, string>,
-     *     responseTemplates?: array<string, string>,
-     *     contentHandling?: 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT'
+     *     statusCode?: string|null,
+     *     selectionPattern?: string|null,
+     *     responseParameters?: array<string, string>|null,
+     *     responseTemplates?: array<string, string>|null,
+     *     contentHandling?: 'CONVERT_TO_BINARY'|'CONVERT_TO_TEXT'|null
      * } $args
      */
     public function __construct(array $args = [])

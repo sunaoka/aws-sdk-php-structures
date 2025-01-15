@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\CreateMigrationProject
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $MigrationProjectName
+ * @property string|null $MigrationProjectName
  * @property list<Shapes\DataProviderDescriptorDefinition> $SourceDataProviderDescriptors
  * @property list<Shapes\DataProviderDescriptorDefinition> $TargetDataProviderDescriptors
  * @property string $InstanceProfileIdentifier
- * @property string $TransformationRules
- * @property string $Description
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\SCApplicationAttributes $SchemaConversionApplicationAttributes
+ * @property string|null $TransformationRules
+ * @property string|null $Description
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\SCApplicationAttributes|null $SchemaConversionApplicationAttributes
  */
 class CreateMigrationProjectRequest extends Request
 {
     /**
      * @param array{
-     *     MigrationProjectName?: string,
+     *     MigrationProjectName?: string|null,
      *     SourceDataProviderDescriptors: list<Shapes\DataProviderDescriptorDefinition>,
      *     TargetDataProviderDescriptors: list<Shapes\DataProviderDescriptorDefinition>,
      *     InstanceProfileIdentifier: string,
-     *     TransformationRules?: string,
-     *     Description?: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     SchemaConversionApplicationAttributes?: Shapes\SCApplicationAttributes
+     *     TransformationRules?: string|null,
+     *     Description?: string|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     SchemaConversionApplicationAttributes?: Shapes\SCApplicationAttributes|null
      * } $args
      */
     public function __construct(array $args)

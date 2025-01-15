@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListDevices;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $NextToken
- * @property int<min, 100> $MaxResults
- * @property \Aws\Api\DateTimeResult $LatestHeartbeatAfter
- * @property string $ModelName
- * @property string $DeviceFleetName
+ * @property string|null $NextToken
+ * @property int<min, 100>|null $MaxResults
+ * @property \Aws\Api\DateTimeResult|null $LatestHeartbeatAfter
+ * @property string|null $ModelName
+ * @property string|null $DeviceFleetName
  */
 class ListDevicesRequest extends Request
 {
     /**
      * @param array{
-     *     NextToken?: string,
-     *     MaxResults?: int<min, 100>,
-     *     LatestHeartbeatAfter?: \Aws\Api\DateTimeResult,
-     *     ModelName?: string,
-     *     DeviceFleetName?: string
+     *     NextToken?: string|null,
+     *     MaxResults?: int<min, 100>|null,
+     *     LatestHeartbeatAfter?: \Aws\Api\DateTimeResult|null,
+     *     ModelName?: string|null,
+     *     DeviceFleetName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

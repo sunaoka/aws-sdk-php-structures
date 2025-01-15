@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $StreamArn
- * @property bool $AggregationEnabled
+ * @property bool|null $AggregationEnabled
  */
 class KinesisConfiguration extends Shape
 {
     /**
      * @param array{
      *     StreamArn: string,
-     *     AggregationEnabled?: bool
+     *     AggregationEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

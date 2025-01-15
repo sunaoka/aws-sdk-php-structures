@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\EventBridge\ListPartnerEventSourceAccounts\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Account
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $ExpirationTime
- * @property 'PENDING'|'ACTIVE'|'DELETED' $State
+ * @property string|null $Account
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $ExpirationTime
+ * @property 'PENDING'|'ACTIVE'|'DELETED'|null $State
  */
 class PartnerEventSourceAccount extends Shape
 {
     /**
      * @param array{
-     *     Account?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     ExpirationTime?: \Aws\Api\DateTimeResult,
-     *     State?: 'PENDING'|'ACTIVE'|'DELETED'
+     *     Account?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     ExpirationTime?: \Aws\Api\DateTimeResult|null,
+     *     State?: 'PENDING'|'ACTIVE'|'DELETED'|null
      * } $args
      */
     public function __construct(array $args = [])

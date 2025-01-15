@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RoboMaker\CreateSimulationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $s3Key
- * @property string $etag
+ * @property string|null $s3Key
+ * @property string|null $etag
  */
 class S3KeyOutput extends Shape
 {
     /**
      * @param array{
-     *     s3Key?: string,
-     *     etag?: string
+     *     s3Key?: string|null,
+     *     etag?: string|null
      * } $args
      */
     public function __construct(array $args = [])

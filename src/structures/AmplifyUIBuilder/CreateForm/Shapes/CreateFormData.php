@@ -12,9 +12,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property FormStyle $style
  * @property array<string, SectionalElement> $sectionalElements
  * @property string $schemaVersion
- * @property FormCTA $cta
- * @property array<string, string> $tags
- * @property 'required'|'optional'|'none' $labelDecorator
+ * @property FormCTA|null $cta
+ * @property array<string, string>|null $tags
+ * @property 'required'|'optional'|'none'|null $labelDecorator
  */
 class CreateFormData extends Shape
 {
@@ -27,9 +27,9 @@ class CreateFormData extends Shape
      *     style: FormStyle,
      *     sectionalElements: array<string, SectionalElement>,
      *     schemaVersion: string,
-     *     cta?: FormCTA,
-     *     tags?: array<string, string>,
-     *     labelDecorator?: 'required'|'optional'|'none'
+     *     cta?: FormCTA|null,
+     *     tags?: array<string, string>|null,
+     *     labelDecorator?: 'required'|'optional'|'none'|null
      * } $args
      */
     public function __construct(array $args)

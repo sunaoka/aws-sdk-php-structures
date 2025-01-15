@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property 'CREATING'|'PREPARING'|'PREPARED'|'NOT_PREPARED'|'DELETING'|'FAILED'|'VERSIONING'|'UPDATING' $agentStatus
  * @property string $agentVersion
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
- * @property GuardrailConfiguration $guardrailConfiguration
+ * @property string|null $description
+ * @property GuardrailConfiguration|null $guardrailConfiguration
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class AgentVersionSummary extends Shape
@@ -21,8 +21,8 @@ class AgentVersionSummary extends Shape
      *     agentStatus: 'CREATING'|'PREPARING'|'PREPARED'|'NOT_PREPARED'|'DELETING'|'FAILED'|'VERSIONING'|'UPDATING',
      *     agentVersion: string,
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     guardrailConfiguration?: GuardrailConfiguration,
+     *     description?: string|null,
+     *     guardrailConfiguration?: GuardrailConfiguration|null,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

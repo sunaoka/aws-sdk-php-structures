@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $id
  * @property string $name
  * @property string $arn
- * @property string $description
- * @property Shapes\Parameters $parameters
+ * @property string|null $description
+ * @property Shapes\Parameters|null $parameters
  */
 class CreateDbParameterGroupResponse extends Response
 {

@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $virtualInterfaceName
  * @property int $vlan
  * @property int $asn
- * @property int $mtu
- * @property string $authKey
- * @property string $amazonAddress
- * @property 'ipv4'|'ipv6' $addressFamily
- * @property string $customerAddress
- * @property list<Tag> $tags
+ * @property int|null $mtu
+ * @property string|null $authKey
+ * @property string|null $amazonAddress
+ * @property 'ipv4'|'ipv6'|null $addressFamily
+ * @property string|null $customerAddress
+ * @property list<Tag>|null $tags
  */
 class NewPrivateVirtualInterfaceAllocation extends Shape
 {
@@ -22,12 +22,12 @@ class NewPrivateVirtualInterfaceAllocation extends Shape
      *     virtualInterfaceName: string,
      *     vlan: int,
      *     asn: int,
-     *     mtu?: int,
-     *     authKey?: string,
-     *     amazonAddress?: string,
-     *     addressFamily?: 'ipv4'|'ipv6',
-     *     customerAddress?: string,
-     *     tags?: list<Tag>
+     *     mtu?: int|null,
+     *     authKey?: string|null,
+     *     amazonAddress?: string|null,
+     *     addressFamily?: 'ipv4'|'ipv6'|null,
+     *     customerAddress?: string|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args)

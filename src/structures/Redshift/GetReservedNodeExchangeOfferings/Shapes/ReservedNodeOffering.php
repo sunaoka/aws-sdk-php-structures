@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Redshift\GetReservedNodeExchangeOfferings\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ReservedNodeOfferingId
- * @property string $NodeType
- * @property int $Duration
- * @property double $FixedPrice
- * @property double $UsagePrice
- * @property string $CurrencyCode
- * @property string $OfferingType
- * @property list<RecurringCharge> $RecurringCharges
- * @property 'Regular'|'Upgradable' $ReservedNodeOfferingType
+ * @property string|null $ReservedNodeOfferingId
+ * @property string|null $NodeType
+ * @property int|null $Duration
+ * @property double|null $FixedPrice
+ * @property double|null $UsagePrice
+ * @property string|null $CurrencyCode
+ * @property string|null $OfferingType
+ * @property list<RecurringCharge>|null $RecurringCharges
+ * @property 'Regular'|'Upgradable'|null $ReservedNodeOfferingType
  */
 class ReservedNodeOffering extends Shape
 {
     /**
      * @param array{
-     *     ReservedNodeOfferingId?: string,
-     *     NodeType?: string,
-     *     Duration?: int,
-     *     FixedPrice?: double,
-     *     UsagePrice?: double,
-     *     CurrencyCode?: string,
-     *     OfferingType?: string,
-     *     RecurringCharges?: list<RecurringCharge>,
-     *     ReservedNodeOfferingType?: 'Regular'|'Upgradable'
+     *     ReservedNodeOfferingId?: string|null,
+     *     NodeType?: string|null,
+     *     Duration?: int|null,
+     *     FixedPrice?: double|null,
+     *     UsagePrice?: double|null,
+     *     CurrencyCode?: string|null,
+     *     OfferingType?: string|null,
+     *     RecurringCharges?: list<RecurringCharge>|null,
+     *     ReservedNodeOfferingType?: 'Regular'|'Upgradable'|null
      * } $args
      */
     public function __construct(array $args = [])

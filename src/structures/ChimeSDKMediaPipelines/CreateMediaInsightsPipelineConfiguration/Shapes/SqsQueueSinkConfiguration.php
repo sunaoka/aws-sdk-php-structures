@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\CreateMediaInsightsPipel
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $InsightsTarget
+ * @property string|null $InsightsTarget
  */
 class SqsQueueSinkConfiguration extends Shape
 {
     /**
-     * @param array{InsightsTarget?: string} $args
+     * @param array{InsightsTarget?: string|null} $args
      */
     public function __construct(array $args = [])
     {

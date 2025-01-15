@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property list<Shapes\ConcatenationSource> $Sources
  * @property list<Shapes\ConcatenationSink> $Sinks
- * @property string $ClientRequestToken
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $ClientRequestToken
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateMediaConcatenationPipelineRequest extends Request
 {
@@ -16,8 +16,8 @@ class CreateMediaConcatenationPipelineRequest extends Request
      * @param array{
      *     Sources: list<Shapes\ConcatenationSource>,
      *     Sinks: list<Shapes\ConcatenationSink>,
-     *     ClientRequestToken?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     ClientRequestToken?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

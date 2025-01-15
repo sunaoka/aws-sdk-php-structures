@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignsV2\ListConnectInstanceIntegrati
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CustomerProfilesIntegrationSummary $customerProfiles
- * @property QConnectIntegrationSummary $qConnect
+ * @property CustomerProfilesIntegrationSummary|null $customerProfiles
+ * @property QConnectIntegrationSummary|null $qConnect
  */
 class IntegrationSummary extends Shape
 {
     /**
      * @param array{
-     *     customerProfiles?: CustomerProfilesIntegrationSummary,
-     *     qConnect?: QConnectIntegrationSummary
+     *     customerProfiles?: CustomerProfilesIntegrationSummary|null,
+     *     qConnect?: QConnectIntegrationSummary|null
      * } $args
      */
     public function __construct(array $args = [])

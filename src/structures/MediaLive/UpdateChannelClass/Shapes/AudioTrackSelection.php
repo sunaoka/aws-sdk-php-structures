@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<AudioTrack> $Tracks
- * @property AudioDolbyEDecode $DolbyEDecode
+ * @property AudioDolbyEDecode|null $DolbyEDecode
  */
 class AudioTrackSelection extends Shape
 {
     /**
      * @param array{
      *     Tracks: list<AudioTrack>,
-     *     DolbyEDecode?: AudioDolbyEDecode
+     *     DolbyEDecode?: AudioDolbyEDecode|null
      * } $args
      */
     public function __construct(array $args)

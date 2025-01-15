@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $NewPinPekKeyCheckValue
  * @property string $SecureMessagingIntegrityKeyCheckValue
  * @property string $SecureMessagingConfidentialityKeyCheckValue
- * @property Shapes\VisaAmexDerivationOutputs $VisaAmexDerivationOutputs
+ * @property Shapes\VisaAmexDerivationOutputs|null $VisaAmexDerivationOutputs
  */
 class GenerateMacEmvPinChangeResponse extends Response
 {

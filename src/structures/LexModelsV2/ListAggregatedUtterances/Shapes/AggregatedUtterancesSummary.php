@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListAggregatedUtterances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $utterance
- * @property int $hitCount
- * @property int $missedCount
- * @property \Aws\Api\DateTimeResult $utteranceFirstRecordedInAggregationDuration
- * @property \Aws\Api\DateTimeResult $utteranceLastRecordedInAggregationDuration
- * @property bool $containsDataFromDeletedResources
+ * @property string|null $utterance
+ * @property int|null $hitCount
+ * @property int|null $missedCount
+ * @property \Aws\Api\DateTimeResult|null $utteranceFirstRecordedInAggregationDuration
+ * @property \Aws\Api\DateTimeResult|null $utteranceLastRecordedInAggregationDuration
+ * @property bool|null $containsDataFromDeletedResources
  */
 class AggregatedUtterancesSummary extends Shape
 {
     /**
      * @param array{
-     *     utterance?: string,
-     *     hitCount?: int,
-     *     missedCount?: int,
-     *     utteranceFirstRecordedInAggregationDuration?: \Aws\Api\DateTimeResult,
-     *     utteranceLastRecordedInAggregationDuration?: \Aws\Api\DateTimeResult,
-     *     containsDataFromDeletedResources?: bool
+     *     utterance?: string|null,
+     *     hitCount?: int|null,
+     *     missedCount?: int|null,
+     *     utteranceFirstRecordedInAggregationDuration?: \Aws\Api\DateTimeResult|null,
+     *     utteranceLastRecordedInAggregationDuration?: \Aws\Api\DateTimeResult|null,
+     *     containsDataFromDeletedResources?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Organizations\ListHandshakesForOrganization\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
- * @property 'ACCOUNT'|'ORGANIZATION'|'ORGANIZATION_FEATURE_SET'|'EMAIL'|'MASTER_EMAIL'|'MASTER_NAME'|'NOTES'|'PARENT_HANDSHAKE' $Type
- * @property list<HandshakeResource> $Resources
+ * @property string|null $Value
+ * @property 'ACCOUNT'|'ORGANIZATION'|'ORGANIZATION_FEATURE_SET'|'EMAIL'|'MASTER_EMAIL'|'MASTER_NAME'|'NOTES'|'PARENT_HANDSHAKE'|null $Type
+ * @property list<HandshakeResource>|null $Resources
  */
 class HandshakeResource extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
-     *     Type?: 'ACCOUNT'|'ORGANIZATION'|'ORGANIZATION_FEATURE_SET'|'EMAIL'|'MASTER_EMAIL'|'MASTER_NAME'|'NOTES'|'PARENT_HANDSHAKE',
-     *     Resources?: list<HandshakeResource>
+     *     Value?: string|null,
+     *     Type?: 'ACCOUNT'|'ORGANIZATION'|'ORGANIZATION_FEATURE_SET'|'EMAIL'|'MASTER_EMAIL'|'MASTER_NAME'|'NOTES'|'PARENT_HANDSHAKE'|null,
+     *     Resources?: list<HandshakeResource>|null
      * } $args
      */
     public function __construct(array $args = [])

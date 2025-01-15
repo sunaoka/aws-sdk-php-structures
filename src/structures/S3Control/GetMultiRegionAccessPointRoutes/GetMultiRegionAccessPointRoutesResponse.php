@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\S3Control\GetMultiRegionAccessPointRoutes;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Mrap
- * @property list<Shapes\MultiRegionAccessPointRoute> $Routes
+ * @property string|null $Mrap
+ * @property list<Shapes\MultiRegionAccessPointRoute>|null $Routes
  */
 class GetMultiRegionAccessPointRoutesResponse extends Response
 {

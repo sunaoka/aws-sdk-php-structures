@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\AdminRespondToAuthChall
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AccessToken
- * @property int $ExpiresIn
- * @property string $TokenType
- * @property string $RefreshToken
- * @property string $IdToken
- * @property NewDeviceMetadataType $NewDeviceMetadata
+ * @property string|null $AccessToken
+ * @property int|null $ExpiresIn
+ * @property string|null $TokenType
+ * @property string|null $RefreshToken
+ * @property string|null $IdToken
+ * @property NewDeviceMetadataType|null $NewDeviceMetadata
  */
 class AuthenticationResultType extends Shape
 {
     /**
      * @param array{
-     *     AccessToken?: string,
-     *     ExpiresIn?: int,
-     *     TokenType?: string,
-     *     RefreshToken?: string,
-     *     IdToken?: string,
-     *     NewDeviceMetadata?: NewDeviceMetadataType
+     *     AccessToken?: string|null,
+     *     ExpiresIn?: int|null,
+     *     TokenType?: string|null,
+     *     RefreshToken?: string|null,
+     *     IdToken?: string|null,
+     *     NewDeviceMetadata?: NewDeviceMetadataType|null
      * } $args
      */
     public function __construct(array $args = [])

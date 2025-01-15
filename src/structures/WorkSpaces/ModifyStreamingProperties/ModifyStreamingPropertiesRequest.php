@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ResourceId
- * @property Shapes\StreamingProperties $StreamingProperties
+ * @property Shapes\StreamingProperties|null $StreamingProperties
  */
 class ModifyStreamingPropertiesRequest extends Request
 {
     /**
      * @param array{
      *     ResourceId: string,
-     *     StreamingProperties?: Shapes\StreamingProperties
+     *     StreamingProperties?: Shapes\StreamingProperties|null
      * } $args
      */
     public function __construct(array $args)

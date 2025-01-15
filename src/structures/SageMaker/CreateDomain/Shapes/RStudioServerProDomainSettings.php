@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $DomainExecutionRoleArn
- * @property string $RStudioConnectUrl
- * @property string $RStudioPackageManagerUrl
- * @property ResourceSpec $DefaultResourceSpec
+ * @property string|null $RStudioConnectUrl
+ * @property string|null $RStudioPackageManagerUrl
+ * @property ResourceSpec|null $DefaultResourceSpec
  */
 class RStudioServerProDomainSettings extends Shape
 {
     /**
      * @param array{
      *     DomainExecutionRoleArn: string,
-     *     RStudioConnectUrl?: string,
-     *     RStudioPackageManagerUrl?: string,
-     *     DefaultResourceSpec?: ResourceSpec
+     *     RStudioConnectUrl?: string|null,
+     *     RStudioPackageManagerUrl?: string|null,
+     *     DefaultResourceSpec?: ResourceSpec|null
      * } $args
      */
     public function __construct(array $args)

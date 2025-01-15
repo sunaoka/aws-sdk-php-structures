@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\CodePipeline\ListActionExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $pipelineExecutionId
- * @property string $actionExecutionId
- * @property int<1, max> $pipelineVersion
- * @property string $stageName
- * @property string $actionName
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property string $updatedBy
- * @property 'InProgress'|'Abandoned'|'Succeeded'|'Failed' $status
- * @property ActionExecutionInput $input
- * @property ActionExecutionOutput $output
+ * @property string|null $pipelineExecutionId
+ * @property string|null $actionExecutionId
+ * @property int<1, max>|null $pipelineVersion
+ * @property string|null $stageName
+ * @property string|null $actionName
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateTime
+ * @property string|null $updatedBy
+ * @property 'InProgress'|'Abandoned'|'Succeeded'|'Failed'|null $status
+ * @property ActionExecutionInput|null $input
+ * @property ActionExecutionOutput|null $output
  */
 class ActionExecutionDetail extends Shape
 {
     /**
      * @param array{
-     *     pipelineExecutionId?: string,
-     *     actionExecutionId?: string,
-     *     pipelineVersion?: int<1, max>,
-     *     stageName?: string,
-     *     actionName?: string,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdateTime?: \Aws\Api\DateTimeResult,
-     *     updatedBy?: string,
-     *     status?: 'InProgress'|'Abandoned'|'Succeeded'|'Failed',
-     *     input?: ActionExecutionInput,
-     *     output?: ActionExecutionOutput
+     *     pipelineExecutionId?: string|null,
+     *     actionExecutionId?: string|null,
+     *     pipelineVersion?: int<1, max>|null,
+     *     stageName?: string|null,
+     *     actionName?: string|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateTime?: \Aws\Api\DateTimeResult|null,
+     *     updatedBy?: string|null,
+     *     status?: 'InProgress'|'Abandoned'|'Succeeded'|'Failed'|null,
+     *     input?: ActionExecutionInput|null,
+     *     output?: ActionExecutionOutput|null
      * } $args
      */
     public function __construct(array $args = [])

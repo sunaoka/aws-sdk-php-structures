@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\UpdateFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Key
- * @property string $Value
- * @property 'EQUALS'|'NOT_EQUALS'|'CONTAINS'|'NOT_CONTAINS' $Comparison
+ * @property string|null $Key
+ * @property string|null $Value
+ * @property 'EQUALS'|'NOT_EQUALS'|'CONTAINS'|'NOT_CONTAINS'|null $Comparison
  */
 class MapFilter extends Shape
 {
     /**
      * @param array{
-     *     Key?: string,
-     *     Value?: string,
-     *     Comparison?: 'EQUALS'|'NOT_EQUALS'|'CONTAINS'|'NOT_CONTAINS'
+     *     Key?: string|null,
+     *     Value?: string|null,
+     *     Comparison?: 'EQUALS'|'NOT_EQUALS'|'CONTAINS'|'NOT_CONTAINS'|null
      * } $args
      */
     public function __construct(array $args = [])

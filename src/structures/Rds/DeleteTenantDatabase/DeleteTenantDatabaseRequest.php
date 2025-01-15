@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $DBInstanceIdentifier
  * @property string $TenantDBName
- * @property bool $SkipFinalSnapshot
- * @property string $FinalDBSnapshotIdentifier
+ * @property bool|null $SkipFinalSnapshot
+ * @property string|null $FinalDBSnapshotIdentifier
  */
 class DeleteTenantDatabaseRequest extends Request
 {
@@ -16,8 +16,8 @@ class DeleteTenantDatabaseRequest extends Request
      * @param array{
      *     DBInstanceIdentifier: string,
      *     TenantDBName: string,
-     *     SkipFinalSnapshot?: bool,
-     *     FinalDBSnapshotIdentifier?: string
+     *     SkipFinalSnapshot?: bool|null,
+     *     FinalDBSnapshotIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

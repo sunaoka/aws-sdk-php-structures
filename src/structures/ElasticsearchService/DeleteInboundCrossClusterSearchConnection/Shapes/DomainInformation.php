@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticsearchService\DeleteInboundCrossClusterS
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OwnerId
+ * @property string|null $OwnerId
  * @property string $DomainName
- * @property string $Region
+ * @property string|null $Region
  */
 class DomainInformation extends Shape
 {
     /**
      * @param array{
-     *     OwnerId?: string,
+     *     OwnerId?: string|null,
      *     DomainName: string,
-     *     Region?: string
+     *     Region?: string|null
      * } $args
      */
     public function __construct(array $args)

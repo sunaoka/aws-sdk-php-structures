@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InstanceId
  * @property string $HoursOfOperationId
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property list<Shapes\HoursOfOperationOverrideConfig> $Config
  * @property string $EffectiveFrom
  * @property string $EffectiveTill
@@ -20,7 +20,7 @@ class CreateHoursOfOperationOverrideRequest extends Request
      *     InstanceId: string,
      *     HoursOfOperationId: string,
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Config: list<Shapes\HoursOfOperationOverrideConfig>,
      *     EffectiveFrom: string,
      *     EffectiveTill: string

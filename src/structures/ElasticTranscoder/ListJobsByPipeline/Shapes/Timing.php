@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ListJobsByPipeline\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $SubmitTimeMillis
- * @property int $StartTimeMillis
- * @property int $FinishTimeMillis
+ * @property int|null $SubmitTimeMillis
+ * @property int|null $StartTimeMillis
+ * @property int|null $FinishTimeMillis
  */
 class Timing extends Shape
 {
     /**
      * @param array{
-     *     SubmitTimeMillis?: int,
-     *     StartTimeMillis?: int,
-     *     FinishTimeMillis?: int
+     *     SubmitTimeMillis?: int|null,
+     *     StartTimeMillis?: int|null,
+     *     FinishTimeMillis?: int|null
      * } $args
      */
     public function __construct(array $args = [])

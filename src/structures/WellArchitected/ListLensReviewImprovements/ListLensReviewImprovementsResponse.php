@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\WellArchitected\ListLensReviewImprovements;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $WorkloadId
- * @property int<1, 100> $MilestoneNumber
- * @property string $LensAlias
- * @property string $LensArn
- * @property list<Shapes\ImprovementSummary> $ImprovementSummaries
- * @property string $NextToken
+ * @property string|null $WorkloadId
+ * @property int<1, 100>|null $MilestoneNumber
+ * @property string|null $LensAlias
+ * @property string|null $LensArn
+ * @property list<Shapes\ImprovementSummary>|null $ImprovementSummaries
+ * @property string|null $NextToken
  */
 class ListLensReviewImprovementsResponse extends Response
 {

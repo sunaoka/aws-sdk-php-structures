@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MWAA\CreateCliToken;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $CliToken
- * @property string $WebServerHostname
+ * @property string|null $CliToken
+ * @property string|null $WebServerHostname
  */
 class CreateCliTokenResponse extends Response
 {

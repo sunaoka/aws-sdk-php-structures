@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ForecastService\DescribeMonitor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PredictorBaseline $PredictorBaseline
+ * @property PredictorBaseline|null $PredictorBaseline
  */
 class Baseline extends Shape
 {
     /**
-     * @param array{PredictorBaseline?: PredictorBaseline} $args
+     * @param array{PredictorBaseline?: PredictorBaseline|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetEC2InstanceRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CpuUtilization'|'MemoryUtilization' $metricName
- * @property CustomizableMetricParameters $metricParameters
+ * @property 'CpuUtilization'|'MemoryUtilization'|null $metricName
+ * @property CustomizableMetricParameters|null $metricParameters
  */
 class UtilizationPreference extends Shape
 {
     /**
      * @param array{
-     *     metricName?: 'CpuUtilization'|'MemoryUtilization',
-     *     metricParameters?: CustomizableMetricParameters
+     *     metricName?: 'CpuUtilization'|'MemoryUtilization'|null,
+     *     metricParameters?: CustomizableMetricParameters|null
      * } $args
      */
     public function __construct(array $args = [])

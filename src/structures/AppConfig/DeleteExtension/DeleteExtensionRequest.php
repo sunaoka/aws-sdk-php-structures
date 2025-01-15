@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ExtensionIdentifier
- * @property int $VersionNumber
+ * @property int|null $VersionNumber
  */
 class DeleteExtensionRequest extends Request
 {
     /**
      * @param array{
      *     ExtensionIdentifier: string,
-     *     VersionNumber?: int
+     *     VersionNumber?: int|null
      * } $args
      */
     public function __construct(array $args)

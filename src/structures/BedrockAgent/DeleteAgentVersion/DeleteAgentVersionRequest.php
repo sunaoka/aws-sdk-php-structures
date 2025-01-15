@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $agentId
  * @property string $agentVersion
- * @property bool $skipResourceInUseCheck
+ * @property bool|null $skipResourceInUseCheck
  */
 class DeleteAgentVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteAgentVersionRequest extends Request
      * @param array{
      *     agentId: string,
      *     agentVersion: string,
-     *     skipResourceInUseCheck?: bool
+     *     skipResourceInUseCheck?: bool|null
      * } $args
      */
     public function __construct(array $args)

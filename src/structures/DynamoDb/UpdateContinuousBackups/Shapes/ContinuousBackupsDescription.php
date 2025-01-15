@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ENABLED'|'DISABLED' $ContinuousBackupsStatus
- * @property PointInTimeRecoveryDescription $PointInTimeRecoveryDescription
+ * @property PointInTimeRecoveryDescription|null $PointInTimeRecoveryDescription
  */
 class ContinuousBackupsDescription extends Shape
 {
     /**
      * @param array{
      *     ContinuousBackupsStatus: 'ENABLED'|'DISABLED',
-     *     PointInTimeRecoveryDescription?: PointInTimeRecoveryDescription
+     *     PointInTimeRecoveryDescription?: PointInTimeRecoveryDescription|null
      * } $args
      */
     public function __construct(array $args)

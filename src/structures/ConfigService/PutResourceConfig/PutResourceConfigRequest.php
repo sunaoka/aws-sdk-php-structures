@@ -8,9 +8,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ResourceType
  * @property string $SchemaVersionId
  * @property string $ResourceId
- * @property string $ResourceName
+ * @property string|null $ResourceName
  * @property string $Configuration
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class PutResourceConfigRequest extends Request
 {
@@ -19,9 +19,9 @@ class PutResourceConfigRequest extends Request
      *     ResourceType: string,
      *     SchemaVersionId: string,
      *     ResourceId: string,
-     *     ResourceName?: string,
+     *     ResourceName?: string|null,
      *     Configuration: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

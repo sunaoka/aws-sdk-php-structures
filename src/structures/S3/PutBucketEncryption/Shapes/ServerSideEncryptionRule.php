@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3\PutBucketEncryption\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ServerSideEncryptionByDefault $ApplyServerSideEncryptionByDefault
- * @property bool $BucketKeyEnabled
+ * @property ServerSideEncryptionByDefault|null $ApplyServerSideEncryptionByDefault
+ * @property bool|null $BucketKeyEnabled
  */
 class ServerSideEncryptionRule extends Shape
 {
     /**
      * @param array{
-     *     ApplyServerSideEncryptionByDefault?: ServerSideEncryptionByDefault,
-     *     BucketKeyEnabled?: bool
+     *     ApplyServerSideEncryptionByDefault?: ServerSideEncryptionByDefault|null,
+     *     BucketKeyEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

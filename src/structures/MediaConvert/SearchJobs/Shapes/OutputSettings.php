@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaConvert\SearchJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property HlsSettings $HlsSettings
+ * @property HlsSettings|null $HlsSettings
  */
 class OutputSettings extends Shape
 {
     /**
-     * @param array{HlsSettings?: HlsSettings} $args
+     * @param array{HlsSettings?: HlsSettings|null} $args
      */
     public function __construct(array $args = [])
     {

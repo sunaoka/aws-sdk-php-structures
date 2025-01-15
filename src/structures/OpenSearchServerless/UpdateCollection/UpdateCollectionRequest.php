@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\UpdateCollection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
- * @property string $description
+ * @property string|null $clientToken
+ * @property string|null $description
  * @property string $id
  */
 class UpdateCollectionRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
-     *     description?: string,
+     *     clientToken?: string|null,
+     *     description?: string|null,
      *     id: string
      * } $args
      */

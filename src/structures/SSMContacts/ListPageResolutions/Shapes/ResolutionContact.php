@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ContactArn
  * @property 'PERSONAL'|'ESCALATION'|'ONCALL_SCHEDULE' $Type
- * @property int<0, 100> $StageIndex
+ * @property int<0, 100>|null $StageIndex
  */
 class ResolutionContact extends Shape
 {
@@ -15,7 +15,7 @@ class ResolutionContact extends Shape
      * @param array{
      *     ContactArn: string,
      *     Type: 'PERSONAL'|'ESCALATION'|'ONCALL_SCHEDULE',
-     *     StageIndex?: int<0, 100>
+     *     StageIndex?: int<0, 100>|null
      * } $args
      */
     public function __construct(array $args)

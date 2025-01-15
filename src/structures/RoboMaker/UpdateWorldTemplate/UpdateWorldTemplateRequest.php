@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $template
- * @property string $name
- * @property string $templateBody
- * @property Shapes\TemplateLocation $templateLocation
+ * @property string|null $name
+ * @property string|null $templateBody
+ * @property Shapes\TemplateLocation|null $templateLocation
  */
 class UpdateWorldTemplateRequest extends Request
 {
     /**
      * @param array{
      *     template: string,
-     *     name?: string,
-     *     templateBody?: string,
-     *     templateLocation?: Shapes\TemplateLocation
+     *     name?: string|null,
+     *     templateBody?: string|null,
+     *     templateLocation?: Shapes\TemplateLocation|null
      * } $args
      */
     public function __construct(array $args)

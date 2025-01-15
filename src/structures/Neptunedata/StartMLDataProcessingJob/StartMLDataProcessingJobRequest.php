@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\Neptunedata\StartMLDataProcessingJob;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $id
- * @property string $previousDataProcessingJobId
+ * @property string|null $id
+ * @property string|null $previousDataProcessingJobId
  * @property string $inputDataS3Location
  * @property string $processedDataS3Location
- * @property string $sagemakerIamRoleArn
- * @property string $neptuneIamRoleArn
- * @property string $processingInstanceType
- * @property int $processingInstanceVolumeSizeInGB
- * @property int $processingTimeOutInSeconds
- * @property string $modelType
- * @property string $configFileName
- * @property list<string> $subnets
- * @property list<string> $securityGroupIds
- * @property string $volumeEncryptionKMSKey
- * @property string $s3OutputEncryptionKMSKey
+ * @property string|null $sagemakerIamRoleArn
+ * @property string|null $neptuneIamRoleArn
+ * @property string|null $processingInstanceType
+ * @property int|null $processingInstanceVolumeSizeInGB
+ * @property int|null $processingTimeOutInSeconds
+ * @property string|null $modelType
+ * @property string|null $configFileName
+ * @property list<string>|null $subnets
+ * @property list<string>|null $securityGroupIds
+ * @property string|null $volumeEncryptionKMSKey
+ * @property string|null $s3OutputEncryptionKMSKey
  */
 class StartMLDataProcessingJobRequest extends Request
 {
     /**
      * @param array{
-     *     id?: string,
-     *     previousDataProcessingJobId?: string,
+     *     id?: string|null,
+     *     previousDataProcessingJobId?: string|null,
      *     inputDataS3Location: string,
      *     processedDataS3Location: string,
-     *     sagemakerIamRoleArn?: string,
-     *     neptuneIamRoleArn?: string,
-     *     processingInstanceType?: string,
-     *     processingInstanceVolumeSizeInGB?: int,
-     *     processingTimeOutInSeconds?: int,
-     *     modelType?: string,
-     *     configFileName?: string,
-     *     subnets?: list<string>,
-     *     securityGroupIds?: list<string>,
-     *     volumeEncryptionKMSKey?: string,
-     *     s3OutputEncryptionKMSKey?: string
+     *     sagemakerIamRoleArn?: string|null,
+     *     neptuneIamRoleArn?: string|null,
+     *     processingInstanceType?: string|null,
+     *     processingInstanceVolumeSizeInGB?: int|null,
+     *     processingTimeOutInSeconds?: int|null,
+     *     modelType?: string|null,
+     *     configFileName?: string|null,
+     *     subnets?: list<string>|null,
+     *     securityGroupIds?: list<string>|null,
+     *     volumeEncryptionKMSKey?: string|null,
+     *     s3OutputEncryptionKMSKey?: string|null
      * } $args
      */
     public function __construct(array $args)

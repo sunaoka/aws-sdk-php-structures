@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ImageSetsMetadataSummary> $imageSetsMetadataSummaries
- * @property Shapes\Sort $sort
- * @property string $nextToken
+ * @property Shapes\Sort|null $sort
+ * @property string|null $nextToken
  */
 class SearchImageSetsResponse extends Response
 {

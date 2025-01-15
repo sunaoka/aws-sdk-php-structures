@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Hostname
- * @property string $IpAddress
+ * @property string|null $Hostname
+ * @property string|null $IpAddress
  */
 class AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetails extends Shape
 {
     /**
      * @param array{
-     *     Hostname?: string,
-     *     IpAddress?: string
+     *     Hostname?: string|null,
+     *     IpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $BonusAmount
  * @property string $AssignmentId
  * @property string $Reason
- * @property string $UniqueRequestToken
+ * @property string|null $UniqueRequestToken
  */
 class SendBonusRequest extends Request
 {
@@ -19,7 +19,7 @@ class SendBonusRequest extends Request
      *     BonusAmount: string,
      *     AssignmentId: string,
      *     Reason: string,
-     *     UniqueRequestToken?: string
+     *     UniqueRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

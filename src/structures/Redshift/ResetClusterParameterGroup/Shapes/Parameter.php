@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\Redshift\ResetClusterParameterGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterName
- * @property string $ParameterValue
- * @property string $Description
- * @property string $Source
- * @property string $DataType
- * @property string $AllowedValues
- * @property 'static'|'dynamic' $ApplyType
- * @property bool $IsModifiable
- * @property string $MinimumEngineVersion
+ * @property string|null $ParameterName
+ * @property string|null $ParameterValue
+ * @property string|null $Description
+ * @property string|null $Source
+ * @property string|null $DataType
+ * @property string|null $AllowedValues
+ * @property 'static'|'dynamic'|null $ApplyType
+ * @property bool|null $IsModifiable
+ * @property string|null $MinimumEngineVersion
  */
 class Parameter extends Shape
 {
     /**
      * @param array{
-     *     ParameterName?: string,
-     *     ParameterValue?: string,
-     *     Description?: string,
-     *     Source?: string,
-     *     DataType?: string,
-     *     AllowedValues?: string,
-     *     ApplyType?: 'static'|'dynamic',
-     *     IsModifiable?: bool,
-     *     MinimumEngineVersion?: string
+     *     ParameterName?: string|null,
+     *     ParameterValue?: string|null,
+     *     Description?: string|null,
+     *     Source?: string|null,
+     *     DataType?: string|null,
+     *     AllowedValues?: string|null,
+     *     ApplyType?: 'static'|'dynamic'|null,
+     *     IsModifiable?: bool|null,
+     *     MinimumEngineVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

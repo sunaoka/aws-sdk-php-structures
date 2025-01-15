@@ -6,70 +6,70 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReplicationGroupId
- * @property string $ReplicationGroupDescription
- * @property string $PrimaryClusterId
- * @property string $SnapshottingClusterId
- * @property bool $AutomaticFailoverEnabled
- * @property bool $MultiAZEnabled
- * @property string $NodeGroupId
- * @property list<string> $CacheSecurityGroupNames
- * @property list<string> $SecurityGroupIds
- * @property string $PreferredMaintenanceWindow
- * @property string $NotificationTopicArn
- * @property string $CacheParameterGroupName
- * @property string $NotificationTopicStatus
- * @property bool $ApplyImmediately
- * @property string $Engine
- * @property string $EngineVersion
- * @property bool $AutoMinorVersionUpgrade
- * @property int $SnapshotRetentionLimit
- * @property string $SnapshotWindow
- * @property string $CacheNodeType
- * @property string $AuthToken
- * @property 'SET'|'ROTATE'|'DELETE' $AuthTokenUpdateStrategy
- * @property list<string> $UserGroupIdsToAdd
- * @property list<string> $UserGroupIdsToRemove
- * @property bool $RemoveUserGroups
- * @property list<Shapes\LogDeliveryConfigurationRequest> $LogDeliveryConfigurations
- * @property 'ipv4'|'ipv6' $IpDiscovery
- * @property bool $TransitEncryptionEnabled
- * @property 'preferred'|'required' $TransitEncryptionMode
- * @property 'enabled'|'disabled'|'compatible' $ClusterMode
+ * @property string|null $ReplicationGroupDescription
+ * @property string|null $PrimaryClusterId
+ * @property string|null $SnapshottingClusterId
+ * @property bool|null $AutomaticFailoverEnabled
+ * @property bool|null $MultiAZEnabled
+ * @property string|null $NodeGroupId
+ * @property list<string>|null $CacheSecurityGroupNames
+ * @property list<string>|null $SecurityGroupIds
+ * @property string|null $PreferredMaintenanceWindow
+ * @property string|null $NotificationTopicArn
+ * @property string|null $CacheParameterGroupName
+ * @property string|null $NotificationTopicStatus
+ * @property bool|null $ApplyImmediately
+ * @property string|null $Engine
+ * @property string|null $EngineVersion
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property int|null $SnapshotRetentionLimit
+ * @property string|null $SnapshotWindow
+ * @property string|null $CacheNodeType
+ * @property string|null $AuthToken
+ * @property 'SET'|'ROTATE'|'DELETE'|null $AuthTokenUpdateStrategy
+ * @property list<string>|null $UserGroupIdsToAdd
+ * @property list<string>|null $UserGroupIdsToRemove
+ * @property bool|null $RemoveUserGroups
+ * @property list<Shapes\LogDeliveryConfigurationRequest>|null $LogDeliveryConfigurations
+ * @property 'ipv4'|'ipv6'|null $IpDiscovery
+ * @property bool|null $TransitEncryptionEnabled
+ * @property 'preferred'|'required'|null $TransitEncryptionMode
+ * @property 'enabled'|'disabled'|'compatible'|null $ClusterMode
  */
 class ModifyReplicationGroupRequest extends Request
 {
     /**
      * @param array{
      *     ReplicationGroupId: string,
-     *     ReplicationGroupDescription?: string,
-     *     PrimaryClusterId?: string,
-     *     SnapshottingClusterId?: string,
-     *     AutomaticFailoverEnabled?: bool,
-     *     MultiAZEnabled?: bool,
-     *     NodeGroupId?: string,
-     *     CacheSecurityGroupNames?: list<string>,
-     *     SecurityGroupIds?: list<string>,
-     *     PreferredMaintenanceWindow?: string,
-     *     NotificationTopicArn?: string,
-     *     CacheParameterGroupName?: string,
-     *     NotificationTopicStatus?: string,
-     *     ApplyImmediately?: bool,
-     *     Engine?: string,
-     *     EngineVersion?: string,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     SnapshotRetentionLimit?: int,
-     *     SnapshotWindow?: string,
-     *     CacheNodeType?: string,
-     *     AuthToken?: string,
-     *     AuthTokenUpdateStrategy?: 'SET'|'ROTATE'|'DELETE',
-     *     UserGroupIdsToAdd?: list<string>,
-     *     UserGroupIdsToRemove?: list<string>,
-     *     RemoveUserGroups?: bool,
-     *     LogDeliveryConfigurations?: list<Shapes\LogDeliveryConfigurationRequest>,
-     *     IpDiscovery?: 'ipv4'|'ipv6',
-     *     TransitEncryptionEnabled?: bool,
-     *     TransitEncryptionMode?: 'preferred'|'required',
-     *     ClusterMode?: 'enabled'|'disabled'|'compatible'
+     *     ReplicationGroupDescription?: string|null,
+     *     PrimaryClusterId?: string|null,
+     *     SnapshottingClusterId?: string|null,
+     *     AutomaticFailoverEnabled?: bool|null,
+     *     MultiAZEnabled?: bool|null,
+     *     NodeGroupId?: string|null,
+     *     CacheSecurityGroupNames?: list<string>|null,
+     *     SecurityGroupIds?: list<string>|null,
+     *     PreferredMaintenanceWindow?: string|null,
+     *     NotificationTopicArn?: string|null,
+     *     CacheParameterGroupName?: string|null,
+     *     NotificationTopicStatus?: string|null,
+     *     ApplyImmediately?: bool|null,
+     *     Engine?: string|null,
+     *     EngineVersion?: string|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     SnapshotRetentionLimit?: int|null,
+     *     SnapshotWindow?: string|null,
+     *     CacheNodeType?: string|null,
+     *     AuthToken?: string|null,
+     *     AuthTokenUpdateStrategy?: 'SET'|'ROTATE'|'DELETE'|null,
+     *     UserGroupIdsToAdd?: list<string>|null,
+     *     UserGroupIdsToRemove?: list<string>|null,
+     *     RemoveUserGroups?: bool|null,
+     *     LogDeliveryConfigurations?: list<Shapes\LogDeliveryConfigurationRequest>|null,
+     *     IpDiscovery?: 'ipv4'|'ipv6'|null,
+     *     TransitEncryptionEnabled?: bool|null,
+     *     TransitEncryptionMode?: 'preferred'|'required'|null,
+     *     ClusterMode?: 'enabled'|'disabled'|'compatible'|null
      * } $args
      */
     public function __construct(array $args)

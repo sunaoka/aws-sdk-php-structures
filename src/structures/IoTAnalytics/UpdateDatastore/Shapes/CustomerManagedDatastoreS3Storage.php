@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $bucket
- * @property string $keyPrefix
+ * @property string|null $keyPrefix
  * @property string $roleArn
  */
 class CustomerManagedDatastoreS3Storage extends Shape
@@ -14,7 +14,7 @@ class CustomerManagedDatastoreS3Storage extends Shape
     /**
      * @param array{
      *     bucket: string,
-     *     keyPrefix?: string,
+     *     keyPrefix?: string|null,
      *     roleArn: string
      * } $args
      */

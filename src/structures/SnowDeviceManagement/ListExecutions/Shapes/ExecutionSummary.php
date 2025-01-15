@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SnowDeviceManagement\ListExecutions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $executionId
- * @property string $managedDeviceId
- * @property 'QUEUED'|'IN_PROGRESS'|'CANCELED'|'FAILED'|'SUCCEEDED'|'REJECTED'|'TIMED_OUT' $state
- * @property string $taskId
+ * @property string|null $executionId
+ * @property string|null $managedDeviceId
+ * @property 'QUEUED'|'IN_PROGRESS'|'CANCELED'|'FAILED'|'SUCCEEDED'|'REJECTED'|'TIMED_OUT'|null $state
+ * @property string|null $taskId
  */
 class ExecutionSummary extends Shape
 {
     /**
      * @param array{
-     *     executionId?: string,
-     *     managedDeviceId?: string,
-     *     state?: 'QUEUED'|'IN_PROGRESS'|'CANCELED'|'FAILED'|'SUCCEEDED'|'REJECTED'|'TIMED_OUT',
-     *     taskId?: string
+     *     executionId?: string|null,
+     *     managedDeviceId?: string|null,
+     *     state?: 'QUEUED'|'IN_PROGRESS'|'CANCELED'|'FAILED'|'SUCCEEDED'|'REJECTED'|'TIMED_OUT'|null,
+     *     taskId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeMigrationProje
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\MigrationProject> $MigrationProjects
+ * @property string|null $Marker
+ * @property list<Shapes\MigrationProject>|null $MigrationProjects
  */
 class DescribeMigrationProjectsResponse extends Response
 {

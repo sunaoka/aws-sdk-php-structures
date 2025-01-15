@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<Shapes\PutRecordsRequestEntry> $Records
- * @property string $StreamName
- * @property string $StreamARN
+ * @property string|null $StreamName
+ * @property string|null $StreamARN
  */
 class PutRecordsRequest extends Request
 {
     /**
      * @param array{
      *     Records: list<Shapes\PutRecordsRequestEntry>,
-     *     StreamName?: string,
-     *     StreamARN?: string
+     *     StreamName?: string|null,
+     *     StreamARN?: string|null
      * } $args
      */
     public function __construct(array $args)

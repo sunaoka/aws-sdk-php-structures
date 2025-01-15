@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\DeletePublicIpv4Pool;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $PoolId
- * @property string $NetworkBorderGroup
+ * @property string|null $NetworkBorderGroup
  */
 class DeletePublicIpv4PoolRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     PoolId: string,
-     *     NetworkBorderGroup?: string
+     *     NetworkBorderGroup?: string|null
      * } $args
      */
     public function __construct(array $args)

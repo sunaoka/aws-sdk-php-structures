@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SecretsManager\PutResourcePolicy;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ARN
- * @property string $Name
+ * @property string|null $ARN
+ * @property string|null $Name
  */
 class PutResourcePolicyResponse extends Response
 {

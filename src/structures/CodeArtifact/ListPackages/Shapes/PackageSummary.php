@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeArtifact\ListPackages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo' $format
- * @property string $namespace
- * @property string $package
- * @property PackageOriginConfiguration $originConfiguration
+ * @property 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null $format
+ * @property string|null $namespace
+ * @property string|null $package
+ * @property PackageOriginConfiguration|null $originConfiguration
  */
 class PackageSummary extends Shape
 {
     /**
      * @param array{
-     *     format?: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo',
-     *     namespace?: string,
-     *     package?: string,
-     *     originConfiguration?: PackageOriginConfiguration
+     *     format?: 'npm'|'pypi'|'maven'|'nuget'|'generic'|'ruby'|'swift'|'cargo'|null,
+     *     namespace?: string|null,
+     *     package?: string|null,
+     *     originConfiguration?: PackageOriginConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

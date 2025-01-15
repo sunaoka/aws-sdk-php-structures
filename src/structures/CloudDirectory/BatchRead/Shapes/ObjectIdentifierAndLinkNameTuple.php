@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\BatchRead\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ObjectIdentifier
- * @property string $LinkName
+ * @property string|null $ObjectIdentifier
+ * @property string|null $LinkName
  */
 class ObjectIdentifierAndLinkNameTuple extends Shape
 {
     /**
      * @param array{
-     *     ObjectIdentifier?: string,
-     *     LinkName?: string
+     *     ObjectIdentifier?: string|null,
+     *     LinkName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

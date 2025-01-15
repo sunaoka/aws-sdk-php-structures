@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $enabled
- * @property list<int> $ignoredExitCodes
- * @property int $restartAttemptPeriod
+ * @property list<int>|null $ignoredExitCodes
+ * @property int|null $restartAttemptPeriod
  */
 class ContainerRestartPolicy extends Shape
 {
     /**
      * @param array{
      *     enabled: bool,
-     *     ignoredExitCodes?: list<int>,
-     *     restartAttemptPeriod?: int
+     *     ignoredExitCodes?: list<int>|null,
+     *     restartAttemptPeriod?: int|null
      * } $args
      */
     public function __construct(array $args)

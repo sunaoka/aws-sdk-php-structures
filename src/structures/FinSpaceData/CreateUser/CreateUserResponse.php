@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\FinSpaceData\CreateUser;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $userId
+ * @property string|null $userId
  */
 class CreateUserResponse extends Response
 {

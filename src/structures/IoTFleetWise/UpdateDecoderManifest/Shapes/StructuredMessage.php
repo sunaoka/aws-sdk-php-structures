@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\IoTFleetWise\UpdateDecoderManifest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property PrimitiveMessageDefinition $primitiveMessageDefinition
- * @property StructuredMessageListDefinition $structuredMessageListDefinition
- * @property list<StructuredMessageFieldNameAndDataTypePair> $structuredMessageDefinition
+ * @property PrimitiveMessageDefinition|null $primitiveMessageDefinition
+ * @property StructuredMessageListDefinition|null $structuredMessageListDefinition
+ * @property list<StructuredMessageFieldNameAndDataTypePair>|null $structuredMessageDefinition
  */
 class StructuredMessage extends Shape
 {
     /**
      * @param array{
-     *     primitiveMessageDefinition?: PrimitiveMessageDefinition,
-     *     structuredMessageListDefinition?: StructuredMessageListDefinition,
-     *     structuredMessageDefinition?: list<StructuredMessageFieldNameAndDataTypePair>
+     *     primitiveMessageDefinition?: PrimitiveMessageDefinition|null,
+     *     structuredMessageListDefinition?: StructuredMessageListDefinition|null,
+     *     structuredMessageDefinition?: list<StructuredMessageFieldNameAndDataTypePair>|null
      * } $args
      */
     public function __construct(array $args = [])

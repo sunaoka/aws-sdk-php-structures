@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $agentAliasName
  * @property 'CREATING'|'PREPARED'|'FAILED'|'UPDATING'|'DELETING' $agentAliasStatus
  * @property \Aws\Api\DateTimeResult $createdAt
- * @property string $description
- * @property list<AgentAliasRoutingConfigurationListItem> $routingConfiguration
+ * @property string|null $description
+ * @property list<AgentAliasRoutingConfigurationListItem>|null $routingConfiguration
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
 class AgentAliasSummary extends Shape
@@ -21,8 +21,8 @@ class AgentAliasSummary extends Shape
      *     agentAliasName: string,
      *     agentAliasStatus: 'CREATING'|'PREPARED'|'FAILED'|'UPDATING'|'DELETING',
      *     createdAt: \Aws\Api\DateTimeResult,
-     *     description?: string,
-     *     routingConfiguration?: list<AgentAliasRoutingConfigurationListItem>,
+     *     description?: string|null,
+     *     routingConfiguration?: list<AgentAliasRoutingConfigurationListItem>|null,
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args
      */

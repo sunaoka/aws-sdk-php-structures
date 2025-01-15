@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $HealthyThreshold
- * @property int $Interval
- * @property string $Target
- * @property int $Timeout
- * @property int $UnhealthyThreshold
+ * @property int|null $HealthyThreshold
+ * @property int|null $Interval
+ * @property string|null $Target
+ * @property int|null $Timeout
+ * @property int|null $UnhealthyThreshold
  */
 class AwsElbLoadBalancerHealthCheck extends Shape
 {
     /**
      * @param array{
-     *     HealthyThreshold?: int,
-     *     Interval?: int,
-     *     Target?: string,
-     *     Timeout?: int,
-     *     UnhealthyThreshold?: int
+     *     HealthyThreshold?: int|null,
+     *     Interval?: int|null,
+     *     Target?: string|null,
+     *     Timeout?: int|null,
+     *     UnhealthyThreshold?: int|null
      * } $args
      */
     public function __construct(array $args = [])

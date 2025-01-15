@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\ForecastService\DescribeDatasetImportJob;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DatasetImportJobName
- * @property string $DatasetImportJobArn
- * @property string $DatasetArn
- * @property string $TimestampFormat
- * @property string $TimeZone
- * @property bool $UseGeolocationForTimeZone
- * @property string $GeolocationFormat
- * @property Shapes\DataSource $DataSource
- * @property int $EstimatedTimeRemainingInMinutes
- * @property array<string, Shapes\Statistics> $FieldStatistics
- * @property double $DataSize
- * @property string $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModificationTime
- * @property string $Format
- * @property 'FULL'|'INCREMENTAL' $ImportMode
+ * @property string|null $DatasetImportJobName
+ * @property string|null $DatasetImportJobArn
+ * @property string|null $DatasetArn
+ * @property string|null $TimestampFormat
+ * @property string|null $TimeZone
+ * @property bool|null $UseGeolocationForTimeZone
+ * @property string|null $GeolocationFormat
+ * @property Shapes\DataSource|null $DataSource
+ * @property int|null $EstimatedTimeRemainingInMinutes
+ * @property array<string, Shapes\Statistics>|null $FieldStatistics
+ * @property double|null $DataSize
+ * @property string|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModificationTime
+ * @property string|null $Format
+ * @property 'FULL'|'INCREMENTAL'|null $ImportMode
  */
 class DescribeDatasetImportJobResponse extends Response
 {

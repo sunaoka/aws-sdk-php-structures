@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DeleteReplicationTaskA
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ReplicationTaskAssessmentRun $ReplicationTaskAssessmentRun
+ * @property Shapes\ReplicationTaskAssessmentRun|null $ReplicationTaskAssessmentRun
  */
 class DeleteReplicationTaskAssessmentRunResponse extends Response
 {

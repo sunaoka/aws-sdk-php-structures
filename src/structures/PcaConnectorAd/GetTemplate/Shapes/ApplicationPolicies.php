@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\PcaConnectorAd\GetTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Critical
+ * @property bool|null $Critical
  * @property list<ApplicationPolicy> $Policies
  */
 class ApplicationPolicies extends Shape
 {
     /**
      * @param array{
-     *     Critical?: bool,
+     *     Critical?: bool|null,
      *     Policies: list<ApplicationPolicy>
      * } $args
      */

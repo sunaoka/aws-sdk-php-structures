@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\SetRiskConfiguration\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $BlockedIPRangeList
- * @property list<string> $SkippedIPRangeList
+ * @property list<string>|null $BlockedIPRangeList
+ * @property list<string>|null $SkippedIPRangeList
  */
 class RiskExceptionConfigurationType extends Shape
 {
     /**
      * @param array{
-     *     BlockedIPRangeList?: list<string>,
-     *     SkippedIPRangeList?: list<string>
+     *     BlockedIPRangeList?: list<string>|null,
+     *     SkippedIPRangeList?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

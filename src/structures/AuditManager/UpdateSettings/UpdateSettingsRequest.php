@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\AuditManager\UpdateSettings;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $snsTopic
- * @property Shapes\AssessmentReportsDestination $defaultAssessmentReportsDestination
- * @property list<Shapes\Role> $defaultProcessOwners
- * @property string $kmsKey
- * @property bool $evidenceFinderEnabled
- * @property Shapes\DeregistrationPolicy $deregistrationPolicy
- * @property Shapes\DefaultExportDestination $defaultExportDestination
+ * @property string|null $snsTopic
+ * @property Shapes\AssessmentReportsDestination|null $defaultAssessmentReportsDestination
+ * @property list<Shapes\Role>|null $defaultProcessOwners
+ * @property string|null $kmsKey
+ * @property bool|null $evidenceFinderEnabled
+ * @property Shapes\DeregistrationPolicy|null $deregistrationPolicy
+ * @property Shapes\DefaultExportDestination|null $defaultExportDestination
  */
 class UpdateSettingsRequest extends Request
 {
     /**
      * @param array{
-     *     snsTopic?: string,
-     *     defaultAssessmentReportsDestination?: Shapes\AssessmentReportsDestination,
-     *     defaultProcessOwners?: list<Shapes\Role>,
-     *     kmsKey?: string,
-     *     evidenceFinderEnabled?: bool,
-     *     deregistrationPolicy?: Shapes\DeregistrationPolicy,
-     *     defaultExportDestination?: Shapes\DefaultExportDestination
+     *     snsTopic?: string|null,
+     *     defaultAssessmentReportsDestination?: Shapes\AssessmentReportsDestination|null,
+     *     defaultProcessOwners?: list<Shapes\Role>|null,
+     *     kmsKey?: string|null,
+     *     evidenceFinderEnabled?: bool|null,
+     *     deregistrationPolicy?: Shapes\DeregistrationPolicy|null,
+     *     defaultExportDestination?: Shapes\DefaultExportDestination|null
      * } $args
      */
     public function __construct(array $args = [])

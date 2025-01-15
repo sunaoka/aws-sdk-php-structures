@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\drs\StopSourceNetworkReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $apiCallDateTime
- * @property string $jobID
- * @property 'NOT_STARTED'|'IN_PROGRESS'|'SUCCESS'|'FAIL'|'PARTIAL_SUCCESS'|'ASSOCIATE_SUCCESS'|'ASSOCIATE_FAIL' $lastRecoveryResult
+ * @property \Aws\Api\DateTimeResult|null $apiCallDateTime
+ * @property string|null $jobID
+ * @property 'NOT_STARTED'|'IN_PROGRESS'|'SUCCESS'|'FAIL'|'PARTIAL_SUCCESS'|'ASSOCIATE_SUCCESS'|'ASSOCIATE_FAIL'|null $lastRecoveryResult
  */
 class RecoveryLifeCycle extends Shape
 {
     /**
      * @param array{
-     *     apiCallDateTime?: \Aws\Api\DateTimeResult,
-     *     jobID?: string,
-     *     lastRecoveryResult?: 'NOT_STARTED'|'IN_PROGRESS'|'SUCCESS'|'FAIL'|'PARTIAL_SUCCESS'|'ASSOCIATE_SUCCESS'|'ASSOCIATE_FAIL'
+     *     apiCallDateTime?: \Aws\Api\DateTimeResult|null,
+     *     jobID?: string|null,
+     *     lastRecoveryResult?: 'NOT_STARTED'|'IN_PROGRESS'|'SUCCESS'|'FAIL'|'PARTIAL_SUCCESS'|'ASSOCIATE_SUCCESS'|'ASSOCIATE_FAIL'|null
      * } $args
      */
     public function __construct(array $args = [])

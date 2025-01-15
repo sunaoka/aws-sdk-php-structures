@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\TranscribeService\GetCallAnalyticsJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'GENERATIVE_SUMMARIZATION' $Feature
- * @property 'INSUFFICIENT_CONVERSATION_CONTENT'|'FAILED_SAFETY_GUIDELINES' $ReasonCode
- * @property string $Message
+ * @property 'GENERATIVE_SUMMARIZATION'|null $Feature
+ * @property 'INSUFFICIENT_CONVERSATION_CONTENT'|'FAILED_SAFETY_GUIDELINES'|null $ReasonCode
+ * @property string|null $Message
  */
 class CallAnalyticsSkippedFeature extends Shape
 {
     /**
      * @param array{
-     *     Feature?: 'GENERATIVE_SUMMARIZATION',
-     *     ReasonCode?: 'INSUFFICIENT_CONVERSATION_CONTENT'|'FAILED_SAFETY_GUIDELINES',
-     *     Message?: string
+     *     Feature?: 'GENERATIVE_SUMMARIZATION'|null,
+     *     ReasonCode?: 'INSUFFICIENT_CONVERSATION_CONTENT'|'FAILED_SAFETY_GUIDELINES'|null,
+     *     Message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

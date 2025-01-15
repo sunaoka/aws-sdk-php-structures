@@ -8,12 +8,12 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $MedicalScribeJobName
  * @property Shapes\Media $Media
  * @property string $OutputBucketName
- * @property string $OutputEncryptionKMSKeyId
- * @property array<string, string> $KMSEncryptionContext
+ * @property string|null $OutputEncryptionKMSKeyId
+ * @property array<string, string>|null $KMSEncryptionContext
  * @property string $DataAccessRoleArn
  * @property Shapes\MedicalScribeSettings $Settings
- * @property list<Shapes\MedicalScribeChannelDefinition> $ChannelDefinitions
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\MedicalScribeChannelDefinition>|null $ChannelDefinitions
+ * @property list<Shapes\Tag>|null $Tags
  */
 class StartMedicalScribeJobRequest extends Request
 {
@@ -22,12 +22,12 @@ class StartMedicalScribeJobRequest extends Request
      *     MedicalScribeJobName: string,
      *     Media: Shapes\Media,
      *     OutputBucketName: string,
-     *     OutputEncryptionKMSKeyId?: string,
-     *     KMSEncryptionContext?: array<string, string>,
+     *     OutputEncryptionKMSKeyId?: string|null,
+     *     KMSEncryptionContext?: array<string, string>|null,
      *     DataAccessRoleArn: string,
      *     Settings: Shapes\MedicalScribeSettings,
-     *     ChannelDefinitions?: list<Shapes\MedicalScribeChannelDefinition>,
-     *     Tags?: list<Shapes\Tag>
+     *     ChannelDefinitions?: list<Shapes\MedicalScribeChannelDefinition>|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

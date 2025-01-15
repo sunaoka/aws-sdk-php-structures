@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\DataZone\ListSubscriptionRequests\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $formName
+ * @property string|null $formName
  * @property string $typeName
  * @property string $typeRevision
  */
@@ -13,7 +13,7 @@ class MetadataFormSummary extends Shape
 {
     /**
      * @param array{
-     *     formName?: string,
+     *     formName?: string|null,
      *     typeName: string,
      *     typeRevision: string
      * } $args

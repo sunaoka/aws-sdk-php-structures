@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\ApplyGuardrail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GuardrailTextCharactersCoverage $textCharacters
- * @property GuardrailImageCoverage $images
+ * @property GuardrailTextCharactersCoverage|null $textCharacters
+ * @property GuardrailImageCoverage|null $images
  */
 class GuardrailCoverage extends Shape
 {
     /**
      * @param array{
-     *     textCharacters?: GuardrailTextCharactersCoverage,
-     *     images?: GuardrailImageCoverage
+     *     textCharacters?: GuardrailTextCharactersCoverage|null,
+     *     images?: GuardrailImageCoverage|null
      * } $args
      */
     public function __construct(array $args = [])

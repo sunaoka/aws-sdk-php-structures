@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListAnalyza
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $maxResults
- * @property string $nextToken
- * @property 'ASC'|'DESC' $sort
+ * @property int|null $maxResults
+ * @property string|null $nextToken
+ * @property 'ASC'|'DESC'|null $sort
  */
 class ListAnalyzableServersRequest extends Request
 {
     /**
      * @param array{
-     *     maxResults?: int,
-     *     nextToken?: string,
-     *     sort?: 'ASC'|'DESC'
+     *     maxResults?: int|null,
+     *     nextToken?: string|null,
+     *     sort?: 'ASC'|'DESC'|null
      * } $args
      */
     public function __construct(array $args = [])

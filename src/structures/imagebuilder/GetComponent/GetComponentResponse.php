@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\imagebuilder\GetComponent;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $requestId
- * @property Shapes\Component $component
+ * @property string|null $requestId
+ * @property Shapes\Component|null $component
  */
 class GetComponentResponse extends Response
 {

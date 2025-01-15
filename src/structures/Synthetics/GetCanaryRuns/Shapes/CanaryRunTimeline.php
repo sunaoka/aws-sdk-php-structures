@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Synthetics\GetCanaryRuns\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $Started
- * @property \Aws\Api\DateTimeResult $Completed
+ * @property \Aws\Api\DateTimeResult|null $Started
+ * @property \Aws\Api\DateTimeResult|null $Completed
  */
 class CanaryRunTimeline extends Shape
 {
     /**
      * @param array{
-     *     Started?: \Aws\Api\DateTimeResult,
-     *     Completed?: \Aws\Api\DateTimeResult
+     *     Started?: \Aws\Api\DateTimeResult|null,
+     *     Completed?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

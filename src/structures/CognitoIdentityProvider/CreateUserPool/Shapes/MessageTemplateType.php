@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CognitoIdentityProvider\CreateUserPool\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SMSMessage
- * @property string $EmailMessage
- * @property string $EmailSubject
+ * @property string|null $SMSMessage
+ * @property string|null $EmailMessage
+ * @property string|null $EmailSubject
  */
 class MessageTemplateType extends Shape
 {
     /**
      * @param array{
-     *     SMSMessage?: string,
-     *     EmailMessage?: string,
-     *     EmailSubject?: string
+     *     SMSMessage?: string|null,
+     *     EmailMessage?: string|null,
+     *     EmailSubject?: string|null
      * } $args
      */
     public function __construct(array $args = [])

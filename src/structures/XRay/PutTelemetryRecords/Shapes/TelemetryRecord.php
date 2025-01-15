@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $Timestamp
- * @property int $SegmentsReceivedCount
- * @property int $SegmentsSentCount
- * @property int $SegmentsSpilloverCount
- * @property int $SegmentsRejectedCount
- * @property BackendConnectionErrors $BackendConnectionErrors
+ * @property int|null $SegmentsReceivedCount
+ * @property int|null $SegmentsSentCount
+ * @property int|null $SegmentsSpilloverCount
+ * @property int|null $SegmentsRejectedCount
+ * @property BackendConnectionErrors|null $BackendConnectionErrors
  */
 class TelemetryRecord extends Shape
 {
     /**
      * @param array{
      *     Timestamp: \Aws\Api\DateTimeResult,
-     *     SegmentsReceivedCount?: int,
-     *     SegmentsSentCount?: int,
-     *     SegmentsSpilloverCount?: int,
-     *     SegmentsRejectedCount?: int,
-     *     BackendConnectionErrors?: BackendConnectionErrors
+     *     SegmentsReceivedCount?: int|null,
+     *     SegmentsSentCount?: int|null,
+     *     SegmentsSpilloverCount?: int|null,
+     *     SegmentsRejectedCount?: int|null,
+     *     BackendConnectionErrors?: BackendConnectionErrors|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $displayName
- * @property string $description
+ * @property string|null $displayName
+ * @property string|null $description
  */
 class ProjectSummary extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     displayName?: string,
-     *     description?: string
+     *     displayName?: string|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

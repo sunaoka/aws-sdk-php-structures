@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QBusiness\CreatePlugin\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $payload
- * @property S3 $s3
+ * @property string|null $payload
+ * @property S3|null $s3
  */
 class APISchema extends Shape
 {
     /**
      * @param array{
-     *     payload?: string,
-     *     s3?: S3
+     *     payload?: string|null,
+     *     s3?: S3|null
      * } $args
      */
     public function __construct(array $args = [])

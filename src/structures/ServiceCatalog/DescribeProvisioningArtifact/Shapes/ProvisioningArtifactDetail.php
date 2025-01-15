@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProvisioningArtifact\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property string $Description
- * @property 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE_AMI'|'MARKETPLACE_CAR'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL' $Type
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property bool $Active
- * @property 'DEFAULT'|'DEPRECATED' $Guidance
- * @property string $SourceRevision
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE_AMI'|'MARKETPLACE_CAR'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL'|null $Type
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property bool|null $Active
+ * @property 'DEFAULT'|'DEPRECATED'|null $Guidance
+ * @property string|null $SourceRevision
  */
 class ProvisioningArtifactDetail extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     Type?: 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE_AMI'|'MARKETPLACE_CAR'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL',
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     Active?: bool,
-     *     Guidance?: 'DEFAULT'|'DEPRECATED',
-     *     SourceRevision?: string
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     Type?: 'CLOUD_FORMATION_TEMPLATE'|'MARKETPLACE_AMI'|'MARKETPLACE_CAR'|'TERRAFORM_OPEN_SOURCE'|'TERRAFORM_CLOUD'|'EXTERNAL'|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     Active?: bool|null,
+     *     Guidance?: 'DEFAULT'|'DEPRECATED'|null,
+     *     SourceRevision?: string|null
      * } $args
      */
     public function __construct(array $args = [])

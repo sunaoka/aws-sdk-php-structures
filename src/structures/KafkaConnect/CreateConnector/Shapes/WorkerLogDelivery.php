@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\CreateConnector\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CloudWatchLogsLogDelivery $cloudWatchLogs
- * @property FirehoseLogDelivery $firehose
- * @property S3LogDelivery $s3
+ * @property CloudWatchLogsLogDelivery|null $cloudWatchLogs
+ * @property FirehoseLogDelivery|null $firehose
+ * @property S3LogDelivery|null $s3
  */
 class WorkerLogDelivery extends Shape
 {
     /**
      * @param array{
-     *     cloudWatchLogs?: CloudWatchLogsLogDelivery,
-     *     firehose?: FirehoseLogDelivery,
-     *     s3?: S3LogDelivery
+     *     cloudWatchLogs?: CloudWatchLogsLogDelivery|null,
+     *     firehose?: FirehoseLogDelivery|null,
+     *     s3?: S3LogDelivery|null
      * } $args
      */
     public function __construct(array $args = [])

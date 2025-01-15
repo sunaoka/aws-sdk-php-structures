@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\CodeCommit\CreatePullRequest\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $pullRequestId
- * @property string $title
- * @property string $description
- * @property \Aws\Api\DateTimeResult $lastActivityDate
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property 'OPEN'|'CLOSED' $pullRequestStatus
- * @property string $authorArn
- * @property list<PullRequestTarget> $pullRequestTargets
- * @property string $clientRequestToken
- * @property string $revisionId
- * @property list<ApprovalRule> $approvalRules
+ * @property string|null $pullRequestId
+ * @property string|null $title
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $lastActivityDate
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property 'OPEN'|'CLOSED'|null $pullRequestStatus
+ * @property string|null $authorArn
+ * @property list<PullRequestTarget>|null $pullRequestTargets
+ * @property string|null $clientRequestToken
+ * @property string|null $revisionId
+ * @property list<ApprovalRule>|null $approvalRules
  */
 class PullRequest extends Shape
 {
     /**
      * @param array{
-     *     pullRequestId?: string,
-     *     title?: string,
-     *     description?: string,
-     *     lastActivityDate?: \Aws\Api\DateTimeResult,
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     pullRequestStatus?: 'OPEN'|'CLOSED',
-     *     authorArn?: string,
-     *     pullRequestTargets?: list<PullRequestTarget>,
-     *     clientRequestToken?: string,
-     *     revisionId?: string,
-     *     approvalRules?: list<ApprovalRule>
+     *     pullRequestId?: string|null,
+     *     title?: string|null,
+     *     description?: string|null,
+     *     lastActivityDate?: \Aws\Api\DateTimeResult|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     pullRequestStatus?: 'OPEN'|'CLOSED'|null,
+     *     authorArn?: string|null,
+     *     pullRequestTargets?: list<PullRequestTarget>|null,
+     *     clientRequestToken?: string|null,
+     *     revisionId?: string|null,
+     *     approvalRules?: list<ApprovalRule>|null
      * } $args
      */
     public function __construct(array $args = [])

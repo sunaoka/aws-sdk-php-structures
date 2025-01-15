@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Base
- * @property string $CapacityProvider
- * @property int $Weight
+ * @property int|null $Base
+ * @property string|null $CapacityProvider
+ * @property int|null $Weight
  */
 class AwsEcsServiceCapacityProviderStrategyDetails extends Shape
 {
     /**
      * @param array{
-     *     Base?: int,
-     *     CapacityProvider?: string,
-     *     Weight?: int
+     *     Base?: int|null,
+     *     CapacityProvider?: string|null,
+     *     Weight?: int|null
      * } $args
      */
     public function __construct(array $args = [])

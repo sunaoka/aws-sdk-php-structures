@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Connect\AssociateAnalyticsDataSet;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DataSetId
- * @property string $TargetAccountId
- * @property string $ResourceShareId
- * @property string $ResourceShareArn
+ * @property string|null $DataSetId
+ * @property string|null $TargetAccountId
+ * @property string|null $ResourceShareId
+ * @property string|null $ResourceShareArn
  */
 class AssociateAnalyticsDataSetResponse extends Response
 {

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Iot\CreateProvisioningTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $payloadVersion
+ * @property string|null $payloadVersion
  * @property string $targetArn
  */
 class ProvisioningHook extends Shape
 {
     /**
      * @param array{
-     *     payloadVersion?: string,
+     *     payloadVersion?: string|null,
      *     targetArn: string
      * } $args
      */

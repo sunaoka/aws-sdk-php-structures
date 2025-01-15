@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListSpaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OwnerUserProfileName
+ * @property string|null $OwnerUserProfileName
  */
 class OwnershipSettingsSummary extends Shape
 {
     /**
-     * @param array{OwnerUserProfileName?: string} $args
+     * @param array{OwnerUserProfileName?: string|null} $args
      */
     public function __construct(array $args = [])
     {

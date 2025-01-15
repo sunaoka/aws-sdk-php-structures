@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Database
  * @property string $Table
- * @property string $PartitionPredicate
- * @property S3SourceAdditionalOptions $AdditionalOptions
+ * @property string|null $PartitionPredicate
+ * @property S3SourceAdditionalOptions|null $AdditionalOptions
  */
 class GovernedCatalogSource extends Shape
 {
@@ -18,8 +18,8 @@ class GovernedCatalogSource extends Shape
      *     Name: string,
      *     Database: string,
      *     Table: string,
-     *     PartitionPredicate?: string,
-     *     AdditionalOptions?: S3SourceAdditionalOptions
+     *     PartitionPredicate?: string|null,
+     *     AdditionalOptions?: S3SourceAdditionalOptions|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\OpsWorks\GetHostnameSuggestion;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LayerId
- * @property string $Hostname
+ * @property string|null $LayerId
+ * @property string|null $Hostname
  */
 class GetHostnameSuggestionResponse extends Response
 {

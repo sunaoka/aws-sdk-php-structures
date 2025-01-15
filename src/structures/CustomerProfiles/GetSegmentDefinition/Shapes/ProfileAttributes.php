@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\CustomerProfiles\GetSegmentDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ProfileDimension $AccountNumber
- * @property ExtraLengthValueProfileDimension $AdditionalInformation
- * @property ProfileDimension $FirstName
- * @property ProfileDimension $LastName
- * @property ProfileDimension $MiddleName
- * @property ProfileDimension $GenderString
- * @property ProfileDimension $PartyTypeString
- * @property DateDimension $BirthDate
- * @property ProfileDimension $PhoneNumber
- * @property ProfileDimension $BusinessName
- * @property ProfileDimension $BusinessPhoneNumber
- * @property ProfileDimension $HomePhoneNumber
- * @property ProfileDimension $MobilePhoneNumber
- * @property ProfileDimension $EmailAddress
- * @property ProfileDimension $PersonalEmailAddress
- * @property ProfileDimension $BusinessEmailAddress
- * @property AddressDimension $Address
- * @property AddressDimension $ShippingAddress
- * @property AddressDimension $MailingAddress
- * @property AddressDimension $BillingAddress
- * @property array<string, AttributeDimension> $Attributes
+ * @property ProfileDimension|null $AccountNumber
+ * @property ExtraLengthValueProfileDimension|null $AdditionalInformation
+ * @property ProfileDimension|null $FirstName
+ * @property ProfileDimension|null $LastName
+ * @property ProfileDimension|null $MiddleName
+ * @property ProfileDimension|null $GenderString
+ * @property ProfileDimension|null $PartyTypeString
+ * @property DateDimension|null $BirthDate
+ * @property ProfileDimension|null $PhoneNumber
+ * @property ProfileDimension|null $BusinessName
+ * @property ProfileDimension|null $BusinessPhoneNumber
+ * @property ProfileDimension|null $HomePhoneNumber
+ * @property ProfileDimension|null $MobilePhoneNumber
+ * @property ProfileDimension|null $EmailAddress
+ * @property ProfileDimension|null $PersonalEmailAddress
+ * @property ProfileDimension|null $BusinessEmailAddress
+ * @property AddressDimension|null $Address
+ * @property AddressDimension|null $ShippingAddress
+ * @property AddressDimension|null $MailingAddress
+ * @property AddressDimension|null $BillingAddress
+ * @property array<string, AttributeDimension>|null $Attributes
  */
 class ProfileAttributes extends Shape
 {
     /**
      * @param array{
-     *     AccountNumber?: ProfileDimension,
-     *     AdditionalInformation?: ExtraLengthValueProfileDimension,
-     *     FirstName?: ProfileDimension,
-     *     LastName?: ProfileDimension,
-     *     MiddleName?: ProfileDimension,
-     *     GenderString?: ProfileDimension,
-     *     PartyTypeString?: ProfileDimension,
-     *     BirthDate?: DateDimension,
-     *     PhoneNumber?: ProfileDimension,
-     *     BusinessName?: ProfileDimension,
-     *     BusinessPhoneNumber?: ProfileDimension,
-     *     HomePhoneNumber?: ProfileDimension,
-     *     MobilePhoneNumber?: ProfileDimension,
-     *     EmailAddress?: ProfileDimension,
-     *     PersonalEmailAddress?: ProfileDimension,
-     *     BusinessEmailAddress?: ProfileDimension,
-     *     Address?: AddressDimension,
-     *     ShippingAddress?: AddressDimension,
-     *     MailingAddress?: AddressDimension,
-     *     BillingAddress?: AddressDimension,
-     *     Attributes?: array<string, AttributeDimension>
+     *     AccountNumber?: ProfileDimension|null,
+     *     AdditionalInformation?: ExtraLengthValueProfileDimension|null,
+     *     FirstName?: ProfileDimension|null,
+     *     LastName?: ProfileDimension|null,
+     *     MiddleName?: ProfileDimension|null,
+     *     GenderString?: ProfileDimension|null,
+     *     PartyTypeString?: ProfileDimension|null,
+     *     BirthDate?: DateDimension|null,
+     *     PhoneNumber?: ProfileDimension|null,
+     *     BusinessName?: ProfileDimension|null,
+     *     BusinessPhoneNumber?: ProfileDimension|null,
+     *     HomePhoneNumber?: ProfileDimension|null,
+     *     MobilePhoneNumber?: ProfileDimension|null,
+     *     EmailAddress?: ProfileDimension|null,
+     *     PersonalEmailAddress?: ProfileDimension|null,
+     *     BusinessEmailAddress?: ProfileDimension|null,
+     *     Address?: AddressDimension|null,
+     *     ShippingAddress?: AddressDimension|null,
+     *     MailingAddress?: AddressDimension|null,
+     *     BillingAddress?: AddressDimension|null,
+     *     Attributes?: array<string, AttributeDimension>|null
      * } $args
      */
     public function __construct(array $args = [])

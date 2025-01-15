@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListTrials\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TrialArn
- * @property string $TrialName
- * @property string $DisplayName
- * @property TrialSource $TrialSource
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $TrialArn
+ * @property string|null $TrialName
+ * @property string|null $DisplayName
+ * @property TrialSource|null $TrialSource
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class TrialSummary extends Shape
 {
     /**
      * @param array{
-     *     TrialArn?: string,
-     *     TrialName?: string,
-     *     DisplayName?: string,
-     *     TrialSource?: TrialSource,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     TrialArn?: string|null,
+     *     TrialName?: string|null,
+     *     DisplayName?: string|null,
+     *     TrialSource?: TrialSource|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

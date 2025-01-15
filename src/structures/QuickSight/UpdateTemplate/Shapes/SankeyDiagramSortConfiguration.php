@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<FieldSortOptions> $WeightSort
- * @property ItemsLimitConfiguration $SourceItemsLimit
- * @property ItemsLimitConfiguration $DestinationItemsLimit
+ * @property list<FieldSortOptions>|null $WeightSort
+ * @property ItemsLimitConfiguration|null $SourceItemsLimit
+ * @property ItemsLimitConfiguration|null $DestinationItemsLimit
  */
 class SankeyDiagramSortConfiguration extends Shape
 {
     /**
      * @param array{
-     *     WeightSort?: list<FieldSortOptions>,
-     *     SourceItemsLimit?: ItemsLimitConfiguration,
-     *     DestinationItemsLimit?: ItemsLimitConfiguration
+     *     WeightSort?: list<FieldSortOptions>|null,
+     *     SourceItemsLimit?: ItemsLimitConfiguration|null,
+     *     DestinationItemsLimit?: ItemsLimitConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

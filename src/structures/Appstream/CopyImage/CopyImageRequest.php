@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourceImageName
  * @property string $DestinationImageName
  * @property string $DestinationRegion
- * @property string $DestinationImageDescription
+ * @property string|null $DestinationImageDescription
  */
 class CopyImageRequest extends Request
 {
@@ -17,7 +17,7 @@ class CopyImageRequest extends Request
      *     SourceImageName: string,
      *     DestinationImageName: string,
      *     DestinationRegion: string,
-     *     DestinationImageDescription?: string
+     *     DestinationImageDescription?: string|null
      * } $args
      */
     public function __construct(array $args)

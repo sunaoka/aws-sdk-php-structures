@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\MQ\DescribeConfigurationRevision;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ConfigurationId
- * @property \Aws\Api\DateTimeResult $Created
- * @property string $Data
- * @property string $Description
+ * @property string|null $ConfigurationId
+ * @property \Aws\Api\DateTimeResult|null $Created
+ * @property string|null $Data
+ * @property string|null $Description
  */
 class DescribeConfigurationRevisionResponse extends Response
 {

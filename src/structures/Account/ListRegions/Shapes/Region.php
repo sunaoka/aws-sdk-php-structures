@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Account\ListRegions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RegionName
- * @property 'ENABLED'|'ENABLING'|'DISABLING'|'DISABLED'|'ENABLED_BY_DEFAULT' $RegionOptStatus
+ * @property string|null $RegionName
+ * @property 'ENABLED'|'ENABLING'|'DISABLING'|'DISABLED'|'ENABLED_BY_DEFAULT'|null $RegionOptStatus
  */
 class Region extends Shape
 {
     /**
      * @param array{
-     *     RegionName?: string,
-     *     RegionOptStatus?: 'ENABLED'|'ENABLING'|'DISABLING'|'DISABLED'|'ENABLED_BY_DEFAULT'
+     *     RegionName?: string|null,
+     *     RegionOptStatus?: 'ENABLED'|'ENABLING'|'DISABLING'|'DISABLED'|'ENABLED_BY_DEFAULT'|null
      * } $args
      */
     public function __construct(array $args = [])

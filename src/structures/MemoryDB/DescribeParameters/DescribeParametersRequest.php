@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ParameterGroupName
- * @property int $MaxResults
- * @property string $NextToken
+ * @property int|null $MaxResults
+ * @property string|null $NextToken
  */
 class DescribeParametersRequest extends Request
 {
     /**
      * @param array{
      *     ParameterGroupName: string,
-     *     MaxResults?: int,
-     *     NextToken?: string
+     *     MaxResults?: int|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

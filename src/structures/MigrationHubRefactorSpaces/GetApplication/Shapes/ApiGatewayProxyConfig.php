@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\MigrationHubRefactorSpaces\GetApplication\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApiGatewayId
- * @property 'REGIONAL'|'PRIVATE' $EndpointType
- * @property string $NlbArn
- * @property string $NlbName
- * @property string $ProxyUrl
- * @property string $StageName
- * @property string $VpcLinkId
+ * @property string|null $ApiGatewayId
+ * @property 'REGIONAL'|'PRIVATE'|null $EndpointType
+ * @property string|null $NlbArn
+ * @property string|null $NlbName
+ * @property string|null $ProxyUrl
+ * @property string|null $StageName
+ * @property string|null $VpcLinkId
  */
 class ApiGatewayProxyConfig extends Shape
 {
     /**
      * @param array{
-     *     ApiGatewayId?: string,
-     *     EndpointType?: 'REGIONAL'|'PRIVATE',
-     *     NlbArn?: string,
-     *     NlbName?: string,
-     *     ProxyUrl?: string,
-     *     StageName?: string,
-     *     VpcLinkId?: string
+     *     ApiGatewayId?: string|null,
+     *     EndpointType?: 'REGIONAL'|'PRIVATE'|null,
+     *     NlbArn?: string|null,
+     *     NlbName?: string|null,
+     *     ProxyUrl?: string|null,
+     *     StageName?: string|null,
+     *     VpcLinkId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

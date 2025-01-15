@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMeetings\ListAttendees\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ExternalUserId
- * @property string $AttendeeId
- * @property string $JoinToken
- * @property AttendeeCapabilities $Capabilities
+ * @property string|null $ExternalUserId
+ * @property string|null $AttendeeId
+ * @property string|null $JoinToken
+ * @property AttendeeCapabilities|null $Capabilities
  */
 class Attendee extends Shape
 {
     /**
      * @param array{
-     *     ExternalUserId?: string,
-     *     AttendeeId?: string,
-     *     JoinToken?: string,
-     *     Capabilities?: AttendeeCapabilities
+     *     ExternalUserId?: string|null,
+     *     AttendeeId?: string|null,
+     *     JoinToken?: string|null,
+     *     Capabilities?: AttendeeCapabilities|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\EMRContainers\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $logUri
+ * @property string|null $logUri
  */
 class ParametricS3MonitoringConfiguration extends Shape
 {
     /**
-     * @param array{logUri?: string} $args
+     * @param array{logUri?: string|null} $args
      */
     public function __construct(array $args = [])
     {

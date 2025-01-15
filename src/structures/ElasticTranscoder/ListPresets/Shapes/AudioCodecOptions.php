@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\ListPresets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Profile
- * @property string $BitDepth
- * @property string $BitOrder
- * @property string $Signed
+ * @property string|null $Profile
+ * @property string|null $BitDepth
+ * @property string|null $BitOrder
+ * @property string|null $Signed
  */
 class AudioCodecOptions extends Shape
 {
     /**
      * @param array{
-     *     Profile?: string,
-     *     BitDepth?: string,
-     *     BitOrder?: string,
-     *     Signed?: string
+     *     Profile?: string|null,
+     *     BitDepth?: string|null,
+     *     BitOrder?: string|null,
+     *     Signed?: string|null
      * } $args
      */
     public function __construct(array $args = [])

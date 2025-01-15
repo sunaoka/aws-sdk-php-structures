@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Proton\ListComponents;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $environmentName
- * @property int<1, 100> $maxResults
- * @property string $nextToken
- * @property string $serviceInstanceName
- * @property string $serviceName
+ * @property string|null $environmentName
+ * @property int<1, 100>|null $maxResults
+ * @property string|null $nextToken
+ * @property string|null $serviceInstanceName
+ * @property string|null $serviceName
  */
 class ListComponentsRequest extends Request
 {
     /**
      * @param array{
-     *     environmentName?: string,
-     *     maxResults?: int<1, 100>,
-     *     nextToken?: string,
-     *     serviceInstanceName?: string,
-     *     serviceName?: string
+     *     environmentName?: string|null,
+     *     maxResults?: int<1, 100>|null,
+     *     nextToken?: string|null,
+     *     serviceInstanceName?: string|null,
+     *     serviceName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

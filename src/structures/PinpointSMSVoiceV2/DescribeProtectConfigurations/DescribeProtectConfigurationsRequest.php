@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\PinpointSMSVoiceV2\DescribeProtectConfiguration
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property list<string> $ProtectConfigurationIds
- * @property list<Shapes\ProtectConfigurationFilter> $Filters
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
+ * @property list<string>|null $ProtectConfigurationIds
+ * @property list<Shapes\ProtectConfigurationFilter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
  */
 class DescribeProtectConfigurationsRequest extends Request
 {
     /**
      * @param array{
-     *     ProtectConfigurationIds?: list<string>,
-     *     Filters?: list<Shapes\ProtectConfigurationFilter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>
+     *     ProtectConfigurationIds?: list<string>|null,
+     *     Filters?: list<Shapes\ProtectConfigurationFilter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null
      * } $args
      */
     public function __construct(array $args = [])

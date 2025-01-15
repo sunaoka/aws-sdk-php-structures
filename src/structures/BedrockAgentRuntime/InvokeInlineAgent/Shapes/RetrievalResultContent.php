@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\BedrockAgentRuntime\InvokeInlineAgent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $byteContent
- * @property list<RetrievalResultContentColumn> $row
- * @property string $text
- * @property 'TEXT'|'IMAGE'|'ROW' $type
+ * @property string|null $byteContent
+ * @property list<RetrievalResultContentColumn>|null $row
+ * @property string|null $text
+ * @property 'TEXT'|'IMAGE'|'ROW'|null $type
  */
 class RetrievalResultContent extends Shape
 {
     /**
      * @param array{
-     *     byteContent?: string,
-     *     row?: list<RetrievalResultContentColumn>,
-     *     text?: string,
-     *     type?: 'TEXT'|'IMAGE'|'ROW'
+     *     byteContent?: string|null,
+     *     row?: list<RetrievalResultContentColumn>|null,
+     *     text?: string|null,
+     *     type?: 'TEXT'|'IMAGE'|'ROW'|null
      * } $args
      */
     public function __construct(array $args = [])

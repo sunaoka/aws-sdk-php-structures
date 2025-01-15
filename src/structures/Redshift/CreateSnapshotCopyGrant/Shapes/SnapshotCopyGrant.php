@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\CreateSnapshotCopyGrant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SnapshotCopyGrantName
- * @property string $KmsKeyId
- * @property list<Tag> $Tags
+ * @property string|null $SnapshotCopyGrantName
+ * @property string|null $KmsKeyId
+ * @property list<Tag>|null $Tags
  */
 class SnapshotCopyGrant extends Shape
 {
     /**
      * @param array{
-     *     SnapshotCopyGrantName?: string,
-     *     KmsKeyId?: string,
-     *     Tags?: list<Tag>
+     *     SnapshotCopyGrantName?: string|null,
+     *     KmsKeyId?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

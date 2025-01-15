@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\KinesisAnalytics\CreateApplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property JSONMappingParameters $JSONMappingParameters
- * @property CSVMappingParameters $CSVMappingParameters
+ * @property JSONMappingParameters|null $JSONMappingParameters
+ * @property CSVMappingParameters|null $CSVMappingParameters
  */
 class MappingParameters extends Shape
 {
     /**
      * @param array{
-     *     JSONMappingParameters?: JSONMappingParameters,
-     *     CSVMappingParameters?: CSVMappingParameters
+     *     JSONMappingParameters?: JSONMappingParameters|null,
+     *     CSVMappingParameters?: CSVMappingParameters|null
      * } $args
      */
     public function __construct(array $args = [])

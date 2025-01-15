@@ -6,11 +6,11 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $SegmentDefinitionName
- * @property string $DisplayName
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreatedAt
- * @property string $SegmentDefinitionArn
- * @property array<string, string> $Tags
+ * @property string|null $DisplayName
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedAt
+ * @property string|null $SegmentDefinitionArn
+ * @property array<string, string>|null $Tags
  */
 class CreateSegmentDefinitionResponse extends Response
 {

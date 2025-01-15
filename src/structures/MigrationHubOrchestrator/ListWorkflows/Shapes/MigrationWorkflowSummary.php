@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\MigrationHubOrchestrator\ListWorkflows\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
- * @property string $templateId
- * @property string $adsApplicationConfigurationName
- * @property 'CREATING'|'NOT_STARTED'|'CREATION_FAILED'|'STARTING'|'IN_PROGRESS'|'WORKFLOW_FAILED'|'PAUSED'|'PAUSING'|'PAUSING_FAILED'|'USER_ATTENTION_REQUIRED'|'DELETING'|'DELETION_FAILED'|'DELETED'|'COMPLETED' $status
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $endTime
- * @property string $statusMessage
- * @property int $completedSteps
- * @property int $totalSteps
+ * @property string|null $id
+ * @property string|null $name
+ * @property string|null $templateId
+ * @property string|null $adsApplicationConfigurationName
+ * @property 'CREATING'|'NOT_STARTED'|'CREATION_FAILED'|'STARTING'|'IN_PROGRESS'|'WORKFLOW_FAILED'|'PAUSED'|'PAUSING'|'PAUSING_FAILED'|'USER_ATTENTION_REQUIRED'|'DELETING'|'DELETION_FAILED'|'DELETED'|'COMPLETED'|null $status
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property string|null $statusMessage
+ * @property int|null $completedSteps
+ * @property int|null $totalSteps
  */
 class MigrationWorkflowSummary extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string,
-     *     templateId?: string,
-     *     adsApplicationConfigurationName?: string,
-     *     status?: 'CREATING'|'NOT_STARTED'|'CREATION_FAILED'|'STARTING'|'IN_PROGRESS'|'WORKFLOW_FAILED'|'PAUSED'|'PAUSING'|'PAUSING_FAILED'|'USER_ATTENTION_REQUIRED'|'DELETING'|'DELETION_FAILED'|'DELETED'|'COMPLETED',
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     statusMessage?: string,
-     *     completedSteps?: int,
-     *     totalSteps?: int
+     *     id?: string|null,
+     *     name?: string|null,
+     *     templateId?: string|null,
+     *     adsApplicationConfigurationName?: string|null,
+     *     status?: 'CREATING'|'NOT_STARTED'|'CREATION_FAILED'|'STARTING'|'IN_PROGRESS'|'WORKFLOW_FAILED'|'PAUSED'|'PAUSING'|'PAUSING_FAILED'|'USER_ATTENTION_REQUIRED'|'DELETING'|'DELETION_FAILED'|'DELETED'|'COMPLETED'|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     statusMessage?: string|null,
+     *     completedSteps?: int|null,
+     *     totalSteps?: int|null
      * } $args
      */
     public function __construct(array $args = [])

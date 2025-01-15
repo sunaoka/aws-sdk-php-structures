@@ -5,43 +5,43 @@ namespace Sunaoka\Aws\Structures\AuditManager\CreateControl\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $id
- * @property 'Standard'|'Custom'|'Core' $type
- * @property string $name
- * @property string $description
- * @property string $testingInformation
- * @property string $actionPlanTitle
- * @property string $actionPlanInstructions
- * @property string $controlSources
- * @property list<ControlMappingSource> $controlMappingSources
- * @property \Aws\Api\DateTimeResult $createdAt
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property string $createdBy
- * @property string $lastUpdatedBy
- * @property array<string, string> $tags
- * @property 'ACTIVE'|'END_OF_SUPPORT' $state
+ * @property string|null $arn
+ * @property string|null $id
+ * @property 'Standard'|'Custom'|'Core'|null $type
+ * @property string|null $name
+ * @property string|null $description
+ * @property string|null $testingInformation
+ * @property string|null $actionPlanTitle
+ * @property string|null $actionPlanInstructions
+ * @property string|null $controlSources
+ * @property list<ControlMappingSource>|null $controlMappingSources
+ * @property \Aws\Api\DateTimeResult|null $createdAt
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property string|null $createdBy
+ * @property string|null $lastUpdatedBy
+ * @property array<string, string>|null $tags
+ * @property 'ACTIVE'|'END_OF_SUPPORT'|null $state
  */
 class Control extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     id?: string,
-     *     type?: 'Standard'|'Custom'|'Core',
-     *     name?: string,
-     *     description?: string,
-     *     testingInformation?: string,
-     *     actionPlanTitle?: string,
-     *     actionPlanInstructions?: string,
-     *     controlSources?: string,
-     *     controlMappingSources?: list<ControlMappingSource>,
-     *     createdAt?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedAt?: \Aws\Api\DateTimeResult,
-     *     createdBy?: string,
-     *     lastUpdatedBy?: string,
-     *     tags?: array<string, string>,
-     *     state?: 'ACTIVE'|'END_OF_SUPPORT'
+     *     arn?: string|null,
+     *     id?: string|null,
+     *     type?: 'Standard'|'Custom'|'Core'|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     testingInformation?: string|null,
+     *     actionPlanTitle?: string|null,
+     *     actionPlanInstructions?: string|null,
+     *     controlSources?: string|null,
+     *     controlMappingSources?: list<ControlMappingSource>|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedAt?: \Aws\Api\DateTimeResult|null,
+     *     createdBy?: string|null,
+     *     lastUpdatedBy?: string|null,
+     *     tags?: array<string, string>|null,
+     *     state?: 'ACTIVE'|'END_OF_SUPPORT'|null
      * } $args
      */
     public function __construct(array $args = [])

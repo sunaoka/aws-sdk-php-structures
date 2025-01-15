@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'POTENTIAL_ISSUE_DETECTED'|'NO_ISSUE_DETECTED' $Status
- * @property int $NumberOfCategory
+ * @property int|null $NumberOfCategory
  */
 class CategoricalValues extends Shape
 {
     /**
      * @param array{
      *     Status: 'POTENTIAL_ISSUE_DETECTED'|'NO_ISSUE_DETECTED',
-     *     NumberOfCategory?: int
+     *     NumberOfCategory?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MediaTailor\UpdateProgram\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<SegmentationDescriptor> $SegmentationDescriptors
+ * @property list<SegmentationDescriptor>|null $SegmentationDescriptors
  */
 class TimeSignalMessage extends Shape
 {
     /**
-     * @param array{SegmentationDescriptors?: list<SegmentationDescriptor>} $args
+     * @param array{SegmentationDescriptors?: list<SegmentationDescriptor>|null} $args
      */
     public function __construct(array $args = [])
     {

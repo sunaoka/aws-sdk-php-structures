@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Bucket
- * @property bool $Enabled
- * @property bool $IncludeCookies
- * @property string $Prefix
+ * @property string|null $Bucket
+ * @property bool|null $Enabled
+ * @property bool|null $IncludeCookies
+ * @property string|null $Prefix
  */
 class AwsCloudFrontDistributionLogging extends Shape
 {
     /**
      * @param array{
-     *     Bucket?: string,
-     *     Enabled?: bool,
-     *     IncludeCookies?: bool,
-     *     Prefix?: string
+     *     Bucket?: string|null,
+     *     Enabled?: bool|null,
+     *     IncludeCookies?: bool|null,
+     *     Prefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

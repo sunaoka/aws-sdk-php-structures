@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $MountTargetId
- * @property list<string> $SecurityGroups
+ * @property list<string>|null $SecurityGroups
  */
 class ModifyMountTargetSecurityGroupsRequest extends Request
 {
     /**
      * @param array{
      *     MountTargetId: string,
-     *     SecurityGroups?: list<string>
+     *     SecurityGroups?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

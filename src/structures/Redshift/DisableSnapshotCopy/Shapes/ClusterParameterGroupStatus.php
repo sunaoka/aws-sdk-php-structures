@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\DisableSnapshotCopy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterGroupName
- * @property string $ParameterApplyStatus
- * @property list<ClusterParameterStatus> $ClusterParameterStatusList
+ * @property string|null $ParameterGroupName
+ * @property string|null $ParameterApplyStatus
+ * @property list<ClusterParameterStatus>|null $ClusterParameterStatusList
  */
 class ClusterParameterGroupStatus extends Shape
 {
     /**
      * @param array{
-     *     ParameterGroupName?: string,
-     *     ParameterApplyStatus?: string,
-     *     ClusterParameterStatusList?: list<ClusterParameterStatus>
+     *     ParameterGroupName?: string|null,
+     *     ParameterApplyStatus?: string|null,
+     *     ClusterParameterStatusList?: list<ClusterParameterStatus>|null
      * } $args
      */
     public function __construct(array $args = [])

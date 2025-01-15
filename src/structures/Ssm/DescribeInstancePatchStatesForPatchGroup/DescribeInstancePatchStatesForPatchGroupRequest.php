@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $PatchGroup
- * @property list<Shapes\InstancePatchStateFilter> $Filters
- * @property string $NextToken
- * @property int<10, 100> $MaxResults
+ * @property list<Shapes\InstancePatchStateFilter>|null $Filters
+ * @property string|null $NextToken
+ * @property int<10, 100>|null $MaxResults
  */
 class DescribeInstancePatchStatesForPatchGroupRequest extends Request
 {
     /**
      * @param array{
      *     PatchGroup: string,
-     *     Filters?: list<Shapes\InstancePatchStateFilter>,
-     *     NextToken?: string,
-     *     MaxResults?: int<10, 100>
+     *     Filters?: list<Shapes\InstancePatchStateFilter>|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<10, 100>|null
      * } $args
      */
     public function __construct(array $args)

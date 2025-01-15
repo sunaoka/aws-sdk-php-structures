@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botName
  * @property string $botAlias
  * @property string $userId
- * @property string $checkpointLabelFilter
+ * @property string|null $checkpointLabelFilter
  */
 class GetSessionRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetSessionRequest extends Request
      *     botName: string,
      *     botAlias: string,
      *     userId: string,
-     *     checkpointLabelFilter?: string
+     *     checkpointLabelFilter?: string|null
      * } $args
      */
     public function __construct(array $args)

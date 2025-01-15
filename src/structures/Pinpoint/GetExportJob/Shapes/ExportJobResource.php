@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $RoleArn
  * @property string $S3UrlPrefix
- * @property string $SegmentId
- * @property int $SegmentVersion
+ * @property string|null $SegmentId
+ * @property int|null $SegmentVersion
  */
 class ExportJobResource extends Shape
 {
@@ -16,8 +16,8 @@ class ExportJobResource extends Shape
      * @param array{
      *     RoleArn: string,
      *     S3UrlPrefix: string,
-     *     SegmentId?: string,
-     *     SegmentVersion?: int
+     *     SegmentId?: string|null,
+     *     SegmentVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'none'|'whitelist'|'allViewer'|'allViewerAndWhitelistCloudFront'|'allExcept' $HeaderBehavior
- * @property Headers $Headers
+ * @property Headers|null $Headers
  */
 class OriginRequestPolicyHeadersConfig extends Shape
 {
     /**
      * @param array{
      *     HeaderBehavior: 'none'|'whitelist'|'allViewer'|'allViewerAndWhitelistCloudFront'|'allExcept',
-     *     Headers?: Headers
+     *     Headers?: Headers|null
      * } $args
      */
     public function __construct(array $args)

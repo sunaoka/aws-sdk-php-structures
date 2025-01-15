@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Omics\GetWorkflow;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $arn
- * @property string $id
- * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETED'|'FAILED'|'INACTIVE' $status
- * @property 'PRIVATE'|'READY2RUN' $type
- * @property string $name
- * @property string $description
- * @property 'WDL'|'NEXTFLOW'|'CWL' $engine
- * @property string $definition
- * @property string $main
- * @property string $digest
- * @property array<string, Shapes\WorkflowParameter> $parameterTemplate
- * @property int<0, 100000> $storageCapacity
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property string $statusMessage
- * @property array<string, string> $tags
- * @property array<string, string> $metadata
- * @property 'GPU' $accelerators
+ * @property string|null $arn
+ * @property string|null $id
+ * @property 'CREATING'|'ACTIVE'|'UPDATING'|'DELETED'|'FAILED'|'INACTIVE'|null $status
+ * @property 'PRIVATE'|'READY2RUN'|null $type
+ * @property string|null $name
+ * @property string|null $description
+ * @property 'WDL'|'NEXTFLOW'|'CWL'|null $engine
+ * @property string|null $definition
+ * @property string|null $main
+ * @property string|null $digest
+ * @property array<string, Shapes\WorkflowParameter>|null $parameterTemplate
+ * @property int<0, 100000>|null $storageCapacity
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property string|null $statusMessage
+ * @property array<string, string>|null $tags
+ * @property array<string, string>|null $metadata
+ * @property 'GPU'|null $accelerators
  */
 class GetWorkflowResponse extends Response
 {

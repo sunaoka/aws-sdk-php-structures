@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ChimeSDKVoice\GetPhoneNumberOrder\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PhoneNumberOrderId
- * @property 'VoiceConnector'|'SipMediaApplicationDialIn' $ProductType
- * @property 'Processing'|'Successful'|'Failed'|'Partial'|'PendingDocuments'|'Submitted'|'FOC'|'ChangeRequested'|'Exception'|'CancelRequested'|'Cancelled' $Status
- * @property 'New'|'Porting' $OrderType
- * @property list<OrderedPhoneNumber> $OrderedPhoneNumbers
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $UpdatedTimestamp
+ * @property string|null $PhoneNumberOrderId
+ * @property 'VoiceConnector'|'SipMediaApplicationDialIn'|null $ProductType
+ * @property 'Processing'|'Successful'|'Failed'|'Partial'|'PendingDocuments'|'Submitted'|'FOC'|'ChangeRequested'|'Exception'|'CancelRequested'|'Cancelled'|null $Status
+ * @property 'New'|'Porting'|null $OrderType
+ * @property list<OrderedPhoneNumber>|null $OrderedPhoneNumbers
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $UpdatedTimestamp
  */
 class PhoneNumberOrder extends Shape
 {
     /**
      * @param array{
-     *     PhoneNumberOrderId?: string,
-     *     ProductType?: 'VoiceConnector'|'SipMediaApplicationDialIn',
-     *     Status?: 'Processing'|'Successful'|'Failed'|'Partial'|'PendingDocuments'|'Submitted'|'FOC'|'ChangeRequested'|'Exception'|'CancelRequested'|'Cancelled',
-     *     OrderType?: 'New'|'Porting',
-     *     OrderedPhoneNumbers?: list<OrderedPhoneNumber>,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     PhoneNumberOrderId?: string|null,
+     *     ProductType?: 'VoiceConnector'|'SipMediaApplicationDialIn'|null,
+     *     Status?: 'Processing'|'Successful'|'Failed'|'Partial'|'PendingDocuments'|'Submitted'|'FOC'|'ChangeRequested'|'Exception'|'CancelRequested'|'Cancelled'|null,
+     *     OrderType?: 'New'|'Porting'|null,
+     *     OrderedPhoneNumbers?: list<OrderedPhoneNumber>|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     UpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

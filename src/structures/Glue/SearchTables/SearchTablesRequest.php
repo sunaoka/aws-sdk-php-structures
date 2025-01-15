@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Glue\SearchTables;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
- * @property string $NextToken
- * @property list<Shapes\PropertyPredicate> $Filters
- * @property string $SearchText
- * @property list<Shapes\SortCriterion> $SortCriteria
- * @property int<1, 1000> $MaxResults
- * @property 'FOREIGN'|'ALL'|'FEDERATED' $ResourceShareType
- * @property bool $IncludeStatusDetails
+ * @property string|null $CatalogId
+ * @property string|null $NextToken
+ * @property list<Shapes\PropertyPredicate>|null $Filters
+ * @property string|null $SearchText
+ * @property list<Shapes\SortCriterion>|null $SortCriteria
+ * @property int<1, 1000>|null $MaxResults
+ * @property 'FOREIGN'|'ALL'|'FEDERATED'|null $ResourceShareType
+ * @property bool|null $IncludeStatusDetails
  */
 class SearchTablesRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
-     *     NextToken?: string,
-     *     Filters?: list<Shapes\PropertyPredicate>,
-     *     SearchText?: string,
-     *     SortCriteria?: list<Shapes\SortCriterion>,
-     *     MaxResults?: int<1, 1000>,
-     *     ResourceShareType?: 'FOREIGN'|'ALL'|'FEDERATED',
-     *     IncludeStatusDetails?: bool
+     *     CatalogId?: string|null,
+     *     NextToken?: string|null,
+     *     Filters?: list<Shapes\PropertyPredicate>|null,
+     *     SearchText?: string|null,
+     *     SortCriteria?: list<Shapes\SortCriterion>|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     ResourceShareType?: 'FOREIGN'|'ALL'|'FEDERATED'|null,
+     *     IncludeStatusDetails?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

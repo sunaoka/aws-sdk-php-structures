@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataSync\CreateTask\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'SIMPLE_PATTERN' $FilterType
- * @property string $Value
+ * @property 'SIMPLE_PATTERN'|null $FilterType
+ * @property string|null $Value
  */
 class FilterRule extends Shape
 {
     /**
      * @param array{
-     *     FilterType?: 'SIMPLE_PATTERN',
-     *     Value?: string
+     *     FilterType?: 'SIMPLE_PATTERN'|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

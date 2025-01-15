@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $ChannelGroupName
  * @property string $ChannelName
  * @property string $OriginEndpointName
- * @property string $Description
+ * @property string|null $Description
  * @property Shapes\HarvestedManifests $HarvestedManifests
  * @property Shapes\HarvesterScheduleConfiguration $ScheduleConfiguration
  * @property Shapes\Destination $Destination
- * @property string $ClientToken
- * @property string $HarvestJobName
- * @property array<string, string> $Tags
+ * @property string|null $ClientToken
+ * @property string|null $HarvestJobName
+ * @property array<string, string>|null $Tags
  */
 class CreateHarvestJobRequest extends Request
 {
@@ -23,13 +23,13 @@ class CreateHarvestJobRequest extends Request
      *     ChannelGroupName: string,
      *     ChannelName: string,
      *     OriginEndpointName: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     HarvestedManifests: Shapes\HarvestedManifests,
      *     ScheduleConfiguration: Shapes\HarvesterScheduleConfiguration,
      *     Destination: Shapes\Destination,
-     *     ClientToken?: string,
-     *     HarvestJobName?: string,
-     *     Tags?: array<string, string>
+     *     ClientToken?: string|null,
+     *     HarvestJobName?: string|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

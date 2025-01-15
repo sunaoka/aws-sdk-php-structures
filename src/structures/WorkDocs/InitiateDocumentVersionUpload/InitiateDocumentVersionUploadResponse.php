@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkDocs\InitiateDocumentVersionUpload;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DocumentMetadata $Metadata
- * @property Shapes\UploadMetadata $UploadMetadata
+ * @property Shapes\DocumentMetadata|null $Metadata
+ * @property Shapes\UploadMetadata|null $UploadMetadata
  */
 class InitiateDocumentVersionUploadResponse extends Response
 {

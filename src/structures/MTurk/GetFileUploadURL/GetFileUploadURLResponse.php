@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MTurk\GetFileUploadURL;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FileUploadURL
+ * @property string|null $FileUploadURL
  */
 class GetFileUploadURLResponse extends Response
 {

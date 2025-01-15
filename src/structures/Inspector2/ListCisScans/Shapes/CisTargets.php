@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Inspector2\ListCisScans\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $accountIds
- * @property array<string, list<string>> $targetResourceTags
+ * @property list<string>|null $accountIds
+ * @property array<string, list<string>>|null $targetResourceTags
  */
 class CisTargets extends Shape
 {
     /**
      * @param array{
-     *     accountIds?: list<string>,
-     *     targetResourceTags?: array<string, list<string>>
+     *     accountIds?: list<string>|null,
+     *     targetResourceTags?: array<string, list<string>>|null
      * } $args
      */
     public function __construct(array $args = [])

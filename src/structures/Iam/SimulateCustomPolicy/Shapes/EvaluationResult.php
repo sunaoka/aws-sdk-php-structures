@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $EvalActionName
- * @property string $EvalResourceName
+ * @property string|null $EvalResourceName
  * @property 'allowed'|'explicitDeny'|'implicitDeny' $EvalDecision
- * @property list<Statement> $MatchedStatements
- * @property list<string> $MissingContextValues
- * @property OrganizationsDecisionDetail $OrganizationsDecisionDetail
- * @property PermissionsBoundaryDecisionDetail $PermissionsBoundaryDecisionDetail
- * @property array<string, 'allowed'|'explicitDeny'|'implicitDeny'> $EvalDecisionDetails
- * @property list<ResourceSpecificResult> $ResourceSpecificResults
+ * @property list<Statement>|null $MatchedStatements
+ * @property list<string>|null $MissingContextValues
+ * @property OrganizationsDecisionDetail|null $OrganizationsDecisionDetail
+ * @property PermissionsBoundaryDecisionDetail|null $PermissionsBoundaryDecisionDetail
+ * @property array<string, 'allowed'|'explicitDeny'|'implicitDeny'>|null $EvalDecisionDetails
+ * @property list<ResourceSpecificResult>|null $ResourceSpecificResults
  */
 class EvaluationResult extends Shape
 {
     /**
      * @param array{
      *     EvalActionName: string,
-     *     EvalResourceName?: string,
+     *     EvalResourceName?: string|null,
      *     EvalDecision: 'allowed'|'explicitDeny'|'implicitDeny',
-     *     MatchedStatements?: list<Statement>,
-     *     MissingContextValues?: list<string>,
-     *     OrganizationsDecisionDetail?: OrganizationsDecisionDetail,
-     *     PermissionsBoundaryDecisionDetail?: PermissionsBoundaryDecisionDetail,
-     *     EvalDecisionDetails?: array<string, 'allowed'|'explicitDeny'|'implicitDeny'>,
-     *     ResourceSpecificResults?: list<ResourceSpecificResult>
+     *     MatchedStatements?: list<Statement>|null,
+     *     MissingContextValues?: list<string>|null,
+     *     OrganizationsDecisionDetail?: OrganizationsDecisionDetail|null,
+     *     PermissionsBoundaryDecisionDetail?: PermissionsBoundaryDecisionDetail|null,
+     *     EvalDecisionDetails?: array<string, 'allowed'|'explicitDeny'|'implicitDeny'>|null,
+     *     ResourceSpecificResults?: list<ResourceSpecificResult>|null
      * } $args
      */
     public function __construct(array $args)

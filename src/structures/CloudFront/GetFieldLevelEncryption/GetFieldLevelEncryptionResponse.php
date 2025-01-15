@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudFront\GetFieldLevelEncryption;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\FieldLevelEncryption $FieldLevelEncryption
- * @property string $ETag
+ * @property Shapes\FieldLevelEncryption|null $FieldLevelEncryption
+ * @property string|null $ETag
  */
 class GetFieldLevelEncryptionResponse extends Response
 {

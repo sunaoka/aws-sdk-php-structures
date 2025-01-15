@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListDistributionsByOriginRequestPoli
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Marker
- * @property string $MaxItems
+ * @property string|null $Marker
+ * @property string|null $MaxItems
  * @property string $OriginRequestPolicyId
  */
 class ListDistributionsByOriginRequestPolicyIdRequest extends Request
 {
     /**
      * @param array{
-     *     Marker?: string,
-     *     MaxItems?: string,
+     *     Marker?: string|null,
+     *     MaxItems?: string|null,
      *     OriginRequestPolicyId: string
      * } $args
      */

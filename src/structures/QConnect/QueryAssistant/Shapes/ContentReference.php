@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\QConnect\QueryAssistant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $contentArn
- * @property string $contentId
- * @property string $knowledgeBaseArn
- * @property string $knowledgeBaseId
- * @property 'WEB_CRAWLER'|'KNOWLEDGE_BASE' $referenceType
- * @property string $sourceURL
+ * @property string|null $contentArn
+ * @property string|null $contentId
+ * @property string|null $knowledgeBaseArn
+ * @property string|null $knowledgeBaseId
+ * @property 'WEB_CRAWLER'|'KNOWLEDGE_BASE'|null $referenceType
+ * @property string|null $sourceURL
  */
 class ContentReference extends Shape
 {
     /**
      * @param array{
-     *     contentArn?: string,
-     *     contentId?: string,
-     *     knowledgeBaseArn?: string,
-     *     knowledgeBaseId?: string,
-     *     referenceType?: 'WEB_CRAWLER'|'KNOWLEDGE_BASE',
-     *     sourceURL?: string
+     *     contentArn?: string|null,
+     *     contentId?: string|null,
+     *     knowledgeBaseArn?: string|null,
+     *     knowledgeBaseId?: string|null,
+     *     referenceType?: 'WEB_CRAWLER'|'KNOWLEDGE_BASE'|null,
+     *     sourceURL?: string|null
      * } $args
      */
     public function __construct(array $args = [])

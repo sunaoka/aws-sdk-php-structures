@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Neptune\DescribeEventCategories\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SourceType
- * @property list<string> $EventCategories
+ * @property string|null $SourceType
+ * @property list<string>|null $EventCategories
  */
 class EventCategoriesMap extends Shape
 {
     /**
      * @param array{
-     *     SourceType?: string,
-     *     EventCategories?: list<string>
+     *     SourceType?: string|null,
+     *     EventCategories?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

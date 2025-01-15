@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\KinesisAnalyticsV2\DescribeApplicationVersion\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AllowNonRestoredState
+ * @property bool|null $AllowNonRestoredState
  */
 class FlinkRunConfiguration extends Shape
 {
     /**
-     * @param array{AllowNonRestoredState?: bool} $args
+     * @param array{AllowNonRestoredState?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

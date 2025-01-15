@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $GlobalNetworkId
  * @property string $SiteId
- * @property string $Description
- * @property Shapes\Location $Location
+ * @property string|null $Description
+ * @property Shapes\Location|null $Location
  */
 class UpdateSiteRequest extends Request
 {
@@ -16,8 +16,8 @@ class UpdateSiteRequest extends Request
      * @param array{
      *     GlobalNetworkId: string,
      *     SiteId: string,
-     *     Description?: string,
-     *     Location?: Shapes\Location
+     *     Description?: string|null,
+     *     Location?: Shapes\Location|null
      * } $args
      */
     public function __construct(array $args)

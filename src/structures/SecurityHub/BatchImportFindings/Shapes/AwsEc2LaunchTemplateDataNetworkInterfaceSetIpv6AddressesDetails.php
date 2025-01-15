@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Ipv6Address
+ * @property string|null $Ipv6Address
  */
 class AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesDetails extends Shape
 {
     /**
-     * @param array{Ipv6Address?: string} $args
+     * @param array{Ipv6Address?: string|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Value
- * @property int<0, 1000> $BinCountLimit
+ * @property double|null $Value
+ * @property int<0, 1000>|null $BinCountLimit
  */
 class BinWidthOptions extends Shape
 {
     /**
      * @param array{
-     *     Value?: double,
-     *     BinCountLimit?: int<0, 1000>
+     *     Value?: double|null,
+     *     BinCountLimit?: int<0, 1000>|null
      * } $args
      */
     public function __construct(array $args = [])

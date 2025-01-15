@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaConvert\ListJobTemplates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DISABLED'|'ENABLED' $Accessibility
- * @property 'ENABLED'|'DISABLED' $StylePassthrough
+ * @property 'DISABLED'|'ENABLED'|null $Accessibility
+ * @property 'ENABLED'|'DISABLED'|null $StylePassthrough
  */
 class ImscDestinationSettings extends Shape
 {
     /**
      * @param array{
-     *     Accessibility?: 'DISABLED'|'ENABLED',
-     *     StylePassthrough?: 'ENABLED'|'DISABLED'
+     *     Accessibility?: 'DISABLED'|'ENABLED'|null,
+     *     StylePassthrough?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

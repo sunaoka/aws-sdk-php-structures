@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\AccessAnalyzer\ListPolicyGenerations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $principalArn
- * @property int<1, max> $maxResults
- * @property string $nextToken
+ * @property string|null $principalArn
+ * @property int<1, max>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListPolicyGenerationsRequest extends Request
 {
     /**
      * @param array{
-     *     principalArn?: string,
-     *     maxResults?: int<1, max>,
-     *     nextToken?: string
+     *     principalArn?: string|null,
+     *     maxResults?: int<1, max>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

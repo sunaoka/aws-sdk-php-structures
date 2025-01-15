@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListComponentBuildVersions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $requestId
- * @property list<Shapes\ComponentSummary> $componentSummaryList
- * @property string $nextToken
+ * @property string|null $requestId
+ * @property list<Shapes\ComponentSummary>|null $componentSummaryList
+ * @property string|null $nextToken
  */
 class ListComponentBuildVersionsResponse extends Response
 {

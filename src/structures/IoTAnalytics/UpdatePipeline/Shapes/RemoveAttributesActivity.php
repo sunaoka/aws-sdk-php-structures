@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $name
  * @property list<string> $attributes
- * @property string $next
+ * @property string|null $next
  */
 class RemoveAttributesActivity extends Shape
 {
@@ -15,7 +15,7 @@ class RemoveAttributesActivity extends Shape
      * @param array{
      *     name: string,
      *     attributes: list<string>,
-     *     next?: string
+     *     next?: string|null
      * } $args
      */
     public function __construct(array $args)

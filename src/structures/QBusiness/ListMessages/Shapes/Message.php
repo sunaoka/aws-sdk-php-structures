@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\QBusiness\ListMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $messageId
- * @property string $body
- * @property \Aws\Api\DateTimeResult $time
- * @property 'USER'|'SYSTEM' $type
- * @property list<AttachmentOutput> $attachments
- * @property list<SourceAttribution> $sourceAttribution
- * @property ActionReview $actionReview
- * @property ActionExecution $actionExecution
+ * @property string|null $messageId
+ * @property string|null $body
+ * @property \Aws\Api\DateTimeResult|null $time
+ * @property 'USER'|'SYSTEM'|null $type
+ * @property list<AttachmentOutput>|null $attachments
+ * @property list<SourceAttribution>|null $sourceAttribution
+ * @property ActionReview|null $actionReview
+ * @property ActionExecution|null $actionExecution
  */
 class Message extends Shape
 {
     /**
      * @param array{
-     *     messageId?: string,
-     *     body?: string,
-     *     time?: \Aws\Api\DateTimeResult,
-     *     type?: 'USER'|'SYSTEM',
-     *     attachments?: list<AttachmentOutput>,
-     *     sourceAttribution?: list<SourceAttribution>,
-     *     actionReview?: ActionReview,
-     *     actionExecution?: ActionExecution
+     *     messageId?: string|null,
+     *     body?: string|null,
+     *     time?: \Aws\Api\DateTimeResult|null,
+     *     type?: 'USER'|'SYSTEM'|null,
+     *     attachments?: list<AttachmentOutput>|null,
+     *     sourceAttribution?: list<SourceAttribution>|null,
+     *     actionReview?: ActionReview|null,
+     *     actionExecution?: ActionExecution|null
      * } $args
      */
     public function __construct(array $args = [])

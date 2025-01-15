@@ -7,20 +7,20 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $AccountId
  * @property string $Arn
- * @property double $Confidence
+ * @property double|null $Confidence
  * @property string $CreatedAt
- * @property string $Description
+ * @property string|null $Description
  * @property string $Id
- * @property string $Partition
+ * @property string|null $Partition
  * @property string $Region
  * @property Resource $Resource
  * @property string $SchemaVersion
- * @property Service $Service
+ * @property Service|null $Service
  * @property double $Severity
- * @property string $Title
+ * @property string|null $Title
  * @property string $Type
  * @property string $UpdatedAt
- * @property string $AssociatedAttackSequenceArn
+ * @property string|null $AssociatedAttackSequenceArn
  */
 class Finding extends Shape
 {
@@ -28,20 +28,20 @@ class Finding extends Shape
      * @param array{
      *     AccountId: string,
      *     Arn: string,
-     *     Confidence?: double,
+     *     Confidence?: double|null,
      *     CreatedAt: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     Id: string,
-     *     Partition?: string,
+     *     Partition?: string|null,
      *     Region: string,
      *     Resource: Resource,
      *     SchemaVersion: string,
-     *     Service?: Service,
+     *     Service?: Service|null,
      *     Severity: double,
-     *     Title?: string,
+     *     Title?: string|null,
      *     Type: string,
      *     UpdatedAt: string,
-     *     AssociatedAttackSequenceArn?: string
+     *     AssociatedAttackSequenceArn?: string|null
      * } $args
      */
     public function __construct(array $args)

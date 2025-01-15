@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'Complete'|'Truncated'|'InternalError'|'ValidationError' $Status
- * @property string $Message
+ * @property string|null $Message
  * @property list<int> $XAxisValues
  * @property list<double> $MetricValues
  */
@@ -15,7 +15,7 @@ class MetricQueryResult extends Shape
     /**
      * @param array{
      *     Status: 'Complete'|'Truncated'|'InternalError'|'ValidationError',
-     *     Message?: string,
+     *     Message?: string|null,
      *     XAxisValues: list<int>,
      *     MetricValues: list<double>
      * } $args

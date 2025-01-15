@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\CloudHSMV2\ModifyCluster\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AvailabilityZone
- * @property string $ClusterId
- * @property string $SubnetId
- * @property string $EniId
- * @property string $EniIp
- * @property string $EniIpV6
+ * @property string|null $AvailabilityZone
+ * @property string|null $ClusterId
+ * @property string|null $SubnetId
+ * @property string|null $EniId
+ * @property string|null $EniIp
+ * @property string|null $EniIpV6
  * @property string $HsmId
- * @property string $HsmType
- * @property 'CREATE_IN_PROGRESS'|'ACTIVE'|'DEGRADED'|'DELETE_IN_PROGRESS'|'DELETED' $State
- * @property string $StateMessage
+ * @property string|null $HsmType
+ * @property 'CREATE_IN_PROGRESS'|'ACTIVE'|'DEGRADED'|'DELETE_IN_PROGRESS'|'DELETED'|null $State
+ * @property string|null $StateMessage
  */
 class Hsm extends Shape
 {
     /**
      * @param array{
-     *     AvailabilityZone?: string,
-     *     ClusterId?: string,
-     *     SubnetId?: string,
-     *     EniId?: string,
-     *     EniIp?: string,
-     *     EniIpV6?: string,
+     *     AvailabilityZone?: string|null,
+     *     ClusterId?: string|null,
+     *     SubnetId?: string|null,
+     *     EniId?: string|null,
+     *     EniIp?: string|null,
+     *     EniIpV6?: string|null,
      *     HsmId: string,
-     *     HsmType?: string,
-     *     State?: 'CREATE_IN_PROGRESS'|'ACTIVE'|'DEGRADED'|'DELETE_IN_PROGRESS'|'DELETED',
-     *     StateMessage?: string
+     *     HsmType?: string|null,
+     *     State?: 'CREATE_IN_PROGRESS'|'ACTIVE'|'DEGRADED'|'DELETE_IN_PROGRESS'|'DELETED'|null,
+     *     StateMessage?: string|null
      * } $args
      */
     public function __construct(array $args)

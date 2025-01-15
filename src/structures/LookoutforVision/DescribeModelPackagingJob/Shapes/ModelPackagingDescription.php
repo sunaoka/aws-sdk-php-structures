@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\LookoutforVision\DescribeModelPackagingJob\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $JobName
- * @property string $ProjectName
- * @property string $ModelVersion
- * @property ModelPackagingConfiguration $ModelPackagingConfiguration
- * @property string $ModelPackagingJobDescription
- * @property string $ModelPackagingMethod
- * @property ModelPackagingOutputDetails $ModelPackagingOutputDetails
- * @property 'CREATED'|'RUNNING'|'SUCCEEDED'|'FAILED' $Status
- * @property string $StatusMessage
- * @property \Aws\Api\DateTimeResult $CreationTimestamp
- * @property \Aws\Api\DateTimeResult $LastUpdatedTimestamp
+ * @property string|null $JobName
+ * @property string|null $ProjectName
+ * @property string|null $ModelVersion
+ * @property ModelPackagingConfiguration|null $ModelPackagingConfiguration
+ * @property string|null $ModelPackagingJobDescription
+ * @property string|null $ModelPackagingMethod
+ * @property ModelPackagingOutputDetails|null $ModelPackagingOutputDetails
+ * @property 'CREATED'|'RUNNING'|'SUCCEEDED'|'FAILED'|null $Status
+ * @property string|null $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $CreationTimestamp
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTimestamp
  */
 class ModelPackagingDescription extends Shape
 {
     /**
      * @param array{
-     *     JobName?: string,
-     *     ProjectName?: string,
-     *     ModelVersion?: string,
-     *     ModelPackagingConfiguration?: ModelPackagingConfiguration,
-     *     ModelPackagingJobDescription?: string,
-     *     ModelPackagingMethod?: string,
-     *     ModelPackagingOutputDetails?: ModelPackagingOutputDetails,
-     *     Status?: 'CREATED'|'RUNNING'|'SUCCEEDED'|'FAILED',
-     *     StatusMessage?: string,
-     *     CreationTimestamp?: \Aws\Api\DateTimeResult,
-     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult
+     *     JobName?: string|null,
+     *     ProjectName?: string|null,
+     *     ModelVersion?: string|null,
+     *     ModelPackagingConfiguration?: ModelPackagingConfiguration|null,
+     *     ModelPackagingJobDescription?: string|null,
+     *     ModelPackagingMethod?: string|null,
+     *     ModelPackagingOutputDetails?: ModelPackagingOutputDetails|null,
+     *     Status?: 'CREATED'|'RUNNING'|'SUCCEEDED'|'FAILED'|null,
+     *     StatusMessage?: string|null,
+     *     CreationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdatedTimestamp?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

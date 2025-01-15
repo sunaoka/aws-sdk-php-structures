@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\EntityResolution\UpdateMatchingWorkflow;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $description
- * @property Shapes\IncrementalRunConfig $incrementalRunConfig
+ * @property string|null $description
+ * @property Shapes\IncrementalRunConfig|null $incrementalRunConfig
  * @property list<Shapes\InputSource> $inputSourceConfig
  * @property list<Shapes\OutputSource> $outputSourceConfig
  * @property Shapes\ResolutionTechniques $resolutionTechniques

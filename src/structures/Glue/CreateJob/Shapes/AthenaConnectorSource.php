@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $ConnectionName
  * @property string $ConnectorName
  * @property string $ConnectionType
- * @property string $ConnectionTable
+ * @property string|null $ConnectionTable
  * @property string $SchemaName
- * @property list<GlueSchema> $OutputSchemas
+ * @property list<GlueSchema>|null $OutputSchemas
  */
 class AthenaConnectorSource extends Shape
 {
@@ -21,9 +21,9 @@ class AthenaConnectorSource extends Shape
      *     ConnectionName: string,
      *     ConnectorName: string,
      *     ConnectionType: string,
-     *     ConnectionTable?: string,
+     *     ConnectionTable?: string|null,
      *     SchemaName: string,
-     *     OutputSchemas?: list<GlueSchema>
+     *     OutputSchemas?: list<GlueSchema>|null
      * } $args
      */
     public function __construct(array $args)

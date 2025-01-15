@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyFleet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CpuPerformanceFactorRequest $Cpu
+ * @property CpuPerformanceFactorRequest|null $Cpu
  */
 class BaselinePerformanceFactorsRequest extends Shape
 {
     /**
-     * @param array{Cpu?: CpuPerformanceFactorRequest} $args
+     * @param array{Cpu?: CpuPerformanceFactorRequest|null} $args
      */
     public function __construct(array $args = [])
     {

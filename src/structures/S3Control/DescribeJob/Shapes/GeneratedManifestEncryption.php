@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Control\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SSES3Encryption $SSES3
- * @property SSEKMSEncryption $SSEKMS
+ * @property SSES3Encryption|null $SSES3
+ * @property SSEKMSEncryption|null $SSEKMS
  */
 class GeneratedManifestEncryption extends Shape
 {
     /**
      * @param array{
-     *     SSES3?: SSES3Encryption,
-     *     SSEKMS?: SSEKMSEncryption
+     *     SSES3?: SSES3Encryption|null,
+     *     SSEKMS?: SSEKMSEncryption|null
      * } $args
      */
     public function __construct(array $args = [])

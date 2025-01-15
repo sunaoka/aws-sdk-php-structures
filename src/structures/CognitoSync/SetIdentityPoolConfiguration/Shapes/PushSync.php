@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CognitoSync\SetIdentityPoolConfiguration\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $ApplicationArns
- * @property string $RoleArn
+ * @property list<string>|null $ApplicationArns
+ * @property string|null $RoleArn
  */
 class PushSync extends Shape
 {
     /**
      * @param array{
-     *     ApplicationArns?: list<string>,
-     *     RoleArn?: string
+     *     ApplicationArns?: list<string>|null,
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

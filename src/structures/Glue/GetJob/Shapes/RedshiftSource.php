@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Database
  * @property string $Table
- * @property string $RedshiftTmpDir
- * @property string $TmpDirIAMRole
+ * @property string|null $RedshiftTmpDir
+ * @property string|null $TmpDirIAMRole
  */
 class RedshiftSource extends Shape
 {
@@ -18,8 +18,8 @@ class RedshiftSource extends Shape
      *     Name: string,
      *     Database: string,
      *     Table: string,
-     *     RedshiftTmpDir?: string,
-     *     TmpDirIAMRole?: string
+     *     RedshiftTmpDir?: string|null,
+     *     TmpDirIAMRole?: string|null
      * } $args
      */
     public function __construct(array $args)

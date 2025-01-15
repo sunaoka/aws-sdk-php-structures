@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property list<string> $eventVariables
- * @property list<string> $labels
+ * @property list<string>|null $labels
  * @property list<string> $entityTypes
- * @property 'ENABLED'|'DISABLED' $eventIngestion
- * @property list<Shapes\Tag> $tags
- * @property Shapes\EventOrchestration $eventOrchestration
+ * @property 'ENABLED'|'DISABLED'|null $eventIngestion
+ * @property list<Shapes\Tag>|null $tags
+ * @property Shapes\EventOrchestration|null $eventOrchestration
  */
 class PutEventTypeRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     eventVariables: list<string>,
-     *     labels?: list<string>,
+     *     labels?: list<string>|null,
      *     entityTypes: list<string>,
-     *     eventIngestion?: 'ENABLED'|'DISABLED',
-     *     tags?: list<Shapes\Tag>,
-     *     eventOrchestration?: Shapes\EventOrchestration
+     *     eventIngestion?: 'ENABLED'|'DISABLED'|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     eventOrchestration?: Shapes\EventOrchestration|null
      * } $args
      */
     public function __construct(array $args)

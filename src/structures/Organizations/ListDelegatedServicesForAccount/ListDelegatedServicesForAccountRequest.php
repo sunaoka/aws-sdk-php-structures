@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AccountId
- * @property string $NextToken
- * @property int<1, 20> $MaxResults
+ * @property string|null $NextToken
+ * @property int<1, 20>|null $MaxResults
  */
 class ListDelegatedServicesForAccountRequest extends Request
 {
     /**
      * @param array{
      *     AccountId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 20>
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 20>|null
      * } $args
      */
     public function __construct(array $args)

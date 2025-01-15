@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\CloudFormation\ListStackSetOperations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OperationId
- * @property 'CREATE'|'UPDATE'|'DELETE'|'DETECT_DRIFT' $Action
- * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPING'|'STOPPED'|'QUEUED' $Status
- * @property \Aws\Api\DateTimeResult $CreationTimestamp
- * @property \Aws\Api\DateTimeResult $EndTimestamp
- * @property string $StatusReason
- * @property StackSetOperationStatusDetails $StatusDetails
- * @property StackSetOperationPreferences $OperationPreferences
+ * @property string|null $OperationId
+ * @property 'CREATE'|'UPDATE'|'DELETE'|'DETECT_DRIFT'|null $Action
+ * @property 'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPING'|'STOPPED'|'QUEUED'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $CreationTimestamp
+ * @property \Aws\Api\DateTimeResult|null $EndTimestamp
+ * @property string|null $StatusReason
+ * @property StackSetOperationStatusDetails|null $StatusDetails
+ * @property StackSetOperationPreferences|null $OperationPreferences
  */
 class StackSetOperationSummary extends Shape
 {
     /**
      * @param array{
-     *     OperationId?: string,
-     *     Action?: 'CREATE'|'UPDATE'|'DELETE'|'DETECT_DRIFT',
-     *     Status?: 'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPING'|'STOPPED'|'QUEUED',
-     *     CreationTimestamp?: \Aws\Api\DateTimeResult,
-     *     EndTimestamp?: \Aws\Api\DateTimeResult,
-     *     StatusReason?: string,
-     *     StatusDetails?: StackSetOperationStatusDetails,
-     *     OperationPreferences?: StackSetOperationPreferences
+     *     OperationId?: string|null,
+     *     Action?: 'CREATE'|'UPDATE'|'DELETE'|'DETECT_DRIFT'|null,
+     *     Status?: 'RUNNING'|'SUCCEEDED'|'FAILED'|'STOPPING'|'STOPPED'|'QUEUED'|null,
+     *     CreationTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     EndTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     StatusReason?: string|null,
+     *     StatusDetails?: StackSetOperationStatusDetails|null,
+     *     OperationPreferences?: StackSetOperationPreferences|null
      * } $args
      */
     public function __construct(array $args = [])

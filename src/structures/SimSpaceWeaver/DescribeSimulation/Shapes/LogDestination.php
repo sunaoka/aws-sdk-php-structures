@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SimSpaceWeaver\DescribeSimulation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property CloudWatchLogsLogGroup $CloudWatchLogsLogGroup
+ * @property CloudWatchLogsLogGroup|null $CloudWatchLogsLogGroup
  */
 class LogDestination extends Shape
 {
     /**
-     * @param array{CloudWatchLogsLogGroup?: CloudWatchLogsLogGroup} $args
+     * @param array{CloudWatchLogsLogGroup?: CloudWatchLogsLogGroup|null} $args
      */
     public function __construct(array $args = [])
     {

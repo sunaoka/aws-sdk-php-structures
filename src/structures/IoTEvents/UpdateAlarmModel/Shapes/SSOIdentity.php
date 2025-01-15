@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $identityStoreId
- * @property string $userId
+ * @property string|null $userId
  */
 class SSOIdentity extends Shape
 {
     /**
      * @param array{
      *     identityStoreId: string,
-     *     userId?: string
+     *     userId?: string|null
      * } $args
      */
     public function __construct(array $args)

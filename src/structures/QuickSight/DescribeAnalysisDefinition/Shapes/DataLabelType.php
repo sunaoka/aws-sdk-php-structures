@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FieldLabelType $FieldLabelType
- * @property DataPathLabelType $DataPathLabelType
- * @property RangeEndsLabelType $RangeEndsLabelType
- * @property MinimumLabelType $MinimumLabelType
- * @property MaximumLabelType $MaximumLabelType
+ * @property FieldLabelType|null $FieldLabelType
+ * @property DataPathLabelType|null $DataPathLabelType
+ * @property RangeEndsLabelType|null $RangeEndsLabelType
+ * @property MinimumLabelType|null $MinimumLabelType
+ * @property MaximumLabelType|null $MaximumLabelType
  */
 class DataLabelType extends Shape
 {
     /**
      * @param array{
-     *     FieldLabelType?: FieldLabelType,
-     *     DataPathLabelType?: DataPathLabelType,
-     *     RangeEndsLabelType?: RangeEndsLabelType,
-     *     MinimumLabelType?: MinimumLabelType,
-     *     MaximumLabelType?: MaximumLabelType
+     *     FieldLabelType?: FieldLabelType|null,
+     *     DataPathLabelType?: DataPathLabelType|null,
+     *     RangeEndsLabelType?: RangeEndsLabelType|null,
+     *     MinimumLabelType?: MinimumLabelType|null,
+     *     MaximumLabelType?: MaximumLabelType|null
      * } $args
      */
     public function __construct(array $args = [])

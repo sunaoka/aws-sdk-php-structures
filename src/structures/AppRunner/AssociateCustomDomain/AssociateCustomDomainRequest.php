@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ServiceArn
  * @property string $DomainName
- * @property bool $EnableWWWSubdomain
+ * @property bool|null $EnableWWWSubdomain
  */
 class AssociateCustomDomainRequest extends Request
 {
@@ -15,7 +15,7 @@ class AssociateCustomDomainRequest extends Request
      * @param array{
      *     ServiceArn: string,
      *     DomainName: string,
-     *     EnableWWWSubdomain?: bool
+     *     EnableWWWSubdomain?: bool|null
      * } $args
      */
     public function __construct(array $args)

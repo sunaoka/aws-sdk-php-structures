@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudSearch\DeleteIndexField\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DefaultValue
- * @property string $SourceField
- * @property bool $FacetEnabled
- * @property bool $SearchEnabled
- * @property bool $ReturnEnabled
- * @property bool $SortEnabled
+ * @property string|null $DefaultValue
+ * @property string|null $SourceField
+ * @property bool|null $FacetEnabled
+ * @property bool|null $SearchEnabled
+ * @property bool|null $ReturnEnabled
+ * @property bool|null $SortEnabled
  */
 class DateOptions extends Shape
 {
     /**
      * @param array{
-     *     DefaultValue?: string,
-     *     SourceField?: string,
-     *     FacetEnabled?: bool,
-     *     SearchEnabled?: bool,
-     *     ReturnEnabled?: bool,
-     *     SortEnabled?: bool
+     *     DefaultValue?: string|null,
+     *     SourceField?: string|null,
+     *     FacetEnabled?: bool|null,
+     *     SearchEnabled?: bool|null,
+     *     ReturnEnabled?: bool|null,
+     *     SortEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $InstanceId
  * @property string $HealthStatus
- * @property bool $ShouldRespectGracePeriod
+ * @property bool|null $ShouldRespectGracePeriod
  */
 class SetInstanceHealthRequest extends Request
 {
@@ -15,7 +15,7 @@ class SetInstanceHealthRequest extends Request
      * @param array{
      *     InstanceId: string,
      *     HealthStatus: string,
-     *     ShouldRespectGracePeriod?: bool
+     *     ShouldRespectGracePeriod?: bool|null
      * } $args
      */
     public function __construct(array $args)

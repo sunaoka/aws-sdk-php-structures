@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\PutResourcePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $policyName
- * @property string $policyDocument
- * @property int<0, max> $lastUpdatedTime
+ * @property string|null $policyName
+ * @property string|null $policyDocument
+ * @property int<0, max>|null $lastUpdatedTime
  */
 class ResourcePolicy extends Shape
 {
     /**
      * @param array{
-     *     policyName?: string,
-     *     policyDocument?: string,
-     *     lastUpdatedTime?: int<0, max>
+     *     policyName?: string|null,
+     *     policyDocument?: string|null,
+     *     lastUpdatedTime?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

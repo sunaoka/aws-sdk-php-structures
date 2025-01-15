@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetPosition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $HorizontalAccuracy
- * @property float $VerticalAccuracy
+ * @property float|null $HorizontalAccuracy
+ * @property float|null $VerticalAccuracy
  */
 class Accuracy extends Shape
 {
     /**
      * @param array{
-     *     HorizontalAccuracy?: float,
-     *     VerticalAccuracy?: float
+     *     HorizontalAccuracy?: float|null,
+     *     VerticalAccuracy?: float|null
      * } $args
      */
     public function __construct(array $args = [])

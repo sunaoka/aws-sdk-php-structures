@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\MailManager\GetArchiveMessage;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Envelope $Envelope
- * @property string $MessageDownloadLink
- * @property Shapes\Metadata $Metadata
+ * @property Shapes\Envelope|null $Envelope
+ * @property string|null $MessageDownloadLink
+ * @property Shapes\Metadata|null $Metadata
  */
 class GetArchiveMessageResponse extends Response
 {

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $BackupVaultName
  * @property string $RecoveryPointArn
- * @property string $BackupVaultAccountId
+ * @property string|null $BackupVaultAccountId
  */
 class DescribeRecoveryPointRequest extends Request
 {
@@ -15,7 +15,7 @@ class DescribeRecoveryPointRequest extends Request
      * @param array{
      *     BackupVaultName: string,
      *     RecoveryPointArn: string,
-     *     BackupVaultAccountId?: string
+     *     BackupVaultAccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

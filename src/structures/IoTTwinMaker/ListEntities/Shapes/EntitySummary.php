@@ -8,10 +8,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $entityId
  * @property string $entityName
  * @property string $arn
- * @property string $parentEntityId
+ * @property string|null $parentEntityId
  * @property Status $status
- * @property string $description
- * @property bool $hasChildEntities
+ * @property string|null $description
+ * @property bool|null $hasChildEntities
  * @property \Aws\Api\DateTimeResult $creationDateTime
  * @property \Aws\Api\DateTimeResult $updateDateTime
  */
@@ -22,10 +22,10 @@ class EntitySummary extends Shape
      *     entityId: string,
      *     entityName: string,
      *     arn: string,
-     *     parentEntityId?: string,
+     *     parentEntityId?: string|null,
      *     status: Status,
-     *     description?: string,
-     *     hasChildEntities?: bool,
+     *     description?: string|null,
+     *     hasChildEntities?: bool|null,
      *     creationDateTime: \Aws\Api\DateTimeResult,
      *     updateDateTime: \Aws\Api\DateTimeResult
      * } $args

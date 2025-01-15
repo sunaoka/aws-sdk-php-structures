@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\UpdateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $UserManagedClientApplicationClientSecret
- * @property string $AccessToken
- * @property string $RefreshToken
- * @property string $JwtToken
+ * @property string|null $UserManagedClientApplicationClientSecret
+ * @property string|null $AccessToken
+ * @property string|null $RefreshToken
+ * @property string|null $JwtToken
  */
 class OAuth2Credentials extends Shape
 {
     /**
      * @param array{
-     *     UserManagedClientApplicationClientSecret?: string,
-     *     AccessToken?: string,
-     *     RefreshToken?: string,
-     *     JwtToken?: string
+     *     UserManagedClientApplicationClientSecret?: string|null,
+     *     AccessToken?: string|null,
+     *     RefreshToken?: string|null,
+     *     JwtToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

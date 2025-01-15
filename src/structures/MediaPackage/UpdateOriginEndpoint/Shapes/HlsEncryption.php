@@ -5,20 +5,20 @@ namespace Sunaoka\Aws\Structures\MediaPackage\UpdateOriginEndpoint\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ConstantInitializationVector
- * @property 'AES_128'|'SAMPLE_AES' $EncryptionMethod
- * @property int $KeyRotationIntervalSeconds
- * @property bool $RepeatExtXKey
+ * @property string|null $ConstantInitializationVector
+ * @property 'AES_128'|'SAMPLE_AES'|null $EncryptionMethod
+ * @property int|null $KeyRotationIntervalSeconds
+ * @property bool|null $RepeatExtXKey
  * @property SpekeKeyProvider $SpekeKeyProvider
  */
 class HlsEncryption extends Shape
 {
     /**
      * @param array{
-     *     ConstantInitializationVector?: string,
-     *     EncryptionMethod?: 'AES_128'|'SAMPLE_AES',
-     *     KeyRotationIntervalSeconds?: int,
-     *     RepeatExtXKey?: bool,
+     *     ConstantInitializationVector?: string|null,
+     *     EncryptionMethod?: 'AES_128'|'SAMPLE_AES'|null,
+     *     KeyRotationIntervalSeconds?: int|null,
+     *     RepeatExtXKey?: bool|null,
      *     SpekeKeyProvider: SpekeKeyProvider
      * } $args
      */

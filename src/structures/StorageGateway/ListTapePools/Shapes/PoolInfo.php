@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\StorageGateway\ListTapePools\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $PoolARN
- * @property string $PoolName
- * @property 'DEEP_ARCHIVE'|'GLACIER' $StorageClass
- * @property 'COMPLIANCE'|'GOVERNANCE'|'NONE' $RetentionLockType
- * @property int<0, 36500> $RetentionLockTimeInDays
- * @property 'ACTIVE'|'DELETED' $PoolStatus
+ * @property string|null $PoolARN
+ * @property string|null $PoolName
+ * @property 'DEEP_ARCHIVE'|'GLACIER'|null $StorageClass
+ * @property 'COMPLIANCE'|'GOVERNANCE'|'NONE'|null $RetentionLockType
+ * @property int<0, 36500>|null $RetentionLockTimeInDays
+ * @property 'ACTIVE'|'DELETED'|null $PoolStatus
  */
 class PoolInfo extends Shape
 {
     /**
      * @param array{
-     *     PoolARN?: string,
-     *     PoolName?: string,
-     *     StorageClass?: 'DEEP_ARCHIVE'|'GLACIER',
-     *     RetentionLockType?: 'COMPLIANCE'|'GOVERNANCE'|'NONE',
-     *     RetentionLockTimeInDays?: int<0, 36500>,
-     *     PoolStatus?: 'ACTIVE'|'DELETED'
+     *     PoolARN?: string|null,
+     *     PoolName?: string|null,
+     *     StorageClass?: 'DEEP_ARCHIVE'|'GLACIER'|null,
+     *     RetentionLockType?: 'COMPLIANCE'|'GOVERNANCE'|'NONE'|null,
+     *     RetentionLockTimeInDays?: int<0, 36500>|null,
+     *     PoolStatus?: 'ACTIVE'|'DELETED'|null
      * } $args
      */
     public function __construct(array $args = [])

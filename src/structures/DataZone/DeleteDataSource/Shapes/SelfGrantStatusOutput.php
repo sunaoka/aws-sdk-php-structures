@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DataZone\DeleteDataSource\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GlueSelfGrantStatusOutput $glueSelfGrantStatus
- * @property RedshiftSelfGrantStatusOutput $redshiftSelfGrantStatus
+ * @property GlueSelfGrantStatusOutput|null $glueSelfGrantStatus
+ * @property RedshiftSelfGrantStatusOutput|null $redshiftSelfGrantStatus
  */
 class SelfGrantStatusOutput extends Shape
 {
     /**
      * @param array{
-     *     glueSelfGrantStatus?: GlueSelfGrantStatusOutput,
-     *     redshiftSelfGrantStatus?: RedshiftSelfGrantStatusOutput
+     *     glueSelfGrantStatus?: GlueSelfGrantStatusOutput|null,
+     *     redshiftSelfGrantStatus?: RedshiftSelfGrantStatusOutput|null
      * } $args
      */
     public function __construct(array $args = [])

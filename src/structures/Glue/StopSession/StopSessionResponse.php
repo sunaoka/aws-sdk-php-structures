@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glue\StopSession;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Id
+ * @property string|null $Id
  */
 class StopSessionResponse extends Response
 {

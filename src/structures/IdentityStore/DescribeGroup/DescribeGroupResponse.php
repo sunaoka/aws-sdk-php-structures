@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $GroupId
- * @property string $DisplayName
- * @property list<Shapes\ExternalId> $ExternalIds
- * @property string $Description
+ * @property string|null $DisplayName
+ * @property list<Shapes\ExternalId>|null $ExternalIds
+ * @property string|null $Description
  * @property string $IdentityStoreId
  */
 class DescribeGroupResponse extends Response

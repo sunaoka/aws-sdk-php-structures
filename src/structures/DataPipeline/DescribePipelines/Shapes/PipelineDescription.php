@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $pipelineId
  * @property string $name
  * @property list<Field> $fields
- * @property string $description
- * @property list<Tag> $tags
+ * @property string|null $description
+ * @property list<Tag>|null $tags
  */
 class PipelineDescription extends Shape
 {
@@ -18,8 +18,8 @@ class PipelineDescription extends Shape
      *     pipelineId: string,
      *     name: string,
      *     fields: list<Field>,
-     *     description?: string,
-     *     tags?: list<Tag>
+     *     description?: string|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args)

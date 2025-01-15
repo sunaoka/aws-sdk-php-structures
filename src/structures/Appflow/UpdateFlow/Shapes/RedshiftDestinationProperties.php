@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $object
  * @property string $intermediateBucketName
- * @property string $bucketPrefix
- * @property ErrorHandlingConfig $errorHandlingConfig
+ * @property string|null $bucketPrefix
+ * @property ErrorHandlingConfig|null $errorHandlingConfig
  */
 class RedshiftDestinationProperties extends Shape
 {
@@ -16,8 +16,8 @@ class RedshiftDestinationProperties extends Shape
      * @param array{
      *     object: string,
      *     intermediateBucketName: string,
-     *     bucketPrefix?: string,
-     *     errorHandlingConfig?: ErrorHandlingConfig
+     *     bucketPrefix?: string|null,
+     *     errorHandlingConfig?: ErrorHandlingConfig|null
      * } $args
      */
     public function __construct(array $args)

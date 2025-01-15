@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateTrialComponent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StringValue
- * @property double $NumberValue
+ * @property string|null $StringValue
+ * @property double|null $NumberValue
  */
 class TrialComponentParameterValue extends Shape
 {
     /**
      * @param array{
-     *     StringValue?: string,
-     *     NumberValue?: double
+     *     StringValue?: string|null,
+     *     NumberValue?: double|null
      * } $args
      */
     public function __construct(array $args = [])

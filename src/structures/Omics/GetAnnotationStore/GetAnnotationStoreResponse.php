@@ -15,8 +15,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $updateTime
  * @property array<string, string> $tags
- * @property Shapes\StoreOptions $storeOptions
- * @property 'GFF'|'TSV'|'VCF' $storeFormat
+ * @property Shapes\StoreOptions|null $storeOptions
+ * @property 'GFF'|'TSV'|'VCF'|null $storeFormat
  * @property string $statusMessage
  * @property int $storeSizeBytes
  * @property int $numVersions

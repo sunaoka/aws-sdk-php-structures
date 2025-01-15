@@ -5,97 +5,97 @@ namespace Sunaoka\Aws\Structures\MediaConvert\GetPreset\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|'AUTO' $AdaptiveQuantization
- * @property 'DISABLED'|'ENABLED' $AlternateTransferFunctionSei
- * @property BandwidthReductionFilter $BandwidthReductionFilter
- * @property int<1000, 1466400000> $Bitrate
- * @property 'AUTO'|'LEVEL_1'|'LEVEL_2'|'LEVEL_2_1'|'LEVEL_3'|'LEVEL_3_1'|'LEVEL_4'|'LEVEL_4_1'|'LEVEL_5'|'LEVEL_5_1'|'LEVEL_5_2'|'LEVEL_6'|'LEVEL_6_1'|'LEVEL_6_2' $CodecLevel
- * @property 'MAIN_MAIN'|'MAIN_HIGH'|'MAIN10_MAIN'|'MAIN10_HIGH'|'MAIN_422_8BIT_MAIN'|'MAIN_422_8BIT_HIGH'|'MAIN_422_10BIT_MAIN'|'MAIN_422_10BIT_HIGH' $CodecProfile
- * @property 'ADAPTIVE'|'STATIC' $DynamicSubGop
- * @property 'INCLUDE'|'SUPPRESS' $EndOfStreamMarkers
- * @property 'DISABLED'|'ENABLED' $FlickerAdaptiveQuantization
- * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
- * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int<1, 2147483647> $FramerateDenominator
- * @property int<1, 2147483647> $FramerateNumerator
- * @property 'DISABLED'|'ENABLED' $GopBReference
- * @property int<0, 2147483647> $GopClosedCadence
- * @property double $GopSize
- * @property 'FRAMES'|'SECONDS'|'AUTO' $GopSizeUnits
- * @property int<0, 100> $HrdBufferFinalFillPercentage
- * @property int<0, 100> $HrdBufferInitialFillPercentage
- * @property int<0, 1466400000> $HrdBufferSize
- * @property 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD' $InterlaceMode
- * @property int<1000, 1466400000> $MaxBitrate
- * @property int<0, 30> $MinIInterval
- * @property int<0, 7> $NumberBFramesBetweenReferenceFrames
- * @property int<1, 6> $NumberReferenceFrames
- * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $ParControl
- * @property int<1, 2147483647> $ParDenominator
- * @property int<1, 2147483647> $ParNumerator
- * @property 'SINGLE_PASS'|'SINGLE_PASS_HQ'|'MULTI_PASS_HQ' $QualityTuningLevel
- * @property H265QvbrSettings $QvbrSettings
- * @property 'VBR'|'CBR'|'QVBR' $RateControlMode
- * @property 'DEFAULT'|'ADAPTIVE'|'OFF' $SampleAdaptiveOffsetFilterMode
- * @property 'INTERLACED'|'INTERLACED_OPTIMIZE' $ScanTypeConversionMode
- * @property 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION' $SceneChangeDetect
- * @property int<1, 32> $Slices
- * @property 'DISABLED'|'ENABLED' $SlowPal
- * @property 'DISABLED'|'ENABLED' $SpatialAdaptiveQuantization
- * @property 'NONE'|'SOFT'|'HARD' $Telecine
- * @property 'DISABLED'|'ENABLED' $TemporalAdaptiveQuantization
- * @property 'DISABLED'|'ENABLED' $TemporalIds
- * @property 'DISABLED'|'ENABLED' $Tiles
- * @property 'DISABLED'|'ENABLED' $UnregisteredSeiTimecode
- * @property 'HVC1'|'HEV1' $WriteMp4PackagingType
+ * @property 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|'AUTO'|null $AdaptiveQuantization
+ * @property 'DISABLED'|'ENABLED'|null $AlternateTransferFunctionSei
+ * @property BandwidthReductionFilter|null $BandwidthReductionFilter
+ * @property int<1000, 1466400000>|null $Bitrate
+ * @property 'AUTO'|'LEVEL_1'|'LEVEL_2'|'LEVEL_2_1'|'LEVEL_3'|'LEVEL_3_1'|'LEVEL_4'|'LEVEL_4_1'|'LEVEL_5'|'LEVEL_5_1'|'LEVEL_5_2'|'LEVEL_6'|'LEVEL_6_1'|'LEVEL_6_2'|null $CodecLevel
+ * @property 'MAIN_MAIN'|'MAIN_HIGH'|'MAIN10_MAIN'|'MAIN10_HIGH'|'MAIN_422_8BIT_MAIN'|'MAIN_422_8BIT_HIGH'|'MAIN_422_10BIT_MAIN'|'MAIN_422_10BIT_HIGH'|null $CodecProfile
+ * @property 'ADAPTIVE'|'STATIC'|null $DynamicSubGop
+ * @property 'INCLUDE'|'SUPPRESS'|null $EndOfStreamMarkers
+ * @property 'DISABLED'|'ENABLED'|null $FlickerAdaptiveQuantization
+ * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
+ * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
+ * @property int<1, 2147483647>|null $FramerateDenominator
+ * @property int<1, 2147483647>|null $FramerateNumerator
+ * @property 'DISABLED'|'ENABLED'|null $GopBReference
+ * @property int<0, 2147483647>|null $GopClosedCadence
+ * @property double|null $GopSize
+ * @property 'FRAMES'|'SECONDS'|'AUTO'|null $GopSizeUnits
+ * @property int<0, 100>|null $HrdBufferFinalFillPercentage
+ * @property int<0, 100>|null $HrdBufferInitialFillPercentage
+ * @property int<0, 1466400000>|null $HrdBufferSize
+ * @property 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD'|null $InterlaceMode
+ * @property int<1000, 1466400000>|null $MaxBitrate
+ * @property int<0, 30>|null $MinIInterval
+ * @property int<0, 7>|null $NumberBFramesBetweenReferenceFrames
+ * @property int<1, 6>|null $NumberReferenceFrames
+ * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $ParControl
+ * @property int<1, 2147483647>|null $ParDenominator
+ * @property int<1, 2147483647>|null $ParNumerator
+ * @property 'SINGLE_PASS'|'SINGLE_PASS_HQ'|'MULTI_PASS_HQ'|null $QualityTuningLevel
+ * @property H265QvbrSettings|null $QvbrSettings
+ * @property 'VBR'|'CBR'|'QVBR'|null $RateControlMode
+ * @property 'DEFAULT'|'ADAPTIVE'|'OFF'|null $SampleAdaptiveOffsetFilterMode
+ * @property 'INTERLACED'|'INTERLACED_OPTIMIZE'|null $ScanTypeConversionMode
+ * @property 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION'|null $SceneChangeDetect
+ * @property int<1, 32>|null $Slices
+ * @property 'DISABLED'|'ENABLED'|null $SlowPal
+ * @property 'DISABLED'|'ENABLED'|null $SpatialAdaptiveQuantization
+ * @property 'NONE'|'SOFT'|'HARD'|null $Telecine
+ * @property 'DISABLED'|'ENABLED'|null $TemporalAdaptiveQuantization
+ * @property 'DISABLED'|'ENABLED'|null $TemporalIds
+ * @property 'DISABLED'|'ENABLED'|null $Tiles
+ * @property 'DISABLED'|'ENABLED'|null $UnregisteredSeiTimecode
+ * @property 'HVC1'|'HEV1'|null $WriteMp4PackagingType
  */
 class H265Settings extends Shape
 {
     /**
      * @param array{
-     *     AdaptiveQuantization?: 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|'AUTO',
-     *     AlternateTransferFunctionSei?: 'DISABLED'|'ENABLED',
-     *     BandwidthReductionFilter?: BandwidthReductionFilter,
-     *     Bitrate?: int<1000, 1466400000>,
-     *     CodecLevel?: 'AUTO'|'LEVEL_1'|'LEVEL_2'|'LEVEL_2_1'|'LEVEL_3'|'LEVEL_3_1'|'LEVEL_4'|'LEVEL_4_1'|'LEVEL_5'|'LEVEL_5_1'|'LEVEL_5_2'|'LEVEL_6'|'LEVEL_6_1'|'LEVEL_6_2',
-     *     CodecProfile?: 'MAIN_MAIN'|'MAIN_HIGH'|'MAIN10_MAIN'|'MAIN10_HIGH'|'MAIN_422_8BIT_MAIN'|'MAIN_422_8BIT_HIGH'|'MAIN_422_10BIT_MAIN'|'MAIN_422_10BIT_HIGH',
-     *     DynamicSubGop?: 'ADAPTIVE'|'STATIC',
-     *     EndOfStreamMarkers?: 'INCLUDE'|'SUPPRESS',
-     *     FlickerAdaptiveQuantization?: 'DISABLED'|'ENABLED',
-     *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
-     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int<1, 2147483647>,
-     *     FramerateNumerator?: int<1, 2147483647>,
-     *     GopBReference?: 'DISABLED'|'ENABLED',
-     *     GopClosedCadence?: int<0, 2147483647>,
-     *     GopSize?: double,
-     *     GopSizeUnits?: 'FRAMES'|'SECONDS'|'AUTO',
-     *     HrdBufferFinalFillPercentage?: int<0, 100>,
-     *     HrdBufferInitialFillPercentage?: int<0, 100>,
-     *     HrdBufferSize?: int<0, 1466400000>,
-     *     InterlaceMode?: 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD',
-     *     MaxBitrate?: int<1000, 1466400000>,
-     *     MinIInterval?: int<0, 30>,
-     *     NumberBFramesBetweenReferenceFrames?: int<0, 7>,
-     *     NumberReferenceFrames?: int<1, 6>,
-     *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
-     *     ParDenominator?: int<1, 2147483647>,
-     *     ParNumerator?: int<1, 2147483647>,
-     *     QualityTuningLevel?: 'SINGLE_PASS'|'SINGLE_PASS_HQ'|'MULTI_PASS_HQ',
-     *     QvbrSettings?: H265QvbrSettings,
-     *     RateControlMode?: 'VBR'|'CBR'|'QVBR',
-     *     SampleAdaptiveOffsetFilterMode?: 'DEFAULT'|'ADAPTIVE'|'OFF',
-     *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE',
-     *     SceneChangeDetect?: 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION',
-     *     Slices?: int<1, 32>,
-     *     SlowPal?: 'DISABLED'|'ENABLED',
-     *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED',
-     *     Telecine?: 'NONE'|'SOFT'|'HARD',
-     *     TemporalAdaptiveQuantization?: 'DISABLED'|'ENABLED',
-     *     TemporalIds?: 'DISABLED'|'ENABLED',
-     *     Tiles?: 'DISABLED'|'ENABLED',
-     *     UnregisteredSeiTimecode?: 'DISABLED'|'ENABLED',
-     *     WriteMp4PackagingType?: 'HVC1'|'HEV1'
+     *     AdaptiveQuantization?: 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|'AUTO'|null,
+     *     AlternateTransferFunctionSei?: 'DISABLED'|'ENABLED'|null,
+     *     BandwidthReductionFilter?: BandwidthReductionFilter|null,
+     *     Bitrate?: int<1000, 1466400000>|null,
+     *     CodecLevel?: 'AUTO'|'LEVEL_1'|'LEVEL_2'|'LEVEL_2_1'|'LEVEL_3'|'LEVEL_3_1'|'LEVEL_4'|'LEVEL_4_1'|'LEVEL_5'|'LEVEL_5_1'|'LEVEL_5_2'|'LEVEL_6'|'LEVEL_6_1'|'LEVEL_6_2'|null,
+     *     CodecProfile?: 'MAIN_MAIN'|'MAIN_HIGH'|'MAIN10_MAIN'|'MAIN10_HIGH'|'MAIN_422_8BIT_MAIN'|'MAIN_422_8BIT_HIGH'|'MAIN_422_10BIT_MAIN'|'MAIN_422_10BIT_HIGH'|null,
+     *     DynamicSubGop?: 'ADAPTIVE'|'STATIC'|null,
+     *     EndOfStreamMarkers?: 'INCLUDE'|'SUPPRESS'|null,
+     *     FlickerAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,
+     *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
+     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
+     *     FramerateDenominator?: int<1, 2147483647>|null,
+     *     FramerateNumerator?: int<1, 2147483647>|null,
+     *     GopBReference?: 'DISABLED'|'ENABLED'|null,
+     *     GopClosedCadence?: int<0, 2147483647>|null,
+     *     GopSize?: double|null,
+     *     GopSizeUnits?: 'FRAMES'|'SECONDS'|'AUTO'|null,
+     *     HrdBufferFinalFillPercentage?: int<0, 100>|null,
+     *     HrdBufferInitialFillPercentage?: int<0, 100>|null,
+     *     HrdBufferSize?: int<0, 1466400000>|null,
+     *     InterlaceMode?: 'PROGRESSIVE'|'TOP_FIELD'|'BOTTOM_FIELD'|'FOLLOW_TOP_FIELD'|'FOLLOW_BOTTOM_FIELD'|null,
+     *     MaxBitrate?: int<1000, 1466400000>|null,
+     *     MinIInterval?: int<0, 30>|null,
+     *     NumberBFramesBetweenReferenceFrames?: int<0, 7>|null,
+     *     NumberReferenceFrames?: int<1, 6>|null,
+     *     ParControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
+     *     ParDenominator?: int<1, 2147483647>|null,
+     *     ParNumerator?: int<1, 2147483647>|null,
+     *     QualityTuningLevel?: 'SINGLE_PASS'|'SINGLE_PASS_HQ'|'MULTI_PASS_HQ'|null,
+     *     QvbrSettings?: H265QvbrSettings|null,
+     *     RateControlMode?: 'VBR'|'CBR'|'QVBR'|null,
+     *     SampleAdaptiveOffsetFilterMode?: 'DEFAULT'|'ADAPTIVE'|'OFF'|null,
+     *     ScanTypeConversionMode?: 'INTERLACED'|'INTERLACED_OPTIMIZE'|null,
+     *     SceneChangeDetect?: 'DISABLED'|'ENABLED'|'TRANSITION_DETECTION'|null,
+     *     Slices?: int<1, 32>|null,
+     *     SlowPal?: 'DISABLED'|'ENABLED'|null,
+     *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,
+     *     Telecine?: 'NONE'|'SOFT'|'HARD'|null,
+     *     TemporalAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null,
+     *     TemporalIds?: 'DISABLED'|'ENABLED'|null,
+     *     Tiles?: 'DISABLED'|'ENABLED'|null,
+     *     UnregisteredSeiTimecode?: 'DISABLED'|'ENABLED'|null,
+     *     WriteMp4PackagingType?: 'HVC1'|'HEV1'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -13,14 +13,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\Segment $Segment
  * @property \Aws\Api\DateTimeResult $CreatedAt
  * @property \Aws\Api\DateTimeResult $ModifiedAt
- * @property string $Description
- * @property int $StartoverWindowSeconds
- * @property list<Shapes\GetHlsManifestConfiguration> $HlsManifests
- * @property list<Shapes\GetLowLatencyHlsManifestConfiguration> $LowLatencyHlsManifests
- * @property Shapes\ForceEndpointErrorConfiguration $ForceEndpointErrorConfiguration
- * @property string $ETag
- * @property array<string, string> $Tags
- * @property list<Shapes\GetDashManifestConfiguration> $DashManifests
+ * @property string|null $Description
+ * @property int|null $StartoverWindowSeconds
+ * @property list<Shapes\GetHlsManifestConfiguration>|null $HlsManifests
+ * @property list<Shapes\GetLowLatencyHlsManifestConfiguration>|null $LowLatencyHlsManifests
+ * @property Shapes\ForceEndpointErrorConfiguration|null $ForceEndpointErrorConfiguration
+ * @property string|null $ETag
+ * @property array<string, string>|null $Tags
+ * @property list<Shapes\GetDashManifestConfiguration>|null $DashManifests
  */
 class UpdateOriginEndpointResponse extends Response
 {

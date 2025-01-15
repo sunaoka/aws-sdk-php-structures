@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ReplicationConfigArn
  * @property list<Shapes\TableToReload> $TablesToReload
- * @property 'data-reload'|'validate-only' $ReloadOption
+ * @property 'data-reload'|'validate-only'|null $ReloadOption
  */
 class ReloadReplicationTablesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ReloadReplicationTablesRequest extends Request
      * @param array{
      *     ReplicationConfigArn: string,
      *     TablesToReload: list<Shapes\TableToReload>,
-     *     ReloadOption?: 'data-reload'|'validate-only'
+     *     ReloadOption?: 'data-reload'|'validate-only'|null
      * } $args
      */
     public function __construct(array $args)

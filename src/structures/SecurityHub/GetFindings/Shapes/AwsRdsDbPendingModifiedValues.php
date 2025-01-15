@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DbInstanceClass
- * @property int $AllocatedStorage
- * @property string $MasterUserPassword
- * @property int $Port
- * @property int $BackupRetentionPeriod
- * @property bool $MultiAZ
- * @property string $EngineVersion
- * @property string $LicenseModel
- * @property int $Iops
- * @property string $DbInstanceIdentifier
- * @property string $StorageType
- * @property string $CaCertificateIdentifier
- * @property string $DbSubnetGroupName
- * @property AwsRdsPendingCloudWatchLogsExports $PendingCloudWatchLogsExports
- * @property list<AwsRdsDbProcessorFeature> $ProcessorFeatures
+ * @property string|null $DbInstanceClass
+ * @property int|null $AllocatedStorage
+ * @property string|null $MasterUserPassword
+ * @property int|null $Port
+ * @property int|null $BackupRetentionPeriod
+ * @property bool|null $MultiAZ
+ * @property string|null $EngineVersion
+ * @property string|null $LicenseModel
+ * @property int|null $Iops
+ * @property string|null $DbInstanceIdentifier
+ * @property string|null $StorageType
+ * @property string|null $CaCertificateIdentifier
+ * @property string|null $DbSubnetGroupName
+ * @property AwsRdsPendingCloudWatchLogsExports|null $PendingCloudWatchLogsExports
+ * @property list<AwsRdsDbProcessorFeature>|null $ProcessorFeatures
  */
 class AwsRdsDbPendingModifiedValues extends Shape
 {
     /**
      * @param array{
-     *     DbInstanceClass?: string,
-     *     AllocatedStorage?: int,
-     *     MasterUserPassword?: string,
-     *     Port?: int,
-     *     BackupRetentionPeriod?: int,
-     *     MultiAZ?: bool,
-     *     EngineVersion?: string,
-     *     LicenseModel?: string,
-     *     Iops?: int,
-     *     DbInstanceIdentifier?: string,
-     *     StorageType?: string,
-     *     CaCertificateIdentifier?: string,
-     *     DbSubnetGroupName?: string,
-     *     PendingCloudWatchLogsExports?: AwsRdsPendingCloudWatchLogsExports,
-     *     ProcessorFeatures?: list<AwsRdsDbProcessorFeature>
+     *     DbInstanceClass?: string|null,
+     *     AllocatedStorage?: int|null,
+     *     MasterUserPassword?: string|null,
+     *     Port?: int|null,
+     *     BackupRetentionPeriod?: int|null,
+     *     MultiAZ?: bool|null,
+     *     EngineVersion?: string|null,
+     *     LicenseModel?: string|null,
+     *     Iops?: int|null,
+     *     DbInstanceIdentifier?: string|null,
+     *     StorageType?: string|null,
+     *     CaCertificateIdentifier?: string|null,
+     *     DbSubnetGroupName?: string|null,
+     *     PendingCloudWatchLogsExports?: AwsRdsPendingCloudWatchLogsExports|null,
+     *     ProcessorFeatures?: list<AwsRdsDbProcessorFeature>|null
      * } $args
      */
     public function __construct(array $args = [])

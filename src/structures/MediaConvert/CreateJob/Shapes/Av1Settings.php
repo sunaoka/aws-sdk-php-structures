@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX' $AdaptiveQuantization
- * @property 'BIT_8'|'BIT_10' $BitDepth
- * @property 'DISABLED'|'ENABLED' $FilmGrainSynthesis
- * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED' $FramerateControl
- * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER' $FramerateConversionAlgorithm
- * @property int<1, 2147483647> $FramerateDenominator
- * @property int<1, 2147483647> $FramerateNumerator
- * @property double $GopSize
- * @property int<1000, 1152000000> $MaxBitrate
- * @property int<0, 15> $NumberBFramesBetweenReferenceFrames
- * @property Av1QvbrSettings $QvbrSettings
- * @property 'QVBR' $RateControlMode
- * @property int<1, 32> $Slices
- * @property 'DISABLED'|'ENABLED' $SpatialAdaptiveQuantization
+ * @property 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|null $AdaptiveQuantization
+ * @property 'BIT_8'|'BIT_10'|null $BitDepth
+ * @property 'DISABLED'|'ENABLED'|null $FilmGrainSynthesis
+ * @property 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null $FramerateControl
+ * @property 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null $FramerateConversionAlgorithm
+ * @property int<1, 2147483647>|null $FramerateDenominator
+ * @property int<1, 2147483647>|null $FramerateNumerator
+ * @property double|null $GopSize
+ * @property int<1000, 1152000000>|null $MaxBitrate
+ * @property int<0, 15>|null $NumberBFramesBetweenReferenceFrames
+ * @property Av1QvbrSettings|null $QvbrSettings
+ * @property 'QVBR'|null $RateControlMode
+ * @property int<1, 32>|null $Slices
+ * @property 'DISABLED'|'ENABLED'|null $SpatialAdaptiveQuantization
  */
 class Av1Settings extends Shape
 {
     /**
      * @param array{
-     *     AdaptiveQuantization?: 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX',
-     *     BitDepth?: 'BIT_8'|'BIT_10',
-     *     FilmGrainSynthesis?: 'DISABLED'|'ENABLED',
-     *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED',
-     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER',
-     *     FramerateDenominator?: int<1, 2147483647>,
-     *     FramerateNumerator?: int<1, 2147483647>,
-     *     GopSize?: double,
-     *     MaxBitrate?: int<1000, 1152000000>,
-     *     NumberBFramesBetweenReferenceFrames?: int<0, 15>,
-     *     QvbrSettings?: Av1QvbrSettings,
-     *     RateControlMode?: 'QVBR',
-     *     Slices?: int<1, 32>,
-     *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED'
+     *     AdaptiveQuantization?: 'OFF'|'LOW'|'MEDIUM'|'HIGH'|'HIGHER'|'MAX'|null,
+     *     BitDepth?: 'BIT_8'|'BIT_10'|null,
+     *     FilmGrainSynthesis?: 'DISABLED'|'ENABLED'|null,
+     *     FramerateControl?: 'INITIALIZE_FROM_SOURCE'|'SPECIFIED'|null,
+     *     FramerateConversionAlgorithm?: 'DUPLICATE_DROP'|'INTERPOLATE'|'FRAMEFORMER'|null,
+     *     FramerateDenominator?: int<1, 2147483647>|null,
+     *     FramerateNumerator?: int<1, 2147483647>|null,
+     *     GopSize?: double|null,
+     *     MaxBitrate?: int<1000, 1152000000>|null,
+     *     NumberBFramesBetweenReferenceFrames?: int<0, 15>|null,
+     *     QvbrSettings?: Av1QvbrSettings|null,
+     *     RateControlMode?: 'QVBR'|null,
+     *     Slices?: int<1, 32>|null,
+     *     SpatialAdaptiveQuantization?: 'DISABLED'|'ENABLED'|null
      * } $args
      */
     public function __construct(array $args = [])

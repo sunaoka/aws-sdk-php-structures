@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AppMesh\UpdateVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VirtualServiceBackend $virtualService
+ * @property VirtualServiceBackend|null $virtualService
  */
 class Backend extends Shape
 {
     /**
-     * @param array{virtualService?: VirtualServiceBackend} $args
+     * @param array{virtualService?: VirtualServiceBackend|null} $args
      */
     public function __construct(array $args = [])
     {

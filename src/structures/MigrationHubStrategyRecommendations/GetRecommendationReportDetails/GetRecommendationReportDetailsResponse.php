@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\GetRecommen
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $id
- * @property Shapes\RecommendationReportDetails $recommendationReportDetails
+ * @property string|null $id
+ * @property Shapes\RecommendationReportDetails|null $recommendationReportDetails
  */
 class GetRecommendationReportDetailsResponse extends Response
 {

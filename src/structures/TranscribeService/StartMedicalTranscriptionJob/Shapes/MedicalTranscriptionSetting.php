@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\TranscribeService\StartMedicalTranscriptionJob\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $ShowSpeakerLabels
- * @property int<2, 30> $MaxSpeakerLabels
- * @property bool $ChannelIdentification
- * @property bool $ShowAlternatives
- * @property int<2, 10> $MaxAlternatives
- * @property string $VocabularyName
+ * @property bool|null $ShowSpeakerLabels
+ * @property int<2, 30>|null $MaxSpeakerLabels
+ * @property bool|null $ChannelIdentification
+ * @property bool|null $ShowAlternatives
+ * @property int<2, 10>|null $MaxAlternatives
+ * @property string|null $VocabularyName
  */
 class MedicalTranscriptionSetting extends Shape
 {
     /**
      * @param array{
-     *     ShowSpeakerLabels?: bool,
-     *     MaxSpeakerLabels?: int<2, 30>,
-     *     ChannelIdentification?: bool,
-     *     ShowAlternatives?: bool,
-     *     MaxAlternatives?: int<2, 10>,
-     *     VocabularyName?: string
+     *     ShowSpeakerLabels?: bool|null,
+     *     MaxSpeakerLabels?: int<2, 30>|null,
+     *     ChannelIdentification?: bool|null,
+     *     ShowAlternatives?: bool|null,
+     *     MaxAlternatives?: int<2, 10>|null,
+     *     VocabularyName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Ec2\DeleteFleets;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DeleteFleetSuccessItem> $SuccessfulFleetDeletions
- * @property list<Shapes\DeleteFleetErrorItem> $UnsuccessfulFleetDeletions
+ * @property list<Shapes\DeleteFleetSuccessItem>|null $SuccessfulFleetDeletions
+ * @property list<Shapes\DeleteFleetErrorItem>|null $UnsuccessfulFleetDeletions
  */
 class DeleteFleetsResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\RejectTransitGatewayMulticastDomainAssociat
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\TransitGatewayMulticastDomainAssociations $Associations
+ * @property Shapes\TransitGatewayMulticastDomainAssociations|null $Associations
  */
 class RejectTransitGatewayMulticastDomainAssociationsResponse extends Response
 {

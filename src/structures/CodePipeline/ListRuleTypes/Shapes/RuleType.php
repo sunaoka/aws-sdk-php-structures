@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property RuleTypeId $id
- * @property RuleTypeSettings $settings
- * @property list<RuleConfigurationProperty> $ruleConfigurationProperties
+ * @property RuleTypeSettings|null $settings
+ * @property list<RuleConfigurationProperty>|null $ruleConfigurationProperties
  * @property ArtifactDetails $inputArtifactDetails
  */
 class RuleType extends Shape
@@ -15,8 +15,8 @@ class RuleType extends Shape
     /**
      * @param array{
      *     id: RuleTypeId,
-     *     settings?: RuleTypeSettings,
-     *     ruleConfigurationProperties?: list<RuleConfigurationProperty>,
+     *     settings?: RuleTypeSettings|null,
+     *     ruleConfigurationProperties?: list<RuleConfigurationProperty>|null,
      *     inputArtifactDetails: ArtifactDetails
      * } $args
      */

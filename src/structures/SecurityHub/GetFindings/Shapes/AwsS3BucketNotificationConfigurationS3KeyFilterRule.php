@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Prefix'|'Suffix' $Name
- * @property string $Value
+ * @property 'Prefix'|'Suffix'|null $Name
+ * @property string|null $Value
  */
 class AwsS3BucketNotificationConfigurationS3KeyFilterRule extends Shape
 {
     /**
      * @param array{
-     *     Name?: 'Prefix'|'Suffix',
-     *     Value?: string
+     *     Name?: 'Prefix'|'Suffix'|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

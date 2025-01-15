@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\GetVectorEnrichmentJob\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property VectorEnrichmentJobS3Data $S3Data
+ * @property VectorEnrichmentJobS3Data|null $S3Data
  */
 class VectorEnrichmentJobDataSourceConfigInput extends Shape
 {
     /**
-     * @param array{S3Data?: VectorEnrichmentJobS3Data} $args
+     * @param array{S3Data?: VectorEnrichmentJobS3Data|null} $args
      */
     public function __construct(array $args = [])
     {

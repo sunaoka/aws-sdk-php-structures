@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\Ec2\ExportVerifiedAccessInstanceClientConfigura
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'iam-identity-center'|'oidc' $Type
- * @property string $Scopes
- * @property string $Issuer
- * @property string $AuthorizationEndpoint
- * @property string $PublicSigningKeyEndpoint
- * @property string $TokenEndpoint
- * @property string $UserInfoEndpoint
- * @property string $ClientId
- * @property string $ClientSecret
- * @property bool $PkceEnabled
+ * @property 'iam-identity-center'|'oidc'|null $Type
+ * @property string|null $Scopes
+ * @property string|null $Issuer
+ * @property string|null $AuthorizationEndpoint
+ * @property string|null $PublicSigningKeyEndpoint
+ * @property string|null $TokenEndpoint
+ * @property string|null $UserInfoEndpoint
+ * @property string|null $ClientId
+ * @property string|null $ClientSecret
+ * @property bool|null $PkceEnabled
  */
 class VerifiedAccessInstanceUserTrustProviderClientConfiguration extends Shape
 {
     /**
      * @param array{
-     *     Type?: 'iam-identity-center'|'oidc',
-     *     Scopes?: string,
-     *     Issuer?: string,
-     *     AuthorizationEndpoint?: string,
-     *     PublicSigningKeyEndpoint?: string,
-     *     TokenEndpoint?: string,
-     *     UserInfoEndpoint?: string,
-     *     ClientId?: string,
-     *     ClientSecret?: string,
-     *     PkceEnabled?: bool
+     *     Type?: 'iam-identity-center'|'oidc'|null,
+     *     Scopes?: string|null,
+     *     Issuer?: string|null,
+     *     AuthorizationEndpoint?: string|null,
+     *     PublicSigningKeyEndpoint?: string|null,
+     *     TokenEndpoint?: string|null,
+     *     UserInfoEndpoint?: string|null,
+     *     ClientId?: string|null,
+     *     ClientSecret?: string|null,
+     *     PkceEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

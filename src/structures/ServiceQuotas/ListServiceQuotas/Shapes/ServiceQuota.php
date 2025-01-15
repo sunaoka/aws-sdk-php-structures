@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\ServiceQuotas\ListServiceQuotas\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServiceCode
- * @property string $ServiceName
- * @property string $QuotaArn
- * @property string $QuotaCode
- * @property string $QuotaName
- * @property double $Value
- * @property string $Unit
- * @property bool $Adjustable
- * @property bool $GlobalQuota
- * @property MetricInfo $UsageMetric
- * @property QuotaPeriod $Period
- * @property ErrorReason $ErrorReason
- * @property 'ACCOUNT'|'RESOURCE'|'ALL' $QuotaAppliedAtLevel
- * @property QuotaContextInfo $QuotaContext
+ * @property string|null $ServiceCode
+ * @property string|null $ServiceName
+ * @property string|null $QuotaArn
+ * @property string|null $QuotaCode
+ * @property string|null $QuotaName
+ * @property double|null $Value
+ * @property string|null $Unit
+ * @property bool|null $Adjustable
+ * @property bool|null $GlobalQuota
+ * @property MetricInfo|null $UsageMetric
+ * @property QuotaPeriod|null $Period
+ * @property ErrorReason|null $ErrorReason
+ * @property 'ACCOUNT'|'RESOURCE'|'ALL'|null $QuotaAppliedAtLevel
+ * @property QuotaContextInfo|null $QuotaContext
  */
 class ServiceQuota extends Shape
 {
     /**
      * @param array{
-     *     ServiceCode?: string,
-     *     ServiceName?: string,
-     *     QuotaArn?: string,
-     *     QuotaCode?: string,
-     *     QuotaName?: string,
-     *     Value?: double,
-     *     Unit?: string,
-     *     Adjustable?: bool,
-     *     GlobalQuota?: bool,
-     *     UsageMetric?: MetricInfo,
-     *     Period?: QuotaPeriod,
-     *     ErrorReason?: ErrorReason,
-     *     QuotaAppliedAtLevel?: 'ACCOUNT'|'RESOURCE'|'ALL',
-     *     QuotaContext?: QuotaContextInfo
+     *     ServiceCode?: string|null,
+     *     ServiceName?: string|null,
+     *     QuotaArn?: string|null,
+     *     QuotaCode?: string|null,
+     *     QuotaName?: string|null,
+     *     Value?: double|null,
+     *     Unit?: string|null,
+     *     Adjustable?: bool|null,
+     *     GlobalQuota?: bool|null,
+     *     UsageMetric?: MetricInfo|null,
+     *     Period?: QuotaPeriod|null,
+     *     ErrorReason?: ErrorReason|null,
+     *     QuotaAppliedAtLevel?: 'ACCOUNT'|'RESOURCE'|'ALL'|null,
+     *     QuotaContext?: QuotaContextInfo|null
      * } $args
      */
     public function __construct(array $args = [])

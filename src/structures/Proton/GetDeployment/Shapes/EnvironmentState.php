@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Proton\GetDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $spec
+ * @property string|null $spec
  * @property string $templateMajorVersion
  * @property string $templateMinorVersion
  * @property string $templateName
@@ -14,7 +14,7 @@ class EnvironmentState extends Shape
 {
     /**
      * @param array{
-     *     spec?: string,
+     *     spec?: string|null,
      *     templateMajorVersion: string,
      *     templateMinorVersion: string,
      *     templateName: string

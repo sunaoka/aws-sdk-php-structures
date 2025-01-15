@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property int $Quantity
- * @property list<QueryArgProfile> $Items
+ * @property list<QueryArgProfile>|null $Items
  */
 class QueryArgProfiles extends Shape
 {
     /**
      * @param array{
      *     Quantity: int,
-     *     Items?: list<QueryArgProfile>
+     *     Items?: list<QueryArgProfile>|null
      * } $args
      */
     public function __construct(array $args)

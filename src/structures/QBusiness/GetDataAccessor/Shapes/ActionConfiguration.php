@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $action
- * @property ActionFilterConfiguration $filterConfiguration
+ * @property ActionFilterConfiguration|null $filterConfiguration
  */
 class ActionConfiguration extends Shape
 {
     /**
      * @param array{
      *     action: string,
-     *     filterConfiguration?: ActionFilterConfiguration
+     *     filterConfiguration?: ActionFilterConfiguration|null
      * } $args
      */
     public function __construct(array $args)

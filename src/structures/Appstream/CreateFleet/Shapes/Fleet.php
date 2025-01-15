@@ -7,29 +7,29 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Arn
  * @property string $Name
- * @property string $DisplayName
- * @property string $Description
- * @property string $ImageName
- * @property string $ImageArn
+ * @property string|null $DisplayName
+ * @property string|null $Description
+ * @property string|null $ImageName
+ * @property string|null $ImageArn
  * @property string $InstanceType
- * @property 'ALWAYS_ON'|'ON_DEMAND'|'ELASTIC' $FleetType
+ * @property 'ALWAYS_ON'|'ON_DEMAND'|'ELASTIC'|null $FleetType
  * @property ComputeCapacityStatus $ComputeCapacityStatus
- * @property int $MaxUserDurationInSeconds
- * @property int $DisconnectTimeoutInSeconds
+ * @property int|null $MaxUserDurationInSeconds
+ * @property int|null $DisconnectTimeoutInSeconds
  * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED' $State
- * @property VpcConfig $VpcConfig
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property list<FleetError> $FleetErrors
- * @property bool $EnableDefaultInternetAccess
- * @property DomainJoinInfo $DomainJoinInfo
- * @property int $IdleDisconnectTimeoutInSeconds
- * @property string $IamRoleArn
- * @property 'APP'|'DESKTOP' $StreamView
- * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8' $Platform
- * @property int $MaxConcurrentSessions
- * @property list<string> $UsbDeviceFilterStrings
- * @property S3Location $SessionScriptS3Location
- * @property int $MaxSessionsPerInstance
+ * @property VpcConfig|null $VpcConfig
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property list<FleetError>|null $FleetErrors
+ * @property bool|null $EnableDefaultInternetAccess
+ * @property DomainJoinInfo|null $DomainJoinInfo
+ * @property int|null $IdleDisconnectTimeoutInSeconds
+ * @property string|null $IamRoleArn
+ * @property 'APP'|'DESKTOP'|null $StreamView
+ * @property 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|null $Platform
+ * @property int|null $MaxConcurrentSessions
+ * @property list<string>|null $UsbDeviceFilterStrings
+ * @property S3Location|null $SessionScriptS3Location
+ * @property int|null $MaxSessionsPerInstance
  */
 class Fleet extends Shape
 {
@@ -37,29 +37,29 @@ class Fleet extends Shape
      * @param array{
      *     Arn: string,
      *     Name: string,
-     *     DisplayName?: string,
-     *     Description?: string,
-     *     ImageName?: string,
-     *     ImageArn?: string,
+     *     DisplayName?: string|null,
+     *     Description?: string|null,
+     *     ImageName?: string|null,
+     *     ImageArn?: string|null,
      *     InstanceType: string,
-     *     FleetType?: 'ALWAYS_ON'|'ON_DEMAND'|'ELASTIC',
+     *     FleetType?: 'ALWAYS_ON'|'ON_DEMAND'|'ELASTIC'|null,
      *     ComputeCapacityStatus: ComputeCapacityStatus,
-     *     MaxUserDurationInSeconds?: int,
-     *     DisconnectTimeoutInSeconds?: int,
+     *     MaxUserDurationInSeconds?: int|null,
+     *     DisconnectTimeoutInSeconds?: int|null,
      *     State: 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED',
-     *     VpcConfig?: VpcConfig,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     FleetErrors?: list<FleetError>,
-     *     EnableDefaultInternetAccess?: bool,
-     *     DomainJoinInfo?: DomainJoinInfo,
-     *     IdleDisconnectTimeoutInSeconds?: int,
-     *     IamRoleArn?: string,
-     *     StreamView?: 'APP'|'DESKTOP',
-     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8',
-     *     MaxConcurrentSessions?: int,
-     *     UsbDeviceFilterStrings?: list<string>,
-     *     SessionScriptS3Location?: S3Location,
-     *     MaxSessionsPerInstance?: int
+     *     VpcConfig?: VpcConfig|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     FleetErrors?: list<FleetError>|null,
+     *     EnableDefaultInternetAccess?: bool|null,
+     *     DomainJoinInfo?: DomainJoinInfo|null,
+     *     IdleDisconnectTimeoutInSeconds?: int|null,
+     *     IamRoleArn?: string|null,
+     *     StreamView?: 'APP'|'DESKTOP'|null,
+     *     Platform?: 'WINDOWS'|'WINDOWS_SERVER_2016'|'WINDOWS_SERVER_2019'|'WINDOWS_SERVER_2022'|'AMAZON_LINUX2'|'RHEL8'|'ROCKY_LINUX8'|null,
+     *     MaxConcurrentSessions?: int|null,
+     *     UsbDeviceFilterStrings?: list<string>|null,
+     *     SessionScriptS3Location?: S3Location|null,
+     *     MaxSessionsPerInstance?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\ServiceDiscovery\CreateService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Arn
- * @property string $Name
- * @property string $NamespaceId
- * @property string $Description
- * @property int $InstanceCount
- * @property DnsConfig $DnsConfig
- * @property 'HTTP'|'DNS_HTTP'|'DNS' $Type
- * @property HealthCheckConfig $HealthCheckConfig
- * @property HealthCheckCustomConfig $HealthCheckCustomConfig
- * @property \Aws\Api\DateTimeResult $CreateDate
- * @property string $CreatorRequestId
+ * @property string|null $Id
+ * @property string|null $Arn
+ * @property string|null $Name
+ * @property string|null $NamespaceId
+ * @property string|null $Description
+ * @property int|null $InstanceCount
+ * @property DnsConfig|null $DnsConfig
+ * @property 'HTTP'|'DNS_HTTP'|'DNS'|null $Type
+ * @property HealthCheckConfig|null $HealthCheckConfig
+ * @property HealthCheckCustomConfig|null $HealthCheckCustomConfig
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
+ * @property string|null $CreatorRequestId
  */
 class Service extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Arn?: string,
-     *     Name?: string,
-     *     NamespaceId?: string,
-     *     Description?: string,
-     *     InstanceCount?: int,
-     *     DnsConfig?: DnsConfig,
-     *     Type?: 'HTTP'|'DNS_HTTP'|'DNS',
-     *     HealthCheckConfig?: HealthCheckConfig,
-     *     HealthCheckCustomConfig?: HealthCheckCustomConfig,
-     *     CreateDate?: \Aws\Api\DateTimeResult,
-     *     CreatorRequestId?: string
+     *     Id?: string|null,
+     *     Arn?: string|null,
+     *     Name?: string|null,
+     *     NamespaceId?: string|null,
+     *     Description?: string|null,
+     *     InstanceCount?: int|null,
+     *     DnsConfig?: DnsConfig|null,
+     *     Type?: 'HTTP'|'DNS_HTTP'|'DNS'|null,
+     *     HealthCheckConfig?: HealthCheckConfig|null,
+     *     HealthCheckCustomConfig?: HealthCheckCustomConfig|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null,
+     *     CreatorRequestId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $layerHash
  * @property string $repository
  * @property string $resourceId
- * @property SeverityCounts $severityCounts
+ * @property SeverityCounts|null $severityCounts
  */
 class ImageLayerAggregationResponse extends Shape
 {
@@ -19,7 +19,7 @@ class ImageLayerAggregationResponse extends Shape
      *     layerHash: string,
      *     repository: string,
      *     resourceId: string,
-     *     severityCounts?: SeverityCounts
+     *     severityCounts?: SeverityCounts|null
      * } $args
      */
     public function __construct(array $args)

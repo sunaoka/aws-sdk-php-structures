@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $bucket
  * @property string $key
- * @property GlueConfiguration $glueConfiguration
+ * @property GlueConfiguration|null $glueConfiguration
  * @property string $roleArn
  */
 class S3DestinationConfiguration extends Shape
@@ -16,7 +16,7 @@ class S3DestinationConfiguration extends Shape
      * @param array{
      *     bucket: string,
      *     key: string,
-     *     glueConfiguration?: GlueConfiguration,
+     *     glueConfiguration?: GlueConfiguration|null,
      *     roleArn: string
      * } $args
      */

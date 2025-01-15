@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\ListWorkerConfigurations;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\WorkerConfigurationSummary> $workerConfigurations
+ * @property string|null $nextToken
+ * @property list<Shapes\WorkerConfigurationSummary>|null $workerConfigurations
  */
 class ListWorkerConfigurationsResponse extends Response
 {

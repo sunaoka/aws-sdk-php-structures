@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $name
- * @property string $description
+ * @property string|null $description
  * @property string $modelManifestArn
- * @property list<Shapes\SignalDecoder> $signalDecoders
- * @property list<Shapes\NetworkInterface> $networkInterfaces
- * @property 'CUSTOM_DECODING' $defaultForUnmappedSignals
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\SignalDecoder>|null $signalDecoders
+ * @property list<Shapes\NetworkInterface>|null $networkInterfaces
+ * @property 'CUSTOM_DECODING'|null $defaultForUnmappedSignals
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateDecoderManifestRequest extends Request
 {
     /**
      * @param array{
      *     name: string,
-     *     description?: string,
+     *     description?: string|null,
      *     modelManifestArn: string,
-     *     signalDecoders?: list<Shapes\SignalDecoder>,
-     *     networkInterfaces?: list<Shapes\NetworkInterface>,
-     *     defaultForUnmappedSignals?: 'CUSTOM_DECODING',
-     *     tags?: list<Shapes\Tag>
+     *     signalDecoders?: list<Shapes\SignalDecoder>|null,
+     *     networkInterfaces?: list<Shapes\NetworkInterface>|null,
+     *     defaultForUnmappedSignals?: 'CUSTOM_DECODING'|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

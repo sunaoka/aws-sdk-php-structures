@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $serviceCode
  * @property string $usageType
  * @property string $operation
- * @property string $location
+ * @property string|null $location
  * @property string $usageAccountId
  * @property BillInterval $billInterval
  * @property Expression $filterExpression
@@ -20,7 +20,7 @@ class HistoricalUsageEntity extends Shape
      *     serviceCode: string,
      *     usageType: string,
      *     operation: string,
-     *     location?: string,
+     *     location?: string|null,
      *     usageAccountId: string,
      *     billInterval: BillInterval,
      *     filterExpression: Expression

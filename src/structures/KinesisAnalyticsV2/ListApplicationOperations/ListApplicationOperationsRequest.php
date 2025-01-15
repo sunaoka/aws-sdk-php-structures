@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ApplicationName
- * @property int<1, 50> $Limit
- * @property string $NextToken
- * @property string $Operation
- * @property 'IN_PROGRESS'|'CANCELLED'|'SUCCESSFUL'|'FAILED' $OperationStatus
+ * @property int<1, 50>|null $Limit
+ * @property string|null $NextToken
+ * @property string|null $Operation
+ * @property 'IN_PROGRESS'|'CANCELLED'|'SUCCESSFUL'|'FAILED'|null $OperationStatus
  */
 class ListApplicationOperationsRequest extends Request
 {
     /**
      * @param array{
      *     ApplicationName: string,
-     *     Limit?: int<1, 50>,
-     *     NextToken?: string,
-     *     Operation?: string,
-     *     OperationStatus?: 'IN_PROGRESS'|'CANCELLED'|'SUCCESSFUL'|'FAILED'
+     *     Limit?: int<1, 50>|null,
+     *     NextToken?: string|null,
+     *     Operation?: string|null,
+     *     OperationStatus?: 'IN_PROGRESS'|'CANCELLED'|'SUCCESSFUL'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args)

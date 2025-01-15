@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateDashboard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<MeasureField> $Values
+ * @property list<MeasureField>|null $Values
  */
 class HistogramAggregatedFieldWells extends Shape
 {
     /**
-     * @param array{Values?: list<MeasureField>} $args
+     * @param array{Values?: list<MeasureField>|null} $args
      */
     public function __construct(array $args = [])
     {

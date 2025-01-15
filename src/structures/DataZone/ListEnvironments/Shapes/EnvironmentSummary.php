@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\DataZone\ListEnvironments\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $awsAccountId
- * @property string $awsAccountRegion
- * @property \Aws\Api\DateTimeResult $createdAt
+ * @property string|null $awsAccountId
+ * @property string|null $awsAccountRegion
+ * @property \Aws\Api\DateTimeResult|null $createdAt
  * @property string $createdBy
- * @property string $description
+ * @property string|null $description
  * @property string $domainId
- * @property string $environmentProfileId
- * @property string $id
+ * @property string|null $environmentProfileId
+ * @property string|null $id
  * @property string $name
  * @property string $projectId
  * @property string $provider
- * @property 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'VALIDATION_FAILED'|'SUSPENDED'|'DISABLED'|'EXPIRED'|'DELETED'|'INACCESSIBLE' $status
- * @property \Aws\Api\DateTimeResult $updatedAt
+ * @property 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'VALIDATION_FAILED'|'SUSPENDED'|'DISABLED'|'EXPIRED'|'DELETED'|'INACCESSIBLE'|null $status
+ * @property \Aws\Api\DateTimeResult|null $updatedAt
  */
 class EnvironmentSummary extends Shape
 {
     /**
      * @param array{
-     *     awsAccountId?: string,
-     *     awsAccountRegion?: string,
-     *     createdAt?: \Aws\Api\DateTimeResult,
+     *     awsAccountId?: string|null,
+     *     awsAccountRegion?: string|null,
+     *     createdAt?: \Aws\Api\DateTimeResult|null,
      *     createdBy: string,
-     *     description?: string,
+     *     description?: string|null,
      *     domainId: string,
-     *     environmentProfileId?: string,
-     *     id?: string,
+     *     environmentProfileId?: string|null,
+     *     id?: string|null,
      *     name: string,
      *     projectId: string,
      *     provider: string,
-     *     status?: 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'VALIDATION_FAILED'|'SUSPENDED'|'DISABLED'|'EXPIRED'|'DELETED'|'INACCESSIBLE',
-     *     updatedAt?: \Aws\Api\DateTimeResult
+     *     status?: 'ACTIVE'|'CREATING'|'UPDATING'|'DELETING'|'CREATE_FAILED'|'UPDATE_FAILED'|'DELETE_FAILED'|'VALIDATION_FAILED'|'SUSPENDED'|'DISABLED'|'EXPIRED'|'DELETED'|'INACCESSIBLE'|null,
+     *     updatedAt?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domain
- * @property string $domainOwner
- * @property string $policyRevision
+ * @property string|null $domainOwner
+ * @property string|null $policyRevision
  * @property string $policyDocument
  */
 class PutDomainPermissionsPolicyRequest extends Request
@@ -15,8 +15,8 @@ class PutDomainPermissionsPolicyRequest extends Request
     /**
      * @param array{
      *     domain: string,
-     *     domainOwner?: string,
-     *     policyRevision?: string,
+     *     domainOwner?: string|null,
+     *     policyRevision?: string|null,
      *     policyDocument: string
      * } $args
      */

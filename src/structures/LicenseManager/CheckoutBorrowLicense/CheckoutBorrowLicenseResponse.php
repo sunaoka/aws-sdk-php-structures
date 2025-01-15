@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\LicenseManager\CheckoutBorrowLicense;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $LicenseArn
- * @property string $LicenseConsumptionToken
- * @property list<Shapes\EntitlementData> $EntitlementsAllowed
- * @property string $NodeId
- * @property string $SignedToken
- * @property string $IssuedAt
- * @property string $Expiration
- * @property list<Shapes\Metadata> $CheckoutMetadata
+ * @property string|null $LicenseArn
+ * @property string|null $LicenseConsumptionToken
+ * @property list<Shapes\EntitlementData>|null $EntitlementsAllowed
+ * @property string|null $NodeId
+ * @property string|null $SignedToken
+ * @property string|null $IssuedAt
+ * @property string|null $Expiration
+ * @property list<Shapes\Metadata>|null $CheckoutMetadata
  */
 class CheckoutBorrowLicenseResponse extends Response
 {

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ForecastService\GetAccuracyMetrics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Quantile
- * @property double $LossValue
+ * @property double|null $Quantile
+ * @property double|null $LossValue
  */
 class WeightedQuantileLoss extends Shape
 {
     /**
      * @param array{
-     *     Quantile?: double,
-     *     LossValue?: double
+     *     Quantile?: double|null,
+     *     LossValue?: double|null
      * } $args
      */
     public function __construct(array $args = [])

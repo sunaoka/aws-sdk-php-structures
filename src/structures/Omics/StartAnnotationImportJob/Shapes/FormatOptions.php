@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Omics\StartAnnotationImportJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TsvOptions $tsvOptions
- * @property VcfOptions $vcfOptions
+ * @property TsvOptions|null $tsvOptions
+ * @property VcfOptions|null $vcfOptions
  */
 class FormatOptions extends Shape
 {
     /**
      * @param array{
-     *     tsvOptions?: TsvOptions,
-     *     vcfOptions?: VcfOptions
+     *     tsvOptions?: TsvOptions|null,
+     *     vcfOptions?: VcfOptions|null
      * } $args
      */
     public function __construct(array $args = [])

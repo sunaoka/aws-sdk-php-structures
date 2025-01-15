@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property ExecutorConfiguration $configuration
  * @property 'JobWorker'|'Lambda' $type
- * @property string $policyStatementsTemplate
- * @property int<60, 43200> $jobTimeout
+ * @property string|null $policyStatementsTemplate
+ * @property int<60, 43200>|null $jobTimeout
  */
 class ActionTypeExecutor extends Shape
 {
@@ -16,8 +16,8 @@ class ActionTypeExecutor extends Shape
      * @param array{
      *     configuration: ExecutorConfiguration,
      *     type: 'JobWorker'|'Lambda',
-     *     policyStatementsTemplate?: string,
-     *     jobTimeout?: int<60, 43200>
+     *     policyStatementsTemplate?: string|null,
+     *     jobTimeout?: int<60, 43200>|null
      * } $args
      */
     public function __construct(array $args)

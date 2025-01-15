@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\BackupSearch\ListSearchJobResults\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BackupResourceArn
- * @property string $SourceResourceArn
- * @property string $BackupVaultName
- * @property string $FileSystemIdentifier
- * @property string $FilePath
- * @property int $FileSize
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $BackupResourceArn
+ * @property string|null $SourceResourceArn
+ * @property string|null $BackupVaultName
+ * @property string|null $FileSystemIdentifier
+ * @property string|null $FilePath
+ * @property int|null $FileSize
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class EBSResultItem extends Shape
 {
     /**
      * @param array{
-     *     BackupResourceArn?: string,
-     *     SourceResourceArn?: string,
-     *     BackupVaultName?: string,
-     *     FileSystemIdentifier?: string,
-     *     FilePath?: string,
-     *     FileSize?: int,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     BackupResourceArn?: string|null,
+     *     SourceResourceArn?: string|null,
+     *     BackupVaultName?: string|null,
+     *     FileSystemIdentifier?: string|null,
+     *     FilePath?: string|null,
+     *     FileSize?: int|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

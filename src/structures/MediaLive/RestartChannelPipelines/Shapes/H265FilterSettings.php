@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\RestartChannelPipelines\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TemporalFilterSettings $TemporalFilterSettings
- * @property BandwidthReductionFilterSettings $BandwidthReductionFilterSettings
+ * @property TemporalFilterSettings|null $TemporalFilterSettings
+ * @property BandwidthReductionFilterSettings|null $BandwidthReductionFilterSettings
  */
 class H265FilterSettings extends Shape
 {
     /**
      * @param array{
-     *     TemporalFilterSettings?: TemporalFilterSettings,
-     *     BandwidthReductionFilterSettings?: BandwidthReductionFilterSettings
+     *     TemporalFilterSettings?: TemporalFilterSettings|null,
+     *     BandwidthReductionFilterSettings?: BandwidthReductionFilterSettings|null
      * } $args
      */
     public function __construct(array $args = [])

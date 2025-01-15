@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $name
- * @property string $input
- * @property HistoryEventExecutionDataDetails $inputDetails
+ * @property string|null $input
+ * @property HistoryEventExecutionDataDetails|null $inputDetails
  */
 class StateEnteredEventDetails extends Shape
 {
     /**
      * @param array{
      *     name: string,
-     *     input?: string,
-     *     inputDetails?: HistoryEventExecutionDataDetails
+     *     input?: string|null,
+     *     inputDetails?: HistoryEventExecutionDataDetails|null
      * } $args
      */
     public function __construct(array $args)

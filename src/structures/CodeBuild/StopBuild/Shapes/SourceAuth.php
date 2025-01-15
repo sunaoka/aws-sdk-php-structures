@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'OAUTH'|'CODECONNECTIONS'|'SECRETS_MANAGER' $type
- * @property string $resource
+ * @property string|null $resource
  */
 class SourceAuth extends Shape
 {
     /**
      * @param array{
      *     type: 'OAUTH'|'CODECONNECTIONS'|'SECRETS_MANAGER',
-     *     resource?: string
+     *     resource?: string|null
      * } $args
      */
     public function __construct(array $args)

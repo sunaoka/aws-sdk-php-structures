@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property Shapes\ElasticsearchDomainConfig $DomainConfig
- * @property Shapes\DryRunResults $DryRunResults
+ * @property Shapes\DryRunResults|null $DryRunResults
  */
 class UpdateElasticsearchDomainConfigResponse extends Response
 {

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateMonitoringSchedule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ScheduleConfig $ScheduleConfig
- * @property MonitoringJobDefinition $MonitoringJobDefinition
- * @property string $MonitoringJobDefinitionName
- * @property 'DataQuality'|'ModelQuality'|'ModelBias'|'ModelExplainability' $MonitoringType
+ * @property ScheduleConfig|null $ScheduleConfig
+ * @property MonitoringJobDefinition|null $MonitoringJobDefinition
+ * @property string|null $MonitoringJobDefinitionName
+ * @property 'DataQuality'|'ModelQuality'|'ModelBias'|'ModelExplainability'|null $MonitoringType
  */
 class MonitoringScheduleConfig extends Shape
 {
     /**
      * @param array{
-     *     ScheduleConfig?: ScheduleConfig,
-     *     MonitoringJobDefinition?: MonitoringJobDefinition,
-     *     MonitoringJobDefinitionName?: string,
-     *     MonitoringType?: 'DataQuality'|'ModelQuality'|'ModelBias'|'ModelExplainability'
+     *     ScheduleConfig?: ScheduleConfig|null,
+     *     MonitoringJobDefinition?: MonitoringJobDefinition|null,
+     *     MonitoringJobDefinitionName?: string|null,
+     *     MonitoringType?: 'DataQuality'|'ModelQuality'|'ModelBias'|'ModelExplainability'|null
      * } $args
      */
     public function __construct(array $args = [])

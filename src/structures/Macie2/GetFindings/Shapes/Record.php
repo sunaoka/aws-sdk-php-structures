@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $jsonPath
- * @property int $recordIndex
+ * @property string|null $jsonPath
+ * @property int|null $recordIndex
  */
 class Record extends Shape
 {
     /**
      * @param array{
-     *     jsonPath?: string,
-     *     recordIndex?: int
+     *     jsonPath?: string|null,
+     *     recordIndex?: int|null
      * } $args
      */
     public function __construct(array $args = [])

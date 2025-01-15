@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AmplifyBackend\CreateBackendAuth\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ClientId
- * @property string $ClientSecret
+ * @property string|null $ClientId
+ * @property string|null $ClientSecret
  */
 class BackendAuthSocialProviderConfig extends Shape
 {
     /**
      * @param array{
-     *     ClientId?: string,
-     *     ClientSecret?: string
+     *     ClientId?: string|null,
+     *     ClientSecret?: string|null
      * } $args
      */
     public function __construct(array $args = [])

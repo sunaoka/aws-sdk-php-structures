@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $destinationPhoneNumber
- * @property string $connectSourcePhoneNumberArn
- * @property string $templateArn
+ * @property string|null $connectSourcePhoneNumberArn
+ * @property string|null $templateArn
  * @property array<string, string> $templateParameters
  */
 class SmsChannelSubtypeParameters extends Shape
@@ -15,8 +15,8 @@ class SmsChannelSubtypeParameters extends Shape
     /**
      * @param array{
      *     destinationPhoneNumber: string,
-     *     connectSourcePhoneNumberArn?: string,
-     *     templateArn?: string,
+     *     connectSourcePhoneNumberArn?: string|null,
+     *     templateArn?: string|null,
      *     templateParameters: array<string, string>
      * } $args
      */

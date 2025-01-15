@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\drs\UpdateLaunchConfiguration;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $copyPrivateIp
- * @property bool $copyTags
- * @property 'STOPPED'|'STARTED' $launchDisposition
- * @property Shapes\LaunchIntoInstanceProperties $launchIntoInstanceProperties
- * @property Shapes\Licensing $licensing
- * @property string $name
- * @property bool $postLaunchEnabled
+ * @property bool|null $copyPrivateIp
+ * @property bool|null $copyTags
+ * @property 'STOPPED'|'STARTED'|null $launchDisposition
+ * @property Shapes\LaunchIntoInstanceProperties|null $launchIntoInstanceProperties
+ * @property Shapes\Licensing|null $licensing
+ * @property string|null $name
+ * @property bool|null $postLaunchEnabled
  * @property string $sourceServerID
- * @property 'NONE'|'BASIC'|'IN_AWS' $targetInstanceTypeRightSizingMethod
+ * @property 'NONE'|'BASIC'|'IN_AWS'|null $targetInstanceTypeRightSizingMethod
  */
 class UpdateLaunchConfigurationRequest extends Request
 {
     /**
      * @param array{
-     *     copyPrivateIp?: bool,
-     *     copyTags?: bool,
-     *     launchDisposition?: 'STOPPED'|'STARTED',
-     *     launchIntoInstanceProperties?: Shapes\LaunchIntoInstanceProperties,
-     *     licensing?: Shapes\Licensing,
-     *     name?: string,
-     *     postLaunchEnabled?: bool,
+     *     copyPrivateIp?: bool|null,
+     *     copyTags?: bool|null,
+     *     launchDisposition?: 'STOPPED'|'STARTED'|null,
+     *     launchIntoInstanceProperties?: Shapes\LaunchIntoInstanceProperties|null,
+     *     licensing?: Shapes\Licensing|null,
+     *     name?: string|null,
+     *     postLaunchEnabled?: bool|null,
      *     sourceServerID: string,
-     *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'|'IN_AWS'
+     *     targetInstanceTypeRightSizingMethod?: 'NONE'|'BASIC'|'IN_AWS'|null
      * } $args
      */
     public function __construct(array $args)

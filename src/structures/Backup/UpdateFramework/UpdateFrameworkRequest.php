@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $FrameworkName
- * @property string $FrameworkDescription
- * @property list<Shapes\FrameworkControl> $FrameworkControls
- * @property string $IdempotencyToken
+ * @property string|null $FrameworkDescription
+ * @property list<Shapes\FrameworkControl>|null $FrameworkControls
+ * @property string|null $IdempotencyToken
  */
 class UpdateFrameworkRequest extends Request
 {
     /**
      * @param array{
      *     FrameworkName: string,
-     *     FrameworkDescription?: string,
-     *     FrameworkControls?: list<Shapes\FrameworkControl>,
-     *     IdempotencyToken?: string
+     *     FrameworkDescription?: string|null,
+     *     FrameworkControls?: list<Shapes\FrameworkControl>|null,
+     *     IdempotencyToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $QueryString
- * @property bool $ValidateOnly
+ * @property bool|null $ValidateOnly
  */
 class PrepareQueryRequest extends Request
 {
     /**
      * @param array{
      *     QueryString: string,
-     *     ValidateOnly?: bool
+     *     ValidateOnly?: bool|null
      * } $args
      */
     public function __construct(array $args)

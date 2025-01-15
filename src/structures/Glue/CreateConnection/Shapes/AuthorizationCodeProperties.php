@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\CreateConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AuthorizationCode
- * @property string $RedirectUri
+ * @property string|null $AuthorizationCode
+ * @property string|null $RedirectUri
  */
 class AuthorizationCodeProperties extends Shape
 {
     /**
      * @param array{
-     *     AuthorizationCode?: string,
-     *     RedirectUri?: string
+     *     AuthorizationCode?: string|null,
+     *     RedirectUri?: string|null
      * } $args
      */
     public function __construct(array $args = [])

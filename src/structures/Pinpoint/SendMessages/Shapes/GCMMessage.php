@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\Pinpoint\SendMessages\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'OPEN_APP'|'DEEP_LINK'|'URL' $Action
- * @property string $Body
- * @property string $CollapseKey
- * @property array<string, string> $Data
- * @property string $IconReference
- * @property string $ImageIconUrl
- * @property string $ImageUrl
- * @property string $PreferredAuthenticationMethod
- * @property string $Priority
- * @property string $RawContent
- * @property string $RestrictedPackageName
- * @property bool $SilentPush
- * @property string $SmallImageIconUrl
- * @property string $Sound
- * @property array<string, list<string>> $Substitutions
- * @property int $TimeToLive
- * @property string $Title
- * @property string $Url
+ * @property 'OPEN_APP'|'DEEP_LINK'|'URL'|null $Action
+ * @property string|null $Body
+ * @property string|null $CollapseKey
+ * @property array<string, string>|null $Data
+ * @property string|null $IconReference
+ * @property string|null $ImageIconUrl
+ * @property string|null $ImageUrl
+ * @property string|null $PreferredAuthenticationMethod
+ * @property string|null $Priority
+ * @property string|null $RawContent
+ * @property string|null $RestrictedPackageName
+ * @property bool|null $SilentPush
+ * @property string|null $SmallImageIconUrl
+ * @property string|null $Sound
+ * @property array<string, list<string>>|null $Substitutions
+ * @property int|null $TimeToLive
+ * @property string|null $Title
+ * @property string|null $Url
  */
 class GCMMessage extends Shape
 {
     /**
      * @param array{
-     *     Action?: 'OPEN_APP'|'DEEP_LINK'|'URL',
-     *     Body?: string,
-     *     CollapseKey?: string,
-     *     Data?: array<string, string>,
-     *     IconReference?: string,
-     *     ImageIconUrl?: string,
-     *     ImageUrl?: string,
-     *     PreferredAuthenticationMethod?: string,
-     *     Priority?: string,
-     *     RawContent?: string,
-     *     RestrictedPackageName?: string,
-     *     SilentPush?: bool,
-     *     SmallImageIconUrl?: string,
-     *     Sound?: string,
-     *     Substitutions?: array<string, list<string>>,
-     *     TimeToLive?: int,
-     *     Title?: string,
-     *     Url?: string
+     *     Action?: 'OPEN_APP'|'DEEP_LINK'|'URL'|null,
+     *     Body?: string|null,
+     *     CollapseKey?: string|null,
+     *     Data?: array<string, string>|null,
+     *     IconReference?: string|null,
+     *     ImageIconUrl?: string|null,
+     *     ImageUrl?: string|null,
+     *     PreferredAuthenticationMethod?: string|null,
+     *     Priority?: string|null,
+     *     RawContent?: string|null,
+     *     RestrictedPackageName?: string|null,
+     *     SilentPush?: bool|null,
+     *     SmallImageIconUrl?: string|null,
+     *     Sound?: string|null,
+     *     Substitutions?: array<string, list<string>>|null,
+     *     TimeToLive?: int|null,
+     *     Title?: string|null,
+     *     Url?: string|null
      * } $args
      */
     public function __construct(array $args = [])

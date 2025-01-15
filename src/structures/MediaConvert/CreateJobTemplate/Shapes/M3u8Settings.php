@@ -5,53 +5,53 @@ namespace Sunaoka\Aws\Structures\MediaConvert\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION' $AudioDuration
- * @property int<0, 2147483647> $AudioFramesPerPes
- * @property list<int<32, 8182>> $AudioPids
- * @property 'AUTO'|'ALIGN_TO_VIDEO' $DataPTSControl
- * @property int<0, 500> $MaxPcrInterval
- * @property 'INSERT'|'NONE' $NielsenId3
- * @property int<0, 1000> $PatInterval
- * @property 'PCR_EVERY_PES_PACKET'|'CONFIGURED_PCR_PERIOD' $PcrControl
- * @property int<32, 8182> $PcrPid
- * @property int<0, 1000> $PmtInterval
- * @property int<32, 8182> $PmtPid
- * @property int<32, 8182> $PrivateMetadataPid
- * @property int<0, 65535> $ProgramNumber
- * @property int<0, 3600> $PtsOffset
- * @property 'AUTO'|'SECONDS' $PtsOffsetMode
- * @property int<32, 8182> $Scte35Pid
- * @property 'PASSTHROUGH'|'NONE' $Scte35Source
- * @property 'PASSTHROUGH'|'NONE' $TimedMetadata
- * @property int<32, 8182> $TimedMetadataPid
- * @property int<0, 65535> $TransportStreamId
- * @property int<32, 8182> $VideoPid
+ * @property 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null $AudioDuration
+ * @property int<0, 2147483647>|null $AudioFramesPerPes
+ * @property list<int<32, 8182>>|null $AudioPids
+ * @property 'AUTO'|'ALIGN_TO_VIDEO'|null $DataPTSControl
+ * @property int<0, 500>|null $MaxPcrInterval
+ * @property 'INSERT'|'NONE'|null $NielsenId3
+ * @property int<0, 1000>|null $PatInterval
+ * @property 'PCR_EVERY_PES_PACKET'|'CONFIGURED_PCR_PERIOD'|null $PcrControl
+ * @property int<32, 8182>|null $PcrPid
+ * @property int<0, 1000>|null $PmtInterval
+ * @property int<32, 8182>|null $PmtPid
+ * @property int<32, 8182>|null $PrivateMetadataPid
+ * @property int<0, 65535>|null $ProgramNumber
+ * @property int<0, 3600>|null $PtsOffset
+ * @property 'AUTO'|'SECONDS'|null $PtsOffsetMode
+ * @property int<32, 8182>|null $Scte35Pid
+ * @property 'PASSTHROUGH'|'NONE'|null $Scte35Source
+ * @property 'PASSTHROUGH'|'NONE'|null $TimedMetadata
+ * @property int<32, 8182>|null $TimedMetadataPid
+ * @property int<0, 65535>|null $TransportStreamId
+ * @property int<32, 8182>|null $VideoPid
  */
 class M3u8Settings extends Shape
 {
     /**
      * @param array{
-     *     AudioDuration?: 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION',
-     *     AudioFramesPerPes?: int<0, 2147483647>,
-     *     AudioPids?: list<int<32, 8182>>,
-     *     DataPTSControl?: 'AUTO'|'ALIGN_TO_VIDEO',
-     *     MaxPcrInterval?: int<0, 500>,
-     *     NielsenId3?: 'INSERT'|'NONE',
-     *     PatInterval?: int<0, 1000>,
-     *     PcrControl?: 'PCR_EVERY_PES_PACKET'|'CONFIGURED_PCR_PERIOD',
-     *     PcrPid?: int<32, 8182>,
-     *     PmtInterval?: int<0, 1000>,
-     *     PmtPid?: int<32, 8182>,
-     *     PrivateMetadataPid?: int<32, 8182>,
-     *     ProgramNumber?: int<0, 65535>,
-     *     PtsOffset?: int<0, 3600>,
-     *     PtsOffsetMode?: 'AUTO'|'SECONDS',
-     *     Scte35Pid?: int<32, 8182>,
-     *     Scte35Source?: 'PASSTHROUGH'|'NONE',
-     *     TimedMetadata?: 'PASSTHROUGH'|'NONE',
-     *     TimedMetadataPid?: int<32, 8182>,
-     *     TransportStreamId?: int<0, 65535>,
-     *     VideoPid?: int<32, 8182>
+     *     AudioDuration?: 'DEFAULT_CODEC_DURATION'|'MATCH_VIDEO_DURATION'|null,
+     *     AudioFramesPerPes?: int<0, 2147483647>|null,
+     *     AudioPids?: list<int<32, 8182>>|null,
+     *     DataPTSControl?: 'AUTO'|'ALIGN_TO_VIDEO'|null,
+     *     MaxPcrInterval?: int<0, 500>|null,
+     *     NielsenId3?: 'INSERT'|'NONE'|null,
+     *     PatInterval?: int<0, 1000>|null,
+     *     PcrControl?: 'PCR_EVERY_PES_PACKET'|'CONFIGURED_PCR_PERIOD'|null,
+     *     PcrPid?: int<32, 8182>|null,
+     *     PmtInterval?: int<0, 1000>|null,
+     *     PmtPid?: int<32, 8182>|null,
+     *     PrivateMetadataPid?: int<32, 8182>|null,
+     *     ProgramNumber?: int<0, 65535>|null,
+     *     PtsOffset?: int<0, 3600>|null,
+     *     PtsOffsetMode?: 'AUTO'|'SECONDS'|null,
+     *     Scte35Pid?: int<32, 8182>|null,
+     *     Scte35Source?: 'PASSTHROUGH'|'NONE'|null,
+     *     TimedMetadata?: 'PASSTHROUGH'|'NONE'|null,
+     *     TimedMetadataPid?: int<32, 8182>|null,
+     *     TransportStreamId?: int<0, 65535>|null,
+     *     VideoPid?: int<32, 8182>|null
      * } $args
      */
     public function __construct(array $args = [])

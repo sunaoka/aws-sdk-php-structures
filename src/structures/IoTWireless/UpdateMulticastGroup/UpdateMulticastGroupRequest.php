@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $Name
- * @property string $Description
- * @property Shapes\LoRaWANMulticast $LoRaWAN
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property Shapes\LoRaWANMulticast|null $LoRaWAN
  */
 class UpdateMulticastGroupRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     Name?: string,
-     *     Description?: string,
-     *     LoRaWAN?: Shapes\LoRaWANMulticast
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     LoRaWAN?: Shapes\LoRaWANMulticast|null
      * } $args
      */
     public function __construct(array $args)

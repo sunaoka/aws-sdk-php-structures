@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\ListSolNetworkPackageInfo> $networkPackages
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListSolNetworkPackagesResponse extends Response
 {

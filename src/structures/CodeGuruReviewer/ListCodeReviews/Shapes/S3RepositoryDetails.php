@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeGuruReviewer\ListCodeReviews\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BucketName
- * @property CodeArtifacts $CodeArtifacts
+ * @property string|null $BucketName
+ * @property CodeArtifacts|null $CodeArtifacts
  */
 class S3RepositoryDetails extends Shape
 {
     /**
      * @param array{
-     *     BucketName?: string,
-     *     CodeArtifacts?: CodeArtifacts
+     *     BucketName?: string|null,
+     *     CodeArtifacts?: CodeArtifacts|null
      * } $args
      */
     public function __construct(array $args = [])

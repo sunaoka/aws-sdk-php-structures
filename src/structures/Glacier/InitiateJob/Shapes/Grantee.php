@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'AmazonCustomerByEmail'|'CanonicalUser'|'Group' $Type
- * @property string $DisplayName
- * @property string $URI
- * @property string $ID
- * @property string $EmailAddress
+ * @property string|null $DisplayName
+ * @property string|null $URI
+ * @property string|null $ID
+ * @property string|null $EmailAddress
  */
 class Grantee extends Shape
 {
     /**
      * @param array{
      *     Type: 'AmazonCustomerByEmail'|'CanonicalUser'|'Group',
-     *     DisplayName?: string,
-     *     URI?: string,
-     *     ID?: string,
-     *     EmailAddress?: string
+     *     DisplayName?: string|null,
+     *     URI?: string|null,
+     *     ID?: string|null,
+     *     EmailAddress?: string|null
      * } $args
      */
     public function __construct(array $args)

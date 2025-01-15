@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\DateInterval $TimePeriod
- * @property list<Shapes\GroupDefinition> $GroupBy
- * @property 'DAILY'|'MONTHLY'|'HOURLY' $Granularity
- * @property Shapes\Expression $Filter
- * @property list<string> $Metrics
- * @property string $NextPageToken
- * @property Shapes\SortDefinition $SortBy
- * @property int<1, max> $MaxResults
+ * @property list<Shapes\GroupDefinition>|null $GroupBy
+ * @property 'DAILY'|'MONTHLY'|'HOURLY'|null $Granularity
+ * @property Shapes\Expression|null $Filter
+ * @property list<string>|null $Metrics
+ * @property string|null $NextPageToken
+ * @property Shapes\SortDefinition|null $SortBy
+ * @property int<1, max>|null $MaxResults
  */
 class GetReservationCoverageRequest extends Request
 {
     /**
      * @param array{
      *     TimePeriod: Shapes\DateInterval,
-     *     GroupBy?: list<Shapes\GroupDefinition>,
-     *     Granularity?: 'DAILY'|'MONTHLY'|'HOURLY',
-     *     Filter?: Shapes\Expression,
-     *     Metrics?: list<string>,
-     *     NextPageToken?: string,
-     *     SortBy?: Shapes\SortDefinition,
-     *     MaxResults?: int<1, max>
+     *     GroupBy?: list<Shapes\GroupDefinition>|null,
+     *     Granularity?: 'DAILY'|'MONTHLY'|'HOURLY'|null,
+     *     Filter?: Shapes\Expression|null,
+     *     Metrics?: list<string>|null,
+     *     NextPageToken?: string|null,
+     *     SortBy?: Shapes\SortDefinition|null,
+     *     MaxResults?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args)

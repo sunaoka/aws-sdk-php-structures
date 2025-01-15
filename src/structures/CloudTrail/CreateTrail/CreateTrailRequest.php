@@ -7,16 +7,16 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property string $S3BucketName
- * @property string $S3KeyPrefix
- * @property string $SnsTopicName
- * @property bool $IncludeGlobalServiceEvents
- * @property bool $IsMultiRegionTrail
- * @property bool $EnableLogFileValidation
- * @property string $CloudWatchLogsLogGroupArn
- * @property string $CloudWatchLogsRoleArn
- * @property string $KmsKeyId
- * @property bool $IsOrganizationTrail
- * @property list<Shapes\Tag> $TagsList
+ * @property string|null $S3KeyPrefix
+ * @property string|null $SnsTopicName
+ * @property bool|null $IncludeGlobalServiceEvents
+ * @property bool|null $IsMultiRegionTrail
+ * @property bool|null $EnableLogFileValidation
+ * @property string|null $CloudWatchLogsLogGroupArn
+ * @property string|null $CloudWatchLogsRoleArn
+ * @property string|null $KmsKeyId
+ * @property bool|null $IsOrganizationTrail
+ * @property list<Shapes\Tag>|null $TagsList
  */
 class CreateTrailRequest extends Request
 {
@@ -24,16 +24,16 @@ class CreateTrailRequest extends Request
      * @param array{
      *     Name: string,
      *     S3BucketName: string,
-     *     S3KeyPrefix?: string,
-     *     SnsTopicName?: string,
-     *     IncludeGlobalServiceEvents?: bool,
-     *     IsMultiRegionTrail?: bool,
-     *     EnableLogFileValidation?: bool,
-     *     CloudWatchLogsLogGroupArn?: string,
-     *     CloudWatchLogsRoleArn?: string,
-     *     KmsKeyId?: string,
-     *     IsOrganizationTrail?: bool,
-     *     TagsList?: list<Shapes\Tag>
+     *     S3KeyPrefix?: string|null,
+     *     SnsTopicName?: string|null,
+     *     IncludeGlobalServiceEvents?: bool|null,
+     *     IsMultiRegionTrail?: bool|null,
+     *     EnableLogFileValidation?: bool|null,
+     *     CloudWatchLogsLogGroupArn?: string|null,
+     *     CloudWatchLogsRoleArn?: string|null,
+     *     KmsKeyId?: string|null,
+     *     IsOrganizationTrail?: bool|null,
+     *     TagsList?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

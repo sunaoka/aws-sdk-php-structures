@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Control\DescribeJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $FailureCode
- * @property string $FailureReason
+ * @property string|null $FailureCode
+ * @property string|null $FailureReason
  */
 class JobFailure extends Shape
 {
     /**
      * @param array{
-     *     FailureCode?: string,
-     *     FailureReason?: string
+     *     FailureCode?: string|null,
+     *     FailureReason?: string|null
      * } $args
      */
     public function __construct(array $args = [])

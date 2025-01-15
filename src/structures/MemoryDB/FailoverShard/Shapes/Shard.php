@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MemoryDB\FailoverShard\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Status
- * @property string $Slots
- * @property list<Node> $Nodes
- * @property int $NumberOfNodes
+ * @property string|null $Name
+ * @property string|null $Status
+ * @property string|null $Slots
+ * @property list<Node>|null $Nodes
+ * @property int|null $NumberOfNodes
  */
 class Shard extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Status?: string,
-     *     Slots?: string,
-     *     Nodes?: list<Node>,
-     *     NumberOfNodes?: int
+     *     Name?: string|null,
+     *     Status?: string|null,
+     *     Slots?: string|null,
+     *     Nodes?: list<Node>|null,
+     *     NumberOfNodes?: int|null
      * } $args
      */
     public function __construct(array $args = [])

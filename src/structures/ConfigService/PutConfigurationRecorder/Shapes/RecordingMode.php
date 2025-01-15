@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'CONTINUOUS'|'DAILY' $recordingFrequency
- * @property list<RecordingModeOverride> $recordingModeOverrides
+ * @property list<RecordingModeOverride>|null $recordingModeOverrides
  */
 class RecordingMode extends Shape
 {
     /**
      * @param array{
      *     recordingFrequency: 'CONTINUOUS'|'DAILY',
-     *     recordingModeOverrides?: list<RecordingModeOverride>
+     *     recordingModeOverrides?: list<RecordingModeOverride>|null
      * } $args
      */
     public function __construct(array $args)

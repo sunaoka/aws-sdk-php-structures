@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeArtifact;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $ArtifactName
- * @property string $ArtifactArn
- * @property Shapes\ArtifactSource $Source
- * @property string $ArtifactType
- * @property array<string, string> $Properties
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property Shapes\UserContext $CreatedBy
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property Shapes\UserContext $LastModifiedBy
- * @property Shapes\MetadataProperties $MetadataProperties
- * @property string $LineageGroupArn
+ * @property string|null $ArtifactName
+ * @property string|null $ArtifactArn
+ * @property Shapes\ArtifactSource|null $Source
+ * @property string|null $ArtifactType
+ * @property array<string, string>|null $Properties
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property Shapes\UserContext|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property Shapes\UserContext|null $LastModifiedBy
+ * @property Shapes\MetadataProperties|null $MetadataProperties
+ * @property string|null $LineageGroupArn
  */
 class DescribeArtifactResponse extends Response
 {

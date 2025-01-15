@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\PutLifecycleEventHookExecutionStatus
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $deploymentId
- * @property string $lifecycleEventHookExecutionId
- * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown' $status
+ * @property string|null $deploymentId
+ * @property string|null $lifecycleEventHookExecutionId
+ * @property 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|null $status
  */
 class PutLifecycleEventHookExecutionStatusRequest extends Request
 {
     /**
      * @param array{
-     *     deploymentId?: string,
-     *     lifecycleEventHookExecutionId?: string,
-     *     status?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'
+     *     deploymentId?: string|null,
+     *     lifecycleEventHookExecutionId?: string|null,
+     *     status?: 'Pending'|'InProgress'|'Succeeded'|'Failed'|'Skipped'|'Unknown'|null
      * } $args
      */
     public function __construct(array $args = [])

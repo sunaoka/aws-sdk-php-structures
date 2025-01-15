@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<LocalizedString> $Intersection
- * @property int<1, 12> $RelativeExit
- * @property double $RoundaboutAngle
- * @property 'Left'|'Right'|'Straight' $SteeringDirection
+ * @property int<1, 12>|null $RelativeExit
+ * @property double|null $RoundaboutAngle
+ * @property 'Left'|'Right'|'Straight'|null $SteeringDirection
  */
 class RouteRoundaboutExitStepDetails extends Shape
 {
     /**
      * @param array{
      *     Intersection: list<LocalizedString>,
-     *     RelativeExit?: int<1, 12>,
-     *     RoundaboutAngle?: double,
-     *     SteeringDirection?: 'Left'|'Right'|'Straight'
+     *     RelativeExit?: int<1, 12>|null,
+     *     RoundaboutAngle?: double|null,
+     *     SteeringDirection?: 'Left'|'Right'|'Straight'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\CreateStreamProcessor\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CollectionId
- * @property float $FaceMatchThreshold
+ * @property string|null $CollectionId
+ * @property float|null $FaceMatchThreshold
  */
 class FaceSearchSettings extends Shape
 {
     /**
      * @param array{
-     *     CollectionId?: string,
-     *     FaceMatchThreshold?: float
+     *     CollectionId?: string|null,
+     *     FaceMatchThreshold?: float|null
      * } $args
      */
     public function __construct(array $args = [])

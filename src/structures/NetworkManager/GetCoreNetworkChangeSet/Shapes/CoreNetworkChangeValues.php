@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\NetworkManager\GetCoreNetworkChangeSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SegmentName
- * @property string $NetworkFunctionGroupName
- * @property list<string> $EdgeLocations
- * @property int $Asn
- * @property string $Cidr
- * @property string $DestinationIdentifier
- * @property list<string> $InsideCidrBlocks
- * @property list<string> $SharedSegments
- * @property list<ServiceInsertionAction> $ServiceInsertionActions
+ * @property string|null $SegmentName
+ * @property string|null $NetworkFunctionGroupName
+ * @property list<string>|null $EdgeLocations
+ * @property int|null $Asn
+ * @property string|null $Cidr
+ * @property string|null $DestinationIdentifier
+ * @property list<string>|null $InsideCidrBlocks
+ * @property list<string>|null $SharedSegments
+ * @property list<ServiceInsertionAction>|null $ServiceInsertionActions
  */
 class CoreNetworkChangeValues extends Shape
 {
     /**
      * @param array{
-     *     SegmentName?: string,
-     *     NetworkFunctionGroupName?: string,
-     *     EdgeLocations?: list<string>,
-     *     Asn?: int,
-     *     Cidr?: string,
-     *     DestinationIdentifier?: string,
-     *     InsideCidrBlocks?: list<string>,
-     *     SharedSegments?: list<string>,
-     *     ServiceInsertionActions?: list<ServiceInsertionAction>
+     *     SegmentName?: string|null,
+     *     NetworkFunctionGroupName?: string|null,
+     *     EdgeLocations?: list<string>|null,
+     *     Asn?: int|null,
+     *     Cidr?: string|null,
+     *     DestinationIdentifier?: string|null,
+     *     InsideCidrBlocks?: list<string>|null,
+     *     SharedSegments?: list<string>|null,
+     *     ServiceInsertionActions?: list<ServiceInsertionAction>|null
      * } $args
      */
     public function __construct(array $args = [])

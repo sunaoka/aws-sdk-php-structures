@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $SubnetGroupName
- * @property string $Description
+ * @property string|null $Description
  * @property list<string> $SubnetIds
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateSubnetGroupRequest extends Request
 {
     /**
      * @param array{
      *     SubnetGroupName: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     SubnetIds: list<string>,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

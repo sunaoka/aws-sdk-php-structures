@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ApiGateway\GetDomainNames;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $position
- * @property int $limit
- * @property 'SELF'|'OTHER_ACCOUNTS' $resourceOwner
+ * @property string|null $position
+ * @property int|null $limit
+ * @property 'SELF'|'OTHER_ACCOUNTS'|null $resourceOwner
  */
 class GetDomainNamesRequest extends Request
 {
     /**
      * @param array{
-     *     position?: string,
-     *     limit?: int,
-     *     resourceOwner?: 'SELF'|'OTHER_ACCOUNTS'
+     *     position?: string|null,
+     *     limit?: int|null,
+     *     resourceOwner?: 'SELF'|'OTHER_ACCOUNTS'|null
      * } $args
      */
     public function __construct(array $args = [])

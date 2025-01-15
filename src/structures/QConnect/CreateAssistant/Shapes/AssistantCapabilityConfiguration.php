@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QConnect\CreateAssistant\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'V1'|'V2' $type
+ * @property 'V1'|'V2'|null $type
  */
 class AssistantCapabilityConfiguration extends Shape
 {
     /**
-     * @param array{type?: 'V1'|'V2'} $args
+     * @param array{type?: 'V1'|'V2'|null} $args
      */
     public function __construct(array $args = [])
     {

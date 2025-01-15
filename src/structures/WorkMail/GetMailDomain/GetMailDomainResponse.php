@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\WorkMail\GetMailDomain;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\DnsRecord> $Records
- * @property bool $IsTestDomain
- * @property bool $IsDefault
- * @property 'PENDING'|'VERIFIED'|'FAILED' $OwnershipVerificationStatus
- * @property 'PENDING'|'VERIFIED'|'FAILED' $DkimVerificationStatus
+ * @property list<Shapes\DnsRecord>|null $Records
+ * @property bool|null $IsTestDomain
+ * @property bool|null $IsDefault
+ * @property 'PENDING'|'VERIFIED'|'FAILED'|null $OwnershipVerificationStatus
+ * @property 'PENDING'|'VERIFIED'|'FAILED'|null $DkimVerificationStatus
  */
 class GetMailDomainResponse extends Response
 {

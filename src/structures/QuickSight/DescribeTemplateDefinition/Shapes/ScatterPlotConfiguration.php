@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeTemplateDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ScatterPlotFieldWells $FieldWells
- * @property ScatterPlotSortConfiguration $SortConfiguration
- * @property ChartAxisLabelOptions $XAxisLabelOptions
- * @property AxisDisplayOptions $XAxisDisplayOptions
- * @property ChartAxisLabelOptions $YAxisLabelOptions
- * @property AxisDisplayOptions $YAxisDisplayOptions
- * @property LegendOptions $Legend
- * @property DataLabelOptions $DataLabels
- * @property TooltipOptions $Tooltip
- * @property VisualPalette $VisualPalette
- * @property VisualInteractionOptions $Interactions
+ * @property ScatterPlotFieldWells|null $FieldWells
+ * @property ScatterPlotSortConfiguration|null $SortConfiguration
+ * @property ChartAxisLabelOptions|null $XAxisLabelOptions
+ * @property AxisDisplayOptions|null $XAxisDisplayOptions
+ * @property ChartAxisLabelOptions|null $YAxisLabelOptions
+ * @property AxisDisplayOptions|null $YAxisDisplayOptions
+ * @property LegendOptions|null $Legend
+ * @property DataLabelOptions|null $DataLabels
+ * @property TooltipOptions|null $Tooltip
+ * @property VisualPalette|null $VisualPalette
+ * @property VisualInteractionOptions|null $Interactions
  */
 class ScatterPlotConfiguration extends Shape
 {
     /**
      * @param array{
-     *     FieldWells?: ScatterPlotFieldWells,
-     *     SortConfiguration?: ScatterPlotSortConfiguration,
-     *     XAxisLabelOptions?: ChartAxisLabelOptions,
-     *     XAxisDisplayOptions?: AxisDisplayOptions,
-     *     YAxisLabelOptions?: ChartAxisLabelOptions,
-     *     YAxisDisplayOptions?: AxisDisplayOptions,
-     *     Legend?: LegendOptions,
-     *     DataLabels?: DataLabelOptions,
-     *     Tooltip?: TooltipOptions,
-     *     VisualPalette?: VisualPalette,
-     *     Interactions?: VisualInteractionOptions
+     *     FieldWells?: ScatterPlotFieldWells|null,
+     *     SortConfiguration?: ScatterPlotSortConfiguration|null,
+     *     XAxisLabelOptions?: ChartAxisLabelOptions|null,
+     *     XAxisDisplayOptions?: AxisDisplayOptions|null,
+     *     YAxisLabelOptions?: ChartAxisLabelOptions|null,
+     *     YAxisDisplayOptions?: AxisDisplayOptions|null,
+     *     Legend?: LegendOptions|null,
+     *     DataLabels?: DataLabelOptions|null,
+     *     Tooltip?: TooltipOptions|null,
+     *     VisualPalette?: VisualPalette|null,
+     *     Interactions?: VisualInteractionOptions|null
      * } $args
      */
     public function __construct(array $args = [])

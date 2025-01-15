@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property bool $Enabled
- * @property int $MaxAgeInDays
- * @property bool $DeleteSourceFromS3
+ * @property int|null $MaxAgeInDays
+ * @property bool|null $DeleteSourceFromS3
  */
 class MaxAgeRule extends Shape
 {
     /**
      * @param array{
      *     Enabled: bool,
-     *     MaxAgeInDays?: int,
-     *     DeleteSourceFromS3?: bool
+     *     MaxAgeInDays?: int|null,
+     *     DeleteSourceFromS3?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $s3Bucket
- * @property string $s3BucketOwner
+ * @property string|null $s3BucketOwner
  * @property string $s3Key
  */
 class StartExportRequest extends Request
@@ -14,7 +14,7 @@ class StartExportRequest extends Request
     /**
      * @param array{
      *     s3Bucket: string,
-     *     s3BucketOwner?: string,
+     *     s3BucketOwner?: string|null,
      *     s3Key: string
      * } $args
      */

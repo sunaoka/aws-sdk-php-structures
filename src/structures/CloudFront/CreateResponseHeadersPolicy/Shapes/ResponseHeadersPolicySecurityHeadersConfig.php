@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudFront\CreateResponseHeadersPolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ResponseHeadersPolicyXSSProtection $XSSProtection
- * @property ResponseHeadersPolicyFrameOptions $FrameOptions
- * @property ResponseHeadersPolicyReferrerPolicy $ReferrerPolicy
- * @property ResponseHeadersPolicyContentSecurityPolicy $ContentSecurityPolicy
- * @property ResponseHeadersPolicyContentTypeOptions $ContentTypeOptions
- * @property ResponseHeadersPolicyStrictTransportSecurity $StrictTransportSecurity
+ * @property ResponseHeadersPolicyXSSProtection|null $XSSProtection
+ * @property ResponseHeadersPolicyFrameOptions|null $FrameOptions
+ * @property ResponseHeadersPolicyReferrerPolicy|null $ReferrerPolicy
+ * @property ResponseHeadersPolicyContentSecurityPolicy|null $ContentSecurityPolicy
+ * @property ResponseHeadersPolicyContentTypeOptions|null $ContentTypeOptions
+ * @property ResponseHeadersPolicyStrictTransportSecurity|null $StrictTransportSecurity
  */
 class ResponseHeadersPolicySecurityHeadersConfig extends Shape
 {
     /**
      * @param array{
-     *     XSSProtection?: ResponseHeadersPolicyXSSProtection,
-     *     FrameOptions?: ResponseHeadersPolicyFrameOptions,
-     *     ReferrerPolicy?: ResponseHeadersPolicyReferrerPolicy,
-     *     ContentSecurityPolicy?: ResponseHeadersPolicyContentSecurityPolicy,
-     *     ContentTypeOptions?: ResponseHeadersPolicyContentTypeOptions,
-     *     StrictTransportSecurity?: ResponseHeadersPolicyStrictTransportSecurity
+     *     XSSProtection?: ResponseHeadersPolicyXSSProtection|null,
+     *     FrameOptions?: ResponseHeadersPolicyFrameOptions|null,
+     *     ReferrerPolicy?: ResponseHeadersPolicyReferrerPolicy|null,
+     *     ContentSecurityPolicy?: ResponseHeadersPolicyContentSecurityPolicy|null,
+     *     ContentTypeOptions?: ResponseHeadersPolicyContentTypeOptions|null,
+     *     StrictTransportSecurity?: ResponseHeadersPolicyStrictTransportSecurity|null
      * } $args
      */
     public function __construct(array $args = [])

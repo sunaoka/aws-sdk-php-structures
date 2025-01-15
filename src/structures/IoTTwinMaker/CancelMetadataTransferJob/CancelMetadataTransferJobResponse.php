@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $arn
  * @property \Aws\Api\DateTimeResult $updateDateTime
  * @property Shapes\MetadataTransferJobStatus $status
- * @property Shapes\MetadataTransferJobProgress $progress
+ * @property Shapes\MetadataTransferJobProgress|null $progress
  */
 class CancelMetadataTransferJobResponse extends Response
 {

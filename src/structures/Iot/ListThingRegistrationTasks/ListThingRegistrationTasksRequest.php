@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Iot\ListThingRegistrationTasks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $nextToken
- * @property int<1, 250> $maxResults
- * @property 'InProgress'|'Completed'|'Failed'|'Cancelled'|'Cancelling' $status
+ * @property string|null $nextToken
+ * @property int<1, 250>|null $maxResults
+ * @property 'InProgress'|'Completed'|'Failed'|'Cancelled'|'Cancelling'|null $status
  */
 class ListThingRegistrationTasksRequest extends Request
 {
     /**
      * @param array{
-     *     nextToken?: string,
-     *     maxResults?: int<1, 250>,
-     *     status?: 'InProgress'|'Completed'|'Failed'|'Cancelled'|'Cancelling'
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 250>|null,
+     *     status?: 'InProgress'|'Completed'|'Failed'|'Cancelled'|'Cancelling'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeSessions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SessionId
- * @property string $Target
- * @property 'Connected'|'Connecting'|'Disconnected'|'Terminated'|'Terminating'|'Failed' $Status
- * @property \Aws\Api\DateTimeResult $StartDate
- * @property \Aws\Api\DateTimeResult $EndDate
- * @property string $DocumentName
- * @property string $Owner
- * @property string $Reason
- * @property string $Details
- * @property SessionManagerOutputUrl $OutputUrl
- * @property string $MaxSessionDuration
+ * @property string|null $SessionId
+ * @property string|null $Target
+ * @property 'Connected'|'Connecting'|'Disconnected'|'Terminated'|'Terminating'|'Failed'|null $Status
+ * @property \Aws\Api\DateTimeResult|null $StartDate
+ * @property \Aws\Api\DateTimeResult|null $EndDate
+ * @property string|null $DocumentName
+ * @property string|null $Owner
+ * @property string|null $Reason
+ * @property string|null $Details
+ * @property SessionManagerOutputUrl|null $OutputUrl
+ * @property string|null $MaxSessionDuration
  */
 class Session extends Shape
 {
     /**
      * @param array{
-     *     SessionId?: string,
-     *     Target?: string,
-     *     Status?: 'Connected'|'Connecting'|'Disconnected'|'Terminated'|'Terminating'|'Failed',
-     *     StartDate?: \Aws\Api\DateTimeResult,
-     *     EndDate?: \Aws\Api\DateTimeResult,
-     *     DocumentName?: string,
-     *     Owner?: string,
-     *     Reason?: string,
-     *     Details?: string,
-     *     OutputUrl?: SessionManagerOutputUrl,
-     *     MaxSessionDuration?: string
+     *     SessionId?: string|null,
+     *     Target?: string|null,
+     *     Status?: 'Connected'|'Connecting'|'Disconnected'|'Terminated'|'Terminating'|'Failed'|null,
+     *     StartDate?: \Aws\Api\DateTimeResult|null,
+     *     EndDate?: \Aws\Api\DateTimeResult|null,
+     *     DocumentName?: string|null,
+     *     Owner?: string|null,
+     *     Reason?: string|null,
+     *     Details?: string|null,
+     *     OutputUrl?: SessionManagerOutputUrl|null,
+     *     MaxSessionDuration?: string|null
      * } $args
      */
     public function __construct(array $args = [])

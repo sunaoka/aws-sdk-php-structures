@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\FSx\UpdateFileSystem\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ActiveDirectoryId
- * @property SelfManagedActiveDirectoryAttributes $SelfManagedActiveDirectoryConfiguration
- * @property 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2' $DeploymentType
- * @property string $RemoteAdministrationEndpoint
- * @property string $PreferredSubnetId
- * @property string $PreferredFileServerIp
- * @property int<8, 100000> $ThroughputCapacity
- * @property list<'PATCHING'|'BACKING_UP'> $MaintenanceOperationsInProgress
- * @property string $WeeklyMaintenanceStartTime
- * @property string $DailyAutomaticBackupStartTime
- * @property int<0, 90> $AutomaticBackupRetentionDays
- * @property bool $CopyTagsToBackups
- * @property list<Alias> $Aliases
- * @property WindowsAuditLogConfiguration $AuditLogConfiguration
- * @property DiskIopsConfiguration $DiskIopsConfiguration
+ * @property string|null $ActiveDirectoryId
+ * @property SelfManagedActiveDirectoryAttributes|null $SelfManagedActiveDirectoryConfiguration
+ * @property 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|null $DeploymentType
+ * @property string|null $RemoteAdministrationEndpoint
+ * @property string|null $PreferredSubnetId
+ * @property string|null $PreferredFileServerIp
+ * @property int<8, 100000>|null $ThroughputCapacity
+ * @property list<'PATCHING'|'BACKING_UP'>|null $MaintenanceOperationsInProgress
+ * @property string|null $WeeklyMaintenanceStartTime
+ * @property string|null $DailyAutomaticBackupStartTime
+ * @property int<0, 90>|null $AutomaticBackupRetentionDays
+ * @property bool|null $CopyTagsToBackups
+ * @property list<Alias>|null $Aliases
+ * @property WindowsAuditLogConfiguration|null $AuditLogConfiguration
+ * @property DiskIopsConfiguration|null $DiskIopsConfiguration
  */
 class WindowsFileSystemConfiguration extends Shape
 {
     /**
      * @param array{
-     *     ActiveDirectoryId?: string,
-     *     SelfManagedActiveDirectoryConfiguration?: SelfManagedActiveDirectoryAttributes,
-     *     DeploymentType?: 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2',
-     *     RemoteAdministrationEndpoint?: string,
-     *     PreferredSubnetId?: string,
-     *     PreferredFileServerIp?: string,
-     *     ThroughputCapacity?: int<8, 100000>,
-     *     MaintenanceOperationsInProgress?: list<'PATCHING'|'BACKING_UP'>,
-     *     WeeklyMaintenanceStartTime?: string,
-     *     DailyAutomaticBackupStartTime?: string,
-     *     AutomaticBackupRetentionDays?: int<0, 90>,
-     *     CopyTagsToBackups?: bool,
-     *     Aliases?: list<Alias>,
-     *     AuditLogConfiguration?: WindowsAuditLogConfiguration,
-     *     DiskIopsConfiguration?: DiskIopsConfiguration
+     *     ActiveDirectoryId?: string|null,
+     *     SelfManagedActiveDirectoryConfiguration?: SelfManagedActiveDirectoryAttributes|null,
+     *     DeploymentType?: 'MULTI_AZ_1'|'SINGLE_AZ_1'|'SINGLE_AZ_2'|null,
+     *     RemoteAdministrationEndpoint?: string|null,
+     *     PreferredSubnetId?: string|null,
+     *     PreferredFileServerIp?: string|null,
+     *     ThroughputCapacity?: int<8, 100000>|null,
+     *     MaintenanceOperationsInProgress?: list<'PATCHING'|'BACKING_UP'>|null,
+     *     WeeklyMaintenanceStartTime?: string|null,
+     *     DailyAutomaticBackupStartTime?: string|null,
+     *     AutomaticBackupRetentionDays?: int<0, 90>|null,
+     *     CopyTagsToBackups?: bool|null,
+     *     Aliases?: list<Alias>|null,
+     *     AuditLogConfiguration?: WindowsAuditLogConfiguration|null,
+     *     DiskIopsConfiguration?: DiskIopsConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

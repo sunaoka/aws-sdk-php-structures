@@ -7,13 +7,13 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ServiceName
  * @property Shapes\SourceConfiguration $SourceConfiguration
- * @property Shapes\InstanceConfiguration $InstanceConfiguration
- * @property list<Shapes\Tag> $Tags
- * @property Shapes\EncryptionConfiguration $EncryptionConfiguration
- * @property Shapes\HealthCheckConfiguration $HealthCheckConfiguration
- * @property string $AutoScalingConfigurationArn
- * @property Shapes\NetworkConfiguration $NetworkConfiguration
- * @property Shapes\ServiceObservabilityConfiguration $ObservabilityConfiguration
+ * @property Shapes\InstanceConfiguration|null $InstanceConfiguration
+ * @property list<Shapes\Tag>|null $Tags
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
+ * @property Shapes\HealthCheckConfiguration|null $HealthCheckConfiguration
+ * @property string|null $AutoScalingConfigurationArn
+ * @property Shapes\NetworkConfiguration|null $NetworkConfiguration
+ * @property Shapes\ServiceObservabilityConfiguration|null $ObservabilityConfiguration
  */
 class CreateServiceRequest extends Request
 {
@@ -21,13 +21,13 @@ class CreateServiceRequest extends Request
      * @param array{
      *     ServiceName: string,
      *     SourceConfiguration: Shapes\SourceConfiguration,
-     *     InstanceConfiguration?: Shapes\InstanceConfiguration,
-     *     Tags?: list<Shapes\Tag>,
-     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration,
-     *     HealthCheckConfiguration?: Shapes\HealthCheckConfiguration,
-     *     AutoScalingConfigurationArn?: string,
-     *     NetworkConfiguration?: Shapes\NetworkConfiguration,
-     *     ObservabilityConfiguration?: Shapes\ServiceObservabilityConfiguration
+     *     InstanceConfiguration?: Shapes\InstanceConfiguration|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     EncryptionConfiguration?: Shapes\EncryptionConfiguration|null,
+     *     HealthCheckConfiguration?: Shapes\HealthCheckConfiguration|null,
+     *     AutoScalingConfigurationArn?: string|null,
+     *     NetworkConfiguration?: Shapes\NetworkConfiguration|null,
+     *     ObservabilityConfiguration?: Shapes\ServiceObservabilityConfiguration|null
      * } $args
      */
     public function __construct(array $args)

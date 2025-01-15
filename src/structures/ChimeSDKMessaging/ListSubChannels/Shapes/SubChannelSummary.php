@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\ListSubChannels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $SubChannelId
- * @property int $MembershipCount
+ * @property string|null $SubChannelId
+ * @property int|null $MembershipCount
  */
 class SubChannelSummary extends Shape
 {
     /**
      * @param array{
-     *     SubChannelId?: string,
-     *     MembershipCount?: int
+     *     SubChannelId?: string|null,
+     *     MembershipCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

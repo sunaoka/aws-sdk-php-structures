@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property string $RunId
- * @property bool $IncludeGraph
+ * @property bool|null $IncludeGraph
  */
 class GetWorkflowRunRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetWorkflowRunRequest extends Request
      * @param array{
      *     Name: string,
      *     RunId: string,
-     *     IncludeGraph?: bool
+     *     IncludeGraph?: bool|null
      * } $args
      */
     public function __construct(array $args)

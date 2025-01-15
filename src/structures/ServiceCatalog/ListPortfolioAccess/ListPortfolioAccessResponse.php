@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\ListPortfolioAccess;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<string> $AccountIds
- * @property string $NextPageToken
+ * @property list<string>|null $AccountIds
+ * @property string|null $NextPageToken
  */
 class ListPortfolioAccessResponse extends Response
 {

@@ -6,46 +6,46 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $family
- * @property string $taskRoleArn
- * @property string $executionRoleArn
- * @property 'bridge'|'host'|'awsvpc'|'none' $networkMode
+ * @property string|null $taskRoleArn
+ * @property string|null $executionRoleArn
+ * @property 'bridge'|'host'|'awsvpc'|'none'|null $networkMode
  * @property list<Shapes\ContainerDefinition> $containerDefinitions
- * @property list<Shapes\Volume> $volumes
- * @property list<Shapes\TaskDefinitionPlacementConstraint> $placementConstraints
- * @property list<'EC2'|'FARGATE'|'EXTERNAL'> $requiresCompatibilities
- * @property string $cpu
- * @property string $memory
- * @property list<Shapes\Tag> $tags
- * @property 'host'|'task' $pidMode
- * @property 'host'|'task'|'none' $ipcMode
- * @property Shapes\ProxyConfiguration $proxyConfiguration
- * @property list<Shapes\InferenceAccelerator> $inferenceAccelerators
- * @property Shapes\EphemeralStorage $ephemeralStorage
- * @property Shapes\RuntimePlatform $runtimePlatform
- * @property bool $enableFaultInjection
+ * @property list<Shapes\Volume>|null $volumes
+ * @property list<Shapes\TaskDefinitionPlacementConstraint>|null $placementConstraints
+ * @property list<'EC2'|'FARGATE'|'EXTERNAL'>|null $requiresCompatibilities
+ * @property string|null $cpu
+ * @property string|null $memory
+ * @property list<Shapes\Tag>|null $tags
+ * @property 'host'|'task'|null $pidMode
+ * @property 'host'|'task'|'none'|null $ipcMode
+ * @property Shapes\ProxyConfiguration|null $proxyConfiguration
+ * @property list<Shapes\InferenceAccelerator>|null $inferenceAccelerators
+ * @property Shapes\EphemeralStorage|null $ephemeralStorage
+ * @property Shapes\RuntimePlatform|null $runtimePlatform
+ * @property bool|null $enableFaultInjection
  */
 class RegisterTaskDefinitionRequest extends Request
 {
     /**
      * @param array{
      *     family: string,
-     *     taskRoleArn?: string,
-     *     executionRoleArn?: string,
-     *     networkMode?: 'bridge'|'host'|'awsvpc'|'none',
+     *     taskRoleArn?: string|null,
+     *     executionRoleArn?: string|null,
+     *     networkMode?: 'bridge'|'host'|'awsvpc'|'none'|null,
      *     containerDefinitions: list<Shapes\ContainerDefinition>,
-     *     volumes?: list<Shapes\Volume>,
-     *     placementConstraints?: list<Shapes\TaskDefinitionPlacementConstraint>,
-     *     requiresCompatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'>,
-     *     cpu?: string,
-     *     memory?: string,
-     *     tags?: list<Shapes\Tag>,
-     *     pidMode?: 'host'|'task',
-     *     ipcMode?: 'host'|'task'|'none',
-     *     proxyConfiguration?: Shapes\ProxyConfiguration,
-     *     inferenceAccelerators?: list<Shapes\InferenceAccelerator>,
-     *     ephemeralStorage?: Shapes\EphemeralStorage,
-     *     runtimePlatform?: Shapes\RuntimePlatform,
-     *     enableFaultInjection?: bool
+     *     volumes?: list<Shapes\Volume>|null,
+     *     placementConstraints?: list<Shapes\TaskDefinitionPlacementConstraint>|null,
+     *     requiresCompatibilities?: list<'EC2'|'FARGATE'|'EXTERNAL'>|null,
+     *     cpu?: string|null,
+     *     memory?: string|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     pidMode?: 'host'|'task'|null,
+     *     ipcMode?: 'host'|'task'|'none'|null,
+     *     proxyConfiguration?: Shapes\ProxyConfiguration|null,
+     *     inferenceAccelerators?: list<Shapes\InferenceAccelerator>|null,
+     *     ephemeralStorage?: Shapes\EphemeralStorage|null,
+     *     runtimePlatform?: Shapes\RuntimePlatform|null,
+     *     enableFaultInjection?: bool|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $cloudTrailArn
- * @property list<string> $regions
- * @property bool $allRegions
+ * @property list<string>|null $regions
+ * @property bool|null $allRegions
  */
 class TrailProperties extends Shape
 {
     /**
      * @param array{
      *     cloudTrailArn: string,
-     *     regions?: list<string>,
-     *     allRegions?: bool
+     *     regions?: list<string>|null,
+     *     allRegions?: bool|null
      * } $args
      */
     public function __construct(array $args)

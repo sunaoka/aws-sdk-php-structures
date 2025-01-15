@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\RegistrationInformation> $Registrations
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class DescribeRegistrationsResponse extends Response
 {

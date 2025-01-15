@@ -5,57 +5,57 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CertificateAuthorityArn
- * @property string $CreatedAt
- * @property string $DomainName
- * @property list<AwsCertificateManagerCertificateDomainValidationOption> $DomainValidationOptions
- * @property list<AwsCertificateManagerCertificateExtendedKeyUsage> $ExtendedKeyUsages
- * @property string $FailureReason
- * @property string $ImportedAt
- * @property list<string> $InUseBy
- * @property string $IssuedAt
- * @property string $Issuer
- * @property string $KeyAlgorithm
- * @property list<AwsCertificateManagerCertificateKeyUsage> $KeyUsages
- * @property string $NotAfter
- * @property string $NotBefore
- * @property AwsCertificateManagerCertificateOptions $Options
- * @property string $RenewalEligibility
- * @property AwsCertificateManagerCertificateRenewalSummary $RenewalSummary
- * @property string $Serial
- * @property string $SignatureAlgorithm
- * @property string $Status
- * @property string $Subject
- * @property list<string> $SubjectAlternativeNames
- * @property string $Type
+ * @property string|null $CertificateAuthorityArn
+ * @property string|null $CreatedAt
+ * @property string|null $DomainName
+ * @property list<AwsCertificateManagerCertificateDomainValidationOption>|null $DomainValidationOptions
+ * @property list<AwsCertificateManagerCertificateExtendedKeyUsage>|null $ExtendedKeyUsages
+ * @property string|null $FailureReason
+ * @property string|null $ImportedAt
+ * @property list<string>|null $InUseBy
+ * @property string|null $IssuedAt
+ * @property string|null $Issuer
+ * @property string|null $KeyAlgorithm
+ * @property list<AwsCertificateManagerCertificateKeyUsage>|null $KeyUsages
+ * @property string|null $NotAfter
+ * @property string|null $NotBefore
+ * @property AwsCertificateManagerCertificateOptions|null $Options
+ * @property string|null $RenewalEligibility
+ * @property AwsCertificateManagerCertificateRenewalSummary|null $RenewalSummary
+ * @property string|null $Serial
+ * @property string|null $SignatureAlgorithm
+ * @property string|null $Status
+ * @property string|null $Subject
+ * @property list<string>|null $SubjectAlternativeNames
+ * @property string|null $Type
  */
 class AwsCertificateManagerCertificateDetails extends Shape
 {
     /**
      * @param array{
-     *     CertificateAuthorityArn?: string,
-     *     CreatedAt?: string,
-     *     DomainName?: string,
-     *     DomainValidationOptions?: list<AwsCertificateManagerCertificateDomainValidationOption>,
-     *     ExtendedKeyUsages?: list<AwsCertificateManagerCertificateExtendedKeyUsage>,
-     *     FailureReason?: string,
-     *     ImportedAt?: string,
-     *     InUseBy?: list<string>,
-     *     IssuedAt?: string,
-     *     Issuer?: string,
-     *     KeyAlgorithm?: string,
-     *     KeyUsages?: list<AwsCertificateManagerCertificateKeyUsage>,
-     *     NotAfter?: string,
-     *     NotBefore?: string,
-     *     Options?: AwsCertificateManagerCertificateOptions,
-     *     RenewalEligibility?: string,
-     *     RenewalSummary?: AwsCertificateManagerCertificateRenewalSummary,
-     *     Serial?: string,
-     *     SignatureAlgorithm?: string,
-     *     Status?: string,
-     *     Subject?: string,
-     *     SubjectAlternativeNames?: list<string>,
-     *     Type?: string
+     *     CertificateAuthorityArn?: string|null,
+     *     CreatedAt?: string|null,
+     *     DomainName?: string|null,
+     *     DomainValidationOptions?: list<AwsCertificateManagerCertificateDomainValidationOption>|null,
+     *     ExtendedKeyUsages?: list<AwsCertificateManagerCertificateExtendedKeyUsage>|null,
+     *     FailureReason?: string|null,
+     *     ImportedAt?: string|null,
+     *     InUseBy?: list<string>|null,
+     *     IssuedAt?: string|null,
+     *     Issuer?: string|null,
+     *     KeyAlgorithm?: string|null,
+     *     KeyUsages?: list<AwsCertificateManagerCertificateKeyUsage>|null,
+     *     NotAfter?: string|null,
+     *     NotBefore?: string|null,
+     *     Options?: AwsCertificateManagerCertificateOptions|null,
+     *     RenewalEligibility?: string|null,
+     *     RenewalSummary?: AwsCertificateManagerCertificateRenewalSummary|null,
+     *     Serial?: string|null,
+     *     SignatureAlgorithm?: string|null,
+     *     Status?: string|null,
+     *     Subject?: string|null,
+     *     SubjectAlternativeNames?: list<string>|null,
+     *     Type?: string|null
      * } $args
      */
     public function __construct(array $args = [])

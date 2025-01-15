@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\PolicyGenerationDetails $policyGenerationDetails
- * @property Shapes\CloudTrailDetails $cloudTrailDetails
- * @property string $clientToken
+ * @property Shapes\CloudTrailDetails|null $cloudTrailDetails
+ * @property string|null $clientToken
  */
 class StartPolicyGenerationRequest extends Request
 {
     /**
      * @param array{
      *     policyGenerationDetails: Shapes\PolicyGenerationDetails,
-     *     cloudTrailDetails?: Shapes\CloudTrailDetails,
-     *     clientToken?: string
+     *     cloudTrailDetails?: Shapes\CloudTrailDetails|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

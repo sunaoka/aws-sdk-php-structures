@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property list<string> $eventArns
- * @property list<string> $entityArns
- * @property list<string> $entityValues
- * @property list<DateTimeRange> $lastUpdatedTimes
- * @property list<array<string, string>> $tags
- * @property list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'> $statusCodes
+ * @property list<string>|null $entityArns
+ * @property list<string>|null $entityValues
+ * @property list<DateTimeRange>|null $lastUpdatedTimes
+ * @property list<array<string, string>>|null $tags
+ * @property list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'>|null $statusCodes
  */
 class EntityFilter extends Shape
 {
     /**
      * @param array{
      *     eventArns: list<string>,
-     *     entityArns?: list<string>,
-     *     entityValues?: list<string>,
-     *     lastUpdatedTimes?: list<DateTimeRange>,
-     *     tags?: list<array<string, string>>,
-     *     statusCodes?: list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'>
+     *     entityArns?: list<string>|null,
+     *     entityValues?: list<string>|null,
+     *     lastUpdatedTimes?: list<DateTimeRange>|null,
+     *     tags?: list<array<string, string>>|null,
+     *     statusCodes?: list<'IMPAIRED'|'UNIMPAIRED'|'UNKNOWN'|'PENDING'|'RESOLVED'>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\ListSnapshots;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $nextToken
- * @property list<Shapes\Snapshot> $snapshots
+ * @property string|null $nextToken
+ * @property list<Shapes\Snapshot>|null $snapshots
  */
 class ListSnapshotsResponse extends Response
 {

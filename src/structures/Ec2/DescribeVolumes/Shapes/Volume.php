@@ -5,47 +5,47 @@ namespace Sunaoka\Aws\Structures\Ec2\DescribeVolumes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $OutpostArn
- * @property int $Iops
- * @property list<Tag> $Tags
- * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3' $VolumeType
- * @property bool $FastRestored
- * @property bool $MultiAttachEnabled
- * @property int $Throughput
- * @property 'sse-ebs'|'sse-kms'|'none' $SseType
- * @property OperatorResponse $Operator
- * @property string $VolumeId
- * @property int $Size
- * @property string $SnapshotId
- * @property string $AvailabilityZone
- * @property 'creating'|'available'|'in-use'|'deleting'|'deleted'|'error' $State
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property list<VolumeAttachment> $Attachments
- * @property bool $Encrypted
- * @property string $KmsKeyId
+ * @property string|null $OutpostArn
+ * @property int|null $Iops
+ * @property list<Tag>|null $Tags
+ * @property 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null $VolumeType
+ * @property bool|null $FastRestored
+ * @property bool|null $MultiAttachEnabled
+ * @property int|null $Throughput
+ * @property 'sse-ebs'|'sse-kms'|'none'|null $SseType
+ * @property OperatorResponse|null $Operator
+ * @property string|null $VolumeId
+ * @property int|null $Size
+ * @property string|null $SnapshotId
+ * @property string|null $AvailabilityZone
+ * @property 'creating'|'available'|'in-use'|'deleting'|'deleted'|'error'|null $State
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property list<VolumeAttachment>|null $Attachments
+ * @property bool|null $Encrypted
+ * @property string|null $KmsKeyId
  */
 class Volume extends Shape
 {
     /**
      * @param array{
-     *     OutpostArn?: string,
-     *     Iops?: int,
-     *     Tags?: list<Tag>,
-     *     VolumeType?: 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3',
-     *     FastRestored?: bool,
-     *     MultiAttachEnabled?: bool,
-     *     Throughput?: int,
-     *     SseType?: 'sse-ebs'|'sse-kms'|'none',
-     *     Operator?: OperatorResponse,
-     *     VolumeId?: string,
-     *     Size?: int,
-     *     SnapshotId?: string,
-     *     AvailabilityZone?: string,
-     *     State?: 'creating'|'available'|'in-use'|'deleting'|'deleted'|'error',
-     *     CreateTime?: \Aws\Api\DateTimeResult,
-     *     Attachments?: list<VolumeAttachment>,
-     *     Encrypted?: bool,
-     *     KmsKeyId?: string
+     *     OutpostArn?: string|null,
+     *     Iops?: int|null,
+     *     Tags?: list<Tag>|null,
+     *     VolumeType?: 'standard'|'io1'|'io2'|'gp2'|'sc1'|'st1'|'gp3'|null,
+     *     FastRestored?: bool|null,
+     *     MultiAttachEnabled?: bool|null,
+     *     Throughput?: int|null,
+     *     SseType?: 'sse-ebs'|'sse-kms'|'none'|null,
+     *     Operator?: OperatorResponse|null,
+     *     VolumeId?: string|null,
+     *     Size?: int|null,
+     *     SnapshotId?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     State?: 'creating'|'available'|'in-use'|'deleting'|'deleted'|'error'|null,
+     *     CreateTime?: \Aws\Api\DateTimeResult|null,
+     *     Attachments?: list<VolumeAttachment>|null,
+     *     Encrypted?: bool|null,
+     *     KmsKeyId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

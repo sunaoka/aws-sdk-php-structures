@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Rekognition\DescribeProjectVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property GroundTruthManifest $GroundTruthManifest
+ * @property GroundTruthManifest|null $GroundTruthManifest
  */
 class Asset extends Shape
 {
     /**
-     * @param array{GroundTruthManifest?: GroundTruthManifest} $args
+     * @param array{GroundTruthManifest?: GroundTruthManifest|null} $args
      */
     public function __construct(array $args = [])
     {

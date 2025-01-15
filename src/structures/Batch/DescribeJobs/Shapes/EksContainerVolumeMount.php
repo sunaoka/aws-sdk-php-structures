@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Batch\DescribeJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $mountPath
- * @property string $subPath
- * @property bool $readOnly
+ * @property string|null $name
+ * @property string|null $mountPath
+ * @property string|null $subPath
+ * @property bool|null $readOnly
  */
 class EksContainerVolumeMount extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     mountPath?: string,
-     *     subPath?: string,
-     *     readOnly?: bool
+     *     name?: string|null,
+     *     mountPath?: string|null,
+     *     subPath?: string|null,
+     *     readOnly?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

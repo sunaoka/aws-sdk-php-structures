@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateAnalysis\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<DimensionField> $Source
- * @property list<DimensionField> $Destination
- * @property list<MeasureField> $Weight
+ * @property list<DimensionField>|null $Source
+ * @property list<DimensionField>|null $Destination
+ * @property list<MeasureField>|null $Weight
  */
 class SankeyDiagramAggregatedFieldWells extends Shape
 {
     /**
      * @param array{
-     *     Source?: list<DimensionField>,
-     *     Destination?: list<DimensionField>,
-     *     Weight?: list<MeasureField>
+     *     Source?: list<DimensionField>|null,
+     *     Destination?: list<DimensionField>|null,
+     *     Weight?: list<MeasureField>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int $DurationInSeconds
  * @property string $Name
  * @property 'INITIALIZING'|'IN_PROGRESS'|'STOPPING'|'STOPPED'|'COMPLETED'|'FAILED'|'DELETING'|'DELETED' $Status
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  * @property 'REVERSE_GEOCODING'|'MAP_MATCHING' $Type
  */
 class ListVectorEnrichmentJobOutputConfig extends Shape
@@ -22,7 +22,7 @@ class ListVectorEnrichmentJobOutputConfig extends Shape
      *     DurationInSeconds: int,
      *     Name: string,
      *     Status: 'INITIALIZING'|'IN_PROGRESS'|'STOPPING'|'STOPPED'|'COMPLETED'|'FAILED'|'DELETING'|'DELETED',
-     *     Tags?: array<string, string>,
+     *     Tags?: array<string, string>|null,
      *     Type: 'REVERSE_GEOCODING'|'MAP_MATCHING'
      * } $args
      */

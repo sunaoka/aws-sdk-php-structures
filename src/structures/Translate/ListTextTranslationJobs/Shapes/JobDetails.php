@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Translate\ListTextTranslationJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $TranslatedDocumentsCount
- * @property int $DocumentsWithErrorsCount
- * @property int $InputDocumentsCount
+ * @property int|null $TranslatedDocumentsCount
+ * @property int|null $DocumentsWithErrorsCount
+ * @property int|null $InputDocumentsCount
  */
 class JobDetails extends Shape
 {
     /**
      * @param array{
-     *     TranslatedDocumentsCount?: int,
-     *     DocumentsWithErrorsCount?: int,
-     *     InputDocumentsCount?: int
+     *     TranslatedDocumentsCount?: int|null,
+     *     DocumentsWithErrorsCount?: int|null,
+     *     InputDocumentsCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

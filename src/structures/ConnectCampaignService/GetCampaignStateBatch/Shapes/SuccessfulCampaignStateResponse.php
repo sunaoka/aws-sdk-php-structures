@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectCampaignService\GetCampaignStateBatch\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $campaignId
- * @property 'Initialized'|'Running'|'Paused'|'Stopped'|'Failed' $state
+ * @property string|null $campaignId
+ * @property 'Initialized'|'Running'|'Paused'|'Stopped'|'Failed'|null $state
  */
 class SuccessfulCampaignStateResponse extends Shape
 {
     /**
      * @param array{
-     *     campaignId?: string,
-     *     state?: 'Initialized'|'Running'|'Paused'|'Stopped'|'Failed'
+     *     campaignId?: string|null,
+     *     state?: 'Initialized'|'Running'|'Paused'|'Stopped'|'Failed'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DAX\DescribeParameterGroups\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ParameterGroupName
- * @property string $Description
+ * @property string|null $ParameterGroupName
+ * @property string|null $Description
  */
 class ParameterGroup extends Shape
 {
     /**
      * @param array{
-     *     ParameterGroupName?: string,
-     *     Description?: string
+     *     ParameterGroupName?: string|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

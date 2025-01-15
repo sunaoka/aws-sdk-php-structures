@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Lightsail\GetDisks;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $pageToken
+ * @property string|null $pageToken
  */
 class GetDisksRequest extends Request
 {
     /**
-     * @param array{pageToken?: string} $args
+     * @param array{pageToken?: string|null} $args
      */
     public function __construct(array $args = [])
     {

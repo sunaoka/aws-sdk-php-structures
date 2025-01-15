@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $tableName
  * @property string $roleArn
- * @property string $operation
+ * @property string|null $operation
  * @property string $hashKeyField
  * @property string $hashKeyValue
- * @property 'STRING'|'NUMBER' $hashKeyType
- * @property string $rangeKeyField
- * @property string $rangeKeyValue
- * @property 'STRING'|'NUMBER' $rangeKeyType
- * @property string $payloadField
+ * @property 'STRING'|'NUMBER'|null $hashKeyType
+ * @property string|null $rangeKeyField
+ * @property string|null $rangeKeyValue
+ * @property 'STRING'|'NUMBER'|null $rangeKeyType
+ * @property string|null $payloadField
  */
 class DynamoDBAction extends Shape
 {
@@ -22,14 +22,14 @@ class DynamoDBAction extends Shape
      * @param array{
      *     tableName: string,
      *     roleArn: string,
-     *     operation?: string,
+     *     operation?: string|null,
      *     hashKeyField: string,
      *     hashKeyValue: string,
-     *     hashKeyType?: 'STRING'|'NUMBER',
-     *     rangeKeyField?: string,
-     *     rangeKeyValue?: string,
-     *     rangeKeyType?: 'STRING'|'NUMBER',
-     *     payloadField?: string
+     *     hashKeyType?: 'STRING'|'NUMBER'|null,
+     *     rangeKeyField?: string|null,
+     *     rangeKeyValue?: string|null,
+     *     rangeKeyType?: 'STRING'|'NUMBER'|null,
+     *     payloadField?: string|null
      * } $args
      */
     public function __construct(array $args)

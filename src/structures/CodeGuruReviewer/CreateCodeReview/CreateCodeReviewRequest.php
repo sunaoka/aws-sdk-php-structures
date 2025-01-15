@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Name
  * @property string $RepositoryAssociationArn
  * @property Shapes\CodeReviewType $Type
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  */
 class CreateCodeReviewRequest extends Request
 {
@@ -17,7 +17,7 @@ class CreateCodeReviewRequest extends Request
      *     Name: string,
      *     RepositoryAssociationArn: string,
      *     Type: Shapes\CodeReviewType,
-     *     ClientRequestToken?: string
+     *     ClientRequestToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\WAFV2\GetWebACL\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BlockAction $Block
- * @property AllowAction $Allow
- * @property CountAction $Count
- * @property CaptchaAction $Captcha
- * @property ChallengeAction $Challenge
+ * @property BlockAction|null $Block
+ * @property AllowAction|null $Allow
+ * @property CountAction|null $Count
+ * @property CaptchaAction|null $Captcha
+ * @property ChallengeAction|null $Challenge
  */
 class RuleAction extends Shape
 {
     /**
      * @param array{
-     *     Block?: BlockAction,
-     *     Allow?: AllowAction,
-     *     Count?: CountAction,
-     *     Captcha?: CaptchaAction,
-     *     Challenge?: ChallengeAction
+     *     Block?: BlockAction|null,
+     *     Allow?: AllowAction|null,
+     *     Count?: CountAction|null,
+     *     Captcha?: CaptchaAction|null,
+     *     Challenge?: ChallengeAction|null
      * } $args
      */
     public function __construct(array $args = [])

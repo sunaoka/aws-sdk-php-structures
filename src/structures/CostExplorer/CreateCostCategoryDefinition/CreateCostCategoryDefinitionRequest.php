@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $EffectiveStart
+ * @property string|null $EffectiveStart
  * @property 'CostCategoryExpression.v1' $RuleVersion
  * @property list<Shapes\CostCategoryRule> $Rules
- * @property string $DefaultValue
- * @property list<Shapes\CostCategorySplitChargeRule> $SplitChargeRules
- * @property list<Shapes\ResourceTag> $ResourceTags
+ * @property string|null $DefaultValue
+ * @property list<Shapes\CostCategorySplitChargeRule>|null $SplitChargeRules
+ * @property list<Shapes\ResourceTag>|null $ResourceTags
  */
 class CreateCostCategoryDefinitionRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     EffectiveStart?: string,
+     *     EffectiveStart?: string|null,
      *     RuleVersion: 'CostCategoryExpression.v1',
      *     Rules: list<Shapes\CostCategoryRule>,
-     *     DefaultValue?: string,
-     *     SplitChargeRules?: list<Shapes\CostCategorySplitChargeRule>,
-     *     ResourceTags?: list<Shapes\ResourceTag>
+     *     DefaultValue?: string|null,
+     *     SplitChargeRules?: list<Shapes\CostCategorySplitChargeRule>|null,
+     *     ResourceTags?: list<Shapes\ResourceTag>|null
      * } $args
      */
     public function __construct(array $args)

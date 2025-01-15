@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property string $Value
- * @property int $MaxCount
- * @property bool $Overage
+ * @property string|null $Value
+ * @property int|null $MaxCount
+ * @property bool|null $Overage
  * @property 'Count'|'None'|'Seconds'|'Microseconds'|'Milliseconds'|'Bytes'|'Kilobytes'|'Megabytes'|'Gigabytes'|'Terabytes'|'Bits'|'Kilobits'|'Megabits'|'Gigabits'|'Terabits'|'Percent'|'Bytes/Second'|'Kilobytes/Second'|'Megabytes/Second'|'Gigabytes/Second'|'Terabytes/Second'|'Bits/Second'|'Kilobits/Second'|'Megabits/Second'|'Gigabits/Second'|'Terabits/Second'|'Count/Second' $Unit
- * @property bool $AllowCheckIn
+ * @property bool|null $AllowCheckIn
  */
 class Entitlement extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     Value?: string,
-     *     MaxCount?: int,
-     *     Overage?: bool,
+     *     Value?: string|null,
+     *     MaxCount?: int|null,
+     *     Overage?: bool|null,
      *     Unit: 'Count'|'None'|'Seconds'|'Microseconds'|'Milliseconds'|'Bytes'|'Kilobytes'|'Megabytes'|'Gigabytes'|'Terabytes'|'Bits'|'Kilobits'|'Megabits'|'Gigabits'|'Terabits'|'Percent'|'Bytes/Second'|'Kilobytes/Second'|'Megabytes/Second'|'Gigabytes/Second'|'Terabytes/Second'|'Bits/Second'|'Kilobits/Second'|'Megabits/Second'|'Gigabits/Second'|'Terabits/Second'|'Count/Second',
-     *     AllowCheckIn?: bool
+     *     AllowCheckIn?: bool|null
      * } $args
      */
     public function __construct(array $args)

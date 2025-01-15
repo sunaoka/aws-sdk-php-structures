@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ARCZonalShift\ListZonalShifts;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ZonalShiftSummary> $items
- * @property string $nextToken
+ * @property list<Shapes\ZonalShiftSummary>|null $items
+ * @property string|null $nextToken
  */
 class ListZonalShiftsResponse extends Response
 {

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $SizeConstraintSetId
- * @property string $Name
+ * @property string|null $Name
  * @property list<SizeConstraint> $SizeConstraints
  */
 class SizeConstraintSet extends Shape
@@ -14,7 +14,7 @@ class SizeConstraintSet extends Shape
     /**
      * @param array{
      *     SizeConstraintSetId: string,
-     *     Name?: string,
+     *     Name?: string|null,
      *     SizeConstraints: list<SizeConstraint>
      * } $args
      */

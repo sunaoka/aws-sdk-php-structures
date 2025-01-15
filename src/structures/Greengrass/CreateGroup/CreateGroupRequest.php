@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Greengrass\CreateGroup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AmznClientToken
- * @property Shapes\GroupVersion $InitialVersion
+ * @property string|null $AmznClientToken
+ * @property Shapes\GroupVersion|null $InitialVersion
  * @property string $Name
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class CreateGroupRequest extends Request
 {
     /**
      * @param array{
-     *     AmznClientToken?: string,
-     *     InitialVersion?: Shapes\GroupVersion,
+     *     AmznClientToken?: string|null,
+     *     InitialVersion?: Shapes\GroupVersion|null,
      *     Name: string,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

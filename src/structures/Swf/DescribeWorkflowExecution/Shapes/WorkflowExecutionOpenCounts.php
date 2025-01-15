@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property int<0, 1> $openDecisionTasks
  * @property int<0, max> $openTimers
  * @property int<0, max> $openChildWorkflowExecutions
- * @property int<0, max> $openLambdaFunctions
+ * @property int<0, max>|null $openLambdaFunctions
  */
 class WorkflowExecutionOpenCounts extends Shape
 {
@@ -19,7 +19,7 @@ class WorkflowExecutionOpenCounts extends Shape
      *     openDecisionTasks: int<0, 1>,
      *     openTimers: int<0, max>,
      *     openChildWorkflowExecutions: int<0, max>,
-     *     openLambdaFunctions?: int<0, max>
+     *     openLambdaFunctions?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args)

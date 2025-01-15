@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $restApiId
- * @property 'API'|'AUTHORIZER'|'MODEL'|'RESOURCE'|'METHOD'|'PATH_PARAMETER'|'QUERY_PARAMETER'|'REQUEST_HEADER'|'REQUEST_BODY'|'RESPONSE'|'RESPONSE_HEADER'|'RESPONSE_BODY' $type
- * @property string $nameQuery
- * @property string $path
- * @property string $position
- * @property int $limit
- * @property 'DOCUMENTED'|'UNDOCUMENTED' $locationStatus
+ * @property 'API'|'AUTHORIZER'|'MODEL'|'RESOURCE'|'METHOD'|'PATH_PARAMETER'|'QUERY_PARAMETER'|'REQUEST_HEADER'|'REQUEST_BODY'|'RESPONSE'|'RESPONSE_HEADER'|'RESPONSE_BODY'|null $type
+ * @property string|null $nameQuery
+ * @property string|null $path
+ * @property string|null $position
+ * @property int|null $limit
+ * @property 'DOCUMENTED'|'UNDOCUMENTED'|null $locationStatus
  */
 class GetDocumentationPartsRequest extends Request
 {
     /**
      * @param array{
      *     restApiId: string,
-     *     type?: 'API'|'AUTHORIZER'|'MODEL'|'RESOURCE'|'METHOD'|'PATH_PARAMETER'|'QUERY_PARAMETER'|'REQUEST_HEADER'|'REQUEST_BODY'|'RESPONSE'|'RESPONSE_HEADER'|'RESPONSE_BODY',
-     *     nameQuery?: string,
-     *     path?: string,
-     *     position?: string,
-     *     limit?: int,
-     *     locationStatus?: 'DOCUMENTED'|'UNDOCUMENTED'
+     *     type?: 'API'|'AUTHORIZER'|'MODEL'|'RESOURCE'|'METHOD'|'PATH_PARAMETER'|'QUERY_PARAMETER'|'REQUEST_HEADER'|'REQUEST_BODY'|'RESPONSE'|'RESPONSE_HEADER'|'RESPONSE_BODY'|null,
+     *     nameQuery?: string|null,
+     *     path?: string|null,
+     *     position?: string|null,
+     *     limit?: int|null,
+     *     locationStatus?: 'DOCUMENTED'|'UNDOCUMENTED'|null
      * } $args
      */
     public function __construct(array $args)

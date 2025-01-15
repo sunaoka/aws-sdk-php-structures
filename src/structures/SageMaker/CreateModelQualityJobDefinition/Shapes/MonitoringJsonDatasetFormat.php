@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\CreateModelQualityJobDefinition\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $Line
+ * @property bool|null $Line
  */
 class MonitoringJsonDatasetFormat extends Shape
 {
     /**
-     * @param array{Line?: bool} $args
+     * @param array{Line?: bool|null} $args
      */
     public function __construct(array $args = [])
     {

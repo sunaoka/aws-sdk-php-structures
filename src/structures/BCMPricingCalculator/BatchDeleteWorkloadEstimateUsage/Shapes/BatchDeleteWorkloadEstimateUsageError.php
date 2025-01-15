@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchDeleteWorkloadEstimat
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $errorMessage
- * @property 'BAD_REQUEST'|'NOT_FOUND'|'CONFLICT'|'INTERNAL_SERVER_ERROR' $errorCode
+ * @property string|null $id
+ * @property string|null $errorMessage
+ * @property 'BAD_REQUEST'|'NOT_FOUND'|'CONFLICT'|'INTERNAL_SERVER_ERROR'|null $errorCode
  */
 class BatchDeleteWorkloadEstimateUsageError extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     errorMessage?: string,
-     *     errorCode?: 'BAD_REQUEST'|'NOT_FOUND'|'CONFLICT'|'INTERNAL_SERVER_ERROR'
+     *     id?: string|null,
+     *     errorMessage?: string|null,
+     *     errorCode?: 'BAD_REQUEST'|'NOT_FOUND'|'CONFLICT'|'INTERNAL_SERVER_ERROR'|null
      * } $args
      */
     public function __construct(array $args = [])

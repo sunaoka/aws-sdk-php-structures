@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRDSDatabaseRecommendations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'InstanceFinding'|'InstanceFindingReasonCode'|'StorageFinding'|'StorageFindingReasonCode'|'Idle' $name
- * @property list<string> $values
+ * @property 'InstanceFinding'|'InstanceFindingReasonCode'|'StorageFinding'|'StorageFindingReasonCode'|'Idle'|null $name
+ * @property list<string>|null $values
  */
 class RDSDBRecommendationFilter extends Shape
 {
     /**
      * @param array{
-     *     name?: 'InstanceFinding'|'InstanceFindingReasonCode'|'StorageFinding'|'StorageFindingReasonCode'|'Idle',
-     *     values?: list<string>
+     *     name?: 'InstanceFinding'|'InstanceFindingReasonCode'|'StorageFinding'|'StorageFindingReasonCode'|'Idle'|null,
+     *     values?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

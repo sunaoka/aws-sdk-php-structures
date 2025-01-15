@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RedshiftServerless\PutResourcePolicy\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $policy
- * @property string $resourceArn
+ * @property string|null $policy
+ * @property string|null $resourceArn
  */
 class ResourcePolicy extends Shape
 {
     /**
      * @param array{
-     *     policy?: string,
-     *     resourceArn?: string
+     *     policy?: string|null,
+     *     resourceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

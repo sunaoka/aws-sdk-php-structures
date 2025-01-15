@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CloudFront\ListDistributionsByKeyGroup;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\DistributionIdList $DistributionIdList
+ * @property Shapes\DistributionIdList|null $DistributionIdList
  */
 class ListDistributionsByKeyGroupResponse extends Response
 {

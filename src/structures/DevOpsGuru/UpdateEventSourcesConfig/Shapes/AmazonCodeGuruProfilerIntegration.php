@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\UpdateEventSourcesConfig\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ENABLED'|'DISABLED' $Status
+ * @property 'ENABLED'|'DISABLED'|null $Status
  */
 class AmazonCodeGuruProfilerIntegration extends Shape
 {
     /**
-     * @param array{Status?: 'ENABLED'|'DISABLED'} $args
+     * @param array{Status?: 'ENABLED'|'DISABLED'|null} $args
      */
     public function __construct(array $args = [])
     {

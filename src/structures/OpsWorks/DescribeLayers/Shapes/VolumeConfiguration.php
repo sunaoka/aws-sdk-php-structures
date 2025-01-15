@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $MountPoint
- * @property int $RaidLevel
+ * @property int|null $RaidLevel
  * @property int $NumberOfDisks
  * @property int $Size
- * @property string $VolumeType
- * @property int $Iops
- * @property bool $Encrypted
+ * @property string|null $VolumeType
+ * @property int|null $Iops
+ * @property bool|null $Encrypted
  */
 class VolumeConfiguration extends Shape
 {
     /**
      * @param array{
      *     MountPoint: string,
-     *     RaidLevel?: int,
+     *     RaidLevel?: int|null,
      *     NumberOfDisks: int,
      *     Size: int,
-     *     VolumeType?: string,
-     *     Iops?: int,
-     *     Encrypted?: bool
+     *     VolumeType?: string|null,
+     *     Iops?: int|null,
+     *     Encrypted?: bool|null
      * } $args
      */
     public function __construct(array $args)

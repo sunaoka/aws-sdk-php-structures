@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetRegistry\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RegistryName
- * @property string $RegistryArn
+ * @property string|null $RegistryName
+ * @property string|null $RegistryArn
  */
 class RegistryId extends Shape
 {
     /**
      * @param array{
-     *     RegistryName?: string,
-     *     RegistryArn?: string
+     *     RegistryName?: string|null,
+     *     RegistryArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

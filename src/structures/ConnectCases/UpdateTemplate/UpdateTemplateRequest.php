@@ -5,24 +5,24 @@ namespace Sunaoka\Aws\Structures\ConnectCases\UpdateTemplate;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $domainId
- * @property Shapes\LayoutConfiguration $layoutConfiguration
- * @property string $name
- * @property list<Shapes\RequiredField> $requiredFields
- * @property 'Active'|'Inactive' $status
+ * @property Shapes\LayoutConfiguration|null $layoutConfiguration
+ * @property string|null $name
+ * @property list<Shapes\RequiredField>|null $requiredFields
+ * @property 'Active'|'Inactive'|null $status
  * @property string $templateId
  */
 class UpdateTemplateRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     domainId: string,
-     *     layoutConfiguration?: Shapes\LayoutConfiguration,
-     *     name?: string,
-     *     requiredFields?: list<Shapes\RequiredField>,
-     *     status?: 'Active'|'Inactive',
+     *     layoutConfiguration?: Shapes\LayoutConfiguration|null,
+     *     name?: string|null,
+     *     requiredFields?: list<Shapes\RequiredField>|null,
+     *     status?: 'Active'|'Inactive'|null,
      *     templateId: string
      * } $args
      */

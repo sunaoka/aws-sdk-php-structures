@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property Shapes\Image $SourceImage
  * @property Shapes\Image $TargetImage
- * @property float $SimilarityThreshold
- * @property 'NONE'|'AUTO'|'LOW'|'MEDIUM'|'HIGH' $QualityFilter
+ * @property float|null $SimilarityThreshold
+ * @property 'NONE'|'AUTO'|'LOW'|'MEDIUM'|'HIGH'|null $QualityFilter
  */
 class CompareFacesRequest extends Request
 {
@@ -16,8 +16,8 @@ class CompareFacesRequest extends Request
      * @param array{
      *     SourceImage: Shapes\Image,
      *     TargetImage: Shapes\Image,
-     *     SimilarityThreshold?: float,
-     *     QualityFilter?: 'NONE'|'AUTO'|'LOW'|'MEDIUM'|'HIGH'
+     *     SimilarityThreshold?: float|null,
+     *     QualityFilter?: 'NONE'|'AUTO'|'LOW'|'MEDIUM'|'HIGH'|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVpnTunnelOptions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $LogEnabled
- * @property string $LogGroupArn
- * @property string $LogOutputFormat
+ * @property bool|null $LogEnabled
+ * @property string|null $LogGroupArn
+ * @property string|null $LogOutputFormat
  */
 class CloudWatchLogOptions extends Shape
 {
     /**
      * @param array{
-     *     LogEnabled?: bool,
-     *     LogGroupArn?: string,
-     *     LogOutputFormat?: string
+     *     LogEnabled?: bool|null,
+     *     LogGroupArn?: string|null,
+     *     LogOutputFormat?: string|null
      * } $args
      */
     public function __construct(array $args = [])

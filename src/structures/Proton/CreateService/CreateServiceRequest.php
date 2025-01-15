@@ -5,30 +5,30 @@ namespace Sunaoka\Aws\Structures\Proton\CreateService;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $branchName
- * @property string $description
+ * @property string|null $branchName
+ * @property string|null $description
  * @property string $name
- * @property string $repositoryConnectionArn
- * @property string $repositoryId
+ * @property string|null $repositoryConnectionArn
+ * @property string|null $repositoryId
  * @property string $spec
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  * @property string $templateMajorVersion
- * @property string $templateMinorVersion
+ * @property string|null $templateMinorVersion
  * @property string $templateName
  */
 class CreateServiceRequest extends Request
 {
     /**
      * @param array{
-     *     branchName?: string,
-     *     description?: string,
+     *     branchName?: string|null,
+     *     description?: string|null,
      *     name: string,
-     *     repositoryConnectionArn?: string,
-     *     repositoryId?: string,
+     *     repositoryConnectionArn?: string|null,
+     *     repositoryId?: string|null,
      *     spec: string,
-     *     tags?: list<Shapes\Tag>,
+     *     tags?: list<Shapes\Tag>|null,
      *     templateMajorVersion: string,
-     *     templateMinorVersion?: string,
+     *     templateMinorVersion?: string|null,
      *     templateName: string
      * } $args
      */

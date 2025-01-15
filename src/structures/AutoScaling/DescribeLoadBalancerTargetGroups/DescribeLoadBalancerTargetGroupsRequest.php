@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AutoScalingGroupName
- * @property string $NextToken
- * @property int $MaxRecords
+ * @property string|null $NextToken
+ * @property int|null $MaxRecords
  */
 class DescribeLoadBalancerTargetGroupsRequest extends Request
 {
     /**
      * @param array{
      *     AutoScalingGroupName: string,
-     *     NextToken?: string,
-     *     MaxRecords?: int
+     *     NextToken?: string|null,
+     *     MaxRecords?: int|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Outposts\ListCapacityTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CapacityTaskId
- * @property string $OutpostId
- * @property string $OrderId
- * @property 'REQUESTED'|'IN_PROGRESS'|'FAILED'|'COMPLETED'|'WAITING_FOR_EVACUATION'|'CANCELLATION_IN_PROGRESS'|'CANCELLED' $CapacityTaskStatus
- * @property \Aws\Api\DateTimeResult $CreationDate
- * @property \Aws\Api\DateTimeResult $CompletionDate
- * @property \Aws\Api\DateTimeResult $LastModifiedDate
+ * @property string|null $CapacityTaskId
+ * @property string|null $OutpostId
+ * @property string|null $OrderId
+ * @property 'REQUESTED'|'IN_PROGRESS'|'FAILED'|'COMPLETED'|'WAITING_FOR_EVACUATION'|'CANCELLATION_IN_PROGRESS'|'CANCELLED'|null $CapacityTaskStatus
+ * @property \Aws\Api\DateTimeResult|null $CreationDate
+ * @property \Aws\Api\DateTimeResult|null $CompletionDate
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedDate
  */
 class CapacityTaskSummary extends Shape
 {
     /**
      * @param array{
-     *     CapacityTaskId?: string,
-     *     OutpostId?: string,
-     *     OrderId?: string,
-     *     CapacityTaskStatus?: 'REQUESTED'|'IN_PROGRESS'|'FAILED'|'COMPLETED'|'WAITING_FOR_EVACUATION'|'CANCELLATION_IN_PROGRESS'|'CANCELLED',
-     *     CreationDate?: \Aws\Api\DateTimeResult,
-     *     CompletionDate?: \Aws\Api\DateTimeResult,
-     *     LastModifiedDate?: \Aws\Api\DateTimeResult
+     *     CapacityTaskId?: string|null,
+     *     OutpostId?: string|null,
+     *     OrderId?: string|null,
+     *     CapacityTaskStatus?: 'REQUESTED'|'IN_PROGRESS'|'FAILED'|'COMPLETED'|'WAITING_FOR_EVACUATION'|'CANCELLATION_IN_PROGRESS'|'CANCELLED'|null,
+     *     CreationDate?: \Aws\Api\DateTimeResult|null,
+     *     CompletionDate?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

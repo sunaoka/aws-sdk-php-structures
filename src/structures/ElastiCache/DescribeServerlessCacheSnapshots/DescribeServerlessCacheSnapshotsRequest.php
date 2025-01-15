@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ElastiCache\DescribeServerlessCacheSnapshots;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ServerlessCacheName
- * @property string $ServerlessCacheSnapshotName
- * @property string $SnapshotType
- * @property string $NextToken
- * @property int $MaxResults
+ * @property string|null $ServerlessCacheName
+ * @property string|null $ServerlessCacheSnapshotName
+ * @property string|null $SnapshotType
+ * @property string|null $NextToken
+ * @property int|null $MaxResults
  */
 class DescribeServerlessCacheSnapshotsRequest extends Request
 {
     /**
      * @param array{
-     *     ServerlessCacheName?: string,
-     *     ServerlessCacheSnapshotName?: string,
-     *     SnapshotType?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int
+     *     ServerlessCacheName?: string|null,
+     *     ServerlessCacheSnapshotName?: string|null,
+     *     SnapshotType?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int|null
      * } $args
      */
     public function __construct(array $args = [])

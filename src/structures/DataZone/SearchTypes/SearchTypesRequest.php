@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainIdentifier
- * @property Shapes\FilterClause $filters
+ * @property Shapes\FilterClause|null $filters
  * @property bool $managed
- * @property int<1, 50> $maxResults
- * @property string $nextToken
- * @property list<Shapes\SearchInItem> $searchIn
+ * @property int<1, 50>|null $maxResults
+ * @property string|null $nextToken
+ * @property list<Shapes\SearchInItem>|null $searchIn
  * @property 'ASSET_TYPE'|'FORM_TYPE'|'LINEAGE_NODE_TYPE' $searchScope
- * @property string $searchText
- * @property Shapes\SearchSort $sort
+ * @property string|null $searchText
+ * @property Shapes\SearchSort|null $sort
  */
 class SearchTypesRequest extends Request
 {
     /**
      * @param array{
      *     domainIdentifier: string,
-     *     filters?: Shapes\FilterClause,
+     *     filters?: Shapes\FilterClause|null,
      *     managed: bool,
-     *     maxResults?: int<1, 50>,
-     *     nextToken?: string,
-     *     searchIn?: list<Shapes\SearchInItem>,
+     *     maxResults?: int<1, 50>|null,
+     *     nextToken?: string|null,
+     *     searchIn?: list<Shapes\SearchInItem>|null,
      *     searchScope: 'ASSET_TYPE'|'FORM_TYPE'|'LINEAGE_NODE_TYPE',
-     *     searchText?: string,
-     *     sort?: Shapes\SearchSort
+     *     searchText?: string|null,
+     *     sort?: Shapes\SearchSort|null
      * } $args
      */
     public function __construct(array $args)

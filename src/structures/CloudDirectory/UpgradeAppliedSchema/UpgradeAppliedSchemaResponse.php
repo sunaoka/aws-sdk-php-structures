@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\UpgradeAppliedSchema;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $UpgradedSchemaArn
- * @property string $DirectoryArn
+ * @property string|null $UpgradedSchemaArn
+ * @property string|null $DirectoryArn
  */
 class UpgradeAppliedSchemaResponse extends Response
 {

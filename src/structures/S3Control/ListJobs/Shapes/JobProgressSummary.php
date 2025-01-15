@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\S3Control\ListJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int<0, max> $TotalNumberOfTasks
- * @property int<0, max> $NumberOfTasksSucceeded
- * @property int<0, max> $NumberOfTasksFailed
- * @property JobTimers $Timers
+ * @property int<0, max>|null $TotalNumberOfTasks
+ * @property int<0, max>|null $NumberOfTasksSucceeded
+ * @property int<0, max>|null $NumberOfTasksFailed
+ * @property JobTimers|null $Timers
  */
 class JobProgressSummary extends Shape
 {
     /**
      * @param array{
-     *     TotalNumberOfTasks?: int<0, max>,
-     *     NumberOfTasksSucceeded?: int<0, max>,
-     *     NumberOfTasksFailed?: int<0, max>,
-     *     Timers?: JobTimers
+     *     TotalNumberOfTasks?: int<0, max>|null,
+     *     NumberOfTasksSucceeded?: int<0, max>|null,
+     *     NumberOfTasksFailed?: int<0, max>|null,
+     *     Timers?: JobTimers|null
      * } $args
      */
     public function __construct(array $args = [])

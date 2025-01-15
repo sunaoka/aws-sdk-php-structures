@@ -12,10 +12,10 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $GranteePrincipalArn
  * @property string $HomeRegion
  * @property 'PENDING_WORKFLOW'|'PENDING_ACCEPT'|'REJECTED'|'ACTIVE'|'FAILED_WORKFLOW'|'DELETED'|'PENDING_DELETE'|'DISABLED'|'WORKFLOW_COMPLETED' $GrantStatus
- * @property string $StatusReason
+ * @property string|null $StatusReason
  * @property string $Version
  * @property list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'> $GrantedOperations
- * @property Options $Options
+ * @property Options|null $Options
  */
 class Grant extends Shape
 {
@@ -28,10 +28,10 @@ class Grant extends Shape
      *     GranteePrincipalArn: string,
      *     HomeRegion: string,
      *     GrantStatus: 'PENDING_WORKFLOW'|'PENDING_ACCEPT'|'REJECTED'|'ACTIVE'|'FAILED_WORKFLOW'|'DELETED'|'PENDING_DELETE'|'DISABLED'|'WORKFLOW_COMPLETED',
-     *     StatusReason?: string,
+     *     StatusReason?: string|null,
      *     Version: string,
      *     GrantedOperations: list<'CreateGrant'|'CheckoutLicense'|'CheckoutBorrowLicense'|'CheckInLicense'|'ExtendConsumptionLicense'|'ListPurchasedLicenses'|'CreateToken'>,
-     *     Options?: Options
+     *     Options?: Options|null
      * } $args
      */
     public function __construct(array $args)

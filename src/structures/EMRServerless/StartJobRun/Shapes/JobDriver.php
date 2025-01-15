@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EMRServerless\StartJobRun\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SparkSubmit $sparkSubmit
- * @property Hive $hive
+ * @property SparkSubmit|null $sparkSubmit
+ * @property Hive|null $hive
  */
 class JobDriver extends Shape
 {
     /**
      * @param array{
-     *     sparkSubmit?: SparkSubmit,
-     *     hive?: Hive
+     *     sparkSubmit?: SparkSubmit|null,
+     *     hive?: Hive|null
      * } $args
      */
     public function __construct(array $args = [])

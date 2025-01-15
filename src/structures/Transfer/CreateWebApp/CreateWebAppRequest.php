@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\WebAppIdentityProviderDetails $IdentityProviderDetails
- * @property string $AccessEndpoint
- * @property Shapes\WebAppUnits $WebAppUnits
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $AccessEndpoint
+ * @property Shapes\WebAppUnits|null $WebAppUnits
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateWebAppRequest extends Request
 {
     /**
      * @param array{
      *     IdentityProviderDetails: Shapes\WebAppIdentityProviderDetails,
-     *     AccessEndpoint?: string,
-     *     WebAppUnits?: Shapes\WebAppUnits,
-     *     Tags?: list<Shapes\Tag>
+     *     AccessEndpoint?: string|null,
+     *     WebAppUnits?: Shapes\WebAppUnits|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|resource|\Psr\Http\Message\StreamInterface $body
  * @property string $contentType
- * @property 'standard'|'optimized' $performanceConfigLatency
+ * @property 'standard'|'optimized'|null $performanceConfigLatency
  */
 class InvokeModelResponse extends Response
 {

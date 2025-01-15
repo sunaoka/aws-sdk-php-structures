@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\AuditManager\BatchCreateDelegationByAssessment\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $comment
- * @property string $controlSetId
- * @property string $roleArn
- * @property 'PROCESS_OWNER'|'RESOURCE_OWNER' $roleType
+ * @property string|null $comment
+ * @property string|null $controlSetId
+ * @property string|null $roleArn
+ * @property 'PROCESS_OWNER'|'RESOURCE_OWNER'|null $roleType
  */
 class CreateDelegationRequest extends Shape
 {
     /**
      * @param array{
-     *     comment?: string,
-     *     controlSetId?: string,
-     *     roleArn?: string,
-     *     roleType?: 'PROCESS_OWNER'|'RESOURCE_OWNER'
+     *     comment?: string|null,
+     *     controlSetId?: string|null,
+     *     roleArn?: string|null,
+     *     roleType?: 'PROCESS_OWNER'|'RESOURCE_OWNER'|null
      * } $args
      */
     public function __construct(array $args = [])

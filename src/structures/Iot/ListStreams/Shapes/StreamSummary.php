@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Iot\ListStreams\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $streamId
- * @property string $streamArn
- * @property int<0, 65535> $streamVersion
- * @property string $description
+ * @property string|null $streamId
+ * @property string|null $streamArn
+ * @property int<0, 65535>|null $streamVersion
+ * @property string|null $description
  */
 class StreamSummary extends Shape
 {
     /**
      * @param array{
-     *     streamId?: string,
-     *     streamArn?: string,
-     *     streamVersion?: int<0, 65535>,
-     *     description?: string
+     *     streamId?: string|null,
+     *     streamArn?: string|null,
+     *     streamVersion?: int<0, 65535>|null,
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args = [])

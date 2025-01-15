@@ -6,38 +6,38 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DatasetName
- * @property string $EncryptionKeyArn
- * @property 'SSE-KMS'|'SSE-S3' $EncryptionMode
+ * @property string|null $EncryptionKeyArn
+ * @property 'SSE-KMS'|'SSE-S3'|null $EncryptionMode
  * @property string $Name
- * @property 'ENABLE'|'DISABLE' $LogSubscription
- * @property int $MaxCapacity
- * @property int<0, max> $MaxRetries
+ * @property 'ENABLE'|'DISABLE'|null $LogSubscription
+ * @property int|null $MaxCapacity
+ * @property int<0, max>|null $MaxRetries
  * @property Shapes\S3Location $OutputLocation
- * @property Shapes\ProfileConfiguration $Configuration
- * @property list<Shapes\ValidationConfiguration> $ValidationConfigurations
+ * @property Shapes\ProfileConfiguration|null $Configuration
+ * @property list<Shapes\ValidationConfiguration>|null $ValidationConfigurations
  * @property string $RoleArn
- * @property array<string, string> $Tags
- * @property int<0, max> $Timeout
- * @property Shapes\JobSample $JobSample
+ * @property array<string, string>|null $Tags
+ * @property int<0, max>|null $Timeout
+ * @property Shapes\JobSample|null $JobSample
  */
 class CreateProfileJobRequest extends Request
 {
     /**
      * @param array{
      *     DatasetName: string,
-     *     EncryptionKeyArn?: string,
-     *     EncryptionMode?: 'SSE-KMS'|'SSE-S3',
+     *     EncryptionKeyArn?: string|null,
+     *     EncryptionMode?: 'SSE-KMS'|'SSE-S3'|null,
      *     Name: string,
-     *     LogSubscription?: 'ENABLE'|'DISABLE',
-     *     MaxCapacity?: int,
-     *     MaxRetries?: int<0, max>,
+     *     LogSubscription?: 'ENABLE'|'DISABLE'|null,
+     *     MaxCapacity?: int|null,
+     *     MaxRetries?: int<0, max>|null,
      *     OutputLocation: Shapes\S3Location,
-     *     Configuration?: Shapes\ProfileConfiguration,
-     *     ValidationConfigurations?: list<Shapes\ValidationConfiguration>,
+     *     Configuration?: Shapes\ProfileConfiguration|null,
+     *     ValidationConfigurations?: list<Shapes\ValidationConfiguration>|null,
      *     RoleArn: string,
-     *     Tags?: array<string, string>,
-     *     Timeout?: int<0, max>,
-     *     JobSample?: Shapes\JobSample
+     *     Tags?: array<string, string>|null,
+     *     Timeout?: int<0, max>|null,
+     *     JobSample?: Shapes\JobSample|null
      * } $args
      */
     public function __construct(array $args)

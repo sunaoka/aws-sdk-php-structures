@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\SsmSap\ListOperationEvents;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\OperationEvent> $OperationEvents
- * @property string $NextToken
+ * @property list<Shapes\OperationEvent>|null $OperationEvents
+ * @property string|null $NextToken
  */
 class ListOperationEventsResponse extends Response
 {

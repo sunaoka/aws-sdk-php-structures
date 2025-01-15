@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DirectoryServiceData\DescribeUser;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $DirectoryId
- * @property string $DistinguishedName
- * @property string $EmailAddress
- * @property bool $Enabled
- * @property string $GivenName
- * @property array<string, Shapes\AttributeValue> $OtherAttributes
- * @property string $Realm
- * @property string $SAMAccountName
- * @property string $SID
- * @property string $Surname
- * @property string $UserPrincipalName
+ * @property string|null $DirectoryId
+ * @property string|null $DistinguishedName
+ * @property string|null $EmailAddress
+ * @property bool|null $Enabled
+ * @property string|null $GivenName
+ * @property array<string, Shapes\AttributeValue>|null $OtherAttributes
+ * @property string|null $Realm
+ * @property string|null $SAMAccountName
+ * @property string|null $SID
+ * @property string|null $Surname
+ * @property string|null $UserPrincipalName
  */
 class DescribeUserResponse extends Response
 {

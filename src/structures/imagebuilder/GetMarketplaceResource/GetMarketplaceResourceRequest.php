@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property 'COMPONENT_DATA'|'COMPONENT_ARTIFACT' $resourceType
  * @property string $resourceArn
- * @property string $resourceLocation
+ * @property string|null $resourceLocation
  */
 class GetMarketplaceResourceRequest extends Request
 {
@@ -15,7 +15,7 @@ class GetMarketplaceResourceRequest extends Request
      * @param array{
      *     resourceType: 'COMPONENT_DATA'|'COMPONENT_ARTIFACT',
      *     resourceArn: string,
-     *     resourceLocation?: string
+     *     resourceLocation?: string|null
      * } $args
      */
     public function __construct(array $args)

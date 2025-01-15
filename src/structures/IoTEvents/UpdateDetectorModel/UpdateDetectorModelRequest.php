@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $detectorModelName
  * @property Shapes\DetectorModelDefinition $detectorModelDefinition
- * @property string $detectorModelDescription
+ * @property string|null $detectorModelDescription
  * @property string $roleArn
- * @property 'BATCH'|'SERIAL' $evaluationMethod
+ * @property 'BATCH'|'SERIAL'|null $evaluationMethod
  */
 class UpdateDetectorModelRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateDetectorModelRequest extends Request
      * @param array{
      *     detectorModelName: string,
      *     detectorModelDefinition: Shapes\DetectorModelDefinition,
-     *     detectorModelDescription?: string,
+     *     detectorModelDescription?: string|null,
      *     roleArn: string,
-     *     evaluationMethod?: 'BATCH'|'SERIAL'
+     *     evaluationMethod?: 'BATCH'|'SERIAL'|null
      * } $args
      */
     public function __construct(array $args)

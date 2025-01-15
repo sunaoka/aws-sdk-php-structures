@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\RAM\RejectResourceShareInvitation\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $resourceShareArn
- * @property string $resourceShareName
- * @property string $associatedEntity
- * @property 'PRINCIPAL'|'RESOURCE' $associationType
- * @property 'ASSOCIATING'|'ASSOCIATED'|'FAILED'|'DISASSOCIATING'|'DISASSOCIATED' $status
- * @property string $statusMessage
- * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedTime
- * @property bool $external
+ * @property string|null $resourceShareArn
+ * @property string|null $resourceShareName
+ * @property string|null $associatedEntity
+ * @property 'PRINCIPAL'|'RESOURCE'|null $associationType
+ * @property 'ASSOCIATING'|'ASSOCIATED'|'FAILED'|'DISASSOCIATING'|'DISASSOCIATED'|null $status
+ * @property string|null $statusMessage
+ * @property \Aws\Api\DateTimeResult|null $creationTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedTime
+ * @property bool|null $external
  */
 class ResourceShareAssociation extends Shape
 {
     /**
      * @param array{
-     *     resourceShareArn?: string,
-     *     resourceShareName?: string,
-     *     associatedEntity?: string,
-     *     associationType?: 'PRINCIPAL'|'RESOURCE',
-     *     status?: 'ASSOCIATING'|'ASSOCIATED'|'FAILED'|'DISASSOCIATING'|'DISASSOCIATED',
-     *     statusMessage?: string,
-     *     creationTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     external?: bool
+     *     resourceShareArn?: string|null,
+     *     resourceShareName?: string|null,
+     *     associatedEntity?: string|null,
+     *     associationType?: 'PRINCIPAL'|'RESOURCE'|null,
+     *     status?: 'ASSOCIATING'|'ASSOCIATED'|'FAILED'|'DISASSOCIATING'|'DISASSOCIATED'|null,
+     *     statusMessage?: string|null,
+     *     creationTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     external?: bool|null
      * } $args
      */
     public function __construct(array $args = [])

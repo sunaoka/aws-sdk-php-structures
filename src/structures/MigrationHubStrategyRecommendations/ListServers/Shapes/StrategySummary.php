@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListServers
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $count
- * @property 'Rehost'|'Retirement'|'Refactor'|'Replatform'|'Retain'|'Relocate'|'Repurchase' $strategy
+ * @property int|null $count
+ * @property 'Rehost'|'Retirement'|'Refactor'|'Replatform'|'Retain'|'Relocate'|'Repurchase'|null $strategy
  */
 class StrategySummary extends Shape
 {
     /**
      * @param array{
-     *     count?: int,
-     *     strategy?: 'Rehost'|'Retirement'|'Refactor'|'Replatform'|'Retain'|'Relocate'|'Repurchase'
+     *     count?: int|null,
+     *     strategy?: 'Rehost'|'Retirement'|'Refactor'|'Replatform'|'Retain'|'Relocate'|'Repurchase'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\KinesisVideo\DescribeMediaStorageConfiguration\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $StreamARN
+ * @property string|null $StreamARN
  * @property 'ENABLED'|'DISABLED' $Status
  */
 class MediaStorageConfiguration extends Shape
 {
     /**
      * @param array{
-     *     StreamARN?: string,
+     *     StreamARN?: string|null,
      *     Status: 'ENABLED'|'DISABLED'
      * } $args
      */

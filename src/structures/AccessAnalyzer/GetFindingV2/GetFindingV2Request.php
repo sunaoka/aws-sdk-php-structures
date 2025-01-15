@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $analyzerArn
  * @property string $id
- * @property int $maxResults
- * @property string $nextToken
+ * @property int|null $maxResults
+ * @property string|null $nextToken
  */
 class GetFindingV2Request extends Request
 {
@@ -16,8 +16,8 @@ class GetFindingV2Request extends Request
      * @param array{
      *     analyzerArn: string,
      *     id: string,
-     *     maxResults?: int,
-     *     nextToken?: string
+     *     maxResults?: int|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DataZone\UpdateProjectProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $domainIdentifier
- * @property string $domainUnitIdentifier
- * @property list<Shapes\EnvironmentConfiguration> $environmentConfigurations
+ * @property string|null $domainUnitIdentifier
+ * @property list<Shapes\EnvironmentConfiguration>|null $environmentConfigurations
  * @property string $identifier
- * @property string $name
- * @property 'ENABLED'|'DISABLED' $status
+ * @property string|null $name
+ * @property 'ENABLED'|'DISABLED'|null $status
  */
 class UpdateProjectProfileRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     domainIdentifier: string,
-     *     domainUnitIdentifier?: string,
-     *     environmentConfigurations?: list<Shapes\EnvironmentConfiguration>,
+     *     domainUnitIdentifier?: string|null,
+     *     environmentConfigurations?: list<Shapes\EnvironmentConfiguration>|null,
      *     identifier: string,
-     *     name?: string,
-     *     status?: 'ENABLED'|'DISABLED'
+     *     name?: string|null,
+     *     status?: 'ENABLED'|'DISABLED'|null
      * } $args
      */
     public function __construct(array $args)

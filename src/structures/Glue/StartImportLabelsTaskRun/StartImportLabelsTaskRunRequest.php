@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $TransformId
  * @property string $InputS3Path
- * @property bool $ReplaceAllLabels
+ * @property bool|null $ReplaceAllLabels
  */
 class StartImportLabelsTaskRunRequest extends Request
 {
@@ -15,7 +15,7 @@ class StartImportLabelsTaskRunRequest extends Request
      * @param array{
      *     TransformId: string,
      *     InputS3Path: string,
-     *     ReplaceAllLabels?: bool
+     *     ReplaceAllLabels?: bool|null
      * } $args
      */
     public function __construct(array $args)

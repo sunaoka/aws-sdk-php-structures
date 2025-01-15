@@ -6,36 +6,36 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property list<Shapes\GlueTable> $InputRecordTables
  * @property Shapes\TransformParameters $Parameters
  * @property string $Role
- * @property string $GlueVersion
- * @property double $MaxCapacity
- * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X' $WorkerType
- * @property int $NumberOfWorkers
- * @property int<1, max> $Timeout
- * @property int $MaxRetries
- * @property array<string, string> $Tags
- * @property Shapes\TransformEncryption $TransformEncryption
+ * @property string|null $GlueVersion
+ * @property double|null $MaxCapacity
+ * @property 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null $WorkerType
+ * @property int|null $NumberOfWorkers
+ * @property int<1, max>|null $Timeout
+ * @property int|null $MaxRetries
+ * @property array<string, string>|null $Tags
+ * @property Shapes\TransformEncryption|null $TransformEncryption
  */
 class CreateMLTransformRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     InputRecordTables: list<Shapes\GlueTable>,
      *     Parameters: Shapes\TransformParameters,
      *     Role: string,
-     *     GlueVersion?: string,
-     *     MaxCapacity?: double,
-     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X',
-     *     NumberOfWorkers?: int,
-     *     Timeout?: int<1, max>,
-     *     MaxRetries?: int,
-     *     Tags?: array<string, string>,
-     *     TransformEncryption?: Shapes\TransformEncryption
+     *     GlueVersion?: string|null,
+     *     MaxCapacity?: double|null,
+     *     WorkerType?: 'Standard'|'G.1X'|'G.2X'|'G.025X'|'G.4X'|'G.8X'|'Z.2X'|null,
+     *     NumberOfWorkers?: int|null,
+     *     Timeout?: int<1, max>|null,
+     *     MaxRetries?: int|null,
+     *     Tags?: array<string, string>|null,
+     *     TransformEncryption?: Shapes\TransformEncryption|null
      * } $args
      */
     public function __construct(array $args)

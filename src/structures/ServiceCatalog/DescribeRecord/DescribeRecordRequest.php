@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeRecord;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AcceptLanguage
+ * @property string|null $AcceptLanguage
  * @property string $Id
- * @property string $PageToken
- * @property int<0, 20> $PageSize
+ * @property string|null $PageToken
+ * @property int<0, 20>|null $PageSize
  */
 class DescribeRecordRequest extends Request
 {
     /**
      * @param array{
-     *     AcceptLanguage?: string,
+     *     AcceptLanguage?: string|null,
      *     Id: string,
-     *     PageToken?: string,
-     *     PageSize?: int<0, 20>
+     *     PageToken?: string|null,
+     *     PageSize?: int<0, 20>|null
      * } $args
      */
     public function __construct(array $args)

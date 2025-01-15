@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ZoneName
- * @property string $SubnetId
+ * @property string|null $ZoneName
+ * @property string|null $SubnetId
  */
 class AvailabilityZone extends Shape
 {
     /**
      * @param array{
-     *     ZoneName?: string,
-     *     SubnetId?: string
+     *     ZoneName?: string|null,
+     *     SubnetId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

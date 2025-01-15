@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\ListMediaPipelineKinesis
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\KinesisVideoStreamPoolSummary> $KinesisVideoStreamPools
- * @property string $NextToken
+ * @property list<Shapes\KinesisVideoStreamPoolSummary>|null $KinesisVideoStreamPools
+ * @property string|null $NextToken
  */
 class ListMediaPipelineKinesisVideoStreamPoolsResponse extends Response
 {

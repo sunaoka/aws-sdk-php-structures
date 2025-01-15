@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $environmentId
  * @property string $userName
  * @property string $iamRole
- * @property array<string, string> $tags
- * @property string $clientToken
+ * @property array<string, string>|null $tags
+ * @property string|null $clientToken
  */
 class CreateKxUserRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateKxUserRequest extends Request
      *     environmentId: string,
      *     userName: string,
      *     iamRole: string,
-     *     tags?: array<string, string>,
-     *     clientToken?: string
+     *     tags?: array<string, string>|null,
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

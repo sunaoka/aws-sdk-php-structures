@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $OrganizationId
  * @property string $Name
  * @property 'ROOM'|'EQUIPMENT' $Type
- * @property string $Description
- * @property bool $HiddenFromGlobalAddressList
+ * @property string|null $Description
+ * @property bool|null $HiddenFromGlobalAddressList
  */
 class CreateResourceRequest extends Request
 {
@@ -18,8 +18,8 @@ class CreateResourceRequest extends Request
      *     OrganizationId: string,
      *     Name: string,
      *     Type: 'ROOM'|'EQUIPMENT',
-     *     Description?: string,
-     *     HiddenFromGlobalAddressList?: bool
+     *     Description?: string|null,
+     *     HiddenFromGlobalAddressList?: bool|null
      * } $args
      */
     public function __construct(array $args)

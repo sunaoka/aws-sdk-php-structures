@@ -11,14 +11,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\TestConfigurationLatestVersion $latestVersion
  * @property int $testConfigurationVersion
  * @property 'Active'|'Deleting' $status
- * @property string $statusReason
+ * @property string|null $statusReason
  * @property \Aws\Api\DateTimeResult $creationTime
  * @property \Aws\Api\DateTimeResult $lastUpdateTime
- * @property string $description
+ * @property string|null $description
  * @property list<Shapes\Resource> $resources
  * @property array<string, string> $properties
- * @property array<string, string> $tags
- * @property Shapes\ServiceSettings $serviceSettings
+ * @property array<string, string>|null $tags
+ * @property Shapes\ServiceSettings|null $serviceSettings
  */
 class GetTestConfigurationResponse extends Response
 {

@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeEngineVersions
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Version
- * @property string $Lifecycle
- * @property 'beta'|'prod' $ReleaseStatus
- * @property \Aws\Api\DateTimeResult $LaunchDate
- * @property \Aws\Api\DateTimeResult $AutoUpgradeDate
- * @property \Aws\Api\DateTimeResult $DeprecationDate
- * @property \Aws\Api\DateTimeResult $ForceUpgradeDate
- * @property list<string> $AvailableUpgrades
+ * @property string|null $Version
+ * @property string|null $Lifecycle
+ * @property 'beta'|'prod'|null $ReleaseStatus
+ * @property \Aws\Api\DateTimeResult|null $LaunchDate
+ * @property \Aws\Api\DateTimeResult|null $AutoUpgradeDate
+ * @property \Aws\Api\DateTimeResult|null $DeprecationDate
+ * @property \Aws\Api\DateTimeResult|null $ForceUpgradeDate
+ * @property list<string>|null $AvailableUpgrades
  */
 class EngineVersion extends Shape
 {
     /**
      * @param array{
-     *     Version?: string,
-     *     Lifecycle?: string,
-     *     ReleaseStatus?: 'beta'|'prod',
-     *     LaunchDate?: \Aws\Api\DateTimeResult,
-     *     AutoUpgradeDate?: \Aws\Api\DateTimeResult,
-     *     DeprecationDate?: \Aws\Api\DateTimeResult,
-     *     ForceUpgradeDate?: \Aws\Api\DateTimeResult,
-     *     AvailableUpgrades?: list<string>
+     *     Version?: string|null,
+     *     Lifecycle?: string|null,
+     *     ReleaseStatus?: 'beta'|'prod'|null,
+     *     LaunchDate?: \Aws\Api\DateTimeResult|null,
+     *     AutoUpgradeDate?: \Aws\Api\DateTimeResult|null,
+     *     DeprecationDate?: \Aws\Api\DateTimeResult|null,
+     *     ForceUpgradeDate?: \Aws\Api\DateTimeResult|null,
+     *     AvailableUpgrades?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

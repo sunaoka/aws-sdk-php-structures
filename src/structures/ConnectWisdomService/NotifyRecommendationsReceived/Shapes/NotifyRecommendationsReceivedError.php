@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ConnectWisdomService\NotifyRecommendationsRecei
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $message
- * @property string $recommendationId
+ * @property string|null $message
+ * @property string|null $recommendationId
  */
 class NotifyRecommendationsReceivedError extends Shape
 {
     /**
      * @param array{
-     *     message?: string,
-     *     recommendationId?: string
+     *     message?: string|null,
+     *     recommendationId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

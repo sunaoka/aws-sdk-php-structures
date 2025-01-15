@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Personalize\DescribeEventTracker\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $name
- * @property string $eventTrackerArn
- * @property string $accountId
- * @property string $trackingId
- * @property string $datasetGroupArn
- * @property string $status
- * @property \Aws\Api\DateTimeResult $creationDateTime
- * @property \Aws\Api\DateTimeResult $lastUpdatedDateTime
+ * @property string|null $name
+ * @property string|null $eventTrackerArn
+ * @property string|null $accountId
+ * @property string|null $trackingId
+ * @property string|null $datasetGroupArn
+ * @property string|null $status
+ * @property \Aws\Api\DateTimeResult|null $creationDateTime
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedDateTime
  */
 class EventTracker extends Shape
 {
     /**
      * @param array{
-     *     name?: string,
-     *     eventTrackerArn?: string,
-     *     accountId?: string,
-     *     trackingId?: string,
-     *     datasetGroupArn?: string,
-     *     status?: string,
-     *     creationDateTime?: \Aws\Api\DateTimeResult,
-     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult
+     *     name?: string|null,
+     *     eventTrackerArn?: string|null,
+     *     accountId?: string|null,
+     *     trackingId?: string|null,
+     *     datasetGroupArn?: string|null,
+     *     status?: string|null,
+     *     creationDateTime?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdatedDateTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

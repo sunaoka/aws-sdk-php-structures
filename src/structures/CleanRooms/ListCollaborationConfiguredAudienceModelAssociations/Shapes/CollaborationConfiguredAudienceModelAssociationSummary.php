@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $collaborationArn
  * @property string $collaborationId
  * @property string $creatorAccountId
- * @property string $description
+ * @property string|null $description
  */
 class CollaborationConfiguredAudienceModelAssociationSummary extends Shape
 {
@@ -27,7 +27,7 @@ class CollaborationConfiguredAudienceModelAssociationSummary extends Shape
      *     collaborationArn: string,
      *     collaborationId: string,
      *     creatorAccountId: string,
-     *     description?: string
+     *     description?: string|null
      * } $args
      */
     public function __construct(array $args)

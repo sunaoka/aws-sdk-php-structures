@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\EventBridge\ListEventSources\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $CreatedBy
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $ExpirationTime
- * @property string $Name
- * @property 'PENDING'|'ACTIVE'|'DELETED' $State
+ * @property string|null $Arn
+ * @property string|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $ExpirationTime
+ * @property string|null $Name
+ * @property 'PENDING'|'ACTIVE'|'DELETED'|null $State
  */
 class EventSource extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     CreatedBy?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     ExpirationTime?: \Aws\Api\DateTimeResult,
-     *     Name?: string,
-     *     State?: 'PENDING'|'ACTIVE'|'DELETED'
+     *     Arn?: string|null,
+     *     CreatedBy?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     ExpirationTime?: \Aws\Api\DateTimeResult|null,
+     *     Name?: string|null,
+     *     State?: 'PENDING'|'ACTIVE'|'DELETED'|null
      * } $args
      */
     public function __construct(array $args = [])

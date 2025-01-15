@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ec2\ReplaceRouteTableAssociation;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property bool $DryRun
+ * @property bool|null $DryRun
  * @property string $AssociationId
  * @property string $RouteTableId
  */
@@ -13,7 +13,7 @@ class ReplaceRouteTableAssociationRequest extends Request
 {
     /**
      * @param array{
-     *     DryRun?: bool,
+     *     DryRun?: bool|null,
      *     AssociationId: string,
      *     RouteTableId: string
      * } $args

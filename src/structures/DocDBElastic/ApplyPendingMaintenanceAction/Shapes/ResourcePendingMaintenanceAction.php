@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DocDBElastic\ApplyPendingMaintenanceAction\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<PendingMaintenanceActionDetails> $pendingMaintenanceActionDetails
- * @property string $resourceArn
+ * @property list<PendingMaintenanceActionDetails>|null $pendingMaintenanceActionDetails
+ * @property string|null $resourceArn
  */
 class ResourcePendingMaintenanceAction extends Shape
 {
     /**
      * @param array{
-     *     pendingMaintenanceActionDetails?: list<PendingMaintenanceActionDetails>,
-     *     resourceArn?: string
+     *     pendingMaintenanceActionDetails?: list<PendingMaintenanceActionDetails>|null,
+     *     resourceArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

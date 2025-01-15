@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $VerifiedAccessInstanceId
  * @property Shapes\VerifiedAccessLogOptions $AccessLogs
- * @property bool $DryRun
- * @property string $ClientToken
+ * @property bool|null $DryRun
+ * @property string|null $ClientToken
  */
 class ModifyVerifiedAccessInstanceLoggingConfigurationRequest extends Request
 {
@@ -16,8 +16,8 @@ class ModifyVerifiedAccessInstanceLoggingConfigurationRequest extends Request
      * @param array{
      *     VerifiedAccessInstanceId: string,
      *     AccessLogs: Shapes\VerifiedAccessLogOptions,
-     *     DryRun?: bool,
-     *     ClientToken?: string
+     *     DryRun?: bool|null,
+     *     ClientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'SMART_ON_FHIR_V1'|'AWS_AUTH' $AuthorizationStrategy
- * @property bool $FineGrainedAuthorizationEnabled
- * @property string $Metadata
- * @property string $IdpLambdaArn
+ * @property bool|null $FineGrainedAuthorizationEnabled
+ * @property string|null $Metadata
+ * @property string|null $IdpLambdaArn
  */
 class IdentityProviderConfiguration extends Shape
 {
     /**
      * @param array{
      *     AuthorizationStrategy: 'SMART_ON_FHIR_V1'|'AWS_AUTH',
-     *     FineGrainedAuthorizationEnabled?: bool,
-     *     Metadata?: string,
-     *     IdpLambdaArn?: string
+     *     FineGrainedAuthorizationEnabled?: bool|null,
+     *     Metadata?: string|null,
+     *     IdpLambdaArn?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LicenseManagerLinuxSubscriptions\ListLinuxSubsc
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property list<Shapes\Subscription> $Subscriptions
+ * @property string|null $NextToken
+ * @property list<Shapes\Subscription>|null $Subscriptions
  */
 class ListLinuxSubscriptionsResponse extends Response
 {

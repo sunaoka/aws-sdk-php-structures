@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeAccountAttribu
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AccountQuota> $AccountQuotas
- * @property string $UniqueAccountIdentifier
+ * @property list<Shapes\AccountQuota>|null $AccountQuotas
+ * @property string|null $UniqueAccountIdentifier
  */
 class DescribeAccountAttributesResponse extends Response
 {

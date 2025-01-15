@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\NetworkManager\UpdateSite\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Address
- * @property string $Latitude
- * @property string $Longitude
+ * @property string|null $Address
+ * @property string|null $Latitude
+ * @property string|null $Longitude
  */
 class Location extends Shape
 {
     /**
      * @param array{
-     *     Address?: string,
-     *     Latitude?: string,
-     *     Longitude?: string
+     *     Address?: string|null,
+     *     Latitude?: string|null,
+     *     Longitude?: string|null
      * } $args
      */
     public function __construct(array $args = [])

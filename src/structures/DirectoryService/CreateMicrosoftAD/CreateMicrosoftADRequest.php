@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $ShortName
+ * @property string|null $ShortName
  * @property string $Password
- * @property string $Description
+ * @property string|null $Description
  * @property Shapes\DirectoryVpcSettings $VpcSettings
- * @property 'Enterprise'|'Standard' $Edition
- * @property list<Shapes\Tag> $Tags
+ * @property 'Enterprise'|'Standard'|null $Edition
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateMicrosoftADRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     ShortName?: string,
+     *     ShortName?: string|null,
      *     Password: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     VpcSettings: Shapes\DirectoryVpcSettings,
-     *     Edition?: 'Enterprise'|'Standard',
-     *     Tags?: list<Shapes\Tag>
+     *     Edition?: 'Enterprise'|'Standard'|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

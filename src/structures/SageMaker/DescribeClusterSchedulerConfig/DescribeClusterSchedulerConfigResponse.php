@@ -10,14 +10,14 @@ use Sunaoka\Aws\Structures\Response;
  * @property string $Name
  * @property int $ClusterSchedulerConfigVersion
  * @property 'Creating'|'CreateFailed'|'CreateRollbackFailed'|'Created'|'Updating'|'UpdateFailed'|'UpdateRollbackFailed'|'Updated'|'Deleting'|'DeleteFailed'|'DeleteRollbackFailed'|'Deleted' $Status
- * @property string $FailureReason
- * @property string $ClusterArn
- * @property Shapes\SchedulerConfig $SchedulerConfig
- * @property string $Description
+ * @property string|null $FailureReason
+ * @property string|null $ClusterArn
+ * @property Shapes\SchedulerConfig|null $SchedulerConfig
+ * @property string|null $Description
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property Shapes\UserContext $CreatedBy
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property Shapes\UserContext $LastModifiedBy
+ * @property Shapes\UserContext|null $CreatedBy
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
+ * @property Shapes\UserContext|null $LastModifiedBy
  */
 class DescribeClusterSchedulerConfigResponse extends Response
 {

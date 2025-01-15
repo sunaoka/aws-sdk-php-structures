@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\AgentCollaboratorSummary> $agentCollaboratorSummaries
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListAgentCollaboratorsResponse extends Response
 {

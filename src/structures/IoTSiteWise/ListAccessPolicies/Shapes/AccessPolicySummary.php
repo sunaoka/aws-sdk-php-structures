@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property Identity $identity
  * @property Resource $resource
  * @property 'ADMINISTRATOR'|'VIEWER' $permission
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property \Aws\Api\DateTimeResult $lastUpdateDate
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property \Aws\Api\DateTimeResult|null $lastUpdateDate
  */
 class AccessPolicySummary extends Shape
 {
@@ -20,8 +20,8 @@ class AccessPolicySummary extends Shape
      *     identity: Identity,
      *     resource: Resource,
      *     permission: 'ADMINISTRATOR'|'VIEWER',
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     lastUpdateDate?: \Aws\Api\DateTimeResult
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     lastUpdateDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

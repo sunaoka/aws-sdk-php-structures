@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3\PutBucketReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SseKmsEncryptedObjects $SseKmsEncryptedObjects
- * @property ReplicaModifications $ReplicaModifications
+ * @property SseKmsEncryptedObjects|null $SseKmsEncryptedObjects
+ * @property ReplicaModifications|null $ReplicaModifications
  */
 class SourceSelectionCriteria extends Shape
 {
     /**
      * @param array{
-     *     SseKmsEncryptedObjects?: SseKmsEncryptedObjects,
-     *     ReplicaModifications?: ReplicaModifications
+     *     SseKmsEncryptedObjects?: SseKmsEncryptedObjects|null,
+     *     ReplicaModifications?: ReplicaModifications|null
      * } $args
      */
     public function __construct(array $args = [])

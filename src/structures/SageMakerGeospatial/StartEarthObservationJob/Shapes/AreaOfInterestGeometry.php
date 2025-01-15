@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SageMakerGeospatial\StartEarthObservationJob\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property MultiPolygonGeometryInput $MultiPolygonGeometry
- * @property PolygonGeometryInput $PolygonGeometry
+ * @property MultiPolygonGeometryInput|null $MultiPolygonGeometry
+ * @property PolygonGeometryInput|null $PolygonGeometry
  */
 class AreaOfInterestGeometry extends Shape
 {
     /**
      * @param array{
-     *     MultiPolygonGeometry?: MultiPolygonGeometryInput,
-     *     PolygonGeometry?: PolygonGeometryInput
+     *     MultiPolygonGeometry?: MultiPolygonGeometryInput|null,
+     *     PolygonGeometry?: PolygonGeometryInput|null
      * } $args
      */
     public function __construct(array $args = [])

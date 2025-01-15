@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FreeFormLayoutScreenCanvasSizeOptions $ScreenCanvasSizeOptions
+ * @property FreeFormLayoutScreenCanvasSizeOptions|null $ScreenCanvasSizeOptions
  */
 class FreeFormLayoutCanvasSizeOptions extends Shape
 {
     /**
-     * @param array{ScreenCanvasSizeOptions?: FreeFormLayoutScreenCanvasSizeOptions} $args
+     * @param array{ScreenCanvasSizeOptions?: FreeFormLayoutScreenCanvasSizeOptions|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\CognitoIdentity\ListIdentities;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $IdentityPoolId
- * @property list<Shapes\IdentityDescription> $Identities
- * @property string $NextToken
+ * @property string|null $IdentityPoolId
+ * @property list<Shapes\IdentityDescription>|null $Identities
+ * @property string|null $NextToken
  */
 class ListIdentitiesResponse extends Response
 {

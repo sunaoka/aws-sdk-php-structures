@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $SourceDBClusterParameterGroupIdentifier
  * @property string $TargetDBClusterParameterGroupIdentifier
  * @property string $TargetDBClusterParameterGroupDescription
- * @property list<Shapes\Tag> $Tags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CopyDBClusterParameterGroupRequest extends Request
 {
@@ -17,7 +17,7 @@ class CopyDBClusterParameterGroupRequest extends Request
      *     SourceDBClusterParameterGroupIdentifier: string,
      *     TargetDBClusterParameterGroupIdentifier: string,
      *     TargetDBClusterParameterGroupDescription: string,
-     *     Tags?: list<Shapes\Tag>
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

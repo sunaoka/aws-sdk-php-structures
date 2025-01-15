@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\ListTestExecutionResultItems\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property OverallTestResults $overallTestResults
- * @property ConversationLevelTestResults $conversationLevelTestResults
- * @property IntentClassificationTestResults $intentClassificationTestResults
- * @property IntentLevelSlotResolutionTestResults $intentLevelSlotResolutionTestResults
- * @property UtteranceLevelTestResults $utteranceLevelTestResults
+ * @property OverallTestResults|null $overallTestResults
+ * @property ConversationLevelTestResults|null $conversationLevelTestResults
+ * @property IntentClassificationTestResults|null $intentClassificationTestResults
+ * @property IntentLevelSlotResolutionTestResults|null $intentLevelSlotResolutionTestResults
+ * @property UtteranceLevelTestResults|null $utteranceLevelTestResults
  */
 class TestExecutionResultItems extends Shape
 {
     /**
      * @param array{
-     *     overallTestResults?: OverallTestResults,
-     *     conversationLevelTestResults?: ConversationLevelTestResults,
-     *     intentClassificationTestResults?: IntentClassificationTestResults,
-     *     intentLevelSlotResolutionTestResults?: IntentLevelSlotResolutionTestResults,
-     *     utteranceLevelTestResults?: UtteranceLevelTestResults
+     *     overallTestResults?: OverallTestResults|null,
+     *     conversationLevelTestResults?: ConversationLevelTestResults|null,
+     *     intentClassificationTestResults?: IntentClassificationTestResults|null,
+     *     intentLevelSlotResolutionTestResults?: IntentLevelSlotResolutionTestResults|null,
+     *     utteranceLevelTestResults?: UtteranceLevelTestResults|null
      * } $args
      */
     public function __construct(array $args = [])

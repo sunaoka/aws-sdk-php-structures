@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3Control\GetAccessPointForObjectLambda\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Value
- * @property 'PROVISIONING'|'READY' $Status
+ * @property string|null $Value
+ * @property 'PROVISIONING'|'READY'|null $Status
  */
 class ObjectLambdaAccessPointAlias extends Shape
 {
     /**
      * @param array{
-     *     Value?: string,
-     *     Status?: 'PROVISIONING'|'READY'
+     *     Value?: string|null,
+     *     Status?: 'PROVISIONING'|'READY'|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\Glue\GetConnection;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CatalogId
+ * @property string|null $CatalogId
  * @property string $Name
- * @property bool $HidePassword
- * @property 'SPARK'|'ATHENA'|'PYTHON' $ApplyOverrideForComputeEnvironment
+ * @property bool|null $HidePassword
+ * @property 'SPARK'|'ATHENA'|'PYTHON'|null $ApplyOverrideForComputeEnvironment
  */
 class GetConnectionRequest extends Request
 {
     /**
      * @param array{
-     *     CatalogId?: string,
+     *     CatalogId?: string|null,
      *     Name: string,
-     *     HidePassword?: bool,
-     *     ApplyOverrideForComputeEnvironment?: 'SPARK'|'ATHENA'|'PYTHON'
+     *     HidePassword?: bool|null,
+     *     ApplyOverrideForComputeEnvironment?: 'SPARK'|'ATHENA'|'PYTHON'|null
      * } $args
      */
     public function __construct(array $args)

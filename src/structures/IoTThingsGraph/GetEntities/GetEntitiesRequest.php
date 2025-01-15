@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property list<string> $ids
- * @property int $namespaceVersion
+ * @property int|null $namespaceVersion
  */
 class GetEntitiesRequest extends Request
 {
     /**
      * @param array{
      *     ids: list<string>,
-     *     namespaceVersion?: int
+     *     namespaceVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

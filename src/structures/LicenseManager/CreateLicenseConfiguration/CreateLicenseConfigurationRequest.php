@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Name
- * @property string $Description
+ * @property string|null $Description
  * @property 'vCPU'|'Instance'|'Core'|'Socket' $LicenseCountingType
- * @property int $LicenseCount
- * @property bool $LicenseCountHardLimit
- * @property list<string> $LicenseRules
- * @property list<Shapes\Tag> $Tags
- * @property bool $DisassociateWhenNotFound
- * @property list<Shapes\ProductInformation> $ProductInformationList
+ * @property int|null $LicenseCount
+ * @property bool|null $LicenseCountHardLimit
+ * @property list<string>|null $LicenseRules
+ * @property list<Shapes\Tag>|null $Tags
+ * @property bool|null $DisassociateWhenNotFound
+ * @property list<Shapes\ProductInformation>|null $ProductInformationList
  */
 class CreateLicenseConfigurationRequest extends Request
 {
     /**
      * @param array{
      *     Name: string,
-     *     Description?: string,
+     *     Description?: string|null,
      *     LicenseCountingType: 'vCPU'|'Instance'|'Core'|'Socket',
-     *     LicenseCount?: int,
-     *     LicenseCountHardLimit?: bool,
-     *     LicenseRules?: list<string>,
-     *     Tags?: list<Shapes\Tag>,
-     *     DisassociateWhenNotFound?: bool,
-     *     ProductInformationList?: list<Shapes\ProductInformation>
+     *     LicenseCount?: int|null,
+     *     LicenseCountHardLimit?: bool|null,
+     *     LicenseRules?: list<string>|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     DisassociateWhenNotFound?: bool|null,
+     *     ProductInformationList?: list<Shapes\ProductInformation>|null
      * } $args
      */
     public function __construct(array $args)

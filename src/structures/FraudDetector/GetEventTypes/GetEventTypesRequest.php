@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\FraudDetector\GetEventTypes;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $name
- * @property string $nextToken
- * @property int<5, 10> $maxResults
+ * @property string|null $name
+ * @property string|null $nextToken
+ * @property int<5, 10>|null $maxResults
  */
 class GetEventTypesRequest extends Request
 {
     /**
      * @param array{
-     *     name?: string,
-     *     nextToken?: string,
-     *     maxResults?: int<5, 10>
+     *     name?: string|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<5, 10>|null
      * } $args
      */
     public function __construct(array $args = [])

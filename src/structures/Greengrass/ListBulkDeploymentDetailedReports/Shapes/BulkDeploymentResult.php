@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Greengrass\ListBulkDeploymentDetailedReports\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CreatedAt
- * @property string $DeploymentArn
- * @property string $DeploymentId
- * @property string $DeploymentStatus
- * @property 'NewDeployment'|'Redeployment'|'ResetDeployment'|'ForceResetDeployment' $DeploymentType
- * @property list<ErrorDetail> $ErrorDetails
- * @property string $ErrorMessage
- * @property string $GroupArn
+ * @property string|null $CreatedAt
+ * @property string|null $DeploymentArn
+ * @property string|null $DeploymentId
+ * @property string|null $DeploymentStatus
+ * @property 'NewDeployment'|'Redeployment'|'ResetDeployment'|'ForceResetDeployment'|null $DeploymentType
+ * @property list<ErrorDetail>|null $ErrorDetails
+ * @property string|null $ErrorMessage
+ * @property string|null $GroupArn
  */
 class BulkDeploymentResult extends Shape
 {
     /**
      * @param array{
-     *     CreatedAt?: string,
-     *     DeploymentArn?: string,
-     *     DeploymentId?: string,
-     *     DeploymentStatus?: string,
-     *     DeploymentType?: 'NewDeployment'|'Redeployment'|'ResetDeployment'|'ForceResetDeployment',
-     *     ErrorDetails?: list<ErrorDetail>,
-     *     ErrorMessage?: string,
-     *     GroupArn?: string
+     *     CreatedAt?: string|null,
+     *     DeploymentArn?: string|null,
+     *     DeploymentId?: string|null,
+     *     DeploymentStatus?: string|null,
+     *     DeploymentType?: 'NewDeployment'|'Redeployment'|'ResetDeployment'|'ForceResetDeployment'|null,
+     *     ErrorDetails?: list<ErrorDetail>|null,
+     *     ErrorMessage?: string|null,
+     *     GroupArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

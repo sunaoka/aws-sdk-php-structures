@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeCACertificate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $certificateArn
- * @property string $certificateId
- * @property 'ACTIVE'|'INACTIVE' $status
- * @property string $certificatePem
- * @property string $ownedBy
- * @property \Aws\Api\DateTimeResult $creationDate
- * @property 'ENABLE'|'DISABLE' $autoRegistrationStatus
- * @property \Aws\Api\DateTimeResult $lastModifiedDate
- * @property int<1, max> $customerVersion
- * @property string $generationId
- * @property CertificateValidity $validity
- * @property 'DEFAULT'|'SNI_ONLY' $certificateMode
+ * @property string|null $certificateArn
+ * @property string|null $certificateId
+ * @property 'ACTIVE'|'INACTIVE'|null $status
+ * @property string|null $certificatePem
+ * @property string|null $ownedBy
+ * @property \Aws\Api\DateTimeResult|null $creationDate
+ * @property 'ENABLE'|'DISABLE'|null $autoRegistrationStatus
+ * @property \Aws\Api\DateTimeResult|null $lastModifiedDate
+ * @property int<1, max>|null $customerVersion
+ * @property string|null $generationId
+ * @property CertificateValidity|null $validity
+ * @property 'DEFAULT'|'SNI_ONLY'|null $certificateMode
  */
 class CACertificateDescription extends Shape
 {
     /**
      * @param array{
-     *     certificateArn?: string,
-     *     certificateId?: string,
-     *     status?: 'ACTIVE'|'INACTIVE',
-     *     certificatePem?: string,
-     *     ownedBy?: string,
-     *     creationDate?: \Aws\Api\DateTimeResult,
-     *     autoRegistrationStatus?: 'ENABLE'|'DISABLE',
-     *     lastModifiedDate?: \Aws\Api\DateTimeResult,
-     *     customerVersion?: int<1, max>,
-     *     generationId?: string,
-     *     validity?: CertificateValidity,
-     *     certificateMode?: 'DEFAULT'|'SNI_ONLY'
+     *     certificateArn?: string|null,
+     *     certificateId?: string|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|null,
+     *     certificatePem?: string|null,
+     *     ownedBy?: string|null,
+     *     creationDate?: \Aws\Api\DateTimeResult|null,
+     *     autoRegistrationStatus?: 'ENABLE'|'DISABLE'|null,
+     *     lastModifiedDate?: \Aws\Api\DateTimeResult|null,
+     *     customerVersion?: int<1, max>|null,
+     *     generationId?: string|null,
+     *     validity?: CertificateValidity|null,
+     *     certificateMode?: 'DEFAULT'|'SNI_ONLY'|null
      * } $args
      */
     public function __construct(array $args = [])

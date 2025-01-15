@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\DatabaseMigrationService\DescribeFleetAdvisorDa
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CollectorReferencedId
- * @property string $CollectorName
+ * @property string|null $CollectorReferencedId
+ * @property string|null $CollectorName
  */
 class CollectorShortInfoResponse extends Shape
 {
     /**
      * @param array{
-     *     CollectorReferencedId?: string,
-     *     CollectorName?: string
+     *     CollectorReferencedId?: string|null,
+     *     CollectorName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

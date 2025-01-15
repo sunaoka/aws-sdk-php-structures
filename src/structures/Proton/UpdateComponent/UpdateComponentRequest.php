@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Proton\UpdateComponent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property 'NONE'|'CURRENT_VERSION' $deploymentType
- * @property string $description
+ * @property string|null $description
  * @property string $name
- * @property string $serviceInstanceName
- * @property string $serviceName
- * @property string $serviceSpec
- * @property string $templateFile
+ * @property string|null $serviceInstanceName
+ * @property string|null $serviceName
+ * @property string|null $serviceSpec
+ * @property string|null $templateFile
  */
 class UpdateComponentRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     deploymentType: 'NONE'|'CURRENT_VERSION',
-     *     description?: string,
+     *     description?: string|null,
      *     name: string,
-     *     serviceInstanceName?: string,
-     *     serviceName?: string,
-     *     serviceSpec?: string,
-     *     templateFile?: string
+     *     serviceInstanceName?: string|null,
+     *     serviceName?: string|null,
+     *     serviceSpec?: string|null,
+     *     templateFile?: string|null
      * } $args
      */
     public function __construct(array $args)

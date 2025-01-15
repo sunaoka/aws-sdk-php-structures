@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Glue\GetWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $BlueprintName
- * @property string $RunId
+ * @property string|null $BlueprintName
+ * @property string|null $RunId
  */
 class BlueprintDetails extends Shape
 {
     /**
      * @param array{
-     *     BlueprintName?: string,
-     *     RunId?: string
+     *     BlueprintName?: string|null,
+     *     RunId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $EndpointId
- * @property bool $ClientIPPreservationEnabled
+ * @property bool|null $ClientIPPreservationEnabled
  */
 class EndpointIdentifier extends Shape
 {
     /**
      * @param array{
      *     EndpointId: string,
-     *     ClientIPPreservationEnabled?: bool
+     *     ClientIPPreservationEnabled?: bool|null
      * } $args
      */
     public function __construct(array $args)

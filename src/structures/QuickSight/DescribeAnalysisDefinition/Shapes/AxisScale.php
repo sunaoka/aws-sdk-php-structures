@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeAnalysisDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AxisLinearScale $Linear
- * @property AxisLogarithmicScale $Logarithmic
+ * @property AxisLinearScale|null $Linear
+ * @property AxisLogarithmicScale|null $Logarithmic
  */
 class AxisScale extends Shape
 {
     /**
      * @param array{
-     *     Linear?: AxisLinearScale,
-     *     Logarithmic?: AxisLogarithmicScale
+     *     Linear?: AxisLinearScale|null,
+     *     Logarithmic?: AxisLogarithmicScale|null
      * } $args
      */
     public function __construct(array $args = [])

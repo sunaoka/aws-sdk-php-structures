@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $id
  * @property string $arn
- * @property string $description
+ * @property string|null $description
  * @property string $signalCatalogArn
  * @property \Aws\Api\DateTimeResult $creationTime
- * @property \Aws\Api\DateTimeResult $lastModificationTime
+ * @property \Aws\Api\DateTimeResult|null $lastModificationTime
  */
 class FleetSummary extends Shape
 {
@@ -18,10 +18,10 @@ class FleetSummary extends Shape
      * @param array{
      *     id: string,
      *     arn: string,
-     *     description?: string,
+     *     description?: string|null,
      *     signalCatalogArn: string,
      *     creationTime: \Aws\Api\DateTimeResult,
-     *     lastModificationTime?: \Aws\Api\DateTimeResult
+     *     lastModificationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

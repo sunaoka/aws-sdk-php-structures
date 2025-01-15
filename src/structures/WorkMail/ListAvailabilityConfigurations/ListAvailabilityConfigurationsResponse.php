@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkMail\ListAvailabilityConfigurations;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\AvailabilityConfiguration> $AvailabilityConfigurations
- * @property string $NextToken
+ * @property list<Shapes\AvailabilityConfiguration>|null $AvailabilityConfigurations
+ * @property string|null $NextToken
  */
 class ListAvailabilityConfigurationsResponse extends Response
 {

@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SageMaker\Search\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $RuntimeInSeconds
+ * @property int|null $RuntimeInSeconds
  */
 class HyperParameterTuningJobConsumedResources extends Shape
 {
     /**
-     * @param array{RuntimeInSeconds?: int} $args
+     * @param array{RuntimeInSeconds?: int|null} $args
      */
     public function __construct(array $args = [])
     {

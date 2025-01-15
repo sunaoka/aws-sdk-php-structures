@@ -5,65 +5,65 @@ namespace Sunaoka\Aws\Structures\Ec2\CreateCapacityReservationBySplitting\Shapes
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CapacityReservationId
- * @property string $OwnerId
- * @property string $CapacityReservationArn
- * @property string $AvailabilityZoneId
- * @property string $InstanceType
- * @property 'Linux/UNIX'|'Red Hat Enterprise Linux'|'SUSE Linux'|'Windows'|'Windows with SQL Server'|'Windows with SQL Server Enterprise'|'Windows with SQL Server Standard'|'Windows with SQL Server Web'|'Linux with SQL Server Standard'|'Linux with SQL Server Web'|'Linux with SQL Server Enterprise'|'RHEL with SQL Server Standard'|'RHEL with SQL Server Enterprise'|'RHEL with SQL Server Web'|'RHEL with HA'|'RHEL with HA and SQL Server Standard'|'RHEL with HA and SQL Server Enterprise'|'Ubuntu Pro' $InstancePlatform
- * @property string $AvailabilityZone
- * @property 'default'|'dedicated' $Tenancy
- * @property int $TotalInstanceCount
- * @property int $AvailableInstanceCount
- * @property bool $EbsOptimized
- * @property bool $EphemeralStorage
- * @property 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|'assessing'|'delayed'|'unsupported' $State
- * @property \Aws\Api\DateTimeResult $StartDate
- * @property \Aws\Api\DateTimeResult $EndDate
- * @property 'unlimited'|'limited' $EndDateType
- * @property 'open'|'targeted' $InstanceMatchCriteria
- * @property \Aws\Api\DateTimeResult $CreateDate
- * @property list<Tag> $Tags
- * @property string $OutpostArn
- * @property string $CapacityReservationFleetId
- * @property string $PlacementGroupArn
- * @property list<CapacityAllocation> $CapacityAllocations
- * @property 'default'|'capacity-block' $ReservationType
- * @property string $UnusedReservationBillingOwnerId
- * @property CapacityReservationCommitmentInfo $CommitmentInfo
- * @property 'fixed'|'incremental' $DeliveryPreference
+ * @property string|null $CapacityReservationId
+ * @property string|null $OwnerId
+ * @property string|null $CapacityReservationArn
+ * @property string|null $AvailabilityZoneId
+ * @property string|null $InstanceType
+ * @property 'Linux/UNIX'|'Red Hat Enterprise Linux'|'SUSE Linux'|'Windows'|'Windows with SQL Server'|'Windows with SQL Server Enterprise'|'Windows with SQL Server Standard'|'Windows with SQL Server Web'|'Linux with SQL Server Standard'|'Linux with SQL Server Web'|'Linux with SQL Server Enterprise'|'RHEL with SQL Server Standard'|'RHEL with SQL Server Enterprise'|'RHEL with SQL Server Web'|'RHEL with HA'|'RHEL with HA and SQL Server Standard'|'RHEL with HA and SQL Server Enterprise'|'Ubuntu Pro'|null $InstancePlatform
+ * @property string|null $AvailabilityZone
+ * @property 'default'|'dedicated'|null $Tenancy
+ * @property int|null $TotalInstanceCount
+ * @property int|null $AvailableInstanceCount
+ * @property bool|null $EbsOptimized
+ * @property bool|null $EphemeralStorage
+ * @property 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|'assessing'|'delayed'|'unsupported'|null $State
+ * @property \Aws\Api\DateTimeResult|null $StartDate
+ * @property \Aws\Api\DateTimeResult|null $EndDate
+ * @property 'unlimited'|'limited'|null $EndDateType
+ * @property 'open'|'targeted'|null $InstanceMatchCriteria
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
+ * @property list<Tag>|null $Tags
+ * @property string|null $OutpostArn
+ * @property string|null $CapacityReservationFleetId
+ * @property string|null $PlacementGroupArn
+ * @property list<CapacityAllocation>|null $CapacityAllocations
+ * @property 'default'|'capacity-block'|null $ReservationType
+ * @property string|null $UnusedReservationBillingOwnerId
+ * @property CapacityReservationCommitmentInfo|null $CommitmentInfo
+ * @property 'fixed'|'incremental'|null $DeliveryPreference
  */
 class CapacityReservation extends Shape
 {
     /**
      * @param array{
-     *     CapacityReservationId?: string,
-     *     OwnerId?: string,
-     *     CapacityReservationArn?: string,
-     *     AvailabilityZoneId?: string,
-     *     InstanceType?: string,
-     *     InstancePlatform?: 'Linux/UNIX'|'Red Hat Enterprise Linux'|'SUSE Linux'|'Windows'|'Windows with SQL Server'|'Windows with SQL Server Enterprise'|'Windows with SQL Server Standard'|'Windows with SQL Server Web'|'Linux with SQL Server Standard'|'Linux with SQL Server Web'|'Linux with SQL Server Enterprise'|'RHEL with SQL Server Standard'|'RHEL with SQL Server Enterprise'|'RHEL with SQL Server Web'|'RHEL with HA'|'RHEL with HA and SQL Server Standard'|'RHEL with HA and SQL Server Enterprise'|'Ubuntu Pro',
-     *     AvailabilityZone?: string,
-     *     Tenancy?: 'default'|'dedicated',
-     *     TotalInstanceCount?: int,
-     *     AvailableInstanceCount?: int,
-     *     EbsOptimized?: bool,
-     *     EphemeralStorage?: bool,
-     *     State?: 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|'assessing'|'delayed'|'unsupported',
-     *     StartDate?: \Aws\Api\DateTimeResult,
-     *     EndDate?: \Aws\Api\DateTimeResult,
-     *     EndDateType?: 'unlimited'|'limited',
-     *     InstanceMatchCriteria?: 'open'|'targeted',
-     *     CreateDate?: \Aws\Api\DateTimeResult,
-     *     Tags?: list<Tag>,
-     *     OutpostArn?: string,
-     *     CapacityReservationFleetId?: string,
-     *     PlacementGroupArn?: string,
-     *     CapacityAllocations?: list<CapacityAllocation>,
-     *     ReservationType?: 'default'|'capacity-block',
-     *     UnusedReservationBillingOwnerId?: string,
-     *     CommitmentInfo?: CapacityReservationCommitmentInfo,
-     *     DeliveryPreference?: 'fixed'|'incremental'
+     *     CapacityReservationId?: string|null,
+     *     OwnerId?: string|null,
+     *     CapacityReservationArn?: string|null,
+     *     AvailabilityZoneId?: string|null,
+     *     InstanceType?: string|null,
+     *     InstancePlatform?: 'Linux/UNIX'|'Red Hat Enterprise Linux'|'SUSE Linux'|'Windows'|'Windows with SQL Server'|'Windows with SQL Server Enterprise'|'Windows with SQL Server Standard'|'Windows with SQL Server Web'|'Linux with SQL Server Standard'|'Linux with SQL Server Web'|'Linux with SQL Server Enterprise'|'RHEL with SQL Server Standard'|'RHEL with SQL Server Enterprise'|'RHEL with SQL Server Web'|'RHEL with HA'|'RHEL with HA and SQL Server Standard'|'RHEL with HA and SQL Server Enterprise'|'Ubuntu Pro'|null,
+     *     AvailabilityZone?: string|null,
+     *     Tenancy?: 'default'|'dedicated'|null,
+     *     TotalInstanceCount?: int|null,
+     *     AvailableInstanceCount?: int|null,
+     *     EbsOptimized?: bool|null,
+     *     EphemeralStorage?: bool|null,
+     *     State?: 'active'|'expired'|'cancelled'|'pending'|'failed'|'scheduled'|'payment-pending'|'payment-failed'|'assessing'|'delayed'|'unsupported'|null,
+     *     StartDate?: \Aws\Api\DateTimeResult|null,
+     *     EndDate?: \Aws\Api\DateTimeResult|null,
+     *     EndDateType?: 'unlimited'|'limited'|null,
+     *     InstanceMatchCriteria?: 'open'|'targeted'|null,
+     *     CreateDate?: \Aws\Api\DateTimeResult|null,
+     *     Tags?: list<Tag>|null,
+     *     OutpostArn?: string|null,
+     *     CapacityReservationFleetId?: string|null,
+     *     PlacementGroupArn?: string|null,
+     *     CapacityAllocations?: list<CapacityAllocation>|null,
+     *     ReservationType?: 'default'|'capacity-block'|null,
+     *     UnusedReservationBillingOwnerId?: string|null,
+     *     CommitmentInfo?: CapacityReservationCommitmentInfo|null,
+     *     DeliveryPreference?: 'fixed'|'incremental'|null
      * } $args
      */
     public function __construct(array $args = [])

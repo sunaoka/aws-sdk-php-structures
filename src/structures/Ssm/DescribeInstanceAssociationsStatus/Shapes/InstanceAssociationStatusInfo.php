@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\Ssm\DescribeInstanceAssociationsStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AssociationId
- * @property string $Name
- * @property string $DocumentVersion
- * @property string $AssociationVersion
- * @property string $InstanceId
- * @property \Aws\Api\DateTimeResult $ExecutionDate
- * @property string $Status
- * @property string $DetailedStatus
- * @property string $ExecutionSummary
- * @property string $ErrorCode
- * @property InstanceAssociationOutputUrl $OutputUrl
- * @property string $AssociationName
+ * @property string|null $AssociationId
+ * @property string|null $Name
+ * @property string|null $DocumentVersion
+ * @property string|null $AssociationVersion
+ * @property string|null $InstanceId
+ * @property \Aws\Api\DateTimeResult|null $ExecutionDate
+ * @property string|null $Status
+ * @property string|null $DetailedStatus
+ * @property string|null $ExecutionSummary
+ * @property string|null $ErrorCode
+ * @property InstanceAssociationOutputUrl|null $OutputUrl
+ * @property string|null $AssociationName
  */
 class InstanceAssociationStatusInfo extends Shape
 {
     /**
      * @param array{
-     *     AssociationId?: string,
-     *     Name?: string,
-     *     DocumentVersion?: string,
-     *     AssociationVersion?: string,
-     *     InstanceId?: string,
-     *     ExecutionDate?: \Aws\Api\DateTimeResult,
-     *     Status?: string,
-     *     DetailedStatus?: string,
-     *     ExecutionSummary?: string,
-     *     ErrorCode?: string,
-     *     OutputUrl?: InstanceAssociationOutputUrl,
-     *     AssociationName?: string
+     *     AssociationId?: string|null,
+     *     Name?: string|null,
+     *     DocumentVersion?: string|null,
+     *     AssociationVersion?: string|null,
+     *     InstanceId?: string|null,
+     *     ExecutionDate?: \Aws\Api\DateTimeResult|null,
+     *     Status?: string|null,
+     *     DetailedStatus?: string|null,
+     *     ExecutionSummary?: string|null,
+     *     ErrorCode?: string|null,
+     *     OutputUrl?: InstanceAssociationOutputUrl|null,
+     *     AssociationName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

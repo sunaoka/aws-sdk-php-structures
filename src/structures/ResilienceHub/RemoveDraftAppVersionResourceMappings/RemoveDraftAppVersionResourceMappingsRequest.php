@@ -6,24 +6,24 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $appArn
- * @property list<string> $appRegistryAppNames
- * @property list<string> $eksSourceNames
- * @property list<string> $logicalStackNames
- * @property list<string> $resourceGroupNames
- * @property list<string> $resourceNames
- * @property list<string> $terraformSourceNames
+ * @property list<string>|null $appRegistryAppNames
+ * @property list<string>|null $eksSourceNames
+ * @property list<string>|null $logicalStackNames
+ * @property list<string>|null $resourceGroupNames
+ * @property list<string>|null $resourceNames
+ * @property list<string>|null $terraformSourceNames
  */
 class RemoveDraftAppVersionResourceMappingsRequest extends Request
 {
     /**
      * @param array{
      *     appArn: string,
-     *     appRegistryAppNames?: list<string>,
-     *     eksSourceNames?: list<string>,
-     *     logicalStackNames?: list<string>,
-     *     resourceGroupNames?: list<string>,
-     *     resourceNames?: list<string>,
-     *     terraformSourceNames?: list<string>
+     *     appRegistryAppNames?: list<string>|null,
+     *     eksSourceNames?: list<string>|null,
+     *     logicalStackNames?: list<string>|null,
+     *     resourceGroupNames?: list<string>|null,
+     *     resourceNames?: list<string>|null,
+     *     terraformSourceNames?: list<string>|null
      * } $args
      */
     public function __construct(array $args)

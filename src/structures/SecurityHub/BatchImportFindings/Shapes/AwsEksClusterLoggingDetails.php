@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<AwsEksClusterLoggingClusterLoggingDetails> $ClusterLogging
+ * @property list<AwsEksClusterLoggingClusterLoggingDetails>|null $ClusterLogging
  */
 class AwsEksClusterLoggingDetails extends Shape
 {
     /**
-     * @param array{ClusterLogging?: list<AwsEksClusterLoggingClusterLoggingDetails>} $args
+     * @param array{ClusterLogging?: list<AwsEksClusterLoggingClusterLoggingDetails>|null} $args
      */
     public function __construct(array $args = [])
     {

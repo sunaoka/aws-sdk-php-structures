@@ -6,9 +6,9 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastUpdated
- * @property int $Version
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastUpdated
+ * @property int|null $Version
  * @property string $JsonPath
  */
 class JsonClassifier extends Shape
@@ -16,9 +16,9 @@ class JsonClassifier extends Shape
     /**
      * @param array{
      *     Name: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastUpdated?: \Aws\Api\DateTimeResult,
-     *     Version?: int,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastUpdated?: \Aws\Api\DateTimeResult|null,
+     *     Version?: int|null,
      *     JsonPath: string
      * } $args
      */

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\DescribeProjectVersions\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $S3Bucket
- * @property string $S3KeyPrefix
+ * @property string|null $S3Bucket
+ * @property string|null $S3KeyPrefix
  */
 class OutputConfig extends Shape
 {
     /**
      * @param array{
-     *     S3Bucket?: string,
-     *     S3KeyPrefix?: string
+     *     S3Bucket?: string|null,
+     *     S3KeyPrefix?: string|null
      * } $args
      */
     public function __construct(array $args = [])

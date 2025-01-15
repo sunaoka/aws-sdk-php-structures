@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\ServiceCatalog\DescribeProvisioningArtifact;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ProvisioningArtifactDetail $ProvisioningArtifactDetail
- * @property array<string, string> $Info
- * @property 'AVAILABLE'|'CREATING'|'FAILED' $Status
- * @property list<Shapes\ProvisioningArtifactParameter> $ProvisioningArtifactParameters
+ * @property Shapes\ProvisioningArtifactDetail|null $ProvisioningArtifactDetail
+ * @property array<string, string>|null $Info
+ * @property 'AVAILABLE'|'CREATING'|'FAILED'|null $Status
+ * @property list<Shapes\ProvisioningArtifactParameter>|null $ProvisioningArtifactParameters
  */
 class DescribeProvisioningArtifactResponse extends Response
 {

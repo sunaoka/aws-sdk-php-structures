@@ -6,8 +6,8 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Bucket
- * @property string $ContentMD5
- * @property string $ExpectedBucketOwner
+ * @property string|null $ContentMD5
+ * @property string|null $ExpectedBucketOwner
  * @property Shapes\OwnershipControls $OwnershipControls
  */
 class PutBucketOwnershipControlsRequest extends Request
@@ -15,8 +15,8 @@ class PutBucketOwnershipControlsRequest extends Request
     /**
      * @param array{
      *     Bucket: string,
-     *     ContentMD5?: string,
-     *     ExpectedBucketOwner?: string,
+     *     ContentMD5?: string|null,
+     *     ExpectedBucketOwner?: string|null,
      *     OwnershipControls: Shapes\OwnershipControls
      * } $args
      */

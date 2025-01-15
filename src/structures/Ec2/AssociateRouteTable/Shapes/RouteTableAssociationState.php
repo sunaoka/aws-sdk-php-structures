@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ec2\AssociateRouteTable\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'associating'|'associated'|'disassociating'|'disassociated'|'failed' $State
- * @property string $StatusMessage
+ * @property 'associating'|'associated'|'disassociating'|'disassociated'|'failed'|null $State
+ * @property string|null $StatusMessage
  */
 class RouteTableAssociationState extends Shape
 {
     /**
      * @param array{
-     *     State?: 'associating'|'associated'|'disassociating'|'disassociated'|'failed',
-     *     StatusMessage?: string
+     *     State?: 'associating'|'associated'|'disassociating'|'disassociated'|'failed'|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

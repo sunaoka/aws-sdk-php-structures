@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Catalog
  * @property string $Identifier
- * @property string $RejectionReason
+ * @property string|null $RejectionReason
  */
 class RejectEngagementInvitationRequest extends Request
 {
@@ -15,7 +15,7 @@ class RejectEngagementInvitationRequest extends Request
      * @param array{
      *     Catalog: string,
      *     Identifier: string,
-     *     RejectionReason?: string
+     *     RejectionReason?: string|null
      * } $args
      */
     public function __construct(array $args)

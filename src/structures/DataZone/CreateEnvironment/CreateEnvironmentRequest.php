@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateEnvironment;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int $deploymentOrder
- * @property string $description
+ * @property int|null $deploymentOrder
+ * @property string|null $description
  * @property string $domainIdentifier
- * @property string $environmentAccountIdentifier
- * @property string $environmentAccountRegion
- * @property string $environmentBlueprintIdentifier
- * @property string $environmentConfigurationId
+ * @property string|null $environmentAccountIdentifier
+ * @property string|null $environmentAccountRegion
+ * @property string|null $environmentBlueprintIdentifier
+ * @property string|null $environmentConfigurationId
  * @property string $environmentProfileIdentifier
- * @property list<string> $glossaryTerms
+ * @property list<string>|null $glossaryTerms
  * @property string $name
  * @property string $projectIdentifier
- * @property list<Shapes\EnvironmentParameter> $userParameters
+ * @property list<Shapes\EnvironmentParameter>|null $userParameters
  */
 class CreateEnvironmentRequest extends Request
 {
     /**
      * @param array{
-     *     deploymentOrder?: int,
-     *     description?: string,
+     *     deploymentOrder?: int|null,
+     *     description?: string|null,
      *     domainIdentifier: string,
-     *     environmentAccountIdentifier?: string,
-     *     environmentAccountRegion?: string,
-     *     environmentBlueprintIdentifier?: string,
-     *     environmentConfigurationId?: string,
+     *     environmentAccountIdentifier?: string|null,
+     *     environmentAccountRegion?: string|null,
+     *     environmentBlueprintIdentifier?: string|null,
+     *     environmentConfigurationId?: string|null,
      *     environmentProfileIdentifier: string,
-     *     glossaryTerms?: list<string>,
+     *     glossaryTerms?: list<string>|null,
      *     name: string,
      *     projectIdentifier: string,
-     *     userParameters?: list<Shapes\EnvironmentParameter>
+     *     userParameters?: list<Shapes\EnvironmentParameter>|null
      * } $args
      */
     public function __construct(array $args)

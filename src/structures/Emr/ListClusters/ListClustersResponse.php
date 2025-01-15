@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Emr\ListClusters;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ClusterSummary> $Clusters
- * @property string $Marker
+ * @property list<Shapes\ClusterSummary>|null $Clusters
+ * @property string|null $Marker
  */
 class ListClustersResponse extends Response
 {

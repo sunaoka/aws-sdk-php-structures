@@ -13,7 +13,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property Shapes\DatasetStatus $datasetStatus
  * @property \Aws\Api\DateTimeResult $datasetCreationDate
  * @property \Aws\Api\DateTimeResult $datasetLastUpdateDate
- * @property string $datasetVersion
+ * @property string|null $datasetVersion
  */
 class DescribeDatasetResponse extends Response
 {

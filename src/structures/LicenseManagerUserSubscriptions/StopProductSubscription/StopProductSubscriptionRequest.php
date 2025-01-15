@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LicenseManagerUserSubscriptions\StopProductSubs
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Domain
- * @property Shapes\IdentityProvider $IdentityProvider
- * @property string $Product
- * @property string $ProductUserArn
- * @property string $Username
+ * @property string|null $Domain
+ * @property Shapes\IdentityProvider|null $IdentityProvider
+ * @property string|null $Product
+ * @property string|null $ProductUserArn
+ * @property string|null $Username
  */
 class StopProductSubscriptionRequest extends Request
 {
     /**
      * @param array{
-     *     Domain?: string,
-     *     IdentityProvider?: Shapes\IdentityProvider,
-     *     Product?: string,
-     *     ProductUserArn?: string,
-     *     Username?: string
+     *     Domain?: string|null,
+     *     IdentityProvider?: Shapes\IdentityProvider|null,
+     *     Product?: string|null,
+     *     ProductUserArn?: string|null,
+     *     Username?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\CloudWatchEvents\PutPartnerEvents\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $Time
- * @property string $Source
- * @property list<string> $Resources
- * @property string $DetailType
- * @property string $Detail
+ * @property \Aws\Api\DateTimeResult|null $Time
+ * @property string|null $Source
+ * @property list<string>|null $Resources
+ * @property string|null $DetailType
+ * @property string|null $Detail
  */
 class PutPartnerEventsRequestEntry extends Shape
 {
     /**
      * @param array{
-     *     Time?: \Aws\Api\DateTimeResult,
-     *     Source?: string,
-     *     Resources?: list<string>,
-     *     DetailType?: string,
-     *     Detail?: string
+     *     Time?: \Aws\Api\DateTimeResult|null,
+     *     Source?: string|null,
+     *     Resources?: list<string>|null,
+     *     DetailType?: string|null,
+     *     Detail?: string|null
      * } $args
      */
     public function __construct(array $args = [])

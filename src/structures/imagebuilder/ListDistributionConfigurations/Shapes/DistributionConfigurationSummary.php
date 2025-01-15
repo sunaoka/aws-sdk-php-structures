@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\imagebuilder\ListDistributionConfigurations\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $arn
- * @property string $name
- * @property string $description
- * @property string $dateCreated
- * @property string $dateUpdated
- * @property array<string, string> $tags
- * @property list<string> $regions
+ * @property string|null $arn
+ * @property string|null $name
+ * @property string|null $description
+ * @property string|null $dateCreated
+ * @property string|null $dateUpdated
+ * @property array<string, string>|null $tags
+ * @property list<string>|null $regions
  */
 class DistributionConfigurationSummary extends Shape
 {
     /**
      * @param array{
-     *     arn?: string,
-     *     name?: string,
-     *     description?: string,
-     *     dateCreated?: string,
-     *     dateUpdated?: string,
-     *     tags?: array<string, string>,
-     *     regions?: list<string>
+     *     arn?: string|null,
+     *     name?: string|null,
+     *     description?: string|null,
+     *     dateCreated?: string|null,
+     *     dateUpdated?: string|null,
+     *     tags?: array<string, string>|null,
+     *     regions?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

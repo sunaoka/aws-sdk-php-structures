@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\GlueDataBrew\DescribeJobRun;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $Attempt
- * @property \Aws\Api\DateTimeResult $CompletedOn
- * @property string $DatasetName
- * @property string $ErrorMessage
- * @property int $ExecutionTime
+ * @property int|null $Attempt
+ * @property \Aws\Api\DateTimeResult|null $CompletedOn
+ * @property string|null $DatasetName
+ * @property string|null $ErrorMessage
+ * @property int|null $ExecutionTime
  * @property string $JobName
- * @property Shapes\ProfileConfiguration $ProfileConfiguration
- * @property list<Shapes\ValidationConfiguration> $ValidationConfigurations
- * @property string $RunId
- * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT' $State
- * @property 'ENABLE'|'DISABLE' $LogSubscription
- * @property string $LogGroupName
- * @property list<Shapes\Output> $Outputs
- * @property list<Shapes\DataCatalogOutput> $DataCatalogOutputs
- * @property list<Shapes\DatabaseOutput> $DatabaseOutputs
- * @property Shapes\RecipeReference $RecipeReference
- * @property string $StartedBy
- * @property \Aws\Api\DateTimeResult $StartedOn
- * @property Shapes\JobSample $JobSample
+ * @property Shapes\ProfileConfiguration|null $ProfileConfiguration
+ * @property list<Shapes\ValidationConfiguration>|null $ValidationConfigurations
+ * @property string|null $RunId
+ * @property 'STARTING'|'RUNNING'|'STOPPING'|'STOPPED'|'SUCCEEDED'|'FAILED'|'TIMEOUT'|null $State
+ * @property 'ENABLE'|'DISABLE'|null $LogSubscription
+ * @property string|null $LogGroupName
+ * @property list<Shapes\Output>|null $Outputs
+ * @property list<Shapes\DataCatalogOutput>|null $DataCatalogOutputs
+ * @property list<Shapes\DatabaseOutput>|null $DatabaseOutputs
+ * @property Shapes\RecipeReference|null $RecipeReference
+ * @property string|null $StartedBy
+ * @property \Aws\Api\DateTimeResult|null $StartedOn
+ * @property Shapes\JobSample|null $JobSample
  */
 class DescribeJobRunResponse extends Response
 {

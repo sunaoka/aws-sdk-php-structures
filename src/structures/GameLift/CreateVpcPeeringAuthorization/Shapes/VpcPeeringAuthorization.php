@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GameLift\CreateVpcPeeringAuthorization\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $GameLiftAwsAccountId
- * @property string $PeerVpcAwsAccountId
- * @property string $PeerVpcId
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $ExpirationTime
+ * @property string|null $GameLiftAwsAccountId
+ * @property string|null $PeerVpcAwsAccountId
+ * @property string|null $PeerVpcId
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $ExpirationTime
  */
 class VpcPeeringAuthorization extends Shape
 {
     /**
      * @param array{
-     *     GameLiftAwsAccountId?: string,
-     *     PeerVpcAwsAccountId?: string,
-     *     PeerVpcId?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     ExpirationTime?: \Aws\Api\DateTimeResult
+     *     GameLiftAwsAccountId?: string|null,
+     *     PeerVpcAwsAccountId?: string|null,
+     *     PeerVpcId?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     ExpirationTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

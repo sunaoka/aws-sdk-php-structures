@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $AssociationId
- * @property string $ClientRequestToken
- * @property int<1, 512000> $ImportedFileChunkSize
- * @property Shapes\S3DataRepositoryConfiguration $S3
+ * @property string|null $ClientRequestToken
+ * @property int<1, 512000>|null $ImportedFileChunkSize
+ * @property Shapes\S3DataRepositoryConfiguration|null $S3
  */
 class UpdateDataRepositoryAssociationRequest extends Request
 {
     /**
      * @param array{
      *     AssociationId: string,
-     *     ClientRequestToken?: string,
-     *     ImportedFileChunkSize?: int<1, 512000>,
-     *     S3?: Shapes\S3DataRepositoryConfiguration
+     *     ClientRequestToken?: string|null,
+     *     ImportedFileChunkSize?: int<1, 512000>|null,
+     *     S3?: Shapes\S3DataRepositoryConfiguration|null
      * } $args
      */
     public function __construct(array $args)

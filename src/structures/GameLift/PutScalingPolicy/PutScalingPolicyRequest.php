@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Name
  * @property string $FleetId
- * @property int $ScalingAdjustment
- * @property 'ChangeInCapacity'|'ExactCapacity'|'PercentChangeInCapacity' $ScalingAdjustmentType
- * @property double $Threshold
- * @property 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold' $ComparisonOperator
- * @property int<1, max> $EvaluationPeriods
+ * @property int|null $ScalingAdjustment
+ * @property 'ChangeInCapacity'|'ExactCapacity'|'PercentChangeInCapacity'|null $ScalingAdjustmentType
+ * @property double|null $Threshold
+ * @property 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold'|null $ComparisonOperator
+ * @property int<1, max>|null $EvaluationPeriods
  * @property 'ActivatingGameSessions'|'ActiveGameSessions'|'ActiveInstances'|'AvailableGameSessions'|'AvailablePlayerSessions'|'CurrentPlayerSessions'|'IdleInstances'|'PercentAvailableGameSessions'|'PercentIdleInstances'|'QueueDepth'|'WaitTime'|'ConcurrentActivatableGameSessions' $MetricName
- * @property 'RuleBased'|'TargetBased' $PolicyType
- * @property Shapes\TargetConfiguration $TargetConfiguration
+ * @property 'RuleBased'|'TargetBased'|null $PolicyType
+ * @property Shapes\TargetConfiguration|null $TargetConfiguration
  */
 class PutScalingPolicyRequest extends Request
 {
@@ -22,14 +22,14 @@ class PutScalingPolicyRequest extends Request
      * @param array{
      *     Name: string,
      *     FleetId: string,
-     *     ScalingAdjustment?: int,
-     *     ScalingAdjustmentType?: 'ChangeInCapacity'|'ExactCapacity'|'PercentChangeInCapacity',
-     *     Threshold?: double,
-     *     ComparisonOperator?: 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold',
-     *     EvaluationPeriods?: int<1, max>,
+     *     ScalingAdjustment?: int|null,
+     *     ScalingAdjustmentType?: 'ChangeInCapacity'|'ExactCapacity'|'PercentChangeInCapacity'|null,
+     *     Threshold?: double|null,
+     *     ComparisonOperator?: 'GreaterThanOrEqualToThreshold'|'GreaterThanThreshold'|'LessThanThreshold'|'LessThanOrEqualToThreshold'|null,
+     *     EvaluationPeriods?: int<1, max>|null,
      *     MetricName: 'ActivatingGameSessions'|'ActiveGameSessions'|'ActiveInstances'|'AvailableGameSessions'|'AvailablePlayerSessions'|'CurrentPlayerSessions'|'IdleInstances'|'PercentAvailableGameSessions'|'PercentIdleInstances'|'QueueDepth'|'WaitTime'|'ConcurrentActivatableGameSessions',
-     *     PolicyType?: 'RuleBased'|'TargetBased',
-     *     TargetConfiguration?: Shapes\TargetConfiguration
+     *     PolicyType?: 'RuleBased'|'TargetBased'|null,
+     *     TargetConfiguration?: Shapes\TargetConfiguration|null
      * } $args
      */
     public function __construct(array $args)

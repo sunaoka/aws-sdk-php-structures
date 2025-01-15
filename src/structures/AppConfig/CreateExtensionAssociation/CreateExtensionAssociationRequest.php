@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ExtensionIdentifier
- * @property int $ExtensionVersionNumber
+ * @property int|null $ExtensionVersionNumber
  * @property string $ResourceIdentifier
- * @property array<string, string> $Parameters
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Parameters
+ * @property array<string, string>|null $Tags
  */
 class CreateExtensionAssociationRequest extends Request
 {
     /**
      * @param array{
      *     ExtensionIdentifier: string,
-     *     ExtensionVersionNumber?: int,
+     *     ExtensionVersionNumber?: int|null,
      *     ResourceIdentifier: string,
-     *     Parameters?: array<string, string>,
-     *     Tags?: array<string, string>
+     *     Parameters?: array<string, string>|null,
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

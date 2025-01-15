@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Ses\SendRawEmail;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $Source
- * @property list<string> $Destinations
+ * @property string|null $Source
+ * @property list<string>|null $Destinations
  * @property Shapes\RawMessage $RawMessage
- * @property string $FromArn
- * @property string $SourceArn
- * @property string $ReturnPathArn
- * @property list<Shapes\MessageTag> $Tags
- * @property string $ConfigurationSetName
+ * @property string|null $FromArn
+ * @property string|null $SourceArn
+ * @property string|null $ReturnPathArn
+ * @property list<Shapes\MessageTag>|null $Tags
+ * @property string|null $ConfigurationSetName
  */
 class SendRawEmailRequest extends Request
 {
     /**
      * @param array{
-     *     Source?: string,
-     *     Destinations?: list<string>,
+     *     Source?: string|null,
+     *     Destinations?: list<string>|null,
      *     RawMessage: Shapes\RawMessage,
-     *     FromArn?: string,
-     *     SourceArn?: string,
-     *     ReturnPathArn?: string,
-     *     Tags?: list<Shapes\MessageTag>,
-     *     ConfigurationSetName?: string
+     *     FromArn?: string|null,
+     *     SourceArn?: string|null,
+     *     ReturnPathArn?: string|null,
+     *     Tags?: list<Shapes\MessageTag>|null,
+     *     ConfigurationSetName?: string|null
      * } $args
      */
     public function __construct(array $args)

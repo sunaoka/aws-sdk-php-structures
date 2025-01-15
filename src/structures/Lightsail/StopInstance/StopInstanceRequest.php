@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $instanceName
- * @property bool $force
+ * @property bool|null $force
  */
 class StopInstanceRequest extends Request
 {
     /**
      * @param array{
      *     instanceName: string,
-     *     force?: bool
+     *     force?: bool|null
      * } $args
      */
     public function __construct(array $args)

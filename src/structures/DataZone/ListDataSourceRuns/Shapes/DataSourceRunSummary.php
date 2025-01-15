@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property \Aws\Api\DateTimeResult $createdAt
  * @property string $dataSourceId
- * @property DataSourceErrorMessage $errorMessage
+ * @property DataSourceErrorMessage|null $errorMessage
  * @property string $id
- * @property DataSourceRunLineageSummary $lineageSummary
+ * @property DataSourceRunLineageSummary|null $lineageSummary
  * @property string $projectId
- * @property RunStatisticsForAssets $runStatisticsForAssets
- * @property \Aws\Api\DateTimeResult $startedAt
+ * @property RunStatisticsForAssets|null $runStatisticsForAssets
+ * @property \Aws\Api\DateTimeResult|null $startedAt
  * @property 'REQUESTED'|'RUNNING'|'FAILED'|'PARTIALLY_SUCCEEDED'|'SUCCESS' $status
- * @property \Aws\Api\DateTimeResult $stoppedAt
+ * @property \Aws\Api\DateTimeResult|null $stoppedAt
  * @property 'PRIORITIZED'|'SCHEDULED' $type
  * @property \Aws\Api\DateTimeResult $updatedAt
  */
@@ -24,14 +24,14 @@ class DataSourceRunSummary extends Shape
      * @param array{
      *     createdAt: \Aws\Api\DateTimeResult,
      *     dataSourceId: string,
-     *     errorMessage?: DataSourceErrorMessage,
+     *     errorMessage?: DataSourceErrorMessage|null,
      *     id: string,
-     *     lineageSummary?: DataSourceRunLineageSummary,
+     *     lineageSummary?: DataSourceRunLineageSummary|null,
      *     projectId: string,
-     *     runStatisticsForAssets?: RunStatisticsForAssets,
-     *     startedAt?: \Aws\Api\DateTimeResult,
+     *     runStatisticsForAssets?: RunStatisticsForAssets|null,
+     *     startedAt?: \Aws\Api\DateTimeResult|null,
      *     status: 'REQUESTED'|'RUNNING'|'FAILED'|'PARTIALLY_SUCCEEDED'|'SUCCESS',
-     *     stoppedAt?: \Aws\Api\DateTimeResult,
+     *     stoppedAt?: \Aws\Api\DateTimeResult|null,
      *     type: 'PRIORITIZED'|'SCHEDULED',
      *     updatedAt: \Aws\Api\DateTimeResult
      * } $args

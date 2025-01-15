@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardDefinition\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<UnaggregatedField> $Values
+ * @property list<UnaggregatedField>|null $Values
  */
 class TableUnaggregatedFieldWells extends Shape
 {
     /**
-     * @param array{Values?: list<UnaggregatedField>} $args
+     * @param array{Values?: list<UnaggregatedField>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property FacetAttributeDefinition $AttributeDefinition
- * @property FacetAttributeReference $AttributeReference
- * @property 'REQUIRED_ALWAYS'|'NOT_REQUIRED' $RequiredBehavior
+ * @property FacetAttributeDefinition|null $AttributeDefinition
+ * @property FacetAttributeReference|null $AttributeReference
+ * @property 'REQUIRED_ALWAYS'|'NOT_REQUIRED'|null $RequiredBehavior
  */
 class FacetAttribute extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     AttributeDefinition?: FacetAttributeDefinition,
-     *     AttributeReference?: FacetAttributeReference,
-     *     RequiredBehavior?: 'REQUIRED_ALWAYS'|'NOT_REQUIRED'
+     *     AttributeDefinition?: FacetAttributeDefinition|null,
+     *     AttributeReference?: FacetAttributeReference|null,
+     *     RequiredBehavior?: 'REQUIRED_ALWAYS'|'NOT_REQUIRED'|null
      * } $args
      */
     public function __construct(array $args)

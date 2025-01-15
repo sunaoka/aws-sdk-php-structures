@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Detective\ListIndicators\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Type
- * @property string $IpAddress
+ * @property string|null $Arn
+ * @property string|null $Type
+ * @property string|null $IpAddress
  */
 class RelatedFindingDetail extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Type?: string,
-     *     IpAddress?: string
+     *     Arn?: string|null,
+     *     Type?: string|null,
+     *     IpAddress?: string|null
      * } $args
      */
     public function __construct(array $args = [])

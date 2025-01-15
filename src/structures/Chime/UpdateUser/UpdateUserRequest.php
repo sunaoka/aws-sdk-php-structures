@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $UserId
- * @property 'Basic'|'Plus'|'Pro'|'ProTrial' $LicenseType
- * @property 'PrivateUser'|'SharedDevice' $UserType
- * @property Shapes\AlexaForBusinessMetadata $AlexaForBusinessMetadata
+ * @property 'Basic'|'Plus'|'Pro'|'ProTrial'|null $LicenseType
+ * @property 'PrivateUser'|'SharedDevice'|null $UserType
+ * @property Shapes\AlexaForBusinessMetadata|null $AlexaForBusinessMetadata
  */
 class UpdateUserRequest extends Request
 {
@@ -17,9 +17,9 @@ class UpdateUserRequest extends Request
      * @param array{
      *     AccountId: string,
      *     UserId: string,
-     *     LicenseType?: 'Basic'|'Plus'|'Pro'|'ProTrial',
-     *     UserType?: 'PrivateUser'|'SharedDevice',
-     *     AlexaForBusinessMetadata?: Shapes\AlexaForBusinessMetadata
+     *     LicenseType?: 'Basic'|'Plus'|'Pro'|'ProTrial'|null,
+     *     UserType?: 'PrivateUser'|'SharedDevice'|null,
+     *     AlexaForBusinessMetadata?: Shapes\AlexaForBusinessMetadata|null
      * } $args
      */
     public function __construct(array $args)

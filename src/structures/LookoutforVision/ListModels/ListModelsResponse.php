@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LookoutforVision\ListModels;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ModelMetadata> $Models
- * @property string $NextToken
+ * @property list<Shapes\ModelMetadata>|null $Models
+ * @property string|null $NextToken
  */
 class ListModelsResponse extends Response
 {

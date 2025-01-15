@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Catalog
- * @property list<string> $EngagementInvitationIdentifier
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
- * @property list<string> $OpportunityIdentifier
- * @property Shapes\ListTasksSortBase $Sort
- * @property list<string> $TaskIdentifier
- * @property list<'IN_PROGRESS'|'COMPLETE'|'FAILED'> $TaskStatus
+ * @property list<string>|null $EngagementInvitationIdentifier
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
+ * @property list<string>|null $OpportunityIdentifier
+ * @property Shapes\ListTasksSortBase|null $Sort
+ * @property list<string>|null $TaskIdentifier
+ * @property list<'IN_PROGRESS'|'COMPLETE'|'FAILED'>|null $TaskStatus
  */
 class ListEngagementByAcceptingInvitationTasksRequest extends Request
 {
     /**
      * @param array{
      *     Catalog: string,
-     *     EngagementInvitationIdentifier?: list<string>,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string,
-     *     OpportunityIdentifier?: list<string>,
-     *     Sort?: Shapes\ListTasksSortBase,
-     *     TaskIdentifier?: list<string>,
-     *     TaskStatus?: list<'IN_PROGRESS'|'COMPLETE'|'FAILED'>
+     *     EngagementInvitationIdentifier?: list<string>|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null,
+     *     OpportunityIdentifier?: list<string>|null,
+     *     Sort?: Shapes\ListTasksSortBase|null,
+     *     TaskIdentifier?: list<string>|null,
+     *     TaskStatus?: list<'IN_PROGRESS'|'COMPLETE'|'FAILED'>|null
      * } $args
      */
     public function __construct(array $args)

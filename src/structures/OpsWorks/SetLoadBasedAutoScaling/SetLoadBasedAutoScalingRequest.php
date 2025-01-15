@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $LayerId
- * @property bool $Enable
- * @property Shapes\AutoScalingThresholds $UpScaling
- * @property Shapes\AutoScalingThresholds $DownScaling
+ * @property bool|null $Enable
+ * @property Shapes\AutoScalingThresholds|null $UpScaling
+ * @property Shapes\AutoScalingThresholds|null $DownScaling
  */
 class SetLoadBasedAutoScalingRequest extends Request
 {
     /**
      * @param array{
      *     LayerId: string,
-     *     Enable?: bool,
-     *     UpScaling?: Shapes\AutoScalingThresholds,
-     *     DownScaling?: Shapes\AutoScalingThresholds
+     *     Enable?: bool|null,
+     *     UpScaling?: Shapes\AutoScalingThresholds|null,
+     *     DownScaling?: Shapes\AutoScalingThresholds|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\CodeGuruSecurity\GetScan;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $runId
+ * @property string|null $runId
  * @property string $scanName
  */
 class GetScanRequest extends Request
 {
     /**
      * @param array{
-     *     runId?: string,
+     *     runId?: string|null,
      *     scanName: string
      * } $args
      */

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\kendra\CreateFaq;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Id
+ * @property string|null $Id
  */
 class CreateFaqResponse extends Response
 {

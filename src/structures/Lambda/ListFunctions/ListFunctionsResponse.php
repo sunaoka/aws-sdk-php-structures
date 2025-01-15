@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Lambda\ListFunctions;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextMarker
- * @property list<Shapes\FunctionConfiguration> $Functions
+ * @property string|null $NextMarker
+ * @property list<Shapes\FunctionConfiguration>|null $Functions
  */
 class ListFunctionsResponse extends Response
 {

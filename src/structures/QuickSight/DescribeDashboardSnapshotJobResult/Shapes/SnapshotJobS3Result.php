@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDashboardSnapshotJobResult\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property SnapshotS3DestinationConfiguration $S3DestinationConfiguration
- * @property string $S3Uri
- * @property list<SnapshotJobResultErrorInfo> $ErrorInfo
+ * @property SnapshotS3DestinationConfiguration|null $S3DestinationConfiguration
+ * @property string|null $S3Uri
+ * @property list<SnapshotJobResultErrorInfo>|null $ErrorInfo
  */
 class SnapshotJobS3Result extends Shape
 {
     /**
      * @param array{
-     *     S3DestinationConfiguration?: SnapshotS3DestinationConfiguration,
-     *     S3Uri?: string,
-     *     ErrorInfo?: list<SnapshotJobResultErrorInfo>
+     *     S3DestinationConfiguration?: SnapshotS3DestinationConfiguration|null,
+     *     S3Uri?: string|null,
+     *     ErrorInfo?: list<SnapshotJobResultErrorInfo>|null
      * } $args
      */
     public function __construct(array $args = [])

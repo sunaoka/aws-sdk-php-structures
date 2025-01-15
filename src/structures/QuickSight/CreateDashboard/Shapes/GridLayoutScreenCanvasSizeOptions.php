@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'FIXED'|'RESPONSIVE' $ResizeOption
- * @property string $OptimizedViewPortWidth
+ * @property string|null $OptimizedViewPortWidth
  */
 class GridLayoutScreenCanvasSizeOptions extends Shape
 {
     /**
      * @param array{
      *     ResizeOption: 'FIXED'|'RESPONSIVE',
-     *     OptimizedViewPortWidth?: string
+     *     OptimizedViewPortWidth?: string|null
      * } $args
      */
     public function __construct(array $args)

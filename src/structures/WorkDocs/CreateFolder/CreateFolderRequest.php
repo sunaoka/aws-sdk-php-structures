@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\WorkDocs\CreateFolder;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AuthenticationToken
- * @property string $Name
+ * @property string|null $AuthenticationToken
+ * @property string|null $Name
  * @property string $ParentFolderId
  */
 class CreateFolderRequest extends Request
 {
     /**
      * @param array{
-     *     AuthenticationToken?: string,
-     *     Name?: string,
+     *     AuthenticationToken?: string|null,
+     *     Name?: string|null,
      *     ParentFolderId: string
      * } $args
      */

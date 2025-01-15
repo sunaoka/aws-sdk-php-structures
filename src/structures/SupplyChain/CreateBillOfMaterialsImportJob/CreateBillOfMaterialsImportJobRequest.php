@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $instanceId
  * @property string $s3uri
- * @property string $clientToken
+ * @property string|null $clientToken
  */
 class CreateBillOfMaterialsImportJobRequest extends Request
 {
@@ -15,7 +15,7 @@ class CreateBillOfMaterialsImportJobRequest extends Request
      * @param array{
      *     instanceId: string,
      *     s3uri: string,
-     *     clientToken?: string
+     *     clientToken?: string|null
      * } $args
      */
     public function __construct(array $args)

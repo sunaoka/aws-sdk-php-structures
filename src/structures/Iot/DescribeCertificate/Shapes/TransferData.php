@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Iot\DescribeCertificate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $transferMessage
- * @property string $rejectReason
- * @property \Aws\Api\DateTimeResult $transferDate
- * @property \Aws\Api\DateTimeResult $acceptDate
- * @property \Aws\Api\DateTimeResult $rejectDate
+ * @property string|null $transferMessage
+ * @property string|null $rejectReason
+ * @property \Aws\Api\DateTimeResult|null $transferDate
+ * @property \Aws\Api\DateTimeResult|null $acceptDate
+ * @property \Aws\Api\DateTimeResult|null $rejectDate
  */
 class TransferData extends Shape
 {
     /**
      * @param array{
-     *     transferMessage?: string,
-     *     rejectReason?: string,
-     *     transferDate?: \Aws\Api\DateTimeResult,
-     *     acceptDate?: \Aws\Api\DateTimeResult,
-     *     rejectDate?: \Aws\Api\DateTimeResult
+     *     transferMessage?: string|null,
+     *     rejectReason?: string|null,
+     *     transferDate?: \Aws\Api\DateTimeResult|null,
+     *     acceptDate?: \Aws\Api\DateTimeResult|null,
+     *     rejectDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

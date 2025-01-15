@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Subject
- * @property string $HtmlBody
- * @property string $TextBody
+ * @property string|null $HtmlBody
+ * @property string|null $TextBody
  */
 class NotifyEmailType extends Shape
 {
     /**
      * @param array{
      *     Subject: string,
-     *     HtmlBody?: string,
-     *     TextBody?: string
+     *     HtmlBody?: string|null,
+     *     TextBody?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\WorkDocs\CreateFolder\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Id
- * @property string $Name
- * @property string $CreatorId
- * @property string $ParentFolderId
- * @property \Aws\Api\DateTimeResult $CreatedTimestamp
- * @property \Aws\Api\DateTimeResult $ModifiedTimestamp
- * @property 'ACTIVE'|'RESTORING'|'RECYCLING'|'RECYCLED' $ResourceState
- * @property string $Signature
- * @property list<string> $Labels
- * @property int $Size
- * @property int $LatestVersionSize
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $CreatorId
+ * @property string|null $ParentFolderId
+ * @property \Aws\Api\DateTimeResult|null $CreatedTimestamp
+ * @property \Aws\Api\DateTimeResult|null $ModifiedTimestamp
+ * @property 'ACTIVE'|'RESTORING'|'RECYCLING'|'RECYCLED'|null $ResourceState
+ * @property string|null $Signature
+ * @property list<string>|null $Labels
+ * @property int|null $Size
+ * @property int|null $LatestVersionSize
  */
 class FolderMetadata extends Shape
 {
     /**
      * @param array{
-     *     Id?: string,
-     *     Name?: string,
-     *     CreatorId?: string,
-     *     ParentFolderId?: string,
-     *     CreatedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ModifiedTimestamp?: \Aws\Api\DateTimeResult,
-     *     ResourceState?: 'ACTIVE'|'RESTORING'|'RECYCLING'|'RECYCLED',
-     *     Signature?: string,
-     *     Labels?: list<string>,
-     *     Size?: int,
-     *     LatestVersionSize?: int
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     CreatorId?: string|null,
+     *     ParentFolderId?: string|null,
+     *     CreatedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ModifiedTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     ResourceState?: 'ACTIVE'|'RESTORING'|'RECYCLING'|'RECYCLED'|null,
+     *     Signature?: string|null,
+     *     Labels?: list<string>|null,
+     *     Size?: int|null,
+     *     LatestVersionSize?: int|null
      * } $args
      */
     public function __construct(array $args = [])

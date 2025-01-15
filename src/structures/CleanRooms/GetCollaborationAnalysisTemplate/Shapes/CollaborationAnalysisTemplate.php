@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $arn
  * @property string $collaborationId
  * @property string $collaborationArn
- * @property string $description
+ * @property string|null $description
  * @property string $creatorAccountId
  * @property string $name
  * @property \Aws\Api\DateTimeResult $createTime
@@ -17,8 +17,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property AnalysisSchema $schema
  * @property 'SQL' $format
  * @property AnalysisSource $source
- * @property list<AnalysisParameter> $analysisParameters
- * @property list<AnalysisTemplateValidationStatusDetail> $validations
+ * @property list<AnalysisParameter>|null $analysisParameters
+ * @property list<AnalysisTemplateValidationStatusDetail>|null $validations
  */
 class CollaborationAnalysisTemplate extends Shape
 {
@@ -28,7 +28,7 @@ class CollaborationAnalysisTemplate extends Shape
      *     arn: string,
      *     collaborationId: string,
      *     collaborationArn: string,
-     *     description?: string,
+     *     description?: string|null,
      *     creatorAccountId: string,
      *     name: string,
      *     createTime: \Aws\Api\DateTimeResult,
@@ -36,8 +36,8 @@ class CollaborationAnalysisTemplate extends Shape
      *     schema: AnalysisSchema,
      *     format: 'SQL',
      *     source: AnalysisSource,
-     *     analysisParameters?: list<AnalysisParameter>,
-     *     validations?: list<AnalysisTemplateValidationStatusDetail>
+     *     analysisParameters?: list<AnalysisParameter>|null,
+     *     validations?: list<AnalysisTemplateValidationStatusDetail>|null
      * } $args
      */
     public function __construct(array $args)

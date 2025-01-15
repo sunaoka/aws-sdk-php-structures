@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\AppMesh\DescribeVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LoggingFormat $format
+ * @property LoggingFormat|null $format
  * @property string $path
  */
 class FileAccessLog extends Shape
 {
     /**
      * @param array{
-     *     format?: LoggingFormat,
+     *     format?: LoggingFormat|null,
      *     path: string
      * } $args
      */

@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\LexModelBuildingService\GetUtterancesView;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $botName
- * @property list<Shapes\UtteranceList> $utterances
+ * @property string|null $botName
+ * @property list<Shapes\UtteranceList>|null $utterances
  */
 class GetUtterancesViewResponse extends Response
 {

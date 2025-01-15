@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DashboardId
- * @property array<string, string> $QueryParameterValues
+ * @property array<string, string>|null $QueryParameterValues
  */
 class StartDashboardRefreshRequest extends Request
 {
     /**
      * @param array{
      *     DashboardId: string,
-     *     QueryParameterValues?: array<string, string>
+     *     QueryParameterValues?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

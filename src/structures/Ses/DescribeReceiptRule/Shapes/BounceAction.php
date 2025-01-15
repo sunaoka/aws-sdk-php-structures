@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Ses\DescribeReceiptRule\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TopicArn
+ * @property string|null $TopicArn
  * @property string $SmtpReplyCode
- * @property string $StatusCode
+ * @property string|null $StatusCode
  * @property string $Message
  * @property string $Sender
  */
@@ -15,9 +15,9 @@ class BounceAction extends Shape
 {
     /**
      * @param array{
-     *     TopicArn?: string,
+     *     TopicArn?: string|null,
      *     SmtpReplyCode: string,
-     *     StatusCode?: string,
+     *     StatusCode?: string|null,
      *     Message: string,
      *     Sender: string
      * } $args

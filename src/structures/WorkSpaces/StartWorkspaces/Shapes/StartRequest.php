@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\WorkSpaces\StartWorkspaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $WorkspaceId
+ * @property string|null $WorkspaceId
  */
 class StartRequest extends Shape
 {
     /**
-     * @param array{WorkspaceId?: string} $args
+     * @param array{WorkspaceId?: string|null} $args
      */
     public function __construct(array $args = [])
     {

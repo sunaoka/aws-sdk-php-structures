@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetDeploymentGroup\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $deploymentId
- * @property 'Created'|'Queued'|'InProgress'|'Baking'|'Succeeded'|'Failed'|'Stopped'|'Ready' $status
- * @property \Aws\Api\DateTimeResult $endTime
- * @property \Aws\Api\DateTimeResult $createTime
+ * @property string|null $deploymentId
+ * @property 'Created'|'Queued'|'InProgress'|'Baking'|'Succeeded'|'Failed'|'Stopped'|'Ready'|null $status
+ * @property \Aws\Api\DateTimeResult|null $endTime
+ * @property \Aws\Api\DateTimeResult|null $createTime
  */
 class LastDeploymentInfo extends Shape
 {
     /**
      * @param array{
-     *     deploymentId?: string,
-     *     status?: 'Created'|'Queued'|'InProgress'|'Baking'|'Succeeded'|'Failed'|'Stopped'|'Ready',
-     *     endTime?: \Aws\Api\DateTimeResult,
-     *     createTime?: \Aws\Api\DateTimeResult
+     *     deploymentId?: string|null,
+     *     status?: 'Created'|'Queued'|'InProgress'|'Baking'|'Succeeded'|'Failed'|'Stopped'|'Ready'|null,
+     *     endTime?: \Aws\Api\DateTimeResult|null,
+     *     createTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

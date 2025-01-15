@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ResourceGroupsTaggingAPI\DescribeReportCreation
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Status
- * @property string $S3Location
- * @property string $ErrorMessage
+ * @property string|null $Status
+ * @property string|null $S3Location
+ * @property string|null $ErrorMessage
  */
 class DescribeReportCreationResponse extends Response
 {

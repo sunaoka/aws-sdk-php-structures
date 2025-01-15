@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeClusterSecurityGroups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClusterSecurityGroupName
- * @property int $MaxRecords
- * @property string $Marker
- * @property list<string> $TagKeys
- * @property list<string> $TagValues
+ * @property string|null $ClusterSecurityGroupName
+ * @property int|null $MaxRecords
+ * @property string|null $Marker
+ * @property list<string>|null $TagKeys
+ * @property list<string>|null $TagValues
  */
 class DescribeClusterSecurityGroupsRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterSecurityGroupName?: string,
-     *     MaxRecords?: int,
-     *     Marker?: string,
-     *     TagKeys?: list<string>,
-     *     TagValues?: list<string>
+     *     ClusterSecurityGroupName?: string|null,
+     *     MaxRecords?: int|null,
+     *     Marker?: string|null,
+     *     TagKeys?: list<string>|null,
+     *     TagValues?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

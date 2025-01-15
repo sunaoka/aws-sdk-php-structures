@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\LexModelsV2\CreateTestSetDiscrepancyReport\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TestSetDiscrepancyReportBotAliasTarget $botAliasTarget
+ * @property TestSetDiscrepancyReportBotAliasTarget|null $botAliasTarget
  */
 class TestSetDiscrepancyReportResourceTarget extends Shape
 {
     /**
-     * @param array{botAliasTarget?: TestSetDiscrepancyReportBotAliasTarget} $args
+     * @param array{botAliasTarget?: TestSetDiscrepancyReportBotAliasTarget|null} $args
      */
     public function __construct(array $args = [])
     {

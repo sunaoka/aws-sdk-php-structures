@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\DevOpsGuru\ListOrganizationInsights;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ProactiveOrganizationInsightSummary> $ProactiveInsights
- * @property list<Shapes\ReactiveOrganizationInsightSummary> $ReactiveInsights
- * @property string $NextToken
+ * @property list<Shapes\ProactiveOrganizationInsightSummary>|null $ProactiveInsights
+ * @property list<Shapes\ReactiveOrganizationInsightSummary>|null $ReactiveInsights
+ * @property string|null $NextToken
  */
 class ListOrganizationInsightsResponse extends Response
 {

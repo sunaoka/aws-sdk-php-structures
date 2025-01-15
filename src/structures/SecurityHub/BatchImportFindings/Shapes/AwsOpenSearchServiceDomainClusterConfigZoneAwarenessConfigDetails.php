@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $AvailabilityZoneCount
+ * @property int|null $AvailabilityZoneCount
  */
 class AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetails extends Shape
 {
     /**
-     * @param array{AvailabilityZoneCount?: int} $args
+     * @param array{AvailabilityZoneCount?: int|null} $args
      */
     public function __construct(array $args = [])
     {

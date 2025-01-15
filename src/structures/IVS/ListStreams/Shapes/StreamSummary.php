@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\IVS\ListStreams\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $channelArn
- * @property 'HEALTHY'|'STARVING'|'UNKNOWN' $health
- * @property \Aws\Api\DateTimeResult $startTime
- * @property 'LIVE'|'OFFLINE' $state
- * @property string $streamId
- * @property int $viewerCount
+ * @property string|null $channelArn
+ * @property 'HEALTHY'|'STARVING'|'UNKNOWN'|null $health
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property 'LIVE'|'OFFLINE'|null $state
+ * @property string|null $streamId
+ * @property int|null $viewerCount
  */
 class StreamSummary extends Shape
 {
     /**
      * @param array{
-     *     channelArn?: string,
-     *     health?: 'HEALTHY'|'STARVING'|'UNKNOWN',
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     state?: 'LIVE'|'OFFLINE',
-     *     streamId?: string,
-     *     viewerCount?: int
+     *     channelArn?: string|null,
+     *     health?: 'HEALTHY'|'STARVING'|'UNKNOWN'|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     state?: 'LIVE'|'OFFLINE'|null,
+     *     streamId?: string|null,
+     *     viewerCount?: int|null
      * } $args
      */
     public function __construct(array $args = [])

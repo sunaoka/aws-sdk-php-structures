@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Name
  * @property string $Uid
  * @property string $Type
- * @property string $CredentialUid
- * @property Account $Account
+ * @property string|null $CredentialUid
+ * @property Account|null $Account
  */
 class User extends Shape
 {
@@ -18,8 +18,8 @@ class User extends Shape
      *     Name: string,
      *     Uid: string,
      *     Type: string,
-     *     CredentialUid?: string,
-     *     Account?: Account
+     *     CredentialUid?: string|null,
+     *     Account?: Account|null
      * } $args
      */
     public function __construct(array $args)

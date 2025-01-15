@@ -9,9 +9,9 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $Content
  * @property 'STANDARD'|'CONTROL' $Type
  * @property 'PERSISTENT'|'NON_PERSISTENT' $Persistence
- * @property string $Metadata
+ * @property string|null $Metadata
  * @property string $ClientRequestToken
- * @property string $ChimeBearer
+ * @property string|null $ChimeBearer
  */
 class SendChannelMessageRequest extends Request
 {
@@ -21,9 +21,9 @@ class SendChannelMessageRequest extends Request
      *     Content: string,
      *     Type: 'STANDARD'|'CONTROL',
      *     Persistence: 'PERSISTENT'|'NON_PERSISTENT',
-     *     Metadata?: string,
+     *     Metadata?: string|null,
      *     ClientRequestToken: string,
-     *     ChimeBearer?: string
+     *     ChimeBearer?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\AppMesh\DescribeVirtualNode\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ListenerTlsFileCertificate $file
- * @property ListenerTlsSdsCertificate $sds
+ * @property ListenerTlsFileCertificate|null $file
+ * @property ListenerTlsSdsCertificate|null $sds
  */
 class ClientTlsCertificate extends Shape
 {
     /**
      * @param array{
-     *     file?: ListenerTlsFileCertificate,
-     *     sds?: ListenerTlsSdsCertificate
+     *     file?: ListenerTlsFileCertificate|null,
+     *     sds?: ListenerTlsSdsCertificate|null
      * } $args
      */
     public function __construct(array $args = [])

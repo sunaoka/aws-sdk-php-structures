@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SesV2\CreateConfigurationSetEventDestination\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ApplicationArn
+ * @property string|null $ApplicationArn
  */
 class PinpointDestination extends Shape
 {
     /**
-     * @param array{ApplicationArn?: string} $args
+     * @param array{ApplicationArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

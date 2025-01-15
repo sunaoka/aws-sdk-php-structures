@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Redshift\GetReservedNodeExchangeConfigurationOp
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Marker
- * @property list<Shapes\ReservedNodeConfigurationOption> $ReservedNodeConfigurationOptionList
+ * @property string|null $Marker
+ * @property list<Shapes\ReservedNodeConfigurationOption>|null $ReservedNodeConfigurationOptionList
  */
 class GetReservedNodeExchangeConfigurationOptionsResponse extends Response
 {

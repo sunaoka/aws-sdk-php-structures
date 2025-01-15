@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\Account\GetRegionOptStatus;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $AccountId
+ * @property string|null $AccountId
  * @property string $RegionName
  */
 class GetRegionOptStatusRequest extends Request
 {
     /**
      * @param array{
-     *     AccountId?: string,
+     *     AccountId?: string|null,
      *     RegionName: string
      * } $args
      */

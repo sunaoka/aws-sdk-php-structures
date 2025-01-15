@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\LaunchWizard\GetWorkloadDeploymentPattern\Shape
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<string> $allowedValues
- * @property list<DeploymentConditionalField> $conditionals
- * @property string $description
- * @property string $name
- * @property string $required
+ * @property list<string>|null $allowedValues
+ * @property list<DeploymentConditionalField>|null $conditionals
+ * @property string|null $description
+ * @property string|null $name
+ * @property string|null $required
  */
 class DeploymentSpecificationsField extends Shape
 {
     /**
      * @param array{
-     *     allowedValues?: list<string>,
-     *     conditionals?: list<DeploymentConditionalField>,
-     *     description?: string,
-     *     name?: string,
-     *     required?: string
+     *     allowedValues?: list<string>|null,
+     *     conditionals?: list<DeploymentConditionalField>|null,
+     *     description?: string|null,
+     *     name?: string|null,
+     *     required?: string|null
      * } $args
      */
     public function __construct(array $args = [])

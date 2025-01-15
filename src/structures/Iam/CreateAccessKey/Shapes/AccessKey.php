@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $AccessKeyId
  * @property 'Active'|'Inactive' $Status
  * @property string $SecretAccessKey
- * @property \Aws\Api\DateTimeResult $CreateDate
+ * @property \Aws\Api\DateTimeResult|null $CreateDate
  */
 class AccessKey extends Shape
 {
@@ -19,7 +19,7 @@ class AccessKey extends Shape
      *     AccessKeyId: string,
      *     Status: 'Active'|'Inactive',
      *     SecretAccessKey: string,
-     *     CreateDate?: \Aws\Api\DateTimeResult
+     *     CreateDate?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $eventName
  * @property string $condition
- * @property list<Action> $actions
+ * @property list<Action>|null $actions
  * @property string $nextState
  */
 class TransitionEvent extends Shape
@@ -16,7 +16,7 @@ class TransitionEvent extends Shape
      * @param array{
      *     eventName: string,
      *     condition: string,
-     *     actions?: list<Action>,
+     *     actions?: list<Action>|null,
      *     nextState: string
      * } $args
      */

@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Product
- * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL' $Label
- * @property int $Normalized
- * @property string $Original
+ * @property double|null $Product
+ * @property 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|null $Label
+ * @property int|null $Normalized
+ * @property string|null $Original
  */
 class Severity extends Shape
 {
     /**
      * @param array{
-     *     Product?: double,
-     *     Label?: 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL',
-     *     Normalized?: int,
-     *     Original?: string
+     *     Product?: double|null,
+     *     Label?: 'INFORMATIONAL'|'LOW'|'MEDIUM'|'HIGH'|'CRITICAL'|null,
+     *     Normalized?: int|null,
+     *     Original?: string|null
      * } $args
      */
     public function __construct(array $args = [])

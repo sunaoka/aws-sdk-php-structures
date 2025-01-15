@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $Lon
- * @property double $Lat
+ * @property double|null $Lon
+ * @property double|null $Lat
  */
 class GeoLocation extends Shape
 {
     /**
      * @param array{
-     *     Lon?: double,
-     *     Lat?: double
+     *     Lon?: double|null,
+     *     Lat?: double|null
      * } $args
      */
     public function __construct(array $args = [])

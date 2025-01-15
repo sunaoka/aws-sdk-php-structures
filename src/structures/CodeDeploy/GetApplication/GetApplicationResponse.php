@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetApplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ApplicationInfo $application
+ * @property Shapes\ApplicationInfo|null $application
  */
 class GetApplicationResponse extends Response
 {

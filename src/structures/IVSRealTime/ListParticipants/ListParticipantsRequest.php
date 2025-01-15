@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $stageArn
  * @property string $sessionId
- * @property string $filterByUserId
- * @property bool $filterByPublished
- * @property 'CONNECTED'|'DISCONNECTED' $filterByState
- * @property string $nextToken
- * @property int<1, 100> $maxResults
- * @property 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED' $filterByRecordingState
+ * @property string|null $filterByUserId
+ * @property bool|null $filterByPublished
+ * @property 'CONNECTED'|'DISCONNECTED'|null $filterByState
+ * @property string|null $nextToken
+ * @property int<1, 100>|null $maxResults
+ * @property 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'|null $filterByRecordingState
  */
 class ListParticipantsRequest extends Request
 {
@@ -20,12 +20,12 @@ class ListParticipantsRequest extends Request
      * @param array{
      *     stageArn: string,
      *     sessionId: string,
-     *     filterByUserId?: string,
-     *     filterByPublished?: bool,
-     *     filterByState?: 'CONNECTED'|'DISCONNECTED',
-     *     nextToken?: string,
-     *     maxResults?: int<1, 100>,
-     *     filterByRecordingState?: 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'
+     *     filterByUserId?: string|null,
+     *     filterByPublished?: bool|null,
+     *     filterByState?: 'CONNECTED'|'DISCONNECTED'|null,
+     *     nextToken?: string|null,
+     *     maxResults?: int<1, 100>|null,
+     *     filterByRecordingState?: 'STARTING'|'ACTIVE'|'STOPPING'|'STOPPED'|'FAILED'|null
      * } $args
      */
     public function __construct(array $args)

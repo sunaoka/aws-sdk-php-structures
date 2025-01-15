@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\QuickSight\UpdateTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'HIDDEN'|'VISIBLE' $AggregationVisibility
- * @property 'NONE'|'PRIMARY_VALUE' $TooltipTitleType
- * @property list<TooltipItem> $TooltipFields
+ * @property 'HIDDEN'|'VISIBLE'|null $AggregationVisibility
+ * @property 'NONE'|'PRIMARY_VALUE'|null $TooltipTitleType
+ * @property list<TooltipItem>|null $TooltipFields
  */
 class FieldBasedTooltip extends Shape
 {
     /**
      * @param array{
-     *     AggregationVisibility?: 'HIDDEN'|'VISIBLE',
-     *     TooltipTitleType?: 'NONE'|'PRIMARY_VALUE',
-     *     TooltipFields?: list<TooltipItem>
+     *     AggregationVisibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     TooltipTitleType?: 'NONE'|'PRIMARY_VALUE'|null,
+     *     TooltipFields?: list<TooltipItem>|null
      * } $args
      */
     public function __construct(array $args = [])

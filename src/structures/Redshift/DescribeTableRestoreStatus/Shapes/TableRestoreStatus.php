@@ -5,39 +5,39 @@ namespace Sunaoka\Aws\Structures\Redshift\DescribeTableRestoreStatus\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $TableRestoreRequestId
- * @property 'PENDING'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'CANCELED' $Status
- * @property string $Message
- * @property \Aws\Api\DateTimeResult $RequestTime
- * @property int $ProgressInMegaBytes
- * @property int $TotalDataInMegaBytes
- * @property string $ClusterIdentifier
- * @property string $SnapshotIdentifier
- * @property string $SourceDatabaseName
- * @property string $SourceSchemaName
- * @property string $SourceTableName
- * @property string $TargetDatabaseName
- * @property string $TargetSchemaName
- * @property string $NewTableName
+ * @property string|null $TableRestoreRequestId
+ * @property 'PENDING'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'CANCELED'|null $Status
+ * @property string|null $Message
+ * @property \Aws\Api\DateTimeResult|null $RequestTime
+ * @property int|null $ProgressInMegaBytes
+ * @property int|null $TotalDataInMegaBytes
+ * @property string|null $ClusterIdentifier
+ * @property string|null $SnapshotIdentifier
+ * @property string|null $SourceDatabaseName
+ * @property string|null $SourceSchemaName
+ * @property string|null $SourceTableName
+ * @property string|null $TargetDatabaseName
+ * @property string|null $TargetSchemaName
+ * @property string|null $NewTableName
  */
 class TableRestoreStatus extends Shape
 {
     /**
      * @param array{
-     *     TableRestoreRequestId?: string,
-     *     Status?: 'PENDING'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'CANCELED',
-     *     Message?: string,
-     *     RequestTime?: \Aws\Api\DateTimeResult,
-     *     ProgressInMegaBytes?: int,
-     *     TotalDataInMegaBytes?: int,
-     *     ClusterIdentifier?: string,
-     *     SnapshotIdentifier?: string,
-     *     SourceDatabaseName?: string,
-     *     SourceSchemaName?: string,
-     *     SourceTableName?: string,
-     *     TargetDatabaseName?: string,
-     *     TargetSchemaName?: string,
-     *     NewTableName?: string
+     *     TableRestoreRequestId?: string|null,
+     *     Status?: 'PENDING'|'IN_PROGRESS'|'SUCCEEDED'|'FAILED'|'CANCELED'|null,
+     *     Message?: string|null,
+     *     RequestTime?: \Aws\Api\DateTimeResult|null,
+     *     ProgressInMegaBytes?: int|null,
+     *     TotalDataInMegaBytes?: int|null,
+     *     ClusterIdentifier?: string|null,
+     *     SnapshotIdentifier?: string|null,
+     *     SourceDatabaseName?: string|null,
+     *     SourceSchemaName?: string|null,
+     *     SourceTableName?: string|null,
+     *     TargetDatabaseName?: string|null,
+     *     TargetSchemaName?: string|null,
+     *     NewTableName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,22 +5,22 @@ namespace Sunaoka\Aws\Structures\finspace\UpdateKxEnvironmentNetwork;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $name
- * @property string $environmentId
- * @property string $awsAccountId
- * @property 'CREATE_REQUESTED'|'CREATING'|'CREATED'|'DELETE_REQUESTED'|'DELETING'|'DELETED'|'FAILED_CREATION'|'RETRY_DELETION'|'FAILED_DELETION'|'UPDATE_NETWORK_REQUESTED'|'UPDATING_NETWORK'|'FAILED_UPDATING_NETWORK'|'SUSPENDED' $status
- * @property 'NONE'|'UPDATE_REQUESTED'|'UPDATING'|'FAILED_UPDATE'|'SUCCESSFULLY_UPDATED' $tgwStatus
- * @property 'NONE'|'UPDATE_REQUESTED'|'UPDATING'|'FAILED_UPDATE'|'SUCCESSFULLY_UPDATED' $dnsStatus
- * @property string $errorMessage
- * @property string $description
- * @property string $environmentArn
- * @property string $kmsKeyId
- * @property string $dedicatedServiceAccountId
- * @property Shapes\TransitGatewayConfiguration $transitGatewayConfiguration
- * @property list<Shapes\CustomDNSServer> $customDNSConfiguration
- * @property \Aws\Api\DateTimeResult $creationTimestamp
- * @property \Aws\Api\DateTimeResult $updateTimestamp
- * @property list<string> $availabilityZoneIds
+ * @property string|null $name
+ * @property string|null $environmentId
+ * @property string|null $awsAccountId
+ * @property 'CREATE_REQUESTED'|'CREATING'|'CREATED'|'DELETE_REQUESTED'|'DELETING'|'DELETED'|'FAILED_CREATION'|'RETRY_DELETION'|'FAILED_DELETION'|'UPDATE_NETWORK_REQUESTED'|'UPDATING_NETWORK'|'FAILED_UPDATING_NETWORK'|'SUSPENDED'|null $status
+ * @property 'NONE'|'UPDATE_REQUESTED'|'UPDATING'|'FAILED_UPDATE'|'SUCCESSFULLY_UPDATED'|null $tgwStatus
+ * @property 'NONE'|'UPDATE_REQUESTED'|'UPDATING'|'FAILED_UPDATE'|'SUCCESSFULLY_UPDATED'|null $dnsStatus
+ * @property string|null $errorMessage
+ * @property string|null $description
+ * @property string|null $environmentArn
+ * @property string|null $kmsKeyId
+ * @property string|null $dedicatedServiceAccountId
+ * @property Shapes\TransitGatewayConfiguration|null $transitGatewayConfiguration
+ * @property list<Shapes\CustomDNSServer>|null $customDNSConfiguration
+ * @property \Aws\Api\DateTimeResult|null $creationTimestamp
+ * @property \Aws\Api\DateTimeResult|null $updateTimestamp
+ * @property list<string>|null $availabilityZoneIds
  */
 class UpdateKxEnvironmentNetworkResponse extends Response
 {

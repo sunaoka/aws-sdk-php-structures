@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $domainName
- * @property string $domainNameId
+ * @property string|null $domainNameId
  * @property string $basePath
- * @property list<Shapes\PatchOperation> $patchOperations
+ * @property list<Shapes\PatchOperation>|null $patchOperations
  */
 class UpdateBasePathMappingRequest extends Request
 {
     /**
      * @param array{
      *     domainName: string,
-     *     domainNameId?: string,
+     *     domainNameId?: string|null,
      *     basePath: string,
-     *     patchOperations?: list<Shapes\PatchOperation>
+     *     patchOperations?: list<Shapes\PatchOperation>|null
      * } $args
      */
     public function __construct(array $args)

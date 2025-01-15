@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\BedrockRuntime\Converse\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property Message $message
+ * @property Message|null $message
  */
 class ConverseOutput extends Shape
 {
     /**
-     * @param array{message?: Message} $args
+     * @param array{message?: Message|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $FailureReason
+ * @property string|null $FailureReason
  * @property string $ImageArn
  * @property string $ImageVersionArn
  * @property 'CREATING'|'CREATED'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED' $ImageVersionStatus
@@ -18,7 +18,7 @@ class ImageVersion extends Shape
     /**
      * @param array{
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     FailureReason?: string,
+     *     FailureReason?: string|null,
      *     ImageArn: string,
      *     ImageVersionArn: string,
      *     ImageVersionStatus: 'CREATING'|'CREATED'|'CREATE_FAILED'|'DELETING'|'DELETE_FAILED',

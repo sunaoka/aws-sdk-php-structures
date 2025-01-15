@@ -6,104 +6,104 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBInstanceIdentifier
- * @property string $SourceDBInstanceIdentifier
- * @property string $DBInstanceClass
- * @property string $AvailabilityZone
- * @property int $Port
- * @property bool $MultiAZ
- * @property bool $AutoMinorVersionUpgrade
- * @property int $Iops
- * @property string $OptionGroupName
- * @property string $DBParameterGroupName
- * @property bool $PubliclyAccessible
- * @property list<Shapes\Tag> $Tags
- * @property string $DBSubnetGroupName
- * @property list<string> $VpcSecurityGroupIds
- * @property string $StorageType
- * @property bool $CopyTagsToSnapshot
- * @property int $MonitoringInterval
- * @property string $MonitoringRoleArn
- * @property string $KmsKeyId
- * @property string $PreSignedUrl
- * @property string $DestinationRegion
- * @property bool $EnableIAMDatabaseAuthentication
- * @property 'standard'|'advanced' $DatabaseInsightsMode
- * @property bool $EnablePerformanceInsights
- * @property string $PerformanceInsightsKMSKeyId
- * @property int $PerformanceInsightsRetentionPeriod
- * @property list<string> $EnableCloudwatchLogsExports
- * @property list<Shapes\ProcessorFeature> $ProcessorFeatures
- * @property bool $UseDefaultProcessorFeatures
- * @property bool $DeletionProtection
- * @property string $Domain
- * @property string $DomainIAMRoleName
- * @property string $DomainFqdn
- * @property string $DomainOu
- * @property string $DomainAuthSecretArn
- * @property list<string> $DomainDnsIps
- * @property 'open-read-only'|'mounted' $ReplicaMode
- * @property int $MaxAllocatedStorage
- * @property string $CustomIamInstanceProfile
- * @property string $NetworkType
- * @property int $StorageThroughput
- * @property bool $EnableCustomerOwnedIp
- * @property int $AllocatedStorage
- * @property string $SourceDBClusterIdentifier
- * @property bool $DedicatedLogVolume
- * @property bool $UpgradeStorageConfig
- * @property string $CACertificateIdentifier
+ * @property string|null $SourceDBInstanceIdentifier
+ * @property string|null $DBInstanceClass
+ * @property string|null $AvailabilityZone
+ * @property int|null $Port
+ * @property bool|null $MultiAZ
+ * @property bool|null $AutoMinorVersionUpgrade
+ * @property int|null $Iops
+ * @property string|null $OptionGroupName
+ * @property string|null $DBParameterGroupName
+ * @property bool|null $PubliclyAccessible
+ * @property list<Shapes\Tag>|null $Tags
+ * @property string|null $DBSubnetGroupName
+ * @property list<string>|null $VpcSecurityGroupIds
+ * @property string|null $StorageType
+ * @property bool|null $CopyTagsToSnapshot
+ * @property int|null $MonitoringInterval
+ * @property string|null $MonitoringRoleArn
+ * @property string|null $KmsKeyId
+ * @property string|null $PreSignedUrl
+ * @property string|null $DestinationRegion
+ * @property bool|null $EnableIAMDatabaseAuthentication
+ * @property 'standard'|'advanced'|null $DatabaseInsightsMode
+ * @property bool|null $EnablePerformanceInsights
+ * @property string|null $PerformanceInsightsKMSKeyId
+ * @property int|null $PerformanceInsightsRetentionPeriod
+ * @property list<string>|null $EnableCloudwatchLogsExports
+ * @property list<Shapes\ProcessorFeature>|null $ProcessorFeatures
+ * @property bool|null $UseDefaultProcessorFeatures
+ * @property bool|null $DeletionProtection
+ * @property string|null $Domain
+ * @property string|null $DomainIAMRoleName
+ * @property string|null $DomainFqdn
+ * @property string|null $DomainOu
+ * @property string|null $DomainAuthSecretArn
+ * @property list<string>|null $DomainDnsIps
+ * @property 'open-read-only'|'mounted'|null $ReplicaMode
+ * @property int|null $MaxAllocatedStorage
+ * @property string|null $CustomIamInstanceProfile
+ * @property string|null $NetworkType
+ * @property int|null $StorageThroughput
+ * @property bool|null $EnableCustomerOwnedIp
+ * @property int|null $AllocatedStorage
+ * @property string|null $SourceDBClusterIdentifier
+ * @property bool|null $DedicatedLogVolume
+ * @property bool|null $UpgradeStorageConfig
+ * @property string|null $CACertificateIdentifier
  */
 class CreateDBInstanceReadReplicaRequest extends Request
 {
     /**
      * @param array{
      *     DBInstanceIdentifier: string,
-     *     SourceDBInstanceIdentifier?: string,
-     *     DBInstanceClass?: string,
-     *     AvailabilityZone?: string,
-     *     Port?: int,
-     *     MultiAZ?: bool,
-     *     AutoMinorVersionUpgrade?: bool,
-     *     Iops?: int,
-     *     OptionGroupName?: string,
-     *     DBParameterGroupName?: string,
-     *     PubliclyAccessible?: bool,
-     *     Tags?: list<Shapes\Tag>,
-     *     DBSubnetGroupName?: string,
-     *     VpcSecurityGroupIds?: list<string>,
-     *     StorageType?: string,
-     *     CopyTagsToSnapshot?: bool,
-     *     MonitoringInterval?: int,
-     *     MonitoringRoleArn?: string,
-     *     KmsKeyId?: string,
-     *     PreSignedUrl?: string,
-     *     DestinationRegion?: string,
-     *     EnableIAMDatabaseAuthentication?: bool,
-     *     DatabaseInsightsMode?: 'standard'|'advanced',
-     *     EnablePerformanceInsights?: bool,
-     *     PerformanceInsightsKMSKeyId?: string,
-     *     PerformanceInsightsRetentionPeriod?: int,
-     *     EnableCloudwatchLogsExports?: list<string>,
-     *     ProcessorFeatures?: list<Shapes\ProcessorFeature>,
-     *     UseDefaultProcessorFeatures?: bool,
-     *     DeletionProtection?: bool,
-     *     Domain?: string,
-     *     DomainIAMRoleName?: string,
-     *     DomainFqdn?: string,
-     *     DomainOu?: string,
-     *     DomainAuthSecretArn?: string,
-     *     DomainDnsIps?: list<string>,
-     *     ReplicaMode?: 'open-read-only'|'mounted',
-     *     MaxAllocatedStorage?: int,
-     *     CustomIamInstanceProfile?: string,
-     *     NetworkType?: string,
-     *     StorageThroughput?: int,
-     *     EnableCustomerOwnedIp?: bool,
-     *     AllocatedStorage?: int,
-     *     SourceDBClusterIdentifier?: string,
-     *     DedicatedLogVolume?: bool,
-     *     UpgradeStorageConfig?: bool,
-     *     CACertificateIdentifier?: string
+     *     SourceDBInstanceIdentifier?: string|null,
+     *     DBInstanceClass?: string|null,
+     *     AvailabilityZone?: string|null,
+     *     Port?: int|null,
+     *     MultiAZ?: bool|null,
+     *     AutoMinorVersionUpgrade?: bool|null,
+     *     Iops?: int|null,
+     *     OptionGroupName?: string|null,
+     *     DBParameterGroupName?: string|null,
+     *     PubliclyAccessible?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null,
+     *     DBSubnetGroupName?: string|null,
+     *     VpcSecurityGroupIds?: list<string>|null,
+     *     StorageType?: string|null,
+     *     CopyTagsToSnapshot?: bool|null,
+     *     MonitoringInterval?: int|null,
+     *     MonitoringRoleArn?: string|null,
+     *     KmsKeyId?: string|null,
+     *     PreSignedUrl?: string|null,
+     *     DestinationRegion?: string|null,
+     *     EnableIAMDatabaseAuthentication?: bool|null,
+     *     DatabaseInsightsMode?: 'standard'|'advanced'|null,
+     *     EnablePerformanceInsights?: bool|null,
+     *     PerformanceInsightsKMSKeyId?: string|null,
+     *     PerformanceInsightsRetentionPeriod?: int|null,
+     *     EnableCloudwatchLogsExports?: list<string>|null,
+     *     ProcessorFeatures?: list<Shapes\ProcessorFeature>|null,
+     *     UseDefaultProcessorFeatures?: bool|null,
+     *     DeletionProtection?: bool|null,
+     *     Domain?: string|null,
+     *     DomainIAMRoleName?: string|null,
+     *     DomainFqdn?: string|null,
+     *     DomainOu?: string|null,
+     *     DomainAuthSecretArn?: string|null,
+     *     DomainDnsIps?: list<string>|null,
+     *     ReplicaMode?: 'open-read-only'|'mounted'|null,
+     *     MaxAllocatedStorage?: int|null,
+     *     CustomIamInstanceProfile?: string|null,
+     *     NetworkType?: string|null,
+     *     StorageThroughput?: int|null,
+     *     EnableCustomerOwnedIp?: bool|null,
+     *     AllocatedStorage?: int|null,
+     *     SourceDBClusterIdentifier?: string|null,
+     *     DedicatedLogVolume?: bool|null,
+     *     UpgradeStorageConfig?: bool|null,
+     *     CACertificateIdentifier?: string|null
      * } $args
      */
     public function __construct(array $args)

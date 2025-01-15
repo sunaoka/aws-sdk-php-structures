@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\QBusiness\CreateIndex;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $indexId
- * @property string $indexArn
+ * @property string|null $indexId
+ * @property string|null $indexArn
  */
 class CreateIndexResponse extends Response
 {

@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\EntityResolution\GetMatchingWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $hashed
+ * @property bool|null $hashed
  * @property string $name
  */
 class OutputAttribute extends Shape
 {
     /**
      * @param array{
-     *     hashed?: bool,
+     *     hashed?: bool|null,
      *     name: string
      * } $args
      */

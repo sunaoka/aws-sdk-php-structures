@@ -11,7 +11,7 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $connectInstanceId
  * @property DialerConfig $dialerConfig
  * @property OutboundCallConfig $outboundCallConfig
- * @property array<string, string> $tags
+ * @property array<string, string>|null $tags
  */
 class Campaign extends Shape
 {
@@ -23,7 +23,7 @@ class Campaign extends Shape
      *     connectInstanceId: string,
      *     dialerConfig: DialerConfig,
      *     outboundCallConfig: OutboundCallConfig,
-     *     tags?: array<string, string>
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

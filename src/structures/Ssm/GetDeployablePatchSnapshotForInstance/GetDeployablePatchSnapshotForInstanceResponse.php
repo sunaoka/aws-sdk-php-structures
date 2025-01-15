@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\Ssm\GetDeployablePatchSnapshotForInstance;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $InstanceId
- * @property string $SnapshotId
- * @property string $SnapshotDownloadUrl
- * @property string $Product
+ * @property string|null $InstanceId
+ * @property string|null $SnapshotId
+ * @property string|null $SnapshotDownloadUrl
+ * @property string|null $Product
  */
 class GetDeployablePatchSnapshotForInstanceResponse extends Response
 {

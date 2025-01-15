@@ -7,10 +7,10 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Arn
  * @property string $Database
- * @property string $Function
- * @property string $Table
- * @property string $Schema
- * @property string $View
+ * @property string|null $Function
+ * @property string|null $Table
+ * @property string|null $Schema
+ * @property string|null $View
  */
 class RedshiftDataShareDetails extends Shape
 {
@@ -18,10 +18,10 @@ class RedshiftDataShareDetails extends Shape
      * @param array{
      *     Arn: string,
      *     Database: string,
-     *     Function?: string,
-     *     Table?: string,
-     *     Schema?: string,
-     *     View?: string
+     *     Function?: string|null,
+     *     Table?: string|null,
+     *     Schema?: string|null,
+     *     View?: string|null
      * } $args
      */
     public function __construct(array $args)

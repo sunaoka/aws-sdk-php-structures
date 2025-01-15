@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMessaging\SendChannelMessage\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MemberArn
+ * @property string|null $MemberArn
  */
 class Target extends Shape
 {
     /**
-     * @param array{MemberArn?: string} $args
+     * @param array{MemberArn?: string|null} $args
      */
     public function __construct(array $args = [])
     {

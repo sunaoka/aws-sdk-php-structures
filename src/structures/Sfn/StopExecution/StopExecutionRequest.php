@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $executionArn
- * @property string $error
- * @property string $cause
+ * @property string|null $error
+ * @property string|null $cause
  */
 class StopExecutionRequest extends Request
 {
     /**
      * @param array{
      *     executionArn: string,
-     *     error?: string,
-     *     cause?: string
+     *     error?: string|null,
+     *     cause?: string|null
      * } $args
      */
     public function __construct(array $args)

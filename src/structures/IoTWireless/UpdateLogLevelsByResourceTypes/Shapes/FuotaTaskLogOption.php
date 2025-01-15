@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'LoRaWAN' $Type
  * @property 'INFO'|'ERROR'|'DISABLED' $LogLevel
- * @property list<FuotaTaskEventLogOption> $Events
+ * @property list<FuotaTaskEventLogOption>|null $Events
  */
 class FuotaTaskLogOption extends Shape
 {
@@ -15,7 +15,7 @@ class FuotaTaskLogOption extends Shape
      * @param array{
      *     Type: 'LoRaWAN',
      *     LogLevel: 'INFO'|'ERROR'|'DISABLED',
-     *     Events?: list<FuotaTaskEventLogOption>
+     *     Events?: list<FuotaTaskEventLogOption>|null
      * } $args
      */
     public function __construct(array $args)

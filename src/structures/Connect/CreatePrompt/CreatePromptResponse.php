@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Connect\CreatePrompt;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PromptARN
- * @property string $PromptId
+ * @property string|null $PromptARN
+ * @property string|null $PromptId
  */
 class CreatePromptResponse extends Response
 {

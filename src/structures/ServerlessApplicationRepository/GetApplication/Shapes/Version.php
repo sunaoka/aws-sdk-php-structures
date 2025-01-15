@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'|'CAPABILITY_RESOURCE_POLICY'> $RequiredCapabilities
  * @property bool $ResourcesSupported
  * @property string $SemanticVersion
- * @property string $SourceCodeArchiveUrl
- * @property string $SourceCodeUrl
+ * @property string|null $SourceCodeArchiveUrl
+ * @property string|null $SourceCodeUrl
  * @property string $TemplateUrl
  */
 class Version extends Shape
@@ -25,8 +25,8 @@ class Version extends Shape
      *     RequiredCapabilities: list<'CAPABILITY_IAM'|'CAPABILITY_NAMED_IAM'|'CAPABILITY_AUTO_EXPAND'|'CAPABILITY_RESOURCE_POLICY'>,
      *     ResourcesSupported: bool,
      *     SemanticVersion: string,
-     *     SourceCodeArchiveUrl?: string,
-     *     SourceCodeUrl?: string,
+     *     SourceCodeArchiveUrl?: string|null,
+     *     SourceCodeUrl?: string|null,
      *     TemplateUrl: string
      * } $args
      */

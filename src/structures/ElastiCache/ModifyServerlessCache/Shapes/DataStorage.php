@@ -5,16 +5,16 @@ namespace Sunaoka\Aws\Structures\ElastiCache\ModifyServerlessCache\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Maximum
- * @property int $Minimum
+ * @property int|null $Maximum
+ * @property int|null $Minimum
  * @property 'GB' $Unit
  */
 class DataStorage extends Shape
 {
     /**
      * @param array{
-     *     Maximum?: int,
-     *     Minimum?: int,
+     *     Maximum?: int|null,
+     *     Minimum?: int|null,
      *     Unit: 'GB'
      * } $args
      */

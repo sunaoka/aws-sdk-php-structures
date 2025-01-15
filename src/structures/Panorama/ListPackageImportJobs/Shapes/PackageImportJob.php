@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\Panorama\ListPackageImportJobs\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property string $JobId
- * @property 'NODE_PACKAGE_VERSION'|'MARKETPLACE_NODE_PACKAGE_VERSION' $JobType
- * @property \Aws\Api\DateTimeResult $LastUpdatedTime
- * @property 'PENDING'|'SUCCEEDED'|'FAILED' $Status
- * @property string $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property string|null $JobId
+ * @property 'NODE_PACKAGE_VERSION'|'MARKETPLACE_NODE_PACKAGE_VERSION'|null $JobType
+ * @property \Aws\Api\DateTimeResult|null $LastUpdatedTime
+ * @property 'PENDING'|'SUCCEEDED'|'FAILED'|null $Status
+ * @property string|null $StatusMessage
  */
 class PackageImportJob extends Shape
 {
     /**
      * @param array{
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     JobId?: string,
-     *     JobType?: 'NODE_PACKAGE_VERSION'|'MARKETPLACE_NODE_PACKAGE_VERSION',
-     *     LastUpdatedTime?: \Aws\Api\DateTimeResult,
-     *     Status?: 'PENDING'|'SUCCEEDED'|'FAILED',
-     *     StatusMessage?: string
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     JobId?: string|null,
+     *     JobType?: 'NODE_PACKAGE_VERSION'|'MARKETPLACE_NODE_PACKAGE_VERSION'|null,
+     *     LastUpdatedTime?: \Aws\Api\DateTimeResult|null,
+     *     Status?: 'PENDING'|'SUCCEEDED'|'FAILED'|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

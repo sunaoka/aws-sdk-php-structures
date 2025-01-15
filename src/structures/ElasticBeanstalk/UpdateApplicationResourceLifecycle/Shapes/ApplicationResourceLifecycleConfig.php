@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\ElasticBeanstalk\UpdateApplicationResourceLifec
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ServiceRole
- * @property ApplicationVersionLifecycleConfig $VersionLifecycleConfig
+ * @property string|null $ServiceRole
+ * @property ApplicationVersionLifecycleConfig|null $VersionLifecycleConfig
  */
 class ApplicationResourceLifecycleConfig extends Shape
 {
     /**
      * @param array{
-     *     ServiceRole?: string,
-     *     VersionLifecycleConfig?: ApplicationVersionLifecycleConfig
+     *     ServiceRole?: string|null,
+     *     VersionLifecycleConfig?: ApplicationVersionLifecycleConfig|null
      * } $args
      */
     public function __construct(array $args = [])

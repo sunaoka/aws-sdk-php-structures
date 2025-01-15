@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $source
  * @property string $target
- * @property bool $overwriteIfExists
+ * @property bool|null $overwriteIfExists
  */
 class MoveKeyEntry extends Shape
 {
@@ -15,7 +15,7 @@ class MoveKeyEntry extends Shape
      * @param array{
      *     source: string,
      *     target: string,
-     *     overwriteIfExists?: bool
+     *     overwriteIfExists?: bool|null
      * } $args
      */
     public function __construct(array $args)

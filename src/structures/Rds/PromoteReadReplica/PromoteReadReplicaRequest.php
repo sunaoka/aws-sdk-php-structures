@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $DBInstanceIdentifier
- * @property int $BackupRetentionPeriod
- * @property string $PreferredBackupWindow
+ * @property int|null $BackupRetentionPeriod
+ * @property string|null $PreferredBackupWindow
  */
 class PromoteReadReplicaRequest extends Request
 {
     /**
      * @param array{
      *     DBInstanceIdentifier: string,
-     *     BackupRetentionPeriod?: int,
-     *     PreferredBackupWindow?: string
+     *     BackupRetentionPeriod?: int|null,
+     *     PreferredBackupWindow?: string|null
      * } $args
      */
     public function __construct(array $args)

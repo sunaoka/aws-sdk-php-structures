@@ -6,28 +6,28 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $LayerId
- * @property 'POINT'|'LINE'|'POLYGON' $LayerType
- * @property GeospatialDataSourceItem $DataSource
- * @property string $Label
- * @property 'HIDDEN'|'VISIBLE' $Visibility
- * @property GeospatialLayerDefinition $LayerDefinition
- * @property TooltipOptions $Tooltip
- * @property GeospatialLayerJoinDefinition $JoinDefinition
- * @property list<LayerCustomAction> $Actions
+ * @property 'POINT'|'LINE'|'POLYGON'|null $LayerType
+ * @property GeospatialDataSourceItem|null $DataSource
+ * @property string|null $Label
+ * @property 'HIDDEN'|'VISIBLE'|null $Visibility
+ * @property GeospatialLayerDefinition|null $LayerDefinition
+ * @property TooltipOptions|null $Tooltip
+ * @property GeospatialLayerJoinDefinition|null $JoinDefinition
+ * @property list<LayerCustomAction>|null $Actions
  */
 class GeospatialLayerItem extends Shape
 {
     /**
      * @param array{
      *     LayerId: string,
-     *     LayerType?: 'POINT'|'LINE'|'POLYGON',
-     *     DataSource?: GeospatialDataSourceItem,
-     *     Label?: string,
-     *     Visibility?: 'HIDDEN'|'VISIBLE',
-     *     LayerDefinition?: GeospatialLayerDefinition,
-     *     Tooltip?: TooltipOptions,
-     *     JoinDefinition?: GeospatialLayerJoinDefinition,
-     *     Actions?: list<LayerCustomAction>
+     *     LayerType?: 'POINT'|'LINE'|'POLYGON'|null,
+     *     DataSource?: GeospatialDataSourceItem|null,
+     *     Label?: string|null,
+     *     Visibility?: 'HIDDEN'|'VISIBLE'|null,
+     *     LayerDefinition?: GeospatialLayerDefinition|null,
+     *     Tooltip?: TooltipOptions|null,
+     *     JoinDefinition?: GeospatialLayerJoinDefinition|null,
+     *     Actions?: list<LayerCustomAction>|null
      * } $args
      */
     public function __construct(array $args)

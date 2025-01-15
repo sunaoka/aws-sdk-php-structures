@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\FIS\GetExperimentTargetAccountConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\ExperimentTargetAccountConfiguration $targetAccountConfiguration
+ * @property Shapes\ExperimentTargetAccountConfiguration|null $targetAccountConfiguration
  */
 class GetExperimentTargetAccountConfigurationResponse extends Response
 {

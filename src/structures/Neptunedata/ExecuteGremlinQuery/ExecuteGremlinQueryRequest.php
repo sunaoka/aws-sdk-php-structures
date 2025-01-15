@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $gremlinQuery
- * @property string $serializer
+ * @property string|null $serializer
  */
 class ExecuteGremlinQueryRequest extends Request
 {
     /**
      * @param array{
      *     gremlinQuery: string,
-     *     serializer?: string
+     *     serializer?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\ListBillEstimateCommitment
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property 'SAVINGS_PLANS'|'RESERVED_INSTANCE' $purchaseAgreementType
- * @property string $offeringId
- * @property string $usageAccountId
- * @property string $region
- * @property string $termLength
- * @property string $paymentOption
- * @property CostAmount $upfrontPayment
- * @property CostAmount $monthlyPayment
+ * @property string|null $id
+ * @property 'SAVINGS_PLANS'|'RESERVED_INSTANCE'|null $purchaseAgreementType
+ * @property string|null $offeringId
+ * @property string|null $usageAccountId
+ * @property string|null $region
+ * @property string|null $termLength
+ * @property string|null $paymentOption
+ * @property CostAmount|null $upfrontPayment
+ * @property CostAmount|null $monthlyPayment
  */
 class BillEstimateCommitmentSummary extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     purchaseAgreementType?: 'SAVINGS_PLANS'|'RESERVED_INSTANCE',
-     *     offeringId?: string,
-     *     usageAccountId?: string,
-     *     region?: string,
-     *     termLength?: string,
-     *     paymentOption?: string,
-     *     upfrontPayment?: CostAmount,
-     *     monthlyPayment?: CostAmount
+     *     id?: string|null,
+     *     purchaseAgreementType?: 'SAVINGS_PLANS'|'RESERVED_INSTANCE'|null,
+     *     offeringId?: string|null,
+     *     usageAccountId?: string|null,
+     *     region?: string|null,
+     *     termLength?: string|null,
+     *     paymentOption?: string|null,
+     *     upfrontPayment?: CostAmount|null,
+     *     monthlyPayment?: CostAmount|null
      * } $args
      */
     public function __construct(array $args = [])

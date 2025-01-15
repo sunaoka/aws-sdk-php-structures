@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Comprehend\DescribeDocumentClassifier\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'COMPREHEND_CSV'|'AUGMENTED_MANIFEST' $DataFormat
- * @property string $S3Uri
- * @property string $TestS3Uri
- * @property string $LabelDelimiter
- * @property list<AugmentedManifestsListItem> $AugmentedManifests
- * @property 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT' $DocumentType
- * @property DocumentClassifierDocuments $Documents
- * @property DocumentReaderConfig $DocumentReaderConfig
+ * @property 'COMPREHEND_CSV'|'AUGMENTED_MANIFEST'|null $DataFormat
+ * @property string|null $S3Uri
+ * @property string|null $TestS3Uri
+ * @property string|null $LabelDelimiter
+ * @property list<AugmentedManifestsListItem>|null $AugmentedManifests
+ * @property 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT'|null $DocumentType
+ * @property DocumentClassifierDocuments|null $Documents
+ * @property DocumentReaderConfig|null $DocumentReaderConfig
  */
 class DocumentClassifierInputDataConfig extends Shape
 {
     /**
      * @param array{
-     *     DataFormat?: 'COMPREHEND_CSV'|'AUGMENTED_MANIFEST',
-     *     S3Uri?: string,
-     *     TestS3Uri?: string,
-     *     LabelDelimiter?: string,
-     *     AugmentedManifests?: list<AugmentedManifestsListItem>,
-     *     DocumentType?: 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT',
-     *     Documents?: DocumentClassifierDocuments,
-     *     DocumentReaderConfig?: DocumentReaderConfig
+     *     DataFormat?: 'COMPREHEND_CSV'|'AUGMENTED_MANIFEST'|null,
+     *     S3Uri?: string|null,
+     *     TestS3Uri?: string|null,
+     *     LabelDelimiter?: string|null,
+     *     AugmentedManifests?: list<AugmentedManifestsListItem>|null,
+     *     DocumentType?: 'PLAIN_TEXT_DOCUMENT'|'SEMI_STRUCTURED_DOCUMENT'|null,
+     *     Documents?: DocumentClassifierDocuments|null,
+     *     DocumentReaderConfig?: DocumentReaderConfig|null
      * } $args
      */
     public function __construct(array $args = [])

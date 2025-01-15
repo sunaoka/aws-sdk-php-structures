@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $CapacityReservationId
- * @property string $NextToken
- * @property int<1, 1000> $MaxResults
- * @property bool $DryRun
+ * @property string|null $NextToken
+ * @property int<1, 1000>|null $MaxResults
+ * @property bool|null $DryRun
  */
 class GetGroupsForCapacityReservationRequest extends Request
 {
     /**
      * @param array{
      *     CapacityReservationId: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     DryRun?: bool
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     DryRun?: bool|null
      * } $args
      */
     public function __construct(array $args)

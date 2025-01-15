@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\ApplicationDiscoveryService\StartExportTask\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $enabled
- * @property UsageMetricBasis $cpuPerformanceMetricBasis
- * @property UsageMetricBasis $ramPerformanceMetricBasis
- * @property 'DEDICATED'|'SHARED' $tenancy
- * @property list<string> $excludedInstanceTypes
- * @property string $preferredRegion
- * @property ReservedInstanceOptions $reservedInstanceOptions
+ * @property bool|null $enabled
+ * @property UsageMetricBasis|null $cpuPerformanceMetricBasis
+ * @property UsageMetricBasis|null $ramPerformanceMetricBasis
+ * @property 'DEDICATED'|'SHARED'|null $tenancy
+ * @property list<string>|null $excludedInstanceTypes
+ * @property string|null $preferredRegion
+ * @property ReservedInstanceOptions|null $reservedInstanceOptions
  */
 class Ec2RecommendationsExportPreferences extends Shape
 {
     /**
      * @param array{
-     *     enabled?: bool,
-     *     cpuPerformanceMetricBasis?: UsageMetricBasis,
-     *     ramPerformanceMetricBasis?: UsageMetricBasis,
-     *     tenancy?: 'DEDICATED'|'SHARED',
-     *     excludedInstanceTypes?: list<string>,
-     *     preferredRegion?: string,
-     *     reservedInstanceOptions?: ReservedInstanceOptions
+     *     enabled?: bool|null,
+     *     cpuPerformanceMetricBasis?: UsageMetricBasis|null,
+     *     ramPerformanceMetricBasis?: UsageMetricBasis|null,
+     *     tenancy?: 'DEDICATED'|'SHARED'|null,
+     *     excludedInstanceTypes?: list<string>|null,
+     *     preferredRegion?: string|null,
+     *     reservedInstanceOptions?: ReservedInstanceOptions|null
      * } $args
      */
     public function __construct(array $args = [])

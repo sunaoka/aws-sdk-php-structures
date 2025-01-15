@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\BillingConductor\BatchAssociateResourcesToCusto
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property AssociateResourceError $Error
+ * @property string|null $Arn
+ * @property AssociateResourceError|null $Error
  */
 class AssociateResourceResponseElement extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Error?: AssociateResourceError
+     *     Arn?: string|null,
+     *     Error?: AssociateResourceError|null
      * } $args
      */
     public function __construct(array $args = [])

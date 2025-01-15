@@ -11,8 +11,8 @@ use Sunaoka\Aws\Structures\Response;
  * @property 'Integral'|'Fractional'|'String' $FeatureType
  * @property \Aws\Api\DateTimeResult $CreationTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $Description
- * @property list<Shapes\FeatureParameter> $Parameters
+ * @property string|null $Description
+ * @property list<Shapes\FeatureParameter>|null $Parameters
  */
 class DescribeFeatureMetadataResponse extends Response
 {

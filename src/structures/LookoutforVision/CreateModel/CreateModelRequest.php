@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ProjectName
- * @property string $Description
- * @property string $ClientToken
+ * @property string|null $Description
+ * @property string|null $ClientToken
  * @property Shapes\OutputConfig $OutputConfig
- * @property string $KmsKeyId
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $KmsKeyId
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CreateModelRequest extends Request
 {
     /**
      * @param array{
      *     ProjectName: string,
-     *     Description?: string,
-     *     ClientToken?: string,
+     *     Description?: string|null,
+     *     ClientToken?: string|null,
      *     OutputConfig: Shapes\OutputConfig,
-     *     KmsKeyId?: string,
-     *     Tags?: list<Shapes\Tag>
+     *     KmsKeyId?: string|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

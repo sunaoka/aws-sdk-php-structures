@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\signer\ListSigningProfiles\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $value
- * @property 'DAYS'|'MONTHS'|'YEARS' $type
+ * @property int|null $value
+ * @property 'DAYS'|'MONTHS'|'YEARS'|null $type
  */
 class SignatureValidityPeriod extends Shape
 {
     /**
      * @param array{
-     *     value?: int,
-     *     type?: 'DAYS'|'MONTHS'|'YEARS'
+     *     value?: int|null,
+     *     type?: 'DAYS'|'MONTHS'|'YEARS'|null
      * } $args
      */
     public function __construct(array $args = [])

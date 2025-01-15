@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MWAA\CreateEnvironment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ModuleLoggingConfigurationInput $DagProcessingLogs
- * @property ModuleLoggingConfigurationInput $SchedulerLogs
- * @property ModuleLoggingConfigurationInput $WebserverLogs
- * @property ModuleLoggingConfigurationInput $WorkerLogs
- * @property ModuleLoggingConfigurationInput $TaskLogs
+ * @property ModuleLoggingConfigurationInput|null $DagProcessingLogs
+ * @property ModuleLoggingConfigurationInput|null $SchedulerLogs
+ * @property ModuleLoggingConfigurationInput|null $WebserverLogs
+ * @property ModuleLoggingConfigurationInput|null $WorkerLogs
+ * @property ModuleLoggingConfigurationInput|null $TaskLogs
  */
 class LoggingConfigurationInput extends Shape
 {
     /**
      * @param array{
-     *     DagProcessingLogs?: ModuleLoggingConfigurationInput,
-     *     SchedulerLogs?: ModuleLoggingConfigurationInput,
-     *     WebserverLogs?: ModuleLoggingConfigurationInput,
-     *     WorkerLogs?: ModuleLoggingConfigurationInput,
-     *     TaskLogs?: ModuleLoggingConfigurationInput
+     *     DagProcessingLogs?: ModuleLoggingConfigurationInput|null,
+     *     SchedulerLogs?: ModuleLoggingConfigurationInput|null,
+     *     WebserverLogs?: ModuleLoggingConfigurationInput|null,
+     *     WorkerLogs?: ModuleLoggingConfigurationInput|null,
+     *     TaskLogs?: ModuleLoggingConfigurationInput|null
      * } $args
      */
     public function __construct(array $args = [])

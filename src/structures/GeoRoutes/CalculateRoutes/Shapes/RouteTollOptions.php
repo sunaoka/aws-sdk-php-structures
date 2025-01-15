@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\GeoRoutes\CalculateRoutes\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property bool $AllTransponders
- * @property bool $AllVignettes
- * @property string $Currency
- * @property RouteEmissionType $EmissionType
- * @property 'Minibus' $VehicleCategory
+ * @property bool|null $AllTransponders
+ * @property bool|null $AllVignettes
+ * @property string|null $Currency
+ * @property RouteEmissionType|null $EmissionType
+ * @property 'Minibus'|null $VehicleCategory
  */
 class RouteTollOptions extends Shape
 {
     /**
      * @param array{
-     *     AllTransponders?: bool,
-     *     AllVignettes?: bool,
-     *     Currency?: string,
-     *     EmissionType?: RouteEmissionType,
-     *     VehicleCategory?: 'Minibus'
+     *     AllTransponders?: bool|null,
+     *     AllVignettes?: bool|null,
+     *     Currency?: string|null,
+     *     EmissionType?: RouteEmissionType|null,
+     *     VehicleCategory?: 'Minibus'|null
      * } $args
      */
     public function __construct(array $args = [])

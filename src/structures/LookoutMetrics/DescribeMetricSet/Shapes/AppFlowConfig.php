@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\DescribeMetricSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $RoleArn
- * @property string $FlowName
+ * @property string|null $RoleArn
+ * @property string|null $FlowName
  */
 class AppFlowConfig extends Shape
 {
     /**
      * @param array{
-     *     RoleArn?: string,
-     *     FlowName?: string
+     *     RoleArn?: string|null,
+     *     FlowName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

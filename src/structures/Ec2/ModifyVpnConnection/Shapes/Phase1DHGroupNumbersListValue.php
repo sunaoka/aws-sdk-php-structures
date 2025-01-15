@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Ec2\ModifyVpnConnection\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property int $Value
+ * @property int|null $Value
  */
 class Phase1DHGroupNumbersListValue extends Shape
 {
     /**
-     * @param array{Value?: int} $args
+     * @param array{Value?: int|null} $args
      */
     public function __construct(array $args = [])
     {

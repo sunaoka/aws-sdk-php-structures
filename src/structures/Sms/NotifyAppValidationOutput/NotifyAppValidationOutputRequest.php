@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $appId
- * @property Shapes\NotificationContext $notificationContext
+ * @property Shapes\NotificationContext|null $notificationContext
  */
 class NotifyAppValidationOutputRequest extends Request
 {
     /**
      * @param array{
      *     appId: string,
-     *     notificationContext?: Shapes\NotificationContext
+     *     notificationContext?: Shapes\NotificationContext|null
      * } $args
      */
     public function __construct(array $args)

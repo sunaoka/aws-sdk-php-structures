@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\CodeConnections\ListSyncConfigurations;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property int<0, 100> $MaxResults
- * @property string $NextToken
+ * @property int<0, 100>|null $MaxResults
+ * @property string|null $NextToken
  * @property string $RepositoryLinkId
  * @property 'CFN_STACK_SYNC' $SyncType
  */
@@ -14,8 +14,8 @@ class ListSyncConfigurationsRequest extends Request
 {
     /**
      * @param array{
-     *     MaxResults?: int<0, 100>,
-     *     NextToken?: string,
+     *     MaxResults?: int<0, 100>|null,
+     *     NextToken?: string|null,
      *     RepositoryLinkId: string,
      *     SyncType: 'CFN_STACK_SYNC'
      * } $args

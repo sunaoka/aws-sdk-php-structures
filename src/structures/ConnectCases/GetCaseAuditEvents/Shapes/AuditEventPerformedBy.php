@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $iamPrincipalArn
- * @property UserUnion $user
+ * @property UserUnion|null $user
  */
 class AuditEventPerformedBy extends Shape
 {
     /**
      * @param array{
      *     iamPrincipalArn: string,
-     *     user?: UserUnion
+     *     user?: UserUnion|null
      * } $args
      */
     public function __construct(array $args)

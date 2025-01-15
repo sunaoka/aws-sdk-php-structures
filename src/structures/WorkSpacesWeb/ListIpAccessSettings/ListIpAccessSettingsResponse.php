@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\WorkSpacesWeb\ListIpAccessSettings;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\IpAccessSettingsSummary> $ipAccessSettings
- * @property string $nextToken
+ * @property list<Shapes\IpAccessSettingsSummary>|null $ipAccessSettings
+ * @property string|null $nextToken
  */
 class ListIpAccessSettingsResponse extends Response
 {

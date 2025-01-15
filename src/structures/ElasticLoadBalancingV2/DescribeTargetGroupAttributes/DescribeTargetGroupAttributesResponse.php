@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ElasticLoadBalancingV2\DescribeTargetGroupAttri
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\TargetGroupAttribute> $Attributes
+ * @property list<Shapes\TargetGroupAttribute>|null $Attributes
  */
 class DescribeTargetGroupAttributesResponse extends Response
 {

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Glacier\PurchaseProvisionedCapacity;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $capacityId
+ * @property string|null $capacityId
  */
 class PurchaseProvisionedCapacityResponse extends Response
 {

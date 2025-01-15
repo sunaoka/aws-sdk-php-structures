@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\BatchGetOnPremisesInstances\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $instanceName
- * @property string $iamSessionArn
- * @property string $iamUserArn
- * @property string $instanceArn
- * @property \Aws\Api\DateTimeResult $registerTime
- * @property \Aws\Api\DateTimeResult $deregisterTime
- * @property list<Tag> $tags
+ * @property string|null $instanceName
+ * @property string|null $iamSessionArn
+ * @property string|null $iamUserArn
+ * @property string|null $instanceArn
+ * @property \Aws\Api\DateTimeResult|null $registerTime
+ * @property \Aws\Api\DateTimeResult|null $deregisterTime
+ * @property list<Tag>|null $tags
  */
 class InstanceInfo extends Shape
 {
     /**
      * @param array{
-     *     instanceName?: string,
-     *     iamSessionArn?: string,
-     *     iamUserArn?: string,
-     *     instanceArn?: string,
-     *     registerTime?: \Aws\Api\DateTimeResult,
-     *     deregisterTime?: \Aws\Api\DateTimeResult,
-     *     tags?: list<Tag>
+     *     instanceName?: string|null,
+     *     iamSessionArn?: string|null,
+     *     iamUserArn?: string|null,
+     *     instanceArn?: string|null,
+     *     registerTime?: \Aws\Api\DateTimeResult|null,
+     *     deregisterTime?: \Aws\Api\DateTimeResult|null,
+     *     tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

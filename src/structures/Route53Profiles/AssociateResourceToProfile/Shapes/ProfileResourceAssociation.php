@@ -5,33 +5,33 @@ namespace Sunaoka\Aws\Structures\Route53Profiles\AssociateResourceToProfile\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property string $Id
- * @property \Aws\Api\DateTimeResult $ModificationTime
- * @property string $Name
- * @property string $OwnerId
- * @property string $ProfileId
- * @property string $ResourceArn
- * @property string $ResourceProperties
- * @property string $ResourceType
- * @property 'COMPLETE'|'DELETING'|'UPDATING'|'CREATING'|'DELETED'|'FAILED' $Status
- * @property string $StatusMessage
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property string|null $Id
+ * @property \Aws\Api\DateTimeResult|null $ModificationTime
+ * @property string|null $Name
+ * @property string|null $OwnerId
+ * @property string|null $ProfileId
+ * @property string|null $ResourceArn
+ * @property string|null $ResourceProperties
+ * @property string|null $ResourceType
+ * @property 'COMPLETE'|'DELETING'|'UPDATING'|'CREATING'|'DELETED'|'FAILED'|null $Status
+ * @property string|null $StatusMessage
  */
 class ProfileResourceAssociation extends Shape
 {
     /**
      * @param array{
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     Id?: string,
-     *     ModificationTime?: \Aws\Api\DateTimeResult,
-     *     Name?: string,
-     *     OwnerId?: string,
-     *     ProfileId?: string,
-     *     ResourceArn?: string,
-     *     ResourceProperties?: string,
-     *     ResourceType?: string,
-     *     Status?: 'COMPLETE'|'DELETING'|'UPDATING'|'CREATING'|'DELETED'|'FAILED',
-     *     StatusMessage?: string
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     Id?: string|null,
+     *     ModificationTime?: \Aws\Api\DateTimeResult|null,
+     *     Name?: string|null,
+     *     OwnerId?: string|null,
+     *     ProfileId?: string|null,
+     *     ResourceArn?: string|null,
+     *     ResourceProperties?: string|null,
+     *     ResourceType?: string|null,
+     *     Status?: 'COMPLETE'|'DELETING'|'UPDATING'|'CREATING'|'DELETED'|'FAILED'|null,
+     *     StatusMessage?: string|null
      * } $args
      */
     public function __construct(array $args = [])

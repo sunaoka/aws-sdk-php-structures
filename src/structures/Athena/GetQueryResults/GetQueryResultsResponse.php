@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\Athena\GetQueryResults;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property int $UpdateCount
- * @property Shapes\ResultSet $ResultSet
- * @property string $NextToken
+ * @property int|null $UpdateCount
+ * @property Shapes\ResultSet|null $ResultSet
+ * @property string|null $NextToken
  */
 class GetQueryResultsResponse extends Response
 {

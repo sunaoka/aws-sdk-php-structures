@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\ApplicationAutoScaling\DescribeScalingActivitie
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\ScalingActivity> $ScalingActivities
- * @property string $NextToken
+ * @property list<Shapes\ScalingActivity>|null $ScalingActivities
+ * @property string|null $NextToken
  */
 class DescribeScalingActivitiesResponse extends Response
 {

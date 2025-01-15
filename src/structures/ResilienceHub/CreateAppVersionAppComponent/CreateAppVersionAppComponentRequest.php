@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\ResilienceHub\CreateAppVersionAppComponent;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property array<string, list<string>> $additionalInfo
+ * @property array<string, list<string>>|null $additionalInfo
  * @property string $appArn
- * @property string $clientToken
- * @property string $id
+ * @property string|null $clientToken
+ * @property string|null $id
  * @property string $name
  * @property string $type
  */
@@ -16,10 +16,10 @@ class CreateAppVersionAppComponentRequest extends Request
 {
     /**
      * @param array{
-     *     additionalInfo?: array<string, list<string>>,
+     *     additionalInfo?: array<string, list<string>>|null,
      *     appArn: string,
-     *     clientToken?: string,
-     *     id?: string,
+     *     clientToken?: string|null,
+     *     id?: string|null,
      *     name: string,
      *     type: string
      * } $args

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\GuardDuty\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property City $City
- * @property Country $Country
- * @property GeoLocation $GeoLocation
- * @property string $IpAddressV4
- * @property string $IpAddressV6
- * @property Organization $Organization
+ * @property City|null $City
+ * @property Country|null $Country
+ * @property GeoLocation|null $GeoLocation
+ * @property string|null $IpAddressV4
+ * @property string|null $IpAddressV6
+ * @property Organization|null $Organization
  */
 class RemoteIpDetails extends Shape
 {
     /**
      * @param array{
-     *     City?: City,
-     *     Country?: Country,
-     *     GeoLocation?: GeoLocation,
-     *     IpAddressV4?: string,
-     *     IpAddressV6?: string,
-     *     Organization?: Organization
+     *     City?: City|null,
+     *     Country?: Country|null,
+     *     GeoLocation?: GeoLocation|null,
+     *     IpAddressV4?: string|null,
+     *     IpAddressV6?: string|null,
+     *     Organization?: Organization|null
      * } $args
      */
     public function __construct(array $args = [])

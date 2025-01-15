@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\EntityResolution\GetMatchingWorkflow\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KMSArn
- * @property bool $applyNormalization
+ * @property string|null $KMSArn
+ * @property bool|null $applyNormalization
  * @property list<OutputAttribute> $output
  * @property string $outputS3Path
  */
@@ -14,8 +14,8 @@ class OutputSource extends Shape
 {
     /**
      * @param array{
-     *     KMSArn?: string,
-     *     applyNormalization?: bool,
+     *     KMSArn?: string|null,
+     *     applyNormalization?: bool|null,
      *     output: list<OutputAttribute>,
      *     outputS3Path: string
      * } $args

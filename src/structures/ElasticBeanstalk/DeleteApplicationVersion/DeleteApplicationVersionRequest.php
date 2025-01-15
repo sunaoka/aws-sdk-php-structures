@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $ApplicationName
  * @property string $VersionLabel
- * @property bool $DeleteSourceBundle
+ * @property bool|null $DeleteSourceBundle
  */
 class DeleteApplicationVersionRequest extends Request
 {
@@ -15,7 +15,7 @@ class DeleteApplicationVersionRequest extends Request
      * @param array{
      *     ApplicationName: string,
      *     VersionLabel: string,
-     *     DeleteSourceBundle?: bool
+     *     DeleteSourceBundle?: bool|null
      * } $args
      */
     public function __construct(array $args)

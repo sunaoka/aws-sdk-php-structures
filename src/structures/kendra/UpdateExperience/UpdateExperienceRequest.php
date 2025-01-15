@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $Name
+ * @property string|null $Name
  * @property string $IndexId
- * @property string $RoleArn
- * @property Shapes\ExperienceConfiguration $Configuration
- * @property string $Description
+ * @property string|null $RoleArn
+ * @property Shapes\ExperienceConfiguration|null $Configuration
+ * @property string|null $Description
  */
 class UpdateExperienceRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     Name?: string,
+     *     Name?: string|null,
      *     IndexId: string,
-     *     RoleArn?: string,
-     *     Configuration?: Shapes\ExperienceConfiguration,
-     *     Description?: string
+     *     RoleArn?: string|null,
+     *     Configuration?: Shapes\ExperienceConfiguration|null,
+     *     Description?: string|null
      * } $args
      */
     public function __construct(array $args)

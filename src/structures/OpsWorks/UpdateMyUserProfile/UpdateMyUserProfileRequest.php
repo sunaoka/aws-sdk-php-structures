@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\OpsWorks\UpdateMyUserProfile;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $SshPublicKey
+ * @property string|null $SshPublicKey
  */
 class UpdateMyUserProfileRequest extends Request
 {
     /**
-     * @param array{SshPublicKey?: string} $args
+     * @param array{SshPublicKey?: string|null} $args
      */
     public function __construct(array $args = [])
     {

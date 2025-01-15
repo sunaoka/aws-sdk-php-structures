@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property 'DIFFERENTIAL_PRIVACY' $type
  * @property 'VALID'|'INVALID'|'UNABLE_TO_VALIDATE' $status
- * @property list<AnalysisTemplateValidationStatusReason> $reasons
+ * @property list<AnalysisTemplateValidationStatusReason>|null $reasons
  */
 class AnalysisTemplateValidationStatusDetail extends Shape
 {
@@ -15,7 +15,7 @@ class AnalysisTemplateValidationStatusDetail extends Shape
      * @param array{
      *     type: 'DIFFERENTIAL_PRIVACY',
      *     status: 'VALID'|'INVALID'|'UNABLE_TO_VALIDATE',
-     *     reasons?: list<AnalysisTemplateValidationStatusReason>
+     *     reasons?: list<AnalysisTemplateValidationStatusReason>|null
      * } $args
      */
     public function __construct(array $args)

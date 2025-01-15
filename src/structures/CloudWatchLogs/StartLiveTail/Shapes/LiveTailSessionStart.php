@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\StartLiveTail\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $requestId
- * @property string $sessionId
- * @property list<string> $logGroupIdentifiers
- * @property list<string> $logStreamNames
- * @property list<string> $logStreamNamePrefixes
- * @property string $logEventFilterPattern
+ * @property string|null $requestId
+ * @property string|null $sessionId
+ * @property list<string>|null $logGroupIdentifiers
+ * @property list<string>|null $logStreamNames
+ * @property list<string>|null $logStreamNamePrefixes
+ * @property string|null $logEventFilterPattern
  */
 class LiveTailSessionStart extends Shape
 {
     /**
      * @param array{
-     *     requestId?: string,
-     *     sessionId?: string,
-     *     logGroupIdentifiers?: list<string>,
-     *     logStreamNames?: list<string>,
-     *     logStreamNamePrefixes?: list<string>,
-     *     logEventFilterPattern?: string
+     *     requestId?: string|null,
+     *     sessionId?: string|null,
+     *     logGroupIdentifiers?: list<string>|null,
+     *     logStreamNames?: list<string>|null,
+     *     logStreamNamePrefixes?: list<string>|null,
+     *     logEventFilterPattern?: string|null
      * } $args
      */
     public function __construct(array $args = [])

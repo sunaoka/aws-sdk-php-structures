@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\DataExchange\CreateEventAction\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $KmsKeyArn
+ * @property string|null $KmsKeyArn
  * @property 'aws:kms'|'AES256' $Type
  */
 class ExportServerSideEncryption extends Shape
 {
     /**
      * @param array{
-     *     KmsKeyArn?: string,
+     *     KmsKeyArn?: string|null,
      *     Type: 'aws:kms'|'AES256'
      * } $args
      */

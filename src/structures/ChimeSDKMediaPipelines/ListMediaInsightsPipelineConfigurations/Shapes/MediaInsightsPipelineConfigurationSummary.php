@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ChimeSDKMediaPipelines\ListMediaInsightsPipelin
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MediaInsightsPipelineConfigurationName
- * @property string $MediaInsightsPipelineConfigurationId
- * @property string $MediaInsightsPipelineConfigurationArn
+ * @property string|null $MediaInsightsPipelineConfigurationName
+ * @property string|null $MediaInsightsPipelineConfigurationId
+ * @property string|null $MediaInsightsPipelineConfigurationArn
  */
 class MediaInsightsPipelineConfigurationSummary extends Shape
 {
     /**
      * @param array{
-     *     MediaInsightsPipelineConfigurationName?: string,
-     *     MediaInsightsPipelineConfigurationId?: string,
-     *     MediaInsightsPipelineConfigurationArn?: string
+     *     MediaInsightsPipelineConfigurationName?: string|null,
+     *     MediaInsightsPipelineConfigurationId?: string|null,
+     *     MediaInsightsPipelineConfigurationArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

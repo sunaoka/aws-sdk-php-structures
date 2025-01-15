@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\SnowBall\ListPickupLocations\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $AddressId
- * @property string $Name
- * @property string $Company
- * @property string $Street1
- * @property string $Street2
- * @property string $Street3
- * @property string $City
- * @property string $StateOrProvince
- * @property string $PrefectureOrDistrict
- * @property string $Landmark
- * @property string $Country
- * @property string $PostalCode
- * @property string $PhoneNumber
- * @property bool $IsRestricted
- * @property 'CUST_PICKUP'|'AWS_SHIP' $Type
+ * @property string|null $AddressId
+ * @property string|null $Name
+ * @property string|null $Company
+ * @property string|null $Street1
+ * @property string|null $Street2
+ * @property string|null $Street3
+ * @property string|null $City
+ * @property string|null $StateOrProvince
+ * @property string|null $PrefectureOrDistrict
+ * @property string|null $Landmark
+ * @property string|null $Country
+ * @property string|null $PostalCode
+ * @property string|null $PhoneNumber
+ * @property bool|null $IsRestricted
+ * @property 'CUST_PICKUP'|'AWS_SHIP'|null $Type
  */
 class Address extends Shape
 {
     /**
      * @param array{
-     *     AddressId?: string,
-     *     Name?: string,
-     *     Company?: string,
-     *     Street1?: string,
-     *     Street2?: string,
-     *     Street3?: string,
-     *     City?: string,
-     *     StateOrProvince?: string,
-     *     PrefectureOrDistrict?: string,
-     *     Landmark?: string,
-     *     Country?: string,
-     *     PostalCode?: string,
-     *     PhoneNumber?: string,
-     *     IsRestricted?: bool,
-     *     Type?: 'CUST_PICKUP'|'AWS_SHIP'
+     *     AddressId?: string|null,
+     *     Name?: string|null,
+     *     Company?: string|null,
+     *     Street1?: string|null,
+     *     Street2?: string|null,
+     *     Street3?: string|null,
+     *     City?: string|null,
+     *     StateOrProvince?: string|null,
+     *     PrefectureOrDistrict?: string|null,
+     *     Landmark?: string|null,
+     *     Country?: string|null,
+     *     PostalCode?: string|null,
+     *     PhoneNumber?: string|null,
+     *     IsRestricted?: bool|null,
+     *     Type?: 'CUST_PICKUP'|'AWS_SHIP'|null
      * } $args
      */
     public function __construct(array $args = [])

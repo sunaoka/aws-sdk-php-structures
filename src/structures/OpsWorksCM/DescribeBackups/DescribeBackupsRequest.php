@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\OpsWorksCM\DescribeBackups;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $BackupId
- * @property string $ServerName
- * @property string $NextToken
- * @property int<1, max> $MaxResults
+ * @property string|null $BackupId
+ * @property string|null $ServerName
+ * @property string|null $NextToken
+ * @property int<1, max>|null $MaxResults
  */
 class DescribeBackupsRequest extends Request
 {
     /**
      * @param array{
-     *     BackupId?: string,
-     *     ServerName?: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, max>
+     *     BackupId?: string|null,
+     *     ServerName?: string|null,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, max>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\BCMPricingCalculator\BatchDeleteBillScenarioCom
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\BatchDeleteBillScenarioCommitmentModificationError> $errors
+ * @property list<Shapes\BatchDeleteBillScenarioCommitmentModificationError>|null $errors
  */
 class BatchDeleteBillScenarioCommitmentModificationResponse extends Response
 {

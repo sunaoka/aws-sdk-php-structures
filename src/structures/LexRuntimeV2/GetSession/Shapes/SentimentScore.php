@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\LexRuntimeV2\GetSession\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $positive
- * @property double $negative
- * @property double $neutral
- * @property double $mixed
+ * @property double|null $positive
+ * @property double|null $negative
+ * @property double|null $neutral
+ * @property double|null $mixed
  */
 class SentimentScore extends Shape
 {
     /**
      * @param array{
-     *     positive?: double,
-     *     negative?: double,
-     *     neutral?: double,
-     *     mixed?: double
+     *     positive?: double|null,
+     *     negative?: double|null,
+     *     neutral?: double|null,
+     *     mixed?: double|null
      * } $args
      */
     public function __construct(array $args = [])

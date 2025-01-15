@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetRDSDatabaseRecommendationPr
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\RDSDatabaseRecommendedOptionProjectedMetric> $recommendedOptionProjectedMetrics
+ * @property list<Shapes\RDSDatabaseRecommendedOptionProjectedMetric>|null $recommendedOptionProjectedMetrics
  */
 class GetRDSDatabaseRecommendationProjectedMetricsResponse extends Response
 {

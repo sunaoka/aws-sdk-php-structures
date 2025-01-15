@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Action
- * @property RuleGroupSourceStatefulRulesHeaderDetails $Header
- * @property list<RuleGroupSourceStatefulRulesOptionsDetails> $RuleOptions
+ * @property string|null $Action
+ * @property RuleGroupSourceStatefulRulesHeaderDetails|null $Header
+ * @property list<RuleGroupSourceStatefulRulesOptionsDetails>|null $RuleOptions
  */
 class RuleGroupSourceStatefulRulesDetails extends Shape
 {
     /**
      * @param array{
-     *     Action?: string,
-     *     Header?: RuleGroupSourceStatefulRulesHeaderDetails,
-     *     RuleOptions?: list<RuleGroupSourceStatefulRulesOptionsDetails>
+     *     Action?: string|null,
+     *     Header?: RuleGroupSourceStatefulRulesHeaderDetails|null,
+     *     RuleOptions?: list<RuleGroupSourceStatefulRulesOptionsDetails>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,31 +5,31 @@ namespace Sunaoka\Aws\Structures\RedshiftDataAPIService\DescribeTable;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClusterIdentifier
- * @property string $ConnectedDatabase
+ * @property string|null $ClusterIdentifier
+ * @property string|null $ConnectedDatabase
  * @property string $Database
- * @property string $DbUser
- * @property int<0, 1000> $MaxResults
- * @property string $NextToken
- * @property string $Schema
- * @property string $SecretArn
- * @property string $Table
- * @property string $WorkgroupName
+ * @property string|null $DbUser
+ * @property int<0, 1000>|null $MaxResults
+ * @property string|null $NextToken
+ * @property string|null $Schema
+ * @property string|null $SecretArn
+ * @property string|null $Table
+ * @property string|null $WorkgroupName
  */
 class DescribeTableRequest extends Request
 {
     /**
      * @param array{
-     *     ClusterIdentifier?: string,
-     *     ConnectedDatabase?: string,
+     *     ClusterIdentifier?: string|null,
+     *     ConnectedDatabase?: string|null,
      *     Database: string,
-     *     DbUser?: string,
-     *     MaxResults?: int<0, 1000>,
-     *     NextToken?: string,
-     *     Schema?: string,
-     *     SecretArn?: string,
-     *     Table?: string,
-     *     WorkgroupName?: string
+     *     DbUser?: string|null,
+     *     MaxResults?: int<0, 1000>|null,
+     *     NextToken?: string|null,
+     *     Schema?: string|null,
+     *     SecretArn?: string|null,
+     *     Table?: string|null,
+     *     WorkgroupName?: string|null
      * } $args
      */
     public function __construct(array $args)

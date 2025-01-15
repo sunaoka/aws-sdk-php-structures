@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\SageMaker\ListContexts\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ContextArn
- * @property string $ContextName
- * @property ContextSource $Source
- * @property string $ContextType
- * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $ContextArn
+ * @property string|null $ContextName
+ * @property ContextSource|null $Source
+ * @property string|null $ContextType
+ * @property \Aws\Api\DateTimeResult|null $CreationTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class ContextSummary extends Shape
 {
     /**
      * @param array{
-     *     ContextArn?: string,
-     *     ContextName?: string,
-     *     Source?: ContextSource,
-     *     ContextType?: string,
-     *     CreationTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     ContextArn?: string|null,
+     *     ContextName?: string|null,
+     *     Source?: ContextSource|null,
+     *     ContextType?: string|null,
+     *     CreationTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ecs\UpdateService\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $discoveryName
- * @property string $discoveryArn
+ * @property string|null $discoveryName
+ * @property string|null $discoveryArn
  */
 class ServiceConnectServiceResource extends Shape
 {
     /**
      * @param array{
-     *     discoveryName?: string,
-     *     discoveryArn?: string
+     *     discoveryName?: string|null,
+     *     discoveryArn?: string|null
      * } $args
      */
     public function __construct(array $args = [])

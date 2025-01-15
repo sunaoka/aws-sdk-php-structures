@@ -9,13 +9,13 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $Id
  * @property int<1, max> $Capacity
  * @property string $ARN
- * @property string $Description
- * @property list<Rule> $Rules
+ * @property string|null $Description
+ * @property list<Rule>|null $Rules
  * @property VisibilityConfig $VisibilityConfig
- * @property string $LabelNamespace
- * @property array<string, CustomResponseBody> $CustomResponseBodies
- * @property list<LabelSummary> $AvailableLabels
- * @property list<LabelSummary> $ConsumedLabels
+ * @property string|null $LabelNamespace
+ * @property array<string, CustomResponseBody>|null $CustomResponseBodies
+ * @property list<LabelSummary>|null $AvailableLabels
+ * @property list<LabelSummary>|null $ConsumedLabels
  */
 class RuleGroup extends Shape
 {
@@ -25,13 +25,13 @@ class RuleGroup extends Shape
      *     Id: string,
      *     Capacity: int<1, max>,
      *     ARN: string,
-     *     Description?: string,
-     *     Rules?: list<Rule>,
+     *     Description?: string|null,
+     *     Rules?: list<Rule>|null,
      *     VisibilityConfig: VisibilityConfig,
-     *     LabelNamespace?: string,
-     *     CustomResponseBodies?: array<string, CustomResponseBody>,
-     *     AvailableLabels?: list<LabelSummary>,
-     *     ConsumedLabels?: list<LabelSummary>
+     *     LabelNamespace?: string|null,
+     *     CustomResponseBodies?: array<string, CustomResponseBody>|null,
+     *     AvailableLabels?: list<LabelSummary>|null,
+     *     ConsumedLabels?: list<LabelSummary>|null
      * } $args
      */
     public function __construct(array $args)

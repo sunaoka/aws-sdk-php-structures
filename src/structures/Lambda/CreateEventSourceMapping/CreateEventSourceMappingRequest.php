@@ -5,65 +5,65 @@ namespace Sunaoka\Aws\Structures\Lambda\CreateEventSourceMapping;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $EventSourceArn
+ * @property string|null $EventSourceArn
  * @property string $FunctionName
- * @property bool $Enabled
- * @property int<1, 10000> $BatchSize
- * @property Shapes\FilterCriteria $FilterCriteria
- * @property int<0, 300> $MaximumBatchingWindowInSeconds
- * @property int<1, 10> $ParallelizationFactor
- * @property 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP' $StartingPosition
- * @property \Aws\Api\DateTimeResult $StartingPositionTimestamp
- * @property Shapes\DestinationConfig $DestinationConfig
- * @property int<-1, 604800> $MaximumRecordAgeInSeconds
- * @property bool $BisectBatchOnFunctionError
- * @property int<-1, 10000> $MaximumRetryAttempts
- * @property array<string, string> $Tags
- * @property int<0, 900> $TumblingWindowInSeconds
- * @property list<string> $Topics
- * @property list<string> $Queues
- * @property list<Shapes\SourceAccessConfiguration> $SourceAccessConfigurations
- * @property Shapes\SelfManagedEventSource $SelfManagedEventSource
- * @property list<'ReportBatchItemFailures'> $FunctionResponseTypes
- * @property Shapes\AmazonManagedKafkaEventSourceConfig $AmazonManagedKafkaEventSourceConfig
- * @property Shapes\SelfManagedKafkaEventSourceConfig $SelfManagedKafkaEventSourceConfig
- * @property Shapes\ScalingConfig $ScalingConfig
- * @property Shapes\DocumentDBEventSourceConfig $DocumentDBEventSourceConfig
- * @property string $KMSKeyArn
- * @property Shapes\EventSourceMappingMetricsConfig $MetricsConfig
- * @property Shapes\ProvisionedPollerConfig $ProvisionedPollerConfig
+ * @property bool|null $Enabled
+ * @property int<1, 10000>|null $BatchSize
+ * @property Shapes\FilterCriteria|null $FilterCriteria
+ * @property int<0, 300>|null $MaximumBatchingWindowInSeconds
+ * @property int<1, 10>|null $ParallelizationFactor
+ * @property 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP'|null $StartingPosition
+ * @property \Aws\Api\DateTimeResult|null $StartingPositionTimestamp
+ * @property Shapes\DestinationConfig|null $DestinationConfig
+ * @property int<-1, 604800>|null $MaximumRecordAgeInSeconds
+ * @property bool|null $BisectBatchOnFunctionError
+ * @property int<-1, 10000>|null $MaximumRetryAttempts
+ * @property array<string, string>|null $Tags
+ * @property int<0, 900>|null $TumblingWindowInSeconds
+ * @property list<string>|null $Topics
+ * @property list<string>|null $Queues
+ * @property list<Shapes\SourceAccessConfiguration>|null $SourceAccessConfigurations
+ * @property Shapes\SelfManagedEventSource|null $SelfManagedEventSource
+ * @property list<'ReportBatchItemFailures'>|null $FunctionResponseTypes
+ * @property Shapes\AmazonManagedKafkaEventSourceConfig|null $AmazonManagedKafkaEventSourceConfig
+ * @property Shapes\SelfManagedKafkaEventSourceConfig|null $SelfManagedKafkaEventSourceConfig
+ * @property Shapes\ScalingConfig|null $ScalingConfig
+ * @property Shapes\DocumentDBEventSourceConfig|null $DocumentDBEventSourceConfig
+ * @property string|null $KMSKeyArn
+ * @property Shapes\EventSourceMappingMetricsConfig|null $MetricsConfig
+ * @property Shapes\ProvisionedPollerConfig|null $ProvisionedPollerConfig
  */
 class CreateEventSourceMappingRequest extends Request
 {
     /**
      * @param array{
-     *     EventSourceArn?: string,
+     *     EventSourceArn?: string|null,
      *     FunctionName: string,
-     *     Enabled?: bool,
-     *     BatchSize?: int<1, 10000>,
-     *     FilterCriteria?: Shapes\FilterCriteria,
-     *     MaximumBatchingWindowInSeconds?: int<0, 300>,
-     *     ParallelizationFactor?: int<1, 10>,
-     *     StartingPosition?: 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP',
-     *     StartingPositionTimestamp?: \Aws\Api\DateTimeResult,
-     *     DestinationConfig?: Shapes\DestinationConfig,
-     *     MaximumRecordAgeInSeconds?: int<-1, 604800>,
-     *     BisectBatchOnFunctionError?: bool,
-     *     MaximumRetryAttempts?: int<-1, 10000>,
-     *     Tags?: array<string, string>,
-     *     TumblingWindowInSeconds?: int<0, 900>,
-     *     Topics?: list<string>,
-     *     Queues?: list<string>,
-     *     SourceAccessConfigurations?: list<Shapes\SourceAccessConfiguration>,
-     *     SelfManagedEventSource?: Shapes\SelfManagedEventSource,
-     *     FunctionResponseTypes?: list<'ReportBatchItemFailures'>,
-     *     AmazonManagedKafkaEventSourceConfig?: Shapes\AmazonManagedKafkaEventSourceConfig,
-     *     SelfManagedKafkaEventSourceConfig?: Shapes\SelfManagedKafkaEventSourceConfig,
-     *     ScalingConfig?: Shapes\ScalingConfig,
-     *     DocumentDBEventSourceConfig?: Shapes\DocumentDBEventSourceConfig,
-     *     KMSKeyArn?: string,
-     *     MetricsConfig?: Shapes\EventSourceMappingMetricsConfig,
-     *     ProvisionedPollerConfig?: Shapes\ProvisionedPollerConfig
+     *     Enabled?: bool|null,
+     *     BatchSize?: int<1, 10000>|null,
+     *     FilterCriteria?: Shapes\FilterCriteria|null,
+     *     MaximumBatchingWindowInSeconds?: int<0, 300>|null,
+     *     ParallelizationFactor?: int<1, 10>|null,
+     *     StartingPosition?: 'TRIM_HORIZON'|'LATEST'|'AT_TIMESTAMP'|null,
+     *     StartingPositionTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     DestinationConfig?: Shapes\DestinationConfig|null,
+     *     MaximumRecordAgeInSeconds?: int<-1, 604800>|null,
+     *     BisectBatchOnFunctionError?: bool|null,
+     *     MaximumRetryAttempts?: int<-1, 10000>|null,
+     *     Tags?: array<string, string>|null,
+     *     TumblingWindowInSeconds?: int<0, 900>|null,
+     *     Topics?: list<string>|null,
+     *     Queues?: list<string>|null,
+     *     SourceAccessConfigurations?: list<Shapes\SourceAccessConfiguration>|null,
+     *     SelfManagedEventSource?: Shapes\SelfManagedEventSource|null,
+     *     FunctionResponseTypes?: list<'ReportBatchItemFailures'>|null,
+     *     AmazonManagedKafkaEventSourceConfig?: Shapes\AmazonManagedKafkaEventSourceConfig|null,
+     *     SelfManagedKafkaEventSourceConfig?: Shapes\SelfManagedKafkaEventSourceConfig|null,
+     *     ScalingConfig?: Shapes\ScalingConfig|null,
+     *     DocumentDBEventSourceConfig?: Shapes\DocumentDBEventSourceConfig|null,
+     *     KMSKeyArn?: string|null,
+     *     MetricsConfig?: Shapes\EventSourceMappingMetricsConfig|null,
+     *     ProvisionedPollerConfig?: Shapes\ProvisionedPollerConfig|null
      * } $args
      */
     public function __construct(array $args)

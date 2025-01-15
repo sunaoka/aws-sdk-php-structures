@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Connect\CreateTaskTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TaskTemplateFieldIdentifier $Id
+ * @property TaskTemplateFieldIdentifier|null $Id
  */
 class InvisibleFieldInfo extends Shape
 {
     /**
-     * @param array{Id?: TaskTemplateFieldIdentifier} $args
+     * @param array{Id?: TaskTemplateFieldIdentifier|null} $args
      */
     public function __construct(array $args = [])
     {

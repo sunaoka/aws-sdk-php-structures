@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\ListCollect
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<IPAddressBasedRemoteInfo> $ipAddressBasedRemoteInfoList
- * @property list<PipelineInfo> $pipelineInfoList
- * @property RemoteSourceCodeAnalysisServerInfo $remoteSourceCodeAnalysisServerInfo
- * @property list<VcenterBasedRemoteInfo> $vcenterBasedRemoteInfoList
- * @property list<VersionControlInfo> $versionControlInfoList
+ * @property list<IPAddressBasedRemoteInfo>|null $ipAddressBasedRemoteInfoList
+ * @property list<PipelineInfo>|null $pipelineInfoList
+ * @property RemoteSourceCodeAnalysisServerInfo|null $remoteSourceCodeAnalysisServerInfo
+ * @property list<VcenterBasedRemoteInfo>|null $vcenterBasedRemoteInfoList
+ * @property list<VersionControlInfo>|null $versionControlInfoList
  */
 class ConfigurationSummary extends Shape
 {
     /**
      * @param array{
-     *     ipAddressBasedRemoteInfoList?: list<IPAddressBasedRemoteInfo>,
-     *     pipelineInfoList?: list<PipelineInfo>,
-     *     remoteSourceCodeAnalysisServerInfo?: RemoteSourceCodeAnalysisServerInfo,
-     *     vcenterBasedRemoteInfoList?: list<VcenterBasedRemoteInfo>,
-     *     versionControlInfoList?: list<VersionControlInfo>
+     *     ipAddressBasedRemoteInfoList?: list<IPAddressBasedRemoteInfo>|null,
+     *     pipelineInfoList?: list<PipelineInfo>|null,
+     *     remoteSourceCodeAnalysisServerInfo?: RemoteSourceCodeAnalysisServerInfo|null,
+     *     vcenterBasedRemoteInfoList?: list<VcenterBasedRemoteInfo>|null,
+     *     versionControlInfoList?: list<VersionControlInfo>|null
      * } $args
      */
     public function __construct(array $args = [])

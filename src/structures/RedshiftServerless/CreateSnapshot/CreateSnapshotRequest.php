@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $namespaceName
- * @property int $retentionPeriod
+ * @property int|null $retentionPeriod
  * @property string $snapshotName
- * @property list<Shapes\Tag> $tags
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreateSnapshotRequest extends Request
 {
     /**
      * @param array{
      *     namespaceName: string,
-     *     retentionPeriod?: int,
+     *     retentionPeriod?: int|null,
      *     snapshotName: string,
-     *     tags?: list<Shapes\Tag>
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Shield\DescribeAttackStatistics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AttackVolumeStatistics $BitsPerSecond
- * @property AttackVolumeStatistics $PacketsPerSecond
- * @property AttackVolumeStatistics $RequestsPerSecond
+ * @property AttackVolumeStatistics|null $BitsPerSecond
+ * @property AttackVolumeStatistics|null $PacketsPerSecond
+ * @property AttackVolumeStatistics|null $RequestsPerSecond
  */
 class AttackVolume extends Shape
 {
     /**
      * @param array{
-     *     BitsPerSecond?: AttackVolumeStatistics,
-     *     PacketsPerSecond?: AttackVolumeStatistics,
-     *     RequestsPerSecond?: AttackVolumeStatistics
+     *     BitsPerSecond?: AttackVolumeStatistics|null,
+     *     PacketsPerSecond?: AttackVolumeStatistics|null,
+     *     RequestsPerSecond?: AttackVolumeStatistics|null
      * } $args
      */
     public function __construct(array $args = [])

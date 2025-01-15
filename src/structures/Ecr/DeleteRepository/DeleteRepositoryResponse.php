@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\Ecr\DeleteRepository;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property Shapes\Repository $repository
+ * @property Shapes\Repository|null $repository
  */
 class DeleteRepositoryResponse extends Response
 {

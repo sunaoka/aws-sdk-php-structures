@@ -5,14 +5,14 @@ namespace Sunaoka\Aws\Structures\IoTSiteWise\ListAssetRelationships\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AssetHierarchyInfo $hierarchyInfo
+ * @property AssetHierarchyInfo|null $hierarchyInfo
  * @property 'HIERARCHY' $relationshipType
  */
 class AssetRelationshipSummary extends Shape
 {
     /**
      * @param array{
-     *     hierarchyInfo?: AssetHierarchyInfo,
+     *     hierarchyInfo?: AssetHierarchyInfo|null,
      *     relationshipType: 'HIERARCHY'
      * } $args
      */

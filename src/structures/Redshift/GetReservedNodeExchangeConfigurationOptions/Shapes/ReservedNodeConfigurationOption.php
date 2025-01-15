@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Redshift\GetReservedNodeExchangeConfigurationOp
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ReservedNode $SourceReservedNode
- * @property int $TargetReservedNodeCount
- * @property ReservedNodeOffering $TargetReservedNodeOffering
+ * @property ReservedNode|null $SourceReservedNode
+ * @property int|null $TargetReservedNodeCount
+ * @property ReservedNodeOffering|null $TargetReservedNodeOffering
  */
 class ReservedNodeConfigurationOption extends Shape
 {
     /**
      * @param array{
-     *     SourceReservedNode?: ReservedNode,
-     *     TargetReservedNodeCount?: int,
-     *     TargetReservedNodeOffering?: ReservedNodeOffering
+     *     SourceReservedNode?: ReservedNode|null,
+     *     TargetReservedNodeCount?: int|null,
+     *     TargetReservedNodeOffering?: ReservedNodeOffering|null
      * } $args
      */
     public function __construct(array $args = [])

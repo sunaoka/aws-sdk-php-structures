@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\DataZone\CreateProject;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $description
+ * @property string|null $description
  * @property string $domainIdentifier
- * @property string $domainUnitId
- * @property list<string> $glossaryTerms
+ * @property string|null $domainUnitId
+ * @property list<string>|null $glossaryTerms
  * @property string $name
- * @property string $projectProfileId
- * @property list<Shapes\EnvironmentConfigurationUserParameter> $userParameters
+ * @property string|null $projectProfileId
+ * @property list<Shapes\EnvironmentConfigurationUserParameter>|null $userParameters
  */
 class CreateProjectRequest extends Request
 {
     /**
      * @param array{
-     *     description?: string,
+     *     description?: string|null,
      *     domainIdentifier: string,
-     *     domainUnitId?: string,
-     *     glossaryTerms?: list<string>,
+     *     domainUnitId?: string|null,
+     *     glossaryTerms?: list<string>|null,
      *     name: string,
-     *     projectProfileId?: string,
-     *     userParameters?: list<Shapes\EnvironmentConfigurationUserParameter>
+     *     projectProfileId?: string|null,
+     *     userParameters?: list<Shapes\EnvironmentConfigurationUserParameter>|null
      * } $args
      */
     public function __construct(array $args)

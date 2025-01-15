@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Macie2\ListFindingsFilters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ARCHIVE'|'NOOP' $action
- * @property string $arn
- * @property string $id
- * @property string $name
- * @property array<string, string> $tags
+ * @property 'ARCHIVE'|'NOOP'|null $action
+ * @property string|null $arn
+ * @property string|null $id
+ * @property string|null $name
+ * @property array<string, string>|null $tags
  */
 class FindingsFilterListItem extends Shape
 {
     /**
      * @param array{
-     *     action?: 'ARCHIVE'|'NOOP',
-     *     arn?: string,
-     *     id?: string,
-     *     name?: string,
-     *     tags?: array<string, string>
+     *     action?: 'ARCHIVE'|'NOOP'|null,
+     *     arn?: string|null,
+     *     id?: string|null,
+     *     name?: string|null,
+     *     tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\mgn\UpdateLaunchConfiguration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE' $bootMode
- * @property bool $copyPrivateIp
- * @property bool $copyTags
- * @property string $ec2LaunchTemplateID
- * @property bool $enableMapAutoTagging
- * @property 'STOPPED'|'STARTED' $launchDisposition
- * @property Shapes\Licensing $licensing
- * @property string $mapAutoTaggingMpeID
- * @property string $name
- * @property Shapes\PostLaunchActions $postLaunchActions
- * @property string $sourceServerID
- * @property 'NONE'|'BASIC' $targetInstanceTypeRightSizingMethod
+ * @property 'LEGACY_BIOS'|'UEFI'|'USE_SOURCE'|null $bootMode
+ * @property bool|null $copyPrivateIp
+ * @property bool|null $copyTags
+ * @property string|null $ec2LaunchTemplateID
+ * @property bool|null $enableMapAutoTagging
+ * @property 'STOPPED'|'STARTED'|null $launchDisposition
+ * @property Shapes\Licensing|null $licensing
+ * @property string|null $mapAutoTaggingMpeID
+ * @property string|null $name
+ * @property Shapes\PostLaunchActions|null $postLaunchActions
+ * @property string|null $sourceServerID
+ * @property 'NONE'|'BASIC'|null $targetInstanceTypeRightSizingMethod
  */
 class UpdateLaunchConfigurationResponse extends Response
 {

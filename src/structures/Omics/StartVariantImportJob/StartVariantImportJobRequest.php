@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $destinationName
  * @property string $roleArn
  * @property list<Shapes\VariantImportItemSource> $items
- * @property bool $runLeftNormalization
- * @property array<string, string> $annotationFields
+ * @property bool|null $runLeftNormalization
+ * @property array<string, string>|null $annotationFields
  */
 class StartVariantImportJobRequest extends Request
 {
@@ -18,8 +18,8 @@ class StartVariantImportJobRequest extends Request
      *     destinationName: string,
      *     roleArn: string,
      *     items: list<Shapes\VariantImportItemSource>,
-     *     runLeftNormalization?: bool,
-     *     annotationFields?: array<string, string>
+     *     runLeftNormalization?: bool|null,
+     *     annotationFields?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

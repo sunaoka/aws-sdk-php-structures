@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\CloudDirectory\BatchWrite\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ObjectIdentifier
+ * @property string|null $ObjectIdentifier
  */
 class BatchUpdateObjectAttributesResponse extends Shape
 {
     /**
-     * @param array{ObjectIdentifier?: string} $args
+     * @param array{ObjectIdentifier?: string|null} $args
      */
     public function __construct(array $args = [])
     {

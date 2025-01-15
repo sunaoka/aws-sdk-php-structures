@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property \Aws\Api\DateTimeResult $startTime
  * @property \Aws\Api\DateTimeResult $endTime
- * @property string $refreshFrequency
+ * @property string|null $refreshFrequency
  */
 class Schedule extends Shape
 {
@@ -15,7 +15,7 @@ class Schedule extends Shape
      * @param array{
      *     startTime: \Aws\Api\DateTimeResult,
      *     endTime: \Aws\Api\DateTimeResult,
-     *     refreshFrequency?: string
+     *     refreshFrequency?: string|null
      * } $args
      */
     public function __construct(array $args)

@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $assessmentId
- * @property string $assessmentName
- * @property string $assessmentDescription
+ * @property string|null $assessmentName
+ * @property string|null $assessmentDescription
  * @property Shapes\Scope $scope
- * @property Shapes\AssessmentReportsDestination $assessmentReportsDestination
- * @property list<Shapes\Role> $roles
+ * @property Shapes\AssessmentReportsDestination|null $assessmentReportsDestination
+ * @property list<Shapes\Role>|null $roles
  */
 class UpdateAssessmentRequest extends Request
 {
     /**
      * @param array{
      *     assessmentId: string,
-     *     assessmentName?: string,
-     *     assessmentDescription?: string,
+     *     assessmentName?: string|null,
+     *     assessmentDescription?: string|null,
      *     scope: Shapes\Scope,
-     *     assessmentReportsDestination?: Shapes\AssessmentReportsDestination,
-     *     roles?: list<Shapes\Role>
+     *     assessmentReportsDestination?: Shapes\AssessmentReportsDestination|null,
+     *     roles?: list<Shapes\Role>|null
      * } $args
      */
     public function __construct(array $args)

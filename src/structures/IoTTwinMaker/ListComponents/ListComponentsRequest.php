@@ -7,9 +7,9 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $workspaceId
  * @property string $entityId
- * @property string $componentPath
- * @property int<0, 200> $maxResults
- * @property string $nextToken
+ * @property string|null $componentPath
+ * @property int<0, 200>|null $maxResults
+ * @property string|null $nextToken
  */
 class ListComponentsRequest extends Request
 {
@@ -17,9 +17,9 @@ class ListComponentsRequest extends Request
      * @param array{
      *     workspaceId: string,
      *     entityId: string,
-     *     componentPath?: string,
-     *     maxResults?: int<0, 200>,
-     *     nextToken?: string
+     *     componentPath?: string|null,
+     *     maxResults?: int<0, 200>|null,
+     *     nextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

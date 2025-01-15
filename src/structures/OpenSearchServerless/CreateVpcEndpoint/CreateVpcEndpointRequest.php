@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\OpenSearchServerless\CreateVpcEndpoint;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property string $name
- * @property list<string> $securityGroupIds
+ * @property list<string>|null $securityGroupIds
  * @property list<string> $subnetIds
  * @property string $vpcId
  */
@@ -15,9 +15,9 @@ class CreateVpcEndpointRequest extends Request
 {
     /**
      * @param array{
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     name: string,
-     *     securityGroupIds?: list<string>,
+     *     securityGroupIds?: list<string>|null,
      *     subnetIds: list<string>,
      *     vpcId: string
      * } $args

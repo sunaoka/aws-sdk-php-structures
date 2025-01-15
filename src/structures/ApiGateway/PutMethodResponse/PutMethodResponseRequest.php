@@ -9,8 +9,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $resourceId
  * @property string $httpMethod
  * @property string $statusCode
- * @property array<string, bool> $responseParameters
- * @property array<string, string> $responseModels
+ * @property array<string, bool>|null $responseParameters
+ * @property array<string, string>|null $responseModels
  */
 class PutMethodResponseRequest extends Request
 {
@@ -20,8 +20,8 @@ class PutMethodResponseRequest extends Request
      *     resourceId: string,
      *     httpMethod: string,
      *     statusCode: string,
-     *     responseParameters?: array<string, bool>,
-     *     responseModels?: array<string, string>
+     *     responseParameters?: array<string, bool>|null,
+     *     responseModels?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

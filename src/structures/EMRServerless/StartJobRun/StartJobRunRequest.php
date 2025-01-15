@@ -8,13 +8,13 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $applicationId
  * @property string $clientToken
  * @property string $executionRoleArn
- * @property Shapes\JobDriver $jobDriver
- * @property Shapes\ConfigurationOverrides $configurationOverrides
- * @property array<string, string> $tags
- * @property int<0, 1000000> $executionTimeoutMinutes
- * @property string $name
- * @property 'BATCH'|'STREAMING' $mode
- * @property Shapes\RetryPolicy $retryPolicy
+ * @property Shapes\JobDriver|null $jobDriver
+ * @property Shapes\ConfigurationOverrides|null $configurationOverrides
+ * @property array<string, string>|null $tags
+ * @property int<0, 1000000>|null $executionTimeoutMinutes
+ * @property string|null $name
+ * @property 'BATCH'|'STREAMING'|null $mode
+ * @property Shapes\RetryPolicy|null $retryPolicy
  */
 class StartJobRunRequest extends Request
 {
@@ -23,13 +23,13 @@ class StartJobRunRequest extends Request
      *     applicationId: string,
      *     clientToken: string,
      *     executionRoleArn: string,
-     *     jobDriver?: Shapes\JobDriver,
-     *     configurationOverrides?: Shapes\ConfigurationOverrides,
-     *     tags?: array<string, string>,
-     *     executionTimeoutMinutes?: int<0, 1000000>,
-     *     name?: string,
-     *     mode?: 'BATCH'|'STREAMING',
-     *     retryPolicy?: Shapes\RetryPolicy
+     *     jobDriver?: Shapes\JobDriver|null,
+     *     configurationOverrides?: Shapes\ConfigurationOverrides|null,
+     *     tags?: array<string, string>|null,
+     *     executionTimeoutMinutes?: int<0, 1000000>|null,
+     *     name?: string|null,
+     *     mode?: 'BATCH'|'STREAMING'|null,
+     *     retryPolicy?: Shapes\RetryPolicy|null
      * } $args
      */
     public function __construct(array $args)

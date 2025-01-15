@@ -5,71 +5,71 @@ namespace Sunaoka\Aws\Structures\CodeDeploy\GetDeployment\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $applicationName
- * @property string $deploymentGroupName
- * @property string $deploymentConfigName
- * @property string $deploymentId
- * @property RevisionLocation $previousRevision
- * @property RevisionLocation $revision
- * @property 'Created'|'Queued'|'InProgress'|'Baking'|'Succeeded'|'Failed'|'Stopped'|'Ready' $status
- * @property ErrorInformation $errorInformation
- * @property \Aws\Api\DateTimeResult $createTime
- * @property \Aws\Api\DateTimeResult $startTime
- * @property \Aws\Api\DateTimeResult $completeTime
- * @property DeploymentOverview $deploymentOverview
- * @property string $description
- * @property 'user'|'autoscaling'|'codeDeployRollback'|'CodeDeploy'|'CodeDeployAutoUpdate'|'CloudFormation'|'CloudFormationRollback'|'autoscalingTermination' $creator
- * @property bool $ignoreApplicationStopFailures
- * @property AutoRollbackConfiguration $autoRollbackConfiguration
- * @property bool $updateOutdatedInstancesOnly
- * @property RollbackInfo $rollbackInfo
- * @property DeploymentStyle $deploymentStyle
- * @property TargetInstances $targetInstances
- * @property bool $instanceTerminationWaitTimeStarted
- * @property BlueGreenDeploymentConfiguration $blueGreenDeploymentConfiguration
- * @property LoadBalancerInfo $loadBalancerInfo
- * @property string $additionalDeploymentStatusInfo
- * @property 'DISALLOW'|'OVERWRITE'|'RETAIN' $fileExistsBehavior
- * @property list<string> $deploymentStatusMessages
- * @property 'Server'|'Lambda'|'ECS' $computePlatform
- * @property string $externalId
- * @property RelatedDeployments $relatedDeployments
- * @property AlarmConfiguration $overrideAlarmConfiguration
+ * @property string|null $applicationName
+ * @property string|null $deploymentGroupName
+ * @property string|null $deploymentConfigName
+ * @property string|null $deploymentId
+ * @property RevisionLocation|null $previousRevision
+ * @property RevisionLocation|null $revision
+ * @property 'Created'|'Queued'|'InProgress'|'Baking'|'Succeeded'|'Failed'|'Stopped'|'Ready'|null $status
+ * @property ErrorInformation|null $errorInformation
+ * @property \Aws\Api\DateTimeResult|null $createTime
+ * @property \Aws\Api\DateTimeResult|null $startTime
+ * @property \Aws\Api\DateTimeResult|null $completeTime
+ * @property DeploymentOverview|null $deploymentOverview
+ * @property string|null $description
+ * @property 'user'|'autoscaling'|'codeDeployRollback'|'CodeDeploy'|'CodeDeployAutoUpdate'|'CloudFormation'|'CloudFormationRollback'|'autoscalingTermination'|null $creator
+ * @property bool|null $ignoreApplicationStopFailures
+ * @property AutoRollbackConfiguration|null $autoRollbackConfiguration
+ * @property bool|null $updateOutdatedInstancesOnly
+ * @property RollbackInfo|null $rollbackInfo
+ * @property DeploymentStyle|null $deploymentStyle
+ * @property TargetInstances|null $targetInstances
+ * @property bool|null $instanceTerminationWaitTimeStarted
+ * @property BlueGreenDeploymentConfiguration|null $blueGreenDeploymentConfiguration
+ * @property LoadBalancerInfo|null $loadBalancerInfo
+ * @property string|null $additionalDeploymentStatusInfo
+ * @property 'DISALLOW'|'OVERWRITE'|'RETAIN'|null $fileExistsBehavior
+ * @property list<string>|null $deploymentStatusMessages
+ * @property 'Server'|'Lambda'|'ECS'|null $computePlatform
+ * @property string|null $externalId
+ * @property RelatedDeployments|null $relatedDeployments
+ * @property AlarmConfiguration|null $overrideAlarmConfiguration
  */
 class DeploymentInfo extends Shape
 {
     /**
      * @param array{
-     *     applicationName?: string,
-     *     deploymentGroupName?: string,
-     *     deploymentConfigName?: string,
-     *     deploymentId?: string,
-     *     previousRevision?: RevisionLocation,
-     *     revision?: RevisionLocation,
-     *     status?: 'Created'|'Queued'|'InProgress'|'Baking'|'Succeeded'|'Failed'|'Stopped'|'Ready',
-     *     errorInformation?: ErrorInformation,
-     *     createTime?: \Aws\Api\DateTimeResult,
-     *     startTime?: \Aws\Api\DateTimeResult,
-     *     completeTime?: \Aws\Api\DateTimeResult,
-     *     deploymentOverview?: DeploymentOverview,
-     *     description?: string,
-     *     creator?: 'user'|'autoscaling'|'codeDeployRollback'|'CodeDeploy'|'CodeDeployAutoUpdate'|'CloudFormation'|'CloudFormationRollback'|'autoscalingTermination',
-     *     ignoreApplicationStopFailures?: bool,
-     *     autoRollbackConfiguration?: AutoRollbackConfiguration,
-     *     updateOutdatedInstancesOnly?: bool,
-     *     rollbackInfo?: RollbackInfo,
-     *     deploymentStyle?: DeploymentStyle,
-     *     targetInstances?: TargetInstances,
-     *     instanceTerminationWaitTimeStarted?: bool,
-     *     blueGreenDeploymentConfiguration?: BlueGreenDeploymentConfiguration,
-     *     loadBalancerInfo?: LoadBalancerInfo,
-     *     additionalDeploymentStatusInfo?: string,
-     *     fileExistsBehavior?: 'DISALLOW'|'OVERWRITE'|'RETAIN',
-     *     deploymentStatusMessages?: list<string>,
-     *     computePlatform?: 'Server'|'Lambda'|'ECS',
-     *     externalId?: string,
-     *     relatedDeployments?: RelatedDeployments,
-     *     overrideAlarmConfiguration?: AlarmConfiguration
+     *     applicationName?: string|null,
+     *     deploymentGroupName?: string|null,
+     *     deploymentConfigName?: string|null,
+     *     deploymentId?: string|null,
+     *     previousRevision?: RevisionLocation|null,
+     *     revision?: RevisionLocation|null,
+     *     status?: 'Created'|'Queued'|'InProgress'|'Baking'|'Succeeded'|'Failed'|'Stopped'|'Ready'|null,
+     *     errorInformation?: ErrorInformation|null,
+     *     createTime?: \Aws\Api\DateTimeResult|null,
+     *     startTime?: \Aws\Api\DateTimeResult|null,
+     *     completeTime?: \Aws\Api\DateTimeResult|null,
+     *     deploymentOverview?: DeploymentOverview|null,
+     *     description?: string|null,
+     *     creator?: 'user'|'autoscaling'|'codeDeployRollback'|'CodeDeploy'|'CodeDeployAutoUpdate'|'CloudFormation'|'CloudFormationRollback'|'autoscalingTermination'|null,
+     *     ignoreApplicationStopFailures?: bool|null,
+     *     autoRollbackConfiguration?: AutoRollbackConfiguration|null,
+     *     updateOutdatedInstancesOnly?: bool|null,
+     *     rollbackInfo?: RollbackInfo|null,
+     *     deploymentStyle?: DeploymentStyle|null,
+     *     targetInstances?: TargetInstances|null,
+     *     instanceTerminationWaitTimeStarted?: bool|null,
+     *     blueGreenDeploymentConfiguration?: BlueGreenDeploymentConfiguration|null,
+     *     loadBalancerInfo?: LoadBalancerInfo|null,
+     *     additionalDeploymentStatusInfo?: string|null,
+     *     fileExistsBehavior?: 'DISALLOW'|'OVERWRITE'|'RETAIN'|null,
+     *     deploymentStatusMessages?: list<string>|null,
+     *     computePlatform?: 'Server'|'Lambda'|'ECS'|null,
+     *     externalId?: string|null,
+     *     relatedDeployments?: RelatedDeployments|null,
+     *     overrideAlarmConfiguration?: AlarmConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

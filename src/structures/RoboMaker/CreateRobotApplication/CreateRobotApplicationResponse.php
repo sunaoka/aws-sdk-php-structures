@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\RoboMaker\CreateRobotApplication;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $arn
- * @property string $name
- * @property string $version
- * @property list<Shapes\Source> $sources
- * @property Shapes\RobotSoftwareSuite $robotSoftwareSuite
- * @property \Aws\Api\DateTimeResult $lastUpdatedAt
- * @property string $revisionId
- * @property array<string, string> $tags
- * @property Shapes\Environment $environment
+ * @property string|null $arn
+ * @property string|null $name
+ * @property string|null $version
+ * @property list<Shapes\Source>|null $sources
+ * @property Shapes\RobotSoftwareSuite|null $robotSoftwareSuite
+ * @property \Aws\Api\DateTimeResult|null $lastUpdatedAt
+ * @property string|null $revisionId
+ * @property array<string, string>|null $tags
+ * @property Shapes\Environment|null $environment
  */
 class CreateRobotApplicationResponse extends Response
 {

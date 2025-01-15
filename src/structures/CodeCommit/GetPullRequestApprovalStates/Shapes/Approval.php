@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\CodeCommit\GetPullRequestApprovalStates\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $userArn
- * @property 'APPROVE'|'REVOKE' $approvalState
+ * @property string|null $userArn
+ * @property 'APPROVE'|'REVOKE'|null $approvalState
  */
 class Approval extends Shape
 {
     /**
      * @param array{
-     *     userArn?: string,
-     *     approvalState?: 'APPROVE'|'REVOKE'
+     *     userArn?: string|null,
+     *     approvalState?: 'APPROVE'|'REVOKE'|null
      * } $args
      */
     public function __construct(array $args = [])

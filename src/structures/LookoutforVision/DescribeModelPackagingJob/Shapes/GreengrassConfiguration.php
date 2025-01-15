@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\LookoutforVision\DescribeModelPackagingJob\Shap
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CompilerOptions
- * @property 'jetson_xavier' $TargetDevice
- * @property TargetPlatform $TargetPlatform
+ * @property string|null $CompilerOptions
+ * @property 'jetson_xavier'|null $TargetDevice
+ * @property TargetPlatform|null $TargetPlatform
  * @property S3Location $S3OutputLocation
  * @property string $ComponentName
- * @property string $ComponentVersion
- * @property string $ComponentDescription
- * @property list<Tag> $Tags
+ * @property string|null $ComponentVersion
+ * @property string|null $ComponentDescription
+ * @property list<Tag>|null $Tags
  */
 class GreengrassConfiguration extends Shape
 {
     /**
      * @param array{
-     *     CompilerOptions?: string,
-     *     TargetDevice?: 'jetson_xavier',
-     *     TargetPlatform?: TargetPlatform,
+     *     CompilerOptions?: string|null,
+     *     TargetDevice?: 'jetson_xavier'|null,
+     *     TargetPlatform?: TargetPlatform|null,
      *     S3OutputLocation: S3Location,
      *     ComponentName: string,
-     *     ComponentVersion?: string,
-     *     ComponentDescription?: string,
-     *     Tags?: list<Tag>
+     *     ComponentVersion?: string|null,
+     *     ComponentDescription?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args)

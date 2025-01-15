@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\KafkaConnect\DescribeCustomPlugin\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $bucketArn
- * @property string $fileKey
- * @property string $objectVersion
+ * @property string|null $bucketArn
+ * @property string|null $fileKey
+ * @property string|null $objectVersion
  */
 class S3LocationDescription extends Shape
 {
     /**
      * @param array{
-     *     bucketArn?: string,
-     *     fileKey?: string,
-     *     objectVersion?: string
+     *     bucketArn?: string|null,
+     *     fileKey?: string|null,
+     *     objectVersion?: string|null
      * } $args
      */
     public function __construct(array $args = [])

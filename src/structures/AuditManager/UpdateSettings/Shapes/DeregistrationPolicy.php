@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\AuditManager\UpdateSettings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'ALL'|'DEFAULT' $deleteResources
+ * @property 'ALL'|'DEFAULT'|null $deleteResources
  */
 class DeregistrationPolicy extends Shape
 {
     /**
-     * @param array{deleteResources?: 'ALL'|'DEFAULT'} $args
+     * @param array{deleteResources?: 'ALL'|'DEFAULT'|null} $args
      */
     public function __construct(array $args = [])
     {

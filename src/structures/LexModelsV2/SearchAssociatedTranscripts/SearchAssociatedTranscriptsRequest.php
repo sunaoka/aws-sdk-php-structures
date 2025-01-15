@@ -9,10 +9,10 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $botVersion
  * @property string $localeId
  * @property string $botRecommendationId
- * @property 'Ascending'|'Descending' $searchOrder
+ * @property 'Ascending'|'Descending'|null $searchOrder
  * @property list<Shapes\AssociatedTranscriptFilter> $filters
- * @property int<1, 1000> $maxResults
- * @property int<0, 10000000> $nextIndex
+ * @property int<1, 1000>|null $maxResults
+ * @property int<0, 10000000>|null $nextIndex
  */
 class SearchAssociatedTranscriptsRequest extends Request
 {
@@ -22,10 +22,10 @@ class SearchAssociatedTranscriptsRequest extends Request
      *     botVersion: string,
      *     localeId: string,
      *     botRecommendationId: string,
-     *     searchOrder?: 'Ascending'|'Descending',
+     *     searchOrder?: 'Ascending'|'Descending'|null,
      *     filters: list<Shapes\AssociatedTranscriptFilter>,
-     *     maxResults?: int<1, 1000>,
-     *     nextIndex?: int<0, 10000000>
+     *     maxResults?: int<1, 1000>|null,
+     *     nextIndex?: int<0, 10000000>|null
      * } $args
      */
     public function __construct(array $args)

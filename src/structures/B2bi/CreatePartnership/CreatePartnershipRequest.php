@@ -8,11 +8,11 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $profileId
  * @property string $name
  * @property string $email
- * @property string $phone
+ * @property string|null $phone
  * @property list<string> $capabilities
- * @property Shapes\CapabilityOptions $capabilityOptions
- * @property string $clientToken
- * @property list<Shapes\Tag> $tags
+ * @property Shapes\CapabilityOptions|null $capabilityOptions
+ * @property string|null $clientToken
+ * @property list<Shapes\Tag>|null $tags
  */
 class CreatePartnershipRequest extends Request
 {
@@ -21,11 +21,11 @@ class CreatePartnershipRequest extends Request
      *     profileId: string,
      *     name: string,
      *     email: string,
-     *     phone?: string,
+     *     phone?: string|null,
      *     capabilities: list<string>,
-     *     capabilityOptions?: Shapes\CapabilityOptions,
-     *     clientToken?: string,
-     *     tags?: list<Shapes\Tag>
+     *     capabilityOptions?: Shapes\CapabilityOptions|null,
+     *     clientToken?: string|null,
+     *     tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

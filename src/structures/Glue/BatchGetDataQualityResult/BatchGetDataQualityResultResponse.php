@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\DataQualityResult> $Results
- * @property list<string> $ResultsNotFound
+ * @property list<string>|null $ResultsNotFound
  */
 class BatchGetDataQualityResultResponse extends Response
 {

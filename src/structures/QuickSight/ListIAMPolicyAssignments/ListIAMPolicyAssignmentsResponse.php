@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\QuickSight\ListIAMPolicyAssignments;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\IAMPolicyAssignmentSummary> $IAMPolicyAssignments
- * @property string $NextToken
- * @property string $RequestId
- * @property int $Status
+ * @property list<Shapes\IAMPolicyAssignmentSummary>|null $IAMPolicyAssignments
+ * @property string|null $NextToken
+ * @property string|null $RequestId
+ * @property int|null $Status
  */
 class ListIAMPolicyAssignmentsResponse extends Response
 {

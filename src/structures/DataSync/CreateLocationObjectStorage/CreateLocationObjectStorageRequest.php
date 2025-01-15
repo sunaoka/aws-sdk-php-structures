@@ -6,30 +6,30 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ServerHostname
- * @property int<1, 65536> $ServerPort
- * @property 'HTTPS'|'HTTP' $ServerProtocol
- * @property string $Subdirectory
+ * @property int<1, 65536>|null $ServerPort
+ * @property 'HTTPS'|'HTTP'|null $ServerProtocol
+ * @property string|null $Subdirectory
  * @property string $BucketName
- * @property string $AccessKey
- * @property string $SecretKey
+ * @property string|null $AccessKey
+ * @property string|null $SecretKey
  * @property list<string> $AgentArns
- * @property list<Shapes\TagListEntry> $Tags
- * @property string|resource|\Psr\Http\Message\StreamInterface $ServerCertificate
+ * @property list<Shapes\TagListEntry>|null $Tags
+ * @property string|resource|\Psr\Http\Message\StreamInterface|null $ServerCertificate
  */
 class CreateLocationObjectStorageRequest extends Request
 {
     /**
      * @param array{
      *     ServerHostname: string,
-     *     ServerPort?: int<1, 65536>,
-     *     ServerProtocol?: 'HTTPS'|'HTTP',
-     *     Subdirectory?: string,
+     *     ServerPort?: int<1, 65536>|null,
+     *     ServerProtocol?: 'HTTPS'|'HTTP'|null,
+     *     Subdirectory?: string|null,
      *     BucketName: string,
-     *     AccessKey?: string,
-     *     SecretKey?: string,
+     *     AccessKey?: string|null,
+     *     SecretKey?: string|null,
      *     AgentArns: list<string>,
-     *     Tags?: list<Shapes\TagListEntry>,
-     *     ServerCertificate?: string|resource|\Psr\Http\Message\StreamInterface
+     *     Tags?: list<Shapes\TagListEntry>|null,
+     *     ServerCertificate?: string|resource|\Psr\Http\Message\StreamInterface|null
      * } $args
      */
     public function __construct(array $args)

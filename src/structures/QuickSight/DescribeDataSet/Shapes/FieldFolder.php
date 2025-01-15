@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $description
- * @property list<string> $columns
+ * @property string|null $description
+ * @property list<string>|null $columns
  */
 class FieldFolder extends Shape
 {
     /**
      * @param array{
-     *     description?: string,
-     *     columns?: list<string>
+     *     description?: string|null,
+     *     columns?: list<string>|null
      * } $args
      */
     public function __construct(array $args = [])

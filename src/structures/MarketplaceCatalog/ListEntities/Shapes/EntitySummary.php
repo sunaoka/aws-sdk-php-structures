@@ -5,35 +5,35 @@ namespace Sunaoka\Aws\Structures\MarketplaceCatalog\ListEntities\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $EntityType
- * @property string $EntityId
- * @property string $EntityArn
- * @property string $LastModifiedDate
- * @property string $Visibility
- * @property AmiProductSummary $AmiProductSummary
- * @property ContainerProductSummary $ContainerProductSummary
- * @property DataProductSummary $DataProductSummary
- * @property SaaSProductSummary $SaaSProductSummary
- * @property OfferSummary $OfferSummary
- * @property ResaleAuthorizationSummary $ResaleAuthorizationSummary
+ * @property string|null $Name
+ * @property string|null $EntityType
+ * @property string|null $EntityId
+ * @property string|null $EntityArn
+ * @property string|null $LastModifiedDate
+ * @property string|null $Visibility
+ * @property AmiProductSummary|null $AmiProductSummary
+ * @property ContainerProductSummary|null $ContainerProductSummary
+ * @property DataProductSummary|null $DataProductSummary
+ * @property SaaSProductSummary|null $SaaSProductSummary
+ * @property OfferSummary|null $OfferSummary
+ * @property ResaleAuthorizationSummary|null $ResaleAuthorizationSummary
  */
 class EntitySummary extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     EntityType?: string,
-     *     EntityId?: string,
-     *     EntityArn?: string,
-     *     LastModifiedDate?: string,
-     *     Visibility?: string,
-     *     AmiProductSummary?: AmiProductSummary,
-     *     ContainerProductSummary?: ContainerProductSummary,
-     *     DataProductSummary?: DataProductSummary,
-     *     SaaSProductSummary?: SaaSProductSummary,
-     *     OfferSummary?: OfferSummary,
-     *     ResaleAuthorizationSummary?: ResaleAuthorizationSummary
+     *     Name?: string|null,
+     *     EntityType?: string|null,
+     *     EntityId?: string|null,
+     *     EntityArn?: string|null,
+     *     LastModifiedDate?: string|null,
+     *     Visibility?: string|null,
+     *     AmiProductSummary?: AmiProductSummary|null,
+     *     ContainerProductSummary?: ContainerProductSummary|null,
+     *     DataProductSummary?: DataProductSummary|null,
+     *     SaaSProductSummary?: SaaSProductSummary|null,
+     *     OfferSummary?: OfferSummary|null,
+     *     ResaleAuthorizationSummary?: ResaleAuthorizationSummary|null
      * } $args
      */
     public function __construct(array $args = [])

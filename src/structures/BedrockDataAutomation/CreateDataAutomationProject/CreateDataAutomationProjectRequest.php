@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $projectName
- * @property string $projectDescription
- * @property 'DEVELOPMENT'|'LIVE' $projectStage
+ * @property string|null $projectDescription
+ * @property 'DEVELOPMENT'|'LIVE'|null $projectStage
  * @property Shapes\StandardOutputConfiguration $standardOutputConfiguration
- * @property Shapes\CustomOutputConfiguration $customOutputConfiguration
- * @property Shapes\OverrideConfiguration $overrideConfiguration
- * @property string $clientToken
- * @property Shapes\EncryptionConfiguration $encryptionConfiguration
+ * @property Shapes\CustomOutputConfiguration|null $customOutputConfiguration
+ * @property Shapes\OverrideConfiguration|null $overrideConfiguration
+ * @property string|null $clientToken
+ * @property Shapes\EncryptionConfiguration|null $encryptionConfiguration
  */
 class CreateDataAutomationProjectRequest extends Request
 {
     /**
      * @param array{
      *     projectName: string,
-     *     projectDescription?: string,
-     *     projectStage?: 'DEVELOPMENT'|'LIVE',
+     *     projectDescription?: string|null,
+     *     projectStage?: 'DEVELOPMENT'|'LIVE'|null,
      *     standardOutputConfiguration: Shapes\StandardOutputConfiguration,
-     *     customOutputConfiguration?: Shapes\CustomOutputConfiguration,
-     *     overrideConfiguration?: Shapes\OverrideConfiguration,
-     *     clientToken?: string,
-     *     encryptionConfiguration?: Shapes\EncryptionConfiguration
+     *     customOutputConfiguration?: Shapes\CustomOutputConfiguration|null,
+     *     overrideConfiguration?: Shapes\OverrideConfiguration|null,
+     *     clientToken?: string|null,
+     *     encryptionConfiguration?: Shapes\EncryptionConfiguration|null
      * } $args
      */
     public function __construct(array $args)

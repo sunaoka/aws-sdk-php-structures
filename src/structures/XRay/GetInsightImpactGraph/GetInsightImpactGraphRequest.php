@@ -8,7 +8,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $InsightId
  * @property \Aws\Api\DateTimeResult $StartTime
  * @property \Aws\Api\DateTimeResult $EndTime
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class GetInsightImpactGraphRequest extends Request
 {
@@ -17,7 +17,7 @@ class GetInsightImpactGraphRequest extends Request
      *     InsightId: string,
      *     StartTime: \Aws\Api\DateTimeResult,
      *     EndTime: \Aws\Api\DateTimeResult,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

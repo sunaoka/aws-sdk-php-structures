@@ -7,8 +7,8 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $DocumentIdColumnName
  * @property string $DocumentDataColumnName
- * @property string $DocumentTitleColumnName
- * @property list<DataSourceToIndexFieldMapping> $FieldMappings
+ * @property string|null $DocumentTitleColumnName
+ * @property list<DataSourceToIndexFieldMapping>|null $FieldMappings
  * @property list<string> $ChangeDetectingColumns
  */
 class ColumnConfiguration extends Shape
@@ -17,8 +17,8 @@ class ColumnConfiguration extends Shape
      * @param array{
      *     DocumentIdColumnName: string,
      *     DocumentDataColumnName: string,
-     *     DocumentTitleColumnName?: string,
-     *     FieldMappings?: list<DataSourceToIndexFieldMapping>,
+     *     DocumentTitleColumnName?: string|null,
+     *     FieldMappings?: list<DataSourceToIndexFieldMapping>|null,
      *     ChangeDetectingColumns: list<string>
      * } $args
      */

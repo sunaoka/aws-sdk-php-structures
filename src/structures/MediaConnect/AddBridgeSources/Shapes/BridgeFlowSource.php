@@ -6,18 +6,18 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $FlowArn
- * @property VpcInterfaceAttachment $FlowVpcInterfaceAttachment
+ * @property VpcInterfaceAttachment|null $FlowVpcInterfaceAttachment
  * @property string $Name
- * @property string $OutputArn
+ * @property string|null $OutputArn
  */
 class BridgeFlowSource extends Shape
 {
     /**
      * @param array{
      *     FlowArn: string,
-     *     FlowVpcInterfaceAttachment?: VpcInterfaceAttachment,
+     *     FlowVpcInterfaceAttachment?: VpcInterfaceAttachment|null,
      *     Name: string,
-     *     OutputArn?: string
+     *     OutputArn?: string|null
      * } $args
      */
     public function __construct(array $args)

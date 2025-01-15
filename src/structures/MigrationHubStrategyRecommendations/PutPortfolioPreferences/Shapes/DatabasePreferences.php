@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MigrationHubStrategyRecommendations\PutPortfoli
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'AWS-managed'|'Self-manage'|'No preference' $databaseManagementPreference
- * @property DatabaseMigrationPreference $databaseMigrationPreference
+ * @property 'AWS-managed'|'Self-manage'|'No preference'|null $databaseManagementPreference
+ * @property DatabaseMigrationPreference|null $databaseMigrationPreference
  */
 class DatabasePreferences extends Shape
 {
     /**
      * @param array{
-     *     databaseManagementPreference?: 'AWS-managed'|'Self-manage'|'No preference',
-     *     databaseMigrationPreference?: DatabaseMigrationPreference
+     *     databaseManagementPreference?: 'AWS-managed'|'Self-manage'|'No preference'|null,
+     *     databaseMigrationPreference?: DatabaseMigrationPreference|null
      * } $args
      */
     public function __construct(array $args = [])

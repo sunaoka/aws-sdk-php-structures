@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\MainframeModernization\CreateDataSetImportTask\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $s3Location
+ * @property string|null $s3Location
  */
 class ExternalLocation extends Shape
 {
     /**
-     * @param array{s3Location?: string} $args
+     * @param array{s3Location?: string|null} $args
      */
     public function __construct(array $args = [])
     {

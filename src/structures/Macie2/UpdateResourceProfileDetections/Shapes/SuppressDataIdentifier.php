@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Macie2\UpdateResourceProfileDetections\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property 'CUSTOM'|'MANAGED' $type
+ * @property string|null $id
+ * @property 'CUSTOM'|'MANAGED'|null $type
  */
 class SuppressDataIdentifier extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     type?: 'CUSTOM'|'MANAGED'
+     *     id?: string|null,
+     *     type?: 'CUSTOM'|'MANAGED'|null
      * } $args
      */
     public function __construct(array $args = [])

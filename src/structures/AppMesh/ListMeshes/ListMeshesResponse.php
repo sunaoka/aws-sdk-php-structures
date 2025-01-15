@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property list<Shapes\MeshRef> $meshes
- * @property string $nextToken
+ * @property string|null $nextToken
  */
 class ListMeshesResponse extends Response
 {

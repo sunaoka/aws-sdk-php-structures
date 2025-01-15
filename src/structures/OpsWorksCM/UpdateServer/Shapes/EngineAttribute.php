@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OpsWorksCM\UpdateServer\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Value
+ * @property string|null $Name
+ * @property string|null $Value
  */
 class EngineAttribute extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Value?: string
+     *     Name?: string|null,
+     *     Value?: string|null
      * } $args
      */
     public function __construct(array $args = [])

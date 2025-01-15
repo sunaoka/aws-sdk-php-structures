@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Request;
  * @property Shapes\IntegrationConfig $IntegrationConfig
  * @property string $ObjectTypeName
  * @property string $RoleArn
- * @property array<string, string> $Tags
+ * @property array<string, string>|null $Tags
  */
 class CreateIntegrationWorkflowRequest extends Request
 {
@@ -21,7 +21,7 @@ class CreateIntegrationWorkflowRequest extends Request
      *     IntegrationConfig: Shapes\IntegrationConfig,
      *     ObjectTypeName: string,
      *     RoleArn: string,
-     *     Tags?: array<string, string>
+     *     Tags?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

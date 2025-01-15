@@ -6,22 +6,22 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ClientId
- * @property string $SecretHash
- * @property Shapes\UserContextDataType $UserContextData
+ * @property string|null $SecretHash
+ * @property Shapes\UserContextDataType|null $UserContextData
  * @property string $Username
- * @property Shapes\AnalyticsMetadataType $AnalyticsMetadata
- * @property array<string, string> $ClientMetadata
+ * @property Shapes\AnalyticsMetadataType|null $AnalyticsMetadata
+ * @property array<string, string>|null $ClientMetadata
  */
 class ForgotPasswordRequest extends Request
 {
     /**
      * @param array{
      *     ClientId: string,
-     *     SecretHash?: string,
-     *     UserContextData?: Shapes\UserContextDataType,
+     *     SecretHash?: string|null,
+     *     UserContextData?: Shapes\UserContextDataType|null,
      *     Username: string,
-     *     AnalyticsMetadata?: Shapes\AnalyticsMetadataType,
-     *     ClientMetadata?: array<string, string>
+     *     AnalyticsMetadata?: Shapes\AnalyticsMetadataType|null,
+     *     ClientMetadata?: array<string, string>|null
      * } $args
      */
     public function __construct(array $args)

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $AccountId
  * @property string $Policy
- * @property string $Organization
+ * @property string|null $Organization
  */
 class PutAccessGrantsInstanceResourcePolicyRequest extends Request
 {
@@ -15,7 +15,7 @@ class PutAccessGrantsInstanceResourcePolicyRequest extends Request
      * @param array{
      *     AccountId: string,
      *     Policy: string,
-     *     Organization?: string
+     *     Organization?: string|null
      * } $args
      */
     public function __construct(array $args)

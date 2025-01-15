@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\ForecastService\CreatePredictorBacktestExportJo
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $PredictorBacktestExportJobArn
+ * @property string|null $PredictorBacktestExportJobArn
  */
 class CreatePredictorBacktestExportJobResponse extends Response
 {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\SageMaker\DescribeOptimizationJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ModelQuantizationConfig $ModelQuantizationConfig
- * @property ModelCompilationConfig $ModelCompilationConfig
- * @property ModelShardingConfig $ModelShardingConfig
+ * @property ModelQuantizationConfig|null $ModelQuantizationConfig
+ * @property ModelCompilationConfig|null $ModelCompilationConfig
+ * @property ModelShardingConfig|null $ModelShardingConfig
  */
 class OptimizationConfig extends Shape
 {
     /**
      * @param array{
-     *     ModelQuantizationConfig?: ModelQuantizationConfig,
-     *     ModelCompilationConfig?: ModelCompilationConfig,
-     *     ModelShardingConfig?: ModelShardingConfig
+     *     ModelQuantizationConfig?: ModelQuantizationConfig|null,
+     *     ModelCompilationConfig?: ModelCompilationConfig|null,
+     *     ModelShardingConfig?: ModelShardingConfig|null
      * } $args
      */
     public function __construct(array $args = [])

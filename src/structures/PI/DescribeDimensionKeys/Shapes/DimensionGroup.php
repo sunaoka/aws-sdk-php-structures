@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Group
- * @property list<string> $Dimensions
- * @property int<1, 25> $Limit
+ * @property list<string>|null $Dimensions
+ * @property int<1, 25>|null $Limit
  */
 class DimensionGroup extends Shape
 {
     /**
      * @param array{
      *     Group: string,
-     *     Dimensions?: list<string>,
-     *     Limit?: int<1, 25>
+     *     Dimensions?: list<string>|null,
+     *     Limit?: int<1, 25>|null
      * } $args
      */
     public function __construct(array $args)

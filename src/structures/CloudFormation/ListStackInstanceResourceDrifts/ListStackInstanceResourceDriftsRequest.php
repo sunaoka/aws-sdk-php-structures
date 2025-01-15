@@ -6,26 +6,26 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $StackSetName
- * @property string $NextToken
- * @property int<1, 100> $MaxResults
- * @property list<'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'> $StackInstanceResourceDriftStatuses
+ * @property string|null $NextToken
+ * @property int<1, 100>|null $MaxResults
+ * @property list<'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'>|null $StackInstanceResourceDriftStatuses
  * @property string $StackInstanceAccount
  * @property string $StackInstanceRegion
  * @property string $OperationId
- * @property 'SELF'|'DELEGATED_ADMIN' $CallAs
+ * @property 'SELF'|'DELEGATED_ADMIN'|null $CallAs
  */
 class ListStackInstanceResourceDriftsRequest extends Request
 {
     /**
      * @param array{
      *     StackSetName: string,
-     *     NextToken?: string,
-     *     MaxResults?: int<1, 100>,
-     *     StackInstanceResourceDriftStatuses?: list<'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'>,
+     *     NextToken?: string|null,
+     *     MaxResults?: int<1, 100>|null,
+     *     StackInstanceResourceDriftStatuses?: list<'IN_SYNC'|'MODIFIED'|'DELETED'|'NOT_CHECKED'>|null,
      *     StackInstanceAccount: string,
      *     StackInstanceRegion: string,
      *     OperationId: string,
-     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'
+     *     CallAs?: 'SELF'|'DELEGATED_ADMIN'|null
      * } $args
      */
     public function __construct(array $args)

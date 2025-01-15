@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\QuickSight\DescribeDataSet\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<UniqueKey> $UniqueKeys
+ * @property list<UniqueKey>|null $UniqueKeys
  */
 class PerformanceConfiguration extends Shape
 {
     /**
-     * @param array{UniqueKeys?: list<UniqueKey>} $args
+     * @param array{UniqueKeys?: list<UniqueKey>|null} $args
      */
     public function __construct(array $args = [])
     {

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\ComputeOptimizer\GetECSServiceRecommendations\S
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $identifier
- * @property string $code
- * @property string $message
+ * @property string|null $identifier
+ * @property string|null $code
+ * @property string|null $message
  */
 class GetRecommendationError extends Shape
 {
     /**
      * @param array{
-     *     identifier?: string,
-     *     code?: string,
-     *     message?: string
+     *     identifier?: string|null,
+     *     code?: string|null,
+     *     message?: string|null
      * } $args
      */
     public function __construct(array $args = [])

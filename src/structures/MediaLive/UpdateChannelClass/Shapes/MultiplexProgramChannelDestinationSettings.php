@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\MediaLive\UpdateChannelClass\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $MultiplexId
- * @property string $ProgramName
+ * @property string|null $MultiplexId
+ * @property string|null $ProgramName
  */
 class MultiplexProgramChannelDestinationSettings extends Shape
 {
     /**
      * @param array{
-     *     MultiplexId?: string,
-     *     ProgramName?: string
+     *     MultiplexId?: string|null,
+     *     ProgramName?: string|null
      * } $args
      */
     public function __construct(array $args = [])

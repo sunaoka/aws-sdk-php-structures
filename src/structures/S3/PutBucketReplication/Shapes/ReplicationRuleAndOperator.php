@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\S3\PutBucketReplication\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Prefix
- * @property list<Tag> $Tags
+ * @property string|null $Prefix
+ * @property list<Tag>|null $Tags
  */
 class ReplicationRuleAndOperator extends Shape
 {
     /**
      * @param array{
-     *     Prefix?: string,
-     *     Tags?: list<Tag>
+     *     Prefix?: string|null,
+     *     Tags?: list<Tag>|null
      * } $args
      */
     public function __construct(array $args = [])

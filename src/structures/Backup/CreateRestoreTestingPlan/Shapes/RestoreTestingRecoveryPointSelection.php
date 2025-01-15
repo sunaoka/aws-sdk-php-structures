@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\Backup\CreateRestoreTestingPlan\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'LATEST_WITHIN_WINDOW'|'RANDOM_WITHIN_WINDOW' $Algorithm
- * @property list<string> $ExcludeVaults
- * @property list<string> $IncludeVaults
- * @property list<'CONTINUOUS'|'SNAPSHOT'> $RecoveryPointTypes
- * @property int $SelectionWindowDays
+ * @property 'LATEST_WITHIN_WINDOW'|'RANDOM_WITHIN_WINDOW'|null $Algorithm
+ * @property list<string>|null $ExcludeVaults
+ * @property list<string>|null $IncludeVaults
+ * @property list<'CONTINUOUS'|'SNAPSHOT'>|null $RecoveryPointTypes
+ * @property int|null $SelectionWindowDays
  */
 class RestoreTestingRecoveryPointSelection extends Shape
 {
     /**
      * @param array{
-     *     Algorithm?: 'LATEST_WITHIN_WINDOW'|'RANDOM_WITHIN_WINDOW',
-     *     ExcludeVaults?: list<string>,
-     *     IncludeVaults?: list<string>,
-     *     RecoveryPointTypes?: list<'CONTINUOUS'|'SNAPSHOT'>,
-     *     SelectionWindowDays?: int
+     *     Algorithm?: 'LATEST_WITHIN_WINDOW'|'RANDOM_WITHIN_WINDOW'|null,
+     *     ExcludeVaults?: list<string>|null,
+     *     IncludeVaults?: list<string>|null,
+     *     RecoveryPointTypes?: list<'CONTINUOUS'|'SNAPSHOT'>|null,
+     *     SelectionWindowDays?: int|null
      * } $args
      */
     public function __construct(array $args = [])

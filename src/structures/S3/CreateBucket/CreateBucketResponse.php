@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\S3\CreateBucket;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Location
+ * @property string|null $Location
  */
 class CreateBucketResponse extends Response
 {

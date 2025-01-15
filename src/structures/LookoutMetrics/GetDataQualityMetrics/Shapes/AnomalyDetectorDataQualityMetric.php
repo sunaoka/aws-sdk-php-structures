@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\LookoutMetrics\GetDataQualityMetrics\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property \Aws\Api\DateTimeResult $StartTimestamp
- * @property list<MetricSetDataQualityMetric> $MetricSetDataQualityMetricList
+ * @property \Aws\Api\DateTimeResult|null $StartTimestamp
+ * @property list<MetricSetDataQualityMetric>|null $MetricSetDataQualityMetricList
  */
 class AnomalyDetectorDataQualityMetric extends Shape
 {
     /**
      * @param array{
-     *     StartTimestamp?: \Aws\Api\DateTimeResult,
-     *     MetricSetDataQualityMetricList?: list<MetricSetDataQualityMetric>
+     *     StartTimestamp?: \Aws\Api\DateTimeResult|null,
+     *     MetricSetDataQualityMetricList?: list<MetricSetDataQualityMetric>|null
      * } $args
      */
     public function __construct(array $args = [])

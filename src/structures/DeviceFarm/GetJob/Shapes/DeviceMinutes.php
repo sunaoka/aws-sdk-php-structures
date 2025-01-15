@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DeviceFarm\GetJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property double $total
- * @property double $metered
- * @property double $unmetered
+ * @property double|null $total
+ * @property double|null $metered
+ * @property double|null $unmetered
  */
 class DeviceMinutes extends Shape
 {
     /**
      * @param array{
-     *     total?: double,
-     *     metered?: double,
-     *     unmetered?: double
+     *     total?: double|null,
+     *     metered?: double|null,
+     *     unmetered?: double|null
      * } $args
      */
     public function __construct(array $args = [])

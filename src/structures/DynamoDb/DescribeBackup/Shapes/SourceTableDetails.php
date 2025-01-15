@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $TableName
  * @property string $TableId
- * @property string $TableArn
- * @property int $TableSizeBytes
+ * @property string|null $TableArn
+ * @property int|null $TableSizeBytes
  * @property list<KeySchemaElement> $KeySchema
  * @property \Aws\Api\DateTimeResult $TableCreationDateTime
  * @property ProvisionedThroughput $ProvisionedThroughput
- * @property OnDemandThroughput $OnDemandThroughput
- * @property int<0, max> $ItemCount
- * @property 'PROVISIONED'|'PAY_PER_REQUEST' $BillingMode
+ * @property OnDemandThroughput|null $OnDemandThroughput
+ * @property int<0, max>|null $ItemCount
+ * @property 'PROVISIONED'|'PAY_PER_REQUEST'|null $BillingMode
  */
 class SourceTableDetails extends Shape
 {
@@ -22,14 +22,14 @@ class SourceTableDetails extends Shape
      * @param array{
      *     TableName: string,
      *     TableId: string,
-     *     TableArn?: string,
-     *     TableSizeBytes?: int,
+     *     TableArn?: string|null,
+     *     TableSizeBytes?: int|null,
      *     KeySchema: list<KeySchemaElement>,
      *     TableCreationDateTime: \Aws\Api\DateTimeResult,
      *     ProvisionedThroughput: ProvisionedThroughput,
-     *     OnDemandThroughput?: OnDemandThroughput,
-     *     ItemCount?: int<0, max>,
-     *     BillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST'
+     *     OnDemandThroughput?: OnDemandThroughput|null,
+     *     ItemCount?: int<0, max>|null,
+     *     BillingMode?: 'PROVISIONED'|'PAY_PER_REQUEST'|null
      * } $args
      */
     public function __construct(array $args)

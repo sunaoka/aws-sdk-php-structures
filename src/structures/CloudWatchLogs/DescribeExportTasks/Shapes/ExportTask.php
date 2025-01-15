@@ -5,29 +5,29 @@ namespace Sunaoka\Aws\Structures\CloudWatchLogs\DescribeExportTasks\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $taskId
- * @property string $taskName
- * @property string $logGroupName
- * @property int<0, max> $from
- * @property int<0, max> $to
- * @property string $destination
- * @property string $destinationPrefix
- * @property ExportTaskStatus $status
- * @property ExportTaskExecutionInfo $executionInfo
+ * @property string|null $taskId
+ * @property string|null $taskName
+ * @property string|null $logGroupName
+ * @property int<0, max>|null $from
+ * @property int<0, max>|null $to
+ * @property string|null $destination
+ * @property string|null $destinationPrefix
+ * @property ExportTaskStatus|null $status
+ * @property ExportTaskExecutionInfo|null $executionInfo
  */
 class ExportTask extends Shape
 {
     /**
      * @param array{
-     *     taskId?: string,
-     *     taskName?: string,
-     *     logGroupName?: string,
-     *     from?: int<0, max>,
-     *     to?: int<0, max>,
-     *     destination?: string,
-     *     destinationPrefix?: string,
-     *     status?: ExportTaskStatus,
-     *     executionInfo?: ExportTaskExecutionInfo
+     *     taskId?: string|null,
+     *     taskName?: string|null,
+     *     logGroupName?: string|null,
+     *     from?: int<0, max>|null,
+     *     to?: int<0, max>|null,
+     *     destination?: string|null,
+     *     destinationPrefix?: string|null,
+     *     status?: ExportTaskStatus|null,
+     *     executionInfo?: ExportTaskExecutionInfo|null
      * } $args
      */
     public function __construct(array $args = [])

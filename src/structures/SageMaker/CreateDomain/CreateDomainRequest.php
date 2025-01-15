@@ -8,16 +8,16 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $DomainName
  * @property 'SSO'|'IAM' $AuthMode
  * @property Shapes\UserSettings $DefaultUserSettings
- * @property Shapes\DomainSettings $DomainSettings
+ * @property Shapes\DomainSettings|null $DomainSettings
  * @property list<string> $SubnetIds
  * @property string $VpcId
- * @property list<Shapes\Tag> $Tags
- * @property 'PublicInternetOnly'|'VpcOnly' $AppNetworkAccessType
- * @property string $HomeEfsFileSystemKmsKeyId
- * @property string $KmsKeyId
- * @property 'Service'|'Customer' $AppSecurityGroupManagement
- * @property 'ENABLED'|'DISABLED' $TagPropagation
- * @property Shapes\DefaultSpaceSettings $DefaultSpaceSettings
+ * @property list<Shapes\Tag>|null $Tags
+ * @property 'PublicInternetOnly'|'VpcOnly'|null $AppNetworkAccessType
+ * @property string|null $HomeEfsFileSystemKmsKeyId
+ * @property string|null $KmsKeyId
+ * @property 'Service'|'Customer'|null $AppSecurityGroupManagement
+ * @property 'ENABLED'|'DISABLED'|null $TagPropagation
+ * @property Shapes\DefaultSpaceSettings|null $DefaultSpaceSettings
  */
 class CreateDomainRequest extends Request
 {
@@ -26,16 +26,16 @@ class CreateDomainRequest extends Request
      *     DomainName: string,
      *     AuthMode: 'SSO'|'IAM',
      *     DefaultUserSettings: Shapes\UserSettings,
-     *     DomainSettings?: Shapes\DomainSettings,
+     *     DomainSettings?: Shapes\DomainSettings|null,
      *     SubnetIds: list<string>,
      *     VpcId: string,
-     *     Tags?: list<Shapes\Tag>,
-     *     AppNetworkAccessType?: 'PublicInternetOnly'|'VpcOnly',
-     *     HomeEfsFileSystemKmsKeyId?: string,
-     *     KmsKeyId?: string,
-     *     AppSecurityGroupManagement?: 'Service'|'Customer',
-     *     TagPropagation?: 'ENABLED'|'DISABLED',
-     *     DefaultSpaceSettings?: Shapes\DefaultSpaceSettings
+     *     Tags?: list<Shapes\Tag>|null,
+     *     AppNetworkAccessType?: 'PublicInternetOnly'|'VpcOnly'|null,
+     *     HomeEfsFileSystemKmsKeyId?: string|null,
+     *     KmsKeyId?: string|null,
+     *     AppSecurityGroupManagement?: 'Service'|'Customer'|null,
+     *     TagPropagation?: 'ENABLED'|'DISABLED'|null,
+     *     DefaultSpaceSettings?: Shapes\DefaultSpaceSettings|null
      * } $args
      */
     public function __construct(array $args)

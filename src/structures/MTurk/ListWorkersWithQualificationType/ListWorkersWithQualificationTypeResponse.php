@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\MTurk\ListWorkersWithQualificationType;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $NextToken
- * @property int $NumResults
- * @property list<Shapes\Qualification> $Qualifications
+ * @property string|null $NextToken
+ * @property int|null $NumResults
+ * @property list<Shapes\Qualification>|null $Qualifications
  */
 class ListWorkersWithQualificationTypeResponse extends Response
 {

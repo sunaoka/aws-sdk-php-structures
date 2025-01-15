@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Request;
  * @property string $VoiceConnectorId
  * @property string $TransactionId
  * @property string $VoiceProfileDomainId
- * @property string $ClientRequestToken
- * @property 'Caller'|'Callee' $CallLeg
+ * @property string|null $ClientRequestToken
+ * @property 'Caller'|'Callee'|null $CallLeg
  */
 class StartSpeakerSearchTaskRequest extends Request
 {
@@ -18,8 +18,8 @@ class StartSpeakerSearchTaskRequest extends Request
      *     VoiceConnectorId: string,
      *     TransactionId: string,
      *     VoiceProfileDomainId: string,
-     *     ClientRequestToken?: string,
-     *     CallLeg?: 'Caller'|'Callee'
+     *     ClientRequestToken?: string|null,
+     *     CallLeg?: 'Caller'|'Callee'|null
      * } $args
      */
     public function __construct(array $args)

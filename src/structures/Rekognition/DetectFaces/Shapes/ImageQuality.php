@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Rekognition\DetectFaces\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property float $Brightness
- * @property float $Sharpness
+ * @property float|null $Brightness
+ * @property float|null $Sharpness
  */
 class ImageQuality extends Shape
 {
     /**
      * @param array{
-     *     Brightness?: float,
-     *     Sharpness?: float
+     *     Brightness?: float|null,
+     *     Sharpness?: float|null
      * } $args
      */
     public function __construct(array $args = [])

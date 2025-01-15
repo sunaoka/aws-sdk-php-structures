@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\EMRContainers\CreateJobTemplate\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property list<Configuration> $applicationConfiguration
- * @property ParametricMonitoringConfiguration $monitoringConfiguration
+ * @property list<Configuration>|null $applicationConfiguration
+ * @property ParametricMonitoringConfiguration|null $monitoringConfiguration
  */
 class ParametricConfigurationOverrides extends Shape
 {
     /**
      * @param array{
-     *     applicationConfiguration?: list<Configuration>,
-     *     monitoringConfiguration?: ParametricMonitoringConfiguration
+     *     applicationConfiguration?: list<Configuration>|null,
+     *     monitoringConfiguration?: ParametricMonitoringConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

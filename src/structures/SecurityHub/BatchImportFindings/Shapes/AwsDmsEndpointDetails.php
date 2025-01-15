@@ -5,37 +5,37 @@ namespace Sunaoka\Aws\Structures\SecurityHub\BatchImportFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $CertificateArn
- * @property string $DatabaseName
- * @property string $EndpointArn
- * @property string $EndpointIdentifier
- * @property string $EndpointType
- * @property string $EngineName
- * @property string $ExternalId
- * @property string $ExtraConnectionAttributes
- * @property string $KmsKeyId
- * @property int $Port
- * @property string $ServerName
- * @property string $SslMode
- * @property string $Username
+ * @property string|null $CertificateArn
+ * @property string|null $DatabaseName
+ * @property string|null $EndpointArn
+ * @property string|null $EndpointIdentifier
+ * @property string|null $EndpointType
+ * @property string|null $EngineName
+ * @property string|null $ExternalId
+ * @property string|null $ExtraConnectionAttributes
+ * @property string|null $KmsKeyId
+ * @property int|null $Port
+ * @property string|null $ServerName
+ * @property string|null $SslMode
+ * @property string|null $Username
  */
 class AwsDmsEndpointDetails extends Shape
 {
     /**
      * @param array{
-     *     CertificateArn?: string,
-     *     DatabaseName?: string,
-     *     EndpointArn?: string,
-     *     EndpointIdentifier?: string,
-     *     EndpointType?: string,
-     *     EngineName?: string,
-     *     ExternalId?: string,
-     *     ExtraConnectionAttributes?: string,
-     *     KmsKeyId?: string,
-     *     Port?: int,
-     *     ServerName?: string,
-     *     SslMode?: string,
-     *     Username?: string
+     *     CertificateArn?: string|null,
+     *     DatabaseName?: string|null,
+     *     EndpointArn?: string|null,
+     *     EndpointIdentifier?: string|null,
+     *     EndpointType?: string|null,
+     *     EngineName?: string|null,
+     *     ExternalId?: string|null,
+     *     ExtraConnectionAttributes?: string|null,
+     *     KmsKeyId?: string|null,
+     *     Port?: int|null,
+     *     ServerName?: string|null,
+     *     SslMode?: string|null,
+     *     Username?: string|null
      * } $args
      */
     public function __construct(array $args = [])

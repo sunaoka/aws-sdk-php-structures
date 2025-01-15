@@ -5,41 +5,41 @@ namespace Sunaoka\Aws\Structures\Artifact\ListReports\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $id
- * @property string $name
- * @property 'PUBLISHED'|'UNPUBLISHED' $state
- * @property string $arn
- * @property int<1, max> $version
- * @property 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT' $uploadState
- * @property string $description
- * @property \Aws\Api\DateTimeResult $periodStart
- * @property \Aws\Api\DateTimeResult $periodEnd
- * @property string $series
- * @property string $category
- * @property string $companyName
- * @property string $productName
- * @property string $statusMessage
- * @property 'PASSTHROUGH'|'EXPLICIT' $acceptanceType
+ * @property string|null $id
+ * @property string|null $name
+ * @property 'PUBLISHED'|'UNPUBLISHED'|null $state
+ * @property string|null $arn
+ * @property int<1, max>|null $version
+ * @property 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT'|null $uploadState
+ * @property string|null $description
+ * @property \Aws\Api\DateTimeResult|null $periodStart
+ * @property \Aws\Api\DateTimeResult|null $periodEnd
+ * @property string|null $series
+ * @property string|null $category
+ * @property string|null $companyName
+ * @property string|null $productName
+ * @property string|null $statusMessage
+ * @property 'PASSTHROUGH'|'EXPLICIT'|null $acceptanceType
  */
 class ReportSummary extends Shape
 {
     /**
      * @param array{
-     *     id?: string,
-     *     name?: string,
-     *     state?: 'PUBLISHED'|'UNPUBLISHED',
-     *     arn?: string,
-     *     version?: int<1, max>,
-     *     uploadState?: 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT',
-     *     description?: string,
-     *     periodStart?: \Aws\Api\DateTimeResult,
-     *     periodEnd?: \Aws\Api\DateTimeResult,
-     *     series?: string,
-     *     category?: string,
-     *     companyName?: string,
-     *     productName?: string,
-     *     statusMessage?: string,
-     *     acceptanceType?: 'PASSTHROUGH'|'EXPLICIT'
+     *     id?: string|null,
+     *     name?: string|null,
+     *     state?: 'PUBLISHED'|'UNPUBLISHED'|null,
+     *     arn?: string|null,
+     *     version?: int<1, max>|null,
+     *     uploadState?: 'PROCESSING'|'COMPLETE'|'FAILED'|'FAULT'|null,
+     *     description?: string|null,
+     *     periodStart?: \Aws\Api\DateTimeResult|null,
+     *     periodEnd?: \Aws\Api\DateTimeResult|null,
+     *     series?: string|null,
+     *     category?: string|null,
+     *     companyName?: string|null,
+     *     productName?: string|null,
+     *     statusMessage?: string|null,
+     *     acceptanceType?: 'PASSTHROUGH'|'EXPLICIT'|null
      * } $args
      */
     public function __construct(array $args = [])

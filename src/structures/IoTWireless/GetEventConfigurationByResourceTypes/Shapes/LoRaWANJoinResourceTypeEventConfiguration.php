@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\IoTWireless\GetEventConfigurationByResourceType
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'Enabled'|'Disabled' $WirelessDeviceEventTopic
+ * @property 'Enabled'|'Disabled'|null $WirelessDeviceEventTopic
  */
 class LoRaWANJoinResourceTypeEventConfiguration extends Shape
 {
     /**
-     * @param array{WirelessDeviceEventTopic?: 'Enabled'|'Disabled'} $args
+     * @param array{WirelessDeviceEventTopic?: 'Enabled'|'Disabled'|null} $args
      */
     public function __construct(array $args = [])
     {

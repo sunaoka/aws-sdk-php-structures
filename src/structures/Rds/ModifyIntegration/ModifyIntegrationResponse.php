@@ -5,18 +5,18 @@ namespace Sunaoka\Aws\Structures\Rds\ModifyIntegration;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $SourceArn
- * @property string $TargetArn
- * @property string $IntegrationName
- * @property string $IntegrationArn
- * @property string $KMSKeyId
- * @property array<string, string> $AdditionalEncryptionContext
- * @property 'creating'|'active'|'modifying'|'failed'|'deleting'|'syncing'|'needs_attention' $Status
- * @property list<Shapes\Tag> $Tags
- * @property \Aws\Api\DateTimeResult $CreateTime
- * @property list<Shapes\IntegrationError> $Errors
- * @property string $DataFilter
- * @property string $Description
+ * @property string|null $SourceArn
+ * @property string|null $TargetArn
+ * @property string|null $IntegrationName
+ * @property string|null $IntegrationArn
+ * @property string|null $KMSKeyId
+ * @property array<string, string>|null $AdditionalEncryptionContext
+ * @property 'creating'|'active'|'modifying'|'failed'|'deleting'|'syncing'|'needs_attention'|null $Status
+ * @property list<Shapes\Tag>|null $Tags
+ * @property \Aws\Api\DateTimeResult|null $CreateTime
+ * @property list<Shapes\IntegrationError>|null $Errors
+ * @property string|null $DataFilter
+ * @property string|null $Description
  */
 class ModifyIntegrationResponse extends Response
 {

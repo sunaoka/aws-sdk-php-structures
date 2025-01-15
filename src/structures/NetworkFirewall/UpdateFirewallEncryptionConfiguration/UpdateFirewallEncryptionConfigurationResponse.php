@@ -5,10 +5,10 @@ namespace Sunaoka\Aws\Structures\NetworkFirewall\UpdateFirewallEncryptionConfigu
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $FirewallArn
- * @property string $FirewallName
- * @property string $UpdateToken
- * @property Shapes\EncryptionConfiguration $EncryptionConfiguration
+ * @property string|null $FirewallArn
+ * @property string|null $FirewallName
+ * @property string|null $UpdateToken
+ * @property Shapes\EncryptionConfiguration|null $EncryptionConfiguration
  */
 class UpdateFirewallEncryptionConfigurationResponse extends Response
 {

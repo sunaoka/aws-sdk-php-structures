@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property string $Name
- * @property KafkaStreamingSourceOptions $StreamingOptions
- * @property int<0, max> $WindowSize
- * @property bool $DetectSchema
- * @property StreamingDataPreviewOptions $DataPreviewOptions
+ * @property KafkaStreamingSourceOptions|null $StreamingOptions
+ * @property int<0, max>|null $WindowSize
+ * @property bool|null $DetectSchema
+ * @property StreamingDataPreviewOptions|null $DataPreviewOptions
  */
 class DirectKafkaSource extends Shape
 {
     /**
      * @param array{
      *     Name: string,
-     *     StreamingOptions?: KafkaStreamingSourceOptions,
-     *     WindowSize?: int<0, max>,
-     *     DetectSchema?: bool,
-     *     DataPreviewOptions?: StreamingDataPreviewOptions
+     *     StreamingOptions?: KafkaStreamingSourceOptions|null,
+     *     WindowSize?: int<0, max>|null,
+     *     DetectSchema?: bool|null,
+     *     DataPreviewOptions?: StreamingDataPreviewOptions|null
      * } $args
      */
     public function __construct(array $args)

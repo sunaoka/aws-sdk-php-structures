@@ -5,13 +5,13 @@ namespace Sunaoka\Aws\Structures\BillingConductor\UpdateCustomLineItem;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $Arn
- * @property string $BillingGroupArn
- * @property string $Name
- * @property string $Description
- * @property Shapes\ListCustomLineItemChargeDetails $ChargeDetails
- * @property int $LastModifiedTime
- * @property int<0, max> $AssociationSize
+ * @property string|null $Arn
+ * @property string|null $BillingGroupArn
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property Shapes\ListCustomLineItemChargeDetails|null $ChargeDetails
+ * @property int|null $LastModifiedTime
+ * @property int<0, max>|null $AssociationSize
  */
 class UpdateCustomLineItemResponse extends Response
 {

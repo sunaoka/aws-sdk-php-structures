@@ -7,12 +7,12 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $authorizerName
  * @property string $authorizerFunctionArn
- * @property string $tokenKeyName
- * @property array<string, string> $tokenSigningPublicKeys
- * @property 'ACTIVE'|'INACTIVE' $status
- * @property list<Shapes\Tag> $tags
- * @property bool $signingDisabled
- * @property bool $enableCachingForHttp
+ * @property string|null $tokenKeyName
+ * @property array<string, string>|null $tokenSigningPublicKeys
+ * @property 'ACTIVE'|'INACTIVE'|null $status
+ * @property list<Shapes\Tag>|null $tags
+ * @property bool|null $signingDisabled
+ * @property bool|null $enableCachingForHttp
  */
 class CreateAuthorizerRequest extends Request
 {
@@ -20,12 +20,12 @@ class CreateAuthorizerRequest extends Request
      * @param array{
      *     authorizerName: string,
      *     authorizerFunctionArn: string,
-     *     tokenKeyName?: string,
-     *     tokenSigningPublicKeys?: array<string, string>,
-     *     status?: 'ACTIVE'|'INACTIVE',
-     *     tags?: list<Shapes\Tag>,
-     *     signingDisabled?: bool,
-     *     enableCachingForHttp?: bool
+     *     tokenKeyName?: string|null,
+     *     tokenSigningPublicKeys?: array<string, string>|null,
+     *     status?: 'ACTIVE'|'INACTIVE'|null,
+     *     tags?: list<Shapes\Tag>|null,
+     *     signingDisabled?: bool|null,
+     *     enableCachingForHttp?: bool|null
      * } $args
      */
     public function __construct(array $args)

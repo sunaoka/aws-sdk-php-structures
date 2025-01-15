@@ -5,57 +5,57 @@ namespace Sunaoka\Aws\Structures\OpsWorks\DescribeLayers\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $StackId
- * @property string $LayerId
- * @property 'aws-flow-ruby'|'ecs-cluster'|'java-app'|'lb'|'web'|'php-app'|'rails-app'|'nodejs-app'|'memcached'|'db-master'|'monitoring-master'|'custom' $Type
- * @property string $Name
- * @property string $Shortname
- * @property array<'EcsClusterArn'|'EnableHaproxyStats'|'HaproxyStatsUrl'|'HaproxyStatsUser'|'HaproxyStatsPassword'|'HaproxyHealthCheckUrl'|'HaproxyHealthCheckMethod'|'MysqlRootPassword'|'MysqlRootPasswordUbiquitous'|'GangliaUrl'|'GangliaUser'|'GangliaPassword'|'MemcachedMemory'|'NodejsVersion'|'RubyVersion'|'RubygemsVersion'|'ManageBundler'|'BundlerVersion'|'RailsStack'|'PassengerVersion'|'Jvm'|'JvmVersion'|'JvmOptions'|'JavaAppServer'|'JavaAppServerVersion', string> $Attributes
- * @property CloudWatchLogsConfiguration $CloudWatchLogsConfiguration
- * @property string $CustomInstanceProfileArn
- * @property string $CustomJson
- * @property list<string> $CustomSecurityGroupIds
- * @property list<string> $DefaultSecurityGroupNames
- * @property list<string> $Packages
- * @property list<VolumeConfiguration> $VolumeConfigurations
- * @property bool $EnableAutoHealing
- * @property bool $AutoAssignElasticIps
- * @property bool $AutoAssignPublicIps
- * @property Recipes $DefaultRecipes
- * @property Recipes $CustomRecipes
- * @property string $CreatedAt
- * @property bool $InstallUpdatesOnBoot
- * @property bool $UseEbsOptimizedInstances
- * @property LifecycleEventConfiguration $LifecycleEventConfiguration
+ * @property string|null $Arn
+ * @property string|null $StackId
+ * @property string|null $LayerId
+ * @property 'aws-flow-ruby'|'ecs-cluster'|'java-app'|'lb'|'web'|'php-app'|'rails-app'|'nodejs-app'|'memcached'|'db-master'|'monitoring-master'|'custom'|null $Type
+ * @property string|null $Name
+ * @property string|null $Shortname
+ * @property array<'EcsClusterArn'|'EnableHaproxyStats'|'HaproxyStatsUrl'|'HaproxyStatsUser'|'HaproxyStatsPassword'|'HaproxyHealthCheckUrl'|'HaproxyHealthCheckMethod'|'MysqlRootPassword'|'MysqlRootPasswordUbiquitous'|'GangliaUrl'|'GangliaUser'|'GangliaPassword'|'MemcachedMemory'|'NodejsVersion'|'RubyVersion'|'RubygemsVersion'|'ManageBundler'|'BundlerVersion'|'RailsStack'|'PassengerVersion'|'Jvm'|'JvmVersion'|'JvmOptions'|'JavaAppServer'|'JavaAppServerVersion', string>|null $Attributes
+ * @property CloudWatchLogsConfiguration|null $CloudWatchLogsConfiguration
+ * @property string|null $CustomInstanceProfileArn
+ * @property string|null $CustomJson
+ * @property list<string>|null $CustomSecurityGroupIds
+ * @property list<string>|null $DefaultSecurityGroupNames
+ * @property list<string>|null $Packages
+ * @property list<VolumeConfiguration>|null $VolumeConfigurations
+ * @property bool|null $EnableAutoHealing
+ * @property bool|null $AutoAssignElasticIps
+ * @property bool|null $AutoAssignPublicIps
+ * @property Recipes|null $DefaultRecipes
+ * @property Recipes|null $CustomRecipes
+ * @property string|null $CreatedAt
+ * @property bool|null $InstallUpdatesOnBoot
+ * @property bool|null $UseEbsOptimizedInstances
+ * @property LifecycleEventConfiguration|null $LifecycleEventConfiguration
  */
 class Layer extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     StackId?: string,
-     *     LayerId?: string,
-     *     Type?: 'aws-flow-ruby'|'ecs-cluster'|'java-app'|'lb'|'web'|'php-app'|'rails-app'|'nodejs-app'|'memcached'|'db-master'|'monitoring-master'|'custom',
-     *     Name?: string,
-     *     Shortname?: string,
-     *     Attributes?: array<'EcsClusterArn'|'EnableHaproxyStats'|'HaproxyStatsUrl'|'HaproxyStatsUser'|'HaproxyStatsPassword'|'HaproxyHealthCheckUrl'|'HaproxyHealthCheckMethod'|'MysqlRootPassword'|'MysqlRootPasswordUbiquitous'|'GangliaUrl'|'GangliaUser'|'GangliaPassword'|'MemcachedMemory'|'NodejsVersion'|'RubyVersion'|'RubygemsVersion'|'ManageBundler'|'BundlerVersion'|'RailsStack'|'PassengerVersion'|'Jvm'|'JvmVersion'|'JvmOptions'|'JavaAppServer'|'JavaAppServerVersion', string>,
-     *     CloudWatchLogsConfiguration?: CloudWatchLogsConfiguration,
-     *     CustomInstanceProfileArn?: string,
-     *     CustomJson?: string,
-     *     CustomSecurityGroupIds?: list<string>,
-     *     DefaultSecurityGroupNames?: list<string>,
-     *     Packages?: list<string>,
-     *     VolumeConfigurations?: list<VolumeConfiguration>,
-     *     EnableAutoHealing?: bool,
-     *     AutoAssignElasticIps?: bool,
-     *     AutoAssignPublicIps?: bool,
-     *     DefaultRecipes?: Recipes,
-     *     CustomRecipes?: Recipes,
-     *     CreatedAt?: string,
-     *     InstallUpdatesOnBoot?: bool,
-     *     UseEbsOptimizedInstances?: bool,
-     *     LifecycleEventConfiguration?: LifecycleEventConfiguration
+     *     Arn?: string|null,
+     *     StackId?: string|null,
+     *     LayerId?: string|null,
+     *     Type?: 'aws-flow-ruby'|'ecs-cluster'|'java-app'|'lb'|'web'|'php-app'|'rails-app'|'nodejs-app'|'memcached'|'db-master'|'monitoring-master'|'custom'|null,
+     *     Name?: string|null,
+     *     Shortname?: string|null,
+     *     Attributes?: array<'EcsClusterArn'|'EnableHaproxyStats'|'HaproxyStatsUrl'|'HaproxyStatsUser'|'HaproxyStatsPassword'|'HaproxyHealthCheckUrl'|'HaproxyHealthCheckMethod'|'MysqlRootPassword'|'MysqlRootPasswordUbiquitous'|'GangliaUrl'|'GangliaUser'|'GangliaPassword'|'MemcachedMemory'|'NodejsVersion'|'RubyVersion'|'RubygemsVersion'|'ManageBundler'|'BundlerVersion'|'RailsStack'|'PassengerVersion'|'Jvm'|'JvmVersion'|'JvmOptions'|'JavaAppServer'|'JavaAppServerVersion', string>|null,
+     *     CloudWatchLogsConfiguration?: CloudWatchLogsConfiguration|null,
+     *     CustomInstanceProfileArn?: string|null,
+     *     CustomJson?: string|null,
+     *     CustomSecurityGroupIds?: list<string>|null,
+     *     DefaultSecurityGroupNames?: list<string>|null,
+     *     Packages?: list<string>|null,
+     *     VolumeConfigurations?: list<VolumeConfiguration>|null,
+     *     EnableAutoHealing?: bool|null,
+     *     AutoAssignElasticIps?: bool|null,
+     *     AutoAssignPublicIps?: bool|null,
+     *     DefaultRecipes?: Recipes|null,
+     *     CustomRecipes?: Recipes|null,
+     *     CreatedAt?: string|null,
+     *     InstallUpdatesOnBoot?: bool|null,
+     *     UseEbsOptimizedInstances?: bool|null,
+     *     LifecycleEventConfiguration?: LifecycleEventConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

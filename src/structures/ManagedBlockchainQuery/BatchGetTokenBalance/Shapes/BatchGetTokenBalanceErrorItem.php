@@ -5,9 +5,9 @@ namespace Sunaoka\Aws\Structures\ManagedBlockchainQuery\BatchGetTokenBalance\Sha
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property TokenIdentifier $tokenIdentifier
- * @property OwnerIdentifier $ownerIdentifier
- * @property BlockchainInstant $atBlockchainInstant
+ * @property TokenIdentifier|null $tokenIdentifier
+ * @property OwnerIdentifier|null $ownerIdentifier
+ * @property BlockchainInstant|null $atBlockchainInstant
  * @property string $errorCode
  * @property string $errorMessage
  * @property 'VALIDATION_EXCEPTION'|'RESOURCE_NOT_FOUND_EXCEPTION' $errorType
@@ -16,9 +16,9 @@ class BatchGetTokenBalanceErrorItem extends Shape
 {
     /**
      * @param array{
-     *     tokenIdentifier?: TokenIdentifier,
-     *     ownerIdentifier?: OwnerIdentifier,
-     *     atBlockchainInstant?: BlockchainInstant,
+     *     tokenIdentifier?: TokenIdentifier|null,
+     *     ownerIdentifier?: OwnerIdentifier|null,
+     *     atBlockchainInstant?: BlockchainInstant|null,
      *     errorCode: string,
      *     errorMessage: string,
      *     errorType: 'VALIDATION_EXCEPTION'|'RESOURCE_NOT_FOUND_EXCEPTION'

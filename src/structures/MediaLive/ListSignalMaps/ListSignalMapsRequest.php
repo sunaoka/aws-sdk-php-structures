@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListSignalMaps;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $CloudWatchAlarmTemplateGroupIdentifier
- * @property string $EventBridgeRuleTemplateGroupIdentifier
- * @property int<1, 1000> $MaxResults
- * @property string $NextToken
+ * @property string|null $CloudWatchAlarmTemplateGroupIdentifier
+ * @property string|null $EventBridgeRuleTemplateGroupIdentifier
+ * @property int<1, 1000>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListSignalMapsRequest extends Request
 {
     /**
      * @param array{
-     *     CloudWatchAlarmTemplateGroupIdentifier?: string,
-     *     EventBridgeRuleTemplateGroupIdentifier?: string,
-     *     MaxResults?: int<1, 1000>,
-     *     NextToken?: string
+     *     CloudWatchAlarmTemplateGroupIdentifier?: string|null,
+     *     EventBridgeRuleTemplateGroupIdentifier?: string|null,
+     *     MaxResults?: int<1, 1000>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

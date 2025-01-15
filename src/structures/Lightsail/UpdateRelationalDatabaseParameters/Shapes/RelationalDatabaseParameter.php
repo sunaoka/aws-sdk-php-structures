@@ -5,27 +5,27 @@ namespace Sunaoka\Aws\Structures\Lightsail\UpdateRelationalDatabaseParameters\Sh
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $allowedValues
- * @property string $applyMethod
- * @property string $applyType
- * @property string $dataType
- * @property string $description
- * @property bool $isModifiable
- * @property string $parameterName
- * @property string $parameterValue
+ * @property string|null $allowedValues
+ * @property string|null $applyMethod
+ * @property string|null $applyType
+ * @property string|null $dataType
+ * @property string|null $description
+ * @property bool|null $isModifiable
+ * @property string|null $parameterName
+ * @property string|null $parameterValue
  */
 class RelationalDatabaseParameter extends Shape
 {
     /**
      * @param array{
-     *     allowedValues?: string,
-     *     applyMethod?: string,
-     *     applyType?: string,
-     *     dataType?: string,
-     *     description?: string,
-     *     isModifiable?: bool,
-     *     parameterName?: string,
-     *     parameterValue?: string
+     *     allowedValues?: string|null,
+     *     applyMethod?: string|null,
+     *     applyType?: string|null,
+     *     dataType?: string|null,
+     *     description?: string|null,
+     *     isModifiable?: bool|null,
+     *     parameterName?: string|null,
+     *     parameterValue?: string|null
      * } $args
      */
     public function __construct(array $args = [])

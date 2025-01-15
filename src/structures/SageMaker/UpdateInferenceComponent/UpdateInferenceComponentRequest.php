@@ -6,16 +6,16 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $InferenceComponentName
- * @property Shapes\InferenceComponentSpecification $Specification
- * @property Shapes\InferenceComponentRuntimeConfig $RuntimeConfig
+ * @property Shapes\InferenceComponentSpecification|null $Specification
+ * @property Shapes\InferenceComponentRuntimeConfig|null $RuntimeConfig
  */
 class UpdateInferenceComponentRequest extends Request
 {
     /**
      * @param array{
      *     InferenceComponentName: string,
-     *     Specification?: Shapes\InferenceComponentSpecification,
-     *     RuntimeConfig?: Shapes\InferenceComponentRuntimeConfig
+     *     Specification?: Shapes\InferenceComponentSpecification|null,
+     *     RuntimeConfig?: Shapes\InferenceComponentRuntimeConfig|null
      * } $args
      */
     public function __construct(array $args)

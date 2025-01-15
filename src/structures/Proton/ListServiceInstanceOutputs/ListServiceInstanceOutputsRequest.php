@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Proton\ListServiceInstanceOutputs;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $deploymentId
- * @property string $nextToken
+ * @property string|null $deploymentId
+ * @property string|null $nextToken
  * @property string $serviceInstanceName
  * @property string $serviceName
  */
@@ -14,8 +14,8 @@ class ListServiceInstanceOutputsRequest extends Request
 {
     /**
      * @param array{
-     *     deploymentId?: string,
-     *     nextToken?: string,
+     *     deploymentId?: string|null,
+     *     nextToken?: string|null,
      *     serviceInstanceName: string,
      *     serviceName: string
      * } $args

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\CloudFormation\BatchDescribeTypeConfigurations\
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $ErrorCode
- * @property string $ErrorMessage
- * @property TypeConfigurationIdentifier $TypeConfigurationIdentifier
+ * @property string|null $ErrorCode
+ * @property string|null $ErrorMessage
+ * @property TypeConfigurationIdentifier|null $TypeConfigurationIdentifier
  */
 class BatchDescribeTypeConfigurationsError extends Shape
 {
     /**
      * @param array{
-     *     ErrorCode?: string,
-     *     ErrorMessage?: string,
-     *     TypeConfigurationIdentifier?: TypeConfigurationIdentifier
+     *     ErrorCode?: string|null,
+     *     ErrorMessage?: string|null,
+     *     TypeConfigurationIdentifier?: TypeConfigurationIdentifier|null
      * } $args
      */
     public function __construct(array $args = [])

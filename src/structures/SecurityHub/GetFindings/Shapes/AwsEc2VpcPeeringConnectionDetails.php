@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsEc2VpcPeeringConnectionVpcInfoDetails $AccepterVpcInfo
- * @property string $ExpirationTime
- * @property AwsEc2VpcPeeringConnectionVpcInfoDetails $RequesterVpcInfo
- * @property AwsEc2VpcPeeringConnectionStatusDetails $Status
- * @property string $VpcPeeringConnectionId
+ * @property AwsEc2VpcPeeringConnectionVpcInfoDetails|null $AccepterVpcInfo
+ * @property string|null $ExpirationTime
+ * @property AwsEc2VpcPeeringConnectionVpcInfoDetails|null $RequesterVpcInfo
+ * @property AwsEc2VpcPeeringConnectionStatusDetails|null $Status
+ * @property string|null $VpcPeeringConnectionId
  */
 class AwsEc2VpcPeeringConnectionDetails extends Shape
 {
     /**
      * @param array{
-     *     AccepterVpcInfo?: AwsEc2VpcPeeringConnectionVpcInfoDetails,
-     *     ExpirationTime?: string,
-     *     RequesterVpcInfo?: AwsEc2VpcPeeringConnectionVpcInfoDetails,
-     *     Status?: AwsEc2VpcPeeringConnectionStatusDetails,
-     *     VpcPeeringConnectionId?: string
+     *     AccepterVpcInfo?: AwsEc2VpcPeeringConnectionVpcInfoDetails|null,
+     *     ExpirationTime?: string|null,
+     *     RequesterVpcInfo?: AwsEc2VpcPeeringConnectionVpcInfoDetails|null,
+     *     Status?: AwsEc2VpcPeeringConnectionStatusDetails|null,
+     *     VpcPeeringConnectionId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

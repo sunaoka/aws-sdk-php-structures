@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ComputeQuotaId
- * @property int $ComputeQuotaVersion
+ * @property int|null $ComputeQuotaVersion
  */
 class DescribeComputeQuotaRequest extends Request
 {
     /**
      * @param array{
      *     ComputeQuotaId: string,
-     *     ComputeQuotaVersion?: int
+     *     ComputeQuotaVersion?: int|null
      * } $args
      */
     public function __construct(array $args)

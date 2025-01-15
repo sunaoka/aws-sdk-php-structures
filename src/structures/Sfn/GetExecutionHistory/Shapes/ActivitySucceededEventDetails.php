@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Sfn\GetExecutionHistory\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $output
- * @property HistoryEventExecutionDataDetails $outputDetails
+ * @property string|null $output
+ * @property HistoryEventExecutionDataDetails|null $outputDetails
  */
 class ActivitySucceededEventDetails extends Shape
 {
     /**
      * @param array{
-     *     output?: string,
-     *     outputDetails?: HistoryEventExecutionDataDetails
+     *     output?: string|null,
+     *     outputDetails?: HistoryEventExecutionDataDetails|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Request;
 /**
  * @property string $Id
  * @property string $IndexId
- * @property string $NextToken
+ * @property string|null $NextToken
  */
 class ListExperienceEntitiesRequest extends Request
 {
@@ -15,7 +15,7 @@ class ListExperienceEntitiesRequest extends Request
      * @param array{
      *     Id: string,
      *     IndexId: string,
-     *     NextToken?: string
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args)

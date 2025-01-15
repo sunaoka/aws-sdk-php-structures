@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'ReturnIntent'|'CodeHook' $type
- * @property CodeHook $codeHook
+ * @property CodeHook|null $codeHook
  */
 class FulfillmentActivity extends Shape
 {
     /**
      * @param array{
      *     type: 'ReturnIntent'|'CodeHook',
-     *     codeHook?: CodeHook
+     *     codeHook?: CodeHook|null
      * } $args
      */
     public function __construct(array $args)

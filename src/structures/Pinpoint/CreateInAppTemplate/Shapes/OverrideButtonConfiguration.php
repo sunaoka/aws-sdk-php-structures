@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Shape;
 
 /**
  * @property 'LINK'|'DEEP_LINK'|'CLOSE' $ButtonAction
- * @property string $Link
+ * @property string|null $Link
  */
 class OverrideButtonConfiguration extends Shape
 {
     /**
      * @param array{
      *     ButtonAction: 'LINK'|'DEEP_LINK'|'CLOSE',
-     *     Link?: string
+     *     Link?: string|null
      * } $args
      */
     public function __construct(array $args)

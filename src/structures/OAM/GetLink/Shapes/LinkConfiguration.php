@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\OAM\GetLink\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property LogGroupConfiguration $LogGroupConfiguration
- * @property MetricConfiguration $MetricConfiguration
+ * @property LogGroupConfiguration|null $LogGroupConfiguration
+ * @property MetricConfiguration|null $MetricConfiguration
  */
 class LinkConfiguration extends Shape
 {
     /**
      * @param array{
-     *     LogGroupConfiguration?: LogGroupConfiguration,
-     *     MetricConfiguration?: MetricConfiguration
+     *     LogGroupConfiguration?: LogGroupConfiguration|null,
+     *     MetricConfiguration?: MetricConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

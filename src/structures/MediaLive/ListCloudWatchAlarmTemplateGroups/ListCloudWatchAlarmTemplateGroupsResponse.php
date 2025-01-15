@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\MediaLive\ListCloudWatchAlarmTemplateGroups;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property list<Shapes\CloudWatchAlarmTemplateGroupSummary> $CloudWatchAlarmTemplateGroups
- * @property string $NextToken
+ * @property list<Shapes\CloudWatchAlarmTemplateGroupSummary>|null $CloudWatchAlarmTemplateGroups
+ * @property string|null $NextToken
  */
 class ListCloudWatchAlarmTemplateGroupsResponse extends Response
 {

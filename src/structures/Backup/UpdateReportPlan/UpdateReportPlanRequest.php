@@ -6,20 +6,20 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $ReportPlanName
- * @property string $ReportPlanDescription
- * @property Shapes\ReportDeliveryChannel $ReportDeliveryChannel
- * @property Shapes\ReportSetting $ReportSetting
- * @property string $IdempotencyToken
+ * @property string|null $ReportPlanDescription
+ * @property Shapes\ReportDeliveryChannel|null $ReportDeliveryChannel
+ * @property Shapes\ReportSetting|null $ReportSetting
+ * @property string|null $IdempotencyToken
  */
 class UpdateReportPlanRequest extends Request
 {
     /**
      * @param array{
      *     ReportPlanName: string,
-     *     ReportPlanDescription?: string,
-     *     ReportDeliveryChannel?: Shapes\ReportDeliveryChannel,
-     *     ReportSetting?: Shapes\ReportSetting,
-     *     IdempotencyToken?: string
+     *     ReportPlanDescription?: string|null,
+     *     ReportDeliveryChannel?: Shapes\ReportDeliveryChannel|null,
+     *     ReportSetting?: Shapes\ReportSetting|null,
+     *     IdempotencyToken?: string|null
      * } $args
      */
     public function __construct(array $args)

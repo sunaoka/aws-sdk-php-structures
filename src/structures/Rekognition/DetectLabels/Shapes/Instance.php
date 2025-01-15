@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\Rekognition\DetectLabels\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property BoundingBox $BoundingBox
- * @property float $Confidence
- * @property list<DominantColor> $DominantColors
+ * @property BoundingBox|null $BoundingBox
+ * @property float|null $Confidence
+ * @property list<DominantColor>|null $DominantColors
  */
 class Instance extends Shape
 {
     /**
      * @param array{
-     *     BoundingBox?: BoundingBox,
-     *     Confidence?: float,
-     *     DominantColors?: list<DominantColor>
+     *     BoundingBox?: BoundingBox|null,
+     *     Confidence?: float|null,
+     *     DominantColors?: list<DominantColor>|null
      * } $args
      */
     public function __construct(array $args = [])

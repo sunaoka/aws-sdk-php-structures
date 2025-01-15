@@ -7,14 +7,14 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Name
  * @property 'ShadowMode' $Type
- * @property InferenceExperimentSchedule $Schedule
+ * @property InferenceExperimentSchedule|null $Schedule
  * @property 'Creating'|'Created'|'Updating'|'Running'|'Starting'|'Stopping'|'Completed'|'Cancelled' $Status
- * @property string $StatusReason
- * @property string $Description
+ * @property string|null $StatusReason
+ * @property string|null $Description
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property \Aws\Api\DateTimeResult $CompletionTime
+ * @property \Aws\Api\DateTimeResult|null $CompletionTime
  * @property \Aws\Api\DateTimeResult $LastModifiedTime
- * @property string $RoleArn
+ * @property string|null $RoleArn
  */
 class InferenceExperimentSummary extends Shape
 {
@@ -22,14 +22,14 @@ class InferenceExperimentSummary extends Shape
      * @param array{
      *     Name: string,
      *     Type: 'ShadowMode',
-     *     Schedule?: InferenceExperimentSchedule,
+     *     Schedule?: InferenceExperimentSchedule|null,
      *     Status: 'Creating'|'Created'|'Updating'|'Running'|'Starting'|'Stopping'|'Completed'|'Cancelled',
-     *     StatusReason?: string,
-     *     Description?: string,
+     *     StatusReason?: string|null,
+     *     Description?: string|null,
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     CompletionTime?: \Aws\Api\DateTimeResult,
+     *     CompletionTime?: \Aws\Api\DateTimeResult|null,
      *     LastModifiedTime: \Aws\Api\DateTimeResult,
-     *     RoleArn?: string
+     *     RoleArn?: string|null
      * } $args
      */
     public function __construct(array $args)

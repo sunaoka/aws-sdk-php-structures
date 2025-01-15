@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $body
- * @property string $clientToken
+ * @property string|null $clientToken
  * @property 'ATTACHMENT' $contentDisposition
  * @property string $knowledgeBaseId
  * @property string $messageTemplateId
@@ -17,7 +17,7 @@ class CreateMessageTemplateAttachmentRequest extends Request
     /**
      * @param array{
      *     body: string,
-     *     clientToken?: string,
+     *     clientToken?: string|null,
      *     contentDisposition: 'ATTACHMENT',
      *     knowledgeBaseId: string,
      *     messageTemplateId: string,

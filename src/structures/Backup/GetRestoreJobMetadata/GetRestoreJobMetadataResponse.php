@@ -5,8 +5,8 @@ namespace Sunaoka\Aws\Structures\Backup\GetRestoreJobMetadata;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $RestoreJobId
- * @property array<string, string> $Metadata
+ * @property string|null $RestoreJobId
+ * @property array<string, string>|null $Metadata
  */
 class GetRestoreJobMetadataResponse extends Response
 {

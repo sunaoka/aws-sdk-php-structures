@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $Id
  * @property string $S3CanonicalUserId
- * @property CloudFrontOriginAccessIdentityConfig $CloudFrontOriginAccessIdentityConfig
+ * @property CloudFrontOriginAccessIdentityConfig|null $CloudFrontOriginAccessIdentityConfig
  */
 class CloudFrontOriginAccessIdentity extends Shape
 {
@@ -15,7 +15,7 @@ class CloudFrontOriginAccessIdentity extends Shape
      * @param array{
      *     Id: string,
      *     S3CanonicalUserId: string,
-     *     CloudFrontOriginAccessIdentityConfig?: CloudFrontOriginAccessIdentityConfig
+     *     CloudFrontOriginAccessIdentityConfig?: CloudFrontOriginAccessIdentityConfig|null
      * } $args
      */
     public function __construct(array $args)

@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\AppIntegrationsService\ListApplications\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Arn
- * @property string $Id
- * @property string $Name
- * @property string $Namespace
- * @property \Aws\Api\DateTimeResult $CreatedTime
- * @property \Aws\Api\DateTimeResult $LastModifiedTime
+ * @property string|null $Arn
+ * @property string|null $Id
+ * @property string|null $Name
+ * @property string|null $Namespace
+ * @property \Aws\Api\DateTimeResult|null $CreatedTime
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedTime
  */
 class ApplicationSummary extends Shape
 {
     /**
      * @param array{
-     *     Arn?: string,
-     *     Id?: string,
-     *     Name?: string,
-     *     Namespace?: string,
-     *     CreatedTime?: \Aws\Api\DateTimeResult,
-     *     LastModifiedTime?: \Aws\Api\DateTimeResult
+     *     Arn?: string|null,
+     *     Id?: string|null,
+     *     Name?: string|null,
+     *     Namespace?: string|null,
+     *     CreatedTime?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedTime?: \Aws\Api\DateTimeResult|null
      * } $args
      */
     public function __construct(array $args = [])

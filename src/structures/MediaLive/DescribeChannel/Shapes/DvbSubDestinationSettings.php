@@ -5,45 +5,45 @@ namespace Sunaoka\Aws\Structures\MediaLive\DescribeChannel\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property 'CENTERED'|'LEFT'|'SMART' $Alignment
- * @property 'BLACK'|'NONE'|'WHITE' $BackgroundColor
- * @property int<0, 255> $BackgroundOpacity
- * @property InputLocation $Font
- * @property 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW' $FontColor
- * @property int<0, 255> $FontOpacity
- * @property int<96, 600> $FontResolution
- * @property string $FontSize
- * @property 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW' $OutlineColor
- * @property int<0, 10> $OutlineSize
- * @property 'BLACK'|'NONE'|'WHITE' $ShadowColor
- * @property int<0, 255> $ShadowOpacity
- * @property int $ShadowXOffset
- * @property int $ShadowYOffset
- * @property 'FIXED'|'SCALED' $TeletextGridControl
- * @property int<0, max> $XPosition
- * @property int<0, max> $YPosition
+ * @property 'CENTERED'|'LEFT'|'SMART'|null $Alignment
+ * @property 'BLACK'|'NONE'|'WHITE'|null $BackgroundColor
+ * @property int<0, 255>|null $BackgroundOpacity
+ * @property InputLocation|null $Font
+ * @property 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW'|null $FontColor
+ * @property int<0, 255>|null $FontOpacity
+ * @property int<96, 600>|null $FontResolution
+ * @property string|null $FontSize
+ * @property 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW'|null $OutlineColor
+ * @property int<0, 10>|null $OutlineSize
+ * @property 'BLACK'|'NONE'|'WHITE'|null $ShadowColor
+ * @property int<0, 255>|null $ShadowOpacity
+ * @property int|null $ShadowXOffset
+ * @property int|null $ShadowYOffset
+ * @property 'FIXED'|'SCALED'|null $TeletextGridControl
+ * @property int<0, max>|null $XPosition
+ * @property int<0, max>|null $YPosition
  */
 class DvbSubDestinationSettings extends Shape
 {
     /**
      * @param array{
-     *     Alignment?: 'CENTERED'|'LEFT'|'SMART',
-     *     BackgroundColor?: 'BLACK'|'NONE'|'WHITE',
-     *     BackgroundOpacity?: int<0, 255>,
-     *     Font?: InputLocation,
-     *     FontColor?: 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW',
-     *     FontOpacity?: int<0, 255>,
-     *     FontResolution?: int<96, 600>,
-     *     FontSize?: string,
-     *     OutlineColor?: 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW',
-     *     OutlineSize?: int<0, 10>,
-     *     ShadowColor?: 'BLACK'|'NONE'|'WHITE',
-     *     ShadowOpacity?: int<0, 255>,
-     *     ShadowXOffset?: int,
-     *     ShadowYOffset?: int,
-     *     TeletextGridControl?: 'FIXED'|'SCALED',
-     *     XPosition?: int<0, max>,
-     *     YPosition?: int<0, max>
+     *     Alignment?: 'CENTERED'|'LEFT'|'SMART'|null,
+     *     BackgroundColor?: 'BLACK'|'NONE'|'WHITE'|null,
+     *     BackgroundOpacity?: int<0, 255>|null,
+     *     Font?: InputLocation|null,
+     *     FontColor?: 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW'|null,
+     *     FontOpacity?: int<0, 255>|null,
+     *     FontResolution?: int<96, 600>|null,
+     *     FontSize?: string|null,
+     *     OutlineColor?: 'BLACK'|'BLUE'|'GREEN'|'RED'|'WHITE'|'YELLOW'|null,
+     *     OutlineSize?: int<0, 10>|null,
+     *     ShadowColor?: 'BLACK'|'NONE'|'WHITE'|null,
+     *     ShadowOpacity?: int<0, 255>|null,
+     *     ShadowXOffset?: int|null,
+     *     ShadowYOffset?: int|null,
+     *     TeletextGridControl?: 'FIXED'|'SCALED'|null,
+     *     XPosition?: int<0, max>|null,
+     *     YPosition?: int<0, max>|null
      * } $args
      */
     public function __construct(array $args = [])

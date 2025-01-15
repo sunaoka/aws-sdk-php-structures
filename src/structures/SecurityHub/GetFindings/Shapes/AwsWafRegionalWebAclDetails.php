@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $DefaultAction
- * @property string $MetricName
- * @property string $Name
- * @property list<AwsWafRegionalWebAclRulesListDetails> $RulesList
- * @property string $WebAclId
+ * @property string|null $DefaultAction
+ * @property string|null $MetricName
+ * @property string|null $Name
+ * @property list<AwsWafRegionalWebAclRulesListDetails>|null $RulesList
+ * @property string|null $WebAclId
  */
 class AwsWafRegionalWebAclDetails extends Shape
 {
     /**
      * @param array{
-     *     DefaultAction?: string,
-     *     MetricName?: string,
-     *     Name?: string,
-     *     RulesList?: list<AwsWafRegionalWebAclRulesListDetails>,
-     *     WebAclId?: string
+     *     DefaultAction?: string|null,
+     *     MetricName?: string|null,
+     *     Name?: string|null,
+     *     RulesList?: list<AwsWafRegionalWebAclRulesListDetails>|null,
+     *     WebAclId?: string|null
      * } $args
      */
     public function __construct(array $args = [])

@@ -5,17 +5,17 @@ namespace Sunaoka\Aws\Structures\DirectConnect\UpdateDirectConnectGatewayAssocia
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $associationId
- * @property list<Shapes\RouteFilterPrefix> $addAllowedPrefixesToDirectConnectGateway
- * @property list<Shapes\RouteFilterPrefix> $removeAllowedPrefixesToDirectConnectGateway
+ * @property string|null $associationId
+ * @property list<Shapes\RouteFilterPrefix>|null $addAllowedPrefixesToDirectConnectGateway
+ * @property list<Shapes\RouteFilterPrefix>|null $removeAllowedPrefixesToDirectConnectGateway
  */
 class UpdateDirectConnectGatewayAssociationRequest extends Request
 {
     /**
      * @param array{
-     *     associationId?: string,
-     *     addAllowedPrefixesToDirectConnectGateway?: list<Shapes\RouteFilterPrefix>,
-     *     removeAllowedPrefixesToDirectConnectGateway?: list<Shapes\RouteFilterPrefix>
+     *     associationId?: string|null,
+     *     addAllowedPrefixesToDirectConnectGateway?: list<Shapes\RouteFilterPrefix>|null,
+     *     removeAllowedPrefixesToDirectConnectGateway?: list<Shapes\RouteFilterPrefix>|null
      * } $args
      */
     public function __construct(array $args = [])

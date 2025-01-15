@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Shape;
 /**
  * @property string $ProfileId
  * @property 'PRESENT'|'ABSENT' $QueryResult
- * @property Profile $Profile
+ * @property Profile|null $Profile
  */
 class ProfileQueryResult extends Shape
 {
@@ -15,7 +15,7 @@ class ProfileQueryResult extends Shape
      * @param array{
      *     ProfileId: string,
      *     QueryResult: 'PRESENT'|'ABSENT',
-     *     Profile?: Profile
+     *     Profile?: Profile|null
      * } $args
      */
     public function __construct(array $args)

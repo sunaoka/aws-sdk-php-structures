@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property Shapes\Video $Video
- * @property string $ClientRequestToken
- * @property Shapes\NotificationChannel $NotificationChannel
- * @property string $JobTag
- * @property Shapes\StartSegmentDetectionFilters $Filters
+ * @property string|null $ClientRequestToken
+ * @property Shapes\NotificationChannel|null $NotificationChannel
+ * @property string|null $JobTag
+ * @property Shapes\StartSegmentDetectionFilters|null $Filters
  * @property list<'TECHNICAL_CUE'|'SHOT'> $SegmentTypes
  */
 class StartSegmentDetectionRequest extends Request
@@ -17,10 +17,10 @@ class StartSegmentDetectionRequest extends Request
     /**
      * @param array{
      *     Video: Shapes\Video,
-     *     ClientRequestToken?: string,
-     *     NotificationChannel?: Shapes\NotificationChannel,
-     *     JobTag?: string,
-     *     Filters?: Shapes\StartSegmentDetectionFilters,
+     *     ClientRequestToken?: string|null,
+     *     NotificationChannel?: Shapes\NotificationChannel|null,
+     *     JobTag?: string|null,
+     *     Filters?: Shapes\StartSegmentDetectionFilters|null,
      *     SegmentTypes: list<'TECHNICAL_CUE'|'SHOT'>
      * } $args
      */

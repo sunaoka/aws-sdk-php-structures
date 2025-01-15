@@ -8,8 +8,8 @@ use Sunaoka\Aws\Structures\Shape;
  * @property string $FeatureGroupName
  * @property string $FeatureGroupArn
  * @property \Aws\Api\DateTimeResult $CreationTime
- * @property 'Creating'|'Created'|'CreateFailed'|'Deleting'|'DeleteFailed' $FeatureGroupStatus
- * @property OfflineStoreStatus $OfflineStoreStatus
+ * @property 'Creating'|'Created'|'CreateFailed'|'Deleting'|'DeleteFailed'|null $FeatureGroupStatus
+ * @property OfflineStoreStatus|null $OfflineStoreStatus
  */
 class FeatureGroupSummary extends Shape
 {
@@ -18,8 +18,8 @@ class FeatureGroupSummary extends Shape
      *     FeatureGroupName: string,
      *     FeatureGroupArn: string,
      *     CreationTime: \Aws\Api\DateTimeResult,
-     *     FeatureGroupStatus?: 'Creating'|'Created'|'CreateFailed'|'Deleting'|'DeleteFailed',
-     *     OfflineStoreStatus?: OfflineStoreStatus
+     *     FeatureGroupStatus?: 'Creating'|'Created'|'CreateFailed'|'Deleting'|'DeleteFailed'|null,
+     *     OfflineStoreStatus?: OfflineStoreStatus|null
      * } $args
      */
     public function __construct(array $args)

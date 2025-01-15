@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\Tnb\ValidateSolFunctionPackageContent\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property FunctionArtifactMeta $vnfd
+ * @property FunctionArtifactMeta|null $vnfd
  */
 class ValidateSolFunctionPackageContentMetadata extends Shape
 {
     /**
-     * @param array{vnfd?: FunctionArtifactMeta} $args
+     * @param array{vnfd?: FunctionArtifactMeta|null} $args
      */
     public function __construct(array $args = [])
     {

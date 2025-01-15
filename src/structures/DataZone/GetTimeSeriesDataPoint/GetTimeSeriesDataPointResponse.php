@@ -5,11 +5,11 @@ namespace Sunaoka\Aws\Structures\DataZone\GetTimeSeriesDataPoint;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property string $domainId
- * @property string $entityId
- * @property 'ASSET'|'LISTING' $entityType
- * @property Shapes\TimeSeriesDataPointFormOutput $form
- * @property string $formName
+ * @property string|null $domainId
+ * @property string|null $entityId
+ * @property 'ASSET'|'LISTING'|null $entityType
+ * @property Shapes\TimeSeriesDataPointFormOutput|null $form
+ * @property string|null $formName
  */
 class GetTimeSeriesDataPointResponse extends Response
 {

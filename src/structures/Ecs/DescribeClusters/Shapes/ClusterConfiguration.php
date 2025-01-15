@@ -5,15 +5,15 @@ namespace Sunaoka\Aws\Structures\Ecs\DescribeClusters\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property ExecuteCommandConfiguration $executeCommandConfiguration
- * @property ManagedStorageConfiguration $managedStorageConfiguration
+ * @property ExecuteCommandConfiguration|null $executeCommandConfiguration
+ * @property ManagedStorageConfiguration|null $managedStorageConfiguration
  */
 class ClusterConfiguration extends Shape
 {
     /**
      * @param array{
-     *     executeCommandConfiguration?: ExecuteCommandConfiguration,
-     *     managedStorageConfiguration?: ManagedStorageConfiguration
+     *     executeCommandConfiguration?: ExecuteCommandConfiguration|null,
+     *     managedStorageConfiguration?: ManagedStorageConfiguration|null
      * } $args
      */
     public function __construct(array $args = [])

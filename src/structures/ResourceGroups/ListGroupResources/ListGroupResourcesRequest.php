@@ -5,21 +5,21 @@ namespace Sunaoka\Aws\Structures\ResourceGroups\ListGroupResources;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $GroupName
- * @property string $Group
- * @property list<Shapes\ResourceFilter> $Filters
- * @property int<1, 50> $MaxResults
- * @property string $NextToken
+ * @property string|null $GroupName
+ * @property string|null $Group
+ * @property list<Shapes\ResourceFilter>|null $Filters
+ * @property int<1, 50>|null $MaxResults
+ * @property string|null $NextToken
  */
 class ListGroupResourcesRequest extends Request
 {
     /**
      * @param array{
-     *     GroupName?: string,
-     *     Group?: string,
-     *     Filters?: list<Shapes\ResourceFilter>,
-     *     MaxResults?: int<1, 50>,
-     *     NextToken?: string
+     *     GroupName?: string|null,
+     *     Group?: string|null,
+     *     Filters?: list<Shapes\ResourceFilter>|null,
+     *     MaxResults?: int<1, 50>|null,
+     *     NextToken?: string|null
      * } $args
      */
     public function __construct(array $args = [])

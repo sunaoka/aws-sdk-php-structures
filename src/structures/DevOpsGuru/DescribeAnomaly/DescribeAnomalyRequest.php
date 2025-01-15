@@ -6,14 +6,14 @@ use Sunaoka\Aws\Structures\Request;
 
 /**
  * @property string $Id
- * @property string $AccountId
+ * @property string|null $AccountId
  */
 class DescribeAnomalyRequest extends Request
 {
     /**
      * @param array{
      *     Id: string,
-     *     AccountId?: string
+     *     AccountId?: string|null
      * } $args
      */
     public function __construct(array $args)

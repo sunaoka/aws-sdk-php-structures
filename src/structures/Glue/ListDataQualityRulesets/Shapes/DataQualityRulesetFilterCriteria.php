@@ -5,25 +5,25 @@ namespace Sunaoka\Aws\Structures\Glue\ListDataQualityRulesets\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Name
- * @property string $Description
- * @property \Aws\Api\DateTimeResult $CreatedBefore
- * @property \Aws\Api\DateTimeResult $CreatedAfter
- * @property \Aws\Api\DateTimeResult $LastModifiedBefore
- * @property \Aws\Api\DateTimeResult $LastModifiedAfter
- * @property DataQualityTargetTable $TargetTable
+ * @property string|null $Name
+ * @property string|null $Description
+ * @property \Aws\Api\DateTimeResult|null $CreatedBefore
+ * @property \Aws\Api\DateTimeResult|null $CreatedAfter
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedBefore
+ * @property \Aws\Api\DateTimeResult|null $LastModifiedAfter
+ * @property DataQualityTargetTable|null $TargetTable
  */
 class DataQualityRulesetFilterCriteria extends Shape
 {
     /**
      * @param array{
-     *     Name?: string,
-     *     Description?: string,
-     *     CreatedBefore?: \Aws\Api\DateTimeResult,
-     *     CreatedAfter?: \Aws\Api\DateTimeResult,
-     *     LastModifiedBefore?: \Aws\Api\DateTimeResult,
-     *     LastModifiedAfter?: \Aws\Api\DateTimeResult,
-     *     TargetTable?: DataQualityTargetTable
+     *     Name?: string|null,
+     *     Description?: string|null,
+     *     CreatedBefore?: \Aws\Api\DateTimeResult|null,
+     *     CreatedAfter?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedBefore?: \Aws\Api\DateTimeResult|null,
+     *     LastModifiedAfter?: \Aws\Api\DateTimeResult|null,
+     *     TargetTable?: DataQualityTargetTable|null
      * } $args
      */
     public function __construct(array $args = [])

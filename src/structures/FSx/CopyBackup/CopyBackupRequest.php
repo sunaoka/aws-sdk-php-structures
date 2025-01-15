@@ -5,23 +5,23 @@ namespace Sunaoka\Aws\Structures\FSx\CopyBackup;
 use Sunaoka\Aws\Structures\Request;
 
 /**
- * @property string $ClientRequestToken
+ * @property string|null $ClientRequestToken
  * @property string $SourceBackupId
- * @property string $SourceRegion
- * @property string $KmsKeyId
- * @property bool $CopyTags
- * @property list<Shapes\Tag> $Tags
+ * @property string|null $SourceRegion
+ * @property string|null $KmsKeyId
+ * @property bool|null $CopyTags
+ * @property list<Shapes\Tag>|null $Tags
  */
 class CopyBackupRequest extends Request
 {
     /**
      * @param array{
-     *     ClientRequestToken?: string,
+     *     ClientRequestToken?: string|null,
      *     SourceBackupId: string,
-     *     SourceRegion?: string,
-     *     KmsKeyId?: string,
-     *     CopyTags?: bool,
-     *     Tags?: list<Shapes\Tag>
+     *     SourceRegion?: string|null,
+     *     KmsKeyId?: string|null,
+     *     CopyTags?: bool|null,
+     *     Tags?: list<Shapes\Tag>|null
      * } $args
      */
     public function __construct(array $args)

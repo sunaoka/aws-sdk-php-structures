@@ -5,19 +5,19 @@ namespace Sunaoka\Aws\Structures\ElasticTranscoder\CreateJob\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property string $Mode
- * @property string $Key
- * @property string $KeyMd5
- * @property string $InitializationVector
+ * @property string|null $Mode
+ * @property string|null $Key
+ * @property string|null $KeyMd5
+ * @property string|null $InitializationVector
  */
 class Encryption extends Shape
 {
     /**
      * @param array{
-     *     Mode?: string,
-     *     Key?: string,
-     *     KeyMd5?: string,
-     *     InitializationVector?: string
+     *     Mode?: string|null,
+     *     Key?: string|null,
+     *     KeyMd5?: string|null,
+     *     InitializationVector?: string|null
      * } $args
      */
     public function __construct(array $args = [])

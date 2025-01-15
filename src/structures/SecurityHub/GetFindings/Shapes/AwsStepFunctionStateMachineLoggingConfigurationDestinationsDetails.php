@@ -5,12 +5,12 @@ namespace Sunaoka\Aws\Structures\SecurityHub\GetFindings\Shapes;
 use Sunaoka\Aws\Structures\Shape;
 
 /**
- * @property AwsStepFunctionStateMachineLoggingConfigurationDestinationsCloudWatchLogsLogGroupDetails $CloudWatchLogsLogGroup
+ * @property AwsStepFunctionStateMachineLoggingConfigurationDestinationsCloudWatchLogsLogGroupDetails|null $CloudWatchLogsLogGroup
  */
 class AwsStepFunctionStateMachineLoggingConfigurationDestinationsDetails extends Shape
 {
     /**
-     * @param array{CloudWatchLogsLogGroup?: AwsStepFunctionStateMachineLoggingConfigurationDestinationsCloudWatchLogsLogGroupDetails} $args
+     * @param array{CloudWatchLogsLogGroup?: AwsStepFunctionStateMachineLoggingConfigurationDestinationsCloudWatchLogsLogGroupDetails|null} $args
      */
     public function __construct(array $args = [])
     {
