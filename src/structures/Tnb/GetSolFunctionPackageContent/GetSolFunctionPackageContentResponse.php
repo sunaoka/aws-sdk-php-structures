@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property 'application/zip'|null $contentType
- * @property \Psr\Http\Message\StreamInterface|null $packageContent
+ * @property \Psr\Http\Message\StreamInterface $packageContent
  */
 class GetSolFunctionPackageContentResponse extends Response
 {

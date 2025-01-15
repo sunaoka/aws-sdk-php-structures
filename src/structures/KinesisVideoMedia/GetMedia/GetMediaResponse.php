@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $ContentType
- * @property \Psr\Http\Message\StreamInterface|null $Payload
+ * @property \Psr\Http\Message\StreamInterface $Payload
  */
 class GetMediaResponse extends Response
 {

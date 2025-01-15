@@ -9,7 +9,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property \Aws\Api\DateTimeResult|null $CreationTime
  * @property string|null $Description
  * @property int|null $Revision
- * @property \Psr\Http\Message\StreamInterface|null $ServerProperties
+ * @property \Psr\Http\Message\StreamInterface $ServerProperties
  */
 class DescribeConfigurationRevisionResponse extends Response
 {

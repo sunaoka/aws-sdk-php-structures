@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string $Arn
- * @property \Psr\Http\Message\StreamInterface|null $Certificates
+ * @property \Psr\Http\Message\StreamInterface $Certificates
  * @property string|null $DeviceId
  * @property string|null $IotThingName
  * @property 'AWAITING_PROVISIONING'|'PENDING'|'SUCCEEDED'|'FAILED'|'ERROR'|'DELETING' $Status

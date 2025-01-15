@@ -7,7 +7,7 @@ use Sunaoka\Aws\Structures\Response;
 /**
  * @property string|null $contentType
  * @property string|null $contentDisposition
- * @property \Psr\Http\Message\StreamInterface|null $body
+ * @property \Psr\Http\Message\StreamInterface $body
  */
 class GetExportResponse extends Response
 {

@@ -6,7 +6,7 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property int|null $DataLength
- * @property \Psr\Http\Message\StreamInterface|null $BlockData
+ * @property \Psr\Http\Message\StreamInterface $BlockData
  * @property string|null $Checksum
  * @property 'SHA256'|null $ChecksumAlgorithm
  */

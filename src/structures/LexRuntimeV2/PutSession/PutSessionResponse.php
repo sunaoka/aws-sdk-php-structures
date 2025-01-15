@@ -10,7 +10,7 @@ use Sunaoka\Aws\Structures\Response;
  * @property string|null $sessionState
  * @property string|null $requestAttributes
  * @property string|null $sessionId
- * @property \Psr\Http\Message\StreamInterface|null $audioStream
+ * @property \Psr\Http\Message\StreamInterface $audioStream
  */
 class PutSessionResponse extends Response
 {

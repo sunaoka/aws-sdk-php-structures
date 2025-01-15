@@ -6,10 +6,10 @@ use Sunaoka\Aws\Structures\Response;
 
 /**
  * @property string|null $topic
- * @property \Psr\Http\Message\StreamInterface|null $payload
+ * @property \Psr\Http\Message\StreamInterface $payload
  * @property int<0, 1>|null $qos
  * @property int|null $lastModifiedTime
- * @property \Psr\Http\Message\StreamInterface|null $userProperties
+ * @property \Psr\Http\Message\StreamInterface $userProperties
  */
 class GetRetainedMessageResponse extends Response
 {
