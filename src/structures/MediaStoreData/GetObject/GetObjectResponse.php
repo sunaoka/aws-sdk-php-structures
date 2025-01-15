@@ -5,7 +5,7 @@ namespace Sunaoka\Aws\Structures\MediaStoreData\GetObject;
 use Sunaoka\Aws\Structures\Response;
 
 /**
- * @property \Psr\Http\Message\StreamInterface|null $Body
+ * @property \Psr\Http\Message\StreamInterface $Body
  * @property string|null $CacheControl
  * @property string|null $ContentRange
  * @property int<0, max>|null $ContentLength
